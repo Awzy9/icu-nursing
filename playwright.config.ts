@@ -12,6 +12,7 @@ export default defineConfig({
   use: { baseURL: `http://localhost:${port}`, trace: "off", launchOptions: { executablePath } },
   projects: [
     { name: "desktop", use: { ...devices["Desktop Chrome"], launchOptions: { executablePath } } },
+    { name: "tablet", use: { viewport: { width: 768, height: 1024 }, hasTouch: true, launchOptions: { executablePath } } },
     { name: "mobile", use: { viewport: { width: 360, height: 740 }, isMobile: true, hasTouch: true, userAgent: devices["Pixel 7"].userAgent, launchOptions: { executablePath } } },
   ],
   webServer: {

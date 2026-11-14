@@ -13,7 +13,7 @@ export default async function MfaPage({ params, searchParams }: { params: Promis
   const t = await getTranslations("Auth");
   return (
     <AuthShell title={t("mfaTitle")}>
-      {!isDemoMode() ? <MfaPanel next={`/${locale}${safeRedirectPath(next, "/admin")}`} /> : null}
+      {!isDemoMode() ? <MfaPanel next={safeRedirectPath(next, "/admin")} /> : null}
     </AuthShell>
   );
 }

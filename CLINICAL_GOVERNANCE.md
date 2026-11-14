@@ -59,3 +59,18 @@ Educational use only; not a clinical decision-support tool; follow local protoco
 ## Incident handling
 
 Learners can report a content error from any page; reports go to a triage queue with a 5-working-day target for clinical acknowledgement, and immediate unpublish for credible patient-safety errors.
+
+
+## Phase 1 status: what is now enforced by software
+
+Implemented in `supabase/migrations/0003_workflow.sql` and covered by `tests/db/workflow.test.ts` (see `docs/IMPLEMENTATION.md`):
+
+- Publication is possible only from a version approved by **assigned human clinical reviewers with MFA**, who are not the author, covering **every required reviewer role** with **distinct people** (`app_settings.require_distinct_reviewers`, default on).
+- **AI-assisted/generated content** needs at least two reviewer roles at submission and at least two distinct approving humans at approval — regardless of settings. Nothing in the system can mark content approved except `record_review`.
+- Reviews are immutable; every transition is written to an append-only audit log with the acting user.
+- Editing is blocked while a topic is in review/approved; a published topic is revised via `start_revision`; the live version is unchanged until the new one is approved and published; rollback to an earlier published version requires a reason.
+- **Draft guidelines** (e.g., KDIGO 2026 AKI/AKD) can be cited only with an explicit acknowledgement and are always rendered with a "DRAFT guideline — not final" label.
+- RED-licensed sources require an "independently written" note; images need alt text and a reusable licence.
+- Medication dose/concentration fields are **not implemented** in Phase 1 (the medication library is a later phase and will require pharmacist sign-off by design).
+
+**Still human decisions (not automatable):** appointing named reviewers and their credentials; deciding the reviewer roles required per topic (default `NE`; see `curriculum/master_curriculum.csv` → `required_reviewer_roles` / `multidisciplinary_review_required`); periodic-review ownership; any licence/permission decisions.

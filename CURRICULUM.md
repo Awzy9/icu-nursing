@@ -61,7 +61,7 @@ Changes made:
 
 ## 2. Primary references for the 40 P1 topics
 
-26 of 40 have a registered primary source; **14 still say "TO SELECT/TO REGISTER"**: early-warning score (respiratory deterioration), arterial line, shock recognition, septic shock and vasopressor monitoring/vasopressors (Surviving Sepsis Campaign — edition to confirm), ICP/CPP (neurocritical guideline), potassium, CRRT nursing literature, transfusion, pressure injury (NPIAP), VAE compendium, GCS, coagulation reference. These must be registered and verified before drafting. I did not name specific guideline editions I could not confirm.
+Round 3: **33 of 40** now have a registered primary source; **7 still say "TO SELECT"** (listed in `SOURCE_VERIFICATION_REPORT.md`). Earlier text: 26 of 40 had a registered primary source and **14 said "TO SELECT/TO REGISTER"**: early-warning score (respiratory deterioration), arterial line, shock recognition, septic shock and vasopressor monitoring/vasopressors (Surviving Sepsis Campaign — edition to confirm), ICP/CPP (neurocritical guideline), potassium, CRRT nursing literature, transfusion, pressure injury (NPIAP), VAE compendium, GCS, coagulation reference. These must be registered and verified before drafting. I did not name specific guideline editions I could not confirm.
 
 ## 3. Evidence review priority (before drafting)
 

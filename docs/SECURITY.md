@@ -20,3 +20,9 @@ Further roles are granted from `/admin/users` (administrators with MFA only).
 - App-level rate limiting is best-effort (per instance). Rely on Supabase Auth limits and the hosting firewall/WAF for production.
 - Email confirmation, password reset and MFA flows are implemented against Supabase Auth APIs but were **not run end-to-end against a live Supabase project** in this session (no project exists; creating one needs your approval). Database behaviour is covered by tests on real PostgreSQL.
 - Review Supabase dashboard settings before launch: enable email confirmations, CAPTCHA, leaked-password protection, and set the site URL / redirect allow-list.
+
+## Dependency audit (2026-11-14)
+- `npm audit --omit=dev` (what ships to users): **0 vulnerabilities**. Next.js 15.5.29 bundles PostCSS 8.4.31, which has advisories; `package.json` overrides it to a patched PostCSS (`^8.5.33`). Re-check when upgrading Next.
+- Test runner upgraded to Vitest 5 to clear a critical advisory in its worker pool (`tinypool`).
+- Remaining: **6 moderate advisories in development-only tooling** (typescript-eslint → `minimatch` ReDoS). They are not shipped and cannot be reached by users; `npm audit fix --force` would downgrade ESLint tooling, so they are tracked rather than forced.
+- CI should run `npm audit --omit=dev --audit-level=high` (added to the workflow).

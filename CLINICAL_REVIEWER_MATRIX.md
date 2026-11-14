@@ -78,3 +78,11 @@ Other P1 topics (14) — NE + domain reviewer: e.g., GCS, ECG, ABG, urine output
 - Who fills each role (paid, volunteer, institutional partner)? Reviewer fees and indemnity cover.
 - Jurisdiction(s) whose scope-of-practice rules the content follows first (e.g., Saudi vs international).
 - Whether physician review may be by a single intensivist across D1–D4, D6, D8, D10.
+
+## Implementation mapping (Phase 1)
+
+- Role codes `NE, BN, PH, RT, CCP, NEPH, NEURO, IPC, OTHER` are the values of `reviewer_specialties.specialty` and `topics.required_review_roles`.
+- A user needs the `clinical_reviewer` platform role **and** the matching specialty (granted by an administrator at `/admin/users`) to be assigned to a review.
+- A topic's required roles are copied into each submitted version; approval requires an approving review for every listed role, by distinct reviewers (setting `require_distinct_reviewers`, default on). AI-assisted/generated content additionally needs ≥ 2 distinct approving humans.
+- The curriculum CSV's `required_reviewer_roles` column is the proposal for each topic; a human curriculum lead sets the final roles in the CMS.
+- Names, credentials and conflict-of-interest declarations are **not** stored by the software yet (Phase 2): keep them in a controlled register until then.
