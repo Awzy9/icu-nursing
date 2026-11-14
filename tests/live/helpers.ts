@@ -5,7 +5,8 @@ import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { PROJECT_URL, REF, sql } from "../../scripts/live/mgmt";
 import { adminAuth, createTestUser, deleteTestUser } from "../../scripts/live/admin";
 
-export { sql, adminAuth, PROJECT_URL, REF };
+import { api } from "../../scripts/live/mgmt";
+export { sql, adminAuth, api, PROJECT_URL, REF };
 
 function loadEnv() {
   const env: Record<string, string> = {};
@@ -23,9 +24,17 @@ export const RUN = Date.now().toString(36);
 export const PASSWORD = "correct-horse-battery-LIVE-1";
 export const emailFor = (label: string) => `live-test-${RUN}-${label}@example.org`;
 
+/** Cloudflare's TEST token (accepted by the TEST "always pass" secret). Supabase ignores it when CAPTCHA is disabled. */
+export const DUMMY_CAPTCHA = "XXXX.DUMMY.TOKEN.XXXX";
+
+/** A client with no CAPTCHA token at all (to prove the server insists on one). */
+export function rawClient(): SupabaseClient {
+  return createClient(PROJECT_URL, KEY, { auth: { autoRefreshToken: false, persistSession: false, detectSessionInUrl: false } });
+}
+
 export function newClient(storage?: Record<string, string>): SupabaseClient {
   const memory: Record<string, string> = storage ?? {};
-  return createClient(PROJECT_URL, KEY, {
+  const c = createClient(PROJECT_URL, KEY, {
     auth: {
       autoRefreshToken: false,
       persistSession: true,
@@ -33,6 +42,13 @@ export function newClient(storage?: Record<string, string>): SupabaseClient {
       storage: { getItem: (k) => memory[k] ?? null, setItem: (k, v) => { memory[k] = v; }, removeItem: (k) => { delete memory[k]; } },
     },
   });
+  // The dev project has Turnstile enabled with Cloudflare's TEST secret: pass its test token on the CAPTCHA-protected calls.
+  const a = c.auth as unknown as Record<string, (...x: unknown[]) => unknown>;
+  const signIn = a.signInWithPassword!.bind(c.auth), signUp = a.signUp!.bind(c.auth), reset = a.resetPasswordForEmail!.bind(c.auth);
+  a.signInWithPassword = (cred) => signIn({ ...(cred as object), options: { captchaToken: DUMMY_CAPTCHA, ...((cred as { options?: object }).options ?? {}) } });
+  a.signUp = (cred) => signUp({ ...(cred as object), options: { captchaToken: DUMMY_CAPTCHA, ...((cred as { options?: object }).options ?? {}) } });
+  a.resetPasswordForEmail = (email, opts) => reset(email, { captchaToken: DUMMY_CAPTCHA, ...((opts as object) ?? {}) });
+  return c;
 }
 
 // ---- TOTP (RFC 6238, SHA-1, 6 digits, 30 s) ----

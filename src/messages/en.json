@@ -174,7 +174,9 @@
       "exists": "Could not create the account. If you already registered, try signing in.",
       "generic": "Something went wrong. Please try again.",
       "demoUnavailable": "Accounts are unavailable in demonstration mode.",
-      "rateLimited": "Too many attempts. Please wait a moment and try again."
+      "rateLimited": "Too many attempts. Please wait a moment and try again.",
+      "captchaRequired": "Please complete the security check.",
+      "captchaFailed": "The security check failed. Please try again."
     },
     "mfaTitle": "Two-factor authentication",
     "mfaRequired": "Staff accounts must use two-factor authentication before accessing administration.",
@@ -184,7 +186,8 @@
     "mfaVerify": "Verify",
     "mfaChallengeIntro": "Enter the 6-digit code from your authenticator app.",
     "mfaInvalid": "That code is not valid. Try again.",
-    "mfaEnroll": "Set up two-factor authentication"
+    "mfaEnroll": "Set up two-factor authentication",
+    "captchaLabel": "Security check"
   },
   "Dashboard": {
     "welcome": "Welcome, {name}",

@@ -10,7 +10,7 @@ const PROTECTED = ["/dashboard", "/bookmarks", "/admin", "/account", "/mfa"];
 export default async function middleware(original: NextRequest) {
   // Per-request CSP nonce: forwarded to Next.js (which stamps its own scripts) and set on the response.
   const nonce = newNonce();
-  const csp = buildCsp({ nonce, supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL, dev: process.env.NODE_ENV !== "production" });
+  const csp = buildCsp({ nonce, supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL, dev: process.env.NODE_ENV !== "production", captcha: Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && process.env.NEXT_PUBLIC_SUPABASE_URL) });
   const forwarded = new Headers(original.headers);
   forwarded.set("x-nonce", nonce);
   forwarded.set("content-security-policy", csp);

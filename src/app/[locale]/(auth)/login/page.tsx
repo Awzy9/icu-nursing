@@ -13,7 +13,7 @@ export default async function LoginPage({ params, searchParams }: { params: Prom
   const t = await getTranslations("Auth");
   return (
     <AuthShell title={t("loginTitle")}>
-      <AuthForm action={signInAction} submitLabel={t("signInButton")} hidden={{ next: safeRedirectPath(next) }}>
+      <AuthForm action={signInAction} captcha submitLabel={t("signInButton")} hidden={{ next: safeRedirectPath(next) }}>
         <Field label={t("email")} htmlFor="email"><Input id="email" name="email" type="email" autoComplete="email" required /></Field>
         <Field label={t("password")} htmlFor="password"><Input id="password" name="password" type="password" autoComplete="current-password" required /></Field>
       </AuthForm>

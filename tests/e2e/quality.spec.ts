@@ -92,7 +92,7 @@ test.describe("error handling and input safety", () => {
 
   test("health endpoint reports mode without leaking configuration", async ({ request }) => {
     const res = await request.get("/api/health");
-    expect(await res.json()).toEqual({ status: "ok", mode: "demo" });
+    expect(await res.json()).toEqual({ status: "ok", mode: "demo", captcha: false });
     expect(res.headers()["cache-control"]).toContain("no-store");
   });
 });

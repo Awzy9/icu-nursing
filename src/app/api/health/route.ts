@@ -5,5 +5,5 @@ export const dynamic = "force-dynamic";
 
 export function GET() {
   const env = getEnv();
-  return NextResponse.json({ status: "ok", mode: env.demoMode ? "demo" : "supabase" }, { headers: { "Cache-Control": "no-store" } });
+  return NextResponse.json({ status: "ok", mode: env.demoMode ? "demo" : "supabase", captcha: env.captchaEnabled }, { headers: { "Cache-Control": "no-store" } });
 }

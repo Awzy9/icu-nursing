@@ -6,7 +6,7 @@
  */
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { adminStorageRemove } from "../../scripts/live/admin";
-import { PASSWORD, RUN, actor, adminAuth, aalOf, cleanup, emailFor, makeUser, newClient, png, signIn, sql, totp, withMfa, type Actor } from "./helpers";
+import { PASSWORD, RUN, actor, adminAuth, aalOf, api, cleanup, emailFor, makeUser, newClient, png, rawClient, signIn, sql, totp, withMfa, type Actor } from "./helpers";
 
 const slug = (n: string) => `live-${RUN}-${n}`;
 const created: string[] = [];
@@ -120,6 +120,44 @@ describe("1-2. Authentication, sessions and email verification", () => {
     expect((await c.auth.updateUser({ data: { role: "admin" } })).error).toBeNull(); // user may edit their own metadata...
     expect((await sql<{ role: string }>(`select role from public.user_roles where user_id='${u.id}'`)).map((r) => r.role)).toEqual(["learner"]); // ...it grants nothing
     expect((await c.rpc("admin_grant_role", { p_user: u.id, p_role: "admin" })).error).not.toBeNull();
+  });
+});
+
+describe("2b. CAPTCHA (Cloudflare Turnstile, verified server-side by Supabase Auth)", () => {
+  const setSecret = (mode: "pass" | "fail") => api("/config/auth", { method: "PATCH", body: JSON.stringify({ security_captcha_enabled: true, security_captcha_provider: "turnstile", security_captcha_secret: mode === "pass" ? "1x0000000000000000000000000000000AA" : "2x0000000000000000000000000000000AA" }) });
+  it("is enabled on the project with the Turnstile provider", async () => {
+    const c = await api<Record<string, unknown>>("/config/auth");
+    expect(c.security_captcha_enabled).toBe(true);
+    expect(c.security_captcha_provider).toBe("turnstile");
+  });
+  it("sign-in, sign-up and password recovery are refused without a token", async () => {
+    const c = rawClient();
+    expect((await c.auth.signInWithPassword({ email: learnerA.email, password: PASSWORD })).error?.code).toBe("captcha_failed");
+    expect((await c.auth.signUp({ email: emailFor("nocaptcha"), password: PASSWORD })).error?.code).toBe("captcha_failed");
+    expect((await c.auth.resetPasswordForEmail(learnerA.email)).error?.code).toBe("captcha_failed");
+  });
+  it("a valid token is accepted", async () => {
+    expect((await newClient().auth.signInWithPassword({ email: learnerA.email, password: PASSWORD })).error).toBeNull();
+  });
+  // Supabase Auth takes a few seconds to apply a changed CAPTCHA secret: poll for the effect instead of assuming it is instant.
+  const eventually = async (want: "captcha_failed" | "ok") => {
+    for (let i = 0; i < 12; i++) {
+      const r = await newClient().auth.signInWithPassword({ email: learnerA.email, password: PASSWORD });
+      const got = r.error ? r.error.code : "ok";
+      if (got === want) return got;
+      await new Promise((x) => setTimeout(x, 4000));
+    }
+    return "never";
+  };
+  it("a token the CAPTCHA provider rejects is refused, even with correct credentials", async () => {
+    await setSecret("fail");
+    try { expect(await eventually("captcha_failed")).toBe("captcha_failed"); }
+    finally { await setSecret("pass"); }
+    expect(await eventually("ok")).toBe("ok");
+  });
+  it("CAPTCHA does not apply to MFA challenges or to links already issued", async () => {
+    const link = await adminAuth<{ hashed_token: string }>("/admin/generate_link", { method: "POST", body: JSON.stringify({ type: "recovery", email: learnerB.email }) });
+    expect((await rawClient().auth.verifyOtp({ token_hash: link.hashed_token, type: "recovery" })).error).toBeNull();
   });
 });
 

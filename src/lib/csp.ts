@@ -1,5 +1,5 @@
 /** Builds the Content-Security-Policy for one request. Scripts are allowed only with this request's nonce. */
-export function buildCsp({ nonce, supabaseUrl, dev = false }: { nonce: string; supabaseUrl?: string; dev?: boolean }): string {
+export function buildCsp({ nonce, supabaseUrl, dev = false, captcha = false }: { nonce: string; supabaseUrl?: string; dev?: boolean; captcha?: boolean }): string {
   let host: string | null = null;
   try {
     if (supabaseUrl) host = new URL(supabaseUrl).host;
@@ -15,6 +15,8 @@ export function buildCsp({ nonce, supabaseUrl, dev = false }: { nonce: string; s
     `img-src 'self' data: blob: ${img}`,
     "font-src 'self' data:",
     `connect-src 'self' ${api}${dev ? " ws://localhost:*" : ""}`,
+    // Cloudflare Turnstile renders in an iframe and its script is loaded dynamically by our nonce'd bundle (strict-dynamic).
+    ...(captcha ? ["frame-src https://challenges.cloudflare.com"] : []),
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "form-action 'self'",

@@ -11,7 +11,7 @@ export default async function ForgotPasswordPage({ params }: { params: Promise<{
   return (
     <AuthShell title={t("resetTitle")}>
       <p className="text-muted-foreground">{t("resetBody")}</p>
-      <AuthForm action={requestPasswordResetAction} submitLabel={t("resetButton")} successMessage={t("resetSent")}>
+      <AuthForm action={requestPasswordResetAction} captcha submitLabel={t("resetButton")} successMessage={t("resetSent")}>
         <Field label={t("email")} htmlFor="email"><Input id="email" name="email" type="email" autoComplete="email" required /></Field>
       </AuthForm>
     </AuthShell>

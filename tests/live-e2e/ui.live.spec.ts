@@ -5,7 +5,7 @@
  */
 import { expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { RUN, PASSWORD, adminAuth, emailFor, makeUser, newClient, sql, totp } from "../live/helpers";
+import { RUN, PASSWORD, adminAuth, api, emailFor, makeUser, newClient, sql, totp } from "../live/helpers";
 import { adminStorageRemove } from "../../scripts/live/admin";
 import { cleanup } from "../live/helpers";
 
@@ -18,10 +18,16 @@ let topicId = "", sourceTitle = "";
 const uploadedPaths: string[] = [];
 const secrets: Record<string, string> = {};
 
+/** The Turnstile TEST widget issues a token on its own; wait until it has been written into the form. */
+async function waitForCaptcha(page: Page) {
+  await expect(page.locator('input[name="captchaToken"]')).not.toHaveValue("", { timeout: 30_000 });
+}
+
 async function login(page: Page, email: string, password = PASSWORD, expectSuccess = true) {
   await page.goto("/en/login");
   await page.getByLabel("Email address").fill(email);
   await page.getByLabel("Password").fill(password);
+  await waitForCaptcha(page);
   await page.getByRole("button", { name: "Sign in" }).click();
   if (expectSuccess) await expect(page).not.toHaveURL(/\/login/, { timeout: 20_000 }); // wait for the server action to finish
 }
@@ -60,6 +66,7 @@ test("registration page validates input and does not pretend an undeliverable ad
   await page.getByLabel("Email address").fill(emailFor("registrant"));
   await page.getByLabel("Password", { exact: true }).fill("correct-horse-battery-1");
   await page.getByLabel("Confirm password").fill("correct-horse-battery-1");
+  await waitForCaptcha(page);
   await page.getByRole("button", { name: "Create account" }).click();
   // Supabase rejects domains without a mail server; if the built-in SMTP quota (2 emails/hour) is exhausted it answers 429 first.
   // Either way the person is told the truth and is NOT sent to a "check your email" page for an address that was never registered.
@@ -68,8 +75,52 @@ test("registration page validates input and does not pretend an undeliverable ad
   await page.getByLabel("Email address").fill("a@b.co");
   await page.getByLabel("Password", { exact: true }).fill("short");
   await page.getByLabel("Confirm password").fill("short");
+  await waitForCaptcha(page);
   await page.getByRole("button", { name: "Create account" }).click();
   await expect(page.locator("main").getByRole("alert")).toContainText(/at least 12/i);
+});
+
+test("CAPTCHA: the widget loads under the CSP and fills the form; a missing token is refused; a rejected token shows a clear error and re-arms the widget", async ({ page }) => {
+  test.setTimeout(240_000);
+  const violations: string[] = [];
+  page.on("console", (m) => { if (/content security policy/i.test(m.text())) violations.push(m.text()); });
+  await page.goto("/en/login");
+  await expect(page.locator('script[src*="challenges.cloudflare.com/turnstile"]')).toBeAttached({ timeout: 30_000 }); // loaded by our nonce'd bundle (strict-dynamic)
+  await waitForCaptcha(page); // Cloudflare's widget (closed shadow DOM) issued a token and our form received it
+  expect(violations).toEqual([]);
+  // 1) no token (e.g. the person submits before the challenge completes, or tampers with the form)
+  await page.getByLabel("Email address").fill(learner.email);
+  await page.getByLabel("Password").fill(PASSWORD);
+  await page.evaluate(() => { (document.querySelector('input[name="captchaToken"]') as HTMLInputElement).value = ""; });
+  await page.getByRole("button", { name: "Sign in" }).click();
+  await expect(page.locator("main").getByRole("alert")).toContainText("Please complete the security check.");
+  await expect(page).toHaveURL(/\/login/);
+  // 2) the provider rejects the token (Cloudflare TEST secret that always fails), then restore the passing secret
+  const secret = (s: string) => api("/config/auth", { method: "PATCH", body: JSON.stringify({ security_captcha_enabled: true, security_captcha_provider: "turnstile", security_captcha_secret: s }) });
+  const settled = async (want: "captcha_failed" | "ok") => {
+    for (let i = 0; i < 15; i++) {
+      const r = await newClient().auth.signInWithPassword({ email: learner.email, password: PASSWORD });
+      if ((r.error ? r.error.code : "ok") === want) return;
+      await new Promise((x) => setTimeout(x, 3000)); // Supabase Auth needs a few seconds to apply a new CAPTCHA secret
+    }
+    throw new Error("CAPTCHA configuration did not settle");
+  };
+  await secret("2x0000000000000000000000000000000AA");
+  try {
+    await settled("captcha_failed");
+    await page.goto("/en/login");
+    await page.getByLabel("Email address").fill(learner.email);
+    await page.getByLabel("Password").fill(PASSWORD);
+    await waitForCaptcha(page);
+    await page.getByRole("button", { name: "Sign in" }).click();
+    await expect(page.locator("main").getByRole("alert")).toContainText(/security check failed/i);
+    await expect(page).toHaveURL(/\/login/);
+    await waitForCaptcha(page); // the widget was reset and issued a fresh token
+    await expect(page.getByLabel("Password")).toHaveValue(""); // password cleared after a failure
+  } finally {
+    await secret("1x0000000000000000000000000000000AA");
+  }
+  await settled("ok");
 });
 
 test("login: wrong password is refused; right password shows the dashboard; protected pages redirect when signed out", async ({ page }) => {

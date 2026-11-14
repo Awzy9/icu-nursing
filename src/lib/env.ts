@@ -21,6 +21,11 @@ const schema = z
       .min(20, "anon key looks too short")
       .optional()
       .or(z.literal("").transform(() => undefined)),
+    NEXT_PUBLIC_TURNSTILE_SITE_KEY: z
+      .string()
+      .regex(/^[0-9A-Za-z_-]{10,64}$/, "unexpected Turnstile site key format")
+      .optional()
+      .or(z.literal("").transform(() => undefined)),
     NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
   })
   .superRefine((v, ctx) => {
@@ -42,13 +47,14 @@ const schema = z
     }
   });
 
-export type Env = z.infer<typeof schema> & { demoMode: boolean };
+export type Env = z.infer<typeof schema> & { demoMode: boolean; captchaEnabled: boolean };
 
 export function parseEnv(source: Record<string, string | undefined>): Env {
   const parsed = schema.safeParse({
     NEXT_PUBLIC_SITE_URL: source.NEXT_PUBLIC_SITE_URL,
     NEXT_PUBLIC_SUPABASE_URL: source.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: source.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    NEXT_PUBLIC_TURNSTILE_SITE_KEY: source.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
     NODE_ENV: source.NODE_ENV,
   });
   if (!parsed.success) {
@@ -56,7 +62,8 @@ export function parseEnv(source: Record<string, string | undefined>): Env {
     throw new Error(`Invalid environment configuration: ${msg}`);
   }
   const d = parsed.data;
-  return { ...d, demoMode: !(d.NEXT_PUBLIC_SUPABASE_URL && d.NEXT_PUBLIC_SUPABASE_ANON_KEY) };
+  const demoMode = !(d.NEXT_PUBLIC_SUPABASE_URL && d.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+  return { ...d, demoMode, captchaEnabled: !demoMode && Boolean(d.NEXT_PUBLIC_TURNSTILE_SITE_KEY) };
 }
 
 let cached: Env | undefined;
@@ -66,6 +73,7 @@ export function getEnv(): Env {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    NEXT_PUBLIC_TURNSTILE_SITE_KEY: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
     NODE_ENV: process.env.NODE_ENV,
   });
   return cached;

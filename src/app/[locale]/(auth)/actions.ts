@@ -15,6 +15,14 @@ async function clientIp() {
   return (h.get("x-forwarded-for")?.split(",")[0] ?? h.get("x-real-ip") ?? "unknown").trim();
 }
 const siteUrl = () => (getEnv().NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+/** CAPTCHA: when Turnstile is configured a token is mandatory; Supabase Auth verifies it server-side (secret kept in Supabase). */
+function captcha(form: FormData): { captchaToken?: string } | { error: string } {
+  if (!getEnv().captchaEnabled) return {};
+  const token = String(form.get("captchaToken") ?? "").trim();
+  if (!token || token.length > 4096) return { error: "captchaRequired" };
+  return { captchaToken: token };
+}
+const isCaptchaError = (e: { code?: string; message?: string }) => e.code === "captcha_failed" || /captcha/i.test(e.message ?? "");
 const fd = (f: FormData) => Object.fromEntries([...f.entries()].filter(([, v]) => typeof v === "string"));
 
 export async function signInAction(_prev: FormState, form: FormData): Promise<FormState> {
@@ -24,8 +32,11 @@ export async function signInAction(_prev: FormState, form: FormData): Promise<Fo
   if (!rateLimit(`signin:${await clientIp()}`)) return { error: "rateLimited" };
   const parsed = signInSchema.safeParse(fd(form));
   if (!parsed.success) return { error: errorKey(parsed.error.issues[0]) };
-  const { error } = await supabase.auth.signInWithPassword(parsed.data);
+  const cap = captcha(form);
+  if ("error" in cap) return { error: cap.error };
+  const { error } = await supabase.auth.signInWithPassword({ ...parsed.data, options: { captchaToken: cap.captchaToken } });
   if (error) {
+    if (isCaptchaError(error)) return { error: "captchaFailed" };
     if (error.code === "email_not_confirmed") return { error: "emailNotConfirmed" };
     if (error.status === 429) return { error: "rateLimited" };
     return { error: "invalidCredentials" }; // identical message for unknown user / wrong password
@@ -43,15 +54,19 @@ export async function signUpAction(_prev: FormState, form: FormData): Promise<Fo
   const parsed = signUpSchema.safeParse(fd(form));
   if (!parsed.success) return { error: errorKey(parsed.error.issues[0]) };
   const v = parsed.data;
+  const cap = captcha(form);
+  if ("error" in cap) return { error: cap.error };
   const { error } = await supabase.auth.signUp({
     email: v.email,
     password: v.password,
     options: {
+      captchaToken: cap.captchaToken,
       emailRedirectTo: `${siteUrl()}/auth/callback?next=${encodeURIComponent(`/${locale}/dashboard`)}`,
       data: { display_name: v.displayName, experience_level: v.experience, country: v.country, preferred_locale: locale },
     },
   });
   if (error) {
+    if (isCaptchaError(error)) return { error: "captchaFailed" };
     if (error.status === 429 || error.code === "over_email_send_rate_limit" || error.code === "over_request_rate_limit") return { error: "rateLimited" };
     // These reveal nothing about other accounts and let the person fix their input.
     if (error.code === "email_address_invalid") return { error: "invalidEmail" };
@@ -69,10 +84,14 @@ export async function requestPasswordResetAction(_prev: FormState, form: FormDat
   if (!rateLimit(`reset:${await clientIp()}`, 5)) return { error: "rateLimited" };
   const parsed = resetRequestSchema.safeParse(fd(form));
   if (!parsed.success) return { error: errorKey(parsed.error.issues[0]) };
-  await supabase.auth.resetPasswordForEmail(parsed.data.email, {
+  const cap = captcha(form);
+  if ("error" in cap) return { error: cap.error };
+  const { error: resetError } = await supabase.auth.resetPasswordForEmail(parsed.data.email, {
+    captchaToken: cap.captchaToken,
     redirectTo: `${siteUrl()}/auth/callback?next=${encodeURIComponent(`/${locale}/reset-password`)}`,
   });
-  return { ok: true };
+  if (resetError && isCaptchaError(resetError)) return { error: "captchaFailed" };
+  return { ok: true }; // identical outcome whether or not the address exists
 }
 
 export async function updatePasswordAction(_prev: FormState, form: FormData): Promise<FormState> {

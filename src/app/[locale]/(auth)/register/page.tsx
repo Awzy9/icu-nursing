@@ -13,7 +13,7 @@ export default async function RegisterPage({ params }: { params: Promise<{ local
   const lib = await getTranslations("Library");
   return (
     <AuthShell title={t("registerTitle")}>
-      <AuthForm action={signUpAction} submitLabel={t("signUpButton")}>
+      <AuthForm action={signUpAction} captcha submitLabel={t("signUpButton")}>
         <Field label={t("displayName")} htmlFor="displayName"><Input id="displayName" name="displayName" autoComplete="name" required maxLength={80} /></Field>
         <Field label={t("email")} htmlFor="email"><Input id="email" name="email" type="email" autoComplete="email" required /></Field>
         <Field label={t("password")} htmlFor="password" hint={t("passwordHelp")}><Input id="password" name="password" type="password" autoComplete="new-password" required minLength={12} aria-describedby="password-hint" /></Field>
