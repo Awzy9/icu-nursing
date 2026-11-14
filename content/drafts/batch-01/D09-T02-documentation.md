@@ -1,7 +1,7 @@
 ---
 topic_id: D09-T02
 title: Nursing documentation
-domain: Professional Practice
+domain: Professional Nursing Practice
 learner_level: novice
 status: DRAFT
 origin: ai_generated
@@ -60,7 +60,7 @@ Gaps in observations during deterioration; copied entries that do not match the 
 | Action | Scope label |
 |---|---|
 | Accurate, timely, signed entries and corrections per policy | Independent nursing |
-| Reading back and recording verbal orders per policy | Collaborative (per order or policy) |
+| Reading back and recording verbal orders per policy *(not covered by the section read; local policy governs)* | Collaborative (per order or policy) |
 | Medical diagnoses and orders | Prescriber decision |
 | Changing or deleting another person's entries | Not permitted; use the correction process |
 

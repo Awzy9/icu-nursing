@@ -33,7 +33,7 @@ Patients may arrive from wards, theatres or the community already septic, and IC
 Infection triggers inflammation. If regulation fails, vasodilation, capillary leak and impaired microcirculation reduce tissue perfusion; organs (brain, kidneys, lungs, liver, coagulation system) fail. Compensation (fast breathing, fast heart rate) can hide severity until late.
 
 ## 5. Relevant pathophysiology
-Septic shock is sepsis with circulatory failure needing vasopressors and raised lactate despite fluids (definition level only; management belongs to the shock topics, D02-T09). Hypoperfusion shows as mottling, delayed capillary refill, low urine output and altered mentation.
+Septic shock is generally described (Sepsis-3 consensus definition, cited by the SSC guideline but not read here) as sepsis with circulatory and metabolic failure, including raised lactate; this draft gives no definition criteria. Management belongs to the shock topics (D02-T09). Hypoperfusion shows as mottling, delayed capillary refill, low urine output and altered mentation.
 
 ## 6. Clinical assessment
 - **History and risk:** possible source (chest, urine, abdomen, wound, skin, lines, devices, surgery or invasive procedures in recent weeks); immune suppression (illness or drugs, including recent anticancer treatment); age (NICE lists 75 or over); frailty; multiple chronic conditions; indwelling catheters; repeated antibiotic use; skin breakdown; substance misuse; social disadvantage; communication barriers.
@@ -63,6 +63,7 @@ Frequency is set by risk and local policy. NICE links NEWS2-based risk to re-cal
 | Score is not enough | Clinical concern can outweigh the score | NICE: consider risk higher than NEWS2 alone if mottled/ashen, cyanosis, non-blanching rash, or deterioration/lack of improvement |
 | Perfusion | SSC 2021 suggests measuring lactate and, in septic shock, using capillary refill time as an adjunct to guide resuscitation | Not specified in the chapters read |
 | Timing of antimicrobials | SSC 2021: immediately, ideally within 1 hour of recognition for possible septic shock or high likelihood of sepsis; for possible sepsis without shock, rapid assessment of infectious vs non-infectious causes | NICE sections on treatment were not read for this draft |
+| Cultures | SSC 2021 best-practice statement: obtain routine microbiological cultures (including blood) before starting antimicrobials if this causes no substantial delay | Not read in the chapters used |
 | Special groups | Pregnancy, children, neutropenia need separate pathways | NICE refers to separate guidance for pregnancy and neutropenic sepsis |
 | Recalculation intervals | Reassess at intervals matched to risk | Intervals above are from NICE (citing a UK academy statement) |
 

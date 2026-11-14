@@ -1,7 +1,7 @@
 ---
 topic_id: D09-T01
 title: SBAR, clinical handover and escalation of deterioration
-domain: Professional Practice
+domain: Professional Nursing Practice
 learner_level: novice
 status: DRAFT
 origin: ai_generated
@@ -124,15 +124,15 @@ D. It is adaptable: the parts used can fit the situation, and a repeat-back conf
 **Why not C:** The written record remains a separate requirement.
 
 **Q5 (safety).** Which handover omission is most likely to cause harm?
-A. Not mentioning the visiting hours that the family prefers.
+A. Not mentioning that the family usually visits after lunch and would like an update.
 B. Not mentioning a severe penicillin allergy and a culture result that is still pending.
-C. Not mentioning the patient's favourite television programme.
-D. Not mentioning the name of the previous night's bed neighbour.
+C. Not mentioning that the patient was moved to this bed from another bay on admission to the unit.
+D. Not mentioning that the day-shift nurse updated the bedside whiteboard with the plan for the day.
 **Answer: B.**
 **Why correct:** Allergy and pending results directly affect immediate treatment safety.
-**Why not A:** Useful for family care, but low safety impact.
-**Why not C:** A personal preference, not safety-critical.
-**Why not D:** Irrelevant to the patient's care.
+**Why not A:** Useful for family communication, but it carries little immediate safety risk.
+**Why not C:** Bed history rarely changes immediate care, unless it relates to isolation or infection control.
+**Why not D:** Information that is already visible at the bedside and not critical to a safe handover.
 
 **Q6 (scope).** In an SBAR call, what is the best use of the "Recommendation/Request" element?
 A. State the diagnosis the nurse believes is present and name the drug the nurse wants prescribed so that time is saved.

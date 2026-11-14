@@ -34,7 +34,7 @@ ICU patients have devices (lines, tubes, catheters), impaired defences and long 
 - **Environment:** is the correct sign visible, and are PPE, hand-hygiene products and cleaning supplies available at the room entrance?
 
 ## 7. Nursing responsibilities
-- Hand hygiene at the moments defined by local policy (commonly before touching a patient, before clean or aseptic tasks, after body-fluid exposure, after touching the patient, after touching surroundings).
+- Hand hygiene at the moments defined by local policy (commonly the WHO "five moments": before touching a patient, before clean or aseptic tasks, after body-fluid exposure, after touching the patient, after touching surroundings). *General practice; the WHO guidance was not read for this draft.*
 - PPE chosen from the task risk; put on before the task and remove in the order and place set by policy, then perform hand hygiene.
 - Respiratory hygiene and cough etiquette; safe injection and sharps practice; cleaning and disinfection of shared equipment; safe handling of linen and waste.
 - Apply and keep visible the precaution level in force; brief visitors and colleagues.
@@ -46,8 +46,8 @@ Each shift: is the isolation order still current and visible? Is the PPE supply 
 ## 9. Important findings (what each route means for care, summarised from the CDC page)
 | Route | Added measures in principle | Notes for the nurse |
 |---|---|---|
-| Contact | Gown and gloves for contact with the patient or surroundings; single room if available | Dedicate or disinfect equipment |
-| Droplet | Mask when entering the room; patient wears a mask if transported | Eye protection per task risk and local policy |
+| Contact | Gown and gloves for contact with the patient or surroundings; single room if available | Dedicate or disinfect equipment *(general practice; not stated on the CDC pages read)* |
+| Droplet | Mask when entering the room; patient wears a mask if transported | Eye protection per task risk and local policy *(general practice; not stated on the CDC pages read)* |
 | Airborne | Airborne-infection isolation room; fit-tested N95 or higher respirator; door closed; limit transport | If no isolation room is available, follow local policy and call infection prevention |
 
 Duration and discontinuation criteria vary by organism and are set by local policy (the CDC pages read did not give them).

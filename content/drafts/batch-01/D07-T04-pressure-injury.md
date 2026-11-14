@@ -1,7 +1,7 @@
 ---
 topic_id: D07-T04
 title: Skin assessment and pressure injury prevention in the ICU
-domain: General ICU Nursing Care
+domain: General ICU Nursing
 learner_level: novice
 status: DRAFT
 origin: ai_generated

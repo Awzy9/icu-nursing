@@ -37,6 +37,21 @@ describe("Phase 2 drafts: structure and safety", () => {
   });
 });
 
+describe("Phase 2 drafts: consistency with the curriculum and source register", () => {
+  const csv = (path: string) => readFileSync(path, "utf8").split(/\r?\n/).filter(Boolean);
+  const curriculum = csv("curriculum/master_curriculum.csv");
+  const register = readFileSync("sources/source_register.csv", "utf8");
+  files.forEach((f, i) => {
+    it(`${f}: topic id, domain and source IDs match the curriculum and register`, () => {
+      const m = (k: string) => new RegExp(`^${k}: (.+)$`, "m").exec(texts[i]!)?.[1]?.trim() ?? "";
+      const row = curriculum.find((l) => l.startsWith(`${m("topic_id")},`));
+      expect(row, "topic id exists in the curriculum").toBeTruthy();
+      expect(row!.includes(`,${m("domain")},`), "domain name matches the curriculum").toBe(true);
+      for (const s of m("sources").replace(/[\[\]]/g, "").split(",").map((x) => x.trim()).filter(Boolean)) expect(register.includes(s), `source ${s} is in the register`).toBe(true);
+    });
+  });
+});
+
 describe("MCQ quality checks (self-tests)", () => {
   it("accepts a balanced set", () => {
     const qs = ["A", "C", "B", "D", "C", "A"].map((a, i) => q(`Q${i + 1}`, a, ok));

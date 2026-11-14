@@ -57,11 +57,11 @@ Temperature and haemodynamic trend; dressing/site check each shift (more often i
 | Dressing change interval, non-tunneled CVC | Transparent at least every 7 days (IB); gauze every 2 days (II) | Transparent every 7 days or sooner if soiled, loose or damp; gauze every 2 days; site care with CHG-based antiseptic | Broadly consistent |
 | Skin antisepsis | >0.5% CHG with alcohol (IA) at insertion and dressing changes | Alcoholic CHG for skin preparation (high) | Consistent |
 | Administration sets (not blood or lipids) | Replace continuously used sets no more often than every 96 h, at least every 7 days (IA) | Routine replacement at intervals **up to 7 days** (high) | Compatible; local policy sets the interval |
-| Insertion site choice | Subclavian to avoid infection (adults, with caveats) | Subclavian preferred in ICU (high); ultrasound guidance advised | Prescriber/insertion decision |
+| Insertion site choice | Avoid femoral in adults (IA); subclavian rather than jugular or femoral for non-tunneled CVCs in adults (IB); avoid subclavian in haemodialysis and advanced kidney disease (IA); ultrasound guidance if available | Subclavian preferred in ICU (high); ultrasound guidance advised | Prescriber/insertion decision; the kidney-disease exception comes from 2011 only |
 | Connector disinfection | Scrub access port (IA) | Disinfect hubs, connectors, ports before access (moderate) | Consistent |
 | Staffing | Ensure appropriate ICU nurse staffing (IB) | Appropriate nurse-to-patient ratio, limit float nurses (high) | Organisational issue; escalate unsafe staffing |
 | Routine replacement of CVCs | Do not routinely replace to prevent infection | Same (do not routinely replace) | Consistent |
-| Antimicrobial prophylaxis | Not recommended systemically | Not recommended for short-term or tunneled catheters | Prescriber decision |
+| Antimicrobial prophylaxis | Do not give systemic prophylaxis routinely before insertion or during use | Not recommended for short-term or tunneled catheters | Prescriber decision |
 
 ## 10. Warning signs and red flags
 Fever or rigors, hypothermia, new tachycardia or hypotension, new confusion; redness, swelling, tenderness or discharge at the site; blood in the dressing; line malfunction or leakage; wet or lifting dressing; missing caps; disconnected tubing; rigors during flush or infusion.
