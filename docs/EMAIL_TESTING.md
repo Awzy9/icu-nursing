@@ -54,3 +54,17 @@ Tests (`npm run live:email:builtin -- <mode>` with `EMAIL_TEST_ADDRESS` set; a l
 | `status` | Confirmation is required, SMTP is built-in, sends used this hour | Automated |
 
 Not provable in this setup: completing the reset in the browser from the emailed link (it redirects to a site URL not reachable from the cloud session; that step is already covered by admin-generated-link live tests), deliverability at scale, branded sender/DKIM. All of these wait for the verified domain and production SMTP.
+
+## Verified results (built-in Supabase sender, DEV project `icu-nursing-dev`, 2026-11-14)
+
+Test mailbox: the authorised organisation mailbox supplied by the owner (address deliberately not recorded here). Real Cloudflare Turnstile was completed by a person in a local browser (`localhost`). Email confirmation stayed enabled throughout.
+
+| Step | Result | Evidence | Verified by |
+|---|---|---|---|
+| Registration with real Turnstile | **Passed** | `auth.users` row created 18:58:03 UTC; provider `email`; matching `public.profiles` row exists | Independent SQL check |
+| Confirmation email delivered | **Passed** | `confirmation_sent_at` 18:58:03; owner reports receiving the Supabase email | Database timestamp + owner report |
+| Confirmation link works; confirmation is required | **Passed** | `email_confirmed_at` = 18:58:30 UTC (27 s after sending), populated only after the link was used | Independent SQL check (read-only) |
+| Password-recovery email requested | Requested | `recovery_sent_at` = 19:00:08 UTC | Database timestamp |
+| Password recovery delivered and completed | **Not yet confirmed** | Awaiting the owner's confirmation; a database timestamp alone does not prove delivery or a successful reset | Pending owner |
+
+Limits observed/known: built-in sender only reaches organisation members and allows about 2 emails per hour project-wide (both used in this run); messages come from Supabase's shared sender and may land in spam; branding, DKIM/SPF alignment and volume cannot be assessed until a verified domain and production SMTP exist. The earlier scripted attempt (no human token) was refused by CAPTCHA and sent nothing.
