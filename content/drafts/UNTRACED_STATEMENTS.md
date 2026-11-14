@@ -39,3 +39,9 @@ Of the six previously flagged clinically relevant statements (items 1, 2, 4, 9, 
 - **Transfusion draft (D08-T03):** identity-check method, bedside rates, observation intervals, line care and first-line actions after a reaction come from local transfusion policy, not the Circular; flagged.
 - **Septic shock draft (D02-T09):** persistent-shock and organ-failure complications are general knowledge not traced to the sources read; flagged.
 - **High-alert draft (D05-T16):** no drug-specific safeguards or concentration standards; the ISMP evidence base and strategy documents were not read.
+
+## Batch 7 update (2026-11-14)
+- **Resolved or reduced:** transfusion bedside steps (Open RN 3.4 checklist, US, textbook-level); extravasation and limb-perfusion monitoring for epinephrine and dopamine (Open RN grids); hyperkalaemia monitoring and sampling (UKKA 2026).
+- **Still unresolved:** arterial-line technique; enteral tube placement; extravasation recognition and management; first-line actions after a transfusion reaction; hypokalaemia management and potassium replacement; extubation readiness; CRRT machine and circuit management; ICU-specific ECG monitoring standards and alarm limits.
+- **Flagged inside new drafts as general knowledge not traced to a source read:** complication lists (D01-T17, D04-T06, D02-T02), general warning signs, HIT flush policy (D04-T09), Allen test (D04-T08).
+- **Website inconsistency:** UKKA summary page (6.5 mmol/L) versus detail page (6.0 mmol/L) for the 12-lead ECG threshold.

@@ -313,3 +313,122 @@ D02-T09,SSC 2026: suggest against antipyretic therapy for outcomes; not for symp
 D02-T09,SSC 2026: suggest against bicarbonate for haemodynamics; use in severe acidaemia with AKI,SSC 2026 official SCCM recommendation page (recommendation-level),Sodium bicarbonate,Conditional; very low,text match
 D02-T09,SSC 2026: suggest active fluid removal after acute resuscitation,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid removal,Conditional; very low,text match
 D02-T09,"SSC 2026: crystalloids alone over albumin; albumin exceptions (cirrhosis, large crystalloid volumes); avoid in TBI",SSC 2026 official SCCM recommendation page (recommendation-level),Fluid type,Conditional; moderate,text match
+D04-T06,"UKKA: hyperkalaemia threshold >5.5 mmol/L; mild 5.5-5.9, moderate 6.0-6.4, severe >=6.5",UKKA acute hyperkalaemia guideline website (July 2026),5 Introduction,Statement,text match
+D04-T06,UKKA: in-hospital mortality 18.1% hyperkalaemia vs 5.0% hypokalaemia vs 3.9% normokalaemia; >30% severe,UKKA acute hyperkalaemia guideline website (July 2026),5 Introduction,Statement,text match
+D04-T06,UKKA 13.1/13.2: history and examination (1B); early warning score assessment (1C),UKKA acute hyperkalaemia guideline website (July 2026),13.2,1C,text match
+D04-T06,"UKKA 14.2: continuous 3-lead ECG monitoring thresholds, ideally higher dependency (1C)",UKKA acute hyperkalaemia guideline website (July 2026),14.2,1C,text match
+D04-T06,UKKA 14.1 detail page: 12-lead ECG at K >=6.0 (summary page says 6.5),UKKA acute hyperkalaemia guideline website (July 2026),11.1.2 (detail) vs 6.2 (summary),1B; website inconsistency,text match
+D04-T06,UKKA 14.1 summary page: 12-lead ECG at K >=6.5,UKKA acute hyperkalaemia guideline website (July 2026),6.2 (summary),1B; website inconsistency,text match
+D04-T06,UKKA rationale: peaked T waves alone rarely life-threatening; ECG can rule in not out; normal ECG possible; pseudo-STEMI,UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,"UKKA rationale: ECG signs correlated with adverse events: QRS prolongation, bradycardia <50, junctional rhythms",UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,"UKKA rationale: pacemakers not protected; wider paced QRS, thresholds",UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,UKKA rationale: BRASH syndrome,UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,UKKA 15.1: lithium heparin sample when rapid results needed (1B),UKKA acute hyperkalaemia guideline website (July 2026),15.1,1B,text match
+D04-T06,UKKA 15.2: point-of-care blood gas potassium in emergencies (1B),UKKA acute hyperkalaemia guideline website (July 2026),15.2,1B,text match
+D04-T06,UKKA 15.3: pseudohyperkalaemia - paired lithium heparin and clotted samples (1A),UKKA acute hyperkalaemia guideline website (July 2026),15.3,1A,text match
+D04-T06,"UKKA rationale: causes of pseudohyperkalaemia (transit, haemolysis, EDTA contamination, sampling from infusion arm)",UKKA acute hyperkalaemia guideline website (July 2026),15.3 rationale,Rationale,text match
+D04-T06,UKKA 16.1: 5 step approach (1B); never walk away without completing all steps,UKKA acute hyperkalaemia guideline website (July 2026),16.1 rationale,1B,text match
+D04-T06,UKKA: treatment not complete until cause identified and recurrence prevented,UKKA acute hyperkalaemia guideline website (July 2026),16.1 rationale,Rationale,text match
+D04-T06,"UKKA 16.2b: calcium chloride in cardiac arrest/peri-arrest, calcium gluconate otherwise (1C)",UKKA acute hyperkalaemia guideline website (July 2026),16.2b,1C,text match
+D04-T06,"UKKA: calcium adverse effects - tissue necrosis if extravasation, hypotension, bradycardia",UKKA acute hyperkalaemia guideline website (July 2026),16.2 patient safety,Statement,text match
+D04-T06,UKKA 16.3.3: glucose infusion after insulin-glucose if pre-treatment glucose <7.0 (2B),UKKA acute hyperkalaemia guideline website (July 2026),16.3.3,2B,text match
+D04-T06,UKKA 16.4.3: salbutamol not as monotherapy in severe hyperkalaemia (1A),UKKA acute hyperkalaemia guideline website (July 2026),16.4.3,1A,text match
+D04-T06,UKKA 16.5: IV sodium bicarbonate not routine (2C),UKKA acute hyperkalaemia guideline website (July 2026),16.5,2C,text match
+D04-T06,UKKA 16.6.1a: sodium zirconium cyclosilicate for severe hyperkalaemia (1B),UKKA acute hyperkalaemia guideline website (July 2026),16.6.1a,1B,text match
+D04-T06,UKKA 16.2: calcium resonium no longer routinely used (2B),UKKA acute hyperkalaemia guideline website (July 2026),16.2 (resin),2B,text match
+D04-T06,"UKKA 17.1: monitor K closely for rebound; at least 1, 2, 4, 6, 24 h (1B; 2C)",UKKA acute hyperkalaemia guideline website (July 2026),17.1.2,2C,text match
+D04-T06,"UKKA 17.2: blood glucose at 0,30,60,90,120,180,240,300,360 min (1C)",UKKA acute hyperkalaemia guideline website (July 2026),17.2,1C,text match
+D04-T06,UKKA rationale: hypoglycaemia most common adverse event; risk up to 6 hours; signs,UKKA acute hyperkalaemia guideline website (July 2026),17.2 rationale,Rationale,text match
+D04-T06,UKKA 18.1/18.2: haemodialysis patients urgent dialysis (1A); calcium with toxic ECG changes (1C),UKKA acute hyperkalaemia guideline website (July 2026),18.1,1A,text match
+D04-T06,UKKA 19.1-19.6: referral to renal/critical care; senior referral; RRT decision by nephrologist or critical care specialist,UKKA acute hyperkalaemia guideline website (July 2026),19.6,1C,text match
+D04-T06,UKKA 21.1/21.2: review potassium-raising drugs; dietary strategies after non-dietary causes,UKKA acute hyperkalaemia guideline website (July 2026),21.2,1C,text match
+D04-T06,UKKA 23.1: consider hyperkalaemia in all cardiac arrests (1A),UKKA acute hyperkalaemia guideline website (July 2026),23.1,1A,text match
+D04-T06,UKKA 24.2: disconnect from dialysis equipment before defibrillation unless defibrillator proof (1C),UKKA acute hyperkalaemia guideline website (July 2026),24.2,1C,text match
+D04-T06,UKKA 26.2: continuous cardiac monitoring for K>=6.5 (1C),UKKA acute hyperkalaemia guideline website (July 2026),26.2,1C,text match
+D04-T06,UKKA website: updated July 2026; review October 2026,UKKA acute hyperkalaemia guideline website (July 2026),Home,Date,text match
+D04-T06,UKKA: ILCOR 2025 found no evidence for or against IV calcium,UKKA acute hyperkalaemia guideline website (July 2026),1 Purpose,Statement,text match
+D01-T17,AARC SBT: SBT definition 30-120 min; liberation vs extubation; only 55% liberated,AARC SBT CPG 2024 (PMC11285503),Introduction,Statement,text match
+D01-T17,AARC SBT: rec 1 RSBI not needed (conditional; moderate),AARC SBT CPG 2024 (PMC11285503),PICO 1,Conditional; moderate,text match
+D01-T17,"AARC SBT: simple screen - reversal of cause, oxygenation, haemodynamic stability, inspiratory effort",AARC SBT CPG 2024 (PMC11285503),PICO 1 justification,Statement,text match
+D01-T17,"AARC SBT: tolerance criteria - respiratory pattern, hemodynamics, gas exchange, comfort",AARC SBT CPG 2024 (PMC11285503),PICO 1 justification,Statement,text match
+D01-T17,AARC SBT: airway protection and secretion clearance as extubation factors,AARC SBT CPG 2024 (PMC11285503),PICO 1 justification,Statement,text match
+D01-T17,AARC SBT: rec 2 with or without low-level PSV (<=8 cm H2O) (conditional; moderate),AARC SBT CPG 2024 (PMC11285503),PICO 2,Conditional; moderate,text match
+D01-T17,AARC SBT: PSV 0/PEEP 0 allows ventilator monitoring and alarms; quick return to support,AARC SBT CPG 2024 (PMC11285503),PICO 2 justification,Statement,text match
+D01-T17,AARC SBT: SBT on post-extubation NIV settings for patients to be extubated to NIV,AARC SBT CPG 2024 (PMC11285503),PICO 2 justification,Statement,text match
+D01-T17,AARC SBT: rec 3 standardised assessment and SBT before noon (conditional; very low),AARC SBT CPG 2024 (PMC11285503),PICO 3,Conditional; very low,text match
+D01-T17,AARC SBT: coordination between nurses adjusting sedation and RTs performing SBTs,AARC SBT CPG 2024 (PMC11285503),PICO 3 justification,Statement,text match
+D01-T17,"AARC SBT: adherence to guidelines is low, causing delay",AARC SBT CPG 2024 (PMC11285503),PICO 3 justification,Statement,text match
+D01-T17,AARC SBT: rec 4 FiO2 not increased (conditional; very low),AARC SBT CPG 2024 (PMC11285503),PICO 4,Conditional; very low,text match
+D01-T17,"AARC SBT: increasing FiO2 may mask hypoxaemia, false-positive SBT",AARC SBT CPG 2024 (PMC11285503),PICO 4 justification,Statement,text match
+D01-T17,AARC SBT: common criteria SpO2>90% with FiO2 0.40 or PaO2/FiO2>200; stop if SpO2<90%,AARC SBT CPG 2024 (PMC11285503),PICO 4 background,Statement,text match
+D01-T17,AARC SBT: all four recommendations conditional; relative absence of high-level evidence,AARC SBT CPG 2024 (PMC11285503),Discussion,Statement,text match
+D01-T17,AARC SBT: 75% passed first SBT in trials; clinicians slow to recognise readiness,AARC SBT CPG 2024 (PMC11285503),Introduction,Statement,text match
+D02-T02,Open RN 7.3: rate = R waves in 6-second strip x 10,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: rhythm regularity categories,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: PR 0.12-0.2 s; QRS 0.04-0.12 s,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: prolonged QRS may indicate hyperkalaemia or bundle branch block,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: ST elevation/depression of 1 mm at J point abnormal,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,"Open RN 7.3: prolonged QTc risk torsades, VT, VF",Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: U wave hypokalaemia; J wave hypothermia,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.2: SA node 60-100; AV node 40-60; Purkinje 20-40,Open RN Nursing Advanced Skills ch.7 (ECG),7.2,Educational text,text match
+D02-T02,Open RN 7.2: artifact - monitor label not always correct,Open RN Nursing Advanced Skills ch.7 (ECG),7.2,Educational text,text match
+D02-T02,"Open RN 7.4: VT, VF and third-degree block can quickly lead to arrest",Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: atrial fibrillation irregularly irregular,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: R on T can trigger VT; prolonged QT,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,"Open RN 7.4: VT wide QRS, pulse vs pulseless",Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: VF no cardiac output; immediate CPR,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: asystole and PEA not shockable,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: first-degree AV block PR >0.2 s,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.5: telemetry electrode placement and skin preparation,Open RN Nursing Advanced Skills ch.7 (ECG),7.5,Educational checklist,text match
+D04-T08,Open RN 15.5: normal pH 7.35-7.45; PaCO2 35-45; HCO3 22-26,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,"Open RN 15.5: ROME - respiratory opposite, metabolic equal",Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: SaO2 may be normal with hypercapnia; not the determining factor,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: paper-bag rebreathing no longer recommended,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: compensation definitions,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: critical values pH <7.25 or >7.60,Open RN Nursing Fundamentals 15.5 (acid-base),15.5 table,Educational text,text match
+D04-T08,"AARC BGA 14.1: BGA recommended to evaluate ventilatory, acid-base, oxygenation status (1A)",AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.1,1A,text match
+D04-T08,AARC BGA 14.5: capillary BGA not recommended for oxygenation (1A),AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.5,1A,text match
+D04-T08,AARC BGA 14.7: peripheral venous PO2 not substitute for PaO2 (1A),AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.7,1A,text match
+D04-T08,AARC BGA 14.8: venous PCO2 and pH not substitute (2B),AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.8,2B,text match
+D04-T08,AARC BGA 4.4: visible air bubbles contraindicate,AARC Blood Gas Analysis and Hemoximetry CPG 2013,4.4,Statement,text match
+D04-T08,AARC BGA 4.5: room temperature >30 min plastic; glass chilled 0-4C,AARC Blood Gas Analysis and Hemoximetry CPG 2013,4.5,Statement,text match
+D04-T08,AARC BGA 4.7: inadequately labelled specimen,AARC Blood Gas Analysis and Hemoximetry CPG 2013,4.7,Statement,text match
+D04-T08,"AARC BGA 6.1: sources of error incl clotting, air, saline contamination, delay, transport tube",AARC Blood Gas Analysis and Hemoximetry CPG 2013,6.1.11,Statement,text match
+D04-T08,AARC BGA 5.2: inappropriate treatment from improperly analysed specimen,AARC Blood Gas Analysis and Hemoximetry CPG 2013,5.2,Statement,text match
+D05-T03,Open RN 4.15: norepinephrine peripheral vasoconstrictor and inotropic stimulator,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.15,Educational text,text match
+D05-T03,Open RN 4.15: epinephrine IV - monitor vitals; monitor IV site for extravasation,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.15,Educational text,text match
+D05-T03,Open RN 4.15: dopamine monitoring and notify prescriber if urine falls without hypotension,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.15,Educational text,text match
+D05-T03,"Open RN 4.11: dobutamine beta-1; continuous ECG, BP, cardiac output, urine output","Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.11,Educational text,text match
+D05-T03,Open RN 4.8: phenylephrine as oral decongestant,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.8,Educational text,text match
+D05-T01,Open RN 8.5: benzodiazepines bind GABA; black box opioid warning,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 8.5: IV lorazepam respiratory depression; airway patency; monitor respiration,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,"Open RN 8.5: elderly more susceptible, monitor frequently","Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 8.5: flumazenil seizure risk,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 8.5: barbiturates taper not abruptly,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 10.10: propofol IV general anaesthetic,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",10.10,Educational text,text match
+D08-T03,Open RN 3.4: two-person verification comparing wristband and bag label,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: written informed consent unless emergency,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: start within 30 minutes of obtaining the unit,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: remain with client first 15 minutes; stop and notify if reaction,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: monitor 4 to 6 hours after; teach delayed reaction signs,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: complete within 4-hour time frame,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D04-T09,"KDIGO 5.1.1: initiate RRT emergently for life-threatening fluid, electrolyte, acid-base change",KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.1.1,Not graded,text match
+D04-T09,"KDIGO 5.1.2: broader context and trends, not single BUN/creatinine thresholds",KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.1.2,Not graded,text match
+D04-T09,KDIGO 5.2.1: discontinue when no longer required or inconsistent with goals of care,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.2.1,Not graded,text match
+D04-T09,KDIGO 5.2.2: suggest not using diuretics to enhance recovery,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.2.2,2B,text match
+D04-T09,KDIGO 5.3.1.1: anticoagulation recommended if no increased bleeding risk,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.1.1,1B,text match
+D04-T09,KDIGO 5.3.2.2: regional citrate over heparin for CRRT if no contraindication,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.2.2,2B,text match
+D04-T09,KDIGO 5.3.3: increased bleeding risk - citrate rather than none; avoid regional heparinisation,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.3.2,2C,text match
+D04-T09,KDIGO 5.3.4: HIT - all heparin stopped; direct thrombin or Factor Xa inhibitors,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.4,1A,text match
+D04-T09,KDIGO 5.4.1: uncuffed non-tunnelled catheter,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.1,2D,text match
+D04-T09,KDIGO 5.4.2: vein preferences right jugular first,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.2,Not graded,text match
+D04-T09,KDIGO 5.4.3: ultrasound guidance recommended,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.3,1A,text match
+D04-T09,KDIGO 5.4.4: chest radiograph before first use of IJ or subclavian catheter,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.4,1B,text match
+D04-T09,KDIGO 5.4.5-5.4.6: no topical antibiotics; no antibiotic locks,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.6,2C,text match
+D04-T09,KDIGO 5.5.1: biocompatible membrane suggested,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.5.1,2C,text match
+D04-T09,KDIGO 5.6.2: CRRT for haemodynamically unstable patients,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.6.2,2B,text match
+D04-T09,KDIGO 5.6.3: CRRT for brain injury or raised ICP,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.6.3,2B,text match
+D04-T09,KDIGO 5.7.2: bicarbonate buffer recommended in circulatory shock,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.7.2,1B,text match
+D04-T09,KDIGO 5.7.4: fluids comply with AAMI standards for bacteria and endotoxins,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.7.4,1B,text match
+D04-T09,KDIGO 5.8.1: dose prescribed before each session; frequent assessment of delivered dose,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.8.1,1B,text match
+D04-T09,"KDIGO 5.8.2: goals of electrolyte, acid-base, solute and fluid balance",KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.8.2,Not graded,text match
