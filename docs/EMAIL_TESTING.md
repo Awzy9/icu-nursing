@@ -64,7 +64,9 @@ Test mailbox: the authorised organisation mailbox supplied by the owner (address
 | Registration with real Turnstile | **Passed** | `auth.users` row created 18:58:03 UTC; provider `email`; matching `public.profiles` row exists | Independent SQL check |
 | Confirmation email delivered | **Passed** | `confirmation_sent_at` 18:58:03; owner reports receiving the Supabase email | Database timestamp + owner report |
 | Confirmation link works; confirmation is required | **Passed** | `email_confirmed_at` = 18:58:30 UTC (27 s after sending), populated only after the link was used | Independent SQL check (read-only) |
-| Password-recovery email requested | Requested | `recovery_sent_at` = 19:00:08 UTC | Database timestamp |
-| Password recovery delivered and completed | **Not yet confirmed** | Awaiting the owner's confirmation; a database timestamp alone does not prove delivery or a successful reset | Pending owner |
+| Password-recovery email requested | **Passed** | `recovery_sent_at` = 19:00:08 UTC | Database timestamp |
+| Password recovery delivered and completed | **Passed** | Owner confirmed the recovery email arrived and the password reset worked (real Turnstile completed in a local browser); `last_sign_in_at` 19:00:20 UTC is consistent with it | Owner report (not independently observable beyond the timestamps) |
+
+Summary: registration, email confirmation and password recovery all work end to end with real Turnstile and the built-in sender on the DEV project.
 
 Limits observed/known: built-in sender only reaches organisation members and allows about 2 emails per hour project-wide (both used in this run); messages come from Supabase's shared sender and may land in spam; branding, DKIM/SPF alignment and volume cannot be assessed until a verified domain and production SMTP exist. The earlier scripted attempt (no human token) was refused by CAPTCHA and sent nothing.
