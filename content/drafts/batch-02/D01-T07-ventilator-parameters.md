@@ -8,9 +8,9 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies (Intensive Care Med 2023;49:727-759; CC BY-NC)"]
+guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – monitoring of lung-protective ventilation, adults and children", "ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies (Intensive Care Med 2023;49:727-759; CC BY-NC) – ARDS only"]
 sources: [S-AARC-PVA]
-independently_written_note: "Original wording. The ESICM 2023 ARDS guideline (open access, CC BY-NC – non-commercial) was read in full text; the AARC patient-ventilator assessment guideline listed as the register source was NOT accessible and not read. Content is limited to what the ESICM text supports; ventilator mode details are not covered."
+independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (the register source; full-text PDF; cite-only) and the ESICM 2023 ARDS guideline (open access, CC BY-NC – non-commercial) were both read in full text. Content is limited to what the ESICM text supports; ventilator mode details are not covered."
 ---
 # Ventilator parameters and lung-protective ventilation – what the nurse monitors
 > DRAFT – NOT clinically reviewed. AI-generated. Ventilator settings are changed by the prescriber or respiratory therapist, not by the nurse, unless a local protocol says otherwise.
@@ -63,7 +63,9 @@ Per policy, at least hourly in unstable patients and with every reassessment: Fi
 | Neuromuscular blockade | Recommends against routine continuous infusion in moderate–severe ARDS not due to COVID-19 (strong) | Prescriber decision |
 | Non-invasive support before intubation | Recommends high-flow nasal oxygen over conventional oxygen in acute hypoxaemic respiratory failure (not cardiogenic pulmonary oedema or COPD exacerbation) to reduce intubation (strong); no recommendation on CPAP/NIV versus conventional oxygen overall | Escalate early if work of breathing rises |
 | ECMO | Severe ARDS should be treated in an ECMO centre meeting organisational standards (strong) | Transfer decisions belong to the team |
-| Driving pressure, plateau limits | Listed as areas needing research; the guideline makes no recommendation for a driving-pressure target | Do not teach a driving-pressure threshold as guideline-based |
+| Driving pressure, plateau limits | ESICM lists limiting driving or plateau pressure as a research gap and makes no recommendation on a driving-pressure target | See AARC rows below: the two documents differ in scope, not in direction |
+| **AARC 2024 – monitoring (all ventilated patients; population "all" in its table)** | Assess plateau pressure (strong, high certainty; limit ≤ 30 cmH₂O adults, ≤ 28 paediatric in its table); assess expired tidal volume against 4–8 mL/kg PBW and document it per kg PBW (strong, high); assess PEEP and auto-PEEP (strong, high); suggest assessing driving pressure (conditional, low certainty; table target ≤ 15 cmH₂O); suggest assessing FiO₂ to avoid both hypoxaemia and hyperoxaemia (conditional, very low) | Document tidal volume per kg PBW as well as the absolute volume; report values outside the unit's limits |
+| Who adjusts settings | AARC states hospitals should empower bedside clinicians to adjust ventilator settings using non-physician-directed protocols | Whether a nurse may adjust anything is local protocol and role definition; default is **no** |
 
 ## 10. Warning signs and red flags
 Falling delivered tidal volume or rising airway pressures; sudden desaturation; high-pressure or low-volume alarms; new asynchrony or "fighting the ventilator"; chest not moving equally; loss of end-tidal CO₂ trace; subcutaneous emphysema; hypotension with rising pressures; accidental disconnection or extubation; during proning: tube displacement, line dislodgement, facial or eye injury, new pressure injury, haemodynamic instability.
@@ -160,13 +162,14 @@ D. A FiO₂ that has been gradually lowered by the team during the day as the pa
 **Why not D:** A gradual weaning of FiO₂ by the team is expected as the patient improves.
 
 ## 18. References
+- Goodfellow LT, Miller AG, Varekojis SM, et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054. https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)
 - Grasselli G, Calfee CS, Camporota L, et al. ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies. Intensive Care Med. 2023;49:727-759. doi:10.1007/s00134-023-07050-7. https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/ (accessed 2026-11-14)
 
 ## 19. Local protocol note
 Ventilator targets, alarm limits, weaning, proning and recruitment protocols follow the institution's policies and the respiratory therapy team.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: a European society guideline (2023) with graded recommendations, open access (CC BY-NC); it addresses ARDS, not all ventilated patients, and it does not teach monitoring techniques. The AARC patient-ventilator guideline named in the register was not accessible.
+- Source quality: two graded guidelines with different scope. **ESICM 2023** is a European society guideline for ARDS only (CC BY-NC). **AARC 2024** is a respiratory-therapy guideline on monitoring (strong recommendations, mostly high certainty for assessment; conditional for driving pressure and FiO₂); it applies to adults and children and does not say who performs the assessment. Population-specific: the ESICM recommendations apply to patients with ARDS; do not generalise them (for example prone positioning or neuromuscular blockade) to all ventilated patients.
 - International applicability: broadly applicable; ECMO and some practices depend on resources.
 - Not covered: modes, alarms, weaning (see other topics), and hypercapnia targets.
-- Open questions for reviewers (RT, CCP, NE, BN): confirm monitoring frequencies and alarm limits; whether to teach plateau pressure below 30 cmH₂O as practice (the guideline describes it as current practice); driving pressure content (no guideline target); nurse role in proning checks and who leads.
+- Open questions for reviewers (RT, CCP, NE, BN): confirm monitoring frequencies and alarm limits; whether to teach plateau pressure below 30 cmH₂O as practice (the guideline describes it as current practice); driving pressure content (AARC suggests assessing it with a table target ≤ 15 cmH₂O at low certainty; ESICM makes no recommendation); nurse role in proning checks and who leads.

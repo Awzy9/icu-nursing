@@ -67,7 +67,9 @@ Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially 
 | Early treatment | Early haemodynamic stabilisation and cause treatment with frequent reassessment of response (ungraded) | Reassess after each intervention |
 | BP target | Individualise the target; initially MAP of at least 65 mmHg (level 1) | Prescriber sets the target |
 
-For septic shock, SSC 2021 also suggests using capillary refill time as an adjunct to guide resuscitation (weak recommendation, low-quality evidence).
+**Newer septic-shock statements (SSC 2021, septic shock only):** capillary refill time may be used as an adjunct to guide resuscitation (weak recommendation, low-quality evidence); for adults with septic shock on vasopressors, an initial MAP target of 65 mmHg is recommended over higher targets (strong, moderate-quality evidence). These apply to **septic** shock and do not replace the individualised target set by the prescriber for other shock types.
+
+**Dated evidence:** the ESICM consensus is from 2014. The SSC 2021 statements above agree with its MAP 65 starting point and lactate use, but a 2026 SSC update exists that could not be read; reviewers must check whether any statement here has changed.
 
 ## 10. Warning signs and red flags
 Cold, mottled or blue skin; capillary refill prolonged; new confusion or drowsiness; urine output falling; heart rate rising or new arrhythmia; blood pressure falling or MAP below the ordered target; rising lactate; shortness of breath; chest pain; unexplained bleeding or swelling; no response to first treatments.
@@ -171,7 +173,7 @@ D. Document the reading carefully and review it after the shift, when the day ha
 Escalation triggers, MAP targets, monitoring intensity and treatment protocols follow local policy and the treating team.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: a European society expert consensus (2014) with graded statements; dated, and many statements are ungraded or low quality. A 2026 SSC update exists that could not be read.
+- Source quality: a European society expert consensus (2014) with graded statements; **dated**, and many statements are ungraded or low quality. Cross-checked against SSC 2021 for septic shock only (MAP 65, capillary refill, lactate); a 2026 SSC update exists that could not be read. No newer open-access shock consensus was found in the searches done.
 - International applicability: general principles are widely applicable; resource-limited settings may lack lactate or echocardiography.
 - Not covered: shock subtypes in depth, specific therapies, vasopressor dosing.
 - Open questions for reviewers (CCP, NE, BN): is a 2014 consensus acceptable as the primary source, or should a newer review replace it; the nurse's role in applying a MAP target; urine-output thresholds; trauma-specific permissive hypotension.

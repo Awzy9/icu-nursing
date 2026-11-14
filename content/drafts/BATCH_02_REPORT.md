@@ -11,7 +11,7 @@ Only topics whose primary source could be read in full (open-access full text or
 | Topic | Sources actually read | Source quality / date | Licence | Main limitation |
 |---|---|---|---|---|
 | D06-T07 Preventing VAP and VAE (adults) | SHEA/IDSA/APIC 2022 update (full text) | Graded multi-society guideline, 2022 | CC BY | Non-ventilator pneumonia and paediatric sections not covered; contains "frequent cuff-pressure monitoring not recommended for VAP prevention" which conflicts with common cuff-pressure teaching — flagged |
-| D01-T07 Ventilator parameters and lung-protective ventilation | ESICM ARDS guideline 2023 (full text) | Society guideline, 2023 | CC BY-NC | ARDS only; the AARC patient-ventilator guideline (register source) was inaccessible; no driving-pressure target exists in the guideline |
+| D01-T07 Ventilator parameters and lung-protective ventilation | ESICM ARDS guideline 2023 and AARC Patient-Ventilator Assessment CPG 2024 (both full text; AARC added in the QA review) | Society guidelines, 2023 and 2024 | CC BY-NC; AARC cite-only | ESICM = ARDS only; AARC = monitoring for all ventilated patients; driving-pressure target appears only in AARC's table (conditional, low certainty) |
 | D02-T08 Recognising circulatory shock | ESICM consensus on shock and haemodynamic monitoring 2014 (full text); SSC 2021 for one statement | Expert consensus, **dated 2014** | CC BY-NC; SSC cite-only | No vasopressor/fluid content; SSC 2026 unread |
 | D04-T02 Acute kidney injury | NICE NG148 recommendations (sections 1.1–1.5) | National guideline (UK), mostly 2013-era text, updated 2024 | NICE cite-only | KDIGO 2026 is a draft and is not used as final; KDIGO 2012 not read |
 | D03-T10 Delirium | NICE CG103 recommendations (full chapter) | National guideline (UK), updated 2023, not ICU-specific | NICE cite-only | **PADIS 2018/2025 (the ICU source) inaccessible**, so ICU drug and bundle evidence is absent |
@@ -48,6 +48,8 @@ Source-by-source log: `content/drafts/batch-02-sources.csv`.
 - NICE documents: cite-only.
 - SSC 2021 PMC copy: temporary pandemic-period terms.
 - SHEA 2022 (CC BY): attribution if adapted.
+
+Internal review: `BATCH_02_INTERNAL_REVIEW.md`; counts: `DRAFT_QUALITY_REPORT.md`; backlog and slot evaluation: `BACKLOG.md`.
 
 ## 7. Status and next steps
 Batch 2 is a draft set awaiting the internal quality review (same method as Batch 1: claim-to-source trace, scope check, MCQ review) and, after that, genuine qualified human review. Nothing is publishable. Blocked topics need a person to open the sources or supply readable copies.

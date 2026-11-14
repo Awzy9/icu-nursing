@@ -1,0 +1,73 @@
+draft,claim,source,location,recommendation_strength_or_certainty,verification
+D06-T07,Head of bed 30-45 degrees is an essential practice,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2 and rationale,Essential; low certainty,text match
+D06-T07,Oral care with toothbrushing but without chlorhexidine is essential,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; moderate,text match
+D06-T07,Chlorhexidine oral care generally not recommended,SHEA/IDSA/APIC 2022 (PMC10903147),Summary of changes,Not recommended; moderate,text match
+D06-T07,"Minimize sedation: avoid benzodiazepines, use a protocol, ventilator liberation protocol",SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; moderate,text match
+D06-T07,Early enteral vs parenteral nutrition essential,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; high,text match
+D06-T07,Change ventilator circuit only if visibly soiled or malfunctioning,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; high,text match
+D06-T07,Maintain/improve physical conditioning (mobilisation),SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; moderate,text match
+D06-T07,Frequent cuff-pressure monitoring generally not recommended for VAP prevention,SHEA/IDSA/APIC 2022 (PMC10903147),Section on approaches not recommended,Not recommended; moderate,text match
+D06-T07,Manual cuff measurement can lose pressure (lab study) - nuance,SHEA/IDSA/APIC 2022 (PMC10903147),"Rationale, cuff monitoring",Single lab investigation,text match
+D06-T07,Subglottic secretion drainage tubes are an additional approach (>48-72 h ventilation),SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Additional; moderate,text match
+D06-T07,Monitoring residual gastric volumes: no impact on VAP rates,SHEA/IDSA/APIC 2022 (PMC10903147),Section on interventions with no impact,No impact; moderate,text match
+D06-T07,VAC definition: PEEP rise >=3 cm H2O or FiO2 rise >=20 points sustained >=2 days after >=2 stable days,SHEA/IDSA/APIC 2022 (PMC10903147),Introduction/VAE definition,Surveillance definition,text match
+D06-T07,AARC 2024: assess cuff pressure with a manometer,AARC Patient-Ventilator Assessment CPG 2024,Summary recommendation 13,Strong; high,text match
+D06-T07,AARC 2024: continuous cuff-pressure assessment should not be implemented to reduce VAP risk,AARC Patient-Ventilator Assessment CPG 2024,Summary recommendation 14,Strong; high,text match
+D06-T07,AARC 2024: palpation of pilot balloon is inaccurate vs manometer,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative evidence,text match
+D06-T07,AARC 2024: infrequent vs every-8-hour cuff checks had similar VAE rates (single trial),AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Single trial,text match
+D06-T07,AARC 2024: SHEA recommendations agree,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Authors statement,text match
+D01-T07,ESICM: low tidal volume 4-8 mL/kg PBW recommended in ARDS,ESICM ARDS 2023 (PMC10354163),Rec 5.1,Strong; high,text match
+D01-T07,ESICM: plateau pressure <30 cmH2O described as current practice,ESICM ARDS 2023 (PMC10354163),Rec 5.1 expert opinion,Expert opinion on clinical application,text match
+D01-T07,"ESICM: prone positioning recommended for moderate-severe ARDS (PaO2/FiO2 <150, PEEP >=5)",ESICM ARDS 2023 (PMC10354163),Rec 7.1,Strong; high,text match
+D01-T07,"ESICM: start proning early after stabilisation, prolonged sessions",ESICM ARDS 2023 (PMC10354163),Rec 7.2,Strong,text match
+D01-T07,ESICM: against prolonged high-pressure recruitment manoeuvres (>=35 cmH2O >=1 min),ESICM ARDS 2023 (PMC10354163),Rec 6.3,Strong; moderate,text match
+D01-T07,ESICM: suggest against routine brief recruitment manoeuvres,ESICM ARDS 2023 (PMC10354163),Rec 6.4,Weak; high (no effect),text match
+D01-T07,ESICM: no recommendation on higher vs lower PEEP/FiO2 strategy,ESICM ARDS 2023 (PMC10354163),Rec 6.1,No recommendation,text match
+D01-T07,ESICM: against routine continuous NMBA infusion (non-COVID moderate-severe ARDS),ESICM ARDS 2023 (PMC10354163),Rec 8.1,Strong; moderate,text match
+D01-T07,ESICM: HFNO over conventional oxygen in AHRF to reduce intubation,ESICM ARDS 2023 (PMC10354163),Rec 3.1,Strong; moderate,text match
+D01-T07,ESICM: ECMO for severe ARDS in a qualified centre,ESICM ARDS 2023 (PMC10354163),Rec 9.1,Strong; moderate,text match
+D01-T07,ESICM: driving pressure/plateau limits listed as research gaps,ESICM ARDS 2023 (PMC10354163),Unresolved questions,Research gap,text match
+D01-T07,AARC 2024: assess plateau pressure (strong/high),AARC Patient-Ventilator Assessment CPG 2024,Summary rec 1,Strong; high,text match
+D01-T07,"AARC 2024: assess tidal volume, 4-8 mL/kg PBW (strong/high)",AARC Patient-Ventilator Assessment CPG 2024,Summary rec 2,Strong; high,text match
+D01-T07,AARC 2024: document VT as mL/kg PBW,AARC Patient-Ventilator Assessment CPG 2024,Summary rec 3,Strong; high,text match
+D01-T07,AARC 2024: assess PEEP and auto-PEEP,AARC Patient-Ventilator Assessment CPG 2024,Summary rec 4,Strong; high,text match
+D01-T07,"AARC 2024: suggest assessing driving pressure (conditional, low); Table 2 target <=15 cmH2O",AARC Patient-Ventilator Assessment CPG 2024,Summary rec 5; Table 2,Conditional; low,text match
+D01-T07,AARC 2024: Table 2 plateau limit <=30 cmH2O adults (<=28 paediatric),AARC Patient-Ventilator Assessment CPG 2024,Table 2,Table,text match
+D02-T08,Shock defined as life-threatening generalised acute circulatory failure with inadequate oxygen utilisation,ESICM shock consensus 2014 (PMC4239778),Statement 1,Ungraded,text match
+D02-T08,"Four patterns: hypovolaemic, cardiogenic, obstructive, distributive",ESICM shock consensus 2014 (PMC4239778),Statement 3,Statement of fact,text match
+D02-T08,"Skin, kidney and brain are the accessible perfusion windows",ESICM shock consensus 2014 (PMC4239778),Statement 5,Statement of fact,text match
+D02-T08,Hypotension (SBP<90 / MAP<65 / fall >=40) should not be required to define shock,ESICM shock consensus 2014 (PMC4239778),Statement 9,Level 1; moderate,text match
+D02-T08,Recommend measuring lactate when shock suspected,ESICM shock consensus 2014 (PMC4239778),Statement 11,Level 1; low,text match
+D02-T08,Initial MAP target at least 65 mmHg; individualise,ESICM shock consensus 2014 (PMC4239778),Statement 22,Level 1; low,text match
+D02-T08,Echocardiography preferred first for type of shock,ESICM shock consensus 2014 (PMC4239778),Statement 14,Level 2; moderate,text match
+D02-T08,Arterial and central venous catheters when not responsive or on vasopressors,ESICM shock consensus 2014 (PMC4239778),Statement 17,Ungraded best practice,text match
+D02-T08,Urine output <0.5 mL/kg/h as renal window marker,ESICM shock consensus 2014 (PMC4239778),Pathophysiology text,Narrative,text match
+D02-T08,SSC 2021: capillary refill time as adjunct in septic shock,SSC 2021 (PMC8486643),Rec 8,Weak; low,text match
+D02-T08,SSC 2021: initial MAP target 65 mmHg for septic shock on vasopressors,SSC 2021 (PMC8486643),Rec 9,Strong; moderate,text match
+D04-T02,NICE: detect AKI by creatinine rise >=26 micromol/L in 48 h,NICE NG148 (upd. 2024-10-16),1.3.1,2013,text match
+D04-T02,NICE: urine output <0.5 mL/kg/h for >6 h in adults,NICE NG148 (upd. 2024-10-16),1.3.1,2013,text match
+D04-T02,"NICE: risk factors list (CKD, HF, liver disease, diabetes, drugs, contrast, sepsis, age >=65)",NICE NG148 (upd. 2024-10-16),1.1.1,2013,text match
+D04-T02,NICE: systems to recognise oliguria when early warning score does not include urine output,NICE NG148 (upd. 2024-10-16),1.2.2,2013,text match
+D04-T02,NICE: daily creatinine typical in hospital,NICE NG148 (upd. 2024-10-16),1.3.2,2013,text match
+D04-T02,NICE: urine dipstick as soon as AKI suspected,NICE NG148 (upd. 2024-10-16),1.4.2,2013,text match
+D04-T02,NICE: do not routinely offer loop diuretics to treat AKI,NICE NG148 (upd. 2024-10-16),1.5.3,2013,text match
+D04-T02,NICE: do not offer low-dose dopamine,NICE NG148 (upd. 2024-10-16),1.5.5,2013,text match
+D04-T02,"NICE: refer immediately for RRT if hyperkalaemia, acidosis, uraemia, overload not responding",NICE NG148 (upd. 2024-10-16),1.5.8,2013,text match
+D04-T02,NICE: pyonephrosis suspected needs immediate ultrasound (within 6 h),NICE NG148 (upd. 2024-10-16),1.4.5,2013,text match
+D03-T10,"NICE: risk factors age>=65, cognitive impairment, hip fracture, severe illness",NICE CG103 (upd. 2023-01-18),1.2.1,2010,text match
+D03-T10,NICE: be vigilant for hypoactive delirium,NICE CG103 (upd. 2023-01-18),1.3.2,2010,text match
+D03-T10,NICE: CAM-ICU or ICDSC in critical care instead of 4AT,NICE CG103 (upd. 2023-01-18),1.6.1,2023 amended,text match
+D03-T10,NICE: 24-hour clock in critical care,NICE CG103 (upd. 2023-01-18),1.4.4,2010,text match
+D03-T10,NICE: non-verbal pain signs in ventilated patients,NICE CG103 (upd. 2023-01-18),1.4.9,2010,text match
+D03-T10,NICE: de-escalation first; short-term haloperidol may be considered if ineffective,NICE CG103 (upd. 2023-01-18),1.7.4,2010,text match
+D03-T10,"NICE: avoid procedures during sleep, reduce noise",NICE CG103 (upd. 2023-01-18),1.4.13,2010,text match
+D03-T10,"NICE: pulse oximeters can misread, overestimation in dark skin",NICE CG103 (upd. 2023-01-18),1.4.6,2010,text match
+D07-T06,ESICM: EEN rather than early PN (2C),ESICM early EN 2017 (PMC5323492),Rec 1,Conditional; low,text match
+D07-T06,ESICM: delay EN if shock uncontrolled; start low dose once controlled,ESICM early EN 2017 (PMC5323492),Rec 2,Conditional; expert opinion,text match
+D07-T06,ESICM: do not delay solely for NMBA,ESICM early EN 2017 (PMC5323492),Rec 4,Conditional; expert opinion,text match
+D07-T06,ESICM: do not delay solely for prone positioning,ESICM early EN 2017 (PMC5323492),Rec 7,Conditional; expert opinion,text match
+D07-T06,ESICM: delay EN if gastric aspirate >500 mL/6 h,ESICM early EN 2017 (PMC5323492),Rec 21,Conditional; expert opinion,text match
+D07-T06,"ESICM: single large aspirate -> prokinetics and reassessment, not prolonged withholding",ESICM early EN 2017 (PMC5323492),Comment on Rec 21,,text match
+D07-T06,"ESICM: EEN regardless of bowel sounds, and with diarrhoea",ESICM early EN 2017 (PMC5323492),Rec 22,Conditional; expert opinion,text match
+D07-T06,ESICM: post-pyloric feeding to prevent aspiration in diminished consciousness,ESICM early EN 2017 (PMC5323492),Practical text,,text match
+D07-T06,SHEA: consider post-pyloric feeding if gastric intolerance/high aspiration risk,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Additional; moderate,text match

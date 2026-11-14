@@ -8,9 +8,9 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["SHEA/IDSA/APIC Strategies to prevent VAP, VAE and non-ventilator hospital-acquired pneumonia in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022;43:687-713; CC BY)"]
+guideline_versions: ["SHEA/IDSA/APIC Strategies to prevent VAP, VAE and non-ventilator hospital-acquired pneumonia in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022;43:687-713; CC BY)", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – cuff-pressure recommendations only"]
 sources: [S-CDC-IC]
-independently_written_note: "Original wording. The 2022 SHEA/IDSA/APIC update (open access, CC BY) was read in full text for the adult recommendations. The non-ventilator pneumonia, paediatric and neonatal sections and the CDC surveillance manual were not read in detail. The register lists a SHEA/IDSA/APIC compendium as 'to register'; it is registered in batch-02-sources.csv."
+independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (full text PDF, copyright Daedalus Enterprises – cite-only) was read for the cuff-pressure recommendations. The 2022 SHEA/IDSA/APIC update (open access, CC BY) was read in full text for the adult recommendations. The non-ventilator pneumonia, paediatric and neonatal sections and the CDC surveillance manual were not read in detail. The register lists a SHEA/IDSA/APIC compendium as 'to register'; it is registered in batch-02-sources.csv."
 ---
 # Preventing ventilator-associated events and pneumonia in adults
 > DRAFT – NOT clinically reviewed. AI-generated. Not for learners until qualified reviewers approve.
@@ -45,7 +45,8 @@ Organisms from the mouth, throat and stomach reach the lower airway around the t
 - Use early enteral feeding where ordered (high-certainty evidence) and check feeding tolerance.
 - Change the ventilator circuit only if visibly soiled or malfunctioning, or per the manufacturer (high-certainty evidence).
 - Prevent unplanned extubation: secure the tube, check position, assess agitation, manage restraints or sedation per policy and avoid unnecessary manipulation.
-- Hand hygiene and PPE before each contact with the airway or circuit.
+- Hand hygiene and PPE before each contact with the airway or circuit (general practice; not a graded statement in the source read).
+- Measure endotracheal or tracheostomy cuff pressure with a manometer at the interval set by unit policy; do not rely on feeling the pilot balloon (AARC 2024; see section 9). Cuff checks are for leak and tracheal-injury safety as well as aspiration; the exact interval and target range come from local policy.
 - Report oxygenation changes and signs of infection promptly.
 
 ## 8. Monitoring parameters
@@ -56,11 +57,13 @@ Each shift: FiO₂, PEEP, SpO₂ and trend; secretions; temperature; head-of-bed
 |---|---|
 | Essential practices | High-flow nasal oxygen or non-invasive ventilation where appropriate to avoid intubation (high); minimise sedation – avoid benzodiazepines, use a protocol, ventilator liberation protocol (moderate); maintain physical conditioning (moderate); elevate the head of the bed 30–45° (low); oral care with toothbrushing but without chlorhexidine (moderate); early enteral rather than parenteral nutrition (high); change circuit only if soiled or malfunctioning (high) |
 | Additional approaches | Selective oral/digestive decontamination in low-resistance settings (high); subglottic-drainage tubes for expected ventilation over 48–72 h (moderate); consider early tracheostomy; consider post-pyloric feeding in gastric intolerance or high aspiration risk (moderate) |
-| Generally not recommended | Oral care with chlorhexidine; probiotics; ultrathin or tapered cuffs; automated cuff-pressure control; **frequent cuff-pressure monitoring** *for VAP prevention*; silver-coated tubes; kinetic beds; prone positioning *for VAP prevention*; chlorhexidine bathing *for VAP prevention* |
+| Generally not recommended (for VAP prevention) | Oral care with chlorhexidine; probiotics; ultrathin or tapered cuffs; automated cuff-pressure control; frequent cuff-pressure monitoring; silver-coated tubes; kinetic beds; prone positioning; chlorhexidine bathing (the last three may be indicated for other reasons) |
 | No impact on VAP rates | Stress-ulcer prophylaxis; monitoring residual gastric volumes; early parenteral nutrition |
 | No recommendation | Closed suctioning systems |
 
-Important: "not recommended for VAP prevention" does **not** mean the practice is unnecessary for other reasons. Cuff-pressure checks, prone positioning and chlorhexidine bathing may be indicated for other purposes; unit policy and the respiratory-therapy team decide. Reviewers must reconcile with D01-T12 (cuff pressure).
+**Cuff-pressure conflict – resolved by reading both documents.** SHEA 2022 classes *frequent* and *automated* cuff-pressure monitoring as generally not recommended **for VAP prevention** (moderate evidence). AARC 2024 recommends assessing cuff pressure with a manometer (strong recommendation, high certainty), recommends **against continuous** cuff-pressure assessment as a way to reduce VAP risk (strong, high), and notes that palpation of the pilot balloon is inaccurate compared with a manometer; it also says SHEA's recommendations agree with its own. So the documents are consistent: intermittent manometer measurement is still recommended; continuous or very frequent monitoring is not a VAP-prevention strategy. Neither document sets a measurement interval or target range in the sections read (the trials compared every-8-hour checks with less frequent checks), so the interval is local policy.
+
+General caution: "not recommended for VAP prevention" does **not** mean the practice is unnecessary for other reasons. Prone positioning and chlorhexidine bathing may be indicated for other purposes; unit policy and the respiratory-therapy team decide.
 
 ## 10. Warning signs and red flags
 Rising FiO₂ or PEEP needs; new purulent or increased secretions; fever or hypothermia; new infiltrate reported; falling SpO₂; asynchrony or agitation; tube moved or loose; cuff leak; head of bed repeatedly flat; missed mouth care; sedation deeper than targeted; no daily readiness assessment recorded.
@@ -145,18 +148,19 @@ D. Leave it: the 2022 update advises changing circuits only if visibly soiled, m
 **Why not B:** Routine intervals are not recommended.
 **Why not C:** More disconnections can increase risk and secretion exposure.
 
-**Q6 (judgment).** The cuff pressure of an intubated patient is checked each shift. A trainee says the 2022 SHEA update "says to stop cuff-pressure checks". What is the most accurate reply?
-A. It concerns VAP prevention only; checks may be needed for other reasons, so follow unit policy and ask the respiratory team.
-B. That is correct: cuff pressure should never be checked again in any patient, whatever the indication or policy.
-C. The update says cuff pressure must be checked every 15 minutes for every patient on mechanical ventilation.
-D. The update has no view on cuff pressures, so each unit can do whatever it finds most convenient.
+**Q6 (judgment).** A trainee says the SHEA 2022 update means cuff pressure no longer needs to be checked in ventilated patients. What is the most accurate reply?
+A. It covers VAP prevention only; AARC 2024 still recommends manometer checks at the unit's interval, but not continuous monitoring.
+B. That is correct: because frequent cuff monitoring does not prevent pneumonia, cuff pressure should never be checked again.
+C. The update says cuff pressure must be checked every 15 minutes for every ventilated patient, whatever the indication.
+D. The update has no view on cuff pressures, so each unit can simply judge the pressure by feeling the pilot balloon.
 **Answer: A.**
-**Why correct:** The statement concerns VAP prevention; cuff checks also relate to leaks and tracheal injury.
-**Why not B:** Over-generalises a VAP-specific statement.
-**Why not C:** No such rule appears in the update.
-**Why not D:** The update does take a position for VAP prevention.
+**Why correct:** The statement concerns VAP prevention only; AARC 2024 recommends manometer assessment, recommends against continuous assessment for VAP prevention, and finds palpation inaccurate.
+**Why not B:** This over-generalises a statement limited to VAP prevention and ignores leak and tracheal-injury safety.
+**Why not C:** Neither document sets a 15-minute interval.
+**Why not D:** Both documents take a position, and palpation of the pilot balloon is inaccurate compared with a manometer.
 
 ## 18. References
+- Goodfellow LT, Miller AG, Varekojis SM, et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054. https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)
 - Klompas M, Branson R, Cawcutt K, et al. Strategies to prevent ventilator-associated pneumonia, ventilator-associated events, and nonventilator hospital-acquired pneumonia in acute-care hospitals: 2022 Update. Infect Control Hosp Epidemiol. 2022;43:687-713. doi:10.1017/ice.2022.88. https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/ (accessed 2026-11-14)
 
 ## 19. Local protocol note
@@ -165,4 +169,4 @@ Mouth-care products, positioning angle, sedation and weaning protocols, cuff-pre
 ## 20. Evidence, applicability and open questions
 - Source quality: graded, multi-society US guideline (2022), open access; several statements are moderate or low certainty; surveillance definitions come from the CDC.
 - International applicability: practices are generally transferable; availability of subglottic tubes, selective decontamination (depends on local resistance) and staffing vary. Oral-care product choices differ by country.
-- Open questions for reviewers (IPC, RT, CCP, NE, BN): reconcile "frequent cuff-pressure monitoring not recommended for VAP prevention" with the cuff-pressure topic (D01-T12); sedation-minimisation roles; whether to teach VAE surveillance definitions at all.
+- Open questions for reviewers (IPC, RT, CCP, NE, BN): local cuff-pressure interval and target range (the guidelines read give neither); sedation-minimisation roles; whether to teach VAE surveillance definitions at all.
