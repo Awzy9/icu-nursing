@@ -209,5 +209,11 @@
     "contact": "Contact",
     "legalPending": "Legal pages will be published before launch.",
     "rights": "© {year} ICU Nurse Knowledge Map"
+  },
+  "Account": {
+    "title": "Your profile",
+    "save": "Save profile",
+    "saved": "Profile saved.",
+    "language": "Preferred language"
   }
 }
