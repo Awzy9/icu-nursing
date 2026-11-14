@@ -37,12 +37,14 @@ async function post(path: string, key: string, body: unknown) {
     const pw = `Tmp-${Math.random().toString(36).slice(2)}-Aa1!x`;
     const res = await post("/signup", key, { email, password: pw, data: { display_name: "Email test" }, gotrue_meta_security: { captcha_token: DUMMY_CAPTCHA } });
     console.log("signup:", res.status, res.body.includes("email") ? "(user object returned; confirmation email requested)" : res.body);
-    if (res.status < 300) record();
+    if (res.status >= 300) { console.log("No email was requested (see the error above). With the real Turnstile secret active, scripted requests are refused: use the UI with a human-completed CAPTCHA."); return; }
+    record();
     console.log("Now check the inbox and click the confirmation link, then run: tsx scripts/live/email-builtin.ts verify");
   } else if (mode === "reset") {
     const res = await post("/recover", key, { email, gotrue_meta_security: { captcha_token: DUMMY_CAPTCHA } });
     console.log("recover:", res.status, res.body);
-    if (res.status < 300) record();
+    if (res.status >= 300) { console.log("No email was requested (see the error above)."); return; }
+    record();
     console.log("Check the inbox: a password-reset email should arrive.");
   } else if (mode === "verify") {
     const list = await adminAuth<{ users: { email: string; email_confirmed_at: string | null }[] }>(`/admin/users?per_page=200`);
