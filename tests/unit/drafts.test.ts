@@ -17,7 +17,7 @@ const q = (id: string, answer: string, opts: string[], extra = {}) => ({
 const ok = ["Reassess the patient and escalate using SBAR now", "Wait for the next ward round before acting on it", "Record it and look again at the end of shift", "Ask a relative to find a doctor for the patient"];
 
 describe("Phase 2 drafts: structure and safety", () => {
-  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(12));
+  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(15));
   files.forEach((f, i) => it(`${f} passes validation`, () => expect(validateDraft(texts[i]!)).toEqual([])));
   batches.forEach((b) => it(`${b}: answer positions are balanced across the batch`, () => expect(batchPositionIssues(perBatch(b))).toEqual([])));
   it("every draft has six or more MCQs with an explanation for each wrong option", () => {
@@ -55,6 +55,24 @@ describe("Phase 2 drafts: consistency with the curriculum and source register", 
       for (const s of m("sources").replace(/[\[\]]/g, "").split(",").map((x) => x.trim()).filter(Boolean)) expect(register.includes(s), `source ${s} is in the register`).toBe(true);
     });
   });
+});
+
+describe("Canonical topic inventory (no double counting)", () => {
+  const rows = readFileSync("content/drafts/TOPIC_INVENTORY.csv", "utf8").trim().split(/\r?\n/).slice(1).map((l) => (l.match(/("([^"]|"")*"|[^,]*)(,|$)/g) ?? []).map((c) => c.replace(/,$/, "").replace(/^"|"$/g, "").replace(/""/g, '"')));
+  const ids = rows.map((r) => r[0]!);
+  it("lists each of the 40 P1 topics exactly once", () => {
+    expect(rows.length).toBe(40);
+    expect(new Set(ids).size).toBe(40);
+  });
+  it("matches the draft files on disk: one canonical ID, one batch", () => {
+    const onDisk = files.map((f, i) => ({ f, id: /^topic_id: (\S+)/m.exec(texts[i]!)?.[1] ?? "" }));
+    expect(new Set(onDisk.map((d) => d.id)).size).toBe(onDisk.length);
+    const drafted = rows.filter((r) => r[3]!.startsWith("DRAFTED"));
+    expect(drafted.length).toBe(onDisk.length);
+    for (const d of onDisk) expect(drafted.some((r) => r[0] === d.id && d.f.startsWith(`${r[4]}/`))).toBe(true);
+  });
+  it("marks nothing as clinically reviewed", () => expect(rows.every((r) => r[7] === "no")).toBe(true));
+  it("keeps the blocked cardiac-arrest topic undrafted", () => expect(files.some((f) => f.includes("D02-T14"))).toBe(false));
 });
 
 describe("MCQ quality checks (self-tests)", () => {

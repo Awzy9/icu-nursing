@@ -1,4 +1,4 @@
-# Phase 2 – Batch 2 report — DRAFTS ONLY
+# Phase 2 – Batch 2 report (updated) — DRAFTS ONLY
 
 Date: 2026-11-14 · Branch `claude/vigilant-mendel-95k63h`
 
@@ -33,6 +33,20 @@ Source-by-source log: `content/drafts/batch-02-sources.csv`.
 | D09-T03 Scope of practice; D07-T01 Head-to-toe | Open RN chapters | NCBI Bookshelf reCAPTCHA; chapter URLs unknown (carried from Batch 1) |
 | D01-T11 Suctioning; D03-T09 RASS | AARC CPG; PADIS | Still blocked (Batch 1) |
 | D01-T12, D08-T03 and others | various | Not attempted this round |
+
+
+## UPDATE 2026-11-14 (continuation): three more drafts, exact counts
+Approved by the supervisor after the internal review: oxygen therapy (D01-T03), airway suctioning (D01-T11, canonical ID, counted once; also a Batch 1 backlog item) and defibrillation safety (D02-T15).
+
+| Topic | Primary source (full text read) | Evidence limits | Licence |
+|---|---|---|---|
+| D01-T03 Adult oxygen therapy | AARC CPG Management of Adult Patients With Oxygen in the Acute Care Setting (Respir Care 2022;67:115-128) | Modified RAND/UCLA, mostly level C; BTS 2017 inaccessible; jurisdiction differences cannot be described | Cite-only (© Daedalus) |
+| D01-T11 Artificial airway suctioning | AARC CPG Artificial Airway Suctioning (Respir Care 2022;67:258-271) | Level B/C; **no adult frequency studies**; **the document contradicts itself on catheter occlusion ratio** (abstract vs Table 1 vs text) and on the appropriateness score for the 15 s limit | Cite-only (© Daedalus) |
+| D02-T15 Defibrillation safety | ERC Guidelines 2025 Adult ALS (Resuscitation 2025;215:110769) – defibrillation sections | Narrative/low-certainty statements; ERC is European; AHA inaccessible | **ERC: commercial use needs an agreement with the ERC** (recorded in `LICENSING_REGISTER.md`); paraphrase only |
+
+**Cardiac arrest (D02-T14): not drafted, stays BLOCKED.** ALS full text was read, but the full ERC BLS and Post-Resuscitation Care guidelines could not be obtained (RCUK pages give summaries and algorithm PDFs only). See `BACKLOG.md`.
+
+**Exact unique-topic counts (canonical inventory `TOPIC_INVENTORY.csv`):** 15 drafted (Batch 1: 6; Batch 2: 9), 4 blocked, 21 not attempted, 40 total. 90 MCQs (54 in Batch 2: answers A 12, B 16, C 14, D 12). Claim trace: 119 claims across Batch 2, all matched to the source text (`batch-02-claim-trace.csv`). Untraced statements are listed in `UNTRACED_STATEMENTS.md`.
 
 ## 5. Unresolved clinical questions for reviewers
 1. **IPC/RT/NE:** cuff-pressure checks — SHEA 2022 says frequent cuff monitoring is not recommended *for VAP prevention*; what should the platform teach (see D01-T12)?

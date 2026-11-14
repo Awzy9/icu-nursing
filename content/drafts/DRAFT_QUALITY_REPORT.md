@@ -2,41 +2,39 @@
 
 Date: 2026-11-14 · Branch `claude/vigilant-mendel-95k63h` · **All content AI-generated, DRAFT, NOT clinically reviewed, not imported, not published.**
 
-## Counts
+## Unique-topic counts (canonical inventory `TOPIC_INVENTORY.csv`)
 | Measure | Count |
 |---|---|
 | P1 first-release topics | 40 |
-| Drafted topics (all batches) | **12** (Batch 1: 6, Batch 2: 6) |
-| Clinically reviewed / approved topics | **0** |
-| Topics imported into the database / published | **0** |
-| Planned Batch 1 slots unfinished | 4 (see `BACKLOG.md`) |
-| Planned Batch 2 slots unfilled | 4 (3 source-feasible, 1 partly) |
-| P1 topics not attempted | 24 |
-| MCQs written | 72 (36 per batch), 216 wrong-option explanations |
-| MCQ correct-answer positions | Batch 1: A 8, B 9, C 9, D 10 · Batch 2: A 9, B 11, C 8, D 8 |
-| Batch 2 claims traced to full text | 72 of 72 matched (`batch-02-claim-trace.csv`); Batch 1 traced manually (see its internal review) |
-| Source register entries | 48 (`sources/source_register.csv`) |
-| Approx. words in drafts | 28,500 |
+| Drafted topics (unique) | **15** (Batch 1: 6; Batch 2: 9) |
+| Blocked | **4** (D03-T09, D09-T03, D07-T01, D02-T14) |
+| Not attempted | **21** |
+| Clinically reviewed / approved | **0** |
+| Imported into the database / published | **0** |
+| MCQs | 90 (36 + 54); 270 wrong-option explanations |
+| MCQ correct-answer positions | Batch 1: A 8 B 9 C 9 D 10 · Batch 2: A 12 B 16 C 14 D 12 |
+| Batch 2 claims traced to source text | 119 matched of 119 (`batch-02-claim-trace.csv`) |
+| Untraced statement groups (labelled) | 15 (`UNTRACED_STATEMENTS.md`) |
+| Source register entries | 49 (`sources/source_register.csv`) |
 
 ## Batch status
 | Batch | Drafts | Internal review | Human clinical review |
 |---|---|---|---|
-| 1 | 6 | Done (`BATCH_01_INTERNAL_REVIEW.md`) | None |
-| 2 | 6 | Done (`BATCH_02_INTERNAL_REVIEW.md`) | None |
+| 1 | 6 | Done | None |
+| 2 | 9 (6 + 3 continuation) | Done (including addendum) | None |
 | 3 | not started | – | – |
 
 ## Test status (2026-11-14, this commit)
 | Check | Result |
 |---|---|
-| Lint (`npm run lint`) | clean |
-| Typecheck | clean |
-| Unit tests (`npm test`) | 104 passed (12 files) |
-| Draft validation (`npm run validate:drafts`) | 12 of 12 drafts pass |
-| Database tests (`npm run test:db`, local PostgreSQL 16) | 170 passed |
-| E2E + accessibility, demo mode (3 viewports, axe light/dark, CSP, keyboard) | 127 passed, 2 skipped (mobile-only tests on non-mobile projects) |
-| Real-CAPTCHA live checks (`captcha-real.live.spec.ts`) | 5 passed |
-| **Not run:** live API suite (`tests/live`, 50 tests) and the live UI suite (`tests/live-e2e/ui.live.spec.ts`, 11 tests) | They sign in with Cloudflare's test token, which the real Turnstile secret now refuses. Running them would require replacing the owner's real secret with a test secret; this was **not done** |
+| Lint, typecheck | clean |
+| Unit tests | 114 passed (12 files; includes inventory, consistency and MCQ-quality tests) |
+| Draft validation | 15 of 15 drafts pass |
+| Database tests (local PostgreSQL 16) | 170 passed |
+| E2E + accessibility (demo mode, 3 viewports, axe, CSP) | 127 passed, 2 skipped (mobile-only on other projects) |
+| Real-CAPTCHA live checks | 5 passed |
 
-## Known limitations of this QA
-- AI self-review is not independent; claim matching shows the wording exists, not that the paraphrase is clinically perfect.
-- Several sources are dated or blocked (see `BATCH_02_INTERNAL_REVIEW.md` §7).
+Live tests blocked by the real Turnstile secret: `tests/live` (50) and `tests/live-e2e/ui.live.spec.ts` (11) cannot run without replacing the owner's real secret; the five real-CAPTCHA checks in `captcha-real.live.spec.ts` can and do run.
+
+## Limitations
+AI self-review is not independent; text matching proves wording exists, not that every paraphrase is perfect; dated or blocked sources remain (shock 2014, enteral nutrition 2017, PADIS, SSC 2026, BTS 2017, ERC BLS/PRC full text).

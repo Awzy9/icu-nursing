@@ -56,3 +56,15 @@ Claims not in the trace are either (a) labelled in the draft as general practice
 
 ## 8. Gate decision
 Batch 2 passes the **internal** quality review with the conditions above. This is not clinical approval. Batch 3 has **not** been started and should stay on hold until the supervisor confirms the gate and the backlog decisions in `BACKLOG.md`.
+
+## Addendum: internal QA of the three continuation drafts (D01-T03, D01-T11, D02-T15)
+
+Same method: claim trace by text match (47 additional claims, all matched), scope/safety read-through, MCQ audit, licence check, and a pass over statements previously labelled "general practice" or "local protocol".
+
+Findings and fixes:
+1. **D01-T11:** the AARC suctioning guideline is internally inconsistent on catheter occlusion (abstract: <70% neonates and <50% children/adults; Table 1: <70% in infants, children and adults; text: restates the 2010 values and says the optimum is unknown) and on the appropriateness score for the 15 s limit (7 in the text, 9 in Table 1). The draft states the inconsistency and teaches no single ratio. No adult frequency study exists, so "as needed" for adults is marked as extrapolated. An unsupported statement about humidification/hydration was removed from the practice text and listed as untraced.
+2. **D02-T15:** equipment-check items (patches, wet surfaces, metal contact, battery/cable checks) were not in the ERC text read; they are now labelled local protocol. Pad-position, 8 cm device distance, oxygen 1 m rule, pause timing, no shock during manual compressions and DSD statements trace to the ERC text. ERC commercial-use restriction recorded; content paraphrased, no figures/algorithms/tables; energy and drug doses omitted.
+3. **D01-T03:** SpO₂ ranges are "committee support, evidence level C", not graded strong recommendations; the draft says so. Oximeter accuracy is sourced to NICE CG103, not AARC. Oxygen prescribing, CO₂-retention rationale and target-setting are labelled as not drawn from AARC.
+4. All new MCQs passed the validator after length and distractor edits. Batch 2 positions: A 12, B 16, C 14, D 12 of 54.
+
+Gate decision for the three drafts: pass the **internal** review; **not** clinically reviewed.

@@ -71,3 +71,50 @@ D07-T06,"ESICM: single large aspirate -> prokinetics and reassessment, not prolo
 D07-T06,"ESICM: EEN regardless of bowel sounds, and with diarrhoea",ESICM early EN 2017 (PMC5323492),Rec 22,Conditional; expert opinion,text match
 D07-T06,ESICM: post-pyloric feeding to prevent aspiration in diminished consciousness,ESICM early EN 2017 (PMC5323492),Practical text,,text match
 D07-T06,SHEA: consider post-pyloric feeding if gastric intolerance/high aspiration risk,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Additional; moderate,text match
+D01-T03,"Target 94-98% for most patients needing oxygen; 88-92% for COPD (committee supports, level C)",AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,94-98% recommended for critically ill patients,AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,No recommendation on postoperative continuous monitoring (paucity of literature),AARC Oxygen CPG 2022,Summary of Recommendations,No recommendation,text match
+D01-T03,Early HFNC initiation supported by limited evidence,AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,HFNC may avoid escalation to NIV/invasive ventilation but does not reduce LOS,AARC Oxygen CPG 2022,Summary of Recommendations,Level B,text match
+D01-T03,HFNC immediately after extubation appears to reduce reintubation,AARC Oxygen CPG 2022,Summary of Recommendations,Level B,text match
+D01-T03,No HFNC benefit over conventional oxygen in immunocompromised patients,AARC Oxygen CPG 2022,Summary of Recommendations,Level B,text match
+D01-T03,Consider humidification for flows >4 L/min (comfort),AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,Method: modified RAND/UCLA appropriateness method,AARC Oxygen CPG 2022,Abstract,Method,text match
+D01-T03,Concern about harmful effects of excessive FiO2,AARC Oxygen CPG 2022,Introduction,Narrative,text match
+D01-T03,AARC 2024: assess skin around artificial airways and NIV interfaces,AARC Patient-Ventilator Assessment CPG 2024,Summary rec 11,Strong; high,text match
+D01-T03,"NICE CG103: pulse oximeters can under/overestimate saturation, especially borderline",NICE CG103 (upd. 2023-01-18),1.4.6,2010,text match
+D01-T03,ERC 2025: take off oxygen masks/cannulae and place at least 1 m from chest; leave ventilator circuit connected,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Safe use of oxygen during defibrillation,Narrative,text match
+D01-T11,"Indications: breath sounds, visible secretions, sawtooth waveform (adults, children)",AARC Suctioning CPG 2022,Table 1 / abstract,Level B,text match
+D01-T11,No adult studies of suctioning frequency were found,AARC Suctioning CPG 2022,Routine versus as-needed,Statement of gap,text match
+D01-T11,As-needed suctioning as effective as routine in neonates and children,AARC Suctioning CPG 2022,Routine versus as-needed,Level B,text match
+D01-T11,Open or closed system can be used safely and effectively in adults,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,Preoxygenate adult and paediatric patients before suctioning,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,FiO2 0.2 above baseline may be sufficient,AARC Suctioning CPG 2022,Preoxygenation section,Level B,text match
+D01-T11,Normal saline generally avoided; may worsen oxygenation,AARC Suctioning CPG 2022,Saline section,Level B,text match
+D01-T11,Sterile procedure for open suctioning,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Suction pressure below -200 mm Hg in adults; as low as effective,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Duration no longer than 15 s,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Shallow suctioning routinely; deep only if shallow ineffective,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,Routine bronchoscopy not recommended,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Devices to clear ETT supported when resistance raised by secretions,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,Catheter size inconsistent: abstract <70% neonates and <50% paediatric/adult,AARC Suctioning CPG 2022,Abstract,Inconsistency,text match
+D01-T11,"Catheter size inconsistent: Table 1 <70% in infants, children and adults",AARC Suctioning CPG 2022,Table 1,Inconsistency,text match
+D01-T11,Optimal catheter ratio not known,AARC Suctioning CPG 2022,Catheter section,Statement of gap,text match
+D01-T11,"Mitigation: sedation, preoxygenation, suction only if indicated",AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,"Complications include desaturation, bleeding, haemodynamic and ICP changes",AARC Suctioning CPG 2022,Introduction,Narrative,text match
+D01-T11,SHEA: closed suction systems no recommendation for VAP prevention,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,No recommendation; moderate,text match
+D02-T15,Pre-shock pause: even 5-10 s delay reduces success; <5 s achievable by continuing compressions while charging,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Strategies for minimising the peri-shock pause,Narrative,text match
+D02-T15,Safety check to avoid rescuer contact,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Peri-shock pause,Narrative,text match
+D02-T15,Do not defibrillate during manual compressions even with gloves,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Manual defibrillation,Narrative,text match
+D02-T15,Shock can be delivered during mechanical compressions with a manual defibrillator,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Manual defibrillation,Narrative,text match
+D02-T15,Pads preferred over paddles; stand clear; fewer pauses; better contact,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pads and paddles,Narrative,text match
+D02-T15,Paddles: apply firm force to reduce arcing,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pads and paddles,Narrative,text match
+D02-T15,Antero-lateral position preferred initially,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pad position,Narrative,text match
+D02-T15,Pad >8 cm from implanted device or alternative position,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pad position,Narrative,text match
+D02-T15,Bi-axillary position considered when prone,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pad position,Narrative,text match
+D02-T15,Shave anticipated pad areas if necessary,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Failed shocks,Narrative,text match
+D02-T15,NIV and high-flow nasal oxygen increase risk of oxygen-enriched environment,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Safe use of oxygen,Narrative,text match
+D02-T15,Oxygen recommendations unchanged in 2025,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Safe use of oxygen,Narrative,text match
+D02-T15,Anticipatory charging acceptable for well-drilled teams,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Anticipatory charging,Further research needed,text match
+D02-T15,Dual sequential defibrillation not routinely recommended,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),DSD,Limited evidence,text match
+D02-T15,Up to three stacked shocks only if witnessed monitored VF/pVT with defibrillator immediately available,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Energy levels and number of shocks,Narrative,text match
