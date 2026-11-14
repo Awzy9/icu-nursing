@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 – official SCCM recommendation page (recommendation-level statements; the full guideline was NOT read)", "SCCM PADIS 2025 focused update – official SCCM recommendation page (five statements; full text NOT read)", "Open RN Nursing Fundamentals 2e, section 11.3 Pain Assessment Methods (read 2026-11-14)"]
-sources: [S-SCCM-PADIS, S-OPENRN-FUND]
-independently_written_note: "Original wording. Statements from the SCCM pages are attributed at recommendation level only. The CPOT and BPS item definitions, scoring rules and psychometric data were NOT read and are not described: use the validated tools under their licences and local training. Drug choices and doses (opioids, adjuncts) are prescriber decisions and are not given. Open RN is CC BY 4.0 (attribution and change notice if adapted)."
+sources: [S-SCCM-PADIS, S-OPENRN-FUND, S-CPOT-REVIEW-2024]
+independently_written_note: "Original wording. Statements from the SCCM pages are attributed at recommendation level only. Only the CPOT's overall structure (four indicators, each scored 0 to 2, total 0 to 8) is described, taken from a CC BY 2024 narrative review (a secondary source); the CPOT's own scoring descriptors, the tool's original publications and terms of use, and all BPS and BPS-NI details were NOT read and are not taught: use the validated tools under their licences and local training. Drug choices and doses (opioids, adjuncts) are prescriber decisions and are not given. Open RN is CC BY 4.0 (attribution and change notice if adapted)."
 ---
 # Pain assessment in critically ill adults (self-report and behavioural tools)
 > DRAFT – NOT clinically reviewed. AI-generated. Tool scoring details and analgesic doses are intentionally absent.
@@ -32,6 +32,7 @@ Untreated pain increases distress and is a recognised trigger of agitation, and 
 - **Patient able to self-report:** the 0–10 numeric rating scale, administered verbally or visually, is described by SCCM (ungraded statement) as a valid and feasible pain scale for critically ill adults who can self-report. Open RN notes a 0–10 rating screens for pain but a thorough assessment and the patient's comfort-function goal are also needed.
 - **Structured history:** PQRSTU – Provocative/Palliative factors, Quality, Region/Radiation, Severity, Timing/Treatment, Understanding; alternatives OLDCARTS and COLDSPA (Open RN). Follow up when answers do not align.
 - **Patient unable to self-report and behaviours observable:** SCCM states that the Behavioral Pain Scale (BPS, intubated) and BPS-NI (non-intubated) and the Critical-Care Pain Observation Tool (CPOT) have the greatest validity and reliability for monitoring pain (ungraded statement). Use the tool the unit has adopted and has trained you to use.
+- **CPOT structure (secondary source):** a 2024 open-access narrative review describes the CPOT as observing four behavioural indicators – facial expression, body movements, muscle tension, and ventilator compliance in intubated patients or vocalisation in non-intubated patients – each scored from 0 to 2, giving a total from 0 to 8. The same review notes that behavioural scores reflect the observer's rating of pain behaviour and should be interpreted differently from a patient's self-reported pain intensity. This draft does not reproduce the level descriptors or any action threshold: take those from the tool as licensed and from local training.
 - **Vital signs:** SCCM states heart rate, blood pressure, respiratory rate, oxygen saturation and end-tidal CO₂ are **not** valid indicators of pain and should only be cues to start further assessment with a validated method.
 - **Family:** where appropriate and the patient cannot self-report, family can be involved in pain assessment (SCCM, ungraded).
 - **Context:** procedures (turning, suctioning, line or drain care), surgery, positioning, injuries, devices; reassess before and after procedures and interventions.
@@ -157,6 +158,7 @@ D. Documenting the behavioural pain score and the stimulus that preceded it.
 ## 18. References
 - SCCM. Guidelines for the Prevention and Management of Pain, Agitation/Sedation, Delirium, Immobility, and Sleep Disruption in Adult Patients in the ICU (PADIS 2018). Official recommendations page, recommendation-level text. https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa (accessed 2026-11-14). Full publication: Devlin JW et al. Crit Care Med 2018;46:e825-e873 (not read).
 - SCCM. Focused update to PADIS guidelines for adult patients (2025). Official recommendations page. https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (accessed 2026-11-14). Crit Care Med 2025;53:e711-e727 (not read).
+- Evaluating pain in non-verbal critical care patients: a narrative review of the Critical Care Pain Observation Tool and its clinical applications. Front Pain Res. 2024;5. doi:10.3389/fpain.2024.1481085. https://pmc.ncbi.nlm.nih.gov/articles/PMC11518793/ (CC BY 4.0; section 'Components of CPOT'; accessed 2026-11-14)
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN, section 11.3 Pain Assessment Methods. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/11-3-pain-assessment-methods/ (CC BY 4.0; accessed 2026-11-14)
 
 ## 19. Local protocol note
@@ -165,5 +167,5 @@ Pain tools, scoring thresholds for action, assessment frequency, analgesic proto
 ## 20. Evidence, applicability and open questions
 - Source quality: SCCM statements are recommendation-level (from the official page) and mostly ungraded or low certainty; the full publications, evidence tables and tool psychometrics were not read. Open RN is an educational textbook.
 - Applicability: adult ICU only; tool availability and licensing vary by country; PAINAD and COMFORT scales appear in Open RN for other populations and were not used.
-- Not covered: CPOT/BPS item definitions and scoring, analgesic dosing, regional analgesia, paediatric pain.
+- Not covered: CPOT level descriptors and thresholds, BPS and BPS-NI items, analgesic dosing, regional analgesia, paediatric pain.
 - Open questions for reviewers (PH, CCP, NE, BN): which behavioural tool the platform teaches and its licence; action thresholds; analgesia protocol roles.

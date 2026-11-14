@@ -17,7 +17,7 @@ const q = (id: string, answer: string, opts: string[], extra = {}) => ({
 const ok = ["Reassess the patient and escalate using SBAR now", "Wait for the next ward round before acting on it", "Record it and look again at the end of shift", "Ask a relative to find a doctor for the patient"];
 
 describe("Phase 2 drafts: structure and safety", () => {
-  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(25));
+  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(29));
   files.forEach((f, i) => it(`${f} passes validation`, () => expect(validateDraft(texts[i]!)).toEqual([])));
   batches.forEach((b) => it(`${b}: answer positions are balanced across the batch`, () => expect(batchPositionIssues(perBatch(b))).toEqual([])));
   it("every draft has six or more MCQs with an explanation for each wrong option", () => {

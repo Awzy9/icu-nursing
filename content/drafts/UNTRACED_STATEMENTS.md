@@ -33,3 +33,9 @@ Of the six previously flagged clinically relevant statements (items 1, 2, 4, 9, 
 - **Arterial-line insertion/maintenance technique** (site choice, flushing, transducer levelling): still no accessible authoritative nursing source. The D02-T04 draft limits itself to indications at recommendation level, CDC 2011 infection-prevention statements and an instruction to follow the unit procedure. **Unresolved.**
 - **Enteral tube-placement confirmation**: a search for authoritative guidance returned no usable result (the Europe PMC query failed and nothing further was found). The draft keeps the statement as a local-policy instruction, not as evidence. **Unresolved.**
 - **Batch 5 drafts:** CPOT, BPS, RASS and SAS item definitions were not read and are intentionally not taught. Open RN scope content is US-specific; no non-US regulator was read.
+
+## Batch 6 update (2026-11-14)
+- **Vasopressor draft (D02-T12):** infusion-site checks, extravasation recognition and management, line compatibility, nursing titration protocols and drug-specific adverse effects have no source in the set read; flagged inside the draft for clinician review.
+- **Transfusion draft (D08-T03):** identity-check method, bedside rates, observation intervals, line care and first-line actions after a reaction come from local transfusion policy, not the Circular; flagged.
+- **Septic shock draft (D02-T09):** persistent-shock and organ-failure complications are general knowledge not traced to the sources read; flagged.
+- **High-alert draft (D05-T16):** no drug-specific safeguards or concentration standards; the ISMP evidence base and strategy documents were not read.

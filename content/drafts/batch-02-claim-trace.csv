@@ -239,3 +239,77 @@ D09-T03,Open RN 1.4: RN accepts delegated acts only with protocols/orders and co
 D09-T03,Open RN 1.4: chain of command,Open RN Fundamentals 1.4,1.4,Educational text,text match
 D09-T03,Open RN 1.4: APRNs can diagnose and prescribe,Open RN Fundamentals 1.4,1.4,Educational text (US),text match
 D09-T03,Open RN 1.6: undocumented assessment considered not done; failure to notify provider,Open RN Fundamentals 1.6,1.6,Educational text (US),text match
+D05-T16,ISMP: high-alert drugs bear heightened risk of significant harm when used in error; mistakes may or may not be more common,"ISMP High-Alert List, acute care, 2024",Introduction,Statement,text match
+D05-T16,"ISMP: use the list to decide which drugs need special safeguards; strategies include standardising, limiting access, labels, decision support, double checks","ISMP High-Alert List, acute care, 2024",Introduction,Statement,text match
+D05-T16,ISMP: manual independent double checks not always optimal and may not be practical for all,"ISMP High-Alert List, acute care, 2024",Introduction note,Statement,text match
+D05-T16,"ISMP list categories include IV adrenergic agonists, insulin, opioids, antithrombotics, neuromuscular blockers, concentrated potassium chloride","ISMP High-Alert List, acute care, 2024",List,Statement,text match
+D05-T16,"ISMP basis: error reports, literature, survey Sept-Oct 2023, advisory board","ISMP High-Alert List, acute care, 2024",Background,Statement,text match
+D05-T16,ISMP copyright: internal non-commercial reproduction with attribution only,"ISMP High-Alert List, acute care, 2024",Footer,Licence,text match
+D05-T16,"FDA: problems across all types of external pump; over/under-infusion; causes software, human factors, mechanical, battery",FDA Infusion Pump Risk Reduction Strategies (page 2018),Introduction,Statement,text match
+D05-T16,FDA: back-up plan for pump failure; stay with high-risk patient while pump obtained,FDA Infusion Pump Risk Reduction Strategies (page 2018),Plan ahead,Statement,text match
+D05-T16,FDA: second method e.g. time strip indicator or buretrol,FDA Infusion Pump Risk Reduction Strategies (page 2018),Plan ahead,Statement,text match
+D05-T16,FDA: label pump channels and tubing at port of entry,FDA Infusion Pump Risk Reduction Strategies (page 2018),Label,Statement,text match
+D05-T16,"FDA: verify programming at shift change, setting change, new bag, new tubing primed",FDA Infusion Pump Risk Reduction Strategies (page 2018),Check,Statement,text match
+D05-T16,"FDA: independent double check by two clinicians separately; examples insulin, heparin, vasopressors, Diprivan, TPN, morphine",FDA Infusion Pump Risk Reduction Strategies (page 2018),Check,Statement,text match
+D05-T16,"FDA: monitor for over/under-infusion using cardiac, pulse oximetry, EtCO2, glucose meters",FDA Infusion Pump Risk Reduction Strategies (page 2018),Check,Statement,text match
+D05-T16,FDA: use drug library; respond to alerts; 5 rights,FDA Infusion Pump Risk Reduction Strategies (page 2018),Use,Statement,text match
+D05-T16,"FDA: remove from use, tag, sequester a pump with damage, unexplained alarm, or unexpected function",FDA Infusion Pump Risk Reduction Strategies (page 2018),Report problems,Statement,text match
+D05-T16,"FDA: strategies not applicable to all pumps, settings, populations",FDA Infusion Pump Risk Reduction Strategies (page 2018),Introduction,Caveat,text match
+D05-T16,FDA page content current as of 02/02/2018,FDA Infusion Pump Risk Reduction Strategies (page 2018),Footer,Date,text match
+D08-T03,AABB COI: recipient and container properly identified before transfusion,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 2,Statement,text match
+D08-T03,AABB COI: entered container expires 4 h room temp / 24 h refrigerated,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 3,Statement,text match
+D08-T03,AABB COI: sterile filter 150-260 micron,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 4,Statement,text match
+D08-T03,AABB COI: inspect before use; abnormal appearance not to be used,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 6,Statement,text match
+D08-T03,AABB COI: only 0.9% sodium chloride with blood unless FDA-approved or documented safe,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 7,Statement,text match
+D08-T03,AABB COI: lactated Ringer solutions with calcium never with citrate components,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 8,Statement,text match
+D08-T03,AABB COI: warm only if clinically indicated with FDA-cleared device,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 9,Statement,text match
+D08-T03,AABB COI: life-threatening reactions after small volume; initial rate slow,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 10,Statement,text match
+D08-T03,"AABB COI: periodic observation/recording of vital signs before, during, after; stop immediately; do not restart unless transfusion service protocol","AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 11,Statement,text match
+D08-T03,AABB COI: transfusion finished within 4 h after entering container,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 13,Statement,text match
+D08-T03,AABB COI: report all adverse events to transfusion service,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 14,Statement,text match
+D08-T03,AABB COI: febrile non-haemolytic - rise >=1C or chills/rigors within 4 h,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 3,Statement,text match
+D08-T03,AABB COI: allergic reactions 1-3% of plasma components; urticaria/wheeze,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 4,Statement,text match
+D08-T03,AABB COI: anaphylaxis features and epinephrine,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 5,Statement,text match
+D08-T03,AABB COI: TRALI hypoxaemia non-cardiogenic oedema within 6 h,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 6,Statement,text match
+D08-T03,"AABB COI: acute haemolytic features incl. shock, anaesthetised patients, lack of symptoms does not exclude","AABB Circular of Information June 2024 (review PDF, partly read)",Red cell text,Statement,text match
+D08-T03,"AABB COI: haemolysis: stop, notify lab, review identification, post-reaction sample from other site with unit and set","AABB Circular of Information June 2024 (review PDF, partly read)",Red cell text,Statement,text match
+D08-T03,AABB COI: delayed haemolytic 2-14 days,"AABB Circular of Information June 2024 (review PDF, partly read)",Delayed immunologic,Statement,text match
+D08-T03,AABB COI: post-transfusion purpura 7-10 days,"AABB Circular of Information June 2024 (review PDF, partly read)",Delayed immunologic 3,Statement,text match
+D08-T03,AABB COI: TA-GVHD fatality nearly 100%,"AABB Circular of Information June 2024 (review PDF, partly read)",Delayed immunologic 4,Statement,text match
+D08-T03,"AABB COI: bacterial sepsis - high fever (rise >=2C), chills, hypotension, collapse; discontinue; cultures","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 2,Statement,text match
+D08-T03,"AABB COI: TACO - at-risk groups, small volumes, positive balance","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 3,Statement,text match
+D08-T03,"AABB COI: hypothermia - arrhythmia/arrest, warming device","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 4,Statement,text match
+D08-T03,AABB COI: citrate - ionised calcium; ECG monitoring more helpful,"AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 5a,Statement,text match
+D08-T03,"AABB COI: metabolic - acid-base, hyper/hypokalaemia","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 5b,Statement,text match
+D08-T03,"AABB COI: prepared by AABB, ARC, ABC, ASBP; FDA recognises","AABB Circular of Information June 2024 (review PDF, partly read)",Cover,Statement,text match
+D08-T03,"AABB COI: professional judgement determines components, dose, rate","AABB Circular of Information June 2024 (review PDF, partly read)",Notice to all users,Statement,text match
+D08-T03,FDA: recognises June 2024 Circular as acceptable under 21 CFR 606.122; supersedes March 2022,FDA guidance page: Acceptable Circular of Information (Sept 2024),Guidance page,Regulatory,text match
+D07-T03,CPOT review: four behavioural indicators; vent compliance or vocalisation; each 0-2; total 0-8,"CPOT narrative review, Front Pain Res 2024 (PMC11518793)",Components of CPOT,Review text,text match
+D07-T03,CPOT review: behavioural scores interpreted differently from self-report,"CPOT narrative review, Front Pain Res 2024 (PMC11518793)",Interpretation of CPOT,Review text,text match
+D02-T12,SSC 2026: initial MAP 65 over higher; range within 5 mm Hg; titrate within range,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressor administration,Strong; moderate,text match
+D02-T12,SSC 2026: peripheral start; data insufficient on duration/dose/site; midlines not considered,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation/vasopressor administration,Conditional; very low,text match
+D02-T12,"SSC 2026: norepinephrine first-line over dopamine, epinephrine, selepressin",SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors,Strong; high/low,text match
+D02-T12,SSC 2026: add vasopressin on escalating norepinephrine,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors,Conditional; moderate,text match
+D02-T12,SSC 2026: suggest against terlipressin,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors,Conditional; low,text match
+D02-T12,"SSC 2026: norepinephrine preferred with tachyarrhythmia, epinephrine with bradyarrhythmia (remark)",SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors remark,Conditional; very low,text match
+D02-T12,"SSC 2026: inotropes in addition to, not instead of, vasopressors",SSC 2026 official SCCM recommendation page (recommendation-level),Inotropes remark,Conditional; very low,text match
+D02-T12,SSC 2026: dobutamine added to norepinephrine or epinephrine alone,SSC 2026 official SCCM recommendation page (recommendation-level),Inotropes,Conditional; very low,text match
+D02-T12,SSC 2026: suggest against levosimendan,SSC 2026 official SCCM recommendation page (recommendation-level),Inotropes,Conditional; low,text match
+D02-T12,SSC 2026: lactate remark - not fluids until lactate normalises,SSC 2026 official SCCM recommendation page (recommendation-level),Serial lactate,Conditional; low,text match
+D02-T12,ESICM 2014: arterial and central venous catheters in shock needing vasopressors (ungraded best practice),ESICM shock consensus 2014 (PMC4239778),Recommendation 18,Ungraded best practice,text match
+D02-T12,ESICM 2014: central access may be required and preferred when vasopressor infusions needed,ESICM shock consensus 2014 (PMC4239778),Text,Statement,text match
+D02-T12,ISMP: IV adrenergic agonists and inotropes are high-alert categories,"ISMP High-Alert List, acute care, 2024",List,Statement,text match
+D02-T09,SSC 2026: sepsis and septic shock are emergencies; begin immediately,SSC 2026 official SCCM recommendation page (recommendation-level),Statement,Good practice,text match
+D02-T09,"SSC 2026: crystalloids first-line (strong, moderate)",SSC 2026 official SCCM recommendation page (recommendation-level),Fluid type,Strong; moderate,text match
+D02-T09,SSC 2026: balanced crystalloids over 0.9% saline; saline in TBI,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid type,Conditional; moderate,text match
+D02-T09,SSC 2026: initial weight-based crystalloid volume in first 3 h; frequent reassessment,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation remark,Conditional; low,text match
+D02-T09,SSC 2026: dynamic measures over exam/static,SSC 2026 official SCCM recommendation page (recommendation-level),Resuscitation,Conditional; low,text match
+D02-T09,SSC 2026: unstable shock features and physical exam,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation remark,Remark,text match
+D02-T09,SSC 2026: liberal or restrictive strategy after 30 mL/kg with persistent hypoperfusion,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation,Conditional; low,text match
+D02-T09,SSC 2026: suggest IV corticosteroids in septic shock,SSC 2026 official SCCM recommendation page (recommendation-level),IV corticosteroids,Conditional; low,text match
+D02-T09,SSC 2026: ICU admission within 6 h,SSC 2026 official SCCM recommendation page (recommendation-level),ICU admission,Conditional; low,text match
+D02-T09,"SSC 2026: early source control, ideally within 6 h",SSC 2026 official SCCM recommendation page (recommendation-level),Source control,Conditional; very low,text match
+D02-T09,SSC 2026: suggest against antipyretic therapy for outcomes; not for symptom control,SSC 2026 official SCCM recommendation page (recommendation-level),Temperature control,Conditional; very low,text match
+D02-T09,SSC 2026: suggest against bicarbonate for haemodynamics; use in severe acidaemia with AKI,SSC 2026 official SCCM recommendation page (recommendation-level),Sodium bicarbonate,Conditional; very low,text match
+D02-T09,SSC 2026: suggest active fluid removal after acute resuscitation,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid removal,Conditional; very low,text match
+D02-T09,"SSC 2026: crystalloids alone over albumin; albumin exceptions (cirrhosis, large crystalloid volumes); avoid in TBI",SSC 2026 official SCCM recommendation page (recommendation-level),Fluid type,Conditional; moderate,text match

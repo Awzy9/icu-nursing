@@ -1,4 +1,4 @@
-# Source audit of the 25 drafted topics (2026-11-14)
+# Source audit of the 29 drafted topics (2026-11-14)
 
 Machine-readable: `SOURCE_AUDIT.csv` (topic × source, with status). Register: `sources/source_register.csv` (column `source_status`). A unit test now fails if a draft cites a source whose status is NOT READ, if a cited ID is missing from the register, or if a cited SUPERSEDED source is not described as superseded in the draft.
 
