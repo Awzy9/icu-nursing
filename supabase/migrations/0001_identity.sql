@@ -8,10 +8,16 @@
 -- ---------------------------------------------------------------------------------------------
 alter default privileges in schema public revoke all on tables from anon, authenticated;
 alter default privileges in schema public revoke all on sequences from anon, authenticated;
--- PostgreSQL grants EXECUTE on new functions to PUBLIC by default; a schema-scoped revoke cannot remove that,
--- so this must be the global form. Every function therefore starts locked down and is granted explicitly.
-alter default privileges revoke execute on functions from public;
 alter default privileges in schema public revoke execute on functions from anon, authenticated;
+-- PostgreSQL also grants EXECUTE on new functions to PUBLIC by default. A schema-scoped default cannot remove that,
+-- so each migration ends by revoking PUBLIC execute on every function it created, then granting explicitly.
+
+-- Helper/trigger functions live in a schema that the API does NOT expose (only `public` is exposed), so they
+-- cannot be called through /rest/v1/rpc. Row Level Security policies can still use them.
+create schema if not exists private;
+revoke all on schema private from public, anon;
+grant usage on schema private to authenticated;
+alter default privileges in schema private revoke execute on functions from anon, authenticated;
 
 create type public.app_role as enum ('learner', 'author', 'clinical_reviewer', 'publisher', 'admin');
 
@@ -50,6 +56,7 @@ create table public.user_roles (
   primary key (user_id, role)
 );
 alter table public.user_roles enable row level security;
+create index user_roles_granted_by_idx on public.user_roles (granted_by);
 
 -- Reviewer capacities map to CLINICAL_REVIEWER_MATRIX.md role codes.
 create table public.reviewer_specialties (
@@ -60,38 +67,46 @@ create table public.reviewer_specialties (
   primary key (user_id, specialty)
 );
 alter table public.reviewer_specialties enable row level security;
+create index reviewer_specialties_granted_by_idx on public.reviewer_specialties (granted_by);
 
-create or replace function public.set_updated_at() returns trigger language plpgsql as $$
+create or replace function private.set_updated_at() returns trigger language plpgsql set search_path = '' as $$
 begin
   new.updated_at := now();
   return new;
 end $$;
 
-create trigger profiles_updated before update on public.profiles for each row execute function public.set_updated_at();
+create trigger profiles_updated before update on public.profiles for each row execute function private.set_updated_at();
 
 -- ---------------------------------------------------------------------------------------------
 -- Authorization helpers
 -- ---------------------------------------------------------------------------------------------
 -- aal2 means the session completed multi-factor authentication (Supabase JWT claim `aal`).
-create or replace function public.is_aal2() returns boolean
-language sql stable as $$ select coalesce(auth.jwt() ->> 'aal', 'aal1') = 'aal2' $$;
+create or replace function private.is_aal2() returns boolean
+language sql stable set search_path = '' as $$ select coalesce(auth.jwt() ->> 'aal', 'aal1') = 'aal2' $$;
 
-create or replace function public.has_role(r public.app_role) returns boolean
+create or replace function private.has_role(r public.app_role) returns boolean
 language sql stable security definer set search_path = public, pg_temp as $$
   select exists (select 1 from public.user_roles where user_id = auth.uid() and role = r)
 $$;
 
 -- Staff roles additionally require MFA (aal2) when app_settings.require_staff_mfa is true.
-create or replace function public.has_staff_role(r public.app_role) returns boolean
+create or replace function private.has_staff_role(r public.app_role) returns boolean
 language sql stable security definer set search_path = public, pg_temp as $$
-  select public.has_role(r)
-     and (r = 'learner' or not (select require_staff_mfa from public.app_settings) or public.is_aal2())
+  select private.has_role(r)
+     and (r = 'learner' or not (select require_staff_mfa from public.app_settings) or private.is_aal2())
 $$;
 
-create or replace function public.is_staff() returns boolean
+create or replace function private.is_staff() returns boolean
 language sql stable security definer set search_path = public, pg_temp as $$
-  select public.has_staff_role('author') or public.has_staff_role('clinical_reviewer')
-      or public.has_staff_role('publisher') or public.has_staff_role('admin')
+  select private.has_staff_role('author') or private.has_staff_role('clinical_reviewer')
+      or private.has_staff_role('publisher') or private.has_staff_role('admin')
+$$;
+
+-- Does <user> hold <role>? (Used by policies that must look at ANOTHER user's roles without being blocked by
+-- user_roles' own row-level security.)
+create or replace function private.user_has_role(p_user uuid, p_role public.app_role) returns boolean
+language sql stable security definer set search_path = public, pg_temp as $$
+  select exists (select 1 from public.user_roles where user_id = p_user and role = p_role)
 $$;
 
 -- ---------------------------------------------------------------------------------------------
@@ -109,21 +124,21 @@ create table public.audit_log (
 create index audit_log_entity_idx on public.audit_log (entity_type, entity_id, at desc);
 alter table public.audit_log enable row level security;
 
-create or replace function public.audit_immutable() returns trigger language plpgsql as $$
+create or replace function private.audit_immutable() returns trigger language plpgsql set search_path = '' as $$
 begin
   raise exception 'audit_log is append-only' using errcode = '42501';
 end $$;
-create trigger audit_log_no_update before update or delete on public.audit_log for each row execute function public.audit_immutable();
-create trigger audit_log_no_truncate before truncate on public.audit_log for each statement execute function public.audit_immutable();
+create trigger audit_log_no_update before update or delete on public.audit_log for each row execute function private.audit_immutable();
+create trigger audit_log_no_truncate before truncate on public.audit_log for each statement execute function private.audit_immutable();
 
-create or replace function public.write_audit(p_action text, p_type text, p_id text, p_details jsonb default '{}'::jsonb)
+create or replace function private.write_audit(p_action text, p_type text, p_id text, p_details jsonb default '{}'::jsonb)
 returns void language sql security definer set search_path = public, pg_temp as $$
   insert into public.audit_log (actor, action, entity_type, entity_id, details)
   values (auth.uid(), p_action, p_type, p_id, coalesce(p_details, '{}'::jsonb))
 $$;
 
 -- Generic row-change audit trigger.
-create or replace function public.audit_row() returns trigger
+create or replace function private.audit_row() returns trigger
 language plpgsql security definer set search_path = public, pg_temp as $$
 declare
   j jsonb := to_jsonb(coalesce(new, old));
@@ -137,14 +152,14 @@ begin
   return coalesce(new, old);
 end $$;
 
-create trigger user_roles_audit after insert or update or delete on public.user_roles for each row execute function public.audit_row();
-create trigger reviewer_specialties_audit after insert or update or delete on public.reviewer_specialties for each row execute function public.audit_row();
+create trigger user_roles_audit after insert or update or delete on public.user_roles for each row execute function private.audit_row();
+create trigger reviewer_specialties_audit after insert or update or delete on public.reviewer_specialties for each row execute function private.audit_row();
 
 -- ---------------------------------------------------------------------------------------------
 -- New users: profile + learner role. Only display_name is read from user-controlled metadata;
 -- roles can NEVER come from metadata.
 -- ---------------------------------------------------------------------------------------------
-create or replace function public.handle_new_user() returns trigger
+create or replace function private.handle_new_user() returns trigger
 language plpgsql security definer set search_path = public, pg_temp as $$
 declare
   m jsonb := coalesce(new.raw_user_meta_data, '{}'::jsonb);
@@ -161,7 +176,7 @@ begin
   insert into public.user_roles (user_id, role) values (new.id, 'learner');
   return new;
 end $$;
-create trigger on_auth_user_created after insert on auth.users for each row execute function public.handle_new_user();
+create trigger on_auth_user_created after insert on auth.users for each row execute function private.handle_new_user();
 
 -- ---------------------------------------------------------------------------------------------
 -- Role administration (administrators with MFA only)
@@ -169,7 +184,7 @@ create trigger on_auth_user_created after insert on auth.users for each row exec
 create or replace function public.admin_grant_role(p_user uuid, p_role public.app_role) returns void
 language plpgsql security definer set search_path = public, pg_temp as $$
 begin
-  if not public.has_staff_role('admin') then
+  if not private.has_staff_role('admin') then
     raise exception 'administrator access with MFA required' using errcode = '42501';
   end if;
   if not exists (select 1 from auth.users where id = p_user) then
@@ -181,7 +196,7 @@ end $$;
 create or replace function public.admin_revoke_role(p_user uuid, p_role public.app_role) returns void
 language plpgsql security definer set search_path = public, pg_temp as $$
 begin
-  if not public.has_staff_role('admin') then
+  if not private.has_staff_role('admin') then
     raise exception 'administrator access with MFA required' using errcode = '42501';
   end if;
   if p_role = 'learner' then
@@ -196,7 +211,7 @@ end $$;
 create or replace function public.admin_set_specialty(p_user uuid, p_specialty text, p_enabled boolean) returns void
 language plpgsql security definer set search_path = public, pg_temp as $$
 begin
-  if not public.has_staff_role('admin') then
+  if not private.has_staff_role('admin') then
     raise exception 'administrator access with MFA required' using errcode = '42501';
   end if;
   if p_enabled then
@@ -208,31 +223,37 @@ end $$;
 
 -- ---------------------------------------------------------------------------------------------
 -- Row Level Security + grants (default deny; everything below is an explicit allow)
+-- Policies call auth.uid() as "(select auth.uid())" so it is evaluated once per statement, not per row.
 -- ---------------------------------------------------------------------------------------------
+revoke execute on all functions in schema public from public;
+revoke execute on all functions in schema private from public;
 grant usage on schema public to anon, authenticated;
 
-grant execute on function public.is_aal2(), public.has_role(public.app_role), public.has_staff_role(public.app_role), public.is_staff() to authenticated;
+grant execute on function private.is_aal2(), private.has_role(public.app_role), private.has_staff_role(public.app_role), private.is_staff(), private.user_has_role(uuid, public.app_role) to authenticated;
 grant execute on function public.admin_grant_role(uuid, public.app_role), public.admin_revoke_role(uuid, public.app_role), public.admin_set_specialty(uuid, text, boolean) to authenticated;
 
 -- profiles: own row; administrators read all; publishers read profiles of clinical reviewers (for assignment).
 grant select on public.profiles to authenticated;
 grant update (display_name, country, preferred_locale, experience_level) on public.profiles to authenticated;
-create policy profiles_select_own on public.profiles for select to authenticated using (id = auth.uid());
-create policy profiles_select_admin on public.profiles for select to authenticated using (public.has_staff_role('admin'));
-create policy profiles_select_publisher_reviewers on public.profiles for select to authenticated
-  using (public.has_staff_role('publisher') and exists (select 1 from public.user_roles r where r.user_id = profiles.id and r.role = 'clinical_reviewer'));
-create policy profiles_update_own on public.profiles for update to authenticated using (id = auth.uid()) with check (id = auth.uid());
+create policy profiles_select on public.profiles for select to authenticated using (
+  id = (select auth.uid())
+  or private.has_staff_role('admin')
+  or (private.has_staff_role('publisher') and private.user_has_role(profiles.id, 'clinical_reviewer'))
+);
+create policy profiles_update_own on public.profiles for update to authenticated
+  using (id = (select auth.uid())) with check (id = (select auth.uid()));
 
 -- user_roles / reviewer_specialties: read-only through the API; changes only via admin functions.
 grant select on public.user_roles, public.reviewer_specialties to authenticated;
-create policy roles_select_own on public.user_roles for select to authenticated using (user_id = auth.uid());
-create policy roles_select_admin on public.user_roles for select to authenticated using (public.has_staff_role('admin'));
-create policy specialties_select_own on public.reviewer_specialties for select to authenticated using (user_id = auth.uid());
-create policy specialties_select_staff on public.reviewer_specialties for select to authenticated
-  using (public.has_staff_role('admin') or public.has_staff_role('publisher'));
+create policy roles_select on public.user_roles for select to authenticated
+  using (user_id = (select auth.uid()) or private.has_staff_role('admin'));
+create policy specialties_select on public.reviewer_specialties for select to authenticated
+  using (user_id = (select auth.uid()) or private.has_staff_role('admin') or private.has_staff_role('publisher'));
 
 -- audit_log: administrators read; nobody writes through the API.
 grant select on public.audit_log to authenticated;
-create policy audit_select_admin on public.audit_log for select to authenticated using (public.has_staff_role('admin'));
+create policy audit_select_admin on public.audit_log for select to authenticated using (private.has_staff_role('admin'));
 
--- app_settings: no API access at all (read inside SECURITY DEFINER helpers only).
+-- app_settings: deliberately no API access (read only inside SECURITY DEFINER helpers). The explicit deny policy
+-- documents that intent and satisfies "RLS enabled, no policy" linting.
+create policy app_settings_no_api_access on public.app_settings for all to authenticated using (false) with check (false);

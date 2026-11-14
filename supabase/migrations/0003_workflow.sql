@@ -12,16 +12,16 @@
 --  * Draft guidelines can be cited only when explicitly acknowledged (they are then labelled as drafts).
 --  * Learners only ever read the immutable published snapshot, never the working copy.
 
-create or replace function public._require_role(p_role public.app_role) returns void
+create or replace function private._require_role(p_role public.app_role) returns void
 language plpgsql stable security definer set search_path = public, pg_temp as $$
 begin
-  if auth.uid() is null or not public.has_staff_role(p_role) then
+  if auth.uid() is null or not private.has_staff_role(p_role) then
     raise exception '% access with MFA required', p_role using errcode = '42501';
   end if;
 end $$;
 
 -- Builds the immutable snapshot that learners will read.
-create or replace function public._topic_snapshot(p_topic uuid) returns jsonb
+create or replace function private._topic_snapshot(p_topic uuid) returns jsonb
 language sql stable security definer set search_path = public, pg_temp as $$
   select jsonb_build_object(
     'title', t.title, 'summary', t.summary, 'level', t.level, 'est_minutes', t.est_minutes,
@@ -50,7 +50,7 @@ declare
   problems text[] := '{}';
 begin
   select * into t from public.topics where id = p_topic;
-  if not found or not public.can_read_topic(p_topic) then
+  if not found or not private.can_read_topic(p_topic) then
     raise exception 'topic not found' using errcode = 'P0002';
   end if;
   if btrim(coalesce(t.title ->> 'en', '')) = '' then problems := array_append(problems, 'English title is required'); end if;
@@ -95,7 +95,7 @@ declare
 begin
   select * into t from public.topics where id = p_topic for update;
   if not found then raise exception 'topic not found' using errcode = 'P0002'; end if;
-  if not ((t.author_id = auth.uid() and public.has_staff_role('author')) or public.has_staff_role('admin')) then
+  if not ((t.author_id = auth.uid() and private.has_staff_role('author')) or private.has_staff_role('admin')) then
     raise exception 'only the author (with MFA) or an administrator can submit this topic' using errcode = '42501';
   end if;
   if t.kind <> 'clinical' then raise exception 'demonstration content cannot enter clinical review' using errcode = '22023'; end if;
@@ -108,10 +108,10 @@ begin
   end if;
   select coalesce(max(version_no), 0) + 1 into vno from public.content_versions where topic_id = p_topic;
   insert into public.content_versions (topic_id, version_no, status, snapshot, required_review_roles, origin, submitted_by)
-  values (p_topic, vno, 'in_review', public._topic_snapshot(p_topic), t.required_review_roles, t.origin, auth.uid())
+  values (p_topic, vno, 'in_review', private._topic_snapshot(p_topic), t.required_review_roles, t.origin, auth.uid())
   returning id into vid;
   update public.topics set status = 'in_review' where id = p_topic;
-  perform public.write_audit('submit_for_review', 'topic', p_topic::text, jsonb_build_object('version_id', vid, 'version_no', vno));
+  perform private.write_audit('submit_for_review', 'topic', p_topic::text, jsonb_build_object('version_id', vid, 'version_no', vno));
   return vid;
 end $$;
 
@@ -121,13 +121,13 @@ declare t public.topics;
 begin
   select * into t from public.topics where id = p_topic for update;
   if not found then raise exception 'topic not found' using errcode = 'P0002'; end if;
-  if not ((t.author_id = auth.uid() and public.has_staff_role('author')) or public.has_staff_role('admin')) then
+  if not ((t.author_id = auth.uid() and private.has_staff_role('author')) or private.has_staff_role('admin')) then
     raise exception 'only the author (with MFA) or an administrator can withdraw' using errcode = '42501';
   end if;
   if t.status <> 'in_review' then raise exception 'topic is not in review' using errcode = '55000'; end if;
   update public.content_versions set status = 'withdrawn' where topic_id = p_topic and status = 'in_review';
   update public.topics set status = 'draft' where id = p_topic;
-  perform public.write_audit('withdraw_submission', 'topic', p_topic::text);
+  perform private.write_audit('withdraw_submission', 'topic', p_topic::text);
 end $$;
 
 create or replace function public.assign_reviewer(p_version uuid, p_reviewer uuid, p_specialty text) returns uuid
@@ -137,7 +137,7 @@ declare
   t public.topics;
   aid uuid;
 begin
-  if auth.uid() is null or not (public.has_staff_role('publisher') or public.has_staff_role('admin')) then
+  if auth.uid() is null or not (private.has_staff_role('publisher') or private.has_staff_role('admin')) then
     raise exception 'publisher access with MFA required' using errcode = '42501';
   end if;
   select * into v from public.content_versions where id = p_version for update;
@@ -160,12 +160,12 @@ begin
   values (p_version, p_reviewer, p_specialty, auth.uid())
   on conflict (version_id, reviewer_id, specialty) do update set assigned_by = excluded.assigned_by
   returning id into aid;
-  perform public.write_audit('assign_reviewer', 'topic', v.topic_id::text, jsonb_build_object('version_id', p_version, 'reviewer', p_reviewer, 'specialty', p_specialty));
+  perform private.write_audit('assign_reviewer', 'topic', v.topic_id::text, jsonb_build_object('version_id', p_version, 'reviewer', p_reviewer, 'specialty', p_specialty));
   return aid;
 end $$;
 
 -- Recomputes a version's state after a review is recorded.
-create or replace function public._evaluate_version(p_version uuid) returns void
+create or replace function private._evaluate_version(p_version uuid) returns void
 language plpgsql security definer set search_path = public, pg_temp as $$
 declare
   v public.content_versions;
@@ -201,7 +201,7 @@ declare
   t public.topics;
   rid uuid;
 begin
-  if auth.uid() is null or not public.has_staff_role('clinical_reviewer') then
+  if auth.uid() is null or not private.has_staff_role('clinical_reviewer') then
     raise exception 'clinical reviewer access with MFA required' using errcode = '42501';
   end if;
   select * into v from public.content_versions where id = p_version for update;
@@ -220,8 +220,8 @@ begin
   insert into public.content_reviews (version_id, reviewer_id, specialty, decision, comments)
   values (p_version, auth.uid(), p_specialty, p_decision, p_comments)
   returning id into rid;
-  perform public._evaluate_version(p_version);
-  perform public.write_audit('record_review', 'topic', v.topic_id::text, jsonb_build_object('version_id', p_version, 'specialty', p_specialty, 'decision', p_decision));
+  perform private._evaluate_version(p_version);
+  perform private.write_audit('record_review', 'topic', v.topic_id::text, jsonb_build_object('version_id', p_version, 'specialty', p_specialty, 'decision', p_decision));
   return rid;
 end $$;
 
@@ -232,7 +232,7 @@ declare
   v public.content_versions;
   roles jsonb;
 begin
-  perform public._require_role('publisher');
+  perform private._require_role('publisher');
   select * into t from public.topics where id = p_topic for update;
   select * into v from public.content_versions where id = p_version and topic_id = p_topic for update;
   if t.id is null or v.id is null then raise exception 'topic or version not found' using errcode = 'P0002'; end if;
@@ -251,7 +251,7 @@ begin
          last_reviewed_at = (select max(reviewed_at) from public.content_reviews where version_id = p_version),
          next_review_at = now() + make_interval(months => p_review_months)
    where id = p_topic;
-  perform public.write_audit('publish', 'topic', p_topic::text, jsonb_build_object('version_id', p_version, 'version_no', v.version_no));
+  perform private.write_audit('publish', 'topic', p_topic::text, jsonb_build_object('version_id', p_version, 'version_no', v.version_no));
 end $$;
 
 -- Start a new revision of a published topic. The live version stays visible until the new one is approved and published.
@@ -261,12 +261,12 @@ declare t public.topics;
 begin
   select * into t from public.topics where id = p_topic for update;
   if not found then raise exception 'topic not found' using errcode = 'P0002'; end if;
-  if not ((t.author_id = auth.uid() and public.has_staff_role('author')) or public.has_staff_role('admin')) then
+  if not ((t.author_id = auth.uid() and private.has_staff_role('author')) or private.has_staff_role('admin')) then
     raise exception 'only the author (with MFA) or an administrator can revise' using errcode = '42501';
   end if;
   if t.status <> 'published' or t.kind <> 'clinical' then raise exception 'only a published clinical topic can be revised' using errcode = '55000'; end if;
   update public.topics set status = 'draft' where id = p_topic;
-  perform public.write_audit('start_revision', 'topic', p_topic::text);
+  perform private.write_audit('start_revision', 'topic', p_topic::text);
 end $$;
 
 create or replace function public.rollback_topic(p_topic uuid, p_version uuid, p_reason text) returns void
@@ -275,7 +275,7 @@ declare
   t public.topics;
   v public.content_versions;
 begin
-  perform public._require_role('publisher');
+  perform private._require_role('publisher');
   if char_length(btrim(coalesce(p_reason, ''))) < 10 then raise exception 'a reason of at least 10 characters is required' using errcode = '22023'; end if;
   select * into t from public.topics where id = p_topic for update;
   select * into v from public.content_versions where id = p_version and topic_id = p_topic for update;
@@ -288,30 +288,32 @@ begin
   end if;
   update public.content_versions set status = 'published' where id = p_version;
   update public.topics set published_version_id = p_version, archived_at = null where id = p_topic;
-  perform public.write_audit('rollback', 'topic', p_topic::text, jsonb_build_object('to_version', v.version_no, 'reason', p_reason));
+  perform private.write_audit('rollback', 'topic', p_topic::text, jsonb_build_object('to_version', v.version_no, 'reason', p_reason));
 end $$;
 
 create or replace function public.archive_topic(p_topic uuid, p_reason text) returns void
 language plpgsql security definer set search_path = public, pg_temp as $$
 begin
-  perform public._require_role('publisher');
+  perform private._require_role('publisher');
   if char_length(btrim(coalesce(p_reason, ''))) < 10 then raise exception 'a reason of at least 10 characters is required' using errcode = '22023'; end if;
   update public.topics set archived_at = now(), status = 'archived' where id = p_topic;
   if not found then raise exception 'topic not found' using errcode = 'P0002'; end if;
-  perform public.write_audit('archive', 'topic', p_topic::text, jsonb_build_object('reason', p_reason));
+  perform private.write_audit('archive', 'topic', p_topic::text, jsonb_build_object('reason', p_reason));
 end $$;
 
 create or replace function public.restore_topic(p_topic uuid) returns void
 language plpgsql security definer set search_path = public, pg_temp as $$
 declare t public.topics;
 begin
-  perform public._require_role('admin');
+  perform private._require_role('admin');
   select * into t from public.topics where id = p_topic for update;
   if not found or t.status <> 'archived' then raise exception 'topic is not archived' using errcode = '55000'; end if;
   update public.topics set archived_at = null, status = case when published_version_id is not null then 'published'::public.content_status else 'draft'::public.content_status end where id = p_topic;
-  perform public.write_audit('restore', 'topic', p_topic::text);
+  perform private.write_audit('restore', 'topic', p_topic::text);
 end $$;
 
+revoke execute on all functions in schema public from public;
+revoke execute on all functions in schema private from public;
 grant execute on function
   public.validate_topic_for_review(uuid), public.submit_for_review(uuid), public.withdraw_submission(uuid),
   public.assign_reviewer(uuid, uuid, text), public.record_review(uuid, text, public.review_decision, text),
@@ -319,5 +321,4 @@ grant execute on function
   public.archive_topic(uuid, text), public.restore_topic(uuid)
 to authenticated;
 
--- Internal helpers: never callable through the API (defence in depth on top of the default-deny above).
-revoke all on function public._require_role(public.app_role), public._topic_snapshot(uuid), public._evaluate_version(uuid) from public, anon, authenticated;
+-- Internal helpers live in the non-exposed `private` schema and are not granted to any API role.

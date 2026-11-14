@@ -6,6 +6,8 @@ import { redirect } from "@/i18n/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { ACTION_SCOPES, LEVELS } from "@/lib/content/types";
 import { validateImage } from "@/lib/image-validation";
+import { rateLimit } from "@/lib/rate-limit";
+import { headers } from "next/headers";
 
 export interface AdminState { error?: string; ok?: boolean; message?: string }
 const REVIEW_CODES = ["NE", "BN", "PH", "RT", "CCP", "NEPH", "NEURO", "IPC", "OTHER"] as const;
@@ -24,9 +26,17 @@ function fd(form: FormData) {
 }
 const loc = (en: string, ar?: string) => (ar ? { en, ar } : { en });
 
+/** Best-effort per-instance throttle for staff actions (the database enforces authorisation; this limits abuse and runaway clients). */
+async function throttled(bucket: string, limit: number): Promise<boolean> {
+  const h = await headers();
+  const ip = (h.get("x-forwarded-for")?.split(",")[0] ?? h.get("x-real-ip") ?? "unknown").trim();
+  return rateLimit(`${bucket}:${ip}`, limit, 60_000);
+}
+
 async function run<T extends z.ZodTypeAny>(form: FormData, schema: T, fn: (v: z.infer<T>, db: NonNullable<Awaited<ReturnType<typeof createClient>>>) => Promise<{ error: { message: string } | null }>, message?: string): Promise<AdminState> {
   const db = await createClient();
   if (!db) return { error: "Backend not configured (demonstration mode)." };
+  if (!(await throttled("admin", 120))) return { error: "Too many actions in a short time. Please wait a moment." };
   const parsed = schema.safeParse(fd(form));
   if (!parsed.success) return { error: `Invalid input: ${parsed.error.issues.map((i) => `${i.path.join(".")} ${i.message}`).join("; ")}` };
   const { error } = await fn(parsed.data, db);
@@ -105,6 +115,7 @@ const imageMeta = z.object({ topicId: uuid, altEn: opt(300), altAr: opt(300), ca
 export async function uploadImageAction(_p: AdminState, form: FormData): Promise<AdminState> {
   const db = await createClient();
   if (!db) return { error: "Backend not configured (demonstration mode)." };
+  if (!(await throttled("upload", 20))) return { error: "Too many uploads in a short time. Please wait a moment." };
   const parsed = imageMeta.safeParse(fd(form));
   if (!parsed.success) return { error: `Invalid input: ${parsed.error.issues.map((i) => `${i.path.join(".")} ${i.message}`).join("; ")}` };
   const file = form.get("file");

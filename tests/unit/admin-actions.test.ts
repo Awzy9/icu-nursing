@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { _resetRateLimit } from "@/lib/rate-limit";
 
 const calls: { fn: string; args: unknown }[] = [];
 let dbError: { message: string } | null = null;
@@ -13,6 +14,7 @@ const client = { from: builder, rpc: async (fn: string, args: unknown) => { call
 
 vi.mock("@/lib/supabase/server", () => ({ createClient: async () => client }));
 vi.mock("next/cache", () => ({ revalidatePath: vi.fn() }));
+vi.mock("next/headers", () => ({ headers: async () => new Headers({ "x-forwarded-for": "203.0.113.9" }) }));
 vi.mock("next-intl/server", () => ({ getLocale: async () => "en" }));
 vi.mock("@/i18n/navigation", () => ({ redirect: vi.fn() }));
 
@@ -20,7 +22,7 @@ const fd = (o: Record<string, string>) => { const f = new FormData(); for (const
 const U = "11111111-1111-4111-8111-111111111111";
 const V = "22222222-2222-4222-8222-222222222222";
 
-beforeEach(() => { calls.length = 0; dbError = null; });
+beforeEach(() => { calls.length = 0; dbError = null; _resetRateLimit(); });
 
 describe("admin server actions", () => {
   it("passes workflow calls straight to the database functions (no client-side authority)", async () => {
@@ -70,5 +72,12 @@ describe("admin server actions", () => {
   it("cannot grant administrator-only functions with an unknown specialty code", async () => {
     const a = await import("@/app/[locale]/admin/actions");
     expect((await a.setSpecialtyAction({}, fd({ userId: U, specialty: "ROOT" }))).error).toMatch(/Invalid input/);
+  });
+
+  it("throttles runaway staff-action clients per IP", async () => {
+    const a = await import("@/app/[locale]/admin/actions");
+    let blocked = 0;
+    for (let i = 0; i < 125; i++) if ((await a.submitAction({}, fd({ topicId: U }))).error?.match(/Too many actions/)) blocked++;
+    expect(blocked).toBe(5);
   });
 });

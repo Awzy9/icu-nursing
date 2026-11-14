@@ -9,7 +9,7 @@ export const signUpSchema = z
     password: passwordSchema,
     confirmPassword: z.string(),
     displayName: z.string().trim().min(1).max(80),
-    experience: z.enum(["beginner", "intermediate", "advanced"]).optional(),
+    experience: z.enum(["beginner", "intermediate", "advanced"]).optional().or(z.literal("").transform(() => undefined)),
     country: z.string().trim().toUpperCase().regex(/^[A-Z]{2}$/).optional().or(z.literal("").transform(() => undefined)),
   })
   .refine((v) => v.password === v.confirmPassword, { path: ["confirmPassword"], message: "mismatch" });

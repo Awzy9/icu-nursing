@@ -16,9 +16,9 @@ insert into public.user_roles (user_id, role) select id, 'admin' from auth.users
 Further roles are granted from `/admin/users` (administrators with MFA only).
 
 ## Known limitations / follow-ups
-- CSP uses `'unsafe-inline'` for scripts because Next.js injects inline bootstrap scripts; move to nonce-based CSP before production hardening.
-- App-level rate limiting is best-effort (per instance). Rely on Supabase Auth limits and the hosting firewall/WAF for production.
-- Email confirmation, password reset and MFA flows are implemented against Supabase Auth APIs but were **not run end-to-end against a live Supabase project** in this session (no project exists; creating one needs your approval). Database behaviour is covered by tests on real PostgreSQL.
+- **CSP**: per-request nonce + `strict-dynamic`; no `'unsafe-inline'` for scripts (verified by e2e: no violations, every inline script carries the nonce). Network access is limited to the configured Supabase project host. Styles still allow inline attributes (used for progress bars).
+- **Rate limiting** is layered: Supabase Auth limits (configured via `scripts/live/configure-auth.ts`; the built-in mailer allows 2 emails/hour), best-effort per-instance limits on sign-in/sign-up/reset (8/5/5 per minute per IP), staff actions (120/min) and uploads (20/min). Add a platform WAF/rate limit at deployment because serverless instances do not share memory.
+- Auth, MFA, password-reset and the whole workflow **were exercised against the live dev project** (see `docs/LIVE_INTEGRATION_REPORT.md`). Real email *delivery* was not (built-in SMTP limits; custom SMTP needed).
 - Review Supabase dashboard settings before launch: enable email confirmations, CAPTCHA, leaked-password protection, and set the site URL / redirect allow-list.
 
 ## Dependency audit (2026-11-14)
@@ -26,3 +26,9 @@ Further roles are granted from `/admin/users` (administrators with MFA only).
 - Test runner upgraded to Vitest 5 to clear a critical advisory in its worker pool (`tinypool`).
 - Remaining: **6 moderate advisories in development-only tooling** (typescript-eslint → `minimatch` ReDoS). They are not shipped and cannot be reached by users; `npm audit fix --force` would downgrade ESLint tooling, so they are tracked rather than forced.
 - CI should run `npm audit --omit=dev --audit-level=high` (added to the workflow).
+
+## Live findings (2026-11-14)
+See `docs/LIVE_INTEGRATION_REPORT.md` for the full list. Highlights: helper functions moved to a non-exposed `private` schema (RPC surface is exactly 15 intentional functions, none for `anon`); advisors went from 33 to 17 security findings (the remainder are the two intentional definer views and the 15 role-checked RPCs); publishers now see reviewer profiles; staff MFA gating uses verified claims; forms keep input on server errors; client bundle contains no secret key material; the secret key is never used by the app (test harness only, in memory).
+
+## Image uploads
+Bucket `topic-images`: public read, 2 MB, PNG/JPEG/WebP only (SVG/GIF refused). The app validates the **file signature** (not the browser-declared type), stores under `<topic_id>/<random-uuid>.<ext>`, records licence + alt text, and deletes the file if metadata insertion fails. Storage write policies reuse the topic's edit rule (author with MFA while draft, or admin); uploads freeze while a topic is in review. The database also refuses metadata whose path is not inside the topic's own folder.

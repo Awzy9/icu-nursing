@@ -31,6 +31,12 @@ describe("sign-up validation", () => {
     expect(signUpSchema.safeParse({ ...ok, experience: "guru" }).success).toBe(false);
     expect(signUpSchema.safeParse({ ...ok, country: "" }).success).toBe(true);
   });
+  it("treats blank optional form fields (what a browser actually submits) as absent", () => {
+    const r = signUpSchema.safeParse({ ...ok, experience: "", country: "" });
+    expect(r.success).toBe(true);
+    expect(r.data?.experience).toBeUndefined();
+    expect(r.data?.country).toBeUndefined();
+  });
   it("sign-in and new-password schemas validate", () => {
     expect(signInSchema.safeParse({ email: "a@b.co", password: "x" }).success).toBe(true);
     expect(signInSchema.safeParse({ email: "a@b.co", password: "" }).success).toBe(false);

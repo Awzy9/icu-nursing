@@ -9,20 +9,33 @@ afterAll(closePool);
  * to the API roles, these tests fail until the allowlist (and a security review) is updated deliberately.
  */
 describe("API exposure allowlist", () => {
-  it("exposes exactly these functions to authenticated users", async () => {
+  it("exposes exactly these RPC functions (public schema) to authenticated users", async () => {
     const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
       where n.nspname='public' and p.prokind='f' and has_function_privilege('authenticated', p.oid, 'execute') order by 1`);
     expect(r.rows.map((x) => x.proname)).toEqual([
-      "admin_grant_role", "admin_revoke_role", "admin_set_specialty", "archive_topic", "assign_reviewer", "can_edit_topic", "can_read_topic", "can_read_version",
-      "has_role", "has_staff_role", "is_aal2", "is_published_topic", "is_staff", "publish_topic", "record_review", "record_topic_view", "restore_topic",
-      "rollback_topic", "set_topic_completion", "start_revision", "submit_for_review", "try_uuid", "validate_topic_for_review", "withdraw_submission",
+      "admin_grant_role", "admin_revoke_role", "admin_set_specialty", "archive_topic", "assign_reviewer", "publish_topic", "record_review",
+      "record_topic_view", "restore_topic", "rollback_topic", "set_topic_completion", "start_revision", "submit_for_review",
+      "validate_topic_for_review", "withdraw_submission",
     ]);
   });
 
-  it("exposes only visibility predicates to anonymous users", async () => {
-    const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
-      where n.nspname='public' and p.prokind='f' and has_function_privilege('anon', p.oid, 'execute') order by 1`);
-    expect(r.rows.map((x) => x.proname)).toEqual(["can_edit_topic", "can_read_topic", "can_read_version", "is_published_topic", "try_uuid"]);
+  it("exposes no functions at all to anonymous users", async () => {
+    const r = await owner.query(`select n.nspname, p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
+      where n.nspname in ('public','private') and p.prokind='f' and has_function_privilege('anon', p.oid, 'execute') order by 1,2`);
+    expect(r.rows).toEqual([]);
+    expect((await owner.query("select has_schema_privilege('anon','private','usage') u")).rows[0].u).toBe(false);
+  });
+
+  it("keeps helper and trigger functions in the private schema, usable by policies but not by anon", async () => {
+    const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='private' and p.prokind='f' order by 1`);
+    expect(r.rows.map((x) => x.proname)).toEqual(expect.arrayContaining(["has_role", "has_staff_role", "is_aal2", "can_read_topic", "can_edit_topic", "write_audit", "audit_row", "_evaluate_version", "_topic_snapshot"]));
+    expect((await owner.query("select has_schema_privilege('authenticated','private','usage') u")).rows[0].u).toBe(true);
+    expect((await owner.query(`select count(*)::int n from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='private' and p.proname in ('write_audit','audit_row','_evaluate_version','_topic_snapshot','_require_role','handle_new_user') and has_function_privilege('authenticated', p.oid, 'execute')`)).rows[0].n).toBe(0);
+  });
+
+  it("never lets a function fall back to PUBLIC execute", async () => {
+    const r = await owner.query(`select n.nspname, p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname in ('public','private') and p.prokind='f' and p.proacl is null`);
+    expect(r.rows).toEqual([]);
   });
 
   it("grants anonymous users read access to nothing but public views and domains", async () => {
@@ -51,9 +64,9 @@ describe("API exposure allowlist", () => {
     expect(cols).toEqual(expect.arrayContaining(["title", "summary", "required_review_roles", "origin"]));
   });
 
-  it("keeps SECURITY DEFINER functions on a fixed search_path", async () => {
+  it("pins search_path on every function in the public and private schemas", async () => {
     const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
-      where n.nspname='public' and p.prosecdef and not exists (select 1 from unnest(coalesce(p.proconfig, '{}')) c where c like 'search_path=%')`);
+      where n.nspname in ('public','private') and not exists (select 1 from unnest(coalesce(p.proconfig, '{}')) c where c like 'search_path=%')`);
     expect(r.rows).toEqual([]);
   });
 });

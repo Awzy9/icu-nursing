@@ -13,7 +13,7 @@ export default async function AdminHome({ params }: { params: Promise<{ locale: 
   const db = (await createClient())!;
   const [{ data: topics }, { data: assigned }] = await Promise.all([
     db.from("topics").select("id, slug, title, status").order("updated_at", { ascending: false }).limit(200),
-    db.from("review_assignments").select("id, specialty, version_id, content_versions(id, version_no, status, topic_id, topics(id, slug, title))").eq("reviewer_id", user.id),
+    db.from("review_assignments").select("id, specialty, version_id, content_versions(id, version_no, status, topic_id, topics!content_versions_topic_id_fkey(id, slug, title))").eq("reviewer_id", user.id),
   ]);
   const list = (topics ?? []) as unknown as Row[];
   const counts = list.reduce<Record<string, number>>((a, t) => ({ ...a, [t.status]: (a[t.status] ?? 0) + 1 }), {});

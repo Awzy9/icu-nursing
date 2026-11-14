@@ -81,22 +81,22 @@ Eight roles defined (`CLINICAL_REVIEWER_MATRIX.md`); 26 of 40 P1 topics need mul
 
 ---
 
-# Phase 1 summary (details in `docs/IMPLEMENTATION.md`)
+# Phase 1 summary (updated after live Supabase integration; details in `docs/LIVE_INTEGRATION_REPORT.md`)
 
 | Exit requirement | Status | Evidence |
 |---|---|---|
-| Homepage and navigation work | ✅ | Playwright (desktop/tablet/mobile), keyboard, axe |
-| Registration and authentication work | ⚠️ **Implemented, not verified against live Supabase** | Server actions, callback, MFA UI, validation/rate-limit/redirect unit tests; DB-level auth behaviour tested. Needs a real Supabase project to run end-to-end |
-| Schema reproducible through migrations | ✅ | `tests/db` rebuilds from scratch every run (3 migrations) |
-| RLS prevents unauthorised access | ✅ (database level) | 81 DB tests incl. cross-user isolation, role escalation, API-surface allowlist |
-| Educational domains and topic pages function | ✅ (demo content) | e2e; Supabase repository covered by mapper tests only |
-| Bookmarks and progress persist correctly | ✅ (database level) | DB tests; UI not run against live backend |
-| Admin CMS works | ⚠️ **Implemented; DB rules tested; UI not exercised with a live backend** | admin action unit tests + workflow DB tests |
-| Clinical publication workflow enforced | ✅ | `0003_workflow.sql` + 25 workflow tests |
+| Homepage and navigation work | ✅ | Playwright (desktop/tablet/mobile), keyboard, axe, live UI tests |
+| Registration and authentication work | ⚠️ **Verified live except real email delivery** | Sign-up validation, verification-link flow, sign-in/out, session persistence/refresh/global sign-out, password reset, MFA (TOTP) all pass against the live dev project (43 API + 10 UI tests). **Email delivery** needs custom SMTP (built-in sender: 2/hour, team members only) |
+| Schema reproducible through migrations | ✅ | Applied 0001–0004 to the live project; local tests rebuild from scratch every run (93 tests) |
+| RLS prevents unauthorized access | ✅ | 93 DB tests + live abuse/isolation tests + catalog verification (15 RPCs for `authenticated`, none for `anon`) |
+| Educational domains and topic pages function | ✅ | Demo content (e2e) and live published content created through the real workflow |
+| Bookmarks and progress persist correctly | ✅ | Live API and UI tests (persist across reloads and sign-ins) |
+| Admin CMS works | ✅ | Live UI test: author drafts + uploads image + submits; publisher assigns; reviewer approves; publisher publishes |
+| Clinical publication workflow enforced | ✅ | `0003_workflow.sql`, 25 local + live workflow tests; unauthorised/escalation attempts refused |
 | Internationalization works | ✅ | en/ar, RTL, parity tests, e2e |
 | Mobile and desktop responsive | ✅ | 3 viewports, overflow tests |
-| Automated checks pass | ✅ locally | lint, typecheck, 47 unit, 81 DB, 118 e2e |
-| No known critical vulnerabilities | ✅ none known; **not independently pen-tested** | `docs/SECURITY.md` lists limitations |
-| Documentation updated | ✅ | `docs/*`, governance, this file |
+| Automated checks pass | ✅ locally | lint, typecheck, 58 unit, 93 DB, 124 e2e + 43 live API + 10 live UI (see PR for GitHub CI) |
+| No known critical vulnerabilities | ✅ none known; **not independently pen-tested** | prod `npm audit`: 0; advisors reviewed (2 intentional definer views, 15 role-checked RPCs); bundle has no secret keys; nonce-based CSP |
+| Documentation updated | ✅ | `docs/*`, this file |
 
-**Phase 1 is therefore "implemented and locally verified", not "complete" under your definition**: three exit items depend on a live Supabase stack that does not exist yet.
+**Phase 1 readiness:** technically ready for supervisory review and for a staging deployment. **Not** ready for public launch or clinical publication: that still requires custom SMTP + real-email verification, CAPTCHA, appointed credentialed reviewers, licence/permission decisions, an erasure policy, and a separate production project.

@@ -199,62 +199,62 @@ alter table public.learning_progress enable row level security;
 -- ---------------------------------------------------------------------------------------------
 -- Triggers
 -- ---------------------------------------------------------------------------------------------
-create trigger topics_updated before update on public.topics for each row execute function public.set_updated_at();
-create trigger topic_sections_updated before update on public.topic_sections for each row execute function public.set_updated_at();
-create trigger sources_updated before update on public.sources for each row execute function public.set_updated_at();
-create trigger domains_updated before update on public.nursing_domains for each row execute function public.set_updated_at();
+create trigger topics_updated before update on public.topics for each row execute function private.set_updated_at();
+create trigger topic_sections_updated before update on public.topic_sections for each row execute function private.set_updated_at();
+create trigger sources_updated before update on public.sources for each row execute function private.set_updated_at();
+create trigger domains_updated before update on public.nursing_domains for each row execute function private.set_updated_at();
 
-create trigger topics_audit after insert or update or delete on public.topics for each row execute function public.audit_row();
-create trigger topic_sections_audit after insert or update or delete on public.topic_sections for each row execute function public.audit_row();
-create trigger topic_actions_audit after insert or update or delete on public.topic_actions for each row execute function public.audit_row();
-create trigger topic_references_audit after insert or update or delete on public.topic_references for each row execute function public.audit_row();
-create trigger topic_images_audit after insert or update or delete on public.topic_images for each row execute function public.audit_row();
-create trigger sources_audit after insert or update or delete on public.sources for each row execute function public.audit_row();
-create trigger content_versions_audit after insert or update or delete on public.content_versions for each row execute function public.audit_row();
-create trigger review_assignments_audit after insert or update or delete on public.review_assignments for each row execute function public.audit_row();
-create trigger content_reviews_audit after insert or update or delete on public.content_reviews for each row execute function public.audit_row();
-create trigger domains_audit after insert or update or delete on public.nursing_domains for each row execute function public.audit_row();
+create trigger topics_audit after insert or update or delete on public.topics for each row execute function private.audit_row();
+create trigger topic_sections_audit after insert or update or delete on public.topic_sections for each row execute function private.audit_row();
+create trigger topic_actions_audit after insert or update or delete on public.topic_actions for each row execute function private.audit_row();
+create trigger topic_references_audit after insert or update or delete on public.topic_references for each row execute function private.audit_row();
+create trigger topic_images_audit after insert or update or delete on public.topic_images for each row execute function private.audit_row();
+create trigger sources_audit after insert or update or delete on public.sources for each row execute function private.audit_row();
+create trigger content_versions_audit after insert or update or delete on public.content_versions for each row execute function private.audit_row();
+create trigger review_assignments_audit after insert or update or delete on public.review_assignments for each row execute function private.audit_row();
+create trigger content_reviews_audit after insert or update or delete on public.content_reviews for each row execute function private.audit_row();
+create trigger domains_audit after insert or update or delete on public.nursing_domains for each row execute function private.audit_row();
 
 -- Reviews are immutable once recorded.
-create or replace function public.reviews_immutable() returns trigger language plpgsql as $$
+create or replace function private.reviews_immutable() returns trigger language plpgsql set search_path = '' as $$
 begin
   raise exception 'content_reviews are immutable' using errcode = '42501';
 end $$;
-create trigger content_reviews_no_change before update or delete on public.content_reviews for each row execute function public.reviews_immutable();
+create trigger content_reviews_no_change before update or delete on public.content_reviews for each row execute function private.reviews_immutable();
 
 -- ---------------------------------------------------------------------------------------------
 -- Visibility helpers (SECURITY DEFINER so policies do not recurse)
 -- ---------------------------------------------------------------------------------------------
-create or replace function public.is_published_topic(p_topic uuid) returns boolean
+create or replace function private.is_published_topic(p_topic uuid) returns boolean
 language sql stable security definer set search_path = public, pg_temp as $$
   select exists (select 1 from public.topics where id = p_topic and published_version_id is not null and archived_at is null)
 $$;
 
 -- Staff who may read the working copy of a topic.
-create or replace function public.can_read_topic(p_topic uuid) returns boolean
+create or replace function private.can_read_topic(p_topic uuid) returns boolean
 language sql stable security definer set search_path = public, pg_temp as $$
   select auth.uid() is not null and (
-    public.has_staff_role('admin') or public.has_staff_role('publisher')
-    or exists (select 1 from public.topics t where t.id = p_topic and t.author_id = auth.uid() and public.has_staff_role('author'))
-    or (public.has_staff_role('clinical_reviewer') and exists (
+    private.has_staff_role('admin') or private.has_staff_role('publisher')
+    or exists (select 1 from public.topics t where t.id = p_topic and t.author_id = auth.uid() and private.has_staff_role('author'))
+    or (private.has_staff_role('clinical_reviewer') and exists (
           select 1 from public.review_assignments a join public.content_versions v on v.id = a.version_id
           where v.topic_id = p_topic and a.reviewer_id = auth.uid()))
   )
 $$;
 
 -- Working copy may be edited by its author (or an admin) only while in draft / changes requested.
-create or replace function public.can_edit_topic(p_topic uuid) returns boolean
+create or replace function private.can_edit_topic(p_topic uuid) returns boolean
 language sql stable security definer set search_path = public, pg_temp as $$
   select auth.uid() is not null and exists (
     select 1 from public.topics t
     where t.id = p_topic and t.status in ('draft', 'changes_requested') and t.kind = 'clinical'
-      and ((t.author_id = auth.uid() and public.has_staff_role('author')) or public.has_staff_role('admin'))
+      and ((t.author_id = auth.uid() and private.has_staff_role('author')) or private.has_staff_role('admin'))
   )
 $$;
 
-create or replace function public.can_read_version(p_version uuid) returns boolean
+create or replace function private.can_read_version(p_version uuid) returns boolean
 language sql stable security definer set search_path = public, pg_temp as $$
-  select exists (select 1 from public.content_versions v where v.id = p_version and public.can_read_topic(v.topic_id))
+  select exists (select 1 from public.content_versions v where v.id = p_version and private.can_read_topic(v.topic_id))
 $$;
 
 -- ---------------------------------------------------------------------------------------------
@@ -275,80 +275,27 @@ create view public.public_domains as
   from public.nursing_domains d;
 
 -- ---------------------------------------------------------------------------------------------
--- Grants and policies
+-- Indexes on foreign keys (join/cascade performance)
 -- ---------------------------------------------------------------------------------------------
-grant select on public.public_topics, public.public_domains to anon, authenticated;
+create index bookmarks_topic_idx on public.bookmarks (topic_id);
+create index content_reviews_reviewer_idx on public.content_reviews (reviewer_id);
+create index content_versions_submitted_by_idx on public.content_versions (submitted_by);
+create index learning_progress_topic_idx on public.learning_progress (topic_id);
+create index learning_progress_completed_version_idx on public.learning_progress (completed_version_id);
+create index review_assignments_reviewer_idx on public.review_assignments (reviewer_id);
+create index review_assignments_assigned_by_idx on public.review_assignments (assigned_by);
+create index topic_images_topic_idx on public.topic_images (topic_id);
+create index topic_references_source_idx on public.topic_references (source_id);
+create index topics_author_idx on public.topics (author_id);
 
--- Domains: world-readable; only administrators change them.
-create policy domains_select_all on public.nursing_domains for select to anon, authenticated using (true);
-grant select on public.nursing_domains to anon, authenticated;
-grant insert, update, delete on public.nursing_domains to authenticated;
-create policy domains_admin_write on public.nursing_domains for all to authenticated
-  using (public.has_staff_role('admin')) with check (public.has_staff_role('admin'));
-
--- Topics (working copy). Workflow columns (status, published_version_id, kind, ...) are NOT writable via the API.
-grant select on public.topics to authenticated;
-grant insert (domain_id, slug, title, summary, level, est_minutes, curriculum_id, required_review_roles, jurisdiction_scope, guideline_note, origin)
-  on public.topics to authenticated;
-grant update (domain_id, slug, title, summary, level, est_minutes, curriculum_id, required_review_roles, jurisdiction_scope, guideline_note, origin)
-  on public.topics to authenticated;
-grant delete on public.topics to authenticated;
--- The author clause is evaluated on the row itself so INSERT ... RETURNING works (a function that re-queries
--- the table cannot see a row inserted by the same statement).
-create policy topics_select on public.topics for select to authenticated
-  using ((author_id = auth.uid() and public.has_staff_role('author')) or public.can_read_topic(id));
-create policy topics_insert on public.topics for insert to authenticated
-  with check (author_id = auth.uid() and (public.has_staff_role('author') or public.has_staff_role('admin')));
-create policy topics_update on public.topics for update to authenticated
-  using (public.can_edit_topic(id)) with check (public.can_edit_topic(id));
-create policy topics_delete on public.topics for delete to authenticated
-  using (public.can_edit_topic(id) and published_version_id is null and not exists (select 1 from public.content_versions v where v.topic_id = topics.id));
-
--- Child tables follow the parent topic's visibility / editability.
-grant select, insert, update, delete on public.topic_sections, public.topic_actions, public.topic_references, public.topic_images to authenticated;
-create policy sections_select on public.topic_sections for select to authenticated using (public.can_read_topic(topic_id));
-create policy sections_write on public.topic_sections for all to authenticated using (public.can_edit_topic(topic_id)) with check (public.can_edit_topic(topic_id));
-create policy actions_select on public.topic_actions for select to authenticated using (public.can_read_topic(topic_id));
-create policy actions_write on public.topic_actions for all to authenticated using (public.can_edit_topic(topic_id)) with check (public.can_edit_topic(topic_id));
-create policy refs_select on public.topic_references for select to authenticated using (public.can_read_topic(topic_id));
-create policy refs_write on public.topic_references for all to authenticated using (public.can_edit_topic(topic_id)) with check (public.can_edit_topic(topic_id));
-create policy images_select on public.topic_images for select to authenticated using (public.can_read_topic(topic_id));
-create policy images_write on public.topic_images for all to authenticated using (public.can_edit_topic(topic_id)) with check (public.can_edit_topic(topic_id));
-
--- Sources: staff read; authors/publishers/admins manage.
-grant select, insert, update on public.sources to authenticated;
-create policy sources_select on public.sources for select to authenticated using (public.is_staff());
-create policy sources_insert on public.sources for insert to authenticated
-  with check (public.has_staff_role('author') or public.has_staff_role('publisher') or public.has_staff_role('admin'));
-create policy sources_update on public.sources for update to authenticated
-  using (public.has_staff_role('publisher') or public.has_staff_role('admin'))
-  with check (public.has_staff_role('publisher') or public.has_staff_role('admin'));
-
--- Versions / assignments / reviews: read-only via API (written only by workflow functions).
-grant select on public.content_versions, public.review_assignments, public.content_reviews to authenticated;
-create policy versions_select on public.content_versions for select to authenticated using (public.can_read_topic(topic_id));
-create policy assignments_select on public.review_assignments for select to authenticated
-  using (reviewer_id = auth.uid() or public.can_read_version(version_id));
-create policy reviews_select on public.content_reviews for select to authenticated using (public.can_read_version(version_id));
-
-grant execute on function public.is_published_topic(uuid), public.can_read_topic(uuid), public.can_edit_topic(uuid), public.can_read_version(uuid) to authenticated, anon;
-
--- Learner state: strictly own rows.
-grant select, insert, delete on public.bookmarks to authenticated;
-create policy bookmarks_select on public.bookmarks for select to authenticated using (user_id = auth.uid());
-create policy bookmarks_insert on public.bookmarks for insert to authenticated
-  with check (user_id = auth.uid() and public.is_published_topic(topic_id));
-create policy bookmarks_delete on public.bookmarks for delete to authenticated using (user_id = auth.uid());
-
-grant select on public.learning_progress to authenticated;
-create policy progress_select on public.learning_progress for select to authenticated using (user_id = auth.uid());
-
--- Progress is written only through these functions (server-set timestamps, published topics only).
+-- ---------------------------------------------------------------------------------------------
+-- Learner progress is written only through these functions (server-set timestamps, published topics only).
+-- ---------------------------------------------------------------------------------------------
 create or replace function public.record_topic_view(p_topic uuid) returns void
 language plpgsql security definer set search_path = public, pg_temp as $$
 begin
   if auth.uid() is null then raise exception 'sign in required' using errcode = '42501'; end if;
-  if not public.is_published_topic(p_topic) then raise exception 'topic is not published' using errcode = 'P0002'; end if;
+  if not private.is_published_topic(p_topic) then raise exception 'topic is not published' using errcode = 'P0002'; end if;
   insert into public.learning_progress (user_id, topic_id) values (auth.uid(), p_topic)
   on conflict (user_id, topic_id) do update
     set last_viewed_at = now(), view_count = public.learning_progress.view_count + 1;
@@ -369,7 +316,87 @@ begin
     set status = excluded.status, completed_at = excluded.completed_at, completed_version_id = excluded.completed_version_id,
         last_viewed_at = now();
 end $$;
+
+-- ---------------------------------------------------------------------------------------------
+-- Grants and policies (one policy per role+action, to avoid duplicate permissive evaluation)
+-- ---------------------------------------------------------------------------------------------
+revoke execute on all functions in schema public from public;
+revoke execute on all functions in schema private from public;
+grant execute on function private.is_published_topic(uuid), private.can_read_topic(uuid), private.can_edit_topic(uuid), private.can_read_version(uuid) to authenticated;
 grant execute on function public.record_topic_view(uuid), public.set_topic_completion(uuid, boolean) to authenticated;
+
+grant select on public.public_topics, public.public_domains to anon, authenticated;
+
+-- Domains: world-readable; only administrators change them.
+grant select on public.nursing_domains to anon, authenticated;
+grant insert, update, delete on public.nursing_domains to authenticated;
+create policy domains_select_all on public.nursing_domains for select to anon, authenticated using (true);
+create policy domains_admin_insert on public.nursing_domains for insert to authenticated with check (private.has_staff_role('admin'));
+create policy domains_admin_update on public.nursing_domains for update to authenticated using (private.has_staff_role('admin')) with check (private.has_staff_role('admin'));
+create policy domains_admin_delete on public.nursing_domains for delete to authenticated using (private.has_staff_role('admin'));
+
+-- Topics (working copy). Workflow columns (status, published_version_id, kind, ...) are NOT writable via the API.
+grant select on public.topics to authenticated;
+grant insert (domain_id, slug, title, summary, level, est_minutes, curriculum_id, required_review_roles, jurisdiction_scope, guideline_note, origin)
+  on public.topics to authenticated;
+grant update (domain_id, slug, title, summary, level, est_minutes, curriculum_id, required_review_roles, jurisdiction_scope, guideline_note, origin)
+  on public.topics to authenticated;
+grant delete on public.topics to authenticated;
+-- The author clause is evaluated on the row itself so INSERT ... RETURNING works (a function that re-queries
+-- the table cannot see a row inserted by the same statement).
+create policy topics_select on public.topics for select to authenticated
+  using ((author_id = (select auth.uid()) and private.has_staff_role('author')) or private.can_read_topic(id));
+create policy topics_insert on public.topics for insert to authenticated
+  with check (author_id = (select auth.uid()) and (private.has_staff_role('author') or private.has_staff_role('admin')));
+create policy topics_update on public.topics for update to authenticated
+  using (private.can_edit_topic(id)) with check (private.can_edit_topic(id));
+create policy topics_delete on public.topics for delete to authenticated
+  using (private.can_edit_topic(id) and published_version_id is null and not exists (select 1 from public.content_versions v where v.topic_id = topics.id));
+
+-- Child tables follow the parent topic's visibility / editability.
+grant select, insert, update, delete on public.topic_sections, public.topic_actions, public.topic_references, public.topic_images to authenticated;
+create policy sections_select on public.topic_sections for select to authenticated using (private.can_read_topic(topic_id));
+create policy sections_insert on public.topic_sections for insert to authenticated with check (private.can_edit_topic(topic_id));
+create policy sections_update on public.topic_sections for update to authenticated using (private.can_edit_topic(topic_id)) with check (private.can_edit_topic(topic_id));
+create policy sections_delete on public.topic_sections for delete to authenticated using (private.can_edit_topic(topic_id));
+create policy actions_select on public.topic_actions for select to authenticated using (private.can_read_topic(topic_id));
+create policy actions_insert on public.topic_actions for insert to authenticated with check (private.can_edit_topic(topic_id));
+create policy actions_update on public.topic_actions for update to authenticated using (private.can_edit_topic(topic_id)) with check (private.can_edit_topic(topic_id));
+create policy actions_delete on public.topic_actions for delete to authenticated using (private.can_edit_topic(topic_id));
+create policy refs_select on public.topic_references for select to authenticated using (private.can_read_topic(topic_id));
+create policy refs_insert on public.topic_references for insert to authenticated with check (private.can_edit_topic(topic_id));
+create policy refs_update on public.topic_references for update to authenticated using (private.can_edit_topic(topic_id)) with check (private.can_edit_topic(topic_id));
+create policy refs_delete on public.topic_references for delete to authenticated using (private.can_edit_topic(topic_id));
+create policy images_select on public.topic_images for select to authenticated using (private.can_read_topic(topic_id));
+create policy images_insert on public.topic_images for insert to authenticated with check (private.can_edit_topic(topic_id));
+create policy images_update on public.topic_images for update to authenticated using (private.can_edit_topic(topic_id)) with check (private.can_edit_topic(topic_id));
+create policy images_delete on public.topic_images for delete to authenticated using (private.can_edit_topic(topic_id));
+
+-- Sources: staff read; authors/publishers/admins manage.
+grant select, insert, update on public.sources to authenticated;
+create policy sources_select on public.sources for select to authenticated using (private.is_staff());
+create policy sources_insert on public.sources for insert to authenticated
+  with check (private.has_staff_role('author') or private.has_staff_role('publisher') or private.has_staff_role('admin'));
+create policy sources_update on public.sources for update to authenticated
+  using (private.has_staff_role('publisher') or private.has_staff_role('admin'))
+  with check (private.has_staff_role('publisher') or private.has_staff_role('admin'));
+
+-- Versions / assignments / reviews: read-only via API (written only by workflow functions).
+grant select on public.content_versions, public.review_assignments, public.content_reviews to authenticated;
+create policy versions_select on public.content_versions for select to authenticated using (private.can_read_topic(topic_id));
+create policy assignments_select on public.review_assignments for select to authenticated
+  using (reviewer_id = (select auth.uid()) or private.can_read_version(version_id));
+create policy reviews_select on public.content_reviews for select to authenticated using (private.can_read_version(version_id));
+
+-- Learner state: strictly own rows.
+grant select, insert, delete on public.bookmarks to authenticated;
+create policy bookmarks_select on public.bookmarks for select to authenticated using (user_id = (select auth.uid()));
+create policy bookmarks_insert on public.bookmarks for insert to authenticated
+  with check (user_id = (select auth.uid()) and private.is_published_topic(topic_id));
+create policy bookmarks_delete on public.bookmarks for delete to authenticated using (user_id = (select auth.uid()));
+
+grant select on public.learning_progress to authenticated;
+create policy progress_select on public.learning_progress for select to authenticated using (user_id = (select auth.uid()));
 
 -- ---------------------------------------------------------------------------------------------
 -- Reference data: the ten curriculum domains. Arabic titles are DRAFTS pending terminology review.

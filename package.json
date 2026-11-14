@@ -14,8 +14,17 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:db": "vitest run --config vitest.db.config.ts",
+    "test:live": "vitest run --config vitest.live.config.ts",
     "test:e2e": "playwright test",
-    "check": "npm run lint && npm run typecheck && npm run test"
+    "build:live": "NEXT_DIST_DIR=.next-live next build",
+    "test:e2e:live": "playwright test --config playwright.live.config.ts",
+    "check": "npm run lint && npm run typecheck && npm run test",
+    "live:env": "tsx scripts/live/write-env.ts",
+    "live:migrate": "tsx scripts/live/apply-migrations.ts",
+    "live:verify": "tsx scripts/live/verify-schema.ts",
+    "live:advisors": "tsx scripts/live/advisors.ts",
+    "live:auth": "tsx scripts/live/configure-auth.ts",
+    "live:cleanup": "tsx scripts/live/cleanup-test-users.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",

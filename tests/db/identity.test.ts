@@ -90,11 +90,11 @@ describe("roles", () => {
 
 describe("staff MFA enforcement", () => {
   it("treats staff roles as inactive without aal2", async () => {
-    expect((await asUser({ id: author, aal: "aal1" }, "select public.has_staff_role('author') as ok")).rows[0].ok).toBe(false);
-    expect((await asUser({ id: author, aal: "aal2" }, "select public.has_staff_role('author') as ok")).rows[0].ok).toBe(true);
+    expect((await asUser({ id: author, aal: "aal1" }, "select private.has_staff_role('author') as ok")).rows[0].ok).toBe(false);
+    expect((await asUser({ id: author, aal: "aal2" }, "select private.has_staff_role('author') as ok")).rows[0].ok).toBe(true);
   });
   it("never requires MFA for plain learners", async () => {
-    expect((await asUser({ id: alice, aal: "aal1" }, "select public.has_staff_role('learner') as ok")).rows[0].ok).toBe(true);
+    expect((await asUser({ id: alice, aal: "aal1" }, "select private.has_staff_role('learner') as ok")).rows[0].ok).toBe(true);
   });
 });
 
@@ -140,11 +140,25 @@ describe("sign-up metadata hardening", () => {
 
 describe("function privileges", () => {
   it("does not expose internal helpers or audit writing to API roles", async () => {
-    await expectDenied(asUser({ id: alice }, "select public.write_audit('forged','x','1')"));
-    await expectDenied(asUser(null, "select public.write_audit('forged','x','1')"));
-    await expectDenied(asUser({ id: admin, aal: "aal2" }, "select public.audit_row()"));
-    const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
-      where n.nspname='public' and p.prokind='f' and has_function_privilege('anon', p.oid, 'execute')`);
-    expect(r.rows.map((x) => x.proname).sort()).toEqual(["can_edit_topic", "can_read_topic", "can_read_version", "is_published_topic", "try_uuid"]);
+    await expectDenied(asUser({ id: alice }, "select private.write_audit('forged','x','1')"));
+    await expectDenied(asUser(null, "select private.write_audit('forged','x','1')"));
+    await expectDenied(asUser({ id: admin, aal: "aal2" }, "select private.audit_row()"));
+    await expect(asUser({ id: alice }, "select public.write_audit('forged','x','1')")).rejects.toThrow(/does not exist/); // not present in the exposed schema at all
+  });
+});
+
+describe("reviewer visibility for publishers", () => {
+  it("lets an MFA-verified publisher see reviewer profiles (to assign them) but not learners' or authors' profiles", async () => {
+    const pub = await createUser(uniqueEmail("pub"), { display_name: "Pub" });
+    const rv = await createUser(uniqueEmail("rv"), { display_name: "Reviewer" });
+    await grantRole(pub, "publisher");
+    await grantRole(rv, "clinical_reviewer");
+    const seen = (await asUser({ id: pub, aal: "aal2" }, "select id from public.profiles")).rows.map((r) => r.id);
+    expect(seen).toContain(rv);
+    expect(seen).toContain(pub);
+    expect(seen).not.toContain(alice);
+    expect(seen).not.toContain(author);
+    expect((await asUser({ id: pub, aal: "aal1" }, "select id from public.profiles")).rows.map((r) => r.id)).toEqual([pub]);
+    expect((await asUser({ id: alice }, "select id from public.profiles where id = $1", [rv])).rowCount).toBe(0);
   });
 });

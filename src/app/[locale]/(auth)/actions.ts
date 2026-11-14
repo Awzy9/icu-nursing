@@ -51,8 +51,13 @@ export async function signUpAction(_prev: FormState, form: FormData): Promise<Fo
       data: { display_name: v.displayName, experience_level: v.experience, country: v.country, preferred_locale: locale },
     },
   });
-  if (error && error.status === 429) return { error: "rateLimited" };
-  // Same outcome whether or not the address already exists (no account enumeration).
+  if (error) {
+    if (error.status === 429 || error.code === "over_email_send_rate_limit" || error.code === "over_request_rate_limit") return { error: "rateLimited" };
+    // These reveal nothing about other accounts and let the person fix their input.
+    if (error.code === "email_address_invalid") return { error: "invalidEmail" };
+    if (error.code === "weak_password") return { error: "passwordTooShort" };
+  }
+  // Any other outcome (including "already registered") looks identical: no account enumeration.
   redirect({ href: `/check-email?email=${encodeURIComponent(v.email)}`, locale });
   return {};
 }

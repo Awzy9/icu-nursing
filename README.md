@@ -9,6 +9,7 @@ An independent, evidence-based educational platform for adult ICU nurses. Englis
 ```bash
 npm install && cp .env.example .env.local && npm run dev   # demo mode, no backend needed
 ```
+Live development backend: `docs/LIVE_INTEGRATION_REPORT.md` and `docs/SUPABASE_SETUP.md`.
 
 This is **educational software, not a clinical decision-support system.** It does not replace institutional protocols or professional judgment. It contains no real patient data.
 

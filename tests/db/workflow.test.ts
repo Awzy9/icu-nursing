@@ -256,8 +256,8 @@ describe("publication", () => {
     await expectDenied(asUser(MFA(admin), "insert into public.content_reviews (version_id, reviewer_id, specialty, decision) values ($1,$2,'NE','approve')", [v, admin]));
     await expectDenied(asUser(MFA(admin), "update public.topics set status='published' where id=$1", [t]));
     await expectDenied(asUser(MFA(admin), "update public.topics set published_version_id=$2 where id=$1", [t, v]));
-    await expectDenied(asUser(MFA(admin), "select public._evaluate_version($1)", [v]));
-    await expectDenied(asUser(MFA(admin), "select public._topic_snapshot($1)", [t]));
+    await expectDenied(asUser(MFA(admin), "select private._evaluate_version($1)", [v]));
+    await expectDenied(asUser(MFA(admin), "select private._topic_snapshot($1)", [t]));
     await expectDenied(asUser(MFA(admin), "insert into public.content_versions (topic_id, version_no, status, snapshot, required_review_roles, origin) values ($1,99,'approved','{}','{NE}','human')", [t]));
     expect(await vstatus(v)).toBe("in_review");
   });

@@ -6,14 +6,16 @@
 --  * Image metadata rows must point at a path inside their own topic's folder.
 -- The storage schema exists on Supabase but not on plain PostgreSQL; storage objects are skipped when it is absent.
 
-create or replace function public.try_uuid(p text) returns uuid
+create or replace function private.try_uuid(p text) returns uuid
 language plpgsql immutable set search_path = pg_temp as $$
 begin
   return p::uuid;
 exception when others then
   return null;
 end $$;
-grant execute on function public.try_uuid(text) to authenticated, anon;
+revoke execute on all functions in schema public from public;
+revoke execute on all functions in schema private from public;
+grant execute on function private.try_uuid(text) to authenticated;
 
 alter table public.topic_images
   add constraint topic_images_path_in_topic_folder
@@ -33,15 +35,15 @@ begin
 
   execute $p$ drop policy if exists topic_images_select on storage.objects $p$;
   execute $p$ create policy topic_images_select on storage.objects for select to authenticated
-    using (bucket_id = 'topic-images' and public.can_read_topic(public.try_uuid((storage.foldername(name))[1]))) $p$;
+    using (bucket_id = 'topic-images' and private.can_read_topic(private.try_uuid((storage.foldername(name))[1]))) $p$;
   execute $p$ drop policy if exists topic_images_insert on storage.objects $p$;
   execute $p$ create policy topic_images_insert on storage.objects for insert to authenticated
-    with check (bucket_id = 'topic-images' and public.can_edit_topic(public.try_uuid((storage.foldername(name))[1]))) $p$;
+    with check (bucket_id = 'topic-images' and private.can_edit_topic(private.try_uuid((storage.foldername(name))[1]))) $p$;
   execute $p$ drop policy if exists topic_images_update on storage.objects $p$;
   execute $p$ create policy topic_images_update on storage.objects for update to authenticated
-    using (bucket_id = 'topic-images' and public.can_edit_topic(public.try_uuid((storage.foldername(name))[1])))
-    with check (bucket_id = 'topic-images' and public.can_edit_topic(public.try_uuid((storage.foldername(name))[1]))) $p$;
+    using (bucket_id = 'topic-images' and private.can_edit_topic(private.try_uuid((storage.foldername(name))[1])))
+    with check (bucket_id = 'topic-images' and private.can_edit_topic(private.try_uuid((storage.foldername(name))[1]))) $p$;
   execute $p$ drop policy if exists topic_images_delete on storage.objects $p$;
   execute $p$ create policy topic_images_delete on storage.objects for delete to authenticated
-    using (bucket_id = 'topic-images' and public.can_edit_topic(public.try_uuid((storage.foldername(name))[1]))) $p$;
+    using (bucket_id = 'topic-images' and private.can_edit_topic(private.try_uuid((storage.foldername(name))[1]))) $p$;
 end $$;

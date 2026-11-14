@@ -1,4 +1,6 @@
-# Supabase setup (needs the product owner's approval before any cloud project is created)
+# Supabase setup
+
+**Status:** the independent development project `icu-nursing-dev` (`dvmevjomyaqrojsiffnf`) is set up and verified: migrations 0001–0004 applied, auth hardened, advisors reviewed (`docs/LIVE_INTEGRATION_REPORT.md`). Use the `live:*` npm scripts to repeat or audit any step. A **separate production project** has not been created and needs your approval.
 
 No Supabase, Vercel or payment resources exist yet. This is the checklist for when you approve them.
 

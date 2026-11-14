@@ -1,5 +1,5 @@
 "use client";
-import { useActionState } from "react";
+import { startTransition, useActionState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Callout } from "@/components/ui/feedback";
@@ -7,11 +7,26 @@ import type { FormState } from "@/app/[locale]/(auth)/actions";
 
 type Action = (prev: FormState, form: FormData) => Promise<FormState>;
 
+/** Keeps what the person typed when the server rejects the form, but always clears password fields after a failure. */
 export function AuthForm({ action, submitLabel, children, successMessage, hidden }: { action: Action; submitLabel: string; children: React.ReactNode; successMessage?: string; hidden?: Record<string, string> }) {
   const t = useTranslations("Auth.errors");
   const [state, formAction, pending] = useActionState(action, {});
+  const ref = useRef<HTMLFormElement>(null);
+  useEffect(() => {
+    if (state.error) ref.current?.querySelectorAll<HTMLInputElement>('input[type="password"]').forEach((i) => { i.value = ""; });
+    if (state.ok) ref.current?.reset();
+  }, [state]);
   return (
-    <form action={formAction} className="space-y-4" noValidate>
+    <form
+      ref={ref}
+      className="space-y-4"
+      noValidate
+      onSubmit={(e) => {
+        e.preventDefault();
+        const data = new FormData(e.currentTarget);
+        startTransition(() => formAction(data));
+      }}
+    >
       {Object.entries(hidden ?? {}).map(([k, v]) => <input key={k} type="hidden" name={k} value={v} />)}
       {state.error ? <Callout tone="danger" role="alert">{t(state.error)}</Callout> : null}
       {state.ok && successMessage ? <Callout tone="success" role="status">{successMessage}</Callout> : null}

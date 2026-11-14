@@ -41,7 +41,8 @@ export async function requireStaff(locale: string, allowed: readonly AppRole[] =
   const roles = await getRoles(user.id);
   if (!roles.some((r) => allowed.includes(r))) redirect({ href: "/dashboard", locale });
   const supabase = await createClient();
-  const { data } = await supabase!.auth.mfa.getAuthenticatorAssuranceLevel();
-  if (data?.currentLevel !== "aal2") redirect({ href: `/mfa?next=${encodeURIComponent(next ?? "/admin")}`, locale });
+  // getClaims() verifies the token (it does not just decode the cookie). The database enforces MFA independently.
+  const { data } = await supabase!.auth.getClaims();
+  if (data?.claims.aal !== "aal2") redirect({ href: `/mfa?next=${encodeURIComponent(next ?? "/admin")}`, locale });
   return { user: user!, roles };
 }
