@@ -1,6 +1,5 @@
 import { Field, Input, Select, Textarea } from "@/components/ui/form";
 import { LEVELS } from "@/lib/content/types";
-import { CODE_LABELS, REVIEW_CODES } from "./ui";
 
 export interface TopicDefaults {
   domainId?: string; slug?: string; titleEn?: string; titleAr?: string; summaryEn?: string; summaryAr?: string; level?: string; minutes?: number;
@@ -8,7 +7,6 @@ export interface TopicDefaults {
 }
 
 export function TopicFields({ domains, d = {}, disabled }: { domains: { id: string; title: string }[]; d?: TopicDefaults; disabled?: boolean }) {
-  const roles = d.roles ?? ["NE"];
   return (
     <fieldset disabled={disabled} className="grid gap-4 md:grid-cols-2">
       <Field label="Domain" htmlFor="domainId"><Select id="domainId" name="domainId" defaultValue={d.domainId} required>{domains.map((x) => <option key={x.id} value={x.id}>{x.title}</option>)}</Select></Field>
@@ -23,14 +21,6 @@ export function TopicFields({ domains, d = {}, disabled }: { domains: { id: stri
       <Field label="Jurisdiction scope" htmlFor="jurisdiction" hint="Use 'international' unless the topic is specific to a country."><Input id="jurisdiction" name="jurisdiction" defaultValue={d.jurisdiction ?? "international"} maxLength={80} aria-describedby="jurisdiction-hint" /></Field>
       <Field label="Guideline versions used" htmlFor="guidelineNote" hint="e.g. 'SSC 2026; NICE NG253 (2025)'. Never describe a draft as final."><Input id="guidelineNote" name="guidelineNote" defaultValue={d.guidelineNote} maxLength={500} aria-describedby="guidelineNote-hint" /></Field>
       <Field label="Content origin" htmlFor="origin" hint="Be honest: AI-assisted drafts need at least two distinct human reviewers and can never self-approve."><Select id="origin" name="origin" defaultValue={d.origin ?? "human"} aria-describedby="origin-hint"><option value="human">Written by a human</option><option value="ai_assisted">AI-assisted</option><option value="ai_generated">AI-generated</option></Select></Field>
-      <fieldset className="md:col-span-2">
-        <legend className="mb-1 text-sm font-medium">Required reviewer roles before publication</legend>
-        <div className="grid gap-1 sm:grid-cols-2">
-          {REVIEW_CODES.map((c) => (
-            <label key={c} className="flex min-h-11 items-center gap-2"><input type="checkbox" name="roles" value={c} defaultChecked={roles.includes(c)} className="size-5" /> <span>{c} — {CODE_LABELS[c]}</span></label>
-          ))}
-        </div>
-      </fieldset>
     </fieldset>
   );
 }

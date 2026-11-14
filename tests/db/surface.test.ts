@@ -14,7 +14,7 @@ describe("API exposure allowlist", () => {
       where n.nspname='public' and p.prokind='f' and has_function_privilege('authenticated', p.oid, 'execute') order by 1`);
     expect(r.rows.map((x) => x.proname)).toEqual([
       "admin_grant_role", "admin_revoke_role", "admin_set_specialty", "archive_topic", "assign_reviewer", "publish_topic", "record_review",
-      "record_topic_view", "restore_topic", "rollback_topic", "set_topic_completion", "start_revision", "submit_for_review",
+      "record_topic_view", "restore_topic", "rollback_topic", "set_required_roles", "set_topic_completion", "start_revision", "submit_for_review",
       "validate_topic_for_review", "withdraw_submission",
     ]);
   });
@@ -60,8 +60,8 @@ describe("API exposure allowlist", () => {
       where table_schema='public' and table_name='topics' and grantee='authenticated' and privilege_type='UPDATE' order by 1`);
     const cols = r.rows.map((x) => x.column_name);
     expect(cols).not.toEqual(expect.arrayContaining(["status"]));
-    for (const forbidden of ["status", "kind", "author_id", "published_version_id", "first_published_at", "last_reviewed_at", "next_review_at", "archived_at", "id"]) expect(cols).not.toContain(forbidden);
-    expect(cols).toEqual(expect.arrayContaining(["title", "summary", "required_review_roles", "origin"]));
+    for (const forbidden of ["status", "kind", "author_id", "published_version_id", "first_published_at", "last_reviewed_at", "next_review_at", "archived_at", "id", "required_review_roles"]) expect(cols).not.toContain(forbidden);
+    expect(cols).toEqual(expect.arrayContaining(["title", "summary", "origin"]));
   });
 
   it("pins search_path on every function in the public and private schemas", async () => {

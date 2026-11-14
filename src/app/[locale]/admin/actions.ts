@@ -51,11 +51,10 @@ const topicFields = z.object({
   level: z.enum(LEVELS as unknown as [string, ...string[]]), minutes: z.coerce.number().int().min(1).max(240),
   curriculumId: opt(40), guidelineNote: opt(500), jurisdiction: z.string().trim().min(1).max(80).default("international"),
   origin: z.enum(["human", "ai_assisted", "ai_generated"]),
-  roles: z.preprocess((v) => (Array.isArray(v) ? v : v ? [v] : []), z.array(z.enum(REVIEW_CODES)).min(1)),
 });
 const topicRow = (v: z.infer<typeof topicFields>) => ({
   domain_id: v.domainId, slug: v.slug, title: loc(v.titleEn, v.titleAr), summary: loc(v.summaryEn, v.summaryAr), level: v.level, est_minutes: v.minutes,
-  curriculum_id: v.curriculumId ?? null, guideline_note: v.guidelineNote ?? null, jurisdiction_scope: v.jurisdiction, origin: v.origin, required_review_roles: v.roles,
+  curriculum_id: v.curriculumId ?? null, guideline_note: v.guidelineNote ?? null, jurisdiction_scope: v.jurisdiction, origin: v.origin,
 });
 
 export async function createTopicAction(_p: AdminState, form: FormData): Promise<AdminState> {
@@ -79,6 +78,11 @@ export async function deleteTopicAction(_p: AdminState, form: FormData): Promise
   const r = await run(form, z.object({ id: uuid }), async (v, db) => db.from("topics").delete().eq("id", v.id));
   if (r.ok) redirect({ href: "/admin/topics", locale });
   return r;
+}
+
+export async function setRequiredRolesAction(_p: AdminState, form: FormData): Promise<AdminState> {
+  return run(form, z.object({ topicId: uuid, roles: z.preprocess((v) => (Array.isArray(v) ? v : v ? [v] : []), z.array(z.enum(REVIEW_CODES)).min(1)) }),
+    async (v, db) => db.rpc("set_required_roles", { p_topic: v.topicId, p_roles: v.roles }), "Reviewer roles saved.");
 }
 
 // ---- Sections / actions / references / images ----------------------------------------------

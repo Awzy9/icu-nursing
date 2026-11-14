@@ -21,10 +21,12 @@ const denied = async (p: PromiseLike<{ error: { message: string } | null; data?:
   const r = await p; expect(r.error, "expected an error").not.toBeNull(); expect(r.error!.message).toMatch(re);
 };
 
-async function addTopic(a: Actor, name: string, roles: string[] = ["NE"]) {
-  const { data, error } = await a.c.from("topics").insert({ domain_id: domainId, slug: slug(name), title: { en: `LIVE TEST ${name}` }, summary: { en: "Synthetic live-test topic (no clinical content)." }, required_review_roles: roles }).select("id").single();
+async function addTopic(a: Actor, name: string, roles?: string[]) {
+  const { data, error } = await a.c.from("topics").insert({ domain_id: domainId, slug: slug(name), title: { en: `LIVE TEST ${name}` }, summary: { en: "Synthetic live-test topic (no clinical content)." } }).select("id").single();
   expect(error?.message).toBeUndefined();
   const id = data!.id as string;
+  // Authors cannot choose their own reviewers: a publisher (with MFA) sets the required roles. Default is NE only.
+  if (roles) ok(await rpc(publisher, "set_required_roles", { p_topic: id, p_roles: roles }));
   ok(await a.c.from("topic_sections").insert([
     { topic_id: id, kind: "objectives", sort: 0, title: { en: "Objectives" }, body: { en: "- Placeholder objective for a synthetic live test." } },
     { topic_id: id, kind: "overview", sort: 1, title: { en: "Overview" }, body: { en: "Synthetic text. Not clinical guidance." } },
@@ -162,14 +164,22 @@ describe("3. TOTP multi-factor authentication and staff role permissions", () =>
 });
 
 describe("4-7. Author draft -> reviewer assignment -> independent approval -> publication", () => {
-  it("an author without MFA cannot create content; with MFA they can create a draft", async () => {
+  it("an author without MFA cannot create content; with MFA they can create a draft (source register is curated by the publisher)", async () => {
     author1 = await actor(author1.email, author1.id, false);
     await denied(author1.c.from("topics").insert({ domain_id: domainId, slug: slug("nomfa"), title: { en: "x" }, summary: { en: "x" } }));
     await withMfa(author1.c, author1.email);
-    ok(await author1.c.from("sources").insert({ source_code: `LIVE-${RUN}`, organization: "Live Test", title: `LIVE TEST ${RUN} synthetic source`, url: "https://example.org/live-test", licence_class: "GREEN" }));
-    sourceId = ok(await author1.c.from("sources").select("id").eq("source_code", `LIVE-${RUN}`).single()).id;
+    publisher = await actor(publisher.email, publisher.id, true);
+    await denied(author1.c.from("sources").insert({ source_code: `EVIL-${RUN}`, organization: "x", title: `LIVE TEST ${RUN} self-certified`, url: "https://example.org/x", licence_class: "GREEN", is_draft_guideline: false }));
+    ok(await publisher.c.from("sources").insert({ source_code: `LIVE-${RUN}`, organization: "Live Test", title: `LIVE TEST ${RUN} synthetic source`, url: "https://example.org/live-test", licence_class: "GREEN" }));
+    sourceId = ok(await author1.c.from("sources").select("id").eq("source_code", `LIVE-${RUN}`).single()).id; // authors can read the register to cite
     topic1 = await addTopic(author1, "workflow-1", ["NE", "PH"]);
     expect((await rpc(author1, "validate_topic_for_review", { p_topic: topic1 })).data).toEqual([]);
+  });
+  it("authors cannot choose their own reviewers or edit the source register", async () => {
+    await denied(author1.c.from("topics").update({ required_review_roles: ["OTHER"] }).eq("id", topic1));
+    await denied(author1.c.from("topics").insert({ domain_id: domainId, slug: slug("sneaky"), title: { en: "x" }, summary: { en: "x" }, required_review_roles: ["OTHER"] }));
+    await denied(rpc(author1, "set_required_roles", { p_topic: topic1, p_roles: ["OTHER"] }), /publisher access with MFA required/);
+    expect((await author1.c.from("sources").update({ licence_class: "GREEN", is_draft_guideline: false }).eq("id", sourceId).select("id")).data).toEqual([]);
   });
   it("an author cannot set workflow columns or take another author's work", async () => {
     await denied(author1.c.from("topics").update({ status: "published" }).eq("id", topic1));
@@ -335,8 +345,13 @@ describe("10. Revisions, rollback and audit history", () => {
 });
 
 describe("11. Unauthorized actions and role-escalation attempts", () => {
+  it("an administrator WITHOUT the publisher role cannot publish, roll back or archive (separation of duties)", async () => {
+    for (const [fn, args] of [["publish_topic", { p_topic: topic1, p_version: v1 }], ["rollback_topic", { p_topic: topic1, p_version: v1, p_reason: "administrators are not publishers" }], ["archive_topic", { p_topic: topic1, p_reason: "administrators are not publishers" }]] as [string, Record<string, unknown>][])
+      await denied(rpc(admin, fn, args), /publisher access with MFA required/);
+  });
   it("learners cannot use any staff or administrator function", async () => {
     for (const [fn, args] of [
+      ["set_required_roles", { p_topic: topic1, p_roles: ["OTHER"] }],
       ["admin_grant_role", { p_user: learnerA.id, p_role: "admin" }], ["admin_set_specialty", { p_user: learnerA.id, p_specialty: "NE", p_enabled: true }],
       ["publish_topic", { p_topic: topic1, p_version: v1 }], ["assign_reviewer", { p_version: v1, p_reviewer: learnerA.id, p_specialty: "NE" }],
       ["submit_for_review", { p_topic: topic2 }], ["archive_topic", { p_topic: topic1, p_reason: "learner should not be able to" }],

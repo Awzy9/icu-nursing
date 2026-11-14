@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { AdminForm } from "@/components/admin/admin-form";
 import { TopicFields } from "@/components/admin/topic-fields";
-import { CODE_LABELS, StatusBadge } from "@/components/admin/ui";
+import { CODE_LABELS, REVIEW_CODES, StatusBadge } from "@/components/admin/ui";
 import { Callout } from "@/components/ui/feedback";
 import { Field, Input, Select, Textarea } from "@/components/ui/form";
 import { requireStaff } from "@/lib/auth";
@@ -88,6 +88,18 @@ export default async function TopicEditor({ params }: { params: Promise<{ locale
         <H2 id="wf">Publication workflow</H2>
         <p className="text-sm text-muted-foreground">Draft → clinical review → approved → published. These rules are enforced by the database, not just this page. Approval can only be recorded by assigned human clinical reviewers.</p>
         {editable ? (problems.length ? <Callout tone="warning" title="Not ready for review yet"><ul className="list-disc ps-5">{problems.map((p) => <li key={p}>{p}</li>)}</ul></Callout> : <Callout tone="success" role="status">All submission checks pass.</Callout>) : null}
+        <div className="space-y-2">
+          <p className="text-sm"><b>Required reviewer roles:</b> {topic.required_review_roles.map((c) => `${c} (${CODE_LABELS[c] ?? c})`).join("; ")} — <span className="text-muted-foreground">set only by a publisher or administrator, so authors cannot choose who reviews their own work.</span></p>
+          {(roles.includes("publisher") || roles.includes("admin")) && (topic.status === "draft" || topic.status === "changes_requested") && topic.kind === "clinical" ? (
+            <AdminForm action={A.setRequiredRolesAction} submit="Save reviewer roles" variant="outline">
+              <input type="hidden" name="topicId" value={id} />
+              <fieldset className="grid gap-1 sm:grid-cols-2">
+                <legend className="mb-1 text-sm font-medium">Required reviewer roles before publication</legend>
+                {REVIEW_CODES.map((c) => <label key={c} className="flex min-h-11 items-center gap-2"><input type="checkbox" name="roles" value={c} defaultChecked={topic.required_review_roles.includes(c)} className="size-5" /> <span>{c} — {CODE_LABELS[c]}</span></label>)}
+              </fieldset>
+            </AdminForm>
+          ) : null}
+        </div>
         <div className="flex flex-wrap gap-4">
           {editable ? <AdminForm action={A.submitAction} submit="Submit for clinical review"><input type="hidden" name="topicId" value={id} /></AdminForm> : null}
           {topic.status === "in_review" && isOwnerOrAdmin ? <AdminForm action={A.withdrawAction} submit="Withdraw submission" variant="outline"><input type="hidden" name="topicId" value={id} /></AdminForm> : null}
@@ -112,14 +124,14 @@ export default async function TopicEditor({ params }: { params: Promise<{ locale
           </AdminForm>
         ))}
 
-        {(roles.includes("publisher") || roles.includes("admin")) && approved && topic.status === "approved" ? (
+        {roles.includes("publisher") && approved && topic.status === "approved" ? (
           <AdminForm action={A.publishAction} submit={`Publish version ${approved.version_no}`} className="flex flex-wrap items-end gap-3">
             <input type="hidden" name="topicId" value={id} /><input type="hidden" name="versionId" value={approved.id} />
             <Field label="Next review due in (months)" htmlFor="months"><Input id="months" name="months" type="number" min={1} max={36} defaultValue={12} /></Field>
           </AdminForm>
         ) : null}
 
-        {(roles.includes("publisher") || roles.includes("admin")) && superseded.length ? (
+        {roles.includes("publisher") && superseded.length ? (
           <AdminForm action={A.rollbackAction} submit="Roll back to this version" variant="outline" confirm="Restore this earlier version for learners?" className="grid gap-3 md:grid-cols-2">
             <input type="hidden" name="topicId" value={id} />
             <Field label="Earlier published version" htmlFor="rb-v"><Select id="rb-v" name="versionId">{superseded.map((v) => <option key={v.id} value={v.id}>Version {v.version_no}</option>)}</Select></Field>
@@ -127,7 +139,7 @@ export default async function TopicEditor({ params }: { params: Promise<{ locale
           </AdminForm>
         ) : null}
 
-        {(roles.includes("publisher") || roles.includes("admin")) && topic.status !== "archived" ? (
+        {roles.includes("publisher") && topic.status !== "archived" ? (
           <AdminForm action={A.archiveAction} submit="Archive (unpublish)" variant="danger" confirm="Archive this topic and hide it from learners?" className="flex flex-wrap items-end gap-3">
             <input type="hidden" name="topicId" value={id} />
             <Field label="Reason" htmlFor="ar-r"><Input id="ar-r" name="reason" required minLength={10} maxLength={500} /></Field>
@@ -140,7 +152,7 @@ export default async function TopicEditor({ params }: { params: Promise<{ locale
         <H2 id="meta">Topic details</H2>
         <AdminForm action={A.updateTopicAction} submit="Save details">
           <input type="hidden" name="id" value={id} />
-          <TopicFields domains={domains} disabled={!editable} d={{ domainId: topic.domain_id, slug: topic.slug, titleEn: topic.title.en, titleAr: topic.title.ar, summaryEn: topic.summary.en, summaryAr: topic.summary.ar, level: topic.level, minutes: topic.est_minutes, curriculumId: topic.curriculum_id ?? undefined, guidelineNote: topic.guideline_note ?? undefined, jurisdiction: topic.jurisdiction_scope, origin: topic.origin, roles: topic.required_review_roles }} />
+          <TopicFields domains={domains} disabled={!editable} d={{ domainId: topic.domain_id, slug: topic.slug, titleEn: topic.title.en, titleAr: topic.title.ar, summaryEn: topic.summary.en, summaryAr: topic.summary.ar, level: topic.level, minutes: topic.est_minutes, curriculumId: topic.curriculum_id ?? undefined, guidelineNote: topic.guideline_note ?? undefined, jurisdiction: topic.jurisdiction_scope, origin: topic.origin }} />
         </AdminForm>
         {!editable ? <p className="text-sm text-muted-foreground">Editing is locked while the topic is {topic.status.replace("_", " ")} (or you are not its author). Start a revision to edit a published topic.</p> : null}
       </section>

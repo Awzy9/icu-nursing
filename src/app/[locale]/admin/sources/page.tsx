@@ -15,12 +15,12 @@ export default async function SourcesPage({ params }: { params: Promise<{ locale
   const db = (await createClient())!;
   const { data } = await db.from("sources").select("*").order("organization");
   const sources = (data ?? []) as unknown as Src[];
-  const canEdit = roles.some((r) => ["author", "publisher", "admin"].includes(r));
-  const canUpdate = roles.some((r) => ["publisher", "admin"].includes(r));
+  const canEdit = roles.some((r) => ["publisher", "admin"].includes(r)); // the source register is curated by publishers/administrators
+  const canUpdate = canEdit;
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">Source register</h1>
-      <p className="text-muted-foreground">Licence classes: GREEN reusable with conditions · YELLOW review needed · RED cite only (original wording required) · UNVERIFIED treat as RED. Mark unpublished or draft guidelines as DRAFT so they are always labelled.</p>
+      <p className="text-muted-foreground">Licence classes: GREEN reusable with conditions · YELLOW review needed · RED cite only (original wording required) · UNVERIFIED treat as RED. Mark unpublished or draft guidelines as DRAFT so they are always labelled. Only publishers and administrators curate this register; authors cite existing sources.</p>
       <ul className="divide-y divide-border border-y border-border">
         {sources.map((s) => (
           <li key={s.id} className="py-3">

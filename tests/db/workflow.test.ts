@@ -18,9 +18,11 @@ async function addSource(opts: { draft?: boolean; licence?: string } = {}) {
 async function readyTopic(opts: { roles?: string[]; origin?: string; by?: string; skipRef?: boolean } = {}) {
   const by = opts.by ?? author;
   const slug = `topic-${++n}`;
-  const t = await asUser(MFA(by), "insert into public.topics (domain_id, slug, title, summary, required_review_roles, origin) values ($1,$2,$3,$4,$5,$6) returning id",
-    [domainId, slug, JSON.stringify({ en: `Topic ${n}` }), JSON.stringify({ en: "Summary" }), opts.roles ?? ["NE"], opts.origin ?? "human"]);
+  const t = await asUser(MFA(by), "insert into public.topics (domain_id, slug, title, summary, origin) values ($1,$2,$3,$4,$5) returning id",
+    [domainId, slug, JSON.stringify({ en: `Topic ${n}` }), JSON.stringify({ en: "Summary" }), opts.origin ?? "human"]);
   const id = t.rows[0].id as string;
+  // Authors cannot choose their own reviewers: a publisher sets the required roles (default is NE only).
+  if (opts.roles) await asUser(MFA(publisher), "select public.set_required_roles($1,$2)", [id, opts.roles]);
   await asUser(MFA(by), "insert into public.topic_sections (topic_id, kind, sort, title, body) values ($1,'objectives',0,'{\"en\":\"Objectives\"}','{\"en\":\"- Learn\"}'), ($1,'overview',1,'{\"en\":\"Overview\"}','{\"en\":\"Text\"}')", [id]);
   if (!opts.skipRef) {
     const src = await addSource();

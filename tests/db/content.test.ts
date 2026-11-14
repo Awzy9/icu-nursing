@@ -118,10 +118,17 @@ describe("authoring permissions", () => {
     await expectDenied(asUser({ id: authorB, aal: "aal2" }, "insert into public.topic_sections (topic_id, kind, title, body) values ($1,'overview','{\"en\":\"O\"}','{\"en\":\"b\"}')", [authorDraft]));
     expect((await asUser({ id: learnerA }, "select 1 from public.topic_sections").catch(() => ({ rowCount: 0 }))).rowCount).toBe(0);
   });
-  it("restricts source management to staff", async () => {
+  it("restricts the source register to publishers and administrators (authors can only cite)", async () => {
     await expectDenied(asUser({ id: learnerA }, "insert into public.sources (organization, title) values ('x','y')"));
-    await asUser({ id: authorA, aal: "aal2" }, "insert into public.sources (organization, title, url) values ('WHO','Patient safety','https://who.int/x')");
-    await expect(asUser({ id: authorA, aal: "aal2" }, "insert into public.sources (organization, title, url) values ('x','y','http://insecure')")).rejects.toThrow(/check/i);
+    await expectDenied(asUser({ id: authorA, aal: "aal2" }, "insert into public.sources (organization, title, url, licence_class) values ('x','self-certified','https://example.org','GREEN')"));
+    await asUser({ id: admin, aal: "aal2" }, "insert into public.sources (organization, title, url) values ('WHO','Patient safety','https://who.int/x')");
+    await expect(asUser({ id: admin, aal: "aal2" }, "insert into public.sources (organization, title, url) values ('x','y','http://insecure')")).rejects.toThrow(/check/i);
+    expect((await asUser({ id: authorA, aal: "aal2" }, "select id from public.sources")).rowCount).toBeGreaterThan(0); // authors can still read to cite
+    expect((await asUser({ id: authorA, aal: "aal2" }, "update public.sources set licence_class='GREEN', is_draft_guideline=false returning id")).rowCount).toBe(0);
+  });
+  it("does not let authors choose their own reviewer roles", async () => {
+    await expectDenied(asUser({ id: authorA, aal: "aal2" }, "update public.topics set required_review_roles='{OTHER}' where id=$1", [draftTopic]));
+    await expectDenied(asUser({ id: authorA, aal: "aal2" }, "insert into public.topics (domain_id, slug, title, required_review_roles) values ($1,'sneaky','{\"en\":\"x\"}','{OTHER}')", [domainId]));
   });
   it("restricts domain changes to administrators", async () => {
     expect((await asUser({ id: authorA, aal: "aal2" }, "update public.nursing_domains set sort = 99 returning id")).rowCount).toBe(0);
