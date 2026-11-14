@@ -2,9 +2,10 @@ import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync } from "node:fs";
 import { batchPositionIssues, mcqQuality, parseMcqs, validateDraft } from "@/lib/draft-validator";
 
-const dir = "content/drafts/batch-01";
-const files = readdirSync(dir).filter((f) => f.endsWith(".md"));
-const texts = files.map((f) => readFileSync(`${dir}/${f}`, "utf8"));
+const batches = readdirSync("content/drafts", { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort();
+const files = batches.flatMap((b) => readdirSync(`content/drafts/${b}`).filter((f) => f.endsWith(".md")).map((f) => `${b}/${f}`));
+const texts = files.map((f) => readFileSync(`content/drafts/${f}`, "utf8"));
+const perBatch = (b: string) => files.map((f, i) => (f.startsWith(`${b}/`) ? texts[i]! : "")).filter(Boolean);
 const good = texts[0]!;
 
 const q = (id: string, answer: string, opts: string[], extra = {}) => ({
@@ -16,9 +17,9 @@ const q = (id: string, answer: string, opts: string[], extra = {}) => ({
 const ok = ["Reassess the patient and escalate using SBAR now", "Wait for the next ward round before acting on it", "Record it and look again at the end of shift", "Ask a relative to find a doctor for the patient"];
 
 describe("Phase 2 drafts: structure and safety", () => {
-  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(6));
+  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(12));
   files.forEach((f, i) => it(`${f} passes validation`, () => expect(validateDraft(texts[i]!)).toEqual([])));
-  it("batch answer positions are balanced", () => expect(batchPositionIssues(texts)).toEqual([]));
+  batches.forEach((b) => it(`${b}: answer positions are balanced across the batch`, () => expect(batchPositionIssues(perBatch(b))).toEqual([])));
   it("every draft has six or more MCQs with an explanation for each wrong option", () => {
     for (const t of texts) {
       const qs = parseMcqs(t);
@@ -30,6 +31,10 @@ describe("Phase 2 drafts: structure and safety", () => {
     expect(validateDraft(good.replace("clinically_reviewed: false", "clinically_reviewed: true")).length).toBeGreaterThan(0);
     expect(validateDraft(good.replace("status: DRAFT", "status: published")).length).toBeGreaterThan(0);
     expect(validateDraft(good + "\nReviewed by Dr X").length).toBeGreaterThan(0);
+  });
+  it("allows ventilator tidal volume per predicted body weight but still blocks drug-style doses", () => {
+    expect(validateDraft(good + "\nTidal volume 6 mL/kg PBW").some((i) => i.rule === "dosing")).toBe(false);
+    expect(validateDraft(good + "\nGive 6 mL/kg/h").some((i) => i.rule === "dosing")).toBe(true);
   });
   it("rejects dosing and missing banner", () => {
     expect(validateDraft(good + "\nGive 5 mcg/kg/min").some((i) => i.rule === "dosing")).toBe(true);

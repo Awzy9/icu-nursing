@@ -37,7 +37,9 @@ export function validateDraft(text: string): DraftIssue[] {
   for (const i of mcqQuality(parsed)) issues.push(i);
   if (!/https?:\/\//.test(text) || !/accessed \d{4}-\d{2}-\d{2}|accessed 20/.test(text)) add("refs", "references need URLs and access dates");
   // No unreviewed dosing: numeric dose/rate patterns are blocked until a pharmacist signs off.
-  if (/\b\d+(\.\d+)?\s?(mcg|µg|mg|g|units?|mEq|mmol|mL)\s?(\/|per)\s?(kg|min|h|hr|hour|minute)\b/i.test(text)) add("dosing", "contains dose/rate pattern; not allowed without pharmacist review");
+  const doseLike = /\b\d+(\.\d+)?\s?(mcg|µg|mg|g|units?|mEq|mmol|mL)\s?(\/|per)\s?(kg|min|h|hr|hour|minute)\b(?!\s?PBW)/i;
+  // urine-output thresholds (mL/kg/h) are monitoring targets, not drug doses
+  if (text.split("\n").some((l) => doseLike.test(l) && !/urine|diuresis|oligur/i.test(l))) add("dosing", "contains dose/rate pattern; not allowed without pharmacist review");
   if (/\b(approved by|reviewed by|signed off by|endorsed by)\b/i.test(text)) add("review", "must not claim approval/review");
   return issues;
 }
