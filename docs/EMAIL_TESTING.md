@@ -38,3 +38,19 @@ Recipients are Resend's test addresses `delivered+<tag>@resend.dev`, which Resen
 - Email bombing: mitigated by CAPTCHA on all three email-sending forms, Supabase's per-hour limits and our per-IP limits; keep the Supabase email limit low (30/hour in dev; set for production traffic deliberately).
 - Bounces and complaints: Resend reports them; add monitoring before launch.
 - Never email clinical content or personal health information; the templates deliberately say so.
+
+## Interim plan (no domain yet): Supabase built-in sender
+
+Decision: custom Resend SMTP is postponed until a verified domain exists (before public launch). For development we use the **built-in sender** with an **authorised organisation email address**, with email confirmation **kept enabled** (never disabled to bypass verification; the tool refuses to run if `mailer_autoconfirm` is not `false`).
+
+Limits to respect: only organisation members' addresses receive mail; about **2 emails/hour** for the whole project; default (unbranded-sender) deliverability may land in spam; links redirect to the Site URL, which is not reachable from a cloud session.
+
+Tests (`npm run live:email:builtin -- <mode>` with `EMAIL_TEST_ADDRESS` set; a local git-ignored ledger caps sends at 2/hour):
+| Mode | What it proves | Who completes it |
+|---|---|---|
+| `signup` | Confirmation email is requested and sent for a new account | Person checks inbox and clicks the link |
+| `verify` | Account becomes confirmed only after the link is used (checked via admin API) | Automated |
+| `reset` | Password-reset email is delivered | Person checks inbox |
+| `status` | Confirmation is required, SMTP is built-in, sends used this hour | Automated |
+
+Not provable in this setup: completing the reset in the browser from the emailed link (it redirects to a site URL not reachable from the cloud session; that step is already covered by admin-generated-link live tests), deliverability at scale, branded sender/DKIM. All of these wait for the verified domain and production SMTP.

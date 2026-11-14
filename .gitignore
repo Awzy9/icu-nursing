@@ -11,3 +11,4 @@ playwright-report
 next-env.d.ts
 .DS_Store
 .next-live
+.email-ledger.json
