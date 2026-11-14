@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – monitoring of lung-protective ventilation, adults and children", "ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies (Intensive Care Med 2023;49:727-759; CC BY-NC) – ARDS only"]
-sources: [S-AARC-PVA]
+sources: [S-AARC-PVA, S-ESICM-ARDS-2023]
 independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (the register source; full-text PDF; cite-only) and the ESICM 2023 ARDS guideline (open access, CC BY-NC – non-commercial) were both read in full text. Content is limited to what the ESICM text supports; ventilator mode details are not covered."
 ---
 # Ventilator parameters and lung-protective ventilation – what the nurse monitors

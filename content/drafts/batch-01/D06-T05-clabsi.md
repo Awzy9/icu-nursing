@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SHEA/IDSA/APIC Strategies to prevent CLABSI in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022; CC BY)", "CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – partly superseded", "CDC Updated Recommendations on Chlorhexidine-Impregnated Dressings (2017) – supersedes two 2011 statements"]
-sources: [S-CDC-IC]
+sources: [S-CDC-BSI-2011, S-SHEA-CLABSI-2022]
 independently_written_note: "Original wording. SHEA 2022 (open access, CC BY) and the CDC 2011 PDF were read in full text for the recommendations listed; the CDC 2017 CHG-dressing update was confirmed from its landing page only (its detailed text was not read). No text copied. INS and national standards were not accessible."
 ---
 # Preventing CLABSI

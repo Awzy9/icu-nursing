@@ -169,3 +169,27 @@ D03-T01,"GCS site: structured approach improves accuracy, reliability and commun
 D03-T01,GCS site: described 1974 by Teasdale and Jennett; findings signal need for new actions,glasgowcomascale.org web pages,What is GCS,Narrative,text match
 D03-T01,"GCS site: scale complements, not replaces, assessment of other neurological functions",glasgowcomascale.org web pages,What is GCS,Narrative,text match
 D03-T01,"GCS site: GCS-P = GCS minus pupil reactivity score (both 2, one 1, neither 0)",glasgowcomascale.org web pages,What is GCS-P,Narrative,text match
+D01-T19,NEWS2: 7 parameters incl. air/oxygen and ACVPU new confusion,RCP NEWS2 report (2017),Updates summary,Recommendation,text match
+D01-T19,NEWS2: monitoring frequency minimum 12-hourly for 0; 4-6 hourly for 1-4,RCP NEWS2 report (2017),Rec 38,Recommendation,text match
+D01-T19,NEWS2: hourly for 5-6 or red score until reviewed; continuous for 7 or more,RCP NEWS2 report (2017),Rec 40,Recommendation,text match
+D01-T19,NEWS2: new confusion scores 3; assume new if unclear,RCP NEWS2 report (2017),Rec 31,Recommendation,text match
+D01-T19,"NEWS2: Scale 2 for 88-92% target; decision by competent clinical decision maker, recorded",RCP NEWS2 report (2017),Rec 26,Recommendation,text match
+D01-T19,NEWS2: not for children <16 or pregnant women; unreliable in spinal cord injury,RCP NEWS2 report (2017),Rec 2-3,Recommendation,text match
+D01-T19,"NEWS2: aid to, not a substitute for, clinical judgement; any concern prompts urgent review",RCP NEWS2 report (2017),Rec 4,Recommendation,text match
+D01-T19,NEWS2: document oxygen device and flow using BTS codes,RCP NEWS2 report (2017),Rec,Recommendation,text match
+D01-T19,NEWS2: urgent response threshold >=5; emergency >=7 with critical-care competencies,RCP NEWS2 report (2017),Clinical response table,Recommendation,text match
+D01-T19,NEWS2: hypercapnic patients at risk of worsening hypercapnia if too much oxygen; range 88-92%,RCP NEWS2 report (2017),Rationale,Narrative,text match
+D01-T19,"NEWS2: consider ceiling of care at all scores, especially >=7",RCP NEWS2 report (2017),Clinical response,Recommendation,text match
+D01-T19,NEWS2: copyright - no restriction but acknowledge RCP; charts not modified,RCP NEWS2 report (2017),Front matter,Licence,text match
+D02-T04,"CDC 2011: radial, brachial or dorsalis pedis preferred over femoral/axillary in adults (IB)",CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.1,Category IB,text match
+D02-T04,CDC 2011: replace arterial catheters only when clinically indicated; remove when not needed (II),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.5-6,Category II,text match
+D02-T04,CDC 2011: disposable transducers; replace at 96 h with tubing/flush (IB),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.9,Category IB,text match
+D02-T04,CDC 2011: keep all components sterile (IA),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.10,Category IA,text match
+D02-T04,CDC 2011: closed continuous flush; minimise manipulations (II),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.11,Category II,text match
+D02-T04,CDC 2011: scrub diaphragm before accessing (IA),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.12,Category IA,text match
+D02-T04,CDC 2011: no dextrose or parenteral nutrition through the circuit (IA),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.13,Category IA,text match
+D02-T04,"CDC 2011: barrier precautions at insertion (cap, mask, sterile gloves, small drape)",CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.3,Category IB,text match
+D02-T04,SSC 2021: arterial catheter allows reliable continuous measurement; cuff inaccurate in shock,SSC 2021 (PMC8486643),Rec 43 rationale,Weak; very low,text match
+D02-T04,SSC 2021: limb ischaemia/bleeding <1% radial; infection higher with femoral (RR 1.93),SSC 2021 (PMC8486643),Rec 43 rationale,Narrative,text match
+D02-T04,SSC 2021: suggest invasive arterial pressure monitoring in septic shock on vasopressors,SSC 2021 (PMC8486643),Rec 43,Weak; very low,text match
+D02-T14,RCUK 2025 phrases the aim as SBP >100 mmHg or MAP >60-65 mmHg (page read; not full text),ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),ERC text for comparison,Recommendation,text match

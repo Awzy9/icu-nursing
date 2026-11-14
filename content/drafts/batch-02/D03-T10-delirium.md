@@ -9,7 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE CG103 Delirium: prevention, diagnosis and management in hospital and long-term care (published 28 Jul 2010; last updated 18 Jan 2023) – general hospital guidance that names ICU tools"]
-sources: [S-SCCM-PADIS]
+sources: [S-NICE-CG103]
+sources_not_read: [S-SCCM-PADIS]
 independently_written_note: "Original wording. The NICE CG103 recommendations chapter was read (sections 1.1–1.8). The register's primary source, SCCM PADIS 2018 and its 2025 focused update: only the SCCM web pages (abstract and summary text) were reachable; the full guideline text (journals.lww.com) is blocked, so ICU-specific recommendations on sedation, drugs and bundle outcomes are NOT covered and no PADIS recommendation is quoted. NICE reserves commercial reuse (cite-only). CAM-ICU/ICDSC tool wording is not reproduced."
 ---
 # Delirium – nursing screening, prevention and response in the ICU

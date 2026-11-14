@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – recommendations 11–15 and cuff section", "SHEA/IDSA/APIC VAP/VAE 2022 update – cuff, sedation and circuit statements", "ERC Guidelines 2025 Adult ALS – waveform capnography to confirm tracheal tube placement", "EPUAP/NPIAP/PPPIA International Guideline 4th ed. Quick Reference Guide 2026 – device-related pressure injury statements"]
-sources: [S-AARC-PVA]
+sources: [S-AARC-PVA, S-SHEA-VAP-2022, S-ERC-ALS-2025, S-INTL-PI-2026]
 independently_written_note: "Original wording; paraphrase only. AARC PVA (© Daedalus Enterprises) and the ERC 2025 ALS guideline (commercial use needs an ERC agreement) are cite-only. No guideline read gives a tube depth, securement method, cuff interval or measurement technique beyond what is stated below. Tracheostomy care is a separate topic and not covered."
 ---
 # Endotracheal tube care – securement, position and cuff pressure

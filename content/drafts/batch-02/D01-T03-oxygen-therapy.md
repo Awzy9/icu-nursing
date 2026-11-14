@@ -9,7 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Management of Adult Patients With Oxygen in the Acute Care Setting (Respir Care 2022;67(1):115-128) – full text read; modified RAND/UCLA method", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – NIV-interface skin assessment only", "NICE CG103 Delirium (updated 2023) – pulse oximeter accuracy statement only", "ERC Guidelines 2025 Adult ALS – oxygen and defibrillation safety (see D02-T15)"]
-sources: [S-AARC-O2]
+sources: [S-AARC-O2, S-RCP-NEWS2, S-NICE-CG103, S-ERC-ALS-2025]
+sources_not_read: [S-BTS-OXYGEN-2017]
 independently_written_note: "Original wording. The AARC oxygen CPG PDF (copyright Daedalus Enterprises, cite-only) was read: abstract, Table of recommendations, and the sections on targets, high-flow nasal cannula and humidification. BTS 2017 oxygen guideline and national oxygen-prescribing standards could NOT be accessed, so jurisdiction differences are described only as a limitation. ERC material is paraphrased only; ERC commercial use needs an agreement."
 ---
 # Adult oxygen therapy in acute and critical care – the nurse's role
@@ -52,7 +53,7 @@ SpO₂ with trend and probe check; respiratory rate and effort; mental state; he
 | Question | Recommendation (strength as stated) | Nursing relevance |
 |---|---|---|
 | Target in most hospitalised adults needing oxygen | Committee **supports** an SpO₂ range of 94–98% (evidence level C) | Check the ordered range; do not treat 100% as safe or better |
-| Adults with COPD needing oxygen | Committee supports 88–92% (evidence level C) | Different range for patients at risk of carbon dioxide retention; ask if unsure |
+| Adults with COPD needing oxygen | Committee supports 88–92% (evidence level C). RCP NEWS2 (2017, full text read) explains the rationale: patients with hypercapnic respiratory failure (PaCO₂ above 6 kPa, most often COPD, also obesity-related, chest-wall and neuromuscular causes) are at risk of rapidly worsening hypercapnia if too much oxygen is given, and recommends a prescribed target of 88–92% scored on a dedicated chart scale (Scale 2), chosen by a competent clinical decision-maker and recorded in the notes | Different range for patients with or at risk of hypercapnic respiratory failure; ask if unsure; NEWS2 scoring is covered in D01-T19 |
 | Critically ill adults | Recommends 94–98% (evidence level C) | Applies to critical care; individual exceptions are the prescriber's decision |
 | Postoperative continuous pulse-oximetry monitoring | **No recommendation** (paucity of literature) | Monitoring intensity is local protocol |
 | Early vs late HFNC | Limited evidence supports early initiation based on clinical condition (level C) | Escalate before exhaustion rather than after |
@@ -168,7 +169,7 @@ D. A patient on room air with an SpO₂ of 97% awaiting a scan.
 Target ranges, who may titrate, device choice and monitoring frequency follow the institution's oxygen policy and the prescriber's order.
 
 ## 20. Evidence, applicability and open questions
-- Statements not drawn from AARC text, and their status: oxygen as a prescribed medicine and who sets targets (local policy/jurisdiction); the carbon-dioxide-retention rationale for the lower COPD range (background physiology, not stated in the sections read); probe and perfusion checks (NICE CG103 only covers oximeter accuracy). Reviewers should confirm or replace them.
+- Statements not drawn from AARC text, and their status: oxygen as a prescribed medicine and who sets targets (the RCP NEWS2 report states that the decision to use the 88–92% scale should be made by a competent clinical decision-maker and recorded; this is UK practice, other jurisdictions vary); the carbon-dioxide-retention rationale is now supported by the NEWS2 full text; probe and perfusion checks (NICE CG103 only covers oximeter accuracy).
 - Source quality: AARC 2022 uses a modified RAND/UCLA method with mostly level C (low) evidence; the ranges are committee support rather than graded strong recommendations. It covers adults in acute care; it does not address prehospital care, children, or hypercapnic respiratory failure management.
 - Jurisdiction: the BTS 2017 guideline and other national standards (for example on prescribing oxygen and target ranges for patients at risk of hypercapnic failure) were not accessible, so differences from AARC could not be described. Pulse oximeter accuracy and oxygen prescribing practice vary by country.
 - Not covered: choice of device and flow, NIV, ventilator oxygen settings, home oxygen, paediatric oxygen.

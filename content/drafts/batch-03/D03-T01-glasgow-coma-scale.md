@@ -65,7 +65,7 @@ GCS components and trend at the frequency in the plan (policy and clinical condi
 Not covered by the sources read: severity bands (mild, moderate, severe), prognostic use, thresholds for intubation or imaging, paediatric versions, and evidence on inter-rater agreement.
 
 ## 10. Warning signs and red flags
-A fall in any component, especially motor response, or a falling total over consecutive assessments; new unequal pupils or loss of pupil reactivity; new focal weakness; seizure; vomiting with headache; slowing heart rate with rising blood pressure; irregular breathing; sudden drop after an apparently stable period; new agitation or drowsiness in a patient with recent head injury or surgery.
+A fall in any component, especially in the motor response, or a falling total over consecutive assessments (the GCS site states that findings signal the need for new actions); new difficulty or inability to assess because of a new interfering factor. Other neurological observations (pupils, limb movement, vital signs) and their warning patterns follow local neurological observation policy and medical guidance; the sources read do not list further red flags.
 
 ## 11. Nursing interventions within scope
 | Action | Scope label |
@@ -169,6 +169,6 @@ Frequency of neurological observations, pupil assessment method, escalation trig
 ## 20. Evidence, applicability and open questions
 - Source quality: an official, internationally used scale and structured-approach aid. These are teaching/practice documents, not graded guidelines; evidence on reliability and prognosis was not read.
 - Applicability: widely used worldwide; adult version only; paediatric versions and the full GCS-P/charts were not covered. Copyright and permission requirements apply.
-- Untraced items: the red-flag list beyond "a fall in GCS or new pupil changes" (such as Cushing-type responses) is general neurocritical-care background not found in the sources read; reviewers should confirm or remove.
+- Red flags: the draft now lists only a fall in GCS components or total, taken from the GCS website's statement that findings signal the need for new actions. Pupil, limb and vital-sign warning patterns are left to local neurological observation policy because no source read states them (the earlier broader list was removed).
 - Not covered: GCS interpretation bands, ICP/CPP management, brain injury guidelines, sedation scales, CAM-ICU.
 - Open questions for reviewers (NEURO, CCP, NE, BN): permission to reproduce scale wording; frequency; whether to include GCS-P; communication of prognosis.

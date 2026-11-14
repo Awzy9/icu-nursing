@@ -44,7 +44,7 @@ Retained secretions block gas exchange, but unnecessary or poorly performed suct
 - Keep each suctioning event as **brief as possible, no longer than 15 seconds** (evidence level C).
 - Use the **shallow** technique routinely; use deep suctioning only when shallow suctioning is ineffective, aware of airway-trauma risk (evidence level B).
 - Use the **lowest effective suction pressure**; the document gives an upper limit of −200 mm Hg for adults (evidence level C) and −120 mm Hg for neonates and children.
-- Stop the procedure and escalate if desaturation, arrhythmia, haemodynamic change or distress occurs.
+- Follow the unit's policy on stopping and escalating if desaturation, arrhythmia, haemodynamic change or distress occurs; AARC lists these as potential complications and mitigation strategies but gives no stop criteria.
 - Routine bronchoscopy for secretion removal is not recommended (a medical/respiratory therapy decision); devices to clear a blocked tube are supported when resistance rises due to secretions.
 
 ## 8. Monitoring parameters

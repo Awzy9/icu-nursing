@@ -14,7 +14,7 @@ Batch 3 was approved with up to 10 new unique topics. **3 were drafted**, becaus
 Candidate topics evaluated and **not** drafted: D04-T08 ABG interpretation (AARC blood gas CPG 2013 is accessible but covers sampling and indications, not acid–base interpretation); D08-T03 blood transfusion (NICE NG24 chapters read give thresholds and a two-line monitoring recommendation only; bedside checking and reaction management sources such as BSH 2018 are inaccessible); D02-T09 septic shock nursing care (SSC 2021 is superseded by an unread 2026 edition); D01-T17 weaning, D03-T03 ICP/CPP, D05-T16 pump safety, D07-T03 pain (no accessible current source); D03-T09, D09-T03, D07-T01 (blocked, see backlog).
 
 ## Batch 2 continuation completed in this round
-D02-T14 Cardiac arrest in the ICU: recognition, response and immediate post-ROSC nursing care, drafted from the full ERC 2025 BLS, ALS and Post-Resuscitation Care PDFs. Documented conflict: the RCUK algorithm poster states SBP >100 mmHg after ROSC, the ERC text states MAP >60–65 mmHg.
+D02-T14 Cardiac arrest in the ICU: recognition, response and immediate post-ROSC nursing care, drafted from the full ERC 2025 BLS, ALS and Post-Resuscitation Care PDFs. Blood-pressure aim: ERC–ESICM MAP >60–65 mmHg; RCUK 2025 states SBP >100 mmHg or MAP >60–65 mmHg – alternative measures of perfusion pressure, not conflicting recommendations (correction from the earlier wording).
 
 ## QA gate (same as Batches 1–2)
 - Claim trace: 170 claims (Batch 2: 119 + new 51 for D02-T14, D01-T12, D04-T03, D03-T01 across `batch-02-claim-trace.csv`), all matched to the source text (the file covers Batch 2 and Batch 3 topics).

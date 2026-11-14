@@ -70,4 +70,4 @@ Findings and fixes:
 Gate decision for the three drafts: pass the **internal** review; **not** clinically reviewed.
 
 ## Addendum 2: internal QA of D02-T14 (cardiac arrest)
-47 claims traced (BLS, ALS, post-resuscitation care) – all matched. Fixes during QA: removed a nonsense distractor and short explanations; corrected "antiseptic" to "anti-seizure". Scope: drugs, energy, intubation drugs, targets and prognostication stay with the team; the draft states no nurse prognostication. Licence: ERC commercial use needs an agreement; draft paraphrases only. Flagged: RCUK poster (SBP >100) vs ERC text (MAP >60–65).
+47 claims traced (BLS, ALS, post-resuscitation care) – all matched. Fixes during QA: removed a nonsense distractor and short explanations; corrected "antiseptic" to "anti-seizure". Scope: drugs, energy, intubation drugs, targets and prognostication stay with the team; the draft states no nurse prognostication. Licence: ERC commercial use needs an agreement; draft paraphrases only. Blood-pressure aim: RCUK 2025 phrases it as SBP >100 or MAP >60–65, the ERC–ESICM text as MAP >60–65 – alternative measures, not conflicting (corrected after supervisory review).

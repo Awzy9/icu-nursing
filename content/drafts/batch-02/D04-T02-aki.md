@@ -9,7 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE NG148 Acute kidney injury: prevention, detection and management (published 18 Dec 2019; last updated 16 Oct 2024) – UK guidance; most recommendations date from 2013", "KDIGO 2026 AKI/AKD guideline is a DRAFT under public review (kdigo.org) and is NOT used as final"]
-sources: [S-NICE-AKI, S-KDIGO-AKI]
+sources: [S-NICE-NG148]
+sources_not_read: [S-KDIGO-AKI, S-SSC-2026]
 independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO 2026 draft is mentioned only as a draft."
 ---
 # Acute kidney injury – nursing recognition, monitoring and escalation

@@ -1,0 +1,178 @@
+---
+topic_id: D02-T04
+title: Arterial line monitoring and maintenance
+domain: Cardiovascular and Hemodynamic Care
+learner_level: transitioning
+status: DRAFT
+origin: ai_generated
+clinically_reviewed: false
+authors: []
+clinical_reviewers: []
+guideline_versions: ["CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – section 17 'Peripheral arterial catheters and pressure monitoring devices' (dated; partly superseded for other catheter topics)", "Surviving Sepsis Campaign 2021 (Intensive Care Med 2021;47:1181-1247) – arterial catheter rationale; a 2026 edition exists and was NOT read", "ESICM Consensus on circulatory shock and hemodynamic monitoring 2014 (statement 17)", "ERC/ESICM Guidelines 2025 Post-Resuscitation Care – arterial line for all post-arrest patients"]
+sources: [S-CDC-BSI-2011, S-SSC-2021, S-ESICM-SHOCK-2014, S-ERC-PRC-2025]
+sources_not_read: [S-SSC-2026]
+independently_written_note: "Original wording. The CDC 2011 PDF, the SSC 2021 full text, the ESICM 2014 consensus and the ERC–ESICM 2025 post-resuscitation guideline were read in full text. None of them teaches transducer zeroing, levelling, dynamic response (square-wave) testing, waveform damping or blood-sampling technique: those technical steps follow the manufacturer's instructions and local policy and are flagged below as not evidence-based in the sources read. Commercial use of ERC text needs an ERC agreement; paraphrase only."
+---
+# Arterial line monitoring and maintenance
+> DRAFT – NOT clinically reviewed. AI-generated. Infection-prevention statements come from a 2011 CDC guideline; technical monitoring steps are local policy.
+
+## 1. Overview
+An arterial catheter gives continuous, beat-to-beat blood pressure and easy arterial sampling. It is used when non-invasive pressure is unreliable or frequent sampling is needed – notably in shock and after cardiac arrest. Insertion is a clinician's procedure; the nurse maintains the system, interprets and reports readings, protects the limb and the site, prevents infection and bleeding, and advocates removal when the line is no longer needed.
+
+## 2. Learning objectives
+1. State when guidelines support an arterial catheter (shock requiring vasopressors, post-cardiac arrest, others by local practice).
+2. Describe how to protect the patient from infection, bleeding, ischaemia and accidental disconnection.
+3. List the CDC maintenance recommendations for the pressure-monitoring system.
+4. Recognise warning signs and escalate promptly.
+5. Identify which technical steps are not evidence-based in the sources read and follow local policy.
+
+## 3. Why this matters in ICU nursing
+Treatment decisions (vasopressors, fluids, targets) rely on the displayed pressure. A wrong, damped or missing reading, a bleed from a disconnected line, a cold or blue hand or an unnoticed infection are preventable harms that nurses detect first.
+
+## 5. Relevant pathophysiology (brief)
+Cuff pressure estimates become inaccurate in shock; an arterial catheter measures pressure inside the artery. Possible harms are limb ischaemia and bleeding, haematoma, infection and thrombosis; the risk differs by site.
+
+## 6. Clinical assessment
+- **Indications supported by the sources read:** ESICM 2014 recommends arterial and central venous catheters in shock not responsive to initial therapy and/or needing vasopressor infusion (ungraded best practice); SSC 2021 suggests invasive arterial blood-pressure monitoring in septic shock, as soon as practical and if resources are available (weak recommendation, very low-quality evidence); ERC–ESICM 2025 states all post-cardiac-arrest patients should be monitored with an arterial line.
+- **Site and limb:** site (radial, brachial, dorsalis pedis, femoral, axillary); colour, warmth, capillary refill, pulses distal to the catheter; pain, numbness or loss of movement; bleeding or haematoma at the site. SSC 2021 reports that in a systematic review limb ischaemia and bleeding occurred in less than 1% of radial catheters, haematoma was the most common complication, and infection risk was higher with femoral than radial catheters (relative risk 1.93).
+- **Site infection:** redness, swelling, discharge, tenderness; fever. CDC advises visual inspection or palpation per policy.
+- **System:** continuous pressure waveform present and plausible, alarms on and limits set per order or protocol, all connections tight and visible, stopcocks in the correct position, flush bag pressurised per manufacturer, tubing labelled.
+- **Reading:** compare with the clinical picture and (when feasible) a non-invasive measurement; an unexpected value should prompt a check of the patient first, then the system.
+- **Technical set-up (zeroing, levelling, damping tests):** follow the manufacturer's instructions and local policy; the guideline sources read do not describe these steps.
+
+## 7. Nursing responsibilities
+- Check the line site, limb perfusion and the pressure system at the frequency set by the unit; document.
+- Keep all components of the pressure-monitoring system sterile (CDC Category IA); minimise manipulations and entries; use a closed continuous-flush system rather than an open system with a syringe and stopcock (CDC Category II).
+- When accessing through a diaphragm rather than a stopcock, scrub the diaphragm with an appropriate antiseptic first (CDC IA). Use sterile technique for sampling.
+- Do not give dextrose-containing solutions or parenteral nutrition fluids through the pressure-monitoring circuit (CDC IA).
+- Use disposable rather than reusable transducers where possible (CDC IB); replace transducers at 96-hour intervals together with tubing, the continuous-flush device and flush solution (CDC IB, 2011) – follow the unit's current policy.
+- Do not routinely replace arterial catheters to prevent infection; replace only for a clinical indication (CDC Category II); remove the line as soon as it is no longer needed (CDC Category II) – raise the daily question "is this line still needed?" with the prescriber.
+- Keep the arterial line clearly identified so that nothing is injected into it by mistake; do not use the line for medicines unless a protocol allows it.
+- Respond to bleeding: apply pressure, call for help, and stay with the patient.
+- Report abnormal pressures, damped or lost waveform, changes in limb perfusion, bleeding, infection signs or equipment faults promptly.
+
+## 8. Monitoring parameters
+Arterial pressure (systolic, diastolic, mean) and waveform; heart rate; limb colour, temperature, capillary refill and sensation; insertion site; flush system function; alarms; line days; transducer and set changeover dates; sampling losses where relevant.
+
+## 9. Important findings – what the sources state
+| Topic | Statement | Source (strength) | Nursing relevance |
+|---|---|---|---|
+| Indication in shock | Arterial catheter when shock is unresponsive to initial therapy or vasopressors are needed | ESICM 2014 stmt 17 (ungraded best practice); SSC 2021 | Prepare for insertion; monitor |
+| Post-arrest | All post-cardiac-arrest patients monitored with an arterial line; target MAP above 60–65 mmHg | ERC–ESICM 2025 | Report MAP |
+| Accuracy | Non-invasive cuff estimates are inaccurate, especially in shock | SSC 2021 rationale | Use the arterial value, correlate clinically |
+| Site (adults) | Radial, brachial or dorsalis pedis preferred over femoral or axillary | CDC 2011 IB | Femoral/axillary lines need closer site checks |
+| Insertion barriers | At least cap, mask, sterile gloves and a small sterile fenestrated drape; maximal barriers for axillary or femoral | CDC 2011 IB; II | Support aseptic insertion |
+| Replacement/removal | No routine replacement; replace only for a clinical indication; remove as soon as not needed | CDC 2011 II | Daily necessity review |
+| Transducer system | Disposable transducers preferred; replace at 96-hour intervals with tubing, flush device and solution | CDC 2011 IB | Per local policy |
+| Sterility and flush | Keep all components sterile (IA); continuous closed flush; minimise manipulation (II); scrub diaphragm (IA) | CDC 2011 | Infection prevention |
+| Fluids | No dextrose-containing solutions or parenteral nutrition through the circuit | CDC 2011 IA | Never use as an infusion route |
+| Complications | Limb ischaemia and bleeding below 1% for radial; haematoma most common; femoral has higher infection risk | SSC 2021 rationale | Know the risks |
+Not covered by any source read: zeroing, levelling, waveform damping, transducer response tests, blood-sampling procedure, accidental injection management, flush pressure and rate, alarm limits.
+
+## 10. Warning signs and red flags
+Blood visible at a connection or on the bed; line disconnected or tubing separated; sudden loss or marked damping of waveform; pressure that does not match the patient; cold, pale, blue, mottled, painful or numb limb; swelling or expanding haematoma; fever or redness at site; wrong-route injection; alarm silenced; line pulled.
+
+## 11. Nursing interventions within scope
+| Action | Scope label |
+|---|---|
+| Site, limb and system checks, securement, labelling, reporting, documenting, applying pressure for bleeding | Independent nursing (competence required) |
+| Blood sampling from the line, flush system set-up, transducer changes, alarm limits, per protocol | Collaborative (per order or protocol) |
+| Deciding to insert, replace, move or remove the catheter; choosing the site; setting pressure targets; treating limb ischaemia | Prescriber / medical decision |
+
+## 12. Escalation criteria
+Escalate immediately for: bleeding or disconnection (and call for help while applying pressure), cold or ischaemic limb, loss or implausible waveform that cannot be corrected, signs of infection, suspected injection into the arterial line, or a pressure change with clinical deterioration.
+SBAR — **S:** bed X, left radial arterial line, hand is cold and pale with delayed capillary refill. **B:** line day 4, on vasopressors, flush system working, waveform present. **A:** possible limb ischaemia from the catheter. **R:** please review now; I am keeping the arm visible and not flushing the line; do you want it removed?
+
+## 13. Potential complications
+Haemorrhage from disconnection, haematoma, limb ischaemia or thrombosis, infection and bloodstream infection, nerve injury, air or accidental injection into the artery, inaccurate readings leading to wrong treatment, pressure injury from securement.
+
+## 14. Documentation
+Site and side; insertion date and line day; limb perfusion checks; site appearance; waveform quality and any correlation with cuff pressure; flush system and transducer change dates; blood samples; events (bleeding, disconnection, damped trace) and actions; escalation and response; daily necessity discussion.
+
+## 15. Practical bedside example
+At the start of the shift you check the radial site and dressing, look at the hand (colour, warmth, capillary refill), trace the tubing from the catheter to the transducer to confirm every connection and stopcock position, confirm the waveform and alarms, check the date on the tubing and flush set, and ask on the round whether the line is still needed.
+
+## 16. Clinical case (fictional)
+A 62-year-old woman on noradrenaline has a radial arterial line. At 03:00 the waveform becomes flat and the mean pressure reads very low although she looks the same. The nurse checks her, finds no bleeding, checks the tubing and connections, repeats a cuff reading that is normal, and calls the doctor with SBAR because the trace cannot be restored; the team decides on reassessment and, if needed, replacement. The nurse documents.
+
+## 17. MCQs
+**Q1 (judgment).** The arterial waveform suddenly becomes flat and the mean pressure reads very low, but the patient looks unchanged. What should the nurse do first?
+A. Increase the vasopressor rate to bring the pressure up, since the display shows hypotension and the patient may be unwell.
+B. Assess the patient and take a cuff reading, check the line and connections, and report if it cannot be corrected.
+C. Ignore the reading because arterial lines often give unreliable values and the patient appears to be unchanged.
+D. Flush the line repeatedly with the pressure bag until a waveform returns, without checking the patient or the connections.
+**Answer: B.**
+**Why correct:** Treat the patient, not the number; check clinically, compare with a cuff reading, check the system, escalate if unresolved.
+**Why not A:** Changing infusions on an unverified reading is unsafe, and needs an order.
+**Why not C:** Ignoring a monitoring problem risks missing true hypotension.
+**Why not D:** Repeated flushing can cause harm and does not address the cause.
+
+**Q2 (monitoring).** Which finding is the most urgent concern for a radial arterial line?
+A. A pale, cold hand with delayed capillary refill and new pain on the cannulated side.
+B. A small amount of dried blood at the edge of the dressing, with a warm, pink hand and normal capillary refill.
+C. The flush bag and tubing are labelled with the correct date and the connections are tight.
+D. An arterial trace that shows normal variation with the patient's breathing and a sharp upstroke.
+**Answer: A.**
+**Why correct:** Signs of limb ischaemia need immediate escalation (limb ischaemia is a recognised, uncommon complication).
+**Why not B:** A small amount of dried blood needs a dressing review but is not an emergency when the hand is warm and well perfused.
+**Why not C:** Correct practice.
+**Why not D:** An expected feature of the waveform.
+
+**Q3 (application).** According to CDC 2011, which of the following is **not** allowed through a pressure-monitoring circuit?
+A. A continuous flush with the prescribed flush solution delivered by the pressurised bag and flush device.
+B. A closed continuous-flush system that reduces the number of entries into the pressure-monitoring circuit.
+C. Dextrose-containing solutions or parenteral nutrition fluids infused as a continuous or intermittent infusion.
+D. Scrubbing the diaphragm with an appropriate antiseptic before the system is accessed for a blood sample.
+**Answer: C.**
+**Why correct:** CDC advises against giving dextrose-containing solutions or parenteral nutrition through the circuit (Category IA).
+**Why not A:** The continuous flush is part of the system.
+**Why not B:** Closed systems are recommended over open ones.
+**Why not D:** Scrubbing the diaphragm is recommended.
+
+**Q4 (judgment).** On the daily round the arterial line has not been used for sampling for 24 hours and the patient is stable off vasopressors. What is the best nursing contribution?
+A. Ask the prescriber whether the line is still needed, as CDC advises removal as soon as it is no longer essential.
+B. Remove the line yourself without an order, since it has not been used for sampling in the last twenty-four hours.
+C. Replace the line with a new one at a different site to keep the infection risk low for the rest of the admission.
+D. Leave it in place until it stops working or the patient leaves the unit, because removal is a medical task only.
+**Answer: A.**
+**Why correct:** CDC advises removing arterial catheters as soon as they are no longer needed; the prescriber decides.
+**Why not B:** Removal needs an order or protocol.
+**Why not C:** Routine replacement is not advised.
+**Why not D:** Unnecessary line days increase risk.
+
+**Q5 (safety).** A colleague wants to infuse a dextrose solution through the arterial line "because it is the only free line". What is the best response?
+A. Allow it for a short time if the rate is kept slow and the pressure trace is watched closely throughout.
+B. Say it is not appropriate, as CDC advises against dextrose through the circuit, and ask for another access route.
+C. Suggest adding a stopcock to the line to make it safer, so that the infusion can be started and stopped.
+D. Agree because the patient is in shock and every available access route may be needed for treatment.
+**Answer: B.**
+**Why correct:** Category IA recommendation; the arterial line is not an infusion route.
+**Why not A:** A slow rate does not remove the risk.
+**Why not C:** A stopcock adds manipulation and infection risk.
+**Why not D:** Shock does not change this safety rule.
+
+**Q6 (scope).** Which action belongs to the prescriber rather than the nurse?
+A. Checking limb colour, temperature and capillary refill each hour.
+B. Deciding to insert, replace or remove the arterial catheter.
+C. Labelling the tubing and flush bag with the date and time of set-up.
+D. Reporting a damped or lost waveform and an implausible reading.
+**Answer: B.**
+**Why correct:** Insertion, replacement and removal are medical decisions or protocol-governed procedures.
+**Why not A:** Nursing assessment.
+**Why not C:** Labelling is a nursing task that supports identification and changeover dates.
+**Why not D:** Nursing reporting.
+
+## 18. References
+- CDC/HICPAC. Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (last update October 2017), recommendation set 17. https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-14)
+- Evans L, Rhodes A, Alhazzani W, et al. Surviving Sepsis Campaign 2021. Intensive Care Med. 2021;47:1181-1247. https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
+- Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
+- Nolan JP, Sandroni C, Cariou A, et al. ERC and ESICM Guidelines 2025 Post-Resuscitation Care. Resuscitation. 2025;215:110809. https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf (accessed 2026-11-14)
+
+## 19. Local protocol note
+Frequency of checks, transducer set-up and levelling, flush solution and pressure, sampling technique, alarm limits and line-removal rules follow manufacturer instructions and local policy.
+
+## 20. Evidence, applicability and open questions
+- Source quality: infection-prevention content rests on the CDC 2011 guideline (dated; Category II items have limited evidence); clinical indications on ESICM 2014 (dated), SSC 2021 (superseded by an unread 2026 edition) and ERC–ESICM 2025 (current). No guideline read covers technical monitoring steps.
+- Applicability: US and European sources; practice differs by country (insertion sites, transducer intervals).
+- Not covered: pulmonary artery catheters, cardiac output monitoring, sampling technique, arterial pressure waveform analysis, paediatric catheters.
+- Open questions for reviewers (CCP, NE, BN, IPC): current transducer replacement interval; flush solution and pressure; zeroing and levelling standard; who may remove arterial lines.

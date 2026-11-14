@@ -9,7 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE NG253 Suspected sepsis in people aged 16 or over (published 19 Nov 2025; page last updated 23 Sep 2026) – UK-specific", "Surviving Sepsis Campaign adult guidelines 2021 (Intensive Care Med 2021;47:1181-1247) – a 2026 update exists but its full text was not accessible, so reviewers must reconcile"]
-sources: [S-NICE-NG253, S-SSC-2026]
+sources: [S-NICE-NG253, S-SSC-2021]
+sources_not_read: [S-SSC-2026]
 independently_written_note: "Original wording. NICE chapters 'Could this be sepsis?' and 'Evaluating risk' and the SSC 2021 full text (PMC open-access copy) were read; no text copied. NICE restricts commercial reuse; the PMC copy of SSC 2021 is distributed under temporary pandemic-era terms, so treat both as cite-only. SSC 2026 (published 2026) was NOT read: only titles of commentaries were seen, and no claim here relies on them."
 ---
 # Recognising possible sepsis in adults and escalating

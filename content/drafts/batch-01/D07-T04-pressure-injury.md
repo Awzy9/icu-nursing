@@ -9,7 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NPIAP/EPUAP/PPPIA International Guideline, 4th edition, Quick Reference Guide, version date 1 Sep 2026 (abridged; full chapters not read)"]
-sources: [S-NPIAP-2019]
+sources: [S-INTL-PI-2026]
+sources_not_read: [S-NPIAP-2019]
 independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Stage definitions were not read, so staging is not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
 ---
 # Skin assessment and pressure injury prevention in the ICU

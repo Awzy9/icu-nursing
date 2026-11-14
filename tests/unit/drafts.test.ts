@@ -17,7 +17,7 @@ const q = (id: string, answer: string, opts: string[], extra = {}) => ({
 const ok = ["Reassess the patient and escalate using SBAR now", "Wait for the next ward round before acting on it", "Record it and look again at the end of shift", "Ask a relative to find a doctor for the patient"];
 
 describe("Phase 2 drafts: structure and safety", () => {
-  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(19));
+  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(21));
   files.forEach((f, i) => it(`${f} passes validation`, () => expect(validateDraft(texts[i]!)).toEqual([])));
   batches.forEach((b) => it(`${b}: answer positions are balanced across the batch`, () => expect(batchPositionIssues(perBatch(b))).toEqual([])));
   it("every draft has six or more MCQs with an explanation for each wrong option", () => {
@@ -53,6 +53,32 @@ describe("Phase 2 drafts: consistency with the curriculum and source register", 
       expect(row, "topic id exists in the curriculum").toBeTruthy();
       expect(row!.includes(`,${m("domain")},`), "domain name matches the curriculum").toBe(true);
       for (const s of m("sources").replace(/[\[\]]/g, "").split(",").map((x) => x.trim()).filter(Boolean)) expect(register.includes(s), `source ${s} is in the register`).toBe(true);
+    });
+  });
+});
+
+describe("Source status integrity (no inaccessible source is presented as verified)", () => {
+  const reg = readFileSync("sources/source_register.csv", "utf8").trim().split(/\r?\n/);
+  const head = reg[0]!.split(",");
+  const idx = head.indexOf("source_status");
+  const status = new Map<string, string>();
+  for (const line of reg.slice(1)) {
+    const cells = (line.match(/("([^"]|"")*"|[^,]*)(,|$)/g) ?? []).map((c) => c.replace(/,$/, "").replace(/^"|"$/g, ""));
+    status.set(cells[0]!, cells[idx]!);
+  }
+  it("register has a status for every source", () => {
+    expect(idx).toBeGreaterThan(0);
+    for (const [, s] of status) expect(["VERIFIED FULL TEXT", "PARTIAL OR SUMMARY", "NOT READ", "SUPERSEDED"]).toContain(s);
+  });
+  files.forEach((f, i) => {
+    it(`${f}: cited sources are read; unread sources are listed separately; superseded ones carry a caveat`, () => {
+      const ids = (/^sources: \[(.*?)\]/m.exec(texts[i]!)?.[1] ?? "").split(",").map((x) => x.trim()).filter(Boolean);
+      for (const id of ids) {
+        const s = status.get(id);
+        expect(s, `${id} in register`).toBeTruthy();
+        expect(s, `${id} must not be NOT READ`).not.toBe("NOT READ");
+        if (s === "SUPERSEDED") expect(/supersed|2026 (edition|update)/i.test(texts[i]!), `${id} is superseded: the draft must say so`).toBe(true);
+      }
     });
   });
 });

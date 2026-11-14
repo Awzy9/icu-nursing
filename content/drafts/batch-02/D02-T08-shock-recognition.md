@@ -9,7 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM Task Force: Consensus on circulatory shock and hemodynamic monitoring (Intensive Care Med 2014;40:1795-1815; CC BY-NC) – a 2014 document; newer guidance exists"]
-sources: [S-OPENRN-HA]
+sources: [S-ESICM-SHOCK-2014, S-SSC-2021]
+sources_not_read: [S-OPENRN-HA, S-SSC-2026]
 independently_written_note: "Original wording. The 2014 ESICM consensus (open access, non-commercial licence) was read in full text. Open RN Health Alterations (the register source) was not read for this topic. SSC 2021 statements were used only where stated. Vasopressor and fluid dosing are deliberately not covered."
 ---
 # Recognising circulatory shock and the nurse's response
@@ -69,7 +70,7 @@ Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially 
 
 **Newer septic-shock statements (SSC 2021, septic shock only):** capillary refill time may be used as an adjunct to guide resuscitation (weak recommendation, low-quality evidence); for adults with septic shock on vasopressors, an initial MAP target of 65 mmHg is recommended over higher targets (strong, moderate-quality evidence). These apply to **septic** shock and do not replace the individualised target set by the prescriber for other shock types.
 
-**Dated evidence:** the ESICM consensus is from 2014. The SSC 2021 statements above agree with its MAP 65 starting point and lactate use, but a 2026 SSC update exists that could not be read; reviewers must check whether any statement here has changed.
+**Dated evidence:** the ESICM consensus is from 2014. The SSC 2021 statements above agree with its MAP 65 starting point and lactate use, but SSC 2021 is superseded by a 2026 edition that could not be read; reviewers must check whether any statement here has changed.
 
 ## 10. Warning signs and red flags
 Cold, mottled or blue skin; capillary refill prolonged; new confusion or drowsiness; urine output falling; heart rate rising or new arrhythmia; blood pressure falling or MAP below the ordered target; rising lactate; shortness of breath; chest pain; unexplained bleeding or swelling; no response to first treatments.

@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE CG174 Intravenous fluid therapy in adults in hospital (published 10 Dec 2013; last updated 5 May 2017) – recommendations chapter", "NICE NG148 Acute kidney injury (published 18 Dec 2019; updated 16 Oct 2024) – urine output and monitoring statements"]
-sources: [S-NICE-CG174, S-NICE-AKI]
+sources: [S-NICE-CG174, S-NICE-NG148]
 independently_written_note: "Original wording. NICE content is cite-only (commercial-gain restriction). Both guidelines are UK, adult, general-hospital documents; CG174 is dated 2013/2017 and its scope exclusions (for example specialist or paediatric populations) were not read, so applicability to every ICU population is not established. KDIGO 2012 and the 2026 KDIGO draft were not used. Fluid volumes, rates and fluid types are prescriber decisions and are deliberately not given."
 ---
 # Urine output monitoring and fluid balance

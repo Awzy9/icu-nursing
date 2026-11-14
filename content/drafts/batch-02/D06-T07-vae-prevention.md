@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SHEA/IDSA/APIC Strategies to prevent VAP, VAE and non-ventilator hospital-acquired pneumonia in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022;43:687-713; CC BY)", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – cuff-pressure recommendations only"]
-sources: [S-CDC-IC]
+sources: [S-SHEA-VAP-2022, S-AARC-PVA, S-AARC-SUCT]
 independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (full text PDF, copyright Daedalus Enterprises – cite-only) was read for the cuff-pressure recommendations. The 2022 SHEA/IDSA/APIC update (open access, CC BY) was read in full text for the adult recommendations. The non-ventilator pneumonia, paediatric and neonatal sections and the CDC surveillance manual were not read in detail. The register lists a SHEA/IDSA/APIC compendium as 'to register'; it is registered in batch-02-sources.csv."
 ---
 # Preventing ventilator-associated events and pneumonia in adults

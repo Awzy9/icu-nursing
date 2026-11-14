@@ -9,7 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM clinical practice guidelines: Early enteral nutrition in critically ill patients (Intensive Care Med 2017;43:380-398; CC BY-NC)", "SHEA/IDSA/APIC 2022 update on VAP prevention (feeding statements only)"]
-sources: [S-ASPEN]
+sources: [S-ESICM-EEN-2017, S-SHEA-VAP-2022]
+sources_not_read: [S-ASPEN]
 independently_written_note: "Original wording. The ESICM 2017 early enteral nutrition guideline and the VAP/VAE 2022 update were read in full text. ASPEN/SCCM and ESPEN guidelines named in the register were not accessible. Energy and protein targets, feed products, rates and tube-placement verification methods are NOT covered; they are decisions or local-policy matters for the dietitian, prescriber and unit."
 ---
 # Enteral feeding in the ICU – tolerance monitoring and aspiration prevention
@@ -36,7 +37,7 @@ Poor nutrition and feeding complications affect recovery, infection risk and ven
 - **Tube:** patency, securement, skin under the tube, flush routine, blockage.
 
 ## 7. Nursing responsibilities
-- Check tube position and securement before each feed or medicine and per policy.
+- Check tube position and securement as required by the unit's tube-placement policy. None of the sources read (ESICM 2017, SHEA 2022) specifies how placement is verified or how often; this is local policy and an unsupported area for evidence.
 - Keep the head of the bed raised unless contraindicated (the SHEA update lists 30–45° as an essential VAP prevention practice).
 - Run and label feeds and giving sets as the unit requires, with clean technique, and record the volume given.
 - Monitor tolerance at the frequency set; report intolerance early.

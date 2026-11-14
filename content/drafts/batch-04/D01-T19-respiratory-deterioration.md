@@ -1,0 +1,171 @@
+---
+topic_id: D01-T19
+title: Recognising and responding to respiratory deterioration (early-warning scores)
+domain: Respiratory and Airway Management
+learner_level: transitioning
+status: DRAFT
+origin: ai_generated
+clinically_reviewed: false
+authors: []
+clinical_reviewers: []
+guideline_versions: ["Royal College of Physicians. National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS. Updated report of a working party, December 2017 (full text read)", "NICE NG253 Suspected sepsis in people aged 16 or over (chapters read: could this be sepsis; evaluating risk)", "AARC CPG Management of Adult Patients With Oxygen in the Acute Care Setting 2022", "ERC Guidelines 2025 Adult ALS – prevention of in-hospital cardiac arrest"]
+sources: [S-RCP-NEWS2, S-NICE-NG253, S-AARC-O2, S-ERC-ALS-2025]
+sources_not_read: [S-BTS-OXYGEN-2017, S-SSC-2026]
+independently_written_note: "Original wording. The RCP NEWS2 report (77 pages) was downloaded and read in full text. RCP states there is no copyright restriction but the RCP must be acknowledged, and the charts must be reproduced in colour and not modified: this draft therefore does not reproduce or alter the chart or scoring table and tells the learner to use the official chart. NEWS2 is a UK (NHS) tool for adults aged 16 or over who are not pregnant. ERC statements are paraphrased only (commercial use needs an ERC agreement)."
+---
+# Recognising and responding to respiratory deterioration (early-warning scores)
+> DRAFT – NOT clinically reviewed. AI-generated. NEWS2 is a UK tool; ICU units may use other scores and continuous monitoring.
+
+## 1. Overview
+Respiratory deterioration often shows first as a change in respiratory rate, a rising oxygen requirement or new confusion. Early-warning scores such as NEWS2 standardise how nurses measure and combine routine observations so that deterioration triggers a timely response. The score is an aid to clinical assessment, not a substitute for judgement: any concern about a patient should prompt urgent review whatever the score (RCP).
+
+## 2. Learning objectives
+1. Name the physiological parameters in NEWS2 and the importance of recording the oxygen device and flow.
+2. Explain the monitoring frequency and clinical response that RCP links to score bands, and the role of the registered nurse.
+3. Describe when the alternative oxygen scoring scale (Scale 2) applies and who decides.
+4. Identify limits of the score: patient groups where it should not be used or may be unreliable.
+5. Escalate with SBAR and manage oxygen safely within an order or protocol.
+6. Separate nursing actions from decisions of the responding clinician or team.
+
+## 3. Why this matters in ICU nursing
+Patients arrive in or leave the unit with early-warning scores, and step-down patients may deteriorate. Understanding the logic of scores helps nurses communicate with ward and emergency teams and recognise when an ICU patient on continuous monitoring is trending towards failure.
+
+## 6. Clinical assessment
+- **The seven NEWS2 parameters (RCP):** respiration rate; oxygen saturation; whether the patient is breathing air or receiving supplemental oxygen; systolic blood pressure; pulse rate; level of consciousness or new confusion (ACVPU: Alert, Confusion, Voice, Pain, Unresponsive); temperature. Use the official RCP chart for the scoring bands; do not modify it.
+- **Oxygen delivery:** record whether the patient is on air or oxygen, the device and the flow rate, using the device codes recommended by the BTS (RCP): a flow rate alone does not define how much oxygen a patient receives.
+- **New confusion:** scores in the highest single-parameter category; if it is unclear whether confusion is new, assume it is new until shown otherwise (RCP).
+- **Respiratory-specific observation (standard clinical assessment, not graded in the sources):** work of breathing, use of accessory muscles, ability to speak, pattern of breathing, cough and sputum, chest movement, skin colour, tiredness.
+- **Context:** recent surgery, infection source, known lung disease, trend over hours, response to oxygen, medicines affecting breathing.
+- **Hypercapnic respiratory failure:** for patients with a prescribed target of 88–92% saturation, RCP recommends the dedicated SpO₂ Scale 2, used only on the decision of a competent clinical decision-maker and recorded in the notes; the unused scale is clearly crossed out. Otherwise use Scale 1.
+
+## 7. Nursing responsibilities
+- Measure all parameters accurately (count the respiratory rate over a full period, use a good SpO₂ trace, check device and flow), calculate the score, and record the monitoring frequency on the chart.
+- Follow the response bands (RCP, below) and the local policy; the registered nurse decides on increased monitoring or escalation at lower scores and informs the medical team at higher scores.
+- Escalate whenever concerned, even if the score is low.
+- Titrate oxygen only within the ordered target or protocol; do not turn oxygen up simply to lower the score, especially in patients with hypercapnic respiratory failure (RCP's concern).
+- Prepare for likely orders: blood gas, chest imaging, ECG, IV access, nebulisers or other treatments as ordered; note ceilings of care when decided.
+- Record observations and actions; consider the "ceiling of care", including suitability for CPR and invasive ventilation, at any score and especially at 7 or above (RCP).
+
+## 8. Monitoring parameters
+Minimum monitoring frequency by score (RCP, adults): score 0 – at least 12-hourly; 1–4 – 4–6-hourly; 5–6 or any single parameter scoring 3 – at least hourly until reviewed and a plan documented; 7 or more – continuous monitoring and recording of vital signs. When a patient moves to continuous monitoring, a full dataset should still be charted at a minimum interval (for example hourly after a score of 5 or more). In ICU these minimums are usually exceeded.
+
+## 9. Important findings – RCP clinical response bands and related sources
+| Score | RCP clinical response (summarised) | Nursing relevance |
+|---|---|---|
+| 0 | Routine monitoring, at least 12-hourly | Continue |
+| 1–4 | Inform the registered nurse, who assesses and decides on more frequent monitoring or escalation | Use judgement |
+| 3 in any single parameter | Registered nurse informs the medical team, who review and decide on escalation; at least hourly monitoring | Do not ignore a single red score |
+| 5–6 (urgent response threshold) | Registered nurse immediately informs the medical team, requests urgent assessment by a clinician or team with core acute-illness competencies, and care is given in an environment with monitoring facilities | Escalate now |
+| 7 or more (emergency response threshold) | Immediate call to the medical team (at least specialist registrar level), emergency assessment by a team with critical-care competencies including advanced airway skills, consider transfer to level 2 or 3 care, continuous monitoring | Emergency |
+| Confusion | New confusion scores in the single-parameter category and requires urgent assessment | Assume new if unsure |
+| Sepsis link | NEWS of 5 or more with suspected infection should prompt urgent consideration of sepsis; NICE NG253 gives NEWS2-based risk bands for adults in acute settings (see D06-T01) | Consider sepsis |
+| Limits | Not for children under 16 or pregnant women; may be unreliable in spinal cord injury (especially tetraplegia or high paraplegia); not a substitute for clinical judgement; if the nurse judges the score underestimates concern, escalate to a more senior decision-maker | Use caution |
+| Oxygen safety | AARC supports SpO₂ 94–98% for most patients and 88–92% for COPD (evidence level C); ERC advises hospitals to use early-warning systems, to empower all staff to call for help on clinical concern, and to use structured communication | Align with prescription |
+
+## 10. Warning signs and red flags
+Rising respiratory rate; rising oxygen requirement; falling SpO₂ despite oxygen; new confusion or drowsiness; exhaustion; inability to speak in sentences; accessory-muscle use; new cyanosis; low blood pressure; rapid pulse; chest pain; patient's or relatives' concern that something is wrong; a single parameter at its highest score.
+
+## 11. Nursing interventions within scope
+| Action | Scope label |
+|---|---|
+| Accurate observations, scoring, trend recording, escalation, positioning for comfort, reassurance, staying with the patient | Independent nursing |
+| Titrating oxygen within the written target; starting the monitoring frequency per the chart; preparing for blood gas, ECG, imaging | Collaborative (per order or protocol) |
+| Choosing Scale 2 or the oxygen target for hypercapnic patients; diagnosing the cause; starting HFNC, NIV or ventilation; antibiotics, bronchodilators, diuretics; ceiling-of-care decisions | Prescriber / responding clinician decision |
+
+## 12. Escalation criteria
+Escalate according to the bands above and **whenever the nurse is concerned**. In ICU, escalate any sustained rise in oxygen requirement, increasing work of breathing or new confusion.
+SBAR — **S:** bed X, NEWS2 is [score] with respiratory rate [x] and SpO₂ [x] on [device/flow]. **B:** day 2 after surgery/pneumonia, target [range], trend over 6 hours. **A:** worsening respiratory failure; I am concerned about exhaustion. **R:** please review now; consider a blood gas and escalation of support; I will repeat observations every [interval].
+
+## 13. Potential complications
+Respiratory failure and arrest, hypoxic organ injury, over-oxygenation and worsening hypercapnia, delayed recognition when relying on the score alone, alarm fatigue.
+
+## 14. Documentation
+All seven parameters with times; air or oxygen, device and flow; the score and which scale; changes in monitoring frequency; escalation (who, when, what was said, response); ceiling-of-care decisions; patient or family concerns.
+
+## 15. Practical bedside example
+On a four-hourly round you count the respiratory rate for a full minute (26), find SpO₂ 92% on 2 L/min via nasal cannula, note the patient is more drowsy than earlier, calculate the score, increase the monitoring to hourly, call using SBAR because the aggregate has risen and the nurse is worried, and record each step.
+
+## 16. Clinical case (fictional)
+A 74-year-old man with COPD is admitted with an infection. His prescribed target is 88–92% and the team has chosen Scale 2. An overnight nurse notices that the score is 5 mainly because of oxygen use and a raised respiratory rate, and that he is drowsier. She does not increase oxygen to "improve the score", repeats observations, calls the doctor with SBAR, and the team requests a blood gas.
+
+## 17. MCQs
+**Q1 (prioritization).** At the routine round a nurse finds a patient with an aggregate NEWS2 of 7 and new confusion. What should the nurse do first?
+A. Repeat the observations in four hours, since the patient is already receiving oxygen and the trend can be reviewed then.
+B. Inform the medical team immediately, ask for an emergency assessment by a critical-care team, and start continuous monitoring.
+C. Increase the oxygen until the saturation reads 100% and then re-score, because the score should fall once saturation rises.
+D. Record the score and ask the family to stay with the patient overnight so that they can alert staff if there is any change.
+**Answer: B.**
+**Why correct:** Seven or more is the emergency response threshold: immediate call, critical-care assessment, continuous monitoring.
+**Why not A:** A four-hour interval is far too long at this score.
+**Why not C:** Over-oxygenation is not the aim and the score reflects physiology, not just saturation.
+**Why not D:** Family presence does not replace an emergency response.
+
+**Q2 (judgment).** A nurse is worried about a patient who looks tired and is breathing quickly, but the NEWS2 is only 3. What does RCP advise?
+A. Wait until the score reaches 5 before calling anyone, because lower scores are not considered a reason to call.
+B. Reassess at the standard interval and take no further action, since the score is below the urgent response threshold.
+C. Ask a colleague whether the patient's appearance matches the chart before deciding whether any call is justified.
+D. Escalate on concern: any concern about a patient's condition should prompt urgent review whatever the score.
+**Answer: D.**
+**Why correct:** RCP states the score is not a substitute for clinical judgement.
+**Why not A:** The score is not the only trigger.
+**Why not B:** Ignores the clinician's concern.
+**Why not C:** Delay for agreement is not required.
+
+**Q3 (application).** A patient has a prescribed target of 88–92% for hypercapnic respiratory failure. Which approach matches RCP guidance?
+A. Score the saturation with the standard scale and increase the oxygen so that the score falls and the patient looks better.
+B. Use the dedicated SpO₂ Scale 2 only when a competent clinical decision-maker has decided and recorded it in the notes.
+C. Choose Scale 2 for any patient with a smoking history or lung disease, to be on the safe side with the oxygen.
+D. Cross out both scales so that staff must rely on their own judgement about the oxygen saturation instead.
+**Answer: B.**
+**Why correct:** RCP recommends Scale 2 only on the decision of a competent clinical decision-maker, recorded in the notes; otherwise Scale 1.
+**Why not A:** RCP warns against overuse of oxygen in hypercapnic patients to lower the score.
+**Why not C:** The scale depends on a prescribed target, not smoking history.
+**Why not D:** The unused scale should be crossed out, not both.
+
+**Q4 (understanding).** For which group does RCP say NEWS2 should not be used?
+A. Adults aged over 65 years, because the oxygen saturation bands were not developed for older patients.
+B. Patients receiving supplemental oxygen, because oxygen use makes the saturation reading unreliable for scoring.
+C. Children under 16 and women who are pregnant, because their responses to acute illness differ.
+D. Patients who have been on the intensive care unit for more than a week, because their baseline values have changed.
+**Answer: C.**
+**Why correct:** RCP states NEWS should not be used in children under 16 or in pregnancy.
+**Why not A:** It is intended for adults.
+**Why not B:** Oxygen use is part of the score.
+**Why not D:** Length of stay is not a criterion.
+
+**Q5 (documentation).** Why does RCP recommend recording the oxygen device and flow rate as well as the saturation?
+A. A flow rate alone does not define how much oxygen the patient receives, so the device is needed too.
+B. The device is needed for equipment audit only and has no bearing on how the observations are interpreted.
+C. Saturation is not important once oxygen is being given, so only the device and flow need to be recorded.
+D. The device determines the legal responsibility of the nurse for any change in the patient's oxygen need.
+**Answer: A.**
+**Why correct:** RCP states recording flow without the delivery device does not define the oxygen received.
+**Why not B:** The purpose is clinical interpretation.
+**Why not C:** Saturation remains a key parameter.
+**Why not D:** Not the reason given.
+
+**Q6 (scope).** Which task belongs to the responding clinician rather than the nurse?
+A. Counting the respiratory rate for a full minute and recording the result on the chart.
+B. Deciding to start high-flow nasal oxygen or non-invasive ventilation for the patient.
+C. Informing the medical team promptly of a rising early-warning score and the nurse's concern.
+D. Charting the oxygen device and flow rate beside each set of observations.
+**Answer: B.**
+**Why correct:** Choosing respiratory support is a prescriber or team decision.
+**Why not A:** Nursing assessment task.
+**Why not C:** Nursing escalation task.
+**Why not D:** Nursing documentation task.
+
+## 18. References
+- Royal College of Physicians. National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS. Updated report of a working party. London: RCP, 2017. https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf (accessed 2026-11-14). "No copyright restriction"; RCP must be acknowledged; charts must not be modified.
+- NICE. Suspected sepsis in people aged 16 or over (NG253), chapters "Could this be sepsis?" and "Evaluating risk". https://www.nice.org.uk/guidance/ng253 (accessed 2026-11-14)
+- Piraino T, et al. AARC CPG: Management of Adult Patients With Oxygen in the Acute Care Setting. Respir Care. 2022;67(1):115-128. https://www.aarc.org/wp-content/uploads/2022/10/cpg-clinical-mangement-adult-o2-acute-settings.pdf (accessed 2026-11-14)
+- Soar J, et al. ERC Guidelines 2025 Adult Advanced Life Support. Resuscitation. 2025;215:110769 (prevention of in-hospital cardiac arrest). https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf (accessed 2026-11-14)
+
+## 19. Local protocol note
+Early-warning score used, frequency of observations in ICU, response teams, escalation timings and ceilings of care follow the institution's policy.
+
+## 20. Evidence, applicability and open questions
+- Source quality: RCP NEWS2 is a national clinical standard from a working party (2017), with recommendations and evaluation data; validation studies were not independently reviewed. It is designed for ward-level acute care, not necessarily ICU. Respiratory-specific bedside signs are standard clinical practice not graded in the sources read.
+- Jurisdiction: NEWS2 is NHS/UK. Other countries use different scores (MEWS, local tools); thresholds are not transferable. NICE NG253's NEWS2 bands apply to adults aged 16 or over, not pregnant, in acute settings.
+- Not covered: paediatric and obstetric scores, ICU severity scores (APACHE, SOFA), NIV and HFNC management, blood gas interpretation.
+- Open questions for reviewers (RT, CCP, NE, BN): which score the platform teaches; ICU relevance; combination with continuous monitoring; Scale 2 use outside the UK.
