@@ -81,71 +81,71 @@ Before turning and bathing a ventilated patient on contact precautions, gather g
 A 62-year-old ventilated man, day 5, develops frequent watery stools. He is on broad-spectrum antibiotics and is not on isolation. The nurse recognises a trigger, starts the interim contact-precaution measures in policy, informs the charge nurse and infection prevention, asks the team about testing, keeps the patient's hygiene and skin care schedule, and documents. The decision on room, testing and treatment stays with the team.
 
 ## 17. MCQs
-**Q1 (prioritization).** A ventilated patient has had three watery stools this shift and is not on isolation. The nurse is due to turn him, and another patient needs help in the next bay. What is the best next step?
-A. Finish assisting the other patient first, then mention the stools at handover so the team can decide on precautions.
-B. Wait for the stool result before applying extra precautions, since the cause is not yet confirmed.
-C. Apply the interim contact-precaution measures in policy now, notify the charge nurse and infection prevention, then continue care.
-D. Place a note in the chart and use gloves alone for this turn, since gowns are reserved for confirmed infections.
-**Answer: C.**
-**Why correct:** Interim measures start at the trigger and escalation runs in parallel; waiting leaves other patients exposed.
-**Why not A:** Delaying until handover extends the period of possible spread.
-**Why not B:** Precautions are based on the risk and presentation, not on a confirmed result.
-**Why not D:** Gloves alone do not protect clothing and arms from contamination during close contact; policy normally requires a gown.
-
-**Q2 (judgment).** Which statement best describes how a nurse chooses PPE for a task?
-A. From the expected exposure for that task (such as splashes or contact with secretions), together with the patient's precaution level.
-B. From the patient's diagnosis only, using the same set for every task on that patient.
-C. From the supplies nearest to the bed, since any barrier is better than none.
-D. From the senior nurse's preference on the day, because PPE choice is not guided by policy.
-**Answer: A.**
-**Why correct:** Standard precautions rely on risk assessment of the task as well as the isolation category.
-**Why not B:** A fixed set can over- or under-protect; tasks differ in exposure.
-**Why not C:** Convenience does not match protection; wrong PPE gives false reassurance.
-**Why not D:** PPE selection is defined by policy and risk, not by personal preference.
-
-**Q3 (safety).** A patient on airborne precautions needs a transfer to imaging. Which plan best protects others?
-A. Transfer as usual because imaging staff already use standard precautions for all patients.
-B. Transfer with the nurse wearing a surgical mask and the patient wearing no mask, to avoid distress.
-C. Delay transfer until the isolation order is lifted, whatever the clinical urgency.
-D. Limit the transfer to what is essential, inform imaging beforehand, and follow the local respirator and patient-mask policy.
+**Q1 (prioritization).** A ventilated patient has had three watery stools this shift and is not on isolation. The nurse is about to turn him, and a nurse in the next bay asks for help with a routine task. What is the best next step?
+A. Finish helping in the next bay, then mention the stools at handover so that the team can decide on precautions.
+B. Wait for a stool sample result before applying extra precautions, because the cause is not yet confirmed.
+C. Put on gown and gloves for the turn only, and review the need for precautions once the stool result is back.
+D. Start the interim contact-precaution measures in policy now and tell the charge nurse and infection prevention.
 **Answer: D.**
-**Why correct:** Transport is limited and planned; receiving staff must know the precautions.
+**Why correct:** Interim measures start at the trigger and escalation runs in parallel; waiting leaves other patients exposed.
+**Why not A:** Delaying until handover extends the period in which organisms can spread to other patients and staff.
+**Why not B:** Precautions are based on the presentation and risk, not on a confirmed laboratory result.
+**Why not C:** Protecting only one task leaves the room, equipment and later care unprotected, and nobody with infection-prevention expertise is told.
+
+**Q2 (judgment).** Which approach to choosing PPE for a task is most consistent with standard precautions?
+A. Base it on the expected exposure for the task, such as splashes or secretion contact, and the precaution level.
+B. Use the same set of PPE for every task on a patient, chosen from the diagnosis written on the isolation sign.
+C. Use whatever is nearest at the time, because any barrier is better than none and speed is important in the ICU.
+D. Follow the preference of the most senior nurse on duty, since PPE choices are a matter of individual experience.
+**Answer: A.**
+**Why correct:** Standard precautions rely on a risk assessment of the task as well as the isolation category.
+**Why not B:** A fixed set can over- or under-protect, because exposure differs from task to task.
+**Why not C:** Convenience does not equal protection; the wrong PPE can give false reassurance.
+**Why not D:** PPE selection is defined by policy and risk assessment, not by personal preference.
+
+**Q3 (safety).** A patient on airborne precautions needs an urgent scan. Which plan best protects other people?
+A. Transfer as for any patient, because imaging staff already follow standard precautions with everyone.
+B. Transfer with the nurse in a surgical mask and the patient unmasked, so as not to increase the patient's distress.
+C. Postpone the scan until the isolation order is lifted, whatever the clinical urgency, to remove all risk to others.
+D. Keep the transfer to what is essential, inform imaging beforehand and follow the local respirator and patient-mask policy.
+**Answer: D.**
+**Why correct:** Transport is limited and planned, and receiving staff must know which precautions apply.
 **Why not A:** Standard precautions alone do not control airborne spread.
-**Why not B:** A surgical mask does not meet airborne respirator requirements; the patient may also need a mask per policy.
-**Why not C:** A blanket delay can harm the patient; the decision balances clinical need with controls.
+**Why not B:** A surgical mask does not meet airborne respirator requirements, and the patient may need a mask during transport.
+**Why not C:** A blanket delay can harm the patient; the decision should balance clinical need with infection controls.
 
-**Q4 (application).** After caring for a patient on contact precautions, the nurse removes gown and gloves inside the room. What is the best next action?
+**Q4 (application).** The nurse has just cared for a patient on contact precautions and removed the gown and gloves at the room exit. What is the best next action?
 A. Walk to the next patient and perform hand hygiene there, before touching anything.
-B. Perform hand hygiene according to policy and clean shared equipment taken into the room before it is used on another patient.
-C. Keep the gloves for the next task to save supplies, since they look clean.
-D. Wipe the monitor and pump with the same cloth used on the bed rails, then go to the desk.
+B. Perform hand hygiene per policy, then clean any shared equipment taken into the room before reuse.
+C. Keep the gloves on for the next task to save supplies, since they appear clean after the gown is removed.
+D. Wipe the monitor and the bed rails with the same cloth, then go to the desk to chart.
 **Answer: B.**
-**Why correct:** Hand hygiene after PPE removal and cleaning of shared equipment prevent carriage on hands and devices.
-**Why not A:** Contamination can be spread while walking before hygiene.
-**Why not C:** Reusing gloves between patients is a breach.
-**Why not D:** Using one cloth across surfaces spreads contamination.
+**Why correct:** Hand hygiene after PPE removal and cleaning shared equipment stop transfer on hands and devices.
+**Why not A:** Contamination can be spread while walking before hand hygiene is done.
+**Why not C:** Gloves must be removed and replaced between patients; reuse is a breach.
+**Why not D:** One cloth used across surfaces spreads contamination from dirtier to cleaner areas.
 
-**Q5 (monitoring).** During the shift handover, which finding most needs follow-up from the nurse about precautions?
-A. A patient on droplet precautions whose sign is displayed and mask supply is full.
-B. A patient with a resolved infection whose isolation was formally lifted by the team.
-C. A patient with new cough and fever admitted from a care home, nursed in an open bay without precautions.
-D. A patient on contact precautions whose equipment is cleaned and dedicated.
-**Answer: C.**
-**Why correct:** New respiratory symptoms plus a high-risk admission source are a trigger for interim precautions and review.
-**Why not A:** Everything is in place.
-**Why not B:** Lifting by the team is a documented decision.
-**Why not D:** Controls are already working.
+**Q5 (monitoring).** At handover, which finding most needs follow-up about precautions?
+A. A patient with new cough and fever, admitted from another facility, nursed in an open bay without any precautions.
+B. A patient on droplet precautions whose sign is displayed and who has masks available at the door.
+C. A patient whose isolation was lifted by the team after the documented criteria were met.
+D. A patient on contact precautions with dedicated equipment that has been cleaned at the start of the shift.
+**Answer: A.**
+**Why correct:** New respiratory symptoms together with a higher-risk admission source are a trigger for interim precautions and review.
+**Why not B:** Controls are in place and visible, so no gap is evident.
+**Why not C:** Lifting by the team after criteria were met is a documented decision.
+**Why not D:** Dedicated, cleaned equipment shows the controls are working.
 
-**Q6 (safety).** A nurse is splashed on the face with tracheal secretions during suctioning. What should the nurse do first?
-A. Complete the suctioning task, then deal with the splash after the shift.
-B. Rinse the area, follow the local exposure procedure, report it, and ask for relief if needed.
-C. Change the glove and continue, as respiratory secretions are not considered a risk to staff.
-D. Mention it to a colleague informally and note it in the patient chart only.
-**Answer: B.**
-**Why correct:** Prompt first aid and reporting allow assessment and follow-up per the exposure policy.
-**Why not A:** Delay reduces the benefit of immediate action.
-**Why not C:** Secretions can carry pathogens; exposure must be managed.
-**Why not D:** Exposure is documented through the staff incident process, not only in the patient chart.
+**Q6 (safety).** Tracheal secretions splash onto the nurse's face during suctioning. What should the nurse do first?
+A. Rinse the area, follow the local exposure procedure, report it and ask for relief if needed.
+B. Change gloves and carry on, since respiratory secretions are not considered a risk to staff.
+C. Tell a colleague informally and record the incident in the patient's chart so the team is aware.
+D. Complete the suctioning and rinse the area at the end of the shift when the workload has eased.
+**Answer: A.**
+**Why correct:** Immediate first aid and prompt reporting allow assessment and follow-up under the exposure policy.
+**Why not D:** Delay reduces the benefit of immediate action and prolongs exposure.
+**Why not B:** Secretions can carry pathogens, so exposure must be managed.
+**Why not C:** Staff exposures are reported through the staff incident process, not only in the patient's chart.
 
 ## 18. References
 - CDC. Standard Precautions for All Patient Care. Page dated 3 April 2024. https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html (accessed 2026-11-14)

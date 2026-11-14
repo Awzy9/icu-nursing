@@ -92,70 +92,70 @@ Before opening a line: hand hygiene, gather a sterile syringe and flush, scrub t
 A 55-year-old, line day 7 after bowel surgery, becomes febrile with rigors and a heart rate rising from 90 to 118. The dressing is dry; the site is mildly tender on palpation. The nurse repeats observations, tells the intensivist using SBAR, asks whether the line is still needed, prepares for cultures if ordered, and records the timeline. The nurse does not remove the line or start antimicrobials without an order.
 
 ## 17. MCQs
-**Q1 (monitoring).** A patient with a central line has a transparent dressing that is dry and intact but one corner is curling at the edge. The patient is afebrile. What should the nurse do?
-A. Tape over the corner and re-check at the next shift because the site looks clean.
-B. Arrange an aseptic dressing change using hand hygiene and the unit antiseptic, as the integrity is compromised.
-C. Leave it until the scheduled change day, since the dressing is dry and there are no signs of infection.
-D. Remove the dressing completely and leave the site open to air to check it properly.
+**Q1 (monitoring).** A central-line patient is afebrile, and the transparent dressing is dry, but one corner is curling away from the skin. What should the nurse do?
+A. Tape over the corner and review it again at the next shift, since the site looks clean, the patient is well and the dressing is still dry.
+B. Arrange an aseptic dressing change with hand hygiene and the unit antiseptic, since the barrier is no longer intact.
+C. Leave it until the scheduled change day, as the dressing is dry and there are no signs of infection.
+D. Remove the dressing and leave the site uncovered for inspection until the next scheduled change.
 **Answer: B.**
 **Why correct:** A lifting dressing is a breach of the barrier and should be replaced aseptically.
-**Why not A:** Tape does not restore a sterile barrier and traps moisture.
-**Why not C:** Waiting for the schedule leaves a break in the barrier.
-**Why not D:** Leaving an open site increases contamination risk.
+**Why not A:** Tape does not restore a sterile barrier and can trap moisture and organisms.
+**Why not C:** Waiting for the schedule leaves a known break in the barrier.
+**Why not D:** An uncovered site increases contamination risk and is not an accepted alternative.
 
-**Q2 (judgment).** A new fever of 38.8 °C, rigors and a rising heart rate occur in a patient with a central line on day 6. The site looks clean. What is the best action?
-A. Give paracetamol per the standing protocol, repeat the temperature in four hours and review at handover.
-B. Remove the dressing, pull the line yourself and send the tip to the laboratory.
-C. Note the fever in the chart and wait for the next medical round because the site is clean.
-D. Reassess observations, escalate using SBAR, mention the line, and prepare for cultures if ordered.
+**Q2 (judgment).** On day 6 of a central line, a patient develops a temperature of 38.8 °C, rigors and a rising heart rate. The site looks clean. What is the best action?
+A. Give an antipyretic under a standing protocol, repeat the temperature in four hours and review at handover.
+B. Take the dressing off, pull the line yourself and send the tip for culture to make sure of the cause.
+C. Record the fever and wait for the next scheduled medical round, because the site looks clean and dry.
+D. Reassess the observations, escalate with SBAR mentioning the line, and prepare for cultures if ordered.
 **Answer: D.**
-**Why correct:** Systemic signs with a line require prompt assessment and escalation even if the site is clean.
-**Why not A:** Treating the fever alone delays sepsis recognition.
+**Why correct:** Systemic signs with a line in place need prompt assessment and escalation even when the site looks clean.
+**Why not A:** Treating only the fever delays recognition of possible sepsis.
 **Why not B:** Removing a line is a prescriber decision and may harm the patient.
-**Why not C:** Waiting delays potentially life-threatening care.
+**Why not C:** Waiting for a routine round delays potentially life-threatening care.
 
 **Q3 (application).** Which sequence best reduces contamination when giving an intermittent injection through a needleless connector?
 A. Hand hygiene, scrub the connector with the approved antiseptic and let it dry, then access with a sterile device.
-B. Wipe once with a dry gauze, access, and re-cap with the used cap if it looks clean.
-C. Apply gloves, flush through the connector without disinfecting, then wipe afterwards.
-D. Disinfect the connector, access using a clean non-sterile syringe, and flush later in the shift.
+B. Wipe once with dry gauze, access with a sterile syringe, and put the used cap back on if it looks undamaged.
+C. Put on gloves, flush through the connector, and disinfect it afterwards to remove anything left on the surface.
+D. Disinfect the connector, access with a clean but non-sterile syringe, and flush the line later in the shift.
 **Answer: A.**
-**Why correct:** Disinfection before every access with sterile devices is recommended by both documents.
-**Why not B:** Dry gauze is not disinfection and reusing caps is contamination.
-**Why not C:** Disinfection must come before access, not after.
-**Why not D:** Only sterile devices should access the system.
+**Why correct:** Disinfecting before every access and using sterile devices is recommended in both documents.
+**Why not B:** Dry gauze is not disinfection, and reusing caps contaminates the connector.
+**Why not C:** Disinfection has to come before access, not after.
+**Why not D:** Only sterile devices should enter the system, and delayed flushing adds a further risk.
 
-**Q4 (prioritization).** At the start of a shift, four central-line patients each have an issue. Which should be addressed first?
-A. A tubing label that is missing its date, for a patient who is stable.
-B. A dressing due for a routine change tomorrow, with the site clean and dry.
-C. A patient with a new fever, rigors and a hypotensive trend, line day 8.
-D. A request from the family to change the dressing earlier for cosmetic reasons.
+**Q4 (prioritization).** At the start of the shift four patients with central lines each have an issue. Which should the nurse address first?
+A. A tubing label with no date on it, in a patient who is stable and comfortable.
+B. A dressing due for a routine change tomorrow, with a clean, dry and intact site.
+C. A patient with a new fever, rigors and a falling blood pressure on day 8 of the line.
+D. A family request to change the dressing early because they think it looks untidy.
 **Answer: C.**
-**Why correct:** Possible bloodstream infection with instability is time-critical.
-**Why not A:** Needs fixing but is not urgent.
-**Why not B:** Routine, not urgent.
-**Why not D:** Non-clinical; can be addressed after safety priorities.
+**Why correct:** Possible bloodstream infection with haemodynamic change is time-critical.
+**Why not A:** It needs fixing but poses no immediate danger.
+**Why not B:** It is a routine task that can wait until tomorrow.
+**Why not D:** It is a non-clinical request that can be addressed after safety priorities.
 
-**Q5 (judgment).** On a ward round, the team plans to keep a central line "just in case" although it has not been used for three days. What is the nurse's best contribution?
-A. Ask whether each lumen still has an indication and whether the line can be removed, leaving the decision to the prescriber.
-B. Remove the line after the round because it is the nurse's responsibility to prevent infection.
-C. Keep quiet, as challenging the plan is outside the nurse's role.
-D. Replace the line with a new one at a different site to reduce infection risk.
-**Answer: A.**
-**Why correct:** Both guidelines favour removing nonessential lines; the nurse raises the question and the prescriber decides.
-**Why not B:** Removal needs a prescriber's decision or a protocol.
-**Why not C:** Daily necessity review is a shared nursing and medical responsibility.
-**Why not D:** Routine replacement is not recommended and adds risk.
-
-**Q6 (safety).** A colleague says "the dressing guideline from 2011 says no chlorhexidine dressings are needed". How should the nurse respond?
-A. Agree, since the 2011 guideline is the authoritative reference and has not changed.
-B. Say the 2011 text was updated by CDC in 2017 and that later guidance favours CHG-containing dressings, then follow the unit policy and ask the infection-prevention team.
-C. Suggest ignoring both documents because dressing type does not affect infection risk.
-D. Change dressings every day to be safe, whatever the type, since more changes mean less infection.
+**Q5 (judgment).** On the round the team plans to keep a central line "just in case", although it has not been used for three days. What is the best nursing contribution?
+A. Remove the line after the round, because preventing infection is a nursing responsibility.
+B. Ask whether each lumen is still indicated and whether the line can come out, leaving the decision to the prescriber.
+C. Say nothing about it, since questioning the medical plan during the round is outside the nurse's role and could disrupt the team.
+D. Suggest replacing it with a new line at another site to lower the infection risk.
 **Answer: B.**
-**Why correct:** The 2011 statements on CHG dressings were superseded; local policy and infection prevention decide.
-**Why not A:** The 2011 recommendation on CHG dressings was replaced.
-**Why not C:** Evidence shows dressing choice matters in ICU patients.
+**Why correct:** Both guidelines favour removing nonessential lines; the nurse raises the question and the prescriber decides.
+**Why not A:** Removing a line needs a prescriber's decision or a protocol that allows it.
+**Why not C:** Daily review of whether the line is needed is a shared nursing and medical responsibility.
+**Why not D:** Routine replacement is not recommended and adds the risks of a new insertion.
+
+**Q6 (safety).** A colleague says the 2011 CDC guideline still means chlorhexidine dressings are not needed. What is the best response?
+A. Agree, as the 2011 guideline is the authoritative reference and has not been changed.
+B. Say the dressing type makes no difference to infection risk, so either choice is fine and the unit policy can be ignored.
+C. Say CDC superseded those statements in 2017 and later guidance favours chlorhexidine dressings, then follow unit policy.
+D. Suggest changing every dressing daily to be safe, because more changes mean fewer infections.
+**Answer: C.**
+**Why correct:** The 2011 statements on chlorhexidine dressings were replaced; local policy and infection prevention decide.
+**Why not A:** The 2011 recommendation on these dressings was superseded.
+**Why not B:** Evidence in ICU patients shows that dressing choice matters.
 **Why not D:** Unnecessary changes break the barrier and are not recommended.
 
 ## 18. References
