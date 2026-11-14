@@ -78,6 +78,11 @@ test.describe("public pages", () => {
     expect(h["x-powered-by"]).toBeUndefined();
   });
 
+  test("non-production deployments tell crawlers to stay away", async ({ request }) => {
+    expect((await request.get("/en")).headers()["x-robots-tag"]).toMatch(/noindex/);
+    expect(await (await request.get("/robots.txt")).text()).toMatch(/Disallow: \//);
+  });
+
   test("protected pages need an account in demo mode (no crash)", async ({ page }) => {
     const res = await page.goto("/en/dashboard");
     expect(res?.status()).toBeLessThan(500);

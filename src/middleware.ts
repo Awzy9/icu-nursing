@@ -17,6 +17,7 @@ export default async function middleware(original: NextRequest) {
   const request = new NextRequest(original, { headers: forwarded });
   const response = intl(request);
   response.headers.set("Content-Security-Policy", csp);
+  if (process.env.NEXT_PUBLIC_APP_ENV !== "production") response.headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   if (!url || !key) return response; // demo mode: no sessions

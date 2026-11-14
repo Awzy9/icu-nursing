@@ -31,7 +31,8 @@
     "none": "None",
     "version": "Version",
     "updated": "Updated",
-    "search": "Search"
+    "search": "Search",
+    "stagingBanner": "STAGING environment: for testing only. Test accounts and synthetic content. Do not enter real personal or patient information."
   },
   "Nav": {
     "main": "Main navigation",

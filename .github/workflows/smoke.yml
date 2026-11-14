@@ -1,0 +1,18 @@
+name: Smoke test a deployment (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      url: { description: "Base URL, e.g. https://icu-nursing-staging.vercel.app", required: true }
+      flags: { description: "Optional flags: --live --captcha --production", required: false, default: "--live --captcha" }
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Run smoke checks (read-only GET requests)
+        run: npx tsx scripts/smoke.ts "${{ inputs.url }}" ${{ inputs.flags }}

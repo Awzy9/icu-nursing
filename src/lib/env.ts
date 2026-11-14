@@ -26,6 +26,7 @@ const schema = z
       .regex(/^[0-9A-Za-z_-]{10,64}$/, "unexpected Turnstile site key format")
       .optional()
       .or(z.literal("").transform(() => undefined)),
+    NEXT_PUBLIC_APP_ENV: z.enum(["development", "staging", "production"]).optional().or(z.literal("").transform(() => undefined)),
     NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
   })
   .superRefine((v, ctx) => {
@@ -47,7 +48,7 @@ const schema = z
     }
   });
 
-export type Env = z.infer<typeof schema> & { demoMode: boolean; captchaEnabled: boolean };
+export type Env = z.infer<typeof schema> & { demoMode: boolean; captchaEnabled: boolean; indexable: boolean };
 
 export function parseEnv(source: Record<string, string | undefined>): Env {
   const parsed = schema.safeParse({
@@ -55,6 +56,7 @@ export function parseEnv(source: Record<string, string | undefined>): Env {
     NEXT_PUBLIC_SUPABASE_URL: source.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: source.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     NEXT_PUBLIC_TURNSTILE_SITE_KEY: source.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
+    NEXT_PUBLIC_APP_ENV: source.NEXT_PUBLIC_APP_ENV,
     NODE_ENV: source.NODE_ENV,
   });
   if (!parsed.success) {
@@ -63,7 +65,8 @@ export function parseEnv(source: Record<string, string | undefined>): Env {
   }
   const d = parsed.data;
   const demoMode = !(d.NEXT_PUBLIC_SUPABASE_URL && d.NEXT_PUBLIC_SUPABASE_ANON_KEY);
-  return { ...d, demoMode, captchaEnabled: !demoMode && Boolean(d.NEXT_PUBLIC_TURNSTILE_SITE_KEY) };
+  // Search engines may index ONLY an explicitly declared production deployment. Anything else (staging, previews, local) is noindex.
+  return { ...d, demoMode, captchaEnabled: !demoMode && Boolean(d.NEXT_PUBLIC_TURNSTILE_SITE_KEY), indexable: d.NEXT_PUBLIC_APP_ENV === "production" };
 }
 
 let cached: Env | undefined;
@@ -74,6 +77,7 @@ export function getEnv(): Env {
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     NEXT_PUBLIC_TURNSTILE_SITE_KEY: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
+    NEXT_PUBLIC_APP_ENV: process.env.NEXT_PUBLIC_APP_ENV,
     NODE_ENV: process.env.NODE_ENV,
   });
   return cached;

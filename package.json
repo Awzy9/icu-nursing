@@ -25,7 +25,11 @@
     "live:advisors": "tsx scripts/live/advisors.ts",
     "live:auth": "tsx scripts/live/configure-auth.ts",
     "live:cleanup": "tsx scripts/live/cleanup-test-users.ts",
-    "test:audit": "for s in 1 2 3 4 5; do FUZZ_SEED=$s FUZZ_STEPS=3000 vitest run --config vitest.db.config.ts tests/db/audit-fuzz.test.ts tests/db/audit-matrix.test.ts tests/db/audit-views.test.ts || exit 1; done"
+    "test:audit": "for s in 1 2 3 4 5; do FUZZ_SEED=$s FUZZ_STEPS=3000 vitest run --config vitest.db.config.ts tests/db/audit-fuzz.test.ts tests/db/audit-matrix.test.ts tests/db/audit-views.test.ts || exit 1; done",
+    "smoke": "tsx scripts/smoke.ts",
+    "live:email:preflight": "tsx scripts/live/email-preflight.ts",
+    "live:smtp": "tsx scripts/live/configure-smtp.ts",
+    "live:captcha": "tsx scripts/live/configure-captcha.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
