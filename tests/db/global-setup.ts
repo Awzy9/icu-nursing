@@ -4,7 +4,7 @@ import pg from "pg";
 
 const ROOT = path.resolve(__dirname, "../..");
 const BASE = process.env.DATABASE_URL ?? "postgres://postgres:postgres@localhost:5432/postgres";
-const DB = "icu_nursing_test";
+const DB = "icu_nursing_template";
 
 function urlFor(db: string) {
   const u = new URL(BASE);
@@ -33,11 +33,14 @@ export default async function setup() {
     }
   }
   await c.end();
-  process.env.TEST_DATABASE_URL = urlFor(DB);
+  process.env.TEST_TEMPLATE_DB = DB;
+  process.env.TEST_ADMIN_URL = BASE;
 
   return async () => {
     const a = new pg.Client({ connectionString: BASE });
     await a.connect();
+    const left = await a.query("select datname from pg_database where datname like 'icu_nursing_t_%'");
+    for (const r of left.rows) await a.query(`drop database if exists ${r.datname} with (force)`);
     await a.query(`drop database if exists ${DB} with (force)`);
     await a.end();
   };

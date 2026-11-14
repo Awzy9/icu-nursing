@@ -27,6 +27,8 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test
+      - name: Seed is up to date
+        run: npx tsx scripts/generate-seed.ts && git diff --exit-code supabase/seed.sql
       - name: Database migrations + RLS tests
         run: npm run test:db
       - name: Build

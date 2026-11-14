@@ -5,6 +5,8 @@ import { Badge, Callout } from "@/components/ui/feedback";
 import { RichText } from "@/components/content/rich-text";
 import { TopicActions } from "@/components/content/topic-actions";
 import { TopicReferences } from "@/components/content/topic-references";
+import { TopicControls } from "@/components/content/topic-controls";
+import { isDemoMode } from "@/lib/env";
 import { getContentRepository } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 
@@ -57,7 +59,7 @@ export default async function TopicPage({ params }: Props) {
           <h1 className="text-3xl font-bold">{topic.title}</h1>
           <p className="text-lg text-muted-foreground">{topic.summary}</p>
           {topic.kind === "demo_synthetic" ? <Callout tone="warning" role="status">{t("reviewDemo")}</Callout> : null}
-          <div id="topic-controls" />
+          {!isDemoMode() ? <TopicControls topicId={topic.id} /> : null}
         </header>
 
         {topic.sections.map((s) => (

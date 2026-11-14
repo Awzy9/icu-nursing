@@ -3,8 +3,29 @@ import pg from "pg";
 export type Aal = "aal1" | "aal2";
 export interface Actor { id: string; aal?: Aal; role?: "authenticated" | "anon" }
 
-const pool = new pg.Pool({ connectionString: process.env.TEST_DATABASE_URL, max: 4 });
-export const closePool = () => pool.end();
+let pool: pg.Pool;
+let dbName = "";
+
+/** Each test file gets its own database cloned from the fully migrated template (isolated fixtures). */
+export async function setupDb() {
+  const adminUrl = process.env.TEST_ADMIN_URL!;
+  dbName = `icu_nursing_t_${process.pid}_${Math.random().toString(36).slice(2, 8)}`;
+  const admin = new pg.Client({ connectionString: adminUrl });
+  await admin.connect();
+  await admin.query(`create database ${dbName} template ${process.env.TEST_TEMPLATE_DB}`);
+  await admin.end();
+  const u = new URL(adminUrl);
+  u.pathname = `/${dbName}`;
+  pool = new pg.Pool({ connectionString: u.toString(), max: 4 });
+}
+
+export async function closePool() {
+  await pool.end();
+  const admin = new pg.Client({ connectionString: process.env.TEST_ADMIN_URL });
+  await admin.connect();
+  await admin.query(`drop database if exists ${dbName} with (force)`);
+  await admin.end();
+}
 
 /** Runs as the database owner (bypasses RLS). Used only to build fixtures. */
 export const owner = {

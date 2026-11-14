@@ -51,7 +51,7 @@
   html { -webkit-text-size-adjust: 100%; }
   body { @apply bg-background text-foreground font-sans antialiased; line-height: 1.6; }
   h1, h2, h3, h4 { @apply text-navy; line-height: 1.25; }
-  a { @apply text-primary underline-offset-4; }
+  a { @apply text-primary underline underline-offset-4; }
   :focus-visible { @apply outline outline-2 outline-offset-2 outline-ring; }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }

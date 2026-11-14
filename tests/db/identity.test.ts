@@ -1,9 +1,10 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { asUser, closePool, createUser, expectDenied, grantRole, owner, uniqueEmail } from "./helpers";
+import { asUser, closePool, setupDb, createUser, expectDenied, grantRole, owner, uniqueEmail } from "./helpers";
 
 let alice: string, bob: string, admin: string, author: string;
 
 beforeAll(async () => {
+  await setupDb();
   alice = await createUser(uniqueEmail("alice"), { display_name: "Alice" });
   bob = await createUser(uniqueEmail("bob"));
   admin = await createUser(uniqueEmail("admin"));
