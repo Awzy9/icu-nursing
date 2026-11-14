@@ -35,6 +35,7 @@ This is **educational software, not a clinical decision-support system.** It doe
 | `curriculum/` | `master_curriculum.csv` (124 topics), `proposed_topics.csv` (18), generator script |
 | `sources/` | `source_register.csv` |
 | `content/templates/` | Templates: topic, skill, medication, MCQ, scenario, checklist, clinical review |
+| `content/drafts/` | Phase 2 draft topics (never reviewed/published) and batch reports; validate with `npm run validate:drafts` |
 | `src/`, `supabase/`, `tests/`, `scripts/` | The application, migrations and automated tests (see `docs/IMPLEMENTATION.md`, `docs/SECURITY.md`, `docs/SUPABASE_SETUP.md`) |
 | `design/prototype/` | Original static wireframe prototype (superseded by the real app) |
 
