@@ -112,3 +112,26 @@ test.describe("performance budgets (local, production build)", () => {
     expect(lcp).toBeLessThan(2500);
   });
 });
+
+test.describe("content security policy", () => {
+  test("pages hydrate with no CSP violations and every inline script carries the request nonce", async ({ page }) => {
+    const violations: string[] = [];
+    page.on("console", (m) => { if (/content security policy/i.test(m.text())) violations.push(m.text()); });
+    for (const path of ["/en", "/ar/library", "/en/library/demo-renal-metabolic", "/en/login"]) {
+      const res = await page.goto(path, { waitUntil: "networkidle" });
+      const nonce = /'nonce-([^']+)'/.exec(res!.headers()["content-security-policy"]!)![1]!;
+      const bad = await page.evaluate((n) => [...document.querySelectorAll("script:not([src])")].filter((s) => (s as HTMLScriptElement).nonce !== n && s.getAttribute("type") !== "application/json").length, nonce);
+      expect(bad, path).toBe(0);
+    }
+    expect(violations).toEqual([]);
+  });
+
+  test("each request gets a different nonce, and interactive features still work under the policy", async ({ page, request }) => {
+    const a = (await request.get("/en")).headers()["content-security-policy"];
+    const b = (await request.get("/en")).headers()["content-security-policy"];
+    expect(a).not.toEqual(b);
+    await page.goto("/en/library");
+    await page.getByLabel("Language").selectOption("ar"); // client-side JS must run
+    await expect(page).toHaveURL(/\/ar\/library/);
+  });
+});

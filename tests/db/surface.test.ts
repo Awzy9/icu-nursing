@@ -15,14 +15,14 @@ describe("API exposure allowlist", () => {
     expect(r.rows.map((x) => x.proname)).toEqual([
       "admin_grant_role", "admin_revoke_role", "admin_set_specialty", "archive_topic", "assign_reviewer", "can_edit_topic", "can_read_topic", "can_read_version",
       "has_role", "has_staff_role", "is_aal2", "is_published_topic", "is_staff", "publish_topic", "record_review", "record_topic_view", "restore_topic",
-      "rollback_topic", "set_topic_completion", "start_revision", "submit_for_review", "validate_topic_for_review", "withdraw_submission",
+      "rollback_topic", "set_topic_completion", "start_revision", "submit_for_review", "try_uuid", "validate_topic_for_review", "withdraw_submission",
     ]);
   });
 
   it("exposes only visibility predicates to anonymous users", async () => {
     const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
       where n.nspname='public' and p.prokind='f' and has_function_privilege('anon', p.oid, 'execute') order by 1`);
-    expect(r.rows.map((x) => x.proname)).toEqual(["can_edit_topic", "can_read_topic", "can_read_version", "is_published_topic"]);
+    expect(r.rows.map((x) => x.proname)).toEqual(["can_edit_topic", "can_read_topic", "can_read_version", "is_published_topic", "try_uuid"]);
   });
 
   it("grants anonymous users read access to nothing but public views and domains", async () => {

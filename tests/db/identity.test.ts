@@ -145,6 +145,6 @@ describe("function privileges", () => {
     await expectDenied(asUser({ id: admin, aal: "aal2" }, "select public.audit_row()"));
     const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
       where n.nspname='public' and p.prokind='f' and has_function_privilege('anon', p.oid, 'execute')`);
-    expect(r.rows.map((x) => x.proname).sort()).toEqual(["can_edit_topic", "can_read_topic", "can_read_version", "is_published_topic"]);
+    expect(r.rows.map((x) => x.proname).sort()).toEqual(["can_edit_topic", "can_read_topic", "can_read_version", "is_published_topic", "try_uuid"]);
   });
 });

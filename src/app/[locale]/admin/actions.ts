@@ -5,6 +5,7 @@ import { z } from "zod";
 import { redirect } from "@/i18n/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { ACTION_SCOPES, LEVELS } from "@/lib/content/types";
+import { validateImage } from "@/lib/image-validation";
 
 export interface AdminState { error?: string; ok?: boolean; message?: string }
 const REVIEW_CODES = ["NE", "BN", "PH", "RT", "CCP", "NEPH", "NEURO", "IPC", "OTHER"] as const;
@@ -98,12 +99,46 @@ export async function deleteReferenceAction(_p: AdminState, form: FormData): Pro
   return run(form, z.object({ topicId: uuid, sourceId: uuid }), async (v, db) => db.from("topic_references").delete().eq("topic_id", v.topicId).eq("source_id", v.sourceId));
 }
 
-export async function addImageAction(_p: AdminState, form: FormData): Promise<AdminState> {
-  return run(form, z.object({ topicId: uuid, path: z.string().trim().regex(/^[A-Za-z0-9/_.-]+$/).max(200).refine((p) => !p.includes(".."), "no .."), altEn: opt(300), altAr: opt(300), captionEn: opt(300), licence: req(100), licenceClass: z.enum(["GREEN", "YELLOW", "RED", "UNVERIFIED"]), attribution: opt(300), sourceUrl: opt(500), original: bool }),
-    async (v, db) => db.from("topic_images").insert({ topic_id: v.topicId, storage_path: v.path, alt_text: v.altEn ? loc(v.altEn, v.altAr) : {}, caption: v.captionEn ? { en: v.captionEn } : null, licence: v.licence, licence_class: v.licenceClass, attribution: v.attribution ?? null, source_url: v.sourceUrl ?? null, is_original: v.original }), "Image metadata saved.");
+const imageMeta = z.object({ topicId: uuid, altEn: opt(300), altAr: opt(300), captionEn: opt(300), licence: req(100), licenceClass: z.enum(["GREEN", "YELLOW", "RED", "UNVERIFIED"]), attribution: opt(300), sourceUrl: opt(500), original: bool });
+
+/** Validates the file's real type/size, stores it under "<topic_id>/<uuid>.<ext>", then records its metadata. */
+export async function uploadImageAction(_p: AdminState, form: FormData): Promise<AdminState> {
+  const db = await createClient();
+  if (!db) return { error: "Backend not configured (demonstration mode)." };
+  const parsed = imageMeta.safeParse(fd(form));
+  if (!parsed.success) return { error: `Invalid input: ${parsed.error.issues.map((i) => `${i.path.join(".")} ${i.message}`).join("; ")}` };
+  const file = form.get("file");
+  if (!(file instanceof File) || file.size === 0) return { error: "Choose an image file." };
+  const bytes = new Uint8Array(await file.arrayBuffer());
+  const check = validateImage(bytes, file.type);
+  if (!check.ok) return { error: check.error };
+  const v = parsed.data;
+  const path = `${v.topicId}/${crypto.randomUUID()}.${check.ext}`;
+  const up = await db.storage.from("topic-images").upload(path, bytes, { contentType: check.mime, upsert: false, cacheControl: "3600" });
+  if (up.error) return { error: up.error.message };
+  const ins = await db.from("topic_images").insert({
+    topic_id: v.topicId, storage_path: path, alt_text: v.altEn ? loc(v.altEn, v.altAr) : {}, caption: v.captionEn ? { en: v.captionEn } : null,
+    licence: v.licence, licence_class: v.licenceClass, attribution: v.attribution ?? null, source_url: v.sourceUrl ?? null, is_original: v.original,
+  });
+  if (ins.error) {
+    await db.storage.from("topic-images").remove([path]); // do not leave an orphaned file
+    return { error: ins.error.message };
+  }
+  revalidatePath("/", "layout");
+  return { ok: true, message: "Image uploaded." };
 }
+
 export async function deleteImageAction(_p: AdminState, form: FormData): Promise<AdminState> {
-  return run(form, z.object({ id: uuid }), async (v, db) => db.from("topic_images").delete().eq("id", v.id));
+  const db = await createClient();
+  if (!db) return { error: "Backend not configured (demonstration mode)." };
+  const parsed = z.object({ id: uuid }).safeParse(fd(form));
+  if (!parsed.success) return { error: "Invalid input." };
+  const { data } = await db.from("topic_images").select("storage_path").eq("id", parsed.data.id).maybeSingle();
+  const del = await db.from("topic_images").delete().eq("id", parsed.data.id);
+  if (del.error) return { error: del.error.message };
+  if (data?.storage_path) await db.storage.from("topic-images").remove([data.storage_path as string]);
+  revalidatePath("/", "layout");
+  return { ok: true, message: "Image removed." };
 }
 
 // ---- Workflow (all authorization is enforced by the database functions) -----------------------

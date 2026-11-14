@@ -54,7 +54,7 @@ describe("admin server actions", () => {
     const a = await import("@/app/[locale]/admin/actions");
     expect((await a.submitAction({}, fd({ topicId: "not-a-uuid" }))).error).toMatch(/Invalid input/);
     expect((await a.saveSourceAction({}, fd({ organization: "x", title: "y", url: "http://insecure.example", licenceClass: "GREEN" }))).error).toMatch(/https/);
-    expect((await a.addImageAction({}, fd({ topicId: U, path: "../../etc/passwd", licence: "x", licenceClass: "GREEN" }))).error).toMatch(/Invalid input/);
+    expect((await a.uploadImageAction({}, fd({ topicId: "not-a-uuid", licence: "x", licenceClass: "GREEN" }))).error).toMatch(/Invalid input/);
     expect((await a.grantRoleAction({}, fd({ userId: U, role: "learner" }))).error).toMatch(/Invalid input/);
     expect(calls).toHaveLength(0);
   });

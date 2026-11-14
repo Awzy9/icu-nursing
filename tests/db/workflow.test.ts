@@ -87,7 +87,7 @@ describe("submission validation", () => {
   });
   it("requires alt text and a verified licence for images", async () => {
     const t = await readyTopic();
-    await asUser(MFA(author), "insert into public.topic_images (topic_id, storage_path, licence) values ($1,'a/b.png','unknown')", [t]);
+    await asUser(MFA(author), "insert into public.topic_images (topic_id, storage_path, licence) values ($1::uuid, $1::text || '/' || gen_random_uuid() || '.png', 'unknown')", [t]);
     await expect(submit(t)).rejects.toThrow(/not ready for review: .*alt text/);
     await asUser(MFA(author), "update public.topic_images set alt_text='{\"en\":\"A diagram\"}' where topic_id=$1", [t]);
     await expect(submit(t)).rejects.toThrow(/not ready for review: .*reusable licence/);

@@ -8,6 +8,9 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteBanners } from "@/components/layout/banners";
 import "../globals.css";
 
+// Pages are rendered per request so Next.js can stamp the per-request CSP nonce on its inline scripts.
+export const dynamic = "force-dynamic";
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }

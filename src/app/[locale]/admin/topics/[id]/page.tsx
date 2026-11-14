@@ -188,12 +188,12 @@ export default async function TopicEditor({ params }: { params: Promise<{ locale
 
       <section aria-labelledby="imgs" className="space-y-3">
         <H2 id="imgs">Images (metadata, alt text, licence)</H2>
-        <p className="text-sm text-muted-foreground">Upload the file to the public <code>topic-images</code> storage bucket, then register its path here. Every image needs English alt text and a verified licence (or must be original).</p>
+        <p className="text-sm text-muted-foreground">Files are stored in the <code>topic-images</code> bucket under this topic&apos;s folder. Every image needs English alt text and a verified licence (or must be original) before the topic can be submitted for review.</p>
         <ul className="space-y-2">{images.map((i) => <li key={i.id} className="flex flex-wrap items-start justify-between gap-2 rounded-md border border-border p-2"><span><code>{i.storage_path}</code> — alt: {i.alt_text.en ?? <b className="text-danger-foreground">missing</b>} — {i.licence} [{i.licence_class}]{i.is_original ? " original" : ""}</span>{editable ? <AdminForm action={A.deleteImageAction} submit="Remove" variant="ghost"><input type="hidden" name="id" value={i.id} /></AdminForm> : null}</li>)}</ul>
         {editable ? (
-          <AdminForm action={A.addImageAction} submit="Add image metadata" className="grid gap-3 md:grid-cols-2">
+          <AdminForm action={A.uploadImageAction} submit="Upload image" className="grid gap-3 md:grid-cols-2">
             <input type="hidden" name="topicId" value={id} />
-            <Field label="Storage path" htmlFor="im-p"><Input id="im-p" name="path" required pattern="[A-Za-z0-9/_.\-]+" maxLength={200} /></Field>
+            <Field label="Image file (PNG, JPEG or WebP, max 2 MB)" htmlFor="im-f"><Input id="im-f" name="file" type="file" accept="image/png,image/jpeg,image/webp" required /></Field>
             <Field label="Alt text (English)" htmlFor="im-a"><Input id="im-a" name="altEn" maxLength={300} /></Field>
             <Field label="Alt text (Arabic, optional)" htmlFor="im-ar"><Input id="im-ar" name="altAr" lang="ar" dir="rtl" maxLength={300} /></Field>
             <Field label="Caption (English)" htmlFor="im-c"><Input id="im-c" name="captionEn" maxLength={300} /></Field>

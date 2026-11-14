@@ -69,7 +69,10 @@ test.describe("public pages", () => {
   test("security headers are present", async ({ request }) => {
     const res = await request.get("/en");
     const h = res.headers();
-    expect(h["content-security-policy"]).toContain("frame-ancestors 'none'");
+    const csp = h["content-security-policy"]!;
+    expect(csp).toContain("frame-ancestors 'none'");
+    expect(csp).toMatch(/script-src 'self' 'nonce-[^']+' 'strict-dynamic'/);
+    expect(csp.split(";").find((d) => d.trim().startsWith("script-src"))).not.toContain("unsafe-inline");
     expect(h["x-content-type-options"]).toBe("nosniff");
     expect(h["x-frame-options"]).toBe("DENY");
     expect(h["x-powered-by"]).toBeUndefined();
