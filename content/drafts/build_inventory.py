@@ -8,7 +8,6 @@ BLOCKED = {
  "D03-T09": ("BLOCKED", "SCCM PADIS 2018/2025 full text blocked (journals.lww.com Cloudflare 403); SCCM pages give abstract only"),
  "D09-T03": ("BLOCKED", "Open RN scope chapter (NBK610819) behind NCBI reCAPTCHA; ICN definition page too general alone"),
  "D07-T01": ("BLOCKED", "Open RN assessment chapters (NBK593210) behind NCBI reCAPTCHA; EPUAP guide covers skin assessment only"),
- "D02-T14": ("BLOCKED (partial evidence)", "ERC 2025 ALS full text read, but full ERC BLS and Post-Resuscitation Care guidelines not obtained (publisher Cloudflare 403); RCUK pages give summaries/algorithm PDFs only. Topic must not be drafted as complete until BLS and post-resuscitation full texts are read"),
 }
 cur = {r["topic_id"]: r for r in csv.DictReader(open(os.path.join(ROOT, "curriculum", "master_curriculum.csv"), encoding="utf-8"))}
 drafted = {}

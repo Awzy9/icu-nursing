@@ -33,7 +33,7 @@ Sustained pressure and shear reduce blood flow to skin and soft tissue; tissue t
 
 ## 6. Clinical assessment
 - **Screening and risk:** at least check mobility/activity, devices and existing pressure injuries at admission; follow with a full structured risk assessment for those at risk, repeated periodically and after any worsening in condition. Scales can help but should be supplemented with other risk factors and clinical judgment.
-- **Skin and tissue assessment:** visual inspection of bony prominences and under devices; blanching check (finger or transparent disc); touch for temperature (warmer may indicate inflammation, cooler ischaemia), firmness and swelling; pain at pressure points and under devices; colour change compared with surroundings. Techniques should suit the person's skin tone (colour change may be subtle on darker skin, so rely on touch, temperature and pain too).
+- **Skin and tissue assessment:** visual inspection of bony prominences and under devices; blanching check (finger or transparent disc); touch for temperature (warmer may indicate inflammation, cooler ischaemia), firmness and swelling; pain at pressure points and under devices; colour change compared with surroundings. Techniques should suit the person's skin characteristics and tone (the guide gives this principle without describing how colour change appears on different skin tones; reviewers should add a source before any statement about visibility on darker skin).
 - **Perfusion of lower limbs and heels:** pulses, temperature, capillary refill, colour, sensation.
 - **Timing of head-to-toe skin assessment:** as soon as possible after admission or transfer, as part of every risk assessment, periodically as the clinical status changes, whenever the condition worsens, at transitions of care (including after procedures), and before discharge; inspect visible bony areas at every repositioning.
 - **Moisture and nutrition:** incontinence or sweat; intake and nutrition screening.
@@ -140,7 +140,7 @@ C. Delay assessment until the skin is broken, because earlier changes are not re
 D. Combine colour, temperature, firmness, swelling and pain over bony areas and devices, using techniques suited to the skin tone.
 **Answer: D.**
 **Why correct:** The guide recommends a range of techniques appropriate to skin characteristics and tone.
-**Why not A:** Colour changes can be harder to see on darker skin.
+**Why not A:** Colour alone can miss early injury; the guide recommends a range of techniques suited to the person's skin characteristics and tone.
 **Why not B:** A single method may miss early injury.
 **Why not C:** Prevention depends on finding early changes before the skin breaks.
 

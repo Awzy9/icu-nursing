@@ -118,3 +118,54 @@ D02-T15,Oxygen recommendations unchanged in 2025,ERC 2025 Adult ALS (Resuscitati
 D02-T15,Anticipatory charging acceptable for well-drilled teams,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Anticipatory charging,Further research needed,text match
 D02-T15,Dual sequential defibrillation not routinely recommended,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),DSD,Limited evidence,text match
 D02-T15,Up to three stacked shocks only if witnessed monitored VF/pVT with defibrillator immediately available,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Energy levels and number of shocks,Narrative,text match
+D02-T14,BLS 2025: call for any unresponsive person; assess breathing while waiting,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Table 1 (changes),Narrative,text match
+D02-T14,"BLS 2025: slow, laboured, agonal or panting breathing is abnormal; seizure-like activity may occur at onset",ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Recognising cardiac arrest,Narrative,text match
+D02-T14,BLS 2025: depth at least 5 cm not more than 6 cm; rate 100-120/min; full recoil,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Concise guidelines,Recommendation,text match
+D02-T14,BLS 2025: do not move person from bed to floor; start CPR on the bed; compress deeper to compensate,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Concise guidelines,Recommendation,text match
+D02-T14,BLS 2025: mattress CPR mode should be activated,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Surface section,Narrative,text match
+D02-T14,BLS 2025: ERC does not advocate a backboard,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Surface section,Narrative,text match
+D02-T14,BLS 2025: compression-first approach recommended,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Initiating CPR,ILCOR-based,text match
+D02-T14,BLS 2025: obese patients receive standard 30:2 CPR without modification,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Table 1,Narrative,text match
+D02-T14,ALS 2025: hospitals use early-warning systems; empower staff to call on clinical concern; structured communication tools,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Prevention of IHCA,ERC recommends,text match
+D02-T14,ALS 2025: waveform capnography to confirm tracheal tube placement,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Table 1,Narrative,text match
+D02-T14,"PRC 2025: 100% oxygen immediately, then titrate to 94-98% SpO2 or PaO2 10-13 kPa",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of oxygenation,Recommendation,text match
+D02-T14,PRC 2025: oximetry can overestimate saturation in darker skin; low-flow states reduce signal,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of oxygenation,Narrative,text match
+D02-T14,PRC 2025: avoid hypoxaemia and hyperoxaemia,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of oxygenation,Recommendation,text match
+D02-T14,PRC 2025: normocapnia 4.7-6.0 kPa; lung-protective ventilation,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of ventilation,Recommendation,text match
+D02-T14,"PRC 2025: arterial line for all; avoid hypotension, MAP >60-65 mmHg",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Haemodynamic monitoring,Recommendation,text match
+D02-T14,PRC 2025: avoid hypokalaemia and hyperkalaemia,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Haemodynamic monitoring,Recommendation,text match
+D02-T14,"PRC 2025: actively prevent fever, target <=37.5 C; no active warming of mild hypothermia 32-36 C",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Temperature control,Recommendation,text match
+D02-T14,PRC 2025: prevent fever for 36 to 72 h in comatose patients,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Temperature control,Recommendation,text match
+D02-T14,PRC 2025: use feedback-based temperature control device,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Temperature control,Suggestion,text match
+D02-T14,PRC 2025: levetiracetam or valproate first-line; no seizure prophylaxis,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of seizures,Recommendation,text match
+D02-T14,PRC 2025: standard glucose management protocols,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),General ICU management,Recommendation,text match
+D02-T14,"PRC 2025: daily neurological examination; interference from sedatives, opioids, muscle relaxants",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Prognostication,Narrative,text match
+D02-T14,PRC 2025: multimodal prognostication; no single predictor 100% accurate,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Prognostication,Narrative,text match
+D02-T14,PRC 2025: short-acting sedatives; routine neuromuscular blockers discouraged,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Table (changes),Narrative,text match
+D02-T14,"PRC 2025: rehabilitation - early mobilisation, delirium management, ICU diaries recommended in PICS guidelines; no cardiac-arrest-specific trials",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Rehabilitation,Narrative,text match
+D02-T14,PRC 2025: rehabilitation and follow-up recommended,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Table (changes),Recommendation,text match
+D01-T12,AARC 2024: cuff 20-30 cmH2O described; no consensus on frequency,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative,text match
+D01-T12,AARC 2024: consensus on how to measure cuff pressure and how often not established,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative,text match
+D01-T12,AARC 2024: overinflation can impede capillary blood flow and lead to tracheal injury,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative,text match
+D01-T12,"AARC 2024: suggest assessing proper placement and securement (conditional, very low)",AARC Patient-Ventilator Assessment CPG 2024,Summary rec 15,Conditional; very low,text match
+D01-T12,AARC 2024: tracheostomy dressing and securement interventions reduce pressure injury (review),AARC Patient-Ventilator Assessment CPG 2024,Evidence summary,Narrative,text match
+D04-T03,CG174: assess fluid and electrolyte needs at every review; IV fluids only if oral/enteral cannot meet needs,NICE CG174 (upd. 2017-05-05),1.1.1,2013/2017,text match
+D04-T03,"CG174: indicators for urgent resuscitation (SBP <100, HR >90, CRT >2 s, RR >20, NEWS >=5, PLR)",NICE CG174 (upd. 2017-05-05),1.2.1,2013/2017,text match
+D04-T03,CG174: deterioration (breathlessness) on passive leg raise suggests overload,NICE CG174 (upd. 2017-05-05),1.2.1,2013/2017,text match
+D04-T03,"CG174: clinical monitoring includes NEWS, fluid balance charts, weight",NICE CG174 (upd. 2017-05-05),1.2.2,2013/2017,text match
+D04-T03,"CG174: at least daily reassessment, fluid balance charts; weight twice weekly",NICE CG174 (upd. 2017-05-05),1.2.4,2013/2017,text match
+D04-T03,CG174: monitor chloride daily after chloride >120 mmol/L fluids,NICE CG174 (upd. 2017-05-05),1.2.5,2013/2017,text match
+D04-T03,CG174: report clear incidents of fluid mismanagement,NICE CG174 (upd. 2017-05-05),1.2.6,2013/2017,text match
+D04-T03,CG174: reassess fluid status after transfer,NICE CG174 (upd. 2017-05-05),1.2.7,2013/2017,text match
+D04-T03,"CG174: take all sources of intake into account (oral, enteral, drugs, nutrition, blood)",NICE CG174 (upd. 2017-05-05),1.1.7,2013/2017,text match
+D04-T03,CG174: expert help for complex fluid problems,NICE CG174 (upd. 2017-05-05),1.5.2,2013/2017,text match
+D04-T03,CG174: involve patient; explain fluids and symptoms to report,NICE CG174 (upd. 2017-05-05),1.1.8,2013/2017,text match
+D03-T01,"GCS aid: three components - eye opening, verbal, motor; scores 4/3/2/1 etc.","GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,"GCS aid: motor - obeys 2-part request 6, localising 5, normal flexion 4, abnormal flexion 3, extension 2, none 1","GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,GCS aid: non testable where a factor interferes,"GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,"GCS aid: check, observe, stimulate; stimuli sound then pressure at fingertip, trapezius, supraorbital notch","GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,GCS site: recording is important to observe and communicate trends,glasgowcomascale.org web pages,Website home,Narrative,text match
+D03-T01,"GCS site: structured approach improves accuracy, reliability and communication",glasgowcomascale.org web pages,Website home,Narrative,text match
+D03-T01,GCS site: described 1974 by Teasdale and Jennett; findings signal need for new actions,glasgowcomascale.org web pages,What is GCS,Narrative,text match
+D03-T01,"GCS site: scale complements, not replaces, assessment of other neurological functions",glasgowcomascale.org web pages,What is GCS,Narrative,text match
+D03-T01,"GCS site: GCS-P = GCS minus pupil reactivity score (both 2, one 1, neither 0)",glasgowcomascale.org web pages,What is GCS-P,Narrative,text match

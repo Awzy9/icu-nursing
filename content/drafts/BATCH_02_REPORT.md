@@ -67,3 +67,6 @@ Internal review: `BATCH_02_INTERNAL_REVIEW.md`; counts: `DRAFT_QUALITY_REPORT.md
 
 ## 7. Status and next steps
 Batch 2 is a draft set awaiting the internal quality review (same method as Batch 1: claim-to-source trace, scope check, MCQ review) and, after that, genuine qualified human review. Nothing is publishable. Blocked topics need a person to open the sources or supply readable copies.
+
+## UPDATE (Batch 3 round): cardiac arrest completed
+D02-T14 is now **drafted** from the complete ERC 2025 BLS (32 pages), ALS and Post-Resuscitation Care (60 pages) PDFs, read in full. Exact unique-topic counts are in `DRAFT_QUALITY_REPORT.md` and `BACKLOG.md`: 19 drafted (Batch 2: 10), 3 blocked, 18 not attempted. Documented conflict: RCUK algorithm poster SBP >100 mmHg vs ERC text MAP >60–65 mmHg.

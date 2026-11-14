@@ -38,6 +38,7 @@ Retained secretions block gas exchange, but unnecessary or poorly performed suct
 - Suction when indicated, not on a fixed schedule unless unit policy requires a rule. The guideline's as-needed recommendation is graded for neonatal and paediatric patients; **no adult study of suctioning frequency was found**, so the adult as-needed approach rests on the earlier AARC guideline and committee judgment.
 - Explain to the patient, provide analgesia or sedation per orders when needed, and position appropriately.
 - **Preoxygenate** adult and paediatric patients before suctioning (evidence level B, committee unanimous). The text notes that an FiO₂ about 0.2 above baseline may be enough instead of 1.0; the amount is set by unit policy or the clinician.
+- Perform hand hygiene on entering and leaving the patient's area and immediately before open suctioning (AARC text, accompanying the sterile-technique statement).
 - Use either a **closed or open** system in adults (both can be used safely and effectively). For open suctioning use sterile technique (evidence level C); closed systems are described in SHEA 2022 as having no recommendation for VAP prevention.
 - Do **not** instil normal saline routinely (evidence level B): it may worsen oxygenation and cause coughing, bronchospasm, rises in heart rate and ICP and may dislodge biofilm. Thick secretions are best raised with the team (the guideline sections read do not cover humidification or hydration).
 - Keep each suctioning event as **brief as possible, no longer than 15 seconds** (evidence level C).

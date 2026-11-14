@@ -17,7 +17,7 @@ const q = (id: string, answer: string, opts: string[], extra = {}) => ({
 const ok = ["Reassess the patient and escalate using SBAR now", "Wait for the next ward round before acting on it", "Record it and look again at the end of shift", "Ask a relative to find a doctor for the patient"];
 
 describe("Phase 2 drafts: structure and safety", () => {
-  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(15));
+  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(19));
   files.forEach((f, i) => it(`${f} passes validation`, () => expect(validateDraft(texts[i]!)).toEqual([])));
   batches.forEach((b) => it(`${b}: answer positions are balanced across the batch`, () => expect(batchPositionIssues(perBatch(b))).toEqual([])));
   it("every draft has six or more MCQs with an explanation for each wrong option", () => {
@@ -72,7 +72,7 @@ describe("Canonical topic inventory (no double counting)", () => {
     for (const d of onDisk) expect(drafted.some((r) => r[0] === d.id && d.f.startsWith(`${r[4]}/`))).toBe(true);
   });
   it("marks nothing as clinically reviewed", () => expect(rows.every((r) => r[7] === "no")).toBe(true));
-  it("keeps the blocked cardiac-arrest topic undrafted", () => expect(files.some((f) => f.includes("D02-T14"))).toBe(false));
+  it("keeps blocked topics undrafted", () => { for (const r of rows.filter((x) => x[3]!.startsWith("BLOCKED"))) expect(files.some((f) => f.includes(r[0]!))).toBe(false); });
 });
 
 describe("MCQ quality checks (self-tests)", () => {

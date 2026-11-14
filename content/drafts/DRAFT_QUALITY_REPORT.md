@@ -2,39 +2,30 @@
 
 Date: 2026-11-14 · Branch `claude/vigilant-mendel-95k63h` · **All content AI-generated, DRAFT, NOT clinically reviewed, not imported, not published.**
 
-## Unique-topic counts (canonical inventory `TOPIC_INVENTORY.csv`)
+## Unique-topic counts (canonical `TOPIC_INVENTORY.csv`)
 | Measure | Count |
 |---|---|
 | P1 first-release topics | 40 |
-| Drafted topics (unique) | **15** (Batch 1: 6; Batch 2: 9) |
-| Blocked | **4** (D03-T09, D09-T03, D07-T01, D02-T14) |
-| Not attempted | **21** |
+| Drafted topics (unique) | **19** (Batch 1: 6; Batch 2: 10; Batch 3: 3) |
+| Blocked | **3** (D03-T09, D09-T03, D07-T01) |
+| Not attempted | **18** |
 | Clinically reviewed / approved | **0** |
-| Imported into the database / published | **0** |
-| MCQs | 90 (36 + 54); 270 wrong-option explanations |
-| MCQ correct-answer positions | Batch 1: A 8 B 9 C 9 D 10 · Batch 2: A 12 B 16 C 14 D 12 |
-| Batch 2 claims traced to source text | 119 matched of 119 (`batch-02-claim-trace.csv`) |
-| Untraced statement groups (labelled) | 15 (`UNTRACED_STATEMENTS.md`) |
-| Source register entries | 49 (`sources/source_register.csv`) |
+| Imported / published | **0** |
+| MCQs | 114 (36 + 60 + 18), 342 wrong-option explanations |
+| Claims traced to source text (Batch 2 and 3 file) | 170 of 170 matched |
+| Statements still unsupported (flagged) | 6 clinically relevant of 18 listed (`UNTRACED_STATEMENTS.md`) |
+| Source register entries | 53 |
 
 ## Batch status
-| Batch | Drafts | Internal review | Human clinical review |
+| Batch | Drafts | Internal QA | Clinical review |
 |---|---|---|---|
 | 1 | 6 | Done | None |
-| 2 | 9 (6 + 3 continuation) | Done (including addendum) | None |
-| 3 | not started | – | – |
+| 2 | 10 | Done (incl. addenda; D02-T14 QA in this round) | None |
+| 3 | 3 | Done (this round) | None |
+| 4 | not started | – | – |
 
-## Test status (2026-11-14, this commit)
-| Check | Result |
-|---|---|
-| Lint, typecheck | clean |
-| Unit tests | 114 passed (12 files; includes inventory, consistency and MCQ-quality tests) |
-| Draft validation | 15 of 15 drafts pass |
-| Database tests (local PostgreSQL 16) | 170 passed |
-| E2E + accessibility (demo mode, 3 viewports, axe, CSP) | 127 passed, 2 skipped (mobile-only on other projects) |
-| Real-CAPTCHA live checks | 5 passed |
-
-Live tests blocked by the real Turnstile secret: `tests/live` (50) and `tests/live-e2e/ui.live.spec.ts` (11) cannot run without replacing the owner's real secret; the five real-CAPTCHA checks in `captcha-real.live.spec.ts` can and do run.
+## Tests
+Recorded in the final report for this commit and in the commit message: lint, typecheck, unit (123), draft validation (19), database (170), E2E + accessibility, real-CAPTCHA live checks (5). Blocked: live API suite (50 tests) and live UI suite (11 tests) because the real Turnstile secret refuses the test token; not run to avoid replacing the owner's secret.
 
 ## Limitations
-AI self-review is not independent; text matching proves wording exists, not that every paraphrase is perfect; dated or blocked sources remain (shock 2014, enteral nutrition 2017, PADIS, SSC 2026, BTS 2017, ERC BLS/PRC full text).
+AI self-review is not independent; text matching proves wording exists, not that paraphrase is perfect; several sources dated or blocked.

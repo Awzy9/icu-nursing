@@ -68,3 +68,6 @@ Findings and fixes:
 4. All new MCQs passed the validator after length and distractor edits. Batch 2 positions: A 12, B 16, C 14, D 12 of 54.
 
 Gate decision for the three drafts: pass the **internal** review; **not** clinically reviewed.
+
+## Addendum 2: internal QA of D02-T14 (cardiac arrest)
+47 claims traced (BLS, ALS, post-resuscitation care) – all matched. Fixes during QA: removed a nonsense distractor and short explanations; corrected "antiseptic" to "anti-seizure". Scope: drugs, energy, intubation drugs, targets and prognostication stay with the team; the draft states no nurse prognostication. Licence: ERC commercial use needs an agreement; draft paraphrases only. Flagged: RCUK poster (SBP >100) vs ERC text (MAP >60–65).
