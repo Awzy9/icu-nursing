@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 40% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 40% 12%;
+    --muted: 214 32% 94%;
+    --muted-foreground: 215 19% 33%;
+    --border: 214 24% 84%;
+    --input: 214 24% 70%;
+    --ring: 175 77% 26%;
+    --navy: 214 77% 15%;
+    --navy-foreground: 210 40% 98%;
+    --primary: 175 77% 24%;
+    --primary-foreground: 0 0% 100%;
+    --warning: 38 92% 92%;
+    --warning-foreground: 28 80% 24%;
+    --danger: 0 86% 95%;
+    --danger-foreground: 0 70% 30%;
+    --success: 142 60% 92%;
+    --success-foreground: 142 70% 20%;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --background: 218 45% 8%;
+      --foreground: 210 40% 96%;
+      --card: 218 38% 12%;
+      --card-foreground: 210 40% 96%;
+      --muted: 218 30% 17%;
+      --muted-foreground: 214 20% 74%;
+      --border: 218 25% 24%;
+      --input: 218 20% 36%;
+      --ring: 172 70% 48%;
+      --navy: 210 40% 96%;
+      --navy-foreground: 218 45% 8%;
+      --primary: 172 70% 40%;
+      --primary-foreground: 218 45% 6%;
+      --warning: 38 60% 16%;
+      --warning-foreground: 38 90% 80%;
+      --danger: 0 50% 16%;
+      --danger-foreground: 0 90% 86%;
+      --success: 142 40% 14%;
+      --success-foreground: 142 60% 82%;
+    }
+  }
+  * { @apply border-border; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-background text-foreground font-sans antialiased; line-height: 1.6; }
+  h1, h2, h3, h4 { @apply text-navy; line-height: 1.25; }
+  a { @apply text-primary underline-offset-4; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-ring; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+}
