@@ -68,6 +68,6 @@ let n = 0;
 export const uniqueEmail = (p: string) => `${p}-${Date.now()}-${n++}@example.test`;
 
 export async function expectDenied(p: Promise<unknown>) {
-  await expect(p).rejects.toThrow(/permission denied|row-level security|violates row-level|forbidden|required|42501|insufficient/i);
+  await expect(p).rejects.toThrow(/permission denied|row-level security|violates row-level|forbidden|required|42501|insufficient|only the author|only an administrator|not assigned|cannot review|access with MFA/i);
 }
 import { expect } from "vitest";

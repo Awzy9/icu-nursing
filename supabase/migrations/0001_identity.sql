@@ -8,7 +8,10 @@
 -- ---------------------------------------------------------------------------------------------
 alter default privileges in schema public revoke all on tables from anon, authenticated;
 alter default privileges in schema public revoke all on sequences from anon, authenticated;
-alter default privileges in schema public revoke execute on functions from public, anon, authenticated;
+-- PostgreSQL grants EXECUTE on new functions to PUBLIC by default; a schema-scoped revoke cannot remove that,
+-- so this must be the global form. Every function therefore starts locked down and is granted explicitly.
+alter default privileges revoke execute on functions from public;
+alter default privileges in schema public revoke execute on functions from anon, authenticated;
 
 create type public.app_role as enum ('learner', 'author', 'clinical_reviewer', 'publisher', 'admin');
 

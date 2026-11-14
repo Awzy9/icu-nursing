@@ -3,7 +3,7 @@
 -- Publication is controlled by 0003_workflow.sql; API roles cannot write workflow columns at all.
 
 create type public.content_status as enum ('draft', 'in_review', 'changes_requested', 'approved', 'published', 'archived');
-create type public.version_status as enum ('in_review', 'approved', 'changes_requested', 'rejected', 'published', 'superseded');
+create type public.version_status as enum ('in_review', 'approved', 'changes_requested', 'rejected', 'withdrawn', 'published', 'superseded');
 create type public.content_kind as enum ('demo_synthetic', 'clinical');
 create type public.content_origin as enum ('human', 'ai_assisted', 'ai_generated');
 create type public.learner_level as enum ('beginner', 'intermediate', 'advanced');
