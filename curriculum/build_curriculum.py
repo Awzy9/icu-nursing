@@ -89,11 +89,11 @@ OBJ = {
 "Septic shock nursing care":"Apply nursing role in the local sepsis pathway; monitor response to fluids/vasopressors per orders; recognise persistent shock.",
 "Vasopressor and inotrope monitoring":"Monitor MAP targets, infusion-site and access safety, and adverse effects; use pump safety checks; escalate per protocol (no dose instructions published without pharmacist review).",
 "Cardiac arrest and post-cardiac-arrest care":"Recognise arrest; describe the nurse's role in a resuscitation team; describe post-arrest monitoring priorities; document events.",
-"Defibrillation safety":"State safe-operation steps (clear, oxygen safety, pad placement) at education level; clarify authorised-role requirements.",
+"Defibrillation safety":"Describe defibrillation safety principles at education level; state which roles are authorised to operate a defibrillator under local policy; recognise when to call for help.",
 "Neurological assessment and Glasgow Coma Scale":"Score GCS accurately; assess pupils and motor response; identify deterioration triggers; communicate findings.",
 "ICP monitoring and cerebral perfusion pressure":"Explain ICP/CPP relationship; monitor trends and nursing measures to avoid ICP rises; escalate sustained elevation.",
 "Sedation monitoring (RASS)":"Score RASS; relate to sedation targets; recognise over/under-sedation; support SAT.",
-"Delirium screening and prevention":"Perform CAM-ICU-style screening (independently explained); apply non-pharmacological prevention; escalate positive screens.",
+"Delirium screening and prevention":"Explain the principles of delirium screening and the features screened; use the unit-approved validated tool as trained (tool worksheets are NOT reproduced; copyright/permission check required); apply non-pharmacological prevention; escalate positive screens.",
 "Acute kidney injury":"Identify AKI by urine output/creatinine trends; recognise risk factors and nephrotoxins; monitor and escalate; state KDIGO guideline version used.",
 "Urine output monitoring and fluid balance":"Calculate hourly output and net balance; recognise oliguria; link to perfusion; document accurately.",
 "Potassium disorders":"Recognise hypo/hyperkalaemia signs including ECG changes; monitor during replacement; escalate severe values; apply safe-handling of concentrated electrolytes.",
@@ -116,6 +116,67 @@ OBJ = {
 "Nursing documentation":"Document objectively, timely and completely; avoid common documentation errors; legal considerations.",
 "Nursing scope of practice":"Distinguish nursing actions from prescriber decisions; recognise jurisdiction/institution variation; act within competence.",
 }
+
+# ---- Round-2 review additions (see CURRICULUM_REVIEW.md) ----
+# primary reference (source IDs from sources/source_register.csv; "TO SELECT" = not yet registered/verified)
+PRIMARY = {
+"Oxygen delivery systems and oxygen therapy":("S-AARC-O2","A"),
+"Invasive mechanical ventilation fundamentals and modes":("S-AARC-PVA","A"),
+"Ventilator parameters: PEEP, FiO2, tidal volume, plateau and driving pressure":("S-AARC-PVA","A"),
+"Ventilator alarms: recognition and nursing response":("S-AARC-PVA","A"),
+"Airway suctioning":("S-AARC-SUCT","A"),
+"Endotracheal tube care and cuff pressure":("S-AARC-PVA (cuff pressure section); local protocol","A"),
+"Weaning, SBT monitoring and extubation preparation":("S-AARC-SBT; S-SCCM-PADIS (B element evidence)","A"),
+"Recognition of respiratory deterioration":("TO SELECT: early-warning-score source (to register); S-OPENRN-SKILLS","B"),
+"ECG fundamentals and rhythm recognition":("S-OPENRN-ADV; S-AHA-2025 (arrhythmia/ALS parts - part numbers to confirm)","B"),
+"Arterial blood pressure monitoring and arterial line maintenance":("TO SELECT: peer-reviewed review/standard (to register); S-OPENRN-ADV","B"),
+"Shock recognition":("TO SELECT: shock classification review (to register); S-OPENRN-HA","B"),
+"Septic shock nursing care":("TO REGISTER: Surviving Sepsis Campaign (confirm current edition); S-NICE-NG253","A"),
+"Vasopressor and inotrope monitoring":("TO REGISTER: Surviving Sepsis Campaign; S-ISMP-HA","A"),
+"Cardiac arrest and post-cardiac-arrest care":("S-AHA-2025 (adult BLS/ALS and post-cardiac-arrest parts - part numbers to confirm; algorithm change notice dated 2026-02-06 to be checked)","A"),
+"Defibrillation safety":("S-AHA-2025; device manufacturer/institutional policy","A"),
+"Neurological assessment and Glasgow Coma Scale":("S-OPENRN-HA; TO SELECT: GCS primary literature","B"),
+"ICP monitoring and cerebral perfusion pressure":("TO SELECT: neurocritical-care guideline (to register)","A"),
+"Sedation monitoring (RASS)":("S-SCCM-PADIS; S-SCCM-ABCDEF (C/D elements) - scale copyright to check","A"),
+"Delirium screening and prevention":("S-SCCM-PADIS; S-SCCM-ABCDEF (D element); S-CAMICU (Vanderbilt-copyrighted tool)","A"),
+"Acute kidney injury":("S-KDIGO-AKI (2012 final; 2026 DRAFT must not be cited as final); S-NICE-AKI (to confirm)","A"),
+"Urine output monitoring and fluid balance":("S-OPENRN-HA; S-KDIGO-AKI","B"),
+"Potassium disorders":("TO SELECT: electrolyte guideline/review (to register); S-ISMP-HA (concentrated electrolytes)","A"),
+"Acid-base disturbances and ABG interpretation":("S-OPENRN-HA; S-AARC-BG (2013 expert-panel)","B"),
+"CRRT fundamentals and equipment":("S-KDIGO-AKI (2012 RRT section); TO SELECT: peer-reviewed CRRT nursing literature","A"),
+"Sedatives":("S-SCCM-PADIS; S-OPENRN-PHARM; S-ISMP-HA","A"),
+"Vasopressors":("TO REGISTER: Surviving Sepsis Campaign; S-OPENRN-PHARM","A"),
+"High-alert medication and infusion pump safety":("S-ISMP-HA (ISMP 2024 high-alert list for acute care)","A"),
+"Sepsis and septic shock recognition":("S-NICE-NG253 (published 2025-11-19; updated 2026-09-23); TO REGISTER: Surviving Sepsis Campaign","A"),
+"Standard and transmission-based precautions, isolation, PPE":("S-CDC-IC (core practices page); CDC isolation-precautions guideline (to pin)","B"),
+"CLABSI prevention":("S-CDC-IC (CLABSI guideline page to pin)","A"),
+"Ventilator-associated event prevention":("S-CDC-IC; TO REGISTER: SHEA/IDSA/APIC compendium","B"),
+"Head-to-toe assessment and documentation":("S-OPENRN-SKILLS","C"),
+"Pain assessment (CPOT, BPS)":("S-SCCM-PADIS; S-SCCM-ABCDEF (A element) - tool permissions to check","B"),
+"Skin assessment and pressure injury prevention":("S-OPENRN-SKILLS; TO REGISTER: NPIAP/EPUAP guideline","B"),
+"Enteral feeding and aspiration prevention":("S-ASPEN (specific guideline to pin); S-OPENRN-SKILLS","B"),
+"Coagulation tests: INR, aPTT, fibrinogen":("S-OPENRN-HA; laboratory reference to select","C"),
+"Blood product administration and transfusion reactions":("TO SELECT: transfusion guideline (to register); institutional transfusion policy","A"),
+"SBAR, clinical handover and escalation of deterioration":("S-AHRQ-TS (SBAR tool page; last reviewed Nov 2019)","C"),
+"Nursing documentation":("S-OPENRN-FUND (Ch. 2.5 Documentation)","C"),
+"Nursing scope of practice":("S-OPENRN-FUND (Ch. 1 Scope of Practice); regulator/jurisdiction documents","B"),
+}
+# Reviewer role codes: NE=Senior ICU nurse educator (curriculum lead), BN=Experienced ICU bedside nurse, PH=Clinical pharmacist,
+# RT=Respiratory therapist, CCP=Critical care physician, NEPH=Nephrology, NEURO=Neurology, IPC=Infection prevention
+DOMAIN_REV = {1:"NE;BN;RT;CCP",2:"NE;BN;CCP",3:"NE;BN;NEURO;CCP",4:"NE;BN;NEPH;CCP",5:"NE;PH;CCP",6:"NE;IPC;CCP",7:"NE;BN",8:"NE;BN;CCP",9:"NE;BN",10:"NE;BN;CCP"}
+# Multidisciplinary pre-publication review (>=3 roles incl. BN) required when: medication, resuscitation, life-support device, or guideline-threshold escalation
+MD_YES = {"Invasive mechanical ventilation fundamentals and modes","Ventilator parameters: PEEP, FiO2, tidal volume, plateau and driving pressure",
+"Ventilator alarms: recognition and nursing response","Weaning, SBT monitoring and extubation preparation","Endotracheal tube care and cuff pressure","Airway suctioning",
+"Shock recognition","Septic shock nursing care","Vasopressor and inotrope monitoring","Cardiac arrest and post-cardiac-arrest care","Defibrillation safety",
+"Arterial blood pressure monitoring and arterial line maintenance","ICP monitoring and cerebral perfusion pressure","Sedation monitoring (RASS)","Delirium screening and prevention",
+"Acute kidney injury","Potassium disorders","CRRT fundamentals and equipment","Sedatives","Vasopressors","High-alert medication and infusion pump safety",
+"Sepsis and septic shock recognition","CLABSI prevention","Ventilator-associated event prevention","Blood product administration and transfusion reactions","Oxygen delivery systems and oxygen therapy"}
+EXTRA_REV = {"Delirium screening and prevention":"NE;BN;PH;CCP;NEURO","Sedation monitoring (RASS)":"NE;BN;PH;CCP","Sedatives":"NE;BN;PH;CCP",
+"Vasopressors":"NE;BN;PH;CCP","Vasopressor and inotrope monitoring":"NE;BN;PH;CCP","High-alert medication and infusion pump safety":"NE;BN;PH",
+"Potassium disorders":"NE;BN;PH;CCP;NEPH","Blood product administration and transfusion reactions":"NE;BN;CCP;(transfusion medicine)","Weaning, SBT monitoring and extubation preparation":"NE;BN;RT;CCP",
+"Septic shock nursing care":"NE;BN;CCP;PH","Sepsis and septic shock recognition":"NE;BN;CCP;IPC","CLABSI prevention":"NE;BN;IPC","Ventilator-associated event prevention":"NE;BN;IPC;RT",
+"Enteral feeding and aspiration prevention":"NE;BN;(dietitian)","Pain assessment (CPOT, BPS)":"NE;BN;PH"}
+
 rows=[]; n=0; p1=0
 for d,(dn,topics) in D.items():
     for i,(t,lvl,mins,p) in enumerate(topics,1):
@@ -124,10 +185,16 @@ for d,(dn,topics) in D.items():
           "learning_objectives":OBJ.get(t,"TBA at topic development") ,
           "learner_level":{"N":"Novice/new ICU nurse","T":"Transitioning/1-5 yrs","E":"Experienced/advanced"}[lvl],
           "est_learning_minutes":mins,"reference_sources":SRC[d],"priority":"P1 (first release)" if p else "P2/P3 (later)",
-          "clinical_reviewer_specialty":REVIEWER[d],"development_status":"Not started"})
+          "clinical_reviewer_specialty":REVIEWER[d],"development_status":"Not started",
+          "primary_reference":PRIMARY[t][0] if t in PRIMARY else "TO SELECT at topic development",
+          "evidence_review_priority":PRIMARY[t][1] if t in PRIMARY else ("C" if not p else "B"),
+          "required_reviewer_roles":EXTRA_REV.get(t,DOMAIN_REV[d]),
+          "multidisciplinary_review_required":"Yes" if t in MD_YES else "No"})
 missing=[t for t in OBJ if t not in {r['topic'] for r in rows}]
 assert not missing, missing
 assert p1==40, p1
+missingp=[r["topic"] for r in rows if r["priority"].startswith("P1") and r["topic"] not in PRIMARY]
+assert not missingp, missingp
 out=os.path.join(os.path.dirname(__file__),"master_curriculum.csv")
 with open(out,"w",newline="",encoding="utf-8") as f:
     w=csv.DictWriter(f,fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)

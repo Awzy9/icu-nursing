@@ -12,7 +12,7 @@ Last checked: 2026-11-14. Machine-readable detail: `sources/source_register.csv`
 
 | Source | Class | Basis | What may be done | What must NOT be done | Action |
 |---|---|---|---|---|---|
-| Open RN (6 books) | **YELLOW → GREEN after verification** | Brief states CC BY 4.0; I could not read the NCBI page (browser challenge) | After verification: adapt with attribution + modification notice | Reuse third-party images/figures without checking their own licence; imply endorsement | Verify licence text on each book's NCBI page; log image-level exceptions |
+| Open RN (6 books) | **GREEN (conditional)** | Round 2: CC BY 4.0 read on publisher pages for Skills 2e and Health Alterations, CC Attribution label on Fundamentals 2e; NCBI page still unreadable; "except where otherwise noted" requires image-level checks | After verification: adapt with attribution + modification notice | Reuse third-party images/figures without checking their own licence; imply endorsement | Verify licence text on each book's NCBI page; log image-level exceptions |
 | OpenStax nursing | YELLOW | Licence is per book | Per book | Bulk reuse before checking | Check each book |
 | AACN (framework, ECCO, KAT, Synergy) | **RED** | Proprietary; some paid/member-only | Read public descriptions; cite | Scrape, copy, adapt ECCO, KAT or the framework text | Build original competency framework |
 | SCCM ICU Liberation | **RED for commercial use** | SCCM page: free for hospital staff training; other use needs advance request (iculiberation@sccm.org) | Cite underlying peer-reviewed evidence; write original text | Copy tools, illustrations, training content into the paid product | Send permission request (needs your approval) |
@@ -23,10 +23,11 @@ Last checked: 2026-11-14. Machine-readable detail: `sources/source_register.csv`
 | KDIGO | **RED** | KDIGO copyright (unverified); 2026 AKI/AKD update is a **draft** per search results | Cite/paraphrase final published versions | Present draft as final; copy tables | Re-check at build time |
 | ASPEN | **RED** | Proprietary; paid resources | Cite public guidance | Use paid education | — |
 | ISMP | **RED** | Proprietary | Cite; ask permission to reproduce high-alert lists | Copy lists/figures | Permission request |
-| NICE | YELLOW | NICE Notice of Rights / OGL (unverified) | Cite; reuse after reading notice | Imply NICE endorsement | Verify |
+| NICE | YELLOW | Notice of Rights not read. Sepsis: NG51 superseded by **NG253** (adults, published 2025-11-19) | Cite; reuse after reading notice | Imply NICE endorsement | Verify |
 | WHO | YELLOW/RED | Many WHO publications are CC BY-NC-SA (non-commercial) — **unverified** | Cite only | Commercial reuse of NC material | Verify per publication |
-| H5P (software) | GREEN (software, verify) | h5p.org/licensing reachable; terms not read | Use if licence fits | Assume content licences follow software licence | Read licence page |
-| React Flow, Next.js, Supabase, Tailwind, shadcn/ui, Lucide, Expo | GREEN (software; to be confirmed at install) | Open-source licences; pages reachable | Use | — | Record exact licence per package in `THIRD_PARTY_LICENSES` at Phase 1 |
+| H5P (software) | GREEN/YELLOW | Licensing page read: site content CC BY 4.0; code MIT "wherever possible" but parts of the PHP library are **GPL** — legal check before integration | Use if licence fits | Assume content licences follow software licence | Read licence page |
+| React Flow | GREEN | `LICENSE` read = MIT |
+| Next.js, Supabase, Tailwind, shadcn/ui, Lucide, Expo | Unverified | Licences not read; confirm at install | Use | — | Record exact licence per package in `THIRD_PARTY_LICENSES` at Phase 1 |
 
 ## Permission requests (draft, not sent)
 

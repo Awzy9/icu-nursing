@@ -1,6 +1,6 @@
 # Source Register (summary)
 
-Full data: [`sources/source_register.csv`](sources/source_register.csv) — 27 entries, one per resource, with the 16 required fields plus verification notes.
+Full data: [`sources/source_register.csv`](sources/source_register.csv) — 34 entries (rebuilt in round 2 by `sources/build_source_register.py`). **See `SOURCE_VERIFICATION_REPORT.md` for what was actually verified, how, and what was not.** The older round-1 summary below is superseded where they differ (e.g., NICE NG51 is replaced by NG253; the 403 links were largely resolved in Chromium).
 
 **Link check (2026-11-14, from a cloud proxy):** 21/28 URLs returned 200. Seven returned 403/406 to automated requests (AARC index, AHA, AHRQ ×2, CDC, KDIGO index, xyflow GitHub). These are most likely bot-blocking, **not broken links**, but they must be re-checked manually in a browser before Phase 0 is signed off. 200 means the page exists, not that its content was reviewed.
 

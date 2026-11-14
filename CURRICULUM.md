@@ -42,3 +42,63 @@ An **original** framework (Novice → Transitioning → Experienced) will be wri
 ## Scope exclusions (architected, not built)
 
 Paediatric, neonatal and general-ward content: `nursing_domains` has a `specialty` column and `audience` tags so these can be added without migration pain.
+
+---
+
+# Curriculum review (round 2, 2026-11-14)
+
+Scope: review of the 40 P1 topics. No lectures were written. Machine-readable results: new columns in `curriculum/master_curriculum.csv` (`primary_reference`, `evidence_review_priority`, `required_reviewer_roles`, `multidisciplinary_review_required`) and `curriculum/proposed_topics.csv`.
+
+## 1. Learning objectives — what "verified" means here
+
+I checked each of the 40 objectives for: measurable verb, nursing-scope wording, absence of prescriber-only actions, and consistency with the primary source's *public* description. **I did not check them against full guideline text** (no guideline was read in full), so they are *structurally reviewed, not clinically verified*. Clinical verification is a reviewer task (`CLINICAL_REVIEWER_MATRIX.md`).
+
+Changes made:
+- **Delirium screening:** removed "CAM-ICU-style screening" wording; tool worksheets are copyright-sensitive (Vanderbilt/Ely) — objective now teaches principles and the unit-approved tool.
+- **Defibrillation safety:** objective now states that authorised-role requirements apply and when to call for help.
+- Vasopressor/sedative/medication objectives explicitly exclude dose and concentration content pending pharmacist review.
+- ET-tube objective keeps cuff-pressure assessment "per local protocol" (the AARC patient-ventilator guideline summary I saw advises against continuous cuff-pressure assessment as a VAP-reduction measure — to be checked against the guideline text).
+
+## 2. Primary references for the 40 P1 topics
+
+26 of 40 have a registered primary source; **14 still say "TO SELECT/TO REGISTER"**: early-warning score (respiratory deterioration), arterial line, shock recognition, septic shock and vasopressor monitoring/vasopressors (Surviving Sepsis Campaign — edition to confirm), ICP/CPP (neurocritical guideline), potassium, CRRT nursing literature, transfusion, pressure injury (NPIAP), VAE compendium, GCS, coagulation reference. These must be registered and verified before drafting. I did not name specific guideline editions I could not confirm.
+
+## 3. Evidence review priority (before drafting)
+
+| Priority | Meaning | P1 count |
+|---|---|---|
+| **A** | Safety-critical or guideline-version-dependent: full-text review of the primary guideline and a second reviewer on references before drafting | 23 |
+| **B** | Guideline-informed: key recommendations + textbook | 13 |
+| **C** | Textbook-level foundation | 4 |
+
+## 4. Reviewer specialty and multidisciplinary review
+
+Every topic has `required_reviewer_roles` (codes defined in `CLINICAL_REVIEWER_MATRIX.md`). **26 of 40 P1 topics need multidisciplinary review** (medication, resuscitation, life-support devices/lines, or guideline-threshold escalation).
+
+## 5. Duplicates and overlaps
+
+Intentional overlaps to keep, each with one **canonical home** and cross-links:
+
+| Overlap | Canonical home | Other page links to it |
+|---|---|---|
+| Cardiac arrest (D2) vs arrest/respiratory-arrest emergencies (D10) | D2 "Cardiac arrest and post-cardiac-arrest care" | D10 holds scenarios only |
+| Septic shock care (D2) vs sepsis recognition (D6) vs vasopressors (D5) vs vasopressor monitoring (D2) | D6 = recognition/pathway; D2 = shock nursing care; D5 = pharmacology; D2 vasopressor monitoring = bedside monitoring | Cross-link; avoid repeating thresholds |
+| Pain assessment (D7) vs analgesics (D5) vs sedation monitoring (D3) vs sedatives (D5) | D7 pain; D3 RASS; D5 drugs | Linked as ABCDEF-style bundle (permission pending) |
+| Potassium disorders (D4) vs electrolyte replacement (D5) vs hyperkalaemia emergency (D10) | D4 | D5 safe-handling; D10 scenario |
+| Anticoagulants (D5) vs anticoagulant safety/DVT prevention (D8) | D8 monitoring; D5 pharmacology | — |
+| Standard precautions (D6) vs hygiene (D7) | D6 | — |
+| Defibrillation safety (D2) vs resuscitation roles | D2 | D10 scenario |
+| ECG fundamentals vs heart rate/rhythm monitoring (D2) | **Merge candidate** — "Heart rate and rhythm monitoring" (P2) could fold into P1 "ECG fundamentals and rhythm recognition" | Decision needed |
+| Urine output (D4) vs fluid I/O (D7) | **Merge candidate** — D7 "Vital-sign, temperature and fluid input/output" duplicates part of D4 "Urine output monitoring and fluid balance" | Decision needed |
+
+True duplicate removals proposed: none are deleted without your approval; two merges flagged above.
+
+## 6. Missing high-priority topics
+
+18 proposed topics in `curriculum/proposed_topics.csv`. Highest value: **early mobility & ABCDEF overview**, **chest drain/pneumothorax**, **central venous catheter care and CVP**, plus a gap in the whole **GI/hepatic/endocrine** area and **post-operative/trauma/burns** care (would need two new domains, so approval required). The brief's 10-domain structure is unchanged.
+
+## 7. Decisions needed
+
+1. Approve/reject the 3 P1-candidate additions (chest drain, CVC care, early mobility). Adding them raises P1 to 43; or swap for lower-risk P1s.
+2. Approve the two merges.
+3. Approve adding Domains 11–12 (GI/Hepatic/Endocrine; Surgical/Trauma/Burns).

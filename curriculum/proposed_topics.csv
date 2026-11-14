@@ -1,0 +1,19 @@
+proposed_id,proposed_domain,topic,why_needed,suggested_priority,suggested_primary_source,status
+PX-01,1 Respiratory,Chest drain and pneumothorax: nursing monitoring,Skills library lists chest drain monitoring but no knowledge topic exists,P1-candidate,TO SELECT,Proposed - needs owner approval
+PX-02,1 Respiratory,Pulmonary embolism recognition,Common ICU deterioration cause not covered,P2,TO SELECT,Proposed
+PX-03,2 Cardiovascular,Acute coronary syndrome and heart failure/pulmonary oedema,Only 'myocardial ischemia recognition' exists,P2,TO SELECT (AHA/ESC/ACC guidelines to register),Proposed
+PX-04,2 Cardiovascular,Central venous catheter care and CVP measurement,Skills library item without topic; CLABSI depends on it,P1-candidate,S-CDC-IC; TO SELECT,Proposed
+PX-05,2 Cardiovascular,Targeted temperature management / fever control,Post-arrest and neuro care gap,P2,S-AHA-2025 (post-arrest part),Proposed
+PX-06,2 Cardiovascular,Mechanical circulatory support (IABP/Impella/ECMO) nursing basics,Advanced; later release,P3,TO SELECT,Proposed
+PX-07,3 Neuro,Alcohol and drug withdrawal in ICU,Frequent agitation cause,P2,TO SELECT,Proposed
+PX-08,7 General,Early mobility and ABCDEF bundle overview,Bundle element E has no dedicated P1 topic; promote existing 'positioning, hygiene and mobilization' or split,P1-candidate,S-SCCM-PADIS; S-SCCM-ABCDEF (permission needed for tools),Proposed
+PX-09,7 General,Oral care and VAP-prevention nursing care,Core VAE bundle element,P2,S-CDC-IC; TO SELECT,Proposed
+PX-10,7 General,End-of-life and palliative care in ICU; family conferences,Major nursing role absent,P2,TO SELECT,Proposed
+PX-11,7 General,Peripheral IV care and extravasation,Skills item; vasopressor safety link,P2,TO SELECT,Proposed
+PX-12,9 Professional,Moral distress and staff wellbeing,Retention-relevant; new-to-ICU audience,P3,TO SELECT,Proposed
+PX-13,11 (new) GI/Hepatic/Endocrine,Upper GI bleeding,No GI domain exists,P2,TO SELECT,Proposed - requires new domain
+PX-14,11 (new) GI/Hepatic/Endocrine,Acute liver failure and hepatic encephalopathy,No GI/hepatic domain,P3,TO SELECT,Proposed - requires new domain
+PX-15,11 (new) GI/Hepatic/Endocrine,Acute pancreatitis and intra-abdominal hypertension,No GI domain,P3,TO SELECT,Proposed - requires new domain
+PX-16,11 (new) GI/Hepatic/Endocrine,Adrenal insufficiency and thyroid emergencies,Endocrine gap beyond DKA/HHS,P3,TO SELECT,Proposed - requires new domain
+PX-17,12 (new) Trauma/Burns/Surgical,Post-operative ICU care and major trauma/burns basics,Large share of ICU admissions,P2,TO SELECT,Proposed - requires new domain
+PX-18,9 Professional,Organ donation and brain-death family communication,Related to existing brain death topic,P3,TO SELECT,Proposed
