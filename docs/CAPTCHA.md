@@ -27,3 +27,28 @@ Cloudflare publishes test keys: site key `1x00000000000000000000AA` produces a t
 - To turn it off in dev: `npx tsx scripts/live/configure-captcha.ts --off`.
 - Accessibility: Turnstile offers an accessible challenge; the form shows a text label "Security check". Keyboard users reach the widget in tab order.
 - Privacy: Turnstile contacts Cloudflare. Mention it in the privacy policy before launch.
+
+## Status: real Turnstile widget active on the DEV project
+
+- Widget: owner-created "ICU Nursing Dev". Public site key `0x4AAAAAAGA_er_6N84u9td4` (public by design) is set in the local, git-ignored `.env.local` for development. The matching **secret** was entered by the owner in Supabase (Authentication → CAPTCHA protection); it never passed through this repository.
+- `localhost` works with the real key (widget renders on `/login`, `/register`, `/forgot-password` under our CSP). When a Vercel staging URL exists, the owner adds its hostname to the widget in Cloudflare and sets `NEXT_PUBLIC_TURNSTILE_SITE_KEY` in Vercel.
+- The widget runs in Cloudflare's interactive mode ("Verify you are human"). Automated browsers are meant to fail it, so a **positive** login/reset/sign-up needs a human.
+
+### Verified automatically (real Supabase + Cloudflare, no human token)
+| Check | Result |
+|---|---|
+| Sign-in and password-reset requests with **no** token | 400 `captcha_failed` (no captcha_token found) |
+| Same with a **forged** token | 400 `captcha_failed (invalid-input-response)` — proves Supabase calls Cloudflare siteverify with a valid secret (a wrong secret would say `invalid-input-secret`) |
+| Cloudflare's public **test** token | Rejected now (the real secret replaced the test secret) |
+| Real widget loads on all three forms, no CSP violation, token empty until a human completes it | pass (`tests/live-e2e/captcha-real.live.spec.ts`, `REAL_CAPTCHA=1`) |
+| UI: missing token → "Please complete the security check."; forged token → "security check failed", form stays | pass |
+
+### Manual real-CAPTCHA checklist (needs a person; about 5 minutes)
+1. `npm run build:live && NEXT_DIST_DIR=.next-live npx next start -p 3100` (or `npm run dev`), open `http://localhost:3000/en/login`.
+2. Tick "Verify you are human", sign in with a test account → expect success.
+3. `/en/forgot-password`: complete the check, submit → expect the neutral "if an account exists…" message (an email only arrives for an authorised organisation address, max ~2/hour).
+4. `/en/register`: complete the check, submit with an authorised organisation address → expect "check your email".
+Report any "security check failed" message: it would indicate a hostname or secret mismatch.
+
+### Consequence for the automated live suites
+The live API suite (`tests/live`) and most of the live UI suite authenticate by password and used Cloudflare's **test** token, which the real secret now refuses. They therefore **cannot run** while the real secret is configured, and I will not overwrite the owner's secret to make them run. Options: (a) run them against a second, disposable dev project (needs owner approval); (b) temporarily switch the secret to the Cloudflare test secret yourself, run the suites, and re-enter the real secret afterwards. The old secret-swapping UI test is now skipped unless `CAPTCHA_MODE=test`.

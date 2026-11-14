@@ -81,6 +81,8 @@ test("registration page validates input and does not pretend an undeliverable ad
 });
 
 test("CAPTCHA: the widget loads under the CSP and fills the form; a missing token is refused; a rejected token shows a clear error and re-arms the widget", async ({ page }) => {
+  // This test REPLACES the project's CAPTCHA secret with Cloudflare TEST secrets. Never run it against the owner's real secret.
+  test.skip(process.env.CAPTCHA_MODE !== "test", "needs CAPTCHA_MODE=test (it would overwrite the real Turnstile secret)");
   test.setTimeout(240_000);
   const violations: string[] = [];
   page.on("console", (m) => { if (/content security policy/i.test(m.text())) violations.push(m.text()); });
