@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICU Nurse Knowledge Map — wireframe prototype</title>
+<style>
+:root{--navy:#0B2545;--teal:#0F766E;--bg:#F8FAFC;--card:#fff;--line:#E2E8F0;--ink:#1E293B;--mute:#475569;--warn:#B45309;--warnbg:#FEF3C7;--red:#B91C1C;--redbg:#FEE2E2;--ok:#166534;--okbg:#DCFCE7}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1220;--card:#111B2E;--line:#243049;--ink:#E5EAF3;--mute:#A5B1C6;--navy:#E5EAF3;--teal:#2DD4BF;--warnbg:#3B2A08;--redbg:#3B1212;--okbg:#0E2E1B;--warn:#FBBF24;--red:#FCA5A5;--ok:#86EFAC}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:72px}
+a{color:var(--teal)}h1,h2,h3{color:var(--navy);line-height:1.25;margin:.2em 0 .4em}h1{font-size:1.6rem}h2{font-size:1.2rem}h3{font-size:1rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:5}
+header b{color:var(--navy)}main{max-width:760px;margin:0 auto;padding:16px}
+nav.tabs{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--line);z-index:6}
+nav.tabs a{flex:1;text-align:center;padding:10px 2px;font-size:.72rem;text-decoration:none;color:var(--mute);min-height:44px}
+nav.tabs a.on{color:var(--teal);font-weight:700;border-top:2px solid var(--teal)}
+.banner{background:var(--warnbg);color:var(--warn);border:1px solid var(--warn);padding:8px 12px;border-radius:8px;font-size:.85rem;margin-bottom:14px}
+.btn{display:inline-block;min-height:44px;padding:10px 16px;border-radius:8px;border:1px solid var(--teal);background:var(--teal);color:#fff;font:inherit;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--teal)}.row{display:flex;gap:10px;flex-wrap:wrap}
+.list a.item{display:flex;justify-content:space-between;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:44px}
+.pill{font-size:.72rem;border:1px solid var(--line);border-radius:99px;padding:2px 8px;color:var(--mute);white-space:nowrap}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:var(--teal)}
+.callout{border-inline-start:4px solid var(--teal);background:var(--card);padding:10px 12px;margin:12px 0;border-radius:0 8px 8px 0}
+.callout.flag{border-color:var(--red);background:var(--redbg)}.callout.scope{border-color:var(--warn);background:var(--warnbg)}
+.vitals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.vitals div{background:#06121f;color:#7CFCD4;border-radius:8px;padding:8px;text-align:center;font-variant-numeric:tabular-nums}
+.vitals small{display:block;color:#93A4B8;font-size:.7rem}
+.opt{display:block;width:100%;text-align:start;margin:8px 0;padding:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;font:inherit;cursor:pointer;min-height:44px}
+.opt:focus-visible,.btn:focus-visible,nav a:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.opt.good{border-color:var(--ok);background:var(--okbg)}.opt.bad{border-color:var(--red);background:var(--redbg)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:12px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(min-width:700px){.grid.g3{grid-template-columns:repeat(3,1fr)}}
+.tag{font-size:.7rem;font-weight:700;border-radius:4px;padding:1px 6px;margin-inline-end:6px}.tag.n{background:var(--okbg);color:var(--ok)}.tag.e{background:var(--warnbg);color:var(--warn)}.tag.p{background:var(--redbg);color:var(--red)}
+details{border-bottom:1px solid var(--line);padding:8px 0}summary{cursor:pointer;min-height:44px;display:flex;align-items:center}
+@media(prefers-reduced-motion:no-preference){.bar i{transition:width .4s}}
+</style></head>
+<body>
+<header><b>ICU Nurse Knowledge Map</b><span class="pill">wireframe prototype</span></header>
+<main id="app" tabindex="-1"></main>
+<nav class="tabs" aria-label="Main"></nav>
+<script>
+const ROUTES=[["home","Home"],["dash","Dashboard"],["library","Library"],["meds","Meds"],["sim","Simulate"],["exam","Exams"]];
+const PH='<div class="banner" role="note"><b>Wireframe/prototype only.</b> Placeholder content, not clinically reviewed, not for clinical use. Real exams are graded on the server.</div>';
+const topic={title:"Recognising respiratory deterioration",domain:"Respiratory and Airway Management",level:"Novice",mins:30,status:"DRAFT — not reviewed"};
+let sim={stage:0,log:[]};
+const STAGES=[
+ {t:"Stage 1 — Recognise deterioration",v:[["HR","125"],["BP","78/42"],["MAP","54"],["Temp","39.0°C"],["Lactate","4.5"],["Urine","10 mL/h"]],
+  q:"A 65-year-old admitted with pneumonia looks worse. What do you do first?",
+  o:[["Complete a rapid airway–breathing–circulation assessment and escalate to the responsible clinician now using SBAR, per the local early-warning policy","escalation",1,"Escalation is the nurse's responsibility. Assessment and escalation happen together."],
+     ["Recheck observations in an hour","nursing_action",0,"Delay risks harm; these observations meet typical escalation criteria."],
+     ["Start a vasopressor and titrate it yourself","prescriber_decision",0,"Starting vasopressors needs an authorised prescriber's order or an approved protocol."],
+     ["Document and continue routine care","nursing_action",0,"Documentation alone is not a response to deterioration."]]},
+ {t:"Stage 2 — Escalation made; orders awaited",v:[["HR","128"],["BP","76/40"],["MAP","52"],["SpO₂","91%"],["RR","30"],["Urine","8 mL/h"]],
+  q:"The team is on the way. What is the best use of the next minutes?",
+  o:[["Prepare equipment and access per the sepsis pathway, keep monitoring, and be ready to give a concise SBAR handover","nursing_action",1,"Preparing and monitoring supports the team without exceeding scope."],
+     ["Leave the bedside to find the on-call doctor yourself","nursing_action",0,"Use the call system; do not leave an unstable patient."],
+     ["Give any fluid volume you think appropriate","prescriber_decision",0,"Fluid type/volume follows an order or approved protocol."],
+     ["Wait without monitoring until the team arrives","nursing_action",0,"Continuous monitoring is essential."]]},
+ {t:"Debrief",v:[],q:"Prototype ends here. In the real engine each choice changes the patient state on the server and the attempt is scored there.",o:[]}];
+const QS=[{s:"Which finding most strongly suggests a patient is deteriorating and needs prompt escalation?",o:["A single normal set of vital signs","A rising respiratory rate with new confusion","A patient who is asleep at 3 a.m.","A visitor asking for water"],a:1,w:"Rising respiratory rate with new confusion are early deterioration signs. The others are not by themselves escalation triggers. (Placeholder question — unreviewed.)"}];
+const V={
+home:()=>`${PH}<h1>From Knowledge to Bedside Competence.</h1><p>Evidence-based education for adult ICU nurses: topics, skills, medications, simulations and exams — every item traceable to sources and clinically reviewed.</p>
+<div class="row"><a class="btn" href="#dash">Create free account</a><a class="btn ghost" href="#library">Browse the library</a></div>
+<h2>Learn</h2><div class="grid g3"><a class="card" href="#library"><h3>10 clinical domains</h3><small>Respiratory, cardiovascular, neuro, renal…</small></a><a class="card" href="#sim"><h3>Clinical simulation</h3><small>A patient who changes with your decisions</small></a><a class="card" href="#exam"><h3>Examination centre</h3><small>Topic, domain and timed exams</small></a><a class="card" href="#meds"><h3>Medication reference</h3><small>Monitoring and safety, pharmacist-reviewed</small></a><div class="card"><h3>Clinical skills</h3><small>Checklists (not a substitute for supervised validation)</small></div><div class="card"><h3>Progress</h3><div class="bar"><i style="width:35%"></i></div><small>Preview: 35% of Domain 1</small></div></div>
+<div class="callout scope"><b>Educational use only.</b> Not a clinical decision-support tool. Follow your institution's protocols. No accreditation or CPD claims.</div>`,
+dash:()=>`${PH}<h1>Welcome back</h1><div class="card"><h3>Continue learning</h3><p><a href="#topic">${topic.title}</a> <span class="pill">${topic.mins} min</span></p><div class="bar"><i style="width:60%"></i></div></div>
+<h2>Domain progress</h2>${[["Respiratory",35],["Cardiovascular",10],["Neurocritical",0],["Renal & metabolic",0]].map(([n,p])=>`<p style="margin:.4em 0">${n} <span class="pill">${p}%</span></p><div class="bar"><i style="width:${p}%"></i></div>`).join("")}
+<h2>Recommended</h2><div class="list"><a class="item" href="#topic"><span>Ventilator alarms</span><span class="pill">P1</span></a><a class="item" href="#topic"><span>Shock recognition</span><span class="pill">P1</span></a></div>
+<div class="grid"><div class="card"><h3>Exam performance</h3><small>No attempts yet</small></div><div class="card"><h3>Simulation history</h3><small>No attempts yet</small></div><div class="card"><h3>Bookmarks</h3><small>0 saved</small></div><div class="card"><h3>Competency</h3><small>0 self-assessed</small></div></div>`,
+library:()=>`${PH}<h1>Knowledge library</h1><input aria-label="Search topics" placeholder="Search topics, e.g. PEEP" style="width:100%;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit"><div class="row" style="margin:10px 0"><span class="pill">Level: all</span><span class="pill">Reviewed only</span><span class="pill">Domain: all</span></div>
+<div class="list">${["1 Respiratory and Airway Management","2 Cardiovascular and Hemodynamic Care","3 Neurocritical Care","4 Renal and Metabolic Care","5 Critical Care Pharmacology","6 Infection and Sepsis","7 General ICU Nursing","8 Hematology and Transfusion","9 Professional Nursing Practice","10 Critical Care Emergencies"].map((d,i)=>`<a class="item" href="#topic"><span>${d}</span><span class="pill">${[19,17,13,13,16,9,12,7,8,10][i]} topics</span></a>`).join("")}</div>`,
+topic:()=>`${PH}<p><span class="tag n">NOVICE</span><span class="pill">${topic.mins} min</span> <span class="pill">${topic.status}</span></p><h1>${topic.title}</h1><small>${topic.domain} · Reviewed by: <i>role names shown when approved</i> · Last reviewed: —</small>
+<details open><summary><b>On this page</b></summary><ol><li>Objectives</li><li>Why it matters</li><li>Assess</li><li>Red flags & escalation</li><li>Document</li><li>Check yourself</li><li>References</li></ol></details>
+<h2>Learning objectives</h2><ul><li>Identify early signs of respiratory deterioration.</li><li>Escalate with a structured SBAR.</li></ul>
+<div class="callout flag"><b>Red flag — escalate:</b> rising work of breathing, falling SpO₂ trend, new confusion. Use your unit's early-warning score.</div>
+<div class="callout scope"><b>Scope note:</b> Nursing action: assess, monitor, call for help. Prescriber/RT decision: changing ventilator settings or orders.</div>
+<div class="card"><b>Diagram placeholder</b><br><small>Original clinical illustration with alt text, source and licence line.</small></div>
+<h2>Check yourself</h2><a class="btn" href="#exam">Try 5 questions</a><h2>References</h2><p><small>Each reference shows source, guideline version and the date the source was last checked.</small></p>`,
+meds:()=>`${PH}<h1>Medication reference</h1><div class="row"><span class="pill">Vasopressors</span><span class="pill">Sedatives</span><span class="pill">Anticoagulants</span><span class="pill">…</span></div><h2>Example entry (placeholder)</h2>
+<div class="card"><h3>Norepinephrine <span class="tag p">UNREVIEWED</span></h3><p><b>Class:</b> vasopressor</p><p><b>Nursing monitoring:</b> blood pressure/MAP, perfusion, rhythm, infusion site.</p><p><b>Watch for:</b> arrhythmia, tissue injury if extravasation.</p>
+<div class="callout flag"><b>Dose &amp; concentration hidden.</b> Shown only after pharmacist review and with a local-protocol warning.</div></div>`,
+sim:()=>{const s=STAGES[sim.stage];return `${PH}<h1>Simulation: acute deterioration</h1><p><span class="pill">Synthetic fictional patient</span> <span class="pill">${s.t}</span></p>${s.v.length?`<div class="vitals">${s.v.map(([k,x])=>`<div><small>${k}</small>${x}</div>`).join("")}</div>`:""}<p>${s.q}</p><div id="opts">${s.o.map((o,i)=>`<button class="opt" onclick="pick(${i})">${o[0]}</button>`).join("")}</div><div id="fb"></div>${s.o.length?"":`<a class="btn" href="#sim" onclick="sim={stage:0,log:[]}">Restart</a>`}`},
+exam:()=>`${PH}<h1>Examination centre</h1><div class="grid"><div class="card"><h3>Topic quiz</h3><small>5–10 questions</small></div><div class="card"><h3>Domain exam</h3><small>Timed</small></div><div class="card"><h3>Random exam</h3><small>Mixed</small></div><div class="card"><h3>Case-based</h3><small>Scenario stems</small></div></div><h2>Sample question</h2><p>${QS[0].s}</p>${QS[0].o.map((t,i)=>`<button class="opt" onclick="ans(${i})">${'ABCD'[i]}. ${t}</button>`).join("")}<div id="fb"></div><p><small>Timer, results and analytics sit here in the real product; scoring is server-side.</small></p>`};
+function pick(i){const s=STAGES[sim.stage],o=s.o[i];document.getElementById('fb').innerHTML=`<div class="callout ${o[2]?'':'flag'}"><b>${o[2]?'Best choice.':'Not the best choice.'}</b> <span class="tag ${o[1]=='prescriber_decision'?'p':o[1]=='escalation'?'e':'n'}">${o[1].replace('_',' ')}</span> ${o[3]}</div><button class="btn" onclick="sim.stage++;render()">Next stage</button>`;[...document.querySelectorAll('.opt')].forEach((b,j)=>{b.disabled=true;if(s.o[j][2])b.classList.add('good');else if(j==i)b.classList.add('bad')})}
+function ans(i){const q=QS[0];document.getElementById('fb').innerHTML=`<div class="callout ${i==q.a?'':'flag'}"><b>${i==q.a?'Correct.':'Not quite.'}</b> ${q.w}</div>`;[...document.querySelectorAll('.opt')].forEach((b,j)=>{b.disabled=true;if(j==q.a)b.classList.add('good');else if(j==i)b.classList.add('bad')})}
+function render(){const r=(location.hash||"#home").slice(1);const k=V[r]?r:"home";document.getElementById('app').innerHTML=V[k]();document.querySelector('nav.tabs').innerHTML=ROUTES.map(([h,l])=>`<a href="#${h}" class="${h==k||(k=='topic'&&h=='library')?'on':''}">${l}</a>`).join("");window.scrollTo(0,0)}
+addEventListener('hashchange',render);render();
+</script></body></html>
