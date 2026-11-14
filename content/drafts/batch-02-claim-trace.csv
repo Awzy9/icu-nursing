@@ -193,3 +193,49 @@ D02-T04,SSC 2021: arterial catheter allows reliable continuous measurement; cuff
 D02-T04,SSC 2021: limb ischaemia/bleeding <1% radial; infection higher with femoral (RR 1.93),SSC 2021 (PMC8486643),Rec 43 rationale,Narrative,text match
 D02-T04,SSC 2021: suggest invasive arterial pressure monitoring in septic shock on vasopressors,SSC 2021 (PMC8486643),Rec 43,Weak; very low,text match
 D02-T14,RCUK 2025 phrases the aim as SBP >100 mmHg or MAP >60-65 mmHg (page read; not full text),ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),ERC text for comparison,Recommendation,text match
+D06-T01,"SSC 2026: NEWS, NEWS2, MEWS or SIRS over qSOFA as single screening tool (strong, moderate)",SSC 2026 official SCCM recommendation page (recommendation-level),Screening,Strong; moderate,text match
+D06-T01,"SSC 2026: blood cultures as soon as possible, ideally before antimicrobials (strong, low)",SSC 2026 official SCCM recommendation page (recommendation-level),Diagnostics,Strong; low,text match
+D06-T01,SSC 2026: antimicrobials within 1 h for septic shock and for probable/definite sepsis without shock,SSC 2026 official SCCM recommendation page (recommendation-level),Antibiotic initiation,Strong; very low,text match
+D06-T01,"SSC 2026: possible sepsis without shock - time-limited investigation, antimicrobials within 3 h",SSC 2026 official SCCM recommendation page (recommendation-level),Antibiotic initiation,Conditional; very low,text match
+D06-T01,SSC 2026: suggest measuring blood lactate; serial lactate to guide resuscitation,SSC 2026 official SCCM recommendation page (recommendation-level),Serial lactate,Conditional; low,text match
+D06-T01,SSC 2026: capillary refill time as adjunct to guide resuscitation,SSC 2026 official SCCM recommendation page (recommendation-level),Capillary refill,Conditional; low,text match
+D06-T01,"SSC 2026: norepinephrine first-line; initial MAP 65 (strong, moderate)",SSC 2026 official SCCM recommendation page (recommendation-level),Mean arterial pressure,Strong; moderate,text match
+D02-T08,SSC 2026: age 65 or older MAP range 60-65 mm Hg suggested,SSC 2026 official SCCM recommendation page (recommendation-level),Mean arterial pressure,Conditional; low,text match
+D02-T08,SSC 2026: start vasopressors peripherally rather than delay for central access,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressor administration,Conditional; very low,text match
+D02-T04,SSC 2026: either invasive or non-invasive blood pressure monitoring,SSC 2026 official SCCM recommendation page (recommendation-level),Blood pressure monitoring,Conditional; very low,text match
+D02-T04,"SSC 2026: invasive monitoring advised for intermediate-high/escalating/multiple vasopressors, frequent sampling, inconsistent cuff readings",SSC 2026 official SCCM recommendation page (recommendation-level),Remarks,Remark,text match
+D01-T03,SSC 2026: oxygen targets in sepsis with hypoxaemic failure - liberal or conservative,SSC 2026 official SCCM recommendation page (recommendation-level),Oxygen targets,Conditional; low,text match
+D03-T10,"PADIS 2018: multicomponent non-pharmacological intervention (conditional, low)",SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium,Conditional; low,text match
+D03-T10,PADIS 2018: regularly assess for delirium with a valid tool,SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium,Statement,text match
+D03-T10,PADIS 2018: suggest not using haloperidol/atypical/dexmedetomidine/statin/ketamine to prevent delirium,SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium prevention,Conditional; very low to low,text match
+D03-T10,PADIS 2018: suggest not using bright light therapy,SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium,Conditional; moderate,text match
+D03-T10,PADIS 2018: suggest noise and light reduction strategies for sleep,SCCM PADIS 2018 official recommendation page (recommendation-level),Sleep,Conditional; low,text match
+D03-T10,PADIS 2025: unable to recommend for or against antipsychotics to treat delirium,SCCM PADIS 2025 official recommendation page (recommendation-level),Delirium,Conditional; low,text match
+D03-T09,PADIS 2025: dexmedetomidine over propofol where light sedation/delirium reduction priority,SCCM PADIS 2025 official recommendation page (recommendation-level),Sedation,Conditional; moderate,text match
+D03-T09,PADIS 2025: insufficient evidence for benzodiazepines to treat anxiety,SCCM PADIS 2025 official recommendation page (recommendation-level),Anxiety,No recommendation,text match
+D03-T09,PADIS 2018: DSI protocols and nurse-protocolised targeted sedation maintain light sedation; RASS -1 to +1 / SAS 4-7,SCCM PADIS 2018 official recommendation page (recommendation-level),Light sedation,Ungraded,text match
+D03-T09,PADIS 2018: propofol or dexmedetomidine over benzodiazepines in ventilated adults,SCCM PADIS 2018 official recommendation page (recommendation-level),Sedation,Conditional; low,text match
+D03-T09,PADIS 2018: BIS best suited to deep sedation or neuromuscular blockade,SCCM PADIS 2018 official recommendation page (recommendation-level),Objective sedation monitoring,Statement,text match
+D03-T09,PADIS 2018: restraints used frequently despite no efficacy studies; safety concerns,SCCM PADIS 2018 official recommendation page (recommendation-level),Physical restraints,Ungraded,text match
+D03-T09,PADIS 2018: vasoactive infusions or mechanical ventilation not barriers to mobilisation if stable,SCCM PADIS 2018 official recommendation page (recommendation-level),Mobilisation,Statement,text match
+D07-T03,PADIS 2018: NRS 0-10 valid and feasible for self-report,SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Ungraded,text match
+D07-T03,"PADIS 2018: BPS, BPS-NI and CPOT greatest validity and reliability",SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Ungraded,text match
+D07-T03,PADIS 2018: vital signs not valid indicators of pain,SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Ungraded,text match
+D07-T03,PADIS 2018: treat pain before a sedative is considered,SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Good practice,text match
+D07-T03,PADIS 2018: assessment-driven protocol-based stepwise approach,SCCM PADIS 2018 official recommendation page (recommendation-level),Protocol-based pain management,Conditional; moderate,text match
+D07-T03,PADIS 2018: family can be involved when patient cannot self-report,SCCM PADIS 2018 official recommendation page (recommendation-level),Proxy reporters,Ungraded,text match
+D07-T03,PADIS 2018: suggest massage and music therapy; not cybertherapy/hypnosis,SCCM PADIS 2018 official recommendation page (recommendation-level),Non-pharmacologic,Conditional; low,text match
+D07-T03,Open RN 11.3: PQRSTU mnemonic,Open RN Fundamentals 11.3,11.3,Educational text,text match
+D07-T03,Open RN 11.3: 0-10 question screens; thorough assessment and comfort-function goal needed,Open RN Fundamentals 11.3,11.3,Educational text,text match
+D07-T01,Open RN App C: checklist is for a routine general daily assessment by an entry-level nurse,Open RN Nursing Skills Appendix C,Appendix C intro,Educational text,text match
+D07-T01,"Open RN App C: primary survey - airway, breathing, circulation, mental status",Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,Open RN App C: identify patient with two identifiers,Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,Open RN App C: compare pulses bilaterally; apical pulse one minute,Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,Open RN App C: document oxygen device and flow/FiO2; check skin under devices,Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,"Open RN App C: end-of-visit safety (call light, bed low, rails, room)",Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D09-T03,Open RN 1.3: Nurse Practice Act defines scope; breach can lead to licence revocation,Open RN Fundamentals 1.3,1.3,Educational text (US),text match
+D09-T03,Open RN 1.3: Joint Commission National Patient Safety Goals list,Open RN Fundamentals 1.3,1.3,Educational text (US),text match
+D09-T03,Open RN 1.4: RN accepts delegated acts only with protocols/orders and competence (Wisconsin example),Open RN Fundamentals 1.4,1.4,Educational text (US state),text match
+D09-T03,Open RN 1.4: chain of command,Open RN Fundamentals 1.4,1.4,Educational text,text match
+D09-T03,Open RN 1.4: APRNs can diagnose and prescribe,Open RN Fundamentals 1.4,1.4,Educational text (US),text match
+D09-T03,Open RN 1.6: undocumented assessment considered not done; failure to notify provider,Open RN Fundamentals 1.6,1.6,Educational text (US),text match

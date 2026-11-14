@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM Task Force: Consensus on circulatory shock and hemodynamic monitoring (Intensive Care Med 2014;40:1795-1815; CC BY-NC) – a 2014 document; newer guidance exists"]
-sources: [S-ESICM-SHOCK-2014, S-SSC-2021]
-sources_not_read: [S-OPENRN-HA, S-SSC-2026]
+sources: [S-ESICM-SHOCK-2014, S-SSC-2021, S-SSC-2026]
+sources_not_read: [S-OPENRN-HA]
 independently_written_note: "Original wording. The 2014 ESICM consensus (open access, non-commercial licence) was read in full text. Open RN Health Alterations (the register source) was not read for this topic. SSC 2021 statements were used only where stated. Vasopressor and fluid dosing are deliberately not covered."
 ---
 # Recognising circulatory shock and the nurse's response
@@ -68,7 +68,7 @@ Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially 
 | Early treatment | Early haemodynamic stabilisation and cause treatment with frequent reassessment of response (ungraded) | Reassess after each intervention |
 | BP target | Individualise the target; initially MAP of at least 65 mmHg (level 1) | Prescriber sets the target |
 
-**Newer septic-shock statements (SSC 2021, septic shock only):** capillary refill time may be used as an adjunct to guide resuscitation (weak recommendation, low-quality evidence); for adults with septic shock on vasopressors, an initial MAP target of 65 mmHg is recommended over higher targets (strong, moderate-quality evidence). These apply to **septic** shock and do not replace the individualised target set by the prescriber for other shock types.
+**Newer septic-shock statements (SSC 2021; SSC 2026 recommendation-level text from the official SCCM page, full publication not read; septic shock only):** capillary refill time may be used as an adjunct to guide resuscitation (weak recommendation, low-quality evidence); for adults with septic shock on vasopressors, an initial MAP target of 65 mmHg is recommended over higher targets (strong, moderate-quality evidence). SSC 2026 keeps the MAP 65 mmHg recommendation (strong, moderate) and adds a suggestion of a MAP range of 60–65 mmHg for adults aged 65 or older (conditional, low); it also suggests serial lactate and capillary refill time as adjuncts to guide resuscitation (conditional, low). These apply to **septic** shock and do not replace the individualised target set by the prescriber for other shock types.
 
 **Dated evidence:** the ESICM consensus is from 2014. The SSC 2021 statements above agree with its MAP 65 starting point and lactate use, but SSC 2021 is superseded by a 2026 edition that could not be read; reviewers must check whether any statement here has changed.
 
@@ -174,7 +174,7 @@ D. Document the reading carefully and review it after the shift, when the day ha
 Escalation triggers, MAP targets, monitoring intensity and treatment protocols follow local policy and the treating team.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: a European society expert consensus (2014) with graded statements; **dated**, and many statements are ungraded or low quality. Cross-checked against SSC 2021 for septic shock only (MAP 65, capillary refill, lactate); a 2026 SSC update exists that could not be read. No newer open-access shock consensus was found in the searches done.
+- Source quality: a European society expert consensus (2014) with graded statements; **dated**, and many statements are ungraded or low quality. Cross-checked against SSC 2021 (superseded) and SSC 2026 recommendation-level text for septic shock only (MAP 65, capillary refill, lactate); the SSC 2026 full publication was not read. No newer open-access shock consensus was found in the searches done.
 - International applicability: general principles are widely applicable; resource-limited settings may lack lactate or echocardiography.
 - Not covered: shock subtypes in depth, specific therapies, vasopressor dosing.
 - Open questions for reviewers (CCP, NE, BN): is a 2014 consensus acceptable as the primary source, or should a newer review replace it; the nurse's role in applying a MAP target; urine-output thresholds; trauma-specific permissive hypotension.

@@ -60,6 +60,7 @@ SpO₂ with trend and probe check; respiratory rate and effort; mental state; he
 | HFNC vs conventional oxygen | HFNC may avoid escalation to NIV and invasive ventilation, via effects on oxygenation and breathlessness, but does not shorten length of stay (level B) | Know the patient's escalation plan |
 | HFNC after extubation | Appears to reduce reintubation compared with conventional oxygen (level B) | Closer observation after extubation |
 | Immunocompromised patients | No benefit in length of stay, escalation or morbidity for HFNC over conventional oxygen (level B); either may be used | Individual decision |
+| Sepsis with acute hypoxaemic respiratory failure (population-specific) | SSC 2026 (conditional, low certainty; official recommendation page, recommendation-level only) suggests titrating FiO₂ to either a more liberal or a more conservative oxygen target depending on patient factors and resources; most trials used a lower SpO₂ target of about 90–93% and a higher target of 96% or more, and the panel's own practice ranged from about 90% to 96%. This differs from the AARC 94–98% range for general acute-care patients; neither is universal | Targets are prescribed for the individual patient |
 | Humidification | Consider for flows above 4 L/min to improve comfort (level C) | Humidification is for comfort; evidence for outcomes is lacking |
 
 Evidence limitations stated in the guideline: low-certainty evidence, a modified RAND/UCLA appropriateness method (expert panel ratings, not GRADE), and heterogeneous studies.

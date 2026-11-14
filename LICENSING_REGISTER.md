@@ -48,3 +48,6 @@ Last checked: 2026-11-14. Machine-readable detail: `sources/source_register.csv`
 ## Provenance rule for every content item
 
 Each topic/question/scenario stores: source IDs, a note of *what was independently written*, author, reviewer, licence class of each source, and the date sources were last checked (`content_versions` + `topic_references`).
+
+| SCCM official pages: SSC 2026 recommendations, PADIS 2018 and 2025 focused update | **RED (cite-only)** | Recommendation pages read 2026-11-14; no reuse licence found; full publications not read | Cite; short attributed paraphrase at recommendation level | Copy text; claim full-text review | None for cite-only use |
+| Open RN Nursing Skills Appendix C and Nursing Fundamentals chapters | **GREEN (conditional)** | CC BY 4.0 per publisher/NCBI | Adapt with attribution and change notice | Omit attribution | Keep attribution in published content |

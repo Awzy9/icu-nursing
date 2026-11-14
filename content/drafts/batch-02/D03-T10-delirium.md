@@ -8,10 +8,9 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["NICE CG103 Delirium: prevention, diagnosis and management in hospital and long-term care (published 28 Jul 2010; last updated 18 Jan 2023) – general hospital guidance that names ICU tools"]
-sources: [S-NICE-CG103]
-sources_not_read: [S-SCCM-PADIS]
-independently_written_note: "Original wording. The NICE CG103 recommendations chapter was read (sections 1.1–1.8). The register's primary source, SCCM PADIS 2018 and its 2025 focused update: only the SCCM web pages (abstract and summary text) were reachable; the full guideline text (journals.lww.com) is blocked, so ICU-specific recommendations on sedation, drugs and bundle outcomes are NOT covered and no PADIS recommendation is quoted. NICE reserves commercial reuse (cite-only). CAM-ICU/ICDSC tool wording is not reproduced."
+guideline_versions: ["SCCM PADIS 2018 and the 2025 focused update – official SCCM recommendation pages, recommendation-level statements read; the full publications were NOT read", "NICE CG103 Delirium: prevention, diagnosis and management in hospital and long-term care (published 28 Jul 2010; last updated 18 Jan 2023) – general hospital guidance that names ICU tools"]
+sources: [S-NICE-CG103, S-SCCM-PADIS]
+independently_written_note: "Original wording. NICE CG103 recommendations chapter read. SCCM PADIS 2018 and the 2025 focused update: only the official SCCM recommendation pages were read (statements, strength, certainty, remarks) – the full publications on journals.lww.com were blocked and NOT read, so evidence summaries, tool psychometrics and rationales are not covered and this is not a full-text review. NICE reserves commercial reuse (cite-only). CAM-ICU/ICDSC tool wording is not reproduced."
 ---
 # Delirium – nursing screening, prevention and response in the ICU
 > DRAFT – NOT clinically reviewed. AI-generated. ICU-specific guideline evidence (PADIS) was not accessible; this draft rests on NICE general-hospital guidance.
@@ -68,6 +67,28 @@ Delirium screen results and trend; sedation and analgesia scores; pain; oxygen s
 | Senses | Hearing and vision aids available and working; resolve reversible causes such as ear wax |
 | Sleep | Avoid procedures and rounds during sleep periods; reduce noise |
 Treatment notes: manage the underlying cause; reassure and reorient; de-escalate first; short-term haloperidol may be considered by the prescriber when distressed or risk to self or others and de-escalation has failed, taking account of risks (NICE; prescriber decision).
+
+
+### ICU-specific recommendation-level statements (SCCM PADIS 2018 and 2025 focused update, official SCCM pages)
+These statements are quoted at recommendation level only; evidence summaries, tool psychometrics and rationales were not read. Strength labels follow the SCCM page where it gave them.
+| Topic | Statement (paraphrased) | Strength / certainty as given |
+|---|---|---|
+| Assessment | Critically ill adults should be regularly assessed for delirium with a valid tool; level of arousal may influence screening | Statement (2018) |
+| Non-drug prevention and management | Suggest a multicomponent non-pharmacological intervention aimed at modifiable risk factors, cognition, sleep, mobility, hearing and vision (examples: reorientation, cognitive stimulation, clocks, minimising light and noise, reduced sedation, early mobilisation, hearing aids and glasses) | Conditional, low |
+| Prevention drugs | Suggest not using haloperidol, an atypical antipsychotic, dexmedetomidine, a statin or ketamine to prevent delirium in all critically ill adults | Conditional, very low to low |
+| Subsyndromal delirium | Suggest not using haloperidol or an atypical antipsychotic | Conditional, very low to low |
+| Treating delirium with antipsychotics (2025 update) | Unable to recommend for or against antipsychotics over usual care | Low |
+| Agitation precluding weaning | Suggest dexmedetomidine in mechanically ventilated adults when agitation precludes weaning or extubation | Conditional, low |
+| Bright light | Suggest not using bright light therapy | Conditional, moderate |
+| Risk factors | Benzodiazepine use and blood transfusion are modifiable risk factors; age, dementia, prior coma, pre-ICU emergency surgery or trauma and illness severity are non-modifiable | Strong evidence of association (statement) |
+| Sedation (2018) | Suggest propofol or dexmedetomidine over benzodiazepines for mechanically ventilated adults; daily sedation interruption protocols and nurse-protocolised targeted sedation can maintain light sedation (awake: RASS −1 to +1 or SAS 4–7) | Conditional, low (drug choice); statement (protocols) |
+| Sedation (2025 update) | Suggest dexmedetomidine over propofol where light sedation or less delirium is the highest priority | Conditional, moderate |
+| Mobilisation | Suggest rehabilitation/mobilisation (2018); suggest enhanced over usual mobilisation (2025); stability in cardiovascular, respiratory and neurological status is a safe-start indicator; new instability, a fall, device removal or distress are stop indicators; vasoactive infusions or mechanical ventilation are not barriers if the patient is otherwise stable | Conditional, low / moderate |
+| Sleep | Suggest noise and light reduction strategies and a multicomponent sleep-promoting protocol; not routine physiological sleep monitoring; melatonin: no recommendation (2018), suggested (2025, conditional, low) | Conditional, low to very low |
+| Physical restraints | Used frequently despite the lack of studies showing efficacy and with safety concerns (unplanned extubation, greater agitation) | Ungraded statement |
+| Pain | Treat pain assessed routinely before considering a sedative; use BPS, BPS-NI or CPOT in patients unable to self-report; vital signs are not valid indicators of pain | Good practice / ungraded (see D07-T03) |
+
+**Population and scope:** these are adult ICU statements, mostly conditional with low or very low certainty. Where NICE (general hospital) and SCCM (ICU) differ, such as the NICE statement that short-term haloperidol may be considered for distress, SCCM 2025 states it cannot recommend for or against antipsychotics for treatment; drug decisions remain with the prescriber.
 
 ## 10. Warning signs and red flags
 Sudden confusion, drowsiness or agitation; fluctuating attention; hallucinations; pulling at lines or tubes; refusing care; new withdrawal or quietness; sleep reversal; new fever or unwell state; a drug change; hypoxia; pain behaviours; urinary retention or constipation; alcohol or drug withdrawal signs.
@@ -170,7 +191,7 @@ D. Wait until the patient can tell you whether he has pain, because behaviour al
 Screening tool, frequency, restraint policy, sedation and antipsychotic protocols follow the institution's policies.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: a national guideline (UK) for general hospital and long-term care, last updated 2023, not ICU-specific, with mostly 2010 recommendations. ICU evidence (PADIS 2018/2025, ABCDEF bundle) was not read in full: the SCCM page for PADIS 2018 states in its abstract that the panel issued 37 recommendations (3 strong, 34 conditional) plus good-practice and ungraded statements, but the recommendations themselves were not accessible. **NICE recommendations here are general-hospital and not necessarily the ICU standard**; PADIS may differ (for example on drug use and on screening frequency).
+- Source quality: NICE CG103 is a national general-hospital guideline (UK), last updated 2023, mostly 2010 recommendations. SCCM PADIS 2018 and 2025 provide ICU-specific statements, read here only as recommendation-level text from the official SCCM pages (full publications not read): the SCCM page for PADIS 2018 states in its abstract that the panel issued 37 recommendations (3 strong, 34 conditional) plus good-practice and ungraded statements, but the recommendations themselves were not accessible. **NICE recommendations here are general-hospital and not necessarily the ICU standard**; PADIS may differ (for example on drug use and on screening frequency).
 - International applicability: prevention measures are broadly transferable; drug recommendations and some wording are UK-specific.
 - Not covered: sedation depth targets, ICU drug evidence, long-term outcomes, CAM-ICU scoring details (copyright of tools).
 - Open questions for reviewers (NEURO, PH, CCP, NE, BN): ICU-specific bundle content; screening frequency; restraint policy; whether to include antipsychotic information at all in a nursing topic.

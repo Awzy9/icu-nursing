@@ -4,11 +4,7 @@ Counts are derived from the draft files on disk (one canonical topic ID, one bat
 Run from the repo root: python3 content/drafts/build_inventory.py"""
 import csv, glob, os, re
 ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
-BLOCKED = {
- "D03-T09": ("BLOCKED", "SCCM PADIS 2018/2025 full text blocked (journals.lww.com Cloudflare 403); SCCM pages give abstract only"),
- "D09-T03": ("BLOCKED", "Open RN scope chapter (NBK610819) behind NCBI reCAPTCHA; ICN definition page too general alone"),
- "D07-T01": ("BLOCKED", "Open RN assessment chapters (NBK593210) behind NCBI reCAPTCHA; EPUAP guide covers skin assessment only"),
-}
+BLOCKED = {}
 cur = {r["topic_id"]: r for r in csv.DictReader(open(os.path.join(ROOT, "curriculum", "master_curriculum.csv"), encoding="utf-8"))}
 drafted = {}
 for f in sorted(glob.glob(os.path.join(ROOT, "content", "drafts", "batch-*", "*.md"))):

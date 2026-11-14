@@ -27,3 +27,9 @@ Of the six previously flagged clinically relevant statements (items 1, 2, 4, 9, 
 
 | 19 | D02-T04 | Zeroing, levelling, damping tests, sampling technique, flush pressure, alarm limits | None of the sources read covers them | **Local / manufacturer; evidence gap flagged** |
 | 20 | D01-T19 | Respiratory bedside signs (accessory muscles, ability to speak, etc.) | Standard clinical assessment; not graded in sources read | **UNSUPPORTED as evidence – labelled standard practice** |
+
+
+## Batch 5 update (2026-11-14)
+- **Arterial-line insertion/maintenance technique** (site choice, flushing, transducer levelling): still no accessible authoritative nursing source. The D02-T04 draft limits itself to indications at recommendation level, CDC 2011 infection-prevention statements and an instruction to follow the unit procedure. **Unresolved.**
+- **Enteral tube-placement confirmation**: a search for authoritative guidance returned no usable result (the Europe PMC query failed and nothing further was found). The draft keeps the statement as a local-policy instruction, not as evidence. **Unresolved.**
+- **Batch 5 drafts:** CPOT, BPS, RASS and SAS item definitions were not read and are intentionally not taught. Open RN scope content is US-specific; no non-US regulator was read.

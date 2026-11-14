@@ -8,10 +8,9 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["NICE NG253 Suspected sepsis in people aged 16 or over (published 19 Nov 2025; page last updated 23 Sep 2026) – UK-specific", "Surviving Sepsis Campaign adult guidelines 2021 (Intensive Care Med 2021;47:1181-1247) – a 2026 update exists but its full text was not accessible, so reviewers must reconcile"]
-sources: [S-NICE-NG253, S-SSC-2021]
-sources_not_read: [S-SSC-2026]
-independently_written_note: "Original wording. NICE chapters 'Could this be sepsis?' and 'Evaluating risk' and the SSC 2021 full text (PMC open-access copy) were read; no text copied. NICE restricts commercial reuse; the PMC copy of SSC 2021 is distributed under temporary pandemic-era terms, so treat both as cite-only. SSC 2026 (published 2026) was NOT read: only titles of commentaries were seen, and no claim here relies on them."
+guideline_versions: ["NICE NG253 Suspected sepsis in people aged 16 or over (published 19 Nov 2025; page last updated 23 Sep 2026) – UK-specific", "Surviving Sepsis Campaign adult guidelines 2021 (Intensive Care Med 2021;47:1181-1247) – full text read; SUPERSEDED by the 2026 edition", "Surviving Sepsis Campaign 2026 (Crit Care Med 2026; official SCCM recommendation page, recommendation-level text read; the full publication was NOT read)"]
+sources: [S-NICE-NG253, S-SSC-2021, S-SSC-2026]
+independently_written_note: "Original wording. NICE chapters 'Could this be sepsis?' and 'Evaluating risk' and the SSC 2021 full text (PMC open-access copy) were read; no text copied. NICE restricts commercial reuse; the PMC copy of SSC 2021 is distributed under temporary pandemic-era terms, so treat both as cite-only. SSC 2026: the official SCCM recommendations page (statements, strength, certainty and remarks) was read and compared with each SSC 2021 statement used here; this is recommendation-level text, NOT the full publication, so rationales and evidence tables were not reviewed."
 ---
 # Recognising possible sepsis in adults and escalating
 > DRAFT – NOT clinically reviewed. AI-generated. Section 9 separates UK-specific rules from internationally applicable principles.
@@ -58,13 +57,14 @@ Frequency is set by risk and local policy. NICE links NEWS2-based risk to re-cal
 | Item | Core principle (broadly applicable) | NICE NG253 / NEWS2-specific |
 |---|---|---|
 | Suspicion | Sepsis can be non-specific; listen to family/carers; extra care when communication is difficult | Same, set out as recommendations; UK practice |
-| Screening | SSC 2021 recommends hospital sepsis performance-improvement programmes including screening of acutely ill, high-risk patients | NICE recommends a structured set of observations and NEWS2 in acute hospital settings for people aged 16+ who are not and have not recently been pregnant |
-| Which tool | SSC 2021 recommends **against** using qSOFA alone as a single screening tool compared with SIRS, NEWS or MEWS | NEWS2 is the UK national early warning score |
+| Screening | SSC 2026 (strong, moderate certainty): for acutely ill patients in hospital use NEWS, NEWS2, MEWS or SIRS rather than qSOFA as a single screening tool; sepsis is a clinical diagnosis and must not be ruled in or out by one biomarker or test (good practice). SSC 2021 likewise recommended against qSOFA alone | NICE recommends a structured set of observations and NEWS2 in acute hospital settings for people aged 16+ who are not and have not recently been pregnant |
+| Which tool | Use your validated local score with clinical judgment | NEWS2 is the UK national early warning score |
 | Risk bands | Use your validated local score with clinical judgment | NEWS2 7 or more = high risk; 5–6 = medium; 1–4 = low; 0 = very low. A single parameter scoring 3 prompts urgent review by a suitably trained clinician |
 | Score is not enough | Clinical concern can outweigh the score | NICE: consider risk higher than NEWS2 alone if mottled/ashen, cyanosis, non-blanching rash, or deterioration/lack of improvement |
-| Perfusion | SSC 2021 suggests measuring lactate and, in septic shock, using capillary refill time as an adjunct to guide resuscitation | Not specified in the chapters read |
-| Timing of antimicrobials | SSC 2021: immediately, ideally within 1 hour of recognition for possible septic shock or high likelihood of sepsis; for possible sepsis without shock, rapid assessment of infectious vs non-infectious causes | NICE sections on treatment were not read for this draft |
-| Cultures | SSC 2021 best-practice statement: obtain routine microbiological cultures (including blood) before starting antimicrobials if this causes no substantial delay | Not read in the chapters used |
+| Perfusion | SSC 2026 (conditional, low certainty): suggests measuring lactate, using serial lactate to guide resuscitation, and using capillary refill time as an adjunct to other perfusion measures; fluid administration should be individualised and reassessed | Not specified in the chapters read |
+| Blood cultures | SSC 2026 (strong, low certainty): collect blood cultures as soon as possible and ideally before antimicrobials. This replaces the 2021 best-practice wording ("if no substantial delay") | Not read |
+| Timing of antimicrobials | SSC 2026 (strong, very low certainty): for possible septic shock, and for probable or definite sepsis without shock, give antimicrobials immediately, ideally within 1 hour of recognition; for **possible** sepsis without shock, a time-limited rapid investigation and, if concern persists, antimicrobials within 3 hours of first suspicion (conditional). SSC 2021 timing statements are **superseded** | NICE treatment chapters were not read |
+| Fluids and vasopressors | SSC 2026 (conditional): initial crystalloid resuscitation for hypoperfusion or septic shock with frequent reassessment; vasopressors if hypotension persists; start vasopressors peripherally rather than delay; norepinephrine first line; MAP target 65 mmHg (strong, moderate certainty), and for adults aged 65 or older a MAP range of 60–65 mmHg is suggested (conditional, low) | Volumes, doses and drugs are prescriber decisions |
 | Special groups | Pregnancy, children, neutropenia need separate pathways | NICE refers to separate guidance for pregnancy and neutropenic sepsis |
 | Recalculation intervals | Reassess at intervals matched to risk | Intervals above are from NICE (citing a UK academy statement) |
 
@@ -125,7 +125,7 @@ B. Hold both until the lactate result is back so that treatment can be targeted.
 C. Prepare and collect the cultures without delaying the antimicrobial, check allergies, and give the first dose promptly.
 D. Ask the pharmacist to decide the drug, because nurses cannot take part in antimicrobial treatment.
 **Answer: C.**
-**Why correct:** Cultures should not delay treatment, and the nurse's role includes preparation, allergy checking and timely administration.
+**Why correct:** SSC 2026 recommends collecting blood cultures as soon as possible and ideally before antimicrobials (strong), and timely antimicrobials; the nurse prepares, collects, checks allergies and gives the ordered dose promptly.
 **Why not A:** Taking cultures first is preferable when it causes no delay, and later sampling lowers their yield.
 **Why not B:** Waiting for a result delays time-critical treatment.
 **Why not D:** The prescriber chooses the drug; the nurse administers it safely and promptly.
@@ -136,7 +136,7 @@ B. Do not use it as a single screening tool compared with SIRS, NEWS or MEWS.
 C. Use it in place of clinical assessment when the ward is short of staff and observations are delayed.
 D. Use it only for pregnant patients and children.
 **Answer: B.**
-**Why correct:** The guideline recommends against qSOFA alone as a single screening tool because of its poor sensitivity.
+**Why correct:** SSC 2021 recommended against qSOFA alone as a single screening tool; SSC 2026 now recommends NEWS, NEWS2, MEWS or SIRS over qSOFA as a single tool (strong, moderate certainty).
 **Why not A:** That is the opposite of the recommendation.
 **Why not C:** No score replaces clinical assessment.
 **Why not D:** The guideline does not limit its statement to those groups.
@@ -171,6 +171,6 @@ D. NEWS2 bands can be used for pregnant patients and children without changes.
 Use your institution's early-warning score and sepsis pathway; pregnancy, children and neutropenia follow separate pathways.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: NICE NG253 is a current national guideline (UK, 2025). SSC 2021 is an international guideline but a **2026 update exists whose full text I could not access** (publisher blocked automated access; only commentaries seen). Items drawn from SSC 2021 may have changed.
+- Source quality: NICE NG253 is a current national guideline (UK, 2025; two chapters read). SSC 2021 (full text read) is **superseded** by SSC 2026; the 2026 statements above come from the official SCCM recommendation page (recommendation-level text only; full publication not read). Where they differ, 2026 prevails; statements marked superseded must not be taught.
 - International applicability: NEWS2 and NICE thresholds are UK-specific; nursing core principles are broadly applicable. Resource-limited settings may lack lactate or cultures.
-- Open questions for reviewers (CCP, IPC, NE, BN): confirm the SSC 2026 position on screening, lactate, timing and fluids; decide which early-warning tool to present as the default; confirm escalation-time expectations for ICU.
+- Open questions for reviewers (CCP, IPC, NE, BN): review the full SSC 2026 publication against this recommendation-level summary; decide which early-warning tool to present as the default; confirm escalation-time expectations for ICU.
