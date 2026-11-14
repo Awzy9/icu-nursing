@@ -432,3 +432,72 @@ D04-T09,KDIGO 5.7.2: bicarbonate buffer recommended in circulatory shock,KDIGO A
 D04-T09,KDIGO 5.7.4: fluids comply with AAMI standards for bacteria and endotoxins,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.7.4,1B,text match
 D04-T09,KDIGO 5.8.1: dose prescribed before each session; frequent assessment of delivered dose,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.8.1,1B,text match
 D04-T09,"KDIGO 5.8.2: goals of electrolyte, acid-base, solute and fluid balance",KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.8.2,Not graded,text match
+D01-T06,"JICS: breath cycle four phases initiation, delivery, cycling, expiration",JICS education: mechanical ventilation (2026; educational review),Breath cycle,Educational review,text match
+D01-T06,"JICS: trigger too insensitive increases work of breathing; too sensitive false triggering from leaks, cardiac oscillations",JICS education: mechanical ventilation (2026; educational review),Initiation,Educational review,text match
+D01-T06,"JICS: volume control - tidal volume guaranteed, airway pressure varies",JICS education: mechanical ventilation (2026; educational review),Volume control,Educational review,text match
+D01-T06,"JICS: pressure control - tidal volume dependent on mechanics, not guaranteed",JICS education: mechanical ventilation (2026; educational review),Pressure control,Educational review,text match
+D01-T06,"JICS: cycling by time, volume, or flow fall (usually 25%)",JICS education: mechanical ventilation (2026; educational review),Cycling,Educational review,text match
+D01-T06,JICS: no single optimal PEEP; patient-specific,JICS education: mechanical ventilation (2026; educational review),PEEP,Educational review,text match
+D01-T06,JICS: total PEEP = extrinsic + intrinsic,JICS education: mechanical ventilation (2026; educational review),PEEP,Educational review,text match
+D01-T06,"JICS: plateau pressure measured during end-inspiratory pause, approximates alveolar pressure",JICS education: mechanical ventilation (2026; educational review),Plateau pressure,Educational review,text match
+D01-T06,"JICS: resistance increased by asthma, COPD, bronchospasm, secretions, tube obstruction",JICS education: mechanical ventilation (2026; educational review),Resistance,Educational review,text match
+D01-T06,JICS: static compliance formula,JICS education: mechanical ventilation (2026; educational review),Compliance,Educational review,text match
+D01-T06,"JICS: mode taxonomy control variable, breath sequence, targeting scheme",JICS education: mechanical ventilation (2026; educational review),Mode overview,Educational review,text match
+D01-T06,JICS: mandatory ventilation often requires substantial sedation; NMB not routine,JICS education: mechanical ventilation (2026; educational review),Mandatory ventilation,Educational review,text match
+D01-T06,JICS: ARMA low tidal volume PBW and plateau <=30; ESICM not routine higher PEEP; ATS higher PEEP only moderate-severe,JICS education: mechanical ventilation (2026; educational review),Evidence for ventilation strategy,Educational review,text match
+D01-T06,JICS: no automated weaning system superior to skilled protocolised weaning,JICS education: mechanical ventilation (2026; educational review),Closed loop,Educational review,text match
+D01-T06,JICS: selective overview; author interpretation,JICS education: mechanical ventilation (2026; educational review),Evidence for ventilation strategy,Educational review,text match
+D01-T06,JICS: one third of UK adult general critical care admissions ventilated,JICS education: mechanical ventilation (2026; educational review),Epidemiology,Educational review,text match
+D01-T06,"AARC PVA: assess plateau pressure (strong, high); VT 4-8 mL/kg PBW; document as mL/kg PBW",AARC Patient-Ventilator Assessment CPG 2024,Abstract,Strong; high,text match
+D01-T06,AARC PVA: focus of PVA is the patient rather than the ventilator,AARC Patient-Ventilator Assessment CPG 2024,Introduction,Statement,text match
+D01-T06,"AARC PVA: cuff pressure with manometer (strong, high)",AARC Patient-Ventilator Assessment CPG 2024,Abstract,Strong; high,text match
+D01-T09,AARC PVA: focus is the patient not the ventilator,AARC Patient-Ventilator Assessment CPG 2024,Introduction,Statement,text match
+D01-T09,HAMILTON-C1: approach patient immediately; secure effective ventilation,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2,Manual,text match
+D01-T09,HAMILTON-C1: alarm may be clinical condition or equipment problem; one condition induces multiple alarms,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 notes,Manual,text match
+D01-T09,HAMILTON-C1: one alarm condition can induce multiple alarms; one or two indicate root cause,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 notes,Manual,text match
+D01-T09,HAMILTON-C1: readjust limits only when inappropriately set,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 warning,Manual,text match
+D01-T09,HAMILTON-C1: extreme limits can render the alarm system useless,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 caution,Manual,text match
+D01-T09,HAMILTON-C1: ambient state when safe ventilation may be compromised,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.1,Manual,text match
+D01-T09,"HAMILTON-C1: technical fault - remove from use, record fault code, service","HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 warning,Manual,text match
+D01-T09,HAMILTON-C1: alarm silence mutes for limited time; high pressure alarm cannot be silenced,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",9.3,Manual,text match
+D01-T09,HAMILTON-C1: alarm sounds again when silence expires if unresolved,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",9.3,Manual,text match
+D01-T09,HAMILTON-C1: oxygen alarms suppressed during O2 enrichment,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",9.4,Manual,text match
+D01-T09,HAMILTON-C1: SpO2 alarm delay up to 15 s to reduce nuisance alarms,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",J.5.2,Manual,text match
+D01-T09,HAMILTON-C1: limits set appropriately before placing the patient on the ventilator,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",4.7.1 caution,Manual,text match
+D01-T09,HAMILTON-C1: Auto sets limits except Vt and apnea,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",4.7.1,Manual,text match
+D01-T09,HAMILTON-C1: manual not a substitute for professional judgement,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",Preface,Manual,text match
+D01-T09,HAMILTON-C1: copyright - no reproduction without written permission,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",Preface,Licence,text match
+D03-T03,BTF: CPP is difference between MAP and ICP; only calculable when ICP known,BTF Severe TBI guidelines 4th ed (2016),17 introduction,Guideline,text match
+D03-T03,BTF: it is not monitoring per se that affects outcomes; using information to direct treatment,BTF Severe TBI guidelines 4th ed (2016),Part II,Guideline,text match
+D03-T03,BTF Level IIB: ICP monitoring management reduces in-hospital and 2-week mortality,BTF Severe TBI guidelines 4th ed (2016),12 ICP monitoring,Level IIB,text match
+D03-T03,BTF: prior-edition indications GCS 3-8 and abnormal CT,BTF Severe TBI guidelines 4th ed (2016),12 ICP monitoring,Not supported by current standards,text match
+D03-T03,"BTF: normal CT with two or more of age >40, posturing, SBP <90",BTF Severe TBI guidelines 4th ed (2016),12 ICP monitoring,Not supported by current standards,text match
+D03-T03,BTF Level IIB: CPP monitoring recommended to decrease 2-week mortality,BTF Severe TBI guidelines 4th ed (2016),13 CPP monitoring,Level IIB,text match
+D03-T03,BTF Level IIB: treat ICP above 22 mm Hg,BTF Severe TBI guidelines 4th ed (2016),16 ICP thresholds,Level IIB,text match
+D03-T03,BTF Level III: combine ICP with clinical and CT findings,BTF Severe TBI guidelines 4th ed (2016),16 ICP thresholds,Level III,text match
+D03-T03,BTF Level IIB: CPP target 60-70; depends on autoregulatory status,BTF Severe TBI guidelines 4th ed (2016),17 CPP thresholds,Level IIB,text match
+D03-T03,BTF Level III: avoid aggressive CPP >70 (respiratory failure),BTF Severe TBI guidelines 4th ed (2016),17 CPP thresholds,Level III,text match
+D03-T03,"BTF Level III: SBP >=100 (50-69 y) or >=110 (15-49, >70 y)",BTF Severe TBI guidelines 4th ed (2016),15 BP thresholds,Level III,text match
+D03-T03,BTF Level III: jugular venous saturation <50% threshold to avoid,BTF Severe TBI guidelines 4th ed (2016),18 ACM thresholds,Level III,text match
+D03-T03,BTF Level IIB: prolonged prophylactic hyperventilation PaCO2 <=25 not recommended,BTF Severe TBI guidelines 4th ed (2016),5 Ventilation therapies,Level IIB,text match
+D03-T03,BTF Level I: steroids not recommended; methylprednisolone contraindicated,BTF Severe TBI guidelines 4th ed (2016),7 Steroids,Level I,text match
+D03-T03,BTF Level III: EVD zeroed at midbrain with continuous drainage may be considered,BTF Severe TBI guidelines 4th ed (2016),4 CSF drainage,Level III,text match
+D03-T03,BTF: hypotension SBP strongly associated with mortality (Klauber),BTF Severe TBI guidelines 4th ed (2016),15 BP thresholds,Evidence text,text match
+D03-T03,BTF: guideline September 2016,BTF Severe TBI guidelines 4th ed (2016),Title page,Date,text match
+D08-T02,"UHS: citrate blue cap, minimal stasis, filled to the line, analysed within 4 hours",UHS Sussex Pathology User Guide: Coagulation screen (2025),Samples required,Laboratory handbook,text match
+D08-T02,UHS: processed within 4 hours of venepuncture,UHS Sussex Pathology User Guide: Coagulation screen (2025),Samples required,Laboratory handbook,text match
+D08-T02,UHS: reference ranges locally determined,UHS Sussex Pathology User Guide: Coagulation screen (2025),Reference range,Laboratory handbook,text match
+D08-T02,UHS: INR 0.8-1.2; aPTT 24.4-33.7 s; fibrinogen 1.8-4.5 g/L (example local ranges),UHS Sussex Pathology User Guide: Coagulation screen (2025),Reference range,Laboratory handbook,text match
+D08-T02,"UHS: turnaround 1 working day, 2 hours if urgent",UHS Sussex Pathology User Guide: Coagulation screen (2025),Turnaround,Laboratory handbook,text match
+D08-T02,ARUP DIC: ISTH score >=5 compatible with overt DIC; repeat testing important,ARUP Consult: DIC (2025),Criteria,Educational,text match
+D08-T02,ARUP DIC: D-dimer best single test but not used in isolation; normal has excellent NPV,ARUP Consult: DIC (2025),D-Dimer,Educational,text match
+D08-T02,"ARUP DIC: fibrinogen acute phase reactant, can remain normal",ARUP Consult: DIC (2025),Fibrinogen,Educational,text match
+D08-T02,"ARUP DIC: PT and aPTT prolonged in most DIC; normal or shortened early; also prolonged with anticoagulants, liver disease, vitamin K deficiency",ARUP Consult: DIC (2025),Clotting times,Educational,text match
+D08-T02,ARUP DIC: TTP/HUS coagulation tests often normal or near normal,ARUP Consult: DIC (2025),Quick answers,Educational,text match
+D08-T02,ARUP DIC: low platelet count key but not specific; repeat testing,ARUP Consult: DIC (2025),Platelets,Educational,text match
+D08-T02,"ARUP anticoagulants: UFH, VKA, DOAC can interfere with testing; DOAC effects drug and reagent dependent",ARUP Consult: Impacts of Common Anticoagulants (2024),Introduction,Educational,text match
+D08-T02,"ARUP anticoagulants: drug, concentration and reagent dependent",ARUP Consult: Impacts of Common Anticoagulants (2024),Table footnote d,Educational,text match
+D08-T02,Open RN 6.12: PTT titrates IV heparin; protamine reversal,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match
+D08-T02,Open RN 6.12: notify immediately of new bleeding or bruising or sudden vital sign changes,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match
+D08-T02,Open RN 6.12: warfarin needs PT/INR monitoring; vitamin K reversal,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match
+D08-T02,Open RN 6.12: HIT platelets drop 30% or more,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match

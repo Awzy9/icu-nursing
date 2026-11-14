@@ -17,7 +17,7 @@ const q = (id: string, answer: string, opts: string[], extra = {}) => ({
 const ok = ["Reassess the patient and escalate using SBAR now", "Wait for the next ward round before acting on it", "Record it and look again at the end of shift", "Ask a relative to find a doctor for the patient"];
 
 describe("Phase 2 drafts: structure and safety", () => {
-  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(36));
+  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(40));
   files.forEach((f, i) => it(`${f} passes validation`, () => expect(validateDraft(texts[i]!)).toEqual([])));
   batches.forEach((b) => it(`${b}: answer positions are balanced across the batch`, () => expect(batchPositionIssues(perBatch(b))).toEqual([])));
   it("every draft has six or more MCQs with an explanation for each wrong option", () => {
@@ -98,6 +98,15 @@ describe("Canonical topic inventory (no double counting)", () => {
     for (const d of onDisk) expect(drafted.some((r) => r[0] === d.id && d.f.startsWith(`${r[4]}/`))).toBe(true);
   });
   it("marks nothing as clinically reviewed", () => expect(rows.every((r) => r[7] === "no")).toBe(true));
+  it("separates DRAFTED from COMPREHENSIVELY COVERED: every drafted topic has a coverage level and stated gaps", () => {
+    const allowed = ["CORE", "PARTIAL", "THIN"];
+    for (const r of rows.filter((x) => x[3]!.startsWith("DRAFTED"))) {
+      expect(allowed.includes(r[9]!), `${r[0]} coverage level`).toBe(true);
+      expect(r[11]!.length, `${r[0]} gaps text`).toBeGreaterThan(20);
+      expect(r[10]!.startsWith("PROVISIONAL YES") === (r[9] === "CORE"), `${r[0]} comprehensive flag matches level`).toBe(true);
+    }
+  });
+  it("never claims unqualified comprehensive coverage before clinical review", () => expect(rows.some((r) => r[10] === "YES")).toBe(false));
   it("keeps blocked topics undrafted", () => { for (const r of rows.filter((x) => x[3]!.startsWith("BLOCKED"))) expect(files.some((f) => f.includes(r[0]!))).toBe(false); });
 });
 

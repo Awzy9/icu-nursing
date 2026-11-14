@@ -45,3 +45,7 @@ Of the six previously flagged clinically relevant statements (items 1, 2, 4, 9, 
 - **Still unresolved:** arterial-line technique; enteral tube placement; extravasation recognition and management; first-line actions after a transfusion reaction; hypokalaemia management and potassium replacement; extubation readiness; CRRT machine and circuit management; ICU-specific ECG monitoring standards and alarm limits.
 - **Flagged inside new drafts as general knowledge not traced to a source read:** complication lists (D01-T17, D04-T06, D02-T02), general warning signs, HIT flush policy (D04-T09), Allen test (D04-T08).
 - **Website inconsistency:** UKKA summary page (6.5 mmol/L) versus detail page (6.0 mmol/L) for the 12-lead ECG threshold.
+
+## Batch 8 update (2026-11-14)
+- **New flags:** ventilator signs of peak/plateau interpretation (D01-T06, author's translation); general causes of ventilator alarms (D01-T09); nursing neuro-monitoring technique and non-TBI thresholds (D03-T03); pre-analytical causes beyond the 4-hour and fill rules and coagulation test physiology (D08-T02).
+- **Still unresolved:** all items listed in the first-release content gap report.
