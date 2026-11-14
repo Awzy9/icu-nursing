@@ -63,5 +63,7 @@ These four are not drafted. No blog or secondary substitute was used.
 - SHEA 2022 (CC BY): attribution required if adapted.
 - SCCM permission email remains an unsent draft.
 
+Internal review record: `BATCH_01_INTERNAL_REVIEW.md`.
+
 ## 8. Quality gate before Batch 2
 Internal content-quality review of Batch 1 (this report is the input), then genuine qualified human review. Nothing may be published or marked reviewed without it.
