@@ -26,6 +26,6 @@ export async function saveDraftNoteAction(_prev: AdminState, form: FormData): Pr
   if (!DRAFTS.entries.some((e) => e.key === parsed.data.key)) return { error: "Unknown draft." };
   const { error } = await setNote(db, parsed.data.key, parsed.data.field, parsed.data.value);
   if (error) return { error: error.message };
-  revalidatePath(`/admin/content/drafts/${parsed.data.key}`);
+  revalidatePath(`/admin/content/register/${parsed.data.key}`);
   return { ok: true, message: "Saved." };
 }

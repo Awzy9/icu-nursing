@@ -182,16 +182,16 @@ test("a learner cannot reach the admin area", async ({ page }) => {
 
 test("draft register: an administrator filters unpublished drafts, reads validation and source freshness, saves a workflow note with history; a learner is refused", async ({ page }) => {
   await login(page, boss.email);
-  await page.goto("/en/admin/content/drafts");
+  await page.goto("/en/admin/content/register");
   await mfa(page, boss.email);
-  await page.goto("/en/admin/content/drafts");
+  await page.goto("/en/admin/content/register");
   await expect(page.getByRole("heading", { level: 1, name: "Draft register" })).toBeVisible();
   await expect(page.getByText("154 of 154 drafts")).toBeVisible();
-  await page.goto("/en/admin/content/drafts?type=cases&evidence=partial");
+  await page.goto("/en/admin/content/register?type=cases&evidence=partial");
   await expect(page.getByText("20 of 154 drafts")).toBeVisible();
-  await page.goto("/en/admin/content/drafts?q=zzzz-nothing");
+  await page.goto("/en/admin/content/register?q=zzzz-nothing");
   await expect(page.getByText("No drafts match these filters.")).toBeVisible();
-  await page.goto("/en/admin/content/drafts/SC-11");
+  await page.goto("/en/admin/content/register/SC-11");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("SC-11");
   await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible();
   await expect(page.getByRole("heading", { name: "Validation feedback" })).toBeVisible();
@@ -215,9 +215,9 @@ test("draft register: an administrator filters unpublished drafts, reads validat
 
 test("a learner cannot reach the draft register or its notes", async ({ page }) => {
   await login(page, learner.email);
-  await page.goto("/en/admin/content/drafts");
+  await page.goto("/en/admin/content/register");
   await expect(page).toHaveURL(/\/en\/dashboard/);
-  await page.goto("/en/admin/content/drafts/SC-11");
+  await page.goto("/en/admin/content/register/SC-11");
   await expect(page).toHaveURL(/\/en\/dashboard/);
   await signOut(page);
 });

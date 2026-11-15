@@ -39,7 +39,7 @@ export default async function ContentOverview({ params }: { params: Promise<{ lo
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-bold">Content overview</h1>
-      <p className="flex flex-wrap gap-3"><Link href="/admin/content/drafts" className="font-medium">Draft register (filter, validation, notes)</Link><Link href="/admin/content/coverage" className="font-medium">Coverage dashboard</Link></p>
+      <p className="flex flex-wrap gap-3"><Link href="/admin/content/register" className="font-medium">Draft register (filter, validation, notes)</Link><Link href="/admin/content/coverage" className="font-medium">Coverage dashboard</Link></p>
       <Callout tone="warning" role="note">Nothing here publishes, imports or reviews content. The clinical drafts listed below live outside the database and cannot satisfy any publication gate.</Callout>
 
       <section aria-labelledby="live" className="space-y-3">

@@ -28,7 +28,7 @@ export default async function DraftDetail({ params }: { params: Promise<{ locale
   const snaps = HISTORY.entries[key] ?? [];
   return (
     <div className="space-y-8">
-      <nav aria-label="Breadcrumb"><Link href="/admin/content/drafts">← Draft register</Link></nav>
+      <nav aria-label="Breadcrumb"><Link href="/admin/content/register">← Draft register</Link></nav>
       <header className="space-y-2">
         <h1 className="text-3xl font-bold">{e.key}: {e.title}</h1>
         <div className="flex flex-wrap items-center gap-2 text-sm">

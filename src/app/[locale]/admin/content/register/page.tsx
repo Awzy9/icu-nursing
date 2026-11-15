@@ -38,7 +38,7 @@ export default async function DraftList({ params, searchParams }: { params: Prom
         <Field label="Worst licence class of its sources" htmlFor="licence"><Select id="licence" name="licence" defaultValue={f.licence ?? ""}><option value="">All</option>{["RED", "UNVERIFIED", "YELLOW", "GREEN", "NONE"].map((v) => <option key={v}>{v}</option>)}</Select></Field>
         <Field label="Source freshness" htmlFor="freshness"><Select id="freshness" name="freshness" defaultValue={f.freshness ?? ""}><option value="">All</option><option value="fresh">All sources verified within 180 days</option><option value="stale">Some source older than 180 days</option><option value="unknown">Some source has no verification date</option></Select></Field>
         <Field label="Staff notes" htmlFor="notes"><Select id="notes" name="notes" defaultValue={f.notes ?? ""}><option value="">All</option><option value="with">With notes</option><option value="without">Without notes</option></Select></Field>
-        <div className="flex items-end gap-2"><Button type="submit">Apply</Button><Button asChild variant="outline"><Link href="/admin/content/drafts">Clear</Link></Button></div>
+        <div className="flex items-end gap-2"><Button type="submit">Apply</Button><Button asChild variant="outline"><Link href="/admin/content/register">Clear</Link></Button></div>
       </form>
       <p role="status" className="text-sm text-muted-foreground">{rows.length} of {DRAFTS.entries.length} drafts</p>
       <div className="overflow-x-auto">
@@ -50,7 +50,7 @@ export default async function DraftList({ params, searchParams }: { params: Prom
               const lic = worstLicence(e), fr = draftFreshness(e, today);
               return (
                 <tr key={`${e.type}-${e.key}`} className="border-b border-border align-top">
-                  <th scope="row" className="py-2 pe-3 text-start font-medium"><Link href={`/admin/content/drafts/${e.key}`}>{e.key}</Link></th>
+                  <th scope="row" className="py-2 pe-3 text-start font-medium"><Link href={`/admin/content/register/${e.key}`}>{e.key}</Link></th>
                   <td className="py-2 pe-3">{e.title}</td>
                   <td className="py-2 pe-3 capitalize">{e.type}{e.spec_level ? ` (${e.spec_level.replace("_", " ")})` : ""}</td>
                   <td className="py-2 pe-3">{e.evidence_status.replace(/_/g, " ")}</td>
