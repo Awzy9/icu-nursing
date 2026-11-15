@@ -4645,6 +4645,255 @@
    "gaps": 3,
    "required_sources": 3,
    "hash": "8068b4a036f9ba96"
+  },
+  {
+   "key": "PX-01",
+   "type": "practice",
+   "title": "SBAR call about a patient who is getting worse",
+   "domain": "sbar",
+   "evidence_status": "partial",
+   "spec_level": "classify",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 2,
+   "hash": "33a92ec17d4d1052"
+  },
+  {
+   "key": "PX-02",
+   "type": "practice",
+   "title": "SBAR call to raise a concern about a prescribed medicine",
+   "domain": "sbar",
+   "evidence_status": "partial",
+   "spec_level": "classify",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ISMP-HA",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    }
+   ],
+   "issues": [],
+   "gaps": 5,
+   "required_sources": 2,
+   "hash": "dc2e9574e116da7c"
+  },
+  {
+   "key": "PX-03",
+   "type": "practice",
+   "title": "Find the weaknesses in a bedside note",
+   "domain": "documentation",
+   "evidence_status": "partial",
+   "spec_level": "spot",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-OPENRN-FUND-DOC",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    }
+   ],
+   "issues": [],
+   "gaps": 5,
+   "required_sources": 2,
+   "hash": "de682e8b5a2fec48"
+  },
+  {
+   "key": "PX-04",
+   "type": "practice",
+   "title": "Correcting a charting error",
+   "domain": "documentation",
+   "evidence_status": "partial",
+   "spec_level": "choice",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-OPENRN-FUND-DOC",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 1,
+   "hash": "10ddb239f2a987b7"
+  },
+  {
+   "key": "PX-05",
+   "type": "practice",
+   "title": "A rising early-warning score that has not reached the call-out level",
+   "domain": "monitoring-escalation",
+   "evidence_status": "partial",
+   "spec_level": "choice",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    }
+   ],
+   "issues": [],
+   "gaps": 5,
+   "required_sources": 2,
+   "hash": "c83f53d39e2e2b08"
+  },
+  {
+   "key": "PX-06",
+   "type": "practice",
+   "title": "Which habits weaken monitoring and escalation?",
+   "domain": "monitoring-escalation",
+   "evidence_status": "partial",
+   "spec_level": "spot",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-OPENRN-ADV-C74",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 2,
+   "hash": "d566a51f4d63363e"
+  },
+  {
+   "key": "PX-07",
+   "type": "practice",
+   "title": "What counts as hand hygiene?",
+   "domain": "infection-prevention",
+   "evidence_status": "partial",
+   "spec_level": "classify",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-CDC-HANDHYG-2024",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 2,
+   "hash": "d89d8005aace2a16"
+  },
+  {
+   "key": "PX-08",
+   "type": "practice",
+   "title": "Storing alcohol-based hand rub safely",
+   "domain": "infection-prevention",
+   "evidence_status": "partial",
+   "spec_level": "choice",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-CDC-HANDHYG-2024",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 1,
+   "hash": "7cd64e96ca11a6a4"
+  },
+  {
+   "key": "PX-09",
+   "type": "practice",
+   "title": "Checking an infusion pump before and after a change",
+   "domain": "equipment-practice",
+   "evidence_status": "partial",
+   "spec_level": "sequence",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-FDA-PUMP",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ISMP-HA",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 2,
+   "hash": "00c99cbaa7253f71"
+  },
+  {
+   "key": "PX-10",
+   "type": "practice",
+   "title": "A monitor alarm sounds: patient first",
+   "domain": "equipment-practice",
+   "evidence_status": "partial",
+   "spec_level": "choice",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-OPENRN-ADV-C74",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 1,
+   "hash": "cbd62ddea6e701a1"
+  },
+  {
+   "key": "PX-11",
+   "type": "practice",
+   "title": "Self-assessment: keeping a clear and safe record",
+   "domain": "competency",
+   "evidence_status": "partial",
+   "spec_level": "checklist",
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-OPENRN-FUND-DOC",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    }
+   ],
+   "issues": [],
+   "gaps": 4,
+   "required_sources": 1,
+   "hash": "0a75bebca97c0f83"
+  },
+  {
+   "key": "PX-12",
+   "type": "practice",
+   "title": "Self-assessment map of the 25 first-release skills",
+   "domain": "competency",
+   "evidence_status": "partial",
+   "spec_level": "checklist",
+   "clinically_reviewed": false,
+   "sources": [],
+   "issues": [],
+   "gaps": 5,
+   "required_sources": 1,
+   "hash": "1a82dbf98b6ac0f8"
   }
  ]
 }

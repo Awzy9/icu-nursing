@@ -3,7 +3,7 @@ import type { DraftHistory, DraftIndex, DraftType, HistoryEntry, IndexEntry, Ind
 
 export const DRAFT_TYPES: { type: DraftType; label: string }[] = [
   { type: "topics", label: "Topics" }, { type: "questions", label: "Questions" }, { type: "cases", label: "Cases (scenarios)" },
-  { type: "skills", label: "Skills" }, { type: "medications", label: "Medications" }, { type: "equipment", label: "Equipment" },
+  { type: "skills", label: "Skills" }, { type: "medications", label: "Medications" }, { type: "equipment", label: "Equipment" }, { type: "practice", label: "Practice exercises" },
 ];
 export const STALE_DAYS = 180;
 export type Freshness = "fresh" | "stale" | "unknown";
@@ -77,4 +77,4 @@ export function coverage(d: DraftIndex, today: Date): CoverageRow[] {
   });
 }
 /** What the original plan expects. Used only to show the gap between planned and drafted, never to enable anything. */
-export const PLAN: Record<string, number> = { topics: 40, skills: 25, medications: 50, cases: 20, equipment: 8 };
+export const PLAN: Record<string, number> = { topics: 40, skills: 25, medications: 50, cases: 20, equipment: 8, practice: 12 };

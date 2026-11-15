@@ -1,0 +1,103 @@
+{
+ "practice_id": "PX-03",
+ "number": 3,
+ "title": "Find the weaknesses in a bedside note",
+ "area": "documentation",
+ "kind": "spot",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "The Open RN text is US-oriented; legal wording and retention rules differ by jurisdiction.",
+  "Whether an abbreviation is acceptable is a local list decision."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Recognise features that make a record unsafe to rely on."
+ ],
+ "sources": [
+  {
+   "id": "S-OPENRN-FUND-DOC",
+   "read": "full",
+   "use": "Open RN Nursing Fundamentals 2.5: documentation principles and error correction"
+  }
+ ],
+ "required_sources": [
+  "The employer's documentation policy and approved abbreviation list",
+  "A national professional standard on record keeping for the jurisdiction"
+ ],
+ "setup": "A fictional bedside note written by a fictional nurse.",
+ "prompt": "Select the lines that weaken the record.",
+ "lines": [
+  {
+   "id": "l1",
+   "text": "14:20 Told Dr Lee by phone that the patient has a new cough; asked for review; Dr Lee will see the patient by 15:00. A. Nurse, RN, 12 March.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": false,
+   "why": "Dated, timed, signed, factual, says who was told and what happens next."
+  },
+  {
+   "id": "l2",
+   "text": "The patient was uncooperative and difficult.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": true,
+   "why": "Documentation should be objective, factual and professional; describe what was seen and said."
+  },
+  {
+   "id": "l3",
+   "text": "Pt c/o SOB.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": true,
+   "why": "Abbreviations should be avoided in legal documentation."
+  },
+  {
+   "id": "l4",
+   "text": "Dressing change completed at 15:00 (entered at 14:30).",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": true,
+   "why": "Do not document in advance of completing a task."
+  },
+  {
+   "id": "l5",
+   "text": "Observations done.",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": true,
+   "why": "Only recording that something was done tells the next reader nothing; record the findings."
+  },
+  {
+   "id": "l6",
+   "text": "(an entry with no time and no signature)",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": true,
+   "why": "All documentation must include date, time and signature."
+  }
+ ]
+}

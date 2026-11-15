@@ -1,0 +1,115 @@
+{
+ "practice_id": "PX-01",
+ "number": 1,
+ "title": "SBAR call about a patient who is getting worse",
+ "area": "sbar",
+ "kind": "classify",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "The AHRQ page was only partly read: it is used for the four-part structure and nothing else."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Give a structured call about a deteriorating patient.",
+  "Keep the background to what the listener needs.",
+  "End with a specific request."
+ ],
+ "sources": [
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "TeamSTEPPS SBAR page: structure only"
+  }
+ ],
+ "required_sources": [
+  "Unit or national guidance on calling for review and the local escalation route",
+  "A source on SBAR use at nursing level in critical care"
+ ],
+ "setup": "A fictional adult, Mr A, two days after surgery, on a fictional ward; the nurse phones the doctor on call.",
+ "categories": [
+  {
+   "id": "s",
+   "label": "S: Situation"
+  },
+  {
+   "id": "b",
+   "label": "B: Background"
+  },
+  {
+   "id": "a",
+   "label": "A: Assessment"
+  },
+  {
+   "id": "r",
+   "label": "R: Request"
+  },
+  {
+   "id": "out",
+   "label": "Leave out"
+  }
+ ],
+ "items": [
+  {
+   "id": "i1",
+   "text": "I am calling about Mr A in bed 4. Over the last hour his breathing has become faster and he is more drowsy.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "s",
+   "why": "It states what is happening now."
+  },
+  {
+   "id": "i2",
+   "text": "He is two days after abdominal surgery and was started on treatment for a chest infection yesterday.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "b",
+   "why": "It is the history the doctor needs to interpret the change."
+  },
+  {
+   "id": "i3",
+   "text": "I think he is getting worse, and I am worried about his breathing.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "a",
+   "why": "It is the nurse's own assessment and level of concern."
+  },
+  {
+   "id": "i4",
+   "text": "Please come and see him now. Is there anything you want me to do while I wait?",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "r",
+   "why": "It states what is needed and when, and asks for interim instructions."
+  },
+  {
+   "id": "i5",
+   "text": "The ward was short-staffed last night.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "out",
+   "why": "It does not help the doctor decide what to do now."
+  }
+ ]
+}

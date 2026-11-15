@@ -1,0 +1,81 @@
+{
+ "practice_id": "PX-11",
+ "number": 11,
+ "title": "Self-assessment: keeping a clear and safe record",
+ "area": "competency",
+ "kind": "checklist",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "This is a self-reflection tool, not an assessment: no scores, no verification, no certificate."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Rate your own record-keeping habits honestly."
+ ],
+ "self_assessment_only": true,
+ "sources": [
+  {
+   "id": "S-OPENRN-FUND-DOC",
+   "read": "full",
+   "use": "Open RN Nursing Fundamentals 2.5: documentation principles and error correction"
+  }
+ ],
+ "required_sources": [
+  "Your employer's documentation policy"
+ ],
+ "setup": "A personal list; the learner rates themselves, and the ratings stay on their device.",
+ "items": [
+  {
+   "id": "c1",
+   "text": "I record the date, time and my signature on every entry.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "I write what I saw, heard and did, not opinions.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ]
+  },
+  {
+   "id": "c3",
+   "text": "I never record something as done before it is done.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "I correct mistakes openly and never erase.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "I avoid abbreviations that are not on my employer's list.",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ]
+  }
+ ]
+}

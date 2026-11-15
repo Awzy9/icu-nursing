@@ -1,0 +1,92 @@
+{
+ "practice_id": "PX-09",
+ "number": 9,
+ "title": "Checking an infusion pump before and after a change",
+ "area": "equipment-practice",
+ "kind": "sequence",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "The order of the steps is the author's choice; the source lists the checks without a strict sequence."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Know the checks that keep an infusion pump safe when something changes."
+ ],
+ "sources": [
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page: verify, label, use the library, respond to alerts, report"
+  },
+  {
+   "id": "S-ISMP-HA",
+   "read": "full",
+   "use": "ISMP high-alert list: used only to say that some medicines need extra care"
+  }
+ ],
+ "required_sources": [
+  "The unit's pump procedure and drug-library policy",
+  "Manufacturer instructions for the pump in use"
+ ],
+ "setup": "A fictional pump on a fictional ward; no drug or rate is named.",
+ "steps": [
+  {
+   "id": "s1",
+   "text": "Label the pump channel and the tubing with the name of the fluid or drug if the pump does not show it",
+   "support": "sourced",
+   "sources": [
+    "S-FDA-PUMP"
+   ],
+   "why": "Labels at the port of entry help others identify what is running."
+  },
+  {
+   "id": "s2",
+   "text": "Check the programming against the order",
+   "support": "sourced",
+   "sources": [
+    "S-FDA-PUMP"
+   ],
+   "why": "The settings must match what was prescribed."
+  },
+  {
+   "id": "s3",
+   "text": "Use the drug library if one exists",
+   "support": "sourced",
+   "sources": [
+    "S-FDA-PUMP"
+   ],
+   "why": "The library adds safety limits."
+  },
+  {
+   "id": "s4",
+   "text": "Respond carefully to any alert rather than silencing it",
+   "support": "sourced",
+   "sources": [
+    "S-FDA-PUMP"
+   ],
+   "why": "Alerts need action."
+  },
+  {
+   "id": "s5",
+   "text": "Stop and report an alert you cannot resolve or a mismatch with the order",
+   "support": "partial",
+   "sources": [
+    "S-FDA-PUMP",
+    "S-ISMP-HA"
+   ],
+   "why": "Report suspected over- or under-infusion."
+  }
+ ]
+}

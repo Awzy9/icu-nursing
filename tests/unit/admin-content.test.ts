@@ -9,7 +9,7 @@ describe("draft register (counts only, shown on /admin/content)", () => {
     expect(onDisk).toEqual(buildDraftRegister());
   });
   it("covers every content type, reports zero validator issues and zero reviewed drafts", () => {
-    expect(Object.keys(onDisk.types).sort()).toEqual(["equipment", "mcqs", "medications", "scenarios", "skills", "topics"]);
+    expect(Object.keys(onDisk.types).sort()).toEqual(["equipment", "mcqs", "medications", "practice", "scenarios", "skills", "topics"]);
     for (const [k, v] of Object.entries(onDisk.types) as [string, { validator_issues: number; clinically_reviewed: number; total: number }][]) {
       expect(v.validator_issues, k).toBe(0); expect(v.clinically_reviewed, k).toBe(0); expect(v.total, k).toBeGreaterThan(0);
     }

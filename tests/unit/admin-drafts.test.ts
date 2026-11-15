@@ -16,8 +16,8 @@ describe("draft index (metadata only)", () => {
     expect(updateHistory(onDisk, hist, "2099-01-01")).toEqual(hist); // idempotent: unchanged drafts add no snapshot
   });
   it("covers every draft once, none reviewed, and every cited source is registered", () => {
-    expect(onDisk.entries).toHaveLength(154);
-    expect(new Set(onDisk.entries.map((x) => `${x.type}:${x.key}`)).size).toBe(154);
+    expect(onDisk.entries).toHaveLength(166);
+    expect(new Set(onDisk.entries.map((x) => `${x.type}:${x.key}`)).size).toBe(166);
     for (const x of onDisk.entries) { expect(x.clinically_reviewed, x.key).toBe(false); for (const s of x.sources) expect(s.licence_class, `${x.key} ${s.id}`).not.toBe("UNREGISTERED"); }
   });
   it("holds no draft body text: only short metadata fields", () => {

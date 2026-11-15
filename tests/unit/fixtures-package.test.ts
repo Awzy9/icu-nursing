@@ -7,7 +7,7 @@ const dir = path.resolve(__dirname, "../../packages/fixtures");
 const files = readdirSync(dir).filter((f) => f.endsWith(".json") && f !== "package.json");
 
 describe("@icu/fixtures: synthetic, nonclinical, and nothing copied from the clinical drafts", () => {
-  it("has the five fixture files", () => expect(files.sort()).toEqual(["cases.json", "equipment.json", "medications.json", "questions.json", "skills.json"]));
+  it("has the six fixture files", () => expect(files.sort()).toEqual(["cases.json", "equipment.json", "medications.json", "practice.json", "questions.json", "skills.json"]));
   for (const f of files) {
     const text = readFileSync(path.join(dir, f), "utf8").replace(/"category":\s*"[^"]*",?/g, ""); // equipment category slugs are the shared device-category names, not content
     it(`${f}: every code is SYN-*, there are no draft ids, and no draft title or clinical drug appears`, () => {

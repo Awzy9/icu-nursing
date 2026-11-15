@@ -1,0 +1,67 @@
+{
+ "practice_id": "PX-12",
+ "number": 12,
+ "title": "Self-assessment map of the 25 first-release skills",
+ "area": "competency",
+ "kind": "checklist",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "The skills list is the platform's own; no competency standard is implied.",
+  "The AACN competence framework page returned an error and is not used."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Plan practice across the 25 first-release skills."
+ ],
+ "self_assessment_only": true,
+ "sources": [],
+ "required_sources": [
+  "An employer-approved competency framework (the AACN framework could not be read)"
+ ],
+ "setup": "A personal map of the 25 skills (SK-01 to SK-25) with four self-rating levels.",
+ "skills": [
+  "SK-01",
+  "SK-02",
+  "SK-03",
+  "SK-04",
+  "SK-05",
+  "SK-06",
+  "SK-07",
+  "SK-08",
+  "SK-09",
+  "SK-10",
+  "SK-11",
+  "SK-12",
+  "SK-13",
+  "SK-14",
+  "SK-15",
+  "SK-16",
+  "SK-17",
+  "SK-18",
+  "SK-19",
+  "SK-20",
+  "SK-21",
+  "SK-22",
+  "SK-23",
+  "SK-24",
+  "SK-25"
+ ],
+ "levels": [
+  "not_started",
+  "learning",
+  "with_support",
+  "independent"
+ ]
+}

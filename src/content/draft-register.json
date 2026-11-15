@@ -55,6 +55,14 @@
       "evidence": {
         "partial": 8
       }
+    },
+    "practice": {
+      "total": 12,
+      "validator_issues": 0,
+      "clinically_reviewed": 0,
+      "evidence": {
+        "partial": 12
+      }
     }
   }
 }

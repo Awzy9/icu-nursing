@@ -2501,6 +2501,163 @@
     "required_sources": 3,
     "issues": 0
    }
+  ],
+  "PX-01": [
+   {
+    "hash": "33a92ec17d4d1052",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   }
+  ],
+  "PX-02": [
+   {
+    "hash": "dc2e9574e116da7c",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-ISMP-HA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   }
+  ],
+  "PX-03": [
+   {
+    "hash": "de682e8b5a2fec48",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   }
+  ],
+  "PX-04": [
+   {
+    "hash": "10ddb239f2a987b7",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   }
+  ],
+  "PX-05": [
+   {
+    "hash": "c83f53d39e2e2b08",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   }
+  ],
+  "PX-06": [
+   {
+    "hash": "d566a51f4d63363e",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-ADV-C74",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   }
+  ],
+  "PX-07": [
+   {
+    "hash": "d89d8005aace2a16",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   }
+  ],
+  "PX-08": [
+   {
+    "hash": "7cd64e96ca11a6a4",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   }
+  ],
+  "PX-09": [
+   {
+    "hash": "00c99cbaa7253f71",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   }
+  ],
+  "PX-10": [
+   {
+    "hash": "cbd62ddea6e701a1",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-ADV-C74"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   }
+  ],
+  "PX-11": [
+   {
+    "hash": "0a75bebca97c0f83",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   }
+  ],
+  "PX-12": [
+   {
+    "hash": "1a82dbf98b6ac0f8",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [],
+    "gaps": 5,
+    "required_sources": 1,
+    "issues": 0
+   }
   ]
  }
 }
