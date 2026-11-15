@@ -349,7 +349,7 @@ test("equipment learning in database mode: bookmarks and progress are saved to t
     await page.getByRole("button", { name: "Bookmark this module" }).click();
     await expect(page.getByRole("button", { name: "Bookmarked" })).toHaveAttribute("aria-pressed", "true");
     // the server confirms before we look elsewhere (the UI is optimistic)
-    await expect.poll(async () => (await sql<{ n: number }>(`select (select count(*) from public.equipment_progress where user_id='${learner.id}') + (select count(*) from public.equipment_bookmarks where user_id='${learner.id}') as n`))[0]!.n).toBe(2);
+    await expect.poll(async () => (await sql<{ n: number }>(`select (select count(*) from public.equipment_progress where user_id='${learner.id}')::int + (select count(*) from public.equipment_bookmarks where user_id='${learner.id}')::int as n`))[0]!.n).toBe(2);
     // a second device: a separate browser context signed in as the same learner
     const ctx2 = await browser.newContext({ baseURL }); extra.push(ctx2);
     const dev2 = await ctx2.newPage();
