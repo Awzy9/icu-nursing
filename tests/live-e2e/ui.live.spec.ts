@@ -318,6 +318,7 @@ test("skills library in database mode: a signed-in learner searches, starts a se
     await page.waitForURL(/skills\/session\//);
     await page.getByRole("group", { name: /Find the handbook card/ }).getByLabel("Done", { exact: true }).check();
     await expect(page.getByText("1 of 5 steps ticked").first()).toBeVisible();
+    await expect(page.getByText("Saved", { exact: true })).toBeAttached(); // the tick is optimistic; wait for the server to confirm before reloading
     await page.reload();
     await expect(page.getByText("1 of 5 steps ticked").first()).toBeVisible(); // persisted in the database
     await page.getByRole("button", { name: "Finish self-study" }).click();
