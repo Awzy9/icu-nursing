@@ -2,12 +2,20 @@ import { Link } from "expo-router";
 import { View } from "react-native";
 import { Button, Callout, Card, Chip, H1, H2, P, Screen } from "../../src/ui/components";
 import { useApp } from "../../src/state/app";
+import { useAuth } from "../../src/auth/provider";
 
 export default function Account() {
   const { t, locale, setLocale, themeMode, setThemeMode } = useApp();
+  const { config, manager, email, notice, clearNotice } = useAuth();
   return (
     <Screen>
       <H1>{t("account.title")}</H1>
+      {notice ? <Callout tone="warn">{t("auth.callbackFailed")}</Callout> : null}
+      {config ? (email ? (
+        <Card><P>{t("auth.signedInAs", { email })}</P>
+          <Button label={t("auth.signOut")} variant="outline" onPress={() => { clearNotice(); void manager?.signOut(); }} />
+          <Link href="/delete-account" asChild><Button label={t("del.open")} variant="danger" onPress={() => undefined} /></Link></Card>
+      ) : <Link href="/signin" asChild><Button label={t("auth.signIn")} onPress={() => undefined} /></Link>) : null}
       <H2>{t("account.language")}</H2>
       <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
         <Chip label="English" selected={locale === "en"} onPress={() => setLocale("en")} />
@@ -22,7 +30,7 @@ export default function Account() {
       <H2>{t("account.privacy")}</H2>
       <Card><P>{t("account.privacyBody")}</P></Card>
       <H2>{t("account.deletionInfo")}</H2>
-      <Card><P>{t("account.deletionBody")}</P><Callout>{t("account.signInSoon")}</Callout></Card>
+      <Card><P>{t("account.deletionBody")}</P>{config ? null : <Callout>{t("account.signInSoon")}</Callout>}</Card>
       <Link href="/prototype" asChild><Button label={t("prototype.title")} variant="outline" onPress={() => undefined} /></Link>
     </Screen>
   );

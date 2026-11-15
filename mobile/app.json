@@ -27,7 +27,8 @@
     },
     "owner": "awzy9s-team",
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-secure-store"
     ],
     "scheme": "icuknowledgemap"
   }

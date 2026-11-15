@@ -25,13 +25,15 @@ describe("mobile source", () => {
     expect(source.length).toBeGreaterThan(10);
     for (const f of source) {
       const t = readFileSync(f, "utf8");
-      expect(t, f).not.toMatch(/content\/drafts|draft-index|draft-history|service[_-]?role|SERVICE_ROLE/i);
+      expect(t, f).not.toMatch(/content\/drafts|draft-index|draft-history/i);
+      // The only place that may name the service-role key is the validator that REFUSES it.
+      if (!f.endsWith(path.join("auth", "config.ts"))) expect(t, f).not.toMatch(/service[_-]?role|SERVICE_ROLE/i);
       expect(t, f).not.toMatch(/WebView.*uri:\s*["'`]https?:\/\/(?!localhost)/); // never a website wrapper
     }
   });
-  it("is not a WebView wrapper of the website: the app has native screens and no WebView dependency yet", () => {
-    const pj = JSON.parse(readFileSync(path.join(root, "mobile/package.json"), "utf8"));
-    expect(Object.keys(pj.dependencies)).not.toContain("react-native-webview");
+  it("is not a WebView wrapper of the website: the app has native screens; a WebView exists only for the CAPTCHA bridge", () => {
+    const users = source.filter((f) => /react-native-webview/.test(readFileSync(f, "utf8"))).map((f) => path.relative(root, f));
+    expect(users.every((f) => f.endsWith(path.join("auth", "CaptchaView.tsx")))).toBe(true);
     expect(readdirSync(path.join(root, "mobile/app")).length).toBeGreaterThan(5);
   });
   it("keeps the Android package identifier exactly", () => {

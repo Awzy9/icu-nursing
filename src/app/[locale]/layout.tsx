@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -26,6 +27,12 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations("Common");
+  const bare = (await headers()).get("x-bare-page") === "1";
+  if (bare) return (
+    <html lang={locale} dir={isRtl(locale) ? "rtl" : "ltr"}>
+      <body className="p-3"><NextIntlClientProvider><main id="main" tabIndex={-1}>{children}</main></NextIntlClientProvider></body>
+    </html>
+  );
   return (
     <html lang={locale} dir={isRtl(locale) ? "rtl" : "ltr"}>
       <body className="flex min-h-dvh flex-col">
