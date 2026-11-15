@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Badge, Callout, ProgressBar } from "@/components/ui/feedback";
+import { Badge, Callout } from "@/components/ui/feedback";
+import { SegmentedBar } from "@/components/ui/segmented-bar";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { requireUser } from "@/lib/auth";
@@ -119,7 +120,15 @@ export default async function StudyPage({ params }: { params: Promise<{ locale: 
                       <p className="font-medium">{localize(d.title, locale)}</p>
                       {d.due > 0 ? <Badge tone="warning">{t("kindDue")}: {d.due}</Badge> : null}
                     </div>
-                    <ProgressBar value={(d.answered / d.available) * 100} label={localize(d.title, locale)} />
+                    <SegmentedBar
+                      label={localize(d.title, locale)}
+                      legend={false}
+                      segments={[
+                        { value: d.correct, label: t("correctLabel"), className: "bg-success-foreground" },
+                        { value: d.answered - d.correct, label: t("incorrectLabel"), className: "bg-danger-foreground" },
+                        { value: Math.max(0, d.available - d.answered), label: t("unansweredLabel"), className: "bg-muted" },
+                      ]}
+                    />
                     <p className="text-sm text-muted-foreground">{t("progressOf", { answered: d.answered, available: d.available, correct: d.correct, due: d.due })}</p>
                   </li>
                 ))}

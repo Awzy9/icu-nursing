@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { NavLink as ActiveLink } from "./nav-link";
 import { getRoles, getSessionUser, STAFF_ROLES } from "@/lib/auth";
 import { signOutAction } from "@/app/[locale]/(auth)/actions";
 import { Button } from "@/components/ui/button";
@@ -14,7 +15,7 @@ export async function SiteHeader() {
   const roles = user ? await getRoles(user.id) : [];
   const isStaff = roles.some((r) => STAFF_ROLES.includes(r));
 
-  const primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }];
+  const primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/learn", label: t("learn") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }];
   if (user) primary.push({ href: "/dashboard", label: t("dashboard") }, { href: "/bookmarks", label: t("bookmarks") });
   if (isStaff) primary.push({ href: "/admin", label: t("admin") });
   const future: NavLink[] = FUTURE_FEATURES.map((f) => ({ href: `/coming-soon/${f}`, label: t(f), soon: true }));
@@ -39,7 +40,7 @@ export async function SiteHeader() {
         </Link>
         <nav aria-label={t("main")} className="hidden items-center gap-1 lg:flex">
           {primary.map((l) => (
-            <Link key={l.href} href={l.href} className="inline-flex min-h-11 items-center rounded-md px-3 text-foreground no-underline hover:bg-muted">{l.label}</Link>
+            <ActiveLink key={l.href} href={l.href} className="inline-flex min-h-11 items-center rounded-md px-3 text-foreground no-underline hover:bg-muted">{l.label}</ActiveLink>
           ))}
           <details className="relative">
             <summary className="inline-flex min-h-11 cursor-pointer list-none items-center rounded-md px-3 hover:bg-muted">{t("soon")}…</summary>

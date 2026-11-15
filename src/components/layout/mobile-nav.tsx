@@ -2,7 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
+import { NavLink as ActiveLink } from "./nav-link";
 
 export interface NavLink { href: string; label: string; soon?: boolean }
 
@@ -43,10 +44,10 @@ export function MobileNav({ links, footer }: { links: NavLink[]; footer?: React.
           <ul className="space-y-1">
             {links.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="flex min-h-11 items-center justify-between rounded-md px-3 text-foreground no-underline hover:bg-muted">
+                <ActiveLink href={l.href} className="flex min-h-11 items-center justify-between rounded-md px-3 text-foreground no-underline hover:bg-muted">
                   <span>{l.label}</span>
                   {l.soon ? <span className="text-xs text-muted-foreground">{t("soon")}</span> : null}
-                </Link>
+                </ActiveLink>
               </li>
             ))}
           </ul>

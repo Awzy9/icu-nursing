@@ -34,3 +34,18 @@ describe("localize", () => {
     expect(usedFallback({ en: "a", ar: "b" }, "ar")).toBe(false);
   });
 });
+
+describe("Arabic interface consistency for the learning areas", () => {
+  const NS = ["QuestionBank", "Study", "Cases", "Learn"] as const;
+  const cats = { en: en as unknown as Record<string, Record<string, string>>, ar: ar as unknown as Record<string, Record<string, string>> };
+  const hasArabic = (s: string) => /[\u0600-\u06FF]/.test(s);
+  it("every Arabic string in these areas is actually Arabic (no untranslated English left behind)", () => {
+    for (const ns of NS) for (const [k, v] of Object.entries(cats.ar[ns]!)) expect(hasArabic(v), `${ns}.${k}: ${v}`).toBe(true);
+  });
+  it("every plural message has the mandatory 'other' branch in both languages", () => {
+    for (const cat of [cats.en, cats.ar]) for (const ns of NS) for (const [k, v] of Object.entries(cat[ns]!)) if (/plural,/.test(v)) expect(v, `${ns}.${k}`).toMatch(/other \{/);
+  });
+  it("Arabic plurals that print a count use the CLDR category 'few' (not English-only one/other)", () => {
+    for (const ns of NS) for (const [k, v] of Object.entries(cats.ar[ns]!)) if (/plural,/.test(v) && /#/.test(v)) expect(v, `${ns}.${k}`).toMatch(/few \{[^}]*#[^}]*\}/);
+  });
+});

@@ -156,7 +156,7 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
     const att = (await cb.rpc("qb_start_attempt", { p_mode: "practice", p_count: 2 })).data as string;
     for (const [m, p, body] of [["POST", "/quiz_attempts", { user_id: a.id, mode: "exam", seed: "abcdefgh", question_count: 1 }], ["PATCH", `/quiz_attempts?id=eq.${att}`, { score_tenths: 1000 }],
       ["DELETE", `/quiz_attempts?id=eq.${att}`, null], ["POST", "/question_items", { code: "HACK-1", kind: "clinical", domain_id: "00000000-0000-4000-8000-000000000001", stem: { en: "A forged stem that is long enough." } }],
-      ["PATCH", "/question_answer_keys", { rationale: { en: "x" } }], ["POST", "/learner_review_schedule", { question_id: fx[0]!.id }], ["POST", "/case_attempt_steps", { points: 2 }]] as const) {
+      ["PATCH", "/question_answer_keys?question_id=eq.00000000-0000-4000-8000-000000000001", { rationale: { en: "x" } }], ["POST", "/learner_review_schedule", { question_id: fx[0]!.id }], ["POST", "/case_attempt_steps", { points: 2 }]] as const) {
       const r = await rest(p, tb, { method: m, body: body ? JSON.stringify(body) : undefined, headers: { Prefer: "return=representation" } });
       expect([401, 403, 404], `${m} ${p}`).toContain(r.status);
       expect(r.status === 404 || /42501|permission denied|row-level security/i.test(await r.text()), `${m} ${p}`).toBe(true);

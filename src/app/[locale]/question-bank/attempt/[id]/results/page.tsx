@@ -9,6 +9,7 @@ import { localize } from "@/lib/content/localize";
 import { getQuestionBankService, resolveMode } from "@/lib/question-bank";
 import { tenthsToPercentString } from "@/lib/question-bank/score";
 import { LText } from "@/components/question-bank/localized";
+import { RevisionLauncher } from "@/components/question-bank/revision-launcher";
 import { cn } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
@@ -72,6 +73,14 @@ export default async function ResultsPage({ params, searchParams }: { params: Pr
         </dl>
         <p className="text-xs text-muted-foreground sm:col-span-2">{t("scoreNote")}</p>
       </section>
+
+      {attempt.items.some((i) => i.selected_option_id !== null && i.feedback?.is_correct === false) ? (
+        <section aria-labelledby="qb-rev-missed" className="space-y-2 rounded-lg border border-border bg-muted p-4">
+          <h2 id="qb-rev-missed" className="text-lg font-semibold">{t("reviseMissed")}</h2>
+          <p className="text-sm text-muted-foreground">{t("reviseMissedHelp")}</p>
+          <RevisionLauncher kind="incorrect" count={attempt.items.filter((i) => i.selected_option_id !== null && i.feedback?.is_correct === false).length} />
+        </section>
+      ) : null}
 
       <section aria-labelledby="qb-dom-h" className="space-y-3">
         <h2 id="qb-dom-h" className="text-xl font-semibold">{t("byDomain")}</h2>
