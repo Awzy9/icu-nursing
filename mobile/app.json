@@ -13,7 +13,7 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.awzy9.icuprototype",
+      "package": "com.icunursing.myapp",
       "versionCode": 1
     },
     "platforms": [
