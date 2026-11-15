@@ -26,4 +26,13 @@ describe("buildCsp", () => {
   it("generates unpredictable, unique nonces", () => {
     expect(new Set(Array.from({ length: 50 }, newNonce)).size).toBe(50);
   });
+
+  it("allows plain http/ws ONLY for a loopback Supabase stack (local development, isolated CI)", () => {
+    const local = buildCsp({ nonce: "n", supabaseUrl: "http://127.0.0.1:54321" });
+    expect(local).toContain("connect-src 'self' http://127.0.0.1:54321 ws://127.0.0.1:54321");
+    const remoteHttp = buildCsp({ nonce: "n", supabaseUrl: "http://evil.example" });
+    expect(remoteHttp).toContain("https://evil.example wss://evil.example");
+    expect(remoteHttp).not.toContain("http://evil.example");
+    expect(buildCsp({ nonce: "n", supabaseUrl: "https://abc.supabase.co" })).not.toMatch(/http:\/\/abc/);
+  });
 });

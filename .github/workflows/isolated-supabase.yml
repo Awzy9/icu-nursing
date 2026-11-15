@@ -20,6 +20,7 @@ jobs:
       SUPABASE_AUTH_CAPTCHA_SECRET: "1x0000000000000000000000000000000AA"
       NEXT_PUBLIC_TURNSTILE_SITE_KEY: "1x00000000000000000000AA"
       NEXT_PUBLIC_SITE_URL: "http://localhost:3100"
+      CAPTCHA_MODE: test   # lets the UI suite swap the LOCAL stack's CAPTCHA secret between Cloudflare test secrets
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
