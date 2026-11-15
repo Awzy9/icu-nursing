@@ -1,0 +1,218 @@
+{
+ "med_id": "MD-46",
+ "number": 46,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Tranexamic acid",
+ "drug_class": "Antifibrinolytic",
+ "category": "anticoagulants-hemostasis",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read, but the boxed warning concerns serious route errors and the institution's list governs.",
+ "summary": "Antifibrinolytic indicated in this label for short-term use in patients with haemophilia to reduce or prevent haemorrhage around tooth extraction; trauma and surgical bleeding uses are not labelled indications in this label. The boxed warning concerns serious, including fatal, harm from inadvertent injection by the wrong (neuraxial) route.",
+ "batch": 5,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-TXA",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-TXA",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates tranexamic acid injection in patients with haemophilia for short-term use to reduce or prevent haemorrhage and reduce the need for replacement therapy around tooth extraction; other bleeding uses are not labelled indications in this label.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Check the product, the route and the intended patient against the order before every use, and keep it clearly separate from other injectables.",
+     "support": "partial",
+     "sources": [
+      "L-TXA"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Boxed warning: for intravenous use only; serious, including fatal, adverse reactions including seizures and cardiac arrhythmias have occurred when it was inadvertently given by the wrong route.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
+    },
+    {
+     "text": "Avoid concomitant use with factor IX because of the risk of thrombosis.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
+    },
+    {
+     "text": "Hypersensitivity reactions can occur; in a severe reaction the drug is discontinued and immediate medical attention sought.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
+    },
+    {
+     "text": "Visual or ocular adverse effects may occur, and dizziness is also listed.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label lists medication errors due to incorrect route of administration and thromboembolic events among the clinically significant adverse reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Call for help immediately for seizures, arrhythmia or allergic signs, and report visual change or new swelling or pain in a limb.",
+     "support": "partial",
+     "sources": [
+      "L-TXA"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Confirm product and route against the order.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-TXA"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Watch for seizures, arrhythmia and signs of allergy.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-TXA"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Ask about visual change and dizziness.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "L-TXA"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report thrombosis or neurological signs immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-TXA"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record checks and events.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Trauma, obstetric and surgical bleeding uses are outside the label read; guideline text for these uses was not read.",
+  "Renal adjustment and dosing: not included.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}

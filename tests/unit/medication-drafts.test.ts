@@ -17,7 +17,7 @@ describe("the 50-medication plan and the drafted batches", () => {
   });
   it("every drafted batch passes every rule (10 medications per batch)", () => {
     expect(drafts.length % 10).toBe(0);
-    expect(drafts.length).toBeGreaterThanOrEqual(30);
+    expect(drafts.length).toBe(50);
     expect(validateMedicationSet(drafts, plan)).toEqual([]);
     for (const d of drafts) expect(validateMedicationDraft(d, known, plan), d.med_id).toEqual([]);
   });

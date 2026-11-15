@@ -1,0 +1,211 @@
+{
+ "med_id": "MD-45",
+ "number": 45,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Alteplase (Activase)",
+ "drug_class": "Tissue plasminogen activator (thrombolytic)",
+ "category": "anticoagulants-hemostasis",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Thrombolytic for acute ischaemic stroke and other labelled indications (this entry covers Activase; Cathflo Activase for central line occlusion is a different product with a different label). Nursing focus: bleeding, avoiding injections and punctures, hypersensitivity and monitoring after infusion.",
+ "batch": 5,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-ALTEPLASE",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-ALTEPLASE",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes Activase as a tissue plasminogen activator indicated for the treatment of acute ischaemic stroke and other labelled conditions; Cathflo Activase, used for central venous access device occlusion, is a separate product.",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Avoid intramuscular injections and trauma, perform any venepuncture carefully, and monitor for bleeding and for hypersensitivity during and after the infusion.",
+     "support": "partial",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Activase increases the risk of bleeding, which can be significant and sometimes fatal, especially at arterial and venous puncture sites; avoid intramuscular injections, trauma, and internal jugular and subclavian punctures, and if serious bleeding occurs the drug is discontinued (a prescriber decision).",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    },
+    {
+     "text": "Patients should be monitored during and for several hours after the infusion for hypersensitivity.",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    },
+    {
+     "text": "Consider the risk of re-embolisation from lysis of underlying deep venous thrombi in pulmonary embolism, and cholesterol embolism has been reported rarely.",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Bleeding is the most frequent adverse reaction, including intracranial haemorrhage in acute ischaemic stroke.",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Stop and call for help for any new headache, neurological change, bleeding or allergic signs.",
+     "support": "partial",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "observe",
+   "text": "Monitor neurological status and for bleeding at any site.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-ALTEPLASE"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Avoid intramuscular injections and take care with punctures and trauma.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-ALTEPLASE"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Watch for hypersensitivity for several hours after the infusion.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-ALTEPLASE"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report neurological change, bleeding or allergy immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-ALTEPLASE"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record observations and events.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Eligibility, timing, dosing and blood-pressure criteria for each indication: deliberately not included.",
+  "Stroke and myocardial infarction guideline text was not read.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}

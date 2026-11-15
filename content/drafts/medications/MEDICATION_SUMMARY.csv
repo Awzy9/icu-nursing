@@ -29,3 +29,23 @@ MD-27,Azithromycin,anti-infectives,False,L-AZITHROMYCIN,6,2,4,5,3,3
 MD-28,Linezolid,anti-infectives,False,L-LINEZOLID,5,2,4,5,3,4
 MD-29,Gentamicin,anti-infectives,False,L-GENTAMICIN,5,2,4,5,4,4
 MD-30,Phenylephrine,vasoactives-inotropes,True,L-PHENYLEPHRINE,6,2,4,5,3,3
+MD-31,Dopamine,vasoactives-inotropes,True,L-DOPAMINE,6,2,4,5,3,3
+MD-32,Nicardipine,antiarrhythmics-cardiac,False,L-NICARDIPINE,5,2,4,5,3,3
+MD-33,Labetalol,antiarrhythmics-cardiac,False,L-LABETALOL,4,2,4,5,3,3
+MD-34,Esmolol,antiarrhythmics-cardiac,False,L-ESMOLOL,7,2,4,5,3,3
+MD-35,Nitroglycerin (intravenous),antiarrhythmics-cardiac,False,L-NITROGLYCERIN,3,2,4,5,3,4
+MD-36,Furosemide,insulin-electrolytes-fluids,False,L-FUROSEMIDE,6,2,4,5,3,3
+MD-37,Lorazepam,sedatives-analgesics,False,L-LORAZEPAM,5,2,4,5,4,3
+MD-38,Haloperidol (injection),sedatives-analgesics,False,L-HALOPERIDOL,4,2,4,5,3,4
+MD-39,Hydromorphone,sedatives-analgesics,False,L-HYDROMORPHONE,6,2,4,5,3,4
+MD-40,Naloxone,reversal-emergency,False,L-NALOXONE,4,2,4,5,3,4
+MD-41,Flumazenil,reversal-emergency,False,L-FLUMAZENIL,4,2,4,5,4,4
+MD-42,Atropine,reversal-emergency,False,L-ATROPINE,7,2,4,5,2,3
+MD-43,Succinylcholine,neuromuscular-blockers,False,L-SUCCINYLCHOLINE,6,2,4,5,4,3
+MD-44,Enoxaparin,anticoagulants-hemostasis,False,L-ENOXAPARIN,6,2,4,5,4,4
+MD-45,Alteplase (Activase),anticoagulants-hemostasis,False,L-ALTEPLASE,5,2,4,5,4,4
+MD-46,Tranexamic acid,anticoagulants-hemostasis,False,L-TXA,6,2,4,5,3,4
+MD-47,Levetiracetam,neuro-seizure-icp,False,L-LEVETIRACETAM,6,2,4,5,3,3
+MD-48,Mannitol,neuro-seizure-icp,False,L-MANNITOL,6,2,4,5,3,3
+MD-49,Pantoprazole (intravenous),respiratory-gi-support,False,L-PANTOPRAZOLE,6,2,4,5,2,4
+MD-50,Hydrocortisone (sodium succinate),respiratory-gi-support,False,L-HYDROCORTISONE,5,2,4,5,3,4
