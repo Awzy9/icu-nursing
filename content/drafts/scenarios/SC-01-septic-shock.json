@@ -1,0 +1,98 @@
+{
+ "scenario_id": "SC-01",
+ "number": 1,
+ "title": "Septic shock",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "infection-sepsis",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Recognise deterioration and escalate with SBAR.",
+  "Monitor vasopressor administration within orders and protocol."
+ ],
+ "related": {
+  "skills": [
+   "SK-01"
+  ],
+  "medications": [
+   "MD-01",
+   "MD-03"
+  ],
+  "topic_drafts": [
+   "D06-T01",
+   "D02-T09"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-SSC-2021",
+   "read": "full",
+   "use": "Surviving Sepsis 2021 (superseded edition)"
+  },
+  {
+   "id": "S-SSC-2026",
+   "read": "partial",
+   "use": "recommendation page only"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "early warning score report"
+  },
+  {
+   "id": "L-NOREPINEPHRINE",
+   "read": "full",
+   "use": "label: extravasation and abrupt discontinuation"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Recognise physiological deterioration with the unit's early warning score and escalate it early.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "S-RCP-NEWS2"
+   ]
+  },
+  {
+   "text": "Use a structured SBAR handover to escalate to the responsible team.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ]
+  },
+  {
+   "text": "When a vasopressor is prescribed, check the infusion site for extravasation and avoid abrupt interruption.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-NOREPINEPHRINE"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Surviving Sepsis 2026 full text",
+  "Unit sepsis pathway",
+  "Fluid-response and vasopressor monitoring protocols"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "The sepsis pathway steps, fluid decisions and thresholds are not written; they rest on the 2026 guideline text, which was not read in full."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

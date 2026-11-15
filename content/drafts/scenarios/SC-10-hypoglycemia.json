@@ -1,0 +1,62 @@
+{
+ "scenario_id": "SC-10",
+ "number": 10,
+ "title": "Hypoglycemia",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "metabolic",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Monitor glucose and potassium during insulin and report low values immediately."
+ ],
+ "related": {
+  "skills": [],
+  "medications": [
+   "MD-15"
+  ],
+  "topic_drafts": []
+ },
+ "sources": [
+  {
+   "id": "L-INSULIN",
+   "read": "full",
+   "use": "label: hypoglycaemia, hypokalaemia, monitoring"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Increase the frequency of blood glucose monitoring in patients at higher risk of hypoglycaemia and monitor potassium.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-INSULIN"
+   ]
+  },
+  {
+   "text": "Report low or rapidly falling glucose immediately.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "L-INSULIN"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Hypoglycaemia management guideline or protocol",
+  "Unit insulin infusion protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Treatment of hypoglycaemia and glucose targets are not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "scenario_id": "SC-08",
+ "number": 8,
+ "title": "Acute seizure",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "neurocritical",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Maintain airway and breathing observation after a benzodiazepine."
+ ],
+ "related": {
+  "skills": [],
+  "medications": [
+   "MD-37",
+   "MD-47"
+  ],
+  "topic_drafts": []
+ },
+ "sources": [
+  {
+   "id": "L-LORAZEPAM",
+   "read": "full",
+   "use": "label: opioids, respiratory depression"
+  },
+  {
+   "id": "L-LEVETIRACETAM",
+   "read": "full",
+   "use": "label: behavioural effects, rash"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "After lorazepam, monitor breathing and sedation closely, especially with opioids, and have airway equipment available.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-LORAZEPAM"
+   ]
+  },
+  {
+   "text": "Watch for behavioural change and rash during levetiracetam.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-LEVETIRACETAM"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Seizure first-aid and status epilepticus guideline text",
+  "Unit seizure protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Seizure first aid (protection, positioning, timing) and medicine choice are not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

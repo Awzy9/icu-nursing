@@ -1,0 +1,72 @@
+{
+ "scenario_id": "SC-03",
+ "number": 3,
+ "title": "Acute respiratory deterioration",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "respiratory",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Escalate a rising oxygen requirement early.",
+  "Know that oxygen is titrated within an ordered range."
+ ],
+ "related": {
+  "skills": [
+   "SK-08"
+  ],
+  "medications": [],
+  "topic_drafts": [
+   "D01-T19",
+   "D01-T03"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-AARC-O2",
+   "read": "full",
+   "use": "AARC oxygen CPG"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "early warning score report"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Titrate oxygen only within the order or protocol and record each change with the reason.",
+   "scope": "order_or_protocol_required",
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2"
+   ]
+  },
+  {
+   "text": "Escalate a rising requirement or falling saturation early rather than only turning the oxygen up.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2",
+    "S-RCP-NEWS2"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Respiratory deterioration guideline text",
+  "Unit escalation criteria"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Causes, assessment sequence and treatment of respiratory deterioration are not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "scenario_id": "SC-05",
+ "number": 5,
+ "title": "Sudden oxygen desaturation",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "respiratory",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Check the patient and the equipment when saturation falls.",
+  "Escalate early."
+ ],
+ "related": {
+  "skills": [
+   "SK-08",
+   "SK-06"
+  ],
+  "medications": [],
+  "topic_drafts": [
+   "D01-T03"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-AARC-O2",
+   "read": "full",
+   "use": "AARC oxygen CPG"
+  },
+  {
+   "id": "S-AARC-SUCT",
+   "read": "full",
+   "use": "AARC suctioning CPG"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "early warning score report"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Escalate a falling saturation early and check devices, connections and humidification.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2"
+   ]
+  },
+  {
+   "text": "After suctioning, stop and escalate for persistent desaturation, instability or suspected tube obstruction.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Desaturation troubleshooting guideline",
+  "Unit airway emergency protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "A stepwise approach to sudden desaturation is not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

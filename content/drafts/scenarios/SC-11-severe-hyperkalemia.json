@@ -1,0 +1,48 @@
+{
+ "scenario_id": "SC-11",
+ "number": 11,
+ "title": "Severe hyperkalemia",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "unsupported",
+ "domain": "metabolic",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Recognise that hyperkalaemia emergencies need urgent escalation."
+ ],
+ "related": {
+  "skills": [],
+  "medications": [
+   "MD-19",
+   "MD-14"
+  ],
+  "topic_drafts": [
+   "D04-T06"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-UKKA-HK-2026",
+   "read": "partial",
+   "use": "UK Kidney Association hyperkalaemia guideline: hospital summary only"
+  }
+ ],
+ "expected_actions": [],
+ "required_sources": [
+  "UK Kidney Association guideline full text (licence to be verified)",
+  "Unit hyperkalaemia protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "No nursing action is written because the only source read was a partial summary of a guideline whose licence is unconfirmed."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

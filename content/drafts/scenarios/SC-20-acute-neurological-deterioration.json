@@ -1,0 +1,64 @@
+{
+ "scenario_id": "SC-20",
+ "number": 20,
+ "title": "Acute neurological deterioration",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "neurocritical",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Use the same structured approach each time and report change immediately."
+ ],
+ "related": {
+  "skills": [
+   "SK-24"
+  ],
+  "medications": [],
+  "topic_drafts": [
+   "D03-T01"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-GCS-OFFICIAL",
+   "read": "partial",
+   "use": "GCS structured approach (copyright)"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Use the same structured stepped approach and stimuli each time, record components and report change immediately.",
+   "scope": "assessment",
+   "support": "partial",
+   "sources": [
+    "S-GCS-OFFICIAL"
+   ]
+  },
+  {
+   "text": "Account for sedation, intubation and injury when interpreting findings.",
+   "scope": "assessment",
+   "support": "partial",
+   "sources": [
+    "S-GCS-OFFICIAL"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Neurological deterioration guideline text",
+  "Unit neurological observation and escalation protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Causes and management of neurological deterioration are not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

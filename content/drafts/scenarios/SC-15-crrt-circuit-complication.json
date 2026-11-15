@@ -1,0 +1,261 @@
+{
+ "scenario_id": "SC-15",
+ "number": 15,
+ "title": "CRRT circuit complication",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "decision_graph",
+ "evidence_status": "partial",
+ "domain": "renal",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Check the patient first when a circuit alarm sounds.",
+  "Use the device's own instructions and avoid disabling alarms.",
+  "Know when to return blood, stop treatment, document and notify the prescriber.",
+  "Report under-delivery of the prescribed dose."
+ ],
+ "related": {
+  "skills": [
+   "SK-17"
+  ],
+  "medications": [
+   "MD-14"
+  ],
+  "topic_drafts": [
+   "D04-T09"
+  ]
+ },
+ "sources": [
+  {
+   "id": "N-AHS-CRRT-ALARM-2025",
+   "read": "full",
+   "use": "AHS CRRT alarm pathway (PrisMax-specific, regional)"
+  },
+  {
+   "id": "S-KDIGO-AKI-2012",
+   "read": "partial",
+   "use": "KDIGO 2012 summary of statements"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
+  }
+ ],
+ "required_sources": [
+  "Manufacturer operator's manual for the unit's machine and software version",
+  "Unit CRRT protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "The pathway is specific to one machine family and says actions follow local practice guidelines.",
+  "Priming, citrate, drug dosing and weaning are not covered."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+  "AHS pathway: licence not stated; verify."
+ ],
+ "setting": "A fictional adult on continuous renal replacement therapy on a fictional unit.",
+ "steps": [
+  {
+   "position": 1,
+   "info": "An access-pressure alarm keeps sounding on the machine. The patient has just been moved up the bed.",
+   "prompt": "What do you do first?",
+   "observations": [
+    {
+     "key": "alarm",
+     "label": "Alarm shown",
+     "value": "Access pressure"
+    },
+    {
+     "key": "patient",
+     "label": "Patient",
+     "value": "Just moved, coughing"
+    },
+    {
+     "key": "pump",
+     "label": "Blood pump",
+     "value": "Stopped"
+    }
+   ],
+   "options": [
+    {
+     "text": "Check the patient, then the lines for clamps and kinks, the catheter position and the blood flow before clearing the alarm.",
+     "points": 2,
+     "next": 2,
+     "scope": "assessment",
+     "feedback": "The pathway starts with the patient and then the lines, clamps, catheter and blood flow, and says to review the alarm before clearing it.",
+     "consequence": "You find a kinked line under the patient and the alarm clears once it is freed.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
+    {
+     "text": "Press override and restart because the alarm is probably a false alarm.",
+     "points": 0,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "Alarm off, disable and override buttons decrease alarm sensitivity and are not a fix.",
+     "consequence": "The alarm returns and the machine stops again.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
+    {
+     "text": "Turn the blood flow to the maximum the machine allows.",
+     "points": 1,
+     "next": 2,
+     "scope": "order_or_protocol_required",
+     "feedback": "The pathway suggests adjusting the blood flow, not pushing it to the maximum.",
+     "consequence": "The alarms continue and the treatment time is lost.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "info": "Alarms keep recurring after the usual checks and treatment keeps stopping.",
+   "prompt": "What is the next step?",
+   "observations": [
+    {
+     "key": "alarm",
+     "label": "Alarm shown",
+     "value": "Access and return alarms recurring"
+    },
+    {
+     "key": "treatment",
+     "label": "Treatment time lost",
+     "value": "Increasing"
+    },
+    {
+     "key": "catheter",
+     "label": "Catheter",
+     "value": "Checked, no obvious fault"
+    }
+   ],
+   "options": [
+    {
+     "text": "Contact the manufacturer's support, return blood when possible and end treatment per local practice, document the reason and notify the physician.",
+     "points": 2,
+     "next": 3,
+     "scope": "escalation",
+     "feedback": "If alarms cannot be managed the pathway says to call support, return blood when possible, document why treatment stopped and notify the physician, who may need to replace the line.",
+     "consequence": "Blood is returned, the reason is recorded and the physician plans the next step for the line.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
+    {
+     "text": "Keep restarting the treatment until it runs and tell the doctor at the end of the shift.",
+     "points": 0,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "Repeated restarts waste treatment time and delay escalation.",
+     "consequence": "Several hours of prescribed treatment are lost.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
+    {
+     "text": "Clamp the lines and leave the circuit until the next shift.",
+     "points": 0,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "Blood should be returned when possible, not left in a stopped circuit.",
+     "consequence": "The circuit clots and the patient loses the blood in it.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "info": "Treatment has been stopped and the physician has been told. The patient received less treatment than prescribed.",
+   "prompt": "What should you record and report?",
+   "observations": [
+    {
+     "key": "treatment",
+     "label": "Treatment",
+     "value": "Stopped"
+    },
+    {
+     "key": "dose",
+     "label": "Delivered dose against prescription",
+     "value": "Below"
+    },
+    {
+     "key": "physician",
+     "label": "Physician",
+     "value": "Informed"
+    }
+   ],
+   "options": [
+    {
+     "text": "Record the alarms, actions, the reason for stopping and the shortfall, and report the under-delivery.",
+     "points": 2,
+     "next": null,
+     "scope": "escalation",
+     "feedback": "KDIGO recommends frequent assessment of the delivered dose, so shortfalls are reported and recorded.",
+     "consequence": "The team can adjust the plan, and the next shift knows what happened.",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012",
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
+    {
+     "text": "Record only that the machine alarmed.",
+     "points": 1,
+     "next": null,
+     "scope": "independent_nursing",
+     "feedback": "An incomplete record loses the reason for stopping and the shortfall.",
+     "consequence": "The next shift cannot see how much treatment was missed.",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012"
+     ]
+    },
+    {
+     "text": "Increase the prescribed fluid-removal goal to make up the difference.",
+     "points": 0,
+     "next": null,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Changing the prescription is a prescriber decision.",
+     "consequence": "An unauthorised change creates a safety incident.",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012"
+     ]
+    }
+   ]
+  }
+ ],
+ "debrief": {
+  "learning_points": [
+   "Check the patient first, then the lines, before clearing a circuit alarm.",
+   "Do not use override or disable functions to clear an unresolved problem.",
+   "If alarms cannot be managed: support, return blood, document, notify the physician.",
+   "Report under-delivery of the prescribed dose."
+  ],
+  "links": [
+   {
+    "kind": "skill",
+    "code": "SK-17"
+   }
+  ]
+ }
+}

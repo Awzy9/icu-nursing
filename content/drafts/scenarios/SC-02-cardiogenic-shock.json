@@ -1,0 +1,78 @@
+{
+ "scenario_id": "SC-02",
+ "number": 2,
+ "title": "Cardiogenic shock",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "cardiovascular",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Monitor inotrope infusions and report rhythm and pressure changes."
+ ],
+ "related": {
+  "skills": [
+   "SK-01",
+   "SK-18"
+  ],
+  "medications": [
+   "MD-04",
+   "MD-05"
+  ],
+  "topic_drafts": [
+   "D02-T08"
+  ]
+ },
+ "sources": [
+  {
+   "id": "L-DOBUTAMINE",
+   "read": "full",
+   "use": "label: rate, pressure and rhythm warnings"
+  },
+  {
+   "id": "L-MILRINONE",
+   "read": "full",
+   "use": "label: ventricular arrhythmias and continuous ECG"
+  },
+  {
+   "id": "S-ESICM-SHOCK-2014",
+   "read": "full",
+   "use": "shock and haemodynamic monitoring consensus (dated)"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Keep continuous ECG monitoring during milrinone and report ventricular ectopy immediately.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-MILRINONE"
+   ]
+  },
+  {
+   "text": "Report a marked rise in heart rate or blood pressure or rapid atrial fibrillation during dobutamine.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "L-DOBUTAMINE"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Cardiogenic shock guideline text",
+  "Unit protocol for inotrope infusions and mechanical support"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Recognition criteria and management of cardiogenic shock are not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

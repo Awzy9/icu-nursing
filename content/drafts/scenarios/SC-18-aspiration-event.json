@@ -1,0 +1,85 @@
+{
+ "scenario_id": "SC-18",
+ "number": 18,
+ "title": "Aspiration event",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "gastrointestinal",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Confirm tube position before use and raise the head of the bed.",
+  "Report respiratory distress after a feed starts."
+ ],
+ "related": {
+  "skills": [
+   "SK-10",
+   "SK-11"
+  ],
+  "medications": [],
+  "topic_drafts": [
+   "D07-T06"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-NICE-CG32",
+   "read": "partial",
+   "use": "NICE CG32 position confirmation"
+  },
+  {
+   "id": "S-NHSE-NGT-2016",
+   "read": "partial",
+   "use": "NHS misplaced tube alert"
+  },
+  {
+   "id": "S-SHEA-VAP-2022",
+   "read": "full",
+   "use": "head-of-bed essential practice"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Confirm tube position before each use and do not feed if it cannot be confirmed.",
+   "scope": "assessment",
+   "support": "partial",
+   "sources": [
+    "S-NICE-CG32",
+    "S-NHSE-NGT-2016"
+   ]
+  },
+  {
+   "text": "Keep the head of the bed raised unless contraindicated.",
+   "scope": "independent_nursing",
+   "support": "sourced",
+   "sources": [
+    "S-SHEA-VAP-2022"
+   ]
+  },
+  {
+   "text": "Stop the feed and escalate for respiratory distress.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "S-NHSE-NGT-2016"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Aspiration management guideline",
+  "Unit aspiration protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Management after a witnessed aspiration is not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

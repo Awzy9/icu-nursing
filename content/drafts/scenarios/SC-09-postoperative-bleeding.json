@@ -1,0 +1,79 @@
+{
+ "scenario_id": "SC-09",
+ "number": 9,
+ "title": "Postoperative bleeding",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "haematology",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Monitor for bleeding in anticoagulated or post-operative patients and report it."
+ ],
+ "related": {
+  "skills": [
+   "SK-09"
+  ],
+  "medications": [
+   "MD-14",
+   "MD-44",
+   "MD-46"
+  ],
+  "topic_drafts": [
+   "D08-T02"
+  ]
+ },
+ "sources": [
+  {
+   "id": "L-HEPARIN",
+   "read": "full",
+   "use": "label: haemorrhage warnings and monitoring"
+  },
+  {
+   "id": "L-ENOXAPARIN",
+   "read": "full",
+   "use": "label: bleeding, spinal haematoma"
+  },
+  {
+   "id": "L-TXA",
+   "read": "full",
+   "use": "label: route and product restrictions"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Watch for bleeding at any site in patients receiving heparin or enoxaparin and report it at once.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-HEPARIN",
+    "L-ENOXAPARIN"
+   ]
+  },
+  {
+   "text": "Report new back pain or leg weakness after neuraxial procedures in anticoagulated patients.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "L-ENOXAPARIN"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Post-operative bleeding guideline or protocol",
+  "Massive haemorrhage protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Recognition of post-operative bleeding and the management steps are not drawn from a source read; the tranexamic acid label read does not cover surgical bleeding."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

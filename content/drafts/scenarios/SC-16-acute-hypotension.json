@@ -1,0 +1,78 @@
+{
+ "scenario_id": "SC-16",
+ "number": 16,
+ "title": "Acute hypotension",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "cardiovascular",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Treat the patient, not the number: check the patient and the monitoring system when a reading is implausible."
+ ],
+ "related": {
+  "skills": [
+   "SK-01"
+  ],
+  "medications": [
+   "MD-01",
+   "MD-30"
+  ],
+  "topic_drafts": [
+   "D02-T08"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-CDC-BSI-2011",
+   "read": "full",
+   "use": "arterial pressure monitoring system statements"
+  },
+  {
+   "id": "S-SSC-2021",
+   "read": "full",
+   "use": "arterial catheter rationale (superseded)"
+  },
+  {
+   "id": "L-PHENYLEPHRINE",
+   "read": "full",
+   "use": "label: ischaemia, extravasation, bradycardia"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "When an arterial pressure reading is unexpected, assess the patient and compare with a cuff reading before acting, then check the system and escalate if it cannot be corrected.",
+   "scope": "assessment",
+   "support": "partial",
+   "sources": [
+    "S-CDC-BSI-2011",
+    "S-SSC-2021"
+   ]
+  },
+  {
+   "text": "During a vasopressor infusion, inspect the infusion site and report extravasation or bradycardia.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-PHENYLEPHRINE"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Hypotension and shock guideline text",
+  "Unit escalation and fluid protocols"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Causes and treatment of acute hypotension are not drawn from a source read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

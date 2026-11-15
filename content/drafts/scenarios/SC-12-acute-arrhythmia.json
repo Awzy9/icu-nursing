@@ -1,0 +1,87 @@
+{
+ "scenario_id": "SC-12",
+ "number": 12,
+ "title": "Acute arrhythmia",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "cardiovascular",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Verify an alarm at the bedside and check the patient first.",
+  "Keep resuscitation equipment available during antiarrhythmics."
+ ],
+ "related": {
+  "skills": [
+   "SK-18",
+   "SK-19"
+  ],
+  "medications": [
+   "MD-16",
+   "MD-17"
+  ],
+  "topic_drafts": [
+   "D02-T02"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-OPENRN-ADV-C7",
+   "read": "partial",
+   "use": "Open RN telemetry checklist"
+  },
+  {
+   "id": "L-AMIODARONE",
+   "read": "full",
+   "use": "label: hypotension, bradycardia, AV block"
+  },
+  {
+   "id": "L-ADENOSINE",
+   "read": "full",
+   "use": "label: heart block, asystole, resuscitative measures"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Verify an alarm or unusual rhythm at the bedside and check the patient before acting.",
+   "scope": "assessment",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-ADV-C7"
+   ]
+  },
+  {
+   "text": "Keep resuscitation equipment immediately available when adenosine is given and watch the ECG for block or asystole.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-ADENOSINE"
+   ]
+  },
+  {
+   "text": "During amiodarone, report hypotension, bradycardia or heart block.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "L-AMIODARONE"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Arrhythmia guideline text (ERC/AHA)",
+  "Unit arrhythmia and cardioversion protocols"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Rhythm identification and treatment pathways are not drawn from a full-text guideline read for this scenario."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

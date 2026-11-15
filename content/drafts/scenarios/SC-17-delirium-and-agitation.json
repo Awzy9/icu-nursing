@@ -1,0 +1,75 @@
+{
+ "scenario_id": "SC-17",
+ "number": 17,
+ "title": "Delirium and agitation",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "neurocritical",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Treat pain before considering a sedative.",
+  "Assess agitation with the unit's validated tool."
+ ],
+ "related": {
+  "skills": [
+   "SK-25",
+   "SK-23"
+  ],
+  "medications": [
+   "MD-38",
+   "MD-08"
+  ],
+  "topic_drafts": [
+   "D03-T10"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-SCCM-PADIS",
+   "read": "partial",
+   "use": "PADIS recommendation statements"
+  },
+  {
+   "id": "L-HALOPERIDOL",
+   "read": "full",
+   "use": "label: intramuscular product, schizophrenia, QTc"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Assess pain before considering a sedative and use the unit's validated tools.",
+   "scope": "assessment",
+   "support": "partial",
+   "sources": [
+    "S-SCCM-PADIS"
+   ]
+  },
+  {
+   "text": "Before an antipsychotic is given, check the ECG and QTc history where ordered and report arrhythmia history.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-HALOPERIDOL"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Delirium assessment tool licence (CAM-ICU)",
+  "PADIS full text",
+  "Unit delirium protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Delirium assessment tools are copyright-sensitive and were not read; the haloperidol label read does not cover delirium."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}

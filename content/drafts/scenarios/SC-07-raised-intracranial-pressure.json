@@ -1,0 +1,78 @@
+{
+ "scenario_id": "SC-07",
+ "number": 7,
+ "title": "Raised intracranial pressure",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "outline",
+ "evidence_status": "partial",
+ "domain": "neurocritical",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Recognise that suctioning can raise intracranial pressure.",
+  "Report ICP rises and neurological change."
+ ],
+ "related": {
+  "skills": [
+   "SK-06",
+   "SK-24"
+  ],
+  "medications": [
+   "MD-48"
+  ],
+  "topic_drafts": [
+   "D03-T03"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-AARC-SUCT",
+   "read": "full",
+   "use": "AARC suctioning CPG"
+  },
+  {
+   "id": "S-BTF-TBI-4TH",
+   "read": "partial",
+   "use": "Brain Trauma Foundation 4th edition (monitoring sections)"
+  },
+  {
+   "id": "L-MANNITOL",
+   "read": "full",
+   "use": "label: renal, CNS and electrolyte warnings"
+  }
+ ],
+ "expected_actions": [
+  {
+   "text": "Escalate ICP rises and neurological change promptly.",
+   "scope": "escalation",
+   "support": "partial",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "text": "During mannitol, monitor urine output, neurological status and electrolytes.",
+   "scope": "monitoring",
+   "support": "partial",
+   "sources": [
+    "L-MANNITOL"
+   ]
+  }
+ ],
+ "required_sources": [
+  "Neurocritical care guideline text (ICP and CPP management)",
+  "Unit ICP protocol"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "ICP and CPP thresholds and positioning are not drawn from a full-text source and are not written."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ]
+}
