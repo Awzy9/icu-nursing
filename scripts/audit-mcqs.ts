@@ -25,7 +25,8 @@ const tags: Record<string, number> = {};
 let total = 0, longest = 0, correctAbsolute = 0, distractorAbsolute = 0;
 const perTopic: string[] = [];
 const all: { key: string; stem: string; opts: string[]; answer: string }[] = [];
-let shortest = 0;
+let shortest = 0, shorterThanMean = 0, ratioSum = 0;
+const topicRatio: Record<string, number[]> = {};
 for (const f of files.sort()) {
   const text = readFileSync(f, "utf8");
   const topic = /^(?:topic_id|set_id): (\S+)/m.exec(text)![1]!;
@@ -40,6 +41,9 @@ for (const f of files.sort()) {
     const ansLen = q.options[q.answer]!.length;
     all.push({ key: `${topic} ${q.id}`, stem: q.stem, opts: Object.values(q.options) as string[], answer: q.answer });
     const min = Math.min(...lens.map((l) => l[1]));
+    const dMean = lens.filter((l) => l[0] !== q.answer).reduce((a, l) => a + l[1], 0) / (lens.length - 1);
+    if (ansLen < dMean) shorterThanMean++;
+    ratioSum += ansLen / dMean; (topicRatio[topic] ??= []).push(ansLen / dMean);
     if (ansLen === min && lens.filter((l) => l[1] === min).length === 1) shortest++;
     if (ansLen === max && lens.filter((l) => l[1] === max).length === 1) { longest++; topicLongest++; issues.push("correct option is the unique longest"); }
     const ansAbs = absolutes.test(q.options[q.answer]!);
@@ -58,7 +62,7 @@ for (const f of files.sort()) {
     if (q.stem.length < 60) issues.push("very short stem (possible recall-only question)");
     rows.push({ topic, q: q.id, answer: q.answer, issues });
   }
-  perTopic.push(`| ${topic} | ${qs.length} | ${topicPos.A}/${topicPos.B}/${topicPos.C}/${topicPos.D} | ${topicLongest} |`);
+  perTopic.push(`| ${topic} | ${qs.length} | ${topicPos.A}/${topicPos.B}/${topicPos.C}/${topicPos.D} | ${topicLongest} | ${(topicRatio[topic]!.reduce((a, b) => a + b, 0) / topicRatio[topic]!.length).toFixed(2)} |`);
 }
 // Duplicate checks: identical options inside a question, and near-duplicate questions across the bank (stem plus options, word-set Jaccard >= 0.7).
 const norm = (x: string) => x.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 2);
@@ -75,10 +79,11 @@ const out = [
   `Questions audited: **${total}** across ${files.length} drafts. Answer positions A/B/C/D: ${pos.A}/${pos.B}/${pos.C}/${pos.D}.`,
   `Correct option is the unique longest: **${longest}** (${((100 * longest) / total).toFixed(1)} %). Keys with absolute wording: ${correctAbsolute}; distractors with absolute wording: ${distractorAbsolute}.`,
   `Correct option is the unique shortest: **${shortest}** (${((100 * shortest) / total).toFixed(1)} %); a random key would be the unique longest or shortest in roughly 20-25 % of questions each.`,
+  `Key length relative to the mean distractor length: mean ratio **${(ratioSum / total).toFixed(2)}** (1.00 = equal); keys shorter than the mean distractor in **${shorterThanMean}** questions (${((100 * shorterThanMean) / total).toFixed(1)} %). Ratios are reported, not targeted: no wording is padded to move them.`,
   `Questions with identical options inside the question: **${dupOptions.length}**. Near-duplicate questions across the bank (stem plus options, Jaccard >= 0.7; template stems such as the scope-of-practice question are expected to repeat, their options differ): **${dupStems.length}**${dupStems.length ? ` (${dupStems.join("; ")})` : ""}.`,
   `Questions with at least one automated flag: **${flagged.length}**.`,
   "", "## Flags", ...flagged.map((r) => `- ${r.topic} ${r.q} (key ${r.answer}): ${r.issues.join("; ")}`),
-  "", `Question-type tags: ${Object.entries(tags).map(([k, v]) => `${k} ${v}`).join(", ")}.`, "", "## Per topic (positions A/B/C/D; unique-longest keys)", "| Topic | MCQs | A/B/C/D | Longest-key |", "|---|---|---|---|", ...perTopic,
+  "", `Question-type tags: ${Object.entries(tags).map(([k, v]) => `${k} ${v}`).join(", ")}.`, "", "## Per topic (positions A/B/C/D; unique-longest keys)", "| Topic | MCQs | A/B/C/D | Longest-key | Mean key/distractor length |", "|---|---|---|---|---|", ...perTopic,
 ].join("\n");
 writeFileSync(join(root, "MCQ_AUDIT.md"), out + "\n");
 console.log(out.split("\n").slice(0, 6).join("\n"));

@@ -14,11 +14,14 @@ export function loadMedicationPlan(root = "."): Map<number, PlanRow> {
 export function loadMedicationLabels(root = "."): Set<string> {
   return new Set(lines(path.join(dir(root), "LABEL_SOURCES.csv")).map((l) => l.split(",")[0]!));
 }
+export function loadGuidelineSources(root = "."): string[] {
+  return readFileSync(path.join(root, "content/drafts/skills/NEW_SOURCES.csv"), "utf8").split(/\r?\n/).slice(1).map((l) => /^"?(N-[A-Z0-9-]+)"?,/.exec(l)?.[1]).filter((x): x is string => Boolean(x));
+}
 export function loadMedicationDrafts(root = "."): MedicationDraft[] {
   return readdirSync(dir(root)).filter((f) => /^MD-\d\d-.*\.json$/.test(f)).sort().map((f) => JSON.parse(readFileSync(path.join(dir(root), f), "utf8")) as MedicationDraft);
 }
 if (process.argv[1]?.endsWith("validate-medication-drafts.ts")) {
-  const plan = loadMedicationPlan(); const known = new Set([...loadMedicationLabels(), "S-FDA-PUMP", "S-AHRQ-TS"]);
+  const plan = loadMedicationPlan(); const known = new Set([...loadMedicationLabels(), ...loadGuidelineSources(), "S-FDA-PUMP", "S-AHRQ-TS"]);
   const drafts = loadMedicationDrafts();
   const issues = [...drafts.flatMap((d) => validateMedicationDraft(d, known, plan)), ...validateMedicationSet(drafts, plan)];
   for (const i of issues) console.error(`[${i.rule}] ${i.message}`);

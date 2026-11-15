@@ -1,0 +1,101 @@
+{
+ "equipment_id": "EQ-08",
+ "number": 8,
+ "title": "Pressure-relieving equipment",
+ "category": "pressure-relieving-equipment",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+ "device_neutral": true,
+ "manufacturer_documents": [],
+ "related_skill": "SK-14",
+ "evidence_status": "partial",
+ "diagram": {
+  "kind": "loop",
+  "original_graphic": true,
+  "parts": [
+   "Support surface",
+   "Pump or controller",
+   "Mode selector",
+   "Alarm"
+  ],
+  "alt_text_needed": true
+ },
+ "parameters": [
+  {
+   "name": "Mode",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Air level or pressure state",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Alarm state",
+   "explanation": null,
+   "support": "needs_source"
+  }
+ ],
+ "safety_concepts": [
+  {
+   "text": "No mattress replaces repositioning.",
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "Use equipment and low-friction fabrics that reduce friction and shear when moving the patient.",
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ],
+   "section": "safety"
+  }
+ ],
+ "monitoring_concepts": [
+  {
+   "text": "Reposition on a schedule set by mobility, skin and tissue tolerance, clinical condition, comfort and the support surface, not a fixed rule.",
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ],
+   "section": "monitoring"
+  }
+ ],
+ "escalation_concepts": [
+  {
+   "text": "Report new skin changes and device-related damage promptly.",
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ],
+   "section": "escalation"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S-INTL-PI-2026",
+   "read": "partial",
+   "use": "International Guideline 4th ed.: abridged Quick Reference Guide only"
+  }
+ ],
+ "required_sources": [
+  "Source explaining each listed monitored parameter in device-neutral terms",
+  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "Unit policy for this equipment"
+ ],
+ "gaps": [
+  "Parameter explanations are not written because no source read explains them.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+ ]
+}

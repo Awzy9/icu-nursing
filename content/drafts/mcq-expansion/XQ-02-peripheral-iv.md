@@ -14,10 +14,10 @@ independently_written_note: "Original wording written for this platform; stems, 
 
 ## 17. MCQs
 **Q1 (application).** A patient has a peripheral catheter covered by an opaque gauze dressing and has no complaints or signs of infection. How should you assess the site on your daily check?
-A. Remove the dressing every shift to inspect the skin, then apply a fresh one to keep the site clean and tidy.
-B. Skip the check until the patient complains of pain, because tenderness is the most reliable sign of trouble.
-C. Inspect the edge of the gauze and the tubing, since the skin under the dressing cannot be assessed at all.
-D. Palpate through the dressing for tenderness; leave the gauze unless there are signs of infection.
+A. Remove the dressing every shift to inspect the skin, then apply a fresh one to keep the site clean.
+B. Skip the check until the patient complains of pain, because tenderness is the sign to rely on.
+C. Inspect the edge of the gauze and the tubing, since the skin under it is hidden from view.
+D. Palpate through the dressing for tenderness and leave the gauze in place unless there are signs of infection.
 **Answer: D.**
 **Why correct:** CDC advises daily evaluation by palpation through the dressing, and says gauze and opaque dressings should not be removed if there are no clinical signs of infection.
 **Why not A:** Needless removal is not advised when there are no signs of infection.
@@ -50,10 +50,10 @@ D. Cover it with a bandage and elevate the leg so the site is protected from mov
 **Trace:** S-CDC-BSI-2011 — In adults use upper-extremity site; replace lower-extremity catheter as soon as possible (II).
 
 **Q4 (application).** After applying skin antiseptic to a patient's forearm, you want to feel for the vein once more before inserting a peripheral cannula. What should you do?
-A. Not palpate the site again unless aseptic technique is kept, for example with a sterile glove.
-B. Palpate with a clean bare finger, because the antiseptic has already killed the organisms on the skin surface.
-C. Palpate with a gloved hand once the antiseptic is fully dry, then insert straight away to save a little time.
-D. Apply more antiseptic after palpating and insert before it dries, which saves time during the procedure.
+A. Not palpate the site again unless aseptic technique is maintained, for example by using a sterile glove.
+B. Palpate with a clean bare finger, because the antiseptic has already killed the organisms on the skin.
+C. Palpate with a gloved hand once the antiseptic is fully dry, then insert straight away.
+D. Apply more antiseptic after palpating and insert before it dries to save time on the procedure.
 **Answer: A.**
 **Why correct:** CDC says palpation of the insertion site should not be performed after the application of antiseptic unless aseptic technique is maintained.
 **Why not B:** Touching the prepared site contaminates it, which is why the guideline restricts re-palpation.

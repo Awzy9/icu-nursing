@@ -106,20 +106,20 @@ A patient on a dopamine infusion has a falling urine output although blood press
 ## 17. MCQs
 **Q1 (understanding).** How does the Open RN textbook describe norepinephrine?
 A. A peripheral vasoconstrictor and inotropic stimulator of the heart used in patients with critically low blood pressure.
-B. A drug that lowers blood pressure by relaxing blood vessels in patients who have hypertension at presentation.
-C. A bronchodilator that acts only on the lungs and has no effect on the blood vessels or the heart.
-D. A drug used mainly as a nasal decongestant for symptom relief in patients with upper respiratory infections.
+B. A vasodilator that lowers blood pressure by relaxing the smooth muscle of the blood vessels in patients with severe hypertension.
+C. A bronchodilator that acts mainly on the airways and is used in patients with asthma.
+D. A diuretic that removes excess fluid and is used in patients with heart failure or kidney disease.
 **Answer: A.**
 **Why correct:** The textbook gives alpha-mediated vasoconstriction and beta-mediated inotropic action.
 **Why not B:** Norepinephrine raises blood pressure.
 **Why not C:** It acts on vessels and the heart.
-**Why not D:** That describes oral phenylephrine and pseudoephedrine.
+**Why not D:** It is a vasopressor, not a diuretic.
 
 **Q2 (application).** Which agent does SSC 2026 recommend as the first-line vasopressor in adults with septic shock?
-A. Dopamine, because the textbook says that in low doses it dilates the renal vasculature and protects the kidneys.
-B. Vasopressin, because it is the only agent on the page that has been given a strong recommendation as first line.
+A. Dopamine, which the textbook says dilates the renal vasculature at low doses and so protects the kidneys.
+B. Vasopressin as the first agent, with epinephrine added if the pressure stays low.
 C. Norepinephrine, with a strong recommendation over dopamine, epinephrine and selepressin.
-D. Terlipressin, because it acts for longer than other agents and so needs fewer adjustments of the infusion.
+D. Terlipressin, which acts for longer and needs fewer adjustments.
 **Answer: C.**
 **Why correct:** The page recommends norepinephrine over dopamine, epinephrine or selepressin (strong).
 **Why not A:** The page recommends norepinephrine over dopamine.
@@ -127,9 +127,9 @@ D. Terlipressin, because it acts for longer than other agents and so needs fewer
 **Why not D:** The page suggests against terlipressin.
 
 **Q3 (judgment).** A patient on dopamine has a falling urine output but a stable blood pressure. What does the textbook advise?
-A. Increase the infusion rate to improve renal perfusion, without informing the prescriber of the falling urine output.
-B. Stop the infusion immediately without telling the prescriber, because the drug seems to be harming the kidneys.
-C. Record it and recheck at the end of the shift, since urine output is not important when the pressure is stable.
+A. Increase the infusion rate to improve renal perfusion and watch the urine output.
+B. Stop the infusion and see whether the urine output recovers over the next hour.
+C. Record it and recheck at the end of the shift, since the blood pressure is stable.
 D. Notify the prescriber, because the dose may need to be reduced.
 **Answer: D.**
 **Why correct:** The dopamine grid says to notify the prescriber if urine output falls without hypotension.
@@ -138,10 +138,10 @@ D. Notify the prescriber, because the dose may need to be reduced.
 **Why not C:** The change needs reporting.
 
 **Q4 (safety).** Which monitoring does the textbook describe for a patient receiving dobutamine?
-A. Weekly blood tests, because the drug has effects that appear after several days of therapy.
+A. Weekly blood tests, because effects appear after several days of therapy.
 B. Continuous monitoring of the ECG, blood pressure, cardiac output and urine output during the whole therapy.
-C. Monitoring of the patient's body temperature, because temperature is the key sign of a drug reaction.
-D. No special monitoring is needed, because dobutamine is considered a low-risk drug by the textbook.
+C. Body temperature checks every few hours, since fever is the commonest reaction.
+D. No special monitoring beyond routine observations, since the infusion is short-term.
 **Answer: B.**
 **Why correct:** This is the dobutamine grid statement.
 **Why not A:** Weekly tests are not adequate for an acute infusion.
@@ -149,10 +149,10 @@ D. No special monitoring is needed, because dobutamine is considered a low-risk 
 **Why not D:** The drug can cause marked heart rate and pressure rises.
 
 **Q5 (application).** Which nursing check does the epinephrine grid specifically name for intravenous administration?
-A. Checking the patient's weight each hour, because weight changes show how much of the drug has been absorbed.
-B. Weighing the syringe before each use, because the textbook says the drug concentration must be confirmed by weight.
+A. Checking the patient's weight every hour to guide the infusion.
+B. Weighing the syringe before each use to confirm the concentration.
 C. Monitoring the IV site for extravasation while the drug is given by the intravenous route.
-D. Measuring the room temperature, because the drug is destroyed if the room is warmer than the recommended level.
+D. Measuring the room temperature while the drug is infusing.
 **Answer: C.**
 **Why correct:** The grid says to monitor the IV site for extravasation.
 **Why not A:** Hourly weights are not part of the epinephrine grid.
@@ -161,9 +161,9 @@ D. Measuring the room temperature, because the drug is destroyed if the room is 
 
 **Q6 (scope).** Which decision belongs to the prescriber, with pharmacist input, rather than the bedside nurse?
 A. Selecting the vasopressor and deciding to add a second agent.
-B. Checking the pump settings against the order each time a new syringe is connected to the infusion line.
-C. Recording limb colour, limb temperature and urine output at the intervals that the unit policy requires.
-D. Reporting a sudden fall in blood pressure to the prescriber immediately, together with the pump and line status.
+B. Checking the pump settings against the order when a new syringe is connected.
+C. Recording limb colour, limb temperature and urine output at the intervals the unit requires.
+D. Reporting a sudden fall in blood pressure to the prescriber with the pump and line status.
 **Answer: A.**
 **Why correct:** Choosing and adding agents is prescribing.
 **Why not B:** Checking is a nursing safety task.

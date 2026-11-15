@@ -27,9 +27,9 @@ D. Change the catheter and drainage bag for a new set to reduce the infection ri
 
 **Q2 (application).** You help a catheterised patient from bed to a chair. The drainage bag is hanging on the arm of the chair, level with his abdomen. What should you do?
 A. Leave the bag on the chair arm so urine can drain by gravity into the bag while he is seated.
-B. Rest the bag on the floor beside the chair so it hangs well below the bladder and cannot tip.
+B. Rest the bag on the floor beside the chair so it hangs well below the bladder and stays upright.
 C. Clamp the tubing for the time he is sitting so no urine reaches the bag and nothing can spill.
-D. Hang the bag below bladder level, off the floor, with the tubing free of kinks.
+D. Hang the bag below bladder level, off the floor, with the tubing free of kinks, before he sits.
 **Answer: D.**
 **Why correct:** The guideline says to keep the collecting bag below the level of the bladder at all times, not resting on the floor, and to keep the tubing free from kinks.
 **Why not A:** A bag at bladder level or higher allows urine to flow back toward the bladder.
@@ -50,10 +50,10 @@ D. Leave the junction open to drain into a clean container until the doctor arri
 **Trace:** N-CDC-CAUTI-2009 — If breaks in aseptic technique, disconnection or leakage occur, replace catheter and collecting system aseptically (IB).
 
 **Q4 (scope).** A colleague suggests inserting a catheter in a patient whose skin is intact but who is incontinent overnight, 'to save time on the night shift'. What is the best response?
-A. Agree, since a catheter is the safest way to keep a bed dry and it protects the skin from moisture.
-B. Explain that the guideline advises against catheters for incontinence, and discuss alternatives.
-C. Agree, provided the catheter is changed every few days so the infection risk stays low for him.
-D. Insert it only after asking the family for consent, since their consent makes the use appropriate.
+A. Agree, since a catheter is the safest way to keep a bed dry and protects the skin from moisture.
+B. Explain that the guideline advises against catheters for managing incontinence, and discuss alternatives with the team.
+C. Agree, provided the catheter is changed every few days so any infection risk stays low.
+D. Insert it after asking the family for consent, since consent makes the use appropriate.
 **Answer: B.**
 **Why correct:** The guideline says to avoid urinary catheters for managing incontinence, and lists external catheters as an option in suitable patients.
 **Why not A:** Convenience is not an appropriate indication, and the catheter itself adds infection risk.
@@ -74,10 +74,10 @@ D. Stop all cleaning of the area so the catheter site is never disturbed during 
 **Trace:** N-CDC-CAUTI-2009 — Do not clean periurethral area with antiseptics to prevent CAUTI while catheter in place; routine hygiene appropriate (IB).
 
 **Q6 (application).** On a busy shift a nurse empties four patients' catheter bags into one measuring jug, rinsing it only at the end. What is the issue?
-A. There is no issue, because the jug is rinsed afterwards and all four patients are on the same unit as each other.
-B. The main issue is the time spent, so empty the bags together and record one combined volume for the four patients.
-C. The jug is acceptable if the spigots touch the rim, since the rim is wiped between each of the patients.
-D. Empty each bag into a separate, clean container, avoiding splashing and spigot contact with the container.
+A. There is no issue, because the jug is rinsed afterwards and all four patients are on the same unit.
+B. The issue is the time spent, so empty the bags together and record one combined volume for all four.
+C. The jug is acceptable if the spigots touch the rim, since the rim is cleaned between patients.
+D. Each bag should be emptied into a separate, clean container, avoiding splashing and contact between the spigot and the container.
 **Answer: D.**
 **Why correct:** The guideline says to empty the bag regularly using a separate, clean collecting container for each patient and to prevent contact of the drainage spigot with the container.
 **Why not A:** A shared container can carry organisms between patients; rinsing at the end is not enough.

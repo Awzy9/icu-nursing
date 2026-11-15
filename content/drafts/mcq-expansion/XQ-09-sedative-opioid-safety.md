@@ -14,10 +14,10 @@ independently_written_note: "Original wording written for this platform; stems, 
 
 ## 17. MCQs
 **Q1 (safety).** Before giving intravenous midazolam to a patient for a procedure on the unit, what must be in place according to the label's boxed warning?
-A. Continuous respiratory and cardiac monitoring, resuscitation equipment and skilled airway staff.
-B. A signed consent form and a quiet room, because the drug is routine and carries a low risk to patients.
-C. A nurse checking the patient's colour every fifteen minutes during the whole of the recovery period.
-D. The patient's family at the bedside to watch for changes in alertness while the nurse is busy elsewhere.
+A. Continuous respiratory and cardiac monitoring, resuscitation equipment on hand, and skilled airway staff.
+B. A signed consent form and a quiet room, because the drug is routine and low risk.
+C. A nurse checking the patient's colour every fifteen minutes during the whole recovery period.
+D. The patient's family at the bedside to watch for changes in alertness while the nurse is busy.
 **Answer: A.**
 **Why correct:** The boxed warning says IV midazolam should be used only where continuous monitoring of respiratory and cardiac function is provided, with immediately available resuscitative drugs, equipment for bag-valve-mask ventilation and intubation, and personnel skilled in airway management.
 **Why not B:** Consent and a quiet room are not the safety measures the warning names.
@@ -38,10 +38,10 @@ D. It can cause profound sedation, respiratory depression, coma and death.
 **Trace:** L-FENTANYL, L-MORPHINE, L-MIDAZOLAM — Boxed warnings: concomitant opioids/benzodiazepines/CNS depressants.
 
 **Q3 (safety).** A nurse is about to draw a second dose from a propofol vial that was opened for a previous patient 'because there is plenty left'. What is the correct response?
-A. It is acceptable if the vial has been kept in the fridge and the stopper wiped with alcohol before use.
-B. It is acceptable on the same ward on the same day, because the emulsion stays sterile for a full shift.
-C. Do not use it: the label says vials are not accessed more than once or used on more than one person.
-D. It is acceptable if a new needle is used, since the needle is the main source of contamination here.
+A. It is acceptable if the vial has been kept in the fridge and the stopper wiped with alcohol.
+B. It is acceptable for the same ward and the same day, because the emulsion stays sterile for a full shift.
+C. Do not use it: the label says vials are not accessed more than once or used on more than one person, and unused product is discarded.
+D. It is acceptable if a new needle is used, since the needle is the main source of contamination.
 **Answer: C.**
 **Why correct:** The label states strict aseptic technique must be maintained, vials are never to be accessed more than once or used on more than one person, and unused drug product should be discarded.
 **Why not A:** The label does not allow reuse for another patient under any storage.
@@ -62,10 +62,10 @@ D. Stop monitoring the heart rhythm to avoid false alarms while the patient is s
 **Trace:** L-DEXMEDETOMIDINE — Label: continuous monitoring; hypotension, bradycardia and sinus arrest.
 
 **Q5 (application).** An elderly, frail patient with chronic lung disease has just received a morphine dose. Which preparation does the label support?
-A. Close respiratory monitoring, with naloxone and resuscitation equipment immediately available.
-B. Routine observations once a shift, because morphine is a very familiar drug on the unit for the staff.
-C. Keep the patient flat and covered so that they sleep more soundly after the dose has been given to them.
-D. Give a second sedative with it to prevent any restlessness after the pain has gone from the patient.
+A. Close respiratory monitoring, and naloxone and resuscitation equipment immediately available.
+B. Routine observations once a shift, because morphine is a very familiar drug on the unit.
+C. Keep the patient flat and covered so they sleep more soundly after the dose.
+D. Give a second sedative with it to prevent any restlessness after the pain has gone.
 **Answer: A.**
 **Why correct:** The label warns of life-threatening respiratory depression in patients with chronic pulmonary disease or the elderly, cachectic or debilitated and advises close monitoring, and has naloxone and resuscitative equipment immediately available where cardiovascular instability is a risk.
 **Why not B:** Familiarity does not lower the risk in this patient.

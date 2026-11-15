@@ -13,7 +13,7 @@ MD-11,Ketamine,sedatives-analgesics,False,L-KETAMINE,8,1,4,5,3,3
 MD-12,Rocuronium,neuromuscular-blockers,False,L-ROCURONIUM,8,1,4,5,3,3
 MD-13,Cisatracurium,neuromuscular-blockers,False,L-CISATRACURIUM,6,1,4,5,3,3
 MD-14,Heparin,anticoagulants-hemostasis,True,L-HEPARIN,9,1,3,5,4,3
-MD-15,Insulin (intravenous),insulin-electrolytes-fluids,True,L-INSULIN,8,1,3,5,4,3
+MD-15,Insulin (intravenous),insulin-electrolytes-fluids,True,L-INSULIN,8,1,3,8,7,3
 MD-16,Amiodarone,antiarrhythmics-cardiac,False,L-AMIODARONE,6,1,4,5,3,3
 MD-17,Adenosine,antiarrhythmics-cardiac,False,L-ADENOSINE,7,1,4,5,3,3
 MD-18,Magnesium sulfate,insulin-electrolytes-fluids,False,L-MAGNESIUM,5,1,4,5,3,3

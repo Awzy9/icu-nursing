@@ -55,7 +55,8 @@
     "questionBank": "Question bank",
     "study": "Study",
     "cases": "Cases",
-    "learn": "Learn"
+    "learn": "Learn",
+    "equipment": "Equipment and monitoring"
   },
   "ComingSoon": {
     "title": "{feature} — coming in a later phase",
@@ -806,5 +807,42 @@
     "hubTitle": "Medications",
     "hubBody": "Nursing reference for ICU medications, without dosing.",
     "hubStat": "{n, plural, one {# entry available} other {# entries available}}"
+  },
+  "Equipment": {
+    "title": "Equipment and monitoring",
+    "intro": "Learn what bedside equipment shows, how to read the trace or number safely, and when to escalate. Explore each device with a labelled diagram and a text description.",
+    "fixturesBanner": "SYNTHETIC DEVELOPMENT FIXTURES. Every module here is a nonclinical sample about a fictional device, written to test the software. None of it is ICU content. Real equipment content is held in unpublished drafts.",
+    "notice": "Self-study only. These diagrams are original generic schematics, not a copy of any manufacturer's screen, alarm table or manual. Always follow your unit's policy and the manual for the device you are using. Progress and bookmarks are saved on this device only.",
+    "disabledTitle": "Equipment learning is not available",
+    "disabledBody": "Sample modules are switched off in this environment, and no reviewed equipment content has been published yet.",
+    "syntheticBadge": "Synthetic sample",
+    "bookmarked": "Bookmarked",
+    "bookmark": "Bookmark this module",
+    "bookmarkedButton": "Bookmarked",
+    "onlyBookmarked": "Show bookmarked only",
+    "noBookmarks": "No modules match. Bookmark a module to find it here.",
+    "explored": "Explored",
+    "partsDone": "{done} of {total} parts viewed",
+    "stats": "{done} of {total} modules fully explored · {bm} bookmarked",
+    "view": "View module",
+    "back": "Back to equipment",
+    "partsHeading": "Parts of the diagram",
+    "partsHint": "Choose a part to read about it. The explanation appears below the list.",
+    "selectPart": "Choose a part to see what it does.",
+    "viewed": "Viewed",
+    "progress": "{done} of {total} parts viewed",
+    "parametersHeading": "What is measured or shown",
+    "safetyHeading": "Safety concepts",
+    "escalationHeading": "When and how to escalate",
+    "categories": {
+      "monitors-alarms": "Bedside monitors and alarms",
+      "ventilator-waveforms": "Ventilator controls and waveforms",
+      "arterial-pressure": "Arterial pressure monitoring systems",
+      "infusion-pumps": "Infusion pumps",
+      "defibrillators": "Defibrillators",
+      "crrt-systems": "CRRT systems",
+      "enteral-feeding-pumps": "Enteral feeding pumps",
+      "pressure-relieving-equipment": "Pressure-relieving equipment"
+    }
   }
 }

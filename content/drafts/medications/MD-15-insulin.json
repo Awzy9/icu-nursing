@@ -14,7 +14,7 @@
  "high_alert_note": "Named among the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
  "summary": "Short-acting human insulin product for intravenous use to improve glycaemic control in adults and children with diabetes. The label read is a specific premixed intravenous product; other insulin products differ. Nursing focus: hypoglycaemia, hypokalaemia and glucose monitoring.",
  "batch": 2,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Guideline-based monitoring statements added in Phase 9 come from UK national guidelines (UKKA July 2026 and JBDS January 2020), read in part only, for adults in UK hospitals; they are marked partial and do not replace the unit's protocol.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",
@@ -35,6 +35,16 @@
    "id": "S-AHRQ-TS",
    "read": "partial",
    "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "N-UKKA-HK-2026-07",
+   "read": "partial",
+   "use": "UKKA acute hyperkalaemia guideline (July 2026): glucose and potassium monitoring after insulin-glucose"
+  },
+  {
+   "id": "N-JBDS-HYPO-2020",
+   "read": "partial",
+   "use": "JBDS inpatient hypoglycaemia guideline (January 2020): treat as an emergency, do not omit later insulin without review"
   }
  ],
  "sections": {
@@ -205,6 +215,33 @@
    "critical": false,
    "support": "local_protocol",
    "sources": []
+  },
+  {
+   "kind": "laboratory",
+   "text": "After insulin is given with glucose to lower a high potassium, check blood glucose at regular intervals for at least six hours, longer in patients at high risk of late hypoglycaemia (UKKA, UK adults).",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-UKKA-HK-2026-07"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "Follow potassium results closely after treatment for a rebound once the first effect wears off (UKKA, UK adults).",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-UKKA-HK-2026-07"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Treat a low blood glucose as an emergency whatever the level of consciousness; ask the prescriber to review insulin doses instead of omitting later doses on your own (JBDS 2020, UK adults with diabetes).",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-JBDS-HYPO-2020"
+   ]
   }
  ],
  "gaps": [
@@ -214,6 +251,7 @@
  ],
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
+  "FDA infusion pump page: verify reuse terms.",
+  "UKKA and JBDS guidelines: no reuse statement found in the text read; paraphrase only and verify."
  ]
 }

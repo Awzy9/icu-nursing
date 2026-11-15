@@ -34,9 +34,9 @@
    "use": "arterial pressure monitoring system statements"
   },
   {
-   "id": "S-SSC-2021",
+   "id": "S-ESICM-SHOCK-2014",
    "read": "full",
-   "use": "arterial catheter rationale (superseded)"
+   "use": "haemodynamic monitoring consensus (dated): monitoring items"
   },
   {
    "id": "L-PHENYLEPHRINE",
@@ -46,12 +46,12 @@
  ],
  "expected_actions": [
   {
-   "text": "When an arterial pressure reading is unexpected, assess the patient and compare with a cuff reading before acting, then check the system and escalate if it cannot be corrected.",
+   "text": "When an arterial pressure reading or waveform looks implausible, assess the patient and check the monitoring system (flush system, connections, insertion site, limb perfusion), and escalate if the waveform cannot be corrected.",
    "scope": "assessment",
    "support": "partial",
    "sources": [
-    "S-CDC-BSI-2011",
-    "S-SSC-2021"
+    "S-ESICM-SHOCK-2014",
+    "S-CDC-BSI-2011"
    ]
   },
   {
@@ -70,7 +70,7 @@
  "gaps": [
   "No published clinical scenario may exist until the review phase: this is a specification only.",
   "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Causes and treatment of acute hypotension are not drawn from a source read."
+  "Causes and treatment of acute hypotension are not drawn from a source read, and no source read supports comparing an arterial reading with a cuff reading, so that step is deliberately absent."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."

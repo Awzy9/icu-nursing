@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { loadMedicationDrafts, loadMedicationLabels, loadMedicationPlan } from "../../scripts/validate-medication-drafts";
+import { loadGuidelineSources, loadMedicationDrafts, loadMedicationLabels, loadMedicationPlan } from "../../scripts/validate-medication-drafts";
 import { validateMedicationDraft, validateMedicationSet, type MedicationDraft } from "@/lib/medication-draft-validator";
 
 const plan = loadMedicationPlan();
-const known = new Set([...loadMedicationLabels(), "S-FDA-PUMP", "S-AHRQ-TS"]);
+const known = new Set([...loadMedicationLabels(), ...loadGuidelineSources(), "S-FDA-PUMP", "S-AHRQ-TS"]);
 const drafts = loadMedicationDrafts();
 const clone = (d: MedicationDraft): MedicationDraft => JSON.parse(JSON.stringify(d));
 const rules = (d: MedicationDraft) => validateMedicationDraft(d, known, plan).map((i) => i.rule);

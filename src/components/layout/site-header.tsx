@@ -15,7 +15,7 @@ export async function SiteHeader() {
   const roles = user ? await getRoles(user.id) : [];
   const isStaff = roles.some((r) => STAFF_ROLES.includes(r));
 
-  const primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/learn", label: t("learn") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }, { href: "/skills", label: t("skills") }, { href: "/medications", label: t("medications") }];
+  const primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/learn", label: t("learn") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }, { href: "/skills", label: t("skills") }, { href: "/equipment", label: t("equipment") }, { href: "/medications", label: t("medications") }];
   if (user) primary.push({ href: "/dashboard", label: t("dashboard") }, { href: "/bookmarks", label: t("bookmarks") });
   if (isStaff) primary.push({ href: "/admin", label: t("admin") });
   const future: NavLink[] = FUTURE_FEATURES.map((f) => ({ href: `/coming-soon/${f}`, label: t(f), soon: true }));

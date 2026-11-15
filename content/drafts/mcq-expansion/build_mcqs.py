@@ -235,8 +235,7 @@ for _s in SETS:
         _q=_s["qs"][_n-1]
         if "stem" in _o: _q["stem"]=_o["stem"]
         if "correct" in _o: _q["correct"]=_o["correct"]
-        if "ds" in _o:
-            assert len(_o["ds"])==3; _q["ds"]=[(t,w) for t,(_,w) in zip(_o["ds"],_q["ds"])]
+        for _i,_t in _o.get("ds",{}).items(): _q["ds"][_i]=(_t,_q["ds"][_i][1])
 
 def render(s,start):
     n=start; out=[]

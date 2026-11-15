@@ -1,0 +1,140 @@
+{
+ "equipment_id": "EQ-06",
+ "number": 6,
+ "title": "CRRT systems",
+ "category": "crrt-systems",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+ "device_neutral": false,
+ "manufacturer_documents": [
+  {
+   "source_id": "N-AHS-CRRT-ALARM-2025",
+   "device": "Alberta Health Services CRRT alarm pathway for one machine family (PrisMax); applies to that family only"
+  }
+ ],
+ "related_skill": "SK-17",
+ "evidence_status": "partial",
+ "diagram": {
+  "kind": "loop",
+  "original_graphic": true,
+  "parts": [
+   "Access line",
+   "Blood pump and filter",
+   "Return line",
+   "Pressure sensors"
+  ],
+  "alt_text_needed": true
+ },
+ "parameters": [
+  {
+   "name": "Access and return pressures",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Blood flow",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Delivered dose against prescription",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Alarm state",
+   "explanation": null,
+   "support": "needs_source"
+  }
+ ],
+ "safety_concepts": [
+  {
+   "text": "Check the patient first, and review and address the alarm on the screen before clearing it; the alarm off, disable and override buttons decrease alarm sensitivity.",
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "On the device described, the blood pump stops with high-priority (flashing red) alarms; other devices differ.",
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "Confirm the chest radiograph required after internal jugular or subclavian catheter placement has been done and reviewed before first use (KDIGO).",
+   "support": "partial",
+   "sources": [
+    "S-KDIGO-AKI-2012"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "If heparin-induced thrombocytopenia is suspected or confirmed, all heparin must stop and the prescriber is told immediately (extent in flushes is local policy).",
+   "support": "partial",
+   "sources": [
+    "S-KDIGO-AKI-2012"
+   ],
+   "section": "safety"
+  }
+ ],
+ "monitoring_concepts": [
+  {
+   "text": "Monitor haemodynamics, temperature, fluid balance, electrolytes, acid-base results and bleeding.",
+   "support": "partial",
+   "sources": [
+    "S-KDIGO-AKI-2012"
+   ],
+   "section": "monitoring"
+  }
+ ],
+ "escalation_concepts": [
+  {
+   "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025"
+   ],
+   "section": "escalation"
+  },
+  {
+   "text": "Report bleeding, suspected HIT, access problems, haemodynamic instability and interruptions.",
+   "support": "partial",
+   "sources": [
+    "S-KDIGO-AKI-2012"
+   ],
+   "section": "escalation"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S-KDIGO-AKI-2012",
+   "read": "partial",
+   "use": "KDIGO 2012: prescribing guideline; summary of Section 5 statements read"
+  },
+  {
+   "id": "N-AHS-CRRT-ALARM-2025",
+   "read": "full",
+   "use": "AHS Dialyzing Wisely CRRT alarm pathway (Jan 2025), device-specific (PrisMax), read in full"
+  }
+ ],
+ "required_sources": [
+  "Source explaining each listed monitored parameter in device-neutral terms",
+  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "Unit policy for this equipment"
+ ],
+ "gaps": [
+  "Parameter explanations are not written because no source read explains them.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "equipment_id": "EQ-03",
+ "number": 3,
+ "title": "Arterial pressure monitoring systems",
+ "category": "arterial-pressure",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+ "device_neutral": true,
+ "manufacturer_documents": [],
+ "related_skill": "SK-01",
+ "evidence_status": "partial",
+ "diagram": {
+  "kind": "flow",
+  "original_graphic": true,
+  "parts": [
+   "Catheter",
+   "Tubing and transducer",
+   "Zero reference",
+   "Display"
+  ],
+  "alt_text_needed": true
+ },
+ "parameters": [
+  {
+   "name": "Arterial pressure value",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Arterial waveform",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Zero and levelling",
+   "explanation": null,
+   "support": "needs_source"
+  }
+ ],
+ "safety_concepts": [
+  {
+   "text": "Keep all components of the pressure-monitoring system sterile (CDC Category IA).",
+   "support": "sourced",
+   "sources": [
+    "S-CDC-BSI-2011"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "Do not give dextrose-containing solutions or parenteral nutrition through the pressure-monitoring circuit (CDC IA).",
+   "support": "sourced",
+   "sources": [
+    "S-CDC-BSI-2011"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "Scrub the diaphragm with an appropriate antiseptic before accessing the system through a diaphragm (CDC IA).",
+   "support": "sourced",
+   "sources": [
+    "S-CDC-BSI-2011"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "Prefer a closed continuous-flush system and minimise manipulations and entries (CDC Category II).",
+   "support": "sourced",
+   "sources": [
+    "S-CDC-BSI-2011"
+   ],
+   "section": "safety"
+  }
+ ],
+ "monitoring_concepts": [
+  {
+   "text": "Arterial pressure and waveform, heart rate, limb perfusion, insertion site, flush system, alarms and line days.",
+   "support": "partial",
+   "sources": [
+    "S-ESICM-SHOCK-2014"
+   ],
+   "section": "monitoring"
+  }
+ ],
+ "escalation_concepts": [
+  {
+   "text": "Escalate immediately for bleeding or disconnection (apply pressure and call for help), a cold, pale or painful limb, a lost or implausible waveform that cannot be corrected, signs of infection or suspected injection into the line.",
+   "support": "partial",
+   "sources": [
+    "S-CDC-BSI-2011",
+    "S-SSC-2021"
+   ],
+   "section": "escalation"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S-CDC-BSI-2011",
+   "read": "full",
+   "use": "infection-prevention recommendations for pressure-monitoring systems (2011, last update 2017)"
+  },
+  {
+   "id": "S-ESICM-SHOCK-2014",
+   "read": "full",
+   "use": "indication in shock (dated)"
+  },
+  {
+   "id": "S-SSC-2021",
+   "read": "full",
+   "use": "complication rates (superseded edition)"
+  }
+ ],
+ "required_sources": [
+  "Source explaining each listed monitored parameter in device-neutral terms",
+  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "Unit policy for this equipment"
+ ],
+ "gaps": [
+  "Parameter explanations are not written because no source read explains them.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+ ]
+}

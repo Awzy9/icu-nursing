@@ -38,10 +38,10 @@ D. Flush the connector with sterile water first, which removes any organisms fro
 **Trace:** S-CDC-BSI-2011, S-SHEA-CLABSI-2022 — Disinfect hubs, connectors and ports before every access (IA).
 
 **Q3 (judgment).** A nurse wants to put antibiotic ointment on a central line insertion site 'to be extra safe' for a patient who is not on dialysis. What should you tell them?
-A. CDC advises against antibiotic ointments or creams at insertion sites, except for dialysis catheters.
+A. CDC advises against topical antibiotic ointments or creams at insertion sites, except for dialysis catheters.
 B. It is a good idea, because ointment adds a barrier that lowers the chance of bacteria reaching the skin.
-C. It is acceptable if only a thin film is used and the site is cleaned at every dressing change by the staff.
-D. It is acceptable for patients with fever, because fever suggests the insertion site may be colonised already.
+C. It is acceptable if a thin film is used and the site is cleaned at every dressing change.
+D. It is acceptable for patients with fever, because fever suggests the site may be colonised.
 **Answer: A.**
 **Why correct:** CDC says not to use topical antibiotic ointment or creams on insertion sites except for dialysis catheters, because they may promote fungal infections and resistance.
 **Why not B:** This is the practice the guideline advises against.
@@ -50,10 +50,10 @@ D. It is acceptable for patients with fever, because fever suggests the insertio
 **Trace:** S-CDC-BSI-2011 — Do not use topical antibiotic ointment on insertion sites except dialysis catheters (IB).
 
 **Q4 (application).** A patient with a central line asks to shower. Which advice fits the CDC guideline?
-A. No water contact is allowed for as long as the line stays in place, so offer a bed bath for the whole time.
-B. Showering is fine without a cover if the dressing is a transparent one and the shower is kept quite short.
-C. A bath is fine as long as the line site stays above the water level for most of the time he is in the bath.
-D. Allow a shower if the catheter and connection are covered with an impermeable cover; no submersion.
+A. Water contact is not allowed for as long as the line is in place, so offer a bed bath.
+B. Showering is fine without cover if the dressing is a transparent one and the shower is short.
+C. A bath is fine as long as the line site stays above the water level for most of the time.
+D. Showering can be allowed if the catheter and connecting device are protected with an impermeable cover, but the site must not be submerged.
 **Answer: D.**
 **Why correct:** CDC says not to submerge the catheter or site in water, and that showering is permitted if precautions reduce the chance of introducing organisms, such as an impermeable cover.
 **Why not A:** The guideline allows showering with precautions.
@@ -62,10 +62,10 @@ D. Allow a shower if the catheter and connection are covered with an impermeable
 **Trace:** S-CDC-BSI-2011 — Do not submerge catheter/site; showering permitted with protection (IB).
 
 **Q5 (monitoring).** A patient has a short-term central line with a transparent dressing labelled eight days ago that still looks intact. How should the nurse act?
-A. Leave it, because an intact dressing does not need to be changed until it becomes damp, loosened or soiled.
-B. Change it if the patient develops a fever, because fever is the signal that someone should look at the site.
-C. Recognise that transparent dressings on short-term lines are usually changed at least weekly; follow unit policy.
-D. Replace the label and the tape so that the dressing stays in place and the date on it looks current again.
+A. Leave it, because an intact dressing does not need changing until it becomes damp or soiled.
+B. Change it if the patient develops a fever, because fever is the signal to look at the site.
+C. Recognise that the usual interval for transparent dressings on short-term lines is at least weekly and follow your unit's interval.
+D. Replace the label and the tape so the dressing stays in place and the date looks current.
 **Answer: C.**
 **Why correct:** CDC advises replacing transparent dressings on short-term CVC sites at least every 7 days (Category IB), with exceptions in children; local policy sets the exact interval.
 **Why not A:** An interval applies even when the dressing looks intact.

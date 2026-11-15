@@ -1,0 +1,96 @@
+{
+ "equipment_id": "EQ-01",
+ "number": 1,
+ "title": "Bedside monitors and alarms",
+ "category": "monitors-alarms",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+ "device_neutral": true,
+ "manufacturer_documents": [],
+ "related_skill": "SK-18",
+ "evidence_status": "partial",
+ "diagram": {
+  "kind": "loop",
+  "original_graphic": true,
+  "parts": [
+   "Sensor",
+   "Display",
+   "Alarm limits",
+   "Alarm signal"
+  ],
+  "alt_text_needed": true
+ },
+ "parameters": [
+  {
+   "name": "Heart rhythm trace",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Heart rate",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Oxygen saturation",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Alarm priority",
+   "explanation": null,
+   "support": "needs_source"
+  }
+ ],
+ "safety_concepts": [
+  {
+   "text": "Verify an alarm or unusual rhythm at the bedside before acting; check the patient first.",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-ADV-C7"
+   ],
+   "section": "safety"
+  }
+ ],
+ "monitoring_concepts": [
+  {
+   "text": "Observe the rhythm and print a 6-second strip as the checklist describes; compare with the patient.",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-ADV-C7"
+   ],
+   "section": "monitoring"
+  }
+ ],
+ "escalation_concepts": [
+  {
+   "text": "Know the emergency rhythms and call for help per unit protocol; thresholds follow the resuscitation policy.",
+   "support": "local_protocol",
+   "sources": [],
+   "section": "escalation"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S-OPENRN-ADV-C7",
+   "read": "partial",
+   "use": "Open RN Advanced Skills ch. 7 telemetry checklist (CC BY text; check image licences)"
+  }
+ ],
+ "required_sources": [
+  "Source explaining each listed monitored parameter in device-neutral terms",
+  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "Unit policy for this equipment"
+ ],
+ "gaps": [
+  "Parameter explanations are not written because no source read explains them.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+ ]
+}
