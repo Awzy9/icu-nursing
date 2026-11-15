@@ -4,11 +4,13 @@ import path from "node:path";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { PROJECT_URL, REF, sql } from "../../scripts/live/mgmt";
 import { adminAuth, createTestUser, deleteTestUser } from "../../scripts/live/admin";
+import { ISOLATED, requireIsolated } from "../../scripts/live/target";
 
 import { api, refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
 export { sql, adminAuth, api, PROJECT_URL, REF, refuseCaptchaWeakeningOnDev };
 
 function loadEnv() {
+  if (ISOLATED) return { NEXT_PUBLIC_SUPABASE_URL: PROJECT_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.LIVE_ANON_KEY ?? "" } as Record<string, string>;
   const env: Record<string, string> = {};
   for (const line of readFileSync(path.resolve(__dirname, "../../.env.local"), "utf8").split("\n")) {
     const m = /^([A-Z_]+)=(.*)$/.exec(line.trim());
@@ -33,6 +35,7 @@ export function rawClient(): SupabaseClient {
 }
 
 export function newClient(storage?: Record<string, string>): SupabaseClient {
+  requireIsolated("send the Cloudflare test CAPTCHA token"); // test tokens are for the isolated CI stack only
   const memory: Record<string, string> = storage ?? {};
   const c = createClient(PROJECT_URL, KEY, {
     auth: {

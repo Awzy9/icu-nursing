@@ -1,0 +1,87 @@
+name: Isolated Supabase live tests
+# Runs the live API suite (tests/live) and the live UI suite (tests/live-e2e/ui.live.spec.ts) against a LOCAL Supabase stack
+# started by the Supabase CLI inside this job (Docker). Cloudflare's public TEST keys exist only in this job's environment.
+# No hosted project, no real Turnstile secret and no repository secret is used or needed.
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: isolated-supabase-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  isolated-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      LIVE_TARGET: isolated
+      # Cloudflare PUBLIC test keys (documented at developers.cloudflare.com/turnstile/troubleshooting/testing). Not secrets.
+      SUPABASE_AUTH_CAPTCHA_SECRET: "1x0000000000000000000000000000000AA"
+      NEXT_PUBLIC_TURNSTILE_SITE_KEY: "1x00000000000000000000AA"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - uses: supabase/setup-cli@v1
+        with: { version: latest }
+      - name: Configure the CI copy of the local stack (CAPTCHA on with the TEST secret, relaxed rate limits)
+        run: |
+          sed -i 's/email_sent = 4/email_sent = 1000/; s/sign_in_sign_ups = 30/sign_in_sign_ups = 1000/' supabase/config.toml
+          sed -i 's#^additional_redirect_urls = .*#additional_redirect_urls = ["http://localhost:3000/auth/callback", "http://localhost:3100/auth/callback", "http://127.0.0.1:3100/auth/callback"]#' supabase/config.toml
+          sed -i 's#^site_url = .*#site_url = "http://localhost:3100"#' supabase/config.toml
+          cat >> supabase/config.toml <<'TOML'
+
+          [auth.captcha]
+          enabled = true
+          provider = "turnstile"
+          secret = "env(SUPABASE_AUTH_CAPTCHA_SECRET)"
+          TOML
+          grep -n "captcha" -A4 supabase/config.toml
+      - name: Start the local Supabase stack
+        run: supabase start -x studio,imgproxy,edge-runtime,logflare,vector,supavisor,postgres-meta
+      - name: Export isolated target (loopback only)
+        run: |
+          supabase status -o env > "$RUNNER_TEMP/sb.env"
+          get() { grep "^$1=" "$RUNNER_TEMP/sb.env" | cut -d= -f2- | tr -d '"'; }
+          {
+            echo "LIVE_SUPABASE_URL=$(get API_URL)"
+            echo "LIVE_ANON_KEY=$(get ANON_KEY)"
+            echo "LIVE_SERVICE_ROLE_KEY=$(get SERVICE_ROLE_KEY)"
+            echo "LIVE_DB_URL=$(get DB_URL)"
+            echo "LIVE_MAIL_URL=http://127.0.0.1:54324"
+          } >> "$GITHUB_ENV"
+          echo "target: $(get API_URL)"
+      - name: Guard unit tests (allow-list)
+        run: npx vitest run tests/unit/live-guard.test.ts
+      - name: Live API suite (50 workflow tests + isolated transport/auth tests)
+        run: npx vitest run --config vitest.live.config.ts --reporter=verbose
+      - name: Build the app against the local stack
+        run: npm run build:live
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ env.LIVE_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ env.LIVE_ANON_KEY }}
+      - run: npx playwright install --with-deps chromium
+      - name: Live UI suite (11 tests)
+        run: npx playwright test --config playwright.live.config.ts tests/live-e2e/ui.live.spec.ts
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ env.LIVE_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ env.LIVE_ANON_KEY }}
+      - name: Collect diagnostics on failure
+        if: failure()
+        run: |
+          mkdir -p diag
+          for c in $(docker ps -a --format '{{.Names}}' | grep '^supabase_'); do docker logs --tail 300 "$c" > "diag/$c.log" 2>&1 || true; done
+          supabase status > diag/status.txt 2>&1 || true
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: isolated-live-diagnostics
+          path: |
+            diag
+            test-results
+          if-no-files-found: ignore
+      - name: Stop the stack
+        if: always()
+        run: supabase stop --no-backup

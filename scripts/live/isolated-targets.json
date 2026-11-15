@@ -1,0 +1,6 @@
+{
+  "_comment": "Explicit allow-list of the ONLY targets that may receive Cloudflare TEST keys / always-pass CAPTCHA secrets: the local Supabase stack started by `supabase start` inside an isolated CI job. Hosted projects (including icu-nursing-dev) must never appear here.",
+  "api": ["http://127.0.0.1:54321", "http://localhost:54321"],
+  "db": ["postgresql://postgres:postgres@127.0.0.1:54322/postgres", "postgresql://postgres:postgres@localhost:54322/postgres"],
+  "captchaTestSecrets": ["1x0000000000000000000000000000000AA", "2x0000000000000000000000000000000AA", "3x0000000000000000000000000000000AA"]
+}

@@ -18,6 +18,8 @@ export default defineConfig({
     url: `http://localhost:${port}/api/health`,
     reuseExistingServer: false,
     timeout: 120_000,
-    env: { NEXT_DIST_DIR: ".next-live", NODE_USE_ENV_PROXY: "1", NODE_EXTRA_CA_CERTS: process.env.NODE_EXTRA_CA_CERTS ?? "/root/.ccr/ca-bundle.crt" },
+    env: process.env.LIVE_TARGET === "isolated"
+      ? { NEXT_DIST_DIR: ".next-live" } // isolated CI: local stack, no proxy
+      : { NEXT_DIST_DIR: ".next-live", NODE_USE_ENV_PROXY: "1", NODE_EXTRA_CA_CERTS: process.env.NODE_EXTRA_CA_CERTS ?? "/root/.ccr/ca-bundle.crt" },
   },
 });
