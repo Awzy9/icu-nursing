@@ -41,6 +41,12 @@ async function answer(page: Page, right: boolean) {
   await page.getByRole("button", { name: "Submit answer" }).click();
   await page.getByText("Why this is the correct answer").first().waitFor();
 }
+async function waitResults(page: Page) {
+  try { await page.waitForURL(/results$/); } catch (e) {
+    console.log("DEBUG url:", page.url(), "\nDEBUG main:", ((await page.locator("main").innerText().catch(() => "")) || "").slice(0, 500).replace(/\n+/g, " | "));
+    throw e;
+  }
+}
 const overflow = (page: Page) => page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
 const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze()).violations.filter((v) => v.impact === "serious" || v.impact === "critical").map((v) => v.id);
 
@@ -51,6 +57,7 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
   const mk = async (l: string) => { const email = `live-test-${stamp}-${l}@example.org`; const u = await createTestUser(email, PW, `LIVE TEST ${l} (temporary check account)`); ids.push(u.id); return { email, id: u.id }; };
   const A = await mk("app-a"), B = await mk("app-b");
   const browser = await chromium.launch({ executablePath: process.env.PW_CHROMIUM_PATH || undefined });
+  const newCtx = async (o: Parameters<typeof browser.newContext>[0]) => { const c = await browser.newContext(o); c.setDefaultTimeout(60_000); c.setDefaultNavigationTimeout(60_000); return c; }; // the hosted project adds latency
   try {
     // ---- real sessions + raw PostgREST on the hosted dev project -------------------------------------------------------
     const anon = await publishableKey();
@@ -77,7 +84,7 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
     check("[PostgREST dev] anonymous learner functions denied", [401, 403].includes((await fetch(`${PROJECT_URL}/rest/v1/rpc/qb_progress`, { method: "POST", headers: { apikey: anon, Authorization: `Bearer ${anon}`, "Content-Type": "application/json" }, body: "{}" })).status));
 
     // ---- the built app, signed in as learner A ----------------------------------------------------------------------------
-    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const ctx = await newCtx({ viewport: { width: 1280, height: 900 } });
     const p = await ctx.newPage();
     const bodies: string[] = [];
     p.on("response", async (r) => { if (/html|json|x-component|text/.test(r.headers()["content-type"] ?? "")) bodies.push(await r.text().catch(() => "")); });
@@ -99,8 +106,17 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
     await answer(p, true);
     await p.getByRole("button", { name: "Finish and see results" }).click();
     await p.getByRole("button", { name: "Yes, submit" }).click();
-    await p.waitForURL(/results$/);
+    await waitResults(p);
     check("[app dev] practice summary: server score 1 of 5 = 20.0%", (await p.getByTestId("score").textContent()) === "20.0%" && (await p.getByTestId("score-detail").textContent()) === "1 of 5 correct");
+    // study right after the practice attempt: the wrong answer is due now and counted as incorrect
+    await p.goto(`${BASE}/en/study`);
+    await p.getByRole("heading", { level: 1, name: "Study and revision" }).waitFor();
+    const due = Number(await p.getByTestId("due-count").textContent()), inc = Number(await p.getByTestId("count-incorrect").textContent());
+    check("[app dev] study dashboard: due and incorrect counters reflect the persisted wrong answer", due >= 1 && inc >= 1, `due=${due} incorrect=${inc}`);
+    await p.getByRole("button", { name: /Review due questions/ }).click();
+    await p.waitForURL(/attempt\//);
+    await p.getByRole("heading", { level: 2, name: /^Question 1 of/ }).waitFor();
+    check("[app dev] study: 'due' revision starts a practice attempt over exactly the due questions", (await p.getByRole("heading", { level: 2, name: new RegExp(`^Question 1 of ${due}$`) }).count()) === 1);
     // exam
     await p.goto(`${BASE}/en/question-bank`);
     await p.locator("input[name=mode][value=exam]").check();
@@ -120,27 +136,26 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
     await p.screenshot({ path: SHOTS + "dev-3-exam-question.png", fullPage: true });
     await p.goto(`${BASE}/en/question-bank`);
     await p.locator(`a[href$="${new URL(examUrl).pathname.replace(/^\/(en|ar)/, "")}"], a[href="${new URL(examUrl).pathname}"]`).first().click();
-    check("[app dev] exam resumes at the saved question with the saved answer and flag", p.url() === examUrl && (await p.getByRole("heading", { level: 2, name: "Question 2 of 5" }).count()) === 1 && (await p.getByRole("button", { name: "Remove flag" }).count()) === 1);
+    await p.getByRole("heading", { level: 2, name: /^Question \d of 5$/ }).waitFor();
+    const head = await p.getByRole("heading", { level: 2, name: /^Question \d of 5$/ }).textContent();
+    check("[app dev] exam resumes at the saved question with the saved flag", p.url() === examUrl && head === "Question 2 of 5" && (await p.getByRole("button", { name: "Remove flag" }).count()) === 1, `url ok=${p.url() === examUrl} heading=${head}`);
     await p.getByRole("button", { name: "Submit exam" }).click();
     await p.getByRole("button", { name: "Yes, submit" }).click();
-    await p.waitForURL(/results$/);
+    await waitResults(p);
     check("[app dev] exam scored on the server: 1 of 5 = 20.0%, review shows explanations", (await p.getByTestId("score").textContent()) === "20.0%" && (await p.getByText("Why this is the correct answer").count()) > 0);
     await p.screenshot({ path: SHOTS + "dev-4-exam-results.png", fullPage: true });
-    // study
+    // study (history after both attempts)
     await p.goto(`${BASE}/en/study`);
     await p.getByRole("heading", { level: 1, name: "Study and revision" }).waitFor();
-    const due = Number(await p.getByTestId("due-count").textContent()), inc = Number(await p.getByTestId("count-incorrect").textContent());
-    check("[app dev] study dashboard: due and incorrect counters reflect persisted answers", due >= 1 && inc >= 1, `due=${due} incorrect=${inc}`);
-    check("[app dev] study dashboard: revision history table lists persisted answers", (await p.getByRole("table", { name: "Revision history" }).locator("tbody tr").count()) >= 2);
+    check("[app dev] study dashboard: revision history lists persisted answers from both attempts", (await p.getByRole("table", { name: "Revision history" }).locator("tbody tr").count()) >= 2);
     await p.screenshot({ path: SHOTS + "dev-5-study.png", fullPage: true });
-    await p.getByRole("button", { name: /Review due questions/ }).click();
-    await p.waitForURL(/attempt\//);
-    check("[app dev] study: 'due' revision starts a practice attempt", (await p.getByRole("heading", { level: 2, name: /^Question 1 of/ }).count()) === 1);
     await p.goto(`${BASE}/en/study/sheets`);
     check("[app dev] revision sheets list only published topics (none exist: honest empty state)", (await p.getByText("No published topics are available yet.").count()) === 1);
     // cases
     await p.goto(`${BASE}/en/cases`);
-    check("[app dev] case dashboard lists 3 synthetic cases", (await p.getByRole("button", { name: "Start case" }).count()) === 3);
+    await p.getByRole("button", { name: /^(Start|Resume|Try again)/ }).first().waitFor(); // the list streams in behind loading.tsx
+    const nCases = await p.getByRole("button", { name: /^(Start|Resume) case|Try again/ }).count();
+    check("[app dev] case dashboard lists 3 synthetic cases", nCases === 3, `found ${nCases}`);
     await p.getByRole("button", { name: "Start case" }).first().click();
     await p.waitForURL(/cases\/attempt\//);
     const pageHtml = bodies.join("\n") + (await p.content());
@@ -161,7 +176,7 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
     await ctx.clearCookies();
     await loginUi(p, A.email, "/en/question-bank");
     check("[app dev] after signing out and in again, previous attempts persist", (await p.getByRole("table", { name: "Previous attempts" }).locator("tbody tr").count()) === 2);
-    const ctxB = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const ctxB = await newCtx({ viewport: { width: 1280, height: 900 } });
     const pb = await ctxB.newPage();
     await loginUi(pb, B.email, "/en/question-bank");
     check("[app dev] learner B sees none of learner A's attempts", (await pb.getByText("No attempts yet").count()) === 1);
@@ -171,7 +186,7 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
     check("[app dev] learner B's study dashboard is empty", Number(await pb.getByTestId("due-count").textContent()) === 0);
     await ctxB.close();
     // unauthenticated access
-    const anonCtx = await browser.newContext();
+    const anonCtx = await newCtx({});
     const pa = await anonCtx.newPage();
     await pa.goto(`${BASE}/en/question-bank`);
     check("[app dev] signed-out visitors are redirected to sign in", /\/login/.test(pa.url()));
@@ -181,7 +196,7 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
     check("[app dev] Arabic dashboard is RTL with Arabic heading", (await p.locator("html").getAttribute("dir")) === "rtl" && (await p.getByRole("heading", { level: 1 }).textContent()) === "بنك الأسئلة");
     check("[app dev] axe: no serious/critical issues on the Arabic dashboard", (await serious(p)).length === 0);
     await p.screenshot({ path: SHOTS + "dev-8-arabic-rtl.png", fullPage: true });
-    const mob = await browser.newContext({ ...devices["Pixel 7"], viewport: { width: 390, height: 844 } });
+    const mob = await newCtx({ ...devices["Pixel 7"], viewport: { width: 390, height: 844 } });
     const pm = await mob.newPage();
     await loginUi(pm, A.email, "/en/question-bank");
     for (const path of ["/en/question-bank", "/en/study", "/en/cases", "/ar/study"]) {

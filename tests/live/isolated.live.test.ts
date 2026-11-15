@@ -78,7 +78,7 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
     expect(frag.get("access_token")).toBeTruthy();
     const c2 = newClient();
     expect((await c2.auth.setSession({ access_token: frag.get("access_token")!, refresh_token: frag.get("refresh_token")! })).error).toBeNull();
-    const next = "a-brand-new-strong-password-9";
+    const next = "A-brand-new-strong-password-9";
     expect((await c2.auth.updateUser({ password: next })).error).toBeNull();
     expect((await newClient().auth.signInWithPassword({ email: a.email, password: PASSWORD })).error?.code).toBe("invalid_credentials");
     expect((await newClient().auth.signInWithPassword({ email: a.email, password: next })).error).toBeNull();
@@ -150,7 +150,7 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
   });
 
   it("write attempts over PostgREST are refused, and another learner's attempt is invisible and untouchable", async () => {
-    const ca = await signIn(a.email, "a-brand-new-strong-password-9").catch(() => signIn(a.email));
+    const ca = await signIn(a.email, "A-brand-new-strong-password-9").catch(() => signIn(a.email));
     const cb = await signIn(b.email);
     const [ta, tb] = [await tokenOf(ca), await tokenOf(cb)];
     const att = (await cb.rpc("qb_start_attempt", { p_mode: "practice", p_count: 2 })).data as string;

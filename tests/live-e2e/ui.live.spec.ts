@@ -290,12 +290,12 @@ test("email-link callback: a recovery link signs the user in and the reset form 
   await page.getByLabel("Confirm password").fill("short1");
   await page.getByRole("button", { name: "Update password" }).click();
   await expect(page.locator("main").getByRole("alert")).toContainText(/at least 12/);
-  await page.getByLabel("Password", { exact: true }).fill("a-brand-new-strong-password-3");
-  await page.getByLabel("Confirm password").fill("a-brand-new-strong-password-3");
+  await page.getByLabel("Password", { exact: true }).fill("A-brand-new-strong-password-3");
+  await page.getByLabel("Confirm password").fill("A-brand-new-strong-password-3");
   await page.getByRole("button", { name: "Update password" }).click();
   await expect(page.getByText("Your password has been updated.")).toBeVisible();
   const c = newClient();
-  expect((await c.auth.signInWithPassword({ email: learner.email, password: "a-brand-new-strong-password-3" })).error).toBeNull();
+  expect((await c.auth.signInWithPassword({ email: learner.email, password: "A-brand-new-strong-password-3" })).error).toBeNull();
   // an open-redirect attempt through the callback is neutralised
   const evil = await page.request.get(`/auth/callback?token_hash=bad&type=recovery&next=${encodeURIComponent("https://evil.example")}`, { maxRedirects: 0 });
   expect(evil.headers().location ?? "").not.toContain("evil.example");

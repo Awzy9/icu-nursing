@@ -103,9 +103,9 @@ describe("1-2. Authentication, sessions and email verification", () => {
     const c = newClient();
     expect((await c.auth.verifyOtp({ token_hash: link.hashed_token, type: "recovery" })).error).toBeNull();
     expect((await c.auth.updateUser({ password: "short1" })).error?.code).toBe("weak_password");
-    expect((await c.auth.updateUser({ password: "a-brand-new-strong-password-2" })).error).toBeNull();
+    expect((await c.auth.updateUser({ password: "A-brand-new-strong-password-2" })).error).toBeNull();
     expect((await newClient().auth.signInWithPassword({ email: u.email, password: PASSWORD })).error?.code).toBe("invalid_credentials");
-    expect((await newClient().auth.signInWithPassword({ email: u.email, password: "a-brand-new-strong-password-2" })).error).toBeNull();
+    expect((await newClient().auth.signInWithPassword({ email: u.email, password: "A-brand-new-strong-password-2" })).error).toBeNull();
     expect((await newClient().auth.verifyOtp({ token_hash: link.hashed_token, type: "recovery" })).error).not.toBeNull(); // single use
   });
   it("a recovery request for an unknown address reveals nothing", async () => {
