@@ -4,6 +4,7 @@ import { loadFixtures } from "../../src/lib/question-bank/fixtures";
 
 const fx = loadFixtures();
 const serious = async (page: Page) => {
+  await page.waitForFunction(() => document.title.length > 0); // metadata streams in after a client-side navigation; axe needs a title
   const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
   return r.violations.filter((v) => v.impact === "serious" || v.impact === "critical").map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(" ")).join(" | ")}`);
 };
@@ -49,7 +50,7 @@ test.describe("learning hub", () => {
   });
 
   test("navigation marks the current section for assistive technology and sighted users", async ({ page, isMobile }) => {
-    test.skip(isMobile || (page.viewportSize()?.width ?? 0) < 1024, "desktop navigation; the mobile/tablet menu is covered below");
+    test.skip(isMobile || (page.viewportSize()?.width ?? 0) < 1280, "desktop navigation; the mobile/tablet menu is covered below");
     await page.goto("/en/study");
     await expect(page.getByRole("navigation", { name: "Main navigation" }).getByRole("link", { name: "Study" })).toHaveAttribute("aria-current", "page");
     await expect(page.getByRole("navigation", { name: "Main navigation" }).getByRole("link", { name: "Cases" })).not.toHaveAttribute("aria-current", "page");
@@ -58,8 +59,8 @@ test.describe("learning hub", () => {
     await expect(page.getByRole("navigation", { name: "Main navigation" }).getByRole("link", { name: "Cases" })).toHaveAttribute("aria-current", "page");
   });
 
-  test("the mobile and tablet menu lists every learning area and marks the current one", async ({ page, isMobile }) => {
-    test.skip(!isMobile && (page.viewportSize()?.width ?? 0) > 800, "narrow viewports only");
+  test("the mobile and tablet menu lists every learning area and marks the current one", async ({ page }) => {
+    test.skip((page.viewportSize()?.width ?? 0) >= 1280, "narrow viewports only (the full header shows from 1280px)");
     await page.goto("/en/study");
     await page.getByRole("button", { name: "Menu" }).click();
     const nav = page.getByRole("navigation", { name: "Main navigation" });

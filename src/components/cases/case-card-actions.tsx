@@ -12,7 +12,7 @@ export function CaseCardActions({ caseId, inProgress, inProgressPosition, lastCo
   const [error, setError] = useState<string | null>(null);
   const [confirm, setConfirm] = useState(false);
   const [pending, start] = useTransition();
-  const go = () => { setError(null); start(async () => { const r = await startCaseAction(caseId); if (r.ok) router.push(`/cases/attempt/${r.data}`); else setError(t("startError")); }); };
+  const go = () => { setError(null); start(async () => { const r = await startCaseAction(caseId); if (r && !r.ok) setError(t("startError")); /* success redirects from the server */ }); };
   return (
     <div className="space-y-2">
       <div className="flex flex-wrap gap-2">

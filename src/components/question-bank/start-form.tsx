@@ -1,7 +1,6 @@
 "use client";
 import { useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Callout } from "@/components/ui/feedback";
 import { localize } from "@/lib/content/localize";
@@ -16,7 +15,6 @@ const LIMITS = [0, 10, 20, 30, 60];
 export function StartForm({ domains, bookmarked, totalAvailable }: { domains: DomainOption[]; bookmarked: number; totalAvailable: number }) {
   const t = useTranslations("QuestionBank");
   const locale = useLocale();
-  const router = useRouter();
   const [mode, setMode] = useState<"practice" | "exam">("practice");
   const [selected, setSelected] = useState<string[]>([]);
   const [count, setCount] = useState(10);
@@ -32,8 +30,7 @@ export function StartForm({ domains, bookmarked, totalAvailable }: { domains: Do
     setError(null);
     start(async () => {
       const r = await startAttemptAction({ mode, count, domains: selected, timeLimitMinutes: mode === "exam" && limit > 0 ? limit : null, bookmarkedOnly });
-      if (r.ok) router.push(`/question-bank/attempt/${r.data}`);
-      else setError(r.error);
+      if (r && !r.ok) setError(r.error); // success redirects from the server
     });
   }
 

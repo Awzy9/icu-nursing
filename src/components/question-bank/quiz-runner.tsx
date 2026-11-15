@@ -64,14 +64,14 @@ export function QuizRunner({ initial, locale }: { initial: AttemptView; locale: 
     if (finishing.current) return;
     finishing.current = true;
     setBusy(true);
+    // On success the server action redirects to the results page itself, so this call does not return normally.
     const r = await submitAttemptAction(initial.id);
-    if (r.ok || r.code === "conflict") router.push(`/question-bank/attempt/${initial.id}/results`);
-    else {
+    if (r && !r.ok) {
       finishing.current = false;
       setBusy(false);
       setError(r.code === "not_found" ? t("attemptGone") : t("actionError"));
     }
-  }, [initial.id, router, t]);
+  }, [initial.id, t]);
 
   // Exam timer, anchored to the SERVER clock so a wrong device clock cannot extend or shorten the exam.
   const skew = useMemo(() => Date.parse(initial.server_now) - Date.now(), [initial.server_now]);

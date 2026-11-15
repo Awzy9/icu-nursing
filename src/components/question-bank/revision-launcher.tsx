@@ -1,7 +1,6 @@
 "use client";
 import { useState, useTransition } from "react";
 import { useTranslations } from "next-intl";
-import { useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Callout } from "@/components/ui/feedback";
 import type { RevisionKind } from "@/lib/question-bank/types";
@@ -10,7 +9,6 @@ import { startRevisionAction } from "@/app/[locale]/study/actions";
 /** One revision set: a labelled count and a button that starts a practice attempt over exactly those questions. */
 export function RevisionLauncher({ kind, count, primary = false }: { kind: RevisionKind; count: number; primary?: boolean }) {
   const t = useTranslations("Study");
-  const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [pending, start] = useTransition();
   const cap = (n: number) => Math.min(n, 20);
@@ -26,9 +24,8 @@ export function RevisionLauncher({ kind, count, primary = false }: { kind: Revis
         onClick={() => {
           setError(null);
           start(async () => {
-            const r = await startRevisionAction({ kind, count: cap(count) });
-            if (r.ok) router.push(`/question-bank/attempt/${r.id}`);
-            else setError(t("startError"));
+            const r = await startRevisionAction({ kind, count: cap(count) }); // success redirects from the server
+            if (r && !r.ok) setError(t("startError"));
           });
         }}
       >

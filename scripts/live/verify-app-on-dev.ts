@@ -205,6 +205,12 @@ const serious = async (page: Page) => (await new AxeBuilder({ page }).withTags([
     }
     await pm.goto(`${BASE}/en/study`);
     await pm.screenshot({ path: SHOTS + "dev-9-mobile-study.png", fullPage: true });
+    // the signed-in header is the widest: check the breakpoints around the switch from menu to full navigation
+    for (const w of [768, 1024, 1279, 1280]) {
+      await pm.setViewportSize({ width: w, height: 900 });
+      await pm.goto(`${BASE}/en/learn`);
+      check(`[app dev] signed-in header at ${w}px: no horizontal overflow`, (await overflow(pm)) <= 0);
+    }
     await mob.close();
     await ctx.close();
   } finally {

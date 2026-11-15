@@ -38,7 +38,7 @@ export async function SiteHeader() {
           <span aria-hidden className="inline-flex size-8 items-center justify-center rounded-md bg-navy text-sm text-navy-foreground">IK</span>
           <span className="max-w-[11rem] leading-tight sm:max-w-none">{brand("brand")}</span>
         </Link>
-        <nav aria-label={t("main")} className="hidden items-center gap-1 lg:flex">
+        <nav aria-label={t("main")} className="hidden items-center gap-1 xl:flex">
           {primary.map((l) => (
             <ActiveLink key={l.href} href={l.href} className="inline-flex min-h-11 items-center rounded-md px-3 text-foreground no-underline hover:bg-muted">{l.label}</ActiveLink>
           ))}
@@ -57,7 +57,7 @@ export async function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <LocaleSwitcher />
-          <div className="hidden lg:block">{signOut}</div>
+          <div className="hidden xl:block">{signOut}</div>
           <MobileNav links={[...primary, ...future]} footer={signOut} />
         </div>
       </div>
