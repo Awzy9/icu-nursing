@@ -125,6 +125,8 @@ test.describe("cases: Arabic, dark mode, layout", () => {
       expect(await serious(page)).toEqual([]);
       await page.getByRole("button", { name: "Start case" }).first().click();
       await page.waitForURL(/cases\/attempt\//);
+      await expect(page.getByRole("heading", { name: "Decision 1" })).toBeVisible();
+      await expect(page).toHaveTitle(/Case-based/); // metadata streams in after a client-side navigation
       expect(await serious(page)).toEqual([]);
     });
   });

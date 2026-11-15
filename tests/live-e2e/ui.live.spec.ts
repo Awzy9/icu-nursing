@@ -84,6 +84,7 @@ test("registration page validates input and does not pretend an undeliverable ad
     await expect(page.locator("main").getByRole("alert")).toContainText(/valid email|Too many attempts/i);
     await expect(page).toHaveURL(/\/en\/register/);
   }
+  await page.getByLabel("Display name").fill("LIVE TEST registrant");
   await page.getByLabel("Email address").fill("a@b.co");
   await page.getByLabel("Password", { exact: true }).fill("short");
   await page.getByLabel("Confirm password").fill("short");

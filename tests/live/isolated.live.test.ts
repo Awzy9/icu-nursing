@@ -164,6 +164,22 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
     expect(doc).not.toMatch(/question_answer_keys|case_option_keys|quiz_answers|qb_start_attempt/);
   });
 
+  it("the GraphQL endpoint (a second API surface the app does not use) is closed to learners and anonymous callers", async () => {
+    const c = await signIn(b.email);
+    const tok = await tokenOf(c);
+    const gql = async (query: string, token?: string) => {
+      const r = await fetch(`${PROJECT_URL}/graphql/v1`, { method: "POST", headers: { apikey: ANON, Authorization: `Bearer ${token ?? ANON}`, "Content-Type": "application/json" }, body: JSON.stringify({ query }) });
+      return { status: r.status, text: await r.text() };
+    };
+    for (const token of [tok, undefined]) {
+      for (const q of ["{ __schema { types { name } } }", "{ question_answer_keysCollection { edges { node { rationale } } } }", "{ quiz_attemptsCollection { edges { node { id } } } }"]) {
+        const r = await gql(q, token);
+        expect(r.text, q).not.toMatch(/rationale|question_answer_keys|"edges":\s*\[\s*\{/);
+        expect(r.status >= 400 || /"errors"/.test(r.text), `${q} should be refused`).toBe(true);
+      }
+    }
+  });
+
   it("fixtures disappear at runtime when the database is not a development database (production guard over the real API)", async () => {
     const c = await signIn(b.email);
     try {
