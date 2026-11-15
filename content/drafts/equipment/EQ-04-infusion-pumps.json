@@ -96,7 +96,7 @@
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are not written because no source read explains them.",
+  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
   "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
   "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
  ],

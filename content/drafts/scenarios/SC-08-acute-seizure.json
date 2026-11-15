@@ -8,12 +8,15 @@
  "clinical_reviewers": [],
  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
  "fictional_patient": true,
- "spec_level": "outline",
+ "spec_level": "decision_graph",
  "evidence_status": "partial",
  "domain": "neurocritical",
  "difficulty": 3,
  "learning_objectives": [
-  "Maintain airway and breathing observation after a benzodiazepine."
+  "Recognise a prolonged convulsive seizure as an emergency and call for help at once.",
+  "Know that anticonvulsant medicines are given only as prescribed or per the unit's protocol or the person's emergency plan.",
+  "Look for treatable causes such as low glucose and report them.",
+  "Seek expert guidance if the first treatment does not work."
  ],
  "related": {
   "skills": [],
@@ -25,44 +28,239 @@
  },
  "sources": [
   {
+   "id": "N-NICE-NG217",
+   "read": "partial",
+   "use": "NICE NG217 chapter 7 (updated August 2026): recommendations 7.1.1 to 7.1.9 on convulsive status epilepticus"
+  },
+  {
    "id": "L-LORAZEPAM",
    "read": "full",
-   "use": "label: opioids, respiratory depression"
+   "use": "FDA lorazepam label: respiratory depression, concomitant opioids"
   },
   {
-   "id": "L-LEVETIRACETAM",
-   "read": "full",
-   "use": "label: behavioural effects, rash"
-  }
- ],
- "expected_actions": [
-  {
-   "text": "After lorazepam, monitor breathing and sedation closely, especially with opioids, and have airway equipment available.",
-   "scope": "monitoring",
-   "support": "partial",
-   "sources": [
-    "L-LORAZEPAM"
-   ]
+   "id": "N-JBDS-HYPO-2020",
+   "read": "partial",
+   "use": "JBDS: hypoglycaemia is an emergency and must be excluded in anyone with seizures"
   },
   {
-   "text": "Watch for behavioural change and rash during levetiracetam.",
-   "scope": "monitoring",
-   "support": "partial",
-   "sources": [
-    "L-LEVETIRACETAM"
-   ]
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
   }
  ],
  "required_sources": [
-  "Seizure first-aid and status epilepticus guideline text",
-  "Unit seizure protocol"
+  "First-aid and positioning guidance for an in-hospital seizure from a source read in full (not in NG217 chapter 7)",
+  "Critical-care guidance on seizures in sedated or ventilated patients and on electroencephalography",
+  "Unit status-epilepticus protocol and the individual patient's emergency plan"
  ],
  "gaps": [
   "No published clinical scenario may exist until the review phase: this is a specification only.",
   "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Seizure first aid (protection, positioning, timing) and medicine choice are not drawn from a source read."
+  "Medicine names, doses, routes and timings in NG217 are deliberately not used; they come from the plan, the order and the unit protocol.",
+  "Positioning, protection from injury and observation during the seizure are not in the chapter read and are not written.",
+  "NG217 is a UK guideline for children, young people and adults; refractory status epilepticus (third-line treatment and general anaesthesia) is outside this scenario."
  ],
  "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ]
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+  "NICE: Notice of rights not read; paraphrase only."
+ ],
+ "setting": "A fictional adult on a fictional ward whose convulsive seizure has not stopped.",
+ "steps": [
+  {
+   "position": 1,
+   "info": "A patient is having a convulsive seizure that has been going on for several minutes and shows no sign of stopping.",
+   "prompt": "What do you do first?",
+   "observations": [
+    {
+     "key": "seizure",
+     "label": "Seizure",
+     "value": "Continuing, convulsive"
+    },
+    {
+     "key": "duration",
+     "label": "Duration",
+     "value": "Several minutes so far"
+    },
+    {
+     "key": "plan",
+     "label": "Individual emergency plan",
+     "value": "None available"
+    }
+   ],
+   "options": [
+    {
+     "text": "Call for urgent help, note the time the seizure began, stay with the patient and start emergency care per the unit's protocol, asking for the emergency equipment and prescribed emergency medicine to be brought.",
+     "points": 2,
+     "next": 2,
+     "scope": "escalation",
+     "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that.",
+     "consequence": "Help arrives while you stay with the patient and the time of onset is clear.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217",
+      "S-AHRQ-TS"
+     ]
+    },
+    {
+     "text": "Leave the bedside to look for a doctor.",
+     "points": 1,
+     "next": 2,
+     "scope": "escalation",
+     "feedback": "Getting help is right, but leaving the patient removes emergency care at the worst moment.",
+     "consequence": "The patient is alone during the seizure until you return.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217"
+     ]
+    },
+    {
+     "text": "Wait to see whether the seizure stops by itself.",
+     "points": 0,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "A prolonged convulsive seizure is an emergency that needs immediate treatment.",
+     "consequence": "Treatment is delayed and the seizure continues.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "info": "The doctor arrives, confirms there is no individual emergency plan, and intravenous access and resuscitation equipment are ready.",
+   "prompt": "What is the nurse's role regarding the medicine?",
+   "observations": [
+    {
+     "key": "seizure",
+     "label": "Seizure",
+     "value": "Continuing"
+    },
+    {
+     "key": "access",
+     "label": "Intravenous access",
+     "value": "In place"
+    },
+    {
+     "key": "equipment",
+     "label": "Resuscitation equipment",
+     "value": "At the bedside"
+    }
+   ],
+   "options": [
+    {
+     "text": "Prepare and give the first-line emergency medicine only as prescribed or as the unit's protocol directs, with resuscitation equipment ready and the patient's breathing watched closely afterwards.",
+     "points": 2,
+     "next": 3,
+     "scope": "order_or_protocol_required",
+     "feedback": "NICE sets out the first-line treatment when no plan is available; which medicine and how much is for the prescriber or protocol, and the lorazepam label warns of respiratory depression, especially with opioids.",
+     "consequence": "The medicine is given safely and breathing is monitored.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217",
+      "L-LORAZEPAM"
+     ]
+    },
+    {
+     "text": "Choose and give an anticonvulsant of your own choice from the ward stock.",
+     "points": 0,
+     "next": 3,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "The choice of medicine is a prescriber or protocol decision.",
+     "consequence": "An unsuitable medicine is given and the team has to correct it.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217"
+     ]
+    },
+    {
+     "text": "Refuse to prepare anything and wait for the doctor to do everything.",
+     "points": 1,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "Preparing medicines and equipment for the prescriber is part of the nurse's role.",
+     "consequence": "The treatment is slowed down.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "info": "The seizure has not stopped after the first treatment.",
+   "prompt": "What do you do now?",
+   "observations": [
+    {
+     "key": "seizure",
+     "label": "Seizure",
+     "value": "Still continuing"
+    },
+    {
+     "key": "breathing",
+     "label": "Breathing",
+     "value": "Being watched closely"
+    },
+    {
+     "key": "glucose",
+     "label": "Blood glucose",
+     "value": "Not yet checked"
+    }
+   ],
+   "options": [
+    {
+     "text": "Make sure expert guidance is sought urgently, check the blood glucose and report the result because treatable causes such as low glucose matter, keep watching breathing, and give any further medicine only as prescribed.",
+     "points": 2,
+     "next": null,
+     "scope": "escalation",
+     "feedback": "NICE says to seek expert guidance in hospital if the first dose does not work and to be aware of causes such as hypoglycaemia; JBDS says low glucose must be excluded in anyone having seizures.",
+     "consequence": "Expert help is on its way and a treatable cause is not missed.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217",
+      "N-JBDS-HYPO-2020"
+     ]
+    },
+    {
+     "text": "Give another dose from stock straight away.",
+     "points": 0,
+     "next": null,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Further doses and second-line medicines are prescriber decisions in line with the plan or protocol.",
+     "consequence": "A further dose is given without an order.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217"
+     ]
+    },
+    {
+     "text": "Assume the seizure will stop soon and stop observing the patient.",
+     "points": 0,
+     "next": null,
+     "scope": "independent_nursing",
+     "feedback": "The patient needs continuous observation and escalation when treatment is not working.",
+     "consequence": "Deterioration is missed.",
+     "support": "partial",
+     "sources": [
+      "N-NICE-NG217"
+     ]
+    }
+   ]
+  }
+ ],
+ "debrief": {
+  "learning_points": [
+   "A convulsive seizure lasting 5 minutes or more is an emergency: call for help, note the time and start emergency care.",
+   "Anticonvulsant medicines are given only as prescribed or per the plan or protocol; the nurse prepares, gives per order and monitors breathing.",
+   "If the first treatment fails, seek expert guidance and look for treatable causes such as low glucose."
+  ],
+  "links": [
+   {
+    "kind": "medication",
+    "code": "MD-37"
+   }
+  ]
+ }
 }

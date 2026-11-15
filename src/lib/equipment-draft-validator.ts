@@ -8,7 +8,7 @@ export interface EquipmentDraft {
   equipment_id: string; number: number; title: string; category: string; status: string; origin: string; clinically_reviewed: boolean; clinical_reviewers: string[]; banner: string;
   device_neutral: boolean; manufacturer_documents: { source_id: string; device: string }[]; related_skill: string; evidence_status: string;
   diagram: { kind: string; original_graphic: boolean; parts: string[]; alt_text_needed: boolean };
-  parameters: { name: string; explanation: string | null; support: string }[];
+  parameters: { name: string; explanation: string | null; support: string; sources?: string[] }[];
   safety_concepts: Concept[]; monitoring_concepts: Concept[]; escalation_concepts: Concept[];
   sources: { id: string; read: string; use: string }[]; required_sources: string[]; gaps: string[]; permissions: string[];
 }
@@ -37,6 +37,12 @@ export function validateEquipmentDraft(d: EquipmentDraft, known: Set<string>): E
   if (mfrIds.size > 0 && d.device_neutral) add("manufacturer", `${id}: a draft using manufacturer sources cannot claim to be device-neutral`);
   for (const p of d.parameters ?? []) {
     if (p.explanation !== null && p.support === "needs_source") add("parameter", `${id}: ${p.name} has an explanation but no source support`);
+    if (p.explanation !== null) {
+      if (!["sourced", "partial"].includes(p.support) || !(p.sources ?? []).length) add("parameter", `${id}: ${p.name} needs sourced or partial support with at least one source`);
+      for (const sid of p.sources ?? []) if (!listed.has(sid)) add("parameter", `${id}: ${p.name} cites ${sid} which is not listed in sources`);
+      if (dose.test(p.explanation)) add("dosing", `${id}: ${p.name} explanation must not contain doses or rates`);
+      if (verdict.test(p.explanation)) add("verdict", `${id}: ${p.name} explanation must not claim approval or review`);
+    }
     if (p.explanation === null && p.support !== "needs_source") add("parameter", `${id}: ${p.name} is unexplained and must be marked needs_source`);
   }
   for (const [where, list] of [["safety", d.safety_concepts], ["monitoring", d.monitoring_concepts], ["escalation", d.escalation_concepts]] as const) {

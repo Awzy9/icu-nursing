@@ -6,7 +6,7 @@ SC-04,Ventilator alarm,decision_graph,partial,3,0,S-AARC-PVA;S-HAMILTON-C1;S-DRA
 SC-05,Sudden oxygen desaturation,outline,partial,0,2,S-AARC-O2;S-AARC-SUCT;S-RCP-NEWS2,2
 SC-06,Accidental extubation,decision_graph,partial,3,0,S-AARC-PVA;S-ERC-ALS-2025;S-AHRQ-TS,2
 SC-07,Raised intracranial pressure,outline,partial,0,2,S-AARC-SUCT;S-BTF-TBI-4TH;L-MANNITOL,2
-SC-08,Acute seizure,outline,partial,0,2,L-LORAZEPAM;L-LEVETIRACETAM,2
+SC-08,Acute seizure,decision_graph,partial,3,0,N-NICE-NG217;L-LORAZEPAM;N-JBDS-HYPO-2020;S-AHRQ-TS,3
 SC-09,Postoperative bleeding,outline,partial,0,2,L-HEPARIN;L-ENOXAPARIN;L-TXA,2
 SC-10,Hypoglycemia,decision_graph,partial,3,0,N-JBDS-HYPO-2020;L-INSULIN;S-AHRQ-TS,3
 SC-11,Severe hyperkalemia,decision_graph,partial,3,0,N-UKKA-HK-2026-07;L-INSULIN;S-AHRQ-TS,3

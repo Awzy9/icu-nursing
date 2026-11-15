@@ -186,3 +186,51 @@ describe("structural round trip of every real decision graph (in memory only; no
     });
   }
 });
+
+describe("independent oracle: the engine agrees with a direct reading of every converted graph", () => {
+  // A small deterministic PRNG so failures are reproducible.
+  const rng = (seed: number) => () => { seed = (seed + 0x6d2b79f5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  const known = loadScenarioKnownSources();
+  const drafts = [{ d: SYNTHETIC_SCENARIO as ScenarioDraft, code: "SYN-CASE-905", src: SYNTHETIC_SOURCES }, ...loadScenarioDrafts().filter((x) => x.spec_level === "decision_graph").map((d) => ({ d, code: `DRAFT-${d.scenario_id}`, src: known }))];
+  for (const { d, code, src } of drafts) {
+    it(`${d.scenario_id}: 25 random walks match the oracle (next step, points, completion, scope counts, revisit list, debrief) and reveal exactly what was authored`, async () => {
+      const c = scenarioToCase(d, src, code);
+      const next = rng(d.scenario_id.length * 7919 + c.steps.length);
+      const make = mk([c]);
+      for (let w = 0; w < 25; w++) {
+        const svc = make(`walk-${w}`); const id = await svc.start(c.id);
+        let pos = 1, pts = 0; const taken: { pos: number; points: number; scope: string }[] = [];
+        for (let guard = 0; guard < 20; guard++) {
+          const step = c.steps[pos - 1]!; const o = step.options[Math.floor(next() * step.options.length)]!;
+          const v = await svc.choose(id, pos, o.id);
+          pts += o.points; taken.push({ pos, points: o.points, scope: o.scope });
+          expect(v.trail.at(-1)!.chosen_option_id).toBe(o.id);
+          // everything authored for this step is revealed exactly, and nothing from the future
+          const revealed = v.trail.at(-1)!.options.find((x) => x.id === o.id)!;
+          expect(revealed.feedback.en).toBe(o.feedback.en); expect(revealed.consequence!.en).toBe(o.consequence!.en); expect(revealed.scope).toBe(o.scope); expect(revealed.points).toBe(o.points);
+          expect(v.trail.at(-1)!.observations.map((x) => x.key)).toEqual(step.observations.map((x) => x.key));
+          if (o.next === null) {
+            expect(v.status).toBe("completed");
+            expect(v.summary!.points).toBe(pts); expect(v.summary!.max_points).toBe(2 * taken.length); expect(v.summary!.steps).toBe(taken.length);
+            expect(v.summary!.score_tenths).toBe(scoreTenths(pts, 2 * taken.length));
+            expect(v.summary!.debrief.revisit_positions).toEqual(taken.filter((t) => t.points < 2).map((t) => t.pos));
+            const counts: Record<string, number> = {}; for (const t of taken) counts[t.scope] = (counts[t.scope] ?? 0) + 1;
+            expect(v.summary!.debrief.scope_counts).toEqual(counts);
+            expect(v.summary!.debrief.learning_points?.en).toEqual(d.debrief!.learning_points);
+            expect(v.current).toBeNull();
+            break;
+          }
+          expect(v.status).toBe("in_progress"); expect(v.current_position).toBe(o.next); expect(v.summary).toBeNull();
+          expect(v.current!.observations.map((x) => x.key)).toEqual(c.steps[o.next - 1]!.observations.map((x) => x.key));
+          pos = o.next;
+        }
+      }
+    });
+  }
+  it("every authored option field survives conversion unchanged (text, points, next, scope, feedback, consequence)", () => {
+    for (const { d, code, src } of drafts) {
+      const c = scenarioToCase(d, src, code);
+      d.steps!.forEach((s, si) => s.options.forEach((o, oi) => { const x = c.steps[si]!.options[oi]!; expect([x.text.en, x.points, x.next, x.scope, x.feedback.en, x.consequence!.en]).toEqual([o.text, o.points, o.next, o.scope, o.feedback, o.consequence]); }));
+    }
+  });
+});

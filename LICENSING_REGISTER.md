@@ -112,3 +112,9 @@ Each topic/question/scenario stores: source IDs, a note of *what was independent
 |---|---|---|---|---|---|
 | NICE CG103 Delirium: prevention, diagnosis and management (updated January 2023), used in SC-17 | **YELLOW** | NICE copyright; Notice of rights not read | Cite; paraphrase recommendations without reproducing assessment-tool items or medicine amounts | Reproduce text; reproduce CAM-ICU or ICDSC | Verify NICE terms; CAM-ICU and ICDSC licence and training terms not read |
 | NICE NG232 Head injury: assessment and early management (May 2023), used in SC-20 | **YELLOW** | NICE copyright; Notice of rights not read | Cite; paraphrase without numerical triggers | Reproduce text; apply to non-head-injury causes | Verify NICE terms |
+
+## Additions from Phase 11 (checked 2026-11-15; no licensing enquiry made)
+| Source | Class | Licence evidence | Allowed | Not allowed | Action |
+|---|---|---|---|---|---|
+| NICE NG217 Epilepsies in children, young people and adults, chapter 7 (updated 5 August 2026), used in SC-08 | **YELLOW** | NICE copyright; Notice of rights not read | Cite; paraphrase recommendations without medicine names, doses or timings | Reproduce text | Verify NICE terms |
+| NICE CG103, UKKA July 2026 and Resuscitation Council UK 2021 (re-read for EQ-01 parameter explanations) | as registered above | as registered above | Cite; paraphrase one sentence per parameter | Reproduce | As above |

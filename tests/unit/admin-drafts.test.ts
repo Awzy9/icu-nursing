@@ -65,7 +65,7 @@ describe("filters, freshness, comparison and coverage", () => {
   it("reports coverage per type on the real index (no reviewed drafts, planned counts met)", () => {
     const c = Object.fromEntries(coverage(onDisk, today).map((r) => [r.type, r]));
     expect(c.skills!.total).toBe(25); expect(c.medications!.total).toBe(50); expect(c.cases!.total).toBe(20); expect(c.equipment!.total).toBe(8); expect(c.topics!.total).toBe(40);
-    expect(c.cases!.extra).toMatch(/13 decision graphs, 7 outlines/);
+    expect(c.cases!.extra).toMatch(/14 decision graphs, 6 outlines/);
     for (const r of Object.values(c)) { expect(r.reviewed).toBe(0); expect(r.withIssues).toBe(0); }
   });
 });

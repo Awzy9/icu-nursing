@@ -3962,24 +3962,34 @@
    "title": "Acute seizure",
    "domain": "neurocritical",
    "evidence_status": "partial",
-   "spec_level": "outline",
+   "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
-    {
-     "id": "L-LEVETIRACETAM",
-     "licence_class": "YELLOW",
-     "verified": "2026-11-15"
-    },
     {
      "id": "L-LORAZEPAM",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "N-JBDS-HYPO-2020",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
+     "id": "N-NICE-NG217",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 2,
-   "hash": "3ae0fcb150970ccb"
+   "gaps": 5,
+   "required_sources": 3,
+   "hash": "5df915e9762cc65a"
   },
   {
    "key": "SC-09",
@@ -4361,6 +4371,21 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "N-NICE-CG103",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
+     "id": "N-RCUK-ANAPH-2021",
+     "licence_class": "RED",
+     "verified": null
+    },
+    {
+     "id": "N-UKKA-HK-2026-07",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -4369,7 +4394,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "c8e1d29ea11bac57"
+   "hash": "ba63388b707eb459"
   },
   {
    "key": "EQ-02",
@@ -4399,7 +4424,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "3ff75d43f9380cd4"
+   "hash": "78faf82d9fc0b17b"
   },
   {
    "key": "EQ-03",
@@ -4429,7 +4454,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "1980d7049bb0b87d"
+   "hash": "6b3b9615a93ab14a"
   },
   {
    "key": "EQ-04",
@@ -4454,7 +4479,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "d81a4122a71555a3"
+   "hash": "f545c417d273a68e"
   },
   {
    "key": "EQ-05",
@@ -4474,7 +4499,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "a065c8b967ec3a18"
+   "hash": "24646b37b9208135"
   },
   {
    "key": "EQ-06",
@@ -4499,7 +4524,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "a19bce2f0d3ab01b"
+   "hash": "8bc1b7f7d1a17cd2"
   },
   {
    "key": "EQ-07",
@@ -4529,7 +4554,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "ab272484f1b0c22a"
+   "hash": "5f30ec691a69ad2b"
   },
   {
    "key": "EQ-08",
@@ -4549,7 +4574,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "369fc9b54ee7ff9d"
+   "hash": "8068b4a036f9ba96"
   }
  ]
 }
