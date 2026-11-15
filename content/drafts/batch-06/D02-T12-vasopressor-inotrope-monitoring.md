@@ -129,9 +129,9 @@ D. A patient with mild hypotension who responds to a single small fluid bolus.
 **Why not D:** Mild hypotension responding to a bolus does not meet them either.
 
 **Q4 (understanding).** What do SSC 2026 and the older ESICM 2014 text say about the access used to start vasopressors?
-A. Both say a central line must always be in place before any vasopressor is started in a patient with septic shock.
-B. Both say vasopressors may only be given through an arterial line, because it gives continuous blood pressure readings.
-C. Both say the site does not matter and may be chosen entirely by the bedside nurse without any local policy.
+A. Both say a central line must be in place before any vasopressor is started in a patient with septic shock.
+B. Both say vasopressors may be given through an arterial line, because it gives continuous blood pressure readings.
+C. Both say the site does not matter and may be chosen by the bedside nurse without any local policy.
 D. SSC 2026 suggests starting peripherally rather than delaying, while ESICM 2014 said central access may be preferred; local policy decides.
 **Answer: D.**
 **Why correct:** The two sources differ, and SSC 2026's own remark says data are insufficient on duration, dose and site.

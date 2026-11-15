@@ -93,13 +93,13 @@ A 48-year-old woman after traumatic brain injury opens her eyes to sound, says s
 
 ## 17. MCQs
 **Q1 (application).** A patient is intubated, so the verbal component cannot be assessed. What should the nurse record for the verbal response?
-A. Orientated, because the patient nods or shakes the head in sensible answer to questions put to him.
+A. Non testable with the reason (intubation), and not a score of 1.
 B. None, scoring 1, because no sound can be heard from the patient at any time during the assessment.
-C. Non testable with the reason (intubation), and not a score of 1.
+C. Orientated, because the patient nods or shakes the head in sensible answer to questions put to him.
 D. Sounds, scoring 2, because the patient attempts to mouth words and appears to be trying to communicate.
-**Answer: C.**
+**Answer: A.**
 **Why correct:** The aid uses "non testable" where a factor interferes with communication; it should not be recorded as no response.
-**Why not A:** Nodding does not meet the orientation criterion.
+**Why not C:** Nodding does not meet the orientation criterion.
 **Why not B:** Score 1 means no audible response without an interfering factor.
 **Why not D:** Mouthing is not an audible moan or groan.
 
@@ -115,8 +115,8 @@ D. Avoid verbal requests because patients rarely respond to them, and go straigh
 **Why not D:** Verbal request is the first stimulus.
 
 **Q3 (monitoring).** Why should nurses record the three components rather than only a total score?
-A. A total score is invalid unless it is recorded by a doctor, so the nurse's entries are only supplementary.
-B. The components are only needed for medico-legal reasons and have no value for clinical communication.
+A. A total score is invalid unless it is recorded by a doctor, so the nurse's entries are supplementary.
+B. The components are needed for medico-legal reasons and have no value for clinical communication.
 C. The total score is more sensitive than the individual components, so nothing is gained by recording them.
 D. The components show which function has changed and allow trends to be compared between staff.
 **Answer: D.**
@@ -132,7 +132,7 @@ C. Reduce the sedation to see if the response improves, without informing the te
 D. Ask the relatives whether the patient seems different before deciding what to do.
 **Answer: B.**
 **Why correct:** A fall in motor response can signal deterioration; the sources emphasise trends signalling the need for action.
-**Why not A:** Delay risks harm.
+**Why not A:** Delaying the report risks harm because the change in consciousness may be progressing.
 **Why not C:** Sedation changes need an order or protocol and the team should be told.
 **Why not D:** Relatives' views are helpful but do not replace prompt reporting.
 

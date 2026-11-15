@@ -118,8 +118,8 @@ D. VAE is a surveillance definition: it flags sustained worsening oxygenation, w
 **Q3 (application).** A colleague proposes adding chlorhexidine to routine mouth care "to lower VAP". What is the best response?
 A. Say the 2022 update classes chlorhexidine oral care as generally not recommended and advises toothbrushing.
 B. Agree, because older protocols used chlorhexidine and nothing has changed since those protocols were written.
-C. Suggest stopping mouth care entirely to avoid disturbing the patient and the endotracheal tube.
-D. Suggest using chlorhexidine only on the night shift when staffing is lower.
+C. Suggest stopping mouth care to avoid disturbing the patient and the endotracheal tube.
+D. Suggest using chlorhexidine on the night shift when staffing is lower.
 **Answer: A.**
 **Why correct:** The 2022 update moved chlorhexidine oral care to "generally not recommended" and added toothbrushing as essential.
 **Why not B:** Recommendations changed between editions.

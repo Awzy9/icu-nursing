@@ -110,9 +110,9 @@ D. Refuse without any explanation and leave the task for the next shift, since i
 
 **Q2 (understanding).** Which statement about scope of practice matches the Open RN chapters and the ICN definition?
 A. Scope is set by law, regulators and professional standards, so it varies by place and you must check your own rules.
-B. Scope is identical in every country and is set by the hospital alone, so local rules are the only source to check.
+B. Scope is identical in every country and is set by the hospital alone, so local rules are the source to check.
 C. Scope is whatever a doctor asks a nurse to do, provided that the doctor takes responsibility for the request.
-D. Scope is determined only by how long a nurse has worked in the unit, regardless of education or regulation.
+D. Scope is determined by how long a nurse has worked in the unit, regardless of education or regulation.
 **Answer: A.**
 **Why correct:** The sources describe law, regulator, professional standards and employer policy; the US chapters are state-specific.
 **Why not B:** Rules differ between states and countries.
@@ -142,10 +142,10 @@ D. Accept the task whenever the unit manager is present, whatever your own compe
 **Why not D:** A manager's presence does not replace competence.
 
 **Q5 (safety).** Why do legal tests of negligence stress documentation?
-A. Documentation is needed only for billing and has no bearing on how care is judged in a legal review of the case.
+A. Documentation is needed for billing and has no bearing on how care is judged in a legal review of the case.
 B. An undocumented assessment or action is considered not done in US courts, so records must be accurate.
 C. Charts must be as long as possible to show effort, because courts count the number of words that were recorded.
-D. Only physicians' notes count as evidence, so nursing documentation is optional once the orders have been entered.
+D. Physicians' notes count as evidence, so nursing documentation is optional once the orders have been entered.
 **Answer: B.**
 **Why correct:** The chapter states this rule of thumb.
 **Why not A:** The purpose is accurate clinical and legal records.

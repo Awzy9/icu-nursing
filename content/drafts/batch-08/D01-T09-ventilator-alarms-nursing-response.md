@@ -135,9 +135,9 @@ D. Only the first message in the buffer is ever important, and the others can be
 **Why not D:** The cause may not be the first message.
 
 **Q4 (safety).** A colleague suggests widening all alarm limits to the extremes because the ventilator keeps alarming. What is the best response?
-A. Agree with the colleague, since having fewer alarms is always safer and quieter for the patient and the unit.
-B. Agree with the colleague, but only at night when the unit is busy and there are fewer staff available.
-C. Widen only the volume alarm and leave all the others where they are, since that reduces the noise and the repeated alarms.
+A. Agree with the colleague, since having fewer alarms is safer and quieter for the patient and the unit.
+B. Agree with the colleague, but at night when the unit is busy and there are fewer staff available.
+C. Widen the volume alarm and leave all the others where they are, since that reduces the noise and the repeated alarms.
 D. Disagree: extreme limits can make alarms useless, so find the cause and ask for a review of the limits.
 **Answer: D.**
 **Why correct:** The manual cautions that extreme limits render the alarm system useless and that limits should be readjusted only when inappropriately set.

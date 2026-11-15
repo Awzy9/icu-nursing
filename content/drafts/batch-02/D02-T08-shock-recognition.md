@@ -130,14 +130,14 @@ D. A patient with cool mottled skin, new confusion and urine output that has fal
 **Answer: D.**
 **Why correct:** Several perfusion signs in three windows suggest shock.
 **Why not A:** Stable with good perfusion.
-**Why not B:** Stable and improving.
+**Why not B:** A stable and improving patient does not need the most urgent response of the group.
 **Why not C:** Stable with normal findings.
 
 **Q4 (scope).** The doctor orders a fluid bolus and then a vasopressor for suspected shock. What is the nurse's role?
 A. Choose the vasopressor and rate according to the nurse's judgment of the patient's condition.
-B. Prepare, give and monitor the ordered treatments as prescribed, repeat observations, and report the response.
-C. Give the bolus but skip the reassessment because the doctor will do it.
-D. Delay giving the treatments until the lactate result is known.
+B. Prepare, give and monitor the ordered treatments, repeat observations and report the response.
+C. Give the bolus but skip the reassessment afterwards, because the doctor will do it at the next review.
+D. Delay giving the treatments until the lactate result is known, so that the team can see the trend first.
 **Answer: B.**
 **Why correct:** The nurse administers and monitors ordered therapy and reports response; the consensus recommends frequent reassessment.
 **Why not A:** Selecting vasopressors and rates is a prescriber decision.
@@ -145,9 +145,9 @@ D. Delay giving the treatments until the lactate result is known.
 **Why not D:** Delay may harm; early treatment is recommended.
 
 **Q5 (application).** Which statement about lactate in suspected shock is most accurate based on the consensus?
-A. A single normal lactate rules out shock in every patient, so no further assessment is needed after that result.
-B. Measure it when shock is suspected; it usually exceeds 2 mmol/L in shock; repeated values help monitor response.
-C. Lactate only matters in patients with sepsis, so it is not needed when shock has another cause such as bleeding.
+A. A single normal lactate rules out shock, so no further assessment is needed after that one result is back.
+B. Measure it when shock is suspected; it usually exceeds 2 mmol/L; repeated values help monitor response.
+C. Lactate matters in patients with sepsis, so it is not needed when shock has another cause such as bleeding.
 D. Lactate should be measured once at admission and not repeated, because later values do not change management.
 **Answer: B.**
 **Why correct:** These statements appear in the consensus.

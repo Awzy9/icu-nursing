@@ -8,13 +8,14 @@
  *
  * The secret is write-only in Supabase and is never needed by the Next.js app (which only holds the public SITE key).
  */
-import { api } from "./mgmt";
+import { api, refuseCaptchaWeakeningOnDev } from "./mgmt";
 
 // Public, documented Cloudflare test secrets (https://developers.cloudflare.com/turnstile/troubleshooting/testing/). Not real secrets.
 const TEST_SECRET = { pass: "1x0000000000000000000000000000000AA", fail: "2x0000000000000000000000000000000AA" } as const;
 
 (async () => {
   const arg = process.argv.find((a) => a.startsWith("--test-keys="))?.split("=")[1] as "pass" | "fail" | undefined;
+  if (process.argv.includes("--off") || arg) refuseCaptchaWeakeningOnDev();
   if (process.argv.includes("--off")) {
     await api("/config/auth", { method: "PATCH", body: JSON.stringify({ security_captcha_enabled: false }) });
   } else {

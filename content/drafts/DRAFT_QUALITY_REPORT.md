@@ -12,9 +12,9 @@ Date: 2026-11-14 · Branch `claude/vigilant-mendel-95k63h` · **All content AI-g
 | Clinically reviewed / approved | **0** |
 | Imported / published | **0** |
 | MCQs | 240 (36 + 60 + 18 + 12 + 24 + 24 + 42 + 24), 720 wrong-option explanations |
-| Claims traced to source text (Batch 2–4 file) | 502 of 502 matched |
+| Claims traced to source text (Batch 2–4 file) | 566 of 566 matched |
 | Statements still unsupported (flagged) | 6 clinically relevant of 18 listed (`UNTRACED_STATEMENTS.md`) |
-| Source register entries | 83 (each with `source_status`) |
+| Source register entries | 101 (each with `source_status`) |
 | Source relations audited (`SOURCE_AUDIT.csv`) | 57 (27 cited verified full text, 13 cited partial/summary, 3 cited superseded with caveat, 14 not used as evidence) |
 
 ## Batch status
@@ -34,3 +34,7 @@ Recorded in the final report for this commit and in the commit message: lint, ty
 
 ## Limitations
 AI self-review is not independent; text matching proves wording exists, not that paraphrase is perfect; several sources dated or blocked.
+
+
+## Phase 3 addendum (2026-11-15)
+See `PHASE3_BATCH1_EVIDENCE_REPORT.md` (evidence additions), `MCQ_AUDIT.md` and `EDUCATIONAL_QUALITY_REPORT.md` (MCQ and learning-experience audit), `docs/INTERACTIVE_FEATURES_PROPOSAL.md` and `docs/ISOLATED_LIVE_TESTING.md`. Coverage levels: 9 CORE, 26 PARTIAL, 5 THIN (provisional AI judgement).

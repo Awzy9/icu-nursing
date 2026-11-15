@@ -146,7 +146,7 @@ C. Turn the patient supine alone, to check the tube position quickly and to see 
 D. Increase FiO₂ at the ventilator and wait to see whether the saturation recovers before calling anyone for help.
 **Answer: B.**
 **Why correct:** Possible tube displacement is an airway emergency needing team help and the emergency procedure.
-**Why not A:** Waiting risks hypoxia.
+**Why not A:** Waiting risks hypoxia while the cause of the problem is not looked for or treated.
 **Why not C:** Turning alone is unsafe and may dislodge the tube further.
 **Why not D:** Changing FiO₂ is a setting decision and does not fix a displaced tube.
 

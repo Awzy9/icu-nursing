@@ -4,6 +4,19 @@
  * SUPABASE_ACCESS_TOKEN. The project ref is pinned so this tooling cannot touch any other project.
  */
 export const REF = "dvmevjomyaqrojsiffnf";
+/** The approved development project holds the owner's REAL Cloudflare Turnstile secret. */
+export const DEV_REF = "dvmevjomyaqrojsiffnf";
+
+/**
+ * Guard for anything that would replace or disable the project's CAPTCHA secret with a Cloudflare TEST key or switch CAPTCHA off.
+ * Such changes must never run against the approved dev project (real authentication controls). Use an isolated test project
+ * (see docs/ISOLATED_LIVE_TESTING.md). Setting the REAL secret via TURNSTILE_SECRET is not guarded.
+ */
+export function refuseCaptchaWeakeningOnDev(ref: string = REF): void {
+  if (ref === DEV_REF) {
+    throw new Error("Refusing: this would replace the real Turnstile secret with a test key (or disable CAPTCHA) on icu-nursing-dev. Run CAPTCHA-dependent live suites only against an isolated test project; see docs/ISOLATED_LIVE_TESTING.md.");
+  }
+}
 export const PROJECT_URL = `https://${REF}.supabase.co`;
 const API = "https://api.supabase.com/v1";
 

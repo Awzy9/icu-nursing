@@ -135,7 +135,7 @@ D. Asystole, because the absence of P waves with an irregular baseline is the pa
 **Why correct:** Irregularly irregular narrow QRS complexes with no distinct P waves or a wavy baseline are the hallmark of atrial fibrillation in the textbook.
 **Why not A:** Normal sinus rhythm is regular with normal P waves.
 **Why not B:** Sinus bradycardia is a regular slow rhythm.
-**Why not D:** Asystole is a flat line.
+**Why not D:** Asystole is a flat line, with no atrial or ventricular activity, so it does not fit this pattern.
 
 **Q3 (judgment).** A patient on the monitor is unresponsive and the rhythm shows no organised complexes. What is the correct priority?
 A. Print a strip and ask the doctor to confirm the rhythm first, before anyone starts any resuscitation measures.

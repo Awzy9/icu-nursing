@@ -107,9 +107,9 @@ A 58-year-old with sepsis has oozing at venepuncture sites. The platelet count h
 
 ## 17. MCQs
 **Q1 (application).** A nurse draws a citrate tube for a coagulation screen but fills it only halfway because the vein was difficult. According to the handbook she should know that:
-A. The handbook says that half-filled tubes are always acceptable, so the sample can be sent as it is without comment.
+A. The handbook says that half-filled tubes are acceptable, so the sample can be sent as it is without comment.
 B. The handbook says to fill to the line, so an under-filled tube is a specimen problem to report or repeat.
-C. The result will be the same whatever the volume, so nobody needs to be told that the tube was only half full.
+C. The result will be the same whatever the volume, so nobody needs to be told that the tube was half full.
 D. The sample should be topped up from a different tube that was taken earlier from the same patient for another test.
 **Answer: B.**
 **Why correct:** The handbook says the tube must be filled to the line; the page does not state the effect, so the safe action is to follow the instruction and tell the laboratory.
@@ -119,8 +119,8 @@ D. The sample should be topped up from a different tube that was taken earlier f
 
 **Q2 (judgment).** A patient with sepsis has a prolonged INR and aPTT but the fibrinogen is within the laboratory's range, and platelets are falling. Which interpretation is consistent with the ARUP resource?
 A. Normal fibrinogen proves that the patient does not have DIC, so the other abnormal results can be ignored by the team.
-B. Clotting times are always shortened in DIC, so the prolonged INR and aPTT must point to another cause entirely.
-C. A single normal fibrinogen means the other tests should be ignored, because fibrinogen is the only reliable marker of DIC.
+B. Clotting times are shortened in DIC, so the prolonged INR and aPTT must point to another cause.
+C. A single normal fibrinogen means the other tests should be ignored, because fibrinogen is the reliable marker of DIC.
 D. Fibrinogen can stay normal for a long time after DIC begins, so the whole picture and trend matter, and the team decides.
 **Answer: D.**
 **Why correct:** ARUP says fibrinogen is an acute phase reactant that can remain normal despite consumption and that DIC is judged by combined results and repeat testing.
@@ -136,7 +136,7 @@ D. Increase the pressure on the dressing and tell the doctor about it at the end
 **Answer: A.**
 **Why correct:** Heparin prolongs the aPTT; new bleeding must be reported immediately, and infusion or reversal decisions need an order or protocol.
 **Why not B:** Reversal and infusion changes need an order or protocol.
-**Why not C:** Waiting risks harm.
+**Why not C:** Waiting until tomorrow risks harm because the bleeding and the result need action now.
 **Why not D:** Bleeding must be reported promptly.
 
 **Q4 (understanding).** Why can a reference interval for the INR or aPTT not be applied universally?
@@ -157,8 +157,8 @@ C. Warfarin needs close monitoring with PT or INR, and vitamin K is the reversal
 D. Warfarin is monitored by the platelet count alone, which is checked once a week in every patient who takes it.
 **Answer: C.**
 **Why correct:** The textbook says warfarin requires close monitoring with PT or INR and names vitamin K as the reversal agent.
-**Why not A:** It requires monitoring.
-**Why not B:** That describes heparin.
+**Why not A:** It requires monitoring with PT or INR, because the dose effect varies between patients.
+**Why not B:** That describes heparin, which is monitored by the PTT and reversed with protamine.
 **Why not D:** Platelets do not monitor warfarin.
 
 **Q6 (scope).** Which task belongs to the prescriber, pharmacist and laboratory rather than the bedside nurse?

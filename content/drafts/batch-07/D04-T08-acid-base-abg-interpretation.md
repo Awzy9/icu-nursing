@@ -111,7 +111,7 @@ D. Respiratory acidosis, because the pH is low and the PaCO₂ is high, moving i
 **Why correct:** pH below 7.35 with PaCO₂ above 45 and a normal HCO₃ is uncompensated respiratory acidosis.
 **Why not A:** In metabolic acidosis HCO₃ is below 22.
 **Why not B:** A high PaCO₂ makes the blood more acidic.
-**Why not C:** The pH is low, not high.
+**Why not C:** The pH is low, not high, so metabolic alkalosis does not fit this blood gas.
 
 **Q2 (judgment).** A patient has a rising PaCO₂ and is increasingly drowsy, but SpO₂ is 96 % on oxygen. What is the best interpretation?
 A. The patient is fine, because the oxygen saturation is within the target range, so the rest can wait.
@@ -142,14 +142,14 @@ C. Respiratory acidosis, because an anxious patient is likely to be retaining ca
 D. Metabolic alkalosis, because the bicarbonate is within its normal range and the pH is high.
 **Answer: A.**
 **Why correct:** pH above 7.45 with PaCO₂ below 35 is respiratory alkalosis; anxiety and pain are listed causes of hyperventilation.
-**Why not B:** The pH is high.
-**Why not C:** The PaCO₂ is low.
+**Why not B:** The pH is high, which does not fit an acidosis, and the HCO₃ is normal.
+**Why not C:** The PaCO₂ is low, which does not fit respiratory acidosis, where it would be raised.
 **Why not D:** Metabolic alkalosis needs a high HCO₃.
 
 **Q5 (understanding).** What does the AARC 2013 guideline say about using a peripheral venous sample's PO₂ to assess oxygenation?
-A. It is a good substitute for PaO₂ in all patients, as long as the sample is taken promptly.
+A. It is a good substitute for PaO₂ in these patients, as long as the sample is taken promptly.
 B. It is not recommended as a substitute for an arterial PaO₂ (grade 1A).
-C. It is only acceptable in children, in whom venous samples are considered equivalent to arterial ones.
+C. It is acceptable in children, in whom venous samples are considered equivalent to arterial ones.
 D. It is the preferred sample for ventilated patients because it avoids the risks of arterial puncture.
 **Answer: B.**
 **Why correct:** Recommendation 14.7.

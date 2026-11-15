@@ -138,9 +138,9 @@ D. Notify the prescriber, because the dose may need to be reduced.
 **Why not C:** The change needs reporting.
 
 **Q4 (safety).** Which monitoring does the textbook describe for a patient receiving dobutamine?
-A. Weekly blood tests only, because the drug has effects that only appear after several days of therapy.
+A. Weekly blood tests, because the drug has effects that appear after several days of therapy.
 B. Continuous monitoring of the ECG, blood pressure, cardiac output and urine output during the whole therapy.
-C. Monitoring of the patient's body temperature only, because temperature is the key sign of a drug reaction.
+C. Monitoring of the patient's body temperature, because temperature is the key sign of a drug reaction.
 D. No special monitoring is needed, because dobutamine is considered a low-risk drug by the textbook.
 **Answer: B.**
 **Why correct:** This is the dobutamine grid statement.

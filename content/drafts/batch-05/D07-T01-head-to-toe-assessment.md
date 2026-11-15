@@ -91,20 +91,20 @@ A 70-year-old woman on day 5 after surgery is assessed head to toe. The nurse fi
 
 ## 17. MCQs
 **Q1 (prioritization).** At the start of a head-to-toe assessment, which step comes first according to the checklist?
-A. Auscultating bowel sounds in all four quadrants for a full minute before anything else is examined.
-B. Safety steps and a primary survey of airway, breathing, circulation and mental status, with emergency help if needed.
+A. Safety steps and a primary survey of airway, breathing, circulation and mental status, with emergency help if needed.
+B. Auscultating bowel sounds in all four quadrants for a full minute before anything else is examined.
 C. Measuring the weight trend and the 24-hour intake and output totals before approaching the patient.
 D. Staging any pressure injury found on the sacrum or heels, because skin findings are the most urgent.
-**Answer: B.**
+**Answer: A.**
 **Why correct:** The checklist begins with safety steps and a primary survey to ensure medical stability.
-**Why not A:** Abdominal assessment belongs to the later system-by-system stage.
+**Why not B:** Abdominal assessment belongs to the later system-by-system stage.
 **Why not C:** Weight and balance review come after the primary survey.
 **Why not D:** Skin staging is part of the integumentary assessment, later in the sequence.
 
 **Q2 (application).** During the cardiovascular assessment, which technique matches the checklist?
 A. Listen over one area of the chest for ten seconds and record the rate, then move on to the respiratory system.
-B. Palpate a single pulse on one limb only, then record that the pulses are present and move to the next system.
-C. Check the pulses on the dominant side only, because the other side will be the same in nearly every patient.
+B. Palpate a single pulse on one limb, then record that the pulses are present and move to the next system.
+C. Check the pulses on the dominant side, because the other side will be the same in nearly every patient.
 D. Compare pulses on both sides and take an apical pulse for one minute, listening in the five auscultation areas.
 **Answer: D.**
 **Why correct:** The checklist directs bilateral comparison of pulses and a one-minute apical pulse with the five areas.
@@ -130,7 +130,7 @@ C. It guides a routine, general, daily assessment by an entry-level nurse; focus
 D. It replaces the unit's monitoring and early-warning policies when a patient is in a critical care area.
 **Answer: C.**
 **Why correct:** The checklist describes itself this way.
-**Why not A:** It is not ICU-specific.
+**Why not A:** The checklist is a general inpatient tool, not an ICU-specific standard, so this does not follow.
 **Why not B:** It does not give numeric thresholds.
 **Why not D:** It supplements, not replaces, local policies.
 

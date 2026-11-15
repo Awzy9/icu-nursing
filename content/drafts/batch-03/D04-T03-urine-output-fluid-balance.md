@@ -103,15 +103,15 @@ D. Remove the catheter to see whether the patient can pass urine independently b
 **Why not D:** Removing a catheter needs an order and does not address the cause.
 
 **Q2 (application).** Which finding most suggests fluid overload in a patient receiving IV fluids?
-A. A heart rate of 110 with cold peripheries and slow capillary refill.
-B. New breathlessness with crackles, peripheral oedema and a strongly positive balance.
+A. New breathlessness with crackles, peripheral oedema and a strongly positive balance.
+B. A heart rate of 110 with cold peripheries and slow capillary refill.
 C. A low blood pressure that improves immediately with a passive leg raise.
 D. Dry mucous membranes and a falling weight over three days.
-**Answer: B.**
+**Answer: A.**
 **Why correct:** Breathlessness, oedema and positive balance suggest overload; NICE notes breathlessness on leg raising as a sign.
-**Why not A:** Suggests hypoperfusion or hypovolaemia.
+**Why not B:** Suggests hypoperfusion or hypovolaemia.
 **Why not C:** Improvement suggests fluid responsiveness.
-**Why not D:** Suggests dehydration.
+**Why not D:** A pale, concentrated or scant output would suggest dehydration, not a normal urine output.
 
 **Q3 (judgment).** A patient on IV fluids is now drinking and tolerating enteral feeds. What is the best nursing action?
 A. Continue the IV fluids unchanged, as the prescriber has not stopped them and the plan is reviewed daily anyway.
@@ -133,7 +133,7 @@ D. Ask the next shift to deal with the discrepancy once the patient has been han
 **Why correct:** Accurate, honest documentation and reporting protect the patient; NICE advises reporting mismanagement incidents.
 **Why not A:** Estimating and recording as measured is falsification.
 **Why not C:** The balance can be corrected with a transparent note.
-**Why not D:** Delay reduces safety.
+**Why not D:** Delay reduces safety because a falling urine output is a warning sign that needs action.
 
 **Q5 (prioritization).** Which patient needs the nurse first?
 A. A stable balance, normal output, normal observations and no symptoms during this shift.

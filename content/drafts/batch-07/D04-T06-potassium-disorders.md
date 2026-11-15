@@ -114,8 +114,8 @@ D. Normal, because the guideline's threshold for calling a serum potassium level
 
 **Q2 (judgment).** A potassium of 7.1 mmol/L is reported on a sample that took four hours to reach the laboratory, in a patient who looks well with a normal ECG. What is the best nursing action?
 A. Report it, explain the sample delay and ECG, and help repeat the potassium (for example by point-of-care analysis), while keeping the patient monitored.
-B. Ignore the result, because a delayed sample is always wrong and the patient looks well and has a normal ECG.
-C. Start treatment without telling anyone, because a potassium above 7.0 mmol/L is always an emergency in every patient.
+B. Ignore the result, because a delayed sample is wrong and the patient looks well and has a normal ECG.
+C. Start treatment without telling anyone, because a potassium above 7.0 mmol/L is an emergency whatever the sample looks like.
 D. Delay the report until the next scheduled blood test, to avoid disturbing the team about a result that may be spurious.
 **Answer: A.**
 **Why correct:** Prolonged transit is a recognised cause of pseudohyperkalaemia, but a normal ECG does not exclude real hyperkalaemia, so the nurse reports, rechecks and monitors.
@@ -124,8 +124,8 @@ D. Delay the report until the next scheduled blood test, to avoid disturbing the
 **Why not D:** A critical result must be reported promptly.
 
 **Q3 (safety).** A patient has been treated with insulin and glucose infusion for severe hyperkalaemia. Which monitoring does UKKA recommend?
-A. Blood glucose only if the patient has diabetes, because only people with diabetes ever become hypoglycaemic after insulin.
-B. Blood glucose once, at the end of the infusion, and then only if the patient reports feeling unwell afterwards.
+A. Blood glucose if the patient has diabetes, because people with diabetes become hypoglycaemic after insulin.
+B. Blood glucose once, at the end of the infusion, and then if the patient reports feeling unwell afterwards.
 C. No further blood tests, because the potassium has already been shifted into cells and rebound does not occur.
 D. Regular blood glucose measurements at set intervals after the infusion, and repeat potassium at set times.
 **Answer: D.**

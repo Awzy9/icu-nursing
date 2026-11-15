@@ -109,7 +109,7 @@ D. They are legally required in every hospital in every country that cares for m
 **Answer: B.**
 **Why correct:** This is the SCCM statement.
 **Why not A:** No such guarantee is stated.
-**Why not C:** Scales remain necessary.
+**Why not C:** Scales remain necessary because they give a structured, repeatable measure of sedation depth.
 **Why not D:** The statement is not a legal requirement.
 
 **Q3 (prioritization).** An agitated, ventilated patient has a high pain score with signs of bladder distension, and the family asks for restraints. What should the nurse do first?

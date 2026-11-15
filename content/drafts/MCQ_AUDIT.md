@@ -1,0 +1,176 @@
+# MCQ audit (automated; 2026-11-15)
+Questions audited: **240** across 40 drafts. Answer positions A/B/C/D: 59/63/60/58.
+Correct option is the unique longest: **84** (35.0 %). Keys with absolute wording: 12; distractors with absolute wording: 67.
+Questions with at least one automated flag: **124**.
+
+## Flags
+- D06-T01 Q2 (key A): no clinical context in an application-type stem
+- D06-T01 Q3 (key C): correct option is the unique longest
+- D06-T01 Q5 (key D): very short stem (possible recall-only question)
+- D06-T01 Q6 (key C): correct option is the unique longest
+- D06-T04 Q2 (key A): no clinical context in an application-type stem
+- D06-T04 Q3 (key D): correct option is the unique longest
+- D06-T04 Q5 (key A): correct option is the unique longest; no clinical context in an application-type stem
+- D06-T05 Q3 (key A): correct option is the unique longest; no clinical context in an application-type stem
+- D06-T05 Q4 (key C): correct option is the unique longest
+- D06-T05 Q5 (key B): no clinical context in an application-type stem
+- D07-T04 Q5 (key D): correct option is the unique longest; no clinical context in an application-type stem
+- D07-T04 Q6 (key B): correct option is the unique longest
+- D09-T01 Q4 (key D): correct option is the unique longest
+- D09-T01 Q5 (key B): no clinical context in an application-type stem; very short stem (possible recall-only question)
+- D09-T02 Q1 (key C): correct option is the unique longest
+- D09-T02 Q2 (key B): correct option is the unique longest; no clinical context in an application-type stem; very short stem (possible recall-only question)
+- D09-T02 Q5 (key C): correct option is the unique longest; no clinical context in an application-type stem; very short stem (possible recall-only question)
+- D01-T03 Q4 (key B): correct option is the unique longest; no clinical context in an application-type stem
+- D01-T03 Q6 (key C): correct option is the unique longest; very short stem (possible recall-only question)
+- D01-T07 Q3 (key D): correct option is the unique longest
+- D01-T07 Q4 (key A): no clinical context in an application-type stem
+- D01-T07 Q6 (key C): correct option is the unique longest; no clinical context in an application-type stem
+- D01-T11 Q2 (key A): correct option is the unique longest; no clinical context in an application-type stem
+- D01-T11 Q3 (key C): correct option is the unique longest
+- D01-T11 Q5 (key C): correct option is the unique longest
+- D02-T08 Q1 (key C): correct option is the unique longest
+- D02-T08 Q3 (key D): very short stem (possible recall-only question)
+- D02-T08 Q5 (key B): no clinical context in an application-type stem
+- D02-T08 Q6 (key A): correct option is the unique longest
+- D02-T14 Q5 (key B): correct option is the unique longest
+- D02-T15 Q2 (key D): no clinical context in an application-type stem
+- D02-T15 Q4 (key A): very short stem (possible recall-only question)
+- D03-T10 Q4 (key D): correct option is the unique longest
+- D03-T10 Q5 (key B): correct option is the unique longest; very short stem (possible recall-only question)
+- D04-T02 Q5 (key C): no clinical context in an application-type stem
+- D04-T02 Q6 (key C): correct option is the unique longest
+- D06-T07 Q2 (key D): very short stem (possible recall-only question)
+- D06-T07 Q4 (key C): correct option is the unique longest
+- D06-T07 Q5 (key D): correct option is the unique longest
+- D06-T07 Q6 (key A): correct option is the unique longest
+- D07-T06 Q1 (key A): correct option is the unique longest
+- D07-T06 Q2 (key D): correct option is the unique longest
+- D07-T06 Q5 (key C): correct option is the unique longest
+- D01-T12 Q1 (key B): no clinical context in an application-type stem
+- D01-T12 Q2 (key D): correct option is the unique longest
+- D01-T12 Q3 (key C): correct option is the unique longest
+- D01-T12 Q4 (key A): correct option is the unique longest; no clinical context in an application-type stem
+- D01-T12 Q5 (key D): very short stem (possible recall-only question)
+- D03-T01 Q2 (key C): no clinical context in an application-type stem
+- D03-T01 Q3 (key D): no clinical context in an application-type stem
+- D03-T01 Q4 (key B): correct option is the unique longest
+- D03-T01 Q6 (key D): correct option is the unique longest
+- D04-T03 Q2 (key A): correct option is the unique longest
+- D04-T03 Q4 (key B): correct option is the unique longest
+- D04-T03 Q5 (key B): very short stem (possible recall-only question)
+- D01-T19 Q1 (key D): correct option is the unique longest
+- D01-T19 Q4 (key C): very short stem (possible recall-only question)
+- D01-T19 Q5 (key A): no clinical context in an application-type stem
+- D02-T04 Q2 (key A): no clinical context in an application-type stem
+- D02-T04 Q3 (key C): correct option is the unique longest; generic or 'of the above' wording; no clinical context in an application-type stem
+- D02-T04 Q5 (key B): correct option is the unique longest
+- D03-T09 Q2 (key B): short or missing 'why correct'
+- D03-T09 Q3 (key C): correct option is the unique longest
+- D03-T09 Q5 (key B): correct option is the unique longest; no clinical context in an application-type stem; short or missing 'why correct'; very short stem (possible recall-only question)
+- D07-T01 Q1 (key A): correct option is the unique longest; no clinical context in an application-type stem
+- D07-T01 Q2 (key D): correct option is the unique longest; no clinical context in an application-type stem
+- D07-T01 Q4 (key C): correct option is the unique longest; very short stem (possible recall-only question)
+- D07-T01 Q5 (key C): no clinical context in an application-type stem
+- D07-T01 Q6 (key B): no clinical context in an application-type stem
+- D07-T03 Q2 (key A): correct option is the unique longest
+- D07-T03 Q4 (key B): correct option is the unique longest
+- D09-T03 Q1 (key C): correct option is the unique longest
+- D09-T03 Q2 (key A): correct option is the unique longest
+- D09-T03 Q3 (key D): no clinical context in an application-type stem
+- D09-T03 Q5 (key B): no clinical context in an application-type stem; very short stem (possible recall-only question)
+- D09-T03 Q6 (key C): correct option is the unique longest
+- D02-T09 Q2 (key B): correct option is the unique longest
+- D02-T09 Q5 (key A): correct option is the unique longest
+- D02-T09 Q6 (key D): generic or 'of the above' wording
+- D02-T12 Q1 (key A): correct option is the unique longest
+- D02-T12 Q3 (key B): correct option is the unique longest
+- D02-T12 Q4 (key D): correct option is the unique longest
+- D02-T12 Q5 (key C): generic or 'of the above' wording
+- D05-T16 Q1 (key C): correct option is the unique longest
+- D05-T16 Q2 (key A): correct option is the unique longest
+- D05-T16 Q6 (key A): correct option is the unique longest
+- D08-T03 Q1 (key B): correct option is the unique longest
+- D08-T03 Q2 (key D): correct option is the unique longest
+- D08-T03 Q3 (key A): correct option is the unique longest
+- D08-T03 Q4 (key C): no clinical context in an application-type stem
+- D01-T17 Q1 (key B): correct option is the unique longest
+- D01-T17 Q3 (key A): correct option is the unique longest; no clinical context in an application-type stem
+- D01-T17 Q5 (key B): correct option is the unique longest
+- D01-T17 Q6 (key A): generic or 'of the above' wording
+- D02-T02 Q5 (key A): correct option is the unique longest
+- D02-T02 Q6 (key C): very short stem (possible recall-only question)
+- D04-T06 Q2 (key A): correct option is the unique longest
+- D04-T06 Q5 (key C): correct option is the unique longest
+- D04-T06 Q6 (key A): correct option is the unique longest
+- D04-T08 Q1 (key D): no clinical context in an application-type stem
+- D04-T08 Q2 (key B): correct option is the unique longest
+- D04-T08 Q3 (key C): correct option is the unique longest
+- D04-T08 Q5 (key B): short or missing 'why correct'
+- D04-T09 Q1 (key B): correct option is the unique longest
+- D04-T09 Q2 (key D): short or missing 'why correct'
+- D04-T09 Q3 (key A): no clinical context in an application-type stem
+- D04-T09 Q4 (key C): no clinical context in an application-type stem
+- D04-T09 Q6 (key B): correct option is the unique longest
+- D05-T01 Q1 (key A): no clinical context in an application-type stem
+- D05-T01 Q4 (key C): correct option is the unique longest
+- D05-T01 Q5 (key B): correct option is the unique longest
+- D05-T03 Q1 (key A): correct option is the unique longest; very short stem (possible recall-only question)
+- D05-T03 Q2 (key C): no clinical context in an application-type stem
+- D05-T03 Q4 (key B): correct option is the unique longest
+- D05-T03 Q5 (key C): no clinical context in an application-type stem
+- D01-T06 Q1 (key B): correct option is the unique longest
+- D01-T06 Q4 (key C): correct option is the unique longest
+- D01-T06 Q5 (key C): very short stem (possible recall-only question)
+- D01-T09 Q3 (key B): correct option is the unique longest
+- D03-T03 Q1 (key D): correct option is the unique longest
+- D03-T03 Q2 (key B): correct option is the unique longest
+- D03-T03 Q5 (key C): correct option is the unique longest; no clinical context in an application-type stem
+- D08-T02 Q1 (key B): stem does not end with a question or statement
+- D08-T02 Q2 (key D): correct option is the unique longest
+
+Question-type tags: judgment 43, prioritization 23, application 44, understanding 40, scope 37, safety 36, monitoring 14, assessment 1, documentation 2.
+
+## Per topic (positions A/B/C/D; unique-longest keys)
+| Topic | MCQs | A/B/C/D | Longest-key |
+|---|---|---|---|
+| D06-T01 | 6 | 1/1/2/2 | 2 |
+| D06-T04 | 6 | 3/1/0/2 | 2 |
+| D06-T05 | 6 | 1/2/2/1 | 2 |
+| D07-T04 | 6 | 1/2/1/2 | 2 |
+| D09-T01 | 6 | 1/2/2/1 | 1 |
+| D09-T02 | 6 | 1/1/2/2 | 3 |
+| D01-T03 | 6 | 1/1/2/2 | 2 |
+| D01-T07 | 6 | 1/2/2/1 | 2 |
+| D01-T11 | 6 | 1/2/2/1 | 3 |
+| D02-T08 | 6 | 2/2/1/1 | 2 |
+| D02-T14 | 6 | 2/2/0/2 | 1 |
+| D02-T15 | 6 | 2/1/2/1 | 0 |
+| D03-T10 | 6 | 2/2/0/2 | 2 |
+| D04-T02 | 6 | 1/1/2/2 | 1 |
+| D06-T07 | 6 | 2/1/1/2 | 3 |
+| D07-T06 | 6 | 2/2/1/1 | 3 |
+| D01-T12 | 6 | 1/2/1/2 | 3 |
+| D03-T01 | 6 | 1/1/2/2 | 2 |
+| D04-T03 | 6 | 1/2/2/1 | 2 |
+| D01-T19 | 6 | 1/2/1/2 | 1 |
+| D02-T04 | 6 | 2/2/1/1 | 2 |
+| D03-T09 | 6 | 2/2/1/1 | 2 |
+| D07-T01 | 6 | 1/2/2/1 | 3 |
+| D07-T03 | 6 | 2/1/2/1 | 2 |
+| D09-T03 | 6 | 1/2/2/1 | 3 |
+| D02-T09 | 6 | 2/1/1/2 | 2 |
+| D02-T12 | 6 | 1/2/2/1 | 3 |
+| D05-T16 | 6 | 2/1/1/2 | 3 |
+| D08-T03 | 6 | 1/2/2/1 | 3 |
+| D01-T17 | 6 | 2/2/1/1 | 3 |
+| D02-T02 | 6 | 2/1/2/1 | 1 |
+| D04-T06 | 6 | 2/1/2/1 | 3 |
+| D04-T08 | 6 | 1/2/1/2 | 2 |
+| D04-T09 | 6 | 1/2/2/1 | 2 |
+| D05-T01 | 6 | 2/1/1/2 | 2 |
+| D05-T03 | 6 | 2/1/2/1 | 2 |
+| D01-T06 | 6 | 1/1/2/2 | 2 |
+| D01-T09 | 6 | 1/2/2/1 | 1 |
+| D03-T03 | 6 | 2/1/2/1 | 3 |
+| D08-T02 | 6 | 1/2/1/2 | 1 |

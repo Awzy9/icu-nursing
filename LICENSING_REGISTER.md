@@ -71,3 +71,19 @@ Each topic/question/scenario stores: source IDs, a note of *what was independent
 | Brain Trauma Foundation Severe TBI Guidelines 4th ed (2016) | **RED (unconfirmed)** | No copyright statement located in the text read | Cite and paraphrase recommendation statements with level and population | Reproduce tables; apply to non-TBI | Verify BTF reuse terms |
 | UHS Sussex NHS Pathology User Guide page | **YELLOW** | Licence not read | Cite as one laboratory's local information | Present local ranges as universal | Verify |
 | ARUP Consult pages (DIC; anticoagulant effects) | **RED** | (c) ARUP Laboratories. All Rights Reserved. | Cite; paraphrase | Reproduce tables or scoring systems | Permission needed for reproduction |
+
+## Additions from Phase 3 (checked 2026-11-15)
+| Source | Class | Licence evidence | Allowed | Not allowed | Action |
+|---|---|---|---|---|---|
+| US FDA-approved drug labels via openFDA (ten drugs; one manufacturer label each) | **YELLOW** | FDA-published labelling; manufacturer copyright and openFDA terms not read | Cite; paraphrase safety statements | Reproduce label text or dosing; present US labelling as universal | Verify openFDA and manufacturer terms before any wider use |
+| JAMA Netw Open 2026 peripheral vasopressor meta-analysis (PMC12993702) | **GREEN** | "Open access article distributed under the terms of the CC-BY License" | Reuse with attribution | – | Keep attribution |
+| Crit Care Explor 2026 (PMC13506231) and Cardiovasc Diagn Ther 2025 (PMC12432607) | **YELLOW** | CC BY-NC-ND 4.0 | Cite and paraphrase for non-commercial use | Commercial reuse; derivatives | Check before any commercial release |
+| J Patient Saf 2026 potassium safeguards (PMC13492640) | **GREEN** | CC BY 4.0 | Reuse with attribution | – | Keep attribution |
+| J Multidiscip Healthc 2026 peri-extubation summary (PMC13715538) | **YELLOW** | CC BY-NC | Non-commercial reuse with attribution | Commercial reuse | Check before commercial release |
+| NICE CG32 and NG24 | **YELLOW** | NICE copyright; Notice of rights not read | Cite | Reproduce text | Verify NICE terms (same approach as other NICE content) |
+| NHS Improvement Patient Safety Alert NHS/PSA/RE/2016/006 | **YELLOW** | Licence not read | Cite | – | Verify (NHS England publications are often under the Open Government Licence; not confirmed here) |
+| Draeger Evita Infinity V500 Instructions for Use | **RED** | Manufacturer copyright; third-party-hosted copy | Cite; paraphrase general behaviours labelled device-specific | Reproduce alarm tables, screenshots, figures | Written permission needed for reproduction |
+| AACN Practice Alerts (public summaries only) | **RED** | AACN copyright; full text login-only | Cite the public summary | Access or copy login-only text; reproduce | Membership/permission needed for full text |
+| NMC Code and Standards of proficiency for registered nurses | **YELLOW** | NMC copyright; terms not read | Cite and paraphrase | Reproduce | Verify |
+| NCSBN/ANA National Guidelines for Nursing Delegation (2019) | **YELLOW** | NCSBN copyright; terms not read | Cite and paraphrase | Reproduce | Verify |
+| Canberra Health Services ICU procedures (arterial line; CRRT) | **UNVERIFIED** | HTTP 403; not read | – | – | Obtain permission or an accessible copy |

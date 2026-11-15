@@ -107,13 +107,13 @@ D. Stop suctioning, restore oxygenation per protocol, assess the patient and cal
 **Why not C:** Waiting prolongs hypoxaemia.
 
 **Q2 (application).** Which finding best indicates a need for suctioning in an intubated adult?
-A. The clock shows it is two hours since the last suction.
-B. Audible secretions in the airway and a sawtooth flow waveform on the ventilator.
+A. Audible secretions in the airway and a sawtooth flow waveform on the ventilator.
+B. The clock shows it is two hours since the last suction.
 C. The patient is awake and tolerating the tube without coughing.
 D. The family asks that the tube be cleaned.
-**Answer: B.**
+**Answer: A.**
 **Why correct:** AARC lists breath sounds, visible secretions and sawtooth waveform as indicators.
-**Why not A:** The guideline does not recommend scheduled suctioning for adults on the basis of time alone.
+**Why not B:** The guideline does not recommend scheduled suctioning for adults on the basis of time alone.
 **Why not C:** Absence of cough does not signal need.
 **Why not D:** A request is not a clinical indication.
 

@@ -91,14 +91,14 @@ A 74-year-old man with COPD is admitted with an infection. His prescribed target
 ## 17. MCQs
 **Q1 (prioritization).** At the routine round a nurse finds a patient with an aggregate NEWS2 of 7 and new confusion. What should the nurse do first?
 A. Repeat the observations in four hours, since the patient is already receiving oxygen and the trend can be reviewed then.
-B. Inform the medical team immediately, ask for an emergency assessment by a critical-care team, and start continuous monitoring.
+B. Record the score and ask the family to stay with the patient overnight so that they can alert staff if there is any change.
 C. Increase the oxygen until the saturation reads 100% and then re-score, because the score should fall once saturation rises.
-D. Record the score and ask the family to stay with the patient overnight so that they can alert staff if there is any change.
-**Answer: B.**
+D. Inform the medical team immediately, ask for an emergency assessment by a critical-care team, and start continuous monitoring.
+**Answer: D.**
 **Why correct:** Seven or more is the emergency response threshold: immediate call, critical-care assessment, continuous monitoring.
 **Why not A:** A four-hour interval is far too long at this score.
 **Why not C:** Over-oxygenation is not the aim and the score reflects physiology, not just saturation.
-**Why not D:** Family presence does not replace an emergency response.
+**Why not B:** Family presence does not replace an emergency response.
 
 **Q2 (judgment).** A nurse is worried about a patient who looks tired and is breathing quickly, but the NEWS2 is only 3. What does RCP advise?
 A. Wait until the score reaches 5 before calling anyone, because lower scores are not considered a reason to call.
@@ -135,14 +135,14 @@ D. Patients who have been on the intensive care unit for more than a week, becau
 
 **Q5 (documentation).** Why does RCP recommend recording the oxygen device and flow rate as well as the saturation?
 A. A flow rate alone does not define how much oxygen the patient receives, so the device is needed too.
-B. The device is needed for equipment audit only and has no bearing on how the observations are interpreted.
-C. Saturation is not important once oxygen is being given, so only the device and flow need to be recorded.
+B. The device is needed for equipment audit and has no bearing on how the observations are interpreted.
+C. Saturation is not important once oxygen is being given, so the device and flow need to be recorded.
 D. The device determines the legal responsibility of the nurse for any change in the patient's oxygen need.
 **Answer: A.**
 **Why correct:** RCP states recording flow without the delivery device does not define the oxygen received.
 **Why not B:** The purpose is clinical interpretation.
 **Why not C:** Saturation remains a key parameter.
-**Why not D:** Not the reason given.
+**Why not D:** This is not the reason the guidance gives for recording the oxygen device.
 
 **Q6 (scope).** Which task belongs to the responding clinician rather than the nurse?
 A. Counting the respiratory rate for a full minute and recording the result on the chart.
@@ -151,8 +151,8 @@ C. Informing the medical team promptly of a rising early-warning score and the n
 D. Charting the oxygen device and flow rate beside each set of observations.
 **Answer: B.**
 **Why correct:** Choosing respiratory support is a prescriber or team decision.
-**Why not A:** Nursing assessment task.
-**Why not C:** Nursing escalation task.
+**Why not A:** Reassessing and recording is a nursing assessment task, so it is not the prescriber's decision.
+**Why not C:** Escalating a concern using a structured tool is a nursing task, not a prescriber decision.
 **Why not D:** Nursing documentation task.
 
 ## 18. References

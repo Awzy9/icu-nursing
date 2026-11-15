@@ -165,8 +165,8 @@ D. Reviewing and changing the patient's medicines to reduce delirium risk.
 **Q5 (understanding).** Which statement about hypoactive delirium is correct?
 A. It is harmless because the patient is calm and quiet, so no further assessment or action is needed from staff.
 B. It is often missed, so look for withdrawal, slow responses, reduced movement, poor concentration and reduced appetite.
-C. It only affects people who already have dementia, so it can be ruled out in anyone without that diagnosis.
-D. It always needs sedation to prevent harm, because untreated delirium becomes dangerous within a few hours.
+C. It affects people who already have dementia, so it can be ruled out in anyone without that diagnosis.
+D. It needs sedation to prevent harm, because untreated delirium becomes dangerous within a few hours.
 **Answer: B.**
 **Why correct:** NICE advises particular vigilance because hypoactive delirium is often missed.
 **Why not A:** It carries the same risks of poor outcomes.

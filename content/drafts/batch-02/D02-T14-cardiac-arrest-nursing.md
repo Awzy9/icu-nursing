@@ -120,13 +120,13 @@ D. Prepare and give the first drug before starting compressions, to save time wh
 **Why not D:** Drug administration belongs to the team and follows compressions.
 
 **Q2 (application).** Which description of compressions on an adult in a bed matches ERC 2025 BLS?
-A. Compress 3–4 cm at a rate of about 80 per minute, leaning on the chest between compressions to keep the hands in place.
-B. At least 5 cm but not more than 6 cm, 100–120 per minute, full recoil, deeper to compensate for a soft mattress.
+A. At least 5 cm but not more than 6 cm, 100–120 per minute, full recoil, deeper to compensate for a soft mattress.
+B. Compress 3–4 cm at a rate of about 80 per minute, leaning on the chest between compressions to keep the hands in place.
 C. Compress as hard as possible and as fast as possible, ignoring recoil, so that the blood flow is maximal.
 D. Compress only once per second after the airway has been secured, since compressions before that are ineffective.
-**Answer: B.**
+**Answer: A.**
 **Why correct:** Matches the BLS text, including bed use and compensation.
-**Why not A:** Too shallow, too slow, and leaning prevents recoil.
+**Why not B:** Too shallow, too slow, and leaning prevents recoil.
 **Why not C:** Excessive speed and no recoil reduce effectiveness.
 **Why not D:** Compressions should not wait for the airway.
 

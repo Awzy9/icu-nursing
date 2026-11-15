@@ -7,6 +7,7 @@ import { expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { RUN, PASSWORD, adminAuth, api, emailFor, makeUser, newClient, sql, totp } from "../live/helpers";
 import { adminStorageRemove } from "../../scripts/live/admin";
+import { refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
 import { cleanup } from "../live/helpers";
 
 test.describe.configure({ mode: "serial" });
@@ -98,7 +99,7 @@ test("CAPTCHA: the widget loads under the CSP and fills the form; a missing toke
   await expect(page.locator("main").getByRole("alert")).toContainText("Please complete the security check.");
   await expect(page).toHaveURL(/\/login/);
   // 2) the provider rejects the token (Cloudflare TEST secret that always fails), then restore the passing secret
-  const secret = (s: string) => api("/config/auth", { method: "PATCH", body: JSON.stringify({ security_captcha_enabled: true, security_captcha_provider: "turnstile", security_captcha_secret: s }) });
+  const secret = (s: string) => { refuseCaptchaWeakeningOnDev(); return api("/config/auth", { method: "PATCH", body: JSON.stringify({ security_captcha_enabled: true, security_captcha_provider: "turnstile", security_captcha_secret: s }) }); };
   const settled = async (want: "captcha_failed" | "ok") => {
     for (let i = 0; i < 15; i++) {
       const r = await newClient().auth.signInWithPassword({ email: learner.email, password: PASSWORD });

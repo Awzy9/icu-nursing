@@ -125,8 +125,8 @@ D. Assess the patient and airway, manage secretions per policy, and report the p
 
 **Q3 (understanding).** Which statement about plateau pressure is consistent with the review?
 A. It is measured in an end-inspiratory pause with no flow and approximates alveolar pressure when conditions are passive.
-B. It is always exactly the same as the peak inspiratory pressure in a healthy patient who is breathing without any effort.
-C. It reflects only the resistance of the endotracheal tube and does not depend on the lungs or the chest wall at all.
+B. It is exactly the same as the peak inspiratory pressure in a healthy patient who is breathing without any effort.
+C. It reflects the resistance of the endotracheal tube and does not depend on the lungs or the chest wall at all.
 D. It is measured while the patient is coughing, because coughing produces the highest pressure that the system can reach.
 **Answer: A.**
 **Why correct:** This is the review's description.
@@ -152,7 +152,7 @@ C. It is an educational review with a selective overview and the authors' own in
 D. It prescribes the ventilator settings that should be used for every patient who needs mechanical ventilation.
 **Answer: C.**
 **Why correct:** The review itself says it is a selective overview and states the author's interpretation.
-**Why not A:** It is not a guideline.
+**Why not A:** It is not a guideline: the authors describe it as a selective overview with their interpretation.
 **Why not B:** It is brand-neutral and gives trade names only as examples.
 **Why not D:** It says optimal settings are patient-specific.
 

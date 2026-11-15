@@ -113,8 +113,8 @@ D. Reduce the observation frequency so that the team is not disturbed by further
 **Why not D:** More frequent observation, not less, is appropriate when the nurse is worried.
 
 **Q4 (understanding).** According to the AHRQ TeamSTEPPS page, which statement about SBAR is accurate?
-A. It must always be delivered in a fixed order and include all four parts, even in an emergency, or it is not SBAR.
-B. It is meant only for physicians and is not designed for nurses.
+A. It must be delivered in a fixed order with all four parts, even in an emergency, or it is not SBAR.
+B. It is meant for physicians and is not designed for nurses.
 C. It replaces the written record once a call has been made.
 D. It is adaptable: the parts used can fit the situation, and a repeat-back confirms the response agreed.
 **Answer: D.**

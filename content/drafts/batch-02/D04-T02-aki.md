@@ -117,13 +117,13 @@ D. A weight gain of 1 kg over two days with no other changes.
 **Q3 (safety).** A patient at risk of AKI is prescribed an NSAID for pain. What is the best nursing action?
 A. Give it as prescribed, because simple analgesics are rarely a problem for the kidneys and pain control is the priority.
 B. Withhold it permanently and remove it from the chart yourself, so that no other nurse gives it to this patient.
-C. Query the order against risk factors and kidney results, ask the prescriber or pharmacist to review it, and document.
-D. Give half of the prescribed dose to reduce the risk to the kidneys, then monitor the urine output closely.
-**Answer: C.**
+C. Give half of the prescribed dose to reduce the risk to the kidneys, then monitor the urine output closely.
+D. Query the order against risk factors and kidney results, ask the prescriber or pharmacist to review it, and document.
+**Answer: D.**
 **Why correct:** NSAIDs can cause or worsen AKI, especially with hypovolaemia; the nurse queries and escalates.
 **Why not A:** NSAIDs are a recognised risk factor.
 **Why not B:** Nurses do not remove prescriptions; they query them.
-**Why not D:** Changing doses without an order is outside scope.
+**Why not C:** Changing doses without an order is outside scope.
 
 **Q4 (judgment).** A patient has potassium that has risen, new ECG changes and falling urine output despite treatment. What is the most appropriate action?
 A. Record the values and review them with the next set of routine bloods in the morning, when the team has more time.
@@ -137,8 +137,8 @@ D. Start the unit potassium-lowering protocol and carry on with other tasks with
 **Why not D:** Using a protocol is appropriate if present, but not informing the team is unsafe.
 
 **Q5 (application).** Which statement about loop diuretics in AKI matches NICE NG148?
-A. They should be given routinely to every patient with AKI to restore urine output and prevent progression of the injury.
-B. They are never allowed in any patient with kidney problems, because they always make kidney damage worse.
+A. They should be given routinely to patients with AKI to restore urine output and prevent progression of the injury.
+B. They are not allowed in patients with kidney problems, because they make kidney damage worse.
 C. Routine use to treat AKI is not recommended, but they may be considered for fluid overload or oedema.
 D. They are the first-line treatment for a urinary obstruction, because they flush the blockage out of the kidney.
 **Answer: C.**

@@ -6,6 +6,7 @@
  */
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { adminStorageRemove } from "../../scripts/live/admin";
+import { refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
 import { PASSWORD, RUN, actor, adminAuth, aalOf, api, cleanup, emailFor, makeUser, newClient, png, rawClient, signIn, sql, totp, withMfa, type Actor } from "./helpers";
 
 const slug = (n: string) => `live-${RUN}-${n}`;
@@ -124,7 +125,7 @@ describe("1-2. Authentication, sessions and email verification", () => {
 });
 
 describe("2b. CAPTCHA (Cloudflare Turnstile, verified server-side by Supabase Auth)", () => {
-  const setSecret = (mode: "pass" | "fail") => api("/config/auth", { method: "PATCH", body: JSON.stringify({ security_captcha_enabled: true, security_captcha_provider: "turnstile", security_captcha_secret: mode === "pass" ? "1x0000000000000000000000000000000AA" : "2x0000000000000000000000000000000AA" }) });
+  const setSecret = (mode: "pass" | "fail") => { refuseCaptchaWeakeningOnDev(); return api("/config/auth", { method: "PATCH", body: JSON.stringify({ security_captcha_enabled: true, security_captcha_provider: "turnstile", security_captcha_secret: mode === "pass" ? "1x0000000000000000000000000000000AA" : "2x0000000000000000000000000000000AA" }) }); }
   it("is enabled on the project with the Turnstile provider", async () => {
     const c = await api<Record<string, unknown>>("/config/auth");
     expect(c.security_captcha_enabled).toBe(true);

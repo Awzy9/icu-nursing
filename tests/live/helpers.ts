@@ -5,8 +5,8 @@ import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { PROJECT_URL, REF, sql } from "../../scripts/live/mgmt";
 import { adminAuth, createTestUser, deleteTestUser } from "../../scripts/live/admin";
 
-import { api } from "../../scripts/live/mgmt";
-export { sql, adminAuth, api, PROJECT_URL, REF };
+import { api, refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
+export { sql, adminAuth, api, PROJECT_URL, REF, refuseCaptchaWeakeningOnDev };
 
 function loadEnv() {
   const env: Record<string, string> = {};

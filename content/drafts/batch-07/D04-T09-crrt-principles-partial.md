@@ -95,8 +95,8 @@ A patient on CRRT with heparin in the circuit has a platelet count that falls ma
 **Q1 (understanding).** For which patients does KDIGO 2012 suggest using CRRT rather than standard intermittent RRT?
 A. Patients who are well, walking and eating, so that the treatment can be carried out outside the unit.
 B. Haemodynamically unstable patients, and patients with acute brain injury or raised intracranial pressure.
-C. Only patients who have no urine output and no sign of any other organ dysfunction in the ICU.
-D. Only paediatric patients, because CRRT is not used in adults who have acute kidney injury.
+C. Patients who have no urine output and no sign of any other organ dysfunction in the ICU.
+D. Paediatric patients, because CRRT is not used in adults who have acute kidney injury.
 **Answer: B.**
 **Why correct:** KDIGO suggests CRRT for haemodynamically unstable patients (2B) and for brain injury or raised intracranial pressure (2B).
 **Why not A:** Stable, well patients are not a group the guideline singles out for CRRT.
@@ -105,12 +105,12 @@ D. Only paediatric patients, because CRRT is not used in adults who have acute k
 
 **Q2 (safety).** A patient on CRRT has a fast-falling platelet count and HIT is suspected. What does KDIGO 2012 state?
 A. Continue heparin at a higher rate to keep the circuit open while the cause of the fall is investigated.
-B. Heparin may continue in the circuit itself but must be stopped in the flushes and locks only.
-C. No change is needed because HIT never occurs during renal replacement therapy in an ICU patient.
+B. Heparin may continue in the circuit itself but must be stopped in the flushes and locks.
+C. No change is needed because HIT does not occur during renal replacement therapy in an ICU patient.
 D. All heparin must be stopped, and a direct thrombin or Factor Xa inhibitor is recommended instead.
 **Answer: D.**
 **Why correct:** Recommendation 5.3.4 (1A).
-**Why not A:** Heparin worsens HIT.
+**Why not A:** Heparin worsens HIT, so continuing or increasing it would harm the patient.
 **Why not B:** The statement is that all heparin must be stopped, not part of it.
 **Why not C:** HIT can occur with heparin exposure in RRT.
 

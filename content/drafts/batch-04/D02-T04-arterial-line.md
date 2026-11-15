@@ -97,14 +97,14 @@ A 62-year-old woman on noradrenaline has a radial arterial line. At 03:00 the wa
 ## 17. MCQs
 **Q1 (judgment).** The arterial waveform suddenly becomes flat and the mean pressure reads very low, but the patient looks unchanged. What should the nurse do first?
 A. Increase the vasopressor rate to bring the pressure up, since the display shows hypotension and the patient may be unwell.
-B. Assess the patient and take a cuff reading, check the line and connections, and report if it cannot be corrected.
+B. Flush the line repeatedly with the pressure bag until a waveform returns, without checking the patient or the connections.
 C. Ignore the reading because arterial lines often give unreliable values and the patient appears to be unchanged.
-D. Flush the line repeatedly with the pressure bag until a waveform returns, without checking the patient or the connections.
-**Answer: B.**
+D. Assess the patient and take a cuff reading, check the line and connections, and report if it cannot be corrected.
+**Answer: D.**
 **Why correct:** Treat the patient, not the number; check clinically, compare with a cuff reading, check the system, escalate if unresolved.
 **Why not A:** Changing infusions on an unverified reading is unsafe, and needs an order.
 **Why not C:** Ignoring a monitoring problem risks missing true hypotension.
-**Why not D:** Repeated flushing can cause harm and does not address the cause.
+**Why not B:** Repeated flushing can cause harm and does not address the cause.
 
 **Q2 (monitoring).** Which finding is the most urgent concern for a radial arterial line?
 A. A pale, cold hand with delayed capillary refill and new pain on the cannulated side.
@@ -114,7 +114,7 @@ D. An arterial trace that shows normal variation with the patient's breathing an
 **Answer: A.**
 **Why correct:** Signs of limb ischaemia need immediate escalation (limb ischaemia is a recognised, uncommon complication).
 **Why not B:** A small amount of dried blood needs a dressing review but is not an emergency when the hand is warm and well perfused.
-**Why not C:** Correct practice.
+**Why not C:** This is the correct practice for the situation described, so it is not an unsafe distractor.
 **Why not D:** An expected feature of the waveform.
 
 **Q3 (application).** According to CDC 2011, which of the following is **not** allowed through a pressure-monitoring circuit?
@@ -157,9 +157,9 @@ C. Labelling the tubing and flush bag with the date and time of set-up.
 D. Reporting a damped or lost waveform and an implausible reading.
 **Answer: B.**
 **Why correct:** Insertion, replacement and removal are medical decisions or protocol-governed procedures.
-**Why not A:** Nursing assessment.
+**Why not A:** Checking and recording the waveform and site is a nursing assessment task, not a prescriber one.
 **Why not C:** Labelling is a nursing task that supports identification and changeover dates.
-**Why not D:** Nursing reporting.
+**Why not D:** Reporting a change in the reading or site is a nursing responsibility, not a prescriber decision.
 
 ## 18. References
 - CDC/HICPAC. Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (last update October 2017), recommendation set 17. https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-14)

@@ -95,8 +95,8 @@ A 72-year-old man with COPD is admitted with breathlessness; his written target 
 
 ## 17. MCQs
 **Q1 (judgment).** A patient with COPD has a written SpO₂ target of 88–92%. After oxygen is turned up by a colleague, the reading is 98% and the patient is becoming drowsy. What is the best nursing action?
-A. Leave the oxygen as it is, because a higher SpO₂ is always safer for a patient who is short of breath and already unwell.
-B. Turn the oxygen off completely and recheck the reading again in thirty minutes, to see whether the patient wakes up.
+A. Leave the oxygen as it is, because a higher SpO₂ is safer for a patient who is short of breath and already unwell.
+B. Turn the oxygen off and recheck the reading in thirty minutes, to see whether the patient wakes up.
 C. Reduce within the order or protocol if allowed, check the patient, and report the drowsiness and reading now.
 D. Wait for the next scheduled blood gas before taking any action, since drowsiness could simply reflect tiredness at night.
 **Answer: C.**
@@ -107,9 +107,9 @@ D. Wait for the next scheduled blood gas before taking any action, since drowsin
 
 **Q2 (understanding).** Which SpO₂ range does AARC 2022 support for most hospitalised adults needing supplemental oxygen, and how strong is the evidence?
 A. 94–98%, supported by the committee on low-certainty evidence (level C).
-B. 100%, because maximum saturation avoids hypoxia and is always recommended.
-C. 88–92% for everyone, because lower saturations are safer for all patients.
-D. 90–94% for critically ill patients only, with strong high-certainty evidence.
+B. 100%, because maximum saturation avoids hypoxia and is recommended.
+C. 88–92% in the general critically ill population, because lower saturations are considered safer.
+D. 90–94% for critically ill patients, supported by strong high-certainty evidence.
 **Answer: A.**
 **Why correct:** The guideline gives 94–98% for most patients (evidence level C).
 **Why not B:** The guideline raises concern about excessive FiO₂.
@@ -128,9 +128,9 @@ D. The patient may be deteriorating; check the probe and perfusion, assess breat
 **Why not C:** Reducing oxygen is not the priority when the patient is unwell.
 
 **Q4 (application).** Which statement about high-flow nasal cannula (HFNC) matches the AARC 2022 guideline?
-A. HFNC always shortens hospital stay compared with conventional oxygen.
+A. HFNC shortens hospital stay compared with conventional oxygen.
 B. HFNC may help avoid escalation to non-invasive or invasive ventilation, but it does not reduce length of stay.
-C. HFNC is recommended only after intubation has failed.
+C. HFNC is recommended after intubation has failed.
 D. HFNC has proven better outcomes in all immunocompromised patients.
 **Answer: B.**
 **Why correct:** The guideline says HFNC may avoid escalation but does not reduce length of stay (level B).

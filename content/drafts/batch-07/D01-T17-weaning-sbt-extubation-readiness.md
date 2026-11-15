@@ -88,8 +88,8 @@ A 64-year-old man has been ventilated for four days with pneumonia. He is stable
 **Q1 (understanding).** Which statement correctly distinguishes liberation from extubation, as the AARC guideline describes them?
 A. They are the same thing, so a patient who passes a spontaneous breathing trial is automatically extubated on the same day.
 B. Liberation is discontinuing invasive ventilation, while extubation is removing the tube; a patient may pass an SBT and still not be extubated.
-C. Extubation is always done before liberation, and a tracheostomy is never used as a route to liberation from the ventilator.
-D. Liberation refers only to weaning by gradually reducing the pressure support level over several days of ventilation.
+C. Extubation is done before liberation, and a tracheostomy is not used as a route to liberation from the ventilator.
+D. Liberation refers to weaning by gradually reducing the pressure support level over several days of ventilation.
 **Answer: B.**
 **Why correct:** The guideline says it is important that liberation and extubation are not conflated, and gives abundant secretions and a weak cough as a reason for not extubating after a passed SBT.
 **Why not A:** Passing an SBT does not necessarily lead to extubation.
@@ -97,8 +97,8 @@ D. Liberation refers only to weaning by gradually reducing the pressure support 
 **Why not D:** Gradual reduction of support is weaning, a different concept.
 
 **Q2 (application).** A ventilated patient who is already on 0.60 FiO₂ is about to start an SBT. A colleague suggests increasing the FiO₂ for the trial to be safe. What does the AARC guideline suggest?
-A. Increase the FiO₂ by a fixed step for every trial, because this always improves the chance of success.
-B. Increase the FiO₂ only if the nurse thinks the patient looks anxious before the trial begins.
+A. Increase the FiO₂ by a fixed step for each trial, because this improves the chance of success.
+B. Increase the FiO₂ if the nurse thinks the patient looks anxious before the trial begins.
 C. Alternate between a higher and a lower FiO₂ every few minutes to see which one the patient seems to prefer.
 D. Do not increase the FiO₂ during the SBT, because raising it can mask hypoxaemia and cause a false pass.
 **Answer: D.**
@@ -109,9 +109,9 @@ D. Do not increase the FiO₂ during the SBT, because raising it can mask hypoxa
 
 **Q3 (judgment).** Which approach to timing do the AARC authors suggest for SBTs?
 A. A standardised approach to assessment and, if appropriate, completion of an SBT before noon each day, with other care routines coordinated around it.
-B. Starting SBTs only in the evening, when the patient is more settled and the effects of the day's sedation have worn off.
+B. Starting SBTs in the evening, when the patient is more settled and the effects of the day's sedation have worn off.
 C. Doing an SBT at a different time every day, so that staff can compare how the patient copes at each time.
-D. Never performing an SBT on the same day as a sedation interruption, so that the two procedures are kept completely separate.
+D. Avoid performing an SBT on the same day as a sedation interruption, so that the two procedures are kept separate.
 **Answer: A.**
 **Why correct:** This is the third recommendation (conditional; very low certainty).
 **Why not B:** The guideline recommends before noon.

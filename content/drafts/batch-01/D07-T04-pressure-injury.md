@@ -102,8 +102,8 @@ D. Apply a firm bandage to protect the heel and review it again tomorrow.
 **Why not D:** A firm bandage may add pressure and hide changes, and a day's wait is too long.
 
 **Q2 (judgment).** How should the nurse decide the repositioning schedule for a critically ill patient?
-A. Reposition every two hours for every patient, whatever the mattress or the patient's condition.
-B. Reposition only when the family asks, since they know the patient's comfort best.
+A. Reposition on a fixed two-hourly schedule regardless of the mattress used or the patient's skin and condition.
+B. Reposition when the family asks, since they know the patient's comfort best.
 C. Stop repositioning once an air mattress is in use, because the surface redistributes the pressure.
 D. Individualise it using mobility, skin tolerance, stability, comfort, goals of care and the support surface.
 **Answer: D.**
@@ -126,8 +126,8 @@ D. Apply moisturiser under each device to keep the skin soft and prevent crackin
 **Q4 (understanding).** Which statement about a pressure-redistributing mattress is correct?
 A. It supports prevention, but repositioning is still needed.
 B. It makes repositioning unnecessary for patients who are sedated.
-C. It is useful only for patients who are awake and able to move.
-D. It protects the heels completely, so heel checks can be dropped.
+C. It is useful for patients who are awake and able to move, but not for sedated patients.
+D. It protects the heels so well that heel checks can be dropped from the care plan.
 **Answer: A.**
 **Why correct:** The guide states that no support surface can entirely replace repositioning.
 **Why not B:** This contradicts the guide, and sedated patients are at higher risk.

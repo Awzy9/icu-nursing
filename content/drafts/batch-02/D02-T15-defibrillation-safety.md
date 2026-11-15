@@ -141,7 +141,7 @@ D. Call the family to the bedside straight away so that they can be present at t
 **Answer: C.**
 **Why correct:** Early compressions and help-calling are the first steps; information gathering follows.
 **Why not A:** Not a priority during arrest.
-**Why not B:** Delays treatment.
+**Why not B:** This delays treatment of the arrest and does not make the shock safer.
 **Why not D:** Communication matters but follows life-saving action.
 
 **Q6 (scope).** Which decision belongs to the team leader or physician rather than the nurse?

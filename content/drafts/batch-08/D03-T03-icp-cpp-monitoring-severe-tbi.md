@@ -103,8 +103,8 @@ A 28-year-old with severe TBI has an ICP of 18 that rises to 26 over 20 minutes 
 
 ## 17. MCQs
 **Q1 (application).** A patient with a subarachnoid haemorrhage has an ICP of 24 mm Hg. A colleague says "the guideline says treat above 22, so we must treat now". What is the best response?
-A. Agree, because the 22 mm Hg threshold applies to every patient with raised intracranial pressure from any cause.
-B. Agree, but only if the patient is older than 40 years, because age is the criterion for using the threshold.
+A. Agree, because the 22 mm Hg threshold applies to patients with raised intracranial pressure from any cause.
+B. Agree, if the patient is older than 40 years, because age is the criterion for using the threshold.
 C. Start a hyperosmolar drug at once, because the guideline recommends it for every pressure above the threshold.
 D. Explain that the BTF threshold is for severe TBI, and report the value so the team can apply the ordered target.
 **Answer: D.**
@@ -147,10 +147,10 @@ D. It was withdrawn in the 4th edition, so the guideline no longer gives any tar
 **Why not D:** The recommendation is present.
 
 **Q5 (safety).** The guideline advises caution about CPP above 70 mm Hg. Why?
-A. High CPP always improves outcomes, so no caution is needed when a clinician pushes the pressure up.
-B. High CPP is thought to be more dangerous in older patients only, and has no risk in younger adults.
+A. High CPP improves outcomes, so no caution is needed when a clinician pushes the pressure up.
+B. High CPP is thought to be more dangerous in older patients, and has no risk in younger adults.
 C. Aggressive efforts to push CPP above 70 with fluids and pressors may risk adult respiratory failure.
-D. High CPP is harmful only if the patient has no ICP monitor in place, because it cannot then be measured.
+D. High CPP is harmful if the patient has no ICP monitor in place, because it cannot then be measured.
 **Answer: C.**
 **Why correct:** This is the Level III statement.
 **Why not A:** The guideline cites harm at higher values.

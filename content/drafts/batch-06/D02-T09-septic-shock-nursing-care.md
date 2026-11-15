@@ -110,8 +110,8 @@ D. Collect blood cultures as soon as possible and ideally before antimicrobials,
 **Q2 (understanding).** Which approach to judging the response to fluids does SSC 2026 suggest?
 A. Rely on the blood pressure reading alone, because it reflects the whole circulation.
 B. Use dynamic measures (such as response to a passive leg raise or a bolus) in preference to examination or static measures alone.
-C. Give a fixed volume to every patient with septic shock and stop reassessing afterwards.
-D. Continue fluid until the lactate has returned entirely to normal in every patient.
+C. Give a fixed volume to patients with septic shock and stop reassessing afterwards.
+D. Continue fluid until the lactate has returned to normal, whatever the patient's response.
 **Answer: B.**
 **Why correct:** The page suggests dynamic measures over examination or static measures alone (conditional; low certainty).
 **Why not A:** Blood pressure alone does not show tissue perfusion or fluid responsiveness.
@@ -131,8 +131,8 @@ D. A patient who is well three days after starting antimicrobials, eating and dr
 
 **Q4 (safety).** A patient with septic shock has a temperature of 38.8 °C and is comfortable. What does SSC 2026 say about antipyretic therapy?
 A. It suggests against using antipyretic therapy to improve outcomes, though this does not apply to symptom or pain control.
-B. It recommends cooling every patient with septic shock to a normal temperature straight away, to improve their chances of recovery.
-C. It recommends routine antipyretics for all patients as a standard part of the first-hour sepsis bundle, whatever their temperature.
+B. It recommends cooling patients with septic shock to a normal temperature straight away, to improve their chances of recovery.
+C. It recommends routine antipyretics as a standard part of the first-hour sepsis bundle, whatever the temperature.
 D. It says that antipyretic therapy is required before giving antimicrobials, in order to prevent reactions to the first dose.
 **Answer: A.**
 **Why correct:** The page suggests against antipyretic therapy, pharmacological or cooling, for improving clinical outcomes, with exceptions for symptom control or other indications.
@@ -148,7 +148,7 @@ D. Switching to an albumin-only fluid policy for all patients, whatever their co
 **Answer: A.**
 **Why correct:** SSC 2026 suggests active fluid removal after acute resuscitation (conditional; very low certainty), with remarks on factors to consider.
 **Why not B:** Oedema and weight gain suggest overload, not a dry circulation.
-**Why not C:** Monitoring continues.
+**Why not C:** Monitoring continues after the pressure is stable because the patient's condition can change.
 **Why not D:** The page suggests crystalloids alone over supplemental albumin in general, with exceptions.
 
 **Q6 (scope).** Which of the following is a prescriber decision rather than a nursing action?

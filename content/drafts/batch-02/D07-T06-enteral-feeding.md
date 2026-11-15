@@ -91,20 +91,20 @@ A 66-year-old ventilated man on vasopressors has a distended abdomen, a large as
 
 ## 17. MCQs
 **Q1 (prioritization).** A ventilated patient on rising vasopressor doses has a newly distended abdomen, vomited once and has a large gastric aspirate. What is the best nursing action?
-A. Continue the feed at the same rate and re-check the abdomen at the next routine round.
-B. Pause the feed per policy, protect the airway, keep the bed head raised and report urgently with SBAR.
+A. Pause the feed per policy, protect the airway, keep the bed head raised and report urgently with SBAR.
+B. Continue the feed at the same rate and re-check the abdomen at the next routine round.
 C. Give a laxative from the ward stock and restart the feed at a lower rate.
 D. Flush the tube and increase the feed rate to move the contents along.
-**Answer: B.**
+**Answer: A.**
 **Why correct:** New distension with instability may indicate intolerance or gut hypoperfusion; pausing and escalating protects the patient.
-**Why not A:** Continuing risks aspiration and worsening distension.
+**Why not B:** Continuing risks aspiration and worsening distension.
 **Why not C:** Laxatives and restarting need an order and could harm if there is obstruction.
 **Why not D:** Increasing the rate would worsen intolerance.
 
 **Q2 (understanding).** What does the ESICM 2017 guideline suggest about early enteral nutrition compared with early parenteral nutrition in critically ill adults?
-A. Early parenteral nutrition is preferred for all patients because it is delivered more reliably.
-B. Early enteral nutrition and parenteral nutrition are equal and the choice is only for convenience.
-C. Feeding should always be delayed until bowel sounds have returned and the first stool has been passed by the patient.
+A. Early parenteral nutrition is preferred in this situation because it is delivered more reliably.
+B. Early enteral nutrition and parenteral nutrition are equal and the choice is for convenience.
+C. Feeding should be delayed until bowel sounds have returned and the first stool has been passed by the patient.
 D. Early enteral nutrition is suggested rather than early parenteral nutrition in most patients, with defined delays.
 **Answer: D.**
 **Why correct:** The guideline suggests early enteral nutrition (conditional, low-quality evidence) with defined delay situations.
