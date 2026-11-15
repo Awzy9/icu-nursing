@@ -1,6 +1,22 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "module": "preserve",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "customConditions": [
+      "react-native"
+    ],
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
     "strict": true,
     "paths": {
       "@icu/schemas": [
@@ -15,8 +31,7 @@
       "zod": [
         "./node_modules/zod"
       ]
-    },
-    "resolveJsonModule": true
+    }
   },
   "include": [
     "**/*.ts",
@@ -24,6 +39,11 @@
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "dist-ios",
+    "babel.config.js",
+    "metro.config.js",
+    "android",
+    "ios"
   ]
 }
