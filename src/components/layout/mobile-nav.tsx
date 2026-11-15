@@ -26,7 +26,7 @@ export function MobileNav({ links, footer }: { links: NavLink[]; footer?: React.
   }, [open]);
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         ref={btn}
         type="button"

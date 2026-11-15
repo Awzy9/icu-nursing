@@ -8,6 +8,7 @@ import { readFileSync } from "node:fs";
 import { DEV_REF, REF, sql } from "./mgmt";
 import { loadFixtures } from "../../src/lib/question-bank/fixtures";
 import { seededOrder } from "../../src/lib/question-bank/shuffle";
+import { loadCaseFixtures } from "../../src/lib/cases/fixtures";
 
 const fx = loadFixtures();
 let failed = 0;
@@ -120,6 +121,34 @@ async function fails(user: string | null, query: string, re: RegExp): Promise<bo
     check("learner cannot write the schedule", await fails(C, "update public.learner_review_schedule set box = 5", /permission denied/));
     check("anon cannot call study functions", await fails(null, "select public.st_overview()", /permission denied/));
     check("unknown revision kind is rejected", await fails(C, "select public.st_start_revision('all', 5)", /invalid revision kind/));
+
+    // --- case-based learning (migration 0009) ---------------------------------------------------------------------------
+    await sql(readFileSync("supabase/seed_case_fixtures.sql", "utf8"));
+    const cases = loadCaseFixtures();
+    const c1 = cases[0]!;
+    check("3 synthetic cases loaded; no clinical case exists", Number((await sql("select count(*)::int n from public.case_items where kind='demo_synthetic' and status='published'"))[0]!.n) === 3
+      && Number((await sql("select count(*)::int n from public.case_items where kind='clinical'"))[0]!.n) === 0);
+    check("learner sees the 3 cases through cs_list", (await as(B, "select public.cs_list() as l"))[0]!.l.length === 3);
+    for (const t of ["case_items", "case_steps", "case_step_options", "case_option_keys"]) check(`learner sees 0 rows in ${t}`, (await as(B, `select 1 from public.${t} limit 1`)).length === 0);
+    check("learner cannot forge a case step", await fails(B, "insert into public.case_attempt_steps (attempt_id, position, user_id, option_id, points) select gen_random_uuid(), 1, auth.uid(), id, 2 from public.case_step_options limit 1", /permission denied/));
+    const cd = (await sql(`insert into public.case_items (code, kind, status, origin, domain_id, title, vignette) values ('LIVE-CASE-DRAFT','clinical','draft','ai_generated','${dom}','{"en":"Live gate test"}','{"en":"Unpublished clinical-kind case for the live gate test."}') returning id`))[0]!.id as string;
+    check("unpublished clinical case cannot be started or read", await fails(B, `select public.cs_start('${cd}')`, /case not found/) && (await as(B, `select id from public.case_items where id='${cd}'`)).length === 0);
+    let cg = false;
+    try { await sql(`update public.case_items set status='published', approved_at=now(), published_at=now() where id='${cd}'`); } catch (e) { cg = /named approver|independent clinical review|invalid case structure/.test((e as Error).message); }
+    check("guard rejects publishing the clinical case", cg);
+    await sql(`delete from public.case_items where id='${cd}'`);
+    const att = (await as(B, `select public.cs_start('${c1.id}') as id`))[0]!.id as string;
+    const g0 = (await as(B, `select public.cs_get('${att}') as a`))[0]!.a;
+    check("in-progress case exposes no points, scope, feedback or later steps", !/points|scope|feedback|next_position/.test(JSON.stringify(g0)) && !JSON.stringify(g0).includes(c1.steps[1]!.info.en!));
+    let v = (await as(B, `select public.cs_choose('${att}', 1, '${c1.steps[0]!.options.find((o) => o.points === 2)!.id}') as a`))[0]!.a;
+    check("committed decision reveals feedback and follows the branch", v.trail.length === 1 && v.trail[0].points === 2 && v.current.position === 2);
+    check("resume returns the same attempt", (await as(B, `select public.cs_start('${c1.id}') as id`))[0]!.id === att);
+    check("another learner cannot read or play that attempt", await fails(A, `select public.cs_get('${att}')`, /attempt not found/) && await fails(A, `select public.cs_choose('${att}', 2, '${c1.steps[1]!.options[0]!.id}')`, /attempt not found/));
+    v = (await as(B, `select public.cs_choose('${att}', 2, '${c1.steps[1]!.options.find((o) => o.points === 2)!.id}') as a`))[0]!.a;
+    v = (await as(B, `select public.cs_choose('${att}', 4, '${c1.steps[3]!.options.find((o) => o.points === 2)!.id}') as a`))[0]!.a;
+    check("best path scores 100% (6 of 6 points over 3 decisions)", v.status === "completed" && v.summary.points === 6 && v.summary.max_points === 6 && v.summary.score_tenths === 1000);
+    check("a committed decision cannot be repeated", await fails(B, `select public.cs_choose('${att}', 4, '${c1.steps[3]!.options[0]!.id}')`, /no longer in progress/));
+    check("anon cannot call case functions", await fails(null, "select public.cs_list()", /permission denied/));
 
     // --- clean up test data ------------------------------------------------------------------------------------------------
   } finally {

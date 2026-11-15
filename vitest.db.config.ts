@@ -1,7 +1,9 @@
 import { defineConfig } from "vitest/config";
+import path from "node:path";
 
 // Database tests: real PostgreSQL, migrations applied from supabase/migrations.
 export default defineConfig({
+  resolve: { alias: { "@": path.resolve(__dirname, "src") } },
   test: {
     environment: "node",
     include: ["tests/db/**/*.test.ts"],

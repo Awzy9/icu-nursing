@@ -14,7 +14,7 @@ export async function SiteHeader() {
   const roles = user ? await getRoles(user.id) : [];
   const isStaff = roles.some((r) => STAFF_ROLES.includes(r));
 
-  const primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }];
+  const primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }];
   if (user) primary.push({ href: "/dashboard", label: t("dashboard") }, { href: "/bookmarks", label: t("bookmarks") });
   if (isStaff) primary.push({ href: "/admin", label: t("admin") });
   const future: NavLink[] = FUTURE_FEATURES.map((f) => ({ href: `/coming-soon/${f}`, label: t(f), soon: true }));
@@ -37,7 +37,7 @@ export async function SiteHeader() {
           <span aria-hidden className="inline-flex size-8 items-center justify-center rounded-md bg-navy text-sm text-navy-foreground">IK</span>
           <span className="max-w-[11rem] leading-tight sm:max-w-none">{brand("brand")}</span>
         </Link>
-        <nav aria-label={t("main")} className="hidden items-center gap-1 md:flex">
+        <nav aria-label={t("main")} className="hidden items-center gap-1 lg:flex">
           {primary.map((l) => (
             <Link key={l.href} href={l.href} className="inline-flex min-h-11 items-center rounded-md px-3 text-foreground no-underline hover:bg-muted">{l.label}</Link>
           ))}
@@ -56,7 +56,7 @@ export async function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <LocaleSwitcher />
-          <div className="hidden md:block">{signOut}</div>
+          <div className="hidden lg:block">{signOut}</div>
           <MobileNav links={[...primary, ...future]} footer={signOut} />
         </div>
       </div>

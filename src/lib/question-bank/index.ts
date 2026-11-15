@@ -39,18 +39,22 @@ export async function getQuestionBankService(opts: { create?: boolean } = {}): P
     const { createSupabaseService } = await import("./supabase-service");
     return createSupabaseService(supabase);
   }
-  const jar = await cookies();
-  let key = jar.get(FX_COOKIE)?.value;
-  if (!key || !/^[0-9a-f-]{36}$/.test(key)) {
-    if (!opts.create) key = undefined;
-    else {
-      key = crypto.randomUUID();
-      jar.set(FX_COOKIE, key, { httpOnly: true, sameSite: "lax", path: "/", maxAge: 60 * 60 * 8, secure: false });
-    }
-  }
+  const key = await getFixtureKey(opts.create ?? false);
   const { createFixtureService } = await import("./fixture-service");
   // A visitor without a fixture session sees an empty bank until they start something.
   return createFixtureService(key ?? "anonymous-empty");
+}
+
+/** Opaque fixture-session identity (cookie). Minted only when `create` is true (server actions). */
+export async function getFixtureKey(create: boolean): Promise<string | undefined> {
+  const jar = await cookies();
+  let key = jar.get(FX_COOKIE)?.value;
+  if (!key || !/^[0-9a-f-]{36}$/.test(key)) {
+    if (!create) return undefined;
+    key = crypto.randomUUID();
+    jar.set(FX_COOKIE, key, { httpOnly: true, sameSite: "lax", path: "/", maxAge: 60 * 60 * 8, secure: false });
+  }
+  return key;
 }
 
 /** Stable per-actor key for rate limiting (signed-in user id, or the fixture-session cookie). */
