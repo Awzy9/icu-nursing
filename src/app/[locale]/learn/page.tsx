@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, BookOpen, ClipboardCheck, ClipboardList, Layers, ListChecks, Workflow } from "lucide-react";
+import { ArrowRight, BookOpen, ClipboardCheck, ClipboardList, Layers, ListChecks, Pill, Cpu, Search, Workflow } from "lucide-react";
 import { Callout } from "@/components/ui/feedback";
 import { Button } from "@/components/ui/button";
 import { SegmentedBar } from "@/components/ui/segmented-bar";
@@ -10,6 +10,8 @@ import { getContentRepository } from "@/lib/content";
 import { getCaseService } from "@/lib/cases";
 import { getSkillService } from "@/lib/skills";
 import { listPractice } from "@/lib/practice";
+import { listEquipment } from "@/lib/equipment";
+import { getMedicationService } from "@/lib/medications";
 import type { SkillProgress } from "@/lib/skills/types";
 import { getQuestionBankService, resolveMode } from "@/lib/question-bank";
 import type { CaseListItem, CaseProgress } from "@/lib/cases/types";
@@ -34,13 +36,14 @@ export default async function LearnPage({ params }: { params: Promise<{ locale: 
   const topics = await (await getContentRepository()).listTopics({ locale }).catch(() => []);
   if (mode === "database") await requireUser(locale, "/learn");
 
-  let study: StudyOverview | null = null, attempts: AttemptListItem[] = [], cases: CaseListItem[] = [], caseProgress: CaseProgress | null = null, skillProgress: SkillProgress | null = null, failed = false;
+  let study: StudyOverview | null = null, attempts: AttemptListItem[] = [], cases: CaseListItem[] = [], caseProgress: CaseProgress | null = null, skillProgress: SkillProgress | null = null, medCount = 0, failed = false;
   if (mode !== "disabled") {
     try {
       const [qb, cs, sk] = await Promise.all([getQuestionBankService(), getCaseService(), getSkillService()]);
       if (qb) [study, attempts] = await Promise.all([qb.studyOverview(), qb.listAttempts()]);
       if (cs) [caseProgress, cases] = await Promise.all([cs.progress(), cs.list()]);
       if (sk) skillProgress = await sk.progress();
+      medCount = (await (await getMedicationService())?.progress())?.available ?? 0;
     } catch {
       failed = true;
     }
@@ -67,6 +70,7 @@ export default async function LearnPage({ params }: { params: Promise<{ locale: 
     { Icon: Layers, title: t("studyTitle"), body: t("studyBody"), stat: t("studyStat", { n: study?.due ?? 0 }), href: "/study" },
     { Icon: Workflow, title: t("casesTitle"), body: t("casesBody"), stat: t("casesStat", { done: caseProgress?.completed_cases ?? 0, total: caseProgress?.available ?? 0 }), href: "/cases" },
     { Icon: ClipboardList, title: ts("hubTitle"), body: ts("hubBody"), stat: ts("hubStat", { n: skillProgress?.available ?? 0 }), href: "/skills" },
+    ...(mode === "disabled" ? [] : [{ Icon: Pill, title: t("medsTitle"), body: t("medsBody"), stat: t("medsStat", { n: medCount }), href: "/medications" }, { Icon: Cpu, title: t("equipTitle"), body: t("equipBody"), stat: t("equipStat", { n: listEquipment().length }), href: "/equipment" }]),
     ...(mode === "disabled" ? [] : [{ Icon: ListChecks, title: tp("title"), body: tp("hubBody"), stat: tp("hubStat", { n: listPractice().length }), href: "/practice" }]),
   ];
 
@@ -75,6 +79,7 @@ export default async function LearnPage({ params }: { params: Promise<{ locale: 
       <header className="space-y-2">
         <h1 className="text-3xl font-bold">{t("title")}</h1>
         <p className="max-w-prose text-muted-foreground">{t("intro")}</p>
+        <Button asChild variant="outline" size="sm"><Link href="/search"><Search className="size-4" aria-hidden />{t("searchLink")}</Link></Button>
       </header>
       {mode === "fixtures" ? <Callout tone="warning" role="note">{t("fixturesBanner")}</Callout> : null}
       {mode === "disabled" ? <Callout tone="info" title={t("disabledTitle")}>{t("disabledBody")}</Callout> : null}

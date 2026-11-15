@@ -58,7 +58,8 @@
     "learn": "Learn",
     "equipment": "Equipment and monitoring",
     "practice": "Practice labs",
-    "plans": "Plans"
+    "plans": "Plans",
+    "search": "Search"
   },
   "ComingSoon": {
     "title": "{feature} — coming in a later phase",
@@ -554,7 +555,14 @@
     "unansweredLabel": "not yet answered",
     "loading": "Loading…",
     "errorTitle": "Something went wrong",
-    "retry": "Try again"
+    "retry": "Try again",
+    "medsTitle": "Medication reference",
+    "medsBody": "Nursing-focused safety, monitoring and escalation notes with no dosing.",
+    "medsStat": "{n} medications",
+    "equipTitle": "Equipment and monitoring",
+    "equipBody": "Labelled diagrams, what is measured, safety and when to escalate.",
+    "equipStat": "{n} modules",
+    "searchLink": "Search everything"
   },
   "Skills": {
     "title": "Skills library",
@@ -1053,5 +1061,25 @@
     "exportButton": "Download my summary (CSV)",
     "exportLocked": "Exporting your summary is a premium feature.",
     "exportLockedLink": "See the plans"
+  },
+  "Search": {
+    "title": "Search",
+    "intro": "Search the library, skills, medications, equipment, cases and practice labs by title and summary.",
+    "label": "Search",
+    "button": "Search",
+    "tooShort": "Type at least two characters.",
+    "none": "Nothing found for \"{q}\".",
+    "count": "{n} results for \"{q}\".",
+    "skipped": "Some areas could not be searched. Try again, or sign in if the area needs an account.",
+    "sample": "Sample",
+    "kinds": {
+      "library": "Library",
+      "skills": "Skills",
+      "medications": "Medications",
+      "equipment": "Equipment and monitoring",
+      "cases": "Cases",
+      "practice": "Practice labs"
+    },
+    "scope": "Search covers titles and short summaries of published or sample material only. It does not search questions or answers."
   }
 }

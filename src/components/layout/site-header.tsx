@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Search } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { NavLink as ActiveLink } from "./nav-link";
 import { getRoles, getSessionUser, STAFF_ROLES } from "@/lib/auth";
@@ -33,17 +34,17 @@ export async function SiteHeader() {
 
   return (
     <header className="relative border-b border-border bg-card">
-      <div className="container flex min-h-16 items-center justify-between gap-3">
+      <div className="container flex min-h-16 items-center justify-between gap-2">
         <Link href="/" className="flex items-center gap-2 font-semibold text-navy no-underline">
           <span aria-hidden className="inline-flex size-8 items-center justify-center rounded-md bg-navy text-sm text-navy-foreground">IK</span>
           <span className="max-w-[11rem] leading-tight sm:max-w-none">{brand("brand")}</span>
         </Link>
         <nav aria-label={t("main")} className="hidden items-center gap-1 xl:flex">
           {primary.map((l) => (
-            <ActiveLink key={l.href} href={l.href} className="inline-flex min-h-11 items-center rounded-md px-3 text-foreground no-underline hover:bg-muted">{l.label}</ActiveLink>
+            <ActiveLink key={l.href} href={l.href} className="inline-flex min-h-11 items-center rounded-md px-2 text-sm text-foreground no-underline hover:bg-muted">{l.label}</ActiveLink>
           ))}
           <details className="relative">
-            <summary className="inline-flex min-h-11 cursor-pointer list-none items-center rounded-md px-3 hover:bg-muted">{t("soon")}…</summary>
+            <summary className="inline-flex min-h-11 cursor-pointer list-none items-center rounded-md px-2 text-sm hover:bg-muted">{t("soon")}…</summary>
             <ul className="absolute end-0 z-40 mt-1 w-64 rounded-md border border-border bg-card p-1 shadow-lg">
               {future.map((l) => (
                 <li key={l.href}>
@@ -56,6 +57,7 @@ export async function SiteHeader() {
           </details>
         </nav>
         <div className="flex items-center gap-2">
+          <Link href="/search" aria-label={t("search")} className="inline-flex size-11 items-center justify-center rounded-md border border-input bg-card text-foreground no-underline hover:bg-muted"><Search className="size-5" aria-hidden /></Link>
           <LocaleSwitcher />
           <div className="hidden xl:block">{signOut}</div>
           <MobileNav links={[...primary, ...future]} footer={signOut} />
