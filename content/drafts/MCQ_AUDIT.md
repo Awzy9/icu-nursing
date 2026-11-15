@@ -1,9 +1,9 @@
 # MCQ audit (automated; 2026-11-15)
-Questions audited: **240** across 40 drafts. Answer positions A/B/C/D: 59/63/60/58.
-Correct option is the unique longest: **46** (19.2 %). Keys with absolute wording: 12; distractors with absolute wording: 69.
-Correct option is the unique shortest: **54** (22.5 %); a random key would be the unique longest or shortest in roughly 20-25 % of questions each.
+Questions audited: **306** across 51 drafts. Answer positions A/B/C/D: 75/79/77/75.
+Correct option is the unique longest: **76** (24.8 %). Keys with absolute wording: 14; distractors with absolute wording: 110.
+Correct option is the unique shortest: **75** (24.5 %); a random key would be the unique longest or shortest in roughly 20-25 % of questions each.
 Questions with identical options inside the question: **0**. Near-duplicate questions across the bank (stem plus options, Jaccard >= 0.7; template stems such as the scope-of-practice question are expected to repeat, their options differ): **0**.
-Questions with at least one automated flag: **94**.
+Questions with at least one automated flag: **132**.
 
 ## Flags
 - D06-T01 Q2 (key A): no clinical context in an application-type stem
@@ -100,8 +100,46 @@ Questions with at least one automated flag: **94**.
 - D03-T03 Q5 (key C): correct option is the unique longest; no clinical context in an application-type stem
 - D08-T02 Q1 (key B): stem does not end with a question or statement
 - D08-T02 Q2 (key D): correct option is the unique longest
+- XQ-01 Q2 (key D): correct option is the unique longest
+- XQ-01 Q4 (key B): correct option is the unique longest
+- XQ-01 Q6 (key D): correct option is the unique longest
+- XQ-02 Q1 (key D): correct option is the unique longest; 2 distractors use absolute wording while the key does not (test-wiseness cue)
+- XQ-02 Q4 (key A): correct option is the unique longest
+- XQ-03 Q3 (key A): correct option is the unique longest
+- XQ-03 Q4 (key D): correct option is the unique longest
+- XQ-03 Q5 (key C): correct option is the unique longest; 3 distractors use absolute wording while the key does not (test-wiseness cue); no clinical context in an application-type stem
+- XQ-04 Q2 (key A): correct option is the unique longest; no clinical context in an application-type stem
+- XQ-04 Q3 (key D): no clinical context in an application-type stem
+- XQ-04 Q6 (key A): correct option is the unique longest
+- XQ-05 Q2 (key D): correct option is the unique longest
+- XQ-05 Q3 (key C): correct option is the unique longest
+- XQ-05 Q4 (key B): 2 distractors use absolute wording while the key does not (test-wiseness cue); no clinical context in an application-type stem
+- XQ-05 Q5 (key A): correct option is the unique longest
+- XQ-05 Q6 (key D): no clinical context in an application-type stem
+- XQ-06 Q1 (key D): 3 distractors use absolute wording while the key does not (test-wiseness cue)
+- XQ-06 Q2 (key C): correct option is the unique longest
+- XQ-06 Q4 (key A): correct option is the unique longest
+- XQ-06 Q6 (key C): correct option is the unique longest
+- XQ-07 Q1 (key C): correct option is the unique longest
+- XQ-07 Q2 (key B): 2 distractors use absolute wording while the key does not (test-wiseness cue)
+- XQ-07 Q3 (key A): no clinical context in an application-type stem
+- XQ-07 Q4 (key D): correct option is the unique longest; no clinical context in an application-type stem
+- XQ-07 Q5 (key C): correct option is the unique longest
+- XQ-08 Q1 (key B): correct option is the unique longest
+- XQ-08 Q3 (key D): correct option is the unique longest
+- XQ-08 Q5 (key B): correct option is the unique longest
+- XQ-08 Q6 (key A): no clinical context in an application-type stem
+- XQ-09 Q1 (key A): correct option is the unique longest
+- XQ-09 Q3 (key C): correct option is the unique longest
+- XQ-09 Q5 (key A): correct option is the unique longest
+- XQ-10 Q1 (key D): correct option is the unique longest; no clinical context in an application-type stem
+- XQ-10 Q3 (key B): correct option is the unique longest
+- XQ-10 Q4 (key A): no clinical context in an application-type stem; very short stem (possible recall-only question)
+- XQ-10 Q5 (key D): correct option is the unique longest
+- XQ-11 Q1 (key C): correct option is the unique longest
+- XQ-11 Q2 (key B): correct option is the unique longest
 
-Question-type tags: judgment 43, prioritization 23, application 44, understanding 40, scope 37, safety 36, monitoring 14, assessment 1, documentation 2.
+Question-type tags: judgment 57, prioritization 23, application 56, understanding 40, scope 51, safety 48, monitoring 23, assessment 2, documentation 3, communication 1, escalation 2.
 
 ## Per topic (positions A/B/C/D; unique-longest keys)
 | Topic | MCQs | A/B/C/D | Longest-key |
@@ -146,3 +184,14 @@ Question-type tags: judgment 43, prioritization 23, application 44, understandin
 | D01-T09 | 6 | 1/2/2/1 | 1 |
 | D03-T03 | 6 | 2/1/2/1 | 3 |
 | D08-T02 | 6 | 1/2/1/2 | 1 |
+| XQ-01 | 6 | 2/1/1/2 | 3 |
+| XQ-02 | 6 | 1/1/2/2 | 2 |
+| XQ-03 | 6 | 1/2/2/1 | 3 |
+| XQ-04 | 6 | 2/2/1/1 | 2 |
+| XQ-05 | 6 | 2/1/1/2 | 3 |
+| XQ-06 | 6 | 1/1/2/2 | 3 |
+| XQ-07 | 6 | 1/2/2/1 | 3 |
+| XQ-08 | 6 | 2/2/1/1 | 3 |
+| XQ-09 | 6 | 2/1/1/2 | 3 |
+| XQ-10 | 6 | 1/1/2/2 | 3 |
+| XQ-11 | 6 | 1/2/2/1 | 2 |

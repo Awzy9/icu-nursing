@@ -15,6 +15,8 @@ function parse(text: string): Parsed[] {
 const root = "content/drafts";
 const files: string[] = [];
 for (const d of readdirSync(root).filter((x) => /^batch-\d+$/.test(x))) for (const f of readdirSync(join(root, d)).filter((x) => x.endsWith(".md"))) files.push(join(root, d, f));
+// Phase 8: the unpublished MCQ expansion drafts are audited together with the topic drafts so duplicates and balance are judged over the whole bank.
+for (const f of readdirSync(join(root, "mcq-expansion")).filter((x) => /^XQ-\d\d-.*\.md$/.test(x))) files.push(join(root, "mcq-expansion", f));
 const absolutes = /\b(always|never|only|all patients|every patient|any patient|no need|cannot|must never|completely|entirely)\b/i;
 type Row = { topic: string; q: string; answer: string; issues: string[] };
 const rows: Row[] = [];
@@ -26,7 +28,7 @@ const all: { key: string; stem: string; opts: string[]; answer: string }[] = [];
 let shortest = 0;
 for (const f of files.sort()) {
   const text = readFileSync(f, "utf8");
-  const topic = /^topic_id: (\S+)/m.exec(text)![1]!;
+  const topic = /^(?:topic_id|set_id): (\S+)/m.exec(text)![1]!;
   const qs = parse(text);
   const topicPos: Record<string, number> = { A: 0, B: 0, C: 0, D: 0 };
   let topicLongest = 0;
