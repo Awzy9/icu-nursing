@@ -1,0 +1,10 @@
+{
+  "//": "Merge into mobile/tsconfig.json compilerOptions. The zod mapping makes TypeScript find the app's own copy of zod when it type-checks the shared files that live outside mobile/.",
+  "compilerOptions": {
+    "paths": {
+      "@icu/schemas": ["../packages/schemas/src/index.ts"],
+      "@icu/schemas/*": ["../packages/schemas/src/*"],
+      "zod": ["./node_modules/zod"]
+    }
+  }
+}
