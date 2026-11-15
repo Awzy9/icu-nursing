@@ -32,6 +32,9 @@
       ],
       "@icu/schemas/*": [
         "./packages/schemas/src/*"
+      ],
+      "@icu/fixtures/*": [
+        "./packages/fixtures/*"
       ]
     }
   },

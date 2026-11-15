@@ -1,6 +1,6 @@
 import { stableId, SYNTHETIC_SOURCE_NOTE } from "@/lib/question-bank/fixtures";
 import { medicationTextViolation } from "./no-dosing";
-import raw from "./synthetic-medications.json";
+import raw from "@icu/fixtures/medications.json";
 import type { MedicationCategory } from "./types";
 
 type L = Record<string, string>;

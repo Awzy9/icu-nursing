@@ -1,0 +1,7 @@
+{
+  "name": "@icu/fixtures",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Synthetic, NONCLINICAL development fixtures (SYN-* codes) shared by the website and the native apps. Contains no clinical content and is never derived from the clinical drafts.",
+  "type": "module"
+}

@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import raw from "./synthetic-questions.json";
+import raw from "@icu/fixtures/questions.json";
 import type { Localized } from "./types";
 
 /**
