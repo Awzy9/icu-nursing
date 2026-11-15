@@ -2,3 +2,4 @@
 import build_scenarios, build_scenarios_a, build_scenarios_b  # noqa
 import build_scenarios_c  # noqa
 import build_scenarios_d  # noqa
+import build_scenarios_e  # noqa

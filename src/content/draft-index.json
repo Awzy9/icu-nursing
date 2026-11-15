@@ -3777,7 +3777,7 @@
    "title": "Cardiogenic shock",
    "domain": "cardiovascular",
    "evidence_status": "partial",
-   "spec_level": "outline",
+   "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
     {
@@ -3791,15 +3791,25 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENSTAX-MS-35-2",
+     "licence_class": "RED",
+     "verified": "2026-11-15"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "3d2cace5594563ea"
+   "hash": "4adc35851284fc48"
   },
   {
    "key": "SC-03",
@@ -3872,7 +3882,7 @@
    "title": "Sudden oxygen desaturation",
    "domain": "respiratory",
    "evidence_status": "partial",
-   "spec_level": "outline",
+   "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
     {
@@ -3886,15 +3896,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-FUND-CH8",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "2ab230487da75671"
+   "hash": "71c3605c5e21a531"
   },
   {
    "key": "SC-06",
@@ -3932,7 +3952,7 @@
    "title": "Raised intracranial pressure",
    "domain": "neurocritical",
    "evidence_status": "partial",
-   "spec_level": "outline",
+   "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
     {
@@ -3946,15 +3966,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-BTF-TBI-4TH",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-HA-CVA",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "358f66dd7c892ab0"
+   "hash": "7e72646030483bda"
   },
   {
    "key": "SC-08",
@@ -3995,9 +4025,9 @@
    "key": "SC-09",
    "type": "cases",
    "title": "Postoperative bleeding",
-   "domain": "haematology",
+   "domain": "surgical",
    "evidence_status": "partial",
-   "spec_level": "outline",
+   "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
     {
@@ -4011,15 +4041,30 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "L-TXA",
+     "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-ADV-CH3",
+     "licence_class": "GREEN",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-HA-POSTOP",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    },
+    {
+     "id": "S-OPENSTAX-MS-27-3",
+     "licence_class": "RED",
      "verified": "2026-11-15"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "1f789f263e744b30"
+   "hash": "23eca93ecdb2ba8d"
   },
   {
    "key": "SC-10",
@@ -4087,7 +4132,7 @@
    "title": "Acute arrhythmia",
    "domain": "cardiovascular",
    "evidence_status": "partial",
-   "spec_level": "outline",
+   "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
     {
@@ -4101,15 +4146,25 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "S-OPENRN-ADV-C7",
-     "licence_class": "GREEN",
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ERC-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-ADV-C74",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "a2ccdaa53af3a09e"
+   "hash": "0256affa6d3c1480"
   },
   {
    "key": "SC-13",
@@ -4207,13 +4262,18 @@
    "title": "Acute hypotension",
    "domain": "cardiovascular",
    "evidence_status": "partial",
-   "spec_level": "outline",
+   "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
     {
      "id": "L-PHENYLEPHRINE",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-AHRQ-TS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     },
     {
      "id": "S-CDC-BSI-2011",
@@ -4224,12 +4284,22 @@
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-FUND-CH15-6",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 2,
-   "hash": "e5cea5cd02ee6d8b"
+   "gaps": 5,
+   "required_sources": 3,
+   "hash": "c91d1eec1dd1c763"
   },
   {
    "key": "SC-17",

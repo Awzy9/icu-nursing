@@ -163,7 +163,7 @@ describe("content gating: no scenario draft can reach the learner-facing applica
     const graphs = loadScenarioDrafts().filter((d) => d.spec_level === "decision_graph");
     expect(graphs.length).toBeGreaterThanOrEqual(11);
     for (const d of graphs) { const c = scenarioToCase(d, known, `DRAFT-${d.scenario_id}`); expect(c.code).not.toMatch(/^SYN-CASE-/); expect(caseSeedSql()).not.toContain(c.id); }
-    expect(() => scenarioToCase(loadScenarioDrafts().find((d) => d.spec_level === "outline")!, known, "DRAFT-X")).toThrow(ConversionRefused);
+    expect(() => scenarioToCase({ ...loadScenarioDrafts()[0]!, spec_level: "outline" } as ScenarioDraft, known, "DRAFT-X")).toThrow(ConversionRefused);
   });
 });
 

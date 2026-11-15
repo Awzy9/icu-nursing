@@ -7,7 +7,8 @@ const drafts = loadScenarioDrafts();
 const clone = (d: ScenarioDraft): ScenarioDraft => JSON.parse(JSON.stringify(d));
 const rules = (d: ScenarioDraft) => validateScenarioDraft(d, known).map((i) => i.rule);
 const graph = drafts.find((d) => d.spec_level === "decision_graph")!;
-const outline = drafts.find((d) => d.spec_level === "outline")!;
+// An outline is derived from a graph: all 20 master scenarios are now decision graphs, but the validator still supports (and must reject bad) outlines.
+const outline: ScenarioDraft = (() => { const o = JSON.parse(JSON.stringify(drafts[0])) as ScenarioDraft; o.spec_level = "outline"; delete o.steps; delete o.debrief; o.expected_actions = [{ text: "Escalate early.", scope: "escalation", support: "partial", sources: [o.sources[0]!.id] }]; return o; })();
 
 describe("the 20 original scenarios as DRAFT specifications", () => {
   it("covers the master list in its original order, each exactly once", () => {
@@ -24,8 +25,9 @@ describe("the 20 original scenarios as DRAFT specifications", () => {
       expect(["partial", "unsupported"]).toContain(d.evidence_status);
     }
   });
-  it("has fourteen decision graphs and six outlines, and an unsupported outline carries no actions", () => {
-    expect(drafts.filter((d) => d.spec_level === "decision_graph").length).toBe(14);
+  it("has twenty decision graphs, none left as an outline, and an unsupported outline carries no actions", () => {
+    expect(drafts.filter((d) => d.spec_level === "decision_graph").length).toBe(20);
+    expect(drafts.filter((d) => d.spec_level === "outline").length).toBe(0);
     for (const d of drafts.filter((x) => x.evidence_status === "unsupported")) expect(d.expected_actions ?? []).toEqual([]);
   });
   it("rejects bad drafts", () => {
