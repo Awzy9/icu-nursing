@@ -6,5 +6,6 @@ export * as content from "./content";
 export * as equipment from "./equipment";
 export * as equipmentState from "./equipment-state";
 export * as medications from "./medications";
+export * as practice from "./practice";
 export * as questionBank from "./question-bank";
 export * as skills from "./skills";

@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, BookOpen, ClipboardCheck, ClipboardList, Layers, Workflow } from "lucide-react";
+import { ArrowRight, BookOpen, ClipboardCheck, ClipboardList, Layers, ListChecks, Workflow } from "lucide-react";
 import { Callout } from "@/components/ui/feedback";
 import { Button } from "@/components/ui/button";
 import { SegmentedBar } from "@/components/ui/segmented-bar";
@@ -9,6 +9,7 @@ import { localize } from "@/lib/content/localize";
 import { getContentRepository } from "@/lib/content";
 import { getCaseService } from "@/lib/cases";
 import { getSkillService } from "@/lib/skills";
+import { listPractice } from "@/lib/practice";
 import type { SkillProgress } from "@/lib/skills/types";
 import { getQuestionBankService, resolveMode } from "@/lib/question-bank";
 import type { CaseListItem, CaseProgress } from "@/lib/cases/types";
@@ -28,6 +29,7 @@ export default async function LearnPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const t = await getTranslations("Learn");
   const ts = await getTranslations("Skills");
+  const tp = await getTranslations("Practice");
   const mode = resolveMode();
   const topics = await (await getContentRepository()).listTopics({ locale }).catch(() => []);
   if (mode === "database") await requireUser(locale, "/learn");
@@ -65,6 +67,7 @@ export default async function LearnPage({ params }: { params: Promise<{ locale: 
     { Icon: Layers, title: t("studyTitle"), body: t("studyBody"), stat: t("studyStat", { n: study?.due ?? 0 }), href: "/study" },
     { Icon: Workflow, title: t("casesTitle"), body: t("casesBody"), stat: t("casesStat", { done: caseProgress?.completed_cases ?? 0, total: caseProgress?.available ?? 0 }), href: "/cases" },
     { Icon: ClipboardList, title: ts("hubTitle"), body: ts("hubBody"), stat: ts("hubStat", { n: skillProgress?.available ?? 0 }), href: "/skills" },
+    ...(mode === "disabled" ? [] : [{ Icon: ListChecks, title: tp("title"), body: tp("hubBody"), stat: tp("hubStat", { n: listPractice().length }), href: "/practice" }]),
   ];
 
   return (

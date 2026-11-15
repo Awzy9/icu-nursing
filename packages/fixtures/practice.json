@@ -1,0 +1,1035 @@
+[
+ {
+  "code": "SYN-PX-001",
+  "area": "sbar",
+  "kind": "classify",
+  "synthetic": true,
+  "title": {
+   "en": "Handover at the Harbour workshop (SBAR)",
+   "ar": "التسليم في ورشة الميناء (SBAR)"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "A fictional shift lead hands over a broken crane to the next shift. Put each statement under the part of SBAR it belongs to, or leave it out if it does not help the listener.",
+   "ar": "يسلّم قائد وردية خيالي رافعة معطلة للوردية التالية. ضع كل عبارة تحت الجزء الذي تنتمي إليه من SBAR، أو استبعدها إن لم تفد المستمع."
+  },
+  "categories": [
+   {
+    "id": "s",
+    "label": {
+     "en": "S: Situation",
+     "ar": "S: الموقف"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "en": "B: Background",
+     "ar": "B: الخلفية"
+    }
+   },
+   {
+    "id": "a",
+    "label": {
+     "en": "A: Assessment",
+     "ar": "A: التقييم"
+    }
+   },
+   {
+    "id": "r",
+    "label": {
+     "en": "R: Request",
+     "ar": "R: الطلب"
+    }
+   },
+   {
+    "id": "out",
+    "label": {
+     "en": "Leave out",
+     "ar": "استبعد"
+    }
+   }
+  ],
+  "items": [
+   {
+    "id": "i1",
+    "text": {
+     "en": "The blue crane stopped lifting twenty minutes ago.",
+     "ar": "توقفت الرافعة الزرقاء عن الرفع قبل عشرين دقيقة."
+    },
+    "category": "s",
+    "why": {
+     "en": "It says what is happening now.",
+     "ar": "تذكر ما يحدث الآن."
+    }
+   },
+   {
+    "id": "i2",
+    "text": {
+     "en": "It was serviced last month and has worked well since.",
+     "ar": "جرت صيانتها الشهر الماضي وعملت جيداً منذ ذلك الحين."
+    },
+    "category": "b",
+    "why": {
+     "en": "It is relevant history, not the current problem.",
+     "ar": "هي خلفية ذات صلة وليست المشكلة الحالية."
+    }
+   },
+   {
+    "id": "i3",
+    "text": {
+     "en": "I think the lifting cable is jammed, and it is getting worse.",
+     "ar": "أعتقد أن كابل الرفع عالق وأن الوضع يزداد سوءاً."
+    },
+    "category": "a",
+    "why": {
+     "en": "It is your judgement of what is wrong and how serious it is.",
+     "ar": "هو حكمك على ما هو خاطئ ومدى خطورته."
+    }
+   },
+   {
+    "id": "i4",
+    "text": {
+     "en": "Please send an engineer within the hour and keep the area closed until then.",
+     "ar": "أرجو إرسال مهندس خلال ساعة وإبقاء المنطقة مغلقة حتى ذلك الحين."
+    },
+    "category": "r",
+    "why": {
+     "en": "It says exactly what you need and by when.",
+     "ar": "تحدد ما تحتاجه بالضبط ومتى."
+    }
+   },
+   {
+    "id": "i5",
+    "text": {
+     "en": "The canteen ran out of tea again this morning.",
+     "ar": "نفد الشاي من المقصف مجدداً هذا الصباح."
+    },
+    "category": "out",
+    "why": {
+     "en": "It is true but does not help the listener act on the crane.",
+     "ar": "صحيح لكنه لا يساعد المستمع على التصرف بشأن الرافعة."
+    }
+   },
+   {
+    "id": "i6",
+    "text": {
+     "en": "The crane is the only one that reaches the north dock.",
+     "ar": "هذه هي الرافعة الوحيدة التي تصل إلى الرصيف الشمالي."
+    },
+    "category": "b",
+    "why": {
+     "en": "It explains why the problem matters here.",
+     "ar": "يشرح لماذا تهم المشكلة هنا."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Situation: what is happening now, in one sentence.",
+    "Background: only the history the listener needs.",
+    "Assessment: what you think the problem is and how urgent it is.",
+    "Request: what you need, from whom, and by when."
+   ],
+   "ar": [
+    "الموقف: ما يحدث الآن في جملة واحدة.",
+    "الخلفية: فقط التاريخ الذي يحتاجه المستمع.",
+    "التقييم: ما تعتقد أنه المشكلة ومدى استعجالها.",
+    "الطلب: ما تحتاجه، ومن من، ومتى."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-002",
+  "area": "sbar",
+  "kind": "classify",
+  "synthetic": true,
+  "title": {
+   "en": "A missing parcel report (SBAR)",
+   "ar": "بلاغ عن طرد مفقود (SBAR)"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "A fictional clerk phones a manager about a parcel that has not arrived. Sort the statements into SBAR, and leave out what does not belong.",
+   "ar": "يتصل كاتب خيالي بمدير بشأن طرد لم يصل. صنّف العبارات ضمن SBAR واستبعد ما لا ينتمي."
+  },
+  "categories": [
+   {
+    "id": "s",
+    "label": {
+     "en": "S: Situation",
+     "ar": "S: الموقف"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "en": "B: Background",
+     "ar": "B: الخلفية"
+    }
+   },
+   {
+    "id": "a",
+    "label": {
+     "en": "A: Assessment",
+     "ar": "A: التقييم"
+    }
+   },
+   {
+    "id": "r",
+    "label": {
+     "en": "R: Request",
+     "ar": "R: الطلب"
+    }
+   },
+   {
+    "id": "out",
+    "label": {
+     "en": "Leave out",
+     "ar": "استبعد"
+    }
+   }
+  ],
+  "items": [
+   {
+    "id": "i1",
+    "text": {
+     "en": "The parcel for the Lantern shop has not arrived and it is due today.",
+     "ar": "لم يصل الطرد الخاص بمحل الفانوس وهو مستحق اليوم."
+    },
+    "category": "s",
+    "why": {
+     "en": "This is the current problem.",
+     "ar": "هذه هي المشكلة الحالية."
+    }
+   },
+   {
+    "id": "i2",
+    "text": {
+     "en": "The courier confirmed pickup yesterday afternoon.",
+     "ar": "أكد المندوب الاستلام بعد ظهر أمس."
+    },
+    "category": "b",
+    "why": {
+     "en": "It is history that helps the manager trace it.",
+     "ar": "خلفية تساعد المدير على تتبعه."
+    }
+   },
+   {
+    "id": "i3",
+    "text": {
+     "en": "I am worried it was left at the wrong depot, because the tracking has stopped.",
+     "ar": "أخشى أنه ترك في مستودع خاطئ لأن التتبع توقف."
+    },
+    "category": "a",
+    "why": {
+     "en": "It is your assessment, with the reason for it.",
+     "ar": "هذا تقييمك مع سببه."
+    }
+   },
+   {
+    "id": "i4",
+    "text": {
+     "en": "Can you call the courier today and tell me what they say by noon?",
+     "ar": "هل يمكنك الاتصال بالمندوب اليوم وإخباري بما يقوله قبل الظهر؟"
+    },
+    "category": "r",
+    "why": {
+     "en": "A clear request with a time.",
+     "ar": "طلب واضح مع وقت."
+    }
+   },
+   {
+    "id": "i5",
+    "text": {
+     "en": "The shop's sign needs repainting.",
+     "ar": "لافتة المحل تحتاج إلى إعادة طلاء."
+    },
+    "category": "out",
+    "why": {
+     "en": "It has nothing to do with the parcel.",
+     "ar": "لا علاقة لها بالطرد."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Put the urgent point first: what is wrong now.",
+    "Keep the background short and relevant.",
+    "State what you think and why, then ask for something specific."
+   ],
+   "ar": [
+    "ابدأ بالنقطة العاجلة: ما الخطأ الآن.",
+    "اجعل الخلفية قصيرة وذات صلة.",
+    "اذكر ما تعتقد ولماذا ثم اطلب شيئاً محدداً."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-003",
+  "area": "documentation",
+  "kind": "spot",
+  "synthetic": true,
+  "title": {
+   "en": "Check a workshop log entry",
+   "ar": "افحص سجلاً في دفتر الورشة"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "A fictional log entry has been written. Select every line that makes the record unclear, unsafe to rely on or unprofessional. Leave sound lines unselected.",
+   "ar": "كُتب سجل خيالي في دفتر الورشة. حدد كل سطر يجعل السجل غير واضح أو غير موثوق أو غير مهني. اترك الأسطر السليمة دون تحديد."
+  },
+  "prompt": {
+   "en": "Select the lines with a problem.",
+   "ar": "حدد الأسطر التي بها مشكلة."
+  },
+  "lines": [
+   {
+    "id": "l1",
+    "text": {
+     "en": "Saw it was bad and fixed it a bit.",
+     "ar": "رأيت أنه سيء وأصلحته قليلاً."
+    },
+    "problem": true,
+    "why": {
+     "en": "Vague: it does not say what was found or done.",
+     "ar": "غامض: لا يذكر ما وُجد أو ما فُعل."
+    }
+   },
+   {
+    "id": "l2",
+    "text": {
+     "en": "14:05 Found the north gate latch loose; tightened it and tested it three times.",
+     "ar": "14:05 وُجد مزلاج البوابة الشمالية مرتخياً؛ شُدّ واختُبر ثلاث مرات."
+    },
+    "problem": false,
+    "why": {
+     "en": "Timed, specific, and says what was done and checked.",
+     "ar": "موقّت ومحدد ويذكر ما فُعل وما فُحص."
+    }
+   },
+   {
+    "id": "l3",
+    "text": {
+     "en": "The night worker was lazy and probably caused it.",
+     "ar": "عامل الليل كسول وربما تسبب بذلك."
+    },
+    "problem": true,
+    "why": {
+     "en": "An opinion and blame, not a fact.",
+     "ar": "رأي ولوم لا حقيقة."
+    }
+   },
+   {
+    "id": "l4",
+    "text": {
+     "en": "Used the thingy for the lock and the usual stuff.",
+     "ar": "استخدمت الأداة للقفل والأشياء المعتادة."
+    },
+    "problem": true,
+    "why": {
+     "en": "Unclear wording: another person could not tell what was used.",
+     "ar": "صياغة غير واضحة: لا يعرف غيرك ما استُخدم."
+    }
+   },
+   {
+    "id": "l5",
+    "text": {
+     "en": "14:20 Told the shift lead (Sam Rivers) the latch had been loose; Sam will check it again tomorrow morning.",
+     "ar": "14:20 أبلغت قائد الوردية (سام ريفرز) بأن المزلاج كان مرتخياً؛ سيفحصه سام مجدداً صباح الغد."
+    },
+    "problem": false,
+    "why": {
+     "en": "Says who was told, when, and what happens next.",
+     "ar": "يذكر من أُبلغ ومتى وما التالي."
+    }
+   },
+   {
+    "id": "l6",
+    "text": {
+     "en": "(no name or time on this entry)",
+     "ar": "(لا اسم ولا وقت في هذا السجل)"
+    },
+    "problem": true,
+    "why": {
+     "en": "An entry nobody can attribute or place in time cannot be relied on.",
+     "ar": "سجل لا يمكن نسبته لأحد ولا تحديد وقته لا يُعتمد عليه."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "A good record is timed, specific, factual and attributable.",
+    "Write what you saw and did, not guesses or blame.",
+    "Say who was told and what happens next."
+   ],
+   "ar": [
+    "السجل الجيد موقّت ومحدد وواقعي ويمكن نسبته.",
+    "اكتب ما رأيت وما فعلت لا التخمينات أو اللوم.",
+    "اذكر من أُبلغ وما التالي."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-004",
+  "area": "monitoring-escalation",
+  "kind": "choice",
+  "synthetic": true,
+  "title": {
+   "en": "Reading a trend on the Moonbeam queue chart",
+   "ar": "قراءة اتجاه على مخطط طابور القمر"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "The fictional Moonbeam office tracks a made-up queue index. In this exercise only, the rule is: a rising index over three checks means tell the shift lead now, even if no single number is high.",
+   "ar": "يتتبع مكتب القمر الخيالي مؤشر طابور مختلقاً. في هذا التمرين فقط، القاعدة: ارتفاع المؤشر خلال ثلاث فحوص يعني إبلاغ قائد الوردية فوراً حتى لو لم يكن أي رقم مرتفعاً."
+  },
+  "stem": {
+   "en": "Look at the three checks. What is the best next step?",
+   "ar": "انظر إلى الفحوص الثلاثة. ما أفضل خطوة تالية؟"
+  },
+  "table": {
+   "columns": [
+    {
+     "en": "Check",
+     "ar": "الفحص"
+    },
+    {
+     "en": "Queue index",
+     "ar": "مؤشر الطابور"
+    },
+    {
+     "en": "Mood of the queue",
+     "ar": "مزاج الطابور"
+    }
+   ],
+   "rows": [
+    {
+     "label": {
+      "en": "09:00",
+      "ar": "09:00"
+     },
+     "values": [
+      {
+       "en": "2",
+       "ar": "2"
+      },
+      {
+       "en": "Calm",
+       "ar": "هادئ"
+      }
+     ]
+    },
+    {
+     "label": {
+      "en": "09:30",
+      "ar": "09:30"
+     },
+     "values": [
+      {
+       "en": "3",
+       "ar": "3"
+      },
+      {
+       "en": "Restless",
+       "ar": "قلق"
+      }
+     ]
+    },
+    {
+     "label": {
+      "en": "10:00",
+      "ar": "10:00"
+     },
+     "values": [
+      {
+       "en": "4",
+       "ar": "4"
+      },
+      {
+       "en": "Noisy",
+       "ar": "صاخب"
+      }
+     ]
+    }
+   ]
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "en": "Tell the shift lead now: the index has risen at every check.",
+     "ar": "أبلغ قائد الوردية الآن: ارتفع المؤشر في كل فحص."
+    },
+    "correct": true,
+    "feedback": {
+     "en": "Right. The trend matters even though no single number is extreme.",
+     "ar": "صحيح. الاتجاه مهم حتى لو لم يكن أي رقم متطرفاً."
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "en": "Wait for the next check, because 4 is not very high.",
+     "ar": "انتظر الفحص التالي لأن 4 ليس مرتفعاً جداً."
+    },
+    "correct": false,
+    "feedback": {
+     "en": "Waiting hides a steady rise.",
+     "ar": "الانتظار يخفي ارتفاعاً مستمراً."
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "en": "Change the rule so that 4 counts as normal.",
+     "ar": "غيّر القاعدة لتعدّ 4 طبيعية."
+    },
+    "correct": false,
+    "feedback": {
+     "en": "Rules are changed by the people who own them, not to make a chart look calmer.",
+     "ar": "القواعد يغيّرها أصحابها لا لجعل المخطط يبدو أهدأ."
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "en": "Write the readings down and tell no one.",
+     "ar": "دوّن القراءات ولا تُخبر أحداً."
+    },
+    "correct": false,
+    "feedback": {
+     "en": "Recording is needed, but the rule says to tell someone.",
+     "ar": "التدوين مطلوب لكن القاعدة تقول أن تُبلغ أحداً."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Look at the direction as well as the latest number.",
+    "Escalate when the agreed rule says so.",
+    "Record the readings and who you told."
+   ],
+   "ar": [
+    "انظر إلى الاتجاه وليس إلى آخر رقم فقط.",
+    "صعّد عندما تقول القاعدة المتفق عليها ذلك.",
+    "سجّل القراءات ومن أبلغت."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-005",
+  "area": "monitoring-escalation",
+  "kind": "choice",
+  "synthetic": true,
+  "title": {
+   "en": "The bell keeps ringing",
+   "ar": "الجرس يرن باستمرار"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "In the fictional Harbour office a bell rings when the queue passes its limit. The bell has rung three times this morning.",
+   "ar": "في مكتب الميناء الخيالي يرن جرس عندما يتجاوز الطابور حده. رنّ الجرس ثلاث مرات هذا الصباح."
+  },
+  "stem": {
+   "en": "The bell rings again. What do you do first?",
+   "ar": "يرن الجرس مرة أخرى. ماذا تفعل أولاً؟"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "en": "Look at the queue itself, then at the panel, then decide.",
+     "ar": "انظر إلى الطابور نفسه ثم إلى اللوحة ثم قرر."
+    },
+    "correct": true,
+    "feedback": {
+     "en": "Right: the real situation first, the machine second.",
+     "ar": "صحيح: الوضع الحقيقي أولاً ثم الجهاز."
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "en": "Silence the bell because it keeps ringing.",
+     "ar": "اسكت الجرس لأنه يرن باستمرار."
+    },
+    "correct": false,
+    "feedback": {
+     "en": "A bell that keeps ringing is a reason to look, not to silence.",
+     "ar": "جرس يرن باستمرار سبب للنظر لا للإسكات."
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "en": "Raise the queue limit until the bell stops.",
+     "ar": "ارفع حد الطابور حتى يتوقف الجرس."
+    },
+    "correct": false,
+    "feedback": {
+     "en": "Limits are set by the person responsible, not changed to stop a noise.",
+     "ar": "الحدود يضعها المسؤول ولا تُغيّر لإيقاف صوت."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Go and look before you act on the machine.",
+    "Never silence or widen a limit just to stop the noise.",
+    "Tell the person responsible for the limit if it seems wrong."
+   ],
+   "ar": [
+    "اذهب وانظر قبل أن تتصرف في الجهاز.",
+    "لا تُسكت أو توسّع حداً لمجرد إيقاف الصوت.",
+    "أبلغ المسؤول عن الحد إن بدا خاطئاً."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-006",
+  "area": "infection-prevention",
+  "kind": "classify",
+  "synthetic": true,
+  "title": {
+   "en": "Clean and used zones in the paint lab",
+   "ar": "المناطق النظيفة والمستخدمة في مختبر الطلاء"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "A fictional paint lab keeps a Blue zone for clean tools and a Red zone for used tools. Put each item where it belongs so used things never touch clean things.",
+   "ar": "يحتفظ مختبر طلاء خيالي بمنطقة زرقاء للأدوات النظيفة ومنطقة حمراء للأدوات المستخدمة. ضع كل عنصر في مكانه كي لا تلامس المستخدمة النظيفة."
+  },
+  "categories": [
+   {
+    "id": "blue",
+    "label": {
+     "en": "Blue zone (clean)",
+     "ar": "المنطقة الزرقاء (نظيفة)"
+    }
+   },
+   {
+    "id": "red",
+    "label": {
+     "en": "Red zone (used)",
+     "ar": "المنطقة الحمراء (مستخدمة)"
+    }
+   }
+  ],
+  "items": [
+   {
+    "id": "i1",
+    "text": {
+     "en": "A brush straight from its sealed packet",
+     "ar": "فرشاة مباشرة من عبوتها المغلقة"
+    },
+    "category": "blue",
+    "why": {
+     "en": "Unused and sealed.",
+     "ar": "غير مستخدمة ومغلقة."
+    }
+   },
+   {
+    "id": "i2",
+    "text": {
+     "en": "A brush that has just been used",
+     "ar": "فرشاة استُخدمت للتو"
+    },
+    "category": "red",
+    "why": {
+     "en": "Used items go to the Red zone.",
+     "ar": "العناصر المستخدمة تذهب إلى المنطقة الحمراء."
+    }
+   },
+   {
+    "id": "i3",
+    "text": {
+     "en": "A tray that has been wiped and dried",
+     "ar": "صينية مُسحت وجُففت"
+    },
+    "category": "blue",
+    "why": {
+     "en": "Cleaned and dried.",
+     "ar": "نُظفت وجُففت."
+    }
+   },
+   {
+    "id": "i4",
+    "text": {
+     "en": "A cloth with paint on it",
+     "ar": "قطعة قماش عليها طلاء"
+    },
+    "category": "red",
+    "why": {
+     "en": "It is used and dirty.",
+     "ar": "مستخدمة ومتسخة."
+    }
+   },
+   {
+    "id": "i5",
+    "text": {
+     "en": "Gloves still in the box",
+     "ar": "قفازات ما زالت في علبتها"
+    },
+    "category": "blue",
+    "why": {
+     "en": "Unused.",
+     "ar": "غير مستخدمة."
+    }
+   },
+   {
+    "id": "i6",
+    "text": {
+     "en": "A palette dropped on the floor",
+     "ar": "لوحة ألوان سقطت على الأرض"
+    },
+    "category": "red",
+    "why": {
+     "en": "Anything dropped counts as used until it is cleaned.",
+     "ar": "كل ما يسقط يُعدّ مستخدماً حتى يُنظّف."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Keep clean and used things apart, always.",
+    "Anything dropped or touched by something used is treated as used.",
+    "Clean, dry, then return to the clean zone."
+   ],
+   "ar": [
+    "أبقِ النظيف والمستخدم منفصلين دائماً.",
+    "كل ما يسقط أو يلامس مستخدماً يُعدّ مستخدماً.",
+    "نظّف ثم جفف ثم أعد إلى المنطقة النظيفة."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-007",
+  "area": "infection-prevention",
+  "kind": "sequence",
+  "synthetic": true,
+  "title": {
+   "en": "Set up a clean tray in the right order",
+   "ar": "جهّز صينية نظيفة بالترتيب الصحيح"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "Put the steps for setting up a fictional clean tray in the order you would do them.",
+   "ar": "رتّب خطوات تجهيز صينية نظيفة خيالية بالترتيب الذي تنفذه."
+  },
+  "steps": [
+   {
+    "id": "s1",
+    "text": {
+     "en": "Clear the work surface and wash your hands",
+     "ar": "أخلِ سطح العمل واغسل يديك"
+    },
+    "why": {
+     "en": "Start from a clean surface and clean hands.",
+     "ar": "ابدأ بسطح نظيف ويدين نظيفتين."
+    }
+   },
+   {
+    "id": "s2",
+    "text": {
+     "en": "Wipe the tray and let it dry",
+     "ar": "امسح الصينية واتركها تجف"
+    },
+    "why": {
+     "en": "Dry surfaces stay clean longer.",
+     "ar": "الأسطح الجافة تبقى نظيفة أطول."
+    }
+   },
+   {
+    "id": "s3",
+    "text": {
+     "en": "Check the packets are sealed and in date",
+     "ar": "تحقق من أن العبوات مغلقة وصالحة"
+    },
+    "why": {
+     "en": "Check before you open anything.",
+     "ar": "تحقق قبل أن تفتح أي شيء."
+    }
+   },
+   {
+    "id": "s4",
+    "text": {
+     "en": "Open the packets and lay the items on the tray",
+     "ar": "افتح العبوات وضع العناصر على الصينية"
+    },
+    "why": {
+     "en": "Open only when ready to use.",
+     "ar": "لا تفتح إلا عند الاستعداد للاستخدام."
+    }
+   },
+   {
+    "id": "s5",
+    "text": {
+     "en": "Cover the tray until it is needed",
+     "ar": "غطِّ الصينية حتى الحاجة إليها"
+    },
+    "why": {
+     "en": "Covering protects clean items.",
+     "ar": "التغطية تحمي العناصر النظيفة."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Prepare the space first, then the items.",
+    "Check before you open.",
+    "Protect what is clean until it is used."
+   ],
+   "ar": [
+    "جهّز المكان أولاً ثم العناصر.",
+    "تحقق قبل أن تفتح.",
+    "احمِ النظيف حتى يُستخدم."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-008",
+  "area": "equipment-practice",
+  "kind": "sequence",
+  "synthetic": true,
+  "title": {
+   "en": "Pre-use checks of the Harbour fan",
+   "ar": "فحوص ما قبل الاستخدام لمروحة الميناء"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "The Harbour fan is a fictional device. Put its pre-use checks in a sensible order.",
+   "ar": "مروحة الميناء جهاز خيالي. رتّب فحوص ما قبل الاستخدام بترتيب منطقي."
+  },
+  "steps": [
+   {
+    "id": "s1",
+    "text": {
+     "en": "Look at the fan for damage before you switch it on",
+     "ar": "افحص المروحة بحثاً عن تلف قبل تشغيلها"
+    },
+    "why": {
+     "en": "Never power up damaged equipment.",
+     "ar": "لا تشغّل جهازاً تالفاً."
+    }
+   },
+   {
+    "id": "s2",
+    "text": {
+     "en": "Check the cable and plug",
+     "ar": "افحص الكابل والقابس"
+    },
+    "why": {
+     "en": "Power faults are common and easy to see.",
+     "ar": "أعطال الطاقة شائعة وسهلة الرؤية."
+    }
+   },
+   {
+    "id": "s3",
+    "text": {
+     "en": "Switch on and watch the self-test",
+     "ar": "شغّل وراقب الاختبار الذاتي"
+    },
+    "why": {
+     "en": "The self-test shows basic faults.",
+     "ar": "يكشف الاختبار الذاتي الأعطال الأساسية."
+    }
+   },
+   {
+    "id": "s4",
+    "text": {
+     "en": "Check the trace on the display looks like a fan trace",
+     "ar": "تحقق أن المنحنى على الشاشة يشبه منحنى المروحة"
+    },
+    "why": {
+     "en": "Confirm the display shows what you expect.",
+     "ar": "تأكد أن الشاشة تعرض ما تتوقعه."
+    }
+   },
+   {
+    "id": "s5",
+    "text": {
+     "en": "Set the limit only as agreed and record the checks",
+     "ar": "اضبط الحد كما اتُفق فقط وسجّل الفحوص"
+    },
+    "why": {
+     "en": "Settings follow the agreed plan; record what you did.",
+     "ar": "الإعدادات تتبع الخطة المتفق عليها؛ سجّل ما فعلت."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Check the device before power, then the power, then the display.",
+    "Settings follow the agreed plan.",
+    "Record the checks."
+   ],
+   "ar": [
+    "افحص الجهاز قبل الطاقة ثم الطاقة ثم الشاشة.",
+    "الإعدادات تتبع الخطة المتفق عليها.",
+    "سجّل الفحوص."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-009",
+  "area": "equipment-practice",
+  "kind": "choice",
+  "synthetic": true,
+  "title": {
+   "en": "The fan trace goes flat",
+   "ar": "منحنى المروحة أصبح مسطحاً"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "The Harbour fan trace was a repeating wave. It has suddenly gone flat.",
+   "ar": "كان منحنى مروحة الميناء موجة متكررة. أصبح فجأة مسطحاً."
+  },
+  "stem": {
+   "en": "What do you do first?",
+   "ar": "ماذا تفعل أولاً؟"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "en": "Check the room and the fan itself first, then the connections, and call for help if it is not an easy fix.",
+     "ar": "افحص الغرفة والمروحة نفسها أولاً ثم التوصيلات واطلب المساعدة إن لم يكن الحل سهلاً."
+    },
+    "correct": true,
+    "feedback": {
+     "en": "Right: the real situation first, then the equipment, then help.",
+     "ar": "صحيح: الوضع الحقيقي أولاً ثم الجهاز ثم المساعدة."
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "en": "Assume the screen is wrong and ignore it.",
+     "ar": "افترض أن الشاشة خاطئة وتجاهلها."
+    },
+    "correct": false,
+    "feedback": {
+     "en": "A sudden change is a reason to check, not to ignore.",
+     "ar": "التغير المفاجئ سبب للفحص لا للتجاهل."
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "en": "Open the fan casing to look inside.",
+     "ar": "افتح غلاف المروحة لتنظر داخلها."
+    },
+    "correct": false,
+    "feedback": {
+     "en": "Opening equipment is for authorised engineers.",
+     "ar": "فتح الأجهزة للمهندسين المخولين."
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Look at the real situation before the screen.",
+    "Check simple things first.",
+    "Do not open or repair equipment you are not authorised to."
+   ],
+   "ar": [
+    "انظر إلى الوضع الحقيقي قبل الشاشة.",
+    "افحص الأشياء البسيطة أولاً.",
+    "لا تفتح أو تصلح جهازاً غير مخوَّل بذلك."
+   ]
+  }
+ },
+ {
+  "code": "SYN-PX-010",
+  "area": "competency",
+  "kind": "checklist",
+  "synthetic": true,
+  "title": {
+   "en": "Self-assessment: baking a fictional loaf",
+   "ar": "تقييم ذاتي: خبز رغيف خيالي"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical exercise about a fictional workshop. It contains no clinical content and exists to test the practice pages.",
+   "ar": "تمرين تجريبي غير سريري عن ورشة خيالية. لا يحتوي على محتوى للعناية المركزة أو للمرضى وهو موجود لاختبار صفحات التدريب."
+  },
+  "intro": {
+   "en": "Rate yourself on each step. This is only your own record: nothing is checked, scored or certified.",
+   "ar": "قيّم نفسك في كل خطوة. هذا سجلك الخاص فقط: لا شيء يُفحص أو يُحتسب أو يُعتمد."
+  },
+  "items": [
+   {
+    "id": "c1",
+    "text": {
+     "en": "Gather the fictional ingredients",
+     "ar": "اجمع المكونات الخيالية"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "en": "Mix and rest the dough",
+     "ar": "اخلط العجين واتركه يستريح"
+    }
+   },
+   {
+    "id": "c3",
+    "text": {
+     "en": "Shape the loaf",
+     "ar": "شكّل الرغيف"
+    }
+   },
+   {
+    "id": "c4",
+    "text": {
+     "en": "Judge when it is ready",
+     "ar": "احكم متى يصبح جاهزاً"
+    }
+   },
+   {
+    "id": "c5",
+    "text": {
+     "en": "Clean the work area afterwards",
+     "ar": "نظّف منطقة العمل بعد ذلك"
+    }
+   }
+  ],
+  "debrief": {
+   "en": [
+    "Your ratings are saved only on this device.",
+    "A self-assessment is not verification: real competence is assessed by an authorised assessor outside this site."
+   ],
+   "ar": [
+    "تُحفظ تقييماتك على هذا الجهاز فقط.",
+    "التقييم الذاتي ليس توثيقاً: يقيّم الكفاءة الفعلية مقيّم مخول خارج هذا الموقع."
+   ]
+  }
+ }
+]

@@ -56,7 +56,8 @@
     "study": "Study",
     "cases": "Cases",
     "learn": "Learn",
-    "equipment": "Equipment and monitoring"
+    "equipment": "Equipment and monitoring",
+    "practice": "Practice labs"
   },
   "ComingSoon": {
     "title": "{feature} — coming in a later phase",
@@ -908,5 +909,70 @@
     "unavailable": "The security check is not available. Please close this screen and try again later.",
     "waiting": "Complete the check to continue.",
     "done": "Check complete. You can continue in the app."
+  },
+  "Practice": {
+    "title": "Practice labs",
+    "intro": "Short interactive exercises for the practical side of nursing work: structured communication (SBAR), documentation, monitoring and escalation, infection prevention, equipment checks and competency self-assessment.",
+    "fixturesBanner": "SYNTHETIC NONCLINICAL EXERCISES. Every exercise here is about a fictional workshop and was written to test the software. It is not nursing guidance. Real practical content is held as unpublished drafts and is not shown here.",
+    "noVerification": "Nothing here is an official competency check, certificate or approval. Your scores and self-ratings are private to this device and are not verification of any skill.",
+    "competenciesLink": "Competency self-assessment map",
+    "competenciesTitle": "Competency self-assessment",
+    "competenciesIntro": "Rate your own confidence for each skill. This is a personal record to help you plan practice with your educator or preceptor; it is not assessed or verified.",
+    "disabledTitle": "Practice labs are switched off here",
+    "disabledBody": "Sample exercises are switched off in this environment, and no reviewed practical content has been published yet.",
+    "areas": {
+      "sbar": "SBAR communication",
+      "documentation": "Bedside documentation",
+      "monitoring-escalation": "Monitoring and escalation",
+      "infection-prevention": "Infection prevention and safety",
+      "equipment-practice": "Practical equipment education",
+      "competency": "Competency checklists"
+    },
+    "areaBody": {
+      "sbar": "Practise giving a structured handover: situation, background, assessment, request.",
+      "documentation": "Spot what makes a record clear, safe to rely on and professional.",
+      "monitoring-escalation": "Read a trend and decide when and whom to tell.",
+      "infection-prevention": "Keep clean and used things apart and prepare in a safe order.",
+      "equipment-practice": "Practise checks and first responses with a fictional device.",
+      "competency": "Rate yourself against a checklist and keep your own record."
+    },
+    "kinds": {
+      "classify": "Sort the statements",
+      "spot": "Spot the problems",
+      "sequence": "Put the steps in order",
+      "choice": "Choose the best action",
+      "checklist": "Self-assessment checklist"
+    },
+    "right": "Right",
+    "notQuite": "Not quite",
+    "hadProblem": "This line had a problem.",
+    "wasSound": "This line was sound.",
+    "check": "Check my answers",
+    "tryAgain": "Try again",
+    "back": "Back to practice labs",
+    "scoreHeading": "You got {correct} of {total}",
+    "scoreLive": "You got {correct} of {total}.",
+    "spotExtra": "Problems you missed: {missed}. Sound lines you flagged: {falseFlags}.",
+    "keyPoints": "Key points",
+    "sequenceHelp": "Use the arrow buttons to move a step up or down, then check your order.",
+    "moveUp": "Move step {n} up",
+    "moveDown": "Move step {n} down",
+    "moved": "Moved to position {n}",
+    "lvlNot": "Not started",
+    "lvlLearning": "Learning",
+    "lvlSupport": "Practised with support",
+    "lvlIndependent": "Practised independently",
+    "savedHere": "Saved on this device.",
+    "levelsSummary": "Independent: {independent}. With support: {support}. Learning: {learning}. Not started: {notStarted}.",
+    "selfAssessNotice": "This is your own record. It is not assessed, scored or certified, and only an authorised assessor outside this site can confirm competence.",
+    "print": "Print this page",
+    "lastScore": "Last score {correct}/{total}",
+    "notTried": "Not tried yet",
+    "dataTitle": "Your data on this device",
+    "dataBody": "Scores and self-ratings are stored only in this browser. You can remove them at any time.",
+    "clear": "Clear my practice data",
+    "cleared": "Practice data cleared on this device.",
+    "hubBody": "Short interactive exercises on SBAR, documentation, escalation, infection prevention and equipment checks.",
+    "hubStat": "{n} exercises"
   }
 }
