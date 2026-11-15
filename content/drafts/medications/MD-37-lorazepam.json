@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label directs close monitoring for respiratory depression and sedation.",
+     "support": "sourced",
+     "sources": [
+      "L-LORAZEPAM"
+     ]
     }
    ]
   },
@@ -204,5 +211,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "5140798d-8571-41fb-84a4-e182aac3f64c",
+  "label_version": "4",
+  "effective_time": "20261109",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

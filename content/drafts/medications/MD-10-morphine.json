@@ -71,6 +71,13 @@
      "sources": [
       "L-MORPHINE"
      ]
+    },
+    {
+     "text": "The label directs close monitoring, particularly at the start and during adjustment of the opioid.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
     }
    ]
   },
@@ -215,5 +222,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "be420e8b-bcb0-49b5-bb4d-1df8b9959809",
+  "label_version": "27",
+  "effective_time": "20261014",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

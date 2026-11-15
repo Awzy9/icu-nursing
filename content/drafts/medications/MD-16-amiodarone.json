@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Continuous rhythm and blood pressure monitoring and alarm limits follow the unit's protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for monitoring for QTc prolongation during amiodarone infusion and for close observation during the infusion; a new visual symptom needs an eye examination.",
+     "support": "sourced",
+     "sources": [
+      "L-AMIODARONE"
+     ]
     }
    ]
   },
@@ -204,5 +211,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "0a28ae25-7cc4-4ac0-a2ba-7820fb93e25c",
+  "label_version": "6",
+  "effective_time": "20260116",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

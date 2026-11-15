@@ -213,5 +213,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "2f547f7c-0322-465c-9764-43f955d98ab2",
+  "label_version": "4",
+  "effective_time": "20261102",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Haemodynamic monitoring frequency follows the unit's vasoactive infusion protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "After vasopressin is stopped, the label calls for monitoring of serum electrolytes, fluid status and urine output because reversible diabetes insipidus can occur.",
+     "support": "sourced",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
     }
    ]
   },
@@ -197,5 +204,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "b1147beb-743e-4c62-8927-91192447f8b8",
+  "label_version": "49",
+  "effective_time": "20260421",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

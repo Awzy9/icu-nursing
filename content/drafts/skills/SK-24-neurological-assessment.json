@@ -18,6 +18,11 @@
    "id": "S-GCS-OFFICIAL",
    "read": "partial",
    "use": "Glasgow Coma Scale structured-approach website and assessment aid (copyright (c) Teasdale and Jennett, RED)"
+  },
+  {
+   "id": "S-OPENRN-HA-CVA",
+   "read": "full",
+   "use": "Open RN Health Alterations 9.9: neurological assessment and increased-ICP manifestations (stroke text; entry-level)"
   }
  ],
  "objectives": [
@@ -71,12 +76,19 @@
    ]
   },
   "assessment": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Component definitions and scoring are not reproduced (copyright); use the unit-approved scale and training.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "A focused neurological assessment includes the level of consciousness, the Glasgow Coma Scale and a pupil evaluation, as well as speech and cognition.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
     }
    ]
   },
@@ -89,6 +101,13 @@
      "sources": [
       "S-GCS-OFFICIAL"
      ]
+    },
+    {
+     "text": "A decreased level of consciousness is the earliest sign of raised intracranial pressure; restlessness, headache, vomiting, high blood pressure and a slow heart rate can follow, so a downward change from the last assessment is significant.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
     }
    ]
   },
@@ -100,6 +119,13 @@
      "support": "partial",
      "sources": [
       "S-GCS-OFFICIAL"
+     ]
+    },
+    {
+     "text": "Report a fall in the level of consciousness, new restlessness or confusion, or pupil change urgently with the previous assessment for comparison; sedatives can mask neurological symptoms, so discuss them with the team before giving them.",
+     "support": "partial",
+     "sources": [
+      "S-OPENRN-HA-CVA"
      ]
     }
    ]
@@ -185,7 +211,8 @@
  ],
  "gaps": [
   "Interpretation bands, ICP/CPP management and brain-injury guidelines: not covered.",
-  "GCS component wording: copyright; permission required to reproduce."
+  "GCS component wording: copyright; permission required to reproduce.",
+  "Phase 14: the added statements come from an entry-level stroke text; ICP and cerebral perfusion values and monitoring-device care remain unsourced."
  ],
  "permissions": [
   "GCS aid copyright (Teasdale and Jennett): permission required."
@@ -201,6 +228,17 @@
    "read": "partial",
    "licence_class": "RED",
    "permission_required": "Yes"
+  },
+  {
+   "id": "S-OPENRN-HA-CVA",
+   "title": "Health Alterations, section 9.9 Cerebrovascular Accident (increased intracranial pressure boxes)",
+   "publisher": "Open RN",
+   "version": "2025 (WisTech Open)",
+   "url": "https://wtcs.pressbooks.pub/healthalts/chapter/9-9-cerebrovascular-accident/",
+   "accessed": "2026-11-15",
+   "read": "full",
+   "licence_class": "GREEN",
+   "permission_required": "No"
   }
  ]
 }

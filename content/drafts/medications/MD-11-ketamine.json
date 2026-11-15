@@ -70,12 +70,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Frequency of vital-sign, sedation and airway monitoring follows the unit's protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for monitoring of vital signs and cardiac function during ketamine administration.",
+     "support": "sourced",
+     "sources": [
+      "L-KETAMINE"
+     ]
     }
    ]
   },
@@ -220,5 +227,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "f8b01c77-620d-4734-a771-b8524b65bcca",
+  "label_version": "7",
+  "effective_time": "20260924",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

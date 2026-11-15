@@ -881,6 +881,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "db3a1c9a1fcc2937",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AARC-PVA",
+     "S-ERC-ALS-2025",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-09": [
@@ -1074,6 +1089,20 @@
     "gaps": 2,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "6034e0983db5c6d7",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024",
+     "S-CDC-IC",
+     "S-CDC-ISOLATION-2007",
+     "S-WHO-HH-2009"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-22": [
@@ -1114,6 +1143,18 @@
     "gaps": 2,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "483937a069b59b9a",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-GCS-OFFICIAL",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-25": [
@@ -1144,11 +1185,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "87071bf9fdad8e64",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-02": [
    {
     "hash": "c5ca3d87a9e56e3e",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "41e1ae2c414baf8b",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1174,11 +1241,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "93ac444c83103d9b",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VASOPRESSIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-04": [
    {
     "hash": "00e68febb5c1611c",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "c4f7e0af66e2e812",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1204,11 +1297,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1b566ec8834f2829",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MILRINONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-06": [
    {
     "hash": "d1b0821e16e722ae",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PROPOFOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "7325cc0140d67d45",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1234,11 +1353,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "53006eda79cc2da3",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MIDAZOLAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-08": [
    {
     "hash": "5c74af45f6683bbf",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "57b8cbd8311a9c15",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1264,11 +1409,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "a01f70e366bd2c72",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FENTANYL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-10": [
    {
     "hash": "ef4a65dcd37ddf7d",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MORPHINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "646b47773e1ce2d3",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1294,11 +1465,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "431f9fb65e103439",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-KETAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-12": [
    {
     "hash": "6dae5f589e26693d",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ROCURONIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "2c14f12022b66e47",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1324,11 +1521,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "6a998e0045b091a8",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CISATRACURIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-14": [
    {
     "hash": "4d37de139679f27e",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "31ce5a130e69babd",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1356,11 +1579,39 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "8f7048291a68461f",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-16": [
    {
     "hash": "9c1ed8c18df8a25f",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-AMIODARONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "9e31985562a81483",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1386,11 +1637,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2d05c6d328da06e5",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-18": [
    {
     "hash": "52ca52d2eba79661",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MAGNESIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d0d9504a7ae895cf",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1416,11 +1693,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "852cb0f3aa222157",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-POTASSIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-20": [
    {
     "hash": "bc9d2f142133549b",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "722c01e8acedcfe5",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1446,11 +1749,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "d48648d8bb5de2f9",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-BICARBONATE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-22": [
    {
     "hash": "059298b4a95c2e29",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PIPTAZO",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "15af1e309fcc888a",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1476,11 +1805,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "dcc8d0e80904ba7b",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MEROPENEM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-24": [
    {
     "hash": "416fb789f335abe6",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VANCOMYCIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e0eae3076daf8e43",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1506,11 +1861,37 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "22c9e9f0ffd125ba",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFTRIAXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-26": [
    {
     "hash": "87e34fd6ba903cd4",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFAZOLIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "0540d8a39c5edee5",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1536,11 +1917,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1884805d10b9f206",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-AZITHROMYCIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-28": [
    {
     "hash": "9672a2f0101c56cd",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LINEZOLID",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f10ec04e3a8a04c1",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1566,11 +1973,37 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "152cc2b4c397486e",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-GENTAMICIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-30": [
    {
     "hash": "2968776a7c3a2950",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "b589b3955b1497e1",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1596,11 +2029,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4db09f4867739732",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOPAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-32": [
    {
     "hash": "53ea3a88998ba1f1",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NICARDIPINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ecaf1f01293532c7",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1626,11 +2085,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "75d2e16105ddd332",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LABETALOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-34": [
    {
     "hash": "4e048d58eb0697d3",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ESMOLOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "14d65219878549fb",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1656,11 +2141,37 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "760e86f340c3cebf",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NITROGLYCERIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-36": [
    {
     "hash": "669bb0fcad9c7f67",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FUROSEMIDE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e488f870a3b49d73",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1686,11 +2197,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "54b92d2526176ea0",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-38": [
    {
     "hash": "4a2f0f192d707ba4",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "00e8e2adb47e4df4",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1716,11 +2253,37 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "5a6c70682e16f9cd",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HYDROMORPHONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-40": [
    {
     "hash": "1b1f980b2544f903",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NALOXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "fe7324d2e01f3e24",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1746,11 +2309,37 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "a961a7f97746d1da",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FLUMAZENIL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-42": [
    {
     "hash": "8d1c8f0957983a38",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ATROPINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "88c0e1832ae7046c",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1776,11 +2365,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "ce0ebbd6a7b0316f",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-SUCCINYLCHOLINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-44": [
    {
     "hash": "0774fc26454efc41",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "6e2dd54f40d4cc6b",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1806,11 +2421,37 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "aad315b73df9c65e",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ALTEPLASE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-46": [
    {
     "hash": "ee69e99bb81c41a9",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-TXA",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "9ba976b919e6ecc6",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1836,11 +2477,37 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "c8926193898ff938",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LEVETIRACETAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-48": [
    {
     "hash": "e6cf3edff5ef274c",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "3c2723c577eb947b",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [
@@ -1866,11 +2533,37 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2e0c998f1c775a25",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PANTOPRAZOLE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-50": [
    {
     "hash": "636d409da151fe68",
+    "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HYDROCORTISONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "9c2ac29270725d1d",
     "recorded": "2026-11-15",
     "evidence_status": "partial",
     "sources": [

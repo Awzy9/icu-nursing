@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring of reflexes, respiration, blood pressure and serum magnesium follows the unit's protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label states that monitoring serum magnesium levels and the clinical state of the patient is essential.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
     }
    ]
   },
@@ -199,5 +206,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "d4b5863a-efb9-4551-a9ad-2b06e8666d87",
+  "label_version": "22",
+  "effective_time": "20260423",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

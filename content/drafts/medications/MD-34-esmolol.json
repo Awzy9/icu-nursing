@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for monitoring of heart rate and rhythm and for close monitoring, especially if the starting blood pressure is low.",
+     "support": "sourced",
+     "sources": [
+      "L-ESMOLOL"
+     ]
     }
    ]
   },
@@ -220,5 +227,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "3853a26d-782d-f4e7-e063-6294a90a6e47",
+  "label_version": "3",
+  "effective_time": "20251218",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

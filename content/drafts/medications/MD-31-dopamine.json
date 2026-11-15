@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for monitoring of the skin of the extremities in susceptible patients and for monitoring patients who have arrhythmias.",
+     "support": "sourced",
+     "sources": [
+      "L-DOPAMINE"
+     ]
     }
    ]
   },
@@ -213,5 +220,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "1f306ad2-3606-4525-5a8a-ce78f426c1a2",
+  "label_version": "22",
+  "effective_time": "20260513",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

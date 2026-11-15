@@ -85,9 +85,9 @@ SK-08,Oxygen delivery devices,safety,partial,2,1,1,0,S-ERC-ALS-2025;S-RCP-NEWS2
 SK-08,Oxygen delivery devices,responsibilities,partial,1,0,1,0,S-AARC-O2;S-RCP-NEWS2
 SK-08,Oxygen delivery devices,scope,local_protocol,1,0,0,1,
 SK-08,Oxygen delivery devices,equipment,local_protocol,1,0,0,1,
-SK-08,Oxygen delivery devices,assessment,partial,1,0,1,0,S-AARC-O2;S-AARC-PVA
+SK-08,Oxygen delivery devices,assessment,partial,2,1,1,0,S-AARC-O2;S-AARC-PVA;S-OPENRN-FUND-CH8
 SK-08,Oxygen delivery devices,procedure,local_protocol,1,0,0,1,
-SK-08,Oxygen delivery devices,monitoring,partial,1,0,1,0,S-AARC-O2
+SK-08,Oxygen delivery devices,monitoring,partial,2,1,1,0,S-AARC-O2;S-OPENRN-FUND-CH8
 SK-08,Oxygen delivery devices,escalation,partial,1,0,1,0,S-AARC-O2;S-RCP-NEWS2
 SK-08,Oxygen delivery devices,documentation,local_protocol,1,0,0,1,
 SK-09,Blood transfusion,indications,local_protocol,1,0,0,1,
@@ -200,7 +200,7 @@ SK-20,Intrahospital patient transport,escalation,local_protocol,1,0,0,1,
 SK-20,Intrahospital patient transport,documentation,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,communication,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-21,Infection prevention (standard precautions),indications,partial,1,0,1,0,S-CDC-IC
-SK-21,Infection prevention (standard precautions),safety,partial,2,0,2,0,S-CDC-IC
+SK-21,Infection prevention (standard precautions),safety,partial,4,0,4,0,S-CDC-HANDHYG-2024;S-CDC-IC
 SK-21,Infection prevention (standard precautions),responsibilities,partial,1,0,1,0,S-CDC-IC
 SK-21,Infection prevention (standard precautions),scope,local_protocol,1,0,0,1,
 SK-21,Infection prevention (standard precautions),procedure,local_protocol,1,0,0,1,
@@ -223,9 +223,9 @@ SK-23,Sedation assessment,documentation,local_protocol,1,0,0,1,
 SK-24,Neurological assessment,safety,partial,1,0,1,0,S-GCS-OFFICIAL
 SK-24,Neurological assessment,responsibilities,partial,2,0,2,0,S-GCS-OFFICIAL
 SK-24,Neurological assessment,scope,local_protocol,1,0,0,1,
-SK-24,Neurological assessment,assessment,local_protocol,1,0,0,1,
-SK-24,Neurological assessment,monitoring,partial,1,0,1,0,S-GCS-OFFICIAL
-SK-24,Neurological assessment,escalation,partial,1,0,1,0,S-GCS-OFFICIAL
+SK-24,Neurological assessment,assessment,partial,2,1,0,1,S-OPENRN-HA-CVA
+SK-24,Neurological assessment,monitoring,partial,2,1,1,0,S-GCS-OFFICIAL;S-OPENRN-HA-CVA
+SK-24,Neurological assessment,escalation,partial,2,0,2,0,S-GCS-OFFICIAL;S-OPENRN-HA-CVA
 SK-24,Neurological assessment,communication,partial,1,0,1,0,S-GCS-OFFICIAL
 SK-24,Neurological assessment,documentation,local_protocol,1,0,0,1,
 SK-25,Pain assessment,indications,partial,1,0,1,0,S-SCCM-PADIS

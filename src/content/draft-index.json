@@ -1746,6 +1746,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-OPENRN-FUND-CH8",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -1754,7 +1759,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9d574d6ebf9ab5b0"
+   "hash": "db3a1c9a1fcc2937"
   },
   {
    "key": "SK-09",
@@ -2116,6 +2121,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-CDC-HANDHYG-2024",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    },
+    {
      "id": "S-CDC-IC",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2132,9 +2142,9 @@
     }
    ],
    "issues": [],
-   "gaps": 2,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "a913c5c41f8fd8bb"
+   "hash": "6034e0983db5c6d7"
   },
   {
    "key": "SK-22",
@@ -2194,12 +2204,17 @@
      "id": "S-GCS-OFFICIAL",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-HA-CVA",
+     "licence_class": "GREEN",
+     "verified": "2026-11-15"
     }
    ],
    "issues": [],
-   "gaps": 2,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "1487663a76954f13"
+   "hash": "483937a069b59b9a"
   },
   {
    "key": "SK-25",
@@ -2259,7 +2274,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a02031793ff76733"
+   "hash": "87071bf9fdad8e64"
   },
   {
    "key": "MD-02",
@@ -2289,7 +2304,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c5ca3d87a9e56e3e"
+   "hash": "41e1ae2c414baf8b"
   },
   {
    "key": "MD-03",
@@ -2319,7 +2334,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a23654e63415048e"
+   "hash": "93ac444c83103d9b"
   },
   {
    "key": "MD-04",
@@ -2349,7 +2364,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "00e68febb5c1611c"
+   "hash": "c4f7e0af66e2e812"
   },
   {
    "key": "MD-05",
@@ -2379,7 +2394,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "064493456417d5e8"
+   "hash": "1b566ec8834f2829"
   },
   {
    "key": "MD-06",
@@ -2409,7 +2424,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d1b0821e16e722ae"
+   "hash": "7325cc0140d67d45"
   },
   {
    "key": "MD-07",
@@ -2439,7 +2454,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "53afe0b7cb0837bb"
+   "hash": "53006eda79cc2da3"
   },
   {
    "key": "MD-08",
@@ -2469,7 +2484,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "5c74af45f6683bbf"
+   "hash": "57b8cbd8311a9c15"
   },
   {
    "key": "MD-09",
@@ -2499,7 +2514,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "29ed4753786c80d6"
+   "hash": "a01f70e366bd2c72"
   },
   {
    "key": "MD-10",
@@ -2529,7 +2544,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ef4a65dcd37ddf7d"
+   "hash": "646b47773e1ce2d3"
   },
   {
    "key": "MD-11",
@@ -2559,7 +2574,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "1025a9d69932aa8f"
+   "hash": "431f9fb65e103439"
   },
   {
    "key": "MD-12",
@@ -2589,7 +2604,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "6dae5f589e26693d"
+   "hash": "2c14f12022b66e47"
   },
   {
    "key": "MD-13",
@@ -2619,7 +2634,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ca29bc8857564350"
+   "hash": "6a998e0045b091a8"
   },
   {
    "key": "MD-14",
@@ -2649,7 +2664,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "4d37de139679f27e"
+   "hash": "31ce5a130e69babd"
   },
   {
    "key": "MD-15",
@@ -2689,7 +2704,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "07447bb9d6a81081"
+   "hash": "8f7048291a68461f"
   },
   {
    "key": "MD-16",
@@ -2719,7 +2734,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9c1ed8c18df8a25f"
+   "hash": "9e31985562a81483"
   },
   {
    "key": "MD-17",
@@ -2749,7 +2764,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e881f459affaa51f"
+   "hash": "2d05c6d328da06e5"
   },
   {
    "key": "MD-18",
@@ -2779,7 +2794,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "52ca52d2eba79661"
+   "hash": "d0d9504a7ae895cf"
   },
   {
    "key": "MD-19",
@@ -2809,7 +2824,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "969144fe3a8ba49e"
+   "hash": "852cb0f3aa222157"
   },
   {
    "key": "MD-20",
@@ -2839,7 +2854,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "bc9d2f142133549b"
+   "hash": "722c01e8acedcfe5"
   },
   {
    "key": "MD-21",
@@ -2869,7 +2884,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "164cdfeb9fa29000"
+   "hash": "d48648d8bb5de2f9"
   },
   {
    "key": "MD-22",
@@ -2899,7 +2914,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "059298b4a95c2e29"
+   "hash": "15af1e309fcc888a"
   },
   {
    "key": "MD-23",
@@ -2929,7 +2944,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e6c87428c4926076"
+   "hash": "dcc8d0e80904ba7b"
   },
   {
    "key": "MD-24",
@@ -2959,7 +2974,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "416fb789f335abe6"
+   "hash": "e0eae3076daf8e43"
   },
   {
    "key": "MD-25",
@@ -2989,7 +3004,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "2ad5dc98063d6376"
+   "hash": "22c9e9f0ffd125ba"
   },
   {
    "key": "MD-26",
@@ -3019,7 +3034,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "87e34fd6ba903cd4"
+   "hash": "0540d8a39c5edee5"
   },
   {
    "key": "MD-27",
@@ -3049,7 +3064,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "0c691ae3a2a96667"
+   "hash": "1884805d10b9f206"
   },
   {
    "key": "MD-28",
@@ -3079,7 +3094,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "9672a2f0101c56cd"
+   "hash": "f10ec04e3a8a04c1"
   },
   {
    "key": "MD-29",
@@ -3109,7 +3124,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "79a975831d56fc2f"
+   "hash": "152cc2b4c397486e"
   },
   {
    "key": "MD-30",
@@ -3139,7 +3154,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "2968776a7c3a2950"
+   "hash": "b589b3955b1497e1"
   },
   {
    "key": "MD-31",
@@ -3169,7 +3184,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "8bca3f1bb72aaf58"
+   "hash": "4db09f4867739732"
   },
   {
    "key": "MD-32",
@@ -3199,7 +3214,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "53ea3a88998ba1f1"
+   "hash": "ecaf1f01293532c7"
   },
   {
    "key": "MD-33",
@@ -3229,7 +3244,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9bbdd63432de5d15"
+   "hash": "75d2e16105ddd332"
   },
   {
    "key": "MD-34",
@@ -3259,7 +3274,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "4e048d58eb0697d3"
+   "hash": "14d65219878549fb"
   },
   {
    "key": "MD-35",
@@ -3289,7 +3304,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "c7d4697165467b4b"
+   "hash": "760e86f340c3cebf"
   },
   {
    "key": "MD-36",
@@ -3319,7 +3334,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "669bb0fcad9c7f67"
+   "hash": "e488f870a3b49d73"
   },
   {
    "key": "MD-37",
@@ -3349,7 +3364,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "2b57778db5fe15d1"
+   "hash": "54b92d2526176ea0"
   },
   {
    "key": "MD-38",
@@ -3379,7 +3394,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "4a2f0f192d707ba4"
+   "hash": "00e8e2adb47e4df4"
   },
   {
    "key": "MD-39",
@@ -3409,7 +3424,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "5d5e23d3d7cc36a9"
+   "hash": "5a6c70682e16f9cd"
   },
   {
    "key": "MD-40",
@@ -3439,7 +3454,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "1b1f980b2544f903"
+   "hash": "fe7324d2e01f3e24"
   },
   {
    "key": "MD-41",
@@ -3469,7 +3484,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "4ab182396a4c6e9b"
+   "hash": "a961a7f97746d1da"
   },
   {
    "key": "MD-42",
@@ -3499,7 +3514,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "8d1c8f0957983a38"
+   "hash": "88c0e1832ae7046c"
   },
   {
    "key": "MD-43",
@@ -3529,7 +3544,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c4601cb1dfd48957"
+   "hash": "ce0ebbd6a7b0316f"
   },
   {
    "key": "MD-44",
@@ -3559,7 +3574,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "0774fc26454efc41"
+   "hash": "6e2dd54f40d4cc6b"
   },
   {
    "key": "MD-45",
@@ -3589,7 +3604,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "ace778d20528405a"
+   "hash": "aad315b73df9c65e"
   },
   {
    "key": "MD-46",
@@ -3619,7 +3634,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "ee69e99bb81c41a9"
+   "hash": "9ba976b919e6ecc6"
   },
   {
    "key": "MD-47",
@@ -3649,7 +3664,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "14cd374ce7f762cd"
+   "hash": "c8926193898ff938"
   },
   {
    "key": "MD-48",
@@ -3679,7 +3694,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e6cf3edff5ef274c"
+   "hash": "3c2723c577eb947b"
   },
   {
    "key": "MD-49",
@@ -3709,7 +3724,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "8d12f8503277f4c9"
+   "hash": "2e0c998f1c775a25"
   },
   {
    "key": "MD-50",
@@ -3739,7 +3754,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "636d409da151fe68"
+   "hash": "9c2ac29270725d1d"
   },
   {
    "key": "SC-01",

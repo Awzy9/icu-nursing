@@ -28,6 +28,11 @@
    "id": "S-CDC-ISOLATION-2007",
    "read": "not_read",
    "use": "CDC isolation guideline: not read"
+  },
+  {
+   "id": "S-CDC-HANDHYG-2024",
+   "read": "partial",
+   "use": "CDC hand hygiene page (landing page only): definition and alcohol-based hand rub fire safety"
   }
  ],
  "objectives": [
@@ -66,6 +71,20 @@
      "support": "partial",
      "sources": [
       "S-CDC-IC"
+     ]
+    },
+    {
+     "text": "Hand hygiene means cleaning the hands with soap and water, with an alcohol-based hand rub, or (for surgery) with surgical hand antisepsis.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-HANDHYG-2024"
+     ]
+    },
+    {
+     "text": "Alcohol-based hand rub contains ethyl alcohol, is a flammable liquid and must be stored and dispensed in line with local fire-safety rules.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-HANDHYG-2024"
      ]
     }
    ]
@@ -174,7 +193,8 @@
  ],
  "gaps": [
   "The specific hand-hygiene moments: WHO guideline not accessed.",
-  "Transmission-based precaution categories and isolation details: not read."
+  "Transmission-based precaution categories and isolation details: not read.",
+  "Phase 14: when to use soap and water or hand rub, glove use and technique steps are not written because the CDC detail pages and the WHO guideline were not read."
  ],
  "permissions": [
   "CDC pages: no licence statement; verify before reproducing.",
@@ -213,6 +233,17 @@
    "read": "not_read",
    "licence_class": "YELLOW (unverified)",
    "permission_required": "Verify"
+  },
+  {
+   "id": "S-CDC-HANDHYG-2024",
+   "title": "Clinical Safety: Hand Hygiene for Healthcare Workers",
+   "publisher": "CDC",
+   "version": "Page dated 2024-02-27",
+   "url": "https://www.cdc.gov/clean-hands/hcp/clinical-safety/index.html",
+   "accessed": "2026-11-15",
+   "read": "partial",
+   "licence_class": "YELLOW",
+   "permission_required": "No"
   }
  ]
 }

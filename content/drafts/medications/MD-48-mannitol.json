@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for monitoring of fluid and electrolytes, serum osmolarity and renal, cardiac and pulmonary function, including urine output.",
+     "support": "sourced",
+     "sources": [
+      "L-MANNITOL"
+     ]
     }
    ]
   },
@@ -213,5 +220,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "8ad3145e-00e7-4412-b9a5-06f00f264f30",
+  "label_version": "23",
+  "effective_time": "20260421",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

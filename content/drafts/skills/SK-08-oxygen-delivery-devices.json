@@ -33,6 +33,11 @@
    "id": "S-AARC-PVA",
    "read": "full",
    "use": "skin around interfaces"
+  },
+  {
+   "id": "S-OPENRN-FUND-CH8",
+   "read": "full",
+   "use": "Open RN Nursing Fundamentals 8.3: respiratory monitoring and reassessment"
   }
  ],
  "objectives": [
@@ -119,6 +124,13 @@
       "S-AARC-O2",
       "S-AARC-PVA"
      ]
+    },
+    {
+     "text": "Staying with a patient whose oxygenation has fallen promotes safety and reduces fear.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-FUND-CH8"
+     ]
     }
    ]
   },
@@ -140,6 +152,13 @@
      "support": "partial",
      "sources": [
       "S-AARC-O2"
+     ]
+    },
+    {
+     "text": "Monitor oxygen saturation continuously in sedated patients, and note respiratory rate, effort, lung sounds, secretions and whether suctioning is needed; after any intervention reassess heart rate, respiratory rate, saturation, lung sounds and the patient's own rating of breathlessness.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-FUND-CH8"
      ]
     }
    ]
@@ -290,6 +309,17 @@
    "read": "full",
    "licence_class": "RED (cite-only)",
    "permission_required": "Verify"
+  },
+  {
+   "id": "S-OPENRN-FUND-CH8",
+   "title": "Nursing Fundamentals 2e, section 8.3 Applying the Nursing Process (oxygenation)",
+   "publisher": "Open RN",
+   "version": "2nd edition (WisTech Open, 2024)",
+   "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/8-3-applying-the-nursing-process/",
+   "accessed": "2026-11-15",
+   "read": "full",
+   "licence_class": "GREEN",
+   "permission_required": "No"
   }
  ]
 }

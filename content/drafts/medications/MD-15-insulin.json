@@ -81,6 +81,13 @@
      "sources": [
       "L-INSULIN"
      ]
+    },
+    {
+     "text": "The label calls for monitoring of potassium levels and treating them if indicated.",
+     "support": "sourced",
+     "sources": [
+      "L-INSULIN"
+     ]
     }
    ]
   },
@@ -253,5 +260,13 @@
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms.",
   "UKKA and JBDS guidelines: no reuse statement found in the text read; paraphrase only and verify."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "afca6e80-a802-49fb-a978-5fe28a173001",
+  "label_version": "12",
+  "effective_time": "20250307",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }

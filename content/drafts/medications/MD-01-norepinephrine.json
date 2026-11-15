@@ -82,12 +82,26 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Frequency of blood pressure, heart rate and rhythm checks follows the unit's vasoactive infusion protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "Check the infusion site frequently for free flow and watch for signs of extravasation; the label advises infusing into a large vein.",
+     "support": "sourced",
+     "sources": [
+      "L-NOREPINEPHRINE"
+     ]
+    },
+    {
+     "text": "The label calls for cardiac monitoring in patients with underlying heart disease or arrhythmias, and for watching the skin of the extremities in susceptible patients.",
+     "support": "sourced",
+     "sources": [
+      "L-NOREPINEPHRINE"
+     ]
     }
    ]
   },
@@ -235,5 +249,13 @@
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
   "FDA infusion pump page: verify reuse terms."
- ]
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-15",
+  "set_id": "5fbd0e3b-703b-412e-8b71-bd0a0dbf4500",
+  "label_version": "1",
+  "effective_time": "20261016",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
 }
