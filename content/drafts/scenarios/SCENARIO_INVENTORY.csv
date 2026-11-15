@@ -6,7 +6,7 @@ SC-04,Ventilator alarm,decision_graph,partial,3,0,S-AARC-PVA;S-HAMILTON-C1;S-DRA
 SC-05,Sudden oxygen desaturation,outline,partial,0,2,S-AARC-O2;S-AARC-SUCT;S-RCP-NEWS2,2
 SC-06,Accidental extubation,decision_graph,partial,3,0,S-AARC-PVA;S-ERC-ALS-2025;S-AHRQ-TS,2
 SC-07,Raised intracranial pressure,outline,partial,0,2,S-AARC-SUCT;S-BTF-TBI-4TH;L-MANNITOL,2
-SC-08,Acute seizure,outline,partial,0,2,L-LORAZEPAM;L-LEVETIRACETAM,2
+SC-08,Acute seizure,decision_graph,partial,3,0,N-NICE-NG217;L-LORAZEPAM;N-JBDS-HYPO-2020;S-AHRQ-TS,3
 SC-09,Postoperative bleeding,outline,partial,0,2,L-HEPARIN;L-ENOXAPARIN;L-TXA,2
 SC-10,Hypoglycemia,decision_graph,partial,3,0,N-JBDS-HYPO-2020;L-INSULIN;S-AHRQ-TS,3
 SC-11,Severe hyperkalemia,decision_graph,partial,3,0,N-UKKA-HK-2026-07;L-INSULIN;S-AHRQ-TS,3
@@ -15,7 +15,7 @@ SC-13,Cardiac arrest,decision_graph,partial,3,0,S-ERC-ALS-2025;S-AHA-2025,2
 SC-14,Transfusion reaction,decision_graph,partial,2,0,S-AABB-COI-2024;S-NICE-NG24;S-BSH-ATR;S-AHRQ-TS,2
 SC-15,CRRT circuit complication,decision_graph,partial,3,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012;S-AHRQ-TS,2
 SC-16,Acute hypotension,outline,partial,0,2,S-CDC-BSI-2011;S-ESICM-SHOCK-2014;L-PHENYLEPHRINE,2
-SC-17,Delirium and agitation,outline,partial,0,2,S-SCCM-PADIS;L-HALOPERIDOL,3
+SC-17,Delirium and agitation,decision_graph,partial,3,0,N-NICE-CG103;L-HALOPERIDOL;S-AHRQ-TS,3
 SC-18,Aspiration event,decision_graph,partial,3,0,S-NICE-CG32;S-NHSE-NGT-2016;S-SHEA-VAP-2022;S-AHRQ-TS,2
 SC-19,Anaphylaxis,decision_graph,partial,3,0,L-EPINEPHRINE;L-PIPTAZO;N-RCUK-ANAPH-2021;S-AHRQ-TS,2
-SC-20,Acute neurological deterioration,outline,partial,0,2,S-GCS-OFFICIAL,2
+SC-20,Acute neurological deterioration,decision_graph,partial,3,0,N-NICE-NG232;S-GCS-OFFICIAL;S-AHRQ-TS,3

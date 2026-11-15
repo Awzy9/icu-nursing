@@ -13,7 +13,7 @@ describe("API exposure allowlist", () => {
     const r = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace
       where n.nspname='public' and p.prokind='f' and has_function_privilege('authenticated', p.oid, 'execute') order by 1`);
     expect(r.rows.map((x) => x.proname)).toEqual([
-      "admin_grant_role", "admin_revoke_role", "admin_set_specialty", "archive_topic", "assign_reviewer", "cs_choose", "cs_discard", "cs_get", "cs_list", "cs_progress", "cs_start", "md_get", "md_list", "md_progress", "md_set_bookmark", "publish_topic",
+      "adm_draft_notes", "adm_draft_notes_summary", "adm_set_draft_note", "admin_grant_role", "admin_revoke_role", "admin_set_specialty", "archive_topic", "assign_reviewer", "cs_choose", "cs_discard", "cs_get", "cs_list", "cs_progress", "cs_start", "eq_mark_viewed", "eq_reset_progress", "eq_set_bookmark", "eq_state", "md_get", "md_list", "md_progress", "md_set_bookmark", "publish_topic",
       "qb_discard_attempt", "qb_get_attempt", "qb_list_attempts", "qb_progress", "qb_set_bookmark", "qb_set_flag", "qb_set_position",
       "qb_start_attempt", "qb_submit_answer", "qb_submit_attempt", "record_review",
       "record_topic_view", "restore_topic", "rollback_topic", "set_required_roles", "set_topic_completion", "sk_complete_session", "sk_discard_session", "sk_get", "sk_get_session", "sk_list", "sk_mark", "sk_progress", "sk_set_bookmark", "sk_start_session", "st_history", "st_overview", "st_start_revision", "start_revision", "submit_for_review",

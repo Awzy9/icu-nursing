@@ -37,11 +37,15 @@ describe("the eight DRAFT equipment specifications", () => {
     expect(validateEquipmentSet(drafts)).toEqual([]);
     for (const d of drafts) expect(validateEquipmentDraft(d, known), d.equipment_id).toEqual([]);
     drafts.forEach((d, i) => expect(d.category).toBe(EQUIPMENT_CATEGORIES[i]));
+    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(2);
   });
-  it("are unreviewed, name manufacturer documents explicitly and never explain a parameter without a source", () => {
+  it("are unreviewed, name manufacturer documents explicitly and never explain a parameter without a source (only EQ-01 has explained parameters)", () => {
     for (const d of drafts) {
       expect(d.clinically_reviewed).toBe(false);
-      for (const p of d.parameters) { expect(p.explanation).toBeNull(); expect(p.support).toBe("needs_source"); }
+      for (const p of d.parameters) {
+        if (p.explanation === null) expect(p.support).toBe("needs_source");
+        else { expect(["sourced", "partial"]).toContain(p.support); expect((p.sources ?? []).length).toBeGreaterThan(0); }
+      }
       if (d.manufacturer_documents.length) expect(d.device_neutral).toBe(false);
     }
   });
@@ -49,7 +53,9 @@ describe("the eight DRAFT equipment specifications", () => {
     const d = drafts[0]!;
     const a = clone(d); a.clinically_reviewed = true; expect(rules(a)).toContain("review");
     const b = clone(d); b.sources.push({ id: "S-NOPE", read: "full", use: "x" }); expect(rules(b)).toContain("source");
-    const c = clone(d); c.parameters[0]!.explanation = "Made-up explanation"; expect(rules(c)).toContain("parameter");
+    const c = clone(drafts[1]!); c.parameters[0]!.explanation = "Made-up explanation"; expect(rules(c)).toContain("parameter");
+    const c2 = clone(d); c2.parameters[0]!.sources = ["S-NOPE"]; expect(rules(c2)).toContain("parameter");
+    const c3 = clone(d); c3.parameters[0]!.support = "partial"; c3.parameters[0]!.sources = []; expect(rules(c3)).toContain("parameter");
     const e = clone(d); e.safety_concepts[0]!.text = "Run it at 5 mg per hour"; expect(rules(e)).toContain("dosing");
     const f = clone(drafts[1]!); f.device_neutral = true; expect(rules(f)).toContain("manufacturer");
     const g = clone(d); g.diagram.original_graphic = false; expect(rules(g)).toContain("diagram");

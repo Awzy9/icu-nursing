@@ -180,6 +180,48 @@ test("a learner cannot reach the admin area", async ({ page }) => {
   await signOut(page);
 });
 
+test("draft register: an administrator filters unpublished drafts, reads validation and source freshness, saves a workflow note with history; a learner is refused", async ({ page }) => {
+  await login(page, boss.email);
+  await page.goto("/en/admin/content/register");
+  await mfa(page, boss.email);
+  await page.goto("/en/admin/content/register");
+  await expect(page.getByRole("heading", { level: 1, name: "Draft register" })).toBeVisible();
+  await expect(page.getByText("154 of 154 drafts")).toBeVisible();
+  await page.goto("/en/admin/content/register?type=cases&evidence=partial");
+  await expect(page.getByText("20 of 154 drafts")).toBeVisible();
+  await page.goto("/en/admin/content/register?q=zzzz-nothing");
+  await expect(page.getByText("No drafts match these filters.")).toBeVisible();
+  await page.goto("/en/admin/content/register/SC-11");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("SC-11");
+  await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Validation feedback" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Sources, licensing and freshness" })).toBeVisible();
+  const note = `Check the UKKA review date ${RUN}`;
+  await page.getByLabel("Evidence note").fill(note);
+  await page.getByRole("button", { name: "Save evidence note" }).click();
+  await expect(page.getByText("Saved.")).toBeVisible();
+  await page.reload();
+  await expect(page.getByLabel("Evidence note")).toHaveValue(note);
+  await expect(page.getByText(note).last()).toBeVisible(); // in the note history
+  await page.getByLabel("Evidence note").fill("Give 5 mg per hour");
+  await page.getByRole("button", { name: "Save evidence note" }).click();
+  await expect(page.getByRole("alert").filter({ hasText: /dose or a rate|refused/ })).toBeVisible(); // the database refuses doses
+  await page.goto("/en/admin/content/coverage");
+  await expect(page.getByRole("heading", { level: 1, name: "Content coverage" })).toBeVisible();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations.filter((v) => ["serious", "critical"].includes(v.impact ?? ""))).toEqual([]);
+  expect((await sql<{ n: number }>(`select count(*)::int n from public.audit_log where action='draft_note_set' and entity_id='SC-11:evidence_note'`))[0]!.n).toBeGreaterThanOrEqual(1);
+  await signOut(page);
+});
+
+test("a learner cannot reach the draft register or its notes", async ({ page }) => {
+  await login(page, learner.email);
+  await page.goto("/en/admin/content/register");
+  await expect(page).toHaveURL(/\/en\/dashboard/);
+  await page.goto("/en/admin/content/register/SC-11");
+  await expect(page).toHaveURL(/\/en\/dashboard/);
+  await signOut(page);
+});
+
 test("author drafts a topic in the CMS, sees the readiness checks, and submits it for clinical review", async ({ page }) => {
   await login(page, author.email);
   await page.goto("/en/admin/topics/new");
@@ -328,6 +370,47 @@ test("skills library in database mode: a signed-in learner searches, starts a se
     await page.goto("/en/skills/SYN-SKILL-002");
     await expect(page.getByText("1 of 5 steps ticked").first()).toBeVisible(); // history
   } finally {
+    await sql("update public.app_settings set environment='production', question_fixtures_visible=false");
+  }
+});
+
+test("equipment learning in database mode: bookmarks and progress are saved to the signed-in account, follow it to another device, and are invisible to another user", async ({ page, browser }) => {
+  test.skip(!ISOLATED, "uses the synthetic equipment fixtures; isolated stack only");
+  await sql("update public.app_settings set environment='development', question_fixtures_visible=true");
+  const baseURL = test.info().project.use.baseURL as string;
+  const other = await makeUser("ui-learner-two", "UI Learner Two"); ids.push(other.id);
+  const extra: import("@playwright/test").BrowserContext[] = [];
+  try {
+    await page.goto("/en/equipment");
+    await expect(page).toHaveURL(/\/en\/login/); // protected: a signed-out visitor is redirected
+    await login(page, learner.email);
+    await page.goto("/en/equipment/SYN-EQ-002");
+    await expect(page.getByTestId("eq-progress")).toHaveText("0 of 4 parts viewed");
+    await page.getByRole("button", { name: /Peak/ }).first().click();
+    await expect(page.getByTestId("eq-progress")).toHaveText("1 of 4 parts viewed");
+    await page.getByRole("button", { name: "Bookmark this module" }).click();
+    await expect(page.getByRole("button", { name: "Bookmarked" })).toHaveAttribute("aria-pressed", "true");
+    // the server confirms before we look elsewhere (the UI is optimistic)
+    await expect.poll(async () => (await sql<{ n: number }>(`select (select count(*) from public.equipment_progress where user_id='${learner.id}')::int + (select count(*) from public.equipment_bookmarks where user_id='${learner.id}')::int as n`))[0]!.n).toBe(2);
+    // a second device: a separate browser context signed in as the same learner
+    const ctx2 = await browser.newContext({ baseURL }); extra.push(ctx2);
+    const dev2 = await ctx2.newPage();
+    await login(dev2, learner.email);
+    await dev2.goto("/en/equipment/SYN-EQ-002");
+    await expect(dev2.getByTestId("eq-progress")).toHaveText("1 of 4 parts viewed");
+    await expect(dev2.getByRole("button", { name: "Bookmarked" })).toHaveAttribute("aria-pressed", "true");
+    await dev2.goto("/en/equipment");
+    await expect(dev2.getByTestId("eq-stats")).toContainText("1 bookmarked");
+    // another user sees nothing of it
+    const ctx3 = await browser.newContext({ baseURL }); extra.push(ctx3);
+    const stranger = await ctx3.newPage();
+    await login(stranger, other.email);
+    await stranger.goto("/en/equipment/SYN-EQ-002");
+    await expect(stranger.getByTestId("eq-progress")).toHaveText("0 of 4 parts viewed");
+    await expect(stranger.getByRole("button", { name: "Bookmark this module" })).toHaveAttribute("aria-pressed", "false");
+    expect((await sql<{ n: number }>(`select count(*)::int n from public.equipment_progress where user_id='${other.id}'`))[0]!.n).toBe(0);
+  } finally {
+    for (const c of extra) await c.close();
     await sql("update public.app_settings set environment='production', question_fixtures_visible=false");
   }
 });

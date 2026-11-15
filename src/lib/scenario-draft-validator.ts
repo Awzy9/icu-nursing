@@ -17,6 +17,8 @@ export interface ScenarioDraft {
   sources: { id: string; read: "full" | "partial" | "not_read"; use: string }[]; gaps: string[]; permissions: string[]; required_sources: string[];
   setting?: string; steps?: ScStep[]; debrief?: { learning_points: string[]; links: { kind: string; code: string }[] };
   expected_actions?: ScAction[];
+  /** Test-only synthetic NONCLINICAL fixtures in the same authoring format (id SYN-SC-NN, setting must say it has no clinical content). Never a master scenario. */
+  synthetic_fixture?: boolean;
 }
 
 /** The original master plan's 20 scenarios (Part 8), in order. A draft whose number and title do not match this list is rejected. */
@@ -36,8 +38,13 @@ export function validateScenarioDraft(d: ScenarioDraft, known: Set<string>): Sce
   const add = (rule: string, message: string) => out.push({ rule, message });
   const id = d.scenario_id ?? "?";
   const master = MASTER_SCENARIOS[(d.number ?? 0) - 1];
-  if (!/^SC-(0[1-9]|1\d|20)$/.test(id) || id !== `SC-${String(d.number).padStart(2, "0")}`) add("id", `${id}: scenario_id must be SC-NN matching its number`);
-  if (!master || d.title?.toLowerCase() !== master.toLowerCase()) add("scope", `${id}: scenario #${d.number} must be "${master}" (the original master list is neither replaced nor reordered), found "${d.title}"`);
+  if (d.synthetic_fixture === true) {
+    if (!/^SYN-SC-\d{2}$/.test(id)) add("id", `${id}: a synthetic fixture id must look like SYN-SC-01`);
+    if (!/no clinical content/i.test(d.setting ?? "")) add("fixture", `${id}: a synthetic fixture's setting must state that it contains no clinical content`);
+  } else {
+    if (!/^SC-(0[1-9]|1\d|20)$/.test(id) || id !== `SC-${String(d.number).padStart(2, "0")}`) add("id", `${id}: scenario_id must be SC-NN matching its number`);
+    if (!master || d.title?.toLowerCase() !== master.toLowerCase()) add("scope", `${id}: scenario #${d.number} must be "${master}" (the original master list is neither replaced nor reordered), found "${d.title}"`);
+  }
   if (d.status !== "DRAFT") add("status", `${id}: status must be DRAFT`);
   if (d.origin !== "ai_generated") add("origin", `${id}: origin must be ai_generated`);
   if (d.clinically_reviewed !== false || (d.clinical_reviewers ?? []).length > 0) add("review", `${id}: must not claim clinical review`);

@@ -65,7 +65,7 @@ jobs:
           NEXT_PUBLIC_SUPABASE_URL: ${{ env.LIVE_SUPABASE_URL }}
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ env.LIVE_ANON_KEY }}
       - run: npx playwright install --with-deps chromium
-      - name: Live UI suite (11 tests)
+      - name: Live UI suite (14 tests)
         run: npx playwright test --config playwright.live.config.ts tests/live-e2e/ui.live.spec.ts
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ env.LIVE_SUPABASE_URL }}

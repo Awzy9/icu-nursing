@@ -26,8 +26,12 @@
  "parameters": [
   {
    "name": "Heart rhythm trace",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Continuous 3-lead ECG monitoring allows early recognition and prompt treatment of life-threatening arrhythmias, and the monitoring must be supervised by someone skilled at interpreting and responding to changes (UKKA and Resuscitation Council UK, UK adults).",
+   "support": "partial",
+   "sources": [
+    "N-UKKA-HK-2026-07",
+    "N-RCUK-ANAPH-2021"
+   ]
   },
   {
    "name": "Heart rate",
@@ -36,8 +40,11 @@
   },
   {
    "name": "Oxygen saturation",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Pulse oximeters can underestimate or overestimate saturation, especially when the reading is borderline; overestimation has been reported in people with dark skin, and probe placement matters (NICE CG103, citing an NHS England patient safety alert).",
+   "support": "partial",
+   "sources": [
+    "N-NICE-CG103"
+   ]
   },
   {
    "name": "Alarm priority",
@@ -78,6 +85,21 @@
    "id": "S-OPENRN-ADV-C7",
    "read": "partial",
    "use": "Open RN Advanced Skills ch. 7 telemetry checklist (CC BY text; check image licences)"
+  },
+  {
+   "id": "N-UKKA-HK-2026-07",
+   "read": "partial",
+   "use": "UKKA hyperkalaemia guideline: continuous 3-lead ECG monitoring rationale"
+  },
+  {
+   "id": "N-RCUK-ANAPH-2021",
+   "read": "partial",
+   "use": "Resuscitation Council UK anaphylaxis guideline: monitoring supervised by a skilled person"
+  },
+  {
+   "id": "N-NICE-CG103",
+   "read": "partial",
+   "use": "NICE CG103: pulse oximeter accuracy caution"
   }
  ],
  "required_sources": [
@@ -86,7 +108,7 @@
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are not written because no source read explains them.",
+  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
   "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
   "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
  ],

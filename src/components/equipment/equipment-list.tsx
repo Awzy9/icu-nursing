@@ -3,13 +3,13 @@ import { useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/feedback";
 import { Button } from "@/components/ui/button";
-import { useEquipmentStore } from "./progress-store";
+import type { EquipmentState } from "@/lib/equipment/state";
 
 export type ListItem = { code: string; category: string; categoryLabel: string; title: string; summary: string; parts: string[]; synthetic: boolean };
 type Labels = { onlyBookmarked: string; view: string; bookmarked: string; explored: string; none: string; synthetic: string; partsDone: string; stats: string };
 
-export function EquipmentList({ items, labels }: { items: ListItem[]; labels: Labels }) {
-  const { store, ready } = useEquipmentStore();
+export function EquipmentList({ items, labels, state }: { items: ListItem[]; labels: Labels; state: EquipmentState }) {
+  const store = state, ready = true;
   const [only, setOnly] = useState(false);
   const bm = new Set(store.bookmarks);
   const shown = items.filter((i) => !only || bm.has(i.code));

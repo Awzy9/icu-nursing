@@ -10,7 +10,7 @@ export default async function AdminLayout({ children, params }: { children: Reac
   if (isDemoMode()) return <Callout tone="warning">The administration area needs a configured backend. The app is running in demonstration mode.</Callout>;
   const { roles } = await requireStaff(locale);
   const links = [
-    { href: "/admin", label: "Overview" }, { href: "/admin/topics", label: "Topics" }, { href: "/admin/sources", label: "Sources" },
+    { href: "/admin", label: "Overview" }, { href: "/admin/topics", label: "Topics" }, { href: "/admin/sources", label: "Sources" }, { href: "/admin/content", label: "Content overview" },
     ...(roles.includes("admin") ? [{ href: "/admin/users", label: "Users and roles" }] : []),
   ];
   return (

@@ -6,6 +6,9 @@ import { EquipmentExplorer } from "@/components/equipment/explorer";
 import { Link } from "@/i18n/navigation";
 import { localize, usedFallback } from "@/lib/content/localize";
 import { getEquipment } from "@/lib/equipment";
+import { requireUser } from "@/lib/auth";
+import { EMPTY_STATE } from "@/lib/equipment/state";
+import { getEquipmentStateService } from "@/lib/equipment/state-index";
 import { resolveMode } from "@/lib/question-bank";
 
 export const dynamic = "force-dynamic";
@@ -20,9 +23,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function EquipmentDetail({ params }: { params: Promise<{ locale: string; code: string }> }) {
   const { locale, code } = await params;
   setRequestLocale(locale);
-  if (resolveMode() === "disabled") notFound();
+  const mode = resolveMode();
+  if (mode === "disabled") notFound();
   const m = getEquipment(code);
   if (!m) notFound();
+  if (mode === "database") await requireUser(locale, `/equipment/${code}`);
+  const state = await getEquipmentStateService().then((svc) => svc?.get() ?? EMPTY_STATE).catch(() => EMPTY_STATE);
   const t = await getTranslations("Equipment");
   const rtl = locale.startsWith("ar");
   const fallback = usedFallback(m.title, locale);
@@ -36,7 +42,7 @@ export default async function EquipmentDetail({ params }: { params: Promise<{ lo
         <p className="max-w-prose text-muted-foreground">{localize(m.summary, locale)}</p>
       </header>
       <Callout tone="warning" role="note">{t("fixturesBanner")}</Callout>
-      <EquipmentExplorer code={m.code} kind={m.diagram.kind} rtl={rtl} title={localize(m.title, locale)} alt={localize(m.diagram.alt, locale)}
+      <EquipmentExplorer initial={state} code={m.code} kind={m.diagram.kind} rtl={rtl} title={localize(m.title, locale)} alt={localize(m.diagram.alt, locale)}
         parts={m.diagram.parts.map((p) => ({ id: p.id, label: localize(p.label, locale), detail: localize(p.detail, locale) }))}
         labels={{ parts: t("partsHeading"), select: t("selectPart"), viewed: t("viewed"), progress: t("progress"), bookmark: t("bookmark"), bookmarked: t("bookmarkedButton"), hint: t("partsHint") }} />
       <section aria-labelledby="eq-params" className="space-y-3">

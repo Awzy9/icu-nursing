@@ -18,6 +18,12 @@
     },
     "platforms": [
       "android"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bb38e642-1a31-49fd-89fa-81a50d2cd2fa"
+      }
+    },
+    "owner": "awzy9s-team"
   }
 }

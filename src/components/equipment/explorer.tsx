@@ -3,16 +3,17 @@ import { useState } from "react";
 import { Bookmark, BookmarkCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EquipmentDiagram } from "./diagram";
-import { useEquipmentStore } from "./progress-store";
+import { useEquipmentState } from "./progress-store";
+import type { EquipmentState } from "@/lib/equipment/state";
 
 export type ExplorerPart = { id: string; label: string; detail: string };
 type Labels = { parts: string; select: string; viewed: string; progress: string; bookmark: string; bookmarked: string; hint: string };
 
-export function EquipmentExplorer({ code, kind, parts, rtl, title, alt, labels }: { code: string; kind: "loop" | "signal" | "flow"; parts: ExplorerPart[]; rtl: boolean; title: string; alt: string; labels: Labels }) {
+export function EquipmentExplorer({ code, kind, parts, rtl, title, alt, labels, initial }: { initial: EquipmentState; code: string; kind: "loop" | "signal" | "flow"; parts: ExplorerPart[]; rtl: boolean; title: string; alt: string; labels: Labels }) {
   const [sel, setSel] = useState<number | null>(null);
-  const { store, ready, markViewed, toggleBookmark } = useEquipmentStore();
-  const viewed = new Set(store.viewed[code] ?? []);
-  const isBm = store.bookmarks.includes(code);
+  const { state, error, markViewed, toggleBookmark } = useEquipmentState(initial);
+  const viewed = new Set(state.viewed[code] ?? []);
+  const isBm = state.bookmarks.includes(code);
   const choose = (i: number) => { setSel(i); markViewed(code, parts[i]!.id); };
   const count = parts.filter((p) => viewed.has(p.id)).length;
   return (
@@ -22,8 +23,9 @@ export function EquipmentExplorer({ code, kind, parts, rtl, title, alt, labels }
           {isBm ? <BookmarkCheck className="size-4" aria-hidden /> : <Bookmark className="size-4" aria-hidden />}
           <span className="ms-2">{isBm ? labels.bookmarked : labels.bookmark}</span>
         </Button>
-        <p role="status" className="text-sm text-muted-foreground" data-testid="eq-progress">{ready ? labels.progress.replace("{done}", String(count)).replace("{total}", String(parts.length)) : ""}</p>
+        <p role="status" className="text-sm text-muted-foreground" data-testid="eq-progress">{labels.progress.replace("{done}", String(count)).replace("{total}", String(parts.length))}</p>
       </div>
+      {error ? <p role="alert" className="text-sm text-danger-foreground">{error}</p> : null}
       <figure className="space-y-3 rounded-lg border border-border bg-card p-4">
         <EquipmentDiagram kind={kind} labels={parts.map((p) => p.label)} selected={sel} rtl={rtl} title={title} desc={alt} />
         <figcaption className="text-sm text-muted-foreground">{alt}</figcaption>
