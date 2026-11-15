@@ -14,10 +14,10 @@ independently_written_note: "Original wording written for this platform; stems, 
 
 ## 17. MCQs
 **Q1 (judgment).** The physiotherapist asks whether an intubated patient can sit on the edge of the bed. A colleague says the endotracheal tube rules it out. What does the consensus say?
-A. The colleague is right: any patient with an endotracheal tube should stay in bed until extubated.
-B. Mobilization is only allowed after tracheostomy, because the tube is then more secure.
-C. Mobilization is allowed only in bed, never out of bed, while a tube is in place.
-D. An endotracheal tube is not in itself a contraindication to early mobilization.
+A. The colleague is right: a patient with an endotracheal tube should stay in bed until the tube is removed.
+B. Mobilization is allowed after tracheostomy, because the tube is then considered more secure in the neck.
+C. Mobilization is allowed in bed and not out of bed, for as long as the tube is in place in the airway.
+D. An endotracheal tube is not in itself a contraindication to early mobilization, so assessment continues.
 **Answer: D.**
 **Why correct:** The 2014 consensus states that intubation via an endotracheal tube was not a contraindication to early mobilization.
 **Why not A:** The consensus says the opposite.
@@ -26,10 +26,10 @@ D. An endotracheal tube is not in itself a contraindication to early mobilizatio
 **Trace:** N-HODGSON-2014 — Intubation via ETT not a contraindication to early mobilization.
 
 **Q2 (safety).** Before each mobilization session for a ventilated patient, which checks does the consensus describe?
-A. That the patient has had a full meal, so they have the energy for the activity.
-B. That the family is present, so they can reassure the patient during the activity.
-C. That any artificial airway is correctly positioned and secure, and that oxygen is available with a reserve longer than the expected activity.
-D. That the sedation has been completely stopped for at least a full day beforehand.
+A. That the patient has had a full meal, so they have the energy that is needed for the planned activity.
+B. That the family is present, so they can reassure the patient while the activity is being carried out.
+C. That any artificial airway is secure and that oxygen is available with a reserve longer than the activity.
+D. That the sedation has been stopped for at least a full day before the session begins on the unit.
 **Answer: C.**
 **Why correct:** The consensus says an appropriate professional should check before each episode that any artificial airway is correctly positioned and secure and that supplemental oxygen has a reserve exceeding the expected duration.
 **Why not A:** This is not a safety check described in the consensus.
@@ -50,10 +50,10 @@ D. Cancel all mobilization for the rest of the admission, since the limits were 
 **Trace:** N-HODGSON-2014 — At limits in several categories: consult experienced medical team.
 
 **Q4 (scope).** A ventilated patient on a vasoactive infusion has had his dose increased twice this morning. A colleague says any vasoactive drug means no mobilization. What is the most accurate view?
-A. Vasoactive drugs are not an absolute contraindication, but rising doses call for caution or contraindicate mobilization, and the unit decides case by case.
-B. The colleague is right: any vasoactive drug means mobilization is not allowed.
-C. A single threshold dose is agreed worldwide and the nurse can look it up in the paper.
-D. Rising doses are irrelevant as long as the blood pressure reading on the monitor looks acceptable.
+A. Vasoactive drugs are no absolute bar, but rising doses call for caution and the unit decides case by case.
+B. The colleague is right: with a vasoactive drug running, mobilization is not allowed for the patient at all.
+C. A single threshold dose is agreed worldwide, and the nurse can look the figure up in the consensus paper.
+D. Rising doses are irrelevant while the blood pressure reading on the monitor looks acceptable to the nurse.
 **Answer: A.**
 **Why correct:** The consensus found vasoactive drugs per se were not an absolute contraindication; appropriateness depends on the dose, the change in dose (rising doses call for caution or contraindication) and perfusion, and units agree thresholds case by case.
 **Why not B:** The consensus does not say this.
@@ -74,10 +74,10 @@ D. They meet the criteria described as safe for in- and out-of-bed mobilization.
 **Trace:** N-HODGSON-2014 — FiO2 <0.6, SpO2 >90%, RR <30 considered safe criteria if no other contraindications.
 
 **Q6 (scope).** A nurse asks whether the consensus criteria mean she can mobilize ventilated patients without the team's judgement. What is the best answer?
-A. Yes, once the numbers are met she may mobilize alone without any team agreement.
-B. Yes, because the criteria were issued by a regulator and replace local policy.
-C. No: the criteria are a guide to be used with clinical judgement, and each unit should consider them against its own staffing and expertise.
-D. No, because the criteria apply only to patients who are not receiving any oxygen.
+A. Yes, once the numbers in the criteria are met she may mobilize alone without any agreement from the team.
+B. Yes, because the criteria were issued by a regulator and so they replace the unit's own local policy.
+C. No: the criteria guide judgement, and each unit weighs them against its own staffing and expertise.
+D. No, because the criteria apply to patients who are not receiving any oxygen therapy of any kind at that time.
 **Answer: C.**
 **Why correct:** The authors state the criteria should be regarded as a guide and used with clinical judgement, are appropriate for experienced ICU clinicians, and each ICU should consider them in light of its own staffing levels and expertise.
 **Why not A:** The consensus does not remove the need for judgement and team input.

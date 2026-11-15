@@ -14,10 +14,10 @@ independently_written_note: "Original wording written for this platform; stems, 
 
 ## 17. MCQs
 **Q1 (judgment).** An access-pressure alarm sounds repeatedly on a patient's CRRT machine. Which first step fits the care pathway?
-A. Press the override button and carry on, because repeated alarms are usually false alarms.
-B. Stop the blood pump and disconnect the patient straight away, without looking for a cause.
+A. Press the override button and carry on, because repeated alarms are generally false alarms in practice.
+B. Stop the blood pump and disconnect the patient straight away, without looking for the cause of the alarm.
 C. Check the patient, then the lines, clamps and catheter position, before clearing the alarm.
-D. Increase the blood flow rate as far as the machine allows to overcome the alarm.
+D. Increase the blood flow rate as far as the machine allows, to overcome the alarm that keeps sounding.
 **Answer: C.**
 **Why correct:** The pathway says to check the patient, review and address the alarm on the screen before clearing it, and for access and return alarms to check the patient, clamps or kinks, and the dialysis catheter.
 **Why not A:** Override and disable buttons decrease alarm sensitivity and are not a fix.
@@ -26,10 +26,10 @@ D. Increase the blood flow rate as far as the machine allows to overcome the ala
 **Trace:** N-AHS-CRRT-ALARM-2025 — Check patient first; review alarm before clearing; access/return alarm checks.
 
 **Q2 (safety).** A colleague silences a recurring CRRT alarm using the disable function to 'keep the room quiet'. What is the concern?
-A. There is no concern, since the machine will still protect the patient from every fault.
-B. Alarm off, disable and override buttons decrease alarm sensitivity.
-C. The only concern is noise for other patients, which a quieter setting would fix.
-D. The concern is minor, because the manufacturer's support line can always reset the alarm remotely.
+A. There is no concern, since the machine will still protect the patient from every fault that could occur.
+B. Alarm off, disable and override buttons decrease alarm sensitivity, so patient safety is reduced.
+C. The concern is noise for the other patients, which a quieter alarm setting would fix without difficulty.
+D. The concern is minor, because the manufacturer's support line can reset the alarm remotely if needed.
 **Answer: B.**
 **Why correct:** The pathway states that alarm off, disable and override buttons decrease alarm sensitivity and that the alarm should be reviewed and addressed before clearing.
 **Why not A:** Disabling alarms reduces that protection.
@@ -37,11 +37,11 @@ D. The concern is minor, because the manufacturer's support line can always rese
 **Why not D:** A remote reset does not replace addressing the cause.
 **Trace:** N-AHS-CRRT-ALARM-2025 — Alarm off/disable/override decrease alarm sensitivity.
 
-**Q3 (escalation).** You have tried the usual checks but the alarms cannot be resolved and treatment keeps stopping. What does the pathway suggest?
-A. Call manufacturer support, return blood if possible, document why, and tell the physician.
-B. Keep restarting the treatment until it runs, and tell the doctor only at the end of the shift when handing over.
-C. Leave the blood in the circuit and clamp the lines until the next shift can look at it.
-D. Disconnect the patient and discard the circuit without recording why treatment was stopped.
+**Q3 (escalation).** A nurse has tried the usual checks on a patient's CRRT circuit, but the alarms cannot be resolved and treatment keeps stopping. What does the pathway suggest?
+A. Call manufacturer support, return blood if possible, document why, and tell the physician about it.
+B. Keep restarting the treatment until it runs, and tell the doctor at the end of the shift at handover.
+C. Leave the blood in the circuit and clamp the lines until the next shift can look at it in the morning.
+D. Disconnect the patient and discard the circuit without recording why treatment was stopped early.
 **Answer: A.**
 **Why correct:** The pathway says that if alarms cannot be managed, call customer support, return blood when possible and end treatment, document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.
 **Why not B:** Repeated restarts waste treatment time and delay escalation.
@@ -49,11 +49,11 @@ D. Disconnect the patient and discard the circuit without recording why treatmen
 **Why not D:** The reason for stopping must be documented.
 **Trace:** N-AHS-CRRT-ALARM-2025 — If alarms cannot be managed: support, return blood, document, notify MD.
 
-**Q4 (application).** A bag-weight alarm sounds. According to the pathway, which check is appropriate?
-A. Replace every bag on the machine at the same time to reset all of the scales together.
-B. Remove the patient from the machine and reconnect once all bags have been weighed by hand.
-C. Restart the machine in a different mode so the weight reading no longer matters.
-D. Look for bags touching other objects, leaking or sitting on the wrong scale, and check connections.
+**Q4 (application).** A nurse is caring for a patient on CRRT when a bag-weight alarm sounds. According to the pathway, which check is appropriate?
+A. Replace every bag on the machine at the same time to reset all of the scales together as one step.
+B. Remove the patient from the machine and reconnect once all bags have been weighed by hand at the bed.
+C. Restart the machine in a different mode so that the weight reading no longer matters for the treatment.
+D. Look for bags touching other objects, leaking or on the wrong scale, and check connections.
 **Answer: D.**
 **Why correct:** The pathway lists, for flow alarms, checking whether the line is clamped or kinked and whether bags are touching other objects altering weights, leaking, or on the wrong scale.
 **Why not A:** The pathway advises changing one bag at a time and closing each scale.
@@ -62,10 +62,10 @@ D. Look for bags touching other objects, leaking or sitting on the wrong scale, 
 **Trace:** N-AHS-CRRT-ALARM-2025 — Flow alarms: check clamps/kinks, bags touching objects, leaking, wrong scale.
 
 **Q5 (monitoring).** A patient's CRRT is running but the delivered dose is lower than prescribed because of repeated interruptions. What does KDIGO support?
-A. Ignoring it, because the prescription is a target and not a measure of what is delivered.
-B. Increasing the dose yourself to make up the difference without an order.
+A. Ignoring it, because the prescription is a target and not a measure of what is delivered to the patient.
+B. Increasing the dose yourself to make up the difference without an order from the prescriber on the unit.
 C. Reporting the under-delivery, because frequent assessment of the delivered dose is recommended.
-D. Recording it only in the nursing notes so that the next shift can decide what to do.
+D. Recording it in the nursing notes so that the next shift can decide what to do about the shortfall.
 **Answer: C.**
 **Why correct:** The KDIGO AKI guideline recommends frequent assessment of the delivered dose of renal replacement therapy to ensure the prescribed dose is delivered.
 **Why not A:** Delivered dose is exactly what the guideline asks to be assessed.

@@ -25,3 +25,7 @@
 
 ## Limits
 Questions are original paraphrases of US, UK and Canadian sources; jurisdiction differs by item and is noted in the traces. Medication questions rest on US FDA labels only. Difficulty has not been calibrated and no question has had a clinical or language review; the key is the author's reading of the source. Advisory flags (item-writing cues) should be cleared during review.
+
+## Phase 8.1 item-writing pass
+
+The 38 new questions flagged in Phase 8 were reworded (`content/drafts/mcq-expansion/overrides.py`, applied by `build_mcqs.py`): options length-balanced, absolute wording removed from distractors, and clinical cues added to stems. Keys, clinical meaning and traces are unchanged; no questions were added (306 total). Result of the automated audit (`content/drafts/MCQ_AUDIT.md`): new questions with a flag 38 -> 2 (both "correct option is the unique longest"); whole bank flagged 132 -> 96; correct option unique longest 76 (24.8%) -> 48 (15.7%); unique shortest 75 -> 99 (32.4%), so the balance has tipped slightly toward short keys; the 94 flagged original questions remain for the review phase; positions 75/79/77/75; identical options 0; near-duplicates 0. Advisory only: no clinical or language review has taken place.

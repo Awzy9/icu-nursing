@@ -229,6 +229,15 @@ S("XQ-11","scope-escalation","Scope of practice and escalation across the skills
    [("Remove the arterial line immediately without telling anyone, to restore circulation.","Removal without an order is outside the nurse's role and may cause bleeding."),("Flush the line repeatedly until the colour returns to the hand.","Repeated flushing can cause harm and does not address the cause."),("Wait and document the finding, because circulation often improves within a few hours.","Signs of limb ischaemia need immediate reporting.")],[BSI],"Cold, pale, painful limb with arterial line: escalate immediately."),
 ])
 POS=0
+from overrides import O
+for _s in SETS:
+    for _n,_o in [(k[1],v) for k,v in O.items() if k[0]==_s["id"]]:
+        _q=_s["qs"][_n-1]
+        if "stem" in _o: _q["stem"]=_o["stem"]
+        if "correct" in _o: _q["correct"]=_o["correct"]
+        if "ds" in _o:
+            assert len(_o["ds"])==3; _q["ds"]=[(t,w) for t,(_,w) in zip(_o["ds"],_q["ds"])]
+
 def render(s,start):
     n=start; out=[]
     fm=f"""---

@@ -13,11 +13,11 @@ independently_written_note: "Original wording written for this platform; stems, 
 > DRAFT – NOT clinically reviewed. AI-generated. Unpublished; never imported into the question bank.
 
 ## 17. MCQs
-**Q1 (safety).** You are about to start a feed through a nasogastric tube that has been in for two days. What must be done first according to NICE?
-A. Nothing extra, because the position was confirmed when the tube was passed two days ago.
-B. Listen over the stomach while injecting air, since the sound shows the tube is in the stomach.
-C. Check that the mark at the nostril has not moved, then start the feed without testing aspirate.
-D. Confirm the tube position before the feed, using aspiration and pH-graded paper, with X-ray if necessary.
+**Q1 (safety).** A nurse is about to start a feed through a nasogastric tube that has been in the patient for two days. What must be done first according to NICE?
+A. Nothing extra, because the position was confirmed when the tube was passed two days ago by a colleague.
+B. Listen over the stomach while injecting air, since the sound shows that the tube is in the stomach.
+C. Check that the mark at the nostril has not moved, then start the feed without testing the aspirate.
+D. Confirm the tube position before the feed, using aspiration and pH-graded paper, with X-ray if needed.
 **Answer: D.**
 **Why correct:** NICE CG32 says the position of nasogastric tubes should be confirmed after placement and before each use by aspiration and pH-graded paper, with X-ray if necessary.
 **Why not A:** Position is checked before each use.
@@ -38,10 +38,10 @@ D. Reposition the tube a few centimetres and begin feeding without any further c
 **Trace:** S-NICE-CG32, S-NHSE-NGT-2016 — Local protocol for failed aspiration; position must be confirmed before use.
 
 **Q3 (monitoring).** A patient on a proton pump inhibitor has aspirate with a pH above the usual cut-off. How should the nurse interpret this?
-A. Accept the result as proof that the tube is in the lung and remove it at once.
-B. Recognise that acid suppression can invalidate the pH check and escalate before using the tube.
-C. Accept the result as confirming stomach placement because higher values are safer.
-D. Repeat the test on every shift until a low pH is obtained, and feed in the meantime.
+A. Accept the result as proof that the tube is in the lung and remove the tube at once from the patient.
+B. Recognise that acid suppression can invalidate the pH check, and escalate before using the tube.
+C. Accept the result as confirming stomach placement, because higher values are safer for the patient.
+D. Repeat the test on every shift until a low pH is obtained, and feed through the tube in the meantime.
 **Answer: B.**
 **Why correct:** NICE says local protocols should address how to proceed when the pH check is invalid because of gastric acid suppression.
 **Why not A:** A high pH may be due to acid suppression, not lung placement; the protocol guides the next step.
@@ -49,11 +49,11 @@ D. Repeat the test on every shift until a low pH is obtained, and feed in the me
 **Why not D:** Feeding must wait for a valid confirmation.
 **Trace:** S-NICE-CG32 — Protocol for invalid pH due to gastric acid suppression.
 
-**Q4 (assessment).** Which daily checks of a nasogastric tube does NICE list?
+**Q4 (assessment).** During the daily care of a patient with a nasogastric tube, which checks of the tube does NICE list?
 A. Fixation, nasal erosion, and whether the tube is intact, unblocked and unkinked.
-B. Only the colour of the tube, since discolouration shows it needs changing.
-C. The patient's weight and height, because these show whether the tube is the right size.
-D. Whether the feed bag label has been signed, as the main safety check on the tube.
+B. The colour of the tube, since discolouration shows that the tube needs to be changed by the nurse.
+C. The patient's weight and height, because these show whether the tube is the right size for him.
+D. Whether the feed bag label has been signed, as the main safety check on the tube for the patient.
 **Answer: A.**
 **Why correct:** NICE CG32 lists daily checks of fixation, nasal erosion and whether the tube is intact, unblocked and unkinked.
 **Why not B:** Colour is not the listed check.
@@ -62,10 +62,10 @@ D. Whether the feed bag label has been signed, as the main safety check on the t
 **Trace:** S-NICE-CG32 — Daily check of fixation, nasal erosion, tube intact/unblocked/unkinked.
 
 **Q5 (scope).** What does the NHS 2016 alert say about introducing fluid or medicine into the lungs through a misplaced nasogastric tube?
-A. It is an expected complication for which no special check is needed.
-B. It is rare enough that an annual audit is the only safeguard required.
-C. It matters only for children, because adult tubes rarely enter the airway.
-D. It is a Never Event in England, which is why checking placement before use is essential.
+A. It is an expected complication, for which no special placement check is needed before use.
+B. It is rare enough that an annual audit is the safeguard that is required, and no more than that.
+C. It matters for children, because adult tubes rarely enter the airway of the patient at all.
+D. It is a Never Event in England, so checking placement before use is essential.
 **Answer: D.**
 **Why correct:** The 2016 NHS alert states that introducing fluids or medication into the respiratory tract or pleura through a misplaced nasogastric tube is a Never Event and that checks before use are essential.
 **Why not A:** The alert treats it as a preventable Never Event.

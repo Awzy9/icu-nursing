@@ -25,11 +25,11 @@ D. Wait until the patient's blood pressure is back in the normal range, even if 
 **Why not D:** The guidance does not ask for normal values; it asks for appropriate stabilisation and warns against delaying time-critical transfers.
 **Trace:** N-ICS-TRANSFER-2026 — Rec 58: resuscitate and stabilise before transfer.
 
-**Q2 (application).** As you prepare to leave, the monitor leads and syringe-driver cables are tangled across the trolley and the screens face away from you. What should you do?
-A. Tie the monitoring cables together and position the monitors, ventilator display and syringe drivers where the escorts can see them.
-B. Leave the cables loose so they can move freely when the trolley goes over bumps in the corridor.
-C. Turn the monitor away and rely on the alarms, because alarms alert staff to any change.
-D. Disconnect the syringe drivers and carry them in the bag to keep the trolley uncluttered.
+**Q2 (application).** As you prepare the patient for transfer, the monitor leads and syringe-driver cables are tangled across the trolley and the screens face away from you. What should you do?
+A. Secure the cables and place monitors, ventilator display and syringe drivers where escorts can see them.
+B. Leave the cables loose so they can move freely when the trolley goes over bumps in the corridor on the way.
+C. Turn the monitor away and rely on the alarms, because alarms will alert the staff to a change in the patient.
+D. Disconnect the syringe drivers and carry them in the bag to keep the trolley uncluttered for the journey.
 **Answer: A.**
 **Why correct:** ICS recommendations 74-75 say monitors, ventilator displays and syringe drivers should be visible to accompanying staff and monitoring cables tied together to form an umbilicus.
 **Why not B:** Loose cables are a safety risk and are not advised.
@@ -37,10 +37,10 @@ D. Disconnect the syringe drivers and carry them in the bag to keep the trolley 
 **Why not D:** Interrupting infusions without a plan is unsafe.
 **Trace:** N-ICS-TRANSFER-2026 — Rec 74-75: displays visible; cables tied together (umbilicus).
 
-**Q3 (monitoring).** A scan and return is expected to take about forty minutes, and the vasoactive syringe is nearly empty. What does the guidance support?
+**Q3 (monitoring).** A patient is going for a scan and return that will take about forty minutes, and the vasoactive syringe is nearly empty. What does the transfer guidance support?
 A. Starting the transfer and replacing the syringe at the scanner, because a change takes only a moment.
-B. Asking the transport assistant to fetch another syringe if the infusion runs out while the patient is in the scanner.
-C. Stopping the infusion for the scan, since the patient will be lying still and should not need it.
+B. Asking the transport assistant to fetch a syringe if the infusion runs out while the patient is in the scanner.
+C. Stopping the infusion for the scan, since the patient will be lying still and should not need it then.
 D. Making sure there is enough medication for at least twice the planned duration of the transfer.
 **Answer: D.**
 **Why correct:** ICS recommendation 65 says sufficient bolus and infusion medications should be available for at least twice the duration of the planned transfer.
@@ -74,10 +74,10 @@ D. Handover can wait until the patient has been settled and the monitors are rec
 **Trace:** N-ICS-TRANSFER-2026 — Rec 84-85: formal multidisciplinary handover on arrival.
 
 **Q6 (safety).** Before leaving, you notice the patient is not strapped to the trolley and a bag of drugs and consumables is resting loose between his legs. What should you do?
-A. Secure the patient with the harness or belt system and stow all portable equipment and bags securely.
-B. Leave things as they are, since the trolley has side rails and the corridor is short.
-C. Tuck the bag under the pillow so it is within easy reach if an emergency occurs on the way.
-D. Strap the patient only when the transfer is by ambulance, because corridors are low-risk journeys.
+A. Secure the patient with the harness or belt system and stow portable equipment and bags securely.
+B. Leave things as they are, since the trolley has side rails and the corridor is quite short for the journey.
+C. Tuck the bag under the pillow so it is within easy reach if an emergency occurs on the way to the scan.
+D. Strap the patient when the transfer is by ambulance, because corridors are low-risk journeys for patients.
 **Answer: A.**
 **Why correct:** ICS recommendations 77 and 79 call for patients to be secured with an appropriate harness or belt system and for portable equipment and bags to be securely stowed.
 **Why not B:** Side rails alone do not replace the harness or secure stowage.

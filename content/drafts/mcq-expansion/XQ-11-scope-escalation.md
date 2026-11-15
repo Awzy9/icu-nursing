@@ -14,10 +14,10 @@ independently_written_note: "Original wording written for this platform; stems, 
 
 ## 17. MCQs
 **Q1 (scope).** A patient's chest drain is bubbling and the nurse thinks suction might help. Who decides on suction and its pressure?
-A. The nurse, because the nurse is the one who observes the drain most often.
-B. The bedside nurse and the patient together, once the patient says it is comfortable.
-C. The medical or specialist team, who prescribe or document the suction pressure before it starts.
-D. The healthcare assistant who connects the equipment.
+A. The nurse, because the nurse is the one who observes the drain most often during the shift.
+B. The bedside nurse and the patient together, once the patient says that it is comfortable.
+C. The medical or specialist team, who prescribe or document the suction pressure first.
+D. The healthcare assistant who connects the equipment at the bedside to the wall unit.
 **Answer: C.**
 **Why correct:** The BTS statement says suction pressures should be prescribed or documented by the medical team before suction is commenced.
 **Why not A:** Observation does not make suction a nursing decision.
@@ -26,10 +26,10 @@ D. The healthcare assistant who connects the equipment.
 **Trace:** N-BTS-PCS-2023 — Suction pressures prescribed or documented by the medical team.
 
 **Q2 (scope).** The arterial line on a stable patient has not been used for sampling for a day. Who decides to remove it?
-A. The nurse alone, once the line has been unused for a full day.
+A. The nurse alone, once the line has been unused for a full day on the unit.
 B. The prescriber; the nurse asks each day whether the line is still needed.
-C. The patient, once he asks for it to come out.
-D. The pharmacist, who reviews the daily infusion chart.
+C. The patient, once he asks for the line to come out of his wrist during the day.
+D. The pharmacist, who reviews the daily infusion chart for the whole unit each day.
 **Answer: B.**
 **Why correct:** The arterial line draft rests on CDC advice to remove catheters as soon as they are no longer needed; removal is a prescriber decision and the nurse raises the daily question.
 **Why not A:** Removal needs an order or approved protocol.
