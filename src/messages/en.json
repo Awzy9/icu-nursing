@@ -812,7 +812,7 @@
     "title": "Equipment and monitoring",
     "intro": "Learn what bedside equipment shows, how to read the trace or number safely, and when to escalate. Explore each device with a labelled diagram and a text description.",
     "fixturesBanner": "SYNTHETIC DEVELOPMENT FIXTURES. Every module here is a nonclinical sample about a fictional device, written to test the software. None of it is ICU content. Real equipment content is held in unpublished drafts.",
-    "notice": "Self-study only. These diagrams are original generic schematics, not a copy of any manufacturer's screen, alarm table or manual. Always follow your unit's policy and the manual for the device you are using. Progress and bookmarks are saved on this device only.",
+    "notice": "Self-study only. These diagrams are original generic schematics, not a copy of any manufacturer's screen, alarm table or manual. Always follow your unit's policy and the manual for the device you are using. Progress and bookmarks are saved to your account.",
     "disabledTitle": "Equipment learning is not available",
     "disabledBody": "Sample modules are switched off in this environment, and no reviewed equipment content has been published yet.",
     "syntheticBadge": "Synthetic sample",

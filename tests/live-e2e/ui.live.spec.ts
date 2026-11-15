@@ -332,6 +332,47 @@ test("skills library in database mode: a signed-in learner searches, starts a se
   }
 });
 
+test("equipment learning in database mode: bookmarks and progress are saved to the signed-in account, follow it to another device, and are invisible to another user", async ({ page, browser }) => {
+  test.skip(!ISOLATED, "uses the synthetic equipment fixtures; isolated stack only");
+  await sql("update public.app_settings set environment='development', question_fixtures_visible=true");
+  const baseURL = test.info().project.use.baseURL as string;
+  const other = await makeUser("ui-learner-two", "UI Learner Two"); ids.push(other.id);
+  const extra: import("@playwright/test").BrowserContext[] = [];
+  try {
+    await page.goto("/en/equipment");
+    await expect(page).toHaveURL(/\/en\/login/); // protected: a signed-out visitor is redirected
+    await login(page, learner.email);
+    await page.goto("/en/equipment/SYN-EQ-002");
+    await expect(page.getByTestId("eq-progress")).toHaveText("0 of 4 parts viewed");
+    await page.getByRole("button", { name: /Peak/ }).first().click();
+    await expect(page.getByTestId("eq-progress")).toHaveText("1 of 4 parts viewed");
+    await page.getByRole("button", { name: "Bookmark this module" }).click();
+    await expect(page.getByRole("button", { name: "Bookmarked" })).toHaveAttribute("aria-pressed", "true");
+    // the server confirms before we look elsewhere (the UI is optimistic)
+    await expect.poll(async () => (await sql<{ n: number }>(`select (select count(*) from public.equipment_progress where user_id='${learner.id}') + (select count(*) from public.equipment_bookmarks where user_id='${learner.id}') as n`))[0]!.n).toBe(2);
+    // a second device: a separate browser context signed in as the same learner
+    const ctx2 = await browser.newContext({ baseURL }); extra.push(ctx2);
+    const dev2 = await ctx2.newPage();
+    await login(dev2, learner.email);
+    await dev2.goto("/en/equipment/SYN-EQ-002");
+    await expect(dev2.getByTestId("eq-progress")).toHaveText("1 of 4 parts viewed");
+    await expect(dev2.getByRole("button", { name: "Bookmarked" })).toHaveAttribute("aria-pressed", "true");
+    await dev2.goto("/en/equipment");
+    await expect(dev2.getByTestId("eq-stats")).toContainText("1 bookmarked");
+    // another user sees nothing of it
+    const ctx3 = await browser.newContext({ baseURL }); extra.push(ctx3);
+    const stranger = await ctx3.newPage();
+    await login(stranger, other.email);
+    await stranger.goto("/en/equipment/SYN-EQ-002");
+    await expect(stranger.getByTestId("eq-progress")).toHaveText("0 of 4 parts viewed");
+    await expect(stranger.getByRole("button", { name: "Bookmark this module" })).toHaveAttribute("aria-pressed", "false");
+    expect((await sql<{ n: number }>(`select count(*)::int n from public.equipment_progress where user_id='${other.id}'`))[0]!.n).toBe(0);
+  } finally {
+    for (const c of extra) await c.close();
+    await sql("update public.app_settings set environment='production', question_fixtures_visible=false");
+  }
+});
+
 test("email-link callback: a recovery link signs the user in and the reset form sets a new password", async ({ page }) => {
   const link = await adminAuth<{ hashed_token: string }>("/admin/generate_link", { method: "POST", body: JSON.stringify({ type: "recovery", email: learner.email }) });
   await page.goto(`/auth/callback?token_hash=${link.hashed_token}&type=recovery&next=${encodeURIComponent("/en/reset-password")}`);
