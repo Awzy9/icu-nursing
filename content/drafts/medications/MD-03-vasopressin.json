@@ -1,0 +1,200 @@
+{
+ "med_id": "MD-03",
+ "number": 3,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Vasopressin",
+ "drug_class": "Vasopressor (antidiuretic hormone analogue)",
+ "category": "vasoactives-inotropes",
+ "high_alert": true,
+ "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
+ "summary": "Vasopressor indicated to increase blood pressure in adults with vasodilatory shock who remain hypotensive despite fluids and catecholamines. Nursing focus: cardiac function and fluid/electrolyte monitoring, including after the drug is stopped.",
+ "batch": 1,
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-VASOPRESSIN",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-VASOPRESSIN",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label (Vasostrict) indicates vasopressin to increase blood pressure in adults with vasodilatory shock who remain hypotensive despite fluids and catecholamines.",
+     "support": "sourced",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitor serum electrolytes, fluid status and urine output after the drug is discontinued, as the label advises.",
+     "support": "sourced",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Haemodynamic monitoring frequency follows the unit's vasoactive infusion protocol.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "A decrease in cardiac index may be seen with vasopressin; the label warns it can worsen cardiac function.",
+     "support": "sourced",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
+    },
+    {
+     "text": "Reversible diabetes insipidus (polyuria, pale watery urine and hypernatraemia) can follow cessation of treatment; some patients need the drug restarted or desmopressin, which are prescriber decisions.",
+     "support": "sourced",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label notes that adverse reactions were identified from the literature and reported voluntarily, so their frequency cannot be estimated reliably.",
+     "support": "sourced",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate for worsening perfusion or cardiac function, a marked rise in urine output with a rising sodium after stopping, or any new arrhythmia.",
+     "support": "partial",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record haemodynamics, urine output, electrolyte results and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "observe",
+   "text": "Monitor haemodynamics at the unit's frequency.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "kind": "assess",
+   "text": "After the drug is stopped, monitor urine output, fluid status and serum electrolytes.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-VASOPRESSIN"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review serum sodium and other electrolyte results as ordered.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "L-VASOPRESSIN"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report signs of worsening cardiac function or a sudden polyuria with pale watery urine.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-VASOPRESSIN"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record urine output and electrolyte trends.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Dosing, rate and preparation: deliberately not included.",
+  "Surviving Sepsis and other guideline text was not read for this entry.",
+  "Other labels (different manufacturers or countries) may differ."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}

@@ -1,0 +1,51 @@
+number,name,category,origin_of_listing,batch,status
+1,Norepinephrine,vasoactives-inotropes,master prompt Part 7 (named),1,drafted
+2,Epinephrine,vasoactives-inotropes,master prompt Part 7 (named),1,drafted
+3,Vasopressin,vasoactives-inotropes,master prompt Part 7 (named),1,drafted
+4,Dobutamine,vasoactives-inotropes,master prompt Part 7 (named),1,drafted
+5,Milrinone,vasoactives-inotropes,master prompt Part 7 (named),1,drafted
+6,Propofol,sedatives-analgesics,master prompt Part 7 (named),1,drafted
+7,Midazolam,sedatives-analgesics,master prompt Part 7 (named),1,drafted
+8,Dexmedetomidine,sedatives-analgesics,master prompt Part 7 (named),1,drafted
+9,Fentanyl,sedatives-analgesics,master prompt Part 7 (named),1,drafted
+10,Morphine,sedatives-analgesics,master prompt Part 7 (named),1,drafted
+11,Ketamine,sedatives-analgesics,master prompt Part 7 (named),2,planned
+12,Rocuronium,neuromuscular-blockers,master prompt Part 7 (named),2,planned
+13,Cisatracurium,neuromuscular-blockers,master prompt Part 7 (named),2,planned
+14,Heparin,anticoagulants-hemostasis,master prompt Part 7 (named),2,planned
+15,Insulin,insulin-electrolytes-fluids,master prompt Part 7 (named),2,planned
+16,Amiodarone,antiarrhythmics-cardiac,master prompt Part 7 (named),2,planned
+17,Adenosine,antiarrhythmics-cardiac,master prompt Part 7 (named),2,planned
+18,Magnesium sulfate,insulin-electrolytes-fluids,master prompt Part 7 (named),2,planned
+19,Potassium chloride,insulin-electrolytes-fluids,master prompt Part 7 (named),2,planned
+20,Calcium gluconate,insulin-electrolytes-fluids,master prompt Part 7 (named),2,planned
+21,Sodium bicarbonate,insulin-electrolytes-fluids,master prompt Part 7 (named),3,planned
+22,Piperacillin-tazobactam,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+23,Meropenem,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+24,Vancomycin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+25,Ceftriaxone,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+26,Cefazolin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+27,Azithromycin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+28,Linezolid,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+29,Gentamicin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
+30,Phenylephrine,vasoactives-inotropes,proposed to reach 50; not in the master list,3,planned
+31,Dopamine,vasoactives-inotropes,proposed to reach 50; not in the master list,4,planned
+32,Nicardipine,antiarrhythmics-cardiac,proposed to reach 50; not in the master list,4,planned
+33,Labetalol,antiarrhythmics-cardiac,proposed to reach 50; not in the master list,4,planned
+34,Esmolol,antiarrhythmics-cardiac,proposed to reach 50; not in the master list,4,planned
+35,Nitroglycerin,antiarrhythmics-cardiac,proposed to reach 50; not in the master list,4,planned
+36,Furosemide,insulin-electrolytes-fluids,proposed to reach 50; not in the master list,4,planned
+37,Lorazepam,sedatives-analgesics,proposed to reach 50; not in the master list,4,planned
+38,Haloperidol,sedatives-analgesics,proposed to reach 50; not in the master list,4,planned
+39,Hydromorphone,sedatives-analgesics,proposed to reach 50; not in the master list,4,planned
+40,Naloxone,reversal-emergency,proposed to reach 50; not in the master list,4,planned
+41,Flumazenil,reversal-emergency,proposed to reach 50; not in the master list,5,planned
+42,Atropine,reversal-emergency,proposed to reach 50; not in the master list,5,planned
+43,Succinylcholine,neuromuscular-blockers,proposed to reach 50; not in the master list,5,planned
+44,Enoxaparin,anticoagulants-hemostasis,proposed to reach 50; not in the master list,5,planned
+45,Alteplase,anticoagulants-hemostasis,proposed to reach 50; not in the master list,5,planned
+46,Tranexamic acid,anticoagulants-hemostasis,proposed to reach 50; not in the master list,5,planned
+47,Levetiracetam,neuro-seizure-icp,proposed to reach 50; not in the master list,5,planned
+48,Mannitol,neuro-seizure-icp,proposed to reach 50; not in the master list,5,planned
+49,Pantoprazole,respiratory-gi-support,proposed to reach 50; not in the master list,5,planned
+50,Hydrocortisone,respiratory-gi-support,proposed to reach 50; not in the master list,5,planned

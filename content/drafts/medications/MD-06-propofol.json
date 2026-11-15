@@ -1,0 +1,217 @@
+{
+ "med_id": "MD-06",
+ "number": 6,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Propofol",
+ "drug_class": "Intravenous general anaesthetic and sedative emulsion",
+ "category": "sedatives-analgesics",
+ "high_alert": true,
+ "high_alert_note": "Named as a high-risk infusion example in the FDA infusion pump page; the local high-alert list governs.",
+ "summary": "Intravenous general anaesthetic and sedation drug; ICU sedation of intubated, mechanically ventilated adults is among its labelled indications. Nursing focus: strict aseptic handling, cardiovascular depression, hypersensitivity and propofol infusion syndrome.",
+ "batch": 1,
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-PROPOFOL",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-PROPOFOL",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes propofol injectable emulsion as an intravenous general anaesthetic and sedation drug, with indications that include ICU sedation of intubated, mechanically ventilated adult patients.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    }
+   ]
+  },
+  "administration_considerations": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Strict aseptic technique must be maintained; vials are never accessed more than once or used for more than one person; administration should start promptly and be completed within the time the label states; discard unused product and do not use it if contamination is suspected.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Follow the unit's aseptic handling rules for every lipid emulsion product and report any suspected contamination.",
+     "support": "partial",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Sedation scoring, haemodynamic and respiratory monitoring follow the unit's sedation protocol.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Serious and sometimes fatal hypersensitivity reactions can occur.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    },
+    {
+     "text": "Bradycardia, asystole and cardiac arrest have been reported; the label warns of cardiovascular depression and hypotension.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    },
+    {
+     "text": "Propofol infusion syndrome is described among the label's serious adverse reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label lists hypersensitivity, hypotension and bradycardia and propofol infusion syndrome among the serious adverse reactions discussed in its warnings.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate immediately for hypotension, bradycardia, signs of allergy, unexplained metabolic or cardiac deterioration, or suspected contamination.",
+     "support": "partial",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record sedation scores, haemodynamics, product handling and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "observe",
+   "text": "Monitor heart rate and blood pressure at the unit's frequency during sedation.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "kind": "assess",
+   "text": "Assess sedation depth with the unit's validated tool.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "kind": "observe",
+   "text": "Handle the product with strict aseptic technique and never re-access a vial.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-PROPOFOL"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report bradycardia, hypotension, allergic signs or suspected contamination immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-PROPOFOL"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record sedation scores and events.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Dosing, rate, lipid load, triglyceride monitoring and preparation: deliberately not included.",
+  "PADIS and other sedation guideline text was not read for this entry.",
+  "Paediatric limitations were not summarised."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}
