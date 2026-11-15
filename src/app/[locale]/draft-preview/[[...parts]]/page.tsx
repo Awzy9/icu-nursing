@@ -52,7 +52,7 @@ function heading(raw: string, fallback: string, isJson: boolean): string {
     } catch { /* Show filename instead. */ }
   } else {
     const fm = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-    const title = fm?.[1].match(/^title:\s*(.+)$/m)?.[1] || raw.match(/^#\s+(.+)$/m)?.[1];
+    const title = fm?.[1]?.match(/^title:\s*(.+)$/m)?.[1] || raw.match(/^#\s+(.+)$/m)?.[1];
     if (title) return title.replace(/^["']|["']$/g, "");
   }
   return fallback.replace(/\.(json|md)$/, "").replace(/-/g, " ");
