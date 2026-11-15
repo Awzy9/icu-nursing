@@ -432,7 +432,7 @@ test("account deletion: a learner re-checks their email, deletes the account, is
   expect((await sql<{ n: number }>(`select count(*)::int n from auth.users where id='${doomed.id}'`))[0]!.n).toBe(1);
   await page.getByLabel("Your email address").fill(doomed.email);
   await page.getByRole("button", { name: "Delete my account permanently" }).click();
-  await expect(page).toHaveURL(/\/en\/account\/deleted/, { timeout: 20_000 });
+  await expect(page).toHaveURL(/\/en\/account-deleted/, { timeout: 20_000 });
   await expect(page.getByRole("heading", { level: 1, name: "Your account has been deleted" })).toBeVisible();
   expect((await sql<{ n: number }>(`select count(*)::int n from auth.users where id='${doomed.id}'`))[0]!.n).toBe(0);
   await page.goto("/en/dashboard");
