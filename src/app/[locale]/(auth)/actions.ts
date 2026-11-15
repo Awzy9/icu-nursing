@@ -25,11 +25,14 @@ function captcha(form: FormData): { captchaToken?: string } | { error: string } 
 const isCaptchaError = (e: { code?: string; message?: string }) => e.code === "captcha_failed" || /captcha/i.test(e.message ?? "");
 const fd = (f: FormData) => Object.fromEntries([...f.entries()].filter(([, v]) => typeof v === "string"));
 
+/** The isolated CI stack (loopback Supabase) runs a long serial browser suite from one IP; the per-IP limiter is relaxed there only. */
+const localStack = () => /^https?:\/\/(127\.0\.0\.1|localhost)(:|\/|$)/.test(process.env.NEXT_PUBLIC_SUPABASE_URL ?? "");
+
 export async function signInAction(_prev: FormState, form: FormData): Promise<FormState> {
   const locale = await getLocale();
   const supabase = await createClient();
   if (!supabase) return { error: "demoUnavailable" };
-  if (!rateLimit(`signin:${await clientIp()}`)) return { error: "rateLimited" };
+  if (!rateLimit(`signin:${await clientIp()}`, localStack() ? 1000 : 8)) return { error: "rateLimited" };
   const parsed = signInSchema.safeParse(fd(form));
   if (!parsed.success) return { error: errorKey(parsed.error.issues[0]) };
   const cap = captcha(form);
