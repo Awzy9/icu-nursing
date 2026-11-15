@@ -106,3 +106,9 @@ Each topic/question/scenario stores: source IDs, a note of *what was independent
 | Scenario and equipment drafts (SC-01..SC-20, EQ-01..EQ-08) | n/a (original wording) | Authors' own specifications; each cites only registered sources; equipment graphics in the app are original generic schematics | Internal development | Import or publish before clinical review; copy manufacturer screens, alarm tables or manuals | Keep drafts out of the database |
 | National Tracheostomy Safety Project adult emergency algorithms (tracheostomy.org.uk) and secondary copies | **UNVERIFIED** | Official PDFs not fetched; only search summaries and secondary copies were seen | - | - | Read the official algorithms and licence before use |
 | Resuscitation Council UK anaphylaxis guideline, May 2021 (N-RCUK-ANAPH-2021), used in SC-19 | **RED** | The PDF states: "No part of this publication may be reproduced without the written permission of Resuscitation Council UK" | Cite; paraphrase key recommendations without doses; do not reproduce the algorithm figure | Reproduce text or figures | Permission needed for any reproduction; none requested |
+
+## Additions from Phase 10 (checked 2026-11-15; no licensing enquiry made)
+| Source | Class | Licence evidence | Allowed | Not allowed | Action |
+|---|---|---|---|---|---|
+| NICE CG103 Delirium: prevention, diagnosis and management (updated January 2023), used in SC-17 | **YELLOW** | NICE copyright; Notice of rights not read | Cite; paraphrase recommendations without reproducing assessment-tool items or medicine amounts | Reproduce text; reproduce CAM-ICU or ICDSC | Verify NICE terms; CAM-ICU and ICDSC licence and training terms not read |
+| NICE NG232 Head injury: assessment and early management (May 2023), used in SC-20 | **YELLOW** | NICE copyright; Notice of rights not read | Cite; paraphrase without numerical triggers | Reproduce text; apply to non-head-injury causes | Verify NICE terms |
