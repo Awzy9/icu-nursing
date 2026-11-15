@@ -7,12 +7,11 @@
 import { readFileSync } from "node:fs";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { ISOLATED } from "../../scripts/live/target";
-import { PASSWORD, PROJECT_URL, cleanup, emailFor, makeUser, newClient, signIn, sql } from "./helpers";
+import { PASSWORD, PROJECT_URL, cleanup, emailFor, mailLink, makeUser, newClient, signIn, sql } from "./helpers";
 import { loadFixtures } from "../../src/lib/question-bank/fixtures";
 import { loadCaseFixtures } from "../../src/lib/cases/fixtures";
 
 const ANON = process.env.LIVE_ANON_KEY ?? "";
-const MAIL = process.env.LIVE_MAIL_URL ?? "http://127.0.0.1:54324";
 const fx = loadFixtures();
 const cases = loadCaseFixtures();
 const ids: string[] = [];
@@ -21,20 +20,6 @@ const rest = (path: string, token?: string, init: RequestInit = {}) =>
   fetch(`${PROJECT_URL}/rest/v1${path}`, { ...init, headers: { apikey: ANON, Authorization: `Bearer ${token ?? ANON}`, "Content-Type": "application/json", ...(init.headers as Record<string, string>) } });
 const tokenOf = async (c: Awaited<ReturnType<typeof signIn>>) => (await c.auth.getSession()).data.session!.access_token;
 
-/** Newest email to `to` from Mailpit; returns the first link containing `needle`. */
-async function mailLink(to: string, needle: string): Promise<string> {
-  for (let i = 0; i < 30; i++) {
-    const list = (await (await fetch(`${MAIL}/api/v1/search?query=${encodeURIComponent(`to:${to}`)}`)).json()) as { messages?: { ID: string }[] };
-    for (const m of list.messages ?? []) {
-      const d = (await (await fetch(`${MAIL}/api/v1/message/${m.ID}`)).json()) as { HTML?: string; Text?: string };
-      const body = `${d.HTML ?? ""}\n${d.Text ?? ""}`.replace(/&amp;/g, "&");
-      const hit = new RegExp(`https?://[^\\s"'<>)]*${needle}[^\\s"'<>)]*`).exec(body);
-      if (hit) return hit[0];
-    }
-    await new Promise((r) => setTimeout(r, 1000));
-  }
-  throw new Error(`no email with a "${needle}" link arrived for ${to}`);
-}
 const follow = (u: string) => fetch(u, { redirect: "manual" });
 
 describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabase-js / PostgREST transport", () => {

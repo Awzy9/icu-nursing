@@ -133,3 +133,19 @@ export async function cleanup(userIds: string[]) {
   for (const id of userIds) await deleteTestUser(id).catch(() => undefined);
 }
 export { deleteTestUser };
+
+/** ISOLATED STACK: newest email to `to` from the local Mailpit; returns the first link containing `needle`. */
+export async function mailLink(to: string, needle: string): Promise<string> {
+  const base = process.env.LIVE_MAIL_URL ?? "http://127.0.0.1:54324";
+  for (let i = 0; i < 30; i++) {
+    const list = (await (await fetch(`${base}/api/v1/search?query=${encodeURIComponent(`to:${to}`)}`)).json()) as { messages?: { ID: string }[] };
+    for (const m of list.messages ?? []) {
+      const d = (await (await fetch(`${base}/api/v1/message/${m.ID}`)).json()) as { HTML?: string; Text?: string };
+      const body = `${d.HTML ?? ""}\n${d.Text ?? ""}`.replace(/&amp;/g, "&");
+      const hit = new RegExp(`https?://[^\\s"'<>)]*${needle}[^\\s"'<>)]*`).exec(body);
+      if (hit) return hit[0];
+    }
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+  throw new Error(`no email with a "${needle}" link arrived for ${to}`);
+}

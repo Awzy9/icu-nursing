@@ -5,7 +5,8 @@
  */
 import { expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { RUN, PASSWORD, adminAuth, api, emailFor, makeUser, newClient, sql, totp } from "../live/helpers";
+import { RUN, PASSWORD, adminAuth, api, emailFor, mailLink, makeUser, newClient, sql, totp } from "../live/helpers";
+import { ISOLATED } from "../../scripts/live/target";
 import { adminStorageRemove } from "../../scripts/live/admin";
 import { refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
 import { cleanup } from "../live/helpers";
@@ -64,21 +65,38 @@ test.afterAll(async () => { await adminStorageRemove(uploadedPaths); await clean
 test("registration page validates input and does not pretend an undeliverable address was registered", async ({ page }) => {
   await page.goto("/en/register");
   await page.getByLabel("Display name").fill("LIVE TEST registrant");
-  await page.getByLabel("Email address").fill(emailFor("registrant"));
-  await page.getByLabel("Password", { exact: true }).fill("correct-horse-battery-1");
-  await page.getByLabel("Confirm password").fill("correct-horse-battery-1");
+  const registrant = emailFor("registrant");
+  await page.getByLabel("Email address").fill(registrant);
+  await page.getByLabel("Password", { exact: true }).fill("Correct-horse-battery-1");
+  await page.getByLabel("Confirm password").fill("Correct-horse-battery-1");
   await waitForCaptcha(page);
   await page.getByRole("button", { name: "Create account" }).click();
-  // Supabase rejects domains without a mail server; if the built-in SMTP quota (2 emails/hour) is exhausted it answers 429 first.
-  // Either way the person is told the truth and is NOT sent to a "check your email" page for an address that was never registered.
-  await expect(page.locator("main").getByRole("alert")).toContainText(/valid email|Too many attempts/i);
-  await expect(page).toHaveURL(/\/en\/register/);
+  if (ISOLATED) {
+    // The local stack has no mail-domain (MX) validation: registration succeeds, the person is told to check their email, and the
+    // confirmation email really arrives (Mailpit) and works.
+    await expect(page).toHaveURL(/\/en\/check-email/);
+    const r = await fetch(await mailLink(registrant, "verify"), { redirect: "manual" });
+    expect([302, 303]).toContain(r.status);
+    await page.goto("/en/register");
+  } else {
+    // Supabase rejects domains without a mail server; if the built-in SMTP quota (2 emails/hour) is exhausted it answers 429 first.
+    // Either way the person is told the truth and is NOT sent to a "check your email" page for an address that was never registered.
+    await expect(page.locator("main").getByRole("alert")).toContainText(/valid email|Too many attempts/i);
+    await expect(page).toHaveURL(/\/en\/register/);
+  }
   await page.getByLabel("Email address").fill("a@b.co");
   await page.getByLabel("Password", { exact: true }).fill("short");
   await page.getByLabel("Confirm password").fill("short");
   await waitForCaptcha(page);
   await page.getByRole("button", { name: "Create account" }).click();
   await expect(page.locator("main").getByRole("alert")).toContainText(/at least 12/i);
+  // a long password the server policy rejects gets an accurate message, not the length rule again
+  await page.getByLabel("Email address").fill(emailFor("weak"));
+  await page.getByLabel("Password", { exact: true }).fill("correct-horse-battery-weak-1");
+  await page.getByLabel("Confirm password").fill("correct-horse-battery-weak-1");
+  await waitForCaptcha(page);
+  await page.getByRole("button", { name: "Create account" }).click();
+  await expect(page.locator("main").getByRole("alert")).toContainText(ISOLATED ? /not accepted/i : /valid email|Too many attempts|not accepted/i);
 });
 
 test("CAPTCHA: the widget loads under the CSP and fills the form; a missing token is refused; a rejected token shows a clear error and re-arms the widget", async ({ page }) => {

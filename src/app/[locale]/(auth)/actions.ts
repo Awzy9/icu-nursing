@@ -70,7 +70,8 @@ export async function signUpAction(_prev: FormState, form: FormData): Promise<Fo
     if (error.status === 429 || error.code === "over_email_send_rate_limit" || error.code === "over_request_rate_limit") return { error: "rateLimited" };
     // These reveal nothing about other accounts and let the person fix their input.
     if (error.code === "email_address_invalid") return { error: "invalidEmail" };
-    if (error.code === "weak_password") return { error: "passwordTooShort" };
+    // Long enough (zod checked 12+) but refused by the server policy: say so, instead of repeating the length rule.
+    if (error.code === "weak_password") return { error: v.password.length >= 12 ? "passwordWeak" : "passwordTooShort" };
   }
   // Any other outcome (including "already registered") looks identical: no account enumeration.
   redirect({ href: `/check-email?email=${encodeURIComponent(v.email)}`, locale });
@@ -103,7 +104,7 @@ export async function updatePasswordAction(_prev: FormState, form: FormData): Pr
   const parsed = newPasswordSchema.safeParse(fd(form));
   if (!parsed.success) return { error: errorKey(parsed.error.issues[0]) };
   const { error } = await supabase.auth.updateUser({ password: parsed.data.password });
-  if (error) return { error: "generic" };
+  if (error) return { error: error.code === "weak_password" ? "passwordWeak" : "generic" };
   return { ok: true };
 }
 
