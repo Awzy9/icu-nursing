@@ -12,6 +12,7 @@ import { seededOrder } from "../../src/lib/question-bank/shuffle";
 const fx = loadFixtures();
 let failed = 0;
 const check = (name: string, ok: boolean, detail = "") => { console.log(`${ok ? "PASS" : "FAIL"}  ${name}${detail ? "  " + detail : ""}`); if (!ok) failed++; };
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Row = Record<string, any>;
 
 async function as(user: string | null, query: string): Promise<Row[]> {
@@ -21,7 +22,6 @@ async function as(user: string | null, query: string): Promise<Row[]> {
 async function fails(user: string | null, query: string, re: RegExp): Promise<boolean> {
   try { await as(user, query); return false; } catch (e) { return re.test((e as Error).message); }
 }
-const lit = (v: string) => `'${v.replace(/'/g, "''")}'`;
 
 (async () => {
   if (REF !== DEV_REF) throw new Error("refusing: not the approved dev project");
