@@ -11,13 +11,23 @@
  "topic_drafts": [
   "D04-T09"
  ],
- "evidence_status": "unsupported",
+ "evidence_status": "partial",
  "license_status": "permission_required",
  "sources": [
   {
    "id": "S-KDIGO-AKI-2012",
    "read": "partial",
    "use": "KDIGO 2012: prescribing guideline; summary of Section 5 statements read"
+  },
+  {
+   "id": "N-AHS-CRRT-ALARM-2025",
+   "read": "full",
+   "use": "AHS Dialyzing Wisely CRRT alarm pathway (Jan 2025), device-specific (PrisMax), read in full"
+  },
+  {
+   "id": "N-BAXTER-PRISMAFLEX",
+   "read": "not_read",
+   "use": "manufacturer operator's manual: URL redirects to the Vantive site; not read"
   },
   {
    "id": "S-CHS-CRRT",
@@ -27,8 +37,8 @@
  ],
  "objectives": [
   "Know the prescription and check that delivered treatment matches it.",
-  "Monitor the patient and report interruptions and bleeding.",
-  "Understand that circuit and alarm management needs manufacturer documentation."
+  "Respond to circuit alarms by checking the patient first and using the device's own instructions.",
+  "Know when to return blood, stop treatment, document and notify the prescriber."
  ],
  "prerequisites": [
   "Acute kidney injury",
@@ -44,12 +54,33 @@
      "sources": [
       "S-KDIGO-AKI-2012"
      ]
+    },
+    {
+     "text": "Troubleshoot alarms to minimise downtime and optimise delivered (effluent) dose.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
     }
    ]
   },
   "safety": {
    "support": "partial",
    "items": [
+    {
+     "text": "Check the patient first, and review and address the alarm on the screen before clearing it; the alarm off, disable and override buttons decrease alarm sensitivity.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
+    {
+     "text": "On the device described, the blood pump stops with high-priority (flashing red) alarms; other devices differ.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
     {
      "text": "Confirm the chest radiograph required after internal jugular or subclavian catheter placement has been done and reviewed before first use (KDIGO).",
      "support": "partial",
@@ -66,11 +97,43 @@
     }
    ]
   },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Who may operate and troubleshoot a CRRT machine is set by competency approval and the unit's policy; the pathway itself says actions are according to local practice guidelines.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "equipment": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Machine, filter set and bag arrangement are device- and software-specific; use the manufacturer's operator's manual for your unit's software version.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "For access and return alarms, check the patient (coughing, suctioning, moving), whether a line is clamped or kinked, the dialysis catheter (reposition, flush and aspirate, according to local practice) and the blood-flow rate; for flow alarms check clamps and kinks and whether bags touch other objects, leak or sit on the wrong scale.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    }
+   ]
+  },
   "procedure": {
    "support": "local_protocol",
    "items": [
     {
-     "text": "Circuit set-up, priming, filter, alarm and troubleshooting steps follow the manufacturer's documentation and the unit's competency programme; no source for them was read.",
+     "text": "Priming, set-up, bag changes and alarm-specific actions follow the manufacturer's instructions and the unit's competency programme; the pathway gives device-specific tips only.",
      "support": "local_protocol",
      "sources": []
     }
@@ -92,11 +155,28 @@
    "support": "partial",
    "items": [
     {
+     "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
+     "support": "partial",
+     "sources": [
+      "N-AHS-CRRT-ALARM-2025"
+     ]
+    },
+    {
      "text": "Report bleeding, suspected HIT, access problems, haemodynamic instability and interruptions.",
      "support": "partial",
      "sources": [
       "S-KDIGO-AKI-2012"
      ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record delivered dose, interruptions, alarms, the reason for stopping and fluid balance per unit standard.",
+     "support": "local_protocol",
+     "sources": []
     }
    ]
   }
@@ -113,11 +193,20 @@
   },
   {
    "phase": "assessment",
-   "text": "Monitor haemodynamics, temperature, fluid balance and bleeding.",
+   "text": "On any alarm, check the patient first, then the lines, clamps, catheter and bags before clearing it.",
    "critical": true,
    "support": "partial",
    "sources": [
-    "S-KDIGO-AKI-2012"
+    "N-AHS-CRRT-ALARM-2025"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Do not use alarm off, disable or override functions to clear an unresolved problem.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025"
    ]
   },
   {
@@ -128,12 +217,21 @@
    "sources": []
   },
   {
-   "phase": "escalation",
-   "text": "Report interruptions, under-delivery, bleeding and suspected HIT.",
+   "phase": "monitoring",
+   "text": "Monitor haemodynamics, temperature, fluid balance and bleeding.",
    "critical": true,
    "support": "partial",
    "sources": [
     "S-KDIGO-AKI-2012"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "If alarms cannot be managed, return blood when possible per local practice, document the reason and notify the prescriber.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025"
    ]
   },
   {
@@ -145,11 +243,14 @@
   }
  ],
  "gaps": [
-  "Machine, circuit, filter and alarm management, priming, citrate monitoring, drug dosing, weaning, troubleshooting: need manufacturer documentation and clinical authorship.",
+  "The alarm pathway is specific to one device family (PrisMax) and one health service; it is not a cross-manufacturer standard.",
+  "The manufacturer's operator's manuals were located but not read: Baxter's Prismaflex 7.xx manual URL now redirects to the Vantive site, and software versions differ by unit.",
+  "Priming, citrate monitoring, drug dosing, weaning and filter-life management: not covered.",
   "KDIGO 2026 update is a draft; the 2012 guideline is over ten years old."
  ],
  "permissions": [
-  "Manufacturer documentation: permission required.",
+  "AHS pathway: licence not stated on the file; verify before reproducing.",
+  "Manufacturer documentation: reproduction permission required.",
   "KDIGO: verify reuse terms."
  ],
  "references": [
@@ -163,6 +264,28 @@
    "read": "partial",
    "licence_class": "RED (unconfirmed)",
    "permission_required": "Verify"
+  },
+  {
+   "id": "N-AHS-CRRT-ALARM-2025",
+   "title": "CRRT Alarm Management Care Pathway Resource (3 pages)",
+   "publisher": "Alberta Health Services Scientific Clinical Network (Dialyzing Wisely)",
+   "version": "January 2025",
+   "url": "https://www.albertahealthservices.ca/assets/about/scn/ahs-scn-cc-dialyzingwisely-crrt-alarm-management-care-pathway-resource.pdf",
+   "accessed": "2026-11-15",
+   "read": "full",
+   "licence_class": "YELLOW (AHS copyright; licence not stated on the file; verify)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "N-BAXTER-PRISMAFLEX",
+   "title": "Prismaflex operator's manual (software 7.xx)",
+   "publisher": "Baxter / Vantive",
+   "version": "Not read",
+   "url": "https://renalcareus.baxter.com/sites/g/files/ebysai2641/files/2020-09/Prismaflex_7_xx_Operators_Manual.pdf",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "RED (manufacturer)",
+   "permission_required": "Yes (reproduction)"
   },
   {
    "id": "S-CHS-CRRT",

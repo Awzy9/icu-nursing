@@ -12,12 +12,12 @@ All 25 skills of the original master list (Part 6 of the master prompt) have a *
 | Measure | Result |
 |---|---|
 | Skills drafted | **25 of 25** (as unreviewed drafts) |
-| Skills with partial evidence | 20 |
-| Skills with **no usable source read** (unsupported; checklist is local-protocol referrals only) | 5: SK-05 tracheostomy care, SK-13 chest drain monitoring, SK-16 safe patient mobilization, SK-17 CRRT circuit monitoring (only monitoring/safety implications sourced), SK-20 patient transport |
+| Skills with partial evidence | 24 |
+| Skills with **no usable source read** (unsupported; checklist is local-protocol referrals only) | 1: SK-05 tracheostomy care (see Phase 8 recovery below) |
 | Skills with fully supported evidence (publishable) | **0** (a clinical skill needs evidence_status = supported, cleared/original licensing, an independent reviewer and an approver; none has any) |
-| Sections (194 across the 25 drafts) | 8 fully supported, 113 partially supported, 73 local-protocol referrals |
-| Statements (239) | 43 sourced, 123 partial, 73 local-protocol |
-| Checklist items (150) | 25 sourced, 87 partial, 38 local-protocol; 93 marked critical |
+| Sections (228 across the 25 drafts) | 8 fully supported, 139 partially supported, 81 local-protocol referrals |
+| Statements (288) | 61 sourced, 146 partial, 81 local-protocol |
+| Checklist items (167) | 37 sourced, 98 partial, 32 local-protocol; 107 marked critical |
 
 ## Per skill
 Columns: sections full/partial/local; checklist items sourced/partial/local; sources read full/partial/not read; number of declared gaps.
@@ -28,7 +28,7 @@ Columns: sections full/partial/local; checklist items sourced/partial/local; sou
 | SK-02 | Central venous catheter care | partial | 1/9/3 | 3/3/1 | 3/1/1 | 4 |
 | SK-03 | Peripheral IV care | partial | 1/6/4 | 3/1/2 | 1/1/1 | 3 |
 | SK-04 | Endotracheal tube care | partial | 1/7/4 | 2/4/1 | 3/2/0 | 3 |
-| SK-05 | Tracheostomy care | unsupported | 0/0/1 | 0/0/3 | 0/0/2 | 2 |
+| SK-05 | Tracheostomy care | unsupported | 0/1/1 | 0/0/3 | 1/0/4 | 3 |
 | SK-06 | Artificial airway suctioning | partial | 0/7/4 | 3/4/1 | 2/0/0 | 3 |
 | SK-07 | Ventilator safety checks | partial | 0/6/4 | 0/4/2 | 2/2/1 | 3 |
 | SK-08 | Oxygen delivery devices | partial | 0/6/4 | 0/7/0 | 4/0/0 | 3 |
@@ -36,26 +36,47 @@ Columns: sections full/partial/local; checklist items sourced/partial/local; sou
 | SK-10 | Enteral feeding | partial | 0/6/4 | 1/3/2 | 2/2/1 | 3 |
 | SK-11 | Nasogastric tube care | partial | 0/4/3 | 0/4/1 | 0/2/1 | 2 |
 | SK-12 | Urinary catheter care | partial | 3/4/3 | 6/1/1 | 1/0/0 | 3 |
-| SK-13 | Chest drain monitoring | unsupported | 0/0/1 | 0/0/3 | 0/0/2 | 1 |
+| SK-13 | Chest drain monitoring | partial | 0/8/3 | 0/7/0 | 1/0/2 | 4 |
 | SK-14 | Pressure injury prevention | partial | 0/7/2 | 0/6/0 | 0/2/0 | 3 |
 | SK-15 | Patient repositioning | partial | 0/4/2 | 0/4/2 | 1/1/0 | 2 |
-| SK-16 | Safe patient mobilization | unsupported | 0/0/1 | 0/0/3 | 0/2/0 | 2 |
-| SK-17 | CRRT circuit monitoring | unsupported | 0/4/1 | 0/3/2 | 0/1/1 | 2 |
+| SK-16 | Safe patient mobilization | partial | 0/7/2 | 4/2/2 | 1/2/0 | 4 |
+| SK-17 | CRRT circuit monitoring | partial | 0/5/4 | 0/5/2 | 1/1/2 | 4 |
 | SK-18 | ECG monitoring | partial | 0/4/3 | 0/5/2 | 0/1/2 | 2 |
 | SK-19 | Defibrillator safety | partial | 0/3/5 | 0/4/2 | 1/0/1 | 3 |
-| SK-20 | Intrahospital patient transport | unsupported | 0/0/1 | 0/0/3 | 0/0/1 | 1 |
+| SK-20 | Intrahospital patient transport | partial | 0/9/3 | 8/0/1 | 1/0/0 | 4 |
 | SK-21 | Infection prevention (standard precautions) | partial | 0/4/3 | 0/5/0 | 0/1/2 | 2 |
 | SK-22 | Medication infusion pump safety | partial | 1/2/4 | 4/2/1 | 2/0/0 | 2 |
 | SK-23 | Sedation assessment | partial | 0/4/3 | 0/5/1 | 0/1/0 | 2 |
 | SK-24 | Neurological assessment | partial | 0/5/3 | 0/6/0 | 0/1/0 | 2 |
 | SK-25 | Pain assessment | partial | 0/7/2 | 0/6/1 | 1/2/0 | 2 |
 
+## Evidence recovery (Phase 8, Step 1)
+Attempted for the five previously unsupported skills, using only the owner's listed locations and normal fetches. **No access control was bypassed.**
+| Skill | Result | What was read | Remaining gap |
+|---|---|---|---|
+| SK-05 Tracheostomy care | **Still unsupported** | NCBI Bookshelf NBK596713 returned a browser-verification (reCAPTCHA) page; Open RN and NSW ACI pages returned HTTP 403. Only ICS 2026 recommendation 60 (tracheostomy spares for transfer) is usable, as a partial statement | all care and emergency content; needs a person to retrieve the Open RN chapter or an approved copy of the AARC/ACI/NTSP material |
+| SK-13 Chest drain monitoring | **Unsupported to partial** | NBK594490 blocked as above. Recovered from the BTS Clinical Statement on pleural procedures (Thorax 2023; practice points on insertion, bottle/underwater-seal set-up and suction, full text): system below insertion site, upright, water seal, ANTT, daily checks and observation chart, no clamping of a bubbling drain without specialist supervision, controlled drainage and re-expansion pulmonary oedema, suction avoidance and prescription | troubleshooting, bubbling interpretation, removal, ICU surgical/trauma drains; licence line "No commercial re-use" |
+| SK-16 Safe mobilization | **Unsupported to partial** | Hodgson 2014 consensus (CC BY 4.0, full text; Figures 2-5 are images and were not read): airway/oxygen checks before each episode, FiO2 below 0.6, SpO2 above 90%, respiratory rate below 30, consult the experienced team at several limits, vasoactive drugs not an absolute contraindication and no agreed dose threshold | cardiovascular/neurological/other thresholds (in the unread figures); dated; ICU Liberation material needs permission |
+| SK-17 CRRT circuit monitoring | **Unsupported to partial** | Alberta Health Services Dialyzing Wisely CRRT alarm pathway (Jan 2025, read in full; PrisMax-specific; "according to local practice"): check the patient first, do not use override to clear alarms, access/return/flow/bag alarm checks, return blood and document when alarms cannot be managed. Baxter's Prismaflex manual URL now redirects to the Vantive site and was not read; no manufacturer manual was obtained | machine operation, priming, citrate, cross-manufacturer standard; licence of the AHS file unstated |
+| SK-20 Patient transport | **Unsupported to partial (best recovered)** | ICS Guidance on the Transfer of the Critically Ill Adult, 5th edition (22 April 2026): numbered recommendations 1-88 and Appendix 7 intra-hospital checklist read in full text: stabilise before transfer, intubate for airway/ventilatory/neuro compromise, access and infusion supply, harness and stowage, monitoring standards and cable umbilicus, risk assessment and two escorts for higher risk, training, checklists, documentation and multidisciplinary handover | chapter 23 (emergencies/deterioration), appendices on equipment/medication/oxygen; UK scope; copyright Intensive Care Society |
+
+No skill was raised to `evidence_status = supported`. 24 of 25 drafts are partial; one (tracheostomy) remains unsupported. New sources are in `content/drafts/skills/NEW_SOURCES.csv` (read or not read, with licence class): `N-ICS-TRANSFER-2026`, `N-BTS-PCS-2023`, `N-HODGSON-2014`, `N-AHS-CRRT-ALARM-2025`, and the unread `N-NCBI-OPENRN-TRACH`, `N-NCBI-OPENRN-CHEST`, `N-OPENRN-ADV-PDF`, `N-ACI-TRACH`, `N-BAXTER-PRISMAFLEX`.
+
+### Licensing checks for the new sources
+| Source | Licence found | Consequence |
+|---|---|---|
+| ICS transfer guidance 2026 | copyright Intensive Care Society; no reuse statement on the file | paraphrase only; permission needed to reproduce (no enquiry sent) |
+| BTS clinical statement 2023 | "No commercial re-use" | paraphrase and cite only; cannot be adapted into commercial content |
+| Hodgson 2014 | CC BY 4.0 (and CC0 for the data) | reuse with attribution is allowed |
+| AHS Dialyzing Wisely pathway | none on the file | verify before reproducing |
+| Open RN chapters / Advanced Skills | CC BY 4.0 per collection, but not retrievable by automated tools | owner/person with a browser must retrieve them |
+
 ## Evidence sources actually read
 * **Re-read in this phase (full text):** CDC/HICPAC 2011 intravascular catheter guideline (peripheral, central, dressing and hand-hygiene recommendations; PDF text-extracted; page footer "Last update: October 2017") and CDC/HICPAC 2009 CAUTI guideline recommendation sections I-III (PDF footer "Last update: June 6, 2019"). The CAUTI guideline was added as `N-CDC-CAUTI-2009` in `content/drafts/skills/NEW_SOURCES.csv`.
 * **Carried from Phases 2-3 (statements traced in the topic drafts under `content/drafts/batch-*`):** AARC suctioning, oxygen and patient-ventilator CPGs, SHEA CLABSI and VAP 2022, ESICM shock/EEN/ARDS, ERC 2025 ALS/BLS/post-resuscitation, ISMP high-alert list, FDA infusion-pump page, NICE CG32/NG24 (partial), NHS NG-tube alert (partial), Open RN ECG chapter and transfusion checklist (partial), SCCM PADIS (statements), RCP NEWS2, GCS aid, CPOT review, KDIGO 2012 (summary of statements), NPIAP/EPUAP/PPPIA 2026 (abridged).
 * **Could not be read (research tool blocked or paywalled):** Open RN Nursing Skills and Advanced Skills publisher pages (HTTP 403), AARC tracheostomy CPG, INS Infusion Therapy Standards (copyright), AHA 2025, BSH acute transfusion reactions, ASPEN, AACN alerts, BTS pleural guideline, ICS transfer guidance.
 
-## Missing references that would unlock the unsupported skills (priority order)
+## Missing references that would unlock further skills (priority order)
 1. **Open RN Nursing Skills 2e and Advanced Skills (CC BY 4.0, reuse with attribution):** a permissive source for tracheostomy care, chest drain monitoring, peripheral IV, NG tubes and transfusion procedure steps. It needs a browser session or the NCBI Bookshelf copy; image licences differ ("except where otherwise noted").
 2. AARC tracheostomy CPG (cite-only; permission to reproduce).
 3. INS Standards of Practice for peripheral/central line technique (permission required).

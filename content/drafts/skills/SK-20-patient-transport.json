@@ -9,30 +9,182 @@
  "title": "Intrahospital patient transport",
  "category": "skin-mobility-transport",
  "topic_drafts": [],
- "evidence_status": "unsupported",
- "license_status": "unassessed",
+ "evidence_status": "partial",
+ "license_status": "permission_required",
  "sources": [
   {
-   "id": "N-ICS-TRANSFER",
-   "read": "not_read",
-   "use": "candidate: Intensive Care Society transfer guidance (not registered, not read)"
+   "id": "N-ICS-TRANSFER-2026",
+   "read": "full",
+   "use": "ICS Guidance on the Transfer of the Critically Ill Adult, 5th edition (22 April 2026): numbered recommendations 1-88 and Appendix 7 read in full text; UK guidance"
   }
  ],
  "objectives": [
-  "Know that no transport content is drafted and why."
+  "Prepare and stabilise the patient before transfer and use the unit's checklist.",
+  "Maintain monitoring and security of patient and equipment during transfer.",
+  "Document the transfer and hand over to the receiving team."
  ],
  "prerequisites": [
   "Ventilator safety checks (SK-07)",
-  "ECG monitoring (SK-18)"
+  "ECG monitoring (SK-18)",
+  "Arterial line care (SK-01)"
  ],
  "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Critically ill patients undergoing transfer are managed as critical care patients, and identical standards apply to intra- and inter-hospital transfers (ICS recommendations 1-2).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Resuscitate and stabilise the patient before transfer to reduce the physiological disturbance of movement; patients with actual or anticipated airway, ventilatory or neurological compromise should be intubated and ventilated before transfer (recommendations 58-59).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    },
+    {
+     "text": "Secure the patient to the transfer trolley with a harness or belt system and stow all portable equipment securely (recommendations 77, 79).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    },
+    {
+     "text": "Keep all monitors, ventilator displays and syringe drivers visible to accompanying staff and tie monitoring cables together to form an umbilicus (recommendations 74-75).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    },
+    {
+     "text": "Maintain patient privacy, dignity and temperature (recommendation 66).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Staff undertaking transfers must have received specific training and competencies and must not transfer unsupervised until these are met (recommendations 24-25); a risk assessment is completed beforehand and higher-risk patients need two appropriately trained clinical escorts (recommendations 53-55).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Who may escort, the risk-assessment form and the unit's checklist are set by local policy; the guidance is UK (NHS) and is not law elsewhere.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "equipment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Take a minimum of two peripheral venous or one multi-lumen central venous access; medication boluses and infusions should be available for at least twice the planned duration of transfer; with a tracheostomy, take spares in line with the National Tracheostomy Safety Project (recommendations 60-61, 65).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
+  "preparation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Use a checklist for each stage of the transfer; acute hospitals should have an organisation-wide standardised checklist for intra-hospital transfers (recommendations 69-70). The ICS example covers team, airway and breathing, circulation, neurology, GI/GU, medication, packaging, identification wristbands, monitoring and a ready-to-leave check (Appendix 7; adapted from local checklists).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Assess and document neurological status regularly (every 15 minutes for neurosciences patients, every 30-60 minutes for others) (recommendation 63).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
   "procedure": {
    "support": "local_protocol",
    "items": [
     {
-     "text": "Preparation, monitoring and handover for transport follow the unit's approved transfer procedure. No source for the steps has been read.",
+     "text": "Moving, lifting and connecting equipment, and the exact order of checks, follow the unit's transfer procedure and training.",
      "support": "local_protocol",
      "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Apply minimum standards of continuous monitoring in every intra- and inter-hospital transfer (recommendation 73); the example checklist lists ECG, SpO2 and non-invasive blood pressure for all patients and capnography, with or without invasive arterial pressure, for intubated patients (Appendix 7).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Management of deterioration, emergencies and death during transfer (ICS chapter 23) was not read; follow the unit's transfer escalation protocol and call for help.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "documentation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Maintain a record of observations and events for every transfer and complete intra-hospital transfers in the patient's notes; copy or transmit the notes and use a transfer letter or handover document (recommendations 64, 76, 81-82).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
+  "communication": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "A clinical handover must occur between referring and receiving teams, and on arrival a formal multidisciplinary handover should occur rather than separate medical and nursing conversations (recommendations 67, 84-85); keep patients and next of kin informed at every stage (recommendation 48).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
     }
    ]
   }
@@ -40,43 +192,104 @@
  "checklist": [
   {
    "phase": "preparation",
-   "text": "Complete the unit's transport checklist before leaving the unit.",
+   "text": "Complete the unit's transfer risk assessment and standardised intra-hospital checklist.",
    "critical": true,
-   "support": "local_protocol",
-   "sources": []
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
+  },
+  {
+   "phase": "preparation",
+   "text": "Confirm the escorting team is trained, available and briefed.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
+  },
+  {
+   "phase": "preparation",
+   "text": "Confirm the patient is resuscitated and stabilised, and that airway, ventilation and neurological compromise have been addressed before leaving.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
+  },
+  {
+   "phase": "preparation",
+   "text": "Confirm venous access, two identification wristbands and infusions sufficient for at least twice the planned duration.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Secure the patient with the harness or belt and stow all equipment securely.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Apply the minimum continuous monitoring; keep monitors and pumps visible and tie cables together.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Record observations at the unit's interval, and assess neurological status at the guidance's intervals.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
   },
   {
    "phase": "escalation",
-   "text": "Know whom to call for deterioration during transport per unit protocol.",
+   "text": "Call for help and follow the unit's transfer escalation protocol if the patient deteriorates.",
    "critical": true,
    "support": "local_protocol",
    "sources": []
   },
   {
    "phase": "documentation",
-   "text": "Record the transport and handover per unit standard.",
+   "text": "Complete the transfer record and give a multidisciplinary handover on arrival.",
    "critical": false,
-   "support": "local_protocol",
-   "sources": []
+   "support": "sourced",
+   "sources": [
+    "N-ICS-TRANSFER-2026"
+   ]
   }
  ],
  "gaps": [
-  "Entire clinical content: no transfer guideline accessed. The ICS transfer guidance is a candidate to register and read."
+  "The guidance is UK (NHS) and covers inter-hospital transfer too; the ICU nurse's role on a given unit may differ.",
+  "Chapter 23 (emergencies, deterioration and death during transfer), equipment and medication appendices, and the MRI chapter: not read.",
+  "Oxygen reserve calculation (Appendix 1): not reproduced; device-specific.",
+  "The example checklist is adapted from local checklists; the unit's own checklist governs."
  ],
  "permissions": [
-  "Not determined."
+  "ICS guidance: copyright Intensive Care Society, no reuse statement on the file; permission required to reproduce; paraphrase only."
  ],
  "references": [
   {
-   "id": "N-ICS-TRANSFER",
-   "title": "Guidance on transfer of the critically ill adult (candidate)",
+   "id": "N-ICS-TRANSFER-2026",
+   "title": "Guidance on the Transfer of the Critically Ill Adult, 5th edition (86 pages)",
    "publisher": "Intensive Care Society",
-   "version": "Not pinned",
-   "url": "https://www.ics.ac.uk/",
+   "version": "Publication date 22 April 2026; version 3 of 30 June 2026",
+   "url": "https://ics.ac.uk/asset/75861CB3%2DB6B4%2D4E78%2D80F22B290BC05015/",
    "accessed": "2026-11-15",
-   "read": "not_read",
-   "licence_class": "RED (unverified)",
-   "permission_required": "Verify"
+   "read": "full",
+   "licence_class": "RED (copyright Intensive Care Society; no reuse statement)",
+   "permission_required": "Yes (reproduction)"
   }
  ]
 }

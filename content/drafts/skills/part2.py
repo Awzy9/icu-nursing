@@ -60,17 +60,6 @@ write(12,"urinary-catheter-care",dict(title="Urinary catheter care", category="e
  gaps=["Insertion step sequence: not in the sections read.","Specimen collection and removal technique sections: not read in Phase 7.","Critical-care-specific urine-output monitoring detail: see topic D04-T03."],
  permissions=["CDC PDF: no reuse statement on the file; verify before reproducing."],
  references=[ref("Guideline for Prevention of Catheter-Associated Urinary Tract Infections (2009)","CDC/HICPAC",2009,CAUTI and "https://www.cdc.gov/infection-control/media/pdfs/Guideline-CAUTI-H.pdf")]))
-# 13 chest drain
-write(13,"chest-drain-monitoring",dict(title="Chest drain monitoring", category="elimination-drains", topic_drafts=[],
- evidence_status="unsupported", license_status="unassessed",
- sources=[src("N-BTS-PLEURAL","not_read","candidate source: to register and read"),src("S-OPENRN-ADV","not_read","Open RN Advanced Skills covers chest tube systems (CC BY): publisher page returned 403")],
- objectives=["Know that no chest drain content is drafted and where candidate sources lie."],
- prerequisites=["Respiratory assessment"],
- sections={"procedure":sec("local_protocol",LOCAL("Chest drain system set-up, monitoring and emergencies follow the unit's approved procedure and the inserting team's instructions. No source for the steps has been read."))},
- checklist=[c("assessment","Check the patient's breathing and the drain system against the unit's procedure.",True,"local_protocol"),c("escalation","Call for help for respiratory distress, sudden change in drainage or a disconnected system per unit protocol.",True,"local_protocol"),c("documentation","Record drainage, air leak status and patient response per unit standard.",False,"local_protocol")],
- gaps=["Entire clinical content: no guideline or textbook text was accessible in Phase 7."],
- permissions=["Open RN (CC BY): reuse with attribution once readable.","BTS: permission to be determined."],
- references=[]))
 # 14 pressure injury prevention
 write(14,"pressure-injury-prevention",dict(title="Pressure injury prevention", category="skin-mobility-transport", topic_drafts=["D07-T04"],
  evidence_status="partial", license_status="permission_required",
@@ -108,33 +97,6 @@ write(15,"patient-repositioning",dict(title="Patient repositioning", category="s
  gaps=["Prone positioning procedure: not covered by the sources read.","Manual-handling standards: not read."],
  permissions=["NPIAP/EPUAP/PPPIA guideline: permission required."],
  references=[ref("Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide","NPIAP/EPUAP/PPPIA",2026,"https://npiap.com/")]))
-# 16 safe mobilisation
-write(16,"safe-patient-mobilization",dict(title="Safe patient mobilization", category="skin-mobility-transport", topic_drafts=[],
- evidence_status="unsupported", license_status="permission_required",
- sources=[src("S-SCCM-ABCDEF","partial","ICU Liberation (A-F) bundle page: RED licence; permission required"),src("S-SCCM-PADIS","partial","PADIS: summary only")],
- objectives=["Know that no mobilisation content is drafted and why."],
- prerequisites=["Pressure injury prevention (SK-14)"],
- sections={"procedure":sec("local_protocol",LOCAL("Early mobilisation and safe-handling steps follow the unit's approved procedure, the physiotherapy plan and manual-handling policy. No source for safety criteria or steps has been read."))},
- checklist=[c("preparation","Confirm the mobilisation plan and safety criteria set by your unit and physiotherapist.",True,"local_protocol"),c("escalation","Stop and call for help if the patient becomes unstable.",True,"local_protocol"),c("documentation","Record activity and tolerance per unit standard.",False,"local_protocol")],
- gaps=["Safety criteria for starting and stopping mobilisation: no accessible guideline text.","Early mobility evidence: ICU Liberation material requires permission."],
- permissions=["SCCM ICU Liberation material: permission required (commercial use)."],
- references=[]))
-# 17 CRRT circuit monitoring
-write(17,"crrt-circuit-monitoring",dict(title="CRRT circuit monitoring", category="renal-support", topic_drafts=["D04-T09"],
- evidence_status="unsupported", license_status="permission_required",
- sources=[src("S-KDIGO-AKI-2012","partial","KDIGO 2012: prescribing guideline; summary of Section 5 statements read"),src("S-CHS-CRRT","not_read","hospital procedure: not accessed")],
- objectives=["Know the prescription and check that delivered treatment matches it.","Monitor the patient and report interruptions and bleeding.","Understand that circuit and alarm management needs manufacturer documentation."],
- prerequisites=["Acute kidney injury","Infection prevention (SK-21)"],
- sections={
-  "responsibilities":sec("partial",it("Know the prescription (modality, dose, fluid-balance goal, anticoagulation); report interruptions and under-delivery because KDIGO recommends frequent assessment of delivered dose.","partial","S-KDIGO-AKI-2012")),
-  "safety":sec("partial",it("Confirm the chest radiograph required after internal jugular or subclavian catheter placement has been done and reviewed before first use (KDIGO).","partial","S-KDIGO-AKI-2012"),it("If heparin-induced thrombocytopenia is suspected or confirmed, all heparin must stop and the prescriber is told immediately (extent in flushes is local policy).","partial","S-KDIGO-AKI-2012")),
-  "procedure":sec("local_protocol",LOCAL("Circuit set-up, priming, filter, alarm and troubleshooting steps follow the manufacturer's documentation and the unit's competency programme; no source for them was read.")),
-  "monitoring":sec("partial",it("Monitor haemodynamics, temperature, fluid balance, electrolytes, acid-base results and bleeding.","partial","S-KDIGO-AKI-2012")),
-  "escalation":sec("partial",it("Report bleeding, suspected HIT, access problems, haemodynamic instability and interruptions.","partial","S-KDIGO-AKI-2012"))},
- checklist=[c("preparation","Confirm the prescription (modality, dose, fluid-balance goal, anticoagulant) before and during treatment.",True,"partial","S-KDIGO-AKI-2012"),c("assessment","Monitor haemodynamics, temperature, fluid balance and bleeding.",True,"partial","S-KDIGO-AKI-2012"),c("procedure","Operate and troubleshoot the circuit only as the manufacturer's documentation and your competency approval allow.",True,"local_protocol"),c("escalation","Report interruptions, under-delivery, bleeding and suspected HIT.",True,"partial","S-KDIGO-AKI-2012"),c("documentation","Record delivered dose, interruptions and fluid balance.",False,"local_protocol")],
- gaps=["Machine, circuit, filter and alarm management, priming, citrate monitoring, drug dosing, weaning, troubleshooting: need manufacturer documentation and clinical authorship.","KDIGO 2026 update is a draft; the 2012 guideline is over ten years old."],
- permissions=["Manufacturer documentation: permission required.","KDIGO: verify reuse terms."],
- references=[ref("KDIGO Clinical Practice Guideline for Acute Kidney Injury","KDIGO",2012,"https://kdigo.org/guidelines/acute-kidney-injury/")]))
 # 18 ECG monitoring
 write(18,"ecg-monitoring",dict(title="ECG monitoring", category="cardiac-resuscitation", topic_drafts=["D02-T02"],
  evidence_status="partial", license_status="permission_required",
@@ -172,17 +134,6 @@ write(19,"defibrillator-safety",dict(title="Defibrillator safety", category="car
  gaps=["Energy settings, drug therapy, post-arrest care, cardioversion and children: not covered.","AHA 2025 guideline: not read.","Authorised-role requirements: local policy."],
  permissions=["ERC text: commercial agreement required.","AHA guidelines: permission required (assumed)."],
  references=[ref("European Resuscitation Council Guidelines 2025: Adult Advanced Life Support","ERC",2025,"https://www.erc.edu/")]))
-# 20 transport
-write(20,"patient-transport",dict(title="Intrahospital patient transport", category="skin-mobility-transport", topic_drafts=[],
- evidence_status="unsupported", license_status="unassessed",
- sources=[src("N-ICS-TRANSFER","not_read","candidate: Intensive Care Society transfer guidance (not registered, not read)")],
- objectives=["Know that no transport content is drafted and why."],
- prerequisites=["Ventilator safety checks (SK-07)","ECG monitoring (SK-18)"],
- sections={"procedure":sec("local_protocol",LOCAL("Preparation, monitoring and handover for transport follow the unit's approved transfer procedure. No source for the steps has been read."))},
- checklist=[c("preparation","Complete the unit's transport checklist before leaving the unit.",True,"local_protocol"),c("escalation","Know whom to call for deterioration during transport per unit protocol.",True,"local_protocol"),c("documentation","Record the transport and handover per unit standard.",False,"local_protocol")],
- gaps=["Entire clinical content: no transfer guideline accessed. The ICS transfer guidance is a candidate to register and read."],
- permissions=["Not determined."],
- references=[]))
 # 21 infection prevention
 write(21,"infection-prevention",dict(title="Infection prevention (standard precautions)", category="safety-infection-devices", topic_drafts=["D06-T04"],
  evidence_status="partial", license_status="unassessed",

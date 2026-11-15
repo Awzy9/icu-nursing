@@ -92,17 +92,6 @@ write(4,"endotracheal-tube-care",dict(title="Endotracheal tube care", category="
  gaps=["Cuff target range and interval: unit decision; AARC range is narrative, not graded.","Securement method, restraint policy, who re-secures: unsourced.","Extubation criteria and cuff-leak tests: out of scope of sources read."],
  permissions=["AARC CPGs: cite only; reproduction needs permission.","ERC text: commercial agreement required.","NPIAP guide: permission required."],
  references=[ref("AARC Clinical Practice Guideline: Patient-Ventilator Assessment","AARC",2024,"https://www.aarc.org/resources/clinical-resources/clinical-practice-guidelines/")]))
-# 5 ------------------------------------------------------------------------------------------------
-write(5,"tracheostomy-care",dict(title="Tracheostomy care", category="airway-ventilation", topic_drafts=[],
- evidence_status="unsupported", license_status="permission_required",
- sources=[src("S-AARC-TRACH","not_read","AARC CPG on tracheostomy in the acute care setting (2021): identified, not read; cite-only"),src("S-OPENRN-SKILLS","not_read","Open RN Nursing Skills (CC BY): publisher page returned 403 to the research tool")],
- objectives=["Know where authoritative tracheostomy guidance sits and that no content is yet drafted."],
- prerequisites=["Suctioning (SK-06)","Endotracheal tube care (SK-04)"],
- sections={"procedure":sec("local_protocol",LOCAL("Tracheostomy care, inner-cannula care, tube changes and emergencies follow the unit's approved procedure and the surgical/respiratory team's instructions. No source for the steps has been read."))},
- checklist=[c("preparation","Confirm the tube type and the unit's emergency equipment arrangement before any care.",True,"local_protocol"),c("escalation","Call for help immediately for any airway emergency per unit protocol.",True,"local_protocol"),c("documentation","Record care given and the patient's response per unit standard.",False,"local_protocol")],
- gaps=["Entire clinical content: the AARC 2021 guideline and Open RN Nursing Skills were not readable in Phase 7. No bedside procedure was written.","Emergency management (dislodged or blocked tube): needs a licensed, reviewed source."],
- permissions=["AARC CPG: permission required for reproduction.","Open RN (CC BY): reuse with attribution once text can be read and image licences checked."],
- references=[ref("AARC Clinical Practice Guideline: Management of Adult Patients With Tracheostomy in the Acute Care Setting","AARC",2021,"https://www.aarc.org/resources/clinical-resources/clinical-practice-guidelines/")]))
 # 6 ------------------------------------------------------------------------------------------------
 write(6,"suctioning",dict(title="Artificial airway suctioning", category="airway-ventilation", topic_drafts=["D01-T11"],
  evidence_status="partial", license_status="permission_required",

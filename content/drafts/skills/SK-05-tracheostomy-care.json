@@ -18,19 +18,46 @@
    "use": "AARC CPG on tracheostomy in the acute care setting (2021): identified, not read; cite-only"
   },
   {
+   "id": "N-NCBI-OPENRN-TRACH",
+   "read": "not_read",
+   "use": "Open RN via NCBI Bookshelf NBK596713: browser-verification page; not read"
+  },
+  {
+   "id": "N-ACI-TRACH",
+   "read": "not_read",
+   "use": "NSW ACI acute tracheostomy guide: HTTP 403; not read"
+  },
+  {
    "id": "S-OPENRN-SKILLS",
    "read": "not_read",
-   "use": "Open RN Nursing Skills (CC BY): publisher page returned 403 to the research tool"
+   "use": "Open RN Nursing Skills publisher page: HTTP 403; not read"
+  },
+  {
+   "id": "N-ICS-TRANSFER-2026",
+   "read": "full",
+   "use": "only rec 60 (tracheostomy spares during transfer) is relevant"
   }
  ],
  "objectives": [
-  "Know where authoritative tracheostomy guidance sits and that no content is yet drafted."
+  "Know where authoritative tracheostomy guidance sits and that no care content is yet drafted."
  ],
  "prerequisites": [
   "Suctioning (SK-06)",
   "Endotracheal tube care (SK-04)"
  ],
  "sections": {
+  "equipment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "For a transfer, take appropriate tracheostomy spares in line with the National Tracheostomy Safety Project (ICS 2026 recommendation 60; UK).",
+     "support": "partial",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    }
+   ]
+  },
   "procedure": {
    "support": "local_protocol",
    "items": [
@@ -66,12 +93,15 @@
   }
  ],
  "gaps": [
-  "Entire clinical content: the AARC 2021 guideline and Open RN Nursing Skills were not readable in Phase 7. No bedside procedure was written.",
-  "Emergency management (dislodged or blocked tube): needs a licensed, reviewed source."
+  "Entire care content: the Open RN chapters on NCBI Bookshelf (NBK596713) return a browser-verification page and the publisher pages return HTTP 403 to automated tools; no workaround was attempted.",
+  "AARC 2021 tracheostomy CPG (cite-only), NSW ACI guide and NTSP algorithms: not read.",
+  "Emergency management (dislodged or blocked tube): needs a reviewed, licensed source."
  ],
  "permissions": [
   "AARC CPG: permission required for reproduction.",
-  "Open RN (CC BY): reuse with attribution once text can be read and image licences checked."
+  "Open RN (CC BY): reuse with attribution once a person can retrieve the text; check image licences.",
+  "NSW ACI / NTSP: verify reuse terms.",
+  "ICS guidance: copyright Intensive Care Society; paraphrase only."
  ],
  "references": [
   {
@@ -86,6 +116,28 @@
    "permission_required": "Verify"
   },
   {
+   "id": "N-NCBI-OPENRN-TRACH",
+   "title": "NBK596713 (tracheostomy content)",
+   "publisher": "Open RN via NCBI Bookshelf",
+   "version": "Not read",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK596713/",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "GREEN (conditional; CC BY 4.0 per collection)",
+   "permission_required": "No (attribution)"
+  },
+  {
+   "id": "N-ACI-TRACH",
+   "title": "Acute tracheostomy clinical practice guide and emergency plan",
+   "publisher": "NSW Agency for Clinical Innovation",
+   "version": "Not read",
+   "url": "https://aci.health.nsw.gov.au/networks/icnsw/clinicians/acute-tracheostomy",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "YELLOW (NSW Government; verify)",
+   "permission_required": "Verify"
+  },
+  {
    "id": "S-OPENRN-SKILLS",
    "title": "Nursing Skills 2e",
    "publisher": "Open RN",
@@ -95,6 +147,17 @@
    "read": "not_read",
    "licence_class": "GREEN (conditional)",
    "permission_required": "No"
+  },
+  {
+   "id": "N-ICS-TRANSFER-2026",
+   "title": "Guidance on the Transfer of the Critically Ill Adult, 5th edition (86 pages)",
+   "publisher": "Intensive Care Society",
+   "version": "Publication date 22 April 2026; version 3 of 30 June 2026",
+   "url": "https://ics.ac.uk/asset/75861CB3%2DB6B4%2D4E78%2D80F22B290BC05015/",
+   "accessed": "2026-11-15",
+   "read": "full",
+   "licence_class": "RED (copyright Intensive Care Society; no reuse statement)",
+   "permission_required": "Yes (reproduction)"
   }
  ]
 }

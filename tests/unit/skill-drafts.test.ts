@@ -23,9 +23,9 @@ describe("the 25 clinical skill drafts", () => {
       expect(["original", "cleared"]).not.toContain(d.license_status);
     }
   });
-  it("declare gaps and permission notes, and never write bedside steps for skills without sources", () => {
+  it("declare gaps and permission notes, and never write bedside steps for the skill that still has no usable source", () => {
     for (const d of drafts) { expect(d.gaps.length, d.skill_id).toBeGreaterThan(0); expect(d.permissions.length, d.skill_id).toBeGreaterThan(0); }
-    for (const n of [5, 13, 16, 20]) {
+    for (const n of [5]) {
       const d = drafts.find((x) => x.number === n)!;
       expect(d.evidence_status).toBe("unsupported");
       expect(d.checklist.every((c) => c.support === "local_protocol"), d.skill_id).toBe(true);
