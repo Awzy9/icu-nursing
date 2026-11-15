@@ -19,3 +19,13 @@ MD-17,Adenosine,antiarrhythmics-cardiac,False,L-ADENOSINE,7,1,4,5,3,3
 MD-18,Magnesium sulfate,insulin-electrolytes-fluids,False,L-MAGNESIUM,5,1,4,5,3,3
 MD-19,Potassium chloride,insulin-electrolytes-fluids,False,L-POTASSIUM,7,1,3,5,4,3
 MD-20,Calcium gluconate,insulin-electrolytes-fluids,False,L-CALCIUM,6,1,4,5,4,3
+MD-21,Sodium bicarbonate,insulin-electrolytes-fluids,False,L-BICARBONATE,5,2,4,5,3,3
+MD-22,Piperacillin-tazobactam,anti-infectives,False,L-PIPTAZO,6,2,4,5,3,4
+MD-23,Meropenem,anti-infectives,False,L-MEROPENEM,7,2,4,5,3,3
+MD-24,Vancomycin,anti-infectives,False,L-VANCOMYCIN,5,2,4,5,3,4
+MD-25,Ceftriaxone,anti-infectives,False,L-CEFTRIAXONE,4,2,4,5,3,4
+MD-26,Cefazolin,anti-infectives,False,L-CEFAZOLIN,6,2,4,5,3,3
+MD-27,Azithromycin,anti-infectives,False,L-AZITHROMYCIN,6,2,4,5,3,3
+MD-28,Linezolid,anti-infectives,False,L-LINEZOLID,5,2,4,5,3,4
+MD-29,Gentamicin,anti-infectives,False,L-GENTAMICIN,5,2,4,5,4,4
+MD-30,Phenylephrine,vasoactives-inotropes,True,L-PHENYLEPHRINE,6,2,4,5,3,3

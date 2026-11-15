@@ -14,6 +14,7 @@
  "high_alert_note": "Named as a high-risk infusion example in the FDA infusion pump page; the local high-alert list governs.",
  "summary": "Opioid agonist for management of pain severe enough to require an opioid when alternatives are inadequate. The boxed warning covers addiction, life-threatening respiratory depression, interactions with benzodiazepines and other CNS depressants, and neonatal opioid withdrawal syndrome.",
  "batch": 1,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",

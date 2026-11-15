@@ -10,7 +10,7 @@ export interface MedItem { text: string; support: Support; sources: string[] }
 export interface MedicationDraft {
   med_id: string; number: number; name: string; drug_class: string; category: string; high_alert: boolean; high_alert_note: string; summary: string; batch: number;
   status: string; origin: string; clinically_reviewed: boolean; pharmacist_reviewed: boolean; clinical_reviewers: unknown[]; banner: string;
-  evidence_status: string; license_status: string; label_source: string; label_ref: string; jurisdiction_note: string;
+  evidence_type_note: string; evidence_status: string; license_status: string; label_source: string; label_ref: string; jurisdiction_note: string;
   sources: { id: string; read: "full" | "partial" | "not_read"; use: string }[];
   sections: Record<string, { support: string; items: MedItem[] }>;
   monitoring: { kind: string; text: string; critical: boolean; support: Support; sources: string[] }[];
@@ -47,6 +47,7 @@ export function validateMedicationDraft(d: MedicationDraft, known: Set<string>, 
   if (!d.label_source || !d.label_ref || !known.has(d.label_ref)) add("label", `${id}: a regulator label source recorded in LABEL_SOURCES.csv is required`);
   if (!d.jurisdiction_note || !/only/i.test(d.jurisdiction_note)) add("jurisdiction", `${id}: a jurisdiction limitation note is required ("... label only ...")`);
   if (typeof d.high_alert !== "boolean" || !d.high_alert_note) add("high_alert", `${id}: high_alert needs an explanatory note stating its basis or that it was not confirmed`);
+  if (!/not a bedside nursing practice guideline/i.test(d.evidence_type_note ?? "")) add("evidence_type", `${id}: evidence_type_note must state that a regulator label is not a bedside nursing practice guideline`);
   if (!d.gaps?.length) add("gaps", `${id}: declare evidence gaps`);
   if (!d.permissions?.length) add("permissions", `${id}: declare permission/licensing notes`);
   for (const k of ["name", "drug_class", "summary"] as const) scan(`${id}.${k}`, d[k] ?? "");

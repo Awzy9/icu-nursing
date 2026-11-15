@@ -14,6 +14,7 @@
  "high_alert_note": "The label carries emphatic warnings about concentration and rapid infusion; whether it is on the local high-alert list was not confirmed on a source read.",
  "summary": "Parenteral potassium for potassium deficiency when oral replacement is not feasible. The label read is a highly concentrated ready-to-use product intended for fluid-restricted patients. Nursing focus: preventing potassium intoxication, cardiac and potassium monitoring and patients predisposed to hyperkalaemia.",
  "batch": 2,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",

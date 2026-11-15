@@ -14,6 +14,7 @@
  "high_alert_note": "Not named in the sources read as high-alert; the institution's list governs.",
  "summary": "Inotrope used for short-term inotropic support in adults with cardiac decompensation due to depressed contractility. Nursing focus: heart rate, blood pressure and rhythm effects, atrial fibrillation, hypersensitivity and sulfite reactions.",
  "batch": 1,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",

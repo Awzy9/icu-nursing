@@ -19,16 +19,16 @@ number,name,category,origin_of_listing,batch,status
 18,Magnesium sulfate,insulin-electrolytes-fluids,master prompt Part 7 (named),2,drafted
 19,Potassium chloride,insulin-electrolytes-fluids,master prompt Part 7 (named),2,drafted
 20,Calcium gluconate,insulin-electrolytes-fluids,master prompt Part 7 (named),2,drafted
-21,Sodium bicarbonate,insulin-electrolytes-fluids,master prompt Part 7 (named),3,planned
-22,Piperacillin-tazobactam,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-23,Meropenem,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-24,Vancomycin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-25,Ceftriaxone,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-26,Cefazolin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-27,Azithromycin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-28,Linezolid,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-29,Gentamicin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,planned
-30,Phenylephrine,vasoactives-inotropes,proposed to reach 50; not in the master list,3,planned
+21,Sodium bicarbonate,insulin-electrolytes-fluids,master prompt Part 7 (named),3,drafted
+22,Piperacillin-tazobactam,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+23,Meropenem,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+24,Vancomycin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+25,Ceftriaxone,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+26,Cefazolin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+27,Azithromycin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+28,Linezolid,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+29,Gentamicin,anti-infectives,master prompt Part 7 ('common ICU antibiotics'); the eight agents are proposed,3,drafted
+30,Phenylephrine,vasoactives-inotropes,proposed to reach 50; not in the master list,3,drafted
 31,Dopamine,vasoactives-inotropes,proposed to reach 50; not in the master list,4,planned
 32,Nicardipine,antiarrhythmics-cardiac,proposed to reach 50; not in the master list,4,planned
 33,Labetalol,antiarrhythmics-cardiac,proposed to reach 50; not in the master list,4,planned

@@ -15,8 +15,9 @@ describe("the 50-medication plan and the drafted batches", () => {
     for (const n of ["Norepinephrine", "Epinephrine", "Vasopressin", "Dobutamine", "Milrinone", "Propofol", "Midazolam", "Dexmedetomidine", "Fentanyl", "Morphine", "Ketamine", "Rocuronium", "Cisatracurium", "Heparin", "Insulin", "Amiodarone", "Adenosine", "Magnesium sulfate", "Potassium chloride", "Calcium gluconate", "Sodium bicarbonate"]) expect(names).toContain(n);
     expect(Math.max(...[...plan.values()].map((p) => p.batch))).toBe(5);
   });
-  it("batches 1 and 2 (20 medications) pass every rule", () => {
-    expect(drafts).toHaveLength(20);
+  it("every drafted batch passes every rule (10 medications per batch)", () => {
+    expect(drafts.length % 10).toBe(0);
+    expect(drafts.length).toBeGreaterThanOrEqual(30);
     expect(validateMedicationSet(drafts, plan)).toEqual([]);
     for (const d of drafts) expect(validateMedicationDraft(d, known, plan), d.med_id).toEqual([]);
   });
@@ -47,6 +48,9 @@ describe("the medication draft validator rejects", () => {
     const b = clone(base); b.clinically_reviewed = true; expect(rules(b)).toContain("review");
     const c = clone(base); b.status = "approved"; expect(rules(b)).toContain("status"); expect(rules(c)).toEqual([]);
     const d = clone(base); d.banner = "Reviewed"; expect(rules(d)).toContain("banner");
+  });
+  it("a missing statement that the evidence is a label and not a nursing guideline", () => {
+    const a = clone(base); a.evidence_type_note = ""; expect(rules(a)).toContain("evidence_type");
   });
   it("dosing content in any text field", () => {
     const a = clone(base); a.sections.safety_alerts!.items[0]!.text = "Run at 2 mcg/kg/min"; expect(rules(a)).toContain("dosing");

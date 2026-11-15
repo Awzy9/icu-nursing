@@ -1,0 +1,217 @@
+{
+ "med_id": "MD-26",
+ "number": 26,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Cefazolin",
+ "drug_class": "Cephalosporin antibacterial",
+ "category": "anti-infectives",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Cephalosporin antibacterial for infections caused by susceptible organisms (the product read is cefazolin in dextrose). Nursing focus: hypersensitivity with penicillin allergy, diarrhoea and prothrombin activity.",
+ "batch": 3,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-CEFAZOLIN",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-CEFAZOLIN",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes cefazolin in dextrose injection as a cephalosporin antibacterial indicated for treatment of infections caused by susceptible isolates in adult and paediatric patients.",
+     "support": "sourced",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Ask about penicillin and other beta-lactam allergy before the first dose and report the history.",
+     "support": "partial",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Cross-hypersensitivity may occur in a proportion of patients with a history of penicillin allergy; if an allergic reaction occurs the drug is discontinued (prescriber decision).",
+     "support": "sourced",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    },
+    {
+     "text": "Serious and occasionally fatal hypersensitivity (anaphylactic) reactions have been reported with cephalosporins, penicillins and other beta-lactams.",
+     "support": "sourced",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    },
+    {
+     "text": "Clostridioides difficile-associated diarrhoea may range from mild diarrhoea to fatal colitis and should be evaluated if diarrhoea occurs.",
+     "support": "sourced",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    },
+    {
+     "text": "Cefazolin may be associated with a fall in prothrombin activity; prothrombin time should be monitored in patients at risk.",
+     "support": "sourced",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label lists hypersensitivity reactions among the serious adverse reactions described.",
+     "support": "sourced",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Stop and call for help for allergic signs; report diarrhoea and any bleeding.",
+     "support": "partial",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Check penicillin and beta-lactam allergy history.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-CEFAZOLIN"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Watch for rash, breathing difficulty and swelling.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-CEFAZOLIN"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review prothrombin time in patients at risk.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "L-CEFAZOLIN"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report allergic signs, persistent diarrhoea or bleeding.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-CEFAZOLIN"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record checks and reactions.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "The label read is a premixed dextrose presentation; vial presentations differ.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}

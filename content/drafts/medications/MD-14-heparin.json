@@ -14,6 +14,7 @@
  "high_alert_note": "Named among the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
  "summary": "Anticoagulant for prophylaxis and treatment of venous thrombosis and pulmonary embolism and other thrombotic conditions. Nursing focus: strength confusion and fatal medication errors, haemorrhage, heparin-induced thrombocytopenia, and monitoring of coagulation, platelets and potassium.",
  "batch": 2,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",

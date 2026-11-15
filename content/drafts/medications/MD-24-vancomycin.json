@@ -1,0 +1,211 @@
+{
+ "med_id": "MD-24",
+ "number": 24,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Vancomycin",
+ "drug_class": "Glycopeptide antibacterial",
+ "category": "anti-infectives",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Antibacterial for serious infections caused by susceptible organisms such as methicillin-resistant staphylococci. Nursing focus: infusion reactions, nephrotoxicity and ototoxicity monitoring.",
+ "batch": 3,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-VANCOMYCIN",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-VANCOMYCIN",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates vancomycin for treatment of serious or severe infections caused by susceptible strains of methicillin-resistant staphylococci and other listed organisms.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Give only as the pharmacy's preparation and the order direct, and stop the infusion and report any infusion reaction.",
+     "support": "partial",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Rapid bolus administration may be associated with exaggerated hypotension, including shock and rarely cardiac arrest; the label says infusion reactions usually stop promptly when the infusion is stopped.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    },
+    {
+     "text": "Systemic vancomycin exposure may result in acute kidney injury, and the risk increases as serum levels rise; the label advises monitoring renal function in all patients, especially those with renal impairment.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    },
+    {
+     "text": "Infusion-related events can occur during or soon after rapid infusion.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes infusion-related events and nephrotoxicity as principal adverse effects.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Stop the infusion and report flushing, hypotension or rash; report falling urine output or rising creatinine.",
+     "support": "partial",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "observe",
+   "text": "Watch for flushing, rash and hypotension during the infusion.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-VANCOMYCIN"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review renal function and drug levels as ordered.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-VANCOMYCIN"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Monitor urine output.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "L-VANCOMYCIN"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Stop the infusion and report an infusion reaction at once.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-VANCOMYCIN"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record reactions and results.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Level monitoring targets and ototoxicity detail: not included.",
+  "Infusion duration and preparation: local protocol.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}

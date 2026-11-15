@@ -14,6 +14,7 @@
  "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
  "summary": "Vasopressor indicated to increase blood pressure in adults with vasodilatory shock who remain hypotensive despite fluids and catecholamines. Nursing focus: cardiac function and fluid/electrolyte monitoring, including after the drug is stopped.",
  "batch": 1,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",
