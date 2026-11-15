@@ -1,5 +1,8 @@
 import { expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { loadSkillDrafts } from "../../scripts/validate-skill-drafts";
+
+const drafts = loadSkillDrafts();
 
 const serious = async (page: Page) => {
   await page.waitForFunction(() => document.title.length > 0);
@@ -117,5 +120,24 @@ test.describe("skills library", () => {
     await page.goto("/en/skills");
     if (isMobile || (page.viewportSize()?.width ?? 0) < 1280) await page.getByRole("button", { name: "Menu" }).click();
     await expect(page.getByRole("navigation", { name: "Main navigation" }).getByRole("link", { name: "Skills", exact: true })).toHaveAttribute("aria-current", "page");
+  });
+
+  test("no clinical skill draft appears in the skills list, search, detail routes, library search, sitemap or page source", async ({ page, request }) => {
+    expect(drafts).toHaveLength(25);
+    const html = await (await request.get("/en/skills")).text();
+    const map = await (await request.get("/sitemap.xml")).text();
+    for (const d of drafts) {
+      expect(html, d.skill_id).not.toContain(d.title);
+      expect(map).not.toContain(d.skill_id);
+      const code = `${d.skill_id}`;
+      await page.goto(`/en/skills/${code}`);
+      await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
+    }
+    for (const q of ["arterial", "suctioning", "blood transfusion", "defibrillator", "tracheostomy"]) {
+      await page.goto(`/en/skills?q=${encodeURIComponent(q)}`);
+      await expect(page.getByText(/No skills match your search/)).toBeVisible();
+      const lib = await (await request.get(`/en/library?q=${encodeURIComponent(q)}`)).text();
+      for (const d of drafts) expect(lib).not.toContain(d.title);
+    }
   });
 });

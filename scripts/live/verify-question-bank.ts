@@ -9,6 +9,7 @@ import { DEV_REF, REF, sql } from "./mgmt";
 import { loadFixtures } from "../../src/lib/question-bank/fixtures";
 import { seededOrder } from "../../src/lib/question-bank/shuffle";
 import { loadCaseFixtures } from "../../src/lib/cases/fixtures";
+import { loadSkillFixtures } from "../../src/lib/skills/fixtures";
 
 const fx = loadFixtures();
 let failed = 0;
@@ -149,6 +150,29 @@ async function fails(user: string | null, query: string, re: RegExp): Promise<bo
     check("best path scores 100% (6 of 6 points over 3 decisions)", v.status === "completed" && v.summary.points === 6 && v.summary.max_points === 6 && v.summary.score_tenths === 1000);
     check("a committed decision cannot be repeated", await fails(B, `select public.cs_choose('${att}', 4, '${c1.steps[3]!.options[0]!.id}')`, /no longer in progress/));
     check("anon cannot call case functions", await fails(null, "select public.cs_list()", /permission denied/));
+
+
+    // --- skills library (migration 0012) ----------------------------------------------------------------------------------
+    await sql(readFileSync("supabase/seed_skill_fixtures.sql", "utf8"));
+    const sk = loadSkillFixtures();
+    check("4 synthetic skills loaded; no clinical skill exists", Number((await sql("select count(*)::int n from public.skill_items where kind='demo_synthetic' and status='published'"))[0]!.n) === 4
+      && Number((await sql("select count(*)::int n from public.skill_items where kind='clinical'"))[0]!.n) === 0);
+    check("learner sees the 4 skills through sk_list", (await as(B, "select public.sk_list(null,null,false) as l"))[0]!.l.length === 4);
+    check("search and category filters work", (await as(B, "select public.sk_list('scanner',null,false) as l"))[0]!.l.length === 1 && (await as(B, "select public.sk_list(null,'assessment',false) as l"))[0]!.l.length === 1);
+    for (const t of ["skill_items", "skill_checklist_items", "skill_revisions"]) check(`learner sees 0 rows in ${t}`, (await as(B, `select 1 from public.${t} limit 1`)).length === 0);
+    check("learner cannot write a session or an observed assessment", await fails(B, `insert into public.skill_sessions (user_id, skill_id, skill_version, mode) values (auth.uid(), '${sk[0]!.id}', 1, 'observed_assessment')`, /permission denied/));
+    const skd = (await sql(`insert into public.skill_items (code, kind, status, origin, category, title, summary, objectives, evidence_status, license_status) values ('LIVE-SKILL-DRAFT','clinical','draft','ai_generated','assessment','{"en":"Live gate test"}','{"en":"Unpublished clinical-kind skill for the live gate test."}','{"en":["x"]}','partial','permission_required') returning id`))[0]!.id as string;
+    check("unpublished clinical skill cannot be started, bookmarked or read", await fails(B, `select public.sk_start_session('${skd}')`, /skill not found/) && await fails(B, `select public.sk_get('LIVE-SKILL-DRAFT')`, /skill not found/) && (await as(B, `select id from public.skill_items where id='${skd}'`)).length === 0);
+    let sg = false;
+    try { await sql(`update public.skill_items set status='published', approved_at=now(), published_at=now() where id='${skd}'`); } catch (e) { sg = /named approver|independent clinical review|invalid skill structure/.test((e as Error).message); }
+    check("guard rejects publishing the clinical skill", sg);
+    await sql(`delete from public.skill_items where id='${skd}'`);
+    const sid = (await as(B, `select public.sk_start_session('${sk[0]!.id}') as id`))[0]!.id as string;
+    await as(B, `select public.sk_mark('${sid}','${sk[0]!.checklist[0]!.id}','done')`);
+    const sdone = (await as(B, `select public.sk_complete_session('${sid}') as s`))[0]!.s;
+    check("self-study completion records counts only, no verdict", sdone.summary.items_done === 1 && sdone.summary.items_total === 7 && !/passed|competent|certified/i.test(JSON.stringify(sdone)));
+    check("another learner cannot read or alter that session", await fails(A, `select public.sk_get_session('${sid}')`, /session not found/) && await fails(A, `select public.sk_mark('${sid}','${sk[0]!.checklist[1]!.id}','done')`, /session not found/));
+    check("anon cannot call skills functions", await fails(null, "select public.sk_list(null,null,false)", /permission denied/));
 
     // --- clean up test data ------------------------------------------------------------------------------------------------
   } finally {

@@ -10,6 +10,7 @@ import { ISOLATED } from "../../scripts/live/target";
 import { adminStorageRemove } from "../../scripts/live/admin";
 import { refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
 import { cleanup } from "../live/helpers";
+import { readFileSync } from "node:fs";
 
 test.describe.configure({ mode: "serial" });
 
@@ -299,6 +300,35 @@ test("a learner bookmarks and completes the topic; both persist across reloads a
   await expect(page.getByRole("link", { name: new RegExp(`LIVE TEST ${RUN} UI topic`) }).first()).toBeVisible();
   const views = await sql<{ view_count: number; status: string }>(`select view_count, status from public.learning_progress where user_id='${learner.id}'`);
   expect(views[0]).toMatchObject({ status: "completed" });
+});
+
+test("skills library in database mode: a signed-in learner searches, starts a self-study checklist, ticks persist across reloads, and the summary is not a verdict", async ({ page }) => {
+  test.skip(!ISOLATED, "uses the synthetic skill fixtures; isolated stack only");
+  await sql(readFileSync("supabase/seed_skill_fixtures.sql", "utf8"));
+  await sql("update public.app_settings set environment='development', question_fixtures_visible=true");
+  try {
+    await page.goto("/en/skills");
+    await expect(page).toHaveURL(/\/en\/login/); // protected: a signed-out visitor is redirected
+    await login(page, learner.email);
+    await page.goto("/en/skills?q=weather");
+    await expect(page.getByRole("heading", { level: 3, name: "Reading the daily weather board" })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 3 })).toHaveCount(1);
+    await page.goto("/en/skills/SYN-SKILL-002");
+    await page.getByRole("button", { name: "Start self-study" }).click();
+    await page.waitForURL(/skills\/session\//);
+    await page.getByRole("group", { name: /Find the handbook card/ }).getByLabel("Done", { exact: true }).check();
+    await expect(page.getByText("1 of 5 steps ticked").first()).toBeVisible();
+    await page.reload();
+    await expect(page.getByText("1 of 5 steps ticked").first()).toBeVisible(); // persisted in the database
+    await page.getByRole("button", { name: "Finish self-study" }).click();
+    await expect(page.getByRole("heading", { name: "Your self-study summary" })).toBeVisible();
+    await expect(page.getByText(/not a pass, a competency assessment or a certificate/)).toBeVisible();
+    expect((await sql<{ n: number }>(`select count(*)::int n from public.skill_sessions where user_id='${learner.id}' and status='completed' and mode='self_study'`))[0]!.n).toBe(1);
+    await page.goto("/en/skills/SYN-SKILL-002");
+    await expect(page.getByText("1 of 5 steps ticked").first()).toBeVisible(); // history
+  } finally {
+    await sql("update public.app_settings set environment='production', question_fixtures_visible=false");
+  }
 });
 
 test("email-link callback: a recovery link signs the user in and the reset form sets a new password", async ({ page }) => {
