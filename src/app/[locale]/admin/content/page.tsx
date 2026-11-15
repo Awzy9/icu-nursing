@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { Badge, Callout } from "@/components/ui/feedback";
+import { Link } from "@/i18n/navigation";
 import { requireStaff } from "@/lib/auth";
 import { sourceSummary, type SourceRow } from "@/lib/admin/source-health";
 import { createClient } from "@/lib/supabase/server";
@@ -38,7 +39,8 @@ export default async function ContentOverview({ params }: { params: Promise<{ lo
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-bold">Content overview</h1>
-      <Callout tone="warning" role="note">Read-only. Nothing on this page publishes, imports or reviews content. The clinical drafts listed below live outside the database and cannot satisfy any publication gate.</Callout>
+      <p className="flex flex-wrap gap-3"><Link href="/admin/content/drafts" className="font-medium">Draft register (filter, validation, notes)</Link><Link href="/admin/content/coverage" className="font-medium">Coverage dashboard</Link></p>
+      <Callout tone="warning" role="note">Nothing here publishes, imports or reviews content. The clinical drafts listed below live outside the database and cannot satisfy any publication gate.</Callout>
 
       <section aria-labelledby="live" className="space-y-3">
         <h2 id="live" className="text-xl font-semibold">In the database</h2>

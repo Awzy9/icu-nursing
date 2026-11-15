@@ -30,7 +30,7 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - name: Draft validators and draft register are up to date
-        run: npm run validate:all && npx tsx scripts/build-draft-register.ts && git diff --exit-code src/content/draft-register.json
+        run: npm run validate:all && npm run register:drafts && git diff --exit-code src/content
       - name: Seed is up to date
         run: npx tsx scripts/generate-seed.ts && git diff --exit-code supabase/seed.sql
       - name: Fixture seed files are up to date

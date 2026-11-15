@@ -180,6 +180,48 @@ test("a learner cannot reach the admin area", async ({ page }) => {
   await signOut(page);
 });
 
+test("draft register: an administrator filters unpublished drafts, reads validation and source freshness, saves a workflow note with history; a learner is refused", async ({ page }) => {
+  await login(page, boss.email);
+  await page.goto("/en/admin/content/drafts");
+  await mfa(page, boss.email);
+  await page.goto("/en/admin/content/drafts");
+  await expect(page.getByRole("heading", { level: 1, name: "Draft register" })).toBeVisible();
+  await expect(page.getByText("154 of 154 drafts")).toBeVisible();
+  await page.goto("/en/admin/content/drafts?type=cases&evidence=partial");
+  await expect(page.getByText("20 of 154 drafts")).toBeVisible();
+  await page.goto("/en/admin/content/drafts?q=zzzz-nothing");
+  await expect(page.getByText("No drafts match these filters.")).toBeVisible();
+  await page.goto("/en/admin/content/drafts/SC-11");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("SC-11");
+  await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Validation feedback" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Sources, licensing and freshness" })).toBeVisible();
+  const note = `Check the UKKA review date ${RUN}`;
+  await page.getByLabel("Evidence note").fill(note);
+  await page.getByRole("button", { name: "Save evidence note" }).click();
+  await expect(page.getByText("Saved.")).toBeVisible();
+  await page.reload();
+  await expect(page.getByLabel("Evidence note")).toHaveValue(note);
+  await expect(page.getByText(note).last()).toBeVisible(); // in the note history
+  await page.getByLabel("Evidence note").fill("Give 5 mg per hour");
+  await page.getByRole("button", { name: "Save evidence note" }).click();
+  await expect(page.getByRole("alert").filter({ hasText: /dose or a rate|refused/ })).toBeVisible(); // the database refuses doses
+  await page.goto("/en/admin/content/coverage");
+  await expect(page.getByRole("heading", { level: 1, name: "Content coverage" })).toBeVisible();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations.filter((v) => ["serious", "critical"].includes(v.impact ?? ""))).toEqual([]);
+  expect((await sql<{ n: number }>(`select count(*)::int n from public.audit_log where action='draft_note_set' and entity_id='SC-11:evidence_note'`))[0]!.n).toBeGreaterThanOrEqual(1);
+  await signOut(page);
+});
+
+test("a learner cannot reach the draft register or its notes", async ({ page }) => {
+  await login(page, learner.email);
+  await page.goto("/en/admin/content/drafts");
+  await expect(page).toHaveURL(/\/en\/dashboard/);
+  await page.goto("/en/admin/content/drafts/SC-11");
+  await expect(page).toHaveURL(/\/en\/dashboard/);
+  await signOut(page);
+});
+
 test("author drafts a topic in the CMS, sees the readiness checks, and submits it for clinical review", async ({ page }) => {
   await login(page, author.email);
   await page.goto("/en/admin/topics/new");
