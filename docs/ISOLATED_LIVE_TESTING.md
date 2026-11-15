@@ -1,34 +1,34 @@
-# Isolated configuration for the CAPTCHA-dependent live test suites
+# Isolated live testing (implemented in Phase 6)
 
-Status: **design and safeguards only (2026-11-15).** Nothing here was run against a new project, and no new project, paid service or agreement was created. Owner approval is needed before any new Supabase project is created.
+The live API suite (`tests/live`) and live UI suite (`tests/live-e2e/ui.live.spec.ts`) need CAPTCHA to be controllable (Cloudflare **test** keys, including the always-fail secret). They therefore must never run against the hosted `icu-nursing-dev` project, whose Turnstile secret is real. They now run against a **local Supabase stack started by the Supabase CLI inside a GitHub Actions job** (Docker): `.github/workflows/isolated-supabase.yml`.
 
-## The problem
-The live API suite (`tests/live`, 50 tests) and live UI suite (`tests/live-e2e/ui.live.spec.ts`, 11 tests) were written when the development project's CAPTCHA could be switched to a Cloudflare **test** secret (always pass / always fail) and back. The project now holds the owner's **real** Turnstile secret. These suites (and `scripts/live/configure-captcha.ts --test-keys=... | --off`) would **replace the real secret or disable CAPTCHA** on `icu-nursing-dev`, and with the real secret active they cannot pass anyway because a person must solve the widget.
+## What the job does
+1. Copies nothing out of the repository's secrets: the only "secrets" are Cloudflare's **public** test keys written in the workflow (`1x0000000000000000000000000000000AA`, site key `1x00000000000000000000AA`).
+2. Edits only the CI copy of `supabase/config.toml` (relaxed rate limits, local redirect URLs, `[auth.captcha]` enabled with the test secret) and runs `supabase start`, which applies migrations `0001`-`0011`.
+3. Exports the loopback endpoints (`http://127.0.0.1:54321`, DB `:54322`, Mailpit `:54324`) as `LIVE_*` variables.
+4. Runs the guard unit tests, then the live API suite (50 workflow tests + 9 isolated transport/auth tests), builds the app against the local stack and runs the 11 live UI tests in Chromium with the Turnstile **test** widget.
+5. On failure, uploads container logs and Playwright artifacts; always stops the stack.
 
-## Safeguard added now (verified by unit test)
-`scripts/live/mgmt.ts` exports `refuseCaptchaWeakeningOnDev()`. It throws when the target project ref is the approved dev project. It is called by `configure-captcha.ts` (for `--test-keys` and `--off`), by `setSecret` in the live API suite and by `secret()` in the live UI suite. Setting the **real** secret through `TURNSTILE_SECRET` is not blocked. `tests/unit/live-guard.test.ts` covers it. Result: running the live suites against the dev project can no longer overwrite the real secret.
+## Guards (`scripts/live/target.ts`, `isolated-targets.json`)
+* The default target is the hosted dev project and **test-key operations are refused there** (`requireIsolated()` throws unless `LIVE_TARGET=isolated`).
+* `LIVE_TARGET=isolated` is accepted only for the explicit loopback allow-list; a hosted URL (including the dev project) fails **at import time**.
+* Only Cloudflare's public test secrets may be applied (`assertTestCaptchaSecret`).
+* The "reject token" tests flip the local GoTrue container's `GOTRUE_SECURITY_CAPTCHA_SECRET` by recreating that container (`isolated-auth.ts`, local Docker only). The Management API CAPTCHA call is simulated by `mgmt.ts` and can never reach a hosted project in isolated mode.
+* Unit tests (`tests/unit/live-guard.test.ts`) prove all of the above independent of the environment they run in.
 
-## Options for a project where the suites can run
-| Option | What it is | Pros | Cons / needs |
-|---|---|---|---|
-| **A. Local Supabase stack** | `npx supabase start` (Docker) with CAPTCHA enabled using Cloudflare's public test secret through `[auth.captcha]` and an environment variable; the app points at `http://127.0.0.1:54321` | No cloud project, no cost, fully isolated, repeatable in CI | Needs a Docker daemon (**not available in this sandbox**: `docker ps` cannot connect); the live tooling (`mgmt.ts`) calls the hosted Management API, so a local mode (direct SQL and GoTrue admin through the service key) must be written and tested |
-| **B. Second hosted Supabase project** (for example `icu-nursing-test`) | Separate project with the Cloudflare test secret and its own Turnstile widget or test site key | Closest to production behaviour; reuses the existing scripts after parameterising the project ref | Owner must approve creating a project (free-plan limits and any cost are the owner's decision); keys and secrets must be handled outside the repo; a ref allow-list is needed so the tooling can never touch other projects |
-| **C. Keep the dev project as is** | Only run the real-widget spec (`REAL_CAPTCHA=1 ... captcha-real`) and the non-auth suites | No change | The 61 live tests stay unrunnable |
+## Running it on a machine with Docker
+```
+sed -i 's/email_sent = 4/email_sent = 1000/; s/sign_in_sign_ups = 30/sign_in_sign_ups = 1000/' supabase/config.toml   # then restore with git checkout
+# append the [auth.captcha] block shown in the workflow, then:
+export SUPABASE_AUTH_CAPTCHA_SECRET=1x0000000000000000000000000000000AA
+supabase start -x studio,imgproxy,edge-runtime,logflare,vector,supavisor,postgres-meta
+eval "$(supabase status -o env | sed 's/^/export /')"
+export LIVE_TARGET=isolated LIVE_SUPABASE_URL=$API_URL LIVE_ANON_KEY=$ANON_KEY LIVE_SERVICE_ROLE_KEY=$SERVICE_ROLE_KEY LIVE_DB_URL=$DB_URL LIVE_MAIL_URL=http://127.0.0.1:54324
+npm run test:live
+NEXT_PUBLIC_SITE_URL=http://localhost:3100 NEXT_PUBLIC_SUPABASE_URL=$API_URL NEXT_PUBLIC_SUPABASE_ANON_KEY=$ANON_KEY NEXT_PUBLIC_TURNSTILE_SITE_KEY=1x00000000000000000000AA npm run build:live
+npx playwright test --config playwright.live.config.ts tests/live-e2e/ui.live.spec.ts
+```
+The sandbox used for development has no Docker daemon, so the workflow itself is the proof of execution.
 
-**Recommendation:** A for routine and CI use (once Docker is available on a developer machine or CI runner), B if the owner wants a hosted pre-staging check. Both keep the dev project's authentication controls unchanged.
-
-## Work plan after approval
-1. Parameterise `scripts/live/mgmt.ts` and `tests/live/helpers.ts` with `LIVE_PROJECT_REF` / `LIVE_PROJECT_URL`, accepted only if listed in an explicit allow-list file that does **not** contain the dev ref for CAPTCHA-mutating operations.
-2. Add `LIVE_TARGET=local|isolated|dev`; `dev` runs only non-CAPTCHA specs and `captcha-real`.
-3. For local mode: `supabase/config.toml` `[auth.captcha] enabled = true, provider = "turnstile", secret = "env(SUPABASE_AUTH_CAPTCHA_SECRET)"` with the public test secret in the shell only; apply `supabase/migrations`; use the Cloudflare public test site key in `NEXT_PUBLIC_TURNSTILE_SITE_KEY` for the isolated build.
-4. Run the 50 API and 11 UI tests there; keep the real-widget spec on the dev project.
-5. Document the commands in `docs/CAPTCHA.md` and CI; add a CI job that never has the real secret.
-
-## What was not done
-No new project, no Docker run, no change to the dev project's CAPTCHA settings or secret, and no weakening of any authentication control.
-
-## Feasibility check, Phase 4 (2026-11-15)
-* Docker CLI is installed in the development sandbox but **no Docker daemon is running** (`/var/run/docker.sock` is absent), so Option A (local Supabase stack) cannot be executed here. The Supabase CLI (3.1.0) is available, so the option is ready for a machine or CI runner with Docker.
-* Option B needs a second hosted Supabase project, which requires owner approval. None was created.
-* Nothing was run against, and nothing was changed in, `icu-nursing-dev` (Turnstile secret and CAPTCHA settings untouched). The guard `refuseCaptchaWeakeningOnDev()` remains in force and unit-tested.
-* The question bank does not depend on the live suites: its database behaviour is tested on real PostgreSQL with every migration applied (`npm run test:db`), and its UI on the fixtures engine (`npm run test:e2e`). Migration `0006` has **not** been applied to the hosted dev project.
+## What still runs only against the hosted dev project
+`tests/live-e2e/captcha-real.live.spec.ts` (the real Turnstile widget) and `email.live.spec.ts` (real email delivery) need the real secret and a person, and are not part of the isolated job. Application integration against the hosted project is covered by `scripts/live/verify-app-on-dev.ts` (sessions via admin-issued links, CAPTCHA untouched).

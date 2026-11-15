@@ -101,6 +101,7 @@ test.describe("question bank: practice mode", () => {
     await page.waitForURL(/results$/);
     await expect(page.getByTestId("score")).toHaveText("66.7%");
     await expect(page.getByTestId("score-detail")).toHaveText(`${correct} of 3 correct`);
+    await expect(page).toHaveTitle(/Results/); // metadata streams in after a client-side navigation
     expect(await serious(page)).toEqual([]);
   });
 
