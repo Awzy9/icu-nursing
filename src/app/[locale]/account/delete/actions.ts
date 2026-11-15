@@ -31,6 +31,6 @@ export async function deleteAccountAction(_prev: DeletionState, form: FormData):
   await supabase.auth.signOut({ scope: "local" }).catch(() => undefined);
   const jar = await cookies();
   for (const c of jar.getAll()) if (c.name.startsWith("sb-")) jar.delete(c.name);
-  redirect({ href: "/account/deleted", locale: await getLocale() });
+  redirect({ href: "/account-deleted", locale: await getLocale() });
   return {};
 }

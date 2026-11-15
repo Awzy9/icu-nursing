@@ -33,7 +33,7 @@ test.describe("account deletion (public information and demonstration mode)", ()
     await page.goto("/en/account/delete");
     await expect(page.getByText(/needs a configured backend/)).toBeVisible();
     await expect(page.getByRole("button", { name: "Delete my account permanently" })).toHaveCount(0);
-    await page.goto("/en/account/deleted");
+    await page.goto("/en/account-deleted");
     await expect(page.getByRole("heading", { level: 1, name: "Your account has been deleted" })).toBeVisible();
     expect(await serious(page)).toEqual([]);
   });

@@ -38,7 +38,7 @@ Deletion is irreversible by design. The hosting provider's encrypted backups may
 ## 7. Web routes (store compliance)
 * `/{en,ar}/account-deletion`: public, no sign-in, linked from every page footer: how to delete, what is erased, what is kept, staff note. This is the URL to give Google Play's Data safety form and Apple's review.
 * `/{en,ar}/account/delete`: signed-in flow (re-sign-in prompt, warnings, form).
-* `/{en,ar}/account/deleted`: confirmation.
+* `/{en,ar}/account-deleted`: confirmation. It is deliberately outside `/account/`, because the middleware protects that prefix and the person is signed out by then (found by the isolated-stack UI test).
 * Link "Delete your account" on the profile page.
 
 ## 8. Tests
