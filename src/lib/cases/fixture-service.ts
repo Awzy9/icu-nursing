@@ -24,6 +24,11 @@ export function createCaseFixtureService(userKey: string, opts: { store?: CaseSt
   const dom = (slug: string) => DEMO_DOMAINS.find((d) => d.slug === slug)!;
   const own = (id: string) => { const a = me.attempts.get(id); if (!a) throw new CaseError("not_found", "attempt not found"); return a; };
 
+  const debrief = (c: CaseFixture, a: Fx) => {
+    const scopes: Record<string, number> = {};
+    for (const t of a.taken) { const o = c.steps.find((x) => x.position === t.position)!.options.find((x) => x.id === t.optionId)!; scopes[o.scope] = (scopes[o.scope] ?? 0) + 1; }
+    return { learning_points: c.debrief?.learning_points ?? null, links: c.debrief?.links ?? [], scope_counts: scopes, revisit_positions: a.taken.filter((t) => t.points < 2).map((t) => t.position).sort((x, y) => x - y) };
+  };
   const view = (a: Fx): CaseAttemptView => {
     const c = cases.find((x) => x.id === a.caseId)!;
     const done = a.status !== "in_progress";
@@ -31,8 +36,8 @@ export function createCaseFixtureService(userKey: string, opts: { store?: CaseSt
     const trail = a.taken.map((t) => {
       const s = c.steps.find((x) => x.position === t.position)!;
       return {
-        position: s.position, info: s.info, prompt: s.prompt, chosen_option_id: t.optionId, points: t.points,
-        options: order(s.id, s.options.map((o) => o.id)).map((id) => { const o = s.options.find((x) => x.id === id)!; return { id: o.id, text: o.text, points: o.points, scope: o.scope, feedback: o.feedback }; }),
+        position: s.position, info: s.info, prompt: s.prompt, observations: s.observations, chosen_option_id: t.optionId, points: t.points,
+        options: order(s.id, s.options.map((o) => o.id)).map((id) => { const o = s.options.find((x) => x.id === id)!; return { id: o.id, text: o.text, points: o.points, scope: o.scope, feedback: o.feedback, consequence: o.consequence }; }),
       };
     });
     const cur = done ? null : c.steps.find((s) => s.position === a.position)!;
@@ -41,8 +46,8 @@ export function createCaseFixtureService(userKey: string, opts: { store?: CaseSt
       id: a.id, status: a.status, started_at: a.startedAt.toISOString(), completed_at: a.completedAt?.toISOString() ?? null, current_position: a.position,
       case: { id: c.id, code: c.code, title: c.title, vignette: c.vignette, difficulty: c.difficulty, synthetic: true, steps: c.steps.length, domain_slug: c.domainSlug, domain_title: dom(c.domainSlug).title },
       trail,
-      current: cur ? { position: cur.position, info: cur.info, prompt: cur.prompt, options: order(cur.id, cur.options.map((o) => o.id)).map((id) => { const o = cur.options.find((x) => x.id === id)!; return { id: o.id, text: o.text }; }) } : null,
-      summary: a.status === "completed" ? { points, max_points: 2 * a.taken.length, score_tenths: scoreTenths(points, 2 * a.taken.length), steps: a.taken.length, duration_seconds: Math.round(((a.completedAt ?? now()).getTime() - a.startedAt.getTime()) / 1000) } : null,
+      current: cur ? { position: cur.position, info: cur.info, prompt: cur.prompt, observations: cur.observations, options: order(cur.id, cur.options.map((o) => o.id)).map((id) => { const o = cur.options.find((x) => x.id === id)!; return { id: o.id, text: o.text }; }) } : null,
+      summary: a.status === "completed" ? { points, max_points: 2 * a.taken.length, score_tenths: scoreTenths(points, 2 * a.taken.length), steps: a.taken.length, duration_seconds: Math.round(((a.completedAt ?? now()).getTime() - a.startedAt.getTime()) / 1000), debrief: debrief(c, a) } : null,
     };
   };
 

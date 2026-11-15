@@ -7,6 +7,17 @@ export const CASE_SCOPES = ["assessment", "monitoring", "escalation", "independe
 export type CaseScope = (typeof CASE_SCOPES)[number];
 const scope = z.enum(CASE_SCOPES);
 
+/** One named reading of the changing situation (fictional in development). low/high form an authored band used only to label the reading in words. */
+export const observationSchema = z.object({ key: z.string(), label: localized, value: z.union([z.number(), z.string()]), unit: z.string().optional(), low: z.number().optional(), high: z.number().optional() });
+export type CaseObservation = z.infer<typeof observationSchema>;
+export const debriefSchema = z.object({
+  learning_points: z.record(z.string(), z.array(z.string())).nullable(),
+  links: z.array(z.object({ kind: z.enum(["skill", "topic", "medication"]), code: z.string() })),
+  scope_counts: z.record(z.string(), z.number().int()),
+  revisit_positions: z.array(z.number().int()),
+});
+export type CaseDebrief = z.infer<typeof debriefSchema>;
+
 export const caseListSchema = z.array(
   z.object({
     id: z.string(), code: z.string(), title: localized, difficulty: z.number().int(), synthetic: z.boolean(),
@@ -23,13 +34,13 @@ export const caseProgressSchema = z.object({
 });
 export type CaseProgress = z.infer<typeof caseProgressSchema>;
 
-const revealedOption = z.object({ id: z.string(), text: localized, points: z.number().int().min(0).max(2), scope, feedback: localized });
+const revealedOption = z.object({ id: z.string(), text: localized, points: z.number().int().min(0).max(2), scope, feedback: localized, consequence: localized.nullable() });
 const trailStep = z.object({
-  position: z.number().int(), info: localized, prompt: localized, chosen_option_id: z.string(), points: z.number().int().min(0).max(2),
+  position: z.number().int(), info: localized, prompt: localized, observations: z.array(observationSchema), chosen_option_id: z.string(), points: z.number().int().min(0).max(2),
   options: z.array(revealedOption),
 });
 const currentStep = z.object({
-  position: z.number().int(), info: localized, prompt: localized,
+  position: z.number().int(), info: localized, prompt: localized, observations: z.array(observationSchema),
   options: z.array(z.object({ id: z.string(), text: localized })),
 });
 export const caseAttemptSchema = z.object({
@@ -42,7 +53,7 @@ export const caseAttemptSchema = z.object({
   }),
   trail: z.array(trailStep),
   current: currentStep.nullable(),
-  summary: z.object({ points: z.number().int(), max_points: z.number().int(), score_tenths: z.number().int(), steps: z.number().int(), duration_seconds: z.number().int() }).nullable(),
+  summary: z.object({ points: z.number().int(), max_points: z.number().int(), score_tenths: z.number().int(), steps: z.number().int(), duration_seconds: z.number().int(), debrief: debriefSchema }).nullable(),
 });
 export type CaseAttemptView = z.infer<typeof caseAttemptSchema>;
 export type CaseTrailStep = CaseAttemptView["trail"][number];

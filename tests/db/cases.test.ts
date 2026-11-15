@@ -195,3 +195,54 @@ describe("resume and privacy", () => {
     await owner.query("update public.case_items set retired_at=null where id=$1", [c2.id]);
   });
 });
+
+describe("observations, consequences and the structured debrief (migration 0014)", () => {
+  it("sends the current step's readings but never its consequences, later readings or any debrief", async () => {
+    const u = await createUser(uniqueEmail("obs"));
+    const id = await start(u, c1);
+    const a = await get(u, id);
+    expect(a.current.observations).toEqual(c1.steps[0]!.observations);
+    const raw = JSON.stringify(a);
+    for (const o of c1.steps[0]!.options) expect(raw).not.toContain(o.consequence!.en!);
+    for (const later of c1.steps.slice(1)) for (const ob of later.observations) expect(raw).not.toContain(JSON.stringify(ob));
+    expect(raw).not.toContain("learning_points");
+    expect(a.summary).toBeNull();
+  });
+  it("reveals a consequence only for committed decisions, and the debrief only after completion", async () => {
+    const u = await createUser(uniqueEmail("deb"));
+    const id = await start(u, c1);
+    const best = pick(c1, 1, 2);
+    const v1 = await choose(u, id, 1, best.id);
+    expect(v1.trail[0].observations).toEqual(c1.steps[0]!.observations);
+    expect(v1.trail[0].options.find((o: any) => o.id === best.id).consequence).toEqual(best.consequence);
+    expect(v1.current.observations).toEqual(c1.steps[best.next! - 1]!.observations);
+    expect(v1.summary).toBeNull();
+    // finish along the best path
+    let v = v1, pos = best.next!;
+    while (v.status !== "completed") { const o = pick(c1, pos, 2); v = await choose(u, id, pos, o.id); pos = o.next ?? 0; }
+    const d = v.summary.debrief;
+    expect(d.learning_points).toEqual(c1.debrief!.learning_points);
+    expect(d.links).toEqual(c1.debrief!.links);
+    expect(d.revisit_positions).toEqual([]);
+    expect(Object.values(d.scope_counts).reduce((n: number, x: any) => n + Number(x), 0)).toBe(v.summary.steps);
+  });
+  it("lists the decisions that scored below the reference in the debrief", async () => {
+    const u = await createUser(uniqueEmail("rev"));
+    const id = await start(u, c1);
+    const first = pick(c1, 1, 1);
+    let v = await choose(u, id, 1, first.id), pos = first.next!;
+    while (v.status !== "completed") { const o = pick(c1, pos, 2); v = await choose(u, id, pos, o.id); pos = o.next ?? 0; }
+    expect(v.summary.debrief.revisit_positions).toEqual([1]);
+  });
+  it("rejects a malformed reading and freezes published observations, consequences and debriefs", async () => {
+    await expect(owner.query("insert into public.case_steps (case_id, position, info, prompt, observations) values ($1, 7, '{\"en\":\"x\"}', '{\"en\":\"y\"}', '[{\"key\":\"Bad Key\",\"label\":{\"en\":\"x\"},\"value\":1}]')", [c1.id])).rejects.toThrow(/case_steps_observations_ok|immutable/);
+    await expect(owner.query("update public.case_steps set observations='[]' where id=$1", [c1.steps[0]!.id])).rejects.toThrow(/immutable/);
+    await expect(owner.query("update public.case_option_keys set consequence='{\"en\":\"A changed consequence text.\"}' where option_id=$1", [c1.steps[0]!.options[0]!.id])).rejects.toThrow(/immutable/);
+    await expect(owner.query("update public.case_items set debrief='{\"learning_points\":{\"en\":[\"changed\"]}}' where id=$1", [c1.id])).rejects.toThrow(/immutable/);
+  });
+  it("keeps the new columns away from learners (no direct reads or writes)", async () => {
+    const u = await createUser(uniqueEmail("cl"));
+    expect((await asUser({ id: u }, "select observations from public.case_steps")).rows).toEqual([]);
+    await expectDenied(asUser({ id: u }, "update public.case_option_keys set consequence = null"));
+  });
+});

@@ -109,3 +109,29 @@ describe("case fixture engine", () => {
     expect((await b.progress())).toMatchObject({ completed_cases: 0, in_progress: 0 });
   });
 });
+
+describe("observations, consequences and the debrief in the fixture engine", () => {
+  it("shows the current step's readings only, reveals consequences with committed decisions and the debrief only on completion", async () => {
+    const svc = mk()("u");
+    const c = cases[0]!;
+    const id = await svc.start(c.id);
+    const v0 = (await svc.get(id))!;
+    expect(v0.current!.observations).toEqual(c.steps[0]!.observations);
+    expect(JSON.stringify(v0)).not.toContain(c.steps[0]!.options[0]!.consequence!.en!);
+    expect(v0.summary).toBeNull();
+    let pos = 1; let v = v0;
+    while (v.status !== "completed") { const o = best(c, pos); v = await svc.choose(id, pos, o.id); expect(v.trail.at(-1)!.options.find((x) => x.id === o.id)!.consequence).toEqual(o.consequence); pos = o.next ?? 0; }
+    expect(v.summary!.debrief.learning_points).toEqual(c.debrief!.learning_points);
+    expect(v.summary!.debrief.revisit_positions).toEqual([]);
+  });
+  it("every synthetic case has readings with an authored band, a consequence for every option and a debrief", () => {
+    for (const c of cases) {
+      expect(c.debrief?.learning_points.en?.length).toBeGreaterThanOrEqual(1);
+      for (const s of c.steps) {
+        expect(s.observations.length).toBeGreaterThanOrEqual(2);
+        for (const ob of s.observations) expect(ob.key).toMatch(/^[a-z][a-z0-9_]{1,30}$/);
+        for (const o of s.options) expect(o.consequence?.en?.length).toBeGreaterThanOrEqual(10);
+      }
+    }
+  });
+});

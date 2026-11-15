@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync } from "node:fs";
 import { batchPositionIssues, mcqQuality, parseMcqs, validateDraft } from "@/lib/draft-validator";
 
-const batches = readdirSync("content/drafts", { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort();
+const batches = readdirSync("content/drafts", { withFileTypes: true }).filter((d) => d.isDirectory() && /^batch-\d+$/.test(d.name)).map((d) => d.name).sort();
 const files = batches.flatMap((b) => readdirSync(`content/drafts/${b}`).filter((f) => f.endsWith(".md")).map((f) => `${b}/${f}`));
 const texts = files.map((f) => readFileSync(`content/drafts/${f}`, "utf8"));
 const perBatch = (b: string) => files.map((f, i) => (f.startsWith(`${b}/`) ? texts[i]! : "")).filter(Boolean);

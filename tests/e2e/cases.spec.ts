@@ -18,8 +18,10 @@ async function stepNow(page: Page) {
 async function decide(page: Page, points: 0 | 1 | 2) {
   const s = await stepNow(page);
   const o = s.options.find((x) => x.points === points)!;
+  const before = await page.locator("section[aria-labelledby=cs-trail] details").count();
   await page.getByRole("radio", { name: o.text.en!, exact: false }).first().check();
-  await page.getByRole("button", { name: "Commit this decision" }).click();
+  await page.locator("section[aria-labelledby=cs-step]").getByRole("button").click(); // the commit button (locale-independent)
+  await page.waitForFunction((n) => document.querySelectorAll("section[aria-labelledby=cs-trail] details").length > n, before);
   return o;
 }
 
@@ -135,6 +137,46 @@ test.describe("cases: Arabic, dark mode, layout", () => {
     await page.goto("/en/cases");
     await page.getByRole("button", { name: "Start case" }).first().click();
     await page.waitForURL(/cases\/attempt\//);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
+  });
+
+  test("observations change with the path, consequences stay hidden until a decision is committed, and a structured debrief closes the case", async ({ page }) => {
+    await page.goto("/en/cases");
+    await card(page, "The blank timetable board").getByRole("button", { name: "Start case" }).click();
+    await page.waitForURL(/cases\/attempt\//);
+    const c = cases[0]!;
+    // the first step shows its readings with no comparison yet; nothing from later steps or consequences is in the page
+    const obs = page.getByTestId("observations");
+    await expect(obs.getByRole("heading", { name: "Observations at this decision" })).toBeVisible();
+    await expect(obs.getByRole("row", { name: /Passengers waiting\s+6 people\s+First reading\s+Within the band/ })).toBeVisible();
+    const html = await page.content();
+    for (const st of c.steps) for (const o of st.options) expect(html, `leaked consequence: ${o.consequence?.en}`).not.toContain(o.consequence!.en!);
+    expect(html).not.toContain("Passengers waiting</th><td class=\"py-1 pe-3 tabular-nums\">14");
+    // commit the best option: its consequence and the next step's changed readings appear
+    const first = await decide(page, 2);
+    await expect(page.getByText(first.consequence!.en!)).toBeVisible();
+    await expect(page.getByTestId("observations").last().getByRole("row", { name: /Passengers waiting\s+14 people\s+Up from 6\s+Within the band/ })).toBeVisible();
+    // finish with best decisions
+    for (let i = 0; i < 3; i++) { if (await page.getByTestId("debrief").count()) break; await decide(page, 2); }
+    const debrief = page.getByTestId("debrief");
+    await expect(debrief.getByRole("heading", { name: "Structured debrief" })).toBeVisible();
+    await expect(debrief.getByText("Confirm facts from the official source before telling anyone anything.")).toBeVisible();
+    await expect(debrief.getByText("Every decision matched the reference answer.")).toBeVisible();
+    await expect(debrief.getByRole("link", { name: "Open skill SYN-SKILL-002" })).toHaveAttribute("href", /\/en\/skills\/SYN-SKILL-002$/);
+    expect(await serious(page)).toEqual([]);
+  });
+
+  test("the debrief lists decisions to revisit after a weaker choice, and works in Arabic right-to-left", async ({ page }) => {
+    await page.goto("/ar/cases");
+    await page.getByRole("button", { name: /ابدأ الحالة|Start case/ }).first().click();
+    await page.waitForURL(/cases\/attempt\//);
+    await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+    await decide(page, 1);
+    for (let i = 0; i < 4; i++) { if (await page.getByTestId("debrief").count()) break; await decide(page, 2); }
+    const debrief = page.getByTestId("debrief");
+    await expect(debrief.getByRole("heading", { name: "جلسة المراجعة المنظمة" })).toBeVisible();
+    await expect(debrief.getByText("القرار 1")).toBeVisible();
+    expect(await serious(page)).toEqual([]);
     expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
   });
 });

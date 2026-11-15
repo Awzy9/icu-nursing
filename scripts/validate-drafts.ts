@@ -4,7 +4,7 @@ import { batchPositionIssues, validateDraft } from "../src/lib/draft-validator";
 
 const root = "content/drafts";
 let bad = 0;
-for (const batch of readdirSync(root, { withFileTypes: true }).filter((d) => d.isDirectory())) {
+for (const batch of readdirSync(root, { withFileTypes: true }).filter((d) => d.isDirectory() && /^batch-\d+$/.test(d.name))) {
   const texts: string[] = [];
   for (const f of readdirSync(join(root, batch.name)).filter((n) => n.endsWith(".md"))) {
     const text = readFileSync(join(root, batch.name, f), "utf8");

@@ -148,6 +148,8 @@ async function fails(user: string | null, query: string, re: RegExp): Promise<bo
     check("another learner cannot read or play that attempt", await fails(A, `select public.cs_get('${att}')`, /attempt not found/) && await fails(A, `select public.cs_choose('${att}', 2, '${c1.steps[1]!.options[0]!.id}')`, /attempt not found/));
     v = (await as(B, `select public.cs_choose('${att}', 2, '${c1.steps[1]!.options.find((o) => o.points === 2)!.id}') as a`))[0]!.a;
     v = (await as(B, `select public.cs_choose('${att}', 4, '${c1.steps[3]!.options.find((o) => o.points === 2)!.id}') as a`))[0]!.a;
+    check("the debrief (learning points, scope counts) arrives only with the completed summary", v.status === "completed" && Array.isArray(v.summary.debrief.learning_points.en) && Object.keys(v.summary.debrief.scope_counts).length > 0 && !JSON.stringify(g0).includes("learning_points"));
+    check("an in-progress case exposes the current readings but no consequences", g0.current.observations.length === 3 && !JSON.stringify(g0).includes(c1.steps[0]!.options[0]!.consequence!.en!));
     check("best path scores 100% (6 of 6 points over 3 decisions)", v.status === "completed" && v.summary.points === 6 && v.summary.max_points === 6 && v.summary.score_tenths === 1000);
     check("a committed decision cannot be repeated", await fails(B, `select public.cs_choose('${att}', 4, '${c1.steps[3]!.options[0]!.id}')`, /no longer in progress/));
     check("anon cannot call case functions", await fails(null, "select public.cs_list()", /permission denied/));

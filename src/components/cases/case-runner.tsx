@@ -9,10 +9,81 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { tenthsToPercentString } from "@/lib/question-bank/score";
 import { LText } from "@/components/question-bank/localized";
-import type { CaseAttemptView, CaseTrailStep } from "@/lib/cases/types";
+import type { CaseAttemptView, CaseObservation, CaseTrailStep } from "@/lib/cases/types";
 import { chooseCaseAction } from "@/app/[locale]/cases/actions";
 
 const LETTERS: Record<string, string[]> = { en: ["A", "B", "C", "D"], ar: ["أ", "ب", "ج", "د"] };
+
+/** The readings of the changing situation, with the change since the previous decision and the position against an authored band, all in words (never colour alone). */
+function Observations({ items, previous, locale, title }: { items: CaseObservation[]; previous?: CaseObservation[]; locale: string; title: string }) {
+  const t = useTranslations("Cases");
+  if (items.length === 0) return null;
+  const fmt = new Intl.NumberFormat(locale);
+  const show = (o: CaseObservation) => `${typeof o.value === "number" ? fmt.format(o.value) : o.value}${o.unit ? ` ${o.unit}` : ""}`;
+  return (
+    <div className="space-y-1" data-testid="observations">
+      <h3 className="text-sm font-semibold text-muted-foreground">{title}</h3>
+      <div className="overflow-x-auto" tabIndex={0} role="region" aria-label={title}>
+        <table className="w-full min-w-[28rem] text-sm">
+          <thead><tr className="text-start text-muted-foreground"><th scope="col" className="py-1 pe-3 text-start font-medium">{t("colReading")}</th><th scope="col" className="py-1 pe-3 text-start font-medium">{t("colValue")}</th><th scope="col" className="py-1 pe-3 text-start font-medium">{t("colChange")}</th><th scope="col" className="py-1 text-start font-medium">{t("colStatus")}</th></tr></thead>
+          <tbody>
+            {items.map((o) => {
+              const prev = previous?.find((x) => x.key === o.key);
+              const change = !prev ? t("changeFirst") : prev.value === o.value ? t("changeSame") : typeof o.value === "number" && typeof prev.value === "number" ? (o.value > prev.value ? t("changeUp", { from: fmt.format(prev.value) }) : t("changeDown", { from: fmt.format(prev.value) })) : t("changeUp", { from: String(prev.value) });
+              const band = typeof o.value !== "number" || (o.low === undefined && o.high === undefined) ? t("bandNone") : o.high !== undefined && o.value > o.high ? t("bandAbove") : o.low !== undefined && o.value < o.low ? t("bandBelow") : t("bandWithin");
+              return (
+                <tr key={o.key} className="border-t border-border">
+                  <th scope="row" className="py-1 pe-3 text-start font-medium"><LText value={o.label} locale={locale} /></th>
+                  <td className="py-1 pe-3 tabular-nums">{show(o)}</td><td className="py-1 pe-3">{change}</td><td className="py-1">{band}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+/** Structured debrief shown after a completed attempt: learning points, decisions to revisit, scope-of-practice summary and related learning. */
+function Debrief({ view, locale }: { view: CaseAttemptView; locale: string }) {
+  const t = useTranslations("Cases");
+  const topic = useTranslations("Topic");
+  const d = view.summary?.debrief;
+  if (!d) return null;
+  const points = d.learning_points ? (d.learning_points[locale] ?? d.learning_points.en ?? []) : [];
+  const fallback = Boolean(d.learning_points) && locale !== "en" && !d.learning_points![locale];
+  const href = (l: { kind: string; code: string }) => (l.kind === "skill" ? `/skills/${l.code}` : l.kind === "medication" ? `/medications/${l.code}` : `/library/${l.code}`);
+  const label = (l: { kind: string; code: string }) => (l.kind === "skill" ? t("openSkill", { code: l.code }) : l.kind === "medication" ? t("openMedication", { code: l.code }) : t("openTopic", { code: l.code }));
+  return (
+    <section aria-labelledby="cs-debrief" className="space-y-4 rounded-lg border border-border bg-card p-4 sm:p-6" data-testid="debrief">
+      <div className="space-y-1">
+        <h2 id="cs-debrief" className="text-xl font-semibold">{t("debriefTitle")}</h2>
+        <p className="text-sm text-muted-foreground">{t("debriefIntro")}</p>
+      </div>
+      {points.length ? (
+        <div className="space-y-1">
+          <h3 className="font-semibold">{t("learningPoints")}</h3>
+          <ul className="list-disc space-y-1 ps-5" {...(fallback ? { lang: "en", dir: "ltr" } : {})}>{points.map((p, i) => <li key={i}>{p}</li>)}</ul>
+        </div>
+      ) : null}
+      <div className="space-y-1">
+        <h3 className="font-semibold">{t("revisitTitle")}</h3>
+        {d.revisit_positions.length ? <ul className="list-disc space-y-1 ps-5">{d.revisit_positions.map((n) => <li key={n}>{t("revisitItem", { n })}</li>)}</ul> : <p>{t("revisitNone")}</p>}
+      </div>
+      <div className="space-y-1">
+        <h3 className="font-semibold">{t("scopeCountsTitle")}</h3>
+        <ul className="list-disc space-y-1 ps-5">{Object.entries(d.scope_counts).map(([k, n]) => <li key={k}>{t("scopeCountItem", { label: topic("scope." + k), n })}</li>)}</ul>
+      </div>
+      {d.links.length ? (
+        <div className="space-y-1">
+          <h3 className="font-semibold">{t("linksTitle")}</h3>
+          <ul className="list-disc space-y-1 ps-5">{d.links.map((l) => <li key={`${l.kind}-${l.code}`}><Link href={href(l)}>{label(l)}</Link></li>)}</ul>
+        </div>
+      ) : null}
+    </section>
+  );
+}
 
 function Trail({ step, locale, expanded }: { step: CaseTrailStep; locale: string; expanded: boolean }) {
   const t = useTranslations("Cases");
@@ -26,6 +97,7 @@ function Trail({ step, locale, expanded }: { step: CaseTrailStep; locale: string
       </summary>
       <div className="mt-3 space-y-3">
         <LText as="p" value={step.info} locale={locale} />
+        <Observations items={step.observations} locale={locale} title={t("observationsAt", { n: step.position })} />
         <LText as="p" value={step.prompt} locale={locale} className="font-medium" />
         <ul className="space-y-2">
           {step.options.map((o, oi) => {
@@ -40,6 +112,7 @@ function Trail({ step, locale, expanded }: { step: CaseTrailStep; locale: string
                   <Badge>{t("points", { points: o.points })}</Badge>
                 </p>
                 <p className="mt-1"><span className="font-semibold">{topic("scope." + o.scope)}</span> — <LText value={o.feedback} locale={locale} /></p>
+                {o.consequence ? <p className="mt-1"><span className="font-semibold">{mine ? t("whatHappened") : t("consequence")}:</span> <LText value={o.consequence} locale={locale} /></p> : null}
               </li>
             );
           })}
@@ -109,6 +182,8 @@ export function CaseRunner({ initial, locale }: { initial: CaseAttemptView; loca
         </section>
       ) : null}
 
+      {done ? <Debrief view={view} locale={locale} /> : null}
+
       {view.trail.length ? (
         <section aria-labelledby="cs-trail" className="space-y-3">
           <h2 id="cs-trail" className="text-xl font-semibold">{done ? t("pathTitle") : t("feedbackTitle", { n: latest!.position })}</h2>
@@ -126,6 +201,7 @@ export function CaseRunner({ initial, locale }: { initial: CaseAttemptView; loca
             <p className="text-sm font-semibold text-muted-foreground">{t("situation")}</p>
             <LText as="p" value={cur.info} locale={locale} />
           </div>
+          <Observations items={cur.observations} previous={latest?.observations} locale={locale} title={t("observationsTitle")} />
           <fieldset className="space-y-3">
             <legend className="mb-2 font-medium"><LText value={cur.prompt} locale={locale} /><span className="sr-only"> {t("yourDecision")}</span></legend>
             <ul className="space-y-3">
