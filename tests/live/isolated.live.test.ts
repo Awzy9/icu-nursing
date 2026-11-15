@@ -244,4 +244,35 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
     }
     expect(((await c.rpc("qb_progress")).data as any).synthetic_fixtures).toBe(true);
   });
+
+  it("account deletion over real Auth and PostgREST: needs the right email, erases the learner, revokes every session, spares others", async () => {
+    const doomed = await makeUser("iso-del", "Isolated Deletion"); ids.push(doomed.id);
+    const other = await makeUser("iso-del-other", "Isolated Keeper"); ids.push(other.id);
+    const c = await signIn(doomed.email), c2 = await signIn(doomed.email); // two sessions (two devices)
+    const keeper = await signIn(other.email);
+    const token = await tokenOf(c);
+    expect(((await sql(`select count(*)::int n from public.profiles where id='${doomed.id}'`))[0] as any).n).toBe(1);
+    // refused: someone else's email, and anonymous callers
+    expect((await c.rpc("delete_my_account", { p_email: other.email })).error?.message).toMatch(/confirmation does not match/);
+    expect((await newClient().rpc("delete_my_account", { p_email: doomed.email })).error).toBeTruthy();
+    expect(((await sql(`select count(*)::int n from auth.users where id='${doomed.id}'`))[0] as any).n).toBe(1);
+    // allowed: the signed-in person, fresh sign-in, own email (case-insensitive)
+    const { data, error } = await c.rpc("delete_my_account", { p_email: doomed.email.toUpperCase() });
+    expect(error).toBeNull(); expect(data).toEqual({ deleted: true });
+    // erased
+    for (const [t, col] of [["auth.users", "id"], ["public.profiles", "id"], ["public.user_roles", "user_id"]] as const)
+      expect(((await sql(`select count(*)::int n from ${t} where ${col}='${doomed.id}'`))[0] as any).n, t).toBe(0);
+    expect(((await sql(`select count(*)::int n from auth.sessions where user_id='${doomed.id}'`))[0] as any).n).toBe(0);
+    // every session is revoked: refresh tokens fail, signing in fails, the old access token cannot act
+    expect((await c.auth.refreshSession()).error).toBeTruthy();
+    expect((await c2.auth.refreshSession()).error).toBeTruthy();
+    expect((await newClient().auth.signInWithPassword({ email: doomed.email, password: PASSWORD })).error).toBeTruthy();
+    expect((await rest("/rpc/qb_start_attempt", token, { method: "POST", body: JSON.stringify({ p_mode: "practice", p_count: 3 }) })).ok).toBe(false);
+    expect((await c.rpc("delete_my_account", { p_email: doomed.email })).error).toBeTruthy(); // a second call cannot repeat
+    // others untouched; the audit entry names nobody
+    expect((await keeper.rpc("qb_progress")).error).toBeNull();
+    expect(((await sql(`select count(*)::int n from auth.users where id='${other.id}'`))[0] as any).n).toBe(1);
+    const a = (await sql("select actor, details::text d, entity_id from public.audit_log where action='account_deleted' order by id desc limit 1"))[0] as any;
+    expect(a.actor).toBeNull(); expect(a.d).not.toContain(doomed.email); expect(a.entity_id).toMatch(/^[0-9a-f]{16}$/);
+  });
 });

@@ -1,7 +1,7 @@
 import pg from "pg";
 
 export type Aal = "aal1" | "aal2";
-export interface Actor { id: string; aal?: Aal; role?: "authenticated" | "anon" }
+export interface Actor { id: string; aal?: Aal; role?: "authenticated" | "anon"; amr?: { method: string; timestamp: number }[] }
 
 let pool: pg.Pool;
 let dbName = "";
@@ -42,7 +42,7 @@ export async function asUser(actor: Actor | null, text: string, params: unknown[
     await client.query("begin");
     const role = actor ? (actor.role ?? "authenticated") : "anon";
     await client.query(`set local role ${role}`);
-    const claims = actor ? { sub: actor.id, role, aal: actor.aal ?? "aal1" } : { role: "anon" };
+    const claims = actor ? { sub: actor.id, role, aal: actor.aal ?? "aal1", ...(actor.amr ? { amr: actor.amr } : {}) } : { role: "anon" };
     await client.query("select set_config('request.jwt.claims', $1, true)", [JSON.stringify(claims)]);
     const res = await client.query(text, params);
     await client.query("commit");

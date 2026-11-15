@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AuthForm } from "@/components/auth/auth-form";
 import { Field, Input, Select } from "@/components/ui/form";
 import { Callout } from "@/components/ui/feedback";
+import { Link } from "@/i18n/navigation";
 import { requireUser } from "@/lib/auth";
 import { isDemoMode } from "@/lib/env";
 import { LEVELS } from "@/lib/content/types";
@@ -38,6 +39,7 @@ export default async function AccountPage({ params }: { params: Promise<{ locale
           </Select>
         </Field>
       </AuthForm>
+      <p className="border-t border-border pt-4 text-sm"><Link href="/account/delete">{t("deleteLink")}</Link></p>
     </div>
   );
 }

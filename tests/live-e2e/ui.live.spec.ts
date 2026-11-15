@@ -415,6 +415,46 @@ test("equipment learning in database mode: bookmarks and progress are saved to t
   }
 });
 
+test("account deletion: a learner re-checks their email, deletes the account, is signed out everywhere, and cannot sign in again; staff are told to contact an administrator", async ({ page }) => {
+  const doomed = await makeUser("ui-del", "UI Deletion"); ids.push(doomed.id);
+  await page.goto("/en/account/delete");
+  await expect(page).toHaveURL(/\/en\/login\?next=%2Faccount%2Fdelete/); // protected: sign in first
+  await login(page, doomed.email);
+  await page.goto("/en/account/delete");
+  await expect(page.getByRole("heading", { level: 1, name: "Delete your account" })).toBeVisible();
+  await expect(page.getByText("This cannot be undone")).toBeVisible();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations.filter((v) => ["serious", "critical"].includes(v.impact ?? ""))).toEqual([]);
+  page.on("dialog", (d) => void d.accept());
+  await page.getByLabel("Your email address").fill("someone-else@example.org");
+  await page.getByLabel(/I understand that my account/).check();
+  await page.getByRole("button", { name: "Delete my account permanently" }).click();
+  await expect(page.getByRole("alert").filter({ hasText: "does not match your account" })).toBeVisible();
+  expect((await sql<{ n: number }>(`select count(*)::int n from auth.users where id='${doomed.id}'`))[0]!.n).toBe(1);
+  await page.getByLabel("Your email address").fill(doomed.email);
+  await page.getByRole("button", { name: "Delete my account permanently" }).click();
+  await expect(page).toHaveURL(/\/en\/account-deleted/, { timeout: 20_000 });
+  await expect(page.getByRole("heading", { level: 1, name: "Your account has been deleted" })).toBeVisible();
+  expect((await sql<{ n: number }>(`select count(*)::int n from auth.users where id='${doomed.id}'`))[0]!.n).toBe(0);
+  await page.goto("/en/dashboard");
+  await expect(page).toHaveURL(/\/en\/login/); // signed out
+  await login(page, doomed.email, PASSWORD, false);
+  await expect(page.locator("main").getByRole("alert")).toContainText("Email or password is incorrect");
+});
+
+test("account deletion pages: the public information page works in English and Arabic; a staff member is told to contact an administrator", async ({ page }) => {
+  await page.goto("/en/account-deletion");
+  await expect(page.getByRole("heading", { level: 1, name: "Delete your account and data" })).toBeVisible();
+  await page.goto("/ar/account-deletion");
+  await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+  await expect(page.getByRole("heading", { level: 1, name: "حذف حسابك وبياناتك" })).toBeVisible();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations.filter((v) => ["serious", "critical"].includes(v.impact ?? ""))).toEqual([]);
+  await login(page, boss.email);
+  await page.goto("/en/account/delete");
+  await expect(page.getByText("Staff and reviewer accounts")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Delete my account permanently" })).toHaveCount(0);
+  await signOut(page);
+});
+
 test("email-link callback: a recovery link signs the user in and the reset form sets a new password", async ({ page }) => {
   const link = await adminAuth<{ hashed_token: string }>("/admin/generate_link", { method: "POST", body: JSON.stringify({ type: "recovery", email: learner.email }) });
   await page.goto(`/auth/callback?token_hash=${link.hashed_token}&type=recovery&next=${encodeURIComponent("/en/reset-password")}`);

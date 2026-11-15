@@ -221,13 +221,15 @@
     "terms": "Terms",
     "contact": "Contact",
     "legalPending": "Legal pages will be published before launch.",
-    "rights": "© {year} ICU Nurse Knowledge Map"
+    "rights": "© {year} ICU Nurse Knowledge Map",
+    "accountDeletion": "Delete your account and data"
   },
   "Account": {
     "title": "Your profile",
     "save": "Save profile",
     "saved": "Profile saved.",
-    "language": "Preferred language"
+    "language": "Preferred language",
+    "deleteLink": "Delete your account"
   },
   "QuestionBank": {
     "title": "Question bank",
@@ -843,6 +845,62 @@
       "crrt-systems": "CRRT systems",
       "enteral-feeding-pumps": "Tube-feeding pumps",
       "pressure-relieving-equipment": "Pressure-relieving equipment"
+    }
+  },
+  "AccountDeletion": {
+    "title": "Delete your account",
+    "publicTitle": "Delete your account and data",
+    "publicIntro": "You can permanently delete your account and the learning data linked to it at any time, from the website or the app. This page explains how, what is deleted and what is kept.",
+    "demo": "Account deletion needs a configured backend. The app is running in demonstration mode.",
+    "warningTitle": "This cannot be undone",
+    "warningBody": "Deleting your account signs you out everywhere and permanently erases your profile and learning data. We cannot restore it afterwards, and you cannot sign in again with this account.",
+    "whatTitle": "What is deleted",
+    "keptTitle": "What is kept",
+    "erased": {
+      "w1": "Your profile: name, email address, country, language and experience level.",
+      "w2": "Your progress, bookmarks and saved study schedule.",
+      "w3": "Your question-bank, study, case and skills attempts and results, and your equipment bookmarks and progress.",
+      "w4": "Your sign-in sessions on every device."
+    },
+    "kept": {
+      "k1": "A short security record that an account was deleted. It contains no name or email address and cannot be traced to you.",
+      "k2": "Older security log entries made before deletion keep only an anonymous account identifier, never your name or email.",
+      "k3": "Educational content is not personal data and is unaffected."
+    },
+    "recovery": "Our hosting provider may keep encrypted backups for a limited time. They are used only to recover the service, are not used to restore individual accounts, and expire automatically.",
+    "howTitle": "How to delete your account",
+    "steps": {
+      "s1": "Sign in to your account. If you signed in more than ten minutes ago you will be asked to sign in again.",
+      "s2": "Open Account, then Delete your account.",
+      "s3": "Type your email address and tick the box to confirm that you understand this is permanent.",
+      "s4": "Select Delete my account permanently and confirm. You are signed out and sent to a confirmation page."
+    },
+    "goToDeletion": "Go to account deletion",
+    "staffTitle": "Staff and reviewer accounts",
+    "staffBody": "Accounts with a staff role (author, clinical reviewer, publisher or administrator), and accounts that hold clinical review records that must be kept, cannot be deleted here. An administrator removes the role first. Contact the administrator of your organisation.",
+    "reauthTitle": "Sign in again to continue",
+    "reauthBody": "For your security, deleting an account needs a sign-in within the last {minutes} minutes.",
+    "reauthButton": "Sign in again",
+    "formTitle": "Confirm deletion",
+    "emailLabel": "Your email address",
+    "emailHint": "Type {email} to confirm.",
+    "understand": "I understand that my account and data will be permanently deleted and cannot be restored.",
+    "submit": "Delete my account permanently",
+    "confirmQuestion": "Delete your account permanently? This cannot be undone.",
+    "cancel": "Cancel and go back to my profile",
+    "deletedTitle": "Your account has been deleted",
+    "deletedBody": "Your account and learning data have been permanently deleted and you have been signed out. Thank you for using the platform.",
+    "home": "Go to the home page",
+    "errors": {
+      "auth": "Please sign in to continue.",
+      "recent": "For your security, please sign in again and then retry within ten minutes.",
+      "secondFactor": "Please complete your second-factor verification and retry.",
+      "mismatch": "The email address does not match your account.",
+      "staff": "Staff accounts are removed by an administrator after their roles are revoked. Please contact your administrator.",
+      "retained": "This account holds clinical review records that must be kept. Please contact an administrator.",
+      "rate": "Too many attempts. Please wait a few minutes and try again.",
+      "invalid": "Please type your email address and tick the confirmation box.",
+      "generic": "The account could not be deleted. Please try again later."
     }
   }
 }

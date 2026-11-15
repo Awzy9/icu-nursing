@@ -4,7 +4,7 @@ import path from "node:path";
 // LIVE integration tests against the approved DEV Supabase project (see scripts/live/mgmt.ts for the pinned ref).
 // Run: NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=... npm run test:live   (needs .env.local from scripts/live/write-env.ts)
 export default defineConfig({
-  resolve: { alias: { "@": path.resolve(__dirname, "src") } },
+  resolve: { alias: { "@icu/schemas": path.resolve(__dirname, "packages/schemas/src"), "@": path.resolve(__dirname, "src") } },
   test: {
     environment: "node",
     include: ["tests/live/**/*.live.test.ts"],

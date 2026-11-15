@@ -4,7 +4,7 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
-  resolve: { alias: { "@": path.resolve(__dirname, "src"), "server-only": path.resolve(__dirname, "tests/unit/stubs/server-only.ts") } },
+  resolve: { alias: { "@icu/schemas": path.resolve(__dirname, "packages/schemas/src"), "@": path.resolve(__dirname, "src"), "server-only": path.resolve(__dirname, "tests/unit/stubs/server-only.ts") } },
   test: {
     environment: "jsdom",
     setupFiles: ["./vitest.setup.ts"],
