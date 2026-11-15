@@ -18,9 +18,10 @@ Branch `claude/vigilant-mendel-95k63h`. Not merged (PR #2 untouched), not deploy
 | `#5`-`#6` | UI suite reached | surfaced **two real product defects**, below |
 | `#7` 42fa2b0 | live API passed (incl. closed GraphQL); UI: 2 passed + CAPTCHA test skipped + MFA enrolment failed | Content-Security-Policy hard-coded `https://` for the Supabase origin, so the browser could not reach a local `http` stack (fixed, loopback-only); `CAPTCHA_MODE=test` added so the CAPTCHA widget test runs (isolated only) |
 | `#9` ed8099f | UI: 5 tests passed incl. registration with real email delivery, CAPTCHA widget, login, MFA enrolment; test 6 failed | a UI test hit the **hosted** project URL hard-coded in the test (read-only GET); now uses the targeted project URL |
-| `#11` baaa012 | **FINAL_ISOLATED_RESULT** | |
+| `#11` baaa012 | live API passed; UI 6 of 11 passed, test 7 failed | the app's own per-IP sign-in limiter (8/min) refused the reviewer's login late in the long serial browser suite ("Too many attempts"); the limiter is now relaxed **only when Supabase is a loopback stack** (production behaviour unchanged) |
+| `#12` 787f64b | **PASSED, every step green** (stack, guard tests, live API suite, build, live UI suite of 11 tests; 3.5 min) | main CI run #43 for the same commit also green |
 
-**The 61 previously blocked live tests (50 API + 11 UI):** FINAL_61_RESULT
+**The 61 previously blocked live tests (50 API + 11 UI):** **Yes.** On the isolated stack in run #12 (commit 787f64b) the live API suite (the original 50 workflow tests plus 9 isolated transport/auth tests) and all 11 live UI tests pass with CAPTCHA enforced (Cloudflare test keys). Nothing was skipped or weakened; the failures on the way were product/test defects, listed above. Only the two tests that need the real Turnstile secret or a real inbox (`captcha-real`, `email`) remain manual against the hosted project.
 
 ### Defects found by running against a real stack (and fixed)
 1. **Misleading password message.** Any server-side weak-password rejection said "at least 12 characters", even for a 23-character password missing an upper-case letter. Now an accurate message (English/Arabic) and clearer help text.
@@ -52,7 +53,17 @@ Updated screenshots: `docs/phase6/screenshots/` (desktop, tablet, mobile; hub, r
 Full write-up: `docs/SECURITY_REVIEW_PHASE6.md`. Summary: all **35** privileged functions are SECURITY DEFINER with a pinned search path, each refuses a user-less token, and each staff function refuses a role-less learner (catalogue-driven test, so new functions cannot slip in). Fixed: unbounded attempt creation (hourly ceilings in the database, migration 0010), unused GraphQL surface (0011), misleading password message, CSP scheme handling. Verified over real PostgREST (isolated stack and hosted dev): answer keys and scoring secrecy, attempt ownership, no learner writes, anonymous denial, fixture control (flipping a development database to `production` hides every fixture through the real API). Remaining risks and the **rollback/backup/recovery** requirements are documented there; headline: the hosted dev project has no stored backups and no point-in-time recovery, which is acceptable for test data but must change before any private staging deployment.
 
 ## 5. Test results (final)
-FINAL_TEST_TABLE
+| Suite | Result |
+|---|---|
+| Lint, typecheck | pass |
+| Unit (Vitest) | 274 pass |
+| Database (real PostgreSQL 16) | 233 pass |
+| Playwright e2e + axe (fixtures engine) | 238 pass, 8 skipped (viewport-specific) |
+| Draft validation | 40/40 topics, 240 MCQs valid as unreviewed drafts |
+| Isolated live API (local Supabase stack, CI #12) | pass |
+| Isolated live UI (11 tests, CI #12) | pass |
+| Hosted dev integration script | 39 checks pass |
+| Main CI (#43) | green |
 
 ## 6. Real versus simulated integration coverage
 | Capability | Real (no mocks) | Simulated / local only |
