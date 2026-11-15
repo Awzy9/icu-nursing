@@ -1,0 +1,195 @@
+{
+ "med_id": "MD-35",
+ "number": 35,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Nitroglycerin (intravenous)",
+ "drug_class": "Organic nitrate vasodilator",
+ "category": "antiarrhythmics-cardiac",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Intravenous vasodilator for peri-operative hypertension, heart failure in acute myocardial infarction and angina and other labelled uses (the product read is nitroglycerin in dextrose). Nursing focus: vasodilator effects, headache and the effect of tubing material on delivery.",
+ "batch": 4,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-NITROGLYCERIN",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-NITROGLYCERIN",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes nitroglycerin in dextrose injection as indicated for peri-operative hypertension, for control of heart failure in the setting of acute myocardial infarction and for treatment of angina pectoris in other settings.",
+     "support": "sourced",
+     "sources": [
+      "L-NITROGLYCERIN"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Use the infusion set and tubing the pharmacy and unit protocol specify, and report any doubt about the delivery equipment.",
+     "support": "partial",
+     "sources": [
+      "L-NITROGLYCERIN"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Some plastic infusion tubing can adsorb nitroglycerin, so the amount delivered can differ from what was intended; the label states no simple correction can be applied, so the pharmacy's specified equipment matters.",
+     "support": "sourced",
+     "sources": [
+      "L-NITROGLYCERIN"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Adverse reactions are generally dose-related and almost all result from vasodilator activity; headache, which may be severe, is the most commonly reported.",
+     "support": "sourced",
+     "sources": [
+      "L-NITROGLYCERIN"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate for severe headache, marked hypotension, dizziness or fainting, or chest pain.",
+     "support": "partial",
+     "sources": [
+      "L-NITROGLYCERIN"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "observe",
+   "text": "Monitor blood pressure and heart rate at the unit's frequency.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "kind": "assess",
+   "text": "Ask about headache and dizziness.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "L-NITROGLYCERIN"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Confirm the specified infusion set is in use.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-NITROGLYCERIN"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report hypotension, fainting or worsening chest pain.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-NITROGLYCERIN"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record readings and equipment checks.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Contraindications and drug interactions were not summarised from the fields read.",
+  "Equipment choice and delivery calculations: local protocol.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}
