@@ -1,9 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "installCommand": "npm ci",
+  "installCommand": "npm install --no-audit --no-fund",
   "buildCommand": "npm run build",
-  "regions": ["bom1"],
+  "regions": [
+    "bom1"
+  ],
   "ignoreCommand": "bash scripts/vercel-ignore.sh",
-  "github": { "silent": true }
+  "github": {
+    "silent": true
+  }
 }
