@@ -3,10 +3,10 @@
  * The access token is never read here: in the sandbox an HTTPS proxy injects it; on a developer machine set
  * SUPABASE_ACCESS_TOKEN. The project ref is pinned so this tooling cannot touch any other project.
  */
-import { ISOLATED, assertIsolatedDb, isolatedEnv } from "./target";
-export const REF = ISOLATED ? "isolated-local" : "dvmevjomyaqrojsiffnf";
+import { DEV_REF as DEV, ISOLATED, assertIsolatedDb, isolatedEnv } from "./target";
+export const REF = ISOLATED ? "isolated-local" : DEV;
 /** The approved development project holds the owner's REAL Cloudflare Turnstile secret. */
-export const DEV_REF = "dvmevjomyaqrojsiffnf";
+export const DEV_REF = DEV;
 
 /**
  * Guard for anything that would replace or disable the project's CAPTCHA secret with a Cloudflare TEST key or switch CAPTCHA off.

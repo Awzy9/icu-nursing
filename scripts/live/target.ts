@@ -11,6 +11,9 @@ import path from "node:path";
 interface Allow { api: string[]; db: string[]; captchaTestSecrets: string[] }
 const allow: Allow = JSON.parse(readFileSync(path.resolve(__dirname, "isolated-targets.json"), "utf8"));
 
+/** The approved hosted DEVELOPMENT project (holds the real Turnstile secret). It can never be an isolated target. */
+export const DEV_REF = "dvmevjomyaqrojsiffnf";
+
 export const ISOLATED = process.env.LIVE_TARGET === "isolated";
 
 const origin = (u: string) => { try { return new URL(u).origin; } catch { return ""; } };

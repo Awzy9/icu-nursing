@@ -41,5 +41,15 @@ jobs:
       - name: Install browser
         run: npx playwright install --with-deps chromium
       - name: End-to-end and accessibility tests
-        run: npm run test:e2e
-        env: { CI: "true" }
+        run: npx playwright test --reporter=line,json
+        env: { CI: "true", PLAYWRIGHT_JSON_OUTPUT_NAME: pw-results.json }
+      - name: Summarise end-to-end failures
+        if: failure()
+        run: |
+          node -e '
+            const r = JSON.parse(require("fs").readFileSync("pw-results.json","utf8"));
+            const walk = (s, p=[]) => [...(s.specs||[]).flatMap(sp => sp.tests.filter(t => t.status!=="expected" && t.status!=="skipped").map(t => `${t.projectName} :: ${[...p, sp.title].join(" > ")} :: ${t.status} :: ${(t.results.at(-1)?.error?.message||"").split("\n")[0].slice(0,200)}`)), ...(s.suites||[]).flatMap(c => walk(c, [...p, c.title]))];
+            console.log("FAILED E2E TESTS:"); r.suites.flatMap(s => walk(s)).forEach(x => console.log(" - " + x));'
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with: { name: e2e-results, path: "test-results\npw-results.json", if-no-files-found: ignore }
