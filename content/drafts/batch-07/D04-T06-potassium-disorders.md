@@ -162,7 +162,7 @@ B. Checking the line and site during an ordered calcium infusion and reporting s
 C. Measuring blood glucose at the timed intervals after insulin and glucose.
 D. Connecting the cardiac monitor and recording a 12-lead ECG as ordered.
 **Answer: A.**
-**Why correct:** Selecting drugs and doses is a prescribing decision.
+**Why correct:** Selecting the calcium salt, the insulin and glucose amounts and any binder is drug and dose selection, a prescriber decision with pharmacist input. Timed monitoring, ECG and reporting are nursing actions.
 **Why not B:** Site checks and reporting are nursing actions.
 **Why not C:** Timed monitoring is a nursing task.
 **Why not D:** Monitoring and ECG are nursing tasks.

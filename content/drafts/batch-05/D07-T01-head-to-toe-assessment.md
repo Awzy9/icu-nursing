@@ -90,7 +90,7 @@ At the start of the shift you introduce yourself, identify the patient with two 
 A 70-year-old woman on day 5 after surgery is assessed head to toe. The nurse finds a new swollen, tender left calf, a heart rate of 108, and a red sacral area that does not blanch. She reports the calf and pulse promptly, offloads the sacrum, records the findings and asks for review.
 
 ## 17. MCQs
-**Q1 (prioritization).** At the start of a head-to-toe assessment, which step comes first according to the checklist?
+**Q1 (understanding).** At the start of a head-to-toe assessment, which step comes first according to the checklist?
 A. Safety steps and a primary survey of airway, breathing, circulation and mental status, with emergency help if needed.
 B. Auscultating bowel sounds in all four quadrants for a full minute before anything else is examined or the patient is approached.
 C. Measuring the weight trend and the 24-hour intake and output totals before approaching the patient.
@@ -101,13 +101,13 @@ D. Staging any pressure injury found on the sacrum or heels, because skin findin
 **Why not C:** Weight and balance review come after the primary survey.
 **Why not D:** Skin staging is part of the integumentary assessment, later in the sequence.
 
-**Q2 (application).** During the cardiovascular assessment, which technique matches the checklist?
+**Q2 (application).** A nurse is carrying out the cardiovascular part of a head-to-toe assessment. Which technique matches the checklist?
 A. Listen over one area of the chest for ten seconds and record the rate, then move on to the respiratory system.
-B. Palpate a single pulse on one limb, then record that the pulses are present and move to the next system.
-C. Check the pulses on the dominant side, because the other side will be the same in nearly every patient.
+B. Palpate a single pulse on one limb, then record that the pulses are present and move on to the next system.
+C. Check the pulses on the dominant side only, because the other side will be the same in nearly every patient.
 D. Compare pulses on both sides and take an apical pulse for one minute, listening in the five auscultation areas.
 **Answer: D.**
-**Why correct:** The checklist directs bilateral comparison of pulses and a one-minute apical pulse with the five areas.
+**Why correct:** The checklist directs comparing pulses on both sides and taking an apical pulse for one minute across the five auscultation areas. The other options are too brief, too limited or ignore asymmetry, which is a key finding.
 **Why not A:** Too brief and too limited.
 **Why not B:** One pulse does not compare perfusion side to side.
 **Why not C:** Asymmetry is a key finding and requires both sides.
@@ -129,12 +129,12 @@ B. It sets numeric thresholds for escalation in every body system and for every 
 C. It guides a routine, general, daily assessment by an entry-level nurse; focused and specialty assessments follow unit guidelines.
 D. It replaces the unit's monitoring and early-warning policies when a patient is in a critical care area or an isolation room.
 **Answer: C.**
-**Why correct:** The checklist describes itself this way.
+**Why correct:** The checklist presents itself as a routine, general, daily assessment for an entry-level nurse. It does not replace focused or specialty assessments, which follow unit guidelines, and it is not an ICU-specific standard.
 **Why not A:** The checklist is a general inpatient tool, not an ICU-specific standard, so this does not follow.
 **Why not B:** It does not give numeric thresholds.
 **Why not D:** It supplements, not replaces, local policies.
 
-**Q5 (documentation).** Which entry best documents an oxygen device during a respiratory assessment?
+**Q5 (documentation).** A nurse is documenting the respiratory assessment of a patient on oxygen. Which entry best documents the oxygen device?
 A. "Patient on oxygen", because the equipment itself is visible to the next nurse who enters the room.
 B. "Oxygen on, patient comfortable", because a short note is quicker and the saturation is already charted.
 C. The device name and the flow rate or FiO₂, with the condition of the skin under the device.
@@ -145,7 +145,7 @@ D. Only the saturation reading, since the device and the flow can be seen on the
 **Why not B:** Gives no device or rate and no objective data.
 **Why not D:** The device and rate are needed to interpret the saturation.
 
-**Q6 (safety).** At the end of an assessment, which actions does the checklist list before leaving the room?
+**Q6 (understanding).** At the end of an assessment, which actions does the checklist list before leaving the room?
 A. Leave the bed raised for convenience and move the call light out of reach so that the patient can rest.
 B. Call light in reach, bed low and locked, rails per policy, risk-free room, PPE removed, hand hygiene.
 C. Document the findings later at the end of the shift, whatever the time, and leave the room as it is.

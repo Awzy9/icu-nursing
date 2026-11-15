@@ -125,7 +125,7 @@ B. Compress 3–4 cm at a rate of about 80 per minute, leaning on the chest betw
 C. Compress as hard as possible and as fast as possible, ignoring recoil, so that the blood flow is maximal.
 D. Compress only once per second after the airway has been secured, since compressions before that are ineffective.
 **Answer: A.**
-**Why correct:** Matches the BLS text, including bed use and compensation.
+**Why correct:** The BLS text describes compressions at a depth and rate that allow full recoil between compressions, and says that on a mattress the rescuer compresses deeper to compensate for the soft surface. The other options are too shallow, too slow, too fast or lean on the chest.
 **Why not B:** Too shallow, too slow, and leaning prevents recoil.
 **Why not C:** Excessive speed and no recoil reduce effectiveness.
 **Why not D:** Compressions should not wait for the airway.

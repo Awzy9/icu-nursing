@@ -176,7 +176,7 @@ B. Printing a 6-second strip and recording the rhythm and the patient's status.
 C. Deciding on the treatment for a newly identified dysrhythmia, such as the drug, cardioversion or pacing.
 D. Calling for help when the patient is pulseless.
 **Answer: C.**
-**Why correct:** Treatment choice is a prescribing decision.
+**Why correct:** Deciding which drug, cardioversion or pacing to use for a new dysrhythmia is a treatment decision for the prescriber or team. Applying electrodes, documenting and calling for help are nursing actions.
 **Why not A:** Electrode application is a nursing skill.
 **Why not B:** Documentation is a nursing task.
 **Why not D:** Calling for help is a nursing responsibility.

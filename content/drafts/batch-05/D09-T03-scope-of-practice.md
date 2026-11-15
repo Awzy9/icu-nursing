@@ -119,7 +119,7 @@ D. Scope is determined by how long a nurse has worked in the unit, regardless of
 **Why not C:** Orders do not override legal scope or competence.
 **Why not D:** Experience contributes to competence but does not define legal scope.
 
-**Q3 (application).** Which duty is listed in the Open RN legal chapter as an example of negligent practice?
+**Q3 (understanding).** Which duty is listed in the Open RN legal chapter as an example of negligent practice?
 A. Taking the patient's vital signs at the interval ordered by the plan of care and recording them on the chart.
 B. Reporting a medication error through the incident system so that the agency can investigate the system causes.
 C. Asking a more experienced nurse for supervision before performing a procedure for the first time.
@@ -141,13 +141,13 @@ D. Accept the task whenever the unit manager is present, whatever your own compe
 **Why not C:** Delegation must match training and demonstrated ability.
 **Why not D:** A manager's presence does not replace competence.
 
-**Q5 (safety).** Why do legal tests of negligence stress documentation?
-A. Documentation is needed for billing and has no bearing on how care is judged in a legal review of the case.
+**Q5 (safety).** A student nurse asks why legal reviews of negligence place so much weight on documentation. Which explanation is correct?
+A. Documentation is needed for billing and has no bearing on how care is judged when a case is reviewed in law.
 B. An undocumented assessment or action is considered not done in US courts, so records must be accurate.
 C. Charts must be as long as possible to show effort, because courts count the number of words that were recorded.
 D. Physicians' notes count as evidence, so nursing documentation is optional once the orders have been entered.
 **Answer: B.**
-**Why correct:** The chapter states this rule of thumb.
+**Why correct:** The chapter gives the rule of thumb that an undocumented assessment or action is treated as not done, which is why accurate records matter in a legal review. Length is not required, and nursing notes form part of the record.
 **Why not A:** The purpose is accurate clinical and legal records.
 **Why not C:** Length is not required; accuracy is.
 **Why not D:** Nursing documentation counts as part of the record.

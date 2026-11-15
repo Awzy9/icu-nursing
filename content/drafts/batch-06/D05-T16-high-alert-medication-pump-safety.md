@@ -142,7 +142,7 @@ B. The list only applies to oral medications, which are never suitable for a sec
 C. Pump libraries make all checks by a second clinician legally unnecessary in every hospital and country.
 D. They are not always the optimal strategy and may not be practical for all drugs on the list.
 **Answer: D.**
-**Why correct:** This is the note in the ISMP list introduction; it names other safeguards such as standardisation, limiting access, labels, decision support and automated alerts.
+**Why correct:** The ISMP list introduction says independent double checks are not always the best safeguard and may be impractical for every high-alert medicine, so organisations should consider other safeguards, such as standardisation and limiting access, chosen by local policy.
 **Why not A:** ISMP does not say that double checks cause errors.
 **Why not B:** The list includes intravenous and other routes.
 **Why not C:** Neither source says that checks become unnecessary; policy decides.

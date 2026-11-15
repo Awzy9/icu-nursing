@@ -117,7 +117,7 @@ B. The lungs, the liver and the gut, because these organs show the earliest and 
 C. The heart, the eyes and the bones, because these structures can be examined without any equipment.
 D. The blood pressure cuff, the pulse oximeter and the ECG, because monitors give the most objective information.
 **Answer: A.**
-**Why correct:** Skin, kidneys and brain can be assessed at the bedside.
+**Why correct:** The consensus names the skin, kidneys and brain as windows because perfusion can be judged at the bedside from skin findings, urine output and mental state without special equipment; other organs are less accessible.
 **Why not B:** These organs are less accessible at the bedside.
 **Why not C:** Not part of the consensus statement.
 **Why not D:** These are devices, not organ windows.
@@ -128,7 +128,7 @@ B. A patient with a stable low-normal pressure who has had these values for two 
 C. A patient who is awaiting discharge with normal observations and a stable lactate.
 D. A patient with cool mottled skin, new confusion and urine output that has fallen over two hours.
 **Answer: D.**
-**Why correct:** Several perfusion signs in three windows suggest shock.
+**Why correct:** Cool mottled skin, new confusion and falling urine output show poor perfusion in all three bedside windows at once, which suggests shock and needs urgent escalation. The other patients are stable.
 **Why not A:** Stable with good perfusion.
 **Why not B:** A stable and improving patient does not need the most urgent response of the group.
 **Why not C:** Stable with normal findings.
@@ -144,13 +144,13 @@ D. Delay giving the treatments until the lactate result is known, so that the te
 **Why not C:** Reassessment is shared and needed after each intervention.
 **Why not D:** Delay may harm; early treatment is recommended.
 
-**Q5 (application).** Which statement about lactate in suspected shock is most accurate based on the consensus?
+**Q5 (understanding).** Which statement about lactate in suspected shock is most accurate based on the consensus?
 A. A single normal lactate rules out shock, so no further assessment is needed after that one result is back.
 B. Measure it when shock is suspected; it usually exceeds 2 mmol/L; repeated values help monitor response.
 C. Lactate matters in patients with sepsis, so it is not needed when shock has another cause such as bleeding.
 D. Lactate should be measured once at admission and not repeated, because later values do not change management.
 **Answer: B.**
-**Why correct:** These statements appear in the consensus.
+**Why correct:** The consensus advises measuring lactate when shock is suspected, notes that it is usually raised, and recommends repeated values to follow the response. It also stresses that no single variable proves or excludes shock.
 **Why not A:** No single variable should be used to diagnose or exclude shock.
 **Why not C:** The consensus applies to all shock types.
 **Why not D:** Serial measurements are recommended to guide and monitor.

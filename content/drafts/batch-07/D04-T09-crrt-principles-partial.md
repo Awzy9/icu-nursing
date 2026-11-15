@@ -109,7 +109,7 @@ B. Heparin may continue in the circuit itself but must be stopped in the flushes
 C. No change is needed because HIT does not occur during renal replacement therapy in an ICU patient.
 D. All heparin must be stopped, and a direct thrombin or Factor Xa inhibitor is recommended instead.
 **Answer: D.**
-**Why correct:** Recommendation 5.3.4 (1A).
+**Why correct:** KDIGO recommends stopping all heparin when HIT is suspected and using a direct thrombin or Factor Xa inhibitor instead (1A). Continuing or increasing heparin, including in the circuit, would worsen HIT.
 **Why not A:** Heparin worsens HIT, so continuing or increasing it would harm the patient.
 **Why not B:** The statement is that all heparin must be stopped, not part of it.
 **Why not C:** HIT can occur with heparin exposure in RRT.
@@ -120,12 +120,12 @@ B. An antibiotic lock instilled in the catheter before the first use, to prevent
 C. A topical antibiotic ointment applied to the insertion site before the first use of the catheter.
 D. No checks of any kind, because ultrasound guidance makes any later radiograph unnecessary.
 **Answer: A.**
-**Why correct:** Recommendation 5.4.4 (1B) for internal jugular and subclavian catheters.
+**Why correct:** KDIGO recommends a chest radiograph soon after placing an internal jugular or subclavian dialysis catheter and before first use, to confirm position and exclude complications. The distractors describe measures KDIGO suggests against, or recommends in addition.
 **Why not B:** KDIGO suggests not using antibiotic locks (2C).
 **Why not C:** KDIGO suggests not using topical antibiotics (2C).
 **Why not D:** Ultrasound guidance is recommended in addition to, not instead of, the radiograph.
 
-**Q4 (judgment).** The prescription for CRRT is not being delivered because the therapy has been interrupted several times. What is the best action?
+**Q4 (judgment).** On a unit running CRRT, the prescription is not being delivered because the therapy has been interrupted several times. What is the best action?
 A. Say nothing about it, since the prescribed dose is only a target and not really important to the patient.
 B. Increase the machine settings yourself to make up the lost time, without waiting for an order to do so.
 C. Document and report the interruptions and the amount delivered so that the prescription can be reviewed.
@@ -142,7 +142,7 @@ B. Antibiotic locks are recommended for all non-tunnelled dialysis catheters in 
 C. It suggests not using topical antibiotics at the insertion site or antibiotic locks to prevent catheter infection.
 D. A prophylactic course of systemic antibiotics should be given for the whole duration of CRRT in all patients.
 **Answer: C.**
-**Why correct:** Recommendations 5.4.5 and 5.4.6 (both 2C).
+**Why correct:** KDIGO suggests not using topical antibiotics at the insertion site and not using antibiotic locks to prevent infection of non-tunnelled dialysis catheters. Each distractor misstates one of these suggestions.
 **Why not A:** The suggestion is against topical antibiotics.
 **Why not B:** The suggestion is against antibiotic locks.
 **Why not D:** The guideline makes no such statement in the sections read.
@@ -153,7 +153,7 @@ B. Deciding the anticoagulation strategy, such as regional citrate or heparin.
 C. Documenting downtime and the net fluid balance.
 D. Checking that the catheter site is clean and dry.
 **Answer: B.**
-**Why correct:** Anticoagulation choice is a prescribing decision.
+**Why correct:** Choosing the anticoagulation strategy for CRRT, such as regional citrate or heparin, is a prescribing decision. Reporting, documenting and checking the site are nursing responsibilities.
 **Why not A:** Reporting is a nursing responsibility.
 **Why not C:** Documentation is a nursing responsibility.
 **Why not D:** Site checks are a nursing responsibility.

@@ -107,13 +107,13 @@ D. Do not increase the FiO₂ during the SBT, because raising it can mask hypoxa
 **Why not B:** Anxiety is not a reason in the guideline.
 **Why not C:** Alternating FiO₂ is not described.
 
-**Q3 (judgment).** Which approach to timing do the AARC authors suggest for SBTs?
+**Q3 (understanding).** Which approach to timing do the AARC authors suggest for SBTs?
 A. A standardised approach to assessing for, and if appropriate completing, an SBT before noon each day, with other care coordinated around it.
-B. Starting SBTs in the evening, when the patient is more settled and the effects of the day's sedation have worn off.
-C. Doing an SBT at a different time every day, so that staff can compare how the patient copes at each time.
+B. Starting SBTs in the evening, when the patient is more settled and the day's sedation has had hours to wear off.
+C. Doing an SBT at a different time every day, so that staff can compare how the patient copes at each time of day.
 D. Avoid performing an SBT on the same day as a sedation interruption, so that the two procedures are kept separate and judged one at a time.
 **Answer: A.**
-**Why correct:** This is the third recommendation (conditional; very low certainty).
+**Why correct:** The AARC authors suggest a standardised approach to assessing for, and if appropriate completing, an SBT before noon each day, coordinated with other care including sedation interruption (conditional recommendation, very low certainty).
 **Why not B:** The guideline recommends before noon.
 **Why not C:** The guideline suggests a standard approach, not variation.
 **Why not D:** The guideline says SATs and SBTs should be coordinated.
@@ -135,7 +135,7 @@ B. Because the RSBI has moderate sensitivity but poor specificity for extubation
 C. Because the RSBI can only be measured by physicians and cannot be measured by nurses or respiratory therapists in any unit.
 D. Because modern ventilators can no longer display the breathing rate and tidal volume that are needed to calculate it reliably at the bedside.
 **Answer: B.**
-**Why correct:** This is the evidence summary given for the first PICO question.
+**Why correct:** The guideline's evidence summary found the RSBI had moderate sensitivity but poor specificity for extubation success, and that requiring it delayed liberation in a trial, so it suggests the RSBI is not needed to decide readiness for an SBT.
 **Why not A:** No harm from measurement is claimed.
 **Why not C:** Who measures it is not the reason.
 **Why not D:** The reason is not technical.

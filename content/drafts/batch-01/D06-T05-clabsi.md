@@ -114,13 +114,13 @@ D. Reassess the observations, escalate with SBAR mentioning the line, and prepar
 **Why not B:** Removing a line is a prescriber decision and may harm the patient.
 **Why not C:** Waiting for a routine round delays potentially life-threatening care.
 
-**Q3 (application).** Which sequence best reduces contamination when giving an intermittent injection through a needleless connector?
+**Q3 (application).** A nurse is about to give an intermittent injection through a needleless connector on a patient's central line. Which sequence best reduces contamination?
 A. Hand hygiene, scrub the connector with the approved antiseptic and let it dry, then access with a sterile device.
-B. Wipe once with dry gauze, access with a sterile syringe, and put the used cap back on if it looks undamaged.
-C. Put on gloves, flush through the connector, and disinfect it afterwards to remove anything left on the surface.
-D. Disinfect the connector, access with a clean but non-sterile syringe, and flush the line later in the shift.
+B. Wipe the connector once with dry gauze, access it with a sterile syringe, and put the removed cap back on if it looks undamaged.
+C. Put on gloves, flush through the connector to clear it, and disinfect the connector afterwards to remove anything left on the surface.
+D. Disinfect the connector, access it with a clean but non-sterile syringe kept in the bedside drawer, and flush the line later in the shift.
 **Answer: A.**
-**Why correct:** Disinfecting before every access and using sterile devices is recommended in both documents.
+**Why correct:** Hand hygiene, then scrubbing the connector with the approved antiseptic and letting it dry before every access with a sterile device, is the recommended sequence. Dry gauze is not disinfection, disinfecting after access is too late, and non-sterile devices must not enter the system.
 **Why not B:** Dry gauze is not disinfection, and reusing caps contaminates the connector.
 **Why not C:** Disinfection has to come before access, not after.
 **Why not D:** Only sterile devices should enter the system, and delayed flushing adds a further risk.

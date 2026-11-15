@@ -106,7 +106,7 @@ D. Stop suctioning, restore oxygenation per protocol, assess the patient and cal
 **Why not B:** Saline is not recommended and can worsen oxygenation.
 **Why not C:** Waiting prolongs hypoxaemia.
 
-**Q2 (application).** Which finding best indicates a need for suctioning in an intubated adult?
+**Q2 (application).** A nurse is caring for an intubated adult patient. Which finding best indicates a need for suctioning?
 A. Audible secretions in the airway and a sawtooth flow waveform on the ventilator.
 B. The clock shows that it is two hours since the last suction was done.
 C. The patient is awake and tolerating the tube without coughing or any visible secretions.

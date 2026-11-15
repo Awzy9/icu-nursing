@@ -103,7 +103,7 @@ D. Sounds, scoring 2, because the patient attempts to mouth words and appears to
 **Why not B:** Score 1 means no audible response without an interfering factor.
 **Why not D:** Mouthing is not an audible moan or groan.
 
-**Q2 (judgment).** Which sequence of stimulation matches the structured approach?
+**Q2 (understanding).** Which sequence of stimulation matches the structured approach?
 A. Start with trapezius pinch to make sure of a response, then use sound only if the patient does not react.
 B. Use supraorbital pressure first because it gives the clearest response, then move on to sound and fingertip pressure.
 C. Use physical pressure only if there is no response to a spoken or shouted request, starting with the fingertip.

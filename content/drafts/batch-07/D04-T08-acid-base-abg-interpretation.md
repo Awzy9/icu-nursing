@@ -102,7 +102,7 @@ A nurse takes a sample from an arterial line, notes the FiO₂ and ventilator se
 A 54-year-old man with vomiting has a pH of 7.52, PaCO₂ 42 and HCO₃ 33. The nurse recognises metabolic alkalosis (pH and HCO₃ both high, PaCO₂ normal, uncompensated), reports it with the history of vomiting and nasogastric suction, checks the patient's mental state and breathing, and records the values; the prescriber decides on treatment of the cause.
 
 ## 17. MCQs
-**Q1 (application).** An ABG shows pH 7.28, PaCO₂ 58 mm Hg and HCO₃ 25 mEq/L. What does the textbook's method identify?
+**Q1 (application).** A nurse reviews a patient's arterial blood gas: pH 7.28, PaCO₂ 58 mm Hg and HCO₃ 25 mEq/L. What does the textbook's method identify?
 A. Metabolic acidosis, because the pH is below 7.35 and the bicarbonate level is within its normal range.
 B. Respiratory alkalosis, because a raised PaCO₂ always makes the blood more alkaline and raises the pH.
 C. Metabolic alkalosis, because the PaCO₂ is higher than the normal range and the bicarbonate is unchanged.
@@ -152,7 +152,7 @@ B. It is not recommended as a substitute for an arterial PaO₂ (grade 1A).
 C. It is acceptable in children, in whom venous samples are considered equivalent to arterial ones.
 D. It is the preferred sample for ventilated patients because it avoids the risks of arterial puncture.
 **Answer: B.**
-**Why correct:** Recommendation 14.7.
+**Why correct:** The AARC 2013 guideline recommends against using a peripheral venous PO2 as a substitute for arterial PaO2 (grade 1A, recommendation 14.7). The recommendation is not limited to children, and the arterial sample remains the reference.
 **Why not A:** The guideline recommends against it.
 **Why not C:** The recommendation is not limited to children.
 **Why not D:** An arterial sample is the reference.

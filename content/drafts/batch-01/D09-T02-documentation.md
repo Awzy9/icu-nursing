@@ -94,13 +94,13 @@ D. Leave it unrecorded, because the pharmacy record already shows that the dose 
 **Why not B:** Only the person who did the task should document it; others cannot attest to her actions.
 **Why not D:** Dispensing is not administration, and the record must show what was given.
 
-**Q2 (judgment).** Which entry is most appropriate in the record?
-A. "Patient was agitated and difficult overnight, and the family were demanding."
+**Q2 (judgment).** A nurse is recording an overnight event after a patient complained of chest pain. Which entry is most appropriate in the record?
+A. "Patient was agitated and difficult overnight, and the family were demanding and kept pressing the call bell."
 B. "03:10 grimaced and said 'my chest hurts', pain 7/10, HR 112; doctor called 03:12."
-C. "Patient is probably just anxious; no action needed at this time."
-D. "Patient was fine all night according to the other nurse who looked after him."
+C. "Patient is probably just anxious; no action needed at this time, so nothing further has been recorded."
+D. "Patient was fine all night according to the other nurse who looked after him, so no observations were repeated."
 **Answer: B.**
-**Why correct:** It is objective and time-stamped, with a quotation, measurements and the action taken.
+**Why correct:** The entry is objective and time-stamped, with a quotation, measurements and the action taken, so another clinician can rely on it. The others use subjective labels, opinion or someone else's report presented as the writer's own.
 **Why not A:** It uses subjective labels with no observable detail.
 **Why not C:** It is an opinion without any recorded assessment findings.
 **Why not D:** It reports another person's observation as if it were the writer's own, without attribution.
@@ -111,7 +111,7 @@ B. Cross it out repeatedly so that nobody can read the original value.
 C. Replace the whole sheet with a neat rewritten copy and discard the original page so that the chart is easy to read.
 D. Draw one line through it, write "mistaken entry" with her initials, and add the correct entry.
 **Answer: D.**
-**Why correct:** The error stays legible and the correction is attributable.
+**Why correct:** A single line, the words 'mistaken entry' and the writer's initials keep the original readable and show who corrected it, which supports an honest, auditable record. Obscuring or removing entries suggests concealment.
 **Why not A:** Obscuring the original suggests concealment and is not allowed.
 **Why not B:** The original entry must remain readable.
 **Why not C:** Discarding part of the record is inappropriate; entries must be preserved.
@@ -127,13 +127,13 @@ D. Completing an education note for a patient who is already well informed and h
 **Why not C:** A cosmetic change that adds nothing to safety.
 **Why not D:** Not safety-critical and not urgent.
 
-**Q5 (monitoring).** Which finding on chart review should prompt follow-up?
-A. A signed and dated correction of a mistaken entry with the original still visible.
-B. A progress note that includes times, measurements and what the patient said.
+**Q5 (monitoring).** While reviewing a patient's chart at the end of a shift, which finding should prompt follow-up?
+A. A signed and dated correction of a mistaken entry, made with a single line so that the original is still visible.
+B. A progress note that includes the time, measurements and a quotation of what the patient said.
 C. Hourly observations with a five-hour gap during a period of falling blood pressure.
-D. A medication record that gives the reason a dose was withheld.
+D. A medication record that gives the reason a prescribed dose was withheld and who was told.
 **Answer: C.**
-**Why correct:** A gap during deterioration suggests missed monitoring or missed recording and needs action.
+**Why correct:** A five-hour gap in observations while the blood pressure is falling suggests missed monitoring or recording and needs follow-up. Correcting an error, a detailed note and a recorded reason for a withheld dose are good practice.
 **Why not A:** This is appropriate correction practice.
 **Why not B:** This is good documentation practice.
 **Why not D:** Recording the reason for a withheld dose is expected practice.

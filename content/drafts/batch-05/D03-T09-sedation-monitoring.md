@@ -107,7 +107,7 @@ B. They can achieve and maintain a light level of sedation in intubated adults, 
 C. They remove the need for the nurse to assess sedation with a validated scale, since the protocol decides the dose.
 D. They are legally required in every hospital in every country that cares for mechanically ventilated patients.
 **Answer: B.**
-**Why correct:** This is the SCCM statement.
+**Why correct:** SCCM states that daily sedation interruption and nurse-protocolised targeted sedation can achieve and maintain light sedation in intubated adults. They do not guarantee shorter stays, replace validated scales or amount to a legal requirement.
 **Why not A:** No such guarantee is stated.
 **Why not C:** Scales remain necessary because they give a structured, repeatable measure of sedation depth.
 **Why not D:** The statement is not a legal requirement.
@@ -134,13 +134,13 @@ D. Stop the trial per protocol, restore sedation and oxygenation as ordered, ass
 **Why not B:** Physical force is inappropriate and unsafe.
 **Why not C:** Changing alarm limits hides the problem.
 
-**Q5 (application).** Which tool statement is accurate according to SCCM?
+**Q5 (application).** A nurse is reviewing how sedation is assessed on a ventilated unit. Which statement about monitoring tools is accurate according to SCCM?
 A. Vital signs are the best way to monitor sedation, because they change before the patient moves or speaks.
 B. Bispectral index suits sedative titration in deep sedation or neuromuscular blockade, and may help when no scale can be used.
 C. Bispectral index replaces sedation scales in all patients, so scales need no longer be recorded in the chart.
 D. Sedation scales are unnecessary in ventilated patients because the ventilator reports the depth of sedation directly.
 **Answer: B.**
-**Why correct:** This is the SCCM statement.
+**Why correct:** SCCM's statement is that bispectral index can help titrate sedation in deep sedation or neuromuscular blockade, and when no scale can be used. It supplements scales and does not replace them, and vital signs are not a valid sedation measure.
 **Why not A:** Vital signs are not valid indicators of pain and are not the sedation measure.
 **Why not C:** BIS is not a general replacement.
 **Why not D:** Scales are central to targeted sedation.

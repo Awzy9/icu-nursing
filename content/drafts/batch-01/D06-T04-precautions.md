@@ -93,7 +93,7 @@ D. Start the interim contact-precaution measures in policy now and tell the char
 **Why not B:** Precautions are based on the presentation and risk, not on a confirmed laboratory result.
 **Why not C:** Protecting only one task leaves the room, equipment and later care unprotected, and nobody with infection-prevention expertise is told.
 
-**Q2 (judgment).** Which approach to choosing PPE for a task is most consistent with standard precautions?
+**Q2 (judgment).** A nurse is about to care for a patient on a busy unit. Which approach to choosing PPE for a task is most consistent with standard precautions?
 A. Base it on the expected exposure for the task, such as splashes or secretion contact, and the precaution level.
 B. Use the same set of PPE for every task on a patient, chosen from the diagnosis written on the isolation sign.
 C. Use whatever is nearest at the time, because any barrier is better than none and speed is important in the ICU.
@@ -126,13 +126,13 @@ D. Wipe the monitor and the bed rails with the same cloth, then go to the desk t
 **Why not C:** Gloves must be removed and replaced between patients; reuse is a breach.
 **Why not D:** One cloth used across surfaces spreads contamination from dirtier to cleaner areas.
 
-**Q5 (monitoring).** At handover, which finding most needs follow-up about precautions?
+**Q5 (monitoring).** At handover on a mixed medical unit, which patient most needs follow-up about precautions?
 A. A patient with new cough and fever, admitted from another facility, nursed in an open bay without any precautions.
 B. A patient on droplet precautions whose sign is displayed and who has masks available at the door.
 C. A patient whose isolation was lifted by the team after the documented criteria were met.
 D. A patient on contact precautions with dedicated equipment that has been cleaned at the start of the shift.
 **Answer: A.**
-**Why correct:** New respiratory symptoms together with a higher-risk admission source are a trigger for interim precautions and review.
+**Why correct:** A patient with new respiratory symptoms and a higher-risk admission source should have interim precautions and review. The other patients already have visible, documented controls that are working.
 **Why not B:** Controls are in place and visible, so no gap is evident.
 **Why not C:** Lifting by the team after criteria were met is a documented decision.
 **Why not D:** Dedicated, cleaned equipment shows the controls are working.

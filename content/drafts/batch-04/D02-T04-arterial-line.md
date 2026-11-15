@@ -106,7 +106,7 @@ D. Assess the patient and take a cuff reading, check the line and connections, a
 **Why not C:** Ignoring a monitoring problem risks missing true hypotension.
 **Why not B:** Repeated flushing can cause harm and does not address the cause.
 
-**Q2 (monitoring).** Which finding is the most urgent concern for a radial arterial line?
+**Q2 (monitoring).** A nurse is monitoring a patient with a radial arterial line. Which finding is the most urgent concern?
 A. A pale, cold hand with delayed capillary refill and new pain on the cannulated side.
 B. A small amount of dried blood at the edge of the dressing, with a warm, pink hand and normal capillary refill.
 C. The flush bag and tubing are labelled with the correct date and the connections are tight.
@@ -117,13 +117,13 @@ D. An arterial trace that shows normal variation with the patient's breathing an
 **Why not C:** This is the correct practice for the situation described, so it is not an unsafe distractor.
 **Why not D:** An expected feature of the waveform.
 
-**Q3 (application).** According to CDC 2011, which of the following is **not** allowed through a pressure-monitoring circuit?
-A. A continuous flush with the prescribed flush solution delivered by the pressurised bag and flush device.
+**Q3 (application).** A nurse is managing a patient's arterial pressure-monitoring circuit. According to CDC 2011, which practice is not allowed?
+A. A continuous flush with the prescribed flush solution, delivered by the pressurised bag and flush device.
 B. A closed continuous-flush system that reduces the number of entries into the pressure-monitoring circuit.
 C. Dextrose-containing solutions or parenteral nutrition fluids infused as a continuous or intermittent infusion.
 D. Scrubbing the diaphragm with an appropriate antiseptic before the system is accessed for a blood sample.
 **Answer: C.**
-**Why correct:** CDC advises against giving dextrose-containing solutions or parenteral nutrition through the circuit (Category IA).
+**Why correct:** CDC 2011 advises against giving dextrose-containing solutions or parenteral nutrition fluids through the pressure-monitoring circuit (Category IA). The continuous flush, a closed system and scrubbing the diaphragm are part of recommended practice.
 **Why not A:** The continuous flush is part of the system.
 **Why not B:** Closed systems are recommended over open ones.
 **Why not D:** Scrubbing the diaphragm is recommended.

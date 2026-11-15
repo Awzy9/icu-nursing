@@ -162,13 +162,13 @@ D. Reviewing and changing the patient's medicines to reduce delirium risk.
 **Why not B:** Independent nursing measure.
 **Why not C:** Independent nursing measure.
 
-**Q5 (understanding).** Which statement about hypoactive delirium is correct?
+**Q5 (understanding).** A nurse is teaching a student about hypoactive delirium in a quiet, withdrawn patient. Which statement is correct?
 A. It is harmless because the patient is calm and quiet, so no further assessment or action is needed from staff.
 B. It is often missed, so look for withdrawal, slow responses, reduced movement, poor concentration and reduced appetite.
 C. It affects people who already have dementia, so it can be ruled out in anyone without that diagnosis.
 D. It needs sedation to prevent harm, because untreated delirium becomes dangerous within a few hours.
 **Answer: B.**
-**Why correct:** NICE advises particular vigilance because hypoactive delirium is often missed.
+**Why correct:** NICE advises particular vigilance because hypoactive delirium, in which the patient is quiet and withdrawn, is often missed. It is not harmless, is not limited to dementia and does not call for automatic sedation.
 **Why not A:** It carries the same risks of poor outcomes.
 **Why not C:** Delirium can occur in anyone who is severely ill.
 **Why not D:** Sedation is not an automatic response; causes are managed first.

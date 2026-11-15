@@ -89,7 +89,7 @@ At the start of the shift you check the depth mark against the record, look at t
 A sedated patient begins to cough and the expired tidal volume falls with an audible leak. The nurse checks the depth marking (moved 2 cm out), supports the tube, calls the doctor and respiratory therapist, and monitors SpO₂ and capnography. The clinician repositions the tube and confirms position. The nurse documents the event and checks the skin under the securement.
 
 ## 17. MCQs
-**Q1 (monitoring).** Which method of checking cuff pressure is supported by the AARC 2024 guideline?
+**Q1 (understanding).** Which method of checking cuff pressure is supported by the AARC 2024 guideline?
 A. Feeling the pilot balloon with the fingers and judging whether it is firm enough.
 B. Measuring with a manometer at the interval set by the unit's policy.
 C. Continuous automatic monitoring for every ventilated patient to prevent pneumonia.
@@ -122,7 +122,7 @@ D. Say cuff pressure only matters for patients who are awake and able to cough a
 **Why not B:** No such interval is stated.
 **Why not D:** Cuff pressure matters in all intubated patients.
 
-**Q4 (application).** Which approach best reduces pressure injury from the tube and its securement?
+**Q4 (application).** A nurse is caring for an intubated patient on a ventilator. Which approach best reduces pressure injury from the tube and its securement?
 A. Check the skin and mucosa under and around the tube and securement regularly, support the device, and consider a preventive dressing.
 B. Tighten the tapes so that no movement can occur at the lips, because friction is the main cause of skin damage here and tight tape prevents it.
 C. Leave the securement unchanged for the whole admission unless it comes loose, to avoid disturbing the tube.

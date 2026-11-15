@@ -106,7 +106,7 @@ B. The trend in heart rate and blood pressure recorded on the monitor over the p
 C. A numeric 0–10 rating card held in front of the patient, which the sedated patient points to unaided, as in any other adult.
 D. The bispectral index, which measures the depth of sedation and can indicate whether pain is present in a deeply sedated patient.
 **Answer: A.**
-**Why correct:** This is the SCCM statement on behavioural tools.
+**Why correct:** SCCM identifies the BPS, BPS-NI and CPOT as the behavioural tools with the best validity and reliability in patients who cannot self-report but show observable behaviours. Vital signs are not valid indicators of pain, and the numeric rating scale needs self-report.
 **Why not B:** Vital signs are not valid indicators of pain.
 **Why not C:** The numeric rating scale is for patients who can self-report.
 **Why not D:** BIS is described for sedation monitoring, not pain.

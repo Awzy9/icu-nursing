@@ -133,7 +133,7 @@ D. Patients who have been on the intensive care unit for more than a week, becau
 **Why not B:** Oxygen use is part of the score.
 **Why not D:** Length of stay is not a criterion.
 
-**Q5 (documentation).** Why does RCP recommend recording the oxygen device and flow rate as well as the saturation?
+**Q5 (understanding).** Why does RCP recommend recording the oxygen device and flow rate as well as the saturation?
 A. A flow rate alone does not define how much oxygen the patient receives, so the device is needed too.
 B. The device is needed for equipment audit and has no bearing on how the observations are interpreted.
 C. Saturation is not important once oxygen is being given, so the device and flow need to be recorded.

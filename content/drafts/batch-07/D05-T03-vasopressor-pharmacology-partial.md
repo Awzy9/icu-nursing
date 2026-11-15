@@ -115,7 +115,7 @@ D. A diuretic that removes excess fluid and is used in patients with heart failu
 **Why not C:** It acts on vessels and the heart.
 **Why not D:** It is a vasopressor, not a diuretic.
 
-**Q2 (application).** Which agent does SSC 2026 recommend as the first-line vasopressor in adults with septic shock?
+**Q2 (understanding).** Which agent does SSC 2026 recommend as the first-line vasopressor in adults with septic shock?
 A. Dopamine, which the textbook says dilates the renal vasculature at low doses and so protects the kidneys.
 B. Vasopressin as the first agent, with epinephrine added if the pressure stays low.
 C. Norepinephrine, with a strong recommendation over dopamine, epinephrine and selepressin.
@@ -143,18 +143,18 @@ B. Continuous monitoring of the ECG, blood pressure, cardiac output and urine ou
 C. Body temperature checks every few hours, since fever is the commonest reaction.
 D. No special monitoring beyond routine observations, since the infusion is short-term.
 **Answer: B.**
-**Why correct:** This is the dobutamine grid statement.
+**Why correct:** For dobutamine the textbook grid calls for continuous monitoring of ECG, blood pressure, cardiac output and urine output through the therapy, because the drug can cause marked rises in heart rate and pressure. Weekly tests or temperature alone would miss an acute change.
 **Why not A:** Weekly tests are not adequate for an acute infusion.
 **Why not C:** Temperature is not the key parameter.
 **Why not D:** The drug can cause marked heart rate and pressure rises.
 
-**Q5 (application).** Which nursing check does the epinephrine grid specifically name for intravenous administration?
-A. Checking the patient's weight every hour to guide the infusion.
-B. Weighing the syringe before each use to confirm the concentration.
+**Q5 (application).** A nurse is preparing an intravenous epinephrine infusion. Which nursing check does the epinephrine grid specifically name?
+A. Checking the patient's weight every hour so that the infusion can be adjusted to it.
+B. Weighing the syringe before each use to confirm that the concentration is correct.
 C. Monitoring the IV site for extravasation while the drug is given by the intravenous route.
-D. Measuring the room temperature while the drug is infusing.
+D. Measuring the room temperature while the drug is infusing, because heat alters the drug.
 **Answer: C.**
-**Why correct:** The grid says to monitor the IV site for extravasation.
+**Why correct:** The textbook's epinephrine grid names monitoring the IV site for extravasation when the drug is given intravenously. Hourly weights, weighing the syringe and room temperature are not monitoring items in the grid.
 **Why not A:** Hourly weights are not part of the epinephrine grid.
 **Why not B:** The textbook does not describe weighing the syringe as a check on the drug.
 **Why not D:** Room temperature is not a monitoring item in the grid.
@@ -165,7 +165,7 @@ B. Checking the pump settings against the order when a new syringe is connected.
 C. Recording limb colour, limb temperature and urine output at the intervals the unit requires.
 D. Reporting a sudden fall in blood pressure to the prescriber with the pump and line status.
 **Answer: A.**
-**Why correct:** Choosing and adding agents is prescribing.
+**Why correct:** Choosing a vasopressor and deciding to add a second agent is prescribing, with pharmacist input. Checking, observing, recording and reporting are nursing tasks.
 **Why not B:** Checking is a nursing safety task.
 **Why not C:** Observation and recording are nursing tasks.
 **Why not D:** Reporting is a nursing task.

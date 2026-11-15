@@ -134,7 +134,7 @@ D. It protects the heels so well that heel checks can be dropped from the care p
 **Why not C:** Immobile and sedated patients benefit most from these surfaces.
 **Why not D:** Heels still need offloading and regular checks, especially with poor perfusion.
 
-**Q5 (assessment).** Which approach to assessing darker skin tones is most appropriate?
+**Q5 (assessment).** A nurse is assessing a patient with darker skin for pressure injury. Which approach is most appropriate?
 A. Rely on colour change alone because it is the earliest sign of injury and is equally easy to see on every skin tone and in any light.
 B. Use only a blanching test, because it works equally well on every skin tone.
 C. Delay assessment until the skin is broken, because earlier changes are not reliable.

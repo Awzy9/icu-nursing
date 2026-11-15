@@ -54,8 +54,9 @@ for (const f of files.sort()) {
     if (!q.tag) issues.push("missing question-type tag");
     tags[q.tag] = (tags[q.tag] ?? 0) + 1;
     if (/\b(which of the following|all of the above|none of the above)\b/i.test(q.stem + Object.values(q.options).join(" "))) issues.push("generic or 'of the above' wording");
-    if (!/\b(patient|nurse|bed|man|woman|year-old|ventilated|infusion|staff|colleague|unit)\b/i.test(q.stem) && !["understanding","scope"].includes(q.tag.toLowerCase())) issues.push("no clinical context in an application-type stem");
+    if (!/\b(patients?|nurses?|beds?|man|woman|year-old|ventilated|infusion|staff|colleagues?|unit|team|shift|ward|round|handover|monitor|ventilator)\b/i.test(q.stem) && !["understanding","scope"].includes(q.tag.toLowerCase())) issues.push("no clinical context in an application-type stem");
     if (!q.whyCorrect || q.whyCorrect.length < 30) issues.push("short or missing 'why correct'");
+    else if (/^(This is|It is the|Recommendations? \d|See |Per |Level )/.test(q.whyCorrect) || q.whyCorrect.length < 60) issues.push("circular or thin 'why correct' (names the source instead of explaining the reasoning)");
     const wrong = Object.keys(q.options).filter((k) => k !== q.answer);
     for (const w of wrong) if (!q.whyNot[w] || q.whyNot[w]!.length < 25) issues.push(`short 'why not ${w}'`);
     if (!/[?.]$/.test(q.stem.trim())) issues.push("stem does not end with a question or statement");
@@ -74,6 +75,9 @@ for (let i = 0; i < all.length; i++) for (let j = i + 1; j < all.length; j++) {
   if (A.size > 4 && inter / (A.size + B.size - inter) >= 0.7) dupStems.push(`${all[i]!.key} ~ ${all[j]!.key}`);
 }
 const flagged = rows.filter((r) => r.issues.length);
+const byDomain: Record<string, number> = {}; for (const r of rows) { const d = /^(D\d\d)/.exec(r.topic)?.[1] ?? "XQ"; byDomain[d] = (byDomain[d] ?? 0) + 1; }
+const stemCount: Record<string, number> = {}; for (const a of all) { const k = a.stem.toLowerCase().replace(/[^a-z ]/g, "").split(/\s+/).slice(0, 8).join(" "); stemCount[k] = (stemCount[k] ?? 0) + 1; }
+const repeatedStems = Object.entries(stemCount).filter(([, n]) => n >= 4).sort((a, b) => b[1] - a[1]);
 const out = [
   "# MCQ audit (automated; 2026-11-15)",
   `Questions audited: **${total}** across ${files.length} drafts. Answer positions A/B/C/D: ${pos.A}/${pos.B}/${pos.C}/${pos.D}.`,
@@ -82,6 +86,8 @@ const out = [
   `Key length relative to the mean distractor length: mean ratio **${(ratioSum / total).toFixed(2)}** (1.00 = equal); keys shorter than the mean distractor in **${shorterThanMean}** questions (${((100 * shorterThanMean) / total).toFixed(1)} %). Ratios are reported, not targeted: no wording is padded to move them.`,
   `Questions with identical options inside the question: **${dupOptions.length}**. Near-duplicate questions across the bank (stem plus options, Jaccard >= 0.7; template stems such as the scope-of-practice question are expected to repeat, their options differ): **${dupStems.length}**${dupStems.length ? ` (${dupStems.join("; ")})` : ""}.`,
   `Questions with at least one automated flag: **${flagged.length}**.`,
+  `Questions per domain: ${Object.entries(byDomain).sort().map(([k, v]) => `${k} ${v}`).join(", ")}.`,
+  `Stems that open the same way in four or more questions (template stems are expected for scope-of-practice questions; others suggest repeated concepts): ${repeatedStems.map(([k, n]) => `"${k}..." x${n}`).join("; ") || "none"}.`,
   "", "## Flags", ...flagged.map((r) => `- ${r.topic} ${r.q} (key ${r.answer}): ${r.issues.join("; ")}`),
   "", `Question-type tags: ${Object.entries(tags).map(([k, v]) => `${k} ${v}`).join(", ")}.`, "", "## Per topic (positions A/B/C/D; unique-longest keys)", "| Topic | MCQs | A/B/C/D | Longest-key | Mean key/distractor length |", "|---|---|---|---|---|", ...perTopic,
 ].join("\n");

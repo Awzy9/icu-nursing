@@ -127,7 +127,7 @@ D. The patient may be deteriorating; check the probe and perfusion, assess breat
 **Why not B:** Attributing signs to anxiety risks missing deterioration.
 **Why not C:** Reducing oxygen is not the priority when the patient is unwell.
 
-**Q4 (application).** Which statement about high-flow nasal cannula (HFNC) matches the AARC 2022 guideline?
+**Q4 (understanding).** Which statement about high-flow nasal cannula (HFNC) matches the AARC 2022 guideline?
 A. HFNC shortens hospital stay compared with conventional oxygen therapy in adults with acute hypoxaemic failure.
 B. HFNC may help avoid escalation to non-invasive or invasive ventilation, but it does not reduce length of stay.
 C. HFNC is recommended after intubation has failed, in preference to any other form of respiratory support.

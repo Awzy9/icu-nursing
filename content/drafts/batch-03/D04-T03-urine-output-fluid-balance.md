@@ -141,7 +141,7 @@ B. Output below the threshold, heart rate rising, cool peripheries and new confu
 C. A patient who is waiting for a scheduled weight that is part of the usual ward routine.
 D. A patient with a dry mouth who is asking for a drink but has normal observations and output.
 **Answer: B.**
-**Why correct:** Several signs of hypoperfusion indicate urgent escalation.
+**Why correct:** Low urine output, a rising heart rate, cool peripheries and new confusion together point to poor perfusion, which needs urgent escalation. The other patients have normal findings or tasks that can wait.
 **Why not A:** This patient is stable with no abnormal findings.
 **Why not C:** A routine scheduled task that can wait.
 **Why not D:** Comfort care is needed but the observations are normal, so it is not urgent.
@@ -152,7 +152,7 @@ B. Checking the catheter and drainage tubing for kinks or blockage when output f
 C. Choosing the fluid type and rate and deciding whether to give a diuretic.
 D. Reporting a rising positive balance and new oedema to the prescriber promptly.
 **Answer: C.**
-**Why correct:** Fluid and diuretic prescribing are prescriber decisions.
+**Why correct:** Choosing the fluid and its rate and deciding on a diuretic are prescribing decisions. The nurse observes, records and reports the response.
 **Why not A:** Independent nursing task.
 **Why not B:** Independent nursing task.
 **Why not D:** Reporting is a nursing responsibility.

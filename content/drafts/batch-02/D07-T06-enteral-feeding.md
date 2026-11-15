@@ -140,7 +140,7 @@ B. Reporting vomiting and a rise in gastric aspirates to the prescriber.
 C. Deciding to change from gastric to post-pyloric feeding or to parenteral nutrition.
 D. Raising the head of the bed and giving mouth care at regular intervals.
 **Answer: C.**
-**Why correct:** Route and type of nutrition are team decisions.
+**Why correct:** Choosing the route and type of nutrition, for example gastric, post-pyloric or parenteral, is a decision for the prescriber or dietitian with the team. The nurse carries it out, monitors and reports within that plan, as the other options show.
 **Why not A:** Independent nursing task.
 **Why not B:** Reporting is a nursing responsibility.
 **Why not D:** Independent nursing tasks.

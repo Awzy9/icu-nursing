@@ -109,7 +109,7 @@ B. Urine that appears dark yellow on one shift.
 C. A single creatinine measurement above the laboratory mean without a baseline.
 D. A weight gain of 1 kg over two days with no other changes.
 **Answer: A.**
-**Why correct:** It is one of the listed detection criteria.
+**Why correct:** NICE detects AKI from changes against a baseline or a rate of change, and a sustained fall in urine output is one of the listed criteria. The distractors rely on colour or weight, which are not criteria.
 **Why not B:** Colour alone is not a criterion.
 **Why not C:** The criteria compare with a baseline or rate of change.
 **Why not D:** Weight change is not a detection criterion in the recommendation.
@@ -136,7 +136,7 @@ D. Start the unit potassium-lowering protocol and carry on with other tasks with
 **Why not C:** Oral fluids will not treat this and delay care.
 **Why not D:** Using a protocol is appropriate if present, but not informing the team is unsafe.
 
-**Q5 (application).** Which statement about loop diuretics in AKI matches NICE NG148?
+**Q5 (understanding).** Which statement about loop diuretics in AKI matches NICE NG148?
 A. They should be given routinely to patients with AKI to restore urine output and prevent progression of the injury.
 B. They are not allowed in patients with kidney problems, because they make kidney damage worse.
 C. Routine use to treat AKI is not recommended, but they may be considered for fluid overload or oedema.

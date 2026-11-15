@@ -128,7 +128,7 @@ D. Check the patient and circuit, report the value and trend with SBAR, and requ
 **Why not B:** Recruitment manoeuvres are not routinely recommended and need a prescriber or therapist.
 **Why not C:** Tidal volume changes need an order or protocol, whatever the intent.
 
-**Q4 (application).** Which statement about prone positioning in ARDS best matches the ESICM 2023 guideline?
+**Q4 (understanding).** Which statement about prone positioning in ARDS best matches the ESICM 2023 guideline?
 A. It is recommended for moderate to severe ARDS after stabilisation, in prolonged sessions, as a team procedure.
 B. It is recommended for every ventilated patient on admission to reduce pressure injuries and aspiration, whatever the severity of their lung disease.
 C. It is not recommended because of the risk of tube displacement and pressure injury, so the supine position is kept throughout.

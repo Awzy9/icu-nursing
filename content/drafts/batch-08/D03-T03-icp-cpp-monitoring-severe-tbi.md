@@ -146,13 +146,13 @@ D. It was withdrawn in the 4th edition, so the guideline no longer gives any tar
 **Why not B:** The population is severe TBI.
 **Why not D:** The recommendation is present.
 
-**Q5 (safety).** The guideline advises caution about CPP above 70 mm Hg. Why?
-A. High CPP improves outcomes, so no caution is needed when a clinician pushes the pressure up.
-B. High CPP is thought to be more dangerous in older patients, and has no risk in younger adults.
+**Q5 (safety).** A nurse on a neurocritical care unit reads that the guideline advises caution about CPP above 70 mm Hg. Why?
+A. High CPP improves outcomes, so no caution is needed when a clinician pushes the pressure up with fluids or drugs.
+B. High CPP is thought to be more dangerous in older patients, and carries no risk in younger adults.
 C. Aggressive efforts to push CPP above 70 with fluids and pressors may risk adult respiratory failure.
 D. High CPP is harmful if the patient has no ICP monitor in place, because it cannot then be measured.
 **Answer: C.**
-**Why correct:** This is the Level III statement.
+**Why correct:** The guideline's Level III statement cautions that aggressive attempts to push CPP above 70 with fluids and pressors may risk adult respiratory failure. It is a caution about harm at higher values, not about age or monitor presence.
 **Why not A:** The guideline cites harm at higher values.
 **Why not B:** Age is not the stated basis.
 **Why not D:** The caution does not depend on monitor presence.

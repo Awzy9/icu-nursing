@@ -129,7 +129,7 @@ B. It is exactly the same as the peak inspiratory pressure in a healthy patient 
 C. It reflects the resistance of the endotracheal tube and does not depend on the lungs or the chest wall at all.
 D. It is measured while the patient is coughing, because coughing produces the highest pressure that the system can reach.
 **Answer: A.**
-**Why correct:** This is the review's description.
+**Why correct:** Plateau pressure is read during an end-inspiratory pause with no flow, when it approximates alveolar pressure if the patient is passive. Coughing or active effort invalidates the pause, and the gap between peak and plateau reflects resistance.
 **Why not B:** Peak and plateau differ by the resistive pressure.
 **Why not C:** Plateau pressure reflects elastic, not resistive, load.
 **Why not D:** A passive pause is needed; coughing invalidates it.

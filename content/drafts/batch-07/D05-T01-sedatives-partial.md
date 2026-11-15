@@ -101,7 +101,7 @@ Before starting a sedation infusion the nurse reads the order, notes that the pa
 A 72-year-old ventilated patient on a benzodiazepine infusion and an opioid cannot be woken for the daily interruption and has a falling blood pressure. The nurse stops and reports as the protocol directs, supports the airway, calls the doctor, and documents the sedation scores and times.
 
 ## 17. MCQs
-**Q1 (safety).** Which risk does the Open RN textbook describe as the most important with intravenous lorazepam?
+**Q1 (understanding).** Which risk does the Open RN textbook describe as the most important with intravenous lorazepam?
 A. Respiratory depression, so airway patency must be assured and respiration monitored closely.
 B. Excessive urine output, so that the fluid balance must be recorded every hour after each dose is given.
 C. A rise in blood sugar, so that blood glucose must be checked before each dose is given to the patient.
@@ -118,7 +118,7 @@ B. Combined use is recommended for all ventilated patients to keep them comforta
 C. Combined use is only a concern in young children and is not a concern in older adults or ventilated patients.
 D. Combined use may result in profound sedation, respiratory depression, coma and death.
 **Answer: D.**
-**Why correct:** This is the black box warning quoted in the section.
+**Why correct:** The boxed warning in the textbook says that using benzodiazepines and opioids together can cause profound sedation, respiratory depression, coma and death. The effects add up rather than offset one another, and the warning is a caution for patients generally.
 **Why not A:** The effects add rather than cancel.
 **Why not B:** The warning is a caution, not a recommendation.
 **Why not C:** The warning applies to patients generally and is not limited to children.
@@ -129,7 +129,7 @@ B. Recommend benzodiazepines as the preferred first-line drug in all ventilated 
 C. Recommend deep sedation for all ventilated patients in order to prevent anxiety during the first days.
 D. Recommend that sedation should never be reduced or interrupted during the first week of mechanical ventilation.
 **Answer: A.**
-**Why correct:** This is the PADIS 2018 statement.
+**Why correct:** The PADIS 2018 pages suggest propofol or dexmedetomidine rather than benzodiazepines for sedating mechanically ventilated adults (conditional recommendation, low certainty), in line with a general preference for light sedation.
 **Why not B:** The pages suggest avoiding benzodiazepines in favour of other agents.
 **Why not C:** Light sedation is generally favoured.
 **Why not D:** No such recommendation exists on the pages read.
@@ -151,7 +151,7 @@ B. Suggest dexmedetomidine over propofol where light sedation and/or reducing de
 C. Suggest using benzodiazepines to treat anxiety in all adults in the ICU, whatever the clinical picture, because they are thought to give the most reliable relief.
 D. Make no statement at all about the choice of sedative agent for mechanically ventilated adults, leaving the choice to each unit.
 **Answer: B.**
-**Why correct:** This is the 2025 statement as printed on the SCCM page.
+**Why correct:** The 2025 focused update suggests dexmedetomidine over propofol when light sedation or reducing delirium is the priority (conditional, moderate certainty). The other options describe statements that do not appear on the page.
 **Why not A:** The 2025 statement favours dexmedetomidine in that situation.
 **Why not C:** The page says there is insufficient evidence for benzodiazepines in anxiety.
 **Why not D:** A drug-choice statement does appear on the SCCM 2025 page.
@@ -162,7 +162,7 @@ B. Checking the pump programming against the order each time a new syringe is co
 C. Calling for help when the patient's breathing becomes inadequate during the sedation infusion.
 D. Choosing the sedative agent, dose and sedation target for the patient.
 **Answer: D.**
-**Why correct:** Selecting drug, dose and target is prescribing.
+**Why correct:** Choosing the sedative agent, dose and sedation target is prescribing with pharmacist input. The nurse monitors, checks and calls for help.
 **Why not A:** Monitoring is a nursing task.
 **Why not B:** Checking is a nursing safety task.
 **Why not C:** Calling for help is a nursing responsibility.
