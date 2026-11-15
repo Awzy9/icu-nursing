@@ -100,7 +100,7 @@ describe("local progress", () => {
     expect(JSON.stringify(emptyProgress())).toBe(before); expect(progressSchema.safeParse(p).success).toBe(true);
   });
   it("persists through a storage adapter and survives corrupt or hostile stored data", async () => {
-    const s = mem(); let p = toggleBookmark(emptyProgress(), "skill:SYN-SKILL-002"); await saveProgress(s, p);
+    const s = mem(); const p = toggleBookmark(emptyProgress(), "skill:SYN-SKILL-002"); await saveProgress(s, p);
     expect(await loadProgress(s)).toEqual(p);
     s.data.set("icu.progress.v1", "{not json"); expect(await loadProgress(s)).toEqual(emptyProgress());
     s.data.set("icu.progress.v1", JSON.stringify({ v: 1, bookmarks: ["equipment:EQ-01"], viewed: {}, ticks: {}, cases: {}, practice: [] })); expect(await loadProgress(s)).toEqual(emptyProgress()); // a clinical-draft key is refused
