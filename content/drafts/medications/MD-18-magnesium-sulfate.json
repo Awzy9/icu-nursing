@@ -1,0 +1,202 @@
+{
+ "med_id": "MD-18",
+ "number": 18,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Magnesium sulfate",
+ "drug_class": "Electrolyte replacement and anticonvulsant",
+ "category": "insulin-electrolytes-fluids",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Parenteral magnesium used for replacement in magnesium deficiency, especially acute hypomagnesaemia with tetany, and for other labelled indications. Nursing focus: monitoring for magnesium toxicity, renal impairment and fetal harm with prolonged use in pregnancy.",
+ "batch": 2,
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-MAGNESIUM",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-MAGNESIUM",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates magnesium sulfate injection as suitable for replacement therapy in magnesium deficiency, especially in acute hypomagnesaemia accompanied by signs of tetany.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Watch for the signs of magnesium intoxication, and give particular attention when renal function is impaired.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Monitoring of reflexes, respiration, blood pressure and serum magnesium follows the unit's protocol.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Parenteral use in the presence of renal insufficiency may lead to magnesium intoxication.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Continuous administration beyond several days to pregnant women can lead to hypocalcaemia and bone abnormalities in the fetus.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Adverse effects of parenteral magnesium usually result from magnesium intoxication: flushing, sweating, hypotension, depressed reflexes, flaccid paralysis, hypothermia and circulatory collapse.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate immediately for loss of reflexes, slowed or weak breathing, falling blood pressure or any cardiac change.",
+     "support": "partial",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record reflexes, respiratory status, blood pressure, laboratory results and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Check reflexes and breathing for signs of magnesium intoxication.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Take extra care when renal function is impaired.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review serum magnesium and renal function results as ordered.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report depressed reflexes, weak breathing or hypotension immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record observations and laboratory results.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Dosing, strengths, preparation and pre-eclampsia regimens: deliberately not included.",
+  "The label read is the replacement-therapy product; labels for other indications differ.",
+  "Electrolyte replacement protocol text was not read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "med_id": "MD-12",
+ "number": 12,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Rocuronium",
+ "drug_class": "Non-depolarising neuromuscular blocking agent",
+ "category": "neuromuscular-blockers",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the label states accidental administration can cause death and the institution's list governs.",
+ "summary": "Neuromuscular blocker used as an adjunct to general anaesthesia for intubation and to provide skeletal muscle relaxation during surgery or mechanical ventilation. Nursing focus: facilities for airway support, anaphylaxis, medication errors, sedation cover and residual paralysis.",
+ "batch": 2,
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-ROCURONIUM",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-ROCURONIUM",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates rocuronium as an adjunct to general anaesthesia to facilitate rapid-sequence and routine tracheal intubation and to provide skeletal muscle relaxation during surgery or mechanical ventilation.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The drug should be given by or under the supervision of experienced clinicians, and not unless facilities for intubation, mechanical ventilation, oxygen therapy and an antagonist are immediately available.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    },
+    {
+     "text": "The label recommends a peripheral nerve stimulator to monitor drug effect and recovery.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Neuromuscular monitoring frequency and sedation assessment follow the unit's protocol.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Severe anaphylaxis has been reported, and cross-reactivity among neuromuscular blocking agents should be considered.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    },
+    {
+     "text": "Risk of death due to medication errors: accidental administration can cause death.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    },
+    {
+     "text": "It must be accompanied by adequate anaesthesia or sedation.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    },
+    {
+     "text": "Residual paralysis can occur; a reversal agent may be considered, which is a prescriber decision.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The most common adverse reactions listed are transient hypotension and hypertension.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate immediately for signs of anaphylaxis, inadequate ventilation or concern that the patient is paralysed without adequate sedation.",
+     "support": "partial",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record neuromuscular monitoring, sedation assessment and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Confirm airway, ventilation, oxygen and an antagonist are immediately available.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-ROCURONIUM"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Confirm adequate sedation or anaesthesia is in place.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-ROCURONIUM"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Use a peripheral nerve stimulator as the unit's protocol directs.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "L-ROCURONIUM"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Call for help immediately for anaphylaxis or inadequate ventilation.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-ROCURONIUM"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record neuromuscular monitoring and sedation checks.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Dosing, rapid-sequence specifics and preparation: deliberately not included.",
+  "Storage, labelling and error-prevention practice of the unit: local policy.",
+  "Guideline text on neuromuscular blockade in ARDS was not read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ]
+}

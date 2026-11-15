@@ -3,7 +3,7 @@ JUR = "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, 
 FDA_PUMP = "S-FDA-PUMP"
 def med(n, slug, name, cls, cat, hi, hi_note, summary, label, sections, monitoring, gaps):
     L = f"L-{label}"
-    write(n, slug, dict(name=name, drug_class=cls, category=cat, high_alert=hi, high_alert_note=hi_note, summary=summary, batch=1,
+    write(n, slug, dict(name=name, drug_class=cls, category=cat, high_alert=hi, high_alert_note=hi_note, summary=summary, batch=(n - 1) // 10 + 1,
         evidence_status="partial", license_status="unassessed", label_source="FDA", label_ref=L, jurisdiction_note=JUR,
         sources=[{"id": L, "read": "full", "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"}, {"id": FDA_PUMP, "read": "full", "use": "FDA infusion pump page (high-risk infusion examples)"}, {"id": "S-AHRQ-TS", "read": "partial", "use": "AHRQ TeamSTEPPS SBAR page"}],
         sections=sections, monitoring=monitoring, gaps=gaps,

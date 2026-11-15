@@ -15,8 +15,8 @@ describe("the 50-medication plan and the drafted batches", () => {
     for (const n of ["Norepinephrine", "Epinephrine", "Vasopressin", "Dobutamine", "Milrinone", "Propofol", "Midazolam", "Dexmedetomidine", "Fentanyl", "Morphine", "Ketamine", "Rocuronium", "Cisatracurium", "Heparin", "Insulin", "Amiodarone", "Adenosine", "Magnesium sulfate", "Potassium chloride", "Calcium gluconate", "Sodium bicarbonate"]) expect(names).toContain(n);
     expect(Math.max(...[...plan.values()].map((p) => p.batch))).toBe(5);
   });
-  it("batch 1 (10 medications) passes every rule", () => {
-    expect(drafts).toHaveLength(10);
+  it("batches 1 and 2 (20 medications) pass every rule", () => {
+    expect(drafts).toHaveLength(20);
     expect(validateMedicationSet(drafts, plan)).toEqual([]);
     for (const d of drafts) expect(validateMedicationDraft(d, known, plan), d.med_id).toEqual([]);
   });
