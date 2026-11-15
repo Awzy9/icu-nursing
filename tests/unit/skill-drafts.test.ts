@@ -23,13 +23,10 @@ describe("the 25 clinical skill drafts", () => {
       expect(["original", "cleared"]).not.toContain(d.license_status);
     }
   });
-  it("declare gaps and permission notes, and never write bedside steps for the skill that still has no usable source", () => {
-    for (const d of drafts) { expect(d.gaps.length, d.skill_id).toBeGreaterThan(0); expect(d.permissions.length, d.skill_id).toBeGreaterThan(0); }
-    for (const n of [5]) {
-      const d = drafts.find((x) => x.number === n)!;
-      expect(d.evidence_status).toBe("unsupported");
-      expect(d.checklist.every((c) => c.support === "local_protocol"), d.skill_id).toBe(true);
-    }
+  it("declare gaps and permission notes, and none claims fully supported evidence", () => {
+    for (const d of drafts) { expect(d.gaps.length, d.skill_id).toBeGreaterThan(0); expect(d.permissions.length, d.skill_id).toBeGreaterThan(0); expect(d.evidence_status).toBe("partial"); }
+    const unsupported = drafts.filter((x) => x.evidence_status === "unsupported");
+    for (const d of unsupported) expect(d.checklist.every((c) => c.support === "local_protocol"), d.skill_id).toBe(true);
   });
   it("every skill in the database import shape fits the schema limits", () => {
     for (const d of drafts) {

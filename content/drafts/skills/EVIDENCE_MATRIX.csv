@@ -47,11 +47,21 @@ SK-04,Endotracheal tube care,escalation,partial,1,0,1,0,S-AARC-PVA;S-ERC-ALS-202
 SK-04,Endotracheal tube care,complications,partial,1,0,1,0,S-AARC-PVA;S-SHEA-VAP-2022
 SK-04,Endotracheal tube care,documentation,local_protocol,1,0,0,1,
 SK-04,Endotracheal tube care,communication,partial,1,0,1,0,S-AHRQ-TS
-SK-05,Tracheostomy care,equipment,partial,1,0,1,0,N-ICS-TRANSFER-2026
-SK-05,Tracheostomy care,procedure,local_protocol,1,0,0,1,
+SK-05,Tracheostomy care,indications,partial,1,1,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,safety,partial,4,4,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,responsibilities,partial,3,2,1,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,scope,local_protocol,1,0,0,1,
+SK-05,Tracheostomy care,equipment,partial,2,1,1,0,N-ICS-TRANSFER-2026;N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,assessment,partial,2,2,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,procedure,partial,3,1,2,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,monitoring,partial,1,1,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,escalation,partial,1,1,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,complications,partial,1,0,1,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,documentation,local_protocol,1,0,0,1,
+SK-05,Tracheostomy care,communication,partial,1,0,1,0,N-NHSGGC-TRACH-2022
 SK-06,Artificial airway suctioning,indications,partial,1,0,1,0,S-AARC-SUCT
 SK-06,Artificial airway suctioning,safety,partial,4,3,1,0,S-AARC-SUCT;S-SHEA-VAP-2022
-SK-06,Artificial airway suctioning,responsibilities,partial,1,0,1,0,S-AARC-SUCT
+SK-06,Artificial airway suctioning,responsibilities,partial,2,0,2,0,N-NHSGGC-TRACH-2022;S-AARC-SUCT
 SK-06,Artificial airway suctioning,scope,local_protocol,1,0,0,1,
 SK-06,Artificial airway suctioning,equipment,local_protocol,1,0,0,1,
 SK-06,Artificial airway suctioning,assessment,partial,1,0,1,0,S-AARC-SUCT
