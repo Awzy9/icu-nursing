@@ -1,0 +1,11 @@
+// Generates supabase/seed_question_fixtures.sql: SYNTHETIC, NONCLINICAL question fixtures for a DEVELOPMENT database.
+//   npx tsx scripts/seed-synthetic-questions.ts            -> fixtures are loaded but stay hidden from learners
+//   npx tsx scripts/seed-synthetic-questions.ts --visible  -> also sets app_settings.question_fixtures_visible = true
+// The file is applied manually to a development database. It is NOT a migration and is never applied by `live:migrate`.
+// It cannot create clinical questions: the generator only knows the labelled SYN-* fixtures.
+import { writeFileSync } from "node:fs";
+import { fixtureSeedSql } from "../src/lib/question-bank/fixtures";
+
+const visible = process.argv.includes("--visible");
+writeFileSync("supabase/seed_question_fixtures.sql", fixtureSeedSql({ makeVisible: visible }));
+console.log(`Wrote supabase/seed_question_fixtures.sql (fixtures ${visible ? "VISIBLE" : "hidden"} to learners). Apply to a DEVELOPMENT database only.`);

@@ -101,7 +101,7 @@ A 47-year-old man, six hours after a bowel resection, has a heart rate of 120, s
 
 ## 17. MCQs
 **Q1 (judgment).** A patient 6 hours after surgery has a heart rate rising from 90 to 120, cool mottled legs, falling urine output and new restlessness, but a systolic pressure of 98 mmHg. What is the best interpretation and action?
-A. The blood pressure is acceptable, so repeat the observations in one hour and continue the routine care already planned.
+A. The blood pressure is acceptable, so repeat the observations in one hour and continue the routine care already planned for the day.
 B. The restlessness is probably pain, so give analgesia and review again once the patient has settled.
 C. These are possible signs of shock despite a normal-range pressure; repeat observations, look for bleeding and escalate urgently.
 D. Only the doctor can judge perfusion, so record the findings and wait for the next scheduled round.
@@ -157,7 +157,7 @@ D. Lactate should be measured once at admission and not repeated, because later 
 
 **Q6 (safety).** The patient's MAP drops below the ordered target but the monitor alarm was silenced earlier. What should the nurse do?
 A. Check the patient, confirm the reading (transducer or cuff), call for review with SBAR, and keep monitoring.
-B. Increase the vasopressor rate to bring the MAP up at once, because a prompt response matters most.
+B. Increase the vasopressor rate to bring the MAP up at once, because a prompt response matters most for the patient.
 C. Re-silence the alarm until the next routine check, since the monitor had already alarmed once.
 D. Document the reading carefully and review it after the shift, when the day has become less busy.
 **Answer: A.**

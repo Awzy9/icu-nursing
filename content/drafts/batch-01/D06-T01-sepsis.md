@@ -120,10 +120,10 @@ D. A patient with a score of 3 and a temperature of 37.8 °C, who feels well, ha
 **Why not D:** This patient needs monitoring but is not time-critical compared with the others.
 
 **Q3 (application).** The prescriber orders blood cultures and an antimicrobial for suspected sepsis. What should the nurse do?
-A. Give the antimicrobial first and take the cultures at the next routine blood round.
-B. Hold both until the lactate result is back so that treatment can be targeted.
+A. Give the antimicrobial first and take the cultures at the next routine blood round, once the patient has settled.
+B. Hold both until the lactate result is back so that treatment can be targeted to the patient's condition.
 C. Prepare and collect the cultures without delaying the antimicrobial, check allergies, and give the first dose promptly.
-D. Ask the pharmacist to decide the drug, because nurses cannot take part in antimicrobial treatment.
+D. Ask the pharmacist to decide the drug and the timing, because nurses cannot take part in antimicrobial treatment or sepsis care.
 **Answer: C.**
 **Why correct:** SSC 2026 recommends collecting blood cultures as soon as possible and ideally before antimicrobials (strong), and timely antimicrobials; the nurse prepares, collects, checks allergies and gives the ordered dose promptly.
 **Why not A:** Taking cultures first is preferable when it causes no delay, and later sampling lowers their yield.
@@ -153,10 +153,10 @@ D. Choosing the antimicrobial and deciding the first fluid prescription.
 **Why not C:** Documentation is a nursing responsibility.
 
 **Q6 (safety).** The unit uses a different early-warning score from NEWS2. A new nurse says NICE thresholds must be applied to every patient. What is the best reply?
-A. NICE thresholds are an international standard and apply in every hospital.
-B. Early-warning scores are used only in the UK, so other units need no tool.
+A. NICE thresholds are an international standard, so they must be applied in every hospital, whatever early-warning score the unit has adopted for its own wards and patients.
+B. Early-warning scores are used only in the UK, so units elsewhere do not need any structured tool for spotting deterioration.
 C. NEWS2 is a UK tool for defined settings; this unit uses its own validated score, and the core steps of suspect, assess, escalate and reassess apply everywhere.
-D. NEWS2 bands can be used for pregnant patients and children without changes.
+D. NEWS2 bands can be applied without any change to pregnant patients and to children, because the same thresholds suit every group.
 **Answer: C.**
 **Why correct:** NICE restricts NEWS2 to adults aged 16 and over who are not recently pregnant in acute settings; other settings use their own validated tools.
 **Why not A:** NICE guidance is national, not an international standard.

@@ -116,7 +116,7 @@ D. Respiratory acidosis, because the pH is low and the PaCO₂ is high, moving i
 **Q2 (judgment).** A patient has a rising PaCO₂ and is increasingly drowsy, but SpO₂ is 96 % on oxygen. What is the best interpretation?
 A. The patient is fine, because the oxygen saturation is within the target range, so the rest can wait.
 B. Oxygen saturation can be normal in hypercapnia, so the nurse should assess airway, breathing and circulation and seek urgent help.
-C. The patient is only sleepy because of the time of day and should be left to rest quietly for now.
+C. The patient is only sleepy because of the time of day, so the nurse should leave the patient to rest quietly for now and look again later.
 D. The ABG result must be wrong, so the nurse should repeat it after a few hours before telling anyone.
 **Answer: B.**
 **Why correct:** The textbook states SaO₂ may be normal with hypercapnia and should not be the determining factor.
@@ -125,7 +125,7 @@ D. The ABG result must be wrong, so the nurse should repeat it after a few hours
 **Why not D:** Delaying the response risks deterioration.
 
 **Q3 (safety).** A nurse draws an arterial sample and notices a large air bubble in the syringe. According to the AARC guideline, what is the correct action?
-A. Send the sample as it is and mention the bubble on the request form so that the laboratory can allow for it.
+A. Send the sample as it is and mention the bubble on the request form so that the laboratory can allow for it in its report.
 B. Warm the syringe in the hand for several minutes and then send it, so that the bubble dissolves into the blood.
 C. Treat the sample as unacceptable, because a specimen with visible air bubbles is a contraindication, and obtain a new one.
 D. Add some saline to the syringe to replace the lost volume and then send the sample to the analyser.

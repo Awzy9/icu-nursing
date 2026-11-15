@@ -148,7 +148,7 @@ D. They are the first-line treatment for a urinary obstruction, because they flu
 **Why not D:** Obstruction needs urgent imaging and referral.
 
 **Q6 (scope).** Which task is the nurse's responsibility rather than the prescriber's?
-A. Deciding whether to start renal replacement therapy.
+A. Deciding whether to start renal replacement therapy for a patient with acute kidney injury.
 B. Choosing the antibiotic regimen after considering kidney function.
 C. Measuring and recording hourly urine output and checking the catheter when output drops.
 D. Deciding to stop a nephrotoxic drug.

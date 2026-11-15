@@ -151,7 +151,7 @@ D. Increase FiO₂ at the ventilator and wait to see whether the saturation reco
 **Why not D:** Changing FiO₂ is a setting decision and does not fix a displaced tube.
 
 **Q6 (monitoring).** Which finding on the ventilator display most clearly requires urgent escalation?
-A. A respiratory rate that is within the set range and a stable SpO₂ with matching exhaled volumes.
+A. A respiratory rate that is within the set range and a stable SpO₂ with matching exhaled volumes, unchanged since the last check.
 B. A plateau pressure that is stable and unchanged from yesterday.
 C. A rise in peak pressure with falling exhaled volume and desaturation in a patient who was stable an hour ago.
 D. A FiO₂ that has been gradually lowered by the team during the day as the patient improved.

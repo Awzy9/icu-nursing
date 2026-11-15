@@ -118,9 +118,9 @@ D. Stop the infusion immediately, since the drug is clearly not working in this 
 **Why not D:** Stopping a vasoactive infusion abruptly without an order is unsafe.
 
 **Q3 (application).** Which patient with shock is the best example of one for whom SSC 2026 advises invasive blood pressure monitoring?
-A. A patient on a low, stable dose of a single vasopressor and consistent cuff readings.
+A. A patient on a low, stable dose of a single vasopressor and consistent cuff readings on repeated checks.
 B. A patient on escalating doses of vasopressor whose cuff readings are inconsistent on repeated assessment.
-C. A patient who is recovering and no longer needs vasopressors but has a normal blood pressure.
+C. A patient who is recovering and no longer needs vasopressors but has a normal blood pressure on every cuff reading.
 D. A patient with mild hypotension who responds to a single small fluid bolus.
 **Answer: B.**
 **Why correct:** The remark advises invasive monitoring for escalating doses, intermediate-to-high doses, multiple vasopressors, frequent arterial sampling or inconsistent non-invasive readings.
@@ -129,7 +129,7 @@ D. A patient with mild hypotension who responds to a single small fluid bolus.
 **Why not D:** Mild hypotension responding to a bolus does not meet them either.
 
 **Q4 (understanding).** What do SSC 2026 and the older ESICM 2014 text say about the access used to start vasopressors?
-A. Both say a central line must be in place before any vasopressor is started in a patient with septic shock.
+A. Both say a central line must be in place before any vasopressor is started in a patient with septic shock, whatever the delay this causes.
 B. Both say vasopressors may be given through an arterial line, because it gives continuous blood pressure readings.
 C. Both say the site does not matter and may be chosen by the bedside nurse without any local policy.
 D. SSC 2026 suggests starting peripherally rather than delaying, while ESICM 2014 said central access may be preferred; local policy decides.

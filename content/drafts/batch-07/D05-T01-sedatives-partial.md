@@ -146,10 +146,10 @@ D. Give a reversal agent that is kept on the unit without waiting for an order, 
 **Why not D:** Reversal agents require an order and carry risks such as seizures.
 
 **Q5 (understanding).** Which statement matches the PADIS 2025 focused-update recommendation on drug choice?
-A. Suggest propofol over dexmedetomidine in all patients because it is thought to work faster at the start.
+A. Suggest propofol over dexmedetomidine in all patients because it is thought to work faster at the start and to be easier to titrate.
 B. Suggest dexmedetomidine over propofol where light sedation and/or reducing delirium are the highest priorities (conditional; moderate certainty).
-C. Suggest using benzodiazepines to treat anxiety in all adults in the ICU, whatever the clinical picture.
-D. Make no statement at all about the choice of sedative agent for mechanically ventilated adults.
+C. Suggest using benzodiazepines to treat anxiety in all adults in the ICU, whatever the clinical picture, because they are thought to give the most reliable relief.
+D. Make no statement at all about the choice of sedative agent for mechanically ventilated adults, leaving the choice to each unit.
 **Answer: B.**
 **Why correct:** This is the 2025 statement as printed on the SCCM page.
 **Why not A:** The 2025 statement favours dexmedetomidine in that situation.

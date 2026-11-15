@@ -112,9 +112,9 @@ D. Gently mix the unit and begin the transfusion only if the cloudiness has clea
 **Why not D:** Mixing is a step before use for a normal unit; it does not make an abnormal one acceptable.
 
 **Q2 (safety).** A patient is receiving a transfusion through a line that is also being used for another infusion. Which statement agrees with the Circular?
-A. A calcium-containing solution may run in the same tubing as long as the rate is kept low.
-B. Any compatible drug may be given in the same tubing as long as the nurse flushes it afterwards.
-C. A drug may be added to the unit if the pharmacist has verbally approved it at the bedside.
+A. A calcium-containing solution may run in the same tubing as long as the rate is kept low and the line is watched for clots.
+B. Any compatible drug may be given in the same tubing as long as the nurse flushes it afterwards, because the flush clears the line.
+C. A drug may be added to the unit if the pharmacist has verbally approved it at the bedside, because pharmacists know drug compatibility.
 D. Only 0.9% sodium chloride may run with blood in the same tubing, unless FDA approval or documented safety exists for something else.
 **Answer: D.**
 **Why correct:** The Circular names 0.9% sodium chloride as the exception, and also warns against lactated Ringer's or other calcium-containing solutions with citrated components.

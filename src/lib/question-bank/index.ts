@@ -52,3 +52,11 @@ export async function getQuestionBankService(opts: { create?: boolean } = {}): P
   // A visitor without a fixture session sees an empty bank until they start something.
   return createFixtureService(key ?? "anonymous-empty");
 }
+
+/** Stable per-actor key for rate limiting (signed-in user id, or the fixture-session cookie). */
+export async function getActorKey(): Promise<string> {
+  const user = await getSessionUser().catch(() => null);
+  if (user) return user.id;
+  const jar = await cookies();
+  return jar.get(FX_COOKIE)?.value ?? "anonymous";
+}

@@ -128,10 +128,10 @@ D. The patient may be deteriorating; check the probe and perfusion, assess breat
 **Why not C:** Reducing oxygen is not the priority when the patient is unwell.
 
 **Q4 (application).** Which statement about high-flow nasal cannula (HFNC) matches the AARC 2022 guideline?
-A. HFNC shortens hospital stay compared with conventional oxygen.
+A. HFNC shortens hospital stay compared with conventional oxygen therapy in adults with acute hypoxaemic failure.
 B. HFNC may help avoid escalation to non-invasive or invasive ventilation, but it does not reduce length of stay.
-C. HFNC is recommended after intubation has failed.
-D. HFNC has proven better outcomes in all immunocompromised patients.
+C. HFNC is recommended after intubation has failed, in preference to any other form of respiratory support.
+D. HFNC has proven better outcomes than other support in all immunocompromised patients, whatever the cause of failure.
 **Answer: B.**
 **Why correct:** The guideline says HFNC may avoid escalation but does not reduce length of stay (level B).
 **Why not A:** The guideline states no length-of-stay reduction.
@@ -151,7 +151,7 @@ D. Remove the mask, keep it and the oxygen at least 1 m from the chest, and leav
 
 **Q6 (prioritization).** Which patient should the nurse see first?
 A. A patient on a stable HFNC with an SpO₂ of 96% who is comfortable and eating.
-B. A patient with a mask-skin mark who is otherwise stable and asks for a softer strap.
+B. A patient with a mask-skin mark who is otherwise stable and asks for a softer strap or a different mask size.
 C. A patient just extubated, now on HFNC, with a respiratory rate rising to 32 and SpO₂ falling.
 D. A patient on room air with an SpO₂ of 97% awaiting a scan.
 **Answer: C.**

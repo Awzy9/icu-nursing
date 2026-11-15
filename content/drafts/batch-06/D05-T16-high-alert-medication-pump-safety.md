@@ -94,7 +94,7 @@ At change of shift, the oncoming nurse sees that the rate on a pump differs from
 ## 17. MCQs
 **Q1 (understanding).** What does the term "high-alert medication" mean in the ISMP list?
 A. A drug that is involved in more medication errors than any other drug used in the unit.
-B. A drug that may only be given when a doctor is physically present at the patient's bedside.
+B. A drug that may only be given when a doctor is physically present at the patient's bedside throughout the dose.
 C. A drug with a heightened risk of significant harm when used in error, whatever the frequency of errors.
 D. A drug that requires a pump with a built-in drug library for every single administration.
 **Answer: C.**
@@ -106,7 +106,7 @@ D. A drug that requires a pump with a built-in drug library for every single adm
 **Q2 (application).** A new bag of a high-risk infusion is hung on a pump that is already running. According to the FDA page, what should the nurse do?
 A. Verify that the pump is programmed for the right dosage, rate and volume, because a new bag is one of the moments the page names.
 B. Check only the label on the bag, because the programming was verified at the start of the shift.
-C. Leave the settings as they are and recheck them at the next change of shift, to avoid interrupting the infusion.
+C. Leave the settings as they are and recheck them at the next change of shift, to avoid interrupting the infusion that is running.
 D. Ask the patient whether the new bag looks like the earlier one, and continue if the patient agrees.
 **Answer: A.**
 **Why correct:** The FDA page lists a new bag of medication or fluid, a settings change, new primed tubing and change of shift as moments to verify programming.
@@ -149,7 +149,7 @@ D. They are not always the optimal strategy and may not be practical for all dru
 
 **Q6 (scope).** Which decision belongs to the prescriber, with pharmacist review, rather than to the bedside nurse?
 A. Choosing the drug, concentration and dose range for a new vasoactive infusion.
-B. Labelling the pump channel and the tubing at the port of entry.
+B. Labelling the pump channel and the tubing at the port of entry to the patient's line.
 C. Verifying pump programming against the order when a new bag is hung.
 D. Removing a damaged pump from use and recording the problem.
 **Answer: A.**

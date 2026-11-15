@@ -86,7 +86,7 @@ A 64-year-old man has been ventilated for four days with pneumonia. He is stable
 
 ## 17. MCQs
 **Q1 (understanding).** Which statement correctly distinguishes liberation from extubation, as the AARC guideline describes them?
-A. They are the same thing, so a patient who passes a spontaneous breathing trial is automatically extubated on the same day.
+A. They are the same thing, so a patient who passes a spontaneous breathing trial is automatically extubated on the same day without further review.
 B. Liberation is discontinuing invasive ventilation, while extubation is removing the tube; a patient may pass an SBT and still not be extubated.
 C. Extubation is done before liberation, and a tracheostomy is not used as a route to liberation from the ventilator.
 D. Liberation refers to weaning by gradually reducing the pressure support level over several days of ventilation.
@@ -108,10 +108,10 @@ D. Do not increase the FiO₂ during the SBT, because raising it can mask hypoxa
 **Why not C:** Alternating FiO₂ is not described.
 
 **Q3 (judgment).** Which approach to timing do the AARC authors suggest for SBTs?
-A. A standardised approach to assessment and, if appropriate, completion of an SBT before noon each day, with other care routines coordinated around it.
+A. A standardised approach to assessing for, and if appropriate completing, an SBT before noon each day, with other care coordinated around it.
 B. Starting SBTs in the evening, when the patient is more settled and the effects of the day's sedation have worn off.
 C. Doing an SBT at a different time every day, so that staff can compare how the patient copes at each time.
-D. Avoid performing an SBT on the same day as a sedation interruption, so that the two procedures are kept separate.
+D. Avoid performing an SBT on the same day as a sedation interruption, so that the two procedures are kept separate and judged one at a time.
 **Answer: A.**
 **Why correct:** This is the third recommendation (conditional; very low certainty).
 **Why not B:** The guideline recommends before noon.
@@ -130,10 +130,10 @@ D. Record the observations carefully and review them with the team at the end of
 **Why not D:** The report must be immediate.
 
 **Q5 (understanding).** Why does the AARC guideline suggest the RSBI is not needed to decide readiness for an SBT?
-A. Because the RSBI has been shown to be harmful to the patient when it is measured while the patient is at rest.
+A. Because the RSBI has been shown to be harmful to the patient when it is measured while the patient is at rest on the ventilator.
 B. Because the RSBI has moderate sensitivity but poor specificity for extubation success, and requiring it delayed liberation in a trial.
-C. Because the RSBI can only be measured by physicians and cannot be measured by nurses or respiratory therapists.
-D. Because modern ventilators can no longer display the breathing rate and tidal volume needed to calculate it.
+C. Because the RSBI can only be measured by physicians and cannot be measured by nurses or respiratory therapists in any unit.
+D. Because modern ventilators can no longer display the breathing rate and tidal volume that are needed to calculate it reliably at the bedside.
 **Answer: B.**
 **Why correct:** This is the evidence summary given for the first PICO question.
 **Why not A:** No harm from measurement is claimed.

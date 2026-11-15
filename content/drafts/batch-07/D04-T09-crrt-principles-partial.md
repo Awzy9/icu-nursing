@@ -148,7 +148,7 @@ D. A prophylactic course of systemic antibiotics should be given for the whole d
 **Why not D:** The guideline makes no such statement in the sections read.
 
 **Q6 (scope).** Which decision belongs to the prescriber (nephrologist or intensivist) rather than the bedside nurse?
-A. Reporting that the delivered dose is lower than the prescription.
+A. Reporting that the delivered dose is lower than the prescription to the nurse in charge.
 B. Deciding the anticoagulation strategy, such as regional citrate or heparin.
 C. Documenting downtime and the net fluid balance.
 D. Checking that the catheter site is clean and dry.

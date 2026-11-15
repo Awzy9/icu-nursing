@@ -138,3 +138,38 @@ describe("MCQ quality checks (self-tests)", () => {
     expect(batchPositionIssues([one("A"), one("A"), one("B"), one("A")]).length).toBeGreaterThan(0);
   });
 });
+
+describe("bank-wide MCQ quality (Phase 4 audit regression guard)", () => {
+  // Reads every draft; all 240 questions stay DRAFT and unpublished. These thresholds lock in the length-bias reduction.
+  const root = `${__dirname}/../../content/drafts`;
+  const texts: string[] = [];
+  for (const d of readdirSync(root).filter((x) => /^batch-\d+$/.test(x))) for (const f of readdirSync(`${root}/${d}`).filter((x) => x.endsWith(".md"))) texts.push(readFileSync(`${root}/${d}/${f}`, "utf8"));
+  const qs = texts.flatMap((t) => parseMcqs(t));
+
+  it("covers 240 questions across 40 drafts, every draft still marked as AI-generated draft", () => {
+    expect(texts).toHaveLength(40);
+    expect(qs).toHaveLength(240);
+    for (const t of texts) expect(t).toMatch(/^status: DRAFT/m);
+  });
+  it("keeps the correct option the unique longest in at most 25% of questions, and the unique shortest in at most 30%", () => {
+    let longest = 0, shortest = 0;
+    for (const q of qs) {
+      const lens = Object.values(q.options).map((o) => o.length);
+      const a = q.options[q.answer]!.length;
+      if (a === Math.max(...lens) && lens.filter((l) => l === a).length === 1) longest++;
+      if (a === Math.min(...lens) && lens.filter((l) => l === a).length === 1) shortest++;
+    }
+    expect(longest / qs.length).toBeLessThanOrEqual(0.25);
+    expect(shortest / qs.length).toBeLessThanOrEqual(0.3);
+  });
+  it("keeps the four answer positions within 20-30% each", () => {
+    for (const k of ["A", "B", "C", "D"]) {
+      const share = qs.filter((q) => q.answer === k).length / qs.length;
+      expect(share).toBeGreaterThanOrEqual(0.2);
+      expect(share).toBeLessThanOrEqual(0.3);
+    }
+  });
+  it("has no question whose options are duplicated", () => {
+    for (const q of qs) expect(new Set(Object.values(q.options).map((o) => o.toLowerCase())).size).toBe(Object.keys(q.options).length);
+  });
+});

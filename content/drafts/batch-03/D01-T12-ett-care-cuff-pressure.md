@@ -101,7 +101,7 @@ D. Checking only when the alarm sounds for a leak or a low volume.
 **Why not D:** Waiting for an alarm leaves over- or under-inflation unmeasured.
 
 **Q2 (safety).** The depth mark of an ETT has moved from 22 cm to 25 cm at the lips and the expired tidal volume has fallen. What should the nurse do?
-A. Push the tube back to 22 cm quickly yourself and chart that the position has been corrected and confirmed.
+A. Push the tube back to 22 cm quickly yourself and chart that the position has been corrected and confirmed, before telling anyone.
 B. Continue the hourly observations because the SpO₂ is still above 94% and the patient looks comfortable.
 C. Remove the securement to allow the tube to find its natural position, then re-tape it once it has settled.
 D. Support the tube, call urgently for the doctor or respiratory therapist, monitor SpO₂ and capnography, and prepare to assist.
@@ -124,7 +124,7 @@ D. Say cuff pressure only matters for patients who are awake and able to cough a
 
 **Q4 (application).** Which approach best reduces pressure injury from the tube and its securement?
 A. Check the skin and mucosa under and around the tube and securement regularly, support the device, and consider a preventive dressing.
-B. Tighten the tapes so that no movement can occur at the lips, because friction is the main cause of skin damage here.
+B. Tighten the tapes so that no movement can occur at the lips, because friction is the main cause of skin damage here and tight tape prevents it.
 C. Leave the securement unchanged for the whole admission unless it comes loose, to avoid disturbing the tube.
 D. Apply moisturiser under the securement before each tape change, so that the skin stays soft and does not crack.
 **Answer: A.**

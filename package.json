@@ -31,7 +31,9 @@
     "live:email:preflight": "tsx scripts/live/email-preflight.ts",
     "live:email:builtin": "tsx scripts/live/email-builtin.ts",
     "live:smtp": "tsx scripts/live/configure-smtp.ts",
-    "live:captcha": "tsx scripts/live/configure-captcha.ts"
+    "live:captcha": "tsx scripts/live/configure-captcha.ts",
+    "seed:question-fixtures": "tsx scripts/seed-synthetic-questions.ts",
+    "test:e2e:qb": "playwright test tests/e2e/question-bank.spec.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",

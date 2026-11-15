@@ -114,9 +114,9 @@ D. Normal, because the guideline's threshold for calling a serum potassium level
 
 **Q2 (judgment).** A potassium of 7.1 mmol/L is reported on a sample that took four hours to reach the laboratory, in a patient who looks well with a normal ECG. What is the best nursing action?
 A. Report it, explain the sample delay and ECG, and help repeat the potassium (for example by point-of-care analysis), while keeping the patient monitored.
-B. Ignore the result, because a delayed sample is wrong and the patient looks well and has a normal ECG.
-C. Start treatment without telling anyone, because a potassium above 7.0 mmol/L is an emergency whatever the sample looks like.
-D. Delay the report until the next scheduled blood test, to avoid disturbing the team about a result that may be spurious.
+B. Ignore the result, because a delayed sample is wrong and the patient looks well and has a normal ECG, so nothing needs to be done.
+C. Start treatment without telling anyone, because a potassium above 7.0 mmol/L is an emergency whatever the sample looks like or how the patient is.
+D. Delay the report until the next scheduled blood test, to avoid disturbing the team about a result that may be spurious and could cause unnecessary alarm.
 **Answer: A.**
 **Why correct:** Prolonged transit is a recognised cause of pseudohyperkalaemia, but a normal ECG does not exclude real hyperkalaemia, so the nurse reports, rechecks and monitors.
 **Why not B:** The result cannot be dismissed without checking.

@@ -22,6 +22,8 @@ const pos: Record<string, number> = { A: 0, B: 0, C: 0, D: 0 };
 const tags: Record<string, number> = {};
 let total = 0, longest = 0, correctAbsolute = 0, distractorAbsolute = 0;
 const perTopic: string[] = [];
+const all: { key: string; stem: string; opts: string[]; answer: string }[] = [];
+let shortest = 0;
 for (const f of files.sort()) {
   const text = readFileSync(f, "utf8");
   const topic = /^topic_id: (\S+)/m.exec(text)![1]!;
@@ -34,6 +36,9 @@ for (const f of files.sort()) {
     const lens = Object.entries(q.options).map(([k, v]) => [k, (v as string).length] as const);
     const max = Math.max(...lens.map((l) => l[1]));
     const ansLen = q.options[q.answer]!.length;
+    all.push({ key: `${topic} ${q.id}`, stem: q.stem, opts: Object.values(q.options) as string[], answer: q.answer });
+    const min = Math.min(...lens.map((l) => l[1]));
+    if (ansLen === min && lens.filter((l) => l[1] === min).length === 1) shortest++;
     if (ansLen === max && lens.filter((l) => l[1] === max).length === 1) { longest++; topicLongest++; issues.push("correct option is the unique longest"); }
     const ansAbs = absolutes.test(q.options[q.answer]!);
     const dAbs = Object.entries(q.options).filter(([k, v]) => k !== q.answer && absolutes.test(v as string)).length;
@@ -53,11 +58,22 @@ for (const f of files.sort()) {
   }
   perTopic.push(`| ${topic} | ${qs.length} | ${topicPos.A}/${topicPos.B}/${topicPos.C}/${topicPos.D} | ${topicLongest} |`);
 }
+// Duplicate checks: identical options inside a question, and near-duplicate questions across the bank (stem plus options, word-set Jaccard >= 0.7).
+const norm = (x: string) => x.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 2);
+const dupOptions = all.filter((a) => new Set(a.opts.map((o) => norm(o).join(" "))).size < a.opts.length).map((a) => a.key);
+const dupStems: string[] = [];
+for (let i = 0; i < all.length; i++) for (let j = i + 1; j < all.length; j++) {
+  const A = new Set(norm(`${all[i]!.stem} ${all[i]!.opts.join(" ")}`)), B = new Set(norm(`${all[j]!.stem} ${all[j]!.opts.join(" ")}`));
+  const inter = [...A].filter((w) => B.has(w)).length;
+  if (A.size > 4 && inter / (A.size + B.size - inter) >= 0.7) dupStems.push(`${all[i]!.key} ~ ${all[j]!.key}`);
+}
 const flagged = rows.filter((r) => r.issues.length);
 const out = [
   "# MCQ audit (automated; 2026-11-15)",
   `Questions audited: **${total}** across ${files.length} drafts. Answer positions A/B/C/D: ${pos.A}/${pos.B}/${pos.C}/${pos.D}.`,
   `Correct option is the unique longest: **${longest}** (${((100 * longest) / total).toFixed(1)} %). Keys with absolute wording: ${correctAbsolute}; distractors with absolute wording: ${distractorAbsolute}.`,
+  `Correct option is the unique shortest: **${shortest}** (${((100 * shortest) / total).toFixed(1)} %); a random key would be the unique longest or shortest in roughly 20-25 % of questions each.`,
+  `Questions with identical options inside the question: **${dupOptions.length}**. Near-duplicate questions across the bank (stem plus options, Jaccard >= 0.7; template stems such as the scope-of-practice question are expected to repeat, their options differ): **${dupStems.length}**${dupStems.length ? ` (${dupStems.join("; ")})` : ""}.`,
   `Questions with at least one automated flag: **${flagged.length}**.`,
   "", "## Flags", ...flagged.map((r) => `- ${r.topic} ${r.q} (key ${r.answer}): ${r.issues.join("; ")}`),
   "", `Question-type tags: ${Object.entries(tags).map(([k, v]) => `${k} ${v}`).join(", ")}.`, "", "## Per topic (positions A/B/C/D; unique-longest keys)", "| Topic | MCQs | A/B/C/D | Longest-key |", "|---|---|---|---|", ...perTopic,

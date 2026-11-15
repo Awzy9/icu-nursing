@@ -71,19 +71,22 @@ export function fixtureSeedSql(opts: { makeVisible: boolean }): string {
     "begin;",
   ];
   for (const q of loadFixtures()) {
+    // Published questions are immutable, so each question is loaded once; re-running the seed leaves existing questions untouched.
+    lines.push(`do $seed$ begin if not exists (select 1 from public.question_items where id = ${str(q.id)}::uuid) then`);
     lines.push(
       `insert into public.question_items (id, code, kind, status, origin, domain_id, difficulty, stem, source_note, version)
   select ${str(q.id)}::uuid, ${str(q.code)}, 'demo_synthetic', 'draft', 'human', d.id, ${q.difficulty}, ${lit(q.stem)}, ${str(SYNTHETIC_SOURCE_NOTE)}, ${q.version}
-  from public.nursing_domains d where d.slug = ${str(q.domainSlug)} on conflict (id) do nothing;`,
+  from public.nursing_domains d where d.slug = ${str(q.domainSlug)};`,
     );
     for (const o of q.options) {
-      lines.push(`insert into public.question_options (id, question_id, position, text) values (${str(o.id)}::uuid, ${str(q.id)}::uuid, ${o.position}, ${lit(o.text)}) on conflict (id) do nothing;`);
+      lines.push(`insert into public.question_options (id, question_id, position, text) values (${str(o.id)}::uuid, ${str(q.id)}::uuid, ${o.position}, ${lit(o.text)});`);
     }
-    lines.push(`insert into public.question_answer_keys (question_id, correct_option_id, rationale) values (${str(q.id)}::uuid, ${str(q.correctOptionId)}::uuid, ${lit(q.rationale)}) on conflict (question_id) do nothing;`);
+    lines.push(`insert into public.question_answer_keys (question_id, correct_option_id, rationale) values (${str(q.id)}::uuid, ${str(q.correctOptionId)}::uuid, ${lit(q.rationale)});`);
     for (const o of q.options) {
-      lines.push(`insert into public.question_explanations (option_id, question_id, explanation) values (${str(o.id)}::uuid, ${str(q.id)}::uuid, ${lit(o.explanation)}) on conflict (option_id) do nothing;`);
+      lines.push(`insert into public.question_explanations (option_id, question_id, explanation) values (${str(o.id)}::uuid, ${str(q.id)}::uuid, ${lit(o.explanation)});`);
     }
-    lines.push(`update public.question_items set status = 'published', approved_at = now(), published_at = now() where id = ${str(q.id)}::uuid and status = 'draft';`);
+    lines.push(`update public.question_items set status = 'published', approved_at = now(), published_at = now() where id = ${str(q.id)}::uuid;`);
+    lines.push("end if; end $seed$;");
   }
   if (opts.makeVisible) lines.push("update public.app_settings set question_fixtures_visible = true;");
   lines.push("commit;");

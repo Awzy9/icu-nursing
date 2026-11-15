@@ -135,7 +135,7 @@ D. It protects the heels so well that heel checks can be dropped from the care p
 **Why not D:** Heels still need offloading and regular checks, especially with poor perfusion.
 
 **Q5 (assessment).** Which approach to assessing darker skin tones is most appropriate?
-A. Rely on colour change alone because it is the earliest sign of injury and is equally easy to see on every skin tone.
+A. Rely on colour change alone because it is the earliest sign of injury and is equally easy to see on every skin tone and in any light.
 B. Use only a blanching test, because it works equally well on every skin tone.
 C. Delay assessment until the skin is broken, because earlier changes are not reliable.
 D. Combine colour, temperature, firmness, swelling and pain over bony areas and devices, using techniques suited to the skin tone.

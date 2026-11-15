@@ -138,9 +138,9 @@ D. Reporting a sustained rise in oxygen requirement to the team.
 **Why not D:** Reporting changes is a nursing responsibility.
 
 **Q5 (judgment).** A ventilator circuit looks clean and is working properly on day 6. A colleague suggests changing it "to prevent infection". What is the best response?
-A. Change it, because a fresh circuit always lowers the infection risk.
-B. Change it every other day for consistency with the arterial line routine.
-C. Ask the respiratory therapist to disconnect it for cleaning at each shift change.
+A. Change it, because a fresh circuit always lowers the infection risk and the cost of a new circuit is small.
+B. Change it every other day for consistency with the arterial line routine, so that all lines follow one schedule.
+C. Ask the respiratory therapist to disconnect it for cleaning at each shift change, so that it is always kept clean.
 D. Leave it: the 2022 update advises changing circuits only if visibly soiled, malfunctioning or per manufacturer.
 **Answer: D.**
 **Why correct:** Routine circuit changes do not reduce VAP and add disconnections.

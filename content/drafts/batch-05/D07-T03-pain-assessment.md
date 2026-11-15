@@ -102,9 +102,9 @@ D. Do nothing until the heart rate settles, because vital signs are the only rel
 
 **Q2 (understanding).** Which tools does SCCM identify as having the greatest validity and reliability for monitoring pain in patients unable to self-report whose behaviours are observable?
 A. The Behavioral Pain Scale (BPS), BPS for non-intubated patients (BPS-NI) and the Critical-Care Pain Observation Tool (CPOT).
-B. The trend in heart rate and blood pressure recorded on the monitor over the preceding hour of observation.
-C. A numeric 0–10 rating card held in front of the patient, which the sedated patient points to unaided.
-D. The bispectral index, which measures the depth of sedation and can indicate whether pain is present.
+B. The trend in heart rate and blood pressure recorded on the monitor over the preceding hour, taken as a reliable pain score.
+C. A numeric 0–10 rating card held in front of the patient, which the sedated patient points to unaided, as in any other adult.
+D. The bispectral index, which measures the depth of sedation and can indicate whether pain is present in a deeply sedated patient.
 **Answer: A.**
 **Why correct:** This is the SCCM statement on behavioural tools.
 **Why not B:** Vital signs are not valid indicators of pain.
@@ -125,7 +125,7 @@ D. Repeat the question until the patient gives a lower number, so that the chart
 **Q4 (prioritization).** A patient in obvious pain is also agitated. Which order of action best follows the SCCM statements?
 A. Add a sedative first to settle the patient, and assess for pain once the patient is calmer.
 B. Reassess pain with a validated tool, treat it as ordered or per protocol, then reassess the need for sedation.
-C. Start physical restraints to keep the patient safe, and then assess whether pain is present.
+C. Start physical restraints to keep the patient safe, and then assess whether pain is present once the patient is secure.
 D. Wait for the next medical round to decide whether the cause of the agitation is pain or delirium.
 **Answer: B.**
 **Why correct:** Pain assessment and treatment come before a sedative is considered.

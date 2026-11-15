@@ -104,8 +104,8 @@ D. Remove the catheter to see whether the patient can pass urine independently b
 
 **Q2 (application).** Which finding most suggests fluid overload in a patient receiving IV fluids?
 A. New breathlessness with crackles, peripheral oedema and a strongly positive balance.
-B. A heart rate of 110 with cold peripheries and slow capillary refill.
-C. A low blood pressure that improves immediately with a passive leg raise.
+B. A heart rate of 110 with cold peripheries, slow capillary refill and a low urine output.
+C. A low blood pressure that improves immediately with a passive leg raise or a small fluid bolus.
 D. Dry mucous membranes and a falling weight over three days.
 **Answer: A.**
 **Why correct:** Breathlessness, oedema and positive balance suggest overload; NICE notes breathlessness on leg raising as a sign.

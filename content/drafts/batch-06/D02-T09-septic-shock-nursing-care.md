@@ -108,10 +108,10 @@ D. Collect blood cultures as soon as possible and ideally before antimicrobials,
 **Why not C:** Cultures are ideally taken before antimicrobials, without unnecessary delay.
 
 **Q2 (understanding).** Which approach to judging the response to fluids does SSC 2026 suggest?
-A. Rely on the blood pressure reading alone, because it reflects the whole circulation.
+A. Rely on the blood pressure reading alone, because it reflects the whole circulation and is available at every bedside.
 B. Use dynamic measures (such as response to a passive leg raise or a bolus) in preference to examination or static measures alone.
-C. Give a fixed volume to patients with septic shock and stop reassessing afterwards.
-D. Continue fluid until the lactate has returned to normal, whatever the patient's response.
+C. Give a fixed volume to every patient with septic shock and stop reassessing afterwards, because the volume was decided at the outset.
+D. Continue fluid until the lactate has returned to normal, whatever the patient's response to each bolus.
 **Answer: B.**
 **Why correct:** The page suggests dynamic measures over examination or static measures alone (conditional; low certainty).
 **Why not A:** Blood pressure alone does not show tissue perfusion or fluid responsiveness.

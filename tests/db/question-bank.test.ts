@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any -- RPC payloads are asserted structurally; their shape is validated by the app's zod schemas */
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { asUser, closePool, createUser, expectDenied, grantRole, owner, setupDb, uniqueEmail } from "./helpers";
 import { fixtureSeedSql, loadFixtures } from "../../src/lib/question-bank/fixtures";
 import { seededOrder } from "../../src/lib/question-bank/shuffle";
 import { scoreTenths } from "../../src/lib/question-bank/score";
+import { attemptListSchema, attemptSchema, progressSchema } from "../../src/lib/question-bank/types";
 
 let alice: string, bob: string, staff: string;
 const A = () => ({ id: alice });
@@ -181,10 +183,34 @@ describe("deterministic shuffling and scoring", () => {
     await expect(answer(A(), id, 5, correctFor(items[4].question_id))).rejects.toThrow(/no longer in progress/);
   });
   it("rounds half up with integer arithmetic (matches the TypeScript implementation)", async () => {
-    for (const [c, t] of [[1, 3], [2, 3], [1, 6], [5, 8], [7, 16], [0, 5], [5, 5], [1, 16]]) {
+    for (const [c, t] of [[1, 3], [2, 3], [1, 6], [5, 8], [7, 16], [0, 5], [5, 5], [1, 16]] as [number, number][]) {
       const r = await rpc(A(), "select private.score_tenths($1,$2) as s", [c, t]).catch(async () => (await owner.query("select private.score_tenths($1,$2) as s", [c, t])).rows[0]);
       expect(r.s).toBe(scoreTenths(c, t));
     }
+  });
+});
+
+describe("wire format parity with the application's zod schemas", () => {
+  it("parses every function's real output (in progress, answered, completed)", async () => {
+    const d = await createUser(uniqueEmail("wire"));
+    const W = { id: d };
+    const prog1 = (await rpc(W, "select public.qb_progress() as p")).p;
+    expect(() => progressSchema.parse(prog1)).not.toThrow();
+    const id = await start(W, "practice", 4);
+    const a0 = await get(W, id);
+    expect(() => attemptSchema.parse(a0)).not.toThrow();
+    const fb = (await answer(W, id, 1, wrongFor(a0.items[0].question_id))).feedback;
+    expect(fb.is_correct).toBe(false);
+    const mid = await get(W, id);
+    expect(() => attemptSchema.parse(mid)).not.toThrow();
+    const done = (await rpc(W, "select public.qb_submit_attempt($1) as a", [id])).a;
+    const parsed = attemptSchema.parse(done);
+    expect(parsed.summary?.total).toBe(4);
+    expect(parsed.items.every((i) => i.feedback !== null)).toBe(true);
+    const listed = (await rpc(W, "select public.qb_list_attempts(20) as l")).l;
+    expect(() => attemptListSchema.parse(listed)).not.toThrow();
+    const prog2 = (await rpc(W, "select public.qb_progress() as p")).p;
+    expect(() => progressSchema.parse(prog2)).not.toThrow();
   });
 });
 

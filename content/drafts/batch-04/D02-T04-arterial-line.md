@@ -140,7 +140,7 @@ D. Leave it in place until it stops working or the patient leaves the unit, beca
 **Why not D:** Unnecessary line days increase risk.
 
 **Q5 (safety).** A colleague wants to infuse a dextrose solution through the arterial line "because it is the only free line". What is the best response?
-A. Allow it for a short time if the rate is kept slow and the pressure trace is watched closely throughout.
+A. Allow it for a short time if the rate is kept slow and the pressure trace is watched closely throughout the infusion.
 B. Say it is not appropriate, as CDC advises against dextrose through the circuit, and ask for another access route.
 C. Suggest adding a stopcock to the line to make it safer, so that the infusion can be started and stopped.
 D. Agree because the patient is in shock and every available access route may be needed for treatment.

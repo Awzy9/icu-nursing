@@ -104,7 +104,7 @@ A 62-year-old man with pneumonia on a pressure-controlled mode becomes agitated.
 **Q1 (application).** A patient is on a mode where the clinician sets the inspiratory pressure. The nurse sees the exhaled tidal volume fall from the usual value while the set pressure is unchanged. What does the review's description of pressure control suggest?
 A. The ventilator is delivering the set tidal volume, so the fall is only a display error that can be ignored safely.
 B. Tidal volume is not guaranteed in pressure control, so a fall may mean worse mechanics or less effort: look for causes and report.
-C. The set pressure has automatically been raised by the ventilator, which explains why the tidal volume has become lower.
+C. The set pressure has automatically been raised by the ventilator to compensate, which explains why the tidal volume has become lower.
 D. The patient has switched to a different breath sequence without any change having been made to the ventilator settings.
 **Answer: B.**
 **Why correct:** In pressure control, tidal volume depends on compliance, resistance and effort, so a falling volume is a signal to assess and report.

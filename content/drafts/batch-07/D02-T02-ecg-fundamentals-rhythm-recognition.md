@@ -161,9 +161,9 @@ D. Count the R waves and multiply by 10.
 
 **Q5 (safety).** A patient with a prolonged QTc starts to have PVCs that fall on the T wave. Why is this important?
 A. R on T beats can trigger ventricular tachycardia, and prolonged QT increases the risk, so this should be reported.
-B. PVCs on the T wave are harmless and need no action.
-C. The pattern shows that the electrodes have been placed incorrectly.
-D. The pattern shows that the patient has first-degree AV block.
+B. PVCs falling on the T wave are harmless and are expected with a long QT, so no action or report is needed.
+C. The pattern means the electrodes have been placed incorrectly, so the leads should be moved before anything is reported.
+D. The pattern shows that the patient has developed first-degree AV block, which needs no further assessment tonight.
 **Answer: A.**
 **Why correct:** The textbook states that R on T can trigger ventricular tachycardia and that conditions causing a prolonged QT make it more likely.
 **Why not B:** The textbook says it can trigger a dangerous rhythm.

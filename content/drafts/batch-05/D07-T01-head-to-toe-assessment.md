@@ -92,7 +92,7 @@ A 70-year-old woman on day 5 after surgery is assessed head to toe. The nurse fi
 ## 17. MCQs
 **Q1 (prioritization).** At the start of a head-to-toe assessment, which step comes first according to the checklist?
 A. Safety steps and a primary survey of airway, breathing, circulation and mental status, with emergency help if needed.
-B. Auscultating bowel sounds in all four quadrants for a full minute before anything else is examined.
+B. Auscultating bowel sounds in all four quadrants for a full minute before anything else is examined or the patient is approached.
 C. Measuring the weight trend and the 24-hour intake and output totals before approaching the patient.
 D. Staging any pressure injury found on the sacrum or heels, because skin findings are the most urgent.
 **Answer: A.**
@@ -124,10 +124,10 @@ D. Complete the rest of the assessment first and then mention the finding at the
 **Why not D:** Handover is too late for a possible acute neurological event.
 
 **Q4 (scope).** Which statement about the Open RN checklist is accurate?
-A. It is a validated ICU assessment standard for critical care and defines the frequency of ICU assessments.
-B. It sets numeric thresholds for escalation in every body system and for every group of patients.
+A. It is a validated ICU assessment standard for critical care and defines the frequency of ICU assessments for each patient.
+B. It sets numeric thresholds for escalation in every body system and for every group of patients, including children and pregnant patients.
 C. It guides a routine, general, daily assessment by an entry-level nurse; focused and specialty assessments follow unit guidelines.
-D. It replaces the unit's monitoring and early-warning policies when a patient is in a critical care area.
+D. It replaces the unit's monitoring and early-warning policies when a patient is in a critical care area or an isolation room.
 **Answer: C.**
 **Why correct:** The checklist describes itself this way.
 **Why not A:** The checklist is a general inpatient tool, not an ICU-specific standard, so this does not follow.

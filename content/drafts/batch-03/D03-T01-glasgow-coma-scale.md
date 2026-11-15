@@ -126,10 +126,10 @@ D. The components show which function has changed and allow trends to be compare
 **Why not C:** The sources do not claim this.
 
 **Q4 (prioritization).** At the hourly check, a patient's motor response has changed from obeying commands to localising, with no change in sedation. What should the nurse do?
-A. Record it and continue routine care until the next scheduled review.
+A. Record it and continue routine care until the next scheduled review, since the sedation has not changed.
 B. Repeat the assessment to confirm, check pupils and vital signs, and report the change with SBAR promptly.
-C. Reduce the sedation to see if the response improves, without informing the team.
-D. Ask the relatives whether the patient seems different before deciding what to do.
+C. Reduce the sedation to see if the response improves, without informing the team, to avoid an unnecessary escalation.
+D. Ask the relatives whether the patient seems different before deciding what to do about the change in response.
 **Answer: B.**
 **Why correct:** A fall in motor response can signal deterioration; the sources emphasise trends signalling the need for action.
 **Why not A:** Delaying the report risks harm because the change in consciousness may be progressing.
@@ -149,8 +149,8 @@ D. Stop the infusion yourself to obtain a true score, then restart it once the a
 
 **Q6 (scope).** Which task belongs to the medical team rather than the nurse?
 A. Recording the stimulus used and the rating for each component.
-B. Reporting a change in motor response.
-C. Using fingertip pressure before trapezius pressure.
+B. Reporting a change in motor response promptly and clearly.
+C. Using fingertip pressure before trapezius pressure when a painful stimulus is needed.
 D. Deciding on imaging, intubation or treatment of raised intracranial pressure.
 **Answer: D.**
 **Why correct:** Clinical interpretation and treatment decisions are medical decisions.

@@ -75,7 +75,7 @@ describe("synthetic fixtures", () => {
     for (const q of fx) {
       expect(q.code).toMatch(/^SYN-\d{3}$/);
       expect(q.options).toHaveLength(4);
-      expect(q.options.every((o) => o.explanation.en.length >= 5)).toBe(true);
+      expect(q.options.every((o) => (o.explanation.en ?? "").length >= 5)).toBe(true);
       expect(q.rationale.en).toMatch(/no clinical content/i);
     }
   });
@@ -86,7 +86,13 @@ describe("synthetic fixtures", () => {
   it("are not copies of any clinical draft MCQ", () => {
     const root = path.resolve(__dirname, "../../content/drafts");
     const drafts: string[] = [];
-    const walk = (d: string) => { for (const f of readdirSync(d)) { const p = path.join(d, f); statSync(p).isDirectory() ? walk(p) : p.endsWith(".md") && drafts.push(readFileSync(p, "utf8").toLowerCase()); } };
+    const walk = (d: string) => {
+      for (const f of readdirSync(d)) {
+        const p = path.join(d, f);
+        if (statSync(p).isDirectory()) walk(p);
+        else if (p.endsWith(".md")) drafts.push(readFileSync(p, "utf8").toLowerCase());
+      }
+    };
     walk(root);
     expect(drafts.length).toBeGreaterThan(30);
     for (const q of fx) for (const d of drafts) expect(d.includes((q.stem.en ?? "").toLowerCase())).toBe(false);
@@ -106,7 +112,8 @@ describe("content gate in the source tree", () => {
     for (const f of readdirSync(dir)) {
       if (f === "node_modules" || f === ".next" || f.startsWith(".next")) continue;
       const p = path.join(dir, f);
-      statSync(p).isDirectory() ? walk(p, out) : /\.(ts|tsx|sql|json|mjs)$/.test(f) && out.push(p);
+      if (statSync(p).isDirectory()) walk(p, out);
+      else if (/\.(ts|tsx|sql|json|mjs)$/.test(f)) out.push(p);
     }
     return out;
   };

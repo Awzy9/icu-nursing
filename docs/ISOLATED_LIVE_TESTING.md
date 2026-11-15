@@ -26,3 +26,9 @@ The live API suite (`tests/live`, 50 tests) and live UI suite (`tests/live-e2e/u
 
 ## What was not done
 No new project, no Docker run, no change to the dev project's CAPTCHA settings or secret, and no weakening of any authentication control.
+
+## Feasibility check, Phase 4 (2026-11-15)
+* Docker CLI is installed in the development sandbox but **no Docker daemon is running** (`/var/run/docker.sock` is absent), so Option A (local Supabase stack) cannot be executed here. The Supabase CLI (3.1.0) is available, so the option is ready for a machine or CI runner with Docker.
+* Option B needs a second hosted Supabase project, which requires owner approval. None was created.
+* Nothing was run against, and nothing was changed in, `icu-nursing-dev` (Turnstile secret and CAPTCHA settings untouched). The guard `refuseCaptchaWeakeningOnDev()` remains in force and unit-tested.
+* The question bank does not depend on the live suites: its database behaviour is tested on real PostgreSQL with every migration applied (`npm run test:db`), and its UI on the fixtures engine (`npm run test:e2e`). Migration `0006` has **not** been applied to the hosted dev project.

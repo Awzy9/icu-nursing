@@ -41,7 +41,10 @@ export default async function DashboardPage({ params }: { params: Promise<{ loca
       <header className="space-y-2">
         <h1 className="text-3xl font-bold">{user.displayName ? t("welcome", { name: user.displayName }) : t("welcomeNoName")}</h1>
         <p className="text-sm text-muted-foreground">{t("yourRoles")}: {roles.join(", ")}</p>
-        {isStaff ? <Button asChild variant="outline" size="sm"><Link href="/admin">{t("staffArea")}</Link></Button> : null}
+        <div className="flex flex-wrap gap-2">
+          <Button asChild size="sm"><Link href="/question-bank">{t("questionBank")}</Link></Button>
+          {isStaff ? <Button asChild variant="outline" size="sm"><Link href="/admin">{t("staffArea")}</Link></Button> : null}
+        </div>
       </header>
 
       <section aria-labelledby="continue-h" className="space-y-3">

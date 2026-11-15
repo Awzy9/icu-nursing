@@ -92,8 +92,8 @@ A 66-year-old ventilated man on vasopressors has a distended abdomen, a large as
 ## 17. MCQs
 **Q1 (prioritization).** A ventilated patient on rising vasopressor doses has a newly distended abdomen, vomited once and has a large gastric aspirate. What is the best nursing action?
 A. Pause the feed per policy, protect the airway, keep the bed head raised and report urgently with SBAR.
-B. Continue the feed at the same rate and re-check the abdomen at the next routine round.
-C. Give a laxative from the ward stock and restart the feed at a lower rate.
+B. Continue the feed at the same rate and re-check the abdomen at the next routine round, as one vomit is common.
+C. Give a laxative from the ward stock and restart the feed at a lower rate once the patient has settled.
 D. Flush the tube and increase the feed rate to move the contents along.
 **Answer: A.**
 **Why correct:** New distension with instability may indicate intolerance or gut hypoperfusion; pausing and escalating protects the patient.
@@ -135,10 +135,10 @@ D. Switching off the monitors during the feed so that the patient is not disturb
 **Why not D:** Monitoring is needed during feeding.
 
 **Q5 (scope).** Which task belongs to the prescriber or dietitian rather than the nurse?
-A. Checking and recording tube position and securement.
-B. Reporting vomiting and an increase in gastric aspirates.
+A. Checking and recording tube position and securement at each feed and after any movement.
+B. Reporting vomiting and a rise in gastric aspirates to the prescriber.
 C. Deciding to change from gastric to post-pyloric feeding or to parenteral nutrition.
-D. Raising the head of the bed and giving mouth care.
+D. Raising the head of the bed and giving mouth care at regular intervals.
 **Answer: C.**
 **Why correct:** Route and type of nutrition are team decisions.
 **Why not A:** Independent nursing task.
