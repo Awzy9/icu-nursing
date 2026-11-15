@@ -11,11 +11,13 @@ import { PASSWORD, PROJECT_URL, cleanup, emailFor, mailLink, makeUser, newClient
 import { loadFixtures } from "../../src/lib/question-bank/fixtures";
 import { loadCaseFixtures } from "../../src/lib/cases/fixtures";
 import { loadSkillFixtures } from "../../src/lib/skills/fixtures";
+import { loadMedicationFixtures } from "../../src/lib/medications/fixtures";
 
 const ANON = process.env.LIVE_ANON_KEY ?? "";
 const fx = loadFixtures();
 const cases = loadCaseFixtures();
 const skills = loadSkillFixtures();
+const medications = loadMedicationFixtures();
 const ids: string[] = [];
 
 const rest = (path: string, token?: string, init: RequestInit = {}) =>
@@ -31,6 +33,7 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
     await sql(readFileSync("supabase/seed_question_fixtures.sql", "utf8"));
     await sql(readFileSync("supabase/seed_case_fixtures.sql", "utf8"));
     await sql(readFileSync("supabase/seed_skill_fixtures.sql", "utf8"));
+    await sql(readFileSync("supabase/seed_medication_fixtures.sql", "utf8"));
     await sql("update public.app_settings set environment='development', question_fixtures_visible=true");
     a = await makeUser("iso-a", "Isolated A");
     b = await makeUser("iso-b", "Isolated B");
@@ -139,6 +142,24 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
     expect((await rest("/rpc/sk_list", undefined, { method: "POST", body: "{}" })).status).toBeGreaterThanOrEqual(400); // anonymous
   });
 
+  it("medication reference over supabase-js and raw PostgREST: search and bookmarks work, tables are closed, no dosing content is stored", async () => {
+    const c = await signIn(a.email);
+    const tok = await tokenOf(c);
+    expect(((await c.rpc("md_list")).data as any[]).map((x) => x.code).sort()).toEqual(medications.map((x) => x.code).sort());
+    expect(((await c.rpc("md_list", { p_query: "examplol" })).data as any[]).length).toBe(1);
+    expect((await c.rpc("md_set_bookmark", { p_med: medications[0]!.id, p_on: true })).error).toBeNull();
+    expect(((await c.rpc("md_list", { p_bookmarked: true })).data as any[]).length).toBe(1);
+    const other = await signIn(b.email);
+    expect(((await other.rpc("md_list", { p_bookmarked: true })).data as any[]).length).toBe(0);
+    for (const t of ["medication_items", "medication_monitoring_items", "medication_revisions", "medication_bookmarks"]) {
+      const r = await rest(`/${t}?select=*`, tok);
+      expect(r.status === 200 ? (await r.json()).length : 0).toBe(t === "medication_bookmarks" ? 1 : 0);
+    }
+    expect((await rest("/medication_items", tok, { method: "POST", body: JSON.stringify({ code: "HACK-001", kind: "clinical" }) })).status).toBeGreaterThanOrEqual(400);
+    expect((await rest("/rpc/md_list", undefined, { method: "POST", body: "{}" })).status).toBeGreaterThanOrEqual(400);
+    await expect(sql(`insert into public.medication_items (code, kind, category, name, drug_class, summary) values ('DOSE-LIVE','clinical','anti-infectives','{"en":"Dose test"}','{"en":"Class"}','{"en":"Give 5 mg to the patient as ordered."}')`)).rejects.toThrow(/must not contain/);
+  });
+
   it("answer-key and scoring secrecy over real PostgREST requests", async () => {
     const c = await signIn(b.email);
     const tok = await tokenOf(c);
@@ -215,6 +236,7 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
       expect(((await c.rpc("qb_progress")).data as any).synthetic_fixtures).toBe(false);
       expect(((await c.rpc("cs_list")).data as any[])).toEqual([]);
       expect(((await c.rpc("sk_list")).data as any[])).toEqual([]);
+      expect(((await c.rpc("md_list")).data as any[])).toEqual([]);
       expect((await c.rpc("qb_start_attempt", { p_mode: "practice", p_count: 3 })).error?.message).toMatch(/no questions are available/);
     } finally {
       await sql("update public.app_settings set environment='development'");

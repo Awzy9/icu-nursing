@@ -36,7 +36,7 @@ describe("localize", () => {
 });
 
 describe("Arabic interface consistency for the learning areas", () => {
-  const NS = ["QuestionBank", "Study", "Cases", "Learn", "Skills"] as const;
+  const NS = ["QuestionBank", "Study", "Cases", "Learn", "Skills", "Medications"] as const;
   const flatNs = (o: Record<string, unknown>, pre = ""): Record<string, string> => Object.fromEntries(Object.entries(o).flatMap(([k, v]) => (v && typeof v === "object" ? Object.entries(flatNs(v as Record<string, unknown>, `${pre}${k}.`)) : [[`${pre}${k}`, v as string]])));
   const ns2 = (c: unknown) => Object.fromEntries(NS.map((n) => [n, flatNs((c as Record<string, Record<string, unknown>>)[n]!)]));
   const cats = { en: ns2(en) as Record<string, Record<string, string>>, ar: ns2(ar) as Record<string, Record<string, string>> };

@@ -10,6 +10,7 @@ import { loadFixtures } from "../../src/lib/question-bank/fixtures";
 import { seededOrder } from "../../src/lib/question-bank/shuffle";
 import { loadCaseFixtures } from "../../src/lib/cases/fixtures";
 import { loadSkillFixtures } from "../../src/lib/skills/fixtures";
+import { loadMedicationFixtures } from "../../src/lib/medications/fixtures";
 
 const fx = loadFixtures();
 let failed = 0;
@@ -173,6 +174,27 @@ async function fails(user: string | null, query: string, re: RegExp): Promise<bo
     check("self-study completion records counts only, no verdict", sdone.summary.items_done === 1 && sdone.summary.items_total === 7 && !/passed|competent|certified/i.test(JSON.stringify(sdone)));
     check("another learner cannot read or alter that session", await fails(A, `select public.sk_get_session('${sid}')`, /session not found/) && await fails(A, `select public.sk_mark('${sid}','${sk[0]!.checklist[1]!.id}','done')`, /session not found/));
     check("anon cannot call skills functions", await fails(null, "select public.sk_list(null,null,false)", /permission denied/));
+
+    // --- medication reference (migration 0013) ---------------------------------------------------------------------------
+    await sql(readFileSync("supabase/seed_medication_fixtures.sql", "utf8"));
+    const md = loadMedicationFixtures();
+    check("4 synthetic medications loaded; no clinical medication exists", Number((await sql("select count(*)::int n from public.medication_items where kind='demo_synthetic' and status='published'"))[0]!.n) === 4
+      && Number((await sql("select count(*)::int n from public.medication_items where kind='clinical'"))[0]!.n) === 0);
+    check("learner sees the 4 medications through md_list; search and high-alert filter work", (await as(B, "select public.md_list(null,null,false,false) as l"))[0]!.l.length === 4
+      && (await as(B, "select public.md_list('examplol',null,false,false) as l"))[0]!.l.length === 1 && (await as(B, "select public.md_list(null,null,false,true) as l"))[0]!.l.length === 3);
+    for (const t of ["medication_items", "medication_monitoring_items", "medication_revisions"]) check(`learner sees 0 rows in ${t}`, (await as(B, `select 1 from public.${t} limit 1`)).length === 0);
+    let dg = false;
+    try { await sql(`insert into public.medication_items (code, kind, category, name, drug_class, summary) values ('LIVE-DOSE','clinical','anti-infectives','{"en":"Dose test"}','{"en":"Class"}','{"en":"Give 5 mg to the patient as ordered."}')`); } catch (e) { dg = /must not contain/.test((e as Error).message); }
+    check("the no-dosing guard rejects a dose in a medication entry", dg);
+    const mdd = (await sql(`insert into public.medication_items (code, kind, status, origin, category, name, drug_class, summary, evidence_status, license_status) values ('LIVE-MED-DRAFT','clinical','draft','ai_generated','anti-infectives','{"en":"Live gate test"}','{"en":"Class"}','{"en":"Unpublished clinical-kind entry for the live gate test."}','partial','permission_required') returning id`))[0]!.id as string;
+    check("unpublished clinical medication cannot be bookmarked or read", await fails(B, `select public.md_set_bookmark('${mdd}', true)`, /medication not found/) && await fails(B, `select public.md_get('LIVE-MED-DRAFT')`, /medication not found/));
+    let mg = false;
+    try { await sql(`update public.medication_items set status='published', approved_at=now(), published_at=now() where id='${mdd}'`); } catch (e) { mg = /named approver|independent clinical review|invalid medication structure/.test((e as Error).message); }
+    check("guard rejects publishing the clinical medication", mg);
+    await sql(`delete from public.medication_items where id='${mdd}'`);
+    await as(B, `select public.md_set_bookmark('${md[0]!.id}', true)`);
+    check("bookmarks are per learner", (await as(B, "select public.md_list(null,null,true,false) as l"))[0]!.l.length === 1 && (await as(A, "select public.md_list(null,null,true,false) as l"))[0]!.l.length === 0);
+    check("anon cannot call medication functions", await fails(null, "select public.md_list(null,null,false,false)", /permission denied/));
 
     // --- clean up test data ------------------------------------------------------------------------------------------------
   } finally {

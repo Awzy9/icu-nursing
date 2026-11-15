@@ -29,9 +29,9 @@ const call = (f: Fn) => {
 };
 
 describe("all functions exposed to signed-in users", () => {
-  it("are all SECURITY DEFINER with a pinned search_path (44+ at the time of writing)", async () => {
+  it("are all SECURITY DEFINER with a pinned search_path (48+ at the time of writing)", async () => {
     const fns = await exposed();
-    expect(fns.length).toBeGreaterThanOrEqual(44);
+    expect(fns.length).toBeGreaterThanOrEqual(48);
     for (const f of fns) {
       expect(f.prosecdef, f.proname).toBe(true);
       expect((f.proconfig ?? []).some((c) => c.startsWith("search_path=")), `${f.proname} search_path`).toBe(true);
@@ -59,7 +59,7 @@ describe("all functions exposed to signed-in users", () => {
 
   it("deny every staff/admin function to a signed-in learner with no roles", async () => {
     const learner = await createUser(uniqueEmail("plain"));
-    const learnerFns = /^(qb_|st_|cs_|sk_|record_topic_view|set_topic_completion)/;
+    const learnerFns = /^(qb_|st_|cs_|sk_|md_|record_topic_view|set_topic_completion)/;
     for (const f of (await exposed()).filter((x) => !learnerFns.test(x.proname))) {
       const { sql, params } = call(f);
       let succeeded = false;

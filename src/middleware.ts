@@ -5,7 +5,7 @@ import { routing } from "./i18n/routing";
 import { buildCsp, newNonce } from "./lib/csp";
 
 const intl = createIntlMiddleware(routing);
-const PROTECTED = ["/dashboard", "/bookmarks", "/question-bank", "/study", "/cases", "/skills", "/learn", "/admin", "/account", "/mfa"];
+const PROTECTED = ["/dashboard", "/bookmarks", "/question-bank", "/study", "/cases", "/skills", "/medications", "/learn", "/admin", "/account", "/mfa"];
 
 export default async function middleware(original: NextRequest) {
   // Per-request CSP nonce: forwarded to Next.js (which stamps its own scripts) and set on the response.
