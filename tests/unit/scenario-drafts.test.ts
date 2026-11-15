@@ -24,8 +24,8 @@ describe("the 20 original scenarios as DRAFT specifications", () => {
       expect(["partial", "unsupported"]).toContain(d.evidence_status);
     }
   });
-  it("has nine decision graphs and eleven outlines, and an unsupported outline carries no actions", () => {
-    expect(drafts.filter((d) => d.spec_level === "decision_graph").length).toBe(9);
+  it("has eleven decision graphs and nine outlines, and an unsupported outline carries no actions", () => {
+    expect(drafts.filter((d) => d.spec_level === "decision_graph").length).toBe(11);
     for (const d of drafts.filter((x) => x.evidence_status === "unsupported")) expect(d.expected_actions ?? []).toEqual([]);
   });
   it("rejects bad drafts", () => {

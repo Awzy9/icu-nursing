@@ -1,7 +1,7 @@
 id,title,spec_level,evidence_status,steps,expected_actions,sources,required_sources_outstanding
-SC-01,Septic shock,outline,partial,0,3,S-SSC-2021;S-SSC-2026;S-RCP-NEWS2;L-NOREPINEPHRINE;S-AHRQ-TS,3
+SC-01,Septic shock,decision_graph,partial,3,0,S-RCP-NEWS2;L-NOREPINEPHRINE;S-AHRQ-TS,3
 SC-02,Cardiogenic shock,outline,partial,0,2,L-DOBUTAMINE;L-MILRINONE;S-ESICM-SHOCK-2014,2
-SC-03,Acute respiratory deterioration,outline,partial,0,2,S-AARC-O2;S-RCP-NEWS2,2
+SC-03,Acute respiratory deterioration,decision_graph,partial,3,0,S-RCP-NEWS2;S-AARC-O2;S-AHRQ-TS,3
 SC-04,Ventilator alarm,decision_graph,partial,3,0,S-AARC-PVA;S-HAMILTON-C1;S-DRAEGER-V500-IFU;S-AHRQ-TS,2
 SC-05,Sudden oxygen desaturation,outline,partial,0,2,S-AARC-O2;S-AARC-SUCT;S-RCP-NEWS2,2
 SC-06,Accidental extubation,decision_graph,partial,3,0,S-AARC-PVA;S-ERC-ALS-2025;S-AHRQ-TS,2
