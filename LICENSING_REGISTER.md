@@ -87,3 +87,12 @@ Each topic/question/scenario stores: source IDs, a note of *what was independent
 | NMC Code and Standards of proficiency for registered nurses | **YELLOW** | NMC copyright; terms not read | Cite and paraphrase | Reproduce | Verify |
 | NCSBN/ANA National Guidelines for Nursing Delegation (2019) | **YELLOW** | NCSBN copyright; terms not read | Cite and paraphrase | Reproduce | Verify |
 | Canberra Health Services ICU procedures (arterial line; CRRT) | **UNVERIFIED** | HTTP 403; not read | – | – | Obtain permission or an accessible copy |
+
+## Additions from Phase 8.1 (checked 2026-11-15; no licensing enquiry made)
+| Source | Class | Licence evidence | Allowed | Not allowed | Action |
+|---|---|---|---|---|---|
+| NHS Greater Glasgow and Clyde adult tracheostomy guideline (N-NHSGGC-TRACH-2022) | **YELLOW** | Distributed through the National Tracheostomy Safety Project (permission acknowledged on the document); licence text not otherwise read; review date has passed | Cite; paraphrase as a regional, dated, local guideline | Reproduce; present as national or current | Re-check for a current edition before any publication |
+| US FDA labels via openFDA, medication batches 2-5 (40 further drugs; one manufacturer label each, recorded in `content/drafts/medications/LABEL_SOURCES.csv` with set id, version, date and manufacturer) | **YELLOW** | Same position as the Phase 3 entry; a product label is not a bedside nursing practice guideline | Cite; paraphrase safety statements | Reproduce label text; apply US labels to other jurisdictions | Verify openFDA and manufacturer terms; add UK/Canadian/other labels if jurisdictions are extended |
+| AHS CRRT alarm pathway (N-AHS-CRRT-ALARM-2025), used in scenario SC-15 and XQ-07 | **YELLOW** | Licence not stated on the page read; machine-family specific | Cite; paraphrase | Reproduce; generalise to other machines | Verify |
+| Scenario drafts SC-01..SC-20 | n/a (original wording) | Authors' own fictional specifications; each cites only registered sources | Internal development | Import or publish before clinical review | Keep out of the database |
+| Open RN tracheostomy chapter, NCBI Bookshelf, ACI and eCampusOntario copies | **UNVERIFIED** | Blocked or not found; verification challenges were not bypassed | - | - | Try again later or obtain an accessible edition |
