@@ -1,0 +1,496 @@
+[
+ {
+  "code": "SYN-SKILL-001",
+  "category": "safety-infection-devices",
+  "title": {
+   "en": "Preparing the ferry ticket scanner",
+   "ar": "تجهيز ماسح تذاكر العبّارة"
+  },
+  "summary": {
+   "en": "Synthetic training skill at the fictional Harbour Island ferry office. It contains no clinical content and exists only to test the skills software.",
+   "ar": "مهارة تدريبية تجريبية في مكتب عبّارات جزيرة الميناء الخيالي. لا تحتوي على أي محتوى سريري وهي موجودة فقط لاختبار برنامج المهارات."
+  },
+  "objectives": {
+   "en": [
+    "Describe when the fictional scanner is set up.",
+    "Complete the fictional set-up checklist in order.",
+    "Say who to tell when the scanner will not start."
+   ],
+   "ar": [
+    "صف متى يتم تجهيز الماسح الخيالي.",
+    "أكمل قائمة التجهيز الخيالية بالترتيب.",
+    "اذكر لمن تُبلّغ عندما لا يعمل الماسح."
+   ]
+  },
+  "prerequisites": {
+   "en": [
+    "Read the fictional office handbook, section 1."
+   ],
+   "ar": [
+    "اقرأ دليل المكتب الخيالي، القسم الأول."
+   ]
+  },
+  "sections": {
+   "indications": {
+    "en": [
+     "The scanner is set up before the first departure of the day."
+    ],
+    "ar": [
+     "يُجهَّز الماسح قبل أول رحلة في اليوم."
+    ]
+   },
+   "safety": {
+    "en": [
+     "Keep the fictional power lead away from the ticket desk edge.",
+     "Do not open the scanner case while it is plugged in."
+    ],
+    "ar": [
+     "أبعد سلك الطاقة الخيالي عن حافة مكتب التذاكر.",
+     "لا تفتح غلاف الماسح وهو موصول بالكهرباء."
+    ]
+   },
+   "responsibilities": {
+    "en": [
+     "The duty assistant sets up the scanner; the harbour manager decides whether to delay boarding."
+    ]
+   },
+   "equipment": {
+    "en": [
+     "Scanner, power lead and a sheet of test tickets (all fictional)."
+    ]
+   },
+   "preparation": {
+    "en": [
+     "Wash hands and clear the desk."
+    ]
+   },
+   "procedure": {
+    "en": [
+     "Plug in, switch on, scan one test ticket, read the result."
+    ]
+   },
+   "monitoring": {
+    "en": [
+     "Re-scan a test ticket after each reboot."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "If the scanner does not start after two attempts, tell the harbour manager."
+    ],
+    "ar": [
+     "إذا لم يعمل الماسح بعد محاولتين، أبلغ مدير الميناء."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Write the time and result in the fictional daily log."
+    ],
+    "ar": [
+     "اكتب الوقت والنتيجة في السجل اليومي الخيالي."
+    ]
+   },
+   "communication": {
+    "en": [
+     "Tell the next shift if the scanner needed a reboot."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "indications": "full",
+   "safety": "full",
+   "responsibilities": "partial",
+   "equipment": "partial",
+   "procedure": "local_protocol",
+   "escalation": "full",
+   "documentation": "full"
+  },
+  "checklist": [
+   {
+    "phase": "preparation",
+    "text": {
+     "en": "Clear the desk and check the power lead is undamaged.",
+     "ar": "امسح المكتب وتأكد من سلامة سلك الطاقة."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "phase": "preparation",
+    "text": {
+     "en": "Confirm the scanner case is closed."
+    },
+    "critical": false,
+    "support": "sourced"
+   },
+   {
+    "phase": "procedure",
+    "text": {
+     "en": "Plug in and switch on the scanner.",
+     "ar": "وصّل الماسح بالكهرباء وشغّله."
+    },
+    "critical": false,
+    "support": "partial"
+   },
+   {
+    "phase": "procedure",
+    "text": {
+     "en": "Scan one test ticket and read the result aloud.",
+     "ar": "امسح تذكرة اختبار واحدة واقرأ النتيجة بصوت عالٍ."
+    },
+    "critical": true,
+    "support": "partial"
+   },
+   {
+    "phase": "monitoring",
+    "text": {
+     "en": "Re-scan a test ticket after any reboot."
+    },
+    "critical": false,
+    "support": "local_protocol"
+   },
+   {
+    "phase": "escalation",
+    "text": {
+     "en": "Tell the harbour manager if the scanner fails twice.",
+     "ar": "أبلغ مدير الميناء إذا فشل الماسح مرتين."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "phase": "documentation",
+    "text": {
+     "en": "Record time and result in the daily log.",
+     "ar": "سجّل الوقت والنتيجة في السجل اليومي."
+    },
+    "critical": false,
+    "support": "sourced"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version.",
+   "ar": "النسخة التجريبية الأولى."
+  }
+ },
+ {
+  "code": "SYN-SKILL-002",
+  "category": "assessment",
+  "title": {
+   "en": "Reading the daily weather board",
+   "ar": "قراءة لوحة الطقس اليومية"
+  },
+  "summary": {
+   "en": "Synthetic training skill: read a fictional weather board and report it. No clinical content; used only to test checklists and progress.",
+   "ar": "مهارة تدريبية تجريبية: قراءة لوحة طقس خيالية والإبلاغ عنها. لا محتوى سريري."
+  },
+  "objectives": {
+   "en": [
+    "Read each field of the fictional board.",
+    "Report a value that is outside the fictional safe range."
+   ],
+   "ar": [
+    "اقرأ كل حقل في اللوحة الخيالية.",
+    "أبلغ عن قيمة خارج النطاق الآمن الخيالي."
+   ]
+  },
+  "prerequisites": {
+   "en": []
+  },
+  "sections": {
+   "indications": {
+    "en": [
+     "Read the board at the start of every shift."
+    ],
+    "ar": [
+     "اقرأ اللوحة في بداية كل مناوبة."
+    ]
+   },
+   "safety": {
+    "en": [
+     "Never edit the board without the harbour manager."
+    ]
+   },
+   "assessment": {
+    "en": [
+     "Compare each reading with the fictional safe range on the handbook card."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "Report an out-of-range reading to the harbour manager straight away."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Copy readings to the daily log exactly as shown."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "indications": "full",
+   "safety": "partial",
+   "assessment": "local_protocol",
+   "escalation": "full",
+   "documentation": "full"
+  },
+  "checklist": [
+   {
+    "phase": "preparation",
+    "text": {
+     "en": "Find the handbook card with the safe ranges."
+    },
+    "critical": false,
+    "support": "sourced"
+   },
+   {
+    "phase": "assessment",
+    "text": {
+     "en": "Read wind, tide and visibility from the board."
+    },
+    "critical": true,
+    "support": "partial"
+   },
+   {
+    "phase": "assessment",
+    "text": {
+     "en": "Compare each value with the safe range."
+    },
+    "critical": true,
+    "support": "partial"
+   },
+   {
+    "phase": "escalation",
+    "text": {
+     "en": "Report any out-of-range value to the manager immediately."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "phase": "documentation",
+    "text": {
+     "en": "Copy the readings into the daily log."
+    },
+    "critical": false,
+    "support": "sourced"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version."
+  }
+ },
+ {
+  "code": "SYN-SKILL-003",
+  "category": "skin-mobility-transport",
+  "title": {
+   "en": "Moving the luggage trolley safely",
+   "ar": "نقل عربة الأمتعة بأمان"
+  },
+  "summary": {
+   "en": "Synthetic training skill about moving a fictional luggage trolley across the ferry ramp. Contains no clinical content."
+  },
+  "objectives": {
+   "en": [
+    "Check the ramp before moving the trolley.",
+    "Use a second person for loads over the fictional limit."
+   ]
+  },
+  "prerequisites": {
+   "en": [
+    "Complete the fictional manual-handling briefing."
+   ]
+  },
+  "sections": {
+   "indications": {
+    "en": [
+     "Whenever the trolley must cross the ramp."
+    ]
+   },
+   "safety": {
+    "en": [
+     "Brake on before loading.",
+     "Never push the trolley downhill alone."
+    ]
+   },
+   "equipment": {
+    "en": [
+     "Luggage trolley and two safety cones (fictional)."
+    ]
+   },
+   "procedure": {
+    "en": [
+     "Place cones, release the brake, move in a straight line, brake on."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "If the ramp is wet, stop and tell the harbour manager."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Log any near miss in the fictional safety book."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "indications": "full",
+   "safety": "full",
+   "equipment": "partial",
+   "procedure": "local_protocol",
+   "escalation": "full",
+   "documentation": "full"
+  },
+  "checklist": [
+   {
+    "phase": "preparation",
+    "text": {
+     "en": "Check the ramp is dry and clear."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "phase": "preparation",
+    "text": {
+     "en": "Place the two safety cones."
+    },
+    "critical": false,
+    "support": "sourced"
+   },
+   {
+    "phase": "procedure",
+    "text": {
+     "en": "Release the brake and move in a straight line."
+    },
+    "critical": false,
+    "support": "partial"
+   },
+   {
+    "phase": "procedure",
+    "text": {
+     "en": "Apply the brake at the top of the ramp."
+    },
+    "critical": true,
+    "support": "partial"
+   },
+   {
+    "phase": "documentation",
+    "text": {
+     "en": "Log any near miss in the safety book."
+    },
+    "critical": false,
+    "support": "sourced"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version."
+  }
+ },
+ {
+  "code": "SYN-SKILL-004",
+  "category": "airway-ventilation",
+  "title": {
+   "en": "Setting up the harbour radio",
+   "ar": "إعداد راديو الميناء"
+  },
+  "summary": {
+   "en": "Synthetic training skill: set up and test a fictional harbour radio. No clinical content; it exercises search, filters and bookmarks."
+  },
+  "objectives": {
+   "en": [
+    "Test the fictional radio channel.",
+    "Use the fictional call-sign format."
+   ]
+  },
+  "prerequisites": {
+   "en": []
+  },
+  "sections": {
+   "indications": {
+    "en": [
+     "At the start of each shift."
+    ]
+   },
+   "safety": {
+    "en": [
+     "Keep the aerial away from the fictional rain shield."
+    ]
+   },
+   "preparation": {
+    "en": [
+     "Charge the radio the night before."
+    ]
+   },
+   "procedure": {
+    "en": [
+     "Switch on, set channel 3, say the call sign, wait for a reply."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "If there is no reply after two calls, tell the harbour manager."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Record the test time in the daily log."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "indications": "full",
+   "safety": "partial",
+   "preparation": "local_protocol",
+   "procedure": "local_protocol",
+   "escalation": "full",
+   "documentation": "full"
+  },
+  "checklist": [
+   {
+    "phase": "preparation",
+    "text": {
+     "en": "Check the radio is charged."
+    },
+    "critical": false,
+    "support": "sourced"
+   },
+   {
+    "phase": "procedure",
+    "text": {
+     "en": "Switch on and select channel 3."
+    },
+    "critical": false,
+    "support": "partial"
+   },
+   {
+    "phase": "procedure",
+    "text": {
+     "en": "Say the call sign clearly and wait for a reply."
+    },
+    "critical": true,
+    "support": "partial"
+   },
+   {
+    "phase": "escalation",
+    "text": {
+     "en": "If there is no reply after two calls, tell the manager."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "phase": "documentation",
+    "text": {
+     "en": "Record the test time in the daily log."
+    },
+    "critical": false,
+    "support": "sourced"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version."
+  }
+ }
+]

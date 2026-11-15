@@ -32,7 +32,7 @@ jobs:
       - name: Seed is up to date
         run: npx tsx scripts/generate-seed.ts && git diff --exit-code supabase/seed.sql
       - name: Fixture seed files are up to date
-        run: npx tsx scripts/seed-synthetic-questions.ts && git diff --exit-code supabase/seed_question_fixtures.sql supabase/seed_case_fixtures.sql
+        run: npx tsx scripts/seed-synthetic-questions.ts && git diff --exit-code supabase/seed_question_fixtures.sql supabase/seed_case_fixtures.sql supabase/seed_skill_fixtures.sql
       - name: Database migrations + RLS tests
         run: npm run test:db
       - name: Build

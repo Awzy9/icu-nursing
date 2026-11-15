@@ -10,10 +10,12 @@ import { ISOLATED } from "../../scripts/live/target";
 import { PASSWORD, PROJECT_URL, cleanup, emailFor, mailLink, makeUser, newClient, signIn, sql } from "./helpers";
 import { loadFixtures } from "../../src/lib/question-bank/fixtures";
 import { loadCaseFixtures } from "../../src/lib/cases/fixtures";
+import { loadSkillFixtures } from "../../src/lib/skills/fixtures";
 
 const ANON = process.env.LIVE_ANON_KEY ?? "";
 const fx = loadFixtures();
 const cases = loadCaseFixtures();
+const skills = loadSkillFixtures();
 const ids: string[] = [];
 
 const rest = (path: string, token?: string, init: RequestInit = {}) =>
@@ -28,6 +30,7 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
   beforeAll(async () => {
     await sql(readFileSync("supabase/seed_question_fixtures.sql", "utf8"));
     await sql(readFileSync("supabase/seed_case_fixtures.sql", "utf8"));
+    await sql(readFileSync("supabase/seed_skill_fixtures.sql", "utf8"));
     await sql("update public.app_settings set environment='development', question_fixtures_visible=true");
     a = await makeUser("iso-a", "Isolated A");
     b = await makeUser("iso-b", "Isolated B");
@@ -112,6 +115,30 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
     expect((done.data as any).trail[0].points).toBe(2);
   });
 
+  it("skills library over supabase-js and raw PostgREST: self-study ticks persist, tables are closed, nothing is verdict-like", async () => {
+    const c = await signIn(a.email);
+    const tok = await tokenOf(c);
+    expect(((await c.rpc("sk_list")).data as any[]).map((x) => x.code).sort()).toEqual(skills.map((x) => x.code).sort());
+    const s = skills[0]!;
+    const sid = (await c.rpc("sk_start_session", { p_skill: s.id })).data as string;
+    expect((await c.rpc("sk_mark", { p_session: sid, p_item: s.checklist[0]!.id, p_result: "done" })).error).toBeNull();
+    const fin = await c.rpc("sk_complete_session", { p_session: sid });
+    expect(fin.error).toBeNull();
+    expect((fin.data as any).summary).toMatchObject({ items_total: 7, items_done: 1 });
+    expect(JSON.stringify(fin.data)).not.toMatch(/passed|competent|certified/i);
+    // another learner cannot see or alter it
+    const other = await signIn(b.email);
+    expect((await other.rpc("sk_get_session", { p_session: sid })).error?.message).toMatch(/session not found/);
+    // tables are closed to learners; no writes
+    for (const t of ["skill_items", "skill_checklist_items", "skill_revisions"]) {
+      const r = await rest(`/${t}?select=*`, tok);
+      expect(r.status === 200 ? await r.json() : []).toEqual([]);
+    }
+    const w = await rest("/skill_sessions", tok, { method: "POST", body: JSON.stringify({ skill_id: s.id, skill_version: 1, user_id: a.id, mode: "observed_assessment" }) });
+    expect(w.status).toBeGreaterThanOrEqual(400);
+    expect((await rest("/rpc/sk_list", undefined, { method: "POST", body: "{}" })).status).toBeGreaterThanOrEqual(400); // anonymous
+  });
+
   it("answer-key and scoring secrecy over real PostgREST requests", async () => {
     const c = await signIn(b.email);
     const tok = await tokenOf(c);
@@ -187,6 +214,7 @@ describe.skipIf(!ISOLATED)("isolated stack: auth flows, sessions and the supabas
       await sql("update public.app_settings set environment='production'"); // even with the visibility flag still true
       expect(((await c.rpc("qb_progress")).data as any).synthetic_fixtures).toBe(false);
       expect(((await c.rpc("cs_list")).data as any[])).toEqual([]);
+      expect(((await c.rpc("sk_list")).data as any[])).toEqual([]);
       expect((await c.rpc("qb_start_attempt", { p_mode: "practice", p_count: 3 })).error?.message).toMatch(/no questions are available/);
     } finally {
       await sql("update public.app_settings set environment='development'");
