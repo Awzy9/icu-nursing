@@ -88,6 +88,37 @@ export const attemptListSchema = z.array(
 );
 export type AttemptListItem = z.infer<typeof attemptListSchema>[number];
 
+export const REVISION_KINDS = ["due", "incorrect", "flagged", "bookmarked"] as const;
+export type RevisionKind = (typeof REVISION_KINDS)[number];
+
+export const studyOverviewSchema = z.object({
+  due: z.number().int(),
+  incorrect: z.number().int(),
+  flagged: z.number().int(),
+  bookmarked: z.number().int(),
+  reviewed_today: z.number().int(),
+  next_due_at: z.string().nullable(),
+  boxes: z.array(z.number().int()).length(5),
+  domains: z.array(z.object({ slug: z.string(), title: localized, available: z.number().int(), answered: z.number().int(), correct: z.number().int(), due: z.number().int() })),
+  synthetic_fixtures: z.boolean(),
+});
+export type StudyOverview = z.infer<typeof studyOverviewSchema>;
+
+export const historySchema = z.array(
+  z.object({
+    attempt_id: z.string(),
+    mode: z.enum(["practice", "exam"]),
+    question_id: z.string(),
+    domain_slug: z.string(),
+    domain_title: localized,
+    stem: localized,
+    is_correct: z.boolean(),
+    answered_at: z.string(),
+    synthetic: z.boolean(),
+  }),
+);
+export type HistoryItem = z.infer<typeof historySchema>[number];
+
 export type AnswerResult = { cleared?: boolean; feedback?: FeedbackView };
 
 export const startInputSchema = z.object({
@@ -118,4 +149,7 @@ export interface QuestionBankService {
   submitAttempt(id: string): Promise<AttemptView>;
   discardAttempt(id: string): Promise<void>;
   setBookmark(questionId: string, bookmarked: boolean): Promise<void>;
+  studyOverview(): Promise<StudyOverview>;
+  startRevision(kind: RevisionKind, count: number, domains?: string[]): Promise<string>;
+  history(limit?: number): Promise<HistoryItem[]>;
 }

@@ -3,6 +3,7 @@ import { DEMO_DOMAINS } from "@/content/demo";
 import { loadFixtures, type FixtureQuestion } from "./fixtures";
 import { newSeed, seededOrder } from "./shuffle";
 import { scoreAttempt, scoreTenths } from "./score";
+import { dueAfter, nextBox } from "./leitner";
 import {
   QuestionBankError,
   startInputSchema,
@@ -10,6 +11,9 @@ import {
   type AttemptListItem,
   type AttemptView,
   type FeedbackView,
+  type HistoryItem,
+  type RevisionKind,
+  type StudyOverview,
   type ItemView,
   type ProgressView,
   type QuestionBankService,
@@ -28,7 +32,9 @@ interface FxAttempt {
   domainFilter: string[]; timeLimitSeconds: number | null; startedAt: Date; expiresAt: Date | null; lastPosition: number;
   completedAt: Date | null; timedOut: boolean; scoredTotal: number | null; correct: number | null; tenths: number | null; items: FxItem[];
 }
-interface FxUser { attempts: Map<string, FxAttempt>; bookmarks: Set<string>; stats: Map<string, { answered: number; correct: number; lastCorrect: boolean }> }
+interface FxSched { box: number; due: Date; lastReviewed: Date }
+interface FxHist { attemptId: string; mode: "practice" | "exam"; questionId: string; correct: boolean; at: Date }
+interface FxUser { attempts: Map<string, FxAttempt>; bookmarks: Set<string>; stats: Map<string, { answered: number; correct: number; lastCorrect: boolean }>; schedule: Map<string, FxSched>; history: FxHist[] }
 export type FixtureStore = Map<string, FxUser>;
 
 const g = globalThis as unknown as { __qbFixtureStore?: FixtureStore };
@@ -46,7 +52,7 @@ export function createFixtureService(userKey: string, opts: { store?: FixtureSto
 
   if (!store.has(userKey)) {
     if (store.size >= MAX_USERS) store.delete(store.keys().next().value as string);
-    store.set(userKey, { attempts: new Map(), bookmarks: new Set(), stats: new Map() });
+    store.set(userKey, { attempts: new Map(), bookmarks: new Set(), stats: new Map(), schedule: new Map(), history: [] });
   }
   const me = store.get(userKey)!;
 
@@ -56,7 +62,6 @@ export function createFixtureService(userKey: string, opts: { store?: FixtureSto
     return a;
   };
   const reveal = (it: FxItem, a: FxAttempt) => {
-    void a;
     if (!it.answer || it.answer.revealed) return;
     it.answer.isCorrect = it.answer.optionId === it.q.correctOptionId;
     it.answer.revealed = true;
@@ -65,6 +70,11 @@ export function createFixtureService(userKey: string, opts: { store?: FixtureSto
     if (it.answer.isCorrect) s.correct += 1;
     s.lastCorrect = it.answer.isCorrect;
     me.stats.set(it.q.id, s);
+    const t = now();
+    const box = nextBox(me.schedule.get(it.q.id)?.box ?? 1, it.answer.isCorrect);
+    me.schedule.set(it.q.id, { box, due: dueAfter(box, t), lastReviewed: t });
+    me.history.unshift({ attemptId: a.id, mode: a.mode, questionId: it.q.id, correct: it.answer.isCorrect, at: t });
+    if (me.history.length > 200) me.history.pop();
   };
   const feedbackFor = (it: FxItem): FeedbackView => ({
     correct_option_id: it.q.correctOptionId,
@@ -169,13 +179,13 @@ export function createFixtureService(userKey: string, opts: { store?: FixtureSto
         });
     },
 
-    async startAttempt(raw: StartInput): Promise<string> {
+    async startAttempt(raw: StartInput, only?: Set<string>): Promise<string> {
       const parsed = startInputSchema.safeParse(raw);
       if (!parsed.success) throw new QuestionBankError("invalid", "invalid selection");
       const i = parsed.data;
       if (i.timeLimitMinutes !== null && i.mode !== "exam") throw new QuestionBankError("invalid", "a time limit is only available in exam mode");
       if ([...me.attempts.values()].filter((a) => a.status === "in_progress").length >= MAX_UNFINISHED) throw new QuestionBankError("limit", "too many unfinished attempts");
-      const pool = questions.filter((q) => (i.domains.length === 0 || i.domains.includes(q.domainSlug)) && (!i.bookmarkedOnly || me.bookmarks.has(q.id)));
+      const pool = questions.filter((q) => (i.domains.length === 0 || i.domains.includes(q.domainSlug)) && (!i.bookmarkedOnly || me.bookmarks.has(q.id)) && (!only || only.has(q.id)));
       if (pool.length === 0) throw new QuestionBankError("not_found", "no questions are available for this selection");
       const seed = newSeed();
       const n = Math.min(pool.length, i.count);
@@ -262,6 +272,52 @@ export function createFixtureService(userKey: string, opts: { store?: FixtureSto
         if (!questions.some((q) => q.id === questionId)) throw new QuestionBankError("not_found", "question not found");
         me.bookmarks.add(questionId);
       } else me.bookmarks.delete(questionId);
+    },
+
+    async studyOverview(): Promise<StudyOverview> {
+      const t = now().getTime();
+      const visible = new Map(questions.map((q) => [q.id, q]));
+      const sched = [...me.schedule.entries()].filter(([id]) => visible.has(id));
+      const flagged = new Set<string>();
+      for (const a of me.attempts.values()) for (const it of a.items) if (it.flagged) flagged.add(it.q.id);
+      const dayStart = new Date(now()); dayStart.setUTCHours(0, 0, 0, 0);
+      const upcoming = sched.map(([, s]) => s.due).filter((d) => d.getTime() > t).sort((x, y) => x.getTime() - y.getTime())[0];
+      return {
+        due: sched.filter(([, s]) => s.due.getTime() <= t).length,
+        incorrect: [...me.stats.entries()].filter(([id, s]) => visible.has(id) && !s.lastCorrect).length,
+        flagged: [...flagged].filter((id) => visible.has(id)).length,
+        bookmarked: [...me.bookmarks].filter((id) => visible.has(id)).length,
+        reviewed_today: sched.filter(([, s]) => s.lastReviewed.getTime() >= dayStart.getTime()).length,
+        next_due_at: upcoming ? upcoming.toISOString() : null,
+        boxes: [1, 2, 3, 4, 5].map((b) => sched.filter(([, s]) => s.box === b).length),
+        domains: DEMO_DOMAINS.map((d) => {
+          const qs = questions.filter((q) => q.domainSlug === d.slug);
+          const st = qs.map((q) => me.stats.get(q.id)).filter((x): x is NonNullable<typeof x> => Boolean(x));
+          return {
+            slug: d.slug, title: d.title, available: qs.length, answered: st.length, correct: st.filter((x) => x.lastCorrect).length,
+            due: qs.filter((q) => { const s = me.schedule.get(q.id); return s ? s.due.getTime() <= t : false; }).length,
+          };
+        }),
+        synthetic_fixtures: true,
+      };
+    },
+
+    async startRevision(kind: RevisionKind, count: number, domains: string[] = []) {
+      const t = now().getTime();
+      const ids = new Set<string>();
+      if (kind === "due") for (const [id, s] of me.schedule) if (s.due.getTime() <= t) ids.add(id);
+      if (kind === "incorrect") for (const [id, s] of me.stats) if (!s.lastCorrect) ids.add(id);
+      if (kind === "flagged") for (const a of me.attempts.values()) for (const it of a.items) if (it.flagged) ids.add(it.q.id);
+      if (kind === "bookmarked") for (const id of me.bookmarks) ids.add(id);
+      return (this.startAttempt as (raw: StartInput, only?: Set<string>) => Promise<string>).call(this, { mode: "practice", count, domains }, ids);
+    },
+
+    async history(limit = 30): Promise<HistoryItem[]> {
+      return me.history.slice(0, Math.max(1, Math.min(limit, 100))).flatMap((h) => {
+        const q = questions.find((x) => x.id === h.questionId);
+        const d = q ? domainBySlug.get(q.domainSlug) : undefined;
+        return q && d ? [{ attempt_id: h.attemptId, mode: h.mode, question_id: q.id, domain_slug: d.slug, domain_title: d.title, stem: q.stem, is_correct: h.correct, answered_at: h.at.toISOString(), synthetic: true }] : [];
+      });
     },
   };
 }

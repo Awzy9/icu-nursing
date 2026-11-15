@@ -132,7 +132,7 @@ export default async function QuestionBankPage({ params }: { params: Promise<{ l
             {history.length === 0 ? (
               <p className="text-muted-foreground">{t("historyEmpty")}</p>
             ) : (
-              <div className="overflow-x-auto rounded-lg border border-border">
+              <div role="region" aria-label={t("historyTitle")} tabIndex={0} className="overflow-x-auto rounded-lg border border-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                 <table className="w-full text-start text-sm">
                   <caption className="sr-only">{t("historyTitle")}</caption>
                   <thead className="bg-muted">

@@ -1,7 +1,7 @@
 import "server-only";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import {
-  attemptListSchema, attemptSchema, progressSchema, QuestionBankError, startInputSchema,
+  attemptListSchema, attemptSchema, historySchema, progressSchema, studyOverviewSchema, QuestionBankError, startInputSchema,
   type AnswerResult, type QuestionBankErrorCode, type QuestionBankService, type StartInput,
 } from "./types";
 
@@ -69,6 +69,15 @@ export function createSupabaseService(supabase: SupabaseClient): QuestionBankSer
     },
     async setBookmark(questionId, bookmarked) {
       await rpc("qb_set_bookmark", { p_question: questionId, p_bookmarked: bookmarked });
+    },
+    async studyOverview() {
+      return studyOverviewSchema.parse(await rpc("st_overview"));
+    },
+    async startRevision(kind, count, domains) {
+      return rpc<string>("st_start_revision", { p_kind: kind, p_count: count, p_domains: domains?.length ? domains : null });
+    },
+    async history(limit = 30) {
+      return historySchema.parse(await rpc("st_history", { p_limit: limit }));
     },
   };
 }

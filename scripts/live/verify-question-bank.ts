@@ -98,6 +98,29 @@ async function fails(user: string | null, query: string, re: RegExp): Promise<bo
     check("completed attempt reveals every explanation", done.items.every((i: Row) => i.feedback && Object.keys(i.feedback.explanations).length === 4));
     check("completed attempt is final", await fails(A, `select public.qb_submit_answer('${idE}', 3, '${qa.options[0]!.id}')`, /no longer in progress/));
 
+    // --- study mode (migration 0008) ---------------------------------------------------------------------------------------
+    const C = await mk("qb-live-c@example.test");
+    const sidA = (await as(C, "select public.qb_start_attempt('practice', 4, null, null) as id"))[0]!.id as string;
+    const s0 = (await as(C, `select public.qb_get_attempt('${sidA}') as a`))[0]!.a;
+    const sq = (i: number) => fx.find((f) => f.id === s0.items[i].question_id)!;
+    const wr = (q: (typeof fx)[number]) => q.options.find((o) => o.id !== q.correctOptionId)!.id;
+    await as(C, `select public.qb_submit_answer('${sidA}', 1, '${wr(sq(0))}')`);
+    await as(C, `select public.qb_submit_answer('${sidA}', 2, '${sq(1).correctOptionId}')`);
+    const sch = await sql(`select question_id, box, (due_at <= now()) as due from public.learner_review_schedule where user_id='${C}' order by box`);
+    check("Leitner: wrong answer -> box 1, due now; correct answer -> box 2, due later", sch.length === 2 && sch[0]!.box === 1 && sch[0]!.due === true && sch[1]!.box === 2 && sch[1]!.due === false);
+    const ov = (await as(C, "select public.st_overview() as o"))[0]!.o;
+    check("study overview counters (due 1, incorrect 1) and boxes [1,1,0,0,0]", ov.due === 1 && ov.incorrect === 1 && JSON.stringify(ov.boxes) === "[1,1,0,0,0]");
+    await as(C, `select public.qb_discard_attempt('${sidA}')`);
+    const rev = (await as(C, "select public.st_start_revision('incorrect', 10) as id"))[0]!.id as string;
+    const rg = (await as(C, `select public.qb_get_attempt('${rev}') as a`))[0]!.a;
+    check("revision set contains exactly the incorrectly answered question, with no key exposed", rg.items.length === 1 && rg.items[0].question_id === s0.items[0].question_id && !/correct_option_id|explanations|rationale/.test(JSON.stringify(rg)));
+    check("another learner has an empty schedule, overview and history", (await as(B, "select * from public.learner_review_schedule")).length === 0
+      && (await as(B, "select public.st_overview() as o"))[0]!.o.due === 0 && (await as(B, "select public.st_history(10) as h"))[0]!.h.length === 0);
+    check("history shows the caller's revealed answers only", (await as(C, "select public.st_history(10) as h"))[0]!.h.length === 2);
+    check("learner cannot write the schedule", await fails(C, "update public.learner_review_schedule set box = 5", /permission denied/));
+    check("anon cannot call study functions", await fails(null, "select public.st_overview()", /permission denied/));
+    check("unknown revision kind is rejected", await fails(C, "select public.st_start_revision('all', 5)", /invalid revision kind/));
+
     // --- clean up test data ------------------------------------------------------------------------------------------------
   } finally {
     await sql("delete from auth.users where email like 'qb-live-%@example.test'");

@@ -43,6 +43,7 @@ export default async function DashboardPage({ params }: { params: Promise<{ loca
         <p className="text-sm text-muted-foreground">{t("yourRoles")}: {roles.join(", ")}</p>
         <div className="flex flex-wrap gap-2">
           <Button asChild size="sm"><Link href="/question-bank">{t("questionBank")}</Link></Button>
+          <Button asChild variant="outline" size="sm"><Link href="/study">{t("study")}</Link></Button>
           {isStaff ? <Button asChild variant="outline" size="sm"><Link href="/admin">{t("staffArea")}</Link></Button> : null}
         </div>
       </header>

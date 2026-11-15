@@ -16,7 +16,7 @@ describe("API exposure allowlist", () => {
       "admin_grant_role", "admin_revoke_role", "admin_set_specialty", "archive_topic", "assign_reviewer", "publish_topic",
       "qb_discard_attempt", "qb_get_attempt", "qb_list_attempts", "qb_progress", "qb_set_bookmark", "qb_set_flag", "qb_set_position",
       "qb_start_attempt", "qb_submit_answer", "qb_submit_attempt", "record_review",
-      "record_topic_view", "restore_topic", "rollback_topic", "set_required_roles", "set_topic_completion", "start_revision", "submit_for_review",
+      "record_topic_view", "restore_topic", "rollback_topic", "set_required_roles", "set_topic_completion", "st_history", "st_overview", "st_start_revision", "start_revision", "submit_for_review",
       "validate_topic_for_review", "withdraw_submission",
     ]);
   });
@@ -58,7 +58,7 @@ describe("API exposure allowlist", () => {
   });
 
   it("never grants authenticated users any write access to question-bank tables, nor read access to answer keys beyond staff RLS", async () => {
-    const tables = ["question_items", "question_options", "question_answer_keys", "question_explanations", "quiz_attempts", "quiz_attempt_items", "quiz_answers", "learner_question_stats", "question_stats", "question_bookmarks"];
+    const tables = ["question_items", "question_options", "question_answer_keys", "question_explanations", "quiz_attempts", "quiz_attempt_items", "quiz_answers", "learner_question_stats", "question_stats", "question_bookmarks", "learner_review_schedule"];
     const w = await owner.query(`select table_name, privilege_type from information_schema.role_table_grants
       where table_schema='public' and grantee in ('authenticated','anon') and privilege_type in ('INSERT','UPDATE','DELETE','TRUNCATE','REFERENCES','TRIGGER') and table_name = any($1)`, [tables]);
     expect(w.rows).toEqual([]);
@@ -68,7 +68,7 @@ describe("API exposure allowlist", () => {
     expect(rls.rows).toEqual([]);
     // Question-bank helper/definer internals stay out of the API.
     const internals = await owner.query(`select p.proname from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='private'
-      and p.proname in ('finalize_attempt','reveal_answer','qb_candidates','own_attempt','expire_if_due','question_is_visible') and has_function_privilege('authenticated', p.oid, 'execute')`);
+      and p.proname in ('finalize_attempt','reveal_answer','qb_candidates','qb_create_attempt','st_revision_ids','own_attempt','expire_if_due','question_is_visible') and has_function_privilege('authenticated', p.oid, 'execute')`);
     expect(internals.rows).toEqual([]);
   });
 
