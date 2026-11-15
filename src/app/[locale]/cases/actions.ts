@@ -1,5 +1,4 @@
 "use server";
-import { revalidatePath } from "next/cache";
 import { getLocale } from "next-intl/server";
 import { z } from "zod";
 import { redirect } from "@/i18n/navigation";
@@ -29,7 +28,6 @@ export async function startCaseAction(caseId: string): Promise<CaseActionResult<
   if (!rateLimit(`cs-start:${await getActorKey()}`, 30, 60_000)) return { ok: false, code: "limit", error: "Too many requests. Please wait a moment." };
   const r = await run(() => svc.start(caseId));
   if (r.ok) {
-    revalidatePath("/", "layout");
     redirect({ href: `/cases/attempt/${r.data}`, locale: await getLocale() });
   }
   return r as CaseActionResult<never>;
@@ -40,7 +38,6 @@ export async function chooseCaseAction(attemptId: string, position: number, opti
   const svc = await getCaseService({ create: true }).catch(() => null);
   if (!svc) return noAuth();
   const r = await run(() => svc.choose(attemptId, position, optionId));
-  if (r.ok && r.data.status === "completed") revalidatePath("/", "layout");
   return r;
 }
 
@@ -49,6 +46,5 @@ export async function discardCaseAction(attemptId: string): Promise<CaseActionRe
   const svc = await getCaseService({ create: true }).catch(() => null);
   if (!svc) return noAuth();
   const r = await run(() => svc.discard(attemptId));
-  if (r.ok) revalidatePath("/", "layout");
   return r;
 }

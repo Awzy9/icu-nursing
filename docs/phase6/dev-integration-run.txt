@@ -33,5 +33,9 @@ PASS  [app dev] mobile /en/question-bank: no horizontal overflow
 PASS  [app dev] mobile /en/study: no horizontal overflow
 PASS  [app dev] mobile /en/cases: no horizontal overflow
 PASS  [app dev] mobile /ar/study: no horizontal overflow
+PASS  [app dev] signed-in header at 768px: no horizontal overflow
+PASS  [app dev] signed-in header at 1024px: no horizontal overflow
+PASS  [app dev] signed-in header at 1279px: no horizontal overflow
+PASS  [app dev] signed-in header at 1280px: no horizontal overflow
 
 all dev-integration checks passed

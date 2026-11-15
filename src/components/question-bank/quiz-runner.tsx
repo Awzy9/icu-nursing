@@ -64,14 +64,20 @@ export function QuizRunner({ initial, locale }: { initial: AttemptView; locale: 
     if (finishing.current) return;
     finishing.current = true;
     setBusy(true);
-    // On success the server action redirects to the results page itself, so this call does not return normally.
     const r = await submitAttemptAction(initial.id);
-    if (r && !r.ok) {
+    if (r.ok || r.code === "conflict") {
+      router.push(`/question-bank/attempt/${initial.id}/results`);
+      // Watchdog: on a slow or flaky connection the soft (client-side) navigation has been seen to stall after the attempt was already
+      // scored. A hard navigation to the same URL always works, so use it if we are still here after a few seconds.
+      window.setTimeout(() => {
+        if (!window.location.pathname.endsWith("/results")) window.location.assign(`${window.location.pathname.replace(/\/$/, "")}/results`);
+      }, 6000);
+    } else {
       finishing.current = false;
       setBusy(false);
       setError(r.code === "not_found" ? t("attemptGone") : t("actionError"));
     }
-  }, [initial.id, t]);
+  }, [initial.id, router, t]);
 
   // Exam timer, anchored to the SERVER clock so a wrong device clock cannot extend or shorten the exam.
   const skew = useMemo(() => Date.parse(initial.server_now) - Date.now(), [initial.server_now]);

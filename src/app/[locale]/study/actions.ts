@@ -1,5 +1,4 @@
 "use server";
-import { revalidatePath } from "next/cache";
 import { getLocale } from "next-intl/server";
 import { z } from "zod";
 import { redirect } from "@/i18n/navigation";
@@ -23,6 +22,5 @@ export async function startRevisionAction(raw: unknown): Promise<{ ok: false; co
     if (e instanceof QuestionBankError) return { ok: false, code: e.code, error: e.message };
     return { ok: false, code: "unavailable", error: "Study mode is temporarily unavailable." };
   }
-  revalidatePath("/", "layout");
   redirect({ href: `/question-bank/attempt/${id}`, locale: await getLocale() });
 }
