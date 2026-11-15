@@ -41,13 +41,33 @@ describe("content gate: fixtures are hidden unless the development setting is on
     expect(p.synthetic_fixtures).toBe(false);
   });
   it("shows synthetic questions, labelled as synthetic, once the setting is on", async () => {
-    await owner.query("update public.app_settings set question_fixtures_visible = true");
+    await owner.query("update public.app_settings set environment = 'development', question_fixtures_visible = true");
     const p = (await rpc(A(), "select public.qb_progress() as p")).p as any;
     expect(p.domains.reduce((n: number, d: any) => n + d.available, 0)).toBe(fx.length);
     expect(p.synthetic_fixtures).toBe(true);
     const id = await start(A(), "practice", 3);
     const a = await get(A(), id);
     expect(a.items.every((i: any) => i.synthetic === true)).toBe(true);
+  });
+});
+
+describe("fixture visibility cannot be enabled outside a development database", () => {
+  it("defaults to production and refuses to show fixtures there", async () => {
+    await owner.query("update public.app_settings set question_fixtures_visible = false, environment = 'production'");
+    await expect(owner.query("update public.app_settings set question_fixtures_visible = true")).rejects.toThrow(/app_settings_fixtures_dev_only/);
+    await owner.query("update public.app_settings set environment = 'staging'");
+    await expect(owner.query("update public.app_settings set question_fixtures_visible = true")).rejects.toThrow(/app_settings_fixtures_dev_only/);
+    await owner.query("update public.app_settings set environment = 'development', question_fixtures_visible = true");
+    await expect(owner.query("update public.app_settings set environment = 'production'")).rejects.toThrow(/app_settings_fixtures_dev_only/);
+    await expect(owner.query("update public.app_settings set environment = 'prod'")).rejects.toThrow();
+  });
+  it("hides fixtures even if the visibility flag could somehow be true outside development", async () => {
+    await owner.query("alter table public.app_settings drop constraint app_settings_fixtures_dev_only");
+    await owner.query("update public.app_settings set environment = 'production', question_fixtures_visible = true");
+    expect((await owner.query("select private.question_is_visible($1) v", [fx[0]!.id])).rows[0].v).toBe(false);
+    await owner.query("update public.app_settings set question_fixtures_visible = false, environment = 'development'");
+    await owner.query("alter table public.app_settings add constraint app_settings_fixtures_dev_only check (not question_fixtures_visible or environment = 'development')");
+    await owner.query("update public.app_settings set question_fixtures_visible = true");
   });
 });
 
@@ -400,6 +420,6 @@ describe("clinical content gate (existing publication workflow is not weakened)"
     await owner.query("update public.app_settings set question_fixtures_visible = false");
     const g = await createUser(uniqueEmail("gina"));
     await expect(start({ id: g }, "practice", 3)).rejects.toThrow(/no questions are available/);
-    await owner.query("update public.app_settings set question_fixtures_visible = true");
+    await owner.query("update public.app_settings set environment = 'development', question_fixtures_visible = true");
   });
 });

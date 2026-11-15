@@ -88,7 +88,10 @@ export function fixtureSeedSql(opts: { makeVisible: boolean }): string {
     lines.push(`update public.question_items set status = 'published', approved_at = now(), published_at = now() where id = ${str(q.id)}::uuid;`);
     lines.push("end if; end $seed$;");
   }
-  if (opts.makeVisible) lines.push("update public.app_settings set question_fixtures_visible = true;");
+  if (opts.makeVisible) {
+    lines.push("do $vis$ begin if (select environment from public.app_settings) <> 'development' then raise exception 'refusing to show fixtures: app_settings.environment is not development'; end if; end $vis$;");
+    lines.push("update public.app_settings set question_fixtures_visible = true;");
+  }
   lines.push("commit;");
   return lines.join("\n") + "\n";
 }
