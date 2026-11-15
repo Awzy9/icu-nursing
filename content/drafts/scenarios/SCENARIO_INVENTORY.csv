@@ -17,5 +17,5 @@ SC-15,CRRT circuit complication,decision_graph,partial,3,0,N-AHS-CRRT-ALARM-2025
 SC-16,Acute hypotension,outline,partial,0,2,S-CDC-BSI-2011;S-ESICM-SHOCK-2014;L-PHENYLEPHRINE,2
 SC-17,Delirium and agitation,outline,partial,0,2,S-SCCM-PADIS;L-HALOPERIDOL,3
 SC-18,Aspiration event,decision_graph,partial,3,0,S-NICE-CG32;S-NHSE-NGT-2016;S-SHEA-VAP-2022;S-AHRQ-TS,2
-SC-19,Anaphylaxis,decision_graph,partial,3,0,L-EPINEPHRINE;L-PIPTAZO;S-AHRQ-TS,2
+SC-19,Anaphylaxis,decision_graph,partial,3,0,L-EPINEPHRINE;L-PIPTAZO;N-RCUK-ANAPH-2021;S-AHRQ-TS,2
 SC-20,Acute neurological deterioration,outline,partial,0,2,S-GCS-OFFICIAL,2

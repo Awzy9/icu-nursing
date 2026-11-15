@@ -38,23 +38,29 @@
    "use": "FDA piperacillin-tazobactam label: hypersensitivity warning"
   },
   {
+   "id": "N-RCUK-ANAPH-2021",
+   "read": "partial",
+   "use": "RCUK anaphylaxis guideline 2021: key recommendations and sections on setting, monitoring, positioning and removing the trigger"
+  },
+  {
    "id": "S-AHRQ-TS",
    "read": "partial",
    "use": "SBAR page"
   }
  ],
  "required_sources": [
-  "Anaphylaxis guideline text (for example resuscitation council guidance)",
+  "Anaphylaxis guideline text sections not read (refractory anaphylaxis, observation after treatment, fluids)",
   "Unit anaphylaxis protocol and the adverse reaction reporting route"
  ],
  "gaps": [
   "No published clinical scenario may exist until the review phase: this is a specification only.",
   "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Recognition criteria, positioning, fluids, airway steps and observation duration are not drawn from a source read and are not written.",
+  "Refractory anaphylaxis, fluids, airway steps and observation duration were not read and are not written; the RCUK guideline is copyright and is paraphrased only.",
   "Doses and routes other than the label's injection-site statement are deliberately absent."
  ],
  "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+  "RCUK guideline: no reproduction without written permission."
  ],
  "setting": "A fictional adult receiving an intravenous antibiotic on a fictional unit.",
  "steps": [
@@ -81,16 +87,16 @@
    ],
    "options": [
     {
-     "text": "Stop the infusion, call for urgent help and stay with the patient.",
+     "text": "Stop the infusion, call for urgent help early, stay with the patient and begin an ABCDE assessment, without making the patient stand or sit up suddenly.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "Allergic reactions to antibiotics are managed by stopping the infusion and calling for help; the labels state serious reactions require emergency measures.",
-     "consequence": "The infusion is stopped and the emergency team is on its way while you stay with the patient.",
+     "feedback": "RCUK says to stop a drug suspected of causing anaphylaxis, call for help early, assess with ABCDE and keep the patient from standing or sitting up suddenly; the labels also warn of serious reactions.",
+     "consequence": "The infusion is stopped, the team is on its way and monitoring is being attached while you stay with the patient.",
      "support": "partial",
      "sources": [
-      "L-PIPTAZO",
-      "L-EPINEPHRINE"
+      "N-RCUK-ANAPH-2021",
+      "L-PIPTAZO"
      ]
     },
     {
@@ -202,14 +208,15 @@
    ],
    "options": [
     {
-     "text": "Keep monitoring closely, document the event and report the reaction through the local system.",
+     "text": "Keep the patient monitored by someone skilled at interpreting changes, keep the position the symptoms call for, document the event, report the reaction through the local system and support referral for allergy assessment.",
      "points": 2,
      "next": null,
      "scope": "monitoring",
-     "feedback": "Close monitoring and reporting of an adverse drug reaction are expected after an allergic reaction.",
-     "consequence": "The reaction is recorded as an allergy and the team plans the next steps with the patient's allergy status updated.",
+     "feedback": "RCUK says every patient with anaphylaxis is monitored by a skilled person, positioned to suit airway, breathing or circulation problems, reported through local systems and the UK registry, and referred for specialist allergy assessment.",
+     "consequence": "The reaction is recorded as an allergy, the team plans the next steps and the referral is made.",
      "support": "partial",
      "sources": [
+      "N-RCUK-ANAPH-2021",
       "L-PIPTAZO",
       "S-AHRQ-TS"
      ]
