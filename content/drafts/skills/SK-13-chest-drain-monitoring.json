@@ -1,0 +1,98 @@
+{
+ "skill_id": "SK-13",
+ "number": 13,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Chest drain monitoring",
+ "category": "elimination-drains",
+ "topic_drafts": [],
+ "evidence_status": "unsupported",
+ "license_status": "unassessed",
+ "sources": [
+  {
+   "id": "N-BTS-PLEURAL",
+   "read": "not_read",
+   "use": "candidate source: to register and read"
+  },
+  {
+   "id": "S-OPENRN-ADV",
+   "read": "not_read",
+   "use": "Open RN Advanced Skills covers chest tube systems (CC BY): publisher page returned 403"
+  }
+ ],
+ "objectives": [
+  "Know that no chest drain content is drafted and where candidate sources lie."
+ ],
+ "prerequisites": [
+  "Respiratory assessment"
+ ],
+ "sections": {
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Chest drain system set-up, monitoring and emergencies follow the unit's approved procedure and the inserting team's instructions. No source for the steps has been read.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "assessment",
+   "text": "Check the patient's breathing and the drain system against the unit's procedure.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "escalation",
+   "text": "Call for help for respiratory distress, sudden change in drainage or a disconnected system per unit protocol.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "documentation",
+   "text": "Record drainage, air leak status and patient response per unit standard.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Entire clinical content: no guideline or textbook text was accessible in Phase 7."
+ ],
+ "permissions": [
+  "Open RN (CC BY): reuse with attribution once readable.",
+  "BTS: permission to be determined."
+ ],
+ "references": [
+  {
+   "id": "N-BTS-PLEURAL",
+   "title": "Pleural disease guideline (chest drains)",
+   "publisher": "British Thoracic Society",
+   "version": "Not pinned",
+   "url": "https://www.brit-thoracic.org.uk/",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-OPENRN-ADV",
+   "title": "Nursing Advanced Skills",
+   "publisher": "Open RN",
+   "version": "2023 (via search)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK590025/",
+   "accessed": "2026-11-14",
+   "read": "not_read",
+   "licence_class": "GREEN (conditional)",
+   "permission_required": "No"
+  }
+ ]
+}

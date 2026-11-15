@@ -1,0 +1,295 @@
+{
+ "skill_id": "SK-08",
+ "number": 8,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Oxygen delivery devices",
+ "category": "airway-ventilation",
+ "topic_drafts": [
+  "D01-T03"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-AARC-O2",
+   "read": "full",
+   "use": "2022 AARC oxygen in the acute care setting CPG (cite only)"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "NEWS2 report: oxygen scales (UK practice)"
+  },
+  {
+   "id": "S-ERC-ALS-2025",
+   "read": "full",
+   "use": "fire/defibrillation safety (paraphrase only)"
+  },
+  {
+   "id": "S-AARC-PVA",
+   "read": "full",
+   "use": "skin around interfaces"
+  }
+ ],
+ "objectives": [
+  "Know the patient's ordered oxygen target range and titrate within the order.",
+  "Observe and record SpO2 and respiratory rate and escalate rising requirement early.",
+  "Keep oxygen equipment safe from ignition sources."
+ ],
+ "prerequisites": [
+  "Respiratory assessment",
+  "Scope of practice (SK-24 prerequisites)"
+ ],
+ "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Oxygen is given to treat hypoxaemia within an ordered target range; AARC ranges are committee support (mostly level C), not graded strong recommendations.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-O2"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Keep oxygen equipment away from ignition sources; for defibrillation follow the unit's oxygen-safety steps.",
+     "support": "partial",
+     "sources": [
+      "S-ERC-ALS-2025"
+     ]
+    },
+    {
+     "text": "The decision to use the 88-92% scale should be made by a competent clinical decision-maker and recorded (RCP NEWS2; UK practice; other jurisdictions vary).",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Know the ordered target range; if none is documented ask the prescriber. Titrate within the order or protocol and document each change with the reason.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-O2",
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Whether oxygen is a prescribed medicine and who sets targets is local policy; AARC does not say.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "equipment": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Device choice (cannula, mask, high-flow and others) and flow limits follow the unit's policy; this draft does not reproduce device flow tables.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Observe SpO2, respiratory rate and the patient's overall condition at the frequency set by the plan; increase frequency when the requirement rises. Check skin under masks, cannulae and straps (AARC 2024 recommends assessing skin around airway and NIV interfaces).",
+     "support": "partial",
+     "sources": [
+      "S-AARC-O2",
+      "S-AARC-PVA"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Applying, changing and humidifying devices follows the unit's approved procedure.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "SpO2, respiratory rate, work of breathing, device and connection checks each shift and after moves.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-O2"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate a rising requirement or falling saturation early rather than only turning the oxygen up.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-O2",
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record device, flow, target range, SpO2 and each change with the reason per your unit's documentation standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm the ordered oxygen target range; if none is documented, ask the prescriber.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2",
+    "S-RCP-NEWS2"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Record SpO2, respiratory rate and overall condition.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Titrate only within the order or protocol and record the reason for each change.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Check device, connections and humidification each shift and after moves.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Check skin under masks, cannulae and straps.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2",
+    "S-AARC-PVA"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Escalate a rising requirement early.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-O2",
+    "S-RCP-NEWS2"
+   ]
+  },
+  {
+   "phase": "preparation",
+   "text": "Keep oxygen equipment away from ignition sources.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-ERC-ALS-2025"
+   ]
+  }
+ ],
+ "gaps": [
+  "Device-specific flow and FiO2 tables: not reproduced; manufacturer sources needed.",
+  "Hypercapnic respiratory failure management, high-flow and NIV: not covered.",
+  "BTS oxygen guideline: not read."
+ ],
+ "permissions": [
+  "AARC CPGs: cite only.",
+  "RCP NEWS2: acknowledgement conditions; verify.",
+  "ERC: commercial agreement required."
+ ],
+ "references": [
+  {
+   "id": "S-AARC-O2",
+   "title": "CPG: Management of Adult Patients With Oxygen in the Acute Care Setting",
+   "publisher": "AARC",
+   "version": "2022 (index)",
+   "url": "https://www.aarc.org/wp-content/uploads/2022/10/cpg-clinical-mangement-adult-o2-acute-settings.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "title": "National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS. Updated report of a working party (Dec 2017)",
+   "publisher": "Royal College of Physicians",
+   "version": "2017 (charts updated 2022 on the RCP site)",
+   "url": "https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "GREEN/YELLOW (acknowledge; no chart modification)",
+   "permission_required": "No (acknowledgement); do not alter charts"
+  },
+  {
+   "id": "S-ERC-ALS-2025",
+   "title": "European Resuscitation Council Guidelines 2025: Adult Advanced Life Support (Resuscitation 2025;215:110769)",
+   "publisher": "European Resuscitation Council",
+   "version": "2025",
+   "url": "https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "RED for commercial use",
+   "permission_required": "Yes (commercial)"
+  },
+  {
+   "id": "S-AARC-PVA",
+   "title": "AARC Clinical Practice Guideline: Patient-Ventilator Assessment",
+   "publisher": "AARC",
+   "version": "2024; Respir Care 2024;69(8):1042-1054 (search)",
+   "url": "https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "RED (cite-only)",
+   "permission_required": "Verify"
+  }
+ ]
+}

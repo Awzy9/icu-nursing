@@ -1,0 +1,301 @@
+{
+ "skill_id": "SK-10",
+ "number": 10,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Enteral feeding",
+ "category": "transfusion-nutrition",
+ "topic_drafts": [
+  "D07-T06"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-ESICM-EEN-2017",
+   "read": "full",
+   "use": "early enteral nutrition guideline (2017, dated)"
+  },
+  {
+   "id": "S-SHEA-VAP-2022",
+   "read": "full",
+   "use": "head-of-bed and aspiration prevention"
+  },
+  {
+   "id": "S-NICE-CG32",
+   "read": "partial",
+   "use": "NICE CG32 monitoring table"
+  },
+  {
+   "id": "S-NHSE-NGT-2016",
+   "read": "partial",
+   "use": "NHS patient safety alert on nasogastric tube misplacement"
+  },
+  {
+   "id": "S-ASPEN",
+   "read": "not_read",
+   "use": "ASPEN guidelines: not accessed"
+  }
+ ],
+ "objectives": [
+  "Confirm tube position before each use.",
+  "Reduce aspiration risk.",
+  "Recognise feeding intolerance and escalate."
+ ],
+ "prerequisites": [
+  "Nasogastric tube care (SK-11)",
+  "Hand hygiene (SK-21)"
+ ],
+ "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "ESICM 2017 favours early enteral nutrition over delayed enteral or parenteral nutrition in critically ill adults who can be fed enterally (mostly conditional recommendations, many based on expert opinion).",
+     "support": "partial",
+     "sources": [
+      "S-ESICM-EEN-2017"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Confirm the position of every nasogastric tube after placement and before each use by aspiration and pH-graded paper (with X-ray if necessary); local protocols address failed aspiration or invalid pH from acid suppression (NICE CG32; NHS alert).",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32",
+      "S-NHSE-NGT-2016"
+     ]
+    },
+    {
+     "text": "Introducing fluids or medicines into the respiratory tract or pleura through a misplaced tube is a Never Event in England (NHS 2016 alert).",
+     "support": "partial",
+     "sources": [
+      "S-NHSE-NGT-2016"
+     ]
+    },
+    {
+     "text": "Keep the head of the bed raised unless contraindicated (SHEA 2022 essential practice).",
+     "support": "sourced",
+     "sources": [
+      "S-SHEA-VAP-2022"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Insert and check tubes only with the relevant skills and training (NICE CG32).",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Whether the unit measures gastric aspirates, at what interval and with what thresholds, and who may place tubes, is local policy.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "equipment": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Feeding product, pump and tube type follow unit supplies and manufacturer instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "NICE CG32 monitoring: before each feed on a nasally inserted tube, a gastric pH on paper of 5.5 or less (or noting the tube markers once initial position is confirmed); daily check of fixation, nasal erosion and whether the tube is intact, unblocked and unkinked.",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Feed start, rate changes, flushing and medicine administration via tubes: not covered by the sources read; follow the dietitian's plan and unit procedure.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Tube position and fixation, feed tolerance, aspiration signs, head-of-bed angle.",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32",
+      "S-SHEA-VAP-2022"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Stop the feed and escalate if tube position cannot be confirmed or the patient shows respiratory distress after feeding starts.",
+     "support": "partial",
+     "sources": [
+      "S-NHSE-NGT-2016"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record position check method and result, feed type and rate, tolerance and escalation per your unit's documentation standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm tube position by the unit's approved method before each use; do not feed if it cannot be confirmed.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-NICE-CG32",
+    "S-NHSE-NGT-2016"
+   ]
+  },
+  {
+   "phase": "preparation",
+   "text": "Perform hand hygiene and check the feed order.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "assessment",
+   "text": "Raise the head of the bed unless contraindicated.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "S-SHEA-VAP-2022"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Check tube fixation, nasal skin and that the tube is intact, unblocked and unkinked daily.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-NICE-CG32"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Stop the feed and escalate for suspected misplacement or respiratory distress.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-NHSE-NGT-2016"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record the position check, feed and tolerance.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Energy and protein targets, parenteral nutrition, refeeding, medicine administration via tubes: not covered.",
+  "Non-UK placement verification methods (ultrasound, electromagnetic): not read.",
+  "ASPEN and ESPEN guidelines: not accessed."
+ ],
+ "permissions": [
+  "NICE content: Open Government-style terms vary; verify.",
+  "ASPEN: permission required."
+ ],
+ "references": [
+  {
+   "id": "S-ESICM-EEN-2017",
+   "title": "Early enteral nutrition in critically ill patients: ESICM clinical practice guidelines (Intensive Care Med 2017;43:380-398)",
+   "publisher": "ESICM",
+   "version": "2017",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5323492/",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "YELLOW (cite-only for commercial platform)",
+   "permission_required": "Yes for commercial reuse"
+  },
+  {
+   "id": "S-SHEA-VAP-2022",
+   "title": "Strategies to prevent VAP, VAE and non-ventilator HAP in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022;43:687-713)",
+   "publisher": "SHEA / IDSA / APIC",
+   "version": "2022",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "GREEN",
+   "permission_required": "No"
+  },
+  {
+   "id": "S-NICE-CG32",
+   "title": "Nutrition support for adults: oral nutrition support, enteral tube feeding and parenteral nutrition (CG32), recommendations 1.7.16-1.7.18 and the monitoring table",
+   "publisher": "NICE",
+   "version": "Published 2006-02-22; last updated 2017-08-04",
+   "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+   "accessed": "2026-11-15",
+   "read": "partial",
+   "licence_class": "YELLOW",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-NHSE-NGT-2016",
+   "title": "Patient Safety Alert: Nasogastric tube misplacement: continuing risk of death and severe harm (NHS/PSA/RE/2016/006, 22 July 2016; Stage 2 resource set PDF)",
+   "publisher": "NHS Improvement / NHS England",
+   "version": "2016-07-22",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2019/12/Patient_Safety_Alert_Stage_2_-_NG_tube_resource_set.pdf",
+   "accessed": "2026-11-15",
+   "read": "partial",
+   "licence_class": "YELLOW",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-ASPEN",
+   "title": "ASPEN clinical guidelines/resources",
+   "publisher": "ASPEN",
+   "version": "No specific guideline pinned. Home page shows e.g. head-and-neck-cancer nutrition guidelines (not relevant) and a paid Self-Assessment Program",
+   "url": "https://nutritioncare.org/",
+   "accessed": "2026-11-14",
+   "read": "not_read",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  }
+ ]
+}

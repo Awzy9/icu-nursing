@@ -1,0 +1,179 @@
+{
+ "skill_id": "SK-17",
+ "number": 17,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "CRRT circuit monitoring",
+ "category": "renal-support",
+ "topic_drafts": [
+  "D04-T09"
+ ],
+ "evidence_status": "unsupported",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-KDIGO-AKI-2012",
+   "read": "partial",
+   "use": "KDIGO 2012: prescribing guideline; summary of Section 5 statements read"
+  },
+  {
+   "id": "S-CHS-CRRT",
+   "read": "not_read",
+   "use": "hospital procedure: not accessed"
+  }
+ ],
+ "objectives": [
+  "Know the prescription and check that delivered treatment matches it.",
+  "Monitor the patient and report interruptions and bleeding.",
+  "Understand that circuit and alarm management needs manufacturer documentation."
+ ],
+ "prerequisites": [
+  "Acute kidney injury",
+  "Infection prevention (SK-21)"
+ ],
+ "sections": {
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Know the prescription (modality, dose, fluid-balance goal, anticoagulation); report interruptions and under-delivery because KDIGO recommends frequent assessment of delivered dose.",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Confirm the chest radiograph required after internal jugular or subclavian catheter placement has been done and reviewed before first use (KDIGO).",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012"
+     ]
+    },
+    {
+     "text": "If heparin-induced thrombocytopenia is suspected or confirmed, all heparin must stop and the prescriber is told immediately (extent in flushes is local policy).",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Circuit set-up, priming, filter, alarm and troubleshooting steps follow the manufacturer's documentation and the unit's competency programme; no source for them was read.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitor haemodynamics, temperature, fluid balance, electrolytes, acid-base results and bleeding.",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Report bleeding, suspected HIT, access problems, haemodynamic instability and interruptions.",
+     "support": "partial",
+     "sources": [
+      "S-KDIGO-AKI-2012"
+     ]
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm the prescription (modality, dose, fluid-balance goal, anticoagulant) before and during treatment.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-KDIGO-AKI-2012"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Monitor haemodynamics, temperature, fluid balance and bleeding.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-KDIGO-AKI-2012"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Operate and troubleshoot the circuit only as the manufacturer's documentation and your competency approval allow.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "escalation",
+   "text": "Report interruptions, under-delivery, bleeding and suspected HIT.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-KDIGO-AKI-2012"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record delivered dose, interruptions and fluid balance.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Machine, circuit, filter and alarm management, priming, citrate monitoring, drug dosing, weaning, troubleshooting: need manufacturer documentation and clinical authorship.",
+  "KDIGO 2026 update is a draft; the 2012 guideline is over ten years old."
+ ],
+ "permissions": [
+  "Manufacturer documentation: permission required.",
+  "KDIGO: verify reuse terms."
+ ],
+ "references": [
+  {
+   "id": "S-KDIGO-AKI-2012",
+   "title": "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012), Section 5 Dialysis Interventions (recommendation statements 5.1.1-5.8.4)",
+   "publisher": "KDIGO",
+   "version": "Kidney Int Suppl 2012;2(1):1-138; a 2026 update exists only as a public-review draft",
+   "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "RED (unconfirmed)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-CHS-CRRT",
+   "title": "Continuous Renal Replacement Therapy in Intensive Care (ICU procedure)",
+   "publisher": "Canberra Health Services (ACT, Australia)",
+   "version": "Unknown",
+   "url": "https://www.canberrahealthservices.act.gov.au/__data/assets/word_doc/0003/1981254/Continuous-Renal-Replacement-Therapy-in-Intensive-Care.docx",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  }
+ ]
+}

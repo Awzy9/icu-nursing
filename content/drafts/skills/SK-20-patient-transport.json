@@ -1,0 +1,82 @@
+{
+ "skill_id": "SK-20",
+ "number": 20,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Intrahospital patient transport",
+ "category": "skin-mobility-transport",
+ "topic_drafts": [],
+ "evidence_status": "unsupported",
+ "license_status": "unassessed",
+ "sources": [
+  {
+   "id": "N-ICS-TRANSFER",
+   "read": "not_read",
+   "use": "candidate: Intensive Care Society transfer guidance (not registered, not read)"
+  }
+ ],
+ "objectives": [
+  "Know that no transport content is drafted and why."
+ ],
+ "prerequisites": [
+  "Ventilator safety checks (SK-07)",
+  "ECG monitoring (SK-18)"
+ ],
+ "sections": {
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Preparation, monitoring and handover for transport follow the unit's approved transfer procedure. No source for the steps has been read.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Complete the unit's transport checklist before leaving the unit.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "escalation",
+   "text": "Know whom to call for deterioration during transport per unit protocol.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "documentation",
+   "text": "Record the transport and handover per unit standard.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Entire clinical content: no transfer guideline accessed. The ICS transfer guidance is a candidate to register and read."
+ ],
+ "permissions": [
+  "Not determined."
+ ],
+ "references": [
+  {
+   "id": "N-ICS-TRANSFER",
+   "title": "Guidance on transfer of the critically ill adult (candidate)",
+   "publisher": "Intensive Care Society",
+   "version": "Not pinned",
+   "url": "https://www.ics.ac.uk/",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  }
+ ]
+}

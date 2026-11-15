@@ -1,0 +1,218 @@
+{
+ "skill_id": "SK-21",
+ "number": 21,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Infection prevention (standard precautions)",
+ "category": "safety-infection-devices",
+ "topic_drafts": [
+  "D06-T04"
+ ],
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "sources": [
+  {
+   "id": "S-CDC-IC",
+   "read": "partial",
+   "use": "CDC standard and transmission-based precautions pages"
+  },
+  {
+   "id": "S-WHO-HH-2009",
+   "read": "not_read",
+   "use": "WHO hand hygiene guideline: not accessed"
+  },
+  {
+   "id": "S-CDC-ISOLATION-2007",
+   "read": "not_read",
+   "use": "CDC isolation guideline: not read"
+  }
+ ],
+ "objectives": [
+  "Apply standard precautions using task-risk-based PPE.",
+  "Apply and keep visible the precaution level in force.",
+  "Report exposures and breaches promptly."
+ ],
+ "prerequisites": [
+  "None"
+ ],
+ "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Standard precautions apply to all patients; transmission-based precautions are added as the unit's policy directs.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-IC"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Choose PPE from the task risk; put it on before the task and remove it in the order and place set by policy, then perform hand hygiene.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-IC"
+     ]
+    },
+    {
+     "text": "Respiratory hygiene and cough etiquette; safe injection and sharps practice; cleaning and disinfection of shared equipment; safe handling of linen and waste.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-IC"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Perform hand hygiene at the moments defined by local policy and national or WHO guidance (the moments are not stated on the CDC pages read and the WHO guidance was not accessible).",
+     "support": "partial",
+     "sources": [
+      "S-CDC-IC"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "The precaution level for each patient is set by infection-prevention policy.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Donning and doffing sequences follow the unit's approved procedure.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Report exposures and breaches promptly.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-IC"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record precaution level and exposures per policy.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Choose PPE for the task risk before starting.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-CDC-IC"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Put PPE on before the task and remove it in the order and place your policy sets.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-CDC-IC"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Perform hand hygiene at the moments your policy defines.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-CDC-IC"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Clean and disinfect shared equipment between patients.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-CDC-IC"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Report exposures and breaches promptly.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-CDC-IC"
+   ]
+  }
+ ],
+ "gaps": [
+  "The specific hand-hygiene moments: WHO guideline not accessed.",
+  "Transmission-based precaution categories and isolation details: not read."
+ ],
+ "permissions": [
+  "CDC pages: no licence statement; verify before reproducing.",
+  "WHO: permission required for commercial adaptation."
+ ],
+ "references": [
+  {
+   "id": "S-CDC-IC",
+   "title": "Infection Control (index) and Core IPC Practices",
+   "publisher": "CDC",
+   "version": "Core Practices page dated Apr 12 2024 (page header); index page shows 'June 12, 2025'",
+   "url": "https://www.cdc.gov/infection-control/",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "YELLOW",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-WHO-HH-2009",
+   "title": "WHO Guidelines on Hand Hygiene in Health Care (2009)",
+   "publisher": "WHO",
+   "version": "2009",
+   "url": "https://iris.who.int/",
+   "accessed": "2026-11-14",
+   "read": "not_read",
+   "licence_class": "YELLOW (unverified)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-CDC-ISOLATION-2007",
+   "title": "Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings (2007)",
+   "publisher": "CDC / HICPAC",
+   "version": "2007 (updated 2019 online)",
+   "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-Isolation-H.pdf",
+   "accessed": "2026-11-14",
+   "read": "not_read",
+   "licence_class": "YELLOW (unverified)",
+   "permission_required": "Verify"
+  }
+ ]
+}

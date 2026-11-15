@@ -1,0 +1,254 @@
+{
+ "skill_id": "SK-25",
+ "number": 25,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Pain assessment",
+ "category": "assessment",
+ "topic_drafts": [
+  "D07-T03"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-SCCM-PADIS",
+   "read": "partial",
+   "use": "PADIS recommendation statements"
+  },
+  {
+   "id": "S-OPENRN-FUND",
+   "read": "partial",
+   "use": "Open RN Nursing Fundamentals (CC BY): landing and TOC only"
+  },
+  {
+   "id": "S-CPOT-REVIEW-2024",
+   "read": "full",
+   "use": "narrative review of pain evaluation in non-verbal critical care patients (CC BY)"
+  }
+ ],
+ "objectives": [
+  "Assess pain routinely with the unit's tool and reassess after interventions.",
+  "Treat pain before considering a sedative.",
+  "Use non-drug measures within policy."
+ ],
+ "prerequisites": [
+  "None"
+ ],
+ "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Assess pain routinely and before and after painful procedures.",
+     "support": "partial",
+     "sources": [
+      "S-SCCM-PADIS"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Treat pain before considering a sedative (SCCM good-practice statement).",
+     "support": "partial",
+     "sources": [
+      "S-SCCM-PADIS"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Document with the unit's tool and reassess after any intervention; use an assessment-driven, protocol-based, stepwise approach where the unit has one (SCCM suggestion, moderate certainty) and titrate only within the protocol.",
+     "support": "partial",
+     "sources": [
+      "S-SCCM-PADIS"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Analgesic choice and dosing are prescriber or protocol decisions and are not given in this library.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "For patients who cannot self-report, behavioural tools are used; item descriptors and thresholds are not reproduced here.",
+     "support": "partial",
+     "sources": [
+      "S-CPOT-REVIEW-2024"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "SCCM suggests massage and music therapy may be offered (conditional, low certainty) and suggests not offering virtual reality or hypnosis (conditional, very low).",
+     "support": "partial",
+     "sources": [
+      "S-SCCM-PADIS"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Reassess after every intervention and before and after painful procedures.",
+     "support": "partial",
+     "sources": [
+      "S-SCCM-PADIS"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Report uncontrolled or escalating pain to the prescriber.",
+     "support": "partial",
+     "sources": [
+      "S-SCCM-PADIS"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record tool, score, interventions and response per your unit's documentation standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "assessment",
+   "text": "Use the unit's validated pain tool, including a behavioural tool if the patient cannot self-report.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-SCCM-PADIS",
+    "S-CPOT-REVIEW-2024"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Assess before and after painful procedures.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-SCCM-PADIS"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Treat pain before considering a sedative, within the protocol.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-SCCM-PADIS"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Offer non-drug measures your policy allows.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-SCCM-PADIS"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Reassess after every intervention.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-SCCM-PADIS"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Report uncontrolled pain to the prescriber.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-SCCM-PADIS"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record tool, score and response.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "CPOT and BPS descriptors and thresholds, analgesic dosing, regional analgesia: not covered.",
+  "PADIS full text: recommendation statements only."
+ ],
+ "permissions": [
+  "SCCM PADIS: permission required.",
+  "CPOT/BPS tools: licence not verified."
+ ],
+ "references": [
+  {
+   "id": "S-SCCM-PADIS",
+   "title": "PADIS guidelines (2018) and 2025 focused update (Anxiety, Agitation/Sedation, Delirium, Immobility, Sleep disruption)",
+   "publisher": "SCCM",
+   "version": "2018 guideline; 2025 focused update published Crit Care Med 2025;53(3):e711-e727 (search results; pain recommendations unchanged)",
+   "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-OPENRN-FUND",
+   "title": "Nursing Fundamentals 2e (eds. Ernstmeyer & Christman)",
+   "publisher": "Open RN",
+   "version": "2nd ed.; NCBI listing 2024 (via search)",
+   "url": "https://wtcs.pressbooks.pub/nursingfundamentals/",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "GREEN (conditional)",
+   "permission_required": "No"
+  },
+  {
+   "id": "S-CPOT-REVIEW-2024",
+   "title": "Evaluating pain in non-verbal critical care patients: a narrative review of the Critical Care Pain Observation Tool and its clinical applications (Front Pain Res 2024;5; doi 10.3389/fpain.2024.1481085)",
+   "publisher": "Frontiers in Pain Research",
+   "version": "Published 2024-10-15",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11518793/",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "GREEN",
+   "permission_required": "No"
+  }
+ ]
+}

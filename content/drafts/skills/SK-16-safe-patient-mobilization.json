@@ -1,0 +1,98 @@
+{
+ "skill_id": "SK-16",
+ "number": 16,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Safe patient mobilization",
+ "category": "skin-mobility-transport",
+ "topic_drafts": [],
+ "evidence_status": "unsupported",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-SCCM-ABCDEF",
+   "read": "partial",
+   "use": "ICU Liberation (A-F) bundle page: RED licence; permission required"
+  },
+  {
+   "id": "S-SCCM-PADIS",
+   "read": "partial",
+   "use": "PADIS: summary only"
+  }
+ ],
+ "objectives": [
+  "Know that no mobilisation content is drafted and why."
+ ],
+ "prerequisites": [
+  "Pressure injury prevention (SK-14)"
+ ],
+ "sections": {
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Early mobilisation and safe-handling steps follow the unit's approved procedure, the physiotherapy plan and manual-handling policy. No source for safety criteria or steps has been read.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm the mobilisation plan and safety criteria set by your unit and physiotherapist.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "escalation",
+   "text": "Stop and call for help if the patient becomes unstable.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "documentation",
+   "text": "Record activity and tolerance per unit standard.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Safety criteria for starting and stopping mobilisation: no accessible guideline text.",
+  "Early mobility evidence: ICU Liberation material requires permission."
+ ],
+ "permissions": [
+  "SCCM ICU Liberation material: permission required (commercial use)."
+ ],
+ "references": [
+  {
+   "id": "S-SCCM-ABCDEF",
+   "title": "ICU Liberation Bundle (A-F)",
+   "publisher": "SCCM",
+   "version": "Bundle implements 2018 PADIS guidelines (page text); page undated",
+   "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "RED for commercial use",
+   "permission_required": "YES (iculiberation@sccm.org)"
+  },
+  {
+   "id": "S-SCCM-PADIS",
+   "title": "PADIS guidelines (2018) and 2025 focused update (Anxiety, Agitation/Sedation, Delirium, Immobility, Sleep disruption)",
+   "publisher": "SCCM",
+   "version": "2018 guideline; 2025 focused update published Crit Care Med 2025;53(3):e711-e727 (search results; pain recommendations unchanged)",
+   "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  }
+ ]
+}

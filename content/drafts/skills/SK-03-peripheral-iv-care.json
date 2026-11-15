@@ -1,0 +1,291 @@
+{
+ "skill_id": "SK-03",
+ "number": 3,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Peripheral IV care",
+ "category": "vascular-access",
+ "topic_drafts": [],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-CDC-BSI-2011",
+   "read": "full",
+   "use": "peripheral and midline catheter recommendations (re-read in Phase 7)"
+  },
+  {
+   "id": "N-INS-STANDARDS",
+   "read": "not_read",
+   "use": "copyrighted, not accessed"
+  },
+  {
+   "id": "S-PVP-META-2026",
+   "read": "partial",
+   "use": "vasopressor via peripheral line adverse events, summary only"
+  }
+ ],
+ "objectives": [
+  "Describe infection-prevention practices for peripheral catheters.",
+  "Check a peripheral site daily and recognise when to remove the catheter.",
+  "Escalate suspected extravasation or infection."
+ ],
+ "prerequisites": [
+  "Hand hygiene and aseptic technique (SK-21)"
+ ],
+ "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Select catheters on the basis of intended purpose and duration, known complications (phlebitis, infiltration) and operator experience (CDC IB).",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    },
+    {
+     "text": "When therapy will likely exceed six days, a midline catheter or PICC is preferred to a short peripheral catheter (CDC Category II).",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    },
+    {
+     "text": "Avoid steel needles for fluids or medicines that could cause tissue necrosis if they extravasate (CDC IA).",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Hand hygiene before and after palpating the site and before and after inserting, replacing, accessing, repairing or dressing a catheter (CDC IB).",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    },
+    {
+     "text": "Clean gloves may be used to insert a peripheral catheter if the site is not touched after skin antiseptic (CDC IC); either clean or sterile gloves when changing a dressing (CDC IC).",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    },
+    {
+     "text": "In adults use an upper-extremity site; move a catheter placed in a lower extremity to an upper-extremity site as soon as possible (CDC II).",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Evaluate the site daily by palpation through the dressing and by inspection if the dressing is transparent; do not remove gauze or opaque dressings if there are no signs of infection (CDC II).",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Who may insert, flush and remove peripheral catheters, and what may be given peripherally, is set by local policy and competence.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "equipment": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Catheter type, dressing and flush products follow your unit's approved supplies.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Warmth, tenderness, redness or a palpable venous cord indicate phlebitis; local tenderness or other signs may indicate infection.",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Insertion and flushing technique, securement and medicine compatibility: no source read supports the steps; follow the competency-approved unit procedure.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Replacement in adults is not needed more often than every 72-96 hours to reduce infection and phlebitis (CDC IB); no recommendation is made on replacing only when clinically indicated (unresolved issue). Follow current unit policy.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Remove a peripheral catheter that shows phlebitis, infection or malfunction (CDC IB) and report the findings; report suspected extravasation of a harmful drug immediately.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-BSI-2011",
+      "S-PVP-META-2026"
+     ]
+    }
+   ]
+  },
+  "complications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Phlebitis, infiltration, extravasation, catheter-related infection.",
+     "support": "partial",
+     "sources": [
+      "S-CDC-BSI-2011"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record site checks, dressing and catheter dates, removal reasons and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Perform hand hygiene before touching the site or catheter.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "S-CDC-BSI-2011"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Palpate through the dressing (or inspect a transparent dressing) for tenderness, warmth, redness or a venous cord.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "S-CDC-BSI-2011"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Confirm the catheter is still needed and the site is an upper-extremity site in adults.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "S-CDC-BSI-2011"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Flush and administer using the unit's approved technique and compatibility rules.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "escalation",
+   "text": "Stop the infusion and report suspected extravasation, phlebitis or infection immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-CDC-BSI-2011",
+    "S-PVP-META-2026"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record the site check, dressing and catheter dates and any removal reason.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Insertion technique, flushing, securement and extravasation first response: no authoritative text accessed.",
+  "INS Standards of Practice (the usual professional reference): copyrighted, not accessed.",
+  "Vasopressor peripheral-line protocols: only summaries read."
+ ],
+ "permissions": [
+  "INS Standards: permission required.",
+  "CDC PDF: verify reuse terms."
+ ],
+ "references": [
+  {
+   "id": "S-CDC-BSI-2011",
+   "title": "Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (PDF footer: last update October 2017)",
+   "publisher": "CDC / HICPAC",
+   "version": "2011; updated Oct 2017 (chlorhexidine dressings superseded)",
+   "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "YELLOW",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "N-INS-STANDARDS",
+   "title": "Infusion Therapy Standards of Practice",
+   "publisher": "Infusion Nurses Society",
+   "version": "Current edition not pinned",
+   "url": "https://www.ins1.org/",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "RED",
+   "permission_required": "Yes"
+  },
+  {
+   "id": "S-PVP-META-2026",
+   "title": "Incidence of Adverse Events in Peripheral Intravenous Vasopressor Use: A Systematic Review and Meta-Analysis (2026; PMC12993702)",
+   "publisher": "JAMA Network Open",
+   "version": "2026 (searches to 2025-12-13)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12993702/",
+   "accessed": "2026-11-15",
+   "read": "partial",
+   "licence_class": "GREEN",
+   "permission_required": "No"
+  }
+ ]
+}

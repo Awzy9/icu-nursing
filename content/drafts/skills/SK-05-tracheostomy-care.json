@@ -1,0 +1,100 @@
+{
+ "skill_id": "SK-05",
+ "number": 5,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Tracheostomy care",
+ "category": "airway-ventilation",
+ "topic_drafts": [],
+ "evidence_status": "unsupported",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-AARC-TRACH",
+   "read": "not_read",
+   "use": "AARC CPG on tracheostomy in the acute care setting (2021): identified, not read; cite-only"
+  },
+  {
+   "id": "S-OPENRN-SKILLS",
+   "read": "not_read",
+   "use": "Open RN Nursing Skills (CC BY): publisher page returned 403 to the research tool"
+  }
+ ],
+ "objectives": [
+  "Know where authoritative tracheostomy guidance sits and that no content is yet drafted."
+ ],
+ "prerequisites": [
+  "Suctioning (SK-06)",
+  "Endotracheal tube care (SK-04)"
+ ],
+ "sections": {
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Tracheostomy care, inner-cannula care, tube changes and emergencies follow the unit's approved procedure and the surgical/respiratory team's instructions. No source for the steps has been read.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm the tube type and the unit's emergency equipment arrangement before any care.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "escalation",
+   "text": "Call for help immediately for any airway emergency per unit protocol.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "documentation",
+   "text": "Record care given and the patient's response per unit standard.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Entire clinical content: the AARC 2021 guideline and Open RN Nursing Skills were not readable in Phase 7. No bedside procedure was written.",
+  "Emergency management (dislodged or blocked tube): needs a licensed, reviewed source."
+ ],
+ "permissions": [
+  "AARC CPG: permission required for reproduction.",
+  "Open RN (CC BY): reuse with attribution once text can be read and image licences checked."
+ ],
+ "references": [
+  {
+   "id": "S-AARC-TRACH",
+   "title": "CPG: Management of Adult Patients With Tracheostomy in the Acute Care Setting",
+   "publisher": "AARC",
+   "version": "2021 (index)",
+   "url": "https://www.aarc.org/resource/clinical-practice-guidelines/",
+   "accessed": "2026-11-14",
+   "read": "not_read",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-OPENRN-SKILLS",
+   "title": "Nursing Skills 2e",
+   "publisher": "Open RN",
+   "version": "Published 2023-08-28; ISBN 978-1-957068-10-7 (ebook)",
+   "url": "https://wtcs.pressbooks.pub/nursingskills/",
+   "accessed": "2026-11-14",
+   "read": "not_read",
+   "licence_class": "GREEN (conditional)",
+   "permission_required": "No"
+  }
+ ]
+}
