@@ -1,6 +1,6 @@
 ---
 topic_id: D05-T01
-title: Sedatives in the ICU – classes, key risks and nursing safety (partial evidence)
+title: Sedatives in the ICU – classes, label safety statements and nursing safety (partial evidence)
 domain: Critical Care Pharmacology
 learner_level: transitioning
 status: DRAFT
@@ -8,10 +8,10 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["Open RN Nursing Pharmacology 2e, section 8.5 CNS depressants (barbiturates and benzodiazepines) and 10.10 Anesthetics – US entry-level textbook, CC BY 4.0; the text reproduces parts of US drug labelling", "SCCM PADIS 2018 and 2025 focused update – official recommendation pages, recommendation-level statements only; full guidelines NOT read", "ISMP High-Alert Medication List 2024 (classification only); FDA infusion pump page (2018)"]
-sources: [S-OPENRN-PHARM-CH, S-SCCM-PADIS, S-ISMP-HA, S-FDA-PUMP]
+guideline_versions: ["Open RN Nursing Pharmacology 2e, section 8.5 CNS depressants (barbiturates and benzodiazepines) and 10.10 Anesthetics – US entry-level textbook, CC BY 4.0; the text reproduces parts of US drug labelling", "SCCM PADIS 2018 and 2025 focused update – official recommendation pages, recommendation-level statements only; full guidelines NOT read", "ISMP High-Alert Medication List 2024 (classification only); FDA infusion pump page (2018)", "Phase 3 additions: US FDA prescribing information (one manufacturer label per drug retrieved 2026-11-15 via openFDA: midazolam, lorazepam, propofol, dexmedetomidine) – US labelling, not guidelines"]
+sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SCCM-PADIS, S-ISMP-HA, S-FDA-PUMP]
 sources_not_read: [S-OPENRN-PHARM]
-independently_written_note: "Original wording. The Open RN sections on benzodiazepines, barbiturates and anaesthetics were read in full; they give lorazepam and phenobarbital in detail and propofol and midazolam only in one-line examples, so propofol and dexmedetomidine pharmacology, ICU infusion practice, sedation depth targets and withdrawal syndromes have NO pharmacology source here and are mentioned only where the PADIS pages name them. Sedation monitoring and scales are covered in D03-T09 (scale definitions are not taught). No doses, concentrations, infusion rates or titration ranges are given: the textbook quotes US labelling doses, which are deliberately omitted. This draft is partial and not a complete sedative resource."
+independently_written_note: "Original wording. The Open RN sections on benzodiazepines, barbiturates and anaesthetics were read in full; they give lorazepam and phenobarbital in detail and propofol and midazolam only in one-line examples, so in Phase 3 the boxed warning, indication and warnings sections of one US FDA label each for midazolam, lorazepam, propofol and dexmedetomidine were read, which now supports key safety statements for these four drugs at the level of US labelling; ICU infusion practice, sedation depth targets, withdrawal syndromes and nursing titration protocols still have NO source here. Sedation monitoring and scales are covered in D03-T09 (scale definitions are not taught). No doses, concentrations, infusion rates or titration ranges are given: the textbook quotes US labelling doses, which are deliberately omitted. This draft is partial and not a complete sedative resource."
 ---
 # Sedatives in the ICU – classes, key risks and nursing safety (partial evidence)
 > DRAFT – NOT clinically reviewed. AI-generated. PARTIAL: benzodiazepines and barbiturates (textbook) and PADIS drug-choice statements only; no doses, no ICU infusion protocol, no propofol or dexmedetomidine pharmacology.
@@ -36,6 +36,12 @@ Sedatives can cause respiratory depression, hypotension and prolonged sedation, 
 - **Barbiturates** (phenobarbital is the textbook example) are used for sedation and seizures; adverse effects include CNS depression, respiratory depression; they should not be combined with other CNS depressants; therapy should be tapered, not stopped abruptly.
 - **Propofol:** the textbook names propofol as an intravenous general anaesthetic (onset within about 40 seconds of injection); general anaesthesia requires airway control. Midazolam (with fentanyl) is named as an example of procedural sedation. No further ICU pharmacology is given.
 
+**US prescribing information (FDA labels; one manufacturer label each; paraphrased; US only):**
+- **Midazolam** (boxed warning): intravenous use has been associated with respiratory depression and respiratory arrest; where this was not recognised promptly and treated effectively, death or hypoxic encephalopathy has resulted; it should be used only where respiratory and cardiac function are continuously monitored (for example pulse oximetry), with resuscitation drugs and equipment for bag-valve-mask ventilation and intubation immediately available and personnel skilled in airway management; concomitant use with opioids may cause profound sedation, respiratory depression, coma and death. The label recommends immediate availability of the specific reversal agent (a prescriber matter) and says vital signs should continue to be monitored during recovery. (Note: the label's indications are procedural sedation; it does not describe ICU infusion practice.)
+- **Lorazepam** (boxed warning): risks from concomitant use with opioids (profound sedation, respiratory depression, coma and death), abuse, misuse and addiction, and dependence and withdrawal reactions; patients should be followed for signs of respiratory depression and sedation.
+- **Propofol:** an intravenous general anaesthetic and sedation drug whose indications include ICU sedation of intubated, ventilated adults. Warnings in the ICU-sedation section: start as a continuous infusion and make rate changes slowly to minimise hypotension and avoid acute overdose; the label describes **propofol infusion syndrome** in ICU sedation (a constellation of metabolic derangements and organ failure, including severe metabolic acidosis, hyperkalaemia, lipaemia and rhabdomyolysis, that has resulted in death); serum triglycerides may rise with extended use (caution in lipid disorders and pancreatitis); strict aseptic technique is required, vials are never to be used for more than one person, and administration should be completed within a limited time after the vial is opened (12 hours in the label read); the label also describes hypersensitivity reactions, bradycardia, asystole and cardiac arrest, and says to avoid significant falls in mean arterial pressure in patients with raised intracranial pressure because of the effect on cerebral perfusion pressure.
+- **Dexmedetomidine:** an alpha-2 agonist indicated for sedation of initially intubated, ventilated adults in intensive care (the label limits continuous infusion to a stated duration); patients should be continuously monitored; bradycardia, sinus arrest and hypotension may need intervention and may be more pronounced with hypovolaemia, diabetes, chronic hypertension and in older patients, and with other vasodilators or negative chronotropic drugs; patients can be roused by stimulation, which on its own should not be read as lack of effect; tolerance and tachyphylaxis may occur with prolonged exposure.
+
 **PADIS recommendation pages (SCCM; recommendation-level):**
 - Suggest using either propofol or dexmedetomidine over benzodiazepines for sedation in critically ill, mechanically ventilated adults (conditional; low certainty; PADIS 2018).
 - Suggest using dexmedetomidine over propofol where light sedation and/or reduction of delirium are the highest priorities (conditional; moderate certainty; PADIS 2025 focused update).
@@ -47,7 +53,8 @@ Sedatives can cause respiratory depression, hypotension and prolonged sedation, 
 - Be especially vigilant with intravenous benzodiazepines (respiratory depression), combinations with opioids, and in older or debilitated patients.
 - Titrate only within a written protocol; report over-sedation or agitation that the protocol cannot manage.
 - Keep resuscitation and airway equipment available; call for help if the patient is not breathing adequately.
-- Report adverse effects, paradoxical reactions and signs of withdrawal (the textbook says barbiturates should be tapered; withdrawal from ICU sedatives is not described in the sources read).
+- **Know the label cautions:** watch for hypotension and bradycardia with dexmedetomidine, and for hypotension after propofol rate changes; for propofol also watch for new unexplained metabolic acidosis, high potassium, raised triglycerides or muscle injury and report them (propofol infusion syndrome); keep strict aseptic technique and follow the single-patient, time-limited use stated on the label; avoid abrupt large changes in pressure in patients with raised intracranial pressure unless ordered.
+- Report adverse effects, paradoxical reactions and signs of withdrawal (the textbook says barbiturates should be tapered; the lorazepam label lists dependence and withdrawal reactions; ICU withdrawal syndromes are not described in the sources read).
 - Document drug, rate, targets, sedation scores, respiratory status, interventions and escalations.
 
 ## 8. Monitoring parameters
@@ -63,6 +70,9 @@ Sedation depth by unit scale; respiratory rate, pattern and effort; SpO₂ and e
 | Drug choice (2025) | Dexmedetomidine over propofol where light sedation or less delirium is the priority | PADIS 2025 | Conditional; moderate |
 | Anxiety | Insufficient evidence to recommend benzodiazepines | PADIS 2025 | No recommendation |
 | High-risk infusion | Insulin, heparin, vasopressors, propofol, parenteral nutrition, morphine as examples of drugs for which double check may be needed | FDA pump page | – |
+| Midazolam | Respiratory depression and arrest; continuous monitoring and airway-skilled staff; opioid interaction (boxed) | FDA label (midazolam) | US label; procedural indications |
+| Propofol (ICU) | Slow rate changes; propofol infusion syndrome; triglycerides; aseptic single-patient use | FDA label (propofol) | US label |
+| Dexmedetomidine | Continuous monitoring; bradycardia, sinus arrest, hypotension; arousability not lack of effect; tolerance with prolonged use | FDA label (dexmedetomidine) | US label |
 
 ## 10. Warning signs and red flags
 Slow or shallow breathing, falling oxygen saturation or rising CO₂; unrousable patient or oversedation compared with the target; hypotension after a bolus or rate change; paradoxical agitation; combined sedatives and opioids; older or debilitated patient; pump programming error or unexplained alarm; a patient who cannot be woken for the daily interruption.
@@ -167,7 +177,7 @@ D. Choosing the sedative agent, dose and sedation target for the patient.
 Sedation protocols, agents available, concentrations, titration authority, sedation targets, interruption procedures, monitoring intervals and reversal policies follow the unit's policies and pharmacy.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: Open RN is a short US textbook reproducing parts of drug labelling; PADIS was read at recommendation level only (mostly low or moderate certainty); ISMP and FDA are safety resources.
+- Source quality: Open RN is a short US textbook reproducing parts of drug labelling; the FDA labels are one US manufacturer label per drug (revision-specific, not guidelines); PADIS was read at recommendation level only (mostly low or moderate certainty); ISMP and FDA pump pages are safety resources.
 - Applicability: adults; PADIS statements are for critically ill, mechanically ventilated adults.
-- Not covered: propofol and dexmedetomidine pharmacology (adverse effects, propofol-related complications), ICU infusion doses, withdrawal, neuromuscular blockers, paediatrics, procedural sedation.
+- Not covered: pharmacokinetics and mechanisms beyond the labels, ICU infusion doses, ICU withdrawal syndromes, nursing titration protocols, neuromuscular blockers, paediatrics, procedural sedation.
 - Open questions for reviewers (CRIT-PH, CCP, PH, NE, BN): add authoritative ICU drug references; sedation protocol roles; reversal agent policy.

@@ -8,8 +8,8 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["Open RN Nursing Advanced Skills, chapter 7 (ECG) – sections 7.2 Basic Concepts, 7.3 Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Initiating Telemetry; WisTech Open 2023, CC BY 4.0; a US entry-level nursing textbook adapted partly from StatPearls", "UK Kidney Association hyperkalaemia guideline (July 2026) – ECG rationale pages, used only for hyperkalaemia ECG statements"]
-sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026]
+guideline_versions: ["Open RN Nursing Advanced Skills, chapter 7 (ECG) – sections 7.2 Basic Concepts, 7.3 Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Initiating Telemetry; WisTech Open 2023, CC BY 4.0; a US entry-level nursing textbook adapted partly from StatPearls", "UK Kidney Association hyperkalaemia guideline (July 2026) – ECG rationale pages, used only for hyperkalaemia ECG statements", "Phase 3 additions: AACN Practice Alerts 'Accurate Dysrhythmia Monitoring in Adults' (2016; update 2018) and 'Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry' (2018) – PUBLIC SUMMARIES ONLY (full texts need a free AACN login and were not accessed)"]
+sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026, S-AACN-DYSRHYTHMIA-2016, S-AACN-ALARM-2018]
 sources_not_read: [S-AHA-2025]
 independently_written_note: "Original wording and structure. Four sections of the Open RN ECG chapter were read in full (basic concepts, systematic interpretation, patterns and dysrhythmias, the telemetry checklist); the chapter's cardioversion and defibrillation section, pacemaker content, rhythm-strip appendix, tables and figures were NOT read or reproduced. No ECG images or rhythm strips are included: the chapter's own images are credited to several licences, and ERC algorithms are not reproduced. The source is an introductory US nursing text, not an ICU monitoring standard: the AHA practice standards for ECG monitoring in hospital settings were not accessible and were not read, so alarm limits, lead choice for ST monitoring, monitoring indications and frequencies are not taught. Resuscitation algorithms, drug choices, doses and energy settings are deliberately absent; use the unit's resuscitation procedure and the cardiac arrest draft (D02-T14)."
 ---
@@ -58,6 +58,9 @@ ICU patients are on continuous monitoring because dysrhythmias can develop sudde
 - **AV blocks:** first-degree (PR over 0.20 seconds, every P followed by a QRS; may be normal or an early sign of conduction disease, drug toxicity or hypokalaemia); second-degree and third-degree blocks are described in the chapter; third-degree can lead to arrest. Beta-blockers may worsen AV block.
 
 **Artifact:** the monitor's rhythm label is not always correct; artifact occurs when electrodes do not make good contact or the patient moves. Always correlate with the patient.
+
+## 6c. Monitoring accuracy and alarms – summary-level support only (Phase 3)
+The public summary of the AACN dysrhythmia-monitoring alert states that the accuracy of cardiac monitoring – electrode placement, lead selection, interval assessment and rhythm interpretation – is an important component of patient safety in hospitalised patients who meet criteria for monitoring, that quality monitoring requires nurses to have high levels of knowledge and skill, that gaps in practice have been documented, and that inaccurate electrode placement can affect the tracing. The summary of the AACN alarm alert states that alarm fatigue is a patient-safety risk and that in cited studies 89 % to 99 % of ECG alarms were false or clinically insignificant. **The recommendations themselves (lead choice, alarm limits, skin preparation, daily electrode change, ST monitoring) are behind a login and were not read, so they are not taught.**
 
 ## 7. Nursing responsibilities
 - **Apply electrodes properly.** The Open RN telemetry checklist: verify the order, identify the patient with two identifiers, explain the procedure, prepare the skin (clean, dry, free of excess hair and sweat), apply electrodes with good contact, use the colour-coded five-lead placement the chapter shows (the two arm electrodes in the infraclavicular fossae near the shoulders, the two leg electrodes below the rib cage on the right and left upper abdomen, and V1 at the fourth intercostal space on the right sternal border), attach the wires, observe the rhythm, print a 6-second strip and interpret it. Follow agency policy and the manufacturer's instructions.
@@ -186,7 +189,7 @@ D. Calling for help when the patient is pulseless.
 Monitor alarm limits, lead choice, monitoring indications, who may interpret and respond, resuscitation procedure, and documentation of strips follow the unit's policies and training.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: an introductory US nursing textbook (CC BY, adapted partly from StatPearls). It is educational, not a guideline. ICU monitoring standards (AHA), the ERC/AHA resuscitation guidelines and ECG teaching atlases were not read.
+- Source quality: an introductory US nursing textbook (CC BY, adapted partly from StatPearls) plus public summaries of two AACN practice alerts. It is educational, not a guideline; the AACN recommendations were not accessible. ICU monitoring standards (AHA), the ERC/AHA resuscitation guidelines and ECG teaching atlases were not read.
 - Applicability: adults; entry-level; general inpatient.
 - Not covered: strip images, 12-lead ischaemia interpretation, paced rhythms, drug choices and doses, cardioversion and defibrillation energy and technique, alarm management, monitoring indications.
 - Open questions for reviewers (CARD, CCP, NE, BN): which rhythms to teach at which level; strip library with a licence; alarm management; threshold wording for ST changes.

@@ -8,9 +8,9 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["Open RN Nursing Fundamentals 2e, section 2.5 Documentation (accessed 2026-11-14; US-oriented)"]
-sources: [S-OPENRN-FUND]
-independently_written_note: "Original wording; the section was read for principles only. Open RN text is CC BY 4.0 (attribution and change notice needed if text is adapted); nothing is copied. National nursing-regulator documentation standards (for example NMC, NCSBN, SCFHS) were not accessible or read, so legal requirements outside the US are unverified."
+guideline_versions: ["Open RN Nursing Fundamentals 2e, section 2.5 Documentation (accessed 2026-11-14; US-oriented)", "Phase 3 addition: Nursing and Midwifery Council (UK). The Code: Professional standards of practice and behaviour for nurses, midwives and nursing associates – section 10 (keep clear and accurate records); current Code PDF read 2026-11-15 – a UK regulator standard that applies to NMC registrants"]
+sources: [S-OPENRN-FUND, S-NMC-CODE]
+independently_written_note: "Original wording; the section was read for principles only. Open RN text is CC BY 4.0 (attribution and change notice needed if text is adapted); nothing is copied. In Phase 3 the UK NMC Code section 10 was added as a regulator standard; other regulators' documentation standards (for example NCSBN-member boards, SCFHS), the NMC's separate record-keeping guidance, and local ICU charting rules were not read, so legal requirements outside the UK and US remain unverified."
 ---
 # Nursing documentation
 > DRAFT – NOT clinically reviewed. AI-generated. Legal expectations vary by country; this draft cannot state them.
@@ -27,6 +27,9 @@ The patient record is a clinical communication tool and a legal document. Good d
 
 ## 3. Why this matters in ICU nursing
 Rapid change, many handovers and multiple team members make unclear records dangerous. Incomplete records have been linked to missed deterioration, duplicated or omitted care, and difficulty reconstructing events after incidents.
+
+## 6a. Regulator standard – NMC Code section 10 (UK; paraphrased)
+Registrants must keep clear and accurate records relevant to their practice (this includes but is not limited to patient records): complete records at the time or as soon as possible after an event, noting when notes are written some time after it (10.1); identify any risks or problems that have arisen and the steps taken so that colleagues have all the information they need (10.2); complete records accurately and without falsification, taking immediate and appropriate action if aware that someone has not kept to these requirements (10.3); attribute entries to yourself, with entries clearly written, dated and timed, and without unnecessary abbreviations, jargon or speculation (10.4); keep records securely (10.5); and collect, treat and store data appropriately (10.6). The Code applies within the registrant's scope of practice. These are principles; the Code does not say what a specific ICU chart must contain.
 
 ## 6. Clinical assessment (what the record should reflect)
 Assessment findings and trends; interventions; the patient's response; orders received and carried out; communication and escalation; patient and family education; safety events; the reasoning behind any decision not to follow a routine practice.
@@ -153,6 +156,6 @@ D. Advise her to use the correction or late-entry process so the original stays 
 Follow local policy on abbreviations, late entries, electronic corrections, verbal orders and record access. Retention periods and legal requirements follow national law.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: an open nursing textbook (educational, US-oriented), not a regulator standard or guideline. Only the beginning of the section (legal documentation principles and the record contents) was reviewed.
+- Source quality: an open nursing textbook (educational, US-oriented) and, from Phase 3, section 10 of the UK NMC Code (a regulator standard of principles). Only the beginning of the textbook section was reviewed. Neither source specifies ICU chart content, and no ICU documentation standard (for example for infusions, ventilator charts or fluid balance) was found.
 - International applicability: general principles are widely shared; legal statements ("if it was not documented, it was not done") are not universal. National regulator standards were not accessed.
 - Open questions for reviewers (NE, BN): which regulator standards to cite; whether to add ICU-specific documentation (infusions, ventilator charts); handling of verbal and telephone orders by jurisdiction.

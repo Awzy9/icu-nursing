@@ -8,10 +8,10 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["Open RN Nursing Fundamentals 2e, Chapter 1 sections 1.3 (Licensure, Regulations & Standards), 1.4 (Health Care Settings & Team) and 1.6 (Legal & Ethical Considerations) – United States-specific; read 2026-11-14", "International Council of Nurses – Nursing definitions (page text read 2026-11-14)"]
-sources: [S-OPENRN-FUND-CH1, S-ICN-DEF]
+guideline_versions: ["Open RN Nursing Fundamentals 2e, Chapter 1 sections 1.3 (Licensure, Regulations & Standards), 1.4 (Health Care Settings & Team) and 1.6 (Legal & Ethical Considerations) – United States-specific; read 2026-11-14", "International Council of Nurses – Nursing definitions (page text read 2026-11-14)", "Phase 3 additions: NMC (UK) The Code, sections 11 (delegation), 13 (recognise and work within the limits of your competence) and 16 (raise concerns), current PDF read 2026-11-15; NCSBN and ANA National Guidelines for Nursing Delegation (effective 2019-04-29; US), read in full"]
+sources: [S-OPENRN-FUND-CH1, S-ICN-DEF, S-NMC-CODE, S-NCSBN-DELEG-2019]
 sources_not_read: [S-OPENRN-FUND]
-independently_written_note: "Original wording. Three Open RN chapter pages (CC BY 4.0; attribution required if adapted) and the ICN definition page were read. The chapters describe the United States (state Nurse Practice Acts, American Nurses Association, The Joint Commission, Wisconsin examples); the ICN page gives a global definition but no scope detail. No regulator document for any other country (for example NMC UK, SCFHS Saudi Arabia, national boards elsewhere) was read, so country-specific scope rules are NOT covered and must come from the learner's own regulator and employer. Nothing here is legal advice."
+independently_written_note: "Original wording. Three Open RN chapter pages (CC BY 4.0; attribution required if adapted) and the ICN definition page were read. The chapters describe the United States (state Nurse Practice Acts, American Nurses Association, The Joint Commission, Wisconsin examples); the ICN page gives a global definition but no scope detail. In Phase 3 the UK NMC Code and the US NCSBN/ANA delegation guidelines were added, so the UK and the US now have regulator-level sources; no regulator document for any other country (for example SCFHS Saudi Arabia, national boards elsewhere) was read, so country-specific scope rules are NOT covered and must come from the learner's own regulator and employer. Nothing here is legal advice."
 ---
 # Nursing scope of practice – working within your legal and professional boundaries
 > DRAFT – NOT clinically reviewed. AI-generated. Scope of practice is set by each country's or state's law and regulator: this draft teaches the principles and the US examples in the sources read, not your local rules.
@@ -28,6 +28,11 @@ independently_written_note: "Original wording. Three Open RN chapter pages (CC B
 
 ## 3. Why this matters in ICU nursing
 Many ICU tasks sit on a boundary (adjusting oxygen or sedation within a protocol, taking verbal orders, defibrillating, removing lines). Acting outside scope can harm patients and lead to discipline; failing to act inside scope (for example not escalating) can also be negligent.
+
+## 6a. Regulator and professional statements added in Phase 3 (paraphrased)
+- **UK – NMC Code (applies to NMC registrants; all standards apply within the registrant's professional scope of practice):** recognise and work within the limits of your competence (13): accurately identify, observe and assess signs of normal or worsening physical and mental health (13.1); make a timely referral to another practitioner when any action, care or treatment is required (13.2); ask for help from a suitably qualified and experienced professional for any action or procedure beyond your competence (13.3); take account of your own and others' safety (13.4); and complete the necessary training before carrying out a new role (13.5). Delegation (11): only delegate tasks within the other person's scope of competence and make sure they understand the instructions (11.1); make sure those you delegate to are adequately supervised and supported (11.2); and confirm that the outcome meets the required standard (11.3). Raise and, if necessary, escalate concerns about safety (16.1). Preserve safety means working within the limits of your competence and raising concerns immediately when patient or public safety is at risk.
+- **US – NCSBN/ANA National Guidelines for Nursing Delegation (2019):** the "Five Rights of Delegation" – right task, right circumstance (the patient's condition must be stable; if it changes, delegation must be reconsidered), right person, right directions and communication, and right supervision and evaluation; the licensed nurse remains responsible for monitoring the delegated activity. State boards of nursing set the legal rules.
+- **Limits:** these two regulators differ, neither lists which ICU tasks (for example titration, verbal orders, line removal) are within scope for a given role, and employers' policies and local law decide. Other countries' regulators (for example in the Middle East, Europe or Asia) were not read.
 
 ## 6. Clinical assessment (assessing a task against scope)
 Before an unfamiliar or high-risk task ask:
@@ -167,6 +172,6 @@ Your regulator's standards, your employer's policies and your unit's competency 
 
 ## 20. Evidence, applicability and open questions
 - Source quality: an open nursing textbook (educational, US-oriented) and a global definition. Not a regulator standard.
-- Jurisdiction: the legal examples are United States (state Nurse Practice Acts, ANA, Joint Commission, Wisconsin). No source for the UK, Saudi Arabia, the EU or other regulators was read, so scope rules for those places are not described.
+- Jurisdiction: the legal examples are United States (state Nurse Practice Acts, ANA, NCSBN, Joint Commission, Wisconsin) and, from Phase 3, the United Kingdom (NMC Code). No source for Saudi Arabia, the EU or other regulators was read, so scope rules for those places are not described.
 - Not covered: country-specific ICU scope (verbal orders, defibrillation, titration, line removal), advanced practice rules by country, legal advice.
 - Open questions for reviewers (NE, BN, regulatory specialist): add regulator documents for the target markets; show a jurisdiction selector; how to present delegation rules.
