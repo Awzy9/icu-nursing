@@ -12,7 +12,7 @@ Audit: `scripts/audit-mcqs.ts` (regenerates `content/drafts/MCQ_AUDIT.md`). Edit
 * 41 explanations rewritten to say why the answer is right and why the others fail, restating only what the cited source and the question's own rationales already said.
 * 21 stems given a short, realistic context (for example "A nurse is caring for an intubated adult patient...").
 * 13 questions that ask what a guideline says are re-tagged `understanding`, because they test recall of the source rather than application.
-* Distractors in 11 questions made more specific and plausible (the concrete details a real nurse would see), not longer for its own sake.
+* Distractors in 9 questions made more specific and plausible (the concrete details a real nurse would see), not longer for its own sake.
 * The audit now also flags circular or thin "why correct" text (0 remaining), and reports questions per domain and repeated stem openings.
 
 ## Result

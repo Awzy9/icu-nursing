@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/feedback";
 import { readLocal, clearLocal, type PracticeLocal } from "./local-progress";
 import { ChecklistSummary } from "./exercise-runner";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/navigation";
 
 /** The last score on this device for one exercise, or a plain "not tried yet". */
 export function ScoreBadge({ code }: { code: string }) {
@@ -25,15 +26,20 @@ export function ClearLocalButton() {
   );
 }
 /** Self-rated competency tracker: levels are the learner's own words, kept on this device, and never verified. */
-export function CompetencyTracker({ skills, locale }: { skills: { code: string; title: string }[]; locale: string }) {
+export function CompetencyTracker({ skills, canExport = false }: { skills: { code: string; title: string }[]; canExport?: boolean }) {
   const t = useTranslations("Practice");
   const [levels, setLevels] = useState<Record<string, string>>({});
   useEffect(() => setLevels(readLocal().levels), []);
-  void locale;
   const set = async (code: string, level: string) => {
     setLevels((l) => ({ ...l, [code]: level }));
     const { writeLocal } = await import("./local-progress");
     writeLocal((p) => ({ ...p, levels: { ...p.levels, [code]: level } }));
+  };
+  const tb = useTranslations("Billing");
+  const exportCsv = () => {
+    const rows = [["code", "skill", "self_rating"], ...skills.map((k) => [k.code, `"${k.title.replace(/"/g, '""')}"`, levels[k.code] ?? "not_started"])];
+    const url = URL.createObjectURL(new Blob([rows.map((r) => r.join(",")).join("\n")], { type: "text/csv" }));
+    const a = document.createElement("a"); a.href = url; a.download = "my-practice-summary.csv"; a.click(); URL.revokeObjectURL(url);
   };
   const LV = [["not_started", t("lvlNot")], ["learning", t("lvlLearning")], ["with_support", t("lvlSupport")], ["independent", t("lvlIndependent")]] as const;
   return (
@@ -56,7 +62,10 @@ export function CompetencyTracker({ skills, locale }: { skills: { code: string; 
           </li>
         ))}
       </ul>
-      <Button type="button" variant="outline" onClick={() => window.print()}>{t("print")}</Button>
+      <div className="flex flex-wrap items-center gap-3">
+        <Button type="button" variant="outline" onClick={() => window.print()}>{t("print")}</Button>
+        {canExport ? <Button type="button" variant="outline" onClick={exportCsv}>{tb("exportButton")}</Button> : <p className="text-sm text-muted-foreground" data-testid="export-locked">{tb("exportLocked")} <Link className="underline" href="/pricing">{tb("exportLockedLink")}</Link></p>}
+      </div>
     </div>
   );
 }

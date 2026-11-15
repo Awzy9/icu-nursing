@@ -200,6 +200,10 @@ export async function grantRoleAction(_p: AdminState, form: FormData): Promise<A
 export async function revokeRoleAction(_p: AdminState, form: FormData): Promise<AdminState> {
   return run(form, z.object({ userId: uuid, role: z.enum(["author", "clinical_reviewer", "publisher", "admin"]) }), async (v, db) => db.rpc("admin_revoke_role", { p_user: v.userId, p_role: v.role }), "Role revoked.");
 }
+export async function setSubscriptionAction(_p: AdminState, form: FormData): Promise<AdminState> {
+  return run(form, z.object({ userId: uuid, plan: z.enum(["free", "premium"]), status: z.enum(["trialing", "active", "past_due", "canceled", "expired"]), days: z.coerce.number().int().min(1).max(400), reason: z.string().trim().min(5).max(300) }),
+    async (v, db) => db.rpc("adm_sub_set", { p_user: v.userId, p_plan: v.plan, p_status: v.status, p_days: v.days, p_reason: v.reason }), "Subscription updated (test record).");
+}
 export async function setSpecialtyAction(_p: AdminState, form: FormData): Promise<AdminState> {
   return run(form, z.object({ userId: uuid, specialty: z.enum(REVIEW_CODES), enabled: bool }), async (v, db) => db.rpc("admin_set_specialty", { p_user: v.userId, p_specialty: v.specialty, p_enabled: v.enabled }), "Specialty updated.");
 }

@@ -57,7 +57,8 @@
     "cases": "Cases",
     "learn": "Learn",
     "equipment": "Equipment and monitoring",
-    "practice": "Practice labs"
+    "practice": "Practice labs",
+    "plans": "Plans"
   },
   "ComingSoon": {
     "title": "{feature} — coming in a later phase",
@@ -974,5 +975,83 @@
     "cleared": "Practice data cleared on this device.",
     "hubBody": "Short interactive exercises on SBAR, documentation, escalation, infection prevention and equipment checks.",
     "hubStat": "{n} exercises"
+  },
+  "Billing": {
+    "title": "Plan and billing",
+    "pricingTitle": "Plans",
+    "intro": "Compare the free and premium plans and manage your own subscription.",
+    "testBanner": "TEST MODE. No payment provider has been chosen, no price has been set and nothing is ever charged. Subscriptions on this site are test records only.",
+    "principle": "Premium adds convenience and capacity features. It never unlocks content: unreviewed clinical material is not sold, gated or published, and every learning module stays available on the free plan.",
+    "currentPlan": "Your plan",
+    "planNames": {
+      "free": "Free",
+      "premium": "Premium"
+    },
+    "status": {
+      "none": "No subscription",
+      "trialing": "Trial",
+      "active": "Active",
+      "past_due": "Payment overdue",
+      "canceled": "Ended by an administrator",
+      "expired": "Expired"
+    },
+    "accessUntil": "Premium access until {date}",
+    "cancelScheduled": "Cancelled: premium access ends on {date} and will not renew.",
+    "renews": "Renews on {date} (test renewal, no payment).",
+    "subscribe": "Start a test subscription",
+    "trial": "Start with a 7-day test trial",
+    "cancel": "Cancel at the end of the period",
+    "resume": "Keep my subscription",
+    "confirmCancel": "Cancel your subscription? Premium access continues until the end of the current period.",
+    "features": "What premium adds",
+    "featureNames": {
+      "progress_export": "Export your practice and progress summary",
+      "detailed_statistics": "Detailed statistics on your own results"
+    },
+    "freeIncludes": "Everything else is free: the library, question bank, study modes, cases, skills, medications, equipment and practice labs.",
+    "history": "Plan history",
+    "noHistory": "No plan changes yet.",
+    "events": {
+      "created": "Test subscription started",
+      "renewed": "Test renewal",
+      "canceled": "Cancellation requested",
+      "resumed": "Cancellation withdrawn",
+      "expired": "Premium access ended",
+      "payment_failed": "Test payment failed",
+      "admin_change": "Changed by an administrator"
+    },
+    "testTools": "Test tools (mock provider only)",
+    "testToolsHelp": "Move this subscription forward in time to see renewal and expiry. Nothing is charged.",
+    "days": "Days to move forward",
+    "fails": "Simulate a failed payment",
+    "advance": "Move forward",
+    "errors": {
+      "disabled": "Subscriptions are not available in this environment.",
+      "already_subscribed": "You already have a subscription.",
+      "no_subscription": "There is no active subscription.",
+      "invalid": "That request is not valid.",
+      "rate": "Too many requests. Please wait a moment.",
+      "unavailable": "Plans are temporarily unavailable. Please try again.",
+      "auth": "Please sign in."
+    },
+    "unavailableTitle": "Subscriptions are not available",
+    "unavailableBody": "No payment provider is connected, so there is nothing to subscribe to. Everything on the free plan remains available.",
+    "signInToManage": "Sign in to manage your plan.",
+    "seePlans": "See the plans",
+    "manage": "Manage your plan",
+    "done": "Done.",
+    "columns": {
+      "feature": "Feature",
+      "free": "Free",
+      "premium": "Premium"
+    },
+    "included": "Included",
+    "notIncluded": "Not included",
+    "pricing": "Price",
+    "priceTbd": "Not decided yet",
+    "pricingNote": "No price has been set. Nothing can be bought on this site yet.",
+    "exportButton": "Download my summary (CSV)",
+    "exportLocked": "Exporting your summary is a premium feature.",
+    "exportLockedLink": "See the plans"
   }
 }

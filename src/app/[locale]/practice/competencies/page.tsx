@@ -7,6 +7,8 @@ import { requireUser } from "@/lib/auth";
 import { localize } from "@/lib/content/localize";
 import { loadSkillFixtures } from "@/lib/skills/fixtures";
 import { resolveMode } from "@/lib/question-bank";
+import { getBillingService } from "@/lib/billing";
+import { hasEntitlement } from "@/lib/billing/types";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +26,7 @@ export default async function Competencies({ params }: { params: Promise<{ local
   const mode = resolveMode();
   if (mode === "disabled") return <div className="space-y-4"><h1 className="text-3xl font-bold">{t("competenciesTitle")}</h1><Callout tone="info" title={t("disabledTitle")}>{t("disabledBody")}</Callout></div>;
   if (mode === "database") await requireUser(locale, "/practice/competencies");
+  const canExport = await getBillingService().then((svc) => svc?.state()).then((st) => (st ? hasEntitlement(st, "progress_export") : false)).catch(() => false);
   const skills = loadSkillFixtures().map((s) => ({ code: s.code, title: localize(s.title, locale) }));
   return (
     <div className="space-y-6">
@@ -34,7 +37,7 @@ export default async function Competencies({ params }: { params: Promise<{ local
       </header>
       <Callout tone="warning" role="note">{t("fixturesBanner")}</Callout>
       <Callout tone="info" role="note">{t("noVerification")}</Callout>
-      <CompetencyTracker skills={skills} locale={locale} />
+      <CompetencyTracker skills={skills} canExport={canExport} />
     </div>
   );
 }

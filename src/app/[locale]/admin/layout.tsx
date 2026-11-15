@@ -11,7 +11,7 @@ export default async function AdminLayout({ children, params }: { children: Reac
   const { roles } = await requireStaff(locale);
   const links = [
     { href: "/admin", label: "Overview" }, { href: "/admin/topics", label: "Topics" }, { href: "/admin/sources", label: "Sources" }, { href: "/admin/content", label: "Content overview" },
-    ...(roles.includes("admin") ? [{ href: "/admin/users", label: "Users and roles" }] : []),
+    ...(roles.includes("admin") ? [{ href: "/admin/users", label: "Users and roles" }, { href: "/admin/subscriptions", label: "Subscriptions" }] : []),
   ];
   return (
     <div className="space-y-6">
