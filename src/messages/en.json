@@ -902,5 +902,11 @@
       "invalid": "Please type your email address and tick the confirmation box.",
       "generic": "The account could not be deleted. Please try again later."
     }
+  },
+  "MobileCaptcha": {
+    "title": "Security check",
+    "unavailable": "The security check is not available. Please close this screen and try again later.",
+    "waiting": "Complete the check to continue.",
+    "done": "Check complete. You can continue in the app."
   }
 }

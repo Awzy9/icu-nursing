@@ -42,6 +42,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
+      {process.env.DRAFT_SHOWCASE_ENABLED === "true" && process.env.VERCEL_ENV === "preview" ? (
+        <section className="rounded-lg border-2 border-amber-500 bg-amber-50 p-5 text-amber-950 dark:bg-amber-950 dark:text-amber-100" aria-label="Real project drafts">
+          <h2 className="text-xl font-bold">Explore the real project work — unreviewed drafts</h2>
+          <p className="my-3 text-sm">Browse the actual ICU nursing topics, medication, skills, scenarios, equipment and question-set drafts. Content has not received clinical approval and is not for patient-care use.</p>
+          <a href={"/" + locale + "/draft-preview"} className="font-bold underline">Open the full draft showcase</a>
+        </section>
+      ) : null}
+
       <section aria-labelledby="domains-h" className="space-y-4">
         <div className="max-w-prose space-y-2">
           <h2 id="domains-h" className="text-2xl font-semibold">{t("domainsTitle")}</h2>

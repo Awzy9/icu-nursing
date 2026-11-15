@@ -17,13 +17,19 @@
       "versionCode": 1
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "extra": {
       "eas": {
         "projectId": "bb38e642-1a31-49fd-89fa-81a50d2cd2fa"
       }
     },
-    "owner": "awzy9s-team"
+    "owner": "awzy9s-team",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "scheme": "icuknowledgemap"
   }
 }

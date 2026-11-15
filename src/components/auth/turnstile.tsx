@@ -10,13 +10,13 @@ declare global {
   interface Window { turnstile?: TurnstileApi; __turnstileLoading?: Promise<void> }
 }
 
-const SCRIPT = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
-function load(): Promise<void> {
+export const TURNSTILE_SCRIPT = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+export function loadTurnstile(): Promise<void> {
   if (window.turnstile) return Promise.resolve();
   window.__turnstileLoading ??= new Promise<void>((resolve, reject) => {
     // Inserted by our nonce'd bundle, so CSP 'strict-dynamic' allows it.
     const s = document.createElement("script");
-    s.src = SCRIPT; s.async = true; s.defer = true;
+    s.src = TURNSTILE_SCRIPT; s.async = true; s.defer = true;
     s.onload = () => resolve();
     s.onerror = () => reject(new Error("Turnstile failed to load"));
     document.head.appendChild(s);
@@ -36,7 +36,7 @@ export function Turnstile({ siteKey, resetKey, label }: { siteKey?: string; rese
   useEffect(() => {
     if (!siteKey || !host.current) return;
     let cancelled = false;
-    void load().then(() => {
+    void loadTurnstile().then(() => {
       if (cancelled || !host.current || !window.turnstile || widget.current) return;
       widget.current = window.turnstile.render(host.current, {
         sitekey: siteKey,

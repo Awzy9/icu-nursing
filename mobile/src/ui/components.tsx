@@ -1,0 +1,67 @@
+import React from "react";
+import { Pressable, ScrollView, StyleSheet, Text, View, type StyleProp, type ViewStyle } from "react-native";
+import { Link, type Href } from "expo-router";
+import { toggleBookmark } from "../core/progress";
+import { useApp } from "../state/app";
+import { MIN_TARGET, radius, space, type } from "./theme";
+
+/** Page container: scrolls, applies the language direction to everything inside, and carries the sample-content notice. */
+export function Screen({ children, banner = true }: { children: React.ReactNode; banner?: boolean }) {
+  const { palette, rtl, t } = useApp();
+  return (
+    <ScrollView style={{ flex: 1, backgroundColor: palette.bg, direction: rtl ? "rtl" : "ltr" }} contentContainerStyle={{ padding: space.lg, gap: space.md }} keyboardShouldPersistTaps="handled">
+      {banner ? <Callout tone="warn">{t("app.sampleBanner")}</Callout> : null}
+      {children}
+    </ScrollView>
+  );
+}
+export function H1({ children }: { children: React.ReactNode }) { const { palette, rtl } = useApp(); return <Text accessibilityRole="header" style={[type.h1, { color: palette.text, writingDirection: rtl ? "rtl" : "ltr" }]}>{children}</Text>; }
+export function H2({ children }: { children: React.ReactNode }) { const { palette, rtl } = useApp(); return <Text accessibilityRole="header" style={[type.h2, { color: palette.text, marginTop: space.sm, writingDirection: rtl ? "rtl" : "ltr" }]}>{children}</Text>; }
+export function P({ children, muted, small }: { children: React.ReactNode; muted?: boolean; small?: boolean }) { const { palette, rtl } = useApp(); return <Text style={[small ? type.small : type.body, { color: muted ? palette.muted : palette.text, writingDirection: rtl ? "rtl" : "ltr" }]}>{children}</Text>; }
+export function Card({ children, style }: { children: React.ReactNode; style?: StyleProp<ViewStyle> }) { const { palette } = useApp(); return <View style={[{ backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: radius, padding: space.lg, gap: space.sm }, style]}>{children}</View>; }
+
+/** Meaning is never carried by colour alone: every callout starts with a text label. */
+export function Callout({ children, tone = "info" }: { children: React.ReactNode; tone?: "info" | "warn" | "danger" | "success" }) {
+  const { palette, rtl } = useApp();
+  const bg = tone === "warn" ? palette.warnBg : palette.surface;
+  const fg = tone === "warn" ? palette.warnText : tone === "danger" ? palette.dangerText : tone === "success" ? palette.success : palette.text;
+  return <View accessibilityRole={tone === "danger" ? "alert" : undefined} style={{ backgroundColor: bg, borderRadius: radius, padding: space.md, borderWidth: StyleSheet.hairlineWidth * 2, borderColor: palette.border }}><Text style={[type.small, { color: fg, writingDirection: rtl ? "rtl" : "ltr" }]}>{children}</Text></View>;
+}
+export function Button({ label, onPress, variant = "primary", disabled, hint }: { label: string; onPress: () => void; variant?: "primary" | "outline" | "danger"; disabled?: boolean; hint?: string }) {
+  const { palette } = useApp();
+  const bg = variant === "primary" ? palette.primary : "transparent";
+  const fg = variant === "primary" ? palette.onPrimary : variant === "danger" ? palette.dangerText : palette.primary;
+  return (
+    <Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityHint={hint} accessibilityState={{ disabled: !!disabled }} disabled={disabled} onPress={onPress}
+      style={({ pressed }) => ({ minHeight: MIN_TARGET, borderRadius: radius, paddingHorizontal: space.lg, justifyContent: "center", alignItems: "center", backgroundColor: bg, borderWidth: variant === "primary" ? 0 : 1.5, borderColor: variant === "danger" ? palette.dangerText : palette.primary, opacity: disabled ? 0.5 : pressed ? 0.85 : 1 })}>
+      <Text style={[type.h3, { color: fg }]}>{label}</Text>
+    </Pressable>
+  );
+}
+/** A tappable row/card that navigates. */
+export function NavCard({ href, title, body, badge }: { href: Href; title: string; body?: string; badge?: string }) {
+  const { palette, rtl, t } = useApp();
+  return (
+    <Link href={href} asChild>
+      <Pressable accessibilityRole="link" accessibilityLabel={t("a11y.openItem", { title })} style={{ minHeight: MIN_TARGET, backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: radius, padding: space.lg, gap: space.xs }}>
+        <Text style={[type.h3, { color: palette.text, writingDirection: rtl ? "rtl" : "ltr" }]}>{title}</Text>
+        {body ? <Text style={[type.small, { color: palette.muted, writingDirection: rtl ? "rtl" : "ltr" }]}>{body}</Text> : null}
+        {badge ? <Text style={[type.small, { color: palette.warnText, fontWeight: "600" }]}>{badge}</Text> : null}
+      </Pressable>
+    </Link>
+  );
+}
+export function Chip({ label, selected, onPress }: { label: string; selected?: boolean; onPress: () => void }) {
+  const { palette } = useApp();
+  return (
+    <Pressable accessibilityRole="button" accessibilityState={{ selected: !!selected }} onPress={onPress} style={{ minHeight: MIN_TARGET, paddingHorizontal: space.lg, borderRadius: 24, justifyContent: "center", borderWidth: selected ? 2 : 1, borderColor: selected ? palette.primary : palette.border, backgroundColor: selected ? palette.surface : "transparent" }}>
+      <Text style={[type.body, { color: palette.text, fontWeight: selected ? "700" : "400" }]}>{label}</Text>
+    </Pressable>
+  );
+}
+export function BulletList({ items }: { items: string[] }) { return <View style={{ gap: space.xs }}>{items.map((t, i) => <P key={i}>{`• ${t}`}</P>)}</View>; }
+export function BookmarkButton({ itemKey }: { itemKey: string }) {
+  const { progress, update, t } = useApp();
+  const on = progress.bookmarks.includes(itemKey);
+  return <Button label={on ? t("bookmark.remove") : t("bookmark.add")} variant="outline" hint={on ? t("a11y.bookmarkOn") : t("a11y.bookmarkOff")} onPress={() => update((p) => toggleBookmark(p, itemKey))} />;
+}

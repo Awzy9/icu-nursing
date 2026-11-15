@@ -1,6 +1,6 @@
 import { stableId, SYNTHETIC_SOURCE_NOTE } from "@/lib/question-bank/fixtures";
 import type { CaseObservation, CaseScope } from "./types";
-import raw from "./synthetic-cases.json";
+import raw from "@icu/fixtures/cases.json";
 
 type L = Record<string, string>;
 export interface CaseDebriefSource { learning_points: Record<string, string[]>; links: { kind: "skill" | "topic" | "medication"; code: string }[] }

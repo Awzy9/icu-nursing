@@ -13,6 +13,8 @@ export default async function middleware(original: NextRequest) {
   const csp = buildCsp({ nonce, supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL, dev: process.env.NODE_ENV !== "production", captcha: Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && process.env.NEXT_PUBLIC_SUPABASE_URL) });
   const forwarded = new Headers(original.headers);
   forwarded.set("x-nonce", nonce);
+  // The native apps' CAPTCHA page is shown in a small WebView: it renders without the site header and footer. Always overwritten, never trusted from the client.
+  forwarded.set("x-bare-page", /^\/(en|ar)\/mobile-captcha\/?$/.test(original.nextUrl.pathname) ? "1" : "0");
   forwarded.set("content-security-policy", csp);
   const request = new NextRequest(original, { headers: forwarded });
   const response = intl(request);

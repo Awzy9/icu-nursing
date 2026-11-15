@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { FlatList, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, useColorScheme, View } from "react-native";
-import { SAMPLES, type Sample } from "./src/samples";
+import { SAMPLES, type Sample } from "../samples";
 
 const NOTICE = "PROTOTYPE FOR INTERNAL TESTING. Every item is a fictional, nonclinical sample written to test the app. It contains no ICU, patient or medication content and must not be used for clinical decisions.";
 

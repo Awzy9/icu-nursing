@@ -3,7 +3,7 @@ import path from "node:path";
 
 // Database tests: real PostgreSQL, migrations applied from supabase/migrations.
 export default defineConfig({
-  resolve: { alias: { "@icu/schemas": path.resolve(__dirname, "packages/schemas/src"), "@": path.resolve(__dirname, "src") } },
+  resolve: { alias: { "@icu/fixtures": path.resolve(__dirname, "packages/fixtures"), "@icu/schemas": path.resolve(__dirname, "packages/schemas/src"), "@": path.resolve(__dirname, "src") } },
   test: {
     environment: "node",
     include: ["tests/db/**/*.test.ts"],

@@ -1,4 +1,4 @@
-import synthetic from "./synthetic-equipment.json";
+import synthetic from "@icu/fixtures/equipment.json";
 import { equipmentListSchema, type EquipmentModule } from "./types";
 
 /**

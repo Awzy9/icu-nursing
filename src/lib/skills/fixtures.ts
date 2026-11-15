@@ -1,5 +1,5 @@
 import { stableId, SYNTHETIC_SOURCE_NOTE } from "@/lib/question-bank/fixtures";
-import raw from "./synthetic-skills.json";
+import raw from "@icu/fixtures/skills.json";
 import type { SkillCategory } from "./types";
 
 type L = Record<string, string>;
