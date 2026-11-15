@@ -29,7 +29,7 @@ New tables: `question_items`, `question_options`, `question_answer_keys`, `quest
 | Near-duplicate questions (stem + options) | not measured | 0 |
 | Questions with at least one automated flag | 124 | 94 |
 | Distractors with absolute wording | 67 | 69 |
-75 option rewrites (mostly lengthening short distractors with plausible-but-wrong detail; one key trimmed) in 41 questions across 27 drafts; no clinical claim in a key was changed. All 40 drafts pass `npm run validate:drafts`. A regression test (`tests/unit/drafts.test.ts`) locks in: 240 questions in 40 drafts, all `status: DRAFT`, unique-longest <= 25 %, unique-shortest <= 30 %, positions 20-30 %, no duplicate options. The audit script now also reports shortest-key bias, duplicate options and near-duplicate questions. Remaining automated flags are mostly heuristic (no patient context in "understanding" items, short stems). Distractor absolutes rose by two because new filler text reuses existing phrases; this is open work. Source metadata was not re-verified in this phase (unchanged since Phase 3).
+75 option rewrites (mostly lengthening short distractors with plausible-but-wrong detail; one key trimmed) across 26 drafts; no clinical claim in a key was changed. All 40 drafts pass `npm run validate:drafts`. A regression test (`tests/unit/drafts.test.ts`) locks in: 240 questions in 40 drafts, all `status: DRAFT`, unique-longest <= 25 %, unique-shortest <= 30 %, positions 20-30 %, no duplicate options. The audit script now also reports shortest-key bias, duplicate options and near-duplicate questions. Remaining automated flags are mostly heuristic (no patient context in "understanding" items, short stems). Distractor absolutes rose by two because new filler text reuses existing phrases; this is open work. Source metadata was not re-verified in this phase (unchanged since Phase 3).
 
 ## 5. Test results (this commit)
 | Check | Result |
@@ -39,7 +39,7 @@ New tables: `question_items`, `question_options`, `question_answer_keys`, `quest
 | Unit (`npm test`) | **246 passed** in 15 files (new: shuffle, scoring, fixtures, fixture engine, mode resolution, source-tree gate, bank-wide MCQ guard) |
 | Database/RLS (`npm run test:db`, real PostgreSQL 16, all 6 migrations) | **200 passed** in 9 files (new: 29 question-bank tests; API-surface allowlist extended) |
 | Audit fuzz/matrix/views with seed 3 | 76 passed |
-| E2E + accessibility (Playwright, desktop/tablet/mobile, demo build) | **168 passed, 3 skipped** (171 incl. the 14 new question-bank specs x 3 viewports; skips are a keyboard-only test on mobile and 2 pre-existing viewport skips) |
+| E2E + accessibility (Playwright, desktop/tablet/mobile, demo build) | **168 passed, 3 skipped** (171 including the 14 new question-bank specs x 3 viewports; the 3 skips are viewport-specific tests, among them the keyboard-only test on mobile) |
 | Axe (WCAG 2.1 A/AA, serious+critical) | 0 violations on dashboard, practice question + feedback, exam question, results, Arabic runner, dark mode en/ar |
 | `npm run validate:drafts` | 40 of 40 pass |
 | Build | pass (demo build; `NEXT_PUBLIC_SUPABASE_*` empty) |
