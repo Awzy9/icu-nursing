@@ -3,7 +3,7 @@
 A deliberately tiny Expo app so a Google Play testing track can be started. It shows three **fictional, nonclinical** equipment samples (harbour display panel, garden drip pump, bench cushion) with a parts explorer. It contains **no ICU, patient or medication content**; nothing from the unreviewed clinical drafts is included.
 
 ## Before the first upload (these cannot easily be changed later)
-* `app.json` -> `android.package` is `com.icunursing.myapp`. Play locks the package name once the first build is uploaded, so it cannot be changed afterwards.
+* `app.json` -> `android.package` is `com.criticalcarenursing.myapp`. Play locks the package name once the first build is uploaded, so it cannot be changed afterwards.
 * Decide the store listing name, icon (`assets/`) and privacy policy URL (Play requires one even for testing).
 
 ## Run it

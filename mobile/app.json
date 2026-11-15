@@ -13,7 +13,7 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.icunursing.myapp",
+      "package": "com.criticalcarenursing.myapp",
       "versionCode": 1
     },
     "platforms": [
