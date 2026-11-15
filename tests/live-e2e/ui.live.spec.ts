@@ -5,7 +5,7 @@
  */
 import { expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { RUN, PASSWORD, adminAuth, api, emailFor, mailLink, makeUser, newClient, sql, totp } from "../live/helpers";
+import { RUN, PASSWORD, PROJECT_URL, adminAuth, api, emailFor, mailLink, makeUser, newClient, sql, totp } from "../live/helpers";
 import { ISOLATED } from "../../scripts/live/target";
 import { adminStorageRemove } from "../../scripts/live/admin";
 import { refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
@@ -226,7 +226,7 @@ test("author drafts a topic in the CMS, sees the readiness checks, and submits i
   expect(imgRows[0]!.storage_path).toMatch(new RegExp(`^${topicId}/[0-9a-f-]{36}\\.png$`));
   expect(imgRows[0]).toMatchObject({ licence: "Original", is_original: true });
   uploadedPaths.push(imgRows[0]!.storage_path);
-  const publicUrl = `https://dvmevjomyaqrojsiffnf.supabase.co/storage/v1/object/public/topic-images/${imgRows[0]!.storage_path}`;
+  const publicUrl = `${PROJECT_URL}/storage/v1/object/public/topic-images/${imgRows[0]!.storage_path}`; // whichever project this run targets
   expect((await page.request.get(publicUrl)).status()).toBe(200);
   await expect(page.getByText("All submission checks pass.")).toBeVisible();
 
@@ -330,7 +330,7 @@ test("sessions persist across pages and tabs, and the security headers hold on l
   await expect(b.getByRole("heading", { level: 1 })).toContainText("LIVE TEST UI Admin");
   const res = await b.goto("/en/library");
   const csp = res!.headers()["content-security-policy"]!;
-  expect(csp).toContain("connect-src 'self' https://dvmevjomyaqrojsiffnf.supabase.co");
+  expect(csp).toContain(`connect-src 'self' ${PROJECT_URL}`); // https origin for hosted projects, http only for the loopback CI stack
   expect(csp).not.toContain("*.supabase.co");
   await ctx.close();
 });
