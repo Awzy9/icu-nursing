@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/feedback";
 import { Field, Input, Select } from "@/components/ui/form";
 import { requireStaff } from "@/lib/auth";
 import { createClient } from "@/lib/supabase/server";
+import { sourceFlags } from "@/lib/admin/source-health";
 import { saveSourceAction } from "../actions";
 
 interface Src { id: string; source_code: string | null; organization: string; title: string; url: string | null; version_label: string | null; licence_class: string; is_draft_guideline: boolean; last_checked: string | null }
@@ -24,7 +25,7 @@ export default async function SourcesPage({ params }: { params: Promise<{ locale
       <ul className="divide-y divide-border border-y border-border">
         {sources.map((s) => (
           <li key={s.id} className="py-3">
-            <p className="flex flex-wrap items-center gap-2"><b>{s.organization}</b> <Badge tone={s.licence_class === "GREEN" ? "success" : s.licence_class === "YELLOW" ? "warning" : "danger"}>{s.licence_class}</Badge>{s.is_draft_guideline ? <Badge tone="danger">DRAFT guideline</Badge> : null}</p>
+            <p className="flex flex-wrap items-center gap-2"><b>{s.organization}</b> <Badge tone={s.licence_class === "GREEN" ? "success" : s.licence_class === "YELLOW" ? "warning" : "danger"}>{s.licence_class}</Badge>{s.is_draft_guideline ? <Badge tone="danger">DRAFT guideline</Badge> : null}{sourceFlags(s).includes("never_checked") ? <Badge tone="warning">Never checked</Badge> : null}{sourceFlags(s).includes("stale") ? <Badge tone="warning">Not checked in 180 days</Badge> : null}</p>
             <p>{s.title}{s.version_label ? ` — ${s.version_label}` : ""}</p>
             {canUpdate ? <details className="mt-1"><summary className="min-h-11 cursor-pointer leading-[2.75rem]">Edit</summary><SourceForm s={s} /></details> : null}
           </li>
