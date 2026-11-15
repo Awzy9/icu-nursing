@@ -8,12 +8,15 @@
  "clinical_reviewers": [],
  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
  "fictional_patient": true,
- "spec_level": "outline",
+ "spec_level": "decision_graph",
  "evidence_status": "partial",
  "domain": "metabolic",
  "difficulty": 2,
  "learning_objectives": [
-  "Monitor glucose and potassium during insulin and report low values immediately."
+  "Treat a low glucose as an emergency and recheck it.",
+  "Escalate urgently when the patient cannot safely swallow or is unconscious.",
+  "Distinguish what needs an order, protocol or local agreement.",
+  "Continue monitoring and ask for an insulin review afterwards."
  ],
  "related": {
   "skills": [],
@@ -24,39 +27,244 @@
  },
  "sources": [
   {
-   "id": "L-INSULIN",
-   "read": "full",
-   "use": "label: hypoglycaemia, hypokalaemia, monitoring"
-  }
- ],
- "expected_actions": [
-  {
-   "text": "Increase the frequency of blood glucose monitoring in patients at higher risk of hypoglycaemia and monitor potassium.",
-   "scope": "monitoring",
-   "support": "partial",
-   "sources": [
-    "L-INSULIN"
-   ]
+   "id": "N-JBDS-HYPO-2020",
+   "read": "partial",
+   "use": "UK inpatient hypoglycaemia guideline for adults with diabetes (January 2020): algorithm page, introduction and definition read"
   },
   {
-   "text": "Report low or rapidly falling glucose immediately.",
-   "scope": "escalation",
-   "support": "partial",
-   "sources": [
-    "L-INSULIN"
-   ]
+   "id": "L-INSULIN",
+   "read": "full",
+   "use": "FDA insulin label: hypoglycaemia and monitoring statements"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
   }
  ],
  "required_sources": [
-  "Hypoglycaemia management guideline or protocol",
-  "Unit insulin infusion protocol"
+  "The current edition of the JBDS hypoglycaemia guideline (a newer edition exists but returned HTTP 403)",
+  "The unit's hypoglycaemia protocol and the local agreement on emergency glucose or glucagon without a prescription",
+  "Guidance for hypoglycaemia in patients without diabetes and for enteral or parenteral feeding interruptions"
  ],
  "gaps": [
   "No published clinical scenario may exist until the review phase: this is a specification only.",
   "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Treatment of hypoglycaemia and glucose targets are not drawn from a source read."
+  "Amounts, concentrations, rates and routes in the guideline are deliberately not reproduced and must come from the unit protocol.",
+  "Applies to adults with diabetes in hospital, based on a UK guideline; targets in critical care and in patients without diabetes were not read."
  ],
  "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ]
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+  "JBDS: copyright statement not found; verify."
+ ],
+ "setting": "A fictional adult with diabetes on a fictional unit who is receiving insulin.",
+ "steps": [
+  {
+   "position": 1,
+   "info": "A routine bedside glucose check is low in a patient who is sweating and a little drowsy but answers questions and can swallow.",
+   "prompt": "What should you do?",
+   "observations": [
+    {
+     "key": "glucose",
+     "label": "Blood glucose (fictional)",
+     "value": 3.2,
+     "unit": "mmol/L"
+    },
+    {
+     "key": "skin",
+     "label": "Skin",
+     "value": "Sweaty"
+    },
+    {
+     "key": "alertness",
+     "label": "Alertness",
+     "value": "Drowsy but responds"
+    },
+    {
+     "key": "swallow",
+     "label": "Swallow",
+     "value": "Able"
+    }
+   ],
+   "options": [
+    {
+     "text": "Treat it as an emergency: give quick-acting carbohydrate by mouth as set out in the unit protocol and recheck the glucose within the interval the protocol sets.",
+     "points": 2,
+     "next": 2,
+     "scope": "order_or_protocol_required",
+     "feedback": "The guideline treats hypoglycaemia as an emergency whatever the level of consciousness, gives quick-acting carbohydrate to a conscious patient who can swallow and rechecks the glucose after 10 to 15 minutes; amounts follow local protocol.",
+     "consequence": "The patient takes the carbohydrate and you recheck the glucose.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    },
+    {
+     "text": "Wait and recheck the glucose at the next routine time.",
+     "points": 0,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "Hypoglycaemia is an emergency; waiting leaves the patient at risk of deterioration.",
+     "consequence": "The patient becomes harder to rouse and the glucose is lower at the next check.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    },
+    {
+     "text": "Offer the patient's next meal tray and leave the recheck until after the meal.",
+     "points": 1,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "A meal is part of follow-up, but quick-acting treatment and a prompt recheck come first.",
+     "consequence": "The patient eats slowly and the glucose is still low when it is checked later.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "info": "Fifteen minutes later the patient cannot be roused properly and the glucose is still low.",
+   "prompt": "What is the right next step?",
+   "observations": [
+    {
+     "key": "glucose",
+     "label": "Blood glucose (fictional)",
+     "value": 2.4,
+     "unit": "mmol/L"
+    },
+    {
+     "key": "alertness",
+     "label": "Alertness",
+     "value": "Barely rousable"
+    },
+    {
+     "key": "swallow",
+     "label": "Swallow",
+     "value": "Unsafe"
+    },
+    {
+     "key": "insulin",
+     "label": "Intravenous insulin",
+     "value": "Not running"
+    }
+   ],
+   "options": [
+    {
+     "text": "Check airway, breathing and circulation, stop any intravenous insulin per protocol, call a doctor urgently, and prepare intravenous glucose or glucagon only as prescribed or as the local agreement allows.",
+     "points": 2,
+     "next": 3,
+     "scope": "escalation",
+     "feedback": "For an unconscious patient the guideline says to check ABC, stop intravenous insulin and contact a doctor urgently; intravenous glucose or glucagon is given as prescribed or under a local agreement.",
+     "consequence": "The team arrives while the patient is supported and treatment is ready for them.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    },
+    {
+     "text": "Give food and drink by mouth to bring the patient round.",
+     "points": 0,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "Oral treatment is for a conscious patient who can swallow; it is unsafe in a patient who cannot be roused.",
+     "consequence": "The patient chokes on the drink and the situation is worse.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    },
+    {
+     "text": "Give intravenous glucose from ward stock without an order or any local agreement.",
+     "points": 0,
+     "next": 3,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Treatments are given as prescribed, or under a local agreement or directive; the nurse's own choice is not enough.",
+     "consequence": "The action breaches policy and the team must now sort out what was given.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "info": "The patient has recovered and the glucose is back in range.",
+   "prompt": "What should happen next?",
+   "observations": [
+    {
+     "key": "glucose",
+     "label": "Blood glucose (fictional)",
+     "value": 5.6,
+     "unit": "mmol/L"
+    },
+    {
+     "key": "alertness",
+     "label": "Alertness",
+     "value": "Alert"
+    },
+    {
+     "key": "team",
+     "label": "Team",
+     "value": "Present"
+    }
+   ],
+   "options": [
+    {
+     "text": "Keep monitoring the glucose regularly, ask the prescriber to review the insulin doses instead of withholding the next dose yourself, refer to the diabetes team per policy and document the event.",
+     "points": 2,
+     "next": null,
+     "scope": "escalation",
+     "feedback": "The guideline says not to omit subsequent insulin doses, to continue regular monitoring for 24 to 48 hours, to review doses and to refer to the diabetes team.",
+     "consequence": "The insulin review takes place and the monitoring plan is clear for the next shift.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020",
+      "L-INSULIN"
+     ]
+    },
+    {
+     "text": "Stop the glucose checks because the value is now normal.",
+     "points": 0,
+     "next": null,
+     "scope": "independent_nursing",
+     "feedback": "Glucose can fall again, and the guideline advises continued regular monitoring.",
+     "consequence": "The next low reading is found late.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    },
+    {
+     "text": "Withhold the next insulin dose on your own to be safe.",
+     "points": 0,
+     "next": null,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Dose changes are a prescriber decision; the guideline says not to omit subsequent insulin doses unless the doctor directs.",
+     "consequence": "The patient's glucose rises and the team has to rebalance the plan.",
+     "support": "partial",
+     "sources": [
+      "N-JBDS-HYPO-2020"
+     ]
+    }
+   ]
+  }
+ ],
+ "debrief": {
+  "learning_points": [
+   "A low glucose in a patient with diabetes is an emergency whatever the level of consciousness.",
+   "A conscious patient who can swallow is treated by mouth per protocol and rechecked; an unconscious patient needs ABC, a call for urgent help and prescribed or locally agreed treatment.",
+   "Do not withhold or change insulin on your own: ask for a review, keep monitoring and refer."
+  ],
+  "links": [
+   {
+    "kind": "medication",
+    "code": "MD-15"
+   }
+  ]
+ }
 }
