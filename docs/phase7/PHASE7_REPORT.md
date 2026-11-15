@@ -10,7 +10,7 @@ The scope is the original master list (Part 6 of the master prompt, recovered fr
 |---|---|
 | Sections (194) fully / partially supported / local-protocol referral | 8 / 113 / 73 |
 | Statements (239) sourced / partial / local-protocol | 43 / 123 / 73 |
-| Checklist items (150) sourced / partial / local-protocol | 25 / 87 / 38 (critical-marked items 66) |
+| Checklist items (150) sourced / partial / local-protocol | 25 / 87 / 38 (critical-marked items 93) |
 | Skills publishable (supported evidence + cleared licence + reviewer + approver) | 0 |
 
 Sources read in full text this phase: CDC/HICPAC 2011 intravascular catheter guideline (peripheral, central, dressing, hand-hygiene recommendations) and the CDC/HICPAC 2009 CAUTI guideline (recommendation sections I-III). Others come from the Phase 2-3 traced topic drafts. **Missing references:** Open RN Nursing Skills/Advanced Skills (CC BY, publisher returns 403 to the research tool; the one permissive source that would unlock tracheostomy, chest drain, peripheral IV, NG and transfusion steps), AARC tracheostomy CPG, INS Standards, BTS pleural guidance, ICS transfer guidance, AHA 2025, BSH transfusion-reaction guideline, ASPEN, AACN alerts, manufacturer instructions.
