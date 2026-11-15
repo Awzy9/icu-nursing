@@ -1,7 +1,7 @@
 // Validates the Phase 8 MCQ expansion drafts (content/drafts/mcq-expansion/XQ-*.md). They are unpublished drafts in the same MCQ format as the topic
 // drafts and reuse the existing structure/quality rules (src/lib/draft-validator.ts). On top of those: every question carries a **Trace** line naming
 // registered sources, no dose-like content, no review claims, and no near-duplicates of the 240 existing questions or of each other.
-import { batchPositionIssues, mcqQuality, parseFrontMatter, parseMcqs, type DraftIssue } from "@/lib/draft-validator";
+import { mcqQuality, parseFrontMatter, parseMcqs, type DraftIssue } from "@/lib/draft-validator";
 
 const dose = /\b\d+(\.\d+)?\s?(mcg|µg|mg|g|units?|mEq|mmol|mL)\s?(\/|per)\s?(kg|min|h|hr|hour|minute)\b/i;
 const approval = /\b(approved by|reviewed by|signed off by|endorsed by)\b/i;
