@@ -84,7 +84,10 @@ test.describe("question bank: practice mode", () => {
       await expect(page.getByText("Your answer is submitted and cannot be changed.")).toBeVisible();
       await expect(page.getByRole("radio").first()).toBeDisabled();
       if (right) correct++;
-      if (n === 1) expect(await serious(page)).toEqual([]);
+      if (n === 1) {
+        await expect(page).toHaveTitle(/Question bank/); // metadata streams in after a client-side navigation
+        expect(await serious(page)).toEqual([]);
+      }
       if (n < 3) await page.getByRole("button", { name: "Next" }).click();
     }
     // Previous navigation shows the locked, explained answer.
