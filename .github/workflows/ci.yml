@@ -37,6 +37,14 @@ jobs:
         run: npx tsx scripts/seed-synthetic-questions.ts && git diff --exit-code supabase/seed_question_fixtures.sql supabase/seed_case_fixtures.sql supabase/seed_skill_fixtures.sql supabase/seed_medication_fixtures.sql
       - name: Database migrations + RLS tests
         run: npm run test:db
+      - name: Mobile app: install, typecheck, bundle for Android and iOS, and scan the bundles for clinical drafts and secrets
+        run: |
+          npm run mobile:install
+          npm run typecheck:mobile
+          npm run export:android --prefix mobile -- --output-dir dist
+          (cd mobile && npx expo export --platform ios --output-dir dist-ios)
+          npx tsx scripts/check-mobile-bundle.ts mobile/dist
+          npx tsx scripts/check-mobile-bundle.ts mobile/dist-ios
       - name: Build
         run: npm run build
         env: { NEXT_PUBLIC_SUPABASE_URL: "", NEXT_PUBLIC_SUPABASE_ANON_KEY: "" }

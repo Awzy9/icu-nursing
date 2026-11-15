@@ -1,6 +1,29 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "paths": {
+      "@icu/schemas": [
+        "../packages/schemas/src/index.ts"
+      ],
+      "@icu/schemas/*": [
+        "../packages/schemas/src/*"
+      ],
+      "@icu/fixtures/*": [
+        "../packages/fixtures/*"
+      ],
+      "zod": [
+        "./node_modules/zod"
+      ]
+    },
+    "resolveJsonModule": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
