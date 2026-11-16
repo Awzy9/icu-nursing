@@ -59,7 +59,7 @@ describe("all functions exposed to signed-in users", () => {
 
   it("deny every staff/admin function to a signed-in learner with no roles", async () => {
     const learner = await createUser(uniqueEmail("plain"));
-    const learnerFns = /^(qb_|st_|cs_|sk_|md_|eq_|sub_|record_topic_view|set_topic_completion)/;
+    const learnerFns = /^(qb_|st_|cs_|sk_|md_|eq_|sub_|tutor_|record_topic_view|set_topic_completion)/;
     for (const f of (await exposed()).filter((x) => !learnerFns.test(x.proname))) {
       const { sql, params } = call(f);
       let succeeded = false;

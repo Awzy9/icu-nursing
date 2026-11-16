@@ -46,8 +46,12 @@ test.describe("keyboard and navigation", () => {
   });
 
   test("future features are honest placeholders, not fake functionality", async ({ page }) => {
-    await page.goto("/en/coming-soon/assistant");
+    await page.goto("/en/coming-soon/simulation");
     await expect(page.getByRole("heading", { level: 1 })).toContainText("coming in a later phase");
+  });
+  test("a feature that has shipped (the tutor) is no longer a placeholder", async ({ page }) => {
+    const res = await page.goto("/en/coming-soon/assistant");
+    expect(res?.status()).toBe(404);
   });
 });
 

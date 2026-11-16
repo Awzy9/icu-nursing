@@ -1090,5 +1090,28 @@
       "practice": "Practice labs"
     },
     "scope": "Search covers titles and short summaries of published or sample material only. It does not search questions or answers."
+  },
+  "Tutor": {
+    "title": "Ask the tutor",
+    "intro": "Ask a question about the published library, skills, medications, equipment and case content. This is a mock-mode citation finder, not a live AI model: it links to already-published learning material and never generates a clinical answer or gives patient-specific advice.",
+    "label": "Your question",
+    "button": "Ask",
+    "disclaimer": "The tutor cannot see unpublished drafts and cannot discuss a specific patient. For patient care, follow your unit's protocol and escalate to the prescriber or a senior clinician.",
+    "foundIntro": "Related published material:",
+    "noResults": "No published material matched that question yet. Try different words, or browse the Library.",
+    "refusal": {
+      "patient_specific": "The tutor can't discuss a specific patient. For patient-specific questions, follow your unit's protocol and escalate to the prescriber or a senior clinician.",
+      "dosing": "The tutor can't give dosing or rate instructions. Doses and rates are a prescriber/pharmacist decision and must follow your unit's medication protocol.",
+      "out_of_scope": "The tutor can't diagnose, prescribe or give personal medical advice. It can only point you to published general nursing-education material.",
+      "too_short": "Type a longer question."
+    },
+    "usage": "{hour} question(s) left this hour, {day} left today.",
+    "error": {
+      "auth": "Sign in to ask the tutor a question.",
+      "limit": "Too many questions. Please wait a moment.",
+      "unavailable": "The tutor is temporarily unavailable.",
+      "invalid": "That question isn't valid."
+    },
+    "demoNotice": "Demonstration mode: this searches only the sample content visitors can see, and usage limits are tracked for this browser session only."
   }
 }

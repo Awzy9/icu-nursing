@@ -138,6 +138,8 @@ test.describe("skills library", () => {
       await expect(page.getByText(/No skills match your search/)).toBeVisible();
       const lib = await (await request.get(`/en/library?q=${encodeURIComponent(q)}`)).text();
       for (const d of drafts) expect(lib).not.toContain(d.title);
+      const tutor = await (await request.get(`/en/tutor?q=${encodeURIComponent(q)}`)).text();
+      for (const d of drafts) expect(tutor, d.skill_id).not.toContain(d.title);
     }
   });
 });
