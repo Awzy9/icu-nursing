@@ -144,13 +144,13 @@ D. Assess airway, breathing and sedation, stay with the patient, and call the pr
 **Why not B:** Reversal or stimulants need an order and a clinical decision.
 **Why not C:** A delayed check is too late.
 
-**Q6 (scope).** Which task belongs to the prescriber or pharmacist rather than the nurse?
+**Q6 (scope).** Which task ordinarily requires an authorized prescriber or prescribing protocol, rather than routine independent nursing assessment?
 A. Choosing the opioid, dose and adjunct for a patient whose pain remains uncontrolled.
-B. Reassessing pain 30 minutes after the dose that was ordered and given, and recording the result.
+B. Reassessing and documenting pain after an ordered analgesic at the interval specified by the unit's protocol.
 C. Repositioning the patient or adjusting the bed to reduce pain from pressure points.
 D. Documenting the behavioural pain score and the stimulus that preceded it.
 **Answer: A.**
-**Why correct:** Drug choice and dosing are prescribing decisions unless a protocol delegates titration.
+**Why correct:** Initiating or changing analgesic selection, dosing or adjunct therapy requires appropriate prescribing authority or a valid local protocol. Nurses may have authorized protocol-based roles; reassessment and documentation remain essential.
 **Why not B:** A nursing assessment task.
 **Why not C:** An independent nursing comfort measure.
 **Why not D:** A nursing documentation task.
