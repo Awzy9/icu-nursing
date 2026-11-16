@@ -109,7 +109,7 @@ B. Check only the label on the bag, because the programming was verified at the 
 C. Leave the settings as they are and recheck them at the next change of shift, to avoid interrupting the infusion that is running.
 D. Ask the patient whether the new bag looks like the earlier one, and continue if the patient agrees.
 **Answer: A.**
-**Why correct:** The FDA page lists a new bag of medication or fluid, a settings change, new primed tubing and change of shift as moments to verify programming.
+**Why correct:** The FDA highlights a new bag, pump-setting change, new primed tubing, and change of shift as points to verify drug, prescribed dosage, rate, and volume. The device instructions and local pump/drug-library policy govern how those checks are performed.
 **Why not B:** A bag label does not confirm what is programmed on the pump.
 **Why not C:** Waiting until the next shift leaves the new infusion unchecked.
 **Why not D:** Patient recognition is not a verification method and is not valid for sedated patients.
@@ -120,7 +120,7 @@ B. Both nurses stand together at the pump and read the settings aloud in turn.
 C. The second nurse signs the chart after the first nurse tells her that the settings are right.
 D. Each nurse checks the settings alone against the order, and then they compare results.
 **Answer: D.**
-**Why correct:** The page describes two clinicians separately checking, alone and apart from each other, and then comparing results against the order.
+**Why correct:** The FDA describes independently checking (alone and apart, then comparing against the order) for high-risk infusions *when required by facility policy*. ISMP warns manual double-checks are not always the optimal safeguard for every high-alert medication. This question tests the **method**, not a universal requirement to double-check every infusion.
 **Why not A:** The second nurse would be influenced by what the first one reads out.
 **Why not B:** Checking together is not independent.
 **Why not C:** Signing on someone's word is not a check at all.
