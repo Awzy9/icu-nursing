@@ -103,24 +103,24 @@ D. Paediatric patients, because CRRT is not used in adults who have acute kidney
 **Why not C:** Urine output alone is not the criterion.
 **Why not D:** The guideline addresses adults with acute kidney injury.
 
-**Q2 (safety).** A patient on CRRT has a fast-falling platelet count and HIT is suspected. What does KDIGO 2012 state?
+**Q2 (safety).** A patient receiving heparin during CRRT develops a rapid platelet-count fall, and the treating team considers heparin-induced thrombocytopenia (HIT) likely. What does KDIGO 2012 recommend?
 A. Continue heparin at a higher rate to keep the circuit open while the cause of the fall is investigated.
 B. Heparin may continue in the circuit itself but must be stopped in the flushes and locks.
 C. No change is needed because HIT does not occur during renal replacement therapy in an ICU patient.
 D. All heparin must be stopped, and a direct thrombin or Factor Xa inhibitor is recommended instead.
 **Answer: D.**
-**Why correct:** KDIGO recommends stopping all heparin when HIT is suspected and using a direct thrombin or Factor Xa inhibitor instead (1A). Continuing or increasing heparin, including in the circuit, would worsen HIT.
+**Why correct:** KDIGO 2012 recommendation 5.3.4 (1A) states that all heparin must be stopped in HIT and that a non-heparin direct thrombin or Factor Xa inhibitor should be used for RRT anticoagulation. Its rationale adds that when HIT is considered *likely*, all heparin exposures, including catheter locks, need urgent review and discontinuation. Drug selection and treatment decisions require the responsible clinical team and local HIT pathway; a falling platelet count alone does not establish HIT.
 **Why not A:** Heparin worsens HIT, so continuing or increasing it would harm the patient.
 **Why not B:** The statement is that all heparin must be stopped, not part of it.
 **Why not C:** HIT can occur with heparin exposure in RRT.
 
-**Q3 (application).** A new right internal jugular dialysis catheter has been inserted and the team wants to start CRRT. What does KDIGO 2012 recommend before the catheter is first used?
+**Q3 (application).** A new right internal jugular dialysis catheter has been inserted and the team plans CRRT. According to KDIGO **2012** recommendation 5.4.4 (rather than a universal protocol for every modern placement technique), what imaging does that guideline recommend before first use?
 A. A chest radiograph promptly after placement and before first use.
 B. An antibiotic lock instilled in the catheter before the first use, to prevent infection of the new line.
 C. A topical antibiotic ointment applied to the insertion site before the first use of the catheter.
 D. No checks of any kind, because ultrasound guidance makes any later radiograph unnecessary.
 **Answer: A.**
-**Why correct:** KDIGO recommends a chest radiograph soon after placing an internal jugular or subclavian dialysis catheter and before first use, to confirm position and exclude complications. The distractors describe measures KDIGO suggests against, or recommends in addition.
+**Why correct:** KDIGO 2012 recommendation 5.4.4 (1B) specifies a chest radiograph promptly after placing a jugular or subclavian dialysis catheter and before first use. This is an accurate statement of the cited 2012 guideline; current institution-specific verification pathways and newer evidence require separate review before translating it into a universal bedside rule.
 **Why not B:** KDIGO suggests not using antibiotic locks (2C).
 **Why not C:** KDIGO suggests not using topical antibiotics (2C).
 **Why not D:** Ultrasound guidance is recommended in addition to, not instead of, the radiograph.
