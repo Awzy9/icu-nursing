@@ -103,7 +103,7 @@
     },
     {
      "text": "Leave the bedside to look for a doctor.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "escalation",
      "feedback": "Getting help is right, but leaving the patient removes emergency care at the worst moment.",
