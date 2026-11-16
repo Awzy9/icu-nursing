@@ -11,6 +11,13 @@ describe("safeRedirectPath", () => {
   it.each(["https://evil.com", "//evil.com", "/\\evil.com", "javascript:alert(1)", "", null, undefined])("rejects %s", (v) => {
     expect(safeRedirectPath(v as string)).toBe("/dashboard");
   });
+  it("falls back safely when given a non-string (e.g. a duplicated ?next= query param gives string[])", () => {
+    // Next.js's searchParams gives string[] for a repeated key despite route types that claim `next?: string`;
+    // this must fall back, not throw, so the login/MFA pages never 500 on `?next=a&next=b`.
+    expect(safeRedirectPath(["/a", "/b"] as unknown as string)).toBe("/dashboard");
+    expect(safeRedirectPath(5 as unknown as string)).toBe("/dashboard");
+    expect(safeRedirectPath({} as unknown as string)).toBe("/dashboard");
+  });
 });
 
 describe("clinical formatting", () => {

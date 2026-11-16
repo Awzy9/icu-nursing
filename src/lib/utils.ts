@@ -6,8 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /** Only allow same-site relative redirect targets (prevents open redirects). */
-export function safeRedirectPath(next: string | null | undefined, fallback = "/dashboard"): string {
-  if (!next) return fallback;
+export function safeRedirectPath(next: unknown, fallback = "/dashboard"): string {
+  if (typeof next !== "string" || !next) return fallback;
   if (!next.startsWith("/") || next.startsWith("//") || next.includes("\\")) return fallback;
   return next;
 }

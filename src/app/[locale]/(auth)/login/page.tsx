@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { safeRedirectPath } from "@/lib/utils";
 import { signInAction } from "../actions";
 
-export default async function LoginPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ next?: string }> }) {
+export default async function LoginPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ next?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const { next } = await searchParams;

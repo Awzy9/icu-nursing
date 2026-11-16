@@ -5,7 +5,7 @@ import { requireUser } from "@/lib/auth";
 import { isDemoMode } from "@/lib/env";
 import { safeRedirectPath } from "@/lib/utils";
 
-export default async function MfaPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ next?: string }> }) {
+export default async function MfaPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ next?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const { next } = await searchParams;
