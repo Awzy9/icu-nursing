@@ -26,8 +26,8 @@
   },
   {
    "id": "S-CDC-ISOLATION-2007",
-   "read": "not_read",
-   "use": "CDC isolation guideline: not read"
+   "read": "full",
+   "use": "CDC/HICPAC Guideline for Isolation Precautions (2007, last updated September 2024): section III.B (Contact, Droplet and Airborne Precautions) read in full text 2026-11-16; full document not read beyond that section"
   },
   {
    "id": "S-CDC-HANDHYG-2024",
@@ -102,12 +102,19 @@
    ]
   },
   "scope": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "The precaution level for each patient is set by infection-prevention policy.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The CDC/HICPAC guideline describes three transmission-based precaution categories, used in addition to standard precautions: Contact Precautions (gown and gloves for interactions that may touch the patient or their environment; a single room is preferred) for organisms spread by direct or indirect contact; Droplet Precautions (a mask for close contact, generally donned on room entry; no special air handling needed) for pathogens spread through close respiratory or mucous-membrane contact; and Airborne Precautions (a mask or respirator per the disease-specific recommendation, donned before room entry; an airborne infection isolation room is preferred) for pathogens that remain infectious over long distances in the air. Which organisms require which category, and the exact signage and placement, follow the unit's infection-prevention policy.",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-ISOLATION-2007"
+     ]
     }
    ]
   },
@@ -216,7 +223,7 @@
   }
  ],
  "gaps": [
-  "Transmission-based precaution categories (contact, droplet, airborne) and their specific isolation requirements: the CDC/HICPAC 2007 isolation guideline was not read.",
+  "The CDC/HICPAC isolation guideline's disease-specific precaution list (Appendix A - which organism needs which category) and its MDRO-specific chapter were not read; only section III.B's general category descriptions were.",
   "The WHO 2009 hand hygiene guideline was not accessed; the hand-hygiene moments used here are CDC's own six moments, not WHO's five moments, which may differ slightly in wording and grouping.",
   "Exact PPE donning/doffing sequence and hand hygiene technique steps (soap-and-water vs rub technique) are not written; the CDC core practices page states the principles but not a step-by-step sequence."
  ],
@@ -251,10 +258,10 @@
    "id": "S-CDC-ISOLATION-2007",
    "title": "Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings (2007)",
    "publisher": "CDC / HICPAC",
-   "version": "2007 (updated 2019 online)",
+   "version": "2007; PDF footer \"Last update: September 2024\"",
    "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-Isolation-H.pdf",
-   "accessed": "2026-11-14",
-   "read": "not_read",
+   "accessed": "2026-11-16",
+   "read": "full",
    "licence_class": "YELLOW (unverified)",
    "permission_required": "Verify"
   },

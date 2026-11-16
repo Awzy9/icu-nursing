@@ -1604,6 +1604,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "247f97c6977f0b7c",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024",
+     "S-CDC-IC",
+     "S-CDC-ISOLATION-2007",
+     "S-WHO-HH-2009"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-22": [
