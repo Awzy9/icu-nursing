@@ -140,8 +140,8 @@ B. Bispectral index suits sedative titration in deep sedation or neuromuscular b
 C. Bispectral index replaces sedation scales in all patients, so scales need no longer be recorded in the chart.
 D. Sedation scales are unnecessary in ventilated patients because the ventilator reports the depth of sedation directly.
 **Answer: B.**
-**Why correct:** SCCM's statement is that bispectral index can help titrate sedation in deep sedation or neuromuscular blockade, and when no scale can be used. It supplements scales and does not replace them, and vital signs are not a valid sedation measure.
-**Why not A:** Vital signs are not valid indicators of pain and are not the sedation measure.
+**Why correct:** SCCM's 2018 PADIS recommendations describe processed EEG monitoring (including BIS) as an *adjunct*, especially for deep sedation or neuromuscular blockade when behavioral assessment cannot be performed. It does not replace validated bedside sedation assessment when patients can be assessed; device choice and target interpretation follow local specialist policy.
+**Why not A:** Changes in vital signs can signal distress or deterioration but are not a validated substitute for structured assessment of sedation depth.
 **Why not C:** BIS is not a general replacement.
 **Why not D:** Scales are central to targeted sedation.
 
