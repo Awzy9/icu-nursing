@@ -167,7 +167,7 @@
     },
     {
      "text": "Keep troubleshooting the machine on your own.",
-     "points": 1,
+     "points": 0,
      "next": 3,
      "scope": "independent_nursing",
      "feedback": "Staying with the machine while the patient is inadequately ventilated delays rescue.",
