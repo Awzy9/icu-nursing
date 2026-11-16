@@ -89,13 +89,14 @@ These are not interchangeable, and nothing in this session's work collapses the 
 
 | Commit | Scope | CI | Isolated Supabase |
 |---|---|---|---|
-| `c8a3372` | Checklist update (Workstream 2 stopping point) | #129 success | #101 success (independently verified by the product owner) |
-| `f54e6ef` | Phase 5: AI tutor, mock mode | #130 success | superseded by `532ab19`'s own run (concurrency group) |
-| `532ab19` | Phase 6: Lighthouse + favicon fix | #131 **failure — genuine, diagnosed and fixed; see above** | #101-equivalent — confirm on the fix commit below |
-| `632fa19` | Master roadmap status report | #132 — confirm | confirm |
-| *(fix commit, pushed after this report)* | Nav overflow fix + demo-mode tutor rate-limit fix + UI copy correction | **confirm before relying on this** | **confirm before relying on this** |
+| `c8a3372` | Checklist update (Workstream 2 stopping point) | #129 success | #99 cancelled (concurrency; superseded, not a real failure) |
+| `f54e6ef` | Phase 5: AI tutor, mock mode | #130 success | #100-equivalent run, cancelled (concurrency; superseded) |
+| `532ab19` | Phase 6: Lighthouse + favicon fix | #131 **failure — genuine (nav-overflow regression introduced in the Phase 5 batch; diagnosed and fixed, see below)** | #100 cancelled (concurrency; superseded) |
+| `632fa19` | Master roadmap status report (no code change) | #132 **failure — same inherited nav-overflow regression, not a new bug** | #101 success (independently confirmed by the product owner, and by this session) |
+| `99eaa26` | **Fix**: nav overflow (`flex-wrap`) + demo-mode tutor rate-limit cross-contamination + UI copy correction | #133 **success** | #102 cancelled (concurrency; superseded by `e1aa72a`, not a real failure) |
+| `e1aa72a` | Checklist update (batch 17 spot-checks) | #134 success | #103 **success** |
 
-**This document will not claim the nav-overflow/tutor-rate-limit fix is verified until a specific follow-up confirms both `ci.yml` and `isolated-supabase.yml` show `success` on that fix commit's own SHA.**
+**Confirmed:** both `ci.yml` and `isolated-supabase.yml` show `success` on the fix commit's own lineage (`99eaa26` CI #133 success; `e1aa72a`, built on the same fix, CI #134 and Isolated Supabase #103 both success). The nav-overflow and demo-tutor-rate-limit regression introduced by the Phase 5 batch is resolved and verified in CI, not just locally.
 
 ## 9. Prioritized release-blocker list
 
