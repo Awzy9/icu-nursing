@@ -829,12 +829,38 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "ab5b4fe6fea020be",
+    "recorded": "2026-11-16",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D08-T03": [
    {
     "hash": "f76d236cdbf4d966",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-FDA-COI-2024",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "c27e21b23c9fc28a",
+    "recorded": "2026-11-16",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AABB-COI-2024",
@@ -987,6 +1013,17 @@
    {
     "hash": "9a306edb97717b54",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "4c21cacbf7c63e99",
+    "recorded": "2026-11-16",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-KDIGO-AKI-2012"
