@@ -8,13 +8,13 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["ESICM Task Force: Consensus on circulatory shock and hemodynamic monitoring (Intensive Care Med 2014;40:1795-1815; CC BY-NC) – a 2014 document; newer guidance exists"]
-sources: [S-ESICM-SHOCK-2014, S-SSC-2021, S-SSC-2026]
+guideline_versions: ["ESICM Guidelines on circulatory shock and hemodynamic monitoring 2025 (Intensive Care Med 2025;51:1971-2012; abstract and 2014/2025 comparison table read, NOT full guideline)", "ESICM 2014 shock consensus (historical, superseded by ESICM 2025)"]
+sources: [S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-SSC-2021, S-SSC-2026]
 sources_not_read: [S-OPENRN-HA]
-independently_written_note: "Original wording. The 2014 ESICM consensus (open access, non-commercial licence) was read in full text. Open RN Health Alterations (the register source) was not read for this topic. SSC 2021 statements were used only where stated. Vasopressor and fluid dosing are deliberately not covered."
+independently_written_note: "Original wording. The 2014 ESICM consensus was read in full by an earlier author but is superseded for diagnosis/monitoring by ESICM 2025. AI-assisted follow-up on 2026-11-16 checked the 2025 guideline abstract and original 2014-versus-2025 comparison table through a university repository; 2025 full publication and supplements were NOT read. 2025 statements below are limited to this comparison. Text is paraphrased and cite-only (copyright restrictions). Open RN Health Alterations was not read. SSC 2021 was superseded by SSC 2026, for which only official recommendation-level text was read; fluid and vasopressor dosing are deliberately excluded."
 ---
 # Recognising circulatory shock and the nurse's response
-> DRAFT – NOT clinically reviewed. AI-generated. Dated source (2014): reviewers must check against current guidance.
+> DRAFT – NOT clinically reviewed. AI-generated. ESICM 2025 shock guidance is partially checked (abstract and comparison table only); not for clinical use.
 
 ## 1. Overview
 Circulatory shock is life-threatening acute circulatory failure in which cells do not get enough oxygen. Blood pressure may be low, but low pressure is not required: signs of poor perfusion in skin, kidneys and brain are the key clues, and compensation can hide the problem until late. The nurse recognises early signs, repeats observations, checks for a likely cause, and escalates quickly. Choosing fluids, vasopressors and diagnostic tests is a prescriber decision.
@@ -56,7 +56,7 @@ The consensus describes four patterns: three low-flow (hypovolaemic from lost vo
 ## 8. Monitoring parameters
 Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially targeting MAP of at least 65 mmHg and individualising the target; the target is set by the prescriber), skin findings, capillary refill, urine output, mental state, temperature, SpO₂, lactate trend where ordered, drain and wound losses, intake and output.
 
-## 9. Important findings – what the 2014 consensus states (selected)
+## 9. Important findings – historical 2014 consensus (selected), with current 2025 corrections
 | Topic | Statement (as graded) | Nursing relevance |
 |---|---|---|
 | Definition | Life-threatening, generalised acute circulatory failure with inadequate oxygen utilisation by cells (ungraded) | Think perfusion, not only blood pressure |
@@ -70,7 +70,7 @@ Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially 
 
 **Newer septic-shock statements (SSC 2021; SSC 2026 recommendation-level text from the official SCCM page, full publication not read; septic shock only):** capillary refill time may be used as an adjunct to guide resuscitation (weak recommendation, low-quality evidence); for adults with septic shock on vasopressors, an initial MAP target of 65 mmHg is recommended over higher targets (strong, moderate-quality evidence). SSC 2026 keeps the MAP 65 mmHg recommendation (strong, moderate) and adds a suggestion of a MAP range of 60–65 mmHg for adults aged 65 or older (conditional, low); it also suggests serial lactate and capillary refill time as adjuncts to guide resuscitation (conditional, low). These apply to **septic** shock and do not replace the individualised target set by the prescriber for other shock types.
 
-**Dated evidence:** the ESICM consensus is from 2014. The SSC 2021 statements above agree with its MAP 65 starting point and lactate use, but SSC 2021 is superseded by a 2026 edition that could not be read; reviewers must check whether any statement here has changed.
+**2025 update relevant to shock monitoring (verified against the 2025 guideline abstract and 2014/2025 comparison table; full 2025 text NOT read):** The 2025 ESICM guidance supersedes the older 2014 consensus for current shock diagnosis and monitoring. It emphasizes serial capillary-refill assessment with skin temperature and mottling as complements; assessment of fluid responsiveness before additional fluid in persistent shock, using dynamic rather than static markers where applicable; and echocardiography as first-line imaging to characterize shock type. It distinguishes arterial-pressure targets by shock mechanism and patient factors (including septic shock, traumatic hemorrhage with or without brain injury, and cardiogenic shock). **The 2014 generic initial MAP statement in the historical table is not a universal 2025 target.** The treating team selects the patient-specific target and intervention. Separately, SSC 2026 applies to **sepsis/septic shock only**; its official recommendation page has been read at recommendation level, not its full publication. Review the complete 2025 shock recommendations before clinical approval.
 
 ## 10. Warning signs and red flags
 Cold, mottled or blue skin; capillary refill prolonged; new confusion or drowsiness; urine output falling; heart rate rising or new arrhythmia; blood pressure falling or MAP below the ordered target; rising lactate; shortness of breath; chest pain; unexplained bleeding or swelling; no response to first treatments.
@@ -167,14 +167,14 @@ D. Document the reading carefully and review it after the shift, when the day ha
 **Why not D:** Delay may allow deterioration.
 
 ## 18. References
-- Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. doi:10.1007/s00134-014-3525-z. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
+- Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971-2012. doi:10.1007/s00134-025-08137-z. https://pure.eur.nl/ws/portalfiles/portal/215348682/ESICM_guidelines_on_circulatory_shock_and_hemodynamic_monitoring_2025.pdf (accessed 2026-11-16; abstract, introduction and Table 1 comparison read; **not** full guideline; cite-only).\n- Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. doi:10.1007/s00134-014-3525-z. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
 - Evans L, et al. Surviving Sepsis Campaign 2021. Intensive Care Med. 2021;47:1181-1247 (capillary refill statement). https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
 
 ## 19. Local protocol note
 Escalation triggers, MAP targets, monitoring intensity and treatment protocols follow local policy and the treating team.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: a European society expert consensus (2014) with graded statements; **dated**, and many statements are ungraded or low quality. Cross-checked against SSC 2021 (superseded) and SSC 2026 recommendation-level text for septic shock only (MAP 65, capillary refill, lactate); the SSC 2026 full publication was not read. No newer open-access shock consensus was found in the searches done.
+- Source quality: the 2014 ESICM document is a superseded consensus; updated ESICM 2025 guidance exists and its abstract/introduction and 2014/2025 comparison table were checked on 2026-11-16. Full 2025 graded recommendations, rationale, bibliography and supplements are NOT verified yet. SSC 2021 is superseded; SSC 2026 was compared at official recommendation-page level for septic shock only (MAP, capillary refill, lactate), not read in full. Do not transfer sepsis-specific BP targets to other shock mechanisms.
 - International applicability: general principles are widely applicable; resource-limited settings may lack lactate or echocardiography.
 - Not covered: shock subtypes in depth, specific therapies, vasopressor dosing.
 - Open questions for reviewers (CCP, NE, BN): is a 2014 consensus acceptable as the primary source, or should a newer review replace it; the nurse's role in applying a MAP target; urine-output thresholds; trauma-specific permissive hypotension.
