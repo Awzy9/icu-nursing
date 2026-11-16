@@ -7,7 +7,7 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 |---|---|
 | Monitoring: no statement sourced from the label | 0 |
 | Escalation: no nursing-practice source | 0 |
-| Adverse effects: a single statement | 38 |
+| Adverse effects: a single statement | 35 |
 | High-alert status not determined from a source read | 41 |
 | US label only, no other regulator read | 50 |
 | Label older than 2026 | 5 |
@@ -32,13 +32,13 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 6. **SK-17 CRRT circuit monitoring** (score 5): cites a source not read; device skill: manufacturer instructions are local
 7. **MD-15 Insulin (intravenous)** (score 4): label older than 2026 (effective 20250307)
 8. **MD-29 Gentamicin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-9. **MD-30 Phenylephrine** (score 4): adverse effects: a single statement
-10. **MD-31 Dopamine** (score 4): adverse effects: a single statement
-11. **MD-36 Furosemide** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-12. **MD-37 Lorazepam** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-13. **MD-43 Succinylcholine** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-14. **MD-44 Enoxaparin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-15. **SK-01 Arterial line care** (score 4): device skill: manufacturer instructions are local
+9. **MD-31 Dopamine** (score 4): adverse effects: a single statement
+10. **MD-36 Furosemide** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+11. **MD-44 Enoxaparin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+12. **SK-01 Arterial line care** (score 4): device skill: manufacturer instructions are local
+13. **SK-04 Endotracheal tube care** (score 4): device skill: manufacturer instructions are local
+14. **SK-09 Blood transfusion** (score 4): cites a source not read; no statement sourced from a source read in full
+15. **SK-11 Nasogastric tube care** (score 4): no monitoring section; cites a source not read; no statement sourced from a source read in full
 
 Full table: `docs/phase14/evidence_gaps.csv`.
 
