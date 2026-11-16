@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's inotrope protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label describes a marked increase in heart rate or blood pressure (especially systolic pressure) as a warning, notes that reducing the infusion usually reverses these effects, and that patients with pre-existing hypertension appear to face an increased risk of an exaggerated pressor response; it also notes a risk of rapid ventricular response in patients with atrial fibrillation, since dobutamine facilitates atrioventricular conduction.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
     }
    ]
   },
@@ -212,7 +219,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "89becb0c-da60-4f43-0a98-29ff7a9eca58",
   "label_version": "19",
   "effective_time": "20260527",

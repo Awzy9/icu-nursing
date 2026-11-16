@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for closely monitoring the response in patients with angina, heart failure, impaired hepatic function, portal hypertension, renal impairment or phaeochromocytoma, and avoiding small veins (such as those on the back of the hand or wrist) and extravasation to reduce the risk of venous thrombosis, phlebitis and vascular impairment; it also notes nicardipine gives no protection against the dangers of abrupt beta-blocker withdrawal, so a beta-blocker should be withdrawn gradually.",
+     "support": "sourced",
+     "sources": [
+      "L-NICARDIPINE"
+     ]
     }
    ]
   },
@@ -206,7 +213,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "433dbca3-0a86-44c2-835d-1051c1c93878",
   "label_version": "6",
   "effective_time": "20261109",

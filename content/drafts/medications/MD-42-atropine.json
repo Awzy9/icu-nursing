@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label warns atropine-induced tachycardia can increase myocardial oxygen demand in coronary artery disease, may precipitate acute glaucoma, may convert partial pyloric stenosis into complete obstruction, may lead to complete urinary retention in prostatic hypertrophy, and may thicken bronchial secretions into plugs in patients with chronic lung disease.",
+     "support": "sourced",
+     "sources": [
+      "L-ATROPINE"
+     ]
     }
    ]
   },
@@ -222,7 +229,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "d5e07279-48ca-4f83-9633-299e65a7f821",
   "label_version": "8",
   "effective_time": "20261020",

@@ -70,12 +70,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Neuromuscular monitoring frequency and sedation assessment follow the unit's protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label recommends clinicians use a peripheral nerve stimulator to monitor the drug's effect, the need for additional doses, and the adequacy of spontaneous recovery or antagonism, which also helps limit the complications of overdosage if more doses are given.",
+     "support": "sourced",
+     "sources": [
+      "L-ROCURONIUM"
+     ]
     }
    ]
   },
@@ -222,7 +229,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "a18fce42-0f3d-4354-845e-57c37ac3a147",
   "label_version": "1",
   "effective_time": "20261001",

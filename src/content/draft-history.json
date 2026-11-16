@@ -1724,6 +1724,19 @@
     "gaps": 2,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "7eb4b5628e98f171",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-05": [
@@ -1743,6 +1756,19 @@
    {
     "hash": "1b566ec8834f2829",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MILRINONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "af13f7f6888d8486",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-MILRINONE",
@@ -1974,6 +2000,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f0befff817aa5313",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ROCURONIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-13": [
@@ -2124,6 +2163,19 @@
    {
     "hash": "2d05c6d328da06e5",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ac786fad3fd77697",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-ADENOSINE",
@@ -2553,6 +2605,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "67898f65938dac8b",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NICARDIPINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-33": [
@@ -2572,6 +2637,19 @@
    {
     "hash": "75d2e16105ddd332",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LABETALOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "3bb75ed2160007fd",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-LABETALOL",
@@ -2829,6 +2907,19 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f27f53fa001db0d4",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NALOXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-41": [
@@ -2889,6 +2980,19 @@
    {
     "hash": "88c0e1832ae7046c",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ATROPINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "8163f1a11da41a80",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-ATROPINE",

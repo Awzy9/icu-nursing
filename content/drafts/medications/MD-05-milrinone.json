@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Alarm limits and monitoring frequency follow the unit's protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label states patients receiving milrinone should be observed closely with continuous electrocardiographic monitoring, to allow prompt detection and management of ventricular arrhythmias.",
+     "support": "sourced",
+     "sources": [
+      "L-MILRINONE"
+     ]
     }
    ]
   },
@@ -199,7 +206,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "07dddead-22ed-004c-e063-6294a90a76fc",
   "label_version": "5",
   "effective_time": "20260727",

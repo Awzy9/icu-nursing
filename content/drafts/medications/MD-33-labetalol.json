@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for laboratory testing at the first sign of liver dysfunction (itching, dark urine, persistent loss of appetite, jaundice, right-upper-quadrant tenderness or unexplained flu-like symptoms), since severe hepatocellular injury occurs rarely but is a recognised risk; it also calls for observing the response closely at the first sign of impending cardiac failure.",
+     "support": "sourced",
+     "sources": [
+      "L-LABETALOL"
+     ]
     }
    ]
   },
@@ -199,7 +206,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "abfc6b75-1ed5-41f1-0484-4597488237bc",
   "label_version": "30",
   "effective_time": "20260914",

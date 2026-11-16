@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Continuous ECG monitoring and recording during administration follow the unit's protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for caution and watching for respiratory compromise in patients with obstructive lung disease, since bronchoconstriction has been reported, and advises caution if the patient is also receiving digoxin, or digoxin with verapamil together, because of reports of ventricular fibrillation in that setting.",
+     "support": "sourced",
+     "sources": [
+      "L-ADENOSINE"
+     ]
     }
    ]
   },
@@ -215,7 +222,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "546642f2-662f-46cf-9d82-5bb3bdcc7677",
   "label_version": "2",
   "effective_time": "20260727",

@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for keeping a patient who has responded to naloxone under continued surveillance, since the duration of action of some opioids may exceed that of naloxone; it also notes naloxone is not effective against respiratory depression from non-opioid drugs, and that reversal by partial agonists may be incomplete, in which case breathing should be mechanically assisted as clinically indicated.",
+     "support": "sourced",
+     "sources": [
+      "L-NALOXONE"
+     ]
     }
    ]
   },
@@ -202,7 +209,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "b59ee3cc-9604-4abc-81be-897e2f42aa67",
   "label_version": "10",
   "effective_time": "20261015",
