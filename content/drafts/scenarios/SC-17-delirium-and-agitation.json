@@ -176,7 +176,7 @@
     },
     {
      "text": "Leave the patient alone so that nothing provokes them.",
-     "points": 1,
+     "points": 0,
      "next": 3,
      "scope": "independent_nursing",
      "feedback": "Staying away leaves the patient frightened and at risk; NICE advises communication, reorientation and reassurance.",
