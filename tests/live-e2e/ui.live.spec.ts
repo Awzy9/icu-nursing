@@ -238,7 +238,7 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await expect(page.getByText("AI evidence check recorded. This is not a clinical review.")).toBeVisible();
   await page.reload();
   await expect(page.getByText(`Checked the draft's escalation wording against the cited guidelines; no discrepancy found ${RUN_TEXT}.`)).toBeVisible();
-  await expect(page.getByText("No action needed")).toBeVisible();
+  await expect(page.getByRole("listitem").filter({ hasText: RUN_TEXT }).getByText("No action needed")).toBeVisible();
   await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible(); // still true after the AI check
   expect((await sql<{ n: number }>(`select count(*)::int n from public.audit_log where action='ai_evidence_review_set' and entity_id='SC-11'`))[0]!.n).toBeGreaterThanOrEqual(1);
   await page.goto("/en/admin/content/coverage");
