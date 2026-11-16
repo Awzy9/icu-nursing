@@ -42,7 +42,7 @@
   "Unit medicine-query procedure",
   "A professional standard on questioning a prescription"
  ],
- "setup": "A fictional adult on a fictional ward; a prescribed medicine looks different from what the nurse expected. The nurse calls the prescriber.",
+ "setup": "A fictional adult in a fictional ICU bed on a continuous infusion; a prescribed medicine order looks different from what the nurse expected. The nurse calls the prescriber before giving it.",
  "categories": [
   {
    "id": "s",
@@ -116,6 +116,26 @@
    ],
    "category": "out",
    "why": "Blame does not help the decision."
+  },
+  {
+   "id": "i6",
+   "text": "She has no known drug allergies on her chart, and this is the same class of medicine she was on before the procedure.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "b",
+   "why": "It is relevant background the prescriber needs to judge the query, without naming a medicine or a dose."
+  },
+  {
+   "id": "i7",
+   "text": "The infusion pump is already programmed for the previous order and has not been changed yet.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "a",
+   "why": "It tells the prescriber the current safe state of the equipment, which affects how urgent the decision is."
   }
  ]
 }

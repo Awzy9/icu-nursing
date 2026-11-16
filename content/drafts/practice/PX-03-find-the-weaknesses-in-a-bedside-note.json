@@ -98,6 +98,26 @@
    ],
    "problem": true,
    "why": "All documentation must include date, time and signature."
+  },
+  {
+   "id": "l7",
+   "text": "Late entry, 16:10, for the 15:45 assessment: SpO2 trend reviewed, patient repositioned, oxygen therapy continued as ordered. A. Nurse, RN.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": false,
+   "why": "A late entry is acceptable when it is clearly labelled as such, states the time of the original event and the time of writing, and is signed."
+  },
+  {
+   "id": "l8",
+   "text": "Patient seems fine today.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ],
+   "problem": true,
+   "why": "A vague, subjective summary with no observed findings does not tell the next reader what was actually assessed."
   }
  ]
 }

@@ -4679,7 +4679,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "33a92ec17d4d1052"
+   "hash": "1deefa186f2589bd"
   },
   {
    "key": "PX-02",
@@ -4704,7 +4704,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "dc2e9574e116da7c"
+   "hash": "b794c2f2d7751fc1"
   },
   {
    "key": "PX-03",
@@ -4724,7 +4724,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "de682e8b5a2fec48"
+   "hash": "d5b70022ac8d0064"
   },
   {
    "key": "PX-04",
@@ -4894,7 +4894,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "0a75bebca97c0f83"
+   "hash": "4e3807e31a4dff4d"
   },
   {
    "key": "PX-12",

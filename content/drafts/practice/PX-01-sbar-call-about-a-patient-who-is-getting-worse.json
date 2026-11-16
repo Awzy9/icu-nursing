@@ -37,7 +37,7 @@
   "Unit or national guidance on calling for review and the local escalation route",
   "A source on SBAR use at nursing level in critical care"
  ],
- "setup": "A fictional adult, Mr A, two days after surgery, on a fictional ward; the nurse phones the doctor on call.",
+ "setup": "A fictional adult, Mr A, two days after abdominal surgery, now in a fictional ICU bed; the bedside nurse phones the on-call doctor because the patient's condition is changing.",
  "categories": [
   {
    "id": "s",
@@ -110,6 +110,26 @@
    ],
    "category": "out",
    "why": "It does not help the doctor decide what to do now."
+  },
+  {
+   "id": "i6",
+   "text": "His oxygen saturation has been trending down over the last hour despite his usual oxygen therapy, and he looks more work-of-breathing to me.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "a",
+   "why": "It is the nurse's own clinical impression of a trend, not just a single reading, which is the kind of assessment detail a doctor needs to judge urgency."
+  },
+  {
+   "id": "i7",
+   "text": "His family visited this morning and asked when he might go home.",
+   "support": "partial",
+   "sources": [
+    "S-AHRQ-TS"
+   ],
+   "category": "out",
+   "why": "It is true but does not help the doctor decide what to do about the current deterioration."
   }
  ]
 }

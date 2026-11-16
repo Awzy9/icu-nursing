@@ -76,6 +76,22 @@
    "sources": [
     "S-OPENRN-FUND-DOC"
    ]
+  },
+  {
+   "id": "c6",
+   "text": "When I write a late entry, I label it clearly and state both the time of the event and the time I am writing it.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ]
+  },
+  {
+   "id": "c7",
+   "text": "I write specific findings rather than vague summaries like 'seems fine' or 'no change'.",
+   "support": "sourced",
+   "sources": [
+    "S-OPENRN-FUND-DOC"
+   ]
   }
  ]
 }

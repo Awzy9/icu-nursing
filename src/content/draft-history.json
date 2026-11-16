@@ -3661,6 +3661,17 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "1deefa186f2589bd",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "PX-02": [
@@ -3675,12 +3686,35 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "b794c2f2d7751fc1",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-ISMP-HA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "PX-03": [
    {
     "hash": "de682e8b5a2fec48",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "d5b70022ac8d0064",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "S-OPENRN-FUND-DOC"
@@ -3787,6 +3821,17 @@
    {
     "hash": "0a75bebca97c0f83",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "4e3807e31a4dff4d",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "S-OPENRN-FUND-DOC"
