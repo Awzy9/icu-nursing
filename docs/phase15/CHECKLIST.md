@@ -51,7 +51,7 @@ Re-checked this batch for any newly-accessible source among the remaining 10 (SK
 
 ## Workstream 3 — Remaining educational content audit (topics, questions, scenarios, equipment)
 
-**Status: not started.**
+**Status: structural validators confirm 0 issues across all 51 topic drafts, 306 MCQs (51 drafts), 20 scenarios and 8 equipment drafts; manual content-accuracy spot-checks across this session (9 topic MCQ sections across 4 topics, 4 scenarios, 2 equipment drafts, spanning sepsis, isolation precautions, coagulation, head-to-toe assessment domains) found no genuine inaccuracies or unsupported statements — all correctly cite sources, give plausible and distinct distractors, and keep clinical reasoning sound. This is an honest partial result: a full manual re-read of every one of the 306 MCQs, all 51 topics' full 20-part content and all 20 scenarios' complete decision trees has not been done and should not be reported as complete. The automated MCQ bias audit (`content/drafts/MCQ_AUDIT.md`) remains the only exhaustive check across all 306 questions (no systematic answer-length bias; 0 identical-option or near-duplicate questions detected).**
 
 ## Workstream 4 — Website learner-journey review
 
