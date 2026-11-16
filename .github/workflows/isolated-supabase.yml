@@ -70,6 +70,7 @@ jobs:
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ env.LIVE_SUPABASE_URL }}
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ env.LIVE_ANON_KEY }}
+          BILLING_MODE: mock   # mock subscriptions only; the DB still refuses subscribe/advance unless app_settings.mock_payments_enabled is on
       - name: Collect diagnostics on failure
         if: failure()
         run: |

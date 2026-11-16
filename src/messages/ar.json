@@ -216,7 +216,13 @@
     "demoUnavailable": "تحتاج لوحات التحكم إلى خلفية مهيأة. التطبيق يعمل في وضع العرض التجريبي.",
     "questionBank": "بنك الأسئلة",
     "study": "الدراسة",
-    "cases": "الحالات"
+    "cases": "الحالات",
+    "planLine": "خطتك: {plan}.",
+    "planFree": "مجانية",
+    "planPremium": "مميزة",
+    "managePlan": "أدر خطتك",
+    "skills": "المهارات",
+    "practice": "مختبرات التدريب"
   },
   "Footer": {
     "about": "حول",

@@ -5,6 +5,7 @@ import { TopicList } from "@/components/content/topic-list";
 import { Link } from "@/i18n/navigation";
 import { getRoles, requireUser, STAFF_ROLES } from "@/lib/auth";
 import { getContentRepository, type TopicSummary } from "@/lib/content";
+import { getBillingService } from "@/lib/billing";
 import { isDemoMode } from "@/lib/env";
 import { createClient } from "@/lib/supabase/server";
 
@@ -35,6 +36,7 @@ export default async function DashboardPage({ params }: { params: Promise<{ loca
   const completed = pick([...completedIds]).slice(0, 5);
   const bookmarked = pick(((marks ?? []) as { topic_id: string }[]).map((m) => m.topic_id)).slice(0, 5);
   const isStaff = roles.some((r) => STAFF_ROLES.includes(r));
+  const plan = await getBillingService().then((svc) => svc?.state()).catch(() => null);
 
   return (
     <div className="space-y-10">
@@ -45,8 +47,15 @@ export default async function DashboardPage({ params }: { params: Promise<{ loca
           <Button asChild size="sm"><Link href="/question-bank">{t("questionBank")}</Link></Button>
           <Button asChild variant="outline" size="sm"><Link href="/study">{t("study")}</Link></Button>
           <Button asChild variant="outline" size="sm"><Link href="/cases">{t("cases")}</Link></Button>
+          <Button asChild variant="outline" size="sm"><Link href="/skills">{t("skills")}</Link></Button>
+          <Button asChild variant="outline" size="sm"><Link href="/practice">{t("practice")}</Link></Button>
           {isStaff ? <Button asChild variant="outline" size="sm"><Link href="/admin">{t("staffArea")}</Link></Button> : null}
         </div>
+        {plan ? (
+          <p className="text-sm text-muted-foreground" data-testid="dash-plan">
+            {t("planLine", { plan: plan.premium ? t("planPremium") : t("planFree") })} <Link href="/account/billing" className="underline">{t("managePlan")}</Link>
+          </p>
+        ) : null}
       </header>
 
       <section aria-labelledby="continue-h" className="space-y-3">

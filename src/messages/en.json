@@ -216,7 +216,13 @@
     "demoUnavailable": "Dashboards need a configured backend. The app is running in demonstration mode.",
     "questionBank": "Question bank",
     "study": "Study",
-    "cases": "Cases"
+    "cases": "Cases",
+    "planLine": "Your plan: {plan}.",
+    "planFree": "Free",
+    "planPremium": "Premium",
+    "managePlan": "Manage your plan",
+    "skills": "Skills",
+    "practice": "Practice labs"
   },
   "Footer": {
     "about": "About",
