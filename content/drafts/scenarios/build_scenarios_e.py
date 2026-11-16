@@ -374,7 +374,7 @@ write(16, dict(spec_level="decision_graph", evidence_status="partial", domain="c
     op("Call for urgent help according to the unit's escalation policy, say the patient may be going into shock, stay with the patient, continue close monitoring and prepare for the team's orders.", 2, None, "escalation",
        "Signs of impending shock such as a raised pulse, pressure below baseline, cold clammy skin and confusion require emergent care; early warning systems support escalation of deterioration.",
        "The team arrives promptly and the patient is treated without further delay.", "partial", "S-OPENRN-FUND-CH15-6", "S-RCP-NEWS2"),
-    op("Keep rechecking the pressure alone for a few more minutes before calling anyone.", 1, None, "monitoring",
+    op("Keep rechecking the pressure alone for a few more minutes before calling anyone.", 0, None, "monitoring",
        "Monitoring continues, but waiting to escalate a patient with signs of impending shock delays emergency care.",
        "The delay in treatment worsens the patient's condition.", "partial", "S-OPENRN-FUND-CH15-6"),
     op("Set the patient upright to improve breathing and leave to find a doctor.", 0, None, "independent_nursing",
