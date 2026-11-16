@@ -119,6 +119,27 @@
      "sources": [
       "L-GENTAMICIN"
      ]
+    },
+    {
+     "text": "The adverse-reaction section describes renal toxicity with rising BUN or creatinine, oliguria, or abnormal urinary sediment; it is reported more often with pre-existing renal impairment or prolonged or excessive exposure.",
+     "support": "sourced",
+     "sources": [
+      "L-GENTAMICIN"
+     ]
+    },
+    {
+     "text": "Auditory and vestibular toxicity may present with tinnitus, vertigo, dizziness or hearing loss, which may be irreversible. Peripheral neuropathy, convulsions and a myasthenia-like syndrome are also reported.",
+     "support": "sourced",
+     "sources": [
+      "L-GENTAMICIN"
+     ]
+    },
+    {
+     "text": "Other reactions possibly related to gentamicin include respiratory depression and anaphylactoid reactions. Reported laboratory abnormalities include reduced magnesium, calcium and potassium, sometimes associated with tetany or muscle weakness.",
+     "support": "sourced",
+     "sources": [
+      "L-GENTAMICIN"
+     ]
     }
    ]
   },
@@ -228,11 +249,11 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "977180b3-a222-4282-d485-4a3217674305",
   "label_version": "22",
   "effective_time": "20260520",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Adverse-reaction field read in full for this targeted expansion. This verifies this US manufacturer label only; no non-US regulator or nursing protocol review is implied."
  }
 }

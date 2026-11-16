@@ -112,6 +112,27 @@
      "sources": [
       "L-FLUMAZENIL"
      ]
+    },
+    {
+     "text": "Convulsions are the most commonly reported serious adverse event in the label. Reported settings include benzodiazepine dependence, reliance on benzodiazepines for seizure control, severe hepatic impairment and mixed-drug overdose.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    },
+    {
+     "text": "Clinical studies reported dizziness, injection-site pain, sweating, headache, abnormal vision, nausea, vomiting and agitation. These reactions should not be assigned a single pooled frequency across clinical settings.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    },
+    {
+     "text": "Postmarketing reports include panic attacks in patients with panic-disorder history and withdrawal symptoms after rapid injection in patients with long-term benzodiazepine exposure.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
     }
    ]
   },
@@ -220,11 +241,11 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "3eefb01b-3d6a-a3eb-e063-6394a90a4829",
   "label_version": "2",
   "effective_time": "20251218",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Complete adverse-reaction field read for this targeted expansion. US manufacturer label only; non-US labels and local nursing protocols were not reviewed."
  }
 }

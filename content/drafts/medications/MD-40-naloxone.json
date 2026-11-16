@@ -112,6 +112,27 @@
      "sources": [
       "L-NALOXONE"
      ]
+    },
+    {
+     "text": "The label associates abrupt opioid reversal with nausea, vomiting, sweating, tachycardia, increased blood pressure and tremor; serious reported events include seizures, pulmonary oedema and cardiac arrest.",
+     "support": "sourced",
+     "sources": [
+      "L-NALOXONE"
+     ]
+    },
+    {
+     "text": "In people physically dependent on opioids, abrupt reversal may precipitate withdrawal with body aches, agitation or irritability, abdominal cramps, diarrhoea, vomiting and autonomic symptoms.",
+     "support": "sourced",
+     "sources": [
+      "L-NALOXONE"
+     ]
+    },
+    {
+     "text": "Postoperative reversal can remove analgesia and cause agitation. Reported cardiopulmonary events are associations described by the label, not incidence estimates for all patients receiving naloxone.",
+     "support": "sourced",
+     "sources": [
+      "L-NALOXONE"
+     ]
     }
    ]
   },
@@ -226,6 +247,6 @@
   "label_version": "10",
   "effective_time": "20261015",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Complete adverse-reaction field read for this targeted expansion. US manufacturer label only; non-US labels and local nursing protocols were not reviewed."
  }
 }

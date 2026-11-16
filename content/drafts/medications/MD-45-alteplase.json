@@ -119,6 +119,27 @@
      "sources": [
       "L-ALTEPLASE"
      ]
+    },
+    {
+     "text": "The label also identifies hypersensitivity, thromboembolism and cholesterol embolisation as adverse reactions discussed in its warnings; bleeding remains the most frequent reaction across approved indications.",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    },
+    {
+     "text": "Postmarketing reports after stroke include cerebral oedema, cerebral herniation, seizures and new ischaemic stroke or embolism. These may also be consequences of the underlying disease; the label states the effect of alteplase on their incidence is unknown.",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
+    },
+    {
+     "text": "Postmarketing reports in myocardial infarction include arrhythmias and cardiogenic shock; reports in pulmonary embolism include re-embolisation and hypotension. Voluntary reports cannot reliably establish frequency or causality.",
+     "support": "sourced",
+     "sources": [
+      "L-ALTEPLASE"
+     ]
     }
    ]
   },
@@ -228,11 +249,11 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "c669f77c-fa48-478b-a14b-80b20a0139c2",
   "label_version": "15",
   "effective_time": "20260120",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Complete adverse-reaction field read for this targeted expansion. US manufacturer label only; non-US labels and local nursing protocols were not reviewed."
  }
 }

@@ -126,6 +126,27 @@
      "sources": [
       "L-ENOXAPARIN"
      ]
+    },
+    {
+     "text": "The label also identifies thrombocytopenia as a serious adverse reaction. Common reactions in the label include anaemia, bruising, injection-site pain and increased aminotransferases; occurrence depends on the indication and study population.",
+     "support": "sourced",
+     "sources": [
+      "L-ENOXAPARIN"
+     ]
+    },
+    {
+     "text": "Postmarketing reports include thrombocytopenia with thrombosis, skin necrosis and systemic allergic reactions including anaphylactic or anaphylactoid shock. These voluntary reports do not reliably establish frequency or causality.",
+     "support": "sourced",
+     "sources": [
+      "L-ENOXAPARIN"
+     ]
+    },
+    {
+     "text": "Hyperkalaemia has been reported after marketing, often with other predisposing factors such as renal dysfunction or potassium-raising medicines.",
+     "support": "sourced",
+     "sources": [
+      "L-ENOXAPARIN"
+     ]
     }
    ]
   },
@@ -235,11 +256,11 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "9e2875df-0f0c-46ec-990f-69108f383f58",
   "label_version": "8",
   "effective_time": "20261012",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Adverse-reaction field read in full for this targeted expansion. This verifies this US manufacturer label only; no non-US regulator or nursing protocol review is implied."
  }
 }

@@ -1,51 +1,51 @@
 med_id,name,category,high_alert,label,statements_sourced,statements_partial,statements_local,monitoring_items,critical_items,gaps
-MD-01,Norepinephrine,vasoactives-inotropes,True,L-NOREPINEPHRINE,8,4,4,5,4,3
-MD-02,Epinephrine,vasoactives-inotropes,True,L-EPINEPHRINE,6,3,4,5,4,3
-MD-03,Vasopressin,vasoactives-inotropes,True,L-VASOPRESSIN,6,1,4,5,3,3
-MD-04,Dobutamine,vasoactives-inotropes,False,L-DOBUTAMINE,6,2,4,5,4,2
-MD-05,Milrinone,vasoactives-inotropes,False,L-MILRINONE,5,1,4,5,3,3
-MD-06,Propofol,sedatives-analgesics,True,L-PROPOFOL,6,2,4,5,4,3
-MD-07,Midazolam,sedatives-analgesics,False,L-MIDAZOLAM,9,2,3,5,4,3
-MD-08,Dexmedetomidine,sedatives-analgesics,False,L-DEXMEDETOMIDINE,6,1,3,5,2,3
-MD-09,Fentanyl,sedatives-analgesics,False,L-FENTANYL,7,2,4,5,3,3
-MD-10,Morphine,sedatives-analgesics,True,L-MORPHINE,9,1,3,5,4,3
-MD-11,Ketamine,sedatives-analgesics,False,L-KETAMINE,9,1,4,5,3,3
-MD-12,Rocuronium,neuromuscular-blockers,False,L-ROCURONIUM,8,1,4,5,3,3
-MD-13,Cisatracurium,neuromuscular-blockers,False,L-CISATRACURIUM,7,1,4,5,3,3
-MD-14,Heparin,anticoagulants-hemostasis,True,L-HEPARIN,10,1,3,5,4,3
-MD-15,Insulin (intravenous),insulin-electrolytes-fluids,True,L-INSULIN,9,1,3,8,7,3
-MD-16,Amiodarone,antiarrhythmics-cardiac,False,L-AMIODARONE,7,1,4,5,3,3
-MD-17,Adenosine,antiarrhythmics-cardiac,False,L-ADENOSINE,7,1,4,5,3,3
-MD-18,Magnesium sulfate,insulin-electrolytes-fluids,False,L-MAGNESIUM,6,1,4,5,3,3
-MD-19,Potassium chloride,insulin-electrolytes-fluids,False,L-POTASSIUM,7,1,3,5,4,3
-MD-20,Calcium gluconate,insulin-electrolytes-fluids,False,L-CALCIUM,6,1,4,5,4,3
-MD-21,Sodium bicarbonate,insulin-electrolytes-fluids,False,L-BICARBONATE,5,2,4,5,3,3
-MD-22,Piperacillin-tazobactam,anti-infectives,False,L-PIPTAZO,7,2,4,5,3,4
-MD-23,Meropenem,anti-infectives,False,L-MEROPENEM,7,2,4,5,3,3
-MD-24,Vancomycin,anti-infectives,False,L-VANCOMYCIN,5,2,4,5,3,4
-MD-25,Ceftriaxone,anti-infectives,False,L-CEFTRIAXONE,4,2,4,5,3,4
-MD-26,Cefazolin,anti-infectives,False,L-CEFAZOLIN,6,2,4,5,3,3
-MD-27,Azithromycin,anti-infectives,False,L-AZITHROMYCIN,6,2,4,5,3,3
-MD-28,Linezolid,anti-infectives,False,L-LINEZOLID,6,2,4,5,3,4
-MD-29,Gentamicin,anti-infectives,False,L-GENTAMICIN,6,2,4,5,4,4
-MD-30,Phenylephrine,vasoactives-inotropes,True,L-PHENYLEPHRINE,7,2,4,5,3,3
-MD-31,Dopamine,vasoactives-inotropes,True,L-DOPAMINE,7,2,4,5,3,3
-MD-32,Nicardipine,antiarrhythmics-cardiac,False,L-NICARDIPINE,5,2,4,5,3,3
-MD-33,Labetalol,antiarrhythmics-cardiac,False,L-LABETALOL,4,2,4,5,3,3
-MD-34,Esmolol,antiarrhythmics-cardiac,False,L-ESMOLOL,8,2,4,5,3,3
-MD-35,Nitroglycerin (intravenous),antiarrhythmics-cardiac,False,L-NITROGLYCERIN,4,2,4,5,3,4
-MD-36,Furosemide,insulin-electrolytes-fluids,False,L-FUROSEMIDE,6,2,4,5,3,3
-MD-37,Lorazepam,sedatives-analgesics,False,L-LORAZEPAM,6,2,4,5,4,3
-MD-38,Haloperidol (injection),sedatives-analgesics,False,L-HALOPERIDOL,4,2,4,5,3,4
-MD-39,Hydromorphone,sedatives-analgesics,False,L-HYDROMORPHONE,6,2,4,5,3,4
-MD-40,Naloxone,reversal-emergency,False,L-NALOXONE,4,2,4,5,3,4
-MD-41,Flumazenil,reversal-emergency,False,L-FLUMAZENIL,4,2,4,5,4,4
-MD-42,Atropine,reversal-emergency,False,L-ATROPINE,7,2,4,5,2,3
-MD-43,Succinylcholine,neuromuscular-blockers,False,L-SUCCINYLCHOLINE,7,2,4,5,4,3
-MD-44,Enoxaparin,anticoagulants-hemostasis,False,L-ENOXAPARIN,7,2,4,5,4,4
-MD-45,Alteplase (Activase),anticoagulants-hemostasis,False,L-ALTEPLASE,6,2,4,5,4,4
-MD-46,Tranexamic acid,anticoagulants-hemostasis,False,L-TXA,6,2,4,5,3,4
-MD-47,Levetiracetam,neuro-seizure-icp,False,L-LEVETIRACETAM,7,2,4,5,3,3
-MD-48,Mannitol,neuro-seizure-icp,False,L-MANNITOL,7,2,4,5,3,3
-MD-49,Pantoprazole (intravenous),respiratory-gi-support,False,L-PANTOPRAZOLE,6,2,4,5,2,4
-MD-50,Hydrocortisone (sodium succinate),respiratory-gi-support,False,L-HYDROCORTISONE,6,2,4,5,3,4
+MD-01,Norepinephrine,vasoactives-inotropes,True,L-NOREPINEPHRINE,10,4,4,5,4,3
+MD-02,Epinephrine,vasoactives-inotropes,True,L-EPINEPHRINE,8,3,4,5,4,3
+MD-03,Vasopressin,vasoactives-inotropes,True,L-VASOPRESSIN,8,1,4,5,3,3
+MD-04,Dobutamine,vasoactives-inotropes,False,L-DOBUTAMINE,8,2,4,5,4,2
+MD-05,Milrinone,vasoactives-inotropes,False,L-MILRINONE,7,1,4,5,3,3
+MD-06,Propofol,sedatives-analgesics,True,L-PROPOFOL,10,2,4,5,4,3
+MD-07,Midazolam,sedatives-analgesics,False,L-MIDAZOLAM,11,2,3,5,4,3
+MD-08,Dexmedetomidine,sedatives-analgesics,False,L-DEXMEDETOMIDINE,7,1,3,5,2,3
+MD-09,Fentanyl,sedatives-analgesics,False,L-FENTANYL,9,2,4,5,3,3
+MD-10,Morphine,sedatives-analgesics,True,L-MORPHINE,11,1,3,5,4,3
+MD-11,Ketamine,sedatives-analgesics,False,L-KETAMINE,10,1,4,5,3,3
+MD-12,Rocuronium,neuromuscular-blockers,False,L-ROCURONIUM,10,1,4,5,3,3
+MD-13,Cisatracurium,neuromuscular-blockers,False,L-CISATRACURIUM,8,1,4,5,3,3
+MD-14,Heparin,anticoagulants-hemostasis,True,L-HEPARIN,12,1,3,5,4,3
+MD-15,Insulin (intravenous),insulin-electrolytes-fluids,True,L-INSULIN,11,1,3,8,7,3
+MD-16,Amiodarone,antiarrhythmics-cardiac,False,L-AMIODARONE,8,1,4,5,3,3
+MD-17,Adenosine,antiarrhythmics-cardiac,False,L-ADENOSINE,9,1,4,5,3,3
+MD-18,Magnesium sulfate,insulin-electrolytes-fluids,False,L-MAGNESIUM,7,1,4,5,3,3
+MD-19,Potassium chloride,insulin-electrolytes-fluids,False,L-POTASSIUM,8,1,3,5,4,3
+MD-20,Calcium gluconate,insulin-electrolytes-fluids,False,L-CALCIUM,8,1,4,5,4,3
+MD-21,Sodium bicarbonate,insulin-electrolytes-fluids,False,L-BICARBONATE,7,2,4,5,3,3
+MD-22,Piperacillin-tazobactam,anti-infectives,False,L-PIPTAZO,8,2,4,5,3,4
+MD-23,Meropenem,anti-infectives,False,L-MEROPENEM,9,2,4,5,3,3
+MD-24,Vancomycin,anti-infectives,False,L-VANCOMYCIN,7,2,4,5,3,4
+MD-25,Ceftriaxone,anti-infectives,False,L-CEFTRIAXONE,7,2,4,6,4,3
+MD-26,Cefazolin,anti-infectives,False,L-CEFAZOLIN,8,2,4,5,3,3
+MD-27,Azithromycin,anti-infectives,False,L-AZITHROMYCIN,8,2,4,5,3,3
+MD-28,Linezolid,anti-infectives,False,L-LINEZOLID,7,2,4,5,3,4
+MD-29,Gentamicin,anti-infectives,False,L-GENTAMICIN,10,2,4,5,4,4
+MD-30,Phenylephrine,vasoactives-inotropes,True,L-PHENYLEPHRINE,9,2,4,5,3,3
+MD-31,Dopamine,vasoactives-inotropes,True,L-DOPAMINE,9,2,4,5,3,3
+MD-32,Nicardipine,antiarrhythmics-cardiac,False,L-NICARDIPINE,7,2,4,5,3,3
+MD-33,Labetalol,antiarrhythmics-cardiac,False,L-LABETALOL,6,2,4,5,3,3
+MD-34,Esmolol,antiarrhythmics-cardiac,False,L-ESMOLOL,11,2,4,5,3,3
+MD-35,Nitroglycerin (intravenous),antiarrhythmics-cardiac,False,L-NITROGLYCERIN,5,2,4,5,3,4
+MD-36,Furosemide,insulin-electrolytes-fluids,False,L-FUROSEMIDE,12,2,4,5,3,3
+MD-37,Lorazepam,sedatives-analgesics,False,L-LORAZEPAM,8,2,4,5,4,3
+MD-38,Haloperidol (injection),sedatives-analgesics,False,L-HALOPERIDOL,7,2,4,5,3,4
+MD-39,Hydromorphone,sedatives-analgesics,False,L-HYDROMORPHONE,9,2,4,5,3,4
+MD-40,Naloxone,reversal-emergency,False,L-NALOXONE,9,2,4,5,3,4
+MD-41,Flumazenil,reversal-emergency,False,L-FLUMAZENIL,9,2,4,5,4,3
+MD-42,Atropine,reversal-emergency,False,L-ATROPINE,9,2,4,5,2,3
+MD-43,Succinylcholine,neuromuscular-blockers,False,L-SUCCINYLCHOLINE,9,2,4,5,4,3
+MD-44,Enoxaparin,anticoagulants-hemostasis,False,L-ENOXAPARIN,11,2,4,5,4,4
+MD-45,Alteplase (Activase),anticoagulants-hemostasis,False,L-ALTEPLASE,10,2,4,5,4,4
+MD-46,Tranexamic acid,anticoagulants-hemostasis,False,L-TXA,9,2,4,5,3,4
+MD-47,Levetiracetam,neuro-seizure-icp,False,L-LEVETIRACETAM,8,2,4,5,3,3
+MD-48,Mannitol,neuro-seizure-icp,False,L-MANNITOL,8,2,4,5,3,3
+MD-49,Pantoprazole (intravenous),respiratory-gi-support,False,L-PANTOPRAZOLE,8,2,4,5,2,4
+MD-50,Hydrocortisone (sodium succinate),respiratory-gi-support,False,L-HYDROCORTISONE,7,2,4,5,3,4
