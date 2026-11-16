@@ -1609,7 +1609,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a93d59960b04e04a"
+   "hash": "3d1492ea429880f2"
   },
   {
    "key": "SK-05",
@@ -1741,6 +1741,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BTS-O2-2017",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -1759,7 +1764,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "db3a1c9a1fcc2937"
+   "hash": "31015d36c5825084"
   },
   {
    "key": "SK-09",

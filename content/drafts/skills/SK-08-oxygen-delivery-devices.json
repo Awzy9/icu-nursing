@@ -38,6 +38,11 @@
    "id": "S-OPENRN-FUND-CH8",
    "read": "full",
    "use": "Open RN Nursing Fundamentals 8.3: respiratory monitoring and reassessment"
+  },
+  {
+   "id": "S-BTS-O2-2017",
+   "read": "partial",
+   "use": "BTS/ICS 2017 emergency oxygen guideline: only the December 2019 update-decision page read (target saturation ranges, reaffirmed after the 2018 IOTA meta-analysis); the full 2017 Thorax supplement itself is paywalled and was not read"
   }
  ],
  "objectives": [
@@ -58,6 +63,13 @@
      "support": "partial",
      "sources": [
       "S-AARC-O2"
+     ]
+    },
+    {
+     "text": "The BTS/ICS emergency oxygen guideline uses two general target-saturation bands (UK practice): 94-98% for most acutely ill adults, and 88-92% for patients known to be at risk of hypercapnic respiratory failure (for example, some patients with COPD) pending a blood gas result. A 2018 meta-analysis raised a question about higher saturations and mortality, but the guideline's own update decision (reaffirmed, not a new recommendation) was that this did not call for a different target range.",
+     "support": "partial",
+     "sources": [
+      "S-BTS-O2-2017"
      ]
     }
    ]
@@ -257,8 +269,8 @@
  ],
  "gaps": [
   "Device-specific flow and FiO2 tables: not reproduced; manufacturer sources needed.",
-  "Hypercapnic respiratory failure management, high-flow and NIV: not covered.",
-  "BTS oxygen guideline: not read."
+  "High-flow and NIV device management: not covered; only the target-saturation band for hypercapnic-risk patients is sourced.",
+  "BTS oxygen guideline: only the December 2019 update-decision page was read; the full 2017 Thorax supplement (O'Driscoll et al.) is paywalled and was not read, so device-specific and dose-titration detail from it is not included."
  ],
  "permissions": [
   "AARC CPGs: cite only.",
@@ -320,6 +332,17 @@
    "read": "full",
    "licence_class": "GREEN",
    "permission_required": "No"
+  },
+  {
+   "id": "S-BTS-O2-2017",
+   "title": "BTS Guideline for Oxygen Use in Healthcare and Emergency Settings (O'Driscoll et al., Thorax 2017;72(Suppl 1):ii1-ii90); December 2019 update-decision page read",
+   "publisher": "British Thoracic Society / Intensive Care Society",
+   "version": "2017; update decision published December 2019 (no change to target ranges)",
+   "url": "https://www.brit-thoracic.org.uk/clinical-resources/guidelines/emergency-oxygen/",
+   "accessed": "2026-11-16",
+   "read": "partial",
+   "licence_class": "YELLOW (unverified)",
+   "permission_required": "Verify"
   }
  ]
 }

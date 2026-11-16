@@ -28,17 +28,17 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 2. **SK-07 Ventilator safety checks** (score 6): cites a source not read; device skill: manufacturer instructions are local
 3. **MD-10 Morphine** (score 5): see CSV
 4. **MD-41 Flumazenil** (score 5): adverse effects: a single statement; high-alert status not determined from a source read (local list governs); label older than 2026 (effective 20251218)
-5. **SK-17 CRRT circuit monitoring** (score 5): cites a source not read; device skill: manufacturer instructions are local
-6. **MD-06 Propofol** (score 4): adverse effects: a single statement
-7. **MD-07 Midazolam** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-8. **MD-09 Fentanyl** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-9. **MD-14 Heparin** (score 4): adverse effects: a single statement
-10. **MD-15 Insulin (intravenous)** (score 4): label older than 2026 (effective 20250307)
-11. **MD-29 Gentamicin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-12. **MD-30 Phenylephrine** (score 4): adverse effects: a single statement
-13. **MD-31 Dopamine** (score 4): adverse effects: a single statement
-14. **MD-36 Furosemide** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-15. **MD-37 Lorazepam** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+5. **SK-08 Oxygen delivery devices** (score 5): device skill: manufacturer instructions are local
+6. **SK-17 CRRT circuit monitoring** (score 5): cites a source not read; device skill: manufacturer instructions are local
+7. **MD-06 Propofol** (score 4): adverse effects: a single statement
+8. **MD-07 Midazolam** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+9. **MD-09 Fentanyl** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+10. **MD-14 Heparin** (score 4): adverse effects: a single statement
+11. **MD-15 Insulin (intravenous)** (score 4): label older than 2026 (effective 20250307)
+12. **MD-29 Gentamicin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+13. **MD-30 Phenylephrine** (score 4): adverse effects: a single statement
+14. **MD-31 Dopamine** (score 4): adverse effects: a single statement
+15. **MD-36 Furosemide** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
 
 Full table: `docs/phase14/evidence_gaps.csv`.
 
