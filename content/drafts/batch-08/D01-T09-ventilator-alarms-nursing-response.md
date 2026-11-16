@@ -101,7 +101,7 @@ An alarm sounds. The nurse goes to the bedside, looks at the patient's chest, co
 A ventilated patient's alarm sounds repeatedly after suctioning. The nurse checks the patient, finds the circuit not fully reconnected, reconnects it, and notices that the O₂ enrichment function from the pre-oxygenation was still active on this model (so oxygen alarms had been suppressed); she returns the device to its normal state, checks SpO₂, and tells the respiratory therapist.
 
 ## 17. MCQs
-**Q1 (judgment).** A ventilator alarm sounds while you are drawing up medicines. What does the sources' patient-first principle suggest you do first?
+**Q1 (judgment).** A ventilator alarm sounds while you are preparing medicines. What should you do first under the patient-first assessment principle?
 A. Finish drawing up the medicines first, then check the ventilator screen for the alarm message and its cause.
 B. Silence the alarm so that you can concentrate on the medicines, and then carry on with the task in hand.
 C. Go to the patient at once, check that ventilation is adequate, then look for the cause.
@@ -156,14 +156,14 @@ D. The function changes the tidal volume alarm limit automatically, so the volum
 **Why not C:** The suppression is only while the function is active.
 **Why not D:** The note concerns oxygen alarms, not tidal volume limits.
 
-**Q6 (scope).** A ventilator displays a technical fault message. What is the appropriate nursing action, according to the manual's advice?
+**Q6 (safety).** A HAMILTON-C1 ventilator reports a *technical fault* and ventilation is no longer effective. According to this model's operator manual, what is the safest team response?
 A. Keep using the ventilator, because technical faults are usually minor and rarely affect the delivery of ventilation.
 B. Try several restarts at the bedside until the message clears and then carry on with the ventilation.
-C. Provide other ventilation, remove the ventilator from use, record the fault code and report it for servicing.
+C. Summon help, maintain ventilation using the unit's emergency alternative, then remove the faulty device from service and document the code.
 D. Change the ventilation mode to see whether the fault disappears and the message clears from the display screen.
 **Answer: C.**
-**Why correct:** The manual advises providing alternative ventilation, turning off the ventilator, recording the fault code and having it serviced.
-**Why not A:** The manual recommends removing it from use.
+**Why correct:** For a HAMILTON-C1 technical fault with inadequate ventilation, the manufacturer's instructions call for alternative ventilation and removal from use with fault-code documentation and servicing. Prioritize uninterrupted patient ventilation and coordinate equipment replacement with trained staff. A *technical event* is not always identical: some technical events permit continued ventilation and require service rather than immediate disconnection.
+**Why not A:** The specified technical fault compromises ventilation and requires alternative support; a lower-severity technical event with continuing ventilation is a separate situation.
 **Why not B:** Repeated restarts are not advised.
 **Why not D:** Mode changes are not nursing decisions and do not repair a fault.
 
@@ -176,6 +176,6 @@ Alarm names, priorities, defaults, limits, silence rules, emergency ventilation 
 
 ## 20. Evidence, applicability and open questions
 - **Source type:** two manufacturers' operator manuals (HAMILTON-C1 2020; Dräger Evita Infinity V500, an older model, a third-party-hosted copy), a guideline statement of principle (AARC) and a public summary of an AACN alert. No cross-manufacturer alarm-management guideline, no hospital alarm policy and no study of nurse alarm response was read; the AACN full text and the Joint Commission resources were not accessible.
-- **Do not generalise:** every device-specific statement here applies only to the device and software version named; the comparison in section 6b shows that two manufacturers already differ in reset rules, priority display and defaults.
+- **Do not generalise:** every device-specific statement here applies only to the device and software version named; the comparison in section 6b shows that two manufacturers already differ in reset rules, priority display and defaults. For HAMILTON-C1, a 'technical event' may permit continued ventilation whereas a 'technical fault' may trigger safety ventilation or ambient state: check the actual operator manual, alarm severity and patient before deciding on emergency alternative ventilation.
 - **Not covered:** alarm lists and causes (deliberately not reproduced), non-invasive ventilation alarms, transport ventilators, neonatal and paediatric alarms, alarm-fatigue interventions, humidifier and monitor alarms, and the specific actions for each alarm.
 - **Open questions for reviewers (CCP, RT, NE, BN, biomedical engineering):** which ventilators the platform's audience uses and whether licensed manufacturer content can be obtained; alarm-limit policy; emergency ventilation equipment standards.
