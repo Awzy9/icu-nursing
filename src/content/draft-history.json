@@ -4944,6 +4944,18 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "9269e4f6596e5ce5",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-2025",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-14": [
@@ -5003,6 +5015,19 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "83c7af97e5e141dc",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-16": [
@@ -5034,12 +5059,41 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "2c3024d1d7f4fa9a",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-17": [
    {
     "hash": "81631607e8f09902",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "c28c427308c4d156",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-HALOPERIDOL",
