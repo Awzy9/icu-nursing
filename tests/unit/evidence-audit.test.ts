@@ -20,10 +20,15 @@ describe("evidence gap audit (medications and skills)", () => {
       expect(m.label_currency_check.matches_register).toBe(true);
     }
   });
-  it("keeps the honest gaps visible: escalation has no nursing-practice source, and no draft is high-alert-cleared by guesswork", () => {
+  it("closes the escalation gap honestly via a real, fully-read nursing-practice source (RCP NEWS2), and keeps the gaps that are still genuinely open visible", () => {
     const meds = rows.filter((r) => r.kind === "medication");
-    expect(meds.every((r) => r.gaps.some((g) => g.startsWith("escalation")))).toBe(true);
+    // Phase 15: every medication draft now cites S-RCP-NEWS2 (a generic, fully-read early-warning-score
+    // escalation framework) in its escalation section - a real source, not a guess, so this gap is closed.
+    expect(meds.every((r) => !r.gaps.some((g) => g.startsWith("escalation")))).toBe(true);
     expect(meds.every((r) => r.red_sources.length === 0)).toBe(true); // no medication draft rests on a RED source
+    // Gaps that are still honestly open and must not be silently closed without real work:
+    expect(meds.every((r) => r.gaps.some((g) => g.startsWith("US label only")))).toBe(true);
+    expect(meds.some((r) => r.gaps.some((g) => g.startsWith("high-alert status")))).toBe(true);
   });
   it("sourced monitoring statements added this phase never carry dosing wording", () => {
     const text = JSON.stringify((loadMedicationDrafts() as unknown as { sections: { monitoring: unknown } }[]).map((m) => m.sections.monitoring));

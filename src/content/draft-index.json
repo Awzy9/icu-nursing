@@ -2269,12 +2269,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "8c15b01b7d67e3c1"
+   "hash": "51940c37382753df"
   },
   {
    "key": "MD-02",
@@ -2299,12 +2304,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d7a69a89a2c4302b"
+   "hash": "aa66a146e535754e"
   },
   {
    "key": "MD-03",
@@ -2329,12 +2339,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "817d675b0b0678e5"
+   "hash": "334eec5ae4f995e0"
   },
   {
    "key": "MD-04",
@@ -2359,12 +2374,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "7eb4b5628e98f171"
+   "hash": "5c1be8e7888a4d97"
   },
   {
    "key": "MD-05",
@@ -2389,12 +2409,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "af13f7f6888d8486"
+   "hash": "e9f962d2310a00b8"
   },
   {
    "key": "MD-06",
@@ -2419,12 +2444,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "dd2eab88429120f9"
+   "hash": "5baeb91fccd11c24"
   },
   {
    "key": "MD-07",
@@ -2449,12 +2479,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "53006eda79cc2da3"
+   "hash": "a696dcbe20f15998"
   },
   {
    "key": "MD-08",
@@ -2479,12 +2514,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "57b8cbd8311a9c15"
+   "hash": "3199b22c39ca8472"
   },
   {
    "key": "MD-09",
@@ -2509,12 +2549,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a01f70e366bd2c72"
+   "hash": "29aa8a6fb607c57a"
   },
   {
    "key": "MD-10",
@@ -2539,12 +2584,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "fd30697e52bb4c89"
+   "hash": "bcec4f56f915f50d"
   },
   {
    "key": "MD-11",
@@ -2569,12 +2619,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "431f9fb65e103439"
+   "hash": "04c79cb737942c38"
   },
   {
    "key": "MD-12",
@@ -2599,12 +2654,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "f0befff817aa5313"
+   "hash": "343aeb813bd96bdb"
   },
   {
    "key": "MD-13",
@@ -2629,12 +2689,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "6a998e0045b091a8"
+   "hash": "b73b9c7bd46848d4"
   },
   {
    "key": "MD-14",
@@ -2659,12 +2724,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "31ce5a130e69babd"
+   "hash": "d807d77497ee8786"
   },
   {
    "key": "MD-15",
@@ -2699,12 +2769,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a6adb24a1c81c3ae"
+   "hash": "d22fb293309a1a14"
   },
   {
    "key": "MD-16",
@@ -2729,12 +2804,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9e31985562a81483"
+   "hash": "fbcbad309ecadd76"
   },
   {
    "key": "MD-17",
@@ -2759,12 +2839,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ac786fad3fd77697"
+   "hash": "67b03406f33f5d75"
   },
   {
    "key": "MD-18",
@@ -2789,12 +2874,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d0d9504a7ae895cf"
+   "hash": "66971eee19f59cac"
   },
   {
    "key": "MD-19",
@@ -2819,12 +2909,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "852cb0f3aa222157"
+   "hash": "ce33a13974d29510"
   },
   {
    "key": "MD-20",
@@ -2849,12 +2944,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "381d9c4e425e285e"
+   "hash": "a0d04fa49ba43f74"
   },
   {
    "key": "MD-21",
@@ -2879,12 +2979,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "b5e7befd2b134e50"
+   "hash": "a4ba19a2de337b4b"
   },
   {
    "key": "MD-22",
@@ -2909,12 +3014,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "15af1e309fcc888a"
+   "hash": "7c31e6611cd2b159"
   },
   {
    "key": "MD-23",
@@ -2939,12 +3049,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "0185913a3999eb0b"
+   "hash": "0b89d8ff86627997"
   },
   {
    "key": "MD-24",
@@ -2969,12 +3084,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "ca9229d2e92d9b99"
+   "hash": "51f910a2daf27d18"
   },
   {
    "key": "MD-25",
@@ -2999,12 +3119,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "1ce6f8dd05275d87"
+   "hash": "b8716e85b8f7212a"
   },
   {
    "key": "MD-26",
@@ -3029,12 +3154,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "bbed691d2c300273"
+   "hash": "2796361f77407f85"
   },
   {
    "key": "MD-27",
@@ -3059,12 +3189,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "61a9b7632ef5ea5c"
+   "hash": "c3d6a8506ed5f558"
   },
   {
    "key": "MD-28",
@@ -3089,12 +3224,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "f10ec04e3a8a04c1"
+   "hash": "d5f0e1b3b9391913"
   },
   {
    "key": "MD-29",
@@ -3119,12 +3259,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "152cc2b4c397486e"
+   "hash": "27fb5a7a4187bade"
   },
   {
    "key": "MD-30",
@@ -3149,12 +3294,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "b589b3955b1497e1"
+   "hash": "09a2973aa1657024"
   },
   {
    "key": "MD-31",
@@ -3179,12 +3329,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "4db09f4867739732"
+   "hash": "c37fda2dbbfc0b69"
   },
   {
    "key": "MD-32",
@@ -3209,12 +3364,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "67898f65938dac8b"
+   "hash": "08e43fff08a72f61"
   },
   {
    "key": "MD-33",
@@ -3239,12 +3399,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "3bb75ed2160007fd"
+   "hash": "ef77deb747a9f5fd"
   },
   {
    "key": "MD-34",
@@ -3269,12 +3434,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "6c1b1521d9dec119"
+   "hash": "8e8a31108af1ac94"
   },
   {
    "key": "MD-35",
@@ -3299,12 +3469,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "760e86f340c3cebf"
+   "hash": "65fe7bf21a150ae7"
   },
   {
    "key": "MD-36",
@@ -3329,12 +3504,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9ef62f1bbc9db9e3"
+   "hash": "49df979c2dd53580"
   },
   {
    "key": "MD-37",
@@ -3359,12 +3539,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "54b92d2526176ea0"
+   "hash": "e0c56df7e55e6056"
   },
   {
    "key": "MD-38",
@@ -3389,12 +3574,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "9811c69b1b96ff8d"
+   "hash": "0cdf088ff840c64c"
   },
   {
    "key": "MD-39",
@@ -3419,12 +3609,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "778495022218c293"
+   "hash": "dd3627212cedd259"
   },
   {
    "key": "MD-40",
@@ -3449,12 +3644,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "f27f53fa001db0d4"
+   "hash": "5c5012a656c52986"
   },
   {
    "key": "MD-41",
@@ -3479,12 +3679,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "fd21fb9df361520a"
+   "hash": "391078f432168040"
   },
   {
    "key": "MD-42",
@@ -3509,12 +3714,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "8163f1a11da41a80"
+   "hash": "e003607d1405cc46"
   },
   {
    "key": "MD-43",
@@ -3539,12 +3749,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ce0ebbd6a7b0316f"
+   "hash": "a9c0c19abe543f90"
   },
   {
    "key": "MD-44",
@@ -3569,12 +3784,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "6e2dd54f40d4cc6b"
+   "hash": "e2f9db09805e6316"
   },
   {
    "key": "MD-45",
@@ -3599,12 +3819,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "aad315b73df9c65e"
+   "hash": "ba66cf3de3b8554f"
   },
   {
    "key": "MD-46",
@@ -3629,12 +3854,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "3d3868c856ea868a"
+   "hash": "0114fa64bfabed25"
   },
   {
    "key": "MD-47",
@@ -3659,12 +3889,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c8926193898ff938"
+   "hash": "fa3a74678d759ccb"
   },
   {
    "key": "MD-48",
@@ -3689,12 +3924,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "3c2723c577eb947b"
+   "hash": "069356f2262fceca"
   },
   {
    "key": "MD-49",
@@ -3719,12 +3959,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "86b67a2d33267db2"
+   "hash": "896daf0d4c9c1b09"
   },
   {
    "key": "MD-50",
@@ -3749,12 +3994,17 @@
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCP-NEWS2",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "9c2ac29270725d1d"
+   "hash": "3eec1ecc5af20e9e"
   },
   {
    "key": "SC-01",

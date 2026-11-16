@@ -15,7 +15,14 @@ export function loadMedicationLabels(root = "."): Set<string> {
   return new Set(lines(path.join(dir(root), "LABEL_SOURCES.csv")).map((l) => l.split(",")[0]!));
 }
 export function loadGuidelineSources(root = "."): string[] {
-  return readFileSync(path.join(root, "content/drafts/skills/NEW_SOURCES.csv"), "utf8").split(/\r?\n/).slice(1).map((l) => /^"?(N-[A-Z0-9-]+)"?,/.exec(l)?.[1]).filter((x): x is string => Boolean(x));
+  const ids = (file: string, re: RegExp) => readFileSync(file, "utf8").split(/\r?\n/).slice(1).map((l) => re.exec(l)?.[1]).filter((x): x is string => Boolean(x));
+  return [
+    ...ids(path.join(root, "content/drafts/skills/NEW_SOURCES.csv"), /^"?(N-[A-Z0-9-]+)"?,/),
+    // The master source register (also used by the scenario validator) carries vetted nursing-practice
+    // guideline sources - e.g. S-RCP-NEWS2, an early-warning-score escalation framework - that medication
+    // drafts can now cite for genuine nursing-practice escalation content, not just a regulator label.
+    ...ids(path.join(root, "sources/source_register.csv"), /^"?([SN]-[A-Z0-9-]+)"?,/),
+  ];
 }
 export function loadMedicationDrafts(root = "."): MedicationDraft[] {
   return readdirSync(dir(root)).filter((f) => /^MD-\d\d-.*\.json$/.test(f)).sort().map((f) => JSON.parse(readFileSync(path.join(dir(root), f), "utf8")) as MedicationDraft);
