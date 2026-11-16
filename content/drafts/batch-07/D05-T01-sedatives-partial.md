@@ -14,7 +14,7 @@ sources_not_read: [S-OPENRN-PHARM]
 independently_written_note: "Original wording. The Open RN sections on benzodiazepines, barbiturates and anaesthetics were read in full; they give lorazepam and phenobarbital in detail and propofol and midazolam only in one-line examples, so in Phase 3 the boxed warning, indication and warnings sections of one US FDA label each for midazolam, lorazepam, propofol and dexmedetomidine were read, which now supports key safety statements for these four drugs at the level of US labelling; ICU infusion practice, sedation depth targets, withdrawal syndromes and nursing titration protocols still have NO source here. Sedation monitoring and scales are covered in D03-T09 (scale definitions are not taught). No doses, concentrations, infusion rates or titration ranges are given: the textbook quotes US labelling doses, which are deliberately omitted. This draft is partial and not a complete sedative resource."
 ---
 # Sedatives in the ICU – classes, key risks and nursing safety (partial evidence)
-> DRAFT – NOT clinically reviewed. AI-generated. PARTIAL: benzodiazepines and barbiturates (textbook) and PADIS drug-choice statements only; no doses, no ICU infusion protocol, no propofol or dexmedetomidine pharmacology.
+> DRAFT – NOT clinically reviewed. AI-generated. PARTIAL: Open RN textbook drug classes, SCCM PADIS drug-choice recommendations, and selected propofol/dexmedetomidine/midazolam/lorazepam US label safety sections only. No complete ICU pharmacology reference, dosing or infusion protocol.
 
 ## 1. Overview
 Sedatives reduce anxiety and level of consciousness. ISMP lists intravenous moderate-sedation agents, general anaesthetic agents and opioids among its high-alert categories, and the FDA pump page names propofol (Diprivan) and morphine among high-risk infusions. In critically ill ventilated adults the SCCM PADIS pages state which agents are preferred and that sedation should be kept light where possible; see D03-T09 for monitoring depth and D07-T03 for pain. The nurse checks the order, delivers infusions safely, monitors sedation and breathing, and escalates; the prescriber and pharmacist choose the drug, dose and targets.
@@ -134,16 +134,16 @@ D. Recommend that sedation should never be reduced or interrupted during the fir
 **Why not C:** Light sedation is generally favoured.
 **Why not D:** No such recommendation exists on the pages read.
 
-**Q4 (judgment).** A ventilated patient on a sedative infusion and an opioid is hard to rouse and the blood pressure is falling. What is the best action?
+**Q4 (judgment).** A mechanically ventilated patient receiving a sedative infusion and an opioid is unexpectedly difficult to rouse, and blood pressure is falling. What is the safest immediate nursing response?
 A. Wait to see whether the blood pressure recovers by itself before telling anyone about the patient's condition.
 B. Increase the infusion rate to stabilise the patient, because a lower pressure usually means too little sedation.
-C. Assess airway, breathing and sedation level, follow the protocol for pausing sedation, and call the prescriber at once.
+C. Immediately assess airway, ventilation and circulation, call for urgent help, and manage the infusions within the authorized local protocol.
 D. Give a reversal agent that is kept on the unit without waiting for an order, in order to save time.
 **Answer: C.**
-**Why correct:** Over-sedation with haemodynamic change needs immediate assessment, protocol action and escalation.
+**Why correct:** Unexpected reduced responsiveness with hypotension may reflect sedative effects or another acute deterioration. The nurse promptly assesses airway, ventilation and circulation, summons clinical help and follows local orders/protocols for infusion management; a sedation pause is not automatically appropriate in every patient.
 **Why not A:** Waiting could allow deterioration.
 **Why not B:** Increasing sedation would worsen the problem.
-**Why not D:** Reversal agents require an order and carry risks such as seizures.
+**Why not D:** Antagonist use has indication-specific risks and may require a prescriber decision or an authorized emergency protocol; it should not be given simply because it is stocked on the unit.
 
 **Q5 (understanding).** Which statement matches the PADIS 2025 focused-update recommendation on drug choice?
 A. Suggest propofol over dexmedetomidine in all patients because it is thought to work faster at the start and to be easier to titrate.
@@ -180,4 +180,4 @@ Sedation protocols, agents available, concentrations, titration authority, sedat
 - Source quality: Open RN is a short US textbook reproducing parts of drug labelling; the FDA labels are one US manufacturer label per drug (revision-specific, not guidelines); PADIS was read at recommendation level only (mostly low or moderate certainty); ISMP and FDA pump pages are safety resources.
 - Applicability: adults; PADIS statements are for critically ill, mechanically ventilated adults.
 - Not covered: pharmacokinetics and mechanisms beyond the labels, ICU infusion doses, ICU withdrawal syndromes, nursing titration protocols, neuromuscular blockers, paediatrics, procedural sedation.
-- Open questions for reviewers (CRIT-PH, CCP, PH, NE, BN): add authoritative ICU drug references; sedation protocol roles; reversal agent policy.
+- Open questions for reviewers (CRIT-PH, CCP, PH, NE, BN): add authoritative ICU drug references; sedation protocol roles; reversal agent policy. Source correction 2026-11-16: the 2025 PADIS dexmedetomidine preference is *conditional*, only when light sedation and/or reducing delirium is a high priority; it does not imply suitability for all patients. The 2026 FDA Diprivan label separately documents microbial-contamination precautions, ICU infusion syndrome and triglyceride effects but is a US manufacturer label, not an independent clinical guideline. https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline ; https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/019627Orig1s077lbl.pdf (label safety section via public search only, not full PDF reviewed here).
