@@ -92,7 +92,7 @@
     },
     {
      "text": "Fetch the defibrillator first and start compressions when you return.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "independent_nursing",
      "feedback": "Equipment is needed, but compressions should not wait for it.",
