@@ -87,11 +87,11 @@
    ],
    "options": [
     {
-     "text": "Stop the infusion, call for urgent help early, stay with the patient and begin an ABCDE assessment, without making the patient stand or sit up suddenly.",
+     "text": "Stop the suspected trigger, activate the emergency anaphylaxis pathway, call for urgent help, assess ABCDE, and obtain immediate IM adrenaline under the authorized emergency protocol; do not allow sudden standing.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "RCUK says to stop a drug suspected of causing anaphylaxis, call for help early, assess with ABCDE and keep the patient from standing or sitting up suddenly; the labels also warn of serious reactions.",
+     "feedback": "RCUK identifies intramuscular adrenaline in the anterolateral thigh as first-line for anaphylaxis with airway, breathing or circulatory involvement; activate the emergency pathway and give it promptly under the authorized protocol while removing the trigger, assessing ABCDE and avoiding sudden standing.",
      "consequence": "The infusion is stopped, the team is on its way and monitoring is being attached while you stay with the patient.",
      "support": "partial",
      "sources": [
@@ -161,7 +161,7 @@
     },
     {
      "text": "In the deltoid, because the arm is quicker to reach.",
-     "points": 1,
+     "points": 0,
      "next": 3,
      "scope": "order_or_protocol_required",
      "feedback": "The label says injection into smaller muscles such as the deltoid is not recommended.",
