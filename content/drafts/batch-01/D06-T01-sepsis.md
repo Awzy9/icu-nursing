@@ -97,13 +97,13 @@ At 02:00 a patient with a urinary catheter has a heart rate rising from 88 to 11
 A 78-year-old woman, three days after hip surgery, is slightly confused and says she "just feels wrong". Temperature is normal, blood pressure 108/60 (usual 150/85), heart rate 104, respiratory rate 22, and urine output is low. Her early-warning score is 4, but the nurse recognises a large drop from her usual pressure, new confusion and a worried daughter. The nurse escalates as a possible sepsis case with SBAR, requests review within the time set by policy, and prepares for cultures and a lactate. The doctor decides on antimicrobials and fluids.
 
 ## 17. MCQs
-**Q1 (judgment).** A 78-year-old woman, three days after hip surgery, is newly confused. Her early-warning score is 4, her systolic pressure is 40 mmHg below her usual, and her daughter says she is not herself. What is the best nursing action?
+**Q1 (judgment).** A 78-year-old woman, three days after hip surgery, has suspected wound infection and new confusion. Her NEWS2 score is 4, systolic pressure has fallen 40 mmHg from her usual level, and her daughter reports a major change from baseline. What is the best nursing action?
 A. Repeat the observations in four hours, because a score of 4 falls in the low-risk band for this tool.
 B. Encourage oral fluids and ask the family to stay and watch her through the night.
 C. Document the daughter's concern and hand over to the morning team, since she has no fever.
 D. Escalate now as possible sepsis, citing the fall from her usual pressure and the new confusion.
 **Answer: D.**
-**Why correct:** A score alone can understate risk; a large fall from the usual pressure, new confusion and family concern justify urgent escalation.
+**Why correct:** NICE NG253 requires clinical judgement alongside NEWS2, including changed behaviour reported by family or carers; new confusion and a substantial blood-pressure fall warrant prompt assessment despite a NEWS2 score of 4. The score does not exclude severe illness.
 **Why not A:** The low band is a prompt, not a reason to delay when other danger signs are present.
 **Why not B:** Oral fluids do not address possible sepsis and cannot replace clinical review; fluids are prescribed.
 **Why not C:** Fever is not required for sepsis, and waiting for the morning delays treatment.
@@ -130,14 +130,14 @@ D. Ask the pharmacist to decide the drug and the timing, because nurses cannot t
 **Why not B:** Waiting for a result delays time-critical treatment.
 **Why not D:** The prescriber chooses the drug; the nurse administers it safely and promptly.
 
-**Q4 (understanding).** What did the 2021 Surviving Sepsis Campaign guideline recommend about the qSOFA score?
+**Q4 (understanding).** According to the current 2026 Surviving Sepsis Campaign guideline, how should qSOFA be used to screen acutely ill hospital patients for possible sepsis?
 A. Use it as the preferred single screening tool for all hospital wards.
-B. Do not use it as a single screening tool compared with SIRS, NEWS or MEWS.
+B. Prefer NEWS, NEWS2, MEWS or SIRS over qSOFA as a single screening tool.
 C. Use it in place of clinical assessment when the ward is short of staff and observations are delayed.
 D. Use it only for pregnant patients and children.
 **Answer: B.**
-**Why correct:** SSC 2021 recommended against qSOFA alone as a single screening tool; SSC 2026 now recommends NEWS, NEWS2, MEWS or SIRS over qSOFA as a single tool (strong, moderate certainty).
-**Why not A:** That is the opposite of the recommendation.
+**Why correct:** SSC 2026 strongly recommends NEWS, NEWS2, MEWS or SIRS rather than qSOFA as a single sepsis screening tool for acutely ill hospital patients (moderate certainty). No screening score alone confirms or excludes sepsis.
+**Why not A:** SSC 2026 prefers other screening tools over qSOFA alone.
 **Why not C:** No score replaces clinical assessment.
 **Why not D:** The guideline does not limit its statement to those groups.
 
@@ -152,13 +152,13 @@ D. Choosing the antimicrobial and deciding the first fluid prescription.
 **Why not B:** Escalation is a nursing responsibility.
 **Why not C:** Documentation is a nursing responsibility.
 
-**Q6 (safety).** The unit uses a different early-warning score from NEWS2. A new nurse says NICE thresholds must be applied to every patient. What is the best reply?
+**Q6 (safety).** A hospital outside the UK uses a locally approved early-warning system. A new nurse says NICE NEWS2 thresholds apply unchanged to all patients. What is the best reply?
 A. NICE thresholds are an international standard, so they must be applied in every hospital, whatever early-warning score the unit has adopted for its own wards and patients.
 B. Early-warning scores are used only in the UK, so units elsewhere do not need any structured tool for spotting deterioration.
-C. NEWS2 is a UK tool for defined settings; this unit uses its own validated score, and the core steps of suspect, assess, escalate and reassess apply everywhere.
+C. NICE NEWS2 thresholds are specific to its defined populations and settings; use this hospital's approved escalation policy and clinical judgement.
 D. NEWS2 bands can be applied without any change to pregnant patients and to children, because the same thresholds suit every group.
 **Answer: C.**
-**Why correct:** NICE restricts NEWS2 to adults aged 16 and over who are not recently pregnant in acute settings; other settings use their own validated tools.
+**Why correct:** NICE NG253 recommends NEWS2 for defined settings and patients aged 16 or over who are not and have not recently been pregnant. Its numeric bands should not automatically be transferred to a different scoring system. Follow the locally approved tool, escalation protocol and clinical assessment.
 **Why not A:** NICE guidance is national, not an international standard.
 **Why not B:** Many countries use early-warning systems and sepsis screening.
 **Why not D:** NICE excludes pregnancy and refers to separate guidance for it.
