@@ -556,6 +556,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-SSC-2021",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -569,7 +574,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "cf3047d2ff6b7f8e"
+   "hash": "0924f85aa1aec696"
   },
   {
    "key": "D03-T09",
@@ -701,6 +706,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -709,7 +719,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "507a9bd9a2c7aa45"
+   "hash": "2d51aac1b7f6b0f6"
   },
   {
    "key": "D02-T12",
@@ -724,6 +734,11 @@
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
     },
     {
      "id": "S-FDA-LABELS-2026",
@@ -759,7 +774,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "4b566e9cc8d683ab"
+   "hash": "d614278004d7e9c6"
   },
   {
    "key": "D05-T16",
@@ -914,7 +929,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "8c84e818bcf5f471"
+   "hash": "91214d8ee8fdb5f8"
   },
   {
    "key": "D04-T08",
