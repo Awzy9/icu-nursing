@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['SK-02']
-sources: ['S-CDC-BSI-2011']
+sources: ['S-CDC-BSI-2011', 'S-SHEA-CLABSI-2022']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # Central venous catheter care (CDC 2011)
@@ -87,3 +87,4 @@ D. Change the dressing and flush the line, because this shows the line is workin
 
 ## 18. References
 - CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections (2011; last update October 2017). https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-15)
+- SHEA/IDSA/APIC Strategies to Prevent CLABSI (2022 update). https://pmc.ncbi.nlm.nih.gov/articles/PMC9096710/ (accessed 2026-11-15)
