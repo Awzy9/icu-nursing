@@ -5,7 +5,7 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 ## Medications (50)
 | Gap | Drafts |
 |---|---|
-| Monitoring: no statement sourced from the label | 8 |
+| Monitoring: no statement sourced from the label | 0 |
 | Escalation: no nursing-practice source | 50 |
 | Adverse effects: a single statement | 42 |
 | High-alert status not determined from a source read | 41 |

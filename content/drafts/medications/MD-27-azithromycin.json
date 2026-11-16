@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label describes QT-interval prolongation and reports of torsades de pointes, a risk the label says should be considered in patients with known QT prolongation, a history of torsades de pointes, proarrhythmic conditions, or other QT-prolonging drugs; it also notes observational studies have shown an approximately two-fold increased short-term risk of acute cardiovascular death relative to other antibacterial drugs, and warns of severe, sometimes fatal, hepatotoxicity (discontinue immediately if signs of hepatitis occur) and that azithromycin may exacerbate muscle weakness in myasthenia gravis.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
     }
    ]
   },
@@ -215,7 +222,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "7b81436e-d14a-4353-a22d-253f45e2e576",
   "label_version": "14",
   "effective_time": "20260727",

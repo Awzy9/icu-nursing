@@ -2854,7 +2854,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "722c01e8acedcfe5"
+   "hash": "381d9c4e425e285e"
   },
   {
    "key": "MD-21",
@@ -2884,7 +2884,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d48648d8bb5de2f9"
+   "hash": "b5e7befd2b134e50"
   },
   {
    "key": "MD-22",
@@ -2944,7 +2944,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "dcc8d0e80904ba7b"
+   "hash": "0185913a3999eb0b"
   },
   {
    "key": "MD-24",
@@ -2974,7 +2974,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "e0eae3076daf8e43"
+   "hash": "ca9229d2e92d9b99"
   },
   {
    "key": "MD-25",
@@ -3002,9 +3002,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "22c9e9f0ffd125ba"
+   "hash": "1ce6f8dd05275d87"
   },
   {
    "key": "MD-26",
@@ -3034,7 +3034,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "0540d8a39c5edee5"
+   "hash": "bbed691d2c300273"
   },
   {
    "key": "MD-27",
@@ -3064,7 +3064,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "1884805d10b9f206"
+   "hash": "61a9b7632ef5ea5c"
   },
   {
    "key": "MD-28",
@@ -3724,7 +3724,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "2e0c998f1c775a25"
+   "hash": "86b67a2d33267db2"
   },
   {
    "key": "MD-50",

@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "ECG monitoring, calcium results and site checks follow the unit's protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label states ceftriaxone must never be given through the same line at the same time as calcium gluconate, in any age group, because of reports of fatal intravascular precipitates; it also calls for close ECG monitoring if calcium must be given with a cardiac glycoside, and for immediately stopping the infusion at the site and treating promptly if extravasation or signs of calcinosis cutis (skin calcium deposits) occur.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
     }
    ]
   },
@@ -208,7 +215,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "0deed071-d89d-420e-b4b4-797dce0ad8f0",
   "label_version": "4",
   "effective_time": "20260731",

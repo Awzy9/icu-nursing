@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for assessing the infusion site for thrombophlebitis and removing the catheter if clinically indicated, and for discontinuing and evaluating the patient for acute tubulointerstitial nephritis, severe cutaneous adverse reactions, or new or worsening cutaneous or systemic lupus erythematosus if signs appear; it also notes rare hypomagnesaemia with prolonged use, transaminase elevations, and that symptomatic response to therapy does not rule out gastric malignancy.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
     }
    ]
   },
@@ -216,7 +223,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "eb3f58d4-0c69-4377-be45-c36099c98d33",
   "label_version": "5",
   "effective_time": "20261015",

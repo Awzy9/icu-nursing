@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label warns that solutions containing sodium ions should be used with great care, if at all, in patients with congestive heart failure, severe renal insufficiency, or other states with oedema and sodium retention, since intravenous administration can cause fluid or solute overload, lower serum electrolyte concentrations, overhydration or pulmonary oedema; extravascular infiltration should also be avoided.",
+     "support": "sourced",
+     "sources": [
+      "L-BICARBONATE"
+     ]
     }
    ]
   },
@@ -208,7 +215,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "5ae65432-04a1-4b6b-8536-2535064fc782",
   "label_version": "2",
   "effective_time": "20261015",

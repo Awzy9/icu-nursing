@@ -2269,6 +2269,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "381d9c4e425e285e",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-21": [
@@ -2288,6 +2301,19 @@
    {
     "hash": "d48648d8bb5de2f9",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-BICARBONATE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "b5e7befd2b134e50",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-BICARBONATE",
@@ -2353,6 +2379,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0185913a3999eb0b",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MEROPENEM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-24": [
@@ -2372,6 +2411,19 @@
    {
     "hash": "e0eae3076daf8e43",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VANCOMYCIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ca9229d2e92d9b99",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-VANCOMYCIN",
@@ -2409,6 +2461,19 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1ce6f8dd05275d87",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFTRIAXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-26": [
@@ -2437,6 +2502,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "bbed691d2c300273",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFAZOLIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-27": [
@@ -2456,6 +2534,19 @@
    {
     "hash": "1884805d10b9f206",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-AZITHROMYCIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "61a9b7632ef5ea5c",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-AZITHROMYCIN",
@@ -3202,6 +3293,19 @@
    {
     "hash": "2e0c998f1c775a25",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PANTOPRAZOLE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "86b67a2d33267db2",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-PANTOPRAZOLE",

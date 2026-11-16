@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label describes seizures and other CNS adverse experiences, severe cutaneous adverse reactions (such as Stevens-Johnson syndrome and toxic epidermal necrolysis), and Clostridioides difficile-associated diarrhoea (ranging from mild to fatal colitis) as reasons to watch for and evaluate new neurological symptoms, skin changes, or diarrhoea; it also notes thrombocytopenia has been observed in patients with renal dysfunction, and warns that giving meropenem with valproic acid or divalproex reduces valproic acid levels, which can increase the risk of breakthrough seizures.",
+     "support": "sourced",
+     "sources": [
+      "L-MEROPENEM"
+     ]
     }
    ]
   },
@@ -222,7 +229,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "31dd2160-7dbd-51fa-e054-00144ff88e88",
   "label_version": "6",
   "effective_time": "20261102",

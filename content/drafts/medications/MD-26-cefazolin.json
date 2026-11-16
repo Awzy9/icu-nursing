@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label warns seizures may occur, particularly in patients with renal impairment whose dosage is not reduced appropriately, so unexplained seizure activity should prompt review of renal function and dosing; it also notes cefazolin may be associated with a fall in prothrombin activity, so prothrombin time should be monitored in at-risk patients, and lists Clostridioides difficile-associated diarrhoea among its warnings.",
+     "support": "sourced",
+     "sources": [
+      "L-CEFAZOLIN"
+     ]
     }
    ]
   },
@@ -215,7 +222,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "d91a8d13-99a0-4d87-88dc-71cbd37922b4",
   "label_version": "18",
   "effective_time": "20260831",

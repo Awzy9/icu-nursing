@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label warns rapid administration may cause exaggerated hypotension, including shock and rarely cardiac arrest, so the infusion should run slowly rather than as a rapid bolus; it also calls for monitoring renal function in all patients, especially those with renal impairment or who are also receiving a nephrotoxic drug, since systemic exposure increases the risk of acute kidney injury. The label describes ototoxicity (which may be transient or permanent) as more common with excessive doses, pre-existing hearing loss, or a concomitant ototoxic drug, and lists severe skin reactions and Clostridium difficile-associated diarrhoea among its warnings.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
     }
    ]
   },
@@ -209,7 +216,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "b79d9671-02dd-40e2-97fb-a6c7be85cda1",
   "label_version": "1",
   "effective_time": "20261008",
