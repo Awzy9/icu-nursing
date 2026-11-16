@@ -23,6 +23,11 @@ function draftIndexCounts() {
 
 test.describe.configure({ mode: "serial" });
 
+/** RUN is a base-36 timestamp and occasionally ends in a digit immediately followed by a unit letter (e.g. "...10g"), which
+ * trips the database's dose/rate guard (private.draft_note_text_ok) on free-text fields it protects. Use this digit-free
+ * variant wherever RUN is embedded in such a field, so the test's own marker can never be mistaken for a dose. */
+const RUN_TEXT = RUN.replace(/\d/g, "x");
+
 const ids: string[] = [];
 const slug = `ui-live-${RUN}-topic`;
 let learner = { email: "", id: "" }, author = { email: "", id: "" }, publisher = { email: "", id: "" }, reviewer = { email: "", id: "" }, boss = { email: "", id: "" };
@@ -209,7 +214,7 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible();
   await expect(page.getByRole("heading", { name: "Validation feedback" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Sources, licensing and freshness" })).toBeVisible();
-  const note = `Check the UKKA review date ${RUN}`;
+  const note = `Check the UKKA review date ${RUN_TEXT}`;
   await page.getByLabel("Evidence note").fill(note);
   await page.getByRole("button", { name: "Save evidence note" }).click();
   await expect(page.getByText("Saved.")).toBeVisible();
@@ -227,12 +232,12 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await page.getByLabel("Sources checked (one per line)").fill(`UKKA hyperkalaemia guideline 2026 ${RUN}\nNICE NG217 chapter 7`);
   await page.getByLabel("Are these sources still the current version of the guideline?").selectOption("current");
   await page.getByLabel("Did the check find any discrepancy between the draft and the sources?").selectOption("no");
-  await page.getByLabel("Summary of the check").fill(`Checked the draft's escalation wording against the cited guidelines; no discrepancy found ${RUN}.`);
+  await page.getByLabel("Summary of the check").fill(`Checked the draft's escalation wording against the cited guidelines; no discrepancy found ${RUN_TEXT}.`);
   await page.getByLabel("Recommendation").selectOption("no_action");
   await page.getByRole("button", { name: "Record AI evidence check" }).click();
   await expect(page.getByText("AI evidence check recorded. This is not a clinical review.")).toBeVisible();
   await page.reload();
-  await expect(page.getByText(`Checked the draft's escalation wording against the cited guidelines; no discrepancy found ${RUN}.`)).toBeVisible();
+  await expect(page.getByText(`Checked the draft's escalation wording against the cited guidelines; no discrepancy found ${RUN_TEXT}.`)).toBeVisible();
   await expect(page.getByText("No action needed")).toBeVisible();
   await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible(); // still true after the AI check
   expect((await sql<{ n: number }>(`select count(*)::int n from public.audit_log where action='ai_evidence_review_set' and entity_id='SC-11'`))[0]!.n).toBeGreaterThanOrEqual(1);
