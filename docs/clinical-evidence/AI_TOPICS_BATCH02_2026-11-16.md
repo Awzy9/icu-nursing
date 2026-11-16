@@ -59,3 +59,10 @@ Source:
 4. Keep all clinical reviewer assignments, clinical approval and learner publication at **zero**. Do not alter the publication workflow.
 
 **Counts after this report:** 20/40 initial topic drafts **inspected/triaged**, 0/40 **comprehensively line-by-line evidence-verified by this review**, 0 newly clinically approved or published.
+
+## Implementation follow-up (same day; development branch only)
+
+- D02-T08's demonstrably false statement that no newer open-access shock consensus existed was corrected in its clinical draft: the 2025 ESICM guideline is now listed as an updated source, the 2014 comparison is marked historical, and selected 2025 differences are summarized with an explicit **partial-read limitation**. No doses or intervention prescriptions were added. Commit `78ec78f`, formatting correction `3c667b1`.
+- `sources/source_register.csv` now contains `S-ESICM-SHOCK-2025` with `PARTIAL OR SUMMARY` and `full_text_reviewed=No`; the unchanged 2014 source remains for history. The 2025 source's copyright restrictions are recorded as cite-only.
+- The D07-T04 pressure-injury file **has not** been modified; the original QRG is still listed as its only full-reviewed material. Further applicable full-chapter reconciliation is pending.
+- These are **unpublished draft edits, not clinical review/approval**. Generated indexes, validators and GitHub workflows have **not yet been verified green** on the updated commits. All source verification and clinical review status is unchanged.
