@@ -4412,9 +4412,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 3,
-   "hash": "712d21bf34435a9a"
+   "hash": "02356dbec4ccb13b"
   },
   {
    "key": "SC-12",
@@ -4512,9 +4512,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "3bb65322d8f80018"
+   "hash": "8718027b83be95d3"
   },
   {
    "key": "SC-15",
