@@ -18,7 +18,7 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 | Gap | Drafts |
 |---|---|
 | A core section (safety, responsibilities, monitoring, escalation, assessment) is local-protocol only or missing | 7 |
-| No statement sourced from a source read in full | 9 |
+| No statement sourced from a source read in full | 7 |
 | Cites a source not read | 12 |
 | Cites a RED or unverified source | 24 |
 | Device skill (manufacturer instructions govern locally) | 12 |
@@ -28,17 +28,17 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 2. **MD-10 Morphine** (score 6): escalation: no nursing-practice source (label-derived triggers only)
 3. **MD-41 Flumazenil** (score 6): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
 4. **SK-07 Ventilator safety checks** (score 6): cites a source not read; device skill: manufacturer instructions are local
-5. **SK-17 CRRT circuit monitoring** (score 6): cites a source not read; no statement sourced from a source read in full; device skill: manufacturer instructions are local
-6. **MD-06 Propofol** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-7. **MD-07 Midazolam** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-8. **MD-09 Fentanyl** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-9. **MD-14 Heparin** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-10. **MD-15 Insulin (intravenous)** (score 5): escalation: no nursing-practice source (label-derived triggers only); label older than 2026 (effective 20250307)
-11. **MD-29 Gentamicin** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-12. **MD-30 Phenylephrine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-13. **MD-31 Dopamine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-14. **MD-36 Furosemide** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-15. **MD-37 Lorazepam** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+5. **MD-06 Propofol** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+6. **MD-07 Midazolam** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+7. **MD-09 Fentanyl** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+8. **MD-14 Heparin** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+9. **MD-15 Insulin (intravenous)** (score 5): escalation: no nursing-practice source (label-derived triggers only); label older than 2026 (effective 20250307)
+10. **MD-29 Gentamicin** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+11. **MD-30 Phenylephrine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+12. **MD-31 Dopamine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+13. **MD-36 Furosemide** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+14. **MD-37 Lorazepam** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+15. **MD-43 Succinylcholine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
 
 Full table: `docs/phase14/evidence_gaps.csv`.
 

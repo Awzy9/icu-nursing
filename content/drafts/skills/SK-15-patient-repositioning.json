@@ -80,7 +80,7 @@
    "items": [
     {
      "text": "Observe skin, haemodynamics and ventilation during and after repositioning; after every move check tube depth and securement.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026",
       "S-AARC-PVA"
@@ -132,7 +132,7 @@
    "phase": "monitoring",
    "text": "Check tube depth, securement and device positions after the move.",
    "critical": true,
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "S-INTL-PI-2026",
     "S-AARC-PVA"

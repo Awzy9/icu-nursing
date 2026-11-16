@@ -1404,6 +1404,18 @@
     "gaps": 2,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "fba5c075a004f78d",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-INTL-PI-2026"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-16": [
@@ -1425,6 +1437,20 @@
    {
     "hash": "904d8674522c98ca",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "97e81b8d89ef0c57",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "N-AHS-CRRT-ALARM-2025",

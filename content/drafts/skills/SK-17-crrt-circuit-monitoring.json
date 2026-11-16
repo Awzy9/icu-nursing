@@ -69,14 +69,14 @@
    "items": [
     {
      "text": "Check the patient first, and review and address the alarm on the screen before clearing it; the alarm off, disable and override buttons decrease alarm sensitivity.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "N-AHS-CRRT-ALARM-2025"
      ]
     },
     {
      "text": "On the device described, the blood pump stops with high-priority (flashing red) alarms; other devices differ.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "N-AHS-CRRT-ALARM-2025"
      ]
@@ -122,7 +122,7 @@
    "items": [
     {
      "text": "For access and return alarms, check the patient (coughing, suctioning, moving), whether a line is clamped or kinked, the dialysis catheter (reposition, flush and aspirate, according to local practice) and the blood-flow rate; for flow alarms check clamps and kinks and whether bags touch other objects, leak or sit on the wrong scale.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "N-AHS-CRRT-ALARM-2025"
      ]
@@ -156,7 +156,7 @@
    "items": [
     {
      "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "N-AHS-CRRT-ALARM-2025"
      ]
@@ -195,7 +195,7 @@
    "phase": "assessment",
    "text": "On any alarm, check the patient first, then the lines, clamps, catheter and bags before clearing it.",
    "critical": true,
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "N-AHS-CRRT-ALARM-2025"
    ]
@@ -204,7 +204,7 @@
    "phase": "procedure",
    "text": "Do not use alarm off, disable or override functions to clear an unresolved problem.",
    "critical": true,
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "N-AHS-CRRT-ALARM-2025"
    ]
@@ -229,7 +229,7 @@
    "phase": "escalation",
    "text": "If alarms cannot be managed, return blood when possible per local practice, document the reason and notify the prescriber.",
    "critical": true,
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "N-AHS-CRRT-ALARM-2025"
    ]
