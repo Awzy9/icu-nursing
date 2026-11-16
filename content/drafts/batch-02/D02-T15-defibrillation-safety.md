@@ -54,6 +54,7 @@ Rhythm on the monitor; pad and cable integrity; defibrillator status (charged, r
 | Safety check | Rapid but effective check to avoid rescuer contact | Narrative | Say "stand clear" and look |
 | Compressions and shock | Do not defibrillate during manual compressions even with gloves (unsafe for the rescuer); a manual defibrillator shock can be delivered during mechanical compressions | Narrative | Never shock while touching |
 | Pads vs paddles | Pads preferred when available: practical benefits, stand-clear operation, fewer pauses, better contact and fewer arcing events; paddles need firm force | Insufficient evidence for a specific size | Choose pads |
+| Authorized manual-defibrillator operation | Rhythm identification, energy selection and delivery require trained personnel acting within the local resuscitation protocol; AED prompts guide AED use | Local credentialling and ERC ALS guidance | Do not equate manual defibrillator operation with physician-only authority |
 | Pad position | Antero-lateral preferred initially; antero-posterior may be considered if not feasible or for vector change after repeated failed shocks; bi-axillary may be used in the prone position; in implantable pacemaker/defibrillator patients place pads more than 8 cm from the device or use an alternative position | Very low certainty evidence for position effects | Check anatomy and devices |
 | Impedance | Shave anticipated pad areas if necessary | Narrative | Good contact |
 | Oxygen safety | Remove masks and cannulae at least 1 m from the chest; keep ventilator or bag circuit connected, exhaust away from the chest; risk is higher with NIV and high-flow oxygen | Recommendations unchanged from earlier editions | Fire prevention |
@@ -144,13 +145,13 @@ D. Call the family to the bedside straight away so that they can be present at t
 **Why not B:** This delays treatment of the arrest and does not make the shock safer.
 **Why not D:** Communication matters but follows life-saving action.
 
-**Q6 (scope).** Which decision belongs to the team leader or physician rather than the nurse?
+**Q6 (scope).** Which decision must follow the resuscitation algorithm and be made by an authorized, trained operator or designated team leader rather than independently by an untrained team member?
 A. Choosing the energy level and whether to give a further shock.
 B. Removing an oxygen mask before the shock.
 C. Calling "stand clear" and checking that no one is touching the bed.
 D. Documenting the time of each shock.
 **Answer: A.**
-**Why correct:** Shock decisions and energy settings are leadership decisions.
+**Why correct:** Choosing the shock energy and subsequent strategy requires adherence to the resuscitation algorithm, equipment instructions, and local authorization. Trained nurses may operate a manual defibrillator where permitted; this is not exclusively a physician's task.
 **Why not B:** An oxygen safety step the nurse can take.
 **Why not C:** A safety action for any team member.
 **Why not D:** A nursing documentation task.
