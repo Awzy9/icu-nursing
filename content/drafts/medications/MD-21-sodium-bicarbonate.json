@@ -1,0 +1,237 @@
+{
+ "med_id": "MD-21",
+ "number": 21,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Sodium bicarbonate",
+ "drug_class": "Alkalinising agent and electrolyte",
+ "category": "insulin-electrolytes-fluids",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Intravenous alkalinising agent for metabolic acidosis in conditions such as severe renal disease, uncontrolled diabetes, circulatory insufficiency due to shock and severe dehydration. Nursing focus: sodium and fluid overload, alkalosis and extravasation.",
+ "batch": 3,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-BICARBONATE",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-BICARBONATE",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates sodium bicarbonate injection in the treatment of metabolic acidosis that may occur in severe renal disease, uncontrolled diabetes, circulatory insufficiency due to shock or severe dehydration and similar states.",
+     "support": "sourced",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Check the infusion site for extravasation and report any leakage promptly.",
+     "support": "partial",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    },
+    {
+     "text": "The label warns that solutions containing sodium ions should be used with great care, if at all, in patients with congestive heart failure, severe renal insufficiency, or other states with oedema and sodium retention, since intravenous administration can cause fluid or solute overload, lower serum electrolyte concentrations, overhydration or pulmonary oedema; extravascular infiltration should also be avoided.",
+     "support": "sourced",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Solutions containing sodium should be used with great care, if at all, in congestive heart failure, severe renal insufficiency and oedematous states with sodium retention.",
+     "support": "sourced",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    },
+    {
+     "text": "Intravenous administration can cause fluid or solute overload, overhydration, congestion or pulmonary oedema.",
+     "support": "sourced",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    },
+    {
+     "text": "Extravascular infiltration should be avoided.",
+     "support": "sourced",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Overly aggressive therapy can cause metabolic alkalosis (muscular twitching, irritability, tetany) and hypernatraemia; inadvertent extravasation is also described.",
+     "support": "sourced",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate for twitching or tetany, breathlessness or signs of fluid overload, or a leaking cannula.",
+     "support": "partial",
+     "sources": [
+      "L-BICARBONATE"
+     ]
+    },
+    {
+     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Inspect the infusion site for extravasation.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-BICARBONATE"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Watch for breathlessness, oedema and signs of fluid overload.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-BICARBONATE"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review acid-base, sodium and potassium results as ordered.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "L-BICARBONATE"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report tetany, twitching or fluid overload promptly.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-BICARBONATE"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record checks and results.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Cardiac arrest and acidosis guideline text (ERC/AHA) was not used; the role of bicarbonate in arrest is a prescriber decision.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-16",
+  "set_id": "5ae65432-04a1-4b6b-8536-2535064fc782",
+  "label_version": "2",
+  "effective_time": "20261015",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
+}

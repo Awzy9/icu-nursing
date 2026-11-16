@@ -1,0 +1,321 @@
+{
+ "skill_id": "SK-13",
+ "number": 13,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Chest drain monitoring",
+ "category": "elimination-drains",
+ "topic_drafts": [],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "N-BTS-PCS-2023",
+   "read": "full",
+   "use": "BTS Clinical Statement on pleural procedures (2023): practice-point summaries for insertion, bottle/underwater-seal set-up and suction read in full text; narrative review, UK adults, not GRADE"
+  },
+  {
+   "id": "N-NCBI-OPENRN-CHEST",
+   "read": "not_read",
+   "use": "Open RN via NCBI Bookshelf NBK594490: browser-verification page; not read"
+  },
+  {
+   "id": "N-OPENRN-ADV-PDF",
+   "read": "not_read",
+   "use": "Open RN Advanced Skills PDF: HTTP 403; not read"
+  }
+ ],
+ "objectives": [
+  "Keep the drain system below the insertion site, upright and sealed with adequate water.",
+  "Check and document drainage, swinging and bubbling on a dedicated observation chart.",
+  "Know when drainage or suction must not proceed without specialist or prescriber instructions.",
+  "Escalate chest pain, persistent cough or worsening breathlessness."
+ ],
+ "prerequisites": [
+  "Respiratory assessment",
+  "Infection prevention (SK-21)"
+ ],
+ "sections": {
+  "indications": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "The decision to insert, drain, suction or remove a chest drain is a medical or specialist decision; follow the inserting team's written instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Keep the drain bottle below the insertion site at all times and keep the drain upright at all times.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    },
+    {
+     "text": "The system must contain adequate water to cover the end of the tube.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    },
+    {
+     "text": "Use aseptic non-touch technique when changing a drain bottle, underwater-seal drain or drain tubing.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    },
+    {
+     "text": "Avoid clamping a bubbling chest tube unless under specialist pleural supervision and in specific circumstances only.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    },
+    {
+     "text": "Drainage of a large pleural effusion should be controlled to prevent re-expansion pulmonary oedema; a drain placed for effusion should be clamped promptly in a patient with repetitive coughing or chest pain, because re-expansion pulmonary oedema is potentially fatal.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    },
+    {
+     "text": "Avoid suction soon after insertion; suction pressures should be prescribed or documented by the medical team before suction starts, with the unit using one consistent unit of pressure; routine thoracic suction should be avoided given a lack of data showing benefit.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Instructions on clamping and the rate of fluid drainage must be given and recorded, and the volume to drain over a specified period should be stated in the procedure report and handover.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Insertion, suction prescription and decisions about clamping are medical or specialist responsibilities; nursing responsibilities are observation, maintenance of the system as above, documentation and escalation. The source is a UK adult secondary-care clinical statement, not an ICU nursing standard.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "equipment": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Drain type (bottle, digital, ambulatory) and suction equipment follow the unit's supplies and the manufacturer's instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Check the drain daily for wound infection, fluid drainage volume and the presence of respiratory swinging and/or bubbling, and document them on a dedicated chest drain observation chart.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    },
+    {
+     "text": "A follow-up chest radiograph within a few hours of insertion checks drain position (a team decision).",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Record drainage volume over time, swinging and bubbling, and the patient's breathing, pain and cough.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Report chest pain, persistent cough, worsening breathlessness, new or increased bubbling, drain displacement or disconnection promptly, and do not clamp without instruction.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "complications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Re-expansion pulmonary oedema, drain fall-out (hence the holding suture), infection at the wound.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Use the dedicated observation chart for drainage volumes, swinging and bubbling, and record clamping and suction instructions.",
+     "support": "partial",
+     "sources": [
+      "N-BTS-PCS-2023"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Bottle changes, suction connection, troubleshooting a blocked or leaking system and drain removal follow the unit's approved procedure; the practice points read do not give the steps.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm the written instructions for this drain (clamping, rate of drainage, suction) before any care.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-BTS-PCS-2023"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Check the drain system is below the insertion site, upright, sealed and has adequate water.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-BTS-PCS-2023"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Check the wound, the drainage volume and swinging or bubbling, and record them on the observation chart.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-BTS-PCS-2023"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Use aseptic non-touch technique when changing the bottle or tubing.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "N-BTS-PCS-2023"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Do not clamp a bubbling drain and do not start or change suction without instruction.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-BTS-PCS-2023"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Report chest pain, persistent cough, worsening breathlessness or a displaced or disconnected drain at once.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "N-BTS-PCS-2023"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record drainage, swinging, bubbling and instructions given.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "N-BTS-PCS-2023"
+   ]
+  }
+ ],
+ "gaps": [
+  "Interpretation of bubbling and swinging, troubleshooting and drain removal: not in the practice points read.",
+  "ICU post-surgical and trauma drains, digital devices and ambulatory systems: not covered here.",
+  "Supplemental appendices of the BTS statement (set-up and suction detail): not read.",
+  "The Open RN chapter (NBK594490) was not retrievable; no workaround was attempted."
+ ],
+ "permissions": [
+  "BTS clinical statement: licence line says no commercial re-use; paraphrase and cite only.",
+  "Open RN (CC BY): reuse with attribution once a person can retrieve the text."
+ ],
+ "references": [
+  {
+   "id": "N-BTS-PCS-2023",
+   "title": "BTS Clinical Statement on pleural procedures (Thorax 2023; doi 10.1136/thorax-2022-219371)",
+   "publisher": "British Thoracic Society (Asciak R et al.)",
+   "version": "Thorax 2023; approved by BTS SOCC Oct 2022",
+   "url": "https://brit-thoracic.org.uk/document-library/clinical-statements/pleural-procedures/bts-clinical-statement-on-pleural-procedures",
+   "accessed": "2026-11-15",
+   "read": "full",
+   "licence_class": "RED (licence line: No commercial re-use)",
+   "permission_required": "Yes (commercial re-use excluded)"
+  },
+  {
+   "id": "N-NCBI-OPENRN-CHEST",
+   "title": "NBK594490 (chest tube content)",
+   "publisher": "Open RN via NCBI Bookshelf",
+   "version": "Not read",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK594490/?report=printable",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "GREEN (conditional; CC BY 4.0 per collection)",
+   "permission_required": "No (attribution)"
+  },
+  {
+   "id": "N-OPENRN-ADV-PDF",
+   "title": "Nursing Advanced Skills PDF download",
+   "publisher": "Open RN",
+   "version": "Not read",
+   "url": "https://wtcs.pressbooks.pub/nursingadvancedskills/open/download?type=pdf",
+   "accessed": "2026-11-15",
+   "read": "not_read",
+   "licence_class": "GREEN (conditional; CC BY 4.0)",
+   "permission_required": "No (attribution)"
+  }
+ ]
+}

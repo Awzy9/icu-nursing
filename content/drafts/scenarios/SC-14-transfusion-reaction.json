@@ -1,0 +1,207 @@
+{
+ "scenario_id": "SC-14",
+ "number": 14,
+ "title": "Transfusion reaction",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "decision_graph",
+ "evidence_status": "partial",
+ "domain": "haematology",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Recognise a possible transfusion reaction and stop the transfusion.",
+  "Keep access and inform the prescriber and the transfusion service.",
+  "Record and hand over the event factually.",
+  "Recognise that further treatment is a prescriber decision."
+ ],
+ "related": {
+  "skills": [
+   "SK-09"
+  ],
+  "medications": [],
+  "topic_drafts": [
+   "D08-T03"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-AABB-COI-2024",
+   "read": "partial",
+   "use": "US Circular of Information: general instructions and side-effect sections read"
+  },
+  {
+   "id": "S-NICE-NG24",
+   "read": "partial",
+   "use": "NICE NG24 monitoring recommendations"
+  },
+  {
+   "id": "S-BSH-ATR",
+   "read": "not_read",
+   "use": "BSH acute transfusion reactions guideline: not accessed"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
+  }
+ ],
+ "required_sources": [
+  "BSH (or equivalent national) acute transfusion reaction guideline",
+  "The transfusion service's reaction procedure"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "First-line management of specific reaction types after the transfusion is stopped is not drawn from a source read and is not written.",
+  "Observation timings follow local policy.",
+  "AI evidence update 2026-11-16: initial reaction management was cross-checked at public guidance level against Australian Red Cross Lifeblood. Mild isolated reactions differ from severe/life-threatening reactions; restarting is not a unilateral bedside action. BSH 2023 full text and local reaction policies are still not comprehensively checked."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+  "AABB Circular: reproduction permission required."
+ ],
+ "setting": "A fictional adult receiving a blood component on a fictional unit.",
+ "steps": [
+  {
+   "position": 1,
+   "info": "Twenty minutes into a transfusion the patient develops a fever and shivering.",
+   "prompt": "What is the right first response?",
+   "observations": [
+    {
+     "key": "temperature",
+     "label": "Temperature (fictional)",
+     "value": 38.6,
+     "unit": "degrees C"
+    },
+    {
+     "key": "shivering",
+     "label": "Patient",
+     "value": "Shivering"
+    },
+    {
+     "key": "transfusion",
+     "label": "Transfusion",
+     "value": "Running"
+    }
+   ],
+   "options": [
+    {
+     "text": "Stop the transfusion, assess airway, breathing and circulation, call urgently for clinical help and notify the transfusion service. Maintain IV access without flushing the transfusion line; preserve the component and giving set per protocol.",
+     "points": 2,
+     "next": 2,
+     "scope": "escalation",
+     "feedback": "When a reaction is suspected, Australian Red Cross Lifeblood guidance calls for immediately stopping transfusion, assessing ABC and vital signs, maintaining IV access without flushing the transfusion line, rechecking identity and notifying the treating team and transfusion service. Further investigation and possible restart require severity assessment and local authorization.",
+     "consequence": "Transfusion is stopped; the patient and IV access are assessed, the team is notified, and the blood product and set are retained according to the reaction protocol.",
+     "support": "partial",
+     "sources": [
+      "S-AABB-COI-2024",
+      "S-NICE-NG24"
+     ]
+    },
+    {
+     "text": "Slow the transfusion and recheck in an hour.",
+     "points": 0,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "Continuing a transfusion in a possible reaction risks harm.",
+     "consequence": "The patient's condition worsens while the transfusion continues.",
+     "support": "partial",
+     "sources": [
+      "S-AABB-COI-2024"
+     ]
+    },
+    {
+     "text": "Give a medicine for the fever yourself and continue the transfusion.",
+     "points": 0,
+     "next": 2,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Medicines need an order, and the transfusion should be stopped first.",
+     "consequence": "The reaction is masked and the transfusion service is not told.",
+     "support": "partial",
+     "sources": [
+      "S-AABB-COI-2024"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "info": "The doctor arrives and asks you what happened and when.",
+   "prompt": "What do you say and record?",
+   "observations": [
+    {
+     "key": "temperature",
+     "label": "Temperature (fictional)",
+     "value": 38.8,
+     "unit": "degrees C"
+    },
+    {
+     "key": "transfusion",
+     "label": "Transfusion",
+     "value": "Stopped"
+    },
+    {
+     "key": "access",
+     "label": "Intravenous access",
+     "value": "Kept"
+    }
+   ],
+   "options": [
+    {
+     "text": "Give a short SBAR with the times, the observations and the actions taken, and record them.",
+     "points": 2,
+     "next": null,
+     "scope": "escalation",
+     "feedback": "A factual structured account with times and actions supports the reaction investigation.",
+     "consequence": "The doctor and the transfusion service have a clear timeline.",
+     "support": "partial",
+     "sources": [
+      "S-AHRQ-TS",
+      "S-NICE-NG24"
+     ]
+    },
+    {
+     "text": "Say the patient seemed fine earlier and leave it there.",
+     "points": 0,
+     "next": null,
+     "scope": "independent_nursing",
+     "feedback": "An incomplete account loses the timeline of the reaction.",
+     "consequence": "The timeline is unclear and the investigation is harder.",
+     "support": "partial",
+     "sources": [
+      "S-NICE-NG24"
+     ]
+    },
+    {
+     "text": "Decide which type of reaction it is and tell the doctor what to give.",
+     "points": 0,
+     "next": null,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Diagnosing the reaction type and choosing treatment are prescriber decisions.",
+     "consequence": "The conversation turns to disagreement and the timeline is not recorded.",
+     "support": "partial",
+     "sources": [
+      "S-BSH-ATR"
+     ]
+    }
+   ]
+  }
+ ],
+ "debrief": {
+  "learning_points": [
+   "Stop the transfusion and inform the team and transfusion service at the first sign of a reaction.",
+   "Keep intravenous access; further treatment is a prescriber decision.",
+   "Give and record a factual timeline."
+  ],
+  "links": [
+   {
+    "kind": "skill",
+    "code": "SK-09"
+   }
+  ]
+ }
+}

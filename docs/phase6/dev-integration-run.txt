@@ -1,0 +1,41 @@
+PASS  [PostgREST dev] in-progress attempt response carries no key, rationale or explanation
+PASS  [PostgREST dev] learner reads 0 rows from question_answer_keys
+PASS  [PostgREST dev] learner reads 0 rows from question_explanations
+PASS  [PostgREST dev] learner reads 0 rows from question_items
+PASS  [PostgREST dev] learner reads 0 rows from case_option_keys
+PASS  [PostgREST dev] learner reads 0 rows from case_items
+PASS  [PostgREST dev] learner cannot insert an attempt row (permission denied)
+PASS  [PostgREST dev] other learner cannot see the attempt
+PASS  [PostgREST dev] other learner's qb_get_attempt -> attempt not found
+PASS  [PostgREST dev] anonymous learner functions denied
+PASS  [app dev] authenticated learner reaches the question-bank dashboard (database mode, no demo banner)
+PASS  [app dev] practice question page delivers no explanation or rationale before submission
+PASS  [app dev] practice: feedback after submit shows the correct answer and explanations
+PASS  [app dev] practice summary: server score 1 of 5 = 20.0%
+PASS  [app dev] study dashboard: due and incorrect counters reflect the persisted wrong answer  due=1 incorrect=1
+PASS  [app dev] study: 'due' revision starts a practice attempt over exactly the due questions
+PASS  [app dev] exam shows a server-anchored timer and no immediate feedback
+PASS  [app dev] exam resumes at the saved question with the saved flag  url ok=true heading=Question 2 of 5
+PASS  [app dev] exam scored on the server: 1 of 5 = 20.0%, review shows explanations
+PASS  [app dev] study dashboard: revision history lists persisted answers from both attempts
+PASS  [app dev] revision sheets list only published topics (none exist: honest empty state)
+PASS  [app dev] case dashboard lists 3 synthetic cases  found 3
+PASS  [app dev] case page hides scoring keys and later steps
+PASS  [app dev] case completes with a deterministic server score of 100.0% on the best path
+PASS  [app dev] after signing out and in again, previous attempts persist
+PASS  [app dev] learner B sees none of learner A's attempts
+PASS  [app dev] learner B cannot open learner A's attempt URL
+PASS  [app dev] learner B's study dashboard is empty
+PASS  [app dev] signed-out visitors are redirected to sign in
+PASS  [app dev] Arabic dashboard is RTL with Arabic heading
+PASS  [app dev] axe: no serious/critical issues on the Arabic dashboard
+PASS  [app dev] mobile /en/question-bank: no horizontal overflow
+PASS  [app dev] mobile /en/study: no horizontal overflow
+PASS  [app dev] mobile /en/cases: no horizontal overflow
+PASS  [app dev] mobile /ar/study: no horizontal overflow
+PASS  [app dev] signed-in header at 768px: no horizontal overflow
+PASS  [app dev] signed-in header at 1024px: no horizontal overflow
+PASS  [app dev] signed-in header at 1279px: no horizontal overflow
+PASS  [app dev] signed-in header at 1280px: no horizontal overflow
+
+all dev-integration checks passed

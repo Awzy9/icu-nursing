@@ -1,0 +1,91 @@
+{
+ "practice_id": "PX-07",
+ "number": 7,
+ "title": "What counts as hand hygiene?",
+ "area": "infection-prevention",
+ "kind": "classify",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "Only the definition is used: when to use soap and water or hand rub, and the steps, are deliberately not written because the detail pages were not read."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Know what hand hygiene means."
+ ],
+ "sources": [
+  {
+   "id": "S-CDC-HANDHYG-2024",
+   "read": "partial",
+   "use": "CDC hand hygiene page: definition and fire-safety points"
+  }
+ ],
+ "required_sources": [
+  "WHO or national hand hygiene guidance read in full",
+  "The unit's hand hygiene policy"
+ ],
+ "setup": "A fictional shift on a fictional ward.",
+ "categories": [
+  {
+   "id": "yes",
+   "label": "Hand hygiene"
+  },
+  {
+   "id": "no",
+   "label": "Not hand hygiene"
+  }
+ ],
+ "items": [
+  {
+   "id": "i1",
+   "text": "Washing hands with water and soap",
+   "support": "partial",
+   "sources": [
+    "S-CDC-HANDHYG-2024"
+   ],
+   "category": "yes",
+   "why": "One of the listed methods."
+  },
+  {
+   "id": "i2",
+   "text": "Cleaning hands with an alcohol-based hand rub",
+   "support": "partial",
+   "sources": [
+    "S-CDC-HANDHYG-2024"
+   ],
+   "category": "yes",
+   "why": "One of the listed methods."
+  },
+  {
+   "id": "i3",
+   "text": "Surgical hand antisepsis",
+   "support": "partial",
+   "sources": [
+    "S-CDC-HANDHYG-2024"
+   ],
+   "category": "yes",
+   "why": "One of the listed methods."
+  },
+  {
+   "id": "i4",
+   "text": "Wiping hands on a clean towel without soap or rub",
+   "support": "partial",
+   "sources": [
+    "S-CDC-HANDHYG-2024"
+   ],
+   "category": "no",
+   "why": "It is not one of the listed methods of cleaning hands."
+  }
+ ]
+}

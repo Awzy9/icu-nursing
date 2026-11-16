@@ -1,0 +1,356 @@
+{
+ "skill_id": "SK-04",
+ "number": 4,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Endotracheal tube care",
+ "category": "airway-ventilation",
+ "topic_drafts": [
+  "D01-T12"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-AARC-PVA",
+   "read": "full",
+   "use": "2024 AARC patient-ventilator assessment CPG (cite only; permission needed to reproduce)"
+  },
+  {
+   "id": "S-SHEA-VAP-2022",
+   "read": "full",
+   "use": "VAP prevention essential practices"
+  },
+  {
+   "id": "S-ERC-ALS-2025",
+   "read": "full",
+   "use": "airway guidance (paraphrase only)"
+  },
+  {
+   "id": "S-INTL-PI-2026",
+   "read": "full",
+   "use": "International Guideline 4th ed. Quick Reference Guide, re-fetched and read in full text 2026-11-16 (previously only an abridged summary had been read)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
+  }
+ ],
+ "objectives": [
+  "Check and record tube position and securement.",
+  "Explain how cuff pressure is measured and why palpation is unreliable.",
+  "Describe measures that reduce ventilator-associated complications.",
+  "Escalate suspected displacement or obstruction immediately."
+ ],
+ "prerequisites": [
+  "Suctioning (SK-06)",
+  "Ventilator safety checks (SK-07)"
+ ],
+ "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Care applies to every patient with an endotracheal tube in place.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Measure cuff pressure with a manometer; palpating the pilot balloon is inaccurate (AARC strong recommendation, high certainty).",
+     "support": "sourced",
+     "sources": [
+      "S-AARC-PVA"
+     ]
+    },
+    {
+     "text": "Do not use continuous cuff-pressure monitoring as a VAP-prevention measure (AARC strong recommendation against; SHEA does not recommend automated or frequent monitoring for VAP prevention). Neither document says intermittent checks should stop.",
+     "support": "sourced",
+     "sources": [
+      "S-AARC-PVA",
+      "S-SHEA-VAP-2022"
+     ]
+    },
+    {
+     "text": "Keep the head of the bed raised unless contraindicated, and give mouth care with toothbrushing and no chlorhexidine (SHEA essential practices).",
+     "support": "sourced",
+     "sources": [
+      "S-SHEA-VAP-2022"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Check and document tube depth marking and securement as often as policy requires and after every move, turn, transfer or procedure; assess skin around the airway device.",
+     "support": "sourced",
+     "sources": [
+      "S-AARC-PVA",
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "Prevent unplanned extubation: assess agitation, optimise analgesia and sedation per protocol, avoid circuit traction.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA"
+     ]
+    },
+    {
+     "text": "The pressure-injury guideline lists device-related risk factors specific to adult critical care: vasopressor use, surgery, ventilator use, prone-position ventilation, and a higher APACHE II/III or SOFA score; an endotracheal tube and its securement are themselves a medical device in continuous contact with the skin and mucosa, so these risk factors apply to the mouth, lips and face as much as to any other device site.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Who re-secures the tube, measures cuff pressure and changes the tube holder varies by country and unit; follow local policy.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "equipment": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Manometer, tube holder and securement products follow unit supplies.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "An appropriate cuff pressure range of 20-30 cmH2O appears in AARC narrative text (not a graded recommendation); there is no consensus on how often to measure. Use the unit target.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Re-securing technique, depth checks and cuff adjustment follow the unit's approved procedure; no source read describes the steps.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Tube depth and securement, cuff pressure at policy intervals, SpO2, end-tidal CO2 and waveform, expired tidal volume and airway pressures, secretions, skin and mouth, sedation and agitation.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA",
+      "S-ERC-ALS-2025"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate immediately for suspected displacement or obstruction, loss of capnography trace, severe desaturation, uncorrectable cuff failure, accidental extubation or new airway bleeding, and call for help.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA",
+      "S-ERC-ALS-2025"
+     ]
+    }
+   ]
+  },
+  "complications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Accidental extubation, endobronchial intubation, obstruction, aspiration around the cuff, tracheal injury from over-inflation, pressure injury of lips, mouth, nose or face, ventilator-associated pneumonia.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA",
+      "S-SHEA-VAP-2022"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record tube size and depth, securement, cuff pressure and time, skin and mouth findings, capnography confirmation, events and escalation per your unit's documentation standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "communication": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Use SBAR to escalate.",
+     "support": "partial",
+     "sources": [
+      "S-AHRQ-TS"
+     ]
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "assessment",
+   "text": "Confirm the tube depth marking matches the recorded depth and the tube is secure.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-PVA"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Confirm a capnography trace and ventilator waveform are present.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-PVA",
+    "S-ERC-ALS-2025"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Measure cuff pressure with a manometer at the unit interval; do not judge it by feeling the pilot balloon.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "S-AARC-PVA"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Check skin and mouth around the tube and securement.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-AARC-PVA",
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Keep the head of the bed raised unless contraindicated.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "S-SHEA-VAP-2022"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Call for help at once for suspected displacement, obstruction or loss of the capnography trace.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-ERC-ALS-2025"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record depth, securement, cuff pressure and time.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Cuff target range and interval: unit decision; AARC range is narrative, not graded.",
+  "Securement method, restraint policy, who re-secures: unsourced.",
+  "Extubation criteria and cuff-leak tests: out of scope of sources read."
+ ],
+ "permissions": [
+  "AARC CPGs: cite only; reproduction needs permission.",
+  "ERC text: commercial agreement required.",
+  "NPIAP guide: permission required."
+ ],
+ "references": [
+  {
+   "id": "S-AARC-PVA",
+   "title": "AARC Clinical Practice Guideline: Patient-Ventilator Assessment",
+   "publisher": "AARC",
+   "version": "2024; Respir Care 2024;69(8):1042-1054 (search)",
+   "url": "https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "RED (cite-only)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-SHEA-VAP-2022",
+   "title": "Strategies to prevent VAP, VAE and non-ventilator HAP in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022;43:687-713)",
+   "publisher": "SHEA / IDSA / APIC",
+   "version": "2022",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "GREEN",
+   "permission_required": "No"
+  },
+  {
+   "id": "S-ERC-ALS-2025",
+   "title": "European Resuscitation Council Guidelines 2025: Adult Advanced Life Support (Resuscitation 2025;215:110769)",
+   "publisher": "European Resuscitation Council",
+   "version": "2025",
+   "url": "https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "RED for commercial use",
+   "permission_required": "Yes (commercial)"
+  },
+  {
+   "id": "S-INTL-PI-2026",
+   "title": "Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide. The International Guideline, 4th edition (version date 2026-09-01)",
+   "publisher": "NPIAP / EPUAP / PPPIA",
+   "version": "2026 (4th edition)",
+   "url": "https://epuap.org/download/13743/",
+   "accessed": "2026-11-16",
+   "read": "full",
+   "licence_class": "RED",
+   "permission_required": "Yes"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "title": "TeamSTEPPS 3.0 (index) and SBAR tool page",
+   "publisher": "AHRQ",
+   "version": "TeamSTEPPS updated 2023 (page text); SBAR page 'last reviewed November 2019'",
+   "url": "https://www.ahrq.gov/teamstepps-program/index.html",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "YELLOW",
+   "permission_required": "Verify"
+  }
+ ]
+}

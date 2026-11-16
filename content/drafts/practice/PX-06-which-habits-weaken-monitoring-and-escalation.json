@@ -1,0 +1,97 @@
+{
+ "practice_id": "PX-06",
+ "number": 6,
+ "title": "Which habits weaken monitoring and escalation?",
+ "area": "monitoring-escalation",
+ "kind": "spot",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "Alarm-management sources read so far are partial or restricted; statements here are limited to patient-first assessment."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Recognise habits that hide deterioration."
+ ],
+ "sources": [
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "NEWS2 report: aid to clinical judgement, record the oxygen device, escalation by policy"
+  },
+  {
+   "id": "S-OPENRN-ADV-C74",
+   "read": "full",
+   "use": "Open RN Advanced Skills 7.4: assess the patient first when the ECG changes"
+  }
+ ],
+ "required_sources": [
+  "The unit's alarm and escalation policy",
+  "A critical-care source on alarm management, read in full"
+ ],
+ "setup": "A fictional shift on a fictional unit.",
+ "prompt": "Select the habits that weaken monitoring.",
+ "lines": [
+  {
+   "id": "l1",
+   "text": "Silencing an alarm and moving on without looking at the patient.",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-ADV-C74"
+   ],
+   "problem": true,
+   "why": "An alarm is a prompt to assess the patient."
+  },
+  {
+   "id": "l2",
+   "text": "Recording the oxygen device or flow along with the saturation.",
+   "support": "partial",
+   "sources": [
+    "S-RCP-NEWS2"
+   ],
+   "problem": false,
+   "why": "The device and flow are part of interpreting a saturation."
+  },
+  {
+   "id": "l3",
+   "text": "Widening alarm limits so they ring less often.",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-ADV-C74"
+   ],
+   "problem": true,
+   "why": "Limits are set by order or policy; widening them to stop noise hides change."
+  },
+  {
+   "id": "l4",
+   "text": "Telling the responsible clinician about a worsening trend even if no single score is high.",
+   "support": "partial",
+   "sources": [
+    "S-RCP-NEWS2"
+   ],
+   "problem": false,
+   "why": "Trends matter; scores aid judgement."
+  },
+  {
+   "id": "l5",
+   "text": "Assuming an odd reading is artefact without checking the patient.",
+   "support": "partial",
+   "sources": [
+    "S-OPENRN-ADV-C74"
+   ],
+   "problem": true,
+   "why": "Check the patient before deciding."
+  }
+ ]
+}

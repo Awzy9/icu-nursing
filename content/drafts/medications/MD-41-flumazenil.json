@@ -1,0 +1,251 @@
+{
+ "med_id": "MD-41",
+ "number": 41,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Flumazenil",
+ "drug_class": "Benzodiazepine antagonist",
+ "category": "reversal-emergency",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Benzodiazepine antagonist for complete or partial reversal of the sedative effects of benzodiazepines. The boxed warning covers seizures, most frequent after long-term benzodiazepine sedation or in serious cyclic antidepressant overdose. Nursing focus: seizure readiness, observation after reversal and underlying risk factors.",
+ "batch": 5,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-FLUMAZENIL",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-FLUMAZENIL",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates flumazenil for the complete or partial reversal of the sedative effects of benzodiazepines, including after general anaesthesia or procedural sedation, and in benzodiazepine overdose.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Be prepared to manage seizures, keep the patient under close observation and have airway equipment available.",
+     "support": "partial",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    },
+    {
+     "text": "The label calls for monitoring for resedation, respiratory depression or other residual benzodiazepine effects for an appropriate period after flumazenil administration, up to 120 minutes depending on the dose and duration of effect of the benzodiazepine given.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Boxed warning: use of flumazenil has been associated with seizures, most frequent in patients on benzodiazepines for long-term sedation or in overdose with signs of serious cyclic antidepressant overdose; practitioners should be prepared to manage seizures.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    },
+    {
+     "text": "Reversal of benzodiazepine effects may be associated with seizures in high-risk groups, including concurrent withdrawal from sedative-hypnotics, recent repeated parenteral benzodiazepines, and myoclonic jerking or seizure activity before administration in overdose.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label reports deaths in patients given flumazenil in a variety of clinical settings, mostly in patients with serious underlying disease or in mixed overdoses.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    },
+    {
+     "text": "Convulsions are the most commonly reported serious adverse event in the label. Reported settings include benzodiazepine dependence, reliance on benzodiazepines for seizure control, severe hepatic impairment and mixed-drug overdose.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    },
+    {
+     "text": "Clinical studies reported dizziness, injection-site pain, sweating, headache, abnormal vision, nausea, vomiting and agitation. These reactions should not be assigned a single pooled frequency across clinical settings.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    },
+    {
+     "text": "Postmarketing reports include panic attacks in patients with panic-disorder history and withdrawal symptoms after rapid injection in patients with long-term benzodiazepine exposure.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Call for help immediately for a seizure, agitation, or return of sedation or slow breathing.",
+     "support": "partial",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
+    },
+    {
+     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Check for long-term benzodiazepine use, antidepressant overdose or other seizure risk factors.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-FLUMAZENIL"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Watch for seizure activity and for return of sedation for up to 120 minutes after administration, depending on dose and the benzodiazepine's duration of effect.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-FLUMAZENIL"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Have airway and seizure-management equipment ready.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-FLUMAZENIL"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Call for help for seizures or breathing problems.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-FLUMAZENIL"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record the event and observations.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "The label read is a distributor listing.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-16",
+  "set_id": "3eefb01b-3d6a-a3eb-e063-6394a90a4829",
+  "label_version": "2",
+  "effective_time": "20251218",
+  "matches_register": true,
+  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Complete adverse-reaction field read for this targeted expansion. US manufacturer label only; non-US labels and local nursing protocols were not reviewed."
+ }
+}

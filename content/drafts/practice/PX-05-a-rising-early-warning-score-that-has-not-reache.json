@@ -1,0 +1,83 @@
+{
+ "practice_id": "PX-05",
+ "number": 5,
+ "title": "A rising early-warning score that has not reached the call-out level",
+ "area": "monitoring-escalation",
+ "kind": "choice",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+ "fictional": true,
+ "evidence_status": "partial",
+ "arabic_status": "not_written",
+ "gaps": [
+  "No published exercise may exist until the review phase: this is a specification only.",
+  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+  "The exercise has not been tested with learners, and its Arabic version has not been written.",
+  "NEWS2 is a UK tool and ICU units may use other tools and continuous monitoring.",
+  "No numeric thresholds are written; they come from the local policy and the official chart."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "objectives": [
+  "Treat an early-warning score as an aid to judgement and act on a worsening trend."
+ ],
+ "sources": [
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "NEWS2 report: aid to clinical judgement, record the oxygen device, escalation by policy"
+  }
+ ],
+ "required_sources": [
+  "The unit's early-warning and escalation policy",
+  "A source on trend-based escalation in critical care"
+ ],
+ "setup": "A fictional adult on a fictional ward; three sets of observations over six hours show a rising score, none at the call-out level.",
+ "stem": "What is the best action?",
+ "options": [
+  {
+   "id": "a",
+   "text": "Use clinical judgement: share the trend and your concern with the responsible clinician according to the unit's policy, and repeat observations as the policy directs.",
+   "support": "partial",
+   "sources": [
+    "S-RCP-NEWS2"
+   ],
+   "correct": true,
+   "feedback": "Early-warning scores aid, and do not replace, clinical assessment; a worsening trend deserves escalation."
+  },
+  {
+   "id": "b",
+   "text": "Wait until the score reaches the call-out level because the policy has not been triggered.",
+   "support": "partial",
+   "sources": [
+    "S-RCP-NEWS2"
+   ],
+   "correct": false,
+   "feedback": "Waiting for a trigger can lose valuable time when the trend is clearly worsening."
+  },
+  {
+   "id": "c",
+   "text": "Change the score by re-measuring until the number looks better.",
+   "support": "partial",
+   "sources": [
+    "S-RCP-NEWS2"
+   ],
+   "correct": false,
+   "feedback": "Observations are recorded as measured; manipulating them hides deterioration."
+  },
+  {
+   "id": "d",
+   "text": "Ignore the trend because each single score looks acceptable.",
+   "support": "partial",
+   "sources": [
+    "S-RCP-NEWS2"
+   ],
+   "correct": false,
+   "feedback": "A series of acceptable-looking scores can hide a steady decline."
+  }
+ ]
+}

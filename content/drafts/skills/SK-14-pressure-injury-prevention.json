@@ -1,0 +1,258 @@
+{
+ "skill_id": "SK-14",
+ "number": 14,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Pressure injury prevention",
+ "category": "skin-mobility-transport",
+ "topic_drafts": [
+  "D07-T04"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-INTL-PI-2026",
+   "read": "full",
+   "use": "International Guideline 4th ed. Quick Reference Guide (recommendations and good-practice statements), re-fetched and read in full text 2026-11-16; the full CPG chapters (evidence summaries, implementation considerations) referenced from the Quick Reference Guide were not read"
+  },
+  {
+   "id": "S-NPIAP-2019",
+   "read": "partial",
+   "use": "2019 edition: superseded by the 2026 4th edition"
+  }
+ ],
+ "objectives": [
+  "Reposition on an individualised schedule.",
+  "Check skin under and around devices.",
+  "Document assessments and reasons for deviation."
+ ],
+ "prerequisites": [
+  "Head-to-toe assessment"
+ ],
+ "sections": {
+  "indications": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Applies to all ICU patients; extra care with vasopressors, shock, diabetes and peripheral arterial disease.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "The guideline lists risk factors specific to device-related pressure injury in adult critical care settings: vasopressor use, surgery, ventilator use, prone-position ventilation, and a higher APACHE II/III or SOFA score; it also names medical-device presence itself, oedema, longer device-use duration, and a greater number of devices in use as general device-related risk factors at any age.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "full",
+   "items": [
+    {
+     "text": "No mattress replaces repositioning.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "Use equipment and low-friction fabrics that reduce friction and shear when moving the patient.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Offload heels; manage moisture; request nutrition screening and dietitian review.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Risk scale choice and who may apply specialised surfaces and dressings follow local policy.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Check under and around devices and securements; support or reposition devices; consider preventive dressings under devices; remove devices as soon as medically feasible (a prescriber decision).",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Turning technique and positions during haemodynamic instability follow the unit's approved procedure.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Reposition on a schedule set by mobility, skin and tissue tolerance, clinical condition, comfort and the support surface, not a fixed rule.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "The guideline notes that critically ill individuals, or others with systemic hypoperfusion or shock states, may need more frequent, incremental repositioning, and may benefit from supplementing full-body repositioning with assisted small shifts in body position.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "Assess for early signs of skin and tissue injury, which may mean the individual needs more frequent repositioning or preferential positioning off the damaged area.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Report new skin changes and device-related damage promptly.",
+     "support": "partial",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Document assessments, interventions and refusals or reasons for deviation.",
+     "support": "partial",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "assessment",
+   "text": "Inspect skin, including under and around devices and over bony prominences.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Reposition according to the individualised plan.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Offload heels and reduce friction and shear when moving the patient.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Check devices and securements and support or reposition them.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Report new skin damage.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record findings, actions and reasons for deviation.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  }
+ ],
+ "gaps": [
+  "Staging definitions and wound treatment: not in the Quick Reference Guide's prevention recommendations read; the full CPG chapters were not read.",
+  "Evidence summaries and implementation considerations (referenced from the Quick Reference Guide but published separately in the full CPG): not read.",
+  "Arabic terminology: reviewer question."
+ ],
+ "permissions": [
+  "NPIAP/EPUAP/PPPIA guideline: permission required to reproduce."
+ ],
+ "references": [
+  {
+   "id": "S-INTL-PI-2026",
+   "title": "Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide. The International Guideline, 4th edition (version date 2026-09-01)",
+   "publisher": "NPIAP / EPUAP / PPPIA",
+   "version": "2026 (4th edition)",
+   "url": "https://epuap.org/download/13743/",
+   "accessed": "2026-11-16",
+   "read": "full",
+   "licence_class": "RED",
+   "permission_required": "Yes"
+  },
+  {
+   "id": "S-NPIAP-2019",
+   "title": "Prevention and Treatment of Pressure Ulcers/Injuries: Clinical Practice Guideline - The International Guideline (2019 edition; 4th edition Quick Reference Guide dated 2026-09-01 also read)",
+   "publisher": "NPIAP / EPUAP / PPPIA",
+   "version": "Released 2019-11-15; 115 recommendations, 61 good-practice statements (search); a 4th edition was said to be in progress for early 2025 - confirm",
+   "url": "https://epuap.org/pu-guidelines/",
+   "accessed": "2026-11-14",
+   "read": "partial",
+   "licence_class": "RED",
+   "permission_required": "Yes"
+  }
+ ]
+}

@@ -1,0 +1,245 @@
+{
+ "med_id": "MD-49",
+ "number": 49,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Pantoprazole (intravenous)",
+ "drug_class": "Proton pump inhibitor",
+ "category": "respiratory-gi-support",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Intravenous proton pump inhibitor for gastro-oesophageal reflux disease with a history of erosive oesophagitis and for pathological hypersecretory conditions. Nursing focus: injection-site thrombophlebitis, tubulointerstitial nephritis, Clostridioides difficile-associated diarrhoea and zinc deficiency. The label read does not include stress-ulcer prophylaxis as an indication.",
+ "batch": 5,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-PANTOPRAZOLE",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-PANTOPRAZOLE",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes pantoprazole sodium for injection as a proton pump inhibitor indicated for short-term treatment of gastro-oesophageal reflux disease with a history of erosive oesophagitis and for pathological hypersecretory conditions; stress-ulcer prophylaxis is not a labelled indication in this label.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Check the infusion site for pain, redness or swelling and report thrombophlebitis.",
+     "support": "partial",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    },
+    {
+     "text": "The label calls for assessing the infusion site for thrombophlebitis and removing the catheter if clinically indicated, and for discontinuing and evaluating the patient for acute tubulointerstitial nephritis, severe cutaneous adverse reactions, or new or worsening cutaneous or systemic lupus erythematosus if signs appear; it also notes rare hypomagnesaemia with prolonged use, transaminase elevations, and that symptomatic response to therapy does not rule out gastric malignancy.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Thrombophlebitis is associated with administration; the label advises assessing the patient and removing the catheter if clinically indicated.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    },
+    {
+     "text": "It may exacerbate zinc deficiency, and caution is advised when other EDTA-containing products are also given intravenously.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    },
+    {
+     "text": "Acute tubulointerstitial nephritis can occur; the label advises discontinuing treatment and evaluating the patient.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    },
+    {
+     "text": "Symptomatic response does not exclude gastric malignancy, and Clostridioides difficile-associated diarrhoea is also listed among the warnings.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label lists injection-site reactions and exacerbation of zinc deficiency among the serious adverse reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Report new fever, rash or falling urine output, persistent diarrhoea, or a painful, red or swollen infusion site.",
+     "support": "partial",
+     "sources": [
+      "L-PANTOPRAZOLE"
+     ]
+    },
+    {
+     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Inspect the infusion site and vein.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-PANTOPRAZOLE"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Monitor stool frequency and report persistent diarrhoea.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "L-PANTOPRAZOLE"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review renal function as ordered.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "L-PANTOPRAZOLE"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report site thrombophlebitis, new renal signs or persistent diarrhoea.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-PANTOPRAZOLE"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record site checks.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Stress-ulcer prophylaxis in intensive care is not a labelled indication in the label read; critical-care guideline text was not read.",
+  "Interactions and long-term risks were not summarised.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-16",
+  "set_id": "eb3f58d4-0c69-4377-be45-c36099c98d33",
+  "label_version": "5",
+  "effective_time": "20261015",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
+}

@@ -1,0 +1,253 @@
+{
+ "med_id": "MD-10",
+ "number": 10,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Morphine",
+ "drug_class": "Opioid analgesic",
+ "category": "sedatives-analgesics",
+ "high_alert": true,
+ "high_alert_note": "Named as a high-risk infusion example in the FDA infusion pump page; the local high-alert list governs.",
+ "summary": "Opioid agonist for management of pain severe enough to require an opioid when alternatives are inadequate. The boxed warning covers addiction, life-threatening respiratory depression, interactions with benzodiazepines and other CNS depressants, and neonatal opioid withdrawal syndrome.",
+ "batch": 1,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-MORPHINE",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-MORPHINE",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates morphine sulfate injection for management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Have naloxone injection and resuscitative equipment immediately available, as the label advises where cardiovascular instability is a risk.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitor closely for life-threatening respiratory depression in patients with chronic pulmonary disease or in elderly, cachectic or debilitated patients (label).",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    },
+    {
+     "text": "The label directs close monitoring, particularly at the start and during adjustment of the opioid.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Boxed warning: serious, life-threatening or fatal respiratory depression may occur, especially during initiation or after a dose increase; proper dosing and adjustment are essential.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    },
+    {
+     "text": "Using opioids with benzodiazepines or other CNS depressants, including alcohol, may cause profound sedation, respiratory depression, coma and death.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    },
+    {
+     "text": "Opioids expose users to risks of addiction, abuse and misuse, which can lead to overdose and death.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    },
+    {
+     "text": "The label also warns of neonatal opioid withdrawal syndrome, cardiovascular instability, opioid-induced hyperalgesia and allodynia, adrenal insufficiency and severe hypotension.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The serious adverse reactions listed include addiction, abuse and misuse, life-threatening respiratory depression and interactions with benzodiazepines.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    },
+    {
+     "text": "The most frequently observed adverse reactions are sedation, lightheadedness, dizziness, nausea, vomiting, constipation and diaphoresis; the label also lists bradycardia and orthostatic hypotension among cardiovascular reactions, and oliguria and urinary retention among genitourinary reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate immediately for slow or shallow breathing, unrousable sedation or severe hypotension.",
+     "support": "partial",
+     "sources": [
+      "L-MORPHINE"
+     ]
+    },
+    {
+     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record pain and sedation scores, respiratory findings, controlled-drug checks and escalation per unit and legal standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "observe",
+   "text": "Monitor respiratory rate, depth, oxygen saturation and sedation level.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-MORPHINE"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Check for concurrent benzodiazepines or other sedatives and for chronic lung disease or frailty.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-MORPHINE"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Confirm naloxone and resuscitation equipment are immediately available.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-MORPHINE"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Call for help immediately for respiratory depression or severe hypotension.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-MORPHINE"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record scores, controlled-drug checks and events.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Dosing, rate, renal and hepatic adjustment and preparation: deliberately not included.",
+  "Naloxone use is a prescriber or protocol decision and was not summarised.",
+  "PADIS and other guideline text was not read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-16",
+  "set_id": "be420e8b-bcb0-49b5-bb4d-1df8b9959809",
+  "label_version": "27",
+  "effective_time": "20261014",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
+}

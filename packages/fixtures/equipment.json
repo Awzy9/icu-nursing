@@ -1,0 +1,882 @@
+[
+ {
+  "code": "SYN-EQ-001",
+  "category": "monitors-alarms",
+  "synthetic": true,
+  "title": {
+   "en": "Harbour office display panel and bell",
+   "ar": "لوحة العرض والجرس في مكتب الميناء"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional display panel with a bell. It contains no ICU content and exists to test the equipment pages.",
+   "ar": "نموذج تجريبي غير سريري عن لوحة عرض خيالية مع جرس. لا يحتوي على محتوى للعناية المركزة وهو موجود لاختبار صفحات المعدات."
+  },
+  "diagram": {
+   "kind": "loop",
+   "parts": [
+    {
+     "id": "sensor",
+     "label": {
+      "en": "Sensor",
+      "ar": "المستشعر"
+     },
+     "detail": {
+      "en": "Reads the fictional queue length.",
+      "ar": "يقرأ طول الطابور الخيالي."
+     }
+    },
+    {
+     "id": "panel",
+     "label": {
+      "en": "Display panel",
+      "ar": "لوحة العرض"
+     },
+     "detail": {
+      "en": "Shows the queue length as a number and a trend.",
+      "ar": "تعرض طول الطابور كرقم واتجاه."
+     }
+    },
+    {
+     "id": "limit",
+     "label": {
+      "en": "Limit setting",
+      "ar": "إعداد الحد"
+     },
+     "detail": {
+      "en": "The fictional office manager sets the queue limit.",
+      "ar": "يضبط مدير المكتب الخيالي حد الطابور."
+     }
+    },
+    {
+     "id": "bell",
+     "label": {
+      "en": "Bell",
+      "ar": "الجرس"
+     },
+     "detail": {
+      "en": "Rings when the limit is passed.",
+      "ar": "يرن عند تجاوز الحد."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A closed loop: sensor, display panel, limit setting and bell, with arrows between them.",
+    "ar": "حلقة مغلقة: المستشعر ولوحة العرض وإعداد الحد والجرس، مع أسهم بينها."
+   }
+  },
+  "parameters": [
+   {
+    "key": "queue",
+    "name": {
+     "en": "Queue length",
+     "ar": "طول الطابور"
+    },
+    "meaning": {
+     "en": "How many people are waiting right now.",
+     "ar": "عدد الأشخاص المنتظرين الآن."
+    }
+   },
+   {
+    "key": "trend",
+    "name": {
+     "en": "Trend",
+     "ar": "الاتجاه"
+    },
+    "meaning": {
+     "en": "Whether the queue is growing or shrinking.",
+     "ar": "هل الطابور ينمو أم يتقلص."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Look at the queue first, then at the panel.",
+    "Do not silence the bell without finding the cause."
+   ],
+   "ar": [
+    "انظر إلى الطابور أولاً ثم إلى اللوحة.",
+    "لا تُسكت الجرس قبل معرفة السبب."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Tell the office manager if the bell cannot be explained.",
+    "Write down what you saw and did."
+   ],
+   "ar": [
+    "أبلغ مدير المكتب إذا تعذر تفسير الجرس.",
+    "دوّن ما رأيته وما فعلته."
+   ]
+  }
+ },
+ {
+  "code": "SYN-EQ-002",
+  "category": "ventilator-waveforms",
+  "synthetic": true,
+  "title": {
+   "en": "Harbour fan speed trace",
+   "ar": "منحنى سرعة مروحة الميناء"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional fan and the trace of its speed over time.",
+   "ar": "نموذج تجريبي غير سريري عن مروحة خيالية ومنحنى سرعتها بمرور الوقت."
+  },
+  "diagram": {
+   "kind": "signal",
+   "parts": [
+    {
+     "id": "rise",
+     "label": {
+      "en": "Rising part",
+      "ar": "الجزء الصاعد"
+     },
+     "detail": {
+      "en": "The fan speeds up.",
+      "ar": "تزداد سرعة المروحة."
+     }
+    },
+    {
+     "id": "peak",
+     "label": {
+      "en": "Peak",
+      "ar": "القمة"
+     },
+     "detail": {
+      "en": "The highest speed in one cycle.",
+      "ar": "أعلى سرعة في الدورة الواحدة."
+     }
+    },
+    {
+     "id": "fall",
+     "label": {
+      "en": "Falling part",
+      "ar": "الجزء الهابط"
+     },
+     "detail": {
+      "en": "The fan slows down.",
+      "ar": "تتباطأ المروحة."
+     }
+    },
+    {
+     "id": "base",
+     "label": {
+      "en": "Baseline",
+      "ar": "خط الأساس"
+     },
+     "detail": {
+      "en": "The speed between cycles.",
+      "ar": "السرعة بين الدورات."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A repeating wave drawn over time, with the rising part, the peak, the falling part and the baseline marked.",
+    "ar": "موجة متكررة مرسومة عبر الزمن مع تحديد الجزء الصاعد والقمة والجزء الهابط وخط الأساس."
+   }
+  },
+  "parameters": [
+   {
+    "key": "peak",
+    "name": {
+     "en": "Peak speed",
+     "ar": "السرعة القصوى"
+    },
+    "meaning": {
+     "en": "The top of each cycle.",
+     "ar": "قمة كل دورة."
+    }
+   },
+   {
+    "key": "rate",
+    "name": {
+     "en": "Cycles per minute",
+     "ar": "الدورات في الدقيقة"
+    },
+    "meaning": {
+     "en": "How many cycles the fan makes each minute.",
+     "ar": "عدد الدورات التي تعملها المروحة كل دقيقة."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Compare the trace with the real fan before changing anything.",
+    "Settings are changed only by people authorised to change them."
+   ],
+   "ar": [
+    "قارن المنحنى بالمروحة الفعلية قبل تغيير أي شيء.",
+    "لا يغيّر الإعدادات إلا المخوَّلون بذلك."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Call the fictional engineer if the trace and the fan disagree.",
+    "Record the time you noticed the change."
+   ],
+   "ar": [
+    "اتصل بالمهندس الخيالي إذا اختلف المنحنى عن المروحة.",
+    "سجّل وقت ملاحظة التغيّر."
+   ]
+  }
+ },
+ {
+  "code": "SYN-EQ-003",
+  "category": "arterial-pressure",
+  "synthetic": true,
+  "title": {
+   "en": "Water tower pressure gauge line",
+   "ar": "خط مقياس ضغط برج المياه"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional water line with a gauge.",
+   "ar": "نموذج تجريبي غير سريري عن خط مياه خيالي مع مقياس."
+  },
+  "diagram": {
+   "kind": "flow",
+   "parts": [
+    {
+     "id": "tower",
+     "label": {
+      "en": "Tower",
+      "ar": "البرج"
+     },
+     "detail": {
+      "en": "Holds the fictional water.",
+      "ar": "يحمل الماء الخيالي."
+     }
+    },
+    {
+     "id": "line",
+     "label": {
+      "en": "Line",
+      "ar": "الخط"
+     },
+     "detail": {
+      "en": "Carries the water to the gauge.",
+      "ar": "ينقل الماء إلى المقياس."
+     }
+    },
+    {
+     "id": "zero",
+     "label": {
+      "en": "Zero point",
+      "ar": "نقطة الصفر"
+     },
+     "detail": {
+      "en": "The gauge is set against a fixed height.",
+      "ar": "يُضبط المقياس مقابل ارتفاع ثابت."
+     }
+    },
+    {
+     "id": "gauge",
+     "label": {
+      "en": "Gauge",
+      "ar": "المقياس"
+     },
+     "detail": {
+      "en": "Shows the line pressure.",
+      "ar": "يعرض ضغط الخط."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A path from the tower through the line past a zero point to the gauge.",
+    "ar": "مسار من البرج عبر الخط مروراً بنقطة الصفر إلى المقياس."
+   }
+  },
+  "parameters": [
+   {
+    "key": "pressure",
+    "name": {
+     "en": "Line pressure",
+     "ar": "ضغط الخط"
+    },
+    "meaning": {
+     "en": "How hard the water pushes in the line.",
+     "ar": "مدى قوة دفع الماء في الخط."
+    }
+   },
+   {
+    "key": "wave",
+    "name": {
+     "en": "Gauge trace",
+     "ar": "منحنى المقياس"
+    },
+    "meaning": {
+     "en": "The shape of the pressure over time.",
+     "ar": "شكل الضغط عبر الزمن."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Check the height of the zero point when anything moves.",
+    "Check the line for kinks and air before trusting the number."
+   ],
+   "ar": [
+    "تحقق من ارتفاع نقطة الصفر عند أي حركة.",
+    "افحص الخط بحثاً عن التواءات وهواء قبل الوثوق بالرقم."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Compare with a second gauge if the number looks wrong.",
+    "Report a line fault to the fictional engineer."
+   ],
+   "ar": [
+    "قارن بمقياس ثانٍ إذا بدا الرقم خاطئاً.",
+    "أبلغ المهندس الخيالي عن عطل الخط."
+   ]
+  }
+ },
+ {
+  "code": "SYN-EQ-004",
+  "category": "infusion-pumps",
+  "synthetic": true,
+  "title": {
+   "en": "Garden drip pump",
+   "ar": "مضخة التنقيط في الحديقة"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional garden watering pump.",
+   "ar": "نموذج تجريبي غير سريري عن مضخة ري خيالية."
+  },
+  "diagram": {
+   "kind": "flow",
+   "parts": [
+    {
+     "id": "bag",
+     "label": {
+      "en": "Water bag",
+      "ar": "كيس الماء"
+     },
+     "detail": {
+      "en": "Holds the fictional water.",
+      "ar": "يحمل الماء الخيالي."
+     }
+    },
+    {
+     "id": "pump",
+     "label": {
+      "en": "Pump",
+      "ar": "المضخة"
+     },
+     "detail": {
+      "en": "Pushes the water at the set speed.",
+      "ar": "تدفع الماء بالسرعة المضبوطة."
+     }
+    },
+    {
+     "id": "sensor",
+     "label": {
+      "en": "Blockage sensor",
+      "ar": "مستشعر الانسداد"
+     },
+     "detail": {
+      "en": "Notices when the line is blocked.",
+      "ar": "يلاحظ انسداد الخط."
+     }
+    },
+    {
+     "id": "outlet",
+     "label": {
+      "en": "Outlet",
+      "ar": "المخرج"
+     },
+     "detail": {
+      "en": "Where the water reaches the plants.",
+      "ar": "حيث يصل الماء إلى النباتات."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A path from the water bag through the pump and a blockage sensor to the outlet.",
+    "ar": "مسار من كيس الماء عبر المضخة ومستشعر الانسداد إلى المخرج."
+   }
+  },
+  "parameters": [
+   {
+    "key": "speed",
+    "name": {
+     "en": "Set speed",
+     "ar": "السرعة المضبوطة"
+    },
+    "meaning": {
+     "en": "How fast the pump is told to run.",
+     "ar": "مدى سرعة تشغيل المضخة المطلوبة."
+    }
+   },
+   {
+    "key": "volume",
+    "name": {
+     "en": "Volume delivered",
+     "ar": "الحجم المُسلَّم"
+    },
+    "meaning": {
+     "en": "How much water has been delivered so far.",
+     "ar": "كمية الماء المُسلَّمة حتى الآن."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Check the set speed against the written plan before starting.",
+    "Never ignore a blockage alarm."
+   ],
+   "ar": [
+    "تحقق من السرعة المضبوطة مقابل الخطة المكتوبة قبل البدء.",
+    "لا تتجاهل إنذار الانسداد أبداً."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Tell the gardener when the pump stops unexpectedly.",
+    "Write down the volume delivered at each check."
+   ],
+   "ar": [
+    "أبلغ البستاني عند توقف المضخة بشكل غير متوقع.",
+    "دوّن الحجم المُسلَّم عند كل فحص."
+   ]
+  }
+ },
+ {
+  "code": "SYN-EQ-005",
+  "category": "defibrillators",
+  "synthetic": true,
+  "title": {
+   "en": "Lifebuoy launcher",
+   "ar": "قاذف طوق النجاة"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional lifebuoy launcher at the harbour.",
+   "ar": "نموذج تجريبي غير سريري عن قاذف طوق نجاة خيالي في الميناء."
+  },
+  "diagram": {
+   "kind": "loop",
+   "parts": [
+    {
+     "id": "charge",
+     "label": {
+      "en": "Charge button",
+      "ar": "زر الشحن"
+     },
+     "detail": {
+      "en": "Prepares the launcher.",
+      "ar": "يجهّز القاذف."
+     }
+    },
+    {
+     "id": "safety",
+     "label": {
+      "en": "Safety check",
+      "ar": "فحص الأمان"
+     },
+     "detail": {
+      "en": "Everyone stands clear before launch.",
+      "ar": "يبتعد الجميع قبل الإطلاق."
+     }
+    },
+    {
+     "id": "launch",
+     "label": {
+      "en": "Launch button",
+      "ar": "زر الإطلاق"
+     },
+     "detail": {
+      "en": "Fires the buoy when authorised.",
+      "ar": "يطلق الطوق عند التفويض."
+     }
+    },
+    {
+     "id": "log",
+     "label": {
+      "en": "Log book",
+      "ar": "سجل الأحداث"
+     },
+     "detail": {
+      "en": "Records each use.",
+      "ar": "يسجل كل استخدام."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A loop: charge button, safety check, launch button and log book.",
+    "ar": "حلقة: زر الشحن وفحص الأمان وزر الإطلاق وسجل الأحداث."
+   }
+  },
+  "parameters": [
+   {
+    "key": "ready",
+    "name": {
+     "en": "Ready light",
+     "ar": "ضوء الجاهزية"
+    },
+    "meaning": {
+     "en": "Shows that the launcher is prepared.",
+     "ar": "يبيّن أن القاذف جاهز."
+    }
+   },
+   {
+    "key": "count",
+    "name": {
+     "en": "Use count",
+     "ar": "عدد الاستخدامات"
+    },
+    "meaning": {
+     "en": "How many times it has been used.",
+     "ar": "عدد مرات الاستخدام."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Only authorised people operate the launcher.",
+    "Always complete the safety check before launch."
+   ],
+   "ar": [
+    "يشغّل القاذف المخوَّلون فقط.",
+    "أكمل فحص الأمان دائماً قبل الإطلاق."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Call the harbour master immediately in an emergency.",
+    "Fill in the log book afterwards."
+   ],
+   "ar": [
+    "اتصل بقبطان الميناء فوراً في الطوارئ.",
+    "املأ سجل الأحداث بعد ذلك."
+   ]
+  }
+ },
+ {
+  "code": "SYN-EQ-006",
+  "category": "crrt-systems",
+  "synthetic": true,
+  "title": {
+   "en": "Fish tank filter loop",
+   "ar": "حلقة مرشح حوض الأسماك"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional aquarium filter loop.",
+   "ar": "نموذج تجريبي غير سريري عن حلقة مرشح حوض أسماك خيالي."
+  },
+  "diagram": {
+   "kind": "loop",
+   "parts": [
+    {
+     "id": "intake",
+     "label": {
+      "en": "Intake",
+      "ar": "المدخل"
+     },
+     "detail": {
+      "en": "Takes water from the tank.",
+      "ar": "يسحب الماء من الحوض."
+     }
+    },
+    {
+     "id": "filter",
+     "label": {
+      "en": "Filter",
+      "ar": "المرشح"
+     },
+     "detail": {
+      "en": "Cleans the water.",
+      "ar": "ينظّف الماء."
+     }
+    },
+    {
+     "id": "pumpf",
+     "label": {
+      "en": "Circulation pump",
+      "ar": "مضخة الدوران"
+     },
+     "detail": {
+      "en": "Keeps the water moving.",
+      "ar": "تبقي الماء متحركاً."
+     }
+    },
+    {
+     "id": "returnf",
+     "label": {
+      "en": "Return",
+      "ar": "العودة"
+     },
+     "detail": {
+      "en": "Brings clean water back to the tank.",
+      "ar": "يعيد الماء النظيف إلى الحوض."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A closed loop: intake, filter, circulation pump and return.",
+    "ar": "حلقة مغلقة: المدخل والمرشح ومضخة الدوران والعودة."
+   }
+  },
+  "parameters": [
+   {
+    "key": "flow",
+    "name": {
+     "en": "Flow",
+     "ar": "التدفق"
+    },
+    "meaning": {
+     "en": "How quickly water moves around the loop.",
+     "ar": "سرعة حركة الماء في الحلقة."
+    }
+   },
+   {
+    "key": "pressure",
+    "name": {
+     "en": "Loop pressure",
+     "ar": "ضغط الحلقة"
+    },
+    "meaning": {
+     "en": "How hard the pump pushes against the filter.",
+     "ar": "مدى قوة دفع المضخة ضد المرشح."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Check the whole loop for kinks and clamps before restarting.",
+    "Never switch off an alarm to make it quiet."
+   ],
+   "ar": [
+    "افحص الحلقة كلها بحثاً عن التواءات ومشابك قبل إعادة التشغيل.",
+    "لا تُطفئ الإنذار لإسكاته."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Call the supplier's help line if alarms keep returning.",
+    "Write down what stopped and when."
+   ],
+   "ar": [
+    "اتصل بخط مساعدة المورّد إذا تكررت الإنذارات.",
+    "دوّن ما توقف ومتى."
+   ]
+  }
+ },
+ {
+  "code": "SYN-EQ-007",
+  "category": "enteral-feeding-pumps",
+  "synthetic": true,
+  "title": {
+   "en": "Bakery dough dispenser",
+   "ar": "موزّع العجين في المخبز"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional bakery dispenser.",
+   "ar": "نموذج تجريبي غير سريري عن موزّع مخبز خيالي."
+  },
+  "diagram": {
+   "kind": "flow",
+   "parts": [
+    {
+     "id": "hopper",
+     "label": {
+      "en": "Hopper",
+      "ar": "القادوس"
+     },
+     "detail": {
+      "en": "Holds the dough.",
+      "ar": "يحمل العجين."
+     }
+    },
+    {
+     "id": "feed",
+     "label": {
+      "en": "Feed wheel",
+      "ar": "عجلة التغذية"
+     },
+     "detail": {
+      "en": "Moves dough at the set speed.",
+      "ar": "تحرك العجين بالسرعة المضبوطة."
+     }
+    },
+    {
+     "id": "check",
+     "label": {
+      "en": "Position check",
+      "ar": "فحص الموضع"
+     },
+     "detail": {
+      "en": "Confirms the dough is going to the right tray.",
+      "ar": "يؤكد أن العجين يذهب إلى الصينية الصحيحة."
+     }
+    },
+    {
+     "id": "tray",
+     "label": {
+      "en": "Tray",
+      "ar": "الصينية"
+     },
+     "detail": {
+      "en": "Receives the dough.",
+      "ar": "تستقبل العجين."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A path from the hopper through the feed wheel and a position check to the tray.",
+    "ar": "مسار من القادوس عبر عجلة التغذية وفحص الموضع إلى الصينية."
+   }
+  },
+  "parameters": [
+   {
+    "key": "rate",
+    "name": {
+     "en": "Set rate",
+     "ar": "المعدل المضبوط"
+    },
+    "meaning": {
+     "en": "How fast the wheel turns.",
+     "ar": "مدى سرعة دوران العجلة."
+    }
+   },
+   {
+    "key": "total",
+    "name": {
+     "en": "Amount given",
+     "ar": "الكمية المقدَّمة"
+    },
+    "meaning": {
+     "en": "The total dispensed so far.",
+     "ar": "المجموع المُوزَّع حتى الآن."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Confirm the tray is correct before every start.",
+    "Stop the wheel if the tray looks wrong."
+   ],
+   "ar": [
+    "تأكد من صحة الصينية قبل كل بدء.",
+    "أوقف العجلة إذا بدت الصينية خاطئة."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Tell the baker if the check cannot be completed.",
+    "Record the amount given at each round."
+   ],
+   "ar": [
+    "أبلغ الخباز إذا تعذر إكمال الفحص.",
+    "سجّل الكمية المقدَّمة في كل جولة."
+   ]
+  }
+ },
+ {
+  "code": "SYN-EQ-008",
+  "category": "pressure-relieving-equipment",
+  "synthetic": true,
+  "title": {
+   "en": "Inflatable bench cushion",
+   "ar": "وسادة المقعد القابلة للنفخ"
+  },
+  "summary": {
+   "en": "Synthetic nonclinical sample about a fictional inflatable cushion for a ferry bench.",
+   "ar": "نموذج تجريبي غير سريري عن وسادة قابلة للنفخ لمقعد العبّارة."
+  },
+  "diagram": {
+   "kind": "loop",
+   "parts": [
+    {
+     "id": "cells",
+     "label": {
+      "en": "Air cells",
+      "ar": "الخلايا الهوائية"
+     },
+     "detail": {
+      "en": "Take turns filling and emptying.",
+      "ar": "تتناوب في الامتلاء والإفراغ."
+     }
+    },
+    {
+     "id": "pumpc",
+     "label": {
+      "en": "Air pump",
+      "ar": "مضخة الهواء"
+     },
+     "detail": {
+      "en": "Fills the cells.",
+      "ar": "تملأ الخلايا."
+     }
+    },
+    {
+     "id": "mode",
+     "label": {
+      "en": "Mode switch",
+      "ar": "مفتاح الوضع"
+     },
+     "detail": {
+      "en": "Selects firm or soft mode.",
+      "ar": "يختار الوضع الصلب أو الناعم."
+     }
+    },
+    {
+     "id": "alarmc",
+     "label": {
+      "en": "Low air alarm",
+      "ar": "إنذار انخفاض الهواء"
+     },
+     "detail": {
+      "en": "Sounds if the cushion loses air.",
+      "ar": "يرن إذا فقدت الوسادة الهواء."
+     }
+    }
+   ],
+   "alt": {
+    "en": "A loop: air cells, air pump, mode switch and low air alarm.",
+    "ar": "حلقة: الخلايا الهوائية ومضخة الهواء ومفتاح الوضع وإنذار انخفاض الهواء."
+   }
+  },
+  "parameters": [
+   {
+    "key": "mode",
+    "name": {
+     "en": "Mode",
+     "ar": "الوضع"
+    },
+    "meaning": {
+     "en": "Which firmness setting is chosen.",
+     "ar": "أي إعداد صلابة تم اختياره."
+    }
+   },
+   {
+    "key": "air",
+    "name": {
+     "en": "Air level",
+     "ar": "مستوى الهواء"
+    },
+    "meaning": {
+     "en": "Whether the cushion holds enough air.",
+     "ar": "هل تحتفظ الوسادة بهواء كافٍ."
+    }
+   }
+  ],
+  "safety": {
+   "en": [
+    "Look at the cushion and the person sitting on it, not only at the display.",
+    "Check the hose is not trapped."
+   ],
+   "ar": [
+    "انظر إلى الوسادة والجالس عليها وليس إلى الشاشة فقط.",
+    "تأكد من أن الخرطوم غير محشور."
+   ]
+  },
+  "escalation": {
+   "en": [
+    "Tell the facilities team if the low air alarm repeats.",
+    "Write down the mode used."
+   ],
+   "ar": [
+    "أبلغ فريق المرافق إذا تكرر إنذار انخفاض الهواء.",
+    "دوّن الوضع المستخدم."
+   ]
+  }
+ }
+]

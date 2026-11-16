@@ -1,0 +1,652 @@
+[
+ {
+  "code": "SYN-001",
+  "domain": "respiratory-airway",
+  "difficulty": 1,
+  "stem": {
+   "en": "Which planet in our solar system is commonly called the Red Planet?"
+  },
+  "options": [
+   {
+    "en": "Mars"
+   },
+   {
+    "en": "Venus"
+   },
+   {
+    "en": "Jupiter"
+   },
+   {
+    "en": "Mercury"
+   }
+  ],
+  "correct": 0,
+  "explanations": [
+   {
+    "en": "Iron oxide on its surface gives Mars its reddish colour."
+   },
+   {
+    "en": "Venus is covered in thick pale clouds and is not red."
+   },
+   {
+    "en": "Jupiter is a banded gas giant with white, orange and brown cloud layers."
+   },
+   {
+    "en": "Mercury is a small grey, cratered world with no reddish surface."
+   }
+  ],
+  "rationale": {
+   "en": "Sample item about astronomy. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-002",
+  "domain": "respiratory-airway",
+  "difficulty": 1,
+  "stem": {
+   "en": "A sample library lends a book for 14 days. A member borrows it on a Monday. On which weekday is it due back?"
+  },
+  "options": [
+   {
+    "en": "Sunday, two weeks later"
+   },
+   {
+    "en": "Monday, two weeks later"
+   },
+   {
+    "en": "Friday, the same week"
+   },
+   {
+    "en": "Tuesday, two weeks later"
+   }
+  ],
+  "correct": 1,
+  "explanations": [
+   {
+    "en": "That would be thirteen days, one day short of the 14-day period."
+   },
+   {
+    "en": "Fourteen days is exactly two weeks, so the due weekday matches the borrowing weekday."
+   },
+   {
+    "en": "A Friday in the same week would be only four days later."
+   },
+   {
+    "en": "That would be fifteen days, one day over the 14-day period."
+   }
+  ],
+  "rationale": {
+   "en": "Sample item about counting days. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-003",
+  "domain": "respiratory-airway",
+  "difficulty": 2,
+  "stem": {
+   "en": "What is the main reason a recipe tells you to let bread dough rest before baking?"
+  },
+  "options": [
+   {
+    "en": "The flour must cool to room temperature"
+   },
+   {
+    "en": "The salt needs time to turn into sugar"
+   },
+   {
+    "en": "The yeast produces gas that makes the dough rise"
+   },
+   {
+    "en": "The water must evaporate completely"
+   }
+  ],
+  "correct": 2,
+  "explanations": [
+   {
+    "en": "Flour is not heated, so there is nothing to cool down."
+   },
+   {
+    "en": "Salt does not change into sugar at any stage of baking."
+   },
+   {
+    "en": "Resting gives yeast time to produce carbon dioxide, which expands the dough."
+   },
+   {
+    "en": "If the water fully evaporated the dough would become dry and crumbly."
+   }
+  ],
+  "rationale": {
+   "en": "Sample item about baking. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-004",
+  "domain": "respiratory-airway",
+  "difficulty": 3,
+  "stem": {
+   "en": "In the fictional Harbour Island ferry timetable, the ferry leaves every 40 minutes starting at 06:00. When does the fifth ferry leave?"
+  },
+  "options": [
+   {
+    "en": "08:00"
+   },
+   {
+    "en": "08:20"
+   },
+   {
+    "en": "09:00"
+   },
+   {
+    "en": "08:40"
+   }
+  ],
+  "correct": 3,
+  "explanations": [
+   {
+    "en": "08:00 is only three intervals after 06:00 and would be the fourth ferry."
+   },
+   {
+    "en": "08:20 would be the fourth departure counted from a wrong start."
+   },
+   {
+    "en": "09:00 is not on the 40-minute pattern that starts at 06:00."
+   },
+   {
+    "en": "The fifth ferry is four intervals after 06:00, so 4 x 40 = 160 minutes later, at 08:40."
+   }
+  ],
+  "rationale": {
+   "en": "Sample arithmetic item with a fictional timetable. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-005",
+  "domain": "cardiovascular-hemodynamic",
+  "difficulty": 1,
+  "stem": {
+   "en": "Which instrument family does a violin belong to?",
+   "ar": "إلى أي عائلة من الآلات الموسيقية تنتمي الكمان؟"
+  },
+  "options": [
+   {
+    "en": "Strings",
+    "ar": "الآلات الوترية"
+   },
+   {
+    "en": "Brass",
+    "ar": "النحاسيات"
+   },
+   {
+    "en": "Woodwind",
+    "ar": "الآلات الخشبية"
+   },
+   {
+    "en": "Percussion",
+    "ar": "آلات الإيقاع"
+   }
+  ],
+  "correct": 0,
+  "explanations": [
+   {
+    "en": "A violin makes sound when its strings are bowed or plucked."
+   },
+   {
+    "en": "Brass instruments such as the trumpet use buzzing lips and metal tubing."
+   },
+   {
+    "en": "Woodwind instruments such as the flute use a column of vibrating air."
+   },
+   {
+    "en": "Percussion instruments are struck or shaken, like drums."
+   }
+  ],
+  "rationale": {
+   "en": "Sample item about music. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-006",
+  "domain": "cardiovascular-hemodynamic",
+  "difficulty": 2,
+  "stem": {
+   "en": "A rectangular sample garden is 6 metres long and 4 metres wide. What is its area?"
+  },
+  "options": [
+   {
+    "en": "10 square metres"
+   },
+   {
+    "en": "24 square metres"
+   },
+   {
+    "en": "20 square metres"
+   },
+   {
+    "en": "48 square metres"
+   }
+  ],
+  "correct": 1,
+  "explanations": [
+   {
+    "en": "10 is the sum of the sides, not the area."
+   },
+   {
+    "en": "Area of a rectangle is length times width, so 6 x 4 = 24 square metres."
+   },
+   {
+    "en": "20 is the perimeter of the garden, not its area."
+   },
+   {
+    "en": "48 doubles the correct area and does not match length times width."
+   }
+  ],
+  "rationale": {
+   "en": "Sample item about area. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-007",
+  "domain": "cardiovascular-hemodynamic",
+  "difficulty": 2,
+  "stem": {
+   "en": "Which of these is the capital city of Japan?",
+   "ar": "ما هي عاصمة اليابان؟"
+  },
+  "options": [
+   {
+    "en": "Osaka",
+    "ar": "أوساكا"
+   },
+   {
+    "en": "Kyoto",
+    "ar": "كيوتو"
+   },
+   {
+    "en": "Tokyo",
+    "ar": "طوكيو"
+   },
+   {
+    "en": "Nagoya",
+    "ar": "ناغويا"
+   }
+  ],
+  "correct": 2,
+  "explanations": [
+   {
+    "en": "Osaka is a large commercial city but not the capital."
+   },
+   {
+    "en": "Kyoto was the imperial capital in earlier centuries but is not the capital now."
+   },
+   {
+    "en": "Tokyo is the capital and the seat of the national government."
+   },
+   {
+    "en": "Nagoya is a major industrial city and not the capital."
+   }
+  ],
+  "rationale": {
+   "en": "Sample geography item. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-008",
+  "domain": "cardiovascular-hemodynamic",
+  "difficulty": 3,
+  "stem": {
+   "en": "A sample online shop gives a 20% discount on an item priced at 50 coins. What is the discounted price?"
+  },
+  "options": [
+   {
+    "en": "30 coins"
+   },
+   {
+    "en": "45 coins"
+   },
+   {
+    "en": "10 coins"
+   },
+   {
+    "en": "40 coins"
+   }
+  ],
+  "correct": 3,
+  "explanations": [
+   {
+    "en": "30 would correspond to a 40% discount."
+   },
+   {
+    "en": "45 would correspond to a 10% discount."
+   },
+   {
+    "en": "10 coins is the size of the discount, not the final price."
+   },
+   {
+    "en": "Twenty percent of 50 is 10, and 50 minus 10 leaves 40 coins."
+   }
+  ],
+  "rationale": {
+   "en": "Sample percentage item with fictional currency. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-009",
+  "domain": "neurocritical-care",
+  "difficulty": 1,
+  "stem": {
+   "en": "Which gas do plants absorb from the air to make food through photosynthesis?"
+  },
+  "options": [
+   {
+    "en": "Carbon dioxide"
+   },
+   {
+    "en": "Helium"
+   },
+   {
+    "en": "Methane"
+   },
+   {
+    "en": "Neon"
+   }
+  ],
+  "correct": 0,
+  "explanations": [
+   {
+    "en": "Plants take in carbon dioxide and use light energy to build sugars."
+   },
+   {
+    "en": "Helium is an inert gas that plants do not use for food."
+   },
+   {
+    "en": "Methane is not the gas plants absorb for photosynthesis."
+   },
+   {
+    "en": "Neon is an inert gas that plants do not use for food."
+   }
+  ],
+  "rationale": {
+   "en": "Sample biology item about plants. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-010",
+  "domain": "neurocritical-care",
+  "difficulty": 2,
+  "stem": {
+   "en": "In the fictional Harbour Island Library, quiet zones forbid phone calls. A visitor needs to take a call. What follows the library rule?"
+  },
+  "options": [
+   {
+    "en": "Take the call quietly at the desk"
+   },
+   {
+    "en": "Leave the quiet zone and take the call in the lobby"
+   },
+   {
+    "en": "Keep the call under one minute"
+   },
+   {
+    "en": "Take the call on speaker so it ends faster"
+   }
+  ],
+  "correct": 1,
+  "explanations": [
+   {
+    "en": "A quiet voice is still a phone call, which the rule forbids in that zone."
+   },
+   {
+    "en": "The rule bans calls in the quiet zone, so the call must be taken outside it."
+   },
+   {
+    "en": "The rule does not allow short calls; length is not mentioned."
+   },
+   {
+    "en": "Speaker mode makes the call louder and disturbs more people."
+   }
+  ],
+  "rationale": {
+   "en": "Sample rule-following item. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-011",
+  "domain": "neurocritical-care",
+  "difficulty": 2,
+  "stem": {
+   "en": "Which of these words is a noun?"
+  },
+  "options": [
+   {
+    "en": "Quickly"
+   },
+   {
+    "en": "Beautiful"
+   },
+   {
+    "en": "Lantern"
+   },
+   {
+    "en": "Under"
+   }
+  ],
+  "correct": 2,
+  "explanations": [
+   {
+    "en": "Quickly describes how something is done and is an adverb."
+   },
+   {
+    "en": "Beautiful describes a noun and is an adjective."
+   },
+   {
+    "en": "Lantern names a thing, which makes it a noun."
+   },
+   {
+    "en": "Under shows position and is usually a preposition."
+   }
+  ],
+  "rationale": {
+   "en": "Sample grammar item. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-012",
+  "domain": "neurocritical-care",
+  "difficulty": 3,
+  "stem": {
+   "en": "A sample number pattern goes 3, 6, 12, 24. What number comes next?"
+  },
+  "options": [
+   {
+    "en": "30"
+   },
+   {
+    "en": "36"
+   },
+   {
+    "en": "27"
+   },
+   {
+    "en": "48"
+   }
+  ],
+  "correct": 3,
+  "explanations": [
+   {
+    "en": "30 adds 6 instead of doubling and breaks the pattern."
+   },
+   {
+    "en": "36 adds 12 and does not follow the doubling rule."
+   },
+   {
+    "en": "27 adds 3 and does not follow the doubling rule."
+   },
+   {
+    "en": "Each number doubles the one before it, so 24 doubles to 48."
+   }
+  ],
+  "rationale": {
+   "en": "Sample number-pattern item. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-013",
+  "domain": "renal-metabolic",
+  "difficulty": 1,
+  "stem": {
+   "en": "Which of these is a primary colour in the traditional red, yellow and blue painting model?"
+  },
+  "options": [
+   {
+    "en": "Yellow"
+   },
+   {
+    "en": "Green"
+   },
+   {
+    "en": "Orange"
+   },
+   {
+    "en": "Purple"
+   }
+  ],
+  "correct": 0,
+  "explanations": [
+   {
+    "en": "Yellow is one of the three primary colours in this model."
+   },
+   {
+    "en": "Green is made by mixing blue and yellow."
+   },
+   {
+    "en": "Orange is made by mixing red and yellow."
+   },
+   {
+    "en": "Purple is made by mixing red and blue."
+   }
+  ],
+  "rationale": {
+   "en": "Sample art item. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-014",
+  "domain": "renal-metabolic",
+  "difficulty": 2,
+  "stem": {
+   "en": "How many sides does a hexagon have?"
+  },
+  "options": [
+   {
+    "en": "Five"
+   },
+   {
+    "en": "Six"
+   },
+   {
+    "en": "Seven"
+   },
+   {
+    "en": "Eight"
+   }
+  ],
+  "correct": 1,
+  "explanations": [
+   {
+    "en": "A shape with five sides is a pentagon."
+   },
+   {
+    "en": "The prefix hexa- means six, so a hexagon has six sides."
+   },
+   {
+    "en": "A shape with seven sides is a heptagon."
+   },
+   {
+    "en": "A shape with eight sides is an octagon."
+   }
+  ],
+  "rationale": {
+   "en": "Sample geometry item. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-015",
+  "domain": "renal-metabolic",
+  "difficulty": 2,
+  "stem": {
+   "en": "A sample train travels 120 kilometres in 2 hours at a steady speed. What is its speed?"
+  },
+  "options": [
+   {
+    "en": "240 kilometres per hour"
+   },
+   {
+    "en": "30 kilometres per hour"
+   },
+   {
+    "en": "60 kilometres per hour"
+   },
+   {
+    "en": "122 kilometres per hour"
+   }
+  ],
+  "correct": 2,
+  "explanations": [
+   {
+    "en": "240 multiplies the distance by the time instead of dividing."
+   },
+   {
+    "en": "30 divides the speed by the time a second time."
+   },
+   {
+    "en": "Speed is distance divided by time, so 120 divided by 2 is 60."
+   },
+   {
+    "en": "122 adds the numbers rather than dividing them."
+   }
+  ],
+  "rationale": {
+   "en": "Sample speed-calculation item. It contains no clinical content."
+  }
+ },
+ {
+  "code": "SYN-016",
+  "domain": "renal-metabolic",
+  "difficulty": 3,
+  "stem": {
+   "en": "In the fictional Zorblax card game, a round ends when one player holds no cards. Ana holds none and Ben holds three. What happens?"
+  },
+  "options": [
+   {
+    "en": "The round continues until Ben also has none"
+   },
+   {
+    "en": "Ben wins because he holds more cards"
+   },
+   {
+    "en": "The round restarts with the same cards"
+   },
+   {
+    "en": "The round ends and Ana is the round winner"
+   }
+  ],
+  "correct": 3,
+  "explanations": [
+   {
+    "en": "The rule needs only one empty hand, so play does not continue."
+   },
+   {
+    "en": "Holding more cards is not a winning condition in this fictional game."
+   },
+   {
+    "en": "Nothing in the rule restarts the round."
+   },
+   {
+    "en": "The sample rule ends the round as soon as one player holds no cards."
+   }
+  ],
+  "rationale": {
+   "en": "Sample fictional-rules item. It contains no clinical content."
+  }
+ }
+]

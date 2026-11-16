@@ -4,7 +4,12 @@
 
 An independent, evidence-based educational platform for adult ICU nurses. English first, Arabic (RTL) later.
 
-> **Status: Phase 0 (research & blueprint) — awaiting review.** No application code exists yet, by design. See [`PHASE0_REVIEW.md`](PHASE0_REVIEW.md) for findings, open items and decisions needed.
+> **Status:** Phase 0 closed as far as independently possible; Phase 1 (core platform) implemented in a development environment on a feature branch and awaiting supervisory review. **Clinical publication is blocked** until reviewers are appointed and licences are cleared. See [`PHASE0_REVIEW.md`](PHASE0_REVIEW.md) and [`docs/IMPLEMENTATION.md`](docs/IMPLEMENTATION.md).
+
+```bash
+npm install && cp .env.example .env.local && npm run dev   # demo mode, no backend needed
+```
+Live development backend: `docs/LIVE_INTEGRATION_REPORT.md` and `docs/SUPABASE_SETUP.md`.
 
 This is **educational software, not a clinical decision-support system.** It does not replace institutional protocols or professional judgment. It contains no real patient data.
 
@@ -30,7 +35,9 @@ This is **educational software, not a clinical decision-support system.** It doe
 | `curriculum/` | `master_curriculum.csv` (124 topics), `proposed_topics.csv` (18), generator script |
 | `sources/` | `source_register.csv` |
 | `content/templates/` | Templates: topic, skill, medication, MCQ, scenario, checklist, clinical review |
-| `docs/`, `database/`, `design/`, `tests/` | Reserved for later phases |
+| `content/drafts/` | Phase 2 draft topics (never reviewed/published) and batch reports; validate with `npm run validate:drafts` |
+| `src/`, `supabase/`, `tests/`, `scripts/` | The application, migrations and automated tests (see `docs/IMPLEMENTATION.md`, `docs/SECURITY.md`, `docs/SUPABASE_SETUP.md`) |
+| `design/prototype/` | Original static wireframe prototype (superseded by the real app) |
 
 ## Principles
 

@@ -1,0 +1,497 @@
+[
+ {
+  "code": "SYN-MED-001",
+  "category": "vasoactives-inotropes",
+  "highAlert": true,
+  "name": {
+   "en": "Examplol (fictional)",
+   "ar": "إكزامبلول (خيالي)"
+  },
+  "drugClass": {
+   "en": "Fictional vasoactive agent",
+   "ar": "عامل خيالي للدورة الدموية"
+  },
+  "summary": {
+   "en": "Synthetic training entry for a fictional agent. It contains no clinical content and exists only to test the medication library software.",
+   "ar": "مادة تدريبية تجريبية لعامل خيالي. لا تحتوي على أي محتوى سريري وهي موجودة فقط لاختبار برنامج مكتبة الأدوية."
+  },
+  "sections": {
+   "general_pharmacology": {
+    "en": [
+     "Examplol is a fictional agent used only in this sample."
+    ],
+    "ar": [
+     "إكزامبلول عامل خيالي يُستخدم في هذه العينة فقط."
+    ]
+   },
+   "administration_considerations": {
+    "en": [
+     "Use a dedicated line in the fictional office handbook."
+    ]
+   },
+   "nursing_responsibilities": {
+    "en": [
+     "Check the order against the fictional handbook before starting.",
+     "Confirm the patient identity with two identifiers."
+    ],
+    "ar": [
+     "تحقق من الأمر مقابل الدليل الخيالي قبل البدء.",
+     "أكّد هوية المريض بمعرّفين."
+    ]
+   },
+   "monitoring": {
+    "en": [
+     "Watch the fictional gauge continuously while the sample agent is running."
+    ]
+   },
+   "safety_alerts": {
+    "en": [
+     "High-alert in this sample: a second person checks the pump settings.",
+     "Never stop the sample agent abruptly without instruction."
+    ],
+    "ar": [
+     "عالي الخطورة في هذه العينة: يتحقق شخص ثانٍ من إعدادات المضخة.",
+     "لا توقف العامل التجريبي فجأة دون تعليمات."
+    ]
+   },
+   "adverse_effects": {
+    "en": [
+     "Fictional gauge swings and fictional warm sensation."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "Tell the harbour manager if the gauge leaves the fictional safe band."
+    ],
+    "ar": [
+     "أبلغ مدير الميناء إذا خرج المؤشر عن النطاق الآمن الخيالي."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Record the time, gauge reading and who checked the pump."
+    ]
+   },
+   "institution_preparation": {
+    "en": [
+     "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions."
+    ],
+    "ar": [
+     "التحضير الخاص بالمؤسسة: اتبع معيار الصيدلية للتحضير ونشرة المنتج. لا تقدم هذه المكتبة أي تعليمات للتحضير أو التركيز."
+    ]
+   },
+   "institution_dosing": {
+    "en": [
+     "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions."
+    ],
+    "ar": [
+     "الجرعات الخاصة بالمؤسسة: اتبع أمر الطبيب وبروتوكول مؤسستك المعتمد. لا تقدم هذه المكتبة أي تعليمات للجرعات."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "general_pharmacology": "local_protocol",
+   "administration_considerations": "partial",
+   "nursing_responsibilities": "full",
+   "monitoring": "partial",
+   "safety_alerts": "full",
+   "adverse_effects": "partial",
+   "escalation": "full",
+   "documentation": "full",
+   "institution_preparation": "local_protocol",
+   "institution_dosing": "local_protocol"
+  },
+  "monitoring": [
+   {
+    "kind": "observe",
+    "text": {
+     "en": "Watch the fictional gauge continuously while the agent runs.",
+     "ar": "راقب المؤشر الخيالي باستمرار أثناء عمل العامل."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "assess",
+    "text": {
+     "en": "Check the fictional warm-sensation report each shift."
+    },
+    "critical": false,
+    "support": "partial"
+   },
+   {
+    "kind": "laboratory",
+    "text": {
+     "en": "Review the fictional daily log with the harbour manager."
+    },
+    "critical": false,
+    "support": "local_protocol"
+   },
+   {
+    "kind": "escalate",
+    "text": {
+     "en": "Report a gauge outside the fictional safe band at once.",
+     "ar": "أبلغ فورًا عن مؤشر خارج النطاق الآمن الخيالي."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "document",
+    "text": {
+     "en": "Record readings and who checked the pump."
+    },
+    "critical": false,
+    "support": "sourced"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version.",
+   "ar": "النسخة التجريبية الأولى."
+  }
+ },
+ {
+  "code": "SYN-MED-002",
+  "category": "sedatives-analgesics",
+  "highAlert": true,
+  "name": {
+   "en": "Samplazine (fictional)",
+   "ar": "سامبلازين (خيالي)"
+  },
+  "drugClass": {
+   "en": "Fictional calming agent",
+   "ar": "عامل تهدئة خيالي"
+  },
+  "summary": {
+   "en": "Synthetic training entry for a fictional agent. It contains no clinical content; used to test search, filters and bookmarks."
+  },
+  "sections": {
+   "general_pharmacology": {
+    "en": [
+     "Samplazine is a fictional agent used only in this sample."
+    ]
+   },
+   "nursing_responsibilities": {
+    "en": [
+     "Assess the fictional alertness card before and after the sample agent."
+    ]
+   },
+   "monitoring": {
+    "en": [
+     "Record the fictional alertness card at each check."
+    ]
+   },
+   "safety_alerts": {
+    "en": [
+     "High-alert in this sample: confirm the label with a second person."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "Call the harbour manager if the alertness card shows no response."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Record the card result and any change."
+    ]
+   },
+   "special_populations": {
+    "en": [
+     "The fictional handbook has extra checks for new staff."
+    ]
+   },
+   "institution_preparation": {
+    "en": [
+     "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions."
+    ],
+    "ar": [
+     "التحضير الخاص بالمؤسسة: اتبع معيار الصيدلية للتحضير ونشرة المنتج. لا تقدم هذه المكتبة أي تعليمات للتحضير أو التركيز."
+    ]
+   },
+   "institution_dosing": {
+    "en": [
+     "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions."
+    ],
+    "ar": [
+     "الجرعات الخاصة بالمؤسسة: اتبع أمر الطبيب وبروتوكول مؤسستك المعتمد. لا تقدم هذه المكتبة أي تعليمات للجرعات."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "general_pharmacology": "local_protocol",
+   "nursing_responsibilities": "partial",
+   "monitoring": "partial",
+   "safety_alerts": "full",
+   "escalation": "full",
+   "documentation": "full",
+   "special_populations": "local_protocol",
+   "institution_preparation": "local_protocol",
+   "institution_dosing": "local_protocol"
+  },
+  "monitoring": [
+   {
+    "kind": "assess",
+    "text": {
+     "en": "Check the fictional alertness card before and after the agent."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "observe",
+    "text": {
+     "en": "Watch breathing of the fictional puppet during the sample run."
+    },
+    "critical": false,
+    "support": "partial"
+   },
+   {
+    "kind": "escalate",
+    "text": {
+     "en": "Call the manager if the card shows no response."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "document",
+    "text": {
+     "en": "Record the card result and any change."
+    },
+    "critical": false,
+    "support": "local_protocol"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version."
+  }
+ },
+ {
+  "code": "SYN-MED-003",
+  "category": "anti-infectives",
+  "highAlert": false,
+  "name": {
+   "en": "Testocillin (fictional)"
+  },
+  "drugClass": {
+   "en": "Fictional anti-infective"
+  },
+  "summary": {
+   "en": "Synthetic training entry for a fictional agent. It contains no clinical content; used to test the category filter."
+  },
+  "sections": {
+   "general_pharmacology": {
+    "en": [
+     "Testocillin is a fictional agent used only in this sample."
+    ]
+   },
+   "nursing_responsibilities": {
+    "en": [
+     "Check the fictional allergy sheet before use."
+    ]
+   },
+   "monitoring": {
+    "en": [
+     "Check the fictional skin chart each shift."
+    ]
+   },
+   "safety_alerts": {
+    "en": [
+     "Stop and report any fictional rash on the skin chart."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "Report a rash to the harbour manager at once."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Record the allergy check and the skin chart result."
+    ]
+   },
+   "institution_preparation": {
+    "en": [
+     "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions."
+    ],
+    "ar": [
+     "التحضير الخاص بالمؤسسة: اتبع معيار الصيدلية للتحضير ونشرة المنتج. لا تقدم هذه المكتبة أي تعليمات للتحضير أو التركيز."
+    ]
+   },
+   "institution_dosing": {
+    "en": [
+     "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions."
+    ],
+    "ar": [
+     "الجرعات الخاصة بالمؤسسة: اتبع أمر الطبيب وبروتوكول مؤسستك المعتمد. لا تقدم هذه المكتبة أي تعليمات للجرعات."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "general_pharmacology": "local_protocol",
+   "nursing_responsibilities": "partial",
+   "monitoring": "partial",
+   "safety_alerts": "partial",
+   "escalation": "full",
+   "documentation": "full",
+   "institution_preparation": "local_protocol",
+   "institution_dosing": "local_protocol"
+  },
+  "monitoring": [
+   {
+    "kind": "assess",
+    "text": {
+     "en": "Check the fictional allergy sheet before use."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "observe",
+    "text": {
+     "en": "Inspect the fictional skin chart each shift."
+    },
+    "critical": false,
+    "support": "partial"
+   },
+   {
+    "kind": "escalate",
+    "text": {
+     "en": "Report a fictional rash at once."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "document",
+    "text": {
+     "en": "Record the checks."
+    },
+    "critical": false,
+    "support": "local_protocol"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version."
+  }
+ },
+ {
+  "code": "SYN-MED-004",
+  "category": "anticoagulants-hemostasis",
+  "highAlert": true,
+  "name": {
+   "en": "Mockinase (fictional)",
+   "ar": "موكيناز (خيالي)"
+  },
+  "drugClass": {
+   "en": "Fictional blood-flow agent",
+   "ar": "عامل خيالي لتدفق الدم"
+  },
+  "summary": {
+   "en": "Synthetic training entry for a fictional agent. It contains no clinical content; used to test the high-alert filter.",
+   "ar": "مادة تدريبية تجريبية لعامل خيالي. لا تحتوي على أي محتوى سريري؛ تُستخدم لاختبار مرشح الأدوية عالية الخطورة."
+  },
+  "sections": {
+   "general_pharmacology": {
+    "en": [
+     "Mockinase is a fictional agent used only in this sample."
+    ]
+   },
+   "nursing_responsibilities": {
+    "en": [
+     "Check the fictional bleeding card before and during use."
+    ],
+    "ar": [
+     "تحقق من بطاقة النزف الخيالية قبل الاستخدام وأثناءه."
+    ]
+   },
+   "monitoring": {
+    "en": [
+     "Review the fictional test sheet as the handbook directs."
+    ]
+   },
+   "safety_alerts": {
+    "en": [
+     "High-alert in this sample: two-person check of the label and the pump."
+    ],
+    "ar": [
+     "عالي الخطورة في هذه العينة: تحقق من شخصين للملصق والمضخة."
+    ]
+   },
+   "escalation": {
+    "en": [
+     "Report any fictional bleeding signs at once."
+    ]
+   },
+   "documentation": {
+    "en": [
+     "Record checks, test sheet review and who was told."
+    ]
+   },
+   "institution_preparation": {
+    "en": [
+     "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions."
+    ],
+    "ar": [
+     "التحضير الخاص بالمؤسسة: اتبع معيار الصيدلية للتحضير ونشرة المنتج. لا تقدم هذه المكتبة أي تعليمات للتحضير أو التركيز."
+    ]
+   },
+   "institution_dosing": {
+    "en": [
+     "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions."
+    ],
+    "ar": [
+     "الجرعات الخاصة بالمؤسسة: اتبع أمر الطبيب وبروتوكول مؤسستك المعتمد. لا تقدم هذه المكتبة أي تعليمات للجرعات."
+    ]
+   }
+  },
+  "sectionSupport": {
+   "general_pharmacology": "local_protocol",
+   "nursing_responsibilities": "full",
+   "monitoring": "partial",
+   "safety_alerts": "full",
+   "escalation": "full",
+   "documentation": "full",
+   "institution_preparation": "local_protocol",
+   "institution_dosing": "local_protocol"
+  },
+  "monitoring": [
+   {
+    "kind": "assess",
+    "text": {
+     "en": "Check the fictional bleeding card before and during use."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "laboratory",
+    "text": {
+     "en": "Review the fictional test sheet as the handbook directs."
+    },
+    "critical": false,
+    "support": "partial"
+   },
+   {
+    "kind": "escalate",
+    "text": {
+     "en": "Report fictional bleeding signs at once."
+    },
+    "critical": true,
+    "support": "sourced"
+   },
+   {
+    "kind": "document",
+    "text": {
+     "en": "Record checks and who was told."
+    },
+    "critical": false,
+    "support": "local_protocol"
+   }
+  ],
+  "revision": {
+   "en": "First synthetic version."
+  }
+ }
+]

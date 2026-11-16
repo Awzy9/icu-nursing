@@ -1,0 +1,999 @@
+[
+ {
+  "code": "SYN-CASE-001",
+  "domain": "professional-practice",
+  "difficulty": 1,
+  "title": {
+   "en": "The blank timetable board"
+  },
+  "vignette": {
+   "en": "Synthetic training scenario at the fictional Harbour Island ferry office. It contains no clinical content. Labels such as 'independent' or 'needs a procedure' describe who may decide what in this fictional office, in the same way the real topics label actions."
+  },
+  "steps": [
+   {
+    "info": {
+     "en": "You are the duty assistant at the fictional Harbour Island ferry office. At 07:00 the printed timetable board is blank and the first passengers are arriving."
+    },
+    "prompt": {
+     "en": "What do you do first?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Rewrite a timetable from memory and pin it to the board."
+      },
+      "points": 0,
+      "next": 3,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Writing times from memory risks publishing wrong departures. Anything shown to the public should come from the office's confirmed schedule. This part of the job is yours to do, but only with checked information."
+      },
+      "consequence": {
+       "en": "The wrong times stay on the board and the queue grows while people plan around them."
+      }
+     },
+     {
+      "text": {
+       "en": "Open the office's shared schedule to confirm today's departures, then decide what to tell passengers."
+      },
+      "points": 2,
+      "next": 2,
+      "scope": "assessment",
+      "feedback": {
+       "en": "Checking the confirmed source first is the best opening move. It is inside your role, it is quick, and it gives you facts before you act or escalate."
+      },
+      "consequence": {
+       "en": "The confirmed schedule is on your screen within a minute, and you can now give accurate answers."
+      }
+     },
+     {
+      "text": {
+       "en": "Tell the harbour manager the board is blank and wait for instructions before doing anything else."
+      },
+      "points": 1,
+      "next": 2,
+      "scope": "escalation",
+      "feedback": {
+       "en": "Letting the manager know is reasonable, but waiting with nothing done leaves passengers uninformed. A quick check of the confirmed schedule first would let you report with facts."
+      },
+      "consequence": {
+       "en": "The manager is told, but the board stays blank and the queue grows while you wait."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "waiting",
+      "label": {
+       "en": "Passengers waiting"
+      },
+      "value": 6,
+      "unit": "people",
+      "low": 0,
+      "high": 15
+     },
+     {
+      "key": "minutes",
+      "label": {
+       "en": "Minutes to first departure"
+      },
+      "value": 70,
+      "unit": "min",
+      "low": 20,
+      "high": 180
+     },
+     {
+      "key": "complaints",
+      "label": {
+       "en": "Complaints logged"
+      },
+      "value": 0,
+      "unit": "count",
+      "low": 0,
+      "high": 2
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "The shared schedule shows the first ferry at 08:10. A note says engine checks may delay it. A passenger asks when the first ferry leaves."
+    },
+    "prompt": {
+     "en": "What do you tell the passenger?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Say it leaves at 08:10 and leave out the note about checks, to avoid worrying anyone."
+      },
+      "points": 0,
+      "next": 4,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Leaving out a known possible delay misleads the passenger. Being clear about what you know and do not know is part of your role."
+      },
+      "consequence": {
+       "en": "Passengers plan around a time that may change and are upset later when the ferry is delayed."
+      }
+     },
+     {
+      "text": {
+       "en": "Say you cannot answer and ask the passenger to come back later."
+      },
+      "points": 1,
+      "next": 4,
+      "scope": "prescriber_or_other_discipline",
+      "feedback": {
+       "en": "You do have the information, so passing the question on is unnecessary. Deciding to cancel or retime a ferry belongs to the harbour manager, but sharing the confirmed schedule does not."
+      },
+      "consequence": {
+       "en": "The passenger leaves unsure and tells others the office could not help."
+      }
+     },
+     {
+      "text": {
+       "en": "Say it is due at 08:10 and that a delay is possible, and that you will update the board when you know more."
+      },
+      "points": 2,
+      "next": 4,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Giving the confirmed time together with the known uncertainty is honest and within your role. It also sets up a clear follow-up."
+      },
+      "consequence": {
+       "en": "The passenger knows what to expect and can decide whether to wait; the queue stays calm."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "waiting",
+      "label": {
+       "en": "Passengers waiting"
+      },
+      "value": 14,
+      "unit": "people",
+      "low": 0,
+      "high": 15
+     },
+     {
+      "key": "minutes",
+      "label": {
+       "en": "Minutes to first departure"
+      },
+      "value": 55,
+      "unit": "min",
+      "low": 20,
+      "high": 180
+     },
+     {
+      "key": "complaints",
+      "label": {
+       "en": "Complaints logged"
+      },
+      "value": 1,
+      "unit": "count",
+      "low": 0,
+      "high": 2
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "A passenger shows you your handwritten note. The times differ from the website."
+    },
+    "prompt": {
+     "en": "What is the best next step?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Ask the manager to correct the website to match your note."
+      },
+      "points": 1,
+      "next": 4,
+      "scope": "prescriber_or_other_discipline",
+      "feedback": {
+       "en": "Changing the website is the manager's or IT's decision, and here the website was right. Asking is not harmful, but it does not fix the problem."
+      },
+      "consequence": {
+       "en": "The manager hears about the problem from someone else and the board stays unreliable."
+      }
+     },
+     {
+      "text": {
+       "en": "Remove the note, apologise, and replace it with the confirmed schedule."
+      },
+      "points": 2,
+      "next": 4,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Correcting your own error quickly and openly is within your role and protects other passengers."
+      },
+      "consequence": {
+       "en": "Passengers see the correct times and the complaint is closed with an apology."
+      }
+     },
+     {
+      "text": {
+       "en": "Leave the note up and say the website is probably wrong."
+      },
+      "points": 0,
+      "next": 4,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Defending an unchecked note is the opposite of using the confirmed source. The website matched the schedule."
+      },
+      "consequence": {
+       "en": "Passengers go on distrusting the board and more complaints are logged."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "waiting",
+      "label": {
+       "en": "Passengers waiting"
+      },
+      "value": 19,
+      "unit": "people",
+      "low": 0,
+      "high": 15
+     },
+     {
+      "key": "minutes",
+      "label": {
+       "en": "Minutes to first departure"
+      },
+      "value": 40,
+      "unit": "min",
+      "low": 20,
+      "high": 180
+     },
+     {
+      "key": "complaints",
+      "label": {
+       "en": "Complaints logged"
+      },
+      "value": 3,
+      "unit": "count",
+      "low": 0,
+      "high": 2
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "Later the manager asks what happened this morning."
+    },
+    "prompt": {
+     "en": "What do you do?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Give a short, factual account, including the note you wrote and corrected, and suggest keeping a printed backup schedule."
+      },
+      "points": 2,
+      "next": null,
+      "scope": "escalation",
+      "feedback": {
+       "en": "A candid report lets the manager fix the cause. Reporting is expected and is not a sign of failure."
+      },
+      "consequence": {
+       "en": "The manager understands exactly what happened, the fix is recorded and the board checks are improved."
+      }
+     },
+     {
+      "text": {
+       "en": "Say the board was blank when you arrived and leave it there."
+      },
+      "points": 1,
+      "next": null,
+      "scope": "escalation",
+      "feedback": {
+       "en": "This is true, but leaving out your own part prevents the team from learning."
+      },
+      "consequence": {
+       "en": "The manager has to ask follow-up questions and a part of the story is missed."
+      }
+     },
+     {
+      "text": {
+       "en": "Say there was no problem this morning."
+      },
+      "points": 0,
+      "next": null,
+      "scope": "escalation",
+      "feedback": {
+       "en": "This hides a real event and removes the chance to prevent it happening again."
+      },
+      "consequence": {
+       "en": "The manager hears a version that does not match what the passengers say, and trust drops."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "waiting",
+      "label": {
+       "en": "Passengers waiting"
+      },
+      "value": 3,
+      "unit": "people",
+      "low": 0,
+      "high": 15
+     },
+     {
+      "key": "minutes",
+      "label": {
+       "en": "Minutes to first departure"
+      },
+      "value": 0,
+      "unit": "min",
+      "low": 20,
+      "high": 180
+     },
+     {
+      "key": "complaints",
+      "label": {
+       "en": "Complaints logged"
+      },
+      "value": 1,
+      "unit": "count",
+      "low": 0,
+      "high": 2
+     }
+    ]
+   }
+  ],
+  "debrief": {
+   "learning_points": {
+    "en": [
+     "Confirm facts from the official source before telling anyone anything.",
+     "Be honest about uncertainty: say what is known and what may change.",
+     "Correct your own mistake openly, then report it factually."
+    ]
+   },
+   "links": [
+    {
+     "kind": "skill",
+     "code": "SYN-SKILL-002"
+    }
+   ]
+  }
+ },
+ {
+  "code": "SYN-CASE-002",
+  "domain": "general-icu-nursing",
+  "difficulty": 2,
+  "title": {
+   "en": "The noisy reading room"
+  },
+  "vignette": {
+   "en": "Synthetic training scenario at the fictional Harbour Island Library. It contains no clinical content. The labels describe who may decide what in this fictional library."
+  },
+  "steps": [
+   {
+    "info": {
+     "en": "You are the duty assistant in the quiet reading room. A group at the back is talking loudly and two readers look annoyed."
+    },
+    "prompt": {
+     "en": "What do you do first?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Switch off the lights in their corner to make them leave."
+      },
+      "points": 0,
+      "next": 3,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "This is a punishment, not a request, and it could cause a safety problem. It is not part of your role."
+      },
+      "consequence": {
+       "en": "The group becomes angry, the room gets louder and other readers leave."
+      }
+     },
+     {
+      "text": {
+       "en": "Call the library manager at once to have the group removed."
+      },
+      "points": 1,
+      "next": 3,
+      "scope": "escalation",
+      "feedback": {
+       "en": "Escalating is available to you, but a polite request has not been tried yet, so it is early. Keep escalation for when it is needed."
+      },
+      "consequence": {
+       "en": "The manager is called before the polite request was tried, and the group feels singled out."
+      }
+     },
+     {
+      "text": {
+       "en": "Ask the group quietly and politely to lower their voices and point out the quiet-room sign."
+      },
+      "points": 2,
+      "next": 2,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "A courteous request is within your role and often enough. It keeps the room calm and respects everyone."
+      },
+      "consequence": {
+       "en": "The group lowers their voices for now and the readers nearby stay."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "noise",
+      "label": {
+       "en": "Noise level"
+      },
+      "value": 7,
+      "unit": "scale 0-10",
+      "low": 0,
+      "high": 5
+     },
+     {
+      "key": "readers",
+      "label": {
+       "en": "Readers asking for quiet"
+      },
+      "value": 2,
+      "unit": "people",
+      "low": 0,
+      "high": 1
+     },
+     {
+      "key": "group",
+      "label": {
+       "en": "Group members in the room"
+      },
+      "value": 6,
+      "unit": "people"
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "The group quietens for a minute, then becomes loud again."
+    },
+    "prompt": {
+     "en": "What is the best next step?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Tell the group they are banned from the library."
+      },
+      "points": 0,
+      "next": 3,
+      "scope": "prescriber_or_other_discipline",
+      "feedback": {
+       "en": "Banning a visitor is a decision for the library manager under the written conduct procedure, not for you."
+      },
+      "consequence": {
+       "en": "The group leaves in anger and the manager has to deal with complaints about the ban."
+      }
+     },
+     {
+      "text": {
+       "en": "Explain the room rule again and offer the discussion room next door, which is free."
+      },
+      "points": 2,
+      "next": 3,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Offering a practical alternative solves the cause and is within your role."
+      },
+      "consequence": {
+       "en": "The group agrees to move and the reading room becomes quiet again."
+      }
+     },
+     {
+      "text": {
+       "en": "Ignore it, since you already asked once."
+      },
+      "points": 0,
+      "next": 3,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Leaving a repeated problem stops the room being quiet for others."
+      },
+      "consequence": {
+       "en": "The noise returns and the readers who asked for quiet leave."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "noise",
+      "label": {
+       "en": "Noise level"
+      },
+      "value": 5,
+      "unit": "scale 0-10",
+      "low": 0,
+      "high": 5
+     },
+     {
+      "key": "readers",
+      "label": {
+       "en": "Readers asking for quiet"
+      },
+      "value": 2,
+      "unit": "people",
+      "low": 0,
+      "high": 1
+     },
+     {
+      "key": "group",
+      "label": {
+       "en": "Group members in the room"
+      },
+      "value": 6,
+      "unit": "people"
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "The group refuses to move and becomes rude to you."
+    },
+    "prompt": {
+     "en": "What do you do?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Stay calm, tell them the manager will speak to them, and contact the manager."
+      },
+      "points": 2,
+      "next": null,
+      "scope": "escalation",
+      "feedback": {
+       "en": "Handing over to the manager when a request has failed is the right use of escalation."
+      },
+      "consequence": {
+       "en": "The manager arrives to a calm account and speaks to the group, who accept the outcome."
+      }
+     },
+     {
+      "text": {
+       "en": "Raise your voice and argue until they agree."
+      },
+      "points": 0,
+      "next": null,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Arguing makes the noise worse and does not follow a calm approach."
+      },
+      "consequence": {
+       "en": "The argument escalates and other readers complain about both sides."
+      }
+     },
+     {
+      "text": {
+       "en": "Offer to write down what happened for the manager but take no further action."
+      },
+      "points": 1,
+      "next": null,
+      "scope": "escalation",
+      "feedback": {
+       "en": "A written note helps, but the manager also needs to be contacted so the group can be dealt with now."
+      },
+      "consequence": {
+       "en": "The manager gets an account only later, and the group has already moved on to another room."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "noise",
+      "label": {
+       "en": "Noise level"
+      },
+      "value": 8,
+      "unit": "scale 0-10",
+      "low": 0,
+      "high": 5
+     },
+     {
+      "key": "readers",
+      "label": {
+       "en": "Readers asking for quiet"
+      },
+      "value": 3,
+      "unit": "people",
+      "low": 0,
+      "high": 1
+     },
+     {
+      "key": "group",
+      "label": {
+       "en": "Group members in the room"
+      },
+      "value": 6,
+      "unit": "people"
+     }
+    ]
+   }
+  ],
+  "debrief": {
+   "learning_points": {
+    "en": [
+     "Start with the simplest polite step and explain the rule.",
+     "Offer an alternative before escalating.",
+     "Stay calm and hand over to the person who has the authority."
+    ]
+   },
+   "links": []
+  }
+ },
+ {
+  "code": "SYN-CASE-003",
+  "domain": "critical-care-emergencies",
+  "difficulty": 3,
+  "title": {
+   "en": "The overdue loan desk"
+  },
+  "vignette": {
+   "en": "Synthetic training scenario at the fictional Harbour Island Library. It contains no clinical content. The labels describe who may decide what in this fictional library."
+  },
+  "steps": [
+   {
+    "info": {
+     "en": "A reader returns a book that is three weeks overdue. The desk system shows a fine, and the reader says the book was renewed by phone."
+    },
+    "prompt": {
+     "en": "What do you do first?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Tell the reader the fine stands and end the conversation."
+      },
+      "points": 0,
+      "next": 3,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Refusing to look at the record is unhelpful and may be unfair if the renewal really happened."
+      },
+      "consequence": {
+       "en": "The reader leaves angry and the queue behind grows while you try to end the conversation."
+      }
+     },
+     {
+      "text": {
+       "en": "Look at the renewal log in the desk system for that book."
+      },
+      "points": 2,
+      "next": 2,
+      "scope": "assessment",
+      "feedback": {
+       "en": "Checking the record is the most useful first step. It is inside your role and gives you facts."
+      },
+      "consequence": {
+       "en": "You find the request in the log and can now answer from facts."
+      }
+     },
+     {
+      "text": {
+       "en": "Cancel the fine because the reader says it was renewed."
+      },
+      "points": 1,
+      "next": 3,
+      "scope": "order_or_protocol_required",
+      "feedback": {
+       "en": "Cancelling a fine needs the written fine-waiver procedure or the manager's approval, not just a reader's word."
+      },
+      "consequence": {
+       "en": "The fine disappears from the screen, but without a record and you have no basis for the change."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "fine",
+      "label": {
+       "en": "Fine shown on the desk screen"
+      },
+      "value": 9,
+      "unit": "coins",
+      "low": 0,
+      "high": 0
+     },
+     {
+      "key": "queue",
+      "label": {
+       "en": "Readers waiting at the desk"
+      },
+      "value": 2,
+      "unit": "people",
+      "low": 0,
+      "high": 5
+     },
+     {
+      "key": "wait",
+      "label": {
+       "en": "Minutes the reader has waited"
+      },
+      "value": 1,
+      "unit": "min",
+      "low": 0,
+      "high": 10
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "The log shows a renewal request on the 3rd, but it was never confirmed."
+    },
+    "prompt": {
+     "en": "What do you do?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Explain what the log shows, then follow the fine-waiver procedure to request a waiver from the manager."
+      },
+      "points": 2,
+      "next": 4,
+      "scope": "order_or_protocol_required",
+      "feedback": {
+       "en": "The waiver needs the written procedure, and you can start it. This respects the rule and helps the reader."
+      },
+      "consequence": {
+       "en": "You follow the waiver procedure, the fine is removed with a record, and the reader leaves content."
+      }
+     },
+     {
+      "text": {
+       "en": "Remove the fine yourself because it looks like a mistake."
+      },
+      "points": 0,
+      "next": 4,
+      "scope": "order_or_protocol_required",
+      "feedback": {
+       "en": "Fines may only be waived through the procedure, even when it looks like an error."
+      },
+      "consequence": {
+       "en": "The fine stays on the screen and the reader is annoyed at the sudden change of plan."
+      }
+     },
+     {
+      "text": {
+       "en": "Tell the reader to come back and ask the manager."
+      },
+      "points": 1,
+      "next": 4,
+      "scope": "escalation",
+      "feedback": {
+       "en": "Passing it on works, but you could have started the waiver for them."
+      },
+      "consequence": {
+       "en": "The reader waits and the queue grows while the manager is found."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "fine",
+      "label": {
+       "en": "Fine shown on the desk screen"
+      },
+      "value": 9,
+      "unit": "coins",
+      "low": 0,
+      "high": 0
+     },
+     {
+      "key": "queue",
+      "label": {
+       "en": "Readers waiting at the desk"
+      },
+      "value": 4,
+      "unit": "people",
+      "low": 0,
+      "high": 5
+     },
+     {
+      "key": "wait",
+      "label": {
+       "en": "Minutes the reader has waited"
+      },
+      "value": 6,
+      "unit": "min",
+      "low": 0,
+      "high": 10
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "The reader has no record of any renewal confirmation, and the log shows nothing for that date."
+    },
+    "prompt": {
+     "en": "What do you do?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Accept the fine and say nothing about the unclear record."
+      },
+      "points": 1,
+      "next": 4,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "The fine may be correct, but ignoring the missing renewal record leaves a possible system error unreported."
+      },
+      "consequence": {
+       "en": "The record remains unclear, the reader feels brushed off and the fine stays unchallenged."
+      }
+     },
+     {
+      "text": {
+       "en": "Tell the reader you will delete the loan record to make it go away."
+      },
+      "points": 0,
+      "next": 4,
+      "scope": "prescriber_or_other_discipline",
+      "feedback": {
+       "en": "Deleting records is a decision for the manager or IT, and it would remove evidence."
+      },
+      "consequence": {
+       "en": "The loan record disappears, the audit trail is broken and the issue returns later."
+      }
+     },
+     {
+      "text": {
+       "en": "Explain the record is unclear, offer to note the reader's account, and ask the manager how to proceed."
+      },
+      "points": 2,
+      "next": 4,
+      "scope": "escalation",
+      "feedback": {
+       "en": "Writing down the account and escalating handles the uncertainty fairly."
+      },
+      "consequence": {
+       "en": "The manager has the facts and a note of the reader's account, and decides fairly."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "fine",
+      "label": {
+       "en": "Fine shown on the desk screen"
+      },
+      "value": 9,
+      "unit": "coins",
+      "low": 0,
+      "high": 0
+     },
+     {
+      "key": "queue",
+      "label": {
+       "en": "Readers waiting at the desk"
+      },
+      "value": 6,
+      "unit": "people",
+      "low": 0,
+      "high": 5
+     },
+     {
+      "key": "wait",
+      "label": {
+       "en": "Minutes the reader has waited"
+      },
+      "value": 12,
+      "unit": "min",
+      "low": 0,
+      "high": 10
+     }
+    ]
+   },
+   {
+    "info": {
+     "en": "The manager asks you to finish the paperwork for the case."
+    },
+    "prompt": {
+     "en": "What do you do?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Leave the paperwork for the next shift."
+      },
+      "points": 0,
+      "next": null,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Delaying records makes details harder to remember accurately."
+      },
+      "consequence": {
+       "en": "The case stays open and the next shift has no information to continue it."
+      }
+     },
+     {
+      "text": {
+       "en": "Record what the reader said, what the log showed and what was decided, in the desk notes."
+      },
+      "points": 2,
+      "next": null,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "Clear, factual notes are part of your role and protect everyone."
+      },
+      "consequence": {
+       "en": "The paperwork is complete and the next shift can see exactly what was decided and why."
+      }
+     },
+     {
+      "text": {
+       "en": "Write only the decision."
+      },
+      "points": 1,
+      "next": null,
+      "scope": "independent_nursing",
+      "feedback": {
+       "en": "The decision matters, but without the facts behind it the notes cannot be checked later."
+      },
+      "consequence": {
+       "en": "The decision is recorded, but the reasons are missing and cannot be explained later."
+      }
+     }
+    ],
+    "observations": [
+     {
+      "key": "fine",
+      "label": {
+       "en": "Fine shown on the desk screen"
+      },
+      "value": 0,
+      "unit": "coins",
+      "low": 0,
+      "high": 0
+     },
+     {
+      "key": "queue",
+      "label": {
+       "en": "Readers waiting at the desk"
+      },
+      "value": 1,
+      "unit": "people",
+      "low": 0,
+      "high": 5
+     },
+     {
+      "key": "wait",
+      "label": {
+       "en": "Minutes the reader has waited"
+      },
+      "value": 0,
+      "unit": "min",
+      "low": 0,
+      "high": 10
+     }
+    ]
+   }
+  ],
+  "debrief": {
+   "learning_points": {
+    "en": [
+     "Look at the record before acting on a claim.",
+     "Use the agreed procedure instead of changing records yourself.",
+     "Document what was said, what was found and what was decided."
+    ]
+   },
+   "links": [
+    {
+     "kind": "skill",
+     "code": "SYN-SKILL-001"
+    }
+   ]
+  }
+ }
+]

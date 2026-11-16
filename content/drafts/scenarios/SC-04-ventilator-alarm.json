@@ -1,0 +1,271 @@
+{
+ "scenario_id": "SC-04",
+ "number": 4,
+ "title": "Ventilator alarm",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "decision_graph",
+ "evidence_status": "partial",
+ "domain": "respiratory",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Respond to a ventilator alarm by going to the patient first.",
+  "Secure ventilation before troubleshooting the machine.",
+  "Recognise that alarm limits and modes are changed only with authority.",
+  "Hand over the event clearly."
+ ],
+ "related": {
+  "skills": [
+   "SK-07",
+   "SK-04"
+  ],
+  "medications": [],
+  "topic_drafts": [
+   "D01-T09",
+   "D01-T07"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-AARC-PVA",
+   "read": "full",
+   "use": "patient-ventilator assessment CPG"
+  },
+  {
+   "id": "S-HAMILTON-C1",
+   "read": "partial",
+   "use": "manufacturer manual: alarm and alternative ventilation statements for that device only"
+  },
+  {
+   "id": "S-DRAEGER-V500-IFU",
+   "read": "partial",
+   "use": "manufacturer manual: device-specific"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
+  }
+ ],
+ "required_sources": [
+  "Cross-manufacturer alarm-management guidance and the unit's alarm policy",
+  "AACN alarm practice alert (full text)"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "Device-specific alarm behaviour differs by manufacturer and software; the scenario uses generic wording.",
+  "Alarm causes and lists are deliberately not reproduced."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "setting": "A fictional ventilated adult on a fictional unit; the ventilator is a generic device.",
+ "steps": [
+  {
+   "position": 1,
+   "info": "A high-pressure alarm sounds on a ventilated patient's machine. The patient is coughing and looks uncomfortable.",
+   "prompt": "What do you do first?",
+   "observations": [
+    {
+     "key": "spo2",
+     "label": "Oxygen saturation (fictional)",
+     "value": 93,
+     "unit": "%"
+    },
+    {
+     "key": "alarm",
+     "label": "Alarm shown",
+     "value": "High airway pressure"
+    },
+    {
+     "key": "cough",
+     "label": "Patient",
+     "value": "Coughing, distressed"
+    }
+   ],
+   "options": [
+    {
+     "text": "Go to the patient and look at the patient, the airway, the circuit and the machine.",
+     "points": 2,
+     "next": 2,
+     "scope": "assessment",
+     "feedback": "Going to the patient is the expected response to every alarm, and the machine's message guides but does not replace looking at the patient.",
+     "consequence": "You find the patient coughing against the ventilator and a kink in the circuit near the tube.",
+     "support": "partial",
+     "sources": [
+      "S-HAMILTON-C1",
+      "S-DRAEGER-V500-IFU",
+      "S-AARC-PVA"
+     ]
+    },
+    {
+     "text": "Silence the alarm and finish the task you were doing.",
+     "points": 0,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "Silencing is not a response; the problem persists and the alarm will return.",
+     "consequence": "The alarm sounds again and the patient's saturation has fallen.",
+     "support": "partial",
+     "sources": [
+      "S-HAMILTON-C1"
+     ]
+    },
+    {
+     "text": "Widen the alarm limits so the alarm stops.",
+     "points": 0,
+     "next": 2,
+     "scope": "order_or_protocol_required",
+     "feedback": "Alarm limits and modes are changed only when authorised by order, protocol and training; extreme limits make alarms useless.",
+     "consequence": "The alarm stops but the cause remains, and the patient's saturation falls unnoticed.",
+     "support": "partial",
+     "sources": [
+      "S-HAMILTON-C1"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "info": "The patient's saturation is falling and the chest is not moving well. You cannot find a quick cause.",
+   "prompt": "What is the right next step?",
+   "observations": [
+    {
+     "key": "spo2",
+     "label": "Oxygen saturation (fictional)",
+     "value": 86,
+     "unit": "%"
+    },
+    {
+     "key": "chest",
+     "label": "Chest movement",
+     "value": "Poor"
+    },
+    {
+     "key": "alarm",
+     "label": "Alarm shown",
+     "value": "High airway pressure"
+    }
+   ],
+   "options": [
+    {
+     "text": "Use the unit's emergency ventilation method (for example a manual resuscitation bag) and call for help.",
+     "points": 2,
+     "next": 3,
+     "scope": "escalation",
+     "feedback": "If ventilation is inadequate and the cause is not immediately correctable, provide alternative ventilation and call for help; the equipment to use is local policy.",
+     "consequence": "The patient is ventilated by hand and the team arrives to find and correct the problem.",
+     "support": "partial",
+     "sources": [
+      "S-HAMILTON-C1",
+      "S-DRAEGER-V500-IFU"
+     ]
+    },
+    {
+     "text": "Keep troubleshooting the machine on your own.",
+     "points": 0,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "Staying with the machine while the patient is inadequately ventilated delays rescue.",
+     "consequence": "The patient's condition worsens before help arrives.",
+     "support": "partial",
+     "sources": [
+      "S-HAMILTON-C1"
+     ]
+    },
+    {
+     "text": "Change the ventilator mode yourself to see if the patient improves.",
+     "points": 0,
+     "next": 3,
+     "scope": "order_or_protocol_required",
+     "feedback": "Modes and settings are changed only with authority and competence.",
+     "consequence": "The new mode does not help and the team must now also work out what was changed.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "info": "The team has corrected the problem and the patient is stable on the ventilator again.",
+   "prompt": "What should you do now?",
+   "observations": [
+    {
+     "key": "spo2",
+     "label": "Oxygen saturation (fictional)",
+     "value": 96,
+     "unit": "%"
+    },
+    {
+     "key": "chest",
+     "label": "Chest movement",
+     "value": "Equal"
+    },
+    {
+     "key": "alarm",
+     "label": "Alarm shown",
+     "value": "None"
+    }
+   ],
+   "options": [
+    {
+     "text": "Give a clear SBAR handover of what happened and document the event and your actions.",
+     "points": 2,
+     "next": null,
+     "scope": "escalation",
+     "feedback": "A structured handover and a record of events and responses keep the team informed and support learning.",
+     "consequence": "The next shift knows what happened and checks the circuit position at each round.",
+     "support": "partial",
+     "sources": [
+      "S-AHRQ-TS",
+      "S-AARC-PVA"
+     ]
+    },
+    {
+     "text": "Document only that the alarm sounded.",
+     "points": 1,
+     "next": null,
+     "scope": "independent_nursing",
+     "feedback": "An incomplete record loses the cause, the actions and the outcome.",
+     "consequence": "The next shift sees an alarm but no explanation and repeats the troubleshooting.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-PVA"
+     ]
+    },
+    {
+     "text": "Reset the alarm limits to the narrowest settings so any change will alarm.",
+     "points": 0,
+     "next": null,
+     "scope": "order_or_protocol_required",
+     "feedback": "Limits are set by order or protocol, not by the nurse's own choice.",
+     "consequence": "The limits cause frequent false alarms and the team asks who changed them.",
+     "support": "partial",
+     "sources": [
+      "S-HAMILTON-C1"
+     ]
+    }
+   ]
+  }
+ ],
+ "debrief": {
+  "learning_points": [
+   "Every alarm is answered at the patient first.",
+   "If ventilation is inadequate and not quickly fixable, give alternative ventilation and call for help.",
+   "Do not silence alarms as a response or change limits and modes without authority.",
+   "Record and hand over what happened."
+  ],
+  "links": [
+   {
+    "kind": "skill",
+    "code": "SK-07"
+   }
+  ]
+ }
+}

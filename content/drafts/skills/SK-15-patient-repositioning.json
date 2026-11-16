@@ -1,0 +1,210 @@
+{
+ "skill_id": "SK-15",
+ "number": 15,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Patient repositioning",
+ "category": "skin-mobility-transport",
+ "topic_drafts": [
+  "D07-T04"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-INTL-PI-2026",
+   "read": "full",
+   "use": "International Guideline 4th ed. Quick Reference Guide (recommendations and good-practice statements), re-fetched and read in full text 2026-11-16"
+  },
+  {
+   "id": "S-AARC-PVA",
+   "read": "full",
+   "use": "tube position after moves"
+  }
+ ],
+ "objectives": [
+  "Explain why repositioning is individualised.",
+  "Protect lines, tubes and skin while turning."
+ ],
+ "prerequisites": [
+  "Pressure injury prevention (SK-14)",
+  "Endotracheal tube care (SK-04)"
+ ],
+ "sections": {
+  "safety": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Use friction- and shear-reducing equipment and suitable lifting methods when moving the patient.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "Check under and around devices and securements after each move.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Reposition on an individualised schedule based on mobility, skin and tissue tolerance, clinical condition, comfort, sleep, goals of care and the support surface.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "assessment": {
+   "support": "full",
+   "items": [
+    {
+     "text": "The guideline notes that critically ill individuals, or others with systemic hypoperfusion or shock states, may need more frequent, incremental repositioning, and may benefit from supplementing full-body repositioning with assisted small shifts in body position; it also calls for assessing for early signs of skin and tissue injury, which may mean a patient needs more frequent repositioning or preferential positioning off a damaged area.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Turning technique, staff numbers, lateral and prone positioning and line management follow the unit's approved procedure and manual-handling policy.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Observe skin, haemodynamics and ventilation during and after repositioning; after every move check tube depth and securement.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026",
+      "S-AARC-PVA"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Stop and call for help if the patient becomes unstable, a line or tube moves, or skin damage is found.",
+     "support": "partial",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record position, time, skin findings and tolerance per your unit's documentation standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Plan the turn, count lines and tubes and agree roles with the team per unit procedure.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "phase": "procedure",
+   "text": "Use friction- and shear-reducing equipment per policy.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Check tube depth, securement and device positions after the move.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "S-INTL-PI-2026",
+    "S-AARC-PVA"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Inspect skin under and around devices.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Stop and call for help if the patient becomes unstable.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-INTL-PI-2026"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record the position, time and findings.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Prone positioning procedure: not covered by the sources read.",
+  "Manual-handling standards: not read."
+ ],
+ "permissions": [
+  "NPIAP/EPUAP/PPPIA guideline: permission required."
+ ],
+ "references": [
+  {
+   "id": "S-INTL-PI-2026",
+   "title": "Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide. The International Guideline, 4th edition (version date 2026-09-01)",
+   "publisher": "NPIAP / EPUAP / PPPIA",
+   "version": "2026 (4th edition)",
+   "url": "https://epuap.org/download/13743/",
+   "accessed": "2026-11-16",
+   "read": "full",
+   "licence_class": "RED",
+   "permission_required": "Yes"
+  },
+  {
+   "id": "S-AARC-PVA",
+   "title": "AARC Clinical Practice Guideline: Patient-Ventilator Assessment",
+   "publisher": "AARC",
+   "version": "2024; Respir Care 2024;69(8):1042-1054 (search)",
+   "url": "https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "RED (cite-only)",
+   "permission_required": "Verify"
+  }
+ ]
+}

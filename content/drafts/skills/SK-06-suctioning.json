@@ -1,0 +1,312 @@
+{
+ "skill_id": "SK-06",
+ "number": 6,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Artificial airway suctioning",
+ "category": "airway-ventilation",
+ "topic_drafts": [
+  "D01-T11"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-AARC-SUCT",
+   "read": "full",
+   "use": "AARC 2022 artificial airway suctioning CPG (cite only; permission needed to reproduce)"
+  },
+  {
+   "id": "S-SHEA-VAP-2022",
+   "read": "full",
+   "use": "closed systems: no VAP recommendation"
+  },
+  {
+   "id": "N-NHSGGC-TRACH-2022",
+   "read": "full",
+   "use": "tracheostomy suctioning section (local NHS board guideline, past its review date)"
+  }
+ ],
+ "objectives": [
+  "Explain when to suction and why a fixed schedule is not the default.",
+  "Describe preoxygenation, event duration and saline use according to the guideline.",
+  "Monitor and escalate during and after suctioning."
+ ],
+ "prerequisites": [
+  "Endotracheal tube care (SK-04)",
+  "Hand hygiene (SK-21)"
+ ],
+ "sections": {
+  "indications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Suction when indicated rather than on a fixed schedule unless unit policy requires one; no adult study of suctioning frequency was found, so the adult as-needed approach rests on the earlier AARC guideline and committee judgment.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Preoxygenate adult and paediatric patients before suctioning (evidence level B); an FiO2 about 0.2 above baseline may be enough instead of 1.0; the level is set by unit policy or the clinician.",
+     "support": "sourced",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    },
+    {
+     "text": "Do not routinely instil normal saline (evidence level B): it may worsen oxygenation and cause coughing, bronchospasm and rises in heart rate and ICP.",
+     "support": "sourced",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    },
+    {
+     "text": "Use sterile technique for open suctioning (evidence level C); either open or closed systems can be used in adults; SHEA 2022 makes no VAP recommendation for closed systems.",
+     "support": "sourced",
+     "sources": [
+      "S-AARC-SUCT",
+      "S-SHEA-VAP-2022"
+     ]
+    },
+    {
+     "text": "Keep each event as brief as possible, no longer than 15 seconds (guideline text; the appropriateness score differs between sections).",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Explain to the patient, give analgesia or sedation per orders when needed, position appropriately, and perform hand hygiene on entering and leaving the area and immediately before open suctioning.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    },
+    {
+     "text": "For a patient with a tracheostomy, suction only when needed after encouraging deep breaths and coughing, change a fenestrated inner cannula to a non-fenestrated one first, and treat difficulty passing the catheter as a possible blocked, misplaced or badly orientated tube, which is an emergency (NHS board guideline; see SK-05).",
+     "support": "partial",
+     "sources": [
+      "N-NHSGGC-TRACH-2022"
+     ]
+    }
+   ]
+  },
+  "scope": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "The nurse's role in suctioning varies by country and unit; follow local policy and competence requirements.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "equipment": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Suction system, catheter size and suction pressure follow the unit's policy; the catheter-size ratio is inconsistent within the guideline.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Check SpO2, heart rate, rhythm, ventilator pressures, secretions, and ICP and CPP where monitored.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Technique steps (depth, withdrawal, passes) follow the unit's approved procedure; the sections read do not specify them.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "During and after suctioning: SpO2 and heart rate continuously, blood pressure as indicated, ECG rhythm, ventilator pressures and waveform, secretions, comfort and the number and duration of passes.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Stop and escalate for persistent desaturation, instability or arrhythmia, bleeding, suspected tube obstruction or displacement, bronchospasm, ICP rises or secretions that cannot be cleared.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    }
+   ]
+  },
+  "complications": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Hypoxaemia, arrhythmias, bradycardia, hypotension or hypertension, raised ICP, bleeding and mucosal injury, bronchospasm, atelectasis, infection, pain, accidental extubation or disconnection.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the indication, pre-assessment, preoxygenation, system used, passes and duration, secretions, response and escalation per your unit's documentation standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm the indication for suctioning and explain to the patient.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "phase": "preparation",
+   "text": "Perform hand hygiene and prepare equipment using sterile technique for open suctioning.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "phase": "preparation",
+   "text": "Preoxygenate before suctioning (level per unit policy).",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Limit each suctioning event to as short a time as possible, no longer than 15 seconds.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Do not instil saline routinely.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "phase": "monitoring",
+   "text": "Watch SpO2, heart rate, rhythm and pressures throughout, and afterwards.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Stop and call for help for persistent desaturation, instability, bleeding or suspected obstruction.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-AARC-SUCT"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record indication, passes, secretions and the patient's response.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Adult as-needed frequency: no adult study found.",
+  "Catheter-size ratio and suction pressure: inconsistent or unspecified.",
+  "Suctioning in raised ICP: not covered. Tracheostomy suctioning rests on one local NHS board guideline (see SK-05)."
+ ],
+ "permissions": [
+  "AARC CPG: cite only; reproduction needs permission."
+ ],
+ "references": [
+  {
+   "id": "S-AARC-SUCT",
+   "title": "CPG: Artificial Airway Suctioning",
+   "publisher": "AARC",
+   "version": "2022 (index)",
+   "url": "https://www.aarc.org/wp-content/uploads/2022/10/cpg-artificial-airway-suctioning.pdf",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "RED (unverified)",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-SHEA-VAP-2022",
+   "title": "Strategies to prevent VAP, VAE and non-ventilator HAP in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022;43:687-713)",
+   "publisher": "SHEA / IDSA / APIC",
+   "version": "2022",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/",
+   "accessed": "2026-11-14",
+   "read": "full",
+   "licence_class": "GREEN",
+   "permission_required": "No"
+  },
+  {
+   "id": "N-NHSGGC-TRACH-2022",
+   "title": "Clinical guideline: Care of Patients with a Tracheostomy or Laryngectomy (version 3, 52 pages)",
+   "publisher": "NHS Greater Glasgow and Clyde",
+   "version": "Approved 5 November 2022; review date 5 November 2024 (passed); based on National Tracheostomy Safety Project resources used with the project's acknowledged permission",
+   "url": "https://rightdecisions.scot.nhs.uk/media/2668/668-care-of-patients-with-a-tracheostomy.pdf",
+   "accessed": "2026-11-15",
+   "read": "full",
+   "licence_class": "YELLOW (NHS board guideline; the file says the intranet version is the only maintained one and carries no reuse statement; NTSP material reproduced with permission, which does not pass to others)",
+   "permission_required": "Verify (NHSGGC and NTSP)"
+  }
+ ]
+}

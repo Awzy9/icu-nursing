@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "ICU Knowledge Map Prototype",
+    "slug": "icu-knowledge-map-prototype",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.criticalcarenursing.myapp",
+      "versionCode": 1
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bb38e642-1a31-49fd-89fa-81a50d2cd2fa"
+      }
+    },
+    "owner": "awzy9s-team",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "scheme": "icuknowledgemap"
+  }
+}

@@ -1,0 +1,217 @@
+{
+ "skill_id": "SK-11",
+ "number": 11,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+ "title": "Nasogastric tube care",
+ "category": "transfusion-nutrition",
+ "topic_drafts": [
+  "D07-T06"
+ ],
+ "evidence_status": "partial",
+ "license_status": "permission_required",
+ "sources": [
+  {
+   "id": "S-NICE-CG32",
+   "read": "partial",
+   "use": "position confirmation and daily checks"
+  },
+  {
+   "id": "S-NHSE-NGT-2016",
+   "read": "partial",
+   "use": "patient safety alert"
+  },
+  {
+   "id": "S-OPENRN-SKILLS",
+   "read": "not_read",
+   "use": "Open RN Nursing Skills (CC BY): page returned 403"
+  }
+ ],
+ "objectives": [
+  "Explain why position is confirmed before each use.",
+  "Perform and record the daily tube checks.",
+  "Escalate if position cannot be confirmed."
+ ],
+ "prerequisites": [
+  "Hand hygiene (SK-21)"
+ ],
+ "sections": {
+  "indications": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Indications for passing a nasogastric tube are clinical decisions; follow local policy.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "safety": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Confirm position after placement and before each use by aspiration and pH-graded paper, with X-ray if necessary; initial placement of post-pyloric tubes is confirmed by abdominal X-ray unless placed radiologically, under agreed protocols (NICE CG32).",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32"
+     ]
+    },
+    {
+     "text": "Fluid or medicine through a misplaced tube into the respiratory tract or pleura is a Never Event in England (NHS 2016).",
+     "support": "partial",
+     "sources": [
+      "S-NHSE-NGT-2016"
+     ]
+    }
+   ]
+  },
+  "responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Tubes are inserted by staff with the relevant skills and training (NICE CG32).",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32"
+     ]
+    }
+   ]
+  },
+  "assessment": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Daily: check fixation, nasal erosion, and whether the tube is intact, unblocked and unkinked (NICE CG32).",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32"
+     ]
+    }
+   ]
+  },
+  "procedure": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Insertion, securement, flushing and unblocking steps are not covered by the sources read; follow the unit's approved procedure.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "If aspiration is not possible or the pH check is invalid, follow the local protocol and escalate; do not use the tube until position is confirmed.",
+     "support": "partial",
+     "sources": [
+      "S-NICE-CG32",
+      "S-NHSE-NGT-2016"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record tube type, length at the nostril, position check method and result, and daily checks per your unit's documentation standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "checklist": [
+  {
+   "phase": "preparation",
+   "text": "Confirm tube position by the approved method before each use.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-NICE-CG32",
+    "S-NHSE-NGT-2016"
+   ]
+  },
+  {
+   "phase": "assessment",
+   "text": "Check fixation, nasal skin and that the tube is intact, unblocked and unkinked.",
+   "critical": false,
+   "support": "partial",
+   "sources": [
+    "S-NICE-CG32"
+   ]
+  },
+  {
+   "phase": "procedure",
+   "text": "Do not use the tube if position cannot be confirmed; follow the local protocol.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-NHSE-NGT-2016"
+   ]
+  },
+  {
+   "phase": "escalation",
+   "text": "Escalate unconfirmed position or suspected misplacement.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "S-NHSE-NGT-2016"
+   ]
+  },
+  {
+   "phase": "documentation",
+   "text": "Record the check and its result.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Insertion, securement, flushing and unblocking: no accessible source.",
+  "Open RN Nursing Skills (CC BY) would be a permissive candidate source once readable."
+ ],
+ "permissions": [
+  "Open RN: CC BY with attribution; check image licences."
+ ],
+ "references": [
+  {
+   "id": "S-NICE-CG32",
+   "title": "Nutrition support for adults: oral nutrition support, enteral tube feeding and parenteral nutrition (CG32), recommendations 1.7.16-1.7.18 and the monitoring table",
+   "publisher": "NICE",
+   "version": "Published 2006-02-22; last updated 2017-08-04",
+   "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+   "accessed": "2026-11-15",
+   "read": "partial",
+   "licence_class": "YELLOW",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-NHSE-NGT-2016",
+   "title": "Patient Safety Alert: Nasogastric tube misplacement: continuing risk of death and severe harm (NHS/PSA/RE/2016/006, 22 July 2016; Stage 2 resource set PDF)",
+   "publisher": "NHS Improvement / NHS England",
+   "version": "2016-07-22",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2019/12/Patient_Safety_Alert_Stage_2_-_NG_tube_resource_set.pdf",
+   "accessed": "2026-11-15",
+   "read": "partial",
+   "licence_class": "YELLOW",
+   "permission_required": "Verify"
+  },
+  {
+   "id": "S-OPENRN-SKILLS",
+   "title": "Nursing Skills 2e",
+   "publisher": "Open RN",
+   "version": "Published 2023-08-28; ISBN 978-1-957068-10-7 (ebook)",
+   "url": "https://wtcs.pressbooks.pub/nursingskills/",
+   "accessed": "2026-11-14",
+   "read": "not_read",
+   "licence_class": "GREEN (conditional)",
+   "permission_required": "No"
+  }
+ ]
+}

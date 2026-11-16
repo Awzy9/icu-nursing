@@ -1,0 +1,241 @@
+{
+ "med_id": "MD-04",
+ "number": 4,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Dobutamine",
+ "drug_class": "Inotrope (beta-1 adrenergic agonist)",
+ "category": "vasoactives-inotropes",
+ "high_alert": false,
+ "high_alert_note": "Not named in the sources read as high-alert; the institution's list governs.",
+ "summary": "Inotrope used for short-term inotropic support in adults with cardiac decompensation due to depressed contractility. Nursing focus: heart rate, blood pressure and rhythm effects, atrial fibrillation, hypersensitivity and sulfite reactions.",
+ "batch": 1,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-DOBUTAMINE",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-DOBUTAMINE",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label indicates dobutamine when parenteral therapy is needed for inotropic support in short-term treatment of adults with cardiac decompensation due to depressed contractility.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Report marked rises in heart rate or blood pressure, new ectopic beats or rapid atrial fibrillation promptly; changes to the infusion are made on the prescriber's or protocol's instruction.",
+     "support": "partial",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's inotrope protocol.",
+     "support": "local_protocol",
+     "sources": []
+    },
+    {
+     "text": "The label describes a marked increase in heart rate or blood pressure (especially systolic pressure) as a warning, notes that reducing the infusion usually reverses these effects, and that patients with pre-existing hypertension appear to face an increased risk of an exaggerated pressor response; it also notes a risk of rapid ventricular response in patients with atrial fibrillation, since dobutamine facilitates atrioventricular conduction.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "It may cause a marked increase in heart rate or blood pressure, especially systolic pressure; the label says these effects usually reverse promptly when the dose is reduced by the prescriber.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    },
+    {
+     "text": "Because it facilitates atrioventricular conduction, patients with atrial fibrillation are at risk of a rapid ventricular response, and those with pre-existing hypertension may have an exaggerated pressor response.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    },
+    {
+     "text": "It may precipitate or worsen ventricular ectopic activity.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    },
+    {
+     "text": "Hypersensitivity reactions (skin rash, fever, eosinophilia, bronchospasm) have been reported, and the product contains sodium metabisulfite, a sulfite that can cause allergic-type reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Increased heart rate, blood pressure and ventricular ectopic activity are the adverse effects described first in the label.",
+     "support": "sourced",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate for a marked rise in heart rate or pressure, new arrhythmia, rash or bronchospasm.",
+     "support": "partial",
+     "sources": [
+      "L-DOBUTAMINE"
+     ]
+    },
+    {
+     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record haemodynamics, rhythm, pump checks and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "observe",
+   "text": "Monitor heart rate, rhythm and blood pressure at the unit's frequency.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "kind": "assess",
+   "text": "Watch for ectopic beats and, in atrial fibrillation, a rapid ventricular rate.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-DOBUTAMINE"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Watch for rash, fever or bronchospasm and check the patient's sulfite and allergy history.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-DOBUTAMINE"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report marked rises in rate or pressure, arrhythmia or allergic signs immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-DOBUTAMINE"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record haemodynamics and events.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Dosing, correction of hypovolaemia and preparation: deliberately not included.",
+  "Clinical guideline text was not read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-16",
+  "set_id": "89becb0c-da60-4f43-0a98-29ff7a9eca58",
+  "label_version": "19",
+  "effective_time": "20260527",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
+}

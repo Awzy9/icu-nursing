@@ -1,0 +1,244 @@
+{
+ "med_id": "MD-27",
+ "number": 27,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Azithromycin",
+ "drug_class": "Macrolide antibacterial",
+ "category": "anti-infectives",
+ "high_alert": false,
+ "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "summary": "Macrolide antibacterial for infections including community-acquired pneumonia in adults. Nursing focus: allergic and skin reactions, hepatotoxicity and QT prolongation with torsades de pointes.",
+ "batch": 3,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-AZITHROMYCIN",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-AZITHROMYCIN",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes azithromycin for injection as a macrolide antibacterial indicated for infections caused by susceptible organisms, including community-acquired pneumonia in adults.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Check the ECG history and the list of other medicines that can prolong the QT interval, and report concerns.",
+     "support": "partial",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+     "support": "local_protocol",
+     "sources": []
+    },
+    {
+     "text": "The label describes QT-interval prolongation and reports of torsades de pointes, a risk the label says should be considered in patients with known QT prolongation, a history of torsades de pointes, proarrhythmic conditions, or other QT-prolonging drugs; it also notes observational studies have shown an approximately two-fold increased short-term risk of acute cardiovascular death relative to other antibacterial drugs, and warns of severe, sometimes fatal, hepatotoxicity (discontinue immediately if signs of hepatitis occur) and that azithromycin may exacerbate muscle weakness in myasthenia gravis.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Serious, including fatal, allergic and skin reactions have been reported; the label advises discontinuing if a reaction occurs.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    },
+    {
+     "text": "Severe and sometimes fatal hepatotoxicity has been reported; the label advises discontinuing immediately if signs of hepatitis occur.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    },
+    {
+     "text": "QT prolongation and torsades de pointes have been reported, and the label says this risk, which can be fatal, should be considered in patients with certain cardiac conditions.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    },
+    {
+     "text": "In neonates treated, infantile hypertrophic pyloric stenosis has been reported.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label lists hypersensitivity, hepatotoxicity and QT prolongation among the clinically significant adverse reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Stop and call for help for allergic signs, palpitations, syncope or a new dangerous rhythm; report jaundice, dark urine or abdominal pain.",
+     "support": "partial",
+     "sources": [
+      "L-AZITHROMYCIN"
+     ]
+    },
+    {
+     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Check cardiac history and other QT-prolonging medicines.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-AZITHROMYCIN"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Watch the rhythm where cardiac risk exists.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-AZITHROMYCIN"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Watch for jaundice, dark urine or abdominal pain.",
+   "critical": false,
+   "support": "sourced",
+   "sources": [
+    "L-AZITHROMYCIN"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report allergic signs, palpitations or syncope immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-AZITHROMYCIN"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record checks and reactions.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Atypical-pathogen and other indication detail: not included.",
+  "Dosing, preparation and administration details: deliberately not included.",
+  "No clinical practice guideline or nursing source was read for this entry."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-16",
+  "set_id": "7b81436e-d14a-4353-a22d-253f45e2e576",
+  "label_version": "14",
+  "effective_time": "20260727",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
+}

@@ -1,0 +1,293 @@
+{
+ "scenario_id": "SC-07",
+ "number": 7,
+ "title": "Raised intracranial pressure",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "decision_graph",
+ "evidence_status": "partial",
+ "domain": "neurocritical",
+ "difficulty": 3,
+ "learning_objectives": [
+  "Recognise early signs of raised pressure inside the skull, above all a drop in the level of consciousness, and report them urgently.",
+  "Use nursing measures that avoid raising the pressure further (positioning, neck alignment, spacing care, low stimulation, oxygenation).",
+  "Give osmotic therapy only as prescribed, and watch fluid, electrolyte, kidney and neurological status.",
+  "Understand that sedation can hide neurological signs and must be discussed with the team."
+ ],
+ "related": {
+  "skills": [
+   "SK-24",
+   "SK-15",
+   "SK-06"
+  ],
+  "medications": [
+   "MD-48"
+  ],
+  "topic_drafts": [
+   "D03-T01",
+   "D03-T03"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-OPENRN-HA-CVA",
+   "read": "full",
+   "use": "Open RN Health Alterations 9.9: manifestations of increased ICP and the interventions box (head of bed, neck, clustering, stimulation, monitoring, sedatives)"
+  },
+  {
+   "id": "S-AARC-SUCT",
+   "read": "full",
+   "use": "AARC suctioning CPG: suctioning only when indicated; hyperoxygenation"
+  },
+  {
+   "id": "L-MANNITOL",
+   "read": "full",
+   "use": "FDA label: fluid and electrolyte, renal and nervous-system warnings"
+  },
+  {
+   "id": "S-BTF-TBI-4TH",
+   "read": "partial",
+   "use": "Brain Trauma Foundation 4th edition (monitoring sections, licensed): background only"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
+  }
+ ],
+ "required_sources": [
+  "A neurocritical-care guideline or nursing standard on ICP and cerebral perfusion pressure care, usable under a commercial licence",
+  "The unit's ICP protocol, including who sets the head-of-bed angle and what is reported"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "The Open RN text is written for stroke on a general ward; ICP and CPP numbers, monitoring-device care, hyperventilation and other treatments are not written because no source read supports them for this scenario.",
+  "The head-of-bed angle, blood-pressure targets and medicine choices are set by the provider and policy and are not given.",
+  "Mannitol is only mentioned as prescribed osmotic therapy; no dose or rate is given."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "setting": "A fictional adult in a fictional intensive care unit two days after a bleed in the brain.",
+ "steps": [
+  {
+   "position": 1,
+   "info": "Over the last hour the patient has become more drowsy and restless, complains of a headache and has vomited once. The monitor shows a higher blood pressure and a slower pulse than before.",
+   "prompt": "What is your first response?",
+   "observations": [
+    {
+     "key": "loc",
+     "label": "Level of consciousness",
+     "value": "Drowsier than at the last check"
+    },
+    {
+     "key": "symptoms",
+     "label": "Symptoms",
+     "value": "Headache, vomited once"
+    },
+    {
+     "key": "bp",
+     "label": "Blood pressure",
+     "value": "Higher than before"
+    },
+    {
+     "key": "hr",
+     "label": "Heart rate",
+     "value": "Slower than before"
+    }
+   ],
+   "options": [
+    {
+     "text": "Carry out a focused neurological assessment now (Glasgow Coma Scale and pupils), compare it with the last one and report the change urgently with SBAR.",
+     "points": 2,
+     "next": 2,
+     "scope": "escalation",
+     "feedback": "A decreased level of consciousness is the earliest sign of increased ICP; restlessness, headache, vomiting, high blood pressure and a slow heart rate are further manifestations, and neurological assessment includes the GCS and pupils.",
+     "consequence": "The team receives a clear change from baseline and can act quickly.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
+    },
+    {
+     "text": "Check the blood pressure again and leave the patient to rest.",
+     "points": 1,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "Rechecking is reasonable, but the drowsiness and vomiting are more important than the pressure alone and need a neurological assessment and report.",
+     "consequence": "The patient continues to deteriorate while only the pressure is followed.",
+     "support": "partial",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
+    },
+    {
+     "text": "Give a prescribed as-needed sedative so the patient can settle, and plan to review later.",
+     "points": 0,
+     "next": 2,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Sedatives given in this situation can mask neurological symptoms; restlessness and drowsiness need assessment and reporting, not settling.",
+     "consequence": "The change in the patient's neurological state is hidden at the moment it matters most.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "info": "The team confirms concern about rising pressure inside the skull and asks you to continue nursing care with that in mind. The patient needs a bed bath and is due to have the airway suctioned.",
+   "prompt": "Which approach to care is best?",
+   "observations": [
+    {
+     "key": "loc",
+     "label": "Level of consciousness",
+     "value": "Drowsy"
+    },
+    {
+     "key": "position",
+     "label": "Position",
+     "value": "Head of bed raised by the team's order"
+    },
+    {
+     "key": "care",
+     "label": "Care due",
+     "value": "Bed bath, suction, turn"
+    },
+    {
+     "key": "env",
+     "label": "Environment",
+     "value": "Bright and noisy"
+    }
+   ],
+   "options": [
+    {
+     "text": "Keep the head of the bed at the angle the provider and policy set with the neck in a neutral position, avoid sudden neck or hip bending, space the care out, keep the room quiet, and give oxygen as prescribed while monitoring pressure, rhythm, oxygenation, glucose and temperature.",
+     "points": 2,
+     "next": 3,
+     "scope": "monitoring",
+     "feedback": "Interventions for managing ICP include raising the head of the bed as provider and policy direct, keeping the neck midline, avoiding sudden neck or hip flexion, avoiding clustering care, a low-stimulus environment, oxygen to prevent hypoxia and close monitoring.",
+     "consequence": "Measures that raise the pressure are avoided, and the patient's condition is more stable.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
+    },
+    {
+     "text": "Do the bed bath, turning and suctioning together so that the patient is disturbed only once.",
+     "points": 0,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "Clustering activities such as bathing, suctioning and treatments can drastically raise ICP; care should be spaced.",
+     "consequence": "The pressure rises during the cluster of care and the patient's condition worsens.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
+    },
+    {
+     "text": "Lay the patient flat for easier turning and washing.",
+     "points": 0,
+     "next": 3,
+     "scope": "order_or_protocol_required",
+     "feedback": "The head-of-bed position is set by the provider and policy to help drainage from the head; lying flat is not within the nurse's own discretion.",
+     "consequence": "The pressure rises and the patient becomes drowsier.",
+     "support": "partial",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "info": "The team prescribes an osmotic medicine to lower the pressure. The patient is agitated again and a colleague suggests an extra sedative to calm them.",
+   "prompt": "What is your role now?",
+   "observations": [
+    {
+     "key": "order",
+     "label": "Prescription",
+     "value": "Osmotic medicine ordered"
+    },
+    {
+     "key": "urine",
+     "label": "Urine output",
+     "value": "Being measured"
+    },
+    {
+     "key": "loc",
+     "label": "Level of consciousness",
+     "value": "Still drowsy"
+    },
+    {
+     "key": "agitation",
+     "label": "Agitation",
+     "value": "Present"
+    }
+   ],
+   "options": [
+    {
+     "text": "Give the osmotic medicine only as prescribed, monitor urine output, fluid status, electrolytes and neurological status, raise the agitation with the team rather than adding a sedative on your own, and document each neurological assessment.",
+     "points": 2,
+     "next": null,
+     "scope": "order_or_protocol_required",
+     "feedback": "The mannitol label warns of fluid and electrolyte disturbance, kidney effects and nervous-system effects, so these are monitored; sedatives must be used cautiously because they can mask neurological signs, so the team decides.",
+     "consequence": "The effect of the treatment is followed and the team keeps a reliable neurological picture.",
+     "support": "partial",
+     "sources": [
+      "L-MANNITOL",
+      "S-OPENRN-HA-CVA"
+     ]
+    },
+    {
+     "text": "Give the extra sedative to keep the patient quiet and note that you did so.",
+     "points": 0,
+     "next": null,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Sedation can mask neurological symptoms and must be given cautiously; the decision belongs with the prescriber after discussion.",
+     "consequence": "The neurological examination becomes unreliable and a worsening could be missed.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-HA-CVA"
+     ]
+    },
+    {
+     "text": "Stop the osmotic medicine if the urine output rises, to protect the kidneys.",
+     "points": 0,
+     "next": null,
+     "scope": "prescriber_or_other_discipline",
+     "feedback": "Whether to change or stop a prescribed osmotic medicine is a prescriber's decision; the nurse's role is to monitor and report.",
+     "consequence": "Therapy is interrupted without direction and the pressure may rise again.",
+     "support": "partial",
+     "sources": [
+      "L-MANNITOL"
+     ]
+    }
+   ]
+  }
+ ],
+ "debrief": {
+  "learning_points": [
+   "The earliest sign of raised pressure inside the skull is a fall in the level of consciousness; restlessness, headache, vomiting, high blood pressure and a slow heart rate follow. Report change promptly.",
+   "Position (as the provider and policy set), neutral neck, no sudden neck or hip bending, spaced-out care, a quiet room and good oxygenation help avoid pushing the pressure up.",
+   "Osmotic therapy is given as prescribed with monitoring of fluids, electrolytes, urine output and neurological status.",
+   "Sedatives can hide neurological signs: discuss them with the team before giving them."
+  ],
+  "links": [
+   {
+    "kind": "skill",
+    "code": "SK-24"
+   },
+   {
+    "kind": "medication",
+    "code": "MD-48"
+   }
+  ]
+ }
+}

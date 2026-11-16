@@ -1,0 +1,295 @@
+{
+ "scenario_id": "SC-05",
+ "number": 5,
+ "title": "Sudden oxygen desaturation",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+ "fictional_patient": true,
+ "spec_level": "decision_graph",
+ "evidence_status": "partial",
+ "domain": "respiratory",
+ "difficulty": 2,
+ "learning_objectives": [
+  "Go to the patient first when the saturation alarm sounds and assess breathing, not just the number.",
+  "Stay with the patient, support oxygenation as the unit policy allows and clear secretions only when there is a need.",
+  "Escalate early if the saturation does not recover, then reassess and document the response."
+ ],
+ "related": {
+  "skills": [
+   "SK-08",
+   "SK-06",
+   "SK-04"
+  ],
+  "medications": [],
+  "topic_drafts": [
+   "D01-T19",
+   "D01-T03"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S-OPENRN-FUND-CH8",
+   "read": "full",
+   "use": "Open RN Nursing Fundamentals 8.3: focused assessment, signs of hypoxia, stay with the client, respiratory monitoring, reassessment"
+  },
+  {
+   "id": "S-AARC-O2",
+   "read": "full",
+   "use": "AARC oxygen CPG: oxygen use, monitoring"
+  },
+  {
+   "id": "S-AARC-SUCT",
+   "read": "full",
+   "use": "AARC suctioning CPG: suction only when indicated, hyperoxygenation, stopping for complications"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "NEWS2: early warning and escalation of deterioration"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "SBAR page"
+  }
+ ],
+ "required_sources": [
+  "A national guideline or professional standard on responding to acute desaturation in an adult in a critical-care unit",
+  "Unit airway-emergency, oxygen and suctioning protocols"
+ ],
+ "gaps": [
+  "No published clinical scenario may exist until the review phase: this is a specification only.",
+  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+  "No source read gives a stepwise sequence for sudden desaturation; the steps are assembled from assessment, monitoring and escalation statements and have not been tested against a protocol.",
+  "Oxygen flow, targets and device choice are deliberately not written; they come from the order and policy.",
+  "Escalation score thresholds are local and are not written."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+ ],
+ "setting": "A fictional adult in a fictional intensive care unit who is breathing without a ventilator, receiving oxygen as prescribed.",
+ "steps": [
+  {
+   "position": 1,
+   "info": "The saturation alarm sounds and the reading is much lower than it was ten minutes ago. The patient is awake and looks worried.",
+   "prompt": "What do you do first?",
+   "observations": [
+    {
+     "key": "spo2",
+     "label": "Oxygen saturation (fictional)",
+     "value": 86,
+     "unit": "%"
+    },
+    {
+     "key": "alarm",
+     "label": "Alarm",
+     "value": "Low saturation"
+    },
+    {
+     "key": "patient",
+     "label": "Patient",
+     "value": "Awake, anxious, breathing faster"
+    },
+    {
+     "key": "rate",
+     "label": "Breathing rate",
+     "value": "Faster than before"
+    }
+   ],
+   "options": [
+    {
+     "text": "Go to the patient, stay with them and assess the airway, breathing effort, colour, lung sounds and heart rate, checking that the probe reading matches how the patient looks.",
+     "points": 2,
+     "next": 2,
+     "scope": "assessment",
+     "feedback": "Assessment of a suspected fall in oxygenation includes the airway, breathing rate and effort, the oximeter reading, lung sounds and heart rate; staying with the patient promotes safety and reduces fear.",
+     "consequence": "You find the patient breathing with effort and a wet-sounding cough, and you know what you are dealing with.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-FUND-CH8"
+     ]
+    },
+    {
+     "text": "Reposition the probe and leave to see whether the number improves.",
+     "points": 1,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "Checking the probe is sensible, but a falling reading in a patient who is breathing faster must not be treated as a probe problem without looking at the patient.",
+     "consequence": "A minute passes before you see that the patient really is struggling.",
+     "support": "partial",
+     "sources": [
+      "S-OPENRN-FUND-CH8"
+     ]
+    },
+    {
+     "text": "Silence the alarm because the patient is talking and probably fine.",
+     "points": 0,
+     "next": 2,
+     "scope": "independent_nursing",
+     "feedback": "A patient who can talk can still be hypoxic; early signs of hypoxia include anxiety and restlessness, and the alarm is a call to assess.",
+     "consequence": "The saturation keeps falling and the patient becomes more distressed.",
+     "support": "partial",
+     "sources": [
+      "S-OPENRN-FUND-CH8"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "info": "The patient has a weak, wet cough, and you can hear secretions. The oxygen device is connected and in place. The saturation is still low.",
+   "prompt": "What is the best next step?",
+   "observations": [
+    {
+     "key": "spo2",
+     "label": "Oxygen saturation (fictional)",
+     "value": 88,
+     "unit": "%"
+    },
+    {
+     "key": "cough",
+     "label": "Cough",
+     "value": "Weak and wet"
+    },
+    {
+     "key": "sounds",
+     "label": "Breath sounds",
+     "value": "Noisy, secretions heard"
+    },
+    {
+     "key": "device",
+     "label": "Oxygen device",
+     "value": "Connected, in place"
+    }
+   ],
+   "options": [
+    {
+     "text": "Call for help according to the unit's process, keep the patient on oxygen as prescribed and policy allows, and clear the secretions with suction only because the need has been assessed, following the unit's suctioning method.",
+     "points": 2,
+     "next": 3,
+     "scope": "escalation",
+     "feedback": "Respiratory monitoring includes noting the need for suctioning; the AARC suctioning guideline supports suctioning when indicated and not routinely, and the nurse should stop and escalate if the patient deteriorates.",
+     "consequence": "The airway is cleared and the saturation begins to rise while help is on the way.",
+     "support": "partial",
+     "sources": [
+      "S-OPENRN-FUND-CH8",
+      "S-AARC-SUCT",
+      "S-AARC-O2"
+     ]
+    },
+    {
+     "text": "Suction repeatedly until the saturation reaches its usual level.",
+     "points": 0,
+     "next": 3,
+     "scope": "independent_nursing",
+     "feedback": "Suctioning is done when indicated and carries its own risks; repeated suctioning without reassessment can worsen the patient's oxygenation.",
+     "consequence": "The patient becomes more distressed and the saturation falls further during suctioning.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-SUCT"
+     ]
+    },
+    {
+     "text": "Change the oxygen device or increase the oxygen yourself, as the patient needs more.",
+     "points": 0,
+     "next": 3,
+     "scope": "order_or_protocol_required",
+     "feedback": "Oxygen is given according to the prescription, order or protocol, with the target set by the team.",
+     "consequence": "The change is not authorised and the target is unclear.",
+     "support": "partial",
+     "sources": [
+      "S-AARC-O2"
+     ]
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "info": "The saturation has come up a little but the patient is still breathing hard. The doctor and the outreach nurse have arrived.",
+   "prompt": "What should you do now?",
+   "observations": [
+    {
+     "key": "spo2",
+     "label": "Oxygen saturation (fictional)",
+     "value": 91,
+     "unit": "%"
+    },
+    {
+     "key": "effort",
+     "label": "Breathing effort",
+     "value": "Still increased"
+    },
+    {
+     "key": "team",
+     "label": "Team",
+     "value": "At the bedside"
+    },
+    {
+     "key": "heart",
+     "label": "Heart rate",
+     "value": "Fast"
+    }
+   ],
+   "options": [
+    {
+     "text": "Give an SBAR handover (what you found, what you did and how the saturation responded), keep monitoring, reassess heart rate, breathing rate, saturation, lung sounds and the patient's own rating of breathlessness, and document what was done and whether it worked.",
+     "points": 2,
+     "next": null,
+     "scope": "escalation",
+     "feedback": "Reassessment after an intervention includes heart rate, breathing rate, oximetry and lung sounds and asking the patient to rate breathlessness; the effect of interventions is documented.",
+     "consequence": "The team has a clear picture, and the record shows the sequence of events.",
+     "support": "sourced",
+     "sources": [
+      "S-OPENRN-FUND-CH8",
+      "S-AHRQ-TS"
+     ]
+    },
+    {
+     "text": "Step back and let the team work; write the notes later.",
+     "points": 1,
+     "next": null,
+     "scope": "independent_nursing",
+     "feedback": "The nurse's observations and the timeline are valuable to the team at the bedside; delayed notes lose detail.",
+     "consequence": "Details of the timing are uncertain by the time the record is written.",
+     "support": "partial",
+     "sources": [
+      "S-AHRQ-TS"
+     ]
+    },
+    {
+     "text": "Reset the alarm limits so the alarm stops sounding while the team treats the patient.",
+     "points": 0,
+     "next": null,
+     "scope": "order_or_protocol_required",
+     "feedback": "Alarm limits are set according to the order or protocol; widening limits during an event hides further change.",
+     "consequence": "A further fall in saturation does not trigger an alarm.",
+     "support": "partial",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  }
+ ],
+ "debrief": {
+  "learning_points": [
+   "Go to the patient first: assess the airway, breathing effort, colour, lung sounds and heart rate, and use the oximeter reading as one finding among others.",
+   "Stay with the patient, give oxygen as prescribed and policy allows, and clear secretions by suction only when there is a need.",
+   "Escalate early when the saturation does not recover, and reassess the same parameters after every intervention.",
+   "Do not silence alarms or change limits and devices without authority; hand over with SBAR and document the response."
+  ],
+  "links": [
+   {
+    "kind": "skill",
+    "code": "SK-08"
+   },
+   {
+    "kind": "skill",
+    "code": "SK-06"
+   }
+  ]
+ }
+}

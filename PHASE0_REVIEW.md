@@ -1,100 +1,102 @@
-# Phase 0 Review Pack — Round 2
+# Phase 0 Review Pack — Round 3 (closure audit)
 
-Date: 2026-11-14 · **Recommendation: Phase 0 is NOT ready for sign-off.** Substantial progress; the remaining gaps are mainly human verification, reviewer appointment and your decisions. Phase 1 will not begin until you explicitly approve Phase 0.
+Date: 2026-11-14 · Branch `claude/vigilant-mendel-95k63h` · PR [#2](https://github.com/Awzy9/icu-nursing/pull/2) (draft, not merged)
 
-Branch: `claude/vigilant-mendel-95k63h` in `Awzy9/icu-nursing` (feature branch; `main` untouched). No other repository, Supabase, Vercel, domain or paid service was touched.
+## Verdict
 
-## 1. The original 14 acceptance criteria
+**Phase 0 is closed as far as it can be without human action.** Every item that could be resolved independently was resolved or explicitly documented as unavailable. **Nothing was falsely marked complete.** The remaining items need a person (browser checks, reviewer appointment, licence/permission decisions) and are listed in §3. **Clinical publication stays blocked** until they are done; Phase 1 engineering proceeds in a development environment only.
 
-| # | Criterion | Round 1 | Round 2 | Notes |
-|---|---|---|---|---|
-| 1 | Product scope defined | ✅ | ✅ | `PRODUCT_REQUIREMENTS.md` |
-| 2 | Audience defined | ✅ | ✅ | |
-| 3 | 10 domains organised | ✅ | ✅ | 124 topics; 18 proposals pending approval |
-| 4 | First 40 topics prioritised | ✅ | ✅ | Now with primary reference, evidence priority, reviewer roles |
-| 5 | Every selected resource has a verified source link | ⚠️ | ⚠️ **Improved, still partial** | 6 of 7 blocked links now load in Chromium; **AHA still unverified in a browser**; NCBI Open RN page unreadable; AACN framework page 403; 14 P1 topics lack a pinned primary source |
-| 6 | Licensing risks documented | ⚠️ | ⚠️ **Improved, still partial** | Licences read for Open RN (3 books), SCCM, React Flow, H5P. **Not read:** AARC, AHA, AHRQ, CDC, ISMP, NICE, WHO, KDIGO, ASPEN terms; stack licences |
-| 7 | Proprietary resources identified | ✅ | ✅ | AACN prices captured as evidence |
-| 8 | Content template ready | ✅ | ✅ | |
-| 9 | Clinical review process defined | ✅ | ✅ **Expanded** | `CLINICAL_REVIEWER_MATRIX.md` (8 roles, no names) |
-| 10 | Database design documented | ✅ | ✅ | |
-| 11 | Technical architecture documented | ✅ | ✅ | |
-| 12 | UI structure documented | ✅ | ✅ **Completed** | `UI_WIREFRAMES.md` + prototype (Figma not used) |
-| 13 | Development backlog organised | ✅ | ✅ | |
-| 14 | Release 1 measurable acceptance criteria | ✅ | ✅ | |
+## 1. Acceptance criteria with evidence
 
-Your rule — "do not mark Phase 0 complete if the clinical source register or licensing register is incomplete" — **still applies**, because criteria 5 and 6 are only partly met.
+| # | Criterion | Status | Evidence |
+|---|---|---|---|
+| 1 | Product scope defined | ✅ | `PRODUCT_REQUIREMENTS.md` |
+| 2 | Audience defined | ✅ | `PRODUCT_REQUIREMENTS.md` |
+| 3 | 10 domains organised | ✅ | `curriculum/master_curriculum.csv` (124 topics); seeded by `0002_content_schema.sql`; DB test "contains the ten curriculum domains" |
+| 4 | First 40 topics prioritised | ✅ | 40 P1 rows; **33/40 have a pinned primary source**, 7 documented as unavailable (below) |
+| 5 | Every selected resource has a verified source link | ⚠️ **Partly** | 34-entry register (`sources/source_register.csv`). Verified in a browser: AARC, AHRQ, CDC, KDIGO, SCCM, ISMP, NICE, WHO, ASPEN, React Flow, H5P, Open RN publisher pages. **Not verifiable automatically:** AHA (Cloudflare), NCBI Bookshelf/Open RN collection page (reCAPTCHA), AACN framework page (403). AHA publication facts rest on search results |
+| 6 | Licensing risks documented | ⚠️ **Partly** | Read & recorded: Open RN CC BY 4.0 (3 books), SCCM permission wording, **WHO = CC BY-NC-SA 3.0 IGO (non-commercial)**, NICE terms (commercial-gain restriction), React Flow MIT, H5P (GPL caveat). **Not found/read:** reuse terms for AARC, AHA, AHRQ, CDC, ISMP/ECRI, KDIGO, ASPEN (terms pages 404 or silent) → treated as RED/cite-only |
+| 7 | Proprietary resources identified | ✅ | `LICENSING_REGISTER.md` |
+| 8 | Content template ready | ✅ | `content/templates/*`; template rules now enforced by DB validation |
+| 9 | Clinical review process defined | ✅ | `CLINICAL_GOVERNANCE.md`, `CLINICAL_REVIEWER_MATRIX.md`; **enforced** in `0003_workflow.sql` |
+| 10 | Database design documented | ✅ | `DATABASE_DESIGN.md` + 3 migrations (implemented, tested) |
+| 11 | Technical architecture documented | ✅ | `TECHNICAL_ARCHITECTURE.md`, `docs/IMPLEMENTATION.md` |
+| 12 | UI structure documented | ✅ | `UI_WIREFRAMES.md`, `UI_DESIGN_GUIDELINES.md`; implemented, axe-tested light/dark |
+| 13 | Development backlog organised | ✅ | `DEVELOPMENT_ROADMAP.md` |
+| 14 | Measurable release criteria | ✅ | `PRODUCT_REQUIREMENTS.md` |
 
-## 2. Completed this round
+Your rule — never mark Phase 0 complete while the source/licensing registers are incomplete — still applies to **criteria 5 and 6**. They are incomplete only for reasons outside automation.
 
-| Task | Deliverable | Status |
-|---|---|---|
-| Git: feature branch, commit, push | branch + PR (see §7) | Done (PR not merged) |
-| Competitor and market research | `COMPETITOR_ANALYSIS.md`, `MARKET_OPPORTUNITY.md` | Done, with caveats (§4); 7 differentiators |
-| Wireframes (7 screens) | `UI_WIREFRAMES.md`, `design/prototype/index.html` | Done; tested at 390 px, no overflow/console errors |
-| Source verification | `SOURCE_VERIFICATION_REPORT.md`, rebuilt `source_register.csv` (34 entries) | Partly done (§3) |
-| SCCM permission email | `SCCM_PERMISSION_REQUEST.md` | Drafted, **not sent** |
-| Reviewer framework | `CLINICAL_REVIEWER_MATRIX.md` | Done; all roles vacant |
-| Curriculum review | `CURRICULUM.md` (review section), new CSV columns, `proposed_topics.csv` | Done |
-| This report | `PHASE0_REVIEW.md` | Done |
+## 2. What was done in this round (Step 1 checklist)
 
-**Key corrections found:** NICE sepsis NG51 is superseded by NG253; MedEd101 is a pharmacy-board prep site, not nursing; ICU Delirium is a research centre, not a commercial LMS; KDIGO 2026 AKI/AKD remains a draft on KDIGO's own page; a prototype flaw (choice labels revealing answers) was found and fixed; the delirium objective no longer references CAM-ICU worksheets.
+| Request | Result |
+|---|---|
+| Audit repo and deliverables | Done (this document, `docs/IMPLEMENTATION.md`) |
+| Identify unresolved criteria | #5 and #6 (above) |
+| Complete source/licence verification where possible | Done: WHO, NICE, AARC, SSC 2026, PADIS 2025, BTF TBI-4, NPIAP 2019, AABB 2023 added/updated; see `SOURCE_VERIFICATION_REPORT.md` (Round 3 additions) |
+| Resolve/document primary references for 40 topics | 26 → **33 pinned**; remaining 7 documented as "TO SELECT": respiratory-deterioration early-warning score, arterial line care, shock recognition, GCS/neurological assessment, potassium disorders, CRRT nursing practice, ventilator-associated event prevention |
+| Draft guidelines not presented as final | Checked all docs/code (`grep`); KDIGO 2026 AKI/AKD is labelled DRAFT everywhere (register, curriculum, demo topic). **Now also enforced in the database** (draft guidelines need acknowledgement and are always labelled); tested |
+| Update clinical governance and reviewer requirements | `CLINICAL_GOVERNANCE.md` "Phase 1 status" section; reviewer roles map to `reviewer_specialties`; AI rule enforced |
+| No invented approvals/permissions | No reviewer names, approvals, SCCM permission or accreditation claims exist anywhere; the SCCM email remains an unsent draft |
 
-## 3. Outstanding tasks
+## 3. Remaining human dependencies
 
-1. **Human browser checks** (I cannot pass these challenges): NCBI Open RN collection page; AHA 2025 guideline pages and AHA permissions policy; AACN Competence Framework page.
-2. **Read licence/terms** for AARC, AHRQ, CDC, ISMP/ECRI, NICE, WHO, KDIGO, ASPEN.
-3. **Pin primary sources** for 14 P1 topics (Surviving Sepsis edition, neurocritical care, transfusion, pressure injury, VAE, early-warning score, etc.).
-4. **Read the A-priority guidelines in full** (23 topics) before drafting.
-5. Check the **AHA Feb 2026 algorithm change notice** and confirm adult BLS/ALS/post-arrest part numbers.
-6. Confirm Open RN Advanced Skills and Management books on their publisher pages.
-7. Second competitor pass: Arabic/Gulf providers, "other players", RN/NP Picmonic pricing, hands-on trial of competitors (requires accounts).
-8. Appoint named reviewers (§6).
-9. Figma version of wireframes (needs your approval).
-10. Send (or edit and send) the SCCM email; consider requests to AHA/ISMP if figures/lists are needed.
+1. **Browser checks:** NCBI Open RN collection page; AHA 2025 guideline pages and their permissions policy; AACN Competence Framework page.
+2. **Licence/permission decisions:** AARC, AHA, AHRQ, CDC, ISMP/ECRI, KDIGO, ASPEN reuse terms; WHO and NICE commercial-use clarification; SCCM permission (send `SCCM_PERMISSION_REQUEST.md`); CAM-ICU worksheet terms; H5P GPL review; stack licences (Next.js, Supabase, Tailwind, shadcn/ui, Lucide, Expo).
+3. **Reviewers:** appoint named, credentialed people for the eight roles; none are appointed. Decide per-topic required roles (CSV has proposals).
+4. **Select primary sources** for the 7 open P1 topics and read the A-priority guidelines in full before drafting.
+5. **Supabase/Vercel/domain/payment:** approval to create independent projects; payment provider; legal pages.
+6. **Arabic:** native-speaker and clinical-terminology review of the draft Arabic UI/domain names; Saudi/regional protocol layer research.
+7. Competitor/market follow-ups listed in `COMPETITOR_ANALYSIS.md` (Arabic/Gulf providers).
 
-## 4. Research limitations (read before relying on anything)
+## 4. Research limitations
 
-- Automated Chromium is not "a normal browser": Cloudflare (AHA) and reCAPTCHA (NCBI) still blocked it. Blocks are recorded as *unverified*, not *unavailable*.
-- Several facts come from **search-result summaries** (AHA dates, AARC journal citations, AACN ECCO price, NURSING.com CCRN FAQ price, Picmonic app ratings) and are labelled as such.
-- **No guideline or textbook was read in full.** Nothing in the curriculum is clinically verified.
-- Competitor pricing is promotional, US-oriented and date-specific; I did not trial any product, so statements on ICU content, simulations and mobile reflect public pages only.
-- No market-size numbers were estimated.
-- Pricing/feature pages can change; re-check before using them externally.
+Automated browsing cannot pass Cloudflare/reCAPTCHA. Several facts (AHA dates, AARC journal citations, SSC 2026, PADIS 2025, BTF, NPIAP, AABB, AACN prices, competitor details) come from search summaries and are labelled as such. **No guideline or textbook was read in full; no curriculum content is clinically verified.** A downloaded PostgREST binary could not be executed here (blocked by the environment's permission check), so API behaviour was tested at the PostgreSQL role level, not through PostgREST/GoTrue.
 
-## 5. Copyright and licensing risks
+## 5. Copyright and licensing risks (current)
 
 | Risk | Level | Mitigation |
 |---|---|---|
-| Copying AACN (framework, ECCO, KAT) | High | Original framework only; AACN does license its framework to platforms — a paid route exists if ever wanted |
-| SCCM ICU Liberation in a paid product | High | Permission email drafted; fallback = cite PADIS, own wording |
-| AHA algorithms/figures | High | Original diagrams only; permissions policy unread |
-| ISMP high-alert list (ECRI copyright) | High | Link to list; describe categories in own words |
-| AARC/KDIGO guideline tables | Medium–high | Paraphrase and cite; terms unread |
-| KDIGO draft cited as final | High (accuracy) | Version label rule; re-check before AKI/CRRT topics |
-| Open RN "except where otherwise noted" | Medium | Image-level licence check; attribution + modification notices |
-| WHO non-commercial licences | Medium | Cite only until read |
-| CAM-ICU worksheets (Vanderbilt copyright) | Medium | Teach principles; link out; ask permission if embedding |
-| H5P GPL components | Medium | Legal review before use |
-| Competitor trademark/endorsement implications (AACN, CCRN) | Medium | No implied affiliation |
+| Reusing WHO or NICE text commercially | High | Cite only (WHO is CC BY-NC-SA; NICE restricts commercial gain) |
+| AACN, SCCM, AHA, ISMP, KDIGO, AARC reuse | High | Original wording/diagrams only; RED sources require an "independently written" note in the CMS |
+| Open RN "except where otherwise noted" | Medium | Item-level image checks; attribution + modification notice |
+| CAM-ICU / scale worksheets | Medium | Teach principles; link out |
+| H5P GPL components | Medium | Legal review before adoption (not used in Phase 1) |
+| Draft guideline cited as final | High (accuracy) | DB-enforced acknowledgement + UI label |
 
 ## 6. Clinical reviewer requirements
 
-Eight roles are specified (`CLINICAL_REVIEWER_MATRIX.md`): senior ICU nurse educator (curriculum lead), bedside ICU nurse, clinical pharmacist, respiratory therapist, critical care physician, nephrology, neurology, infection prevention. **All are vacant; no names invented.** 26 of the 40 P1 topics need multidisciplinary review. Minimum to start Phase 2 realistically: curriculum lead + bedside nurse + pharmacist + intensivist, with RT/nephrology/neurology/IPC engaged for their topics. Reviewer availability is the critical path for launch.
+Eight roles defined (`CLINICAL_REVIEWER_MATRIX.md`); 26 of 40 P1 topics need multidisciplinary review. **None is appointed.** The software now enforces who may approve (assigned, MFA-verified, non-author, distinct people per required role; AI-assisted content ≥ 2 humans). Minimum to start Phase 2 content: curriculum lead, bedside nurse, pharmacist, intensivist.
 
-## 7. Git and pull request
+## 7. Decisions required from the product owner
 
-See the PR link in the session summary. The PR targets `main`, is **not merged**, and carries the checklist above. `main` was not modified.
+1. Approve (or amend) the Phase 0 closure and the open items above.
+2. Approve creation of independent Supabase/Vercel projects and any spend; domain and name.
+3. Appoint reviewers / review model and budget.
+4. Send or amend the SCCM email.
+5. Curriculum additions (chest drain, CVC care, early mobility), the two merges, and new domains 11–12.
+6. Primary jurisdiction(s) for scope-of-practice wording; Saudi/Arabic localisation plan and reviewer.
+7. Payment provider (needs to work in target markets).
+8. Allow a human (or a permitted route) to run the browser checks in §3.1, and whether PostgREST-level API tests may be run in an approved environment.
 
-## 8. Decisions still required from the product owner
+---
 
-1. **Approve or reject Phase 0** after reading this pack (nothing else proceeds until then).
-2. Appoint reviewers / choose the review model and budget.
-3. Send the SCCM email? Edit placeholders (name, organisation, countries).
-4. Curriculum: add the 3 P1 candidates (chest drain, CVC care, early mobility)? Approve the 2 merges? Approve new Domains 11–12?
-5. Figma wireframes: yes/no (and which Figma account/team).
-6. Second competitor pass including Arabic/Gulf market: yes/no.
-7. Name, domain, budget and approval to create Supabase/Vercel/payment accounts (no spending yet).
-8. Payment provider and Saudi payment methods.
-9. Primary jurisdiction for scope-of-practice rules.
-10. Who performs the human browser checks in §3.1 (you, or grant me another route).
+# Phase 1 summary (updated after live Supabase integration; details in `docs/LIVE_INTEGRATION_REPORT.md`)
+
+| Exit requirement | Status | Evidence |
+|---|---|---|
+| Homepage and navigation work | ✅ | Playwright (desktop/tablet/mobile), keyboard, axe, live UI tests |
+| Registration and authentication work | ⚠️ **Verified live except real email delivery** | Sign-up validation, verification-link flow, sign-in/out, session persistence/refresh/global sign-out, password reset, MFA (TOTP) all pass against the live dev project (43 API + 10 UI tests). **Email delivery** needs custom SMTP (built-in sender: 2/hour, team members only) |
+| Schema reproducible through migrations | ✅ | Applied 0001–0004 to the live project; local tests rebuild from scratch every run (93 tests) |
+| RLS prevents unauthorized access | ✅ | 93 DB tests + live abuse/isolation tests + catalog verification (15 RPCs for `authenticated`, none for `anon`) |
+| Educational domains and topic pages function | ✅ | Demo content (e2e) and live published content created through the real workflow |
+| Bookmarks and progress persist correctly | ✅ | Live API and UI tests (persist across reloads and sign-ins) |
+| Admin CMS works | ✅ | Live UI test: author drafts + uploads image + submits; publisher assigns; reviewer approves; publisher publishes |
+| Clinical publication workflow enforced | ✅ | `0003_workflow.sql`, 25 local + live workflow tests; unauthorised/escalation attempts refused |
+| Internationalization works | ✅ | en/ar, RTL, parity tests, e2e |
+| Mobile and desktop responsive | ✅ | 3 viewports, overflow tests |
+| Automated checks pass | ✅ locally | lint, typecheck, 58 unit, 93 DB, 124 e2e + 43 live API + 10 live UI (see PR for GitHub CI) |
+| No known critical vulnerabilities | ✅ none known; **not independently pen-tested** | prod `npm audit`: 0; advisors reviewed (2 intentional definer views, 15 role-checked RPCs); bundle has no secret keys; nonce-based CSP |
+| Documentation updated | ✅ | `docs/*`, this file |
+
+**Phase 1 readiness:** technically ready for supervisory review and for a staging deployment. **Not** ready for public launch or clinical publication: that still requires custom SMTP + real-email verification, CAPTCHA, appointed credentialed reviewers, licence/permission decisions, an erasure policy, and a separate production project.

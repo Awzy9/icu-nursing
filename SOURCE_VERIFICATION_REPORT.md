@@ -55,3 +55,25 @@ Verification date: **2026-11-14** · Data: [`sources/source_register.csv`](sourc
 ## Verdict
 
 Source register is materially better but **not complete**. Six entries are verified to licence/permission level by reading the publisher's own page (Open RN Fundamentals, Skills and Health Alterations; SCCM permission text; React Flow `LICENSE`; H5P licensing page). KDIGO's draft status and NICE NG253's dates are also verified, but their licences are not. No guideline has been verified by full-text review. Do not treat Phase 0 criteria 5 and 6 as fully satisfied.
+
+
+---
+
+# Round 3 additions (2026-11-14)
+
+| Item | Finding | Evidence |
+|---|---|---|
+| Surviving Sepsis Campaign | **2026 adult guidelines** published in *Critical Care Medicine* 2026-03-23 (DOI 10.1097/CCM.0000000000007075 per SCCM listing); replaces the 2021 edition | Search results (SCCM listing + secondary summaries); full text **not** read |
+| PADIS | 2018 guideline **plus 2025 focused update** (*Crit Care Med* 2025;53(3):e711–e727); pain recommendations unchanged | Search results; not read |
+| Brain Trauma Foundation severe TBI | 4th edition (2016) is the ICP/CPP primary source; check for updates | Search results; not read |
+| NPIAP/EPUAP/PPPIA pressure injury | International guideline 2019; a newer edition was said to be in progress | Search results; not read |
+| AABB RBC transfusion | JAMA 2023;330(19):1892–1902 (covers thresholds only, not administration/reaction procedure) | Search results (PubMed listing) |
+| **WHO** | Copyright page **read in Chromium**: WHO publications are **CC BY-NC-SA 3.0 IGO (non-commercial)** → cannot be adapted into a paid product without WHO permission; cite only | Primary page |
+| **NICE** | Terms page **read**: content governed by a Notice of Rights; terms say not to use the website for commercial gain → treat as cite-only until clarified; sepsis NG253 published 2025-11-19, updated 2026-09-23 | Primary pages |
+| AHA | Cloudflare challenge **still not passable** automatically (cpr.heart.org, professional.heart.org, ahajournals.org) | Browser attempts |
+| NCBI/Open RN | reCAPTCHA **still blocks** both Bookshelf URLs; publisher (Pressbooks/WisTech) pages remain the verified route | Browser attempts |
+| AARC | PMC editorial (Respir Care 2024;69(7):911–912) loaded; guidelines use GRADE/INGUIDE ("phase 5" methods); no reuse terms found | Primary page |
+| CDC / AHRQ / KDIGO / ASPEN / ISMP terms | Candidate terms pages returned 404 or had no reuse statement → licence status remains **unverified** | Browser attempts |
+
+## Seven first-release topics still without a pinned primary source (requires reviewer choice)
+Recognition of respiratory deterioration (early-warning score), arterial line care, shock recognition, GCS/neurological assessment, potassium disorders, CRRT nursing practice, ventilator-associated event prevention. No single authoritative guideline could be identified and verified independently; the curriculum CSV marks them "TO SELECT". They must not be drafted until a reviewer selects the source.

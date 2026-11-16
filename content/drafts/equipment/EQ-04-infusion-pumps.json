@@ -1,0 +1,106 @@
+{
+ "equipment_id": "EQ-04",
+ "number": 4,
+ "title": "Infusion pumps",
+ "category": "infusion-pumps",
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+ "device_neutral": true,
+ "manufacturer_documents": [],
+ "related_skill": "SK-22",
+ "evidence_status": "partial",
+ "diagram": {
+  "kind": "flow",
+  "original_graphic": true,
+  "parts": [
+   "Container",
+   "Pump",
+   "Occlusion sensor",
+   "Patient connection"
+  ],
+  "alt_text_needed": true
+ },
+ "parameters": [
+  {
+   "name": "Programmed rate",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Volume infused",
+   "explanation": null,
+   "support": "needs_source"
+  },
+  {
+   "name": "Occlusion and air alarms",
+   "explanation": null,
+   "support": "needs_source"
+  }
+ ],
+ "safety_concepts": [
+  {
+   "text": "Verify programming (dosage, rate, volume) at change of shift, when any change is made to the settings, when a new bag is hung and when new tubing is primed (FDA).",
+   "support": "sourced",
+   "sources": [
+    "S-FDA-PUMP"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "Label pump channels and tubing at the port of entry with the drug or fluid name if the pump does not display it (FDA).",
+   "support": "sourced",
+   "sources": [
+    "S-FDA-PUMP"
+   ],
+   "section": "safety"
+  },
+  {
+   "text": "Use the drug library where one exists and respond carefully to alerts rather than silencing them (FDA).",
+   "support": "sourced",
+   "sources": [
+    "S-FDA-PUMP"
+   ],
+   "section": "safety"
+  }
+ ],
+ "monitoring_concepts": [],
+ "escalation_concepts": [
+  {
+   "text": "Stop and report pump alerts you cannot resolve, programming discrepancies against the order and any suspected over- or under-infusion.",
+   "support": "partial",
+   "sources": [
+    "S-FDA-PUMP",
+    "S-ISMP-HA"
+   ],
+   "section": "escalation"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S-ISMP-HA",
+   "read": "full",
+   "use": "ISMP high-alert medication list (2024): reproduction needs permission"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump risk-reduction page"
+  }
+ ],
+ "required_sources": [
+  "Source explaining each listed monitored parameter in device-neutral terms",
+  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "Unit policy for this equipment"
+ ],
+ "gaps": [
+  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+ ],
+ "permissions": [
+  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+ ]
+}

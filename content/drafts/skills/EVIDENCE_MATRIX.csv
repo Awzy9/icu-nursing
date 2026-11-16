@@ -1,0 +1,239 @@
+skill_id,title,section,section_support,items,sourced,partial,local_protocol,source_ids
+SK-01,Arterial line care,indications,partial,3,1,2,0,S-ERC-PRC-2025;S-ESICM-SHOCK-2014;S-SSC-2021;S-SSC-2026
+SK-01,Arterial line care,safety,full,5,5,0,0,S-CDC-BSI-2011
+SK-01,Arterial line care,responsibilities,partial,2,0,2,0,S-CDC-BSI-2011
+SK-01,Arterial line care,scope,partial,1,0,1,0,S-NCSBN-DELEG-2019
+SK-01,Arterial line care,equipment,local_protocol,2,1,0,1,S-CDC-BSI-2011
+SK-01,Arterial line care,assessment,partial,1,0,1,0,S-CDC-BSI-2011;S-SSC-2021
+SK-01,Arterial line care,procedure,local_protocol,1,0,0,1,
+SK-01,Arterial line care,monitoring,partial,1,0,1,0,S-ESICM-SHOCK-2014
+SK-01,Arterial line care,escalation,partial,1,0,1,0,S-CDC-BSI-2011;S-SSC-2021
+SK-01,Arterial line care,complications,partial,1,0,1,0,S-SSC-2021
+SK-01,Arterial line care,documentation,local_protocol,1,0,0,1,
+SK-01,Arterial line care,communication,partial,1,0,1,0,S-AHRQ-TS
+SK-02,Central venous catheter care,indications,partial,1,1,0,0,S-CDC-BSI-2011
+SK-02,Central venous catheter care,safety,full,5,5,0,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
+SK-02,Central venous catheter care,responsibilities,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
+SK-02,Central venous catheter care,scope,partial,1,0,1,0,S-NCSBN-DELEG-2019
+SK-02,Central venous catheter care,equipment,local_protocol,1,0,0,1,
+SK-02,Central venous catheter care,assessment,partial,1,0,1,0,S-CDC-BSI-2011
+SK-02,Central venous catheter care,procedure,local_protocol,2,0,1,1,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
+SK-02,Central venous catheter care,monitoring,partial,1,0,1,0,S-CDC-BSI-2011
+SK-02,Central venous catheter care,escalation,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
+SK-02,Central venous catheter care,complications,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
+SK-02,Central venous catheter care,errors,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
+SK-02,Central venous catheter care,documentation,local_protocol,1,0,0,1,
+SK-02,Central venous catheter care,communication,partial,1,0,1,0,S-AHRQ-TS
+SK-03,Peripheral IV care,indications,partial,3,3,0,0,S-CDC-BSI-2011
+SK-03,Peripheral IV care,safety,full,3,3,0,0,S-CDC-BSI-2011
+SK-03,Peripheral IV care,responsibilities,partial,1,1,0,0,S-CDC-BSI-2011
+SK-03,Peripheral IV care,scope,local_protocol,1,0,0,1,
+SK-03,Peripheral IV care,equipment,local_protocol,1,0,0,1,
+SK-03,Peripheral IV care,assessment,partial,1,1,0,0,S-CDC-BSI-2011
+SK-03,Peripheral IV care,procedure,local_protocol,1,0,0,1,
+SK-03,Peripheral IV care,monitoring,partial,1,0,1,0,S-CDC-BSI-2011
+SK-03,Peripheral IV care,escalation,partial,1,0,1,0,S-CDC-BSI-2011;S-PVP-META-2026
+SK-03,Peripheral IV care,complications,partial,1,0,1,0,S-CDC-BSI-2011
+SK-03,Peripheral IV care,documentation,local_protocol,1,0,0,1,
+SK-04,Endotracheal tube care,indications,partial,1,0,1,0,S-AARC-PVA
+SK-04,Endotracheal tube care,safety,full,3,3,0,0,S-AARC-PVA;S-SHEA-VAP-2022
+SK-04,Endotracheal tube care,responsibilities,partial,2,0,2,0,S-AARC-PVA;S-INTL-PI-2026
+SK-04,Endotracheal tube care,scope,local_protocol,1,0,0,1,
+SK-04,Endotracheal tube care,equipment,local_protocol,1,0,0,1,
+SK-04,Endotracheal tube care,assessment,partial,1,0,1,0,S-AARC-PVA
+SK-04,Endotracheal tube care,procedure,local_protocol,1,0,0,1,
+SK-04,Endotracheal tube care,monitoring,partial,1,0,1,0,S-AARC-PVA;S-ERC-ALS-2025
+SK-04,Endotracheal tube care,escalation,partial,1,0,1,0,S-AARC-PVA;S-ERC-ALS-2025
+SK-04,Endotracheal tube care,complications,partial,1,0,1,0,S-AARC-PVA;S-SHEA-VAP-2022
+SK-04,Endotracheal tube care,documentation,local_protocol,1,0,0,1,
+SK-04,Endotracheal tube care,communication,partial,1,0,1,0,S-AHRQ-TS
+SK-05,Tracheostomy care,indications,partial,1,1,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,safety,partial,4,4,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,responsibilities,partial,3,2,1,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,scope,local_protocol,1,0,0,1,
+SK-05,Tracheostomy care,equipment,partial,2,1,1,0,N-ICS-TRANSFER-2026;N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,assessment,partial,2,2,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,procedure,partial,3,1,2,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,monitoring,partial,1,1,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,escalation,partial,1,1,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,complications,partial,1,0,1,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,documentation,local_protocol,1,0,0,1,
+SK-05,Tracheostomy care,communication,partial,1,0,1,0,N-NHSGGC-TRACH-2022
+SK-06,Artificial airway suctioning,indications,partial,1,0,1,0,S-AARC-SUCT
+SK-06,Artificial airway suctioning,safety,partial,4,3,1,0,S-AARC-SUCT;S-SHEA-VAP-2022
+SK-06,Artificial airway suctioning,responsibilities,partial,2,0,2,0,N-NHSGGC-TRACH-2022;S-AARC-SUCT
+SK-06,Artificial airway suctioning,scope,local_protocol,1,0,0,1,
+SK-06,Artificial airway suctioning,equipment,local_protocol,1,0,0,1,
+SK-06,Artificial airway suctioning,assessment,partial,1,0,1,0,S-AARC-SUCT
+SK-06,Artificial airway suctioning,procedure,local_protocol,1,0,0,1,
+SK-06,Artificial airway suctioning,monitoring,partial,1,0,1,0,S-AARC-SUCT
+SK-06,Artificial airway suctioning,escalation,partial,1,0,1,0,S-AARC-SUCT
+SK-06,Artificial airway suctioning,complications,partial,1,0,1,0,S-AARC-SUCT
+SK-06,Artificial airway suctioning,documentation,local_protocol,1,0,0,1,
+SK-07,Ventilator safety checks,indications,partial,1,0,1,0,S-AARC-PVA
+SK-07,Ventilator safety checks,safety,partial,2,0,2,0,S-DRAEGER-V500-IFU;S-HAMILTON-C1
+SK-07,Ventilator safety checks,responsibilities,partial,1,0,1,0,S-AARC-PVA
+SK-07,Ventilator safety checks,scope,local_protocol,1,0,0,1,
+SK-07,Ventilator safety checks,equipment,local_protocol,1,0,0,1,
+SK-07,Ventilator safety checks,assessment,partial,1,1,0,0,S-ESICM-ARDS-2023
+SK-07,Ventilator safety checks,procedure,local_protocol,1,0,0,1,
+SK-07,Ventilator safety checks,monitoring,partial,1,0,1,0,S-AARC-PVA
+SK-07,Ventilator safety checks,escalation,partial,1,0,1,0,S-AARC-PVA
+SK-07,Ventilator safety checks,documentation,local_protocol,1,0,0,1,
+SK-08,Oxygen delivery devices,indications,partial,1,0,1,0,S-AARC-O2
+SK-08,Oxygen delivery devices,safety,partial,2,1,1,0,S-ERC-ALS-2025;S-RCP-NEWS2
+SK-08,Oxygen delivery devices,responsibilities,partial,1,0,1,0,S-AARC-O2;S-RCP-NEWS2
+SK-08,Oxygen delivery devices,scope,local_protocol,1,0,0,1,
+SK-08,Oxygen delivery devices,equipment,local_protocol,1,0,0,1,
+SK-08,Oxygen delivery devices,assessment,partial,2,1,1,0,S-AARC-O2;S-AARC-PVA;S-OPENRN-FUND-CH8
+SK-08,Oxygen delivery devices,procedure,local_protocol,1,0,0,1,
+SK-08,Oxygen delivery devices,monitoring,partial,2,1,1,0,S-AARC-O2;S-OPENRN-FUND-CH8
+SK-08,Oxygen delivery devices,escalation,partial,1,0,1,0,S-AARC-O2;S-RCP-NEWS2
+SK-08,Oxygen delivery devices,documentation,local_protocol,1,0,0,1,
+SK-09,Blood transfusion,indications,local_protocol,1,0,0,1,
+SK-09,Blood transfusion,safety,partial,4,0,4,0,S-AABB-COI-2024;S-OPENRN-ADV-CH3
+SK-09,Blood transfusion,responsibilities,partial,1,0,1,0,S-AABB-COI-2024;S-NICE-NG24
+SK-09,Blood transfusion,scope,local_protocol,1,0,0,1,
+SK-09,Blood transfusion,equipment,local_protocol,1,0,0,1,
+SK-09,Blood transfusion,assessment,partial,1,0,1,0,S-NICE-NG24
+SK-09,Blood transfusion,procedure,local_protocol,1,0,0,1,
+SK-09,Blood transfusion,monitoring,partial,1,0,1,0,S-AABB-COI-2024
+SK-09,Blood transfusion,escalation,partial,1,0,1,0,S-AABB-COI-2024;S-BSH-ATR
+SK-09,Blood transfusion,complications,partial,1,0,1,0,S-AABB-COI-2024
+SK-09,Blood transfusion,documentation,local_protocol,1,0,0,1,
+SK-10,Enteral feeding,indications,partial,1,0,1,0,S-ESICM-EEN-2017
+SK-10,Enteral feeding,safety,partial,3,1,2,0,S-NHSE-NGT-2016;S-NICE-CG32;S-SHEA-VAP-2022
+SK-10,Enteral feeding,responsibilities,partial,1,0,1,0,S-NICE-CG32
+SK-10,Enteral feeding,scope,local_protocol,1,0,0,1,
+SK-10,Enteral feeding,equipment,local_protocol,1,0,0,1,
+SK-10,Enteral feeding,assessment,partial,1,0,1,0,S-NICE-CG32
+SK-10,Enteral feeding,procedure,local_protocol,1,0,0,1,
+SK-10,Enteral feeding,monitoring,partial,1,0,1,0,S-NICE-CG32;S-SHEA-VAP-2022
+SK-10,Enteral feeding,escalation,partial,1,0,1,0,S-NHSE-NGT-2016
+SK-10,Enteral feeding,documentation,local_protocol,1,0,0,1,
+SK-11,Nasogastric tube care,indications,local_protocol,1,0,0,1,
+SK-11,Nasogastric tube care,safety,partial,2,0,2,0,S-NHSE-NGT-2016;S-NICE-CG32
+SK-11,Nasogastric tube care,responsibilities,partial,1,0,1,0,S-NICE-CG32
+SK-11,Nasogastric tube care,assessment,partial,1,0,1,0,S-NICE-CG32
+SK-11,Nasogastric tube care,procedure,local_protocol,1,0,0,1,
+SK-11,Nasogastric tube care,escalation,partial,1,0,1,0,S-NHSE-NGT-2016;S-NICE-CG32
+SK-11,Nasogastric tube care,documentation,local_protocol,1,0,0,1,
+SK-12,Urinary catheter care,indications,full,2,2,0,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,safety,full,4,4,0,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,responsibilities,full,1,1,0,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,scope,local_protocol,1,0,0,1,
+SK-12,Urinary catheter care,equipment,partial,1,1,0,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,procedure,local_protocol,1,0,0,1,
+SK-12,Urinary catheter care,monitoring,partial,1,1,0,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,escalation,partial,1,0,1,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,complications,partial,1,0,1,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,documentation,local_protocol,1,0,0,1,
+SK-13,Chest drain monitoring,indications,local_protocol,1,0,0,1,
+SK-13,Chest drain monitoring,safety,partial,6,0,6,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,responsibilities,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,scope,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,equipment,local_protocol,1,0,0,1,
+SK-13,Chest drain monitoring,assessment,partial,2,0,2,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,monitoring,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,escalation,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,complications,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,documentation,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,procedure,local_protocol,1,0,0,1,
+SK-14,Pressure injury prevention,indications,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,safety,partial,2,0,2,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,responsibilities,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,scope,local_protocol,1,0,0,1,
+SK-14,Pressure injury prevention,assessment,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,procedure,local_protocol,1,0,0,1,
+SK-14,Pressure injury prevention,monitoring,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,escalation,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,documentation,partial,1,0,1,0,S-INTL-PI-2026
+SK-15,Patient repositioning,safety,partial,2,0,2,0,S-INTL-PI-2026
+SK-15,Patient repositioning,responsibilities,partial,1,0,1,0,S-INTL-PI-2026
+SK-15,Patient repositioning,procedure,local_protocol,1,0,0,1,
+SK-15,Patient repositioning,monitoring,partial,1,0,1,0,S-AARC-PVA;S-INTL-PI-2026
+SK-15,Patient repositioning,escalation,partial,1,0,1,0,S-INTL-PI-2026
+SK-15,Patient repositioning,documentation,local_protocol,1,0,0,1,
+SK-16,Safe patient mobilization,indications,partial,1,1,0,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,safety,partial,3,3,0,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,responsibilities,partial,1,1,0,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,scope,partial,1,1,0,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,assessment,partial,1,0,1,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,procedure,local_protocol,1,0,0,1,
+SK-16,Safe patient mobilization,monitoring,partial,1,0,1,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,escalation,partial,1,0,1,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,documentation,local_protocol,1,0,0,1,
+SK-17,CRRT circuit monitoring,responsibilities,partial,2,0,2,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
+SK-17,CRRT circuit monitoring,safety,partial,4,0,4,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
+SK-17,CRRT circuit monitoring,scope,local_protocol,1,0,0,1,
+SK-17,CRRT circuit monitoring,equipment,local_protocol,1,0,0,1,
+SK-17,CRRT circuit monitoring,assessment,partial,1,0,1,0,N-AHS-CRRT-ALARM-2025
+SK-17,CRRT circuit monitoring,procedure,local_protocol,1,0,0,1,
+SK-17,CRRT circuit monitoring,monitoring,partial,1,0,1,0,S-KDIGO-AKI-2012
+SK-17,CRRT circuit monitoring,escalation,partial,2,0,2,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
+SK-17,CRRT circuit monitoring,documentation,local_protocol,1,0,0,1,
+SK-18,ECG monitoring,safety,partial,1,0,1,0,S-OPENRN-ADV-C7
+SK-18,ECG monitoring,responsibilities,partial,1,0,1,0,S-OPENRN-ADV-C7
+SK-18,ECG monitoring,equipment,partial,1,0,1,0,S-OPENRN-ADV-C7
+SK-18,ECG monitoring,procedure,local_protocol,1,0,0,1,
+SK-18,ECG monitoring,monitoring,partial,1,0,1,0,S-OPENRN-ADV-C7
+SK-18,ECG monitoring,escalation,local_protocol,1,0,0,1,
+SK-18,ECG monitoring,documentation,local_protocol,1,0,0,1,
+SK-19,Defibrillator safety,indications,local_protocol,1,0,0,1,
+SK-19,Defibrillator safety,safety,partial,3,0,3,0,S-ERC-ALS-2025
+SK-19,Defibrillator safety,responsibilities,partial,1,0,1,0,S-ERC-ALS-2025
+SK-19,Defibrillator safety,scope,local_protocol,1,0,0,1,
+SK-19,Defibrillator safety,equipment,local_protocol,1,0,0,1,
+SK-19,Defibrillator safety,procedure,local_protocol,1,0,0,1,
+SK-19,Defibrillator safety,escalation,partial,1,0,1,0,S-ERC-ALS-2025
+SK-19,Defibrillator safety,documentation,local_protocol,1,0,0,1,
+SK-20,Intrahospital patient transport,indications,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,safety,partial,4,4,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,responsibilities,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,scope,local_protocol,1,0,0,1,
+SK-20,Intrahospital patient transport,equipment,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,preparation,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,assessment,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,procedure,local_protocol,1,0,0,1,
+SK-20,Intrahospital patient transport,monitoring,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,escalation,local_protocol,1,0,0,1,
+SK-20,Intrahospital patient transport,documentation,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,communication,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-21,Infection prevention (standard precautions),indications,partial,1,0,1,0,S-CDC-IC
+SK-21,Infection prevention (standard precautions),safety,partial,4,0,4,0,S-CDC-HANDHYG-2024;S-CDC-IC
+SK-21,Infection prevention (standard precautions),responsibilities,partial,1,0,1,0,S-CDC-IC
+SK-21,Infection prevention (standard precautions),scope,local_protocol,1,0,0,1,
+SK-21,Infection prevention (standard precautions),procedure,local_protocol,1,0,0,1,
+SK-21,Infection prevention (standard precautions),escalation,partial,1,0,1,0,S-CDC-IC
+SK-21,Infection prevention (standard precautions),documentation,local_protocol,1,0,0,1,
+SK-22,Medication infusion pump safety,safety,full,3,3,0,0,S-FDA-PUMP
+SK-22,Medication infusion pump safety,responsibilities,partial,1,1,0,0,S-FDA-PUMP
+SK-22,Medication infusion pump safety,scope,local_protocol,1,0,0,1,
+SK-22,Medication infusion pump safety,equipment,local_protocol,1,0,0,1,
+SK-22,Medication infusion pump safety,procedure,local_protocol,1,0,0,1,
+SK-22,Medication infusion pump safety,escalation,partial,1,0,1,0,S-FDA-PUMP;S-ISMP-HA
+SK-22,Medication infusion pump safety,documentation,local_protocol,1,0,0,1,
+SK-23,Sedation assessment,safety,partial,1,0,1,0,S-SCCM-PADIS
+SK-23,Sedation assessment,responsibilities,partial,2,0,2,0,S-SCCM-PADIS
+SK-23,Sedation assessment,scope,local_protocol,1,0,0,1,
+SK-23,Sedation assessment,assessment,local_protocol,1,0,0,1,
+SK-23,Sedation assessment,monitoring,partial,1,0,1,0,S-SCCM-PADIS
+SK-23,Sedation assessment,escalation,partial,1,0,1,0,S-SCCM-PADIS
+SK-23,Sedation assessment,documentation,local_protocol,1,0,0,1,
+SK-24,Neurological assessment,safety,partial,1,0,1,0,S-GCS-OFFICIAL
+SK-24,Neurological assessment,responsibilities,partial,2,0,2,0,S-GCS-OFFICIAL
+SK-24,Neurological assessment,scope,local_protocol,1,0,0,1,
+SK-24,Neurological assessment,assessment,partial,2,1,0,1,S-OPENRN-HA-CVA
+SK-24,Neurological assessment,monitoring,partial,2,1,1,0,S-GCS-OFFICIAL;S-OPENRN-HA-CVA
+SK-24,Neurological assessment,escalation,partial,2,0,2,0,S-GCS-OFFICIAL;S-OPENRN-HA-CVA
+SK-24,Neurological assessment,communication,partial,1,0,1,0,S-GCS-OFFICIAL
+SK-24,Neurological assessment,documentation,local_protocol,1,0,0,1,
+SK-25,Pain assessment,indications,partial,1,0,1,0,S-SCCM-PADIS
+SK-25,Pain assessment,safety,partial,1,0,1,0,S-SCCM-PADIS
+SK-25,Pain assessment,responsibilities,partial,1,0,1,0,S-SCCM-PADIS
+SK-25,Pain assessment,scope,local_protocol,1,0,0,1,
+SK-25,Pain assessment,assessment,partial,1,0,1,0,S-CPOT-REVIEW-2024
+SK-25,Pain assessment,procedure,partial,1,0,1,0,S-SCCM-PADIS
+SK-25,Pain assessment,monitoring,partial,1,0,1,0,S-SCCM-PADIS
+SK-25,Pain assessment,escalation,partial,1,0,1,0,S-SCCM-PADIS
+SK-25,Pain assessment,documentation,local_protocol,1,0,0,1,

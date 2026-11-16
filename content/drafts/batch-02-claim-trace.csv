@@ -1,0 +1,567 @@
+draft,claim,source,location,recommendation_strength_or_certainty,verification
+D06-T07,Head of bed 30-45 degrees is an essential practice,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2 and rationale,Essential; low certainty,text match
+D06-T07,Oral care with toothbrushing but without chlorhexidine is essential,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; moderate,text match
+D06-T07,Chlorhexidine oral care generally not recommended,SHEA/IDSA/APIC 2022 (PMC10903147),Summary of changes,Not recommended; moderate,text match
+D06-T07,"Minimize sedation: avoid benzodiazepines, use a protocol, ventilator liberation protocol",SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; moderate,text match
+D06-T07,Early enteral vs parenteral nutrition essential,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; high,text match
+D06-T07,Change ventilator circuit only if visibly soiled or malfunctioning,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; high,text match
+D06-T07,Maintain/improve physical conditioning (mobilisation),SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Essential; moderate,text match
+D06-T07,Frequent cuff-pressure monitoring generally not recommended for VAP prevention,SHEA/IDSA/APIC 2022 (PMC10903147),Section on approaches not recommended,Not recommended; moderate,text match
+D06-T07,Manual cuff measurement can lose pressure (lab study) - nuance,SHEA/IDSA/APIC 2022 (PMC10903147),"Rationale, cuff monitoring",Single lab investigation,text match
+D06-T07,Subglottic secretion drainage tubes are an additional approach (>48-72 h ventilation),SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Additional; moderate,text match
+D06-T07,Monitoring residual gastric volumes: no impact on VAP rates,SHEA/IDSA/APIC 2022 (PMC10903147),Section on interventions with no impact,No impact; moderate,text match
+D06-T07,VAC definition: PEEP rise >=3 cm H2O or FiO2 rise >=20 points sustained >=2 days after >=2 stable days,SHEA/IDSA/APIC 2022 (PMC10903147),Introduction/VAE definition,Surveillance definition,text match
+D06-T07,AARC 2024: assess cuff pressure with a manometer,AARC Patient-Ventilator Assessment CPG 2024,Summary recommendation 13,Strong; high,text match
+D06-T07,AARC 2024: continuous cuff-pressure assessment should not be implemented to reduce VAP risk,AARC Patient-Ventilator Assessment CPG 2024,Summary recommendation 14,Strong; high,text match
+D06-T07,AARC 2024: palpation of pilot balloon is inaccurate vs manometer,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative evidence,text match
+D06-T07,AARC 2024: infrequent vs every-8-hour cuff checks had similar VAE rates (single trial),AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Single trial,text match
+D06-T07,AARC 2024: SHEA recommendations agree,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Authors statement,text match
+D01-T07,ESICM: low tidal volume 4-8 mL/kg PBW recommended in ARDS,ESICM ARDS 2023 (PMC10354163),Rec 5.1,Strong; high,text match
+D01-T07,ESICM: plateau pressure <30 cmH2O described as current practice,ESICM ARDS 2023 (PMC10354163),Rec 5.1 expert opinion,Expert opinion on clinical application,text match
+D01-T07,"ESICM: prone positioning recommended for moderate-severe ARDS (PaO2/FiO2 <150, PEEP >=5)",ESICM ARDS 2023 (PMC10354163),Rec 7.1,Strong; high,text match
+D01-T07,"ESICM: start proning early after stabilisation, prolonged sessions",ESICM ARDS 2023 (PMC10354163),Rec 7.2,Strong,text match
+D01-T07,ESICM: against prolonged high-pressure recruitment manoeuvres (>=35 cmH2O >=1 min),ESICM ARDS 2023 (PMC10354163),Rec 6.3,Strong; moderate,text match
+D01-T07,ESICM: suggest against routine brief recruitment manoeuvres,ESICM ARDS 2023 (PMC10354163),Rec 6.4,Weak; high (no effect),text match
+D01-T07,ESICM: no recommendation on higher vs lower PEEP/FiO2 strategy,ESICM ARDS 2023 (PMC10354163),Rec 6.1,No recommendation,text match
+D01-T07,ESICM: against routine continuous NMBA infusion (non-COVID moderate-severe ARDS),ESICM ARDS 2023 (PMC10354163),Rec 8.1,Strong; moderate,text match
+D01-T07,ESICM: HFNO over conventional oxygen in AHRF to reduce intubation,ESICM ARDS 2023 (PMC10354163),Rec 3.1,Strong; moderate,text match
+D01-T07,ESICM: ECMO for severe ARDS in a qualified centre,ESICM ARDS 2023 (PMC10354163),Rec 9.1,Strong; moderate,text match
+D01-T07,ESICM: driving pressure/plateau limits listed as research gaps,ESICM ARDS 2023 (PMC10354163),Unresolved questions,Research gap,text match
+D01-T07,AARC 2024: assess plateau pressure (strong/high),AARC Patient-Ventilator Assessment CPG 2024,Summary rec 1,Strong; high,text match
+D01-T07,"AARC 2024: assess tidal volume, 4-8 mL/kg PBW (strong/high)",AARC Patient-Ventilator Assessment CPG 2024,Summary rec 2,Strong; high,text match
+D01-T07,AARC 2024: document VT as mL/kg PBW,AARC Patient-Ventilator Assessment CPG 2024,Summary rec 3,Strong; high,text match
+D01-T07,AARC 2024: assess PEEP and auto-PEEP,AARC Patient-Ventilator Assessment CPG 2024,Summary rec 4,Strong; high,text match
+D01-T07,"AARC 2024: suggest assessing driving pressure (conditional, low); Table 2 target <=15 cmH2O",AARC Patient-Ventilator Assessment CPG 2024,Summary rec 5; Table 2,Conditional; low,text match
+D01-T07,AARC 2024: Table 2 plateau limit <=30 cmH2O adults (<=28 paediatric),AARC Patient-Ventilator Assessment CPG 2024,Table 2,Table,text match
+D02-T08,Shock defined as life-threatening generalised acute circulatory failure with inadequate oxygen utilisation,ESICM shock consensus 2014 (PMC4239778),Statement 1,Ungraded,text match
+D02-T08,"Four patterns: hypovolaemic, cardiogenic, obstructive, distributive",ESICM shock consensus 2014 (PMC4239778),Statement 3,Statement of fact,text match
+D02-T08,"Skin, kidney and brain are the accessible perfusion windows",ESICM shock consensus 2014 (PMC4239778),Statement 5,Statement of fact,text match
+D02-T08,Hypotension (SBP<90 / MAP<65 / fall >=40) should not be required to define shock,ESICM shock consensus 2014 (PMC4239778),Statement 9,Level 1; moderate,text match
+D02-T08,Recommend measuring lactate when shock suspected,ESICM shock consensus 2014 (PMC4239778),Statement 11,Level 1; low,text match
+D02-T08,Initial MAP target at least 65 mmHg; individualise,ESICM shock consensus 2014 (PMC4239778),Statement 22,Level 1; low,text match
+D02-T08,Echocardiography preferred first for type of shock,ESICM shock consensus 2014 (PMC4239778),Statement 14,Level 2; moderate,text match
+D02-T08,Arterial and central venous catheters when not responsive or on vasopressors,ESICM shock consensus 2014 (PMC4239778),Statement 17,Ungraded best practice,text match
+D02-T08,Urine output <0.5 mL/kg/h as renal window marker,ESICM shock consensus 2014 (PMC4239778),Pathophysiology text,Narrative,text match
+D02-T08,SSC 2021: capillary refill time as adjunct in septic shock,SSC 2021 (PMC8486643),Rec 8,Weak; low,text match
+D02-T08,SSC 2021: initial MAP target 65 mmHg for septic shock on vasopressors,SSC 2021 (PMC8486643),Rec 9,Strong; moderate,text match
+D04-T02,NICE: detect AKI by creatinine rise >=26 micromol/L in 48 h,NICE NG148 (upd. 2024-10-16),1.3.1,2013,text match
+D04-T02,NICE: urine output <0.5 mL/kg/h for >6 h in adults,NICE NG148 (upd. 2024-10-16),1.3.1,2013,text match
+D04-T02,"NICE: risk factors list (CKD, HF, liver disease, diabetes, drugs, contrast, sepsis, age >=65)",NICE NG148 (upd. 2024-10-16),1.1.1,2013,text match
+D04-T02,NICE: systems to recognise oliguria when early warning score does not include urine output,NICE NG148 (upd. 2024-10-16),1.2.2,2013,text match
+D04-T02,NICE: daily creatinine typical in hospital,NICE NG148 (upd. 2024-10-16),1.3.2,2013,text match
+D04-T02,NICE: urine dipstick as soon as AKI suspected,NICE NG148 (upd. 2024-10-16),1.4.2,2013,text match
+D04-T02,NICE: do not routinely offer loop diuretics to treat AKI,NICE NG148 (upd. 2024-10-16),1.5.3,2013,text match
+D04-T02,NICE: do not offer low-dose dopamine,NICE NG148 (upd. 2024-10-16),1.5.5,2013,text match
+D04-T02,"NICE: refer immediately for RRT if hyperkalaemia, acidosis, uraemia, overload not responding",NICE NG148 (upd. 2024-10-16),1.5.8,2013,text match
+D04-T02,NICE: pyonephrosis suspected needs immediate ultrasound (within 6 h),NICE NG148 (upd. 2024-10-16),1.4.5,2013,text match
+D03-T10,"NICE: risk factors age>=65, cognitive impairment, hip fracture, severe illness",NICE CG103 (upd. 2023-01-18),1.2.1,2010,text match
+D03-T10,NICE: be vigilant for hypoactive delirium,NICE CG103 (upd. 2023-01-18),1.3.2,2010,text match
+D03-T10,NICE: CAM-ICU or ICDSC in critical care instead of 4AT,NICE CG103 (upd. 2023-01-18),1.6.1,2023 amended,text match
+D03-T10,NICE: 24-hour clock in critical care,NICE CG103 (upd. 2023-01-18),1.4.4,2010,text match
+D03-T10,NICE: non-verbal pain signs in ventilated patients,NICE CG103 (upd. 2023-01-18),1.4.9,2010,text match
+D03-T10,NICE: de-escalation first; short-term haloperidol may be considered if ineffective,NICE CG103 (upd. 2023-01-18),1.7.4,2010,text match
+D03-T10,"NICE: avoid procedures during sleep, reduce noise",NICE CG103 (upd. 2023-01-18),1.4.13,2010,text match
+D03-T10,"NICE: pulse oximeters can misread, overestimation in dark skin",NICE CG103 (upd. 2023-01-18),1.4.6,2010,text match
+D07-T06,ESICM: EEN rather than early PN (2C),ESICM early EN 2017 (PMC5323492),Rec 1,Conditional; low,text match
+D07-T06,ESICM: delay EN if shock uncontrolled; start low dose once controlled,ESICM early EN 2017 (PMC5323492),Rec 2,Conditional; expert opinion,text match
+D07-T06,ESICM: do not delay solely for NMBA,ESICM early EN 2017 (PMC5323492),Rec 4,Conditional; expert opinion,text match
+D07-T06,ESICM: do not delay solely for prone positioning,ESICM early EN 2017 (PMC5323492),Rec 7,Conditional; expert opinion,text match
+D07-T06,ESICM: delay EN if gastric aspirate >500 mL/6 h,ESICM early EN 2017 (PMC5323492),Rec 21,Conditional; expert opinion,text match
+D07-T06,"ESICM: single large aspirate -> prokinetics and reassessment, not prolonged withholding",ESICM early EN 2017 (PMC5323492),Comment on Rec 21,,text match
+D07-T06,"ESICM: EEN regardless of bowel sounds, and with diarrhoea",ESICM early EN 2017 (PMC5323492),Rec 22,Conditional; expert opinion,text match
+D07-T06,ESICM: post-pyloric feeding to prevent aspiration in diminished consciousness,ESICM early EN 2017 (PMC5323492),Practical text,,text match
+D07-T06,SHEA: consider post-pyloric feeding if gastric intolerance/high aspiration risk,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,Additional; moderate,text match
+D01-T03,"Target 94-98% for most patients needing oxygen; 88-92% for COPD (committee supports, level C)",AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,94-98% recommended for critically ill patients,AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,No recommendation on postoperative continuous monitoring (paucity of literature),AARC Oxygen CPG 2022,Summary of Recommendations,No recommendation,text match
+D01-T03,Early HFNC initiation supported by limited evidence,AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,HFNC may avoid escalation to NIV/invasive ventilation but does not reduce LOS,AARC Oxygen CPG 2022,Summary of Recommendations,Level B,text match
+D01-T03,HFNC immediately after extubation appears to reduce reintubation,AARC Oxygen CPG 2022,Summary of Recommendations,Level B,text match
+D01-T03,No HFNC benefit over conventional oxygen in immunocompromised patients,AARC Oxygen CPG 2022,Summary of Recommendations,Level B,text match
+D01-T03,Consider humidification for flows >4 L/min (comfort),AARC Oxygen CPG 2022,Summary of Recommendations,Level C,text match
+D01-T03,Method: modified RAND/UCLA appropriateness method,AARC Oxygen CPG 2022,Abstract,Method,text match
+D01-T03,Concern about harmful effects of excessive FiO2,AARC Oxygen CPG 2022,Introduction,Narrative,text match
+D01-T03,AARC 2024: assess skin around artificial airways and NIV interfaces,AARC Patient-Ventilator Assessment CPG 2024,Summary rec 11,Strong; high,text match
+D01-T03,"NICE CG103: pulse oximeters can under/overestimate saturation, especially borderline",NICE CG103 (upd. 2023-01-18),1.4.6,2010,text match
+D01-T03,ERC 2025: take off oxygen masks/cannulae and place at least 1 m from chest; leave ventilator circuit connected,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Safe use of oxygen during defibrillation,Narrative,text match
+D01-T11,"Indications: breath sounds, visible secretions, sawtooth waveform (adults, children)",AARC Suctioning CPG 2022,Table 1 / abstract,Level B,text match
+D01-T11,No adult studies of suctioning frequency were found,AARC Suctioning CPG 2022,Routine versus as-needed,Statement of gap,text match
+D01-T11,As-needed suctioning as effective as routine in neonates and children,AARC Suctioning CPG 2022,Routine versus as-needed,Level B,text match
+D01-T11,Open or closed system can be used safely and effectively in adults,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,Preoxygenate adult and paediatric patients before suctioning,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,FiO2 0.2 above baseline may be sufficient,AARC Suctioning CPG 2022,Preoxygenation section,Level B,text match
+D01-T11,Normal saline generally avoided; may worsen oxygenation,AARC Suctioning CPG 2022,Saline section,Level B,text match
+D01-T11,Sterile procedure for open suctioning,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Suction pressure below -200 mm Hg in adults; as low as effective,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Duration no longer than 15 s,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Shallow suctioning routinely; deep only if shallow ineffective,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,Routine bronchoscopy not recommended,AARC Suctioning CPG 2022,Table 1,Level C,text match
+D01-T11,Devices to clear ETT supported when resistance raised by secretions,AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,Catheter size inconsistent: abstract <70% neonates and <50% paediatric/adult,AARC Suctioning CPG 2022,Abstract,Inconsistency,text match
+D01-T11,"Catheter size inconsistent: Table 1 <70% in infants, children and adults",AARC Suctioning CPG 2022,Table 1,Inconsistency,text match
+D01-T11,Optimal catheter ratio not known,AARC Suctioning CPG 2022,Catheter section,Statement of gap,text match
+D01-T11,"Mitigation: sedation, preoxygenation, suction only if indicated",AARC Suctioning CPG 2022,Table 1,Level B,text match
+D01-T11,"Complications include desaturation, bleeding, haemodynamic and ICP changes",AARC Suctioning CPG 2022,Introduction,Narrative,text match
+D01-T11,SHEA: closed suction systems no recommendation for VAP prevention,SHEA/IDSA/APIC 2022 (PMC10903147),Table 2,No recommendation; moderate,text match
+D02-T15,Pre-shock pause: even 5-10 s delay reduces success; <5 s achievable by continuing compressions while charging,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Strategies for minimising the peri-shock pause,Narrative,text match
+D02-T15,Safety check to avoid rescuer contact,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Peri-shock pause,Narrative,text match
+D02-T15,Do not defibrillate during manual compressions even with gloves,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Manual defibrillation,Narrative,text match
+D02-T15,Shock can be delivered during mechanical compressions with a manual defibrillator,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Manual defibrillation,Narrative,text match
+D02-T15,Pads preferred over paddles; stand clear; fewer pauses; better contact,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pads and paddles,Narrative,text match
+D02-T15,Paddles: apply firm force to reduce arcing,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pads and paddles,Narrative,text match
+D02-T15,Antero-lateral position preferred initially,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pad position,Narrative,text match
+D02-T15,Pad >8 cm from implanted device or alternative position,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pad position,Narrative,text match
+D02-T15,Bi-axillary position considered when prone,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Pad position,Narrative,text match
+D02-T15,Shave anticipated pad areas if necessary,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Failed shocks,Narrative,text match
+D02-T15,NIV and high-flow nasal oxygen increase risk of oxygen-enriched environment,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Safe use of oxygen,Narrative,text match
+D02-T15,Oxygen recommendations unchanged in 2025,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Safe use of oxygen,Narrative,text match
+D02-T15,Anticipatory charging acceptable for well-drilled teams,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Anticipatory charging,Further research needed,text match
+D02-T15,Dual sequential defibrillation not routinely recommended,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),DSD,Limited evidence,text match
+D02-T15,Up to three stacked shocks only if witnessed monitored VF/pVT with defibrillator immediately available,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Energy levels and number of shocks,Narrative,text match
+D02-T14,BLS 2025: call for any unresponsive person; assess breathing while waiting,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Table 1 (changes),Narrative,text match
+D02-T14,"BLS 2025: slow, laboured, agonal or panting breathing is abnormal; seizure-like activity may occur at onset",ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Recognising cardiac arrest,Narrative,text match
+D02-T14,BLS 2025: depth at least 5 cm not more than 6 cm; rate 100-120/min; full recoil,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Concise guidelines,Recommendation,text match
+D02-T14,BLS 2025: do not move person from bed to floor; start CPR on the bed; compress deeper to compensate,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Concise guidelines,Recommendation,text match
+D02-T14,BLS 2025: mattress CPR mode should be activated,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Surface section,Narrative,text match
+D02-T14,BLS 2025: ERC does not advocate a backboard,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Surface section,Narrative,text match
+D02-T14,BLS 2025: compression-first approach recommended,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Initiating CPR,ILCOR-based,text match
+D02-T14,BLS 2025: obese patients receive standard 30:2 CPR without modification,ERC 2025 Adult BLS (Resuscitation 2025;215:110771),Table 1,Narrative,text match
+D02-T14,ALS 2025: hospitals use early-warning systems; empower staff to call on clinical concern; structured communication tools,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Prevention of IHCA,ERC recommends,text match
+D02-T14,ALS 2025: waveform capnography to confirm tracheal tube placement,ERC 2025 Adult ALS (Resuscitation 2025;215:110769),Table 1,Narrative,text match
+D02-T14,"PRC 2025: 100% oxygen immediately, then titrate to 94-98% SpO2 or PaO2 10-13 kPa",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of oxygenation,Recommendation,text match
+D02-T14,PRC 2025: oximetry can overestimate saturation in darker skin; low-flow states reduce signal,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of oxygenation,Narrative,text match
+D02-T14,PRC 2025: avoid hypoxaemia and hyperoxaemia,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of oxygenation,Recommendation,text match
+D02-T14,PRC 2025: normocapnia 4.7-6.0 kPa; lung-protective ventilation,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of ventilation,Recommendation,text match
+D02-T14,"PRC 2025: arterial line for all; avoid hypotension, MAP >60-65 mmHg",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Haemodynamic monitoring,Recommendation,text match
+D02-T14,PRC 2025: avoid hypokalaemia and hyperkalaemia,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Haemodynamic monitoring,Recommendation,text match
+D02-T14,"PRC 2025: actively prevent fever, target <=37.5 C; no active warming of mild hypothermia 32-36 C",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Temperature control,Recommendation,text match
+D02-T14,PRC 2025: prevent fever for 36 to 72 h in comatose patients,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Temperature control,Recommendation,text match
+D02-T14,PRC 2025: use feedback-based temperature control device,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Temperature control,Suggestion,text match
+D02-T14,PRC 2025: levetiracetam or valproate first-line; no seizure prophylaxis,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Control of seizures,Recommendation,text match
+D02-T14,PRC 2025: standard glucose management protocols,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),General ICU management,Recommendation,text match
+D02-T14,"PRC 2025: daily neurological examination; interference from sedatives, opioids, muscle relaxants",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Prognostication,Narrative,text match
+D02-T14,PRC 2025: multimodal prognostication; no single predictor 100% accurate,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Prognostication,Narrative,text match
+D02-T14,PRC 2025: short-acting sedatives; routine neuromuscular blockers discouraged,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Table (changes),Narrative,text match
+D02-T14,"PRC 2025: rehabilitation - early mobilisation, delirium management, ICU diaries recommended in PICS guidelines; no cardiac-arrest-specific trials",ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Rehabilitation,Narrative,text match
+D02-T14,PRC 2025: rehabilitation and follow-up recommended,ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),Table (changes),Recommendation,text match
+D01-T12,AARC 2024: cuff 20-30 cmH2O described; no consensus on frequency,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative,text match
+D01-T12,AARC 2024: consensus on how to measure cuff pressure and how often not established,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative,text match
+D01-T12,AARC 2024: overinflation can impede capillary blood flow and lead to tracheal injury,AARC Patient-Ventilator Assessment CPG 2024,Cuffs and cuff pressures,Narrative,text match
+D01-T12,"AARC 2024: suggest assessing proper placement and securement (conditional, very low)",AARC Patient-Ventilator Assessment CPG 2024,Summary rec 15,Conditional; very low,text match
+D01-T12,AARC 2024: tracheostomy dressing and securement interventions reduce pressure injury (review),AARC Patient-Ventilator Assessment CPG 2024,Evidence summary,Narrative,text match
+D04-T03,CG174: assess fluid and electrolyte needs at every review; IV fluids only if oral/enteral cannot meet needs,NICE CG174 (upd. 2017-05-05),1.1.1,2013/2017,text match
+D04-T03,"CG174: indicators for urgent resuscitation (SBP <100, HR >90, CRT >2 s, RR >20, NEWS >=5, PLR)",NICE CG174 (upd. 2017-05-05),1.2.1,2013/2017,text match
+D04-T03,CG174: deterioration (breathlessness) on passive leg raise suggests overload,NICE CG174 (upd. 2017-05-05),1.2.1,2013/2017,text match
+D04-T03,"CG174: clinical monitoring includes NEWS, fluid balance charts, weight",NICE CG174 (upd. 2017-05-05),1.2.2,2013/2017,text match
+D04-T03,"CG174: at least daily reassessment, fluid balance charts; weight twice weekly",NICE CG174 (upd. 2017-05-05),1.2.4,2013/2017,text match
+D04-T03,CG174: monitor chloride daily after chloride >120 mmol/L fluids,NICE CG174 (upd. 2017-05-05),1.2.5,2013/2017,text match
+D04-T03,CG174: report clear incidents of fluid mismanagement,NICE CG174 (upd. 2017-05-05),1.2.6,2013/2017,text match
+D04-T03,CG174: reassess fluid status after transfer,NICE CG174 (upd. 2017-05-05),1.2.7,2013/2017,text match
+D04-T03,"CG174: take all sources of intake into account (oral, enteral, drugs, nutrition, blood)",NICE CG174 (upd. 2017-05-05),1.1.7,2013/2017,text match
+D04-T03,CG174: expert help for complex fluid problems,NICE CG174 (upd. 2017-05-05),1.5.2,2013/2017,text match
+D04-T03,CG174: involve patient; explain fluids and symptoms to report,NICE CG174 (upd. 2017-05-05),1.1.8,2013/2017,text match
+D03-T01,"GCS aid: three components - eye opening, verbal, motor; scores 4/3/2/1 etc.","GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,"GCS aid: motor - obeys 2-part request 6, localising 5, normal flexion 4, abnormal flexion 3, extension 2, none 1","GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,GCS aid: non testable where a factor interferes,"GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,"GCS aid: check, observe, stimulate; stimuli sound then pressure at fingertip, trapezius, supraorbital notch","GCS Assessment Aid (English), glasgowcomascale.org",Assessment aid,Chart,text match
+D03-T01,GCS site: recording is important to observe and communicate trends,glasgowcomascale.org web pages,Website home,Narrative,text match
+D03-T01,"GCS site: structured approach improves accuracy, reliability and communication",glasgowcomascale.org web pages,Website home,Narrative,text match
+D03-T01,GCS site: described 1974 by Teasdale and Jennett; findings signal need for new actions,glasgowcomascale.org web pages,What is GCS,Narrative,text match
+D03-T01,"GCS site: scale complements, not replaces, assessment of other neurological functions",glasgowcomascale.org web pages,What is GCS,Narrative,text match
+D03-T01,"GCS site: GCS-P = GCS minus pupil reactivity score (both 2, one 1, neither 0)",glasgowcomascale.org web pages,What is GCS-P,Narrative,text match
+D01-T19,NEWS2: 7 parameters incl. air/oxygen and ACVPU new confusion,RCP NEWS2 report (2017),Updates summary,Recommendation,text match
+D01-T19,NEWS2: monitoring frequency minimum 12-hourly for 0; 4-6 hourly for 1-4,RCP NEWS2 report (2017),Rec 38,Recommendation,text match
+D01-T19,NEWS2: hourly for 5-6 or red score until reviewed; continuous for 7 or more,RCP NEWS2 report (2017),Rec 40,Recommendation,text match
+D01-T19,NEWS2: new confusion scores 3; assume new if unclear,RCP NEWS2 report (2017),Rec 31,Recommendation,text match
+D01-T19,"NEWS2: Scale 2 for 88-92% target; decision by competent clinical decision maker, recorded",RCP NEWS2 report (2017),Rec 26,Recommendation,text match
+D01-T19,NEWS2: not for children <16 or pregnant women; unreliable in spinal cord injury,RCP NEWS2 report (2017),Rec 2-3,Recommendation,text match
+D01-T19,"NEWS2: aid to, not a substitute for, clinical judgement; any concern prompts urgent review",RCP NEWS2 report (2017),Rec 4,Recommendation,text match
+D01-T19,NEWS2: document oxygen device and flow using BTS codes,RCP NEWS2 report (2017),Rec,Recommendation,text match
+D01-T19,NEWS2: urgent response threshold >=5; emergency >=7 with critical-care competencies,RCP NEWS2 report (2017),Clinical response table,Recommendation,text match
+D01-T19,NEWS2: hypercapnic patients at risk of worsening hypercapnia if too much oxygen; range 88-92%,RCP NEWS2 report (2017),Rationale,Narrative,text match
+D01-T19,"NEWS2: consider ceiling of care at all scores, especially >=7",RCP NEWS2 report (2017),Clinical response,Recommendation,text match
+D01-T19,NEWS2: copyright - no restriction but acknowledge RCP; charts not modified,RCP NEWS2 report (2017),Front matter,Licence,text match
+D02-T04,"CDC 2011: radial, brachial or dorsalis pedis preferred over femoral/axillary in adults (IB)",CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.1,Category IB,text match
+D02-T04,CDC 2011: replace arterial catheters only when clinically indicated; remove when not needed (II),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.5-6,Category II,text match
+D02-T04,CDC 2011: disposable transducers; replace at 96 h with tubing/flush (IB),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.9,Category IB,text match
+D02-T04,CDC 2011: keep all components sterile (IA),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.10,Category IA,text match
+D02-T04,CDC 2011: closed continuous flush; minimise manipulations (II),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.11,Category II,text match
+D02-T04,CDC 2011: scrub diaphragm before accessing (IA),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.12,Category IA,text match
+D02-T04,CDC 2011: no dextrose or parenteral nutrition through the circuit (IA),CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.13,Category IA,text match
+D02-T04,"CDC 2011: barrier precautions at insertion (cap, mask, sterile gloves, small drape)",CDC/HICPAC IV catheter guideline 2011 (upd. 2017),Rec 17.3,Category IB,text match
+D02-T04,SSC 2021: arterial catheter allows reliable continuous measurement; cuff inaccurate in shock,SSC 2021 (PMC8486643),Rec 43 rationale,Weak; very low,text match
+D02-T04,SSC 2021: limb ischaemia/bleeding <1% radial; infection higher with femoral (RR 1.93),SSC 2021 (PMC8486643),Rec 43 rationale,Narrative,text match
+D02-T04,SSC 2021: suggest invasive arterial pressure monitoring in septic shock on vasopressors,SSC 2021 (PMC8486643),Rec 43,Weak; very low,text match
+D02-T14,RCUK 2025 phrases the aim as SBP >100 mmHg or MAP >60-65 mmHg (page read; not full text),ERC/ESICM 2025 Post-Resuscitation Care (Resuscitation 2025;215:110809),ERC text for comparison,Recommendation,text match
+D06-T01,"SSC 2026: NEWS, NEWS2, MEWS or SIRS over qSOFA as single screening tool (strong, moderate)",SSC 2026 official SCCM recommendation page (recommendation-level),Screening,Strong; moderate,text match
+D06-T01,"SSC 2026: blood cultures as soon as possible, ideally before antimicrobials (strong, low)",SSC 2026 official SCCM recommendation page (recommendation-level),Diagnostics,Strong; low,text match
+D06-T01,SSC 2026: antimicrobials within 1 h for septic shock and for probable/definite sepsis without shock,SSC 2026 official SCCM recommendation page (recommendation-level),Antibiotic initiation,Strong; very low,text match
+D06-T01,"SSC 2026: possible sepsis without shock - time-limited investigation, antimicrobials within 3 h",SSC 2026 official SCCM recommendation page (recommendation-level),Antibiotic initiation,Conditional; very low,text match
+D06-T01,SSC 2026: suggest measuring blood lactate; serial lactate to guide resuscitation,SSC 2026 official SCCM recommendation page (recommendation-level),Serial lactate,Conditional; low,text match
+D06-T01,SSC 2026: capillary refill time as adjunct to guide resuscitation,SSC 2026 official SCCM recommendation page (recommendation-level),Capillary refill,Conditional; low,text match
+D06-T01,"SSC 2026: norepinephrine first-line; initial MAP 65 (strong, moderate)",SSC 2026 official SCCM recommendation page (recommendation-level),Mean arterial pressure,Strong; moderate,text match
+D02-T08,SSC 2026: age 65 or older MAP range 60-65 mm Hg suggested,SSC 2026 official SCCM recommendation page (recommendation-level),Mean arterial pressure,Conditional; low,text match
+D02-T08,SSC 2026: start vasopressors peripherally rather than delay for central access,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressor administration,Conditional; very low,text match
+D02-T04,SSC 2026: either invasive or non-invasive blood pressure monitoring,SSC 2026 official SCCM recommendation page (recommendation-level),Blood pressure monitoring,Conditional; very low,text match
+D02-T04,"SSC 2026: invasive monitoring advised for intermediate-high/escalating/multiple vasopressors, frequent sampling, inconsistent cuff readings",SSC 2026 official SCCM recommendation page (recommendation-level),Remarks,Remark,text match
+D01-T03,SSC 2026: oxygen targets in sepsis with hypoxaemic failure - liberal or conservative,SSC 2026 official SCCM recommendation page (recommendation-level),Oxygen targets,Conditional; low,text match
+D03-T10,"PADIS 2018: multicomponent non-pharmacological intervention (conditional, low)",SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium,Conditional; low,text match
+D03-T10,PADIS 2018: regularly assess for delirium with a valid tool,SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium,Statement,text match
+D03-T10,PADIS 2018: suggest not using haloperidol/atypical/dexmedetomidine/statin/ketamine to prevent delirium,SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium prevention,Conditional; very low to low,text match
+D03-T10,PADIS 2018: suggest not using bright light therapy,SCCM PADIS 2018 official recommendation page (recommendation-level),Delirium,Conditional; moderate,text match
+D03-T10,PADIS 2018: suggest noise and light reduction strategies for sleep,SCCM PADIS 2018 official recommendation page (recommendation-level),Sleep,Conditional; low,text match
+D03-T10,PADIS 2025: unable to recommend for or against antipsychotics to treat delirium,SCCM PADIS 2025 official recommendation page (recommendation-level),Delirium,Conditional; low,text match
+D03-T09,PADIS 2025: dexmedetomidine over propofol where light sedation/delirium reduction priority,SCCM PADIS 2025 official recommendation page (recommendation-level),Sedation,Conditional; moderate,text match
+D03-T09,PADIS 2025: insufficient evidence for benzodiazepines to treat anxiety,SCCM PADIS 2025 official recommendation page (recommendation-level),Anxiety,No recommendation,text match
+D03-T09,PADIS 2018: DSI protocols and nurse-protocolised targeted sedation maintain light sedation; RASS -1 to +1 / SAS 4-7,SCCM PADIS 2018 official recommendation page (recommendation-level),Light sedation,Ungraded,text match
+D03-T09,PADIS 2018: propofol or dexmedetomidine over benzodiazepines in ventilated adults,SCCM PADIS 2018 official recommendation page (recommendation-level),Sedation,Conditional; low,text match
+D03-T09,PADIS 2018: BIS best suited to deep sedation or neuromuscular blockade,SCCM PADIS 2018 official recommendation page (recommendation-level),Objective sedation monitoring,Statement,text match
+D03-T09,PADIS 2018: restraints used frequently despite no efficacy studies; safety concerns,SCCM PADIS 2018 official recommendation page (recommendation-level),Physical restraints,Ungraded,text match
+D03-T09,PADIS 2018: vasoactive infusions or mechanical ventilation not barriers to mobilisation if stable,SCCM PADIS 2018 official recommendation page (recommendation-level),Mobilisation,Statement,text match
+D07-T03,PADIS 2018: NRS 0-10 valid and feasible for self-report,SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Ungraded,text match
+D07-T03,"PADIS 2018: BPS, BPS-NI and CPOT greatest validity and reliability",SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Ungraded,text match
+D07-T03,PADIS 2018: vital signs not valid indicators of pain,SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Ungraded,text match
+D07-T03,PADIS 2018: treat pain before a sedative is considered,SCCM PADIS 2018 official recommendation page (recommendation-level),Pain assessment,Good practice,text match
+D07-T03,PADIS 2018: assessment-driven protocol-based stepwise approach,SCCM PADIS 2018 official recommendation page (recommendation-level),Protocol-based pain management,Conditional; moderate,text match
+D07-T03,PADIS 2018: family can be involved when patient cannot self-report,SCCM PADIS 2018 official recommendation page (recommendation-level),Proxy reporters,Ungraded,text match
+D07-T03,PADIS 2018: suggest massage and music therapy; not cybertherapy/hypnosis,SCCM PADIS 2018 official recommendation page (recommendation-level),Non-pharmacologic,Conditional; low,text match
+D07-T03,Open RN 11.3: PQRSTU mnemonic,Open RN Fundamentals 11.3,11.3,Educational text,text match
+D07-T03,Open RN 11.3: 0-10 question screens; thorough assessment and comfort-function goal needed,Open RN Fundamentals 11.3,11.3,Educational text,text match
+D07-T01,Open RN App C: checklist is for a routine general daily assessment by an entry-level nurse,Open RN Nursing Skills Appendix C,Appendix C intro,Educational text,text match
+D07-T01,"Open RN App C: primary survey - airway, breathing, circulation, mental status",Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,Open RN App C: identify patient with two identifiers,Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,Open RN App C: compare pulses bilaterally; apical pulse one minute,Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,Open RN App C: document oxygen device and flow/FiO2; check skin under devices,Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D07-T01,"Open RN App C: end-of-visit safety (call light, bed low, rails, room)",Open RN Nursing Skills Appendix C,Appendix C,Educational text,text match
+D09-T03,Open RN 1.3: Nurse Practice Act defines scope; breach can lead to licence revocation,Open RN Fundamentals 1.3,1.3,Educational text (US),text match
+D09-T03,Open RN 1.3: Joint Commission National Patient Safety Goals list,Open RN Fundamentals 1.3,1.3,Educational text (US),text match
+D09-T03,Open RN 1.4: RN accepts delegated acts only with protocols/orders and competence (Wisconsin example),Open RN Fundamentals 1.4,1.4,Educational text (US state),text match
+D09-T03,Open RN 1.4: chain of command,Open RN Fundamentals 1.4,1.4,Educational text,text match
+D09-T03,Open RN 1.4: APRNs can diagnose and prescribe,Open RN Fundamentals 1.4,1.4,Educational text (US),text match
+D09-T03,Open RN 1.6: undocumented assessment considered not done; failure to notify provider,Open RN Fundamentals 1.6,1.6,Educational text (US),text match
+D05-T16,ISMP: high-alert drugs bear heightened risk of significant harm when used in error; mistakes may or may not be more common,"ISMP High-Alert List, acute care, 2024",Introduction,Statement,text match
+D05-T16,"ISMP: use the list to decide which drugs need special safeguards; strategies include standardising, limiting access, labels, decision support, double checks","ISMP High-Alert List, acute care, 2024",Introduction,Statement,text match
+D05-T16,ISMP: manual independent double checks not always optimal and may not be practical for all,"ISMP High-Alert List, acute care, 2024",Introduction note,Statement,text match
+D05-T16,"ISMP list categories include IV adrenergic agonists, insulin, opioids, antithrombotics, neuromuscular blockers, concentrated potassium chloride","ISMP High-Alert List, acute care, 2024",List,Statement,text match
+D05-T16,"ISMP basis: error reports, literature, survey Sept-Oct 2023, advisory board","ISMP High-Alert List, acute care, 2024",Background,Statement,text match
+D05-T16,ISMP copyright: internal non-commercial reproduction with attribution only,"ISMP High-Alert List, acute care, 2024",Footer,Licence,text match
+D05-T16,"FDA: problems across all types of external pump; over/under-infusion; causes software, human factors, mechanical, battery",FDA Infusion Pump Risk Reduction Strategies (page 2018),Introduction,Statement,text match
+D05-T16,FDA: back-up plan for pump failure; stay with high-risk patient while pump obtained,FDA Infusion Pump Risk Reduction Strategies (page 2018),Plan ahead,Statement,text match
+D05-T16,FDA: second method e.g. time strip indicator or buretrol,FDA Infusion Pump Risk Reduction Strategies (page 2018),Plan ahead,Statement,text match
+D05-T16,FDA: label pump channels and tubing at port of entry,FDA Infusion Pump Risk Reduction Strategies (page 2018),Label,Statement,text match
+D05-T16,"FDA: verify programming at shift change, setting change, new bag, new tubing primed",FDA Infusion Pump Risk Reduction Strategies (page 2018),Check,Statement,text match
+D05-T16,"FDA: independent double check by two clinicians separately; examples insulin, heparin, vasopressors, Diprivan, TPN, morphine",FDA Infusion Pump Risk Reduction Strategies (page 2018),Check,Statement,text match
+D05-T16,"FDA: monitor for over/under-infusion using cardiac, pulse oximetry, EtCO2, glucose meters",FDA Infusion Pump Risk Reduction Strategies (page 2018),Check,Statement,text match
+D05-T16,FDA: use drug library; respond to alerts; 5 rights,FDA Infusion Pump Risk Reduction Strategies (page 2018),Use,Statement,text match
+D05-T16,"FDA: remove from use, tag, sequester a pump with damage, unexplained alarm, or unexpected function",FDA Infusion Pump Risk Reduction Strategies (page 2018),Report problems,Statement,text match
+D05-T16,"FDA: strategies not applicable to all pumps, settings, populations",FDA Infusion Pump Risk Reduction Strategies (page 2018),Introduction,Caveat,text match
+D05-T16,FDA page content current as of 02/02/2018,FDA Infusion Pump Risk Reduction Strategies (page 2018),Footer,Date,text match
+D08-T03,AABB COI: recipient and container properly identified before transfusion,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 2,Statement,text match
+D08-T03,AABB COI: entered container expires 4 h room temp / 24 h refrigerated,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 3,Statement,text match
+D08-T03,AABB COI: sterile filter 150-260 micron,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 4,Statement,text match
+D08-T03,AABB COI: inspect before use; abnormal appearance not to be used,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 6,Statement,text match
+D08-T03,AABB COI: only 0.9% sodium chloride with blood unless FDA-approved or documented safe,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 7,Statement,text match
+D08-T03,AABB COI: lactated Ringer solutions with calcium never with citrate components,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 8,Statement,text match
+D08-T03,AABB COI: warm only if clinically indicated with FDA-cleared device,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 9,Statement,text match
+D08-T03,AABB COI: life-threatening reactions after small volume; initial rate slow,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 10,Statement,text match
+D08-T03,"AABB COI: periodic observation/recording of vital signs before, during, after; stop immediately; do not restart unless transfusion service protocol","AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 11,Statement,text match
+D08-T03,AABB COI: transfusion finished within 4 h after entering container,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 13,Statement,text match
+D08-T03,AABB COI: report all adverse events to transfusion service,"AABB Circular of Information June 2024 (review PDF, partly read)",Instructions for Use 14,Statement,text match
+D08-T03,AABB COI: febrile non-haemolytic - rise >=1C or chills/rigors within 4 h,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 3,Statement,text match
+D08-T03,AABB COI: allergic reactions 1-3% of plasma components; urticaria/wheeze,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 4,Statement,text match
+D08-T03,AABB COI: anaphylaxis features and epinephrine,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 5,Statement,text match
+D08-T03,AABB COI: TRALI hypoxaemia non-cardiogenic oedema within 6 h,"AABB Circular of Information June 2024 (review PDF, partly read)",Immediate immunologic 6,Statement,text match
+D08-T03,"AABB COI: acute haemolytic features incl. shock, anaesthetised patients, lack of symptoms does not exclude","AABB Circular of Information June 2024 (review PDF, partly read)",Red cell text,Statement,text match
+D08-T03,"AABB COI: haemolysis: stop, notify lab, review identification, post-reaction sample from other site with unit and set","AABB Circular of Information June 2024 (review PDF, partly read)",Red cell text,Statement,text match
+D08-T03,AABB COI: delayed haemolytic 2-14 days,"AABB Circular of Information June 2024 (review PDF, partly read)",Delayed immunologic,Statement,text match
+D08-T03,AABB COI: post-transfusion purpura 7-10 days,"AABB Circular of Information June 2024 (review PDF, partly read)",Delayed immunologic 3,Statement,text match
+D08-T03,AABB COI: TA-GVHD fatality nearly 100%,"AABB Circular of Information June 2024 (review PDF, partly read)",Delayed immunologic 4,Statement,text match
+D08-T03,"AABB COI: bacterial sepsis - high fever (rise >=2C), chills, hypotension, collapse; discontinue; cultures","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 2,Statement,text match
+D08-T03,"AABB COI: TACO - at-risk groups, small volumes, positive balance","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 3,Statement,text match
+D08-T03,"AABB COI: hypothermia - arrhythmia/arrest, warming device","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 4,Statement,text match
+D08-T03,AABB COI: citrate - ionised calcium; ECG monitoring more helpful,"AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 5a,Statement,text match
+D08-T03,"AABB COI: metabolic - acid-base, hyper/hypokalaemia","AABB Circular of Information June 2024 (review PDF, partly read)",Nonimmunologic 5b,Statement,text match
+D08-T03,"AABB COI: prepared by AABB, ARC, ABC, ASBP; FDA recognises","AABB Circular of Information June 2024 (review PDF, partly read)",Cover,Statement,text match
+D08-T03,"AABB COI: professional judgement determines components, dose, rate","AABB Circular of Information June 2024 (review PDF, partly read)",Notice to all users,Statement,text match
+D08-T03,FDA: recognises June 2024 Circular as acceptable under 21 CFR 606.122; supersedes March 2022,FDA guidance page: Acceptable Circular of Information (Sept 2024),Guidance page,Regulatory,text match
+D07-T03,CPOT review: four behavioural indicators; vent compliance or vocalisation; each 0-2; total 0-8,"CPOT narrative review, Front Pain Res 2024 (PMC11518793)",Components of CPOT,Review text,text match
+D07-T03,CPOT review: behavioural scores interpreted differently from self-report,"CPOT narrative review, Front Pain Res 2024 (PMC11518793)",Interpretation of CPOT,Review text,text match
+D02-T12,SSC 2026: initial MAP 65 over higher; range within 5 mm Hg; titrate within range,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressor administration,Strong; moderate,text match
+D02-T12,SSC 2026: peripheral start; data insufficient on duration/dose/site; midlines not considered,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation/vasopressor administration,Conditional; very low,text match
+D02-T12,"SSC 2026: norepinephrine first-line over dopamine, epinephrine, selepressin",SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors,Strong; high/low,text match
+D02-T12,SSC 2026: add vasopressin on escalating norepinephrine,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors,Conditional; moderate,text match
+D02-T12,SSC 2026: suggest against terlipressin,SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors,Conditional; low,text match
+D02-T12,"SSC 2026: norepinephrine preferred with tachyarrhythmia, epinephrine with bradyarrhythmia (remark)",SSC 2026 official SCCM recommendation page (recommendation-level),Vasopressors remark,Conditional; very low,text match
+D02-T12,"SSC 2026: inotropes in addition to, not instead of, vasopressors",SSC 2026 official SCCM recommendation page (recommendation-level),Inotropes remark,Conditional; very low,text match
+D02-T12,SSC 2026: dobutamine added to norepinephrine or epinephrine alone,SSC 2026 official SCCM recommendation page (recommendation-level),Inotropes,Conditional; very low,text match
+D02-T12,SSC 2026: suggest against levosimendan,SSC 2026 official SCCM recommendation page (recommendation-level),Inotropes,Conditional; low,text match
+D02-T12,SSC 2026: lactate remark - not fluids until lactate normalises,SSC 2026 official SCCM recommendation page (recommendation-level),Serial lactate,Conditional; low,text match
+D02-T12,ESICM 2014: arterial and central venous catheters in shock needing vasopressors (ungraded best practice),ESICM shock consensus 2014 (PMC4239778),Recommendation 18,Ungraded best practice,text match
+D02-T12,ESICM 2014: central access may be required and preferred when vasopressor infusions needed,ESICM shock consensus 2014 (PMC4239778),Text,Statement,text match
+D02-T12,ISMP: IV adrenergic agonists and inotropes are high-alert categories,"ISMP High-Alert List, acute care, 2024",List,Statement,text match
+D02-T09,SSC 2026: sepsis and septic shock are emergencies; begin immediately,SSC 2026 official SCCM recommendation page (recommendation-level),Statement,Good practice,text match
+D02-T09,"SSC 2026: crystalloids first-line (strong, moderate)",SSC 2026 official SCCM recommendation page (recommendation-level),Fluid type,Strong; moderate,text match
+D02-T09,SSC 2026: balanced crystalloids over 0.9% saline; saline in TBI,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid type,Conditional; moderate,text match
+D02-T09,SSC 2026: initial weight-based crystalloid volume in first 3 h; frequent reassessment,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation remark,Conditional; low,text match
+D02-T09,SSC 2026: dynamic measures over exam/static,SSC 2026 official SCCM recommendation page (recommendation-level),Resuscitation,Conditional; low,text match
+D02-T09,SSC 2026: unstable shock features and physical exam,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation remark,Remark,text match
+D02-T09,SSC 2026: liberal or restrictive strategy after 30 mL/kg with persistent hypoperfusion,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid resuscitation,Conditional; low,text match
+D02-T09,SSC 2026: suggest IV corticosteroids in septic shock,SSC 2026 official SCCM recommendation page (recommendation-level),IV corticosteroids,Conditional; low,text match
+D02-T09,SSC 2026: ICU admission within 6 h,SSC 2026 official SCCM recommendation page (recommendation-level),ICU admission,Conditional; low,text match
+D02-T09,"SSC 2026: early source control, ideally within 6 h",SSC 2026 official SCCM recommendation page (recommendation-level),Source control,Conditional; very low,text match
+D02-T09,SSC 2026: suggest against antipyretic therapy for outcomes; not for symptom control,SSC 2026 official SCCM recommendation page (recommendation-level),Temperature control,Conditional; very low,text match
+D02-T09,SSC 2026: suggest against bicarbonate for haemodynamics; use in severe acidaemia with AKI,SSC 2026 official SCCM recommendation page (recommendation-level),Sodium bicarbonate,Conditional; very low,text match
+D02-T09,SSC 2026: suggest active fluid removal after acute resuscitation,SSC 2026 official SCCM recommendation page (recommendation-level),Fluid removal,Conditional; very low,text match
+D02-T09,"SSC 2026: crystalloids alone over albumin; albumin exceptions (cirrhosis, large crystalloid volumes); avoid in TBI",SSC 2026 official SCCM recommendation page (recommendation-level),Fluid type,Conditional; moderate,text match
+D04-T06,"UKKA: hyperkalaemia threshold >5.5 mmol/L; mild 5.5-5.9, moderate 6.0-6.4, severe >=6.5",UKKA acute hyperkalaemia guideline website (July 2026),5 Introduction,Statement,text match
+D04-T06,UKKA: in-hospital mortality 18.1% hyperkalaemia vs 5.0% hypokalaemia vs 3.9% normokalaemia; >30% severe,UKKA acute hyperkalaemia guideline website (July 2026),5 Introduction,Statement,text match
+D04-T06,UKKA 13.1/13.2: history and examination (1B); early warning score assessment (1C),UKKA acute hyperkalaemia guideline website (July 2026),13.2,1C,text match
+D04-T06,"UKKA 14.2: continuous 3-lead ECG monitoring thresholds, ideally higher dependency (1C)",UKKA acute hyperkalaemia guideline website (July 2026),14.2,1C,text match
+D04-T06,UKKA 14.1 detail page: 12-lead ECG at K >=6.0 (summary page says 6.5),UKKA acute hyperkalaemia guideline website (July 2026),11.1.2 (detail) vs 6.2 (summary),1B; website inconsistency,text match
+D04-T06,UKKA 14.1 summary page: 12-lead ECG at K >=6.5,UKKA acute hyperkalaemia guideline website (July 2026),6.2 (summary),1B; website inconsistency,text match
+D04-T06,UKKA rationale: peaked T waves alone rarely life-threatening; ECG can rule in not out; normal ECG possible; pseudo-STEMI,UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,"UKKA rationale: ECG signs correlated with adverse events: QRS prolongation, bradycardia <50, junctional rhythms",UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,"UKKA rationale: pacemakers not protected; wider paced QRS, thresholds",UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,UKKA rationale: BRASH syndrome,UKKA acute hyperkalaemia guideline website (July 2026),14.1-14.2 rationale,Rationale,text match
+D04-T06,UKKA 15.1: lithium heparin sample when rapid results needed (1B),UKKA acute hyperkalaemia guideline website (July 2026),15.1,1B,text match
+D04-T06,UKKA 15.2: point-of-care blood gas potassium in emergencies (1B),UKKA acute hyperkalaemia guideline website (July 2026),15.2,1B,text match
+D04-T06,UKKA 15.3: pseudohyperkalaemia - paired lithium heparin and clotted samples (1A),UKKA acute hyperkalaemia guideline website (July 2026),15.3,1A,text match
+D04-T06,"UKKA rationale: causes of pseudohyperkalaemia (transit, haemolysis, EDTA contamination, sampling from infusion arm)",UKKA acute hyperkalaemia guideline website (July 2026),15.3 rationale,Rationale,text match
+D04-T06,UKKA 16.1: 5 step approach (1B); never walk away without completing all steps,UKKA acute hyperkalaemia guideline website (July 2026),16.1 rationale,1B,text match
+D04-T06,UKKA: treatment not complete until cause identified and recurrence prevented,UKKA acute hyperkalaemia guideline website (July 2026),16.1 rationale,Rationale,text match
+D04-T06,"UKKA 16.2b: calcium chloride in cardiac arrest/peri-arrest, calcium gluconate otherwise (1C)",UKKA acute hyperkalaemia guideline website (July 2026),16.2b,1C,text match
+D04-T06,"UKKA: calcium adverse effects - tissue necrosis if extravasation, hypotension, bradycardia",UKKA acute hyperkalaemia guideline website (July 2026),16.2 patient safety,Statement,text match
+D04-T06,UKKA 16.3.3: glucose infusion after insulin-glucose if pre-treatment glucose <7.0 (2B),UKKA acute hyperkalaemia guideline website (July 2026),16.3.3,2B,text match
+D04-T06,UKKA 16.4.3: salbutamol not as monotherapy in severe hyperkalaemia (1A),UKKA acute hyperkalaemia guideline website (July 2026),16.4.3,1A,text match
+D04-T06,UKKA 16.5: IV sodium bicarbonate not routine (2C),UKKA acute hyperkalaemia guideline website (July 2026),16.5,2C,text match
+D04-T06,UKKA 16.6.1a: sodium zirconium cyclosilicate for severe hyperkalaemia (1B),UKKA acute hyperkalaemia guideline website (July 2026),16.6.1a,1B,text match
+D04-T06,UKKA 16.2: calcium resonium no longer routinely used (2B),UKKA acute hyperkalaemia guideline website (July 2026),16.2 (resin),2B,text match
+D04-T06,"UKKA 17.1: monitor K closely for rebound; at least 1, 2, 4, 6, 24 h (1B; 2C)",UKKA acute hyperkalaemia guideline website (July 2026),17.1.2,2C,text match
+D04-T06,"UKKA 17.2: blood glucose at 0,30,60,90,120,180,240,300,360 min (1C)",UKKA acute hyperkalaemia guideline website (July 2026),17.2,1C,text match
+D04-T06,UKKA rationale: hypoglycaemia most common adverse event; risk up to 6 hours; signs,UKKA acute hyperkalaemia guideline website (July 2026),17.2 rationale,Rationale,text match
+D04-T06,UKKA 18.1/18.2: haemodialysis patients urgent dialysis (1A); calcium with toxic ECG changes (1C),UKKA acute hyperkalaemia guideline website (July 2026),18.1,1A,text match
+D04-T06,UKKA 19.1-19.6: referral to renal/critical care; senior referral; RRT decision by nephrologist or critical care specialist,UKKA acute hyperkalaemia guideline website (July 2026),19.6,1C,text match
+D04-T06,UKKA 21.1/21.2: review potassium-raising drugs; dietary strategies after non-dietary causes,UKKA acute hyperkalaemia guideline website (July 2026),21.2,1C,text match
+D04-T06,UKKA 23.1: consider hyperkalaemia in all cardiac arrests (1A),UKKA acute hyperkalaemia guideline website (July 2026),23.1,1A,text match
+D04-T06,UKKA 24.2: disconnect from dialysis equipment before defibrillation unless defibrillator proof (1C),UKKA acute hyperkalaemia guideline website (July 2026),24.2,1C,text match
+D04-T06,UKKA 26.2: continuous cardiac monitoring for K>=6.5 (1C),UKKA acute hyperkalaemia guideline website (July 2026),26.2,1C,text match
+D04-T06,UKKA website: updated July 2026; review October 2026,UKKA acute hyperkalaemia guideline website (July 2026),Home,Date,text match
+D04-T06,UKKA: ILCOR 2025 found no evidence for or against IV calcium,UKKA acute hyperkalaemia guideline website (July 2026),1 Purpose,Statement,text match
+D01-T17,AARC SBT: SBT definition 30-120 min; liberation vs extubation; only 55% liberated,AARC SBT CPG 2024 (PMC11285503),Introduction,Statement,text match
+D01-T17,AARC SBT: rec 1 RSBI not needed (conditional; moderate),AARC SBT CPG 2024 (PMC11285503),PICO 1,Conditional; moderate,text match
+D01-T17,"AARC SBT: simple screen - reversal of cause, oxygenation, haemodynamic stability, inspiratory effort",AARC SBT CPG 2024 (PMC11285503),PICO 1 justification,Statement,text match
+D01-T17,"AARC SBT: tolerance criteria - respiratory pattern, hemodynamics, gas exchange, comfort",AARC SBT CPG 2024 (PMC11285503),PICO 1 justification,Statement,text match
+D01-T17,AARC SBT: airway protection and secretion clearance as extubation factors,AARC SBT CPG 2024 (PMC11285503),PICO 1 justification,Statement,text match
+D01-T17,AARC SBT: rec 2 with or without low-level PSV (<=8 cm H2O) (conditional; moderate),AARC SBT CPG 2024 (PMC11285503),PICO 2,Conditional; moderate,text match
+D01-T17,AARC SBT: PSV 0/PEEP 0 allows ventilator monitoring and alarms; quick return to support,AARC SBT CPG 2024 (PMC11285503),PICO 2 justification,Statement,text match
+D01-T17,AARC SBT: SBT on post-extubation NIV settings for patients to be extubated to NIV,AARC SBT CPG 2024 (PMC11285503),PICO 2 justification,Statement,text match
+D01-T17,AARC SBT: rec 3 standardised assessment and SBT before noon (conditional; very low),AARC SBT CPG 2024 (PMC11285503),PICO 3,Conditional; very low,text match
+D01-T17,AARC SBT: coordination between nurses adjusting sedation and RTs performing SBTs,AARC SBT CPG 2024 (PMC11285503),PICO 3 justification,Statement,text match
+D01-T17,"AARC SBT: adherence to guidelines is low, causing delay",AARC SBT CPG 2024 (PMC11285503),PICO 3 justification,Statement,text match
+D01-T17,AARC SBT: rec 4 FiO2 not increased (conditional; very low),AARC SBT CPG 2024 (PMC11285503),PICO 4,Conditional; very low,text match
+D01-T17,"AARC SBT: increasing FiO2 may mask hypoxaemia, false-positive SBT",AARC SBT CPG 2024 (PMC11285503),PICO 4 justification,Statement,text match
+D01-T17,AARC SBT: common criteria SpO2>90% with FiO2 0.40 or PaO2/FiO2>200; stop if SpO2<90%,AARC SBT CPG 2024 (PMC11285503),PICO 4 background,Statement,text match
+D01-T17,AARC SBT: all four recommendations conditional; relative absence of high-level evidence,AARC SBT CPG 2024 (PMC11285503),Discussion,Statement,text match
+D01-T17,AARC SBT: 75% passed first SBT in trials; clinicians slow to recognise readiness,AARC SBT CPG 2024 (PMC11285503),Introduction,Statement,text match
+D02-T02,Open RN 7.3: rate = R waves in 6-second strip x 10,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: rhythm regularity categories,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: PR 0.12-0.2 s; QRS 0.04-0.12 s,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: prolonged QRS may indicate hyperkalaemia or bundle branch block,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: ST elevation/depression of 1 mm at J point abnormal,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,"Open RN 7.3: prolonged QTc risk torsades, VT, VF",Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.3: U wave hypokalaemia; J wave hypothermia,Open RN Nursing Advanced Skills ch.7 (ECG),7.3,Educational text,text match
+D02-T02,Open RN 7.2: SA node 60-100; AV node 40-60; Purkinje 20-40,Open RN Nursing Advanced Skills ch.7 (ECG),7.2,Educational text,text match
+D02-T02,Open RN 7.2: artifact - monitor label not always correct,Open RN Nursing Advanced Skills ch.7 (ECG),7.2,Educational text,text match
+D02-T02,"Open RN 7.4: VT, VF and third-degree block can quickly lead to arrest",Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: atrial fibrillation irregularly irregular,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: R on T can trigger VT; prolonged QT,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,"Open RN 7.4: VT wide QRS, pulse vs pulseless",Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: VF no cardiac output; immediate CPR,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: asystole and PEA not shockable,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.4: first-degree AV block PR >0.2 s,Open RN Nursing Advanced Skills ch.7 (ECG),7.4,Educational text,text match
+D02-T02,Open RN 7.5: telemetry electrode placement and skin preparation,Open RN Nursing Advanced Skills ch.7 (ECG),7.5,Educational checklist,text match
+D04-T08,Open RN 15.5: normal pH 7.35-7.45; PaCO2 35-45; HCO3 22-26,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,"Open RN 15.5: ROME - respiratory opposite, metabolic equal",Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: SaO2 may be normal with hypercapnia; not the determining factor,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: paper-bag rebreathing no longer recommended,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: compensation definitions,Open RN Nursing Fundamentals 15.5 (acid-base),15.5,Educational text,text match
+D04-T08,Open RN 15.5: critical values pH <7.25 or >7.60,Open RN Nursing Fundamentals 15.5 (acid-base),15.5 table,Educational text,text match
+D04-T08,"AARC BGA 14.1: BGA recommended to evaluate ventilatory, acid-base, oxygenation status (1A)",AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.1,1A,text match
+D04-T08,AARC BGA 14.5: capillary BGA not recommended for oxygenation (1A),AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.5,1A,text match
+D04-T08,AARC BGA 14.7: peripheral venous PO2 not substitute for PaO2 (1A),AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.7,1A,text match
+D04-T08,AARC BGA 14.8: venous PCO2 and pH not substitute (2B),AARC Blood Gas Analysis and Hemoximetry CPG 2013,14.8,2B,text match
+D04-T08,AARC BGA 4.4: visible air bubbles contraindicate,AARC Blood Gas Analysis and Hemoximetry CPG 2013,4.4,Statement,text match
+D04-T08,AARC BGA 4.5: room temperature >30 min plastic; glass chilled 0-4C,AARC Blood Gas Analysis and Hemoximetry CPG 2013,4.5,Statement,text match
+D04-T08,AARC BGA 4.7: inadequately labelled specimen,AARC Blood Gas Analysis and Hemoximetry CPG 2013,4.7,Statement,text match
+D04-T08,"AARC BGA 6.1: sources of error incl clotting, air, saline contamination, delay, transport tube",AARC Blood Gas Analysis and Hemoximetry CPG 2013,6.1.11,Statement,text match
+D04-T08,AARC BGA 5.2: inappropriate treatment from improperly analysed specimen,AARC Blood Gas Analysis and Hemoximetry CPG 2013,5.2,Statement,text match
+D05-T03,Open RN 4.15: norepinephrine peripheral vasoconstrictor and inotropic stimulator,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.15,Educational text,text match
+D05-T03,Open RN 4.15: epinephrine IV - monitor vitals; monitor IV site for extravasation,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.15,Educational text,text match
+D05-T03,Open RN 4.15: dopamine monitoring and notify prescriber if urine falls without hypotension,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.15,Educational text,text match
+D05-T03,"Open RN 4.11: dobutamine beta-1; continuous ECG, BP, cardiac output, urine output","Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.11,Educational text,text match
+D05-T03,Open RN 4.8: phenylephrine as oral decongestant,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",4.8,Educational text,text match
+D05-T01,Open RN 8.5: benzodiazepines bind GABA; black box opioid warning,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 8.5: IV lorazepam respiratory depression; airway patency; monitor respiration,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,"Open RN 8.5: elderly more susceptible, monitor frequently","Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 8.5: flumazenil seizure risk,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 8.5: barbiturates taper not abruptly,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",8.5,Labelling text,text match
+D05-T01,Open RN 10.10: propofol IV general anaesthetic,"Open RN Nursing Pharmacology (ANS, catecholamines, CNS depressants, anesthetics)",10.10,Educational text,text match
+D08-T03,Open RN 3.4: two-person verification comparing wristband and bag label,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: written informed consent unless emergency,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: start within 30 minutes of obtaining the unit,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: remain with client first 15 minutes; stop and notify if reaction,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: monitor 4 to 6 hours after; teach delayed reaction signs,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D08-T03,Open RN 3.4: complete within 4-hour time frame,Open RN Nursing Advanced Skills 3.4 (blood products checklist),3.4,Educational checklist,text match
+D04-T09,"KDIGO 5.1.1: initiate RRT emergently for life-threatening fluid, electrolyte, acid-base change",KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.1.1,Not graded,text match
+D04-T09,"KDIGO 5.1.2: broader context and trends, not single BUN/creatinine thresholds",KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.1.2,Not graded,text match
+D04-T09,KDIGO 5.2.1: discontinue when no longer required or inconsistent with goals of care,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.2.1,Not graded,text match
+D04-T09,KDIGO 5.2.2: suggest not using diuretics to enhance recovery,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.2.2,2B,text match
+D04-T09,KDIGO 5.3.1.1: anticoagulation recommended if no increased bleeding risk,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.1.1,1B,text match
+D04-T09,KDIGO 5.3.2.2: regional citrate over heparin for CRRT if no contraindication,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.2.2,2B,text match
+D04-T09,KDIGO 5.3.3: increased bleeding risk - citrate rather than none; avoid regional heparinisation,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.3.2,2C,text match
+D04-T09,KDIGO 5.3.4: HIT - all heparin stopped; direct thrombin or Factor Xa inhibitors,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.3.4,1A,text match
+D04-T09,KDIGO 5.4.1: uncuffed non-tunnelled catheter,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.1,2D,text match
+D04-T09,KDIGO 5.4.2: vein preferences right jugular first,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.2,Not graded,text match
+D04-T09,KDIGO 5.4.3: ultrasound guidance recommended,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.3,1A,text match
+D04-T09,KDIGO 5.4.4: chest radiograph before first use of IJ or subclavian catheter,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.4,1B,text match
+D04-T09,KDIGO 5.4.5-5.4.6: no topical antibiotics; no antibiotic locks,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.4.6,2C,text match
+D04-T09,KDIGO 5.5.1: biocompatible membrane suggested,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.5.1,2C,text match
+D04-T09,KDIGO 5.6.2: CRRT for haemodynamically unstable patients,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.6.2,2B,text match
+D04-T09,KDIGO 5.6.3: CRRT for brain injury or raised ICP,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.6.3,2B,text match
+D04-T09,KDIGO 5.7.2: bicarbonate buffer recommended in circulatory shock,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.7.2,1B,text match
+D04-T09,KDIGO 5.7.4: fluids comply with AAMI standards for bacteria and endotoxins,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.7.4,1B,text match
+D04-T09,KDIGO 5.8.1: dose prescribed before each session; frequent assessment of delivered dose,KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.8.1,1B,text match
+D04-T09,"KDIGO 5.8.2: goals of electrolyte, acid-base, solute and fluid balance",KDIGO AKI guideline 2012 (Section 5 summary of recommendations),5.8.2,Not graded,text match
+D01-T06,"JICS: breath cycle four phases initiation, delivery, cycling, expiration",JICS education: mechanical ventilation (2026; educational review),Breath cycle,Educational review,text match
+D01-T06,"JICS: trigger too insensitive increases work of breathing; too sensitive false triggering from leaks, cardiac oscillations",JICS education: mechanical ventilation (2026; educational review),Initiation,Educational review,text match
+D01-T06,"JICS: volume control - tidal volume guaranteed, airway pressure varies",JICS education: mechanical ventilation (2026; educational review),Volume control,Educational review,text match
+D01-T06,"JICS: pressure control - tidal volume dependent on mechanics, not guaranteed",JICS education: mechanical ventilation (2026; educational review),Pressure control,Educational review,text match
+D01-T06,"JICS: cycling by time, volume, or flow fall (usually 25%)",JICS education: mechanical ventilation (2026; educational review),Cycling,Educational review,text match
+D01-T06,JICS: no single optimal PEEP; patient-specific,JICS education: mechanical ventilation (2026; educational review),PEEP,Educational review,text match
+D01-T06,JICS: total PEEP = extrinsic + intrinsic,JICS education: mechanical ventilation (2026; educational review),PEEP,Educational review,text match
+D01-T06,"JICS: plateau pressure measured during end-inspiratory pause, approximates alveolar pressure",JICS education: mechanical ventilation (2026; educational review),Plateau pressure,Educational review,text match
+D01-T06,"JICS: resistance increased by asthma, COPD, bronchospasm, secretions, tube obstruction",JICS education: mechanical ventilation (2026; educational review),Resistance,Educational review,text match
+D01-T06,JICS: static compliance formula,JICS education: mechanical ventilation (2026; educational review),Compliance,Educational review,text match
+D01-T06,"JICS: mode taxonomy control variable, breath sequence, targeting scheme",JICS education: mechanical ventilation (2026; educational review),Mode overview,Educational review,text match
+D01-T06,JICS: mandatory ventilation often requires substantial sedation; NMB not routine,JICS education: mechanical ventilation (2026; educational review),Mandatory ventilation,Educational review,text match
+D01-T06,JICS: ARMA low tidal volume PBW and plateau <=30; ESICM not routine higher PEEP; ATS higher PEEP only moderate-severe,JICS education: mechanical ventilation (2026; educational review),Evidence for ventilation strategy,Educational review,text match
+D01-T06,JICS: no automated weaning system superior to skilled protocolised weaning,JICS education: mechanical ventilation (2026; educational review),Closed loop,Educational review,text match
+D01-T06,JICS: selective overview; author interpretation,JICS education: mechanical ventilation (2026; educational review),Evidence for ventilation strategy,Educational review,text match
+D01-T06,JICS: one third of UK adult general critical care admissions ventilated,JICS education: mechanical ventilation (2026; educational review),Epidemiology,Educational review,text match
+D01-T06,"AARC PVA: assess plateau pressure (strong, high); VT 4-8 mL/kg PBW; document as mL/kg PBW",AARC Patient-Ventilator Assessment CPG 2024,Abstract,Strong; high,text match
+D01-T06,AARC PVA: focus of PVA is the patient rather than the ventilator,AARC Patient-Ventilator Assessment CPG 2024,Introduction,Statement,text match
+D01-T06,"AARC PVA: cuff pressure with manometer (strong, high)",AARC Patient-Ventilator Assessment CPG 2024,Abstract,Strong; high,text match
+D01-T09,AARC PVA: focus is the patient not the ventilator,AARC Patient-Ventilator Assessment CPG 2024,Introduction,Statement,text match
+D01-T09,HAMILTON-C1: approach patient immediately; secure effective ventilation,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2,Manual,text match
+D01-T09,HAMILTON-C1: alarm may be clinical condition or equipment problem; one condition induces multiple alarms,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 notes,Manual,text match
+D01-T09,HAMILTON-C1: one alarm condition can induce multiple alarms; one or two indicate root cause,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 notes,Manual,text match
+D01-T09,HAMILTON-C1: readjust limits only when inappropriately set,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 warning,Manual,text match
+D01-T09,HAMILTON-C1: extreme limits can render the alarm system useless,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 caution,Manual,text match
+D01-T09,HAMILTON-C1: ambient state when safe ventilation may be compromised,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.1,Manual,text match
+D01-T09,"HAMILTON-C1: technical fault - remove from use, record fault code, service","HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",8.2 warning,Manual,text match
+D01-T09,HAMILTON-C1: alarm silence mutes for limited time; high pressure alarm cannot be silenced,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",9.3,Manual,text match
+D01-T09,HAMILTON-C1: alarm sounds again when silence expires if unresolved,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",9.3,Manual,text match
+D01-T09,HAMILTON-C1: oxygen alarms suppressed during O2 enrichment,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",9.4,Manual,text match
+D01-T09,HAMILTON-C1: SpO2 alarm delay up to 15 s to reduce nuisance alarms,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",J.5.2,Manual,text match
+D01-T09,HAMILTON-C1: limits set appropriately before placing the patient on the ventilator,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",4.7.1 caution,Manual,text match
+D01-T09,HAMILTON-C1: Auto sets limits except Vt and apnea,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",4.7.1,Manual,text match
+D01-T09,HAMILTON-C1: manual not a substitute for professional judgement,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",Preface,Manual,text match
+D01-T09,HAMILTON-C1: copyright - no reproduction without written permission,"HAMILTON-C1 Operator Manual 2.2.x (624326/05, 2020)",Preface,Licence,text match
+D03-T03,BTF: CPP is difference between MAP and ICP; only calculable when ICP known,BTF Severe TBI guidelines 4th ed (2016),17 introduction,Guideline,text match
+D03-T03,BTF: it is not monitoring per se that affects outcomes; using information to direct treatment,BTF Severe TBI guidelines 4th ed (2016),Part II,Guideline,text match
+D03-T03,BTF Level IIB: ICP monitoring management reduces in-hospital and 2-week mortality,BTF Severe TBI guidelines 4th ed (2016),12 ICP monitoring,Level IIB,text match
+D03-T03,BTF: prior-edition indications GCS 3-8 and abnormal CT,BTF Severe TBI guidelines 4th ed (2016),12 ICP monitoring,Not supported by current standards,text match
+D03-T03,"BTF: normal CT with two or more of age >40, posturing, SBP <90",BTF Severe TBI guidelines 4th ed (2016),12 ICP monitoring,Not supported by current standards,text match
+D03-T03,BTF Level IIB: CPP monitoring recommended to decrease 2-week mortality,BTF Severe TBI guidelines 4th ed (2016),13 CPP monitoring,Level IIB,text match
+D03-T03,BTF Level IIB: treat ICP above 22 mm Hg,BTF Severe TBI guidelines 4th ed (2016),16 ICP thresholds,Level IIB,text match
+D03-T03,BTF Level III: combine ICP with clinical and CT findings,BTF Severe TBI guidelines 4th ed (2016),16 ICP thresholds,Level III,text match
+D03-T03,BTF Level IIB: CPP target 60-70; depends on autoregulatory status,BTF Severe TBI guidelines 4th ed (2016),17 CPP thresholds,Level IIB,text match
+D03-T03,BTF Level III: avoid aggressive CPP >70 (respiratory failure),BTF Severe TBI guidelines 4th ed (2016),17 CPP thresholds,Level III,text match
+D03-T03,"BTF Level III: SBP >=100 (50-69 y) or >=110 (15-49, >70 y)",BTF Severe TBI guidelines 4th ed (2016),15 BP thresholds,Level III,text match
+D03-T03,BTF Level III: jugular venous saturation <50% threshold to avoid,BTF Severe TBI guidelines 4th ed (2016),18 ACM thresholds,Level III,text match
+D03-T03,BTF Level IIB: prolonged prophylactic hyperventilation PaCO2 <=25 not recommended,BTF Severe TBI guidelines 4th ed (2016),5 Ventilation therapies,Level IIB,text match
+D03-T03,BTF Level I: steroids not recommended; methylprednisolone contraindicated,BTF Severe TBI guidelines 4th ed (2016),7 Steroids,Level I,text match
+D03-T03,BTF Level III: EVD zeroed at midbrain with continuous drainage may be considered,BTF Severe TBI guidelines 4th ed (2016),4 CSF drainage,Level III,text match
+D03-T03,BTF: hypotension SBP strongly associated with mortality (Klauber),BTF Severe TBI guidelines 4th ed (2016),15 BP thresholds,Evidence text,text match
+D03-T03,BTF: guideline September 2016,BTF Severe TBI guidelines 4th ed (2016),Title page,Date,text match
+D08-T02,"UHS: citrate blue cap, minimal stasis, filled to the line, analysed within 4 hours",UHS Sussex Pathology User Guide: Coagulation screen (2025),Samples required,Laboratory handbook,text match
+D08-T02,UHS: processed within 4 hours of venepuncture,UHS Sussex Pathology User Guide: Coagulation screen (2025),Samples required,Laboratory handbook,text match
+D08-T02,UHS: reference ranges locally determined,UHS Sussex Pathology User Guide: Coagulation screen (2025),Reference range,Laboratory handbook,text match
+D08-T02,UHS: INR 0.8-1.2; aPTT 24.4-33.7 s; fibrinogen 1.8-4.5 g/L (example local ranges),UHS Sussex Pathology User Guide: Coagulation screen (2025),Reference range,Laboratory handbook,text match
+D08-T02,"UHS: turnaround 1 working day, 2 hours if urgent",UHS Sussex Pathology User Guide: Coagulation screen (2025),Turnaround,Laboratory handbook,text match
+D08-T02,ARUP DIC: ISTH score >=5 compatible with overt DIC; repeat testing important,ARUP Consult: DIC (2025),Criteria,Educational,text match
+D08-T02,ARUP DIC: D-dimer best single test but not used in isolation; normal has excellent NPV,ARUP Consult: DIC (2025),D-Dimer,Educational,text match
+D08-T02,"ARUP DIC: fibrinogen acute phase reactant, can remain normal",ARUP Consult: DIC (2025),Fibrinogen,Educational,text match
+D08-T02,"ARUP DIC: PT and aPTT prolonged in most DIC; normal or shortened early; also prolonged with anticoagulants, liver disease, vitamin K deficiency",ARUP Consult: DIC (2025),Clotting times,Educational,text match
+D08-T02,ARUP DIC: TTP/HUS coagulation tests often normal or near normal,ARUP Consult: DIC (2025),Quick answers,Educational,text match
+D08-T02,ARUP DIC: low platelet count key but not specific; repeat testing,ARUP Consult: DIC (2025),Platelets,Educational,text match
+D08-T02,"ARUP anticoagulants: UFH, VKA, DOAC can interfere with testing; DOAC effects drug and reagent dependent",ARUP Consult: Impacts of Common Anticoagulants (2024),Introduction,Educational,text match
+D08-T02,"ARUP anticoagulants: drug, concentration and reagent dependent",ARUP Consult: Impacts of Common Anticoagulants (2024),Table footnote d,Educational,text match
+D08-T02,Open RN 6.12: PTT titrates IV heparin; protamine reversal,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match
+D08-T02,Open RN 6.12: notify immediately of new bleeding or bruising or sudden vital sign changes,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match
+D08-T02,Open RN 6.12: warfarin needs PT/INR monitoring; vitamin K reversal,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match
+D08-T02,Open RN 6.12: HIT platelets drop 30% or more,Open RN Pharmacology 6.12 Blood coagulation modifiers,6.12,Educational text,text match
+D05-T03,FDA norepinephrine label: avoid extravasation; infuse into large vein; check site frequently for free flow; monitor for signs,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Norepinephrine label 5.1,US label,text match
+D05-T03,FDA norepinephrine label: address hypovolaemia before initiating,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Norepinephrine label 5.1,US label,text match
+D05-T03,FDA norepinephrine label: sudden cessation may cause marked hypotension,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Norepinephrine label 5.2,US label,text match
+D05-T03,FDA norepinephrine label: emergency treatment of extravasation by infiltration with adrenergic blocking agent (not taught),"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Norepinephrine label 5.1,US label,text match
+D05-T03,FDA vasopressin label: indication vasodilatory shock hypotensive despite fluids and catecholamines,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Vasopressin label 1,US label,text match
+D05-T03,"FDA vasopressin label: reversible diabetes insipidus; monitor electrolytes, fluid status, urine output after discontinuation","US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Vasopressin label 5.2,US label,text match
+D05-T03,FDA vasopressin label: can worsen cardiac function,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Vasopressin label 5.1,US label,text match
+D05-T03,FDA epinephrine label: monitor BP frequently; check site for free flow; blanching may precede extravasation; consider changing site,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Epinephrine label 5.4,US label,text match
+D05-T03,"FDA epinephrine label: renal vasoconstriction, oliguria","US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Epinephrine label 5.5,US label,text match
+D05-T03,FDA dopamine label: address hypovolaemia; monitor extremities; infuse into large vein,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Dopamine label 5.1,US label,text match
+D05-T03,FDA dopamine label: abrupt discontinuation hypotension,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Dopamine label 5.3,US label,text match
+D05-T03,FDA dobutamine label: marked increase in HR or BP; AF rapid ventricular response; ectopy,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Dobutamine label warnings,US label,text match
+D05-T03,FDA phenylephrine label: extravasation necrosis; check infusion site for free flow; bradycardia,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Phenylephrine label 5.3,US label,text match
+D05-T03,JAMA Netw Open 2026: pooled minor AE incidence 2.3%; major AEs rare with short peripheral catheters,JAMA Netw Open 2026 meta-analysis of peripheral vasopressor adverse events (PMC12993702),Abstract,Meta-analysis,text match
+D05-T03,JAMA Netw Open 2026: VTE only with midline catheters in included studies,JAMA Netw Open 2026 meta-analysis of peripheral vasopressor adverse events (PMC12993702),Abstract,Meta-analysis,text match
+D05-T03,JAMA Netw Open 2026: majority retrospective; unclear or high risk of bias,JAMA Netw Open 2026 meta-analysis of peripheral vasopressor adverse events (PMC12993702),Limitations,Meta-analysis,text match
+D02-T12,"Crit Care Explor 2026: protocols vary widely in drugs, dosing, duration, monitoring, extravasation protocols",Crit Care Explor 2026 peripheral vasopressor protocol deviations (PMC13506231),Introduction,Retrospective study,text match
+D02-T12,Crit Care Explor 2026: extravasation requiring phentolamine in 1.3% of patients,Crit Care Explor 2026 peripheral vasopressor protocol deviations (PMC13506231),Abstract,Retrospective study,text match
+D05-T01,FDA midazolam boxed warning: respiratory depression and arrest; continuous monitoring,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Midazolam boxed warning,US label,text match
+D05-T01,"FDA midazolam: concomitant opioids profound sedation, respiratory depression, coma, death","US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Midazolam boxed warning,US label,text match
+D05-T01,"FDA lorazepam boxed warning: opioids, abuse, dependence and withdrawal","US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Lorazepam boxed warning,US label,text match
+D05-T01,FDA propofol label: ICU sedation changes made slowly,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Propofol label 5.8,US label,text match
+D05-T01,FDA propofol label: propofol infusion syndrome in ICU sedation,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Propofol label 5.9,US label,text match
+D05-T01,FDA propofol label: triglycerides; aseptic technique; single patient vial,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Propofol label 5.10,US label,text match
+D05-T01,FDA propofol label: avoid significant MAP decreases in raised ICP (cerebral perfusion pressure),"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Propofol label 5.6,US label,text match
+D05-T01,"FDA dexmedetomidine label: continuously monitor; bradycardia, sinus arrest, hypotension; arousability; tolerance","US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Dexmedetomidine label 5.1,US label,text match
+D05-T01,FDA dexmedetomidine label: arousal with stimulation not lack of efficacy,"US FDA drug labels via openFDA (norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine, midazolam, lorazepam, propofol, dexmedetomidine)",Dexmedetomidine label 5.4,US label,text match
+D07-T06,NICE CG32 1.7.17: position of all NG tubes confirmed after placement and before each use by aspiration and pH paper (X-ray if necessary),NICE CG32 Nutrition support for adults (updated 2017),1.7.17,Recommendation,text match
+D07-T06,NICE CG32: local protocols for inability to aspirate or invalid pH due to acid suppression,NICE CG32 Nutrition support for adults (updated 2017),1.7.17,Recommendation,text match
+D07-T06,NICE CG32 1.7.18: post-pyloric tubes confirmed with abdominal X-ray unless placed radiologically,NICE CG32 Nutrition support for adults (updated 2017),1.7.18,Recommendation,text match
+D07-T06,NICE CG32 1.7.16: tube inserted by staff with relevant skills and training,NICE CG32 Nutrition support for adults (updated 2017),1.7.16,Recommendation,text match
+D07-T06,NICE CG32 monitoring table: gastric pH <=5.5 before each feed; fixation and nasal erosion daily,NICE CG32 Nutrition support for adults (updated 2017),Monitoring table,Recommendation,text match
+D07-T06,NHS alert 2016: misplaced NG/OG tube feeding is a Never Event; pH testing of aspirate and X-ray essential,NHS Improvement Patient Safety Alert NHS/PSA/RE/2016/006 (NG tube misplacement),Alert text,Patient safety alert,text match
+D07-T06,NHS alert 2016: most common error misinterpretation of X-rays by staff lacking competency training; other nursing/pH errors,NHS Improvement Patient Safety Alert NHS/PSA/RE/2016/006 (NG tube misplacement),Alert text,Patient safety alert,text match
+D07-T06,"NHS alert 2016: directed at trust boards, not frontline staff",NHS Improvement Patient Safety Alert NHS/PSA/RE/2016/006 (NG tube misplacement),Alert text,Patient safety alert,text match
+D08-T03,"NICE NG24 1.13.1: monitor condition and vital signs before, during and after transfusion",NICE NG24 Blood transfusion (updated 2026-02-26),1.13.1,Recommendation 2015,text match
+D08-T03,NICE NG24 1.13.2: observe in suitable environment with staff able to manage acute reactions,NICE NG24 Blood transfusion (updated 2026-02-26),1.13.2,Recommendation 2015,text match
+D08-T03,NICE NG24 1.14.1: consider electronic patient identification,NICE NG24 Blood transfusion (updated 2026-02-26),1.14.1,Recommendation 2015,text match
+D04-T06,Potassium safeguards: 440 incidents; 34% wrong concentration; 24% wrong medication; 26% consequences,J Patient Saf 2026 potassium safeguards expert panel (PMC13492640),Abstract,Expert panel study,text match
+D04-T06,Potassium safeguards: ready-to-use solutions advised over concentrates on conventional wards,J Patient Saf 2026 potassium safeguards expert panel (PMC13492640),Introduction,Expert panel study,text match
+D04-T06,Potassium safeguards: via central line label on strong solutions; labels at both ends of tubing,J Patient Saf 2026 potassium safeguards expert panel (PMC13492640),Safeguards,Expert panel consensus,text match
+D04-T06,"Potassium safeguards: smart pumps with drug library, barcode administration",J Patient Saf 2026 potassium safeguards expert panel (PMC13492640),Safeguards,Expert panel consensus,text match
+D04-T06,Potassium safeguards: oral/enteral syringes to prevent accidental IV administration,J Patient Saf 2026 potassium safeguards expert panel (PMC13492640),Safeguards,Expert panel consensus,text match
+D01-T17,"Peri-extubation summary: 23 publications, 48 pieces of evidence, JBI grading",J Multidiscip Healthc 2026 peri-extubation best evidence summary (PMC13715538; secondary),Abstract,Secondary summary,text match
+D01-T17,Peri-extubation summary: verify availability of airway equipment and emergency devices; confirm SBT done,J Multidiscip Healthc 2026 peri-extubation best evidence summary (PMC13715538; secondary),Item 39,Expert consensus 5b,text match
+D01-T17,Peri-extubation summary: preventive NIV for high-risk patients ventilated >24 h who passed SBT,J Multidiscip Healthc 2026 peri-extubation best evidence summary (PMC13715538; secondary),Item 44,1b,text match
+D01-T17,Peri-extubation summary: shallow rapid breathing index not recommended for extubation success,J Multidiscip Healthc 2026 peri-extubation best evidence summary (PMC13715538; secondary),Item 13,Secondary,text match
+D01-T17,"Peri-extubation summary: post-extubation monitoring for hoarseness, swelling, dysphagia",J Multidiscip Healthc 2026 peri-extubation best evidence summary (PMC13715538; secondary),Item 43,5b,text match
+D01-T09,Draeger IFU: alarm tone suppressed for max 2 minutes; sounds again if fault not eliminated,Draeger Evita Infinity V500 Instructions for Use SW 2.n,Suppressing the alarm tone,Manual,text match
+D01-T09,Draeger IFU: high-priority alarm messages stay displayed and must be acknowledged,Draeger Evita Infinity V500 Instructions for Use SW 2.n,Acknowledging alarms,Manual,text match
+D01-T09,Draeger IFU: setting extreme alarm limits can render the alarm system useless,Draeger Evita Infinity V500 Instructions for Use SW 2.n,Setting alarm limits,Manual,text match
+D01-T09,Draeger IFU: alarms deactivated only if safety not jeopardised,Draeger Evita Infinity V500 Instructions for Use SW 2.n,Deactivating alarm limits,Manual,text match
+D01-T09,Draeger IFU: alarm history kept after power cycle,Draeger Evita Infinity V500 Instructions for Use SW 2.n,Alarm history,Manual,text match
+D01-T09,Draeger IFU: recognisable from 1 metre; auxiliary alarm if main speaker fails,Draeger Evita Infinity V500 Instructions for Use SW 2.n,Failure of the acoustic alarm,Manual,text match
+D01-T09,AACN: alarm fatigue patient safety risk; 89-99% ECG alarms false or insignificant,AACN Practice Alert (alarm management) public summary,Scope and impact,Practice alert summary,text match
+D02-T02,"AACN dysrhythmia summary: accuracy of electrode placement, lead selection, interval assessment, interpretation",AACN Practice Alert (dysrhythmia monitoring) public summary,Scope and impact,Practice alert summary,text match
+D09-T02,NMC Code 10.1: records at the time or as soon as possible,NMC The Code (UK),10.1,Code,text match
+D09-T02,"NMC Code 10.4: attribute entries; clearly written, dated and timed; no unnecessary abbreviations, jargon, speculation",NMC The Code (UK),10.4,Code,text match
+D09-T02,NMC Code 10.3: accurate records without falsification,NMC The Code (UK),10.3,Code,text match
+D09-T03,NMC Code 13.1-13.3: identify and assess worsening health; timely referral; ask for help beyond competence,NMC The Code (UK),13.3,Code,text match
+D09-T03,NMC Code 11.1-11.3: delegate only within competence; supervise; confirm outcome,NMC The Code (UK),11.1,Code,text match
+D09-T03,NMC Code: standards apply within professional scope of practice,NMC The Code (UK),Code header,Code,text match
+D09-T03,"NCSBN/ANA: Five Rights of Delegation - right task, circumstance, person, directions, supervision",NCSBN/ANA National Guidelines for Nursing Delegation (2019),Five Rights,Guideline,text match
+D09-T03,NCSBN/ANA: effective 2019-04-29; replaces 2010 joint statement,NCSBN/ANA National Guidelines for Nursing Delegation (2019),Title page,Guideline,text match

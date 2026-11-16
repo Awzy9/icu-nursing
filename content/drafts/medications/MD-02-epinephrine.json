@@ -1,0 +1,254 @@
+{
+ "med_id": "MD-02",
+ "number": 2,
+ "status": "DRAFT",
+ "origin": "ai_generated",
+ "clinically_reviewed": false,
+ "pharmacist_reviewed": false,
+ "clinical_reviewers": [],
+ "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+ "name": "Epinephrine",
+ "drug_class": "Catecholamine, non-selective adrenergic agonist",
+ "category": "vasoactives-inotropes",
+ "high_alert": true,
+ "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
+ "summary": "Adrenergic agonist used for emergency treatment of allergic reactions including anaphylaxis and to raise mean arterial pressure in adults with hypotension associated with septic shock. Nursing focus: correct injection site and route for the indication, extravasation, and cardiac effects.",
+ "batch": 1,
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_status": "partial",
+ "license_status": "unassessed",
+ "label_source": "FDA",
+ "label_ref": "L-EPINEPHRINE",
+ "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+ "sources": [
+  {
+   "id": "L-EPINEPHRINE",
+   "read": "full",
+   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  },
+  {
+   "id": "S-FDA-PUMP",
+   "read": "full",
+   "use": "FDA infusion pump page (high-risk infusion examples)"
+  },
+  {
+   "id": "S-AHRQ-TS",
+   "read": "partial",
+   "use": "AHRQ TeamSTEPPS SBAR page"
+  },
+  {
+   "id": "S-RCP-NEWS2",
+   "read": "full",
+   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  }
+ ],
+ "sections": {
+  "general_pharmacology": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "The label describes epinephrine as a non-selective alpha and beta adrenergic agonist indicated for emergency treatment of allergic reactions (Type 1) including anaphylaxis, and to increase mean arterial blood pressure in adults with hypotension associated with septic shock.",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    }
+   ]
+  },
+  "administration_considerations": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "For injection in anaphylaxis, the label says do not inject into the buttocks, digits, hands or feet, and states the anterolateral thigh is the most appropriate site; avoid repeated injection at the same site.",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    }
+   ]
+  },
+  "nursing_responsibilities": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Confirm the intended route and indication against the order, because the product is used for different indications with different routes.",
+     "support": "partial",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    },
+    {
+     "text": "Check the infusion site for extravasation when given intravenously.",
+     "support": "partial",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Monitoring frequency for blood pressure, heart rate, rhythm and symptoms follows the unit's protocol for the indication.",
+     "support": "local_protocol",
+     "sources": []
+    },
+    {
+     "text": "Check the intravenous infusion site frequently for free flow; the label notes that blanching along the vein may signal leakage and that changing the infusion site may be considered.",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    }
+   ]
+  },
+  "safety_alerts": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Avoid extravasation into tissues, which can cause local necrosis (label warning).",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    },
+    {
+     "text": "The label warns that epinephrine may aggravate angina pectoris or produce ventricular arrhythmias.",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    }
+   ]
+  },
+  "adverse_effects": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Common adverse reactions to systemically administered epinephrine include anxiety, apprehension, restlessness, tremor, weakness, dizziness, sweating, palpitations, pallor, nausea and vomiting, headache and respiratory difficulties.",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    },
+    {
+     "text": "The label also lists cardiovascular reactions (angina, arrhythmias, hypertension, tachycardia, ventricular ectopy) and notes that rapid rises in blood pressure associated with epinephrine have produced cerebral haemorrhage, particularly in elderly patients with cardiovascular disease.",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    }
+   ]
+  },
+  "escalation": {
+   "support": "partial",
+   "items": [
+    {
+     "text": "Escalate promptly for chest pain, new arrhythmia, extravasation or persisting symptoms.",
+     "support": "partial",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
+    },
+    {
+     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+     "support": "sourced",
+     "sources": [
+      "S-RCP-NEWS2"
+     ]
+    }
+   ]
+  },
+  "documentation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Record the indication, route, site, response and any adverse effect per unit standard.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_preparation": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  },
+  "institution_dosing": {
+   "support": "local_protocol",
+   "items": [
+    {
+     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+     "support": "local_protocol",
+     "sources": []
+    }
+   ]
+  }
+ },
+ "monitoring": [
+  {
+   "kind": "assess",
+   "text": "Check the injection or infusion site for tissue damage.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-EPINEPHRINE"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Observe heart rate, rhythm, blood pressure and the patient's symptoms at the unit's frequency.",
+   "critical": true,
+   "support": "local_protocol",
+   "sources": []
+  },
+  {
+   "kind": "observe",
+   "text": "Watch for chest pain or palpitations.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-EPINEPHRINE"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Report new arrhythmia, chest pain or extravasation immediately.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-EPINEPHRINE"
+   ]
+  },
+  {
+   "kind": "document",
+   "text": "Record indication, route and response.",
+   "critical": false,
+   "support": "local_protocol",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Dosing and preparation for anaphylaxis versus septic shock: deliberately not included.",
+  "Anaphylaxis and resuscitation guidelines were not read for this entry.",
+  "Other label indications and presentations were not summarised."
+ ],
+ "permissions": [
+  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+  "FDA infusion pump page: verify reuse terms."
+ ],
+ "label_currency_check": {
+  "checked": "2026-11-16",
+  "set_id": "577f987e-d3af-4f49-ab44-5db9cbf46601",
+  "label_version": "3",
+  "effective_time": "20261027",
+  "matches_register": true,
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+ }
+}
