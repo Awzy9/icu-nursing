@@ -86,7 +86,7 @@ D. Wait and document the finding, because circulation often improves within a fe
 **Trace:** S-CDC-BSI-2011 — Clinical safety inference (D02-T04): suspected limb ischemia needs immediate escalation and an approved local vascular-access protocol; CDC's catheter guideline is for infection prevention, not an ischemia decision algorithm.
 
 ## 18. References
-- CDC intravascular catheter guidance. https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html (accessed 2026-11-16)
-- British Thoracic Society pleural procedures statement. https://brit-thoracic.org.uk/document-library/clinical-statements/pleural-procedures/bts-clinical-statement-on-pleural-procedures (accessed 2026-11-16)
-- Intensive Care Society transfer guidance. https://ics.ac.uk/asset/75861CB3%2DB6B4%2D4E78%2D80F22B290BC05015/ (accessed 2026-11-16)
-- KDIGO AKI guideline Section 5. https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-16)
+- CDC intravascular catheter guidance. https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html (accessed 2026-11-15)
+- British Thoracic Society pleural procedures statement. https://brit-thoracic.org.uk/document-library/clinical-statements/pleural-procedures/bts-clinical-statement-on-pleural-procedures (accessed 2026-11-15)
+- Intensive Care Society transfer guidance. https://ics.ac.uk/asset/75861CB3%2DB6B4%2D4E78%2D80F22B290BC05015/ (accessed 2026-11-15)
+- KDIGO AKI guideline Section 5. https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-15)
