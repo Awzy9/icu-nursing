@@ -120,12 +120,12 @@ D. Prepare and give the first drug before starting compressions, to save time wh
 **Why not D:** Drug administration belongs to the team and follows compressions.
 
 **Q2 (application).** Which description of compressions on an adult in a bed matches ERC 2025 BLS?
-A. At least 5 cm but not more than 6 cm, 100–120 per minute, full recoil, deeper to compensate for a soft mattress.
+A. Aim for 5–6 cm of chest compression at 100–120 per minute with full recoil; start on the bed and account for mattress compression when assessing effectiveness.
 B. Compress 3–4 cm at a rate of about 80 per minute, leaning on the chest between compressions to keep the hands in place.
 C. Compress as hard as possible and as fast as possible, ignoring recoil, so that the blood flow is maximal.
 D. Compress only once per second after the airway has been secured, since compressions before that are ineffective.
 **Answer: A.**
-**Why correct:** The BLS text describes compressions at a depth and rate that allow full recoil between compressions, and says that on a mattress the rescuer compresses deeper to compensate for the soft surface. The other options are too shallow, too slow, too fast or lean on the chest.
+**Why correct:** ERC 2025 recommends a chest compression depth of 5–6 cm, a rate of 100–120/min and full recoil. Start CPR on the bed rather than delaying to move the patient; mattress displacement may require additional downward hand movement to achieve effective chest compression, but this is not a recommendation to exceed the chest-depth target.
 **Why not B:** Too shallow, too slow, and leaning prevents recoil.
 **Why not C:** Excessive speed and no recoil reduce effectiveness.
 **Why not D:** Compressions should not wait for the airway.
@@ -147,7 +147,7 @@ B. A MAP of 52 mmHg falling over ten minutes, when the team has ordered a target
 C. A temperature of 36.8 °C measured with the bladder probe, unchanged from the previous hour.
 D. A capillary glucose that is within the range set by the unit protocol and has been stable since ROSC.
 **Answer: B.**
-**Why correct:** Hypotension after arrest should be avoided; ERC targets a MAP above 60–65 mmHg.
+**Why correct:** ERC–ESICM 2025 advises avoiding hypotension after ROSC and targeting MAP above approximately 60–65 mmHg, while applying the individual target prescribed by the resuscitation team. The falling MAP of 52 mmHg here requires urgent assessment and escalation.
 **Why not A:** 97% lies within the advised range of 94–98% with a reliable trace.
 **Why not C:** Fever avoidance targets 37.5 °C or less; 36.8 °C is acceptable.
 **Why not D:** A glucose within the protocol range, stable since ROSC, needs routine monitoring only.
@@ -160,7 +160,7 @@ D. Reporting a rise in the temperature of a comatose post-arrest patient to the 
 **Answer: B.**
 **Why correct:** Prognostication is multimodal and a medical team decision; no single predictor is fully accurate.
 **Why not A:** A documentation task for the nurse or scribe.
-**Why not C:** A nursing action in CPR on a bed.
+**Why not C:** Activating an available CPR mattress mode is a trained team task under local policy; do not delay the start of chest compressions to configure the bed.
 **Why not D:** A nursing monitoring task.
 
 **Q6 (safety).** Why should sedative and opioid doses be recorded carefully in a comatose post-arrest patient?
