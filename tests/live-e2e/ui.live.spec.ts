@@ -11,6 +11,15 @@ import { adminStorageRemove } from "../../scripts/live/admin";
 import { refuseCaptchaWeakeningOnDev } from "../../scripts/live/mgmt";
 import { cleanup } from "../live/helpers";
 import { readFileSync } from "node:fs";
+import { type IndexEntry } from "../../scripts/build-draft-index";
+
+/** The register page's counts are generated from this file at build time; read it here too so the test never hardcodes a total that content work makes stale. */
+function draftIndexCounts() {
+  const entries = (JSON.parse(readFileSync("src/content/draft-index.json", "utf8")) as { entries: IndexEntry[] }).entries;
+  const total = entries.length;
+  const casesPartial = entries.filter((e) => e.type === "cases" && e.evidence_status === "partial").length;
+  return { total, casesPartial };
+}
 
 test.describe.configure({ mode: "serial" });
 
@@ -186,9 +195,10 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await mfa(page, boss.email);
   await page.goto("/en/admin/content/register");
   await expect(page.getByRole("heading", { level: 1, name: "Draft register" })).toBeVisible();
-  await expect(page.getByText("154 of 154 drafts")).toBeVisible();
+  const { total, casesPartial } = draftIndexCounts();
+  await expect(page.getByText(`${total} of ${total} drafts`)).toBeVisible();
   await page.goto("/en/admin/content/register?type=cases&evidence=partial");
-  await expect(page.getByText("20 of 154 drafts")).toBeVisible();
+  await expect(page.getByText(`${casesPartial} of ${total} drafts`)).toBeVisible();
   await page.goto("/en/admin/content/register?q=zzzz-nothing");
   await expect(page.getByText("No drafts match these filters.")).toBeVisible();
   await page.goto("/en/admin/content/register/SC-11");
