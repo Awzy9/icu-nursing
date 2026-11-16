@@ -14,7 +14,7 @@ sources_not_read: [S-NPIAP-2019]
 independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Stage definitions were not read, so staging is not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
 ---
 # Skin assessment and pressure injury prevention in the ICU
-> DRAFT – NOT clinically reviewed. AI-generated. Based on an abridged guide; reviewers must check against the full guideline.
+> DRAFT – NOT clinically reviewed. AI-generated. The 2026 Quick Reference Guide is the main recorded source; selected full online chapters on repositioning, device-related injury and skin assessment were cross-checked on 2026-11-16. Not all chapters, references or evidence tables have been comprehensively reviewed.
 
 ## 1. Overview
 Pressure injuries are damage to skin and underlying tissue caused by pressure, shear, or both, often over bony prominences or under medical devices. ICU patients are at high risk because of immobility, sedation, poor perfusion, moisture, nutrition problems and many devices. Prevention is mainly nursing care: regular risk and skin assessment, repositioning, device care, skin care, nutrition input and early escalation.
@@ -55,8 +55,8 @@ Skin and device sites at every position change and every shift; risk re-assessme
 | Topic | Direction (strength as stated) |
 |---|---|
 | Risk assessment | Good practice to do structured assessment with skin assessment, scales plus other risk factors, clinical judgment, documented |
-| Repositioning | Good practice; individualised; support surface does not replace it; use friction/shear-reducing techniques |
-| Device-related injury | Select, size and secure devices carefully (good practice); check under devices regularly; reduce pressure at the interface; preventive dressing under devices – strong recommendation (very low certainty evidence) |
+| Repositioning | Good practice; individualised; support surface does not replace it; use friction/shear-reducing techniques. Full 2026 chapter R7 conditionally suggests 2- or 3-hourly intervals for many at-risk individuals with appropriate support surfaces (very low certainty), but requires individual assessment; people in shock may need more frequent incremental shifts. R8 discourages routinely extending to 4–6 hours. |
+| Device-related injury | Select, size and secure devices carefully (good practice); check under devices regularly without interrupting life-sustaining therapy; reduce pressure at the interface; preventive dressing under devices – strong recommendation (very low certainty evidence). Device changes/removal should occur when clinically feasible and within trained team roles (full 2026 device chapter). |
 | Endotracheal tube fixation | Suggest using a fixation device (conditional); do not use a fixation device when the patient is prone |
 | Sacrum and heels | Suggest multilayered silicone foam dressings for people at high risk where resources permit (conditional) |
 | Nutrition | Good practice to screen and assess those at risk |
@@ -145,14 +145,14 @@ D. Combine colour, temperature, firmness, swelling and pain over bony areas and 
 **Why not B:** A single method may miss early injury.
 **Why not C:** Prevention depends on finding early changes before the skin breaks.
 
-**Q6 (scope).** Which action belongs to the prescriber rather than the nurse?
-A. Inspecting the skin under a device and repositioning the device.
-B. Deciding to remove or replace a treatment device that is damaging the skin.
+**Q6 (scope).** A ventilated patient develops pressure injury beneath an endotracheal tube fixation device. Which decision requires coordinated assessment by the authorized airway team rather than unilateral action by an untrained staff member?
+A. Inspecting visible skin and mucosa around a secured tube while maintaining airway stability.
+B. Deciding whether to change or replace an airway-securement method while ensuring uninterrupted airway protection.
 C. Floating the heels on pillows so that they are offloaded between turns.
 D. Requesting a dietitian review under unit policy.
 **Answer: B.**
-**Why correct:** Removing or replacing a treatment device is a medical decision; the nurse reports the harm and suggests alternatives.
-**Why not A:** This is independent nursing care.
+**Why correct:** An airway-securement change that could displace a life-sustaining tube requires a trained, authorized team and local airway policy. The task is not universally physician-only: qualified nurses and respiratory therapists may participate or perform designated steps under local protocols.
+**Why not A:** Skin assessment and reporting are nursing responsibilities; avoid disturbing airway fixation without trained support.
 **Why not D:** A nursing referral under unit policy.
 **Why not C:** Independent nursing care.
 
@@ -163,7 +163,7 @@ D. Requesting a dietitian review under unit policy.
 Risk tools, staging system, support surfaces, dressings and repositioning schedules follow the institution's policy. Prone-positioning protocols have their own rules.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: an international, multi-society guideline (authoritative) but only the abridged Quick Reference Guide was read; many statements are good-practice statements with low-certainty evidence.
+- Source quality and 2026-11-16 update: the international Quick Reference Guide was read previously; selected full online chapters (Repositioning and Mobilization; Device-Related Pressure Injuries; Skin and Tissue Assessment) were checked for recommendations and relevant implementation considerations. **Not all full chapter text, study references, and evidence frameworks were re-read**, and this is not a comprehensive guideline review. R7 (2–3-hour options) is conditional/very-low certainty and requires clinical individualization; pressure-injury prevention must not override airway or hemodynamic safety. See https://internationalguideline.com/repositioning ; https://internationalguideline.com/drpi ; https://internationalguideline.com/assessment .
 - International applicability: developed with international organisations; resource-dependent items (silicone foam dressings, specialised surfaces) are conditional.
 - Not covered: staging definitions and wound treatment (not read).
 - Open questions for reviewers (NE, BN): preferred risk scale; ICU-specific repositioning during haemodynamic instability; Arabic terminology; whether to adopt the 4th-edition recommendations before full-text review.
