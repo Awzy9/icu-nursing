@@ -1229,12 +1229,17 @@
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SHEA-CLABSI-2022",
+     "licence_class": "GREEN",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "482ab93879a6639d"
+   "hash": "f003b7ae617c98ab"
   },
   {
    "key": "XQ-04",
