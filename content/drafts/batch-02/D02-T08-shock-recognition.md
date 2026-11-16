@@ -167,7 +167,8 @@ D. Document the reading carefully and review it after the shift, when the day ha
 **Why not D:** Delay may allow deterioration.
 
 ## 18. References
-- Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971-2012. doi:10.1007/s00134-025-08137-z. https://pure.eur.nl/ws/portalfiles/portal/215348682/ESICM_guidelines_on_circulatory_shock_and_hemodynamic_monitoring_2025.pdf (accessed 2026-11-16; abstract, introduction and Table 1 comparison read; **not** full guideline; cite-only).\n- Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. doi:10.1007/s00134-014-3525-z. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
+- Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971-2012. doi:10.1007/s00134-025-08137-z. https://pure.eur.nl/ws/portalfiles/portal/215348682/ESICM_guidelines_on_circulatory_shock_and_hemodynamic_monitoring_2025.pdf (accessed 2026-11-16; abstract, introduction and Table 1 comparison read; **not** full guideline; cite-only).
+- Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. doi:10.1007/s00134-014-3525-z. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
 - Evans L, et al. Surviving Sepsis Campaign 2021. Intensive Care Med. 2021;47:1181-1247 (capillary refill statement). https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
 
 ## 19. Local protocol note
