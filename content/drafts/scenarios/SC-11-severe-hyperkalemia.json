@@ -58,7 +58,8 @@
   "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
   "Calcium, insulin-glucose, salbutamol and binder doses, rates and preparations are in the guideline and are deliberately not reproduced; they come from orders and the unit protocol.",
   "UK adult guideline with a review date of October 2026; critical-care alternatives (for example dialysis or bicarbonate) are medical decisions and not written.",
-  "The potassium and ECG thresholds are not used in the scenario's observations as bands."
+  "The potassium and ECG thresholds are not used in the scenario's observations as bands.",
+  "AI source comparison 2026-11-16: UKKA 2026 detailed Guideline 14.1 (urgent 12-lead ECG at ≥6.0) and 14.2 (continuous monitoring at ≥6.5 or ECG changes) were checked. Delaying escalation to repeat a potassium of 6.8 with ECG changes was corrected from partial credit to zero. Full simulation branch and local protocol remain unreviewed by a credentialed clinician."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -90,11 +91,11 @@
    ],
    "options": [
     {
-     "text": "Assess the patient with the early warning score, make sure continuous ECG monitoring is on and tell the responsible doctor urgently.",
+     "text": "Assess immediately, call the responsible clinician urgently, obtain an urgent 12-lead ECG and ensure continuous ECG monitoring per the unit's emergency pathway.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "The guideline recommends urgent clinical assessment with an early warning score, an urgent 12-lead ECG and continuous ECG monitoring for severe hyperkalaemia, ideally in a higher-dependency setting.",
+     "feedback": "UKKA July 2026 recommends urgent 12-lead ECG at K⁺ ≥6.0 mmol/L and continuous ECG monitoring at ≥6.5 mmol/L or with ECG changes. At 6.8 with ECG changes, prompt escalation and monitoring are indicated while the team confirms the result and directs treatment.",
      "consequence": "The doctor attends and a 12-lead ECG is arranged while monitoring continues.",
      "support": "partial",
      "sources": [
@@ -104,11 +105,11 @@
     },
     {
      "text": "Repeat the sample and tell the doctor only if the second result is also high.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "independent_nursing",
-     "feedback": "A repeat can be sensible when a false result is suspected, but urgent assessment and monitoring should not wait for it.",
-     "consequence": "Precious time passes before the patient is assessed.",
+     "feedback": "At K⁺ 6.8 mmol/L with concerning ECG changes, urgent clinical assessment, a 12-lead ECG and continuous rhythm monitoring must proceed immediately. Repeat or point-of-care sampling may run in parallel if pseudohyperkalaemia is suspected; do not postpone escalation.",
+     "consequence": "The patient is not assessed urgently while waiting for the repeat result; dangerous rhythm changes may progress.",
      "support": "partial",
      "sources": [
       "N-UKKA-HK-2026-07"
