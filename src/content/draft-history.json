@@ -1352,6 +1352,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "05d2377668e460d5",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-08": [
@@ -1369,12 +1381,42 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "113f8b6953bf0fa1",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-EPINEPHRINE",
+     "L-MILRINONE",
+     "L-NOREPINEPHRINE",
+     "L-VASOPRESSIN"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-09": [
    {
     "hash": "d80feeb089d089a5",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "L-FENTANYL",
+     "L-MIDAZOLAM",
+     "L-MORPHINE",
+     "L-PROPOFOL"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "bc3b1663b9ebe667",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-DEXMEDETOMIDINE",
@@ -1406,6 +1448,22 @@
    {
     "hash": "f485ab8af952fff1",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BTS-PCS-2023",
+     "N-HODGSON-2014",
+     "N-ICS-TRANSFER-2026",
+     "S-CDC-BSI-2011",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "2baac25eeeab3991",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "N-AHS-CRRT-ALARM-2025",
