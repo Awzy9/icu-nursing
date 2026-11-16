@@ -27,15 +27,15 @@ D. The healthcare assistant who connects the equipment.
 
 **Q2 (scope).** The arterial line on a stable patient has not been used for sampling for a day. Who decides to remove it?
 A. The nurse alone, once the line has been unused for a full day.
-B. The prescriber; the nurse asks each day whether the line is still needed.
+B. The authorized clinician or trained team under the line-removal protocol; the nurse raises whether the line is still needed.
 C. The patient, once he asks for it to come out.
 D. The pharmacist, who reviews the daily infusion chart.
 **Answer: B.**
-**Why correct:** The arterial line draft rests on CDC advice to remove catheters as soon as they are no longer needed; removal is a prescriber decision and the nurse raises the daily question.
+**Why correct:** CDC recommends removing arterial catheters when no longer needed (infection prevention). Which trained clinician may authorize or perform removal is determined by local policy; the nurse raises daily necessity and follows the approved removal process.
 **Why not A:** Removal needs an order or approved protocol.
 **Why not C:** Patient preference is considered but does not replace the clinical decision.
 **Why not D:** Line removal is not a pharmacy decision.
-**Trace:** S-CDC-BSI-2011 — Remove arterial catheter as soon as no longer needed; prescriber decision.
+**Trace:** S-CDC-BSI-2011 — CDC: remove arterial catheters as soon as no longer required. Who removes the line is governed by local credentialling and protocol, not the CDC infection-prevention guideline.
 
 **Q3 (scope).** A CRRT prescription says one fluid-balance goal, but the patient seems wetter than planned. Who changes the prescription?
 A. The prescriber; the nurse reports the discrepancy and the delivered dose or balance.
@@ -79,11 +79,14 @@ B. Report at once and follow instructions, keeping the arm visible.
 C. Flush the line repeatedly until the colour returns to the hand.
 D. Wait and document the finding, because circulation often improves within a few hours.
 **Answer: B.**
-**Why correct:** The arterial line draft lists cold, pale or painful limb as an escalation trigger, with decisions about replacing or removing the catheter belonging to the prescriber.
+**Why correct:** A cold, pale, painful extremity with an arterial catheter raises concern for impaired limb perfusion and warrants immediate assessment and escalation under the unit's vascular-access protocol. CDC's cited infection-prevention guidance does not itself specify this ischemia response or professional scope.
 **Why not A:** Removal without an order is outside the nurse's role and may cause bleeding.
 **Why not C:** Repeated flushing can cause harm and does not address the cause.
 **Why not D:** Signs of limb ischaemia need immediate reporting.
-**Trace:** S-CDC-BSI-2011 — Cold, pale, painful limb with arterial line: escalate immediately.
+**Trace:** S-CDC-BSI-2011 — Clinical safety inference (D02-T04): suspected limb ischemia needs immediate escalation and an approved local vascular-access protocol; CDC's catheter guideline is for infection prevention, not an ischemia decision algorithm.
 
 ## 18. References
-- Sources as listed in the skill drafts. https://dailymed.nlm.nih.gov/ (accessed 2026-11-15)
+- CDC intravascular catheter guidance. https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html (accessed 2026-11-16)
+- British Thoracic Society pleural procedures statement. https://brit-thoracic.org.uk/document-library/clinical-statements/pleural-procedures/bts-clinical-statement-on-pleural-procedures (accessed 2026-11-16)
+- Intensive Care Society transfer guidance. https://ics.ac.uk/asset/75861CB3%2DB6B4%2D4E78%2D80F22B290BC05015/ (accessed 2026-11-16)
+- KDIGO AKI guideline Section 5. https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-16)
