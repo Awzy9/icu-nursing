@@ -4669,6 +4669,20 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "ce7d8cd9fce4709e",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-05": [
@@ -4785,6 +4799,20 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "bca8e0af95b534a3",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-JBDS-HYPO-2020",
+     "N-NICE-NG217",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-09": [
@@ -4849,6 +4877,19 @@
    },
    {
     "hash": "02356dbec4ccb13b",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "43b36cf405649d27",
     "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
