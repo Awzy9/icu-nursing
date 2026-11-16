@@ -243,7 +243,7 @@
     },
     {
      "text": "Stop the extra monitoring once the potassium has fallen.",
-     "points": 1,
+     "points": 0,
      "next": null,
      "scope": "independent_nursing",
      "feedback": "The effect can wear off and rebound hyperkalaemia can follow, so monitoring continues.",
