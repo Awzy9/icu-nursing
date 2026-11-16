@@ -2,13 +2,18 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { AdminForm } from "@/components/admin/admin-form";
 import { Badge, Callout } from "@/components/ui/feedback";
-import { Field, Textarea } from "@/components/ui/form";
+import { Field, Select, Textarea } from "@/components/ui/form";
 import { Link } from "@/i18n/navigation";
 import { requireStaff } from "@/lib/auth";
 import { DRAFTS, HISTORY, ageDays, compareLatest, draftFreshness, sourceFreshness, worstLicence } from "@/lib/admin/drafts";
 import { NOTE_FIELDS, notesFor } from "@/lib/admin/draft-notes";
+import { aiEvidenceFor } from "@/lib/admin/ai-evidence";
 import { createClient } from "@/lib/supabase/server";
-import { saveDraftNoteAction } from "../../actions";
+import { saveAiEvidenceAction, saveDraftNoteAction } from "../../actions";
+
+const RECOMMENDATION_LABEL: Record<string, string> = { no_action: "No action needed", minor_update_suggested: "Minor update suggested", major_gap_flagged: "Major gap flagged" };
+const RECOMMENDATION_TONE: Record<string, "success" | "warning" | "danger"> = { no_action: "success", minor_update_suggested: "warning", major_gap_flagged: "danger" };
+const CURRENCY_LABEL: Record<string, string> = { current: "Appears current", superseded: "Appears superseded", unclear: "Unclear" };
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Draft", robots: { index: false, follow: false } };
@@ -23,6 +28,7 @@ export default async function DraftDetail({ params }: { params: Promise<{ locale
   const db = (await createClient())!;
   const today = new Date();
   const { notes, revisions } = await notesFor(db, key);
+  const aiChecks = await aiEvidenceFor(db, key);
   const canEdit = roles.some((r) => ["author", "publisher", "admin"].includes(r));
   const diff = compareLatest(HISTORY, key);
   const snaps = HISTORY.entries[key] ?? [];
@@ -56,6 +62,64 @@ export default async function DraftDetail({ params }: { params: Promise<{ locale
             <tbody>{e.sources.map((s) => { const a = ageDays(s.verified, today), f = sourceFreshness(s, today); return (
               <tr key={s.id} className="border-b border-border"><th scope="row" className="py-2 pe-3 text-start font-mono font-normal">{s.id}</th><td className="py-2 pe-3"><Badge tone={tone(s.licence_class)}>{s.licence_class}</Badge></td><td className="py-2 pe-3">{s.verified ?? "no date"}{a !== null ? ` (${a} days ago)` : ""}</td><td className="py-2"><Badge tone={f === "fresh" ? "success" : "warning"}>{f}</Badge></td></tr>); })}</tbody>
           </table></div>
+        )}
+      </section>
+
+      <section aria-labelledby="ai-ev" className="space-y-3">
+        <h2 id="ai-ev" className="text-xl font-semibold">AI-assisted evidence checks</h2>
+        <Callout tone="danger" role="note">
+          An AI evidence check is not a clinical review and does not approve, publish or change the review status of this draft. It records that a
+          staff member asked an AI tool (for example ChatGPT, with web browsing) to compare this draft&rsquo;s claims against current guidelines,
+          systematic reviews, trials or regulatory sources, and what it found. The draft remains &ldquo;not reviewed, not approved, not
+          published&rdquo; regardless of what is recorded here. Independent professional clinical review (and, for medications, pharmacist review)
+          is still required before anything can be published.
+        </Callout>
+        {canEdit ? (
+          <AdminForm action={saveAiEvidenceAction} submit="Record AI evidence check" className="space-y-3 rounded-lg border border-border bg-card p-4">
+            <input type="hidden" name="key" value={key} />
+            <Field label="Tool used" htmlFor="ai-tool" hint="e.g. &quot;ChatGPT (GPT-5.1), web browsing enabled, 2026-11-16&quot;">
+              <Textarea id="ai-tool" name="tool" maxLength={200} rows={1} required />
+            </Field>
+            <Field label="Sources checked (one per line)" htmlFor="ai-sources" hint="Guideline name and year, systematic review, trial registry entry, or regulator page - up to 20 lines.">
+              <Textarea id="ai-sources" name="sources" maxLength={4000} rows={4} required />
+            </Field>
+            <Field label="Are these sources still the current version of the guideline?" htmlFor="ai-currency">
+              <Select id="ai-currency" name="currency" defaultValue="unclear" required>
+                {Object.entries(CURRENCY_LABEL).map(([v, l]) => <option key={v} value={v}>{l}</option>)}
+              </Select>
+            </Field>
+            <Field label="Did the check find any discrepancy between the draft and the sources?" htmlFor="ai-discrepancies">
+              <Select id="ai-discrepancies" name="discrepancies" defaultValue="no" required>
+                <option value="no">No discrepancy found</option>
+                <option value="yes">Discrepancy found (describe it in the summary)</option>
+              </Select>
+            </Field>
+            <Field label="Summary of the check" htmlFor="ai-summary" hint="What was compared and what was found. No doses, rates or new clinical claims; the database refuses them.">
+              <Textarea id="ai-summary" name="summary" maxLength={2000} rows={4} required />
+            </Field>
+            <Field label="Recommendation" htmlFor="ai-recommendation">
+              <Select id="ai-recommendation" name="recommendation" defaultValue="no_action" required>
+                {Object.entries(RECOMMENDATION_LABEL).map(([v, l]) => <option key={v} value={v}>{l}</option>)}
+              </Select>
+            </Field>
+          </AdminForm>
+        ) : <p className="text-sm text-muted-foreground">Your role can read AI evidence checks but not record one.</p>}
+        <h3 className="text-lg font-semibold">History of checks</h3>
+        {aiChecks.length === 0 ? <p className="text-sm text-muted-foreground">No AI evidence check has been recorded for this draft yet.</p> : (
+          <ul className="space-y-3">
+            {aiChecks.map((c) => (
+              <li key={c.id} className="space-y-1 rounded-lg border border-border p-3 text-sm">
+                <p className="flex flex-wrap items-center gap-2">
+                  <Badge tone={RECOMMENDATION_TONE[c.recommendation]}>{RECOMMENDATION_LABEL[c.recommendation]}</Badge>
+                  <Badge tone={c.guideline_currency === "current" ? "success" : "warning"}>{CURRENCY_LABEL[c.guideline_currency]}</Badge>
+                  {c.discrepancies_found ? <Badge tone="danger">Discrepancy found</Badge> : null}
+                  <span className="text-muted-foreground">{c.reviewed_at.slice(0, 16).replace("T", " ")} · {c.reviewed_by} · {c.tool}</span>
+                </p>
+                <p>{c.summary}</p>
+                <p className="text-muted-foreground">Sources checked: {c.sources_checked.join("; ")}</p>
+              </li>
+            ))}
+          </ul>
         )}
       </section>
 

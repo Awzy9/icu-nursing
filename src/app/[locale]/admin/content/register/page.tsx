@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { requireStaff } from "@/lib/auth";
 import { DRAFTS, DRAFT_TYPES, draftFreshness, filterDrafts, worstLicence } from "@/lib/admin/drafts";
 import { notesSummary } from "@/lib/admin/draft-notes";
+import { aiEvidenceSummary } from "@/lib/admin/ai-evidence";
 import { createClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
@@ -21,6 +22,7 @@ export default async function DraftList({ params, searchParams }: { params: Prom
   await requireStaff(locale);
   const db = (await createClient())!;
   const notes = await notesSummary(db);
+  const aiSummary = await aiEvidenceSummary(db);
   const f = { type: one(sp.type), evidence: one(sp.evidence), validation: one(sp.validation), licence: one(sp.licence), freshness: one(sp.freshness), notes: one(sp.notes), q: one(sp.q) };
   const today = new Date();
   const rows = filterDrafts(DRAFTS.entries, f, today, new Set(Object.keys(notes)));
@@ -44,7 +46,7 @@ export default async function DraftList({ params, searchParams }: { params: Prom
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <caption className="sr-only">Unpublished drafts with evidence, licensing, freshness and validation status</caption>
-          <thead><tr className="border-b border-border"><th scope="col" className="py-2 pe-3 text-start">Key</th><th scope="col" className="py-2 pe-3 text-start">Title</th><th scope="col" className="py-2 pe-3 text-start">Type</th><th scope="col" className="py-2 pe-3 text-start">Evidence</th><th scope="col" className="py-2 pe-3 text-start">Licence</th><th scope="col" className="py-2 pe-3 text-start">Sources</th><th scope="col" className="py-2 pe-3 text-start">Validation</th><th scope="col" className="py-2 text-start">Notes</th></tr></thead>
+          <thead><tr className="border-b border-border"><th scope="col" className="py-2 pe-3 text-start">Key</th><th scope="col" className="py-2 pe-3 text-start">Title</th><th scope="col" className="py-2 pe-3 text-start">Type</th><th scope="col" className="py-2 pe-3 text-start">Evidence</th><th scope="col" className="py-2 pe-3 text-start">Licence</th><th scope="col" className="py-2 pe-3 text-start">Sources</th><th scope="col" className="py-2 pe-3 text-start">Validation</th><th scope="col" className="py-2 pe-3 text-start">Notes</th><th scope="col" className="py-2 text-start">AI evidence check</th></tr></thead>
           <tbody>
             {rows.map((e) => {
               const lic = worstLicence(e), fr = draftFreshness(e, today);
@@ -57,11 +59,12 @@ export default async function DraftList({ params, searchParams }: { params: Prom
                   <td className="py-2 pe-3"><Badge tone={tone(lic)}>{lic}</Badge></td>
                   <td className="py-2 pe-3">{e.sources.length}{fr !== "fresh" ? <> <Badge tone="warning">{fr === "stale" ? "stale" : "no date"}</Badge></> : null}</td>
                   <td className="py-2 pe-3">{e.issues.length === 0 ? <Badge tone="success">OK</Badge> : <Badge tone="danger">{e.issues.length} issue{e.issues.length > 1 ? "s" : ""}</Badge>}</td>
-                  <td className="py-2">{notes[e.key] ? notes[e.key]!.fields : "—"}</td>
+                  <td className="py-2 pe-3">{notes[e.key] ? notes[e.key]!.fields : "—"}</td>
+                  <td className="py-2">{aiSummary[e.key] ? <Badge tone={aiSummary[e.key]!.ever_flagged ? "danger" : "success"}>{aiSummary[e.key]!.count} check{aiSummary[e.key]!.count > 1 ? "s" : ""}{aiSummary[e.key]!.ever_flagged ? ", gap flagged" : ""}</Badge> : "—"}</td>
                 </tr>
               );
             })}
-            {rows.length === 0 ? <tr><td colSpan={8} className="py-3 text-muted-foreground">No drafts match these filters.</td></tr> : null}
+            {rows.length === 0 ? <tr><td colSpan={9} className="py-3 text-muted-foreground">No drafts match these filters.</td></tr> : null}
           </tbody>
         </table>
       </div>

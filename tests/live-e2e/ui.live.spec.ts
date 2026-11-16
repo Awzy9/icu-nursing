@@ -219,6 +219,23 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await page.getByLabel("Evidence note").fill("Give 5 mg per hour");
   await page.getByRole("button", { name: "Save evidence note" }).click();
   await expect(page.getByRole("alert").filter({ hasText: /dose or a rate|refused/ })).toBeVisible(); // the database refuses doses
+
+  // AI-assisted evidence check: a log entry, never an approval - the draft stays "not reviewed, not approved, not published" throughout.
+  await expect(page.getByRole("heading", { name: "AI-assisted evidence checks" })).toBeVisible();
+  await expect(page.getByText(/is not a clinical review and does not approve/)).toBeVisible();
+  await page.getByLabel("Tool used").fill(`ChatGPT (GPT-5.1), web browsing enabled, ${RUN}`);
+  await page.getByLabel("Sources checked (one per line)").fill(`UKKA hyperkalaemia guideline 2026 ${RUN}\nNICE NG217 chapter 7`);
+  await page.getByLabel("Are these sources still the current version of the guideline?").selectOption("current");
+  await page.getByLabel("Did the check find any discrepancy between the draft and the sources?").selectOption("no");
+  await page.getByLabel("Summary of the check").fill(`Checked the draft's escalation wording against the cited guidelines; no discrepancy found ${RUN}.`);
+  await page.getByLabel("Recommendation").selectOption("no_action");
+  await page.getByRole("button", { name: "Record AI evidence check" }).click();
+  await expect(page.getByText("AI evidence check recorded. This is not a clinical review.")).toBeVisible();
+  await page.reload();
+  await expect(page.getByText(`Checked the draft's escalation wording against the cited guidelines; no discrepancy found ${RUN}.`)).toBeVisible();
+  await expect(page.getByText("No action needed")).toBeVisible();
+  await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible(); // still true after the AI check
+  expect((await sql<{ n: number }>(`select count(*)::int n from public.audit_log where action='ai_evidence_review_set' and entity_id='SC-11'`))[0]!.n).toBeGreaterThanOrEqual(1);
   await page.goto("/en/admin/content/coverage");
   await expect(page.getByRole("heading", { level: 1, name: "Content coverage" })).toBeVisible();
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations.filter((v) => ["serious", "critical"].includes(v.impact ?? ""))).toEqual([]);
