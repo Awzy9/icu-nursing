@@ -121,21 +121,21 @@ B. Vasopressin as the first agent, with epinephrine added if the pressure stays 
 C. Norepinephrine, with a strong recommendation over dopamine, epinephrine and selepressin.
 D. Terlipressin, which acts for longer and needs fewer adjustments.
 **Answer: C.**
-**Why correct:** The page recommends norepinephrine over dopamine, epinephrine or selepressin (strong).
+**Why correct:** SSC 2026 recommends norepinephrine as the first-line vasopressor rather than dopamine (high certainty), epinephrine (low certainty) or selepressin (low certainty). A separate conditional recommendation suggests norepinephrine over vasopressin or angiotensin II initially; escalation choices depend on the patient's physiology and response.
 **Why not A:** The page recommends norepinephrine over dopamine.
 **Why not B:** Vasopressin is suggested as an addition, not first line.
 **Why not D:** The page suggests against terlipressin.
 
-**Q3 (judgment).** A patient on dopamine has a falling urine output but a stable blood pressure. What does the textbook advise?
+**Q3 (judgment).** A patient receiving dopamine has decreasing urine output despite a stable displayed blood pressure. What is the safest nursing response?
 A. Increase the infusion rate to improve renal perfusion and watch the urine output.
 B. Stop the infusion and see whether the urine output recovers over the next hour.
 C. Record it and recheck at the end of the shift, since the blood pressure is stable.
-D. Notify the prescriber, because the dose may need to be reduced.
+D. Confirm the urine-output trend, assess perfusion and possible catheter obstruction, and promptly notify the treating team for evaluation.
 **Answer: D.**
-**Why correct:** The dopamine grid says to notify the prescriber if urine output falls without hypotension.
-**Why not A:** Dose changes need an order.
-**Why not B:** Stopping vasoactive infusions without an order is unsafe.
-**Why not C:** The change needs reporting.
+**Why correct:** The textbook instructs clinicians to report falling urine output without hypotension, but it does not establish that a lower dopamine dose is necessarily indicated. Check measurement accuracy and perfusion, escalate, and leave drug choice or dose changes to the authorized team.
+**Why not A:** Dopamine escalation is not established by isolated oliguria, and any titration must follow a validated order/protocol.
+**Why not B:** Abruptly discontinuing vasoactive support without an authorized order/protocol can cause hemodynamic deterioration.
+**Why not C:** Oliguria can signal inadequate perfusion or renal injury even when arterial pressure appears stable and warrants timely evaluation.
 
 **Q4 (safety).** Which monitoring does the textbook describe for a patient receiving dobutamine?
 A. Weekly blood tests, because effects appear after several days of therapy.
@@ -183,4 +183,4 @@ Drug selection, concentrations, titration protocols, who may titrate, peripheral
 - Source quality: the Open RN sections are brief US textbook grids; the FDA labels are one US manufacturer label per drug (jurisdiction-specific, revision-specific, not guidelines); SSC 2026 was read only at recommendation level; peripheral-administration safety rests on retrospective meta-analyses; ISMP and FDA pump pages are safety resources. No critical-care pharmacotherapy text was accessible.
 - Applicability: adults; SSC statements apply to septic shock only.
 - Not covered: angiotensin II, milrinone and other agents; receptor pharmacology beyond the textbook and labels; doses and concentrations; compatibility; nursing signs and management of extravasation beyond the label statements; weaning; paediatrics.
-- Open questions for reviewers (CRIT-PH, CCP, PH, NE, BN): add authoritative drug references; vasopressin teaching; extravasation protocol.
+- Open questions for reviewers (CRIT-PH, CCP, PH, NE, BN): add authoritative drug references; vasopressin teaching; extravasation protocol. AI-assisted update 2026-11-16: SSC 2026 gives the strength/certainty of first-line norepinephrine against dopamine, epinephrine and selepressin separately; it also notes context-specific choices with cardiac dysfunction. The draft is not an ICU titration or urine-output-based drug-adjustment protocol. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
