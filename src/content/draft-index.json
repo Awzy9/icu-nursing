@@ -236,6 +236,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-SSC-2021",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -249,7 +254,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "b46372846a80ad9e"
+   "hash": "36e8a9c3dc331aa6"
   },
   {
    "key": "D02-T14",
