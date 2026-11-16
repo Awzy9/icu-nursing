@@ -155,10 +155,17 @@
    ]
   },
   "escalation": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
-     "text": "Management of deterioration, emergencies and death during transfer (ICS chapter 23) was not read; follow the unit's transfer escalation protocol and call for help.",
+     "text": "Critically ill patients are more likely to deteriorate or die during transfer than on a ward, so the guidance calls for discussing, before transfer, whether escalation of organ support is appropriate if the patient deteriorates and whether resuscitation is appropriate, and for having senior clinical input available (chapter 23, mainly written for inter-hospital transfer by ambulance; the core principle - seek senior advice early and follow the guideline/Emergency Action Cards for a deterioration or arrest - applies within the hospital too, but options such as diverting to another hospital do not).",
+     "support": "sourced",
+     "sources": [
+      "N-ICS-TRANSFER-2026"
+     ]
+    },
+    {
+     "text": "Follow the unit's transfer escalation protocol and call for help immediately for any deterioration or arrest during an intra-hospital transfer.",
      "support": "local_protocol",
      "sources": []
     }
@@ -272,7 +279,7 @@
  ],
  "gaps": [
   "The guidance is UK (NHS) and covers inter-hospital transfer too; the ICU nurse's role on a given unit may differ.",
-  "Chapter 23 (emergencies, deterioration and death during transfer), equipment and medication appendices, and the MRI chapter: not read.",
+  "Chapter 23's specific content (Emergency Action Cards, ambulance-stop decisions, diversion options) is written mainly for inter-hospital transfer by ambulance; it is cited here only for the principles that generalise to intra-hospital transfer. Equipment and medication appendices and the MRI chapter: not read.",
   "Oxygen reserve calculation (Appendix 1): not reproduced; device-specific.",
   "The example checklist is adapted from local checklists; the unit's own checklist governs."
  ],
@@ -286,7 +293,7 @@
    "publisher": "Intensive Care Society",
    "version": "Publication date 22 April 2026; version 3 of 30 June 2026",
    "url": "https://ics.ac.uk/asset/75861CB3%2DB6B4%2D4E78%2D80F22B290BC05015/",
-   "accessed": "2026-11-15",
+   "accessed": "2026-11-16",
    "read": "full",
    "licence_class": "RED (copyright Intensive Care Society; no reuse statement)",
    "permission_required": "Yes (reproduction)"

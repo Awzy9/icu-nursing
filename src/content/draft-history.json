@@ -1361,6 +1361,17 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "a9dffd613bd0c5f4",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-CDC-CAUTI-2009"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-13": [
@@ -1515,6 +1526,17 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "50c16e8e0b1cae78",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ICS-TRANSFER-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-21": [
@@ -1572,6 +1594,18 @@
     "gaps": 2,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2252d39f0d9d458e",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-23": [
@@ -1616,6 +1650,19 @@
    {
     "hash": "78b376d348f1ee33",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "51e10109ed6ebd51",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "S-CPOT-REVIEW-2024",

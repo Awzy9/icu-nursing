@@ -104,6 +104,18 @@
     }
    ]
   },
+  "assessment": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Assess and document the ongoing need for the catheter daily, as part of the unit's review process, and remove it as soon as it is no longer indicated (Category IB) rather than leaving it until a routine fixed interval.",
+     "support": "sourced",
+     "sources": [
+      "N-CDC-CAUTI-2009"
+     ]
+    }
+   ]
+  },
   "equipment": {
    "support": "partial",
    "items": [

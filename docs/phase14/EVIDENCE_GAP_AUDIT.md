@@ -17,8 +17,8 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 ## Skills (25)
 | Gap | Drafts |
 |---|---|
-| A core section (safety, responsibilities, monitoring, escalation, assessment) is local-protocol only or missing | 7 |
-| No statement sourced from a source read in full | 7 |
+| A core section (safety, responsibilities, monitoring, escalation, assessment) is local-protocol only or missing | 4 |
+| No statement sourced from a source read in full | 6 |
 | Cites a source not read | 12 |
 | Cites a RED or unverified source | 24 |
 | Device skill (manufacturer instructions govern locally) | 12 |
