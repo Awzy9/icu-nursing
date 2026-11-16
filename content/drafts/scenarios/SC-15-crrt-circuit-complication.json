@@ -110,7 +110,7 @@
     },
     {
      "text": "Turn the blood flow to the maximum the machine allows.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "order_or_protocol_required",
      "feedback": "The pathway suggests adjusting the blood flow, not pushing it to the maximum.",
