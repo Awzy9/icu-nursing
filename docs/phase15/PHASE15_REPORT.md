@@ -1,8 +1,8 @@
 # Phase 15 progress report — ICU Nurse Knowledge Map (website-only; mobile paused)
 
-**Branch:** `claude/vigilant-mendel-95k63h` · **Last code commit verified green:** `251ec7d9a7c616a6dffafc5680a7e261c05c007e` (batch 5)
-**CI on that exact commit:** `CI` run #110 — success. `Isolated Supabase live tests` run #79 — success.
-This report is committed as a further commit on top of `251ec7d`; its own CI results are verified separately and recorded in §8.
+**Branch:** `claude/vigilant-mendel-95k63h` · **Final verified commit (as of Part 2, §14):** `f241b59a61040b8c0db75e41ee9d64b15c8adaa1`
+**CI on that exact commit:** `CI` run #118 — success. `Isolated Supabase live tests` run #87 — success.
+(The commit/CI history below in §8 and §14 covers every batch in order; §14 is the up-to-date table.)
 PR #2 was not merged. No production deployment was made. No mobile/Expo/EAS work was done. No AI assistant was embedded in the website. No live payment was activated. No clinical draft was marked reviewed, approved or published.
 
 This is a **progress report, not a closeout**: Phase 15 is ongoing. It now covers five completed, individually-verified batches (plus the CI stabilization that followed batches 2–3) and a verification-only batch (6) that found the remaining priorities already well covered and made no speculative changes. Several of the six priorities the owner originally set for Phase 15 are now substantially addressed; see §6.
@@ -191,7 +191,8 @@ The **website itself** (navigation, search, accessibility, the mock subscription
 | `8316c6d` | Batch 7b: 8 more medication drafts, monitoring gaps | #114 success | #83 success |
 | `62b1f36` | Batch 7c: final 8 medication drafts; ceftriaxone correction — **medication monitoring pass complete (0/50 remaining)** | #115 success | #84 success |
 | `1e150fd` | Batch 8a: SK-21, SK-19 skill drafts fully closed | #116 success | cancelled (concurrency; superseded by 8c023dd, not a real failure) |
-| `8c023dd` | Batch 8b: SK-17, SK-15 support-label correction | see below once confirmed | see below once confirmed |
+| `8c023dd` | Batch 8b: SK-17, SK-15 support-label correction | #117 success | cancelled (concurrency; superseded by f241b59, not a real failure) |
+| `f241b59` | This report, Part 2 — **final verified commit this session** | #118 success | #87 success |
 
 ## 15. Next steps for a future session
 
