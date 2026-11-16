@@ -1478,6 +1478,21 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0eb325af8267f358",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "L-FENTANYL",
+     "L-MIDAZOLAM",
+     "L-MORPHINE",
+     "L-PROPOFOL"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-10": [
@@ -1513,6 +1528,22 @@
    },
    {
     "hash": "2baac25eeeab3991",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BTS-PCS-2023",
+     "N-HODGSON-2014",
+     "N-ICS-TRANSFER-2026",
+     "S-CDC-BSI-2011",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "4897e1068def0a3f",
     "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
@@ -3634,6 +3665,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "a98d00cf86ee990a",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-GENTAMICIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-30": [
@@ -3721,6 +3766,20 @@
    },
    {
     "hash": "c37fda2dbbfc0b69",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOPAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "97d6ab2a689e562c",
     "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
@@ -3994,6 +4053,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "13f7263cb14b8b09",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FUROSEMIDE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-37": [
@@ -4215,6 +4288,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4d392801923ed321",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NALOXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-41": [
@@ -4259,6 +4346,20 @@
    },
    {
     "hash": "391078f432168040",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FLUMAZENIL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5427b454eb7400bf",
     "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
@@ -4423,6 +4524,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4a006c74b1b58965",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-45": [
@@ -4454,6 +4569,20 @@
    },
    {
     "hash": "ba66cf3de3b8554f",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ALTEPLASE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "133c7a02bf5cf6c6",
     "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [

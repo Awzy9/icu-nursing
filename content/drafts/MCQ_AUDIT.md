@@ -1,10 +1,10 @@
 # MCQ audit (automated; 2026-11-15)
 Questions audited: **306** across 51 drafts. Answer positions A/B/C/D: 75/79/77/75.
-Correct option is the unique longest: **71** (23.2 %). Keys with absolute wording: 13; distractors with absolute wording: 78.
-Correct option is the unique shortest: **75** (24.5 %); a random key would be the unique longest or shortest in roughly 20-25 % of questions each.
-Key length relative to the mean distractor length: mean ratio **1.02** (1.00 = equal); keys shorter than the mean distractor in **125** questions (40.8 %). Ratios are reported, not targeted: no wording is padded to move them.
+Correct option is the unique longest: **74** (24.2 %). Keys with absolute wording: 13; distractors with absolute wording: 78.
+Correct option is the unique shortest: **73** (23.9 %); a random key would be the unique longest or shortest in roughly 20-25 % of questions each.
+Key length relative to the mean distractor length: mean ratio **1.03** (1.00 = equal); keys shorter than the mean distractor in **125** questions (40.8 %). Ratios are reported, not targeted: no wording is padded to move them.
 Questions with identical options inside the question: **0**. Near-duplicate questions across the bank (stem plus options, Jaccard >= 0.7; template stems such as the scope-of-practice question are expected to repeat, their options differ): **0**.
-Questions with at least one automated flag: **87**.
+Questions with at least one automated flag: **90**.
 Questions per domain: D01 48, D02 42, D03 24, D04 30, D05 18, D06 24, D07 24, D08 12, D09 18, XQ 66.
 Stems that open the same way in four or more questions (template stems are expected for scope-of-practice questions; others suggest repeated concepts): none.
 
@@ -21,6 +21,7 @@ Stems that open the same way in four or more questions (template stems are expec
 - D01-T11 Q3 (key C): correct option is the unique longest
 - D01-T11 Q5 (key C): correct option is the unique longest
 - D02-T08 Q3 (key D): very short stem (possible recall-only question)
+- D02-T14 Q2 (key A): correct option is the unique longest
 - D02-T14 Q5 (key B): correct option is the unique longest
 - D02-T15 Q4 (key A): very short stem (possible recall-only question)
 - D03-T10 Q4 (key D): correct option is the unique longest
@@ -58,11 +59,13 @@ Stems that open the same way in four or more questions (template stems are expec
 - D04-T09 Q1 (key B): correct option is the unique longest
 - D05-T01 Q4 (key C): correct option is the unique longest
 - D05-T03 Q1 (key A): very short stem (possible recall-only question)
+- D05-T03 Q3 (key D): correct option is the unique longest
 - D05-T03 Q4 (key B): correct option is the unique longest
 - D05-T03 Q5 (key C): correct option is the unique longest
 - D01-T06 Q4 (key C): correct option is the unique longest
 - D01-T06 Q5 (key C): very short stem (possible recall-only question)
 - D01-T09 Q3 (key B): correct option is the unique longest
+- D01-T09 Q6 (key C): correct option is the unique longest
 - D03-T03 Q1 (key D): correct option is the unique longest
 - D03-T03 Q2 (key B): correct option is the unique longest
 - D08-T02 Q1 (key B): stem does not end with a question or statement
@@ -97,22 +100,22 @@ Stems that open the same way in four or more questions (template stems are expec
 - XQ-11 Q1 (key C): correct option is the unique longest
 - XQ-11 Q2 (key B): correct option is the unique longest
 
-Question-type tags: judgment 55, prioritization 22, application 50, understanding 53, scope 51, safety 46, monitoring 22, assessment 2, documentation 2, communication 1, escalation 2.
+Question-type tags: judgment 55, prioritization 22, application 50, understanding 53, scope 50, safety 47, monitoring 22, assessment 2, documentation 2, communication 1, escalation 2.
 
 ## Per topic (positions A/B/C/D; unique-longest keys)
 | Topic | MCQs | A/B/C/D | Longest-key | Mean key/distractor length |
 |---|---|---|---|---|
-| D06-T01 | 6 | 1/1/2/2 | 0 | 1.03 |
+| D06-T01 | 6 | 1/1/2/2 | 0 | 1.01 |
 | D06-T04 | 6 | 3/1/0/2 | 2 | 1.06 |
 | D06-T05 | 6 | 1/2/2/1 | 1 | 1.05 |
-| D07-T04 | 6 | 1/2/1/2 | 1 | 1.14 |
+| D07-T04 | 6 | 1/2/1/2 | 1 | 1.20 |
 | D09-T01 | 6 | 1/2/2/1 | 1 | 1.13 |
 | D09-T02 | 6 | 1/1/2/2 | 1 | 0.99 |
 | D01-T03 | 6 | 1/1/2/2 | 0 | 0.97 |
 | D01-T07 | 6 | 1/2/2/1 | 1 | 1.08 |
 | D01-T11 | 6 | 1/2/2/1 | 2 | 1.06 |
 | D02-T08 | 6 | 2/2/1/1 | 0 | 0.96 |
-| D02-T14 | 6 | 2/2/0/2 | 1 | 1.00 |
+| D02-T14 | 6 | 2/2/0/2 | 2 | 1.07 |
 | D02-T15 | 6 | 2/1/2/1 | 0 | 1.00 |
 | D03-T10 | 6 | 2/2/0/2 | 2 | 1.03 |
 | D04-T02 | 6 | 1/1/2/2 | 0 | 1.05 |
@@ -125,7 +128,7 @@ Question-type tags: judgment 55, prioritization 22, application 50, understandin
 | D02-T04 | 6 | 2/2/1/1 | 1 | 0.97 |
 | D03-T09 | 6 | 2/2/1/1 | 2 | 1.01 |
 | D07-T01 | 6 | 1/2/2/1 | 1 | 0.99 |
-| D07-T03 | 6 | 2/1/2/1 | 0 | 1.00 |
+| D07-T03 | 6 | 2/1/2/1 | 0 | 0.99 |
 | D09-T03 | 6 | 1/2/2/1 | 3 | 1.04 |
 | D02-T09 | 6 | 2/1/1/2 | 1 | 0.94 |
 | D02-T12 | 6 | 1/2/2/1 | 1 | 0.96 |
@@ -136,10 +139,10 @@ Question-type tags: judgment 55, prioritization 22, application 50, understandin
 | D04-T06 | 6 | 2/1/2/1 | 2 | 1.00 |
 | D04-T08 | 6 | 1/2/1/2 | 0 | 0.94 |
 | D04-T09 | 6 | 1/2/2/1 | 1 | 1.02 |
-| D05-T01 | 6 | 2/1/1/2 | 1 | 0.92 |
-| D05-T03 | 6 | 2/1/2/1 | 2 | 1.02 |
+| D05-T01 | 6 | 2/1/1/2 | 1 | 0.96 |
+| D05-T03 | 6 | 2/1/2/1 | 3 | 1.17 |
 | D01-T06 | 6 | 1/1/2/2 | 1 | 1.04 |
-| D01-T09 | 6 | 1/2/2/1 | 1 | 0.97 |
+| D01-T09 | 6 | 1/2/2/1 | 2 | 1.02 |
 | D03-T03 | 6 | 2/1/2/1 | 2 | 1.02 |
 | D08-T02 | 6 | 1/2/1/2 | 1 | 0.99 |
 | XQ-01 | 6 | 2/1/1/2 | 2 | 1.01 |
@@ -148,8 +151,8 @@ Question-type tags: judgment 55, prioritization 22, application 50, understandin
 | XQ-04 | 6 | 2/2/1/1 | 2 | 0.97 |
 | XQ-05 | 6 | 2/1/1/2 | 3 | 1.13 |
 | XQ-06 | 6 | 1/1/2/2 | 3 | 1.31 |
-| XQ-07 | 6 | 1/2/2/1 | 3 | 1.01 |
-| XQ-08 | 6 | 2/2/1/1 | 3 | 1.06 |
-| XQ-09 | 6 | 2/1/1/2 | 3 | 1.10 |
+| XQ-07 | 6 | 1/2/2/1 | 3 | 1.00 |
+| XQ-08 | 6 | 2/2/1/1 | 3 | 1.15 |
+| XQ-09 | 6 | 2/1/1/2 | 3 | 1.09 |
 | XQ-10 | 6 | 1/1/2/2 | 3 | 1.00 |
-| XQ-11 | 6 | 1/2/2/1 | 2 | 1.07 |
+| XQ-11 | 6 | 1/2/2/1 | 2 | 1.13 |

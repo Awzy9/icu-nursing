@@ -27,7 +27,7 @@ D. The healthcare assistant who connects the equipment.
 
 **Q2 (scope).** The arterial line on a stable patient has not been used for sampling for a day. Who decides to remove it?
 A. The nurse alone, once the line has been unused for a full day.
-B. The authorized clinician or trained team under the line-removal protocol; the nurse raises whether the line is still needed.
+B. The authorized clinician or team under local protocol, after the nurse raises line necessity.
 C. The patient, once he asks for it to come out.
 D. The pharmacist, who reviews the daily infusion chart.
 **Answer: B.**
