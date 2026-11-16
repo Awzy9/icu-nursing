@@ -106,7 +106,7 @@ B. Continue the hourly observations because the SpO₂ is still above 94% and th
 C. Remove the securement to allow the tube to find its natural position, then re-tape it once it has settled.
 D. Support the tube, call urgently for the doctor or respiratory therapist, monitor SpO₂ and capnography, and prepare to assist.
 **Answer: D.**
-**Why correct:** Possible displacement is an airway emergency; repositioning is a clinician's task.
+**Why correct:** A sudden tube-depth change with falling exhaled tidal volume may indicate displacement and requires urgent airway-team assessment. Support the airway, call for immediate help, and avoid advancing or withdrawing the tube without appropriate training, orders and local authorization.
 **Why not A:** Advancing or withdrawing the tube is not a nursing decision, and the position may be wrong.
 **Why not B:** Delay risks accidental extubation.
 **Why not C:** Removing the securement increases the risk of extubation.
@@ -144,13 +144,13 @@ D. A flat capnography trace with falling SpO₂ and no chest movement.
 **Why not B:** A scheduled routine check can wait for its time.
 **Why not C:** This describes correct care, not a problem.
 
-**Q6 (scope).** Which action is a physician or respiratory-therapy decision?
+**Q6 (scope).** Which action requires an authorized airway clinician or team under the local airway protocol, rather than independent action by an untrained staff member?
 A. Measuring cuff pressure with a manometer at the policy interval.
 B. Repositioning the tube or exchanging it for a new one.
 C. Recording the tube depth and securement after a turn.
 D. Reporting redness under the securement.
 **Answer: B.**
-**Why correct:** Tube repositioning or exchange belongs to trained clinicians per policy.
+**Why correct:** Repositioning or exchanging an endotracheal tube requires trained, locally authorized airway personnel and coordinated monitoring to prevent airway loss. Depending on the jurisdiction and hospital protocol, qualified nurses, respiratory therapists and physicians may have different roles; it is not automatically physician-only.
 **Why not A:** A nursing assessment task.
 **Why not C:** A nursing documentation task.
 **Why not D:** Reporting is a nursing responsibility.
