@@ -93,6 +93,18 @@
     }
    ]
   },
+  "assessment": {
+   "support": "full",
+   "items": [
+    {
+     "text": "The antero-lateral position is the pad/paddle position of choice: the apical (lateral) pad goes below the armpit in the mid-axillary line. If the patient has an implantable pacemaker or defibrillator (ICD), place the pad more than 8 cm away from the device, or use an alternative pad position. Consider an alternative pad position if the patient is prone (bi-axillary) or in a refractory shockable rhythm.",
+     "support": "sourced",
+     "sources": [
+      "S-ERC-ALS-2025"
+     ]
+    }
+   ]
+  },
   "equipment": {
    "support": "local_protocol",
    "items": [
@@ -119,6 +131,18 @@
     {
      "text": "Call for help early; follow the oxygen-safety steps in unit policy during defibrillation.",
      "support": "partial",
+     "sources": [
+      "S-ERC-ALS-2025"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Resume chest compressions immediately after shock delivery. A combination of clinical and physiological signs of return of spontaneous circulation (ROSC) - such as return of consciousness, purposeful movement, an arterial waveform, or a sharp rise in end-tidal CO2 - is a reason to consider stopping compressions for a rhythm check, and a pulse check if the rhythm appears appropriate. On a defibrillator that displays the ECG with chest-compression motion artefact removed, the underlying rhythm may guide whether a rhythm and pulse check is needed roughly every two minutes; no pause is needed if asystole is displayed.",
+     "support": "sourced",
      "sources": [
       "S-ERC-ALS-2025"
      ]

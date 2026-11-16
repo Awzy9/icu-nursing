@@ -16,8 +16,8 @@
  "sources": [
   {
    "id": "S-CDC-IC",
-   "read": "partial",
-   "use": "CDC standard and transmission-based precautions pages"
+   "read": "full",
+   "use": "CDC infection-control index and Core Practices page (hand-hygiene moments, PPE indications, performance monitoring and feedback) read in full; transmission-based precautions and isolation category detail pages not read"
   },
   {
    "id": "S-WHO-HH-2009",
@@ -90,11 +90,11 @@
    ]
   },
   "responsibilities": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
-     "text": "Perform hand hygiene at the moments defined by local policy and national or WHO guidance (the moments are not stated on the CDC pages read and the WHO guidance was not accessible).",
-     "support": "partial",
+     "text": "CDC's core practices page gives six hand-hygiene moments: immediately before touching a patient; before an aseptic task or handling an invasive device; before moving from a soiled body site to a clean one on the same patient; after touching a patient or their immediate environment; after contact with blood, body fluids or contaminated surfaces; and immediately after glove removal. Soap and water are called for when hands are visibly soiled; an alcohol-based hand rub is otherwise generally preferred, and supplies should be readily accessible wherever care is delivered.",
+     "support": "sourced",
      "sources": [
       "S-CDC-IC"
      ]
@@ -108,6 +108,30 @@
      "text": "The precaution level for each patient is set by infection-prevention policy.",
      "support": "local_protocol",
      "sources": []
+    }
+   ]
+  },
+  "assessment": {
+   "support": "full",
+   "items": [
+    {
+     "text": "Before a task, assess the exposure risk to choose PPE: wear gloves whenever contact with blood, body fluids, mucous membranes, non-intact skin or contaminated equipment can reasonably be anticipated; wear a task-appropriate gown if soiling from fluids is possible; add eye protection with a mask or face shield if splashes or sprays are possible. PPE is secondary to administrative and engineering controls, not a substitute for them.",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-IC"
+     ]
+    }
+   ]
+  },
+  "monitoring": {
+   "support": "full",
+   "items": [
+    {
+     "text": "CDC's core practices call for identifying and monitoring adherence to infection-prevention practices, giving prompt and regular feedback to staff and facility leadership, training the staff who monitor to use standardised tools and definitions, and monitoring facility infections using surveillance data to detect transmission; monitoring measures should be tailored to the care provided and the population served.",
+     "support": "sourced",
+     "sources": [
+      "S-CDC-IC"
+     ]
     }
    ]
   },
@@ -192,9 +216,9 @@
   }
  ],
  "gaps": [
-  "The specific hand-hygiene moments: WHO guideline not accessed.",
-  "Transmission-based precaution categories and isolation details: not read.",
-  "Phase 14: when to use soap and water or hand rub, glove use and technique steps are not written because the CDC detail pages and the WHO guideline were not read."
+  "Transmission-based precaution categories (contact, droplet, airborne) and their specific isolation requirements: the CDC/HICPAC 2007 isolation guideline was not read.",
+  "The WHO 2009 hand hygiene guideline was not accessed; the hand-hygiene moments used here are CDC's own six moments, not WHO's five moments, which may differ slightly in wording and grouping.",
+  "Exact PPE donning/doffing sequence and hand hygiene technique steps (soap-and-water vs rub technique) are not written; the CDC core practices page states the principles but not a step-by-step sequence."
  ],
  "permissions": [
   "CDC pages: no licence statement; verify before reproducing.",
@@ -206,9 +230,9 @@
    "title": "Infection Control (index) and Core IPC Practices",
    "publisher": "CDC",
    "version": "Core Practices page dated Apr 12 2024 (page header); index page shows 'June 12, 2025'",
-   "url": "https://www.cdc.gov/infection-control/",
-   "accessed": "2026-11-14",
-   "read": "partial",
+   "url": "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
+   "accessed": "2026-11-16",
+   "read": "full",
    "licence_class": "YELLOW",
    "permission_required": "Verify"
   },
