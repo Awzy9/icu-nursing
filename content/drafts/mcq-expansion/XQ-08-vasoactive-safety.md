@@ -26,12 +26,12 @@ D. Apply a cold pack for comfort and continue the infusion until the next schedu
 **Trace:** L-NOREPINEPHRINE — Label: tissue ischaemia; avoid extravasation; local necrosis.
 
 **Q2 (judgment).** The line carrying a patient's norepinephrine becomes occluded and the pump alarms. The patient's blood pressure is falling. What is the best action?
-A. Restore the infusion urgently and escalate.
+A. Assess the patient, call for urgent help, check the occluded line and pump, and arrange prompt restoration of prescribed vasopressor delivery through safe patent access under the unit's protocol.
 B. Wait for the pump to clear itself, because the alarm will stop once the pressure equalises.
 C. Disconnect the infusion and flush the line hard to remove the blockage.
 D. Give a fluid bolus yourself as soon as the alarm sounds and then deal with the line.
 **Answer: A.**
-**Why correct:** The label warns that sudden cessation of the infusion may result in marked hypotension.
+**Why correct:** The norepinephrine label warns abrupt interruption can cause marked hypotension. The immediate priority is clinical assessment, urgent help and safe restoration of the ordered infusion through confirmed patent access; never force-flush an occluded vasoactive line or improvise a bolus.
 **Why not B:** An occluded line will not clear by waiting, and the interruption is dangerous.
 **Why not C:** A forceful flush may deliver a bolus and is not an approved response.
 **Why not D:** Fluid is a prescriber or protocol decision; the interruption needs urgent action and escalation.
