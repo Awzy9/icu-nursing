@@ -13,7 +13,7 @@ sources: [S-NICE-CG103, S-SCCM-PADIS]
 independently_written_note: "Original wording. NICE CG103 recommendations chapter read. SCCM PADIS 2018 and the 2025 focused update: only the official SCCM recommendation pages were read (statements, strength, certainty, remarks) – the full publications on journals.lww.com were blocked and NOT read, so evidence summaries, tool psychometrics and rationales are not covered and this is not a full-text review. NICE reserves commercial reuse (cite-only). CAM-ICU/ICDSC tool wording is not reproduced."
 ---
 # Delirium – nursing screening, prevention and response in the ICU
-> DRAFT – NOT clinically reviewed. AI-generated. ICU-specific guideline evidence (PADIS) was not accessible; this draft rests on NICE general-hospital guidance.
+> DRAFT – NOT clinically reviewed. AI-generated. ICU-specific SCCM PADIS 2018 and 2025 recommendation webpages and NICE CG103 recommendations were consulted; the complete 2018/2025 publications, evidence tables and validation studies were not all read.
 
 ## 1. Overview
 Delirium is an acute, fluctuating disturbance of attention and awareness, often with changes in thinking, perception, sleep and behaviour. It can be hyperactive (agitated), hypoactive (quiet, withdrawn) or mixed, and the hypoactive form is often missed. In ICU it is common and linked to worse outcomes. Nurses are best placed to notice change, screen with a validated tool, prevent delirium with simple measures, and escalate. Making the final diagnosis and prescribing belong to appropriately competent clinicians.
@@ -129,13 +129,13 @@ D. Screen with the unit delirium tool, look for causes (pain, hypoxia, infection
 **Why not B:** Waiting delays recognition of a possibly treatable cause.
 **Why not C:** Family presence is a recommended prevention measure.
 
-**Q2 (application).** Which tools does NICE CG103 recommend for assessing possible delirium in a critical care unit?
+**Q2 (application).** Which tools does NICE CG103 recommend for the *assessment of possible delirium* in a critical care unit, before an appropriately qualified clinician confirms the diagnosis?
 A. The 4AT tool alone, because it is quick, validated and used in all other hospital areas.
 B. CAM-ICU or the Intensive Care Delirium Screening Checklist.
 C. A clinical impression, because validated tools are not helpful in ventilated patients.
 D. A mini-mental state score done once at admission.
 **Answer: B.**
-**Why correct:** NICE advises CAM-ICU or ICDSC instead of the 4AT in critical care.
+**Why correct:** NICE CG103 recommendation 1.6.1 advises CAM-ICU or ICDSC instead of 4AT in critical care or post-anaesthesia recovery. These are assessment tools; the final delirium diagnosis is made by an appropriately qualified healthcare professional (1.6.2).
 **Why not A:** The 4AT is advised outside critical care or the recovery room.
 **Why not C:** Validated ICU tools exist and are recommended.
 **Why not D:** A single cognitive score at admission does not detect fluctuating change.
@@ -148,7 +148,7 @@ D. Leave the patient alone so that he can calm down by himself, and check on him
 **Answer: A.**
 **Why correct:** NICE advises de-escalation first; safety of devices is protected while the team seeks causes and decides on any drugs or restraint under policy.
 **Why not B:** Restraints are a last resort under policy and can worsen distress.
-**Why not C:** Sedation needs a prescriber's order, and causes should be sought first.
+**Why not C:** Giving a drug without an authorized order or emergency protocol is unsafe and may obscure a reversible cause; urgent clinical review is required.
 **Why not D:** Leaving a patient who is pulling lines unattended is unsafe.
 
 **Q4 (scope).** Which task belongs to the prescriber or pharmacist rather than the nurse?
@@ -191,7 +191,7 @@ D. Wait until the patient can tell you whether he has pain, because behaviour al
 Screening tool, frequency, restraint policy, sedation and antipsychotic protocols follow the institution's policies.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: NICE CG103 is a national general-hospital guideline (UK), last updated 2023, mostly 2010 recommendations. SCCM PADIS 2018 and 2025 provide ICU-specific statements, read here only as recommendation-level text from the official SCCM pages (full publications not read): the SCCM page for PADIS 2018 states in its abstract that the panel issued 37 recommendations (3 strong, 34 conditional) plus good-practice and ungraded statements, but the recommendations themselves were not accessible. **NICE recommendations here are general-hospital and not necessarily the ICU standard**; PADIS may differ (for example on drug use and on screening frequency).
+- Source quality (AI-assisted update 2026-11-16): NICE CG103 is a UK general-hospital guideline with a specific recommendation to use CAM-ICU or ICDSC in critical care rather than 4AT. SCCM PADIS **2018 and 2025 full recommendation lists are accessible on official SCCM webpages**; the earlier claim that the 2018 recommendations were inaccessible was incorrect. Their full articles, all evidence tables and tool-validation studies were NOT systematically read. SCCM 2025 issues **no recommendation for or against antipsychotics over usual care** for established adult ICU delirium (low-certainty evidence); this is not a recommendation for routine treatment. Do not conflate this ICU-specific uncertainty with NICE's selected short-term haloperidol recommendation in particular distressed/high-risk hospital patients. https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline ; https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa ; https://www.nice.org.uk/guidance/cg103/chapter/Recommendations .
 - International applicability: prevention measures are broadly transferable; drug recommendations and some wording are UK-specific.
 - Not covered: sedation depth targets, ICU drug evidence, long-term outcomes, CAM-ICU scoring details (copyright of tools).
 - Open questions for reviewers (NEURO, PH, CCP, NE, BN): ICU-specific bundle content; screening frequency; restraint policy; whether to include antipsychotic information at all in a nursing topic.
