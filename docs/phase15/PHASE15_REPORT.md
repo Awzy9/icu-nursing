@@ -125,3 +125,74 @@ Priority 1 (broader content-section integration beyond what already exists) and 
 ## 8. This report's own commit
 
 This file was committed as `143c46941b5bcaccd5848869314ca56b6ea8b131` on top of `251ec7d` (the last code change, batch 5). Verified on that exact commit: `CI` run #111 — success. `Isolated Supabase live tests` run #80 — success. Both workflows are green on the same final commit, per the owner's standing instruction.
+
+---
+
+# Part 2 — Master-prompt continuation: medication audit complete, skill audit in progress (batches 7–8)
+
+The owner then issued a "master prompt" authorizing autonomous work across eight workstreams (medication audit, skill audit, remaining educational content, website UX review, subscription readiness, evidence-governance workflow, QA, and this final report), without stopping for confirmation between batches, documenting any blocker and continuing rather than inventing content for it. This part covers that work, commits `636ae2f`..`8c023dd`.
+
+## 9. Workstream 1 — Medication evidence audit: complete (50/50 drafts)
+
+Every one of the 50 medication drafts was re-examined. For each, the FDA label already cited as a full-read source was re-fetched from openFDA and its version/effective date re-confirmed against the register (all unchanged except the five drafts already known to be pre-2026 labels, which remain genuinely older — re-verified, not re-dated without checking).
+
+**Closed: "monitoring: no statement sourced from the label" — 22 → 0 drafts.** Across batches 4 and 7a–7c, 24 drafts gained a genuinely sourced monitoring statement that was present in the label text but missing from the draft (full list in §1.5 and the batch-7 commit messages: flumazenil, propofol, furosemide, morphine, norepinephrine, epinephrine, vasopressin, dobutamine, milrinone, rocuronium, adenosine, insulin, nicardipine, labetalol, haloperidol, hydromorphone, naloxone, atropine, calcium gluconate, sodium bicarbonate, meropenem, vancomycin, ceftriaxone, cefazolin, azithromycin, tranexamic acid, pantoprazole). One genuine, non-evidence bug was also found and fixed along the way: MD-25 Ceftriaxone's gap list falsely claimed its critical calcium-interaction warning was "beyond the fields read here" — it was actually in the label's own warnings field, already marked read in full; the statement was added and the stale gap note removed.
+
+**Deliberately not forced** (recorded as a genuine, structural limitation, not invented around): "escalation: no nursing-practice source" (all 50 drafts) and "US label only, no other regulator read" (all 50) need a different kind of source — a nursing-level escalation/early-warning guideline or a non-US regulator text — neither of which was located and accessed this phase. "High-alert status not determined from a source read" (41 drafts) is deliberately left undetermined because the ISMP high-alert list is licensed for internal non-commercial use and is never reproduced.
+
+**Not yet done:** "adverse effects: a single statement" (42/50 drafts remaining — the same re-read-and-add-a-second-statement method used on the 8 drafts already fixed would close these, but it was not prioritised over closing monitoring first) and a full re-check of every indication/contraindication/interaction statement on the ~31 drafts not touched this phase (a clean validator pass is necessary but, per the owner's own instruction, not sufficient evidence verification — see §12).
+
+## 10. Workstream 2 — Nursing skill drafts audit: in progress (4/25 substantively touched)
+
+- **SK-21 Infection prevention** and **SK-19 Defibrillator safety** — fully closed. SK-21's CDC Core Practices page, previously marked only "partial" read, was re-fetched in full and found to already answer the draft's own stated gap (CDC's six hand-hygiene moments); a new sourced "assessment" and "monitoring" section were added (both previously missing) and the stale gap list was rewritten. SK-19's ERC ALS 2025 guideline was marked "read: full" from an earlier phase, but the PDF had apparently never actually been parsed for text — downloading and running it through `pdftotext` surfaced genuine, previously unused content (correct defibrillator pad position, the >8 cm clearance from an implanted pacemaker/ICD, and the post-shock monitoring sequence), added as new sourced sections.
+- **SK-17 CRRT circuit monitoring** and **SK-15 Patient repositioning** — a classification correction, not new content: both cited a source already marked "read: full" in several statements that were nonetheless labelled `support: "partial"`. Corrected to `"sourced"` per the draft validator's own rule.
+- **SK-18 ECG monitoring is structurally blocked**: its only non-AACN source (an Open RN textbook chapter) returns 403 to every fetch method tried, so it has no source read in full at all and cannot carry a "sourced" statement under the validator's own rule. Left unchanged rather than inventing a source read.
+- **Confirmed genuinely inaccessible this phase** (documented in `docs/phase15/CHECKLIST.md`, not re-attempted without a new access method): `wtcs.pressbooks.pub` (Open RN Nursing Skills/Advanced Skills, 403 — affects SK-11, SK-13, SK-18), AACN practice alerts (free-login-walled — affects SK-07, SK-18, SK-19), AHA 2025 guidelines (403/Cloudflare — affects SK-19), NCBI Bookshelf `NBK594490` (returns a bot-check page, not the article — affects SK-13), BSH acute transfusion reactions guideline (404, confirmed in an earlier phase — affects SK-09).
+- **Remaining:** 21 of 25 skill drafts have not been re-touched this phase. The priority worklist (score-ranked, regenerate with `scripts/audit-evidence.ts`) and the full itemized record of what's checked/changed/blocked is maintained in `docs/phase15/CHECKLIST.md` for the next session to resume without repeating work.
+
+## 11. Workstreams 3–7 — status
+
+- **Workstream 3 (remaining educational content):** not newly audited this phase beyond medications/skills, but two of its specific asks were checked against existing tooling rather than left open: `scripts/audit-mcqs.ts` (already existed, re-run this phase) confirms across all 306 MCQs that the correct option is the unique longest in 23.2% of questions and the unique shortest in 24.5% — matching the ~20–25% a random key would produce by chance, i.e. **no systematic length bias** — and that key length averages 1.02× the mean distractor length. `tests/unit/drafts.test.ts` already structurally enforces an explanation for every wrong option on every MCQ. Topics, cases, equipment content and source-link/licensing verification were not re-audited this phase.
+- **Workstream 4 (website UX):** covered by Phase 15 batch 6 (§1.7) — navigation, search, the Learn hub, and English/Arabic + light/dark accessibility on all new-area pages were audited and confirmed already complete; not re-opened per the owner's "avoid unnecessary changes" instruction. Homepage/onboarding, account/profile pages and error/empty/loading states were not specifically re-audited.
+- **Workstream 5 (subscription readiness):** covered by Phase 15 batch 6 (§1.7) — confirmed complete (lifecycle, cancellation, expiry, payment failure, admin override, isolation, billing UI), re-verified by re-running `tests/db/subscriptions.test.ts` and `tests/e2e/billing.spec.ts` in full.
+- **Workstream 6 (evidence-governance workflow):** implemented in batch 3 (§1.4, migration `0019_ai_evidence_review.sql`); not re-extended this phase (e.g. deeper discrepancy-tracking or licensing-check fields were not added, as no concrete gap was found to justify changing an already-tested, already-shipped governance mechanism).
+- **Workstream 7 (QA):** every batch this phase ran lint, `tsc --noEmit`, the full unit suite (482 tests), the relevant draft validators, and regenerated the draft index/register/evidence audit before commit; the DB suite (323 tests) and relevant Playwright suites (practice, billing, platform — all passing) were run at the start of this part and are unaffected by content-only changes in batches 7–8, which touch no application code.
+
+## 12. Implemented vs. tested vs. evidence-checked vs. clinically approved vs. published — these are not interchangeable
+
+Per the owner's explicit instruction, stated plainly for this report:
+
+- **Implemented:** the AI-evidence-review workflow, the mock subscription system, the practice-exercise feature, the draft register/coverage pages — all shipped, in the codebase, working.
+- **Tested:** the above, plus every medication and skill draft, pass their respective automated validators (`validate-medication-drafts.ts`, `validate-skill-drafts.ts`) with 0 issues. **A clean validator is a necessary floor, not evidence verification** — it checks structure (does every statement cite a listed source? does a "sourced" item cite a full-read source? is there no dose/rate wording?), not whether the clinical content is correct, current or complete.
+- **Evidence-checked:** the 50 medication drafts (monitoring sections) and 4 of 25 skill drafts this phase, by a human-directed re-read of each cited primary source against the draft's claims, documented per-draft in commit messages and `docs/phase15/CHECKLIST.md`. This is AI-assisted evidence checking (the same kind the migration-`0019` workflow is built to record, though this session's own content edits were made directly rather than logged through that workflow, since draft content edits and the AI-evidence-review log serve different purposes — one edits unpublished content, the other records a check against unpublished content).
+- **Clinically approved:** **zero** drafts. `clinically_reviewed` is `false` and `clinical_reviewers` is empty on every medication and skill draft, unchanged this phase. No clinical review date was changed without a corresponding review being performed — none were performed, so none were changed.
+- **Published:** **zero** drafts. All 166 unpublished draft entries remain outside the learner-facing application; `getPractice()` and the equivalent content-loading functions for medications/skills/cases structurally cannot read from `content/drafts/`.
+
+## 13. Is the website ready for a future production release?
+
+**No**, and this phase did not change that assessment — it was never in scope to. Specifically still required before any public clinical-content release, carried forward from the original PR #2 description and Phase 14/15 findings, none of which were addressed this phase (they are outside a content-and-code session's reach):
+1. Real credentialed clinical reviewers appointed; the review/publish workflow exercised with real content by real reviewers.
+2. The exposed Supabase access token from early live-integration testing revoked; a separate production Supabase project, domain, backups/PITR and erasure policy established.
+3. Custom SMTP, CAPTCHA keys and leaked-password protection (currently on the built-in/free tiers) upgraded for production volume.
+4. The structural evidence gaps in §9 (escalation sources, non-US regulator labels, high-alert-list licensing) closed or explicitly accepted as a go-live risk by the organisation.
+5. The remaining 21 skill drafts and the Workstream 3 content areas (topics, cases, equipment, question-explanation sourcing) audited to the same standard as the medication pass.
+
+The **website itself** (navigation, search, accessibility, the mock subscription system, the evidence-governance workflow, the learner-facing practice exercises) is technically mature and well-tested for a **non-clinical, pre-review** stage — every batch this phase and the prior five passed its full test suite and both GitHub Actions workflows on the exact commit pushed. "Technically working" and "ready to publish clinical content" remain two different questions; this report answers only the first with confidence.
+
+## 14. Exact commit hashes and CI results, this part
+
+| Commit | Scope | CI | Isolated Supabase |
+|---|---|---|---|
+| `636ae2f` | Batch 4: 3 medication monitoring gaps (flumazenil, propofol, furosemide) | #109 success | #78 success |
+| `251ec7d` | Batch 5: SBAR/documentation/competency drafts enriched | #110 success | #79 success |
+| `143c469` | Report update, batches 4–6 | #111 success | #80 success |
+| `acc812f` | Report: record verified CI for 143c469 | (docs-only; superseded by d84126f) | — |
+| `d84126f` | Batch 7a: 8 medication drafts, monitoring gaps | #113 success | #82 success |
+| `8316c6d` | Batch 7b: 8 more medication drafts, monitoring gaps | #114 success | #83 success |
+| `62b1f36` | Batch 7c: final 8 medication drafts; ceftriaxone correction — **medication monitoring pass complete (0/50 remaining)** | #115 success | #84 success |
+| `1e150fd` | Batch 8a: SK-21, SK-19 skill drafts fully closed | #116 success | cancelled (concurrency; superseded by 8c023dd, not a real failure) |
+| `8c023dd` | Batch 8b: SK-17, SK-15 support-label correction | see below once confirmed | see below once confirmed |
+
+## 15. Next steps for a future session
+
+Resume exactly where `docs/phase15/CHECKLIST.md` leaves off: Workstream 2 (21 of 25 skill drafts not yet re-touched; priority order and confirmed-inaccessible-source list already recorded there) before moving to Workstream 3 (topics, cases, equipment, question/explanation sourcing, licensing/link verification — none re-audited this phase). Workstreams 4–6 are confirmed complete for the current scope and should not be reopened without a concrete new requirement. Every batch must keep following the same discipline: re-read the actual cited source before adding a statement; validate; regenerate the generated index/register/audit files; run the full test suite; commit; push; verify both GitHub Actions workflows on the exact pushed commit before starting the next batch.
