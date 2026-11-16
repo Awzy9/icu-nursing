@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for confirming the correct (intravenous) route of administration and clearly labelling syringes to avoid confusion with other injectable solutions, since serious, including fatal, reactions have occurred when the product was inadvertently given by the neuraxial route; it also calls for closely monitoring the patient for seizures during surgery.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
     }
    ]
   },
@@ -110,6 +117,13 @@
    "items": [
     {
      "text": "The label lists medication errors due to incorrect route of administration and thromboembolic events among the clinically significant adverse reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-TXA"
+     ]
+    },
+    {
+     "text": "The label also warns of visual or ocular disturbances (discontinue if they occur), dizziness, and hypersensitivity reactions severe enough to need immediate medical attention if they occur.",
      "support": "sourced",
      "sources": [
       "L-TXA"
@@ -216,7 +230,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "28ccedba-99cd-49f3-a782-798df5258524",
   "label_version": "22",
   "effective_time": "20261021",

@@ -133,6 +133,13 @@
      "sources": [
       "L-INSULIN"
      ]
+    },
+    {
+     "text": "The label also describes peripheral oedema and weight gain with insulin therapy (attributed to sodium retention and the anabolic effects of insulin), and notes that rapid glucose-control intensification has been associated with a transient, reversible eye-refraction disorder and acute painful peripheral neuropathy.",
+     "support": "sourced",
+     "sources": [
+      "L-INSULIN"
+     ]
     }
    ]
   },
@@ -262,7 +269,7 @@
   "UKKA and JBDS guidelines: no reuse statement found in the text read; paraphrase only and verify."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "afca6e80-a802-49fb-a978-5fe28a173001",
   "label_version": "12",
   "effective_time": "20250307",

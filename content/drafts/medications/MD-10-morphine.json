@@ -123,6 +123,13 @@
      "sources": [
       "L-MORPHINE"
      ]
+    },
+    {
+     "text": "The most frequently observed adverse reactions are sedation, lightheadedness, dizziness, nausea, vomiting, constipation and diaphoresis; the label also lists bradycardia and orthostatic hypotension among cardiovascular reactions, and oliguria and urinary retention among genitourinary reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-MORPHINE"
+     ]
     }
    ]
   },
@@ -224,7 +231,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "be420e8b-bcb0-49b5-bb4d-1df8b9959809",
   "label_version": "27",
   "effective_time": "20261014",

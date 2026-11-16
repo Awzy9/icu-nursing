@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label states haloperidol injection is not approved for intravenous administration, and that if it is given intravenously, the ECG should be monitored for QTc prolongation and arrhythmias; a QTc interval exceeding 500 msec is associated with an increased risk of torsades de pointes.",
+     "support": "sourced",
+     "sources": [
+      "L-HALOPERIDOL"
+     ]
     }
    ]
   },
@@ -96,6 +103,13 @@
    "items": [
     {
      "text": "Cardiovascular effects (sudden death, QTc prolongation and torsades de pointes) are described among the adverse reactions in the warnings.",
+     "support": "sourced",
+     "sources": [
+      "L-HALOPERIDOL"
+     ]
+    },
+    {
+     "text": "The label also describes tardive dyskinesia (a syndrome of potentially irreversible, involuntary, dyskinetic movements) as a risk of antipsychotic treatment, and lists tachycardia and hypotension, including orthostatic hypotension, among the reported adverse reactions.",
      "support": "sourced",
      "sources": [
       "L-HALOPERIDOL"
@@ -202,7 +216,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "b1ad2abd-a9d6-44e3-957b-36a73260f4f5",
   "label_version": "12",
   "effective_time": "20260922",

@@ -1601,6 +1601,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "8c15b01b7d67e3c1",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-02": [
@@ -1629,6 +1642,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "d7a69a89a2c4302b",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-03": [
@@ -1648,6 +1674,19 @@
    {
     "hash": "93ac444c83103d9b",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VASOPRESSIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "817d675b0b0678e5",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-VASOPRESSIN",
@@ -1866,6 +1905,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "fd30697e52bb4c89",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MORPHINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-11": [
@@ -1999,6 +2051,21 @@
    {
     "hash": "8f7048291a68461f",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a6adb24a1c81c3ae",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-INSULIN",
@@ -2680,6 +2747,19 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "9811c69b1b96ff8d",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-39": [
@@ -2699,6 +2779,19 @@
    {
     "hash": "5a6c70682e16f9cd",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HYDROMORPHONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "778495022218c293",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-HYDROMORPHONE",
@@ -2908,6 +3001,19 @@
    {
     "hash": "9ba976b919e6ecc6",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-TXA",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "3d3868c856ea868a",
+    "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
      "L-TXA",

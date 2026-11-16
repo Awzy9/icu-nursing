@@ -107,6 +107,13 @@
      "sources": [
       "L-VASOPRESSIN"
      ]
+    },
+    {
+     "text": "The most common adverse reactions include decreased cardiac output, bradycardia, tachyarrhythmias, hyponatraemia and ischaemia (coronary, mesenteric, skin and digital); the label also lists right heart failure, atrial fibrillation, mesenteric ischaemia, acute renal insufficiency and reversible diabetes insipidus.",
+     "support": "sourced",
+     "sources": [
+      "L-VASOPRESSIN"
+     ]
     }
    ]
   },
@@ -206,7 +213,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "b1147beb-743e-4c62-8927-91192447f8b8",
   "label_version": "49",
   "effective_time": "20260421",

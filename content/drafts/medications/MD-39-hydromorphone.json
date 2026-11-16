@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for close monitoring for life-threatening respiratory depression, particularly early in therapy or after a dose change, and for monitoring for severe hypotension around the same times; in patients with increased intracranial pressure, impaired consciousness or head injury, the label calls for monitoring for sedation and respiratory depression.",
+     "support": "sourced",
+     "sources": [
+      "L-HYDROMORPHONE"
+     ]
     }
    ]
   },
@@ -110,6 +117,13 @@
    "items": [
     {
      "text": "The label lists addiction, abuse and misuse and life-threatening respiratory depression among the serious adverse reactions.",
+     "support": "sourced",
+     "sources": [
+      "L-HYDROMORPHONE"
+     ]
+    },
+    {
+     "text": "The label also warns that the product contains sodium metabisulfite, with a risk of anaphylactic symptoms and life-threatening asthmatic episodes in susceptible people, and describes opioid-induced hyperalgesia (a paradoxical increase in pain or pain sensitivity) as a risk to consider if pain appears to worsen despite increasing doses.",
      "support": "sourced",
      "sources": [
       "L-HYDROMORPHONE"
@@ -216,7 +230,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "67e79859-4efc-4ea7-8211-cadf746bc864",
   "label_version": "9",
   "effective_time": "20260730",

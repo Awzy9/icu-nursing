@@ -126,6 +126,13 @@
      "sources": [
       "L-EPINEPHRINE"
      ]
+    },
+    {
+     "text": "The label also lists cardiovascular reactions (angina, arrhythmias, hypertension, tachycardia, ventricular ectopy) and notes that rapid rises in blood pressure associated with epinephrine have produced cerebral haemorrhage, particularly in elderly patients with cardiovascular disease.",
+     "support": "sourced",
+     "sources": [
+      "L-EPINEPHRINE"
+     ]
     }
    ]
   },
@@ -225,7 +232,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "577f987e-d3af-4f49-ab44-5db9cbf46601",
   "label_version": "3",
   "effective_time": "20261027",

@@ -140,6 +140,13 @@
      "sources": [
       "L-NOREPINEPHRINE"
      ]
+    },
+    {
+     "text": "The most common adverse reactions are hypertension and bradycardia; the label also lists ischaemic injury, anxiety, transient headache, respiratory difficulty and pulmonary oedema, and extravasation necrosis at the injection site.",
+     "support": "sourced",
+     "sources": [
+      "L-NOREPINEPHRINE"
+     ]
     }
    ]
   },
@@ -251,7 +258,7 @@
   "FDA infusion pump page: verify reuse terms."
  ],
  "label_currency_check": {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "set_id": "5fbd0e3b-703b-412e-8b71-bd0a0dbf4500",
   "label_version": "1",
   "effective_time": "20261016",
