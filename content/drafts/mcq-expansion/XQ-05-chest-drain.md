@@ -29,9 +29,9 @@ D. Hung from the drip stand above the chair, which makes the readings easier to 
 A. Encourage the patient to keep coughing to clear the lungs and recheck the drainage in an hour.
 B. Increase the drainage by lowering the bottle, so the effusion clears faster and the symptoms settle.
 C. Give the next analgesia and observe, since coughing is common while a lung re-expands.
-D. Report at once, because re-expansion pulmonary oedema is a potentially fatal complication, and follow the instruction on clamping.
+D. Promptly clamp the effusion drain under its documented drainage instructions, assess the patient and alert the pleural team urgently.
 **Answer: D.**
-**Why correct:** The BTS statement says a drain for effusion should be clamped promptly in patients with repetitive coughing or chest pain to avoid re-expansion pulmonary oedema, a potentially fatal complication.
+**Why correct:** The BTS 2023 statement advises promptly clamping an effusion drain when repetitive coughing or chest pain develops, to reduce the risk of re-expansion pulmonary oedema, and seeking urgent clinical assessment. Follow the documented clamping instruction; a bubbling pneumothorax drain is a different situation.
 **Why not A:** The symptoms may signal re-expansion pulmonary oedema.
 **Why not B:** Faster drainage is the opposite of what the symptoms call for.
 **Why not C:** Treating the symptom and waiting delays recognition of a dangerous complication.
