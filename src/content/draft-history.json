@@ -101,6 +101,17 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "1c85c65abb7bea74",
+    "recorded": "2026-11-16",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-INTL-PI-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D09-T01": [
@@ -1067,6 +1078,20 @@
    {
     "hash": "29f2153f4f393020",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "bcf4457dcff8ff89",
+    "recorded": "2026-11-16",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AACN-ALARM-2018",
