@@ -75,7 +75,7 @@ D. Recording it in the nursing notes so that the next shift can decide what to d
 
 **Q6 (safety).** A CRRT patient receiving heparin flushes has a sudden platelet fall and the treating team considers heparin-induced thrombocytopenia likely. What is the safest nursing response?
 A. Continue the heparin flushes because they contain only a small amount of the drug.
-B. Notify the responsible clinician immediately and activate the local HIT pathway so all heparin sources, including flushes and locks, are reviewed and stopped under an authorized plan.
+B. Alert the team now and follow the HIT pathway to stop all heparin exposure.
 C. Switch to a different heparin brand and monitor, since the brand may be the cause.
 D. Wait for the platelet count to fall further before telling anyone, to be sure of the diagnosis.
 **Answer: B.**
