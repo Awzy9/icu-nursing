@@ -77,7 +77,7 @@ D. Give a second sedative with it to prevent any restlessness after the pain has
 A. Reassure the patient and wait for the stiffness to wear off before doing anything further.
 B. Give a second opioid dose to relieve the discomfort and relax the chest muscles.
 C. Remove the pulse oximeter so the alarm stops while the team is called.
-D. Call the airway/resuscitation team immediately, assess breathing and circulation, and support ventilation under the emergency airway protocol while the authorized clinician treats suspected fentanyl-associated rigidity.
+D. Call the emergency airway team and support ventilation under the unit's airway protocol.
 **Answer: D.**
 **Why correct:** Fentanyl labeling describes chest-wall and respiratory-muscle rigidity, particularly after rapid administration, which can impair ventilation. This is an airway emergency: call skilled help and support ventilation promptly under protocol. Neuromuscular blockade and other medicines are clinician-directed decisions, not the bedside question's first independent action.
 **Why not A:** Rigidity that limits ventilation is an emergency.
