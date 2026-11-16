@@ -26,18 +26,29 @@ export function ClearLocalButton() {
   );
 }
 /** Self-rated competency tracker: levels are the learner's own words, kept on this device, and never verified. */
+const NOTE_MAX = 300;
 export function CompetencyTracker({ skills, canExport = false }: { skills: { code: string; title: string }[]; canExport?: boolean }) {
   const t = useTranslations("Practice");
   const [levels, setLevels] = useState<Record<string, string>>({});
-  useEffect(() => setLevels(readLocal().levels), []);
+  const [notes, setNotes] = useState<Record<string, string>>({});
+  const [savedAt, setSavedAt] = useState<Record<string, boolean>>({});
+  useEffect(() => { const l = readLocal(); setLevels(l.levels); setNotes(l.notes); }, []);
   const set = async (code: string, level: string) => {
     setLevels((l) => ({ ...l, [code]: level }));
     const { writeLocal } = await import("./local-progress");
     writeLocal((p) => ({ ...p, levels: { ...p.levels, [code]: level } }));
   };
+  const setNote = async (code: string, note: string) => {
+    const trimmed = note.slice(0, NOTE_MAX);
+    setNotes((n) => ({ ...n, [code]: trimmed }));
+    const { writeLocal } = await import("./local-progress");
+    writeLocal((p) => ({ ...p, notes: { ...p.notes, [code]: trimmed } }));
+    setSavedAt((s) => ({ ...s, [code]: true }));
+    setTimeout(() => setSavedAt((s) => ({ ...s, [code]: false })), 1500);
+  };
   const tb = useTranslations("Billing");
   const exportCsv = () => {
-    const rows = [["code", "skill", "self_rating"], ...skills.map((k) => [k.code, `"${k.title.replace(/"/g, '""')}"`, levels[k.code] ?? "not_started"])];
+    const rows = [["code", "skill", "self_rating", "note"], ...skills.map((k) => [k.code, `"${k.title.replace(/"/g, '""')}"`, levels[k.code] ?? "not_started", `"${(notes[k.code] ?? "").replace(/"/g, '""')}"`])];
     const url = URL.createObjectURL(new Blob([rows.map((r) => r.join(",")).join("\n")], { type: "text/csv" }));
     const a = document.createElement("a"); a.href = url; a.download = "my-practice-summary.csv"; a.click(); URL.revokeObjectURL(url);
   };
@@ -58,6 +69,18 @@ export function CompetencyTracker({ skills, canExport = false }: { skills: { cod
                   </label>
                 ))}
               </div>
+              <label className="mt-3 block text-sm" htmlFor={`note-${s.code}`}>
+                {t("noteLabel")}
+                <textarea
+                  id={`note-${s.code}`}
+                  className="mt-1 block w-full min-h-20 rounded-md border border-input bg-card p-2 text-sm"
+                  maxLength={NOTE_MAX}
+                  value={notes[s.code] ?? ""}
+                  onChange={(e) => void setNote(s.code, e.target.value)}
+                  placeholder={t("notePlaceholder")}
+                />
+              </label>
+              <p role="status" className="text-xs text-muted-foreground" aria-live="polite">{savedAt[s.code] ? t("noteSaved") : ""}</p>
             </fieldset>
           </li>
         ))}

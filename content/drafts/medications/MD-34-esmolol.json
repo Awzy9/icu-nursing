@@ -76,6 +76,13 @@
      "sources": [
       "L-ESMOLOL"
      ]
+    },
+    {
+     "text": "Monitor serum electrolytes during esmolol therapy.",
+     "support": "sourced",
+     "sources": [
+      "L-ESMOLOL"
+     ]
     }
    ]
   },
@@ -112,6 +119,13 @@
     },
     {
      "text": "Abrupt discontinuation may risk myocardial ischaemia in patients with coronary artery disease.",
+     "support": "sourced",
+     "sources": [
+      "L-ESMOLOL"
+     ]
+    },
+    {
+     "text": "Beta blockers, including esmolol, have been associated with raised serum potassium and hyperkalaemia; the risk is higher in renal impairment, and intravenous beta blockers have caused life-threatening hyperkalaemia in patients on haemodialysis.",
      "support": "sourced",
      "sources": [
       "L-ESMOLOL"

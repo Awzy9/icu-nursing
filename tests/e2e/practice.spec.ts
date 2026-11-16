@@ -71,6 +71,27 @@ test.describe("practice labs (synthetic nonclinical exercises)", () => {
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Competency self-assessment");
     expect(await serious(page)).toEqual([]);
   });
+  test("competency notes are personal, saved on this device, included in the CSV export, and capped in length", async ({ page }) => {
+    await page.goto("/en/practice/competencies");
+    const group = page.getByRole("group", { name: "Preparing the ferry ticket scanner" });
+    const note = group.getByLabel(/What to practise next/);
+    await note.fill("Need more practice with a weak pulse.");
+    await expect(group.getByText("Saved.")).toBeVisible();
+    await page.reload();
+    await expect(group.getByLabel(/What to practise next/)).toHaveValue("Need more practice with a weak pulse.");
+    await note.fill("x".repeat(500));
+    expect((await note.inputValue()).length).toBe(300);
+  });
+  test("competency note is included in the CSV export for a premium learner", async ({ page }) => {
+    await page.goto("/en/account/billing");
+    const subscribe = page.getByRole("button", { name: "Start a test subscription" });
+    if (await subscribe.isVisible()) { await subscribe.click(); await expect(page.getByText("Done.")).toBeVisible(); }
+    await page.goto("/en/practice/competencies");
+    await page.getByRole("group", { name: "Preparing the ferry ticket scanner" }).getByLabel(/What to practise next/).fill("Need more practice with a weak pulse.");
+    const dl = page.waitForEvent("download");
+    await page.getByRole("button", { name: "Download my summary (CSV)" }).click();
+    expect((await dl).suggestedFilename()).toBe("my-practice-summary.csv");
+  });
   test("Arabic: right-to-left, translated, and accessible", async ({ page }) => {
     await page.goto("/ar/practice/SYN-PX-001");
     await expect(page.locator("html")).toHaveAttribute("dir", "rtl");

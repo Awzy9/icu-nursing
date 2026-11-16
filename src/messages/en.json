@@ -982,7 +982,10 @@
     "clear": "Clear my practice data",
     "cleared": "Practice data cleared on this device.",
     "hubBody": "Short interactive exercises on SBAR, documentation, escalation, infection prevention and equipment checks.",
-    "hubStat": "{n} exercises"
+    "hubStat": "{n} exercises",
+    "noteLabel": "What to practise next (your own note, saved on this device)",
+    "notePlaceholder": "e.g. I need more practice recognising a weak pulse.",
+    "noteSaved": "Saved."
   },
   "Billing": {
     "title": "Plan and billing",
