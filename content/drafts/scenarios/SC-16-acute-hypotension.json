@@ -257,7 +257,7 @@
     },
     {
      "text": "Keep rechecking the pressure alone for a few more minutes before calling anyone.",
-     "points": 1,
+     "points": 0,
      "next": null,
      "scope": "monitoring",
      "feedback": "Monitoring continues, but waiting to escalate a patient with signs of impending shock delays emergency care.",
