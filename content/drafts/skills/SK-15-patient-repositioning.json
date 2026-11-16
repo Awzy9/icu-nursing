@@ -16,8 +16,8 @@
  "sources": [
   {
    "id": "S-INTL-PI-2026",
-   "read": "partial",
-   "use": "abridged guide: repositioning rationale"
+   "read": "full",
+   "use": "International Guideline 4th ed. Quick Reference Guide (recommendations and good-practice statements), re-fetched and read in full text 2026-11-16"
   },
   {
    "id": "S-AARC-PVA",
@@ -35,18 +35,18 @@
  ],
  "sections": {
   "safety": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
      "text": "Use friction- and shear-reducing equipment and suitable lifting methods when moving the patient.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
     },
     {
      "text": "Check under and around devices and securements after each move.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
@@ -54,11 +54,23 @@
    ]
   },
   "responsibilities": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
      "text": "Reposition on an individualised schedule based on mobility, skin and tissue tolerance, clinical condition, comfort, sleep, goals of care and the support surface.",
-     "support": "partial",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    }
+   ]
+  },
+  "assessment": {
+   "support": "full",
+   "items": [
+    {
+     "text": "The guideline notes that critically ill individuals, or others with systemic hypoperfusion or shock states, may need more frequent, incremental repositioning, and may benefit from supplementing full-body repositioning with assisted small shifts in body position; it also calls for assessing for early signs of skin and tissue injury, which may mean a patient needs more frequent repositioning or preferential positioning off a damaged area.",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
@@ -178,8 +190,8 @@
    "publisher": "NPIAP / EPUAP / PPPIA",
    "version": "2026 (4th edition)",
    "url": "https://epuap.org/download/13743/",
-   "accessed": "2026-11-14",
-   "read": "partial",
+   "accessed": "2026-11-16",
+   "read": "full",
    "licence_class": "RED",
    "permission_required": "Yes"
   },

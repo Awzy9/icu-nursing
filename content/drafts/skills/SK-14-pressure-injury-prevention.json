@@ -16,8 +16,8 @@
  "sources": [
   {
    "id": "S-INTL-PI-2026",
-   "read": "partial",
-   "use": "International Guideline 4th ed.: abridged Quick Reference Guide only"
+   "read": "full",
+   "use": "International Guideline 4th ed. Quick Reference Guide (recommendations and good-practice statements), re-fetched and read in full text 2026-11-16; the full CPG chapters (evidence summaries, implementation considerations) referenced from the Quick Reference Guide were not read"
   },
   {
    "id": "S-NPIAP-2019",
@@ -35,11 +35,18 @@
  ],
  "sections": {
   "indications": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
      "text": "Applies to all ICU patients; extra care with vasopressors, shock, diabetes and peripheral arterial disease.",
-     "support": "partial",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "The guideline lists risk factors specific to device-related pressure injury in adult critical care settings: vasopressor use, surgery, ventilator use, prone-position ventilation, and a higher APACHE II/III or SOFA score; it also names medical-device presence itself, oedema, longer device-use duration, and a greater number of devices in use as general device-related risk factors at any age.",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
@@ -47,18 +54,18 @@
    ]
   },
   "safety": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
      "text": "No mattress replaces repositioning.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
     },
     {
      "text": "Use equipment and low-friction fabrics that reduce friction and shear when moving the patient.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
@@ -66,11 +73,11 @@
    ]
   },
   "responsibilities": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
      "text": "Offload heels; manage moisture; request nutrition screening and dietitian review.",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
@@ -88,11 +95,11 @@
    ]
   },
   "assessment": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
      "text": "Check under and around devices and securements; support or reposition devices; consider preventive dressings under devices; remove devices as soon as medically feasible (a prescriber decision).",
-     "support": "partial",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
@@ -110,11 +117,25 @@
    ]
   },
   "monitoring": {
-   "support": "partial",
+   "support": "full",
    "items": [
     {
      "text": "Reposition on a schedule set by mobility, skin and tissue tolerance, clinical condition, comfort and the support surface, not a fixed rule.",
-     "support": "partial",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "The guideline notes that critically ill individuals, or others with systemic hypoperfusion or shock states, may need more frequent, incremental repositioning, and may benefit from supplementing full-body repositioning with assisted small shifts in body position.",
+     "support": "sourced",
+     "sources": [
+      "S-INTL-PI-2026"
+     ]
+    },
+    {
+     "text": "Assess for early signs of skin and tissue injury, which may mean the individual needs more frequent repositioning or preferential positioning off the damaged area.",
+     "support": "sourced",
      "sources": [
       "S-INTL-PI-2026"
      ]
@@ -203,8 +224,8 @@
   }
  ],
  "gaps": [
-  "Staging definitions and wound treatment: not read.",
-  "Full 2026 guideline: only the abridged Quick Reference Guide was read.",
+  "Staging definitions and wound treatment: not in the Quick Reference Guide's prevention recommendations read; the full CPG chapters were not read.",
+  "Evidence summaries and implementation considerations (referenced from the Quick Reference Guide but published separately in the full CPG): not read.",
   "Arabic terminology: reviewer question."
  ],
  "permissions": [
@@ -217,8 +238,8 @@
    "publisher": "NPIAP / EPUAP / PPPIA",
    "version": "2026 (4th edition)",
    "url": "https://epuap.org/download/13743/",
-   "accessed": "2026-11-14",
-   "read": "partial",
+   "accessed": "2026-11-16",
+   "read": "full",
    "licence_class": "RED",
    "permission_required": "Yes"
   },

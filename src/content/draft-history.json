@@ -1401,6 +1401,18 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "55754ba9240ce567",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-NPIAP-2019"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-15": [
@@ -1418,6 +1430,18 @@
    },
    {
     "hash": "fba5c075a004f78d",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-INTL-PI-2026"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "eafa9011c79b1df1",
     "recorded": "2026-11-16",
     "evidence_status": "partial",
     "sources": [
