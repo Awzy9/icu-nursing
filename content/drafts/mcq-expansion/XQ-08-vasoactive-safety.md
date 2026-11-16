@@ -26,7 +26,7 @@ D. Apply a cold pack for comfort and continue the infusion until the next schedu
 **Trace:** L-NOREPINEPHRINE — Label: tissue ischaemia; avoid extravasation; local necrosis.
 
 **Q2 (judgment).** The line carrying a patient's norepinephrine becomes occluded and the pump alarms. The patient's blood pressure is falling. What is the best action?
-A. Assess the patient, call for urgent help, check the occluded line and pump, and arrange prompt restoration of prescribed vasopressor delivery through safe patent access under the unit's protocol.
+A. Assess, summon help and restore the prescribed infusion via patent access per protocol.
 B. Wait for the pump to clear itself, because the alarm will stop once the pressure equalises.
 C. Disconnect the infusion and flush the line hard to remove the blockage.
 D. Give a fluid bolus yourself as soon as the alarm sounds and then deal with the line.
