@@ -119,3 +119,10 @@ Ordered by what would most delay or most endanger a real clinical-content launch
 - A real retrieval-augmented model behind the tutor, once Phase 5's mock-mode foundation has been used by real learners and the citation-only approach is validated as useful (or found wanting) in practice.
 - Native-speaker/clinical-terminology review of the Arabic interface (flagged as a draft notice throughout the app already).
 - Mobile app (explicitly paused by every standing restriction this session; the roadmap's own non-goals list already says "mobile apps before the web platform is stable").
+
+## 11. Addendum (continuing this session, after the nav-overflow/tutor-rate-limit fix was confirmed green in CI)
+
+- **7 more medication adverse-effect gaps closed** (MD-06 propofol, MD-07 midazolam, MD-09 fentanyl, MD-14 heparin, MD-30 phenylephrine, MD-37 lorazepam, MD-43 succinylcholine): each already-cited FDA label's full adverse_reactions section was re-fetched and a second genuinely sourced statement added. "Adverse effects: a single statement" drops from 42/50 to 35/50 across commits `7777a59` and `ec14672`. All 50 drafts still pass `scripts/validate-medication-drafts.ts` with 0 issues.
+- Further manual spot-checks (SK-07, SK-24 skill content; MD-42 class of queries) found no new inaccuracies.
+- Legal pages: re-confirmed via the codebase (the only accessible proxy for "staging" available to this session — there is no separate deployed site this session can reach) that no privacy/terms/legal pages exist anywhere in `src/app`; the footer's "Legal pages will be published before launch" remains the accurate statement, not a gap introduced by omission.
+- CI status at the time of writing this addendum: `99eaa26` and everything built on it (`e1aa72a`, `eab2bbe`, `1d984bd`, `7777a59`) confirmed green on `ci.yml`; `ec14672` (the latest medication batch) is pending its own CI confirmation — check before relying on it specifically.
