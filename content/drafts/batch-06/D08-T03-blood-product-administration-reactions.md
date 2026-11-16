@@ -140,8 +140,8 @@ C. A patient with new severe breathlessness, hypotension and swelling of the lip
 D. A patient whose unit has been running for 3 hours and is nearly finished.
 **Answer: C.**
 **Why correct:** These are features of anaphylaxis (the Circular lists hypotension, severe dyspnoea and laryngeal oedema), which needs immediate treatment.
-**Why not A:** A mild urticarial reaction is common and usually self-limiting, but still needs reporting.
-**Why not B:** Still stop and report, but stable vital signs make it less urgent than airway compromise.
+**Why not A:** An isolated mild urticarial reaction still requires assessment, monitoring and action according to local transfusion policy, but lacks the immediate airway/circulatory danger of option C. Do not assume all mild reactions require identical treatment or that restarting is always prohibited.
+**Why not B:** An isolated low-grade febrile reaction requires prompt assessment and monitoring; local guidance and the responsible clinician determine whether interruption, treatment, continuation or restart is appropriate. Severe airway and circulatory compromise in option C is more urgent.
 **Why not D:** The Circular allows up to 4 hours after the container is entered.
 
 **Q5 (understanding).** Which patient is at particular risk of transfusion-associated circulatory overload (TACO) according to the Circular?
@@ -155,13 +155,13 @@ D. A patient who is anaesthetised and has no signs of volume overload or respira
 **Why not C:** Cold units are a hypothermia risk, not a TACO risk.
 **Why not D:** Anaesthesia is not on the list of TACO risk factors.
 
-**Q6 (scope).** Which decision belongs to the prescriber and transfusion service, not to the bedside nurse?
+**Q6 (scope).** After a possible transfusion reaction, which decision requires authorized clinical and transfusion-service assessment rather than unilateral action by an untrained team member?
 A. Stopping the transfusion when a reaction is suspected.
 B. Keeping the bag and administration set for return to the transfusion service.
 C. Deciding whether the transfusion can be restarted after a reaction.
 D. Sending a post-reaction blood sample from a site other than the transfusion access.
 **Answer: C.**
-**Why correct:** The Circular says the infusion should not be restarted unless the transfusion-service protocol permits it.
+**Why correct:** Whether a transfusion can be continued or restarted depends on reaction severity, clinical assessment, and applicable transfusion-service protocol. Severe or life-threatening reactions require emergency treatment and should not be restarted as though they were mild. The bedside nurse must not independently resume a stopped transfusion without the required authorization.
 **Why not A:** Stopping at once is a nursing action the Circular requires.
 **Why not B:** Returning the unit and set is part of the nursing response.
 **Why not D:** Collecting the post-reaction sample is part of the response the Circular describes.
@@ -177,5 +177,6 @@ Identity checking, consent, order sets, bedside rates, observation frequency, li
 ## 20. Evidence, applicability and open questions
 - Source quality: the Circular is authoritative, current (June 2024) and recognised by the FDA, but it is a labelling document written for suppliers and transfusion services, not a nursing practice guideline, and it does not give graded recommendations. The Open RN checklist is an educational US textbook procedure, not a guideline. The review PDF was partly read (general instructions and side-effect sections); component-specific text was not read in detail.
 - Jurisdiction: United States. UK, European and other national transfusion guidance was not read.
-- Not covered (still unresolved after Phase 3): first-line actions after a reaction beyond stopping the transfusion and informing the team (the BSH acute transfusion reactions guideline, Br J Haematol 2023, was identified but is not open access and was not read), observation intervals, escalation timings, UK bedside identity-check standards beyond NICE 1.13–1.14; also not covered: indications and thresholds for transfusion, massive transfusion, component-specific details (platelets, plasma, cryoprecipitate), irradiated and CMV-safe products, paediatric and neonatal transfusion, patient blood management.
+- Evidence-access update (2026-11-16): BSH's 2023 acute transfusion reaction guideline has a publisher *Free Access* HTML listing and indexed recommendations discussing mild/moderate reactions. An attempt to retrieve the complete publisher HTML returned HTTP 403, so the full article was NOT independently read or verified; selected indexed recommendations were checked only. These distinguish isolated mild reactions potentially managed with treatment/monitoring and authorized continuation or restart from moderate/severe events requiring escalation. Source: https://onlinelibrary.wiley.com/doi/full/10.1111/bjh.18789 . This is **partial evidence access**, not a claim of full-source review.
+- Not covered (still unresolved): complete BSH 2023 recommendation and evidence review, observation and escalation timings, UK bedside identity-check standards beyond NICE 1.13–1.14; indications and transfusion thresholds, massive transfusion, specialized products, component-specific details and patient blood management.
 - Open questions for reviewers (HEM, TM, CCP, NE, BN): confirm the textbook timings (30-minute start, 15-minute observation, 4-to-6-hour follow-up) against local policy; first-line actions after a reaction; use of specific products in ICU.
