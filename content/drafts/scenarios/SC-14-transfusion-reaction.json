@@ -57,7 +57,8 @@
   "No published clinical scenario may exist until the review phase: this is a specification only.",
   "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
   "First-line management of specific reaction types after the transfusion is stopped is not drawn from a source read and is not written.",
-  "Observation timings follow local policy."
+  "Observation timings follow local policy.",
+  "AI evidence update 2026-11-16: initial reaction management was cross-checked at public guidance level against Australian Red Cross Lifeblood. Mild isolated reactions differ from severe/life-threatening reactions; restarting is not a unilateral bedside action. BSH 2023 full text and local reaction policies are still not comprehensively checked."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -89,12 +90,12 @@
    ],
    "options": [
     {
-     "text": "Stop the transfusion, keep the intravenous access, and inform the prescriber and the transfusion service.",
+     "text": "Stop the transfusion, assess airway, breathing and circulation, call urgently for clinical help and notify the transfusion service. Maintain IV access without flushing the transfusion line; preserve the component and giving set per protocol.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "The Circular and local policy call for stopping the transfusion and informing the team and transfusion service at the first sign of a reaction.",
-     "consequence": "The transfusion is stopped and the team is called; the product and set are kept for the transfusion service per policy.",
+     "feedback": "When a reaction is suspected, Australian Red Cross Lifeblood guidance calls for immediately stopping transfusion, assessing ABC and vital signs, maintaining IV access without flushing the transfusion line, rechecking identity and notifying the treating team and transfusion service. Further investigation and possible restart require severity assessment and local authorization.",
+     "consequence": "Transfusion is stopped; the patient and IV access are assessed, the team is notified, and the blood product and set are retained according to the reaction protocol.",
      "support": "partial",
      "sources": [
       "S-AABB-COI-2024",
