@@ -110,7 +110,7 @@
     },
     {
      "text": "Leave the bedside to find a doctor.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "escalation",
      "feedback": "Calling for help is right, but leaving the patient removes airway support at the worst moment.",
