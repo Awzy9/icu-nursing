@@ -2459,7 +2459,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "5baeb91fccd11c24"
+   "hash": "49e720bb68a52f70"
   },
   {
    "key": "MD-07",
@@ -2494,7 +2494,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a696dcbe20f15998"
+   "hash": "02fa08be18556122"
   },
   {
    "key": "MD-08",
@@ -2564,7 +2564,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "29aa8a6fb607c57a"
+   "hash": "824e85ca263cfb3a"
   },
   {
    "key": "MD-10",
@@ -2739,7 +2739,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d807d77497ee8786"
+   "hash": "be82b78f2038c61e"
   },
   {
    "key": "MD-15",

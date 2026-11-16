@@ -7,7 +7,7 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 |---|---|
 | Monitoring: no statement sourced from the label | 0 |
 | Escalation: no nursing-practice source | 0 |
-| Adverse effects: a single statement | 42 |
+| Adverse effects: a single statement | 38 |
 | High-alert status not determined from a source read | 41 |
 | US label only, no other regulator read | 50 |
 | Label older than 2026 | 5 |
@@ -30,15 +30,15 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 4. **MD-41 Flumazenil** (score 5): adverse effects: a single statement; high-alert status not determined from a source read (local list governs); label older than 2026 (effective 20251218)
 5. **SK-08 Oxygen delivery devices** (score 5): device skill: manufacturer instructions are local
 6. **SK-17 CRRT circuit monitoring** (score 5): cites a source not read; device skill: manufacturer instructions are local
-7. **MD-06 Propofol** (score 4): adverse effects: a single statement
-8. **MD-07 Midazolam** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-9. **MD-09 Fentanyl** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-10. **MD-14 Heparin** (score 4): adverse effects: a single statement
-11. **MD-15 Insulin (intravenous)** (score 4): label older than 2026 (effective 20250307)
-12. **MD-29 Gentamicin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
-13. **MD-30 Phenylephrine** (score 4): adverse effects: a single statement
-14. **MD-31 Dopamine** (score 4): adverse effects: a single statement
-15. **MD-36 Furosemide** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+7. **MD-15 Insulin (intravenous)** (score 4): label older than 2026 (effective 20250307)
+8. **MD-29 Gentamicin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+9. **MD-30 Phenylephrine** (score 4): adverse effects: a single statement
+10. **MD-31 Dopamine** (score 4): adverse effects: a single statement
+11. **MD-36 Furosemide** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+12. **MD-37 Lorazepam** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+13. **MD-43 Succinylcholine** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+14. **MD-44 Enoxaparin** (score 4): adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+15. **SK-01 Arterial line care** (score 4): device skill: manufacturer instructions are local
 
 Full table: `docs/phase14/evidence_gaps.csv`.
 
