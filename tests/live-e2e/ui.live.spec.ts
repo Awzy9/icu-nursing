@@ -163,8 +163,8 @@ test("login: wrong password is refused; right password shows the dashboard; prot
   await login(page, learner.email);
   await expect(page).toHaveURL(/\/en\/dashboard/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("LIVE TEST UI Learner");
-  await expect(page.getByRole("link", { name: "Skills" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Practice labs" })).toBeVisible();
+  await expect(page.locator("main").getByRole("link", { name: "Skills" })).toBeVisible();
+  await expect(page.locator("main").getByRole("link", { name: "Practice labs" })).toBeVisible();
   await expect(page.getByTestId("dash-plan")).toContainText("Your plan: Free");
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations.filter((v) => ["serious", "critical"].includes(v.impact ?? ""))).toEqual([]);
   await signOut(page);
