@@ -73,17 +73,17 @@ D. Recording it in the nursing notes so that the next shift can decide what to d
 **Why not D:** Under-delivery should be reported so the team can respond.
 **Trace:** S-KDIGO-AKI-2012 — Frequent assessment of delivered RRT dose.
 
-**Q6 (safety).** A patient on CRRT with heparin-containing flushes is suspected of heparin-induced thrombocytopenia. What does the guideline-based draft say the nurse must do?
+**Q6 (safety).** A CRRT patient receiving heparin flushes has a sudden platelet fall and the treating team considers heparin-induced thrombocytopenia likely. What is the safest nursing response?
 A. Continue the heparin flushes because they contain only a small amount of the drug.
-B. Tell the prescriber now and make sure all heparin, including flushes, is stopped.
+B. Notify the responsible clinician immediately and activate the local HIT pathway so all heparin sources, including flushes and locks, are reviewed and stopped under an authorized plan.
 C. Switch to a different heparin brand and monitor, since the brand may be the cause.
 D. Wait for the platelet count to fall further before telling anyone, to be sure of the diagnosis.
 **Answer: B.**
-**Why correct:** KDIGO advises that if HIT is suspected or confirmed, all heparin must be stopped, including in flushes and locks; the nurse informs the prescriber immediately and follows local policy on the extent.
+**Why correct:** KDIGO 2012 recommendation 5.3.4 requires discontinuation of all heparin when HIT is present; clinically likely HIT needs urgent assessment and a heparin-free treatment plan, including flushes and locks. The nurse escalates and follows authorized orders/local protocol; an isolated platelet fall is not diagnostic.
 **Why not A:** Flush heparin is a source of exposure and local policy decides the extent.
 **Why not C:** All heparin must stop, not just one brand.
 **Why not D:** Suspected HIT is reported immediately.
-**Trace:** S-KDIGO-AKI-2012 — Suspected/confirmed HIT: stop all heparin including flushes and locks (extent per local policy).
+**Trace:** S-KDIGO-AKI-2012 — KDIGO 2012 recommendation 5.3.4 (HIT): stop all heparin; clinically likely HIT requires urgent heparin-exposure review and local specialist pathway.
 
 ## 18. References
 - Alberta Health Services. CRRT Alarm Management Care Pathway Resource (January 2025). https://www.albertahealthservices.ca/assets/about/scn/ahs-scn-cc-dialyzingwisely-crrt-alarm-management-care-pathway-resource.pdf (accessed 2026-11-15)
