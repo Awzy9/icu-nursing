@@ -104,7 +104,7 @@ B. Give antimicrobials first and take blood cultures only if the patient does no
 C. Take the cultures after the antimicrobials have run in, because the first dose is the priority and cultures can wait until later.
 D. Collect blood cultures as soon as possible and ideally before antimicrobials, while giving antimicrobials within an hour.
 **Answer: D.**
-**Why correct:** SSC 2026 recommends cultures as soon as possible, ideally before antimicrobials, and antimicrobials immediately, ideally within 1 hour of recognition in septic shock.
+**Why correct:** SSC 2026 recommends taking blood cultures as soon as possible and ideally before antimicrobials (strong, low certainty); in possible, probable or definite septic shock, antimicrobial therapy should be given immediately, ideally within 1 hour of recognition (strong, very low certainty). Cultures must not become a reason to delay emergency treatment.
 **Why not A:** Waiting for culture results would greatly delay treatment.
 **Why not B:** Cultures should be obtained, not skipped, and not only if the patient fails to improve.
 **Why not C:** Cultures are ideally taken before antimicrobials, without unnecessary delay.
@@ -115,12 +115,12 @@ B. Use dynamic measures (such as response to a passive leg raise or a bolus) in 
 C. Give a fixed volume to every patient with septic shock and stop reassessing afterwards, because the volume was decided at the outset.
 D. Continue fluid until the lactate has returned to normal, whatever the patient's response to each bolus.
 **Answer: B.**
-**Why correct:** The page suggests dynamic measures over examination or static measures alone (conditional; low certainty).
+**Why correct:** SSC 2026 conditionally suggests dynamic fluid-responsiveness assessment rather than static measures or examination alone (low certainty). Examples are haemodynamic responses to passive leg raising or a fluid bolus assessed using stroke volume, its variation, pulse pressure or its variation—not a simple blood-pressure reading alone.
 **Why not A:** Blood pressure alone does not show tissue perfusion or fluid responsiveness.
 **Why not C:** The page stresses frequent reassessment to avoid under- or over-resuscitation.
 **Why not D:** The remark advises against continuing fluid simply until lactate normalises.
 
-**Q3 (prioritization).** Three patients with sepsis are on the unit. Which needs the most urgent medical review?
+**Q3 (prioritization).** Four patients with sepsis are on the unit. Which needs the most urgent medical review?
 A. A patient with a stable MAP at target, a falling lactate, a warm peripheral circulation and a rising urine output.
 B. A patient with a mild fever, normal vital signs, a normal lactate and no organ dysfunction on the early-warning score.
 C. A patient whose vasopressor requirement is rising with mottled skin and a lactate that is not falling.
@@ -142,13 +142,13 @@ D. It says that antipyretic therapy is required before giving antimicrobials, in
 **Why not C:** Antipyretics are not part of the bundle.
 **Why not D:** No such requirement is stated.
 
-**Q5 (application).** After the initial resuscitation a patient with septic shock has stable pressure and a rising weight with peripheral oedema. What does SSC 2026 suggest the team may consider?
+**Q5 (application).** Following the acute resuscitation phase, a patient with septic shock no longer needs escalating vasopressors or ongoing volume expansion but has increasing weight, peripheral oedema and positive fluid balance. What does SSC 2026 suggest the team may consider after assessing the patient's cardiorespiratory status and clinical course?
 A. Active fluid removal after the acute resuscitation phase, as a suggestion with very low certainty.
 B. Further large fluid boluses to treat the oedema, which indicates that the circulation is dry.
 C. Stopping all monitoring now that the blood pressure is stable, to allow the patient to rest.
 D. Switching to an albumin-only fluid policy for all patients, whatever their condition.
 **Answer: A.**
-**Why correct:** SSC 2026 suggests active fluid removal after acute resuscitation (conditional; very low certainty), with remarks on factors to consider.
+**Why correct:** SSC 2026 conditionally suggests considering active fluid removal only after the acute resuscitation phase (very low certainty); the team assesses cardiorespiratory function, vasopressor requirement, clinical course, oedema, weight and fluid balance. Oedema by itself does not mandate fluid removal.
 **Why not B:** Oedema and weight gain suggest overload, not a dry circulation.
 **Why not C:** Monitoring continues after the pressure is stable because the patient's condition can change.
 **Why not D:** The page suggests crystalloids alone over supplemental albumin in general, with exceptions.
