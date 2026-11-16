@@ -75,12 +75,26 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Sedation scoring, haemodynamic and respiratory monitoring follow the unit's sedation protocol.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for monitoring for early signs of significant hypotension and/or cardiovascular depression, which may be profound; adjusting the sedation level to clinical response and a daily evaluation of sedation depth are important during prolonged ICU sedation infusions.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
+    },
+    {
+     "text": "The label describes propofol infusion syndrome as a constellation of severe metabolic acidosis, hyperkalaemia, lipaemia, rhabdomyolysis, hepatomegaly, renal failure, ECG changes and/or cardiac failure, with high-dose infusions over a prolonged duration among the major risk factors (exact dose and duration thresholds are a prescribing decision, not reproduced here); the label names new or worsening metabolic acidosis during an infusion as a reason to reassess.",
+     "support": "sourced",
+     "sources": [
+      "L-PROPOFOL"
+     ]
     }
    ]
   },
@@ -168,17 +182,21 @@
  "monitoring": [
   {
    "kind": "observe",
-   "text": "Monitor heart rate and blood pressure at the unit's frequency during sedation.",
+   "text": "Monitor heart rate and blood pressure at the unit's frequency during sedation; the label calls for watching for early signs of hypotension or cardiovascular depression, which may be profound.",
    "critical": true,
-   "support": "local_protocol",
-   "sources": []
+   "support": "sourced",
+   "sources": [
+    "L-PROPOFOL"
+   ]
   },
   {
    "kind": "assess",
-   "text": "Assess sedation depth with the unit's validated tool.",
+   "text": "Assess sedation depth with the unit's validated tool; during prolonged infusions, watch for signs described in the label as propofol infusion syndrome (new or worsening metabolic acidosis, ECG changes, unexplained renal or hepatic deterioration).",
    "critical": true,
-   "support": "local_protocol",
-   "sources": []
+   "support": "partial",
+   "sources": [
+    "L-PROPOFOL"
+   ]
   },
   {
    "kind": "observe",

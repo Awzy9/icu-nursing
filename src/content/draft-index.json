@@ -2424,7 +2424,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "7325cc0140d67d45"
+   "hash": "dd2eab88429120f9"
   },
   {
    "key": "MD-07",
@@ -3334,7 +3334,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e488f870a3b49d73"
+   "hash": "9ef62f1bbc9db9e3"
   },
   {
    "key": "MD-37",
@@ -3482,9 +3482,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "a961a7f97746d1da"
+   "hash": "fd21fb9df361520a"
   },
   {
    "key": "MD-42",

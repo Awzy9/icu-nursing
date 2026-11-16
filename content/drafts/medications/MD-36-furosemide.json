@@ -63,12 +63,26 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for observing for signs and symptoms of fluid or electrolyte imbalance (hyponatraemia, hypochloraemic alkalosis, hypokalaemia, hypomagnesaemia or hypocalcaemia): dry mouth, thirst, weakness, lethargy, drowsiness, restlessness, muscle pain or cramps, muscular fatigue, hypotension, oliguria, tachycardia, arrhythmia or nausea and vomiting; serum electrolytes (particularly potassium), CO2, creatinine and BUN should be checked frequently early in therapy and periodically thereafter.",
+     "support": "sourced",
+     "sources": [
+      "L-FUROSEMIDE"
+     ]
+    },
+    {
+     "text": "The label associates ototoxicity (tinnitus, reversible or irreversible hearing impairment) with rapid injection, severe renal impairment, higher-than-recommended doses, hypoproteinaemia, or concomitant ototoxic drugs; for high-dose parenteral therapy, the label advises a controlled, rate-limited intravenous infusion rather than rapid injection (the exact rate is a prescribing and preparation decision, not reproduced here).",
+     "support": "sourced",
+     "sources": [
+      "L-FUROSEMIDE"
+     ]
     }
    ]
   },

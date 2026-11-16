@@ -5,7 +5,7 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 ## Medications (50)
 | Gap | Drafts |
 |---|---|
-| Monitoring: no statement sourced from the label | 22 |
+| Monitoring: no statement sourced from the label | 19 |
 | Escalation: no nursing-practice source | 50 |
 | Adverse effects: a single statement | 50 |
 | High-alert status not determined from a source read | 41 |
@@ -25,20 +25,20 @@ Scope: 50 medication drafts and 25 skill drafts. Everything here is an unreviewe
 
 ## Priority worklist (top 15 by score)
 1. **MD-10 Morphine** (score 7): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-2. **MD-41 Flumazenil** (score 7): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-3. **SK-18 ECG monitoring** (score 7): escalation: local protocol only; no assessment section; cites a source not read
-4. **SK-19 Defibrillator safety** (score 7): no monitoring section; no assessment section; cites a source not read
-5. **MD-06 Propofol** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-6. **MD-15 Insulin (intravenous)** (score 6): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; label older than 2026 (effective 20250307)
-7. **MD-36 Furosemide** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-8. **MD-38 Haloperidol (injection)** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-9. **MD-39 Hydromorphone** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-10. **MD-46 Tranexamic acid** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-11. **SK-07 Ventilator safety checks** (score 6): cites a source not read; device skill: manufacturer instructions are local
-12. **SK-17 CRRT circuit monitoring** (score 6): cites a source not read; no statement sourced from a source read in full; device skill: manufacturer instructions are local
-13. **SK-21 Infection prevention (standard precautions)** (score 6): no monitoring section; no assessment section; cites a source not read
-14. **MD-01 Norepinephrine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
-15. **MD-02 Epinephrine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+2. **SK-18 ECG monitoring** (score 7): escalation: local protocol only; no assessment section; cites a source not read
+3. **SK-19 Defibrillator safety** (score 7): no monitoring section; no assessment section; cites a source not read
+4. **MD-15 Insulin (intravenous)** (score 6): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; label older than 2026 (effective 20250307)
+5. **MD-38 Haloperidol (injection)** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+6. **MD-39 Hydromorphone** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+7. **MD-41 Flumazenil** (score 6): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement; high-alert status not determined from a source read (local list governs)
+8. **MD-46 Tranexamic acid** (score 6): monitoring: no statement sourced from the label; escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+9. **SK-07 Ventilator safety checks** (score 6): cites a source not read; device skill: manufacturer instructions are local
+10. **SK-17 CRRT circuit monitoring** (score 6): cites a source not read; no statement sourced from a source read in full; device skill: manufacturer instructions are local
+11. **SK-21 Infection prevention (standard precautions)** (score 6): no monitoring section; no assessment section; cites a source not read
+12. **MD-01 Norepinephrine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+13. **MD-02 Epinephrine** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+14. **MD-03 Vasopressin** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
+15. **MD-06 Propofol** (score 5): escalation: no nursing-practice source (label-derived triggers only); adverse effects: a single statement
 
 Full table: `docs/phase14/evidence_gaps.csv`.
 

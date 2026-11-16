@@ -63,12 +63,19 @@
    ]
   },
   "monitoring": {
-   "support": "local_protocol",
+   "support": "partial",
    "items": [
     {
      "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
      "support": "local_protocol",
      "sources": []
+    },
+    {
+     "text": "The label calls for monitoring for resedation, respiratory depression or other residual benzodiazepine effects for an appropriate period after flumazenil administration, up to 120 minutes depending on the dose and duration of effect of the benzodiazepine given.",
+     "support": "sourced",
+     "sources": [
+      "L-FLUMAZENIL"
+     ]
     }
    ]
   },
@@ -158,9 +165,9 @@
   },
   {
    "kind": "observe",
-   "text": "Watch for seizure activity and for return of sedation.",
+   "text": "Watch for seizure activity and for return of sedation for up to 120 minutes after administration, depending on dose and the benzodiazepine's duration of effect.",
    "critical": true,
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "L-FLUMAZENIL"
    ]
@@ -192,7 +199,6 @@
   }
  ],
  "gaps": [
-  "Duration of action compared with the benzodiazepine and re-sedation guidance: not included.",
   "The label read is a distributor listing.",
   "Dosing, preparation and administration details: deliberately not included.",
   "No clinical practice guideline or nursing source was read for this entry."
