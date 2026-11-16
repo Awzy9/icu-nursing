@@ -124,4 +124,4 @@ Priority 1 (broader content-section integration beyond what already exists) and 
 
 ## 8. This report's own commit
 
-This file is committed on top of `251ec7d` (the last code change, batch 5). Its own commit hash and CI results are appended immediately below once pushed and verified, per the owner's instruction to record exact commit hashes and CI results.
+This file was committed as `143c46941b5bcaccd5848869314ca56b6ea8b131` on top of `251ec7d` (the last code change, batch 5). Verified on that exact commit: `CI` run #111 — success. `Isolated Supabase live tests` run #80 — success. Both workflows are green on the same final commit, per the owner's standing instruction.
