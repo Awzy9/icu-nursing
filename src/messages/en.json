@@ -1112,6 +1112,6 @@
       "unavailable": "The tutor is temporarily unavailable.",
       "invalid": "That question isn't valid."
     },
-    "demoNotice": "Demonstration mode: this searches only the sample content visitors can see, and usage limits are tracked for this browser session only."
+    "demoNotice": "Demonstration mode: this searches only the sample content visitors can see; usage limits apply across this demo deployment as a whole, not per visitor."
   }
 }

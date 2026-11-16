@@ -79,13 +79,23 @@ These are not interchangeable, and nothing in this session's work collapses the 
 
 ## 8. Exact commit hashes and CI status, this stretch
 
+**Correction to an earlier version of this document:** this section previously marked commits `f54e6ef` and `532ab19` as "in progress — confirm before relying on this," which was the honest state at the time of writing, but a follow-up CI run on `532ab19` (CI run #131) **genuinely failed** — not the known Supabase-CLI rate-limit flake. This was diagnosed from the actual GitHub Actions job logs and the uploaded `e2e-results` artifact (not assumed), the root cause was fixed, and the fix is recorded below. Nothing in §2-§5 above relied on "Tested" status for `f54e6ef`/`532ab19` beyond what their own local test runs (498 unit, 330 DB, 161 e2e, all genuinely run and reported at the time) already supported; this correction concerns CI confirmation specifically, not local test evidence.
+
+**What CI #131 actually found:** adding the "AI nursing assistant" link to the primary desktop navigation (`src/components/layout/site-header.tsx`, as part of the Phase 5 batch) pushed the header's 10 nav items past the available width at the 1280px desktop test viewport in GitHub's CI environment (font-metric differences between environments meant this did not reproduce locally at first, despite genuine attempts to reproduce it with the same viewport and both colour schemes). This caused `document.documentElement.scrollWidth` to exceed the viewport on every page sharing the header — roughly 20 distinct e2e test failures across `cases.spec.ts`, `medications.spec.ts`, `platform.spec.ts`, `public.spec.ts`, `question-bank.spec.ts`, `skills.spec.ts` and `study.spec.ts`, all the same root cause, confirmed by reading each failure's `error-context.md` from the CI artifact.
+
+**Fix:** made the header nav row wrap (`flex-wrap`) instead of forcing a single line, so it structurally cannot overflow the viewport regardless of exact font metrics — verified locally by artificially lengthening every nav label and confirming the page still reports 0 overflow.
+
+**A second, independent, genuine bug was found in the same CI run and fixed in the same pass:** 4 of the new `tests/e2e/tutor.spec.ts` tests failed, but only on the `mobile` Playwright project (which runs after `desktop` and `tablet` in the same CI job, sharing one long-lived dev server process). The failure was "Too many questions. Please wait a moment." — the demo-mode tutor rate limit (`src/lib/tutor/index.ts`) being exhausted by earlier projects' own test traffic. Root cause: in demonstration mode there is no reliable per-visitor identity (Next.js refuses to set a cookie from a plain Server Component render, so `getActorKey()` falls back to a shared `"anonymous"` key for any demo visitor who has not separately started some other fixture session first), so the cap was effectively shared across the whole demo deployment, not per-browser-session as the UI copy claimed. Fixed by raising the demo-mode caps substantially (there is no real cost at stake in mock mode) and correcting the UI copy (`Tutor.demoNotice` in both `src/messages/en.json` and `src/messages/ar.json`) and `docs/PHASE5_AI_TUTOR.md` to describe this honestly instead of claiming an isolation the mechanism could not actually provide.
+
 | Commit | Scope | CI | Isolated Supabase |
 |---|---|---|---|
-| `c8a3372` | Checklist update (Workstream 2 stopping point) | #129 success | confirm separately |
-| `f54e6ef` | Phase 5: AI tutor, mock mode | #130 **in progress at time of writing — confirm before relying on this** | confirm separately |
-| `532ab19` | Phase 6: Lighthouse + favicon fix | #131 **in progress at time of writing — confirm before relying on this** | confirm separately |
+| `c8a3372` | Checklist update (Workstream 2 stopping point) | #129 success | #101 success (independently verified by the product owner) |
+| `f54e6ef` | Phase 5: AI tutor, mock mode | #130 success | superseded by `532ab19`'s own run (concurrency group) |
+| `532ab19` | Phase 6: Lighthouse + favicon fix | #131 **failure — genuine, diagnosed and fixed; see above** | #101-equivalent — confirm on the fix commit below |
+| `632fa19` | Master roadmap status report | #132 — confirm | confirm |
+| *(fix commit, pushed after this report)* | Nav overflow fix + demo-mode tutor rate-limit fix + UI copy correction | **confirm before relying on this** | **confirm before relying on this** |
 
-**Do not treat `f54e6ef` or `532ab19` as verified until a follow-up confirms both workflows show `success` on `532ab19` specifically** (it is the newer commit and supersedes `f54e6ef`'s own run in the `isolated-supabase.yml` concurrency group, per the pattern documented throughout `docs/phase15/CHECKLIST.md`). If either fails for a real reason (not the known Supabase-CLI rate-limit flake), that failure must be diagnosed from logs and fixed before this document's §2-§5 claims about "Tested" are relied upon for these two commits specifically — the local test runs reported throughout this document (498 unit, 330 DB, 161 e2e) are the actual evidence and were all genuinely run, but CI is the second, independent confirmation this project's own discipline requires before calling a batch done.
+**This document will not claim the nav-overflow/tutor-rate-limit fix is verified until a specific follow-up confirms both `ci.yml` and `isolated-supabase.yml` show `success` on that fix commit's own SHA.**
 
 ## 9. Prioritized release-blocker list
 

@@ -13,9 +13,17 @@ export * from "./types";
 
 const MAX_HITS = 6;
 
-/** In demonstration mode there is no real account/database, so quota is tracked per-browser-session in process memory only (best-effort, same caveat as rateLimit itself). */
+/**
+ * In demonstration mode there is no account and no Server Action write path from this page (Next.js refuses to
+ * set a cookie from a plain Server Component render), so there is no reliable per-visitor identity here:
+ * `getActorKey()` falls back to the literal string "anonymous" for every demo visitor who has not separately
+ * started a question-bank/case fixture session first. This cap is therefore, honestly, a shared guard against a
+ * runaway loop across this demo deployment as a whole, not a per-browser-session quota - there is no paid service
+ * behind it and nothing costs money in demo mode, so it is set generously rather than pretending to an isolation
+ * this mechanism cannot actually provide.
+ */
 function demoUsageOk(actorKey: string): boolean {
-  return rateLimit(`tutor-demo-day:${actorKey}`, 60, 24 * 60 * 60_000) && rateLimit(`tutor-demo-hour:${actorKey}`, 20, 60 * 60_000);
+  return rateLimit(`tutor-demo-day:${actorKey}`, 600, 24 * 60 * 60_000) && rateLimit(`tutor-demo-hour:${actorKey}`, 200, 60 * 60_000);
 }
 
 /**
