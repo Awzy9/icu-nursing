@@ -33,7 +33,7 @@ MD-38,medication,"Haloperidol (injection)",3,7,2,4,"","high-alert status not det
 MD-39,medication,"Hydromorphone",3,9,2,4,"","high-alert status not determined from a source read (local list governs) | US label only: no other regulator read"
 MD-46,medication,"Tranexamic acid",3,9,2,4,"","high-alert status not determined from a source read (local list governs) | US label only: no other regulator read"
 SK-02,skill,"Central venous catheter care",3,6,9,3,"N-INS-STANDARDS","cites a source not read | device skill: manufacturer instructions are local"
-SK-05,skill,"Tracheostomy care",3,13,6,2,"S-AARC-TRACH;N-ICS-TRANSFER-2026","cites a source not read"
+SK-05,skill,"Tracheostomy care",3,14,6,2,"S-AARC-TRACH;N-ICS-TRANSFER-2026","cites a source not read"
 SK-21,skill,"Infection prevention (standard precautions)",3,4,6,3,"S-WHO-HH-2009;S-CDC-ISOLATION-2007","cites a source not read"
 SK-23,skill,"Sedation assessment",3,0,5,3,"S-SCCM-PADIS","assessment: local protocol only | no statement sourced from a source read in full"
 MD-04,medication,"Dobutamine",2,8,2,4,"","adverse effects: a single statement | high-alert status not determined from a source read (local list governs) | US label only: no other regulator read"

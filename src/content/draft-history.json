@@ -1236,6 +1236,21 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "47f19c3d3c22703d",
+    "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ACI-TRACH",
+     "N-ICS-TRANSFER-2026",
+     "N-NCBI-OPENRN-TRACH",
+     "N-NHSGGC-TRACH-2022",
+     "S-AARC-TRACH"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-06": [

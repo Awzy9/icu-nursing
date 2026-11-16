@@ -19,8 +19,8 @@
   },
   {
    "id": "S-AARC-TRACH",
-   "read": "not_read",
-   "use": "AARC CPG on tracheostomy (2021): cite-only, not read"
+   "read": "full",
+   "use": "AARC CPG (Mussa et al, 2021): the panel's three PICO-question recommendations (tracheostomy bundles, multidisciplinary tracheostomy teams, protocol-directed weaning/decannulation) read in full text; the full literature-review tables and individual cited studies were not read"
   },
   {
    "id": "N-NCBI-OPENRN-TRACH",
@@ -116,6 +116,13 @@
      "support": "sourced",
      "sources": [
       "N-NHSGGC-TRACH-2022"
+     ]
+    },
+    {
+     "text": "An AARC clinical practice guideline panel found evidence supporting three system-level approaches to adult tracheostomy care in the acute care setting: using a tracheostomy bundle that a team of subject-matter experts has evaluated and endorsed; adding a multidisciplinary tracheostomy team to the management strategy; and following a protocol to guide weaning and removal of the tracheostomy tube. These are organisational and team-based recommendations, not a specific bundle, team composition or weaning protocol; the unit's own protocol and team structure govern.",
+     "support": "sourced",
+     "sources": [
+      "S-AARC-TRACH"
      ]
     }
    ]
@@ -336,9 +343,9 @@
  ],
  "gaps": [
   "The guideline is one NHS board's document, past its review date (November 2024); numerical values (cleaning interval, cuff range, suction duration and vacuum) are marked partial and unit policy governs.",
-  "The NTSP algorithms themselves, which the guideline reproduces with permission, were not read from the NTSP; the AARC 2021 CPG, the NSW ACI guide and the Open RN chapters were not accessible.",
-  "Decannulation, speaking valves, cuff deflation, tube changes and paediatric care: not drafted (sections not read).",
-  "Open RN via NCBI and the eCampusOntario open textbook returned browser-verification or HTTP 403 and were not read; no workaround was attempted."
+  "The NTSP algorithms themselves, which the guideline reproduces with permission, were not read from the NTSP; the AARC 2021 CPG's three system-level recommendations were read, but its full literature-review tables and individual cited studies were not; the NSW ACI guide and the Open RN chapters remain genuinely inaccessible (HTTP 403 and a reCAPTCHA bot-check page respectively, confirmed again on retry) and were not read.",
+  "Decannulation procedure, speaking valves, cuff deflation and tube-change technique, and paediatric care: not drafted (step-by-step procedure sections not read; the AARC CPG recommends protocol-directed weaning/decannulation exists but does not itself give the steps).",
+  "Open RN via NCBI and the eCampusOntario open textbook returned browser-verification or HTTP 403 and were not read; a workaround (direct retrieval) was attempted and still failed."
  ],
  "permissions": [
   "NHSGGC guideline: no reuse statement on the file; NTSP resources are reproduced there with permission that does not extend to others; paraphrase only.",
@@ -359,12 +366,12 @@
   },
   {
    "id": "S-AARC-TRACH",
-   "title": "CPG: Management of Adult Patients With Tracheostomy in the Acute Care Setting",
+   "title": "AARC Clinical Practice Guideline: Management of Adult Patients with Tracheostomy in the Acute Care Setting (Mussa C, Gomaa D, Rowley DD, Schmidt U, Ginier E, Strickland SL, 2021)",
    "publisher": "AARC",
-   "version": "2021 (index)",
-   "url": "https://www.aarc.org/resource/clinical-practice-guidelines/",
-   "accessed": "2026-11-14",
-   "read": "not_read",
+   "version": "2021",
+   "url": "https://www.aarc.org/wp-content/uploads/2025/03/mussa-et-al-2020-aarc-clinical-practice-guideline-management-of-adult-patients-with-tracheostomy-in-the-acute-care.pdf",
+   "accessed": "2026-11-16",
+   "read": "full",
    "licence_class": "RED (unverified)",
    "permission_required": "Verify"
   },
