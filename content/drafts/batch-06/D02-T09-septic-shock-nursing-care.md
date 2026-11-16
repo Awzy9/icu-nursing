@@ -8,8 +8,8 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read", "ESICM Task Force: Consensus on circulatory shock and hemodynamic monitoring (Intensive Care Med 2014;40:1795-1815; CC BY-NC) – a 2014 consensus, dated"]
-sources: [S-SSC-2026, S-ESICM-SHOCK-2014]
+guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract/comparison table examined; full text not read)", "ESICM 2014 consensus (historical)"]
+sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014]
 sources_not_read: [S-AHA-2025, S-OPENRN-ADV]
 independently_written_note: "Original wording. Statements from SSC 2026 come from the official SCCM recommendation page with the strength and certainty printed there; the full publication, evidence tables and any remarks not on the page were NOT read, and SSC 2026 is written for adults in the health system generally, not specifically for nurses. The 2014 ESICM consensus was read in full text and is dated. This draft complements, and does not repeat, the sepsis (D06-T01), shock recognition (D02-T08) and vasopressor monitoring (D02-T12) drafts. Fluid volumes, drug choices, doses and titration targets are prescriber decisions: the SSC page's weight-based volume figure is deliberately not quoted here because the platform bars unreviewed dosing figures. The local sepsis pathway, time targets and roles are set by the organisation."
 ---
@@ -68,6 +68,8 @@ Blood pressure and MAP; heart rate and rhythm; respiratory rate and oxygen satur
 | Source control | Early, ideally within 6 hours | Conditional; very low | Help arrange imaging, transfers |
 | Sodium bicarbonate | Suggest against for haemodynamics in lactic acidaemia; suggest using in severe acidaemia with acute kidney injury | Conditional; low and very low | Prescriber decision |
 | After resuscitation | Suggest active fluid removal after the acute phase | Conditional; very low | Observe fluid balance |
+
+**Updated ESICM 2025 general-shock monitoring (only abstract and comparison table examined):** Monitor capillary refill serially, supplemented by skin temperature and mottling. In persistent shock, assess fluid responsiveness before further fluids and use dynamic rather than static indicators where applicable. Keep these general-shock monitoring statements distinct from the SSC 2026 septic-shock treatment recommendations. Full ESICM 2025 text was not read.
 
 ## 10. Warning signs and red flags
 Rising vasopressor requirement; MAP persistently below target; rising or non-clearing lactate; cold, mottled skin or prolonged capillary refill; falling urine output; new confusion; worsening oxygenation; new arrhythmia; signs of fluid overload after boluses; a source that has not been addressed; a delay in antimicrobials or cultures; a patient with sepsis awaiting an ICU bed.
@@ -164,12 +166,14 @@ D. Choosing the antimicrobial agent and deciding whether to add corticosteroids.
 
 ## 18. References
 - Prescott H, Antonelli M, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Official SCCM recommendations page, recommendation-level statements (accessed 2026-11-14). https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . Full publication: Crit Care Med 2026 (not read).
+- Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971–2012. doi:10.1007/s00134-025-08137-z. https://pubmed.ncbi.nlm.nih.gov/41236566/ (abstract and 2014/2025 comparison inspected 2026-11-16; full text NOT read; cite-only).
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (CC BY-NC; accessed 2026-11-14)
 
 ## 19. Local protocol note
 The local sepsis pathway, time targets, roles, documentation, line and fluid policies, vasopressor protocols and escalation criteria follow your organisation's policies.
 
 ## 20. Evidence, applicability and open questions
+- ESICM shock evidence update (2026-11-16): updated 2025 general-shock guidance supersedes the 2014 consensus. Only the abstract and 2014/2025 comparison were inspected, not all 50 graded statements or supporting evidence. The 2014 material below remains historical. This limited AI-assisted check is not clinical approval.
 - Source quality: SSC 2026 is a major international guideline, but only its recommendation page was read; most statements are conditional with low or very low certainty. ESICM 2014 is dated. Neither is a nursing practice guideline.
 - Population: adults; paediatric sepsis, pregnancy and other settings were not covered.
 - Not covered: nursing care details for lines and infusions, mechanical ventilation in sepsis, renal replacement, nutrition, glucose control, end-of-life decisions, family communication, local bundles.

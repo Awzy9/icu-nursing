@@ -8,8 +8,8 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – section 17 'Peripheral arterial catheters and pressure monitoring devices' (dated; partly superseded for other catheter topics)", "Surviving Sepsis Campaign 2021 (Intensive Care Med 2021;47:1181-1247) – arterial catheter rationale; SUPERSEDED by SSC 2026", "Surviving Sepsis Campaign 2026 – official SCCM recommendation page, recommendation-level text read (full publication not read)", "ESICM Consensus on circulatory shock and hemodynamic monitoring 2014 (statement 17)", "ERC/ESICM Guidelines 2025 Post-Resuscitation Care – arterial line for all post-arrest patients"]
-sources: [S-CDC-BSI-2011, S-SSC-2021, S-SSC-2026, S-ESICM-SHOCK-2014, S-ERC-PRC-2025]
+guideline_versions: ["CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – section 17 'Peripheral arterial catheters and pressure monitoring devices' (dated; partly superseded for other catheter topics)", "Surviving Sepsis Campaign 2021 (Intensive Care Med 2021;47:1181-1247) – arterial catheter rationale; SUPERSEDED by SSC 2026", "Surviving Sepsis Campaign 2026 – official SCCM recommendation page, recommendation-level text read (full publication not read)", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract and 2014/2025 comparison table examined only; not full text)", "ESICM 2014 consensus (historical)", "ERC/ESICM Guidelines 2025 Post-Resuscitation Care – arterial line for all post-arrest patients"]
+sources: [S-CDC-BSI-2011, S-SSC-2021, S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ERC-PRC-2025]
 independently_written_note: "Original wording. The CDC 2011 PDF, the SSC 2021 full text, the ESICM 2014 consensus and the ERC–ESICM 2025 post-resuscitation guideline were read in full text. None of them teaches transducer zeroing, levelling, dynamic response (square-wave) testing, waveform damping or blood-sampling technique: those technical steps follow the manufacturer's instructions and local policy and are flagged below as not evidence-based in the sources read. Commercial use of ERC text needs an ERC agreement; paraphrase only."
 ---
 # Arterial line monitoring and maintenance
@@ -67,6 +67,8 @@ Arterial pressure (systolic, diastolic, mean) and waveform; heart rate; limb col
 | Fluids | No dextrose-containing solutions or parenteral nutrition through the circuit | CDC 2011 IA | Never use as an infusion route |
 | Complications | Limb ischaemia and bleeding below 1% for radial; haematoma most common; femoral has higher infection risk | SSC 2021 rationale | Know the risks |
 Not covered by any source read: zeroing, levelling, waveform damping, transducer response tests, blood-sampling procedure, accidental injection management, flush pressure and rate, alarm limits.
+
+**Updated ESICM 2025 general-shock guidance (only abstract and 2014/2025 comparison table examined):** In shock not responding to initial treatment and/or requiring vasopressors, arterial pressure monitoring via arterial catheter is an ungraded good-practice statement. This does not imply all septic-shock patients invariably need one: the separate SSC 2026 recommendation and criteria above address that population. The 2025 full publication was not read. Technical catheter maintenance requires local/manufacturer instructions.
 
 ## 10. Warning signs and red flags
 Blood visible at a connection or on the bed; line disconnected or tubing separated; sudden loss or marked damping of waveform; pressure that does not match the patient; cold, pale, blue, mottled, painful or numb limb; swelling or expanding haematoma; fever or redness at site; wrong-route injection; alarm silenced; line pulled.
@@ -164,6 +166,7 @@ D. Reporting a damped or lost waveform and an implausible reading.
 ## 18. References
 - CDC/HICPAC. Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (last update October 2017), recommendation set 17. https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-14)
 - Evans L, Rhodes A, Alhazzani W, et al. Surviving Sepsis Campaign 2021. Intensive Care Med. 2021;47:1181-1247. https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
+- Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971–2012. doi:10.1007/s00134-025-08137-z. https://pubmed.ncbi.nlm.nih.gov/41236566/ (abstract and 2014/2025 comparison inspected 2026-11-16; full text NOT read; cite-only).
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
 - Nolan JP, Sandroni C, Cariou A, et al. ERC and ESICM Guidelines 2025 Post-Resuscitation Care. Resuscitation. 2025;215:110809. https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf (accessed 2026-11-14)
 
@@ -171,6 +174,7 @@ D. Reporting a damped or lost waveform and an implausible reading.
 Frequency of checks, transducer set-up and levelling, flush solution and pressure, sampling technique, alarm limits and line-removal rules follow manufacturer instructions and local policy.
 
 ## 20. Evidence, applicability and open questions
+- ESICM shock evidence update (2026-11-16): updated 2025 general-shock guidance supersedes the 2014 consensus. Only the abstract and 2014/2025 comparison were inspected, not all 50 graded statements or supporting evidence. The 2014 material below remains historical. This limited AI-assisted check is not clinical approval.
 - Source quality: infection-prevention content rests on the CDC 2011 guideline (dated; Category II items have limited evidence); clinical indications on ESICM 2014 (dated), SSC 2021 (superseded; the 2026 recommendation-level text was checked, the full 2026 publication was not read) and ERC–ESICM 2025 (current). No guideline read covers technical monitoring steps.
 - Applicability: US and European sources; practice differs by country (insertion sites, transducer intervals).
 - Not covered: pulmonary artery catheters, cardiac output monitoring, sampling technique, arterial pressure waveform analysis, paediatric catheters.

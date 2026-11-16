@@ -107,7 +107,7 @@ B. Severe hyperkalaemia, because every value above 6.0 mmol/L is classed in the 
 C. Moderate hyperkalaemia, because the 6.0–6.4 band is the guideline's moderate category.
 D. Normal, because the guideline's threshold for calling a serum potassium level hyperkalaemia is a value above 6.5 mmol/L.
 **Answer: C.**
-**Why correct:** The guideline defines hyperkalaemia as above 5.5 mmol/L and classes 6.0–6.4 as moderate.
+**Why correct:** The UKKA defines hyperkalaemia starting at 5.5 mmol/L (inclusive) and classifies 6.0–6.4 mmol/L as moderate.
 **Why not A:** The mild band is 5.5–5.9.
 **Why not B:** Severe starts at 6.5 mmol/L or more.
 **Why not D:** The threshold for hyperkalaemia is 5.5, not 6.5.
@@ -176,7 +176,7 @@ Local protocols govern potassium thresholds, monitoring levels, who may give whi
 
 ## 20. Evidence, applicability and open questions
 - Source quality: the UKKA guideline is a national clinical practice guideline (GRADE-style 1A–2C grading), updated July 2026, with extensive rationale. The website notes that the evidence for IV calcium is poor (ILCOR 2025 found no evidence for or against) and that recommendation grades were adjusted accordingly. It is a UK guideline for adults.
-- Internal inconsistency: threshold for 12-lead ECG (6.5 versus 6.0 mmol/L) differs between pages of the same website.
+- Confirmed discrepancy checked 2026-11-16: the UKKA detailed Guideline 14.1 recommends urgent 12-lead ECG at K⁺ ≥ 6.0 mmol/L (1B), while its online hospital summary prints ≥ 6.5 mmol/L for the same Guideline 14.1. Detailed Guideline 14.2 separately recommends continuous monitoring at K⁺ ≥ 6.5 mmol/L, with ECG features, or at 6.0–6.4 mmol/L when clinically unwell or rapid increase expected (1C). These are separate decisions and must not be conflated; local-policy review is necessary. Detailed https://guidelines.ukkidney.org/hyperkalaemia/11-1-ii-hyperkalaemia-in-hospital/11-1-2-ii-hyperkalaemia-in-hospital-14-1-14-2/ ; summary https://guidelines.ukkidney.org/hyperkalaemia/6-summary-of-clinical-practice-guideline-for-hyperkalaemia/6-2-section-ii-hospital/.
 - Limits: HYPOKALAEMIA management, potassium replacement protocols (only error and safeguard data were added in Phase 3), paediatric hyperkalaemia and chronic hyperkalaemia in the community were not drawn on for nursing content; the Open RN chapter is a general textbook only. ISMP lists concentrated potassium chloride injection as a high-alert drug (see D05-T16) but supplies no safeguards.
 - Not covered: appendices' drug dosing tables (omitted), laboratory procedures, dietary advice details.
 - Open questions for reviewers (NEPH, CCP, PH, NE, BN): local potassium thresholds for monitoring; hypokalaemia and replacement content; the 12-lead ECG threshold; the nurse's role in glucose monitoring protocols.

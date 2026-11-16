@@ -8,8 +8,8 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read; septic shock only", "ESICM Task Force: Consensus on circulatory shock and hemodynamic monitoring (Intensive Care Med 2014;40:1795-1815; CC BY-NC) – a 2014 consensus, dated", "ISMP List of High-Alert Medications in Acute Care Settings, 2024 (classification only)", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US"]
-sources: [S-SSC-2026, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026]
+guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read; septic shock only", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract/comparison table examined; full text not read)", "ESICM 2014 consensus (historical)", "ISMP List of High-Alert Medications in Acute Care Settings, 2024 (classification only)", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US"]
+sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026]
 sources_not_read: [S-AHA-2025]
 independently_written_note: "Original wording. SSC 2026 statements come from the official SCCM recommendation page (strength and certainty as printed there); the full publication, evidence tables and the context of each remark were NOT read, and SSC 2026 addresses adults with sepsis and septic shock, not other causes of shock. The 2014 ESICM consensus was read in full text and is dated. ISMP and FDA pages cover medication and pump safety, not vasoactive monitoring. No dose, concentration, titration range or rate is given: these are prescriber and pharmacist decisions. Batch 7 added the Open RN Nursing Pharmacology grids (US textbook): they say to monitor the IV site for extravasation with epinephrine and to monitor limb colour and temperature with dopamine, but give no extravasation management, line selection or nursing titration protocol; those points remain unresolved and are left to local policy. No non-US or non-sepsis guideline was read."
 ---
@@ -66,6 +66,8 @@ Blood pressure and MAP against target; heart rate and rhythm; skin perfusion and
 | Monitoring of BP | Either invasive or non-invasive; invasive advised in the situations in section 6 | Conditional; very low | Understand why an arterial line is requested |
 | Lactate and capillary refill | Serial lactate to guide resuscitation; capillary refill as adjunct | Conditional; low | Trend over time |
 | Dynamic fluid assessment | Suggest dynamic measures over examination or static measures alone | Conditional; low | Helps decide on further fluids |
+
+**Updated ESICM 2025 general-shock monitoring (only abstract and comparison table examined):** The guideline describes arterial catheter monitoring in shock not responding to initial treatment and/or requiring vasopressors; monitoring cardiac output or stroke volume in nonresponders; and echocardiography as first-line imaging to classify shock. This does not authorize vasopressor dose, rate, peripheral-infusion or titration instructions. Full ESICM 2025 text was not read; SSC 2026 statements above are septic-shock specific.
 
 ## 10. Warning signs and red flags
 MAP below the ordered target despite increasing doses; rising dose requirement or a second or third agent added; new arrhythmia or heart-rate change; cold, mottled or blue fingers or toes; rising lactate or falling urine output; new confusion; chest pain; sudden fall in pressure after a bag, syringe or pump change; pump alarm, occlusion or suspected disconnection; swelling, pain, blanching, discolouration or leakage at the infusion site (unresolved – see above); infusion approaching empty with no replacement ready.
@@ -163,6 +165,7 @@ D. Reporting a sudden fall in pressure after a bag change to the prescriber with
 
 ## 18. References
 - Prescott H, Antonelli M, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Official SCCM recommendations page, recommendation-level statements (accessed 2026-11-14). https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . Full publication: Crit Care Med 2026 (not read).
+- Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971–2012. doi:10.1007/s00134-025-08137-z. https://pubmed.ncbi.nlm.nih.gov/41236566/ (abstract and 2014/2025 comparison inspected 2026-11-16; full text NOT read; cite-only).
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (CC BY-NC; accessed 2026-11-14)
 - ISMP. ISMP List of High-Alert Medications in Acute Care Settings (2024). https://www.ismp.org/system/files/resources/2024-01/ISMP_HighAlert_AcuteCare_List_010924_MS5760.pdf (accessed 2026-11-14)
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians (content current as of 2018-02-02). https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
@@ -171,6 +174,7 @@ D. Reporting a sudden fall in pressure after a bag change to the prescriber with
 MAP targets, titration protocols, who may titrate, line and site selection, maximum peripheral duration, extravasation management, double-check policy, monitoring intervals and escalation thresholds follow your hospital's policies.
 
 ## 20. Evidence, applicability and open questions
+- ESICM shock evidence update (2026-11-16): updated 2025 general-shock guidance supersedes the 2014 consensus. Only the abstract and 2014/2025 comparison were inspected, not all 50 graded statements or supporting evidence. The 2014 material below remains historical. This limited AI-assisted check is not clinical approval.
 - Source quality: SSC 2026 is a major international guideline, but only its recommendation page was read, and mostly low or very low certainty. ESICM 2014 is a dated expert consensus read in full. ISMP and FDA are medication- and device-safety resources, not vasoactive monitoring guidelines.
 - Population: SSC 2026 statements apply to adults with sepsis or septic shock; cardiogenic, haemorrhagic, neurogenic and other shock were not covered.
 - Not covered and unresolved: infusion-site checks and extravasation care, line compatibility, nursing titration protocols, weaning of vasoactive drugs, drug-specific adverse effects, doses, paediatric practice.
