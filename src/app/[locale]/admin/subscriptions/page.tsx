@@ -3,6 +3,7 @@ import { AdminForm } from "@/components/admin/admin-form";
 import { Callout } from "@/components/ui/feedback";
 import { Field, Input, Select } from "@/components/ui/form";
 import { requireStaff } from "@/lib/auth";
+import { cleanQuery } from "@/lib/search";
 import { createClient } from "@/lib/supabase/server";
 import { setSubscriptionAction } from "../actions";
 
@@ -10,12 +11,13 @@ export const dynamic = "force-dynamic";
 interface Row { user_id: string; email: string; plan: string; status: string; period_end: string; cancel_at_period_end: boolean; provider: string }
 
 /** Administrator view of subscriptions. Mock records only: the database refuses every change unless mock payments are switched on for a development database. */
-export default async function SubscriptionsAdmin({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string }> }) {
-  const { locale } = await params; const { q } = await searchParams;
+export default async function SubscriptionsAdmin({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
+  const { locale } = await params; const sp = await searchParams;
+  const q = cleanQuery(Array.isArray(sp.q) ? sp.q[0] : sp.q);
   setRequestLocale(locale);
   await requireStaff(locale, ["admin"]);
   const db = (await createClient())!;
-  const { data, error } = await db.rpc("adm_sub_list", { p_query: q ?? null });
+  const { data, error } = await db.rpc("adm_sub_list", { p_query: q || null });
   const rows = (error ? [] : (data as Row[])) ?? [];
   return (
     <div className="space-y-6">

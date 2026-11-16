@@ -4,13 +4,14 @@ import { Field, Input, Select } from "@/components/ui/form";
 import { TopicList } from "@/components/content/topic-list";
 import { Link } from "@/i18n/navigation";
 import { getContentRepository, LEVELS, type Level } from "@/lib/content";
+import { cleanQuery } from "@/lib/search";
 
 export default async function LibraryPage({
   params,
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ q?: string; domain?: string; level?: string }>;
+  searchParams: Promise<{ q?: string | string[]; domain?: string | string[]; level?: string | string[] }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -19,9 +20,12 @@ export default async function LibraryPage({
   const repo = await getContentRepository();
   const domains = await repo.listDomains(locale);
 
-  const q = (sp.q ?? "").slice(0, 100);
-  const domainSlug = domains.some((d) => d.slug === sp.domain) ? sp.domain : undefined;
-  const level = (LEVELS as readonly string[]).includes(sp.level ?? "") ? (sp.level as Level) : undefined;
+  const single = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
+  const q = cleanQuery(single(sp.q));
+  const domainParam = single(sp.domain);
+  const levelParam = single(sp.level);
+  const domainSlug = domains.some((d) => d.slug === domainParam) ? domainParam : undefined;
+  const level = (LEVELS as readonly string[]).includes(levelParam ?? "") ? (levelParam as Level) : undefined;
   const topics = await repo.listTopics({ locale, q, domainSlug, level });
   const titles = Object.fromEntries(domains.map((d) => [d.slug, d.title]));
   const active = Boolean(q || domainSlug || level);

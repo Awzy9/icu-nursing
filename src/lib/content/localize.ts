@@ -16,7 +16,7 @@ export function usedFallback(value: LocalizedText | null | undefined, locale: st
 }
 
 export function matchesQuery(haystack: string[], q: string | undefined): boolean {
-  const needle = (q ?? "").trim().toLocaleLowerCase();
+  const needle = (typeof q === "string" ? q : "").trim().toLocaleLowerCase();
   if (!needle) return true;
   return haystack.some((h) => h.toLocaleLowerCase().includes(needle));
 }
