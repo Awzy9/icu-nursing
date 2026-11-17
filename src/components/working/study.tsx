@@ -1,8 +1,63 @@
 "use client";
+import { useState } from "react";
 import { AccountLearningStatus } from "./account-status";
+import { RevisionSession } from "./revision";
+import { useLearning } from "./progress";
 import { Link } from "@/i18n/navigation";
-import { useAttempts } from "./progress";
-export function WorkingStudy({locale}:{locale:string}) {
- const attempts=useAttempts(),ar=locale==="ar",mistakes=attempts.filter(a=>!a.correct),sets=[...new Map(mistakes.map(a=>[a.href,a])).values()];
- return <div className="mx-auto max-w-4xl space-y-8"><header className="space-y-3"><p className="text-sm font-semibold text-primary">{ar?"خطوتك التالية":"YOUR NEXT STEP"}</p><h1 className="text-3xl font-bold">{ar?"راجع وثبّت معرفتك":"Review and strengthen your knowledge"}</h1><p className="text-muted-foreground">{ar?"تظهر إجاباتك هنا. راجع المواضيع التي تحتاج إلى تثبيتها.":"Your practice answers appear here. Revisit the topics you need to strengthen."}</p></header><AccountLearningStatus locale={locale}/><dl className="grid grid-cols-3 gap-3">{[[ar?"تمت الإجابة":"Answered",attempts.length],[ar?"صحيحة":"Correct",attempts.filter(a=>a.correct).length],[ar?"للمراجعة":"To review",mistakes.length]].map(([label,n])=><div key={label} className="rounded-2xl border border-border bg-card p-5"><dt className="text-sm text-muted-foreground">{label}</dt><dd className="mt-2 text-3xl font-bold">{n}</dd></div>)}</dl>{sets.length?<section className="space-y-4"><h2 className="text-xl font-semibold">{ar?"تدرّب على هذه المواضيع مرة أخرى":"Practise these topics again"}</h2>{sets.map(s=><Link key={s.href} href={s.href} className="flex items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5 hover:border-primary"><span lang="en" dir="ltr">{s.title}</span><span className="shrink-0 text-primary">{ar?"إعادة المحاولة ←":"Try again →"}</span></Link>)}</section>:<section className="rounded-2xl border border-border bg-card p-8 space-y-4"><h2 className="text-xl font-semibold">{attempts.length?(ar?"أحسنت، لا أخطاء للمراجعة":"You’re up to date"):(ar?"ابدأ بخطوة صغيرة":"Start with a short practice session")}</h2><p className="text-muted-foreground">{ar?"اختر مجموعة أسئلة، وحدد إجابتك ثم تحقق منها. ستجد هنا المواضيع التي تحتاج إلى مراجعتها.":"Choose a question set, select your answers, and check them. Topics you need to revisit will appear here."}</p><Link href="/question-bank" className="inline-flex min-h-12 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">{ar?"ابدأ التدريب":"Start practising"}</Link></section>}</div>;
+import { computeRevisionQueue, type RevisionQuestion, type RevisionStatus } from "@/lib/working/revision";
+
+function formatDue(ms: number, locale: string) {
+  return new Intl.DateTimeFormat(locale, { dateStyle: "medium" }).format(new Date(ms));
+}
+
+const SESSION_SIZE = 20;
+
+export function WorkingStudy({ locale, questions }: { locale: string; questions: RevisionQuestion[] }) {
+  const { attempts } = useLearning();
+  const ar = locale === "ar";
+  const queue = computeRevisionQueue(questions, attempts);
+  const [session, setSession] = useState<RevisionStatus[] | null>(null);
+  const moduleCount = new Set(queue.due.map((s) => s.question.moduleKey)).size;
+  const sessionSize = Math.min(SESSION_SIZE, queue.due.length);
+
+  if (session) return <RevisionSession items={session} locale={locale} onFinish={() => setSession(null)} />;
+
+  return (
+    <div className="mx-auto max-w-4xl space-y-8">
+      <header className="space-y-3">
+        <p className="text-sm font-semibold text-primary">{ar ? "خطوتك التالية" : "YOUR NEXT STEP"}</p>
+        <h1 className="text-3xl font-bold">{ar ? "راجع وثبّت معرفتك" : "Review and strengthen your knowledge"}</h1>
+        <p className="text-muted-foreground">{ar ? "تُجدوَل الأسئلة تلقائياً للمراجعة: الأسئلة الجديدة والمخطئ فيها تظهر فوراً، والأسئلة الصحيحة تعود للمراجعة لاحقاً حسب جدول ثابت وواضح." : "Questions are scheduled for you automatically: new or missed questions come due right away; ones you got right come due again later, on a fixed, transparent schedule."}</p>
+      </header>
+      <AccountLearningStatus locale={locale} />
+      <dl className="grid grid-cols-3 gap-3">
+        {([[ar ? "تمت الإجابة" : "Answered", queue.totalAttempted], [ar ? "صحيحة" : "Correct", attempts.filter((a) => a.correct).length], [ar ? "مستحقة الآن" : "Due now", queue.due.length]] as const).map(([label, n]) => (
+          <div key={label} className="rounded-2xl border border-border bg-card p-5"><dt className="text-sm text-muted-foreground">{label}</dt><dd className="mt-2 text-3xl font-bold">{n}</dd></div>
+        ))}
+      </dl>
+      {queue.due.length ? (
+        <section className="space-y-4 rounded-2xl border-2 border-primary bg-card p-6">
+          <h2 className="text-xl font-semibold">{ar ? `${queue.due.length} سؤال مستحق الآن عبر ${moduleCount} موضوع` : `${queue.due.length} question${queue.due.length === 1 ? "" : "s"} due now across ${moduleCount} topic${moduleCount === 1 ? "" : "s"}`}</h2>
+          <p className="text-sm text-muted-foreground">
+            {sessionSize < queue.due.length
+              ? (ar ? `ستراجع أول ${sessionSize} سؤالاً (الأكثر استحقاقاً)، وتبقى البقية للجلسة التالية. اختر إجابتك ثم تحقق منها.` : `You'll go through the ${sessionSize} most-overdue questions now; the rest will wait for your next session. Choose your answer, then check it.`)
+              : (ar ? "ستراجع كل سؤال على حدة: اختر إجابتك ثم تحقق منها." : "You'll go through each question on its own: choose your answer, then check it.")}
+          </p>
+          <button onClick={() => setSession(queue.due.slice(0, sessionSize))} className="inline-flex min-h-12 items-center rounded-xl bg-primary px-6 font-semibold text-primary-foreground">{ar ? "ابدأ جلسة المراجعة" : "Start revision session"}</button>
+        </section>
+      ) : (
+        <section className="rounded-2xl border border-border bg-card p-8 space-y-4">
+          <h2 className="text-xl font-semibold">{queue.totalAttempted ? (ar ? "أحسنت، لا شيء مستحق الآن" : "You're up to date") : (ar ? "ابدأ بخطوة صغيرة" : "Start with a short practice session")}</h2>
+          <p className="text-muted-foreground">
+            {queue.totalAttempted
+              ? queue.nextDueAt
+                ? (ar ? `موعد المراجعة التالية: ${formatDue(queue.nextDueAt, locale)}.` : `Your next question comes due on ${formatDue(queue.nextDueAt, locale)}.`)
+                : (ar ? "لقد أجبت عن كل الأسئلة المتاحة." : "You've answered every available question.")
+              : (ar ? "اختر وحدة أسئلة، وحدد إجابتك ثم تحقق منها. ستظهر هنا الأسئلة التي تحتاج لمراجعتها." : "Answer a few questions anywhere in the library. The ones you need to revisit will appear here.")}
+          </p>
+          {queue.totalAttempted ? null : <Link href="/question-bank" className="inline-flex min-h-12 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">{ar ? "ابدأ التدريب" : "Start practising"}</Link>}
+        </section>
+      )}
+    </div>
+  );
 }

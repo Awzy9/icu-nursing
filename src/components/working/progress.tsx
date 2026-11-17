@@ -2,9 +2,12 @@
 import { createContext,useCallback,useContext,useEffect,useState,useSyncExternalStore,type ReactNode } from "react";
 import { saveLearningAnswer,setLearningBookmark,setLearningComplete,refreshLearning } from "@/app/[locale]/learning/actions";
 import { emptyLearning,type Attempt,type LearningState,type SavedModule } from "@/lib/working/activity-types";
+import { nextBox } from "@/lib/question-bank/leitner";
 export type { Attempt } from "@/lib/working/activity-types";
 const guestKey="icu-nursing-learning-v1",event="icu-learning-change";
-export function recordAttempt(attempt:Attempt){try{const data:Record<string,Attempt>=JSON.parse(localStorage.getItem(guestKey)??"{}");data[attempt.id]=attempt;localStorage.setItem(guestKey,JSON.stringify(data));window.dispatchEvent(new Event(event));}catch{/* Guest learning can continue without storage. */}}
+// Same deterministic Leitner schedule as the signed-in path (public.working_record_attempt): the box moves
+// from whatever this question's previous box was, read from the guest's own local history.
+export function recordAttempt(attempt:Attempt){try{const data:Record<string,Attempt>=JSON.parse(localStorage.getItem(guestKey)??"{}");const box=nextBox(data[attempt.id]?.box??1,attempt.correct);data[attempt.id]={...attempt,box};localStorage.setItem(guestKey,JSON.stringify(data));window.dispatchEvent(new Event(event));}catch{/* Guest learning can continue without storage. */}}
 function subscribe(callback:()=>void){window.addEventListener("storage",callback);window.addEventListener(event,callback);return()=>{window.removeEventListener("storage",callback);window.removeEventListener(event,callback);};}
 function snapshot(){try{return localStorage.getItem(guestKey)??"{}";}catch{return "{}";}}
 function useGuestAttempts(){const raw=useSyncExternalStore(subscribe,snapshot,()=>"{}");try{return Object.values(JSON.parse(raw)) as Attempt[];}catch{return [];}}
@@ -15,9 +18,12 @@ export function LearningProvider({accountId,initial=emptyLearning,loadError,chil
  const pendingKey=accountId?`icu-learning-pending:${accountId}`:null;
  useEffect(()=>{if(!pendingKey)return;try{setPending(JSON.parse(localStorage.getItem(pendingKey)??"[]"));}catch{setPending([]);}},[pendingKey]);
  const persist=useCallback((values:Attempt[])=>{if(!pendingKey)return;try{localStorage.setItem(pendingKey,JSON.stringify(values));}catch{/* Error remains visible until a retry succeeds. */}},[pendingKey]);
- async function send(a:Attempt){
-   if(!accountId){recordAttempt(a);return;}
-   if(a.choice===undefined){setError("This older browser result cannot be synced. Answer the question again.");return;}
+ async function send(rawA:Attempt){
+   if(!accountId){recordAttempt(rawA);return;}
+   if(rawA.choice===undefined){setError("This older browser result cannot be synced. Answer the question again.");return;}
+   // Mirrors the server's deterministic box update (public.working_record_attempt) so the due queue
+   // reflects this answer immediately, without waiting for a refresh.
+   const a:Attempt={...rawA,box:nextBox(state.attempts.find(x=>x.id===rawA.id)?.box??1,rawA.correct)};
    setBusy(true);
    try{
     const result=await saveLearningAnswer({id:a.id,moduleKey:a.href.split("/").pop(),choice:a.choice,at:a.at});

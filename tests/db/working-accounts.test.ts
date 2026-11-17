@@ -17,8 +17,18 @@ describe("working learning ownership",()=>{
   await asUser({id:a},"select public.working_record_attempt('QB-D06-T01-1','QB-D06-T01',3::smallint,true,now()-interval '1 hour')");
   await asUser({id:a},"select public.working_record_attempt('QB-D06-T01-1','QB-D06-T01',0::smallint,false,now()-interval '2 hours')");
   const rows=(await asUser({id:a},"select * from public.working_attempts")).rows;
-  expect(rows).toHaveLength(1);expect(rows[0].correct).toBe(true);expect(rows[0].choice).toBe(3);
+  expect(rows).toHaveLength(1);expect(rows[0].correct).toBe(true);expect(rows[0].choice).toBe(3);expect(rows[0].box).toBe(2);
   expect((await asUser({id:b},"select * from public.working_attempts")).rows).toHaveLength(0);
+ });
+ it("moves a question up the Leitner schedule on a correct answer and back to box 1 on a mistake",async()=>{
+  const u=await createUser(uniqueEmail("working-box"));
+  const box=async()=>(await asUser({id:u},"select box from public.working_attempts where question_id='QB-D01-T03-1'")).rows[0]?.box;
+  await asUser({id:u},"select public.working_record_attempt('QB-D01-T03-1','QB-D01-T03',1::smallint,true,now())");
+  expect(await box()).toBe(2);
+  await asUser({id:u},"select public.working_record_attempt('QB-D01-T03-1','QB-D01-T03',2::smallint,true,now()+interval '1 second')");
+  expect(await box()).toBe(3);
+  await asUser({id:u},"select public.working_record_attempt('QB-D01-T03-1','QB-D01-T03',0::smallint,false,now()+interval '2 seconds')");
+  expect(await box()).toBe(1);
  });
  it("owns completion status and cascades deletion",async()=>{
   const u=await createUser(uniqueEmail("working-delete"));
