@@ -1,0 +1,30 @@
+name: Learning experience
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: learning-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  learning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test --config playwright.working.config.ts
+        env: { CI: "true" }
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: learning-experience-results
+          path: test-results
+          if-no-files-found: ignore

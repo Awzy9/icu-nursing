@@ -8,7 +8,7 @@ test("choose an answer before feedback and see mistakes in revision",async({page
  await page.getByRole("radio").first().check();
  await expect(page.getByText("Correct choice:",{exact:false})).toHaveCount(0);
  await check.click();
- await expect(page.getByRole("status")).toContainText("Correct choice: D");
+ await expect(page.getByRole("main").getByRole("status")).toContainText("Correct choice: D");
  if (!(await page.getByRole("link",{name:"Study",exact:true}).isVisible())) await page.getByRole("button",{name:"Menu",exact:true}).click();
  await page.getByRole("link",{name:"Study",exact:true}).click();
  await expect(page.getByRole("link",{name:/Recognising possible sepsis/})).toBeVisible();
@@ -19,7 +19,7 @@ test("scenario advances after a confirmed decision",async({page})=>{
  await expect(page.getByText("Decision feedback",{exact:true})).toHaveCount(0);
  await page.getByRole("radio").first().check();
  await page.getByRole("button",{name:"Confirm decision",exact:true}).click();
- await expect(page.getByRole("status")).toContainText("Decision feedback");
+ await expect(page.getByRole("main").getByRole("status")).toContainText("Decision feedback");
  await page.getByRole("button",{name:"Continue",exact:true}).click();
  await expect(page.getByText("Step 2 / 3",{exact:true})).toBeVisible();
 });
@@ -38,7 +38,7 @@ test("practice exercise hides explanations until submitted",async({page})=>{
  await page.goto("/en/working/PX-04");
  const check=page.getByRole("button",{name:"Check my work",exact:true});
  await expect(check).toBeDisabled();
- await expect(page.getByRole("status")).toHaveCount(0);
+ await expect(page.getByRole("main").getByRole("status")).toHaveCount(0);
  await page.getByRole("radio").first().check();await check.click();
- await expect(page.getByRole("status")).toBeVisible();
+ await expect(page.getByRole("main").getByRole("status")).toBeVisible();
 });
