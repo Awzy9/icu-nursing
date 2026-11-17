@@ -21,3 +21,5 @@ mobile/dist-ios/
 
 # Generated read-only working edition, bundled server-side during build
 content/working-catalog.json
+
+.next-working/

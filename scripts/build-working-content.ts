@@ -1,9 +1,9 @@
 /** Build the owner's explicitly enabled, read-only working edition. Never changes approval flags or database content. */
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-export interface WorkingEntry { key: string; type: string; title: string; category: string; body: string; questionCount: number }
+import { parseQuestions, type WorkingEntry } from "../src/lib/working/model";
 const label = (s: string) => s.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-const omitted = new Set(["support", "read", "points", "next", "id", "key", "critical", "original_graphic", "alt_text_needed"]);
+const omitted = new Set(["support", "read", "points", "next", "id", "key", "critical", "position", "original_graphic", "alt_text_needed"]);
 function prose(value: unknown, depth = 3): string {
   if (value == null) return "";
   if (typeof value === "string" || typeof value === "number") return String(value);
@@ -11,7 +11,7 @@ function prose(value: unknown, depth = 3): string {
   if (Array.isArray(value)) return value.map((v) => typeof v === "object" && v !== null ? `\n${prose(v, depth)}\n` : `- ${prose(v, depth)}`).join("\n");
   const obj = value as Record<string, unknown>;
   if (typeof obj.text === "string") return [obj.text, ...Object.entries(obj).filter(([k]) => k !== "text" && !omitted.has(k)).map(([k, v]) => `**${label(k)}:** ${prose(v, depth)}`)].join("\n\n");
-  return Object.entries(obj).filter(([k]) => !omitted.has(k)).map(([k, v]) => `${"#".repeat(Math.min(depth, 5))} ${label(k)}\n\n${prose(v, depth + 1)}`).join("\n\n");
+  return Object.entries(obj).filter(([k]) => !omitted.has(k)).map(([k, v]) => k === "items" ? prose(v, depth) : `${"#".repeat(Math.min(depth, 5))} ${label(k)}\n\n${prose(v, depth + 1)}`).join("\n\n");
 }
 export function buildWorkingContent(root = "."): WorkingEntry[] {
   const base = path.join(root, "content", "drafts");
@@ -44,6 +44,19 @@ export function buildWorkingContent(root = "."): WorkingEntry[] {
     for (const f of readdirSync(path.join(base, dir)).filter((f) => /^(SK|MD|SC|EQ|PX)-\d+.*\.json$/.test(f)).sort()) {
       const d = JSON.parse(readFileSync(path.join(base, dir, f), "utf8"));
       out.push({ key: d.skill_id ?? d.med_id ?? d.scenario_id ?? d.equipment_id ?? d.practice_id, type: dir === "scenarios" ? "cases" : dir, title: d.title ?? d.name, category: d.category ?? d.domain ?? d.area ?? dir, body: keys.filter((k) => d[k] != null).map((k) => `## ${label(k)}\n\n${prose(d[k])}`).join("\n\n"), questionCount: 0 });
+    }
+  }
+  for (const entry of out) {
+    if (entry.type === "topics" || entry.type === "questions") entry.questions = parseQuestions(entry.body, entry.key);
+    if (entry.type === "cases" || entry.type === "skills" || entry.type === "practice") {
+      const dir = entry.type === "cases" ? "scenarios" : entry.type === "skills" ? "skills" : "practice";
+      const file = readdirSync(path.join(base, dir)).find(f => f.startsWith(entry.key + "-") || f === entry.key + ".json");
+      if (file) {
+        const d = JSON.parse(readFileSync(path.join(base, dir, file), "utf8"));
+        if (entry.type === "cases") entry.scenario = { setting: d.setting, objectives: d.learning_objectives, steps: d.steps.map((step: Record<string, unknown>) => ({position:step.position,info:step.info,prompt:step.prompt,observations:step.observations,options:step.options})), takeaways: d.debrief.learning_points ?? [] };
+        if (entry.type === "practice") entry.practice = {kind:d.kind,setup:d.setup,prompt:d.prompt ?? d.stem,categories:d.categories,items:d.items ?? d.skills?.map((id:string)=>({id,text:out.find(e=>e.key===id)?.title ?? id})),lines:d.lines,options:d.options,steps:d.steps};
+        if (entry.type === "skills") entry.checklist = d.checklist?.map((item: unknown) => typeof item === "string" ? item : (item as {text:string}).text).filter(Boolean);
+      }
     }
   }
   if (new Set(out.map((e) => e.key)).size !== out.length) throw new Error("Duplicate working content key");

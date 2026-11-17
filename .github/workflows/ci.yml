@@ -53,6 +53,9 @@ jobs:
       - name: End-to-end and accessibility tests
         run: npx playwright test --reporter=line,json
         env: { CI: "true", PLAYWRIGHT_JSON_OUTPUT_NAME: pw-results.json }
+      - name: Working edition learning experience
+        run: npx playwright test --config playwright.working.config.ts
+        env: { CI: "true" }
       - name: Summarise end-to-end failures
         if: failure()
         run: |

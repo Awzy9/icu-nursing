@@ -1,7 +1,8 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-export interface WorkingEntry { key: string; type: string; title: string; category: string; body: string; questionCount: number }
+import type { WorkingEntry } from "./model";
+export type { WorkingEntry } from "./model";
 export const workingEditionEnabled = () => process.env.CONTENT_EDITION === "working";
 let catalog: WorkingEntry[] | undefined;
 export function workingContent(): WorkingEntry[] {
