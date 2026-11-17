@@ -1,3 +1,5 @@
+import { workingEditionEnabled, workingQuery } from "@/lib/working";
+import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Badge, Callout } from "@/components/ui/feedback";
 import { Button } from "@/components/ui/button";
@@ -20,6 +22,7 @@ export default async function SkillsPage({ params, searchParams }: { params: Pro
   const { locale } = await params;
   const sp = await searchParams;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} type="skills" />;
   const t = await getTranslations("Skills");
   const mode = resolveMode();
   if (mode === "disabled") {

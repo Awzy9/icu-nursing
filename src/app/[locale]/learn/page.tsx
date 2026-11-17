@@ -1,3 +1,5 @@
+import { workingEditionEnabled, workingQuery } from "@/lib/working";
+import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, BookOpen, ClipboardCheck, ClipboardList, Layers, ListChecks, Pill, Cpu, Search, Workflow } from "lucide-react";
 import { Callout } from "@/components/ui/feedback";
@@ -26,9 +28,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 /** One page that joins the four learning areas: what to do next, what is unfinished, and progress at a glance. */
-export default async function LearnPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function LearnPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} />;
   const t = await getTranslations("Learn");
   const ts = await getTranslations("Skills");
   const tp = await getTranslations("Practice");

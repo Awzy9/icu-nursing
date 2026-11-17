@@ -1,3 +1,5 @@
+import { workingEditionEnabled, workingQuery } from "@/lib/working";
+import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Badge, Callout, ProgressBar } from "@/components/ui/feedback";
 import { Button } from "@/components/ui/button";
@@ -18,9 +20,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("title"), robots: { index: false, follow: false } };
 }
 
-export default async function QuestionBankPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function QuestionBankPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} type="questions" />;
   const t = await getTranslations("QuestionBank");
   const mode = resolveMode();
   if (mode === "disabled") {

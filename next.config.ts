@@ -7,6 +7,7 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  outputFileTracingIncludes: { "/*": ["./content/working-catalog.json"] },
   poweredByHeader: false,
   distDir: process.env.NEXT_DIST_DIR || ".next",
   experimental: { serverActions: { bodySizeLimit: "3mb" } },

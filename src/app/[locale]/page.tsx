@@ -1,3 +1,5 @@
+import { workingEditionEnabled, workingQuery } from "@/lib/working";
+import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, BookOpenCheck, Globe2, ScrollText, ShieldCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -5,9 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Callout } from "@/components/ui/feedback";
 import { getContentRepository } from "@/lib/content";
 
-export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function HomePage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} />;
   const t = await getTranslations("Home");
   const lib = await getTranslations("Library");
   const repo = await getContentRepository();

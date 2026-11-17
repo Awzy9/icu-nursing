@@ -1,3 +1,5 @@
+import { workingEditionEnabled, workingQuery } from "@/lib/working";
+import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Badge, Callout } from "@/components/ui/feedback";
 import { requireUser } from "@/lib/auth";
@@ -16,9 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("title"), robots: { index: false, follow: false } };
 }
 
-export default async function CasesPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function CasesPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} type="cases" />;
   const t = await getTranslations("Cases");
   const mode = resolveMode();
   if (mode === "disabled") {

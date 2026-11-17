@@ -43,7 +43,9 @@
     "live:smtp": "tsx scripts/live/configure-smtp.ts",
     "live:captcha": "tsx scripts/live/configure-captcha.ts",
     "seed:question-fixtures": "tsx scripts/seed-synthetic-questions.ts",
-    "test:e2e:qb": "playwright test tests/e2e/question-bank.spec.ts"
+    "test:e2e:qb": "playwright test tests/e2e/question-bank.spec.ts",
+    "prebuild": "node --import tsx scripts/build-working-content.ts",
+    "build:working-content": "node --import tsx scripts/build-working-content.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
