@@ -7,7 +7,9 @@ import { ScenarioPlayer } from "./scenario";
 import type { WorkingEntry } from "@/lib/working/model";
 export function ModuleReader({entry,locale}:{entry:WorkingEntry;locale:string}) {
  const ar=locale==="ar", [tab,setTab]=useState(entry.type==="questions"?"quiz":entry.scenario?"scenario":entry.practice?"practice":"read"),[active,setActive]=useState(0),[checks,setChecks]=useState<string[]>([]);
- const pieces=entry.body.split(/^## /m),sections=pieces.map((text,i)=>({title:i===0?"Overview":text.split("\n")[0]!.replace(/^\d+[.]\s*/,""),body:i===0?text:text.slice(text.indexOf("\n")+1)})).filter(s=>s.body.trim()&&!/^17[.]?\s*MCQs|^MCQs/i.test(s.title));
+ // pieces[0] is whatever precedes the first "## " heading - for topics, the H1 title and draft banner already shown in the page header; for other
+ // content types it is always empty. Drop it rather than show it as a synthetic, duplicate "Overview" section ahead of the real one.
+ const pieces=entry.body.split(/^## /m),sections=pieces.slice(1).map((text)=>({title:text.split("\n")[0]!.replace(/^\d+[.]\s*/,""),body:text.slice(text.indexOf("\n")+1)})).filter(s=>s.body.trim()&&!/^17[.]?\s*MCQs|^MCQs/i.test(s.title));
  const referenceSections=sections.filter(s=>/reference|source|gap|permission|limitation/i.test(s.title)),lessons=sections.filter(s=>!referenceSections.includes(s));
  const tabs=[...(entry.practice?[{id:"practice",label:ar?"التدريب":"Exercise"}]:[]),...(!entry.scenario&&!entry.practice&&entry.type!=="questions"?[{id:"read",label:ar?"الدرس":"Lesson"}]:[]),...(entry.scenario?[{id:"scenario",label:ar?"السيناريو":"Scenario"}]:[]),...(entry.checklist?.length?[{id:"checklist",label:ar?"قائمة الممارسة":"Practice checklist"}]:[]),...(entry.questions?.length?[{id:"quiz",label:ar?"اختبر نفسك":"Test yourself"}]:[]),...(referenceSections.length?[{id:"references",label:ar?"المراجع والحدود":"Sources & limitations"}]:[])];
  const section=lessons[Math.min(active,Math.max(0,lessons.length-1))];
