@@ -1,3 +1,4 @@
+import { ModuleSave } from "@/components/working/module-save";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -10,5 +11,5 @@ const sections: Record<string,string> = { topics:"library", questions:"question-
 export default async function WorkingModule({params}:{params:Promise<{locale:string;key:string}>}) {
   const {locale,key}=await params; setRequestLocale(locale);
   const entry=workingEntry(key); if(!entry) notFound();
-  return <article className="mx-auto max-w-6xl space-y-6"><Link href={`/${sections[entry.type] ?? "learn"}`}>← {workingLabels[entry.type]?.[locale === "ar" ? 1 : 0]}</Link><header><h1 lang="en" dir="ltr" className="mt-2 text-3xl font-bold">{entry.title}</h1></header><WorkingNotice locale={locale}/><ModuleReader entry={entry} locale={locale}/></article>;
+  return <article className="mx-auto max-w-6xl space-y-6"><Link href={`/${sections[entry.type] ?? "learn"}`}>← {workingLabels[entry.type]?.[locale === "ar" ? 1 : 0]}</Link><header><h1 lang="en" dir="ltr" className="mt-2 text-3xl font-bold">{entry.title}</h1></header><WorkingNotice locale={locale}/><ModuleSave module={{key:entry.key,title:entry.title,type:entry.type,href:`/working/${entry.key}`}} locale={locale}/><ModuleReader entry={entry} locale={locale}/></article>;
 }

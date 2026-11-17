@@ -1,3 +1,4 @@
+import { LearningAccountBoundary } from "@/components/working/account-boundary";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
@@ -30,7 +31,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const bare = (await headers()).get("x-bare-page") === "1";
   if (bare) return (
     <html lang={locale} dir={isRtl(locale) ? "rtl" : "ltr"}>
-      <body className="p-3"><NextIntlClientProvider><main id="main" tabIndex={-1}>{children}</main></NextIntlClientProvider></body>
+      <body className="p-3"><NextIntlClientProvider><main id="main" tabIndex={-1}><LearningAccountBoundary>{children}</LearningAccountBoundary></main></NextIntlClientProvider></body>
     </html>
   );
   return (
@@ -42,7 +43,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
           </a>
           <SiteHeader />
           <SiteBanners locale={locale} />
-          <main id="main" className="container flex-1 py-8" tabIndex={-1}>{children}</main>
+          <main id="main" className="container flex-1 py-8" tabIndex={-1}><LearningAccountBoundary>{children}</LearningAccountBoundary></main>
           <SiteFooter />
         </NextIntlClientProvider>
       </body>

@@ -20,6 +20,7 @@ export async function SiteHeader() {
   const working = workingEditionEnabled();
   let primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/learn", label: t("learn") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }, { href: "/skills", label: t("skills") }, { href: "/practice", label: t("practice") }, { href: "/equipment", label: t("equipment") }, { href: "/medications", label: t("medications") }];
   if (working) primary = [{href:"/learn",label:t("learn")},{href:"/question-bank",label:t("questionBank")},{href:"/study",label:t("study")}];
+  if (user && working) primary.push({href:"/dashboard",label:t("dashboard")});
   if (user && !working) primary.push({ href: "/dashboard", label: t("dashboard") }, { href: "/bookmarks", label: t("bookmarks") });
   if (isStaff) primary.push({ href: "/admin", label: t("admin") });
   const future: NavLink[] = FUTURE_FEATURES.map((f) => ({ href: `/coming-soon/${f}`, label: t(f), soon: true }));

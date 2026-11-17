@@ -1,0 +1,46 @@
+"use client";
+import { createContext,useCallback,useContext,useEffect,useState,useSyncExternalStore,type ReactNode } from "react";
+import { saveLearningAnswer,setLearningBookmark,setLearningComplete,refreshLearning } from "@/app/[locale]/learning/actions";
+import { emptyLearning,type Attempt,type LearningState,type SavedModule } from "@/lib/working/activity-types";
+export type { Attempt } from "@/lib/working/activity-types";
+const guestKey="icu-nursing-learning-v1",event="icu-learning-change";
+export function recordAttempt(attempt:Attempt){try{const data:Record<string,Attempt>=JSON.parse(localStorage.getItem(guestKey)??"{}");data[attempt.id]=attempt;localStorage.setItem(guestKey,JSON.stringify(data));window.dispatchEvent(new Event(event));}catch{/* Guest learning can continue without storage. */}}
+function subscribe(callback:()=>void){window.addEventListener("storage",callback);window.addEventListener(event,callback);return()=>{window.removeEventListener("storage",callback);window.removeEventListener(event,callback);};}
+function snapshot(){try{return localStorage.getItem(guestKey)??"{}";}catch{return "{}";}}
+function useGuestAttempts(){const raw=useSyncExternalStore(subscribe,snapshot,()=>"{}");try{return Object.values(JSON.parse(raw)) as Attempt[];}catch{return [];}}
+interface LearningContextValue extends LearningState {accountId:string|null;error:string|null;busy:boolean;saveAnswer:(a:Attempt)=>void;bookmark:(module:SavedModule,saved:boolean)=>void;complete:(module:SavedModule,completed:boolean)=>void;retry:()=>void;refresh:()=>void;pending:number}
+const Context=createContext<LearningContextValue|null>(null);
+export function LearningProvider({accountId,initial=emptyLearning,loadError,children}:{accountId:string|null;initial?:LearningState;loadError?:string;children:ReactNode}){
+ const [state,setState]=useState(initial),[error,setError]=useState<string|null>(loadError??null),[busy,setBusy]=useState(false),[pending,setPending]=useState<Attempt[]>([]);
+ const pendingKey=accountId?`icu-learning-pending:${accountId}`:null;
+ useEffect(()=>{if(!pendingKey)return;try{setPending(JSON.parse(localStorage.getItem(pendingKey)??"[]"));}catch{setPending([]);}},[pendingKey]);
+ const persist=useCallback((values:Attempt[])=>{if(!pendingKey)return;try{localStorage.setItem(pendingKey,JSON.stringify(values));}catch{/* Error remains visible until a retry succeeds. */}},[pendingKey]);
+ async function send(a:Attempt){
+   if(!accountId){recordAttempt(a);return;}
+   if(a.choice===undefined){setError("This older browser result cannot be synced. Answer the question again.");return;}
+   setBusy(true);
+   try{
+    const result=await saveLearningAnswer({id:a.id,moduleKey:a.href.split("/").pop(),choice:a.choice,at:a.at});
+    if(!result.ok){setError(result.error);setPending(p=>{const n=p.some(x=>x.id===a.id&&x.at>a.at)?p:[...p.filter(x=>x.id!==a.id),a];persist(n);return n;});return;}
+    setState(s=>s.attempts.some(x=>x.id===a.id&&x.at>a.at)?s:({...s,attempts:[...s.attempts.filter(x=>x.id!==a.id),a]}));
+    setPending(p=>{const n=p.filter(x=>x.id!==a.id||x.at>a.at);persist(n);return n;});setError(null);
+   }catch{setError("Could not save your answer. Retry when you are online.");setPending(p=>{const n=p.some(x=>x.id===a.id&&x.at>a.at)?p:[...p.filter(x=>x.id!==a.id),a];persist(n);return n;});}finally{setBusy(false);}
+ }
+ async function bookmark(module:SavedModule,saved:boolean){
+   if(!accountId){setError("Sign in to save bookmarks to your account.");return;}
+   setBusy(true);try{const r=await setLearningBookmark(module.key,saved);if(!r.ok){setError(r.error);return;}setState(s=>({...s,bookmarks:saved?[...s.bookmarks.filter(x=>x.key!==module.key),module]:s.bookmarks.filter(x=>x.key!==module.key)}));setError(null);}catch{setError("Could not update the bookmark. Please retry.");}finally{setBusy(false);}
+ }
+ async function complete(module:SavedModule,completed:boolean){
+   if(!accountId){setError("Sign in to save completed modules to your account.");return;}
+   setBusy(true);try{const r=await setLearningComplete(module.key,completed);if(!r.ok){setError(r.error);return;}setState(s=>({...s,lessons:[...s.lessons.filter(x=>x.key!==module.key),{...module,completed,at:Date.now()}]}));setError(null);}catch{setError("Could not save module progress. Please retry.");}finally{setBusy(false);}
+ }
+ async function refresh(){if(!accountId)return;setBusy(true);try{const r=await refreshLearning();if(r.ok){setState(r.state);setError(null);}else setError(r.error);}catch{setError("Could not refresh your progress. Please retry.");}finally{setBusy(false);}}
+ async function retry(){for(const a of pending)await send(a);await refresh();}
+ const guest=useGuestAttempts();
+ return <Context.Provider value={{...state,attempts:accountId?state.attempts:guest,accountId,error,busy,pending:pending.length,saveAnswer:a=>void send(a),bookmark:(m,s)=>void bookmark(m,s),complete:(m,c)=>void complete(m,c),retry:()=>void retry(),refresh:()=>void refresh()}}>{children}</Context.Provider>;
+}
+export function useLearning(){
+ const ctx=useContext(Context),guest=useGuestAttempts();
+ return ctx??{...emptyLearning,attempts:guest,accountId:null,error:null,busy:false,pending:0,saveAnswer:recordAttempt,bookmark:()=>{},complete:()=>{},retry:()=>{},refresh:()=>{}};
+}
+export function useAttempts(){return useLearning().attempts;}

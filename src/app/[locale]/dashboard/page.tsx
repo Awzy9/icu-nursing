@@ -1,3 +1,5 @@
+import { workingEditionEnabled } from "@/lib/working";
+import { LearningDashboard } from "@/components/working/dashboard";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Callout, ProgressBar } from "@/components/ui/feedback";
 import { Button } from "@/components/ui/button";
@@ -14,6 +16,7 @@ interface Progress { topic_id: string; status: "in_progress" | "completed"; last
 export default async function DashboardPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <LearningDashboard locale={locale}/>;
   const t = await getTranslations("Dashboard");
   if (isDemoMode()) return <Callout tone="warning">{t("demoUnavailable")}</Callout>;
 
