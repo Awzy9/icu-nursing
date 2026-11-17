@@ -5,7 +5,7 @@ beforeAll(setupDb);
 afterAll(closePool);
 
 /**
- * Security review (Phase 6): every public function the API exposes to signed-in users is SECURITY DEFINER. This suite enumerates
+ * Security review (Phase 6): workflow functions use SECURITY DEFINER; working_record_attempt uses SECURITY INVOKER and owner RLS. This suite enumerates
  * them from the catalogue (so a new function cannot be added without being exercised here) and proves, for each one:
  *   1. it pins search_path;
  *   2. it refuses a request whose JWT has no subject (an "authenticated" token that is not a user);
@@ -29,11 +29,12 @@ const call = (f: Fn) => {
 };
 
 describe("all functions exposed to signed-in users", () => {
-  it("are all SECURITY DEFINER with a pinned search_path (48+ at the time of writing)", async () => {
+  it("pin search_path and use the expected privilege mode for each exposed function", async () => {
     const fns = await exposed();
     expect(fns.length).toBeGreaterThanOrEqual(48);
     for (const f of fns) {
-      expect(f.prosecdef, f.proname).toBe(true);
+      // This learner-owned helper must never acquire owner privileges; its table RLS is tested separately.
+      expect(f.prosecdef, f.proname).toBe(f.proname !== "working_record_attempt");
       expect((f.proconfig ?? []).some((c) => c.startsWith("search_path=")), `${f.proname} search_path`).toBe(true);
     }
   });

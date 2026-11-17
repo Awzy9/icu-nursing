@@ -19,7 +19,7 @@ describe("API exposure allowlist", () => {
       "record_topic_view", "restore_topic", "rollback_topic", "set_required_roles", "set_topic_completion", "sk_complete_session", "sk_discard_session", "sk_get", "sk_get_session", "sk_list", "sk_mark", "sk_progress", "sk_set_bookmark", "sk_start_session", "st_history", "st_overview", "st_start_revision", "start_revision",
       "sub_cancel", "sub_get_my", "sub_mock_advance", "sub_mock_subscribe", "sub_resume", "submit_for_review",
       "tutor_record_query", "tutor_usage_remaining",
-      "validate_topic_for_review", "withdraw_submission",
+      "validate_topic_for_review", "withdraw_submission", "working_record_attempt",
     ]);
   });
 
