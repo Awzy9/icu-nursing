@@ -27,6 +27,15 @@ describe("working edition", () => {
     expect(anaphylaxis.steps[0]!.options[0]!.text).toMatch(/give IM adrenaline immediately/i);
     expect(anaphylaxis.steps[1]!.info).toMatch(/under the emergency protocol/i);
   });
+  it("preserves high-alert medication safety and post-treatment monitoring in the working edition", () => {
+    const entries = buildWorkingContent();
+    const body = (key: string) => entries.find((entry) => entry.key === key)!.body;
+    expect(body("MD-19")).toContain("Never administer potassium chloride by IV push");
+    expect(body("MD-20")).toContain("cannot be substituted volume for volume");
+    expect(body("MD-15")).toContain("every 30 minutes for two hours and hourly through hour six");
+    expect(body("SC-11")).toContain("every 30 minutes for the first two hours");
+    expect(body("SK-18")).toContain("start CPR when indicated while the team verifies the ECG signal");
+  });
   it("renders text safely and keeps answers behind a disclosure", () => {
     const {container} = render(<WorkingBody body={'# Example\n<script>alert(1)</script>\n**Q1 (test)**\n- A\n**Answer: A**\nRationale'} />);
     expect(container.querySelector("script")).toBeNull();

@@ -929,7 +929,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "91214d8ee8fdb5f8"
+   "hash": "c156d38bb7e0e688"
   },
   {
    "key": "D04-T08",
@@ -2091,6 +2091,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-BLS-ADULT-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -2099,7 +2104,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "fa201a69a332958c"
+   "hash": "32e1172913d631dc"
   },
   {
    "key": "SK-19",
@@ -2814,7 +2819,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d22fb293309a1a14"
+   "hash": "6fb1a4a1edf53ce1"
   },
   {
    "key": "MD-16",
@@ -2936,6 +2941,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "L-POTASSIUM-CONC",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2954,7 +2964,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ce33a13974d29510"
+   "hash": "3fce67ba8486ab4a"
   },
   {
    "key": "MD-20",
@@ -2971,6 +2981,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "N-UKKA-HK-2026-07",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2989,7 +3004,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a0d04fa49ba43f74"
+   "hash": "779b1f431fa002c3"
   },
   {
    "key": "MD-21",
@@ -4424,7 +4439,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "43b36cf405649d27"
+   "hash": "6c52749b735999d9"
   },
   {
    "key": "SC-12",

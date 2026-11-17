@@ -28,11 +28,16 @@
    "id": "S-AACN-ALARM-2018",
    "read": "not_read",
    "use": "AACN alarm alert summary"
+  },
+  {
+   "id": "S-AHA-BLS-ADULT-2025",
+   "read": "partial",
+   "use": "AHA 2025 adult BLS arrest recognition and CPR branch"
   }
  ],
  "objectives": [
   "Apply electrodes with good skin contact and the lead placement your unit uses.",
-  "Interpret systematically and verify alarms at the bedside before acting.",
+  "Interpret systematically and assess the patient immediately when an alarm sounds.",
   "Escalate emergency rhythms immediately."
  ],
  "prerequisites": [
@@ -44,10 +49,11 @@
    "support": "partial",
    "items": [
     {
-     "text": "Verify an alarm or unusual rhythm at the bedside before acting; check the patient first.",
+     "text": "Assess the patient immediately. If cardiac arrest is suspected, activate the arrest response and start CPR when indicated while the team verifies the ECG signal.",
      "support": "partial",
      "sources": [
-      "S-OPENRN-ADV-C7"
+      "S-OPENRN-ADV-C7",
+      "S-AHA-BLS-ADULT-2025"
      ]
     }
    ]
@@ -158,7 +164,7 @@
   },
   {
    "phase": "monitoring",
-   "text": "Verify an alarm at the bedside and check the patient before acting.",
+   "text": "Assess the patient first and verify the ECG signal without delaying emergency care.",
    "critical": true,
    "support": "partial",
    "sources": [
@@ -221,6 +227,17 @@
    "read": "not_read",
    "licence_class": "RED",
    "permission_required": "Yes"
+  },
+  {
+   "id": "S-AHA-BLS-ADULT-2025",
+   "title": "Adult Basic Life Support Algorithm for Health Care Professionals",
+   "publisher": "American Heart Association",
+   "version": "2025",
+   "url": "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-BLS-Adult-Healthcare-250701.pdf?sc_lang=en",
+   "accessed": "2026-11-18",
+   "read": "partial",
+   "licence_class": "RED (cite-only)",
+   "permission_required": "Verify before reproducing source material"
   }
  ]
 }

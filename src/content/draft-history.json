@@ -1006,6 +1006,19 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "c156d38bb7e0e688",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T08": [
@@ -1971,6 +1984,20 @@
     "sources": [
      "S-AACN-ALARM-2018",
      "S-AACN-DYSRHYTHMIA-2016",
+     "S-OPENRN-ADV-C7"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "32e1172913d631dc",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-AHA-BLS-ADULT-2025",
      "S-OPENRN-ADV-C7"
     ],
     "gaps": 2,
@@ -2986,6 +3013,22 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "6fb1a4a1edf53ce1",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-16": [
@@ -3167,6 +3210,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3fce67ba8486ab4a",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-POTASSIUM",
+     "L-POTASSIUM-CONC",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-20": [
@@ -3215,6 +3273,21 @@
     "evidence_status": "partial",
     "sources": [
      "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "779b1f431fa002c3",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "N-UKKA-HK-2026-07",
      "S-AHRQ-TS",
      "S-FDA-PUMP",
      "S-RCP-NEWS2"
@@ -5141,6 +5214,19 @@
    {
     "hash": "43b36cf405649d27",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "6c52749b735999d9",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-INSULIN",

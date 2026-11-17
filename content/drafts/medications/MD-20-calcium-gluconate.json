@@ -40,6 +40,11 @@
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  },
+  {
+   "id": "N-UKKA-HK-2026-07",
+   "read": "partial",
+   "use": "UKKA July 2026 guideline 16.2a and 16.2b, adult hyperkalaemia indications and elemental-calcium equivalence"
   }
  ],
  "sections": {
@@ -85,8 +90,15 @@
    ]
   },
   "safety_alerts": {
-   "support": "full",
+   "support": "partial",
    "items": [
+    {
+     "text": "For adult hyperkalaemia with ECG changes, IV calcium is used to stabilise the myocardium. It does not lower serum potassium. Verify the ordered salt, strength and amount of elemental calcium. Calcium chloride and gluconate cannot be substituted volume for volume even when both labels show the same percentage strength.",
+     "support": "partial",
+     "sources": [
+      "N-UKKA-HK-2026-07"
+     ]
+    },
     {
      "text": "With cardiac glycosides, arrhythmias can occur; if combined therapy is necessary the label advises close ECG monitoring.",
      "support": "sourced",
