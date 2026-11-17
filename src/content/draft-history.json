@@ -218,6 +218,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "5815c6d11abef80e",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ESICM-ARDS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T11": [

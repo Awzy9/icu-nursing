@@ -24,6 +24,16 @@ describe("VentLab", () => {
     expect(screen.getByRole("status")).toHaveTextContent(/assess the patient first/i);
   });
 
+  it("explains impossible timings and restores readouts when corrected", () => {
+    render(<VentLab locale="en" />);
+    fireEvent.change(screen.getByLabelText(/Respiratory rate/), { target: { value: "30" } });
+    fireEvent.change(screen.getByLabelText(/Inspiratory time/), { target: { value: "2" } });
+    expect(screen.getByRole("alert")).toHaveTextContent("no time for exhalation");
+    expect(screen.queryByText("Peak")).not.toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText(/Inspiratory time/), { target: { value: "1.9" } });
+    expect(screen.getByText(/Expiratory time: 0.10 s/)).toBeVisible();
+  });
+
   it("moving a slider updates the pressure readout (higher tidal volume raises peak pressure)", () => {
     render(<VentLab locale="en" />);
     const peakValue = () => screen.getByText("Peak").parentElement!.querySelector("p:nth-of-type(2)")!.textContent;
