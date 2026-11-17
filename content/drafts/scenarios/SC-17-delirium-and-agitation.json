@@ -88,11 +88,11 @@
    ],
    "options": [
     {
-     "text": "Treat the recent change as possible delirium, make sure the patient is safe, carry out or request an assessment with the unit's critical-care delirium tool by someone competent, and report the findings to the team.",
+     "text": "Keep the patient safe and assess immediately for acute deterioration or reversible causes. Report the new change. When eligible for delirium assessment, use the unit's validated ICU tool, such as CAM-ICU or ICDSC.",
      "points": 2,
      "next": 2,
      "scope": "assessment",
-     "feedback": "NICE says recent changes in cognition, behaviour or movement should prompt an assessment, and that in critical care CAM-ICU or ICDSC is used by a competent practitioner, with the final diagnosis made by a clinician with the right expertise.",
+     "feedback": "Sudden behavioural change can indicate delirium or acute illness. Check for immediate threats, communicate the change and use a validated ICU tool when appropriate.",
      "consequence": "The tool assessment is done and the responsible clinician is told.",
      "support": "partial",
      "sources": [

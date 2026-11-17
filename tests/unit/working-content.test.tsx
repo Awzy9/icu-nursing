@@ -52,6 +52,17 @@ describe("working edition", () => {
     expect(scenario("SC-08").steps[0]!.options[0]!.text).toMatch(/bedside glucose.*Do not delay seizure treatment/);
     expect(scenario("SC-20").steps[0]!.options[0]!.text).toContain("Escalate without waiting");
   });
+  it("preserves immediate escalation and treatment boundaries in the remaining emergency cases", () => {
+    const entries = buildWorkingContent();
+    const best = (key: string, step: number) => entries.find((entry) => entry.key === key)!.scenario!.steps[step - 1]!.options.find((option) => option.points === 2)!.text;
+    expect(best("SC-01", 3)).toContain("do not flush it");
+    expect(best("SC-09", 1)).toContain("Activate urgent help");
+    expect(best("SC-10", 2)).toContain("give no oral carbohydrate");
+    expect(best("SC-12", 2)).toContain("synchronized cardioversion");
+    expect(best("SC-15", 2)).toContain("only when the trained team confirms");
+    expect(best("SC-16", 1)).toContain("without delaying escalation");
+    expect(best("SC-18", 1)).toContain("Stop the feed immediately");
+  });
   it("renders text safely and keeps answers behind a disclosure", () => {
     const {container} = render(<WorkingBody body={'# Example\n<script>alert(1)</script>\n**Q1 (test)**\n- A\n**Answer: A**\nRationale'} />);
     expect(container.querySelector("script")).toBeNull();

@@ -108,11 +108,11 @@
    ],
    "options": [
     {
-     "text": "Stay with the patient, mark the edge of the blood on the dressing, reinforce it, check the drains and the other observations, and notify the surgeon promptly with how many dressings are saturated and the vital sign changes.",
+     "text": "Activate urgent help for suspected postoperative haemorrhage and stay with the patient. Assess airway, breathing, circulation and perfusion, alert the surgical team, and check wound and drain losses in parallel.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "Post-operative hemorrhage is suspected from blood on the dressing, falling pressure from baseline with a fast pulse and cold, clammy skin; the nurse circles the drainage, reinforces the dressing and tells the surgeon how many dressings were saturated.",
+     "feedback": "Falling blood pressure with a faster pulse and cold, pale skin suggests compromised perfusion. Visible blood loss may underestimate bleeding. Dressing checks must not delay emergency escalation.",
      "consequence": "The surgeon is told early, with measurable information, and the team can respond.",
      "support": "sourced",
      "sources": [

@@ -4943,6 +4943,19 @@
     "gaps": 4,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "5b967476edd2e697",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-02": [
@@ -4962,6 +4975,21 @@
    {
     "hash": "4adc35851284fc48",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-AHRQ-TS",
+     "S-ESICM-SHOCK-2014",
+     "S-OPENSTAX-MS-35-2"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "1e53d552785656ba",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-DOBUTAMINE",
@@ -5254,12 +5282,41 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "8a2fd15bddd13dfc",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-10": [
    {
     "hash": "6cedc2554cfa8b98",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "cb9d3ef3fc0bdcc8",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-INSULIN",
@@ -5342,6 +5399,21 @@
    {
     "hash": "0256affa6d3c1480",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "L-AMIODARONE",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-OPENRN-ADV-C74"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "967e8297f452a7ba",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-ADENOSINE",
@@ -5463,6 +5535,19 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "b873db280a282b66",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-16": [
@@ -5510,6 +5595,22 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "6198a16a65dd2da6",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-17": [
@@ -5538,12 +5639,39 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "6d9d3b5239b6cec8",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-18": [
    {
     "hash": "615fbdbf11a84e06",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "13c313cd7a73d621",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "S-AHRQ-TS",
