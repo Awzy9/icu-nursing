@@ -46,6 +46,11 @@
    "id": "S-AHRQ-TS",
    "read": "partial",
    "use": "SBAR page"
+  },
+  {
+   "id": "S-NCS-ENLS-SE-2024",
+   "read": "partial",
+   "use": "Initial bedside glucose and parallel assessment"
   }
  ],
  "required_sources": [
@@ -68,7 +73,7 @@
  "steps": [
   {
    "position": 1,
-   "info": "A patient is having a convulsive seizure that has been going on for several minutes and shows no sign of stopping.",
+   "info": "A patient is having a convulsive seizure that has continued for at least five minutes and shows no sign of stopping.",
    "prompt": "What do you do first?",
    "observations": [
     {
@@ -89,16 +94,17 @@
    ],
    "options": [
     {
-     "text": "Call for urgent help, note the time the seizure began, stay with the patient and start emergency care per the unit's protocol, asking for the emergency equipment and prescribed emergency medicine to be brought.",
+     "text": "Activate the seizure emergency response, stay with the patient, note onset and assess airway and breathing. Ask a colleague to check bedside glucose and bring emergency equipment while first-line treatment is prepared. Do not delay seizure treatment for the glucose check.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that.",
+     "feedback": "NICE treats ongoing convulsions at five minutes as an emergency. Bedside glucose is part of the initial assessment and can be checked in parallel with treatment.",
      "consequence": "Help arrives while you stay with the patient and the time of onset is clear.",
      "support": "partial",
      "sources": [
       "N-NICE-NG217",
-      "S-AHRQ-TS"
+      "S-AHRQ-TS",
+      "S-NCS-ENLS-SE-2024"
      ]
     },
     {
@@ -176,7 +182,7 @@
     },
     {
      "text": "Refuse to prepare anything and wait for the doctor to do everything.",
-     "points": 1,
+     "points": 0,
      "next": 3,
      "scope": "independent_nursing",
      "feedback": "Preparing medicines and equipment for the prescriber is part of the nurse's role.",
@@ -211,11 +217,11 @@
    ],
    "options": [
     {
-     "text": "Make sure expert guidance is sought urgently, check the blood glucose and report the result because treatable causes such as low glucose matter, keep watching breathing, and give any further medicine only as prescribed.",
+     "text": "Seek expert guidance urgently, report the latest bedside glucose and any treatment, monitor breathing continuously and follow the protocol for repeat or second-line treatment.",
      "points": 2,
      "next": null,
      "scope": "escalation",
-     "feedback": "NICE says to seek expert guidance in hospital if the first dose does not work and to be aware of causes such as hypoglycaemia; JBDS says low glucose must be excluded in anyone having seizures.",
+     "feedback": "NICE advises expert guidance when the first dose fails in hospital. Under NG217, ongoing convulsions five to ten minutes after the first benzodiazepine dose can warrant a second dose under the plan or protocol.",
      "consequence": "Expert help is on its way and a treatable cause is not missed.",
      "support": "partial",
      "sources": [

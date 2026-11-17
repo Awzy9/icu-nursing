@@ -4314,7 +4314,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "7e72646030483bda"
+   "hash": "3318b66d3e009a11"
   },
   {
    "key": "SC-08",
@@ -4344,12 +4344,17 @@
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NCS-ENLS-SE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "bca8e0af95b534a3"
+   "hash": "9477212f451ca72f"
   },
   {
    "key": "SC-09",
@@ -4759,7 +4764,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "ad2b95e6f76dd62c"
+   "hash": "aef91c0efde398a6"
   },
   {
    "key": "EQ-01",

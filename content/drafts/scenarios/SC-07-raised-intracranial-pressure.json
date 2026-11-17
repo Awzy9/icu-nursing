@@ -103,11 +103,11 @@
    ],
    "options": [
     {
-     "text": "Carry out a focused neurological assessment now (Glasgow Coma Scale and pupils), compare it with the last one and report the change urgently with SBAR.",
+     "text": "Call for urgent help now. Assess airway, breathing and circulation and check GCS and pupils while help is mobilised. Compare with baseline and hand over the trend.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "A decreased level of consciousness is the earliest sign of increased ICP; restlessness, headache, vomiting, high blood pressure and a slow heart rate are further manifestations, and neurological assessment includes the GCS and pupils.",
+     "feedback": "Falling consciousness, vomiting, and a rise in blood pressure with a slower pulse are warning signs. These signs warrant urgent reassessment and escalation and do not confirm a specific cause.",
      "consequence": "The team receives a clear change from baseline and can act quickly.",
      "support": "sourced",
      "sources": [
@@ -116,7 +116,7 @@
     },
     {
      "text": "Check the blood pressure again and leave the patient to rest.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "independent_nursing",
      "feedback": "Rechecking is reasonable, but the drowsiness and vomiting are more important than the pressure alone and need a neurological assessment and report.",
@@ -142,7 +142,7 @@
   },
   {
    "position": 2,
-   "info": "The team confirms concern about rising pressure inside the skull and asks you to continue nursing care with that in mind. The patient needs a bed bath and is due to have the airway suctioned.",
+   "info": "The team confirms concern about rising pressure inside the skull and asks you to continue nursing care with that in mind. A bed bath is planned. There is no current clinical indication for airway suction.",
    "prompt": "Which approach to care is best?",
    "observations": [
     {
@@ -168,7 +168,7 @@
    ],
    "options": [
     {
-     "text": "Keep the head of the bed at the angle the provider and policy set with the neck in a neutral position, avoid sudden neck or hip bending, space the care out, keep the room quiet, and give oxygen as prescribed while monitoring pressure, rhythm, oxygenation, glucose and temperature.",
+     "text": "Keep the head of the bed at the angle the provider and policy set with the neck in a neutral position, avoid sudden neck or hip bending, defer the bed bath until stable, suction only when clinically indicated, keep the room quiet, and give oxygen as prescribed while monitoring pressure, rhythm, oxygenation, glucose and temperature.",
      "points": 2,
      "next": 3,
      "scope": "monitoring",
@@ -233,11 +233,11 @@
    ],
    "options": [
     {
-     "text": "Give the osmotic medicine only as prescribed, monitor urine output, fluid status, electrolytes and neurological status, raise the agitation with the team rather than adding a sedative on your own, and document each neurological assessment.",
+     "text": "Give the osmotic medicine only as prescribed, monitor urine output, renal function, fluid status, electrolytes and neurological status, raise the agitation with the team rather than adding a sedative on your own, and document each neurological assessment.",
      "points": 2,
      "next": null,
      "scope": "order_or_protocol_required",
-     "feedback": "The mannitol label warns of fluid and electrolyte disturbance, kidney effects and nervous-system effects, so these are monitored; sedatives must be used cautiously because they can mask neurological signs, so the team decides.",
+     "feedback": "The mannitol label warns of fluid and electrolyte disturbance, kidney effects and nervous-system effects, so these are monitored, including renal function; sedatives must be used cautiously because they can mask neurological signs, so the team decides.",
      "consequence": "The effect of the treatment is followed and the team keeps a reliable neurological picture.",
      "support": "partial",
      "sources": [

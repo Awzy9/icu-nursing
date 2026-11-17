@@ -44,6 +44,14 @@ describe("working edition", () => {
     expect(scenario("SC-05").steps[1]!.options[0]!.text).toContain("oral suction");
     expect(scenario("SC-06").steps[1]!.options[0]!.text).toContain("bag-mask ventilation");
   });
+  it("retains immediate escalation and early glucose checks in neurological emergencies", () => {
+    const entries = buildWorkingContent();
+    const scenario = (key: string) => entries.find((entry) => entry.key === key)!.scenario!;
+    expect(scenario("SC-07").steps[0]!.options[1]!.points).toBe(0);
+    expect(scenario("SC-07").steps[1]!.options[0]!.text).toContain("suction only when clinically indicated");
+    expect(scenario("SC-08").steps[0]!.options[0]!.text).toMatch(/bedside glucose.*Do not delay seizure treatment/);
+    expect(scenario("SC-20").steps[0]!.options[0]!.text).toContain("Escalate without waiting");
+  });
   it("renders text safely and keeps answers behind a disclosure", () => {
     const {container} = render(<WorkingBody body={'# Example\n<script>alert(1)</script>\n**Q1 (test)**\n- A\n**Answer: A**\nRationale'} />);
     expect(container.querySelector("script")).toBeNull();

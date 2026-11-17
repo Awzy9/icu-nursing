@@ -5151,6 +5151,21 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "3318b66d3e009a11",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AARC-SUCT",
+     "S-AHRQ-TS",
+     "S-BTF-TBI-4TH",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-08": [
@@ -5189,6 +5204,21 @@
      "N-JBDS-HYPO-2020",
      "N-NICE-NG217",
      "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "9477212f451ca72f",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-JBDS-HYPO-2020",
+     "N-NICE-NG217",
+     "S-AHRQ-TS",
+     "S-NCS-ENLS-SE-2024"
     ],
     "gaps": 5,
     "required_sources": 3,
@@ -5574,6 +5604,19 @@
    {
     "hash": "ad2b95e6f76dd62c",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "aef91c0efde398a6",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "N-NICE-NG232",
