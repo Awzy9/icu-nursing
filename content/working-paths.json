@@ -1,0 +1,84 @@
+[
+  {
+    "key": "new-to-icu",
+    "title": ["New to ICU", "جديد في العناية المركزة"],
+    "audience": ["Nurses starting in a general ICU, or orienting to critical care for the first time.", "الممرضون الجدد في وحدة العناية المركزة، أو من ينتقل إليها للمرة الأولى."],
+    "objectives": [
+      ["Carry out and document a systematic head-to-toe assessment.", "إجراء تقييم منهجي من الرأس إلى القدم وتوثيقه."],
+      ["Assess pain using validated self-report and behavioural tools.", "تقييم الألم باستخدام أدوات موثوقة للتقرير الذاتي والسلوكي."],
+      ["Apply standard infection-prevention precautions correctly.", "تطبيق احتياطات الوقاية من العدوى القياسية بشكل صحيح."],
+      ["Structure an SBAR call about a deteriorating patient.", "تنظيم مكالمة SBAR حول مريض تتدهور حالته."]
+    ],
+    "estimatedMinutes": 55,
+    "steps": ["D07-T01", "QB-D07-T01", "D07-T03", "SK-25", "PX-07", "SK-21", "PX-01"]
+  },
+  {
+    "key": "respiratory-ventilation",
+    "title": ["Respiratory care and mechanical ventilation", "العناية التنفسية والتهوية الميكانيكية"],
+    "audience": ["Nurses caring for patients on oxygen therapy or invasive mechanical ventilation.", "الممرضون الذين يقدمون الرعاية لمرضى العلاج بالأكسجين أو التهوية الميكانيكية الغازية."],
+    "objectives": [
+      ["Select and monitor oxygen delivery devices safely.", "اختيار أجهزة توصيل الأكسجين ومراقبتها بأمان."],
+      ["Interpret common ventilator parameters and modes.", "تفسير معايير وأنماط التهوية الشائعة."],
+      ["Respond to ventilator alarms with a patient-first approach.", "الاستجابة لإنذارات جهاز التنفس مع إعطاء الأولوية للمريض."],
+      ["Describe the nurse's role during ventilator liberation.", "وصف دور الممرضة خلال عملية فطام جهاز التنفس."]
+    ],
+    "estimatedMinutes": 75,
+    "prerequisite": "new-to-icu",
+    "steps": ["D01-T03", "SK-08", "D01-T06", "QB-D01-T06", "D01-T07", "SK-07", "D01-T09", "SC-04", "D01-T17", "QB-D01-T17"]
+  },
+  {
+    "key": "cardiovascular-haemodynamic",
+    "title": ["Cardiovascular and haemodynamic care", "الرعاية القلبية الوعائية والديناميكا الدموية"],
+    "audience": ["Nurses monitoring arterial lines, vasoactive infusions, or patients in shock.", "الممرضون الذين يراقبون الخطوط الشريانية أو التسريبات الفعالة وعائياً أو مرضى الصدمة."],
+    "objectives": [
+      ["Recognise important ECG rhythms and escalate appropriately.", "التعرف على أنماط تخطيط القلب الكهربائي المهمة والتصعيد بشكل مناسب."],
+      ["Care for and troubleshoot an arterial pressure monitoring system.", "العناية بنظام مراقبة الضغط الشرياني واستكشاف أخطائه."],
+      ["Monitor a vasopressor or inotrope infusion safely.", "مراقبة تسريب مقبض الأوعية أو مقوي القلب بأمان."],
+      ["Describe the nursing response to circulatory shock.", "وصف الاستجابة التمريضية للصدمة الدورانية."]
+    ],
+    "estimatedMinutes": 70,
+    "prerequisite": "new-to-icu",
+    "steps": ["D02-T02", "SK-18", "D02-T08", "D02-T04", "SK-01", "EQ-03", "D02-T12", "MD-01", "SC-02", "QB-D02-T12"]
+  },
+  {
+    "key": "sepsis-deterioration",
+    "title": ["Sepsis and deterioration", "الإنتان والتدهور السريري"],
+    "audience": ["Nurses who need to recognise early deterioration and septic shock, and escalate it clearly.", "الممرضون الذين يحتاجون إلى التعرف على التدهور المبكر والصدمة الإنتانية وتصعيدها بوضوح."],
+    "objectives": [
+      ["Recognise possible sepsis in adults and escalate it.", "التعرف على الإنتان المحتمل عند البالغين وتصعيده."],
+      ["Describe the nursing role in the first hours of septic shock.", "وصف دور التمريض في الساعات الأولى من الصدمة الإنتانية."],
+      ["Act on a rising early-warning score before it reaches a call-out level.", "التصرف عند ارتفاع مؤشر الإنذار المبكر قبل أن يصل إلى مستوى الاستدعاء."]
+    ],
+    "estimatedMinutes": 50,
+    "prerequisite": "new-to-icu",
+    "steps": ["D06-T01", "QB-D06-T01", "D02-T09", "SC-01", "PX-05", "PX-06", "SC-16", "QB-D02-T09"]
+  },
+  {
+    "key": "neuro-assessment",
+    "title": ["Neurological assessment", "التقييم العصبي"],
+    "audience": ["Nurses assessing consciousness, delirium, raised ICP, or seizures.", "الممرضون الذين يقيّمون الوعي أو الهذيان أو ارتفاع الضغط داخل القحف أو النوبات."],
+    "objectives": [
+      ["Perform a structured Glasgow Coma Scale assessment.", "إجراء تقييم منظم باستخدام مقياس غلاسكو للغيبوبة."],
+      ["Screen for and respond to delirium.", "فحص الهذيان والاستجابة له."],
+      ["Describe nursing monitoring for raised intracranial pressure.", "وصف المراقبة التمريضية لارتفاع الضغط داخل القحف."],
+      ["Describe the immediate nursing response to a seizure.", "وصف الاستجابة التمريضية الفورية للنوبة."]
+    ],
+    "estimatedMinutes": 70,
+    "prerequisite": "new-to-icu",
+    "steps": ["D03-T01", "SK-24", "QB-D03-T01", "D03-T10", "SC-17", "D03-T03", "SC-07", "MD-48", "SC-08", "MD-47"]
+  },
+  {
+    "key": "medication-infusion-safety",
+    "title": ["Medication and infusion safety", "سلامة الأدوية والتسريبات"],
+    "audience": ["Nurses preparing, administering, or monitoring high-alert infusions.", "الممرضون الذين يحضّرون الأدوية عالية الخطورة أو يعطونها أو يراقبونها."],
+    "objectives": [
+      ["Explain why certain medications and infusion pumps need extra safeguards.", "توضيح سبب حاجة بعض الأدوية ومضخات التسريب إلى ضمانات إضافية."],
+      ["Check an infusion pump correctly before and after a rate change.", "فحص مضخة التسريب بشكل صحيح قبل وبعد تغيير المعدل."],
+      ["Describe nursing monitoring for sedative and vasoactive infusions.", "وصف المراقبة التمريضية لتسريبات المهدئات والمقبضات الوعائية."],
+      ["Raise a medication safety concern clearly in an SBAR call.", "رفع مخاوف تتعلق بسلامة الأدوية بوضوح في مكالمة SBAR."]
+    ],
+    "estimatedMinutes": 65,
+    "prerequisite": "new-to-icu",
+    "steps": ["D05-T16", "EQ-04", "SK-22", "PX-09", "D05-T01", "MD-06", "D05-T03", "MD-01", "PX-02", "QB-D05-T16"]
+  }
+]
