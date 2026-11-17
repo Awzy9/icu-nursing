@@ -28,6 +28,7 @@ function headers(): Record<string, string> {
 }
 
 export async function sql<T = Record<string, unknown>>(query: string): Promise<T[]> {
+  if (!ISOLATED) throw new Error("Hosted development tooling is disabled: dvmevjomyaqrojsiffnf was converted to production on 2026-11-16. Use LIVE_TARGET=isolated for tests; production maintenance uses explicitly scoped management tools.");
   if (ISOLATED) return isolatedSql<T>(query);
   const res = await fetch(`${API}/projects/${REF}/database/query`, { method: "POST", headers: headers(), body: JSON.stringify({ query }) });
   const text = await res.text();
@@ -36,6 +37,7 @@ export async function sql<T = Record<string, unknown>>(query: string): Promise<T
 }
 
 export async function api<T = unknown>(path: string, init: RequestInit = {}): Promise<T> {
+  if (!ISOLATED) throw new Error("Hosted development tooling is disabled: dvmevjomyaqrojsiffnf is now production. Use LIVE_TARGET=isolated for tests; never reset, seed test data or change production Auth through the old dev scripts.");
   if (ISOLATED) return isolatedApi<T>(path, init);
   const res = await fetch(`${API}/projects/${REF}${path}`, { ...init, headers: { ...headers(), ...(init.headers as Record<string, string>) } });
   const text = await res.text();
