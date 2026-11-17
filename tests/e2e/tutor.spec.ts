@@ -4,6 +4,6 @@ for (const locale of ["en", "ar"]) {
     await page.goto("/" + locale + "/learn");
     await expect(page.locator('header a[href$="/tutor"]')).toHaveCount(0);
     await page.goto("/" + locale + "/tutor");
-    await expect(page.getByRole("heading", { name: /404/ })).toBeVisible();
+    await expect(page.getByRole("heading", { name: locale === "ar" ? "الصفحة غير موجودة" : "Page not found" })).toBeVisible();
   });
 }
