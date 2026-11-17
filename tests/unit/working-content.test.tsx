@@ -36,6 +36,14 @@ describe("working edition", () => {
     expect(body("SC-11")).toContain("every 30 minutes for the first two hours");
     expect(body("SK-18")).toContain("start CPR when indicated while the team verifies the ECG signal");
   });
+  it("retains immediate escalation and ventilatory support in the airway cases", () => {
+    const entries = buildWorkingContent();
+    const scenario = (key: string) => entries.find((entry) => entry.key === key)!.scenario!;
+    expect(scenario("SC-04").steps[1]!.options[0]!.text).toMatch(/emergency help immediately.*alternative ventilation/);
+    expect(scenario("SC-05").steps[0]!.options[1]!.points).toBe(0);
+    expect(scenario("SC-05").steps[1]!.options[0]!.text).toContain("oral suction");
+    expect(scenario("SC-06").steps[1]!.options[0]!.text).toContain("bag-mask ventilation");
+  });
   it("renders text safely and keeps answers behind a disclosure", () => {
     const {container} = render(<WorkingBody body={'# Example\n<script>alert(1)</script>\n**Q1 (test)**\n- A\n**Answer: A**\nRationale'} />);
     expect(container.querySelector("script")).toBeNull();

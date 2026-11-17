@@ -5018,6 +5018,21 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "7b34547df6618840",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-RCUK-ABCDE-2024"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-05": [
@@ -5048,6 +5063,21 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "b9ab95e3e3d87f08",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-2024"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-06": [
@@ -5072,6 +5102,21 @@
      "S-AARC-PVA",
      "S-AHRQ-TS",
      "S-ERC-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "af40dc13396d5600",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-FICM-UNPLANNED-EXTUBATION-2022",
+     "S-RCUK-ABCDE-2024"
     ],
     "gaps": 4,
     "required_sources": 2,

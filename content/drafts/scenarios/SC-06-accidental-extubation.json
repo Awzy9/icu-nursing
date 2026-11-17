@@ -42,6 +42,16 @@
    "id": "S-AHRQ-TS",
    "read": "partial",
    "use": "SBAR page"
+  },
+  {
+   "id": "S-RCUK-ABCDE-2024",
+   "read": "partial",
+   "use": "Airway and breathing sections and principles of calling for help"
+  },
+  {
+   "id": "S-FICM-UNPLANNED-EXTUBATION-2022",
+   "read": "partial",
+   "use": "Simulation resource: airway displacement and face-mask ventilation"
   }
  ],
  "required_sources": [
@@ -51,7 +61,7 @@
  "gaps": [
   "No published clinical scenario may exist until the review phase: this is a specification only.",
   "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "The first-line airway manoeuvres are not described by any source read; the scenario relies on 'call for help and provide oxygen and airway support per unit protocol'.",
+  "Local emergency airway procedures and clinician competencies require verification.",
   "Reintubation criteria and technique are medical decisions and are not written."
  ],
  "permissions": [
@@ -124,8 +134,8 @@
   },
   {
    "position": 2,
-   "info": "The tube is now out. The patient is breathing but struggling, and the team is on its way.",
-   "prompt": "What should you do while waiting?",
+   "info": "The tube is completely out. The patient has shallow, ineffective breaths with poor chest rise, and the airway team is on its way.",
+   "prompt": "What support does the patient need immediately?",
    "observations": [
     {
      "key": "spo2",
@@ -136,7 +146,7 @@
     {
      "key": "breathing",
      "label": "Breathing",
-     "value": "Struggling"
+     "value": "Shallow, poor chest rise"
     },
     {
      "key": "help",
@@ -146,16 +156,18 @@
    ],
    "options": [
     {
-     "text": "Keep giving oxygen, monitor the patient and prepare the airway equipment the team will ask for.",
+     "text": "Support ventilation immediately with oxygen and bag-mask ventilation within your training and the local emergency airway protocol. Check chest rise and have a colleague prepare airway equipment while the team responds.",
      "points": 2,
      "next": 3,
      "scope": "monitoring",
-     "feedback": "Maintaining oxygenation, monitoring and preparing equipment support the team without taking over medical decisions.",
+     "feedback": "Supplemental oxygen alone cannot restore inadequate ventilation. Check that assisted breaths produce chest rise, continue monitoring and escalate immediately if ventilation remains ineffective.",
      "consequence": "The team arrives to a patient who is being supported and to equipment that is ready.",
      "support": "partial",
      "sources": [
       "S-AARC-PVA",
-      "S-ERC-ALS-2025"
+      "S-ERC-ALS-2025",
+      "S-RCUK-ABCDE-2024",
+      "S-FICM-UNPLANNED-EXTUBATION-2022"
      ]
     },
     {
@@ -250,7 +262,7 @@
  "debrief": {
   "learning_points": [
    "Suspected displacement is an emergency: call for help and stay with the patient.",
-   "Support oxygenation and monitoring; leave airway decisions to the responsible clinicians.",
+   "Provide immediate ventilatory support if spontaneous breathing is inadequate. The airway team assesses the need for reintubation.",
    "Report the event and review agitation, sedation and securement."
   ],
   "links": [

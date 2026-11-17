@@ -4184,12 +4184,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "ce7d8cd9fce4709e"
+   "hash": "7b34547df6618840"
   },
   {
    "key": "SC-05",
@@ -4202,11 +4207,6 @@
    "sources": [
     {
      "id": "S-AARC-O2",
-     "licence_class": "RED",
-     "verified": "2026-11-14"
-    },
-    {
-     "id": "S-AARC-SUCT",
      "licence_class": "RED",
      "verified": "2026-11-14"
     },
@@ -4224,12 +4224,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "71c3605c5e21a531"
+   "hash": "b9ab95e3e3d87f08"
   },
   {
    "key": "SC-06",
@@ -4254,12 +4259,22 @@
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-FICM-UNPLANNED-EXTUBATION-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
+     "id": "S-RCUK-ABCDE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "b23284e6dc31e50f"
+   "hash": "af40dc13396d5600"
   },
   {
    "key": "SC-07",
