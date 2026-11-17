@@ -5,7 +5,7 @@ beforeAll(setupDb);
 afterAll(closePool);
 
 /**
- * Security review (Phase 6): workflow functions use SECURITY DEFINER; working_record_attempt and working_save_session use SECURITY INVOKER and owner RLS. This suite enumerates
+ * Security review (Phase 6): workflow functions use SECURITY DEFINER; working_record_attempt, working_save_session, working_exam_answer and working_exam_submit use SECURITY INVOKER and owner RLS. This suite enumerates
  * them from the catalogue (so a new function cannot be added without being exercised here) and proves, for each one:
  *   1. it pins search_path;
  *   2. it refuses a request whose JWT has no subject (an "authenticated" token that is not a user);
@@ -34,7 +34,7 @@ describe("all functions exposed to signed-in users", () => {
     expect(fns.length).toBeGreaterThanOrEqual(48);
     for (const f of fns) {
       // These learner-owned helpers must never acquire owner privileges; their table RLS is tested separately.
-      expect(f.prosecdef, f.proname).toBe(!["working_record_attempt", "working_save_session"].includes(f.proname));
+      expect(f.prosecdef, f.proname).toBe(!["working_record_attempt", "working_save_session", "working_exam_answer", "working_exam_submit", "working_exam_start"].includes(f.proname));
       expect((f.proconfig ?? []).some((c) => c.startsWith("search_path=")), `${f.proname} search_path`).toBe(true);
     }
   });
@@ -60,7 +60,7 @@ describe("all functions exposed to signed-in users", () => {
 
   it("deny every staff/admin function to a signed-in learner with no roles", async () => {
     const learner = await createUser(uniqueEmail("plain"));
-    const learnerFns = /^(qb_|st_|cs_|sk_|md_|eq_|sub_|tutor_|record_topic_view|set_topic_completion)/;
+    const learnerFns = /^(qb_|st_|cs_|sk_|md_|eq_|sub_|tutor_|working_|record_topic_view|set_topic_completion)/;
     for (const f of (await exposed()).filter((x) => !learnerFns.test(x.proname))) {
       const { sql, params } = call(f);
       let succeeded = false;
