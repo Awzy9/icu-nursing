@@ -1,3 +1,5 @@
+import { workingEditionEnabled } from "@/lib/working";
+import { LearningDashboard } from "@/components/working/dashboard";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Callout } from "@/components/ui/feedback";
 import { TopicList } from "@/components/content/topic-list";
@@ -9,6 +11,7 @@ import { createClient } from "@/lib/supabase/server";
 export default async function BookmarksPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <LearningDashboard locale={locale} bookmarksOnly/>;
   const t = await getTranslations("Dashboard");
   if (isDemoMode()) return <Callout tone="warning">{t("demoUnavailable")}</Callout>;
   await requireUser(locale, "/bookmarks");
