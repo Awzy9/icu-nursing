@@ -1,18 +1,39 @@
 [
   {
     "key": "WV-01",
-    "title": ["Normal mechanical breath", "نفَس آلي طبيعي"],
-    "objective": ["Recognise a complete, normal breath on the pressure, flow and volume traces.", "التعرف على نفَس آلي طبيعي ومكتمل على منحنيات الضغط والتدفق والحجم."],
+    "title": [
+      "Normal mechanical breath",
+      "نفَس آلي طبيعي"
+    ],
+    "objective": [
+      "Recognise a complete, normal breath on the pressure, flow and volume traces.",
+      "التعرف على نفَس آلي طبيعي ومكتمل على منحنيات الضغط والتدفق والحجم."
+    ],
     "lessonHref": "/working/EQ-02",
     "accessibleDescription": [
       "Pressure rises smoothly from the set PEEP of 5 cmH2O to a peak of about 25 cmH2O over one second, then drops back to 5 cmH2O and stays flat for the rest of the breath.",
-      "Flow rises immediately to a constant +40 L/min for one second (inspiration), then reverses to about -40 L/min and decays smoothly back to zero before the next breath begins.",
+      "Inspiratory flow is constant at +30 L/min for one second. Expiratory flow is negative and returns to zero before the next breath begins.",
       "Volume rises in a straight line from 0 to 500 mL during inspiration, then falls back to 0 mL during expiration, reaching zero before the next breath starts."
     ],
     "traces": [
-      { "label": "Pressure", "unit": "cmH2O", "domain": [0, 30], "points": [[0, 5], [0.05, 18], [0.3, 21], [0.6, 23], [1, 25], [1, 5], [3, 5], [3, 18]] },
-      { "label": "Flow", "unit": "L/min", "domain": [-45, 45], "points": [[0, 0], [0, 40], [1, 40], [1, -40], [1.2, -30], [1.5, -18], [1.8, -10], [2.1, -5], [2.4, -2], [2.7, 0], [3, 0], [3, 40]] },
-      { "label": "Volume", "unit": "mL", "domain": [0, 550], "points": [[0, 0], [0.25, 125], [0.5, 250], [0.75, 375], [1, 500], [1, 500], [1.3, 260], [1.6, 120], [1.9, 50], [2.2, 20], [2.5, 5], [2.7, 0], [3, 0], [3, 0]] }
+      {
+        "label": "Pressure",
+        "unit": "cmH2O",
+        "domain": [0, 30],
+        "points": [[0, 5], [0.05, 18], [0.3, 21], [0.6, 23], [1, 25], [1, 5], [3, 5], [3, 18]]
+      },
+      {
+        "label": "Flow",
+        "unit": "L/min",
+        "domain": [-55, 45],
+        "points": [[0, 0], [0, 30], [1, 30], [1, -54.55], [1.2, -40.91], [1.5, -24.55], [1.8, -13.64], [2.1, -6.82], [2.4, -2.73], [2.7, 0.0], [3, 0.0], [3, 30]]
+      },
+      {
+        "label": "Volume",
+        "unit": "mL",
+        "domain": [0, 550],
+        "points": [[0.0, 0], [0.25, 125], [0.5, 250], [0.75, 375], [1.0, 500], [1.2, 340.9], [1.5, 177.3], [1.8, 81.8], [2.1, 30.6], [2.4, 6.8], [2.7, 0], [3, 0]]
+      }
     ],
     "question": {
       "prompt": "What does this set of waveforms show?",
@@ -25,22 +46,45 @@
       "answer": 0,
       "explanation": "The expiratory flow trace returns all the way to zero, and volume returns to zero, before the next inspiration begins - exhalation is complete. The pressure trace returns cleanly to the set PEEP and stays flat, with no residual elevation. There is no scooping or asynchrony in the pressure trace during inspiration."
     },
-    "evidenceSources": ["2024 AARC patient-ventilator assessment CPG"]
+    "evidenceSources": [
+      "Goodfellow et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment (2024), PICO 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/"
+    ]
   },
   {
     "key": "WV-02",
-    "title": ["Auto-PEEP (incomplete exhalation)", "الضغط الإيجابي الذاتي (زفير غير مكتمل)"],
-    "objective": ["Identify incomplete exhalation (auto-PEEP / dynamic hyperinflation) on the flow trace.", "تحديد الزفير غير المكتمل (الضغط الإيجابي الذاتي) على منحنى التدفق."],
+    "title": [
+      "Auto-PEEP (incomplete exhalation)",
+      "الضغط الإيجابي الذاتي (زفير غير مكتمل)"
+    ],
+    "objective": [
+      "Identify incomplete exhalation (auto-PEEP / dynamic hyperinflation) on the flow trace.",
+      "تحديد الزفير غير المكتمل (الضغط الإيجابي الذاتي) على منحنى التدفق."
+    ],
     "lessonHref": "/working/EQ-02",
     "accessibleDescription": [
-      "Pressure falls after inspiration but does not return to the set PEEP of 5 cmH2O - it settles at about 8 cmH2O, higher than set, and stays there until the next breath interrupts it.",
-      "Flow reverses to about -45 L/min at the start of expiration and decays, but at the moment the next breath begins, flow is still at about -8 L/min - it never reached zero.",
-      "Volume falls during expiration but does not reach 0 mL before the next breath adds more volume on top - about 80 mL is left over, breath after breath."
+      "The displayed airway pressure drops toward the set PEEP of 5 cmH2O during expiration. This trace does not show alveolar pressure.",
+      "Inspiratory flow is +37.5 L/min for 0.8 seconds. Expiratory flow remains negative when the next inspiration begins.",
+      "About 80 mL of the 500 mL delivered in the illustrated breath remains above the starting volume when the next breath begins."
     ],
     "traces": [
-      { "label": "Pressure", "unit": "cmH2O", "domain": [0, 30], "points": [[0, 8], [0.05, 20], [0.4, 23], [0.8, 26], [0.8, 8], [2.0, 8], [2.0, 20]] },
-      { "label": "Flow", "unit": "L/min", "domain": [-45, 45], "points": [[0, 0], [0, 40], [0.8, 40], [0.8, -45], [1.0, -30], [1.3, -18], [1.6, -12], [1.9, -9], [2.0, -8], [2.0, 40]] },
-      { "label": "Volume", "unit": "mL", "domain": [0, 550], "points": [[0, 0], [0.2, 125], [0.4, 250], [0.6, 375], [0.8, 500], [0.8, 500], [1.0, 320], [1.3, 180], [1.6, 120], [1.9, 90], [2.0, 80], [2.0, 80]] }
+      {
+        "label": "Pressure",
+        "unit": "cmH2O",
+        "domain": [0, 30],
+        "points": [[0, 5], [0.05, 20], [0.4, 23], [0.8, 26], [0.8, 5], [2.0, 5], [2.0, 20]]
+      },
+      {
+        "label": "Flow",
+        "unit": "L/min",
+        "domain": [-49, 45],
+        "points": [[0, 0], [0, 37.5], [0.8, 37.5], [0.8, -48.88], [1.0, -32.59], [1.3, -19.55], [1.6, -13.03], [1.9, -9.78], [2.0, -8.69], [2.0, 37.5]]
+      },
+      {
+        "label": "Volume",
+        "unit": "mL",
+        "domain": [0, 550],
+        "points": [[0.0, 0], [0.2, 125], [0.4, 250], [0.6000000000000001, 375], [0.8, 500], [1.0, 364.2], [1.3, 233.9], [1.6, 152.4], [1.9, 95.4], [2.0, 80.0]]
+      }
     ],
     "question": {
       "prompt": "What does this set of waveforms show?",
@@ -51,24 +95,47 @@
         "A disconnected or leaking circuit"
       ],
       "answer": 1,
-      "explanation": "The expiratory flow trace never returns to zero before the next breath begins - this is the characteristic sign of incomplete exhalation (auto-PEEP, dynamic hyperinflation). Volume and pressure both carry over into the next breath instead of returning to baseline, consistent with gas being trapped breath after breath."
+      "explanation": "Persistent expiratory flow at the start of the next breath suggests incomplete exhalation and possible intrinsic PEEP. The volume trace shows retained volume above the breath's starting level. Intrinsic PEEP is estimated from total PEEP minus set PEEP using an end-expiratory hold under suitable passive conditions."
     },
-    "evidenceSources": ["2024 AARC patient-ventilator assessment CPG"]
+    "evidenceSources": [
+      "Goodfellow et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment (2024), PICO 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/"
+    ]
   },
   {
     "key": "WV-03",
-    "title": ["Flow starvation", "نقص التدفق"],
-    "objective": ["Identify flow starvation (a scooped pressure trace) during a volume-controlled breath.", "تحديد نقص التدفق (منحنى ضغط متقعّر) أثناء نفَس محدد الحجم."],
+    "title": [
+      "Flow starvation",
+      "نقص التدفق"
+    ],
+    "objective": [
+      "Identify flow starvation (a scooped pressure trace) during a volume-controlled breath.",
+      "تحديد نقص التدفق (منحنى ضغط متقعّر) أثناء نفَس محدد الحجم."
+    ],
     "lessonHref": "/working/EQ-02",
     "accessibleDescription": [
-      "Pressure rises at the start of inspiration, then dips down to about 8 cmH2O around a third of the way through the breath - a concave, scooped-out shape - before rising again to a peak near the end of inspiration.",
-      "Flow is the same fixed square wave as a normal breath: a constant +40 L/min for one second, then a decaying negative flow during expiration. The flow shape itself does not change, because it is set by the ventilator, not the patient.",
-      "Volume still rises in a straight line to 500 mL, because volume control guarantees the set volume regardless of the pressure shape."
+      "Pressure rises at the start of inspiration, dips to about 8 cmH2O halfway through inspiration, then rises again near the end.",
+      "Inspiratory flow is constant at +30 L/min for one second. Expiratory flow is negative and returns to zero before the next breath begins.",
+      "In this example, the fixed flow delivers 500 mL. On a real ventilator, a pressure limit, leak or interrupted breath can reduce delivered volume."
     ],
     "traces": [
-      { "label": "Pressure", "unit": "cmH2O", "domain": [0, 30], "points": [[0, 5], [0.1, 14], [0.3, 10], [0.5, 8], [0.7, 14], [1.0, 22], [1.0, 5], [3, 5], [3, 14]] },
-      { "label": "Flow", "unit": "L/min", "domain": [-45, 45], "points": [[0, 0], [0, 40], [1, 40], [1, -40], [1.2, -30], [1.5, -18], [1.8, -10], [2.1, -5], [2.4, -2], [2.7, 0], [3, 0], [3, 40]] },
-      { "label": "Volume", "unit": "mL", "domain": [0, 550], "points": [[0, 0], [0.25, 125], [0.5, 250], [0.75, 375], [1, 500], [1, 500], [1.3, 260], [1.6, 120], [1.9, 50], [2.2, 20], [2.5, 5], [2.7, 0], [3, 0], [3, 0]] }
+      {
+        "label": "Pressure",
+        "unit": "cmH2O",
+        "domain": [0, 30],
+        "points": [[0, 5], [0.1, 14], [0.3, 10], [0.5, 8], [0.7, 14], [1.0, 22], [1.0, 5], [3, 5], [3, 14]]
+      },
+      {
+        "label": "Flow",
+        "unit": "L/min",
+        "domain": [-55, 45],
+        "points": [[0, 0], [0, 30], [1, 30], [1, -54.55], [1.2, -40.91], [1.5, -24.55], [1.8, -13.64], [2.1, -6.82], [2.4, -2.73], [2.7, 0.0], [3, 0.0], [3, 30]]
+      },
+      {
+        "label": "Volume",
+        "unit": "mL",
+        "domain": [0, 550],
+        "points": [[0.0, 0], [0.25, 125], [0.5, 250], [0.75, 375], [1.0, 500], [1.2, 340.9], [1.5, 177.3], [1.8, 81.8], [2.1, 30.6], [2.4, 6.8], [2.7, 0], [3, 0]]
+      }
     ],
     "question": {
       "prompt": "What does this set of waveforms show?",
@@ -79,8 +146,11 @@
         "A disconnected or leaking circuit"
       ],
       "answer": 2,
-      "explanation": "The pressure trace dips and forms a concave, \"scooped\" shape in the first part of inspiration, while the flow trace stays a fixed square wave. This mismatch - the patient visibly straining against a fixed flow that does not speed up to meet their demand - is the classic appearance of flow starvation, not auto-PEEP (expiratory flow still returns fully to zero here) or a normal breath."
+      "explanation": "With fixed inspiratory flow, a dip in airway pressure can reflect active inspiratory effort when delivered flow falls short of the patient's demand. Assess the patient alongside the waveform. Expiratory flow reaches zero before the next breath in this example."
     },
-    "evidenceSources": ["2024 AARC patient-ventilator assessment CPG"]
+    "evidenceSources": [
+      "Goodfellow et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment (2024), PICO 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/",
+      "Optimizing Mechanical Ventilation: Identification and Management of Patient–Ventilator Asynchronies (2024), Flow Starvation. https://pmc.ncbi.nlm.nih.gov/articles/PMC11721790/"
+    ]
   }
 ]

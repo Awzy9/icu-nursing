@@ -139,7 +139,7 @@
    ],
    "options": [
     {
-     "text": "Apply the pads as soon as the defibrillator arrives and keep compressions going while it charges, keeping the pre-shock pause as short as possible.",
+     "text": "Apply the pads during CPR. Keep any rhythm-check pause brief. If the authorised operator identifies a shockable rhythm, resume compressions while charging and minimise the pause for shock delivery.",
      "points": 2,
      "next": 3,
      "scope": "order_or_protocol_required",
@@ -178,7 +178,7 @@
   },
   {
    "position": 3,
-   "info": "The authorised operator is ready to deliver a shock.",
+   "info": "The authorised operator has confirmed ventricular fibrillation in this pulseless patient and is ready to deliver a shock.",
    "prompt": "What must happen before the shock?",
    "observations": [
     {
@@ -240,7 +240,7 @@
  "debrief": {
   "learning_points": [
    "Call the team and start compressions without delay.",
-   "Keep compressions going while the defibrillator charges and keep the pre-shock pause short.",
+   "Confirm a shockable rhythm before delivering a shock. Continue compressions during charging and keep the pre-shock pause short.",
    "Perform and call the safety check; never shock during manual compressions.",
    "Defibrillator operation follows authorised-role rules."
   ],

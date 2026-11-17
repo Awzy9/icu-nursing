@@ -17,6 +17,16 @@ describe("working edition", () => {
     expect(workingEntry("../../secret")).toBeUndefined();
     vi.unstubAllEnvs();
   });
+  it("retains the safety conditions in the learner-facing arrest and anaphylaxis cases", () => {
+    const entries = buildWorkingContent();
+    const arrest = entries.find((entry) => entry.key === "SC-13")!.scenario!;
+    expect(arrest.steps[1]!.options[0]!.text).toMatch(/identifies a shockable rhythm/i);
+    expect(arrest.steps[2]!.info).toMatch(/confirmed ventricular fibrillation/i);
+
+    const anaphylaxis = entries.find((entry) => entry.key === "SC-19")!.scenario!;
+    expect(anaphylaxis.steps[0]!.options[0]!.text).toMatch(/give IM adrenaline immediately/i);
+    expect(anaphylaxis.steps[1]!.info).toMatch(/under the emergency protocol/i);
+  });
   it("renders text safely and keeps answers behind a disclosure", () => {
     const {container} = render(<WorkingBody body={'# Example\n<script>alert(1)</script>\n**Q1 (test)**\n- A\n**Answer: A**\nRationale'} />);
     expect(container.querySelector("script")).toBeNull();

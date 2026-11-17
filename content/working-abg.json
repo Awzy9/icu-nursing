@@ -7,9 +7,9 @@
   ],
   "vignette": "A patient with a severe asthma exacerbation, working hard to breathe, now tiring.",
   "gases": {
-   "pH": 7.25,
+   "pH": 7.26,
    "paco2": 60,
-   "hco3": 24,
+   "hco3": 26,
    "pao2": 65,
    "fio2": 0.4
   },
@@ -17,18 +17,18 @@
   "question": {
    "prompt": "Based on this gas panel, what is the acid-base interpretation?",
    "options": [
-    "Metabolic alkalosis (uncompensated)",
-    "Metabolic acidosis (uncompensated)",
-    "Respiratory acidosis (fully compensated)",
-    "Respiratory acidosis (uncompensated)"
+    "Metabolic alkalosis",
+    "Metabolic acidosis",
+    "Chronic respiratory acidosis",
+    "Acute respiratory acidosis"
    ],
    "answer": 3,
-   "explanation": "PaCO2 is markedly elevated (60) causing acidemia, with HCO3- still within the normal range - there has not been time for renal compensation yet. This is uncompensated respiratory acidosis, consistent with acute ventilatory failure from severe asthma."
+   "explanation": "The low pH and raised PaCO2 indicate respiratory acidosis. At PaCO2 60 mmHg, HCO3- of 26 mEq/L fits the small rise expected in an acute disturbance. In this patient with severe asthma and increasing fatigue, the rise in PaCO2 is a warning sign that requires urgent escalation."
   },
   "oxygenationNote": "PaO2 65 mmHg on FiO2 0.4 gives a P/F ratio of 162.5.",
   "evidenceSources": [
-   "AACN/SCCM acid-base interpretation fundamentals",
-   "ERC/ESICM arterial blood gas teaching framework"
+   "Merck Manual Professional Edition. Acid-Base Disorders, expected compensation table and diagnosis. https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders",
+   "BTS/SIGN. Management of acute asthma in adults (2019), severity criteria. https://www.brit-thoracic.org.uk/document-library/guidelines/asthma/btssign-asthma-guideline-quick-reference-guide-2019/"
   ]
  },
  {
@@ -39,7 +39,7 @@
   ],
   "vignette": "A patient with new-onset diabetic ketoacidosis.",
   "gases": {
-   "pH": 7.1,
+   "pH": 7.23,
    "paco2": 22,
    "hco3": 9,
    "pao2": 95
@@ -48,18 +48,18 @@
   "question": {
    "prompt": "Based on this gas panel, what is the acid-base interpretation?",
    "options": [
-    "Metabolic alkalosis (uncompensated)",
-    "Mixed (combined) acidosis",
-    "Metabolic acidosis (partially compensated)",
-    "Respiratory acidosis (fully compensated)"
+    "Metabolic alkalosis",
+    "Mixed respiratory and metabolic acidosis",
+    "Metabolic acidosis with expected respiratory compensation",
+    "Respiratory acidosis"
    ],
    "answer": 2,
-   "explanation": "HCO3- is markedly low (9) causing acidemia, and PaCO2 has fallen to 22 - lower than normal but not as low as Winter's formula predicts (19.5-23.5 is actually within range here), so this is appropriate but still partial respiratory compensation for a severe metabolic acidosis, as expected in DKA."
+   "explanation": "Low HCO3- accounts for the acidemia. Winter's formula (1.5 × 9 + 8 ± 2) predicts PaCO2 of 19.5–23.5 mmHg. The observed PaCO2 of 22 mmHg is within that range."
   },
   "oxygenationNote": "PaO2 95 mmHg.",
   "evidenceSources": [
-   "AACN/SCCM acid-base interpretation fundamentals",
-   "ERC/ESICM arterial blood gas teaching framework"
+   "Merck Manual Professional Edition. Acid-Base Disorders, expected compensation table and diagnosis. https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders",
+   "ADA, EASD, JBDS, AACE and DTS. Hyperglycemic Crises in Adults With Diabetes: A Consensus Report (2024). https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/"
   ]
  },
  {
@@ -72,25 +72,24 @@
   "gases": {
    "pH": 7.52,
    "paco2": 28,
-   "hco3": 23,
+   "hco3": 22,
    "pao2": 98
   },
   "lessonHref": "/working/D04-T08",
   "question": {
    "prompt": "Based on this gas panel, what is the acid-base interpretation?",
    "options": [
-    "Metabolic alkalosis (uncompensated)",
-    "Respiratory alkalosis (uncompensated)",
-    "Mixed (combined) acidosis",
-    "Metabolic alkalosis (fully compensated)"
+    "Metabolic alkalosis",
+    "Acute respiratory alkalosis",
+    "Mixed respiratory and metabolic acidosis",
+    "Respiratory acidosis"
    ],
    "answer": 1,
-   "explanation": "PaCO2 is low (28) causing alkalemia, with HCO3- still essentially normal - the kidneys have not yet had time to compensate. This is acute, uncompensated respiratory alkalosis from hyperventilation."
+   "explanation": "Low PaCO2 explains the alkalemia. HCO3- of 22 mEq/L is compatible with the small fall expected in acute respiratory alkalosis. The history helps explain the pattern. Assess the patient and consider other causes of hyperventilation before attributing it to anxiety."
   },
   "oxygenationNote": "PaO2 98 mmHg.",
   "evidenceSources": [
-   "AACN/SCCM acid-base interpretation fundamentals",
-   "ERC/ESICM arterial blood gas teaching framework"
+   "Merck Manual Professional Edition. Acid-Base Disorders, expected compensation table and diagnosis. https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders"
   ]
  },
  {
@@ -101,7 +100,7 @@
   ],
   "vignette": "A patient with prolonged vomiting and nasogastric suction losses.",
   "gases": {
-   "pH": 7.5,
+   "pH": 7.49,
    "paco2": 46,
    "hco3": 34,
    "pao2": 90
@@ -110,18 +109,17 @@
   "question": {
    "prompt": "Based on this gas panel, what is the acid-base interpretation?",
    "options": [
-    "Metabolic alkalosis (partially compensated)",
-    "Metabolic acidosis (uncompensated)",
-    "Normal acid-base balance",
-    "Respiratory alkalosis (uncompensated)"
+    "Metabolic alkalosis with expected respiratory compensation",
+    "Metabolic acidosis",
+    "No evident acid–base disturbance on this panel",
+    "Respiratory alkalosis"
    ],
    "answer": 0,
-   "explanation": "HCO3- is elevated (34) causing alkalemia, and PaCO2 has risen to 46 - a appropriate but incomplete respiratory compensation (expected range 42.3-45.3 would be fully compensated). This is partially-compensated metabolic alkalosis, consistent with chloride and acid loss from vomiting."
+   "explanation": "Elevated HCO3- accounts for the alkalemia. For a rise in HCO3- from 24 to 34 mEq/L, the expected PaCO2 is approximately 46–47.5 mmHg. The observed PaCO2 of 46 mmHg fits that response. Vomiting and gastric suction provide a plausible mechanism."
   },
   "oxygenationNote": "PaO2 90 mmHg.",
   "evidenceSources": [
-   "AACN/SCCM acid-base interpretation fundamentals",
-   "ERC/ESICM arterial blood gas teaching framework"
+   "Merck Manual Professional Edition. Acid-Base Disorders, expected compensation table and diagnosis. https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders"
   ]
  },
  {
@@ -132,9 +130,9 @@
   ],
   "vignette": "A patient with longstanding COPD, at their usual baseline, feeling well.",
   "gases": {
-   "pH": 7.37,
-   "paco2": 80,
-   "hco3": 36,
+   "pH": 7.34,
+   "paco2": 60,
+   "hco3": 31,
    "pao2": 58,
    "fio2": 0.28
   },
@@ -142,18 +140,17 @@
   "question": {
    "prompt": "Based on this gas panel, what is the acid-base interpretation?",
    "options": [
-    "Respiratory acidosis (partially compensated)",
-    "Respiratory acidosis (uncompensated)",
-    "Metabolic acidosis (partially compensated)",
-    "Respiratory acidosis (fully compensated)"
+    "Acute respiratory acidosis",
+    "Metabolic alkalosis with expected respiratory compensation",
+    "Metabolic acidosis",
+    "Chronic respiratory acidosis with expected renal compensation"
    ],
    "answer": 3,
-   "explanation": "pH is within normal limits despite a very high PaCO2 (80) and very high HCO3- (36). The respiratory derangement is proportionally larger than the metabolic one, and the degree of HCO3- rise fits a sustained, chronic renal response - this is fully-compensated (chronic) respiratory acidosis, the classic pattern in stable COPD."
+   "explanation": "PaCO2 is 60 mmHg. In chronic respiratory acidosis, a 20 mmHg rise above 40 is expected to raise HCO3- by about 6–8 mEq/L from a baseline of 24. The observed HCO3- of 31 mEq/L fits, and the history supports chronicity. The mildly low pH is compatible with chronic respiratory acidosis despite the expected rise in bicarbonate."
   },
   "oxygenationNote": "PaO2 58 mmHg on FiO2 0.28 gives a P/F ratio of 207.1.",
   "evidenceSources": [
-   "AACN/SCCM acid-base interpretation fundamentals",
-   "ERC/ESICM arterial blood gas teaching framework"
+   "Merck Manual Professional Edition. Acid-Base Disorders, expected compensation table and diagnosis. https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders"
   ]
  },
  {
@@ -164,7 +161,7 @@
   ],
   "vignette": "A patient in septic shock with lactic acidosis, now also showing early respiratory fatigue.",
   "gases": {
-   "pH": 7.08,
+   "pH": 7.02,
    "paco2": 48,
    "hco3": 12,
    "pao2": 70,
@@ -174,18 +171,17 @@
   "question": {
    "prompt": "Based on this gas panel, what is the acid-base interpretation?",
    "options": [
-    "Metabolic alkalosis (partially compensated)",
-    "Mixed (combined) acidosis",
-    "Mixed (combined) acidosis (uncompensated)",
-    "Metabolic acidosis (uncompensated)"
+    "Metabolic alkalosis",
+    "Metabolic acidosis with expected respiratory compensation",
+    "Mixed respiratory and metabolic acidosis",
+    "Isolated respiratory acidosis"
    ],
    "answer": 2,
-   "explanation": "Both PaCO2 (48, should be low to compensate) and HCO3- (12, should be higher) are abnormal in the direction that worsens acidemia at the same time - the lungs cannot mount the expected compensation because they are also failing. This is a mixed respiratory and metabolic acidosis, a high-risk combination requiring urgent escalation."
+   "explanation": "HCO3- of 12 mEq/L indicates metabolic acidosis. Winter's formula predicts PaCO2 of 24–28 mmHg. The observed PaCO2 of 48 mmHg indicates a concurrent respiratory acidosis. This combination and the patient's respiratory fatigue require urgent escalation."
   },
   "oxygenationNote": "PaO2 70 mmHg on FiO2 0.5 gives a P/F ratio of 140.",
   "evidenceSources": [
-   "AACN/SCCM acid-base interpretation fundamentals",
-   "ERC/ESICM arterial blood gas teaching framework"
+   "Merck Manual Professional Edition. Acid-Base Disorders, expected compensation table and diagnosis. https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders"
   ]
  },
  {
@@ -206,18 +202,17 @@
   "question": {
    "prompt": "Based on this gas panel, what is the acid-base interpretation?",
    "options": [
-    "Metabolic alkalosis (partially compensated)",
-    "Normal acid-base balance",
-    "Metabolic acidosis (uncompensated)",
-    "Metabolic acidosis (partially compensated)"
+    "Metabolic alkalosis",
+    "No evident acid–base disturbance on this panel",
+    "Metabolic acidosis",
+    "Respiratory alkalosis"
    ],
    "answer": 1,
-   "explanation": "pH, PaCO2 and HCO3- are all within normal limits - there is no acid-base disorder here. The PaO2 of 68 looks only mildly low on its own, but achieving even that required an FiO2 of 0.8 - the P/F ratio of 85 reveals severe oxygenation impairment that the raw PaO2 alone would hide."
+   "explanation": "pH, PaCO2 and HCO3- are within their usual reference intervals. Oxygenation is a separate assessment. The P/F ratio is 85 despite substantial oxygen support. Interpret it with the ventilator settings and clinical context."
   },
   "oxygenationNote": "PaO2 68 mmHg on FiO2 0.8 gives a P/F ratio of 85.",
   "evidenceSources": [
-   "AACN/SCCM acid-base interpretation fundamentals",
-   "ERC/ESICM arterial blood gas teaching framework"
+   "Merck Manual Professional Edition. Acid-Base Disorders, expected compensation table and diagnosis. https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders"
   ]
  }
 ]

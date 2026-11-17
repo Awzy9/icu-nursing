@@ -36,6 +36,13 @@ describe("ECG rhythm exercise data", () => {
     }
   });
 
+  it("prioritises CPR over waiting for lead confirmation in suspected cardiac arrest", () => {
+    const { question } = ecgExercise("ECG-07")!;
+    expect(question.options[question.answer]).toMatch(/assess the patient immediately.*arrest response/i);
+    expect(question.explanation).toMatch(/start CPR without waiting for a lead check/i);
+    expect(question.explanation).toMatch(/asystole is non-shockable/i);
+  });
+
   it("gives every exercise a unique key", () => {
     const keys = exercises.map((e) => e.key);
     expect(new Set(keys).size).toBe(keys.length);

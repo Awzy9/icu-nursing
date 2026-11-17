@@ -1032,6 +1032,19 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "645454a5dd022a0f",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-BGA-2013",
+     "S-MERCK-ACID-BASE",
+     "S-OPENRN-FUND-CH15"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T09": [
@@ -5193,6 +5206,18 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "161573c3c5bac465",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-2025",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-14": [
@@ -5376,6 +5401,20 @@
    {
     "hash": "2f0c7e10a5094753",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "d80446263d19c5bb",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-EPINEPHRINE",

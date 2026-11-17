@@ -29,7 +29,7 @@ export interface VentCycleResult {
   highPressureAlarm: boolean; lowPressureAlarm: boolean;
 }
 
-const HIGH_PRESSURE_ALARM_THRESHOLD = 40; // cmH2O, a common default ventilator high-pressure limit
+const HIGH_PRESSURE_ALARM_THRESHOLD = 40; // cmH2O, an illustrative trigger for this model
 const LOW_PRESSURE_ALARM_MARGIN = 3; // cmH2O below set PEEP that suggests a disconnect/leak
 
 export function simulateVentCycle(params: VentParams): VentCycleResult {

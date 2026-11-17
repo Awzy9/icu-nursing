@@ -20,7 +20,8 @@ describe("VentLab", () => {
   it("shows the low-pressure alarm when the circuit-disconnect scenario is selected", () => {
     render(<VentLab locale="en" />);
     fireEvent.click(screen.getByRole("button", { name: "Circuit disconnect" }));
-    expect(screen.getByText(/Low-pressure alarm/)).toBeVisible();
+    expect(screen.getByText(/Low-pressure alarm.*assess the patient first/)).toBeVisible();
+    expect(screen.getByRole("status")).toHaveTextContent(/assess the patient first/i);
   });
 
   it("moving a slider updates the pressure readout (higher tidal volume raises peak pressure)", () => {

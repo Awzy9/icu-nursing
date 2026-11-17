@@ -20,8 +20,8 @@ const SCENARIOS: { key: string; label: [string, string]; params: Partial<VentPar
     "المقاومة المرتفعة ترفع ضغط الذروة أكثر بكثير من الهضبة - الفرق الكبير بينهما يشير إلى مجرى الهواء أو الدائرة (إفرازات، تشنج قصبي، أنبوب منحني)، وليس نسيج الرئة نفسه.",
   ] },
   { key: "disconnect", label: ["Circuit disconnect", "انفصال الدائرة"], params: { circuitDisconnected: true }, note: [
-    "Pressure never rises and almost no volume is delivered - the low-pressure/low-volume alarm should fire immediately. Check the circuit and reconnect before troubleshooting anything else.",
-    "لا يرتفع الضغط ولا يكاد يُسلَّم أي حجم - يجب أن يُطلق إنذار الضغط المنخفض فوراً. تحقق من الدائرة وأعد توصيلها قبل أي خطوة أخرى.",
+    "Pressure never rises and almost no volume is delivered - the low-pressure/low-volume alarm should fire immediately. Assess the patient first, call for help if ventilation is compromised, and check the circuit. If ventilation cannot be restored promptly, follow the local emergency ventilation protocol.",
+    "لا يرتفع الضغط ولا يكاد يُسلَّم أي حجم - يجب أن يُطلق إنذار الضغط المنخفض فوراً. قيّم المريض أولاً، واطلب المساعدة إذا كانت التهوية غير كافية، وتحقق من الدائرة. إذا لم تعد التهوية سريعاً، فاتبع بروتوكول التهوية الطارئة المحلي.",
   ] },
 ];
 
@@ -95,8 +95,8 @@ export function VentLab({ locale }: { locale: string }) {
         <div role="alert" className="flex items-start gap-3 rounded-2xl border-2 border-danger-foreground/60 bg-danger p-4 text-danger-foreground">
           <AlertTriangle aria-hidden className="mt-0.5 size-5 shrink-0" />
           <div className="space-y-1 text-sm leading-6">
-            {result.highPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط مرتفع: ضغط الذروة بلغ أو تجاوز 40 سم ماء." : "High-pressure alarm: peak pressure has reached or exceeded 40 cmH2O."}</p> : null}
-            {result.lowPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط منخفض: الضغط لا يرتفع كما هو متوقع - تحقق من اتصال الدائرة." : "Low-pressure alarm: pressure is not rising as expected - check for a circuit disconnect or major leak."}</p> : null}
+            {result.highPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط مرتفع: بلغ ضغط الذروة الحدّ التوضيحي لهذا النموذج (40 سم ماء)." : "High-pressure alarm: peak pressure reached this model’s example limit of 40 cmH2O."}</p> : null}
+            {result.lowPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط منخفض: قيّم المريض أولاً، ثم تحقق من انفصال الدائرة أو وجود تسرب كبير." : "Low-pressure alarm: assess the patient first, then check for a circuit disconnect or major leak."}</p> : null}
           </div>
         </div>
       ) : null}
