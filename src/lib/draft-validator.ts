@@ -5,7 +5,7 @@ const REQUIRED_META = ["topic_id", "title", "status", "origin", "clinically_revi
 const FORBIDDEN_STATUS = /^(approved|published|reviewed|clinically[_ ]reviewed|in_review)$/i;
 
 export function parseFrontMatter(text: string): Record<string, string> {
-  const m = /^---\n([\s\S]*?)\n---/.exec(text);
+  const m = /^(?:\uFEFF)?---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/.exec(text);
   const body = m?.[1];
   const meta: Record<string, string> = {};
   if (!body) return meta;
