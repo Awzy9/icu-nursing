@@ -18,7 +18,10 @@ export function computeRevisionQueue(questions: RevisionQuestion[], attempts: At
     const dueAt = dueAfter(a.box ?? 1, new Date(a.at)).getTime();
     return { question, isNew: false, isDue: dueAt <= now, dueAt, box: a.box ?? 1 };
   });
-  const due = statuses.filter((s) => s.isDue).sort((a, b) => (a.dueAt ?? 0) - (b.dueAt ?? 0));
+  // Within the due queue, a real mistake takes priority over content never attempted yet: when a
+  // session is capped (only the most-overdue N shown), what you actually got wrong should surface
+  // before material you simply haven't reached.
+  const due = statuses.filter((s) => s.isDue).sort((a, b) => Number(a.isNew) - Number(b.isNew) || (a.dueAt ?? 0) - (b.dueAt ?? 0));
   const upcoming = statuses.filter((s) => !s.isDue).sort((a, b) => (a.dueAt ?? 0) - (b.dueAt ?? 0));
   return { due, upcoming, nextDueAt: upcoming[0]?.dueAt ?? null, totalQuestions: questions.length, totalAttempted: attempts.length };
 }

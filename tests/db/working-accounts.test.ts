@@ -37,4 +37,24 @@ describe("working learning ownership",()=>{
   await owner.query("delete from auth.users where id=$1",[u]);
   expect((await owner.query("select * from public.working_lessons where user_id=$1",[u])).rows).toHaveLength(0);
  });
+ it("saves a resumable session, rejects cross-account access, keeps the newer save, and cascades on account deletion",async()=>{
+  const u=await createUser(uniqueEmail("working-session"));
+  await expectDenied(asUser(null,"select * from public.working_sessions"));
+  await asUser({id:u},"select public.working_save_session('QB-D06-T01','quiz','v1',2,1,false,now()-interval '2 hours')");
+  expect((await asUser({id:b},"select * from public.working_sessions where user_id=$1",[u])).rows).toHaveLength(0);
+  let row=(await asUser({id:u},"select * from public.working_sessions")).rows[0];
+  expect(row).toMatchObject({position:2,score:1,finished:false,version:"v1"});
+  await asUser({id:u},"select public.working_save_session('QB-D06-T01','quiz','v1',5,3,false,now()-interval '1 hour')");
+  await asUser({id:u},"select public.working_save_session('QB-D06-T01','quiz','v1',2,1,false,now()-interval '2 hours')"); // stale retry, must not win
+  row=(await asUser({id:u},"select * from public.working_sessions")).rows[0];
+  expect(row).toMatchObject({position:5,score:3});
+  await owner.query("delete from auth.users where id=$1",[u]);
+  expect((await owner.query("select * from public.working_sessions where user_id=$1",[u])).rows).toHaveLength(0);
+ });
+ it("lets a learner discard their own session but not another's",async()=>{
+  await asUser({id:a},"select public.working_save_session('QB-D06-T01','quiz','v1',1,0,false,now())");
+  expect((await asUser({id:b},"delete from public.working_sessions where user_id=$1 returning *",[a])).rows).toHaveLength(0);
+  await asUser({id:a},"delete from public.working_sessions where module_key='QB-D06-T01'");
+  expect((await asUser({id:a},"select * from public.working_sessions")).rows).toHaveLength(0);
+ });
 });

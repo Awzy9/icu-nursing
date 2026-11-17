@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { AccountLearningStatus } from "./account-status";
+import { ContinueLearning } from "./continue-learning";
 import { RevisionSession } from "./revision";
 import { useLearning } from "./progress";
 import { Link } from "@/i18n/navigation";
@@ -30,6 +31,7 @@ export function WorkingStudy({ locale, questions }: { locale: string; questions:
         <p className="text-muted-foreground">{ar ? "تُجدوَل الأسئلة تلقائياً للمراجعة: الأسئلة الجديدة والمخطئ فيها تظهر فوراً، والأسئلة الصحيحة تعود للمراجعة لاحقاً حسب جدول ثابت وواضح." : "Questions are scheduled for you automatically: new or missed questions come due right away; ones you got right come due again later, on a fixed, transparent schedule."}</p>
       </header>
       <AccountLearningStatus locale={locale} />
+      <ContinueLearning locale={locale} />
       <dl className="grid grid-cols-3 gap-3">
         {([[ar ? "تمت الإجابة" : "Answered", queue.totalAttempted], [ar ? "صحيحة" : "Correct", attempts.filter((a) => a.correct).length], [ar ? "مستحقة الآن" : "Due now", queue.due.length]] as const).map(([label, n]) => (
           <div key={label} className="rounded-2xl border border-border bg-card p-5"><dt className="text-sm text-muted-foreground">{label}</dt><dd className="mt-2 text-3xl font-bold">{n}</dd></div>

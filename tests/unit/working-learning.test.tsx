@@ -45,7 +45,7 @@ describe("interactive learning",()=>{
    expect(screen.getByText("You're up to date")).toBeVisible();
  });
  it("keeps scenario consequences hidden until a decision is confirmed",()=>{
-   render(<ScenarioPlayer locale="en" scenario={{setting:"A fictional setting",objectives:[],takeaways:["Reflect"],steps:[{position:1,info:"Situation",prompt:"What next?",options:[{text:"Call",points:2,next:null,feedback:"Escalate urgently",consequence:"Team arrives"}]}]}}/>);
+   render(<ScenarioPlayer locale="en" moduleKey="SC-EXAMPLE" title="Example scenario" scenario={{setting:"A fictional setting",objectives:[],takeaways:["Reflect"],steps:[{position:1,info:"Situation",prompt:"What next?",options:[{text:"Call",points:2,next:null,feedback:"Escalate urgently",consequence:"Team arrives"}]}]}}/>);
    expect(screen.queryByText("Escalate urgently")).not.toBeInTheDocument();
    fireEvent.click(screen.getByRole("radio",{name:"Call"}));
    fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));

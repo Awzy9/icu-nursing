@@ -45,6 +45,16 @@ describe("computeRevisionQueue", () => {
     );
     expect(queue.due.map((s) => s.question.id)).toEqual(["Q2", "Q1"]);
   });
+
+  it("surfaces an actual mistake ahead of never-attempted questions, so a capped session shows it first", () => {
+    const now = Date.now();
+    const queue = computeRevisionQueue(
+      [q("NEW1"), q("NEW2"), q("MISSED")],
+      [{ id: "MISSED", title: "t", href: "/working/EXAMPLE", correct: false, at: now - 1000, box: 1 }],
+      now,
+    );
+    expect(queue.due[0]!.question.id).toBe("MISSED");
+  });
 });
 
 describe("Leitner schedule reuse (matches public.working_record_attempt)", () => {
