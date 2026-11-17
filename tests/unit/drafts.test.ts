@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync } from "node:fs";
-import { batchPositionIssues, mcqQuality, parseMcqs, validateDraft } from "@/lib/draft-validator";
+import { batchPositionIssues, mcqQuality, parseFrontMatter, parseMcqs, validateDraft } from "@/lib/draft-validator";
 
 const batches = readdirSync("content/drafts", { withFileTypes: true }).filter((d) => d.isDirectory() && /^batch-\d+$/.test(d.name)).map((d) => d.name).sort();
 const files = batches.flatMap((b) => readdirSync(`content/drafts/${b}`).filter((f) => f.endsWith(".md")).map((f) => `${b}/${f}`));
@@ -15,6 +15,17 @@ const q = (id: string, answer: string, opts: string[], extra = {}) => ({
   ...extra,
 });
 const ok = ["Reassess the patient and escalate using SBAR now", "Wait for the next ward round before acting on it", "Record it and look again at the end of shift", "Ask a relative to find a doctor for the patient"];
+
+describe("Cross-platform draft metadata parsing", () => {
+  it("parses CRLF front matter without dropping metadata", () => {
+    const windowsText = texts[0]!.replace(/\r?\n/g, "\r\n");
+    expect(parseFrontMatter(windowsText).topic_id).toBeTruthy();
+    expect(validateDraft(windowsText)).toEqual([]);
+  });
+  it("accepts a UTF-8 BOM before front matter", () => {
+    expect(parseFrontMatter("\uFEFF" + texts[0]!).topic_id).toBeTruthy();
+  });
+});
 
 describe("Phase 2 drafts: structure and safety", () => {
   it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(40));

@@ -43,7 +43,8 @@ export function parseCsv(text: string): Record<string, string>[] {
   return rows.map((r) => Object.fromEntries(head.map((h, i) => [h, r[i] ?? ""])));
 }
 const csv = (file: string): Record<string, string>[] => (existsSync(file) ? parseCsv(readFileSync(file, "utf8")) : []);
-const sha = (s: string) => createHash("sha256").update(s).digest("hex").slice(0, 16);
+// Hash canonical LF content so Windows CRLF checkouts do not create false draft revisions.
+const sha = (s: string) => createHash("sha256").update(s.replace(/\r\n/g, "\n")).digest("hex").slice(0, 16);
 const list = (v: string | undefined) => (v ?? "").replace(/^\[|\]$/g, "").split(",").map((x) => x.trim().replace(/^['"]|['"]$/g, "")).filter(Boolean);
 
 /** Collapses the free-text licence classes in the registers to one band, taking the most restrictive reading when several appear (e.g. YELLOW/RED -> RED). */
