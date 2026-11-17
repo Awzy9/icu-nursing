@@ -54,7 +54,7 @@ jobs:
         run: npx playwright test --reporter=line,json
         env: { CI: "true", PLAYWRIGHT_JSON_OUTPUT_NAME: pw-results.json }
       - name: Summarise end-to-end failures
-        if: failure()
+        if: failure() && hashFiles('pw-results.json') != ''
         run: |
           node -e '
             const r = JSON.parse(require("fs").readFileSync("pw-results.json","utf8"));
