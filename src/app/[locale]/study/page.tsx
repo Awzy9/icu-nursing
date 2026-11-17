@@ -1,3 +1,5 @@
+import { workingEditionEnabled } from "@/lib/working";
+import { WorkingStudy } from "@/components/working/study";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Badge, Callout } from "@/components/ui/feedback";
 import { SegmentedBar } from "@/components/ui/segmented-bar";
@@ -21,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function StudyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingStudy locale={locale}/>;
   const t = await getTranslations("Study");
   const mode = resolveMode();
   if (mode === "disabled") {

@@ -1,3 +1,4 @@
+import { workingEditionEnabled } from "@/lib/working";
 import { getTranslations } from "next-intl/server";
 import { Search } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -16,8 +17,10 @@ export async function SiteHeader() {
   const roles = user ? await getRoles(user.id) : [];
   const isStaff = roles.some((r) => STAFF_ROLES.includes(r));
 
-  const primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/learn", label: t("learn") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }, { href: "/skills", label: t("skills") }, { href: "/practice", label: t("practice") }, { href: "/equipment", label: t("equipment") }, { href: "/medications", label: t("medications") }];
-  if (user) primary.push({ href: "/dashboard", label: t("dashboard") }, { href: "/bookmarks", label: t("bookmarks") });
+  const working = workingEditionEnabled();
+  let primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/learn", label: t("learn") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }, { href: "/skills", label: t("skills") }, { href: "/practice", label: t("practice") }, { href: "/equipment", label: t("equipment") }, { href: "/medications", label: t("medications") }];
+  if (working) primary = [{href:"/learn",label:t("learn")},{href:"/question-bank",label:t("questionBank")},{href:"/study",label:t("study")}];
+  if (user && !working) primary.push({ href: "/dashboard", label: t("dashboard") }, { href: "/bookmarks", label: t("bookmarks") });
   if (isStaff) primary.push({ href: "/admin", label: t("admin") });
   const future: NavLink[] = FUTURE_FEATURES.map((f) => ({ href: `/coming-soon/${f}`, label: t(f), soon: true }));
 
@@ -43,7 +46,7 @@ export async function SiteHeader() {
           {primary.map((l) => (
             <ActiveLink key={l.href} href={l.href} className="inline-flex min-h-11 items-center rounded-md px-2 text-sm text-foreground no-underline hover:bg-muted">{l.label}</ActiveLink>
           ))}
-          <details className="relative">
+          {!working ? <details className="relative">
             <summary className="inline-flex min-h-11 cursor-pointer list-none items-center rounded-md px-2 text-sm hover:bg-muted">{t("soon")}…</summary>
             <ul className="absolute end-0 z-40 mt-1 w-64 rounded-md border border-border bg-card p-1 shadow-lg">
               {future.map((l) => (
@@ -54,13 +57,13 @@ export async function SiteHeader() {
                 </li>
               ))}
             </ul>
-          </details>
+          </details> : null}
         </nav>
         <div className="flex items-center gap-2">
-          <Link href="/search" aria-label={t("search")} className="inline-flex size-11 items-center justify-center rounded-md border border-input bg-card text-foreground no-underline hover:bg-muted"><Search className="size-5" aria-hidden /></Link>
+          <Link href={working ? "/learn#working-search" : "/search"} aria-label={t("search")} className="inline-flex size-11 items-center justify-center rounded-md border border-input bg-card text-foreground no-underline hover:bg-muted"><Search className="size-5" aria-hidden /></Link>
           <LocaleSwitcher />
           <div className="hidden xl:block">{signOut}</div>
-          <MobileNav links={[...primary, ...future]} footer={signOut} />
+          <MobileNav links={working ? primary : [...primary, ...future]} footer={signOut} />
         </div>
       </div>
     </header>
