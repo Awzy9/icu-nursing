@@ -7,6 +7,7 @@ import { PracticePlayer } from "@/components/working/practice";
 import { buildWorkingContent } from "../../scripts/build-working-content";
 vi.mock("@/i18n/navigation",()=>({Link:({children,href,...props}:React.AnchorHTMLAttributes<HTMLAnchorElement>)=><a href={href} {...props}>{children}</a>}));
 const question={id:"test-question",prompt:"Choose a response",options:["First","Second","Third","Fourth"],answer:1,explanation:"Because the second choice fits."};
+const revisionQuestions=[{id:question.id,prompt:question.prompt,options:question.options,answer:question.answer,explanation:question.explanation,moduleKey:"EXAMPLE",moduleTitle:"Example lesson",moduleHref:"/working/EXAMPLE"}];
 beforeEach(()=>localStorage.clear());
 afterEach(()=>cleanup());
 describe("interactive learning",()=>{
@@ -30,18 +31,21 @@ describe("interactive learning",()=>{
    expect(screen.getByRole("radio",{name:/Second/})).toBeDisabled();
    fireEvent.click(screen.getByRole("button",{name:"View results"}));
    expect(screen.getByText("0 / 1")).toBeVisible();
-   cleanup();render(<WorkingStudy locale="en"/>);
+   cleanup();render(<WorkingStudy locale="en" questions={revisionQuestions}/>);
+   expect(screen.getByText("1 question due now across 1 topic")).toBeVisible();
+   fireEvent.click(screen.getByRole("button",{name:"Start revision session"}));
+   expect(screen.getByText(question.prompt)).toBeVisible();
    expect(screen.getByRole("link",{name:/Example lesson/})).toHaveAttribute("href","/working/EXAMPLE");
  });
  it("replaces a previous mistake when the answer is corrected",()=>{
    localStorage.setItem("icu-nursing-learning-v1",JSON.stringify({"test-question":{id:"test-question",correct:false,href:"/working/EXAMPLE",title:"Example lesson",at:1}}));
    render(<LearningQuiz questions={[question]} title="Example lesson" moduleKey="EXAMPLE" locale="en"/>);
    fireEvent.click(screen.getByRole("radio",{name:/Second/}));fireEvent.click(screen.getByRole("button",{name:"Check answer"}));
-   cleanup();render(<WorkingStudy locale="en"/>);
-   expect(screen.getByText("You’re up to date")).toBeVisible();
+   cleanup();render(<WorkingStudy locale="en" questions={revisionQuestions}/>);
+   expect(screen.getByText("You're up to date")).toBeVisible();
  });
  it("keeps scenario consequences hidden until a decision is confirmed",()=>{
-   render(<ScenarioPlayer locale="en" scenario={{setting:"A fictional setting",objectives:[],takeaways:["Reflect"],steps:[{position:1,info:"Situation",prompt:"What next?",options:[{text:"Call",points:2,next:null,feedback:"Escalate urgently",consequence:"Team arrives"}]}]}}/>);
+   render(<ScenarioPlayer locale="en" moduleKey="SC-EXAMPLE" title="Example scenario" scenario={{setting:"A fictional setting",objectives:[],takeaways:["Reflect"],steps:[{position:1,info:"Situation",prompt:"What next?",options:[{text:"Call",points:2,next:null,feedback:"Escalate urgently",consequence:"Team arrives"}]}]}}/>);
    expect(screen.queryByText("Escalate urgently")).not.toBeInTheDocument();
    fireEvent.click(screen.getByRole("radio",{name:"Call"}));
    fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));

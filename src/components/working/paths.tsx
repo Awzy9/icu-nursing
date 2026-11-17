@@ -11,8 +11,8 @@ function Bar({ percent }: { percent: number }) {
 
 export function PathsList({ paths, locale }: { paths: ResolvedPath[]; locale: string }) {
   const ar = locale === "ar";
-  const { attempts, bookmarks, lessons } = useLearning();
-  const state = { attempts, bookmarks, lessons };
+  const { attempts, bookmarks, lessons, sessions } = useLearning();
+  const state = { attempts, bookmarks, lessons, sessions };
   return (
     <div className="space-y-6">
       <header className="space-y-2">
@@ -51,8 +51,8 @@ const typeLabel: Record<string, [string, string]> = {
 
 export function PathDetail({ path, locale }: { path: ResolvedPath; locale: string }) {
   const ar = locale === "ar";
-  const { attempts, bookmarks, lessons } = useLearning();
-  const progress = computePathProgress(path.steps, { attempts, bookmarks, lessons });
+  const { attempts, bookmarks, lessons, sessions } = useLearning();
+  const progress = computePathProgress(path.steps, { attempts, bookmarks, lessons, sessions });
   return (
     <article className="mx-auto max-w-3xl space-y-8">
       <Link href="/learn/paths">← {ar ? "كل المسارات" : "All paths"}</Link>

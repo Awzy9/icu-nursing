@@ -22,10 +22,10 @@ test("answers, bookmarks and completion follow the account across browsers and s
   await a.getByRole("button",{name:"Mark as completed",exact:true}).click();await expect(a.getByRole("button",{name:"Completed ✓ — undo",exact:true})).toBeVisible();
   const b=await second.newPage();await login(b,learner.email);
   await expect(b.getByRole("link",{name:"Central venous catheter care",exact:true}).first()).toBeVisible();
-  await b.goto("/en/study");await expect(b.getByRole("link",{name:/Recognising possible sepsis/})).toBeVisible();
+  await b.goto("/en/study");await expect(b.locator('dt:has-text("Answered") + dd')).toHaveText("1");
   await b.goto("/en/bookmarks");await expect(b.getByRole("link",{name:"Central venous catheter care",exact:true})).toBeVisible();
   const c=await third.newPage();await login(c,other.email);await c.goto("/en/bookmarks");await expect(c.getByRole("link",{name:"Central venous catheter care",exact:true})).toHaveCount(0);
-  await c.goto("/en/study");await expect(c.getByRole("link",{name:/Recognising possible sepsis/})).toHaveCount(0);
-  await a.getByRole("button",{name:"Sign out",exact:true}).click();await a.goto("/en/study");await expect(a.getByText("Guest practice:",{exact:false})).toBeVisible();await expect(a.getByRole("link",{name:/Recognising possible sepsis/})).toHaveCount(0);
+  await c.goto("/en/study");await expect(c.locator('dt:has-text("Answered") + dd')).toHaveText("0");
+  await a.getByRole("button",{name:"Sign out",exact:true}).click();await a.goto("/en/study");await expect(a.getByText("Guest practice:",{exact:false})).toBeVisible();await expect(a.locator('dt:has-text("Answered") + dd')).toHaveText("0");
  } finally{await first.close();await second.close();await third.close();}
 });

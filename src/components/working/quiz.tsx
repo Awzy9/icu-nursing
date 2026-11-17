@@ -1,19 +1,59 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 import type { LearningQuestion } from "@/lib/working/model";
 import { WorkingBody } from "./body";
 import { useLearning } from "./progress";
 import { Link } from "@/i18n/navigation";
+
 export function LearningQuiz({ questions, title, moduleKey, locale }: { questions:LearningQuestion[];title:string;moduleKey:string;locale:string }) {
-  const [index,setIndex]=useState(0), [choice,setChoice]=useState<number|null>(null), [checked,setChecked]=useState(false), [score,setScore]=useState(0), [finished,setFinished]=useState(false);
-  const {saveAnswer}=useLearning();
-  const ar=locale==="ar", q=questions[index];
-  if(!q) return <p>No questions are available for this lesson.</p>;
-  const restart=()=>{setIndex(0);setChoice(null);setChecked(false);setScore(0);setFinished(false);};
-  if(finished) return <section className="rounded-2xl border border-border bg-card p-6 sm:p-10 text-center space-y-5"><p className="text-sm font-semibold text-primary">{ar?"اكتملت الجلسة":"Session complete"}</p><h2 className="text-3xl font-bold">{score} / {questions.length}</h2><p className="text-muted-foreground">{ar?"راجع التفسيرات ثم أعد المحاولة لترسيخ فهمك.":"Review your explanations and try again to strengthen your understanding."}</p><div className="flex flex-wrap justify-center gap-3"><button onClick={restart} className="min-h-11 rounded-xl bg-primary px-5 text-primary-foreground">{ar?"إعادة المحاولة":"Try again"}</button><Link href="/study" className="min-h-11 rounded-xl border border-border px-5 py-3">{ar?"مراجعة الأخطاء":"Review mistakes"}</Link></div></section>;
-  function submit() { if(choice===null || !q)return; setChecked(true);if(choice===q.answer)setScore(s=>s+1);saveAnswer({id:q.id,choice,title,href:`/working/${moduleKey}`,correct:choice===q.answer,at:Date.now()}); }
-  function next() { if(index+1===questions.length){setFinished(true);return;}setIndex(i=>i+1);setChoice(null);setChecked(false); }
+  const version = questions.map((q) => q.id).join(",");
+  const { saveAnswer, saveSession, discardSession, sessions } = useLearning();
+  const saved = sessions.find((s) => s.key === moduleKey && s.kind === "quiz" && !s.finished);
+  const staleRef = useRef(false);
+  const validSaved = saved && saved.version === version ? saved : undefined;
+  useEffect(() => { if (saved && saved.version !== version && !staleRef.current) { staleRef.current = true; discardSession(moduleKey); } }, [saved, version, moduleKey, discardSession]);
+
+  // `validSaved` is reactive (it has to be, to pick up the guest value once useSyncExternalStore settles
+  // past its hydration-safe default). But this session's own saves also flow back into it mid-play, so
+  // the resume prompt must only show before the learner has done anything *in this mount* - tracked by
+  // a ref, not state, since the moment of the first interaction is all that matters, not a frozen snapshot.
+  const interacted = useRef(false);
+  const [index, setIndex] = useState(0), [choice, setChoice] = useState<number | null>(null), [checked, setChecked] = useState(false), [score, setScore] = useState(0), [finished, setFinished] = useState(false);
+  const ar = locale === "ar", q = questions[index];
+  const href = `/working/${moduleKey}`;
+  if (!q) return <p>No questions are available for this lesson.</p>;
+
+  if (validSaved && !interacted.current) {
+    return (
+      <section className="rounded-2xl border-2 border-primary bg-card p-6 sm:p-8 space-y-4" role="status">
+        <h2 className="text-lg font-bold">{ar ? "لديك جلسة غير مكتملة" : "You have an unfinished session"}</h2>
+        <p className="text-muted-foreground">{ar ? `توقفت عند السؤال ${validSaved.position + 1} من ${questions.length}، بنتيجة ${validSaved.score}.` : `You stopped at question ${validSaved.position + 1} of ${questions.length}, with a score of ${validSaved.score}.`}</p>
+        <div className="flex flex-wrap gap-3">
+          <button onClick={() => { interacted.current = true; setIndex(Math.min(validSaved.position, questions.length - 1)); setScore(validSaved.score); }} className="min-h-11 rounded-xl bg-primary px-5 font-semibold text-primary-foreground">{ar ? "استمر" : "Resume"}</button>
+          <button onClick={() => { if (validSaved.position === 0 && validSaved.score === 0 || confirm(ar ? "سيتم حذف تقدمك غير المكتمل في هذه الجلسة. متابعة؟" : "This will discard your unfinished progress in this session. Continue?")) { interacted.current = true; discardSession(moduleKey); } }} className="min-h-11 rounded-xl border border-border px-5">{ar ? "البدء من جديد" : "Start over"}</button>
+        </div>
+      </section>
+    );
+  }
+
+  const restart = () => { discardSession(moduleKey); setIndex(0); setChoice(null); setChecked(false); setScore(0); setFinished(false); };
+  if (finished) return <section className="rounded-2xl border border-border bg-card p-6 sm:p-10 text-center space-y-5"><p className="text-sm font-semibold text-primary">{ar?"اكتملت الجلسة":"Session complete"}</p><h2 className="text-3xl font-bold">{score} / {questions.length}</h2><p className="text-muted-foreground">{ar?"راجع التفسيرات ثم أعد المحاولة لترسيخ فهمك.":"Review your explanations and try again to strengthen your understanding."}</p><div className="flex flex-wrap justify-center gap-3"><button onClick={restart} className="min-h-11 rounded-xl bg-primary px-5 text-primary-foreground">{ar?"إعادة المحاولة":"Try again"}</button><Link href="/study" className="min-h-11 rounded-xl border border-border px-5 py-3">{ar?"مراجعة الأخطاء":"Review mistakes"}</Link></div></section>;
+  function submit() {
+    if (choice===null || !q) return;
+    interacted.current = true;
+    setChecked(true);
+    const nextScore = choice===q.answer ? score+1 : score;
+    if (choice===q.answer) setScore(nextScore);
+    saveAnswer({id:q.id,choice,title,href,correct:choice===q.answer,at:Date.now()});
+    // Resuming lands on the next unanswered question, not back on this one: this question's own
+    // answer is already durable above, so there is nothing left to redo here.
+    saveSession({key:moduleKey,title,href,type:"questions"},"quiz",version,index+1,nextScore,index+1===questions.length);
+  }
+  function next() {
+    if (index+1===questions.length) { setFinished(true); discardSession(moduleKey); return; }
+    setIndex((i)=>i+1); setChoice(null); setChecked(false);
+  }
   return <section className="rounded-2xl border border-border bg-card p-5 sm:p-8 space-y-6" aria-label={ar?"اختبار تدريبي":"Practice quiz"}>
     <div className="flex items-center justify-between gap-3 text-sm"><span className="font-semibold text-primary">{ar?"السؤال":"Question"} {index+1} / {questions.length}</span><span className="text-muted-foreground">{ar?"اختر إجابة واحدة":"Choose one answer"}</span></div>
     <progress aria-label={ar?"تقدم الاختبار":"Quiz progress"} value={index} max={questions.length} className="h-1.5 w-full accent-primary" />

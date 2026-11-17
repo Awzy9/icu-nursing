@@ -31,7 +31,7 @@ describe("PathDetail", () => {
   it("reflects real recorded activity, not a view, as step completion", () => {
     const lessonStep = path.steps.find((s) => s.type === "topics")!;
     render(
-      <LearningProvider accountId="account-a" initial={{ attempts: [], bookmarks: [], lessons: [{ key: lessonStep.key, title: lessonStep.title, type: "topics", href: lessonStep.href, completed: true, at: 1 }] }}>
+      <LearningProvider accountId="account-a" initial={{ attempts: [], bookmarks: [], lessons: [{ key: lessonStep.key, title: lessonStep.title, type: "topics", href: lessonStep.href, completed: true, at: 1 }], sessions: [] }}>
         <PathDetail path={path} locale="en" />
       </LearningProvider>,
     );
@@ -41,7 +41,7 @@ describe("PathDetail", () => {
   it("shows a completion summary only once every step is done, and never overstates it as certification", () => {
     const lessons = path.steps.filter((s) => s.type !== "questions").map((s) => ({ key: s.key, title: s.title, type: s.type, href: s.href, completed: true, at: 1 }));
     const attempts = path.steps.filter((s) => s.type === "questions").flatMap((s) => Array.from({ length: s.questionCount! }, (_, i) => ({ id: `${s.key}-${i}`, title: s.title, href: s.href, correct: true, at: 1 })));
-    render(<LearningProvider accountId="account-a" initial={{ attempts, bookmarks: [], lessons }}><PathDetail path={path} locale="en" /></LearningProvider>);
+    render(<LearningProvider accountId="account-a" initial={{ attempts, bookmarks: [], lessons, sessions: [] }}><PathDetail path={path} locale="en" /></LearningProvider>);
     expect(screen.getByText(`${path.steps.length}/${path.steps.length} · 100%`)).toBeVisible();
     expect(screen.getByText(/not a certification of clinical competence/)).toBeVisible();
   });
