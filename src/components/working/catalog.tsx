@@ -1,0 +1,15 @@
+import { Link } from "@/i18n/navigation";
+import { workingContent, workingLabels, workingTypes } from "@/lib/working";
+export function WorkingNotice({ locale }: { locale: string }) {
+  return <aside role="note" className="rounded-lg border border-border bg-muted p-4 text-sm"><strong>{locale === "ar" ? "نسخة العمل الحالية" : "Current working edition"}</strong><p className="mt-1">{locale === "ar" ? "المحتوى الكامل الذي أُعدّ للمشروع. مسودات تعليمية لم تُعتمد سريرياً بعد. المحتوى الأصلي باللغة الإنجليزية؛ تظهر حدوده ومراجعه داخل كل وحدة." : "The full content prepared for this project. These educational drafts are not yet clinically approved. Original content is in English; each module retains its evidence gaps, limitations and references."}</p></aside>;
+}
+export function WorkingCatalog({ locale, type, query = "" }: { locale: string; type?: string; query?: string }) {
+  const all = workingContent(), ar = locale === "ar", q = query.trim().toLowerCase().slice(0, 100);
+  const groups = workingTypes.filter((t) => !type || t === type).map((t) => ({ type: t, items: all.filter((e) => e.type === t && (!q || `${e.title} ${e.key} ${e.category}`.toLowerCase().includes(q))) }));
+  return <div className="space-y-6">
+    <header className="space-y-2"><h1 className="text-3xl font-bold">{type ? workingLabels[type]?.[ar ? 1 : 0] : ar ? "محتوى التعلّم" : "Learning content"}</h1><p className="text-muted-foreground">{ar ? "تصفح المواضيع والمهارات والوحدات التي أُعدّت حتى الآن." : "Browse the topics, skills and modules prepared so far."}</p></header>
+    <WorkingNotice locale={locale} />
+    <form role="search" className="flex gap-2"><label className="sr-only" htmlFor="working-search">{ar ? "بحث في المحتوى" : "Search content"}</label><input id="working-search" name="q" type="search" maxLength={100} defaultValue={query} placeholder={ar ? "ابحث بالعنوان أو الرمز" : "Search by title or code"} className="min-h-11 min-w-0 flex-1 rounded-md border border-border bg-card px-3"/><button className="min-h-11 rounded-md bg-primary px-5 text-primary-foreground">{ar ? "بحث" : "Search"}</button></form>
+    {groups.map((g) => <section key={g.type} className="space-y-3"><h2 className="text-xl font-semibold">{workingLabels[g.type]?.[ar ? 1 : 0]} <span className="text-muted-foreground">({g.items.length})</span></h2>{g.type === "questions" ? <p className="text-sm text-muted-foreground">{g.items.reduce((n, e) => n + e.questionCount, 0)} {ar ? "سؤال مع الإجابات والتفسيرات" : "questions with answers and explanations"}</p> : null}<div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">{g.items.map((e) => <Link key={e.key} href={`/working/${e.key}`} className="block rounded-lg border border-border bg-card p-4 text-foreground no-underline hover:border-primary"><span className="text-xs text-muted-foreground">{e.key} · {e.category}</span><h3 lang="en" dir="ltr" className="mt-2 font-semibold">{e.title}</h3><p className="mt-2 text-sm text-primary">{ar ? "فتح الوحدة ←" : "Open module →"}</p></Link>)}</div>{!g.items.length ? <p>{ar ? "لا توجد نتائج." : "No matching modules."}</p> : null}</section>)}
+  </div>;
+}

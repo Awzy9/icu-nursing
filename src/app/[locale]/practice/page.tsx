@@ -1,3 +1,5 @@
+import { workingEditionEnabled, workingQuery } from "@/lib/working";
+import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ClipboardCheck } from "lucide-react";
 import { Callout } from "@/components/ui/feedback";
@@ -17,9 +19,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("title"), robots: { index: false, follow: false } };
 }
 
-export default async function PracticeHub({ params }: { params: Promise<{ locale: string }> }) {
+export default async function PracticeHub({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} type="practice" />;
   const t = await getTranslations("Practice");
   const mode = resolveMode();
   if (mode === "disabled") {

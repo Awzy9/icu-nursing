@@ -1,3 +1,5 @@
+import { workingEditionEnabled, workingQuery } from "@/lib/working";
+import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Callout } from "@/components/ui/feedback";
 import { EquipmentList } from "@/components/equipment/equipment-list";
@@ -16,9 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("title"), robots: { index: false, follow: false } };
 }
 
-export default async function EquipmentPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function EquipmentPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} type="equipment" />;
   const t = await getTranslations("Equipment");
   const mode = resolveMode();
   if (mode === "disabled") {
