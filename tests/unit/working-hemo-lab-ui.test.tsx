@@ -5,21 +5,23 @@ import { HemoLab } from "@/components/working/hemo-lab";
 afterEach(() => cleanup());
 
 describe("HemoLab", () => {
-  it("shows the normal pattern label for the default settings", () => {
+  it("explains the reference values and identifies MAP as an estimate", () => {
     render(<HemoLab locale="en" />);
-    expect(screen.getByText("Normal", { selector: "div" })).toBeVisible();
+    expect(screen.getByText("Estimated MAP")).toBeVisible();
+    expect(screen.getByText(/Preserved pressure alone/)).toBeVisible();
   });
 
-  it("shows the distributive pattern label when the septic-shock scenario is selected", () => {
+  it("explains that a teaching preset cannot diagnose sepsis", () => {
     render(<HemoLab locale="en" />);
-    fireEvent.click(screen.getByRole("button", { name: "Septic (distributive) shock" }));
-    expect(screen.getByText(/Distributive pattern/)).toBeVisible();
+    fireEvent.click(screen.getByRole("button", { name: "Distributive example" }));
+    expect(screen.getByText(/cannot establish sepsis/)).toBeVisible();
   });
 
-  it("explicitly discloses the cardiogenic/obstructive ambiguity rather than forcing one answer", () => {
+  it("reports an invalid pressure pair instead of calculating resistance", () => {
     render(<HemoLab locale="en" />);
-    fireEvent.click(screen.getByRole("button", { name: "Cardiogenic or obstructive shock" }));
-    expect(screen.getByText(/cannot distinguish from these numbers alone/)).toBeVisible();
+    fireEvent.change(screen.getByLabelText(/Systolic BP/), { target: { value: "50" } });
+    expect(screen.getByRole("alert")).toHaveTextContent("Systolic pressure must exceed diastolic pressure");
+    expect(screen.getByText("SVR").parentElement).toHaveTextContent("—");
   });
 
   it("moving a slider changes the cardiac output readout", () => {
