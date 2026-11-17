@@ -9,6 +9,7 @@ test("choose an answer before feedback and see mistakes in revision",async({page
  await expect(page.getByText("Correct choice:",{exact:false})).toHaveCount(0);
  await check.click();
  await expect(page.getByRole("status")).toContainText("Correct choice: D");
+ if (!(await page.getByRole("link",{name:"Study",exact:true}).isVisible())) await page.getByRole("button",{name:"Menu",exact:true}).click();
  await page.getByRole("link",{name:"Study",exact:true}).click();
  await expect(page.getByRole("link",{name:/Recognising possible sepsis/})).toBeVisible();
 });
