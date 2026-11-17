@@ -21,10 +21,10 @@ export function LearningProvider({accountId,initial=emptyLearning,loadError,chil
    setBusy(true);
    try{
     const result=await saveLearningAnswer({id:a.id,moduleKey:a.href.split("/").pop(),choice:a.choice,at:a.at});
-    if(!result.ok){setError(result.error);setPending(p=>{const n=[...p.filter(x=>x.id!==a.id),a];persist(n);return n;});return;}
-    setState(s=>({...s,attempts:[...s.attempts.filter(x=>x.id!==a.id),a]}));
+    if(!result.ok){setError(result.error);setPending(p=>{const n=p.some(x=>x.id===a.id&&x.at>a.at)?p:[...p.filter(x=>x.id!==a.id),a];persist(n);return n;});return;}
+    setState(s=>s.attempts.some(x=>x.id===a.id&&x.at>a.at)?s:({...s,attempts:[...s.attempts.filter(x=>x.id!==a.id),a]}));
     setPending(p=>{const n=p.filter(x=>x.id!==a.id||x.at>a.at);persist(n);return n;});setError(null);
-   }catch{setError("Could not save your answer. Retry when you are online.");setPending(p=>{const n=[...p.filter(x=>x.id!==a.id),a];persist(n);return n;});}finally{setBusy(false);}
+   }catch{setError("Could not save your answer. Retry when you are online.");setPending(p=>{const n=p.some(x=>x.id===a.id&&x.at>a.at)?p:[...p.filter(x=>x.id!==a.id),a];persist(n);return n;});}finally{setBusy(false);}
  }
  async function bookmark(module:SavedModule,saved:boolean){
    if(!accountId){setError("Sign in to save bookmarks to your account.");return;}
