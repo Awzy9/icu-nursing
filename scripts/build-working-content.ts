@@ -10,6 +10,7 @@ function prose(value: unknown, depth = 3): string {
   if (typeof value === "boolean") return value ? "Yes" : "No";
   if (Array.isArray(value)) return value.map((v) => typeof v === "object" && v !== null ? `\n${prose(v, depth)}\n` : `- ${prose(v, depth)}`).join("\n");
   const obj = value as Record<string, unknown>;
+  if (typeof obj.name === "string" && "explanation" in obj) return `${"#".repeat(Math.min(depth,5))} ${obj.name}\n\n${prose(obj.explanation,depth+1)}\n\n${obj.sources ? "Sources: " + prose(obj.sources) : ""}`;
   if (typeof obj.text === "string") return [obj.text, ...Object.entries(obj).filter(([k]) => k !== "text" && !omitted.has(k)).map(([k, v]) => `**${label(k)}:** ${prose(v, depth)}`)].join("\n\n");
   return Object.entries(obj).filter(([k]) => !omitted.has(k)).map(([k, v]) => k === "items" ? prose(v, depth) : `${"#".repeat(Math.min(depth, 5))} ${label(k)}\n\n${prose(v, depth + 1)}`).join("\n\n");
 }
@@ -43,7 +44,7 @@ export function buildWorkingContent(root = "."): WorkingEntry[] {
   for (const [dir, keys] of Object.entries(fields)) {
     for (const f of readdirSync(path.join(base, dir)).filter((f) => /^(SK|MD|SC|EQ|PX)-\d+.*\.json$/.test(f)).sort()) {
       const d = JSON.parse(readFileSync(path.join(base, dir, f), "utf8"));
-      out.push({ key: d.skill_id ?? d.med_id ?? d.scenario_id ?? d.equipment_id ?? d.practice_id, type: dir === "scenarios" ? "cases" : dir, title: d.title ?? d.name, category: d.category ?? d.domain ?? d.area ?? dir, body: keys.filter((k) => d[k] != null).map((k) => `## ${label(k)}\n\n${prose(d[k])}`).join("\n\n"), questionCount: 0 });
+      out.push({ key: d.skill_id ?? d.med_id ?? d.scenario_id ?? d.equipment_id ?? d.practice_id, type: dir === "scenarios" ? "cases" : dir, title: d.title ?? d.name, category: d.category ?? d.domain ?? d.area ?? dir, body: keys.filter((k) => d[k] != null).map((k) => k === "sections" ? Object.entries(d.sections).map(([heading,value]) => `## ${label(heading)}\n\n${prose(value)}`).join("\n\n") : k === "diagram" ? `## Equipment overview\n\n${prose(d.diagram.parts)}` : `## ${label(k)}\n\n${prose(d[k])}`).join("\n\n"), questionCount: 0 });
     }
   }
   for (const entry of out) {
