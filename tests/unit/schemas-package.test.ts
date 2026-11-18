@@ -34,7 +34,7 @@ describe("@icu/schemas is portable (usable by React Native / Expo as well as the
     expect(casesShim.caseAttemptSchema).toBe(cases.caseAttemptSchema);
     expect(casesShim.CaseError).toBe(cases.CaseError);
     expect(qbShim.QuestionBankError).toBe(qb.QuestionBankError);
-    expect(Object.keys(pkg).sort()).toEqual(["accountDeletion", "cases", "content", "equipment", "equipmentState", "medications", "practice", "questionBank", "skills", "subscription"]);
+    expect(Object.keys(pkg).sort()).toEqual(["accountDeletion", "cases", "content", "equipment", "equipmentState", "medications", "practice", "questionBank", "skills", "subscription", "workingContent", "workingProgress"]);
     for (const f of ["src/lib/question-bank/types.ts", "src/lib/cases/types.ts", "src/lib/skills/types.ts", "src/lib/medications/types.ts", "src/lib/equipment/types.ts", "src/lib/equipment/state.ts", "src/lib/content/types.ts", "src/lib/account/deletion.ts"])
       expect(readFileSync(path.resolve(__dirname, "../..", f), "utf8")).toMatch(/export \* from "@icu\/schemas\/[a-z-]+";/);
   });

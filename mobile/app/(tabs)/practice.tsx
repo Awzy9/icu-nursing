@@ -1,19 +1,21 @@
-import { cases } from "../../src/core/content";
-import { localized } from "../../src/core/i18n";
-import { H1, H2, NavCard, P, Screen } from "../../src/ui/components";
+import { H1, H2, NavCard, RemoteGate, Screen } from "../../src/ui/components";
 import { useApp } from "../../src/state/app";
+import { useCatalogList } from "../../src/hooks/useRemoteContent";
 
 export default function Practice() {
-  const { t, locale, progress } = useApp();
+  const { t, progress } = useApp();
+  const cases = useCatalogList("cases");
   return (
     <Screen>
       <H1>{t("practice.title")}</H1>
-      <NavCard href="/quiz" title={t("quiz.title")} body={t("hub.questionsBody")} badge={t("common.sample")} />
+      <NavCard href="/quiz" title={t("quiz.title")} body={t("hub.questionsBody")} />
+      <NavCard href="/labs" title={t("hub.labs")} body={t("hub.labsBody")} />
       <H2>{t("cases.title")}</H2>
-      {cases.map((c) => (
-        <NavCard key={c.code} href={{ pathname: "/cases/[code]", params: { code: c.code } }} title={localized(c.title, locale)} body={progress.cases[c.code] ? t("cases.score", { score: Math.round(progress.cases[c.code]!.scoreTenths / 10) }) : undefined} badge={t("common.sample")} />
-      ))}
-      {cases.length === 0 ? <P>{t("common.notFound")}</P> : null}
+      <RemoteGate state={cases} onRetry={cases.refresh} empty={(items) => items.length === 0}>
+        {(items) => items.map((c) => (
+          <NavCard key={c.key} href={`/cases/${c.key}`} title={c.title} body={progress.cases[c.key] ? t("cases.score", { score: Math.round(progress.cases[c.key]!.scoreTenths / 10) }) : undefined} />
+        ))}
+      </RemoteGate>
     </Screen>
   );
 }

@@ -1,4 +1,8 @@
-// Typed read access to the SYNTHETIC nonclinical fixtures (packages/fixtures). The app never loads clinical drafts: this module is the only content source.
+// Typed read access to the SYNTHETIC nonclinical fixtures (packages/fixtures). Used ONLY by the
+// automated test suite (tests/mobile/*.test.ts), to exercise the engine logic (case branching,
+// question practice) against fixed, offline, deterministic data, matching the web app's own
+// fixture-based tests. The shipped app screens read real content through core/remoteContent.ts
+// instead (see docs/phase12/SHARED_SCHEMAS.md) - this module is never imported from app/.
 import equipmentRaw from "@icu/fixtures/equipment.json";
 import skillsRaw from "@icu/fixtures/skills.json";
 import medicationsRaw from "@icu/fixtures/medications.json";

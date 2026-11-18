@@ -10,3 +10,5 @@ export * as practice from "./practice";
 export * as questionBank from "./question-bank";
 export * as skills from "./skills";
 export * as subscription from "./subscription";
+export * as workingContent from "./working-content";
+export * as workingProgress from "./working-progress";
