@@ -180,6 +180,42 @@ function CrrtCircuitVisual({ locale }: { locale: string }) {
   );
 }
 
+const bloodBag: Visual = {
+  file: "blood-bag",
+  width: 360,
+  height: 510,
+  alt: ["A whole-blood bag with a printed product label, ports and tubing.", "كيس دم كامل عليه ملصق المنتج وتظهر منافذه والأنبوب."],
+  label: ["Locate the label and ports on a blood bag", "حدّد ملصق كيس الدم ومنافذه"],
+  detail: ["Find the printed label, ports and tubing on this example whole-blood bag. Other blood components have their own labels.", "حدّد الملصق والمنافذ والأنبوب في هذا المثال لكيس دم كامل. لمكوّنات الدم الأخرى ملصقاتها الخاصة."],
+  source: "Blood_bag.jpg",
+  credit: "DtheZombie",
+  license: "BY-SA 3.0",
+};
+
+const foleyCatheter: Visual = {
+  file: "foley-catheter",
+  width: 875,
+  height: 875,
+  alt: ["Anatomical illustration of a Foley catheter with its retention balloon inside the bladder.", "رسم تشريحي لقسطرة فولي يظهر بالون التثبيت داخل المثانة."],
+  label: ["See where a Foley catheter sits", "تعرّف على موضع قسطرة فولي"],
+  detail: ["Follow the catheter into the bladder and locate the retention balloon. The drawing shows the final position.", "تتبّع القسطرة حتى المثانة وحدّد بالون التثبيت. يوضّح الرسم موضع القسطرة بعد تركيبها."],
+  source: "Foley_Catheter.png",
+  credit: "BruceBlaus",
+  license: "BY-SA 4.0",
+};
+
+const centralLine: Visual = {
+  file: "central-line",
+  width: 296,
+  height: 875,
+  alt: ["A central venous catheter with a chest dressing and three external lumens.", "قسطرة وريدية مركزية مع ضماد على الصدر وثلاثة فروع خارجية."],
+  label: ["Identify the external parts of a central line", "تعرّف على الأجزاء الخارجية للقسطرة المركزية"],
+  detail: ["Find the dressing over the insertion area and follow the three external branches to their connectors.", "حدّد الضماد فوق منطقة الإدخال وتتبّع الفروع الخارجية الثلاثة حتى وصلاتها."],
+  source: "Central-venous-catheter.png",
+  credit: "Fireman biff",
+  license: "BY-SA 3.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -208,6 +244,12 @@ const visuals: Record<string, Visual> = {
   "SK-04": endotrachealTube,
   "D01-T12": endotrachealTube,
   "SK-03": ivCatheter,
+  "SK-09": bloodBag,
+  "D08-T03": bloodBag,
+  "SK-12": foleyCatheter,
+  "D04-T03": foleyCatheter,
+  "SK-02": centralLine,
+  "D06-T05": centralLine,
 };
 
 export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
