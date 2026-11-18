@@ -12,7 +12,7 @@ type Visual = {
   detail: Translation;
   source: string;
   credit: string;
-  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0";
+  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0" | "Public domain";
   cropped?: boolean;
 };
 
@@ -279,6 +279,42 @@ function TransportVisual({ locale }: { locale: string }) {
   );
 }
 
+const pupillometer: Visual = {
+  file: "pupillometer",
+  width: 584,
+  height: 875,
+  alt: ["A handheld automated pupillometer with an eyecup and display.", "مقياس حدقة آلي محمول مزوّد بكأس للعين وشاشة."],
+  label: ["Recognise a pupillometer", "تعرّف على جهاز قياس الحدقة"],
+  detail: ["Locate the eyecup beside the display. This is one example of a device used to assess the pupils.", "حدّد كأس العين بجوار الشاشة. هذا مثال على جهاز يُستخدم لتقييم حدقتي العين."],
+  source: "Pupillometer_neurolight.jpg",
+  credit: "IDMED",
+  license: "BY-SA 4.0",
+};
+
+const semiFowler: Visual = {
+  file: "semi-fowler",
+  width: 301,
+  height: 201,
+  alt: ["A person lying in a hospital bed with the upper section of the bed raised.", "شخص مستلقٍ على سرير مستشفى مع رفع الجزء العلوي من السرير."],
+  label: ["Recognise the semi-Fowler position", "تعرّف على وضعية نصف فاولر"],
+  detail: ["Look at how the bed supports the upper body at an incline. Use the position and head-of-bed angle specified in the patient’s care plan.", "لاحظ كيف يدعم السرير الجزء العلوي من الجسم بزاوية مائلة. اتبع الوضعية وزاوية رفع رأس السرير المحددتين في خطة رعاية المريض."],
+  source: "Semi-Fowler's_position.jpg",
+  credit: "Glynda Rees Doyle and Jodie Anita McCutcheon",
+  license: "BY 4.0",
+};
+
+const handwashing: Visual = {
+  file: "handwashing",
+  width: 950,
+  height: 710,
+  alt: ["A person washing their hands under running water at a sink.", "شخص يغسل يديه تحت الماء الجاري عند المغسلة."],
+  label: ["Handwashing at the sink", "غسل اليدين عند المغسلة"],
+  detail: ["This photo illustrates handwashing with running water. See the lesson for when to use soap and water or alcohol-based hand rub.", "توضّح الصورة غسل اليدين بالماء الجاري. راجع الدرس لمعرفة متى يُستخدم الماء والصابون أو مطهّر اليدين الكحولي."],
+  source: "Person_washing_hands.jpg",
+  credit: "CDC, Kimberly Smith and Christine Ford",
+  license: "Public domain",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -316,6 +352,12 @@ const visuals: Record<string, Visual> = {
   "SK-11": nasogastricTube,
   "SK-06": suctionCatheter,
   "D01-T11": suctionCatheter,
+  "SK-24": pupillometer,
+  "D03-T03": pupillometer,
+  "SK-15": semiFowler,
+  "D06-T07": semiFowler,
+  "SK-21": handwashing,
+  "D06-T04": handwashing,
 };
 
 function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) {
@@ -343,7 +385,7 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
         <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>
         <p className="text-xs text-muted-foreground" lang="en">
           <a className="underline" href={`https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
-          <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a> · {visual.cropped ? "Cropped and converted to WebP" : "WebP version, resized where applicable"}
+          {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a>} · {visual.cropped ? "Cropped and converted to WebP" : "WebP version, resized where applicable"}
         </p>
       </figcaption>
     </figure>
