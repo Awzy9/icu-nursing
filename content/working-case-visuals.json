@@ -8,7 +8,17 @@
   },
   "rhythm": {
     "caseKey": "SC-12",
-    "positions": [1, 2],
+    "positions": [
+      1,
+      2
+    ],
     "exerciseKey": "ECG-05"
-  }
+  },
+  "oxygenTrend": [
+    "SC-03",
+    "SC-04",
+    "SC-05",
+    "SC-06",
+    "SC-18"
+  ]
 }

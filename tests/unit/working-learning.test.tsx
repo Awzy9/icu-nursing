@@ -66,6 +66,18 @@ describe("interactive learning",()=>{
    fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
    expect(screen.getByRole("img",{name:/Ventilator on a wheeled stand/i})).toBeVisible();
  });
+ it("reveals respiratory readings only as the learner reaches each step",()=>{
+   const respiratory=buildWorkingContent().find(entry=>entry.key==="SC-03")!;
+   render(<ScenarioPlayer locale="en" moduleKey={respiratory.key} title={respiratory.title} scenario={respiratory.scenario!}/>);
+   expect(screen.getByText("90%")).toBeVisible();
+   expect(screen.queryByText("88%")).not.toBeInTheDocument();
+   fireEvent.click(screen.getAllByRole("radio")[0]!);
+   fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+   expect(screen.queryByText("88%")).not.toBeInTheDocument();
+   fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+   expect(screen.getByText("88%")).toBeVisible();
+   expect(screen.getByText("90%")).toBeVisible();
+ });
  it("does not disclose exercise feedback before checking",()=>{
    render(<PracticePlayer locale="en" exercise={{kind:"choice",setup:"Setting",options:[{id:"a",text:"Choice A",correct:true,feedback:"Authored feedback"}]}}/>);
    expect(screen.queryByText("Authored feedback")).not.toBeInTheDocument();
