@@ -161,20 +161,20 @@
      "verified": "2026-11-14"
     },
     {
-     "id": "S-NICE-CG103",
-     "licence_class": "RED",
-     "verified": "2026-11-14"
-    },
-    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SFDA-PULSE-OX-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "a6bac976b49f205c"
+   "hash": "667bf68ff9e4dd67"
   },
   {
    "key": "D01-T07",
@@ -219,7 +219,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "8e162b9fd21d964d"
+   "hash": "d56b9e8b566616e3"
   },
   {
    "key": "D02-T08",

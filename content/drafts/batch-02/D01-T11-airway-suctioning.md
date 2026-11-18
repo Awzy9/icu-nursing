@@ -43,8 +43,8 @@ Retained secretions block gas exchange, but unnecessary or poorly performed suct
 - Do **not** instil normal saline routinely (evidence level B): it may worsen oxygenation and cause coughing, bronchospasm, rises in heart rate and ICP and may dislodge biofilm. Thick secretions are best raised with the team (the guideline sections read do not cover humidification or hydration).
 - Keep each suctioning event as **brief as possible, no longer than 15 seconds** (evidence level C).
 - Use the **shallow** technique routinely; use deep suctioning only when shallow suctioning is ineffective, aware of airway-trauma risk (evidence level B).
-- Use the **lowest effective suction pressure**; the document gives an upper limit of −200 mm Hg for adults (evidence level C) and −120 mm Hg for neonates and children.
-- Follow the unit's policy on stopping and escalating if desaturation, arrhythmia, haemodynamic change or distress occurs; AARC lists these as potential complications and mitigation strategies but gives no stop criteria.
+- Use the **lowest effective suction pressure**; the AARC adult ceiling is a vacuum magnitude of 200 mm Hg (evidence level C). On a signed gauge, a value more negative than −200 mm Hg is stronger suction. Follow the unit’s prescribed range and device instructions.
+- Stop suctioning and reassess promptly if significant desaturation, arrhythmia, instability or distress develops. Restore oxygenation and ventilation and summon urgent help for persistent or severe deterioration under the local airway emergency pathway.
 - Routine bronchoscopy for secretion removal is not recommended (a medical/respiratory therapy decision); devices to clear a blocked tube are supported when resistance rises due to secretions.
 
 ## 8. Monitoring parameters
@@ -60,7 +60,7 @@ During and after suctioning: SpO₂ and heart rate continuously; blood pressure 
 | Saline | Generally avoid (B) | Do not instil routinely |
 | Sterile procedure for open suctioning | Recommended (C) | Technique policy |
 | Catheter size | **Inconsistent within the document:** abstract says catheters should occlude less than 70% of the lumen in neonates and less than 50% in children and adults; Table 1 says less than 70% in infants, children and adults; the body text restates the 2010 value of less than 50% (children/adults) and less than 70% (neonates), and says the optimal ratio is not known (C) | **Do not teach a single ratio as settled**; follow unit policy |
-| Pressure | Below −200 mm Hg adults, below −120 mm Hg neonates/children; as low as effective (C) | Check the wall-suction gauge per policy |
+| Pressure | Adult vacuum magnitude should not exceed 200 mm Hg; use the lowest effective suction (C) | Check the wall-suction gauge per policy |
 | Duration | No longer than 15 s (C; the committee's appropriateness score appears as 7 in the text and 9 in Table 1) | Brief |
 | Depth | Shallow routinely; deep only if shallow ineffective (B) | Avoid trauma |
 | Bronchoscopy | Not routine (C) | Medical decision |
