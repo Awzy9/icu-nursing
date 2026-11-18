@@ -25,6 +25,8 @@ const LAB_LINKS: Record<string, { href: string; label: [string, string] }[]> = {
   "SK-17": [{ href: "/crrt", label: ["Try the CRRT circuit laboratory", "جرّب مختبر دائرة العلاج الكلوي المستمر"] }],
   "D03-T01": [{ href: "/gcs", label: ["Try the Glasgow Coma Scale trainer", "جرّب مدرّب مقياس غلاسكو للغيبوبة"] }],
   "SK-24": [{ href: "/gcs", label: ["Try the Glasgow Coma Scale trainer", "جرّب مدرّب مقياس غلاسكو للغيبوبة"] }],
+  "EQ-04": [{ href: "/infusion-practice", label: ["Try the infusion-rate practice problems", "جرّب تمارين حساب معدل التسريب"] }],
+  "SK-22": [{ href: "/infusion-practice", label: ["Try the infusion-rate practice problems", "جرّب تمارين حساب معدل التسريب"] }],
 };
 export function ModuleReader({entry,locale}:{entry:WorkingEntry;locale:string}) {
  const ar=locale==="ar", [tab,setTab]=useState(entry.type==="questions"?"quiz":entry.scenario?"scenario":entry.practice?"practice":"read"),[active,setActive]=useState(0),[checks,setChecks]=useState<string[]>([]);

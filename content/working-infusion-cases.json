@@ -1,0 +1,38 @@
+[
+ {
+  "key": "INF-01",
+  "drugRef": "MD-01",
+  "vignette": "Norepinephrine is prescribed at 0.1 mcg/kg/min for a patient weighing 70 kg. The pharmacy premix is 4 mg in 250 mL (16 mcg/mL).",
+  "order": { "kind": "mcg/kg/min", "doseOrdered": 0.1, "weightKg": 70, "concentrationMcgPerMl": 16 },
+  "options": [26.3, 6.7, 1.1, 112],
+  "answerIndex": 0,
+  "explanation": "Rate (mL/hr) = (dose [mcg/kg/min] x weight [kg] x 60) / concentration [mcg/mL] = (0.1 x 70 x 60) / 16 = 26.25, rounded to 26.3 mL/hr."
+ },
+ {
+  "key": "INF-02",
+  "drugRef": "MD-31",
+  "vignette": "Dopamine is prescribed at 5 mcg/kg/min for a patient weighing 80 kg. The pharmacy premix is 400 mg in 250 mL (1600 mcg/mL).",
+  "order": { "kind": "mcg/kg/min", "doseOrdered": 5, "weightKg": 80, "concentrationMcgPerMl": 1600 },
+  "options": [15, 24, 7.5, 40],
+  "answerIndex": 0,
+  "explanation": "Rate (mL/hr) = (5 x 80 x 60) / 1600 = 24000 / 1600 = 15 mL/hr."
+ },
+ {
+  "key": "INF-03",
+  "drugRef": "MD-16",
+  "vignette": "Amiodarone maintenance infusion is prescribed at 30 mg/hr. The pharmacy premix is 900 mg in 500 mL (1.8 mg/mL).",
+  "order": { "kind": "mg/hr", "doseOrdered": 30, "concentrationMgPerMl": 1.8 },
+  "options": [16.7, 54, 30, 1.8],
+  "answerIndex": 0,
+  "explanation": "This is a simple (non-weight-based) order: rate (mL/hr) = dose [mg/hr] / concentration [mg/mL] = 30 / 1.8 = 16.67, rounded to 16.7 mL/hr."
+ },
+ {
+  "key": "INF-04",
+  "drugRef": "MD-30",
+  "vignette": "Phenylephrine is prescribed at 0.05 mcg/kg/min for a patient weighing 60 kg. The pharmacy premix is 10 mg in 250 mL (40 mcg/mL).",
+  "order": { "kind": "mcg/kg/min", "doseOrdered": 0.05, "weightKg": 60, "concentrationMcgPerMl": 40 },
+  "options": [4.5, 3, 180, 0.08],
+  "answerIndex": 0,
+  "explanation": "Rate (mL/hr) = (0.05 x 60 x 60) / 40 = 180 / 40 = 4.5 mL/hr."
+ }
+]
