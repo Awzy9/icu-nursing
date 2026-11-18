@@ -315,6 +315,42 @@ const handwashing: Visual = {
   license: "Public domain",
 };
 
+const glucoseMeter: Visual = {
+  file: "glucose-meter",
+  width: 656,
+  height: 875,
+  alt: ["A handheld blood glucose meter with a digital display.", "جهاز محمول لقياس سكر الدم مزوّد بشاشة رقمية."],
+  label: ["Blood glucose meter", "جهاز قياس سكر الدم"],
+  detail: ["The test strip is visible at the top of the meter.", "يظهر شريط الفحص في الجزء العلوي من الجهاز."],
+  source: "(20250417)_Blood_glucose_meter_07.jpg",
+  credit: "Roy Zuo",
+  license: "BY-SA 4.0",
+};
+
+const bloodCulture: Visual = {
+  file: "blood-culture",
+  width: 950,
+  height: 713,
+  alt: ["A gloved hand holds a clear blood culture bottle.", "يد ترتدي قفازًا تمسك بزجاجة شفافة لمزرعة الدم."],
+  label: ["Blood culture bottle", "زجاجة مزرعة الدم"],
+  detail: ["This is an example of a bottle used to collect a blood sample for culture.", "هذا مثال على زجاجة تُستخدم لجمع عينة دم للزرع."],
+  source: "Blood_culture_bottle_without_growth_of_organisms.jpg",
+  credit: "Ajay Kumar Chaurasiya",
+  license: "BY-SA 4.0",
+};
+
+const citrateTube: Visual = {
+  file: "citrate-tube",
+  width: 950,
+  height: 713,
+  alt: ["A blue-capped citrate tube containing a blood sample.", "أنبوب سترات بغطاء أزرق يحتوي على عينة دم."],
+  label: ["Citrate tube for coagulation testing", "أنبوب سترات لاختبارات التخثر"],
+  detail: ["This photo shows a blood sample in a citrate collection tube.", "تُظهر الصورة عينة دم في أنبوب جمع يحتوي على السترات."],
+  source: "Blood_in_Citrate_Tube_for_Coagulation_Test.jpg",
+  credit: "Ajay Kumar Chaurasiya",
+  license: "BY-SA 4.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -358,6 +394,10 @@ const visuals: Record<string, Visual> = {
   "D06-T07": semiFowler,
   "SK-21": handwashing,
   "D06-T04": handwashing,
+  "D06-T01": bloodCulture,
+  "D02-T09": bloodCulture,
+  "D08-T02": citrateTube,
+  "MD-15": glucoseMeter,
 };
 
 function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) {
