@@ -40,6 +40,11 @@
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  },
+  {
+   "id": "L-POTASSIUM-CONC",
+   "read": "partial",
+   "use": "US concentrate label: fatal direct administration warning for the concentrate"
   }
  ],
  "sections": {
@@ -82,6 +87,14 @@
   "safety_alerts": {
    "support": "full",
    "items": [
+    {
+     "text": "Never administer potassium chloride by IV push or administer a concentrate as supplied. Check the product presentation and use a pharmacy-approved infusion preparation according to the order and local protocol.",
+     "support": "sourced",
+     "sources": [
+      "L-POTASSIUM",
+      "L-POTASSIUM-CONC"
+     ]
+    },
     {
      "text": "To avoid potassium intoxication, do not infuse these solutions rapidly.",
      "support": "sourced",

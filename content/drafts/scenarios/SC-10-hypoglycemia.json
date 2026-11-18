@@ -61,7 +61,7 @@
  "steps": [
   {
    "position": 1,
-   "info": "A routine bedside glucose check is low in a patient who is sweating and a little drowsy but answers questions and can swallow.",
+   "info": "A routine bedside glucose check is low in a patient who is sweating and alert, answers questions and can swallow safely.",
    "prompt": "What should you do?",
    "observations": [
     {
@@ -88,11 +88,11 @@
    ],
    "options": [
     {
-     "text": "Treat it as an emergency: give quick-acting carbohydrate by mouth as set out in the unit protocol and recheck the glucose within the interval the protocol sets.",
+     "text": "If the patient is alert enough to swallow safely, give rapid-acting carbohydrate under the local protocol and recheck glucose in 10–15 minutes, or sooner if they worsen.",
      "points": 2,
      "next": 2,
      "scope": "order_or_protocol_required",
-     "feedback": "The guideline treats hypoglycaemia as an emergency whatever the level of consciousness, gives quick-acting carbohydrate to a conscious patient who can swallow and rechecks the glucose after 10 to 15 minutes; amounts follow local protocol.",
+     "feedback": "Check swallowing safety before any oral treatment. The JBDS adult inpatient pathway recommends reassessing glucose 10–15 minutes after oral carbohydrate.",
      "consequence": "The patient takes the carbohydrate and you recheck the glucose.",
      "support": "partial",
      "sources": [
@@ -154,11 +154,11 @@
    ],
    "options": [
     {
-     "text": "Check airway, breathing and circulation, stop any intravenous insulin per protocol, call a doctor urgently, and prepare intravenous glucose or glucagon only as prescribed or as the local agreement allows.",
+     "text": "Activate emergency help, assess airway, breathing and circulation and give no oral carbohydrate. Follow the local parenteral rescue pathway immediately, including prescribed or protocol-authorised IV glucose or glucagon and review of any running IV insulin.",
      "points": 2,
      "next": 3,
      "scope": "escalation",
-     "feedback": "For an unconscious patient the guideline says to check ABC, stop intravenous insulin and contact a doctor urgently; intravenous glucose or glucagon is given as prescribed or under a local agreement.",
+     "feedback": "Poor responsiveness makes oral treatment unsafe. Give authorised parenteral rescue promptly while reassessing glucose and breathing.",
      "consequence": "The team arrives while the patient is supported and treatment is ready for them.",
      "support": "partial",
      "sources": [

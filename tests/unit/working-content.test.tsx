@@ -17,6 +17,52 @@ describe("working edition", () => {
     expect(workingEntry("../../secret")).toBeUndefined();
     vi.unstubAllEnvs();
   });
+  it("retains the safety conditions in the learner-facing arrest and anaphylaxis cases", () => {
+    const entries = buildWorkingContent();
+    const arrest = entries.find((entry) => entry.key === "SC-13")!.scenario!;
+    expect(arrest.steps[1]!.options[0]!.text).toMatch(/identifies a shockable rhythm/i);
+    expect(arrest.steps[2]!.info).toMatch(/confirmed ventricular fibrillation/i);
+
+    const anaphylaxis = entries.find((entry) => entry.key === "SC-19")!.scenario!;
+    expect(anaphylaxis.steps[0]!.options[0]!.text).toMatch(/give IM adrenaline immediately/i);
+    expect(anaphylaxis.steps[1]!.info).toMatch(/under the emergency protocol/i);
+  });
+  it("preserves high-alert medication safety and post-treatment monitoring in the working edition", () => {
+    const entries = buildWorkingContent();
+    const body = (key: string) => entries.find((entry) => entry.key === key)!.body;
+    expect(body("MD-19")).toContain("Never administer potassium chloride by IV push");
+    expect(body("MD-20")).toContain("cannot be substituted volume for volume");
+    expect(body("MD-15")).toContain("every 30 minutes for two hours and hourly through hour six");
+    expect(body("SC-11")).toContain("every 30 minutes for the first two hours");
+    expect(body("SK-18")).toContain("start CPR when indicated while the team verifies the ECG signal");
+  });
+  it("retains immediate escalation and ventilatory support in the airway cases", () => {
+    const entries = buildWorkingContent();
+    const scenario = (key: string) => entries.find((entry) => entry.key === key)!.scenario!;
+    expect(scenario("SC-04").steps[1]!.options[0]!.text).toMatch(/emergency help immediately.*alternative ventilation/);
+    expect(scenario("SC-05").steps[0]!.options[1]!.points).toBe(0);
+    expect(scenario("SC-05").steps[1]!.options[0]!.text).toContain("oral suction");
+    expect(scenario("SC-06").steps[1]!.options[0]!.text).toContain("bag-mask ventilation");
+  });
+  it("retains immediate escalation and early glucose checks in neurological emergencies", () => {
+    const entries = buildWorkingContent();
+    const scenario = (key: string) => entries.find((entry) => entry.key === key)!.scenario!;
+    expect(scenario("SC-07").steps[0]!.options[1]!.points).toBe(0);
+    expect(scenario("SC-07").steps[1]!.options[0]!.text).toContain("suction only when clinically indicated");
+    expect(scenario("SC-08").steps[0]!.options[0]!.text).toMatch(/bedside glucose.*Do not delay seizure treatment/);
+    expect(scenario("SC-20").steps[0]!.options[0]!.text).toContain("Escalate without waiting");
+  });
+  it("preserves immediate escalation and treatment boundaries in the remaining emergency cases", () => {
+    const entries = buildWorkingContent();
+    const best = (key: string, step: number) => entries.find((entry) => entry.key === key)!.scenario!.steps[step - 1]!.options.find((option) => option.points === 2)!.text;
+    expect(best("SC-01", 3)).toContain("do not flush it");
+    expect(best("SC-09", 1)).toContain("Activate urgent help");
+    expect(best("SC-10", 2)).toContain("give no oral carbohydrate");
+    expect(best("SC-12", 2)).toContain("synchronized cardioversion");
+    expect(best("SC-15", 2)).toContain("only when the trained team confirms");
+    expect(best("SC-16", 1)).toContain("without delaying escalation");
+    expect(best("SC-18", 1)).toContain("Stop the feed immediately");
+  });
   it("renders text safely and keeps answers behind a disclosure", () => {
     const {container} = render(<WorkingBody body={'# Example\n<script>alert(1)</script>\n**Q1 (test)**\n- A\n**Answer: A**\nRationale'} />);
     expect(container.querySelector("script")).toBeNull();

@@ -161,20 +161,20 @@
      "verified": "2026-11-14"
     },
     {
-     "id": "S-NICE-CG103",
-     "licence_class": "RED",
-     "verified": "2026-11-14"
-    },
-    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SFDA-PULSE-OX-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "a6bac976b49f205c"
+   "hash": "667bf68ff9e4dd67"
   },
   {
    "key": "D01-T07",
@@ -199,7 +199,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "4b62b6e463a09836"
+   "hash": "5815c6d11abef80e"
   },
   {
    "key": "D01-T11",
@@ -219,7 +219,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "8e162b9fd21d964d"
+   "hash": "d56b9e8b566616e3"
   },
   {
    "key": "D02-T08",
@@ -379,7 +379,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "398de61876c8cabb"
+   "hash": "f8a842a5b7def956"
   },
   {
    "key": "D07-T06",
@@ -449,7 +449,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "4c57b233e37e5726"
+   "hash": "f7b2d60670cf137a"
   },
   {
    "key": "D03-T01",
@@ -864,7 +864,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "7e672d8fa9316827"
+   "hash": "5deda5d616806095"
   },
   {
    "key": "D02-T02",
@@ -929,7 +929,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "91214d8ee8fdb5f8"
+   "hash": "c156d38bb7e0e688"
   },
   {
    "key": "D04-T08",
@@ -946,6 +946,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-MERCK-ACID-BASE",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -954,7 +959,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "da6cb4d74bb22059"
+   "hash": "645454a5dd022a0f"
   },
   {
    "key": "D04-T09",
@@ -2064,7 +2069,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "97e81b8d89ef0c57"
+   "hash": "f6ef67a5cf427b17"
   },
   {
    "key": "SK-18",
@@ -2086,6 +2091,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-BLS-ADULT-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -2094,7 +2104,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "fa201a69a332958c"
+   "hash": "32e1172913d631dc"
   },
   {
    "key": "SK-19",
@@ -2199,7 +2209,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "2252d39f0d9d458e"
+   "hash": "1755ca078c58fbe1"
   },
   {
    "key": "SK-23",
@@ -2309,7 +2319,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "51940c37382753df"
+   "hash": "1d69169ffff02b67"
   },
   {
    "key": "MD-02",
@@ -2344,7 +2354,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "aa66a146e535754e"
+   "hash": "45a12402c031b974"
   },
   {
    "key": "MD-03",
@@ -2484,7 +2494,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "49e720bb68a52f70"
+   "hash": "27ad690179e51201"
   },
   {
    "key": "MD-07",
@@ -2694,7 +2704,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "343aeb813bd96bdb"
+   "hash": "37be8ccf70626b9b"
   },
   {
    "key": "MD-13",
@@ -2729,7 +2739,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "b73b9c7bd46848d4"
+   "hash": "56916a74706ff025"
   },
   {
    "key": "MD-14",
@@ -2764,7 +2774,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "be82b78f2038c61e"
+   "hash": "a7e198f4eea3d7b2"
   },
   {
    "key": "MD-15",
@@ -2809,7 +2819,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d22fb293309a1a14"
+   "hash": "6fb1a4a1edf53ce1"
   },
   {
    "key": "MD-16",
@@ -2931,6 +2941,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "L-POTASSIUM-CONC",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2949,7 +2964,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ce33a13974d29510"
+   "hash": "3fce67ba8486ab4a"
   },
   {
    "key": "MD-20",
@@ -2966,6 +2981,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "N-UKKA-HK-2026-07",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2984,7 +3004,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a0d04fa49ba43f74"
+   "hash": "779b1f431fa002c3"
   },
   {
    "key": "MD-21",
@@ -3264,7 +3284,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "d5f0e1b3b9391913"
+   "hash": "4b7503cc404168cb"
   },
   {
    "key": "MD-29",
@@ -3509,7 +3529,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "65fe7bf21a150ae7"
+   "hash": "3699cc9a81c79c86"
   },
   {
    "key": "MD-36",
@@ -3684,7 +3704,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "4d392801923ed321"
+   "hash": "200d289334f0ca32"
   },
   {
    "key": "MD-41",
@@ -3719,7 +3739,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "5427b454eb7400bf"
+   "hash": "952cea2a43b82c8b"
   },
   {
    "key": "MD-42",
@@ -3789,7 +3809,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "02b4c6e1ee8a5220"
+   "hash": "d7619a976478e53a"
   },
   {
    "key": "MD-44",
@@ -4064,7 +4084,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 3,
-   "hash": "79b7dd8419fb5038"
+   "hash": "5b967476edd2e697"
   },
   {
    "key": "SC-02",
@@ -4104,7 +4124,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "4adc35851284fc48"
+   "hash": "1e53d552785656ba"
   },
   {
    "key": "SC-03",
@@ -4164,12 +4184,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "ce7d8cd9fce4709e"
+   "hash": "7b34547df6618840"
   },
   {
    "key": "SC-05",
@@ -4182,11 +4207,6 @@
    "sources": [
     {
      "id": "S-AARC-O2",
-     "licence_class": "RED",
-     "verified": "2026-11-14"
-    },
-    {
-     "id": "S-AARC-SUCT",
      "licence_class": "RED",
      "verified": "2026-11-14"
     },
@@ -4204,12 +4224,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "71c3605c5e21a531"
+   "hash": "b9ab95e3e3d87f08"
   },
   {
    "key": "SC-06",
@@ -4234,12 +4259,22 @@
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-FICM-UNPLANNED-EXTUBATION-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
+     "id": "S-RCUK-ABCDE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "b23284e6dc31e50f"
+   "hash": "af40dc13396d5600"
   },
   {
    "key": "SC-07",
@@ -4279,7 +4314,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "7e72646030483bda"
+   "hash": "3318b66d3e009a11"
   },
   {
    "key": "SC-08",
@@ -4309,12 +4344,17 @@
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NCS-ENLS-SE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "bca8e0af95b534a3"
+   "hash": "9477212f451ca72f"
   },
   {
    "key": "SC-09",
@@ -4359,7 +4399,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "23eca93ecdb2ba8d"
+   "hash": "8a2fd15bddd13dfc"
   },
   {
    "key": "SC-10",
@@ -4389,7 +4429,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 3,
-   "hash": "6cedc2554cfa8b98"
+   "hash": "cb9d3ef3fc0bdcc8"
   },
   {
    "key": "SC-11",
@@ -4419,7 +4459,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "43b36cf405649d27"
+   "hash": "6c52749b735999d9"
   },
   {
    "key": "SC-12",
@@ -4459,7 +4499,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "0256affa6d3c1480"
+   "hash": "967e8297f452a7ba"
   },
   {
    "key": "SC-13",
@@ -4484,7 +4524,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "9269e4f6596e5ce5"
+   "hash": "161573c3c5bac465"
   },
   {
    "key": "SC-14",
@@ -4549,7 +4589,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "83c7af97e5e141dc"
+   "hash": "b873db280a282b66"
   },
   {
    "key": "SC-16",
@@ -4594,7 +4634,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "2c3024d1d7f4fa9a"
+   "hash": "6198a16a65dd2da6"
   },
   {
    "key": "SC-17",
@@ -4624,7 +4664,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "c28c427308c4d156"
+   "hash": "6d9d3b5239b6cec8"
   },
   {
    "key": "SC-18",
@@ -4659,7 +4699,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "615fbdbf11a84e06"
+   "hash": "13c313cd7a73d621"
   },
   {
    "key": "SC-19",
@@ -4694,7 +4734,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "2f0c7e10a5094753"
+   "hash": "d80446263d19c5bb"
   },
   {
    "key": "SC-20",
@@ -4724,7 +4764,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "ad2b95e6f76dd62c"
+   "hash": "aef91c0efde398a6"
   },
   {
    "key": "EQ-01",
@@ -4751,15 +4791,25 @@
      "verified": null
     },
     {
+     "id": "S-AHA-BLS-ADULT-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-PHILIPS-MX-T",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "ba63388b707eb459"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "2910d47d0c96475b"
   },
   {
    "key": "EQ-02",
@@ -4784,12 +4834,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-HAMILTON-C1-SW3",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "78faf82d9fc0b17b"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "132d11556e5d1b93"
   },
   {
    "key": "EQ-03",
@@ -4800,6 +4855,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ARTERIAL-SAUGEL",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
     {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
@@ -4817,9 +4877,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "6b3b9615a93ab14a"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "a7b48a64e4ad5737"
   },
   {
    "key": "EQ-04",
@@ -4830,6 +4890,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-BD-ALARIS-121",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
     {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
@@ -4842,9 +4907,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "f545c417d273a68e"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "47747ce029135be0"
   },
   {
    "key": "EQ-05",
@@ -4859,12 +4924,17 @@
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ZOLL-R-SERIES",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "24646b37b9208135"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "2f84002d506e51df"
   },
   {
    "key": "EQ-06",
@@ -4887,9 +4957,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "8bc1b7f7d1a17cd2"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "4e664331fabec249"
   },
   {
    "key": "EQ-07",
@@ -4900,6 +4970,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-KANGAROO-224",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
     {
      "id": "S-NHSE-NGT-2016",
      "licence_class": "YELLOW",
@@ -4917,9 +4992,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "5f30ec691a69ad2b"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "1d0c3f6c1919aa00"
   },
   {
    "key": "EQ-08",
@@ -4931,15 +5006,20 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-HILLROM-P290",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "8068b4a036f9ba96"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "ab9f934897622971"
   },
   {
    "key": "PX-01",
@@ -5134,7 +5214,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "00c99cbaa7253f71"
+   "hash": "2906d36a5f033e08"
   },
   {
    "key": "PX-10",

@@ -223,13 +223,13 @@
   "question": {
    "prompt": "What does this square-wave test result show?",
    "options": [
-    "Optimal damping - the waveform is accurate",
+    "Optimal damping - the system has an appropriate dynamic response",
     "Overdamping - the waveform understates systolic pressure",
     "Underdamping (resonance) - the waveform overstates systolic pressure",
     "A disconnected or occluded line"
    ],
    "answer": 0,
-   "explanation": "One to two small oscillations that quickly settle at baseline is the textbook optimally-damped response - the displayed systolic and diastolic pressures can be trusted."
+   "explanation": "One to two brief oscillations suggest an appropriate dynamic response. Confirm transducer leveling, zeroing and clinical agreement before relying on the displayed pressures."
   },
   "evidenceSources": [
    "AACN arterial line dynamic response (square-wave) testing fundamentals"

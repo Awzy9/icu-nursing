@@ -17,6 +17,10 @@
   {
    "source_id": "S-HAMILTON-C1",
    "device": "Hamilton Medical HAMILTON-C1, operator's manual for software 2.2.x (2020); statements apply to that device and version only"
+  },
+  {
+   "source_id": "S-HAMILTON-C1-SW3",
+   "device": "HAMILTON-C1 software 3.0.x operator manual; applies to this device/version only"
   }
  ],
  "related_skill": "SK-07",
@@ -35,28 +39,48 @@
  "parameters": [
   {
    "name": "Pressure waveform",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "The trace shows airway pressure over time. Read it alongside the ventilator mode, flow and patient effort. Peak pressure during flow and plateau pressure during a suitable no-flow hold represent different measurements.",
+   "support": "partial",
+   "sources": [
+    "S-HAMILTON-C1-SW3",
+    "S-AARC-PVA"
+   ]
   },
   {
    "name": "Flow waveform",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "The trace shows the direction and rate of gas movement. Check the display convention. Expiratory flow still present at the next inspiration suggests incomplete exhalation.",
+   "support": "partial",
+   "sources": [
+    "S-HAMILTON-C1-SW3",
+    "S-AARC-PVA"
+   ]
   },
   {
    "name": "Volume",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "The volume display represents gas delivered or exhaled, depending on the measurement selected. Compare measured exhaled tidal volume with the expected value and consider leaks or measurement problems.",
+   "support": "partial",
+   "sources": [
+    "S-HAMILTON-C1-SW3",
+    "S-AARC-PVA"
+   ]
   },
   {
    "name": "Respiratory rate",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Check whether the value is the set frequency or measured total frequency. Total frequency can include patient-triggered breaths when the mode permits them. Compare it with the patient and waveforms.",
+   "support": "partial",
+   "sources": [
+    "S-HAMILTON-C1-SW3",
+    "S-AARC-PVA"
+   ]
   },
   {
    "name": "Alarm limits",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Alarm limits define monitored thresholds for parameters such as pressure or respiratory frequency. Assess the patient and cause of a breach before changing limits under the local protocol.",
+   "support": "partial",
+   "sources": [
+    "S-HAMILTON-C1-SW3",
+    "S-AARC-PVA"
+   ]
   }
  ],
  "safety_concepts": [
@@ -113,17 +137,20 @@
    "id": "S-DRAEGER-V500-IFU",
    "read": "partial",
    "use": "manufacturer manual: applies to this device only"
+  },
+  {
+   "id": "S-HAMILTON-C1-SW3",
+   "read": "partial",
+   "use": "HAMILTON-C1 operator manual software 3.0.x; parameter and alarm sections"
   }
  ],
  "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "The operator's manual for the model and software version used locally",
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  "Parameter notes explain general concepts and identify cited example models. Alarm behavior, button sequences and settings depend on the local model and policy.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and retain their evidence status."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."

@@ -77,7 +77,7 @@ Rising FiO₂ or PEEP needs; new purulent or increased secretions; fever or hypo
 | Choice of sedative or antimicrobial, stress-ulcer prophylaxis, tracheostomy timing, feeding route changes | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate promptly for: sustained increase in oxygen or PEEP needs; new purulent secretions with fever or instability; accidental extubation or tube displacement; persistent barriers to the bundle (for example, head of bed cannot be elevated); suspected aspiration.
+Assess and escalate new or worsening oxygen or PEEP requirements promptly, even if surveillance thresholds have not been reached. Also escalate for: new purulent secretions with fever or instability; accidental extubation or tube displacement; persistent barriers to the bundle (for example, head of bed cannot be elevated); suspected aspiration.
 SBAR — **S:** ventilated patient, bed X, FiO₂ up from 0.40 to 0.60 over 6 hours. **B:** day 5 of ventilation, more secretions, temperature 38.4. **A:** worsening oxygenation, possible pneumonia or other cause. **R:** please review now; consider chest imaging and cultures; I will repeat observations every [interval].
 
 ## 13. Potential complications
@@ -90,7 +90,7 @@ Head-of-bed angle checks, mouth-care times and findings, sedation and readiness 
 At the start of the shift: check the head of the bed angle on the bedside indicator, confirm the tube depth and securement, review overnight FiO₂ and PEEP trend, brush the patient's teeth and gums per protocol and suction the mouth with the unit's method, review sedation targets with the team for a daily awakening and breathing readiness check, plan mobilisation, and document each item.
 
 ## 16. Clinical case (fictional)
-A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse raises the bed, performs mouth care, reports the trend with SBAR, asks about sedation lightening and readiness testing, and documents. The team decides on imaging and further treatment.
+A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse assesses oxygenation and ventilation at the bedside, checks the tube and circuit, and escalates the worsening oxygen requirement promptly. If safe, the nurse restores head-of-bed elevation and resumes routine prevention measures after the patient is stable. The team decides on imaging and further treatment.
 
 ## 17. MCQs
 **Q1 (prioritization).** On the morning round a ventilated patient on day 4 has rising oxygen needs, increased secretions, a flat bed after a procedure, and no mouth care documented for 12 hours. What should the nurse do first?

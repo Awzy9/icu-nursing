@@ -8,8 +8,13 @@
  "clinically_reviewed": false,
  "clinical_reviewers": [],
  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": true,
- "manufacturer_documents": [],
+ "device_neutral": false,
+ "manufacturer_documents": [
+  {
+   "source_id": "S-HILLROM-P290",
+   "device": "Hillrom P290 mattress instructions 213960EN(1); applies to this model only"
+  }
+ ],
  "related_skill": "SK-14",
  "evidence_status": "partial",
  "diagram": {
@@ -26,24 +31,33 @@
  "parameters": [
   {
    "name": "Mode",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "The selected mode changes how the support surface inflates or cycles its air cells. Verify the mode against the care plan and device instructions. Continue skin checks and repositioning.",
+   "support": "partial",
+   "sources": [
+    "S-HILLROM-P290"
+   ]
   },
   {
    "name": "Air level or pressure state",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "An inflation indication describes the support surface state. It does not measure pressure on the patient’s skin. Assess the patient’s position, skin and surface function.",
+   "support": "partial",
+   "sources": [
+    "S-HILLROM-P290"
+   ]
   },
   {
    "name": "Alarm state",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "A support-surface alarm identifies a device or therapy problem according to its manual. Assess the patient and surface, then follow the model-specific response and arrange alternate support if needed.",
+   "support": "partial",
+   "sources": [
+    "S-HILLROM-P290"
+   ]
   }
  ],
  "safety_concepts": [
   {
    "text": "No mattress replaces repositioning.",
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "S-INTL-PI-2026"
    ],
@@ -51,7 +65,7 @@
   },
   {
    "text": "Use equipment and low-friction fabrics that reduce friction and shear when moving the patient.",
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "S-INTL-PI-2026"
    ],
@@ -61,7 +75,23 @@
  "monitoring_concepts": [
   {
    "text": "Reposition on a schedule set by mobility, skin and tissue tolerance, clinical condition, comfort and the support surface, not a fixed rule.",
-   "support": "partial",
+   "support": "sourced",
+   "sources": [
+    "S-INTL-PI-2026"
+   ],
+   "section": "monitoring"
+  },
+  {
+   "text": "The guideline notes that critically ill individuals, or others with systemic hypoperfusion or shock states, may need more frequent, incremental repositioning, and may benefit from supplementing full-body repositioning with assisted small shifts in body position.",
+   "support": "sourced",
+   "sources": [
+    "S-INTL-PI-2026"
+   ],
+   "section": "monitoring"
+  },
+  {
+   "text": "Assess for early signs of skin and tissue injury, which may mean the individual needs more frequent repositioning or preferential positioning off the damaged area.",
+   "support": "sourced",
    "sources": [
     "S-INTL-PI-2026"
    ],
@@ -81,19 +111,22 @@
  "sources": [
   {
    "id": "S-INTL-PI-2026",
+   "read": "full",
+   "use": "International Guideline 4th ed. Quick Reference Guide (recommendations and good-practice statements), re-fetched and read in full text 2026-11-16; the full CPG chapters (evidence summaries, implementation considerations) referenced from the Quick Reference Guide were not read"
+  },
+  {
+   "id": "S-HILLROM-P290",
    "read": "partial",
-   "use": "International Guideline 4th ed.: abridged Quick Reference Guide only"
+   "use": "P290 Mattress Instructions for Use 213960EN(1); parameter and alarm sections"
   }
  ],
  "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "The operator's manual for the model and software version used locally",
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  "Parameter notes explain general concepts and identify cited example models. Alarm behavior, button sequences and settings depend on the local model and policy.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and retain their evidence status."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."

@@ -8,8 +8,8 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["AARC Clinical Practice Guideline: Management of Adult Patients With Oxygen in the Acute Care Setting (Respir Care 2022;67(1):115-128) – full text read; modified RAND/UCLA method", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – NIV-interface skin assessment only", "NICE CG103 Delirium (updated 2023) – pulse oximeter accuracy statement only", "ERC Guidelines 2025 Adult ALS – oxygen and defibrillation safety (see D02-T15)"]
-sources: [S-AARC-O2, S-RCP-NEWS2, S-NICE-CG103, S-ERC-ALS-2025]
+guideline_versions: ["AARC Clinical Practice Guideline: Management of Adult Patients With Oxygen in the Acute Care Setting (Respir Care 2022;67(1):115-128) – full text read; modified RAND/UCLA method", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – NIV-interface skin assessment only", "Saudi Food and Drug Authority safety communication SG-2602-434-H (2026) – pulse oximeter limitations", "ERC Guidelines 2025 Adult ALS – oxygen and defibrillation safety (see D02-T15)"]
+sources: [S-AARC-O2, S-RCP-NEWS2, S-SFDA-PULSE-OX-2026, S-ERC-ALS-2025]
 sources_not_read: [S-BTS-OXYGEN-2017]
 independently_written_note: "Original wording. The AARC oxygen CPG PDF (copyright Daedalus Enterprises, cite-only) was read: abstract, Table of recommendations, and the sections on targets, high-flow nasal cannula and humidification. BTS 2017 oxygen guideline and national oxygen-prescribing standards could NOT be accessed, so jurisdiction differences are described only as a limitation. ERC material is paraphrased only; ERC commercial use needs an agreement."
 ---
@@ -33,7 +33,7 @@ Oxygen delivery is adjusted many times a shift. Nurses are usually first to noti
 - **Oxygenation:** SpO₂ and trend with a reliable trace; arterial blood gas results when available; FiO₂ or flow in use.
 - **Work of breathing and ventilation:** respiratory rate, effort, accessory muscle use, ability to speak, mental state, fatigue, and (in patients at risk of retaining carbon dioxide) drowsiness or headache.
 - **Circulation and perfusion:** heart rate, blood pressure, capillary refill, skin colour; low perfusion or cold peripheries can make SpO₂ unreliable.
-- **Probe reliability:** NICE CG103 notes that pulse oximeters can under- or overestimate saturation, especially when the saturation is borderline, and that overestimation has been reported in people with dark skin; check the trace and correlate with the patient and, when ordered, a blood gas.
+- **Probe reliability:** Poor peripheral perfusion and other factors can affect pulse oximeter accuracy. The SFDA warns that SpO₂ can overestimate arterial oxygen saturation in patients with darker skin pigmentation. Assess the patient and check the signal. Escalate when the reading and clinical findings disagree, and confirm with a blood gas when indicated.
 - **Equipment:** device and flow set correctly, tubing connected, humidifier and water level where used, no kinks, oxygen supply adequate.
 - **Skin and comfort:** pressure from masks, cannulae and straps (see below), nasal and mouth dryness.
 
@@ -78,7 +78,7 @@ SpO₂ below the ordered range despite increased oxygen; rising respiratory rate
 | Arterial blood gas sampling | Needs order or protocol (competence required) |
 
 ## 12. Escalation criteria
-Escalate immediately for: SpO₂ below the ordered range with rising oxygen need; distress, exhaustion or new confusion; unstable observations; patient on HFNC or after extubation who worsens; oxygen supply or equipment failure.
+Escalate immediately for: SpO₂ below the ordered range with rising oxygen need; distress, exhaustion, new drowsiness or new confusion; unstable observations; patient on HFNC or after extubation who worsens; oxygen supply or equipment failure.
 SBAR — **S:** bed X, SpO₂ 89% on [device/flow], target 94–98%. **B:** day 2 pneumonia, respiratory rate rising to 28, increasing oxygen over 3 hours. **A:** worsening hypoxaemia and work of breathing; I am worried about fatigue. **R:** please review now; consider escalation of support; I am staying with the patient and will repeat observations every [interval].
 
 ## 13. Potential complications
@@ -91,7 +91,7 @@ Ordered target; SpO₂ trend, device and flow or FiO₂ at each change; respirat
 At 02:00 a patient on a simple mask has an SpO₂ of 91% against a target of 94–98%. You check the trace and finger perfusion, look at the respiratory rate and effort, make sure the mask fits and the oxygen is connected, titrate within the written protocol, and call with SBAR because the requirement has risen over the shift. You document each step.
 
 ## 16. Clinical case (fictional)
-A 72-year-old man with COPD is admitted with breathlessness; his written target is 88–92%. His SpO₂ reads 97% after the oxygen was turned up by a night nurse who thought "higher is safer". He is becoming drowsy. The nurse reports it, and the team checks a blood gas and changes the plan. The nurse documents the reading, the oxygen settings, the change in alertness and the call.
+A 72-year-old man with COPD is admitted with breathlessness; his written target is 88–92%. His SpO₂ reads 97% after the oxygen was turned up by a night nurse who thought "higher is safer". He is becoming drowsy. The nurse immediately assesses airway and breathing, calls for urgent review, and titrates oxygen to the prescribed range within protocol. The team obtains an urgent blood gas and reassesses ventilatory support. A high SpO₂ does not rule out ventilatory failure. The nurse documents the reading, the oxygen settings, the change in alertness and the call.
 
 ## 17. MCQs
 **Q1 (judgment).** A patient with COPD has a written SpO₂ target of 88–92%. After oxygen is turned up by a colleague, the reading is 98% and the patient is becoming drowsy. What is the best nursing action?
@@ -163,14 +163,15 @@ D. A patient on room air with an SpO₂ of 97% awaiting a scan.
 ## 18. References
 - Piraino T, Madden M, Roberts KJ, Lamberti J, Ginier E, Strickland SL. AARC Clinical Practice Guideline: Management of Adult Patients With Oxygen in the Acute Care Setting. Respir Care. 2022;67(1):115-128. https://www.aarc.org/wp-content/uploads/2022/10/cpg-clinical-mangement-adult-o2-acute-settings.pdf (accessed 2026-11-14)
 - Goodfellow LT, et al. AARC CPG: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054 (NIV interface skin assessment). https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)
-- NICE. Delirium CG103, recommendation 1.4.6 (pulse oximeter accuracy). https://www.nice.org.uk/guidance/cg103 (accessed 2026-11-14)
+- Saudi Food and Drug Authority. Pulse oximeter accuracy safety communication SG-2602-434-H, February 2026. https://www.sfda.gov.sa/sites/default/files/2026-02/%28SG-2602-434-H%29.pdf
+- British Thoracic Society. Guideline for oxygen use in adults, sections 7.2 and 8.12. https://thorax.bmj.com/content/72/Suppl_1/ii1
 - Soar J, et al. European Resuscitation Council Guidelines 2025 Adult Advanced Life Support. Resuscitation 2025;215:110769 (safe use of oxygen during defibrillation). https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf (accessed 2026-11-14)
 
 ## 19. Local protocol note
 Target ranges, who may titrate, device choice and monitoring frequency follow the institution's oxygen policy and the prescriber's order.
 
 ## 20. Evidence, applicability and open questions
-- Statements not drawn from AARC text, and their status: oxygen as a prescribed medicine and who sets targets (the RCP NEWS2 report states that the decision to use the 88–92% scale should be made by a competent clinical decision-maker and recorded; this is UK practice, other jurisdictions vary); the carbon-dioxide-retention rationale is now supported by the NEWS2 full text; probe and perfusion checks (NICE CG103 only covers oximeter accuracy).
+- Statements not drawn from AARC text, and their status: oxygen as a prescribed medicine and who sets targets (the RCP NEWS2 report states that the decision to use the 88–92% scale should be made by a competent clinical decision-maker and recorded; this is UK practice, other jurisdictions vary); the carbon-dioxide-retention rationale is now supported by the NEWS2 full text; oximeter limitations are supported by the SFDA safety communication; acute drowsiness and blood-gas assessment are addressed in the BTS oxygen guideline.
 - Source quality: AARC 2022 uses a modified RAND/UCLA method with mostly level C (low) evidence; the ranges are committee support rather than graded strong recommendations. It covers adults in acute care; it does not address prehospital care, children, or hypercapnic respiratory failure management.
 - Jurisdiction: the BTS 2017 guideline and other national standards (for example on prescribing oxygen and target ranges for patients at risk of hypercapnic failure) were not accessible, so differences from AARC could not be described. Pulse oximeter accuracy and oxygen prescribing practice vary by country.
 - Not covered: choice of device and flow, NIV, ventilator oxygen settings, home oxygen, paediatric oxygen.

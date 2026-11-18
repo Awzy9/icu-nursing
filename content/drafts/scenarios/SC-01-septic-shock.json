@@ -212,11 +212,11 @@
    ],
    "options": [
     {
-     "text": "Treat it as possible extravasation: stop the infusion per protocol, report at once and follow the prescriber's instructions.",
+     "text": "Stop the vasopressor through the affected cannula, leave it in place initially, do not flush it, and call the team immediately. Arrange alternate patent access for the prescribed vasopressor and follow the local extravasation pathway.",
      "points": 2,
      "next": null,
      "scope": "escalation",
-     "feedback": "The label warns of extravasation injury, so the nurse acts at once per protocol and reports so the prescriber can direct treatment.",
+     "feedback": "Treat suspected extravasation promptly while restoring haemodynamic support through a separate patent line. The local pathway determines aspiration, antidote and cannula removal.",
      "consequence": "The infusion is stopped and an alternative route and the injury care are organised.",
      "support": "partial",
      "sources": [

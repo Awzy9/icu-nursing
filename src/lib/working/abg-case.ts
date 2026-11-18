@@ -1,8 +1,9 @@
 import abgCaseData from "../../../content/working-abg.json";
-import type { AbgInput } from "./abg";
+
+interface AbgPanel { pH: number; paco2: number; hco3: number; pao2?: number; fio2?: number }
 
 export interface AbgCase {
-  key: string; title: [string, string]; vignette: string; gases: AbgInput; lessonHref: string;
+  key: string; title: [string, string]; vignette: string; gases: AbgPanel; lessonHref: string;
   question: { prompt: string; options: string[]; answer: number; explanation: string };
   oxygenationNote: string | null;
   evidenceSources: string[];

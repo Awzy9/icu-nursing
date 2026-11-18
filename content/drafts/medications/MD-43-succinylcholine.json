@@ -59,7 +59,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Confirm the product against the order and keep it clearly separated from other injectables, and make sure emergency treatment and airway support are immediately available.",
+     "text": "Confirm the product and ensure immediate airway and ventilatory support. Before administration, escalate a history of major burns, multiple trauma, extensive denervation or upper motor neuron injury. The label contraindicates use after the acute phase of these injuries because of severe hyperkalaemia risk.",
      "support": "partial",
      "sources": [
       "L-SUCCINYLCHOLINE"
@@ -140,7 +140,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Call for help immediately for anaphylaxis, arrhythmia, rigidity with high temperature or any suspected product mix-up.",
+     "text": "Call for emergency help immediately for anaphylaxis, arrhythmia, unexpected rigidity, a suspected malignant hyperthermia pattern or a product mix-up. Escalate suspected malignant hyperthermia promptly without waiting for a high temperature.",
      "support": "partial",
      "sources": [
       "L-SUCCINYLCHOLINE"

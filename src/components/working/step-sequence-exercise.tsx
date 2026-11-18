@@ -25,8 +25,8 @@ export function StepSequenceExercise({ moduleKey, title, steps, initialOrder, lo
   return (
     <section aria-label={ar ? "تمرين ترتيب الخطوات" : "Step-ordering exercise"} className="space-y-5 rounded-2xl border border-border bg-card p-5 sm:p-8">
       <div>
-        <h2 className="text-lg font-semibold">{ar ? "رتّب الخطوات بالترتيب الصحيح" : "Put these steps in the correct order"}</h2>
-        <p className="mt-1 text-sm text-muted-foreground">{ar ? "استخدم الأسهم لإعادة ترتيب الخطوات، ثم تحقق من إجابتك." : "Use the arrows to reorder the steps, then check your answer."}</p>
+        <h2 className="text-lg font-semibold">{ar ? "رتّب البنود كما وردت في قائمة الدرس" : "Match the lesson checklist order"}</h2>
+        <p className="mt-1 text-sm text-muted-foreground">{ar ? "استخدم الأسهم لترتيب البنود. في الرعاية الفعلية، قد تُنفّذ بعض الإجراءات بالتوازي حسب حالة المريض وبروتوكول الوحدة." : "Use the arrows to match the checklist. In clinical care, actions may happen in parallel according to the patient’s condition and local protocol."}</p>
       </div>
       <ol className="space-y-2" lang="en" dir="ltr">
         {order.map((originalIndex, position) => {

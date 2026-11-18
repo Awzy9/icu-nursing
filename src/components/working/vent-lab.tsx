@@ -20,8 +20,8 @@ const SCENARIOS: { key: string; label: [string, string]; params: Partial<VentPar
     "المقاومة المرتفعة ترفع ضغط الذروة أكثر بكثير من الهضبة - الفرق الكبير بينهما يشير إلى مجرى الهواء أو الدائرة (إفرازات، تشنج قصبي، أنبوب منحني)، وليس نسيج الرئة نفسه.",
   ] },
   { key: "disconnect", label: ["Circuit disconnect", "انفصال الدائرة"], params: { circuitDisconnected: true }, note: [
-    "Pressure never rises and almost no volume is delivered - the low-pressure/low-volume alarm should fire immediately. Check the circuit and reconnect before troubleshooting anything else.",
-    "لا يرتفع الضغط ولا يكاد يُسلَّم أي حجم - يجب أن يُطلق إنذار الضغط المنخفض فوراً. تحقق من الدائرة وأعد توصيلها قبل أي خطوة أخرى.",
+    "This preset represents complete loss of ventilator support at the patient airway. Alarm type and timing vary by device. Assess the patient first, call for help if ventilation is compromised, and check the circuit. If ventilation cannot be restored promptly, follow the local emergency ventilation protocol.",
+    "يمثّل هذا المثال فقدان دعم جهاز التنفس عند مجرى هواء المريض. يختلف نوع الإنذار وتوقيته حسب الجهاز. قيّم المريض أولاً، واطلب المساعدة إذا كانت التهوية غير كافية، وتحقق من الدائرة. إذا لم تعد التهوية سريعاً، فاتبع بروتوكول التهوية الطارئة المحلي.",
   ] },
 ];
 
@@ -41,7 +41,7 @@ export function VentLab({ locale }: { locale: string }) {
   const ar = locale === "ar";
   const [params, setParams] = useState<VentParams>(DEFAULTS);
   const [scenario, setScenario] = useState("normal");
-  const result = useMemo(() => simulateVentCycle(params), [params]);
+  const result = useMemo(() => params.inspiratoryTime < 60 / params.respRate ? simulateVentCycle(params) : null, [params]);
 
   function applyScenario(key: string) {
     const s = SCENARIOS.find((s) => s.key === key)!;
@@ -84,10 +84,11 @@ export function VentLab({ locale }: { locale: string }) {
         <Slider label="Airway resistance" unit="cmH2O/(L/s)" value={params.resistance} min={5} max={35} step={1} onChange={(v) => update({ resistance: v })} />
       </section>
 
+      {result ? <>
       <section aria-label={ar ? "القراءات" : "Readouts"} className="grid grid-cols-2 gap-4 rounded-2xl border border-border bg-card p-5 sm:grid-cols-4">
         <div><p className="text-xs font-semibold uppercase text-muted-foreground">{ar ? "ذروة" : "Peak"}</p><p className="text-xl font-bold tabular-nums">{result.peakPressure} <span className="text-sm font-normal">cmH2O</span></p></div>
-        <div><p className="text-xs font-semibold uppercase text-muted-foreground">{ar ? "هضبة" : "Plateau"}</p><p className="text-xl font-bold tabular-nums">{result.plateauPressure} <span className="text-sm font-normal">cmH2O</span></p></div>
-        <div><p className="text-xs font-semibold uppercase text-muted-foreground">{ar ? "الفرق" : "Peak − plateau"}</p><p className="text-xl font-bold tabular-nums">{Math.round((result.peakPressure - result.plateauPressure) * 10) / 10}</p></div>
+        <div><p className="text-xs font-semibold uppercase text-muted-foreground">{ar ? "هضبة" : "Estimated plateau"}</p><p className="text-xl font-bold tabular-nums">{params.circuitDisconnected ? "—" : `${result.plateauPressure} cmH2O`}</p></div>
+        <div><p className="text-xs font-semibold uppercase text-muted-foreground">{ar ? "الفرق" : "Peak − plateau"}</p><p className="text-xl font-bold tabular-nums">{params.circuitDisconnected ? "—" : Math.round((result.peakPressure - result.plateauPressure) * 10) / 10}</p></div>
         <div><p className="text-xs font-semibold uppercase text-muted-foreground">{ar ? "الثابت الزمني" : "Time constant (τ)"}</p><p className="text-xl font-bold tabular-nums">{result.timeConstant} <span className="text-sm font-normal">s</span></p></div>
       </section>
 
@@ -95,21 +96,26 @@ export function VentLab({ locale }: { locale: string }) {
         <div role="alert" className="flex items-start gap-3 rounded-2xl border-2 border-danger-foreground/60 bg-danger p-4 text-danger-foreground">
           <AlertTriangle aria-hidden className="mt-0.5 size-5 shrink-0" />
           <div className="space-y-1 text-sm leading-6">
-            {result.highPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط مرتفع: ضغط الذروة بلغ أو تجاوز 40 سم ماء." : "High-pressure alarm: peak pressure has reached or exceeded 40 cmH2O."}</p> : null}
-            {result.lowPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط منخفض: الضغط لا يرتفع كما هو متوقع - تحقق من اتصال الدائرة." : "Low-pressure alarm: pressure is not rising as expected - check for a circuit disconnect or major leak."}</p> : null}
+            {result.highPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط مرتفع: بلغ ضغط الذروة الحدّ التوضيحي لهذا النموذج (40 سم ماء)." : "High-pressure alarm: peak pressure reached this model’s example limit of 40 cmH2O."}</p> : null}
+            {result.lowPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط منخفض: قيّم المريض أولاً، ثم تحقق من انفصال الدائرة أو وجود تسرب كبير." : "Low-pressure alarm: assess the patient first, then check for a circuit disconnect or major leak."}</p> : null}
           </div>
         </div>
       ) : null}
 
+      <p className="text-sm text-muted-foreground">{ar ? "زمن الزفير" : "Expiratory time"}: {result.expiratoryTime.toFixed(2)} s</p>
       <section aria-label={ar ? "المنحنيات" : "Traces"} className="space-y-3 rounded-2xl border border-border bg-card p-5">
         <WaveformChart trace={result.pressure} locale={locale} />
         <WaveformChart trace={result.flow} locale={locale} />
         <WaveformChart trace={result.volume} locale={locale} />
       </section>
 
+      </> : <p role="alert" className="rounded-xl border border-border p-4">
+        {ar ? "لا يتبقى وقت للزفير. قلّل زمن الشهيق أو معدل التنفس في هذا المثال." : "These settings leave no time for exhalation. Shorten inspiratory time or lower the respiratory rate in this example."}
+      </p>}
+
       <section aria-labelledby="vent-lab-evidence" className="space-y-2 text-sm text-muted-foreground">
         <h2 id="vent-lab-evidence" className="text-sm font-semibold text-foreground">{ar ? "حالة المراجعة" : "Review status"}</h2>
-        <p>{ar ? "نموذج تعليمي مبسّط لمعادلة الحركة التنفسية القياسية (الضغط = PEEP + الحجم/الامتثال + المقاومة × التدفق)، وليس محاكاة جهاز معتمدة. لم تخضع هذه المادة بعد لمراجعة سريرية رسمية." : "A simplified teaching model of the standard respiratory equation of motion (Pressure = PEEP + Volume/Compliance + Resistance × Flow), not a validated device simulator. This material has not yet had a formal clinical review."}</p>
+        <p>{ar ? "نموذج تعليمي مبسّط لمعادلة الحركة التنفسية القياسية (الضغط = PEEP + الحجم/الامتثال + المقاومة × التدفق)، وليس محاكاة جهاز معتمدة. يعرض النموذج نفَساً سلبياً واحداً. ضغط الهضبة معروض كتقدير ويُقاس سريرياً أثناء وقفة شهيقية دون تدفق في الظروف المناسبة. استمرار التدفق في نهاية الزفير يشير إلى عدم اكتمال الزفير. لا يحسب النموذج الضغط الإيجابي الذاتي المتراكم ولا يحاكي إيقاف الشهيق عند حد الضغط. لم تخضع هذه المادة بعد لمراجعة سريرية رسمية." : "A simplified teaching model of the standard respiratory equation of motion (Pressure = PEEP + Volume/Compliance + Resistance × Flow), not a validated device simulator. The model shows a single passive breath. Plateau is estimated. At the bedside it is measured during a zero-flow inspiratory hold under suitable conditions. Persistent end-expiratory flow suggests incomplete emptying. The model does not calculate accumulated intrinsic PEEP or simulate a device pressure cutoff. This material has not yet had a formal clinical review."}</p>
       </section>
     </div>
   );

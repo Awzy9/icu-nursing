@@ -29,7 +29,7 @@ The endotracheal tube (ETT) is the patient's airway. Nursing care aims to keep t
 An unrecognised displaced or obstructed tube is an immediate threat to life; an under-inflated cuff allows secretions to pass the cuff, and an over-inflated cuff can reduce mucosal blood flow and cause tracheal injury. Skin, lip and mouth injuries are common and preventable.
 
 ## 6. Clinical assessment
-- **Position and securement:** the documented tube depth at the teeth or lips, securement intact, no kinks or biting, tube and circuit not under tension, chest movement bilateral, breath sounds, ventilator waveforms and volumes; waveform capnography is advised to confirm tracheal placement (ERC ALS). AARC suggests assessing proper placement and securement (conditional recommendation, very low certainty).
+- **Position and securement:** the documented tube depth at the teeth or lips, securement intact, no kinks or biting, tube and circuit not under tension, chest movement bilateral, breath sounds, ventilator waveforms and volumes; sustained exhaled CO₂ on waveform capnography helps confirm tracheal placement (ERC ALS). Compare tube depth and bilateral ventilation separately because a tracheal CO₂ trace does not establish correct depth. AARC suggests assessing proper placement and securement (conditional recommendation, very low certainty).
 - **Cuff:** measure cuff pressure with a manometer (AARC strong recommendation, high certainty); signs of leak (audible air, falling expired volume, alarm, need for rising inflation).
 - **Skin and mouth:** AARC strongly recommends assessing the skin surrounding artificial airways; look at lips, corners of the mouth, face under tapes, tongue, oral mucosa; the pressure-injury guide advises regular checks under devices and securements.
 - **Secretions and humidification:** see the suctioning and humidification content; AARC suggests assessing humidification adequacy and device.
@@ -42,7 +42,7 @@ An unrecognised displaced or obstructed tube is an immediate threat to life; an 
 - Re-secure the tube per policy using two staff when needed; take care not to pull or displace; move the tube from side to side of the mouth only according to policy; reduce pressure under securements (pressure-injury guide: check under and around devices, support or reposition them, consider preventive dressings).
 - Keep the head of the bed raised unless contraindicated (SHEA essential practice) and provide mouth care with toothbrushing and no chlorhexidine (SHEA).
 - Prevent unplanned extubation: assess agitation, optimise analgesia and sedation per protocol, avoid unnecessary circuit traction, and use restraints only per policy.
-- Call for help immediately for suspected displacement, obstruction or cuff failure.
+- Call for help immediately for suspected displacement, obstruction or cuff failure. Assess oxygenation and ventilation while supporting the tube. If ventilation is inadequate, activate the local airway emergency pathway immediately.
 
 ## 8. Monitoring parameters
 Tube depth and securement each shift and with moves; cuff pressure at policy intervals; SpO₂, ETCO₂ and waveform; expired tidal volume and airway pressures; secretions; skin and mouth condition; sedation and agitation; head-of-bed angle; mouth-care times.
@@ -86,7 +86,7 @@ Tube size and depth at the lips or teeth; securement method and changes; cuff pr
 At the start of the shift you check the depth mark against the record, look at the securement, measure the cuff pressure with a manometer and record it, look at the lips and corners of the mouth under the tapes, check the capnography trace, raise the head of the bed, and brush the teeth per protocol.
 
 ## 16. Clinical case (fictional)
-A sedated patient begins to cough and the expired tidal volume falls with an audible leak. The nurse checks the depth marking (moved 2 cm out), supports the tube, calls the doctor and respiratory therapist, and monitors SpO₂ and capnography. The clinician repositions the tube and confirms position. The nurse documents the event and checks the skin under the securement.
+A sedated patient begins to cough and the expired tidal volume falls with an audible leak. The nurse checks the depth marking (moved 2 cm out), supports the tube, calls the doctor and respiratory therapist, and monitors SpO₂ and capnography. The airway team assesses and restores effective ventilation, confirms tracheal placement and checks the final tube depth and bilateral ventilation. The nurse documents the event and checks the skin under the securement.
 
 ## 17. MCQs
 **Q1 (understanding).** Which method of checking cuff pressure is supported by the AARC 2024 guideline?

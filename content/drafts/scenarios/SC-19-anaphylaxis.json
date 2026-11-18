@@ -87,7 +87,7 @@
    ],
    "options": [
     {
-     "text": "Stop the suspected trigger, activate the emergency anaphylaxis pathway, call for urgent help, assess ABCDE, and obtain immediate IM adrenaline under the authorized emergency protocol; do not allow sudden standing.",
+     "text": "Stop the suspected trigger, activate the emergency anaphylaxis pathway, call for urgent help, assess ABCDE, and give IM adrenaline immediately within the authorised emergency protocol; do not allow sudden standing.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
@@ -116,7 +116,7 @@
      "points": 0,
      "next": 2,
      "scope": "prescriber_or_other_discipline",
-     "feedback": "Medicines need an order, and the infusion should be stopped first.",
+     "feedback": "Stop the suspected trigger if immediately feasible. Antihistamines do not treat the airway, breathing or circulation problems of anaphylaxis and must not delay IM adrenaline.",
      "consequence": "The reaction progresses while time is lost.",
      "support": "partial",
      "sources": [
@@ -127,7 +127,7 @@
   },
   {
    "position": 2,
-   "info": "The prescriber orders intramuscular epinephrine for anaphylaxis and asks you to give it.",
+   "info": "Under the emergency protocol, you are giving the first IM adrenaline (epinephrine) dose immediately.",
    "prompt": "Where does the label say it should be injected?",
    "observations": [
     {
@@ -142,7 +142,7 @@
     },
     {
      "key": "order",
-     "label": "Order",
+     "label": "Emergency protocol",
      "value": "Intramuscular epinephrine"
     }
    ],
@@ -252,7 +252,7 @@
   "learning_points": [
    "Stop the suspected trigger and call for urgent help.",
    "The epinephrine label names the anterolateral thigh for injection in anaphylaxis.",
-   "Medicine choices and restarting a drug are prescriber decisions.",
+   "Give IM adrenaline promptly within the authorised emergency protocol. If airway, breathing or circulation problems persist, follow the local repeat-dose and escalation pathway.",
    "Monitor, document and report the reaction."
   ],
   "links": [

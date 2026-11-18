@@ -59,7 +59,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Check the medicine list for serotonergic agents and report them; make sure blood counts are being followed.",
+     "text": "Check for serotonergic medicines, including antidepressants and opioids. Escalate a potential interaction before administration so the prescriber and pharmacist can decide whether treatment can proceed and arrange monitoring.",
      "support": "partial",
      "sources": [
       "L-LINEZOLID"
@@ -76,7 +76,7 @@
      "sources": []
     },
     {
-     "text": "The label calls for monitoring of the complete blood count, and for watching for signs of serotonin syndrome in patients also taking serotonergic medicines.",
+     "text": "Verify a weekly complete blood count plan, with particular attention to patients with prolonged treatment, existing myelosuppression or severe renal impairment. If concurrent serotonergic therapy is authorized, monitor for serotonin syndrome as directed.",
      "support": "sourced",
      "sources": [
       "L-LINEZOLID"

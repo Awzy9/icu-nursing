@@ -217,11 +217,11 @@
    ],
    "options": [
     {
-     "text": "Monitor the glucose at regular intervals for at least six hours after insulin-glucose, longer if the patient is at high risk, and follow the potassium results closely for a rebound, reporting any fall in glucose or rise in potassium.",
+     "text": "Check glucose at baseline, every 30 minutes for the first two hours and then hourly through hour six, following the local protocol. Escalate falling or low glucose and arrange repeat potassium checks for rebound.",
      "points": 2,
      "next": null,
      "scope": "monitoring",
-     "feedback": "The guideline recommends regular glucose checks for at least 6 hours after insulin-glucose, extended for high-risk patients, and close potassium monitoring for rebound after the first response.",
+     "feedback": "UKKA recommends extending glucose monitoring in patients at high risk of late hypoglycaemia, such as after repeat treatment. For moderate or severe hyperkalaemia, it suggests potassium rechecks at 1, 2, 4, 6 and 24 hours.",
      "consequence": "A low glucose is caught early and a rebound is picked up.",
      "support": "partial",
      "sources": [

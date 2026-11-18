@@ -8,8 +8,13 @@
  "clinically_reviewed": false,
  "clinical_reviewers": [],
  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": true,
- "manufacturer_documents": [],
+ "device_neutral": false,
+ "manufacturer_documents": [
+  {
+   "source_id": "S-KANGAROO-224",
+   "device": "Kangaroo 224 feeding pump manual; applies to this model only"
+  }
+ ],
  "related_skill": "SK-10",
  "evidence_status": "partial",
  "diagram": {
@@ -26,18 +31,27 @@
  "parameters": [
   {
    "name": "Programmed rate",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "This is the pump setting for the pace of enteral formula delivery. Verify it against the nutrition order and confirm tube position by the approved pathway before use.",
+   "support": "partial",
+   "sources": [
+    "S-KANGAROO-224"
+   ]
   },
   {
    "name": "Volume delivered",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "This is the cumulative volume the pump has registered since its relevant reset. Check the counter interval and document interruptions when comparing prescribed and delivered feed.",
+   "support": "partial",
+   "sources": [
+    "S-KANGAROO-224"
+   ]
   },
   {
    "name": "Occlusion alarm",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "A flow or obstruction alarm can indicate a problem in the feeding set. Assess the patient and inspect the tubing according to the specific pump manual. Confirm that feeding can safely resume under the local pathway.",
+   "support": "partial",
+   "sources": [
+    "S-KANGAROO-224"
+   ]
   }
  ],
  "safety_concepts": [
@@ -103,17 +117,20 @@
    "id": "S-NHSE-NGT-2016",
    "read": "partial",
    "use": "NHS patient safety alert on nasogastric tube misplacement"
+  },
+  {
+   "id": "S-KANGAROO-224",
+   "read": "partial",
+   "use": "Kangaroo 224 Feeding Pump Operating Manual; parameter and alarm sections"
   }
  ],
  "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "The operator's manual for the model and software version used locally",
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  "Parameter notes explain general concepts and identify cited example models. Alarm behavior, button sequences and settings depend on the local model and policy.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and retain their evidence status."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."

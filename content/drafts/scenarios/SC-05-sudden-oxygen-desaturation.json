@@ -41,11 +41,6 @@
    "use": "AARC oxygen CPG: oxygen use, monitoring"
   },
   {
-   "id": "S-AARC-SUCT",
-   "read": "full",
-   "use": "AARC suctioning CPG: suction only when indicated, hyperoxygenation, stopping for complications"
-  },
-  {
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "NEWS2: early warning and escalation of deterioration"
@@ -54,6 +49,11 @@
    "id": "S-AHRQ-TS",
    "read": "partial",
    "use": "SBAR page"
+  },
+  {
+   "id": "S-RCUK-ABCDE-2024",
+   "read": "partial",
+   "use": "Airway and breathing sections and principles of calling for help"
   }
  ],
  "required_sources": [
@@ -101,7 +101,7 @@
    ],
    "options": [
     {
-     "text": "Go to the patient, stay with them and assess the airway, breathing effort, colour, lung sounds and heart rate, checking that the probe reading matches how the patient looks.",
+     "text": "Stay with the patient, assess airway, breathing and circulation, and call for urgent help for the new distress and low saturation. Check probe signal and oxygen delivery in parallel without delaying support.",
      "points": 2,
      "next": 2,
      "scope": "assessment",
@@ -109,12 +109,13 @@
      "consequence": "You find the patient breathing with effort and a wet-sounding cough, and you know what you are dealing with.",
      "support": "sourced",
      "sources": [
-      "S-OPENRN-FUND-CH8"
+      "S-OPENRN-FUND-CH8",
+      "S-RCUK-ABCDE-2024"
      ]
     },
     {
      "text": "Reposition the probe and leave to see whether the number improves.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "independent_nursing",
      "feedback": "Checking the probe is sensible, but a falling reading in a patient who is breathing faster must not be treated as a probe problem without looking at the patient.",
@@ -140,7 +141,7 @@
   },
   {
    "position": 2,
-   "info": "The patient has a weak, wet cough, and you can hear secretions. The oxygen device is connected and in place. The saturation is still low.",
+   "info": "The patient has a weak cough and visible pooled oral secretions they cannot clear. The oxygen device is connected. The saturation remains low.",
    "prompt": "What is the best next step?",
    "observations": [
     {
@@ -167,16 +168,16 @@
    ],
    "options": [
     {
-     "text": "Call for help according to the unit's process, keep the patient on oxygen as prescribed and policy allows, and clear the secretions with suction only because the need has been assessed, following the unit's suctioning method.",
+     "text": "Use oxygen within the emergency protocol and reassess ventilation. If pooled oral secretions are obstructing the airway, use oral suction within your competency while help is coming. Escalate immediately if breathing becomes inadequate.",
      "points": 2,
      "next": 3,
      "scope": "escalation",
-     "feedback": "Respiratory monitoring includes noting the need for suctioning; the AARC suctioning guideline supports suctioning when indicated and not routinely, and the nurse should stop and escalate if the patient deteriorates.",
+     "feedback": "This patient has a natural airway. Address visible obstructing oral secretions within local policy while reassessing oxygenation and ventilation. Persistent hypoxaemia needs reassessment for other causes.",
      "consequence": "The airway is cleared and the saturation begins to rise while help is on the way.",
      "support": "partial",
      "sources": [
       "S-OPENRN-FUND-CH8",
-      "S-AARC-SUCT",
+      "S-RCUK-ABCDE-2024",
       "S-AARC-O2"
      ]
     },
@@ -189,7 +190,7 @@
      "consequence": "The patient becomes more distressed and the saturation falls further during suctioning.",
      "support": "partial",
      "sources": [
-      "S-AARC-SUCT"
+      "S-RCUK-ABCDE-2024"
      ]
     },
     {
@@ -277,7 +278,7 @@
  "debrief": {
   "learning_points": [
    "Go to the patient first: assess the airway, breathing effort, colour, lung sounds and heart rate, and use the oximeter reading as one finding among others.",
-   "Stay with the patient, give oxygen as prescribed and policy allows, and clear secretions by suction only when there is a need.",
+   "Stay with the patient, support oxygenation and ventilation under the emergency protocol, and clear obstructing oral secretions if indicated and within competency.",
    "Escalate early when the saturation does not recover, and reassess the same parameters after every intervention.",
    "Do not silence alarms or change limits and devices without authority; hand over with SBAR and document the response."
   ],

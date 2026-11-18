@@ -49,6 +49,11 @@
    "id": "S-AHRQ-TS",
    "read": "partial",
    "use": "SBAR page"
+  },
+  {
+   "id": "S-RCUK-ABCDE-2024",
+   "read": "partial",
+   "use": "Airway and breathing sections and principles of calling for help"
   }
  ],
  "required_sources": [
@@ -153,16 +158,17 @@
    ],
    "options": [
     {
-     "text": "Use the unit's emergency ventilation method (for example a manual resuscitation bag) and call for help.",
+     "text": "Call for emergency help immediately. If ventilation cannot be restored promptly, provide alternative ventilation within your training and local airway protocol while the team checks the airway and circuit.",
      "points": 2,
      "next": 3,
      "scope": "escalation",
-     "feedback": "If ventilation is inadequate and the cause is not immediately correctable, provide alternative ventilation and call for help; the equipment to use is local policy.",
+     "feedback": "Urgent help and alternative ventilation can proceed in parallel. The appropriate route depends on airway patency and tube position. A manual bag connected to an obstructed or displaced tube may still fail to ventilate the patient.",
      "consequence": "The patient is ventilated by hand and the team arrives to find and correct the problem.",
      "support": "partial",
      "sources": [
       "S-HAMILTON-C1",
-      "S-DRAEGER-V500-IFU"
+      "S-DRAEGER-V500-IFU",
+      "S-RCUK-ABCDE-2024"
      ]
     },
     {

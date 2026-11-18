@@ -36,6 +36,24 @@ describe("waveform exercise data", () => {
     }
   });
 
+  it("matches the plotted volume change to the integrated flow in each breath phase", () => {
+    for (const e of exercises) {
+      const flow = e.traces.find((trace) => trace.label === "Flow")!;
+      const volume = e.traces.find((trace) => trace.label === "Volume")!;
+      let inspired = 0;
+      let expired = 0;
+      for (let i = 1; i < flow.points.length; i++) {
+        const [start, firstFlow] = flow.points[i - 1]!;
+        const [end, lastFlow] = flow.points[i]!;
+        const change = (end - start) * (firstFlow + lastFlow) * 1000 / 120;
+        inspired += Math.max(change, 0);
+        expired += Math.min(change, 0);
+      }
+      expect(Math.abs(inspired - Math.max(...volume.points.map(([, v]) => v))), e.key).toBeLessThan(1);
+      expect(Math.abs(inspired + expired - volume.points.at(-1)![1]), e.key).toBeLessThan(1);
+    }
+  });
+
   it("looks up a known exercise by key, and returns undefined for an unknown one", () => {
     expect(waveformExercise(exercises[0]!.key)).toBe(exercises[0]);
     expect(waveformExercise("NOT-A-REAL-KEY")).toBeUndefined();

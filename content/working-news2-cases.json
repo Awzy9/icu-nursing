@@ -37,7 +37,7 @@
       "NEWS2 = 7, but it does not count because no single parameter scored 3"
     ],
     "answer": 2,
-    "explanation": "Respiration 21-24 scores 2, SpO2 94-95% on Scale 1 scores 1, the +2 oxygen weighting applies, systolic BP 101-110 scores 1, and pulse 91-110 scores 1. The aggregate is 2+1+2+1+1 = 7 - the high/emergency threshold, even though no single parameter is at its extreme. A high aggregate score triggers the same urgent response as a single red score; it is not discounted just because it is built from several moderate derangements."
+    "explanation": "Respiration 21-24 scores 2, SpO2 94-95% on Scale 1 scores 1, the +2 oxygen weighting applies, systolic BP 101-110 scores 1, and pulse 91-110 scores 1. The aggregate is 2+1+2+1+1 = 7 - the high/emergency threshold, even though no single parameter is at its extreme. An aggregate of 7 triggers the high-risk emergency response even without an individual score of 3. An isolated score of 3 with a lower aggregate also requires escalation, according to the separate single-parameter response."
   },
   {
     "key": "NEWS2-03",

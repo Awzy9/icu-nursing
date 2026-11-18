@@ -80,13 +80,13 @@
   },
   {
    "id": "s5",
-   "text": "Stop and report an alert you cannot resolve or a mismatch with the order",
+   "text": "Assess the patient and escalate an unresolved alert or a mismatch with the order",
    "support": "partial",
    "sources": [
     "S-FDA-PUMP",
     "S-ISMP-HA"
    ],
-   "why": "Report suspected over- or under-infusion."
+   "why": "Report suspected over- or under-infusion promptly. Follow the drug-specific backup plan if a time-critical infusion is interrupted."
   }
  ]
 }

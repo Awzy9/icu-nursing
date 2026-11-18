@@ -49,7 +49,7 @@ describe("simulateVentCycle - equation of motion correctness", () => {
 
   it("flow is positive (inspiratory) during inspiration and negative (expiratory) during exhalation", () => {
     const r = simulateVentCycle(normal);
-    const inspFlow = r.flow.points.find((p) => p[0] > 0 && p[0] < 0.9)!;
+    const inspFlow = r.flow.points.find((p) => p[0] === 0)!;
     const expFlow = r.flow.points.find((p) => p[0] > 1.5)!;
     expect(inspFlow[1]).toBeGreaterThan(0);
     expect(expFlow[1]).toBeLessThan(0);
@@ -79,10 +79,11 @@ describe("simulateVentCycle - alarm detection", () => {
     expect(simulateVentCycle(normal).lowPressureAlarm).toBe(false);
   });
 
-  it("a disconnected circuit delivers only a small fraction of the set tidal volume", () => {
+  it("a complete disconnect delivers no volume or pressure to the patient airway", () => {
     const disconnected = simulateVentCycle({ ...normal, circuitDisconnected: true });
     const peakVolume = Math.max(...disconnected.volume.points.map((p) => p[1]));
-    expect(peakVolume).toBeLessThan(normal.tidalVolume * 0.1);
+    expect(peakVolume).toBe(0);
+    expect(disconnected.pressure.points.every(([, p]) => p === 0)).toBe(true);
   });
 });
 
@@ -95,6 +96,21 @@ describe("simulateVentCycle - trace/domain self-consistency", () => {
         for (const [, v] of trace.points) { expect(v).toBeGreaterThanOrEqual(lo - 0.01); expect(v).toBeLessThanOrEqual(hi + 0.01); }
       }
     }
+  });
+
+  it("rejects timings that leave no expiratory phase", () => {
+    expect(() => simulateVentCycle({ ...normal, respRate: 30, inspiratoryTime: 2 })).toThrow(RangeError);
+    expect(() => simulateVentCycle({ ...normal, respRate: 30, inspiratoryTime: 1.9, inspiratoryPauseTime: 0.2 })).toThrow(RangeError);
+  });
+
+  it("plots exact inspiration endpoints and retains volume when expiration is very short", () => {
+    const r = simulateVentCycle({ ...normal, respRate: 30, inspiratoryTime: 1.9, resistance: 35, compliance: 80 });
+    expect(r.expiratoryTime).toBeCloseTo(0.1);
+    expect(r.volume.points).toContainEqual([1.9, 450]);
+    expect(r.pressure.points).toContainEqual([1.9, r.peakPressure]);
+    expect(r.volume.points.at(-1)![1]).toBeCloseTo(450 * Math.exp(-0.1 / 2.8), 1);
+    expect(r.flow.points.at(-1)![1]).toBeLessThan(0);
+    expect(r.pressure.points.at(-1)![1]).toBe(5);
   });
 
   it("computes cycle time directly from respiratory rate (60/RR)", () => {

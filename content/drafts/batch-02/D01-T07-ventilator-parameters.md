@@ -30,7 +30,7 @@ Mechanical ventilation can itself injure the lung when pressures or volumes are 
 The nurse sees the ventilator more than anyone. Recognising a falling tidal volume, rising pressure, or change in synchrony early prevents harm. Understanding why the team chooses small volumes and limited pressures helps the nurse support the plan (sedation, positioning, suctioning) rather than undermine it.
 
 ## 4. Basic physiology
-Gas exchange depends on ventilation (moving air) and oxygenation (getting oxygen into blood). PEEP keeps alveoli open at end-expiration; FiO₂ is the oxygen fraction delivered; tidal volume is the volume per breath; plateau pressure reflects the pressure in the alveoli at end-inspiration during an inspiratory hold; driving pressure is plateau pressure minus PEEP.
+Gas exchange depends on ventilation (moving air) and oxygenation (getting oxygen into blood). PEEP keeps alveoli open at end-expiration; FiO₂ is the oxygen fraction delivered; tidal volume is the volume per breath; plateau pressure reflects the pressure in the alveoli at end-inspiration during an inspiratory hold; in passive ventilation, respiratory-system driving pressure is plateau pressure minus total PEEP, which includes intrinsic PEEP when present.
 
 ## 5. Relevant pathophysiology
 In ARDS inflamed, fluid-filled lung leaves a small aerated "baby lung". Overstretching it (high volume or pressure) or repeatedly opening and closing alveoli causes ventilator-induced lung injury. Strategies to reduce this include lower tidal volume and plateau pressure, PEEP, and prone positioning.

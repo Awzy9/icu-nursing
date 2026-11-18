@@ -31,29 +31,45 @@
  "parameters": [
   {
    "name": "Access and return pressures",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Access pressure reflects withdrawal into the extracorporeal circuit and return pressure reflects flow back to the patient. Interpret trends with the prescribed blood flow and assess the patient, catheter and tubing before acting.",
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025",
+    "S-KDIGO-AKI-2012"
+   ]
   },
   {
    "name": "Blood flow",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "This is the circuit blood-pump rate. Verify it against the prescription and review interruptions or pressure alarms; adjustment follows the authorized pathway.",
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025",
+    "S-KDIGO-AKI-2012"
+   ]
   },
   {
    "name": "Delivered dose against prescription",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Compare the treatment delivered over time with the prescription. Downtime can lower delivered therapy even when the current settings match the prescription. Document interruptions and report shortfalls.",
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025",
+    "S-KDIGO-AKI-2012"
+   ]
   },
   {
    "name": "Alarm state",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "The displayed alert identifies the detected condition and assigned priority. Whether the pump stops depends on the alarm and model. Check the patient and follow the specific device instructions.",
+   "support": "partial",
+   "sources": [
+    "N-AHS-CRRT-ALARM-2025",
+    "S-KDIGO-AKI-2012"
+   ]
   }
  ],
  "safety_concepts": [
   {
    "text": "Check the patient first, and review and address the alarm on the screen before clearing it; the alarm off, disable and override buttons decrease alarm sensitivity.",
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "N-AHS-CRRT-ALARM-2025"
    ],
@@ -61,7 +77,7 @@
   },
   {
    "text": "On the device described, the blood pump stops with high-priority (flashing red) alarms; other devices differ.",
-   "support": "partial",
+   "support": "sourced",
    "sources": [
     "N-AHS-CRRT-ALARM-2025"
    ],
@@ -76,7 +92,7 @@
    "section": "safety"
   },
   {
-   "text": "If heparin-induced thrombocytopenia is suspected or confirmed, all heparin must stop and the prescriber is told immediately (extent in flushes is local policy).",
+   "text": "Escalate possible heparin-induced thrombocytopenia promptly for clinical probability assessment. If clinically likely or confirmed, follow the authorized pathway to stop all heparin exposure, including flushes and locks.",
    "support": "partial",
    "sources": [
     "S-KDIGO-AKI-2012"
@@ -96,8 +112,8 @@
  ],
  "escalation_concepts": [
   {
-   "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
-   "support": "partial",
+   "text": "If alarms cannot be resolved, assess the patient, notify the treating team and follow the device and local CRRT pathway for ending therapy. Return circuit blood only if the pathway and device instructions permit it for that failure. Document the cause and interruption.",
+   "support": "sourced",
    "sources": [
     "N-AHS-CRRT-ALARM-2025"
    ],
@@ -125,14 +141,12 @@
   }
  ],
  "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "The operator's manual for the model and software version used locally",
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  "Parameter notes explain general concepts and identify cited example models. Alarm behavior, button sequences and settings depend on the local model and policy.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and retain their evidence status."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."

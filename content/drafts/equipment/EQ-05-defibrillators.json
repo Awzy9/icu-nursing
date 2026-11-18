@@ -8,8 +8,13 @@
  "clinically_reviewed": false,
  "clinical_reviewers": [],
  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": true,
- "manufacturer_documents": [],
+ "device_neutral": false,
+ "manufacturer_documents": [
+  {
+   "source_id": "S-ZOLL-R-SERIES",
+   "device": "ZOLL R Series Operator Guide; applies to this device family only"
+  }
+ ],
  "related_skill": "SK-19",
  "evidence_status": "partial",
  "diagram": {
@@ -26,18 +31,30 @@
  "parameters": [
   {
    "name": "Rhythm display",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "The display shows the ECG from the selected signal source. Verify the source and signal quality, and interpret the rhythm with the patient assessment and arrest algorithm.",
+   "support": "partial",
+   "sources": [
+    "S-ZOLL-R-SERIES",
+    "S-ERC-ALS-2025"
+   ]
   },
   {
    "name": "Energy setting",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "The selected energy is the intended shock setting in joules. A trained operator selects it using the resuscitation algorithm, defibrillator instructions and local protocol.",
+   "support": "partial",
+   "sources": [
+    "S-ZOLL-R-SERIES",
+    "S-ERC-ALS-2025"
+   ]
   },
   {
    "name": "Charge state",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "A charged indication means the defibrillator is ready to deliver the selected shock. Rhythm indication, a clear safety check and an authorized operator are still required before delivery.",
+   "support": "partial",
+   "sources": [
+    "S-ZOLL-R-SERIES",
+    "S-ERC-ALS-2025"
+   ]
   }
  ],
  "safety_concepts": [
@@ -66,7 +83,16 @@
    "section": "safety"
   }
  ],
- "monitoring_concepts": [],
+ "monitoring_concepts": [
+  {
+   "text": "Resume chest compressions immediately after shock delivery. A combination of clinical and physiological signs of return of spontaneous circulation (ROSC) - such as return of consciousness, purposeful movement, an arterial waveform, or a sharp rise in end-tidal CO2 - is a reason to consider stopping compressions for a rhythm check, and a pulse check if the rhythm appears appropriate. On a defibrillator that displays the ECG with chest-compression motion artefact removed, the underlying rhythm may guide whether a rhythm and pulse check is needed roughly every two minutes; no pause is needed if asystole is displayed.",
+   "support": "sourced",
+   "sources": [
+    "S-ERC-ALS-2025"
+   ],
+   "section": "monitoring"
+  }
+ ],
  "escalation_concepts": [
   {
    "text": "Call for help early; follow the oxygen-safety steps in unit policy during defibrillation.",
@@ -82,17 +108,20 @@
    "id": "S-ERC-ALS-2025",
    "read": "full",
    "use": "ERC ALS 2025 (paraphrase only; commercial use needs ERC agreement)"
+  },
+  {
+   "id": "S-ZOLL-R-SERIES",
+   "read": "partial",
+   "use": "R Series Operator Guide; parameter and alarm sections"
   }
  ],
  "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "The operator's manual for the model and software version used locally",
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  "Parameter notes explain general concepts and identify cited example models. Alarm behavior, button sequences and settings depend on the local model and policy.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and retain their evidence status."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."

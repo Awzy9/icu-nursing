@@ -8,8 +8,13 @@
  "clinically_reviewed": false,
  "clinical_reviewers": [],
  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": true,
- "manufacturer_documents": [],
+ "device_neutral": false,
+ "manufacturer_documents": [
+  {
+   "source_id": "S-PHILIPS-MX-T",
+   "device": "Philips IntelliVue MX400–550 release T.0 instructions; applies to this model family only"
+  }
+ ],
  "related_skill": "SK-18",
  "evidence_status": "partial",
  "diagram": {
@@ -35,8 +40,11 @@
   },
   {
    "name": "Heart rate",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "An ECG-derived heart rate estimates how often ventricular complexes are detected. A pulse rate derived from another sensor is a separate measurement. When they disagree, assess the patient and compare the signal sources.",
+   "support": "partial",
+   "sources": [
+    "S-PHILIPS-MX-T"
+   ]
   },
   {
    "name": "Oxygen saturation",
@@ -48,16 +56,20 @@
   },
   {
    "name": "Alarm priority",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Priority indicates the urgency assigned to an alarm by the configured monitor. It depends on the condition and device configuration. Assess the patient at the bedside and check the alarm message and signal quality.",
+   "support": "partial",
+   "sources": [
+    "S-PHILIPS-MX-T"
+   ]
   }
  ],
  "safety_concepts": [
   {
-   "text": "Verify an alarm or unusual rhythm at the bedside before acting; check the patient first.",
+   "text": "Assess the patient immediately. If cardiac arrest is suspected, activate the arrest response and start CPR when indicated while the team verifies the ECG signal.",
    "support": "partial",
    "sources": [
-    "S-OPENRN-ADV-C7"
+    "S-OPENRN-ADV-C7",
+    "S-AHA-BLS-ADULT-2025"
    ],
    "section": "safety"
   }
@@ -87,6 +99,11 @@
    "use": "Open RN Advanced Skills ch. 7 telemetry checklist (CC BY text; check image licences)"
   },
   {
+   "id": "S-AHA-BLS-ADULT-2025",
+   "read": "partial",
+   "use": "AHA 2025 adult BLS arrest recognition and CPR branch"
+  },
+  {
    "id": "N-UKKA-HK-2026-07",
    "read": "partial",
    "use": "UKKA hyperkalaemia guideline: continuous 3-lead ECG monitoring rationale"
@@ -97,20 +114,23 @@
    "use": "Resuscitation Council UK anaphylaxis guideline: monitoring supervised by a skilled person"
   },
   {
+   "id": "S-PHILIPS-MX-T",
+   "read": "partial",
+   "use": "IntelliVue MX400–550 Instructions for Use release T.0; parameter and alarm sections"
+  },
+  {
    "id": "N-NICE-CG103",
    "read": "partial",
    "use": "NICE CG103: pulse oximeter accuracy caution"
   }
  ],
  "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "The operator's manual for the model and software version used locally",
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  "Parameter notes explain general concepts and identify cited example models. Alarm behavior, button sequences and settings depend on the local model and policy.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and retain their evidence status."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."

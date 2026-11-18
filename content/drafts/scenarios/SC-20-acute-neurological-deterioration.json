@@ -64,7 +64,7 @@
  "steps": [
   {
    "position": 1,
-   "info": "At a routine check the patient responds less than at the last check, and the best motor response is lower than before.",
+   "info": "At a routine check the patient responds less than at the last check, and the motor GCS component has fallen from 6 to 4.",
    "prompt": "What do you do?",
    "observations": [
     {
@@ -80,7 +80,7 @@
     {
      "key": "motor",
      "label": "Motor response",
-     "value": "Lower than last check"
+     "value": "Falls from 6 to 4"
     },
     {
      "key": "baseline",
@@ -90,11 +90,11 @@
    ],
    "options": [
     {
-     "text": "Record the eye, verbal and motor responses separately with the total, compare them with the previous record and the baseline, repeat the check, and report the deterioration urgently to the responsible clinician.",
+     "text": "Assess airway, breathing and circulation and escalate urgently. Record and report the GCS components and the change from baseline. Arrange an immediate second observation if a competent colleague is available. Escalate without waiting if they are unavailable.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "NICE says to describe the three GCS responses with the total, to take the baseline into account, and lists deterioration in GCS after admission, with more attention to motor deterioration, as a reason to involve neurosurgery.",
+     "feedback": "In a head-injury patient, a two-point fall in the motor component warrants urgent reassessment. Obtain immediate confirmation if available. Do not delay contacting the supervising clinician if confirmation is unavailable.",
      "consequence": "The clinician is told promptly and the full component record is available.",
      "support": "partial",
      "sources": [

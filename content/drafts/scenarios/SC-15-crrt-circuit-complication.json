@@ -145,11 +145,11 @@
    ],
    "options": [
     {
-     "text": "Contact the manufacturer's support, return blood when possible and end treatment per local practice, document the reason and notify the physician.",
+     "text": "Escalate persistent interruption promptly to the ICU or renal team and trained CRRT staff. End the run or replace the circuit under local protocol and the device instructions. Return circuit blood only when the trained team confirms that the circuit and alarm condition permit it.",
      "points": 2,
      "next": 3,
      "scope": "escalation",
-     "feedback": "If alarms cannot be managed the pathway says to call support, return blood when possible, document why treatment stopped and notify the physician, who may need to replace the line.",
+     "feedback": "Blood return depends on the device and alarm. Do not bypass safety alarms or independently return blood when a return is contraindicated.",
      "consequence": "Blood is returned, the reason is recorded and the physician plans the next step for the line.",
      "support": "partial",
      "sources": [
@@ -219,7 +219,7 @@
     },
     {
      "text": "Record only that the machine alarmed.",
-     "points": 1,
+     "points": 0,
      "next": null,
      "scope": "independent_nursing",
      "feedback": "An incomplete record loses the reason for stopping and the shortfall.",

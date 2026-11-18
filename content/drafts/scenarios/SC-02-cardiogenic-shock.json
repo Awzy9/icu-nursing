@@ -120,7 +120,7 @@
     },
     {
      "text": "Write the readings in the chart and recheck at the usual time.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "independent_nursing",
      "feedback": "Recording is needed, but a worsening trend with signs of poor perfusion should not wait for the next routine check.",
@@ -172,11 +172,11 @@
    ],
    "options": [
     {
-     "text": "Stay with the patient, keep continuous ECG monitoring on, report the ventricular ectopy immediately and ask for the emergency equipment to be brought close.",
+     "text": "Stay with the patient, reassess airway, breathing, pulse and perfusion, and activate emergency help now for worsening hypotension with a new ventricular rhythm. Bring resuscitation equipment and follow the local pulse or arrest pathway.",
      "points": 2,
      "next": 3,
      "scope": "escalation",
-     "feedback": "The milrinone and dobutamine labels warn of ventricular arrhythmias and call for continuous monitoring; ventricular ectopy during these infusions is reported at once.",
+     "feedback": "A new rhythm with worsening perfusion requires immediate clinical assessment. Check leads in parallel rather than waiting to see whether the rhythm persists.",
      "consequence": "The team arrives knowing about the rhythm change and can decide on treatment without delay.",
      "support": "sourced",
      "sources": [
@@ -186,7 +186,7 @@
     },
     {
      "text": "Check the electrodes first and report only if the beats continue for a long time.",
-     "points": 1,
+     "points": 0,
      "next": 3,
      "scope": "monitoring",
      "feedback": "Checking the leads is reasonable, but it must not replace reporting while the patient is deteriorating.",

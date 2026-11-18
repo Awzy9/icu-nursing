@@ -59,7 +59,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Use the infusion set and tubing the pharmacy and unit protocol specify, and report any doubt about the delivery equipment.",
+     "text": "Before starting, check for use of a PDE5 inhibitor (such as sildenafil, tadalafil or vardenafil) or riociguat and clarify any exposure with the prescriber or pharmacist. Concurrent use is contraindicated because of severe hypotension risk. Use the infusion set and tubing specified by pharmacy and unit protocol.",
      "support": "partial",
      "sources": [
       "L-NITROGLYCERIN"
@@ -202,7 +202,7 @@
   }
  ],
  "gaps": [
-  "Contraindications and drug interactions were not summarised from the fields read.",
+  "Selected interactions are covered. Check current product labeling and pharmacy guidance for the full contraindication list and drug-specific timing.",
   "Equipment choice and delivery calculations: local protocol.",
   "Dosing, preparation and administration details: deliberately not included.",
   "No clinical practice guideline or nursing source was read for this entry."

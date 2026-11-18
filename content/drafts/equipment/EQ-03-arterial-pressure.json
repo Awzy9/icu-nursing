@@ -26,18 +26,27 @@
  "parameters": [
   {
    "name": "Arterial pressure value",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "An arterial transducer provides a continuous pressure signal from which systolic, diastolic and mean pressures are displayed. Check levelling, zeroing and waveform quality if the values do not fit the patient.",
+   "support": "partial",
+   "sources": [
+    "S-ARTERIAL-SAUGEL"
+   ]
   },
   {
    "name": "Arterial waveform",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Systolic upstroke, peak and diastolic decline reflect the pressure signal. A damped or resonant system can distort systolic and diastolic readings. Assess the patient and inspect the system when the trace changes.",
+   "support": "partial",
+   "sources": [
+    "S-ARTERIAL-SAUGEL"
+   ]
   },
   {
    "name": "Zero and levelling",
-   "explanation": null,
-   "support": "needs_source"
+   "explanation": "Zeroing establishes the atmospheric reference. Levelling aligns the transducer with the intended anatomical reference and reduces hydrostatic error. Recheck the level after position changes under local policy.",
+   "support": "partial",
+   "sources": [
+    "S-ARTERIAL-SAUGEL"
+   ]
   }
  ],
  "safety_concepts": [
@@ -110,17 +119,20 @@
    "id": "S-SSC-2021",
    "read": "full",
    "use": "complication rates (superseded edition)"
+  },
+  {
+   "id": "S-ARTERIAL-SAUGEL",
+   "read": "partial",
+   "use": "How to measure blood pressure using an arterial catheter; parameter and alarm sections"
   }
  ],
  "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+  "The operator's manual for the model and software version used locally",
   "Unit policy for this equipment"
  ],
  "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  "Parameter notes explain general concepts and identify cited example models. Alarm behavior, button sequences and settings depend on the local model and policy.",
+  "Safety, monitoring and escalation statements are reused from the matching skill draft and retain their evidence status."
  ],
  "permissions": [
   "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."

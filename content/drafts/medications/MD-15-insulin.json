@@ -57,7 +57,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "The label read describes a short-acting human insulin indicated to improve glycaemic control in adults and paediatric patients with diabetes mellitus; it is a product-specific intravenous label and other insulin products differ.",
+     "text": "The US source is the MYXREDLIN label, a premixed human insulin product for intravenous glycaemic control. For adult hyperkalaemia, use the insulin formulation, preparation and dose specified by the local emergency protocol. The MYXREDLIN indication does not establish a hyperkalaemia indication.",
      "support": "sourced",
      "sources": [
       "L-INSULIN"
@@ -244,7 +244,7 @@
   },
   {
    "kind": "laboratory",
-   "text": "After insulin is given with glucose to lower a high potassium, check blood glucose at regular intervals for at least six hours, longer in patients at high risk of late hypoglycaemia (UKKA, UK adults).",
+   "text": "For insulin-glucose used to treat adult hyperkalaemia, UKKA advises a baseline glucose check, then checks every 30 minutes for two hours and hourly through hour six. Extend monitoring after repeat treatment or when late hypoglycaemia risk warrants it, as directed by the local protocol.",
    "critical": true,
    "support": "partial",
    "sources": [

@@ -115,7 +115,7 @@
     },
     {
      "text": "Print a rhythm strip, put it in the notes and recheck in a few minutes.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "independent_nursing",
      "feedback": "A strip is useful for the team, but a symptomatic patient with a fast wide rhythm needs immediate assessment and help.",
@@ -141,7 +141,7 @@
   },
   {
    "position": 2,
-   "info": "The patient becomes more unwell, with a falling pressure and increasing confusion. A pulse can still be felt. The emergency team arrives.",
+   "info": "The patient becomes hypotensive and confused during persistent regular monomorphic wide-complex tachycardia. A pulse is present and the emergency team arrives.",
    "prompt": "What is your role now?",
    "observations": [
     {
@@ -167,11 +167,11 @@
    ],
    "options": [
     {
-     "text": "Support the team: bring the defibrillator and emergency equipment, secure intravenous access, keep monitoring and recording, and be ready to start CPR if the pulse is lost, leaving treatment decisions and delivery to the clinicians trained to give them under protocol.",
+     "text": "Prepare the defibrillator for urgent synchronized cardioversion by the trained team when they confirm that the persistent regular wide-complex rhythm is causing instability. Maintain monitoring and reassess the pulse. If the pulse is lost, activate the arrest pathway and start CPR.",
      "points": 2,
      "next": 3,
      "scope": "order_or_protocol_required",
-     "feedback": "Treatments for symptomatic dysrhythmias include medicines, cardioversion and defibrillation; with a pulse, cardioversion or antidysrhythmic medicines are used, and without a pulse defibrillation and CPR; these are given by trained staff under protocol.",
+     "feedback": "For unstable monomorphic tachycardia with a pulse, synchronized cardioversion is the expected pathway. Pulseless VT follows the cardiac arrest pathway.",
      "consequence": "The team works efficiently and the nurse is ready if the situation worsens.",
      "support": "partial",
      "sources": [

@@ -172,7 +172,7 @@ SK-17,CRRT circuit monitoring,procedure,local_protocol,1,0,0,1,
 SK-17,CRRT circuit monitoring,monitoring,partial,1,0,1,0,S-KDIGO-AKI-2012
 SK-17,CRRT circuit monitoring,escalation,partial,2,0,2,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
 SK-17,CRRT circuit monitoring,documentation,local_protocol,1,0,0,1,
-SK-18,ECG monitoring,safety,partial,1,0,1,0,S-OPENRN-ADV-C7
+SK-18,ECG monitoring,safety,partial,1,0,1,0,S-AHA-BLS-ADULT-2025;S-OPENRN-ADV-C7
 SK-18,ECG monitoring,responsibilities,partial,1,0,1,0,S-OPENRN-ADV-C7
 SK-18,ECG monitoring,equipment,partial,1,0,1,0,S-OPENRN-ADV-C7
 SK-18,ECG monitoring,procedure,local_protocol,1,0,0,1,

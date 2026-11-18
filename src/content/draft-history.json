@@ -192,6 +192,20 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "667bf68ff9e4dd67",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-ERC-ALS-2025",
+     "S-RCP-NEWS2",
+     "S-SFDA-PULSE-OX-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T07": [
@@ -218,6 +232,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "5815c6d11abef80e",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ESICM-ARDS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T11": [
@@ -235,6 +261,17 @@
    {
     "hash": "8e162b9fd21d964d",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-SUCT"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d56b9e8b566616e3",
+    "recorded": "2026-11-18",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AARC-SUCT"
@@ -426,6 +463,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f8a842a5b7def956",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AARC-SUCT",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D07-T06": [
@@ -490,6 +540,20 @@
    {
     "hash": "4c57b233e37e5726",
     "recorded": "2026-11-16",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ERC-ALS-2025",
+     "S-INTL-PI-2026",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f7b2d60670cf137a",
+    "recorded": "2026-11-18",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AARC-PVA",
@@ -935,6 +999,19 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "5deda5d616806095",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-SBT",
+     "S-PERIEXT-2026",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D02-T02": [
@@ -1006,6 +1083,19 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "c156d38bb7e0e688",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T08": [
@@ -1027,6 +1117,19 @@
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AARC-BGA-2013",
+     "S-OPENRN-FUND-CH15"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "645454a5dd022a0f",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-BGA-2013",
+     "S-MERCK-ACID-BASE",
      "S-OPENRN-FUND-CH15"
     ],
     "gaps": 0,
@@ -1948,6 +2051,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f6ef67a5cf427b17",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-18": [
@@ -1958,6 +2075,20 @@
     "sources": [
      "S-AACN-ALARM-2018",
      "S-AACN-DYSRHYTHMIA-2016",
+     "S-OPENRN-ADV-C7"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "32e1172913d631dc",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-AHA-BLS-ADULT-2025",
      "S-OPENRN-ADV-C7"
     ],
     "gaps": 2,
@@ -2096,6 +2227,18 @@
     "gaps": 2,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1755ca078c58fbe1",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-23": [
@@ -2217,6 +2360,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1d69169ffff02b67",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-02": [
@@ -2262,6 +2419,20 @@
    {
     "hash": "aa66a146e535754e",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "45a12402c031b974",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-EPINEPHRINE",
@@ -2496,6 +2667,20 @@
    {
     "hash": "49e720bb68a52f70",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PROPOFOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "27ad690179e51201",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-PROPOFOL",
@@ -2812,6 +2997,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "37be8ccf70626b9b",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ROCURONIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-13": [
@@ -2844,6 +3043,20 @@
    {
     "hash": "b73b9c7bd46848d4",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CISATRACURIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "56916a74706ff025",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-CISATRACURIUM",
@@ -2910,6 +3123,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "a7e198f4eea3d7b2",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-15": [
@@ -2961,6 +3188,22 @@
    {
     "hash": "d22fb293309a1a14",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "6fb1a4a1edf53ce1",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-INSULIN",
@@ -3154,6 +3397,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3fce67ba8486ab4a",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-POTASSIUM",
+     "L-POTASSIUM-CONC",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-20": [
@@ -3202,6 +3460,21 @@
     "evidence_status": "partial",
     "sources": [
      "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "779b1f431fa002c3",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "N-UKKA-HK-2026-07",
      "S-AHRQ-TS",
      "S-FDA-PUMP",
      "S-RCP-NEWS2"
@@ -3623,6 +3896,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4b7503cc404168cb",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LINEZOLID",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-29": [
@@ -3998,6 +4285,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3699cc9a81c79c86",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NITROGLYCERIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-36": [
@@ -4302,6 +4603,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "200d289334f0ca32",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NALOXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-41": [
@@ -4361,6 +4676,20 @@
    {
     "hash": "5427b454eb7400bf",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FLUMAZENIL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "952cea2a43b82c8b",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-FLUMAZENIL",
@@ -4472,6 +4801,20 @@
    {
     "hash": "02b4c6e1ee8a5220",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-SUCCINYLCHOLINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d7619a976478e53a",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-SUCCINYLCHOLINE",
@@ -4845,6 +5188,19 @@
     "gaps": 4,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "5b967476edd2e697",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-02": [
@@ -4864,6 +5220,21 @@
    {
     "hash": "4adc35851284fc48",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-AHRQ-TS",
+     "S-ESICM-SHOCK-2014",
+     "S-OPENSTAX-MS-35-2"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "1e53d552785656ba",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-DOBUTAMINE",
@@ -4920,6 +5291,21 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "7b34547df6618840",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-RCUK-ABCDE-2024"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-05": [
@@ -4946,6 +5332,21 @@
      "S-AHRQ-TS",
      "S-OPENRN-FUND-CH8",
      "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "b9ab95e3e3d87f08",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-2024"
     ],
     "gaps": 5,
     "required_sources": 2,
@@ -4978,6 +5379,21 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "af40dc13396d5600",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-FICM-UNPLANNED-EXTUBATION-2022",
+     "S-RCUK-ABCDE-2024"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-07": [
@@ -4997,6 +5413,21 @@
    {
     "hash": "7e72646030483bda",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AARC-SUCT",
+     "S-AHRQ-TS",
+     "S-BTF-TBI-4TH",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "3318b66d3e009a11",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-MANNITOL",
@@ -5050,6 +5481,21 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "9477212f451ca72f",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-JBDS-HYPO-2020",
+     "N-NICE-NG217",
+     "S-AHRQ-TS",
+     "S-NCS-ENLS-SE-2024"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-09": [
@@ -5081,12 +5527,41 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "8a2fd15bddd13dfc",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-10": [
    {
     "hash": "6cedc2554cfa8b98",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "cb9d3ef3fc0bdcc8",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-INSULIN",
@@ -5137,6 +5612,19 @@
     "gaps": 6,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "6c52749b735999d9",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-12": [
@@ -5167,6 +5655,21 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "967e8297f452a7ba",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "L-AMIODARONE",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-OPENRN-ADV-C74"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-13": [
@@ -5185,6 +5688,18 @@
    {
     "hash": "9269e4f6596e5ce5",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-2025",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "161573c3c5bac465",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "S-AHA-2025",
@@ -5265,6 +5780,19 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "b873db280a282b66",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-16": [
@@ -5312,6 +5840,22 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "6198a16a65dd2da6",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-17": [
@@ -5340,12 +5884,39 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "6d9d3b5239b6cec8",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-18": [
    {
     "hash": "615fbdbf11a84e06",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "13c313cd7a73d621",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "S-AHRQ-TS",
@@ -5386,12 +5957,39 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "d80446263d19c5bb",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-20": [
    {
     "hash": "ad2b95e6f76dd62c",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "aef91c0efde398a6",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "N-NICE-NG232",
@@ -5428,6 +6026,22 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "2910d47d0c96475b",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-CG103",
+     "N-RCUK-ANAPH-2021",
+     "N-UKKA-HK-2026-07",
+     "S-AHA-BLS-ADULT-2025",
+     "S-OPENRN-ADV-C7",
+     "S-PHILIPS-MX-T"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-02": [
@@ -5455,6 +6069,20 @@
     ],
     "gaps": 3,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "132d11556e5d1b93",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-HAMILTON-C1-SW3"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
     "issues": 0
    }
   ],
@@ -5484,6 +6112,20 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "a7b48a64e4ad5737",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ARTERIAL-SAUGEL",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-SSC-2021"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-04": [
@@ -5510,6 +6152,31 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c94695163aff1de4",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "47747ce029135be0",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-BD-ALARIS-121",
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-05": [
@@ -5533,6 +6200,18 @@
     ],
     "gaps": 3,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "2f84002d506e51df",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ERC-ALS-2025",
+     "S-ZOLL-R-SERIES"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
     "issues": 0
    }
   ],
@@ -5559,6 +6238,30 @@
     ],
     "gaps": 3,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "4983e9175d38fcd0",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "4e664331fabec249",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
     "issues": 0
    }
   ],
@@ -5588,6 +6291,20 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "1d0c3f6c1919aa00",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-KANGAROO-224",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-08": [
@@ -5611,6 +6328,18 @@
     ],
     "gaps": 3,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "ab9f934897622971",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-HILLROM-P290",
+     "S-INTL-PI-2026"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
     "issues": 0
    }
   ],
@@ -5758,6 +6487,18 @@
    {
     "hash": "00c99cbaa7253f71",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "2906d36a5f033e08",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "S-FDA-PUMP",
