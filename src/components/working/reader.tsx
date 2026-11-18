@@ -27,6 +27,8 @@ const LAB_LINKS: Record<string, { href: string; label: [string, string] }[]> = {
   "SK-24": [{ href: "/gcs", label: ["Try the Glasgow Coma Scale trainer", "جرّب مدرّب مقياس غلاسكو للغيبوبة"] }],
   "EQ-04": [{ href: "/infusion-practice", label: ["Try the infusion-rate practice problems", "جرّب تمارين حساب معدل التسريب"] }],
   "SK-22": [{ href: "/infusion-practice", label: ["Try the infusion-rate practice problems", "جرّب تمارين حساب معدل التسريب"] }],
+  "SK-01": [{ href: "/aline", label: ["Try the arterial line square-wave test exercises", "جرّب تمارين اختبار الموجة المربعة للخط الشرياني"] }],
+  "EQ-03": [{ href: "/aline", label: ["Try the arterial line square-wave test exercises", "جرّب تمارين اختبار الموجة المربعة للخط الشرياني"] }],
 };
 export function ModuleReader({entry,locale}:{entry:WorkingEntry;locale:string}) {
  const ar=locale==="ar", [tab,setTab]=useState(entry.type==="questions"?"quiz":entry.scenario?"scenario":entry.practice?"practice":"read"),[active,setActive]=useState(0),[checks,setChecks]=useState<string[]>([]);
