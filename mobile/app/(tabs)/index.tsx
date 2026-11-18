@@ -11,6 +11,7 @@ export default function LearningHub() {
     <Screen>
       <H1>{t("hub.title")}</H1>
       <P muted>{t("hub.intro")}</P>
+      <NavCard href="/search" title={t("search.title")} body={t("search.placeholder")} />
       <RemoteGate state={list} onRetry={list.refresh}>
         {() => (
           <>

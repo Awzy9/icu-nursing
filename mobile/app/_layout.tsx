@@ -17,6 +17,7 @@ function Shell() {
         <Stack.Screen name="quiz" options={{ title: t("quiz.title") }} />
         <Stack.Screen name="quiz/[key]" options={{ title: t("quiz.title") }} />
         <Stack.Screen name="bookmarks" options={{ title: t("bookmarks.title") }} />
+        <Stack.Screen name="search" options={{ title: t("search.title") }} />
         <Stack.Screen name="labs" options={{ title: t("labs.title") }} />
         <Stack.Screen name="topics/[key]" options={{ title: t("topic.title") }} />
         <Stack.Screen name="equipment/[code]" options={{ title: t("equipment.title") }} />
