@@ -22,13 +22,13 @@
   "question": {
     "prompt": "What does this presentation most likely represent, and what should the nurse keep in mind?",
     "options": [
-     "A febrile non-haemolytic reaction - but a high fever with collapse would raise concern for bacterial contamination instead",
+     "A possible febrile non-haemolytic reaction. Stop the transfusion and assess for serious causes before labelling it benign.",
      "Definitely a benign reaction that needs no further monitoring or escalation",
      "Transfusion-associated circulatory overload (TACO)",
      "An allergic reaction requiring epinephrine"
     ],
     "answer": 0,
-    "explanation": "A temperature rise of at least 1°C, or chills or rigors, with no other cause fits the definition of a febrile non-haemolytic reaction. However, this cannot simply be assumed benign - a high fever (a rise of at least 2°C) together with collapse should raise concern for bacterial contamination, which needs a different, urgent response (blood cultures, broad-spectrum therapy)."
+    "explanation": "Fever or chills during transfusion can reflect a febrile non-haemolytic reaction, acute haemolysis or bacterial contamination. Stop the transfusion and assess immediately under the local reaction pathway. A febrile non-haemolytic reaction is a diagnosis of exclusion, and serious causes can present before hypotension develops."
   }
  },
  {
@@ -60,7 +60,7 @@
      "This is TRALI and needs only respiratory support, with no other urgent action"
     ],
     "answer": 0,
-    "explanation": "A simple allergic reaction is often mild - urticaria or wheeze. Hypotension, tachycardia, severe dyspnoea, and more severe respiratory or cardiovascular features point to anaphylaxis, which is rare but needs immediate treatment with epinephrine and support, per prescriber order or protocol - the transfusion must be stopped immediately regardless of which reaction is suspected."
+    "explanation": "An isolated mild allergic reaction can cause urticaria or itching. Wheeze or other respiratory compromise requires urgent assessment for anaphylaxis. Hypotension, tachycardia, severe dyspnoea, and more severe respiratory or cardiovascular features point to anaphylaxis, which is rare but needs immediate treatment with epinephrine and support, per prescriber order or protocol - the transfusion must be stopped immediately regardless of which reaction is suspected."
   }
  }
 ]

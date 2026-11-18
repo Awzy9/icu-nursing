@@ -98,7 +98,7 @@ B. Give a fluid bolus from the ward stock to improve the output, since low outpu
 C. Increase the observation interval to every four hours, so that the patient is not disturbed so often during the night.
 D. Report to the prescriber now as possible AKI, giving the output trend and risk factors, and prepare for tests.
 **Answer: D.**
-**Why correct:** Urine output below 0.5 mL/kg/h (40 mL/h here) for 6 hours meets a NICE criterion; reporting before the sixth hour allows early action.
+**Why correct:** The output is 0.25 mL/kg/h, below the 0.5 mL/kg/h threshold. NICE uses more than six hours for this adult detection criterion, but the patient’s septic shock and sustained oliguria warrant escalation now.
 **Why not A:** Delaying to the end of the shift ignores a developing criterion.
 **Why not B:** Fluids need an order, and the cause may not be hypovolaemia.
 **Why not C:** Less frequent monitoring is inappropriate when output is falling.

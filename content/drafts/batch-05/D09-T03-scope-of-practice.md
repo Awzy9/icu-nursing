@@ -143,11 +143,11 @@ D. Accept the task whenever the unit manager is present, whatever your own compe
 
 **Q5 (safety).** A student nurse asks why legal reviews of negligence place so much weight on documentation. Which explanation is correct?
 A. Documentation is needed for billing and has no bearing on how care is judged when a case is reviewed in law.
-B. An undocumented assessment or action is considered not done in US courts, so records must be accurate.
+B. Accurate records help establish what care was provided and when.
 C. Charts must be as long as possible to show effort, because courts count the number of words that were recorded.
 D. Physicians' notes count as evidence, so nursing documentation is optional once the orders have been entered.
 **Answer: B.**
-**Why correct:** The chapter gives the rule of thumb that an undocumented assessment or action is treated as not done, which is why accurate records matter in a legal review. Length is not required, and nursing notes form part of the record.
+**Why correct:** Accurate records provide contemporaneous evidence of assessment, action and follow-up. Missing documentation makes the care harder to establish, and its legal significance depends on the jurisdiction and the other evidence.
 **Why not A:** The purpose is accurate clinical and legal records.
 **Why not C:** Length is not required; accuracy is.
 **Why not D:** Nursing documentation counts as part of the record.

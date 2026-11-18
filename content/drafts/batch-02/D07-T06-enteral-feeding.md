@@ -124,12 +124,12 @@ D. Remove the feeding tube before every turn to avoid displacement, and re-inser
 **Why not D:** Removing the tube is unnecessary and unsafe.
 
 **Q4 (application).** Which measure best reduces aspiration risk in a ventilated patient who is being fed?
-A. Keeping the head of the bed raised (SHEA: 30–45°, unless contraindicated) and giving regular mouth care.
+A. Keep the head of the bed at 30–45° during gastric feeding unless contraindicated.
 B. Lying the patient flat during feeds to make the stomach empty into the bowel.
 C. Giving large boluses quickly to finish the feed sooner, so that the stomach is empty for the next medicines.
 D. Switching off the monitors during the feed so that the patient is not disturbed and can rest more easily.
 **Answer: A.**
-**Why correct:** Head elevation and oral care are essential practices in the VAP update.
+**Why correct:** The SHEA update includes head-of-bed elevation as a prevention measure. Regular oral care is a separate VAP-prevention measure.
 **Why not B:** A flat position increases aspiration risk.
 **Why not C:** Rapid large volumes increase vomiting risk.
 **Why not D:** Monitoring is needed during feeding.
