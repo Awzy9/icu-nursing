@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { Activity, ArrowRight, BatteryCharging, ClipboardList } from "lucide-react";
 import Image from "next/image";
 
 type Translation = readonly [english: string, arabic: string];
@@ -12,7 +12,7 @@ type Visual = {
   detail: Translation;
   source: string;
   credit: string;
-  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0";
+  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0";
   cropped?: boolean;
 };
 
@@ -216,6 +216,69 @@ const centralLine: Visual = {
   license: "BY-SA 3.0",
 };
 
+const nasogastricTube: Visual = {
+  file: "nasogastric-tube",
+  width: 437,
+  height: 875,
+  alt: ["A side-view diagram of a nasogastric tube travelling from the nose to the stomach.", "رسم جانبي لأنبوب أنفي معدي يمتد من الأنف إلى المعدة."],
+  label: ["Follow the nasogastric tube route", "تتبّع مسار الأنبوب الأنفي المعدي"],
+  detail: ["Trace the intended route from the nose to the stomach. Confirm the tube’s position using the approved method before feeding or giving medicines.", "تتبّع المسار المقصود من الأنف إلى المعدة. تحقّق من موضع الأنبوب بالطريقة المعتمدة قبل التغذية أو إعطاء الأدوية."],
+  source: "Nasogastric_Intubation.png",
+  credit: "BruceBlaus",
+  license: "BY-SA 4.0",
+};
+
+const suctionCatheter: Visual = {
+  file: "suction-catheter",
+  width: 419,
+  height: 875,
+  alt: ["A flexible suction catheter with a connector at one end.", "قسطرة شفط مرنة لها وصلة عند أحد الطرفين."],
+  label: ["Identify an airway suction catheter", "تعرّف على قسطرة شفط مجرى الهواء"],
+  detail: ["Find the connector at the wider end and the catheter tip at the other end. This example shows an open-suction catheter.", "حدّد الوصلة عند الطرف الأعرض وطرف القسطرة في الجهة الأخرى. يوضّح هذا المثال قسطرة شفط مفتوحة."],
+  source: "Absaugkatheter.jpg",
+  credit: "Uwe Gille",
+  license: "BY-SA 3.0",
+};
+
+const venturiMask: Visual = {
+  file: "venturi-mask",
+  width: 950,
+  height: 734,
+  alt: ["Illustration of an adult wearing a Venturi mask, with example adapters shown below.", "رسم لشخص بالغ يرتدي قناع فنتوري وتظهر أسفله أمثلة للمحوّلات."],
+  label: ["Identify a Venturi mask and its adapter", "تعرّف على قناع فنتوري ومحوّله"],
+  detail: ["Find the adapter below the mask. The adapter colours and settings shown are examples. Verify the markings and instructions for the device in use.", "حدّد المحوّل تحت القناع. الألوان والإعدادات المعروضة أمثلة. تحقّق من العلامات وتعليمات الجهاز المستخدم."],
+  source: "Adult_with_air_entrainment_(Venturi)_mask.png",
+  credit: "Open Critical Care & World Health Organization",
+  license: "BY 4.0",
+};
+
+const transportChecks = [
+  { icon: Activity, label: ["Monitoring", "المراقبة"], text: ["Confirm monitoring can continue during the transfer.", "تأكّد من استمرار المراقبة أثناء النقل."] },
+  { icon: BatteryCharging, label: ["Oxygen and power", "الأكسجين والطاقة"], text: ["Check oxygen supply, batteries and backup equipment.", "تحقّق من إمداد الأكسجين والبطاريات والمعدات الاحتياطية."] },
+  { icon: ClipboardList, label: ["Equipment and handover", "المعدات وتسليم الحالة"], text: ["Secure portable equipment and prepare the handover.", "ثبّت المعدات المحمولة وجهّز تسليم الحالة."] },
+] as const;
+
+function TransportVisual({ locale }: { locale: string }) {
+  const language = locale === "ar" ? 1 : 0;
+  return (
+    <figure className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
+      <figcaption className="font-semibold">{language ? "فحوصات أساسية قبل نقل المريض داخل المستشفى" : "Key checks before an intrahospital transfer"}</figcaption>
+      <ul className="grid gap-3 sm:grid-cols-3">
+        {transportChecks.map(({ icon: Icon, label, text }) => (
+          <li key={label[0]} className="space-y-2 rounded-lg border border-border bg-card p-3 text-sm">
+            <Icon aria-hidden="true" className="size-5 text-primary" />
+            <p className="font-semibold">{label[language]}</p>
+            <p className="text-muted-foreground">{text[language]}</p>
+          </li>
+        ))}
+      </ul>
+      <a className="text-xs text-muted-foreground underline" href="https://www.ficm.ac.uk/sites/ficm/files/documents/2026-04/The%20Transfer%20Of%20The%20Critically%20Ill%20Adult_edition5_2026_FINALs.pdf">
+        {language ? "إرشادات نقل المريض البالغ ذي الحالة الحرجة" : "Critical care transfer guidance"}
+      </a>
+    </figure>
+  );
+}
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -250,13 +313,12 @@ const visuals: Record<string, Visual> = {
   "D04-T03": foleyCatheter,
   "SK-02": centralLine,
   "D06-T05": centralLine,
+  "SK-11": nasogastricTube,
+  "SK-06": suctionCatheter,
+  "D01-T11": suctionCatheter,
 };
 
-export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
-  if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
-
-  const visual = visuals[moduleKey];
-  if (!visual) return null;
+function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) {
 
   const ar = locale === "ar";
   const language = ar ? 1 : 0;
@@ -285,5 +347,21 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
         </p>
       </figcaption>
     </figure>
+  );
+}
+
+
+export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
+  if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
+  if (moduleKey === "SK-20") return <TransportVisual locale={locale} />;
+
+  const visual = visuals[moduleKey];
+  if (!visual) return null;
+  const showVenturiMask = moduleKey === "SK-08" || moduleKey === "D01-T03";
+  return (
+    <>
+      <EquipmentPhoto visual={visual} locale={locale} />
+      {showVenturiMask && <EquipmentPhoto visual={venturiMask} locale={locale} />}
+    </>
   );
 }
