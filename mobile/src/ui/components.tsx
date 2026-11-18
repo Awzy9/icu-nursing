@@ -1,9 +1,9 @@
 import React from "react";
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View, type StyleProp, type ViewStyle } from "react-native";
 import { Link, type Href } from "expo-router";
-import { toggleBookmark } from "../core/progress";
 import { useApp } from "../state/app";
 import type { FetchState } from "../hooks/useRemoteContent";
+import { useProgressSync } from "../hooks/useProgressSync";
 import { MIN_TARGET, radius, space, type } from "./theme";
 
 /** Page container: scrolls, applies the language direction to everything inside, and carries the sample-content notice. */
@@ -70,7 +70,8 @@ export function RemoteGate<T>({ state, onRetry, empty, children }: { state: Fetc
   return <>{state.fromCache ? <Callout tone="info">{t("common.cached")}</Callout> : null}{children(state.data, state.fromCache)}</>;
 }
 export function BookmarkButton({ itemKey }: { itemKey: string }) {
-  const { progress, update, t } = useApp();
+  const { progress, t } = useApp();
+  const { toggleBookmark } = useProgressSync();
   const on = progress.bookmarks.includes(itemKey);
-  return <Button label={on ? t("bookmark.remove") : t("bookmark.add")} variant="outline" hint={on ? t("a11y.bookmarkOn") : t("a11y.bookmarkOff")} onPress={() => update((p) => toggleBookmark(p, itemKey))} />;
+  return <Button label={on ? t("bookmark.remove") : t("bookmark.add")} variant="outline" hint={on ? t("a11y.bookmarkOn") : t("a11y.bookmarkOff")} onPress={() => toggleBookmark(itemKey)} />;
 }
