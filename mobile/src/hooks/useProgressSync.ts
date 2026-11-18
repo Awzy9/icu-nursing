@@ -8,10 +8,10 @@
 import { useCallback, useEffect, useRef } from "react";
 import { useAuth } from "../auth/provider";
 import {
-  discardSession as localDiscardSession, saveSession as localSaveSession, toggleBookmark as localToggleBookmark,
+  discardSession as localDiscardSession, saveSession as localSaveSession, setComplete as localSetComplete, toggleBookmark as localToggleBookmark,
   type BookmarkKind, type Progress, type SessionRecord,
 } from "../core/progress";
-import { mergeRemoteBookmarks, mergeRemoteSessions } from "../core/syncMerge";
+import { mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../core/syncMerge";
 import { useApp } from "../state/app";
 import { useCatalogList } from "./useRemoteContent";
 
@@ -41,7 +41,12 @@ export function useProgressSync() {
     if (signedIn) void rpc!.recordWorkingAttempt(questionId, moduleKey, choice, correct, at).catch(() => undefined);
   }, [rpc, signedIn]);
 
-  return { toggleBookmark, saveSession, discardSession, recordAnswer, signedIn };
+  const setComplete = useCallback((moduleKey: string, done: boolean) => {
+    update((p: Progress) => localSetComplete(p, moduleKey, done));
+    if (signedIn) void rpc!.setWorkingLessonComplete(moduleKey, done).catch(() => undefined);
+  }, [update, rpc, signedIn]);
+
+  return { toggleBookmark, saveSession, discardSession, recordAnswer, setComplete, signedIn };
 }
 
 /**
@@ -62,8 +67,8 @@ export function useProgressPullOnSignIn() {
     lastSyncedEmail.current = email;
     (async () => {
       const kindOf = new Map<string, BookmarkKind>(catalog.data.map((e) => [e.key, e.type as BookmarkKind]));
-      const [bookmarks, sessions] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => [])]);
-      update((p) => mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions));
+      const [bookmarks, sessions, lessons] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => []), rpc.listWorkingLessons().catch(() => [])]);
+      update((p) => mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons));
     })().catch(() => undefined);
   }, [signedIn, rpc, email, catalog, update]);
   useEffect(() => { if (!signedIn) lastSyncedEmail.current = null; }, [signedIn]);

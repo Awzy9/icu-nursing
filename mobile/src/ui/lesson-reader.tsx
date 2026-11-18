@@ -4,7 +4,7 @@ import type { WorkingEntryShared } from "../core/remoteContent";
 import { splitSections } from "../core/markdown";
 import { markViewed, toggleTick } from "../core/progress";
 import { useApp } from "../state/app";
-import { BookmarkButton, Callout, H2, P } from "./components";
+import { BookmarkButton, Callout, CompleteButton, H2, P } from "./components";
 import { MarkdownBody } from "./markdown-body";
 import { space } from "./theme";
 
@@ -18,7 +18,10 @@ export function LessonReader({ entry, bookmarkKey, visual, children }: { entry: 
     <>
       <Callout tone="info">{t("app.englishOnly")}</Callout>
       <Text accessibilityRole="header" style={{ fontSize: 22, fontWeight: "700", color: palette.text, writingDirection: "ltr" }}>{entry.title}</Text>
-      <BookmarkButton itemKey={bookmarkKey} />
+      <View style={{ flexDirection: rtl ? "row-reverse" : "row", gap: space.sm, flexWrap: "wrap" }}>
+        <BookmarkButton itemKey={bookmarkKey} />
+        <CompleteButton moduleKey={entry.key} />
+      </View>
       {visual}
       {children}
       {entry.checklist?.length ? (

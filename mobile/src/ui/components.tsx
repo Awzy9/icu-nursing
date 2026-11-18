@@ -75,3 +75,9 @@ export function BookmarkButton({ itemKey }: { itemKey: string }) {
   const on = progress.bookmarks.includes(itemKey);
   return <Button label={on ? t("bookmark.remove") : t("bookmark.add")} variant="outline" hint={on ? t("a11y.bookmarkOn") : t("a11y.bookmarkOff")} onPress={() => toggleBookmark(itemKey)} />;
 }
+export function CompleteButton({ moduleKey }: { moduleKey: string }) {
+  const { progress, t } = useApp();
+  const { setComplete } = useProgressSync();
+  const done = progress.completed.includes(moduleKey);
+  return <Button label={done ? t("lesson.completed") : t("lesson.complete")} variant={done ? "primary" : "outline"} hint={done ? t("a11y.completeOn") : t("a11y.completeOff")} onPress={() => setComplete(moduleKey, !done)} />;
+}

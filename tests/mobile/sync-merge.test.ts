@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { mergeRemoteBookmarks, mergeRemoteSessions } from "../../mobile/src/core/syncMerge";
+import { mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../../mobile/src/core/syncMerge";
 import { emptyProgress } from "../../mobile/src/core/progress";
 
 describe("mergeRemoteBookmarks", () => {
@@ -40,5 +40,22 @@ describe("mergeRemoteSessions", () => {
   it("returns the same object reference when nothing changes", () => {
     const local = emptyProgress();
     expect(mergeRemoteSessions(local, [])).toBe(local);
+  });
+});
+
+describe("mergeRemoteCompleted", () => {
+  it("unions remote-completed rows into local.completed", () => {
+    const local = { ...emptyProgress(), completed: ["SK-02"] };
+    const merged = mergeRemoteCompleted(local, [{ module_key: "D01-T19", completed: true }, { module_key: "MD-15", completed: false }]);
+    expect(new Set(merged.completed)).toEqual(new Set(["SK-02", "D01-T19"]));
+  });
+  it("never unmarks a local completion from an incomplete remote row (no authoritative timestamp to arbitrate)", () => {
+    const local = { ...emptyProgress(), completed: ["D01-T19"] };
+    const merged = mergeRemoteCompleted(local, [{ module_key: "D01-T19", completed: false }]);
+    expect(merged.completed).toEqual(["D01-T19"]);
+  });
+  it("returns the same object reference when nothing changes", () => {
+    const local = { ...emptyProgress(), completed: ["D01-T19"] };
+    expect(mergeRemoteCompleted(local, [{ module_key: "D01-T19", completed: true }])).toBe(local);
   });
 });

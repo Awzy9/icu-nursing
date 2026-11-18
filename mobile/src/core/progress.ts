@@ -27,17 +27,21 @@ export const progressSchema = z.object({
   v: z.literal(2),
   bookmarks: z.array(z.string().regex(bookmarkKeyPattern)).max(500),
   viewed: z.array(z.string().regex(/^[A-Z0-9-]{1,40}$/)).max(500),
+  // .default([]) so existing on-device v2 data saved before this field existed still parses
+  // (rather than being discarded as "old schema") instead of forcing a schema version bump.
+  completed: z.array(z.string().regex(/^[A-Z0-9-]{1,40}$/)).max(500).default([]),
   ticks: z.record(z.string(), z.array(z.number().int().min(0).max(199)).max(200)),
   cases: z.record(z.string(), z.object({ scoreTenths: z.number().int().min(0).max(1000), at: z.string() })),
   practice: z.array(z.object({ right: z.number().int().min(0), total: z.number().int().min(1), at: z.string() })).max(100),
   sessions: z.record(z.string(), sessionRecordSchema),
 });
 export type Progress = z.infer<typeof progressSchema>;
-export const emptyProgress = (): Progress => ({ v: 2, bookmarks: [], viewed: [], ticks: {}, cases: {}, practice: [], sessions: {} });
+export const emptyProgress = (): Progress => ({ v: 2, bookmarks: [], viewed: [], completed: [], ticks: {}, cases: {}, practice: [], sessions: {} });
 
 export const bookmarkKey = (kind: BookmarkKind, key: string): string => `${kind}:${key}`;
 export const toggleBookmark = (p: Progress, key: string): Progress => ({ ...p, bookmarks: p.bookmarks.includes(key) ? p.bookmarks.filter((k) => k !== key) : p.bookmarks.length >= 500 ? p.bookmarks : [...p.bookmarks, key] });
 export const markViewed = (p: Progress, key: string): Progress => (p.viewed.includes(key) || p.viewed.length >= 500 ? p : { ...p, viewed: [...p.viewed, key] });
+export const setComplete = (p: Progress, key: string, done: boolean): Progress => { const has = p.completed.includes(key); if (done === has) return p; return { ...p, completed: done ? (p.completed.length >= 500 ? p.completed : [...p.completed, key]) : p.completed.filter((k) => k !== key) }; };
 export const toggleTick = (p: Progress, code: string, index: number): Progress => { const cur = p.ticks[code] ?? []; return { ...p, ticks: { ...p.ticks, [code]: cur.includes(index) ? cur.filter((i) => i !== index) : [...cur, index].sort((a, b) => a - b) } }; };
 export const recordCase = (p: Progress, code: string, scoreTenths: number, at: string): Progress => ({ ...p, cases: { ...p.cases, [code]: { scoreTenths: Math.max(scoreTenths, p.cases[code]?.scoreTenths ?? 0), at } } });
 export const recordPractice = (p: Progress, right: number, total: number, at: string): Progress => ({ ...p, practice: [...p.practice, { right, total, at }].slice(-100) });
