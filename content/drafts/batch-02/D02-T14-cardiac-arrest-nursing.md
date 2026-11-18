@@ -45,7 +45,7 @@ During arrest, circulation stops and organs are deprived of oxygen. Chest compre
 **Safe resuscitation support (BLS and ALS support)**
 - Start chest compressions as soon as possible: heel of the hand on the lower half of the sternum, straight arms, shoulders above the chest; depth at least 5 cm but not more than 6 cm; rate 100–120 per minute; full recoil; as few interruptions as possible (ERC BLS).
 - In a bed: start CPR on the bed; do not move the patient to the floor (delays compressions and risks injury); if the mattress has a CPR mode that stiffens it, activate it; compress deeper to compensate for a soft mattress. ERC does not advocate a backboard.
-- Compressions first, then ventilation, in a 30:2 cycle for obese patients too, without modification (ERC BLS); ventilate with just enough air to make the chest start to rise; avoid excessive ventilation.
+- Compressions first, then ventilation, in a 30:2 cycle before an advanced airway is in place, including in patients with obesity (ERC BLS/ALS); ventilate with just enough air to make the chest start to rise; avoid excessive ventilation.
 - Use defibrillation pads rather than paddles when available and follow the safety steps in D02-T15; do not delay for pad application when compressions can continue.
 - Support the team leader: prepare equipment, assist the airway team, ensure waveform capnography is used to confirm tracheal tube placement (ERC ALS), record times.
 - Do not give drugs, shocks or airway interventions unless authorised by the leader within your competence and policy.
@@ -70,7 +70,7 @@ During CPR: compression quality, interruptions, rhythm checks, ETCO₂, arterial
 | Recognition | Call for any unresponsive person; abnormal breathing includes agonal, laboured, slow or panting breathing | BLS | Do not wait for certainty |
 | Prevention in hospital | Early-warning systems, staff empowered to call on concern, structured handover tools, appropriate staffing and skills | ALS | Escalate on concern |
 | Compressions | Depth 5–6 cm; rate 100–120/min; full recoil; minimal interruptions; firm surface; start on the bed; CPR mode mattress | BLS | Technique and bed use |
-| Ventilation | Compressions first; 30:2; no modification for obesity; just enough to raise the chest | BLS | Avoid hyperventilation |
+| Ventilation | Compressions first; 30:2 before an advanced airway; just enough volume to raise the chest | BLS | Avoid hyperventilation |
 | Defibrillation | See D02-T15 | ALS | Safety |
 | Tube confirmation | Waveform capnography | ALS | Check trace |
 | Oxygen after ROSC | 100% until reliable measurement, then 94–98% / PaO₂ 10–13 kPa; avoid hypoxaemia and hyperoxaemia; oximetry caveats | PRC | Titrate per team |
@@ -141,9 +141,9 @@ D. Call for help on the basis of clinical concern using structured communication
 **Why not B:** A four-hour delay risks deterioration.
 **Why not C:** Staff should be able to call without requiring agreement.
 
-**Q4 (monitoring).** A comatose patient has just regained circulation after a cardiac arrest. Which finding should the nurse report to the team first?
+**Q4 (monitoring).** An adult remains comatose one hour after return of spontaneous circulation (ROSC). Which finding should the nurse report to the team first?
 A. An SpO₂ of 97% on the ordered oxygen, with a good pleth trace and no change in the last hour.
-B. A MAP of 52 mmHg falling over ten minutes, when the team has ordered a target above 60–65 mmHg.
+B. A MAP of 52 mmHg falling over ten minutes, below the team’s ordered MAP target of at least 65 mmHg.
 C. A temperature of 36.8 °C measured with the bladder probe, unchanged from the previous hour.
 D. A capillary glucose that is within the range set by the unit protocol and has been stable since ROSC.
 **Answer: B.**
@@ -155,7 +155,7 @@ D. A capillary glucose that is within the range set by the unit protocol and has
 **Q5 (scope).** Which task belongs to the team leader or prescriber rather than the nurse?
 A. Recording the time of each rhythm check and shock on the resuscitation record during the attempt.
 B. Deciding on neuroprognostication and discussing the likely outlook with the family at the bedside.
-C. Activating the CPR mode on the mattress before starting compressions on a patient in the bed.
+C. Activating the mattress CPR mode, if assigned, without interrupting or delaying compressions.
 D. Reporting a rise in the temperature of a comatose post-arrest patient to the team promptly.
 **Answer: B.**
 **Why correct:** Prognostication is multimodal and a medical team decision; no single predictor is fully accurate.

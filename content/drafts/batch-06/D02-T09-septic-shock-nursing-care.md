@@ -102,7 +102,7 @@ A 66-year-old woman with a urinary source is on a vasoactive infusion after flui
 A. Wait until the culture results return before giving any antimicrobial, so that the choice of drug is exactly right for the organism.
 B. Give antimicrobials first and take blood cultures only if the patient does not improve afterwards on the chosen treatment.
 C. Take the cultures after the antimicrobials have run in, because the first dose is the priority and cultures can wait until later.
-D. Collect blood cultures as soon as possible and ideally before antimicrobials, while giving antimicrobials within an hour.
+D. Collect blood cultures as soon as possible and ideally before antimicrobials, and give antimicrobials immediately, ideally within an hour of recognizing shock.
 **Answer: D.**
 **Why correct:** SSC 2026 recommends taking blood cultures as soon as possible and ideally before antimicrobials (strong, low certainty); in possible, probable or definite septic shock, antimicrobial therapy should be given immediately, ideally within 1 hour of recognition (strong, very low certainty). Cultures must not become a reason to delay emergency treatment.
 **Why not A:** Waiting for culture results would greatly delay treatment.
@@ -142,14 +142,14 @@ D. It says that antipyretic therapy is required before giving antimicrobials, in
 **Why not C:** Antipyretics are not part of the bundle.
 **Why not D:** No such requirement is stated.
 
-**Q5 (application).** Following the acute resuscitation phase, a patient with septic shock no longer needs escalating vasopressors or ongoing volume expansion but has increasing weight, peripheral oedema and positive fluid balance. What does SSC 2026 suggest the team may consider after assessing the patient's cardiorespiratory status and clinical course?
+**Q5 (application).** Following the acute resuscitation phase, a patient with septic shock is off vasopressors and no longer needs volume expansion but has increasing weight, peripheral oedema and positive fluid balance. What does SSC 2026 suggest the team may consider after assessing the patient's cardiorespiratory status and clinical course?
 A. Active fluid removal after the acute resuscitation phase, as a suggestion with very low certainty.
 B. Further large fluid boluses to treat the oedema, which indicates that the circulation is dry.
 C. Stopping all monitoring now that the blood pressure is stable, to allow the patient to rest.
 D. Switching to an albumin-only fluid policy for all patients, whatever their condition.
 **Answer: A.**
 **Why correct:** SSC 2026 conditionally suggests considering active fluid removal only after the acute resuscitation phase (very low certainty); the team assesses cardiorespiratory function, vasopressor requirement, clinical course, oedema, weight and fluid balance. Oedema by itself does not mandate fluid removal.
-**Why not B:** Oedema and weight gain suggest overload, not a dry circulation.
+**Why not B:** Oedema and weight gain can support concern for fluid accumulation. They cannot establish intravascular volume or show that a bolus will help.
 **Why not C:** Monitoring continues after the pressure is stable because the patient's condition can change.
 **Why not D:** The page suggests crystalloids alone over supplemental albumin in general, with exceptions.
 

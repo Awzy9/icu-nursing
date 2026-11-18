@@ -92,11 +92,11 @@ A 66-year-old man with an implanted defibrillator arrests with ventricular fibri
 ## 17. MCQs
 **Q1 (safety).** A patient arrests on a non-rebreather mask, and the defibrillator is ready. Which action best reduces the fire risk before the shock?
 A. Increase the oxygen flow so that the patient stays well oxygenated while the shock is being delivered to the chest.
-B. Remove the mask, keep it at least 1 m from the chest, and leave any ventilator or bag circuit connected.
+B. Remove the free-flow oxygen mask and move it at least 1 m from the patient’s chest.
 C. Turn off the monitor to avoid interference and leave the mask where it is, since the patient needs the oxygen.
 D. Keep the mask on but loosen the strap so that the oxygen escapes more easily from around the face during the shock.
 **Answer: B.**
-**Why correct:** ERC advises removing masks and cannulae at least 1 m from the chest, keeping circuits connected with exhaust directed away.
+**Why correct:** Moving the mask away reduces oxygen accumulation around the chest. If a bag or ventilator circuit is attached to a tracheal tube or supraglottic airway, leave it attached and direct ventilator exhaust away from the chest.
 **Why not A:** More oxygen raises the fire risk.
 **Why not C:** Leaving the mask in place is hazardous.
 **Why not D:** A loosened mask still floods the area with oxygen.
@@ -105,7 +105,7 @@ D. Keep the mask on but loosen the strap so that the oxygen escapes more easily 
 A. Deliver the shock while the compressor continues, because clinical gloves protect the compressor from any electrical effect.
 B. Stop compressions for ten seconds to allow the defibrillator to charge fully before the rhythm is checked and the shock given.
 C. Ask the compressor to hold the chest only lightly with the fingertips so that the shock risk to them is reduced.
-D. Keep compressing while the defibrillator charges, then pause briefly, call a safety check, and shock with no one touching.
+D. Continue manual compressions while charging. Pause briefly, confirm everyone is clear, deliver the shock and resume compressions immediately.
 **Answer: D.**
 **Why correct:** Charging during compressions shortens the pre-shock pause, and the shock must not be delivered while someone is touching the patient.
 **Why not A:** ERC states shocks during manual compressions are not safe even with gloves.

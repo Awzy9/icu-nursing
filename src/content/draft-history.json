@@ -27,6 +27,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "b84d221c37cad7e4",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG253",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D06-T04": [
@@ -325,6 +338,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "d6dfe3cf91d11c15",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ERC-ALS-2025",
+     "S-ERC-BLS-2025",
+     "S-ERC-PRC-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D02-T15": [
@@ -342,6 +368,17 @@
    {
     "hash": "330d1533b9ae3039",
     "recorded": "2026-11-16",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "c060e20fe55e3058",
+    "recorded": "2026-11-18",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-ERC-ALS-2025"
@@ -815,6 +852,19 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "15470f72f6b455de",
+    "recorded": "2026-11-18",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D02-T12": [
@@ -1024,6 +1074,19 @@
    {
     "hash": "91214d8ee8fdb5f8",
     "recorded": "2026-11-16",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "a2820a2a08f7e841",
+    "recorded": "2026-11-18",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-OPENRN-FUND-CH15",
