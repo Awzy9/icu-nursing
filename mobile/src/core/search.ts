@@ -25,3 +25,7 @@ export function groupByType(items: WorkingEntrySummary[]): Map<string, WorkingEn
   for (const e of items) groups.set(e.type, [...(groups.get(e.type) ?? []), e]);
   return groups;
 }
+
+// The route prefix for each catalog entry type, shared by the search screen and exam results'
+// "read the lesson" links (both need to turn a catalog key into a navigable mobile route).
+export const ROUTE_FOR_TYPE: Record<string, string> = { topics: "/topics/", skills: "/skills/", medications: "/medications/", equipment: "/equipment/", cases: "/cases/", questions: "/quiz/" };

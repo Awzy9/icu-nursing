@@ -6,6 +6,7 @@ import { caseListSchema, caseProgressSchema } from "@icu/schemas/cases";
 import { equipmentStateSchema, type EquipmentState } from "@icu/schemas/equipment-state";
 import { skillListSchema, skillProgressSchema } from "@icu/schemas/skills";
 import { bookmarkRowSchema, lessonRowSchema, sessionRowSchema, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
+import { examRowSchema, type ExamRow } from "@icu/schemas/working-exam";
 
 export class RpcError extends Error { constructor(readonly code: "auth" | "not_found" | "invalid" | "limit" | "contract" | "unavailable", message: string) { super(message); } }
 const MAP: Record<string, RpcError["code"]> = { "42501": "auth", P0002: "not_found", "22023": "invalid", "54000": "limit" };
@@ -81,6 +82,24 @@ export function createRpc(client: SupabaseClient) {
     listWorkingBookmarks: (): Promise<BookmarkRow[]> => selectRows("working_bookmarks", "module_key", bookmarkRowSchema),
     listWorkingLessons: (): Promise<LessonRow[]> => selectRows("working_lessons", "module_key,completed", lessonRowSchema),
     listWorkingSessions: (): Promise<SessionRow[]> => selectRows("working_sessions", "module_key,kind,version,position,score,finished,updated_at", sessionRowSchema),
+
+    // Timed exam mode (supabase/migrations/20261117201500_working_exams.sql), mirroring
+    // src/app/[locale]/exam/actions.ts exactly: the question selection itself comes from
+    // /api/content/exam/pick (content, not an account write), and these three calls are the
+    // same working_exam_start/answer/submit RPCs the website uses for the server-anchored row.
+    startWorkingExam: (questionIds: string[], timeLimitSeconds: number): Promise<string> =>
+      call("working_exam_start", z.string().uuid(), { p_question_ids: questionIds, p_time_limit_seconds: timeLimitSeconds }),
+    answerWorkingExam: (examId: string, questionId: string, choice: number) =>
+      run("working_exam_answer", { p_exam_id: examId, p_question_id: questionId, p_choice: choice }),
+    submitWorkingExam: (examId: string) => run("working_exam_submit", { p_exam_id: examId }),
+    loadWorkingExam: async (examId: string): Promise<ExamRow | undefined> => {
+      const { data, error } = await client.from("working_exams").select("id,question_ids,time_limit_seconds,started_at,submitted_at,answers").eq("id", examId).maybeSingle();
+      if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
+      if (!data) return undefined;
+      const parsed = examRowSchema.safeParse(data);
+      if (!parsed.success) throw new RpcError("contract", "working_exams: response does not match the shared schema");
+      return parsed.data;
+    },
   };
 }
 export type Rpc = ReturnType<typeof createRpc>;

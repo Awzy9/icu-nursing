@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { fetchCatalogEntry, fetchCatalogList, fetchLabDataset, imageUrl, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
+import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
 
 const mem = (): KeyValueStore & { data: Map<string, string> } => { const data = new Map<string, string>(); return { data, get: async (k) => data.get(k) ?? null, set: async (k, v) => void data.set(k, v) }; };
 const jsonResponse = (body: unknown, ok = true) => ({ ok, status: ok ? 200 : 500, json: async () => body }) as Response;
@@ -51,6 +51,32 @@ describe("content client: online", () => {
     const fetcher = vi.fn(async () => jsonResponse({ version: "v1", items: [{ key: "D01-T19" }] })); // missing required fields
     const r = await fetchCatalogList({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
     expect(r).toEqual({ status: "offline" });
+  });
+
+  it("fetchExamTopics validates and caches the category/count breakdown", async () => {
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", topics: [{ category: "Sepsis", count: 6 }] }));
+    const r = await fetchExamTopics({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [{ category: "Sepsis", count: 6 }] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/exam/topics", expect.anything());
+  });
+
+  it("fetchExamQuestions requests the given ids and validates full question objects (answer and explanation included)", async () => {
+    const item = { id: "Q1", prompt: "p", options: ["a", "b"], answer: 1, explanation: "e", moduleKey: "MOD-01", moduleTitle: "Module", moduleHref: "/working/MOD-01", category: "Sepsis" };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", items: [item] }));
+    const r = await fetchExamQuestions({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" }, ["Q1"]);
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [item] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/exam/questions?ids=Q1", expect.anything());
+  });
+
+  it("pickExamQuestions never caches: it always hits the network and returns offline (not a stale cached pick) on failure", async () => {
+    const fetcher = vi.fn(async () => jsonResponse({ questionIds: ["Q1", "Q2"], timeLimitSeconds: 1440 }));
+    const r = await pickExamQuestions({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" }, ["Sepsis"], 20);
+    expect(r).toEqual({ status: "ok", fromCache: false, data: { questionIds: ["Q1", "Q2"], timeLimitSeconds: 1440 } });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/exam/pick?categories=Sepsis&count=20", expect.anything());
+
+    const failingFetcher = vi.fn(async () => jsonResponse({ error: "no_questions" }, false));
+    const failed = await pickExamQuestions({ store: mem(), fetcher: failingFetcher as unknown as typeof fetch, baseUrl: "https://x" }, ["Sepsis"], 20);
+    expect(failed).toEqual({ status: "offline" });
   });
 });
 
