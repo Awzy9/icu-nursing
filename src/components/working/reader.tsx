@@ -35,6 +35,8 @@ const LAB_LINKS: Record<string, { href: string; label: [string, string] }[]> = {
   "SK-19": [{ href: "/defib-rhythm-check", label: ["Try the shockable-rhythm exercises", "جرّب تمارين الأنظمة القابلة للصدمة"] }],
   "EQ-05": [{ href: "/defib-rhythm-check", label: ["Try the shockable-rhythm exercises", "جرّب تمارين الأنظمة القابلة للصدمة"] }],
   "D02-T15": [{ href: "/defib-rhythm-check", label: ["Try the shockable-rhythm exercises", "جرّب تمارين الأنظمة القابلة للصدمة"] }],
+  "D01-T19": [{ href: "/news2", label: ["Try the NEWS2 scoring exercises", "جرّب تمارين تسجيل NEWS2"] }],
+  "D06-T01": [{ href: "/news2", label: ["Try the NEWS2 scoring exercises", "جرّب تمارين تسجيل NEWS2"] }],
 };
 export function ModuleReader({entry,locale,stepOrder}:{entry:WorkingEntry;locale:string;stepOrder?:number[]}) {
  const ar=locale==="ar", [tab,setTab]=useState(entry.type==="questions"?"quiz":entry.scenario?"scenario":entry.practice?"practice":"read"),[active,setActive]=useState(0),[checks,setChecks]=useState<string[]>([]);
