@@ -1,87 +1,101 @@
 import { useState } from "react";
 import { Stack, useLocalSearchParams } from "expo-router";
-import { answer, isCorrect, practiceResult, startPractice, type Practice, type Question } from "../../src/core/engines";
-import { discardSession, getSession, recordPractice, saveSession } from "../../src/core/progress";
+import { getSession, recordPractice } from "../../src/core/progress";
 import { useApp } from "../../src/state/app";
+import { useProgressSync } from "../../src/hooks/useProgressSync";
 import { Button, Callout, Card, H1, H2, P, RemoteGate, Screen } from "../../src/ui/components";
 import { useCatalogEntry } from "../../src/hooks/useRemoteContent";
 
-const COUNT = 5;
-const sessionKey = (moduleKey: string) => `QUIZ:${moduleKey}`;
-
+// Sequential, full-module quiz - every question in the module, in its given order, matching the
+// website's own quiz exactly (src/components/working/quiz.tsx: no shuffling, position=index+1,
+// score=running correct count). This is what makes cross-device resume meaningful: the session
+// row's (position, score) means the same thing on both platforms.
 export default function QuizRunner() {
   const { key } = useLocalSearchParams<{ key: string }>();
-  const { t, update, progress } = useApp();
+  const { t, progress, update } = useApp();
+  const { saveSession, discardSession, recordAnswer } = useProgressSync();
   const entry = useCatalogEntry(key);
-  const [p, setP] = useState<Practice | null>(null);
-  const [n, setN] = useState(0);
-  const [picked, setPicked] = useState<number | null>(null);
-  const [done, setDone] = useState(false);
+  const [started, setStarted] = useState(false);
+  const [index, setIndex] = useState(0);
+  const [choice, setChoice] = useState<number | null>(null);
+  const [checked, setChecked] = useState(false);
+  const [score, setScore] = useState(0);
+  const [finished, setFinished] = useState(false);
 
   return (
     <Screen>
       <RemoteGate state={entry} onRetry={entry.refresh}>
         {(data) => {
-          const bank: Question[] = (data.questions ?? []).map((q) => ({ code: q.id, stem: q.prompt, options: q.options, correct: q.answer, explanations: q.options.map(() => ""), rationale: q.explanation }));
-          if (!bank.length) return <P>{t("common.notFound")}</P>;
+          const questions = data.questions ?? [];
+          if (!questions.length) return <P>{t("common.notFound")}</P>;
+          const version = questions.map((q) => q.id).join(",");
+          const existing = key ? getSession(progress, key) : undefined;
+          const validExisting = existing && existing.version === version && !existing.finished ? existing : undefined;
 
-          if (!p) {
-            const existing = getSession(progress, sessionKey(key!));
+          if (!started) {
             return (
               <>
                 <Stack.Screen options={{ title: data.title }} />
                 <H1>{data.title}</H1>
                 <P muted>{t("hub.questionsBody")}</P>
-                {existing && !existing.finished ? (
+                {validExisting ? (
                   <Card>
                     <P>{t("cases.resume")}</P>
-                    <Button label={t("hub.continue")} onPress={() => { setP(startPractice(bank, COUNT, existing.position)); setN(0); setPicked(null); setDone(false); }} />
+                    <P small muted>{t("quiz.question", { n: validExisting.position + 1, total: questions.length })}</P>
+                    <Button label={t("hub.continue")} onPress={() => { setStarted(true); setIndex(Math.min(validExisting.position, questions.length - 1)); setScore(validExisting.score); }} />
+                    <Button label={t("cases.restart")} variant="outline" onPress={() => { discardSession(key!); setStarted(true); setIndex(0); setScore(0); }} />
                   </Card>
-                ) : null}
-                <Button label={t("quiz.start")} onPress={() => { setP(startPractice(bank, COUNT, Date.now() % 100000)); setN(0); setPicked(null); setDone(false); }} />
-              </>
-            );
-          }
-          if (done) {
-            const r = practiceResult(bank, p);
-            return (
-              <>
-                <H1>{data.title}</H1>
-                <Card><P>{t("quiz.result", r)}</P></Card>
-                <Button label={t("quiz.restart")} onPress={() => { update((pr) => discardSession(pr, sessionKey(key!))); setP(null); }} />
+                ) : (
+                  <Button label={t("quiz.start")} onPress={() => { setStarted(true); setIndex(0); setScore(0); }} />
+                )}
               </>
             );
           }
 
-          const item = p.items[n]!; const q = bank.find((x) => x.code === item.code)!;
-          const checked = p.answers[n] !== null;
-          const check = () => { if (picked !== null) setP(answer(p, n, picked)); };
-          const advance = () => {
-            if (n + 1 >= p.items.length) {
-              const r = practiceResult(bank, p);
-              update((pr) => recordPractice(discardSession(pr, sessionKey(key!)), r.right, r.total, new Date().toISOString()));
-              setDone(true);
-            } else {
-              update((pr) => saveSession(pr, sessionKey(key!), { kind: "quiz", version: "v1", position: p.seed, score: 0, finished: false, at: new Date().toISOString() }));
-              setN(n + 1); setPicked(null);
-            }
+          if (finished) {
+            return (
+              <>
+                <H1>{data.title}</H1>
+                <Card><P>{t("quiz.result", { right: score, total: questions.length })}</P></Card>
+                <Button label={t("quiz.restart")} onPress={() => { setStarted(false); setFinished(false); setIndex(0); setChoice(null); setChecked(false); setScore(0); }} />
+              </>
+            );
+          }
+
+          const q = questions[index]!;
+          const submit = () => {
+            if (choice === null) return;
+            setChecked(true);
+            const correct = choice === q.answer;
+            const nextScore = correct ? score + 1 : score;
+            setScore(nextScore);
+            recordAnswer(q.id, key!, choice, correct, Date.now());
+            saveSession(key!, { kind: "quiz", version, position: index + 1, score: nextScore, finished: index + 1 === questions.length, at: new Date().toISOString() });
           };
+          const next = () => {
+            if (index + 1 === questions.length) {
+              update((p) => recordPractice(p, score, questions.length, new Date().toISOString()));
+              setFinished(true);
+              return;
+            }
+            setIndex((i) => i + 1); setChoice(null); setChecked(false);
+          };
+
           return (
             <>
-              <P small muted>{t("quiz.question", { n: n + 1, total: p.items.length })}</P>
-              <H2>{q.stem}</H2>
-              {item.order.map((optIndex, shown) => {
-                const sel = (checked ? p.answers[n] : picked) === shown;
-                const ok = checked && optIndex === q.correct;
-                return <Button key={shown} variant={sel ? "primary" : "outline"} disabled={checked} label={`${String.fromCharCode(65 + shown)}. ${q.options[optIndex]}${checked && ok ? ` ✓ ${t("quiz.correct")}` : ""}`} onPress={() => setPicked(shown)} />;
+              <P small muted>{t("quiz.question", { n: index + 1, total: questions.length })}</P>
+              <H2>{q.prompt}</H2>
+              {q.options.map((option, i) => {
+                const isMine = checked && choice === i, isCorrectOption = checked && i === q.answer;
+                return <Button key={i} variant={choice === i ? "primary" : "outline"} disabled={checked} label={`${String.fromCharCode(65 + i)}. ${option}${isCorrectOption ? ` ✓ ${t("quiz.correct")}` : isMine ? ` ✗` : ""}`} onPress={() => setChoice(i)} />;
               })}
               {checked ? (
                 <>
-                  <Callout tone={isCorrect(q, p, n) ? "success" : "danger"}>{isCorrect(q, p, n) ? t("quiz.correct") : t("quiz.incorrect")}</Callout>
-                  <Card><P>{q.rationale}</P></Card>
-                  <Button label={n + 1 >= p.items.length ? t("quiz.finish") : t("common.next")} onPress={advance} />
+                  <Callout tone={choice === q.answer ? "success" : "danger"}>{choice === q.answer ? t("quiz.correct") : t("quiz.incorrect")}</Callout>
+                  <Card><P>{q.explanation}</P></Card>
+                  <Button label={index + 1 >= questions.length ? t("quiz.finish") : t("common.next")} onPress={next} />
                 </>
-              ) : <Button label={t("quiz.check")} disabled={picked === null} onPress={check} />}
+              ) : <Button label={t("quiz.check")} disabled={choice === null} onPress={submit} />}
             </>
           );
         }}

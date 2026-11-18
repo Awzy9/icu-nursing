@@ -3,12 +3,13 @@ import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 import { scoreTenths } from "../../src/core/engines";
 import { monitorReadings } from "../../src/core/monitorReadings";
-import { discardSession, getSession, recordCase, saveSession } from "../../src/core/progress";
+import { getSession, recordCase } from "../../src/core/progress";
 import { glucoseMeterVisual } from "../../src/content/visuals";
 import { BookmarkButton, Button, Card, H2, P, RemoteGate, Screen } from "../../src/ui/components";
 import { VisualPhoto } from "../../src/ui/visual-photo";
 import { space, type } from "../../src/ui/theme";
 import { useApp } from "../../src/state/app";
+import { useProgressSync } from "../../src/hooks/useProgressSync";
 import { useCaseVisuals, useCatalogEntry } from "../../src/hooks/useRemoteContent";
 
 function Monitor({ label, value, suffix }: { label: string; value: number; suffix: string }) {
@@ -23,6 +24,7 @@ function Monitor({ label, value, suffix }: { label: string; value: number; suffi
 export default function CaseScreen() {
   const { code } = useLocalSearchParams<{ code: string }>();
   const { t, locale, progress, update } = useApp();
+  const { saveSession, discardSession } = useProgressSync();
   const entry = useCatalogEntry(code);
   const caseVisuals = useCaseVisuals();
   const [position, setPosition] = useState<number | undefined>();
@@ -57,7 +59,7 @@ export default function CaseScreen() {
                 <P muted>{t("cases.resumeBody")}</P>
                 <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
                 <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); }} />
-                <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); update((p) => discardSession(p, code!)); }} />
+                <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); discardSession(code!); }} />
               </Card>
             );
           }
@@ -67,7 +69,7 @@ export default function CaseScreen() {
               <Card>
                 <H2>{t("cases.summary")}</H2>
                 {scenario.takeaways.map((item, i) => <P key={i}>{`• ${item}`}</P>)}
-                <Button label={t("cases.again")} variant="outline" onPress={() => { update((p) => discardSession(p, code!)); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); }} />
+                <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); }} />
               </Card>
             );
           }
@@ -79,10 +81,12 @@ export default function CaseScreen() {
             setPoints(newPoints);
             if (option.next == null) {
               const tenths = scoreTenths(newPoints, scenario.steps.length * 2);
-              update((p) => recordCase(discardSession(p, code!), code!, tenths, new Date().toISOString()));
+              const at = new Date().toISOString();
+              update((p) => recordCase(p, code!, tenths, at));
+              saveSession(code!, { kind: "scenario", version, position: pos, score: newPoints, finished: true, at }); // local auto-discards a finished session; the remote row is kept, matching the website
               setDone(true);
             } else {
-              update((p) => saveSession(p, code!, { kind: "scenario", version, position: option.next!, score: newPoints, finished: false, at: new Date().toISOString() }));
+              saveSession(code!, { kind: "scenario", version, position: option.next, score: newPoints, finished: false, at: new Date().toISOString() });
               setPosition(option.next);
             }
             setChoice(null);

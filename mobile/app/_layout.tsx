@@ -1,10 +1,12 @@
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { AuthProvider } from "../src/auth/provider";
+import { useProgressPullOnSignIn } from "../src/hooks/useProgressSync";
 import { AppProvider, useApp } from "../src/state/app";
 
 function Shell() {
   const { palette, t, themeMode } = useApp();
+  useProgressPullOnSignIn();
   return (
     <>
       <StatusBar style={palette.bg === "#ffffff" ? "dark" : "light"} key={themeMode + palette.bg} />
