@@ -14,6 +14,7 @@ type Visual = {
   credit: string;
   license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0" | "Public domain";
   cropped?: boolean;
+  rotated?: boolean;
 };
 
 const ventilator: Visual = {
@@ -411,6 +412,43 @@ const oronasalMask: Visual = {
   license: "BY-SA 4.0",
 };
 
+const ecgMachine: Visual = {
+  file: "ecg-machine",
+  rotated: true,
+  width: 875,
+  height: 525,
+  alt: ["An ECG machine with controls and a strip of grid paper.", "جهاز تخطيط كهربائية القلب تظهر عليه أزرار التحكم وشريط ورق التخطيط."],
+  label: ["Electrocardiograph", "جهاز تخطيط كهربائية القلب"],
+  detail: ["This machine records an ECG and can print it on grid paper. A bedside monitor displays the rhythm continuously.", "يسجّل هذا الجهاز تخطيط كهربائية القلب ويمكنه طباعته على ورق مدرّج. تعرض شاشة المراقبة بجانب السرير النظم القلبي باستمرار."],
+  source: "ECG_machine.jpg",
+  credit: "Zeeshan2907",
+  license: "BY-SA 4.0",
+};
+
+const penlight: Visual = {
+  file: "penlight",
+  width: 950,
+  height: 353,
+  alt: ["A handheld medical penlight with its tip illuminated.", "مصباح طبي قلمي محمول يظهر طرفه مضاءً."],
+  label: ["Medical penlight", "مصباح طبي قلمي"],
+  detail: ["A penlight can be used to check how the pupils respond to light during a neurological assessment.", "يمكن استخدام المصباح القلمي لفحص استجابة الحدقتين للضوء أثناء التقييم العصبي."],
+  source: "Halogenlight.JPG",
+  credit: "Hanabishi",
+  license: "BY-SA 3.0",
+};
+
+const highFlowCannula: Visual = {
+  file: "high-flow-cannula",
+  width: 492,
+  height: 875,
+  alt: ["A high-flow nasal oxygen system on a wheeled stand with blue breathing tubing.", "نظام أكسجين أنفي عالي التدفق على حامل بعجلات مع أنابيب تنفس زرقاء."],
+  label: ["High-flow nasal oxygen setup", "نظام الأكسجين الأنفي عالي التدفق"],
+  detail: ["The setup includes a humidifier, a breathing circuit and a nasal interface.", "يتضمن النظام جهاز ترطيب ودارة تنفس ووصلة أنفية."],
+  source: "High_Flow_Nasal_Cannula_Classic.png",
+  credit: "BreathDriver",
+  license: "BY-SA 4.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -460,6 +498,8 @@ const visuals: Record<string, Visual> = {
   "D08-T02": citrateTube,
   "MD-15": glucoseMeter,
   "D07-T01": stethoscope,
+  "D02-T02": ecgMachine,
+  "D03-T01": penlight,
   "SK-16": rollator,
   "D01-T17": oronasalMask,
 };
@@ -506,7 +546,7 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
         <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>
         <p className="text-xs text-muted-foreground" lang="en">
           <a className="underline" href={`https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
-          {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a>} · {covered ? "Shown with a privacy cover" : visual.cropped ? "Cropped and converted to WebP" : "WebP version, resized where applicable"}
+          {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a>} · {covered ? "Shown with a privacy cover" : visual.cropped ? "Cropped and converted to WebP" : visual.rotated ? "Rotated and converted to WebP" : "WebP version, resized where applicable"}
         </p>
       </figcaption>
     </figure>
@@ -529,6 +569,7 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
     <>
       <EquipmentPhoto visual={visual} locale={locale} />
       {showVenturiMask && <EquipmentPhoto visual={venturiMask} locale={locale} />}
+      {moduleKey === "D01-T03" && <EquipmentPhoto visual={highFlowCannula} locale={locale} />}
     </>
   );
 }
