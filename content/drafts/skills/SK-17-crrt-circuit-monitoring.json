@@ -89,7 +89,7 @@
      ]
     },
     {
-     "text": "If heparin-induced thrombocytopenia is suspected or confirmed, all heparin must stop and the prescriber is told immediately (extent in flushes is local policy).",
+     "text": "Escalate possible heparin-induced thrombocytopenia promptly for clinical probability assessment. If clinically likely or confirmed, follow the authorized pathway to stop all heparin exposure, including flushes and locks.",
      "support": "partial",
      "sources": [
       "S-KDIGO-AKI-2012"
@@ -155,7 +155,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
+     "text": "If alarms cannot be resolved, assess the patient, notify the treating team and follow the device and local CRRT pathway for ending therapy. Return circuit blood only if the pathway and device instructions permit it for that failure. Document the cause and interruption.",
      "support": "sourced",
      "sources": [
       "N-AHS-CRRT-ALARM-2025"
@@ -227,7 +227,7 @@
   },
   {
    "phase": "escalation",
-   "text": "If alarms cannot be managed, return blood when possible per local practice, document the reason and notify the prescriber.",
+   "text": "If alarms cannot be resolved, notify the treating team and document the interruption. Return circuit blood only when the device instructions and local pathway permit it.",
    "critical": true,
    "support": "sourced",
    "sources": [

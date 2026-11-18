@@ -2051,6 +2051,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f6ef67a5cf427b17",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-18": [
@@ -2205,6 +2219,18 @@
    {
     "hash": "2252d39f0d9d458e",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "1755ca078c58fbe1",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "S-FDA-PUMP",
@@ -4245,6 +4271,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3699cc9a81c79c86",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NITROGLYCERIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-36": [
@@ -6012,6 +6052,18 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c94695163aff1de4",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-05": [
@@ -6054,6 +6106,18 @@
    {
     "hash": "8bc1b7f7d1a17cd2",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "4983e9175d38fcd0",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "N-AHS-CRRT-ALARM-2025",
@@ -6260,6 +6324,18 @@
    {
     "hash": "00c99cbaa7253f71",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "2906d36a5f033e08",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "S-FDA-PUMP",

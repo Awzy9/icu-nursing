@@ -130,7 +130,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Stop and report pump alerts you cannot resolve, programming discrepancies against the order and any suspected over- or under-infusion.",
+     "text": "Assess the patient and escalate unresolved alerts, programming discrepancies or suspected over- or under-infusion promptly. For a high-risk infusion, stay with the patient and ask a colleague to obtain a replacement pump. Follow the drug-specific backup plan to manage any interruption safely.",
      "support": "partial",
      "sources": [
       "S-FDA-PUMP",
@@ -205,7 +205,7 @@
   },
   {
    "phase": "escalation",
-   "text": "Stop and report discrepancies or unresolved alerts.",
+   "text": "Assess the patient and escalate discrepancies or unresolved alerts. Follow the backup plan for time-critical infusions.",
    "critical": true,
    "support": "partial",
    "sources": [

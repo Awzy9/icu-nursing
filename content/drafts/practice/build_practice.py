@@ -115,7 +115,7 @@ mk(9, objectives=["Know the checks that keep an infusion pump safe when somethin
   it("s2", "Check the programming against the order", "sourced", ["S-FDA-PUMP"], why="The settings must match what was prescribed."),
   it("s3", "Use the drug library if one exists", "sourced", ["S-FDA-PUMP"], why="The library adds safety limits."),
   it("s4", "Respond carefully to any alert rather than silencing it", "sourced", ["S-FDA-PUMP"], why="Alerts need action."),
-  it("s5", "Stop and report an alert you cannot resolve or a mismatch with the order", "partial", ["S-FDA-PUMP", "S-ISMP-HA"], why="Report suspected over- or under-infusion.")])
+  it("s5", "Assess the patient and escalate an unresolved alert or a mismatch with the order", "partial", ["S-FDA-PUMP", "S-ISMP-HA"], why="Report suspected over- or under-infusion promptly. Follow the drug-specific backup plan if a time-critical infusion is interrupted.")])
 mk(10, objectives=["Put the patient before the machine when an alarm sounds."], sources=[C74], required_sources=["Unit alarm policy"],
  gaps=STD_GAPS + ["Only the patient-first principle is written."],
  setup="A fictional monitored adult on a fictional unit; the monitor shows a new abnormal rhythm.", stem="What do you do first?", options=[

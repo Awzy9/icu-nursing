@@ -1,0 +1,710 @@
+[
+ {
+  "key": "ALN-01",
+  "title": [
+   "Optimally damped square-wave test",
+   "اختبار الموجة المربعة بتخميد مثالي"
+  ],
+  "objective": [
+   "Recognise an optimally damped arterial line response.",
+   "التعرف على استجابة خط شرياني بتخميد مثالي."
+  ],
+  "lessonHref": "/working/SK-01",
+  "accessibleDescription": [
+   "After the fast-flush square wave, the pressure trace overshoots, then shows one to two small oscillations that rapidly shrink, settling at the true arterial baseline within about a quarter of a second.",
+   "There is no prolonged ringing and no slow, featureless decay - the brief oscillation before settling is the hallmark of a well-damped, accurate system."
+  ],
+  "trace": {
+   "label": "Arterial pressure (square-wave test)",
+   "unit": "mmHg",
+   "domain": [
+    30,
+    150
+   ],
+   "points": [
+    [
+     0,
+     140
+    ],
+    [
+     0.012,
+     130.083
+    ],
+    [
+     0.025,
+     120.26
+    ],
+    [
+     0.038,
+     111.025
+    ],
+    [
+     0.05,
+     102.705
+    ],
+    [
+     0.063,
+     95.489
+    ],
+    [
+     0.075,
+     89.453
+    ],
+    [
+     0.088,
+     84.59
+    ],
+    [
+     0.1,
+     80.832
+    ],
+    [
+     0.112,
+     78.073
+    ],
+    [
+     0.125,
+     76.182
+    ],
+    [
+     0.137,
+     75.019
+    ],
+    [
+     0.15,
+     74.442
+    ],
+    [
+     0.162,
+     74.321
+    ],
+    [
+     0.175,
+     74.534
+    ],
+    [
+     0.188,
+     74.979
+    ],
+    [
+     0.2,
+     75.567
+    ],
+    [
+     0.213,
+     76.227
+    ],
+    [
+     0.225,
+     76.904
+    ],
+    [
+     0.238,
+     77.557
+    ],
+    [
+     0.25,
+     78.159
+    ],
+    [
+     0.263,
+     78.692
+    ],
+    [
+     0.275,
+     79.146
+    ],
+    [
+     0.288,
+     79.52
+    ],
+    [
+     0.3,
+     79.815
+    ],
+    [
+     0.313,
+     80.038
+    ],
+    [
+     0.325,
+     80.198
+    ],
+    [
+     0.337,
+     80.302
+    ],
+    [
+     0.35,
+     80.362
+    ],
+    [
+     0.363,
+     80.386
+    ],
+    [
+     0.375,
+     80.382
+    ],
+    [
+     0.388,
+     80.36
+    ],
+    [
+     0.4,
+     80.324
+    ],
+    [
+     0.413,
+     80.281
+    ],
+    [
+     0.425,
+     80.235
+    ],
+    [
+     0.437,
+     80.19
+    ],
+    [
+     0.45,
+     80.147
+    ],
+    [
+     0.463,
+     80.108
+    ],
+    [
+     0.475,
+     80.074
+    ],
+    [
+     0.488,
+     80.046
+    ],
+    [
+     0.5,
+     80.023
+    ],
+    [
+     0.513,
+     80.005
+    ],
+    [
+     0.525,
+     79.992
+    ],
+    [
+     0.538,
+     79.983
+    ],
+    [
+     0.55,
+     79.977
+    ],
+    [
+     0.563,
+     79.974
+    ],
+    [
+     0.575,
+     79.974
+    ],
+    [
+     0.587,
+     79.975
+    ],
+    [
+     0.6,
+     79.977
+    ]
+   ]
+  },
+  "question": {
+   "prompt": "What does this square-wave test result show?",
+   "options": [
+    "Optimal damping - the system has an appropriate dynamic response",
+    "Overdamping - the waveform understates systolic pressure",
+    "Underdamping (resonance) - the waveform overstates systolic pressure",
+    "A disconnected or occluded line"
+   ],
+   "answer": 0,
+   "explanation": "One to two brief oscillations suggest an appropriate dynamic response. Confirm transducer leveling, zeroing and clinical agreement before relying on the displayed pressures."
+  },
+  "evidenceSources": [
+   "AACN arterial line dynamic response (square-wave) testing fundamentals"
+  ]
+ },
+ {
+  "key": "ALN-02",
+  "title": [
+   "Overdamped square-wave test",
+   "اختبار الموجة المربعة بتخميد زائد"
+  ],
+  "objective": [
+   "Recognise an overdamped arterial line response and its effect on readings.",
+   "التعرف على استجابة خط شرياني بتخميد زائد وتأثيرها على القراءات."
+  ],
+  "lessonHref": "/working/SK-01",
+  "accessibleDescription": [
+   "After the fast-flush square wave, the pressure trace returns to baseline slowly and smoothly, with no oscillation at all - a sluggish, rounded curve rather than any bounce.",
+   "This sluggish, non-oscillating return is the hallmark of overdamping, typically from air bubbles, a blood clot, a kink, or loose connections in the line."
+  ],
+  "trace": {
+   "label": "Arterial pressure (square-wave test)",
+   "unit": "mmHg",
+   "domain": [
+    30,
+    150
+   ],
+   "points": [
+    [
+     0,
+     140
+    ],
+    [
+     0.012,
+     125.347
+    ],
+    [
+     0.025,
+     114.273
+    ],
+    [
+     0.038,
+     105.903
+    ],
+    [
+     0.05,
+     99.577
+    ],
+    [
+     0.063,
+     94.796
+    ],
+    [
+     0.075,
+     91.182
+    ],
+    [
+     0.088,
+     88.452
+    ],
+    [
+     0.1,
+     86.388
+    ],
+    [
+     0.112,
+     84.828
+    ],
+    [
+     0.125,
+     83.649
+    ],
+    [
+     0.137,
+     82.758
+    ],
+    [
+     0.15,
+     82.084
+    ],
+    [
+     0.162,
+     81.575
+    ],
+    [
+     0.175,
+     81.19
+    ],
+    [
+     0.188,
+     80.9
+    ],
+    [
+     0.2,
+     80.68
+    ],
+    [
+     0.213,
+     80.514
+    ],
+    [
+     0.225,
+     80.388
+    ],
+    [
+     0.238,
+     80.294
+    ],
+    [
+     0.25,
+     80.222
+    ],
+    [
+     0.263,
+     80.168
+    ],
+    [
+     0.275,
+     80.127
+    ],
+    [
+     0.288,
+     80.096
+    ],
+    [
+     0.3,
+     80.072
+    ],
+    [
+     0.313,
+     80.055
+    ],
+    [
+     0.325,
+     80.041
+    ],
+    [
+     0.337,
+     80.031
+    ],
+    [
+     0.35,
+     80.024
+    ],
+    [
+     0.363,
+     80.018
+    ],
+    [
+     0.375,
+     80.013
+    ],
+    [
+     0.388,
+     80.01
+    ],
+    [
+     0.4,
+     80.008
+    ],
+    [
+     0.413,
+     80.006
+    ],
+    [
+     0.425,
+     80.004
+    ],
+    [
+     0.437,
+     80.003
+    ],
+    [
+     0.45,
+     80.003
+    ],
+    [
+     0.463,
+     80.002
+    ],
+    [
+     0.475,
+     80.001
+    ],
+    [
+     0.488,
+     80.001
+    ],
+    [
+     0.5,
+     80.001
+    ],
+    [
+     0.513,
+     80.001
+    ],
+    [
+     0.525,
+     80
+    ],
+    [
+     0.538,
+     80
+    ],
+    [
+     0.55,
+     80
+    ],
+    [
+     0.563,
+     80
+    ],
+    [
+     0.575,
+     80
+    ],
+    [
+     0.587,
+     80
+    ],
+    [
+     0.6,
+     80
+    ]
+   ]
+  },
+  "question": {
+   "prompt": "What does this square-wave test result show, and what does it mean for the displayed numbers?",
+   "options": [
+    "Overdamping - the monitor will understate true systolic pressure and overstate true diastolic pressure",
+    "Optimal damping - the numbers are accurate",
+    "Underdamping - the monitor will overstate true systolic pressure",
+    "A calibration error unrelated to damping"
+   ],
+   "answer": 0,
+   "explanation": "A smooth, non-oscillating return to baseline after the flush is overdamping - it blunts the waveform, so the displayed systolic reading is falsely low and the diastolic reading is falsely high, narrowing the apparent pulse pressure. Check for air bubbles, clot, kinks or loose connections."
+  },
+  "evidenceSources": [
+   "AACN arterial line dynamic response (square-wave) testing fundamentals"
+  ]
+ },
+ {
+  "key": "ALN-03",
+  "title": [
+   "Underdamped (resonant) square-wave test",
+   "اختبار الموجة المربعة بتخميد ناقص (رنين)"
+  ],
+  "objective": [
+   "Recognise an underdamped (resonant) arterial line response and its effect on readings.",
+   "التعرف على استجابة خط شرياني بتخميد ناقص (رنين) وتأثيرها على القراءات."
+  ],
+  "lessonHref": "/working/SK-01",
+  "accessibleDescription": [
+   "After the fast-flush square wave, the pressure trace oscillates repeatedly with large swings well above and below the true baseline before finally settling - a prolonged \"ringing\" pattern.",
+   "This excessive, persistent oscillation (resonance) is the hallmark of underdamping, which artificially exaggerates the systolic peak on the displayed waveform."
+  ],
+  "trace": {
+   "label": "Arterial pressure (square-wave test)",
+   "unit": "mmHg",
+   "domain": [
+    30,
+    150
+   ],
+   "points": [
+    [
+     0,
+     140
+    ],
+    [
+     0.012,
+     135.33
+    ],
+    [
+     0.025,
+     126.216
+    ],
+    [
+     0.038,
+     113.752
+    ],
+    [
+     0.05,
+     99.245
+    ],
+    [
+     0.063,
+     84.087
+    ],
+    [
+     0.075,
+     69.629
+    ],
+    [
+     0.088,
+     57.07
+    ],
+    [
+     0.1,
+     47.36
+    ],
+    [
+     0.112,
+     41.137
+    ],
+    [
+     0.125,
+     38.696
+    ],
+    [
+     0.137,
+     39.985
+    ],
+    [
+     0.15,
+     44.632
+    ],
+    [
+     0.162,
+     52.006
+    ],
+    [
+     0.175,
+     61.279
+    ],
+    [
+     0.188,
+     71.522
+    ],
+    [
+     0.2,
+     81.784
+    ],
+    [
+     0.213,
+     91.18
+    ],
+    [
+     0.225,
+     98.959
+    ],
+    [
+     0.238,
+     104.564
+    ],
+    [
+     0.25,
+     107.662
+    ],
+    [
+     0.263,
+     108.161
+    ],
+    [
+     0.275,
+     106.198
+    ],
+    [
+     0.288,
+     102.114
+    ],
+    [
+     0.3,
+     96.407
+    ],
+    [
+     0.313,
+     89.683
+    ],
+    [
+     0.325,
+     82.591
+    ],
+    [
+     0.337,
+     75.769
+    ],
+    [
+     0.35,
+     69.785
+    ],
+    [
+     0.363,
+     65.098
+    ],
+    [
+     0.375,
+     62.02
+    ],
+    [
+     0.388,
+     60.706
+    ],
+    [
+     0.4,
+     61.146
+    ],
+    [
+     0.413,
+     63.18
+    ],
+    [
+     0.425,
+     66.523
+    ],
+    [
+     0.437,
+     70.795
+    ],
+    [
+     0.45,
+     75.564
+    ],
+    [
+     0.463,
+     80.383
+    ],
+    [
+     0.475,
+     84.835
+    ],
+    [
+     0.488,
+     88.561
+    ],
+    [
+     0.5,
+     91.29
+    ],
+    [
+     0.513,
+     92.857
+    ],
+    [
+     0.525,
+     93.206
+    ],
+    [
+     0.538,
+     92.393
+    ],
+    [
+     0.55,
+     90.569
+    ],
+    [
+     0.563,
+     87.96
+    ],
+    [
+     0.575,
+     84.846
+    ],
+    [
+     0.587,
+     81.531
+    ],
+    [
+     0.6,
+     78.315
+    ]
+   ]
+  },
+  "question": {
+   "prompt": "What does this square-wave test result show, and what does it mean for the displayed numbers?",
+   "options": [
+    "Underdamping (resonance) - the monitor will overstate true systolic pressure",
+    "Overdamping - the monitor will understate true systolic pressure",
+    "Optimal damping - the numbers are accurate",
+    "A venous, not arterial, waveform"
+   ],
+   "answer": 0,
+   "explanation": "Multiple large oscillations (ringing) after the flush before settling is underdamping (resonance) - it exaggerates the systolic peak, so the displayed systolic reading is falsely high. Common causes include excessive tubing length, stopcocks, or a highly compliant/narrow catheter-tubing system."
+  },
+  "evidenceSources": [
+   "AACN arterial line dynamic response (square-wave) testing fundamentals"
+  ]
+ }
+]
