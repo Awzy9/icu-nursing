@@ -99,9 +99,9 @@ A 59-year-old ventilated man with brain injury is suctioned for thick secretions
 A. Take a second pass quickly to clear the airway and fix the cause of the fall, then check the monitor again afterwards.
 B. Instil saline to loosen secretions and continue suction on the same pass, because the secretions are probably the cause.
 C. Wait a minute to see whether the readings improve by themselves before changing anything or calling anyone for help.
-D. Stop suctioning, restore oxygenation per protocol, assess the patient and call for help if recovery is slow.
+D. Stop suctioning, restore oxygenation and ventilation per protocol, assess the patient, and call for help immediately.
 **Answer: D.**
-**Why correct:** Stopping and restoring oxygenation is the priority; escalation follows if unstable.
+**Why correct:** The combination of severe desaturation and bradycardia that persists during suctioning calls for immediate oxygenation support, bedside assessment and help.
 **Why not A:** More suction would worsen hypoxaemia.
 **Why not B:** Saline is not recommended and can worsen oxygenation.
 **Why not C:** Waiting prolongs hypoxaemia.

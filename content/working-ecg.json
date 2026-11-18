@@ -79,10 +79,6 @@
      0
     ],
     [
-     0.24,
-     0
-    ],
-    [
      0.23,
      0
     ],
@@ -208,10 +204,6 @@
     ],
     [
      1.03,
-     0
-    ],
-    [
-     1.04,
      0
     ],
     [
@@ -343,10 +335,6 @@
      0
     ],
     [
-     1.84,
-     0
-    ],
-    [
      1.83,
      0
     ],
@@ -472,10 +460,6 @@
     ],
     [
      2.63,
-     0
-    ],
-    [
-     2.64,
      0
     ],
     [
@@ -607,10 +591,6 @@
      0
     ],
     [
-     3.44,
-     0
-    ],
-    [
      3.43,
      0
     ],
@@ -736,10 +716,6 @@
     ],
     [
      4.23,
-     0
-    ],
-    [
-     4.24,
      0
     ],
     [
@@ -871,10 +847,6 @@
      0
     ],
     [
-     5.04,
-     0
-    ],
-    [
      5.03,
      0
     ],
@@ -968,8 +940,7 @@
    "explanation": "Every QRS is preceded by a P wave, the rhythm is regular, and the rate (~75/min) is within the normal adult range - this is normal sinus rhythm."
   },
   "evidenceSources": [
-   "AHA/ACLS rhythm recognition fundamentals",
-   "ERC 2021 adult advanced life support guidelines"
+   "Merck Manual Professional Edition. Overview of Arrhythmias, ECG and rhythm classification. https://www.merckmanuals.com/professional/cardiovascular-disorders/overview-of-arrhythmias-and-conduction-disorders/overview-of-arrhythmias"
   ]
  },
  {
@@ -1049,10 +1020,6 @@
     ],
     [
      0.23,
-     0
-    ],
-    [
-     0.24,
      0
     ],
     [
@@ -1184,10 +1151,6 @@
      0
     ],
     [
-     1.59,
-     0
-    ],
-    [
      1.58,
      0
     ],
@@ -1313,10 +1276,6 @@
     ],
     [
      2.93,
-     0
-    ],
-    [
-     2.94,
      0
     ],
     [
@@ -1448,10 +1407,6 @@
      0
     ],
     [
-     4.29,
-     0
-    ],
-    [
      4.28,
      0
     ],
@@ -1580,10 +1535,6 @@
      0
     ],
     [
-     5.64,
-     0
-    ],
-    [
      5.63,
      0
     ],
@@ -1677,8 +1628,7 @@
    "explanation": "The P-QRS-T morphology and regularity are unchanged from a normal strip, but the rate is well below 60/min - this is sinus bradycardia."
   },
   "evidenceSources": [
-   "AHA/ACLS rhythm recognition fundamentals",
-   "ERC 2021 adult advanced life support guidelines"
+   "Merck Manual Professional Edition. Overview of Arrhythmias, ECG and rhythm classification. https://www.merckmanuals.com/professional/cardiovascular-disorders/overview-of-arrhythmias-and-conduction-disorders/overview-of-arrhythmias"
   ]
  },
  {
@@ -1758,10 +1708,6 @@
     ],
     [
      0.23,
-     0
-    ],
-    [
-     0.24,
      0
     ],
     [
@@ -1893,10 +1839,6 @@
      0
     ],
     [
-     0.7,
-     0
-    ],
-    [
      0.69,
      0
     ],
@@ -2022,10 +1964,6 @@
     ],
     [
      1.15,
-     0
-    ],
-    [
-     1.16,
      0
     ],
     [
@@ -2157,10 +2095,6 @@
      0
     ],
     [
-     1.62,
-     0
-    ],
-    [
      1.61,
      0
     ],
@@ -2286,10 +2220,6 @@
     ],
     [
      2.07,
-     0
-    ],
-    [
-     2.08,
      0
     ],
     [
@@ -2421,10 +2351,6 @@
      0
     ],
     [
-     2.54,
-     0
-    ],
-    [
      2.53,
      0
     ],
@@ -2550,10 +2476,6 @@
     ],
     [
      2.99,
-     0
-    ],
-    [
-     3,
      0
     ],
     [
@@ -2685,10 +2607,6 @@
      0
     ],
     [
-     3.46,
-     0
-    ],
-    [
      3.45,
      0
     ],
@@ -2814,10 +2732,6 @@
     ],
     [
      3.91,
-     0
-    ],
-    [
-     3.92,
      0
     ],
     [
@@ -2949,10 +2863,6 @@
      0
     ],
     [
-     4.38,
-     0
-    ],
-    [
      4.37,
      0
     ],
@@ -3078,10 +2988,6 @@
     ],
     [
      4.83,
-     0
-    ],
-    [
-     4.84,
      0
     ],
     [
@@ -3213,10 +3119,6 @@
      0
     ],
     [
-     5.3,
-     0
-    ],
-    [
      5.29,
      0
     ],
@@ -3310,8 +3212,7 @@
    "explanation": "The P-QRS-T morphology and regularity are unchanged from a normal strip, but the rate is well above 100/min with narrow QRS complexes - this is sinus tachycardia, not a ventricular rhythm."
   },
   "evidenceSources": [
-   "AHA/ACLS rhythm recognition fundamentals",
-   "ERC 2021 adult advanced life support guidelines"
+   "Merck Manual Professional Edition. Overview of Arrhythmias, ECG and rhythm classification. https://www.merckmanuals.com/professional/cardiovascular-disorders/overview-of-arrhythmias-and-conduction-disorders/overview-of-arrhythmias"
   ]
  },
  {
@@ -3326,7 +3227,7 @@
   ],
   "lessonHref": "/working/D02-T02",
   "accessibleDescription": [
-   "No two gaps between QRS complexes are the same length - the rhythm is irregularly irregular, not just fast or slow.",
+   "The gaps between QRS complexes vary without a repeating pattern.",
    "There is no discrete, consistent P wave before each QRS; the baseline between complexes is fine and fibrillatory rather than a clean flat line."
   ],
   "trace": {
@@ -3344,10 +3245,6 @@
     [
      0.11,
      0.05
-    ],
-    [
-     0.13,
-     -0.04
     ],
     [
      0.12,
@@ -3382,10 +3279,6 @@
      0.05
     ],
     [
-     0.75,
-     -0.04
-    ],
-    [
      0.74,
      0
     ],
@@ -3416,10 +3309,6 @@
     [
      1.63,
      0.05
-    ],
-    [
-     1.65,
-     -0.04
     ],
     [
      1.64,
@@ -3454,10 +3343,6 @@
      0.05
     ],
     [
-     2.15,
-     -0.04
-    ],
-    [
      2.14,
      0
     ],
@@ -3488,10 +3373,6 @@
     [
      2.91,
      0.05
-    ],
-    [
-     2.93,
-     -0.04
     ],
     [
      2.92,
@@ -3526,10 +3407,6 @@
      0.05
     ],
     [
-     3.61,
-     -0.04
-    ],
-    [
      3.6,
      0
     ],
@@ -3562,10 +3439,6 @@
      0.05
     ],
     [
-     4.56,
-     -0.04
-    ],
-    [
      4.55,
      0
     ],
@@ -3596,10 +3469,6 @@
     [
      5.09,
      0.05
-    ],
-    [
-     5.11,
-     -0.04
     ],
     [
      5.1,
@@ -3644,11 +3513,10 @@
     "Ventricular tachycardia"
    ],
    "answer": 1,
-   "explanation": "Narrow QRS complexes with no discrete preceding P waves and an irregularly irregular R-R interval are the hallmark of atrial fibrillation."
+   "explanation": "The irregularly irregular R–R intervals and absence of consistent, discrete P waves support atrial fibrillation. In this example the QRS complexes are narrow."
   },
   "evidenceSources": [
-   "AHA/ACLS rhythm recognition fundamentals",
-   "ERC 2021 adult advanced life support guidelines"
+   "Merck Manual Professional Edition. Overview of Arrhythmias, ECG and rhythm classification. https://www.merckmanuals.com/professional/cardiovascular-disorders/overview-of-arrhythmias-and-conduction-disorders/overview-of-arrhythmias"
   ]
  },
  {
@@ -4053,11 +3921,12 @@
     "Normal sinus rhythm"
    ],
    "answer": 1,
-   "explanation": "A regular, wide-complex tachycardia with no discernible P waves is ventricular tachycardia until proven otherwise - this is a time-critical, escalate-immediately finding."
+   "explanation": "This teaching strip depicts a regular wide-complex tachycardia consistent with ventricular tachycardia. Other rhythms can also have wide complexes. Assess the patient urgently, including whether a pulse is present, and follow the local response pathway."
   },
   "evidenceSources": [
-   "AHA/ACLS rhythm recognition fundamentals",
-   "ERC 2021 adult advanced life support guidelines"
+   "Merck Manual Professional Edition. Overview of Arrhythmias, ECG and rhythm classification. https://www.merckmanuals.com/professional/cardiovascular-disorders/overview-of-arrhythmias-and-conduction-disorders/overview-of-arrhythmias",
+   "American Heart Association. 2025 Adult Advanced Life Support, adult cardiac arrest algorithm. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+   "Resuscitation Council UK. 2025 Adult Advanced Life Support, recognition and in-hospital resuscitation. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines"
   ]
  },
  {
@@ -4334,7 +4203,7 @@
    ]
   },
   "question": {
-   "prompt": "What does this rhythm strip show?",
+   "prompt": "The patient is unresponsive, not breathing normally and has no definite pulse. What rhythm does the strip show?",
    "options": [
     "Coarse ventricular fibrillation",
     "Asystole",
@@ -4342,11 +4211,12 @@
     "Artifact from a loose lead"
    ],
    "answer": 0,
-   "explanation": "Chaotic, disorganised waveforms with no identifiable complexes and a clinically unresponsive, pulseless patient indicate ventricular fibrillation - a cardiac-arrest rhythm requiring immediate resuscitation per local protocol."
+   "explanation": "In this pulseless patient, the chaotic tracing with no organised complexes represents ventricular fibrillation, a shockable arrest rhythm. Activate the arrest response, start CPR and deliver prompt defibrillation according to local protocol."
   },
   "evidenceSources": [
-   "AHA/ACLS rhythm recognition fundamentals",
-   "ERC 2021 adult advanced life support guidelines"
+   "Merck Manual Professional Edition. Overview of Arrhythmias, ECG and rhythm classification. https://www.merckmanuals.com/professional/cardiovascular-disorders/overview-of-arrhythmias-and-conduction-disorders/overview-of-arrhythmias",
+   "American Heart Association. 2025 Adult Advanced Life Support, adult cardiac arrest algorithm. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+   "Resuscitation Council UK. 2025 Adult Advanced Life Support, recognition and in-hospital resuscitation. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines"
   ]
  },
  {
@@ -4356,13 +4226,13 @@
    "توقف القلب (آسيستول)"
   ],
   "objective": [
-   "Recognise a flat line with no electrical activity, and the need to confirm leads before accepting it.",
-   "التعرف على خط مستوٍ بلا نشاط كهربائي، وضرورة التأكد من الأسلاك قبل قبول ذلك."
+   "Recognise apparent asystole and prioritise the patient assessment and arrest response.",
+   "التعرف على توقف النشاط الكهربائي الظاهر وإعطاء الأولوية لتقييم المريض والاستجابة لتوقف القلب."
   ],
   "lessonHref": "/working/D02-T02",
   "accessibleDescription": [
    "A flat line for the entire strip, with no P waves, QRS complexes, or T waves at any point.",
-   "A flat line on a monitor must always prompt checking the leads and the patient before accepting it as a true cardiac rhythm."
+   "A flat line can represent asystole or loss of ECG signal. Assess the patient immediately."
   ],
   "trace": {
    "label": "Lead II (schematic)",
@@ -4389,17 +4259,18 @@
   "question": {
    "prompt": "What does this rhythm strip show, and what is the essential first nursing action?",
    "options": [
-    "Asystole - immediately verify leads, patient, and the monitor before treating it as true asystole",
+    "Possible asystole. Assess the patient immediately and start the arrest response if indicated while the team verifies the ECG signal.",
     "Ventricular fibrillation - defibrillate immediately without checking anything else",
     "A technical artifact that can be safely ignored",
     "Normal sinus rhythm with very low amplitude"
    ],
    "answer": 0,
-   "explanation": "A flat line most often shows asystole, but a disconnected lead or power-off monitor looks identical - always confirm the patient and leads before accepting the rhythm, then escalate per local resuscitation protocol."
+   "explanation": "A flat line can represent asystole or loss of ECG signal. Assess responsiveness and breathing immediately and check for a definite pulse per local protocol. If cardiac arrest is suspected, activate the response and start CPR without waiting for a lead check. The team can verify the ECG signal in parallel. Confirmed asystole is non-shockable."
   },
   "evidenceSources": [
-   "AHA/ACLS rhythm recognition fundamentals",
-   "ERC 2021 adult advanced life support guidelines"
+   "Merck Manual Professional Edition. Overview of Arrhythmias, ECG and rhythm classification. https://www.merckmanuals.com/professional/cardiovascular-disorders/overview-of-arrhythmias-and-conduction-disorders/overview-of-arrhythmias",
+   "American Heart Association. 2025 Adult Advanced Life Support, adult cardiac arrest algorithm. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+   "Resuscitation Council UK. 2025 Adult Advanced Life Support, recognition and in-hospital resuscitation. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines"
   ]
  }
 ]

@@ -153,7 +153,7 @@ B. Say the dressing type makes no difference to infection risk, so either choice
 C. Say CDC superseded those statements in 2017 and later guidance favours chlorhexidine dressings, then follow unit policy.
 D. Suggest changing every dressing daily to be safe, because more changes mean fewer infections.
 **Answer: C.**
-**Why correct:** The 2011 statements on chlorhexidine dressings were replaced; local policy and infection prevention decide.
+**Why correct:** The 2017 CDC update recommends appropriately labelled chlorhexidine dressings for adults with short-term, non-tunnelled central venous catheters. Follow local policy for the specific patient, catheter and product.
 **Why not A:** The 2011 recommendation on these dressings was superseded.
 **Why not B:** Evidence in ICU patients shows that dressing choice matters.
 **Why not D:** Unnecessary changes break the barrier and are not recommended.

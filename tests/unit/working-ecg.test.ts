@@ -36,6 +36,15 @@ describe("ECG rhythm exercise data", () => {
     }
   });
 
+  it("draws each rhythm strip in chronological order", () => {
+    for (const exercise of exercises) {
+      const { points } = exercise.trace;
+      for (let index = 1; index < points.length; index++) {
+        expect(points[index]![0], exercise.key).toBeGreaterThanOrEqual(points[index - 1]![0]);
+      }
+    }
+  });
+
   it("gives every exercise a unique key", () => {
     const keys = exercises.map((e) => e.key);
     expect(new Set(keys).size).toBe(keys.length);

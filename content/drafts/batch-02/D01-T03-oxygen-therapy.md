@@ -57,7 +57,7 @@ SpO₂ with trend and probe check; respiratory rate and effort; mental state; he
 | Critically ill adults | Recommends 94–98% (evidence level C) | Applies to critical care; individual exceptions are the prescriber's decision |
 | Postoperative continuous pulse-oximetry monitoring | **No recommendation** (paucity of literature) | Monitoring intensity is local protocol |
 | Early vs late HFNC | Limited evidence supports early initiation based on clinical condition (level C) | Escalate before exhaustion rather than after |
-| HFNC vs conventional oxygen | HFNC may avoid escalation to NIV and invasive ventilation, via effects on oxygenation and breathlessness, but does not shorten length of stay (level B) | Know the patient's escalation plan |
+| HFNC vs conventional oxygen | HFNC may avoid escalation to NIV and invasive ventilation, via effects on oxygenation and breathlessness, with no consistent reduction in length of stay established (level B) | Know the patient's escalation plan |
 | HFNC after extubation | Appears to reduce reintubation compared with conventional oxygen (level B) | Closer observation after extubation |
 | Immunocompromised patients | No benefit in length of stay, escalation or morbidity for HFNC over conventional oxygen (level B); either may be used | Individual decision |
 | Sepsis with acute hypoxaemic respiratory failure (population-specific) | SSC 2026 (conditional, low certainty; official recommendation page, recommendation-level only) suggests titrating FiO₂ to either a more liberal or a more conservative oxygen target depending on patient factors and resources; most trials used a lower SpO₂ target of about 90–93% and a higher target of 96% or more, and the panel's own practice ranged from about 90% to 96%. This differs from the AARC 94–98% range for general acute-care patients; neither is universal | Targets are prescribed for the individual patient |
@@ -97,10 +97,10 @@ A 72-year-old man with COPD is admitted with breathlessness; his written target 
 **Q1 (judgment).** A patient with COPD has a written SpO₂ target of 88–92%. After oxygen is turned up by a colleague, the reading is 98% and the patient is becoming drowsy. What is the best nursing action?
 A. Leave the oxygen as it is, because a higher SpO₂ is safer for a patient who is short of breath and already unwell.
 B. Turn the oxygen off and recheck the reading in thirty minutes, to see whether the patient wakes up.
-C. Reduce within the order or protocol if allowed, check the patient, and report the drowsiness and reading now.
+C. Assess airway and breathing, get urgent help for the new drowsiness, and titrate oxygen to the prescribed target within protocol.
 D. Wait for the next scheduled blood gas before taking any action, since drowsiness could simply reflect tiredness at night.
 **Answer: C.**
-**Why correct:** The patient may be retaining carbon dioxide; the nurse acts within the target, assesses and escalates.
+**Why correct:** New drowsiness can signal ventilatory failure even with a high SpO₂. Assess and escalate immediately so ventilation and blood gases can be evaluated, and maintain the prescribed saturation range within protocol.
 **Why not A:** AARC supports a lower range for COPD; higher is not automatically safer.
 **Why not B:** Stopping oxygen is not within the order and may cause hypoxaemia.
 **Why not D:** Drowsiness with a high reading needs prompt assessment.
@@ -129,11 +129,11 @@ D. The patient may be deteriorating; check the probe and perfusion, assess breat
 
 **Q4 (understanding).** Which statement about high-flow nasal cannula (HFNC) matches the AARC 2022 guideline?
 A. HFNC shortens hospital stay compared with conventional oxygen therapy in adults with acute hypoxaemic failure.
-B. HFNC may help avoid escalation to non-invasive or invasive ventilation, but it does not reduce length of stay.
+B. Compared with conventional oxygen, HFNC may reduce escalation of respiratory support. The reviewed evidence did not establish a consistent reduction in length of stay.
 C. HFNC is recommended after intubation has failed, in preference to any other form of respiratory support.
 D. HFNC has proven better outcomes than other support in all immunocompromised patients, whatever the cause of failure.
 **Answer: B.**
-**Why correct:** The guideline says HFNC may avoid escalation but does not reduce length of stay (level B).
+**Why correct:** AARC supports HFNC to reduce escalation in selected settings (level B). The length-of-stay findings do not establish a consistent benefit.
 **Why not A:** The guideline states no length-of-stay reduction.
 **Why not C:** The guideline supports early initiation in suitable patients.
 **Why not D:** No benefit was found in immunocompromised patients.

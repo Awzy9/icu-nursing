@@ -29,7 +29,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "cb900506fab3c72f"
+   "hash": "b84d221c37cad7e4"
   },
   {
    "key": "D06-T04",
@@ -74,7 +74,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "8fd8415b9bc24aa0"
+   "hash": "6771be1e5c474a6f"
   },
   {
    "key": "D07-T04",
@@ -174,7 +174,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "a6bac976b49f205c"
+   "hash": "3c66d7dd76690f3a"
   },
   {
    "key": "D01-T07",
@@ -219,7 +219,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "8e162b9fd21d964d"
+   "hash": "08f2159fc9ad8e7d"
   },
   {
    "key": "D02-T08",
@@ -284,7 +284,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c9c1a6b0db3c8d0d"
+   "hash": "d6dfe3cf91d11c15"
   },
   {
    "key": "D02-T15",
@@ -304,7 +304,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "330d1533b9ae3039"
+   "hash": "c060e20fe55e3058"
   },
   {
    "key": "D03-T10",
@@ -349,7 +349,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "20a92a69a374624d"
+   "hash": "6144c374745fb72f"
   },
   {
    "key": "D06-T07",
@@ -379,7 +379,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "398de61876c8cabb"
+   "hash": "40f7985ec0e40e0f"
   },
   {
    "key": "D07-T06",
@@ -414,7 +414,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "17046b3725edff27"
+   "hash": "e008bf2d9d074efb"
   },
   {
    "key": "D01-T12",
@@ -624,7 +624,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "0c4e6df664199524"
+   "hash": "0cd2548867b23d23"
   },
   {
    "key": "D07-T03",
@@ -689,7 +689,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "38f3951a25f65fda"
+   "hash": "4310725719e928c2"
   },
   {
    "key": "D02-T09",
@@ -719,7 +719,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "cc45e3ffafb7ac7b"
+   "hash": "15470f72f6b455de"
   },
   {
    "key": "D02-T12",
@@ -774,7 +774,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "d614278004d7e9c6"
+   "hash": "2ef09ea4513ba87d"
   },
   {
    "key": "D05-T16",
@@ -899,7 +899,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "61beb6842992c99e"
+   "hash": "19c9ce45c7552d88"
   },
   {
    "key": "D04-T06",
@@ -929,7 +929,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "91214d8ee8fdb5f8"
+   "hash": "a2820a2a08f7e841"
   },
   {
    "key": "D04-T08",
@@ -946,6 +946,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-MERCK-ACID-BASE",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -954,7 +959,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "da6cb4d74bb22059"
+   "hash": "e28a3b4716862c62"
   },
   {
    "key": "D04-T09",
@@ -1174,7 +1179,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "4366d692a0cc6c50"
+   "hash": "c2088407069ad931"
   },
   {
    "key": "XQ-01",

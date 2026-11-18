@@ -97,13 +97,13 @@ At the start of the shift the nurse reads the MAP target range in the order, che
 A 72-year-old man with septic shock is on a vasoactive infusion. His MAP has been at 62 for 30 minutes, his fingers are cool, and his urine output has fallen. The nurse checks the pump and line, confirms the arterial trace is accurate, reports to the doctor that the target is not met despite escalating support and that perfusion is worsening, and asks for a decision about the next step. The doctor also asks for a repeat lactate; the nurse records the result and the response.
 
 ## 17. MCQs
-**Q1 (understanding).** What does SSC 2026 recommend as the initial MAP target in adults with septic shock?
+**Q1 (understanding).** What general initial MAP target does SSC 2026 recommend for a 55-year-old adult with septic shock?
 A. An initial MAP target of 65 mm Hg over higher targets, with vasopressors titrated to keep MAP within a reasonable range of it.
 B. An initial MAP target of 85 mm Hg, because higher targets have been shown to improve organ perfusion in these patients.
 C. A systolic pressure above 120 mm Hg, since the systolic pressure is the better guide to perfusion than the mean pressure.
 D. No specific target, because the page says that the target should always be chosen at the bedside by the nurse alone.
 **Answer: A.**
-**Why correct:** The page gives a strong recommendation (moderate certainty) for an initial MAP of 65 over higher targets, with a remark about using a range.
+**Why correct:** SSC recommends an initial MAP target of 65 mm Hg over higher targets (strong recommendation, moderate certainty). It separately suggests an initial range of 60–65 mm Hg for adults aged 65 or older. Follow the target ordered for the individual patient.
 **Why not B:** The page recommends 65 over higher targets.
 **Why not C:** The statement concerns mean arterial pressure, not systolic pressure.
 **Why not D:** The page gives a target; the order for the individual patient comes from the prescriber.
@@ -111,10 +111,10 @@ D. No specific target, because the page says that the target should always be ch
 **Q2 (judgment).** A patient on a vasoactive infusion has an MAP below the ordered range for 20 minutes. What is the best first nursing action?
 A. Increase the infusion rate at once, without checking the trace, the line or the pump, to bring the pressure up quickly.
 B. Document the value and recheck at the next scheduled observation, because a single low value is expected on vasopressors.
-C. Check the patient, the arterial trace, the line and the pump, and report to the prescriber if the target is still not met.
+C. Assess the patient and escalate the sustained hypotension promptly while verifying the pressure reading, IV access and pump. Follow the authorized titration protocol.
 D. Stop the infusion immediately, since the drug is clearly not working in this patient and a different agent will be needed.
 **Answer: C.**
-**Why correct:** The FDA page recommends monitoring and checking the pump; the nurse confirms the reading and the infusion before escalating, and titrates only within an order or protocol.
+**Why correct:** Persistent hypotension on vasoactive support warrants prompt escalation. Checking the trace, access and delivery can identify measurement or infusion problems while help is mobilized. Titrate only within the authorized order or protocol.
 **Why not A:** Titration needs an order or protocol and a check of the reading and equipment first.
 **Why not B:** A sustained low pressure in a patient on support needs action, not delay.
 **Why not D:** Stopping a vasoactive infusion abruptly without an order is unsafe.

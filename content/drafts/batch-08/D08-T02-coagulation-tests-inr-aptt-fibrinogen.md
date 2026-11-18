@@ -129,13 +129,13 @@ D. Fibrinogen can stay normal for a long time after DIC begins, so the whole pic
 **Why not C:** No single test should be used alone.
 
 **Q3 (safety).** A patient on a heparin infusion has a very prolonged aPTT and new oozing at the line site. What is the best nursing action?
-A. Report the bleeding and result at once, check the specimen details, and wait for orders about the infusion.
+A. Assess the patient and bleeding, escalate immediately, and hold the infusion under the unit’s heparin protocol or an urgent order.
 B. Stop the heparin infusion on your own and give the reversal agent kept on the unit without asking anyone first.
 C. Repeat the test tomorrow morning and record the oozing in the notes so that the day team can see it then.
 D. Increase the pressure on the dressing and tell the doctor about it at the end of the shift or at handover.
 **Answer: A.**
-**Why correct:** Heparin prolongs the aPTT; new bleeding must be reported immediately, and infusion or reversal decisions need an order or protocol.
-**Why not B:** Reversal and infusion changes need an order or protocol.
+**Why correct:** New bleeding with a markedly prolonged aPTT during therapeutic heparin needs immediate assessment and escalation. The prescribing information calls for prompt discontinuation for undue prolongation or haemorrhage. Follow the authorized hold pathway and obtain urgent direction on reversal.
+**Why not B:** An authorized hold may be urgent. Giving reversal independently is unsafe.
 **Why not C:** Waiting until tomorrow risks harm because the bleeding and the result need action now.
 **Why not D:** Bleeding must be reported promptly.
 
@@ -153,10 +153,10 @@ D. Ranges are the same everywhere for adults, and only differ for children becau
 **Q5 (application).** A patient is on warfarin. Which statement matches the Open RN anticoagulant text?
 A. Warfarin does not need any laboratory monitoring, because its effect is predictable and does not change between patients.
 B. Warfarin is monitored by the PTT and its effect is reversed with protamine, which is given by slow infusion.
-C. Warfarin needs close monitoring with PT or INR, and vitamin K is the reversal agent (a prescriber decision).
+C. Warfarin is monitored with the INR. Vitamin K can reverse its effect when indicated, under the prescriber’s plan.
 D. Warfarin is monitored by the platelet count alone, which is checked once a week in every patient who takes it.
 **Answer: C.**
-**Why correct:** The textbook says warfarin requires close monitoring with PT or INR and names vitamin K as the reversal agent.
+**Why correct:** The INR is derived from PT and is used for warfarin monitoring. Vitamin K can reverse warfarin; the emergency reversal strategy depends on bleeding severity and the local protocol.
 **Why not A:** It requires monitoring with PT or INR, because the dose effect varies between patients.
 **Why not B:** That describes heparin, which is monitored by the PTT and reversed with protamine.
 **Why not D:** Platelets do not monitor warfarin.
@@ -174,7 +174,9 @@ D. Setting the target, interpreting results diagnostically and deciding on rever
 
 ## 18. References
 - University Hospitals Sussex NHS Foundation Trust, Pathology User Guide. Coagulation screen. Page last modified 2025-12-24. https://pathology.uhsussex.nhs.uk/pug/haematology-transfusion/coagulation-tests/144-coagulation-screen (accessed 2026-11-14)
+- FDA. Heparin Sodium Injection prescribing information, section 5.6. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/019953s050lbl.pdf
 - Moser KA, Smock KJ. Disseminated Intravascular Coagulation – DIC. ARUP Consult. Last literature review July 2020; last update January 2025. https://arupconsult.com/content/disseminated-intravascular-coagulation (accessed 2026-11-14). © ARUP Laboratories; paraphrased only.
+- FDA. Heparin Sodium Injection prescribing information, section 5.6. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/019953s050lbl.pdf
 - Moser KA, Smock KJ. Impacts of Common Anticoagulants on Coagulation Testing. ARUP Consult. February 2024. https://arupconsult.com/content/impacts-common-anticoagulants (accessed 2026-11-14). © ARUP Laboratories; paraphrased only.
 - Ernstmeyer K, Christman E (eds). Nursing Pharmacology, 2nd ed. Open RN, 6.12 Blood coagulation modifiers. https://wtcs.pressbooks.pub/pharmacology/ (CC BY 4.0; accessed 2026-11-14)
 

@@ -105,9 +105,9 @@ D. Staging any pressure injury found on the sacrum or heels, because skin findin
 A. Listen over one area of the chest for ten seconds and record the rate, then move on to the respiratory system.
 B. Palpate a single pulse on one limb, then record that the pulses are present and move on to the next system.
 C. Check the pulses on the dominant side only, because the other side will be the same in nearly every patient.
-D. Compare pulses on both sides and take an apical pulse for one minute, listening in the five auscultation areas.
+D. Compare pulses bilaterally, auscultate the five cardiac areas, and count the apical pulse for one full minute at the apex.
 **Answer: D.**
-**Why correct:** The checklist directs comparing pulses on both sides and taking an apical pulse for one minute across the five auscultation areas. The other options are too brief, too limited or ignore asymmetry, which is a key finding.
+**Why correct:** The checklist lists bilateral pulse comparison, auscultation at five cardiac sites, and a separate one-minute apical pulse count. The other options are too brief, too limited or ignore asymmetry, which is a key finding.
 **Why not A:** Too brief and too limited.
 **Why not B:** One pulse does not compare perfusion side to side.
 **Why not C:** Asymmetry is a key finding and requires both sides.

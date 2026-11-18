@@ -81,13 +81,13 @@
    "question": {
     "prompt": "What is the most appropriate first nursing action?",
     "options": [
-     "Check the access line for kinking or positional occlusion before anything else",
+     "Assess the patient, then check the access line and clamps for kinking or a position-related obstruction",
      "Immediately increase the blood pump speed to clear the alarm",
      "Disconnect and discard the circuit without further assessment",
      "Silence the alarm and continue, since access pressure alarms are usually false"
     ],
     "answer": 0,
-    "explanation": "A high access (suction-side) pressure most often reflects a kinked, positioned-against-the-vessel-wall, or partially occluded access line, especially right after repositioning - checking and correcting the line's position is the appropriate first step before escalating or assuming the alarm is benign."
+    "explanation": "An access alarm after repositioning can occur when a line kinks or the catheter tip contacts the vessel wall. Assess the patient first and inspect the external circuit and clamps. Follow the device-specific pathway if the alarm persists."
    },
    "componentKey": "access"
   },

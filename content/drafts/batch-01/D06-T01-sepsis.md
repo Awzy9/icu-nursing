@@ -97,14 +97,14 @@ At 02:00 a patient with a urinary catheter has a heart rate rising from 88 to 11
 A 78-year-old woman, three days after hip surgery, is slightly confused and says she "just feels wrong". Temperature is normal, blood pressure 108/60 (usual 150/85), heart rate 104, respiratory rate 22, and urine output is low. Her early-warning score is 4, but the nurse recognises a large drop from her usual pressure, new confusion and a worried daughter. The nurse escalates as a possible sepsis case with SBAR, requests review within the time set by policy, and prepares for cultures and a lactate. The doctor decides on antimicrobials and fluids.
 
 ## 17. MCQs
-**Q1 (judgment).** A 78-year-old woman, three days after hip surgery, has suspected wound infection and new confusion. Her NEWS2 score is 4, systolic pressure has fallen 40 mmHg from her usual level, and her daughter reports a major change from baseline. What is the best nursing action?
+**Q1 (judgment).** A 78-year-old woman, three days after hip surgery, has suspected wound infection and new confusion. Her NEWS2 score is 4. Her systolic pressure has fallen from 150 to 110 mmHg, and her daughter reports a major change from baseline. What is the best nursing action?
 A. Repeat the observations in four hours, because a score of 4 falls in the low-risk band for this tool.
 B. Encourage oral fluids and ask the family to stay and watch her through the night.
 C. Document the daughter's concern and hand over to the morning team, since she has no fever.
 D. Escalate now as possible sepsis, citing the fall from her usual pressure and the new confusion.
 **Answer: D.**
-**Why correct:** NICE NG253 requires clinical judgement alongside NEWS2, including changed behaviour reported by family or carers; new confusion and a substantial blood-pressure fall warrant prompt assessment despite a NEWS2 score of 4. The score does not exclude severe illness.
-**Why not A:** The low band is a prompt, not a reason to delay when other danger signs are present.
+**Why correct:** NICE NG253 uses clinical judgement alongside NEWS2. New confusion contributes 3 points and requires high-priority clinical review to determine whether infection caused it. The fall in blood pressure and the family’s report support prompt escalation.
+**Why not A:** An aggregate score of 4 cannot be interpreted in isolation when a single parameter scores 3 or there is additional clinical concern.
 **Why not B:** Oral fluids do not address possible sepsis and cannot replace clinical review; fluids are prescribed.
 **Why not C:** Fever is not required for sepsis, and waiting for the morning delays treatment.
 

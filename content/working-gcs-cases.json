@@ -1,7 +1,7 @@
 [
  {
   "key": "GCS-01",
-  "vignette": "The patient opens their eyes as soon as you approach, without any stimulus. They tell you their name, where they are, and the correct day. When asked to squeeze your hand, they do so on request.",
+  "vignette": "The patient opens their eyes as soon as you approach, without any stimulus. They tell you their name, where they are, and the correct day. They follow a two-part request to open and then close their hand.",
   "correctEye": 4,
   "correctVerbal": 5,
   "correctMotor": 6,
@@ -17,7 +17,7 @@
  },
  {
   "key": "GCS-03",
-  "vignette": "The patient opens their eyes when you speak to them, but not spontaneously. They answer questions but seem muddled about the date and keep repeating themselves. When you apply a painful stimulus to their nailbed, their other hand reaches up toward the site of the pain.",
+  "vignette": "The patient opens their eyes when you speak to them, but not spontaneously. They answer questions but seem muddled about the date and keep repeating themselves. When trapezius pressure is applied, their hand moves above the clavicle toward the stimulus.",
   "correctEye": 3,
   "correctVerbal": 4,
   "correctMotor": 5,
