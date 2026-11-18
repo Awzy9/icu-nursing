@@ -12,7 +12,7 @@ type Visual = {
   detail: Translation;
   source: string;
   credit: string;
-  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0" | "Public domain";
+  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0" | "Public domain" | "CC0 1.0";
   cropped?: boolean;
   rotated?: boolean;
 };
@@ -449,6 +449,42 @@ const highFlowCannula: Visual = {
   license: "BY-SA 4.0",
 };
 
+const bloodPressureCuff: Visual = {
+  file: "bp-cuff",
+  width: 688,
+  height: 700,
+  alt: ["A manual blood pressure cuff with an inflation bulb and a round pressure gauge.", "كُفّة يدوية لقياس ضغط الدم مع مضخة نفخ ومقياس ضغط دائري."],
+  label: ["Manual blood pressure cuff", "كُفّة يدوية لقياس ضغط الدم"],
+  detail: ["The hand bulb inflates the cuff and the gauge displays cuff pressure.", "تنفخ المضخة اليدوية الكُفّة ويعرض المقياس الضغط داخلها."],
+  source: "Aneroid_Sphygmomanometer.jpg",
+  credit: "Confidence24",
+  license: "BY-SA 4.0",
+};
+
+const bloodGasAnalyzer: Visual = {
+  file: "blood-gas-analyzer",
+  width: 950,
+  height: 794,
+  alt: ["A benchtop blood gas analyzer with its screen and sample inlet visible.", "جهاز مخبري لتحليل غازات الدم تظهر فيه الشاشة وفتحة إدخال العينة."],
+  label: ["Blood gas analyzer", "جهاز تحليل غازات الدم"],
+  detail: ["This example shows a laboratory analyzer that measures blood pH, carbon dioxide partial pressure and oxygen partial pressure.", "يوضح هذا المثال جهازًا مخبريًا يقيس درجة حموضة الدم والضغط الجزئي لثاني أكسيد الكربون والضغط الجزئي للأكسجين."],
+  source: "Cobas221A.png",
+  credit: "J3D3",
+  license: "BY-SA 3.0",
+};
+
+const healthcarePpe: Visual = {
+  file: "healthcare-ppe",
+  width: 950,
+  height: 534,
+  alt: ["Healthcare workers wearing protective clothing and masks in a hospital.", "عاملون في الرعاية الصحية يرتدون ملابس واقية وكمامات في مستشفى."],
+  label: ["Personal protective equipment in clinical care", "معدات الوقاية الشخصية في الرعاية السريرية"],
+  detail: ["This photo shows protective clothing and face protection used in a hospital during the COVID-19 pandemic.", "تُظهر الصورة الملابس الواقية ووسائل حماية الوجه المستخدمة في مستشفى خلال جائحة كوفيد-19."],
+  source: "Healthcare_workers_wearing_PPE_03.jpg",
+  credit: "Javed Anees, District Hospital, Tirur",
+  license: "CC0 1.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -500,6 +536,8 @@ const visuals: Record<string, Visual> = {
   "D07-T01": stethoscope,
   "D02-T02": ecgMachine,
   "D03-T01": penlight,
+  "D02-T08": bloodPressureCuff,
+  "D04-T08": bloodGasAnalyzer,
   "SK-16": rollator,
   "D01-T17": oronasalMask,
 };
@@ -509,7 +547,9 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
   const ar = locale === "ar";
   const language = ar ? 1 : 0;
   const photo = `/images/equipment/${visual.file}.webp`;
-  const license = visual.license.toLowerCase().replace(" ", "/");
+  const licenseUrl = visual.license === "CC0 1.0"
+    ? "https://creativecommons.org/publicdomain/zero/1.0/"
+    : `https://creativecommons.org/licenses/${visual.license.toLowerCase().replace(" ", "/")}/`;
 
   const covered = visual.file === "central-line";
   const largeWidth = Math.min(visual.width, visual.height > visual.width ? 384 : 608);
@@ -546,7 +586,7 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
         <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>
         <p className="text-xs text-muted-foreground" lang="en">
           <a className="underline" href={`https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
-          {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a>} · {covered ? "Shown with a privacy cover" : visual.cropped ? "Cropped and converted to WebP" : visual.rotated ? "Rotated and converted to WebP" : "WebP version, resized where applicable"}
+          {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={licenseUrl}>{visual.license === "CC0 1.0" ? visual.license : `CC ${visual.license}`}</a>} · {covered ? "Shown with a privacy cover" : visual.cropped ? "Cropped and converted to WebP" : visual.rotated ? "Rotated and converted to WebP" : "WebP version, resized where applicable"}
         </p>
       </figcaption>
     </figure>
@@ -570,6 +610,7 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
       <EquipmentPhoto visual={visual} locale={locale} />
       {showVenturiMask && <EquipmentPhoto visual={venturiMask} locale={locale} />}
       {moduleKey === "D01-T03" && <EquipmentPhoto visual={highFlowCannula} locale={locale} />}
+      {moduleKey === "SK-21" && <EquipmentPhoto visual={healthcarePpe} locale={locale} />}
     </>
   );
 }
