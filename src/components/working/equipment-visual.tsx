@@ -11,7 +11,8 @@ type Visual = {
   detail: Translation;
   source: string;
   credit: string;
-  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5";
+  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0";
+  cropped?: boolean;
 };
 
 const ventilator: Visual = {
@@ -62,6 +63,55 @@ const chestDrain: Visual = {
   license: "BY 2.5",
 };
 
+const defibrillator: Visual = {
+  file: "defibrillator",
+  width: 300,
+  height: 215,
+  alt: ["A manual defibrillator with a rhythm display and front-panel controls.", "جهاز إزالة رجفان يدوي مع شاشة لعرض نظم القلب وأزرار تحكّم أمامية."],
+  label: ["Recognise a manual defibrillator", "تعرّف على جهاز إزالة الرجفان اليدوي"],
+  detail: ["Find the rhythm display and controls on the front panel. The layout is specific to this model.", "حدّد شاشة النظم وأزرار التحكّم على اللوحة الأمامية. يخص ترتيبها هذا الطراز."],
+  source: "Manual-external-defibrillator-monitor.jpg",
+  credit: "Aededitor",
+  license: "BY 3.0",
+};
+
+const enteralFeeding: Visual = {
+  file: "enteral-feeding",
+  width: 656,
+  height: 875,
+  alt: ["An enteral feeding pump beside a feeding bag and tubing.", "مضخة تغذية معوية بجانب كيس التغذية والأنبوب."],
+  label: ["Identify the enteral feeding equipment", "تعرّف على معدات التغذية المعوية"],
+  detail: ["Find the feeding bag, tubing and pump. The equipment is laid out for illustration.", "حدّد كيس التغذية والأنبوب والمضخة. المعدات معروضة للتوضيح."],
+  source: "Open_system_enteral_feeding.jpg",
+  credit: "Ashashyou",
+  license: "BY-SA 3.0",
+};
+
+const tracheostomy: Visual = {
+  file: "tracheostomy",
+  width: 481,
+  height: 439,
+  alt: ["Close-up of a tracheostomy tube, neck flange and securing strap.", "صورة مقرّبة لأنبوب فغر الرغامى وصفيحة التثبيت ورباط التثبيت حول العنق."],
+  label: ["Recognise a tracheostomy tube at the bedside", "تعرّف على أنبوب فغر الرغامى بجانب السرير"],
+  detail: ["Locate the flange resting against the neck, the securing strap and the external connection.", "حدّد صفيحة التثبيت الملامسة للعنق ورباط التثبيت والوصلة الخارجية."],
+  source: "Tracheostomy_with_tube.jpg",
+  credit: "Mahleretto",
+  license: "BY-SA 4.0",
+  cropped: true,
+};
+
+const supportSurface: Visual = {
+  file: "air-fluidised-bed",
+  width: 950,
+  height: 534,
+  alt: ["An air-fluidised hospital bed with its support surface visible.", "سرير مستشفى بنظام التمييع الهوائي يظهر فيه سطح الدعم."],
+  label: ["Recognise an air-fluidised support surface", "تعرّف على سطح دعم بنظام التمييع الهوائي"],
+  detail: ["This is an example of an air-fluidised bed. It is a different type of support surface from an alternating-pressure mattress.", "هذا مثال لسرير بنظام التمييع الهوائي، وهو نوع مختلف عن مراتب الضغط المتناوب."],
+  source: "Air_Fluidised_Bed,_bzw._Clinitron-Bett,_Universitätsklinikum_Lübeck,_2019.jpg",
+  credit: "Llydia",
+  license: "BY-SA 4.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -75,6 +125,16 @@ const visuals: Record<string, Visual> = {
   "D05-T16": syringePump,
   "D02-T12": syringePump,
   "SK-13": chestDrain,
+  "EQ-05": defibrillator,
+  "SK-19": defibrillator,
+  "D02-T15": defibrillator,
+  "EQ-07": enteralFeeding,
+  "SK-10": enteralFeeding,
+  "D07-T06": enteralFeeding,
+  "SK-05": tracheostomy,
+  "EQ-08": supportSurface,
+  "SK-14": supportSurface,
+  "D07-T04": supportSurface,
 };
 
 export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
@@ -95,7 +155,8 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
           width={visual.width}
           height={visual.height}
           sizes="(min-width: 1024px) 540px, 85vw"
-          className={`mx-auto h-auto w-full ${visual.height > visual.width ? "max-w-[24rem]" : "max-w-[38rem]"}`}
+          className="mx-auto h-auto w-full"
+          style={{ maxWidth: Math.min(visual.width, visual.height > visual.width ? 384 : 608) }}
         />
       </a>
       <figcaption className="space-y-1 p-4 text-sm">
@@ -103,7 +164,7 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
         <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>
         <p className="text-xs text-muted-foreground" lang="en">
           <a className="underline" href={`https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
-          <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a> · Resized and converted to WebP
+          <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a> · {visual.cropped ? "Cropped and converted to WebP" : "WebP version, resized where applicable"}
         </p>
       </figcaption>
     </figure>
