@@ -80,3 +80,46 @@ describe("Rpc: working_* account sync (recordWorkingAttempt, bookmarks, lessons,
     await expect(rpc.setWorkingBookmark("SK-02", true)).rejects.toMatchObject({ code: "auth" });
   });
 });
+
+describe("Rpc: timed exam mode (startWorkingExam/answerWorkingExam/submitWorkingExam/loadWorkingExam)", () => {
+  it("startWorkingExam calls working_exam_start with the exact argument shape and returns the new exam's id", async () => {
+    const rpc = vi.fn(async (fn: string, args?: Record<string, unknown>) => { expect(fn).toBe("working_exam_start"); expect(args).toEqual({ p_question_ids: ["Q1", "Q2"], p_time_limit_seconds: 1440 }); return { data: "11111111-1111-4111-8111-111111111111", error: null }; });
+    const id = await createRpc(mockClient({ rpc })).startWorkingExam(["Q1", "Q2"], 1440);
+    expect(id).toBe("11111111-1111-4111-8111-111111111111");
+  });
+
+  it("startWorkingExam rejects a non-uuid response rather than returning it", async () => {
+    const rpc = createRpc(mockClient({ rpc: async () => ({ data: "not-a-uuid", error: null }) }));
+    await expect(rpc.startWorkingExam(["Q1"], 60)).rejects.toMatchObject({ code: "contract" });
+  });
+
+  it("answerWorkingExam and submitWorkingExam call the exact RPC names and argument shapes", async () => {
+    const rpc = vi.fn(async (fn: string, args?: Record<string, unknown>) => {
+      if (fn === "working_exam_answer") expect(args).toEqual({ p_exam_id: "exam-1", p_question_id: "Q1", p_choice: 2 });
+      else if (fn === "working_exam_submit") expect(args).toEqual({ p_exam_id: "exam-1" });
+      else throw new Error(`unexpected rpc ${fn}`);
+      return { data: null, error: null };
+    });
+    const created = createRpc(mockClient({ rpc }));
+    await created.answerWorkingExam("exam-1", "Q1", 2);
+    await created.submitWorkingExam("exam-1");
+    expect(rpc).toHaveBeenCalledTimes(2);
+  });
+
+  it("loadWorkingExam selects the row by id and validates it against the shared schema", async () => {
+    const eq = vi.fn(() => ({ maybeSingle: async () => ({ data: { id: "exam-1", question_ids: ["Q1"], time_limit_seconds: 60, started_at: "2026-01-01T00:00:00.000Z", submitted_at: null, answers: { Q1: 0 } }, error: null }) }));
+    const select = vi.fn(() => ({ eq }));
+    const rpc = createRpc(mockClient({ from: () => ({ select }) as never }));
+    const row = await rpc.loadWorkingExam("exam-1");
+    expect(row).toEqual({ id: "exam-1", question_ids: ["Q1"], time_limit_seconds: 60, started_at: "2026-01-01T00:00:00.000Z", submitted_at: null, answers: { Q1: 0 } });
+    expect(eq).toHaveBeenCalledWith("id", "exam-1");
+  });
+
+  it("loadWorkingExam returns undefined when no row matches, and rejects a malformed row", async () => {
+    const missing = createRpc(mockClient({ from: () => ({ select: () => ({ eq: () => ({ maybeSingle: async () => ({ data: null, error: null }) }) }) }) as never }));
+    expect(await missing.loadWorkingExam("exam-404")).toBeUndefined();
+
+    const malformed = createRpc(mockClient({ from: () => ({ select: () => ({ eq: () => ({ maybeSingle: async () => ({ data: { id: "exam-1" /* missing required fields */ }, error: null }) }) }) }) as never }));
+    await expect(malformed.loadWorkingExam("exam-1")).rejects.toMatchObject({ code: "contract" });
+  });
+});

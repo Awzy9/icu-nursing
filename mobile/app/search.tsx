@@ -1,12 +1,10 @@
 import { useMemo, useState } from "react";
 import { TextInput } from "react-native";
-import { groupByType, searchCatalog } from "../src/core/search";
+import { groupByType, ROUTE_FOR_TYPE, searchCatalog } from "../src/core/search";
 import { H1, H2, NavCard, P, RemoteGate, Screen } from "../src/ui/components";
 import { useApp } from "../src/state/app";
 import { useCatalogList } from "../src/hooks/useRemoteContent";
 import { MIN_TARGET, space } from "../src/ui/theme";
-
-const ROUTE: Record<string, string> = { topics: "/topics/", skills: "/skills/", medications: "/medications/", equipment: "/equipment/", cases: "/cases/", questions: "/quiz/" };
 
 export default function Search() {
   const { t, rtl, palette } = useApp();
@@ -45,7 +43,7 @@ function Results({ items, query }: { items: ReturnType<typeof searchCatalog>; qu
 
 function SearchGroup({ type, items }: { type: string; items: ReturnType<typeof searchCatalog> }) {
   const { t } = useApp();
-  const route = ROUTE[type];
+  const route = ROUTE_FOR_TYPE[type];
   if (!route) return null;
   return (
     <>

@@ -6,8 +6,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Constants from "expo-constants";
 import {
-  fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchLabDataset, siteBaseUrl,
-  type CaseVisuals, type ContentClientDeps, type RemoteResult, type WorkingEntryShared, type WorkingEntrySummary,
+  fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, siteBaseUrl,
+  type CaseVisuals, type ContentClientDeps, type ExamQuestionShared, type ExamTopicShared, type RemoteResult, type WorkingEntryShared, type WorkingEntrySummary,
 } from "../core/remoteContent";
 
 const store = { get: (k: string) => AsyncStorage.getItem(k), set: (k: string, v: string) => AsyncStorage.setItem(k, v) };
@@ -15,6 +15,9 @@ function deps(): ContentClientDeps {
   const extra = Constants.expoConfig?.extra as { siteUrl?: string } | undefined;
   return { store, fetcher: fetch, baseUrl: siteBaseUrl(process.env as Record<string, string | undefined>, extra?.siteUrl) };
 }
+// For one-shot calls outside the useFetcher hook pattern below (e.g. drawing a fresh exam, which
+// must not be cached/re-rendered the way a hook's steady "fetch and keep" state would be).
+export const contentClientDeps = deps;
 
 export type FetchState<T> =
   | { status: "loading" }
@@ -41,3 +44,5 @@ export const useCatalogList = (type?: string) => useFetcher<WorkingEntrySummary[
 export const useCatalogEntry = (key: string | undefined) => useFetcher<WorkingEntryShared>(() => (key ? fetchCatalogEntry(deps(), key) : Promise.resolve({ status: "offline" as const })), [key]);
 export const useLabDataset = <T = Record<string, unknown>>(name: string) => useFetcher<T[]>(() => fetchLabDataset<T>(deps(), name), [name]);
 export const useCaseVisuals = () => useFetcher<CaseVisuals>(() => fetchCaseVisuals(deps()), []);
+export const useExamTopics = () => useFetcher<ExamTopicShared[]>(() => fetchExamTopics(deps()), []);
+export const useExamQuestions = (ids: string[]) => useFetcher<ExamQuestionShared[]>(() => (ids.length ? fetchExamQuestions(deps(), ids) : Promise.resolve({ status: "offline" as const })), [ids.join(",")]);

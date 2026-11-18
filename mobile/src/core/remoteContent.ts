@@ -12,8 +12,13 @@ import {
   catalogEntryResponseSchema, catalogListResponseSchema, caseVisualsResponseSchema, labDatasetResponseSchema,
   type WorkingEntrySummary, type WorkingEntryShared, type CaseVisuals,
 } from "@icu/schemas/working-content";
+import {
+  examPickResponseSchema, examQuestionsResponseSchema, examTopicsResponseSchema,
+  type ExamQuestionShared, type ExamTopicShared,
+} from "@icu/schemas/working-exam";
 
 export type { WorkingEntrySummary, WorkingEntryShared, CaseVisuals } from "@icu/schemas/working-content";
+export type { ExamQuestionShared, ExamTopicShared } from "@icu/schemas/working-exam";
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void> }
 
 const DEFAULT_SITE_URL = "https://icu-nursing.vercel.app";
@@ -76,4 +81,23 @@ export function fetchLabDataset<T = Record<string, unknown>>(deps: ContentClient
 
 export function fetchCaseVisuals(deps: ContentClientDeps): Promise<RemoteResult<CaseVisuals>> {
   return fetchCached(deps, "case-visuals", "/api/content/case-visuals", (raw) => caseVisualsResponseSchema.parse(raw).data);
+}
+
+export function fetchExamTopics(deps: ContentClientDeps): Promise<RemoteResult<ExamTopicShared[]>> {
+  return fetchCached(deps, "exam-topics", "/api/content/exam/topics", (raw) => examTopicsResponseSchema.parse(raw).topics);
+}
+
+export function fetchExamQuestions(deps: ContentClientDeps, ids: string[]): Promise<RemoteResult<ExamQuestionShared[]>> {
+  const key = [...ids].sort().join(",");
+  return fetchCached(deps, `exam-questions:${key}`, `/api/content/exam/questions?ids=${ids.map(encodeURIComponent).join(",")}`, (raw) => examQuestionsResponseSchema.parse(raw).items);
+}
+
+// A fresh random draw every call - never cached, since caching would defeat the point of
+// picking a new set of questions each time an exam is started.
+export async function pickExamQuestions(deps: ContentClientDeps, categories: string[], count: number): Promise<RemoteResult<{ questionIds: string[]; timeLimitSeconds: number }>> {
+  try {
+    const path = `/api/content/exam/pick?categories=${categories.map(encodeURIComponent).join(",")}&count=${count}`;
+    const raw = await fetchJson(deps.fetcher, deps.baseUrl, path);
+    return { status: "ok", data: examPickResponseSchema.parse(raw), fromCache: false };
+  } catch { return { status: "offline" }; }
 }

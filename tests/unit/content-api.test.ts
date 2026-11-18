@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { caseVisualsResponseSchema, catalogEntryResponseSchema, catalogListResponseSchema, labDatasetResponseSchema } from "@icu/schemas/working-content";
+import { examPickResponseSchema, examQuestionsResponseSchema, examTopicsResponseSchema } from "@icu/schemas/working-exam";
 
 const ORIGINAL_EDITION = process.env.CONTENT_EDITION;
 
@@ -18,6 +19,12 @@ describe("content API: disabled when the working edition is off", () => {
     expect((await labGet(new Request("http://x"), { params: Promise.resolve({ name: "ecg" }) })).status).toBe(404);
     const { GET: caseVisualsGet } = await import("@/app/api/content/case-visuals/route");
     expect(caseVisualsGet().status).toBe(404);
+    const { GET: examTopicsGet } = await import("@/app/api/content/exam/topics/route");
+    expect(examTopicsGet().status).toBe(404);
+    const { GET: examPickGet } = await import("@/app/api/content/exam/pick/route");
+    expect((await examPickGet(new Request("http://x?categories=General%20ICU%20Nursing&count=10"))).status).toBe(404);
+    const { GET: examQuestionsGet } = await import("@/app/api/content/exam/questions/route");
+    expect((await examQuestionsGet(new Request("http://x?ids=a"))).status).toBe(404);
   });
 });
 
@@ -120,5 +127,52 @@ describe("content API: enabled", () => {
   it("case-visuals is not reachable through the array-shaped labs whitelist", async () => {
     const { GET } = await import("@/app/api/content/labs/[name]/route");
     expect((await GET(new Request("http://x"), { params: Promise.resolve({ name: "case-visuals" }) })).status).toBe(404);
+  });
+
+  it("GET /api/content/exam/topics returns a schema-conformant category/count breakdown", async () => {
+    const { GET } = await import("@/app/api/content/exam/topics/route");
+    const r = GET();
+    expect(r.status).toBe(200);
+    const parsed = examTopicsResponseSchema.parse(await r.json());
+    expect(parsed.topics.length).toBeGreaterThan(0);
+    expect(parsed.topics.every((t) => t.count > 0)).toBe(true);
+  });
+
+  it("GET /api/content/exam/pick draws question ids from the chosen categories and a sane time limit", async () => {
+    const { GET: topicsGet } = await import("@/app/api/content/exam/topics/route");
+    const { topics } = await (topicsGet().json() as Promise<{ topics: { category: string; count: number }[] }>);
+    const category = topics[0]!.category;
+    const { GET } = await import("@/app/api/content/exam/pick/route");
+    const r = await GET(new Request(`http://x?categories=${encodeURIComponent(category)}&count=10`));
+    expect(r.status).toBe(200);
+    const parsed = examPickResponseSchema.parse(await r.json());
+    expect(parsed.questionIds.length).toBeGreaterThan(0);
+    expect(parsed.questionIds.length).toBeLessThanOrEqual(10);
+    expect(parsed.timeLimitSeconds).toBeGreaterThan(0);
+  });
+
+  it("GET /api/content/exam/pick rejects an invalid count or missing categories", async () => {
+    const { GET } = await import("@/app/api/content/exam/pick/route");
+    expect((await GET(new Request("http://x?categories=General%20ICU%20Nursing&count=7"))).status).toBe(400);
+    expect((await GET(new Request("http://x?count=10"))).status).toBe(400);
+  });
+
+  it("GET /api/content/exam/questions returns full question objects (answer and explanation included) for the given ids", async () => {
+    const { GET: topicsGet } = await import("@/app/api/content/exam/topics/route");
+    const { topics } = await (topicsGet().json() as Promise<{ topics: { category: string; count: number }[] }>);
+    const { GET: pickGet } = await import("@/app/api/content/exam/pick/route");
+    const { questionIds } = await (await pickGet(new Request(`http://x?categories=${encodeURIComponent(topics[0]!.category)}&count=10`))).json();
+    const { GET } = await import("@/app/api/content/exam/questions/route");
+    const r = await GET(new Request(`http://x?ids=${questionIds.join(",")}`));
+    expect(r.status).toBe(200);
+    const parsed = examQuestionsResponseSchema.parse(await r.json());
+    expect(parsed.items.length).toBe(questionIds.length);
+    for (const q of parsed.items) { expect(q.answer).toBeGreaterThanOrEqual(0); expect(q.explanation.length).toBeGreaterThan(0); }
+  });
+
+  it("GET /api/content/exam/questions rejects empty or oversized id lists", async () => {
+    const { GET } = await import("@/app/api/content/exam/questions/route");
+    expect((await GET(new Request("http://x?ids="))).status).toBe(400);
+    expect((await GET(new Request(`http://x?ids=${Array.from({ length: 101 }, (_, i) => `q${i}`).join(",")}`))).status).toBe(400);
   });
 });

@@ -18,6 +18,9 @@ function Shell() {
         <Stack.Screen name="quiz/[key]" options={{ title: t("quiz.title") }} />
         <Stack.Screen name="bookmarks" options={{ title: t("bookmarks.title") }} />
         <Stack.Screen name="search" options={{ title: t("search.title") }} />
+        <Stack.Screen name="exam/index" options={{ title: t("exam.title") }} />
+        <Stack.Screen name="exam/[id]/index" options={{ title: t("exam.title"), headerBackVisible: false }} />
+        <Stack.Screen name="exam/[id]/results" options={{ title: t("exam.complete") }} />
         <Stack.Screen name="labs" options={{ title: t("labs.title") }} />
         <Stack.Screen name="topics/[key]" options={{ title: t("topic.title") }} />
         <Stack.Screen name="equipment/[code]" options={{ title: t("equipment.title") }} />
