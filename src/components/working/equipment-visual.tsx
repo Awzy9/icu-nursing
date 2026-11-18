@@ -351,6 +351,30 @@ const citrateTube: Visual = {
   license: "BY-SA 4.0",
 };
 
+const fingerOximeter: Visual = {
+  file: "finger-oximeter",
+  width: 950,
+  height: 633,
+  alt: ["A clip-style pulse oximeter attached to a finger.", "مقياس التأكسج النبضي على شكل مشبك مثبت على إصبع."],
+  label: ["Fingertip pulse oximeter", "مقياس التأكسج النبضي للإصبع"],
+  detail: ["A fingertip pulse oximeter displays oxygen saturation (SpO₂) and pulse rate.", "يعرض مقياس التأكسج النبضي للإصبع تشبع الأكسجين (SpO₂) ومعدل النبض."],
+  source: "Pulse_oximeter_on_a_finger.jpg",
+  credit: "Jakub T. Jankiewicz",
+  license: "BY-SA 4.0",
+};
+
+const bagMask: Visual = {
+  file: "bag-mask",
+  width: 656,
+  height: 875,
+  alt: ["A manual resuscitator with a clear face mask, squeeze bag and oxygen reservoir.", "جهاز إنعاش يدوي مزوّد بقناع وجه شفاف وكيس قابل للضغط وخزان أكسجين."],
+  label: ["Bag-valve-mask resuscitator", "جهاز الإنعاش اليدوي بالكيس والصمام والقناع"],
+  detail: ["The face mask is at the top, the squeeze bag is in the middle and the oxygen reservoir is at the bottom.", "يظهر قناع الوجه في الأعلى، والكيس القابل للضغط في الوسط، وخزان الأكسجين في الأسفل."],
+  source: "Bag_mask_ventilation_device.jpg",
+  credit: "ICUnurses",
+  license: "BY-SA 4.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -366,6 +390,7 @@ const visuals: Record<string, Visual> = {
   "SK-13": chestDrain,
   "EQ-05": defibrillator,
   "SK-19": defibrillator,
+  "D02-T14": bagMask,
   "D02-T15": defibrillator,
   "EQ-07": enteralFeeding,
   "SK-10": enteralFeeding,
@@ -449,6 +474,10 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
   );
 }
 
+
+export function PulseOximeterPhoto({ locale }: { locale: string }) {
+  return <EquipmentPhoto visual={fingerOximeter} locale={locale} />;
+}
 
 export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
   if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
