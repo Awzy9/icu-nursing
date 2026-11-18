@@ -12,7 +12,7 @@ type Visual = {
   detail: Translation;
   source: string;
   credit: string;
-  license: "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0" | "Public domain" | "CC0 1.0";
+  license: "BY-SA 2.5" | "BY-SA 3.0" | "BY-SA 4.0" | "BY 2.5" | "BY 3.0" | "BY 4.0" | "Public domain" | "CC0 1.0";
   cropped?: boolean;
   rotated?: boolean;
 };
@@ -485,10 +485,48 @@ const healthcarePpe: Visual = {
   license: "CC0 1.0",
 };
 
+const urineOutputBag: Visual = {
+  file: "urine-output-bag",
+  width: 656,
+  height: 875,
+  alt: ["A urine drainage bag with a graduated measuring chamber hanging from a hospital bed frame.", "كيس تصريف بول مزوّد بحجرة قياس مدرّجة ومعلّق بإطار سرير المستشفى."],
+  label: ["Urine drainage bag with measuring chamber", "كيس تصريف البول بحجرة قياس"],
+  detail: ["The narrow central chamber has markings for reading collected urine volume.", "تحتوي الحجرة الضيقة في الوسط على تدريجات لقراءة حجم البول المتجمّع."],
+  source: "Urine_output_bag.jpg",
+  credit: "Ashashyou",
+  license: "BY-SA 4.0",
+};
+
+const bladderUltrasound: Visual = {
+  file: "bladder-ultrasound",
+  width: 590,
+  height: 364,
+  alt: ["A grayscale ultrasound image of the bladder with measurement markers.", "صورة للمثانة بالموجات فوق الصوتية بتدرّج رمادي تظهر عليها علامات القياس."],
+  label: ["Bladder ultrasound", "تصوير المثانة بالموجات فوق الصوتية"],
+  detail: ["In this example, the fluid-filled bladder appears dark. The measurement markers help estimate the volume of urine in the bladder.", "تظهر المثانة الممتلئة بالسوائل داكنة في هذا المثال. تساعد علامات القياس على تقدير حجم البول في المثانة."],
+  source: "Ultrasound_Scan_ND_024.jpg",
+  credit: "Nevit Dilmen",
+  license: "BY-SA 2.5",
+  cropped: true,
+};
+
+const capnographySetup: Visual = {
+  file: "capnography-setup",
+  width: 950,
+  height: 534,
+  alt: ["Capnography equipment with an airway adapter and coiled connections laid out on a green cloth.", "معدات قياس ثاني أكسيد الكربون في الزفير، مع وصلة لمجرى الهواء وتوصيلات ملفوفة، موضوعة على قطعة قماش خضراء."],
+  label: ["Capnography equipment", "معدات تخطيط ثاني أكسيد الكربون في الزفير"],
+  detail: ["Capnography displays how carbon dioxide changes during breathing. EtCO₂ is the value measured at the end of exhalation.", "يُظهر تخطيط ثاني أكسيد الكربون كيف يتغيّر مستواه أثناء التنفس. ويعبّر EtCO₂ عن القيمة المقاسة في نهاية الزفير."],
+  source: "Capno.jpg",
+  credit: "Behzad39",
+  license: "BY-SA 4.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
   "D01-T06": ventilator,
+  "D01-T07": capnographySetup,
   "D01-T09": ventilator,
   "EQ-03": arterialLine,
   "SK-01": arterialLine,
@@ -517,7 +555,7 @@ const visuals: Record<string, Visual> = {
   "SK-09": bloodBag,
   "D08-T03": bloodBag,
   "SK-12": foleyCatheter,
-  "D04-T03": foleyCatheter,
+  "D04-T03": urineOutputBag,
   "SK-02": centralLine,
   "D06-T05": centralLine,
   "SK-11": nasogastricTube,
@@ -611,6 +649,7 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
       {showVenturiMask && <EquipmentPhoto visual={venturiMask} locale={locale} />}
       {moduleKey === "D01-T03" && <EquipmentPhoto visual={highFlowCannula} locale={locale} />}
       {moduleKey === "SK-21" && <EquipmentPhoto visual={healthcarePpe} locale={locale} />}
+      {moduleKey === "D04-T03" && <EquipmentPhoto visual={bladderUltrasound} locale={locale} />}
     </>
   );
 }
