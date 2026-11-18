@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { cases, equipment, findEquipment, medications, questions, skills } from "../../mobile/src/core/content";
 import { isRtl, localized, localizedList, messages, translate, usedFallback } from "../../mobile/src/core/i18n";
 import { answer, caseSummary, choose, currentStep, isCorrect, practiceResult, scoreTenths as mobileScore, seededOrder, startCase, startPractice } from "../../mobile/src/core/engines";
-import { clearProgress, discardSession, emptyProgress, getSession, loadProgress, markViewed, progressSchema, recordCase, recordPractice, saveProgress, saveSession, toggleBookmark, toggleTick, viewedCount, type KeyValueStore } from "../../mobile/src/core/progress";
+import { clearProgress, discardSession, emptyProgress, getSession, loadProgress, markViewed, progressSchema, recordCase, recordPractice, saveProgress, saveSession, setComplete, toggleBookmark, toggleTick, viewedCount, type KeyValueStore } from "../../mobile/src/core/progress";
 import { scoreTenths as webScore } from "@/lib/question-bank/score";
 import { createCaseFixtureService } from "@/lib/cases/fixture-service";
 import { loadCaseFixtures } from "@/lib/cases/fixtures";
@@ -113,6 +113,16 @@ describe("local progress", () => {
     expect(p.sessions).toEqual({});
     expect(discardSession(p, "NOT-THERE")).toBe(p); // no-op returns the same reference
   });
+  it("marks and unmarks a lesson complete idempotently, returning the same reference when nothing changes", () => {
+    const p = emptyProgress();
+    expect(p.completed).toEqual([]);
+    const marked = setComplete(p, "D01-T19", true);
+    expect(marked.completed).toEqual(["D01-T19"]);
+    expect(setComplete(marked, "D01-T19", true)).toBe(marked); // already true: no-op, same reference
+    const unmarked = setComplete(marked, "D01-T19", false);
+    expect(unmarked.completed).toEqual([]);
+    expect(setComplete(unmarked, "D01-T19", false)).toBe(unmarked); // already false: no-op
+  });
   it("rejects a bookmark key with an unknown kind or an invalid catalog key shape", () => {
     expect(progressSchema.safeParse({ ...emptyProgress(), bookmarks: ["equipment:EQ-01"] }).success).toBe(true);
     expect(progressSchema.safeParse({ ...emptyProgress(), bookmarks: ["notakind:EQ-01"] }).success).toBe(false);
@@ -124,5 +134,12 @@ describe("local progress", () => {
     s.data.set("icu.progress.v2", "{not json"); expect(await loadProgress(s)).toEqual(emptyProgress());
     s.data.set("icu.progress.v1", JSON.stringify({ v: 1, bookmarks: ["equipment:SYN-EQ-001"], viewed: {}, ticks: {}, cases: {}, practice: [] })); expect(await loadProgress(s)).toEqual(emptyProgress()); // the old synthetic-only schema is discarded, not migrated
     await saveProgress(s, p); await clearProgress(s); expect(await loadProgress(s)).toEqual(emptyProgress());
+  });
+  it("still loads v2 data saved before the 'completed' field existed, defaulting it to empty rather than discarding the whole record", async () => {
+    const s = mem();
+    s.data.set("icu.progress.v2", JSON.stringify({ v: 2, bookmarks: ["skills:SK-02"], viewed: ["D01-T19"], ticks: {}, cases: {}, practice: [], sessions: {} }));
+    const loaded = await loadProgress(s);
+    expect(loaded.bookmarks).toEqual(["skills:SK-02"]);
+    expect(loaded.completed).toEqual([]);
   });
 });

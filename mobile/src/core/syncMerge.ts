@@ -2,7 +2,7 @@
 // on sign-in (so progress made on another device appears here too). Kept separate from the React
 // hook (hooks/useProgressSync.ts) so it is unit-testable without React or a Supabase client.
 import type { BookmarkKind, Progress, SessionRecord } from "./progress";
-import type { BookmarkRow, SessionRow } from "@icu/schemas/working-progress";
+import type { BookmarkRow, LessonRow, SessionRow } from "@icu/schemas/working-progress";
 
 /** Resolves each remote bookmark row's module_key to a local "kind:key" string via a key->kind lookup (built from the catalog). Rows for an unknown key are dropped rather than guessed. */
 export function mergeRemoteBookmarks(local: Progress, remote: BookmarkRow[], kindOf: Map<string, BookmarkKind>): Progress {
@@ -28,4 +28,11 @@ export function mergeRemoteSessions(local: Progress, remote: SessionRow[]): Prog
     changed = true;
   }
   return changed ? { ...local, sessions } : local;
+}
+
+/** Unions remote-complete lesson rows into local.completed. A remote row with completed=false is not unmarked locally (no authoritative "last writer wins" timestamp exists for this field): the merge only ever adds, consistent with every other merge here never destroying local-only progress. */
+export function mergeRemoteCompleted(local: Progress, remote: LessonRow[]): Progress {
+  const merged = new Set(local.completed);
+  for (const row of remote) if (row.completed) merged.add(row.module_key);
+  return merged.size === local.completed.length ? local : { ...local, completed: [...merged] };
 }
