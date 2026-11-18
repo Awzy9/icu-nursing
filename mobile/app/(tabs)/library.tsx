@@ -1,19 +1,33 @@
-import { equipment, medications, skills } from "../../src/core/content";
-import { localized } from "../../src/core/i18n";
-import { H1, H2, NavCard, Screen } from "../../src/ui/components";
+import { useState } from "react";
+import { useLocalSearchParams } from "expo-router";
+import { ScrollView, View } from "react-native";
+import { Chip, H1, NavCard, RemoteGate, Screen } from "../../src/ui/components";
+import { space } from "../../src/ui/theme";
 import { useApp } from "../../src/state/app";
+import { useCatalogList } from "../../src/hooks/useRemoteContent";
+
+const TYPES = ["topics", "skills", "medications", "equipment", "cases"] as const;
+const ROUTE: Record<string, string> = { topics: "/topics/", skills: "/skills/", medications: "/medications/", equipment: "/equipment/", cases: "/cases/" };
 
 export default function Library() {
-  const { t, locale } = useApp();
+  const { t, rtl } = useApp();
+  const params = useLocalSearchParams<{ type?: string }>();
+  const [type, setType] = useState<string>(TYPES.includes(params.type as (typeof TYPES)[number]) ? params.type! : "topics");
+  const list = useCatalogList(type);
+
   return (
     <Screen>
       <H1>{t("library.title")}</H1>
-      <H2>{t("equipment.title")}</H2>
-      {equipment.map((m) => <NavCard key={m.code} href={{ pathname: "/equipment/[code]", params: { code: m.code } }} title={localized(m.title, locale)} body={localized(m.summary, locale)} badge={t("common.sample")} />)}
-      <H2>{t("skills.title")}</H2>
-      {skills.map((s) => <NavCard key={s.code} href={{ pathname: "/skills/[code]", params: { code: s.code } }} title={localized(s.title, locale)} body={localized(s.summary, locale)} badge={t("common.sample")} />)}
-      <H2>{t("medications.title")}</H2>
-      {medications.map((m) => <NavCard key={m.code} href={{ pathname: "/medications/[code]", params: { code: m.code } }} title={localized(m.name, locale)} body={localized(m.drugClass, locale)} badge={t("common.sample")} />)}
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ direction: rtl ? "rtl" : "ltr" }}>
+        <View style={{ flexDirection: "row", gap: space.sm }}>
+          {TYPES.map((candidate) => <Chip key={candidate} label={t(`type.${candidate}`)} selected={type === candidate} onPress={() => setType(candidate)} />)}
+        </View>
+      </ScrollView>
+      <RemoteGate state={list} onRetry={list.refresh} empty={(items) => items.length === 0}>
+        {(items) => items.map((entry) => (
+          <NavCard key={entry.key} href={`${ROUTE[type]}${entry.key}`} title={entry.title} body={entry.category} />
+        ))}
+      </RemoteGate>
     </Screen>
   );
 }

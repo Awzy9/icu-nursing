@@ -1,61 +1,120 @@
+import { useState } from "react";
 import { Stack, useLocalSearchParams } from "expo-router";
-import React, { useState } from "react";
-import { View } from "react-native";
-import { findCase } from "../../src/core/content";
-import { caseSummary, choose, currentStep, startCase, type CaseRun, type Reveal } from "../../src/core/engines";
-import { localized, localizedList } from "../../src/core/i18n";
-import { recordCase } from "../../src/core/progress";
+import { Text, View } from "react-native";
+import { scoreTenths } from "../../src/core/engines";
+import { monitorReadings } from "../../src/core/monitorReadings";
+import { discardSession, getSession, recordCase, saveSession } from "../../src/core/progress";
+import { glucoseMeterVisual } from "../../src/content/visuals";
+import { BookmarkButton, Button, Card, H2, P, RemoteGate, Screen } from "../../src/ui/components";
+import { VisualPhoto } from "../../src/ui/visual-photo";
+import { space, type } from "../../src/ui/theme";
 import { useApp } from "../../src/state/app";
-import { BookmarkButton, BulletList, Button, Callout, Card, H1, H2, P, Screen } from "../../src/ui/components";
+import { useCaseVisuals, useCatalogEntry } from "../../src/hooks/useRemoteContent";
 
-export default function CaseRunner() {
+function Monitor({ label, value, suffix }: { label: string; value: number; suffix: string }) {
+  return (
+    <View style={{ backgroundColor: "#0f172a", borderRadius: 12, padding: space.md, marginBottom: space.sm }}>
+      <Text style={[type.small, { color: "#e2e8f0" }]}>{label}</Text>
+      <Text style={{ color: "#67e8f9", fontSize: 28, fontWeight: "700", writingDirection: "ltr" }}>{value}{suffix}</Text>
+    </View>
+  );
+}
+
+export default function CaseScreen() {
   const { code } = useLocalSearchParams<{ code: string }>();
-  const { t, locale, update } = useApp();
-  const c = findCase(String(code));
-  const [run, setRun] = useState<CaseRun | null>(() => (c ? startCase(c, Date.now() % 100000) : null));
-  const [reveal, setReveal] = useState<Reveal | null>(null);
-  if (!c || !run) return <Screen><P>{t("common.notFound")}</P></Screen>;
+  const { t, locale, progress, update } = useApp();
+  const entry = useCatalogEntry(code);
+  const caseVisuals = useCaseVisuals();
+  const [position, setPosition] = useState<number | undefined>();
+  const [points, setPoints] = useState(0);
+  const [choice, setChoice] = useState<number | null>(null);
+  const [revealed, setRevealed] = useState(false);
+  const [done, setDone] = useState(false);
+  const [resumed, setResumed] = useState(false);
 
-  const decide = (index: number) => { const r = choose(c, run, index); setRun(r.run); setReveal(r.reveal); if (r.run.done) update((p) => recordCase(p, c.code, caseSummary(c, r.run).scoreTenths, new Date().toISOString())); };
-  const next = () => setReveal(null);
-  const again = () => { setRun(startCase(c, (Date.now() + 7) % 100000)); setReveal(null); };
-  const summary = run.done && !reveal ? caseSummary(c, run) : null;
+  const existingSession = code ? getSession(progress, code) : undefined;
 
   return (
     <Screen>
-      <Stack.Screen options={{ title: localized(c.title, locale) }} />
-      <H1>{localized(c.title, locale)}</H1>
-      <BookmarkButton itemKey={`case:${c.code}`} />
-      {reveal ? (
-        <>
-          <H2>{t("cases.consequence")}</H2>
-          <Card><P>{reveal.option.consequence ? localized(reveal.option.consequence, locale) : ""}</P></Card>
-          <H2>{t("cases.feedback")}</H2>
-          <Card><P>{localized(reveal.option.feedback, locale)}</P><P small muted>{t("cases.scopes")}: {t(`scope.${reveal.option.scope}`)}</P></Card>
-          <Button label={reveal.finished ? t("cases.summary") : t("cases.continue")} onPress={next} />
-        </>
-      ) : summary ? (
-        <>
-          <H2>{t("cases.summary")}</H2>
-          <Card><P>{t("cases.score", { score: Math.round(summary.scoreTenths / 10) })}</P><P small muted>{t("cases.scoreNote")}</P>{summary.revisit.length ? <P>{t("cases.revisit", { steps: summary.revisit.join(", ") })}</P> : null}</Card>
-          {summary.debrief ? <><H2>{t("cases.debrief")}</H2><BulletList items={localizedList(summary.debrief, locale)} /></> : null}
-          <View style={{ gap: 8 }}>{Object.entries(summary.scopeCounts).map(([s, n]) => <P key={s} small muted>{`${t(`scope.${s}`)}: ${n}`}</P>)}</View>
-          <Button label={t("cases.again")} variant="outline" onPress={again} />
-        </>
-      ) : (
-        (() => {
-          const step = currentStep(c, run);
+      <RemoteGate state={entry} onRetry={entry.refresh}>
+        {(data) => {
+          const scenario = data.scenario;
+          if (!scenario) return <P>{t("common.notFound")}</P>;
+          const showGlucoseMeter = code === "SC-10";
+          const numericMonitorCases = caseVisuals.status === "ready" ? caseVisuals.data.numericMonitor : [];
+          const showNumericMonitor = numericMonitorCases.includes(code ?? "");
+
+          const pos = position ?? scenario.steps[0]!.position;
+          const step = scenario.steps.find((s) => s.position === pos)!;
+          const option = choice === null ? undefined : step.options[choice];
+          const version = JSON.stringify(scenario.steps.map((s) => ({ p: s.position, n: s.options.length })));
+
+          if (existingSession && !resumed && !done && position === undefined && existingSession.version === version && !existingSession.finished) {
+            const stepIndex = scenario.steps.findIndex((s) => s.position === existingSession.position);
+            return (
+              <Card>
+                <H2>{t("cases.resume")}</H2>
+                <P muted>{t("cases.resumeBody")}</P>
+                <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
+                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); }} />
+                <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); update((p) => discardSession(p, code!)); }} />
+              </Card>
+            );
+          }
+
+          if (done) {
+            return (
+              <Card>
+                <H2>{t("cases.summary")}</H2>
+                {scenario.takeaways.map((item, i) => <P key={i}>{`• ${item}`}</P>)}
+                <Button label={t("cases.again")} variant="outline" onPress={() => { update((p) => discardSession(p, code!)); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); }} />
+              </Card>
+            );
+          }
+
+          const decide = () => { if (choice !== null) setRevealed(true); };
+          const advance = () => {
+            if (!option) return;
+            const newPoints = points + option.points;
+            setPoints(newPoints);
+            if (option.next == null) {
+              const tenths = scoreTenths(newPoints, scenario.steps.length * 2);
+              update((p) => recordCase(discardSession(p, code!), code!, tenths, new Date().toISOString()));
+              setDone(true);
+            } else {
+              update((p) => saveSession(p, code!, { kind: "scenario", version, position: option.next!, score: newPoints, finished: false, at: new Date().toISOString() }));
+              setPosition(option.next);
+            }
+            setChoice(null);
+            setRevealed(false);
+          };
+
           return (
             <>
-              <P small muted>{t("cases.step", { n: step.position, total: step.total })}</P>
-              <Card><P>{localized(step.info, locale)}</P>{step.observations.map((o) => <P key={o.key} small muted>{`${localized(o.label, locale)}: ${o.value}${o.unit ? ` ${o.unit}` : ""}`}</P>)}</Card>
-              <H2>{localized(step.prompt, locale)}</H2>
-              {step.options.map((o) => <Button key={o.index} label={localized(o.text, locale)} variant="outline" onPress={() => decide(o.index)} />)}
+              <Stack.Screen options={{ title: data.title }} />
+              <P muted small>{t("app.englishOnly")}</P>
+              <Text accessibilityRole="header" style={{ fontSize: 20, fontWeight: "700", writingDirection: "ltr" }}>{data.title}</Text>
+              <BookmarkButton itemKey={`cases:${data.key}`} />
+              {showGlucoseMeter ? <VisualPhoto visual={glucoseMeterVisual} /> : null}
+              {showNumericMonitor ? monitorReadings(step.observations).map((r) => <Monitor key={r.metric.key} label={r.metric.name[locale === "ar" ? 1 : 0]} value={r.value} suffix={r.metric.suffix} />) : null}
+              <P small muted>{t("cases.step", { n: scenario.steps.findIndex((s) => s.position === pos) + 1, total: scenario.steps.length })}</P>
+              <Card><P>{step.info}</P></Card>
+              <H2>{step.prompt}</H2>
+              {step.options.map((o, i) => (
+                <Button key={i} label={o.text} variant={choice === i ? "primary" : "outline"} disabled={revealed} onPress={() => setChoice(i)} />
+              ))}
+              {revealed && option ? (
+                <Card>
+                  <P>{t("cases.feedback")}</P>
+                  <P>{option.feedback}</P>
+                  {option.consequence ? <P small muted>{option.consequence}</P> : null}
+                </Card>
+              ) : null}
+              <Button label={revealed ? (option?.next == null ? t("cases.summary") : t("cases.continue")) : t("cases.choose")} disabled={choice === null && !revealed} onPress={revealed ? advance : decide} />
             </>
           );
-        })()
-      )}
-      <Callout>{t("cases.scoreNote")}</Callout>
+        }}
+      </RemoteGate>
     </Screen>
   );
 }

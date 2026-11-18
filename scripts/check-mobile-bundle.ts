@@ -1,19 +1,28 @@
-// Verifies the exported native bundle: it must contain the synthetic fixtures and NOTHING from the unpublished clinical drafts or any secret.
+// Verifies the exported native bundle: it must contain NOTHING from the internal content-ops
+// tooling (audit reports, the internal draft index's own metadata) or any secret. It is no
+// longer a "synthetic content only" check: the app now fetches real, published lesson content
+// (the same content the website shows every visitor, including its honest draft/review labels)
+// over the content API at runtime, so real content codes and clinical terms legitimately never
+// appear in the *static* bundle text in the first place - this scanner only needs to catch an
+// accidental leak of something that was never meant to ship: internal file paths, the content
+// team's own audit metadata, or a credential.
 // Usage: tsx scripts/check-mobile-bundle.ts <path to the export folder>   (CI runs `expo export` first).
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
-import draftIndex from "../src/content/draft-index.json";
 
 export interface BundleFinding { problem: string }
 export function scanBundle(text: string): BundleFinding[] {
   const out: BundleFinding[] = [];
-  const lower = text.toLowerCase();
-  if (!text.includes("SYN-EQ-001") || !text.includes("SYN-CASE-001")) out.push({ problem: "the synthetic fixtures are missing from the bundle" });
-  for (const m of text.matchAll(/\b(D\d\d-T\d\d|SK-\d\d|MD-\d\d|SC-\d\d|EQ-\d\d|XQ-\d\d)\b/g)) out.push({ problem: `draft id ${m[1]} found` });
-  for (const e of draftIndex.entries) if (e.title.length > 14 && lower.includes(e.title.toLowerCase())) out.push({ problem: `draft title found: ${e.title}` });
   for (const needle of ["content/drafts", "draft-index", "draft-history", "service_role", "SERVICE_ROLE", "LIVE_SERVICE", "SUPABASE_SERVICE"]) if (text.includes(needle)) out.push({ problem: `forbidden string: ${needle}` });
+  // The internal draft-index.json's own field names (content-ops audit metadata: source licence
+  // class, whether a draft has had formal clinical review, unresolved required-source counts,
+  // decision-graph spec level) - never meant to ship in the app, distinct from the lesson
+  // content itself, which is legitimately fetched. "evidence_status" is deliberately NOT in this
+  // list: @icu/schemas/skills.ts and medications.ts (shared, legitimately bundled schemas used
+  // by src/api/rpc.ts since Phase 13) use that same field name for an unrelated, already-public
+  // concept, so it is not a reliable signal of a content-ops leak.
+  for (const needle of ["licence_class", "clinically_reviewed", "required_sources", "spec_level"]) if (text.includes(needle)) out.push({ problem: `internal content-audit field leaked: ${needle}` });
   if (/eyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}/.test(text)) out.push({ problem: "a JWT-like token is embedded in the bundle" });
-  for (const drug of ["norepinephrine", "propofol", "midazolam", "amiodarone"]) if (lower.includes(drug)) out.push({ problem: `clinical drug name found: ${drug}` });
   return out;
 }
 const walk = (dir: string): string[] => readdirSync(dir).flatMap((f) => { const p = path.join(dir, f); return statSync(p).isDirectory() ? walk(p) : [p]; });

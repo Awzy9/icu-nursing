@@ -91,3 +91,16 @@ export const labDatasetResponseSchema = z.object({
   items: z.array(z.record(z.string(), z.unknown())).min(1),
 });
 export type LabDatasetResponse = z.infer<typeof labDatasetResponseSchema>;
+
+// content/working-case-visuals.json's shape: which case steps reuse an equipment photo, an ECG
+// trace, the numeric monitor display or a comparison panel.
+export const caseVisualsSchema = z.object({
+  equipment: z.record(z.string(), z.string()),
+  rhythm: z.object({ caseKey: z.string(), positions: z.array(z.number().int()), exerciseKey: z.string() }).optional(),
+  numericMonitor: z.array(z.string()),
+  neuroComparison: z.string().optional(),
+  perfusionPanel: z.array(z.string()),
+});
+export type CaseVisuals = z.infer<typeof caseVisualsSchema>;
+export const caseVisualsResponseSchema = z.object({ version: z.string(), data: caseVisualsSchema });
+export type CaseVisualsResponse = z.infer<typeof caseVisualsResponseSchema>;

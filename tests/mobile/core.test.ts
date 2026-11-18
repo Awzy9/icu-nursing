@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { cases, equipment, findEquipment, medications, questions, skills } from "../../mobile/src/core/content";
 import { isRtl, localized, localizedList, messages, translate, usedFallback } from "../../mobile/src/core/i18n";
 import { answer, caseSummary, choose, currentStep, isCorrect, practiceResult, scoreTenths as mobileScore, seededOrder, startCase, startPractice } from "../../mobile/src/core/engines";
-import { clearProgress, emptyProgress, loadProgress, markViewed, progressSchema, recordCase, recordPractice, saveProgress, toggleBookmark, toggleTick, viewedCount, type KeyValueStore } from "../../mobile/src/core/progress";
+import { clearProgress, discardSession, emptyProgress, getSession, loadProgress, markViewed, progressSchema, recordCase, recordPractice, saveProgress, saveSession, toggleBookmark, toggleTick, viewedCount, type KeyValueStore } from "../../mobile/src/core/progress";
 import { scoreTenths as webScore } from "@/lib/question-bank/score";
 import { createCaseFixtureService } from "@/lib/cases/fixture-service";
 import { loadCaseFixtures } from "@/lib/cases/fixtures";
@@ -89,21 +89,40 @@ describe("question practice (local)", () => {
 });
 
 describe("local progress", () => {
-  it("bookmarks, viewed parts, ticks, cases and practice update immutably and respect limits", () => {
+  it("bookmarks, viewed lessons, ticks, cases and practice update immutably and respect limits", () => {
     let p = emptyProgress(); const before = JSON.stringify(p);
-    p = toggleBookmark(p, "equipment:SYN-EQ-001"); expect(p.bookmarks).toEqual(["equipment:SYN-EQ-001"]); p = toggleBookmark(p, "equipment:SYN-EQ-001"); expect(p.bookmarks).toEqual([]);
-    for (const part of ["a", "b", "c", "d", "e", "f", "g", "h", "i"]) p = markViewed(p, "SYN-EQ-001", part);
-    expect(p.viewed["SYN-EQ-001"]).toHaveLength(8); expect(viewedCount(p)).toBe(8);
-    p = toggleTick(p, "SYN-SKILL-001", 2); p = toggleTick(p, "SYN-SKILL-001", 0); expect(p.ticks["SYN-SKILL-001"]).toEqual([0, 2]); p = toggleTick(p, "SYN-SKILL-001", 2); expect(p.ticks["SYN-SKILL-001"]).toEqual([0]);
-    p = recordCase(p, "SYN-CASE-001", 500, "t"); p = recordCase(p, "SYN-CASE-001", 300, "t2"); expect(p.cases["SYN-CASE-001"]!.scoreTenths).toBe(500);
-    for (let i = 0; i < 60; i++) p = recordPractice(p, 1, 2, "t"); expect(p.practice).toHaveLength(50);
+    p = toggleBookmark(p, "equipment:EQ-01"); expect(p.bookmarks).toEqual(["equipment:EQ-01"]); p = toggleBookmark(p, "equipment:EQ-01"); expect(p.bookmarks).toEqual([]);
+    for (const key of ["D01-T19", "SK-18", "D01-T19"]) p = markViewed(p, key);
+    expect(p.viewed).toEqual(["D01-T19", "SK-18"]); expect(viewedCount(p)).toBe(2);
+    p = toggleTick(p, "SK-01", 2); p = toggleTick(p, "SK-01", 0); expect(p.ticks["SK-01"]).toEqual([0, 2]); p = toggleTick(p, "SK-01", 2); expect(p.ticks["SK-01"]).toEqual([0]);
+    p = recordCase(p, "SC-01", 500, "t"); p = recordCase(p, "SC-01", 300, "t2"); expect(p.cases["SC-01"]!.scoreTenths).toBe(500);
+    for (let i = 0; i < 110; i++) p = recordPractice(p, 1, 2, "t"); expect(p.practice).toHaveLength(100);
     expect(JSON.stringify(emptyProgress())).toBe(before); expect(progressSchema.safeParse(p).success).toBe(true);
   });
-  it("persists through a storage adapter and survives corrupt or hostile stored data", async () => {
-    const s = mem(); const p = toggleBookmark(emptyProgress(), "skill:SYN-SKILL-002"); await saveProgress(s, p);
+  it("saves, resumes and discards an in-progress quiz or case session", () => {
+    let p = emptyProgress();
+    expect(getSession(p, "D01-T19")).toBeUndefined();
+    p = saveSession(p, "D01-T19", { kind: "quiz", version: "v1", position: 2, score: 0, finished: false, at: "t1" });
+    expect(getSession(p, "D01-T19")).toEqual({ kind: "quiz", version: "v1", position: 2, score: 0, finished: false, at: "t1" });
+    p = saveSession(p, "SC-01", { kind: "scenario", version: "v1", position: 1, score: 0, finished: false, at: "t2" });
+    expect(Object.keys(p.sessions).sort()).toEqual(["D01-T19", "SC-01"]);
+    // finishing a session clears it rather than leaving a stale "finished" entry to resume
+    p = saveSession(p, "D01-T19", { kind: "quiz", version: "v1", position: 5, score: 4, finished: true, at: "t3" });
+    expect(getSession(p, "D01-T19")).toBeUndefined();
+    p = discardSession(p, "SC-01");
+    expect(p.sessions).toEqual({});
+    expect(discardSession(p, "NOT-THERE")).toBe(p); // no-op returns the same reference
+  });
+  it("rejects a bookmark key with an unknown kind or an invalid catalog key shape", () => {
+    expect(progressSchema.safeParse({ ...emptyProgress(), bookmarks: ["equipment:EQ-01"] }).success).toBe(true);
+    expect(progressSchema.safeParse({ ...emptyProgress(), bookmarks: ["notakind:EQ-01"] }).success).toBe(false);
+    expect(progressSchema.safeParse({ ...emptyProgress(), bookmarks: ["equipment:syn-eq-001"] }).success).toBe(false); // lowercase real keys never occur
+  });
+  it("persists through a storage adapter and survives corrupt, hostile or old-schema stored data", async () => {
+    const s = mem(); const p = toggleBookmark(emptyProgress(), "skills:SK-02"); await saveProgress(s, p);
     expect(await loadProgress(s)).toEqual(p);
-    s.data.set("icu.progress.v1", "{not json"); expect(await loadProgress(s)).toEqual(emptyProgress());
-    s.data.set("icu.progress.v1", JSON.stringify({ v: 1, bookmarks: ["equipment:EQ-01"], viewed: {}, ticks: {}, cases: {}, practice: [] })); expect(await loadProgress(s)).toEqual(emptyProgress()); // a clinical-draft key is refused
+    s.data.set("icu.progress.v2", "{not json"); expect(await loadProgress(s)).toEqual(emptyProgress());
+    s.data.set("icu.progress.v1", JSON.stringify({ v: 1, bookmarks: ["equipment:SYN-EQ-001"], viewed: {}, ticks: {}, cases: {}, practice: [] })); expect(await loadProgress(s)).toEqual(emptyProgress()); // the old synthetic-only schema is discarded, not migrated
     await saveProgress(s, p); await clearProgress(s); expect(await loadProgress(s)).toEqual(emptyProgress());
   });
 });

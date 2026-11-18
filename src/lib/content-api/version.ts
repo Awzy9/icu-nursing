@@ -16,8 +16,12 @@ export function contentVersion(): string {
   return hash;
 }
 
-// Specialized lab datasets live as separate JSON files alongside the catalog. Whitelisted by
-// exact name only - never accept an arbitrary filename from the request path.
+// Specialized lab datasets live as separate JSON files alongside the catalog, each a flat array
+// of records. Whitelisted by exact name only - never accept an arbitrary filename from the
+// request path. working-case-visuals.json and working-crrt.json are structured lookup/config
+// objects, not arrays of records, so they are not served through this array-shaped list (see
+// GET /api/content/case-visuals; working-crrt.json has no endpoint yet - it is only needed once
+// a native CRRT lab screen is built, out of scope for this batch).
 export const LAB_DATASETS: Record<string, string> = {
   ecg: "working-ecg.json",
   abg: "working-abg.json",
@@ -27,11 +31,16 @@ export const LAB_DATASETS: Record<string, string> = {
   transfusion: "working-transfusion.json",
   aline: "working-aline.json",
   "infusion-cases": "working-infusion-cases.json",
-  crrt: "working-crrt.json",
   waveforms: "working-waveforms.json",
-  "case-visuals": "working-case-visuals.json",
   paths: "working-paths.json",
 };
+
+let cachedCaseVisuals: unknown;
+export function loadCaseVisuals(): unknown {
+  if (cachedCaseVisuals) return cachedCaseVisuals;
+  cachedCaseVisuals = JSON.parse(readFileSync(path.join(process.cwd(), "content", "working-case-visuals.json"), "utf8"));
+  return cachedCaseVisuals;
+}
 
 const labCache = new Map<string, unknown[]>();
 export function loadLabDataset(name: string): unknown[] | undefined {

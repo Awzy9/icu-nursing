@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import { catalogEntryResponseSchema, catalogListResponseSchema, labDatasetResponseSchema } from "@icu/schemas/working-content";
+import { caseVisualsResponseSchema, catalogEntryResponseSchema, catalogListResponseSchema, labDatasetResponseSchema } from "@icu/schemas/working-content";
 
 const ORIGINAL_EDITION = process.env.CONTENT_EDITION;
 
@@ -16,6 +16,8 @@ describe("content API: disabled when the working edition is off", () => {
     expect((await entryGet(new Request("http://x"), { params: Promise.resolve({ key: "D01-T19" }) })).status).toBe(404);
     const { GET: labGet } = await import("@/app/api/content/labs/[name]/route");
     expect((await labGet(new Request("http://x"), { params: Promise.resolve({ name: "ecg" }) })).status).toBe(404);
+    const { GET: caseVisualsGet } = await import("@/app/api/content/case-visuals/route");
+    expect(caseVisualsGet().status).toBe(404);
   });
 });
 
@@ -94,12 +96,29 @@ describe("content API: enabled", () => {
     expect((await GET(new Request("http://x"), { params: Promise.resolve({ name: "working-ecg" }) })).status).toBe(404);
   });
 
-  it("every whitelisted lab name actually resolves to a real file", async () => {
+  it("every whitelisted lab name actually resolves to a real file, and its payload is a non-empty array (not case-visuals' lookup object)", async () => {
     const { GET } = await import("@/app/api/content/labs/[name]/route");
     const { LAB_DATASETS } = await import("@/lib/content-api/version");
     for (const name of Object.keys(LAB_DATASETS)) {
       const r = await GET(new Request("http://x"), { params: Promise.resolve({ name }) });
       expect(r.status, `lab dataset "${name}"`).toBe(200);
+      const body = await r.json();
+      labDatasetResponseSchema.parse(body);
     }
+  });
+
+  it("GET /api/content/case-visuals returns the lookup object (not array-shaped, served separately from /labs/[name])", async () => {
+    const { GET } = await import("@/app/api/content/case-visuals/route");
+    const r = GET();
+    expect(r.status).toBe(200);
+    const body = await r.json();
+    const parsed = caseVisualsResponseSchema.parse(body);
+    expect(parsed.data.numericMonitor.length).toBeGreaterThan(0);
+    expect(parsed.data.equipment["SC-10"]).toBe("MD-15");
+  });
+
+  it("case-visuals is not reachable through the array-shaped labs whitelist", async () => {
+    const { GET } = await import("@/app/api/content/labs/[name]/route");
+    expect((await GET(new Request("http://x"), { params: Promise.resolve({ name: "case-visuals" }) })).status).toBe(404);
   });
 });

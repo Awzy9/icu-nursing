@@ -1,8 +1,9 @@
 import React from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View, type StyleProp, type ViewStyle } from "react-native";
+import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View, type StyleProp, type ViewStyle } from "react-native";
 import { Link, type Href } from "expo-router";
 import { toggleBookmark } from "../core/progress";
 import { useApp } from "../state/app";
+import type { FetchState } from "../hooks/useRemoteContent";
 import { MIN_TARGET, radius, space, type } from "./theme";
 
 /** Page container: scrolls, applies the language direction to everything inside, and carries the sample-content notice. */
@@ -60,6 +61,14 @@ export function Chip({ label, selected, onPress }: { label: string; selected?: b
   );
 }
 export function BulletList({ items }: { items: string[] }) { return <View style={{ gap: space.xs }}>{items.map((t, i) => <P key={i}>{`• ${t}`}</P>)}</View>; }
+/** Renders the honest loading / offline (with retry) / content states for a useRemoteContent hook, instead of ever showing stale or placeholder data silently. */
+export function RemoteGate<T>({ state, onRetry, empty, children }: { state: FetchState<T>; onRetry?: () => void; empty?: (data: T) => boolean; children: (data: T, fromCache: boolean) => React.ReactNode }) {
+  const { t, palette } = useApp();
+  if (state.status === "loading") return <View style={{ paddingVertical: space.xl, alignItems: "center" }}><ActivityIndicator color={palette.primary} /><P muted>{t("common.loading")}</P></View>;
+  if (state.status === "offline") return <Card><P>{t("common.offline")}</P>{onRetry ? <Button label={t("common.retry")} variant="outline" onPress={onRetry} /> : null}</Card>;
+  if (empty?.(state.data)) return <Card><P muted>{t("common.empty")}</P></Card>;
+  return <>{state.fromCache ? <Callout tone="info">{t("common.cached")}</Callout> : null}{children(state.data, state.fromCache)}</>;
+}
 export function BookmarkButton({ itemKey }: { itemKey: string }) {
   const { progress, update, t } = useApp();
   const on = progress.bookmarks.includes(itemKey);
