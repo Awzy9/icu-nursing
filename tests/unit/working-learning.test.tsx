@@ -101,6 +101,18 @@ describe("interactive learning",()=>{
    expect(within(comparison).getByText("Lower than last check")).toBeVisible();
    expect(screen.queryByText("Still lower")).not.toBeInTheDocument();
  });
+ it("compares circulation observations only with previously visited steps",()=>{
+   const entry=buildWorkingContent().find(item=>item.key==="SC-02")!;
+   render(<ScenarioPlayer locale="en" moduleKey={entry.key} title={entry.title} scenario={entry.scenario!}/>);
+   expect(screen.getByText("Falling over the last hour")).toBeVisible();
+   expect(screen.queryByText("Lower again")).not.toBeInTheDocument();
+   fireEvent.click(screen.getAllByRole("radio")[0]!);
+   fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+   fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+   expect(screen.getByText("Lower again")).toBeVisible();
+   expect(screen.getByText("Falling over the last hour")).toBeVisible();
+   expect(screen.queryByText("Steadier")).not.toBeInTheDocument();
+ });
  it("does not disclose exercise feedback before checking",()=>{
    render(<PracticePlayer locale="en" exercise={{kind:"choice",setup:"Setting",options:[{id:"a",text:"Choice A",correct:true,feedback:"Authored feedback"}]}}/>);
    expect(screen.queryByText("Authored feedback")).not.toBeInTheDocument();

@@ -25,5 +25,10 @@
     "SC-11",
     "SC-14"
   ],
-  "neuroComparison": "SC-20"
+  "neuroComparison": "SC-20",
+  "perfusionPanel": [
+    "SC-01",
+    "SC-02",
+    "SC-16"
+  ]
 }
