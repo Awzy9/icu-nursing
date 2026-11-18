@@ -522,6 +522,30 @@ const capnographySetup: Visual = {
   license: "BY-SA 4.0",
 };
 
+const nonrebreatherMask: Visual = {
+  file: "nonrebreather-mask",
+  width: 600,
+  height: 800,
+  alt: ["A clear oxygen mask with a reservoir bag attached below it.", "قناع أكسجين شفاف يتصل به كيس خزان من الأسفل."],
+  label: ["Non-rebreather oxygen mask", "قناع أكسجين يمنع إعادة الاستنشاق"],
+  detail: ["The reservoir bag hangs below the mask. The oxygen supply tubing runs off to the side.", "يتدلى كيس الخزان أسفل القناع، ويمتد أنبوب إمداد الأكسجين إلى الجانب."],
+  source: "Non_Rebreather_Mask.JPG",
+  credit: "ICUnurses",
+  license: "BY-SA 4.0",
+};
+
+const cuffedTracheostomy: Visual = {
+  file: "tracheostomy-cuffed",
+  width: 900,
+  height: 675,
+  alt: ["A tracheostomy tube with an inflated cuff and a blue pilot balloon.", "أنبوب فغر الرغامى بكُفّة منفوخة وبالون مؤشر أزرق."],
+  label: ["Cuffed tracheostomy tube", "أنبوب فغر الرغامى المزود بكُفّة"],
+  detail: ["The inflated cuff surrounds the tube near its tip. A thin inflation line connects it to the blue pilot balloon.", "تحيط الكُفّة المنفوخة بالأنبوب قرب طرفه، ويصلها خط نفخ رفيع ببالون المؤشر الأزرق."],
+  source: "Tracheostomy_tube_cuffed.jpg",
+  credit: "Tenbergen",
+  license: "BY-SA 4.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -647,6 +671,8 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
     <>
       <EquipmentPhoto visual={visual} locale={locale} />
       {showVenturiMask && <EquipmentPhoto visual={venturiMask} locale={locale} />}
+      {moduleKey === "SK-08" && <EquipmentPhoto visual={nonrebreatherMask} locale={locale} />}
+      {moduleKey === "SK-05" && <EquipmentPhoto visual={cuffedTracheostomy} locale={locale} />}
       {moduleKey === "D01-T03" && <EquipmentPhoto visual={highFlowCannula} locale={locale} />}
       {moduleKey === "SK-21" && <EquipmentPhoto visual={healthcarePpe} locale={locale} />}
       {moduleKey === "D04-T03" && <EquipmentPhoto visual={bladderUltrasound} locale={locale} />}
