@@ -1,0 +1,14 @@
+{
+  "equipment": {
+    "SC-04": "EQ-02",
+    "SC-06": "SK-04",
+    "SC-14": "SK-09",
+    "SC-15": "EQ-06",
+    "SC-18": "EQ-07"
+  },
+  "rhythm": {
+    "caseKey": "SC-12",
+    "positions": [1, 2],
+    "exerciseKey": "ECG-05"
+  }
+}

@@ -52,6 +52,20 @@ describe("interactive learning",()=>{
    expect(screen.getByText("Escalate urgently")).toBeVisible();
    fireEvent.click(screen.getByRole("button",{name:"Finish and reflect"}));expect(screen.getByText("Scenario complete")).toBeVisible();
  });
+ it("shows the arrhythmia tracing before the decision and equipment images after feedback",()=>{
+   const entries=buildWorkingContent();
+   const rhythm=entries.find(entry=>entry.key==="SC-12")!;
+   render(<ScenarioPlayer locale="en" moduleKey={rhythm.key} title={rhythm.title} scenario={rhythm.scenario!}/>);
+   expect(screen.getByText("Illustrative wide-complex rhythm strip")).toBeVisible();
+   cleanup();
+
+   const ventilator=entries.find(entry=>entry.key==="SC-04")!;
+   render(<ScenarioPlayer locale="en" moduleKey={ventilator.key} title={ventilator.title} scenario={ventilator.scenario!}/>);
+   expect(screen.queryByRole("img")).not.toBeInTheDocument();
+   fireEvent.click(screen.getAllByRole("radio")[0]!);
+   fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+   expect(screen.getByRole("img",{name:/Ventilator on a wheeled stand/i})).toBeVisible();
+ });
  it("does not disclose exercise feedback before checking",()=>{
    render(<PracticePlayer locale="en" exercise={{kind:"choice",setup:"Setting",options:[{id:"a",text:"Choice A",correct:true,feedback:"Authored feedback"}]}}/>);
    expect(screen.queryByText("Authored feedback")).not.toBeInTheDocument();
