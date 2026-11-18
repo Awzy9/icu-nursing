@@ -132,20 +132,20 @@ B. Sinus bradycardia, because a slow sinus rhythm shows a wavy baseline and no d
 C. Atrial fibrillation, because this is the pattern the textbook names as the hallmark of that rhythm.
 D. Asystole, because the absence of P waves with an irregular baseline is the pattern of a flat line.
 **Answer: C.**
-**Why correct:** Irregularly irregular narrow QRS complexes with no distinct P waves or a wavy baseline are the hallmark of atrial fibrillation in the textbook.
+**Why correct:** Irregularly irregular R–R intervals and no distinct, repeating P waves support atrial fibrillation. The baseline may show fibrillatory waves.
 **Why not A:** Normal sinus rhythm is regular with normal P waves.
 **Why not B:** Sinus bradycardia is a regular slow rhythm.
 **Why not D:** Asystole is a flat line, with no atrial or ventricular activity, so it does not fit this pattern.
 
-**Q3 (judgment).** A patient on the monitor is unresponsive and the rhythm shows no organised complexes. What is the correct priority?
+**Q3 (judgment).** An adult on the monitor is unresponsive and only gasping. The trace shows no organised complexes. What is the correct priority?
 A. Print a strip and ask the doctor to confirm the rhythm first, before anyone starts any resuscitation measures.
-B. Check for responsiveness and a pulse, call for help and start resuscitation according to the unit's procedure.
+B. Call for help and activate the arrest response. Check for a pulse for no more than 10 seconds and start CPR if there is no definite pulse.
 C. Check the electrode contact for two minutes before doing anything else, in case the trace is wrong.
 D. Take a full set of observations and then decide what to do about the rhythm that the monitor displays.
 **Answer: B.**
-**Why correct:** Ventricular fibrillation is described as requiring immediate CPR and emergency response; unresponsiveness with an abnormal rhythm is treated as cardiac arrest.
+**Why correct:** Gasping is abnormal breathing. In this unresponsive adult, start CPR if no definite pulse is felt within 10 seconds. If the team identifies ventricular fibrillation, deliver prompt defibrillation per the arrest algorithm.
 **Why not A:** Confirmation must not delay CPR.
-**Why not C:** Electrode checks are for a conscious patient with a doubtful trace.
+**Why not C:** The team can verify the signal in parallel with the arrest response.
 **Why not D:** Observations delay emergency action.
 
 **Q4 (understanding).** What is the textbook's rate-counting method on a 6-second strip?
@@ -154,10 +154,10 @@ B. Count the large boxes and multiply by 20.
 C. Measure the PR interval and divide by the QRS.
 D. Count the R waves and multiply by 10.
 **Answer: D.**
-**Why correct:** The simplest method is to count R waves in a 6-second strip and multiply by 10.
+**Why correct:** Count QRS complexes on the 6-second strip and multiply by 10 to estimate the ventricular rate in beats per minute.
 **Why not A:** The atrial rate also uses ×10, not division by six.
 **Why not B:** The textbook method is based on R waves in a 6-second strip.
-**Why not C:** Intervals are not used to calculate the rate.
+**Why not C:** The PR interval measures atrioventricular conduction. An R–R interval can estimate rate in a regular rhythm, but dividing by QRS width cannot.
 
 **Q5 (safety).** A patient with a prolonged QTc starts to have PVCs that fall on the T wave. Why is this important?
 A. R on T beats can trigger ventricular tachycardia, and prolonged QT increases the risk, so this should be reported.

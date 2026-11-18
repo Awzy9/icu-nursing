@@ -379,7 +379,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "398de61876c8cabb"
+   "hash": "40f7985ec0e40e0f"
   },
   {
    "key": "D07-T06",
@@ -899,7 +899,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "61beb6842992c99e"
+   "hash": "19c9ce45c7552d88"
   },
   {
    "key": "D04-T06",
@@ -946,6 +946,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-MERCK-ACID-BASE",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -954,7 +959,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "da6cb4d74bb22059"
+   "hash": "e28a3b4716862c62"
   },
   {
    "key": "D04-T09",

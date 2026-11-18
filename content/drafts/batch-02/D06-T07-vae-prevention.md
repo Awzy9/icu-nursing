@@ -90,17 +90,17 @@ Head-of-bed angle checks, mouth-care times and findings, sedation and readiness 
 At the start of the shift: check the head of the bed angle on the bedside indicator, confirm the tube depth and securement, review overnight FiO₂ and PEEP trend, brush the patient's teeth and gums per protocol and suction the mouth with the unit's method, review sedation targets with the team for a daily awakening and breathing readiness check, plan mobilisation, and document each item.
 
 ## 16. Clinical case (fictional)
-A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse raises the bed, performs mouth care, reports the trend with SBAR, asks about sedation lightening and readiness testing, and documents. The team decides on imaging and further treatment.
+A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse promptly assesses oxygenation and ventilation, checks the airway and circuit, and reports the deterioration with SBAR. The nurse raises the bed if safe, then resumes routine prevention measures once the patient is stable. The team decides on imaging and further treatment.
 
 ## 17. MCQs
 **Q1 (prioritization).** On the morning round a ventilated patient on day 4 has rising oxygen needs, increased secretions, a flat bed after a procedure, and no mouth care documented for 12 hours. What should the nurse do first?
 A. Raise the head of the bed to 30–45° unless contraindicated, and mention the oxygen trend and secretions at the next routine handover.
-B. Raise the bed, do mouth care, then report the rising FiO₂ and secretions to the team with SBAR.
+B. Assess oxygenation, ventilation, airway and circuit now. Escalate the deterioration promptly and resume routine mouth care once the patient is stable.
 C. Start a chlorhexidine mouth rinse as an extra measure, then hand over the oxygen trend at the next routine round.
 D. Wait for the daily ward round to decide what to change, because ventilator settings and secretions are medical matters.
 **Answer: B.**
-**Why correct:** Both the bundle gaps and the oxygenation change need action now; positioning and mouth care are nursing tasks, and the trend must be escalated promptly.
-**Why not A:** Raising the bed is right, but it omits mouth care and leaves the rising oxygen need unreported until the routine handover.
+**Why correct:** Rising oxygen requirements may signal acute deterioration. Bedside assessment and prompt escalation take priority over scheduled mouth care.
+**Why not A:** Raising the bed may help if safe. Waiting for routine handover delays assessment and escalation of worsening oxygenation.
 **Why not C:** Chlorhexidine oral care is generally not recommended for VAP prevention in the 2022 update, and reporting later delays assessment.
 **Why not D:** Waiting for the round delays assessment of a possible deterioration; bundle tasks are nursing responsibilities.
 
@@ -149,7 +149,7 @@ D. Leave it: the 2022 update advises changing circuits only if visibly soiled, m
 **Why not C:** More disconnections can increase risk and secretion exposure.
 
 **Q6 (judgment).** A trainee says the SHEA 2022 update means cuff pressure no longer needs to be checked in ventilated patients. What is the most accurate reply?
-A. It covers VAP prevention only; AARC 2024 still recommends manometer checks at the unit's interval, but not continuous monitoring.
+A. AARC 2024 recommends manometer checks and advises against continuous cuff pressure assessment solely to prevent VAP.
 B. That is correct: because frequent cuff monitoring does not prevent pneumonia, cuff pressure should never be checked again.
 C. The update says cuff pressure must be checked every 15 minutes for every ventilated patient, whatever the indication.
 D. The update has no view on cuff pressures, so each unit can simply judge the pressure by feeling the pilot balloon.

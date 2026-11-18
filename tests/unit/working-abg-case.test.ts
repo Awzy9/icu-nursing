@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
 import { allAbgCases, abgCase } from "@/lib/working/abg-case";
-import { interpretAbg } from "@/lib/working/abg";
 
 describe("ABG case data", () => {
   const cases = allAbgCases();
@@ -32,16 +31,34 @@ describe("ABG case data", () => {
     }
   });
 
-  it("marks the correct option as exactly what interpretAbg computes for that case's gas panel - the content was never hand-typed independently of the algorithm", () => {
-    for (const c of cases) {
-      const r = interpretAbg(c.gases);
-      const correctOption = c.question.options[c.question.answer]!.toLowerCase();
-      if (r.primaryDisorder === "normal") { expect(correctOption).toContain("normal"); continue; }
-      if (r.primaryDisorder === "inconsistent") { expect(correctOption).toContain("inconsistent"); continue; }
-      const disorderWord = r.primaryDisorder.split("_")[1]; // acidosis / alkalosis
-      expect(correctOption).toContain(disorderWord);
-      if (r.compensation !== "not_applicable") expect(correctOption).toContain(r.compensation.replace("_", " "));
+  it("uses coherent gas panels and accurately reports the P/F ratio", () => {
+    for (const { key, gases, oxygenationNote } of cases) {
+      const calculatedPh = 6.1 + Math.log10(gases.hco3 / (0.03 * gases.paco2));
+      expect(Math.abs(gases.pH - calculatedPh), key).toBeLessThan(0.01);
+      if (gases.pao2 !== undefined && gases.fio2 !== undefined) {
+        expect(oxygenationNote, key).toContain(String(Math.round(10 * gases.pao2 / gases.fio2) / 10));
+      }
     }
+  });
+
+  it("matches the clinical answer key for all seven cases", () => {
+    expect(Object.fromEntries(cases.map(({ key, question }) => [key, question.options[question.answer]]))).toEqual({
+      "ABG-01": "Acute respiratory acidosis",
+      "ABG-02": "Metabolic acidosis with expected respiratory compensation",
+      "ABG-03": "Acute respiratory alkalosis",
+      "ABG-04": "Metabolic alkalosis with expected respiratory compensation",
+      "ABG-05": "Chronic respiratory acidosis with expected renal compensation",
+      "ABG-06": "Mixed respiratory and metabolic acidosis",
+      "ABG-07": "No evident acid–base disturbance on this panel",
+    });
+  });
+
+  it("distinguishes expected respiratory compensation from concurrent respiratory acidosis", () => {
+    const dka = abgCase("ABG-02")!;
+    const shock = abgCase("ABG-06")!;
+    const expectedPaco2 = ({ hco3 }: typeof dka.gases) => 1.5 * hco3 + 8;
+    expect(Math.abs(dka.gases.paco2 - expectedPaco2(dka.gases))).toBeLessThanOrEqual(2);
+    expect(shock.gases.paco2 - expectedPaco2(shock.gases)).toBeGreaterThan(2);
   });
 
   it("gives every case a unique key", () => {
