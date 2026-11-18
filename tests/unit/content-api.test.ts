@@ -141,7 +141,7 @@ describe("content API: enabled", () => {
   it("GET /api/content/exam/pick draws question ids from the chosen categories and a sane time limit", async () => {
     const { GET: topicsGet } = await import("@/app/api/content/exam/topics/route");
     const { topics } = await (topicsGet().json() as Promise<{ topics: { category: string; count: number }[] }>);
-    const category = topics[0].category;
+    const category = topics[0]!.category;
     const { GET } = await import("@/app/api/content/exam/pick/route");
     const r = await GET(new Request(`http://x?categories=${encodeURIComponent(category)}&count=10`));
     expect(r.status).toBe(200);
@@ -161,7 +161,7 @@ describe("content API: enabled", () => {
     const { GET: topicsGet } = await import("@/app/api/content/exam/topics/route");
     const { topics } = await (topicsGet().json() as Promise<{ topics: { category: string; count: number }[] }>);
     const { GET: pickGet } = await import("@/app/api/content/exam/pick/route");
-    const { questionIds } = await (await pickGet(new Request(`http://x?categories=${encodeURIComponent(topics[0].category)}&count=10`))).json();
+    const { questionIds } = await (await pickGet(new Request(`http://x?categories=${encodeURIComponent(topics[0]!.category)}&count=10`))).json();
     const { GET } = await import("@/app/api/content/exam/questions/route");
     const r = await GET(new Request(`http://x?ids=${questionIds.join(",")}`));
     expect(r.status).toBe(200);
