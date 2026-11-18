@@ -2269,6 +2269,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1d69169ffff02b67",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-02": [
@@ -2314,6 +2328,20 @@
    {
     "hash": "aa66a146e535754e",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "45a12402c031b974",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-EPINEPHRINE",
@@ -2548,6 +2576,20 @@
    {
     "hash": "49e720bb68a52f70",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PROPOFOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "27ad690179e51201",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-PROPOFOL",
@@ -2864,6 +2906,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "37be8ccf70626b9b",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ROCURONIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-13": [
@@ -2896,6 +2952,20 @@
    {
     "hash": "b73b9c7bd46848d4",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CISATRACURIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "56916a74706ff025",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-CISATRACURIUM",
@@ -2952,6 +3022,20 @@
    {
     "hash": "be82b78f2038c61e",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a7e198f4eea3d7b2",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-HEPARIN",

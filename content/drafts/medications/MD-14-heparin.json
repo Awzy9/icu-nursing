@@ -97,7 +97,7 @@
    "support": "full",
    "items": [
     {
-     "text": "Fatal medication errors: heparin must not be used as a catheter lock flush product, and fatal haemorrhages have occurred when heparin vials were confused with catheter lock flush vials.",
+     "text": "Verify the exact heparin product and intended use. Systemic heparin injection must not be substituted for a catheter-lock flush preparation. A product or strength mix-up can cause fatal bleeding.",
      "support": "sourced",
      "sources": [
       "L-HEPARIN"
