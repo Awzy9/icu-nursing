@@ -15,6 +15,7 @@ export default function LearningHub() {
       <RemoteGate state={list} onRetry={list.refresh}>
         {() => (
           <>
+            <NavCard href="/paths" title={t("paths.title")} body={t("paths.intro")} />
             <NavCard href="/quiz" title={t("hub.questions")} body={t("hub.questionsBody")} />
             <NavCard href="/exam" title={t("exam.title")} body={t("exam.intro")} />
             <NavCard href="/(tabs)/practice" title={t("hub.cases")} body={t("hub.casesBody")} />

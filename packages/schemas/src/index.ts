@@ -12,4 +12,5 @@ export * as skills from "./skills";
 export * as subscription from "./subscription";
 export * as workingContent from "./working-content";
 export * as workingExam from "./working-exam";
+export * as workingPaths from "./working-paths";
 export * as workingProgress from "./working-progress";

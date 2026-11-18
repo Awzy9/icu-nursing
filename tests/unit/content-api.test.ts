@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { caseVisualsResponseSchema, catalogEntryResponseSchema, catalogListResponseSchema, labDatasetResponseSchema } from "@icu/schemas/working-content";
 import { examPickResponseSchema, examQuestionsResponseSchema, examTopicsResponseSchema } from "@icu/schemas/working-exam";
+import { pathsResponseSchema } from "@icu/schemas/working-paths";
 
 const ORIGINAL_EDITION = process.env.CONTENT_EDITION;
 
@@ -25,6 +26,8 @@ describe("content API: disabled when the working edition is off", () => {
     expect((await examPickGet(new Request("http://x?categories=General%20ICU%20Nursing&count=10"))).status).toBe(404);
     const { GET: examQuestionsGet } = await import("@/app/api/content/exam/questions/route");
     expect((await examQuestionsGet(new Request("http://x?ids=a"))).status).toBe(404);
+    const { GET: pathsGet } = await import("@/app/api/content/paths/route");
+    expect(pathsGet().status).toBe(404);
   });
 });
 
@@ -174,5 +177,17 @@ describe("content API: enabled", () => {
     const { GET } = await import("@/app/api/content/exam/questions/route");
     expect((await GET(new Request("http://x?ids="))).status).toBe(400);
     expect((await GET(new Request(`http://x?ids=${Array.from({ length: 101 }, (_, i) => `q${i}`).join(",")}`))).status).toBe(400);
+  });
+
+  it("GET /api/content/paths returns schema-conformant guided paths, with steps resolved against the live catalog", async () => {
+    const { GET } = await import("@/app/api/content/paths/route");
+    const r = GET();
+    expect(r.status).toBe(200);
+    const parsed = pathsResponseSchema.parse(await r.json());
+    expect(parsed.paths.length).toBeGreaterThan(0);
+    const path = parsed.paths.find((p) => p.key === "new-to-icu");
+    expect(path).toBeDefined();
+    expect(path!.steps.length).toBeGreaterThan(0);
+    for (const step of path!.steps) expect(step.title.length).toBeGreaterThan(0);
   });
 });
