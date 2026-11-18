@@ -2,6 +2,16 @@
 import { useEffect, useRef, useState } from "react";
 import type { LearningScenario } from "@/lib/working/model";
 import { useLearning } from "./progress";
+import { EquipmentVisual } from "./equipment-visual";
+import caseVisuals from "../../../content/working-case-visuals.json";
+import { WaveformChart } from "./waveform-chart";
+import { ecgExercise } from "@/lib/working/ecg";
+import { ScenarioReadingMonitor, monitorReadings } from "./scenario-reading-monitor";
+import { ScenarioNeuroComparison, neuroReadings } from "./scenario-neuro-comparison";
+import { ScenarioPerfusionPanel, perfusionReadings } from "./scenario-perfusion-panel";
+
+const wideComplexTrace = ecgExercise(caseVisuals.rhythm.exerciseKey)?.trace;
+const equipmentByCase: Readonly<Record<string, string>> = caseVisuals.equipment;
 
 export function ScenarioPlayer({scenario,locale,moduleKey,title}:{scenario:LearningScenario;locale:string;moduleKey:string;title:string}) {
  const version=JSON.stringify(scenario.steps.map(s=>({p:s.position,n:s.options.length})));
@@ -17,8 +27,16 @@ export function ScenarioPlayer({scenario,locale,moduleKey,title}:{scenario:Learn
  // a ref, not state, since the moment of the first interaction is all that matters, not a frozen snapshot.
  const interacted=useRef(false);
  const [position,setPosition]=useState(scenario.steps[0]?.position),[points,setPoints]=useState(0),[choice,setChoice]=useState<number|null>(null),[revealed,setRevealed]=useState(false),[done,setDone]=useState(false);
+ const [visited,setVisited]=useState<number[]>([]);
  const ar=locale==="ar",step=scenario.steps.find(s=>s.position===position),option=choice===null?undefined:step?.options[choice];
  if(!step)return null;
+ const showRhythm = moduleKey === caseVisuals.rhythm.caseKey && caseVisuals.rhythm.positions.includes(step.position);
+ const equipmentKey = equipmentByCase[moduleKey];
+ const currentReadings = caseVisuals.numericMonitor.includes(moduleKey) ? monitorReadings(step) : [];
+ const neuro = moduleKey===caseVisuals.neuroComparison ? neuroReadings(step) : [];
+ const perfusion = caseVisuals.perfusionPanel.includes(moduleKey) ? perfusionReadings(step) : [];
+ const previousSteps = visited.flatMap(position=>scenario.steps.filter(item=>item.position===position));
+ const observations = step.observations?.filter(observation=>!currentReadings.some(reading=>reading.observation===observation)&&!neuro.includes(observation)&&!perfusion.includes(observation));
 
  if(validSaved&&!interacted.current){
   return <section className="rounded-2xl border-2 border-primary bg-card p-6 sm:p-8 space-y-4" role="status">
@@ -31,14 +49,18 @@ export function ScenarioPlayer({scenario,locale,moduleKey,title}:{scenario:Learn
   </section>;
  }
 
- if(done)return <section className="rounded-2xl border border-border bg-card p-6 space-y-5"><p className="text-primary font-semibold">{ar?"اكتمل السيناريو":"Scenario complete"}</p><h2 className="text-2xl font-bold">{ar?"ما تعلمته":"Your takeaways"}</h2><ul className="list-disc space-y-3 ps-5" lang="en" dir="ltr">{scenario.takeaways.map(t=><li key={t}>{t}</li>)}</ul><button className="min-h-11 rounded-xl border px-5" onClick={()=>{discardSession(moduleKey);setDone(false);setPosition(scenario.steps[0]?.position);setPoints(0);setChoice(null);setRevealed(false);}}>{ar?"إعادة السيناريو":"Restart scenario"}</button></section>;
- return <section className="space-y-6 rounded-2xl border border-border bg-card p-5 sm:p-8"><div className="flex justify-between gap-3 text-sm text-muted-foreground"><span>{ar?"سيناريو تعليمي لحالة افتراضية":"Fictional learning scenario"}</span><span>{ar?"الخطوة":"Step"} {scenario.steps.indexOf(step)+1} / {scenario.steps.length}</span></div><div lang="en" dir="ltr" className="space-y-5"><p className="rounded-xl bg-muted p-5 leading-7">{step.info}</p>{step.observations?.length?<dl className="grid grid-cols-2 gap-3">{step.observations.map(o=><div key={o.label} className="rounded-xl border border-border p-3"><dt className="text-xs text-muted-foreground">{o.label}</dt><dd className="mt-1 font-semibold">{o.value} {o.unit}</dd></div>)}</dl>:null}<fieldset disabled={revealed} className="space-y-3"><legend className="mb-4 text-xl font-semibold">{step.prompt}</legend>{step.options.map((o,i)=><label key={i} className={`flex items-start gap-3 rounded-xl border p-4 cursor-pointer ${choice===i?"border-primary bg-primary/5":"border-border hover:bg-muted"}`}><input className="mt-1.5 size-4 accent-primary" type="radio" name={"scenario-"+position} checked={choice===i} onChange={()=>setChoice(i)}/><span className="leading-7">{o.text}</span></label>)}</fieldset></div>{revealed&&option?<div role="status" lang="en" dir="ltr" className="space-y-3 rounded-xl bg-muted p-5"><h3 className="font-bold">Decision feedback</h3><p className="leading-7">{option.feedback}</p>{option.consequence?<p className="leading-7"><strong>What happens next: </strong>{option.consequence}</p>:null}</div>:null}<div className="flex justify-end"><button disabled={choice===null} className="min-h-12 rounded-xl bg-primary px-6 text-primary-foreground disabled:opacity-40" onClick={()=>{
+ if(done)return <section className="rounded-2xl border border-border bg-card p-6 space-y-5"><p className="text-primary font-semibold">{ar?"اكتمل السيناريو":"Scenario complete"}</p><h2 className="text-2xl font-bold">{ar?"ما تعلمته":"Your takeaways"}</h2><ul className="list-disc space-y-3 ps-5" lang="en" dir="ltr">{scenario.takeaways.map(t=><li key={t}>{t}</li>)}</ul><button className="min-h-11 rounded-xl border px-5" onClick={()=>{discardSession(moduleKey);setDone(false);setVisited([]);setPosition(scenario.steps[0]?.position);setPoints(0);setChoice(null);setRevealed(false);}}>{ar?"إعادة السيناريو":"Restart scenario"}</button></section>;
+ return <section className="space-y-6 rounded-2xl border border-border bg-card p-5 sm:p-8"><div className="flex justify-between gap-3 text-sm text-muted-foreground"><span>{ar?"سيناريو تعليمي لحالة افتراضية":"Fictional learning scenario"}</span><span>{ar?"الخطوة":"Step"} {scenario.steps.indexOf(step)+1} / {scenario.steps.length}</span></div><div lang="en" dir="ltr" className="space-y-5"><p className="rounded-xl bg-muted p-5 leading-7">{step.info}</p>{currentReadings.length?<ScenarioReadingMonitor current={currentReadings} previous={previousSteps} locale={locale}/>:null}{neuro.length?<ScenarioNeuroComparison readings={neuro} locale={locale}/>:null}{perfusion.length?<ScenarioPerfusionPanel readings={perfusion} previous={previousSteps} locale={locale}/>:null}{observations?.length?<dl className="grid grid-cols-2 gap-3">{observations.map(o=><div key={o.label} className="rounded-xl border border-border p-3"><dt className="text-xs text-muted-foreground">{o.label}</dt><dd className="mt-1 font-semibold">{o.value} {o.unit}</dd></div>)}</dl>:null}{showRhythm&&wideComplexTrace?<div className="space-y-2 rounded-xl border border-border p-4">
+  <p className="text-sm font-semibold">{ar?"مثال توضيحي لشريط نظم واسع المركّبات":"Illustrative wide-complex rhythm strip"}</p>
+  <WaveformChart trace={wideComplexTrace} locale={locale}/>
+ </div>:null}<fieldset disabled={revealed} className="space-y-3"><legend className="mb-4 text-xl font-semibold">{step.prompt}</legend>{step.options.map((o,i)=><label key={i} className={`flex items-start gap-3 rounded-xl border p-4 cursor-pointer ${choice===i?"border-primary bg-primary/5":"border-border hover:bg-muted"}`}><input className="mt-1.5 size-4 accent-primary" type="radio" name={"scenario-"+position} checked={choice===i} onChange={()=>setChoice(i)}/><span className="leading-7">{o.text}</span></label>)}</fieldset></div>{revealed&&option?<div role="status" lang="en" dir="ltr" className="space-y-3 rounded-xl bg-muted p-5"><h3 className="font-bold">Decision feedback</h3><p className="leading-7">{option.feedback}</p>{option.consequence?<p className="leading-7"><strong>What happens next: </strong>{option.consequence}</p>:null}</div>:null}{revealed&&equipmentKey&&step.position===scenario.steps[0]?.position?<EquipmentVisual moduleKey={equipmentKey} locale={locale}/>:null}<div className="flex justify-end"><button disabled={choice===null} className="min-h-12 rounded-xl bg-primary px-6 text-primary-foreground disabled:opacity-40" onClick={()=>{
   interacted.current=true;
   if(!revealed){setRevealed(true);return;}
   const newPoints=points+(option?.points??0),next=option?.next;
   setPoints(newPoints);
   if(next==null){setDone(true);saveSession({key:moduleKey,title,href,type:"cases"},"scenario",version,position!,newPoints,true);return;}
   saveSession({key:moduleKey,title,href,type:"cases"},"scenario",version,next,newPoints,false);
+  setVisited(previous=>[...previous,step.position]);
   setPosition(next);setChoice(null);setRevealed(false);
  }}>{revealed?(option?.next==null?(ar?"إنهاء ومراجعة":"Finish and reflect"):(ar?"متابعة":"Continue")):(ar?"تأكيد القرار":"Confirm decision")}</button></div></section>;
 }

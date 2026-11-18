@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, cleanup } from "@testing-library/react";
+import { fireEvent, render, screen, cleanup, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { LearningQuiz } from "@/components/working/quiz";
 import { ScenarioPlayer } from "@/components/working/scenario";
@@ -51,6 +51,67 @@ describe("interactive learning",()=>{
    fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
    expect(screen.getByText("Escalate urgently")).toBeVisible();
    fireEvent.click(screen.getByRole("button",{name:"Finish and reflect"}));expect(screen.getByText("Scenario complete")).toBeVisible();
+ });
+ it("shows the arrhythmia tracing before the decision and equipment images after feedback",()=>{
+   const entries=buildWorkingContent();
+   const rhythm=entries.find(entry=>entry.key==="SC-12")!;
+   render(<ScenarioPlayer locale="en" moduleKey={rhythm.key} title={rhythm.title} scenario={rhythm.scenario!}/>);
+   expect(screen.getByText("Illustrative wide-complex rhythm strip")).toBeVisible();
+   cleanup();
+
+   const ventilator=entries.find(entry=>entry.key==="SC-04")!;
+   render(<ScenarioPlayer locale="en" moduleKey={ventilator.key} title={ventilator.title} scenario={ventilator.scenario!}/>);
+   expect(screen.queryByRole("img")).not.toBeInTheDocument();
+   fireEvent.click(screen.getAllByRole("radio")[0]!);
+   fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+   expect(screen.getByRole("img",{name:/Ventilator on a wheeled stand/i})).toBeVisible();
+ });
+ it("reveals respiratory readings only as the learner reaches each step",()=>{
+   const respiratory=buildWorkingContent().find(entry=>entry.key==="SC-03")!;
+   render(<ScenarioPlayer locale="en" moduleKey={respiratory.key} title={respiratory.title} scenario={respiratory.scenario!}/>);
+   expect(screen.getByText("90%")).toBeVisible();
+   expect(screen.queryByText("88%")).not.toBeInTheDocument();
+   fireEvent.click(screen.getAllByRole("radio")[0]!);
+   fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+   expect(screen.queryByText("88%")).not.toBeInTheDocument();
+   fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+   expect(screen.getByText("88%")).toBeVisible();
+   expect(screen.getByText("90%")).toBeVisible();
+ });
+ it("keeps potassium and glucose histories separate even when their units are identical",()=>{
+   const entry=buildWorkingContent().find(item=>item.key==="SC-11")!;
+   render(<ScenarioPlayer locale="en" moduleKey={entry.key} title={entry.title} scenario={entry.scenario!}/>);
+   expect(screen.queryByText("Scenario blood glucose")).not.toBeInTheDocument();
+   for(let step=0;step<2;step++){
+     fireEvent.click(screen.getAllByRole("radio")[0]!);
+     fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+     fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+   }
+   const glucose=screen.getByText("Scenario blood glucose").closest("figure")!;
+   const potassium=screen.getByText("Scenario serum potassium").closest("figure")!;
+   expect(within(glucose).getByText("6.1 mmol/L")).toBeVisible();
+   expect(within(glucose).queryByText(/Previous readings/)).not.toBeInTheDocument();
+   expect(within(potassium).getAllByText("6.8 mmol/L")).toHaveLength(2);
+ });
+ it("shows authored neurological changes without revealing the next observations",()=>{
+   const entry=buildWorkingContent().find(item=>item.key==="SC-20")!;
+   render(<ScenarioPlayer locale="en" moduleKey={entry.key} title={entry.title} scenario={entry.scenario!}/>);
+   const comparison=screen.getByText("Changes in neurological responses").closest("figure")!;
+   expect(within(comparison).getByText("Motor response")).toBeVisible();
+   expect(within(comparison).getByText("Lower than last check")).toBeVisible();
+   expect(screen.queryByText("Still lower")).not.toBeInTheDocument();
+ });
+ it("compares circulation observations only with previously visited steps",()=>{
+   const entry=buildWorkingContent().find(item=>item.key==="SC-02")!;
+   render(<ScenarioPlayer locale="en" moduleKey={entry.key} title={entry.title} scenario={entry.scenario!}/>);
+   expect(screen.getByText("Falling over the last hour")).toBeVisible();
+   expect(screen.queryByText("Lower again")).not.toBeInTheDocument();
+   fireEvent.click(screen.getAllByRole("radio")[0]!);
+   fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+   fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+   expect(screen.getByText("Lower again")).toBeVisible();
+   expect(screen.getByText("Falling over the last hour")).toBeVisible();
+   expect(screen.queryByText("Steadier")).not.toBeInTheDocument();
  });
  it("does not disclose exercise feedback before checking",()=>{
    render(<PracticePlayer locale="en" exercise={{kind:"choice",setup:"Setting",options:[{id:"a",text:"Choice A",correct:true,feedback:"Authored feedback"}]}}/>);
