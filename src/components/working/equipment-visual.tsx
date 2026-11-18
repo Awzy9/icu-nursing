@@ -375,6 +375,42 @@ const bagMask: Visual = {
   license: "BY-SA 4.0",
 };
 
+const stethoscope: Visual = {
+  file: "stethoscope",
+  width: 656,
+  height: 875,
+  alt: ["A stethoscope with earpieces, blue tubing and a round chest piece.", "سماعة طبية تظهر فيها قطع الأذن والأنبوب الأزرق والقطعة الصدرية الدائرية."],
+  label: ["Stethoscope", "سماعة طبية"],
+  detail: ["A stethoscope is used to listen to sounds such as heartbeats and breath sounds during the assessment.", "تُستخدم السماعة الطبية للاستماع إلى أصوات مثل نبضات القلب وأصوات التنفس أثناء التقييم."],
+  source: "Stethoscope.jpg",
+  credit: "ICUnurses",
+  license: "BY-SA 4.0",
+};
+
+const rollator: Visual = {
+  file: "rollator",
+  width: 656,
+  height: 875,
+  alt: ["A wheeled walker with hand brakes and a built-in seat.", "مشّاية بعجلات مزوّدة بمكابح يدوية ومقعد مدمج."],
+  label: ["Wheeled walker (rollator)", "مشّاية بعجلات"],
+  detail: ["This example shows a mobility aid with brake levers beneath both handgrips.", "يوضح هذا المثال وسيلة مساعدة على المشي بمقبضي مكابح أسفل مسكتي اليد."],
+  source: "Rollator.jpg",
+  credit: "DirkvdM",
+  license: "BY 3.0",
+};
+
+const oronasalMask: Visual = {
+  file: "oronasal-mask",
+  width: 808,
+  height: 875,
+  alt: ["A patient wearing a ventilation mask over the nose and mouth, with head straps and breathing tubing visible.", "مريض يرتدي قناع تهوية يغطي الأنف والفم، وتظهر أحزمة تثبيت الرأس وأنبوب التنفس."],
+  label: ["Oronasal mask for non-invasive ventilation", "قناع الأنف والفم للتهوية غير الغازية"],
+  detail: ["The mask covers the nose and mouth and connects to the breathing circuit.", "يغطي القناع الأنف والفم ويتصل بدارة التنفس."],
+  source: "Oronasal_NVS.jpg",
+  credit: "Mahleretto",
+  license: "BY-SA 4.0",
+};
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -423,6 +459,9 @@ const visuals: Record<string, Visual> = {
   "D02-T09": bloodCulture,
   "D08-T02": citrateTube,
   "MD-15": glucoseMeter,
+  "D07-T01": stethoscope,
+  "SK-16": rollator,
+  "D01-T17": oronasalMask,
 };
 
 function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) {
