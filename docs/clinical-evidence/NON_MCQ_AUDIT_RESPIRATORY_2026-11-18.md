@@ -14,3 +14,15 @@ Sources checked include the [SFDA pulse oximeter safety communication](https://w
 ## Outstanding coverage
 
 The previous audit inventoried 40 lessons, 50 medication monographs, 25 skills, 20 cases, 8 equipment modules, 12 practice exercises and additional interactive material. These counts are an inventory, with earlier targeted checks documented separately. This increment closes the listed issues in two lessons. A completed source check of every remaining narrative claim, interactive module and currently deployed build has yet to be recorded.
+
+## Follow-up respiratory pass
+
+Reviewed the assessment, monitoring, escalation and bedside examples in three additional lessons. The oxygen and ventilation recommendations were checked against the cited guidelines. The practice sequence now matches the intended bedside response.
+
+| Lesson | Finding and correction |
+| --- | --- |
+| D06-T07 Ventilator-associated event prevention | The case put mouth care before assessing worsening oxygenation. The case and escalation section now prioritize bedside assessment and escalation before routine prevention. VAE surveillance criteria are separate from bedside triggers. |
+| D01-T12 Endotracheal tube care | The text did not distinguish confirmation of tracheal placement from confirmation of appropriate depth. It now requires separate depth and bilateral ventilation checks and immediate activation of the airway emergency pathway if ventilation is inadequate. |
+| D01-T17 Ventilator liberation | The trial-oxygen instruction and example could be read as requiring a decision before rescue support. The text distinguishes unchanged FiO₂ during an evaluable trial from prompt cessation and rescue support when the patient deteriorates. |
+
+Sources: [SHEA adult VAP/VAE prevention guidance](https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/), [AARC patient–ventilator assessment](https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/), [ERC 2025 adult advanced life support](https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf), and [AARC spontaneous breathing trials](https://pmc.ncbi.nlm.nih.gov/articles/PMC11285503/).
