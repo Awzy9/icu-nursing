@@ -31,7 +31,6 @@ export default function Account() {
       <Card><P>{t("account.privacyBody")}</P></Card>
       <H2>{t("account.deletionInfo")}</H2>
       <Card><P>{t("account.deletionBody")}</P>{config ? null : <Callout>{t("account.signInSoon")}</Callout>}</Card>
-      <Link href="/prototype" asChild><Button label={t("prototype.title")} variant="outline" onPress={() => undefined} /></Link>
     </Screen>
   );
 }
