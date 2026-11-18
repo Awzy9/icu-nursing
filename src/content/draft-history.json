@@ -5970,6 +5970,22 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "2910d47d0c96475b",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-CG103",
+     "N-RCUK-ANAPH-2021",
+     "N-UKKA-HK-2026-07",
+     "S-AHA-BLS-ADULT-2025",
+     "S-OPENRN-ADV-C7",
+     "S-PHILIPS-MX-T"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-02": [
@@ -5998,6 +6014,20 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "132d11556e5d1b93",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-HAMILTON-C1-SW3"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-03": [
@@ -6025,6 +6055,20 @@
     ],
     "gaps": 3,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "a7b48a64e4ad5737",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ARTERIAL-SAUGEL",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-SSC-2021"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
     "issues": 0
    }
   ],
@@ -6064,6 +6108,19 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "47747ce029135be0",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-BD-ALARIS-121",
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-05": [
@@ -6087,6 +6144,18 @@
     ],
     "gaps": 3,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "2f84002d506e51df",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ERC-ALS-2025",
+     "S-ZOLL-R-SERIES"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
     "issues": 0
    }
   ],
@@ -6126,6 +6195,18 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "4e664331fabec249",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-07": [
@@ -6154,6 +6235,20 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "1d0c3f6c1919aa00",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-KANGAROO-224",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "EQ-08": [
@@ -6177,6 +6272,18 @@
     ],
     "gaps": 3,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "ab9f934897622971",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "S-HILLROM-P290",
+     "S-INTL-PI-2026"
+    ],
+    "gaps": 2,
+    "required_sources": 2,
     "issues": 0
    }
   ],

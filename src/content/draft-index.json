@@ -4791,15 +4791,25 @@
      "verified": null
     },
     {
+     "id": "S-AHA-BLS-ADULT-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-PHILIPS-MX-T",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "ba63388b707eb459"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "2910d47d0c96475b"
   },
   {
    "key": "EQ-02",
@@ -4824,12 +4834,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-HAMILTON-C1-SW3",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "78faf82d9fc0b17b"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "132d11556e5d1b93"
   },
   {
    "key": "EQ-03",
@@ -4840,6 +4855,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ARTERIAL-SAUGEL",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
     {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
@@ -4857,9 +4877,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "6b3b9615a93ab14a"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "a7b48a64e4ad5737"
   },
   {
    "key": "EQ-04",
@@ -4870,6 +4890,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-BD-ALARIS-121",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
     {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
@@ -4882,9 +4907,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "c94695163aff1de4"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "47747ce029135be0"
   },
   {
    "key": "EQ-05",
@@ -4899,12 +4924,17 @@
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ZOLL-R-SERIES",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "24646b37b9208135"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "2f84002d506e51df"
   },
   {
    "key": "EQ-06",
@@ -4927,9 +4957,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "4983e9175d38fcd0"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "4e664331fabec249"
   },
   {
    "key": "EQ-07",
@@ -4940,6 +4970,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-KANGAROO-224",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
     {
      "id": "S-NHSE-NGT-2016",
      "licence_class": "YELLOW",
@@ -4957,9 +4992,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "5f30ec691a69ad2b"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "1d0c3f6c1919aa00"
   },
   {
    "key": "EQ-08",
@@ -4971,15 +5006,20 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-HILLROM-P290",
+     "licence_class": "RED",
+     "verified": "2026-11-18"
+    },
+    {
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 3,
-   "required_sources": 3,
-   "hash": "8068b4a036f9ba96"
+   "gaps": 2,
+   "required_sources": 2,
+   "hash": "ab9f934897622971"
   },
   {
    "key": "PX-01",

@@ -220,3 +220,20 @@ Each entry resolved in the generated working catalog. The last column shows the 
 | [PX-10](../../content/drafts/practice/PX-10-a-monitor-alarm-sounds--patient-first.json) | The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review. |
 | [PX-11](../../content/drafts/practice/PX-11-self-assessment--keeping-a-clear-and-safe-record.json) | The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review. |
 | [PX-12](../../content/drafts/practice/PX-12-self-assessment-map-of-the-25-first-release-skil.json) | The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review. |
+
+## Equipment parameter follow-up
+
+The 26 previously missing descriptions now have explanations linked to source guidance or a named example device. All 28 parameter descriptions are present in the generated working edition.
+
+| Module | Parameters covered | Evidence |
+| --- | --- | --- |
+| EQ-01 Monitors and alarms | ECG-derived heart rate and alarm priority | [Philips IntelliVue MX400–550 instructions, release T.0](https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed) |
+| EQ-02 Ventilator controls and waveforms | Pressure, flow, volume, respiratory frequency and alarm limits | [AARC assessment guideline](https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/), [HAMILTON-C1 software 3.0.x manual](https://www.hamilton-medical.com/dam/jcr%3A79e1c664-24e6-4dc7-8113-941781843520/HAMILTON-C1-ops-manual-SW3.0.x-en-10101866.00.pdf) |
+| EQ-03 Arterial pressure | Displayed pressure, waveform, zeroing and levelling | [Saugel et al., arterial pressure measurement](https://pmc.ncbi.nlm.nih.gov/articles/PMC7183114/) |
+| EQ-04 Infusion pumps | Programmed rate, displayed volume and pressure/air alarms | [FDA infusion-pump guidance](https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians), [Alaris v12.1 manual](https://www.bd.com/content/dam/bd-assets/na/medication-management-solutions/documents/user-guide/Alaris_System_User_Manual_Approved.pdf) |
+| EQ-05 Defibrillators | ECG signal, selected energy and charge state | [ERC 2025 ALS](https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf), [ZOLL R Series guide](https://www.aedsuperstore.com/pdf/zoll-r-series-defibrillator-manual.pdf) |
+| EQ-06 CRRT | Pressures, blood flow, delivered therapy and alarms | [Alberta Health Services alarm pathway](https://www.albertahealthservices.ca/assets/about/scn/ahs-scn-cc-dialyzingwisely-crrt-alarm-management-care-pathway-resource.pdf), [KDIGO AKI guideline](https://kdigo.org/guidelines/acute-kidney-injury/) |
+| EQ-07 Enteral pumps | Set rate, recorded volume and occlusion alarm | [Kangaroo 224 operating manual](https://d17eythm3w95tp.cloudfront.net/media/123415/01k9a81fyhfg9avvf9dv359vmg.pdf) |
+| EQ-08 Pressure-relieving equipment | Mode, inflation state and alarms | [Hillrom P290 mattress instructions](https://www.hillrom.co.uk/content/dam/hillrom-aem/emea/en/marketing/products/p290-mattress/documents/213960EN.pdf) |
+
+These notes explain what the displays and settings represent. Operating steps, model-specific alarm thresholds, unit policies and independent clinical sign-off remain outside this check.
