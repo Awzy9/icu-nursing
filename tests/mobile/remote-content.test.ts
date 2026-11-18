@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
+import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchPaths, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
 
 const mem = (): KeyValueStore & { data: Map<string, string> } => { const data = new Map<string, string>(); return { data, get: async (k) => data.get(k) ?? null, set: async (k, v) => void data.set(k, v) }; };
 const jsonResponse = (body: unknown, ok = true) => ({ ok, status: ok ? 200 : 500, json: async () => body }) as Response;
@@ -77,6 +77,14 @@ describe("content client: online", () => {
     const failingFetcher = vi.fn(async () => jsonResponse({ error: "no_questions" }, false));
     const failed = await pickExamQuestions({ store: mem(), fetcher: failingFetcher as unknown as typeof fetch, baseUrl: "https://x" }, ["Sepsis"], 20);
     expect(failed).toEqual({ status: "offline" });
+  });
+
+  it("fetchPaths validates and caches the resolved guided paths", async () => {
+    const path = { key: "new-to-icu", title: ["New to ICU", "ar"], audience: ["aud", "aud-ar"], objectives: [["o", "o-ar"]], estimatedMinutes: 55, steps: [{ key: "D07-T01", type: "topics", title: "t", href: "/working/D07-T01" }] };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", paths: [path] }));
+    const r = await fetchPaths({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [path] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/paths", expect.anything());
   });
 });
 

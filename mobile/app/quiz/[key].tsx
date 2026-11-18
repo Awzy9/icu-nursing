@@ -13,7 +13,7 @@ import { useCatalogEntry } from "../../src/hooks/useRemoteContent";
 export default function QuizRunner() {
   const { key } = useLocalSearchParams<{ key: string }>();
   const { t, progress, update } = useApp();
-  const { saveSession, discardSession, recordAnswer } = useProgressSync();
+  const { saveSession, discardSession, recordAnswer, setComplete } = useProgressSync();
   const entry = useCatalogEntry(key);
   const [started, setStarted] = useState(false);
   const [index, setIndex] = useState(0);
@@ -75,6 +75,7 @@ export default function QuizRunner() {
           const next = () => {
             if (index + 1 === questions.length) {
               update((p) => recordPractice(p, score, questions.length, new Date().toISOString()));
+              setComplete(key!, true); // lets a guided path (core/paths.ts) treat "finished this quiz" the same as any other step
               setFinished(true);
               return;
             }
