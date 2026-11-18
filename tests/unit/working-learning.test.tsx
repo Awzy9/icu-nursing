@@ -93,6 +93,14 @@ describe("interactive learning",()=>{
    expect(within(glucose).queryByText(/Previous readings/)).not.toBeInTheDocument();
    expect(within(potassium).getAllByText("6.8 mmol/L")).toHaveLength(2);
  });
+ it("shows authored neurological changes without revealing the next observations",()=>{
+   const entry=buildWorkingContent().find(item=>item.key==="SC-20")!;
+   render(<ScenarioPlayer locale="en" moduleKey={entry.key} title={entry.title} scenario={entry.scenario!}/>);
+   const comparison=screen.getByText("Changes in neurological responses").closest("figure")!;
+   expect(within(comparison).getByText("Motor response")).toBeVisible();
+   expect(within(comparison).getByText("Lower than last check")).toBeVisible();
+   expect(screen.queryByText("Still lower")).not.toBeInTheDocument();
+ });
  it("does not disclose exercise feedback before checking",()=>{
    render(<PracticePlayer locale="en" exercise={{kind:"choice",setup:"Setting",options:[{id:"a",text:"Choice A",correct:true,feedback:"Authored feedback"}]}}/>);
    expect(screen.queryByText("Authored feedback")).not.toBeInTheDocument();
