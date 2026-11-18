@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, cleanup } from "@testing-library/react";
+import { fireEvent, render, screen, cleanup, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { LearningQuiz } from "@/components/working/quiz";
 import { ScenarioPlayer } from "@/components/working/scenario";
@@ -77,6 +77,21 @@ describe("interactive learning",()=>{
    fireEvent.click(screen.getByRole("button",{name:"Continue"}));
    expect(screen.getByText("88%")).toBeVisible();
    expect(screen.getByText("90%")).toBeVisible();
+ });
+ it("keeps potassium and glucose histories separate even when their units are identical",()=>{
+   const entry=buildWorkingContent().find(item=>item.key==="SC-11")!;
+   render(<ScenarioPlayer locale="en" moduleKey={entry.key} title={entry.title} scenario={entry.scenario!}/>);
+   expect(screen.queryByText("Scenario blood glucose")).not.toBeInTheDocument();
+   for(let step=0;step<2;step++){
+     fireEvent.click(screen.getAllByRole("radio")[0]!);
+     fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+     fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+   }
+   const glucose=screen.getByText("Scenario blood glucose").closest("figure")!;
+   const potassium=screen.getByText("Scenario serum potassium").closest("figure")!;
+   expect(within(glucose).getByText("6.1 mmol/L")).toBeVisible();
+   expect(within(glucose).queryByText(/Previous readings/)).not.toBeInTheDocument();
+   expect(within(potassium).getAllByText("6.8 mmol/L")).toHaveLength(2);
  });
  it("does not disclose exercise feedback before checking",()=>{
    render(<PracticePlayer locale="en" exercise={{kind:"choice",setup:"Setting",options:[{id:"a",text:"Choice A",correct:true,feedback:"Authored feedback"}]}}/>);

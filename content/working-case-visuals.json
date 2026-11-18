@@ -14,11 +14,15 @@
     ],
     "exerciseKey": "ECG-05"
   },
-  "oxygenTrend": [
+  "numericMonitor": [
     "SC-03",
     "SC-04",
     "SC-05",
     "SC-06",
-    "SC-18"
+    "SC-18",
+    "SC-01",
+    "SC-10",
+    "SC-11",
+    "SC-14"
   ]
 }
