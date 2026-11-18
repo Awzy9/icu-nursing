@@ -1,0 +1,70 @@
+[
+ {
+  "key": "DFB-01",
+  "title": ["Ventricular fibrillation in cardiac arrest", "الرجفان البطيني أثناء توقف القلب"],
+  "vignette": "A patient is unresponsive with no palpable pulse. This rhythm is on the monitor.",
+  "traceKey": "ECG-06",
+  "question": {
+   "prompt": "Is this a shockable rhythm?",
+   "options": [
+    "Yes - ventricular fibrillation is shockable; defibrillate immediately per the arrest algorithm",
+    "No - this rhythm never requires defibrillation",
+    "Only if the patient also has a pulse",
+    "Yes, but only after giving amiodarone first"
+   ],
+   "answer": 0,
+   "explanation": "Ventricular fibrillation is one of the two shockable cardiac-arrest rhythms (with pulseless VT). Defibrillation should not be delayed - it is given as soon as the rhythm is identified and the defibrillator is ready, per the resuscitation algorithm."
+  }
+ },
+ {
+  "key": "DFB-02",
+  "title": ["Pulseless ventricular tachycardia", "تسرع النظم البطيني بلا نبض"],
+  "vignette": "A patient is unresponsive with no palpable pulse. This rhythm is on the monitor.",
+  "traceKey": "ECG-05",
+  "question": {
+   "prompt": "Is this a shockable rhythm?",
+   "options": [
+    "Yes - pulseless ventricular tachycardia is shockable, just like ventricular fibrillation",
+    "No - ventricular tachycardia is never shockable",
+    "Only if it has been present for more than 5 minutes",
+    "No - this requires CPR only, never defibrillation"
+   ],
+   "answer": 0,
+   "explanation": "A regular, wide-complex tachycardia with no pulse is pulseless VT - the second shockable arrest rhythm alongside VF. It is treated the same way: defibrillate without delay per the arrest algorithm."
+  }
+ },
+ {
+  "key": "DFB-03",
+  "title": ["Asystole", "توقف القلب (آسيستول)"],
+  "vignette": "A patient is unresponsive with no palpable pulse. This rhythm is on the monitor, and leads/connections have been confirmed.",
+  "traceKey": "ECG-07",
+  "question": {
+   "prompt": "Is this a shockable rhythm?",
+   "options": [
+    "No - asystole is a non-shockable rhythm; continue high-quality CPR and follow the non-shockable arm of the algorithm",
+    "Yes - defibrillate immediately",
+    "Only if it persists for over a minute",
+    "Yes, but at a lower energy setting"
+   ],
+   "answer": 0,
+   "explanation": "Asystole (flat line, with leads/connections confirmed) is non-shockable - a defibrillator cannot organise electrical activity that is not there. The priority is high-quality, uninterrupted CPR and following the non-shockable arm of the resuscitation algorithm."
+  }
+ },
+ {
+  "key": "DFB-04",
+  "title": ["Pulseless electrical activity (PEA)", "النشاط الكهربائي بلا نبض"],
+  "vignette": "A patient is unresponsive with no palpable pulse, despite this organised-looking rhythm on the monitor.",
+  "traceKey": "ECG-01",
+  "question": {
+   "prompt": "Is this a shockable rhythm?",
+   "options": [
+    "No - an organised rhythm with no pulse is PEA, a non-shockable rhythm; continue CPR and search for a reversible cause",
+    "Yes - any rhythm without a pulse should be shocked",
+    "Yes - this is actually ventricular fibrillation",
+    "No action is needed if the monitor shows an organised rhythm"
+   ],
+   "answer": 0,
+   "explanation": "An organised-looking rhythm (even one that looks like a normal sinus rhythm) with no palpable pulse is pulseless electrical activity (PEA) - non-shockable. The priority is high-quality CPR and searching for a reversible cause, not defibrillation; a monitor showing an organised rhythm never substitutes for checking the pulse."
+  }
+ }
+]
