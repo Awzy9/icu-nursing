@@ -59,7 +59,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Keep the patient under close observation after reversal, and report the return of sedation or slow breathing.",
+     "text": "For inadequate breathing, call for help and support airway and ventilation immediately under the emergency protocol while naloxone is arranged or given. Continue close observation after improvement because respiratory depression can recur.",
      "support": "partial",
      "sources": [
       "L-NALOXONE"
@@ -216,7 +216,7 @@
   },
   {
    "kind": "escalate",
-   "text": "Call for help if sedation or slow breathing returns.",
+   "text": "Call for urgent help and support ventilation under protocol if breathing slows again.",
    "critical": true,
    "support": "partial",
    "sources": [

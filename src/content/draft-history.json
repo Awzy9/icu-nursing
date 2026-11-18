@@ -3896,6 +3896,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4b7503cc404168cb",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LINEZOLID",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-29": [
@@ -4589,6 +4603,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "200d289334f0ca32",
+    "recorded": "2026-11-18",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NALOXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-41": [
@@ -4648,6 +4676,20 @@
    {
     "hash": "5427b454eb7400bf",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FLUMAZENIL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "952cea2a43b82c8b",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-FLUMAZENIL",
@@ -4759,6 +4801,20 @@
    {
     "hash": "02b4c6e1ee8a5220",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-SUCCINYLCHOLINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d7619a976478e53a",
+    "recorded": "2026-11-18",
     "evidence_status": "partial",
     "sources": [
      "L-SUCCINYLCHOLINE",

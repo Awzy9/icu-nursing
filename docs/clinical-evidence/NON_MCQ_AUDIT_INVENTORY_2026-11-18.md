@@ -237,3 +237,16 @@ The 26 previously missing descriptions now have explanations linked to source gu
 | EQ-08 Pressure-relieving equipment | Mode, inflation state and alarms | [Hillrom P290 mattress instructions](https://www.hillrom.co.uk/content/dam/hillrom-aem/emea/en/marketing/products/p290-mattress/documents/213960EN.pdf) |
 
 These notes explain what the displays and settings represent. Operating steps, model-specific alarm thresholds, unit policies and independent clinical sign-off remain outside this check.
+
+## Medication safety follow-up
+
+This pass checked four medication monographs against prescribing information and emergency recognition guidance. It updated the authored records and their generator inputs.
+
+| Record | Finding and correction | Evidence |
+| --- | --- | --- |
+| MD-28 Linezolid | Moved interaction review before administration and made the weekly CBC plan explicit. | [ZYVOX prescribing information](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/21132s049lbl.pdf) |
+| MD-40 Naloxone | Made immediate airway and ventilation support explicit and retained monitoring for recurrent respiratory depression. | [Naloxone injection prescribing information](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd65e3fe-cd7a-4855-8f55-8cc3a0921ccc) |
+| MD-41 Flumazenil | Distinguished contraindications from seizure risk factors, including serious cyclic antidepressant overdose and benzodiazepine use to control a life-threatening condition. | [Flumazenil prescribing information](https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74d007e9-9604-0941-e053-2a91aa0a29c4) |
+| MD-43 Succinylcholine | Added the contraindication after the acute phase of specified injuries and clarified that suspected malignant hyperthermia needs urgent escalation before a high temperature develops. | [Succinylcholine prescribing information](https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=cb5b3361-9099-4a12-b545-f1e50b0781dd), [European Malignant Hyperthermia Group](https://www.emhg.org/recommendations-1/2024/11/4/recognising-and-managing-a-malignant-hyperthermia-crisis-v2024) |
+
+This targeted check does not establish comprehensive review of the 50-monograph set or local product applicability.

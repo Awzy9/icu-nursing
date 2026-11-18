@@ -59,7 +59,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Be prepared to manage seizures, keep the patient under close observation and have airway equipment available.",
+     "text": "Before administration, check for signs of serious cyclic antidepressant overdose or use of a benzodiazepine to control a life-threatening condition such as status epilepticus. These are labelled contraindications. Escalate immediately and support airway and ventilation under protocol. Keep seizure-management equipment available.",
      "support": "partial",
      "sources": [
       "L-FLUMAZENIL"
@@ -189,7 +189,7 @@
  "monitoring": [
   {
    "kind": "assess",
-   "text": "Check for long-term benzodiazepine use, antidepressant overdose or other seizure risk factors.",
+   "text": "Check contraindications and seizure risk, including serious cyclic antidepressant overdose, long-term benzodiazepine use and benzodiazepine treatment of status epilepticus.",
    "critical": true,
    "support": "sourced",
    "sources": [

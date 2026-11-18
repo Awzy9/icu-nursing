@@ -67,7 +67,7 @@ quick(27, "azithromycin", "Azithromycin", "Macrolide antibacterial", "anti-infec
 quick(28, "linezolid", "Linezolid", "Oxazolidinone antibacterial", "anti-infectives", False, NOH,
  "Antibacterial for infections caused by susceptible gram-positive bacteria, including nosocomial pneumonia. Nursing focus: myelosuppression, neuropathy and serotonin syndrome.", "LINEZOLID",
  ["The label (Zyvox) describes linezolid as an oxazolidinone-class antibacterial indicated in adults and children for infections caused by susceptible gram-positive bacteria, including nosocomial pneumonia."],
- ["Check the medicine list for serotonergic agents and report them; make sure blood counts are being followed."],
+ ["Check for serotonergic medicines, including antidepressants and opioids. Escalate a potential interaction before administration so the prescriber and pharmacist can decide whether treatment can proceed and arrange monitoring."],
  ["Myelosuppression: the label advises monitoring complete blood counts weekly, and thrombocytopenia is more frequent in severe renal impairment and in moderate to severe hepatic impairment.", "Peripheral and optic neuropathy have been reported mainly with longer treatment; visual symptoms call for prompt eye evaluation.", "Serotonin syndrome: patients taking serotonergic agents should be monitored for its signs and symptoms."],
  ["The label lists myelosuppression, peripheral and optic neuropathy and serotonin syndrome among the clinically significant adverse reactions."],
  ["Report visual changes, new numbness, agitation, fever with tremor or confusion, and bruising or bleeding promptly."],
