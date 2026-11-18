@@ -1,0 +1,26 @@
+[
+ {
+  "key": "GCS-01",
+  "vignette": "The patient opens their eyes as soon as you approach, without any stimulus. They tell you their name, where they are, and the correct day. When asked to squeeze your hand, they do so on request.",
+  "correctEye": 4,
+  "correctVerbal": 5,
+  "correctMotor": 6,
+  "explanation": "Eyes open spontaneously (E4), the patient is oriented (V5), and follows a command (M6). Total GCS 15 - a fully normal score."
+ },
+ {
+  "key": "GCS-02",
+  "vignette": "The patient's eyes stay closed until you apply a painful stimulus, then open briefly. They make groaning, incomprehensible sounds with no recognisable words. Their arm pulls away from the painful stimulus but shows no purposeful movement toward it.",
+  "correctEye": 2,
+  "correctVerbal": 2,
+  "correctMotor": 4,
+  "explanation": "Eyes open only to pain (E2), sounds are incomprehensible with no words (V2), and the limb withdraws from pain without localising it (M4). Total GCS 8 - at the threshold conventionally associated with a need to protect the airway."
+ },
+ {
+  "key": "GCS-03",
+  "vignette": "The patient opens their eyes when you speak to them, but not spontaneously. They answer questions but seem muddled about the date and keep repeating themselves. When you apply a painful stimulus to their nailbed, their other hand reaches up toward the site of the pain.",
+  "correctEye": 3,
+  "correctVerbal": 4,
+  "correctMotor": 5,
+  "explanation": "Eyes open to speech (E3), responses are confused rather than oriented (V4), and the patient localises (reaches toward) the painful stimulus rather than just withdrawing (M5). Total GCS 12 - a moderate deficit."
+ }
+]
