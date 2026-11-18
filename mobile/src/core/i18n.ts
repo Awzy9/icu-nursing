@@ -6,7 +6,7 @@ export type LocalizedText = Record<string, string>;
 
 export const messages = {
   en: {
-    "app.name": "ICU Knowledge Map",
+    "app.name": "Critical Care Nursing",
     "app.sampleBanner": "Demonstration mode: all content is synthetic and unreviewed. It is not clinical guidance and must not be used for patient care.",
     "app.englishOnly": "Content is in English and has not yet been clinically approved.",
     "tab.learn": "Learn", "tab.practice": "Practice", "tab.library": "Library", "tab.account": "Account",
@@ -42,11 +42,10 @@ export const messages = {
     "del.title": "Delete my account", "del.open": "Delete my account…", "del.body": "Deletion is immediate and permanent. Your account, bookmarks and progress on our servers are removed and every session ends. There is no grace period and it cannot be undone.", "del.backups": "Database backups may keep a copy for a limited retention period before it is overwritten. Backups are not used to restore deleted accounts.",
     "del.recent": "For your safety, sign in again just before deleting. Your last sign-in was too long ago.", "del.mfa": "This account uses two-step verification. Complete verification when you sign in, then try again.", "del.confirmLabel": "Type your email address to confirm", "del.confirmBtn": "Permanently delete my account",
     "del.err.mismatch": "The email address does not match your account.", "del.err.staff": "Staff accounts are removed by an administrator.", "del.err.generic": "Deletion did not complete. Nothing was removed; try again.", "del.done": "Your account was deleted and you have been signed out.",
-    "prototype.title": "Original prototype screen", "prototype.note": "The first prototype screen, kept unchanged.",
     "a11y.bookmarkOn": "Remove bookmark", "a11y.bookmarkOff": "Add bookmark", "a11y.openItem": "Open {title}",
   },
   ar: {
-    "app.name": "خريطة معرفة العناية المركزة",
+    "app.name": "تمريض العناية المركزة",
     "app.sampleBanner": "وضع العرض التجريبي: كل المحتوى اصطناعي وغير مراجَع. وهو ليس إرشاداً سريرياً ولا يجوز استخدامه في رعاية المرضى.",
     "app.englishOnly": "المحتوى باللغة الإنجليزية ولم يُعتمد سريرياً بعد.",
     "tab.learn": "تعلّم", "tab.practice": "تدرّب", "tab.library": "المكتبة", "tab.account": "الحساب",
@@ -82,7 +81,6 @@ export const messages = {
     "del.title": "حذف حسابي", "del.open": "حذف حسابي…", "del.body": "الحذف فوري ونهائي. تُزال بيانات حسابك وإشاراتك المرجعية وتقدّمك من خوادمنا وتنتهي كل الجلسات. لا توجد فترة سماح ولا يمكن التراجع.", "del.backups": "قد تحتفظ النسخ الاحتياطية لقاعدة البيانات بنسخة لمدة احتفاظ محدودة قبل أن تُستبدل. لا تُستخدم النسخ الاحتياطية لاستعادة الحسابات المحذوفة.",
     "del.recent": "لأمانك، سجّل الدخول مجدداً قبل الحذف مباشرة. آخر تسجيل دخول لك كان منذ وقت طويل.", "del.mfa": "يستخدم هذا الحساب التحقق بخطوتين. أكمل التحقق عند تسجيل الدخول ثم حاول مرة أخرى.", "del.confirmLabel": "اكتب بريدك الإلكتروني للتأكيد", "del.confirmBtn": "احذف حسابي نهائياً",
     "del.err.mismatch": "البريد الإلكتروني لا يطابق حسابك.", "del.err.staff": "يُزيل المسؤول حسابات الموظفين.", "del.err.generic": "لم يكتمل الحذف. لم يُزل شيء؛ حاول مرة أخرى.", "del.done": "تم حذف حسابك وتسجيل خروجك.",
-    "prototype.title": "شاشة النموذج الأولي الأصلية", "prototype.note": "شاشة النموذج الأولي الأولى كما هي دون تغيير.",
     "a11y.bookmarkOn": "إزالة الإشارة المرجعية", "a11y.bookmarkOff": "إضافة إشارة مرجعية", "a11y.openItem": "فتح {title}",
   },
 } as const satisfies Record<Locale, Record<string, string>>;

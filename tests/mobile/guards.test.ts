@@ -28,6 +28,11 @@ describe("mobile bundle guard", () => {
   it("does not flag evidence_status: @icu/schemas/skills.ts and medications.ts legitimately use that same field name for an unrelated, already-public concept", () => {
     expect(scanBundle("bundle text with evidence_status in it")).toEqual([]);
   });
+  it("flags the removed prototype's fictional sample content (harbour ferry office, bakery dispenser, etc.), case-insensitively", () => {
+    for (const needle of ["Sample content", "Harbour Island", "fictional bakery", "fictional ferry", "ferry ticket scanner", "a sample number pattern"]) {
+      expect(scanBundle(`some bundle text with ${needle} in it`).length, needle).toBeGreaterThan(0);
+    }
+  });
 });
 describe("mobile source", () => {
   it("never references the clinical drafts, the draft index or any service-role credential", () => {
@@ -50,10 +55,18 @@ describe("mobile source", () => {
     expect(users.every((f) => f.endsWith(path.join("auth", "CaptchaView.tsx")))).toBe(true);
     expect(readdirSync(path.join(root, "mobile/app")).length).toBeGreaterThan(5);
   });
-  it("keeps the Android package identifier exactly", () => {
+  it("keeps the Android package identifier, scheme and EAS project exactly, while showing the renamed display name", () => {
     const app = JSON.parse(readFileSync(path.join(root, "mobile/app.json"), "utf8")).expo;
     expect(app.android.package).toBe("com.criticalcarenursing.myapp");
     expect(app.scheme).toBe("icuknowledgemap");
+    expect(app.extra.eas.projectId).toBe("bb38e642-1a31-49fd-89fa-81a50d2cd2fa");
+    expect(app.name).toBe("Critical Care Nursing");
+  });
+  it("has removed the original fictional prototype entirely: no /prototype route, no samples.ts, nothing named Prototype in either language", () => {
+    expect(source.some((f) => f.endsWith(path.join("app", "prototype.tsx")))).toBe(false);
+    expect(source.some((f) => f.endsWith(path.join("src", "samples.ts")))).toBe(false);
+    expect(source.some((f) => f.includes(path.join("src", "prototype")))).toBe(false);
+    for (const f of source) expect(readFileSync(f, "utf8"), f).not.toMatch(/\bprototype\b/i);
   });
 });
 describe("design system accessibility", () => {
