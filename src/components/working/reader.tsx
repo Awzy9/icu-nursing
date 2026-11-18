@@ -30,6 +30,8 @@ const LAB_LINKS: Record<string, { href: string; label: [string, string] }[]> = {
   "SK-22": [{ href: "/infusion-practice", label: ["Try the infusion-rate practice problems", "جرّب تمارين حساب معدل التسريب"] }],
   "SK-01": [{ href: "/aline", label: ["Try the arterial line square-wave test exercises", "جرّب تمارين اختبار الموجة المربعة للخط الشرياني"] }],
   "EQ-03": [{ href: "/aline", label: ["Try the arterial line square-wave test exercises", "جرّب تمارين اختبار الموجة المربعة للخط الشرياني"] }],
+  "SK-09": [{ href: "/transfusion-reactions", label: ["Try the transfusion-reaction recognition exercises", "جرّب تمارين التعرف على تفاعلات نقل الدم"] }],
+  "D08-T03": [{ href: "/transfusion-reactions", label: ["Try the transfusion-reaction recognition exercises", "جرّب تمارين التعرف على تفاعلات نقل الدم"] }],
 };
 export function ModuleReader({entry,locale,stepOrder}:{entry:WorkingEntry;locale:string;stepOrder?:number[]}) {
  const ar=locale==="ar", [tab,setTab]=useState(entry.type==="questions"?"quiz":entry.scenario?"scenario":entry.practice?"practice":"read"),[active,setActive]=useState(0),[checks,setChecks]=useState<string[]>([]);
