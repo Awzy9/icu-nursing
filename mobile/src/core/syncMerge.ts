@@ -2,7 +2,7 @@
 // on sign-in (so progress made on another device appears here too). Kept separate from the React
 // hook (hooks/useProgressSync.ts) so it is unit-testable without React or a Supabase client.
 import type { BookmarkKind, Progress, SessionRecord } from "./progress";
-import type { BookmarkRow, LessonRow, SessionRow } from "@icu/schemas/working-progress";
+import type { AttemptRow, BookmarkRow, LessonRow, SessionRow } from "@icu/schemas/working-progress";
 
 /** Resolves each remote bookmark row's module_key to a local "kind:key" string via a key->kind lookup (built from the catalog). Rows for an unknown key are dropped rather than guessed. */
 export function mergeRemoteBookmarks(local: Progress, remote: BookmarkRow[], kindOf: Map<string, BookmarkKind>): Progress {
@@ -28,6 +28,22 @@ export function mergeRemoteSessions(local: Progress, remote: SessionRow[]): Prog
     changed = true;
   }
   return changed ? { ...local, sessions } : local;
+}
+
+/** A remote attempt row only overwrites a local one when it is strictly newer (by answered_at) -
+ * same "newer wins" rule as sessions. The server computes box authoritatively
+ * (public.working_record_attempt), so a winning remote row's box is trusted as-is rather than
+ * being recomputed locally. */
+export function mergeRemoteAttempts(local: Progress, remote: AttemptRow[]): Progress {
+  let attempts = local.attempts;
+  let changed = false;
+  for (const row of remote) {
+    const existing = attempts[row.question_id];
+    if (existing && existing.at >= row.answered_at) continue;
+    attempts = { ...attempts, [row.question_id]: { correct: row.correct, at: row.answered_at, box: row.box } };
+    changed = true;
+  }
+  return changed ? { ...local, attempts } : local;
 }
 
 /** Unions remote-complete lesson rows into local.completed. A remote row with completed=false is not unmarked locally (no authoritative "last writer wins" timestamp exists for this field): the merge only ever adds, consistent with every other merge here never destroying local-only progress. */

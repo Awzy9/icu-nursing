@@ -74,6 +74,16 @@ describe("Rpc: working_* account sync (recordWorkingAttempt, bookmarks, lessons,
     await expect(badRpc.listWorkingLessons()).rejects.toBeInstanceOf(RpcError);
   });
 
+  it("listWorkingAttempts validates the returned rows and rejects a malformed row rather than rendering wrong data", async () => {
+    const select = vi.fn(async () => ({ data: [{ question_id: "Q1", correct: true, answered_at: "2026-01-01T00:00:00.000Z", box: 3 }], error: null }));
+    const rpc = createRpc(mockClient({ from: () => ({ select }) as never }));
+    expect(await rpc.listWorkingAttempts()).toEqual([{ question_id: "Q1", correct: true, answered_at: "2026-01-01T00:00:00.000Z", box: 3 }]);
+
+    const badSelect = vi.fn(async () => ({ data: [{ question_id: "Q1", correct: true, answered_at: "2026-01-01T00:00:00.000Z", box: 9 /* out of range */ }], error: null }));
+    const badRpc = createRpc(mockClient({ from: () => ({ select: badSelect }) as never }));
+    await expect(badRpc.listWorkingAttempts()).rejects.toBeInstanceOf(RpcError);
+  });
+
   it("propagates a Postgres/RLS error from a table write as the right RpcError code", async () => {
     const upsert = vi.fn(async () => ({ error: { code: "42501", message: "not authenticated" } }));
     const rpc = createRpc(mockClient({ from: () => ({ upsert }) as never }));

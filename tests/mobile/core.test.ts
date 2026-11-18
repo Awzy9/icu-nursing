@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { cases, equipment, findEquipment, medications, questions, skills } from "../../mobile/src/core/content";
 import { isRtl, localized, localizedList, messages, translate, usedFallback } from "../../mobile/src/core/i18n";
 import { answer, caseSummary, choose, currentStep, isCorrect, practiceResult, scoreTenths as mobileScore, seededOrder, startCase, startPractice } from "../../mobile/src/core/engines";
-import { clearProgress, discardSession, emptyProgress, getSession, loadProgress, markViewed, progressSchema, recordCase, recordPractice, saveProgress, saveSession, setComplete, toggleBookmark, toggleTick, viewedCount, type KeyValueStore } from "../../mobile/src/core/progress";
+import { clearProgress, discardSession, emptyProgress, getSession, loadProgress, markViewed, progressSchema, recordAttempt, recordCase, recordPractice, saveProgress, saveSession, setComplete, toggleBookmark, toggleTick, viewedCount, type KeyValueStore } from "../../mobile/src/core/progress";
 import { scoreTenths as webScore } from "@/lib/question-bank/score";
 import { createCaseFixtureService } from "@/lib/cases/fixture-service";
 import { loadCaseFixtures } from "@/lib/cases/fixtures";
@@ -141,5 +141,17 @@ describe("local progress", () => {
     const loaded = await loadProgress(s);
     expect(loaded.bookmarks).toEqual(["skills:SK-02"]);
     expect(loaded.completed).toEqual([]);
+    expect(loaded.attempts).toEqual({}); // field added after `completed`: same back-compat default
+  });
+  it("recordAttempt advances a question's Leitner box exactly like the website's own recordAttempt, and never lets an older attempt overwrite a newer one", () => {
+    let p = emptyProgress();
+    p = recordAttempt(p, "Q1", true, "2026-01-01T00:00:00.000Z");
+    expect(p.attempts.Q1).toEqual({ correct: true, at: "2026-01-01T00:00:00.000Z", box: 2 }); // new question enters at box 1, correct -> box 2
+    p = recordAttempt(p, "Q1", true, "2026-01-02T00:00:00.000Z");
+    expect(p.attempts.Q1!.box).toBe(3);
+    p = recordAttempt(p, "Q1", false, "2026-01-03T00:00:00.000Z");
+    expect(p.attempts.Q1!.box).toBe(1); // a miss always resets to box 1, regardless of prior box
+    const stale = recordAttempt(p, "Q1", true, "2026-01-02T12:00:00.000Z"); // older than the stored "at"
+    expect(stale).toBe(p); // no-op: an older write must never undo a newer one
   });
 });

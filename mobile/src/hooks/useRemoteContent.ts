@@ -6,8 +6,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Constants from "expo-constants";
 import {
-  fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchPaths, siteBaseUrl,
-  type CaseVisuals, type ContentClientDeps, type ExamQuestionShared, type ExamTopicShared, type RemoteResult, type ResolvedPathShared, type WorkingEntryShared, type WorkingEntrySummary,
+  fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchPaths, fetchRevisionQuestions, siteBaseUrl,
+  type CaseVisuals, type ContentClientDeps, type ExamQuestionShared, type ExamTopicShared, type RemoteResult, type ResolvedPathShared, type RevisionQuestionShared, type WorkingEntryShared, type WorkingEntrySummary,
 } from "../core/remoteContent";
 
 const store = { get: (k: string) => AsyncStorage.getItem(k), set: (k: string, v: string) => AsyncStorage.setItem(k, v) };
@@ -47,3 +47,4 @@ export const useCaseVisuals = () => useFetcher<CaseVisuals>(() => fetchCaseVisua
 export const useExamTopics = () => useFetcher<ExamTopicShared[]>(() => fetchExamTopics(deps()), []);
 export const useExamQuestions = (ids: string[]) => useFetcher<ExamQuestionShared[]>(() => (ids.length ? fetchExamQuestions(deps(), ids) : Promise.resolve({ status: "offline" as const })), [ids.join(",")]);
 export const usePaths = () => useFetcher<ResolvedPathShared[]>(() => fetchPaths(deps()), []);
+export const useRevisionQuestions = () => useFetcher<RevisionQuestionShared[]>(() => fetchRevisionQuestions(deps()), []);

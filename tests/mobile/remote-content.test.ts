@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchPaths, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
+import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchPaths, fetchRevisionQuestions, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
 
 const mem = (): KeyValueStore & { data: Map<string, string> } => { const data = new Map<string, string>(); return { data, get: async (k) => data.get(k) ?? null, set: async (k, v) => void data.set(k, v) }; };
 const jsonResponse = (body: unknown, ok = true) => ({ ok, status: ok ? 200 : 500, json: async () => body }) as Response;
@@ -85,6 +85,14 @@ describe("content client: online", () => {
     const r = await fetchPaths({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
     expect(r).toEqual({ status: "ok", fromCache: false, data: [path] });
     expect(fetcher).toHaveBeenCalledWith("https://x/api/content/paths", expect.anything());
+  });
+
+  it("fetchRevisionQuestions validates and caches the full question pool, including answer keys and rationale", async () => {
+    const item = { id: "Q1", prompt: "p", options: ["a", "b"], answer: 1, explanation: "e", moduleKey: "MOD-01", moduleTitle: "Module", moduleHref: "/working/MOD-01" };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", items: [item] }));
+    const r = await fetchRevisionQuestions({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [item] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/revision/questions", expect.anything());
   });
 });
 

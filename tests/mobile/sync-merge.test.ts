@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../../mobile/src/core/syncMerge";
+import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../../mobile/src/core/syncMerge";
 import { emptyProgress } from "../../mobile/src/core/progress";
 
 describe("mergeRemoteBookmarks", () => {
@@ -57,5 +57,23 @@ describe("mergeRemoteCompleted", () => {
   it("returns the same object reference when nothing changes", () => {
     const local = { ...emptyProgress(), completed: ["D01-T19"] };
     expect(mergeRemoteCompleted(local, [{ module_key: "D01-T19", completed: true }])).toBe(local);
+  });
+});
+
+describe("mergeRemoteAttempts", () => {
+  it("adopts a remote attempt for a question with no local attempt, trusting the server-computed box as-is", () => {
+    const merged = mergeRemoteAttempts(emptyProgress(), [{ question_id: "Q1", correct: true, answered_at: "2026-01-01T00:00:01.000Z", box: 3 }]);
+    expect(merged.attempts.Q1).toEqual({ correct: true, at: "2026-01-01T00:00:01.000Z", box: 3 });
+  });
+  it("prefers the remote attempt only when it is strictly newer than the local one", () => {
+    const local = { ...emptyProgress(), attempts: { Q1: { correct: false, at: "2026-01-01T00:00:05.000Z", box: 1 } } };
+    const older = mergeRemoteAttempts(local, [{ question_id: "Q1", correct: true, answered_at: "2026-01-01T00:00:01.000Z", box: 4 }]);
+    expect(older.attempts.Q1).toEqual({ correct: false, at: "2026-01-01T00:00:05.000Z", box: 1 }); // local, newer, wins
+    const newer = mergeRemoteAttempts(local, [{ question_id: "Q1", correct: true, answered_at: "2026-01-01T00:00:10.000Z", box: 2 }]);
+    expect(newer.attempts.Q1).toEqual({ correct: true, at: "2026-01-01T00:00:10.000Z", box: 2 }); // remote, newer, wins
+  });
+  it("returns the same object reference when nothing changes", () => {
+    const local = emptyProgress();
+    expect(mergeRemoteAttempts(local, [])).toBe(local);
   });
 });
