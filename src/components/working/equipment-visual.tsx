@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 type Translation = readonly [english: string, arabic: string];
@@ -112,6 +113,73 @@ const supportSurface: Visual = {
   license: "BY-SA 4.0",
 };
 
+const nasalCannula: Visual = {
+  file: "nasal-cannula",
+  width: 888,
+  height: 875,
+  alt: ["Nasal cannula showing two short prongs and a length of clear tubing.", "قنّية أنفية يظهر فيها طرفان قصيران وأنبوب شفاف."],
+  label: ["Identify the nasal cannula", "تعرّف على القنّية الأنفية"],
+  detail: ["Locate the two nasal prongs and trace the tubing to its connector.", "حدّد الطرفين الأنفيين وتتبّع الأنبوب حتى الوصلة."],
+  source: "Nasal_cannula.jpg",
+  credit: "Ctac",
+  license: "BY-SA 4.0",
+};
+
+const endotrachealTube: Visual = {
+  file: "endotracheal-tube",
+  width: 950,
+  height: 713,
+  alt: ["Curved endotracheal tube with depth markings, a cuff and a separate pilot balloon line.", "أنبوب رغامي منحنٍ مع علامات العمق وكُفّة وخط منفصل لبالون المؤشر."],
+  label: ["Identify the endotracheal tube components", "تعرّف على مكوّنات الأنبوب الرغامي"],
+  detail: ["Find the depth markings, the cuff near the tip and the blue pilot balloon on the narrow side line.", "حدّد علامات العمق والكُفّة قرب الطرف وبالون المؤشر الأزرق على الخط الجانبي الرفيع."],
+  source: "Endotracheal_Tube.JPG",
+  credit: "ICUnurses",
+  license: "BY-SA 4.0",
+};
+
+const ivCatheter: Visual = {
+  file: "iv-catheter",
+  width: 950,
+  height: 534,
+  alt: ["A peripheral intravenous catheter and its packaging, with the protective cover in place.", "قسطرة وريدية طرفية بجانب عبوتها مع بقاء الغطاء الواقي في مكانه."],
+  label: ["Recognise a peripheral IV catheter", "تعرّف على القسطرة الوريدية الطرفية"],
+  detail: ["Compare the catheter with the packaging label. This example is shown with its protective cover in place.", "قارن القسطرة بالملصق على العبوة. يظهر هذا المثال والغطاء الواقي في مكانه."],
+  source: "IV_Catheter.jpg",
+  credit: "Intropin (Mark Oniffrey)",
+  license: "BY-SA 4.0",
+};
+
+const crrtModules = new Set(["EQ-06", "SK-17", "D04-T09"]);
+const crrtSteps = [
+  ["Access line", "خط السحب"],
+  ["Blood pump", "مضخة الدم"],
+  ["Filter", "المرشّح"],
+  ["Return line", "خط الإرجاع"],
+] as const;
+
+function CrrtCircuitVisual({ locale }: { locale: string }) {
+  const ar = locale === "ar";
+  return (
+    <figure className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
+      <figcaption>
+        <p className="font-semibold">{ar ? "مسار الدم في دائرة العلاج الكلوي المستمر" : "Blood path in the CRRT circuit"}</p>
+        <p className="mt-1 text-sm text-muted-foreground">{ar ? "رسم مبسّط لمسار الدم من المريض إلى المرشّح ثم عودته إلى المريض." : "Simplified view of blood flowing from the patient through the filter and back to the patient."}</p>
+      </figcaption>
+      <ol className="grid gap-3 sm:grid-cols-4">
+        {crrtSteps.map((step, index) => (
+          <li key={step[0]} className="flex flex-col items-center gap-2 sm:flex-row">
+            <span className="flex min-h-12 w-full flex-1 items-center rounded-lg border border-border bg-card px-3 py-2 text-sm font-semibold">{step[ar ? 1 : 0]}</span>
+            {index < crrtSteps.length - 1 && <ArrowRight aria-hidden="true" className="size-4 shrink-0 rotate-90 sm:rotate-0 sm:rtl:rotate-180" />}
+          </li>
+        ))}
+      </ol>
+      <a className="text-xs text-muted-foreground underline" href="https://www.albertahealthservices.ca/assets/about/scn/ahs-scn-cc-dialyzingwisely-crrt-alarm-management-care-pathway-resource.pdf">
+        {ar ? "مرجع دائرة العلاج الكلوي المستمر" : "CRRT circuit reference"}
+      </a>
+    </figure>
+  );
+}
+
 const visuals: Record<string, Visual> = {
   "EQ-02": ventilator,
   "SK-07": ventilator,
@@ -135,9 +203,16 @@ const visuals: Record<string, Visual> = {
   "EQ-08": supportSurface,
   "SK-14": supportSurface,
   "D07-T04": supportSurface,
+  "SK-08": nasalCannula,
+  "D01-T03": nasalCannula,
+  "SK-04": endotrachealTube,
+  "D01-T12": endotrachealTube,
+  "SK-03": ivCatheter,
 };
 
 export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
+  if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
+
   const visual = visuals[moduleKey];
   if (!visual) return null;
 
