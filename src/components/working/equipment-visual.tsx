@@ -367,25 +367,42 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
   const photo = `/images/equipment/${visual.file}.webp`;
   const license = visual.license.toLowerCase().replace(" ", "/");
 
+  const covered = visual.file === "central-line";
+  const largeWidth = Math.min(visual.width, visual.height > visual.width ? 384 : 608);
+  const picture = (
+    <Image
+      src={photo}
+      alt={visual.alt[language]}
+      width={visual.width}
+      height={visual.height}
+      sizes="(min-width: 1024px) 540px, 85vw"
+      className="mx-auto h-auto w-full"
+      style={{ maxWidth: largeWidth }}
+    />
+  );
+
   return (
     <figure className="mb-8 overflow-hidden rounded-xl border border-border bg-muted">
-      <a href={photo} className="block focus-visible:outline focus-visible:outline-offset-[-3px]" aria-label={ar ? "افتح الصورة بالحجم الكامل" : "Open the full-size image"}>
-        <Image
-          src={photo}
-          alt={visual.alt[language]}
-          width={visual.width}
-          height={visual.height}
-          sizes="(min-width: 1024px) 540px, 85vw"
-          className="mx-auto h-auto w-full"
-          style={{ maxWidth: Math.min(visual.width, visual.height > visual.width ? 384 : 608) }}
-        />
-      </a>
+      {covered ? (
+        <div className="relative mx-auto w-full" style={{ maxWidth: largeWidth }}>
+          {picture}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 bg-slate-800"
+            style={{ clipPath: "polygon(76% 25%, 100% 25%, 100% 73%, 76% 71%, 69% 66%, 62% 63%, 57% 59%, 51% 55%, 46% 50%, 45% 43%, 45% 38%, 43% 35%, 38% 35%, 73% 33%)" }}
+          />
+        </div>
+      ) : (
+        <a href={photo} className="block focus-visible:outline focus-visible:outline-offset-[-3px]" aria-label={ar ? "افتح الصورة بالحجم الكامل" : "Open the full-size image"}>
+          {picture}
+        </a>
+      )}
       <figcaption className="space-y-1 p-4 text-sm">
         <p className="font-semibold">{visual.label[language]}</p>
         <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>
         <p className="text-xs text-muted-foreground" lang="en">
           <a className="underline" href={`https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
-          {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a>} · {visual.cropped ? "Cropped and converted to WebP" : "WebP version, resized where applicable"}
+          {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={`https://creativecommons.org/licenses/${license}/`}>CC {visual.license}</a>} · {covered ? "Shown with a privacy cover" : visual.cropped ? "Cropped and converted to WebP" : "WebP version, resized where applicable"}
         </p>
       </figcaption>
     </figure>
