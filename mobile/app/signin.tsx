@@ -29,7 +29,7 @@ export default function SignIn() {
   async function reset() {
     if (!token) { setMsg(t("auth.err.input")); return; }
     setBusy(true);
-    await manager!.requestPasswordReset(email, token, "icuknowledgemap://auth/callback");
+    await manager!.requestPasswordReset(email, token, "nursingmastery://auth/callback");
     setBusy(false); freshCaptcha(); setMsg(t("auth.resetSent"));
   }
   return (

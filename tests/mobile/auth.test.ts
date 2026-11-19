@@ -69,15 +69,15 @@ describe("CAPTCHA bridge", () => {
 
 describe("authentication callbacks (deep links)", () => {
   it("accepts only the two exact callback shapes", () => {
-    expect(parseAuthCallback("icuknowledgemap://auth/callback?code=abcDEF123456&type=recovery", SITE)).toEqual({ ok: true, intent: { kind: "recovery", code: "abcDEF123456" } });
+    expect(parseAuthCallback("nursingmastery://auth/callback?code=abcDEF123456&type=recovery", SITE)).toEqual({ ok: true, intent: { kind: "recovery", code: "abcDEF123456" } });
     expect(parseAuthCallback(`${SITE}/auth/callback?code=abcDEF123456`, SITE)).toEqual({ ok: true, intent: { kind: "magiclink", code: "abcDEF123456" } });
   });
   it("refuses other schemes, hosts, paths and malformed or hostile parameters", () => {
     const cases: [string, string][] = [
       ["javascript:alert(1)", "scheme"], ["file:///etc/passwd", "scheme"], ["not a url", "scheme"], ["http://example-staging.test/auth/callback?code=abcDEF123456", "scheme"],
       ["https://evil.test/auth/callback?code=abcDEF123456", "host"], [`${SITE}.evil.test/auth/callback?code=abcDEF123456`, "host"],
-      [`${SITE}/auth/other?code=abcDEF123456`, "path"], ["icuknowledgemap://evil/callback?code=abcDEF123456", "path"], ["icuknowledgemap://auth/callback/../x?code=abcDEF123456", "path"],
-      ["icuknowledgemap://auth/callback", "params"], ["icuknowledgemap://auth/callback?code=short", "params"], ["icuknowledgemap://auth/callback?code=abcDEF123456&type=admin", "params"], ["icuknowledgemap://auth/callback?code=<script>alert(1)</script>", "params"],
+      [`${SITE}/auth/other?code=abcDEF123456`, "path"], ["nursingmastery://evil/callback?code=abcDEF123456", "path"], ["nursingmastery://auth/callback/../x?code=abcDEF123456", "path"],
+      ["nursingmastery://auth/callback", "params"], ["nursingmastery://auth/callback?code=short", "params"], ["nursingmastery://auth/callback?code=abcDEF123456&type=admin", "params"], ["nursingmastery://auth/callback?code=<script>alert(1)</script>", "params"],
     ];
     for (const [url, why] of cases) expect(parseAuthCallback(url, SITE), url).toEqual({ ok: false, reason: why });
   });
