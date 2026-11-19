@@ -21,6 +21,7 @@ import { pathsResponseSchema, type ResolvedPathShared } from "@icu/schemas/worki
 import { revisionQuestionsResponseSchema, type RevisionQuestionShared } from "@icu/schemas/working-revision";
 import { news2CaseSchema, type News2Case } from "./news2";
 import { gcsCaseSchema, type GcsCase } from "./gcs";
+import { ecgExerciseSchema, type EcgExercise } from "./ecg";
 
 export type { WorkingEntrySummary, WorkingEntryShared, CaseVisuals } from "@icu/schemas/working-content";
 export type { ExamQuestionShared, ExamTopicShared } from "@icu/schemas/working-exam";
@@ -28,6 +29,7 @@ export type { ResolvedPathShared } from "@icu/schemas/working-paths";
 export type { RevisionQuestionShared } from "@icu/schemas/working-revision";
 export type { News2Case } from "./news2";
 export type { GcsCase } from "./gcs";
+export type { EcgExercise } from "./ecg";
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void> }
 
 const DEFAULT_SITE_URL = "https://icu-nursing.vercel.app";
@@ -120,6 +122,10 @@ export function fetchNews2Cases(deps: ContentClientDeps): Promise<RemoteResult<N
 
 export function fetchGcsCases(deps: ContentClientDeps): Promise<RemoteResult<GcsCase[]>> {
   return fetchCached(deps, "lab:gcs-cases", "/api/content/labs/gcs-cases", (raw) => z.array(gcsCaseSchema).parse(labDatasetResponseSchema.parse(raw).items));
+}
+
+export function fetchEcgExercises(deps: ContentClientDeps): Promise<RemoteResult<EcgExercise[]>> {
+  return fetchCached(deps, "lab:ecg", "/api/content/labs/ecg", (raw) => z.array(ecgExerciseSchema).parse(labDatasetResponseSchema.parse(raw).items));
 }
 
 // A fresh random draw every call - never cached, since caching would defeat the point of
