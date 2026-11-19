@@ -6,8 +6,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Constants from "expo-constants";
 import {
-  fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchEcgExercises, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, fetchWaveformExercises, siteBaseUrl,
-  type CaseVisuals, type ContentClientDeps, type EcgExercise, type ExamQuestionShared, type ExamTopicShared, type GcsCase, type News2Case, type RemoteResult, type ResolvedPathShared, type RevisionQuestionShared, type WaveformExercise, type WorkingEntryShared, type WorkingEntrySummary,
+  fetchAlineExercises, fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchDefibExercises, fetchEcgExercises, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, fetchWaveformExercises, siteBaseUrl,
+  type AlineExercise, type CaseVisuals, type ContentClientDeps, type DefibExercise, type EcgExercise, type ExamQuestionShared, type ExamTopicShared, type GcsCase, type News2Case, type RemoteResult, type ResolvedPathShared, type RevisionQuestionShared, type WaveformExercise, type WorkingEntryShared, type WorkingEntrySummary,
 } from "../core/remoteContent";
 
 const store = { get: (k: string) => AsyncStorage.getItem(k), set: (k: string, v: string) => AsyncStorage.setItem(k, v) };
@@ -52,3 +52,5 @@ export const useNews2Cases = () => useFetcher<News2Case[]>(() => fetchNews2Cases
 export const useGcsCases = () => useFetcher<GcsCase[]>(() => fetchGcsCases(deps()), []);
 export const useEcgExercises = () => useFetcher<EcgExercise[]>(() => fetchEcgExercises(deps()), []);
 export const useWaveformExercises = () => useFetcher<WaveformExercise[]>(() => fetchWaveformExercises(deps()), []);
+export const useAlineExercises = () => useFetcher<AlineExercise[]>(() => fetchAlineExercises(deps()), []);
+export const useDefibExercises = () => useFetcher<DefibExercise[]>(() => fetchDefibExercises(deps()), []);

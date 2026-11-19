@@ -23,6 +23,8 @@ import { news2CaseSchema, type News2Case } from "./news2";
 import { gcsCaseSchema, type GcsCase } from "./gcs";
 import { ecgExerciseSchema, type EcgExercise } from "./ecg";
 import { waveformExerciseSchema, type WaveformExercise } from "./waveformExercise";
+import { alineExerciseSchema, type AlineExercise } from "./aline";
+import { defibExerciseSchema, type DefibExercise } from "./defib";
 
 export type { WorkingEntrySummary, WorkingEntryShared, CaseVisuals } from "@icu/schemas/working-content";
 export type { ExamQuestionShared, ExamTopicShared } from "@icu/schemas/working-exam";
@@ -32,6 +34,8 @@ export type { News2Case } from "./news2";
 export type { GcsCase } from "./gcs";
 export type { EcgExercise } from "./ecg";
 export type { WaveformExercise } from "./waveformExercise";
+export type { AlineExercise } from "./aline";
+export type { DefibExercise } from "./defib";
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void> }
 
 const DEFAULT_SITE_URL = "https://icu-nursing.vercel.app";
@@ -132,6 +136,14 @@ export function fetchEcgExercises(deps: ContentClientDeps): Promise<RemoteResult
 
 export function fetchWaveformExercises(deps: ContentClientDeps): Promise<RemoteResult<WaveformExercise[]>> {
   return fetchCached(deps, "lab:waveforms", "/api/content/labs/waveforms", (raw) => z.array(waveformExerciseSchema).parse(labDatasetResponseSchema.parse(raw).items));
+}
+
+export function fetchAlineExercises(deps: ContentClientDeps): Promise<RemoteResult<AlineExercise[]>> {
+  return fetchCached(deps, "lab:aline", "/api/content/labs/aline", (raw) => z.array(alineExerciseSchema).parse(labDatasetResponseSchema.parse(raw).items));
+}
+
+export function fetchDefibExercises(deps: ContentClientDeps): Promise<RemoteResult<DefibExercise[]>> {
+  return fetchCached(deps, "lab:defib", "/api/content/labs/defib", (raw) => z.array(defibExerciseSchema).parse(labDatasetResponseSchema.parse(raw).items));
 }
 
 // A fresh random draw every call - never cached, since caching would defeat the point of
