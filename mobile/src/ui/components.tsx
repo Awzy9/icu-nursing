@@ -1,5 +1,6 @@
 import React from "react";
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View, type StyleProp, type ViewStyle } from "react-native";
+import RNSlider from "@react-native-community/slider";
 import { Link, type Href } from "expo-router";
 import { useApp } from "../state/app";
 import type { FetchState } from "../hooks/useRemoteContent";
@@ -50,6 +51,32 @@ export function NavCard({ href, title, body, badge }: { href: Href; title: strin
         {badge ? <Text style={[type.small, { color: palette.warnText, fontWeight: "600" }]}>{badge}</Text> : null}
       </Pressable>
     </Link>
+  );
+}
+/** A labeled slider control, mirroring the website's own <Slider> in vent-lab/hemo-lab: a
+ * live-updating value readout above a drag control, never a free-text numeric input. */
+export function SliderField({ label, unit, value, min, max, step, onChange }: { label: string; unit: string; value: number; min: number; max: number; step: number; onChange: (v: number) => void }) {
+  const { palette, rtl } = useApp();
+  return (
+    <View style={{ gap: space.xs }}>
+      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        <Text style={[type.small, { color: palette.text, fontWeight: "600", writingDirection: rtl ? "rtl" : "ltr" }]}>{label}</Text>
+        <Text style={[type.small, { color: palette.primary, fontWeight: "700" }]}>{`${value} ${unit}`}</Text>
+      </View>
+      <RNSlider
+        accessibilityLabel={label}
+        accessibilityValue={{ text: `${value} ${unit}` }}
+        minimumValue={min}
+        maximumValue={max}
+        step={step}
+        value={value}
+        onValueChange={onChange}
+        minimumTrackTintColor={palette.primary}
+        maximumTrackTintColor={palette.border}
+        thumbTintColor={palette.primary}
+        style={{ minHeight: MIN_TARGET }}
+      />
+    </View>
   );
 }
 export function Chip({ label, selected, onPress }: { label: string; selected?: boolean; onPress: () => void }) {
