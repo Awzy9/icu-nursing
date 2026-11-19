@@ -4,6 +4,7 @@
 // additionally sent to the account-sync RPCs in ../api/rpc.ts, mirroring the web app's own
 // dual guest/account model (src/components/working/progress.tsx).
 import { z } from "zod";
+import { nextBox } from "./leitner";
 
 // Real catalog keys: topics D01-T19, skills SK-18, medications MD-15, cases SC-10,
 // equipment EQ-01, practice PX-01 (see src/lib/working/index.ts's workingTypes and
@@ -23,6 +24,14 @@ const sessionRecordSchema = z.object({
 });
 export type SessionRecord = z.infer<typeof sessionRecordSchema>;
 
+// Per-question spaced-revision record: question id -> whether it was last answered correctly,
+// when, and the Leitner box that answer put it in. Mirrors the website's own guest storage
+// exactly (src/components/working/progress.tsx's recordAttempt/localStorage model) and the
+// server's working_attempts table/public.working_record_attempt, so a device's locally-computed
+// box always agrees with what the server would compute from the same answer.
+const attemptEntrySchema = z.object({ correct: z.boolean(), at: z.string(), box: z.number().int().min(1).max(5) });
+export type AttemptEntry = z.infer<typeof attemptEntrySchema>;
+
 export const progressSchema = z.object({
   v: z.literal(2),
   bookmarks: z.array(z.string().regex(bookmarkKeyPattern)).max(500),
@@ -34,9 +43,12 @@ export const progressSchema = z.object({
   cases: z.record(z.string(), z.object({ scoreTenths: z.number().int().min(0).max(1000), at: z.string() })),
   practice: z.array(z.object({ right: z.number().int().min(0), total: z.number().int().min(1), at: z.string() })).max(100),
   sessions: z.record(z.string(), sessionRecordSchema),
+  // .default({}) for the same reason as `completed` above: existing on-device v2 data saved
+  // before this field existed must still parse.
+  attempts: z.record(z.string().regex(/^[A-Z0-9-]{1,60}$/), attemptEntrySchema).default({}),
 });
 export type Progress = z.infer<typeof progressSchema>;
-export const emptyProgress = (): Progress => ({ v: 2, bookmarks: [], viewed: [], completed: [], ticks: {}, cases: {}, practice: [], sessions: {} });
+export const emptyProgress = (): Progress => ({ v: 2, bookmarks: [], viewed: [], completed: [], ticks: {}, cases: {}, practice: [], sessions: {}, attempts: {} });
 
 export const bookmarkKey = (kind: BookmarkKind, key: string): string => `${kind}:${key}`;
 export const toggleBookmark = (p: Progress, key: string): Progress => ({ ...p, bookmarks: p.bookmarks.includes(key) ? p.bookmarks.filter((k) => k !== key) : p.bookmarks.length >= 500 ? p.bookmarks : [...p.bookmarks, key] });
@@ -46,6 +58,16 @@ export const toggleTick = (p: Progress, code: string, index: number): Progress =
 export const recordCase = (p: Progress, code: string, scoreTenths: number, at: string): Progress => ({ ...p, cases: { ...p.cases, [code]: { scoreTenths: Math.max(scoreTenths, p.cases[code]?.scoreTenths ?? 0), at } } });
 export const recordPractice = (p: Progress, right: number, total: number, at: string): Progress => ({ ...p, practice: [...p.practice, { right, total, at }].slice(-100) });
 export const viewedCount = (p: Progress): number => p.viewed.length;
+
+// Records a question attempt and advances its Leitner box from whatever box it was last in
+// (missed -> box 1, due immediately; correct -> one box up, capped at 5), exactly mirroring the
+// website's recordAttempt. `at` already wins ties the same way elsewhere in this module (no
+// going backwards from a more recent attempt).
+export const recordAttempt = (p: Progress, questionId: string, correct: boolean, at: string): Progress => {
+  const existing = p.attempts[questionId];
+  if (existing && existing.at > at) return p;
+  return { ...p, attempts: { ...p.attempts, [questionId]: { correct, at, box: nextBox(existing?.box ?? 1, correct) } } };
+};
 
 // Resumable session state (an in-progress quiz or branching case). A case or quiz in progress
 // is saved here; finishing it clears the entry (recordCase/recordPractice already captured the

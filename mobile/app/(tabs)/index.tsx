@@ -17,6 +17,7 @@ export default function LearningHub() {
           <>
             <NavCard href="/paths" title={t("paths.title")} body={t("paths.intro")} />
             <NavCard href="/quiz" title={t("hub.questions")} body={t("hub.questionsBody")} />
+            <NavCard href="/study" title={t("study.title")} body={t("study.intro")} />
             <NavCard href="/exam" title={t("exam.title")} body={t("exam.intro")} />
             <NavCard href="/(tabs)/practice" title={t("hub.cases")} body={t("hub.casesBody")} />
             <NavCard href={{ pathname: "/(tabs)/library", params: { type: "skills" } }} title={t("hub.skills")} body={t("hub.skillsBody")} />

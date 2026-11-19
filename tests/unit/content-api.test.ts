@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { caseVisualsResponseSchema, catalogEntryResponseSchema, catalogListResponseSchema, labDatasetResponseSchema } from "@icu/schemas/working-content";
 import { examPickResponseSchema, examQuestionsResponseSchema, examTopicsResponseSchema } from "@icu/schemas/working-exam";
 import { pathsResponseSchema } from "@icu/schemas/working-paths";
+import { revisionQuestionsResponseSchema } from "@icu/schemas/working-revision";
 
 const ORIGINAL_EDITION = process.env.CONTENT_EDITION;
 
@@ -28,6 +29,8 @@ describe("content API: disabled when the working edition is off", () => {
     expect((await examQuestionsGet(new Request("http://x?ids=a"))).status).toBe(404);
     const { GET: pathsGet } = await import("@/app/api/content/paths/route");
     expect(pathsGet().status).toBe(404);
+    const { GET: revisionGet } = await import("@/app/api/content/revision/questions/route");
+    expect(revisionGet().status).toBe(404);
   });
 });
 
@@ -189,5 +192,14 @@ describe("content API: enabled", () => {
     expect(path).toBeDefined();
     expect(path!.steps.length).toBeGreaterThan(0);
     for (const step of path!.steps) expect(step.title.length).toBeGreaterThan(0);
+  });
+
+  it("GET /api/content/revision/questions returns the full real question pool, schema-conformant with answer keys and rationale", async () => {
+    const { GET } = await import("@/app/api/content/revision/questions/route");
+    const r = GET();
+    expect(r.status).toBe(200);
+    const parsed = revisionQuestionsResponseSchema.parse(await r.json());
+    expect(parsed.items.length).toBeGreaterThan(100);
+    for (const q of parsed.items) { expect(q.answer).toBeGreaterThanOrEqual(0); expect(q.explanation.length).toBeGreaterThan(0); }
   });
 });

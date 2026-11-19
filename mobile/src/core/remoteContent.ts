@@ -17,10 +17,12 @@ import {
   type ExamQuestionShared, type ExamTopicShared,
 } from "@icu/schemas/working-exam";
 import { pathsResponseSchema, type ResolvedPathShared } from "@icu/schemas/working-paths";
+import { revisionQuestionsResponseSchema, type RevisionQuestionShared } from "@icu/schemas/working-revision";
 
 export type { WorkingEntrySummary, WorkingEntryShared, CaseVisuals } from "@icu/schemas/working-content";
 export type { ExamQuestionShared, ExamTopicShared } from "@icu/schemas/working-exam";
 export type { ResolvedPathShared } from "@icu/schemas/working-paths";
+export type { RevisionQuestionShared } from "@icu/schemas/working-revision";
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void> }
 
 const DEFAULT_SITE_URL = "https://icu-nursing.vercel.app";
@@ -96,6 +98,10 @@ export function fetchExamQuestions(deps: ContentClientDeps, ids: string[]): Prom
 
 export function fetchPaths(deps: ContentClientDeps): Promise<RemoteResult<ResolvedPathShared[]>> {
   return fetchCached(deps, "paths", "/api/content/paths", (raw) => pathsResponseSchema.parse(raw).paths);
+}
+
+export function fetchRevisionQuestions(deps: ContentClientDeps): Promise<RemoteResult<RevisionQuestionShared[]>> {
+  return fetchCached(deps, "revision-questions", "/api/content/revision/questions", (raw) => revisionQuestionsResponseSchema.parse(raw).items);
 }
 
 // A fresh random draw every call - never cached, since caching would defeat the point of

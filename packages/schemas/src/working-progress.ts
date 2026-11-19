@@ -46,6 +46,18 @@ export const sessionRowSchema = z.object({
   finished: z.boolean(),
   updated_at: z.string(),
 });
+// working_attempts (supabase/migrations/20261117161800_working_attempts_leitner_box.sql) - the
+// per-question spaced-revision record: which question, whether it was answered correctly, when,
+// and the Leitner box the server computed from it (public.working_record_attempt). Read back on
+// sign-in to merge into the device's own locally-computed box, the same way bookmarks/lessons/
+// sessions are.
+export const attemptRowSchema = z.object({
+  question_id: z.string(),
+  correct: z.boolean(),
+  answered_at: z.string(),
+  box: z.number().int().min(1).max(5),
+});
 export type BookmarkRow = z.infer<typeof bookmarkRowSchema>;
 export type LessonRow = z.infer<typeof lessonRowSchema>;
 export type SessionRow = z.infer<typeof sessionRowSchema>;
+export type AttemptRow = z.infer<typeof attemptRowSchema>;

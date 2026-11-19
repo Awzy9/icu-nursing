@@ -5,7 +5,7 @@ import { z } from "zod";
 import { caseListSchema, caseProgressSchema } from "@icu/schemas/cases";
 import { equipmentStateSchema, type EquipmentState } from "@icu/schemas/equipment-state";
 import { skillListSchema, skillProgressSchema } from "@icu/schemas/skills";
-import { bookmarkRowSchema, lessonRowSchema, sessionRowSchema, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
+import { attemptRowSchema, bookmarkRowSchema, lessonRowSchema, sessionRowSchema, type AttemptRow, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
 import { examRowSchema, type ExamRow } from "@icu/schemas/working-exam";
 
 export class RpcError extends Error { constructor(readonly code: "auth" | "not_found" | "invalid" | "limit" | "contract" | "unavailable", message: string) { super(message); } }
@@ -82,6 +82,7 @@ export function createRpc(client: SupabaseClient) {
     listWorkingBookmarks: (): Promise<BookmarkRow[]> => selectRows("working_bookmarks", "module_key", bookmarkRowSchema),
     listWorkingLessons: (): Promise<LessonRow[]> => selectRows("working_lessons", "module_key,completed", lessonRowSchema),
     listWorkingSessions: (): Promise<SessionRow[]> => selectRows("working_sessions", "module_key,kind,version,position,score,finished,updated_at", sessionRowSchema),
+    listWorkingAttempts: (): Promise<AttemptRow[]> => selectRows("working_attempts", "question_id,correct,answered_at,box", attemptRowSchema),
 
     // Timed exam mode (supabase/migrations/20261117201500_working_exams.sql), mirroring
     // src/app/[locale]/exam/actions.ts exactly: the question selection itself comes from

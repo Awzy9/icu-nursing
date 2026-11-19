@@ -8,10 +8,10 @@
 import { useCallback, useEffect, useRef } from "react";
 import { useAuth } from "../auth/provider";
 import {
-  discardSession as localDiscardSession, saveSession as localSaveSession, setComplete as localSetComplete, toggleBookmark as localToggleBookmark,
+  discardSession as localDiscardSession, recordAttempt as localRecordAttempt, saveSession as localSaveSession, setComplete as localSetComplete, toggleBookmark as localToggleBookmark,
   type BookmarkKind, type Progress, type SessionRecord,
 } from "../core/progress";
-import { mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../core/syncMerge";
+import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../core/syncMerge";
 import { useApp } from "../state/app";
 import { useCatalogList } from "./useRemoteContent";
 
@@ -38,8 +38,11 @@ export function useProgressSync() {
   }, [update, rpc, signedIn]);
 
   const recordAnswer = useCallback((questionId: string, moduleKey: string, choice: number, correct: boolean, at: number) => {
+    // Always recorded locally (guest and signed-in alike) so the spaced-revision queue
+    // (core/revision.ts) reflects it immediately, mirroring the website's own recordAttempt.
+    update((p: Progress) => localRecordAttempt(p, questionId, correct, new Date(at).toISOString()));
     if (signedIn) void rpc!.recordWorkingAttempt(questionId, moduleKey, choice, correct, at).catch(() => undefined);
-  }, [rpc, signedIn]);
+  }, [update, rpc, signedIn]);
 
   const setComplete = useCallback((moduleKey: string, done: boolean) => {
     update((p: Progress) => localSetComplete(p, moduleKey, done));
@@ -67,8 +70,8 @@ export function useProgressPullOnSignIn() {
     lastSyncedEmail.current = email;
     (async () => {
       const kindOf = new Map<string, BookmarkKind>(catalog.data.map((e) => [e.key, e.type as BookmarkKind]));
-      const [bookmarks, sessions, lessons] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => []), rpc.listWorkingLessons().catch(() => [])]);
-      update((p) => mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons));
+      const [bookmarks, sessions, lessons, attempts] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => []), rpc.listWorkingLessons().catch(() => []), rpc.listWorkingAttempts().catch(() => [])]);
+      update((p) => mergeRemoteAttempts(mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons), attempts));
     })().catch(() => undefined);
   }, [signedIn, rpc, email, catalog, update]);
   useEffect(() => { if (!signedIn) lastSyncedEmail.current = null; }, [signedIn]);
