@@ -1,22 +1,14 @@
-import { Linking } from "react-native";
-import { Button, Callout, H1, NavCard, P, Screen } from "../src/ui/components";
+import { H1, NavCard, Screen } from "../src/ui/components";
 import { useApp } from "../src/state/app";
-import { siteBaseUrl } from "../src/core/remoteContent";
 
-// The website's ventilator and hemodynamics parameter panels (/vent-lab, /hemo-lab) are live
-// slider-driven simulators the app has no native screens for yet - mobile has no slider control
-// dependency installed. Rather than silently omitting this learner-facing feature, this screen
-// links out to the real, working website versions in the system browser. Every other lab (NEWS2,
-// GCS, ECG, the waveform interpretation exercises, the arterial-line square-wave test, the
-// shockable-rhythm exercises, ABG interpretation, CRRT, infusion-rate and transfusion-reaction
-// exercises) is built on a simple primitive (button-pickers, a single SVG polyline chart - see
-// src/ui/waveform-chart.tsx - or a plain vignette/gas-panel + MCQ) rather than bespoke canvas
-// drawing or a live interactive model, so each has its own native screens (app/news2/*,
-// app/gcs/*, app/ecg/*, app/waveforms/*, app/aline/*, app/defib/*, app/abg/*, app/crrt/*,
-// app/infusion/*, app/transfusion/*) and is linked from here instead.
+// Every lab from the website is now built as a native screen. NEWS2, GCS, ECG, the waveform
+// interpretation exercises, the arterial-line square-wave test and the shockable-rhythm
+// exercises are built on button-pickers or a single SVG polyline chart (src/ui/waveform-chart.tsx);
+// ABG, CRRT, infusion-rate and transfusion-reaction exercises are a plain vignette/gas-panel +
+// MCQ; vent-lab and hemo-lab are slider-driven simulators using the native SliderField control
+// (src/ui/components.tsx) over the ported vent-model.ts/hemodynamics.ts algorithms.
 export default function Labs() {
   const { t } = useApp();
-  const base = siteBaseUrl(process.env as Record<string, string | undefined>);
   return (
     <Screen>
       <H1>{t("labs.title")}</H1>
@@ -30,9 +22,8 @@ export default function Labs() {
       <NavCard href="/crrt" title={t("crrt.title")} body={t("crrt.intro")} />
       <NavCard href="/infusion" title={t("infusion.title")} body={t("infusion.intro")} />
       <NavCard href="/transfusion" title={t("transfusion.title")} body={t("transfusion.intro")} />
-      <Callout tone="info">{t("labs.body")}</Callout>
-      <Button label={t("labs.open")} onPress={() => Linking.openURL(`${base}/learn`)} />
-      <P small muted>{base}</P>
+      <NavCard href="/vent-lab" title={t("vent.title")} body={t("vent.intro")} />
+      <NavCard href="/hemo-lab" title={t("hemo.title")} body={t("hemo.intro")} />
     </Screen>
   );
 }
