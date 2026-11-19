@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
+import { fetchCatalogEntry, fetchCatalogList, fetchEcgExercises, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
 
 const mem = (): KeyValueStore & { data: Map<string, string> } => { const data = new Map<string, string>(); return { data, get: async (k) => data.get(k) ?? null, set: async (k, v) => void data.set(k, v) }; };
 const jsonResponse = (body: unknown, ok = true) => ({ ok, status: ok ? 200 : 500, json: async () => body }) as Response;
@@ -116,6 +116,18 @@ describe("content client: online", () => {
 
     const malformed = vi.fn(async () => jsonResponse({ version: "v1", name: "gcs-cases", items: [{ key: "GCS-01", correctEye: 7 /* out of range */ }] }));
     const bad = await fetchGcsCases({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(bad).toEqual({ status: "offline" });
+  });
+
+  it("fetchEcgExercises validates each item against the specific EcgExercise shape, not just 'a non-empty array'", async () => {
+    const exercise = { key: "ECG-01", title: ["Normal sinus rhythm", "ar"], objective: ["o", "o-ar"], lessonHref: "/working/D02-T02", accessibleDescription: ["d"], trace: { label: "Lead II", unit: "mV", domain: [-0.5, 1.6], points: [[0, 0], [1, 0.5]] }, question: { prompt: "p", options: ["a", "b"], answer: 0, explanation: "e" }, evidenceSources: ["s"] };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", name: "ecg", items: [exercise] }));
+    const r = await fetchEcgExercises({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [exercise] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/labs/ecg", expect.anything());
+
+    const malformed = vi.fn(async () => jsonResponse({ version: "v1", name: "ecg", items: [{ key: "ECG-01" /* missing everything else */ }] }));
+    const bad = await fetchEcgExercises({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
     expect(bad).toEqual({ status: "offline" });
   });
 });
