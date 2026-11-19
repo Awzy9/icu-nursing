@@ -178,7 +178,53 @@ const ivCatheter: Visual = {
   license: "BY-SA 4.0",
 };
 
-const crrtModules = new Set(["EQ-06", "SK-17", "D04-T09"]);
+const cvvhdImage = "/images/equipment/cvvhd-circuit.webp";
+const cvvhdLabels = [
+  ["Patient catheter", "قسطرة المريض"],
+  ["Access pressure sensor (before the pump)", "حساس ضغط السحب (قبل المضخة)"],
+  ["Blood pump", "مضخة الدم"],
+  ["Filter inlet pressure sensor (after the pump)", "حساس ضغط مدخل المرشّح (بعد المضخة)"],
+  ["Hemofilter", "المرشّح الدموي"],
+  ["Return pressure sensor (toward the patient)", "حساس ضغط الإرجاع (باتجاه المريض)"],
+  ["Fresh dialysate bag", "كيس سائل الديال الطازج"],
+  ["Effluent collection bag", "كيس تجميع السائل المطروح"],
+  ["Effluent pressure sensor", "حساس ضغط السائل المطروح"],
+] as const;
+
+function CvvhdCircuitFigure({ locale }: { locale: string }) {
+  const ar = locale === "ar";
+  return (
+    <figure className="mb-8 overflow-hidden rounded-xl border border-border bg-muted">
+      <a href={cvvhdImage} className="block focus-visible:outline focus-visible:outline-offset-[-3px]" aria-label={ar ? "افتح مخطط الدائرة بالحجم الكامل" : "Open the full-size circuit illustration"}>
+        <Image
+          src={cvvhdImage}
+          alt={ar ? "مخطط مرقّم يبيّن اتجاه تدفق الدم وسائل الديال والسائل المطروح في دائرة CVVHD." : "Numbered CVVHD circuit showing the direction of blood, fresh dialysate and effluent flow."}
+          width={1080}
+          height={640}
+          sizes="(min-width: 1024px) 750px, 90vw"
+          className="h-auto w-full"
+        />
+      </a>
+      <figcaption className="space-y-3 p-4 sm:p-5">
+        <p className="font-semibold">{ar ? "تتبّع مسارات السوائل وحدّد حساسات الضغط" : "Trace the CVVHD fluid paths and locate the pressure sensors"}</p>
+        <p className="text-sm text-muted-foreground">
+          {ar ? "الوردي: الدم. الأزرق: سائل الديال الطازج. الأصفر: السائل المطروح. هذا رسم تعليمي مبسّط لدائرة الديال الدموي الوريدي المستمر." : "Pink shows blood, blue shows fresh dialysate, and amber shows effluent. This is a simplified continuous venovenous hemodialysis circuit."}
+        </p>
+        <ol className="list-decimal space-y-1 ps-6 text-sm sm:columns-2">
+          {cvvhdLabels.map(([en, translated]) => <li key={en} className="break-inside-avoid">{ar ? translated : en}</li>)}
+        </ol>
+        <p className="text-xs text-muted-foreground">
+          {ar ? "رسم تعليمي أصلي. مرجع الدائرة: " : "Original teaching illustration. Circuit reference: "}
+          <a className="underline" href="https://www.ncbi.nlm.nih.gov/books/NBK556028/figure/article-90896.image.f2/">
+            {ar ? "StatPearls، الشكل ٢" : "StatPearls, figure 2"}
+          </a>
+        </p>
+      </figcaption>
+    </figure>
+  );
+}
+
+const crrtModules = new Set(["SK-17", "D04-T09"]);
 const crrtSteps = [
   { icon: Gauge, label: ["Access line", "خط السحب"], detail: ["Access pressure before the pump", "ضغط السحب قبل المضخة"] },
   { icon: RotateCw, label: ["Blood pump", "مضخة الدم"], detail: ["Moves blood through the circuit", "تحرّك الدم عبر الدائرة"] },
@@ -693,6 +739,7 @@ export function PulseOximeterPhoto({ locale }: { locale: string }) {
 }
 
 export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
+  if (moduleKey === "EQ-06") return <CvvhdCircuitFigure locale={locale} />;
   if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
   if (moduleKey === "EQ-01") return <PulseOximeterPhoto locale={locale} />;
   if (moduleKey === "SK-20") return <TransportVisual locale={locale} />;
