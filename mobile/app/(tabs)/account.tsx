@@ -1,12 +1,14 @@
 import { Link } from "expo-router";
-import { View } from "react-native";
+import { Linking, View } from "react-native";
 import { Button, Callout, Card, Chip, H1, H2, P, Screen } from "../../src/ui/components";
 import { useApp } from "../../src/state/app";
 import { useAuth } from "../../src/auth/provider";
+import { siteBaseUrl } from "../../src/core/remoteContent";
 
 export default function Account() {
   const { t, locale, setLocale, themeMode, setThemeMode } = useApp();
   const { config, manager, email, notice, clearNotice } = useAuth();
+  const base = siteBaseUrl(process.env as Record<string, string | undefined>);
   return (
     <Screen>
       <H1>{t("account.title")}</H1>
@@ -29,8 +31,10 @@ export default function Account() {
       </View>
       <H2>{t("account.privacy")}</H2>
       <Card><P>{t("account.privacyBody")}</P></Card>
+      <Button label={t("account.privacyLink")} variant="outline" onPress={() => Linking.openURL(`${base}/privacy`)} />
       <H2>{t("account.deletionInfo")}</H2>
       <Card><P>{t("account.deletionBody")}</P>{config ? null : <Callout>{t("account.signInSoon")}</Callout>}</Card>
+      <Button label={t("account.deletionLink")} variant="outline" onPress={() => Linking.openURL(`${base}/account-deletion`)} />
     </Screen>
   );
 }

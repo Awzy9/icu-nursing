@@ -9,8 +9,7 @@ export async function SiteFooter() {
     <footer className="mt-16 border-t border-border bg-card">
       <div className="container space-y-3 py-8 text-sm text-muted-foreground">
         <p className="max-w-3xl">{c("disclaimerShort")}</p>
-        <p>{t("legalPending")}</p>
-        <p><Link href="/pricing">{n("plans")}</Link> · <Link href="/account-deletion">{t("accountDeletion")}</Link></p>
+        <p><Link href="/privacy">{t("privacy")}</Link> · <Link href="/terms">{t("terms")}</Link> · <Link href="/pricing">{n("plans")}</Link> · <Link href="/account-deletion">{t("accountDeletion")}</Link></p>
         <p>{t("rights", { year: new Date().getUTCFullYear() })}</p>
       </div>
     </footer>
