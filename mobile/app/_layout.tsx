@@ -30,6 +30,8 @@ function Shell() {
         <Stack.Screen name="gcs/[key]" options={{ title: t("gcs.title") }} />
         <Stack.Screen name="ecg/index" options={{ title: t("ecg.title") }} />
         <Stack.Screen name="ecg/[key]" options={{ title: t("ecg.title") }} />
+        <Stack.Screen name="waveforms/index" options={{ title: t("waveforms.title") }} />
+        <Stack.Screen name="waveforms/[key]" options={{ title: t("waveforms.title") }} />
         <Stack.Screen name="labs" options={{ title: t("labs.title") }} />
         <Stack.Screen name="topics/[key]" options={{ title: t("topic.title") }} />
         <Stack.Screen name="equipment/[code]" options={{ title: t("equipment.title") }} />
