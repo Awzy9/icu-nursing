@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { fetchAlineExercises, fetchCatalogEntry, fetchCatalogList, fetchDefibExercises, fetchEcgExercises, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, fetchWaveformExercises, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
+import { fetchAbgCases, fetchAlineExercises, fetchCatalogEntry, fetchCatalogList, fetchCrrtData, fetchDefibExercises, fetchEcgExercises, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchInfusionCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, fetchTransfusionExercises, fetchWaveformExercises, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
 
 const mem = (): KeyValueStore & { data: Map<string, string> } => { const data = new Map<string, string>(); return { data, get: async (k) => data.get(k) ?? null, set: async (k, v) => void data.set(k, v) }; };
 const jsonResponse = (body: unknown, ok = true) => ({ ok, status: ok ? 200 : 500, json: async () => body }) as Response;
@@ -164,6 +164,54 @@ describe("content client: online", () => {
 
     const malformed = vi.fn(async () => jsonResponse({ version: "v1", name: "defib", items: [{ key: "DFB-01" /* missing everything else */ }] }));
     const bad = await fetchDefibExercises({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(bad).toEqual({ status: "offline" });
+  });
+
+  it("fetchAbgCases validates each item against the specific AbgCase shape, not just 'a non-empty array'", async () => {
+    const abgCase = { key: "ABG-01", title: ["ABG case 01", "ar"], vignette: "v", gases: { pH: 7.25, paco2: 60, hco3: 24 }, lessonHref: "/working/D04-T08", question: { prompt: "p", options: ["a", "b"], answer: 0, explanation: "e" }, oxygenationNote: null, evidenceSources: ["s"] };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", name: "abg", items: [abgCase] }));
+    const r = await fetchAbgCases({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [abgCase] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/labs/abg", expect.anything());
+
+    const malformed = vi.fn(async () => jsonResponse({ version: "v1", name: "abg", items: [{ key: "ABG-01" /* missing everything else */ }] }));
+    const bad = await fetchAbgCases({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(bad).toEqual({ status: "offline" });
+  });
+
+  it("fetchInfusionCases validates each item against the specific InfusionCase shape, not just 'a non-empty array'", async () => {
+    const infusionCase = { key: "INF-01", drugRef: "norepinephrine", vignette: "v", order: { kind: "mcg/kg/min", doseOrdered: 0.1, weightKg: 70, concentrationMcgPerMl: 16 }, options: [26.3, 30.5], answerIndex: 0, explanation: "e" };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", name: "infusion-cases", items: [infusionCase] }));
+    const r = await fetchInfusionCases({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [infusionCase] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/labs/infusion-cases", expect.anything());
+
+    const malformed = vi.fn(async () => jsonResponse({ version: "v1", name: "infusion-cases", items: [{ key: "INF-01" /* missing everything else */ }] }));
+    const bad = await fetchInfusionCases({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(bad).toEqual({ status: "offline" });
+  });
+
+  it("fetchTransfusionExercises validates each item against the specific TransfusionExercise shape, not just 'a non-empty array'", async () => {
+    const exercise = { key: "TRX-01", title: ["Acute hemolytic reaction", "ar"], vignette: "v", question: { prompt: "p", options: ["a", "b"], answer: 0, explanation: "e" } };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", name: "transfusion", items: [exercise] }));
+    const r = await fetchTransfusionExercises({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [exercise] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/labs/transfusion", expect.anything());
+
+    const malformed = vi.fn(async () => jsonResponse({ version: "v1", name: "transfusion", items: [{ key: "TRX-01" /* missing everything else */ }] }));
+    const bad = await fetchTransfusionExercises({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(bad).toEqual({ status: "offline" });
+  });
+
+  it("fetchCrrtData validates the lookup object against the shared CrrtData shape (not the array-shaped labs endpoint)", async () => {
+    const data = { components: [{ key: "filter", label: ["Hemofilter", "ar"], description: ["d", "ar"], alarms: ["Transmembrane pressure high", "ar"] }], alarms: [{ key: "CRRT-01", title: ["TMP alarm", "ar"], vignette: "v", componentKey: "filter", question: { prompt: "p", options: ["a", "b"], answer: 0, explanation: "e" } }] };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", data }));
+    const r = await fetchCrrtData({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/crrt", expect.anything());
+
+    const malformed = vi.fn(async () => jsonResponse({ version: "v1", data: { components: [{ key: "filter" /* missing everything else */ }], alarms: [] } }));
+    const bad = await fetchCrrtData({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
     expect(bad).toEqual({ status: "offline" });
   });
 });

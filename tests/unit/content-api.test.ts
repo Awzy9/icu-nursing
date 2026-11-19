@@ -3,6 +3,7 @@ import { caseVisualsResponseSchema, catalogEntryResponseSchema, catalogListRespo
 import { examPickResponseSchema, examQuestionsResponseSchema, examTopicsResponseSchema } from "@icu/schemas/working-exam";
 import { pathsResponseSchema } from "@icu/schemas/working-paths";
 import { revisionQuestionsResponseSchema } from "@icu/schemas/working-revision";
+import { crrtResponseSchema } from "@icu/schemas/working-crrt";
 
 const ORIGINAL_EDITION = process.env.CONTENT_EDITION;
 
@@ -31,6 +32,8 @@ describe("content API: disabled when the working edition is off", () => {
     expect(pathsGet().status).toBe(404);
     const { GET: revisionGet } = await import("@/app/api/content/revision/questions/route");
     expect(revisionGet().status).toBe(404);
+    const { GET: crrtGet } = await import("@/app/api/content/crrt/route");
+    expect(crrtGet().status).toBe(404);
   });
 });
 
@@ -201,5 +204,19 @@ describe("content API: enabled", () => {
     const parsed = revisionQuestionsResponseSchema.parse(await r.json());
     expect(parsed.items.length).toBeGreaterThan(100);
     for (const q of parsed.items) { expect(q.answer).toBeGreaterThanOrEqual(0); expect(q.explanation.length).toBeGreaterThan(0); }
+  });
+
+  it("GET /api/content/crrt returns the lookup object (not array-shaped, served separately from /labs/[name])", async () => {
+    const { GET } = await import("@/app/api/content/crrt/route");
+    const r = GET();
+    expect(r.status).toBe(200);
+    const parsed = crrtResponseSchema.parse(await r.json());
+    expect(parsed.data.components.length).toBeGreaterThan(0);
+    expect(parsed.data.alarms.length).toBeGreaterThan(0);
+  });
+
+  it("crrt is not reachable through the array-shaped labs whitelist", async () => {
+    const { GET } = await import("@/app/api/content/labs/[name]/route");
+    expect((await GET(new Request("http://x"), { params: Promise.resolve({ name: "crrt" }) })).status).toBe(404);
   });
 });
