@@ -6,8 +6,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Constants from "expo-constants";
 import {
-  fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, siteBaseUrl,
-  type CaseVisuals, type ContentClientDeps, type ExamQuestionShared, type ExamTopicShared, type News2Case, type RemoteResult, type ResolvedPathShared, type RevisionQuestionShared, type WorkingEntryShared, type WorkingEntrySummary,
+  fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, siteBaseUrl,
+  type CaseVisuals, type ContentClientDeps, type ExamQuestionShared, type ExamTopicShared, type GcsCase, type News2Case, type RemoteResult, type ResolvedPathShared, type RevisionQuestionShared, type WorkingEntryShared, type WorkingEntrySummary,
 } from "../core/remoteContent";
 
 const store = { get: (k: string) => AsyncStorage.getItem(k), set: (k: string, v: string) => AsyncStorage.setItem(k, v) };
@@ -49,3 +49,4 @@ export const useExamQuestions = (ids: string[]) => useFetcher<ExamQuestionShared
 export const usePaths = () => useFetcher<ResolvedPathShared[]>(() => fetchPaths(deps()), []);
 export const useRevisionQuestions = () => useFetcher<RevisionQuestionShared[]>(() => fetchRevisionQuestions(deps()), []);
 export const useNews2Cases = () => useFetcher<News2Case[]>(() => fetchNews2Cases(deps()), []);
+export const useGcsCases = () => useFetcher<GcsCase[]>(() => fetchGcsCases(deps()), []);
