@@ -18,8 +18,10 @@
     },
     "ios": {
       "bundleIdentifier": "com.nursingmastery.app",
-      "buildNumber": "1",
-      "supportsTablet": false
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "platforms": [
       "android",
@@ -42,6 +44,16 @@
         }
       ]
     ],
-    "scheme": "nursingmastery"
+    "scheme": "nursingmastery",
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "a672dfbf-3fe6-4971-8b97-0dffe86a2433"
+      }
+    }
   }
 }
