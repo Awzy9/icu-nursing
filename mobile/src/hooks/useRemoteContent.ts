@@ -6,8 +6,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Constants from "expo-constants";
 import {
-  fetchAlineExercises, fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchDefibExercises, fetchEcgExercises, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, fetchWaveformExercises, siteBaseUrl,
-  type AlineExercise, type CaseVisuals, type ContentClientDeps, type DefibExercise, type EcgExercise, type ExamQuestionShared, type ExamTopicShared, type GcsCase, type News2Case, type RemoteResult, type ResolvedPathShared, type RevisionQuestionShared, type WaveformExercise, type WorkingEntryShared, type WorkingEntrySummary,
+  fetchAbgCases, fetchAlineExercises, fetchCaseVisuals, fetchCatalogEntry, fetchCatalogList, fetchCrrtData, fetchDefibExercises, fetchEcgExercises, fetchExamQuestions, fetchExamTopics, fetchGcsCases, fetchInfusionCases, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, fetchTransfusionExercises, fetchWaveformExercises, siteBaseUrl,
+  type AbgCase, type AlineExercise, type CaseVisuals, type ContentClientDeps, type CrrtData, type DefibExercise, type EcgExercise, type ExamQuestionShared, type ExamTopicShared, type GcsCase, type InfusionCase, type News2Case, type RemoteResult, type ResolvedPathShared, type RevisionQuestionShared, type TransfusionExercise, type WaveformExercise, type WorkingEntryShared, type WorkingEntrySummary,
 } from "../core/remoteContent";
 
 const store = { get: (k: string) => AsyncStorage.getItem(k), set: (k: string, v: string) => AsyncStorage.setItem(k, v) };
@@ -54,3 +54,7 @@ export const useEcgExercises = () => useFetcher<EcgExercise[]>(() => fetchEcgExe
 export const useWaveformExercises = () => useFetcher<WaveformExercise[]>(() => fetchWaveformExercises(deps()), []);
 export const useAlineExercises = () => useFetcher<AlineExercise[]>(() => fetchAlineExercises(deps()), []);
 export const useDefibExercises = () => useFetcher<DefibExercise[]>(() => fetchDefibExercises(deps()), []);
+export const useAbgCases = () => useFetcher<AbgCase[]>(() => fetchAbgCases(deps()), []);
+export const useInfusionCases = () => useFetcher<InfusionCase[]>(() => fetchInfusionCases(deps()), []);
+export const useTransfusionExercises = () => useFetcher<TransfusionExercise[]>(() => fetchTransfusionExercises(deps()), []);
+export const useCrrtData = () => useFetcher<CrrtData>(() => fetchCrrtData(deps()), []);

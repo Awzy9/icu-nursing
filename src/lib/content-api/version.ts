@@ -20,8 +20,7 @@ export function contentVersion(): string {
 // of records. Whitelisted by exact name only - never accept an arbitrary filename from the
 // request path. working-case-visuals.json and working-crrt.json are structured lookup/config
 // objects, not arrays of records, so they are not served through this array-shaped list (see
-// GET /api/content/case-visuals; working-crrt.json has no endpoint yet - it is only needed once
-// a native CRRT lab screen is built, out of scope for this batch).
+// GET /api/content/case-visuals and GET /api/content/crrt instead).
 export const LAB_DATASETS: Record<string, string> = {
   ecg: "working-ecg.json",
   abg: "working-abg.json",
@@ -40,6 +39,13 @@ export function loadCaseVisuals(): unknown {
   if (cachedCaseVisuals) return cachedCaseVisuals;
   cachedCaseVisuals = JSON.parse(readFileSync(path.join(process.cwd(), "content", "working-case-visuals.json"), "utf8"));
   return cachedCaseVisuals;
+}
+
+let cachedCrrt: unknown;
+export function loadCrrtData(): unknown {
+  if (cachedCrrt) return cachedCrrt;
+  cachedCrrt = JSON.parse(readFileSync(path.join(process.cwd(), "content", "working-crrt.json"), "utf8"));
+  return cachedCrrt;
 }
 
 const labCache = new Map<string, unknown[]>();

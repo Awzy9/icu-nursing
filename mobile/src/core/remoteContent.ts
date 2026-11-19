@@ -19,12 +19,16 @@ import {
 } from "@icu/schemas/working-exam";
 import { pathsResponseSchema, type ResolvedPathShared } from "@icu/schemas/working-paths";
 import { revisionQuestionsResponseSchema, type RevisionQuestionShared } from "@icu/schemas/working-revision";
+import { crrtResponseSchema, type CrrtData } from "@icu/schemas/working-crrt";
 import { news2CaseSchema, type News2Case } from "./news2";
 import { gcsCaseSchema, type GcsCase } from "./gcs";
 import { ecgExerciseSchema, type EcgExercise } from "./ecg";
 import { waveformExerciseSchema, type WaveformExercise } from "./waveformExercise";
 import { alineExerciseSchema, type AlineExercise } from "./aline";
 import { defibExerciseSchema, type DefibExercise } from "./defib";
+import { abgCaseSchema, type AbgCase } from "./abg";
+import { infusionCaseSchema, type InfusionCase } from "./infusion";
+import { transfusionExerciseSchema, type TransfusionExercise } from "./transfusion";
 
 export type { WorkingEntrySummary, WorkingEntryShared, CaseVisuals } from "@icu/schemas/working-content";
 export type { ExamQuestionShared, ExamTopicShared } from "@icu/schemas/working-exam";
@@ -36,6 +40,10 @@ export type { EcgExercise } from "./ecg";
 export type { WaveformExercise } from "./waveformExercise";
 export type { AlineExercise } from "./aline";
 export type { DefibExercise } from "./defib";
+export type { AbgCase } from "./abg";
+export type { InfusionCase } from "./infusion";
+export type { TransfusionExercise } from "./transfusion";
+export type { CrrtData } from "@icu/schemas/working-crrt";
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void> }
 
 const DEFAULT_SITE_URL = "https://icu-nursing.vercel.app";
@@ -144,6 +152,22 @@ export function fetchAlineExercises(deps: ContentClientDeps): Promise<RemoteResu
 
 export function fetchDefibExercises(deps: ContentClientDeps): Promise<RemoteResult<DefibExercise[]>> {
   return fetchCached(deps, "lab:defib", "/api/content/labs/defib", (raw) => z.array(defibExerciseSchema).parse(labDatasetResponseSchema.parse(raw).items));
+}
+
+export function fetchAbgCases(deps: ContentClientDeps): Promise<RemoteResult<AbgCase[]>> {
+  return fetchCached(deps, "lab:abg", "/api/content/labs/abg", (raw) => z.array(abgCaseSchema).parse(labDatasetResponseSchema.parse(raw).items));
+}
+
+export function fetchInfusionCases(deps: ContentClientDeps): Promise<RemoteResult<InfusionCase[]>> {
+  return fetchCached(deps, "lab:infusion-cases", "/api/content/labs/infusion-cases", (raw) => z.array(infusionCaseSchema).parse(labDatasetResponseSchema.parse(raw).items));
+}
+
+export function fetchTransfusionExercises(deps: ContentClientDeps): Promise<RemoteResult<TransfusionExercise[]>> {
+  return fetchCached(deps, "lab:transfusion", "/api/content/labs/transfusion", (raw) => z.array(transfusionExerciseSchema).parse(labDatasetResponseSchema.parse(raw).items));
+}
+
+export function fetchCrrtData(deps: ContentClientDeps): Promise<RemoteResult<CrrtData>> {
+  return fetchCached(deps, "crrt", "/api/content/crrt", (raw) => crrtResponseSchema.parse(raw).data);
 }
 
 // A fresh random draw every call - never cached, since caching would defeat the point of
