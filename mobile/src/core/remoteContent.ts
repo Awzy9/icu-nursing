@@ -8,6 +8,7 @@
 // The cache store and fetch function are injected (same pattern as core/progress.ts's
 // KeyValueStore) so this module's logic is unit-testable from the repository root without a
 // React Native runtime; the app wires in AsyncStorage and the global fetch at the call sites.
+import { z } from "zod";
 import {
   catalogEntryResponseSchema, catalogListResponseSchema, caseVisualsResponseSchema, labDatasetResponseSchema,
   type WorkingEntrySummary, type WorkingEntryShared, type CaseVisuals,
@@ -18,11 +19,13 @@ import {
 } from "@icu/schemas/working-exam";
 import { pathsResponseSchema, type ResolvedPathShared } from "@icu/schemas/working-paths";
 import { revisionQuestionsResponseSchema, type RevisionQuestionShared } from "@icu/schemas/working-revision";
+import { news2CaseSchema, type News2Case } from "./news2";
 
 export type { WorkingEntrySummary, WorkingEntryShared, CaseVisuals } from "@icu/schemas/working-content";
 export type { ExamQuestionShared, ExamTopicShared } from "@icu/schemas/working-exam";
 export type { ResolvedPathShared } from "@icu/schemas/working-paths";
 export type { RevisionQuestionShared } from "@icu/schemas/working-revision";
+export type { News2Case } from "./news2";
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void> }
 
 const DEFAULT_SITE_URL = "https://icu-nursing.vercel.app";
@@ -102,6 +105,15 @@ export function fetchPaths(deps: ContentClientDeps): Promise<RemoteResult<Resolv
 
 export function fetchRevisionQuestions(deps: ContentClientDeps): Promise<RemoteResult<RevisionQuestionShared[]>> {
   return fetchCached(deps, "revision-questions", "/api/content/revision/questions", (raw) => revisionQuestionsResponseSchema.parse(raw).items);
+}
+
+// The NEWS2 scoring exercises (content/working-news2-cases.json) are served through the generic,
+// array-shaped /api/content/labs/[name] endpoint (labDatasetResponseSchema only checks "a
+// non-empty array of records"); this is the specific News2Case shape this screen needs, so it is
+// validated here rather than trusting the generic cast fetchLabDataset's own callers use for
+// labs that parse their own shape ad hoc.
+export function fetchNews2Cases(deps: ContentClientDeps): Promise<RemoteResult<News2Case[]>> {
+  return fetchCached(deps, "lab:news2-cases", "/api/content/labs/news2-cases", (raw) => z.array(news2CaseSchema).parse(labDatasetResponseSchema.parse(raw).items));
 }
 
 // A fresh random draw every call - never cached, since caching would defeat the point of
