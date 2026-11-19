@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchPaths, fetchRevisionQuestions, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
+import { fetchCatalogEntry, fetchCatalogList, fetchExamQuestions, fetchExamTopics, fetchLabDataset, fetchNews2Cases, fetchPaths, fetchRevisionQuestions, imageUrl, pickExamQuestions, siteBaseUrl, type ContentClientDeps, type KeyValueStore } from "../../mobile/src/core/remoteContent";
 
 const mem = (): KeyValueStore & { data: Map<string, string> } => { const data = new Map<string, string>(); return { data, get: async (k) => data.get(k) ?? null, set: async (k, v) => void data.set(k, v) }; };
 const jsonResponse = (body: unknown, ok = true) => ({ ok, status: ok ? 200 : 500, json: async () => body }) as Response;
@@ -93,6 +93,18 @@ describe("content client: online", () => {
     const r = await fetchRevisionQuestions({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
     expect(r).toEqual({ status: "ok", fromCache: false, data: [item] });
     expect(fetcher).toHaveBeenCalledWith("https://x/api/content/revision/questions", expect.anything());
+  });
+
+  it("fetchNews2Cases validates each item against the specific News2Case shape, not just 'a non-empty array'", async () => {
+    const news2Case = { key: "NEWS2-01", vignette: "v", scale: "1", respiratoryRate: 16, spo2: 98, onOxygen: false, systolicBp: 122, pulse: 72, consciousness: "alert", temperature: 36.8, options: ["a", "b"], answer: 0, explanation: "e" };
+    const fetcher = vi.fn(async () => jsonResponse({ version: "v1", name: "news2-cases", items: [news2Case] }));
+    const r = await fetchNews2Cases({ store: mem(), fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(r).toEqual({ status: "ok", fromCache: false, data: [news2Case] });
+    expect(fetcher).toHaveBeenCalledWith("https://x/api/content/labs/news2-cases", expect.anything());
+
+    const malformed = vi.fn(async () => jsonResponse({ version: "v1", name: "news2-cases", items: [{ key: "NEWS2-01" /* missing everything else */ }] }));
+    const bad = await fetchNews2Cases({ store: mem(), fetcher: malformed as unknown as typeof fetch, baseUrl: "https://x" });
+    expect(bad).toEqual({ status: "offline" });
   });
 });
 
