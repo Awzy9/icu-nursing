@@ -6,7 +6,7 @@ export type LocalizedText = Record<string, string>;
 
 export const messages = {
   en: {
-    "app.name": "Critical Care Nursing",
+    "app.name": "Nursing Mastery",
     "app.sampleBanner": "Demonstration mode: all content is synthetic and unreviewed. It is not clinical guidance and must not be used for patient care.",
     "app.englishOnly": "Content is in English and has not yet been clinically approved.",
     "tab.learn": "Learn", "tab.practice": "Practice", "tab.library": "Library", "tab.account": "Account",
@@ -122,7 +122,7 @@ export const messages = {
     "a11y.bookmarkOn": "Remove bookmark", "a11y.bookmarkOff": "Add bookmark", "a11y.openItem": "Open {title}",
   },
   ar: {
-    "app.name": "تمريض العناية المركزة",
+    "app.name": "إتقان التمريض",
     "app.sampleBanner": "وضع العرض التجريبي: كل المحتوى اصطناعي وغير مراجَع. وهو ليس إرشاداً سريرياً ولا يجوز استخدامه في رعاية المرضى.",
     "app.englishOnly": "المحتوى باللغة الإنجليزية ولم يُعتمد سريرياً بعد.",
     "tab.learn": "تعلّم", "tab.practice": "تدرّب", "tab.library": "المكتبة", "tab.account": "الحساب",

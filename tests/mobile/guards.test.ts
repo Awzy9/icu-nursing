@@ -55,12 +55,12 @@ describe("mobile source", () => {
     expect(users.every((f) => f.endsWith(path.join("auth", "CaptchaView.tsx")))).toBe(true);
     expect(readdirSync(path.join(root, "mobile/app")).length).toBeGreaterThan(5);
   });
-  it("keeps the Android package identifier, scheme and EAS project exactly, while showing the renamed display name", () => {
+  it("keeps the Android package identifier, iOS bundle identifier, scheme and display name in sync after the Nursing Mastery rebrand", () => {
     const app = JSON.parse(readFileSync(path.join(root, "mobile/app.json"), "utf8")).expo;
-    expect(app.android.package).toBe("com.criticalcarenursing.myapp");
-    expect(app.scheme).toBe("icuknowledgemap");
-    expect(app.extra.eas.projectId).toBe("bb38e642-1a31-49fd-89fa-81a50d2cd2fa");
-    expect(app.name).toBe("Critical Care Nursing");
+    expect(app.android.package).toBe("com.nursingmastery.app");
+    expect(app.ios.bundleIdentifier).toBe("com.nursingmastery.app");
+    expect(app.scheme).toBe("nursingmastery");
+    expect(app.name).toBe("Nursing Mastery");
   });
   it("has removed the original fictional prototype entirely: no /prototype route, no samples.ts, nothing named Prototype in either language", () => {
     expect(source.some((f) => f.endsWith(path.join("app", "prototype.tsx")))).toBe(false);

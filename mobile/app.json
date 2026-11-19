@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Critical Care Nursing",
-    "slug": "icu-knowledge-map-prototype",
+    "name": "Nursing Mastery",
+    "slug": "nursing-mastery",
     "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,11 +13,11 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.criticalcarenursing.myapp",
+      "package": "com.nursingmastery.app",
       "versionCode": 1
     },
     "ios": {
-      "bundleIdentifier": "com.criticalcarenursing.myapp",
+      "bundleIdentifier": "com.nursingmastery.app",
       "buildNumber": "1",
       "supportsTablet": false
     },
@@ -25,11 +25,6 @@
       "android",
       "ios"
     ],
-    "extra": {
-      "eas": {
-        "projectId": "bb38e642-1a31-49fd-89fa-81a50d2cd2fa"
-      }
-    },
     "owner": "awzy9s-team",
     "plugins": [
       "expo-router",
@@ -47,6 +42,6 @@
         }
       ]
     ],
-    "scheme": "icuknowledgemap"
+    "scheme": "nursingmastery"
   }
 }

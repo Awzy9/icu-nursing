@@ -922,7 +922,7 @@
   "Privacy": {
     "title": "Privacy policy",
     "updated": "Last updated: {date}",
-    "intro": "This policy covers the ICU Nurse Knowledge Map website and the Critical Care Nursing mobile app. It describes what we collect, why, and how you can see, change or delete it.",
+    "intro": "This policy covers the ICU Nurse Knowledge Map website and the Nursing Mastery mobile app. It describes what we collect, why, and how you can see, change or delete it.",
     "localTitle": "What stays on your device",
     "localBody": "Your language, appearance (theme), bookmarks and lesson/quiz progress are always kept locally on your device or browser. If you never create an account, none of this leaves your device.",
     "accountTitle": "If you create an account",
@@ -958,7 +958,7 @@
   "Terms": {
     "title": "Terms of use",
     "updated": "Last updated: {date}",
-    "intro": "By using the ICU Nurse Knowledge Map website or the Critical Care Nursing mobile app, you agree to these terms.",
+    "intro": "By using the ICU Nurse Knowledge Map website or the Nursing Mastery mobile app, you agree to these terms.",
     "purposeTitle": "Educational purpose only",
     "purposeBody": "This app is an educational study aid for nursing students and nurses. It is not a clinical decision-support tool, is not a substitute for professional judgement, training or your institution's protocols, and must not be used to make decisions about real patient care. Every clinical scenario, case and simulator in the app is a fictional teaching example, not real patient data, and has not necessarily had a formal clinical review.",
     "accountsTitle": "Accounts",
