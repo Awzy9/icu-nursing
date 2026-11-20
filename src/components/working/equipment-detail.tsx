@@ -1,10 +1,15 @@
 import { Activity, Droplets, Gauge, Monitor, Zap } from "lucide-react";
+import { waveformExercise } from "@/lib/working/waveform";
+import { WaveformChart } from "./waveform-chart";
 
 const prisMaxManual = "https://usrenalacute.baxter.com/sites/g/files/ebysai3231/files/2020-12/Prismax%20Operator%27s%20Manual.pdf";
 const zollManual = "https://www.zoll.com/-/media/LegacyMedia/public-site/products/r-series-defibrillators/9650-0912-06-sf_j.ashx";
 const arterialArticle = "https://pmc.ncbi.nlm.nih.gov/articles/PMC7183114/";
 
 const references = {
+  "EQ-02": [
+    ["HAMILTON-C1 operator’s manual · Waveform display and pressure/time graph (figure 6-6)", "https://www.hamilton-medical.com/dam/jcr%3Ae8fbf16e-0e4b-47b1-a093-d896a1fbb14a/HAMILTON-C1-ops-manual-SW2.2x-en-624326.05.pdf"],
+  ],
   "EQ-01": [
     ["Masimo RD SET reusable finger sensor photo", "https://www.masimo.com/products/sensors/rd-set/reusables/"],
     ["Masimo Radical-7 operator’s manual · Chapter 6, Alarms and Messages", "https://techdocs.masimo.com/globalassets/techdocs/pdf/lab-5476l_master.pdf"],
@@ -20,6 +25,15 @@ const references = {
 } as const;
 
 const panels = {
+  "EQ-02": {
+    title: "Read the ventilator display",
+    tiles: [
+      [Activity, "Pressure and flow", "Compare the start and end of inspiration across the traces. The dashed line on the flow plot marks zero flow."],
+      [Droplets, "Volume (mL)", "Read volume on its own scale. The trace shows volume rising during inspiration and falling during expiration in this teaching example."],
+      [Monitor, "Respiratory rate", "Read the displayed rate in breaths per minute. Check the label to distinguish the measured total rate from any set rate."],
+      [Gauge, "Alarm limits", "On the HAMILTON-C1 pressure/time plot, the high-pressure alarm limit is marked separately from the measured airway pressure trace."],
+    ],
+  },
   "EQ-01": {
     title: "Distinguish the reading, alarm limit and alarm message",
     tiles: [
@@ -57,9 +71,20 @@ export function EquipmentDetail({ moduleKey, parameters }: { moduleKey: string; 
   const links = references[moduleKey as keyof typeof references];
   const panel = parameters ? panels[moduleKey as keyof typeof panels] : undefined;
   if (!links) return null;
+  const teachingBreath = parameters && moduleKey === "EQ-02" ? waveformExercise("WV-01") : undefined;
 
   return (
     <div lang="en" dir="ltr" className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
+      {teachingBreath && (
+        <section aria-label="Example ventilator waveforms" className="space-y-3">
+          <h3 className="font-semibold">Follow one breath across three waveforms</h3>
+          <p className="text-sm text-muted-foreground">Simulated breath. Time runs left to right on all three traces.</p>
+          {teachingBreath.traces.map((trace) => <WaveformChart key={trace.label} trace={trace} locale="en" />)}
+          <ul className="list-disc space-y-1 ps-5 text-sm text-muted-foreground">
+            {teachingBreath.accessibleDescription.map((line) => <li key={line}>{line}</li>)}
+          </ul>
+        </section>
+      )}
       {panel && (
         <>
           <h3 className="font-semibold">{panel.title}</h3>
