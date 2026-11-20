@@ -11,9 +11,9 @@ import { EquipmentVisual } from "./equipment-visual";
 import { useLearning } from "./progress";
 import { RevisionSession } from "./revision";
 
-const card = "space-y-4 rounded-2xl border border-border bg-card p-5 sm:p-6";
+const card = "space-y-4 rounded-2xl border border-border bg-card p-4 sm:p-6";
 const button = "inline-flex min-h-11 items-center rounded-lg border border-border px-4 text-sm font-semibold hover:bg-muted disabled:opacity-50";
-const primaryButton = "inline-flex min-h-11 items-center rounded-lg bg-primary px-4 text-sm font-semibold text-primary-foreground disabled:opacity-50";
+const primaryButton = "inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-primary px-4 text-sm font-semibold text-primary-foreground disabled:opacity-50 sm:w-auto";
 const link = "inline-flex min-h-11 items-center font-semibold text-primary underline";
 type Activity = typeof activities[number];
 type Results = Record<string, boolean>;
@@ -195,15 +195,15 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
   }
 
   return (
-    <div className="mx-auto max-w-6xl space-y-6">
+    <div className="mx-auto max-w-6xl space-y-4 sm:space-y-6">
       <header className="overflow-hidden rounded-3xl border border-cyan-800/60 bg-slate-950 text-slate-50">
-        <div className={workspace ? "px-6 py-5 sm:px-8" : "grid items-center gap-6 px-6 py-7 sm:px-9 lg:grid-cols-[1.25fr_1fr] lg:px-12 lg:py-10"}>
+        <div className={workspace ? "px-6 py-5 sm:px-8" : "grid items-center gap-6 px-5 py-5 sm:px-9 sm:py-7 lg:grid-cols-[1.25fr_1fr] lg:px-12 lg:py-10"}>
           <div className="space-y-3">
-            <h1 className={workspace ? "text-2xl font-bold tracking-tight" : "text-4xl font-bold tracking-tight sm:text-6xl"}>{ar ? "مختبر تمريض العناية المركزة" : "ICU Nursing Lab"}</h1>
+            <h1 className={workspace ? "text-2xl font-bold tracking-tight" : "text-3xl font-bold tracking-tight sm:text-6xl"}>{ar ? "مختبر تمريض العناية المركزة" : "ICU Nursing Lab"}</h1>
             {!workspace && <p className="max-w-lg text-base leading-relaxed text-slate-300 sm:text-lg">{ar ? "اختر نشاطاً للتدرّب على قرارات الرعاية بجانب السرير. التمارين باللغة الإنجليزية." : "Practise bedside decisions with fictional cases, equipment photos and simulated monitor readings."}</p>}
           </div>
           {!workspace && (
-            <figure className="min-w-0 rounded-2xl border border-cyan-800/60 bg-slate-900 p-2">
+            <figure className="hidden min-w-0 rounded-2xl border border-cyan-800/60 bg-slate-900 p-2 sm:block">
               <div className="relative h-40 overflow-hidden rounded-xl bg-slate-950 sm:h-52 lg:h-64">
                 <Image src="/images/equipment/bedside-monitor-demo.jpg" alt={ar ? "شاشة مراقبة بجانب السرير في وضع العرض" : "Bedside monitor displaying example vital signs in demo mode"} fill sizes="(min-width: 1024px) 440px, 90vw" className="object-contain" priority />
               </div>
@@ -233,18 +233,16 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
         </nav>
       )}
       <nav hidden={workspace !== null} id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"}>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
         {workspaces.map(({ id, title, detail, icon: Icon }) => {
           const status = activityStatus(id);
           return (
-          <a key={id} href={`#${id}`} onClick={() => setWorkspace(id)} className={`group relative flex min-h-40 flex-col gap-3 overflow-hidden rounded-2xl border p-5 transition-colors ${id === "shift" ? "border-cyan-800 bg-gradient-to-br from-slate-950 to-cyan-950 text-slate-50 hover:border-cyan-400 sm:col-span-2 lg:col-span-4" : "border-border bg-card hover:border-primary hover:bg-primary/5"}`}>
-            <span className="flex items-center justify-between">
-              <span className={`grid size-11 place-items-center rounded-xl ${workspaceAccents[id]}`}><Icon aria-hidden className="size-5" /></span>
-              <ArrowRight aria-hidden className={`size-5 rtl:rotate-180 ${id === "shift" ? "text-cyan-300" : "text-muted-foreground"}`} />
-            </span>
-            <span className={id === "shift" ? "text-2xl font-bold" : "font-bold"}>{title[language]}</span>
-            <span className={id === "shift" ? "text-sm text-slate-300" : "text-sm text-muted-foreground"}>{detail[language]}</span>
-            {status && <span className={`mt-auto pt-1 text-sm font-semibold ${id === "shift" ? "text-cyan-200" : "text-primary"}`}>{status}</span>}
+          <a key={id} href={`#${id}`} onClick={() => setWorkspace(id)} className={`group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-3 gap-y-0.5 overflow-hidden rounded-2xl border p-3 transition-colors sm:flex sm:min-h-40 sm:flex-col sm:items-stretch sm:gap-3 sm:p-5 ${id === "shift" ? "border-cyan-800 bg-gradient-to-br from-slate-950 to-cyan-950 text-slate-50 hover:border-cyan-400 sm:col-span-2 lg:col-span-4" : "border-border bg-card hover:border-primary hover:bg-primary/5"}`}>
+            <span className={`col-start-1 row-start-1 row-span-2 grid size-11 place-items-center rounded-xl sm:row-span-1 ${workspaceAccents[id]}`}><Icon aria-hidden className="size-5" /></span>
+            <ArrowRight aria-hidden className={`col-start-3 row-start-1 row-span-2 size-5 self-center rtl:rotate-180 sm:hidden ${id === "shift" ? "text-cyan-300" : "text-muted-foreground"}`} />
+            <span className={id === "shift" ? "col-start-2 row-start-1 font-bold sm:text-2xl" : "col-start-2 row-start-1 font-bold"}>{title[language]}</span>
+            <span className={id === "shift" ? "col-start-2 row-start-2 text-sm text-slate-300" : "col-start-2 row-start-2 text-sm text-muted-foreground"}>{detail[language]}</span>
+            {status && <span className={`col-start-2 row-start-3 mt-auto pt-1 text-sm font-semibold ${id === "shift" ? "text-cyan-200" : "text-primary"}`}>{status}</span>}
           </a>
         );
         })}

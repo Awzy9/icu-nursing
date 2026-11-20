@@ -27,7 +27,12 @@ test.describe("keyboard and navigation", () => {
 
   test("language switcher changes locale and direction", async ({ page }) => {
     await page.goto("/en/library");
-    await page.getByLabel("Language").selectOption("ar");
+    const language = page.getByRole("combobox", { name: "Language" });
+    if (!(await language.isVisible())) {
+      await page.getByRole("button", { name: "Menu", exact: true }).click();
+      await expect(page.locator("#mobile-menu").getByLabel("Language")).toBeVisible();
+    }
+    await language.selectOption("ar");
     await expect(page).toHaveURL(/\/ar\/library/);
     await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("مكتبة المعرفة");
@@ -135,7 +140,12 @@ test.describe("content security policy", () => {
     const b = (await request.get("/en")).headers()["content-security-policy"];
     expect(a).not.toEqual(b);
     await page.goto("/en/library");
-    await page.getByLabel("Language").selectOption("ar"); // client-side JS must run
+    const language = page.getByRole("combobox", { name: "Language" });
+    if (!(await language.isVisible())) {
+      await page.getByRole("button", { name: "Menu", exact: true }).click();
+      await expect(page.locator("#mobile-menu").getByLabel("Language")).toBeVisible();
+    }
+    await language.selectOption("ar"); // client-side JS must run
     await expect(page).toHaveURL(/\/ar\/library/);
   });
 });

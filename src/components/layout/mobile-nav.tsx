@@ -7,7 +7,7 @@ import { NavLink as ActiveLink } from "./nav-link";
 
 export interface NavLink { href: string; label: string; soon?: boolean }
 
-export function MobileNav({ links, footer }: { links: NavLink[]; footer?: React.ReactNode }) {
+export function MobileNav({ links, footer, tools }: { links: NavLink[]; footer?: React.ReactNode; tools?: React.ReactNode }) {
   const t = useTranslations("Nav");
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -40,11 +40,12 @@ export function MobileNav({ links, footer }: { links: NavLink[]; footer?: React.
         {open ? <X className="size-5" aria-hidden /> : <Menu className="size-5" aria-hidden />}
       </button>
       {open ? (
-        <nav id="mobile-menu" aria-label={t("main")} className="absolute inset-x-0 top-full z-40 border-b border-border bg-card p-4 shadow-lg">
-          <ul className="space-y-1">
+        <nav id="mobile-menu" aria-label={t("main")} className="absolute inset-x-0 top-full z-40 max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain border-b border-border bg-card p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-lg">
+          {tools && <div className="mb-3 flex flex-wrap items-center gap-2 border-b border-border pb-3 sm:hidden">{tools}</div>}
+          <ul className="grid gap-1 min-[380px]:grid-cols-2">
             {links.map((l) => (
               <li key={l.href}>
-                <ActiveLink href={l.href} className="flex min-h-11 items-center justify-between rounded-md px-3 text-foreground no-underline hover:bg-muted">
+                <ActiveLink href={l.href} className="flex min-h-12 items-center justify-between rounded-md px-3 text-sm font-medium text-foreground no-underline hover:bg-muted">
                   <span>{l.label}</span>
                   {l.soon ? <span className="text-xs text-muted-foreground">{t("soon")}</span> : null}
                 </ActiveLink>
