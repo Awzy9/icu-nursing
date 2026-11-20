@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Activity, ArrowLeft, ArrowRight, BookOpenCheck, ListRestart, Monitor, Pill } from "lucide-react";
+import { Activity, ArrowLeft, ArrowRight, CheckCircle2, CircleAlert, BookOpenCheck, ListRestart, Monitor, Pill } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { activities, expiratoryFlowExamples, orientation } from "@/lib/working/nursing-lab";
 import { computeRevisionQueue, type RevisionQuestion, type RevisionStatus } from "@/lib/working/revision";
@@ -81,7 +81,7 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
       <fieldset className="space-y-2" disabled={checked}>
         <legend className="mb-2 font-semibold">{step.prompt}</legend>
         {step.choices.map((text, i) => (
-          <label key={text} className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg border border-border px-3 py-2">
+          <label key={text} className={`flex min-h-12 items-center gap-3 rounded-xl border px-4 py-3 ${checked ? "cursor-default" : "cursor-pointer hover:bg-muted"} ${choice === i ? "border-primary bg-primary/10" : "border-border"}`}>
             <input type="radio" name={activity.id} checked={choice === i} onChange={() => setChoice(i)} />
             <span>{text}</span>
           </label>
@@ -89,8 +89,14 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
       </fieldset>
       {checked ? (
         <>
-          <p role="status" className="rounded-lg bg-muted p-4"><strong>{choice === step.answer ? "Correct. " : "Review this decision. "}</strong>{step.why}</p>
-          <button className={button} type="button" onClick={() => { setIndex(retryIndex === undefined ? index + 1 : activity.steps.length); setChoice(null); setChecked(false); }}>
+          <div role="status" className={`flex gap-3 rounded-xl border p-4 ${choice === step.answer ? "border-primary/40 bg-primary/10" : "border-amber-500/40 bg-amber-500/10"}`}>
+            {choice === step.answer ? <CheckCircle2 aria-hidden className="mt-0.5 size-5 shrink-0 text-primary" /> : <CircleAlert aria-hidden className="mt-0.5 size-5 shrink-0 text-amber-600 dark:text-amber-300" />}
+            <div>
+              <p className="font-bold">{choice === step.answer ? "Correct" : "Review this decision"}</p>
+              <p className="mt-1 text-sm leading-relaxed">{step.why}</p>
+            </div>
+          </div>
+          <button className={primaryButton} type="button" onClick={() => { setIndex(retryIndex === undefined ? index + 1 : activity.steps.length); setChoice(null); setChecked(false); }}>
             {retryIndex !== undefined || index + 1 === activity.steps.length ? "Finish activity" : "Next decision"}
           </button>
         </>
@@ -165,16 +171,24 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
         </div>
       </header>
       {workspace && <a href="#activities" onClick={() => setWorkspace(null)} className={link}><ArrowLeft aria-hidden className="me-2 size-4 rtl:rotate-180" />{ar ? "كل الأنشطة" : "All activities"}</a>}
-      <nav id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"} className={workspace ? "flex flex-wrap gap-2" : "grid gap-3 sm:grid-cols-2 lg:grid-cols-3"}>
+      {workspace && (
+        <label className="block space-y-1 sm:hidden">
+          <span className="text-sm font-semibold">{ar ? "انتقل إلى نشاط" : "Switch activity"}</span>
+          <select value={workspace} onChange={(event) => { window.location.hash = event.target.value; }} className="min-h-12 w-full rounded-xl border border-border bg-card px-3">
+            {workspaces.map(({ id, title }) => <option key={id} value={id}>{title[language]}</option>)}
+          </select>
+        </label>
+      )}
+      <nav id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"} className={workspace ? "hidden flex-wrap gap-2 sm:flex" : "grid gap-4 sm:grid-cols-2 lg:grid-cols-4"}>
         {workspaces.map(({ id, title, detail, icon: Icon }) => workspace ? (
           <a key={id} href={`#${id}`} aria-current={workspace === id ? "location" : undefined} onClick={() => setWorkspace(id)} className={`${button} gap-2 ${workspace === id ? "border-primary bg-primary/10 text-primary" : ""}`}>
             <Icon aria-hidden className="size-4" />{title[language]}
           </a>
         ) : (
-          <a key={id} href={`#${id}`} onClick={() => setWorkspace(id)} className="group flex min-h-36 flex-col gap-3 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-primary hover:bg-primary/5">
-            <span className="flex items-center justify-between"><Icon aria-hidden className="size-6 text-primary" /><ArrowRight aria-hidden className="size-4 text-primary rtl:rotate-180" /></span>
-            <span className="font-bold">{title[language]}</span>
-            <span className="text-sm text-muted-foreground">{detail[language]}</span>
+          <a key={id} href={`#${id}`} onClick={() => setWorkspace(id)} className={`group relative flex min-h-40 flex-col gap-3 overflow-hidden rounded-2xl border p-5 transition-colors ${id === "shift" ? "border-cyan-800 bg-gradient-to-br from-slate-950 to-cyan-950 text-slate-50 hover:border-cyan-400 sm:col-span-2 lg:col-span-4" : "border-border bg-card hover:border-primary hover:bg-primary/5"}`}>
+            <span className={`flex items-center justify-between ${id === "shift" ? "text-cyan-300" : "text-primary"}`}><Icon aria-hidden className="size-6" /><ArrowRight aria-hidden className="size-4 rtl:rotate-180" /></span>
+            <span className={id === "shift" ? "text-2xl font-bold" : "font-bold"}>{title[language]}</span>
+            <span className={id === "shift" ? "text-sm text-slate-300" : "text-sm text-muted-foreground"}>{detail[language]}</span>
           </a>
         ))}
       </nav>
