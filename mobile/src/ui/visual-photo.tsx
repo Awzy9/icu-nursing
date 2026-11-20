@@ -14,7 +14,7 @@ export function VisualPhoto({ visual, width = 280 }: { visual: Visual; width?: n
   const { locale, palette } = useApp();
   const ar = locale === "ar";
   const lang = ar ? 1 : 0;
-  const uri = imageUrl(siteBaseUrl(process.env as Record<string, string | undefined>), visual.path);
+  const uri = imageUrl(siteBaseUrl({ EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL }), visual.path);
   const height = (visual.height / visual.width) * width;
 
   return (
