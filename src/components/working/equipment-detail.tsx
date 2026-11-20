@@ -26,6 +26,9 @@ const references = {
     ["Vantive PrisMax · Machine photos", "https://pro.vantive.com/prismax-critical-care-system"],
     ["Baxter PrisMax operator’s manual · Monitored data display, p. 75", prisMaxManual + "#page=75"],
   ],
+  "EQ-07": [
+    ["Kangaroo Joey operating manual · Continuous mode, display figures and flow errors", "https://www.lincare.com/-/media/Project/Lincare/Files/Enteral-Devices/Kangaroo-Joey-Enteral-feeding-pump-Operating-Manual.pdf"],
+  ],
 } as const;
 
 const infusionReadings = [
@@ -34,15 +37,21 @@ const infusionReadings = [
   ["Volume infused", "20 mL", "The volume the pump has recorded since the displayed counter was last reset."],
 ] as const;
 
-function InfusionPumpDisplay() {
+const enteralReadings = [
+  ["Feed rate", "50 mL/h", "The programmed rate for formula delivery."],
+  ["Volume fed", "100 mL", "The amount of formula recorded by the pump. With a feed-and-flush set, review flush volume separately."],
+  ["Pump status", "Running", "The pump reports an active feed program. Confirm tube position using the approved method for that tube."],
+] as const;
+
+function PumpDisplay({ title, readings }: { title: string; readings: readonly (readonly [string, string, string])[] }) {
   return (
     <figure className="space-y-3">
       <figcaption>
-        <h3 className="font-semibold">Compare the three infusion readings</h3>
+        <h3 className="font-semibold">{title}</h3>
         <p className="text-sm text-muted-foreground">Simulated display with example values for reading practice.</p>
       </figcaption>
       <dl className="grid gap-3 rounded-xl border border-slate-600 bg-slate-950 p-4 text-slate-100 sm:grid-cols-3">
-        {infusionReadings.map(([label, value, detail]) => (
+        {readings.map(([label, value, detail]) => (
           <div key={label} className="min-w-0 rounded-lg border border-slate-700 bg-slate-900 p-3">
             <dt className="text-sm font-medium text-slate-200">{label}</dt>
             <dd className="mt-1 space-y-2">
@@ -57,6 +66,13 @@ function InfusionPumpDisplay() {
 }
 
 const panels = {
+  "EQ-07": {
+    title: "Recognise an interrupted feed",
+    tiles: [
+      [Monitor, "On hold", "The feed program is paused. The programmed rate can still be visible, so read the status before assuming the feed is running."],
+      [Gauge, "Flow error", "On the Kangaroo Joey, a flow error can occur when the feeding line is blocked. Read the exact alarm and use the device instructions and local protocol."],
+    ],
+  },
   "EQ-04": {
     title: "Read the alarm message",
     tiles: [
@@ -114,7 +130,8 @@ export function EquipmentDetail({ moduleKey, parameters }: { moduleKey: string; 
 
   return (
     <div lang="en" dir="ltr" className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
-      {parameters && moduleKey === "EQ-04" && <InfusionPumpDisplay />}
+      {parameters && moduleKey === "EQ-04" && <PumpDisplay title="Compare the three infusion readings" readings={infusionReadings} />}
+      {parameters && moduleKey === "EQ-07" && <PumpDisplay title="Read an enteral feeding pump display" readings={enteralReadings} />}
       {teachingBreath && (
         <section aria-label="Example ventilator waveforms" className="space-y-3">
           <h3 className="font-semibold">Follow one breath across three waveforms</h3>
