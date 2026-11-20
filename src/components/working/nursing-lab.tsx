@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Activity, ArrowLeft, ArrowRight, BookOpenCheck, ListRestart, Monitor, Pill } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { activities, expiratoryFlowExamples, orientation } from "@/lib/working/nursing-lab";
 import { computeRevisionQueue, type RevisionQuestion, type RevisionStatus } from "@/lib/working/revision";
@@ -11,9 +12,19 @@ import { RevisionSession } from "./revision";
 
 const card = "space-y-4 rounded-2xl border border-border bg-card p-5 sm:p-6";
 const button = "inline-flex min-h-11 items-center rounded-lg border border-border px-4 text-sm font-semibold hover:bg-muted disabled:opacity-50";
+const primaryButton = "inline-flex min-h-11 items-center rounded-lg bg-primary px-4 text-sm font-semibold text-primary-foreground disabled:opacity-50";
 const link = "inline-flex min-h-11 items-center font-semibold text-primary underline";
 type Activity = typeof activities[number];
 type Results = Record<string, boolean>;
+
+const workspaces = [
+  { id: "shift", title: ["Shift simulator", "محاكاة المناوبة"], detail: ["Decide which patient needs you first.", "حدّد المريض الذي يحتاج إلى تقييمك أولاً."], icon: Activity },
+  { id: "orientation", title: ["Orientation path", "مسار التهيئة"], detail: ["Start with four guided bedside skills.", "ابدأ بأربع مهارات سريرية موجّهة."], icon: BookOpenCheck },
+  { id: "medication-checks", title: ["Medication checks", "التحقق من الأدوية"], detail: ["Compare the order, label and pump.", "قارن بين الوصفة والملصق والمضخة."], icon: Pill },
+  { id: "visual-skills", title: ["Visual skills", "المهارات البصرية"], detail: ["Read equipment photos and waveforms.", "تعرّف على الأجهزة وفسّر المنحنيات."], icon: Monitor },
+  { id: "mistakes", title: ["Review mistakes", "مراجعة الأخطاء"], detail: ["Retry decisions and questions you missed.", "أعد محاولة القرارات والأسئلة التي أخطأت فيها."], icon: ListRestart },
+] as const;
+type Workspace = typeof workspaces[number]["id"];
 
 function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity; retryIndex?: number; onAnswer: (key: string, correct: boolean) => void }) {
   const [ index, setIndex ] = useState(retryIndex ?? 0);
@@ -33,7 +44,10 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
 
   return (
     <div className="space-y-4" lang="en" dir="ltr">
-      <p className="text-sm text-muted-foreground">Decision {index + 1} of {activity.steps.length}</p>
+      <div className="space-y-2">
+        <p className="text-sm font-semibold text-muted-foreground">{retryIndex === undefined ? `Decision ${index + 1} of ${activity.steps.length}` : "Retrying a missed decision"}</p>
+        {retryIndex === undefined && <progress aria-label="Activity progress" value={index + Number(checked)} max={activity.steps.length} className="block h-2 w-full accent-primary" />}
+      </div>
       {"flowComparison" in step && (
         <section aria-label="Simulated ventilator flow traces" className="space-y-3 rounded-xl border border-border p-4">
           <p className="text-sm text-muted-foreground">Time runs left to right. The dashed line marks zero flow.</p>
@@ -81,7 +95,7 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
           </button>
         </>
       ) : (
-        <button className={button} type="button" disabled={choice === null} onClick={() => {
+        <button className={primaryButton} type="button" disabled={choice === null} onClick={() => {
           if (choice === null) return;
           const correct = choice === step.answer;
           if (activity.id === "shift" && index === 0) setDelayed(!correct);
@@ -96,6 +110,25 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
 
 export function NursingLab({ locale, questions }: { locale: string; questions: RevisionQuestion[] }) {
   const { attempts, accountId, lessons } = useLearning();
+  const ar = locale === "ar";
+  const language = ar ? 1 : 0;
+  const [workspace, setWorkspace] = useState<Workspace | null>(null);
+
+  useEffect(() => {
+    function selectFromHash() {
+      const target = window.location.hash.slice(1);
+      setWorkspace(workspaces.find(({ id }) => id === target)?.id ?? null);
+    }
+    selectFromHash();
+    window.addEventListener("hashchange", selectFromHash);
+    return () => window.removeEventListener("hashchange", selectFromHash);
+  }, []);
+
+  useEffect(() => {
+    if (!workspace) return;
+    const panel = document.getElementById(workspace);
+    panel?.focus({ preventScroll: true });
+  }, [workspace]);
   const [ results, setResults ] = useState<Results>({});
   const [ review, setReview ] = useState<RevisionStatus[] | null>(null);
   const [ runs, setRuns ] = useState<Record<string, { version: number; retryIndex?: number }>>({});
@@ -122,18 +155,30 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
   const freshQuestions = queue.due.filter(({ question }) => missedModules.has(question.moduleKey) && !attempted.has(question.id));
   const missedDecisions = activities.flatMap((activity) => activity.steps.flatMap((step, i) =>
     results[`${activity.id}-${i}`] === false ? [{ activity, step, i }] : []));
-  const titles = [...activities, { id: "orientation", title: "ICU Orientation Path" }, { id: "mistakes", title: "Review My Mistakes" }];
-
   return (
-    <div className="mx-auto max-w-4xl space-y-8">
-      <header className="space-y-3">
-        <h1 className="text-3xl font-bold">{locale === "ar" ? "مختبر تمريض العناية المركزة" : "ICU Nursing Lab"}</h1>
-        <p className="text-muted-foreground">{locale === "ar" ? "تمارين خيالية للتعلم. محتوى الأنشطة باللغة الإنجليزية." : "Practise with fictional cases and equipment examples."}</p>
+    <div className="mx-auto max-w-6xl space-y-6">
+      <header className="relative overflow-hidden rounded-3xl border border-cyan-800/60 bg-slate-950 px-6 py-8 text-slate-50 sm:px-10 sm:py-12">
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-800/60 via-slate-950 to-slate-950" />
+        <div className="relative max-w-2xl space-y-3">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">{ar ? "مختبر تمريض العناية المركزة" : "ICU Nursing Lab"}</h1>
+          <p className="max-w-xl text-base leading-relaxed text-slate-300">{ar ? "اختر نشاطاً للتدرّب على قرارات الرعاية بجانب السرير. التمارين باللغة الإنجليزية." : "Practise bedside decisions with fictional cases, equipment photos and simulated monitor readings."}</p>
+        </div>
       </header>
-      <nav aria-label={locale === "ar" ? "الأنشطة" : "Lab activities"} className="flex flex-wrap gap-2" lang="en">
-        {titles.map(({ id, title }) => <a key={id} className={button} href={`#${id}`}>{title}</a>)}
+      {workspace && <a href="#activities" onClick={() => setWorkspace(null)} className={link}><ArrowLeft aria-hidden className="me-2 size-4 rtl:rotate-180" />{ar ? "كل الأنشطة" : "All activities"}</a>}
+      <nav id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"} className={workspace ? "flex flex-wrap gap-2" : "grid gap-3 sm:grid-cols-2 lg:grid-cols-3"}>
+        {workspaces.map(({ id, title, detail, icon: Icon }) => workspace ? (
+          <a key={id} href={`#${id}`} aria-current={workspace === id ? "location" : undefined} onClick={() => setWorkspace(id)} className={`${button} gap-2 ${workspace === id ? "border-primary bg-primary/10 text-primary" : ""}`}>
+            <Icon aria-hidden className="size-4" />{title[language]}
+          </a>
+        ) : (
+          <a key={id} href={`#${id}`} onClick={() => setWorkspace(id)} className="group flex min-h-36 flex-col gap-3 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-primary hover:bg-primary/5">
+            <span className="flex items-center justify-between"><Icon aria-hidden className="size-6 text-primary" /><ArrowRight aria-hidden className="size-4 text-primary rtl:rotate-180" /></span>
+            <span className="font-bold">{title[language]}</span>
+            <span className="text-sm text-muted-foreground">{detail[language]}</span>
+          </a>
+        ))}
       </nav>
-      <section id="orientation" className={`${card} scroll-mt-24`} lang="en" dir="ltr">
+      <section hidden={workspace !== "orientation"} tabIndex={-1} id="orientation" className={`${card} scroll-mt-24 focus:outline-none`} lang="en" dir="ltr">
         <h2 className="text-xl font-bold">ICU Orientation Path</h2>
         <ol className="divide-y divide-border">
           {orientation.map(({ title, lesson, practice }) => {
@@ -143,7 +188,7 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
                 <h3 className="font-semibold">{title}</h3>
                 <div className="flex flex-wrap gap-x-5">
                   <Link className={link} href={`/working/${lesson}`}>{done ? "Revisit completed lesson" : "Open lesson"}</Link>
-                  {practice.startsWith("#") ? <a className={link} href={practice}>Try practice</a> : <Link className={link} href={practice}>Try practice</Link>}
+                  {practice.startsWith("#") ? <a className={link} href={practice} onClick={() => setWorkspace(workspaces.find(({ id }) => practice === `#${id}`)?.id ?? null)}>Try practice</a> : <Link className={link} href={practice}>Try practice</Link>}
                 </div>
               </li>
             );
@@ -153,18 +198,18 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
       {activities.map((activity) => {
         const run = runs[activity.id];
         return (
-        <section key={activity.id} id={activity.id} className={`${card} scroll-mt-24`} lang="en" dir="ltr">
+        <section key={activity.id} hidden={workspace !== activity.id} tabIndex={-1} id={activity.id} className={`${card} scroll-mt-24 focus:outline-none`} lang="en" dir="ltr">
           <h2 className="text-xl font-bold">{activity.title}</h2>
           <p className="text-muted-foreground">{activity.intro}</p>
           {run
             ? <ActivityPlayer key={run.version} activity={activity} retryIndex={run.retryIndex} onAnswer={saveResult} />
-            : <button type="button" className={button} onClick={() => setRuns({ ...runs, [activity.id]: { version: 0 } })}>Start {activity.title}</button>}
+            : <button type="button" className={primaryButton} onClick={() => setRuns({ ...runs, [activity.id]: { version: 0 } })}>Start {activity.title}</button>}
           {"source" in activity && <div><a className={link} href={activity.source.href}>{activity.source.label}</a></div>}
           {activity.id === "visual-skills" && <Link className={link} href="/waveforms">Practise interpreting ventilator waveforms</Link>}
         </section>
         );
       })}
-      <section id="mistakes" className={`${card} scroll-mt-24`} lang="en" dir="ltr">
+      <section hidden={workspace !== "mistakes"} tabIndex={-1} id="mistakes" className={`${card} scroll-mt-24 focus:outline-none`} lang="en" dir="ltr">
         <h2 className="text-xl font-bold">Review My Mistakes</h2>
         <p className="text-sm text-muted-foreground">Lab decisions are saved in this browser. Question-bank answers follow your usual study progress.</p>
         {review ? <RevisionSession items={review} locale={locale} onFinish={() => setReview(null)} /> : (
@@ -173,12 +218,12 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
               {missedQuestions.length > 0 && <button className={button} onClick={() => setReview(missedQuestions.slice(0, 20))}>Retry missed questions ({missedQuestions.length})</button>}
               {freshQuestions.length > 0 && <button className={button} onClick={() => setReview(freshQuestions.slice(0, 20))}>Try new questions on those topics</button>}
             </div>
-            {!missedQuestions.length && !missedDecisions.length && <p>No missed answers to review yet. Start with the <a className="text-primary underline" href="#shift">ICU Shift Simulator</a>.</p>}
+            {!missedQuestions.length && !missedDecisions.length && <p>No missed answers to review yet. Start with the <a className="text-primary underline" href="#shift" onClick={() => setWorkspace("shift")}>ICU Shift Simulator</a>.</p>}
             {missedDecisions.map(({ activity, step, i }) => (
               <details key={step.prompt} className="rounded-lg border border-border p-3">
                 <summary className="cursor-pointer font-semibold">{step.prompt}</summary>
                 <p className="my-2">{step.why}</p>
-                <a className={link} href={`#${activity.id}`} onClick={() => setRuns((current) => ({ ...current, [activity.id]: { version: (current[activity.id]?.version ?? 0) + 1, retryIndex: i } }))}>Retry in {activity.title}</a>
+                <a className={link} href={`#${activity.id}`} onClick={() => { setWorkspace(activity.id); setRuns((current) => ({ ...current, [activity.id]: { version: (current[activity.id]?.version ?? 0) + 1, retryIndex: i } })); }}>Retry in {activity.title}</a>
               </details>
             ))}
           </>

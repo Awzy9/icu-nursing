@@ -1,7 +1,7 @@
 import { workingEditionEnabled, workingQuery } from "@/lib/working";
 import { WorkingCatalog } from "@/components/working/catalog";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, BookOpenCheck, Globe2, ScrollText, ShieldCheck } from "lucide-react";
+import { Activity, ArrowRight, BookOpenCheck, Globe2, ScrollText, ShieldCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Callout } from "@/components/ui/feedback";
@@ -12,8 +12,13 @@ export default async function HomePage({ params, searchParams }: { params: Promi
   setRequestLocale(locale);
   if (workingEditionEnabled()) return (
     <div className="space-y-5">
-      <Link href="/nursing-lab" className="inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">
-        {locale === "ar" ? "افتح مختبر تمريض العناية المركزة" : "Open ICU Nursing Lab"}
+      <Link href="/nursing-lab" className="group flex items-center gap-4 rounded-2xl border border-cyan-800/60 bg-gradient-to-br from-slate-950 to-cyan-950 p-5 text-slate-50 no-underline transition-colors hover:border-cyan-400 sm:px-7">
+        <Activity aria-hidden className="size-7 shrink-0 text-cyan-300" />
+        <span className="min-w-0 flex-1">
+          <span className="block text-lg font-bold">{locale === "ar" ? "مختبر تمريض العناية المركزة" : "ICU Nursing Lab"}</span>
+          <span className="mt-1 block text-sm text-slate-300">{locale === "ar" ? "تدرّب على قرارات المناوبة وقراءة الأجهزة." : "Practise shift decisions, equipment skills and medication checks."}</span>
+        </span>
+        <ArrowRight aria-hidden className="size-5 shrink-0 text-cyan-300 rtl:rotate-180" />
       </Link>
       <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} />
     </div>
