@@ -696,7 +696,7 @@ function EquipmentPhoto({ visual, locale, hideTeaching = false }: { visual: Visu
   const picture = (
     <Image
       src={photo}
-      alt={hideTeaching ? (visual.file === "syringe-pump" ? "A syringe pump with a display, a horizontal syringe and a mechanism at its plunger end." : "An arterial monitoring setup showing the line and an inline pressure-sensing component.") : visual.alt[language]}
+      alt={hideTeaching ? (visual.file === "syringe-pump" ? "A syringe pump with a display, a horizontal syringe and a mechanism at its plunger end." : visual.file === "defibrillator" ? "A portable defibrillator with a front panel, connectors and a carrying handle." : "An arterial monitoring setup showing the line and an inline pressure-sensing component.") : visual.alt[language]}
       width={visual.width}
       height={visual.height}
       sizes="(min-width: 1024px) 540px, 85vw"

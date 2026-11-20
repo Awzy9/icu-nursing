@@ -7,6 +7,10 @@ export const activities = [
     steps: [
       {
         prompt: "Patient A has a disconnect alarm, no visible chest rise and a rapidly falling saturation. Patient B now needs more oxygen than at handover, but is awake and speaking. What do you do first?",
+        monitor: [
+          { patient: "Patient A", readings: [["SpO₂ trend", "96% → 84%"], ["Ventilator", "Disconnect alarm"], ["Chest rise", "Absent"]] },
+          { patient: "Patient B", readings: [["SpO₂ trend", "94% → 94%"], ["Oxygen flow", "2 → 4 L/min"], ["Response", "Awake and speaking"]] },
+        ],
         choices: ["Assess Patient A immediately and call for help while arranging prompt assessment of Patient B.", "Review Patient B’s chart before checking either patient.", "Silence Patient A’s alarm and wait for another reading."],
         answer: 0,
         why: "The alarm is accompanied by absent chest rise and rapid deterioration. Patient A needs immediate airway and breathing assessment. Asking a colleague to assess Patient B keeps the second concern from being delayed.",
@@ -19,6 +23,10 @@ export const activities = [
       },
       {
         prompt: "Patient A is stable. Patient B’s saturation is back in target on more oxygen than at handover, and breathing effort has increased. What now?",
+        monitor: [
+          { patient: "Patient A", readings: [["Chest rise", "Returned"], ["Ventilation", "Recovered toward baseline"]] },
+          { patient: "Patient B", readings: [["SpO₂", "In prescribed range"], ["Oxygen flow", "Above handover level"], ["Breathing effort", "Increased"]] },
+        ],
         choices: ["Wait for saturation to fall below target.", "Record the saturation alone at the next routine round.", "Reassess promptly and escalate the rising oxygen requirement and increased effort."],
         answer: 2,
         why: "A target saturation achieved with more support can hide a worsening trend. Report the device and flow now and at baseline, together with respiratory effort and alertness.",
@@ -72,6 +80,13 @@ export const activities = [
         choices: ["The pressure transducer.", "The dressing.", "The display cable."],
         answer: 0,
         why: "The transducer converts pressure in the fluid-filled tubing into a signal for the monitor.",
+      },
+      {
+        equipment: "EQ-05",
+        prompt: "Where would you look to see the ECG waveform on this device?",
+        choices: ["On the front-panel screen.", "On the power connector.", "On the carrying handle."],
+        answer: 0,
+        why: "The front-panel screen shows the ECG waveform. Verify which lead or pad source the device is displaying before interpreting the trace.",
       },
     ],
   },
