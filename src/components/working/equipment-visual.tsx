@@ -1,4 +1,4 @@
-import { Activity, ArrowRight, BatteryCharging, ClipboardList } from "lucide-react";
+import { Activity, ArrowRight, BatteryCharging, ClipboardList, Droplets, Filter, Gauge, RotateCw } from "lucide-react";
 import Image from "next/image";
 
 type Translation = readonly [english: string, arabic: string];
@@ -40,6 +40,34 @@ const arterialLine: Visual = {
   credit: "Red Roan",
   license: "BY-SA 4.0",
 };
+
+const arterialTransducer: Visual = {
+  file: "arterial-transducer-level",
+  width: 1050,
+  height: 618,
+  alt: ["Illustration showing the pressure transducer at the reference level and the effect of a height difference.", "رسم يوضّح مستوى محوّل الضغط المرجعي وتأثير اختلاف الارتفاع."],
+  label: ["Locate the pressure transducer and reference level", "حدّد موضع محوّل الضغط ومستواه المرجعي"],
+  detail: ["Follow the line from the patient to the transducer and compare the transducer height with the reference point.", "تتبّع الأنبوب من المريض إلى محوّل الضغط وقارن ارتفاع المحوّل بالنقطة المرجعية."],
+  source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7183114/figure/Fig1/",
+  credit: "Saugel et al., Critical Care (2020), figure 1",
+  license: "BY 4.0",
+};
+
+const arterialDamping: Visual = {
+  file: "arterial-waveform-damping",
+  width: 818,
+  height: 1150,
+  alt: ["Arterial waveform examples showing exaggerated peaks with underdamping and a flattened trace with overdamping.", "أمثلة لموجات الضغط الشرياني تظهر قمماً مبالغاً فيها عند نقص التخميد وموجة مسطّحة عند فرط التخميد."],
+  label: ["Compare underdamped and overdamped arterial traces", "قارن موجات الضغط الشرياني ناقصة التخميد ومفرطة التخميد"],
+  detail: ["Compare the sharp peak in the upper example with the blunted upstroke in the lower example.", "قارن القمة الحادة في المثال العلوي بالصعود البطيء في المثال السفلي."],
+  source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7183114/figure/Fig3/",
+  credit: "Saugel et al., Critical Care (2020), figure 3",
+  license: "BY 4.0",
+};
+
+export function ArterialWaveformPhoto({ locale }: { locale: string }) {
+  return <EquipmentPhoto visual={arterialDamping} locale={locale} />;
+}
 
 const syringePump: Visual = {
   file: "syringe-pump",
@@ -150,12 +178,58 @@ const ivCatheter: Visual = {
   license: "BY-SA 4.0",
 };
 
-const crrtModules = new Set(["EQ-06", "SK-17", "D04-T09"]);
-const crrtSteps = [
-  ["Access line", "خط السحب"],
+const cvvhdImage = "/images/equipment/cvvhd-circuit.webp";
+const cvvhdLabels = [
+  ["Patient catheter", "قسطرة المريض"],
+  ["Access pressure sensor (before the pump)", "حساس ضغط السحب (قبل المضخة)"],
   ["Blood pump", "مضخة الدم"],
-  ["Filter", "المرشّح"],
-  ["Return line", "خط الإرجاع"],
+  ["Filter inlet pressure sensor (after the pump)", "حساس ضغط مدخل المرشّح (بعد المضخة)"],
+  ["Hemofilter", "المرشّح الدموي"],
+  ["Return pressure sensor (toward the patient)", "حساس ضغط الإرجاع (باتجاه المريض)"],
+  ["Fresh dialysate bag", "كيس سائل الديال الطازج"],
+  ["Effluent collection bag", "كيس تجميع السائل المطروح"],
+  ["Effluent pressure sensor", "حساس ضغط السائل المطروح"],
+] as const;
+
+function CvvhdCircuitFigure({ locale }: { locale: string }) {
+  const ar = locale === "ar";
+  return (
+    <figure className="mb-8 overflow-hidden rounded-xl border border-border bg-muted">
+      <a href={cvvhdImage} className="block focus-visible:outline focus-visible:outline-offset-[-3px]" aria-label={ar ? "افتح مخطط الدائرة بالحجم الكامل" : "Open the full-size circuit illustration"}>
+        <Image
+          src={cvvhdImage}
+          alt={ar ? "مخطط مرقّم يبيّن اتجاه تدفق الدم وسائل الديال والسائل المطروح في دائرة CVVHD." : "Numbered CVVHD circuit showing the direction of blood, fresh dialysate and effluent flow."}
+          width={1080}
+          height={640}
+          sizes="(min-width: 1024px) 750px, 90vw"
+          className="h-auto w-full"
+        />
+      </a>
+      <figcaption className="space-y-3 p-4 sm:p-5">
+        <p className="font-semibold">{ar ? "تتبّع مسارات السوائل وحدّد حساسات الضغط" : "Trace the CVVHD fluid paths and locate the pressure sensors"}</p>
+        <p className="text-sm text-muted-foreground">
+          {ar ? "الوردي: الدم. الأزرق: سائل الديال الطازج. الأصفر: السائل المطروح. هذا رسم تعليمي مبسّط لدائرة الديال الدموي الوريدي المستمر." : "Pink shows blood, blue shows fresh dialysate, and amber shows effluent. This is a simplified continuous venovenous hemodialysis circuit."}
+        </p>
+        <ol className="list-decimal space-y-1 ps-6 text-sm sm:columns-2">
+          {cvvhdLabels.map(([en, translated]) => <li key={en} className="break-inside-avoid">{ar ? translated : en}</li>)}
+        </ol>
+        <p className="text-xs text-muted-foreground">
+          {ar ? "رسم تعليمي أصلي. مرجع الدائرة: " : "Original teaching illustration. Circuit reference: "}
+          <a className="underline" href="https://www.ncbi.nlm.nih.gov/books/NBK556028/figure/article-90896.image.f2/">
+            {ar ? "StatPearls، الشكل ٢" : "StatPearls, figure 2"}
+          </a>
+        </p>
+      </figcaption>
+    </figure>
+  );
+}
+
+const crrtModules = new Set(["SK-17", "D04-T09"]);
+const crrtSteps = [
+  { icon: Gauge, label: ["Access line", "خط السحب"], detail: ["Access pressure before the pump", "ضغط السحب قبل المضخة"] },
+  { icon: RotateCw, label: ["Blood pump", "مضخة الدم"], detail: ["Moves blood through the circuit", "تحرّك الدم عبر الدائرة"] },
+  { icon: Filter, label: ["Filter", "المرشّح"], detail: ["Filter inlet pressure and effluent-side pressure", "ضغط مدخل المرشّح وضغط جهة السائل المطروح"] },
+  { icon: Gauge, label: ["Return line", "خط الإرجاع"], detail: ["Return pressure toward the patient", "ضغط الإرجاع باتجاه المريض"] },
 ] as const;
 
 function CrrtCircuitVisual({ locale }: { locale: string }) {
@@ -166,14 +240,18 @@ function CrrtCircuitVisual({ locale }: { locale: string }) {
         <p className="font-semibold">{ar ? "مسار الدم في دائرة العلاج الكلوي المستمر" : "Blood path in the CRRT circuit"}</p>
         <p className="mt-1 text-sm text-muted-foreground">{ar ? "رسم مبسّط لمسار الدم من المريض إلى المرشّح ثم عودته إلى المريض." : "Simplified view of blood flowing from the patient through the filter and back to the patient."}</p>
       </figcaption>
-      <ol className="grid gap-3 sm:grid-cols-4">
-        {crrtSteps.map((step, index) => (
-          <li key={step[0]} className="flex flex-col items-center gap-2 sm:flex-row">
-            <span className="flex min-h-12 w-full flex-1 items-center rounded-lg border border-border bg-card px-3 py-2 text-sm font-semibold">{step[ar ? 1 : 0]}</span>
+      <ol className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        {crrtSteps.map(({ icon: Icon, label, detail }, index) => (
+          <li key={label[0]} className="flex flex-col items-center gap-2 sm:flex-row">
+            <span className="min-h-32 w-full flex-1 rounded-lg border border-border bg-card px-3 py-2 text-sm"><Icon aria-hidden="true" className="mb-2 size-5 text-primary" /><strong className="block">{label[ar ? 1 : 0]}</strong><span className="text-muted-foreground">{detail[ar ? 1 : 0]}</span></span>
             {index < crrtSteps.length - 1 && <ArrowRight aria-hidden="true" className="size-4 shrink-0 rotate-90 sm:rotate-0 sm:rtl:rotate-180" />}
           </li>
         ))}
       </ol>
+      <p className="flex items-center gap-2 text-sm text-muted-foreground">
+        <Droplets aria-hidden="true" className="size-5 shrink-0 text-primary" />
+        {ar ? "مسار منفصل: يخرج السائل المطروح من المرشّح إلى كيس التجميع." : "Separate fluid path: effluent leaves the filter and flows to the collection bag."}
+      </p>
       <a className="text-xs text-muted-foreground underline" href="https://www.albertahealthservices.ca/assets/about/scn/ahs-scn-cc-dialyzingwisely-crrt-alarm-management-care-pathway-resource.pdf">
         {ar ? "مرجع دائرة العلاج الكلوي المستمر" : "CRRT circuit reference"}
       </a>
@@ -647,7 +725,7 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
         <p className="font-semibold">{visual.label[language]}</p>
         <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>
         <p className="text-xs text-muted-foreground" lang="en">
-          <a className="underline" href={`https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
+          <a className="underline" href={visual.source.startsWith("https://") ? visual.source : `https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
           {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={licenseUrl}>{visual.license === "CC0 1.0" ? visual.license : `CC ${visual.license}`}</a>} · {covered ? "Shown with a privacy cover" : visual.cropped ? "Cropped and converted to WebP" : visual.rotated ? "Rotated and converted to WebP" : "WebP version, resized where applicable"}
         </p>
       </figcaption>
@@ -661,7 +739,9 @@ export function PulseOximeterPhoto({ locale }: { locale: string }) {
 }
 
 export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
+  if (moduleKey === "EQ-06") return <CvvhdCircuitFigure locale={locale} />;
   if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
+  if (moduleKey === "EQ-01") return <PulseOximeterPhoto locale={locale} />;
   if (moduleKey === "SK-20") return <TransportVisual locale={locale} />;
 
   const visual = visuals[moduleKey];
@@ -670,6 +750,7 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
   return (
     <>
       <EquipmentPhoto visual={visual} locale={locale} />
+      {moduleKey === "EQ-03" && <EquipmentPhoto visual={arterialTransducer} locale={locale} />}
       {showVenturiMask && <EquipmentPhoto visual={venturiMask} locale={locale} />}
       {moduleKey === "SK-08" && <EquipmentPhoto visual={nonrebreatherMask} locale={locale} />}
       {moduleKey === "SK-05" && <EquipmentPhoto visual={cuffedTracheostomy} locale={locale} />}
