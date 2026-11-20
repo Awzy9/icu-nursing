@@ -7,14 +7,30 @@ import type { FetchState } from "../hooks/useRemoteContent";
 import { useProgressSync } from "../hooks/useProgressSync";
 import { MIN_TARGET, radius, space, type } from "./theme";
 
-/** Page container: scrolls, applies the language direction to everything inside, and carries the sample-content notice. */
+/** Page container: scrolls, applies the language direction to everything inside, and carries the draft-content notice. */
 export function Screen({ children, banner = true }: { children: React.ReactNode; banner?: boolean }) {
-  const { palette, rtl, t } = useApp();
+  const { palette, rtl } = useApp();
   return (
     <ScrollView style={{ flex: 1, backgroundColor: palette.bg, direction: rtl ? "rtl" : "ltr" }} contentContainerStyle={{ padding: space.lg, gap: space.md }} keyboardShouldPersistTaps="handled">
-      {banner ? <Callout tone="warn">{t("app.sampleBanner")}</Callout> : null}
+      {banner ? <DraftNotice /> : null}
       {children}
     </ScrollView>
+  );
+}
+
+/** One slim line on every screen instead of a three-line banner; tapping it reveals the full wording, so the disclaimer is always one tap away without pushing content below the fold. */
+export function DraftNotice() {
+  const { palette, rtl, t } = useApp();
+  const [open, setOpen] = React.useState(false);
+  return (
+    <Pressable accessibilityRole="button" accessibilityState={{ expanded: open }} accessibilityHint={t("app.noticeHint")} onPress={() => setOpen((v) => !v)}
+      style={{ backgroundColor: palette.warnBg, borderRadius: radius, paddingHorizontal: space.md, paddingVertical: space.sm, gap: space.xs }}>
+      <View style={{ flexDirection: rtl ? "row-reverse" : "row", alignItems: "center", gap: space.sm }}>
+        <Text style={[type.small, { flex: 1, color: palette.warnText, fontWeight: "600", writingDirection: rtl ? "rtl" : "ltr" }]}>{t("app.noticeShort")}</Text>
+        <Text style={[type.small, { color: palette.warnText }]}>{open ? "▴" : "▾"}</Text>
+      </View>
+      {open ? <Text style={[type.small, { color: palette.warnText, writingDirection: rtl ? "rtl" : "ltr" }]}>{t("app.sampleBanner")}</Text> : null}
+    </Pressable>
   );
 }
 export function H1({ children }: { children: React.ReactNode }) { const { palette, rtl } = useApp(); return <Text accessibilityRole="header" style={[type.h1, { color: palette.text, writingDirection: rtl ? "rtl" : "ltr" }]}>{children}</Text>; }
