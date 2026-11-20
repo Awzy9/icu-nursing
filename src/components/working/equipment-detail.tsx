@@ -20,6 +20,8 @@ const references = {
     ["HAMILTON-C1 operator’s manual · Waveform display and pressure/time graph (figure 6-6)", "https://www.hamilton-medical.com/dam/jcr%3Ae8fbf16e-0e4b-47b1-a093-d896a1fbb14a/HAMILTON-C1-ops-manual-SW2.2x-en-624326.05.pdf"],
   ],
   "EQ-01": [
+    ["FDA · Pulse oximeter accuracy and limitations", "https://www.fda.gov/medical-devices/products-and-medical-procedures/pulse-oximeters"],
+    ["WHO · Pulse oximetry training manual (PDF)", "https://cdn.who.int/media/docs/default-source/patient-safety/pulse-oximetry/who-ps-pulse-oxymetry-training-manual-en.pdf"],
     ["Masimo RD SET reusable finger sensor photo", "https://www.masimo.com/products/sensors/rd-set/reusables/"],
     ["Masimo Radical-7 operator’s manual · Chapter 6, Alarms and Messages", "https://techdocs.masimo.com/globalassets/techdocs/pdf/lab-5476l_master.pdf"],
   ],
@@ -138,8 +140,11 @@ const panels = {
     ],
   },
   "EQ-01": {
-    title: "Distinguish the reading, alarm limit and alarm message",
+    title: "Interpret the reading, signal and alarm",
     tiles: [
+      [Droplets, "SpO₂ (%)", "SpO₂ estimates the percentage of arterial haemoglobin carrying oxygen. Review it alongside the patient’s breathing, level of alertness, and recent trend. SpO₂ gives no direct measurement of ventilation or carbon dioxide."],
+      [Activity, "Pulse rate and pleth waveform", "The finger probe derives the pulse rate from blood volume changes at the sensor site. If the waveform becomes erratic, compare the displayed pulse rate with a palpated pulse or another reliable source. Assess the patient while checking the signal."],
+      [Monitor, "Factors that can affect accuracy", "Motion, poor circulation at the sensor site, cold skin and nail polish can interfere with readings. Accuracy can also vary with skin pigmentation. Assess unexpected readings or a mismatch with the patient’s condition using your unit’s escalation and confirmation protocols."],
       [Gauge, "Alarm limit", "An upper or lower limit defines when a measurement can trigger a parameter alarm. The current measurement and the configured limit are separate values."],
       [Monitor, "Alarm message", "Read the exact message. A low SpO₂ alarm and a disconnected sensor alert describe different conditions. The device may signal the priority on screen and with a tone."],
     ],
