@@ -197,7 +197,9 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
         </label>
       )}
       <nav id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"} className={workspace ? "hidden flex-wrap gap-2 sm:flex" : "grid gap-4 sm:grid-cols-2 lg:grid-cols-4"}>
-        {workspaces.map(({ id, title, detail, icon: Icon }) => {\n          const status = activityStatus(id);\n          return workspace ? (
+        {workspaces.map(({ id, title, detail, icon: Icon }) => {
+          const status = activityStatus(id);
+          return workspace ? (
           <a key={id} href={`#${id}`} aria-current={workspace === id ? "location" : undefined} onClick={() => setWorkspace(id)} className={`${button} gap-2 ${workspace === id ? "border-primary bg-primary/10 text-primary" : ""}`}>
             <Icon aria-hidden className="size-4" />{title[language]}
           </a>
