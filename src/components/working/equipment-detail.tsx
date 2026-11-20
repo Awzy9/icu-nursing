@@ -30,6 +30,7 @@ const references = {
   ],
   "EQ-05": [["ZOLL R Series ALS operator’s guide · Front panel and rhythm display", zollManual]],
   "EQ-06": [
+    ["Vantive PrisMax · Annotated manufacturer display", "https://prismax.vantive.com/en-us/guides/main-operations-screen/operation-parameters"],
     ["Vantive PrisMax · Machine photos", "https://pro.vantive.com/prismax-critical-care-system"],
     ["Baxter PrisMax operator’s manual · Monitored data display, p. 75", prisMaxManual + "#page=75"],
   ],
@@ -42,6 +43,7 @@ const infusionReadings = [
   ["Programmed rate", "40 mL/h", "The volume the pump is set to deliver per hour."],
   ["Remaining VTBI", "60 mL", "The volume still to be infused in this program."],
   ["Volume infused", "20 mL", "The volume the pump has recorded since the displayed counter was last reset."],
+  ["Pump status", "Paused", "The programmed rate is still visible. Check the status to determine whether the pump reports delivery."],
 ] as const;
 
 const enteralReadings = [
@@ -68,6 +70,45 @@ function PumpDisplay({ title, readings }: { title: string; readings: readonly (r
           </div>
         ))}
       </dl>
+    </figure>
+  );
+}
+
+const pressureTrend = [
+  ["Access", "Withdrawal line before the blood pump", "−85", "−86", "−87"],
+  ["Filter inlet", "After the blood pump, before blood enters the filter", "135", "155", "175"],
+  ["Return", "Blood return line after the filter", "80", "81", "82"],
+  ["Effluent", "Effluent side of the filter", "15", "10", "5"],
+  ["Filter pressure drop (ΔP)", "Filter inlet pressure minus return pressure", "55", "74", "93"],
+] as const;
+
+function CrrtPressureDisplay() {
+  return (
+    <figure className="space-y-3">
+      <figcaption>
+        <h3 className="font-semibold">Connect the pressures to the circuit</h3>
+        <p className="text-sm text-muted-foreground">Simulated readings in mmHg at three points in time. These values are examples for interpretation practice.</p>
+      </figcaption>
+      <div className="space-y-2 rounded-xl border border-slate-600 bg-slate-950 p-3 text-slate-100">
+        {pressureTrend.map(([label, location, ...readings]) => (
+          <div key={label} className="space-y-2 rounded-lg border border-slate-700 bg-slate-900 p-3">
+            <p className="font-semibold">{label}</p>
+            <p className="text-sm text-slate-300">{location}</p>
+            <dl className="grid grid-cols-3 gap-2 text-center">
+              {readings.map((value, index) => (
+                <div key={index}>
+                  <dt className="text-xs text-slate-300">{index * 15} min</dt>
+                  <dd className="font-semibold tabular-nums text-cyan-300">{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+      <p className="text-sm leading-relaxed">
+        In this example, filter inlet pressure rises while return pressure barely changes, so the pressure drop across the filter increases.
+        Compare that trend with blood flow, TMP, the alarm message and circuit observations before drawing conclusions about the cause.
+      </p>
     </figure>
   );
 }
@@ -108,6 +149,38 @@ function SupportSurfaceVisual() {
   );
 }
 
+export function VentilatorAlarmVisual() {
+  const normal = waveformExercise("WV-01")?.traces.find((trace) => trace.unit === "L/min");
+  const incomplete = waveformExercise("WV-02")?.traces.find((trace) => trace.unit === "L/min");
+  if (!normal || !incomplete) return null;
+
+  return (
+    <section lang="en" dir="ltr" aria-labelledby="alarm-flow-title" className="mb-6 space-y-3 rounded-xl border border-border bg-muted p-4">
+      <h3 id="alarm-flow-title" className="font-semibold">Compare expiratory flow before the next breath</h3>
+      <p className="text-sm text-muted-foreground">Simulated flow traces. The dashed line is zero flow. Time runs left to right.</p>
+      <div className="grid gap-4 md:grid-cols-2">
+        <WaveformChart trace={{ ...normal, label: "Expiratory flow returns to zero" }} locale="en" />
+        <WaveformChart trace={{ ...incomplete, label: "Expiratory flow remains below zero" }} locale="en" />
+      </div>
+      <p className="text-sm leading-relaxed">
+        In the second trace, expiration is still in progress when the next inspiration starts. This can suggest incomplete exhalation.
+        Assess the patient, check whether the pattern repeats, and review it with the respiratory therapist or ICU team.
+      </p>
+      <h4 className="font-semibold">Read the alarm in context</h4>
+      <p className="text-sm leading-relaxed">
+        A high-pressure message refers to the airway pressure the ventilator detected. Compare it with the recent trend,
+        the patient’s chest movement and effort, and visible circuit findings. A low exhaled-volume message refers to the
+        volume measured during exhalation. Compare it with recent breaths and look for signs of a leak or disconnection with the bedside team.
+        After the alarm clears, reassess the patient and confirm whether the measured trend has recovered.
+      </p>
+      <ul className="space-y-1 text-sm">
+        <li><a className="text-primary underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/">AARC · Patient–Ventilator Assessment</a></li>
+        <li><a className="text-primary underline" href="https://www.hamilton-medical.com/dam/jcr%3A79e1c664-24e6-4dc7-8113-941781843520/HAMILTON-C1-ops-manual-SW3.0.x-en-10101866.00.pdf">HAMILTON-C1 SW 3.0.x · Troubleshooting alarms (PDF)</a></li>
+      </ul>
+    </section>
+  );
+}
+
 const panels = {
   "EQ-08": {
     title: "Read a powered mattress controller",
@@ -124,10 +197,12 @@ const panels = {
     ],
   },
   "EQ-04": {
-    title: "Read the alarm message",
+    title: "Check the program and interpret the alarm",
     tiles: [
+      [Monitor, "Order, label and channel", "Trace the tubing from the container through the selected channel to the patient. Compare the medication, concentration, units, rate and volume to be infused with the order. Obtain an independent check for high-risk infusions when local policy calls for one."],
       [Gauge, "Occlusion", "The pump has detected an obstruction condition. Some devices distinguish between the supply side and the patient side."],
       [Activity, "Air in line", "On pumps with an air detector, this message signals that the detector has registered air in the tubing. Check the exact message and follow the pump instructions and local protocol."],
+      [Monitor, "Document the interruption", "Record what the pump reported, when delivery was interrupted, your assessment and whom you notified. If delivery or the infused amount is uncertain, escalate using the unit protocol."],
     ],
   },
   "EQ-02": {
@@ -171,6 +246,8 @@ const panels = {
       [Activity, "Blood flow (mL/min)", "This is the rate of blood moved by the pump through the circuit. Dialysate and replacement fluid have their own flow settings."],
       [Droplets, "Delivered dose and fluid removal", "Compare the reported effluent dose with the prescription over the same period. Account for downtime. Patient fluid removal is a separate value."],
       [Monitor, "Alarm banner", "Read the alarm message and priority together with the pressure trend and treatment status. Colour conventions and messages vary by device."],
+      [Gauge, "TMP and filter pressure drop", "TMP describes the pressure difference across the filter membrane. Filter pressure drop describes the pressure difference along the blood path through the filter. Look at both trends alongside blood flow and circuit observations."],
+      [Monitor, "Document and escalate", "Capture the exact alarm, time, pressure trends, treatment interruption and patient assessment. Use the machine instructions and unit protocol to decide when to involve the CRRT team."],
     ],
   },
 } as const;
@@ -184,6 +261,7 @@ export function EquipmentDetail({ moduleKey, parameters }: { moduleKey: string; 
   return (
     <div lang="en" dir="ltr" className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
       {parameters && moduleKey === "EQ-04" && <PumpDisplay title="Compare the three infusion readings" readings={infusionReadings} />}
+      {parameters && moduleKey === "EQ-06" && <CrrtPressureDisplay />}
       {parameters && moduleKey === "EQ-07" && <PumpDisplay title="Read an enteral feeding pump display" readings={enteralReadings} />}
       {parameters && moduleKey === "EQ-08" && <SupportSurfaceVisual />}
       {teachingBreath && (

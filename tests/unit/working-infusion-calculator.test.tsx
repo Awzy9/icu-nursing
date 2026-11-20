@@ -1,0 +1,42 @@
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { afterEach, describe, expect, it } from "vitest";
+import { InfusionCalculator } from "@/components/working/infusion-calculator";
+
+afterEach(cleanup);
+
+function enter(label: string, value: string) {
+  fireEvent.change(screen.getByLabelText(label, { exact: true }), { target: { value } });
+}
+
+describe("infusion calculator", () => {
+  it("preserves volumetric rate calculations with duration in minutes", () => {
+    render(<InfusionCalculator locale="en" />);
+    enter("Volume (mL)", "50");
+    enter("Duration unit", "minutes");
+    enter("Duration", "30");
+    expect(screen.getByText("100 mL/h")).toBeTruthy();
+  });
+
+  it("calculates a fixed dose rate from concentration", () => {
+    render(<InfusionCalculator locale="en" />);
+    enter("Dose rate", "6");
+    enter("Solution concentration", "2");
+    expect(screen.getByText("3 mL/h")).toBeTruthy();
+  });
+
+  it("converts weight, mass and time units and clears results when the units change", () => {
+    render(<InfusionCalculator locale="en" />);
+    enter("Dose basis", "weight");
+    enter("Dose unit", "mcg/min");
+    enter("Concentration unit", "mcg/mL");
+    enter("Dose rate", "0.2");
+    enter("Example weight (kg)", "50");
+    enter("Solution concentration", "100");
+    expect(screen.getByText("6 mL/h")).toBeTruthy();
+    enter("Example weight (kg)", "0");
+    expect(screen.queryByText("6 mL/h")).toBeNull();
+    enter("Example weight (kg)", "50");
+    enter("Concentration unit", "mg/mL");
+    expect(screen.queryByText("6 mL/h")).toBeNull();
+  });
+});
