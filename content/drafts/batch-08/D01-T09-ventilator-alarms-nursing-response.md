@@ -97,8 +97,14 @@ Time and type of alarm as shown by your device; patient state; cause found; inte
 ## 15. Practical bedside example
 An alarm sounds. The nurse goes to the bedside, looks at the patient's chest, colour and SpO₂, finds a kinked circuit, relieves it, watches the patient settle and the alarm reset, and records the event; she does not change any limit.
 
+
+**How to tell whether the problem is resolved.** Check that chest movement and oxygenation have recovered and that measured exhaled volume and airway pressure are back near the patient’s baseline. Record the alarm message, the kink and what changed after it was corrected. If the alarm persists or the patient deteriorates, call for immediate help and follow the unit’s emergency ventilation procedure.
+
 ## 16. Clinical case (fictional)
 A ventilated patient's alarm sounds repeatedly after suctioning. The nurse checks the patient, finds the circuit not fully reconnected, reconnects it, and notices that the O₂ enrichment function from the pre-oxygenation was still active on this model (so oxygen alarms had been suppressed); she returns the device to its normal state, checks SpO₂, and tells the respiratory therapist.
+
+
+**Why reassess after reconnecting.** Inspect the connection and compare measured exhaled volume and oxygenation with their pre-event values. If capnography is already in use, check whether the waveform has returned. Verify the pre-oxygenation feature’s state and that alarms are active according to the device instructions. Report the estimated interruption duration and the patient’s response.
 
 ## 17. MCQs
 **Q1 (judgment).** A ventilator alarm sounds while you are preparing medicines. What should you do first under the patient-first assessment principle?

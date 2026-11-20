@@ -91,8 +91,14 @@ Mode and settings as ordered; delivered tidal volume and pressures; trends; alar
 ## 15. Practical bedside example
 At the hourly check you note exhaled tidal volume has fallen from the usual delivered value while peak pressure rose. You check the patient (chest movement, secretions, cough), look for tube kinks or biting, suction per policy, check the circuit for leaks or water, and check synchrony. If values do not return to the usual range, you call the respiratory therapist or doctor with SBAR and stay at the bedside.
 
+
+**How to read the change.** Compare the measured exhaled volume with the patient’s baseline on the same mode and settings. Read airway pressures alongside the volume and inspect the tube and circuit. When a valid plateau pressure is already available, a rise in peak pressure with a stable plateau points toward increased resistance. A rise in both can suggest reduced compliance or an increase in end-expiratory pressure. Report the mode, set and measured values, and how quickly they changed. Escalate immediately if the patient is deteriorating.
+
 ## 16. Clinical case (fictional)
 A 52-year-old woman with severe pneumonia is intubated with moderate ARDS. After stabilisation her PaO₂/FiO₂ ratio remains below 150 mmHg. The team decides on prone positioning. The nurse prepares lines, tube securement, eyes and pressure points per procedure, takes part in the coordinated turn, records the start time, checks haemodynamics and ventilator values after the turn, and reports changes.
+
+
+**What to compare after the turn.** Record the oxygen and ventilator settings alongside the observed response, so later comparisons account for changes in support. Compare oxygen saturation, exhaled tidal volume and blood pressure with the pre-turn values. Verify the tube depth marking and circuit connections according to the unit checklist. An abrupt change after repositioning warrants prompt assessment of the patient and airway.
 
 ## 17. MCQs
 **Q1 (judgment).** A patient with ARDS has a set tidal volume unchanged, but the exhaled tidal volume has fallen over two hours and peak pressure has risen. What is the best first nursing action?
