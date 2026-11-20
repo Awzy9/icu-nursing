@@ -84,10 +84,16 @@ Prolonged ventilation, delirium, pressure injury, immobility and weakness, withd
 Target and actual sedation score; scale used; pain score; infusion and bolus doses as given; daily interruption (time, result, restart); agitation causes sought; delirium screen; restraint use with reason, checks and release; sleep and mobility; escalation and response.
 
 ## 15. Practical bedside example
-At the hourly check you assess pain with the behavioural tool, then the sedation scale (target: light sedation). The score is deeper than the target, so you report it, and within your protocol reduce the infusion as ordered, reassess in 30 minutes, and record. At the planned time you perform the daily interruption with the team, monitor closely, and restart at a lower rate if the protocol says so.
+At the hourly check you assess pain with the behavioural tool, then the sedation scale (target: light sedation). The score is deeper than the target, so you report it, and within your protocol reduce the infusion as ordered, reassess at the interval specified by the order or unit protocol, and record. At the planned time, if the patient meets the unit’s safety criteria, you perform the daily interruption with the team, monitor closely, and restart at a lower rate if the protocol says so.
+
+
+**Interpret the score against this patient’s target.** Record the prescribed target and observed score separately. A deeper score can reflect medication effect or a change in the patient’s condition. Review the trend, recent sedative and analgesic doses, and current respiratory and haemodynamic observations. If there is an unexpected change, escalate with those details and reassess at the interval specified by the order or unit protocol.
 
 ## 16. Clinical case (fictional)
 A 66-year-old ventilated woman is agitated and trying to pull at her tube. The nurse checks pain, bladder, oxygenation and ventilator synchrony, treats pain per protocol, reorients and reduces stimulation, and calls the prescriber about persistent agitation instead of adding restraints. She documents all steps.
+
+
+**Interpret agitation before increasing sedation.** Note when the change began and whether it coincides with a procedure, discomfort, or a change in breathing or ventilator synchrony. Give the team the observed sedation score, pain assessment and response to measures already taken. This helps distinguish persistent agitation from distress that improves when a contributor is addressed.
 
 ## 17. MCQs
 **Q1 (judgment).** A ventilated patient who should be lightly sedated is deeply sedated and does not respond to voice. What is the best nursing action?
