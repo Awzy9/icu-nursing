@@ -206,23 +206,29 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
           )}
         </div>
       </header>
-      {workspace && <a href="#activities" onClick={() => setWorkspace(null)} className={link}><ArrowLeft aria-hidden className="me-2 size-4 rtl:rotate-180" />{ar ? "كل الأنشطة" : "All activities"}</a>}
       {workspace && (
-        <label className="block space-y-1 sm:hidden">
-          <span className="text-sm font-semibold">{ar ? "انتقل إلى نشاط" : "Switch activity"}</span>
-          <select value={workspace} onChange={(event) => { window.location.hash = event.target.value; }} className="min-h-12 w-full rounded-xl border border-border bg-card px-3">
-            {workspaces.map(({ id, title }) => <option key={id} value={id}>{title[language]}</option>)}
-          </select>
-        </label>
+        <nav aria-label={ar ? "التنقّل بين الأنشطة" : "Activity navigation"} className="flex flex-wrap items-end justify-between gap-3">
+          <a href="#activities" onClick={() => setWorkspace(null)} className={link}>
+            <ArrowLeft aria-hidden className="me-2 size-4 rtl:rotate-180" />{ar ? "كل الأنشطة" : "All activities"}
+          </a>
+          <label className="flex w-full flex-col gap-1 sm:w-64">
+            <span className="text-sm font-semibold">{ar ? "انتقل إلى نشاط" : "Switch activity"}</span>
+            <select value={workspace} onChange={(event) => {
+              const next = workspaces.find(({ id }) => id === event.target.value);
+              if (!next) return;
+              setWorkspace(next.id);
+              window.location.hash = next.id;
+            }} className="min-h-12 w-full rounded-xl border border-border bg-card px-3">
+              {workspaces.map(({ id, title }) => <option key={id} value={id}>{title[language]}</option>)}
+            </select>
+          </label>
+        </nav>
       )}
-      <nav id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"} className={workspace ? "hidden flex-wrap gap-2 sm:flex" : "grid gap-4 sm:grid-cols-2 lg:grid-cols-4"}>
+      <nav hidden={workspace !== null} id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"}>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {workspaces.map(({ id, title, detail, icon: Icon }) => {
           const status = activityStatus(id);
-          return workspace ? (
-          <a key={id} href={`#${id}`} aria-current={workspace === id ? "location" : undefined} onClick={() => setWorkspace(id)} className={`${button} gap-2 ${workspace === id ? "border-primary bg-primary/10 text-primary" : ""}`}>
-            <Icon aria-hidden className="size-4" />{title[language]}
-          </a>
-        ) : (
+          return (
           <a key={id} href={`#${id}`} onClick={() => setWorkspace(id)} className={`group relative flex min-h-40 flex-col gap-3 overflow-hidden rounded-2xl border p-5 transition-colors ${id === "shift" ? "border-cyan-800 bg-gradient-to-br from-slate-950 to-cyan-950 text-slate-50 hover:border-cyan-400 sm:col-span-2 lg:col-span-4" : "border-border bg-card hover:border-primary hover:bg-primary/5"}`}>
             <span className="flex items-center justify-between">
               <span className={`grid size-11 place-items-center rounded-xl ${workspaceAccents[id]}`}><Icon aria-hidden className="size-5" /></span>
@@ -234,6 +240,7 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
           </a>
         );
         })}
+        </div>
       </nav>
       <section hidden={workspace !== "orientation"} tabIndex={-1} id="orientation" className={`${card} scroll-mt-24 focus:outline-none`} lang="en" dir="ltr">
         <h2 className="text-xl font-bold">ICU Orientation Path</h2>
@@ -263,7 +270,7 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
           <p className="text-muted-foreground">{activity.intro}</p>
           {run
             ? <ActivityPlayer key={run.version} activity={activity} retryIndex={run.retryIndex} onAnswer={saveResult} />
-            : <button type="button" className={primaryButton} onClick={() => setRuns({ ...runs, [activity.id]: { version: 0 } })}>Start {activity.title}</button>}
+            : <button type="button" className={primaryButton} onClick={() => setRuns({ ...runs, [activity.id]: { version: 0 } })}>Start practice</button>}
           {"source" in activity && <div><a className={link} href={activity.source.href}>{activity.source.label}</a></div>}
           {activity.id === "visual-skills" && <Link className={link} href="/waveforms">Practise interpreting ventilator waveforms</Link>}
         </section>
