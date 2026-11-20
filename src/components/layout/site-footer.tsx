@@ -11,6 +11,7 @@ export async function SiteFooter() {
         <p className="max-w-3xl">{c("disclaimerShort")}</p>
         <p><Link href="/privacy">{t("privacy")}</Link> · <Link href="/terms">{t("terms")}</Link> · <Link href="/pricing">{n("plans")}</Link> · <Link href="/account-deletion">{t("accountDeletion")}</Link></p>
         <p>{t("rights", { year: new Date().getUTCFullYear() })}</p>
+        <p lang="en" dir="ltr" className="text-start">Developed by Melad Alrowaily</p>
       </div>
     </footer>
   );
