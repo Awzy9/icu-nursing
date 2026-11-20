@@ -2,6 +2,12 @@
 
 import { useState } from "react";
 
+const significantDigits = 6;
+
+function equationSign(...values: number[]) {
+  return values.some((value) => Number(value.toPrecision(significantDigits)) !== value) ? "≈" : "=";
+}
+
 export function InfusionCalculator({ locale }: { locale: string }) {
   const ar = locale === "ar";
   const [mode, setMode] = useState<"rate" | "time">("rate");
@@ -13,7 +19,7 @@ export function InfusionCalculator({ locale }: { locale: string }) {
   const volumeMl = Number(volume);
   const rawResult = volumeMl / (isRate && minutes ? input / 60 : input);
   const valid = volumeMl > 0 && input > 0 && Number.isFinite(rawResult) && rawResult > 0;
-  const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: 6 });
+  const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: significantDigits });
   const hours = isRate ? (minutes ? input / 60 : input) : rawResult;
   const rate = isRate ? rawResult : input;
   const field = "min-h-11 w-full rounded-lg border border-border bg-background px-3";
@@ -56,7 +62,7 @@ export function InfusionCalculator({ locale }: { locale: string }) {
           <>
             <strong className="block text-xl tabular-nums" dir="ltr">{format.format(rawResult)} {isRate ? (ar ? "مل/ساعة" : "mL/h") : (ar ? "ساعة" : "h")}</strong>
             <span className="block text-sm text-muted-foreground" dir="ltr">
-              {format.format(volumeMl)} {ar ? "مل" : "mL"} ÷ {format.format(isRate ? hours : rate)} {isRate ? (ar ? "ساعة" : "h") : (ar ? "مل/ساعة" : "mL/h")}
+              {format.format(volumeMl)} {ar ? "مل" : "mL"} ÷ {format.format(isRate ? hours : rate)} {isRate ? (ar ? "ساعة" : "h") : (ar ? "مل/ساعة" : "mL/h")} {equationSign(volumeMl, isRate ? hours : rate, rawResult)} {format.format(rawResult)} {isRate ? "mL/h" : "h"}
             </span>
           </>
         ) : (
@@ -81,12 +87,13 @@ function DoseRatePractice({ locale, fieldClassName }: { locale: string; fieldCla
   const perMinute = doseUnit === "mcg/min";
   const massFactor = perMinute ? 0.001 : 1;
   const minutesPerHour = perMinute ? 60 : 1;
-  const doseMgPerHour = Number(dose) * (weightBased ? Number(weight) : 1) * massFactor * minutesPerHour;
+  const totalDose = Number(dose) * (weightBased ? Number(weight) : 1);
+  const doseMgPerHour = totalDose * minutesPerHour * massFactor;
   const mgPerMl = Number(concentration) * (concentrationUnit === "mcg/mL" ? 0.001 : 1);
   const rate = doseMgPerHour / mgPerMl;
   const valid = Number(dose) > 0 && Number(concentration) > 0 && (!weightBased || Number(weight) > 0) &&
     Number.isFinite(rate) && rate > 0;
-  const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: 6 });
+  const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: significantDigits });
   const currentDoseUnit = perMinute ? "mcg/min" : "mg/h";
   const weightDoseUnit = perMinute ? "mcg/kg/min" : "mg/kg/h";
   const labelClass = "block min-w-0 space-y-1 text-sm font-semibold";
@@ -145,10 +152,10 @@ function DoseRatePractice({ locale, fieldClassName }: { locale: string; fieldCla
           {valid ? (
             <>
               <strong className="block text-lg" dir="ltr">{format.format(rate)} mL/h</strong>
-              {weightBased && <span className="block" dir="ltr">{format.format(Number(dose))} {weightDoseUnit} × {format.format(Number(weight))} kg = {format.format(Number(dose) * Number(weight))} {currentDoseUnit}</span>}
-              {perMinute && <span className="block" dir="ltr">{format.format(Number(dose) * (weightBased ? Number(weight) : 1))} mcg/min × 60 min/h ÷ 1,000 mcg/mg = {format.format(doseMgPerHour)} mg/h</span>}
-              {concentrationUnit === "mcg/mL" && <span className="block" dir="ltr">{format.format(Number(concentration))} mcg/mL ÷ 1,000 mcg/mg = {format.format(mgPerMl)} mg/mL</span>}
-              <span className="block" dir="ltr">{format.format(doseMgPerHour)} mg/h ÷ {format.format(mgPerMl)} mg/mL = {format.format(rate)} mL/h</span>
+              {weightBased && <span className="block" dir="ltr">{format.format(Number(dose))} {weightDoseUnit} × {format.format(Number(weight))} kg {equationSign(Number(dose), Number(weight), totalDose)} {format.format(totalDose)} {currentDoseUnit}</span>}
+              {perMinute && <span className="block" dir="ltr">{format.format(totalDose)} mcg/min × 60 min/h ÷ 1,000 mcg/mg {equationSign(totalDose, doseMgPerHour)} {format.format(doseMgPerHour)} mg/h</span>}
+              {concentrationUnit === "mcg/mL" && <span className="block" dir="ltr">{format.format(Number(concentration))} mcg/mL ÷ 1,000 mcg/mg {equationSign(Number(concentration), mgPerMl)} {format.format(mgPerMl)} mg/mL</span>}
+              <span className="block" dir="ltr">{format.format(doseMgPerHour)} mg/h ÷ {format.format(mgPerMl)} mg/mL {equationSign(doseMgPerHour, mgPerMl, rate)} {format.format(rate)} mL/h</span>
             </>
           ) : <span>{ar ? "أدخل قيمًا موجبة للحصول على الناتج." : "Enter positive values in all fields to see the result."}</span>}
         </output>

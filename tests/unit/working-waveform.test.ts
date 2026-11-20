@@ -57,6 +57,13 @@ describe("tracePolyline / zeroLineY", () => {
     expect(points[2]![0]).toBeCloseTo(95);
   });
 
+  it("keeps a shorter waveform on the same time scale as a longer one", () => {
+    const shorter = tracePolyline(trace, 100, 50, 5, 3).split(" ");
+    const longer = tracePolyline({ ...trace, points: [...trace.points, [3, 0]] }, 100, 50, 5, 3).split(" ");
+    expect(shorter).toEqual(longer.slice(0, 3));
+    expect(shorter[2]).toBe("65.0,5.0");
+  });
+
   it("places the zero line correctly inside the domain, and omits it when zero falls outside the domain", () => {
     expect(zeroLineY(trace, 50, 5)).toBeCloseTo(25);
     expect(zeroLineY({ ...trace, domain: [5, 10] }, 50, 5)).toBeNull();
