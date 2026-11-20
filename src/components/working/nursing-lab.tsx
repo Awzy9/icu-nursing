@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { activities, orientation } from "@/lib/working/nursing-lab";
+import { activities, expiratoryFlowExamples, orientation } from "@/lib/working/nursing-lab";
 import { computeRevisionQueue, type RevisionQuestion, type RevisionStatus } from "@/lib/working/revision";
+import { WaveformChart } from "./waveform-chart";
 import { EquipmentVisual } from "./equipment-visual";
 import { useLearning } from "./progress";
 import { RevisionSession } from "./revision";
@@ -33,6 +34,17 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
   return (
     <div className="space-y-4" lang="en" dir="ltr">
       <p className="text-sm text-muted-foreground">Decision {index + 1} of {activity.steps.length}</p>
+      {"flowComparison" in step && (
+        <section aria-label="Simulated ventilator flow traces" className="space-y-3 rounded-xl border border-border p-4">
+          <p className="text-sm text-muted-foreground">Time runs left to right. The dashed line marks zero flow.</p>
+          {expiratoryFlowExamples.map((trace) => <WaveformChart key={trace.label} trace={trace} locale="en" />)}
+          <details className="text-sm">
+            <summary className="cursor-pointer font-semibold">Read a text description of the traces</summary>
+            <p className="mt-2">In Trace A, flow reaches the dashed line before the next inspiratory upstroke. In Trace B, flow remains below it until the next upstroke.</p>
+          </details>
+          <a className={link} href="https://thoracic-society.files.svdcdn.com/production/2024-RBC-Physiology-Jeopardy-Handout.pdf?dm=1746279988">American Thoracic Society · Identifying auto-PEEP</a>
+        </section>
+      )}
       {"equipment" in step && <EquipmentVisual moduleKey={step.equipment} locale="en" hideTeaching={!checked} />}
       {activity.id === "shift" && index === 1 && delayed && <p className="rounded-lg bg-muted p-3">While the team was called, Patient A’s saturation fell further. The team corrected the circuit and is now reassessing recovery.</p>}
       {"monitor" in step && <figure className="space-y-2">
