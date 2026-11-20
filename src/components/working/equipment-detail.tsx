@@ -31,6 +31,7 @@ const references = {
   "EQ-05": [["ZOLL R Series ALS operator’s guide · Front panel and rhythm display", zollManual]],
   "EQ-06": [
     ["Vantive PrisMax · Annotated manufacturer display", "https://prismax.vantive.com/en-us/guides/main-operations-screen/operation-parameters"],
+    ["Baxter Prismaflex · Software-calculated pressures (PDF)", "https://renalcareus.baxter.com/sites/g/files/ebysai3581/files/2020-09/Prismaflex_7_xx_Operators_Manual.pdf"],
     ["Vantive PrisMax · Machine photos", "https://pro.vantive.com/prismax-critical-care-system"],
     ["Baxter PrisMax operator’s manual · Monitored data display, p. 75", prisMaxManual + "#page=75"],
   ],
@@ -79,7 +80,8 @@ const pressureTrend = [
   ["Filter inlet", "After the blood pump, before blood enters the filter", "135", "155", "175"],
   ["Return", "Blood return line after the filter", "80", "81", "82"],
   ["Effluent", "Effluent side of the filter", "15", "10", "5"],
-  ["Filter pressure drop (ΔP)", "Filter inlet pressure minus return pressure", "55", "74", "93"],
+  ["Filter pressure drop (ΔP)", "Simplified example: filter inlet pressure minus return pressure", "55", "74", "93"],
+  ["Transmembrane pressure (TMP)", "Simplified example: mean of filter inlet and return pressures minus effluent pressure", "92.5", "108", "123.5"],
 ] as const;
 
 function CrrtPressureDisplay() {
@@ -107,7 +109,8 @@ function CrrtPressureDisplay() {
       </div>
       <p className="text-sm leading-relaxed">
         In this example, filter inlet pressure rises while return pressure barely changes, so the pressure drop across the filter increases.
-        Compare that trend with blood flow, TMP, the alarm message and circuit observations before drawing conclusions about the cause.
+        TMP also rises in this example. Both calculated rows use simplified formulas for teaching. Use the readings and documentation for your machine and circuit when interpreting a real treatment.
+        Compare the trends with blood flow, the alarm message and circuit observations before drawing conclusions about the cause.
       </p>
     </figure>
   );
@@ -153,14 +156,15 @@ export function VentilatorAlarmVisual() {
   const normal = waveformExercise("WV-01")?.traces.find((trace) => trace.unit === "L/min");
   const incomplete = waveformExercise("WV-02")?.traces.find((trace) => trace.unit === "L/min");
   if (!normal || !incomplete) return null;
+  const sharedTimeAxisEnd = Math.max(...[...normal.points, ...incomplete.points].map(([time]) => time));
 
   return (
     <section lang="en" dir="ltr" aria-labelledby="alarm-flow-title" className="mb-6 space-y-3 rounded-xl border border-border bg-muted p-4">
       <h3 id="alarm-flow-title" className="font-semibold">Compare expiratory flow before the next breath</h3>
-      <p className="text-sm text-muted-foreground">Simulated flow traces. The dashed line is zero flow. Time runs left to right.</p>
+      <p className="text-sm text-muted-foreground">Simulated flow traces share the same time scale. The dashed line is zero flow. The shorter trace ends at the onset of its next breath.</p>
       <div className="grid gap-4 md:grid-cols-2">
-        <WaveformChart trace={{ ...normal, label: "Expiratory flow returns to zero" }} locale="en" />
-        <WaveformChart trace={{ ...incomplete, label: "Expiratory flow remains below zero" }} locale="en" />
+        <WaveformChart trace={{ ...normal, label: "Expiratory flow returns to zero" }} locale="en" timeAxisEnd={sharedTimeAxisEnd} />
+        <WaveformChart trace={{ ...incomplete, label: "Expiratory flow remains below zero" }} locale="en" timeAxisEnd={sharedTimeAxisEnd} />
       </div>
       <p className="text-sm leading-relaxed">
         In the second trace, expiration is still in progress when the next inspiration starts. This can suggest incomplete exhalation.
