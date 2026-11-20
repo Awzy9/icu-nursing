@@ -7,6 +7,10 @@ const zollManual = "https://www.zoll.com/-/media/LegacyMedia/public-site/product
 const arterialArticle = "https://pmc.ncbi.nlm.nih.gov/articles/PMC7183114/";
 
 const references = {
+  "EQ-04": [
+    ["B. Braun Infusomat Space P instructions for use · Typical display during infusion", "https://cloud-bbraun-ch.dispatcher.qas.cw.bbraun.com/content/dam/catalog/bbraun/bbraunProductCatalog/CW_CH/de-ch/b12/infusomat-space-pundzubehoer0.pdf"],
+    ["FDA · Infusion pump risk reduction strategies for clinicians", "https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians"],
+  ],
   "EQ-02": [
     ["HAMILTON-C1 operator’s manual · Waveform display and pressure/time graph (figure 6-6)", "https://www.hamilton-medical.com/dam/jcr%3Ae8fbf16e-0e4b-47b1-a093-d896a1fbb14a/HAMILTON-C1-ops-manual-SW2.2x-en-624326.05.pdf"],
   ],
@@ -24,7 +28,42 @@ const references = {
   ],
 } as const;
 
+const infusionReadings = [
+  ["Programmed rate", "40 mL/h", "The volume the pump is set to deliver per hour."],
+  ["Remaining VTBI", "60 mL", "The volume still to be infused in this program."],
+  ["Volume infused", "20 mL", "The volume the pump has recorded since the displayed counter was last reset."],
+] as const;
+
+function InfusionPumpDisplay() {
+  return (
+    <figure className="space-y-3">
+      <figcaption>
+        <h3 className="font-semibold">Compare the three infusion readings</h3>
+        <p className="text-sm text-muted-foreground">Simulated display with example values for reading practice.</p>
+      </figcaption>
+      <dl className="grid gap-3 rounded-xl border border-slate-600 bg-slate-950 p-4 text-slate-100 sm:grid-cols-3">
+        {infusionReadings.map(([label, value, detail]) => (
+          <div key={label} className="min-w-0 rounded-lg border border-slate-700 bg-slate-900 p-3">
+            <dt className="text-sm font-medium text-slate-200">{label}</dt>
+            <dd className="mt-1 space-y-2">
+              <span className="block text-xl font-semibold tabular-nums text-cyan-300">{value}</span>
+              <span className="block text-sm text-slate-300">{detail}</span>
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </figure>
+  );
+}
+
 const panels = {
+  "EQ-04": {
+    title: "Read the alarm message",
+    tiles: [
+      [Gauge, "Occlusion", "The pump has detected an obstruction condition. Some devices distinguish between the supply side and the patient side."],
+      [Activity, "Air in line", "On pumps with an air detector, this message signals that the detector has registered air in the tubing. Check the exact message and follow the pump instructions and local protocol."],
+    ],
+  },
   "EQ-02": {
     title: "Read the ventilator display",
     tiles: [
@@ -75,6 +114,7 @@ export function EquipmentDetail({ moduleKey, parameters }: { moduleKey: string; 
 
   return (
     <div lang="en" dir="ltr" className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
+      {parameters && moduleKey === "EQ-04" && <InfusionPumpDisplay />}
       {teachingBreath && (
         <section aria-label="Example ventilator waveforms" className="space-y-3">
           <h3 className="font-semibold">Follow one breath across three waveforms</h3>
