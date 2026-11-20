@@ -15,8 +15,8 @@ export function waveformExercise(key: string): WaveformExercise | undefined { re
 // Maps authored [time, value] data points onto SVG pixel coordinates for a <polyline points="...">
 // string. A pure, deterministic transform - the shape on screen is exactly the authored data,
 // nothing is interpolated or invented beyond straight lines between the authored points.
-export function tracePolyline(trace: WaveformTrace, width: number, height: number, padding = 4): string {
-  const maxTime = Math.max(...trace.points.map((p) => p[0])) || 1;
+export function tracePolyline(trace: WaveformTrace, width: number, height: number, padding = 4, timeAxisEnd?: number): string {
+  const maxTime = timeAxisEnd ?? (Math.max(...trace.points.map((p) => p[0])) || 1);
   const [lo, hi] = trace.domain;
   const span = hi - lo || 1;
   const x = (t: number) => padding + (t / maxTime) * (width - 2 * padding);
