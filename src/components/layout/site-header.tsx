@@ -1,5 +1,5 @@
 import { workingEditionEnabled } from "@/lib/working";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Search } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { NavLink as ActiveLink } from "./nav-link";
@@ -18,8 +18,9 @@ export async function SiteHeader() {
   const isStaff = roles.some((r) => STAFF_ROLES.includes(r));
 
   const working = workingEditionEnabled();
+  const locale = await getLocale();
   let primary: NavLink[] = [{ href: "/library", label: t("library") }, { href: "/learn", label: t("learn") }, { href: "/question-bank", label: t("questionBank") }, { href: "/study", label: t("study") }, { href: "/cases", label: t("cases") }, { href: "/skills", label: t("skills") }, { href: "/practice", label: t("practice") }, { href: "/equipment", label: t("equipment") }, { href: "/medications", label: t("medications") }];
-  if (working) primary = [{href:"/learn",label:t("learn")},{href:"/learn/paths",label:t("paths")},{href:"/question-bank",label:t("questionBank")},{href:"/study",label:t("study")},{href:"/exam",label:t("exams")}];
+  if (working) primary = [{href:"/nursing-lab",label:locale === "ar" ? "مختبر التمريض" : "Nursing Lab"},{href:"/learn",label:t("learn")},{href:"/learn/paths",label:t("paths")},{href:"/question-bank",label:t("questionBank")},{href:"/study",label:t("study")},{href:"/exam",label:t("exams")}];
   if (user && working) primary.push({href:"/dashboard",label:t("dashboard")});
   if (user && !working) primary.push({ href: "/dashboard", label: t("dashboard") }, { href: "/bookmarks", label: t("bookmarks") });
   if (isStaff) primary.push({ href: "/admin", label: t("admin") });
@@ -61,7 +62,7 @@ export async function SiteHeader() {
           </details> : null}
         </nav>
         <div className="flex items-center gap-2">
-          <Link href={working ? "/learn#working-search" : "/search"} aria-label={t("search")} className="inline-flex size-11 items-center justify-center rounded-md border border-input bg-card text-foreground no-underline hover:bg-muted"><Search className="size-5" aria-hidden /></Link>
+          <Link href={working ? (user ? "/learn#working-search" : "/#working-search") : "/search"} aria-label={t("search")} className="inline-flex size-11 items-center justify-center rounded-md border border-input bg-card text-foreground no-underline hover:bg-muted"><Search className="size-5" aria-hidden /></Link>
           <LocaleSwitcher />
           <div className="hidden xl:block">{signOut}</div>
           <MobileNav links={working ? primary : [...primary, ...future]} footer={signOut} />
