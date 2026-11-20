@@ -86,10 +86,16 @@ Hyperkalaemia and arrhythmia, metabolic acidosis, fluid overload and pulmonary o
 Urine output hourly (volume, colour), balance totals, catheter checks, blood results and who was informed, dipstick results, risk factors and drug/contrast exposure reported, escalation and response.
 
 ## 15. Practical bedside example
-At 03:00 the urine output has been 18 mL for the last two hours in an 80 kg patient. You check the catheter for kinks and flush per policy if ordered, record the time, review recent observations and drugs, then call with SBAR before the six-hour mark and prepare for bloods.
+At 03:00, an 80 kg adult has produced 18 mL of urine in total over the preceding two hours. That is 9 mL/h, or about 0.11 mL/kg/h.
+
+**What to check and report.** Confirm the time interval and whether the preceding measurement was recorded correctly. If a urinary catheter is in place, inspect the drainage tubing for a kink or other visible drainage problem. Review the blood pressure trend, fluid balance and recent creatinine results against baseline. Report the two-hour total, weight-adjusted rate, findings from the catheter check, and any other deterioration.
+
+**Why act now.** The two-hour urine output trend is a reason to assess and escalate according to local policy. By itself it has yet to meet the duration in the NICE adult urine-output criterion for AKI, which is more than six hours below 0.5 mL/kg/h. Creatinine criteria can identify AKI independently.
 
 ## 16. Clinical case (fictional)
 A 68-year-old woman with septic shock is on vasopressors and has received an aminoglycoside and contrast earlier. Her urine output has fallen below the threshold for 5 hours and her potassium is high. The nurse confirms the catheter is working, checks the ECG, informs the intensivist urgently, and prepares for further bloods and possible renal replacement therapy as the team decides.
+
+**Why potassium changes the urgency.** In this case, low urine output has been present for five hours, but the new high potassium result already needs urgent review. Give the potassium value and time, ECG findings if available, creatinine trend, recent medication and contrast exposure, and urine output with its duration. This helps the team assess immediate risk and possible contributors while deciding the next steps.
 
 ## 17. MCQs
 **Q1 (monitoring).** An 80 kg patient on day 2 of septic shock has produced 20 mL of urine per hour for the last 5 hours. The catheter is draining freely. What is the best nursing action?

@@ -114,8 +114,14 @@ Screen tool, result, time; behaviours observed; contributing factors found; inte
 ## 15. Practical bedside example
 At 06:00 a patient who was talking yesterday is quiet, not following requests and not eating. You screen with the unit tool (positive), check pain with a behavioural tool, oxygen saturation, temperature and bladder, move the clock and calendar into view, put hearing aids and glasses back on, introduce yourself and explain the situation calmly, then report with SBAR.
 
+
+**Why the quiet presentation matters.** The change from yesterday is the clue. Withdrawal, slower responses and reduced eating can accompany hypoactive delirium. Ask staff or family what is usual for the patient and whether alertness has changed during the shift. Record when the change began, the name and result of the ICU screening tool, and possible contributors you found.
+
 ## 16. Clinical case (fictional)
 A 71-year-old man, day 3 after bowel surgery, is restless, tries to pull out his central line and says he is "at home". His family says this is new. Screening is positive; pain is likely, urine retention is found, and sleep has been interrupted. The nurse reorients him with his daughter present, treats the cause under orders (analgesia, catheter), cluster-care for sleep, and documents. Medication review and drug decisions stay with the prescriber and pharmacist.
+
+
+**What to reassess.** Protect the line and maintain immediate safety. After addressing possible contributors such as pain and urinary retention, reassess alertness and attention. A calmer patient can still be inattentive. Document the changes and repeat screening according to unit practice.
 
 ## 17. MCQs
 **Q1 (judgment).** A usually talkative patient is quiet, slow to answer, not eating and doesn't follow requests this morning. The family say it began overnight. What is the best nursing action?

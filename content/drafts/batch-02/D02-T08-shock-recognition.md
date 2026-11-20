@@ -96,8 +96,14 @@ Time of recognition; the three-window findings; observations and MAP trends; cal
 ## 15. Practical bedside example
 The patient's heart rate has risen over two hours although the blood pressure is still within range. You check capillary refill (slow), skin temperature (cool legs), urine output (falling) and mental state (restless). You repeat the observations, call for review with SBAR, and prepare bloods and lactate while waiting.
 
+
+**How to interpret the trend.** A blood pressure still within range can coexist with poor peripheral perfusion. Here, the combination of slower capillary refill, cooler limbs, falling urine output and new restlessness is more informative than any single finding. Compare with the patient's baseline and repeat capillary refill using the same site and technique. Report the direction and timing of change so the receiving clinician can judge whether the findings are new and worsening. See the 2025 ESICM guideline in the references for the role of capillary refill and complementary skin findings.
+
 ## 16. Clinical case (fictional)
-A 47-year-old man, six hours after a bowel resection, has a heart rate of 120, systolic pressure 98, cold hands and falling urine output; his drain is filling with blood. The nurse sees a possible haemorrhage, calls the surgical and ICU teams, prepares IV access and blood tests, records the drain volume and urine output, and continues observations every 5 to 10 minutes. The team decides on fluids, blood and the next steps.
+A 47-year-old man, six hours after a bowel resection, has a heart rate of 120, systolic pressure 98, cold hands and falling urine output; his drain is filling with blood. The nurse sees a possible haemorrhage, calls the surgical and ICU teams, prepares IV access and blood tests, records the drain volume and urine output, and continues close reassessment at the frequency required by the patient's condition and the local escalation pathway. The team decides on fluids, blood and the next steps.
+
+
+**Why this changes the priority.** New bloody drain output after surgery gives the team a possible source of blood loss. The associated changes in peripheral perfusion and urine output make this an urgent bedside review. In the handover, give the amount of drainage over a stated interval, the latest observations and their trend, and any change in mental state. Continue tracking the same findings during the response so the team can judge whether perfusion is improving or deteriorating.
 
 ## 17. MCQs
 **Q1 (judgment).** A patient 6 hours after surgery has a heart rate rising from 90 to 120, cool mottled legs, falling urine output and new restlessness, but a systolic pressure of 98 mmHg. What is the best interpretation and action?
