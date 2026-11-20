@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Activity, Droplets, Gauge, Monitor, Zap } from "lucide-react";
 import { waveformExercise } from "@/lib/working/waveform";
 import { WaveformChart } from "./waveform-chart";
@@ -7,6 +8,10 @@ const zollManual = "https://www.zoll.com/-/media/LegacyMedia/public-site/product
 const arterialArticle = "https://pmc.ncbi.nlm.nih.gov/articles/PMC7183114/";
 
 const references = {
+  "EQ-08": [
+    ["International Guideline, 4th edition · Full-body support surfaces", "https://static1.squarespace.com/static/6479484083027f25a6246fcb/t/6aa1d3b8d615723ca31f8de9/1788990393971/NPIAP-EPUAP-PPPIA-Quick-Ref-2026-FINAL.pdf"],
+    ["Arjo Nimbus 4 and Nimbus Professional · Controls and pressure indicators", "https://qbank.arjo.com/productdocumentation/649934EN_06.pdf"],
+  ],
   "EQ-04": [
     ["B. Braun Infusomat Space P instructions for use · Typical display during infusion", "https://cloud-bbraun-ch.dispatcher.qas.cw.bbraun.com/content/dam/catalog/bbraun/bbraunProductCatalog/CW_CH/de-ch/b12/infusomat-space-pundzubehoer0.pdf"],
     ["FDA · Infusion pump risk reduction strategies for clinicians", "https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians"],
@@ -65,7 +70,50 @@ function PumpDisplay({ title, readings }: { title: string; readings: readonly (r
   );
 }
 
+function SupportSurfaceVisual() {
+  const [phase, setPhase] = useState(0);
+
+  return (
+    <figure className="space-y-4">
+      <figcaption>
+        <h3 className="font-semibold">Compare foam and alternating-pressure air</h3>
+        <p className="text-sm text-muted-foreground">Simplified cross-sections of two support surfaces.</p>
+      </figcaption>
+      <div className="grid gap-3 sm:grid-cols-2">
+        <div className="space-y-3 rounded-lg border border-border bg-card p-4">
+          <p className="font-semibold">Reactive foam</p>
+          <div aria-hidden="true" className="flex h-12 items-end">
+            <div className="h-8 w-full rounded-md border-2 border-sky-500 bg-sky-500/20" />
+          </div>
+          <p className="text-sm text-muted-foreground">Foam conforms under load and spreads it over a larger area.</p>
+        </div>
+        <div className="space-y-3 rounded-lg border border-border bg-card p-4">
+          <p className="font-semibold">Active alternating-pressure air</p>
+          <div aria-hidden="true" className="flex h-12 items-end gap-1">
+            {[0, 1, 0, 1, 0, 1].map((group, index) => (
+              <div key={index} className={`min-w-0 flex-1 rounded-full border-2 border-primary ${group === phase ? "h-12 bg-primary/25" : "h-6 bg-primary/10"}`} />
+            ))}
+          </div>
+          <p role="status" className="text-sm text-muted-foreground">
+            {phase === 0 ? "Phase 1. The first group of cells is more inflated." : "Phase 2. The second group of cells is more inflated."}
+          </p>
+          <button type="button" className="min-h-11 rounded-lg border border-border px-3 text-sm font-semibold" onClick={() => setPhase(1 - phase)}>
+            Show next phase
+          </button>
+        </div>
+      </div>
+    </figure>
+  );
+}
+
 const panels = {
+  "EQ-08": {
+    title: "Read a powered mattress controller",
+    tiles: [
+      [Monitor, "Mode", "On the Nimbus 4, Dynamic mode alternates cell pressure. Static mode keeps the cells at a steady support pressure."],
+      [Gauge, "Pressure and alarms", "On the Nimbus 4, separate indicators show high or low mattress pressure. Check the exact indicator and follow the instructions for that model."],
+    ],
+  },
   "EQ-07": {
     title: "Recognise an interrupted feed",
     tiles: [
@@ -132,6 +180,7 @@ export function EquipmentDetail({ moduleKey, parameters }: { moduleKey: string; 
     <div lang="en" dir="ltr" className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
       {parameters && moduleKey === "EQ-04" && <PumpDisplay title="Compare the three infusion readings" readings={infusionReadings} />}
       {parameters && moduleKey === "EQ-07" && <PumpDisplay title="Read an enteral feeding pump display" readings={enteralReadings} />}
+      {parameters && moduleKey === "EQ-08" && <SupportSurfaceVisual />}
       {teachingBreath && (
         <section aria-label="Example ventilator waveforms" className="space-y-3">
           <h3 className="font-semibold">Follow one breath across three waveforms</h3>
