@@ -738,10 +738,54 @@ export function PulseOximeterPhoto({ locale }: { locale: string }) {
   return <EquipmentPhoto visual={fingerOximeter} locale={locale} />;
 }
 
+const wiredOximeter: Visual = {
+  file: "wrist-oximeter",
+  width: 960,
+  height: 514,
+  alt: ["A gray finger probe connected by a cable to a wrist display showing SpO₂, pulse rate and a pulse waveform.", "حساس رمادي على الإصبع متصل بكابل بشاشة على المعصم تعرض تشبع الأكسجين ومعدل النبض وموجة النبض."],
+  label: ["Trace the sensor cable to the display", "تتبّع كابل الحساس حتى الشاشة"],
+  detail: ["The gray finger probe is separate from the wrist display. On this display, the blue value is SpO₂, the green value is pulse rate, and the green trace is the pulse waveform.", "حساس الإصبع الرمادي منفصل عن شاشة المعصم. في هذه الشاشة، تشير القيمة الزرقاء إلى تشبع الأكسجين، والخضراء إلى معدل النبض، والخط الأخضر إلى موجة النبض."],
+  source: "Wrist-oximeter.jpg",
+  credit: "UusiAjaja",
+  license: "CC0 1.0",
+};
+
+const oximeterSignal: Translation[] = [
+  ["The emitter sends red and infrared light.", "يبعث المصدر ضوءًا أحمر وضوءًا تحت الأحمر."],
+  ["The detector measures the light that passes through the finger.", "يقيس المستقبِل الضوء الذي يمر عبر الإصبع."],
+  ["The device uses the changing signal to estimate SpO₂ and pulse rate.", "يستخدم الجهاز تغيّر الإشارة لتقدير تشبع الأكسجين ومعدل النبض."],
+];
+
+function PulseOximeterVisuals({ locale }: { locale: string }) {
+  const ar = locale === "ar";
+  return (
+    <>
+      <div className="grid gap-x-4 md:grid-cols-2">
+        <PulseOximeterPhoto locale={locale} />
+        <EquipmentPhoto visual={wiredOximeter} locale={locale} />
+      </div>
+      <figure className="mb-8 space-y-3 rounded-xl border border-border bg-muted p-4 text-sm">
+        <figcaption className="font-semibold">{ar ? "من الضوء إلى القراءة" : "From light to reading"}</figcaption>
+        <ol className="grid gap-2 sm:grid-cols-3">
+          {oximeterSignal.map((step, index) => (
+            <li key={step[0]} className="flex items-start gap-2 rounded-lg border border-border bg-card p-3 leading-relaxed">
+              <span aria-hidden className="rounded bg-muted px-2 font-semibold">{index + 1}</span>
+              <span>{step[ar ? 1 : 0]}</span>
+            </li>
+          ))}
+        </ol>
+        <a className="text-xs underline" href="https://www.accessdata.fda.gov/cdrh_docs/pdf21/K211138.pdf">
+          {ar ? "مرجع طريقة عمل الحساس (PDF)" : "Sensor principle reference (PDF)"}
+        </a>
+      </figure>
+    </>
+  );
+}
+
 export function EquipmentVisual({ moduleKey, locale, hideTeaching = false }: { moduleKey: string; locale: string; hideTeaching?: boolean }) {
   if (moduleKey === "EQ-06") return <CvvhdCircuitFigure locale={locale} />;
   if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
-  if (moduleKey === "EQ-01") return <PulseOximeterPhoto locale={locale} />;
+  if (moduleKey === "EQ-01") return <PulseOximeterVisuals locale={locale} />;
   if (moduleKey === "SK-20") return <TransportVisual locale={locale} />;
 
   const visual = visuals[moduleKey];
