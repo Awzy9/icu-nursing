@@ -834,7 +834,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 3,
-   "hash": "c27e21b23c9fc28a"
+   "hash": "e2acb35e1a217027"
   },
   {
    "key": "D01-T17",
@@ -4519,7 +4519,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "7737fe4674f78fbd"
+   "hash": "9e87b3df89a64b66"
   },
   {
    "key": "SC-15",

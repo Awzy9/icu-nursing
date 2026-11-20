@@ -96,8 +96,14 @@ Order, product, unit number and expiry as local policy requires; identity check 
 ## 15. Practical bedside example
 A red-cell unit arrives at 09:00. Before starting, the nurse performs the identification check required by policy, inspects the bag for colour and clots, confirms a dedicated line with a sterile filter and no other infusions on that tubing except 0.9% sodium chloride, records baseline observations and starts at the ordered initial rate. She stays with the patient during the first 15 minutes as the Open RN checklist describes, records observations at the intervals local policy requires, and completes the unit within the time limit the Circular gives.
 
+
+**Why the baseline matters.** Record pre-transfusion vital signs, oxygen device and flow, and any symptoms already present. If a symptom develops, compare it with that baseline and record the onset time relative to the start of the transfusion. This helps the team distinguish a new change from an existing abnormality.
+
 ## 16. Clinical case (fictional)
 A 68-year-old woman in the ICU with heart failure and a positive fluid balance is receiving a transfusion. Forty minutes in she develops new breathlessness, her saturation falls and she has bibasal crackles. The nurse stops the transfusion, calls the doctor, and reports that the patient is fluid-positive with known cardiac disease. The team considers circulatory overload but also a lung-injury reaction and treats according to the clinical picture; the transfusion service is notified. The nurse documents times, vital signs and actions.
+
+
+**What to include in the urgent handover.** Report when the transfusion started, when breathlessness began, the component and estimated volume infused, and how oxygen saturation and support changed. Include the blood pressure trend, recent fluid balance and response since stopping the transfusion. Fluid overload is a consideration in this case, and the clinical team needs to assess other causes of acute respiratory deterioration as well.
 
 ## 17. MCQs
 **Q1 (application).** Immediately before starting a red-cell unit, the nurse notices that the bag has a cloudy appearance. What should she do?

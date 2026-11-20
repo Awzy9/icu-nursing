@@ -1031,6 +1031,20 @@
     "gaps": 0,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "e2acb35e1a217027",
+    "recorded": "2026-11-20",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-FDA-COI-2024",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "D01-T17": [
@@ -5365,6 +5379,20 @@
    {
     "hash": "7737fe4674f78fbd",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-NICE-NG24"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "9e87b3df89a64b66",
+    "recorded": "2026-11-20",
     "evidence_status": "partial",
     "sources": [
      "S-AABB-COI-2024",
