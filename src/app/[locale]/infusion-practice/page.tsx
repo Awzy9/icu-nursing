@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { workingEditionEnabled } from "@/lib/working";
+import { InfusionCalculator } from "@/components/working/infusion-calculator";
 import { allInfusionCases } from "@/lib/working/infusion-case";
 
 export const dynamic = "force-dynamic";
@@ -21,6 +22,7 @@ export default async function InfusionPracticePage({ params }: { params: Promise
         <h1 className="text-3xl font-bold">{ar ? "تدريب حساب معدل التسريب" : "Infusion-rate practice problems"}</h1>
         <p className="text-muted-foreground">{ar ? "تدرّب على حساب معدل التسريب بالمل/ساعة لأوامر شائعة، ثم تحقق من إجابتك." : "Practise calculating the mL/hr rate for common orders, then check your answer."}</p>
       </header>
+      <InfusionCalculator locale={locale} />
       <ul className="space-y-3">
         {cases.map((c) => (
           <li key={c.key}>
