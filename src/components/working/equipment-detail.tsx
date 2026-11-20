@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Activity, Droplets, Gauge, Monitor, Zap } from "lucide-react";
-import { waveformExercise } from "@/lib/working/waveform";
+import { Link } from "@/i18n/navigation";
+import { waveformExercise, type WaveformTrace } from "@/lib/working/waveform";
 import { WaveformChart } from "./waveform-chart";
 
 const prisMaxManual = "https://usrenalacute.baxter.com/sites/g/files/ebysai3231/files/2020-12/Prismax%20Operator%27s%20Manual.pdf";
@@ -185,6 +186,43 @@ export function VentilatorAlarmVisual() {
   );
 }
 
+const arterialBeats: { trace: WaveformTrace; detail: string }[] = [
+  {
+    trace: { label: "Reference beat", unit: "mmHg", domain: [40, 160], points: [[0, 70], [0.07, 78], [0.14, 120], [0.2, 115], [0.31, 98], [0.37, 91], [0.4, 95], [0.48, 89], [0.65, 79], [1, 70]] },
+    detail: "Look for a sharp rise, a systolic peak and a small notch on the downslope.",
+  },
+  {
+    trace: { label: "Overdamped beat", unit: "mmHg", domain: [40, 160], points: [[0, 78], [0.07, 80], [0.14, 88], [0.2, 99], [0.31, 104], [0.37, 101], [0.4, 99], [0.48, 94], [0.65, 87], [1, 78]] },
+    detail: "The upstroke is slower and the notch is obscured. Compared with the reference, systolic pressure reads lower and diastolic pressure reads higher.",
+  },
+  {
+    trace: { label: "Underdamped beat", unit: "mmHg", domain: [40, 160], points: [[0, 61], [0.07, 77], [0.14, 145], [0.2, 107], [0.31, 119], [0.37, 84], [0.4, 98], [0.48, 82], [0.65, 78], [0.8, 69], [1, 61]] },
+    detail: "An exaggerated peak and oscillations can appear. Compared with the reference, systolic pressure reads higher and diastolic pressure reads lower.",
+  },
+];
+
+function ArterialDampingComparison() {
+  return (
+    <section aria-labelledby="arterial-damping-title" className="space-y-3">
+      <h3 id="arterial-damping-title" className="font-semibold">Compare three arterial waveform shapes</h3>
+      <p className="text-sm text-muted-foreground">Simulated beats share a 0–1 second axis and a 40–160 mmHg scale.</p>
+      <div className="grid gap-3 lg:grid-cols-3">
+        {arterialBeats.map(({ trace, detail }) => (
+          <div key={trace.label} className="space-y-2 rounded-lg border border-border bg-card p-3">
+            <WaveformChart trace={trace} locale="en" timeAxisEnd={1} />
+            <p className="text-sm leading-relaxed">{detail}</p>
+          </div>
+        ))}
+      </div>
+      <p className="text-sm leading-relaxed">
+        If the waveform changes, assess the patient and review the signal and setup with the bedside team before interpreting the pressure trend.
+        Document the waveform change, any reliability concern, what you checked and whom you notified.
+      </p>
+      <Link href="/aline" className="inline-flex min-h-11 items-center text-sm font-semibold text-primary underline">Practise interpreting the square-wave test</Link>
+    </section>
+  );
+}
+
 const panels = {
   "EQ-08": {
     title: "Read a powered mattress controller",
@@ -264,6 +302,7 @@ export function EquipmentDetail({ moduleKey, parameters }: { moduleKey: string; 
 
   return (
     <div lang="en" dir="ltr" className="mb-8 space-y-4 rounded-xl border border-border bg-muted p-4 sm:p-5">
+      {parameters && moduleKey === "EQ-03" && <ArterialDampingComparison />}
       {parameters && moduleKey === "EQ-04" && <PumpDisplay title="Compare the three infusion readings" readings={infusionReadings} />}
       {parameters && moduleKey === "EQ-06" && <CrrtPressureDisplay />}
       {parameters && moduleKey === "EQ-07" && <PumpDisplay title="Read an enteral feeding pump display" readings={enteralReadings} />}
