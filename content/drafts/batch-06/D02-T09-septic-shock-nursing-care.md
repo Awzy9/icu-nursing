@@ -94,8 +94,14 @@ Time of recognition; screening score; time and number of cultures; time of antim
 ## 15. Practical bedside example
 At 14:05 a patient with a rising early-warning score and a hot, flushed appearance becomes hypotensive. The nurse calls the sepsis team, draws blood cultures and a lactate, checks allergies and prepares the antimicrobial that the doctor orders, starts the ordered fluid, records the times in the sepsis chart and notes the capillary refill and urine output before and after the bolus.
 
+
+**What to compare after the bolus.** Record the blood pressure and capillary refill before and after the ordered fluid. Compare the findings together and report any new increase in oxygen requirement or breathing difficulty during reassessment. Use the urine-output trend over a stated interval. It provides context for perfusion, while a brief interval may be too short to show a response. If findings remain concerning, report them before further treatment decisions.
+
 ## 16. Clinical case (fictional)
 A 66-year-old woman with a urinary source is on a vasoactive infusion after fluid resuscitation. Four hours later the dose requirement has risen, her lactate is not falling, and her skin is mottled. The nurse reports these changes, asks the doctor to review for a drainable source and cardiac dysfunction, and records the sequence and times of care.
+
+
+**Why the rising support requirement matters.** Review the blood pressure alongside the vasoactive dose required to maintain it. In this case, worsening mottling and persistent lactate elevation make the overall trend concerning. Report the dose and pressure trend, the timing of the lactate measurements, and the latest skin and urine findings. Serial lactate and capillary refill can inform reassessment alongside the rest of the clinical picture. The team can use the pattern to reassess source control, cardiac function and other contributors.
 
 ## 17. MCQs
 **Q1 (judgment).** A patient with suspected septic shock needs blood cultures and antimicrobials. What is the best sequence according to SSC 2026?

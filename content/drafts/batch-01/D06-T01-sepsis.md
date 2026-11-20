@@ -91,10 +91,16 @@ Septic shock, acute kidney injury, ARDS, delirium, disseminated intravascular co
 Time of recognition; full observations and score; who was informed, when, by what method; response time; orders received and times of cultures, antimicrobials, fluids; reassessments; family communication.
 
 ## 15. Practical bedside example
-At 02:00 a patient with a urinary catheter has a heart rate rising from 88 to 112 and a respiratory rate of 24. The nurse completes the observations, checks urine output (30 mL in the last two hours), notes the patient is drowsy, calculates the early-warning score, calls using SBAR, prepares blood-culture bottles and a lactate sample while waiting, then repeats observations after 30 minutes and documents each step.
+At 02:00 a patient with a urinary catheter has a heart rate rising from 88 to 112 and a respiratory rate of 24. The nurse completes the observations, checks urine output (30 mL in the last two hours), notes the patient is drowsy, calculates the early-warning score, calls using SBAR, prepares blood-culture bottles and a lactate sample while waiting, then repeats observations at a frequency matched to the patient's condition and the local escalation pathway and documents each step.
+
+
+**Why these findings matter together.** The rising heart rate, faster breathing, drowsiness and low urine output suggest deterioration across several systems. Check whether drowsiness is new and confirm the urine collection interval. If the early-warning score is used, report it alongside the changes from baseline and the times they occurred. These findings support urgent assessment for sepsis when infection is suspected, while the clinical team also considers other causes of deterioration.
 
 ## 16. Clinical case (fictional)
-A 78-year-old woman, three days after hip surgery, is slightly confused and says she "just feels wrong". Temperature is normal, blood pressure 108/60 (usual 150/85), heart rate 104, respiratory rate 22, and urine output is low. Her early-warning score is 4, but the nurse recognises a large drop from her usual pressure, new confusion and a worried daughter. The nurse escalates as a possible sepsis case with SBAR, requests review within the time set by policy, and prepares for cultures and a lactate. The doctor decides on antimicrobials and fluids.
+A 78-year-old woman, three days after hip surgery, is slightly confused and says she "just feels wrong". Temperature is normal, blood pressure 108/60 (usual 150/85), heart rate 104, respiratory rate 22, and urine output is low. The nurse checks the early-warning score and reports the large drop from her usual pressure, new confusion and what her daughter says has changed. The nurse escalates as a possible sepsis case with SBAR, requests review within the time set by policy, and prepares for cultures and a lactate. The doctor decides on antimicrobials and fluids.
+
+
+**Why escalate with a normal temperature?** The concerning changes are new confusion, falling blood pressure relative to baseline and low urine output. In the handover, say what is new, give the current and usual blood pressure, and report when urine output fell. The daughter can help establish when the change in behaviour began. Continue reassessing while the team evaluates infection and other postoperative causes.
 
 ## 17. MCQs
 **Q1 (judgment).** A 78-year-old woman, three days after hip surgery, has suspected wound infection and new confusion. Her NEWS2 score is 4, systolic pressure has fallen 40 mmHg from her usual level, and her daughter reports a major change from baseline. What is the best nursing action?
