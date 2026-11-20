@@ -85,8 +85,14 @@ Tool used and score (or components); time; context (rest or procedure); interven
 ## 15. Practical bedside example
 Before turning a ventilated patient, you check the last behavioural score and analgesia, give pre-procedure analgesia if ordered, turn, reassess with the same tool during and after, record the scores and tell the doctor if the score stays high.
 
+
+**Compare scores in context.** Record the tool and score at rest before the turn, the behaviour seen during the turn, and the score afterward. Note when any ordered analgesia was given. Use the same tool for reassessment so the team can compare the response under similar conditions.
+
 ## 16. Clinical case (fictional)
 A 57-year-old man on a ventilator is restless with a heart rate of 112. The nurse does not rely on the heart rate: she uses the unit's behavioural pain tool, finds a high score during repositioning, asks for analgesia review before any additional sedative, reassesses and documents.
+
+
+**Why the heart rate alone is insufficient.** A faster pulse is a cue to assess. When the patient can communicate reliably, ask them to describe their pain. When they cannot, use the unit’s validated behavioural tool and record the behaviours observed. Report whether they occurred at rest or with movement and what changed on reassessment.
 
 ## 17. MCQs
 **Q1 (judgment).** A ventilated patient is restless and has a heart rate of 112. What is the best first step?
