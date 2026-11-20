@@ -90,8 +90,14 @@ Ordered target; SpO₂ trend, device and flow or FiO₂ at each change; respirat
 ## 15. Practical bedside example
 At 02:00 a patient on a simple mask has an SpO₂ of 91% against a target of 94–98%. You check the trace and finger perfusion, look at the respiratory rate and effort, make sure the mask fits and the oxygen is connected, titrate within the written protocol, and call with SBAR because the requirement has risen over the shift. You document each step.
 
+
+**Distinguish a poor signal from a rising oxygen requirement.** Compare the pulse shown by the oximeter with the measured pulse, then check the probe and oxygen delivery while assessing the patient. Report the current saturation with the device and flow, earlier settings, respiratory effort and alertness. A saturation back in target on more oxygen is still a change worth reporting.
+
 ## 16. Clinical case (fictional)
 A 72-year-old man with COPD is admitted with breathlessness; his written target is 88–92%. His SpO₂ reads 97% after the oxygen was turned up by a night nurse who thought "higher is safer". He is becoming drowsy. The nurse reports it, and the team checks a blood gas and changes the plan. The nurse documents the reading, the oxygen settings, the change in alertness and the call.
+
+
+**Why drowsiness changes the urgency.** Pulse oximetry estimates oxygen saturation. A blood gas can assess carbon dioxide and pH when ventilatory failure is suspected. Report the prescribed target, actual saturation, oxygen device and flow, and the timing of the change in alertness so the team can assess both oxygenation and ventilation.
 
 ## 17. MCQs
 **Q1 (judgment).** A patient with COPD has a written SpO₂ target of 88–92%. After oxygen is turned up by a colleague, the reading is 98% and the patient is becoming drowsy. What is the best nursing action?
