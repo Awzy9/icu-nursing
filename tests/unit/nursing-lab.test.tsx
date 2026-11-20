@@ -14,6 +14,8 @@ test("records a missed shift decision and removes it after a correct retry", () 
   fireEvent.click(shift.getByRole("radio", { name: /Review Patient B/ }));
   fireEvent.click(shift.getByRole("button", { name: "Check answer" }));
   expect(shift.getByRole("status")).toHaveTextContent("Review this decision");
+  fireEvent.click(shift.getByRole("button", { name: "Next decision" }));
+  expect(shift.getByText(/saturation fell further/)).toBeVisible();
   fireEvent.click(mistakes.getByText(/Patient A has a disconnect alarm/));
   fireEvent.click(mistakes.getByRole("link", { name: "Retry in ICU Shift Simulator" }));
   fireEvent.click(shift.getByRole("radio", { name: /Assess Patient A immediately/ }));
