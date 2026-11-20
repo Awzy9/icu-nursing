@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { Activity, ArrowLeft, ArrowRight, CheckCircle2, CircleAlert, BookOpenCheck, ListRestart, Monitor, Pill } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
@@ -41,9 +41,17 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
   const [ delayed, setDelayed ] = useState(false);
   const [ score, setScore ] = useState(0);
   const step = activity.steps[index];
+  const promptId = useId();
+  const stepHeading = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const heading = stepHeading.current;
+    heading?.focus({ preventScroll: true });
+    heading?.parentElement?.scrollIntoView?.({ block: "start" });
+  }, [index]);
   if (!step) return (
     <div className="space-y-3">
-      <p role="status">{retryIndex === undefined ? `Activity complete. ${score} of ${activity.steps.length} correct.` : "Decision reviewed."}</p>
+      <h3 ref={stepHeading} tabIndex={-1} className="scroll-mt-24 text-lg font-bold">{retryIndex === undefined ? `Activity complete. ${score} of ${activity.steps.length} correct.` : "Decision reviewed."}</h3>
       {activity.id === "shift" && <Link className={link} href="/working/D01-T09">Review ventilator alarms</Link>}
       {activity.id === "medication-checks" && <Link className={link} href="/working/SK-22">Review infusion pump safety</Link>}
       <div><button className={button} type="button" onClick={() => { setIndex(retryIndex ?? 0); setScore(0); setDelayed(false); }}>Restart activity</button></div>
@@ -51,11 +59,13 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
   );
 
   return (
-    <div className="space-y-4" lang="en" dir="ltr">
+    <div className="scroll-mt-24 space-y-4" lang="en" dir="ltr">
       <div className="space-y-2">
         <p className="text-sm font-semibold text-muted-foreground">{retryIndex === undefined ? `Decision ${index + 1} of ${activity.steps.length}` : "Retrying a missed decision"}</p>
         {retryIndex === undefined && <progress aria-label="Activity progress" value={index + Number(checked)} max={activity.steps.length} className="block h-2 w-full accent-primary" />}
       </div>
+      {"equipment" in step && <EquipmentVisual moduleKey={step.equipment} locale="en" hideTeaching={!checked} />}
+      <h3 ref={stepHeading} id={promptId} tabIndex={-1} className="scroll-mt-24 text-lg font-bold leading-snug">{step.prompt}</h3>
       {"flowComparison" in step && (
         <section aria-label="Simulated ventilator flow traces" className="space-y-3 rounded-xl border border-border p-4">
           <p className="text-sm text-muted-foreground">Time runs left to right. The dashed line marks zero flow.</p>
@@ -67,7 +77,6 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
           <a className={link} href="https://thoracic-society.files.svdcdn.com/production/2024-RBC-Physiology-Jeopardy-Handout.pdf?dm=1746279988">American Thoracic Society · Identifying auto-PEEP</a>
         </section>
       )}
-      {"equipment" in step && <EquipmentVisual moduleKey={step.equipment} locale="en" hideTeaching={!checked} />}
       {activity.id === "shift" && index === 1 && delayed && <p className="rounded-lg bg-muted p-3">While the team was called, Patient A’s saturation fell further. The team corrected the circuit and is now reassessing recovery.</p>}
       {"monitor" in step && <figure className="space-y-2">
         <figcaption className="text-sm font-semibold">Simulated bedside readings</figcaption>
@@ -86,8 +95,7 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
       {"readouts" in step && <dl className="grid gap-2 sm:grid-cols-3">
         {step.readouts.map(([label, value]) => <div key={label} className="rounded-lg border border-border p-3"><dt className="text-sm text-muted-foreground">{label}</dt><dd className="font-semibold">{value}</dd></div>)}
       </dl>}
-      <fieldset className="space-y-2" disabled={checked}>
-        <legend className="mb-2 font-semibold">{step.prompt}</legend>
+      <fieldset aria-labelledby={promptId} className="space-y-2" disabled={checked}>
         {step.choices.map((text, i) => (
           <label key={text} className={`flex min-h-12 items-center gap-3 rounded-xl border px-4 py-3 ${checked ? "cursor-default" : "cursor-pointer hover:bg-muted"} ${choice === i ? "border-primary bg-primary/10" : "border-border"}`}>
             <input type="radio" name={activity.id} checked={choice === i} onChange={() => setChoice(i)} />
