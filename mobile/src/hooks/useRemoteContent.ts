@@ -27,13 +27,20 @@ export type FetchState<T> =
 function useFetcher<T>(run: () => Promise<RemoteResult<T>>, depsList: unknown[]): FetchState<T> & { refresh(): void } {
   const [state, setState] = useState<FetchState<T>>({ status: "loading" });
   const mounted = useRef(true);
-  useEffect(() => () => { mounted.current = false; }, []);
+  const request = useRef(0);
+  useEffect(() => {
+    mounted.current = true;
+    return () => { mounted.current = false; request.current++; };
+  }, []);
   const load = useCallback(() => {
+    const id = ++request.current;
     setState({ status: "loading" });
     run().then((r) => {
-      if (!mounted.current) return;
+      if (!mounted.current || id !== request.current) return;
       setState(r.status === "ok" ? { status: "ready", data: r.data, fromCache: r.fromCache } : { status: "offline" });
-    }).catch(() => mounted.current && setState({ status: "offline" }));
+    }).catch(() => {
+      if (mounted.current && id === request.current) setState({ status: "offline" });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, depsList);
   useEffect(() => { load(); }, [load]);
