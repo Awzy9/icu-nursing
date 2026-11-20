@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Activity, ArrowLeft, ArrowRight, CheckCircle2, CircleAlert, BookOpenCheck, ListRestart, Monitor, Pill } from "lucide-react";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { activities, expiratoryFlowExamples, orientation } from "@/lib/working/nursing-lab";
 import { computeRevisionQueue, type RevisionQuestion, type RevisionStatus } from "@/lib/working/revision";
@@ -25,6 +26,13 @@ const workspaces = [
   { id: "mistakes", title: ["Review mistakes", "مراجعة الأخطاء"], detail: ["Retry decisions and questions you missed.", "أعد محاولة القرارات والأسئلة التي أخطأت فيها."], icon: ListRestart },
 ] as const;
 type Workspace = typeof workspaces[number]["id"];
+const workspaceAccents: Record<Workspace, string> = {
+  shift: "bg-cyan-400/15 text-cyan-300",
+  orientation: "bg-emerald-500/10 text-emerald-700 dark:text-emerald-300",
+  "medication-checks": "bg-amber-500/10 text-amber-800 dark:text-amber-300",
+  "visual-skills": "bg-sky-500/10 text-sky-700 dark:text-sky-300",
+  mistakes: "bg-violet-500/10 text-violet-700 dark:text-violet-300",
+};
 
 function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity; retryIndex?: number; onAnswer: (key: string, correct: boolean) => void }) {
   const [ index, setIndex ] = useState(retryIndex ?? 0);
@@ -180,11 +188,22 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
 
   return (
     <div className="mx-auto max-w-6xl space-y-6">
-      <header className="relative overflow-hidden rounded-3xl border border-cyan-800/60 bg-slate-950 px-6 py-8 text-slate-50 sm:px-10 sm:py-12">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-800/60 via-slate-950 to-slate-950" />
-        <div className="relative max-w-2xl space-y-3">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">{ar ? "مختبر تمريض العناية المركزة" : "ICU Nursing Lab"}</h1>
-          <p className="max-w-xl text-base leading-relaxed text-slate-300">{ar ? "اختر نشاطاً للتدرّب على قرارات الرعاية بجانب السرير. التمارين باللغة الإنجليزية." : "Practise bedside decisions with fictional cases, equipment photos and simulated monitor readings."}</p>
+      <header className="overflow-hidden rounded-3xl border border-cyan-800/60 bg-slate-950 text-slate-50">
+        <div className={workspace ? "px-6 py-5 sm:px-8" : "grid items-center gap-6 px-6 py-7 sm:px-9 lg:grid-cols-[1.25fr_1fr] lg:px-12 lg:py-10"}>
+          <div className="space-y-3">
+            <h1 className={workspace ? "text-2xl font-bold tracking-tight" : "text-4xl font-bold tracking-tight sm:text-6xl"}>{ar ? "مختبر تمريض العناية المركزة" : "ICU Nursing Lab"}</h1>
+            {!workspace && <p className="max-w-lg text-base leading-relaxed text-slate-300 sm:text-lg">{ar ? "اختر نشاطاً للتدرّب على قرارات الرعاية بجانب السرير. التمارين باللغة الإنجليزية." : "Practise bedside decisions with fictional cases, equipment photos and simulated monitor readings."}</p>}
+          </div>
+          {!workspace && (
+            <figure className="min-w-0 rounded-2xl border border-cyan-800/60 bg-slate-900 p-2">
+              <div className="relative h-40 overflow-hidden rounded-xl bg-slate-950 sm:h-52 lg:h-64">
+                <Image src="/images/equipment/bedside-monitor-demo.jpg" alt={ar ? "شاشة مراقبة بجانب السرير في وضع العرض" : "Bedside monitor displaying example vital signs in demo mode"} fill sizes="(min-width: 1024px) 440px, 90vw" className="object-contain" priority />
+              </div>
+              <figcaption className="px-2 py-1.5 text-xs text-slate-300">
+                <a className="underline" href="https://commons.wikimedia.org/wiki/File:PatientMonitor-2.jpg">PatientMonitor-2.jpg</a> · <span lang="ja">副局長</span> · <a className="underline" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+              </figcaption>
+            </figure>
+          )}
         </div>
       </header>
       {workspace && <a href="#activities" onClick={() => setWorkspace(null)} className={link}><ArrowLeft aria-hidden className="me-2 size-4 rtl:rotate-180" />{ar ? "كل الأنشطة" : "All activities"}</a>}
@@ -205,7 +224,10 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
           </a>
         ) : (
           <a key={id} href={`#${id}`} onClick={() => setWorkspace(id)} className={`group relative flex min-h-40 flex-col gap-3 overflow-hidden rounded-2xl border p-5 transition-colors ${id === "shift" ? "border-cyan-800 bg-gradient-to-br from-slate-950 to-cyan-950 text-slate-50 hover:border-cyan-400 sm:col-span-2 lg:col-span-4" : "border-border bg-card hover:border-primary hover:bg-primary/5"}`}>
-            <span className={`flex items-center justify-between ${id === "shift" ? "text-cyan-300" : "text-primary"}`}><Icon aria-hidden className="size-6" /><ArrowRight aria-hidden className="size-4 rtl:rotate-180" /></span>
+            <span className="flex items-center justify-between">
+              <span className={`grid size-11 place-items-center rounded-xl ${workspaceAccents[id]}`}><Icon aria-hidden className="size-5" /></span>
+              <ArrowRight aria-hidden className={`size-5 rtl:rotate-180 ${id === "shift" ? "text-cyan-300" : "text-muted-foreground"}`} />
+            </span>
             <span className={id === "shift" ? "text-2xl font-bold" : "font-bold"}>{title[language]}</span>
             <span className={id === "shift" ? "text-sm text-slate-300" : "text-sm text-muted-foreground"}>{detail[language]}</span>
             {status && <span className={`mt-auto pt-1 text-sm font-semibold ${id === "shift" ? "text-cyan-200" : "text-primary"}`}>{status}</span>}
