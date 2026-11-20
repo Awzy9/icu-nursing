@@ -37,12 +37,16 @@ export async function SiteHeader() {
     </div>
   );
 
+  const searchLink = (
+    <Link href={working ? (user ? "/learn#working-search" : "/#working-search") : "/search"} aria-label={t("search")} className="inline-flex size-11 items-center justify-center rounded-md border border-input bg-card text-foreground no-underline hover:bg-muted"><Search className="size-5" aria-hidden /></Link>
+  );
+
   return (
     <header className="relative border-b border-border bg-card">
       <div className="container flex min-h-16 flex-wrap items-center justify-between gap-y-1 gap-x-2 py-1">
         <Link href="/" className="flex items-center gap-2 font-semibold text-navy no-underline">
           <span aria-hidden className="inline-flex size-8 items-center justify-center rounded-md bg-navy text-sm text-navy-foreground">IK</span>
-          <span className="max-w-[11rem] leading-tight sm:max-w-none">{brand("brand")}</span>
+          <span className="max-w-[11rem] text-sm leading-tight sm:max-w-none sm:text-base">{brand("brand")}</span>
         </Link>
         <nav aria-label={t("main")} className="hidden flex-wrap items-center gap-1 xl:flex">
           {primary.map((l) => (
@@ -62,10 +66,9 @@ export async function SiteHeader() {
           </details> : null}
         </nav>
         <div className="flex items-center gap-2">
-          <Link href={working ? (user ? "/learn#working-search" : "/#working-search") : "/search"} aria-label={t("search")} className="inline-flex size-11 items-center justify-center rounded-md border border-input bg-card text-foreground no-underline hover:bg-muted"><Search className="size-5" aria-hidden /></Link>
-          <LocaleSwitcher />
+          <div className="hidden items-center gap-2 sm:flex">{searchLink}<LocaleSwitcher /></div>
           <div className="hidden xl:block">{signOut}</div>
-          <MobileNav links={working ? primary : [...primary, ...future]} footer={signOut} />
+          <MobileNav links={working ? primary : [...primary, ...future]} footer={signOut} tools={<>{searchLink}<LocaleSwitcher id="mobile-locale-switcher" /></>} />
         </div>
       </div>
     </header>
