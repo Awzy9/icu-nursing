@@ -1,3 +1,10 @@
+import type { WaveformTrace } from "./waveform";
+
+export const expiratoryFlowExamples: WaveformTrace[] = [
+  { label: "Trace A", unit: "L/min", domain: [-50, 50], points: [[0, 40], [0.8, 40], [0.8, -45], [1.2, -25], [1.6, -10], [2, 0], [3, 0], [3, 40]] },
+  { label: "Trace B", unit: "L/min", domain: [-50, 50], points: [[0, 40], [0.8, 40], [0.8, -45], [1.2, -32], [1.6, -25], [2, -19], [3, -11], [3, 40]] },
+];
+
 export const activities = [
   {
     id: "shift",
@@ -65,7 +72,7 @@ export const activities = [
   {
     id: "visual-skills",
     title: "Visual Skills Lab",
-    intro: "Use the labeled equipment photos to identify a component or connect a visible clue with an assessment.",
+    intro: "Use equipment photos and simulated waveforms to identify components and interpret bedside clues.",
     steps: [
       {
         equipment: "EQ-04",
@@ -87,6 +94,13 @@ export const activities = [
         choices: ["On the front-panel screen.", "On the power connector.", "On the carrying handle."],
         answer: 0,
         why: "The front-panel screen shows the ECG waveform. Verify which lead or pad source the device is displaying before interpreting the trace.",
+      },
+      {
+        flowComparison: true,
+        prompt: "Which trace suggests that exhalation was still in progress when the next breath began?",
+        choices: ["Trace A.", "Trace B.", "Both traces."],
+        answer: 1,
+        why: "In Trace B, expiratory flow is still below zero immediately before the next inspiration. This pattern suggests incomplete exhalation and possible air trapping. The waveform alone does not quantify intrinsic PEEP.",
       },
     ],
   },
