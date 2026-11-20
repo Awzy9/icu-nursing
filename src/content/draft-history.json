@@ -284,6 +284,20 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "53d40903cadac432",
+    "recorded": "2026-11-20",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D02-T14": [
@@ -387,6 +401,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "debaab22a1877c30",
+    "recorded": "2026-11-20",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-CG103",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T02": [
@@ -404,6 +430,17 @@
    {
     "hash": "20a92a69a374624d",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG148"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "b6b179412b7e37fc",
+    "recorded": "2026-11-20",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-NICE-NG148"
