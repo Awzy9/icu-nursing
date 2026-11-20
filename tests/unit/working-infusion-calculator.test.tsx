@@ -24,6 +24,13 @@ describe("infusion calculator", () => {
     expect(screen.getByText("3 mL/h")).toBeTruthy();
   });
 
+  it("marks a repeating decimal as approximate", () => {
+    render(<InfusionCalculator locale="en" />);
+    enter("Dose rate", "2");
+    enter("Solution concentration", "3");
+    expect(screen.getByText("2 mg/h ÷ 3 mg/mL ≈ 0.666667 mL/h")).toBeTruthy();
+  });
+
   it("converts weight, mass and time units and clears results when the units change", () => {
     render(<InfusionCalculator locale="en" />);
     enter("Dose basis", "weight");
