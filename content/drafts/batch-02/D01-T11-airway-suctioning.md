@@ -91,8 +91,14 @@ Indication; pre-assessment (SpO₂, rate, rhythm, pressures); preoxygenation; sy
 ## 15. Practical bedside example
 You hear gurgling and see a sawtooth waveform. You check the patient and tube, confirm analgesia and sedation, preoxygenate per policy, wash hands and put on gloves, use the closed system or a sterile open technique, suction with the shallow method for no more than 15 seconds, reoxygenate, reassess breath sounds, SpO₂ and haemodynamics, and document.
 
+
+**Why suction is indicated here.** The gurgling and sawtooth trace both suggest secretions. Check for visible secretions and compare breath sounds and ventilator changes with baseline. If oxygenation worsens suddenly, assess the patient, tube and circuit promptly because several problems can look similar. After suction, reassess the findings that prompted it. Persistent deterioration calls for further assessment and escalation.
+
 ## 16. Clinical case (fictional)
 A 59-year-old ventilated man with brain injury is suctioned for thick secretions; his ICP rises and SpO₂ falls. The nurse stops, restores oxygenation, reports the ICP change, avoids saline, optimises sedation and humidification as ordered, and documents. The team reviews the plan before the next suction.
+
+
+**What to report after stopping.** Give the oxygen saturation and intracranial pressure before, during and after suction, how long the changes lasted, and whether both recovered. Include what was removed and what support was needed. This gives the team information to weigh the next suction attempt.
 
 ## 17. MCQs
 **Q1 (prioritization).** During suctioning of a ventilated patient the SpO₂ falls from 96% to 84%, the heart rate drops and the patient does not settle. What should the nurse do first?
