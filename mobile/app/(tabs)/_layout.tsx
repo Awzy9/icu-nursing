@@ -13,10 +13,10 @@ const Icon = ({ name, color }: { name: string; color: import("react-native").Col
 export default function TabsLayout() {
   const { palette, t } = useApp();
   return (
-    <Tabs screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerTintColor: palette.text, tabBarActiveTintColor: palette.primary, tabBarInactiveTintColor: palette.muted, tabBarStyle: { backgroundColor: palette.bg, minHeight: 60 }, tabBarLabelStyle: { fontSize: 13 } }}>
+    <Tabs screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerTintColor: palette.text, headerShadowVisible: false, tabBarActiveTintColor: palette.primary, tabBarInactiveTintColor: palette.muted, tabBarStyle: { backgroundColor: palette.bg, borderTopColor: palette.border }, tabBarLabelStyle: { fontSize: 12, fontWeight: "600" } }}>
       <Tabs.Screen name="index" options={{ title: t("tab.learn"), tabBarIcon: ({ color }) => <Icon name="index" color={color} /> }} />
-      <Tabs.Screen name="practice" options={{ title: t("tab.practice"), tabBarIcon: ({ color }) => <Icon name="practice" color={color} /> }} />
       <Tabs.Screen name="library" options={{ title: t("tab.library"), tabBarIcon: ({ color }) => <Icon name="library" color={color} /> }} />
+      <Tabs.Screen name="practice" options={{ title: t("tab.practice"), tabBarIcon: ({ color }) => <Icon name="practice" color={color} /> }} />
       <Tabs.Screen name="account" options={{ title: t("tab.account"), tabBarIcon: ({ color }) => <Icon name="account" color={color} /> }} />
     </Tabs>
   );
