@@ -31,7 +31,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function LearnPage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} />;
+  if (workingEditionEnabled()) return (
+    <div className="space-y-5">
+      <Link href="/nursing-lab" className="inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">
+        {locale === "ar" ? "افتح مختبر تمريض العناية المركزة" : "Open ICU Nursing Lab"}
+      </Link>
+      <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} />
+    </div>
+  );
   const t = await getTranslations("Learn");
   const ts = await getTranslations("Skills");
   const tp = await getTranslations("Practice");
