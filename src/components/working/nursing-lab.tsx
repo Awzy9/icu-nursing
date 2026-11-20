@@ -35,6 +35,20 @@ function ActivityPlayer({ activity, retryIndex, onAnswer }: { activity: Activity
       <p className="text-sm text-muted-foreground">Decision {index + 1} of {activity.steps.length}</p>
       {"equipment" in step && <EquipmentVisual moduleKey={step.equipment} locale="en" hideTeaching={!checked} />}
       {activity.id === "shift" && index === 1 && delayed && <p className="rounded-lg bg-muted p-3">While the team was called, Patient A’s saturation fell further. The team corrected the circuit and is now reassessing recovery.</p>}
+      {"monitor" in step && <figure className="space-y-2">
+        <figcaption className="text-sm font-semibold">Simulated bedside readings</figcaption>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {step.monitor.map(({ patient, readings }) => <div key={patient} className="rounded-xl border border-slate-700 bg-slate-950 p-4 text-slate-100">
+            <p className="font-semibold">{patient}</p>
+            <dl className="mt-2 divide-y divide-slate-700">
+              {readings.map(([label, value]) => <div key={label} className="flex flex-wrap justify-between gap-x-3 gap-y-1 py-2">
+                <dt className="text-sm text-slate-300">{label}</dt>
+                <dd className="text-sm font-semibold tabular-nums text-cyan-200">{value}</dd>
+              </div>)}
+            </dl>
+          </div>)}
+        </div>
+      </figure>}
       {"readouts" in step && <dl className="grid gap-2 sm:grid-cols-3">
         {step.readouts.map(([label, value]) => <div key={label} className="rounded-lg border border-border p-3"><dt className="text-sm text-muted-foreground">{label}</dt><dd className="font-semibold">{value}</dd></div>)}
       </dl>}
