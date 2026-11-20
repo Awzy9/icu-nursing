@@ -10,7 +10,14 @@ import { getContentRepository } from "@/lib/content";
 export default async function HomePage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  if (workingEditionEnabled()) return <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} />;
+  if (workingEditionEnabled()) return (
+    <div className="space-y-5">
+      <Link href="/nursing-lab" className="inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-semibold text-primary-foreground">
+        {locale === "ar" ? "افتح مختبر تمريض العناية المركزة" : "Open ICU Nursing Lab"}
+      </Link>
+      <WorkingCatalog query={await workingQuery(searchParams)} locale={locale} />
+    </div>
+  );
   const t = await getTranslations("Home");
   const lib = await getTranslations("Library");
   const repo = await getContentRepository();

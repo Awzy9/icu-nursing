@@ -32,19 +32,22 @@ export const activities = [
     source: { label: "FDA · Infusion pump risk reduction", href: "https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians" },
     steps: [
       {
-        prompt: "Drug A’s order and bag label both show 4 mg/mL. The pump program shows 2 mg/mL. What needs reconciliation?",
+        prompt: "Which entry differs from the order and prepared bag?",
+        readouts: [["Order", "Drug A · 4 mg/mL"], ["Bag label", "Drug A · 4 mg/mL"], ["Pump display", "Drug A · 2 mg/mL"]],
         choices: ["The pump concentration.", "Only the bag volume.", "Only the channel name."],
         answer: 0,
         why: "The pump’s concentration differs from the prepared solution. Reconcile the order, label and pump program before starting the fictional infusion.",
       },
       {
-        prompt: "The order is in micrograms per minute. The pump entry has the same number in milligrams per hour. What is the discrepancy?",
+        prompt: "What is the discrepancy between the order and the pump?",
+        readouts: [["Order", "Drug A · micrograms/min"], ["Pump display", "Drug A · milligrams/h"]],
         choices: ["The drug name.", "Both the mass unit and the time unit.", "The line label only."],
         answer: 1,
         why: "A matching number is insufficient when the mass and time units differ. Verify the prescribed units and pump mode.",
       },
       {
-        prompt: "The bag and pump channel are both labeled Drug A, but the tubing enters a different lumen from the one documented. What should be verified?",
+        prompt: "The line trace ends at a different lumen from the one documented. What should be verified?",
+        readouts: [["Bag and pump", "Drug A"], ["Documented connection", "Lumen A"], ["Observed connection", "Lumen B"]],
         choices: ["Only the displayed rate.", "Only the pump’s remaining volume.", "The full tubing route and intended connection."],
         answer: 2,
         why: "Trace the tubing from the container through its pump channel to the patient connection. Matching labels at the pump do not establish where the line ends.",
@@ -77,6 +80,6 @@ export const activities = [
 export const orientation = [
   { title: "Read the bedside monitor", lesson: "EQ-01", practice: "#visual-skills" },
   { title: "Check an infusion pump", lesson: "SK-22", practice: "#medication-checks" },
-  { title: "Recognise deteriorating perfusion", lesson: "D02-T08", practice: "#shift" },
+  { title: "Recognise deteriorating perfusion", lesson: "D02-T08", practice: "/hemo-lab" },
   { title: "Respond to a ventilator alarm", lesson: "D01-T09", practice: "#shift" },
 ] as const;

@@ -682,7 +682,7 @@ const visuals: Record<string, Visual> = {
   "D01-T17": oronasalMask,
 };
 
-function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) {
+function EquipmentPhoto({ visual, locale, hideTeaching = false }: { visual: Visual; locale: string; hideTeaching?: boolean }) {
 
   const ar = locale === "ar";
   const language = ar ? 1 : 0;
@@ -696,7 +696,7 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
   const picture = (
     <Image
       src={photo}
-      alt={visual.alt[language]}
+      alt={hideTeaching ? (visual.file === "syringe-pump" ? "A syringe pump with a display, a horizontal syringe and a mechanism at its plunger end." : "An arterial monitoring setup showing the line and an inline pressure-sensing component.") : visual.alt[language]}
       width={visual.width}
       height={visual.height}
       sizes="(min-width: 1024px) 540px, 85vw"
@@ -722,8 +722,8 @@ function EquipmentPhoto({ visual, locale }: { visual: Visual; locale: string }) 
         </a>
       )}
       <figcaption className="space-y-1 p-4 text-sm">
-        <p className="font-semibold">{visual.label[language]}</p>
-        <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>
+        {!hideTeaching && <p className="font-semibold">{visual.label[language]}</p>}
+        {!hideTeaching && <p className="leading-relaxed text-muted-foreground">{visual.detail[language]}</p>}
         <p className="text-xs text-muted-foreground" lang="en">
           <a className="underline" href={visual.source.startsWith("https://") ? visual.source : `https://commons.wikimedia.org/wiki/File:${visual.source}`}>Source image</a> · {visual.credit} ·{" "}
           {visual.license === "Public domain" ? "Public domain (US)" : <a className="underline" href={licenseUrl}>{visual.license === "CC0 1.0" ? visual.license : `CC ${visual.license}`}</a>} · {covered ? "Shown with a privacy cover" : visual.cropped ? "Cropped and converted to WebP" : visual.rotated ? "Rotated and converted to WebP" : "WebP version, resized where applicable"}
@@ -738,7 +738,7 @@ export function PulseOximeterPhoto({ locale }: { locale: string }) {
   return <EquipmentPhoto visual={fingerOximeter} locale={locale} />;
 }
 
-export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; locale: string }) {
+export function EquipmentVisual({ moduleKey, locale, hideTeaching = false }: { moduleKey: string; locale: string; hideTeaching?: boolean }) {
   if (moduleKey === "EQ-06") return <CvvhdCircuitFigure locale={locale} />;
   if (crrtModules.has(moduleKey)) return <CrrtCircuitVisual locale={locale} />;
   if (moduleKey === "EQ-01") return <PulseOximeterPhoto locale={locale} />;
@@ -749,8 +749,8 @@ export function EquipmentVisual({ moduleKey, locale }: { moduleKey: string; loca
   const showVenturiMask = moduleKey === "SK-08" || moduleKey === "D01-T03";
   return (
     <>
-      <EquipmentPhoto visual={visual} locale={locale} />
-      {moduleKey === "EQ-03" && <EquipmentPhoto visual={arterialTransducer} locale={locale} />}
+      <EquipmentPhoto visual={visual} locale={locale} hideTeaching={hideTeaching} />
+      {moduleKey === "EQ-03" && <EquipmentPhoto visual={arterialTransducer} locale={locale} hideTeaching={hideTeaching} />}
       {showVenturiMask && <EquipmentPhoto visual={venturiMask} locale={locale} />}
       {moduleKey === "SK-08" && <EquipmentPhoto visual={nonrebreatherMask} locale={locale} />}
       {moduleKey === "SK-05" && <EquipmentPhoto visual={cuffedTracheostomy} locale={locale} />}
