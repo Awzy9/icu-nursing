@@ -1,4 +1,4 @@
-import { BookOpen, CheckSquare, ClipboardList, HeartPulse, Monitor, Pill, ArrowRight, GraduationCap } from "lucide-react";
+import { BookOpen, CheckSquare, ClipboardList, HeartPulse, Monitor, Pill, ArrowRight, ChevronDown, GraduationCap } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { workingContent, workingLabels, workingTypes } from "@/lib/working";
 import { ContinueLearning } from "./continue-learning";
@@ -14,14 +14,84 @@ const sections = {
  practice:{path:"practice",icon:ClipboardList,description:"Practise communication, documentation and safety.",action:"Explore practice"},
  questions:{path:"question-bank",icon:GraduationCap,description:"Choose an answer, check your reasoning, and learn.",action:"Start a quiz"},
 } as const;
+const practiceTools = [
+  { href: "/waveforms", en: "Interpret waveforms", ar: "فسّر منحنيات التنفس" },
+  { href: "/ecg", en: "Interpret ECG strips", ar: "فسّر شرائط تخطيط القلب" },
+  { href: "/abg", en: "Interpret ABGs", ar: "فسّر غازات الدم" },
+  { href: "/vent-lab", en: "Ventilator parameter panel", ar: "لوحة ضبط التنفس الصناعي" },
+  { href: "/hemo-lab", en: "Hemodynamics lab", ar: "مختبر الديناميكا الدموية" },
+  { href: "/crrt", en: "CRRT circuit lab", ar: "مختبر دائرة CRRT" },
+  { href: "/gcs", en: "GCS trainer", ar: "مدرّب غلاسكو" },
+  { href: "/infusion-practice", en: "Infusion-rate practice", ar: "تدريب معدل التسريب" },
+  { href: "/aline", en: "Square-wave test exercises", ar: "اختبار الموجة المربعة" },
+  { href: "/transfusion-reactions", en: "Transfusion-reaction exercises", ar: "تمارين تفاعلات نقل الدم" },
+  { href: "/defib-rhythm-check", en: "Shockable-rhythm exercises", ar: "الأنظمة القابلة للصدمة" },
+  { href: "/news2", en: "NEWS2 scoring exercises", ar: "تمارين تسجيل NEWS2" },
+];
+
 export function WorkingCatalog({locale,type,query=""}:{locale:string;type?:string;query?:string}) {
  const all=workingContent(),ar=locale==="ar",q=query.trim().toLowerCase().slice(0,100);
  const groups=workingTypes.filter(t=>!type||t===type).map(t=>({type:t,items:all.filter(e=>e.type===t&&(!q||`${e.title} ${e.key} ${e.category}`.toLowerCase().includes(q)))}));
  const home=!type&&!q;
- return <div className="space-y-8 [&_a]:no-underline"><header className="relative overflow-hidden rounded-3xl border border-border bg-card p-6 sm:p-10"><div className="max-w-2xl space-y-4"><p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">ICU NURSING · {ar?"تعلّم خطوة بخطوة":"LEARN WITH PURPOSE"}</p><h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{type?workingLabels[type]?.[ar?1:0]:ar?"ماذا تريد أن تتعلم اليوم؟":"What will you learn today?"}</h1><p className="text-base leading-7 text-muted-foreground">{type?ar?"اختر وحدة واحدة وابدأ. يمكنك العودة إلى الأقسام الأخرى في أي وقت.":sections[type as keyof typeof sections]?.description:ar?"اقرأ درساً، أو تدرّب على أسئلة، أو اتخذ قرارات في سيناريو افتراضي.":"Read a lesson, practise questions, or work through a clinical scenario. One clear step at a time."}</p>{home?<div className="flex flex-wrap gap-3 pt-2"><Link href="/learn/paths" className="inline-flex min-h-12 items-center gap-3 rounded-xl bg-primary px-5 font-semibold text-primary-foreground">{ar?"ابدأ مساراً موجهاً":"Start a guided path"}<ArrowRight className="size-4" aria-hidden/></Link><Link href="/question-bank" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"ابدأ اختباراً":"Practise questions"}</Link><Link href="/library" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"تصفح الدروس":"Explore lessons"}</Link><Link href="/waveforms" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"فسّر منحنيات التنفس":"Interpret waveforms"}</Link><Link href="/ecg" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"فسّر شرائط تخطيط القلب":"Interpret ECG strips"}</Link><Link href="/abg" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"فسّر غازات الدم":"Interpret ABGs"}</Link><Link href="/vent-lab" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"لوحة ضبط التنفس الصناعي":"Ventilator parameter panel"}</Link><Link href="/hemo-lab" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"مختبر الديناميكا الدموية":"Hemodynamics lab"}</Link><Link href="/crrt" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"مختبر دائرة CRRT":"CRRT circuit lab"}</Link><Link href="/gcs" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"مدرّب غلاسكو":"GCS trainer"}</Link><Link href="/infusion-practice" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"تدريب معدل التسريب":"Infusion-rate practice"}</Link><Link href="/aline" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"اختبار الموجة المربعة":"Square-wave test exercises"}</Link><Link href="/transfusion-reactions" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"تمارين تفاعلات نقل الدم":"Transfusion-reaction exercises"}</Link><Link href="/defib-rhythm-check" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"الأنظمة القابلة للصدمة":"Shockable-rhythm exercises"}</Link><Link href="/news2" className="inline-flex min-h-12 items-center rounded-xl border border-border px-5 font-semibold">{ar?"تمارين تسجيل NEWS2":"NEWS2 scoring exercises"}</Link></div>:null}</div></header>
+ return <div className="space-y-5 sm:space-y-8 [&_a]:no-underline">
+   <header className="rounded-3xl border border-border bg-card p-4 sm:p-10">
+     <div className="max-w-2xl space-y-3">
+       <h1 className="text-2xl font-bold tracking-tight sm:text-4xl">
+         {type ? workingLabels[type]?.[ar ? 1 : 0] : ar ? "ماذا تريد أن تتعلم اليوم؟" : "What will you learn today?"}
+       </h1>
+       <p className="leading-7 text-muted-foreground">
+         {type
+           ? ar ? "اختر وحدة واحدة وابدأ. يمكنك العودة إلى الأقسام الأخرى في أي وقت." : sections[type as keyof typeof sections]?.description
+           : ar ? "اقرأ درساً، أو تدرّب على أسئلة، أو اتخذ قرارات في سيناريو افتراضي." : "Read a lesson, practise questions, or work through a clinical scenario."}
+       </p>
+       {home ? (
+         <div className="grid gap-2 sm:flex sm:flex-wrap sm:gap-3">
+           <Link href="/learn/paths" className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-primary px-5 font-semibold text-primary-foreground">
+             {ar ? "ابدأ مساراً موجهاً" : "Start a guided path"}<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+           </Link>
+           <Link href="/question-bank" className="inline-flex min-h-12 items-center justify-center rounded-xl border border-border px-5 font-semibold">
+             {ar ? "ابدأ اختباراً" : "Practise questions"}
+           </Link>
+           <Link href="/library" className="inline-flex min-h-12 items-center justify-center rounded-xl border border-border px-5 font-semibold">
+             {ar ? "تصفح الدروس" : "Explore lessons"}
+           </Link>
+         </div>
+       ) : null}
+     </div>
+   </header>
+   <form role="search" className="grid gap-2 rounded-2xl border border-border bg-card p-4 sm:flex sm:items-end sm:gap-3">
+     <div className="min-w-0 flex-1 space-y-2">
+       <label className="block text-sm font-semibold" htmlFor="working-search">{ar ? "ابحث عن موضوع" : "Find a topic"}</label>
+       <input id="working-search" name="q" type="search" maxLength={100} defaultValue={query}
+         placeholder={ar ? "مثلاً: sepsis أو airway" : "Try sepsis, airway, or a medicine name"}
+         className="min-h-12 w-full rounded-xl border border-border bg-background px-4" />
+     </div>
+     <div className="flex gap-2">
+       <button className="min-h-12 flex-1 rounded-xl bg-primary px-6 font-semibold text-primary-foreground">{ar ? "بحث" : "Search"}</button>
+       {q ? <Link href={type ? `/${sections[type as keyof typeof sections]?.path}` : "/learn"} className="inline-flex min-h-12 items-center px-3">{ar ? "مسح" : "Clear"}</Link> : null}
+     </div>
+   </form>
  <WorkingNotice locale={locale}/>
- {home?<ContinueLearning locale={locale}/>:null}
- <form role="search" className="flex flex-wrap items-end gap-3 rounded-2xl border border-border bg-card p-4"><div className="min-w-0 flex-1 space-y-2"><label className="block text-sm font-semibold" htmlFor="working-search">{ar?"ابحث عن موضوع":"Find a topic"}</label><input id="working-search" name="q" type="search" maxLength={100} defaultValue={query} placeholder={ar?"مثلاً: sepsis أو airway":"Try sepsis, airway, or a medicine name"} className="min-h-12 w-full rounded-xl border border-border bg-background px-4"/></div><button className="min-h-12 rounded-xl bg-primary px-6 font-semibold text-primary-foreground">{ar?"بحث":"Search"}</button>{q?<Link href={type?`/${sections[type as keyof typeof sections]?.path}`:"/learn"} className="min-h-12 px-3 py-3">{ar?"مسح":"Clear"}</Link>:null}</form>
+ {home ? (
+   <>
+     <ContinueLearning locale={locale} />
+     <details className="group rounded-2xl border border-border bg-card">
+       <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 rounded-2xl px-4 py-3 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary [&::-webkit-details-marker]:hidden">
+         {ar ? "أدوات تدريب تفاعلية" : "Interactive practice tools"}
+         <ChevronDown className="size-5 shrink-0 text-muted-foreground group-open:rotate-180" aria-hidden />
+       </summary>
+       <ul className="grid gap-1 border-t border-border p-2 sm:grid-cols-2 lg:grid-cols-3">
+         {practiceTools.map(({ href, en, ar: arabicLabel }) => (
+           <li key={href}>
+             <Link href={href} className="flex min-h-11 items-center rounded-lg px-3 py-2 text-sm font-medium hover:bg-muted">
+               {ar ? arabicLabel : en}
+             </Link>
+           </li>
+         ))}
+       </ul>
+     </details>
+   </>
+ ) : null}
  {home?<section className="space-y-4"><h2 className="text-xl font-bold">{ar?"اختر طريقة التعلم":"Choose how to learn"}</h2><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{groups.map(g=>{const info=sections[g.type],Icon=info.icon;return <Link key={g.type} href={`/${info.path}`} className="group flex flex-col rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary hover:bg-primary/5"><div className="mb-5 flex items-center justify-between"><span className="rounded-xl bg-primary/10 p-3 text-primary"><Icon className="size-6" aria-hidden/></span><span className="text-sm text-muted-foreground">{g.items.length} {ar?"وحدة":"modules"}</span></div><h3 className="text-lg font-bold">{workingLabels[g.type]?.[ar?1:0]}</h3><p className="mt-2 flex-1 text-sm leading-6 text-muted-foreground">{ar?"تعلّم بالممارسة، بخطوات واضحة.":info.description}</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary">{ar?"استكشف":info.action}<ArrowRight className="size-4" aria-hidden/></span></Link>;})}</div></section>:groups.map(g=><section key={g.type} className="space-y-4"><div className="flex flex-wrap items-baseline justify-between gap-2"><h2 className="text-xl font-bold">{workingLabels[g.type]?.[ar?1:0]} <span className="text-base font-normal text-muted-foreground">({g.items.length})</span></h2>{g.type==="questions"?<p className="text-sm text-muted-foreground">{g.items.reduce((n,e)=>n+e.questionCount,0)} {ar?"سؤال تدريبي":"practice questions"}</p>:null}</div><div className="grid gap-4 md:grid-cols-2">{g.items.map((e,i)=>e.type === "equipment" && /^## Parameters[ \t]*$/m.test(e.body) ? (
       <article key={e.key} className="rounded-2xl border border-border bg-card p-5">
         <h3 lang="en" dir="ltr" className="font-semibold leading-7">{e.title}</h3>
