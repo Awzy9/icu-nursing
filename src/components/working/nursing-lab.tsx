@@ -161,6 +161,23 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
   const freshQuestions = queue.due.filter(({ question }) => missedModules.has(question.moduleKey) && !attempted.has(question.id));
   const missedDecisions = activities.flatMap((activity) => activity.steps.flatMap((step, i) =>
     results[`${activity.id}-${i}`] === false ? [{ activity, step, i }] : []));
+  const reviewCount = missedQuestions.length + missedDecisions.length;
+  const completedLessons = orientation.filter(({ lesson }) => lessons.some((item) => item.key === lesson && item.completed)).length;
+
+  function activityStatus(id: Workspace) {
+    if (id === "mistakes") {
+      return reviewCount ? (ar ? `${reviewCount} للمراجعة` : `${reviewCount} to review`) : null;
+    }
+    if (id === "orientation") {
+      return completedLessons ? (ar ? `${completedLessons} من ${orientation.length} دروس مكتملة` : `${completedLessons} of ${orientation.length} lessons completed`) : null;
+    }
+    const activity = activities.find((item) => item.id === id);
+    if (!activity) return null;
+    if (runs[id]) return ar ? "نشاط مفتوح" : "Activity open";
+    const answered = activity.steps.filter((_, index) => typeof results[`${id}-${index}`] === "boolean").length;
+    return answered ? (ar ? `${answered} من ${activity.steps.length} قرارات تمت الإجابة عنها` : `${answered} of ${activity.steps.length} decisions answered`) : null;
+  }
+
   return (
     <div className="mx-auto max-w-6xl space-y-6">
       <header className="relative overflow-hidden rounded-3xl border border-cyan-800/60 bg-slate-950 px-6 py-8 text-slate-50 sm:px-10 sm:py-12">
@@ -180,7 +197,7 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
         </label>
       )}
       <nav id="activities" aria-label={ar ? "الأنشطة" : "Lab activities"} className={workspace ? "hidden flex-wrap gap-2 sm:flex" : "grid gap-4 sm:grid-cols-2 lg:grid-cols-4"}>
-        {workspaces.map(({ id, title, detail, icon: Icon }) => workspace ? (
+        {workspaces.map(({ id, title, detail, icon: Icon }) => {\n          const status = activityStatus(id);\n          return workspace ? (
           <a key={id} href={`#${id}`} aria-current={workspace === id ? "location" : undefined} onClick={() => setWorkspace(id)} className={`${button} gap-2 ${workspace === id ? "border-primary bg-primary/10 text-primary" : ""}`}>
             <Icon aria-hidden className="size-4" />{title[language]}
           </a>
@@ -189,8 +206,10 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
             <span className={`flex items-center justify-between ${id === "shift" ? "text-cyan-300" : "text-primary"}`}><Icon aria-hidden className="size-6" /><ArrowRight aria-hidden className="size-4 rtl:rotate-180" /></span>
             <span className={id === "shift" ? "text-2xl font-bold" : "font-bold"}>{title[language]}</span>
             <span className={id === "shift" ? "text-sm text-slate-300" : "text-sm text-muted-foreground"}>{detail[language]}</span>
+            {status && <span className={`mt-auto pt-1 text-sm font-semibold ${id === "shift" ? "text-cyan-200" : "text-primary"}`}>{status}</span>}
           </a>
-        ))}
+        );
+        })}
       </nav>
       <section hidden={workspace !== "orientation"} tabIndex={-1} id="orientation" className={`${card} scroll-mt-24 focus:outline-none`} lang="en" dir="ltr">
         <h2 className="text-xl font-bold">ICU Orientation Path</h2>
@@ -199,7 +218,10 @@ export function NursingLab({ locale, questions }: { locale: string; questions: R
             const done = lessons.some((item) => item.key === lesson && item.completed);
             return (
               <li key={lesson} className="py-3">
-                <h3 className="font-semibold">{title}</h3>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <h3 className="font-semibold">{title}</h3>
+                  {done && <span className="inline-flex items-center gap-1 text-sm text-primary"><CheckCircle2 aria-hidden className="size-4" />Lesson complete</span>}
+                </div>
                 <div className="flex flex-wrap gap-x-5">
                   <Link className={link} href={`/working/${lesson}`}>{done ? "Revisit completed lesson" : "Open lesson"}</Link>
                   {practice.startsWith("#") ? <a className={link} href={practice} onClick={() => setWorkspace(workspaces.find(({ id }) => practice === `#${id}`)?.id ?? null)}>Try practice</a> : <Link className={link} href={practice}>Try practice</Link>}
