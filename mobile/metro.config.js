@@ -4,7 +4,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const config = getDefaultConfig(__dirname);
-config.watchFolders = [path.join(root, "packages")];
+config.watchFolders = [path.join(root, "packages"), path.join(root, "src", "lib", "working")];
 config.resolver.extraNodeModules = {
   "@icu/schemas": path.join(root, "packages/schemas/src"),
   "@icu/fixtures": path.join(root, "packages/fixtures"),

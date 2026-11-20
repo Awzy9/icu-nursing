@@ -47,6 +47,8 @@ function Shell() {
         <Stack.Screen name="vent-lab" options={{ title: t("vent.title") }} />
         <Stack.Screen name="hemo-lab" options={{ title: t("hemo.title") }} />
         <Stack.Screen name="labs" options={{ title: t("labs.title") }} />
+        <Stack.Screen name="nursing-lab" options={{ title: "Nursing lab" }} />
+        <Stack.Screen name="infusion/calculator" options={{ title: "Infusion pump calculator" }} />
         <Stack.Screen name="topics/[key]" options={{ title: t("topic.title") }} />
         <Stack.Screen name="equipment/[code]" options={{ title: t("equipment.title") }} />
         <Stack.Screen name="skills/[code]" options={{ title: t("skills.title") }} />

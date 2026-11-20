@@ -8,10 +8,11 @@ import { useApp } from "../src/state/app";
 // MCQ; vent-lab and hemo-lab are slider-driven simulators using the native SliderField control
 // (src/ui/components.tsx) over the ported vent-model.ts/hemodynamics.ts algorithms.
 export default function Labs() {
-  const { t } = useApp();
+  const { t, locale } = useApp();
   return (
     <Screen>
       <H1>{t("labs.title")}</H1>
+      <NavCard href="/nursing-lab" title={locale === "ar" ? "مختبر التمريض" : "Nursing lab"} />
       <NavCard href="/news2" title={t("news2.title")} body={t("news2.intro")} />
       <NavCard href="/gcs" title={t("gcs.title")} body={t("gcs.intro")} />
       <NavCard href="/ecg" title={t("ecg.title")} body={t("ecg.intro")} />

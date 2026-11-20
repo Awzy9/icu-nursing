@@ -16,7 +16,11 @@ export const useAuth = () => useContext(Ctx);
 const secure = { get: (k: string) => SecureStore.getItemAsync(k), set: (k: string, v: string) => SecureStore.setItemAsync(k, v), remove: (k: string) => SecureStore.deleteItemAsync(k) };
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const config = useMemo(() => readAuthConfig(process.env as Record<string, string | undefined>), []);
+  const config = useMemo(() => readAuthConfig({
+    EXPO_PUBLIC_SUPABASE_URL: process.env.EXPO_PUBLIC_SUPABASE_URL,
+    EXPO_PUBLIC_SUPABASE_ANON_KEY: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY,
+    EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL ?? "https://icu-nursing.vercel.app",
+  }), []);
   const built = useMemo(() => {
     if (!config) return null;
     const client = createAppClient(config, createChunkedStorage(secure));

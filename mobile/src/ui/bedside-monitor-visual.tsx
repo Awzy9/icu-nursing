@@ -21,7 +21,7 @@ function Feature({ title, description }: { title: string; description: string })
 export function BedsideMonitorVisual() {
   const { locale, palette } = useApp();
   const lang = locale === "ar" ? 1 : 0;
-  const uri = imageUrl(siteBaseUrl(process.env as Record<string, string | undefined>), bedsideMonitorVisual.path);
+  const uri = imageUrl(siteBaseUrl({ EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL }), bedsideMonitorVisual.path);
   const width = 320;
   const height = (bedsideMonitorVisual.height / bedsideMonitorVisual.width) * width;
 

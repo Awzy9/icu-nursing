@@ -1,34 +1,57 @@
-import { H1, NavCard, P, RemoteGate, Screen } from "../../src/ui/components";
-import { viewedCount } from "../../src/core/progress";
+import { Link, type Href } from "expo-router";
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import { H1, H2, NavCard, P, Screen } from "../../src/ui/components";
 import { useApp } from "../../src/state/app";
-import { useCatalogList } from "../../src/hooks/useRemoteContent";
 
 export default function LearningHub() {
-  const { t, progress } = useApp();
-  const list = useCatalogList();
+  const { locale, palette, t } = useApp();
+  const ar = locale === "ar";
+  const library = { pathname: "/(tabs)/library", params: { type: "topics" } } as const;
+  const shortcuts: { href: Href; title: string }[] = [
+    { href: library, title: t("tab.library") },
+    { href: "/quiz", title: t("hub.questions") },
+    { href: "/labs", title: t("hub.labs") },
+    { href: "/bookmarks", title: ar ? "المحفوظات" : "Saved items" },
+  ];
 
   return (
-    <Screen>
-      <H1>{t("hub.title")}</H1>
-      <P muted>{t("hub.intro")}</P>
+    <Screen banner={false}>
+      <H1>Nursing Mastery</H1>
+      <P muted>{ar ? "تعلّم تمريض العناية المركّزة وتدرّب عليه." : "Learn and practise critical care nursing."}</P>
       <NavCard href="/search" title={t("search.title")} body={t("search.placeholder")} />
-      <RemoteGate state={list} onRetry={list.refresh}>
-        {() => (
-          <>
-            <NavCard href="/paths" title={t("paths.title")} body={t("paths.intro")} />
-            <NavCard href="/quiz" title={t("hub.questions")} body={t("hub.questionsBody")} />
-            <NavCard href="/study" title={t("study.title")} body={t("study.intro")} />
-            <NavCard href="/exam" title={t("exam.title")} body={t("exam.intro")} />
-            <NavCard href="/(tabs)/practice" title={t("hub.cases")} body={t("hub.casesBody")} />
-            <NavCard href={{ pathname: "/(tabs)/library", params: { type: "skills" } }} title={t("hub.skills")} body={t("hub.skillsBody")} />
-            <NavCard href={{ pathname: "/(tabs)/library", params: { type: "medications" } }} title={t("hub.medications")} body={t("hub.medicationsBody")} />
-            <NavCard href={{ pathname: "/(tabs)/library", params: { type: "equipment" } }} title={t("hub.equipment")} body={t("hub.equipmentBody")} />
-            <NavCard href={{ pathname: "/(tabs)/library", params: { type: "topics" } }} title={t("hub.topics")} body={t("hub.topicsBody")} />
-            <NavCard href="/labs" title={t("hub.labs")} body={t("hub.labsBody")} />
-          </>
-        )}
-      </RemoteGate>
-      <NavCard href="/bookmarks" title={t("hub.bookmarks")} body={t("hub.progress", { viewed: viewedCount(progress), marked: progress.bookmarks.length })} />
+      <Link href="/paths" asChild>
+        <Pressable accessibilityRole="link" style={({ pressed }) => [
+          styles.feature, { backgroundColor: palette.primary, opacity: pressed ? 0.88 : 1 },
+        ]}>
+          <Text style={[styles.featureTitle, { color: palette.onPrimary }]}>
+            {ar ? "ابدأ مسارًا تعليميًا" : "Start a guided path"}
+          </Text>
+          <Text style={[styles.featureBody, { color: palette.onPrimary }]}>
+            {ar ? "تابع الدروس والتمارين خطوة بخطوة." : "Follow a sequence of ICU lessons and exercises."}
+          </Text>
+        </Pressable>
+      </Link>
+      <H2>{ar ? "تصفّح" : "Explore"}</H2>
+      <View style={styles.grid}>
+        {shortcuts.map(({ href, title }) => (
+          <Link key={title} href={href} asChild>
+            <Pressable accessibilityRole="link" style={({ pressed }) => [
+              styles.tile, { backgroundColor: palette.surface, borderColor: palette.border, opacity: pressed ? 0.82 : 1 },
+            ]}>
+              <Text style={[styles.tileTitle, { color: palette.text }]}>{title}</Text>
+            </Pressable>
+          </Link>
+        ))}
+      </View>
     </Screen>
   );
 }
+
+const styles = StyleSheet.create({
+  feature: { borderRadius: 18, padding: 22, gap: 8 },
+  featureTitle: { fontSize: 24, fontWeight: "700" },
+  featureBody: { fontSize: 16, lineHeight: 23 },
+  grid: { flexDirection: "row", flexWrap: "wrap", columnGap: 12, rowGap: 12 },
+  tile: { flexBasis: "45%", flexGrow: 1, borderRadius: 14, borderWidth: 1, minHeight: 70, padding: 14, justifyContent: "center" },
+  tileTitle: { fontSize: 17, fontWeight: "600" },
+});

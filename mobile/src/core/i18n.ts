@@ -7,7 +7,7 @@ export type LocalizedText = Record<string, string>;
 export const messages = {
   en: {
     "app.name": "Nursing Mastery",
-    "app.sampleBanner": "Demonstration mode: all content is synthetic and unreviewed. It is not clinical guidance and must not be used for patient care.",
+    "app.sampleBanner": "For education only. Follow local policy and clinical guidance for patient care.",
     "app.englishOnly": "Content is in English and has not yet been clinically approved.",
     "tab.learn": "Learn", "tab.practice": "Practice", "tab.library": "Library", "tab.account": "Account",
     "hub.title": "Learning hub", "hub.intro": "Work through lessons, skills, medications, equipment and cases. Draft content is clearly labelled.",
@@ -123,7 +123,7 @@ export const messages = {
   },
   ar: {
     "app.name": "إتقان التمريض",
-    "app.sampleBanner": "وضع العرض التجريبي: كل المحتوى اصطناعي وغير مراجَع. وهو ليس إرشاداً سريرياً ولا يجوز استخدامه في رعاية المرضى.",
+    "app.sampleBanner": "للتعلّم فقط. اتبع السياسات المحلية والإرشادات السريرية عند رعاية المرضى.",
     "app.englishOnly": "المحتوى باللغة الإنجليزية ولم يُعتمد سريرياً بعد.",
     "tab.learn": "تعلّم", "tab.practice": "تدرّب", "tab.library": "المكتبة", "tab.account": "الحساب",
     "hub.title": "مركز التعلّم", "hub.intro": "تدرّب على الدروس والمهارات والأدوية والمعدات والحالات. المحتوى المسوَّد موسوم بوضوح.",
