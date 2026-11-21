@@ -1191,6 +1191,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BSH-HIT-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
+     "id": "S-ISTH-DIC-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-OPENRN-PHARM-CH",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -1204,7 +1214,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "4366d692a0cc6c50"
+   "hash": "9ce7acd4c34ccf20"
   },
   {
    "key": "XQ-01",
