@@ -11,7 +11,7 @@
  "drug_class": "Electrolyte replacement",
  "category": "insulin-electrolytes-fluids",
  "high_alert": true,
- "high_alert_note": "Intravenous potassium is high-risk under the NSW Clinical Excellence Commission safety standard; ISMP's 2024 high-alert list specifically names potassium chloride for injection CONCENTRATE. This entry's original US label concerns a concentrated ready-to-use premixed product, not an undiluted concentrate vial. Product-specific safeguards differ.",
+ "high_alert_note": "Intravenous potassium is high-risk under the NSW Clinical Excellence Commission safety standard; ISMP's 2024 high-alert list specifically names potassium chloride for injection CONCENTRATE. This entry's original US label concerns a concentrated ready-to-use premixed product, not an undiluted concentrate vial. Product-specific safeguards differ. External ISMP/NSW classification references are documented in the separate evidence report; medication instructions cite only appropriate US label sources.",
  "summary": "Parenteral potassium for potassium deficiency when oral replacement is not feasible. The label read is a highly concentrated ready-to-use product intended for fluid-restricted patients. Nursing focus: preventing potassium intoxication, cardiac and potassium monitoring and patients predisposed to hyperkalaemia.",
  "batch": 2,
  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
@@ -40,16 +40,6 @@
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
-  },
-  {
-   "id": "S-ISMP-HAM-2024",
-   "read": "partial",
-   "use": "ISMP 2024 specifically lists potassium chloride for injection concentrate, not every premixed potassium infusion; scope distinguished"
-  },
-  {
-   "id": "S-NSW-IVK-2025",
-   "read": "partial",
-   "use": "NSW CEC high-risk IV potassium standard: approved premix and pump safeguards, product differentiation and storage; local requirements not globally assumed"
   },
   {
    "id": "S-DAILYMED-KCL-CONC-2026",
@@ -82,9 +72,9 @@
     },
     {
      "text": "Check whether supplied potassium is a ready-to-use premix or a concentrate requiring pharmacy-controlled preparation; verify label, route, order, required monitoring and local independent-check policy. Never treat an IV potassium concentrate vial as an ordinary flush.",
-     "support": "sourced",
+     "support": "partial",
      "sources": [
-      "S-NSW-IVK-2025",
+      "L-POTASSIUM",
       "S-DAILYMED-KCL-CONC-2026"
      ]
     }
@@ -128,17 +118,18 @@
     },
     {
      "text": "Dangerous formulation mix-ups: a potassium chloride injection CONCENTRATE vial is not a premixed ready-to-use infusion. Direct injection or IV flush administration of concentrate can cause fatal cardiac arrest; concentrate vials require controlled pharmacy-approved preparation before use. Never apply vial-specific handling instructions indiscriminately to labelled ready-to-use premixed bags.",
-     "support": "sourced",
+     "support": "partial",
      "sources": [
       "S-DAILYMED-KCL-CONC-2026",
-      "S-NSW-IVK-2025"
+      "L-POTASSIUM"
      ]
     },
     {
      "text": "Intravenous potassium is high-risk: prevent accidental bolus administration, distinguish it from look-alike IV fluids, use a rate-limiting infusion device with verified order/settings according to local policy, and urgently escalate unclear products, pump settings or sudden rhythm changes.",
-     "support": "sourced",
+     "support": "partial",
      "sources": [
-      "S-NSW-IVK-2025"
+      "L-POTASSIUM",
+      "S-FDA-PUMP"
      ]
     }
    ]
