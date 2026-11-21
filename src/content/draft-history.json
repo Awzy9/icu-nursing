@@ -1685,6 +1685,22 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "93037d4066ebf613",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-EPINEPHRINE",
+     "L-MILRINONE",
+     "L-NOREPINEPHRINE",
+     "L-VASOPRESSIN",
+     "S-ADRENALIN-IM-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-09": [
@@ -5160,6 +5176,22 @@
      "S-AHRQ-TS",
      "S-ESICM-SHOCK-2014",
      "S-OPENSTAX-MS-35-2"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "e1223851852fa6ec",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-ACC-CS-2025",
+     "S-AHRQ-TS",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025"
     ],
     "gaps": 5,
     "required_sources": 2,
