@@ -82,6 +82,19 @@ export const getSession = (p: Progress, moduleKey: string): SessionRecord | unde
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void>; remove(key: string): Promise<void> }
 const KEY = "icu.progress.v2";
 const LEGACY_KEY = "icu.progress.v1";
+/** Guest history keeps its existing key; account history is isolated per authenticated user.
+ * Never use email as a storage prefix (it is changeable and exposes personally identifying text).
+ */
+export function scopedProgressStore(base: KeyValueStore, userId: string | null): KeyValueStore {
+  if (!userId) return base;
+  const prefix = `icu.user.${userId}:`;
+  return {
+    get: (key) => base.get(prefix + key),
+    set: (key, value) => base.set(prefix + key, value),
+    remove: (key) => base.remove(prefix + key),
+  };
+}
+
 /** A corrupt, foreign or old-schema value never crashes the app: it is ignored and the learner starts empty rather than seeing a broken screen. */
 export async function loadProgress(store: KeyValueStore): Promise<Progress> {
   try {
