@@ -1364,7 +1364,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c3da0dccf7bd6534"
+   "hash": "77f553e2d89b550b"
   },
   {
    "key": "XQ-08",
@@ -4109,12 +4109,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 4,
-   "required_sources": 3,
-   "hash": "79b7dd8419fb5038"
+   "gaps": 5,
+   "required_sources": 4,
+   "hash": "930881cadbd59249"
   },
   {
    "key": "SC-02",
@@ -4222,9 +4227,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "ce7d8cd9fce4709e"
+   "hash": "b9f670b434b8780a"
   },
   {
    "key": "SC-05",
