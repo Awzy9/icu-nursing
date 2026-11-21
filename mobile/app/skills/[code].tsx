@@ -1,11 +1,8 @@
 import { useLocalSearchParams } from "expo-router";
 import { RemoteGate, Screen } from "../../src/ui/components";
 import { LessonReader } from "../../src/ui/lesson-reader";
-import { VisualPhoto } from "../../src/ui/visual-photo";
-import { centralLineVisual } from "../../src/content/visuals";
+import { ModuleVisuals } from "../../src/ui/module-visuals";
 import { useCatalogEntry } from "../../src/hooks/useRemoteContent";
-
-const VISUALS: Record<string, typeof centralLineVisual> = { "SK-02": centralLineVisual };
 
 export default function SkillScreen() {
   const { code } = useLocalSearchParams<{ code: string }>();
@@ -13,7 +10,7 @@ export default function SkillScreen() {
   return (
     <Screen>
       <RemoteGate state={entry} onRetry={entry.refresh}>
-        {(data) => <LessonReader entry={data} bookmarkKey={`skills:${data.key}`} visual={VISUALS[data.key] ? <VisualPhoto visual={VISUALS[data.key]!} /> : undefined} />}
+        {(data) => <LessonReader entry={data} bookmarkKey={`skills:${data.key}`} visual={<ModuleVisuals moduleKey={data.key} />} />}
       </RemoteGate>
     </Screen>
   );
