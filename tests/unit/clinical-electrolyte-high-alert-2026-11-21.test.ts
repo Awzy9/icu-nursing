@@ -16,7 +16,7 @@ describe("2026 IV potassium and magnesium high-alert review", () => {
     const m = med("18", "magnesium-sulfate");
     expect(m.high_alert).toBe(true);
     expect(m.high_alert_note).toContain("ISMP");
-    expect(m.sections.safety_alerts.items.some((x: {text: string}) => x.text.includes("high-alert"))).toBe(true);
+    expect(m.sections.safety_alerts.items.some((x: {text: string}) => x.text.includes("magnesium intoxication"))).toBe(true);
     expect(m.clinically_reviewed).toBe(false);
     expect(m.pharmacist_reviewed).toBe(false);
     expect(m.sources.every((v: {id: string}) => v.id !== "S-ISMP-HAM-2024")).toBe(true);
