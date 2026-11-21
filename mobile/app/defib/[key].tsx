@@ -3,6 +3,7 @@ import { Stack, useLocalSearchParams } from "expo-router";
 import { useDefibExercises, useEcgExercises } from "../../src/hooks/useRemoteContent";
 import { useProgressSync } from "../../src/hooks/useProgressSync";
 import { useApp } from "../../src/state/app";
+import { observationSummary, practiceHeading } from "../../src/core/quiz-presentation";
 import { Button, Callout, Card, H1, H2, P, RemoteGate, Screen } from "../../src/ui/components";
 import { WaveformChart } from "../../src/ui/waveform-chart";
 
@@ -26,6 +27,7 @@ export default function DefibExerciseScreen() {
           const exercise = data.find((e) => e.key === key);
           if (!exercise) return <P>{t("common.notFound")}</P>;
           const q = exercise.question;
+          const heading = checked ? exercise.title[ar ? 1 : 0] : practiceHeading("defib", exercise.key, ar);
 
           return (
             <RemoteGate state={ecgExercises} onRetry={ecgExercises.refresh}>
@@ -42,11 +44,11 @@ export default function DefibExerciseScreen() {
 
                 return (
                   <>
-                    <Stack.Screen options={{ title: exercise.title[ar ? 1 : 0] }} />
-                    <H1>{exercise.title[ar ? 1 : 0]}</H1>
+                    <Stack.Screen options={{ title: heading }} />
+                    <H1>{heading}</H1>
                     <Card>
                       <P>{exercise.vignette}</P>
-                      <WaveformChart trace={trace} />
+                      <WaveformChart trace={{ ...trace, label: "ECG rhythm strip (schematic)" }} />
                     </Card>
 
                     <H2>{q.prompt}</H2>
