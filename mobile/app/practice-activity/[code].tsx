@@ -7,6 +7,7 @@ import { useProgressSync } from "../../src/hooks/useProgressSync";
 import { useApp } from "../../src/state/app";
 import { Button, Callout, Card, Chip, H1, H2, P, RemoteGate, Screen } from "../../src/ui/components";
 import { space } from "../../src/ui/theme";
+import { evaluatePractice } from "../../src/core/practice-evaluation";
 
 type Exercise = NonNullable<WorkingEntryShared["practice"]>;
 const statusChoices = ["not_started", "learning", "with_support", "independent"] as const;
@@ -21,9 +22,8 @@ function PracticeActivity({ moduleKey, exercise }: { moduleKey: string; exercise
   const [checked, setChecked] = useState(false);
   const initialOrder = () => [...(exercise.steps ?? [])].reverse().map((step) => step.id);
   const [order, setOrder] = useState<string[]>(initialOrder);
-  const ready = exercise.kind === "choice" ? !!choice
-    : exercise.kind === "classify" ? !!exercise.items?.length && exercise.items.every((item) => !!answers[item.id])
-      : true;
+  const evaluation = evaluatePractice(exercise, { answers, flags, choice, order });
+  const ready = evaluation.ready;
 
   const reset = () => {
     setAnswers({});
@@ -43,9 +43,9 @@ function PracticeActivity({ moduleKey, exercise }: { moduleKey: string; exercise
   const submit = () => {
     if (!ready) return;
     setChecked(true);
-    setComplete(moduleKey, true);
+    if (evaluation.passed) setComplete(moduleKey, true);
   };
-  const correctSequence = order.every((id, i) => exercise.steps?.[i]?.id === id);
+  const correctSequence = evaluation.passed;
 
   return (
     <View style={{ gap: space.lg }}>
@@ -112,7 +112,7 @@ function PracticeActivity({ moduleKey, exercise }: { moduleKey: string; exercise
               <P>{item.text}</P>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
                 {statusChoices.map((status) => (
-                  <Chip key={status} label={status.replaceAll("_", " ")} selected={(answers[item.id] ?? "not_started") === status} onPress={() => { if (!checked) setAnswers((old) => ({ ...old, [item.id]: status })); }} />
+                  <Chip key={status} label={status.replaceAll("_", " ")} selected={answers[item.id] === status} onPress={() => { if (!checked) setAnswers((old) => ({ ...old, [item.id]: status })); }} />
                 ))}
               </View>
             </Card>
@@ -121,6 +121,12 @@ function PracticeActivity({ moduleKey, exercise }: { moduleKey: string; exercise
       ) : null}
 
       {checked ? (
+        <Callout tone={evaluation.passed ? "success" : "warn"}>{evaluation.selfAssessment
+          ? (ar ? "تم حفظ التقييم الذاتي للتعلّم فقط؛ ليس إثباتاً للكفاءة السريرية." : "Self-assessment recorded for learning only; this is not clinical competency certification.")
+          : evaluation.passed
+            ? (ar ? "إجاباتك صحيحة؛ اكتمل التدريب." : "All responses correct — practice completed.")
+            : (ar ? `${evaluation.correct} من ${evaluation.total} صحيحة. راجع الشرح ثم أعد المحاولة لإكمال التدريب.` : `${evaluation.correct} of ${evaluation.total} correct. Review the feedback and try again to complete this activity.`)
+        }</Callout>
         <Button label={ar ? "إعادة المحاولة" : "Try again"} variant="outline" onPress={reset} />
       ) : (
         <Button label={exercise.kind === "checklist" ? (ar ? "حفظ التقييم الذاتي" : "Save self-assessment") : (ar ? "تحقق من عملي" : "Check my work")} disabled={!ready} onPress={submit} />
