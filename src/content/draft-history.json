@@ -5147,6 +5147,20 @@
     "gaps": 5,
     "required_sources": 4,
     "issues": 0
+   },
+   {
+    "hash": "930881cadbd59249",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 4,
+    "issues": 0
    }
   ],
   "SC-02": [
