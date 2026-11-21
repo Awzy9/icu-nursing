@@ -3,6 +3,7 @@ import { ActivityIndicator, Pressable, ScrollView, Text, View, type StyleProp, t
 import RNSlider from "@react-native-community/slider";
 import { useRouter, type Href } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useAccess } from "../auth/useAccess";
 import { useApp } from "../state/app";
 import type { FetchState } from "../hooks/useRemoteContent";
 import { useProgressSync } from "../hooks/useProgressSync";
@@ -67,12 +68,14 @@ export function Button({ label, onPress, variant = "primary", disabled, hint, ic
 const Chevron = () => { const { palette, rtl } = useApp(); return <Icon name="chevron" color={palette.muted} size={20} mirror={rtl} />; };
 
 /** A tappable card that navigates: optional icon tile, title, an optional description (clamped to two lines so long copy cannot make lists endless) and a chevron. */
-export function NavCard({ href, title, body, badge, icon, accent = "study" }: { href: Href; title: string; body?: string; badge?: string; icon?: IconName; accent?: AccentKey }) {
+export function NavCard({ href, title, body, badge, icon, accent = "study", locked }: { href: Href; title: string; body?: string; badge?: string; icon?: IconName; accent?: AccentKey; locked?: boolean }) {
   const { palette, rtl, t } = useApp();
   const router = useRouter();
+  const access = useAccess();
+  const isLocked = locked ?? access.lockedHref(href);
   const dir = { writingDirection: rtl ? "rtl" : "ltr" } as const;
   return (
-    <Pressable onPress={() => router.push(href)} accessibilityRole="link" accessibilityLabel={t("a11y.openItem", { title })}
+    <Pressable onPress={() => router.push(href)} accessibilityRole="link" accessibilityLabel={isLocked ? t("gate.lockedItem", { title }) : t("a11y.openItem", { title })}
       style={({ pressed }) => ({ ...cardStyle(palette), minHeight: MIN_TARGET, flexDirection: "row", alignItems: "center", gap: space.md, paddingVertical: space.md, paddingHorizontal: space.lg, opacity: pressed ? 0.85 : 1 })}>
       {icon ? <IconTile name={icon} accent={accent} /> : null}
       <View style={{ flex: 1, gap: 2 }}>
@@ -80,29 +83,33 @@ export function NavCard({ href, title, body, badge, icon, accent = "study" }: { 
         {body ? <Text numberOfLines={2} style={[type.small, dir, { color: palette.muted }]}>{body}</Text> : null}
         {badge ? <Text style={[type.small, { color: palette.warnText, fontWeight: "600" }]}>{badge}</Text> : null}
       </View>
-      <Chevron />
+      {isLocked ? <Icon name="lock" color={palette.muted} size={20} /> : <Chevron />}
     </Pressable>
   );
 }
 
 /** Several related destinations as one rounded card with hairline dividers (like a settings screen): far denser than a stack of separate cards, so long lists stay scannable. */
-export function NavGroup({ items }: { items: { href: Href; title: string; body?: string; icon?: IconName; accent?: AccentKey }[] }) {
+export function NavGroup({ items }: { items: { href: Href; title: string; body?: string; icon?: IconName; accent?: AccentKey; locked?: boolean }[] }) {
   const { palette, rtl, t } = useApp();
   const router = useRouter();
+  const access = useAccess();
   const dir = { writingDirection: rtl ? "rtl" : "ltr" } as const;
   return (
     <View style={[cardStyle(palette), { overflow: "hidden" }]}>
-      {items.map((item, i) => (
-        <Pressable key={i} onPress={() => router.push(item.href)} accessibilityRole="link" accessibilityLabel={t("a11y.openItem", { title: item.title })}
+      {items.map((item, i) => {
+        const isLocked = item.locked ?? access.lockedHref(item.href);
+        return (
+        <Pressable key={i} onPress={() => router.push(item.href)} accessibilityRole="link" accessibilityLabel={isLocked ? t("gate.lockedItem", { title: item.title }) : t("a11y.openItem", { title: item.title })}
           style={({ pressed }) => ({ minHeight: MIN_TARGET, flexDirection: "row", alignItems: "center", gap: space.md, paddingVertical: space.md, paddingHorizontal: space.lg, borderTopWidth: i ? 1 : 0, borderTopColor: palette.hairline, backgroundColor: pressed ? palette.tint : "transparent" })}>
           {item.icon ? <IconTile name={item.icon} accent={item.accent ?? "study"} size={40} /> : null}
           <View style={{ flex: 1, gap: 2 }}>
             <Text style={[type.h3, dir, { color: palette.text }]}>{item.title}</Text>
             {item.body ? <Text numberOfLines={2} style={[type.small, dir, { color: palette.muted }]}>{item.body}</Text> : null}
           </View>
-          <Chevron />
+          {isLocked ? <Icon name="lock" color={palette.muted} size={20} /> : <Chevron />}
         </Pressable>
-      ))}
+        );
+      })}
     </View>
   );
 }

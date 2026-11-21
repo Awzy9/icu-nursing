@@ -1,9 +1,10 @@
-import { useRouter } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import React, { useState } from "react";
 import { TextInput, View } from "react-native";
 import { CaptchaView } from "../src/auth/CaptchaView";
 import { CAPTCHA_REQUIRED } from "../src/auth/config";
 import { useAuth } from "../src/auth/provider";
+import { safeNext } from "../src/core/access";
 import { useApp } from "../src/state/app";
 import { Button, Callout, H1, P, Screen } from "../src/ui/components";
 import { MIN_TARGET, space } from "../src/ui/theme";
@@ -12,6 +13,7 @@ export default function SignIn() {
   const { t, locale, palette, rtl } = useApp();
   const { config, manager } = useAuth();
   const router = useRouter();
+  const params = useLocalSearchParams<{ next?: string }>();
   const [email, setEmail] = useState(""); const [password, setPassword] = useState("");
   const [token, setToken] = useState<string | null>(null); const [captchaKey, setCaptchaKey] = useState(0);
   const [msg, setMsg] = useState<string | null>(null); const [busy, setBusy] = useState(false);
@@ -25,7 +27,7 @@ export default function SignIn() {
     setBusy(true); setMsg(null);
     try {
       const r = await manager!.signIn(email, password, token ?? undefined);
-      if (r.ok) { setPassword(""); router.replace("/(tabs)/account"); return; }
+      if (r.ok) { setPassword(""); router.replace((safeNext(params.next) ?? "/(tabs)/account") as never); return; }
       freshCaptcha(); setMsg(t(`auth.err.${r.error}`));
     } catch { freshCaptcha(); setMsg(t("auth.err.network")); }
     finally { setBusy(false); }
