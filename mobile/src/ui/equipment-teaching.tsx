@@ -68,12 +68,13 @@ export function VentilatorAlarmComparison() {
   const normal = exercises.data.find((item) => item.key === "WV-01")?.traces.find((trace) => trace.unit === "L/min");
   const incomplete = exercises.data.find((item) => item.key === "WV-02")?.traces.find((trace) => trace.unit === "L/min");
   if (!normal || !incomplete) return <P small muted>Comparison traces unavailable. Try again when connected.</P>;
+  const timeAxisEnd = Math.max(...[...normal.points, ...incomplete.points].map(([time]) => time));
   return (
     <Card>
       <H2>Compare expiratory flow before the next breath</H2>
       <P small muted>Simulated flow traces share the same reference scale. Zero flow is marked by a horizontal line.</P>
-      <WaveformChart trace={{ ...normal, label: "Expiratory flow returns to zero" }} />
-      <WaveformChart trace={{ ...incomplete, label: "Flow stays below zero before next breath" }} />
+      <WaveformChart trace={{ ...normal, label: "Expiratory flow returns to zero" }} timeAxisEnd={timeAxisEnd} />
+      <WaveformChart trace={{ ...incomplete, label: "Flow stays below zero before next breath" }} timeAxisEnd={timeAxisEnd} />
       <P small>In the second trace, expiration is incomplete as the next inspiration begins. This may suggest air trapping, but the waveform alone does not quantify intrinsic PEEP.</P>
       <Callout tone="info">For any alarm, assess the patient and actual ventilation first. Review the alarm message, chest movement, measured exhaled volume, waveform trends and circuit with the ICU team.</Callout>
     </Card>
