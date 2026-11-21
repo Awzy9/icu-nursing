@@ -1,4 +1,4 @@
-import { H1, H2, NavCard, RemoteGate, Screen } from "../../src/ui/components";
+import { NavGroup, RemoteGate, Screen, SectionLabel } from "../../src/ui/components";
 import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
 
@@ -7,14 +7,15 @@ export default function Practice() {
   const cases = useCatalogList("cases");
   return (
     <Screen>
-      <H1>{t("practice.title")}</H1>
-      <NavCard href="/quiz" title={t("quiz.title")} body={t("hub.questionsBody")} />
-      <NavCard href="/labs" title={t("hub.labs")} body={t("hub.labsBody")} />
-      <H2>{t("cases.title")}</H2>
+      <NavGroup items={[
+        { href: "/quiz", title: t("quiz.title"), body: t("hub.questionsBody") },
+        { href: "/labs", title: t("hub.labs"), body: t("hub.labsBody") },
+      ]} />
+      <SectionLabel>{t("type.cases")}</SectionLabel>
       <RemoteGate state={cases} onRetry={cases.refresh} empty={(items) => items.length === 0}>
-        {(items) => items.map((c) => (
-          <NavCard key={c.key} href={`/cases/${c.key}`} title={c.title} body={progress.cases[c.key] ? t("cases.score", { score: Math.round(progress.cases[c.key]!.scoreTenths / 10) }) : undefined} />
-        ))}
+        {(items) => (
+          <NavGroup items={items.map((c) => ({ href: `/cases/${c.key}`, title: c.title, body: progress.cases[c.key] ? t("cases.score", { score: Math.round(progress.cases[c.key]!.scoreTenths / 10) }) : undefined }))} />
+        )}
       </RemoteGate>
     </Screen>
   );

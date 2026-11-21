@@ -1,4 +1,4 @@
-import { H1, NavCard, Screen } from "../src/ui/components";
+import { NavGroup, Screen } from "../src/ui/components";
 import { useApp } from "../src/state/app";
 
 // Every lab from the website is now built as a native screen. NEWS2, GCS, ECG, the waveform
@@ -11,19 +11,20 @@ export default function Labs() {
   const { t } = useApp();
   return (
     <Screen>
-      <H1>{t("labs.title")}</H1>
-      <NavCard href="/news2" title={t("news2.title")} body={t("news2.intro")} />
-      <NavCard href="/gcs" title={t("gcs.title")} body={t("gcs.intro")} />
-      <NavCard href="/ecg" title={t("ecg.title")} body={t("ecg.intro")} />
-      <NavCard href="/waveforms" title={t("waveforms.title")} body={t("waveforms.intro")} />
-      <NavCard href="/aline" title={t("aline.title")} body={t("aline.intro")} />
-      <NavCard href="/defib" title={t("defib.title")} body={t("defib.intro")} />
-      <NavCard href="/abg" title={t("abg.title")} body={t("abg.intro")} />
-      <NavCard href="/crrt" title={t("crrt.title")} body={t("crrt.intro")} />
-      <NavCard href="/infusion" title={t("infusion.title")} body={t("infusion.intro")} />
-      <NavCard href="/transfusion" title={t("transfusion.title")} body={t("transfusion.intro")} />
-      <NavCard href="/vent-lab" title={t("vent.title")} body={t("vent.intro")} />
-      <NavCard href="/hemo-lab" title={t("hemo.title")} body={t("hemo.intro")} />
+      <NavGroup items={[
+        { href: "/news2", title: t("news2.title"), body: t("news2.intro") },
+        { href: "/gcs", title: t("gcs.title"), body: t("gcs.intro") },
+        { href: "/ecg", title: t("ecg.title"), body: t("ecg.intro") },
+        { href: "/waveforms", title: t("waveforms.title"), body: t("waveforms.intro") },
+        { href: "/aline", title: t("aline.title"), body: t("aline.intro") },
+        { href: "/defib", title: t("defib.title"), body: t("defib.intro") },
+        { href: "/abg", title: t("abg.title"), body: t("abg.intro") },
+        { href: "/crrt", title: t("crrt.title"), body: t("crrt.intro") },
+        { href: "/infusion", title: t("infusion.title"), body: t("infusion.intro") },
+        { href: "/transfusion", title: t("transfusion.title"), body: t("transfusion.intro") },
+        { href: "/vent-lab", title: t("vent.title"), body: t("vent.intro") },
+        { href: "/hemo-lab", title: t("hemo.title"), body: t("hemo.intro") },
+      ]} />
     </Screen>
   );
 }
