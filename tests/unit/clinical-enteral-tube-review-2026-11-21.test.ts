@@ -21,7 +21,7 @@ describe("2026-11-21 nasogastric placement and enteral feeding safety", () => {
     for (const [, file] of skillFiles) {
       const skill = JSON.parse(read(file));
       const safety = skill.sections.safety.items.map((i: {text: string}) => i.text).join(" ");
-      expect(safety).toMatch(/external (marks|tube markers)/i);
+      expect(safety).toMatch(/external (marks|tube[- ]length markers?|tube markers?)/i);
       expect(safety).toMatch(/internal displacement/i);
     }
   });
