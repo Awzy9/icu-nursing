@@ -95,8 +95,8 @@ describe("clinical evidence corrections — November 2026", () => {
     const pump = JSON.parse(read("content/drafts/skills/SK-22-infusion-pump-safety.json"));
     expect(pump.clinically_reviewed).toBe(false);
     const escalation = pump.checklist.find((item: {phase: string}) => item.phase === "escalation");
-    expect(escalation?.text).toContain("unit's contingency plan");
-    expect(escalation?.text).toContain("Do not automatically stop a life-sustaining medication");
+    expect(escalation?.text).toContain("pump-failure protocol");
+    expect(escalation?.text).toContain("Do not ignore possible over-infusion or reflexively interrupt an essential infusion");
     expect(escalation?.support).toBe("partial");
   });
 
