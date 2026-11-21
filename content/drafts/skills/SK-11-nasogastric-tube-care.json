@@ -53,7 +53,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Confirm position after placement and before each use by aspiration and pH-graded paper, with X-ray if necessary; initial placement of post-pyloric tubes is confirmed by abdominal X-ray unless placed radiologically, under agreed protocols (NICE CG32).",
+     "text": "NICE CG32 calls for nasogastric tube placement checks after insertion and before each use, using gastric aspirate with appropriate pH paper and X-ray when required. Visible external tube markers are used to monitor migration after initial confirmation; unchanged markings cannot independently rule out internal displacement. Check the tube according to the local approved pathway, including after symptoms or events that raise suspicion of movement. Do not put feed, fluids, medicines or flushes through a tube with uncertain position.",
      "support": "partial",
      "sources": [
       "S-NICE-CG32"
@@ -84,7 +84,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Daily: check fixation, nasal erosion, and whether the tube is intact, unblocked and unkinked (NICE CG32).",
+     "text": "Check fixation, nasal skin, tube integrity and recorded external length/markers; compare with previously documented measurements. A changed external length, vomiting, coughing, respiratory distress or concern for displacement triggers reassessment before further use. An unchanged length is only an adjunct, not proof of correct location (NHS safety investigation of 2016 alert).",
      "support": "partial",
      "sources": [
       "S-NICE-CG32"
@@ -106,7 +106,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "If aspiration is not possible or the pH check is invalid, follow the local protocol and escalate; do not use the tube until position is confirmed.",
+     "text": "Withhold feed, medications, water and flushing if position is uncertain, the tube may have migrated, or gastric aspirate/pH is inconclusive. Escalate to competent staff for the approved position-confirmation pathway (for example, correctly interpreted X-ray when necessary); do not use auscultation or unchanged external markings as stand-alone confirmation.",
      "support": "partial",
      "sources": [
       "S-NICE-CG32",
@@ -139,7 +139,7 @@
   },
   {
    "phase": "assessment",
-   "text": "Check fixation, nasal skin and that the tube is intact, unblocked and unkinked.",
+   "text": "Check fixation, nasal skin, tube integrity and external markings; treat any suspected migration or respiratory distress as a reason to reassess position before use.",
    "critical": false,
    "support": "partial",
    "sources": [
@@ -174,7 +174,8 @@
  ],
  "gaps": [
   "Insertion, securement, flushing and unblocking: no accessible source.",
-  "Open RN Nursing Skills (CC BY) would be a permissive candidate source once readable."
+  "Open RN Nursing Skills (CC BY) would be a permissive candidate source once readable.",
+  "The 2026 adult guideline systematic review identifies varying national initial-confirmation and pH thresholds; do not universalize the UK pH cutoff, and do not use external marks or auscultation alone to prove internal position. A qualified local clinical reviewer must specify the approved pathway."
  ],
  "permissions": [
   "Open RN: CC BY with attribution; check image licences."
