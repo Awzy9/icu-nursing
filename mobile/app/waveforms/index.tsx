@@ -1,5 +1,6 @@
 import { useWaveformExercises } from "../../src/hooks/useRemoteContent";
 import { useApp } from "../../src/state/app";
+import { practiceHeading } from "../../src/core/quiz-presentation";
 import { H1, NavCard, P, RemoteGate, Screen } from "../../src/ui/components";
 
 export default function WaveformsList() {
@@ -13,7 +14,7 @@ export default function WaveformsList() {
       <RemoteGate state={exercises} onRetry={exercises.refresh}>
         {(data) => (
           <>
-            {data.map((e) => <NavCard key={e.key} href={`/waveforms/${e.key}`} title={e.title[ar ? 1 : 0]} body={e.objective[ar ? 1 : 0]} />)}
+            {data.map((e) => <NavCard key={e.key} href={`/waveforms/${e.key}`} title={practiceHeading("waveforms", e.key, ar)} body={ar ? "اقرأ الضغط والتدفق والحجم قبل إظهار النمط." : "Read pressure, flow, and volume before revealing the pattern."} />)}
           </>
         )}
       </RemoteGate>
