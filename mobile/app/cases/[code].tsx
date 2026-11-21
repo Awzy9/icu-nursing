@@ -36,6 +36,7 @@ export default function CaseScreen() {
   const [done, setDone] = useState(false);
   const [resumed, setResumed] = useState(false);
   const [visited, setVisited] = useState<number[]>([]);
+  const [historyIncomplete, setHistoryIncomplete] = useState(false);
 
   const existingSession = code ? getSession(progress, code) : undefined;
 
@@ -68,8 +69,8 @@ export default function CaseScreen() {
                 <H2>{t("cases.resume")}</H2>
                 <P muted>{t("cases.resumeBody")}</P>
                 <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
-                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); }} />
-                <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); discardSession(code!); }} />
+                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); setVisited(existingSession.visited ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !existingSession.visited?.length); }} />
+                <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
               </Card>
             );
           }
@@ -79,7 +80,7 @@ export default function CaseScreen() {
               <Card>
                 <H2>{t("cases.summary")}</H2>
                 {scenario.takeaways.map((item, i) => <P key={i}>{`• ${item}`}</P>)}
-                <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); }} />
+                <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); setHistoryIncomplete(false); }} />
               </Card>
             );
           }
@@ -96,7 +97,7 @@ export default function CaseScreen() {
               saveSession(code!, { kind: "scenario", version, position: pos, score: newPoints, finished: true, at }); // local auto-discards a finished session; the remote row is kept, matching the website
               setDone(true);
             } else {
-              saveSession(code!, { kind: "scenario", version, position: option.next, score: newPoints, finished: false, at: new Date().toISOString() });
+              saveSession(code!, { kind: "scenario", version, position: option.next, score: newPoints, finished: false, at: new Date().toISOString(), visited: [...visited, pos].slice(-100) });
               setVisited((old) => [...old, pos]);
               setPosition(option.next);
             }
@@ -113,8 +114,8 @@ export default function CaseScreen() {
               {revealed && equipmentVisualKey && pos === scenario.steps[0]?.position ? <ModuleVisuals moduleKey={equipmentVisualKey} /> : null}
               {showRhythm ? (rhythmTrace ? <Card><WaveformChart trace={rhythmTrace} /></Card> : <P small muted>{t("common.loading")}</P>) : null}
               {showNumericMonitor ? monitorReadings(step.observations).map((r) => <Monitor key={r.metric.key} label={r.metric.name[locale === "ar" ? 1 : 0]} value={r.value} suffix={r.metric.suffix} />) : null}
-              {showNeuro ? <CaseComparison kind="neuro" observations={step.observations} earlier={previousSteps} ar={locale === "ar"} /> : null}
-              {showPerfusion ? <CaseComparison kind="perfusion" observations={step.observations} earlier={previousSteps} ar={locale === "ar"} /> : null}
+              {showNeuro ? <CaseComparison kind="neuro" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
+              {showPerfusion ? <CaseComparison kind="perfusion" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
               <P small muted>{t("cases.step", { n: scenario.steps.findIndex((s) => s.position === pos) + 1, total: scenario.steps.length })}</P>
               <Card><P>{step.info}</P></Card>
               <H2>{step.prompt}</H2>
