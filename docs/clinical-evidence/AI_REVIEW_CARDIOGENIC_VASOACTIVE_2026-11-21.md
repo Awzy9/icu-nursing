@@ -1,7 +1,7 @@
 # Targeted evidence audit: cardiogenic shock and vasoactive-safety learning
 
 **Date:** 2026-11-21  
-**Source artifacts:** `SC-02-cardiogenic-shock.json` (3 fictional scenario steps, 9 decisions); `XQ-08-vasoactive-safety.md` (6 MCQs).  
+**Source artifacts:** `SC-02-cardiogenic-shock.json` (3 fictional scenario steps, 9 decisions); `XQ-08-vasoactive-safety.md` (6 MCQs); `D05-T03-vasopressor-pharmacology-partial.md` (targeted dopamine and vasoactive-line safety sections).  
 **Outcome:** source-trace and safety editorial corrections; **zero independently clinically approved items**. All drafts retain `clinically_reviewed: false` and may not be imported as approved learner content. This is a claim-level *AI-assisted* audit; it is neither an independent clinical review nor verification of every other web/mobile claim.
 
 ## Important findings
@@ -18,6 +18,14 @@
 | XQ-08 Q5 milrinone ectopy | US product label supports continuous ECG monitoring and association with ventricular arrhythmia, but the stem could prompt a false causal attribution to milrinone alone. | **Clarified rationale.** Answer B remains correct; report/assess the patient, do not assume one medication is the sole cause. | Interpret arrhythmia clinically with cardiology and check other factors; product-specific labeling, renal function and electrolytes must be considered. |
 | XQ-08 Q6 epinephrine injection site | **Evidence mismatch:** previous source `L-EPINEPHRINE` was the IV/septic-shock-specific product record, but the question asked for anaphylaxis injection site. Same generic drug does not imply interchangeable routes or labeling. | **Corrected.** Stem explicitly specifies team-authorized **intramuscular** epinephrine; evidence now cites `S-ADRENALIN-IM-2025` matching the Adrenalin IM-anaphylaxis labeling (site: anterolateral thigh). Answer A preserved. Distinguishes this from the IV shock product and avoids dosing advice. | Verify product, route and local anaphylaxis algorithm, contraindications, dosing and national availability with pharmacist; no generalizable medication order presented. |
 
+## Additional D05-T03 nursing pharmacology correction
+
+The authored pharmacology lesson retained an **unsafe inference** after an earlier MCQ correction: its dopamine paragraph described renal vasodilation as though reduced urine output could imply that dopamine should be reduced. It also had an unqualified instruction not to interrupt a vasoactive infusion, contradicting the safety response to suspected peripheral extravasation.
+
+**Disposition — corrected:** Separate renal receptor effects from evidence of clinical benefit; state clearly that **low-dose dopamine must not be used to treat AKI** (NICE NG148 recommendation 1.5.5). For falling urine output, verify collection and perfusion and urgently report; no dose increase/decrease is inferred. Distinguish a functioning line that should not be casually interrupted from a suspected extravasated line requiring immediate cessation of delivery through the affected cannula, escalation and safe alternate haemodynamic support. Clarify that urgent stopping/escalation within local policy is a bedside nursing responsibility, whereas subsequent antidote/infiltration/device actions require trained-team authority. Q2's distractor falsely implying dopamine kidney protection is now explicitly rejected in the explanation. The existing answer keys for the six topical MCQs are unchanged.
+
+**Evidence depth:** The directly checked NICE official NG148 recommendation supports the kidney-protection correction, not a drug-dose protocol; full NICE evidence review was not accessed. Manufacturer product labels support monitoring and adverse-event precautions only. Signed critical-care pharmacist and nursing review remains required for international use.
+
 ## External sources directly inspected or checked
 
 1. American College of Cardiology. *2025 Concise Clinical Guidance: Evaluation and Management of Cardiogenic Shock*, ACC official summary, published 2025-03-17; https://www.acc.org/latest-in-cardiology/journal-scans/2025/03/17/18/39/accs-first-concise-clinical-guidance-focuses-on-evaluation-and-management-of-cardiogenic-shock . Society summary read 2026-11-21; **full JACC consensus not read**. JACC DOI:10.1016/j.jacc.2025.02.018.
@@ -27,6 +35,7 @@
 5. US DailyMed. *Dobutamine injection*, https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee09a55f-9992-48bb-b8d6-1184bd548536 ; arrhythmias, BP/ECG monitoring and caution after MI checked 2026-11-21; existing project label `L-DOBUTAMINE` from another manufacturer remains in register.
 6. US DailyMed. *Adrenalin epinephrine injection*, https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3eef2920-0129-6dc2-e063-6294a90ac22a ; specific IM anaphylaxis/site warning (sections 2.2 and 5.1) directly read 2026-11-21. Supports XQ-08 Q6; this is a **separate route-specific product label**, not the IV-specific `L-EPINEPHRINE` used for other questions.
 7. US DailyMed. *Vasopressin injection*, https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04e0c406-6b49-4c0b-abc5-9a1a75532485 ; reversible diabetes-insipidus after cessation, polyuria, electrolytes (label section) checked 2026-11-21.
+8. NICE. *Acute kidney injury: prevention, detection and management*, NG148, recommendation 1.5.5, https://www.nice.org.uk/guidance/ng148/chapter/Recommendations ; recommendation directly inspected 2026-11-21, full evidence review not read. Low-dose dopamine is not recommended as AKI treatment. Citation/paraphrase only; commercial reuse not established.
 
 ## Clinical and publication release blockers
 
@@ -36,4 +45,4 @@
 - The platform's remaining 40 topics, medication library, skills, other 19 scenarios, equipment, calculators and simulations are **not covered by this batch**. Their separate inventory needs evidence-source and license review before a blanket draft banner is considered for retirement.
 - No clinical-approval flags, reviewer signatures, publication/import controls, TestFlight releases or global website draft warning have been changed. This file records **targeted AI evidence verification**, not credentialed clinical clearance.
 
-**Batch result:** 1 cardiogenic scenario (3 steps, 9 options) and 6 vasoactive MCQs examined; corrected scenario safety and source-trace issues and 3 MCQ rationales/stems; all clinical statuses remain DRAFT.
+**Batch result:** 1 cardiogenic scenario (3 steps, 9 options), 6 vasoactive-safety MCQs and selected D05-T03 dopamine/infusion-safety sections examined; safety and evidence-trace corrections made; all clinical statuses remain DRAFT.
