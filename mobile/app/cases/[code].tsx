@@ -4,13 +4,13 @@ import { Text, View } from "react-native";
 import { scoreTenths } from "../../src/core/engines";
 import { monitorReadings } from "../../src/core/monitorReadings";
 import { getSession, recordCase } from "../../src/core/progress";
-import { glucoseMeterVisual } from "../../src/content/visuals";
 import { BookmarkButton, Button, Card, H2, P, RemoteGate, Screen } from "../../src/ui/components";
-import { VisualPhoto } from "../../src/ui/visual-photo";
+import { ModuleVisuals } from "../../src/ui/module-visuals";
+import { WaveformChart } from "../../src/ui/waveform-chart";
 import { space, type } from "../../src/ui/theme";
 import { useApp } from "../../src/state/app";
 import { useProgressSync } from "../../src/hooks/useProgressSync";
-import { useCaseVisuals, useCatalogEntry } from "../../src/hooks/useRemoteContent";
+import { useCaseVisuals, useCatalogEntry, useEcgExercises } from "../../src/hooks/useRemoteContent";
 
 function Monitor({ label, value, suffix }: { label: string; value: number; suffix: string }) {
   return (
@@ -27,6 +27,7 @@ export default function CaseScreen() {
   const { saveSession, discardSession } = useProgressSync();
   const entry = useCatalogEntry(code);
   const caseVisuals = useCaseVisuals();
+  const ecgExercises = useEcgExercises();
   const [position, setPosition] = useState<number | undefined>();
   const [points, setPoints] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
@@ -42,11 +43,15 @@ export default function CaseScreen() {
         {(data) => {
           const scenario = data.scenario;
           if (!scenario) return <P>{t("common.notFound")}</P>;
-          const showGlucoseMeter = code === "SC-10";
+          const visualMap = caseVisuals.status === "ready" ? caseVisuals.data : undefined;
+          const equipmentVisualKey = visualMap?.equipment[code ?? ""] ?? (code === "SC-10" ? "MD-15" : undefined);
           const numericMonitorCases = caseVisuals.status === "ready" ? caseVisuals.data.numericMonitor : [];
           const showNumericMonitor = numericMonitorCases.includes(code ?? "");
 
           const pos = position ?? scenario.steps[0]!.position;
+          const rhythm = visualMap?.rhythm;
+          const showRhythm = rhythm?.caseKey === code && rhythm.positions.includes(pos);
+          const rhythmTrace = showRhythm && ecgExercises.status === "ready" ? ecgExercises.data.find((exercise) => exercise.key === rhythm?.exerciseKey)?.trace : undefined;
           const step = scenario.steps.find((s) => s.position === pos)!;
           const option = choice === null ? undefined : step.options[choice];
           const version = JSON.stringify(scenario.steps.map((s) => ({ p: s.position, n: s.options.length })));
@@ -99,7 +104,8 @@ export default function CaseScreen() {
               <P muted small>{t("app.englishOnly")}</P>
               <Text accessibilityRole="header" style={{ fontSize: 20, fontWeight: "700", writingDirection: "ltr" }}>{data.title}</Text>
               <BookmarkButton itemKey={`cases:${data.key}`} />
-              {showGlucoseMeter ? <VisualPhoto visual={glucoseMeterVisual} /> : null}
+              {equipmentVisualKey ? <ModuleVisuals moduleKey={equipmentVisualKey} /> : null}
+              {showRhythm ? (rhythmTrace ? <Card><WaveformChart trace={rhythmTrace} /></Card> : <P small muted>{t("common.loading")}</P>) : null}
               {showNumericMonitor ? monitorReadings(step.observations).map((r) => <Monitor key={r.metric.key} label={r.metric.name[locale === "ar" ? 1 : 0]} value={r.value} suffix={r.metric.suffix} />) : null}
               <P small muted>{t("cases.step", { n: scenario.steps.findIndex((s) => s.position === pos) + 1, total: scenario.steps.length })}</P>
               <Card><P>{step.info}</P></Card>
