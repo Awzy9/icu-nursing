@@ -28,6 +28,11 @@ export function InfusionCalculator({ locale }: { locale: string }) {
     <section id="calculator" aria-labelledby="infusion-calculator-title" className="scroll-mt-24 space-y-4 rounded-2xl border border-border bg-card p-5">
       <h2 id="infusion-calculator-title" className="text-xl font-bold">{ar ? "حاسبة مضخة التسريب" : "Infusion pump calculator"}</h2>
       <p className="text-sm text-muted-foreground">{ar ? "للتدريب على حساب معدل التسريب أو مدته باستخدام حجم سائل معلوم." : "Practise calculating a volumetric infusion rate or duration from a known fluid volume."}</p>
+      <p role="note" className="rounded-lg border border-border bg-muted p-3 text-sm">
+        {ar
+          ? "هذه أداة تدريب بقيم افتراضية فقط، وليست لتحديد إعدادات مضخة مريض. تحقق من أمر الطبيب والتركيز ووسائل الحماية المعتمدة بمؤسستك. عند تغيير وحدة القياس ستُمسح القيمة التي قد تحمل معنى مختلفًا."
+          : "Fictional calculation practice only—not for setting a patient's infusion pump. Follow approved orders, concentrations, drug-library safeguards and independent-check policies. Changing a unit clears the corresponding number to prevent misinterpretation."}
+      </p>
       <label className="block space-y-1 text-sm font-semibold">
         <span>{ar ? "احسب" : "Calculate"}</span>
         <select className={field} value={mode} onChange={(event) => {
@@ -51,7 +56,7 @@ export function InfusionCalculator({ locale }: { locale: string }) {
       {isRate && (
         <label className="block space-y-1 text-sm font-semibold">
           <span>{ar ? "وحدة المدة" : "Duration unit"}</span>
-          <select className={field} value={minutes ? "minutes" : "hours"} onChange={(event) => setMinutes(event.target.value === "minutes")}>
+          <select className={field} value={minutes ? "minutes" : "hours"} onChange={(event) => { setMinutes(event.target.value === "minutes"); setQuantity(""); }}>
             <option value="hours">{ar ? "ساعات" : "Hours"}</option>
             <option value="minutes">{ar ? "دقائق" : "Minutes"}</option>
           </select>
