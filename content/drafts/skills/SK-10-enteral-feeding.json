@@ -66,7 +66,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Confirm nasogastric position after placement and before each use by the approved clinical pathway (NICE CG32: aspirate with pH-graded paper, X-ray if necessary). A stable external tube-length marker alone does not establish safe *initial* placement; markers are an adjunct when checking a previously verified tube. Never flush, give medicines, water or feed through a tube whose position is unconfirmed. Where aspiration or pH assessment is unreliable, escalate and use an approved alternative rather than assuming placement.",
+     "text": "Confirm nasogastric position after placement and before each use by the approved clinical pathway (NICE CG32: aspirate with pH-graded paper, X-ray if necessary). A stable external tube-length marker alone does not establish safe *initial* placement; markers are only an adjunct when checking a previously verified tube, and an unchanged length cannot reliably exclude internal displacement. Never flush, give medicines, water or feed through a tube whose position is unconfirmed. Where aspiration or pH assessment is unreliable, escalate and use an approved alternative rather than assuming placement.",
      "support": "partial",
      "sources": [
       "S-NICE-CG32",
@@ -125,7 +125,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "For nasogastric feeds, NICE CG32 recommendation 1.7.17 calls for position confirmation after insertion and before each use by aspirate with pH-graded paper (with X-ray when necessary). Its monitoring table also discusses checking tube markers after initial position confirmation; external marks help detect migration but must not be mistaken for an independent initial-position test. For repeat use, follow the unit's approved risk-based confirmation pathway. If displacement or aspiration is suspected, or position is uncertain, withhold feed, water and medication until placement is confirmed by an approved method.",
+     "text": "For nasogastric feeds, NICE CG32 recommendation 1.7.17 calls for position confirmation after insertion and before each use by aspirate with pH-graded paper (with X-ray when necessary). Its monitoring table also discusses checking tube markers after initial position confirmation; external marks help detect migration, but unchanged markings do not exclude internal displacement and cannot independently prove initial or continued safe position. For repeat use, follow the unit's approved risk-based confirmation pathway. If displacement or aspiration is suspected, or position is uncertain, withhold feed, water and medication until placement is confirmed by an approved method.",
      "support": "partial",
      "sources": [
       "S-NICE-CG32"
@@ -235,7 +235,8 @@
  "gaps": [
   "Energy and protein targets, parenteral nutrition, refeeding, medicine administration via tubes: not covered.",
   "Non-UK placement verification methods (ultrasound, electromagnetic): not read.",
-  "ASPEN and ESPEN guidelines: not accessed."
+  "ASPEN and ESPEN guidelines: not accessed.",
+  "2026 adult guideline review reports country-specific pH and initial imaging approaches; the UK NICE pH cutoff should not be generalized as an international standard. No local competency sign-off or X-ray reading protocol has been provided."
  ],
  "permissions": [
   "NICE content: Open Government-style terms vary; verify.",
