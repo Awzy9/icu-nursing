@@ -1170,5 +1170,18 @@
       "invalid": "That question isn't valid."
     },
     "demoNotice": "Demonstration mode: this searches only the sample content visitors can see; usage limits apply across this demo deployment as a whole, not per visitor."
+  },
+  "Support": {
+    "title": "Support",
+    "intro": "Questions, problems or feedback about Nursing Mastery? We read every message.",
+    "emailTitle": "Email us",
+    "emailBody": "Write to {email}. Please include which device you use, the app version if you know it, and what happened. Do not include patient information.",
+    "responseTitle": "What to expect",
+    "responseBody": "We aim to reply within a few working days.",
+    "helpTitle": "Common requests",
+    "helpPrivacy": "How we handle your data",
+    "helpDeletion": "Delete your account and data",
+    "helpTerms": "Terms of use",
+    "educationNote": "Nursing Mastery is for education only. For clinical questions, follow your local policies and ask a qualified clinician."
   }
 }
