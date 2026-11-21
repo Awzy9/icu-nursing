@@ -10,6 +10,16 @@ import { loadCaseFixtures } from "@/lib/cases/fixtures";
 const mem = (): KeyValueStore & { data: Map<string, string> } => { const data = new Map<string, string>(); return { data, get: async (k) => data.get(k) ?? null, set: async (k, v) => void data.set(k, v), remove: async (k) => void data.delete(k) }; };
 
 describe("language: English and Arabic with RTL", () => {
+  it("describes factual educational drafts and fictional practice accurately without claiming clinical approval", () => {
+    expect(messages.en["app.sampleBanner"]).toContain("educational drafts");
+    expect(messages.en["app.sampleBanner"]).toContain("practice cases and simulated values are fictional");
+    expect(messages.en["app.sampleBanner"]).toContain("not use this app as patient-care guidance");
+    expect(messages.en["app.noticeShort"]).toContain("Clinical review pending");
+    expect(messages.ar["app.sampleBanner"]).toContain("المراجعة السريرية جارية");
+    expect(messages.ar["app.sampleBanner"]).toContain("افتراضية");
+    expect(messages.ar["app.noticeShort"]).toContain("قيد المراجعة السريرية");
+    expect(messages.en["app.sampleBanner"]).not.toContain("all content is synthetic");
+  });
   it("has exactly the same message keys in both languages, all non-empty, and consistent placeholders", () => {
     const en = Object.keys(messages.en).sort(), ar = Object.keys(messages.ar).sort();
     expect(ar).toEqual(en);
