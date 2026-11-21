@@ -2531,6 +2531,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISMP-HAM-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2539,7 +2544,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "02fa08be18556122"
+   "hash": "bcde2fefa79936b8"
   },
   {
    "key": "MD-08",
@@ -2566,6 +2571,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISMP-HAM-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2574,7 +2584,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "3199b22c39ca8472"
+   "hash": "77e29010faa50604"
   },
   {
    "key": "MD-09",
@@ -2706,6 +2716,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISMP-HAM-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2714,7 +2729,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "343aeb813bd96bdb"
+   "hash": "791d2781c0f44796"
   },
   {
    "key": "MD-13",
@@ -2741,6 +2756,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISMP-HAM-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2749,7 +2769,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "b73b9c7bd46848d4"
+   "hash": "e05fa2b8edb5d37c"
   },
   {
    "key": "MD-14",
@@ -3821,6 +3841,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISMP-HAM-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3829,7 +3854,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "02b4c6e1ee8a5220"
+   "hash": "5f52c4cc8e4e6d33"
   },
   {
    "key": "MD-44",
