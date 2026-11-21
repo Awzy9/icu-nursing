@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Pressable, Text, View } from "react-native";
 import { useRouter, type Href } from "expo-router";
 import { NavGroup, SearchBar, SectionLabel, Screen } from "../../src/ui/components";
@@ -5,6 +6,7 @@ import { Icon, IconTile, type IconName } from "../../src/ui/icons";
 import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
 import { ROUTE_FOR_TYPE } from "../../src/core/search";
+import { shouldAutoStartOnboarding } from "../../src/core/onboarding";
 import { radii, space, type, type AccentKey } from "../../src/ui/theme";
 
 function Destination({ href, title, subtitle, icon, accent }: {
@@ -27,8 +29,11 @@ function Destination({ href, title, subtitle, icon, accent }: {
 }
 
 export default function LearningHub() {
-  const { t, progress, rtl: ar, palette } = useApp();
+  const { t, progress, rtl: ar, palette, ready, onboardingSeen } = useApp();
   const router = useRouter();
+  useEffect(() => {
+    if (shouldAutoStartOnboarding(ready, onboardingSeen, progress)) router.replace("/onboarding");
+  }, [ready, onboardingSeen, progress, router]);
   const catalog = useCatalogList();
   const lastKey = progress.viewed[progress.viewed.length - 1];
   const last = catalog.status === "ready" && lastKey ? catalog.data.find((item) => item.key === lastKey) : undefined;
@@ -86,6 +91,7 @@ export default function LearningHub() {
 
       <SectionLabel>{label("Keep learning", "واصل التعلم")}</SectionLabel>
       <NavGroup items={[
+        { href: "/onboarding", title: ar ? "جولة سريعة في التطبيق" : "New here? Take the app tour", body: ar ? "تعرّف على الأقسام في خطوات قصيرة" : "Find Learn, Practice, Tools and Visuals in a few steps", icon: "help", accent: "study" },
         { href: "/paths", title: t("paths.title"), body: t("paths.intro"), icon: "route", accent: "study" },
         { href: "/study", title: t("study.title"), body: t("study.intro"), icon: "repeat", accent: "skills" },
         { href: "/bookmarks", title: t("hub.bookmarks"), body: label("Saved lessons and activities", "الدروس والأنشطة المحفوظة"), icon: "bookmark", accent: "study" },
