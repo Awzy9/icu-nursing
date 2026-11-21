@@ -59,7 +59,7 @@ export function useProgressSync() {
  * their own catalog fetch just to render a bookmark button.
  */
 export function useProgressPullOnSignIn() {
-  const { update } = useApp();
+  const { update, ready } = useApp();
   const { rpc, email } = useAuth();
   const signedIn = !!(rpc && email);
   const catalog = useCatalogList();
