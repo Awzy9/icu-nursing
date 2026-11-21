@@ -2362,6 +2362,18 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "e25b6ab681b3cf89",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-23": [
