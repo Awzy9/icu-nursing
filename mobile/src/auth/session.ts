@@ -15,10 +15,10 @@ export function mapSignInError(e: { code?: string; message?: string; status?: nu
 const EMAIL = /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/;
 
 export interface SessionManager {
-  signIn(email: string, password: string, captchaToken: string): Promise<{ ok: true } | { ok: false; error: SignInError | "input" }>;
-  signUp(input: { email: string; password: string; displayName: string; locale: "en" | "ar"; captchaToken: string; redirectTo: string }): Promise<{ ok: true; confirmationRequired: boolean } | { ok: false; error: SignInError | "input" }>;
+  signIn(email: string, password: string, captchaToken?: string): Promise<{ ok: true } | { ok: false; error: SignInError | "input" }>;
+  signUp(input: { email: string; password: string; displayName: string; locale: "en" | "ar"; captchaToken?: string; redirectTo: string }): Promise<{ ok: true; confirmationRequired: boolean } | { ok: false; error: SignInError | "input" }>;
   updatePassword(password: string): Promise<{ ok: true } | { ok: false; error: SignInError | "input" }>;
-  requestPasswordReset(email: string, captchaToken: string, redirectTo: string): Promise<{ ok: boolean }>;
+  requestPasswordReset(email: string, captchaToken: string | undefined, redirectTo: string): Promise<{ ok: boolean }>;
   exchangeCallback(code: string): Promise<{ ok: boolean }>;
   current(): Promise<Session | null>;
   /** Call when the app returns to the foreground; refreshes a session that is close to expiry. */
@@ -28,25 +28,26 @@ export interface SessionManager {
   deleteAccount(email: string): Promise<{ ok: true } | { ok: false; error: DeletionError }>;
 }
 
-export function createSessionManager(client: SupabaseClient, opts: { now?: () => number; refreshMarginSeconds?: number } = {}): SessionManager {
+export function createSessionManager(client: SupabaseClient, opts: { now?: () => number; refreshMarginSeconds?: number; captchaRequired?: boolean } = {}): SessionManager {
   const now = opts.now ?? (() => Math.floor(Date.now() / 1000));
   const margin = opts.refreshMarginSeconds ?? 120;
+  const captchaRequired = opts.captchaRequired ?? true;
   const claimsOf = (s: Session | null): { amr?: unknown } | null => { if (!s) return null; try { const b = s.access_token.split(".")[1]!.replace(/-/g, "+").replace(/_/g, "/"); return JSON.parse(globalThis.atob(b)) as { amr?: unknown }; } catch { return null; } };
   async function wipeLocal() { await client.auth.signOut({ scope: "local" }).catch(() => undefined); }
   return {
     async signIn(email, password, captchaToken) {
-      if (!EMAIL.test(email.trim()) || password.length < 1 || password.length > 256 || !captchaToken) return { ok: false, error: "input" };
-      const { error } = await client.auth.signInWithPassword({ email: email.trim(), password, options: { captchaToken } });
+      if (!EMAIL.test(email.trim()) || password.length < 1 || password.length > 256 || (captchaRequired && !captchaToken)) return { ok: false, error: "input" };
+      const { error } = await client.auth.signInWithPassword({ email: email.trim(), password, ...(captchaToken ? { options: { captchaToken } } : {}) });
       return error ? { ok: false, error: mapSignInError(error) } : { ok: true };
     },
     async signUp(input) {
       const { email, password, displayName, locale, captchaToken, redirectTo } = input;
-      if (!EMAIL.test(email.trim()) || password.length < 12 || password.length > 128 || !displayName.trim() || displayName.trim().length > 80 || !captchaToken || !redirectTo.startsWith("nursingmastery://auth/callback")) return { ok: false, error: "input" };
+      if (!EMAIL.test(email.trim()) || password.length < 12 || password.length > 128 || !displayName.trim() || displayName.trim().length > 80 || (captchaRequired && !captchaToken) || !redirectTo.startsWith("nursingmastery://auth/callback")) return { ok: false, error: "input" };
       const { data, error } = await client.auth.signUp({
         email: email.trim(),
         password,
         options: {
-          captchaToken,
+          ...(captchaToken ? { captchaToken } : {}),
           emailRedirectTo: redirectTo,
           data: { display_name: displayName.trim(), preferred_locale: locale },
         },
@@ -60,8 +61,8 @@ export function createSessionManager(client: SupabaseClient, opts: { now?: () =>
       return error ? { ok: false, error: mapSignInError(error) } : { ok: true };
     },
     async requestPasswordReset(email, captchaToken, redirectTo) {
-      if (!EMAIL.test(email.trim()) || !captchaToken) return { ok: false };
-      const { error } = await client.auth.resetPasswordForEmail(email.trim(), { captchaToken, redirectTo });
+      if (!EMAIL.test(email.trim()) || (captchaRequired && !captchaToken)) return { ok: false };
+      const { error } = await client.auth.resetPasswordForEmail(email.trim(), { ...(captchaToken ? { captchaToken } : {}), redirectTo });
       return { ok: !error }; // the result never reveals whether the address exists
     },
     async exchangeCallback(code) { const { error } = await client.auth.exchangeCodeForSession(code); return { ok: !error }; },

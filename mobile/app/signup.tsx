@@ -2,6 +2,7 @@ import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import { Linking, TextInput, View } from "react-native";
 import { CaptchaView } from "../src/auth/CaptchaView";
+import { CAPTCHA_REQUIRED } from "../src/auth/config";
 import { useAuth } from "../src/auth/provider";
 import { useApp } from "../src/state/app";
 import { Button, Callout, H1, P, Screen } from "../src/ui/components";
@@ -27,11 +28,11 @@ export default function SignUp() {
   async function submit() {
     if (!manager || !config || busy) return;
     setError(null);
-    if (!displayName.trim() || !email.includes("@") || password.length < 12 || password.length > 128 || !token) { setError(t("auth.err.input")); return; }
+    if (!displayName.trim() || !email.includes("@") || password.length < 12 || password.length > 128 || (CAPTCHA_REQUIRED && !token)) { setError(t("auth.err.input")); return; }
     if (password !== confirmPassword) { setError(t("auth.passwordMismatch")); return; }
     setBusy(true);
     try {
-      const response = await manager.signUp({ displayName, email, password, locale, captchaToken: token, redirectTo: "nursingmastery://auth/callback" });
+      const response = await manager.signUp({ displayName, email, password, locale, captchaToken: token ?? undefined, redirectTo: "nursingmastery://auth/callback" });
       if (response.ok) {
         setPassword(""); setConfirmPassword(""); setConfirmationRequired(response.confirmationRequired);
         setCreated(true);
@@ -75,10 +76,10 @@ export default function SignUp() {
         <P muted small>{t("auth.passwordRules")}</P>
         <P>{t("auth.confirmPassword")}</P>
         <TextInput accessibilityLabel={t("auth.confirmPassword")} value={confirmPassword} onChangeText={setConfirmPassword} autoCapitalize="none" autoComplete="new-password" textContentType="newPassword" secureTextEntry style={input} />
-        <P muted small>{token ? "✓ " + t("auth.captcha") : t("auth.captchaWait")}</P>
-        <CaptchaView key={captchaKey} siteOrigin={config.siteOrigin} locale={locale} onToken={setToken} onError={() => setError(t("auth.captchaFail"))} />
+        {CAPTCHA_REQUIRED ? <P muted small>{token ? "✓ " + t("auth.captcha") : t("auth.captchaWait")}</P> : null}
+        {CAPTCHA_REQUIRED ? <CaptchaView key={captchaKey} siteOrigin={config.siteOrigin} locale={locale} onToken={setToken} onError={() => setError(t("auth.captchaFail"))} /> : null}
         {error ? <Callout tone="warn">{error}</Callout> : null}
-        <Button label={t("auth.signUp")} disabled={busy || !token} onPress={() => void submit()} />
+        <Button label={t("auth.signUp")} disabled={busy || (CAPTCHA_REQUIRED && !token)} onPress={() => void submit()} />
         <Button label={t("auth.alreadyAccount")} variant="outline" onPress={() => router.replace("/signin")} />
         <Button label={t("auth.guest")} variant="outline" onPress={() => router.replace("/(tabs)/home")} />
       </View>

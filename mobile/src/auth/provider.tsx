@@ -6,7 +6,7 @@ import { AppState } from "react-native";
 import { createRpc, type Rpc } from "../api/rpc";
 import { createAppClient } from "./client";
 import { createChunkedStorage } from "./chunkedStorage";
-import { readAuthConfig, type AuthConfig } from "./config";
+import { CAPTCHA_REQUIRED, readAuthConfig, type AuthConfig } from "./config";
 import { parseAuthCallback } from "./deepLinks";
 import { createSessionManager, type SessionManager } from "./session";
 
@@ -28,7 +28,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const built = useMemo(() => {
     if (!config) return null;
     const client = createAppClient(config, createChunkedStorage(secure));
-    return { client, manager: createSessionManager(client), rpc: createRpc(client) };
+    return { client, manager: createSessionManager(client, { captchaRequired: CAPTCHA_REQUIRED }), rpc: createRpc(client) };
   }, [config]);
   const [email, setEmail] = useState<string | null>(null);
   const [userId, setUserId] = useState<string | null>(null);

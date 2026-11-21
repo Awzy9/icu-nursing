@@ -9,6 +9,8 @@ const schema = z.object({
   anonKey: z.string().min(20).refine((k) => !FORBIDDEN.test(k) && !(() => { try { return JSON.parse(atob(k.split(".")[1] ?? "")).role === FORBIDDEN_ROLE; } catch { return false; } })(), "the service-role key must never be used in the app"),
   siteUrl: z.url().refine((u) => /^https:\/\//.test(u) || /^http:\/\/(127\.0\.0\.1|localhost|10\.0\.2\.2)(:\d+)?$/.test(u), "site URL must be https (or local)"),
 });
+/** Whether sign-in, sign-up and password reset ask for a Cloudflare Turnstile token. Must match the Supabase project's Auth > Attack Protection > CAPTCHA setting: with CAPTCHA off there, requests that carry no token are accepted; with it on, they are rejected. */
+export const CAPTCHA_REQUIRED = false;
 export type AuthConfig = z.infer<typeof schema> & { siteOrigin: string };
 
 /** Returns null only when missing public Supabase project configuration. The content catalog remains available separately. */
