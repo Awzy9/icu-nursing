@@ -1,5 +1,6 @@
 import { useEcgExercises } from "../../src/hooks/useRemoteContent";
 import { useApp } from "../../src/state/app";
+import { practiceHeading } from "../../src/core/quiz-presentation";
 import { H1, NavCard, P, RemoteGate, Screen } from "../../src/ui/components";
 
 export default function EcgList() {
@@ -13,7 +14,7 @@ export default function EcgList() {
       <RemoteGate state={exercises} onRetry={exercises.refresh}>
         {(data) => (
           <>
-            {data.map((e) => <NavCard key={e.key} href={`/ecg/${e.key}`} title={e.title[ar ? 1 : 0]} body={e.objective[ar ? 1 : 0]} />)}
+            {data.map((e) => <NavCard key={e.key} href={`/ecg/${e.key}`} title={practiceHeading("ecg", e.key, ar)} body={ar ? "فسّر شريط النظم قبل إظهار التشخيص." : "Interpret the rhythm strip before revealing the diagnosis."} />)}
           </>
         )}
       </RemoteGate>

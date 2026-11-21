@@ -10,6 +10,7 @@ export default function InfusionList() {
     <Screen>
       <H1>{t("infusion.title")}</H1>
       <P muted>{t("infusion.intro")}</P>
+      <NavCard href="/infusion-calculator" title="Infusion pump calculator" body="Calculate mL/h, duration and dose rates (practice only)" icon="pill" accent="medications" />
       <RemoteGate state={cases} onRetry={cases.refresh}>
         {(data) => (
           <>

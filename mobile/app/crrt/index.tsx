@@ -2,6 +2,7 @@ import { useState } from "react";
 import { View } from "react-native";
 import { useCrrtData } from "../../src/hooks/useRemoteContent";
 import { useApp } from "../../src/state/app";
+import { CrrtCircuitDiagram } from "../../src/ui/crrt-circuit-diagram";
 import { Button, Card, H1, H2, NavCard, P, RemoteGate, Screen } from "../../src/ui/components";
 
 // Mirrors src/app/[locale]/crrt/page.tsx: a tap-through circuit explorer (CrrtExplorer) plus a
@@ -22,6 +23,7 @@ export default function CrrtLab() {
           return (
             <>
               <H2>{t("crrt.componentsTitle")}</H2>
+              <CrrtCircuitDiagram active={activeKey} />
               <Card>
                 <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                   {data.components.map((c) => (

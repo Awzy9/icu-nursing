@@ -5,6 +5,7 @@ import { ROUTE_FOR_TYPE } from "../../src/core/search";
 import { useCatalogList, useEcgExercises } from "../../src/hooks/useRemoteContent";
 import { useProgressSync } from "../../src/hooks/useProgressSync";
 import { useApp } from "../../src/state/app";
+import { observationSummary, practiceHeading } from "../../src/core/quiz-presentation";
 import { Button, Callout, Card, H1, H2, NavCard, P, RemoteGate, Screen } from "../../src/ui/components";
 import { WaveformChart } from "../../src/ui/waveform-chart";
 
@@ -27,6 +28,8 @@ export default function EcgExerciseScreen() {
           const exercise = data.find((e) => e.key === key);
           if (!exercise) return <P>{t("common.notFound")}</P>;
           const q = exercise.question;
+          const heading = checked ? exercise.title[ar ? 1 : 0] : practiceHeading("ecg", exercise.key, ar);
+          const observations = observationSummary(exercise.accessibleDescription);
           const lessonKey = exercise.lessonHref.split("/").pop() ?? "";
           const typeByKey = catalog.status === "ready" ? new Map(catalog.data.map((c) => [c.key, c.type])) : new Map<string, string>();
           const lessonRoute = ROUTE_FOR_TYPE[typeByKey.get(lessonKey) ?? ""];
@@ -39,14 +42,14 @@ export default function EcgExerciseScreen() {
 
           return (
             <>
-              <Stack.Screen options={{ title: exercise.title[ar ? 1 : 0] }} />
-              <H1>{exercise.title[ar ? 1 : 0]}</H1>
-              <P muted>{exercise.objective[ar ? 1 : 0]}</P>
+              <Stack.Screen options={{ title: heading }} />
+              <H1>{heading}</H1>
+              <P muted>{checked ? exercise.objective[ar ? 1 : 0] : (ar ? "اقرأ الموجة وحدّد النمط قبل إظهار التشخيص." : "Interpret the trace before the diagnosis is revealed.")}</P>
 
-              <Card><WaveformChart trace={exercise.trace} /></Card>
+              <Card><WaveformChart trace={exercise.trace} description={observations.join(" ")} /></Card>
 
               <H2>{t("ecg.descriptionTitle")}</H2>
-              <View style={{ gap: 4 }}>{exercise.accessibleDescription.map((line, i) => <P key={i} small>{`• ${line}`}</P>)}</View>
+              <View style={{ gap: 4 }}>{(checked ? exercise.accessibleDescription : observations).map((line, i) => <P key={i} small>{`• ${line}`}</P>)}</View>
 
               <H2>{q.prompt}</H2>
               {q.options.map((option, i) => {

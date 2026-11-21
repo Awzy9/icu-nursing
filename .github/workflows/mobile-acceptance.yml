@@ -1,0 +1,47 @@
+name: Mobile acceptance
+on:
+  pull_request:
+    paths:
+      - "mobile/**"
+      - "tests/mobile/**"
+      - "content/working-ecg.json"
+      - "content/working-waveforms.json"
+      - "public/images/equipment/**"
+      - ".github/workflows/mobile-acceptance.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mobile-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install shared workspace dependencies
+        run: npm ci
+      - name: Install Expo mobile dependencies
+        run: npm run mobile:install
+      - name: Mobile unit, source safety, accessibility, image license and waveform tests
+        run: npx vitest run tests/mobile --reporter=dot
+      - name: Mobile TypeScript
+        run: npm run typecheck:mobile
+      - name: Export iOS JavaScript bundle
+        run: cd mobile && npx expo export --platform ios --output-dir dist-ios
+      - name: Export Android JavaScript bundle
+        run: npm run export:android --prefix mobile -- --output-dir dist
+      - name: Verify bundle excludes secrets and internal draft records
+        run: |
+          npx tsx scripts/check-mobile-bundle.ts mobile/dist-ios
+          npx tsx scripts/check-mobile-bundle.ts mobile/dist
+      - name: Report acceptance scope
+        run: |
+          echo "Native app source checks and iOS/Android JavaScript exports complete."
+          echo "Real iPhone TestFlight visual tests, camera/VoiceOver interaction,"
+          echo "network-disconnected image behavior and account sync across devices"
+          echo "remain manual release gates; this workflow does not claim those passed."
