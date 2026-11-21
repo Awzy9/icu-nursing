@@ -63,13 +63,14 @@ export function useProgressPullOnSignIn() {
   const { rpc, email } = useAuth();
   const signedIn = !!(rpc && email);
   const catalog = useCatalogList();
+  const catalogEntries = catalog.status === "ready" ? catalog.data : null;
   const lastSyncedEmail = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!ready || !signedIn || !rpc || email === lastSyncedEmail.current || catalog.status !== "ready") return;
+    if (!ready || !signedIn || !rpc || email === lastSyncedEmail.current || !catalogEntries) return;
     let cancelled = false;
     (async () => {
-      const kindOf = new Map<string, BookmarkKind>(catalog.data.map((e) => [e.key, e.type as BookmarkKind]));
+      const kindOf = new Map<string, BookmarkKind>(catalogEntries.map((e) => [e.key, e.type as BookmarkKind]));
       const [bookmarks, sessions, lessons, attempts] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => []), rpc.listWorkingLessons().catch(() => []), rpc.listWorkingAttempts().catch(() => [])]);
       if (!cancelled) {
         lastSyncedEmail.current = email;
@@ -77,6 +78,6 @@ export function useProgressPullOnSignIn() {
       }
     })().catch(() => undefined);
     return () => { cancelled = true; };
-  }, [ready, signedIn, rpc, email, catalog, update]);
+  }, [ready, signedIn, rpc, email, catalogEntries, update]);
   useEffect(() => { if (!signedIn) lastSyncedEmail.current = null; }, [signedIn]);
 }
