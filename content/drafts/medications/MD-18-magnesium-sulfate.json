@@ -12,9 +12,9 @@
  "category": "insulin-electrolytes-fluids",
  "high_alert": true,
  "high_alert_note": "ISMP's 2024 acute-care list explicitly identifies injectable magnesium sulfate as a high-alert medication. This is a medication-safety classification, not a product-specific dosage or administration protocol; local policy controls safeguards. Source classification independently checked; ISMP copyrighted material is cited in the separate evidence audit, not incorporated as a source of medication instructions.",
- "summary": "Parenteral magnesium used for replacement in magnesium deficiency, especially acute hypomagnesaemia with tetany, and for other labelled indications. Nursing focus: monitoring for magnesium toxicity, renal impairment and fetal harm with prolonged use in pregnancy.",
+ "summary": "Parenteral magnesium for indicated magnesium deficiency and other formulation-specific indications. Nursing focus: monitor for respiratory and neuromuscular depression, low blood pressure, impaired renal clearance, interaction-related weakness, cardiac-conduction concerns and formulation errors.",
  "batch": 2,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Targeted 2026-11-21 re-read of the already-registered US Hospira DailyMed label focused on contraindications, drug interactions, adverse effects and symptoms of overdose. This is not a replacement for site-specific bedside procedures.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",
@@ -52,6 +52,13 @@
      "sources": [
       "L-MAGNESIUM"
      ]
+    },
+    {
+     "text": "The same Hospira product label also discusses obstetric convulsion indications, but this medication learning record does not provide obstetric treatment pathways or drug dosing.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
     }
    ]
   },
@@ -60,6 +67,20 @@
    "items": [
     {
      "text": "Watch for the signs of magnesium intoxication, and give particular attention when renal function is impaired.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Check the dispensed magnesium formulation, prescribed route and pharmacy preparation instructions before starting administration. Concentrated products and premixed bags are not interchangeable as ready-to-use preparations; the specific Hospira concentrated syringe label requires preparation before intravenous administration. Never improvise dilution or administration from this draft.",
+     "support": "partial",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Review concurrent neuromuscular blockers, sedatives, opioids and anesthetics with the treating team; the magnesium label warns of enhanced neuromuscular blockade and additive CNS/respiratory depression. Follow local monitoring and reporting requirements; do not independently modify doses.",
      "support": "sourced",
      "sources": [
       "L-MAGNESIUM"
@@ -77,6 +98,20 @@
     },
     {
      "text": "The label states that monitoring serum magnesium levels and the clinical state of the patient is essential.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Assess tendon reflexes, respiratory effort and rate, oxygenation, consciousness, blood pressure and heart rhythm as appropriate to the patient's critical illness and prescribed magnesium therapy; a newly absent patellar reflex, respiratory weakness or collapse may herald severe toxicity, especially with reduced renal function.",
+     "support": "partial",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Check renal function, urine-output trends and ordered serum magnesium concentration; magnesium is primarily cleared by the kidneys and reduced clearance raises the risk of accumulation. The specific frequency and protocol are determined by the clinical team.",
      "support": "sourced",
      "sources": [
       "L-MAGNESIUM"
@@ -100,6 +135,27 @@
      "sources": [
       "L-MAGNESIUM"
      ]
+    },
+    {
+     "text": "The specific Hospira US magnesium sulfate injection label lists heart block or myocardial damage as contraindications. Identify conduction disease or cardiac concerns and obtain prescriber/pharmacy confirmation of patient-specific suitability before administration; other indications and formulations may have different labels.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Concurrent neuromuscular-blocking drugs can produce excessive neuromuscular blockade, and sedatives, opioids, barbiturates or anesthetic agents can increase CNS depression. The label also urges special caution with cardiac glycosides because magnesium-toxicity treatment involving calcium may affect cardiac conduction.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "The registered source is a concentrated Hospira syringe, not a ready-to-use premixed infusion. Its package labeling requires dilution before IV administration; this draft does not give preparation or administration instructions. Confirm product and pharmacy directions to prevent a dangerous formulation mix-up.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
     }
    ]
   },
@@ -107,7 +163,28 @@
    "support": "partial",
    "items": [
     {
-     "text": "Adverse effects of parenteral magnesium usually result from magnesium intoxication: flushing, sweating, hypotension, depressed reflexes, flaccid paralysis, hypothermia and circulatory collapse.",
+     "text": "Magnesium excess can present with flushing, sweating, hypotension, weakness and diminishing or absent deep-tendon reflexes, progressing to severe neuromuscular depression or flaccid paralysis.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Serious magnesium toxicity may cause CNS depression, marked hypotension/circulatory collapse, cardiac-conduction disturbance and respiratory weakness progressing to respiratory paralysis; unexpected deterioration requires emergency assessment.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "The product label reports hypocalcemia with tetany in some obstetric magnesium treatment settings; prolonged maternal exposure may also cause fetal bone abnormalities and neonatal magnesium toxicity. These risks require indication-specific review, not a general ICU electrolyte replacement algorithm.",
+     "support": "sourced",
+     "sources": [
+      "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "The specific concentrated product label warns of aluminum accumulation with prolonged parenteral administration in impaired kidney function, particularly in premature neonates. This issue is product-specific and does not establish identical excipient risks for every magnesium preparation.",
      "support": "sourced",
      "sources": [
       "L-MAGNESIUM"
@@ -119,7 +196,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Escalate immediately for loss of reflexes, slowed or weak breathing, falling blood pressure or any cardiac change.",
+     "text": "Immediately notify the treating team about absent or markedly decreased tendon reflexes, respiratory depression, unexpectedly low blood pressure, new cardiac conduction abnormalities, or suspected magnesium/product administration error. For severe breathing or circulatory compromise activate the local emergency response and follow the institutional magnesium-toxicity protocol; clinician-directed airway support and rescue-treatment decisions are required.",
      "support": "partial",
      "sources": [
       "L-MAGNESIUM"
@@ -208,12 +285,51 @@
    "critical": false,
    "support": "local_protocol",
    "sources": []
+  },
+  {
+   "kind": "assess",
+   "text": "Recognize a new decrease or loss of deep-tendon reflexes, weakness, altered consciousness or decreasing respiratory effort as potential early signs of magnesium toxicity; report urgently.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Check for new hypotension, conduction abnormalities or clinical deterioration during concurrent magnesium and other drugs affecting neuromuscular function or CNS depression.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Verify whether the supplied product is a concentrated syringe requiring pharmacy-approved preparation or a ready-to-use bag; do not use instructions from one formulation for the other.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
+  },
+  {
+   "kind": "escalate",
+   "text": "Activate local emergency response for severely depressed breathing or circulation in suspected magnesium toxicity; immediately inform the clinician of the drug, product, clinical changes and available serum/renal results.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-MAGNESIUM"
+   ]
   }
  ],
  "gaps": [
-  "Dosing, strengths, preparation and pre-eclampsia regimens: deliberately not included.",
-  "The label read is the replacement-therapy product; labels for other indications differ.",
-  "Electrolyte replacement protocol text was not read for this entry."
+  "Exact dosing, concentration, dilution, infusion rates, drug compatibility and obstetric regimens are deliberately excluded; only validated hospital/pharmacy procedures and the dispensed product's current labeling govern.",
+  "Neonatal and obstetric use, and magnesium treatment for rhythm disorders, require specialist protocols not reviewed here.",
+  "Different magnesium sulfate formulations, excipients and manufacturers may differ; this record cites one US Hospira product only.",
+  "Therapy in severe kidney dysfunction and extracorporeal therapies (CRRT) requires individual renal/pharmacy review; no dose adjustment is taught.",
+  "Prescriber-specific toxicity-management decisions (including respiratory support, intravenous calcium rescue and treatment interruption) are not a nursing standing order in this draft.",
+  "EMA, MHRA and SFDA labels, local high-alert handling, controlled pharmacy prep and current international magnesium practice guidelines have not been reviewed."
  ],
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
@@ -225,6 +341,6 @@
   "label_version": "22",
   "effective_time": "20260423",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ. Re-read the exact registered Hospira DailyMed set ID on 2026-11-21 for warnings, product-specific contraindications, neuromuscular/CNS depressant interactions and overdose signs; no independent newer openFDA version comparison made."
  }
 }
