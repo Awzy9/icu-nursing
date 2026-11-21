@@ -4292,6 +4292,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "644cf89e9f19f7a0",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LABETALOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-34": [
@@ -4337,6 +4351,20 @@
    {
     "hash": "8e8a31108af1ac94",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ESMOLOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "dd12905bf67a848d",
+    "recorded": "2026-11-21",
     "evidence_status": "partial",
     "sources": [
      "L-ESMOLOL",
@@ -4504,6 +4532,20 @@
    {
     "hash": "25163bd7b48e8776",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "8e07b5759626728d",
+    "recorded": "2026-11-21",
     "evidence_status": "partial",
     "sources": [
      "L-LORAZEPAM",
