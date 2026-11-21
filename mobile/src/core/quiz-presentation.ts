@@ -18,5 +18,5 @@ export function practiceHeading(kind: InterpretationKind, key: string, arabic: b
  * the diagnostic answer or clinical explanation, so the rest is only shown after checking.
  */
 export function observationSummary(lines: string[]): string[] {
-  return lines.map((line) => line.split(/(?<=[.!?])\s+/)[0]?.trim() ?? "").filter(Boolean);
+  return lines.map((line) => line.split(/[.!?]\s+/)[0]?.trim() ?? "").filter(Boolean);
 }
