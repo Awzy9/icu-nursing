@@ -11,15 +11,15 @@ type Reading = readonly (readonly [string, string, string])[];
 
 function ReadableDisplay({ title, readings }: { title: string; readings: Reading }) {
   return (
-    <Card style={{ backgroundColor: "#0f172a" }}>
+    <Card>
       <P small>{title}</P>
       <P small muted>Simulated display. Values are fictional examples for reading practice.</P>
       {readings.map(([label, value, detail]) => (
-        <View key={label} style={{ padding: space.md, backgroundColor: "#1e293b", borderRadius: 10, gap: space.xs }}>
+        <Card key={label}>
           <P>{label}</P>
           <P>{value}</P>
           <P small muted>{detail}</P>
-        </View>
+        </Card>
       ))}
     </Card>
   );
