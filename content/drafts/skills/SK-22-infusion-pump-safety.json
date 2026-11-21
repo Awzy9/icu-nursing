@@ -205,7 +205,7 @@
     },
     {
       "phase": "escalation",
-      "text": "Assess the patient immediately for a pump discrepancy or unexplained alarm; verify the order and pump, escalate promptly and follow the unit's contingency plan to maintain or safely transition essential infusions. Do not automatically stop a life-sustaining medication without a clinician-directed safety plan.",
+      "text": "For an unexplained pump alarm or programming discrepancy, immediately assess the patient, check the order and the pump, and urgently escalate using the unit's pump-failure protocol. Do not ignore possible over-infusion or reflexively interrupt an essential infusion; safely stop, continue or transfer delivery as the patient's condition and the local emergency plan require.",
       "critical": true,
       "support": "partial",
       "sources": [
