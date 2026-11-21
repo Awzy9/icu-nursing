@@ -2926,6 +2926,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISMP-HAM-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2934,7 +2939,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "66971eee19f59cac"
+   "hash": "dfeae87264386568"
   },
   {
    "key": "MD-19",
@@ -2956,9 +2961,24 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-DAILYMED-KCL-CONC-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ISMP-HAM-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
+     "id": "S-NSW-IVK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
     },
     {
      "id": "S-RCP-NEWS2",
@@ -2969,7 +2989,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ce33a13974d29510"
+   "hash": "d1c6a3ec4e42d03a"
   },
   {
    "key": "MD-20",
