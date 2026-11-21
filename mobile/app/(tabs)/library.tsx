@@ -2,11 +2,13 @@ import { useState } from "react";
 import { useLocalSearchParams } from "expo-router";
 import { ScrollView, View } from "react-native";
 import { Chip, NavGroup, RemoteGate, Screen } from "../../src/ui/components";
-import { space } from "../../src/ui/theme";
+import { accentForType, space } from "../../src/ui/theme";
+import type { IconName } from "../../src/ui/icons";
 import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
 
 const TYPES = ["topics", "skills", "medications", "equipment", "cases"] as const;
+const ICON: Record<string, IconName> = { topics: "book", skills: "checklist", medications: "pill", equipment: "pulse", cases: "heart" };
 const ROUTE: Record<string, string> = { topics: "/topics/", skills: "/skills/", medications: "/medications/", equipment: "/equipment/", cases: "/cases/" };
 
 export default function Library() {
@@ -23,7 +25,7 @@ export default function Library() {
         </View>
       </ScrollView>
       <RemoteGate state={list} onRetry={list.refresh} empty={(items) => items.length === 0}>
-        {(items) => <NavGroup items={items.map((entry) => ({ href: `${ROUTE[type]}${entry.key}`, title: entry.title, body: entry.category }))} />}
+        {(items) => <NavGroup items={items.map((entry) => ({ href: `${ROUTE[type]}${entry.key}`, title: entry.title, body: entry.category, icon: ICON[type], accent: accentForType(type) }))} />}
       </RemoteGate>
     </Screen>
   );

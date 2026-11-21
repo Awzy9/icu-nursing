@@ -3,14 +3,15 @@ import { StatusBar } from "expo-status-bar";
 import { AuthProvider } from "../src/auth/provider";
 import { useProgressPullOnSignIn } from "../src/hooks/useProgressSync";
 import { AppProvider, useApp } from "../src/state/app";
+import { dark } from "../src/ui/theme";
 
 function Shell() {
   const { palette, t, themeMode } = useApp();
   useProgressPullOnSignIn();
   return (
     <>
-      <StatusBar style={palette.bg === "#ffffff" ? "dark" : "light"} key={themeMode + palette.bg} />
-      <Stack screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerTintColor: palette.text, contentStyle: { backgroundColor: palette.bg }, headerBackTitle: t("common.back") }}>
+      <StatusBar style={palette.bg === dark.bg ? "light" : "dark"} key={themeMode + palette.bg} />
+      <Stack screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerShadowVisible: false, headerTitleStyle: { fontWeight: "700", color: palette.text }, headerTintColor: palette.text, contentStyle: { backgroundColor: palette.bg }, headerBackTitle: t("common.back") }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="signin" options={{ title: t("auth.signIn") }} />
         <Stack.Screen name="delete-account" options={{ title: t("del.title") }} />
