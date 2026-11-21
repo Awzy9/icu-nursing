@@ -2,9 +2,9 @@ import type { WaveformTrace } from "./waveform";
 export type WaveformPoint = { x: number; y: number };
 
 /** Compute native on-screen waveform geometry without relying on an SVG renderer. */
-export function plotWaveform(trace: WaveformTrace, width: number, height = 152, pad = 7): { points: WaveformPoint[]; zero: number | null } {
+export function plotWaveform(trace: WaveformTrace, width: number, height = 152, pad = 7, timeAxisEnd?: number): { points: WaveformPoint[]; zero: number | null } {
   if (!Number.isFinite(width) || width < pad * 2 + 1) return { points: [], zero: null };
-  const maxTime = Math.max(1, ...trace.points.map(([time]) => time));
+  const maxTime = Number.isFinite(timeAxisEnd) && (timeAxisEnd ?? 0) > 0 ? timeAxisEnd! : Math.max(1, ...trace.points.map(([time]) => time));
   const [lo, hi] = trace.domain;
   const span = hi - lo || 1;
   const x = (time: number) => pad + (time / maxTime) * (width - 2 * pad);
