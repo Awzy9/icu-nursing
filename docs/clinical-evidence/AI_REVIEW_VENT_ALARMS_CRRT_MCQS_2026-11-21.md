@@ -1,0 +1,34 @@
+# Targeted ICU Nursing clinical review — simulator alarm behavior and CRRT questions
+
+**Date:** 2026-11-21  
+**Status:** AI-assisted evidence review and editorial safety correction; **not professional clinical approval**. This batch is separate from the reviewed-but-still-unapproved sepsis/CRRT/pump topic corrections merged in PR #87. No `clinically_reviewed` flags, author/reviewer identities or approval dates changed.
+
+## Reviewed artifacts and corrections
+
+| Location | Problem found | Correction | Evidence and outstanding limitation |
+|---|---|---|---|
+| `src/lib/working/vent-model.ts`, `mobile/src/core/vent-model.ts` | Source comment characterized a high-pressure trigger of **40 cmH₂O as a common ventilator default**, and described a low-pressure test relative to PEEP incorrectly as *below set PEEP*. Actual toy threshold test is `maxP < PEEP + 3`. | Both model comments now explicitly describe these as **fictional illustrative detection triggers**, not a clinical ventilator default or a validated low-pressure detector. **Simulation math is unchanged**; web/mobile numerical consistency is preserved. | AARC 2024 patient-ventilator assessment recommends assessing the patient, airway and ventilator readings but does **not** define a universal alarm threshold. Actual limits require the device model/software, patient and institutional policy. |
+| `src/components/working/vent-lab.tsx`, `mobile/app/vent-lab.tsx`, native EN/AR `mobile/src/core/i18n.ts` | High-pressure alarm looked like a clinical 40 cmH₂O recommendation; disconnected-circuit scenario said reconnect **before anything else**, bypassing patient assessment. Baseline and resistance scenarios implied diagnoses/normal ranges. | Re-labelled high- and low-pressure alerts as simulation-only in English and Arabic; rewrote disconnection scenario to **assess patient/adequacy of ventilation first**, summon help for inadequate ventilation and inspect airway/circuit according to policy; clarified toy-model results are not diagnoses or target ranges. Warnings remain visibly present. | Hamilton-C1 material in original draft supports prompt patient assessment, urgent alternative ventilation if required, and device-specific alarm actions; AARC 2024 supports direct bedside assessment. **No cross-manufacturer numeric alarm limit was established.** |
+| `content/drafts/mcq-expansion/XQ-07-crrt-alarms.md` Q3 | The “correct” response suggested returning blood whenever possible after unresolved CRRT alarms, without noting the **condition of the circuit and device/local safety requirements**. | Qualified blood return as **only if safe under the device and local protocol**. Maintained support escalation, documentation and prescriber notification. No instructions for setting a device, resuming a failed circuit or manipulating clotted/air-containing blood were added. | Based on the existing 2025 Alberta Health Services *PrisMax-family-specific* alarm care-pathway draft citation, not a generic CRRT protocol. Requires model-specific clinician review and actual machine manual. |
+| Same CRRT Q6 | Wrong-answer explanation implied *local policy decides the extent* of heparin exposure counted, despite heparin flushes/locks being genuine heparin sources for HIT. | Clarified that flushes and locks count as heparin exposure and that **clinically likely/confirmed HIT** requires clinician-directed review of all such exposure; local policy concerns implementation, not exposure definition. Included an ASH source link without reproducing its text. | ASH 2018 HIT guidelines distinguish low from intermediate/high pretest probability. A platelet count fall alone does not establish HIT. The topic still needs hematology, nephrology and pharmacist assessment and remains **DRAFT**. |
+| Automated checks | Simulator app and explanatory source may drift; old teaching could reappear without a failing test. | New source-safety tests for both JS model files, mobile EN/AR texts, matched web/mobile scenario notes and the CRRT MCQ rationales; web UI tests for visible simulation-only alerts and patient-first disconnection note. Draft-index and draft-history hashes updated for `XQ-07`; no clinical status changed. | Tests verify source consistency and specified UI wording, not bedside clinical safety or scientific validation of the numerical model. |
+
+## External sources checked
+
+1. Goodfellow et al. *AARC Clinical Practice Guideline: Patient-Ventilator Assessment*. Respir Care. 2024. Open full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/ . Accessed 2026-11-21. Applies to the scope of patient/ventilator assessment; **does not define a universal pressure-alarm default**.
+2. US Food and Drug Administration, *Infusion Pump Risk Reduction Strategies for Clinicians*: https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians . Accessed 2026-11-21 for the larger safety-review queue, **not used to infer ventilator alarm settings**.
+3. Cuker et al. *ASH 2018 guidelines for heparin-induced thrombocytopenia*, https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/ . Accessed 2026-11-21; supports stratifying low versus intermediate/high probability and exposure review.
+4. Existing source register: Alberta Health Services *CRRT Alarm Management Care Pathway Resource*, Jan 2025. Original project source and local pathway status are preserved. The current batch does **not** claim independent review of the entire manufacturer instructions or the underlying proprietary manual.
+
+## Mandatory blockers before retiring clinical-review warnings
+
+- Confirm simulator equations, measured/assumed plateau and PEEP interpretation, device-independent limitations, alarm behavior, and UI with a critical care/respiratory therapist educator; test both native builds on devices.
+- Independently verify every CRRT MCQ's stem, key, safety distractors and documentation against the unit's actual CRRT device and approved policy, plus hematology/pharmacy for HIT.
+- Review the remainder of the question bank, clinical skills, medications, cases and bedside calculators, and record source-by-claim decisions.
+- Preserve fictional-patient and educational-only labels. The current work is **targeted AI editorial/evidence review, not professional sign-off**.
+
+**Counts for this batch:** 2 live simulator cores, 2 simulator views, 1 native translation file, 1 draft MCQ set, 2 regression test files and 2 generated audit records updated. **0 newly clinically approved units; no TestFlight submission in this batch.**
+
+## CI revalidation requested 2026-11-21
+
+This non-clinical audit-log note requests fresh pull-request workflow checks after subsequent changes to `main`. All clinical review and publication flags remain unchanged. Merge only after required automated checks succeed; the merge itself does not authorize TestFlight release or clinical publication.
