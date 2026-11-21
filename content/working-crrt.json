@@ -1,146 +1,194 @@
 {
- "components": [
-  {
-   "key": "access",
-   "label": ["Vascular access", "الوصول الوعائي"],
-   "description": [
-    "A dual-lumen central venous catheter draws blood out through the 'access' (red/arterial) lumen and returns it through the 'return' (blue/venous) lumen. Lumen patency and position are checked before and during therapy.",
-    "قسطرة وريدية مركزية مزدوجة التجويف تسحب الدم عبر تجويف 'الوصول' (الشرياني/الأحمر) وتعيده عبر تجويف 'العودة' (الوريدي/الأزرق). يتم التحقق من سلامة التجويفين وموضعهما قبل العلاج وأثناءه."
-   ],
-   "alarms": ["High access (pre-filter) pressure", "ضغط الوصول (قبل الفلتر) المرتفع"]
-  },
-  {
-   "key": "blood-pump",
-   "label": ["Blood pump", "مضخة الدم"],
-   "description": [
-    "A roller pump draws blood from the access lumen at a set rate (mL/min) and drives it through the circuit. Pump speed is a prescribed, machine-set parameter - not something a nurse adjusts independently of the prescription and local protocol.",
-    "مضخة دوارة تسحب الدم من تجويف الوصول بمعدل محدد (مل/دقيقة) وتدفعه عبر الدائرة. سرعة المضخة معلمة موصوفة يحددها الجهاز - وليست شيئاً تعدّله الممرضة بمعزل عن الوصفة والبروتوكول المحلي."
-   ],
-   "alarms": []
-  },
-  {
-   "key": "filter",
-   "label": ["Hemofilter", "الفلتر الدموي"],
-   "description": [
-    "The hemofilter is a semi-permeable membrane where solutes and fluid cross from blood into the effluent (filtration), and/or dialysate exchanges solutes across the membrane (dialysis). Clotting inside the filter reduces its surface area and raises the pressure drop across it (transmembrane pressure).",
-    "الفلتر الدموي غشاء شبه نفوذ تعبر عبره المذابات والسوائل من الدم إلى الراشح (الترشيح)، و/أو يتبادل سائل الديلزة المذابات عبر الغشاء (الديلزة). يقلل التخثر داخل الفلتر من مساحة سطحه ويرفع فرق الضغط عبره (ضغط عبر الغشاء)."
-   ],
-   "alarms": ["High filter (transmembrane) pressure", "ضغط الفلتر (عبر الغشاء) المرتفع"]
-  },
-  {
-   "key": "dialysate",
-   "label": ["Dialysate", "سائل الديلزة"],
-   "description": [
-    "A balanced electrolyte solution run counter-current to blood flow around the filter membrane, used in dialysis-based CRRT modes (CVVHD/CVVHDF) to clear solutes by diffusion. Bag changes and connections are checked for correct fluid, correct line, and air-free connection.",
-    "محلول إلكتروليت متوازن يُمرَّر بعكس اتجاه تدفق الدم حول غشاء الفلتر، يُستخدم في أنماط العلاج بالديلزة (CVVHD/CVVHDF) لتصفية المذابات بالانتشار. يتم التحقق عند تغيير الأكياس من صحة السائل والخط والتوصيل الخالي من الهواء."
-   ],
-   "alarms": []
-  },
-  {
-   "key": "replacement",
-   "label": ["Replacement fluid", "سائل الاستبدال"],
-   "description": [
-    "A balanced electrolyte solution infused pre-filter or post-filter to replace fluid removed by convection in hemofiltration-based modes (CVVH/CVVHDF). Pre- vs post-filter delivery affects filter clotting risk and clearance, and is a prescribed setting.",
-    "محلول إلكتروليت متوازن يُحقن قبل الفلتر أو بعده لتعويض السائل المُزال بالحمل في أنماط الترشيح الدموي (CVVH/CVVHDF). يؤثر التوصيل قبل أو بعد الفلتر على خطر تخثر الفلتر والتصفية، وهو إعداد موصوف."
-   ],
-   "alarms": []
-  },
-  {
-   "key": "effluent",
-   "label": ["Effluent / drain", "الراشح / التصريف"],
-   "description": [
-    "The combined spent dialysate, filtered fluid and ultrafiltrate removed from the patient, collected in the effluent bag. Its weight is tracked by the machine to calculate net fluid removal from the patient - an unexpectedly empty or overflowing bag is always worth investigating.",
-    "مزيج سائل الديلزة المستهلك والسائل المُرشَّح والراشح الفائق المُزال من المريض، يُجمع في كيس الراشح. يتتبع الجهاز وزنه لحساب صافي السائل المُزال من المريض - يستحق الكيس الفارغ بشكل غير متوقع أو الفائض الفحص دائماً."
-   ],
-   "alarms": []
-  },
-  {
-   "key": "return",
-   "label": ["Return line", "خط العودة"],
-   "description": [
-    "Filtered/dialyzed blood travels back to the patient through the return (venous) lumen. An air detector and venous pressure sensor sit on this line as the last safety checks before blood re-enters the patient.",
-    "يعود الدم المُرشَّح/المُعالَج بالديلزة إلى المريض عبر تجويف العودة (الوريدي). يوجد كاشف هواء وحساس ضغط وريدي على هذا الخط كآخر فحوصات السلامة قبل عودة الدم إلى المريض."
-   ],
-   "alarms": ["Air detected in the return line", "اكتشاف هواء في خط العودة"]
-  },
-  {
-   "key": "pressures",
-   "label": ["Pressure monitoring", "مراقبة الضغوط"],
-   "description": [
-    "The machine continuously monitors access, filter, return (venous) and effluent pressures. Trends in these pressures - not any single reading - are what reveal clotting, kinking, recirculation or a line problem early, before the circuit fails outright.",
-    "يراقب الجهاز باستمرار ضغوط الوصول والفلتر والعودة (الوريدي) والراشح. اتجاهات هذه الضغوط - وليس أي قراءة منفردة - هي ما يكشف التخثر أو الانثناء أو إعادة التدوير أو مشكلة الخط مبكراً، قبل فشل الدائرة تماماً."
-   ],
-   "alarms": ["Low access pressure / suction event", "ضغط الوصول المنخفض / حدث شفط"]
-  }
- ],
- "alarms": [
-  {
-   "key": "CRRT-A1",
-   "title": ["High access (pre-filter) pressure", "ضغط الوصول (قبل الفلتر) المرتفع"],
-   "vignette": "The machine alarms for high access pressure. The patient's femoral access line is at the groin, and the patient has just been repositioned.",
-   "question": {
-    "prompt": "What is the most appropriate first nursing action?",
-    "options": [
-     "Check the access line for kinking or positional occlusion before anything else",
-     "Immediately increase the blood pump speed to clear the alarm",
-     "Disconnect and discard the circuit without further assessment",
-     "Silence the alarm and continue, since access pressure alarms are usually false"
-    ],
-    "answer": 0,
-    "explanation": "A high access (suction-side) pressure most often reflects a kinked, positioned-against-the-vessel-wall, or partially occluded access line, especially right after repositioning - checking and correcting the line's position is the appropriate first step before escalating or assuming the alarm is benign."
-   },
-   "componentKey": "access"
-  },
-  {
-   "key": "CRRT-A2",
-   "title": ["Rising filter pressure over several hours", "ارتفاع ضغط الفلتر تدريجياً خلال ساعات"],
-   "vignette": "Over several hours, the transmembrane pressure has been trending upward and the filter looks darker than usual through the viewing window.",
-   "question": {
-    "prompt": "What does this trend most likely indicate, and what is the nursing priority?",
-    "options": [
-     "Likely filter clotting - notify the team, since the filter may need replacing before it fails and the circuit clots off completely",
-     "A normal, expected finding that needs no action for the remainder of the prescribed run",
-     "Definite patient coagulopathy requiring immediate reversal of anticoagulation",
-     "A sign the replacement fluid rate is set too high and should be reduced immediately by the nurse"
-    ],
-    "answer": 0,
-    "explanation": "A rising transmembrane pressure with a darkening filter is the classic early pattern of filter clotting - recognising this trend and escalating supports proactive filter change before the circuit clots off, interrupting therapy and losing the patient's blood volume in the circuit."
-   },
-   "componentKey": "filter"
-  },
-  {
-   "key": "CRRT-A3",
-   "title": ["Air-in-line alarm on the return line", "إنذار وجود هواء في خط العودة"],
-   "vignette": "The air detector on the return line alarms and the machine has automatically clamped the return line.",
-   "question": {
-    "prompt": "What is the appropriate nursing response?",
-    "options": [
-     "Do not bypass or override the air detector; assess the circuit for the air source and involve the team before resuming",
-     "Manually override the clamp immediately so therapy is not interrupted",
-     "Flush the return line with air to clear the sensor",
-     "Assume the sensor is faulty and continue without further checks"
-    ],
-    "answer": 0,
-    "explanation": "An air detector clamping the return line is a critical safety feature preventing air embolism - it must never be bypassed; the priority is finding and correcting the source of air (a loose connection, an empty bag feeding the line) before therapy resumes."
-   },
-   "componentKey": "return"
-  },
-  {
-   "key": "CRRT-A4",
-   "title": ["Low access pressure with intermittent flow interruption", "ضغط وصول منخفض مع انقطاع متقطع للتدفق"],
-   "vignette": "The access pressure alarm shows an unusually low (negative) reading and blood flow intermittently stops, especially when the patient moves.",
-   "question": {
-    "prompt": "What does this suggest, and what should the nurse do first?",
-    "options": [
-     "A suction event from the access lumen pulling against the vessel wall - reassess catheter position and the patient's position",
-     "The blood pump is set too slow and should be increased by the nurse without further assessment",
-     "This is always a sign of filter clotting and the filter should be changed",
-     "This is a normal variant that never needs reassessment"
-    ],
-    "answer": 0,
-    "explanation": "A very low (strongly negative) access pressure with position-dependent flow interruption is characteristic of catheter-tip suction against the vessel wall - reassessing catheter and patient position is the appropriate first step, rather than adjusting pump speed or assuming filter failure."
-   },
-   "componentKey": "pressures"
-  }
- ]
+  "components": [
+    {
+      "key": "access",
+      "label": [
+        "Vascular access",
+        "الوصول الوعائي"
+      ],
+      "description": [
+        "A dual-lumen vascular catheter provides blood withdrawal (access) and return to the patient. Access and return lines are often identified by colour, but connectors and configuration differ between machines; trace and verify the actual tubing and labels rather than relying on red/blue alone.",
+        "توفّر القسطرة الوعائية مزدوجة التجويف مساراً لسحب الدم من المريض (الوصول) وآخر لإعادته. غالباً ما تُميّز الخطوط بالألوان، لكن التوصيلات والترتيب يختلفان بين الأجهزة؛ تتبّع الأنابيب والملصقات الفعلية ولا تعتمد على الأحمر والأزرق وحدهما."
+      ],
+      "alarms": [
+        "High access (pre-filter) pressure",
+        "ضغط الوصول (قبل الفلتر) المرتفع"
+      ]
+    },
+    {
+      "key": "blood-pump",
+      "label": [
+        "Blood pump",
+        "مضخة الدم"
+      ],
+      "description": [
+        "A roller pump draws blood from the access lumen at a set rate (mL/min) and drives it through the circuit. Pump speed is a prescribed, machine-set parameter - not something a nurse adjusts independently of the prescription and local protocol.",
+        "مضخة دوارة تسحب الدم من تجويف الوصول بمعدل محدد (مل/دقيقة) وتدفعه عبر الدائرة. سرعة المضخة معلمة موصوفة يحددها الجهاز - وليست شيئاً تعدّله الممرضة بمعزل عن الوصفة والبروتوكول المحلي."
+      ],
+      "alarms": []
+    },
+    {
+      "key": "filter",
+      "label": [
+        "Hemofilter",
+        "الفلتر الدموي"
+      ],
+      "description": [
+        "The hemofilter has a semipermeable membrane for fluid and solute exchange. Transmembrane pressure (TMP) estimates the pressure difference across the membrane between blood and effluent fluid. Filter pressure drop (ΔP) measures resistance along the blood path through the filter. They are distinct measurements; their trends can suggest clogging or clotting but do not establish a diagnosis on their own.",
+        "يحتوي المرشح الدموي على غشاء شبه منفذ لتبادل السوائل والمذابات. يمثّل ضغط الغشاء (TMP) فرق الضغط عبر الغشاء بين جانب الدم وجانب سائل الطرح. أما فرق ضغط المرشح (ΔP) فيعكس المقاومة على امتداد مسار الدم داخل المرشح. وهما قياسان مختلفان، وقد تشير اتجاهاتهما إلى انسداد مسام الغشاء أو التخثر، لكنها لا تثبت التشخيص وحدها."
+      ],
+      "alarms": [
+        "High filter (transmembrane) pressure",
+        "ضغط الفلتر (عبر الغشاء) المرتفع"
+      ]
+    },
+    {
+      "key": "dialysate",
+      "label": [
+        "Dialysate",
+        "سائل الديلزة"
+      ],
+      "description": [
+        "A balanced electrolyte solution run counter-current to blood flow around the filter membrane, used in dialysis-based CRRT modes (CVVHD/CVVHDF) to clear solutes by diffusion. Bag changes and connections are checked for correct fluid, correct line, and air-free connection.",
+        "محلول إلكتروليت متوازن يُمرَّر بعكس اتجاه تدفق الدم حول غشاء الفلتر، يُستخدم في أنماط العلاج بالديلزة (CVVHD/CVVHDF) لتصفية المذابات بالانتشار. يتم التحقق عند تغيير الأكياس من صحة السائل والخط والتوصيل الخالي من الهواء."
+      ],
+      "alarms": []
+    },
+    {
+      "key": "replacement",
+      "label": [
+        "Replacement fluid",
+        "سائل الاستبدال"
+      ],
+      "description": [
+        "A balanced electrolyte solution infused pre-filter or post-filter to replace fluid removed by convection in hemofiltration-based modes (CVVH/CVVHDF). Pre- vs post-filter delivery affects filter clotting risk and clearance, and is a prescribed setting.",
+        "محلول إلكتروليت متوازن يُحقن قبل الفلتر أو بعده لتعويض السائل المُزال بالحمل في أنماط الترشيح الدموي (CVVH/CVVHDF). يؤثر التوصيل قبل أو بعد الفلتر على خطر تخثر الفلتر والتصفية، وهو إعداد موصوف."
+      ],
+      "alarms": []
+    },
+    {
+      "key": "effluent",
+      "label": [
+        "Effluent / drain",
+        "الراشح / التصريف"
+      ],
+      "description": [
+        "The combined spent dialysate, filtered fluid and ultrafiltrate removed from the patient, collected in the effluent bag. Its weight is tracked by the machine to calculate net fluid removal from the patient - an unexpectedly empty or overflowing bag is always worth investigating.",
+        "مزيج سائل الديلزة المستهلك والسائل المُرشَّح والراشح الفائق المُزال من المريض، يُجمع في كيس الراشح. يتتبع الجهاز وزنه لحساب صافي السائل المُزال من المريض - يستحق الكيس الفارغ بشكل غير متوقع أو الفائض الفحص دائماً."
+      ],
+      "alarms": []
+    },
+    {
+      "key": "return",
+      "label": [
+        "Return line",
+        "خط العودة"
+      ],
+      "description": [
+        "Filtered/dialyzed blood travels back to the patient through the return (venous) lumen. An air detector and venous pressure sensor sit on this line as the last safety checks before blood re-enters the patient.",
+        "يعود الدم المُرشَّح/المُعالَج بالديلزة إلى المريض عبر تجويف العودة (الوريدي). يوجد كاشف هواء وحساس ضغط وريدي على هذا الخط كآخر فحوصات السلامة قبل عودة الدم إلى المريض."
+      ],
+      "alarms": [
+        "Air detected in the return line",
+        "اكتشاف هواء في خط العودة"
+      ]
+    },
+    {
+      "key": "pressures",
+      "label": [
+        "Pressure monitoring",
+        "مراقبة الضغوط"
+      ],
+      "description": [
+        "The device may display access, pre-filter, return and effluent pressure readings, plus calculated TMP and filter pressure drop (ΔP). TMP reflects pressure across the membrane; ΔP reflects the blood-path pressure drop through the filter. Use the machine-specific limits and trends with patient assessment; pressure changes alone cannot confirm clotting, catheter position or recirculation.",
+        "قد يعرض الجهاز ضغوط الوصول وما قبل المرشح والعودة وسائل الطرح، إضافةً إلى ضغط الغشاء المحسوب (TMP) وفرق ضغط المرشح (ΔP). يعكس TMP الضغط عبر الغشاء، بينما يعكس ΔP فرق الضغط على مسار الدم عبر المرشح. راجع اتجاهاتها وحدود الجهاز المحدد مع تقييم المريض؛ ولا تكفي تغيّرات الضغط وحدها لإثبات التخثر أو وضع القسطرة أو إعادة الدوران."
+      ],
+      "alarms": [
+        "Low access pressure / suction event",
+        "ضغط الوصول المنخفض / حدث شفط"
+      ]
+    }
+  ],
+  "alarms": [
+    {
+      "key": "CRRT-A1",
+      "title": [
+        "Access-pressure alarm after repositioning",
+        "إنذار ضغط الوصول بعد تغيير وضعية المريض"
+      ],
+      "vignette": "The machine alarms for high access pressure. The patient's femoral access line is at the groin, and the patient has just been repositioned.",
+      "question": {
+        "prompt": "What is the most appropriate first nursing action?",
+        "options": [
+          "Assess the patient first, then check the access tubing for kinks, clamps or positional obstruction and follow the displayed device alarm guidance",
+          "Immediately increase the blood pump speed to clear the alarm",
+          "Disconnect and discard the circuit without further assessment",
+          "Silence the alarm and continue, since access pressure alarms are usually false"
+        ],
+        "answer": 0,
+        "explanation": "Check the patient and the actual device alarm first. Repositioning can cause a kink or positional catheter issue, but access-pressure signs and alarm terminology vary by machine. Trace the tubing and assess any obstruction under local CRRT procedures; never increase pump speed or bypass the alarm without authorization."
+      },
+      "componentKey": "access"
+    },
+    {
+      "key": "CRRT-A2",
+      "title": [
+        "Rising TMP during CRRT",
+        "ارتفاع ضغط الغشاء (TMP) أثناء العلاج الكلوي المستمر"
+      ],
+      "vignette": "Over several hours, the transmembrane pressure has been trending upward and the filter looks darker than usual through the viewing window.",
+      "question": {
+        "prompt": "What does this trend most likely indicate, and what is the nursing priority?",
+        "options": [
+          "Possible membrane clogging or filter clotting—review TMP and filter pressure-drop trends, assess the patient and treatment, and alert the trained CRRT team",
+          "A normal, expected finding that needs no action for the remainder of the prescribed run",
+          "Definite patient coagulopathy requiring immediate reversal of anticoagulation",
+          "A sign the replacement fluid rate is set too high and should be reduced immediately by the nurse"
+        ],
+        "answer": 0,
+        "explanation": "TMP is the pressure gradient across the filter membrane, whereas filter pressure drop (ΔP) measures resistance along the blood path. A slow isolated rise in TMP may suggest membrane clogging; a rise in ΔP may indicate blood-path clotting. A dark-looking filter alone is not diagnostic. Follow the relevant machine's pressure limits and alarm instructions; escalate rather than changing prescriptions independently."
+      },
+      "componentKey": "filter"
+    },
+    {
+      "key": "CRRT-A3",
+      "title": [
+        "Air-in-line alarm on the return line",
+        "إنذار وجود هواء في خط العودة"
+      ],
+      "vignette": "The air detector on the return line alarms and the machine has automatically clamped the return line.",
+      "question": {
+        "prompt": "What is the appropriate nursing response?",
+        "options": [
+          "Assess the patient, keep the air-safety function active, and investigate the blood circuit with the trained team before any restart",
+          "Manually override the clamp immediately so therapy is not interrupted",
+          "Flush the return line with air to clear the sensor",
+          "Assume the sensor is faulty and continue without further checks"
+        ],
+        "answer": 0,
+        "explanation": "An air-in-return-line alarm can signal an air embolism hazard. Check the patient, never bypass the safety detector or override a clamped return line, and identify and correct the air source with trained staff under the device procedure before resuming treatment. Do not assume a specific bag or connection is responsible from the alarm alone."
+      },
+      "componentKey": "return"
+    },
+    {
+      "key": "CRRT-A4",
+      "title": [
+        "Very negative access pressure with interrupted flow",
+        "ضغط وصول سالب جداً مع انقطاع التدفق"
+      ],
+      "vignette": "The access pressure alarm shows an unusually low (negative) reading and blood flow intermittently stops, especially when the patient moves.",
+      "question": {
+        "prompt": "What does this suggest, and what should the nurse do first?",
+        "options": [
+          "Assess the patient and the displayed alarm, then check catheter and patient positioning, clamps and kinks according to the device protocol",
+          "The blood pump is set too slow and should be increased by the nurse without further assessment",
+          "This is always a sign of filter clotting and the filter should be changed",
+          "This is a normal variant that never needs reassessment"
+        ],
+        "answer": 0,
+        "explanation": "Very negative access pressure with movement-related blood-flow interruption can suggest a positional access problem, but actual alarm limits and pressure conventions depend on the device. Assess the patient first and check the tubing and catheter position using the local trained-team pathway; do not independently alter prescribed blood-flow settings."
+      },
+      "componentKey": "pressures"
+    }
+  ]
 }
