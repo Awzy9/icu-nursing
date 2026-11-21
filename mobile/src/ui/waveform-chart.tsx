@@ -1,33 +1,19 @@
 import { useMemo, useState } from "react";
 import { View } from "react-native";
 import { type WaveformTrace } from "../core/waveform";
+import { plotWaveform } from "../core/plot-geometry";
 import { useApp } from "../state/app";
 import { P } from "./components";
 
 // Plot original authored time/value pairs using native Views. The old react-native-svg
 // Polyline leaves an empty rectangle in the current iOS TestFlight build. Native segments
 // remove that renderer dependency for ECG, defibrillator, ventilator and arterial-line labs.
-const HEIGHT = 116;
-const PAD = 7;
+const HEIGHT = 152;
 const LINE_WIDTH = 2.5;
-type Pt = { x: number; y: number };
-
-function plot(trace: WaveformTrace, width: number): { points: Pt[]; zero: number | null } {
-  const maxTime = Math.max(1, ...trace.points.map(([time]) => time));
-  const [lo, hi] = trace.domain;
-  const span = hi - lo || 1;
-  const x = (time: number) => PAD + (time / maxTime) * (width - PAD * 2);
-  const y = (value: number) => PAD + (1 - (value - lo) / span) * (HEIGHT - PAD * 2);
-  return {
-    points: trace.points.map(([time, value]) => ({ x: x(time), y: y(value) })),
-    zero: lo <= 0 && hi >= 0 ? y(0) : null,
-  };
-}
-
 export function WaveformChart({ trace }: { trace: WaveformTrace }) {
   const { palette } = useApp();
   const [width, setWidth] = useState(0);
-  const drawing = useMemo(() => width > PAD * 2 ? plot(trace, width) : null, [trace, width]);
+  const drawing = useMemo(() => width > 15 ? plotWaveform(trace, width, HEIGHT) : null, [trace, width]);
 
   return (
     <View accessibilityRole="image" accessibilityLabel={`${trace.label} versus time, ${trace.unit}`} style={{ gap: 5 }}>
