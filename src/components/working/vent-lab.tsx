@@ -8,20 +8,20 @@ const DEFAULTS: VentParams = { tidalVolume: 450, respRate: 14, peep: 5, inspirat
 
 const SCENARIOS: { key: string; label: [string, string]; params: Partial<VentParams>; note: [string, string] }[] = [
   { key: "normal", label: ["Normal mechanics", "ميكانيكا طبيعية"], params: {}, note: [
-    "Typical compliance and resistance - peak and plateau pressure are both unremarkable.",
-    "امتثال ومقاومة طبيعيان - ضغط الذروة والهضبة كلاهما ضمن الحدود الطبيعية.",
+    "Illustrative baseline mechanics in this teaching model; these readouts are not normal ranges or patient-specific targets.",
+    "قيم مرجعية افتراضية لهذه المحاكاة التعليمية؛ القراءات ليست حدوداً طبيعية معتمدة أو أهدافاً خاصة بمريض.",
   ] },
   { key: "stiff", label: ["Stiff lungs (low compliance)", "رئتان متيبستان (امتثال منخفض)"], params: { compliance: 15, resistance: 14 }, note: [
-    "Low compliance raises BOTH peak and plateau pressure together - think ARDS, pulmonary oedema, or a large pleural effusion. Escalate if the high-pressure alarm persists.",
-    "الامتثال المنخفض يرفع ضغط الذروة والهضبة معاً - فكّر في ARDS أو الوذمة الرئوية أو الانصباب الجنبي الكبير. صعّد الحالة إذا استمر إنذار الضغط المرتفع.",
+    "Lower compliance raises both peak and plateau pressure in this model. It does not identify a diagnosis; assess the patient and escalate any inadequate ventilation promptly, regardless of whether this toy alarm fires.",
+    "انخفاض المطاوعة يرفع ضغط الذروة والهضبة معاً في هذا النموذج، لكنه لا يثبت تشخيصاً. قيّم المريض وصعّد فوراً عند عدم كفاية التهوية، سواء ظهر إنذار المحاكاة أم لا.",
   ] },
   { key: "obstructed", label: ["High airway resistance", "مقاومة مجرى هوائي مرتفعة"], params: { resistance: 32, compliance: 45 }, note: [
-    "High resistance raises peak pressure much more than plateau pressure - a wide peak-minus-plateau gap points to the airway/circuit (secretions, bronchospasm, a kinked tube), not the lung tissue itself.",
-    "المقاومة المرتفعة ترفع ضغط الذروة أكثر بكثير من الهضبة - الفرق الكبير بينهما يشير إلى مجرى الهواء أو الدائرة (إفرازات، تشنج قصبي، أنبوب منحني)، وليس نسيج الرئة نفسه.",
+    "In this passive square-flow model, higher airway resistance widens the peak-to-plateau pressure gap. A real patient needs airway, circuit, mechanics and waveform assessment; the gap alone does not diagnose the cause.",
+    "في نموذج التدفق المربّع السلبي هذا، توسّع مقاومة مجرى الهواء الفرق بين ضغط الذروة والهضبة. يحتاج المريض الحقيقي إلى تقييم مجرى الهواء والدائرة والميكانيكا والمنحنيات؛ ولا يشخّص الفرق وحده السبب.",
   ] },
   { key: "disconnect", label: ["Circuit disconnect", "انفصال الدائرة"], params: { circuitDisconnected: true }, note: [
-    "Pressure never rises and almost no volume is delivered - the low-pressure/low-volume alarm should fire immediately. Check the circuit and reconnect before troubleshooting anything else.",
-    "لا يرتفع الضغط ولا يكاد يُسلَّم أي حجم - يجب أن يُطلق إنذار الضغط المنخفض فوراً. تحقق من الدائرة وأعد توصيلها قبل أي خطوة أخرى.",
+    "In this simplified disconnected-circuit scenario, delivered volume and pressure rise are severely reduced and a simulated low-pressure alert appears. Assess the patient and adequacy of ventilation immediately, summon help if unstable, then inspect the airway and circuit using your unit's procedure. A real ventilator's alarm behaviour varies.",
+    "في سيناريو انفصال الدائرة المبسّط، ينخفض الحجم المُسلّم وارتفاع الضغط بشدة ويظهر إنذار انخفاض ضغط افتراضي. قيّم المريض وفعالية التهوية فوراً، واطلب المساعدة إذا كان غير مستقر، ثم افحص مجرى الهواء والدائرة وفق إجراءات وحدتك. تختلف استجابة الإنذارات بين أجهزة التنفس الحقيقية.",
   ] },
 ];
 
@@ -95,8 +95,8 @@ export function VentLab({ locale }: { locale: string }) {
         <div role="alert" className="flex items-start gap-3 rounded-2xl border-2 border-danger-foreground/60 bg-danger p-4 text-danger-foreground">
           <AlertTriangle aria-hidden className="mt-0.5 size-5 shrink-0" />
           <div className="space-y-1 text-sm leading-6">
-            {result.highPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط مرتفع: ضغط الذروة بلغ أو تجاوز 40 سم ماء." : "High-pressure alarm: peak pressure has reached or exceeded 40 cmH2O."}</p> : null}
-            {result.lowPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط منخفض: الضغط لا يرتفع كما هو متوقع - تحقق من اتصال الدائرة." : "Low-pressure alarm: pressure is not rising as expected - check for a circuit disconnect or major leak."}</p> : null}
+            {result.highPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط مرتفع (محاكاة فقط): تم بلوغ حدّ تعليمي افتراضي قدره 40 سم ماء، وليس إعداد إنذار سريرياً." : "High-pressure alarm (simulation only): the invented 40 cmH₂O teaching trigger was reached; this is NOT a clinical alarm setting."}</p> : null}
+            {result.lowPressureAlarm ? <p className="font-semibold">{ar ? "إنذار ضغط منخفض (محاكاة فقط): قيّم المريض والتهوية أولاً، ثم افحص مجرى الهواء والدائرة بحثاً عن انفصال أو تسرب كبير." : "Low-pressure alarm (simulation only): assess the patient and ventilation first, then check the airway and circuit for disconnection or a major leak."}</p> : null}
           </div>
         </div>
       ) : null}
@@ -109,7 +109,7 @@ export function VentLab({ locale }: { locale: string }) {
 
       <section aria-labelledby="vent-lab-evidence" className="space-y-2 text-sm text-muted-foreground">
         <h2 id="vent-lab-evidence" className="text-sm font-semibold text-foreground">{ar ? "حالة المراجعة" : "Review status"}</h2>
-        <p>{ar ? "نموذج تعليمي مبسّط لمعادلة الحركة التنفسية القياسية (الضغط = PEEP + الحجم/الامتثال + المقاومة × التدفق)، وليس محاكاة جهاز معتمدة. لم تخضع هذه المادة بعد لمراجعة سريرية رسمية." : "A simplified teaching model of the standard respiratory equation of motion (Pressure = PEEP + Volume/Compliance + Resistance × Flow), not a validated device simulator. This material has not yet had a formal clinical review."}</p>
+        <p>{ar ? "نموذج تعليمي مبسّط لمعادلة الحركة التنفسية القياسية (الضغط = PEEP + الحجم/الامتثال + المقاومة × التدفق)، وليس محاكاة جهاز معتمدة. لم تخضع هذه المادة بعد لمراجعة سريرية رسمية." : "A simplified teaching model of the standard respiratory equation of motion (Pressure = PEEP + Volume/Compliance + Resistance × Flow), not a validated device simulator. This material has not yet had a formal clinical review. The displayed alarm triggers are fictional for teaching; no threshold or machine behaviour should be copied into clinical settings."}</p>
       </section>
     </div>
   );

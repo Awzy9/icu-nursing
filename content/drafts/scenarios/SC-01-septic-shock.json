@@ -1,270 +1,278 @@
 {
- "scenario_id": "SC-01",
- "number": 1,
- "title": "Septic shock",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "infection-sepsis",
- "difficulty": 3,
- "learning_objectives": [
-  "Recognise possible sepsis in a deteriorating patient with suspected infection and escalate urgently.",
-  "Use a structured handover to the responsible clinical team.",
-  "Monitor a vasopressor infusion site and avoid abrupt interruption.",
-  "Recognise possible extravasation and act per protocol."
- ],
- "related": {
-  "skills": [
-   "SK-01"
+  "scenario_id": "SC-01",
+  "number": 1,
+  "title": "Septic shock",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "infection-sepsis",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Recognise possible sepsis in a deteriorating patient with suspected infection and escalate urgently.",
+    "Use a structured handover to the responsible clinical team.",
+    "Distinguish uninterrupted delivery through a safe line from immediate response to suspected vasopressor extravasation.",
+    "Recognise possible extravasation and act per protocol."
   ],
-  "medications": [
-   "MD-01"
+  "related": {
+    "skills": [
+      "SK-01"
+    ],
+    "medications": [
+      "MD-01"
+    ],
+    "topic_drafts": [
+      "D06-T01"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "NEWS2 report (2017): score-based clinical response, record the response, sepsis statements"
+    },
+    {
+      "id": "L-NOREPINEPHRINE",
+      "read": "full",
+      "use": "FDA norepinephrine label: extravasation and abrupt discontinuation statements"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "Official 2026 SSC recommendation-level page: conditional, very-low-certainty preference for protocolized peripheral vasopressor initiation when central access would delay support; complete evidence tables not reviewed."
+    }
   ],
-  "topic_drafts": [
-   "D06-T01"
-  ]
- },
- "sources": [
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "NEWS2 report (2017): score-based clinical response, record the response, sepsis statements"
-  },
-  {
-   "id": "L-NOREPINEPHRINE",
-   "read": "full",
-   "use": "FDA norepinephrine label: extravasation and abrupt discontinuation statements"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
+  "required_sources": [
+    "Unit sepsis bundle and vasopressor protocol",
+    "UK/other peripheral vasopressor policy",
+    "Local adult vasopressor extravasation SOP including catheter aspiration, antidote and uninterrupted haemodynamic support",
+    "Full-text evidence tables for SSC 2026 and local/national sepsis pathway still require review"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "Fluid choices, antimicrobial timing, lactate targets and blood-pressure targets are not drawn from a source read in full and are not written.",
+    "The NEWS2 statements are UK and 2017; the scenario names no score thresholds.",
+    "The steps are not a model-specific norepinephrine administration protocol. Local rules for catheter retention/aspiration, alternative venous access and antidote require critical care and pharmacy review."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  ],
+  "setting": "A fictional adult with suspected pneumonia on a fictional unit.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "A patient with suspected pneumonia is more drowsy, feels hot and has a high early warning score on this set of observations.",
+      "prompt": "What should you do?",
+      "observations": [
+        {
+          "key": "score",
+          "label": "Early warning score",
+          "value": "High"
+        },
+        {
+          "key": "temperature",
+          "label": "Temperature (fictional)",
+          "value": 38.9,
+          "unit": "degrees C"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "More drowsy than before"
+        },
+        {
+          "key": "infection",
+          "label": "Suspected infection",
+          "value": "Chest"
+        }
+      ],
+      "options": [
+        {
+          "text": "Think sepsis: escalate urgently to the responsible clinical team with an SBAR, and record the response on the chart.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "NEWS2 recommends considering sepsis when infection is suspected and the score is high, with urgent assessment by a clinical team competent in sepsis; the response is recorded.",
+          "consequence": "The team attends promptly and the patient is reassessed.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2",
+            "S-AHRQ-TS"
+          ]
+        },
+        {
+          "text": "Repeat the observations in an hour and see whether the score changes.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "A high score is a trigger for an urgent response, not for waiting.",
+          "consequence": "The patient deteriorates before the repeat is due.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "Give a regular antipyretic and see whether the score settles.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "Treating one sign does not address the cause and delays escalation.",
+          "consequence": "The temperature falls but the underlying problem is unaddressed.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "The team starts a vasopressor infusion through a peripheral cannula as prescribed.",
+      "prompt": "What do you do while it runs?",
+      "observations": [
+        {
+          "key": "score",
+          "label": "Early warning score",
+          "value": "High"
+        },
+        {
+          "key": "infusion",
+          "label": "Vasopressor infusion",
+          "value": "Running through a peripheral cannula"
+        },
+        {
+          "key": "site",
+          "label": "Infusion site",
+          "value": "Looks normal"
+        }
+      ],
+      "options": [
+        {
+          "text": "Inspect the peripheral site and haemodynamics frequently under the unit protocol; report changes and avoid unplanned interruptions while the line is functioning.",
+          "points": 2,
+          "next": 3,
+          "scope": "monitoring",
+          "feedback": "The 2026 Surviving Sepsis Campaign supports peripheral vasopressor initiation when appropriate rather than delaying resuscitation for central access, but only with careful site surveillance and an available extravasation response. Do not interrupt a functioning essential infusion casually; suspected extravasation is different and requires immediate action.",
+          "consequence": "The vascular access is monitored repeatedly, and the team has a plan for urgent alternative access if the site fails.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE",
+            "S-SSC-2026"
+          ]
+        },
+        {
+          "text": "Check the site when the infusion is set up and not again.",
+          "points": 0,
+          "next": 3,
+          "scope": "monitoring",
+          "feedback": "Extravasation can happen at any time, so the site is monitored throughout.",
+          "consequence": "A change at the site goes unnoticed.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Disconnect the infusion briefly to flush the line when it seems slow.",
+          "points": 0,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "Interrupting a vasopressor can drop the pressure, and flushing changes drug delivery; this follows the protocol and the prescriber.",
+          "consequence": "The pressure falls during the interruption.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "Later the skin over the cannula becomes pale, cool and swollen.",
+      "prompt": "What is the right response?",
+      "observations": [
+        {
+          "key": "site",
+          "label": "Infusion site",
+          "value": "Pale, cool, swollen"
+        },
+        {
+          "key": "infusion",
+          "label": "Vasopressor infusion",
+          "value": "Running"
+        },
+        {
+          "key": "team",
+          "label": "Team",
+          "value": "Nearby"
+        }
+      ],
+      "options": [
+        {
+          "text": "Suspect extravasation: stop delivery through the affected cannula now, call for help, and activate the unit's injury and alternative-access pathway.",
+          "points": 2,
+          "next": null,
+          "scope": "escalation",
+          "feedback": "Pallor, coolness and swelling at a norepinephrine cannula are concerning for extravasation. Stop the affected infusion immediately and escalate; avoid flushing or removing the catheter before the trained team decides whether aspiration is needed under local protocol. Because abrupt loss of vasopressor support may worsen hypotension, urgently coordinate a safe alternative route and continued haemodynamic monitoring.",
+          "consequence": "The affected line is no longer infusing; trained staff assess the injury and organize alternative vasopressor access under the emergency protocol.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Slow the infusion and recheck in an hour.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "Continuing possible vasopressor extravasation for another hour can worsen local tissue ischemia; stop delivery through the affected site and escalate without delay.",
+          "consequence": "The tissue injury becomes worse.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Massage the area to disperse the drug.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "Do not massage or flush suspected vasopressor extravasation. Seek the trained team and follow the facility antidote/aspiration pathway.",
+          "consequence": "The injured area becomes larger.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "With suspected infection and a high score, think sepsis and escalate urgently with a structured handover.",
+      "Monitor peripheral vasopressor access during treatment. Suspected extravasation requires immediate cessation through the affected cannula, urgent escalation, and a plan for alternative vascular access and haemodynamic support.",
+      "Do not flush or massage suspected extravasation; manage the cannula and any antidote only under the appropriate trained-team/local protocol."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-01"
+      },
+      {
+        "kind": "medication",
+        "code": "MD-01"
+      }
+    ]
   }
- ],
- "required_sources": [
-  "Surviving Sepsis Campaign 2026 guideline full text and the national sepsis pathway",
-  "Unit sepsis bundle and vasopressor protocol",
-  "UK/other peripheral vasopressor policy"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Fluid choices, antimicrobial timing, lactate targets and blood-pressure targets are not drawn from a source read in full and are not written.",
-  "The NEWS2 statements are UK and 2017; the scenario names no score thresholds."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "setting": "A fictional adult with suspected pneumonia on a fictional unit.",
- "steps": [
-  {
-   "position": 1,
-   "info": "A patient with suspected pneumonia is more drowsy, feels hot and has a high early warning score on this set of observations.",
-   "prompt": "What should you do?",
-   "observations": [
-    {
-     "key": "score",
-     "label": "Early warning score",
-     "value": "High"
-    },
-    {
-     "key": "temperature",
-     "label": "Temperature (fictional)",
-     "value": 38.9,
-     "unit": "degrees C"
-    },
-    {
-     "key": "alertness",
-     "label": "Alertness",
-     "value": "More drowsy than before"
-    },
-    {
-     "key": "infection",
-     "label": "Suspected infection",
-     "value": "Chest"
-    }
-   ],
-   "options": [
-    {
-     "text": "Think sepsis: escalate urgently to the responsible clinical team with an SBAR, and record the response on the chart.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "NEWS2 recommends considering sepsis when infection is suspected and the score is high, with urgent assessment by a clinical team competent in sepsis; the response is recorded.",
-     "consequence": "The team attends promptly and the patient is reassessed.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Repeat the observations in an hour and see whether the score changes.",
-     "points": 0,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "A high score is a trigger for an urgent response, not for waiting.",
-     "consequence": "The patient deteriorates before the repeat is due.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    },
-    {
-     "text": "Give a regular antipyretic and see whether the score settles.",
-     "points": 0,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "Treating one sign does not address the cause and delays escalation.",
-     "consequence": "The temperature falls but the underlying problem is unaddressed.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The team starts a vasopressor infusion through a peripheral cannula as prescribed.",
-   "prompt": "What do you do while it runs?",
-   "observations": [
-    {
-     "key": "score",
-     "label": "Early warning score",
-     "value": "High"
-    },
-    {
-     "key": "infusion",
-     "label": "Vasopressor infusion",
-     "value": "Running through a peripheral cannula"
-    },
-    {
-     "key": "site",
-     "label": "Infusion site",
-     "value": "Looks normal"
-    }
-   ],
-   "options": [
-    {
-     "text": "Check the infusion site at the frequency the protocol sets, report changes, and avoid interrupting the infusion abruptly.",
-     "points": 2,
-     "next": 3,
-     "scope": "monitoring",
-     "feedback": "The label warns of extravasation and of a fall in pressure after abrupt discontinuation, so the site is monitored and the infusion is not stopped without direction.",
-     "consequence": "The site is checked regularly and the infusion continues without interruption.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Check the site when the infusion is set up and not again.",
-     "points": 0,
-     "next": 3,
-     "scope": "monitoring",
-     "feedback": "Extravasation can happen at any time, so the site is monitored throughout.",
-     "consequence": "A change at the site goes unnoticed.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Disconnect the infusion briefly to flush the line when it seems slow.",
-     "points": 0,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "Interrupting a vasopressor can drop the pressure, and flushing changes drug delivery; this follows the protocol and the prescriber.",
-     "consequence": "The pressure falls during the interruption.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "Later the skin over the cannula becomes pale, cool and swollen.",
-   "prompt": "What is the right response?",
-   "observations": [
-    {
-     "key": "site",
-     "label": "Infusion site",
-     "value": "Pale, cool, swollen"
-    },
-    {
-     "key": "infusion",
-     "label": "Vasopressor infusion",
-     "value": "Running"
-    },
-    {
-     "key": "team",
-     "label": "Team",
-     "value": "Nearby"
-    }
-   ],
-   "options": [
-    {
-     "text": "Treat it as possible extravasation: stop the infusion per protocol, report at once and follow the prescriber's instructions.",
-     "points": 2,
-     "next": null,
-     "scope": "escalation",
-     "feedback": "The label warns of extravasation injury, so the nurse acts at once per protocol and reports so the prescriber can direct treatment.",
-     "consequence": "The infusion is stopped and an alternative route and the injury care are organised.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Slow the infusion and recheck in an hour.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "Delay allows more of the drug to enter the tissue.",
-     "consequence": "The tissue injury becomes worse.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Massage the area to disperse the drug.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "Spreading the drug does not reduce harm and treatment is directed by the prescriber.",
-     "consequence": "The injured area becomes larger.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "With suspected infection and a high score, think sepsis and escalate urgently with a structured handover.",
-   "Monitor the infusion site throughout a vasopressor infusion and avoid abrupt interruption.",
-   "Possible extravasation is an urgent report; treatment is directed by the prescriber."
-  ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-01"
-   },
-   {
-    "kind": "medication",
-    "code": "MD-01"
-   }
-  ]
- }
 }

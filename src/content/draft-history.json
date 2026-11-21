@@ -1727,6 +1727,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "77f553e2d89b550b",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-08": [
@@ -5681,6 +5693,20 @@
     "gaps": 4,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "930881cadbd59249",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 4,
+    "issues": 0
    }
   ],
   "SC-02": [
@@ -5770,6 +5796,20 @@
      "S-HAMILTON-C1"
     ],
     "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "b9f670b434b8780a",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 5,
     "required_sources": 2,
     "issues": 0
    }
