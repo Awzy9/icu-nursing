@@ -7,9 +7,9 @@ export type LocalizedText = Record<string, string>;
 export const messages = {
   en: {
     "app.name": "Nursing Mastery",
-    "app.sampleBanner": "Demonstration mode: all content is synthetic and unreviewed. It is not clinical guidance and must not be used for patient care.",
+    "app.sampleBanner": "Clinical review is ongoing. Lessons are educational drafts; practice cases and simulated values are fictional. Do not use this app as patient-care guidance. Follow approved local protocols.",
     "app.englishOnly": "Content is in English and has not yet been clinically approved.",
-    "app.noticeShort": "Draft content, not clinical guidance", "app.noticeHint": "Tap for details",
+    "app.noticeShort": "Educational drafts · Clinical review pending", "app.noticeHint": "Tap for details",
     "hub.tagline": "Critical care nursing, step by step.", "hub.heroContinue": "Continue learning", "hub.heroStart": "Start learning", "hub.heroStartBody": "Follow a guided path, one step at a time.",
     "hub.sectionLibrary": "Library", "hub.sectionStudy": "Study", "hub.sectionPractice": "Practice", "hub.tileLabel": "{label}, {count} items",
     "reader.readMinutes": "{min} min read", "reader.sections": "{count} sections", "reader.expandAll": "Expand all", "reader.collapseAll": "Collapse all",
@@ -127,9 +127,9 @@ export const messages = {
   },
   ar: {
     "app.name": "إتقان التمريض",
-    "app.sampleBanner": "وضع العرض التجريبي: كل المحتوى اصطناعي وغير مراجَع. وهو ليس إرشاداً سريرياً ولا يجوز استخدامه في رعاية المرضى.",
+    "app.sampleBanner": "المراجعة السريرية جارية. الدروس مسودات تعليمية، أما الحالات التدريبية والقيم المحاكية فهي افتراضية. لا تستخدم التطبيق لاتخاذ قرارات رعاية المرضى، واتبع بروتوكولات منشأتك المعتمدة.",
     "app.englishOnly": "المحتوى باللغة الإنجليزية ولم يُعتمد سريرياً بعد.",
-    "app.noticeShort": "محتوى مسودة وليس إرشاداً سريرياً", "app.noticeHint": "اضغط للتفاصيل",
+    "app.noticeShort": "محتوى تعليمي قيد المراجعة السريرية", "app.noticeHint": "اضغط للتفاصيل",
     "hub.tagline": "تمريض العناية المركزة، خطوة بخطوة.", "hub.heroContinue": "تابع التعلّم", "hub.heroStart": "ابدأ التعلّم", "hub.heroStartBody": "اتبع مساراً موجّهاً، خطوة بخطوة.",
     "hub.sectionLibrary": "المكتبة", "hub.sectionStudy": "الدراسة", "hub.sectionPractice": "التدريب", "hub.tileLabel": "{label}، {count} عنصر",
     "reader.readMinutes": "{min} دقيقة قراءة", "reader.sections": "{count} أقسام", "reader.expandAll": "توسيع الكل", "reader.collapseAll": "طي الكل",

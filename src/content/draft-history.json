@@ -40,6 +40,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "c0a44dc1ea78bc8b",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG253",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D06-T04": [
@@ -257,6 +270,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "e941fc4bea860af2",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ESICM-ARDS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T11": [
@@ -338,6 +363,20 @@
    {
     "hash": "53d40903cadac432",
     "recorded": "2026-11-20",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "07bc5756587b6620",
+    "recorded": "2026-11-21",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-ESICM-SHOCK-2014",
@@ -1144,6 +1183,32 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "215db467691b5abc",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "fc190ff14c080d4b",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T08": [
@@ -1198,6 +1263,28 @@
    {
     "hash": "4c21cacbf7c63e99",
     "recorded": "2026-11-16",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "611d945bb9ae2b8b",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "2bc966db93e6bd1b",
+    "recorded": "2026-11-21",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-KDIGO-AKI-2012"
@@ -2100,6 +2187,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1317f16a45e349ee",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-18": [
@@ -2246,6 +2347,42 @@
      "S-ISMP-HA"
     ],
     "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d87a16b3a11479c1",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "9fc3214c4da3ff2e",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e25b6ab681b3cf89",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
     "required_sources": 0,
     "issues": 0
    }
@@ -5724,6 +5861,18 @@
      "S-KDIGO-AKI-2012"
     ],
     "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "6e352be654246f79",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
     "required_sources": 3,
     "issues": 0
    }

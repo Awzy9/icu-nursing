@@ -171,7 +171,8 @@ D. NEWS2 bands can be applied without any change to pregnant patients and to chi
 
 ## 18. References
 - NICE. Suspected sepsis in people aged 16 or over (NG253). Published 19 Nov 2025; page updated 23 Sep 2026. https://www.nice.org.uk/guidance/ng253 (chapters "Could this be sepsis?" and "Evaluating risk"; accessed 2026-11-14)
-- Evans L, Rhodes A, Alhazzani W, et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med. 2021;47:1181-1247. doi:10.1007/s00134-021-06506-y. https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
+- Society of Critical Care Medicine / European Society of Intensive Care Medicine. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock **2026** (published 23 Mar 2026). Official recommendation statements including strength, certainty and clinical remarks, NOT the full publication or evidence tables. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 (recommendation page checked 2026-11-21; cited, not reproduced).
+- Evans L, Rhodes A, Alhazzani W, et al. **Historical/superseded 2021 edition:** Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med. 2021;47:1181-1247. doi:10.1007/s00134-021-06506-y. https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
 
 ## 19. Local protocol note
 Use your institution's early-warning score and sepsis pathway; pregnancy, children and neutropenia follow separate pathways.
