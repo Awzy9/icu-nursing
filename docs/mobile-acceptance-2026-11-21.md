@@ -15,6 +15,17 @@
 - [ ] Check that each referenced `/images/equipment/...` exists in `public/images/equipment` and license, source, credit and EN/AR alt/caption fields are populated.
 - [ ] Check ICU Nursing content labels remain clearly **draft, not clinical guidance**. A successful unit test is not a clinical approval.
 
+### New-user onboarding acceptance
+- [ ] On a fresh install with no learning history, a six-step tutorial appears automatically from Home once device settings have loaded.
+- [ ] The first-use tutorial shows the same current app destinations: Learn, Practice, Clinical Tools, Visual Library and Account.
+- [ ] All six steps are readable in English and Arabic, including large text and VoiceOver narration. The progress indicator updates and Back/Next controls work.
+- [ ] Skip dismisses the tutorial and enters Home; the tutorial does not reappear on the next app launch.
+- [ ] Completing the tour via Learning Path, Practice, Visual Library or Home opens that destination and does not reappear.
+- [ ] Existing local learning history is preserved and bypasses automatic onboarding. Bookmarks, attempts, case scores, progress and signed-in data are not modified by the tutorial.
+- [ ] The user can replay the tutorial from Home and Account without clearing progress or signing in.
+- [ ] The tutorial loads while offline (copy and illustrative icons are bundled; no photos or accounts are required).
+- [ ] No medical competence claims, patient instructions, sensitive permission prompts or mandatory sign-up appear in onboarding.
+
 ### iPhone TestFlight smoke test — human tester required
 1. Home: five tabs `Learn / Practice / Tools / Visuals / Account`, accessible Learn library and search, Continue Learning and progress.
 2. Tools: infusion calculator visible, mL/h 150 mL/2 h = 75 mL/h; 120 mL at 60 mL/h = 2 h; 0.2 mcg/kg/min at 50 kg and 100 mcg/mL = 6 mL/h. Verify zero/negative/empty fields do not produce a rate. Use fictional examples only.
