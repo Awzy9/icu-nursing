@@ -68,11 +68,13 @@ export function useProgressPullOnSignIn() {
   useEffect(() => {
     if (!ready || !signedIn || !rpc || email === lastSyncedEmail.current || catalog.status !== "ready") return;
     lastSyncedEmail.current = email;
+    let cancelled = false;
     (async () => {
       const kindOf = new Map<string, BookmarkKind>(catalog.data.map((e) => [e.key, e.type as BookmarkKind]));
       const [bookmarks, sessions, lessons, attempts] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => []), rpc.listWorkingLessons().catch(() => []), rpc.listWorkingAttempts().catch(() => [])]);
-      update((p) => mergeRemoteAttempts(mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons), attempts));
+      if (!cancelled) update((p) => mergeRemoteAttempts(mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons), attempts));
     })().catch(() => undefined);
+    return () => { cancelled = true; };
   }, [ready, signedIn, rpc, email, catalog, update]);
   useEffect(() => { if (!signedIn) lastSyncedEmail.current = null; }, [signedIn]);
 }
