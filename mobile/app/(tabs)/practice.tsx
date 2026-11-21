@@ -3,10 +3,11 @@ import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
 
 export default function Practice() {
-  const { t, progress } = useApp();
+  const { t, progress, rtl } = useApp();
   const cases = useCatalogList("cases");
   return (
     <Screen>
+      <NavCard href="/infusion-calculator" title={rtl ? "حاسبة مضخة التسريب" : "Infusion pump calculator"} body={rtl ? "حساب المعدل والمدة والجرعة للتدريب" : "Calculate mL/h, duration and dose-based rates"} icon="pill" accent="medications" />
       <NavCard href="/quiz" title={t("quiz.title")} body={t("hub.questionsBody")} icon="help" accent="topics" />
       <NavCard href="/labs" title={t("hub.labs")} body={t("hub.labsBody")} icon="flask" accent="equipment" />
       <SectionLabel>{t("type.cases")}</SectionLabel>
