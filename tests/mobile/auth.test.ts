@@ -124,7 +124,7 @@ describe("session lifecycle", () => {
     expect(revoked.refreshed).toBe(1); expect(revoked.session).toBeNull();
   });
   it("creates native Supabase accounts with validated names, a one-use CAPTCHA and the mobile callback", async () => {
-    const calls: any[] = [];
+    const calls: unknown[] = [];
     const client = {
       auth: {
         signUp: async (body: unknown) => { calls.push(body); return { data: { user: { id: "u1" }, session: null }, error: null }; },
