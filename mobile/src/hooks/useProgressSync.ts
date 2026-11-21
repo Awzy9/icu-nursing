@@ -73,6 +73,6 @@ export function useProgressPullOnSignIn() {
       const [bookmarks, sessions, lessons, attempts] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => []), rpc.listWorkingLessons().catch(() => []), rpc.listWorkingAttempts().catch(() => [])]);
       update((p) => mergeRemoteAttempts(mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons), attempts));
     })().catch(() => undefined);
-  }, [signedIn, rpc, email, catalog, update]);
+  }, [ready, signedIn, rpc, email, catalog, update]);
   useEffect(() => { if (!signedIn) lastSyncedEmail.current = null; }, [signedIn]);
 }
