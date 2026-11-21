@@ -1084,6 +1084,20 @@
     "gaps": 0,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "4efbf8e0a6b91b08",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-FDA-COI-2024",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "D01-T17": [

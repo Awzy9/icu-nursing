@@ -27,6 +27,32 @@ describe("transfusion-reaction recognition exercise data", () => {
     }
   });
 
+  it("treats fever and chills as a suspected reaction, not a confirmed benign diagnosis", () => {
+    const exercise = transfusionExercise("TRX-02");
+    expect(exercise).toBeDefined();
+    const correct = exercise!.question.options[exercise!.question.answer]!;
+    expect(correct).toContain("Stop the transfusion");
+    expect(correct).toContain("transfusion service");
+    expect(exercise!.question.explanation).toContain("FNHTR is a diagnosis of exclusion");
+    expect(exercise!.question.explanation).toContain("Only the responsible clinical/transfusion team");
+  });
+
+  it("does not downgrade wheeze with hypotension to a mild allergic reaction", () => {
+    const exercise = transfusionExercise("TRX-04");
+    expect(exercise).toBeDefined();
+    const correct = exercise!.question.options[exercise!.question.answer]!;
+    expect(correct).toContain("Stop the transfusion immediately");
+    expect(correct).toContain("epinephrine");
+    expect(exercise!.question.explanation).toContain("even without rash");
+    expect(exercise!.question.explanation).toContain("not a feature to dismiss");
+  });
+
+  it("does not imply that TACO requires an excessive transfusion volume", () => {
+    const explanation = transfusionExercise("TRX-03")!.question.explanation;
+    expect(explanation).toContain("relatively small transfused volume");
+    expect(explanation).toContain("TRALI");
+  });
+
   it("looks up a known exercise by key, and returns undefined for an unknown one", () => {
     expect(transfusionExercise(exercises[0]!.key)).toBe(exercises[0]);
     expect(transfusionExercise("NOT-REAL")).toBeUndefined();
