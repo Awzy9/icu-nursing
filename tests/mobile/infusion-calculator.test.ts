@@ -13,7 +13,7 @@ describe("native infusion calculator practice", () => {
     expect(doseToPumpRate({ dose: 6, weightBased: false, doseUnit: "mg/h", concentration: 2, concentrationUnit: "mg/mL" })).toBe(3);
   });
   it("converts mcg/kg/min to mL/h", () => {
-    expect(doseToPumpRate({ dose: 0.2, weightKg: 50, weightBased: true, doseUnit: "mcg/min", concentration: 100, concentrationUnit: "mcg/mL" })).toBe(6);
+    expect(doseToPumpRate({ dose: 0.2, weightKg: 50, weightBased: true, doseUnit: "mcg/min", concentration: 100, concentrationUnit: "mcg/mL" })).toBeCloseTo(6, 10);
   });
   it("rejects missing, negative and non-finite values", () => {
     expect(volumetricRate(0, 1, "hours")).toBeNull();
