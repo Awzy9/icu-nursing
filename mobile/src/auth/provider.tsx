@@ -9,8 +9,8 @@ import { readAuthConfig, type AuthConfig } from "./config";
 import { parseAuthCallback } from "./deepLinks";
 import { createSessionManager, type SessionManager } from "./session";
 
-interface AuthCtx { config: AuthConfig | null; manager: SessionManager | null; rpc: Rpc | null; email: string | null; notice: "callbackFailed" | null; recoveryReady: boolean; callbackPending: boolean; clearNotice(): void; clearRecovery(): void }
-const Ctx = createContext<AuthCtx>({ config: null, manager: null, rpc: null, email: null, notice: null, recoveryReady: false, callbackPending: false, clearNotice() {}, clearRecovery() {} });
+interface AuthCtx { config: AuthConfig | null; manager: SessionManager | null; rpc: Rpc | null; email: string | null; userId: string | null; notice: "callbackFailed" | null; recoveryReady: boolean; callbackPending: boolean; clearNotice(): void; clearRecovery(): void }
+const Ctx = createContext<AuthCtx>({ config: null, manager: null, rpc: null, email: null, userId: null, notice: null, recoveryReady: false, callbackPending: false, clearNotice() {}, clearRecovery() {} });
 export const useAuth = () => useContext(Ctx);
 
 const secure = { get: (k: string) => SecureStore.getItemAsync(k), set: (k: string, v: string) => SecureStore.setItemAsync(k, v), remove: (k: string) => SecureStore.deleteItemAsync(k) };
@@ -30,14 +30,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return { client, manager: createSessionManager(client), rpc: createRpc(client) };
   }, [config]);
   const [email, setEmail] = useState<string | null>(null);
+  const [userId, setUserId] = useState<string | null>(null);
   const [notice, setNotice] = useState<"callbackFailed" | null>(null);
   const [recoveryReady, setRecoveryReady] = useState(false);
   const [callbackPending, setCallbackPending] = useState(false);
 
   useEffect(() => {
     if (!built) return;
-    const sub = built.client.auth.onAuthStateChange((_e, s) => setEmail(s?.user.email ?? null));
-    void built.manager.current().then((s) => setEmail(s?.user.email ?? null));
+    const adopt = (s: { user: { id: string; email?: string } } | null) => {
+      setEmail(s?.user.email ?? null); setUserId(s?.user.id ?? null);
+    };
+    const sub = built.client.auth.onAuthStateChange((_e, s) => adopt(s));
+    void built.manager.current().then(adopt).catch(() => undefined);
     const app = AppState.addEventListener("change", (st) => { if (st === "active") void built.manager.onForeground(); }); // refresh only in the foreground
     const handled = new Set<string>();
     const handle = async (url: string | null) => {
@@ -58,6 +62,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return () => { sub.data.subscription.unsubscribe(); app.remove(); link.remove(); };
   }, [built, config]);
 
-  const value = useMemo<AuthCtx>(() => ({ config, manager: built?.manager ?? null, rpc: built?.rpc ?? null, email, notice, recoveryReady, callbackPending, clearNotice: () => setNotice(null), clearRecovery: () => setRecoveryReady(false) }), [config, built, email, notice, recoveryReady, callbackPending]);
+  const value = useMemo<AuthCtx>(() => ({ config, manager: built?.manager ?? null, rpc: built?.rpc ?? null, email, userId, notice, recoveryReady, callbackPending, clearNotice: () => setNotice(null), clearRecovery: () => setRecoveryReady(false) }), [config, built, email, userId, notice, recoveryReady, callbackPending]);
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
