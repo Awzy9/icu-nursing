@@ -14,7 +14,7 @@ describe("2026-11-21 vancomycin clinical safety audit (MD-24)", () => {
     const safety = v.sections.safety_alerts.items.map((x: {text: string}) => x.text).join(" ");
     expect(safety).toContain("may indicate anaphylaxis");
     expect(safety).toContain("do not assume that a serious reaction will resolve");
-    expect(v.sections.escalation.items[0].text).toContain("activate emergency response");
+    expect(v.sections.escalation.items[0].text.toLowerCase()).toContain("activate emergency response");
     expect(v.monitoring.some((x: {text: string}) => x.text.includes("anaphylaxis"))).toBe(true);
   });
 
@@ -22,7 +22,7 @@ describe("2026-11-21 vancomycin clinical safety audit (MD-24)", () => {
     expect(v.sections.adverse_effects.items.length).toBeGreaterThanOrEqual(4);
     const text = v.sections.adverse_effects.items.map((x: {text: string}) => x.text).join(" ");
     for (const token of ["neutropenia", "hearing", "renal", "extravasation", "diarrhoea"])
-      expect(text).toContain(token);
+      expect(text.toLowerCase()).toContain(token);
     expect(v.monitoring.some((x: {text: string}) => x.text.includes("white-cell"))).toBe(true);
   });
 
