@@ -130,6 +130,7 @@ export default function NursingLabScreen() {
       {workspace === "mistakes" ? (
         <>
           <H2>{ar ? "القرارات التي تحتاج مراجعة" : "Decisions to review"}</H2>
+          <NavCard href="/study" title={ar ? "مراجعة الأسئلة" : "Review missed questions"} body={ar ? "مراجعة متباعدة لأسئلة بنك الأسئلة" : "Spaced review of previously answered question-bank items"} icon="repeat" accent="skills" />
           {!missed.length ? <P muted>{ar ? "لا توجد أخطاء مسجلة في هذه الأنشطة بعد." : "No missed decisions recorded in the mobile Nursing Lab yet."}</P> : missed.map((item) => (
             <Button key={attemptId(item.activity.id, item.index)} variant="outline" label={item.title} onPress={() => {
               setWorkspace(item.activity.id);
