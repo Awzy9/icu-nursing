@@ -13,7 +13,7 @@ describe("diagnoses hidden until exercise is answered", () => {
         for (const ar of [false, true]) {
           const title = practiceHeading(kind as InterpretationKind, item.key, ar);
           expect(title).toBeTruthy();
-          expect(title.toLowerCase()).not.toContain(item.title[ar ? 1 : 0].toLowerCase());
+          expect(title.toLowerCase()).not.toContain(item.title[ar ? 1 : 0]!.toLowerCase());
         }
       }
     }
@@ -23,7 +23,7 @@ describe("diagnoses hidden until exercise is answered", () => {
       const summary = observationSummary(item.accessibleDescription);
       expect(summary.length).toBe(item.accessibleDescription.length);
       expect(summary.every((x) => x.length > 10)).toBe(true);
-      expect(summary.join(" ").toLowerCase()).not.toContain(item.title[0].toLowerCase());
+      expect(summary.join(" ").toLowerCase()).not.toContain(item.title[0]!.toLowerCase());
     }
   });
 });
