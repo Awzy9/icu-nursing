@@ -54,7 +54,9 @@ describe("bilingual new-user onboarding", () => {
 
   it("is skippable, replayable, accessible and links to live destination screens", () => {
     const tour = source("app/onboarding.tsx");
-    const home = source("app/(tabs)/index.tsx");
+    const home = source("app/(tabs)/home.tsx");
+    const root = source("app/(tabs)/index.tsx");
+    const tabs = source("app/(tabs)/_layout.tsx");
     const account = source("app/(tabs)/account.tsx");
     const layout = source("app/_layout.tsx");
     expect(tour).toContain("Skip tutorial");
@@ -66,6 +68,12 @@ describe("bilingual new-user onboarding", () => {
       expect(() => source(`app/${p}`)).not.toThrow();
     }
     expect(home).toContain('router.replace("/onboarding")');
+    expect(root).toContain('<Redirect href="/(tabs)/home" />');
+    expect(tabs).toContain('<Tabs.Screen name="home"');
+    expect(tabs).toContain('<Tabs.Screen name="index" options={{ href: null }}');
+    expect(tour.match(/navigate\("\/\(tabs\)\/home"\)/g)).toHaveLength(2);
+    expect(tour).not.toContain('navigate("/(tabs)/index")');
+    expect(tour).toContain('<Screen banner={false} safeAreaTop>');
     expect(home).toContain('href: "/onboarding"');
     expect(account).toContain('href="/onboarding"');
     expect(layout).toContain('name="onboarding"');
