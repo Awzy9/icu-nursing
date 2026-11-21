@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { AuthProvider } from "../src/auth/provider";
+import { AuthProvider, useAuth } from "../src/auth/provider";
 import { useProgressPullOnSignIn } from "../src/hooks/useProgressSync";
 import { AppProvider, useApp } from "../src/state/app";
 import { dark } from "../src/ui/theme";
@@ -66,4 +66,10 @@ function Shell() {
     </>
   );
 }
-export default function RootLayout() { return <AppProvider><AuthProvider><Shell /></AuthProvider></AppProvider>; }
+function ScopedShell() {
+  const { userId } = useAuth();
+  // Remounting the state provider on account transitions makes it impossible to
+  // show a different user's local notes/bookmarks after sign-out or account switch.
+  return <AppProvider key={userId ?? "guest"} accountId={userId}><Shell /></AppProvider>;
+}
+export default function RootLayout() { return <AuthProvider><ScopedShell /></AuthProvider>; }
