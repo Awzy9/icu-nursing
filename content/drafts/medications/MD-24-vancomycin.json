@@ -155,7 +155,28 @@
    "support": "partial",
    "items": [
     {
-     "text": "The US product label describes infusion-related pruritus/flushing/hypotension, including rare shock; it also reports anaphylaxis, kidney injury, hearing loss or tinnitus, phlebitis/extravasation injury, severe delayed skin reactions, antibiotic-associated diarrhoea and leukopenia/neutropenia (among other events). Frequency and causality vary by event and population; do not assume an infusion reaction is harmless.",
+     "text": "Infusion reactions include pruritus, erythema/flushing, urticaria, chest or back discomfort, and hypotension; the label also reports anaphylaxis. Respiratory symptoms or circulatory instability require emergency assessment rather than assuming a transient infusion response.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    },
+    {
+     "text": "Serious renal toxicity, sometimes interstitial nephritis, can occur; risk increases with higher exposure, pre-existing renal dysfunction and other nephrotoxic medications. Hearing loss, tinnitus and vertigo have also been reported, with important long-term risks in susceptible patients.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    },
+    {
+     "text": "The label describes reversible neutropenia and less common platelet or other blood-count changes, particularly relevant during prolonged courses; severe skin reactions, phlebitis and tissue injury after extravasation are additional recognized hazards.",
+     "support": "sourced",
+     "sources": [
+      "L-VANCOMYCIN"
+     ]
+    },
+    {
+     "text": "Antibiotic-associated diarrhoea, including C. difficile-related disease, can occur during or after treatment. Clinical assessment and tests are directed by the treating team rather than automatically attributing all diarrhoea to the infusion.",
      "support": "sourced",
      "sources": [
       "L-VANCOMYCIN"
