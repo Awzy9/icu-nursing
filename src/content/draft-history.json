@@ -3577,6 +3577,23 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "787dae2e7e2ec6d1",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-POTASSIUM",
+     "S-AHRQ-TS",
+     "S-DAILYMED-KCL-CONC-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HAM-2024",
+     "S-NSW-IVK-2025",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-20": [
