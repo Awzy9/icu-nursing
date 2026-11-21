@@ -1557,6 +1557,22 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "9ce7acd4c34ccf20",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ARUP-ANTICOAG",
+     "S-ARUP-DIC",
+     "S-BSH-HIT-2023",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-PHARM-CH",
+     "S-UHS-COAG"
+    ],
+    "gaps": 0,
+    "required_sources": 6,
+    "issues": 0
    }
   ],
   "XQ-01": [
