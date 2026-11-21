@@ -21,8 +21,8 @@ const SCENARIOS: { key: string; label: [string, string]; params: Partial<VentPar
     "المقاومة المرتفعة ترفع ضغط الذروة أكثر بكثير من الهضبة - الفرق الكبير بينهما يشير إلى مجرى الهواء أو الدائرة (إفرازات، تشنج قصبي، أنبوب منحني)، وليس نسيج الرئة نفسه.",
   ] },
   { key: "disconnect", label: ["Circuit disconnect", "انفصال الدائرة"], params: { circuitDisconnected: true }, note: [
-    "Pressure never rises and almost no volume is delivered - the low-pressure/low-volume alarm should fire immediately. Check the circuit and reconnect before troubleshooting anything else.",
-    "لا يرتفع الضغط ولا يكاد يُسلَّم أي حجم - يجب أن يُطلق إنذار الضغط المنخفض فوراً. تحقق من الدائرة وأعد توصيلها قبل أي خطوة أخرى.",
+    "In this simplified disconnected-circuit scenario, delivered volume and pressure rise are severely reduced and a simulated low-pressure alert appears. Assess the patient and adequacy of ventilation immediately, summon help if unstable, then inspect the airway and circuit using your unit's procedure. A real ventilator's alarm behaviour varies.",
+    "في سيناريو انفصال الدائرة المبسّط، ينخفض الحجم المُسلّم وارتفاع الضغط بشدة ويظهر إنذار انخفاض ضغط افتراضي. قيّم المريض وفعالية التهوية فوراً، واطلب المساعدة إذا كان غير مستقر، ثم افحص مجرى الهواء والدائرة وفق إجراءات وحدتك. تختلف استجابة الإنذارات بين أجهزة التنفس الحقيقية.",
   ] },
 ];
 
