@@ -47,7 +47,7 @@ export default function OnboardingTutorial() {
         </Pressable>
       </View>
 
-      <View accessibilityLabel={ar ? "تقدم الدليل" : "Tutorial progress"} style={{ flexDirection: "row", gap: 5, minHeight: 6 }}>
+      <View accessibilityRole="progressbar" accessibilityValue={{ min: 1, max: onboardingSteps.length, now: index + 1 }} accessibilityLabel={ar ? "تقدم الدليل" : "Tutorial progress"} style={{ flexDirection: "row", gap: 5, minHeight: 6 }}>
         {onboardingSteps.map((part, i) => (
           <View key={part.id} style={{ flex: 1, height: 6, borderRadius: radii.pill, backgroundColor: i <= index ? palette.primary : palette.border }} />
         ))}
