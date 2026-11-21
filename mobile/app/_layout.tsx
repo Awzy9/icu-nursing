@@ -16,6 +16,9 @@ function Shell() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="onboarding" options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="signin" options={{ title: t("auth.signIn") }} />
+        <Stack.Screen name="signup" options={{ title: t("auth.signUp") }} />
+        <Stack.Screen name="auth/callback" options={{ title: t("tab.account") }} />
+        <Stack.Screen name="reset-password" options={{ title: t("auth.recoveryTitle") }} />
         <Stack.Screen name="delete-account" options={{ title: t("del.title") }} />
         <Stack.Screen name="quiz" options={{ title: t("quiz.title") }} />
         <Stack.Screen name="quiz/[key]" options={{ title: t("quiz.title") }} />
