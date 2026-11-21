@@ -61,11 +61,14 @@ export default function InfusionCalculatorScreen() {
       : doseToPumpRate({ dose: doseNumber, weightKg: weightNumber, weightBased, doseUnit, concentration: concentrationNumber, concentrationUnit });
   const resultUnit = mode === "duration" ? "h" : "mL/h";
   const hours = durationUnit === "minutes" ? quantityNumber / 60 : quantityNumber;
+  const totalDose = doseNumber * (weightBased ? weightNumber : 1);
+  const doseMgHour = totalDose * (doseUnit === "mcg/min" ? 60 / 1000 : 1);
+  const concentrationMgMl = concentrationNumber * (concentrationUnit === "mcg/mL" ? 1 / 1000 : 1);
   const formula = result === null ? null : mode === "volumetric"
     ? `${fmt(volumeNumber)} mL ÷ ${fmt(hours)} h = ${fmt(result)} mL/h`
     : mode === "duration"
       ? `${fmt(volumeNumber)} mL ÷ ${fmt(quantityNumber)} mL/h = ${fmt(result)} h`
-      : `${fmt(doseNumber)} ${weightBased ? (doseUnit === "mg/h" ? "mg/kg/h" : "mcg/kg/min") : doseUnit}${weightBased ? ` × ${fmt(weightNumber)} kg` : ""} ÷ ${fmt(concentrationNumber)} ${concentrationUnit} = ${fmt(result)} mL/h (after unit conversion)`;
+      : `${fmt(doseMgHour)} mg/h ÷ ${fmt(concentrationMgMl)} mg/mL = ${fmt(result)} mL/h` ;
 
   return (
     <Screen>
