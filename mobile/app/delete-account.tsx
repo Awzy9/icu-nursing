@@ -27,7 +27,7 @@ export default function DeleteAccount() {
       <H1>{t("del.title")}</H1>
       <Callout tone="danger">{t("del.body")}</Callout>
       <P>{t("del.backups")}</P>
-      {recent === false ? <Callout tone="warn">{t("del.recent")}</Callout> : null}
+      {recent === false ? <><Callout tone="warn">{t("del.recent")}</Callout><Button label={t("del.reauth")} variant="outline" onPress={() => { void manager.signOut().then(() => router.replace("/signin")); }} /></> : null}
       <P>{t("del.confirmLabel")}</P>
       <View style={{ gap: space.md }}>
         <TextInput accessibilityLabel={t("del.confirmLabel")} value={typed} onChangeText={setTyped} autoCapitalize="none" keyboardType="email-address" style={{ minHeight: MIN_TARGET, borderWidth: 1.5, borderColor: palette.border, borderRadius: 10, paddingHorizontal: space.md, color: palette.text, textAlign: rtl ? "right" : "left" }} />

@@ -29,7 +29,6 @@ export default function Account() {
           <P>{rtl ? "الدروس المكتملة" : "Completed lessons"}: {progress.completed.length} · {rtl ? "المحفوظات" : "Bookmarks"}: {progress.bookmarks.length}</P>
           <NavCard href="/study" title={t("study.title")} body={rtl ? "تابع المراجعة وتقدمك" : "Review your learning progress"} icon="repeat" accent="study" />
           <Button label={t("auth.signOut")} variant="outline" onPress={() => { clearNotice(); void manager?.signOut(); }} />
-          <Link href="/delete-account" asChild><Button label={t("del.open")} variant="danger" onPress={() => undefined} /></Link>
         </Card>
       ) : (
         <Card>
@@ -80,8 +79,14 @@ export default function Account() {
       <SectionLabel>{t("account.deletionInfo")}</SectionLabel>
       <Card>
         <P muted>{t("account.deletionBody")}</P>
-        {config ? null : <Callout>{t("auth.accountMissing")}</Callout>}
-        <Button label={t("account.deletionLink")} variant="outline" onPress={() => Linking.openURL(`${base}/account-deletion`)} />
+        {!config ? <Callout>{t("auth.accountMissing")}</Callout> : email ? (
+          <Link href="/delete-account" asChild><Button label={t("del.open")} variant="danger" onPress={() => undefined} /></Link>
+        ) : (
+          <>
+            <P muted small>{t("account.deletionSignIn")}</P>
+            <Link href="/signin" asChild><Button label={t("auth.signIn")} variant="outline" onPress={() => undefined} /></Link>
+          </>
+        )}
       </Card>
     </Screen>
   );
