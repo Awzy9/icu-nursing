@@ -3156,15 +3156,20 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-IDSA-VANCO-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 0,
-   "hash": "51f910a2daf27d18"
+   "hash": "b4d148be55e8a7ee"
   },
   {
    "key": "MD-25",
