@@ -59,7 +59,7 @@ function ActivityRunner({ activity, start = 0, single = false }: { activity: Act
           {step.readouts.map(([label, value]) => <P key={label}>{label}: {value}</P>)}
         </Card>
       ) : null}
-      {"equipment" in step && step.equipment ? <ModuleVisuals moduleKey={step.equipment} /> : null}
+      {"equipment" in step && step.equipment ? <ModuleVisuals moduleKey={step.equipment} hideTeaching={!checked} /> : null}
       {"flowComparison" in step && step.flowComparison ? (
         <Card>
           <P small muted>Compare expiratory flow against the zero-flow line.</P>
