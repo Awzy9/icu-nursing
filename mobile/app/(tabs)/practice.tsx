@@ -8,6 +8,8 @@ export default function Practice() {
   return (
     <Screen>
       <NavCard href="/infusion-calculator" title={rtl ? "حاسبة مضخة التسريب" : "Infusion pump calculator"} body={rtl ? "حساب المعدل والمدة والجرعة للتدريب" : "Calculate mL/h, duration and dose-based rates"} icon="pill" accent="medications" />
+      <NavCard href="/vent-lab" title={t("vent.title")} body={t("vent.intro")} icon="pulse" accent="equipment" />
+      <NavCard href="/hemo-lab" title={t("hemo.title")} body={t("hemo.intro")} icon="heart" accent="practice" />
       <NavCard href="/quiz" title={t("quiz.title")} body={t("hub.questionsBody")} icon="help" accent="topics" />
       <NavCard href="/labs" title={t("hub.labs")} body={t("hub.labsBody")} icon="flask" accent="equipment" />
       <SectionLabel>{t("type.cases")}</SectionLabel>
