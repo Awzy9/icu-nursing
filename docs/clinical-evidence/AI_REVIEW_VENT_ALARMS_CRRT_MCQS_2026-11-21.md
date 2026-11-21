@@ -28,3 +28,7 @@
 - Preserve fictional-patient and educational-only labels. The current work is **targeted AI editorial/evidence review, not professional sign-off**.
 
 **Counts for this batch:** 2 live simulator cores, 2 simulator views, 1 native translation file, 1 draft MCQ set, 2 regression test files and 2 generated audit records updated. **0 newly clinically approved units; no TestFlight submission in this batch.**
+
+## CI revalidation requested 2026-11-21
+
+This non-clinical audit-log note requests fresh pull-request workflow checks after subsequent changes to `main`. All clinical review and publication flags remain unchanged. Merge only after required automated checks succeed; the merge itself does not authorize TestFlight release or clinical publication.
