@@ -76,7 +76,7 @@ describe("clinical evidence corrections — November 2026", () => {
 
   it("makes likely HIT different from a single low-probability platelet fall and includes all heparin sources", () => {
     const crtt = read("content/drafts/batch-07/D04-T09-crrt-principles-partial.md");
-    expect(crtt).toContain("clinically suspected");
+    expect(crtt).toContain("HIT is considered likely on urgent clinical probability assessment");
     expect(crtt).toContain("line flushes and catheter locks");
     expect(crtt).toContain("low-probability suspected HIT");
     expect(crtt).not.toContain('the extent of "all heparin" in flushes is local policy');
