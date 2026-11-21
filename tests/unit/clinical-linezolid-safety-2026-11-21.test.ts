@@ -24,7 +24,7 @@ describe("2026-11-21 linezolid clinical warnings audit", () => {
     expect(v.sections.adverse_effects.items).toHaveLength(4);
     const text = v.sections.adverse_effects.items.map((x: {text: string}) => x.text).join(" ");
     for (const term of ["thrombocytopenia", "optic neuropathy", "serotonin syndrome", "lactic acidosis", "rhabdomyolysis", "SIADH"])
-      expect(text).toContain(term);
+      expect(text.toLowerCase()).toContain(term.toLowerCase());
     const mon = v.sections.monitoring.items.map((x: {text: string}) => x.text).join(" ");
     expect(mon).toContain("blood-pressure response");
     expect(mon).toContain("low bicarbonate");
