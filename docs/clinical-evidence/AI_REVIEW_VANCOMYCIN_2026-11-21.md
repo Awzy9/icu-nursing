@@ -19,6 +19,10 @@
 2. Rybak MJ et al. American Society of Health-System Pharmacists / Infectious Diseases Society of America / Pediatric Infectious Diseases Society / Society of Infectious Diseases Pharmacists, *Revised consensus for therapeutic monitoring of vancomycin for serious MRSA infections*, 2020 official IDSA executive summary: https://www.idsociety.org/practice-guideline/vancomycin/ . Executive summary read (target rationale, 2009 trough history, invasive-MRSA limits). This is not a full re-read of every consensus section.
 3. Original `L-VANCOMYCIN` source record: same Glenmark manufacturer and set ID; confirms product-label currency against current DailyMed. No false attribution to other manufacturers.
 
+## Licensing boundary for the 2020 AUC guideline
+
+The IDSA-hosted vancomycin consensus has been registered as **RED (cite-only)** because commercial reuse permissions were not established. Its AUC-based approach for serious invasive MRSA is **documented here for future expert review only**; it is **not cited as a source or imported as an AUC target or method in MD-24**, where monitoring language derives only from already-registered, non-RED sources. No dosing or exposure algorithm is supplied. This preserves the medication evidence-audit gate requiring zero RED sources.
+
 ## Remaining work and governance
 
 - No antibiotic indication review beyond this product's label; the AUC-monitoring consensus is mainly supported by data in **serious invasive MRSA infection**, especially complex bacteremia; avoid universalizing to other organisms, infections or unvalidated clinical settings.
