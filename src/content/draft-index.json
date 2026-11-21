@@ -1136,6 +1136,16 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-BTF-DC-2020",
+     "licence_class": "GREEN",
+     "verified": "2026-11-21"
+    },
+    {
+     "id": "S-BTF-PTBI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-BTF-TBI-4TH",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -1144,7 +1154,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "6be7a8b058c8d3a5"
+   "hash": "31491177a655bc8b"
   },
   {
    "key": "D08-T02",
