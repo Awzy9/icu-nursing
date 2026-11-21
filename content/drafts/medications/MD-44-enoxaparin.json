@@ -99,7 +99,7 @@
    ]
   },
   "safety_alerts": {
-   "support": "full",
+   "support": "partial",
    "items": [
     {
      "text": "Boxed warning: epidural or spinal haematomas may occur in patients anticoagulated with low molecular weight heparins who are receiving neuraxial anaesthesia or undergoing spinal puncture.",
@@ -130,7 +130,7 @@
      ]
     },
     {
-     "text": "For severe renal impairment (creatinine clearance below 30 mL/min), the current US branded enoxaparin label requires indication-specific prescriber dose adjustment because exposure and bleeding risk increase. Review renal function and obtain a pharmacy/prescriber check of the existing order; this educational draft does not supply dose instructions.",
+     "text": "In severe renal impairment, the current US branded enoxaparin label requires indication-specific prescriber dose adjustment because exposure and bleeding risk can rise. Review renal function and obtain a pharmacy/prescriber check of the existing order; this educational draft does not supply dosing thresholds or regimens.",
      "support": "partial",
      "sources": [
       "L-ENOXAPARIN"
