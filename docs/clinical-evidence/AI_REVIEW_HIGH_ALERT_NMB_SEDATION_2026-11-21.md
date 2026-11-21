@@ -6,7 +6,7 @@
 
 ## Change trace
 - Marked all five `high_alert:true` while preserving the population and **route** limitation for sedatives. The flag means severe potential harm from medication errors in acute care; it is not a universal clinical administration instruction.
-- Added concise verification/monitoring and airway-risk alerts. Original regulator-label source IDs accompany the ISMP classification when alerts include clinical warning interpretation, rather than falsely attributing clinical findings solely to the list.
+- Preserved existing manufacturer-label safety alerts; changed the high-alert classification flag and scope note without importing ISMP-protected table content into medication instruction fields. The independent ISMP source trace is retained in this review report, not in the RED-free medication sources array.
 - Did not change labelled indications, doses, routes, preparation, concentrations, pharmacology or administration steps.
 - No new external materials reproduced: ISMP copyright permits internal noncommercial reproduction under conditions; only its short classification facts are **independently paraphrased** here.
 
