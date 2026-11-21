@@ -5,6 +5,14 @@ export type DurationUnit = "hours" | "minutes";
 export type DoseUnit = "mg/h" | "mcg/min";
 export type ConcentrationUnit = "mg/mL" | "mcg/mL";
 
+/** Parse educational decimal entry without silently accepting hex, exponent or Infinity. */
+export function parsePositiveDecimal(raw: string): number | null {
+  const text = raw.trim().replace(",", ".");
+  if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(text)) return null;
+  const n = Number(text);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
 function positive(value: number): boolean {
   return Number.isFinite(value) && value > 0;
 }
@@ -14,7 +22,7 @@ function answer(value: number): number | null {
 
 /** Convert a known volume and a duration to a volumetric rate in mL/h. */
 export function volumetricRate(volumeMl: number, duration: number, unit: DurationUnit): number | null {
-  if (!positive(volumeMl) || !positive(duration)) return null;
+  if (!positive(volumeMl) || !positive(duration) || (unit !== "hours" && unit !== "minutes")) return null;
   return answer(volumeMl / (unit === "minutes" ? duration / 60 : duration));
 }
 
@@ -36,6 +44,8 @@ export interface DoseRateInput {
 /** Calculate mL/h after converting the dose and concentration to mg/h and mg/mL. */
 export function doseToPumpRate(input: DoseRateInput): number | null {
   if (!positive(input.dose) || !positive(input.concentration)) return null;
+  if ((input.doseUnit !== "mg/h" && input.doseUnit !== "mcg/min")
+    || (input.concentrationUnit !== "mg/mL" && input.concentrationUnit !== "mcg/mL")) return null;
   if (input.weightBased && !positive(input.weightKg ?? Number.NaN)) return null;
   const totalDose = input.dose * (input.weightBased ? input.weightKg! : 1);
   const doseMgHour = totalDose * (input.doseUnit === "mcg/min" ? 60 / 1000 : 1);

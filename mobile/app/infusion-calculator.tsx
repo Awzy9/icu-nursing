@@ -1,17 +1,14 @@
 import { useState } from "react";
 import { Linking, Pressable, Text, TextInput, View } from "react-native";
 import { Stack } from "expo-router";
-import { doseToPumpRate, infusionDuration, volumetricRate, type ConcentrationUnit, type DoseUnit, type DurationUnit } from "../src/core/infusion-calculator";
+import { doseToPumpRate, infusionDuration, parsePositiveDecimal, volumetricRate, type ConcentrationUnit, type DoseUnit, type DurationUnit } from "../src/core/infusion-calculator";
 import { useApp } from "../src/state/app";
 import { Callout, Card, Chip, H1, H2, NavCard, P, Screen } from "../src/ui/components";
 import { radii, space, type } from "../src/ui/theme";
 
 type Mode = "volumetric" | "duration" | "dose";
-const parsePositive = (raw: string): number => {
-  if (!raw.trim()) return Number.NaN;
-  const value = Number(raw.trim().replace(",", "."));
-  return Number.isFinite(value) && value > 0 ? value : Number.NaN;
-};
+// Shared with unit-tested pure core; null is converted to NaN for math invalidation.
+const parsePositive = (raw: string): number => parsePositiveDecimal(raw) ?? Number.NaN;
 const fmt = (number: number) => String(Number(number.toPrecision(6)));
 
 function NumberField({ label, value, onChange, unit }: { label: string; value: string; unit: string; onChange: (text: string) => void }) {
@@ -80,11 +77,15 @@ export default function InfusionCalculatorScreen() {
         "أداة تعليمية بقيم افتراضية فقط. لا تستخدم هذه الشاشة لضبط مضخة المريض؛ اتبع إجراءات المؤسسة المعتمدة للتحقق من الأوامر والتركيز والجرعات."
       )}</Callout>
 
+      <P muted small>{label(
+        "Changing a calculation mode or unit clears the affected input, so you must re-enter its value for the selected unit.",
+        "يؤدي تغيير طريقة الحساب أو وحدة القياس إلى مسح القيمة المتأثرة لتعيد إدخالها بوحدتها الصحيحة."
+      )}</P>
       <H2>{label("What would you like to calculate?", "ماذا تريد أن تحسب؟")}</H2>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
-        <Chip label={label("Rate (mL/h)", "المعدل")} selected={mode === "volumetric"} onPress={() => setMode("volumetric")} />
-        <Chip label={label("Duration", "المدة")} selected={mode === "duration"} onPress={() => setMode("duration")} />
-        <Chip label={label("Dose to rate", "الجرعة إلى معدل")} selected={mode === "dose"} onPress={() => setMode("dose")} />
+        <Chip label={label("Rate (mL/h)", "المعدل")} selected={mode === "volumetric"} onPress={() => { if (mode !== "volumetric") { setMode("volumetric"); setQuantity(""); } }} />
+        <Chip label={label("Duration", "المدة")} selected={mode === "duration"} onPress={() => { if (mode !== "duration") { setMode("duration"); setQuantity(""); } }} />
+        <Chip label={label("Dose to rate", "الجرعة إلى معدل")} selected={mode === "dose"} onPress={() => { if (mode !== "dose") { setMode("dose"); setDose(""); setWeight(""); setConcentration(""); } }} />
       </View>
 
       <Card>
@@ -92,19 +93,19 @@ export default function InfusionCalculatorScreen() {
           <>
             <P>{label("Dose basis", "طريقة حساب الجرعة")}</P>
             <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
-              <Chip label={label("Fixed dose", "جرعة ثابتة")} selected={!weightBased} onPress={() => setWeightBased(false)} />
-              <Chip label={label("Weight-based", "حسب الوزن")} selected={weightBased} onPress={() => setWeightBased(true)} />
+              <Chip label={label("Fixed dose", "جرعة ثابتة")} selected={!weightBased} onPress={() => { if (weightBased) { setWeightBased(false); setDose(""); setWeight(""); } }} />
+              <Chip label={label("Weight-based", "حسب الوزن")} selected={weightBased} onPress={() => { if (!weightBased) { setWeightBased(true); setDose(""); setWeight(""); } }} />
             </View>
             <NumberField label={label("Dose rate", "معدل الجرعة")} value={dose} onChange={setDose} unit={weightBased ? (doseUnit === "mg/h" ? "mg/kg/h" : "mcg/kg/min") : doseUnit} />
             <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
-              <Chip label={weightBased ? "mg/kg/h" : "mg/h"} selected={doseUnit === "mg/h"} onPress={() => setDoseUnit("mg/h")} />
-              <Chip label={weightBased ? "mcg/kg/min" : "mcg/min"} selected={doseUnit === "mcg/min"} onPress={() => setDoseUnit("mcg/min")} />
+              <Chip label={weightBased ? "mg/kg/h" : "mg/h"} selected={doseUnit === "mg/h"} onPress={() => { if (doseUnit !== "mg/h") { setDoseUnit("mg/h"); setDose(""); } }} />
+              <Chip label={weightBased ? "mcg/kg/min" : "mcg/min"} selected={doseUnit === "mcg/min"} onPress={() => { if (doseUnit !== "mcg/min") { setDoseUnit("mcg/min"); setDose(""); } }} />
             </View>
             {weightBased ? <NumberField label={label("Example weight", "الوزن الافتراضي")} value={weight} onChange={setWeight} unit="kg" /> : null}
             <NumberField label={label("Solution concentration", "تركيز المحلول")} value={concentration} onChange={setConcentration} unit={concentrationUnit} />
             <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
-              <Chip label="mg/mL" selected={concentrationUnit === "mg/mL"} onPress={() => setConcentrationUnit("mg/mL")} />
-              <Chip label="mcg/mL" selected={concentrationUnit === "mcg/mL"} onPress={() => setConcentrationUnit("mcg/mL")} />
+              <Chip label="mg/mL" selected={concentrationUnit === "mg/mL"} onPress={() => { if (concentrationUnit !== "mg/mL") { setConcentrationUnit("mg/mL"); setConcentration(""); } }} />
+              <Chip label="mcg/mL" selected={concentrationUnit === "mcg/mL"} onPress={() => { if (concentrationUnit !== "mcg/mL") { setConcentrationUnit("mcg/mL"); setConcentration(""); } }} />
             </View>
           </>
         ) : (
@@ -118,8 +119,8 @@ export default function InfusionCalculatorScreen() {
             />
             {mode === "volumetric" ? (
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
-                <Chip label={label("Hours", "ساعات")} selected={durationUnit === "hours"} onPress={() => setDurationUnit("hours")} />
-                <Chip label={label("Minutes", "دقائق")} selected={durationUnit === "minutes"} onPress={() => setDurationUnit("minutes")} />
+                <Chip label={label("Hours", "ساعات")} selected={durationUnit === "hours"} onPress={() => { if (durationUnit !== "hours") { setDurationUnit("hours"); setQuantity(""); } }} />
+                <Chip label={label("Minutes", "دقائق")} selected={durationUnit === "minutes"} onPress={() => { if (durationUnit !== "minutes") { setDurationUnit("minutes"); setQuantity(""); } }} />
               </View>
             ) : null}
           </>
