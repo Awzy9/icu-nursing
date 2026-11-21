@@ -11,8 +11,8 @@
         "توفّر القسطرة الوعائية مزدوجة التجويف مساراً لسحب الدم من المريض (الوصول) وآخر لإعادته. غالباً ما تُميّز الخطوط بالألوان، لكن التوصيلات والترتيب يختلفان بين الأجهزة؛ تتبّع الأنابيب والملصقات الفعلية ولا تعتمد على الأحمر والأزرق وحدهما."
       ],
       "alarms": [
-        "High access (pre-filter) pressure",
-        "ضغط الوصول (قبل الفلتر) المرتفع"
+        "Access-pressure alarm (device-specific)",
+        "إنذار ضغط الوصول (حسب الجهاز)"
       ]
     },
     {
@@ -38,8 +38,8 @@
         "يحتوي المرشح الدموي على غشاء شبه منفذ لتبادل السوائل والمذابات. يمثّل ضغط الغشاء (TMP) فرق الضغط عبر الغشاء بين جانب الدم وجانب سائل الطرح. أما فرق ضغط المرشح (ΔP) فيعكس المقاومة على امتداد مسار الدم داخل المرشح. وهما قياسان مختلفان، وقد تشير اتجاهاتهما إلى انسداد مسام الغشاء أو التخثر، لكنها لا تثبت التشخيص وحدها."
       ],
       "alarms": [
-        "High filter (transmembrane) pressure",
-        "ضغط الفلتر (عبر الغشاء) المرتفع"
+        "TMP or filter pressure-drop alarm",
+        "إنذار ضغط الغشاء (TMP) أو فرق ضغط المرشح (ΔP)"
       ]
     },
     {
@@ -104,8 +104,8 @@
         "قد يعرض الجهاز ضغوط الوصول وما قبل المرشح والعودة وسائل الطرح، إضافةً إلى ضغط الغشاء المحسوب (TMP) وفرق ضغط المرشح (ΔP). يعكس TMP الضغط عبر الغشاء، بينما يعكس ΔP فرق الضغط على مسار الدم عبر المرشح. راجع اتجاهاتها وحدود الجهاز المحدد مع تقييم المريض؛ ولا تكفي تغيّرات الضغط وحدها لإثبات التخثر أو وضع القسطرة أو إعادة الدوران."
       ],
       "alarms": [
-        "Low access pressure / suction event",
-        "ضغط الوصول المنخفض / حدث شفط"
+        "Very negative access pressure / possible suction",
+        "ضغط وصول سالب جداً / احتمال شفط"
       ]
     }
   ],
@@ -116,7 +116,7 @@
         "Access-pressure alarm after repositioning",
         "إنذار ضغط الوصول بعد تغيير وضعية المريض"
       ],
-      "vignette": "The machine alarms for high access pressure. The patient's femoral access line is at the groin, and the patient has just been repositioned.",
+      "vignette": "The machine shows an access-pressure alarm after the patient's position was adjusted. The patient has femoral dialysis access. The displayed pressure and its alarm meaning must be checked on this device.",
       "question": {
         "prompt": "What is the most appropriate first nursing action?",
         "options": [
