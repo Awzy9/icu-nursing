@@ -1,0 +1,31 @@
+# ICU Nursing — high-risk scenario and infusion-practice audit
+
+**Date:** 2026-11-21  
+**Scope:** Two unpublished case specifications (SC-01 septic shock, SC-04 ventilator alarm) and the four existing learner-facing infusion-calculation practice cases. This is **AI-assisted targeted evidence assessment, not independent clinician review**, and no material has been clinically approved or published through this review.
+
+## Source comparison and corrections
+
+| Material | Finding in original authored source | Change | Residual uncertainty / action |
+|---|---|---|---|
+| SC-01 septic shock, step 2 (peripheral norepinephrine) | Wording correctly discouraged unplanned infusion interruption, but **could be misapplied to suspected extravasation**, a scenario requiring urgent cessation through the affected line. | Explicitly distinguishes monitored continued delivery through a functioning cannula from suspected extravasation requiring immediate action. Revised patient monitoring and safe backup access as tasks for the trained team. | Site checks, peripheral line requirements and permitted duration vary by adult sepsis guideline, drug label, trained team and local SOP; no universal schedule, rate or site was introduced. |
+| SC-01 septic shock, step 3 (pale, cool, swollen site) | The correct answer stopped infusion and escalated, but omitted **catheter preservation for potential aspiration** and **urgent replacement access** to protect a patient still needing a vasopressor. | Correct choice now says stop infusion **through the affected cannula immediately** and activate the local injury/alternative-access pathway. Explanation clarifies avoid flushing/removing before trained-team protocol, need for alternative access and continued hemodynamic monitoring. No injection/antidote dose or automatic restart rule. | Independent nurse educator, pharmacist and local policy review needed before use as a bedside procedure. The correct action's clinical direction is supported; details differ across institutions. |
+| SC-04 ventilator alarm, step 1 to 2 | Good response reported that a kink was found; the next vignette contradicted it by stating a cause could not be found. | Now notes suspected circuit tension but **unresolved ventilation adequacy**, then a continued deterioration despite rapid check. Correct next response calls skilled help and secures effective alternative ventilation according to local emergency pathway. | Generic wording cannot substitute for the actual ventilator emergency guide, airway assessment/trained staff and unit policy; clinical/RT sign-off pending. |
+| Infusion cases INF-01..04 | All four correct answers were in option index 0, allowing learners to answer correctly without calculating. | Reordered the same numbers to distribute correct positions across A, B, C, D. Calculated rates and numeric distractors were not changed. Added explicit clarification that fictional calculations are **not pump orders**, and require real order/concentration/unit verification. | No pharmacy review, physical pump verification, or medication authorization. Calculation tests verify each numerical answer; real medication orders must use actual pharmacy product concentration and institutional protocols. |
+
+## Current external clinical sources checked
+
+1. Surviving Sepsis Campaign 2026 (SCCM/ESICM), official adult recommendations and commentary: https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . **Conditional, very-low-certainty** suggestion to start a vasopressor via peripheral IV rather than delaying for a central line in septic shock; no universally recommended dose, location or duration. Read as external update, **not silently substituted for the original case's NEWS2 and norepinephrine label source**.
+2. Loubani et al., *Administration of vasopressors through peripheral venous catheters*, CMAJ 2022: https://pmc.ncbi.nlm.nih.gov/articles/PMC9259422/ — immediate stop at suspected extravasation while initially retaining catheter for protocol-directed aspiration.
+3. University of Illinois Chicago, *Current recommendations for treatment of drug extravasation*, Sep 2026: https://dig.pharmacy.uic.edu/faqs/2026-2/september-2026-faqs/what-are-current-recommendations-for-treatment-of-drug-extravasation/ — immediate cessation and initially retained catheter for aspiration.
+4. Norepinephrine US label, DailyMed: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=759807dd-61a8-4f6f-8bf5-f6ee773c81bc&type=display — extravasation and abrupt-interruption risk. Manufacturer-specific; nurse cannot infer a universal treatment order from this document.
+5. AARC 2024 Patient–Ventilator Assessment: https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/ — endorses bedside patient, airway and device assessment; **does not establish a generic emergency ventilator operating sequence**. This source supports only the broad assessment principle, while device-specific emergency ventilation still requires manufacturer and local guidance.
+
+## Integrity, status and release gates
+
+- Every edited scenario retains `status: DRAFT`, `fictional_patient: true`, `clinically_reviewed: false`, its previous cited source IDs, and explicit remaining gaps. No clinical reviewer identity or approval was invented.
+- The metadata-only `src/content/draft-index.json` and `draft-history.json` were updated for the two scenario files with changed hashes and gap counts.
+- `content/working-infusion-cases.json` is a **learner-facing** web practice dataset and is also available to native clients through the existing content endpoint. Its four correct answer positions were distributed but the existing dose calculations preserved.
+- Automated tests assert scenario validation, correct patient-first sequence, safe extravasation warning, and correct answer index/arithmetic across infusion problems.
+- **Outstanding:** other 18 clinical scenarios, all medication drafts and treatment rationales, dose calculators and their UI units, and device-specific procedures require evidence review and appropriate human approval. Existing independent clinical-approval count is unchanged.
+
+**Reviewed in this pass:** 2 fictional clinical scenarios plus 4 infusion-practice cases. **Newly clinically approved: 0.**
