@@ -63,7 +63,7 @@ Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially 
 | Hypotension | Defined as systolic BP below 90 mmHg, or MAP below 65 mmHg, or a fall of 40 mmHg or more; should not be required to define shock (level 1, moderate evidence) | Act on perfusion signs even when BP is "normal" |
 | Assessment | Shock is typically associated with signs of inadequate perfusion in skin, kidneys and brain; recommends frequent measurement of heart rate, blood pressure, temperature and physical signs; not to use a single variable (ungraded best practice) | Frequent, multi-sign assessment |
 | Screening | Recommends routine screening of patients at risk to identify impending shock earlier (level 1, low evidence) | Use unit early-warning tools |
-| Lactate | Recommends measuring lactate whenever shock is suspected (level 1, low evidence); typically above 2 mmol/L in shock; serial measurement to guide and monitor (level 1, low) | Prepare samples; follow trend |
+| Lactate (historical 2014 statement) | Measure when shock is suspected, and use serial results as adjuncts to monitor perfusion; no single cutoff diagnoses or rules out shock | Historical level 1, low evidence | Report trends together with skin, kidney and brain perfusion findings; full 2025 graded recommendation review remains pending |
 | Further assessment | If the cause is unclear, further haemodynamic assessment; echocardiography preferred first over invasive technologies (level 2, moderate) | Support the bedside echocardiogram |
 | Early treatment | Early haemodynamic stabilisation and cause treatment with frequent reassessment of response (ungraded) | Reassess after each intervention |
 | BP target | Individualise the target; initially MAP of at least 65 mmHg (level 1) | Prescriber sets the target |
@@ -150,16 +150,16 @@ D. Delay giving the treatments until the lactate result is known, so that the te
 **Why not C:** Reassessment is shared and needed after each intervention.
 **Why not D:** Delay may harm; early treatment is recommended.
 
-**Q5 (understanding).** Which statement about lactate in suspected shock is most accurate based on the consensus?
-A. A single normal lactate rules out shock, so no further assessment is needed after that one result is back.
-B. Measure it when shock is suspected; it usually exceeds 2 mmol/L; repeated values help monitor response.
-C. Lactate matters in patients with sepsis, so it is not needed when shock has another cause such as bleeding.
-D. Lactate should be measured once at admission and not repeated, because later values do not change management.
+**Q5 (understanding).** Which statement best describes using lactate when assessing suspected circulatory shock?
+A. A single normal lactate rules out shock, so further clinical assessment is unnecessary.
+B. Obtain lactate when ordered, follow serial values and interpret them with capillary refill, urine output, mental state and the overall clinical picture; a single value does not rule shock in or out.
+C. Lactate is relevant only in sepsis, so there is no reason to check it when bleeding or another cause of shock is suspected.
+D. Lactate should be measured only once, because trends cannot contribute to ongoing assessment.
 **Answer: B.**
-**Why correct:** The consensus advises measuring lactate when shock is suspected, notes that it is usually raised, and recommends repeated values to follow the response. It also stresses that no single variable proves or excludes shock.
-**Why not A:** No single variable should be used to diagnose or exclude shock.
-**Why not C:** The consensus applies to all shock types.
-**Why not D:** Serial measurements are recommended to guide and monitor.
+**Why correct:** The historical ESICM consensus describes lactate as one element of perfusion assessment and emphasizes serial measurements, not a diagnostic cutoff. No single lactate result confirms or excludes shock. This question is a general assessment principle; the full graded 2025 ESICM guideline remains to be reconciled.
+**Why not A:** Normal lactate does not rule out shock; evaluate the patient and perfusion signs.
+**Why not C:** Lactate may be relevant to several forms of shock, not only sepsis.
+**Why not D:** Trends are useful alongside repeated bedside assessment.
 
 **Q6 (safety).** The patient's MAP drops below the ordered target but the monitor alarm was silenced earlier. What should the nurse do?
 A. Check the patient, confirm the reading (transducer or cuff), call for review with SBAR, and keep monitoring.
