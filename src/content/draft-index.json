@@ -414,7 +414,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "17046b3725edff27"
+   "hash": "e77a5cab1baee6ad"
   },
   {
    "key": "D01-T12",
@@ -1877,9 +1877,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "856d2c2df2e74303"
+   "hash": "a70be00db081bdff"
   },
   {
    "key": "SK-11",
@@ -1907,9 +1907,9 @@
     }
    ],
    "issues": [],
-   "gaps": 2,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "f0e9b1e62e17b74a"
+   "hash": "e4d095ccb1835a3d"
   },
   {
    "key": "SK-12",
