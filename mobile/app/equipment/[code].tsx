@@ -1,5 +1,5 @@
 import { useLocalSearchParams } from "expo-router";
-import { RemoteGate, Screen } from "../../src/ui/components";
+import { NavCard, RemoteGate, Screen } from "../../src/ui/components";
 import { LessonReader } from "../../src/ui/lesson-reader";
 import { BedsideMonitorVisual } from "../../src/ui/bedside-monitor-visual";
 import { ModuleVisuals } from "../../src/ui/module-visuals";
@@ -11,7 +11,8 @@ export default function EquipmentScreen() {
   return (
     <Screen>
       <RemoteGate state={entry} onRetry={entry.refresh}>
-        {(data) => <LessonReader entry={data} bookmarkKey={`equipment:${data.key}`} visual={<>{data.key === "EQ-01" ? <BedsideMonitorVisual /> : null}<ModuleVisuals moduleKey={data.key} /></>} />}
+        {(data) => <LessonReader entry={data} bookmarkKey={`equipment:${data.key}`} visual={<>{data.key === "EQ-01" ? <BedsideMonitorVisual /> : null}<ModuleVisuals moduleKey={data.key} /></>}
+          children={data.key === "EQ-04" ? <NavCard href="/infusion-calculator" title="Open infusion pump calculator" body="Practise infusion rate, duration and dose-to-rate calculations" icon="pill" accent="medications" /> : undefined} />}
       </RemoteGate>
     </Screen>
   );
