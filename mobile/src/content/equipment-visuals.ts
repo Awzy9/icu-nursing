@@ -186,6 +186,7 @@ const gallery: Record<string, Visual> = {
   },
   centralLine: {
   path: "/images/equipment/central-line.webp",
+  coveredForPrivacy: true,
   width: 296,
   height: 875,
   alt: ["A central venous catheter with a chest dressing and three external lumens.", "قسطرة وريدية مركزية مع ضماد على الصدر وثلاثة فروع خارجية."],
