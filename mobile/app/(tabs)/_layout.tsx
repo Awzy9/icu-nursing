@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
+import type { ComponentProps } from "react";
 import { Pressable, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Svg, { Path } from "react-native-svg";
@@ -19,7 +19,8 @@ const Icon = ({ name, color }: { name: string; color: import("react-native").Col
  * Six explicit, equally sized tabs. Using a custom bar keeps Account in sight on
  * narrow iPhones instead of burying it beneath a fifth-item "More" menu.
  */
-function VisibleTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
+type VisibleTabProps = Parameters<NonNullable<ComponentProps<typeof Tabs>["tabBar"]>>[0];
+function VisibleTabBar({ state, navigation }: VisibleTabProps) {
   const { palette, t, rtl } = useApp();
   const { bottom } = useSafeAreaInsets();
   const names: Record<string, string> = {
