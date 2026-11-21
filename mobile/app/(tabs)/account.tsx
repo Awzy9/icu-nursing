@@ -6,6 +6,7 @@ import { space, type } from "../../src/ui/theme";
 import { useApp } from "../../src/state/app";
 import { useAuth } from "../../src/auth/provider";
 import { siteBaseUrl } from "../../src/core/remoteContent";
+import { NavCard } from "../../src/ui/components";
 
 export default function Account() {
   const { t, locale, setLocale, themeMode, setThemeMode, palette, rtl } = useApp();
@@ -34,6 +35,11 @@ export default function Account() {
           <Link href="/signin" asChild><Button label={t("auth.signIn")} onPress={() => undefined} /></Link>
         </Card>
       )) : null}
+
+      <SectionLabel>{rtl ? "المساعدة والبدء" : "Help & getting started"}</SectionLabel>
+      <NavCard href="/onboarding" title={rtl ? "إعادة جولة التعريف بالتطبيق" : "Replay the app tutorial"}
+        body={rtl ? "شرح مبسط للأقسام الرئيسية والأدوات وكيفية بدء التعلم" : "Quickly revisit Learn, Practice, Clinical Tools and Visuals"}
+        icon="help" accent="study" />
 
       <SectionLabel>{t("account.language")}</SectionLabel>
       <Card>
