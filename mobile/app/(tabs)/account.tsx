@@ -1,6 +1,6 @@
 import { Link } from "expo-router";
 import { Linking, View } from "react-native";
-import { Button, Callout, Card, Chip, H1, H2, P, Screen } from "../../src/ui/components";
+import { Button, Callout, Card, Chip, H2, P, Screen } from "../../src/ui/components";
 import { useApp } from "../../src/state/app";
 import { useAuth } from "../../src/auth/provider";
 import { siteBaseUrl } from "../../src/core/remoteContent";
@@ -11,7 +11,6 @@ export default function Account() {
   const base = siteBaseUrl(process.env as Record<string, string | undefined>);
   return (
     <Screen>
-      <H1>{t("account.title")}</H1>
       {notice ? <Callout tone="warn">{t("auth.callbackFailed")}</Callout> : null}
       {config ? (email ? (
         <Card><P>{t("auth.signedInAs", { email })}</P>

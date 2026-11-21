@@ -57,9 +57,13 @@ export function LessonReader({ entry, bookmarkKey, visual, children }: { entry: 
       {locale !== "en" ? <Callout tone="info">{t("app.englishOnly")}</Callout> : null}
       <View style={{ gap: space.xs }}>
         <Text accessibilityRole="header" style={[{ fontSize: 24, lineHeight: 30, fontWeight: "700" }, { color: palette.text, writingDirection: "ltr" }]}>{entry.title}</Text>
-        <Text style={[type.small, { color: palette.muted, writingDirection: rtl ? "rtl" : "ltr" }]}>{`${prettyCategory(entry.category)}  ·  ${t("reader.readMinutes", { min: minutes })}`}</Text>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: space.sm }}>
+          <Text style={[type.small, { color: palette.muted, writingDirection: "ltr" }]}>{prettyCategory(entry.category)}</Text>
+          <Text style={[type.small, { color: palette.muted }]}>·</Text>
+          <Text style={[type.small, { color: palette.muted, writingDirection: rtl ? "rtl" : "ltr" }]}>{t("reader.readMinutes", { min: minutes })}</Text>
+        </View>
       </View>
-      <View style={{ flexDirection: rtl ? "row-reverse" : "row", flexWrap: "wrap", gap: space.sm }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
         <View style={{ flexGrow: 1, flexBasis: 130 }}><BookmarkButton itemKey={bookmarkKey} /></View>
         <View style={{ flexGrow: 1, flexBasis: 200 }}><CompleteButton moduleKey={entry.key} /></View>
       </View>
@@ -74,7 +78,7 @@ export function LessonReader({ entry, bookmarkKey, visual, children }: { entry: 
             const ticked = (progress.ticks[entry.key] ?? []).includes(i);
             return (
               <Pressable key={i} accessibilityRole="checkbox" accessibilityState={{ checked: ticked }} onPress={() => update((p) => toggleTick(p, entry.key, i))}
-                style={{ flexDirection: rtl ? "row-reverse" : "row", gap: space.sm, alignItems: "flex-start", padding: space.sm, borderWidth: 1, borderColor: palette.border, borderRadius: 8 }}>
+                style={{ flexDirection: "row", gap: space.sm, alignItems: "flex-start", padding: space.sm, borderWidth: 1, borderColor: palette.border, borderRadius: 8 }}>
                 <View style={{ width: 22, height: 22, borderRadius: 4, borderWidth: 2, borderColor: ticked ? palette.primary : palette.border, backgroundColor: ticked ? palette.primary : "transparent", alignItems: "center", justifyContent: "center" }}>
                   {ticked ? <Text style={{ color: palette.onPrimary, fontWeight: "700" }}>✓</Text> : null}
                 </View>

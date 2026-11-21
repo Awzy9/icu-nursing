@@ -1,7 +1,8 @@
 import React from "react";
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View, type StyleProp, type ViewStyle } from "react-native";
 import RNSlider from "@react-native-community/slider";
-import { Link, type Href } from "expo-router";
+import Svg, { Circle, Path } from "react-native-svg";
+import { useRouter, type Href } from "expo-router";
 import { useApp } from "../state/app";
 import type { FetchState } from "../hooks/useRemoteContent";
 import { useProgressSync } from "../hooks/useProgressSync";
@@ -25,7 +26,7 @@ export function DraftNotice() {
   return (
     <Pressable accessibilityRole="button" accessibilityState={{ expanded: open }} accessibilityHint={t("app.noticeHint")} onPress={() => setOpen((v) => !v)}
       style={{ backgroundColor: palette.warnBg, borderRadius: radius, paddingHorizontal: space.md, paddingVertical: space.sm, gap: space.xs }}>
-      <View style={{ flexDirection: rtl ? "row-reverse" : "row", alignItems: "center", gap: space.sm }}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: space.sm }}>
         <Text style={[type.small, { flex: 1, color: palette.warnText, fontWeight: "600", writingDirection: rtl ? "rtl" : "ltr" }]}>{t("app.noticeShort")}</Text>
         <Text style={[type.small, { color: palette.warnText }]}>{open ? "▴" : "▾"}</Text>
       </View>
@@ -56,17 +57,78 @@ export function Button({ label, onPress, variant = "primary", disabled, hint }: 
     </Pressable>
   );
 }
-/** A tappable row/card that navigates. */
+const Chevron = () => { const { palette, rtl } = useApp(); return <Text accessibilityElementsHidden importantForAccessibility="no" style={[type.h2, { color: palette.muted }]}>{rtl ? "‹" : "›"}</Text>; };
+
+/** A tappable card that navigates: title, an optional description (clamped to two lines so long copy cannot make lists endless) and a chevron. */
 export function NavCard({ href, title, body, badge }: { href: Href; title: string; body?: string; badge?: string }) {
   const { palette, rtl, t } = useApp();
+  const router = useRouter();
+  const dir = { writingDirection: rtl ? "rtl" : "ltr" } as const;
   return (
-    <Link href={href} asChild>
-      <Pressable accessibilityRole="link" accessibilityLabel={t("a11y.openItem", { title })} style={{ minHeight: MIN_TARGET, backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: radius, padding: space.lg, gap: space.xs }}>
-        <Text style={[type.h3, { color: palette.text, writingDirection: rtl ? "rtl" : "ltr" }]}>{title}</Text>
-        {body ? <Text style={[type.small, { color: palette.muted, writingDirection: rtl ? "rtl" : "ltr" }]}>{body}</Text> : null}
-        {badge ? <Text style={[type.small, { color: palette.warnText, fontWeight: "600" }]}>{badge}</Text> : null}
+    <Pressable onPress={() => router.push(href)} accessibilityRole="link" accessibilityLabel={t("a11y.openItem", { title })} style={({ pressed }) => ({ minHeight: MIN_TARGET, flexDirection: "row", alignItems: "center", gap: space.md, backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: radius, paddingVertical: space.md, paddingHorizontal: space.lg, opacity: pressed ? 0.85 : 1 })}>
+        <View style={{ flex: 1, gap: 2 }}>
+          <Text style={[type.h3, dir, { color: palette.text }]}>{title}</Text>
+          {body ? <Text numberOfLines={2} style={[type.small, dir, { color: palette.muted }]}>{body}</Text> : null}
+          {badge ? <Text style={[type.small, { color: palette.warnText, fontWeight: "600" }]}>{badge}</Text> : null}
+        </View>
+        <Chevron />
       </Pressable>
-    </Link>
+  );
+}
+
+/** Several related destinations as one rounded list with hairline dividers (like a settings screen): far denser than a stack of separate cards, so long lists stay scannable. */
+export function NavGroup({ items }: { items: { href: Href; title: string; body?: string }[] }) {
+  const { palette, rtl, t } = useApp();
+  const router = useRouter();
+  const dir = { writingDirection: rtl ? "rtl" : "ltr" } as const;
+  return (
+    <View style={{ backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: radius, overflow: "hidden" }}>
+      {items.map((item, i) => (
+        <Pressable key={i} onPress={() => router.push(item.href)} accessibilityRole="link" accessibilityLabel={t("a11y.openItem", { title: item.title })}
+            style={({ pressed }) => ({ minHeight: MIN_TARGET, flexDirection: "row", alignItems: "center", gap: space.md, paddingVertical: space.md, paddingHorizontal: space.lg, borderTopWidth: i ? StyleSheet.hairlineWidth * 2 : 0, borderTopColor: `${palette.border}66`, backgroundColor: pressed ? palette.bg : "transparent" })}>
+            <View style={{ flex: 1, gap: 2 }}>
+              <Text style={[type.h3, dir, { color: palette.text }]}>{item.title}</Text>
+              {item.body ? <Text numberOfLines={2} style={[type.small, dir, { color: palette.muted }]}>{item.body}</Text> : null}
+            </View>
+            <Chevron />
+      </Pressable>
+      ))}
+    </View>
+  );
+}
+
+/** A small uppercase label that names a group of items. */
+export function SectionLabel({ children }: { children: React.ReactNode }) {
+  const { palette, rtl } = useApp();
+  return <Text accessibilityRole="header" style={[type.small, { color: palette.muted, fontWeight: "700", textTransform: "uppercase", letterSpacing: 0.6, marginTop: space.sm, writingDirection: rtl ? "rtl" : "ltr" }]}>{children}</Text>;
+}
+
+/** A big-number tile that links into a part of the library; the count shows "..." while loading and a dash when unavailable. */
+export function StatTile({ href, count, label }: { href: Href; count: number | "loading" | undefined; label: string }) {
+  const { palette, rtl, t } = useApp();
+  const router = useRouter();
+  return (
+    <Pressable onPress={() => router.push(href)} accessibilityRole="link" accessibilityLabel={typeof count === "number" ? t("hub.tileLabel", { label, count }) : label}
+        style={({ pressed }) => ({ flexGrow: 1, flexBasis: "45%", minHeight: 92, justifyContent: "space-between", gap: space.sm, backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: radius, padding: space.lg, opacity: pressed ? 0.85 : 1 })}>
+        <Text style={[type.h1, { color: palette.primary, fontVariant: ["tabular-nums"] }]}>{count === "loading" ? "…" : count ?? "–"}</Text>
+        <Text style={[type.small, { color: palette.text, fontWeight: "600", writingDirection: rtl ? "rtl" : "ltr" }]}>{label}</Text>
+      </Pressable>
+  );
+}
+
+/** A search field that opens the search screen: looks like an input, behaves like a button. */
+export function SearchBar({ label, hint }: { label: string; hint: string }) {
+  const { palette, rtl } = useApp();
+  const router = useRouter();
+  return (
+    <Pressable onPress={() => router.push("/search")} accessibilityRole="search" accessibilityLabel={label} accessibilityHint={hint}
+        style={({ pressed }) => ({ minHeight: MIN_TARGET, flexDirection: "row", alignItems: "center", gap: space.md, backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: 24, paddingHorizontal: space.lg, opacity: pressed ? 0.85 : 1 })}>
+        <Svg width={20} height={20} viewBox="0 0 24 24" accessibilityElementsHidden importantForAccessibility="no">
+          <Circle cx={11} cy={11} r={7} stroke={palette.muted} strokeWidth={2} fill="none" />
+          <Path d="M20 20l-4-4" stroke={palette.muted} strokeWidth={2} strokeLinecap="round" />
+        </Svg>
+        <Text numberOfLines={1} style={[type.small, { flex: 1, color: palette.muted, writingDirection: rtl ? "rtl" : "ltr" }]}>{hint}</Text>
+      </Pressable>
   );
 }
 /** A labeled slider control, mirroring the website's own <Slider> in vent-lab/hemo-lab: a

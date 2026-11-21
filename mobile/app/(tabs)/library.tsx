@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocalSearchParams } from "expo-router";
 import { ScrollView, View } from "react-native";
-import { Chip, H1, NavCard, RemoteGate, Screen } from "../../src/ui/components";
+import { Chip, NavGroup, RemoteGate, Screen } from "../../src/ui/components";
 import { space } from "../../src/ui/theme";
 import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
@@ -17,16 +17,13 @@ export default function Library() {
 
   return (
     <Screen>
-      <H1>{t("library.title")}</H1>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ direction: rtl ? "rtl" : "ltr" }}>
         <View style={{ flexDirection: "row", gap: space.sm }}>
           {TYPES.map((candidate) => <Chip key={candidate} label={t(`type.${candidate}`)} selected={type === candidate} onPress={() => setType(candidate)} />)}
         </View>
       </ScrollView>
       <RemoteGate state={list} onRetry={list.refresh} empty={(items) => items.length === 0}>
-        {(items) => items.map((entry) => (
-          <NavCard key={entry.key} href={`${ROUTE[type]}${entry.key}`} title={entry.title} body={entry.category} />
-        ))}
+        {(items) => <NavGroup items={items.map((entry) => ({ href: `${ROUTE[type]}${entry.key}`, title: entry.title, body: entry.category }))} />}
       </RemoteGate>
     </Screen>
   );
