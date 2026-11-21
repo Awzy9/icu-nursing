@@ -12,7 +12,7 @@
  "category": "anti-infectives",
  "high_alert": false,
  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Antibacterial for infections caused by susceptible gram-positive bacteria, including nosocomial pneumonia. Nursing focus: myelosuppression, neuropathy and serotonin syndrome.",
+ "summary": "Oxazolidinone antibacterial for selected serious susceptible gram-positive infections, including hospital-acquired pneumonia. Nursing focus: blood-count suppression, serotonin syndrome, drug interactions (including vasoactive agents), visual/neurologic toxicity, and other serious adverse reactions.",
  "batch": 3,
  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
  "evidence_status": "partial",
@@ -64,6 +64,20 @@
      "sources": [
       "L-LINEZOLID"
      ]
+    },
+    {
+     "text": "Review serotonergic antidepressants, opioids and other serotonergic agents as well as concurrent vasopressors, dopaminergic and sympathomimetic medicines: the October 2026 US Zyvox label warns of serotonin syndrome and enhanced pressor responses. Alert pharmacy/prescriber before therapy or if the regimen changes; do not withhold necessary ICU vasoactive medicines or adjust them independently.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "Confirm that full blood counts are being monitored per the label and the institution's plan; for those at risk of reduced glucose, sodium or unexplained acidosis, request clinical reassessment and appropriate ordered investigations.",
+     "support": "partial",
+     "sources": [
+      "L-LINEZOLID"
+     ]
     }
    ]
   },
@@ -77,6 +91,27 @@
     },
     {
      "text": "The label calls for monitoring of the complete blood count, and for watching for signs of serotonin syndrome in patients also taking serotonergic medicines.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "The current US Zyvox label describes potentially enhanced blood-pressure response with sympathomimetic, vasopressor and dopaminergic medicines; coordinate blood-pressure monitoring and medication review with the treating team rather than treating concomitant administration as automatically forbidden.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "Recognize recurrent unexplained nausea/vomiting or new unexplained acidosis/low bicarbonate as possible medication-related lactic acidosis and alert the clinical team immediately; other causes must also be assessed.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "Check blood glucose when clinically indicated, particularly in patients with diabetes receiving insulin or glucose-lowering medicines, because symptomatic hypoglycemia has been reported. In patients at risk of hyponatremia or SIADH (such as older patients or those taking diuretics), review ordered sodium levels and report new confusion or weakness.",
      "support": "sourced",
      "sources": [
       "L-LINEZOLID"
@@ -107,6 +142,20 @@
      "sources": [
       "L-LINEZOLID"
      ]
+    },
+    {
+     "text": "Linezolid inhibits monoamine oxidase and may enhance pressor responses with vasoactive/dopaminergic drugs; an existing vasopressor prescription requires prescriber/pharmacy review and close blood-pressure assessment, not an automatic blanket contraindication. Separate MAOI medications are contraindicated during recent use according to the product label.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "Lactic acidosis, symptomatic hypoglycemia (reported especially with insulin or other glucose-lowering medicines), hyponatremia/SIADH and rhabdomyolysis are additional clinically relevant risks; prompt evaluation is needed for unexplained acidosis, recurrent vomiting, low glucose or sodium, new muscle pain/weakness or dark urine.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
     }
    ]
   },
@@ -114,7 +163,28 @@
    "support": "partial",
    "items": [
     {
-     "text": "The label lists myelosuppression, peripheral and optic neuropathy and serotonin syndrome among the clinically significant adverse reactions.",
+     "text": "Myelosuppression can include anemia, thrombocytopenia, leukopenia or broader pancytopenia; CBC trend review is particularly important with prolonged therapy or pre-existing renal/hepatic problems.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "Linezolid-associated peripheral neuropathy and visual toxicity (including possible optic neuropathy and loss of vision) are reported, especially with extended treatment; any new visual symptom needs prompt specialist evaluation.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "Serotonin syndrome has been reported with concomitant serotonergic medicines, including certain antidepressants and opioids. Agitation, clonus/hyperreflexia, tremor, fever and muscular rigidity require immediate clinical escalation.",
+     "support": "sourced",
+     "sources": [
+      "L-LINEZOLID"
+     ]
+    },
+    {
+     "text": "The label also reports lactic acidosis, low glucose in selected diabetic patients, low sodium/SIADH, rhabdomyolysis, seizures, antibiotic-associated diarrhoea and severe hypersensitivity/skin reactions. Many are postmarketing events with uncertain frequency or causation.",
      "support": "sourced",
      "sources": [
       "L-LINEZOLID"
@@ -126,7 +196,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Report visual changes, new numbness, agitation, fever with tremor or confusion, and bruising or bleeding promptly.",
+     "text": "Immediately report new visual loss, numbness, unexplained bleeding or bruising, agitation with clonus/rigidity/fever (possible serotonin syndrome), unexpected hypertension with vasoactive drugs, repeated vomiting or unexplained acidosis (possible lactic acidosis), symptomatic low glucose or sodium, severe muscle pain/dark urine, or signs of serious allergy. Follow local rapid-response guidance; treatment, discontinuation and drug-interaction management are prescriber decisions.",
      "support": "partial",
      "sources": [
       "L-LINEZOLID"
@@ -215,13 +285,41 @@
    "critical": false,
    "support": "local_protocol",
    "sources": []
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review ordered serum sodium and glucose in at-risk patients; request reassessment for new confusion, hypoglycemic signs, or otherwise unexplained hyponatremia.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-LINEZOLID"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Identify concomitant serotonergic and pressor medicines; report clonus, hyperthermia, marked hypertension or other concerning changes urgently.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-LINEZOLID"
+   ]
+  },
+  {
+   "kind": "laboratory",
+   "text": "If unexplained nausea/vomiting, acidosis or low bicarbonate occurs, promptly notify the team for evaluation of possible lactic acidosis.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-LINEZOLID"
+   ]
   }
  ],
  "gaps": [
-  "Dietary and other interaction detail: not included.",
-  "The label read is the brand (Zyvox) with oral and intravenous routes.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
+  "Detailed dietary tyramine restrictions, specific MAOI washout intervals, interaction management, and prescribing decisions are not taught: clinicians/pharmacists must use the current local formulary and exact product label.",
+  "Other risks such as severe skin reactions and catheter-related bloodstream infection warning need independent infectious-disease and pharmacy review of the complete US label and case context.",
+  "The label read is US Zyvox with oral and intravenous formulations; no EMA, MHRA or SFDA labelling has been reviewed, and alternative brands may differ.",
+  "Medication strengths, doses, concentrations, preparation and administration remain intentionally omitted; local pharmacy and prescribers control treatment.",
+  "Full international nursing practice guidance, drug-interaction algorithms and updated regional antimicrobial guidelines have not been reviewed."
  ],
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
@@ -233,6 +331,6 @@
   "label_version": "73",
   "effective_time": "20261103",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ. Directly reviewed October 2026 Zyvox DailyMed sections 5.3, 5.6, 5.7, 5.10, 5.11 and interactions on 2026-11-21; did not re-query openFDA version since previous register verification."
  }
 }
