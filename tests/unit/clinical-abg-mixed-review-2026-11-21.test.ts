@@ -14,6 +14,9 @@ describe("D04-T08 mixed acid–base disorder safety audit, 2026-11-21", () => {
     expect(s).toContain("normal pH cannot exclude");
     expect(s).toContain("not** proof that a normal pH");
     expect(s).toContain("Physiological compensation");
+    expect(s).toContain("**acidemia**");
+    expect(s).toContain("**alkalemia**");
+    expect(s).not.toContain("below 7.35 is acidosis");
     expect(s).not.toContain("fully compensated means pH has returned to normal");
     expect(s).toContain("PaCO₂ 20 mm Hg");
     expect(s).toContain("HCO₃ 12 mEq/L");
