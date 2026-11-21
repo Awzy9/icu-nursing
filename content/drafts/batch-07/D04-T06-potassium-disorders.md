@@ -17,7 +17,7 @@ independently_written_note: "Original wording. The UKKA hyperkalaemia guideline 
 > DRAFT – NOT clinically reviewed. AI-generated. Covers hyperkalaemia from a UK guideline; hypokalaemia management is NOT supported by a guideline read and is left to local policy. Drug doses are intentionally absent.
 
 ## 1. Overview
-Hyperkalaemia – a raised serum potassium (K⁺) – is a common medical emergency when it presents acutely. The UK Kidney Association (UKKA) guideline defines it as K⁺ above 5.5 mmol/L (adopting the European Resuscitation Council definition) and grades it as mild (5.5–5.9), moderate (6.0–6.4) and severe (6.5 or above). Severe hyperkalaemia risks arrhythmias and cardiac arrest. The nurse recognises the risk, makes sure the result is reliable, obtains and monitors the ECG and rhythm, helps give and monitors the ordered treatments, watches for treatment complications such as hypoglycaemia and rebound, and escalates. Diagnosis, treatment choices and doses are prescriber decisions, with pharmacist input.
+Hyperkalaemia – a raised serum potassium (K⁺) – is a common medical emergency when it presents acutely. The UK Kidney Association (UKKA) guideline defines it as K⁺ ≥ 5.5 mmol/L (adopting the European Resuscitation Council definition) and grades it as mild (5.5–5.9), moderate (6.0–6.4) and severe (6.5 or above). Severe hyperkalaemia risks arrhythmias and cardiac arrest. The nurse recognises the risk, makes sure the result is reliable, obtains and monitors the ECG and rhythm, helps give and monitors the ordered treatments, watches for treatment complications such as hypoglycaemia and rebound, and escalates. Diagnosis, treatment choices and doses are prescriber decisions, with pharmacist input.
 
 ## 2. Learning objectives
 1. State the UKKA definition and severity bands, and explain why the numbers alone do not set the urgency.
@@ -60,7 +60,7 @@ A 2026 study of 440 potassium-related incident reports from Finnish ICUs over 11
 ## 9. Important findings – UKKA statements (July 2026 website; grading as printed)
 | Topic | Statement (paraphrased) | Grade | Nursing relevance |
 |---|---|---|---|
-| Definition | K⁺ above 5.5 mmol/L; mild 5.5–5.9, moderate 6.0–6.4, severe 6.5 or above | Introduction | Know bands, but urgency also depends on ECG and rate of rise |
+| Definition | K⁺ ≥ 5.5 mmol/L; mild 5.5–5.9, moderate 6.0–6.4, severe 6.5 or above | Introduction | Know bands, but urgency also depends on ECG and rate of rise |
 | Assessment | History, examination, early warning score | 1B; 1C | Escalate by acuity |
 | Sampling | Lithium-heparin for rapid results; point-of-care blood gas potassium in emergencies; paired samples for suspected pseudohyperkalaemia | 1B; 1B; 1A | Check the sample, avoid unnecessary treatment |
 | ECG | **Detailed** 14.1: urgent 12-lead ECG at K⁺ ≥ 6.0 mmol/L; **separate** 14.2: continuous ≥ 3-lead monitoring at ≥ 6.5 mmol/L, with ECG changes, or at 6.0–6.4 if clinically unwell/rapid rise expected | 1B; 1C | Summary 14.1 erroneously differs (≥ 6.5). Do not conflate 12-lead assessment with continuous monitoring; follow local escalation procedures |
