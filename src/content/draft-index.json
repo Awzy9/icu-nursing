@@ -4062,9 +4062,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
-   "required_sources": 3,
-   "hash": "79b7dd8419fb5038"
+   "gaps": 5,
+   "required_sources": 4,
+   "hash": "ec028d8842415275"
   },
   {
    "key": "SC-02",
@@ -4167,9 +4167,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "ce7d8cd9fce4709e"
+   "hash": "b9f670b434b8780a"
   },
   {
    "key": "SC-05",
