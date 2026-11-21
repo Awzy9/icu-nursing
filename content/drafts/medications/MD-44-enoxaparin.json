@@ -12,9 +12,9 @@
  "category": "anticoagulants-hemostasis",
  "high_alert": false,
  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Low molecular weight heparin for prophylaxis of deep vein thrombosis in surgical and medical patients and other labelled indications (the label read is a subcutaneous product). The boxed warning covers spinal and epidural haematomas with neuraxial anaesthesia or spinal puncture. Nursing focus: bleeding, platelets, neuraxial procedures and non-interchangeability.",
+ "summary": "Low molecular weight heparin for prophylaxis of deep vein thrombosis in surgical and medical patients and other labelled indications (the label read is a subcutaneous product). The boxed warning covers spinal and epidural haematomas with neuraxial anaesthesia or spinal puncture. Nursing focus: bleeding, platelets, neuraxial procedures and renal function, HIT risk, platelet trends, neuraxial precautions and avoidance of unit-for-unit substitution.",
  "batch": 5,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A targeted 2026-11-21 cross-check used the May 2026 DailyMed Lovenox branded label for unit-for-unit interchangeability, renal considerations, HIT contraindications and monitoring; this does not replace the original label record or pharmacist approval.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",
@@ -64,6 +64,13 @@
      "sources": [
       "L-ENOXAPARIN"
      ]
+    },
+    {
+     "text": "Review recent renal function, weight and clinical indication before administration; when renal clearance is reduced or a neuraxial catheter/procedure is planned, verify the order and timing with the responsible clinician/pharmacist rather than applying an unreviewed generic regimen.",
+     "support": "partial",
+     "sources": [
+      "L-ENOXAPARIN"
+     ]
     }
    ]
   },
@@ -78,6 +85,13 @@
     {
      "text": "The label calls for frequent monitoring for signs of neurological impairment and for signs of bleeding.",
      "support": "sourced",
+     "sources": [
+      "L-ENOXAPARIN"
+     ]
+    },
+    {
+     "text": "The current US Lovenox label recommends monitoring complete blood count (including platelets), occult blood where ordered and clinical signs of bleeding. Anti-factor Xa testing may be considered by the treating team in renal impairment or selected safety concerns; PT and aPTT are not adequate measures of enoxaparin's anticoagulant effect. The team decides if, when and how these tests guide care.",
+     "support": "partial",
      "sources": [
       "L-ENOXAPARIN"
      ]
@@ -102,7 +116,7 @@
      ]
     },
     {
-     "text": "It must not be exchanged with heparin or other low molecular weight heparins.",
+     "text": "Enoxaparin is not interchangeable unit-for-unit with unfractionated heparin or other low-molecular-weight heparins. They have different prescribing and dosing requirements; any change of anticoagulant requires an authorized new order and the appropriate transition/monitoring protocol, not a direct numerical substitution.",
      "support": "sourced",
      "sources": [
       "L-ENOXAPARIN"
@@ -111,6 +125,20 @@
     {
      "text": "Women with mechanical prosthetic heart valves who are pregnant may be at increased risk of thrombosis.",
      "support": "sourced",
+     "sources": [
+      "L-ENOXAPARIN"
+     ]
+    },
+    {
+     "text": "For severe renal impairment (creatinine clearance below 30 mL/min), the current US branded enoxaparin label requires indication-specific prescriber dose adjustment because exposure and bleeding risk increase. Review renal function and obtain a pharmacy/prescriber check of the existing order; this educational draft does not supply dose instructions.",
+     "support": "partial",
+     "sources": [
+      "L-ENOXAPARIN"
+     ]
+    },
+    {
+     "text": "Active major bleeding and a history of immune-mediated heparin-induced thrombocytopenia within the past 100 days or persistent HIT antibodies are contraindications in the current US branded label; check prior HIT and new platelet trends and escalate suspected HIT rather than assuming every fall in platelets confirms it.",
+     "support": "partial",
      "sources": [
       "L-ENOXAPARIN"
      ]
@@ -243,13 +271,23 @@
    "critical": false,
    "support": "local_protocol",
    "sources": []
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review ordered CBC/platelet trends, renal function and bleeding assessments; do not treat PT/aPTT as reliable measures of enoxaparin effect. Anti-Xa testing, if indicated, is clinician/pharmacist-directed.",
+   "critical": true,
+   "support": "partial",
+   "sources": [
+    "L-ENOXAPARIN"
+   ]
   }
  ],
  "gaps": [
-  "Renal impairment, reversal and anti-Xa monitoring: not included.",
+  "Renal impairment and selective anti-Xa monitoring are now discussed at safety-awareness level based on current US branded labeling, without dosing or lab targets; local indication-specific prescribing, renal dosing and anti-Xa interpretation still require pharmacist review. Reversal remains outside this draft.",
   "The label read is the subcutaneous route; intravenous use for other indications is not summarised.",
   "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
+  "No clinical practice guideline or nursing source was read for this entry.",
+  "Independent cross-check: DailyMed branded Lovenox US label (May 2026 revision; viewed 2026-11-21), different from the manufacturer label originally registered. Verify any manufacturer-specific variations before clinical approval."
  ],
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
