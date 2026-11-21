@@ -270,6 +270,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "e941fc4bea860af2",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ESICM-ARDS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T11": [
@@ -1258,6 +1270,17 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "611d945bb9ae2b8b",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D05-T01": [
@@ -2153,6 +2176,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1317f16a45e349ee",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-18": [
@@ -2293,6 +2330,18 @@
    {
     "hash": "2252d39f0d9d458e",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d87a16b3a11479c1",
+    "recorded": "2026-11-21",
     "evidence_status": "partial",
     "sources": [
      "S-FDA-PUMP",
@@ -5771,6 +5820,18 @@
    {
     "hash": "8bc1b7f7d1a17cd2",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "6e352be654246f79",
+    "recorded": "2026-11-21",
     "evidence_status": "partial",
     "sources": [
      "N-AHS-CRRT-ALARM-2025",
