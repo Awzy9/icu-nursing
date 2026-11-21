@@ -130,7 +130,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Stop and report pump alerts you cannot resolve, programming discrepancies against the order and any suspected over- or under-infusion.",
+          "text": "For unresolved pump alerts, programming differences from the medication order or suspected over-/under-infusion, assess the patient immediately, check the pump and ordered therapy, and urgently notify the responsible clinical team. Whether to pause, continue or transfer an infusion depends on the patient's condition, suspected malfunction and facility emergency procedure—not an automatic stop rule.",
           "support": "partial",
           "sources": [
             "S-FDA-PUMP",
@@ -138,7 +138,7 @@
           ]
         },
         {
-          "text": "If a pump fails or stops working during a high-risk infusion, stay with and closely monitor the patient while another staff member obtains a working pump; for fluid-sensitive patients, clamp and disconnect the tubing to prevent over-infusion until a replacement pump is obtained. Report problems through facility protocol; events involving possible death or serious injury require following the facility's reporting pathway.",
+          "text": "If a pump fails during a high-risk infusion, remain with and closely monitor the patient while another team member obtains a functioning replacement, following the unit's backup plan. For a patient at risk of fluid overload, the FDA gives clamping/disconnecting tubing as an example of a possible response to prevent over-infusion; that decision is context-specific and must follow local instructions. Report suspected pump problems through the facility's required pathway.",
           "support": "sourced",
           "sources": [
             "S-FDA-PUMP"
