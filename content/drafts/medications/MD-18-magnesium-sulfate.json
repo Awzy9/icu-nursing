@@ -10,8 +10,8 @@
  "name": "Magnesium sulfate",
  "drug_class": "Electrolyte replacement and anticonvulsant",
  "category": "insulin-electrolytes-fluids",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "high_alert": true,
+ "high_alert_note": "ISMP's 2024 acute-care list explicitly identifies injectable magnesium sulfate as a high-alert medication. This is a medication-safety classification, not a product-specific dosage or administration protocol; local policy controls safeguards.",
  "summary": "Parenteral magnesium used for replacement in magnesium deficiency, especially acute hypomagnesaemia with tetany, and for other labelled indications. Nursing focus: monitoring for magnesium toxicity, renal impairment and fetal harm with prolonged use in pregnancy.",
  "batch": 2,
  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
@@ -40,6 +40,11 @@
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  },
+  {
+   "id": "S-ISMP-HAM-2024",
+   "read": "partial",
+   "use": "2024 ISMP acute-care high-alert classification (injectable magnesium sulfate), read to verify classification; cite/paraphrase, no table reproduced"
   }
  ],
  "sections": {
@@ -63,6 +68,13 @@
      "support": "sourced",
      "sources": [
       "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "Treat injectable magnesium sulfate as high-alert in acute care; verify the product, order, renal function and institution-specific pump/independent-check safeguards before administration. The ISMP classification alone does not prescribe a universal double-check workflow.",
+     "support": "sourced",
+     "sources": [
+      "S-ISMP-HAM-2024"
      ]
     }
    ]
@@ -99,6 +111,13 @@
      "support": "sourced",
      "sources": [
       "L-MAGNESIUM"
+     ]
+    },
+    {
+     "text": "ISMP identifies magnesium sulfate injection as high-alert because errors can cause substantial harm; use local pharmacy-approved product selection and administration safeguards rather than assuming every magnesium presentation shares the same instructions.",
+     "support": "sourced",
+     "sources": [
+      "S-ISMP-HAM-2024"
      ]
     }
    ]
