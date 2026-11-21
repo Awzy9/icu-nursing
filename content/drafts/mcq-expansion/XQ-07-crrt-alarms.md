@@ -38,7 +38,7 @@ D. The concern is minor, because the manufacturer's support line can reset the a
 **Trace:** N-AHS-CRRT-ALARM-2025 — Alarm off/disable/override decrease alarm sensitivity.
 
 **Q3 (escalation).** A nurse has tried the usual checks on a patient's CRRT circuit, but the alarms cannot be resolved and treatment keeps stopping. What does the pathway suggest?
-A. Escalate to the trained CRRT team and device support; consider blood return only if safe under the device and unit protocol, document the interruption and notify the prescriber.
+A. Escalate; return blood only if safe under the device and unit protocol; document and notify the team.
 B. Keep restarting the treatment until it runs, and tell the doctor at the end of the shift when handing over.
 C. Leave the blood in the circuit and clamp the lines until the next shift can look at it.
 D. Disconnect the patient and discard the circuit without recording why treatment was stopped.
