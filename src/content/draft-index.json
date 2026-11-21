@@ -2957,9 +2957,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 6,
    "required_sources": 0,
-   "hash": "3c2e79a7d9317fb6"
+   "hash": "2d7b3e847267ce1f"
   },
   {
    "key": "MD-19",
