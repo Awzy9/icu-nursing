@@ -1,66 +1,78 @@
 [
  {
   "key": "TRX-01",
-  "title": ["Acute haemolytic reaction", "تفاعل انحلالي حاد"],
+  "title": [
+   "Acute haemolytic reaction",
+   "تفاعل انحلالي حاد"
+  ],
   "vignette": "Ten minutes into a red cell transfusion, the patient develops a temperature rise with chills, becomes short of breath, and reports chest and back pain. Their blood pressure begins to fall.",
   "question": {
-    "prompt": "What should the nurse do first?",
-    "options": [
-     "Stop the transfusion immediately and call for help; the transfusion service must be notified",
-     "Slow the transfusion rate and reassess in 15 minutes",
-     "Give an antipyretic and continue the transfusion at the same rate",
-     "Document the findings and continue; these are expected early signs"
-    ],
-    "answer": 0,
-    "explanation": "Fever with chills, dyspnoea, and chest or back pain with falling blood pressure are features of an acute haemolytic reaction. The nurse's role is to stop the transfusion immediately and escalate - the transfusion service must be notified so patient and component identification can be rechecked and a post-reaction sample sent. The lesson also notes that in anaesthetised or sedated patients, hypotension and bleeding may be the only signs - lack of classic symptoms does not exclude this reaction."
+   "prompt": "What should the nurse do first?",
+   "options": [
+    "Stop the transfusion immediately and call for help; the transfusion service must be notified",
+    "Slow the transfusion rate and reassess in 15 minutes",
+    "Give an antipyretic and continue the transfusion at the same rate",
+    "Document the findings and continue; these are expected early signs"
+   ],
+   "answer": 0,
+   "explanation": "Fever with chills, dyspnoea, and chest or back pain with falling blood pressure are features of an acute haemolytic reaction. The nurse's role is to stop the transfusion immediately and escalate - the transfusion service must be notified so patient and component identification can be rechecked and a post-reaction sample sent. The lesson also notes that in anaesthetised or sedated patients, hypotension and bleeding may be the only signs - lack of classic symptoms does not exclude this reaction."
   }
  },
  {
   "key": "TRX-02",
-  "title": ["Febrile non-haemolytic reaction", "تفاعل حموي غير انحلالي"],
+  "title": [
+   "Febrile non-haemolytic reaction",
+   "تفاعل حموي غير انحلالي"
+  ],
   "vignette": "Two hours into a transfusion, the patient's temperature has risen by 1.2°C from baseline. They have mild chills but no hypotension, no respiratory symptoms, and no other new findings.",
   "question": {
-    "prompt": "What does this presentation most likely represent, and what should the nurse keep in mind?",
-    "options": [
-     "A febrile non-haemolytic reaction - but a high fever with collapse would raise concern for bacterial contamination instead",
-     "Definitely a benign reaction that needs no further monitoring or escalation",
-     "Transfusion-associated circulatory overload (TACO)",
-     "An allergic reaction requiring epinephrine"
-    ],
-    "answer": 0,
-    "explanation": "A temperature rise of at least 1°C, or chills or rigors, with no other cause fits the definition of a febrile non-haemolytic reaction. However, this cannot simply be assumed benign - a high fever (a rise of at least 2°C) together with collapse should raise concern for bacterial contamination, which needs a different, urgent response (blood cultures, broad-spectrum therapy)."
+   "prompt": "A patient develops fever and chills during a red-cell transfusion, but remains haemodynamically stable. What is the safest initial nursing response?",
+   "options": [
+    "Stop the transfusion, assess the patient, notify the treating team and transfusion service, and follow the reaction pathway; a febrile non-haemolytic reaction is only a possibility after serious causes are assessed",
+    "Diagnose a harmless febrile reaction and continue the transfusion without informing the clinical team",
+    "Give an antipyretic and restart the unit immediately without investigating the new symptoms",
+    "Wait for hypotension or severe respiratory distress before stopping the transfusion"
+   ],
+   "answer": 0,
+   "explanation": "Fever or chills during transfusion indicate a suspected reaction, not an established febrile non-haemolytic transfusion reaction (FNHTR). Stop the transfusion and assess the patient's airway, breathing, circulation and observations; seek immediate clinical and transfusion-service advice under the local protocol. FNHTR is a diagnosis of exclusion. Acute haemolysis, bacterial contamination and other causes may need evaluation according to the findings and severity. Only the responsible clinical/transfusion team may authorize any resumption after an appropriate mild-reaction assessment."
   }
  },
  {
   "key": "TRX-03",
-  "title": ["Transfusion-associated circulatory overload (TACO)", "الحمل الدوراني الزائد المرتبط بنقل الدم"],
+  "title": [
+   "Transfusion-associated circulatory overload (TACO)",
+   "الحمل الدوراني الزائد المرتبط بنقل الدم"
+  ],
   "vignette": "A patient with chronic kidney disease, already fluid-positive, develops new respiratory distress during a transfusion. A chest examination and imaging are consistent with volume overload rather than infection.",
   "question": {
-    "prompt": "What does this presentation represent, and what made this patient particularly at risk?",
-    "options": [
-     "TACO - patients with cardiopulmonary or renal disease and a positive fluid balance are at particular risk, and even small volumes can trigger it in them",
-     "TRALI - an immune-mediated lung injury unrelated to fluid volume",
-     "An allergic reaction to plasma proteins",
-     "Hypothermia from a rapid, large-volume transfusion"
-    ],
-    "answer": 0,
-    "explanation": "New or worsening respiratory distress with clinical or radiographic volume overload, after excessive volume or too rapid a rate, is TACO. Patients with cardiopulmonary or renal disease, the very young and elderly, chronic severe anaemia, and a positive fluid balance are at particular risk - in them, even small volumes can trigger it."
+   "prompt": "What does this presentation represent, and what made this patient particularly at risk?",
+   "options": [
+    "TACO - patients with cardiopulmonary or renal disease and a positive fluid balance are at particular risk, and even small volumes can trigger it in them",
+    "TRALI - an immune-mediated lung injury unrelated to fluid volume",
+    "An allergic reaction to plasma proteins",
+    "Hypothermia from a rapid, large-volume transfusion"
+   ],
+   "answer": 0,
+   "explanation": "This case raises strong concern for transfusion-associated circulatory overload (TACO), given renal disease, positive fluid balance and clinical/radiographic evidence of circulatory overload. TACO may occur even after a relatively small transfused volume in a susceptible patient. Stop the transfusion and urgently assess and escalate per local policy; other causes of acute respiratory deterioration, including TRALI, require clinical evaluation."
   }
  },
  {
   "key": "TRX-04",
-  "title": ["Anaphylactic reaction", "تفاعل تأقي"],
+  "title": [
+   "Anaphylactic reaction",
+   "تفاعل تأقي"
+  ],
   "vignette": "Shortly after a plasma-containing component is started, the patient develops hypotension, tachycardia, severe dyspnoea with wheeze, and abdominal pain.",
   "question": {
-    "prompt": "How does this differ from a simple allergic reaction, and what does it need?",
-    "options": [
-     "This is anaphylaxis (hypotension and severe respiratory involvement go beyond a simple allergic reaction) and needs immediate treatment with epinephrine and support per protocol",
-     "This is a mild allergic reaction (urticaria or wheeze alone) that can be managed with an antihistamine while continuing the transfusion",
-     "This is febrile non-haemolytic and needs only an antipyretic",
-     "This is TRALI and needs only respiratory support, with no other urgent action"
-    ],
-    "answer": 0,
-    "explanation": "A simple allergic reaction is often mild - urticaria or wheeze. Hypotension, tachycardia, severe dyspnoea, and more severe respiratory or cardiovascular features point to anaphylaxis, which is rare but needs immediate treatment with epinephrine and support, per prescriber order or protocol - the transfusion must be stopped immediately regardless of which reaction is suspected."
+   "prompt": "How does this differ from a simple allergic reaction, and what does it need?",
+   "options": [
+    "Stop the transfusion immediately, summon urgent help, assess airway/breathing/circulation, and initiate the local anaphylaxis protocol including epinephrine (adrenaline)",
+    "Treat wheezing as a harmless skin-limited allergy and continue the transfusion while giving an antihistamine",
+    "Give an antipyretic because this is a simple febrile non-haemolytic reaction",
+    "Assume this is transfusion-related acute lung injury and wait for imaging before treating the airway or circulation"
+   ],
+   "answer": 0,
+   "explanation": "Hypotension with wheeze and severe respiratory compromise after starting a blood component is highly concerning for anaphylaxis, even without rash. Stop the transfusion and initiate an emergency airway, breathing and circulation response, with epinephrine according to the authorized local anaphylaxis protocol. Wheeze/bronchospasm is not a feature to dismiss as a minor skin-only allergy. The team should still consider other acute transfusion reactions and alert the transfusion service."
   }
  }
 ]
