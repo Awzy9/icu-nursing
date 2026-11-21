@@ -2953,6 +2953,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "bcde2fefa79936b8",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MIDAZOLAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-ISMP-HAM-2024",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-08": [
@@ -2990,6 +3005,21 @@
      "L-DEXMEDETOMIDINE",
      "S-AHRQ-TS",
      "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "77e29010faa50604",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-ISMP-HAM-2024",
      "S-RCP-NEWS2"
     ],
     "gaps": 3,
@@ -3203,6 +3233,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "791d2781c0f44796",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ROCURONIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-ISMP-HAM-2024",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-13": [
@@ -3240,6 +3285,21 @@
      "L-CISATRACURIUM",
      "S-AHRQ-TS",
      "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e05fa2b8edb5d37c",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CISATRACURIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-ISMP-HAM-2024",
      "S-RCP-NEWS2"
     ],
     "gaps": 3,
@@ -4917,6 +4977,21 @@
      "L-SUCCINYLCHOLINE",
      "S-AHRQ-TS",
      "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5f52c4cc8e4e6d33",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-SUCCINYLCHOLINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-ISMP-HAM-2024",
      "S-RCP-NEWS2"
     ],
     "gaps": 3,
