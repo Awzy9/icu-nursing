@@ -19,6 +19,7 @@ describe("2026 IV potassium and magnesium high-alert review", () => {
     expect(m.sections.safety_alerts.items.some((x: {text: string}) => x.text.includes("high-alert"))).toBe(true);
     expect(m.clinically_reviewed).toBe(false);
     expect(m.pharmacist_reviewed).toBe(false);
+    expect(m.sources.every((v: {id: string}) => v.id !== "S-ISMP-HAM-2024")).toBe(true);
   });
 
   it("prevents potassium concentrate versus ready-to-use premix confusion", () => {
@@ -29,7 +30,8 @@ describe("2026 IV potassium and magnesium high-alert review", () => {
     expect(full).toContain("premixed");
     expect(full).toContain("fatal cardiac arrest");
     expect(full).toContain("rate-limiting infusion device");
-    expect(full).toContain("S-NSW-IVK-2025");
+    expect(read("sources/source_register.csv")).toContain("S-NSW-IVK-2025");
+    expect(k.sources.every((v: {id: string}) => !["S-ISMP-HAM-2024", "S-NSW-IVK-2025"].includes(v.id))).toBe(true);
     expect(full).toContain("S-DAILYMED-KCL-CONC-2026");
     expect(k.clinically_reviewed).toBe(false);
     expect(k.pharmacist_reviewed).toBe(false);
