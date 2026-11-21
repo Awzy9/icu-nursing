@@ -10,8 +10,8 @@
  "name": "Midazolam",
  "drug_class": "Benzodiazepine sedative",
  "category": "sedatives-analgesics",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+ "high_alert": true,
+ "high_alert_note": "ISMP's 2024 acute-care high-alert list includes INTRAVENOUS moderate-sedation agents, including this drug. The classification is route-specific and does not automatically classify every oral use; follow local patient monitoring and rescue-capability policy.",
  "summary": "Benzodiazepine used for sedation, anxiolysis and amnesia. The boxed warning stresses respiratory depression and arrest, continuous monitoring, immediate availability of resuscitation equipment and skilled airway personnel, and the risks of combining it with opioids.",
  "batch": 1,
  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
@@ -40,6 +40,11 @@
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  },
+  {
+   "id": "S-ISMP-HAM-2024",
+   "read": "full",
+   "use": "ISMP 2024 acute-care high-alert classification: IV moderate-sedation agents, with examples; read official one-page list and independently paraphrased"
   }
  ],
  "sections": {
@@ -122,6 +127,13 @@
      "support": "partial",
      "sources": [
       "L-MIDAZOLAM"
+     ]
+    },
+    {
+     "text": "High-alert classification for intravenous moderate-sedation agents: ensure ordered monitoring and immediate capability to recognize and rescue respiratory or hemodynamic compromise; verify the selected drug, route and local safeguards before administration.",
+     "support": "sourced",
+     "sources": [
+      "S-ISMP-HAM-2024"
      ]
     }
    ]
