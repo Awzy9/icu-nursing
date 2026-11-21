@@ -2,7 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { useColorScheme } from "react-native";
 import { isRtl, translate, type Locale } from "../core/i18n";
-import { emptyProgress, loadProgress, saveProgress, type KeyValueStore, type Progress } from "../core/progress";
+import { emptyProgress, loadProgress, saveProgress, scopedProgressStore, type KeyValueStore, type Progress } from "../core/progress";
 import { ONBOARDING_STORAGE_KEY } from "../core/onboarding";
 import { dark, light, type Palette } from "../ui/theme";
 
@@ -19,7 +19,8 @@ interface Ctx {
 const AppContext = createContext<Ctx | null>(null);
 export const useApp = (): Ctx => { const c = useContext(AppContext); if (!c) throw new Error("useApp outside AppProvider"); return c; };
 
-export function AppProvider({ children }: { children: React.ReactNode }) {
+export function AppProvider({ children, accountId = null }: { children: React.ReactNode; accountId?: string | null }) {
+  const progressStore = useMemo(() => scopedProgressStore(store, accountId), [accountId]);
   const [locale, setLocaleState] = useState<Locale>("en");
   const [themeMode, setThemeModeState] = useState<ThemeMode>("system");
   const [progress, setProgress] = useState<Progress>(emptyProgress());
@@ -36,12 +37,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         if (s.locale === "ar" || s.locale === "en") setLocaleState(s.locale);
         if (s.theme === "light" || s.theme === "dark" || s.theme === "system") setThemeModeState(s.theme);
       } catch { /* ignore corrupt settings */ }
-      setProgress(await loadProgress(store));
+      setProgress(await loadProgress(progressStore));
       try { setOnboardingSeen(await AsyncStorage.getItem(ONBOARDING_STORAGE_KEY) === "dismissed"); }
       catch { /* never block a learner if onboarding storage is unavailable */ }
       setReady(true);
     })();
-  }, []);
+  }, [progressStore]);
 
   const persistSettings = (l: Locale, m: ThemeMode) => void AsyncStorage.setItem(SETTINGS_KEY, JSON.stringify({ locale: l, theme: m })).catch(() => undefined);
   const setLocale = useCallback((l: Locale) => { setLocaleState(l); persistSettings(l, themeMode); }, [themeMode]);
@@ -50,7 +51,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setOnboardingSeen(true);
     void AsyncStorage.setItem(ONBOARDING_STORAGE_KEY, "dismissed").catch(() => undefined);
   }, []);
-  const update = useCallback((fn: (p: Progress) => Progress) => { const next = fn(latest.current); latest.current = next; setProgress(next); void saveProgress(store, next).catch(() => undefined); }, []);
+  const update = useCallback((fn: (p: Progress) => Progress) => { const next = fn(latest.current); latest.current = next; setProgress(next); void saveProgress(progressStore, next).catch(() => undefined); }, [progressStore]);
 
   const value = useMemo<Ctx>(() => ({
     locale, rtl: isRtl(locale), setLocale, themeMode, setThemeMode, palette: (themeMode === "system" ? system : themeMode) === "dark" ? dark : light,
