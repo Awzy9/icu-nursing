@@ -1389,6 +1389,23 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "ca155dbdb3002273",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-NICE-NG148-DOPAMINE",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T06": [
@@ -1681,6 +1698,22 @@
      "L-MILRINONE",
      "L-NOREPINEPHRINE",
      "L-VASOPRESSIN"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "93037d4066ebf613",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-EPINEPHRINE",
+     "L-MILRINONE",
+     "L-NOREPINEPHRINE",
+     "L-VASOPRESSIN",
+     "S-ADRENALIN-IM-2025"
     ],
     "gaps": 0,
     "required_sources": 0,
@@ -5160,6 +5193,22 @@
      "S-AHRQ-TS",
      "S-ESICM-SHOCK-2014",
      "S-OPENSTAX-MS-35-2"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "e1223851852fa6ec",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-ACC-CS-2025",
+     "S-AHRQ-TS",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025"
     ],
     "gaps": 5,
     "required_sources": 2,

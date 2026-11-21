@@ -1041,6 +1041,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NICE-NG148-DOPAMINE",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-OPENRN-PHARM-CH",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -1059,7 +1064,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "2f6c4a8d90d64ebb"
+   "hash": "ca155dbdb3002273"
   },
   {
    "key": "D01-T06",
@@ -1359,12 +1364,17 @@
      "id": "L-VASOPRESSIN",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-ADRENALIN-IM-2025",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-21"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "d8bf6a70b773734b"
+   "hash": "93037d4066ebf613"
   },
   {
    "key": "XQ-09",
@@ -4086,6 +4096,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-ACC-CS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4096,15 +4111,15 @@
      "verified": "2026-11-14"
     },
     {
-     "id": "S-OPENSTAX-MS-35-2",
+     "id": "S-ESICM-SHOCK-2025",
      "licence_class": "RED",
-     "verified": "2026-11-15"
+     "verified": "2026-11-16"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "4adc35851284fc48"
+   "hash": "e1223851852fa6ec"
   },
   {
    "key": "SC-03",

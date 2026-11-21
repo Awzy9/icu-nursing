@@ -13,8 +13,8 @@
  "domain": "cardiovascular",
  "difficulty": 3,
  "learning_objectives": [
-  "Recognise that falling blood pressure with cool, sweaty skin, breathlessness and less urine can mean the heart is failing as a pump, and report it urgently.",
-  "Keep continuous monitoring on during an inotrope infusion and report rhythm and pressure changes at once.",
+  "Recognise a concerning trend of hypoperfusion and congestion after acute myocardial infarction and activate urgent assessment without waiting for a specific blood-pressure cutoff.",
+  "Assess and escalate worsening rhythm and perfusion while maintaining continuous ECG monitoring during a prescribed inotrope.",
   "Leave infusion changes and support-device decisions to the prescriber, protocol and trained staff.",
   "Hand over the trend, not just the latest reading."
  ],
@@ -51,32 +51,38 @@
    "use": "FDA label: ventricular arrhythmias, monitoring"
   },
   {
-   "id": "S-OPENSTAX-MS-35-2",
-   "read": "partial",
-   "use": "CROSS-CHECK ONLY (non-commercial licence, read through a summarising reader): cardiogenic shock features, frequent cardiovascular assessment, infusion and device cautions"
-  },
-  {
    "id": "S-AHRQ-TS",
    "read": "partial",
    "use": "SBAR page"
+  },
+  {
+   "id": "S-ACC-CS-2025",
+   "read": "partial",
+   "use": "Official ACC 2025 summary (original JACC statement not fully read): rapid shock-team activation, assessment of hypoperfusion and congestion, serial reassessment and specialized MCS decisions"
+  },
+  {
+   "id": "S-ESICM-SHOCK-2025",
+   "read": "partial",
+   "use": "Official ESICM 2025 announcement and PubMed abstract only: skin/capillary refill perfusion, echocardiography, escalation of monitoring; not the full 50-statement guideline"
   }
  ],
  "required_sources": [
-  "A cardiogenic-shock guideline or scientific statement with nursing-level recognition and monitoring content, usable under a commercial licence (the OpenStax chapter read is non-commercial)",
-  "Unit protocol for inotrope and vasopressor infusions and for any mechanical circulatory support"
+  "Independent cardiogenic-shock nurse educator/critical-care cardiology verification of the current ACC/ESC/ESICM full guidance, grading and local escalation pathway",
+  "Institution-specific inotrope and vasopressor infusions, rapid-response, line/extravasation and any mechanical circulatory support device protocols"
  ],
  "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "The only nursing-level text read for the features of cardiogenic shock is non-commercial and was read through a summary; its statements are held as partial and must be re-supported before any release.",
-  "Diagnostic criteria, haemodynamic targets, drug choice and support-device management are deliberately not written; they belong to the prescriber and the unit protocol.",
-  "The ESICM consensus is dated (2014)."
+  "Unpublished fictional decision-graph specification: no independent clinical review or release approval.",
+  "Only the ACC 2025 society summary and ESICM 2025 abstract/announcement were inspected; the complete clinical statements, evidence grading and patient selection were not verified.",
+  "The patient's prescribed inotrope is intentionally unspecified. Dobutamine and milrinone labels cannot be treated as interchangeable, and the milrinone label does not recommend use during acute myocardial infarction.",
+  "Arrhythmia response, inotrope changes and MCS nursing monitoring require local emergency policy and qualified cardiology/critical-care staff validation.",
+  "The 2014 ESICM consensus is retained as historical context, not current definitive shock guidance."
  ],
  "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "OpenStax Medical-Surgical Nursing is CC BY-NC-SA and forbids ingestion into generative-AI offerings without permission: permission or replacement evidence is needed before any release use."
+  "Original authored scenario language; current ACC and ESICM citations are paraphrased from public summaries only. Do not reproduce copyrighted figures or guideline tables.",
+  "No OpenStax excerpt or licensed derivative material is used in the revised scenario. The previous non-commercial OpenStax cross-check has been removed from this case's supporting citations.",
+  "US manufacturer labels are cited for monitoring warnings, not generalized as clinical treatment instructions."
  ],
- "setting": "A fictional adult in a fictional cardiac intensive care unit a day after a heart attack, on an inotrope infusion prescribed by the team.",
+ "setting": "A fictional adult in a cardiac intensive care unit one day after a myocardial infarction. A specialist has prescribed an inotrope; the drug is not specified here and this scenario does not teach agent selection.",
  "steps": [
   {
    "position": 1,
@@ -106,28 +112,28 @@
    ],
    "options": [
     {
-     "text": "Assess the patient now (pressure, pulse, rhythm, skin, mental state, breathing, lung sounds and urine output), keep the monitoring on and report the trend urgently to the responsible clinician using SBAR.",
+     "text": "Assess airway, breathing and perfusion immediately, maintain ECG and pressure monitoring, and activate the urgent cardiac-shock response while handing over the deteriorating trend.",
      "points": 2,
      "next": 2,
      "scope": "escalation",
-     "feedback": "Shock is circulatory failure with signs of poor perfusion, so the skin, mental state and urine output matter as much as the pressure; a falling pressure with new breathlessness needs urgent reporting of the trend.",
-     "consequence": "The team is alerted early and comes to a patient whose findings you have already gathered.",
+     "feedback": "Cool, clammy skin, worsening mentation, breathlessness, falling urine output and declining blood pressure are concerning for inadequate organ perfusion. Do not wait for a single numerical cutoff or a routine reassessment; call the trained shock team promptly.",
+     "consequence": "The trained team is contacted immediately and receives the trajectory of perfusion, breathing, rhythm and vital signs.",
      "support": "partial",
      "sources": [
-      "S-ESICM-SHOCK-2014",
-      "S-OPENSTAX-MS-35-2"
+      "S-ACC-CS-2025",
+      "S-ESICM-SHOCK-2025"
      ]
     },
     {
      "text": "Write the readings in the chart and recheck at the usual time.",
-     "points": 1,
+     "points": 0,
      "next": 2,
      "scope": "independent_nursing",
-     "feedback": "Recording is needed, but a worsening trend with signs of poor perfusion should not wait for the next routine check.",
+     "feedback": "Documenting measurements alone delays assessment of possible life-threatening shock; request urgent clinical help now rather than wait for a scheduled review.",
      "consequence": "The deterioration continues for longer before anyone who can act knows about it.",
      "support": "partial",
      "sources": [
-      "S-ESICM-SHOCK-2014"
+      "S-ACC-CS-2025"
      ]
     },
     {
@@ -135,19 +141,20 @@
      "points": 0,
      "next": 2,
      "scope": "prescriber_or_other_discipline",
-     "feedback": "Dobutamine and similar infusions change heart rate and blood pressure and can cause arrhythmias; changes are made only as prescribed or per the unit's titration protocol.",
+     "feedback": "Changing the rate without an authorized order or titration protocol may cause tachyarrhythmia, ischemia or hypotension. A patient with possible cardiogenic shock needs rapid trained-team assessment.",
      "consequence": "The heart rate rises and the rhythm becomes irritable, and the team now has to deal with an unprescribed change as well.",
-     "support": "sourced",
+     "support": "partial",
      "sources": [
-      "L-DOBUTAMINE"
+      "L-DOBUTAMINE",
+      "S-ACC-CS-2025"
      ]
     }
    ]
   },
   {
    "position": 2,
-   "info": "The doctor is on the way. On the monitor, runs of abnormal beats from the ventricles begin to appear, and the pressure is lower again.",
-   "prompt": "What is the best action now?",
+   "info": "Despite the initial escalation, the patient is now more drowsy with falling pressure. Runs of ventricular ectopy appear on ECG; it is not yet known whether these are a sustained rhythm or whether the patient still has an adequate pulse.",
+   "prompt": "What should the nurse do immediately?",
    "observations": [
     {
      "key": "rhythm",
@@ -172,28 +179,30 @@
    ],
    "options": [
     {
-     "text": "Stay with the patient, keep continuous ECG monitoring on, report the ventricular ectopy immediately and ask for the emergency equipment to be brought close.",
+     "text": "Assess responsiveness, breathing and pulse/perfusion immediately, activate emergency cardiac help, maintain ECG and prepare to follow the approved deterioration or resuscitation pathway.",
      "points": 2,
      "next": 3,
      "scope": "escalation",
-     "feedback": "The milrinone and dobutamine labels warn of ventricular arrhythmias and call for continuous monitoring; ventricular ectopy during these infusions is reported at once.",
-     "consequence": "The team arrives knowing about the rhythm change and can decide on treatment without delay.",
-     "support": "sourced",
+     "feedback": "Deteriorating consciousness and perfusion with new ventricular rhythm changes require an immediate patient and pulse assessment and urgent trained-team response. Dobutamine and milrinone labels warn about ventricular arrhythmias, but neither label specifies treatment for this patient. Follow the monitored emergency pathway rather than relying only on alarms.",
+     "consequence": "The emergency team receives a rapid assessment of rhythm, pulse, ventilation and perfusion and can direct appropriate treatment.",
+     "support": "partial",
      "sources": [
+      "L-DOBUTAMINE",
       "L-MILRINONE",
-      "L-DOBUTAMINE"
+      "S-ACC-CS-2025"
      ]
     },
     {
      "text": "Check the electrodes first and report only if the beats continue for a long time.",
-     "points": 1,
+     "points": 0,
      "next": 3,
      "scope": "monitoring",
-     "feedback": "Checking the leads is reasonable, but it must not replace reporting while the patient is deteriorating.",
+     "feedback": "Checking lead quality can help identify artefact but should not delay assessment and emergency escalation in a drowsier hypotensive patient; determine pulse and perfusion now.",
      "consequence": "Time is lost while the patient's blood pressure keeps falling.",
      "support": "partial",
      "sources": [
-      "L-MILRINONE"
+      "L-DOBUTAMINE",
+      "S-ACC-CS-2025"
      ]
     },
     {
@@ -201,18 +210,18 @@
      "points": 0,
      "next": 3,
      "scope": "independent_nursing",
-     "feedback": "Assuming artefact in a deteriorating patient on an inotrope is unsafe; the rhythm must be confirmed and reported.",
+     "feedback": "Assuming monitor artefact or silencing alarms without examining the unstable patient risks missing a life-threatening rhythm. Assess the patient and activate the emergency response.",
      "consequence": "A dangerous rhythm may go unreported until the patient collapses.",
      "support": "partial",
      "sources": [
-      "L-MILRINONE"
+      "L-DOBUTAMINE"
      ]
     }
    ]
   },
   {
    "position": 3,
-   "info": "The team has made a plan. The patient is more stable, and the team is considering further circulatory support that specially trained staff will manage.",
+   "info": "After emergency assessment and prescribed treatment by the team, heart rhythm and blood pressure have improved. Urine output is still low, and the specialist team is discussing whether more circulatory support is required.",
    "prompt": "What should the bedside nurse do now?",
    "observations": [
     {
@@ -238,16 +247,16 @@
    ],
    "options": [
     {
-     "text": "Keep up frequent cardiovascular assessment, watch infusion sites, report bleeding or any change in a limb if a device is placed, and give a clear SBAR handover that shows the trend.",
+     "text": "Continue reassessing perfusion, rhythm, urine output and access sites; report persistent oliguria and any device-related bleeding or limb changes, and hand over the trend to the trained team.",
      "points": 2,
      "next": null,
      "scope": "monitoring",
-     "feedback": "Frequent assessment detects subtle change; cautions listed for vasoactive infusions and support devices include extravasation, bleeding and limb ischaemia, and devices are operated only by trained staff.",
-     "consequence": "Changes are caught early and the next team understands how the patient got here.",
+     "feedback": "A better pressure reading alone does not prove perfusion has recovered. The ACC shock summary emphasizes repeated assessment and specialist-team decisions for escalation. Bedside nurses monitor for renewed hypoperfusion and any access/device complications under unit policy, without undertaking device operation outside training.",
+     "consequence": "Persistent organ-perfusion concerns are made explicit and the specialist team can reassess the need for additional support.",
      "support": "partial",
      "sources": [
-      "S-OPENSTAX-MS-35-2",
-      "S-AHRQ-TS"
+      "S-ACC-CS-2025",
+      "S-ESICM-SHOCK-2025"
      ]
     },
     {
@@ -255,11 +264,11 @@
      "points": 0,
      "next": null,
      "scope": "prescriber_or_other_discipline",
-     "feedback": "Circulatory support devices are managed by specially trained staff; the bedside nurse helps with monitoring and reporting within their competence.",
+     "feedback": "Device selection and operation require an authorized expert team, training and manufacturer-specific procedures; the ACC summary is not a device operator manual.",
      "consequence": "The offer is declined and time is lost, or a trained person has to correct an unsafe action.",
      "support": "partial",
      "sources": [
-      "S-OPENSTAX-MS-35-2"
+      "S-ACC-CS-2025"
      ]
     },
     {
@@ -267,11 +276,12 @@
      "points": 0,
      "next": null,
      "scope": "independent_nursing",
-     "feedback": "A patient in shock who looks better remains at risk of deterioration and continues to need close monitoring.",
+     "feedback": "The patient remains at risk while urine output is low. Maintain serial perfusion assessment and communicate any ongoing concern even when pressure briefly improves.",
      "consequence": "A second deterioration is noticed late.",
      "support": "partial",
      "sources": [
-      "S-ESICM-SHOCK-2014"
+      "S-ACC-CS-2025",
+      "S-ESICM-SHOCK-2025"
      ]
     }
    ]
@@ -279,10 +289,10 @@
  ],
  "debrief": {
   "learning_points": [
-   "Look beyond the pressure: skin, mental state, breathing and urine output show whether the body is being perfused.",
-   "During inotrope infusions keep the ECG on and report ventricular ectopy, a marked rise or fall in pressure or a rapid rhythm at once.",
-   "Do not change an infusion or run a device you are not trained and authorised for; prepare, monitor and report.",
-   "Hand over the trend with SBAR so the next team sees how the patient has changed."
+   "Cardiogenic shock requires attention to organ perfusion and congestion, not a blood-pressure reading in isolation; activate the specialist emergency team without delay.",
+   "New ventricular rhythm changes with worsening mentation or hypotension demand pulse/airway/perfusion assessment and trained emergency support, not merely silencing the monitor.",
+   "The medication administered is prescribed by the team: labeling precautions for dobutamine or milrinone are not general drug-selection recommendations, especially after acute myocardial infarction.",
+   "After apparent stabilization, monitor urine output, perfusion and clinical trajectory; hand over the trend and coordinate support-device care with authorized trained staff."
   ],
   "links": [
    {
