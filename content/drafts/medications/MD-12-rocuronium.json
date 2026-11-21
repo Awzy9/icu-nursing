@@ -128,10 +128,11 @@
      ]
     },
     {
-     "text": "High-alert classification: neuromuscular blocking agents can cause catastrophic harm after a wrong-drug or wrong-patient error. Confirm product/route against an authorized order, maintain airway and ventilation rescue readiness and follow the institution's separation, labeling and independent-check safeguards; paralysis alone does not provide pain relief or sedation.",
+     "text": "High-alert classification: neuromuscular blocking agents can cause catastrophic harm after a wrong-drug or wrong-patient error. Confirm product/route against an authorized order, maintain airway and ventilation rescue readiness and follow the institution's separation, labeling and independent-check safeguards.",
      "support": "sourced",
      "sources": [
-      "S-ISMP-HAM-2024"
+      "S-ISMP-HAM-2024",
+      "L-ROCURONIUM"
      ]
     }
    ]
