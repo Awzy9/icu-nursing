@@ -42,7 +42,8 @@
             "backgroundColor": "#0B2239"
           }
         }
-      ]
+      ],
+      "expo-updates"
     ],
     "scheme": "nursingmastery",
     "extra": {
@@ -54,6 +55,13 @@
       "eas": {
         "projectId": "a672dfbf-3fe6-4971-8b97-0dffe86a2433"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a672dfbf-3fe6-4971-8b97-0dffe86a2433",
+      "fallbackToCacheTimeout": 0
     }
   }
 }
