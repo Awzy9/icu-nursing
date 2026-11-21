@@ -44,13 +44,18 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "Official 2026 SSC recommendation-level page: conditional, very-low-certainty preference for protocolized peripheral vasopressor initiation when central access would delay support; complete evidence tables not reviewed."
     }
   ],
   "required_sources": [
-    "Surviving Sepsis Campaign 2026 guideline full text and the national sepsis pathway",
     "Unit sepsis bundle and vasopressor protocol",
     "UK/other peripheral vasopressor policy",
-    "Local adult vasopressor extravasation SOP including catheter aspiration, antidote and uninterrupted haemodynamic support"
+    "Local adult vasopressor extravasation SOP including catheter aspiration, antidote and uninterrupted haemodynamic support",
+    "Full-text evidence tables for SSC 2026 and local/national sepsis pathway still require review"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
@@ -162,7 +167,8 @@
           "consequence": "The vascular access is monitored repeatedly, and the team has a plan for urgent alternative access if the site fails.",
           "support": "partial",
           "sources": [
-            "L-NOREPINEPHRINE"
+            "L-NOREPINEPHRINE",
+            "S-SSC-2026"
           ]
         },
         {
