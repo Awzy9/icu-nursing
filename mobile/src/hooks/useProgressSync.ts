@@ -66,7 +66,7 @@ export function useProgressPullOnSignIn() {
   const lastSyncedEmail = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!signedIn || !rpc || email === lastSyncedEmail.current || catalog.status !== "ready") return;
+    if (!ready || !signedIn || !rpc || email === lastSyncedEmail.current || catalog.status !== "ready") return;
     lastSyncedEmail.current = email;
     (async () => {
       const kindOf = new Map<string, BookmarkKind>(catalog.data.map((e) => [e.key, e.type as BookmarkKind]));
