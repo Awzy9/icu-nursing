@@ -39,6 +39,29 @@ describe("clinical evidence corrections — November 2026", () => {
     expect(s).not.toContain("The draft does not choose; use the local protocol.");
   });
 
+  it("corrects the learner-facing CRRT filter pressures and patient-first alarm practice", () => {
+    const crrt = JSON.parse(read("content/working-crrt.json")) as {
+      components: { key: string; description: [string, string] }[];
+      alarms: { key: string; question: { options: string[]; answer: number; explanation: string } }[];
+    };
+    const byKey = (key: string) => crrt.components.find((c) => c.key === key)!;
+    const alarm = (key: string) => crrt.alarms.find((a) => a.key === key)!;
+    expect(byKey("filter").description[0]).toContain("Transmembrane pressure (TMP)");
+    expect(byKey("filter").description[0]).toContain("Filter pressure drop (ΔP)");
+    expect(byKey("filter").description[0]).toContain("distinct measurements");
+    expect(byKey("filter").description[1]).toContain("قياسان مختلفان");
+    expect(byKey("pressures").description[0]).toContain("pressure changes alone cannot confirm");
+    expect(byKey("access").description[0]).toContain("rather than relying on red/blue alone");
+    for (const key of ["CRRT-A1", "CRRT-A3", "CRRT-A4"]) {
+      expect(alarm(key).question.answer).toBe(0);
+      expect(alarm(key).question.options[0]).toMatch(/^Assess the patient/);
+    }
+    expect(alarm("CRRT-A2").question.answer).toBe(0);
+    expect(alarm("CRRT-A2").question.explanation).toContain("filter pressure drop (ΔP)");
+    expect(alarm("CRRT-A2").question.explanation).toContain("not diagnostic");
+    expect(alarm("CRRT-A3").question.explanation).not.toContain("empty bag feeding the line");
+  });
+
   it("keeps generated draft indexes and history synchronized and never claims human clinical approval", () => {
     const index = JSON.parse(read("src/content/draft-index.json")) as { entries: { key: string; type: string; hash: string; clinically_reviewed: boolean }[] };
     const history = JSON.parse(read("src/content/draft-history.json")) as { entries: Record<string, { hash: string; recorded: string }[]> };
