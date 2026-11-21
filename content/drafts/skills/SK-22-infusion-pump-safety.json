@@ -1,255 +1,256 @@
 {
- "skill_id": "SK-22",
- "number": 22,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Medication infusion pump safety",
- "category": "safety-infection-devices",
- "topic_drafts": [
-  "D05-T16"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-ISMP-HA",
-   "read": "full",
-   "use": "ISMP high-alert medication list (2024): reproduction needs permission"
-  },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump risk-reduction page"
-  }
- ],
- "objectives": [
-  "Verify pump programming at the moments the FDA singles out.",
-  "Use the drug library and respond to alerts rather than silencing them.",
-  "Obtain an independent double check when policy requires."
- ],
- "prerequisites": [
-  "Medication safety fundamentals"
- ],
- "sections": {
-  "safety": {
-   "support": "full",
-   "items": [
+  "skill_id": "SK-22",
+  "number": 22,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Medication infusion pump safety",
+  "category": "safety-infection-devices",
+  "topic_drafts": [
+    "D05-T16"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Verify programming (dosage, rate, volume) at change of shift, when any change is made to the settings, when a new bag is hung and when new tubing is primed (FDA).",
-     "support": "sourced",
-     "sources": [
-      "S-FDA-PUMP"
-     ]
+      "id": "S-ISMP-HA",
+      "read": "full",
+      "use": "ISMP high-alert medication list (2024): reproduction needs permission"
     },
     {
-     "text": "Label pump channels and tubing at the port of entry with the drug or fluid name if the pump does not display it (FDA).",
-     "support": "sourced",
-     "sources": [
-      "S-FDA-PUMP"
-     ]
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump risk-reduction page"
+    }
+  ],
+  "objectives": [
+    "Verify pump programming at the moments the FDA singles out.",
+    "Use the drug library and respond to alerts rather than silencing them.",
+    "Obtain an independent double check when policy requires."
+  ],
+  "prerequisites": [
+    "Medication safety fundamentals"
+  ],
+  "sections": {
+    "safety": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Verify programming (dosage, rate, volume) at change of shift, when any change is made to the settings, when a new bag is hung and when new tubing is primed (FDA).",
+          "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        },
+        {
+          "text": "Label pump channels and tubing at the port of entry with the drug or fluid name if the pump does not display it (FDA).",
+          "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        },
+        {
+          "text": "Use the drug library where one exists and respond carefully to alerts rather than silencing them (FDA).",
+          "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Obtain an independent double check of pump settings by a second clinician when facility policy requires it for high-risk drugs; the FDA defines this as two clinicians checking separately, alone and apart, then comparing against the order.",
+          "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Which drugs need a double check and who may programme pumps are set by local policy; ISMP's list identifies high-alert drug classes.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "assessment": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Before use, inspect the pump for signs of breakage or damage (such as small chips or cracks); remove, tag and sequester a damaged pump rather than use it. For high-acuity patients, the FDA calls for having a backup plan to obtain a working pump and tubing quickly.",
+          "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "full",
+      "items": [
+        {
+          "text": "For high-risk infusions, watch for signs of over- or under-infusion using other available monitoring (for example cardiac monitoring, pulse oximetry, end-tidal CO2 or glucose readings) alongside the pump itself, and monitor the patient and the infusion per facility protocol; a secondary volume check (such as a time strip or buretrol) can help confirm the expected volume has infused.",
+          "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Pump model, drug-library configuration and manufacturer instructions are unit-specific.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Programming steps follow the manufacturer's instructions and unit training; doses and rates are never taken from this library.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Stop and report pump alerts you cannot resolve, programming discrepancies against the order and any suspected over- or under-infusion.",
+          "support": "partial",
+          "sources": [
+            "S-FDA-PUMP",
+            "S-ISMP-HA"
+          ]
+        },
+        {
+          "text": "If a pump fails or stops working during a high-risk infusion, stay with and closely monitor the patient while another staff member obtains a working pump; for fluid-sensitive patients, clamp and disconnect the tubing to prevent over-infusion until a replacement pump is obtained. Report problems through facility protocol; events involving possible death or serious injury require following the facility's reporting pathway.",
+          "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record programming checks and double checks per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
+  },
+  "checklist": [
+    {
+      "phase": "preparation",
+      "text": "Check the order against the drug, concentration and pump programming.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
     },
     {
-     "text": "Use the drug library where one exists and respond carefully to alerts rather than silencing them (FDA).",
-     "support": "sourced",
-     "sources": [
-      "S-FDA-PUMP"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Obtain an independent double check of pump settings by a second clinician when facility policy requires it for high-risk drugs; the FDA defines this as two clinicians checking separately, alone and apart, then comparing against the order.",
-     "support": "sourced",
-     "sources": [
-      "S-FDA-PUMP"
-     ]
-    }
-   ]
-  },
-  "scope": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Which drugs need a double check and who may programme pumps are set by local policy; ISMP's list identifies high-alert drug classes.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "assessment": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Before use, inspect the pump for signs of breakage or damage (such as small chips or cracks); remove, tag and sequester a damaged pump rather than use it. For high-acuity patients, the FDA calls for having a backup plan to obtain a working pump and tubing quickly.",
-     "support": "sourced",
-     "sources": [
-      "S-FDA-PUMP"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "full",
-   "items": [
-    {
-     "text": "For high-risk infusions, watch for signs of over- or under-infusion using other available monitoring (for example cardiac monitoring, pulse oximetry, end-tidal CO2 or glucose readings) alongside the pump itself, and monitor the patient and the infusion per facility protocol; a secondary volume check (such as a time strip or buretrol) can help confirm the expected volume has infused.",
-     "support": "sourced",
-     "sources": [
-      "S-FDA-PUMP"
-     ]
-    }
-   ]
-  },
-  "equipment": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Pump model, drug-library configuration and manufacturer instructions are unit-specific.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Programming steps follow the manufacturer's instructions and unit training; doses and rates are never taken from this library.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Stop and report pump alerts you cannot resolve, programming discrepancies against the order and any suspected over- or under-infusion.",
-     "support": "partial",
-     "sources": [
-      "S-FDA-PUMP",
-      "S-ISMP-HA"
-     ]
+      "phase": "procedure",
+      "text": "Verify programming at shift change, after any change, with a new bag and with new tubing.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
     },
     {
-     "text": "If a pump fails or stops working during a high-risk infusion, stay with and closely monitor the patient while another staff member obtains a working pump; for fluid-sensitive patients, clamp and disconnect the tubing to prevent over-infusion until a replacement pump is obtained. Report problems through facility protocol; events involving possible death or serious injury require following the facility's reporting pathway.",
-     "support": "sourced",
-     "sources": [
-      "S-FDA-PUMP"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Use the drug library and respond to alerts rather than silencing them.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
     {
-     "text": "Record programming checks and double checks per unit standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "procedure",
+      "text": "Obtain an independent double check when policy requires it.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "phase": "procedure",
+      "text": "Label the channel and tubing at the port of entry if the pump does not show the drug name.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "phase": "escalation",
+      "text": "Assess the patient immediately for a pump discrepancy or unexplained alarm; verify the order and pump, escalate promptly and follow the unit's contingency plan to maintain or safely transition essential infusions. Do not automatically stop a life-sustaining medication without a clinician-directed safety plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "phase": "documentation",
+      "text": "Record checks and double checks.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Check the order against the drug, concentration and pump programming.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-FDA-PUMP"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Verify programming at shift change, after any change, with a new bag and with new tubing.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "S-FDA-PUMP"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Use the drug library and respond to alerts rather than silencing them.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "S-FDA-PUMP"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Obtain an independent double check when policy requires it.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "S-FDA-PUMP"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Label the channel and tubing at the port of entry if the pump does not show the drug name.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "S-FDA-PUMP"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Stop and report discrepancies or unresolved alerts.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-FDA-PUMP"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record checks and double checks.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Drug-specific high-alert strategies, concentration standardisation and smart-pump configuration: not covered.",
-  "Pump manufacturer instructions: unit-specific."
- ],
- "permissions": [
-  "ISMP list: platform/commercial reproduction needs permission.",
-  "FDA page: verify reuse terms."
- ],
- "references": [
-  {
-   "id": "S-ISMP-HA",
-   "title": "ISMP List of High-Alert Medications in Acute Care Settings",
-   "publisher": "ISMP (part of ECRI)",
-   "version": "2024 list (file dated 2024-01-09; survey Sept-Oct 2023)",
-   "url": "https://www.ismp.org/recommendations/high-alert-medications-acute-list",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "RED",
-   "permission_required": "Yes (platform/commercial use)"
-  },
-  {
-   "id": "S-FDA-PUMP",
-   "title": "Infusion Pump Risk Reduction Strategies for Clinicians",
-   "publisher": "US Food and Drug Administration",
-   "version": "Page: content current as of 2018-02-02",
-   "url": "https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians",
-   "accessed": "2026-11-16",
-   "read": "full",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  }
- ]
+  ],
+  "gaps": [
+    "Drug-specific high-alert strategies, concentration standardisation and smart-pump configuration: not covered.",
+    "Pump manufacturer instructions: unit-specific.",
+    "Pump failure contingency plans for continuously infused high-alert/life-sustaining medicines must be device- and drug-specific; this checklist does not prescribe automatic interruption, temporary delivery methods or replacement-pump programming."
+  ],
+  "permissions": [
+    "ISMP list: platform/commercial reproduction needs permission.",
+    "FDA page: verify reuse terms."
+  ],
+  "references": [
+    {
+      "id": "S-ISMP-HA",
+      "title": "ISMP List of High-Alert Medications in Acute Care Settings",
+      "publisher": "ISMP (part of ECRI)",
+      "version": "2024 list (file dated 2024-01-09; survey Sept-Oct 2023)",
+      "url": "https://www.ismp.org/recommendations/high-alert-medications-acute-list",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "RED",
+      "permission_required": "Yes (platform/commercial use)"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "title": "Infusion Pump Risk Reduction Strategies for Clinicians",
+      "publisher": "US Food and Drug Administration",
+      "version": "Page: content current as of 2018-02-02",
+      "url": "https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians",
+      "accessed": "2026-11-16",
+      "read": "full",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    }
+  ]
 }
