@@ -121,6 +121,7 @@ function PracticeActivity({ moduleKey, exercise }: { moduleKey: string; exercise
       ) : null}
 
       {checked ? (
+        <>
         <Callout tone={evaluation.passed ? "success" : "warn"}>{evaluation.selfAssessment
           ? (ar ? "تم حفظ التقييم الذاتي للتعلّم فقط؛ ليس إثباتاً للكفاءة السريرية." : "Self-assessment recorded for learning only; this is not clinical competency certification.")
           : evaluation.passed
@@ -128,6 +129,7 @@ function PracticeActivity({ moduleKey, exercise }: { moduleKey: string; exercise
             : (ar ? `${evaluation.correct} من ${evaluation.total} صحيحة. راجع الشرح ثم أعد المحاولة لإكمال التدريب.` : `${evaluation.correct} of ${evaluation.total} correct. Review the feedback and try again to complete this activity.`)
         }</Callout>
         <Button label={ar ? "إعادة المحاولة" : "Try again"} variant="outline" onPress={reset} />
+        </>
       ) : (
         <Button label={exercise.kind === "checklist" ? (ar ? "حفظ التقييم الذاتي" : "Save self-assessment") : (ar ? "تحقق من عملي" : "Check my work")} disabled={!ready} onPress={submit} />
       )}
