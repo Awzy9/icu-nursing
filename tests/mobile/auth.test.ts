@@ -3,6 +3,7 @@ import { createChunkedStorage, CHUNK_SIZE, type SecureValueStore } from "../../m
 import { readAuthConfig } from "../../mobile/src/auth/config";
 import { allowCaptchaNavigation, captchaUrl, parseCaptchaMessage } from "../../mobile/src/auth/captcha";
 import { parseAuthCallback } from "../../mobile/src/auth/deepLinks";
+import { redirectSystemPath } from "../../mobile/app/+native-intent";
 import { createSessionManager, mapSignInError } from "../../mobile/src/auth/session";
 import { createRpc, RpcError } from "../../mobile/src/api/rpc";
 import type { SupabaseClient } from "@supabase/supabase-js";
@@ -37,6 +38,10 @@ describe("configuration", () => {
   it("accepts public https configuration, allows local development addresses, and runs offline when unset", () => {
     expect(readAuthConfig(ok)?.siteOrigin).toBe(SITE);
     expect(readAuthConfig({ ...ok, EXPO_PUBLIC_SUPABASE_URL: "http://10.0.2.2:54321", EXPO_PUBLIC_SITE_URL: "http://10.0.2.2:3100" })).not.toBeNull();
+    const publicKey = "sb_publishable_" + "a".repeat(30);
+    const pub = readAuthConfig({ EXPO_PUBLIC_SUPABASE_URL: "https://abc.supabase.co", EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: publicKey });
+    expect(pub?.anonKey).toBe(publicKey);
+    expect(pub?.siteOrigin).toBe("https://icu-nursing.vercel.app");
     expect(readAuthConfig({})).toBeNull();
   });
   it("refuses plain http to a real host and any service-role key", () => {
@@ -72,6 +77,14 @@ describe("authentication callbacks (deep links)", () => {
     expect(parseAuthCallback("nursingmastery://auth/callback?code=abcDEF123456&type=recovery", SITE)).toEqual({ ok: true, intent: { kind: "recovery", code: "abcDEF123456" } });
     expect(parseAuthCallback(`${SITE}/auth/callback?code=abcDEF123456`, SITE)).toEqual({ ok: true, intent: { kind: "magiclink", code: "abcDEF123456" } });
   });
+  it("rewrites the provider's host-style link to the actual Expo Router callback screen", () => {
+    const url = "nursingmastery://auth/callback?code=abcDEF123456&type=recovery";
+    expect(redirectSystemPath({ path: url, initial: true })).toBe("/auth/callback?code=abcDEF123456&type=recovery");
+    expect(redirectSystemPath({ path: "/(tabs)/account", initial: false })).toBe("/(tabs)/account");
+    expect(redirectSystemPath({ path: "nursingmastery://other/callback?code=abcDEF123456", initial: true })).toContain("//other/");
+    expect(parseAuthCallback("nursingmastery://auth/callback?code=abcDEF123456&type=signup", SITE)).toMatchObject({ ok: true, intent: { kind: "signup" } });
+  });
+
   it("refuses other schemes, hosts, paths and malformed or hostile parameters", () => {
     const cases: [string, string][] = [
       ["javascript:alert(1)", "scheme"], ["file:///etc/passwd", "scheme"], ["not a url", "scheme"], ["http://example-staging.test/auth/callback?code=abcDEF123456", "scheme"],
@@ -110,6 +123,25 @@ describe("session lifecycle", () => {
     await createSessionManager(fakeClient(revoked as never), { now: () => 1000 }).onForeground();
     expect(revoked.refreshed).toBe(1); expect(revoked.session).toBeNull();
   });
+  it("creates native Supabase accounts with validated names, a one-use CAPTCHA and the mobile callback", async () => {
+    const calls: unknown[] = [];
+    const client = {
+      auth: {
+        signUp: async (body: unknown) => { calls.push(body); return { data: { user: { id: "u1" }, session: null }, error: null }; },
+        updateUser: async (body: unknown) => { calls.push(body); return { data: {}, error: null }; },
+      },
+    } as unknown as SupabaseClient;
+    const manager = createSessionManager(client);
+    const input = { email: " learner@example.test ", password: "long-secure-password-2026", displayName: " Test Nurse ", locale: "en" as const, captchaToken: "challenge-123", redirectTo: "nursingmastery://auth/callback" };
+    expect(await manager.signUp({ ...input, captchaToken: "" })).toEqual({ ok: false, error: "input" });
+    expect(await manager.signUp({ ...input, password: "short" })).toEqual({ ok: false, error: "input" });
+    expect(await manager.signUp(input)).toEqual({ ok: true, confirmationRequired: true });
+    expect(calls[0]).toMatchObject({ email: "learner@example.test", options: { captchaToken: "challenge-123", emailRedirectTo: input.redirectTo, data: { display_name: "Test Nurse", preferred_locale: "en" } } });
+    expect(await manager.updatePassword("short")).toEqual({ ok: false, error: "input" });
+    expect(await manager.updatePassword("another-strong-password")).toEqual({ ok: true });
+    expect(calls[1]).toEqual({ password: "another-strong-password" });
+  });
+
   it("knows whether the sign-in is recent (from the verified amr claim) and maps deletion refusals", async () => {
     const now = 1_800_000_000;
     const recent = createSessionManager(fakeClient({ session: { access_token: jwt({ amr: [{ method: "password", timestamp: now - 20 }] }), expires_at: now + 3000 }, refreshed: 0 }), { now: () => now });

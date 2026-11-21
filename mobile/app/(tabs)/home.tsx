@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { Pressable, Text, View } from "react-native";
 import { useRouter, type Href } from "expo-router";
-import { NavGroup, SearchBar, SectionLabel, Screen } from "../../src/ui/components";
+import { NavCard, NavGroup, SearchBar, SectionLabel, Screen } from "../../src/ui/components";
 import { Icon, IconTile, type IconName } from "../../src/ui/icons";
 import { useApp } from "../../src/state/app";
+import { useAuth } from "../../src/auth/provider";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
 import { ROUTE_FOR_TYPE } from "../../src/core/search";
 import { shouldAutoStartOnboarding } from "../../src/core/onboarding";
@@ -30,6 +31,7 @@ function Destination({ href, title, subtitle, icon, accent }: {
 
 export default function LearningHub() {
   const { t, progress, rtl: ar, palette, ready, onboardingSeen } = useApp();
+  const { email } = useAuth();
   const router = useRouter();
   useEffect(() => {
     if (shouldAutoStartOnboarding(ready, onboardingSeen, progress)) router.replace("/onboarding");
@@ -62,6 +64,10 @@ export default function LearningHub() {
         </View>
       </Pressable>
 
+      <NavCard href="/(tabs)/account"
+        title={email ? t("tab.account") : t("auth.newAccount")}
+        body={email ? t("auth.signedInAs", { email }) : t("auth.accountIntro")}
+        icon="user" accent="study" />
       <SearchBar label={t("search.title")} hint={t("search.placeholder")} />
       <SectionLabel>{label("Explore", "استكشف")}</SectionLabel>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>

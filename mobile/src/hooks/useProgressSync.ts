@@ -59,20 +59,25 @@ export function useProgressSync() {
  * their own catalog fetch just to render a bookmark button.
  */
 export function useProgressPullOnSignIn() {
-  const { update } = useApp();
+  const { update, ready } = useApp();
   const { rpc, email } = useAuth();
   const signedIn = !!(rpc && email);
   const catalog = useCatalogList();
+  const catalogEntries = catalog.status === "ready" ? catalog.data : null;
   const lastSyncedEmail = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!signedIn || !rpc || email === lastSyncedEmail.current || catalog.status !== "ready") return;
-    lastSyncedEmail.current = email;
+    if (!ready || !signedIn || !rpc || email === lastSyncedEmail.current || !catalogEntries) return;
+    let cancelled = false;
     (async () => {
-      const kindOf = new Map<string, BookmarkKind>(catalog.data.map((e) => [e.key, e.type as BookmarkKind]));
+      const kindOf = new Map<string, BookmarkKind>(catalogEntries.map((e) => [e.key, e.type as BookmarkKind]));
       const [bookmarks, sessions, lessons, attempts] = await Promise.all([rpc.listWorkingBookmarks().catch(() => []), rpc.listWorkingSessions().catch(() => []), rpc.listWorkingLessons().catch(() => []), rpc.listWorkingAttempts().catch(() => [])]);
-      update((p) => mergeRemoteAttempts(mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons), attempts));
+      if (!cancelled) {
+        lastSyncedEmail.current = email;
+        update((p) => mergeRemoteAttempts(mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons), attempts));
+      }
     })().catch(() => undefined);
-  }, [signedIn, rpc, email, catalog, update]);
+    return () => { cancelled = true; };
+  }, [ready, signedIn, rpc, email, catalogEntries, update]);
   useEffect(() => { if (!signedIn) lastSyncedEmail.current = null; }, [signedIn]);
 }
