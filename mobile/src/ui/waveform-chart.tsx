@@ -10,10 +10,10 @@ import { P } from "./components";
 // remove that renderer dependency for ECG, defibrillator, ventilator and arterial-line labs.
 const HEIGHT = 152;
 const LINE_WIDTH = 2.5;
-export function WaveformChart({ trace }: { trace: WaveformTrace }) {
+export function WaveformChart({ trace, timeAxisEnd }: { trace: WaveformTrace; timeAxisEnd?: number }) {
   const { palette } = useApp();
   const [width, setWidth] = useState(0);
-  const drawing = useMemo(() => width > 15 ? plotWaveform(trace, width, HEIGHT) : null, [trace, width]);
+  const drawing = useMemo(() => width > 15 ? plotWaveform(trace, width, HEIGHT, 7, timeAxisEnd) : null, [trace, width, timeAxisEnd]);
 
   return (
     <View accessibilityRole="image" accessibilityLabel={`${trace.label} versus time, ${trace.unit}`} style={{ gap: 5 }}>
