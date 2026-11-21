@@ -30,6 +30,15 @@ describe("infusion practice case data", () => {
     for (const c of cases) expect(medKeys.has(c.drugRef)).toBe(true);
   });
 
+  it("does not teach a fixed correct-answer position or present calculation cases as pump orders", () => {
+    expect(cases.map((c) => c.answerIndex).sort()).toEqual([0, 1, 2, 3]);
+    for (const c of cases) {
+      expect(c.explanation).toContain("Fictional calculation exercise");
+      expect(c.explanation).toContain("Verify the actual order, units, concentration and institutional drug library");
+      expect(c.options[c.answerIndex]).toBe(round1(infusionRateMlPerHour(c.order)));
+    }
+  });
+
   it("gives every case a unique key", () => {
     const keys = cases.map((c) => c.key);
     expect(new Set(keys).size).toBe(keys.length);
