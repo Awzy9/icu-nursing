@@ -2,6 +2,7 @@ import { useLocalSearchParams } from "expo-router";
 import { RemoteGate, Screen } from "../../src/ui/components";
 import { LessonReader } from "../../src/ui/lesson-reader";
 import { BedsideMonitorVisual } from "../../src/ui/bedside-monitor-visual";
+import { ModuleVisuals } from "../../src/ui/module-visuals";
 import { useCatalogEntry } from "../../src/hooks/useRemoteContent";
 
 export default function EquipmentScreen() {
@@ -10,7 +11,7 @@ export default function EquipmentScreen() {
   return (
     <Screen>
       <RemoteGate state={entry} onRetry={entry.refresh}>
-        {(data) => <LessonReader entry={data} bookmarkKey={`equipment:${data.key}`} visual={data.key === "EQ-01" ? <BedsideMonitorVisual /> : undefined} />}
+        {(data) => <LessonReader entry={data} bookmarkKey={`equipment:${data.key}`} visual={<>{data.key === "EQ-01" ? <BedsideMonitorVisual /> : null}<ModuleVisuals moduleKey={data.key} /></>} />}
       </RemoteGate>
     </Screen>
   );
