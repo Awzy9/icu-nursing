@@ -26,15 +26,17 @@ describe("2026-11-21 vancomycin clinical safety audit (MD-24)", () => {
     expect(v.monitoring.some((x: {text: string}) => x.text.includes("white-cell"))).toBe(true);
   });
 
-  it("limits AUC-guided monitoring to serious invasive MRSA and prescriber/pharmacy oversight", () => {
+  it("documents AUC consensus in the report without adding a RED source to the draft", () => {
     const combined = v.sections.monitoring.items.map((x: {text: string}) => x.text).join(" ");
-    expect(combined).toContain("serious invasive MRSA");
-    expect(combined).toContain("AUC-guided therapeutic drug monitoring");
-    expect(combined).toContain("trough");
-    expect(combined).toContain("pharmacist/prescriber");
-    expect(v.sources.some((x: {id: string}) => x.id === "S-IDSA-VANCO-2020")).toBe(true);
+    expect(combined).toContain("ordered timing");
+    expect(combined).toContain("pharmacy/prescriber");
+    expect(combined).not.toContain("AUC-guided");
+    expect(v.sources.some((x: {id: string}) => x.id === "S-IDSA-VANCO-2020")).toBe(false);
     const reg = read("sources/source_register.csv");
     expect(reg).toContain("S-IDSA-VANCO-2020,PARTIAL OR SUMMARY");
+    const report = read("docs/clinical-evidence/AI_REVIEW_VANCOMYCIN_2026-11-21.md");
+    expect(report).toContain("AUC-based");
+    expect(report).toContain("RED (cite-only)");
     expect(JSON.stringify(v)).not.toContain("400 to 600");
   });
 
@@ -51,7 +53,7 @@ describe("2026-11-21 vancomycin clinical safety audit (MD-24)", () => {
     expect(e?.hash).toBe(hash);
     expect(e?.clinically_reviewed).toBe(false);
     expect(e?.gaps).toBe(v.gaps.length);
-    expect(e?.sources.some(x => x.id === "S-IDSA-VANCO-2020")).toBe(true);
+    expect(e?.sources.some(x => x.id === "S-IDSA-VANCO-2020")).toBe(false);
     expect(history["MD-24"]?.at(-1)?.hash).toBe(hash);
   });
 });
