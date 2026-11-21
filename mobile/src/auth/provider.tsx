@@ -1,3 +1,4 @@
+import "react-native-url-polyfill/auto"; // Native runtime only; keep cross-platform auth client pure.
 import * as SecureStore from "expo-secure-store";
 import * as Linking from "expo-linking";
 import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
