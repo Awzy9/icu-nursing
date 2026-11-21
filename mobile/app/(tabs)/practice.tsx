@@ -7,6 +7,7 @@ export default function Practice() {
   const cases = useCatalogList("cases");
   return (
     <Screen>
+      <NavCard href="/nursing-lab" title={rtl ? "مختبر التمريض التفاعلي" : "Interactive Nursing Lab"} body={rtl ? "القرارات السريرية، فحص الأدوية والمهارات البصرية" : "Shift decisions, medication safety, visual skills and mistake review"} icon="heart" accent="practice" />
       <NavCard href="/infusion-calculator" title={rtl ? "حاسبة مضخة التسريب" : "Infusion pump calculator"} body={rtl ? "حساب المعدل والمدة والجرعة للتدريب" : "Calculate mL/h, duration and dose-based rates"} icon="pill" accent="medications" />
       <NavCard href="/vent-lab" title={t("vent.title")} body={t("vent.intro")} icon="pulse" accent="equipment" />
       <NavCard href="/hemo-lab" title={t("hemo.title")} body={t("hemo.intro")} icon="heart" accent="practice" />
