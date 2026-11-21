@@ -1,3 +1,4 @@
+import "react-native-url-polyfill/auto";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import type { AsyncStorageLike } from "./chunkedStorage";
 import type { AuthConfig } from "./config";
