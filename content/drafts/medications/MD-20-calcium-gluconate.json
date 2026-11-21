@@ -12,9 +12,9 @@
  "category": "insulin-electrolytes-fluids",
  "high_alert": false,
  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Intravenous calcium for treatment of acute symptomatic hypocalcaemia in adults and children. Nursing focus: arrhythmias with cardiac glycosides, ceftriaxone precipitates, extravasation and tissue necrosis.",
+ "summary": "Ready-to-use calcium gluconate in sodium chloride for symptomatic hypocalcemia. Nursing focus: calcium–ceftriaxone precipitation hazards (especially in neonates), concurrent cardiac glycosides, rapid-administration cardiovascular events, skin/tissue injury and calcium monitoring.",
  "batch": 2,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A targeted re-read of the exact existing WG Critical Care US product label on 2026-11-21 supplied additional age-dependent ceftriaxone restrictions, adverse-effect and calcium surveillance cues. No independent clinician review or treatment protocol is implied.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",
@@ -52,6 +52,13 @@
      "sources": [
       "L-CALCIUM"
      ]
+    },
+    {
+     "text": "This registered product is a ready-to-use calcium gluconate in sodium chloride preparation. Other calcium salts or calcium gluconate products require their own labeling and pharmacy checks; this record does not establish interchangeable treatment instructions.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
     }
    ]
   },
@@ -60,6 +67,20 @@
    "items": [
     {
      "text": "Check the infusion site for extravasation or signs of calcinosis cutis, and stop the intravenous administration at that site immediately if either occurs, then report.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Before administration, review current calcium results, prescribed product, the presence of ceftriaxone, cardiac glycosides and medicines that increase calcium. Flag any simultaneous administration through shared IV access for prompt pharmacist/prescriber review; do not invent equipment or line-management instructions.",
+     "support": "partial",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Observe the IV site closely; report inflammation, swelling, skin plaques or changes suggesting tissue calcium deposition, including when obvious fluid leakage is absent. The product label directs immediate cessation of administration at a site where tissue injury is suspected; follow local extravasation response standards.",
      "support": "sourced",
      "sources": [
       "L-CALCIUM"
@@ -77,6 +98,27 @@
     },
     {
      "text": "The label states ceftriaxone must never be given through the same line at the same time as calcium gluconate, in any age group, because of reports of fatal intravascular precipitates; it also calls for close ECG monitoring if calcium must be given with a cardiac glycoside, and for immediately stopping the infusion at the site and treating promptly if extravasation or signs of calcinosis cutis (skin calcium deposits) occur.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "The US label contraindicates this product in hypercalcemia and in neonates 28 days of age or younger receiving ceftriaxone. In older patients, any sequential calcium and ceftriaxone administration is conditional on trained line management; they must never run simultaneously through common IV access. Confirm the plan with pharmacy or the treating team.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "This product's label highlights hypotension, bradycardia, arrhythmia, syncope or cardiac arrest with rapid administration. Monitor ordered ECG and vital signs, and escalate sudden cardiovascular change rather than assuming it represents underlying illness alone.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Monitor ordered serum calcium, particularly with kidney dysfunction or concurrent calcium-raising medicines such as certain vitamins or thiazide diuretics. The actual sampling schedule and individualized targets remain clinician-directed.",
      "support": "sourced",
      "sources": [
       "L-CALCIUM"
@@ -107,6 +149,34 @@
      "sources": [
       "L-CALCIUM"
      ]
+    },
+    {
+     "text": "Label contraindications include existing hypercalcemia and neonates 28 days of age or younger receiving ceftriaxone. In patients older than the neonatal restriction, ceftriaxone and IV calcium still must not be administered simultaneously through the same access; sequential treatment requires a clinician-approved plan.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Rapid intravenous administration may cause low blood pressure, bradycardia, syncope, serious arrhythmias or cardiac arrest; concurrent cardiac glycosides heighten arrhythmia concern. Never infer a safe administration regimen from this draft.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "The label also warns that precipitation can occur when this calcium product is mixed with bicarbonate- or phosphate-containing fluids; the prescriber and pharmacy must resolve such combinations and access questions according to the exact product information.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Other calcium-raising medicines and reduced kidney function require closer ordered serum calcium review. The label also notes a product-specific aluminum-exposure warning; risk varies by formulation and patient population.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
     }
    ]
   },
@@ -114,7 +184,28 @@
    "support": "partial",
    "items": [
     {
-     "text": "The serious adverse reactions are arrhythmias with cardiac glycosides, end-organ damage from ceftriaxone-calcium precipitates and tissue necrosis or calcinosis.",
+     "text": "Extravasation or tissue calcium deposition may lead to local inflammation, calcinosis cutis, ulceration, severe tissue necrosis and secondary infection, sometimes without an obvious leak.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Rapid administration may produce vasodilation, hypotension, slow heart rate, syncope, cardiac arrhythmia or cardiac arrest; risk assessment includes concurrent cardiac glycosides.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Ceftriaxone–calcium intravascular precipitation has been associated with fatal neonatal lung and renal injury; concurrent administration through a common IV line is unsafe at any age.",
+     "support": "sourced",
+     "sources": [
+      "L-CALCIUM"
+     ]
+    },
+    {
+     "text": "Excess calcium can cause hypercalcemia; concurrent calcium-raising drugs and renal impairment warrant careful clinical and ordered laboratory assessment, without introducing a self-directed dosing plan.",
      "support": "sourced",
      "sources": [
       "L-CALCIUM"
@@ -126,7 +217,7 @@
    "support": "partial",
    "items": [
     {
-     "text": "Escalate immediately for extravasation, a new arrhythmia, or concurrent ceftriaxone or cardiac glycoside therapy that has not been reviewed.",
+     "text": "Immediately escalate suspected IV site tissue injury, new bradycardia/hypotension or arrhythmia, unexpected high serum calcium, a neonate receiving ceftriaxone, or any plan to administer ceftriaxone and calcium simultaneously through common access. For severe circulatory compromise activate the local emergency response. All treatment and access-management decisions require qualified clinician/pharmacy oversight.",
      "support": "partial",
      "sources": [
       "L-CALCIUM"
@@ -215,12 +306,51 @@
    "critical": false,
    "support": "local_protocol",
    "sources": []
+  },
+  {
+   "kind": "laboratory",
+   "text": "Review prescribed serum calcium results, with additional attention to renal impairment and medicines that can raise calcium. Escalate possible hypercalcemia under the unit protocol.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-CALCIUM"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Confirm the patient's age and ceftriaxone exposure; neonatal ceftriaxone exposure is a label contraindication, and simultaneous common-line use remains unsafe in all age groups.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-CALCIUM"
+   ]
+  },
+  {
+   "kind": "observe",
+   "text": "Watch for bradycardia, hypotension, syncope or new rhythm disturbances during administration and urgently report any deterioration.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-CALCIUM"
+   ]
+  },
+  {
+   "kind": "assess",
+   "text": "Identify possible calcinosis cutis or tissue injury at the IV site, even when obvious fluid leakage is not seen.",
+   "critical": true,
+   "support": "sourced",
+   "sources": [
+    "L-CALCIUM"
+   ]
   }
  ],
  "gaps": [
-  "Dosing, concentrations, preparation and line compatibility: deliberately not included.",
-  "Other calcium products (chloride, other gluconate presentations) were not read.",
-  "Hypocalcaemia and hyperkalaemia guideline text was not used for this entry."
+  "Exact serum-calcium targets, sampling intervals, infusion timing, drug amounts and treatment protocols deliberately excluded.",
+  "Venous access procedures, ceftriaxone sequence management, product mixing and phosphate/bicarbonate compatibility remain under local pharmacy policy; no operational instructions supplied.",
+  "The label concerns a WG Critical Care ready-to-use calcium gluconate in sodium chloride product; calcium chloride and other calcium gluconate products were not read.",
+  "Therapeutic calcium in hyperkalemia or other emergencies is outside this label's indicated hypocalcemia scope and requires independent source review.",
+  "Full neonatal, renal replacement therapy and international hospital guidelines, and EMA/MHRA/SFDA labels, were not reviewed.",
+  "Independent nurse educator, physician and clinical pharmacist safety review required prior to publication."
  ],
  "permissions": [
   "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
@@ -232,6 +362,6 @@
   "label_version": "4",
   "effective_time": "20260731",
   "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
+  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ. Exact registered WG Critical Care DailyMed label, updated July 31 2026, directly re-read for contraindications, ceftriaxone-calcium interactions, cardiac effects and tissue injury on 2026-11-21; no separate openFDA version requery performed."
  }
 }
