@@ -1184,6 +1184,19 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "fc190ff14c080d4b",
+    "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T08": [
