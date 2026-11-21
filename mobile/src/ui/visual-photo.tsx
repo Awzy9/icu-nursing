@@ -10,7 +10,7 @@ import { radius, space, type } from "./theme";
 // Privacy cover matches the website's central line visual and leaves catheter parts visible.
 const COVER_POINTS = "76,25 100,25 100,73 76,71 69,66 62,63 57,59 51,55 46,50 45,43 45,38 43,35 38,35 73,33";
 
-export function VisualPhoto({ visual, width }: { visual: Visual; width?: number }) {
+export function VisualPhoto({ visual, width, hideTeaching = false }: { visual: Visual; width?: number; hideTeaching?: boolean }) {
   const { locale, palette } = useApp();
   const { width: screenWidth } = useWindowDimensions();
   const [failed, setFailed] = useState(false);
@@ -35,7 +35,7 @@ export function VisualPhoto({ visual, width }: { visual: Visual; width?: number 
         </View>
       ) : (
         <View style={{ width: imageWidth, height: imageHeight, alignSelf: "center" }}>
-          <Image source={{ uri }} accessibilityLabel={visual.alt[lang]} onError={() => setFailed(true)} style={{ width: imageWidth, height: imageHeight }} resizeMode="contain" />
+          <Image source={{ uri }} accessibilityLabel={hideTeaching ? (lang === 1 ? "صورة جهاز لاختبار التعرّف البصري" : "Clinical equipment photo for visual-identification practice") : visual.alt[lang]} onError={() => setFailed(true)} style={{ width: imageWidth, height: imageHeight }} resizeMode="contain" />
           {visual.coveredForPrivacy ? (
             <Svg width={imageWidth} height={imageHeight} style={{ position: "absolute", top: 0, left: 0 }} pointerEvents="none">
               <Polygon points={scalePoints(COVER_POINTS, imageWidth, imageHeight)} fill="#1e293b" />
@@ -44,8 +44,8 @@ export function VisualPhoto({ visual, width }: { visual: Visual; width?: number 
         </View>
       )}
       <View style={{ padding: space.md, gap: space.xs / 2 }}>
-        <Text style={[type.small, { color: palette.text, fontWeight: "700", writingDirection: lang === 1 ? "rtl" : "ltr" }]}>{visual.label[lang]}</Text>
-        <Text style={[type.small, { color: palette.muted, writingDirection: lang === 1 ? "rtl" : "ltr" }]}>{visual.detail[lang]}</Text>
+        {hideTeaching ? <Text style={[type.small, { color: palette.text }]}>{lang === 1 ? "افحص الصورة ثم اختر الإجابة." : "Examine the image before choosing your answer."}</Text> : <Text style={[type.small, { color: palette.text, fontWeight: "700", writingDirection: lang === 1 ? "rtl" : "ltr" }]}>{visual.label[lang]}</Text>}
+        {hideTeaching ? null : <Text style={[type.small, { color: palette.muted, writingDirection: lang === 1 ? "rtl" : "ltr" }]}>{visual.detail[lang]}</Text>}
         {original ? (
           <Text style={[type.small, { color: palette.muted }]}>{sourceLabel}</Text>
         ) : (
