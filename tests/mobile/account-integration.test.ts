@@ -68,7 +68,9 @@ describe("native account discovery, build configuration and privacy", () => {
     expect((await loadProgress(b)).completed).toEqual(["SK-01"]);
     expect((await loadProgress(b)).viewed).toEqual([]);
     expect(source("mobile/src/state/app.tsx")).toContain("loadedScope === scopeId");
-    expect(source("mobile/src/state/app.tsx")).toContain("if (!scopeReady) return;");
+    expect(source("mobile/src/state/app.tsx")).toContain("activeScopeRef.current !== scopeId");
+    expect(source("mobile/src/hooks/useProgressSync.ts")).toContain("if (!cancelled) update(");
+    expect(source("mobile/src/hooks/useProgressSync.ts")).toContain("return () => { cancelled = true; };");
     expect(source("mobile/app/_layout.tsx")).toContain('accountId={userId}');
   });
 });
