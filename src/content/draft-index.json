@@ -2926,11 +2926,6 @@
      "verified": "2026-11-14"
     },
     {
-     "id": "S-ISMP-HAM-2024",
-     "licence_class": "RED",
-     "verified": "2026-11-21"
-    },
-    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2939,7 +2934,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "dfeae87264386568"
+   "hash": "3c2e79a7d9317fb6"
   },
   {
    "key": "MD-19",
@@ -2971,16 +2966,6 @@
      "verified": "2026-11-14"
     },
     {
-     "id": "S-ISMP-HAM-2024",
-     "licence_class": "RED",
-     "verified": "2026-11-21"
-    },
-    {
-     "id": "S-NSW-IVK-2025",
-     "licence_class": "RED",
-     "verified": "2026-11-21"
-    },
-    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2989,7 +2974,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "787dae2e7e2ec6d1"
+   "hash": "a2aee6e01833867c"
   },
   {
    "key": "MD-20",
