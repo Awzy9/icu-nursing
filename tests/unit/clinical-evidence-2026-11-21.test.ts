@@ -98,6 +98,10 @@ describe("clinical evidence corrections — November 2026", () => {
     expect(escalation?.text).toContain("pump-failure protocol");
     expect(escalation?.text).toContain("Do not ignore possible over-infusion or reflexively interrupt an essential infusion");
     expect(escalation?.support).toBe("partial");
+    expect(pump.sections.escalation.items[0].text).toContain("not an automatic stop rule");
+    expect(pump.sections.escalation.items[0].text).not.toMatch(/^Stop and report/);
+    expect(pump.sections.escalation.items[1].text).toContain("context-specific");
+
   });
 
   it("keeps generated draft indexes and history synchronized and never claims human clinical approval", () => {
