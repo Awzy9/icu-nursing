@@ -65,7 +65,7 @@ export default function LearningHub() {
       <SearchBar label={t("search.title")} hint={t("search.placeholder")} />
       <SectionLabel>{label("Explore", "استكشف")}</SectionLabel>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
-        <Destination href="/(tabs)/library" icon="book" accent="topics"
+        <Destination href="/library" icon="book" accent="topics"
           title={label("Learn", "تعلّم")} subtitle={label("Topics, skills and medications", "المواضيع والمهارات والأدوية")} />
         <Destination href="/(tabs)/practice" icon="checklist" accent="practice"
           title={label("Practice", "تدرّب")} subtitle={label("Questions, cases and exams", "الأسئلة والحالات والاختبارات")} />
