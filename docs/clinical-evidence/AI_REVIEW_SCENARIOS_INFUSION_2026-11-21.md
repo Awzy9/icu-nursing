@@ -29,3 +29,7 @@
 - **Outstanding:** other 18 clinical scenarios, all medication drafts and treatment rationales, dose calculators and their UI units, and device-specific procedures require evidence review and appropriate human approval. Existing independent clinical-approval count is unchanged.
 
 **Reviewed in this pass:** 2 fictional clinical scenarios plus 4 infusion-practice cases. **Newly clinically approved: 0.**
+
+## CI revalidation requested 2026-11-21
+
+This non-clinical audit-log note requests fresh pull-request workflow checks after subsequent changes to `main`. All clinical review and publication flags remain unchanged. Merge only after required automated checks succeed; the merge itself does not authorize TestFlight release or clinical publication.
