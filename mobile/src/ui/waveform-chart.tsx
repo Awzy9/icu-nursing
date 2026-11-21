@@ -10,13 +10,14 @@ import { P } from "./components";
 // remove that renderer dependency for ECG, defibrillator, ventilator and arterial-line labs.
 const HEIGHT = 152;
 const LINE_WIDTH = 2.5;
-export function WaveformChart({ trace, timeAxisEnd }: { trace: WaveformTrace; timeAxisEnd?: number }) {
+export function WaveformChart({ trace, timeAxisEnd, description }: { trace: WaveformTrace; timeAxisEnd?: number; description?: string }) {
   const { palette } = useApp();
   const [width, setWidth] = useState(0);
   const drawing = useMemo(() => width > 15 ? plotWaveform(trace, width, HEIGHT, 7, timeAxisEnd) : null, [trace, width, timeAxisEnd]);
+  const axisEnd = timeAxisEnd ?? Math.max(0, ...trace.points.map(([time]) => time));
 
   return (
-    <View accessibilityRole="image" accessibilityLabel={`${trace.label} versus time, ${trace.unit}`} style={{ gap: 5 }}>
+    <View accessibilityRole="image" accessibilityLabel={`${trace.label}; time 0 to ${axisEnd} seconds; range ${trace.domain[0]} to ${trace.domain[1]} ${trace.unit}.${description ? ` Observed shape: ${description}` : ""}`} style={{ gap: 5 }}>
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <P small muted>{trace.label}</P>
         <P small muted>{trace.unit}</P>
@@ -64,6 +65,7 @@ export function WaveformChart({ trace, timeAxisEnd }: { trace: WaveformTrace; ti
           </>
         ) : null}
       </View>
+      <P small muted>{`Time 0–${axisEnd} s · ${trace.domain[0]}–${trace.domain[1]} ${trace.unit}`}</P>
     </View>
   );
 }
