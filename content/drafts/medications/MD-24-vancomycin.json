@@ -14,7 +14,7 @@
  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
  "summary": "Antibacterial used for serious infections caused by susceptible organisms such as methicillin-resistant staphylococci. Nursing priorities include serious infusion reactions versus anaphylaxis, renal injury, hearing symptoms, blood-count concerns and clinician/pharmacy-led exposure monitoring.",
  "batch": 3,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A targeted check on 2026-11-21 additionally read the 2020 ASHP/IDSA/PIDS/SIDP executive consensus summary for serious invasive MRSA; that guideline supports AUC-guided exposure management in its defined population and does not supply a nursing dosing protocol.",
+ "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A separate evidence-review report documents the 2020 vancomycin monitoring consensus for clinician/pharmacist follow-up; its citation-only licence was not cleared for this medication draft, so no guideline-specific exposure target or method is imported into the medication text.",
  "evidence_status": "partial",
  "license_status": "unassessed",
  "label_source": "FDA",
@@ -40,11 +40,6 @@
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
-  },
-  {
-   "id": "S-IDSA-VANCO-2020",
-   "read": "partial",
-   "use": "ASHP/IDSA/PIDS/SIDP 2020 vancomycin therapeutic-monitoring consensus: IDSA executive summary and serious invasive MRSA scope directly reviewed"
   }
  ],
  "sections": {
@@ -74,8 +69,7 @@
      "text": "Verify the infusion-product form, secure IV access, prescribed pharmacy preparation, local infusion process and the requested blood-sampling timing. In patients with changing renal function or co-administered nephrotoxic drugs, prompt pharmacy/prescriber reassessment rather than adjusting the regimen independently.",
      "support": "partial",
      "sources": [
-      "L-VANCOMYCIN",
-      "S-IDSA-VANCO-2020"
+      "L-VANCOMYCIN"
      ]
     }
    ]
@@ -96,10 +90,10 @@
      ]
     },
     {
-     "text": "For serious invasive MRSA infection, the 2020 ASHP/IDSA/PIDS/SIDP monitoring consensus prefers individualized AUC-guided therapeutic drug monitoring rather than relying only on the older high-trough strategy. This specific recommendation is not automatically generalizable to other infections. The pharmacist/prescriber chooses sampling times, exposure targets and dose adjustments; bedside nurses verify timely sampling and report delayed/missed concentrations per local protocol.",
+     "text": "Confirm the ordered timing of vancomycin serum-concentration specimens and accurately document collection times for the pharmacy/prescriber to interpret. The manufacturer's US product label recommends serum concentration monitoring in clinically complex cases, especially unstable renal function; this draft gives no method, exposure target or dosing recommendation.",
      "support": "partial",
      "sources": [
-      "S-IDSA-VANCO-2020"
+      "L-VANCOMYCIN"
      ]
     },
     {
@@ -289,11 +283,11 @@
   },
   {
    "kind": "laboratory",
-   "text": "Check ordered vancomycin sampling times and communicate with pharmacy; for serious invasive MRSA, the guideline favours AUC-based therapeutic monitoring instead of trough concentration alone.",
+   "text": "Confirm that ordered vancomycin levels are collected at the requested times and that collection details reach pharmacy for clinician-directed interpretation. Do not independently alter timing, exposure targets or the drug regimen.",
    "critical": true,
    "support": "partial",
    "sources": [
-    "S-IDSA-VANCO-2020"
+    "L-VANCOMYCIN"
    ]
   },
   {
@@ -317,7 +311,7 @@
  ],
  "gaps": [
   "Vancomycin pharmacokinetic exposure/target selection, dose changes and exact level-sampling schedules remain the prescriber/pharmacist's responsibility; no dose or infusion-rate instructions are provided.",
-  "2020 AUC-guided monitoring recommendation is for serious invasive MRSA disease, and extrapolation to mild or non-MRSA infection needs independent expert review.",
+  "The 2020 AUC-guided monitoring consensus for serious invasive MRSA was reviewed and traced in the separate evidence report, but is not imported as a medication-draft source because reuse permissions remain unverified; clinician/pharmacy review of this approach is outstanding.",
   "Renal replacement therapy, CRRT, obesity, pediatrics and unstable renal function require tailored local pharmacy/infectious-disease protocols not summarized here.",
   "Specific infusion preparation, device instructions, secure IV access procedure and formal anaphylaxis protocol remain local.",
   "Only the cited US Glenmark October 2026 vancomycin product and 2020 US-led consensus were verified; other manufacturers and EMA/MHRA/SFDA labels and any newer regional guidance remain unreviewed."
