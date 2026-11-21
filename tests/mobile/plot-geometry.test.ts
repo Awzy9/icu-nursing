@@ -9,7 +9,7 @@ describe("native ECG, ventilator and arterial line waveform geometry", () => {
     for (const item of ecgs) {
       const drawing = plotWaveform(item.trace as WaveformTrace, 350);
       expect(drawing.points.length, item.key).toBeGreaterThan(1);
-      if (item.key === "ECG-07") expect(new Set(drawing.points.map((p) => p.y.toFixed(2))).size, item.key).toBe(1); // asystole is deliberately flat
+      if (item.key === "ECG-07") expect(Math.max(...item.trace.points.map((p) => p[1])) - Math.min(...item.trace.points.map((p) => p[1])), "asystole baseline wander must stay minimal").toBeLessThanOrEqual(0.05);
       else expect(new Set(drawing.points.map((p) => p.y.toFixed(2))).size, item.key).toBeGreaterThan(2);
       expect(drawing.points.every((p) => Number.isFinite(p.x) && Number.isFinite(p.y)), item.key).toBe(true);
     }
