@@ -41,12 +41,15 @@ describe("clinical evidence corrections — November 2026", () => {
 
   it("corrects the learner-facing CRRT filter pressures and patient-first alarm practice", () => {
     const crrt = JSON.parse(read("content/working-crrt.json")) as {
-      components: { key: string; description: [string, string] }[];
+      components: { key: string; description: [string, string]; alarms: [string, string] | [] }[];
       alarms: { key: string; question: { options: string[]; answer: number; explanation: string } }[];
     };
     const byKey = (key: string) => crrt.components.find((c) => c.key === key)!;
     const alarm = (key: string) => crrt.alarms.find((a) => a.key === key)!;
     expect(byKey("filter").description[0]).toContain("Transmembrane pressure (TMP)");
+    expect(byKey("filter").alarms[0]).toContain("TMP or filter pressure-drop");
+    expect(byKey("access").alarms[0]).not.toContain("pre-filter");
+
     expect(byKey("filter").description[0]).toContain("Filter pressure drop (ΔP)");
     expect(byKey("filter").description[0]).toContain("distinct measurements");
     expect(byKey("filter").description[1]).toContain("قياسان مختلفان");
@@ -56,6 +59,7 @@ describe("clinical evidence corrections — November 2026", () => {
       expect(alarm(key).question.answer).toBe(0);
       expect(alarm(key).question.options[0]).toMatch(/^Assess the patient/);
     }
+    expect(crrt.alarms.find((a) => a.key === "CRRT-A1")?.question.explanation).toContain("alarm terminology vary");
     expect(alarm("CRRT-A2").question.answer).toBe(0);
     expect(alarm("CRRT-A2").question.explanation).toContain("filter pressure drop (ΔP)");
     expect(alarm("CRRT-A2").question.explanation).toContain("not diagnostic");
