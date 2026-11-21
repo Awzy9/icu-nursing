@@ -66,6 +66,40 @@ describe("clinical evidence corrections — November 2026", () => {
     expect(alarm("CRRT-A3").question.explanation).not.toContain("empty bag feeding the line");
   });
 
+  it("uses total rather than merely set PEEP in adult ventilator driving-pressure teaching", () => {
+    const vent = read("content/drafts/batch-02/D01-T07-ventilator-parameters.md");
+    expect(vent).toContain("driving pressure (ΔP) is plateau pressure minus measured total PEEP");
+    expect(vent).toContain("intrinsic/auto-PEEP");
+    expect(vent).toContain("not necessarily minus the set PEEP value alone");
+    expect(vent).toContain("clinically_reviewed: false");
+  });
+
+  it("makes likely HIT different from a single low-probability platelet fall and includes all heparin sources", () => {
+    const crtt = read("content/drafts/batch-07/D04-T09-crrt-principles-partial.md");
+    expect(crtt).toContain("clinically suspected");
+    expect(crtt).toContain("line flushes and catheter locks");
+    expect(crtt).toContain("low-probability suspected HIT");
+    expect(crtt).not.toContain('the extent of "all heparin" in flushes is local policy');
+
+    const skill = JSON.parse(read("content/drafts/skills/SK-17-crrt-circuit-monitoring.json"));
+    const equipment = JSON.parse(read("content/drafts/equipment/EQ-06-crrt-systems.json"));
+    for (const obj of [skill, equipment]) {
+      expect(obj.clinically_reviewed).toBe(false);
+      expect(JSON.stringify(obj)).toContain("flushes");
+      expect(JSON.stringify(obj)).toContain("HIT");
+      expect(JSON.stringify(obj)).toContain("platelet");
+    }
+  });
+
+  it("requires a critical-infusion contingency plan, rather than a blanket stop instruction", () => {
+    const pump = JSON.parse(read("content/drafts/skills/SK-22-infusion-pump-safety.json"));
+    expect(pump.clinically_reviewed).toBe(false);
+    const escalation = pump.checklist.find((item: {phase: string}) => item.phase === "escalation");
+    expect(escalation?.text).toContain("unit's contingency plan");
+    expect(escalation?.text).toContain("Do not automatically stop a life-sustaining medication");
+    expect(escalation?.support).toBe("partial");
+  });
+
   it("keeps generated draft indexes and history synchronized and never claims human clinical approval", () => {
     const index = JSON.parse(read("src/content/draft-index.json")) as { entries: { key: string; type: string; hash: string; clinically_reviewed: boolean }[] };
     const history = JSON.parse(read("src/content/draft-history.json")) as { entries: Record<string, { hash: string; recorded: string }[]> };
