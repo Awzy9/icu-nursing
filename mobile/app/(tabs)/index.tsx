@@ -75,6 +75,8 @@ export default function LearningHub() {
       <SectionLabel>{t("hub.sectionPractice")}</SectionLabel>
       <NavGroup items={[
         { href: "/infusion-calculator", title: rtl ? "حاسبة مضخة التسريب" : "Infusion pump calculator", body: rtl ? "معدل التسريب والمدة وحساب الجرعة" : "Rate, duration and weight-based dosage math", icon: "pill", accent: "medications" },
+        { href: "/vent-lab", title: t("vent.title"), body: t("vent.intro"), icon: "pulse", accent: "equipment" },
+        { href: "/hemo-lab", title: t("hemo.title"), body: t("hemo.intro"), icon: "heart", accent: "practice" },
         { href: "/(tabs)/practice", title: t("hub.cases"), body: t("hub.casesBody"), icon: "heart", accent: "practice" },
         { href: "/labs", title: t("hub.labs"), body: t("hub.labsBody"), icon: "flask", accent: "equipment" },
       ]} />
