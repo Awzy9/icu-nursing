@@ -17,7 +17,7 @@ describe("2026 enoxaparin source-safety review", () => {
 
   it("warns about renal impairment, neuraxial bleeding and non-specific PT/aPTT", () => {
     const d = JSON.parse(read(file));
-    expect(d.sections.safety_alerts.items.some((x: {text: string}) => x.text.includes("creatinine clearance below 30 mL/min"))).toBe(true);
+    expect(d.sections.safety_alerts.items.some((x: {text: string}) => x.text.includes("In severe renal impairment"))).toBe(true);
     expect(d.sections.safety_alerts.items.some((x: {text: string}) => x.text.includes("HIT antibodies"))).toBe(true);
     expect(d.sections.monitoring.items.some((x: {text: string}) => x.text.includes("PT and aPTT are not adequate"))).toBe(true);
     expect(d.monitoring.some((x: {text: string}) => x.text.includes("Anti-Xa testing"))).toBe(true);
