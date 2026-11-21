@@ -15,7 +15,7 @@ const ACCORDION_FROM = 4;
 const prettyCategory = (c: string): string => c.replace(/[-_]+/g, " ").replace(/^./, (m) => m.toUpperCase());
 
 /** Collapsible lesson sections: a 20-section lesson opens as a scannable table of contents (first section open) instead of one 19,000-character scroll. Only open sections are parsed and rendered. */
-function SectionAccordion({ sections }: { sections: MarkdownSection[] }) {
+function SectionAccordion({ sections, sectionVisual }: { sections: MarkdownSection[]; sectionVisual?: (title: string) => React.ReactNode }) {
   const { t, palette } = useApp();
   const [open, setOpen] = useState<ReadonlySet<number>>(() => new Set([0]));
   const allOpen = open.size === sections.length;
@@ -40,7 +40,7 @@ function SectionAccordion({ sections }: { sections: MarkdownSection[] }) {
               <Text style={[type.h3, { flex: 1, color: palette.text, writingDirection: "ltr" }]}>{section.title}</Text>
               <View style={{ transform: [{ rotate: isOpen ? "90deg" : "0deg" }] }}><Icon name="chevron" color={palette.muted} size={20} /></View>
             </Pressable>
-            {isOpen ? <View style={{ padding: space.lg, paddingTop: space.md, borderTopWidth: 1, borderTopColor: palette.hairline }}><MarkdownBody body={section.body} /></View> : null}
+            {isOpen ? <View style={{ padding: space.lg, paddingTop: space.md, borderTopWidth: 1, borderTopColor: palette.hairline }}>{sectionVisual?.(section.title)}<MarkdownBody body={section.body} /></View> : null}
           </View>
         );
       })}
@@ -49,7 +49,7 @@ function SectionAccordion({ sections }: { sections: MarkdownSection[] }) {
 }
 
 /** Shared reader for any catalog entry that is just title + body sections (topics, skills, medications, equipment): mirrors the website's ModuleReader. Records the lesson as "viewed" once per visit. */
-export function LessonReader({ entry, bookmarkKey, visual, children }: { entry: WorkingEntryShared; bookmarkKey: string; visual?: React.ReactNode; children?: React.ReactNode }) {
+export function LessonReader({ entry, bookmarkKey, visual, sectionVisual, children }: { entry: WorkingEntryShared; bookmarkKey: string; visual?: React.ReactNode; sectionVisual?: (title: string) => React.ReactNode; children?: React.ReactNode }) {
   const { t, progress, update, palette, rtl, locale } = useApp();
   useEffect(() => { update((p) => markViewed(p, entry.key)); }, [entry.key, update]);
   const sections = splitSections(entry.body);
@@ -93,9 +93,10 @@ export function LessonReader({ entry, bookmarkKey, visual, children }: { entry: 
           })}
         </View>
       ) : null}
-      {sections.length >= ACCORDION_FROM ? <SectionAccordion sections={sections} /> : sections.map((section, i) => (
+      {sections.length >= ACCORDION_FROM ? <SectionAccordion sections={sections} sectionVisual={sectionVisual} /> : sections.map((section, i) => (
         <View key={i} style={[cardStyle(palette), { padding: space.lg, gap: space.md }]}>
           <Text accessibilityRole="header" style={[type.h2, { color: palette.text, writingDirection: "ltr" }]}>{section.title}</Text>
+          {sectionVisual?.(section.title)}
           <MarkdownBody body={section.body} />
         </View>
       ))}
