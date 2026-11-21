@@ -35,7 +35,7 @@ export function CrrtCircuitDiagram({ active }: { active?: string | null }) {
           <Path d="M270 35v15" stroke={mark("dialysate")} strokeWidth={3} />
           <Rect x={13} y={4} width={94} height={31} rx={9} fill="#172b43" stroke={mark("replacement")} strokeWidth={2}/>
           <SvgText x={60} y={24} textAnchor="middle" fontSize={11} fill="#fff">Replacement*</SvgText>
-          <Path d="M60 35v31H96" stroke={mark("replacement")} strokeDasharray="4 4" strokeWidth={3} fill="none"/>
+          <Path d="M60 35v8H212v33" stroke={mark("replacement")} strokeDasharray="4 4" strokeWidth={3} fill="none"/>
           <Circle cx={199} cy={76} r={7} stroke={mark("pressures")} strokeWidth={2} fill="#172b43"/>
           <Circle cx={199} cy={186} r={7} stroke={mark("pressures")} strokeWidth={2} fill="#172b43"/>
           <Line x1={13} y1={245} x2={55} y2={245} stroke="#f59e92" strokeWidth={4}/>
