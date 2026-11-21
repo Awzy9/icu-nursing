@@ -3956,6 +3956,21 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "b4d148be55e8a7ee",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VANCOMYCIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-IDSA-VANCO-2020",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-25": [
