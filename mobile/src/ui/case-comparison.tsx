@@ -20,10 +20,11 @@ const selected = (obs: CaseObservation[] | undefined, kind: Kind) => (obs ?? [])
   (kind === "neuro" ? neuroLabels : perfusionLabels).has(entry.label)
 );
 
-export function CaseComparison({ kind, observations, earlier, ar }: {
+export function CaseComparison({ kind, observations, earlier, historyIncomplete = false, ar }: {
   kind: Kind;
   observations?: CaseObservation[];
   earlier?: { observations?: CaseObservation[] }[];
+  historyIncomplete?: boolean;
   ar: boolean;
 }) {
   const current = selected(observations, kind);
@@ -33,6 +34,7 @@ export function CaseComparison({ kind, observations, earlier, ar }: {
   return (
     <Card>
       <H2>{kind === "neuro" ? (ar ? "تغيّر الاستجابات العصبية" : "Neurological response comparison") : (ar ? "ملاحظات الدورة الدموية والتسريب" : "Perfusion and infusion observations")}</H2>
+      {historyIncomplete ? <P small muted>{ar ? "السجل السابق غير مكتمل بعد استئناف الحالة من جهاز آخر؛ قارن القراءات الحالية فقط." : "Earlier observations were not retained by this resumed session. The comparison below is incomplete."}</P> : null}
       <View style={{ gap: space.sm }}>
         {current.map((reading) => {
           const old = previous.get(reading.label);
