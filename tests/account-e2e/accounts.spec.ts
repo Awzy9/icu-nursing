@@ -28,6 +28,9 @@ test("answers, bookmarks and completion follow the account across browsers and s
   await c.goto("/en/study");await expect(c.locator('dt:has-text("Answered") + dd')).toHaveText("0");
   await a.getByRole("button",{name:"Sign out",exact:true}).click();
   // Sign-out is a server action that ends the session and then redirects; navigating away before it completes can abort it and leave the session alive.
-  await expect(a.getByRole("button",{name:"Sign out",exact:true})).toHaveCount(0);await a.goto("/en/study");await expect(a.getByText("Guest practice:",{exact:false})).toBeVisible();await expect(a.locator('dt:has-text("Answered") + dd')).toHaveText("0");
+  await expect(a.getByRole("button",{name:"Sign out",exact:true})).toHaveCount(0);
+  // Once signed out, private pages ask for sign-in again and public pages fall back to guest mode.
+  await a.goto("/en/study");await expect(a).toHaveURL(/\/en\/login/);
+  await a.goto("/en/working/QB-D06-T01");await expect(a.getByText("Guest practice:",{exact:false})).toBeVisible();
  } finally{await first.close();await second.close();await third.close();}
 });
