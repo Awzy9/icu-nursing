@@ -55,7 +55,7 @@ describe("bilingual new-user onboarding", () => {
   it("is skippable, replayable, accessible and links to live destination screens", () => {
     const tour = source("app/onboarding.tsx");
     const home = source("app/(tabs)/home.tsx");
-    const root = source("app/(tabs)/index.tsx");
+    const root = source("app/index.tsx");
     const tabs = source("app/(tabs)/_layout.tsx");
     const account = source("app/(tabs)/account.tsx");
     const layout = source("app/_layout.tsx");
@@ -70,7 +70,10 @@ describe("bilingual new-user onboarding", () => {
     expect(home).toContain('router.replace("/onboarding")');
     expect(root).toContain('<Redirect href="/(tabs)/home" />');
     expect(tabs).toContain('<Tabs.Screen name="home"');
-    expect(tabs).toContain('<Tabs.Screen name="index" options={{ href: null }}');
+    expect(tabs).toContain('<Tabs.Screen name="library" options={{ title: t("tab.learn")');
+    expect(tabs).not.toContain('href: null');
+    expect(home).toContain('<Destination href="/library"');
+    expect(source("src/core/i18n.ts")).toContain('"tab.home": "Home"');
     expect(tour.match(/navigate\("\/\(tabs\)\/home"\)/g)).toHaveLength(2);
     expect(tour).not.toContain('navigate("/(tabs)/index")');
     expect(tour).toContain('<Screen banner={false} safeAreaTop>');
