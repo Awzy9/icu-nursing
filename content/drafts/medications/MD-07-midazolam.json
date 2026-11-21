@@ -133,7 +133,8 @@
      "text": "High-alert classification for intravenous moderate-sedation agents: ensure ordered monitoring and immediate capability to recognize and rescue respiratory or hemodynamic compromise; verify the selected drug, route and local safeguards before administration.",
      "support": "sourced",
      "sources": [
-      "S-ISMP-HAM-2024"
+      "S-ISMP-HAM-2024",
+      "L-MIDAZOLAM"
      ]
     }
    ]
