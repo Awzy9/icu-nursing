@@ -24,7 +24,7 @@ describe("MD-18 magnesium sulfate clinical-safety review 2026-11-21", () => {
   it("protects the formulation distinction and preserves prescriber/pharmacy responsibilities", () => {
     const notes = med.sections.nursing_responsibilities.items.map((x:{text:string})=>x.text).join(" ");
     expect(notes).toContain("Concentrated products and premixed bags");
-    expect(notes).toContain("Never improvise dilution");
+    expect(notes).toContain("Never improvise product preparation");
     expect(med.sections.institution_preparation.items[0].support).toBe("local_protocol");
     expect(med.sections.institution_dosing.items[0].support).toBe("local_protocol");
     expect(med.sections.safety_alerts.items.every((x:{support:string})=>x.support==="sourced")).toBe(true);
