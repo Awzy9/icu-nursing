@@ -12,8 +12,8 @@ import { MIN_TARGET, radii, radius, space, type, type AccentKey, type Palette } 
 /** The resting look shared by every card: white surface, soft shadow, faint outline. */
 export const cardStyle = (palette: Palette): ViewStyle => ({ backgroundColor: palette.surface, borderRadius: radius, borderWidth: 1, borderColor: palette.hairline, boxShadow: palette.shadowCard });
 
-/** Page container: scrolls, applies the language direction to everything inside, and carries the draft-content notice. */
-export function Screen({ children, banner = true, safeAreaTop = false }: { children: React.ReactNode; banner?: boolean; safeAreaTop?: boolean }) {
+/** Page container: scrolls and applies the language direction to everything inside. The slim draft-content notice (DraftNotice) is off by default; pass banner to show it. */
+export function Screen({ children, banner = false, safeAreaTop = false }: { children: React.ReactNode; banner?: boolean; safeAreaTop?: boolean }) {
   const { palette, rtl } = useApp();
   const { top } = useSafeAreaInsets();
   return (
