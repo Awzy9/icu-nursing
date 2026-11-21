@@ -941,9 +941,24 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AAFP-ACID2025",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-AARC-BGA-2013",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ATS-ABG",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
+     "id": "S-MERCK-ACIDBASE",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
     },
     {
      "id": "S-OPENRN-FUND-CH15",
@@ -953,8 +968,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "da6cb4d74bb22059"
+   "required_sources": 5,
+   "hash": "3616a1a57e2784f7"
   },
   {
    "key": "D04-T09",
