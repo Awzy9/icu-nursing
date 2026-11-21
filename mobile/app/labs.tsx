@@ -12,18 +12,18 @@ export default function Labs() {
   return (
     <Screen>
       <NavGroup items={[
-        { href: "/news2", title: t("news2.title"), body: t("news2.intro") },
-        { href: "/gcs", title: t("gcs.title"), body: t("gcs.intro") },
-        { href: "/ecg", title: t("ecg.title"), body: t("ecg.intro") },
-        { href: "/waveforms", title: t("waveforms.title"), body: t("waveforms.intro") },
-        { href: "/aline", title: t("aline.title"), body: t("aline.intro") },
-        { href: "/defib", title: t("defib.title"), body: t("defib.intro") },
-        { href: "/abg", title: t("abg.title"), body: t("abg.intro") },
-        { href: "/crrt", title: t("crrt.title"), body: t("crrt.intro") },
-        { href: "/infusion", title: t("infusion.title"), body: t("infusion.intro") },
-        { href: "/transfusion", title: t("transfusion.title"), body: t("transfusion.intro") },
-        { href: "/vent-lab", title: t("vent.title"), body: t("vent.intro") },
-        { href: "/hemo-lab", title: t("hemo.title"), body: t("hemo.intro") },
+        { href: "/news2", title: t("news2.title"), body: t("news2.intro"), icon: "checklist", accent: "skills" },
+        { href: "/gcs", title: t("gcs.title"), body: t("gcs.intro"), icon: "checklist", accent: "skills" },
+        { href: "/ecg", title: t("ecg.title"), body: t("ecg.intro"), icon: "pulse", accent: "equipment" },
+        { href: "/waveforms", title: t("waveforms.title"), body: t("waveforms.intro"), icon: "pulse", accent: "equipment" },
+        { href: "/aline", title: t("aline.title"), body: t("aline.intro"), icon: "pulse", accent: "equipment" },
+        { href: "/defib", title: t("defib.title"), body: t("defib.intro"), icon: "heart", accent: "practice" },
+        { href: "/abg", title: t("abg.title"), body: t("abg.intro"), icon: "flask", accent: "topics" },
+        { href: "/crrt", title: t("crrt.title"), body: t("crrt.intro"), icon: "flask", accent: "topics" },
+        { href: "/infusion", title: t("infusion.title"), body: t("infusion.intro"), icon: "pill", accent: "medications" },
+        { href: "/transfusion", title: t("transfusion.title"), body: t("transfusion.intro"), icon: "heart", accent: "practice" },
+        { href: "/vent-lab", title: t("vent.title"), body: t("vent.intro"), icon: "pulse", accent: "equipment" },
+        { href: "/hemo-lab", title: t("hemo.title"), body: t("hemo.intro"), icon: "pulse", accent: "equipment" },
       ]} />
     </Screen>
   );

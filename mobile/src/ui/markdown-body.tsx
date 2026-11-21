@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { parseBlocks, parseInline, type Block } from "../core/markdown";
 import { useApp } from "../state/app";
-import { radius, space, type } from "./theme";
+import { radii, space, type } from "./theme";
 
 // Lesson content is English-only (see app.englishOnly), so it is always laid out left-to-right regardless of the UI language.
 const LTR = { writingDirection: "ltr" } as const;
@@ -31,7 +31,7 @@ function TableBlock({ header, rows }: { header: string[]; rows: string[][] }) {
   return (
     <View style={{ gap: space.sm }}>
       {rows.map((row, i) => (
-        <View key={i} style={{ backgroundColor: palette.surface, borderColor: palette.border, borderWidth: StyleSheet.hairlineWidth * 2, borderRadius: radius, padding: space.md, gap: space.sm }}>
+        <View key={i} style={{ backgroundColor: palette.bg, borderColor: palette.hairline, borderWidth: 1, borderRadius: radii.md, padding: space.md, gap: space.sm }}>
           {row[0] ? <InlineText text={row[0]} style={[type.h3, LTR, { color: palette.text }]} /> : null}
           {row.slice(1).map((cell, j) => (cell ? (
             <View key={j} style={{ gap: 2 }}>
@@ -56,7 +56,7 @@ function BlockView({ block }: { block: Block }) {
       return <View style={{ gap: space.xs }}>{block.items.map((item, i) => <ListRow key={i} marker={`${block.start + i}.`} markerWidth={26} text={item} />)}</View>;
     case "quote":
       return (
-        <View style={{ borderLeftWidth: 4, borderLeftColor: palette.primary, backgroundColor: palette.surface, borderRadius: radius, padding: space.md }}>
+        <View style={{ borderLeftWidth: 4, borderLeftColor: palette.primary, backgroundColor: palette.tint, borderRadius: radii.md, padding: space.md }}>
           <InlineText text={block.text} style={[type.small, LTR, { color: palette.text }]} />
         </View>
       );
