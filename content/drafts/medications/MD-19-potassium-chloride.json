@@ -54,7 +54,7 @@
   {
    "id": "S-DAILYMED-KCL-CONC-2026",
    "read": "partial",
-   "use": "Jan 2026 Hospira concentrate-vial US label: direct injection can be fatal; must dilute before administration; contrasted with original ready-to-use label"
+   "use": "Jan 2026 Hospira concentrate-vial US label: fatal direct-injection risk, pharmacy-controlled preparation required; contrasted with original ready-to-use label"
   }
  ],
  "sections": {
@@ -127,7 +127,7 @@
      ]
     },
     {
-     "text": "Dangerous formulation mix-ups: a potassium chloride injection CONCENTRATE vial is not a premixed ready-to-use infusion. Direct injection or IV flush administration of undiluted concentrate can cause fatal cardiac arrest; concentrate must be diluted under approved pharmacy/institutional procedure. Do not apply concentrate-vial preparation instructions indiscriminately to labelled ready-to-use premixed bags.",
+     "text": "Dangerous formulation mix-ups: a potassium chloride injection CONCENTRATE vial is not a premixed ready-to-use infusion. Direct injection or IV flush administration of concentrate can cause fatal cardiac arrest; concentrate vials require controlled pharmacy-approved preparation before use. Never apply vial-specific handling instructions indiscriminately to labelled ready-to-use premixed bags.",
      "support": "sourced",
      "sources": [
       "S-DAILYMED-KCL-CONC-2026",
