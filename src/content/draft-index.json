@@ -3842,9 +3842,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 0,
-   "hash": "4a006c74b1b58965"
+   "hash": "aa8a2b7cbbf6edb0"
   },
   {
    "key": "MD-45",

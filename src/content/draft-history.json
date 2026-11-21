@@ -4929,6 +4929,34 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "d797452a0b5c9f55",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "aa8a2b7cbbf6edb0",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-45": [
