@@ -30,6 +30,9 @@ export function VisualPhoto({ visual, width, hideTeaching = false }: { visual: V
       {failed ? (
         <View style={{ padding: space.lg, gap: space.sm, backgroundColor: palette.tint }}>
           <Text style={[type.small, { color: palette.text }]}>{lang === 1 ? "تعذّر تحميل الصورة. يمكن فتحها من المصدر." : "Image could not load. You can open it on the website."}</Text>
+          <Text style={[type.small, { color: palette.muted }]}>{hideTeaching
+            ? (lang === 1 ? "يلزم تحميل الصورة للإجابة على هذا التدريب البصري." : "This visual exercise requires the image to load before it can be answered.")
+            : visual.alt[lang]}</Text>
           <Pressable accessibilityRole="button" onPress={() => { setFailed(false); setRetryToken((n) => n + 1); }}>
             <Text style={[type.small, { color: palette.primary, fontWeight: "700" }]}>{lang === 1 ? "إعادة تحميل الصورة" : "Retry image"}</Text>
           </Pressable>
@@ -39,7 +42,7 @@ export function VisualPhoto({ visual, width, hideTeaching = false }: { visual: V
         </View>
       ) : (
         <View style={{ width: imageWidth, height: imageHeight, alignSelf: "center" }}>
-          <Image key={retryToken} source={{ uri }} accessibilityLabel={hideTeaching ? (lang === 1 ? "صورة جهاز لاختبار التعرّف البصري" : "Clinical equipment photo for visual-identification practice") : visual.alt[lang]} onError={() => setFailed(true)} style={{ width: imageWidth, height: imageHeight }} resizeMode="contain" />
+          <Image key={retryToken} source={{ uri, cache: "force-cache" }} accessibilityLabel={hideTeaching ? (lang === 1 ? "صورة جهاز لاختبار التعرّف البصري" : "Clinical equipment photo for visual-identification practice") : visual.alt[lang]} onError={() => setFailed(true)} style={{ width: imageWidth, height: imageHeight }} resizeMode="contain" />
           {visual.coveredForPrivacy ? (
             <Svg width={imageWidth} height={imageHeight} style={{ position: "absolute", top: 0, left: 0 }} pointerEvents="none">
               <Polygon points={scalePoints(COVER_POINTS, imageWidth, imageHeight)} fill="#1e293b" />
