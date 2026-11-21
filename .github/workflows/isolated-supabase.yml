@@ -26,8 +26,10 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
+      # Fix the CLI major version and avoid anonymous GitHub API latest-release rate limits.
+      # v3 changes local/hosted defaults; this isolated-stack test was built against v2.
       - uses: supabase/setup-cli@v1
-        with: { version: latest }
+        with: { version: "2.118.0" }
       - name: Configure the CI copy of the local stack (CAPTCHA on with the TEST secret, relaxed rate limits)
         run: |
           sed -i 's/email_sent = 4/email_sent = 1000/; s/sign_in_sign_ups = 30/sign_in_sign_ups = 1000/' supabase/config.toml
