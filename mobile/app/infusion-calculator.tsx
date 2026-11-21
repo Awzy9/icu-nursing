@@ -1,20 +1,14 @@
 import { useState } from "react";
 import { Linking, Pressable, Text, TextInput, View } from "react-native";
 import { Stack } from "expo-router";
-import { doseToPumpRate, infusionDuration, volumetricRate, type ConcentrationUnit, type DoseUnit, type DurationUnit } from "../src/core/infusion-calculator";
+import { doseToPumpRate, infusionDuration, parsePositiveDecimal, volumetricRate, type ConcentrationUnit, type DoseUnit, type DurationUnit } from "../src/core/infusion-calculator";
 import { useApp } from "../src/state/app";
 import { Callout, Card, Chip, H1, H2, NavCard, P, Screen } from "../src/ui/components";
 import { radii, space, type } from "../src/ui/theme";
 
 type Mode = "volumetric" | "duration" | "dose";
-// Only decimal notation is accepted: pasted hex, Infinity or exponent syntax
-// must never be silently interpreted as a bedside-looking dose or concentration.
-export const parsePositive = (raw: string): number => {
-  const text = raw.trim().replace(",", ".");
-  if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(text)) return Number.NaN;
-  const value = Number(text);
-  return Number.isFinite(value) && value > 0 ? value : Number.NaN;
-};
+// Shared with unit-tested pure core; null is converted to NaN for math invalidation.
+const parsePositive = (raw: string): number => parsePositiveDecimal(raw) ?? Number.NaN;
 const fmt = (number: number) => String(Number(number.toPrecision(6)));
 
 function NumberField({ label, value, onChange, unit }: { label: string; value: string; unit: string; onChange: (text: string) => void }) {
