@@ -26,6 +26,6 @@ test("answers, bookmarks and completion follow the account across browsers and s
   await b.goto("/en/bookmarks");await expect(b.getByRole("link",{name:"Central venous catheter care",exact:true})).toBeVisible();
   const c=await third.newPage();await login(c,other.email);await c.goto("/en/bookmarks");await expect(c.getByRole("link",{name:"Central venous catheter care",exact:true})).toHaveCount(0);
   await c.goto("/en/study");await expect(c.locator('dt:has-text("Answered") + dd')).toHaveText("0");
-  await a.getByRole("button",{name:"Sign out",exact:true}).click();await a.goto("/en/study");await expect(a.getByText("Guest practice:",{exact:false})).toBeVisible();await expect(a.locator('dt:has-text("Answered") + dd')).toHaveText("0");
+  await a.getByRole("button",{name:"Sign out",exact:true}).click();await expect(a).toHaveURL(/\/en\/?(?:\?.*)?$/,{timeout:20000});await expect(a.getByRole("button",{name:"Sign out",exact:true})).toHaveCount(0);await a.goto("/en/study");await expect(a.getByText("Guest practice:",{exact:false})).toBeVisible();await expect(a.locator('dt:has-text("Answered") + dd')).toHaveText("0");
  } finally{await first.close();await second.close();await third.close();}
 });
