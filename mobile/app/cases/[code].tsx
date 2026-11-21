@@ -111,7 +111,7 @@ export default function CaseScreen() {
               <P muted small>{t("app.englishOnly")}</P>
               <Text accessibilityRole="header" style={{ fontSize: 20, fontWeight: "700", writingDirection: "ltr" }}>{data.title}</Text>
               <BookmarkButton itemKey={`cases:${data.key}`} />
-              {revealed && equipmentVisualKey && pos === scenario.steps[0]?.position ? <ModuleVisuals moduleKey={equipmentVisualKey} /> : null}
+              {equipmentVisualKey && pos === scenario.steps[0]?.position ? <ModuleVisuals moduleKey={equipmentVisualKey} hideTeaching={!revealed} /> : null}
               {showRhythm ? (rhythmTrace ? <Card><WaveformChart trace={rhythmTrace} /></Card> : <P small muted>{t("common.loading")}</P>) : null}
               {showNumericMonitor ? monitorReadings(step.observations).map((r) => <Monitor key={r.metric.key} label={r.metric.name[locale === "ar" ? 1 : 0]} value={r.value} suffix={r.metric.suffix} />) : null}
               {showNeuro ? <CaseComparison kind="neuro" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
