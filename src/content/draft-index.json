@@ -4059,12 +4059,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 4,
-   "hash": "ec028d8842415275"
+   "hash": "930881cadbd59249"
   },
   {
    "key": "SC-02",
