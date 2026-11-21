@@ -11,7 +11,7 @@ describe("2026 IV potassium and magnesium high-alert review", () => {
   const records = [
     ["MD-18", "18", "magnesium-sulfate"],
     ["MD-19", "19", "potassium-chloride"],
-  ];
+  ] as const;
   it("classifies magnesium sulfate injection high-alert without prescribing dose", () => {
     const m = med("18", "magnesium-sulfate");
     expect(m.high_alert).toBe(true);
