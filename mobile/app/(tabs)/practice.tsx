@@ -1,10 +1,12 @@
 import { H1, NavCard, NavGroup, P, RemoteGate, Screen, SectionLabel } from "../../src/ui/components";
 import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
+import { useAccess } from "../../src/auth/useAccess";
 
 export default function Practice() {
   const { t, progress, rtl: ar } = useApp();
   const cases = useCatalogList("cases");
+  const access = useAccess();
   const label = (en: string, arabic: string) => ar ? arabic : en;
   return (
     <Screen>
@@ -26,7 +28,8 @@ export default function Practice() {
       ]} />
       <SectionLabel>{t("type.cases")}</SectionLabel>
       <RemoteGate state={cases} onRetry={cases.refresh} empty={(items) => items.length === 0}>
-        {(items) => <NavGroup items={items.map((item) => ({
+        {(items) => <NavGroup items={items.map((item, index) => ({
+          locked: access.lockedIndex(index),
           href: `/cases/${item.key}`,
           title: item.title,
           body: progress.cases[item.key] ? t("cases.score", { score: Math.round(progress.cases[item.key]!.scoreTenths / 10) }) : item.category,

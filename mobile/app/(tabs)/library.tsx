@@ -6,6 +6,7 @@ import { accentForType, space } from "../../src/ui/theme";
 import type { IconName } from "../../src/ui/icons";
 import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
+import { useAccess } from "../../src/auth/useAccess";
 
 const TYPES = ["topics", "skills", "medications", "equipment", "cases", "practice"] as const;
 const ICON: Record<string, IconName> = { topics: "book", skills: "checklist", medications: "pill", equipment: "pulse", cases: "heart", practice: "checklist" };
@@ -16,6 +17,7 @@ export default function Library() {
   const params = useLocalSearchParams<{ type?: string }>();
   const [type, setType] = useState<string>(TYPES.includes(params.type as (typeof TYPES)[number]) ? params.type! : "topics");
   const list = useCatalogList(type);
+  const access = useAccess();
 
   return (
     <Screen>
@@ -25,7 +27,7 @@ export default function Library() {
         </View>
       </ScrollView>
       <RemoteGate state={list} onRetry={list.refresh} empty={(items) => items.length === 0}>
-        {(items) => <NavGroup items={items.map((entry) => ({ href: `${ROUTE[type]}${entry.key}`, title: entry.title, body: entry.category, icon: ICON[type], accent: accentForType(type) }))} />}
+        {(items) => <NavGroup items={items.map((entry, index) => ({ locked: access.lockedIndex(index), href: `${ROUTE[type]}${entry.key}`, title: entry.title, body: entry.category, icon: ICON[type], accent: accentForType(type) }))} />}
       </RemoteGate>
     </Screen>
   );

@@ -1,9 +1,32 @@
-import { Stack } from "expo-router";
+import { Stack, usePathname, useRouter } from "expo-router";
+import { useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import { AuthProvider, useAuth } from "../src/auth/provider";
 import { useProgressPullOnSignIn } from "../src/hooks/useProgressSync";
+import { useCatalogList } from "../src/hooks/useRemoteContent";
+import { catalogRoute, isFreeCatalogEntry, isLockedStaticRoute, type CatalogType } from "../src/core/access";
+import { useAccess } from "../src/auth/useAccess";
 import { AppProvider, useApp } from "../src/state/app";
 import { dark } from "../src/ui/theme";
+
+/** Sends a signed-out learner to the account prompt when they reach something outside the free items (deep links, search, bookmarks and in-app links all land here). */
+function toGate(router: ReturnType<typeof useRouter>, pathname: string) { router.replace(`/account-required?next=${encodeURIComponent(pathname)}`); }
+function CatalogGate({ type, id, pathname }: { type: CatalogType; id: string; pathname: string }) {
+  const list = useCatalogList(type);
+  const router = useRouter();
+  const locked = list.status === "ready" && !isFreeCatalogEntry(list.data.map((e) => e.key), id);
+  useEffect(() => { if (locked) toGate(router, pathname); }, [locked, router, pathname]);
+  return null;
+}
+function AccessGuard() {
+  const { gateActive } = useAccess();
+  const pathname = usePathname();
+  const router = useRouter();
+  const staticLocked = gateActive && isLockedStaticRoute(pathname);
+  useEffect(() => { if (staticLocked) toGate(router, pathname); }, [staticLocked, router, pathname]);
+  const detail = gateActive ? catalogRoute(pathname) : null;
+  return detail ? <CatalogGate key={pathname} type={detail.type} id={detail.key} pathname={pathname} /> : null;
+}
 
 function Shell() {
   const { palette, t, themeMode } = useApp();
@@ -11,12 +34,14 @@ function Shell() {
   return (
     <>
       <StatusBar style={palette.bg === dark.bg ? "light" : "dark"} key={themeMode + palette.bg} />
+      <AccessGuard />
       <Stack screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerShadowVisible: false, headerTitleStyle: { fontWeight: "700", color: palette.text }, headerTintColor: palette.text, contentStyle: { backgroundColor: palette.bg }, headerBackTitle: t("common.back") }}>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="onboarding" options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="signin" options={{ title: t("auth.signIn") }} />
         <Stack.Screen name="signup" options={{ title: t("auth.signUp") }} />
+        <Stack.Screen name="account-required" options={{ title: t("gate.title") }} />
         <Stack.Screen name="auth/callback" options={{ title: t("tab.account") }} />
         <Stack.Screen name="reset-password" options={{ title: t("auth.recoveryTitle") }} />
         <Stack.Screen name="delete-account" options={{ title: t("del.title") }} />

@@ -22,6 +22,7 @@ const ICONS = {
   chevron: { paths: ["M9 6l6 6-6 6"] },
   play: { paths: ["M7 4l13 8-13 8z"] },
   check: { paths: ["M5 12l5 5L20 7"] },
+  lock: { paths: ["M7 11V8a5 5 0 0 1 10 0v3", "M5 11h14v10H5z", "M12 15v2"] },
 } satisfies Record<string, IconDef>;
 export type IconName = keyof typeof ICONS;
 

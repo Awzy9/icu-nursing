@@ -10,8 +10,8 @@ import { CAPTCHA_REQUIRED, readAuthConfig, type AuthConfig } from "./config";
 import { parseAuthCallback } from "./deepLinks";
 import { createSessionManager, type SessionManager } from "./session";
 
-interface AuthCtx { config: AuthConfig | null; manager: SessionManager | null; rpc: Rpc | null; email: string | null; userId: string | null; notice: "callbackFailed" | null; recoveryReady: boolean; callbackPending: boolean; clearNotice(): void; clearRecovery(): void }
-const Ctx = createContext<AuthCtx>({ config: null, manager: null, rpc: null, email: null, userId: null, notice: null, recoveryReady: false, callbackPending: false, clearNotice() {}, clearRecovery() {} });
+interface AuthCtx { config: AuthConfig | null; manager: SessionManager | null; rpc: Rpc | null; email: string | null; userId: string | null; notice: "callbackFailed" | null; recoveryReady: boolean; ready: boolean; callbackPending: boolean; clearNotice(): void; clearRecovery(): void }
+const Ctx = createContext<AuthCtx>({ config: null, manager: null, rpc: null, email: null, userId: null, notice: null, recoveryReady: false, ready: true, callbackPending: false, clearNotice() {}, clearRecovery() {} });
 export const useAuth = () => useContext(Ctx);
 
 const secure = { get: (k: string) => SecureStore.getItemAsync(k), set: (k: string, v: string) => SecureStore.setItemAsync(k, v), remove: (k: string) => SecureStore.deleteItemAsync(k) };
@@ -35,6 +35,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [notice, setNotice] = useState<"callbackFailed" | null>(null);
   const [recoveryReady, setRecoveryReady] = useState(false);
   const [callbackPending, setCallbackPending] = useState(false);
+  const [sessionRead, setSessionRead] = useState(false);
 
   useEffect(() => {
     if (!built) return;
@@ -42,7 +43,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setEmail(s?.user.email ?? null); setUserId(s?.user.id ?? null);
     };
     const sub = built.client.auth.onAuthStateChange((_e, s) => adopt(s));
-    void built.manager.current().then(adopt).catch(() => undefined);
+    void built.manager.current().then(adopt).catch(() => undefined).finally(() => setSessionRead(true));
     const app = AppState.addEventListener("change", (st) => { if (st === "active") void built.manager.onForeground(); }); // refresh only in the foreground
     const handled = new Set<string>();
     const handle = async (url: string | null) => {
@@ -63,6 +64,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return () => { sub.data.subscription.unsubscribe(); app.remove(); link.remove(); };
   }, [built, config]);
 
-  const value = useMemo<AuthCtx>(() => ({ config, manager: built?.manager ?? null, rpc: built?.rpc ?? null, email, userId, notice, recoveryReady, callbackPending, clearNotice: () => setNotice(null), clearRecovery: () => setRecoveryReady(false) }), [config, built, email, userId, notice, recoveryReady, callbackPending]);
+  const value = useMemo<AuthCtx>(() => ({ config, manager: built?.manager ?? null, rpc: built?.rpc ?? null, email, userId, notice, recoveryReady, ready: !built || (sessionRead && !callbackPending), callbackPending, clearNotice: () => setNotice(null), clearRecovery: () => setRecoveryReady(false) }), [config, built, email, userId, notice, recoveryReady, callbackPending, sessionRead]);
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
