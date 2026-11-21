@@ -1,4 +1,4 @@
-import { Tabs } from "expo-router";
+import { Tabs, useRouter, type Href } from "expo-router";
 import type { ComponentProps } from "react";
 import { Pressable, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -20,9 +20,14 @@ const Icon = ({ name, color }: { name: string; color: import("react-native").Col
  * narrow iPhones instead of burying it beneath a fifth-item "More" menu.
  */
 type VisibleTabProps = Parameters<NonNullable<ComponentProps<typeof Tabs>["tabBar"]>>[0];
-function VisibleTabBar({ state, navigation }: VisibleTabProps) {
+function VisibleTabBar({ state }: VisibleTabProps) {
+  const router = useRouter();
   const { palette, t, rtl } = useApp();
   const { bottom } = useSafeAreaInsets();
+  const hrefs: Record<string, Href> = {
+    home: "/(tabs)/home", library: "/(tabs)/library", practice: "/(tabs)/practice",
+    tools: "/(tabs)/tools", visuals: "/(tabs)/visuals", account: "/(tabs)/account",
+  };
   const names: Record<string, string> = {
     home: t("tab.home"), library: t("tab.learn"), practice: t("tab.practice"),
     tools: t("tab.tools"), visuals: t("tab.visuals"), account: t("tab.account"),
@@ -39,11 +44,7 @@ function VisibleTabBar({ state, navigation }: VisibleTabProps) {
         return (
           <Pressable key={route.key} accessibilityRole="tab" accessibilityState={{ selected }}
             accessibilityLabel={label} accessibilityHint={selected ? undefined : label}
-            onPress={() => {
-              const event = navigation.emit({ type: "tabPress", target: route.key, canPreventDefault: true });
-              if (!selected && !event.defaultPrevented) navigation.navigate(route.name, route.params);
-            }}
-            onLongPress={() => navigation.emit({ type: "tabLongPress", target: route.key })}
+            onPress={() => { if (!selected) router.navigate(hrefs[route.name] ?? "/(tabs)/home"); }}
             style={{ flex: 1, minWidth: 0, minHeight: 54, alignItems: "center", justifyContent: "center", gap: 3, paddingHorizontal: 1 }}>
             <Icon name={route.name} color={color} />
             <Text adjustsFontSizeToFit numberOfLines={1} minimumFontScale={0.75}
