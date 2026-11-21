@@ -60,8 +60,10 @@ export function AppProvider({ children, accountId = null }: { children: React.Re
     void AsyncStorage.setItem(ONBOARDING_STORAGE_KEY, "dismissed").catch(() => undefined);
   }, []);
   const scopeReady = ready && loadedScope === scopeId;
+  const activeScopeRef = useRef(scopeId);
+  activeScopeRef.current = scopeId;
   const update = useCallback((fn: (p: Progress) => Progress) => {
-    if (!scopeReady) return;
+    if (!scopeReady || activeScopeRef.current !== scopeId) return;
     const next = fn(latest.current);
     latest.current = next; setProgress(next);
     void saveProgress(progressStore, next).catch(() => undefined);
