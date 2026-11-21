@@ -12,6 +12,7 @@ export default function Labs() {
   return (
     <Screen>
       <NavGroup items={[
+        { href: "/nursing-lab", title: rtl ? "مختبر التمريض" : "Interactive Nursing Lab", body: rtl ? "محاكاة المناوبة وفحص الأدوية والصور" : "Shift simulation, medication checks and visual skills", icon: "heart", accent: "practice" },
         { href: "/infusion-calculator", title: rtl ? "حاسبة مضخة التسريب" : "Infusion pump calculator", body: rtl ? "حساب المعدل والمدة والجرعة" : "Interactive mL/h, duration and dose calculations", icon: "pill", accent: "medications" },
         { href: "/news2", title: t("news2.title"), body: t("news2.intro"), icon: "checklist", accent: "skills" },
         { href: "/gcs", title: t("gcs.title"), body: t("gcs.intro"), icon: "checklist", accent: "skills" },
