@@ -4,7 +4,7 @@ import type { WorkingEntryShared } from "../core/remoteContent";
 import { readingMinutes, splitSections, type MarkdownSection } from "../core/markdown";
 import { markViewed, toggleTick } from "../core/progress";
 import { useApp } from "../state/app";
-import { BookmarkButton, Callout, cardStyle, CompleteButton, H2, P } from "./components";
+import { BookmarkButton, Callout, cardStyle, CompleteButton, H2, NavCard, P } from "./components";
 import { Icon } from "./icons";
 import { MarkdownBody } from "./markdown-body";
 import { accentForType, MIN_TARGET, radii, space, type } from "./theme";
@@ -74,6 +74,8 @@ export function LessonReader({ entry, bookmarkKey, visual, sectionVisual, childr
       </View>
       {visual}
       {children}
+      {entry.questions?.length ? <NavCard href={`/quiz/${entry.key}`} title={t("quiz.title")} body={`${entry.questions.length} questions · Answer explanations included`} icon="help" accent="practice" /> : null}
+      {(entry.checklist?.length ?? 0) >= 2 ? <NavCard href={`/step-order/${entry.key}`} title="Practise step ordering" body="Put the clinical skill steps in their correct sequence" icon="checklist" accent="skills" /> : null}
       {entry.checklist?.length ? (
         <View style={{ gap: space.sm }}>
           <H2>{t("skills.checklist")}</H2>
