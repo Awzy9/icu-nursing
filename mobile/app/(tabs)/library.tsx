@@ -7,9 +7,9 @@ import type { IconName } from "../../src/ui/icons";
 import { useApp } from "../../src/state/app";
 import { useCatalogList } from "../../src/hooks/useRemoteContent";
 
-const TYPES = ["topics", "skills", "medications", "equipment", "cases"] as const;
-const ICON: Record<string, IconName> = { topics: "book", skills: "checklist", medications: "pill", equipment: "pulse", cases: "heart" };
-const ROUTE: Record<string, string> = { topics: "/topics/", skills: "/skills/", medications: "/medications/", equipment: "/equipment/", cases: "/cases/" };
+const TYPES = ["topics", "skills", "medications", "equipment", "cases", "practice"] as const;
+const ICON: Record<string, IconName> = { topics: "book", skills: "checklist", medications: "pill", equipment: "pulse", cases: "heart", practice: "checklist" };
+const ROUTE: Record<string, string> = { topics: "/topics/", skills: "/skills/", medications: "/medications/", equipment: "/equipment/", cases: "/cases/", practice: "/practice-activity/" };
 
 export default function Library() {
   const { t, rtl } = useApp();
