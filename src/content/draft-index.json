@@ -2934,7 +2934,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "66971eee19f59cac"
+   "hash": "3c2e79a7d9317fb6"
   },
   {
    "key": "MD-19",
@@ -2956,6 +2956,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-DAILYMED-KCL-CONC-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2969,7 +2974,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ce33a13974d29510"
+   "hash": "a2aee6e01833867c"
   },
   {
    "key": "MD-20",
