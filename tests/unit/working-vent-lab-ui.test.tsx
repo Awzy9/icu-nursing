@@ -23,6 +23,20 @@ describe("VentLab", () => {
     expect(screen.getByText(/Low-pressure alarm/)).toBeVisible();
   });
 
+  it("identifies the high-pressure threshold as fictional, not a real device default", () => {
+    render(<VentLab locale="en" />);
+    fireEvent.click(screen.getByRole("button", { name: "Stiff lungs (low compliance)" }));
+    expect(screen.getByText(/invented 40 cmH₂O teaching trigger/)).toBeVisible();
+    expect(screen.getByText(/no threshold or machine behaviour should be copied into clinical settings/i)).toBeVisible();
+  });
+
+  it("keeps patient assessment first in a simulated circuit disconnection", () => {
+    render(<VentLab locale="en" />);
+    fireEvent.click(screen.getByRole("button", { name: "Circuit disconnect" }));
+    expect(screen.getByText(/Assess the patient and adequacy of ventilation immediately/)).toBeVisible();
+    expect(screen.getByText(/Low-pressure alarm \(simulation only\)/)).toBeVisible();
+  });
+
   it("moving a slider updates the pressure readout (higher tidal volume raises peak pressure)", () => {
     render(<VentLab locale="en" />);
     const peakValue = () => screen.getByText("Peak").parentElement!.querySelector("p:nth-of-type(2)")!.textContent;
