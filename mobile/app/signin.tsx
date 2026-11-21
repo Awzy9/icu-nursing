@@ -16,21 +16,26 @@ export default function SignIn() {
   const [msg, setMsg] = useState<string | null>(null); const [busy, setBusy] = useState(false);
   const input = { minHeight: MIN_TARGET, borderWidth: 1.5, borderColor: palette.border, borderRadius: 10, paddingHorizontal: space.md, color: palette.text, backgroundColor: palette.surface, textAlign: rtl ? "right" : "left" } as const;
 
-  if (!config || !manager) return <Screen><H1>{t("auth.signIn")}</H1><Callout>{t("auth.notConfigured")}</Callout></Screen>;
+  if (!config || !manager) return <Screen><H1>{t("auth.signIn")}</H1><Callout tone="warn">{t("auth.accountMissing")}</Callout><Button label={t("tab.account")} variant="outline" onPress={() => router.replace("/(tabs)/account")} /></Screen>;
   const freshCaptcha = () => { setToken(null); setCaptchaKey((k) => k + 1); }; // tokens are single use
   async function submit() {
-    if (!token) { setMsg(t("auth.err.input")); return; }
-    setBusy(true);
-    const r = await manager!.signIn(email, password, token);
-    setBusy(false);
-    if (r.ok) { setPassword(""); router.back(); return; }
-    freshCaptcha(); setMsg(t(`auth.err.${r.error}`));
+    if (!token || busy) { if (!busy) setMsg(t("auth.err.input")); return; }
+    setBusy(true); setMsg(null);
+    try {
+      const r = await manager!.signIn(email, password, token);
+      if (r.ok) { setPassword(""); router.replace("/(tabs)/account"); return; }
+      freshCaptcha(); setMsg(t(`auth.err.${r.error}`));
+    } catch { freshCaptcha(); setMsg(t("auth.err.network")); }
+    finally { setBusy(false); }
   }
   async function reset() {
-    if (!token) { setMsg(t("auth.err.input")); return; }
-    setBusy(true);
-    await manager!.requestPasswordReset(email, token, "nursingmastery://auth/callback");
-    setBusy(false); freshCaptcha(); setMsg(t("auth.resetSent"));
+    if (!token || busy) { if (!busy) setMsg(t("auth.err.input")); return; }
+    setBusy(true); setMsg(null);
+    try {
+      const result = await manager!.requestPasswordReset(email, token, "nursingmastery://auth/callback?type=recovery");
+      setMsg(t(result.ok ? "auth.resetSent" : "auth.err.generic"));
+    } catch { setMsg(t("auth.err.network")); }
+    finally { setBusy(false); freshCaptcha(); }
   }
   return (
     <Screen>
@@ -45,6 +50,7 @@ export default function SignIn() {
         {msg ? <Callout tone="warn">{msg}</Callout> : null}
         <Button label={t("auth.signIn")} onPress={() => void submit()} disabled={busy || !token} />
         <Button label={t("auth.forgot")} variant="outline" onPress={() => void reset()} disabled={busy || !token || !email} />
+        <Button label={t("auth.newAccount")} variant="outline" onPress={() => router.push("/signup")} />
       </View>
     </Screen>
   );

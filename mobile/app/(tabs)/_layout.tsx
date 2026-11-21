@@ -1,4 +1,7 @@
-import { Tabs } from "expo-router";
+import { Tabs, useRouter, type Href } from "expo-router";
+import type { ComponentProps } from "react";
+import { Pressable, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Svg, { Path } from "react-native-svg";
 import { useApp } from "../../src/state/app";
 
@@ -12,10 +15,51 @@ const icons: Record<string, string> = {
 };
 const Icon = ({ name, color }: { name: string; color: import("react-native").ColorValue }) => <Svg width={24} height={24} viewBox="0 0 24 24" accessibilityElementsHidden importantForAccessibility="no"><Path d={icons[name]!} fill={color as string} /></Svg>;
 
+/**
+ * Six explicit, equally sized tabs. Using a custom bar keeps Account in sight on
+ * narrow iPhones instead of burying it beneath a fifth-item "More" menu.
+ */
+type VisibleTabProps = Parameters<NonNullable<ComponentProps<typeof Tabs>["tabBar"]>>[0];
+function VisibleTabBar({ state }: VisibleTabProps) {
+  const router = useRouter();
+  const { palette, t, rtl } = useApp();
+  const { bottom } = useSafeAreaInsets();
+  const hrefs: Record<string, Href> = {
+    home: "/(tabs)/home", library: "/(tabs)/library", practice: "/(tabs)/practice",
+    tools: "/(tabs)/tools", visuals: "/(tabs)/visuals", account: "/(tabs)/account",
+  };
+  const names: Record<string, string> = {
+    home: t("tab.home"), library: t("tab.learn"), practice: t("tab.practice"),
+    tools: t("tab.tools"), visuals: t("tab.visuals"), account: t("tab.account"),
+  };
+  return (
+    <View style={{
+      flexDirection: rtl ? "row-reverse" : "row", paddingTop: 6, paddingBottom: Math.max(6, bottom),
+      borderTopWidth: 1, borderTopColor: palette.hairline, backgroundColor: palette.surface,
+    }}>
+      {state.routes.map((route, index) => {
+        const selected = state.index === index;
+        const label = names[route.name] ?? route.name;
+        const color = selected ? palette.primary : palette.muted;
+        return (
+          <Pressable key={route.key} accessibilityRole="tab" accessibilityState={{ selected }}
+            accessibilityLabel={label} accessibilityHint={selected ? undefined : label}
+            onPress={() => { if (!selected) router.navigate(hrefs[route.name] ?? "/(tabs)/home"); }}
+            style={{ flex: 1, minWidth: 0, minHeight: 54, alignItems: "center", justifyContent: "center", gap: 3, paddingHorizontal: 1 }}>
+            <Icon name={route.name} color={color} />
+            <Text adjustsFontSizeToFit numberOfLines={1} minimumFontScale={0.75}
+              style={{ fontSize: 10.5, textAlign: "center", color, fontWeight: selected ? "700" : "600" }}>{label}</Text>
+          </Pressable>
+        );
+      })}
+    </View>
+  );
+}
+
 export default function TabsLayout() {
   const { palette, t } = useApp();
   return (
-    <Tabs screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerShadowVisible: false, headerTitleStyle: { fontWeight: "700", fontSize: 20, color: palette.text }, headerTintColor: palette.text, tabBarActiveTintColor: palette.primary, tabBarInactiveTintColor: palette.muted, tabBarStyle: { backgroundColor: palette.surface, borderTopColor: palette.hairline, minHeight: 64, paddingTop: 6 }, tabBarLabelStyle: { fontSize: 12, fontWeight: "600" } }}>
+    <Tabs tabBar={(props) => <VisibleTabBar {...props} />} screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerShadowVisible: false, headerTitleStyle: { fontWeight: "700", fontSize: 20, color: palette.text }, headerTintColor: palette.text, tabBarActiveTintColor: palette.primary, tabBarInactiveTintColor: palette.muted, tabBarStyle: { backgroundColor: palette.surface, borderTopColor: palette.hairline, minHeight: 64, paddingTop: 6 }, tabBarLabelStyle: { fontSize: 12, fontWeight: "600" } }}>
       <Tabs.Screen name="home" options={{ title: t("tab.home"), tabBarIcon: ({ color }) => <Icon name="index" color={color} /> }} />
       <Tabs.Screen name="library" options={{ title: t("tab.learn"), tabBarIcon: ({ color }) => <Icon name="library" color={color} /> }} />
       <Tabs.Screen name="practice" options={{ title: t("tab.practice"), tabBarIcon: ({ color }) => <Icon name="practice" color={color} /> }} />

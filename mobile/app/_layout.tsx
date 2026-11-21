@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { AuthProvider } from "../src/auth/provider";
+import { AuthProvider, useAuth } from "../src/auth/provider";
 import { useProgressPullOnSignIn } from "../src/hooks/useProgressSync";
 import { AppProvider, useApp } from "../src/state/app";
 import { dark } from "../src/ui/theme";
@@ -16,6 +16,9 @@ function Shell() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="onboarding" options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="signin" options={{ title: t("auth.signIn") }} />
+        <Stack.Screen name="signup" options={{ title: t("auth.signUp") }} />
+        <Stack.Screen name="auth/callback" options={{ title: t("tab.account") }} />
+        <Stack.Screen name="reset-password" options={{ title: t("auth.recoveryTitle") }} />
         <Stack.Screen name="delete-account" options={{ title: t("del.title") }} />
         <Stack.Screen name="quiz" options={{ title: t("quiz.title") }} />
         <Stack.Screen name="quiz/[key]" options={{ title: t("quiz.title") }} />
@@ -63,4 +66,9 @@ function Shell() {
     </>
   );
 }
-export default function RootLayout() { return <AppProvider><AuthProvider><Shell /></AuthProvider></AppProvider>; }
+function ScopedShell() {
+  const { userId } = useAuth();
+  // Swap the isolated progress cache while keeping Expo Router's navigation stack mounted.
+  return <AppProvider accountId={userId}><Shell /></AppProvider>;
+}
+export default function RootLayout() { return <AuthProvider><ScopedShell /></AuthProvider>; }

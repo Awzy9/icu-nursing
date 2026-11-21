@@ -11,9 +11,9 @@ const schema = z.object({
 });
 export type AuthConfig = z.infer<typeof schema> & { siteOrigin: string };
 
-/** Returns null when the app is not configured for a backend: it then runs fully offline on the synthetic samples. */
+/** Returns null only when missing public Supabase project configuration. The content catalog remains available separately. */
 export function readAuthConfig(env: Record<string, string | undefined>): AuthConfig | null {
-  const parsed = schema.safeParse({ url: env.EXPO_PUBLIC_SUPABASE_URL, anonKey: env.EXPO_PUBLIC_SUPABASE_ANON_KEY, siteUrl: env.EXPO_PUBLIC_SITE_URL });
+  const parsed = schema.safeParse({ url: env.EXPO_PUBLIC_SUPABASE_URL, anonKey: env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY || env.EXPO_PUBLIC_SUPABASE_ANON_KEY, siteUrl: env.EXPO_PUBLIC_SITE_URL || "https://icu-nursing.vercel.app" });
   if (!parsed.success) return null;
   return { ...parsed.data, siteOrigin: new URL(parsed.data.siteUrl).origin };
 }

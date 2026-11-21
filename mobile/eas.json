@@ -12,7 +12,12 @@
       "ios": {
         "simulator": true
       },
-      "channel": "preview"
+      "channel": "preview",
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://dvmevjomyaqrojsiffnf.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_TymaR91woXzxTYb89xaIug_7k-_sMj4",
+        "EXPO_PUBLIC_SITE_URL": "https://icu-nursing.vercel.app"
+      }
     },
     "production": {
       "autoIncrement": true,
@@ -20,7 +25,12 @@
         "buildType": "app-bundle"
       },
       "ios": {},
-      "channel": "production"
+      "channel": "production",
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://dvmevjomyaqrojsiffnf.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_TymaR91woXzxTYb89xaIug_7k-_sMj4",
+        "EXPO_PUBLIC_SITE_URL": "https://icu-nursing.vercel.app"
+      }
     }
   },
   "submit": {

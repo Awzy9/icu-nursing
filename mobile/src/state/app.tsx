@@ -2,7 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { useColorScheme } from "react-native";
 import { isRtl, translate, type Locale } from "../core/i18n";
-import { emptyProgress, loadProgress, saveProgress, type KeyValueStore, type Progress } from "../core/progress";
+import { emptyProgress, loadProgress, saveProgress, scopedProgressStore, type KeyValueStore, type Progress } from "../core/progress";
 import { ONBOARDING_STORAGE_KEY } from "../core/onboarding";
 import { dark, light, type Palette } from "../ui/theme";
 
@@ -19,7 +19,10 @@ interface Ctx {
 const AppContext = createContext<Ctx | null>(null);
 export const useApp = (): Ctx => { const c = useContext(AppContext); if (!c) throw new Error("useApp outside AppProvider"); return c; };
 
-export function AppProvider({ children }: { children: React.ReactNode }) {
+export function AppProvider({ children, accountId = null }: { children: React.ReactNode; accountId?: string | null }) {
+  const progressStore = useMemo(() => scopedProgressStore(store, accountId), [accountId]);
+  const scopeId = accountId ?? "guest";
+  const [loadedScope, setLoadedScope] = useState<string | null>(null);
   const [locale, setLocaleState] = useState<Locale>("en");
   const [themeMode, setThemeModeState] = useState<ThemeMode>("system");
   const [progress, setProgress] = useState<Progress>(emptyProgress());
@@ -29,6 +32,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const latest = useRef(progress); latest.current = progress;
 
   useEffect(() => {
+    let active = true;
     (async () => {
       try {
         const raw = await AsyncStorage.getItem(SETTINGS_KEY);
@@ -36,12 +40,17 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         if (s.locale === "ar" || s.locale === "en") setLocaleState(s.locale);
         if (s.theme === "light" || s.theme === "dark" || s.theme === "system") setThemeModeState(s.theme);
       } catch { /* ignore corrupt settings */ }
-      setProgress(await loadProgress(store));
+      const loaded = await loadProgress(progressStore);
+      if (!active) return; // never show data from an account whose async storage read finished late
+      latest.current = loaded;
+      setProgress(loaded);
+      setLoadedScope(scopeId);
       try { setOnboardingSeen(await AsyncStorage.getItem(ONBOARDING_STORAGE_KEY) === "dismissed"); }
       catch { /* never block a learner if onboarding storage is unavailable */ }
-      setReady(true);
+      if (active) setReady(true);
     })();
-  }, []);
+    return () => { active = false; };
+  }, [progressStore, scopeId]);
 
   const persistSettings = (l: Locale, m: ThemeMode) => void AsyncStorage.setItem(SETTINGS_KEY, JSON.stringify({ locale: l, theme: m })).catch(() => undefined);
   const setLocale = useCallback((l: Locale) => { setLocaleState(l); persistSettings(l, themeMode); }, [themeMode]);
@@ -50,11 +59,19 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setOnboardingSeen(true);
     void AsyncStorage.setItem(ONBOARDING_STORAGE_KEY, "dismissed").catch(() => undefined);
   }, []);
-  const update = useCallback((fn: (p: Progress) => Progress) => { const next = fn(latest.current); latest.current = next; setProgress(next); void saveProgress(store, next).catch(() => undefined); }, []);
+  const scopeReady = ready && loadedScope === scopeId;
+  const activeScopeRef = useRef(scopeId);
+  activeScopeRef.current = scopeId;
+  const update = useCallback((fn: (p: Progress) => Progress) => {
+    if (!scopeReady || activeScopeRef.current !== scopeId) return;
+    const next = fn(latest.current);
+    latest.current = next; setProgress(next);
+    void saveProgress(progressStore, next).catch(() => undefined);
+  }, [progressStore, scopeReady]);
 
   const value = useMemo<Ctx>(() => ({
     locale, rtl: isRtl(locale), setLocale, themeMode, setThemeMode, palette: (themeMode === "system" ? system : themeMode) === "dark" ? dark : light,
-    t: (k, v) => translate(locale, k, v), progress, update, ready, onboardingSeen, finishOnboarding,
-  }), [locale, setLocale, themeMode, setThemeMode, system, progress, update, ready, onboardingSeen, finishOnboarding]);
+    t: (k, v) => translate(locale, k, v), progress: scopeReady ? progress : emptyProgress(), update, ready: scopeReady, onboardingSeen, finishOnboarding,
+  }), [locale, setLocale, themeMode, setThemeMode, system, progress, update, scopeReady, onboardingSeen, finishOnboarding]);
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
