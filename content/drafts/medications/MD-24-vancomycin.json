@@ -112,7 +112,7 @@
    ]
   },
   "safety_alerts": {
-   "support": "full",
+   "support": "partial",
    "items": [
     {
      "text": "Rapid bolus administration may be associated with exaggerated hypotension, including shock and rarely cardiac arrest; the label says infusion reactions usually stop promptly when the infusion is stopped.",
