@@ -12,6 +12,7 @@ function Shell() {
     <>
       <StatusBar style={palette.bg === dark.bg ? "light" : "dark"} key={themeMode + palette.bg} />
       <Stack screenOptions={{ headerStyle: { backgroundColor: palette.bg }, headerShadowVisible: false, headerTitleStyle: { fontWeight: "700", color: palette.text }, headerTintColor: palette.text, contentStyle: { backgroundColor: palette.bg }, headerBackTitle: t("common.back") }}>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="onboarding" options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="signin" options={{ title: t("auth.signIn") }} />

@@ -32,7 +32,7 @@ export default function OnboardingTutorial() {
   };
 
   return (
-    <Screen banner={false}>
+    <Screen banner={false} safeAreaTop>
       <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: space.sm, minHeight: 44 }}>
         <Text style={[type.small, { color: palette.muted, fontWeight: "700" }]}>
           {ar ? `الخطوة ${index + 1} من ${onboardingSteps.length}` : `Step ${index + 1} of ${onboardingSteps.length}`}
@@ -40,7 +40,7 @@ export default function OnboardingTutorial() {
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={ar ? "تخطي الشرح" : "Skip tutorial"}
-          onPress={() => navigate("/(tabs)/index")}
+          onPress={() => navigate("/(tabs)/home")}
           style={{ minHeight: 44, minWidth: 64, alignItems: "center", justifyContent: "center", paddingHorizontal: space.sm }}
         >
           <Text style={[type.small, { color: palette.primary, fontWeight: "700" }]}>{ar ? "تخطي" : "Skip"}</Text>
@@ -95,7 +95,7 @@ export default function OnboardingTutorial() {
           <Button label={ar ? "ابدأ مساراً تعليمياً" : "Start a Learning Path"} icon="route" onPress={() => navigate("/paths")} />
           <Button label={ar ? "استكشف المكتبة البصرية" : "Explore Visual Library"} variant="outline" icon="pulse" onPress={() => navigate("/(tabs)/visuals")} />
           <Button label={ar ? "جرّب التدريب العملي" : "Try Practice"} variant="outline" icon="checklist" onPress={() => navigate("/(tabs)/practice")} />
-          <Button label={ar ? "اذهب إلى الرئيسية" : "Go to Home"} variant="outline" onPress={() => navigate("/(tabs)/index")} />
+          <Button label={ar ? "اذهب إلى الرئيسية" : "Go to Home"} variant="outline" onPress={() => navigate("/(tabs)/home")} />
         </View>
       ) : (
         <View style={{ flexDirection: "row", gap: space.sm }}>

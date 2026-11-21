@@ -2,6 +2,7 @@ import React from "react";
 import { ActivityIndicator, Pressable, ScrollView, Text, View, type StyleProp, type ViewStyle } from "react-native";
 import RNSlider from "@react-native-community/slider";
 import { useRouter, type Href } from "expo-router";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useApp } from "../state/app";
 import type { FetchState } from "../hooks/useRemoteContent";
 import { useProgressSync } from "../hooks/useProgressSync";
@@ -12,10 +13,11 @@ import { MIN_TARGET, radii, radius, space, type, type AccentKey, type Palette } 
 export const cardStyle = (palette: Palette): ViewStyle => ({ backgroundColor: palette.surface, borderRadius: radius, borderWidth: 1, borderColor: palette.hairline, boxShadow: palette.shadowCard });
 
 /** Page container: scrolls, applies the language direction to everything inside, and carries the draft-content notice. */
-export function Screen({ children, banner = true }: { children: React.ReactNode; banner?: boolean }) {
+export function Screen({ children, banner = true, safeAreaTop = false }: { children: React.ReactNode; banner?: boolean; safeAreaTop?: boolean }) {
   const { palette, rtl } = useApp();
+  const { top } = useSafeAreaInsets();
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: palette.bg, direction: rtl ? "rtl" : "ltr" }} contentContainerStyle={{ padding: space.lg, paddingBottom: space.xxl, gap: space.lg }} keyboardShouldPersistTaps="handled">
+    <ScrollView style={{ flex: 1, backgroundColor: palette.bg, direction: rtl ? "rtl" : "ltr" }} contentContainerStyle={{ padding: space.lg, paddingTop: space.lg + (safeAreaTop ? top : 0), paddingBottom: space.xxl, gap: space.lg }} keyboardShouldPersistTaps="handled">
       {banner ? <DraftNotice /> : null}
       {children}
     </ScrollView>

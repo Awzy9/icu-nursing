@@ -35,11 +35,11 @@ describe("mobile visual-library release acceptance", () => {
   });
   it("has explicit navigation to Learn, Practice, Clinical Tools, Visuals and Account", () => {
     const tabs = mobileApp("(tabs)/_layout.tsx");
-    for (const screen of ["index", "practice", "tools", "visuals", "account"]) {
+    for (const screen of ["home", "library", "practice", "tools", "visuals", "account"]) {
       expect(tabs).toContain(`name="${screen}"`);
     }
-    const home = mobileApp("(tabs)/index.tsx");
-    for (const href of ["/(tabs)/library", "/(tabs)/practice", "/(tabs)/tools", "/(tabs)/visuals"]) {
+    const home = mobileApp("(tabs)/home.tsx");
+    for (const href of ["/library", "/(tabs)/practice", "/(tabs)/tools", "/(tabs)/visuals"]) {
       expect(home).toContain(href);
     }
   });
