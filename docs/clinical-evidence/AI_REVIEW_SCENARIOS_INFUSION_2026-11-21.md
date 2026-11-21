@@ -22,7 +22,7 @@
 
 ## Integrity, status and release gates
 
-- Every edited scenario retains `status: DRAFT`, `fictional_patient: true`, `clinically_reviewed: false`, its previous cited source IDs, and explicit remaining gaps. No clinical reviewer identity or approval was invented.
+- Every edited scenario retains `status: DRAFT`, `fictional_patient: true`, `clinically_reviewed: false` and explicit remaining gaps. SC-01 now cites registered `S-SSC-2026` for the peripheral-vasopressor statement (recommendation page only, not a full guideline review); existing source IDs remain intact. No clinical reviewer identity or approval was invented.
 - The metadata-only `src/content/draft-index.json` and `draft-history.json` were updated for the two scenario files with changed hashes and gap counts.
 - `content/working-infusion-cases.json` is a **learner-facing** web practice dataset and is also available to native clients through the existing content endpoint. Its four correct answer positions were distributed but the existing dose calculations preserved.
 - Automated tests assert scenario validation, correct patient-first sequence, safe extravasation warning, and correct answer index/arithmetic across infusion problems.
