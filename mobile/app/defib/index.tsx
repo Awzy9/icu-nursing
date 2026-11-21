@@ -1,5 +1,6 @@
 import { useDefibExercises } from "../../src/hooks/useRemoteContent";
 import { useApp } from "../../src/state/app";
+import { practiceHeading } from "../../src/core/quiz-presentation";
 import { H1, NavCard, P, RemoteGate, Screen } from "../../src/ui/components";
 
 export default function DefibList() {
@@ -13,7 +14,7 @@ export default function DefibList() {
       <RemoteGate state={exercises} onRetry={exercises.refresh}>
         {(data) => (
           <>
-            {data.map((e) => <NavCard key={e.key} href={`/defib/${e.key}`} title={e.title[ar ? 1 : 0]} body={e.vignette} />)}
+            {data.map((e) => <NavCard key={e.key} href={`/defib/${e.key}`} title={practiceHeading("defib", e.key, ar)} body={ar ? "حدد إن كان النظم قابلاً للصدمات قبل إظهار التشخيص." : "Decide whether the rhythm is shockable before revealing the diagnosis."} />)}
           </>
         )}
       </RemoteGate>
