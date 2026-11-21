@@ -38,14 +38,14 @@ D. The concern is minor, because the manufacturer's support line can reset the a
 **Trace:** N-AHS-CRRT-ALARM-2025 — Alarm off/disable/override decrease alarm sensitivity.
 
 **Q3 (escalation).** A nurse has tried the usual checks on a patient's CRRT circuit, but the alarms cannot be resolved and treatment keeps stopping. What does the pathway suggest?
-A. Call manufacturer support, return blood if possible, document why, and tell the physician.
+A. Escalate; return blood only if safe under the device and unit protocol; document and notify the team.
 B. Keep restarting the treatment until it runs, and tell the doctor at the end of the shift when handing over.
 C. Leave the blood in the circuit and clamp the lines until the next shift can look at it.
 D. Disconnect the patient and discard the circuit without recording why treatment was stopped.
 **Answer: A.**
-**Why correct:** The pathway says that if alarms cannot be managed, call customer support, return blood when possible and end treatment, document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.
+**Why correct:** The cited regional pathway advises support and clinical escalation, documentation, and blood return when feasible. Whether blood can safely be returned depends on the circuit condition, device instructions and unit policy; this multiple-choice question is not permission to return blood from an unsafe circuit.
 **Why not B:** Repeated restarts waste treatment time and delay escalation.
-**Why not C:** Blood should be returned when possible, not left in a stopped circuit.
+**Why not C:** Leaving an interrupted circuit unattended without evaluating the patient, device, circuit condition or escalation pathway is unsafe; blood return is not always appropriate.
 **Why not D:** The reason for stopping must be documented.
 **Trace:** N-AHS-CRRT-ALARM-2025 — If alarms cannot be managed: support, return blood, document, notify MD.
 
@@ -80,7 +80,7 @@ C. Switch to a different heparin brand and monitor, since the brand may be the c
 D. Wait for the platelet count to fall further before telling anyone, to be sure of the diagnosis.
 **Answer: B.**
 **Why correct:** KDIGO 2012 recommendation 5.3.4 requires discontinuation of all heparin when HIT is present; clinically likely HIT needs urgent assessment and a heparin-free treatment plan, including flushes and locks. The nurse escalates and follows authorized orders/local protocol; an isolated platelet fall is not diagnostic.
-**Why not A:** Flush heparin is a source of exposure and local policy decides the extent.
+**Why not A:** Heparin flushes and catheter locks count as heparin exposure. When HIT is clinically likely or confirmed, the responsible team must address **all** heparin sources; local policy guides how a heparin-free plan is implemented, not which sources count.
 **Why not C:** All heparin must stop, not just one brand.
 **Why not D:** Suspected HIT is reported immediately.
 **Trace:** S-KDIGO-AKI-2012 — KDIGO 2012 recommendation 5.3.4 (HIT): stop all heparin; clinically likely HIT requires urgent heparin-exposure review and local specialist pathway.
@@ -88,3 +88,4 @@ D. Wait for the platelet count to fall further before telling anyone, to be sure
 ## 18. References
 - Alberta Health Services. CRRT Alarm Management Care Pathway Resource (January 2025). https://www.albertahealthservices.ca/assets/about/scn/ahs-scn-cc-dialyzingwisely-crrt-alarm-management-care-pathway-resource.pdf (accessed 2026-11-15)
 - KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012). https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-15)
+- American Society of Hematology. Clinical Practice Guidelines for Heparin-Induced Thrombocytopenia (2018; pretest-probability approach and recommendations for likely HIT). https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/ (recommendations verified 2026-11-21; cited for explanation, not reproduced).
