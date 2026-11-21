@@ -11,7 +11,7 @@
  "drug_class": "Non-depolarising neuromuscular blocking agent",
  "category": "neuromuscular-blockers",
  "high_alert": true,
- "high_alert_note": "ISMP's 2024 acute-care high-alert list explicitly includes neuromuscular blocking agents (including this drug). This is a medication-error risk classification; product-specific airway and neuromuscular monitoring requirements and independent checks remain governed by the unit's policies.",
+ "high_alert_note": "ISMP's 2024 acute-care high-alert list explicitly includes neuromuscular blocking agents (including this drug). This is a medication-error risk classification; product-specific airway and neuromuscular monitoring requirements and independent checks remain governed by the unit's policies. High-alert class is independently traced to ISMP in the separate evidence report; the draft itself continues to rely only on the registered FDA/manufacturer label and non-RED references.",
  "summary": "Neuromuscular blocker used as an adjunct to general anaesthesia for intubation and to provide skeletal muscle relaxation during surgery or mechanical ventilation. Nursing focus: facilities for airway support, anaphylaxis, medication errors, sedation cover and residual paralysis.",
  "batch": 2,
  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
@@ -40,11 +40,6 @@
    "id": "S-RCP-NEWS2",
    "read": "full",
    "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
-  },
-  {
-   "id": "S-ISMP-HAM-2024",
-   "read": "full",
-   "use": "ISMP 2024 acute-care high-alert classification: neuromuscular blocking agents, with examples; read official one-page list and independently paraphrased"
   }
  ],
  "sections": {
@@ -124,14 +119,6 @@
      "text": "Residual paralysis can occur; a reversal agent may be considered, which is a prescriber decision.",
      "support": "sourced",
      "sources": [
-      "L-ROCURONIUM"
-     ]
-    },
-    {
-     "text": "High-alert classification: neuromuscular blocking agents can cause catastrophic harm after a wrong-drug or wrong-patient error. Confirm product/route against an authorized order, maintain airway and ventilation rescue readiness and follow the institution's separation, labeling and independent-check safeguards.",
-     "support": "sourced",
-     "sources": [
-      "S-ISMP-HAM-2024",
       "L-ROCURONIUM"
      ]
     }
