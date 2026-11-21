@@ -68,8 +68,7 @@ function Shell() {
 }
 function ScopedShell() {
   const { userId } = useAuth();
-  // Remounting the state provider on account transitions makes it impossible to
-  // show a different user's local notes/bookmarks after sign-out or account switch.
-  return <AppProvider key={userId ?? "guest"} accountId={userId}><Shell /></AppProvider>;
+  // Swap the isolated progress cache while keeping Expo Router's navigation stack mounted.
+  return <AppProvider accountId={userId}><Shell /></AppProvider>;
 }
 export default function RootLayout() { return <AuthProvider><ScopedShell /></AuthProvider>; }
