@@ -2953,6 +2953,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0a62eacb7cc32821",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MIDAZOLAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-08": [
@@ -2985,6 +2999,20 @@
    {
     "hash": "3199b22c39ca8472",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e0493fb20f7e4a8a",
+    "recorded": "2026-11-21",
     "evidence_status": "partial",
     "sources": [
      "L-DEXMEDETOMIDINE",
@@ -3203,6 +3231,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f1fd1c8d41f43523",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ROCURONIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-13": [
@@ -3235,6 +3277,20 @@
    {
     "hash": "b73b9c7bd46848d4",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CISATRACURIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "55115da32b38d60d",
+    "recorded": "2026-11-21",
     "evidence_status": "partial",
     "sources": [
      "L-CISATRACURIUM",
@@ -4941,6 +4997,20 @@
    {
     "hash": "02b4c6e1ee8a5220",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-SUCCINYLCHOLINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "dce655a8c40ba2db",
+    "recorded": "2026-11-21",
     "evidence_status": "partial",
     "sources": [
      "L-SUCCINYLCHOLINE",
