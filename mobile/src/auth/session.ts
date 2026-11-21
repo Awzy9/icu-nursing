@@ -1,10 +1,11 @@
 import type { Session, SupabaseClient } from "@supabase/supabase-js";
 import { isRecentlyAuthenticated, mapDeletionError, type DeletionError } from "@icu/schemas/account-deletion";
 
-export type SignInError = "invalid" | "captcha" | "rate" | "network" | "unconfirmed" | "generic";
+export type SignInError = "invalid" | "captcha" | "rate" | "network" | "unconfirmed" | "weak" | "generic";
 export function mapSignInError(e: { code?: string; message?: string; status?: number } | null | undefined): SignInError {
   const m = `${e?.code ?? ""} ${e?.message ?? ""}`.toLowerCase();
   if (/captcha/.test(m)) return "captcha";
+  if (/weak_password|password.*weak|password.*short/.test(m)) return "weak";
   if (/invalid[_ ]login|invalid credentials|invalid_credentials/.test(m)) return "invalid";
   if (/email[_ ]not[_ ]confirmed/.test(m)) return "unconfirmed";
   if (e?.status === 429 || /rate|too many|over_.*_rate_limit/.test(m)) return "rate";
@@ -15,6 +16,8 @@ const EMAIL = /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/;
 
 export interface SessionManager {
   signIn(email: string, password: string, captchaToken: string): Promise<{ ok: true } | { ok: false; error: SignInError | "input" }>;
+  signUp(input: { email: string; password: string; displayName: string; locale: "en" | "ar"; captchaToken: string; redirectTo: string }): Promise<{ ok: true; confirmationRequired: boolean } | { ok: false; error: SignInError | "input" }>;
+  updatePassword(password: string): Promise<{ ok: true } | { ok: false; error: SignInError | "input" }>;
   requestPasswordReset(email: string, captchaToken: string, redirectTo: string): Promise<{ ok: boolean }>;
   exchangeCallback(code: string): Promise<{ ok: boolean }>;
   current(): Promise<Session | null>;
@@ -34,6 +37,26 @@ export function createSessionManager(client: SupabaseClient, opts: { now?: () =>
     async signIn(email, password, captchaToken) {
       if (!EMAIL.test(email.trim()) || password.length < 1 || password.length > 256 || !captchaToken) return { ok: false, error: "input" };
       const { error } = await client.auth.signInWithPassword({ email: email.trim(), password, options: { captchaToken } });
+      return error ? { ok: false, error: mapSignInError(error) } : { ok: true };
+    },
+    async signUp(input) {
+      const { email, password, displayName, locale, captchaToken, redirectTo } = input;
+      if (!EMAIL.test(email.trim()) || password.length < 12 || password.length > 128 || !displayName.trim() || displayName.trim().length > 80 || !captchaToken || !redirectTo.startsWith("nursingmastery://auth/callback")) return { ok: false, error: "input" };
+      const { data, error } = await client.auth.signUp({
+        email: email.trim(),
+        password,
+        options: {
+          captchaToken,
+          emailRedirectTo: redirectTo,
+          data: { display_name: displayName.trim(), preferred_locale: locale },
+        },
+      });
+      if (error) return { ok: false, error: mapSignInError(error) };
+      return { ok: true, confirmationRequired: !data.session };
+    },
+    async updatePassword(password) {
+      if (password.length < 12 || password.length > 128) return { ok: false, error: "input" };
+      const { error } = await client.auth.updateUser({ password });
       return error ? { ok: false, error: mapSignInError(error) } : { ok: true };
     },
     async requestPasswordReset(email, captchaToken, redirectTo) {
