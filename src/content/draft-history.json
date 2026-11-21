@@ -3619,6 +3619,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2d7b3e847267ce1f",
+    "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MAGNESIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-19": [
