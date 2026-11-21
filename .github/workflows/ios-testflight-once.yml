@@ -1,0 +1,73 @@
+name: One-time iOS TestFlight build and submission
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nursing-mastery-ios-testflight
+  cancel-in-progress: false
+
+jobs:
+  build-submit:
+    # A release must be explicitly marked; unrelated main pushes cannot consume EAS builds.
+    if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[ios-testflight]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout merged app source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check Expo authorization before consuming a build
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: |
+          if [ -z "$EXPO_TOKEN" ]; then
+            echo "::error::Missing repository Actions secret EXPO_TOKEN. An Expo access token for awzy9s-team is required; no build was started."
+            exit 1
+          fi
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install repository dependencies
+        run: npm ci
+
+      - name: Install mobile dependencies
+        run: npm run mobile:install
+
+      - name: Authenticate Expo Application Services
+        uses: expo/expo-github-action@v9
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Verify Expo project account
+        working-directory: mobile
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          CI: "1"
+        run: eas whoami
+
+      - name: Build signed iOS app and submit to TestFlight
+        working-directory: mobile
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          CI: "1"
+        run: eas build --platform ios --profile production --auto-submit --non-interactive --wait
+
+      - name: Explain Apple processing
+        run: |
+          echo "EAS finished the production iOS build command with automatic submission."
+          echo "Review the EAS submission and Apple's App Store Connect processing status."
+          echo "This workflow does not submit for public App Store review or release."
