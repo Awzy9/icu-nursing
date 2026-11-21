@@ -103,6 +103,20 @@ describe("clinical evidence corrections — November 2026", () => {
   it("keeps generated draft indexes and history synchronized and never claims human clinical approval", () => {
     const index = JSON.parse(read("src/content/draft-index.json")) as { entries: { key: string; type: string; hash: string; clinically_reviewed: boolean }[] };
     const history = JSON.parse(read("src/content/draft-history.json")) as { entries: Record<string, { hash: string; recorded: string }[]> };
+    for (const [key, filename, type] of [
+      ["SK-17", "content/drafts/skills/SK-17-crrt-circuit-monitoring.json", "skills"],
+      ["EQ-06", "content/drafts/equipment/EQ-06-crrt-systems.json", "equipment"],
+      ["SK-22", "content/drafts/skills/SK-22-infusion-pump-safety.json", "skills"],
+    ] as const) {
+      const source = JSON.parse(read(filename));
+      const entry = index.entries.find((e) => e.key === key && e.type === type) as {hash:string;clinically_reviewed:boolean;gaps:number} | undefined;
+      const hash = createHash("sha256").update(JSON.stringify(source)).digest("hex").slice(0, 16);
+      expect(source.clinically_reviewed).toBe(false);
+      expect(entry?.clinically_reviewed).toBe(false);
+      expect(entry?.hash).toBe(hash);
+      expect(entry?.gaps).toBe(source.gaps.length);
+      expect(history.entries[key]?.at(-1)?.hash).toBe(hash);
+    }
     for (const [key, file] of Object.entries(topics)) {
       const text = read(file);
       expect(text).toContain("clinically_reviewed: false");
