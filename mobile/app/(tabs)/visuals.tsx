@@ -4,6 +4,7 @@ import { useApp } from "../../src/state/app";
 import { Callout, Chip, H1, H2, NavCard, P, Screen, SectionLabel } from "../../src/ui/components";
 import { ModuleVisuals } from "../../src/ui/module-visuals";
 import { ChestLandmarkDiagram } from "../../src/ui/chest-landmark-diagram";
+import { RealImageLearning } from "../../src/ui/real-image-learning";
 import { space } from "../../src/ui/theme";
 
 type Section = "equipment" | "imaging" | "waveforms" | "skills";
@@ -51,6 +52,7 @@ export default function VisualLibrary() {
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
             {EQUIPMENT.map((item) => <Chip key={item.key} label={item.name[ar ? 1 : 0]} selected={equipment === item.key} onPress={() => setEquipment(item.key)} />)}
           </View>
+          {equipment === "EQ-06" ? <RealImageLearning kind="crrt-machine" /> : null}
           <ModuleVisuals moduleKey={equipment} />
           <NavCard href={`/equipment/${equipment}`} title={label("Read the equipment lesson", "اقرأ درس الجهاز")} icon="book" accent="equipment" />
           {equipment === "EQ-04" ? <NavCard href="/infusion-calculator" title={label("Open infusion calculator", "افتح حاسبة التسريب")} icon="pill" accent="medications" /> : null}
@@ -61,9 +63,10 @@ export default function VisualLibrary() {
 
       {section === "imaging" ? (
         <>
+          <RealImageLearning kind="chest-xray" />
           <ChestLandmarkDiagram />
           <H2>{label("Real-image learning examples", "أمثلة تصوير حقيقية للتعلم")}</H2>
-          <P muted>{label("The existing website image catalogue includes a credited bladder ultrasound example. It is presented separately from the original chest anatomy schematic.", "تتضمن صور الموقع صورة موجات فوق صوتية للمثانة مع ذكر المصدر. وتُعرض منفصلة عن الرسم التخطيطي الأصلي للصدر.")}</P>
+          <P muted>{label("Compare the real chest radiograph with the anatomy diagram above. A separate, attributed bladder ultrasound example follows.", "قارن أشعة الصدر الحقيقية بالرسم التشريحي أعلاه. ويليها مثال مستقل لصورة الموجات فوق الصوتية للمثانة مع ذكر مصدرها.")}</P>
           <ModuleVisuals moduleKey="D04-T03" />
           <NavCard href="/topics/D04-T03" title={label("Read the associated clinical topic", "اقرأ الموضوع السريري المرتبط")} icon="book" accent="topics" />
           <Callout tone="info">{label("Educational imaging does not establish a diagnosis. Use actual patient imaging and clinical interpretation in practice.", "الصور التعليمية لا تثبت التشخيص. تُستخدم صور المريض الفعلية والتفسير السريري في الممارسة.")}</Callout>
