@@ -54,6 +54,21 @@ describe("2026-11-21 cardiogenic shock and vasoactive draft safety", () => {
     expect(q6).toContain("must not be substituted as evidence for an IM injection site");
   });
 
+  it("rejects renal-protective dopamine teaching and conflicting extravasation advice", () => {
+    const lesson = read("content/drafts/batch-07/D05-T03-vasopressor-pharmacology-partial.md");
+    expect(lesson).toContain("clinically_reviewed: false");
+    expect(lesson).toContain("S-NICE-NG148-DOPAMINE");
+    expect(lesson).toContain("NICE NG148 explicitly advises against offering low-dose dopamine to treat AKI");
+    expect(lesson).toContain("should not be titrated in response to urine output alone");
+    expect(lesson).toContain("stop delivery through the affected cannula");
+    expect(lesson).not.toContain("notify the prescriber because the dose may need to be reduced");
+    expect(lesson).not.toContain("do not interrupt the infusion without an order");
+    expect(lesson).toContain("distractor also incorrectly equates renal receptor effects with kidney protection");
+    const source = read("sources/source_register.csv");
+    expect(source).toContain("S-NICE-NG148-DOPAMINE,");
+    expect(source).toContain("low-dose dopamine must not be used to treat AKI");
+  });
+
   it("registers new sources transparently with the applicable route and source-access limitations", () => {
     const registry = read("sources/source_register.csv");
     const acc = registry.split("\n").find((r) => r.startsWith("S-ACC-CS-2025,")) ?? "";
