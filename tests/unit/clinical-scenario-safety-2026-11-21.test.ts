@@ -16,6 +16,8 @@ describe("high-risk fictional scenario safety — 2026-11-21", () => {
     expect(sc.steps).toHaveLength(3);
     expect(sc.steps[1].options[0].points).toBe(2);
     expect(sc.steps[1].options[0].feedback).toContain("suspected extravasation is different");
+    expect(sc.sources.some((s: {id:string}) => s.id === "S-SSC-2026")).toBe(true);
+    expect(sc.steps[1].options[0].sources).toContain("S-SSC-2026");
     expect(sc.steps[2].options[0].text).toContain("stop delivery through the affected cannula now");
     expect(sc.steps[2].options[0].feedback).toContain("alternative route");
     expect(sc.steps[2].options[0].feedback).toContain("avoid flushing or removing the catheter");
