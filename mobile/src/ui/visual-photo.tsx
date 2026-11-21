@@ -14,6 +14,7 @@ export function VisualPhoto({ visual, width, hideTeaching = false }: { visual: V
   const { locale, palette } = useApp();
   const { width: screenWidth } = useWindowDimensions();
   const [failed, setFailed] = useState(false);
+  const [retryToken, setRetryToken] = useState(0);
   const lang = locale === "ar" ? 1 : 0;
   const uri = imageUrl(siteBaseUrl(process.env as Record<string, string | undefined>), visual.path);
   const availableWidth = Math.max(180, Math.min(width ?? screenWidth - 72, screenWidth - 72, 440));
@@ -29,13 +30,16 @@ export function VisualPhoto({ visual, width, hideTeaching = false }: { visual: V
       {failed ? (
         <View style={{ padding: space.lg, gap: space.sm, backgroundColor: palette.tint }}>
           <Text style={[type.small, { color: palette.text }]}>{lang === 1 ? "تعذّر تحميل الصورة. يمكن فتحها من المصدر." : "Image could not load. You can open it on the website."}</Text>
+          <Pressable accessibilityRole="button" onPress={() => { setFailed(false); setRetryToken((n) => n + 1); }}>
+            <Text style={[type.small, { color: palette.primary, fontWeight: "700" }]}>{lang === 1 ? "إعادة تحميل الصورة" : "Retry image"}</Text>
+          </Pressable>
           <Pressable accessibilityRole="link" onPress={() => Linking.openURL(uri)}>
             <Text style={[type.small, { color: palette.primary, fontWeight: "700" }]}>{lang === 1 ? "عرض الصورة" : "Open image"}</Text>
           </Pressable>
         </View>
       ) : (
         <View style={{ width: imageWidth, height: imageHeight, alignSelf: "center" }}>
-          <Image source={{ uri }} accessibilityLabel={hideTeaching ? (lang === 1 ? "صورة جهاز لاختبار التعرّف البصري" : "Clinical equipment photo for visual-identification practice") : visual.alt[lang]} onError={() => setFailed(true)} style={{ width: imageWidth, height: imageHeight }} resizeMode="contain" />
+          <Image key={retryToken} source={{ uri }} accessibilityLabel={hideTeaching ? (lang === 1 ? "صورة جهاز لاختبار التعرّف البصري" : "Clinical equipment photo for visual-identification practice") : visual.alt[lang]} onError={() => setFailed(true)} style={{ width: imageWidth, height: imageHeight }} resizeMode="contain" />
           {visual.coveredForPrivacy ? (
             <Svg width={imageWidth} height={imageHeight} style={{ position: "absolute", top: 0, left: 0 }} pointerEvents="none">
               <Polygon points={scalePoints(COVER_POINTS, imageWidth, imageHeight)} fill="#1e293b" />
