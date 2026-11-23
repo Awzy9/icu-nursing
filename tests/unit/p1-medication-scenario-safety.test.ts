@@ -8,6 +8,8 @@ const combined = (item: { sections: Record<string, { items: { text: string }[] }
 const norepi = medication("MD-01-norepinephrine.json");
 const epi = medication("MD-02-epinephrine.json");
 const potassium = medication("MD-19-potassium-chloride.json");
+const phenylephrine = medication("MD-30-phenylephrine.json");
+const dopamine = medication("MD-31-dopamine.json");
 const sepsis = load("content/drafts/scenarios/SC-01-septic-shock.json");
 
 describe("P1 medication and simulation safety consistency", () => {
@@ -26,6 +28,19 @@ describe("P1 medication and simulation safety consistency", () => {
     expect(text).toMatch(/stop administration through that catheter/i);
     expect(text).toMatch(/alternative-access plan/i);
     expect(epi.sources.some((s: { id: string }) => s.id === "S-UIC-EXTRA-2026")).toBe(true);
+  });
+
+  it("protects the site in dopamine and phenylephrine extravasation without blanket stopping all vasoactive support", () => {
+    const dopamineText = combined(dopamine);
+    const phenylephrineText = combined(phenylephrine);
+    expect(dopamineText).not.toContain("do not stop or interrupt the infusion without an instruction");
+    for (const text of [dopamineText, phenylephrineText]) {
+      expect(text).toMatch(/stop (?:delivery|administration) through the (?:affected|compromised)/i);
+      expect(text).toMatch(/alternative (?:authorised |vascular )?access|alternative-access/i);
+    }
+    for (const obj of [dopamine, phenylephrine]) {
+      expect(obj.sources.some((s: { id: string }) => s.id === "S-UIC-EXTRA-2026")).toBe(true);
+    }
   });
 
   it("uses a high-alert potassium formulation safeguard and avoids a drug dosing protocol", () => {
@@ -49,12 +64,12 @@ describe("P1 medication and simulation safety consistency", () => {
   });
 
   it("keeps every revised item a clinical draft with no reviewer sign-off", () => {
-    for (const obj of [norepi, epi, potassium, sepsis]) {
+    for (const obj of [norepi, epi, potassium, phenylephrine, dopamine, sepsis]) {
       expect(obj.status).toBe("DRAFT");
       expect(obj.clinically_reviewed).toBe(false);
       expect(obj.clinical_reviewers).toEqual([]);
       expect(obj.banner).toContain("NOT clinically reviewed");
     }
-    for (const obj of [norepi, epi, potassium]) expect(obj.pharmacist_reviewed).toBe(false);
+    for (const obj of [norepi, epi, potassium, phenylephrine, dopamine]) expect(obj.pharmacist_reviewed).toBe(false);
   });
 });
