@@ -82,6 +82,18 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
     expect(eligibleForProduction([entry], { ...demoRegister, approvals: [fakeApproval, fakeApproval] }, fakeIndex).allowed).toHaveLength(0);
   });
 
+  it("isolates all browser preview builds from the production publication path", () => {
+    for (const configPath of ["playwright.working.config.ts", "playwright.accounts.config.ts"]) {
+      const config = readFileSync(configPath, "utf8");
+      expect(config, configPath).toContain('CONTENT_EDITION:"working"');
+      expect(config, configPath).toContain('NEXT_PUBLIC_APP_ENV:"staging"');
+    }
+    const accounts = readFileSync("playwright.accounts.config.ts", "utf8");
+    expect(accounts).toContain('VERCEL_ENV:"preview"');
+    const gate = readFileSync("src/lib/working/publication-policy.ts", "utf8");
+    expect(gate).toContain('env.VERCEL_ENV === "production"');
+  });
+
   it("enforces a publication check at both build time and request time", () => {
     const builder = readFileSync("scripts/build-working-content.ts", "utf8");
     const server = readFileSync("src/lib/working/index.ts", "utf8");
