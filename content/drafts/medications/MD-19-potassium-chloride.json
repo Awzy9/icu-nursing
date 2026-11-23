@@ -1,261 +1,292 @@
 {
- "med_id": "MD-19",
- "number": 19,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Potassium chloride",
- "drug_class": "Electrolyte replacement",
- "category": "insulin-electrolytes-fluids",
- "high_alert": true,
- "high_alert_note": "Intravenous potassium is high-risk under the NSW Clinical Excellence Commission safety standard; ISMP's 2024 high-alert list specifically names potassium chloride for injection CONCENTRATE. This entry's original US label concerns a concentrated ready-to-use premixed product, not an undiluted concentrate vial. Product-specific safeguards differ. External ISMP/NSW classification references are documented in the separate evidence report; medication instructions cite only appropriate US label sources.",
- "summary": "Parenteral potassium for potassium deficiency when oral replacement is not feasible. The label read is a highly concentrated ready-to-use product intended for fluid-restricted patients. Nursing focus: preventing potassium intoxication, cardiac and potassium monitoring and patients predisposed to hyperkalaemia.",
- "batch": 2,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-POTASSIUM",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-POTASSIUM",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-19",
+  "number": 19,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Potassium chloride",
+  "drug_class": "Electrolyte replacement",
+  "category": "insulin-electrolytes-fluids",
+  "high_alert": true,
+  "high_alert_note": "Intravenous potassium is high-risk under the NSW Clinical Excellence Commission safety standard; ISMP's 2024 high-alert list specifically names potassium chloride for injection CONCENTRATE. This entry's original US label concerns a concentrated ready-to-use premixed product, not an undiluted concentrate vial. Product-specific safeguards differ. External ISMP/NSW classification references are documented in the separate evidence report; medication instructions cite only appropriate US label sources.",
+  "summary": "Parenteral potassium for potassium deficiency when oral replacement is not feasible. The label read is a highly concentrated ready-to-use product intended for fluid-restricted patients. Nursing focus: preventing potassium intoxication, cardiac and potassium monitoring and patients predisposed to hyperkalaemia.",
+  "batch": 2,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-POTASSIUM",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-POTASSIUM",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-DAILYMED-KCL-CONC-2026",
+      "read": "partial",
+      "use": "Jan 2026 Hospira concentrate-vial US label: fatal direct-injection risk, pharmacy-controlled preparation required; contrasted with original ready-to-use label"
+    },
+    {
+      "id": "S-NHS-SPS-HYPO-2024",
+      "read": "partial",
+      "use": "UK NHS SPS clinical pharmacy article (2024), hypokalaemia and potassium-safety sections reviewed; no replacement regimens/doses."
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates potassium chloride injection for treatment of potassium deficiency states when oral replacement is not feasible; the product read is highly concentrated and ready-to-use for fluid-restricted patients.",
+          "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Confirm the product and presentation against the order, because this product is highly concentrated and must not be infused rapidly.",
+          "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "Check whether supplied potassium is a ready-to-use premix or a concentrate requiring pharmacy-controlled preparation; verify label, route, order, required monitoring and local independent-check policy. Never treat an IV potassium concentrate vial as an ordinary flush.",
+          "support": "partial",
+          "sources": [
+            "L-POTASSIUM",
+            "S-DAILYMED-KCL-CONC-2026"
+          ]
+        },
+        {
+          "text": "Before any replacement is given, review the latest potassium result and trend, magnesium, kidney function and urine output with the responsible team; confirm the prescribed product and IV route, and verify that a concentrate vial is never mistaken for a ready-to-use infusion.",
+          "support": "partial",
+          "sources": [
+            "S-NHS-SPS-HYPO-2024",
+            "L-POTASSIUM",
+            "S-DAILYMED-KCL-CONC-2026"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Patients needing highly concentrated solutions should be kept on continuous cardiac monitoring with frequent testing of serum potassium.",
+          "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "For low potassium, recognize new weakness or arrhythmia symptoms and assess the prescribed ECG and electrolyte monitoring, including magnesium. Escalate unexpectedly rising potassium or reduced renal clearance during replacement rather than treating a single result in isolation.",
+          "support": "partial",
+          "sources": [
+            "S-NHS-SPS-HYPO-2024",
+            "L-POTASSIUM"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "To avoid potassium intoxication, do not infuse these solutions rapidly.",
+          "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "Give with extreme caution, if at all, in patients predisposed to hyperkalaemia, such as severe renal impairment, acute dehydration, extensive tissue injury or burns, certain cardiac disorders and potassium-aggravated muscle channelopathies.",
+          "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "Use caution in patients at risk of hyperosmolality or acidosis and in those taking medicines that can raise potassium.",
+          "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "Dangerous formulation mix-ups: a potassium chloride injection CONCENTRATE vial is not a premixed ready-to-use infusion. Direct injection or IV flush administration of concentrate can cause fatal cardiac arrest; concentrate vials require controlled pharmacy-approved preparation before use. Never apply vial-specific handling instructions indiscriminately to labelled ready-to-use premixed bags.",
+          "support": "partial",
+          "sources": [
+            "S-DAILYMED-KCL-CONC-2026",
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "Intravenous potassium is high-risk: prevent accidental bolus administration, distinguish it from look-alike IV fluids, use a rate-limiting infusion device with verified order/settings according to local policy, and urgently escalate unclear products, pump settings or sudden rhythm changes.",
+          "support": "partial",
+          "sources": [
+            "L-POTASSIUM",
+            "S-FDA-PUMP"
+          ]
+        },
+        {
+          "text": "Never administer potassium chloride concentrate as an IV push or flush. Use the institution's controlled preparation and smart-pump checking process, distinguish premixed from concentrate products, and seek pharmacist confirmation if the formulation or route is unclear.",
+          "support": "partial",
+          "sources": [
+            "S-DAILYMED-KCL-CONC-2026",
+            "S-NHS-SPS-HYPO-2024"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists adverse reactions from postmarketing reports; their frequency cannot be estimated reliably.",
+          "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Escalate immediately for rhythm changes, muscle weakness, a rising potassium result or any infusion-site problem.",
+          "support": "partial",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product check, second-person checks, cardiac monitoring, potassium results and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
-  },
-  {
-   "id": "S-DAILYMED-KCL-CONC-2026",
-   "read": "partial",
-   "use": "Jan 2026 Hospira concentrate-vial US label: fatal direct-injection risk, pharmacy-controlled preparation required; contrasted with original ready-to-use label"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Check the product, concentration label and route against the order.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-POTASSIUM"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Keep the patient on continuous cardiac monitoring during highly concentrated therapy.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-POTASSIUM"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review serum potassium results frequently.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-POTASSIUM"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report rhythm changes or a rising potassium immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-POTASSIUM"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record product checks and monitoring.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    }
+  ],
+  "gaps": [
+    "Dosing, concentrations, maximum rates and preparation: deliberately not included.",
+    "Other potassium chloride presentations remain out of scope for dosing/preparation; concentrate-vial hazards and formulation differences are now covered as a safety warning, not a preparation guide.",
+    "UK SPS hypokalaemia-monitoring and potassium-safety guidance is now incorporated qualitatively; no specific replacement doses, rates, concentrations, intervals or local preparation/compounding protocol is provided."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms.",
+    "NHS SPS 2024 hypokalaemia advice paraphrased only; reuse and jurisdictional relevance must be assessed before clinical publication."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-15",
+    "set_id": "092ddee4-572d-4771-8d95-880cea01097e",
+    "label_version": "15",
+    "effective_time": "20260109",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label indicates potassium chloride injection for treatment of potassium deficiency states when oral replacement is not feasible; the product read is highly concentrated and ready-to-use for fluid-restricted patients.",
-     "support": "sourced",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Confirm the product and presentation against the order, because this product is highly concentrated and must not be infused rapidly.",
-     "support": "sourced",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    },
-    {
-     "text": "Check whether supplied potassium is a ready-to-use premix or a concentrate requiring pharmacy-controlled preparation; verify label, route, order, required monitoring and local independent-check policy. Never treat an IV potassium concentrate vial as an ordinary flush.",
-     "support": "partial",
-     "sources": [
-      "L-POTASSIUM",
-      "S-DAILYMED-KCL-CONC-2026"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Patients needing highly concentrated solutions should be kept on continuous cardiac monitoring with frequent testing of serum potassium.",
-     "support": "sourced",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "To avoid potassium intoxication, do not infuse these solutions rapidly.",
-     "support": "sourced",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    },
-    {
-     "text": "Give with extreme caution, if at all, in patients predisposed to hyperkalaemia, such as severe renal impairment, acute dehydration, extensive tissue injury or burns, certain cardiac disorders and potassium-aggravated muscle channelopathies.",
-     "support": "sourced",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    },
-    {
-     "text": "Use caution in patients at risk of hyperosmolality or acidosis and in those taking medicines that can raise potassium.",
-     "support": "sourced",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    },
-    {
-     "text": "Dangerous formulation mix-ups: a potassium chloride injection CONCENTRATE vial is not a premixed ready-to-use infusion. Direct injection or IV flush administration of concentrate can cause fatal cardiac arrest; concentrate vials require controlled pharmacy-approved preparation before use. Never apply vial-specific handling instructions indiscriminately to labelled ready-to-use premixed bags.",
-     "support": "partial",
-     "sources": [
-      "S-DAILYMED-KCL-CONC-2026",
-      "L-POTASSIUM"
-     ]
-    },
-    {
-     "text": "Intravenous potassium is high-risk: prevent accidental bolus administration, distinguish it from look-alike IV fluids, use a rate-limiting infusion device with verified order/settings according to local policy, and urgently escalate unclear products, pump settings or sudden rhythm changes.",
-     "support": "partial",
-     "sources": [
-      "L-POTASSIUM",
-      "S-FDA-PUMP"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists adverse reactions from postmarketing reports; their frequency cannot be estimated reliably.",
-     "support": "sourced",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate immediately for rhythm changes, muscle weakness, a rising potassium result or any infusion-site problem.",
-     "support": "partial",
-     "sources": [
-      "L-POTASSIUM"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product check, second-person checks, cardiac monitoring, potassium results and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Check the product, concentration label and route against the order.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-POTASSIUM"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Keep the patient on continuous cardiac monitoring during highly concentrated therapy.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-POTASSIUM"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Review serum potassium results frequently.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-POTASSIUM"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report rhythm changes or a rising potassium immediately.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-POTASSIUM"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record product checks and monitoring.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Dosing, concentrations, maximum rates and preparation: deliberately not included.",
-  "Other potassium chloride presentations remain out of scope for dosing/preparation; concentrate-vial hazards and formulation differences are now covered as a safety warning, not a preparation guide.",
-  "Potassium safeguards and hyperkalaemia guideline text were not used for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-15",
-  "set_id": "092ddee4-572d-4771-8d95-880cea01097e",
-  "label_version": "15",
-  "effective_time": "20260109",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }
