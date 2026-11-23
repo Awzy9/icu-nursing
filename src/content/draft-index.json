@@ -2387,7 +2387,7 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "YELLOW",
+     "licence_class": "UNVERIFIED",
      "verified": "2026-11-23"
     }
    ],
@@ -2427,7 +2427,7 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "YELLOW",
+     "licence_class": "UNVERIFIED",
      "verified": "2026-11-23"
     }
    ],
@@ -3037,7 +3037,7 @@
     },
     {
      "id": "S-NHS-SPS-HYPO-2024",
-     "licence_class": "YELLOW",
+     "licence_class": "UNVERIFIED",
      "verified": "2026-11-23"
     },
     {
