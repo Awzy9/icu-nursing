@@ -2756,6 +2756,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "9047d3b42304d859",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-02": [
@@ -2809,6 +2824,21 @@
      "S-RCP-NEWS2"
     ],
     "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "0f5325f961c4b748",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 4,
     "required_sources": 0,
     "issues": 0
    }
@@ -3920,6 +3950,22 @@
      "S-AHRQ-TS",
      "S-DAILYMED-KCL-CONC-2026",
      "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "2146fe3f171d604f",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-POTASSIUM",
+     "S-AHRQ-TS",
+     "S-DAILYMED-KCL-CONC-2026",
+     "S-FDA-PUMP",
+     "S-NHS-SPS-HYPO-2024",
      "S-RCP-NEWS2"
     ],
     "gaps": 3,
@@ -5810,6 +5856,20 @@
      "S-SSC-2026"
     ],
     "gaps": 5,
+    "required_sources": 4,
+    "issues": 0
+   },
+   {
+    "hash": "8414693a706c785e",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 6,
     "required_sources": 4,
     "issues": 0
    }
