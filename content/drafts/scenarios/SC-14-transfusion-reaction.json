@@ -96,11 +96,11 @@
       ],
       "options": [
         {
-          "text": "Stop the suspected transfusion reaction, urgently assess the patient and vital signs, notify the clinical team and blood bank, recheck patient/component identity, and maintain IV access without pushing blood remaining in the implicated tubing into the patient. Preserve the product and set as directed by local policy.",
+          "text": "Stop the transfusion immediately if a reaction is suspected, urgently assess the patient and vital signs, notify the clinical team and blood bank, recheck patient/component identity, and maintain IV access without pushing blood remaining in the implicated tubing into the patient. Preserve the product and set as directed by local policy.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "An ISBT educational module supports stopping the suspected transfusion reaction, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment.",
+          "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment.",
           "consequence": "Transfusion is stopped; the patient and IV access are assessed, the team is notified, and the blood product and set are retained according to the reaction protocol.",
           "support": "partial",
           "sources": [
