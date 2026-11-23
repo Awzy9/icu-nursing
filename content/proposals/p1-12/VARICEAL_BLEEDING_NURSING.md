@@ -57,3 +57,7 @@ Haematemesis in a patient with cirrhosis or known portal hypertension raises con
 
 ## Required publication sign-off
 Hepatologist + GI endoscopist + intensivist/airway clinician + ICU nurse educator + transfusion and pharmacy review; reconcile exact Baveno VIII text and ASGE 2026, antimicrobial/vasoactive prescribing and local blood policies; scenario peer review and source licence; explicit staff publication gate. **Stay unpublished.**
+
+
+## Batch 14 cross-module safety check (2026-11-23)
+For cirrhotic patients with bleeding and high INR, do **not** treat the INR as an automatic plasma prescription or a stand-alone measure of bleeding severity. See `content/proposals/p1-14/COAGULOPATHY_LIVER_TRAUMA_DIC.md` for explicit differentiation from trauma coagulopathy and septic DIC. AASLD and EASL specifically caution against routine prophylactic INR correction in cirrhosis; **active haemorrhage still needs team-directed emergency resuscitation and blood-bank assessment**. Relevant citations: https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/peri-procedural-management-bleeding-risk-cirrhosis and https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902033-X/fulltext . Reuse rights and clinical review remain open.
