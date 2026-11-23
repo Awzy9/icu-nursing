@@ -67,7 +67,11 @@ export function buildWorkingContent(root = "."): WorkingEntry[] {
 }
 if (process.argv[1]?.endsWith("build-working-content.ts")) {
   const entries = buildWorkingContent();
-  if (isProductionWorkingRelease(process.env)) {
+  if (isProductionWorkingRelease({
+    CONTENT_EDITION: process.env.CONTENT_EDITION,
+    NEXT_PUBLIC_APP_ENV: process.env.NEXT_PUBLIC_APP_ENV,
+    VERCEL_ENV: process.env.VERCEL_ENV,
+  })) {
     const gate = checkProductionPublication(entries);
     if (!gate.ready) {
       throw new Error(
