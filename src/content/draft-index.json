@@ -954,7 +954,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "dd8d59a03c0478a0"
+   "hash": "3bb722c8fb8daa67"
   },
   {
    "key": "D04-T08",
@@ -4551,20 +4551,20 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-UKKA-HK-2026-07",
-     "licence_class": "YELLOW",
-     "verified": null
-    },
-    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 6,
+   "gaps": 8,
    "required_sources": 3,
-   "hash": "43b36cf405649d27"
+   "hash": "62421d199036abb4"
   },
   {
    "key": "SC-12",
