@@ -28,7 +28,7 @@ describe("P1 chest-drain and pneumothorax nursing recognition — batch 06", () 
     expect(s).toMatch(/specialist-led/i);
   });
 
-  it("teaches bouncing/absent swinging as context-dependent, not absolute proof of an obstruction", () => {
+  it("teaches bubbling/absent swinging as context-dependent, not absolute proof of an obstruction", () => {
     const s = items(drain.sections);
     expect(s).toMatch(/absence of swinging may occur after lung re-expansion/i);
     expect(s).toMatch(/obstruction/i);
