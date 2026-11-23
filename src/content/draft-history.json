@@ -1335,6 +1335,18 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "02924562438aceb6",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D05-T01": [
@@ -1509,6 +1521,20 @@
    {
     "hash": "39a734a0c0705f44",
     "recorded": "2026-11-20",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "1c86af5c443095be",
+    "recorded": "2026-11-23",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AACN-ALARM-2018",
@@ -2124,6 +2150,22 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "78af25c7efb5013a",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-BSH-ATR",
+     "S-FDA-COI-2024",
+     "S-ISBT-ATR-EDU",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-10": [
@@ -2340,6 +2382,21 @@
     "sources": [
      "N-AHS-CRRT-ALARM-2025",
      "N-BAXTER-PRISMAFLEX",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "6cf5423be5681f6d",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "N-LHSC-CRRT-PRINCIPLES",
      "S-CHS-CRRT",
      "S-KDIGO-AKI-2012"
     ],
