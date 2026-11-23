@@ -391,6 +391,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ADA-HOSP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-ESICM-EEN-2017",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -414,7 +419,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "e77a5cab1baee6ad"
+   "hash": "757c5391a004307f"
   },
   {
    "key": "D01-T12",
@@ -4477,9 +4482,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 2,
-   "hash": "23eca93ecdb2ba8d"
+   "hash": "ce8258430fc5c630"
   },
   {
    "key": "SC-10",
@@ -4501,15 +4506,20 @@
      "verified": null
     },
     {
+     "id": "S-ADA-HOSP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 4,
-   "required_sources": 3,
-   "hash": "6cedc2554cfa8b98"
+   "gaps": 5,
+   "required_sources": 4,
+   "hash": "ba42a1a850a6584c"
   },
   {
    "key": "SC-11",
