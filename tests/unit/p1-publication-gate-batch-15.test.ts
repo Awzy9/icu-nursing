@@ -13,6 +13,8 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
   it("never confuses enabling the educational preview with a clinically approved production release", () => {
     expect(isProductionWorkingRelease({ CONTENT_EDITION: "working", NEXT_PUBLIC_APP_ENV: "staging" })).toBe(false);
     expect(isProductionWorkingRelease({ CONTENT_EDITION: "working", NEXT_PUBLIC_APP_ENV: "production" })).toBe(true);
+    expect(isProductionWorkingRelease({ CONTENT_EDITION: "working" })).toBe(true);
+    expect(isProductionWorkingRelease({ CONTENT_EDITION: "working", NEXT_PUBLIC_APP_ENV: "staging", VERCEL_ENV: "production" })).toBe(true);
     expect(register.schema_version).toBe(1);
     expect(register.approvals).toEqual([]);
     expect(register.lab_approvals).toEqual([]);
@@ -74,10 +76,10 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
   it("enforces a publication check at both build time and request time", () => {
     const builder = readFileSync("scripts/build-working-content.ts", "utf8");
     const server = readFileSync("src/lib/working/index.ts", "utf8");
-    expect(builder).toContain('process.env.NEXT_PUBLIC_APP_ENV === "production"');
+    expect(builder).toContain("isProductionWorkingRelease(process.env)");
     expect(builder).toContain("checkProductionPublication(entries)");
     expect(builder).toContain("REFUSING production build of unapproved clinical working catalog");
-    expect(server).toContain('process.env.NEXT_PUBLIC_APP_ENV !== "production"');
+    expect(server).toContain("!isProductionWorkingRelease(process.env)");
     expect(server).toContain("checkProductionPublication(loadCatalog()).ready");
     expect(server).toContain("Missing register, generated catalog or clinical review must fail closed");
   });
