@@ -2,6 +2,7 @@
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { parseQuestions, type WorkingEntry } from "../src/lib/working/model";
+import { checkProductionPublication } from "../src/lib/working/publication-gate";
 const label = (s: string) => s.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 const omitted = new Set(["support", "read", "points", "next", "id", "key", "critical", "position", "original_graphic", "alt_text_needed"]);
 function prose(value: unknown, depth = 3): string {
@@ -65,6 +66,18 @@ export function buildWorkingContent(root = "."): WorkingEntry[] {
 }
 if (process.argv[1]?.endsWith("build-working-content.ts")) {
   const entries = buildWorkingContent();
+  if (process.env.CONTENT_EDITION === "working" && process.env.NEXT_PUBLIC_APP_ENV === "production") {
+    const gate = checkProductionPublication(entries);
+    if (!gate.ready) {
+      throw new Error(
+        "REFUSING production build of unapproved clinical working catalog: " +
+        gate.catalogBlocked + " entries blocked, " + gate.assetsBlocked.length +
+        " interactive datasets blocked. No human approvals have been inferred. " +
+        "Use an isolated staging environment for clearly labelled drafts, " +
+        "or complete the independent clinical, publisher, and source-rights review."
+      );
+    }
+  }
   writeFileSync("content/working-catalog.json", JSON.stringify(entries));
   console.log(`Built working edition: ${entries.length} entries; ${entries.filter((e) => e.type === "questions").reduce((n, e) => n + e.questionCount, 0)} questions`);
 }
