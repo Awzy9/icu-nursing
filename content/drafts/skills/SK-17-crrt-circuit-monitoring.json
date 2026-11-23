@@ -33,12 +33,18 @@
       "id": "S-CHS-CRRT",
       "read": "not_read",
       "use": "hospital procedure: not accessed"
+    },
+    {
+      "id": "N-LHSC-CRRT-PRINCIPLES",
+      "read": "partial",
+      "use": "London Health Sciences Centre: clotting surveillance, TMP and filter pressure-drop concepts; relevant paragraphs read 2026-11-23. Centre-specific values and procedures excluded."
     }
   ],
   "objectives": [
     "Know the prescription and check that delivered treatment matches it.",
     "Respond to circuit alarms by checking the patient first and using the device's own instructions.",
-    "Know when to return blood, stop treatment, document and notify the prescriber."
+    "Know when to return blood, stop treatment, document and notify the prescriber.",
+    "Explain why the trend in transmembrane pressure and pressure drop matters more than treating an isolated reading as a universal alarm threshold."
   ],
   "prerequisites": [
     "Acute kidney injury",
@@ -126,6 +132,13 @@
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
           ]
+        },
+        {
+          "text": "The transmembrane-pressure (TMP) trend reflects pressure across the filter membrane. A rising trend may indicate membrane fouling or clotting, but flow changes and effluent-line obstruction can also affect it. Interpret the trend with the patient's condition, machine history and local operator guidance; do not diagnose a specific cause from TMP alone.",
+          "support": "partial",
+          "sources": [
+            "N-LHSC-CRRT-PRINCIPLES"
+          ]
         }
       ]
     },
@@ -146,6 +159,14 @@
           "text": "Monitor haemodynamics, temperature, fluid balance, electrolytes, acid-base results and bleeding.",
           "support": "partial",
           "sources": [
+            "S-KDIGO-AKI-2012"
+          ]
+        },
+        {
+          "text": "At comparable therapy settings, track filter-pressure drop and TMP over time, together with delivered treatment, downtime and catheter function. Do not transfer this centre's machine-specific numerical alarm values to another CRRT device.",
+          "support": "partial",
+          "sources": [
+            "N-LHSC-CRRT-PRINCIPLES",
             "S-KDIGO-AKI-2012"
           ]
         }
@@ -240,19 +261,29 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "monitoring",
+      "text": "Recognise and document unexpected trends in TMP and filter-pressure drop, check the patient and treatment context, and escalate using the unit's device-specific procedure.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "N-LHSC-CRRT-PRINCIPLES"
+      ]
     }
   ],
   "gaps": [
     "The alarm pathway is specific to one device family (PrisMax) and one health service; it is not a cross-manufacturer standard.",
     "The manufacturer's operator's manuals were located but not read: Baxter's Prismaflex 7.xx manual URL now redirects to the Vantive site, and software versions differ by unit.",
-    "Priming, citrate monitoring, drug dosing, weaning and filter-life management: not covered.",
+    "Priming, citrate monitoring, drug dosing, weaning and device-specific filter-change thresholds are not covered; only pressure-trend concepts are introduced.",
     "KDIGO 2026 update is a draft; the 2012 guideline is over ten years old.",
     "Full ASH HIT probability-assessment algorithm and locally approved anticoagulant alternatives require clinician and pharmacist review; no stand-alone nursing stop/titrate protocol is taught."
   ],
   "permissions": [
     "AHS pathway: licence not stated on the file; verify before reproducing.",
     "Manufacturer documentation: reproduction permission required.",
-    "KDIGO: verify reuse terms."
+    "KDIGO: verify reuse terms.",
+    "LHSC clinical teaching page: no figures, local thresholds or operator sequences reproduced; verify commercial reuse rights."
   ],
   "references": [
     {
@@ -298,6 +329,17 @@
       "read": "not_read",
       "licence_class": "RED (unverified)",
       "permission_required": "Verify"
+    },
+    {
+      "id": "N-LHSC-CRRT-PRINCIPLES",
+      "title": "Principles of CRRT - monitor for clotting",
+      "publisher": "London Health Sciences Centre, Critical Care Trauma Centre",
+      "version": "Hospital educational page, accessed 2026-11-23; not a multi-centre device guideline",
+      "url": "https://www.lhsc.on.ca/critical-care-trauma-centre/principles-of-crrt",
+      "accessed": "2026-11-23",
+      "read": "partial",
+      "licence_class": "YELLOW (verify)",
+      "permission_required": "Verify before reproduction"
     }
   ]
 }
