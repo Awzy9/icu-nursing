@@ -26,6 +26,7 @@ A ventilator alarm tells you something may be wrong with the patient, the airway
 4. Explain why extreme alarm limits and routinely silencing alarms are unsafe.
 5. Describe what to do when a ventilator reports a technical fault.
 6. Separate nursing from respiratory therapist, prescriber and biomedical engineering roles, and state what is not covered.
+7. Reassess the patient and airway after an alarm using AARC patient-ventilator assessment domains, without confusing routine assessment with device troubleshooting.
 
 ## 3. Why this matters in ICU nursing
 Alarms may signal a blocked or displaced airway, a disconnection, a leak, a change in the patient's lungs or effort, or a machine fault. Too many non-actionable alarms lead staff to silence or ignore them. The HAMILTON-C1 manual itself notes that short transient changes in oxygen saturation can generate frequent alarms that do not need clinical action, and offers a short configurable delay to reduce such nuisance alarms; a unit's alarm configuration is a safety decision.
@@ -48,6 +49,15 @@ The Dräger Evita Infinity V500 manual (software 2.n, an older model now listed 
 - During the **O₂ enrichment** function (used for pre- and post-oxygenation around suctioning) oxygen alarms are suppressed.
 - The pulse oximetry alarm delay (up to 15 seconds) is a configuration option to reduce nuisance alarms.
 
+## 6c. Reassessment after the immediate alarm response (AARC PVA 2024)
+The 2024 AARC patient-ventilator assessment guideline is a **routine assessment** guideline, **not** a manufacturer-neutral alarm troubleshooting algorithm. Once the patient is stable and an authorised team member has addressed the immediate alarm, use it to structure follow-up assessment and handover:
+- Reassess the adequacy of ventilation and the monitored tidal volume, PEEP/auto-PEEP and oxygen delivery in the context of the prescribed strategy; plateau pressure and driving pressure are relevant when available and assessed by trained personnel.
+- Check whether an artificial airway remains appropriately placed and secured; assess the surrounding skin, interface or tracheostomy dressing, and the chosen humidification approach.
+- For an artificial airway cuff, the guideline recommends assessment with a manometer, but does **not** recommend continuous cuff-pressure assessment as a means of reducing ventilator-associated pneumonia.
+- Record changes from the patient's pre-alarm clinical state and the ventilator observations that prompted escalation. The prescriber/respiratory therapist sets or modifies ventilator strategy within the organisation's authorised protocol.
+
+Do not infer from these recommendations that a nurse should change ventilator settings, silence alarms, adjust alarm thresholds or perform machine-specific troubleshooting without local authorisation. This paragraph paraphrases the guideline's recommendations; it is not a reproduced checklist or manufacturer procedure.
+
 ## 7. Nursing responsibilities
 - **Respond to every alarm** by going to the patient. Do not rely on silencing as a response.
 - **Secure ventilation first:** if the patient is not being ventilated adequately and the cause is not immediately correctable, use the unit's emergency ventilation method (for example a manual resuscitation bag) and call for help; the manual's technical-fault instruction to provide alternative ventilation reflects this, and the equipment to use is local policy.
@@ -61,6 +71,8 @@ The Dräger Evita Infinity V500 manual (software 2.n, an older model now listed 
 
 ## 8. Monitoring parameters
 Patient: respiratory rate and effort, SpO₂, end-tidal CO₂ if used, heart rate and rhythm, blood pressure, consciousness and distress, chest movement, colour. Airway and circuit: tube position and securement, cuff, connections, leaks, water, secretions. Ventilator: alarm messages and priority, monitored pressures and volumes, set limits, power and gas supply indicators, event or alarm history per the device. Frequency is by unit policy.
+
+After stabilization, the AARC 2024 patient-ventilator assessment domains also include lung-protective ventilation measures (monitored tidal volume and plateau pressure), PEEP/auto-PEEP, oxygen delivery, humidification, airway securement, interface-related skin and cuff assessment by manometer when clinically indicated. Settings remain within team-approved roles.
 
 ## 9. Important findings – what the sources state
 | Item | Statement (paraphrased) | Source | Applicability |
