@@ -42,3 +42,7 @@ A nursing-level module for an injured adult with suspected major haemorrhage, in
 
 ## Publication gate
 Trauma surgeon, ICU nurse educator, neurocritical care specialist, haematology/transfusion and pharmacy reviewers; check local target and source licence; validate answer options and prevent publication of unreviewed drafts. **Do not merge or deploy clinical content.**
+
+
+## Batch 13 safety and physiology update — 2026-11-23
+See `content/proposals/p1-13/TRAUMA_SHOCK_TRANSFUSION_NEUROTRAUMA.md` for a separate, unpublished module on severe TBI as an **exception** to a blanket permissive-hypotension approach and on temperature/ionised-calcium surveillance during major transfusion. The European **2023 sixth-edition** trauma guideline's targeted brain injury and ionised-calcium monitoring passages were rechecked directly: https://pmc.ncbi.nlm.nih.gov/articles/PMC9977110/ . This summary is **not** a source for nurse-set blood pressure targets, product ratios, calcium doses, TXA, transfusion components, device settings or viscoelastic interpretation. Professional review of local trauma, blood-bank and neurocritical pathways remains mandatory. **No publication.**
