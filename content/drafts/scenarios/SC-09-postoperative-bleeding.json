@@ -65,8 +65,8 @@
     },
     {
       "id": "S-ARUP-DIC",
-      "read": "full",
-      "use": "ARUP Consult reference-laboratory DIC educational page, last updated Jan 2025; trends, underlying disease and limits of single tests, not a postoperative haemorrhage guideline."
+      "read": "partial",
+      "use": "ARUP Consult reference-laboratory DIC educational page, updated January 2025; targeted HTML sections on clinical context, trends and limits of single tests inspected on 2026-11-23, not an ICU postoperative haemorrhage guideline."
     },
     {
       "id": "S-ISTH-DIC-2025",
