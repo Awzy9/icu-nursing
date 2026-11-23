@@ -4594,6 +4594,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "b8c4b2536436fc0e",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-31": [
@@ -4648,6 +4663,21 @@
      "S-RCP-NEWS2"
     ],
     "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "6a0328e1f6c7bef2",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOPAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 4,
     "required_sources": 0,
     "issues": 0
    }
