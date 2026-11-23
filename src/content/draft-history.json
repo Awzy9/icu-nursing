@@ -1016,6 +1016,25 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "e8c6eb36c8997ec1",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D05-T16": [
@@ -1140,6 +1159,21 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "0416333470df778a",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-SBT",
+     "S-ATS-CHEST-2017",
+     "S-ATS-NIRS-2026",
+     "S-PERIEXT-2026",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D02-T02": [
@@ -1230,6 +1264,20 @@
     "recorded": "2026-11-21",
     "evidence_status": "stated_in_text",
     "sources": [
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "dd8d59a03c0478a0",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NHS-SPS-HYPO-2024",
      "S-OPENRN-FUND-CH15",
      "S-PK-SAFEGUARDS-2026",
      "S-UKKA-HK-2026"
