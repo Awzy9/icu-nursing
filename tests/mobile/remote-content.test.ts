@@ -219,7 +219,7 @@ describe("content client: online", () => {
 describe("content client: offline / error handling", () => {
   it("falls back to the cached copy when the network request fails", async () => {
     const store = mem();
-    await store.set("icu.content.v1:catalog:all", JSON.stringify([{ key: "CACHED", type: "topics", title: "t", category: "c", questionCount: 0 }]));
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:catalog:all", JSON.stringify([{ key: "CACHED", type: "topics", title: "t", category: "c", questionCount: 0 }]));
     const fetcher = vi.fn(async () => { throw new Error("network down"); });
     const r = await fetchCatalogList({ store, fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
     expect(r).toEqual({ status: "ok", fromCache: true, data: [{ key: "CACHED", type: "topics", title: "t", category: "c", questionCount: 0 }] });
@@ -227,7 +227,7 @@ describe("content client: offline / error handling", () => {
 
   it("falls back to the cached copy on a non-2xx HTTP response", async () => {
     const store = mem();
-    await store.set("icu.content.v1:entry:D01-T19", JSON.stringify({ key: "D01-T19", type: "topics", title: "t", category: "c", body: "b", questionCount: 0 }));
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:entry:D01-T19", JSON.stringify({ key: "D01-T19", type: "topics", title: "t", category: "c", body: "b", questionCount: 0 }));
     const fetcher = vi.fn(async () => jsonResponse({ error: "not_found" }, false));
     const r = await fetchCatalogEntry({ store, fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" }, "D01-T19");
     expect(r.status).toBe("ok");
@@ -247,4 +247,65 @@ describe("content client: offline / error handling", () => {
     const r = await fetchCatalogList({ store, fetcher: fetcher as unknown as typeof fetch, baseUrl: "https://x" });
     expect(r).toEqual({ status: "offline" });
   }, 15000);
+});
+
+
+describe("clinical publication withdrawal and offline cache isolation", () => {
+  const list = [{ key: "D01-T19", type: "topics", title: "Clinical draft", category: "ICU", questionCount: 0 }];
+  const depsFor = (store: KeyValueStore, fetcher: typeof fetch, baseUrl = "https://x"): ContentClientDeps => ({ store, fetcher, baseUrl });
+  const disabled = ({ ok: false, status: 404, json: async () => ({ error: "content_edition_disabled" }) }) as Response;
+  const disconnected = vi.fn(async () => { throw new Error("network down"); }) as unknown as typeof fetch;
+
+  it("invalidates previously cached lessons and labs for the whole site after explicit publication denial", async () => {
+    const store = mem();
+    const online = vi.fn(async () => jsonResponse({ version: "v1", items: list })) as unknown as typeof fetch;
+    expect((await fetchCatalogList(depsFor(store, online))).status).toBe("ok");
+    const oldEntry = { key: "D01-T19", type: "topics", title: "Old", category: "ICU", body: "draft", questionCount: 0 };
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:entry:D01-T19", JSON.stringify(oldEntry));
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:lab:ecg", JSON.stringify([{ key: "old" }]));
+
+    const rejected = await fetchCatalogList(depsFor(store, vi.fn(async () => disabled) as unknown as typeof fetch));
+    expect(rejected).toEqual({ status: "offline" });
+    expect(await store.get("icu.content.v2:https%3A%2F%2Fx:generation")).toBe("1");
+    expect(await fetchCatalogList(depsFor(store, disconnected))).toEqual({ status: "offline" });
+    expect(await fetchCatalogEntry(depsFor(store, disconnected), "D01-T19")).toEqual({ status: "offline" });
+    expect(await fetchLabDataset(depsFor(store, disconnected), "ecg")).toEqual({ status: "offline" });
+  });
+
+  it("a fresh, valid response caches only in the new generation; older draft contents remain unreachable", async () => {
+    const store = mem();
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:catalog:all", JSON.stringify(list));
+    await fetchCatalogList(depsFor(store, vi.fn(async () => disabled) as unknown as typeof fetch));
+    const newList = [{ ...list[0]!, title: "Fresh approved revision" }];
+    const fetched = await fetchCatalogList(depsFor(store, vi.fn(async () => jsonResponse({ version: "v2", items: newList })) as unknown as typeof fetch));
+    expect(fetched).toEqual({ status: "ok", fromCache: false, data: newList });
+    expect(await fetchCatalogList(depsFor(store, disconnected))).toEqual({ status: "ok", fromCache: true, data: newList });
+    expect(await store.get("icu.content.v2:https%3A%2F%2Fx:0:catalog:all")).not.toBeNull();
+  });
+
+  it("normal network errors still use an origin-scoped cache, never data from another host", async () => {
+    const store = mem();
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:catalog:all", JSON.stringify(list));
+    expect(await fetchCatalogList(depsFor(store, disconnected, "https://x"))).toEqual({ status: "ok", fromCache: true, data: list });
+    expect(await fetchCatalogList(depsFor(store, disconnected, "https://another.example"))).toEqual({ status: "offline" });
+  });
+
+  it("a per-module not_found is distinct from a site-wide content_edition_disabled and preserves valid offline fallback", async () => {
+    const store = mem();
+    const entry = { key: "D01-T19", type: "topics", title: "t", category: "c", body: "b", questionCount: 0 };
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:entry:D01-T19", JSON.stringify(entry));
+    const missing = vi.fn(async () => ({ ok: false, status: 404, json: async () => ({ error: "not_found" }) }) as Response) as unknown as typeof fetch;
+    expect(await fetchCatalogEntry(depsFor(store, missing), "D01-T19")).toEqual({ status: "ok", fromCache: true, data: entry });
+    expect(await store.get("icu.content.v2:https%3A%2F%2Fx:generation")).toBeNull();
+  });
+
+  it("an explicit 403 revokes previous cache, including when the denial occurs on exam picking", async () => {
+    const store = mem();
+    await store.set("icu.content.v2:https%3A%2F%2Fx:0:catalog:all", JSON.stringify(list));
+    const forbidden = vi.fn(async () => ({ ok: false, status: 403, json: async () => ({ error: "forbidden" }) }) as Response) as unknown as typeof fetch;
+    const result = await pickExamQuestions(depsFor(store, forbidden), ["ICU"], 10);
+    expect(result).toEqual({ status: "offline" });
+    expect(await store.get("icu.content.v2:https%3A%2F%2Fx:generation")).toBe("1");
+    expect(await fetchCatalogList(depsFor(store, disconnected))).toEqual({ status: "offline" });
+  });
 });
