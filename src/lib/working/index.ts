@@ -3,13 +3,14 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { WorkingEntry } from "./model";
 import { checkProductionPublication } from "./publication-gate";
+import { isProductionWorkingRelease } from "./publication-policy";
 export type { WorkingEntry } from "./model";
 // A preview disclaimer is not a publication permission. Staging/local working
 // editions remain unchanged; a production working edition MUST have human
 // approval and licensed, hash-pinned content for every entry and lab dataset.
 export const workingEditionEnabled = () => {
   if (process.env.CONTENT_EDITION !== "working") return false;
-  if (process.env.NEXT_PUBLIC_APP_ENV !== "production") return true;
+  if (!isProductionWorkingRelease(process.env)) return true;
   try {
     return checkProductionPublication(loadCatalog()).ready;
   } catch {
