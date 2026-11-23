@@ -2027,9 +2027,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 0,
-   "hash": "57bec681362acf01"
+   "hash": "3172dc65a86599fb"
   },
   {
    "key": "SK-14",
@@ -4306,6 +4306,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "N-NCBI-OPENRN-CHEST",
+     "licence_class": "GREEN",
+     "verified": null
+    },
+    {
      "id": "S-AARC-O2",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -4332,9 +4337,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
-   "required_sources": 2,
-   "hash": "71c3605c5e21a531"
+   "gaps": 6,
+   "required_sources": 3,
+   "hash": "44a34277c93954e3"
   },
   {
    "key": "SC-06",
