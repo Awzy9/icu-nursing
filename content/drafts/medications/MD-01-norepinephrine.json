@@ -1,280 +1,303 @@
 {
- "med_id": "MD-01",
- "number": 1,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Norepinephrine",
- "drug_class": "Catecholamine vasopressor",
- "category": "vasoactives-inotropes",
- "high_alert": true,
- "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
- "summary": "Vasopressor used to raise blood pressure in adults with severe, acute hypotension. Nursing focus: infusion-site and tissue protection, avoiding abrupt interruption, and rhythm and pressure monitoring.",
- "batch": 1,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-NOREPINEPHRINE",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-NOREPINEPHRINE",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-01",
+  "number": 1,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Norepinephrine",
+  "drug_class": "Catecholamine vasopressor",
+  "category": "vasoactives-inotropes",
+  "high_alert": true,
+  "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
+  "summary": "Vasopressor used to raise blood pressure in adults with severe, acute hypotension. Nursing focus: infusion-site and tissue protection, avoiding abrupt interruption, and rhythm and pressure monitoring.",
+  "batch": 1,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-NOREPINEPHRINE",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-NOREPINEPHRINE",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-UIC-EXTRA-2026",
+      "read": "partial",
+      "use": "UIC clinical-pharmacy educational review (Sept 2026), selected extravasation-response discussion; not a dose/antidote protocol; first-response summary only."
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label describes norepinephrine as a catecholamine indicated to raise blood pressure in adults with severe, acute hypotension.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        }
+      ]
+    },
+    "administration_considerations": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label advises infusing into a large vein, because extravasation can cause local tissue necrosis through vasoconstriction.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Check the infusion site and surrounding tissue for signs of extravasation or ischaemia, and report them at once.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Avoid unnecessary interruptions of a functioning norepinephrine infusion because abrupt cessation can cause marked hypotension. **If extravasation is suspected, do not continue infusing through the compromised catheter**: stop delivery at that site, assess and urgently escalate, and coordinate safe alternative access to maintain ordered haemodynamic support under the local emergency protocol.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE",
+            "S-UIC-EXTRA-2026"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Frequency of blood pressure, heart rate and rhythm checks follows the unit's vasoactive infusion protocol.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "Check the infusion site frequently for free flow and watch for signs of extravasation; the label advises infusing into a large vein.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "The label calls for cardiac monitoring in patients with underlying heart disease or arrhythmias, and for watching the skin of the extremities in susceptible patients.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "During peripheral use, inspect the access site and surrounding skin for pain, swelling, pallor or blanching and any change in patency; apply the organisation's documented frequency and escalation pathway rather than assuming one universal safe duration or access location.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE",
+            "S-UIC-EXTRA-2026"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Tissue ischaemia: avoid extravasation into the tissues because local necrosis can follow; management of an extravasation, including any infiltration treatment, is a prescriber or protocol decision.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Sudden cessation of the infusion may cause marked hypotension (label warning).",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Cardiac arrhythmias and allergic reactions are listed among the label's warnings and precautions.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists tissue ischaemia, hypotension after abrupt discontinuation and cardiac arrhythmias as the serious adverse reactions described in its warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "The most common adverse reactions are hypertension and bradycardia; the label also lists ischaemic injury, anxiety, transient headache, respiratory difficulty and pulmonary oedema, and extravasation necrosis at the injection site.",
+          "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Suspected peripheral extravasation is an exception to avoiding unnecessary interruption: stop delivery through the affected cannula, call the responsible team and pharmacy immediately, assess haemodynamic status and site changes, and arrange clinician-directed alternative vascular access for essential vasopressor support. Do not force-flush or automatically remove the catheter before the unit's extravasation procedure is followed.",
+          "support": "partial",
+          "sources": [
+            "S-UIC-EXTRA-2026",
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Escalate promptly for suspected extravasation, new arrhythmia, falling blood pressure or an interrupted infusion.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the infusion site checks, haemodynamic readings, pump checks and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "communication": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Use a structured handover (SBAR) when escalating.",
+          "support": "partial",
+          "sources": [
+            "S-AHRQ-TS"
+          ]
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Inspect the infusion site and surrounding skin for blanching, coolness or swelling.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-NOREPINEPHRINE"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Monitor blood pressure, heart rate and rhythm at the unit's frequency.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "observe",
+      "text": "Keep the infusion running; do not interrupt it without an instruction.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-NOREPINEPHRINE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report suspected extravasation, arrhythmia or falling pressure immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NOREPINEPHRINE"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record site checks, pump checks and responses.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    }
+  ],
+  "gaps": [
+    "Dosing, concentration, line and compatibility information are deliberately not included.",
+    "Clinical practice guidelines (for example Surviving Sepsis) were not read for this entry.",
+    "Central versus peripheral administration, site-check frequency, line compatibility and safe duration require institution-specific protocol; initial extravasation response is outlined but no complete drug-specific treatment protocol is given."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms.",
+    "UIC extravasation education: independent paraphrase only; no tables/antidote administration algorithms reproduced; verify commercial reuse rights."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "5fbd0e3b-703b-412e-8b71-bd0a0dbf4500",
+    "label_version": "1",
+    "effective_time": "20261016",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label describes norepinephrine as a catecholamine indicated to raise blood pressure in adults with severe, acute hypotension.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  "administration_considerations": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label advises infusing into a large vein, because extravasation can cause local tissue necrosis through vasoconstriction.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Check the infusion site and surrounding tissue for signs of extravasation or ischaemia, and report them at once.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Do not stop or interrupt the infusion without an instruction from the prescriber or protocol.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Frequency of blood pressure, heart rate and rhythm checks follows the unit's vasoactive infusion protocol.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "Check the infusion site frequently for free flow and watch for signs of extravasation; the label advises infusing into a large vein.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "The label calls for cardiac monitoring in patients with underlying heart disease or arrhythmias, and for watching the skin of the extremities in susceptible patients.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Tissue ischaemia: avoid extravasation into the tissues because local necrosis can follow; management of an extravasation, including any infiltration treatment, is a prescriber or protocol decision.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Sudden cessation of the infusion may cause marked hypotension (label warning).",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Cardiac arrhythmias and allergic reactions are listed among the label's warnings and precautions.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists tissue ischaemia, hypotension after abrupt discontinuation and cardiac arrhythmias as the serious adverse reactions described in its warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "The most common adverse reactions are hypertension and bradycardia; the label also lists ischaemic injury, anxiety, transient headache, respiratory difficulty and pulmonary oedema, and extravasation necrosis at the injection site.",
-     "support": "sourced",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate promptly for suspected extravasation, new arrhythmia, falling blood pressure or an interrupted infusion.",
-     "support": "partial",
-     "sources": [
-      "L-NOREPINEPHRINE"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the infusion site checks, haemodynamic readings, pump checks and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "communication": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Use a structured handover (SBAR) when escalating.",
-     "support": "partial",
-     "sources": [
-      "S-AHRQ-TS"
-     ]
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Inspect the infusion site and surrounding skin for blanching, coolness or swelling.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-NOREPINEPHRINE"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Monitor blood pressure, heart rate and rhythm at the unit's frequency.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "observe",
-   "text": "Keep the infusion running; do not interrupt it without an instruction.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-NOREPINEPHRINE"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report suspected extravasation, arrhythmia or falling pressure immediately.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-NOREPINEPHRINE"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record site checks, pump checks and responses.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Dosing, concentration, line and compatibility information are deliberately not included.",
-  "Clinical practice guidelines (for example Surviving Sepsis) were not read for this entry.",
-  "Central versus peripheral administration policy: unit decision."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "5fbd0e3b-703b-412e-8b71-bd0a0dbf4500",
-  "label_version": "1",
-  "effective_time": "20261016",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }
