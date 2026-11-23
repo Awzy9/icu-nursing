@@ -3,6 +3,7 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { parseQuestions, type WorkingEntry } from "../src/lib/working/model";
 import { checkProductionPublication } from "../src/lib/working/publication-gate";
+import { isProductionWorkingRelease } from "../src/lib/working/publication-policy";
 const label = (s: string) => s.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 const omitted = new Set(["support", "read", "points", "next", "id", "key", "critical", "position", "original_graphic", "alt_text_needed"]);
 function prose(value: unknown, depth = 3): string {
@@ -66,7 +67,7 @@ export function buildWorkingContent(root = "."): WorkingEntry[] {
 }
 if (process.argv[1]?.endsWith("build-working-content.ts")) {
   const entries = buildWorkingContent();
-  if (process.env.CONTENT_EDITION === "working" && process.env.NEXT_PUBLIC_APP_ENV === "production") {
+  if (isProductionWorkingRelease(process.env)) {
     const gate = checkProductionPublication(entries);
     if (!gate.ready) {
       throw new Error(
