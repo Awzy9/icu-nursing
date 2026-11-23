@@ -1,6 +1,6 @@
 ---
 topic_id: D04-T09
-title: Continuous renal replacement therapy (CRRT) in AKI – principles and nursing implications (machine and circuit management not covered)
+title: Continuous renal replacement therapy (CRRT) in AKI – principles and introductory circuit monitoring
 domain: Renal and Metabolic Care
 learner_level: transitioning
 status: DRAFT
@@ -9,12 +9,12 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["KDIGO Clinical Practice Guideline for Acute Kidney Injury, 2012 (Kidney Int Suppl 2012;2:1-138), Section 5 Dialysis Interventions for Treatment of AKI – an international guideline, now more than ten years old; a 2026 update exists only as a public-review DRAFT and is not used"]
-sources: [S-KDIGO-AKI-2012]
+sources: [S-KDIGO-AKI-2012, N-LHSC-CRRT-PRINCIPLES]
 sources_not_read: [S-KDIGO-AKI]
-independently_written_note: "Original wording. The KDIGO 2012 guideline PDF was downloaded and its Section 5 recommendation statements (5.1 timing, 5.2 stopping, 5.3 anticoagulation, 5.4 vascular access, 5.5 membranes, 5.6 modality, 5.7 buffer and fluids, 5.8 dose) were read in the summary of recommendations; the supporting rationale text, other chapters, and the figures were not read. KDIGO addresses prescribing and system decisions: it does NOT cover CRRT machine set-up, priming, circuit and filter management, alarms, clotting troubleshooting, citrate monitoring, temperature management, drug dosing during CRRT, or nursing handover, and no manufacturer documentation was accessible, so none of that is taught or implied. The guideline's numeric dose targets (effluent volume, Kt/V) are deliberately not quoted under the platform's no-dosing rule. KDIGO copyright and reuse terms were not checked; paraphrase only."
+independently_written_note: "Original wording. The KDIGO 2012 guideline PDF was downloaded and its Section 5 recommendation statements (5.1 timing, 5.2 stopping, 5.3 anticoagulation, 5.4 vascular access, 5.5 membranes, 5.6 modality, 5.7 buffer and fluids, 5.8 dose) were read in the summary of recommendations; the supporting rationale text, other chapters, and the figures were not read. KDIGO addresses prescribing and system decisions, not CRRT machine operation. The independent LHSC hospital teaching page was consulted on 2026-11-23 for limited qualitative concepts about transmembrane pressure and pressure-drop trends (a local educational resource, not a cross-manufacturer standard). This draft does not teach machine set-up, priming, alarm settings, treatment adjustments, citrate management or medication doses. The guideline's numeric dose targets (effluent volume, Kt/V) are deliberately not quoted under the platform's no-dosing rule. KDIGO copyright and reuse terms were not checked; paraphrase only."
 ---
-# Continuous renal replacement therapy (CRRT) in AKI – principles and nursing implications (machine and circuit management not covered)
-> DRAFT – NOT clinically reviewed. AI-generated. Based on the 2012 KDIGO AKI guideline (prescribing-level statements). The bedside machine, circuit and alarm skills that CRRT nurses need are NOT covered because no source for them was accessible.
+# Continuous renal replacement therapy (CRRT) in AKI – principles and introductory circuit monitoring
+> DRAFT – NOT clinically reviewed. AI-generated. KDIGO 2012 informs prescribing principles; selected filter-pressure concepts come from a single hospital teaching resource. This is NOT a CRRT operating procedure, device-specific alarm guide or competency sign-off.
 
 ## 1. Overview
 Renal replacement therapy (RRT) replaces kidney function in AKI. CRRT runs slowly and continuously and is one of the modalities KDIGO describes. KDIGO's Section 5 gives recommendations on when to start and stop RRT, anticoagulation, dialysis catheter access, membranes, choice between continuous and intermittent therapy, buffer and fluid quality, and dose. Decisions on whether, when and how to give RRT belong to the nephrologist or intensivist; the nurse's role in CRRT is to manage the patient and the delivery at the bedside. Because KDIGO is a prescribing guideline, this draft explains what the recommendations mean for nursing observation and safety, not how to operate a machine.
@@ -26,6 +26,7 @@ Renal replacement therapy (RRT) replaces kidney function in AKI. CRRT runs slowl
 4. Describe the KDIGO statements on dialysis catheter insertion and care that affect nursing (ultrasound, chest radiograph before first use, no topical antibiotics or antibiotic locks).
 5. Explain why the delivered dose must be assessed frequently.
 6. Separate nursing, prescriber and pharmacist responsibilities; state clearly what this draft does not cover.
+7. Explain conceptually what changing filter-pressure trends can and cannot establish.
 
 ## 3. Why this matters in ICU nursing
 Patients on CRRT are among the sickest in the ICU. The therapy changes fluid balance, electrolytes, acid–base, drug clearance and bleeding risk continuously, and interruptions mean under-delivery. Nurses see the patient and the machine together and are best placed to notice problems.
@@ -39,8 +40,15 @@ Patients on CRRT are among the sickest in the ICU. The therapy changes fluid bal
 - **Membrane, buffer and fluids.** Biocompatible membrane suggested (2C); bicarbonate rather than lactate buffer is suggested in AKI (2C), recommended in circulatory shock (1B), suggested in liver failure or lactic acidaemia (2B); dialysis and replacement fluids should at least comply with AAMI standards for bacteria and endotoxin (1B).
 - **Dose.** The dose to be delivered should be prescribed before starting each session (not graded), and KDIGO recommends frequent assessment of the **actual delivered dose** in order to adjust the prescription (1B). It also states goals of electrolyte, acid–base, solute and fluid balance that meet the patient's needs. Its numeric dose targets are not quoted here.
 
+## 6b. Introductory circuit-monitoring concepts (LHSC local teaching page; NOT machine instructions)
+- **Transmembrane pressure (TMP)** reflects the pressure difference across the dialysis membrane. Under comparable flow conditions, a rising trend may suggest protein accumulation, membrane fouling or clotting; it is not a specific diagnosis or an instruction to change the filter.
+- **Pressure drop across the filter** is another trend clinicians may use when considering blood-path resistance. Do not infer filter clotting from a single reading; the flow rate, current prescription, access and return lines and other alarms influence interpretation.
+- **A sudden change** in these trends requires timely patient and circuit assessment with a trained CRRT operator. The LHSC page mentions possible effluent-line obstruction and changes in flow as alternative explanations for changing TMP. The nurse should document the observations and escalate under the local protocol, rather than blindly clearing alarms or altering pump settings.
+- **Applicability:** the LHSC web page reflects a specific centre and its equipment. Its numerical alarm thresholds, access manoeuvres, priming, anticoagulation and prescribed treatment changes are deliberately NOT taught here. For device-specific concepts see skill draft SK-17; actual bedside actions require the unit's current approved procedure and manufacturer manual.
+
 ## 7. Nursing responsibilities (implications; not instructions for operating a machine)
 - **Know the prescription** (modality, dose, fluid balance goal, anticoagulation) and check that the delivered treatment matches it; report interruptions and under-delivery because KDIGO recommends frequent assessment of the delivered dose.
+- **Recognise and communicate pressure trends** (TMP and filter-pressure drop) alongside patient status, therapy settings, delivered treatment and downtime; do not use borrowed numerical thresholds or undertake unsupervised CRRT troubleshooting (LHSC educational source; see section 6b).
 - **Check access before use:** make sure the chest radiograph required after internal jugular or subclavian catheter placement has been done and reviewed before first use, as KDIGO recommends; report if it is missing.
 - **Catheter care:** follow the unit's dialysis catheter care policy; KDIGO suggests no topical antibiotics at the site and no antibiotic locks for non-tunnelled catheters in ICU, so do not add them without an order. Infection prevention content is in D06-T04.
 - **Anticoagulation safety:** know which anticoagulant is ordered; monitor for bleeding and the coagulation tests ordered; **if HIT is considered likely on urgent clinical probability assessment or is confirmed, escalate immediately for discontinuation of *all* heparin sources, including circuit anticoagulation, line flushes and catheter locks, and for clinician-directed alternative anticoagulation.** A platelet fall alone does not confirm HIT. Current ASH guidance distinguishes low-probability suspected HIT (where empiric heparin discontinuation is generally not recommended) from intermediate/high-probability cases; the treating team applies the diagnostic pathway and orders. A local protocol determines the implementation and replacement product, **not whether heparin flushes count as heparin exposure.**
@@ -50,7 +58,7 @@ Patients on CRRT are among the sickest in the ICU. The therapy changes fluid bal
 - **Not covered and flagged:** machine set-up, priming, connecting and disconnecting, circuit and filter clotting, alarms and troubleshooting, citrate and ionised-calcium monitoring, temperature loss, drug dosing changes during CRRT, nutrition, family communication, equipment-specific training. These require manufacturer documentation and clinical review.
 
 ## 8. Monitoring parameters
-Haemodynamics; temperature; urine output (if any) and net fluid balance against the prescription; electrolytes (potassium, calcium, phosphate, magnesium), acid–base and glucose as ordered; coagulation tests and platelet count as ordered; bleeding; mental state; dialysis catheter site and function; downtime and delivered dose; alarms.
+Haemodynamics; temperature; urine output (if any) and net fluid balance against the prescription; electrolytes (potassium, calcium, phosphate, magnesium), acid–base and glucose as ordered; coagulation tests and platelet count as ordered; bleeding; mental state; dialysis catheter site and function; downtime and delivered dose; alarm history; trends in TMP and filter-pressure drop at comparable settings, interpreted by a trained operator.
 
 ## 9. Important findings – KDIGO 2012 Section 5 statements
 | Topic | Statement (paraphrased) | Grade | Limit |
@@ -164,11 +172,14 @@ D. Checking that the catheter site is clean and dry.
 
 - KDIGO Acute Kidney Injury Work Group. KDIGO Clinical Practice Guideline for Acute Kidney Injury. Kidney Int Suppl. 2012;2(1):1-138. Section 5 (recommendations 5.1.1–5.8.4), summary of recommendation statements. https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf (accessed 2026-11-14). Copyright held by KDIGO and the publisher; paraphrased only.
 
+- London Health Sciences Centre Critical Care Trauma Centre. *Principles of CRRT*, monitor-for-clotting section (specific centre; relevant text inspected 2026-11-23; not a clinical practice guideline). https://www.lhsc.on.ca/critical-care-trauma-centre/principles-of-crrt (accessed 2026-11-23). Centre-specific figures, settings, thresholds and operating instructions are not reproduced.
+
 ## 19. Local protocol note
 CRRT prescription, machine and circuit procedures, anticoagulation protocol, citrate and calcium monitoring, catheter care, alarm response, who may operate the machine and training requirements follow the hospital's policies and the manufacturer's instructions.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: KDIGO 2012 is an international guideline with graded recommendations, but it is over ten years old, the 2026 update is a draft, and only the summary of recommendation statements for Section 5 was read. It is a prescribing guideline, not a nursing practice guideline.
 - Applicability: adults with AKI; paediatrics not addressed here.
-- Not covered and unresolved: machine, circuit, filter and alarm management; priming; citrate monitoring; temperature; drug dosing during CRRT; nutrition; weaning from CRRT; cleaning and troubleshooting. These need manufacturer documentation and clinical authorship.
+- Now partially covered: qualitative TMP and filter-pressure-drop interpretation from a centre-specific educational page (section 6b), not a validated device-neutral troubleshooting guideline.
+- Not covered and unresolved: device-specific circuit handling and alarm response, priming, line manipulations, citrate/calcium monitoring protocols, temperature management, drug dosing during CRRT, nutrition, weaning, cleaning, filter-change thresholds and troubleshooting. These require device documentation, local policy and independent clinical review.
 - Open questions for reviewers (NEPH, CCP, PH, NE, BN, renal educators): how to teach CRRT machine skills with licensed manufacturer material; HIT and flush policy; checklists for starting and stopping.
