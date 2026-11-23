@@ -74,10 +74,10 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
     };
     const demoRegister = { schema_version: 1, approvals: [fakeApproval] };
     expect(eligibleForProduction([entry], demoRegister, fakeIndex).allowed).toHaveLength(1);
-    expect(eligibleForProduction([entry], demoRegister, { entries: [{ ...fakeIndex.entries[0], hash: "abcdef1234567890" }] }).allowed).toHaveLength(0);
+    expect(eligibleForProduction([entry], demoRegister, { entries: [{ ...fakeIndex.entries[0]!, hash: "abcdef1234567890" }] }).allowed).toHaveLength(0);
     expect(eligibleForProduction([{ ...entry, body: entry.body + "changed" }], demoRegister, fakeIndex).allowed).toHaveLength(0);
     expect(eligibleForProduction([entry], { ...demoRegister, approvals: [{ ...fakeApproval, commercial_use_cleared: false }] }, fakeIndex).allowed).toHaveLength(0);
-    expect(eligibleForProduction([entry], demoRegister, { entries: [{ ...fakeIndex.entries[0], clinically_reviewed: false }] }).allowed).toHaveLength(0);
+    expect(eligibleForProduction([entry], demoRegister, { entries: [{ ...fakeIndex.entries[0]!, clinically_reviewed: false }] }).allowed).toHaveLength(0);
     expect(eligibleForProduction([entry], { ...demoRegister, approvals: [{ ...fakeApproval, publisher_id: fakeApproval.clinical_reviewer_id }] }, fakeIndex).allowed).toHaveLength(0);
     expect(eligibleForProduction([entry], { ...demoRegister, approvals: [fakeApproval, fakeApproval] }, fakeIndex).allowed).toHaveLength(0);
   });
@@ -85,10 +85,10 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
   it("enforces a publication check at both build time and request time", () => {
     const builder = readFileSync("scripts/build-working-content.ts", "utf8");
     const server = readFileSync("src/lib/working/index.ts", "utf8");
-    expect(builder).toContain("isProductionWorkingRelease(process.env)");
+    expect(builder).toContain("isProductionWorkingRelease({");
     expect(builder).toContain("checkProductionPublication(entries)");
     expect(builder).toContain("REFUSING production build of unapproved clinical working catalog");
-    expect(server).toContain("!isProductionWorkingRelease(process.env)");
+    expect(server).toContain("!isProductionWorkingRelease({");
     expect(server).toContain("checkProductionPublication(loadCatalog()).ready");
     expect(server).toContain("Missing register, generated catalog or clinical review must fail closed");
   });
