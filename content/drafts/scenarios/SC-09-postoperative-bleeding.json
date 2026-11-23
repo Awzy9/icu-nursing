@@ -1,309 +1,309 @@
 {
- "scenario_id": "SC-09",
- "number": 9,
- "title": "Postoperative bleeding",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "surgical",
- "difficulty": 3,
- "learning_objectives": [
-  "Recognise possible bleeding after surgery from the dressing, drains, vital signs and skin, and report it promptly.",
-  "Take first-line nursing actions (reinforce the dressing, mark the drainage, stay with the patient) and tell the surgeon how much has been lost.",
-  "Raise anticoagulant doses with the prescriber when bleeding is suspected.",
-  "Support fluids and blood products as ordered, and hand over clearly."
- ],
- "related": {
-  "skills": [
-   "SK-09",
-   "SK-03",
-   "SK-13"
+  "scenario_id": "SC-09",
+  "number": 9,
+  "title": "Postoperative bleeding",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "surgical",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Recognise suspected postoperative haemorrhagic shock from combined physiological and wound/drain changes and escalate immediately.",
+    "Take first-line nursing actions (reinforce the dressing, mark the drainage, stay with the patient) and tell the surgeon how much has been lost.",
+    "Raise anticoagulant doses with the prescriber when bleeding is suspected.",
+    "Support fluids and blood products as ordered, and hand over clearly."
   ],
-  "medications": [
-   "MD-14",
-   "MD-44",
-   "MD-46"
+  "related": {
+    "skills": [
+      "SK-09",
+      "SK-03",
+      "SK-13"
+    ],
+    "medications": [
+      "MD-14",
+      "MD-44",
+      "MD-46"
+    ],
+    "topic_drafts": []
+  },
+  "sources": [
+    {
+      "id": "S-OPENRN-HA-POSTOP",
+      "read": "full",
+      "use": "Open RN Health Alterations 2.5 (Table 2.5c): hemorrhage and cardiovascular compromise: assessment, reinforcing the dressing, marking drainage, notifying the surgeon"
+    },
+    {
+      "id": "S-OPENSTAX-MS-27-3",
+      "read": "partial",
+      "use": "CROSS-CHECK ONLY (non-commercial licence, summarised): drains, urine output, staying with the patient, preparing for possible return to theatre"
+    },
+    {
+      "id": "L-HEPARIN",
+      "read": "full",
+      "use": "FDA label: haemorrhage warnings and monitoring"
+    },
+    {
+      "id": "L-ENOXAPARIN",
+      "read": "full",
+      "use": "FDA label: bleeding warnings"
+    },
+    {
+      "id": "S-OPENRN-ADV-CH3",
+      "read": "partial",
+      "use": "Open RN blood product checklist: used only for the principle of following the blood policy"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
+    }
   ],
-  "topic_drafts": []
- },
- "sources": [
-  {
-   "id": "S-OPENRN-HA-POSTOP",
-   "read": "full",
-   "use": "Open RN Health Alterations 2.5 (Table 2.5c): hemorrhage and cardiovascular compromise: assessment, reinforcing the dressing, marking drainage, notifying the surgeon"
-  },
-  {
-   "id": "S-OPENSTAX-MS-27-3",
-   "read": "partial",
-   "use": "CROSS-CHECK ONLY (non-commercial licence, summarised): drains, urine output, staying with the patient, preparing for possible return to theatre"
-  },
-  {
-   "id": "L-HEPARIN",
-   "read": "full",
-   "use": "FDA label: haemorrhage warnings and monitoring"
-  },
-  {
-   "id": "L-ENOXAPARIN",
-   "read": "full",
-   "use": "FDA label: bleeding warnings"
-  },
-  {
-   "id": "S-OPENRN-ADV-CH3",
-   "read": "partial",
-   "use": "Open RN blood product checklist: used only for the principle of following the blood policy"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
+  "required_sources": [
+    "A national or professional guideline on recognising and managing post-operative bleeding and haemorrhagic shock at nursing level, usable under a commercial licence",
+    "The hospital's major-haemorrhage and transfusion protocols"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "No source read gives numeric thresholds for blood loss or urine output in this context; none are written.",
+    "Fluids, blood products and reversal of anticoagulation are prescribed; the scenario does not say what to give.",
+    "The tranexamic acid label read does not cover surgical bleeding and is not used.",
+    "This case is a nursing recognition and escalation exercise, not a major-haemorrhage algorithm. Exact emergency call thresholds, component availability, coagulation correction and return-to-theatre decisions remain local clinician decisions."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "OpenStax Medical-Surgical Nursing is non-commercial (CC BY-NC-SA); it is used only to cross-check and must be replaced or permitted before any release."
+  ],
+  "setting": "A fictional adult in a fictional intensive care unit six hours after abdominal surgery, receiving an anticoagulant for clot prevention.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "The dressing over the wound is wetter with blood than at the last check. The patient is pale and cold to touch, and the monitor shows a faster pulse and a lower pressure than before.",
+      "prompt": "What do you do first?",
+      "observations": [
+        {
+          "key": "dressing",
+          "label": "Dressing",
+          "value": "More blood than before"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Lower than baseline"
+        },
+        {
+          "key": "hr",
+          "label": "Heart rate",
+          "value": "Faster than baseline"
+        },
+        {
+          "key": "skin",
+          "label": "Skin",
+          "value": "Cold and clammy"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the patient, assess breathing and circulation, call the unit's urgent clinical response for suspected haemorrhagic shock and alert the surgeon promptly. Ask a colleague to quantify wound/drain blood loss and reinforce or mark the dressing without delaying resuscitation assessment.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Blood loss with reduced blood pressure, tachycardia and cool skin may indicate serious postoperative bleeding and shock. The urgent response and bedside assessment take priority over dressing documentation; communicate the wound, drain and physiological trend as the team arrives.",
+          "consequence": "The surgeon is told early, with measurable information, and the team can respond.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-HA-POSTOP",
+            "S-AHRQ-TS"
+          ]
+        },
+        {
+          "text": "Remove the dressing to look at the wound and put on a clean one without telling anyone.",
+          "points": 0,
+          "next": 2,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "The first dressing is normally managed by the surgeon; the nurse reinforces it and reports excessive bleeding rather than hiding it under a clean dressing.",
+          "consequence": "The amount of bleeding is no longer visible to the surgeon and the delay costs time.",
+          "support": "sourced",
+          "sources": [
+            "S-OPENRN-HA-POSTOP"
+          ]
+        },
+        {
+          "text": "Wait for the surgeon's ward round later in the morning and recheck the dressing then.",
+          "points": 0,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Excessive bleeding with changes in the vital signs should prompt medical evaluation at once.",
+          "consequence": "The patient continues to lose blood and becomes more unwell.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-HA-POSTOP",
+            "S-OPENSTAX-MS-27-3"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "The surgeon has been told and is coming. The patient is now more anxious, and the next dose of the anticoagulant is due.",
+      "prompt": "What is the best action now?",
+      "observations": [
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Lower still"
+        },
+        {
+          "key": "anxiety",
+          "label": "Patient",
+          "value": "More anxious"
+        },
+        {
+          "key": "access",
+          "label": "IV access",
+          "value": "Working"
+        },
+        {
+          "key": "due",
+          "label": "Medicines due",
+          "value": "Anticoagulant dose due"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the deteriorating patient, continue haemodynamic assessment, promptly ask the prescriber to reassess the scheduled anticoagulant before it is given, and coordinate the clinical team's ordered investigations, blood products, fluids or theatre transfer with colleagues.",
+          "points": 2,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "Suspected postoperative haemorrhage needs urgent clinician review of anticoagulation as well as bleeding control and resuscitation. A due medication is not an instruction to ignore active deterioration; dose omission, reversal, component selection and resuscitation orders follow an authorised pathway.",
+          "consequence": "The prescriber decides about the anticoagulant with full information, and the team is ready for the next step.",
+          "support": "partial",
+          "sources": [
+            "L-HEPARIN",
+            "L-ENOXAPARIN",
+            "S-OPENRN-HA-POSTOP"
+          ]
+        },
+        {
+          "text": "Give the anticoagulant on time because it is on the chart, and tell the surgeon afterwards.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "An anticoagulant given to a patient who may be bleeding can worsen the haemorrhage; the prescriber must be asked first.",
+          "consequence": "The patient receives a drug that increases the bleeding risk, and the team has to manage the consequence.",
+          "support": "sourced",
+          "sources": [
+            "L-HEPARIN",
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Leave the room to collect blood products you think will be needed.",
+          "points": 1,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "Preparing for blood products is sensible, but not at the cost of leaving a deteriorating patient alone; ask a colleague to help.",
+          "consequence": "The patient is unobserved for several minutes while deteriorating.",
+          "support": "partial",
+          "sources": [
+            "S-OPENSTAX-MS-27-3"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "Fluids and blood products have been ordered, and the team plans to take the patient back to theatre.",
+      "prompt": "What should you do now?",
+      "observations": [
+        {
+          "key": "order",
+          "label": "Orders",
+          "value": "Fluids and blood products prescribed"
+        },
+        {
+          "key": "urine",
+          "label": "Urine output",
+          "value": "Falling"
+        },
+        {
+          "key": "plan",
+          "label": "Plan",
+          "value": "Return to theatre"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Responding slowly"
+        }
+      ],
+      "options": [
+        {
+          "text": "Give the fluids and blood products as ordered following the unit's blood transfusion procedure, keep measuring urine output and vital signs, record the blood lost and what was done, and give an SBAR handover to the theatre team.",
+          "points": 2,
+          "next": null,
+          "scope": "order_or_protocol_required",
+          "feedback": "Replacing volume with fluids or blood products is done as prescribed; fluid status and urine output are monitored, and a structured handover keeps the receiving team informed.",
+          "consequence": "Treatment is safe and traceable, and the theatre team receives a clear account.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-HA-POSTOP",
+            "S-OPENRN-ADV-CH3",
+            "S-AHRQ-TS"
+          ]
+        },
+        {
+          "text": "Start the blood without the second-person identity check because the situation is urgent.",
+          "points": 0,
+          "next": null,
+          "scope": "order_or_protocol_required",
+          "feedback": "Urgency does not remove transfusion safety checks; the unit's blood procedure still applies.",
+          "consequence": "A patient-identification error could cause a serious reaction.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-CH3"
+          ]
+        },
+        {
+          "text": "Stop recording urine output and observations to save time.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "Fluid status and urine output are monitored closely in a patient who is bleeding.",
+          "consequence": "The team loses an important measure of how well the patient is being resuscitated.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-HA-POSTOP"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "Falling pressure, a fast pulse and cool skin with postoperative wound bleeding justify immediate patient-first assessment and urgent response; measuring and marking wound drainage must not delay getting clinical help.",
+      "Do not take the first dressing off and hide the evidence; the surgeon needs to see it.",
+      "Raise any due anticoagulant dose with the prescriber when bleeding is suspected.",
+      "Fluids and blood products are given as ordered with safety checks and close monitoring of urine output; hand over with SBAR."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-09"
+      },
+      {
+        "kind": "medication",
+        "code": "MD-14"
+      },
+      {
+        "kind": "medication",
+        "code": "MD-44"
+      }
+    ]
   }
- ],
- "required_sources": [
-  "A national or professional guideline on recognising and managing post-operative bleeding and haemorrhagic shock at nursing level, usable under a commercial licence",
-  "The hospital's major-haemorrhage and transfusion protocols"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "No source read gives numeric thresholds for blood loss or urine output in this context; none are written.",
-  "Fluids, blood products and reversal of anticoagulation are prescribed; the scenario does not say what to give.",
-  "The tranexamic acid label read does not cover surgical bleeding and is not used."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "OpenStax Medical-Surgical Nursing is non-commercial (CC BY-NC-SA); it is used only to cross-check and must be replaced or permitted before any release."
- ],
- "setting": "A fictional adult in a fictional intensive care unit six hours after abdominal surgery, receiving an anticoagulant for clot prevention.",
- "steps": [
-  {
-   "position": 1,
-   "info": "The dressing over the wound is wetter with blood than at the last check. The patient is pale and cold to touch, and the monitor shows a faster pulse and a lower pressure than before.",
-   "prompt": "What do you do first?",
-   "observations": [
-    {
-     "key": "dressing",
-     "label": "Dressing",
-     "value": "More blood than before"
-    },
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Lower than baseline"
-    },
-    {
-     "key": "hr",
-     "label": "Heart rate",
-     "value": "Faster than baseline"
-    },
-    {
-     "key": "skin",
-     "label": "Skin",
-     "value": "Cold and clammy"
-    }
-   ],
-   "options": [
-    {
-     "text": "Stay with the patient, mark the edge of the blood on the dressing, reinforce it, check the drains and the other observations, and notify the surgeon promptly with how many dressings are saturated and the vital sign changes.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "Post-operative hemorrhage is suspected from blood on the dressing, falling pressure from baseline with a fast pulse and cold, clammy skin; the nurse circles the drainage, reinforces the dressing and tells the surgeon how many dressings were saturated.",
-     "consequence": "The surgeon is told early, with measurable information, and the team can respond.",
-     "support": "sourced",
-     "sources": [
-      "S-OPENRN-HA-POSTOP",
-      "S-OPENSTAX-MS-27-3"
-     ]
-    },
-    {
-     "text": "Remove the dressing to look at the wound and put on a clean one without telling anyone.",
-     "points": 0,
-     "next": 2,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "The first dressing is normally managed by the surgeon; the nurse reinforces it and reports excessive bleeding rather than hiding it under a clean dressing.",
-     "consequence": "The amount of bleeding is no longer visible to the surgeon and the delay costs time.",
-     "support": "sourced",
-     "sources": [
-      "S-OPENRN-HA-POSTOP"
-     ]
-    },
-    {
-     "text": "Wait for the surgeon's ward round later in the morning and recheck the dressing then.",
-     "points": 0,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "Excessive bleeding with changes in the vital signs should prompt medical evaluation at once.",
-     "consequence": "The patient continues to lose blood and becomes more unwell.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-HA-POSTOP",
-      "S-OPENSTAX-MS-27-3"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The surgeon has been told and is coming. The patient is now more anxious, and the next dose of the anticoagulant is due.",
-   "prompt": "What is the best action now?",
-   "observations": [
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Lower still"
-    },
-    {
-     "key": "anxiety",
-     "label": "Patient",
-     "value": "More anxious"
-    },
-    {
-     "key": "access",
-     "label": "IV access",
-     "value": "Working"
-    },
-    {
-     "key": "due",
-     "label": "Medicines due",
-     "value": "Anticoagulant dose due"
-    }
-   ],
-   "options": [
-    {
-     "text": "Stay with the patient, monitor continuously, check the intravenous access is working, tell the prescriber that an anticoagulant dose is due and ask for instructions before giving it, and prepare for fluids, blood products or a return to theatre as ordered.",
-     "points": 2,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "The heparin and enoxaparin labels warn of haemorrhage and bleeding at any site; a due anticoagulant dose in a bleeding patient is raised with the prescriber, and fluids and blood products are given as ordered.",
-     "consequence": "The prescriber decides about the anticoagulant with full information, and the team is ready for the next step.",
-     "support": "partial",
-     "sources": [
-      "L-HEPARIN",
-      "L-ENOXAPARIN",
-      "S-OPENRN-HA-POSTOP",
-      "S-OPENSTAX-MS-27-3"
-     ]
-    },
-    {
-     "text": "Give the anticoagulant on time because it is on the chart, and tell the surgeon afterwards.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "An anticoagulant given to a patient who may be bleeding can worsen the haemorrhage; the prescriber must be asked first.",
-     "consequence": "The patient receives a drug that increases the bleeding risk, and the team has to manage the consequence.",
-     "support": "sourced",
-     "sources": [
-      "L-HEPARIN",
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Leave the room to collect blood products you think will be needed.",
-     "points": 1,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "Preparing for blood products is sensible, but not at the cost of leaving a deteriorating patient alone; ask a colleague to help.",
-     "consequence": "The patient is unobserved for several minutes while deteriorating.",
-     "support": "partial",
-     "sources": [
-      "S-OPENSTAX-MS-27-3"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "Fluids and blood products have been ordered, and the team plans to take the patient back to theatre.",
-   "prompt": "What should you do now?",
-   "observations": [
-    {
-     "key": "order",
-     "label": "Orders",
-     "value": "Fluids and blood products prescribed"
-    },
-    {
-     "key": "urine",
-     "label": "Urine output",
-     "value": "Falling"
-    },
-    {
-     "key": "plan",
-     "label": "Plan",
-     "value": "Return to theatre"
-    },
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Responding slowly"
-    }
-   ],
-   "options": [
-    {
-     "text": "Give the fluids and blood products as ordered following the unit's blood transfusion procedure, keep measuring urine output and vital signs, record the blood lost and what was done, and give an SBAR handover to the theatre team.",
-     "points": 2,
-     "next": null,
-     "scope": "order_or_protocol_required",
-     "feedback": "Replacing volume with fluids or blood products is done as prescribed; fluid status and urine output are monitored, and a structured handover keeps the receiving team informed.",
-     "consequence": "Treatment is safe and traceable, and the theatre team receives a clear account.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-HA-POSTOP",
-      "S-OPENRN-ADV-CH3",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Start the blood without the second-person identity check because the situation is urgent.",
-     "points": 0,
-     "next": null,
-     "scope": "order_or_protocol_required",
-     "feedback": "Urgency does not remove transfusion safety checks; the unit's blood procedure still applies.",
-     "consequence": "A patient-identification error could cause a serious reaction.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-CH3"
-     ]
-    },
-    {
-     "text": "Stop recording urine output and observations to save time.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "Fluid status and urine output are monitored closely in a patient who is bleeding.",
-     "consequence": "The team loses an important measure of how well the patient is being resuscitated.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-HA-POSTOP"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "Blood on the dressing, a pressure below baseline with a fast pulse, and cold, clammy skin suggest bleeding: stay, reinforce, mark the drainage and tell the surgeon how much.",
-   "Do not take the first dressing off and hide the evidence; the surgeon needs to see it.",
-   "Raise any due anticoagulant dose with the prescriber when bleeding is suspected.",
-   "Fluids and blood products are given as ordered with safety checks and close monitoring of urine output; hand over with SBAR."
-  ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-09"
-   },
-   {
-    "kind": "medication",
-    "code": "MD-14"
-   },
-   {
-    "kind": "medication",
-    "code": "MD-44"
-   }
-  ]
- }
 }
