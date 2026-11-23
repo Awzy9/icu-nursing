@@ -16,7 +16,8 @@
     "Recognise suspected postoperative haemorrhagic shock from combined physiological and wound/drain changes and escalate immediately.",
     "Take first-line nursing actions (reinforce the dressing, mark the drainage, stay with the patient) and tell the surgeon how much has been lost.",
     "Raise anticoagulant doses with the prescriber when bleeding is suspected.",
-    "Support fluids and blood products as ordered, and hand over clearly."
+    "Support fluids and blood products as ordered, and hand over clearly.",
+    "Report evolving platelet/coagulation abnormalities alongside blood loss and perfusion without claiming one clotting test establishes a DIC diagnosis or directs component choice."
   ],
   "related": {
     "skills": [
@@ -61,11 +62,22 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-ARUP-DIC",
+      "read": "full",
+      "use": "ARUP Consult reference-laboratory DIC educational page, last updated Jan 2025; trends, underlying disease and limits of single tests, not a postoperative haemorrhage guideline."
+    },
+    {
+      "id": "S-ISTH-DIC-2025",
+      "read": "partial",
+      "use": "ISTH SSC updated DIC definition and scoring 2025, PubMed abstract and 2026 review abstract checked; no scoring algorithm or full tables imported, publisher rights restricted."
     }
   ],
   "required_sources": [
     "A national or professional guideline on recognising and managing post-operative bleeding and haemorrhagic shock at nursing level, usable under a commercial licence",
-    "The hospital's major-haemorrhage and transfusion protocols"
+    "The hospital's major-haemorrhage and transfusion protocols",
+    "Local protocol for emergency-release blood product identification, massive haemorrhage activation, monitoring and postoperative coagulopathy investigations"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
@@ -73,11 +85,13 @@
     "No source read gives numeric thresholds for blood loss or urine output in this context; none are written.",
     "Fluids, blood products and reversal of anticoagulation are prescribed; the scenario does not say what to give.",
     "The tranexamic acid label read does not cover surgical bleeding and is not used.",
-    "This case is a nursing recognition and escalation exercise, not a major-haemorrhage algorithm. Exact emergency call thresholds, component availability, coagulation correction and return-to-theatre decisions remain local clinician decisions."
+    "This case is a nursing recognition and escalation exercise, not a major-haemorrhage algorithm. Exact emergency call thresholds, component availability, coagulation correction and return-to-theatre decisions remain local clinician decisions.",
+    "A 2025 ISTH updated DIC framework and 2026 follow-up review are checked at abstract level only; this surgical case does not teach formal scoring, DIC therapy, emergency transfusion component selection, massive-haemorrhage protocols or viscoelastic interpretation."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-    "OpenStax Medical-Surgical Nursing is non-commercial (CC BY-NC-SA); it is used only to cross-check and must be replaced or permitted before any release."
+    "OpenStax Medical-Surgical Nursing is non-commercial (CC BY-NC-SA); it is used only to cross-check and must be replaced or permitted before any release.",
+    "ISTH 2025 and ARUP reference-laboratory educational material are citation-only on a commercial platform; no diagrams or diagnostic scoring tables reproduced."
   ],
   "setting": "A fictional adult in a fictional intensive care unit six hours after abdominal surgery, receiving an anticoagulant for clot prevention.",
   "steps": [
@@ -218,13 +232,13 @@
     },
     {
       "position": 3,
-      "info": "Fluids and blood products have been ordered, and the team plans to take the patient back to theatre.",
+      "info": "The urgent clinical team has assessed the patient and prescribed fluids and blood products, with a possible return to theatre. Urine output is falling, and repeat platelet and coagulation results are pending.",
       "prompt": "What should you do now?",
       "observations": [
         {
           "key": "order",
           "label": "Orders",
-          "value": "Fluids and blood products prescribed"
+          "value": "Fluids and blood products prescribed by the clinical team"
         },
         {
           "key": "urine",
@@ -234,7 +248,7 @@
         {
           "key": "plan",
           "label": "Plan",
-          "value": "Return to theatre"
+          "value": "Possible return to theatre"
         },
         {
           "key": "bp",
@@ -244,25 +258,27 @@
       ],
       "options": [
         {
-          "text": "Give the fluids and blood products as ordered following the unit's blood transfusion procedure, keep measuring urine output and vital signs, record the blood lost and what was done, and give an SBAR handover to the theatre team.",
+          "text": "Provide the clinician-ordered resuscitation and blood products under the hospital's emergency transfusion identification and reaction-monitoring procedures, reassess perfusion and urine output continuously, communicate evolving blood loss and laboratory trends without assigning a DIC diagnosis, and hand over to theatre by SBAR.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
-          "feedback": "Replacing volume with fluids or blood products is done as prescribed; fluid status and urine output are monitored, and a structured handover keeps the receiving team informed.",
-          "consequence": "Treatment is safe and traceable, and the theatre team receives a clear account.",
+          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC.",
+          "consequence": "Emergency treatment and transfusion safety checks proceed under the team's direction while bleeding, perfusion and serial laboratory trends are handed over.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-POSTOP",
             "S-OPENRN-ADV-CH3",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-ARUP-DIC",
+            "S-ISTH-DIC-2025"
           ]
         },
         {
-          "text": "Start the blood without the second-person identity check because the situation is urgent.",
+          "text": "Start the blood immediately without the unit's emergency blood identification and patient-monitoring safeguards because the patient is deteriorating.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",
-          "feedback": "Urgency does not remove transfusion safety checks; the unit's blood procedure still applies.",
+          "feedback": "Even during major haemorrhage, transfusion follows the hospital's emergency issue and patient-identification pathway, with appropriate safety and reaction monitoring; staff must use its specified emergency checks rather than inventing an exception.",
           "consequence": "A patient-identification error could cause a serious reaction.",
           "support": "partial",
           "sources": [
@@ -289,7 +305,8 @@
       "Falling pressure, a fast pulse and cool skin with postoperative wound bleeding justify immediate patient-first assessment and urgent response; measuring and marking wound drainage must not delay getting clinical help.",
       "Do not take the first dressing off and hide the evidence; the surgeon needs to see it.",
       "Raise any due anticoagulant dose with the prescriber when bleeding is suspected.",
-      "Fluids and blood products are given as ordered with safety checks and close monitoring of urine output; hand over with SBAR."
+      "Resuscitation, transfusion and possible return to theatre remain clinician-directed; use the authorised emergency blood-identification pathway, track perfusion/urine output and give timely blood-loss and laboratory-trend handover.",
+      "Falling platelets, abnormal clotting tests or a normal fibrinogen cannot independently determine DIC or blood-product selection; communicate clinical and laboratory trends while the team investigates."
     ],
     "links": [
       {
