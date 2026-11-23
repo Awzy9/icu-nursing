@@ -4721,6 +4721,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15-6",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -4732,9 +4737,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 3,
-   "hash": "2c3024d1d7f4fa9a"
+   "hash": "9fcb8ababe19861b"
   },
   {
    "key": "SC-17",
@@ -4797,9 +4802,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "615fbdbf11a84e06"
+   "hash": "2d349e31d2f7797a"
   },
   {
    "key": "SC-19",
@@ -4832,9 +4837,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
-   "required_sources": 2,
-   "hash": "2f0c7e10a5094753"
+   "gaps": 5,
+   "required_sources": 3,
+   "hash": "cba979db80c0317c"
   },
   {
    "key": "SC-20",
