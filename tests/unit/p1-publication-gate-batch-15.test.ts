@@ -58,10 +58,11 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
   it("requires individual immutable revision-bound and independently authorised records", () => {
     const entry = working.find((e) => e.key === "D08-T03")!;
     expect(entry).toBeDefined();
-    const fakeIndex = { entries: [{ key: entry.key, clinically_reviewed: true, issues: [], sources: [{ id: "EXAMPLE", licence_class: "GREEN" }] }] };
+    const fakeIndex = { entries: [{ key: entry.key, hash: "1234567890abcdef", clinically_reviewed: true, issues: [], sources: [{ id: "EXAMPLE", licence_class: "GREEN" }] }] };
     const fakeApproval = {
       key: entry.key,
       entry_sha256: contentRevisionHash(entry),
+      source_draft_hash: "1234567890abcdef",
       clinical_reviewer_id: "clinician-example",
       clinical_reviewed_at: "2026-11-23",
       licence_reviewer_id: "licence-example",
@@ -73,6 +74,7 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
     };
     const demoRegister = { schema_version: 1, approvals: [fakeApproval] };
     expect(eligibleForProduction([entry], demoRegister, fakeIndex).allowed).toHaveLength(1);
+    expect(eligibleForProduction([entry], demoRegister, { entries: [{ ...fakeIndex.entries[0], hash: "abcdef1234567890" }] }).allowed).toHaveLength(0);
     expect(eligibleForProduction([{ ...entry, body: entry.body + "changed" }], demoRegister, fakeIndex).allowed).toHaveLength(0);
     expect(eligibleForProduction([entry], { ...demoRegister, approvals: [{ ...fakeApproval, commercial_use_cleared: false }] }, fakeIndex).allowed).toHaveLength(0);
     expect(eligibleForProduction([entry], demoRegister, { entries: [{ ...fakeIndex.entries[0], clinically_reviewed: false }] }).allowed).toHaveLength(0);
