@@ -1,265 +1,269 @@
 {
- "scenario_id": "SC-19",
- "number": 19,
- "title": "Anaphylaxis",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "emergencies",
- "difficulty": 3,
- "learning_objectives": [
-  "Stop the suspected trigger and call for help at the first signs of an allergic reaction.",
-  "Know the injection site named on the epinephrine label for anaphylaxis.",
-  "Understand that medicine choice and doses are prescriber or protocol decisions.",
-  "Monitor closely and report the reaction afterwards."
- ],
- "related": {
-  "skills": [],
-  "medications": [
-   "MD-02",
-   "MD-22"
+  "scenario_id": "SC-19",
+  "number": 19,
+  "title": "Anaphylaxis",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "emergencies",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Recognise new airway or breathing involvement after a suspected trigger and immediately activate the anaphylaxis pathway with first-line IM adrenaline under the authorised emergency protocol.",
+    "Know the injection site named on the epinephrine label for anaphylaxis.",
+    "Understand that medicine choice and doses are prescriber or protocol decisions.",
+    "Monitor closely and report the reaction afterwards."
   ],
-  "topic_drafts": []
- },
- "sources": [
-  {
-   "id": "L-EPINEPHRINE",
-   "read": "full",
-   "use": "FDA epinephrine label: injection site and extravasation statements"
+  "related": {
+    "skills": [],
+    "medications": [
+      "MD-02",
+      "MD-22"
+    ],
+    "topic_drafts": []
   },
-  {
-   "id": "L-PIPTAZO",
-   "read": "full",
-   "use": "FDA piperacillin-tazobactam label: hypersensitivity warning"
-  },
-  {
-   "id": "N-RCUK-ANAPH-2021",
-   "read": "partial",
-   "use": "RCUK anaphylaxis guideline 2021: key recommendations and sections on setting, monitoring, positioning and removing the trigger"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
-  }
- ],
- "required_sources": [
-  "Anaphylaxis guideline text sections not read (refractory anaphylaxis, observation after treatment, fluids)",
-  "Unit anaphylaxis protocol and the adverse reaction reporting route"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Refractory anaphylaxis, fluids, airway steps and observation duration were not read and are not written; the RCUK guideline is copyright and is paraphrased only.",
-  "Doses and routes other than the label's injection-site statement are deliberately absent."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "RCUK guideline: no reproduction without written permission."
- ],
- "setting": "A fictional adult receiving an intravenous antibiotic on a fictional unit.",
- "steps": [
-  {
-   "position": 1,
-   "info": "Ten minutes after an antibiotic infusion starts, the patient reports itching and feels short of breath and the face looks swollen.",
-   "prompt": "What is the first action?",
-   "observations": [
+  "sources": [
     {
-     "key": "breathing",
-     "label": "Breathing",
-     "value": "Wheeze, short of breath"
+      "id": "L-EPINEPHRINE",
+      "read": "full",
+      "use": "FDA epinephrine label: injection site and extravasation statements"
     },
     {
-     "key": "skin",
-     "label": "Skin",
-     "value": "Flushed, hives"
+      "id": "L-PIPTAZO",
+      "read": "full",
+      "use": "FDA piperacillin-tazobactam label: hypersensitivity warning"
     },
     {
-     "key": "infusion",
-     "label": "Infusion",
-     "value": "Running"
+      "id": "N-RCUK-ANAPH-2021",
+      "read": "partial",
+      "use": "RCUK anaphylaxis guideline 2021: key recommendations and sections on setting, monitoring, positioning and removing the trigger"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
     }
-   ],
-   "options": [
-    {
-     "text": "Stop the suspected trigger, activate the emergency anaphylaxis pathway, call for urgent help, assess ABCDE, and obtain immediate IM adrenaline under the authorized emergency protocol; do not allow sudden standing.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "RCUK identifies intramuscular adrenaline in the anterolateral thigh as first-line for anaphylaxis with airway, breathing or circulatory involvement; activate the emergency pathway and give it promptly under the authorized protocol while removing the trigger, assessing ABCDE and avoiding sudden standing.",
-     "consequence": "The infusion is stopped, the team is on its way and monitoring is being attached while you stay with the patient.",
-     "support": "partial",
-     "sources": [
-      "N-RCUK-ANAPH-2021",
-      "L-PIPTAZO"
-     ]
-    },
-    {
-     "text": "Slow the infusion and see whether the symptoms settle.",
-     "points": 0,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "Continuing a drug during a suspected serious reaction is unsafe.",
-     "consequence": "The swelling and breathing difficulty worsen.",
-     "support": "partial",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    },
-    {
-     "text": "Give an antihistamine from the ward stock and continue the infusion.",
-     "points": 0,
-     "next": 2,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Medicines need an order, and the infusion should be stopped first.",
-     "consequence": "The reaction progresses while time is lost.",
-     "support": "partial",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The prescriber orders intramuscular epinephrine for anaphylaxis and asks you to give it.",
-   "prompt": "Where does the label say it should be injected?",
-   "observations": [
-    {
-     "key": "breathing",
-     "label": "Breathing",
-     "value": "Worsening"
-    },
-    {
-     "key": "pressure",
-     "label": "Blood pressure",
-     "value": "Falling"
-    },
-    {
-     "key": "order",
-     "label": "Order",
-     "value": "Intramuscular epinephrine"
-    }
-   ],
-   "options": [
-    {
-     "text": "In the anterolateral thigh, avoiding the buttocks, digits, hands and feet.",
-     "points": 2,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "The label names the anterolateral thigh as the most appropriate site and says not to inject into the buttocks, digits, hands or feet.",
-     "consequence": "The injection is given at the correct site and the team continues treatment.",
-     "support": "sourced",
-     "sources": [
-      "L-EPINEPHRINE"
-     ]
-    },
-    {
-     "text": "In the deltoid, because the arm is quicker to reach.",
-     "points": 0,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "The label says injection into smaller muscles such as the deltoid is not recommended.",
-     "consequence": "The injection is given but at a less suitable site.",
-     "support": "sourced",
-     "sources": [
-      "L-EPINEPHRINE"
-     ]
-    },
-    {
-     "text": "In the buttock, because the muscle is large.",
-     "points": 0,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "The label says not to inject into the buttocks.",
-     "consequence": "The injection is given at a site the label advises against.",
-     "support": "sourced",
-     "sources": [
-      "L-EPINEPHRINE"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The patient is improving and the team is deciding what happens next.",
-   "prompt": "What do you do now?",
-   "observations": [
-    {
-     "key": "breathing",
-     "label": "Breathing",
-     "value": "Improving"
-    },
-    {
-     "key": "pressure",
-     "label": "Blood pressure",
-     "value": "Recovering"
-    },
-    {
-     "key": "team",
-     "label": "Team",
-     "value": "Reviewing"
-    }
-   ],
-   "options": [
-    {
-     "text": "Keep the patient monitored by someone skilled at interpreting changes, keep the position the symptoms call for, document the event, report the reaction through the local system and support referral for allergy assessment.",
-     "points": 2,
-     "next": null,
-     "scope": "monitoring",
-     "feedback": "RCUK says every patient with anaphylaxis is monitored by a skilled person, positioned to suit airway, breathing or circulation problems, reported through local systems and the UK registry, and referred for specialist allergy assessment.",
-     "consequence": "The reaction is recorded as an allergy, the team plans the next steps and the referral is made.",
-     "support": "partial",
-     "sources": [
-      "N-RCUK-ANAPH-2021",
-      "L-PIPTAZO",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Transfer the patient to the ward without monitoring because the symptoms have settled.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "Symptoms can return and monitoring must continue as the team directs.",
-     "consequence": "The patient deteriorates again on the ward without monitoring.",
-     "support": "partial",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    },
-    {
-     "text": "Restart the antibiotic at a slower speed once the symptoms have gone.",
-     "points": 0,
-     "next": null,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Restarting a suspected trigger is a prescriber decision.",
-     "consequence": "The reaction recurs.",
-     "support": "partial",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "Stop the suspected trigger and call for urgent help.",
-   "The epinephrine label names the anterolateral thigh for injection in anaphylaxis.",
-   "Medicine choices and restarting a drug are prescriber decisions.",
-   "Monitor, document and report the reaction."
   ],
-  "links": [
-   {
-    "kind": "medication",
-    "code": "MD-02"
-   }
-  ]
- }
+  "required_sources": [
+    "Anaphylaxis guideline text sections not read (refractory anaphylaxis, observation after treatment, fluids)",
+    "Unit anaphylaxis protocol and the adverse reaction reporting route",
+    "Local 2025 ERC/RCUK crosswalk and anaphylaxis monitoring/observation protocol, including refractory escalation scope for ICU staff"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "Refractory anaphylaxis, fluids, airway steps and observation duration were not read and are not written; the RCUK guideline is copyright and is paraphrased only.",
+    "Doses and routes other than the label's injection-site statement are deliberately absent.",
+    "The Resuscitation Council UK healthcare-provider anaphylaxis guidance remains May 2021; 2025 first-aid / ERC special-circumstances statements are contextual and do not alone replace the in-hospital authorised emergency protocol. Full refractory management remains specialist-led."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "RCUK guideline: no reproduction without written permission."
+  ],
+  "setting": "A fictional adult receiving an intravenous antibiotic on a fictional unit.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "Ten minutes after an antibiotic infusion starts, the patient reports itching and feels short of breath and the face looks swollen.",
+      "prompt": "What is the first action?",
+      "observations": [
+        {
+          "key": "breathing",
+          "label": "Breathing",
+          "value": "Wheeze, short of breath"
+        },
+        {
+          "key": "skin",
+          "label": "Skin",
+          "value": "Flushed, hives"
+        },
+        {
+          "key": "infusion",
+          "label": "Infusion",
+          "value": "Running"
+        }
+      ],
+      "options": [
+        {
+          "text": "Immediately stop the suspected antibiotic trigger, call for emergency help, assess ABCDE and give or request prompt IM adrenaline under the authorised anaphylaxis emergency protocol without awaiting routine ward-round orders. Position safely for the patient's airway and circulation; avoid standing or sudden walking.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Suspected anaphylaxis with airway, breathing or circulatory involvement is time-critical; prompt IM adrenaline and clinical resuscitation are prioritized in RCUK healthcare-provider guidance. The drug and administration are governed by a trained clinician and institution's authorised emergency pathway; never treat an antihistamine as the first-line substitute.",
+          "consequence": "Emergency assistance is activated and protocol-authorised first-line treatment is promptly arranged while the suspected trigger is stopped.",
+          "support": "partial",
+          "sources": [
+            "N-RCUK-ANAPH-2021",
+            "L-PIPTAZO",
+            "L-EPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Slow the infusion and see whether the symptoms settle.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "Continuing a drug during a suspected serious reaction is unsafe.",
+          "consequence": "The swelling and breathing difficulty worsen.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "Give an antihistamine from the ward stock and continue the infusion.",
+          "points": 0,
+          "next": 2,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Medicines need an order, and the infusion should be stopped first.",
+          "consequence": "The reaction progresses while time is lost.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "The emergency anaphylaxis pathway has been activated and trained staff are preparing or administering the authorised first-line IM adrenaline. The team asks you to confirm the labelled injection-site principle.",
+      "prompt": "Where does the label say it should be injected?",
+      "observations": [
+        {
+          "key": "breathing",
+          "label": "Breathing",
+          "value": "Worsening"
+        },
+        {
+          "key": "pressure",
+          "label": "Blood pressure",
+          "value": "Falling"
+        },
+        {
+          "key": "order",
+          "label": "Order",
+          "value": "Intramuscular epinephrine"
+        }
+      ],
+      "options": [
+        {
+          "text": "In the anterolateral thigh, avoiding the buttocks, digits, hands and feet.",
+          "points": 2,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**.",
+          "consequence": "The injection is given at the correct site and the team continues treatment.",
+          "support": "sourced",
+          "sources": [
+            "L-EPINEPHRINE"
+          ]
+        },
+        {
+          "text": "In the deltoid, because the arm is quicker to reach.",
+          "points": 0,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "The label says injection into smaller muscles such as the deltoid is not recommended.",
+          "consequence": "The injection is given but at a less suitable site.",
+          "support": "sourced",
+          "sources": [
+            "L-EPINEPHRINE"
+          ]
+        },
+        {
+          "text": "In the buttock, because the muscle is large.",
+          "points": 0,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "The label says not to inject into the buttocks.",
+          "consequence": "The injection is given at a site the label advises against.",
+          "support": "sourced",
+          "sources": [
+            "L-EPINEPHRINE"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "The patient is improving and the team is deciding what happens next.",
+      "prompt": "What do you do now?",
+      "observations": [
+        {
+          "key": "breathing",
+          "label": "Breathing",
+          "value": "Improving"
+        },
+        {
+          "key": "pressure",
+          "label": "Blood pressure",
+          "value": "Recovering"
+        },
+        {
+          "key": "team",
+          "label": "Team",
+          "value": "Reviewing"
+        }
+      ],
+      "options": [
+        {
+          "text": "Continue trained close monitoring for recurrent airway, breathing or circulatory problems, ensure observation and positioning follow the emergency team's plan, document the suspected trigger and treatments, and support handover and allergy follow-up.",
+          "points": 2,
+          "next": null,
+          "scope": "monitoring",
+          "feedback": "Initial improvement does not eliminate the risk of recurrence or continued deterioration. The emergency team determines observation duration and discharge planning; documenting and flagging the suspect antibiotic helps prevent future inadvertent exposure.",
+          "consequence": "The reaction is recorded as an allergy, the team plans the next steps and the referral is made.",
+          "support": "partial",
+          "sources": [
+            "N-RCUK-ANAPH-2021",
+            "L-PIPTAZO",
+            "S-AHRQ-TS"
+          ]
+        },
+        {
+          "text": "Transfer the patient to the ward without monitoring because the symptoms have settled.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "Symptoms can return and monitoring must continue as the team directs.",
+          "consequence": "The patient deteriorates again on the ward without monitoring.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "Restart the antibiotic at a slower speed once the symptoms have gone.",
+          "points": 0,
+          "next": null,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Restarting a suspected trigger is a prescriber decision.",
+          "consequence": "The reaction recurs.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "New breathing/airway compromise after an antibiotic may be anaphylaxis: stop the suspected trigger, activate emergency help and ensure timely protocol-authorised IM adrenaline.",
+      "The epinephrine label names the anterolateral thigh for injection in anaphylaxis.",
+      "Medicine choices and restarting a drug are prescriber decisions.",
+      "Monitor, document and report the reaction.",
+      "Do not delay anaphylaxis first-line emergency treatment to answer an injection-site knowledge question or wait for a non-urgent prescription workflow."
+    ],
+    "links": [
+      {
+        "kind": "medication",
+        "code": "MD-02"
+      }
+    ]
+  }
 }
