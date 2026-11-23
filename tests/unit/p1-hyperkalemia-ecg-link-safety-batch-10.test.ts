@@ -14,7 +14,7 @@ describe("P1 batch 10 UKKA ECG and hyperkalemia medication-link safeguards", () 
     expect(section).toContain("6.5 mmol/L");
     expect(section).toContain("different combination of factors");
     expect(section).toContain("not equivalent");
-    expect(section).toContain("publisher");
+    expect(section).toContain("the UKKA organisation has not resolved the inconsistency");
     expect(section).toContain("6.2 mmol/L");
   });
 
