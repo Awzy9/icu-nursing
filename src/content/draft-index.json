@@ -1244,7 +1244,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "9ce7acd4c34ccf20"
+   "hash": "2b19668df19f3299"
   },
   {
    "key": "XQ-01",
@@ -4471,6 +4471,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ARUP-DIC",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ISTH-DIC-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-OPENRN-ADV-CH3",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -4487,9 +4497,9 @@
     }
    ],
    "issues": [],
-   "gaps": 6,
-   "required_sources": 2,
-   "hash": "ce8258430fc5c630"
+   "gaps": 7,
+   "required_sources": 3,
+   "hash": "21a20c03c3cfd4c1"
   },
   {
    "key": "SC-10",
