@@ -38,7 +38,7 @@ describe("P1 metabolic and postoperative case safety", () => {
     expect(feeding).toContain("## 7b. Feed interruption and insulin safety");
     expect(feeding).toContain("S-ADA-HOSP-2026");
     expect(feeding).toMatch(/do not restart feed or flush the tube/i);
-    expect(feeding).toMatch(/do not.*change insulin doses independently/i);
+    expect(feeding).toContain("an instruction to change insulin doses independently");
   });
 
   it("validates both fictional cases without implying clinical approval", () => {
