@@ -60,3 +60,7 @@ This focuses on deterioration in **cirrhosis / advanced chronic liver disease wi
 
 ## Publication blockers
 Human ICU nurse educator, hepatologist, intensivist/airway clinician, renal specialist and pharmacist review; access to complete source licensing and local pathways; validate case discrimination/answers, plus explicit server/client/mobile release controls. **Do not merge or publish as clinically approved.**
+
+
+## Batch 14 coagulation and transfusion safety cross-check (2026-11-23)
+For cirrhosis/ACLF, **an elevated INR alone is not a reliable bleeding-risk predictor** and is not authorisation for prophylactic plasma, reversal therapy or a DIC diagnosis. The new `content/proposals/p1-14/COAGULOPATHY_LIVER_TRAUMA_DIC.md` distinguishes this from trauma-associated coagulopathy and sepsis-associated DIC. **Do not ignore active bleeding:** urgent patient-first ABC/perfusion assessment, emergency team response and clinician-directed blood product treatment still take priority over isolated tests. AASLD 2024 guidance source: https://doi.org/10.1097/hep.0000000000000671 . No new drug or product amount is taught.
