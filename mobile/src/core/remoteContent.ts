@@ -57,21 +57,66 @@ export type RemoteResult<T> =
   | { status: "ok"; data: T; fromCache: boolean }
   | { status: "offline" };
 
-const CACHE_PREFIX = "icu.content.v1:";
-async function readCache<T>(store: KeyValueStore, key: string): Promise<T | undefined> {
-  try { const raw = await store.get(CACHE_PREFIX + key); return raw ? (JSON.parse(raw) as T) : undefined; } catch { return undefined; }
+// v2 keys are scoped to the exact content API origin and a persisted generation.
+// Legacy v1 caches were created without a publication/revocation check, so do not
+// reuse them after this upgrade: an offline response must not resurrect old drafts.
+const CACHE_PREFIX = "icu.content.v2:";
+const scope = (baseUrl: string) => `${CACHE_PREFIX}${encodeURIComponent(baseUrl)}:`;
+const disabledThisSession = new Set<string>();
+async function cacheGeneration(deps: ContentClientDeps): Promise<number> {
+  try {
+    const raw = await deps.store.get(scope(deps.baseUrl) + "generation");
+    const n = Number(raw ?? 0);
+    return Number.isSafeInteger(n) && n >= 0 ? n : 0;
+  } catch { return 0; }
 }
-async function writeCache<T>(store: KeyValueStore, key: string, value: T): Promise<void> {
-  try { await store.set(CACHE_PREFIX + key, JSON.stringify(value)); } catch { /* cache is best-effort */ }
+async function readCache<T>(deps: ContentClientDeps, key: string): Promise<T | undefined> {
+  if (disabledThisSession.has(deps.baseUrl)) return undefined;
+  try {
+    const n = await cacheGeneration(deps);
+    const raw = await deps.store.get(`${scope(deps.baseUrl)}${n}:${key}`);
+    return raw ? (JSON.parse(raw) as T) : undefined;
+  } catch { return undefined; }
+}
+async function writeCache<T>(deps: ContentClientDeps, key: string, value: T): Promise<void> {
+  try {
+    const n = await cacheGeneration(deps);
+    await deps.store.set(`${scope(deps.baseUrl)}${n}:${key}`, JSON.stringify(value));
+    disabledThisSession.delete(deps.baseUrl);
+  } catch { /* cache is best-effort */ }
+}
+async function invalidateOriginCache(deps: ContentClientDeps): Promise<void> {
+  // Invalidate *every* cached catalog, lesson, exam and lab from this origin.
+  // Old-generation keys remain stored but cannot be read by the new generation.
+  disabledThisSession.add(deps.baseUrl);
+  try {
+    const n = await cacheGeneration(deps);
+    await deps.store.set(scope(deps.baseUrl) + "generation", String(n + 1));
+  } catch { /* current-session block remains in force if storage fails */ }
 }
 
+class PublicationUnavailable extends Error {}
 const TIMEOUT_MS = 10000;
 async function fetchJson(fetcher: typeof fetch, baseUrl: string, path: string): Promise<unknown> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {
     const res = await fetcher(`${baseUrl}${path}`, { signal: controller.signal, headers: { Accept: "application/json" } });
-    if (!res.ok) throw new Error(`http ${res.status}`);
+    // A withdrawn publication or denied session is NOT an ordinary offline error.
+    // 404 not_found on an individual entry remains eligible for offline fallback.
+    if (!res.ok) {
+      if ([401, 403, 410].includes(res.status)) throw new PublicationUnavailable("content access denied");
+      if (res.status === 404) {
+        try {
+          const body: unknown = await res.json();
+          if (body && typeof body === "object" && "error" in body &&
+            body.error === "content_edition_disabled") throw new PublicationUnavailable("clinical publication disabled");
+        } catch (err) {
+          if (err instanceof PublicationUnavailable) throw err;
+        }
+      }
+      throw new Error(`http ${res.status}`);
+    }
     return await res.json();
   } finally { clearTimeout(timer); }
 }
@@ -82,10 +127,14 @@ async function fetchCached<T>(deps: ContentClientDeps, cacheKey: string, path: s
   try {
     const raw = await fetchJson(deps.fetcher, deps.baseUrl, path);
     const data = validate(raw);
-    await writeCache(deps.store, cacheKey, data);
+    await writeCache(deps, cacheKey, data);
     return { status: "ok", data, fromCache: false };
-  } catch {
-    const cached = await readCache<T>(deps.store, cacheKey);
+  } catch (err) {
+    if (err instanceof PublicationUnavailable) {
+      await invalidateOriginCache(deps);
+      return { status: "offline" }; // no clinical data returned; UI error label can be refined separately
+    }
+    const cached = await readCache<T>(deps, cacheKey);
     if (cached) return { status: "ok", data: cached, fromCache: true };
     return { status: "offline" };
   }
@@ -177,5 +226,8 @@ export async function pickExamQuestions(deps: ContentClientDeps, categories: str
     const path = `/api/content/exam/pick?categories=${categories.map(encodeURIComponent).join(",")}&count=${count}`;
     const raw = await fetchJson(deps.fetcher, deps.baseUrl, path);
     return { status: "ok", data: examPickResponseSchema.parse(raw), fromCache: false };
-  } catch { return { status: "offline" }; }
+  } catch (err) {
+    if (err instanceof PublicationUnavailable) await invalidateOriginCache(deps);
+    return { status: "offline" };
+  }
 }
