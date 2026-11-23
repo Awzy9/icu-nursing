@@ -51,3 +51,7 @@ In major trauma, shock, ongoing haemorrhage and coagulopathy can evolve *while* 
 
 ## Clinical and legal release blockers
 Trauma surgeon + neurointensivist + ICU nurse educator + haematology/transfusion specialist + pharmacist review. Validate institutional haemorrhage activation, blood-product identity and reaction pathways, local temperature and metabolic monitoring policy. Resolve licences and verify true web/mobile publication controls before any learner import. **No clinical approval, merge or deployment.**
+
+
+## Batch 14 cross-module safety check (2026-11-23)
+See `content/proposals/p1-14/TRANSFUSION_RESPIRATORY_DETERIORATION.md` when new hypoxaemia emerges during/after an emergency transfusion. **TACO and TRALI can look similar initially**; shock, ventilator deterioration or respiratory compromise must prompt prompt patient assessment, the authorised suspected-reaction response and blood-bank/trauma escalation, not nurse-independent diagnosis, diuretic choice or automatic restart of the implicated component. Clinical judgement is especially important during ongoing life-threatening haemorrhage: the trauma and transfusion teams manage parallel resuscitation and suspected reaction decisions. Evidence: https://www.isbtweb.org/resources/educational-modules-on-clinical-use-of-blood/adverse-effects-of-transfusion.html . New module separately compares trauma coagulopathy with cirrhosis and DIC; no single test automatically selects a blood component.
