@@ -60,7 +60,7 @@ describe("P1 batch 4 high-risk clinical scenario / medication consistency", () =
     expect(a.text).toMatch(/trained CRRT operator/);
     expect(a.text).toMatch(/do not reflexively clear alarms/);
     expect(b.text).toMatch(/Do not attempt an unsupervised blood return/);
-    expect(b.feedback).toMatch(/device/);
+    expect(b.feedback).toMatch(/under local procedures/);
     expect(validateScenarioDraft(crrt, loadScenarioKnownSources())).toEqual([]);
   });
 
