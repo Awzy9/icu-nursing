@@ -7,6 +7,7 @@ import type { WorkingEntry } from "./model";
 export interface ClinicalApproval {
   key: string;
   entry_sha256: string;
+  source_draft_hash: string;
   clinical_reviewer_id: string;
   clinical_reviewed_at: string;
   licence_reviewer_id: string;
@@ -23,6 +24,7 @@ export interface ApprovalRegister {
 }
 export interface ReviewIndexEntry {
   key: string;
+  hash: string;
   clinically_reviewed: boolean;
   issues: unknown[];
   sources: { id: string; licence_class: string }[];
@@ -73,7 +75,8 @@ export function eligibleForProduction(
     else if (!indexed.sources.length || indexed.sources.some((s) => !s.id || s.licence_class === "UNREGISTERED")) reason = "unregistered or missing evidence sources";
     else if (duplicateApprovals.has(e.key)) reason = "duplicate approval records";
     else if (!a) reason = "no individual clinical/licence/publisher approval";
-    else if (!/^[0-9a-f]{64}$/i.test(a.entry_sha256) || a.entry_sha256 !== contentRevisionHash(e)) reason = "approval does not match current revision";
+    else if (!/^[0-9a-f]{64}$/i.test(a.entry_sha256) || a.entry_sha256 !== contentRevisionHash(e)) reason = "approval does not match current lesson revision";
+    else if (!/^[0-9a-f]{16}$/i.test(a.source_draft_hash) || a.source_draft_hash !== indexed.hash) reason = "evidence or source draft changed since approval";
     else if (!named(a.clinical_reviewer_id) || !named(a.licence_reviewer_id) || !named(a.rights_clearance_reference) || !named(a.publisher_id)) reason = "missing named release reviewers or rights evidence";
     else if (!dated(a.clinical_reviewed_at) || !dated(a.licence_reviewed_at) || !dated(a.published_approved_at)) reason = "missing review dates";
     else if (!a.commercial_use_cleared) reason = "commercial source rights not cleared";
