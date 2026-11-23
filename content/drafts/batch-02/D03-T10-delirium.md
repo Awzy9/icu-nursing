@@ -49,6 +49,13 @@ Delirium is multifactorial: acute illness, sepsis, hypoxia, metabolic disturbanc
 - Escalate positive screens and any marked agitation promptly.
 - Provide information to patients and families: delirium is common and usually temporary (NICE).
 
+## 7b. When agitation may not be delirium — ICU patient-first safety sequence
+A newly agitated, withdrawn or less responsive patient needs assessment for acute physiological or neurological deterioration **as well as** delirium. Recheck airway and breathing, oxygen delivery, pain and current medicines, then report concerns promptly to the critical-care team. A delirium screen is a structured assessment by trained staff, not a substitute for investigating a sudden change in consciousness.
+
+Sedation/arousal scoring and a delirium assessment answer **different questions**. If deep sedation, coma or the tool's eligibility conditions prevent assessment, record that the screen was not possible and why, rather than marking the patient delirium-negative. Use the local tool manual and competence requirements; no copyrighted CAM-ICU/ICDSC items or scoring cutoffs are reproduced here.
+
+**2025 SCCM PADIS focused update:** the expert panel could not make a recommendation for or against antipsychotics versus usual care to treat delirium in adults in ICU. This is not approval for routine haloperidol and not a universal prohibition of clinician-directed treatment when safety is at risk. Individualized de-escalation, pain review, non-drug care, medication safety checks, and urgent review when danger persists remain essential. The same update conditionally supports more intensive mobility/rehabilitation than usual care, but does not establish a universal schedule or safety clearance for every ICU patient. The unit's competent team decides.
+
 ## 8. Monitoring parameters
 Delirium screen results and trend; sedation and analgesia scores; pain; oxygen saturation; haemodynamics; temperature; hydration, bowel and bladder function; sleep; mobility; sensory aids in use; medicine changes; family presence.
 
@@ -199,5 +206,6 @@ Screening tool, frequency, restraint policy, sedation and antipsychotic protocol
 ## 20. Evidence, applicability and open questions
 - Source quality (AI-assisted update 2026-11-16): NICE CG103 is a UK general-hospital guideline with a specific recommendation to use CAM-ICU or ICDSC in critical care rather than 4AT. SCCM PADIS **2018 and 2025 full recommendation lists are accessible on official SCCM webpages**; the earlier claim that the 2018 recommendations were inaccessible was incorrect. Their full articles, all evidence tables and tool-validation studies were NOT systematically read. SCCM 2025 issues **no recommendation for or against antipsychotics over usual care** for established adult ICU delirium (low-certainty evidence); this is not a recommendation for routine treatment. Do not conflate this ICU-specific uncertainty with NICE's selected short-term haloperidol recommendation in particular distressed/high-risk hospital patients. https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline ; https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa ; https://www.nice.org.uk/guidance/cg103/chapter/Recommendations .
 - International applicability: prevention measures are broadly transferable; drug recommendations and some wording are UK-specific.
+- Newly clarified: acute physiological/neurological deterioration requires a patient-first response before or alongside delirium screening; deep sedation may make the delirium screen not assessable, which must not be charted as negative. SCCM's 2025 antipsychotic uncertainty is not a routine medication order.
 - Not covered: sedation depth targets, ICU drug evidence, long-term outcomes, CAM-ICU scoring details (copyright of tools).
 - Open questions for reviewers (NEURO, PH, CCP, NE, BN): ICU-specific bundle content; screening frequency; restraint policy; whether to include antipsychotic information at all in a nursing topic.
