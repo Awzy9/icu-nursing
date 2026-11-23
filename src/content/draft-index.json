@@ -769,12 +769,17 @@
      "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "d614278004d7e9c6"
+   "hash": "e8c6eb36c8997ec1"
   },
   {
    "key": "D05-T16",
@@ -851,6 +856,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-CHEST-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
+     "id": "S-ATS-NIRS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-PERIEXT-2026",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -864,7 +879,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "7e672d8fa9316827"
+   "hash": "0416333470df778a"
   },
   {
    "key": "D02-T02",
@@ -904,12 +919,17 @@
   {
    "key": "D04-T06",
    "type": "topics",
-   "title": "Potassium disorders – acute hyperkalaemia in hospital (hypokalaemia only briefly)",
+   "title": "Potassium disorders – hyperkalaemia and introductory hypokalaemia safety",
    "domain": "Renal and Metabolic Care",
    "evidence_status": "stated_in_text",
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-NHS-SPS-HYPO-2024",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
+    },
     {
      "id": "S-OPENRN-FUND-CH15",
      "licence_class": "GREEN",
@@ -929,7 +949,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "fc190ff14c080d4b"
+   "hash": "dd8d59a03c0478a0"
   },
   {
    "key": "D04-T08",
