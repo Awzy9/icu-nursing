@@ -5,7 +5,8 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { WorkingEntry } from "./model";
-import { eligibleForProduction, type ApprovalRegister, type ReviewIndex } from "./publication-policy";
+import { eligibleForProduction, type ApprovalRegister } from "./publication-policy";
+import { publicationReviewIndex } from "@/lib/admin/publication-audit";
 
 // Specialised interactive labs and clinical graphics are content too.
 // Do not allow an approved text catalog to expose unreviewed lab datasets through APIs.
@@ -38,7 +39,7 @@ export function checkProductionPublication(
   const register = JSON.parse(readFileSync(path.join(root, "content/publication-approvals.json"), "utf8")) as ApprovalRegister & {
     lab_approvals?: { file: string; sha256: string; clinical_reviewer_id: string; licence_reviewer_id: string; rights_clearance_reference: string; publisher_id: string; commercial_use_cleared: boolean; reviewed_at: string }[];
   };
-  const index = JSON.parse(readFileSync(path.join(root, "src/content/draft-index.json"), "utf8")) as ReviewIndex;
+  const index = publicationReviewIndex();
   const result = eligibleForProduction(catalog, register, index);
   const labApprovals = register.lab_approvals ?? [];
   const assetsBlocked: string[] = [];
