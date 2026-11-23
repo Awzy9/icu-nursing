@@ -2277,9 +2277,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "e25b6ab681b3cf89"
+   "hash": "d571df4ae236c91b"
   },
   {
    "key": "SK-23",
@@ -3082,9 +3082,9 @@
     }
    ],
    "issues": [],
-   "gaps": 6,
+   "gaps": 7,
    "required_sources": 0,
-   "hash": "041fda7c51a4f058"
+   "hash": "38104944d9005b92"
   },
   {
    "key": "MD-21",
@@ -4631,15 +4631,20 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-ISBT-ATR-EDU",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-NICE-NG24",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 2,
-   "hash": "9e87b3df89a64b66"
+   "hash": "551efdad0bc77f93"
   },
   {
    "key": "SC-15",
@@ -4667,9 +4672,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "83c7af97e5e141dc"
+   "hash": "c475e0f4c0f4a92a"
   },
   {
    "key": "SC-16",
