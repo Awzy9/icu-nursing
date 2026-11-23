@@ -55,7 +55,7 @@ describe("P1 batch 13 — ACLF and trauma high-risk teaching gates", () => {
 
   it("retains explicit source scope and required clinical sign-off", () => {
     for (const source of [aclf, trauma]) {
-      expect(source).toMatch(/2026-11-23/);
+      expect(source).toMatch(/2026-11-23|23 November 2026/);
       expect(source).toMatch(/source|evidence/i);
       expect(source).toMatch(/commercial|reuse/i);
       expect(source).toMatch(/clinical.*review|review.*clinical/i);
