@@ -10,7 +10,11 @@ export type { WorkingEntry } from "./model";
 // approval and licensed, hash-pinned content for every entry and lab dataset.
 export const workingEditionEnabled = () => {
   if (process.env.CONTENT_EDITION !== "working") return false;
-  if (!isProductionWorkingRelease(process.env)) return true;
+  if (!isProductionWorkingRelease({
+    CONTENT_EDITION: process.env.CONTENT_EDITION,
+    NEXT_PUBLIC_APP_ENV: process.env.NEXT_PUBLIC_APP_ENV,
+    VERCEL_ENV: process.env.VERCEL_ENV,
+  })) return true;
   try {
     return checkProductionPublication(loadCatalog()).ready;
   } catch {
