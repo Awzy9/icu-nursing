@@ -3429,12 +3429,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "c2a366c838d105d5"
+   "hash": "b8c4b2536436fc0e"
   },
   {
    "key": "MD-31",
@@ -3464,12 +3469,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "97d6ab2a689e562c"
+   "hash": "6a0328e1f6c7bef2"
   },
   {
    "key": "MD-32",
