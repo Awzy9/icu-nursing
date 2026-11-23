@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
 process.env.CONTENT_EDITION = "working";
+// Learning-path tests exercise an explicit local/staging preview, not clinical production.
+process.env.NEXT_PUBLIC_APP_ENV = "staging";
+process.env.VERCEL_ENV = "preview";
 import { PATH_DEFS, resolveAllPaths, findPath } from "@/lib/working/paths";
 import { computePathProgress } from "@/lib/working/path-progress";
 import { emptyLearning } from "@/lib/working/activity-types";
