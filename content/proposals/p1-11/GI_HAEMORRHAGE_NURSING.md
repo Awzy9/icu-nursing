@@ -52,3 +52,11 @@ The **2026 Saudi Critical Care Society / Scandinavian / Kuwaiti** contextualized
 
 ## Publication gate
 GI specialist + ICU nurse educator + blood bank/critical-care pharmacist review; local sepsis/haemorrhage/airway and transfusion workflows; source rights review; validated case scoring; prevention-vs-treatment distinction; content staging and actual learner-facing gate. **No review flags, index imports, merge or deploy as clinical material.**
+
+
+## Cross-guideline update — Batch 12, 2026-11-23
+**This overview is not the detailed variceal or lower GI pathway.** The newer **Baveno VIII (2026)** consensus (not Baveno VII) is now cross-referenced in `content/proposals/p1-12/VARICEAL_BLEEDING_NURSING.md`; Baveno Cooperation's official 2026 abstract confirms the version, while publisher-indexed acute-bleeding statements need full-text specialist verification. **ASGE's August 2026 acute lower-GI-bleeding guideline** is now addressed in `content/proposals/p1-12/LOWER_GI_BLEEDING_NURSING.md`. The 2023 ACG and 2021 ESGE documents remain background to be reconciled, not asserted to be newest ASGE guidance. This parent proposal must not infer that an endoscopy timing recommendation for peptic ulcers applies to varices or lower-GI bleeding.
+
+**New source records (citation-only; rights not cleared):**
+- Baveno VIII 2026: https://www.bavenocoop.net/ressources-and-events/publication/35 (official abstract available); https://doi.org/10.1016/j.jhep.2026.07.030
+- ASGE 2026 lower GI: https://pubmed.ncbi.nlm.nih.gov/42667281/ (abstract); https://doi.org/10.1016/j.gie.2026.06.046
