@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { caseVisualsResponseSchema, catalogEntryResponseSchema, catalogListResponseSchema, labDatasetResponseSchema } from "@icu/schemas/working-content";
 import { examPickResponseSchema, examQuestionsResponseSchema, examTopicsResponseSchema } from "@icu/schemas/working-exam";
 import { pathsResponseSchema } from "@icu/schemas/working-paths";
@@ -37,9 +37,18 @@ describe("content API: disabled when the working edition is off", () => {
   });
 });
 
-describe("content API: enabled", () => {
-  beforeEach(() => { process.env.CONTENT_EDITION = "working"; });
-  afterEach(() => { process.env.CONTENT_EDITION = ORIGINAL_EDITION; });
+describe("content API: enabled in the explicitly designated staging preview", () => {
+  beforeEach(() => {
+    // The production release guard deliberately fails closed when APP_ENV is absent.
+    // These are preview content contract tests, NOT approved clinical publication tests.
+    process.env.CONTENT_EDITION = "working";
+    vi.stubEnv("NEXT_PUBLIC_APP_ENV", "staging");
+    vi.stubEnv("VERCEL_ENV", "preview");
+  });
+  afterEach(() => {
+    process.env.CONTENT_EDITION = ORIGINAL_EDITION;
+    vi.unstubAllEnvs();
+  });
 
   it("GET /api/content/version returns a stable, non-empty version string", async () => {
     const { GET } = await import("@/app/api/content/version/route");
