@@ -6379,6 +6379,21 @@
     "gaps": 6,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "03cbfe0c53f96cd9",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-15": [
