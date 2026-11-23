@@ -33,7 +33,7 @@ describe("P1 chest-drain and pneumothorax nursing recognition — batch 06", () 
     expect(s).toMatch(/absence of swinging may occur after lung re-expansion/i);
     expect(s).toMatch(/obstruction/i);
     expect(s).toMatch(/dry-seal\/digital device/i);
-    expect(drain.checklist.some((x: {text: string}) => x.text.includes("not assume all absent swinging means a blockage"))).toBe(true);
+    expect(drain.checklist.some((x: {text: string}) => x.text.includes("rather than assuming all absent swinging means a blockage"))).toBe(true);
   });
 
   it("traces the educational source accurately and preserves local procedural authority", () => {
