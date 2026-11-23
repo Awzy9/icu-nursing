@@ -91,6 +91,13 @@
           "sources": [
             "S-FDA-PUMP"
           ]
+        },
+        {
+          "text": "When the patient deteriorates during infusion, distinguish pump malfunction or programming error from a functioning pump delivering drug into a compromised IV site. Assess the patient, access site and line, order and pump together; a normal screen does not rule out infiltration, extravasation or an upstream line problem.",
+          "support": "partial",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
         }
       ]
     },
@@ -140,6 +147,20 @@
         {
           "text": "If a pump fails during a high-risk infusion, remain with and closely monitor the patient while another team member obtains a functioning replacement, following the unit's backup plan. For a patient at risk of fluid overload, the FDA gives clamping/disconnecting tubing as an example of a possible response to prevent over-infusion; that decision is context-specific and must follow local instructions. Report suspected pump problems through the facility's required pathway.",
           "support": "sourced",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        },
+        {
+          "text": "For suspected tissue injury at an infusion catheter, do not continue delivery through the compromised site while simply resetting pump alarms. Follow the drug-specific local extravasation plan, request urgent clinician/pharmacy support, and coordinate alternate authorised access for essential therapy. Unlike a pump hardware failure, an injured IV site may remain unsafe even when the pump functions normally.",
+          "support": "partial",
+          "sources": [
+            "S-FDA-PUMP"
+          ]
+        },
+        {
+          "text": "If a pump may be delivering too much or too little, immediately assess the patient and escalate. How and when to secure a working pump, verify replacement programming and manage an essential infusion must follow the local contingency plan and manufacturer instructions; this educational draft never directs bedside free-flow, improvised syringe delivery, or unverified pump transfer.",
+          "support": "partial",
           "sources": [
             "S-FDA-PUMP"
           ]
@@ -218,12 +239,22 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "escalation",
+      "text": "For a suspected access-site injury, stop drug delivery at the compromised site, assess and promptly escalate, while arranging clinician-directed continuation of essential therapy through approved alternative access.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
     }
   ],
   "gaps": [
     "Drug-specific high-alert strategies, concentration standardisation and smart-pump configuration: not covered.",
     "Pump manufacturer instructions: unit-specific.",
-    "Pump failure contingency plans for continuously infused high-alert/life-sustaining medicines must be device- and drug-specific; this checklist does not prescribe automatic interruption, temporary delivery methods or replacement-pump programming."
+    "Pump failure contingency plans for continuously infused high-alert/life-sustaining medicines must be device- and drug-specific; this checklist does not prescribe automatic interruption, temporary delivery methods or replacement-pump programming.",
+    "Distinguishing pump failure from catheter extravasation is now taught conceptually; catheter handling, drug-specific antidotes, alternate access and replacement pump programming still require the unit's current procedure and credentialed clinicians."
   ],
   "permissions": [
     "ISMP list: platform/commercial reproduction needs permission.",
