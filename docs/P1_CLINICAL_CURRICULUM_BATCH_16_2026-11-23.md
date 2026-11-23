@@ -24,3 +24,11 @@ The fail-closed production release guard for the working edition remains on the 
 - Review separately managed legacy content routes and staging preview access controls. The current production gate covers only the working edition; it does not assert that all legacy/other systems are clinically reviewed.
 - Verify commercial licence rights, specialist nursing/ICU/medical/pharmacy signoffs and independent publisher approval, plus live deployment plan.
 - No production release, mobile build, draft-banner removal or merge to `main`.
+
+
+## Follow-up 17: isolated account-learning CI preview configuration (2026-11-23)
+- Previous CI run `45241753108` progressed through dependency audit, lint, TypeScript, unit tests, draft validation, seed checks, DB tests, iOS/Android bundle scanning and the web build. End-to-end/accessibility check had not finished when inspected.
+- `45241753211` learning-experience Playwright completed **success** after removal of the standalone `tsx`-incompatible Next.js `server-only` sentinel from the shared build-only admin audit helper.
+- `45241753111` isolated Supabase job passed the local API, UI and authentication workflow checks, then failed at `Account learning across browser sessions`: `playwright.accounts.config.ts` starts `npm run build` with `CONTENT_EDITION=working` but no declared preview env; the publication gate correctly refused unapproved production working content (206 entries/12 datasets blocked). No patient data or hosted Supabase access was involved.
+- Corrected the account-learning webServer configuration to explicit `NEXT_PUBLIC_APP_ENV=staging` and `VERCEL_ENV=preview`; existing production rejection remains unchanged. A static regression assertion now requires both isolated Playwright working/account configs to be explicitly staging and the account suite to declare Vercel preview.
+- **Pending:** full green latest main CI and isolated job on final commit. No clinical, publisher, copyright or production approval created. Do not merge or release this draft PR.
