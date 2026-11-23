@@ -68,9 +68,9 @@ describe("P1 batch 14 — transfusion pulmonary and coagulopathy cross-syndrome 
   });
 
   it("keeps variceal, ACLF and trauma parent modules consistent with the new safety proposals", () => {
-    expect(variceal).toMatch(/p1-14\\/COAGULOPATHY_LIVER_TRAUMA_DIC\.md/);
-    expect(aclf).toMatch(/p1-14\\/COAGULOPATHY_LIVER_TRAUMA_DIC\.md/);
-    expect(trauma).toMatch(/p1-14\\/TRANSFUSION_RESPIRATORY_DETERIORATION\.md/);
+    expect(variceal).toMatch(/p1-14\/COAGULOPATHY_LIVER_TRAUMA_DIC\.md/);
+    expect(aclf).toMatch(/p1-14\/COAGULOPATHY_LIVER_TRAUMA_DIC\.md/);
+    expect(trauma).toMatch(/p1-14\/TRANSFUSION_RESPIRATORY_DETERIORATION\.md/);
     expect(variceal).toMatch(/active haemorrhage still needs team-directed emergency resuscitation/);
     expect(aclf).toMatch(/Do not ignore active bleeding/);
     expect(trauma).toMatch(/TACO and TRALI can look similar initially/);
