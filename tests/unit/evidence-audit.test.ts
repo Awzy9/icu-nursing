@@ -25,7 +25,13 @@ describe("evidence gap audit (medications and skills)", () => {
     // Phase 15: every medication draft now cites S-RCP-NEWS2 (a generic, fully-read early-warning-score
     // escalation framework) in its escalation section - a real source, not a guess, so this gap is closed.
     expect(meds.every((r) => !r.gaps.some((g) => g.startsWith("escalation")))).toBe(true);
-    expect(meds.every((r) => r.red_sources.length === 0)).toBe(true); // no medication draft rests on a RED source
+    // A new non-label safety source has unverified commercial reuse rights in five drafts.
+    // The audit must expose those flags instead of silently treating them as licence-cleared.
+    const flagged = meds.filter((r) => r.red_sources.length > 0);
+    expect(flagged.map((r) => r.id).sort()).toEqual(["MD-01", "MD-02", "MD-19", "MD-30", "MD-31"]);
+    for (const row of flagged) {
+      expect(row.red_sources).toEqual([row.id === "MD-19" ? "S-NHS-SPS-HYPO-2024" : "S-UIC-EXTRA-2026"]);
+    }
     // Gaps that are still honestly open and must not be silently closed without real work:
     expect(meds.every((r) => r.gaps.some((g) => g.startsWith("US label only")))).toBe(true);
     expect(meds.some((r) => r.gaps.some((g) => g.startsWith("high-alert status")))).toBe(true);

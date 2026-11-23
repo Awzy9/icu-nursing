@@ -62,7 +62,8 @@
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "Fluid choices, antimicrobial timing, lactate targets and blood-pressure targets are not drawn from a source read in full and are not written.",
     "The NEWS2 statements are UK and 2017; the scenario names no score thresholds.",
-    "The steps are not a model-specific norepinephrine administration protocol. Local rules for catheter retention/aspiration, alternative venous access and antidote require critical care and pharmacy review."
+    "The steps are not a model-specific norepinephrine administration protocol. Local rules for catheter retention/aspiration, alternative venous access and antidote require critical care and pharmacy review.",
+    "Simulation option wording is synchronized with MD-01 and the vasopressor monitoring topic; do not treat synthetic debrief scoring as evidence of independent bedside competence. Clinician and pharmacist sign-off remain outstanding."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
@@ -163,7 +164,7 @@
           "points": 2,
           "next": 3,
           "scope": "monitoring",
-          "feedback": "The 2026 Surviving Sepsis Campaign supports peripheral vasopressor initiation when appropriate rather than delaying resuscitation for central access, but only with careful site surveillance and an available extravasation response. Do not interrupt a functioning essential infusion casually; suspected extravasation is different and requires immediate action.",
+          "feedback": "The SSC 2026 recommendation allows peripheral vasopressor initiation for adult septic shock rather than delaying appropriate treatment for central access, with careful access surveillance and an extravasation response plan. Do not unnecessarily interrupt a working essential infusion. If the site becomes compromised, stop delivery at that cannula immediately while securing urgent alternative support through the local protocol.",
           "consequence": "The vascular access is monitored repeatedly, and the team has a plan for urgent alternative access if the site fails.",
           "support": "partial",
           "sources": [
@@ -224,7 +225,7 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Pallor, coolness and swelling at a norepinephrine cannula are concerning for extravasation. Stop the affected infusion immediately and escalate; avoid flushing or removing the catheter before the trained team decides whether aspiration is needed under local protocol. Because abrupt loss of vasopressor support may worsen hypotension, urgently coordinate a safe alternative route and continued haemodynamic monitoring.",
+          "feedback": "Pallor, coolness or swelling at a norepinephrine catheter may indicate extravasation. Stop delivery through the affected cannula immediately; do not force-flush. Preserve the site/catheter for trained assessment under the local extravasation pathway, and urgently maintain patient perfusion via clinician-directed alternative access. Do not imply that all vasopressor treatment should be stopped.",
           "consequence": "The affected line is no longer infusing; trained staff assess the injury and organize alternative vasopressor access under the emergency protocol.",
           "support": "partial",
           "sources": [

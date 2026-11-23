@@ -1,192 +1,223 @@
 {
- "skill_id": "SK-23",
- "number": 23,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Sedation assessment",
- "category": "assessment",
- "topic_drafts": [
-  "D03-T09"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-SCCM-PADIS",
-   "read": "partial",
-   "use": "PADIS 2018 and 2025 focused update: recommendation statements; licence RED/unverified"
-  }
- ],
- "objectives": [
-  "Assess pain and sedation with validated tools at the ordered frequency.",
-  "Record the target and actual score and report persistent deviation.",
-  "Take part in daily awakening trials safely when ordered."
- ],
- "prerequisites": [
-  "Pain assessment (SK-25)"
- ],
- "sections": {
-  "safety": {
-   "support": "partial",
-   "items": [
+  "skill_id": "SK-23",
+  "number": 23,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Sedation assessment",
+  "category": "assessment",
+  "topic_drafts": [
+    "D03-T09"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Perform the daily sedation interruption or spontaneous awakening trial when ordered and the patient is suitable, with team safety checks; watch for agitation, distress, desaturation or haemodynamic change and follow the protocol for stopping or restarting.",
-     "support": "partial",
-     "sources": [
-      "S-SCCM-PADIS"
-     ]
+      "id": "S-SCCM-PADIS",
+      "read": "partial",
+      "use": "PADIS 2018 and 2025 focused update: recommendation statements; licence RED/unverified"
     }
-   ]
+  ],
+  "objectives": [
+    "Assess pain and sedation with validated tools at the ordered frequency.",
+    "Record the target and actual score and report persistent deviation.",
+    "Take part in daily awakening trials safely when ordered."
+  ],
+  "prerequisites": [
+    "Pain assessment (SK-25)"
+  ],
+  "sections": {
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Perform the daily sedation interruption or spontaneous awakening trial when ordered and the patient is suitable, with team safety checks; watch for agitation, distress, desaturation or haemodynamic change and follow the protocol for stopping or restarting.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Assess at the ordered frequency with validated tools; record the target and actual score; report persistent deviation; reassess after every dose change and procedure.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "Where a protocol allows, titrate sedatives to the prescribed target score (nurse-protocolised targeted sedation).",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Titration authority is set by order or protocol; doses are not given in this library.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "assessment": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Scale level definitions (RASS, SAS) are not reproduced; use the unit-approved tool and its training.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "A sedation score describes observable arousal or agitation but does not by itself diagnose delirium. When altered behaviour is new, also assess oxygenation, pain, neurological change and other plausible causes, and escalate any acute deterioration rather than automatically adjusting the sedative.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Record scores, target and trend; reassess after any change.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "When the patient is too deeply sedated or otherwise unable to undergo the unit-approved delirium tool, document that the screen could not be completed and why, then reassess eligibility under the unit's validated tool instructions; do not record a reassuring negative result.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Report persistent deviation from target, agitation or over-sedation.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "For unexpectedly reduced responsiveness, marked new agitation or an unsafe deviation from target, assess airway, breathing, circulation, pain and prescribed medication delivery and obtain urgent clinician review. Changes in sedation are not a substitute for identifying causes of deterioration.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record tool, score, target, interventions and response per your unit's documentation standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "Assess at the ordered frequency with validated tools; record the target and actual score; report persistent deviation; reassess after every dose change and procedure.",
-     "support": "partial",
-     "sources": [
-      "S-SCCM-PADIS"
-     ]
+      "phase": "assessment",
+      "text": "Use the unit's validated tool and record target and actual score.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
     },
     {
-     "text": "Where a protocol allows, titrate sedatives to the prescribed target score (nurse-protocolised targeted sedation).",
-     "support": "partial",
-     "sources": [
-      "S-SCCM-PADIS"
-     ]
-    }
-   ]
-  },
-  "scope": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "assessment",
+      "text": "Assess pain as well as sedation.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
+    },
     {
-     "text": "Titration authority is set by order or protocol; doses are not given in this library.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "assessment": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Titrate only within the order or protocol.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
+    },
     {
-     "text": "Scale level definitions (RASS, SAS) are not reproduced; use the unit-approved tool and its training.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
+      "phase": "monitoring",
+      "text": "Reassess after every dose change and procedure.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
+    },
     {
-     "text": "Record scores, target and trend; reassess after any change.",
-     "support": "partial",
-     "sources": [
-      "S-SCCM-PADIS"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "escalation",
+      "text": "Report persistent deviation, agitation or over-sedation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
+    },
     {
-     "text": "Report persistent deviation from target, agitation or over-sedation.",
-     "support": "partial",
-     "sources": [
-      "S-SCCM-PADIS"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "documentation",
+      "text": "Record scores and interventions.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Record tool, score, target, interventions and response per your unit's documentation standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "assessment",
+      "text": "Document delirium screening separately from sedation/arousal scoring; if not assessable, record the reason rather than a false negative result.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "assessment",
-   "text": "Use the unit's validated tool and record target and actual score.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-SCCM-PADIS"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Assess pain as well as sedation.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-SCCM-PADIS"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Titrate only within the order or protocol.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-SCCM-PADIS"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Reassess after every dose change and procedure.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-SCCM-PADIS"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Report persistent deviation, agitation or over-sedation.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-SCCM-PADIS"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record scores and interventions.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "RASS/SAS definitions, dosing, neuromuscular blockade: not covered.",
-  "PADIS full text: recommendation statements only."
- ],
- "permissions": [
-  "SCCM PADIS and ICU Liberation material: permission required."
- ],
- "references": [
-  {
-   "id": "S-SCCM-PADIS",
-   "title": "PADIS guidelines (2018) and 2025 focused update (Anxiety, Agitation/Sedation, Delirium, Immobility, Sleep disruption)",
-   "publisher": "SCCM",
-   "version": "2018 guideline; 2025 focused update published Crit Care Med 2025;53(3):e711-e727 (search results; pain recommendations unchanged)",
-   "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "RED (unverified)",
-   "permission_required": "Verify"
-  }
- ]
+  ],
+  "gaps": [
+    "RASS/SAS definitions, dosing, neuromuscular blockade: not covered.",
+    "PADIS full text: recommendation statements only.",
+    "SCCM 2025 recommendation-level statements support an ICU-wide multifactorial response, but this lesson does not contain licensed CAM-ICU or ICDSC scoring instructions or independent patient-specific sedation orders."
+  ],
+  "permissions": [
+    "SCCM PADIS and ICU Liberation material: permission required."
+  ],
+  "references": [
+    {
+      "id": "S-SCCM-PADIS",
+      "title": "PADIS guidelines (2018) and 2025 focused update (Anxiety, Agitation/Sedation, Delirium, Immobility, Sleep disruption)",
+      "publisher": "SCCM",
+      "version": "2018 guideline; 2025 focused update published Crit Care Med 2025;53(3):e711-e727 (search results; pain recommendations unchanged)",
+      "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "RED (unverified)",
+      "permission_required": "Verify"
+    }
+  ]
 }

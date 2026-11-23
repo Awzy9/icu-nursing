@@ -2,13 +2,34 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { WorkingEntry } from "./model";
+import { checkProductionPublication } from "./publication-gate";
+import { isProductionWorkingRelease } from "./publication-policy";
 export type { WorkingEntry } from "./model";
-export const workingEditionEnabled = () => process.env.CONTENT_EDITION === "working";
+// A preview disclaimer is not a publication permission. Staging/local working
+// editions remain unchanged; a production working edition MUST have human
+// approval and licensed, hash-pinned content for every entry and lab dataset.
+export const workingEditionEnabled = () => {
+  if (process.env.CONTENT_EDITION !== "working") return false;
+  if (!isProductionWorkingRelease({
+    CONTENT_EDITION: process.env.CONTENT_EDITION,
+    NEXT_PUBLIC_APP_ENV: process.env.NEXT_PUBLIC_APP_ENV,
+    VERCEL_ENV: process.env.VERCEL_ENV,
+  })) return true;
+  try {
+    return checkProductionPublication(loadCatalog()).ready;
+  } catch {
+    // Missing register, generated catalog or clinical review must fail closed.
+    return false;
+  }
+};
 let catalog: WorkingEntry[] | undefined;
+function loadCatalog(): WorkingEntry[] {
+  catalog ??= JSON.parse(readFileSync(path.join(process.cwd(), "content", "working-catalog.json"), "utf8")) as WorkingEntry[];
+  return catalog;
+}
 export function workingContent(): WorkingEntry[] {
   if (!workingEditionEnabled()) return [];
-  catalog ??= JSON.parse(readFileSync(path.join(process.cwd(), "content", "working-catalog.json"), "utf8")) as WorkingEntry[];
-  return catalog!;
+  return loadCatalog();
 }
 export const workingEntry = (key: string) => /^[A-Z0-9-]+$/.test(key) ? workingContent().find((e) => e.key === key) : undefined;
 export const workingTypes = ["topics", "skills", "medications", "cases", "equipment", "practice", "questions"] as const;

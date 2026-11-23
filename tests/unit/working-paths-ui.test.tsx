@@ -1,6 +1,9 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 process.env.CONTENT_EDITION = "working";
+// Learning-path tests exercise an explicit local/staging preview, not clinical production.
+process.env.NEXT_PUBLIC_APP_ENV = "staging";
+process.env.VERCEL_ENV = "preview";
 import { LearningProvider } from "@/components/working/progress";
 import { PathsList, PathDetail } from "@/components/working/paths";
 import { findPath, resolveAllPaths } from "@/lib/working/paths";

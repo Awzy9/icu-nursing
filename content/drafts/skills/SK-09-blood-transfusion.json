@@ -1,339 +1,380 @@
 {
- "skill_id": "SK-09",
- "number": 9,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Blood transfusion",
- "category": "transfusion-nutrition",
- "topic_drafts": [
-  "D08-T03"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-AABB-COI-2024",
-   "read": "partial",
-   "use": "US Circular of Information (labelling document, not a nursing guideline): general instructions and side-effect sections read"
-  },
-  {
-   "id": "S-FDA-COI-2024",
-   "read": "partial",
-   "use": "FDA-recognised acceptable Circular"
-  },
-  {
-   "id": "S-OPENRN-ADV-CH3",
-   "read": "partial",
-   "use": "Open RN Advanced Skills 3.4 checklist (CC BY, educational textbook)"
-  },
-  {
-   "id": "S-NICE-NG24",
-   "read": "partial",
-   "use": "NICE NG24 monitoring recommendations"
-  },
-  {
-   "id": "S-BSH-ATR",
-   "read": "not_read",
-   "use": "BSH acute transfusion reactions guideline: not accessed"
-  }
- ],
- "objectives": [
-  "Verify order, patient identity and the container, and refuse to start if anything does not match.",
-  "Describe time limits and tubing rules from the Circular.",
-  "Recognise and stop for suspected reactions and escalate."
- ],
- "prerequisites": [
-  "Patient identification and documentation",
-  "Hand hygiene (SK-21)"
- ],
- "sections": {
-  "indications": {
-   "support": "local_protocol",
-   "items": [
+  "skill_id": "SK-09",
+  "number": 9,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Blood transfusion",
+  "category": "transfusion-nutrition",
+  "topic_drafts": [
+    "D08-T03"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Indications and thresholds for transfusion are prescriber decisions; this draft does not state thresholds per your unit's documentation standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "safety": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Check the order, patient identity and container as local policy requires; do not start if anything does not match; do not use a product that looks abnormal and contact the transfusion service.",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024",
-      "S-OPENRN-ADV-CH3"
-     ]
+      "id": "S-AABB-COI-2024",
+      "read": "partial",
+      "use": "US Circular of Information (labelling document, not a nursing guideline): general instructions and side-effect sections read"
     },
     {
-     "text": "Do not add medicines or solutions to the tubing or run them through it at the same time, except 0.9% sodium chloride unless approved; never use lactated Ringer's or other calcium-containing solutions with citrate-containing components (Circular).",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024"
-     ]
+      "id": "S-FDA-COI-2024",
+      "read": "partial",
+      "use": "FDA-recognised acceptable Circular"
     },
     {
-     "text": "Entering the container breaks the system: complete the transfusion within 4 hours of entry (Circular).",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024"
-     ]
+      "id": "S-OPENRN-ADV-CH3",
+      "read": "partial",
+      "use": "Open RN Advanced Skills 3.4 checklist (CC BY, educational textbook)"
     },
     {
-     "text": "Use a sterile clot filter as the Circular describes and local policy requires; warm blood only when clinically indicated with a cleared warming device.",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
+      "id": "S-NICE-NG24",
+      "read": "partial",
+      "use": "NICE NG24 monitoring recommendations"
+    },
     {
-     "text": "Use aseptic technique, monitor the patient as policy requires, and stop the transfusion and inform the team at the first sign of a reaction.",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024",
-      "S-NICE-NG24"
-     ]
-    }
-   ]
-  },
-  "scope": {
-   "support": "local_protocol",
-   "items": [
+      "id": "S-BSH-ATR",
+      "read": "not_read",
+      "use": "BSH acute transfusion reactions guideline: not accessed"
+    },
     {
-     "text": "Who may check, start and monitor transfusions is set by local policy and competence.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "S-ISBT-ATR-EDU",
+      "read": "partial",
+      "use": "ISBT educational module: first-response and documentation text read 2026-11-23 (not the figures or a formal guideline); independently paraphrased, local policy controls"
     }
-   ]
+  ],
+  "objectives": [
+    "Verify order, patient identity and the container, and refuse to start if anything does not match.",
+    "Describe time limits and tubing rules from the Circular.",
+    "Recognise and stop for suspected reactions and escalate."
+  ],
+  "prerequisites": [
+    "Patient identification and documentation",
+    "Hand hygiene (SK-21)"
+  ],
+  "sections": {
+    "indications": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Indications and thresholds for transfusion are prescriber decisions; this draft does not state thresholds per your unit's documentation standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Check the order, patient identity and container as local policy requires; do not start if anything does not match; do not use a product that looks abnormal and contact the transfusion service.",
+          "support": "partial",
+          "sources": [
+            "S-AABB-COI-2024",
+            "S-OPENRN-ADV-CH3"
+          ]
+        },
+        {
+          "text": "Do not add medicines or solutions to the tubing or run them through it at the same time, except 0.9% sodium chloride unless approved; never use lactated Ringer's or other calcium-containing solutions with citrate-containing components (Circular).",
+          "support": "partial",
+          "sources": [
+            "S-AABB-COI-2024"
+          ]
+        },
+        {
+          "text": "Entering the container breaks the system: complete the transfusion within 4 hours of entry (Circular).",
+          "support": "partial",
+          "sources": [
+            "S-AABB-COI-2024"
+          ]
+        },
+        {
+          "text": "Use a sterile clot filter as the Circular describes and local policy requires; warm blood only when clinically indicated with a cleared warming device.",
+          "support": "partial",
+          "sources": [
+            "S-AABB-COI-2024"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Use aseptic technique, monitor the patient as policy requires, and stop the transfusion and inform the team at the first sign of a reaction.",
+          "support": "partial",
+          "sources": [
+            "S-AABB-COI-2024",
+            "S-NICE-NG24"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Who may check, start and monitor transfusions is set by local policy and competence.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "equipment": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Administration sets, filters and warmers follow the unit's supplies and the manufacturer's instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "assessment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Observe the patient before, during and after transfusion at the frequency in local policy (NICE NG24 recommendation 1.13 on monitoring).",
+          "support": "partial",
+          "sources": [
+            "S-NICE-NG24"
+          ]
+        },
+        {
+          "text": "New symptoms during or around transfusion require assessment even when fever is absent or another diagnosis seems possible; monitor vital signs and distinguish a mild isolated rash from respiratory or circulatory compromise before any clinician-directed decision about treatment or product disposition.",
+          "support": "partial",
+          "sources": [
+            "S-ISBT-ATR-EDU"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Start rate, vital-sign timings and the step sequence follow the transfusion service's procedure; no graded source was read per your unit's documentation standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitor for fever, rigors, breathlessness, rash, hypotension, pain and changes in condition.",
+          "support": "partial",
+          "sources": [
+            "S-AABB-COI-2024"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "For a suspected acute transfusion reaction, stop the transfusion promptly, assess the patient and vital-sign trend, request urgent clinical review, re-check patient/product identification, and contact the transfusion service. Preserve the implicated component and set for investigation as directed by the blood bank; do not restart it on the nurse's own authority.",
+          "support": "partial",
+          "sources": [
+            "S-ISBT-ATR-EDU",
+            "S-AABB-COI-2024"
+          ]
+        },
+        {
+          "text": "Maintain venous access for assessment using the separate/new administration set and compatible saline specified by local policy; do not flush remaining blood in the implicated transfusion tubing into the patient. Exact line management and samples follow institutional transfusion-reaction procedures.",
+          "support": "partial",
+          "sources": [
+            "S-ISBT-ATR-EDU"
+          ]
+        }
+      ]
+    },
+    "complications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Febrile, allergic, haemolytic and respiratory reactions and bacterial contamination are described in the Circular's side-effect sections.",
+          "support": "partial",
+          "sources": [
+            "S-AABB-COI-2024"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record product identifiers, checks, times, observations, reactions and actions per unit and transfusion-service standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "equipment": {
-   "support": "local_protocol",
-   "items": [
+  "checklist": [
     {
-     "text": "Administration sets, filters and warmers follow the unit's supplies and the manufacturer's instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "assessment": {
-   "support": "partial",
-   "items": [
+      "phase": "preparation",
+      "text": "Check the order, patient identity and container against each other as local policy requires.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AABB-COI-2024",
+        "S-OPENRN-ADV-CH3"
+      ]
+    },
     {
-     "text": "Observe the patient before, during and after transfusion at the frequency in local policy (NICE NG24 recommendation 1.13 on monitoring).",
-     "support": "partial",
-     "sources": [
-      "S-NICE-NG24"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "preparation",
+      "text": "Inspect the product; do not use it if it looks abnormal and contact the transfusion service.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AABB-COI-2024"
+      ]
+    },
     {
-     "text": "Start rate, vital-sign timings and the step sequence follow the transfusion service's procedure; no graded source was read per your unit's documentation standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Use aseptic technique and the filter and warmer required by policy.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-AABB-COI-2024"
+      ]
+    },
     {
-     "text": "Monitor for fever, rigors, breathlessness, rash, hypotension, pain and changes in condition.",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Give nothing else through the transfusion tubing except what the Circular allows.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AABB-COI-2024"
+      ]
+    },
     {
-     "text": "Stop the transfusion, keep access, inform the prescriber and the transfusion service. First-line management beyond this is not drawn from a source read.",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024",
-      "S-BSH-ATR"
-     ]
-    }
-   ]
-  },
-  "complications": {
-   "support": "partial",
-   "items": [
+      "phase": "monitoring",
+      "text": "Complete the transfusion within 4 hours of entering the container.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AABB-COI-2024"
+      ]
+    },
     {
-     "text": "Febrile, allergic, haemolytic and respiratory reactions and bacterial contamination are described in the Circular's side-effect sections.",
-     "support": "partial",
-     "sources": [
-      "S-AABB-COI-2024"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "monitoring",
+      "text": "Observe the patient at the frequency in local policy.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NICE-NG24"
+      ]
+    },
     {
-     "text": "Record product identifiers, checks, times, observations, reactions and actions per unit and transfusion-service standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "escalation",
+      "text": "On a suspected reaction, stop the transfusion, promptly assess the patient and notify the responsible clinician and transfusion service.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ISBT-ATR-EDU",
+        "S-AABB-COI-2024"
+      ]
+    },
+    {
+      "phase": "escalation",
+      "text": "Maintain venous access using a new set per local protocol; do not push blood remaining in the implicated tubing into the patient; preserve the product and set for blood-bank review.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ISBT-ATR-EDU"
+      ]
+    },
+    {
+      "phase": "documentation",
+      "text": "Record identifiers, times, observations and any reaction.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Check the order, patient identity and container against each other as local policy requires.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-AABB-COI-2024",
-    "S-OPENRN-ADV-CH3"
-   ]
-  },
-  {
-   "phase": "preparation",
-   "text": "Inspect the product; do not use it if it looks abnormal and contact the transfusion service.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-AABB-COI-2024"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Use aseptic technique and the filter and warmer required by policy.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-AABB-COI-2024"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Give nothing else through the transfusion tubing except what the Circular allows.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-AABB-COI-2024"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Complete the transfusion within 4 hours of entering the container.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-AABB-COI-2024"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Observe the patient at the frequency in local policy.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-NICE-NG24"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Stop the transfusion and inform the team at the first sign of a reaction.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-AABB-COI-2024"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record identifiers, times, observations and any reaction.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "First-line actions after a reaction: BSH guideline not accessed.",
-  "Component-specific details: only general sections read.",
-  "Non-US jurisdictions: UK, European and other national guidance not read."
- ],
- "permissions": [
-  "AABB Circular: reproduction permission required.",
-  "Open RN: CC BY with attribution; check image licences."
- ],
- "references": [
-  {
-   "id": "S-AABB-COI-2024",
-   "title": "Circular of Information for the Use of Human Blood and Blood Components (June 2024)",
-   "publisher": "AABB, American Red Cross, America's Blood Centers, Armed Services Blood Program",
-   "version": "June 2024 (recognised by FDA Sept 2024)",
-   "url": "https://www.aabb.org/news-resources/resources/circular-of-information",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "RED",
-   "permission_required": "Yes (reproduction)"
-  },
-  {
-   "id": "S-FDA-COI-2024",
-   "title": "An Acceptable Circular of Information for the Use of Human Blood and Blood Components (guidance for industry, Sept 2024)",
-   "publisher": "US Food and Drug Administration (CBER)",
-   "version": "September 2024 (page current 2024-09-25)",
-   "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/acceptable-circular-information-use-human-blood-and-blood-components",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-OPENRN-ADV-CH3",
-   "title": "Nursing Advanced Skills, section 3.4 Checklist: Administer Blood Products",
-   "publisher": "Open RN",
-   "version": "2023 (WisTech Open)",
-   "url": "https://wtcs.pressbooks.pub/nursingadvancedskills/chapter/3-4-checklist-administration-of-blood-products/",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "GREEN",
-   "permission_required": "No"
-  },
-  {
-   "id": "S-NICE-NG24",
-   "title": "Blood transfusion (NG24): recommendations including 1.13 Monitoring for acute blood transfusion reactions",
-   "publisher": "NICE",
-   "version": "Published 2015-11-18; last updated 2026-02-26",
-   "url": "https://www.nice.org.uk/guidance/ng24/chapter/Patient-safety",
-   "accessed": "2026-11-15",
-   "read": "partial",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-BSH-ATR",
-   "title": "Guideline on the investigation and management of acute transfusion reactions (Br J Haematol 2023; earlier BCSH 2012)",
-   "publisher": "British Society for Haematology",
-   "version": "2023",
-   "url": "https://b-s-h.org.uk/guidelines",
-   "accessed": "2026-11-15",
-   "read": "not_read",
-   "licence_class": "RED (unverified)",
-   "permission_required": "Verify"
-  }
- ]
+  ],
+  "gaps": [
+    "First-line actions after a reaction: BSH guideline not accessed.",
+    "Component-specific details: only general sections read.",
+    "Non-US jurisdictions: UK, European and other national guidance not read."
+  ],
+  "permissions": [
+    "AABB Circular: reproduction permission required.",
+    "Open RN: CC BY with attribution; check image licences.",
+    "ISBT educational-module text is cite/paraphrase only until reuse terms have been verified; figures and algorithms are not reproduced."
+  ],
+  "references": [
+    {
+      "id": "S-AABB-COI-2024",
+      "title": "Circular of Information for the Use of Human Blood and Blood Components (June 2024)",
+      "publisher": "AABB, American Red Cross, America's Blood Centers, Armed Services Blood Program",
+      "version": "June 2024 (recognised by FDA Sept 2024)",
+      "url": "https://www.aabb.org/news-resources/resources/circular-of-information",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "RED",
+      "permission_required": "Yes (reproduction)"
+    },
+    {
+      "id": "S-FDA-COI-2024",
+      "title": "An Acceptable Circular of Information for the Use of Human Blood and Blood Components (guidance for industry, Sept 2024)",
+      "publisher": "US Food and Drug Administration (CBER)",
+      "version": "September 2024 (page current 2024-09-25)",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/acceptable-circular-information-use-human-blood-and-blood-components",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-OPENRN-ADV-CH3",
+      "title": "Nursing Advanced Skills, section 3.4 Checklist: Administer Blood Products",
+      "publisher": "Open RN",
+      "version": "2023 (WisTech Open)",
+      "url": "https://wtcs.pressbooks.pub/nursingadvancedskills/chapter/3-4-checklist-administration-of-blood-products/",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "GREEN",
+      "permission_required": "No"
+    },
+    {
+      "id": "S-NICE-NG24",
+      "title": "Blood transfusion (NG24): recommendations including 1.13 Monitoring for acute blood transfusion reactions",
+      "publisher": "NICE",
+      "version": "Published 2015-11-18; last updated 2026-02-26",
+      "url": "https://www.nice.org.uk/guidance/ng24/chapter/Patient-safety",
+      "accessed": "2026-11-15",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-BSH-ATR",
+      "title": "Guideline on the investigation and management of acute transfusion reactions (Br J Haematol 2023; earlier BCSH 2012)",
+      "publisher": "British Society for Haematology",
+      "version": "2023",
+      "url": "https://b-s-h.org.uk/guidelines",
+      "accessed": "2026-11-15",
+      "read": "not_read",
+      "licence_class": "RED (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-ISBT-ATR-EDU",
+      "title": "Adverse effects of transfusion - clinical assessment and management",
+      "publisher": "International Society of Blood Transfusion",
+      "version": "Undated web educational module; reaction response section read 2026-11-23",
+      "url": "https://www.isbtweb.org/resources/educational-modules-on-clinical-use-of-blood/adverse-effects-of-transfusion.html",
+      "accessed": "2026-11-23",
+      "read": "partial",
+      "licence_class": "YELLOW (reuse not verified)",
+      "permission_required": "Verify before reproduction"
+    }
+  ]
 }

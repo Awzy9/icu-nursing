@@ -40,6 +40,11 @@
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-UIC-EXTRA-2026",
+      "read": "partial",
+      "use": "UIC 2026 pharmacy educational review: extravasation first-response precautions only; clinician/vascular-access protocol, no antidote doses."
     }
   ],
   "sections": {
@@ -59,10 +64,11 @@
       "support": "partial",
       "items": [
         {
-          "text": "Check the extremities and the infusion site regularly and report coolness, pallor or leakage; do not stop or interrupt the infusion without an instruction.",
+          "text": "Monitor the infusion site and peripheral perfusion for coolness, pallor, swelling or leakage. Avoid unnecessary interruption of a functioning dopamine infusion, but if extravasation is suspected, stop delivery through the compromised cannula immediately, assess the patient, and activate the unit's emergency extravasation and clinician-directed alternative-access pathway.",
           "support": "partial",
           "sources": [
-            "L-DOPAMINE"
+            "L-DOPAMINE",
+            "S-UIC-EXTRA-2026"
           ]
         }
       ]
@@ -139,6 +145,14 @@
     "escalation": {
       "support": "partial",
       "items": [
+        {
+          "text": "Suspected dopamine extravasation requires stopping administration through the affected IV site, alerting the responsible clinician and pharmacy team, and arranging continuity of essential haemodynamic support through approved alternative access. Do not force-flush the cannula or remove it before the trained team reviews the local aspiration/antidote procedure.",
+          "support": "partial",
+          "sources": [
+            "L-DOPAMINE",
+            "S-UIC-EXTRA-2026"
+          ]
+        },
         {
           "text": "Escalate for cold or mottled limbs, new arrhythmia, falling blood pressure, an interrupted infusion or allergic signs.",
           "support": "partial",
@@ -234,11 +248,13 @@
   "gaps": [
     "Dose-dependent effects described in the label: deliberately not included.",
     "Dosing, preparation and administration details: deliberately not included.",
-    "No clinical practice guideline or nursing source was read for this entry."
+    "No clinical practice guideline or nursing source was read for this entry.",
+    "Extravasation treatment choice, cannula removal timing, access-site monitoring frequency and catheter eligibility remain local ICU/pharmacy protocol decisions."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-    "FDA infusion pump page: verify reuse terms."
+    "FDA infusion pump page: verify reuse terms.",
+    "UIC Sept 2026 extravasation review: independent paraphrase only; commercial reuse rights and pharmacy escalation protocol still require verification."
   ],
   "label_currency_check": {
     "checked": "2026-11-15",

@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM clinical practice guidelines: Early enteral nutrition in critically ill patients (Intensive Care Med 2017;43:380-398; CC BY-NC)", "SHEA/IDSA/APIC 2022 update on VAP prevention (feeding statements only)", "Phase 3 additions: NICE CG32 Nutrition support for adults (published 2006, updated 2017; recommendations 1.7.16–1.7.18 and monitoring table) – UK guideline; NHS Improvement Patient Safety Alert NHS/PSA/RE/2016/006 on nasogastric tube misplacement (22 July 2016; summary read) – England"]
-sources: [S-ESICM-EEN-2017, S-SHEA-VAP-2022, S-NICE-CG32, S-NHSE-NGT-2016]
+sources: [S-ESICM-EEN-2017, S-SHEA-VAP-2022, S-NICE-CG32, S-NHSE-NGT-2016, S-ADA-HOSP-2026]
 sources_not_read: [S-ASPEN]
-independently_written_note: "Original wording. The ESICM 2017 early enteral nutrition guideline and the VAP/VAE 2022 update were read in full text. ASPEN/SCCM and ESPEN guidelines named in the register were not accessible. Energy and protein targets, feed products and rates are NOT covered. In Phase 3, tube-placement verification was added from NICE CG32 (UK, updated 2017) and the 2016 NHS Improvement alert summary (England); the alert's supporting resource set, the earlier NPSA alerts (2011–2013), and ASPEN/ESPEN guidance were not read, and the verification methods are UK-specific."
+independently_written_note: "Original wording. The ESICM 2017 early enteral nutrition guideline and the VAP/VAE 2022 update were read in full text. ASPEN/SCCM full guideline not accessible. The ESPEN 2023 English practical guideline was located bibliographically on 2026-11-23 (with a 2026 Spanish-language edition) but its clinical content and permissions were not fully reviewed. Energy and protein targets, feed products and rates are NOT covered. In Phase 3, tube-placement verification was added from NICE CG32 (UK, updated 2017) and the 2016 NHS Improvement alert summary (England); the alert's supporting resource set, the earlier NPSA alerts (2011–2013), and ASPEN/ESPEN guidance were not read, and the verification methods are UK-specific."
 ---
 # Enteral feeding in the ICU – tolerance monitoring and aspiration prevention
 > DRAFT – NOT clinically reviewed. AI-generated. A dietitian reviewer is needed in addition to the standard roles.
@@ -25,6 +25,7 @@ Most critically ill adults who cannot eat are fed through a tube into the stomac
 3. Reduce aspiration risk through positioning and good practice.
 4. Respond to a large gastric aspirate and to diarrhoea appropriately within scope.
 5. Document and escalate; separate nursing actions from prescriber and dietitian decisions.
+6. Explain why unexpected interruption of nutrition in a patient receiving insulin needs prompt glucose assessment and team-directed medication review.
 
 ## 3. Why this matters in ICU nursing
 Poor nutrition and feeding complications affect recovery, infection risk and ventilation duration. Feeding problems often appear at the bedside first as vomiting, distension, high aspirates or diarrhoea.
@@ -47,8 +48,15 @@ Poor nutrition and feeding complications affect recovery, infection risk and ven
 - Work with the dietitian; report missed feeds and reasons.
 - Follow local policy for flushing and medicine administration through feeding tubes.
 
+## 7b. Feed interruption and insulin safety — interdisciplinary assessment (ADA 2026, evidence check only)
+- A feed that stops unexpectedly can interrupt carbohydrate delivery while previously administered insulin or other glucose-lowering medication remains active. Recognise the mismatch, assess the patient and glucose according to the approved local plan, and notify the prescribing and nutrition teams promptly. This is **not** an instruction to change insulin doses independently.
+- When the tube position is unconfirmed or aspiration is suspected, **do not restart feed or flush the tube** solely to maintain carbohydrate delivery. Obtain an urgent coordinated alternative nutrition/glucose plan through the responsible clinical team, using the unit's approved emergency pathway.
+- A patient who has a documented low glucose requires the unit's hypoglycaemia response with an assessment of mental state and safe swallowing. The treatment decision, timing of rechecks, any intravenous glucose and the insulin strategy depend on institutional orders/protocol. In type 1 diabetes, unintended interruption of basal insulin creates a distinct safety risk; the clinical team must address this without assuming nutritional and basal insulin are interchangeable.
+- Document the interruption time and cause, prescribed feed volume not received, available glucose observations, current insulin exposure, clinician notification and agreed ongoing monitoring. Cross-reference the unreviewed `SC-10` hypoglycaemia scenario for discussion only.
+- This draft records an independent, high-level safety synthesis. The ADA 2026 standards are a **permission-restricted evidence source**, not a licensed reproduction source; no dose, treatment algorithm, text excerpt or published table is incorporated.
+
 ## 8. Monitoring parameters
-Tolerance each shift or more often (vomiting, distension, aspirates, stools); volume delivered vs prescribed; head-of-bed angle; glucose; electrolytes; balance; tube position checks; skin at the tube site; signs of aspiration (cough, wheeze, rising oxygen need).
+Tolerance each shift or more often (vomiting, distension, aspirates, stools); volume delivered vs prescribed; interruptions of feeding while insulin is active; head-of-bed angle; glucose; electrolytes; balance; tube position checks; skin at the tube site; signs of aspiration (cough, wheeze, rising oxygen need).
 
 ## 9. Important findings – what the sources say (selected, summarised)
 | Topic | Statement | Nursing relevance |
@@ -163,11 +171,15 @@ D. Check aspirates only once a week to compromise between the two documents and 
 - Reintam Blaser A, Starkopf J, Alhazzani W, et al. Early enteral nutrition in critically ill patients: ESICM clinical practice guidelines. Intensive Care Med. 2017;43:380-398. doi:10.1007/s00134-016-4665-0. https://pmc.ncbi.nlm.nih.gov/articles/PMC5323492/ (accessed 2026-11-14)
 - Klompas M, et al. SHEA/IDSA/APIC VAP/VAE/NV-HAP prevention 2022 Update. Infect Control Hosp Epidemiol. 2022;43:687-713. https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/ (accessed 2026-11-14)
 
+- American Diabetes Association Professional Practice Committee for Diabetes. *Diabetes Care in the Hospital: Standards of Care in Diabetes—2026*. Diabetes Care. 2026;49(Suppl 1):S339–S355. https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/ (hypoglycaemia and feed-interruption sections inspected 2026-11-23; **publisher reproduction and commercial adaptation rights restricted; cite-only**).
+
 ## 19. Local protocol note
 Tube placement checks, aspirate thresholds, flushing, medicine administration, feed rates and glucose management follow the unit's policy and dietitian.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: a European society guideline (2017; mostly conditional recommendations, many based on expert opinion) and a 2022 prevention update. ASPEN/SCCM and ESPEN guidelines were not accessible; the ESICM guideline is dated.
+- Source quality: a European society guideline (2017; mostly conditional recommendations, many based on expert opinion) and a 2022 prevention update. **ESPEN source-status correction (2026-11-23):** an English 2023 *practical and partially revised guideline* is publicly listed by ESPEN (doi:10.1016/j.clnu.2023.07.011); a September 2026 *Nutrición Hospitalaria* Spanish-language edition (doi:10.20960/nh.06943) is also indexed. The 2026 article's English abstract describes the shortened/practical version rather than establishing an independent new English clinical guideline. **Neither full publication nor its tables were read for this draft**, so no ESPEN treatment, feeding-rate or nutritional-target claim is imported. Full text, edition comparison and commercial reuse permissions remain review tasks. ASPEN/SCCM guidelines were not accessible for full review; the ESICM guideline is dated.
 - International applicability: feeding precautions are transferable, but the tube-placement verification methods, initial imaging choice and pH cutoffs differ by national and local protocols. A 2026 systematic review found several clinical guidelines had low methodological quality.
+- Added only as a safety recognition gap: interrupted nutrition during active insulin treatment needs glucose surveillance and prompt interdisciplinary review; no insulin/feed interruption prescription or bedside treatment algorithm is taught here. ADA copyright and commercial re-use limitations remain unresolved.
 - Not covered: energy and protein targets, parenteral nutrition, non-UK placement verification methods and alternatives (for example ultrasound or electromagnetic guidance), the NHS alert's resource set and earlier NPSA alerts, refeeding, medicine administration via tubes.
+- Evidence/version reconciliation required: https://pubmed.ncbi.nlm.nih.gov/37517372/ (ESPEN English 2023), https://pubmed.ncbi.nlm.nih.gov/42549877/ (ESPEN Spanish 2026). These URLs are **bibliographic signposts only**, not references supporting a new bedside regimen.
 - Open questions for reviewers (dietitian, CCP, NE, BN): whether the unit measures gastric aspirates at all, at what interval and which thresholds trigger action (neither source gives a bedside protocol; the 500 mL/6 h figure is a conditional, expert-opinion suggestion for delaying feeding, not a universal stop rule); local approved tube-placement check and who may perform it; post-pyloric access responsibilities.

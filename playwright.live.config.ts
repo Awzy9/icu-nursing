@@ -10,8 +10,12 @@ export default defineConfig({
   timeout: 120_000,
   workers: 1,
   fullyParallel: false,
+  // Cloudflare's public test widget is external to the local Supabase stack.
+  // One ordinary isolated-CI retry preserves the real widget + server check.
+  // Hosted/dev runs are NOT retried and neither mode injects a test token.
+  retries: process.env.LIVE_TARGET === "isolated" && process.env.CAPTCHA_MODE === "test" ? 1 : 0,
   reporter: [["list"]],
-  use: { baseURL: `http://localhost:${port}`, trace: "off", launchOptions: { executablePath } },
+  use: { baseURL: `http://localhost:${port}`, trace: "retain-on-failure", launchOptions: { executablePath } },
   projects: [{ name: "desktop", use: { viewport: { width: 1280, height: 900 }, launchOptions: { executablePath } } }],
   webServer: {
     command: `npx next start -p ${port}`,

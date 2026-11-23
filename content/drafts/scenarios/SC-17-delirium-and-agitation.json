@@ -1,269 +1,282 @@
 {
- "scenario_id": "SC-17",
- "number": 17,
- "title": "Delirium and agitation",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "neurocritical",
- "difficulty": 2,
- "learning_objectives": [
-  "Recognise changes that may indicate delirium, including hypoactive delirium, and arrange an assessment with the critical-care tool.",
-  "Use verbal and non-verbal de-escalation and reorientation before any medicine is considered.",
-  "Recognise that diagnosis and medicines are for the responsible clinicians.",
-  "Continue prevention measures and document."
- ],
- "related": {
-  "skills": [
-   "SK-23",
-   "SK-25"
+  "scenario_id": "SC-17",
+  "number": 17,
+  "title": "Delirium and agitation",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "neurocritical",
+  "difficulty": 2,
+  "learning_objectives": [
+    "Recognise an acute behavioural change as a trigger to assess immediate physiological and neurological safety, not to assume a confirmed delirium diagnosis.",
+    "Use verbal and non-verbal de-escalation and reorientation before any medicine is considered.",
+    "Recognise that diagnosis and medicines are for the responsible clinicians.",
+    "Continue prevention measures and document.",
+    "Distinguish ICU-specific evidence uncertainty about antipsychotics from NICE's limited use in selected distressed hospital patients."
   ],
-  "medications": [
-   "MD-38"
+  "related": {
+    "skills": [
+      "SK-23",
+      "SK-25"
+    ],
+    "medications": [
+      "MD-38"
+    ],
+    "topic_drafts": [
+      "D03-T10"
+    ]
+  },
+  "sources": [
+    {
+      "id": "N-NICE-CG103",
+      "read": "partial",
+      "use": "NICE CG103 (updated January 2023): recommendations on recognising, preventing, assessing and initially managing delirium"
+    },
+    {
+      "id": "L-HALOPERIDOL",
+      "read": "full",
+      "use": "FDA haloperidol label: QT and cardiovascular warnings"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
+    },
+    {
+      "id": "S-SCCM-PADIS",
+      "read": "partial",
+      "use": "SCCM 2018 PADIS and 2025 focused update official recommendation webpages read (not full publications); ICU delirium drug uncertainty and rehabilitation statements only; source reuse permission restricted."
+    }
   ],
-  "topic_drafts": [
-   "D03-T10"
-  ]
- },
- "sources": [
-  {
-   "id": "N-NICE-CG103",
-   "read": "partial",
-   "use": "NICE CG103 (updated January 2023): recommendations on recognising, preventing, assessing and initially managing delirium"
-  },
-  {
-   "id": "L-HALOPERIDOL",
-   "read": "full",
-   "use": "FDA haloperidol label: QT and cardiovascular warnings"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
+  "required_sources": [
+    "Full critical-care delirium evidence review (SCCM 2018/2025 PADIS full publications and 2026 national updates) and unit's validated delirium tool protocol",
+    "Licence terms and training requirements for CAM-ICU and ICDSC (not read)",
+    "Unit delirium and agitation protocol and medicine policy"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "The tools are named only; their items and scoring are not reproduced and were not read.",
+    "Doses, routes and durations of any medicine are deliberately absent; NICE places medicine use after failed de-escalation and with prescriber and MHRA safety considerations.",
+    "NICE CG103 covers hospital and long-term care in the UK; critical-care-specific sedation and pain management were not read.",
+    "2025 SCCM PADIS focused update recommendation webpages have been reviewed but not full evidence tables or validated CAM-ICU/ICDSC tool instructions; antipsychotic evidence is inconclusive and clinician-specific decisions remain necessary."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "NICE: Notice of rights not read; paraphrase only.",
+    "S-SCCM-PADIS is RED, cite-only; no copyrighted tool questions, figures, scoring rules or guideline tables reproduced."
+  ],
+  "setting": "A fictional adult on a fictional critical care unit.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "A patient who was calm yesterday is now restless at night, pulling at tubing and not following simple requests. A colleague says the patient is just difficult.",
+      "prompt": "What do you do first?",
+      "observations": [
+        {
+          "key": "behaviour",
+          "label": "Behaviour",
+          "value": "Restless, pulling at tubing"
+        },
+        {
+          "key": "attention",
+          "label": "Attention",
+          "value": "Poor, fluctuating"
+        },
+        {
+          "key": "onset",
+          "label": "Change",
+          "value": "New since yesterday"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the patient and protect immediate safety, assess airway, breathing, oxygenation, pain and new physiological or neurological changes, seek urgent review for possible deterioration, and arrange a trained ICU delirium screen when the patient's arousal permits.",
+          "points": 2,
+          "next": 2,
+          "scope": "assessment",
+          "feedback": "A new mental-status or behaviour change is not automatically delirium. The nursing response first assesses acute threats and potentially reversible contributors, protects lines and the patient, and escalates promptly when deterioration is possible. Trained staff use the unit-approved CAM-ICU or ICDSC protocol at an assessable level of arousal; the responsible clinician evaluates the diagnosis.",
+          "consequence": "The patient is protected and the team evaluates causes while appropriately trained staff perform a suitable delirium screen.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103",
+            "S-SCCM-PADIS",
+            "S-AHRQ-TS"
+          ]
+        },
+        {
+          "text": "Treat it as a personality issue and settle the patient with a sedative from the ward stock.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "A recent change needs assessing, not labelling; medicines are prescribed, and NICE places them after de-escalation has failed.",
+          "consequence": "The behaviour worsens and the cause is not looked for.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103"
+          ]
+        },
+        {
+          "text": "Wait until the next shift to see whether the patient settles.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "NICE says to assess promptly once changes are noticed.",
+          "consequence": "The delirium goes unassessed overnight.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "The clinician has diagnosed delirium. The patient is distressed and frightened and tries to climb out of bed.",
+      "prompt": "What is the right approach?",
+      "observations": [
+        {
+          "key": "behaviour",
+          "label": "Behaviour",
+          "value": "Distressed, trying to get out of bed"
+        },
+        {
+          "key": "diagnosis",
+          "label": "Diagnosis",
+          "value": "Delirium, made by the clinician"
+        },
+        {
+          "key": "family",
+          "label": "Family",
+          "value": "Available by phone"
+        }
+      ],
+      "options": [
+        {
+          "text": "Remain with the frightened patient, use calm reorientation and non-drug de-escalation, review pain and physical needs with the team, involve family or sensory aids when helpful, and urgently escalate persistent danger. Any sedation or antipsychotic decision follows an authorised assessment and order.",
+          "points": 2,
+          "next": 3,
+          "scope": "escalation",
+          "feedback": "NICE advocates reorientation and de-escalation, but the SCCM 2025 ICU focused update could not recommend for or against antipsychotics over usual care for established ICU delirium. This is uncertainty, not a routine instruction to use or avoid a specific agent. Harmful behaviour, pain or medical instability require urgent assessment; drug selection and ECG/QT risk are clinician/pharmacy decisions.",
+          "consequence": "The patient calms a little and the team reviews the underlying causes.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103",
+            "S-SCCM-PADIS",
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "Give haloperidol from stock as soon as the patient becomes distressed.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Do not administer an antipsychotic without a qualified assessment and order. SCCM's 2025 adult ICU review found insufficient evidence to recommend for or against antipsychotics as routine delirium treatment; the product label includes important ECG/QT and other safety risks. Immediate danger still needs an urgent team response.",
+          "consequence": "The medicine is given without an order and without the checks the label warns about.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103",
+            "S-SCCM-PADIS",
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "Leave the patient alone so that nothing provokes them.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "Staying away leaves the patient frightened and at risk; NICE advises communication, reorientation and reassurance.",
+          "consequence": "The patient's distress and risk increase.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "The patient is calmer. The team is looking for the cause of the delirium.",
+      "prompt": "What should you continue to do?",
+      "observations": [
+        {
+          "key": "behaviour",
+          "label": "Behaviour",
+          "value": "Calmer"
+        },
+        {
+          "key": "environment",
+          "label": "Environment",
+          "value": "Clock and calendar not yet visible"
+        },
+        {
+          "key": "team",
+          "label": "Care team",
+          "value": "Several different staff in recent shifts"
+        }
+      ],
+      "options": [
+        {
+          "text": "Continue a team-led multicomponent care plan: reorientation, sleep protection, pain review, sensory aids, mobility when safe, and family engagement. Monitor for quieter hypoactive delirium, document changes in arousal and screening eligibility, and report new physiological or neurological deterioration promptly.",
+          "points": 2,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "Non-drug care and reassessment continue even after visible agitation settles; a calm or withdrawn patient can still have delirium or another acute problem. The SCCM 2025 update conditionally favors enhanced rehabilitation over usual care but does not specify a bedside dose or universal schedule, so mobility requires individualized team safety checks.",
+          "consequence": "The patient is better orientated and the record is complete for the next shift.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103",
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "Stop reorientation because it is not a treatment.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "NICE recommends communication and reorientation as part of managing delirium.",
+          "consequence": "The patient becomes disoriented again.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103"
+          ]
+        },
+        {
+          "text": "Move the patient to a quieter room away from the familiar team.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "NICE advises avoiding moving people unless absolutely necessary and keeping a familiar team.",
+          "consequence": "The move disorients the patient further.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-CG103"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "New agitation or withdrawal can reflect delirium, pain, oxygenation problems, medication effects or other acute deterioration: assess and urgently escalate possible threats first.",
+      "Use an authorised ICU delirium screen only when appropriate and by trained staff; final clinical diagnosis and sedative decisions are not made by an unvalidated case score.",
+      "Reorientation, sleep protection, sensory support, family participation and individualized safe mobility are non-drug measures that require ongoing reassessment.",
+      "SCCM's 2025 focused update could not recommend for or against antipsychotics over usual care in adult ICU delirium; no routine haloperidol instruction follows from a positive screen."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-23"
+      },
+      {
+        "kind": "medication",
+        "code": "MD-38"
+      }
+    ]
   }
- ],
- "required_sources": [
-  "Critical-care delirium guidance read in full (for example PADIS statements on prevention, sedation and mobilisation)",
-  "Licence terms and training requirements for CAM-ICU and ICDSC (not read)",
-  "Unit delirium and agitation protocol and medicine policy"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "The tools are named only; their items and scoring are not reproduced and were not read.",
-  "Doses, routes and durations of any medicine are deliberately absent; NICE places medicine use after failed de-escalation and with prescriber and MHRA safety considerations.",
-  "NICE CG103 covers hospital and long-term care in the UK; critical-care-specific sedation and pain management were not read."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "NICE: Notice of rights not read; paraphrase only."
- ],
- "setting": "A fictional adult on a fictional critical care unit.",
- "steps": [
-  {
-   "position": 1,
-   "info": "A patient who was calm yesterday is now restless at night, pulling at tubing and not following simple requests. A colleague says the patient is just difficult.",
-   "prompt": "What do you do first?",
-   "observations": [
-    {
-     "key": "behaviour",
-     "label": "Behaviour",
-     "value": "Restless, pulling at tubing"
-    },
-    {
-     "key": "attention",
-     "label": "Attention",
-     "value": "Poor, fluctuating"
-    },
-    {
-     "key": "onset",
-     "label": "Change",
-     "value": "New since yesterday"
-    }
-   ],
-   "options": [
-    {
-     "text": "Treat the recent change as possible delirium, make sure the patient is safe, carry out or request an assessment with the unit's critical-care delirium tool by someone competent, and report the findings to the team.",
-     "points": 2,
-     "next": 2,
-     "scope": "assessment",
-     "feedback": "NICE says recent changes in cognition, behaviour or movement should prompt an assessment, and that in critical care CAM-ICU or ICDSC is used by a competent practitioner, with the final diagnosis made by a clinician with the right expertise.",
-     "consequence": "The tool assessment is done and the responsible clinician is told.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Treat it as a personality issue and settle the patient with a sedative from the ward stock.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "A recent change needs assessing, not labelling; medicines are prescribed, and NICE places them after de-escalation has failed.",
-     "consequence": "The behaviour worsens and the cause is not looked for.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103"
-     ]
-    },
-    {
-     "text": "Wait until the next shift to see whether the patient settles.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "NICE says to assess promptly once changes are noticed.",
-     "consequence": "The delirium goes unassessed overnight.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The clinician has diagnosed delirium. The patient is distressed and frightened and tries to climb out of bed.",
-   "prompt": "What is the right approach?",
-   "observations": [
-    {
-     "key": "behaviour",
-     "label": "Behaviour",
-     "value": "Distressed, trying to get out of bed"
-    },
-    {
-     "key": "diagnosis",
-     "label": "Diagnosis",
-     "value": "Delirium, made by the clinician"
-    },
-    {
-     "key": "family",
-     "label": "Family",
-     "value": "Available by phone"
-    }
-   ],
-   "options": [
-    {
-     "text": "Stay with the patient, use calm verbal and non-verbal de-escalation, explain where they are, who they are and what your role is, involve family if possible, report ongoing distress or risk to the team, and give any medicine only if it has been prescribed.",
-     "points": 2,
-     "next": 3,
-     "scope": "escalation",
-     "feedback": "NICE says to try verbal and non-verbal de-escalation first, give effective communication and reorientation, consider involving family, and only consider short-term medicine if de-escalation fails; the prescriber decides.",
-     "consequence": "The patient calms a little and the team reviews the underlying causes.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103",
-      "L-HALOPERIDOL"
-     ]
-    },
-    {
-     "text": "Give haloperidol from stock as soon as the patient becomes distressed.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Medicines are prescribed after de-escalation has been tried, with attention to safety warnings such as QT effects.",
-     "consequence": "The medicine is given without an order and without the checks the label warns about.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103",
-      "L-HALOPERIDOL"
-     ]
-    },
-    {
-     "text": "Leave the patient alone so that nothing provokes them.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "Staying away leaves the patient frightened and at risk; NICE advises communication, reorientation and reassurance.",
-     "consequence": "The patient's distress and risk increase.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The patient is calmer. The team is looking for the cause of the delirium.",
-   "prompt": "What should you continue to do?",
-   "observations": [
-    {
-     "key": "behaviour",
-     "label": "Behaviour",
-     "value": "Calmer"
-    },
-    {
-     "key": "environment",
-     "label": "Environment",
-     "value": "Clock and calendar not yet visible"
-    },
-    {
-     "key": "team",
-     "label": "Care team",
-     "value": "Several different staff in recent shifts"
-    }
-   ],
-   "options": [
-    {
-     "text": "Keep up the prevention measures: familiar staff where possible, clock and calendar in view, reorientation, hydration, mobility as the team allows, avoiding unnecessary catheters, and watch for quiet, withdrawn changes that suggest hypoactive delirium; document the diagnosis and the response.",
-     "points": 2,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "NICE lists a tailored multicomponent package, vigilance for hypoactive delirium and documentation of the diagnosis.",
-     "consequence": "The patient is better orientated and the record is complete for the next shift.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103"
-     ]
-    },
-    {
-     "text": "Stop reorientation because it is not a treatment.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "NICE recommends communication and reorientation as part of managing delirium.",
-     "consequence": "The patient becomes disoriented again.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103"
-     ]
-    },
-    {
-     "text": "Move the patient to a quieter room away from the familiar team.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "NICE advises avoiding moving people unless absolutely necessary and keeping a familiar team.",
-     "consequence": "The move disorients the patient further.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-CG103"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "New confusion, restlessness or withdrawal can be delirium: assess with the critical-care tool and report.",
-   "De-escalate, reorientate and involve family before any medicine; medicines are prescribed.",
-   "Keep prevention measures going, watch for hypoactive delirium and document."
-  ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-23"
-   },
-   {
-    "kind": "medication",
-    "code": "MD-38"
-   }
-  ]
- }
 }

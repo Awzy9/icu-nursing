@@ -1,307 +1,316 @@
 {
- "scenario_id": "SC-16",
- "number": 16,
- "title": "Acute hypotension",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "cardiovascular",
- "difficulty": 2,
- "learning_objectives": [
-  "Respond to a low blood-pressure reading by assessing the patient, not only the number.",
-  "Recognise a pattern of low pressure with a fast, weak pulse and cool skin as a sign of low blood volume or shock, and report it urgently.",
-  "Review infusions and recent medicines that could be contributing and tell the prescriber.",
-  "Leave fluids and vasopressor changes to the prescriber and protocol."
- ],
- "related": {
-  "skills": [
-   "SK-01",
-   "SK-22",
-   "SK-12"
+  "scenario_id": "SC-16",
+  "number": 16,
+  "title": "Acute hypotension",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "cardiovascular",
+  "difficulty": 2,
+  "learning_objectives": [
+    "For new low blood pressure plus altered mental status, assess the patient immediately and call for urgent help in parallel, not after several observation rounds.",
+    "Recognise abnormal mentation, capillary refill, skin temperature and urine output as perfusion concerns requiring urgent team assessment; no single reading proves shock subtype.",
+    "Review infusions and recent medicines that could be contributing and tell the prescriber.",
+    "Leave fluids and vasopressor changes to the prescriber and protocol."
   ],
-  "medications": [
-   "MD-30",
-   "MD-01"
+  "related": {
+    "skills": [
+      "SK-01",
+      "SK-22",
+      "SK-12"
+    ],
+    "medications": [
+      "MD-30",
+      "MD-01"
+    ],
+    "topic_drafts": [
+      "D02-T04",
+      "D02-T08"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S-OPENRN-FUND-CH15-6",
+      "read": "full",
+      "use": "Open RN Nursing Fundamentals 15.6: hypotension with a fast, weak pulse as hallmark of fluid volume deficit; urine output; impending shock needs emergent care"
+    },
+    {
+      "id": "S-ESICM-SHOCK-2014",
+      "read": "full",
+      "use": "ESICM consensus (2014, dated): shock recognition and monitoring items"
+    },
+    {
+      "id": "L-PHENYLEPHRINE",
+      "read": "full",
+      "use": "FDA label: infusion-site and rhythm cautions"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "NEWS2: escalating deterioration"
+    },
+    {
+      "id": "S-CDC-BSI-2011",
+      "read": "full",
+      "use": "CDC 2011: pressure monitoring system statements (not used for reading comparisons)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
+    },
+    {
+      "id": "S-ESICM-SHOCK-2025",
+      "read": "partial",
+      "use": "ESICM updated 2025 adult shock guideline: society publication notice and PubMed abstract/key summary reviewed 2026-11-23, not its full recommendation tables. Cite-only, publisher reuse restricted."
+    }
   ],
-  "topic_drafts": [
-   "D02-T04",
-   "D02-T08"
-  ]
- },
- "sources": [
-  {
-   "id": "S-OPENRN-FUND-CH15-6",
-   "read": "full",
-   "use": "Open RN Nursing Fundamentals 15.6: hypotension with a fast, weak pulse as hallmark of fluid volume deficit; urine output; impending shock needs emergent care"
-  },
-  {
-   "id": "S-ESICM-SHOCK-2014",
-   "read": "full",
-   "use": "ESICM consensus (2014, dated): shock recognition and monitoring items"
-  },
-  {
-   "id": "L-PHENYLEPHRINE",
-   "read": "full",
-   "use": "FDA label: infusion-site and rhythm cautions"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "NEWS2: escalating deterioration"
-  },
-  {
-   "id": "S-CDC-BSI-2011",
-   "read": "full",
-   "use": "CDC 2011: pressure monitoring system statements (not used for reading comparisons)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
+  "required_sources": [
+    "Independent nursing/medical review of full ESICM 2025 shock evidence and local emergency response policy; publisher commercial reuse clearance if needed",
+    "Unit protocols for escalation, fluids and vasopressors",
+    "A source read in full on comparing an arterial reading with a cuff reading"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "Causes and treatment of hypotension are not drawn from a full guideline; the scenario keeps to assessment, review of infusions, escalation and monitoring.",
+    "A step comparing an arterial and a cuff reading is absent because no source read supports it.",
+    "Numeric reporting thresholds in the Open RN text are generic and are not written.",
+    "The 2025 ESICM guideline was checked at society summary/abstract level only, and the publisher restricts commercial reproduction; all scenario-level nurse actions and scoring still need independent clinical validation."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "S-ESICM-SHOCK-2025 is RED citation-only; no guideline tables, figures or wording reused."
+  ],
+  "setting": "A fictional adult in a fictional intensive care unit with a drain and a recent episode of diarrhoea, on routine infusions.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "The monitor alarms for a low blood pressure. The patient is drowsy and does not answer as quickly as an hour ago.",
+      "prompt": "What do you do first?",
+      "observations": [
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Lower than usual"
+        },
+        {
+          "key": "hr",
+          "label": "Heart rate",
+          "value": "Faster than usual"
+        },
+        {
+          "key": "mental",
+          "label": "Mental state",
+          "value": "Slower to respond"
+        },
+        {
+          "key": "alarm",
+          "label": "Alarm",
+          "value": "Low pressure"
+        }
+      ],
+      "options": [
+        {
+          "text": "Assess the patient immediately for airway, breathing and perfusion, and activate urgent clinical help now for new hypotension with reduced responsiveness. Ask a colleague to verify the blood-pressure signal, obtain repeat readings and review current infusions while you remain with the patient.",
+          "points": 2,
+          "next": 2,
+          "scope": "assessment",
+          "feedback": "Altered responsiveness plus hypotension is a potentially unstable presentation. Patient-first ABC/perfusion assessment and immediate clinical escalation must happen together with checking a measurement for error, not after repeated observation. The ESICM 2025 summary emphasizes serial clinical perfusion assessment; diagnosis and treatment remain team-led.",
+          "consequence": "Emergency help is summoned immediately while bedside reassessment and signal checks continue in parallel.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-FUND-CH15-6",
+            "S-ESICM-SHOCK-2025",
+            "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "Assume the reading is wrong, silence the alarm and check again at the next routine round.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "A fall in pressure with a faster pulse and altered mental state must be assessed at the bedside and cannot be dismissed as artefact.",
+          "consequence": "The patient worsens while the alarm is silenced.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-FUND-CH15-6"
+          ]
+        },
+        {
+          "text": "Give a prescribed fluid bolus from the ward stock straight away.",
+          "points": 0,
+          "next": 2,
+          "scope": "order_or_protocol_required",
+          "feedback": "Fluids are given according to an order or protocol after assessment; the nurse assesses and reports.",
+          "consequence": "An unprescribed treatment is given before the cause is known.",
+          "support": "partial",
+          "sources": [
+            "S-ESICM-SHOCK-2014"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "The patient's pulse is fast and weak, the skin is cool and the urine output has been low. There has been a large amount of fluid lost in the drain and in diarrhoea during the shift. A vasopressor infusion is running.",
+      "prompt": "What is the best action now?",
+      "observations": [
+        {
+          "key": "pulse",
+          "label": "Pulse",
+          "value": "Fast and weak"
+        },
+        {
+          "key": "skin",
+          "label": "Skin",
+          "value": "Cool, clammy"
+        },
+        {
+          "key": "urine",
+          "label": "Urine output",
+          "value": "Low"
+        },
+        {
+          "key": "loss",
+          "label": "Fluid losses",
+          "value": "Large this shift"
+        }
+      ],
+      "options": [
+        {
+          "text": "Update the responding team urgently with SBAR: blood-pressure and pulse trends, mental state, capillary refill and skin findings, low urine output, drain and stool losses, active vasopressors and access-site findings. Continue patient assessment and execute only ordered or protocol-authorised care.",
+          "points": 2,
+          "next": 3,
+          "scope": "escalation",
+          "feedback": "Rapid trending and communication of tissue perfusion, losses and drug-delivery concerns help the responsible team determine the cause and safely direct resuscitation. Blood loss and diarrhoea are possible contributors, not sufficient evidence to diagnose only hypovolaemia.",
+          "consequence": "The clinician has what is needed to decide on fluids, the vasopressor and investigation of the cause.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-FUND-CH15-6",
+            "S-ESICM-SHOCK-2025",
+            "L-PHENYLEPHRINE",
+            "S-AHRQ-TS"
+          ]
+        },
+        {
+          "text": "Increase the vasopressor infusion yourself until the pressure rises.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Vasopressor changes are made as prescribed or per the unit's titration protocol; the label notes risks including slowed heart rate and infusion-site injury.",
+          "consequence": "The change is made without authority and the cause remains untreated.",
+          "support": "sourced",
+          "sources": [
+            "L-PHENYLEPHRINE"
+          ]
+        },
+        {
+          "text": "Tell the family the patient is just tired and carry on with the routine care.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "These findings suggest possible shock and need urgent reporting, not reassurance.",
+          "consequence": "The deterioration is not escalated.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-FUND-CH15-6"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "Urgent help was called at the start, but the team has not yet arrived. The pressure is still low and the patient is now confused with cold, clammy skin.",
+      "prompt": "What should you do now?",
+      "observations": [
+        {
+          "key": "mental",
+          "label": "Mental state",
+          "value": "Confused"
+        },
+        {
+          "key": "skin",
+          "label": "Skin",
+          "value": "Cold and clammy"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Still low"
+        },
+        {
+          "key": "team",
+          "label": "Team",
+          "value": "Not yet at the bedside"
+        }
+      ],
+      "options": [
+        {
+          "text": "Escalate again using the unit's emergency chain because the patient's confusion and poor perfusion persist, stay with the patient, reassess ABC and trend findings, and coordinate the urgent team's authorised investigation and treatment.",
+          "points": 2,
+          "next": null,
+          "scope": "escalation",
+          "feedback": "Ongoing confusion, poor perfusion and hypotension after a previous urgent call need repeated escalation and continuous reassessment, not silence or waiting for a routine review.",
+          "consequence": "The urgency is re-communicated and the responsible team attends to determine the cause and next intervention.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-FUND-CH15-6",
+            "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "Keep rechecking the pressure alone for a few more minutes before calling anyone.",
+          "points": 0,
+          "next": null,
+          "scope": "monitoring",
+          "feedback": "Monitoring continues, but waiting to escalate a patient with signs of impending shock delays emergency care.",
+          "consequence": "The delay in treatment worsens the patient's condition.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-FUND-CH15-6"
+          ]
+        },
+        {
+          "text": "Set the patient upright to improve breathing and leave to find a doctor.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "The patient should not be left alone, and positioning should follow the clinical situation and policy; escalate while staying with the patient.",
+          "consequence": "The patient is unobserved and becomes worse.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-FUND-CH15-6"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "Altered mentation with a new low blood pressure requires immediate patient assessment and urgent team activation; measurement verification and infusion checks proceed in parallel, never as reasons to delay help.",
+      "Use changing perfusion signs (mental status, skin and capillary refill, pulse, urine output) and source losses in a structured handover; do not infer a shock subtype solely from a fast pulse or one pressure value.",
+      "Review infusions and recent medicines, including infusion sites, and tell the prescriber.",
+      "Do not change vasopressors or give fluids on your own; report with SBAR and escalate early."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-01"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-22"
+      },
+      {
+        "kind": "medication",
+        "code": "MD-30"
+      }
+    ]
   }
- ],
- "required_sources": [
-  "A hypotension and shock guideline with nursing-level content, usable under a commercial licence",
-  "Unit protocols for escalation, fluids and vasopressors",
-  "A source read in full on comparing an arterial reading with a cuff reading"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Causes and treatment of hypotension are not drawn from a full guideline; the scenario keeps to assessment, review of infusions, escalation and monitoring.",
-  "A step comparing an arterial and a cuff reading is absent because no source read supports it.",
-  "Numeric reporting thresholds in the Open RN text are generic and are not written."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "setting": "A fictional adult in a fictional intensive care unit with a drain and a recent episode of diarrhoea, on routine infusions.",
- "steps": [
-  {
-   "position": 1,
-   "info": "The monitor alarms for a low blood pressure. The patient is drowsy and does not answer as quickly as an hour ago.",
-   "prompt": "What do you do first?",
-   "observations": [
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Lower than usual"
-    },
-    {
-     "key": "hr",
-     "label": "Heart rate",
-     "value": "Faster than usual"
-    },
-    {
-     "key": "mental",
-     "label": "Mental state",
-     "value": "Slower to respond"
-    },
-    {
-     "key": "alarm",
-     "label": "Alarm",
-     "value": "Low pressure"
-    }
-   ],
-   "options": [
-    {
-     "text": "Go to the patient, assess pulse, skin, mental state, breathing and urine output, check how the reading was taken and recheck it, and look at what infusions and medicines are running.",
-     "points": 2,
-     "next": 2,
-     "scope": "assessment",
-     "feedback": "Shock is recognised by signs of poor perfusion as well as by the pressure, and the nurse analyses vital signs, pulses, skin and mental status together; recent medicines and infusions are part of the picture.",
-     "consequence": "You gather a clear picture of the patient rather than a single number.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-FUND-CH15-6",
-      "S-ESICM-SHOCK-2014"
-     ]
-    },
-    {
-     "text": "Assume the reading is wrong, silence the alarm and check again at the next routine round.",
-     "points": 0,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "A fall in pressure with a faster pulse and altered mental state must be assessed at the bedside and cannot be dismissed as artefact.",
-     "consequence": "The patient worsens while the alarm is silenced.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-FUND-CH15-6"
-     ]
-    },
-    {
-     "text": "Give a prescribed fluid bolus from the ward stock straight away.",
-     "points": 0,
-     "next": 2,
-     "scope": "order_or_protocol_required",
-     "feedback": "Fluids are given according to an order or protocol after assessment; the nurse assesses and reports.",
-     "consequence": "An unprescribed treatment is given before the cause is known.",
-     "support": "partial",
-     "sources": [
-      "S-ESICM-SHOCK-2014"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The patient's pulse is fast and weak, the skin is cool and the urine output has been low. There has been a large amount of fluid lost in the drain and in diarrhoea during the shift. A vasopressor infusion is running.",
-   "prompt": "What is the best action now?",
-   "observations": [
-    {
-     "key": "pulse",
-     "label": "Pulse",
-     "value": "Fast and weak"
-    },
-    {
-     "key": "skin",
-     "label": "Skin",
-     "value": "Cool, clammy"
-    },
-    {
-     "key": "urine",
-     "label": "Urine output",
-     "value": "Low"
-    },
-    {
-     "key": "loss",
-     "label": "Fluid losses",
-     "value": "Large this shift"
-    }
-   ],
-   "options": [
-    {
-     "text": "Report to the responsible clinician with SBAR: the pressure and pulse pattern, skin, mental state, urine output, fluid losses, the infusions running and the infusion site, and ask for instructions.",
-     "points": 2,
-     "next": 3,
-     "scope": "escalation",
-     "feedback": "Low pressure with a faster pulse and a weak pulse are hallmark signs of low fluid volume; low urine output is reported; the phenylephrine label warns of infusion-site injury and slow heart rate during infusion.",
-     "consequence": "The clinician has what is needed to decide on fluids, the vasopressor and investigation of the cause.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-FUND-CH15-6",
-      "L-PHENYLEPHRINE",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Increase the vasopressor infusion yourself until the pressure rises.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Vasopressor changes are made as prescribed or per the unit's titration protocol; the label notes risks including slowed heart rate and infusion-site injury.",
-     "consequence": "The change is made without authority and the cause remains untreated.",
-     "support": "sourced",
-     "sources": [
-      "L-PHENYLEPHRINE"
-     ]
-    },
-    {
-     "text": "Tell the family the patient is just tired and carry on with the routine care.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "These findings suggest possible shock and need urgent reporting, not reassurance.",
-     "consequence": "The deterioration is not escalated.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-FUND-CH15-6"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The pressure is still low, and the patient is now confused with cold, clammy skin. The team has not yet arrived.",
-   "prompt": "What should you do now?",
-   "observations": [
-    {
-     "key": "mental",
-     "label": "Mental state",
-     "value": "Confused"
-    },
-    {
-     "key": "skin",
-     "label": "Skin",
-     "value": "Cold and clammy"
-    },
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Still low"
-    },
-    {
-     "key": "team",
-     "label": "Team",
-     "value": "Not yet at the bedside"
-    }
-   ],
-   "options": [
-    {
-     "text": "Call for urgent help according to the unit's escalation policy, say the patient may be going into shock, stay with the patient, continue close monitoring and prepare for the team's orders.",
-     "points": 2,
-     "next": null,
-     "scope": "escalation",
-     "feedback": "Signs of impending shock such as a raised pulse, pressure below baseline, cold clammy skin and confusion require emergent care; early warning systems support escalation of deterioration.",
-     "consequence": "The team arrives promptly and the patient is treated without further delay.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-FUND-CH15-6",
-      "S-RCP-NEWS2"
-     ]
-    },
-    {
-     "text": "Keep rechecking the pressure alone for a few more minutes before calling anyone.",
-     "points": 0,
-     "next": null,
-     "scope": "monitoring",
-     "feedback": "Monitoring continues, but waiting to escalate a patient with signs of impending shock delays emergency care.",
-     "consequence": "The delay in treatment worsens the patient's condition.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-FUND-CH15-6"
-     ]
-    },
-    {
-     "text": "Set the patient upright to improve breathing and leave to find a doctor.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "The patient should not be left alone, and positioning should follow the clinical situation and policy; escalate while staying with the patient.",
-     "consequence": "The patient is unobserved and becomes worse.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-FUND-CH15-6"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "Treat a low pressure as a prompt to assess the patient: pulse, skin, mental state, urine output and fluid losses.",
-   "Low pressure with a fast, weak pulse and cool skin suggests low volume or shock; confusion and cold, clammy skin are signs of impending shock that need emergent care.",
-   "Review infusions and recent medicines, including infusion sites, and tell the prescriber.",
-   "Do not change vasopressors or give fluids on your own; report with SBAR and escalate early."
-  ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-01"
-   },
-   {
-    "kind": "skill",
-    "code": "SK-22"
-   },
-   {
-    "kind": "medication",
-    "code": "MD-30"
-   }
-  ]
- }
 }

@@ -329,7 +329,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "debaab22a1877c30"
+   "hash": "cbd568a021b5bac8"
   },
   {
    "key": "D04-T02",
@@ -391,6 +391,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ADA-HOSP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-ESICM-EEN-2017",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -414,7 +419,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "e77a5cab1baee6ad"
+   "hash": "dc6490ad9774b457"
   },
   {
    "key": "D01-T12",
@@ -769,12 +774,17 @@
      "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "d614278004d7e9c6"
+   "hash": "e8c6eb36c8997ec1"
   },
   {
    "key": "D05-T16",
@@ -851,6 +861,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-CHEST-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
+     "id": "S-ATS-NIRS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-PERIEXT-2026",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -864,7 +884,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "7e672d8fa9316827"
+   "hash": "0416333470df778a"
   },
   {
    "key": "D02-T02",
@@ -904,12 +924,17 @@
   {
    "key": "D04-T06",
    "type": "topics",
-   "title": "Potassium disorders – acute hyperkalaemia in hospital (hypokalaemia only briefly)",
+   "title": "Potassium disorders – hyperkalaemia and introductory hypokalaemia safety",
    "domain": "Renal and Metabolic Care",
    "evidence_status": "stated_in_text",
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-NHS-SPS-HYPO-2024",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
+    },
     {
      "id": "S-OPENRN-FUND-CH15",
      "licence_class": "GREEN",
@@ -929,7 +954,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "fc190ff14c080d4b"
+   "hash": "3bb722c8fb8daa67"
   },
   {
    "key": "D04-T08",
@@ -974,12 +999,17 @@
   {
    "key": "D04-T09",
    "type": "topics",
-   "title": "Continuous renal replacement therapy (CRRT) in AKI – principles and nursing implications (machine and circuit management not covered)",
+   "title": "Continuous renal replacement therapy (CRRT) in AKI – principles and introductory circuit monitoring",
    "domain": "Renal and Metabolic Care",
    "evidence_status": "stated_in_text",
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "N-LHSC-CRRT-PRINCIPLES",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
     {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
@@ -989,7 +1019,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "2bc966db93e6bd1b"
+   "hash": "02924562438aceb6"
   },
   {
    "key": "D05-T01",
@@ -1139,7 +1169,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "39a734a0c0705f44"
+   "hash": "1c86af5c443095be"
   },
   {
    "key": "D03-T03",
@@ -1214,7 +1244,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "9ce7acd4c34ccf20"
+   "hash": "2b19668df19f3299"
   },
   {
    "key": "XQ-01",
@@ -1861,6 +1891,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISBT-ATR-EDU",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-NICE-NG24",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -1874,7 +1909,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c445cb8de5188bc9"
+   "hash": "78af25c7efb5013a"
   },
   {
    "key": "SK-10",
@@ -1992,9 +2027,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 0,
-   "hash": "57bec681362acf01"
+   "hash": "3172dc65a86599fb"
   },
   {
    "key": "SK-14",
@@ -2096,6 +2131,11 @@
      "verified": null
     },
     {
+     "id": "N-LHSC-CRRT-PRINCIPLES",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-CHS-CRRT",
      "licence_class": "RED",
      "verified": "2026-11-15"
@@ -2109,7 +2149,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "1317f16a45e349ee"
+   "hash": "6cf5423be5681f6d"
   },
   {
    "key": "SK-18",
@@ -2242,9 +2282,9 @@
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "e25b6ab681b3cf89"
+   "hash": "2839ef80ee4aec7b"
   },
   {
    "key": "SK-23",
@@ -2262,9 +2302,9 @@
     }
    ],
    "issues": [],
-   "gaps": 2,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "56a4291900956ee3"
+   "hash": "3e40f1e259fc2bc0"
   },
   {
    "key": "SK-24",
@@ -2349,12 +2389,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "51940c37382753df"
+   "hash": "9047d3b42304d859"
   },
   {
    "key": "MD-02",
@@ -2384,12 +2429,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "aa66a146e535754e"
+   "hash": "0f5325f961c4b748"
   },
   {
    "key": "MD-03",
@@ -2991,6 +3041,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NHS-SPS-HYPO-2024",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2999,7 +3054,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a2aee6e01833867c"
+   "hash": "2146fe3f171d604f"
   },
   {
    "key": "MD-20",
@@ -3032,9 +3087,9 @@
     }
    ],
    "issues": [],
-   "gaps": 6,
+   "gaps": 7,
    "required_sources": 0,
-   "hash": "041fda7c51a4f058"
+   "hash": "38104944d9005b92"
   },
   {
    "key": "MD-21",
@@ -3379,12 +3434,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "c2a366c838d105d5"
+   "hash": "b8c4b2536436fc0e"
   },
   {
    "key": "MD-31",
@@ -3414,12 +3474,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "97d6ab2a689e562c"
+   "hash": "6a0328e1f6c7bef2"
   },
   {
    "key": "MD-32",
@@ -4117,9 +4182,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 4,
-   "hash": "930881cadbd59249"
+   "hash": "8414693a706c785e"
   },
   {
    "key": "SC-02",
@@ -4241,6 +4306,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "N-NCBI-OPENRN-CHEST",
+     "licence_class": "GREEN",
+     "verified": null
+    },
+    {
      "id": "S-AARC-O2",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -4267,9 +4337,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
-   "required_sources": 2,
-   "hash": "71c3605c5e21a531"
+   "gaps": 6,
+   "required_sources": 3,
+   "hash": "44a34277c93954e3"
   },
   {
    "key": "SC-06",
@@ -4401,6 +4471,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ARUP-DIC",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ISTH-DIC-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-OPENRN-ADV-CH3",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -4417,9 +4497,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
-   "required_sources": 2,
-   "hash": "23eca93ecdb2ba8d"
+   "gaps": 7,
+   "required_sources": 3,
+   "hash": "4f6da27df4a269c0"
   },
   {
    "key": "SC-10",
@@ -4441,15 +4521,20 @@
      "verified": null
     },
     {
+     "id": "S-ADA-HOSP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 4,
-   "required_sources": 3,
-   "hash": "6cedc2554cfa8b98"
+   "gaps": 5,
+   "required_sources": 4,
+   "hash": "ba42a1a850a6584c"
   },
   {
    "key": "SC-11",
@@ -4466,20 +4551,20 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-UKKA-HK-2026-07",
-     "licence_class": "YELLOW",
-     "verified": null
-    },
-    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 6,
+   "gaps": 8,
    "required_sources": 3,
-   "hash": "43b36cf405649d27"
+   "hash": "62421d199036abb4"
   },
   {
    "key": "SC-12",
@@ -4571,15 +4656,20 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-ISBT-ATR-EDU",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-NICE-NG24",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 2,
-   "hash": "9e87b3df89a64b66"
+   "hash": "03cbfe0c53f96cd9"
   },
   {
    "key": "SC-15",
@@ -4607,9 +4697,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "83c7af97e5e141dc"
+   "hash": "c475e0f4c0f4a92a"
   },
   {
    "key": "SC-16",
@@ -4641,6 +4731,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15-6",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -4652,9 +4747,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 3,
-   "hash": "2c3024d1d7f4fa9a"
+   "hash": "9fcb8ababe19861b"
   },
   {
    "key": "SC-17",
@@ -4679,12 +4774,17 @@
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 3,
-   "hash": "c28c427308c4d156"
+   "hash": "1b63dbc9cb0e2d1a"
   },
   {
    "key": "SC-18",
@@ -4717,9 +4817,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
+   "gaps": 5,
    "required_sources": 2,
-   "hash": "615fbdbf11a84e06"
+   "hash": "2d349e31d2f7797a"
   },
   {
    "key": "SC-19",
@@ -4752,9 +4852,9 @@
     }
    ],
    "issues": [],
-   "gaps": 4,
-   "required_sources": 2,
-   "hash": "2f0c7e10a5094753"
+   "gaps": 5,
+   "required_sources": 3,
+   "hash": "cba979db80c0317c"
   },
   {
    "key": "SC-20",

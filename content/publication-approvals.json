@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "note": "No publication approvals exist. Do not add an approval until independent human clinical review, all commercial source permissions, and publisher sign-off are documented for the exact generated content SHA-256 and underlying source draft audit hash. A GitHub merge or successful CI does not constitute approval.",
+  "approvals": [],
+  "lab_approvals": []
+}
