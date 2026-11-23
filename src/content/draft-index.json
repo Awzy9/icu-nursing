@@ -329,7 +329,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "debaab22a1877c30"
+   "hash": "cbd568a021b5bac8"
   },
   {
    "key": "D04-T02",
@@ -419,7 +419,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "757c5391a004307f"
+   "hash": "dc6490ad9774b457"
   },
   {
    "key": "D01-T12",
@@ -2302,9 +2302,9 @@
     }
    ],
    "issues": [],
-   "gaps": 2,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "56a4291900956ee3"
+   "hash": "3e40f1e259fc2bc0"
   },
   {
    "key": "SK-24",
@@ -4764,12 +4764,17 @@
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 3,
-   "hash": "c28c427308c4d156"
+   "hash": "1b63dbc9cb0e2d1a"
   },
   {
    "key": "SC-18",
