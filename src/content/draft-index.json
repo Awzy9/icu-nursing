@@ -2384,12 +2384,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "51940c37382753df"
+   "hash": "9047d3b42304d859"
   },
   {
    "key": "MD-02",
@@ -2419,12 +2424,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UIC-EXTRA-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-23"
     }
    ],
    "issues": [],
-   "gaps": 3,
+   "gaps": 4,
    "required_sources": 0,
-   "hash": "aa66a146e535754e"
+   "hash": "0f5325f961c4b748"
   },
   {
    "key": "MD-03",
@@ -3026,6 +3036,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NHS-SPS-HYPO-2024",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3034,7 +3049,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a2aee6e01833867c"
+   "hash": "2146fe3f171d604f"
   },
   {
    "key": "MD-20",
@@ -4152,9 +4167,9 @@
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 4,
-   "hash": "930881cadbd59249"
+   "hash": "8414693a706c785e"
   },
   {
    "key": "SC-02",
