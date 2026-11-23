@@ -1327,6 +1327,20 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "3bb722c8fb8daa67",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NHS-SPS-HYPO-2024",
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T08": [
@@ -6424,6 +6438,19 @@
      "S-AHRQ-TS"
     ],
     "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "62421d199036abb4",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-AHRQ-TS",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 8,
     "required_sources": 3,
     "issues": 0
    }
