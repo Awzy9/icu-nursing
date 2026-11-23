@@ -2635,6 +2635,18 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "d571df4ae236c91b",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-23": [
@@ -4038,6 +4050,20 @@
      "S-RCP-NEWS2"
     ],
     "gaps": 6,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "38104944d9005b92",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 7,
     "required_sources": 0,
     "issues": 0
    }
@@ -6338,6 +6364,21 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "551efdad0bc77f93",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -6364,6 +6405,19 @@
      "S-KDIGO-AKI-2012"
     ],
     "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "c475e0f4c0f4a92a",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 5,
     "required_sources": 2,
     "issues": 0
    }
