@@ -1,4 +1,5 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
+import path from "node:path";
 import { describe, expect, it, vi } from "vitest";
 import { buildWorkingContent } from "../../scripts/build-working-content";
 import { contentRevisionHash, eligibleForProduction, isProductionWorkingRelease } from "@/lib/working/publication-policy";
@@ -38,13 +39,19 @@ describe("P1 batch 15: fail-closed clinical publication guard for web/mobile wor
     } finally {
       vi.unstubAllEnvs();
     }
-    const catalogApi = readFileSync("src/app/api/content/catalog/route.ts", "utf8");
-    const itemApi = readFileSync("src/app/api/content/catalog/[key]/route.ts", "utf8");
-    const labApi = readFileSync("src/app/api/content/labs/[name]/route.ts", "utf8");
-    const visualsApi = readFileSync("src/app/api/content/case-visuals/route.ts", "utf8");
-    for (const route of [catalogApi, itemApi, labApi, visualsApi]) {
-      expect(route).toMatch(/if \(!workingEditionEnabled\(\)\)/);
-      expect(route).toMatch(/status: 404/);
+    // Include every API endpoint, not just the catalog, to prevent future bypasses.
+    const allApiRoutes = (dir: string): string[] =>
+      readdirSync(dir, { withFileTypes: true }).flatMap((f) => {
+        const file = path.join(dir, f.name);
+        return f.isDirectory() ? allApiRoutes(file) : f.name === "route.ts" ? [file] : [];
+      });
+    const routes = allApiRoutes("src/app/api/content");
+    expect(routes.length).toBeGreaterThanOrEqual(11);
+    for (const routeFile of routes) {
+      const route = readFileSync(routeFile, "utf8");
+      expect(route, routeFile).toContain("workingEditionEnabled");
+      expect(route, routeFile).toMatch(/if \(!workingEditionEnabled\(\)\)/);
+      expect(route, routeFile).toMatch(/status: 404/);
     }
   });
 
