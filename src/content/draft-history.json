@@ -502,6 +502,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "cbd568a021b5bac8",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-CG103",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T02": [
@@ -599,6 +611,21 @@
    },
    {
     "hash": "757c5391a004307f",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ADA-HOSP-2026",
+     "S-ESICM-EEN-2017",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "dc6490ad9774b457",
     "recorded": "2026-11-23",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2698,6 +2725,17 @@
      "S-SCCM-PADIS"
     ],
     "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "3e40f1e259fc2bc0",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 3,
     "required_sources": 0,
     "issues": 0
    }
@@ -6611,6 +6649,20 @@
      "S-AHRQ-TS"
     ],
     "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "1b63dbc9cb0e2d1a",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 6,
     "required_sources": 3,
     "issues": 0
    }
