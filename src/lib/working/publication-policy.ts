@@ -32,7 +32,11 @@ export interface ReviewIndex { entries: ReviewIndexEntry[] }
 export const isProductionWorkingRelease = (env: {
   CONTENT_EDITION?: string;
   NEXT_PUBLIC_APP_ENV?: string;
-}): boolean => env.CONTENT_EDITION === "working" && env.NEXT_PUBLIC_APP_ENV === "production";
+  VERCEL_ENV?: string;
+}): boolean => env.CONTENT_EDITION === "working" && (
+  env.VERCEL_ENV === "production" ||
+  !["staging", "development"].includes(env.NEXT_PUBLIC_APP_ENV ?? "")
+);
 
 export const contentRevisionHash = (entry: WorkingEntry): string =>
   createHash("sha256").update(JSON.stringify(entry)).digest("hex");
