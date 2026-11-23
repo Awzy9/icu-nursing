@@ -2328,6 +2328,19 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3172dc65a86599fb",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "N-BTS-PCS-2023",
+     "N-NCBI-OPENRN-CHEST",
+     "N-OPENRN-ADV-PDF"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-14": [
@@ -6089,6 +6102,22 @@
     ],
     "gaps": 5,
     "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "44a34277c93954e3",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AARC-SUCT",
+     "S-AHRQ-TS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
     "issues": 0
    }
   ],
