@@ -32,7 +32,7 @@ describe("P1 Batch 08 — delirium, sedation and nutrition source version safety
   });
 
   it("requires separate sedation and delirium screening with a documented unassessable state", () => {
-    const text = Object.values(sk.sections).flatMap((section: {items:{text:string}[]})=>section.items.map(x=>x.text)).join(" ");
+    const text = (Object.values(sk.sections) as {items:{text:string}[]}[]).flatMap(section=>section.items.map(item=>item.text)).join(" ");
     expect(text).toContain("does not by itself diagnose delirium");
     expect(text).toContain("screen could not be completed");
     expect(sk.checklist.some((x: {text:string})=>x.text.includes("false negative result"))).toBe(true);
