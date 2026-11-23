@@ -51,3 +51,9 @@ evidence_status: partial
 
 ## Publication gate
 Independent hepatologist/transplant intensivist + ICU nursing educator + nephrology/pharmacy review; local airway/glucose/transfer workflows; reconcile HE/ammonia wording across source societies; licence audit, case validation and release isolation. **No publication or clinical approval.**
+
+
+## Batch 13 evidence and specialist module update — 2026-11-23
+The **October 30, 2026 global multisociety ACLF consensus** provides a newer dedicated harmonisation framework than the earlier 2026 educational source inventory; see `content/proposals/p1-13/ACLF_ENCEPHALOPATHY_MULTIORGAN_ESCALATION.md`. In cirrhosis/ACLF with altered mental state, **acute encephalopathy** is an observed syndrome, not proof of hepatic encephalopathy; assess aspiration, infection, cerebral pathology, metabolic and drug causes. The 2026 AASLD–AST adult transplant evaluation guideline uses **urgent referral for ALF**, but **consider referral** for ACLF; these should not be collapsed into identical instructions. ICU nurse recognition and handover do not grant power to diagnose HE, set ventilator/vasopressor dosing, select RRT, or decide transplant eligibility.
+
+Cited primary sources: https://doi.org/10.1007/s12072-026-11169-2 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC13070310/ . Relevant sections read on 2026-11-23; full commercial reproduction rights and clinical sign-off remain open. **No publication.**
