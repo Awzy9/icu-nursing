@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read; septic shock only", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract/comparison table examined; full text not read)", "ESICM 2014 consensus (historical)", "ISMP List of High-Alert Medications in Acute Care Settings, 2024 (classification only)", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US"]
-sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026]
+sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026, S-UIC-EXTRA-2026]
 sources_not_read: [S-AHA-2025]
 independently_written_note: "Original wording. SSC 2026 statements come from the official SCCM recommendation page (strength and certainty as printed there); the full publication, evidence tables and the context of each remark were NOT read, and SSC 2026 addresses adults with sepsis and septic shock, not other causes of shock. The 2014 ESICM consensus was read in full text and is dated. ISMP and FDA pages cover medication and pump safety, not vasoactive monitoring. No dose, concentration, titration range or rate is given: these are prescriber and pharmacist decisions. Batch 7 added the Open RN Nursing Pharmacology grids (US textbook): they say to monitor the IV site for extravasation with epinephrine and to monitor limb colour and temperature with dopamine, but give no extravasation management, line selection or nursing titration protocol; those points remain unresolved and are left to local policy. No non-US or non-sepsis guideline was read."
 ---
@@ -26,6 +26,7 @@ Vasopressors raise blood pressure by constricting blood vessels; inotropes incre
 4. Describe pump and infusion safety measures for vasoactive infusions.
 5. Recognise warning signs that need urgent escalation.
 6. Separate nursing, prescriber and pharmacist responsibilities, and identify what the sources do not cover.
+7. Distinguish a suspected peripheral vasopressor extravasation from a generic pump failure and state the immediate nursing escalation priorities.
 
 ## 3. Why this matters in ICU nursing
 Patients on vasoactive infusions are the most unstable on the unit. Small changes in rate, a pump problem or a line failure can cause large changes in blood pressure within minutes. The nurse's continuous observation is the main safeguard.
@@ -38,6 +39,14 @@ Patients on vasoactive infusions are the most unstable on the unit. Small change
 - **Cardiac function.** SSC 2026 suggests inotropes for septic shock with cardiac dysfunction and persistent hypoperfusion despite adequate fluid and arterial pressure (conditional; very low certainty), and states that inotropes should be used in addition to, not instead of, vasopressors in patients who need vasopressors to maintain MAP.
 - **Access and site.** SSC 2026 suggests starting vasopressors peripherally rather than delaying until central access is secured (conditional; very low certainty), with the remark that data are insufficient to recommend a duration of use, dose or access route (size or site of peripheral line); midline catheters were not considered. The older ESICM 2014 text says central access may be required and preferred when vasopressor infusions are needed. **These differ**, and the platform must not present either as a universal rule; follow local policy.
 - **The infusion:** pump programming, labelling, drug library, double-check status and alerts (see D05-T16).
+
+## 6b. Suspected peripheral vasopressor extravasation — safety recognition and escalation (UIC 2026 clinical pharmacy review)
+- **Recognize the problem:** pain or burning, swelling, leakage, pallor or blanching, redness, coolness or tissue changes near the cannula can indicate infiltration or vasopressor extravasation. A deeply sedated patient may not be able to report discomfort, making direct inspection and patency checks especially important. Drug leakage is different from a central-line or pump failure, although both may cause interruption of a life-sustaining infusion.
+- **At the compromised access site:** promptly stop administration **through the suspect catheter**, alert the responsible clinician and pharmacy team, assess and document the site and the patient's haemodynamic response. Do not force-flush the site or use the same line to push residual drug into tissues. Leave the catheter in place initially for assessment and possible aspiration/antidote delivery by authorised trained staff under the local extravasation pathway. Do not automatically remove it before discussing the unit's protocol.
+- **Protect perfusion simultaneously:** an infusion at a compromised site must not be allowed to continue, but the patient may still urgently require vasopressor support. Call for immediate alternative reliable venous access and clinician-directed continuation/transfer of the prescription. This is **not** a general instruction to stop all vasoactive treatment or to program a replacement pump without authorisation.
+- **Follow the approved extravasation protocol:** assessment of injury extent, whether to aspirate, the timing of catheter removal, limb measures, antidote choice/administration, escalation to specialist or surgical care and follow-up observations are drug- and organisation-specific. The UIC review discusses these possibilities but its dose and preparation examples are **not reproduced** here.
+- **Do not invent a universal frequency or peripheral-site rule:** observation interval, permissible drug, catheter location, duration and concentration depend on the approved local protocol; the 2026 SSC acknowledges insufficient evidence for a universal duration, dose or site.
+This paragraph is independently paraphrased from the UIC 2026 educational pharmacy review and the already-cited SSC 2026 recommendation-level material; it requires ICU nurse educator, critical-care pharmacist and vascular-access review.
 
 ## 7. Nursing responsibilities
 - Confirm the order (drug, concentration, target and titration limits) before starting; verify pump programming at the moments the FDA page names (change of shift, setting change, new bag, new tubing) and obtain an independent double check where policy requires it.
@@ -70,7 +79,7 @@ Blood pressure and MAP against target; heart rate and rhythm; skin perfusion and
 **Updated ESICM 2025 general-shock monitoring (only abstract and comparison table examined):** The guideline describes arterial catheter monitoring in shock not responding to initial treatment and/or requiring vasopressors; monitoring cardiac output or stroke volume in nonresponders; and echocardiography as first-line imaging to classify shock. This does not authorize vasopressor dose, rate, peripheral-infusion or titration instructions. Full ESICM 2025 text was not read; SSC 2026 statements above are septic-shock specific.
 
 ## 10. Warning signs and red flags
-MAP below the ordered target despite increasing doses; rising dose requirement or a second or third agent added; new arrhythmia or heart-rate change; cold, mottled or blue fingers or toes; rising lactate or falling urine output; new confusion; chest pain; sudden fall in pressure after a bag, syringe or pump change; pump alarm, occlusion or suspected disconnection; swelling, pain, blanching, discolouration or leakage at the infusion site (unresolved – see above); infusion approaching empty with no replacement ready.
+MAP below the ordered target despite increasing doses; rising dose requirement or a second or third agent added; new arrhythmia or heart-rate change; cold, mottled or blue fingers or toes; rising lactate or falling urine output; new confusion; chest pain; sudden fall in pressure after a bag, syringe or pump change; pump alarm, occlusion or suspected disconnection; swelling, pain, blanching, discolouration or leakage at the infusion site (see UIC first-response discussion in section 6b; local protocol governs treatment); infusion approaching empty with no replacement ready.
 
 ## 11. Nursing interventions within scope
 | Action | Scope label |
@@ -170,6 +179,8 @@ D. Reporting a sudden fall in pressure after a bag change to the prescriber with
 - ISMP. ISMP List of High-Alert Medications in Acute Care Settings (2024). https://www.ismp.org/system/files/resources/2024-01/ISMP_HighAlert_AcuteCare_List_010924_MS5760.pdf (accessed 2026-11-14)
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians (content current as of 2018-02-02). https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
 
+- University of Illinois Chicago College of Pharmacy. *What are current recommendations for treatment of drug extravasation?* September 2026. Clinical pharmacy review, first-response section inspected, without reproducing drug-specific antidote doses or algorithms. https://dig.pharmacy.uic.edu/faqs/2026-2/september-2026-faqs/what-are-current-recommendations-for-treatment-of-drug-extravasation/ (accessed 2026-11-23).
+
 ## 19. Local protocol note
 MAP targets, titration protocols, who may titrate, line and site selection, maximum peripheral duration, extravasation management, double-check policy, monitoring intervals and escalation thresholds follow your hospital's policies.
 
@@ -177,5 +188,6 @@ MAP targets, titration protocols, who may titrate, line and site selection, maxi
 - ESICM shock evidence update (2026-11-16): updated 2025 general-shock guidance supersedes the 2014 consensus. Only the abstract and 2014/2025 comparison were inspected, not all 50 graded statements or supporting evidence. The 2014 material below remains historical. This limited AI-assisted check is not clinical approval.
 - Source quality: SSC 2026 is a major international guideline, but only its recommendation page was read, and mostly low or very low certainty. ESICM 2014 is a dated expert consensus read in full. ISMP and FDA are medication- and device-safety resources, not vasoactive monitoring guidelines.
 - Population: SSC 2026 statements apply to adults with sepsis or septic shock; cardiogenic, haemorrhagic, neurogenic and other shock were not covered.
-- Not covered and unresolved: infusion-site checks and extravasation care, line compatibility, nursing titration protocols, weaning of vasoactive drugs, drug-specific adverse effects, doses, paediatric practice.
+- Partially covered: clinical recognition and first-response priorities for suspected peripheral vasopressor extravasation, including safe escalation and preservation of ongoing perfusion, from a 2026 pharmacy review. This is not a locally approved bedside extravasation protocol.
+- Not covered and unresolved: exact site-check frequencies, site/drug eligibility, duration, line compatibility, specific antidotes, wound care orders, nursing titration protocols, weaning of vasoactive drugs, full drug-specific adverse effects, doses, paediatric practice.
 - Open questions for reviewers (CCP, CRIT-PH, NE, BN): local MAP ranges; who may titrate; peripheral use duration and site; extravasation policy.
