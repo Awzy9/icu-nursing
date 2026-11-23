@@ -596,6 +596,21 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "757c5391a004307f",
+    "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ADA-HOSP-2026",
+     "S-ESICM-EEN-2017",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T12": [
@@ -6206,6 +6221,22 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "ce8258430fc5c630",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 6,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-10": [
@@ -6220,6 +6251,20 @@
     ],
     "gaps": 4,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "ba42a1a850a6584c",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "S-ADA-HOSP-2026",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 4,
     "issues": 0
    }
   ],
