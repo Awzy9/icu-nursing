@@ -6568,6 +6568,23 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "9fcb8ababe19861b",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-17": [
@@ -6612,6 +6629,20 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "2d349e31d2f7797a",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-19": [
@@ -6641,6 +6672,20 @@
     ],
     "gaps": 4,
     "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "cba979db80c0317c",
+    "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
     "issues": 0
    }
   ],
