@@ -974,12 +974,17 @@
   {
    "key": "D04-T09",
    "type": "topics",
-   "title": "Continuous renal replacement therapy (CRRT) in AKI – principles and nursing implications (machine and circuit management not covered)",
+   "title": "Continuous renal replacement therapy (CRRT) in AKI – principles and introductory circuit monitoring",
    "domain": "Renal and Metabolic Care",
    "evidence_status": "stated_in_text",
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "N-LHSC-CRRT-PRINCIPLES",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
     {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
@@ -989,7 +994,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "2bc966db93e6bd1b"
+   "hash": "02924562438aceb6"
   },
   {
    "key": "D05-T01",
@@ -1139,7 +1144,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "39a734a0c0705f44"
+   "hash": "1c86af5c443095be"
   },
   {
    "key": "D03-T03",
@@ -1861,6 +1866,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISBT-ATR-EDU",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-NICE-NG24",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -1874,7 +1884,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c445cb8de5188bc9"
+   "hash": "78af25c7efb5013a"
   },
   {
    "key": "SK-10",
@@ -2096,6 +2106,11 @@
      "verified": null
     },
     {
+     "id": "N-LHSC-CRRT-PRINCIPLES",
+     "licence_class": "YELLOW",
+     "verified": null
+    },
+    {
      "id": "S-CHS-CRRT",
      "licence_class": "RED",
      "verified": "2026-11-15"
@@ -2109,7 +2124,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "1317f16a45e349ee"
+   "hash": "6cf5423be5681f6d"
   },
   {
    "key": "SK-18",
