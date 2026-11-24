@@ -201,7 +201,7 @@
           ]
         },
         {
-          "text": "Select an anticonvulsant from ward stock based on previous experience, prepare and administer it without verifying the prescribed or protocol-directed choice, and inform the clinician of the administration afterwards.",
+          "text": "Select an anticonvulsant from ward stock based on experience, administer it without verifying the authorised choice and inform the clinician after administration.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -213,7 +213,7 @@
           ]
         },
         {
-          "text": "Keep observing the seizure but defer all medication preparation and emergency equipment checks until the doctor can personally complete them, even though the approved pathway and trained team are available.",
+          "text": "Continue observing the seizure but defer medication preparation and equipment checks until the doctor completes them, despite the available approved emergency pathway.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -275,7 +275,7 @@
           ]
         },
         {
-          "text": "Give a further dose from ward stock immediately because the convulsion persists, without checking which medicine was previously administered, the time it was given or the authorised repeat-treatment plan.",
+          "text": "Give a further dose from ward stock because the seizure persists, without checking the previous medicine, administration time or authorised repeat-treatment plan.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -287,7 +287,7 @@
           ]
         },
         {
-          "text": "Document the initial medication and assume the remaining movements will resolve shortly, returning to routine duties rather than maintaining continuous observation and seeking urgent expert guidance.",
+          "text": "Document the initial medication and assume movements will resolve soon; return to routine duties rather than continuing observation and seeking urgent expert guidance.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

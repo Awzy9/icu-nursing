@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Attribute the change to the patient's personality, settle the patient with a sedative from ward stock and plan a screening assessment once the patient is calmer, without first assessing possible acute deterioration.",
+          "text": "Attribute the change to personality, give a sedative from ward stock and plan screening once the patient is calmer, without first assessing possible acute deterioration.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -209,7 +209,7 @@
           ]
         },
         {
-          "text": "Give haloperidol from ward stock when the patient becomes distressed, expecting the medication to settle the behaviour before reviewing pain, sensory needs or the need for a clinician-directed treatment plan.",
+          "text": "Give haloperidol from ward stock when distress develops, expecting it to settle the behaviour before reviewing pain, sensory needs or a clinician-directed plan.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "text": "Reduce stimulation by leaving the frightened patient alone, ask family to wait until the agitation settles and return to reassess later rather than providing reassurance or urgently escalating persistent danger.",
+          "text": "Reduce stimulation by leaving the frightened patient alone; ask family to wait and reassess later rather than reassuring the patient or escalating danger.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",

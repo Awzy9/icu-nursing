@@ -123,7 +123,7 @@
           ]
         },
         {
-          "text": "Record only the total GCS in the observation chart and compare it with the admission total, then wait until the usual observation time to reassess the individual components and decide whether the change warrants escalation.",
+          "text": "Record only the total GCS, compare it with the admission total, and wait until the usual observation time to reassess the individual components and decide whether to escalate.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -135,7 +135,7 @@
           ]
         },
         {
-          "text": "Attribute reduced responsiveness to fatigue, document that the patient appears to be sleeping and allow rest until the next routine observation rather than checking neurological responses or escalating the new change.",
+          "text": "Attribute reduced responsiveness to fatigue, document apparent sleep and allow rest until the next routine observation instead of checking neurological responses or escalating the change.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "text": "Contact the scanner independently and arrange imaging before the responsible clinician has determined the investigation plan, then prepare the patient for transfer without waiting for the team's assessment.",
+          "text": "Arrange imaging directly with the scanner before the clinician determines the investigation plan, then prepare the patient for transfer without team assessment.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -283,7 +283,7 @@
           ]
         },
         {
-          "text": "Offer the family your own explanation of the likely diagnosis based on the observed neurological changes, before the treating team has confirmed the cause or agreed what information should be shared.",
+          "text": "Explain your own suspected diagnosis to the family based on neurological changes before the team confirms the cause or agrees what information to share.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

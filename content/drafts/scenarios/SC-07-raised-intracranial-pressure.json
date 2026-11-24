@@ -143,7 +143,7 @@
           ]
         },
         {
-          "text": "Repeat blood pressure and pulse, document the changes and leave the patient in a quiet room to rest before returning for the scheduled neurological assessment.",
+          "text": "Repeat blood pressure and pulse, document changes and leave the patient to rest until the scheduled neurological assessment.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -155,7 +155,7 @@
           ]
         },
         {
-          "text": "Give the prescribed as-needed sedative to settle the restlessness, record its administration and reassess consciousness and pupils after the patient has rested.",
+          "text": "Give the prescribed as-needed sedative for restlessness and reassess consciousness and pupils after the patient has rested.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -299,7 +299,7 @@
           ]
         },
         {
-          "text": "Administer additional sedation to reduce agitation during the infusion, record the administration and defer neurological reassessment until the patient has settled, rather than discussing sedation with the team.",
+          "text": "Give additional sedation to reduce agitation during the infusion; document administration and defer neurological reassessment until the patient settles.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -311,7 +311,7 @@
           ]
         },
         {
-          "text": "Stop the prescribed osmotic treatment when urine output increases, document the fluid balance and notify the team afterwards, treating the increased output alone as evidence of renal injury.",
+          "text": "Stop mannitol when urine output increases, document fluid balance and notify the team afterwards, treating the rise alone as evidence of kidney injury.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

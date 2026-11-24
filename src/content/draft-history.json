@@ -11706,6 +11706,21 @@
     "gaps": 5,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "f6dc8f1815036e79",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-MV-SAFETY",
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 5,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-05": [
@@ -11868,6 +11883,23 @@
     "gaps": 7,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "d2620183d5b8ccdb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-FDA-OXIMETER-BASICS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 7,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-06": [
@@ -12003,6 +12035,22 @@
     "gaps": 4,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "322440477160a357",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-ISCCM-WEAN-2024",
+     "S-PUMA-2022",
+     "S-PUMA-EXTUBATION-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-07": [
@@ -12120,6 +12168,24 @@
    },
    {
     "hash": "c774fea4b7e66095",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AARC-SUCT",
+     "S-ACS-TBI-2024",
+     "S-AHRQ-TS",
+     "S-BTF-TBI-4TH",
+     "S-ENLS-ICP-V6",
+     "S-NCS-EDEMA-2020",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "ccf1da505d87c614",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -12290,6 +12356,23 @@
    },
    {
     "hash": "eefef2ace9e736e6",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-NICE-NG217",
+     "S-ACNS-CCEEG-2015",
+     "S-AHRQ-TS",
+     "S-CDC-SEIZURE-2024",
+     "S-ENLS-SE-V6",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "5484fc6a15f32f27",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13631,6 +13714,22 @@
     "gaps": 6,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "3d62ff3c391bc25c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS",
+     "S-CIBS-CAMICU-TERMS",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-18": [
@@ -13975,6 +14074,20 @@
    },
    {
     "hash": "f68e7420510ce931",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-ACS-TBI-2024",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "8cf22532d1048e38",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

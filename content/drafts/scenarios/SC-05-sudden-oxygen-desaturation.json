@@ -139,7 +139,7 @@
           ]
         },
         {
-          "text": "Reposition the oximeter probe and record the new signal quality, then leave the bedside while waiting for the displayed saturation to recover before reassessing breathing and requesting help.",
+          "text": "Reposition the probe, record the new signal quality and leave the bedside while waiting for the saturation reading to recover before reassessing breathing.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -218,7 +218,7 @@
           ]
         },
         {
-          "text": "Repeat suction whenever the displayed saturation remains below baseline, without reassessing secretion clearance, tolerance or other causes, and defer emergency assessment until the saturation has returned to its earlier level.",
+          "text": "Repeat suction whenever saturation remains below baseline, without reassessing secretion clearance or tolerance; defer emergency assessment until the reading returns to its earlier level.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -292,7 +292,7 @@
           ]
         },
         {
-          "text": "Step back and let the team work without giving a structured handover of the recent changes or confirming ongoing reassessment, and plan to reconstruct the event in the notes later.",
+          "text": "Step back and let the team work without handing over recent changes or confirming ongoing reassessment; reconstruct the event in the notes later.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -304,7 +304,7 @@
           ]
         },
         {
-          "text": "Reset the alarm limits to stop audible alerts during the team's treatment, then document the improved saturation without reporting the persistent increased breathing effort or agreeing ongoing monitoring.",
+          "text": "Reset alarm limits to stop alerts during treatment; record improved saturation without reporting persistent breathing effort or agreeing monitoring.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",

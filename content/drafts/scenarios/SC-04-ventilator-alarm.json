@@ -115,7 +115,7 @@
           ]
         },
         {
-          "text": "Silence the alarm and finish the task you were doing before returning to assess the patient.",
+          "text": "Pause the alarm and finish the current task before returning to assess the patient.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -128,7 +128,7 @@
           ]
         },
         {
-          "text": "Widen the alarm limits so the alarm stops, then watch whether the pressure trend remains stable.",
+          "text": "Widen the alarm limits and watch the pressure trend once the alarm stops.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
@@ -185,7 +185,7 @@
           ]
         },
         {
-          "text": "Continue checking the ventilator independently until the high-pressure alarm clears, postponing requests for skilled help or emergency ventilation while you investigate the cause.",
+          "text": "Troubleshoot the persistent high-pressure alarm independently before requesting skilled help or arranging emergency ventilation.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
