@@ -286,6 +286,21 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "d01372bf90d4ed17",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-ASSESSMENT-2026",
+     "S-INTL-PI-CLASSIFICATION-2026",
+     "S-INTL-PI-HEELS-2025",
+     "S-INTL-PI-REPOS-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D09-T01": [
@@ -2147,6 +2162,20 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "ee0736151672e159",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2026",
+     "S-SWEDEN-PICS-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D02-T12": [
@@ -3818,6 +3847,19 @@
    },
    {
     "hash": "9276425f9532ccc1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014",
+     "S-SCCM-PADIS",
+     "S-TEAM-RCT-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e68e95f22c5fc2b1",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

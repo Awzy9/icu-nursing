@@ -49,17 +49,17 @@ D. Cancel all mobilization for the rest of the admission, since the limits were 
 **Why not D:** The advice is to consult, not to cancel permanently.
 **Trace:** N-HODGSON-2014 — At limits in several categories: consult experienced medical team.
 
-**Q4 (scope).** A ventilated patient on a vasoactive infusion has had his dose increased twice this morning. A colleague says any vasoactive drug means no mobilization. What is the most accurate view?
-A. Vasoactive drugs are not an absolute contraindication, but rising doses call for caution or contraindicate mobilization, and the unit decides case by case.
+**Q4 (scope).** A ventilated patient on a vasoactive infusion has had his dose increased twice this morning and now has worsening peripheral perfusion. A colleague says any vasoactive drug means no mobilization. What is the most accurate view?
+A. Defer the planned active mobilization and request experienced team reassessment; vasoactive drugs alone are not an absolute contraindication.
 B. The colleague is right: any vasoactive drug means mobilization is not allowed.
 C. A single threshold dose is agreed worldwide and the nurse can look it up in the paper.
 D. Rising doses are irrelevant as long as the blood pressure reading on the monitor looks acceptable.
 **Answer: A.**
-**Why correct:** The consensus found vasoactive drugs per se were not an absolute contraindication; appropriateness depends on the dose, the change in dose (rising doses call for caution or contraindication) and perfusion, and units agree thresholds case by case.
+**Why correct:** Rising support requirements with worsening perfusion indicate deteriorating circulatory stability. Pause planned active mobilization, escalate and agree on safe activity after reassessment. The historical consensus does not specify a universal vasoactive dose cutoff; the 2025 PADIS update does not override patient-specific readiness.
 **Why not B:** The consensus does not say this.
 **Why not C:** The panel could not agree a threshold dose.
 **Why not D:** The change in dose and perfusion are both part of the consideration.
-**Trace:** N-HODGSON-2014 — Vasoactive drugs not absolute contraindication; dose, change in dose and perfusion matter; no consensus on a threshold.
+**Trace:** N-HODGSON-2014, S-SCCM-PADIS — Vasoactive drugs not absolute contraindication; dose trends and perfusion matter; enhanced mobilization remains conditional.
 
 **Q5 (application).** A patient has an oxygen saturation of 94%, FiO2 of 0.45 and a respiratory rate of 22 and no other contraindication. How do these respiratory values compare with the consensus criteria?
 A. They do not meet the criteria, because the FiO2 must be at room air before any mobilization.

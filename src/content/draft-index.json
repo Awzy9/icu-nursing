@@ -101,6 +101,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-INTL-PI-ASSESSMENT-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-CLASSIFICATION-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-INTL-PI-HEELS-2025",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -114,7 +124,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "479bb21cb5766b0c"
+   "hash": "d01372bf90d4ed17"
   },
   {
    "key": "D09-T01",
@@ -859,12 +869,17 @@
      "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SWEDEN-PICS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "f708cbb330230085"
+   "hash": "ee0736151672e159"
   },
   {
    "key": "D02-T12",
@@ -1604,7 +1619,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "9276425f9532ccc1"
+   "hash": "e68e95f22c5fc2b1"
   },
   {
    "key": "XQ-07",

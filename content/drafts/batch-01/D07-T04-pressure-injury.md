@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NPIAP/EPUAP/PPPIA International Guideline, 4th edition, Quick Reference Guide, version date 1 Sep 2026 (abridged; full chapters not read)"]
-sources: [S-INTL-PI-2026, S-INTL-PI-HEELS-2025, S-INTL-PI-REPOS-2026]
+sources: [S-INTL-PI-2026, S-INTL-PI-HEELS-2025, S-INTL-PI-REPOS-2026, S-INTL-PI-ASSESSMENT-2026, S-INTL-PI-CLASSIFICATION-2026]
 sources_not_read: [S-NPIAP-2019]
-independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Stage definitions were not read, so staging is not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
+independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Selected assessment and classification chapter statements were checked directly on 2026-11-24; comprehensive staging definitions and wound treatment are not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
 ---
 # Skin assessment and pressure injury prevention in the ICU
 > DRAFT – NOT clinically reviewed. AI-generated. The 2026 Quick Reference Guide is the main recorded source; selected full online chapters on repositioning, device-related injury and skin assessment were cross-checked on 2026-11-16. Not all chapters, references or evidence tables have been comprehensively reviewed.
@@ -34,7 +34,7 @@ Sustained pressure and shear reduce blood flow to skin and soft tissue; tissue t
 
 ## 6. Clinical assessment
 - **Screening and risk:** at least check mobility/activity, devices and existing pressure injuries at admission; follow with a full structured risk assessment for those at risk, repeated periodically and after any worsening in condition. Scales can help but should be supplemented with other risk factors and clinical judgment.
-- **Skin and tissue assessment:** visual inspection of bony prominences and under devices; blanching check (finger or transparent disc); touch for temperature (warmer may indicate inflammation, cooler ischaemia), firmness and swelling; pain at pressure points and under devices; colour change compared with surroundings. Techniques should suit the person's skin characteristics and tone (the guide gives this principle without describing how colour change appears on different skin tones; reviewers should add a source before any statement about visibility on darker skin).
+- **Skin and tissue assessment:** visual inspection of bony prominences and under devices; blanching check (finger or transparent disc); touch for temperature (warmer may indicate inflammation, cooler ischaemia), firmness and swelling; pain at pressure points and under devices; colour change compared with surroundings. Techniques should suit the person's skin characteristics and tone (the 2026 assessment chapter notes that redness may not be apparent on darker skin; compare baseline appearance, texture and local temperature rather than relying on redness).
 - **Perfusion of lower limbs and heels:** pulses, temperature, capillary refill, colour, sensation.
 - **Timing of head-to-toe skin assessment:** as soon as possible after admission or transfer, as part of every risk assessment, periodically as the clinical status changes, whenever the condition worsens, at transitions of care (including after procedures), and before discharge; inspect visible bony areas at every repositioning.
 - **Moisture and nutrition:** incontinence or sweat; intake and nutrition screening.
@@ -47,6 +47,13 @@ Sustained pressure and shear reduce blood flow to skin and soft tissue; tissue t
 - Manage moisture; keep skin clean and protected.
 - Request nutrition screening and dietitian review.
 - Document assessments, interventions and refusals or reasons for deviation.
+
+## 7b. Recognition and documentation of suspected pressure damage (2026 chapter update)
+
+- When a previously intact area changes in texture, temperature or colour, assess it against nearby unaffected tissue and the patient's baseline. Relieve loading where feasible and request wound-specialist assessment; absence of redness does not exclude tissue damage.
+- Establish the likely mechanism before assigning a category. Moisture-associated dermatitis, skin tears and impaired arterial perfusion can mimic pressure injury, and mixed mechanisms are possible. Describe objective findings and escalate uncertainty rather than guessing a stage.
+- For pressure damage caused by a device on skin, the authorized clinician applies the institution's recognized classification system. **Do not assign a skin pressure injury stage to a mucosal injury.** Document the affected site, device, tissue appearance and actions, while preserving essential device function.
+- Record healing against the original known classification rather than assigning progressively lower stages. Suspected heel injury with poor perfusion needs vascular and wound assessment; do not initiate debridement independently. This is not a staging or wound-treatment competency module.
 
 ## 8. Monitoring parameters
 Skin and device sites at every position change and every shift; risk re-assessment on admission, at intervals set by policy and with any clinical change; repositioning times; pressure-redistributing surface function; nutrition and hydration; haemodynamic trend (low perfusion raises risk).
@@ -162,11 +169,14 @@ D. Requesting a dietitian review under unit policy.
 - International Guideline: Heels. https://www.internationalguideline.com/heels (selected recommendation excerpts, accessed 2026-11-24)
 - International Guideline: Repositioning. https://www.internationalguideline.com/repositioning (selected recommendation excerpts, accessed 2026-11-24)
 
+- International Guideline: Skin and Tissue Assessment (May 2026). https://www.internationalguideline.com/assessment (selected assessment guidance checked 2026-11-24)
+- International Guideline: Classification (September 2026). https://www.internationalguideline.com/classification (selected CL1/CL2 and healing documentation guidance checked 2026-11-24; cite-only pending rights assessment)
+
 ## 19. Local protocol note
 Risk tools, staging system, support surfaces, dressings and repositioning schedules follow the institution's policy. Prone-positioning protocols have their own rules.
 
 ## 20. Evidence, applicability and open questions
 - Source quality and 2026-11-16 update: the international Quick Reference Guide was read previously; selected full online chapters (Repositioning and Mobilization; Device-Related Pressure Injuries; Skin and Tissue Assessment) were checked for recommendations and relevant implementation considerations. **Not all full chapter text, study references, and evidence frameworks were re-read**, and this is not a comprehensive guideline review. R7 (2–3-hour options) is conditional/very-low certainty and requires clinical individualization; pressure-injury prevention must not override airway or hemodynamic safety. See https://internationalguideline.com/repositioning ; https://internationalguideline.com/drpi ; https://internationalguideline.com/assessment .
 - International applicability: developed with international organisations; resource-dependent items (silicone foam dressings, specialised surfaces) are conditional.
-- Not covered: staging definitions and wound treatment (not read).
+- Not covered: comprehensive stage definitions, image-based competency and wound treatment; selected classification and documentation guidance is checked, not a full appraisal.
 - Open questions for reviewers (NE, BN): preferred risk scale; ICU-specific repositioning during haemodynamic instability; Arabic terminology; whether to adopt the 4th-edition recommendations before full-text review.

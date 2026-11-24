@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract/comparison table examined; full text not read)", "ESICM 2014 consensus (historical)"]
-sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014]
+sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-SWEDEN-PICS-2026]
 sources_not_read: [S-AHA-2025, S-OPENRN-ADV]
 independently_written_note: "Original wording. Statements from SSC 2026 come from the official SCCM recommendation page with the strength and certainty printed there; the full publication, evidence tables and any remarks not on the page were NOT read, and SSC 2026 is written for adults in the health system generally, not specifically for nurses. The 2014 ESICM consensus was read in full text and is dated. This draft complements, and does not repeat, the sepsis (D06-T01), shock recognition (D02-T08) and vasopressor monitoring (D02-T12) drafts. Fluid volumes, drug choices, doses and titration targets are prescriber decisions: the SSC page's weight-based volume figure is deliberately not quoted here because the platform bars unreviewed dosing figures. The local sepsis pathway, time targets and roles are set by the organisation."
 ---
@@ -49,6 +49,14 @@ The SSC 2026 statements below set time expectations for antimicrobials (ideally 
 - **Support:** SSC 2026 suggests against using antipyretic therapy, pharmacological or cooling, to improve clinical outcomes in sepsis, but notes that this does not apply to pain or symptom control or to patients with other temperature-control indications; the nurse follows the order and does not treat fever by reflex.
 - **Communicate:** use a structured handover, keep the family informed according to policy, and document times.
 - **Not covered here and flagged:** nursing details of line care, extravasation, haemodynamic troubleshooting, nursing titration protocols and local sepsis-bundle documentation are not supported by sources read.
+
+## 7b. Recovery after septic shock — rehabilitation and transition of care
+
+Survival is not the only recovery outcome. Ask about pre-illness function and document new limitations in strength, walking, self-care, attention, memory and emotional well-being. Include the patient's priorities and family observations where appropriate. Agree safe activity progression with rehabilitation professionals; active shock and worsening perfusion take priority over mobilization targets.
+
+Before ICU transfer, communicate residual organ support, recent delirium, mobility and swallowing concerns, current medicines and rehabilitation referrals to the receiving team. The 2026 SSC recommends medication reconciliation and coordinated education and follow-up for sepsis survivors. It conditionally supports post-hospital physical rehabilitation for survivors ventilated invasively for longer than 48 hours; this is not a universal exercise prescription or a reason to exclude other patients from individualized assessment.
+
+Post-intensive care syndrome (PICS) can involve physical, cognitive and psychological difficulties after critical illness. A 2026 Swedish consensus proposes early ward contact and later multidisciplinary reassessment, commonly at two to three months. These are context-specific consensus recommendations rather than a universally validated schedule. SSC 2026 found insufficient evidence to favor early over routine post-hospital follow-up. Arrange local referral pathways and teach patients how to seek help; new acute breathlessness, confusion or other deterioration needs prompt clinical evaluation rather than attribution to PICS.
 
 ## 8. Monitoring parameters
 Blood pressure and MAP; heart rate and rhythm; respiratory rate and oxygen saturation; temperature; capillary refill, skin colour, temperature and mottling; mental state; urine output and fluid balance; lactate trend; vasopressor requirements; oxygenation and ventilator needs; blood glucose; time stamps for cultures, antimicrobials, fluids, ICU admission and source-control steps.
@@ -176,6 +184,8 @@ D. Choosing the antimicrobial agent and deciding whether to add corticosteroids.
 - Prescott H, Antonelli M, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Official SCCM recommendations page, recommendation-level statements (accessed 2026-11-14). https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . Full publication: Crit Care Med 2026 (not read).
 - Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971–2012. doi:10.1007/s00134-025-08137-z. https://pubmed.ncbi.nlm.nih.gov/41236566/ (abstract and 2014/2025 comparison inspected 2026-11-16; full text NOT read; cite-only).
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (CC BY-NC; accessed 2026-11-14)
+
+- Swedish Consensus Recommendation for Follow-Up After ICU Stay (2026). https://pmc.ncbi.nlm.nih.gov/articles/PMC13696153/ (selected follow-up and discussion sections checked 2026-11-24; consensus with heterogeneous evidence; rights not cleared).
 
 ## 19. Local protocol note
 The local sepsis pathway, time targets, roles, documentation, line and fluid policies, vasopressor protocols and escalation criteria follow your organisation's policies.
