@@ -94,7 +94,7 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "NICE NG232 prioritises urgent reassessment for deteriorating neurological signs. Do not wait for repeated scoring before escalating an unstable patient; record the assessable GCS components and explain factors limiting assessment.",
+          "feedback": "NICE NG232 prioritises urgent reassessment for deteriorating neurological signs. Do not wait for repeated scoring before escalating an unstable patient; record the assessable GCS components and explain factors limiting assessment. For head injury observations include pupil size and reactivity, limb movement and vital signs. New pupil inequality or asymmetric movement merits urgent reassessment. Check and document factors such as intubation, sedation or paralysis; if any GCS component is non-testable, do not invent a score or calculate a misleading total.",
           "consequence": "The clinician is told promptly and the full component record is available.",
           "support": "partial",
           "sources": [
@@ -155,7 +155,7 @@
           "points": 2,
           "next": 3,
           "scope": "monitoring",
-          "feedback": "NICE says to revert to the most frequent observation schedule for a person who deteriorates and to document on a standard head injury proforma.",
+          "feedback": "NICE says to revert to the most frequent observation schedule for a person who deteriorates and to document on a standard head injury proforma. Maintain patient-specific observation and escalation; do not generalize the NICE head injury schedule to every cause of ICU neurological deterioration.",
           "consequence": "The observations show the trend and the clinician arrives to a complete record.",
           "support": "partial",
           "sources": [
@@ -252,8 +252,8 @@
   ],
   "debrief": {
     "learning_points": [
-      "Record the three GCS responses and the total, and compare with the baseline.",
-      "Report a deterioration promptly, with most attention to the motor response, and return to the more frequent schedule.",
+      "Record individual assessable eye, verbal and motor responses, pupil findings and limb movements; compare with baseline. If a GCS component is non-testable, document why and omit a misleading total.",
+      "Escalate new neurological deterioration urgently, including pupil inequality, new focal asymmetry or a fall in motor response. Continue the diagnosis-specific intensified observation plan without waiting for repeat scoring.",
       "Neurosurgical discussion and imaging are medical decisions; observe, record, hand over and support."
     ],
     "links": [

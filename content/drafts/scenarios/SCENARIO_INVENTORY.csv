@@ -14,8 +14,8 @@ SC-12,Acute arrhythmia,decision_graph,partial,3,0,S-OPENRN-ADV-C74;S-ERC-ALS-202
 SC-13,Cardiac arrest,decision_graph,partial,3,0,S-ERC-ALS-2025;S-AHA-2025,2
 SC-14,Transfusion reaction,decision_graph,partial,2,0,S-AABB-COI-2024;S-NICE-NG24;S-BSH-ATR;S-AHRQ-TS;S-ISBT-ATR-EDU;S-LIFEBLOOD-ATR,2
 SC-15,CRRT circuit complication,decision_graph,partial,3,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012;S-AHRQ-TS;S-RCA-DELPHI-2026,2
-SC-16,Acute hypotension,decision_graph,partial,3,0,S-OPENRN-FUND-CH15-6;S-ESICM-SHOCK-2014;L-PHENYLEPHRINE;S-RCP-NEWS2;S-CDC-BSI-2011;S-AHRQ-TS,3
-SC-17,Delirium and agitation,decision_graph,partial,3,0,N-NICE-CG103;L-HALOPERIDOL;S-AHRQ-TS,3
-SC-18,Aspiration event,decision_graph,partial,3,0,S-NICE-CG32;S-NHSE-NGT-2016;S-SHEA-VAP-2022;S-AHRQ-TS,2
-SC-19,Anaphylaxis,decision_graph,partial,3,0,L-EPINEPHRINE;L-PIPTAZO;N-RCUK-ANAPH-2021;S-AHRQ-TS,2
+SC-16,Acute hypotension,decision_graph,partial,3,0,S-OPENRN-FUND-CH15-6;S-ESICM-SHOCK-2014;L-PHENYLEPHRINE;S-RCP-NEWS2;S-CDC-BSI-2011;S-AHRQ-TS;S-ESICM-SHOCK-2025;S-ARTERIAL-MEASUREMENT-2020,3
+SC-17,Delirium and agitation,decision_graph,partial,3,0,N-NICE-CG103;L-HALOPERIDOL;S-AHRQ-TS;S-SCCM-PADIS,3
+SC-18,Aspiration event,decision_graph,partial,3,0,S-NICE-CG32;S-NHSE-NGT-2016;S-SHEA-VAP-2022;S-AHRQ-TS;S-NHSE-NGT-ENDURING,2
+SC-19,Anaphylaxis,decision_graph,partial,3,0,L-EPINEPHRINE;L-PIPTAZO;N-RCUK-ANAPH-2021;S-AHRQ-TS,3
 SC-20,Acute neurological deterioration,decision_graph,partial,3,0,N-NICE-NG232;S-GCS-OFFICIAL;S-AHRQ-TS,3

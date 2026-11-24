@@ -4831,6 +4831,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4859,7 +4864,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "9efb80457270d48e"
+   "hash": "f23f8ab3d2337444"
   },
   {
    "key": "SC-17",
@@ -4894,7 +4899,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "1b63dbc9cb0e2d1a"
+   "hash": "01fa3a4186091811"
   },
   {
    "key": "SC-18",
@@ -4916,6 +4921,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG32",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -4929,7 +4939,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "f2489d203397cafa"
+   "hash": "3d8468ad4aa50a6b"
   },
   {
    "key": "SC-19",
@@ -4964,7 +4974,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "c1264e9f76ad05f8"
+   "hash": "778b8c0fadb3ccd0"
   },
   {
    "key": "SC-20",
@@ -4994,7 +5004,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "fb5c5705f56d33d5"
+   "hash": "c4dd6e90f0ae926b"
   },
   {
    "key": "EQ-01",

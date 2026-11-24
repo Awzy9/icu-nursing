@@ -68,6 +68,11 @@
       "id": "S-ESICM-SHOCK-2025",
       "read": "partial",
       "use": "ESICM updated 2025 adult shock guideline: society publication notice and PubMed abstract/key summary reviewed 2026-11-23, not its full recommendation tables. Cite-only, publisher reuse restricted."
+    },
+    {
+      "id": "S-ARTERIAL-MEASUREMENT-2020",
+      "read": "partial",
+      "use": "Existing targeted measurement-quality source from SK-01; reference level and waveform artifacts, not a device-specific procedure."
     }
   ],
   "required_sources": [
@@ -79,7 +84,7 @@
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "Causes and treatment of hypotension are not drawn from a full guideline; the scenario keeps to assessment, review of infusions, escalation and monitoring.",
-    "A step comparing an arterial and a cuff reading is absent because no source read supports it.",
+    "Measurement-quality principles are mapped to SK-01 and the registered arterial pressure review; no device-specific test sequence or universal cuff-versus-arterial rule.",
     "Numeric reporting thresholds in the Open RN text are generic and are not written.",
     "The 2025 ESICM guideline was checked at society summary/abstract level only, and the publisher restricts commercial reproduction; all scenario-level nurse actions and scoring still need independent clinical validation."
   ],
@@ -121,13 +126,14 @@
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "Altered responsiveness plus hypotension is a potentially unstable presentation. Patient-first ABC/perfusion assessment and immediate clinical escalation must happen together with checking a measurement for error, not after repeated observation. The ESICM 2025 summary emphasizes serial clinical perfusion assessment; diagnosis and treatment remain team-led.",
+          "feedback": "Altered responsiveness plus hypotension is a potentially unstable presentation. Patient-first ABC/perfusion assessment and immediate clinical escalation must happen together with checking a measurement for error, not after repeated observation. The ESICM 2025 summary emphasizes serial clinical perfusion assessment; diagnosis and treatment remain team-led. The 2025 ESICM guideline supports arterial catheter monitoring for shock unresponsive to initial treatment or requiring vasopressors. If an arterial reading is implausible, check the patient and waveform, transducer reference level and equipment with a trained colleague; compare with another appropriate measurement in parallel, not as a condition for escalation.",
           "consequence": "Emergency help is summoned immediately while bedside reassessment and signal checks continue in parallel.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6",
             "S-ESICM-SHOCK-2025",
-            "S-RCP-NEWS2"
+            "S-RCP-NEWS2",
+            "S-ARTERIAL-MEASUREMENT-2020"
           ]
         },
         {
@@ -188,7 +194,7 @@
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "Rapid trending and communication of tissue perfusion, losses and drug-delivery concerns help the responsible team determine the cause and safely direct resuscitation. Blood loss and diarrhoea are possible contributors, not sufficient evidence to diagnose only hypovolaemia.",
+          "feedback": "Rapid trending and communication of tissue perfusion, losses and drug-delivery concerns help the responsible team determine the cause and safely direct resuscitation. Blood loss and diarrhoea are possible contributors, not sufficient evidence to diagnose only hypovolaemia. The ESICM update favors dynamic assessment of fluid responsiveness over static preload markers when applicable. A low pressure or a single filling-pressure value does not independently justify further fluid administration.",
           "consequence": "The clinician has what is needed to decide on fluids, the vasopressor and investigation of the cause.",
           "support": "partial",
           "sources": [
@@ -296,7 +302,8 @@
       "Altered mentation with a new low blood pressure requires immediate patient assessment and urgent team activation; measurement verification and infusion checks proceed in parallel, never as reasons to delay help.",
       "Use changing perfusion signs (mental status, skin and capillary refill, pulse, urine output) and source losses in a structured handover; do not infer a shock subtype solely from a fast pulse or one pressure value.",
       "Review infusions and recent medicines, including infusion sites, and tell the prescriber.",
-      "Do not change vasopressors or give fluids on your own; report with SBAR and escalate early."
+      "Do not change vasopressors or give fluids on your own; report with SBAR and escalate early.",
+      "Use the clinician-directed monitoring plan and check arterial measurement quality when readings are implausible; fluid responsiveness assessment and resuscitation decisions require clinical context."
     ],
     "links": [
       {

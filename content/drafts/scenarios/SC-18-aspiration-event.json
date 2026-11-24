@@ -49,6 +49,11 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-NHSE-NGT-ENDURING",
+      "read": "partial",
+      "use": "Indexed NHS enduring standards and previously mapped SK-11 safety principles; direct current page retrieval limited."
     }
   ],
   "required_sources": [
@@ -153,16 +158,17 @@
       ],
       "options": [
         {
-          "text": "Keep feeding and medicines through the suspect tube stopped until a trained clinician confirms positioning with the locally approved method and the team authorises its use again. Escalate any persisting respiratory distress regardless of prior tube-placement documentation.",
+          "text": "Keep feed, water, medicines and flushes through the suspect tube withheld until position is confirmed by the approved method and documented by trained staff, and the team authorises use. Arrange essential medicines by an authorised alternative route if needed.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "Prior checks or unchanged external markers do not guarantee current safe tube position. Approved tests and documented interpretation are required; resolution of respiratory symptoms alone is not permission to restart the feed.",
+          "feedback": "Prior checks or unchanged external markers do not guarantee current safe tube position. Approved tests and documented interpretation are required; resolution of respiratory symptoms alone is not permission to restart the feed. Do not use a trial flush or the appearance of aspirate alone to resolve uncertainty. If aspiration or pH assessment is inconclusive, seek the approved alternative confirmation pathway. The team must also reassess aspiration risk and ongoing respiratory status before feeding resumes.",
           "consequence": "The tube position is checked properly and the plan is agreed.",
           "support": "partial",
           "sources": [
             "S-NICE-CG32",
-            "S-NHSE-NGT-2016"
+            "S-NHSE-NGT-2016",
+            "S-NHSE-NGT-ENDURING"
           ]
         },
         {
@@ -182,7 +188,7 @@
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
-          "feedback": "NHS England's enduring nasogastric tube safety standards reject the auscultation or whoosh test for position confirmation.",
+          "feedback": "NHS England's enduring standards reject auscultation as a position-confirmation method; an unchanged external mark or aspirate appearance alone is also insufficient.",
           "consequence": "A misplaced tube is wrongly accepted.",
           "support": "partial",
           "sources": [
@@ -257,7 +263,7 @@
   "debrief": {
     "learning_points": [
       "New respiratory distress during feeding requires stopping the feed, immediate patient-first airway and oxygenation assessment and urgent emergency-team escalation.",
-      "Confirm tube position by the approved method before use and never by listening over the stomach.",
+      "Withhold all tube use, including flushes, water and medicines, while position is uncertain. Confirm with the approved method and documented interpretation before restarting; never use the whoosh test.",
       "Record and report the event.",
       "A respiratory event during feeding may have several causes; tube position and aspiration require qualified assessment, not an automatic diagnosis from coughing or a single saturation reading."
     ],

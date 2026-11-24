@@ -56,7 +56,7 @@
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Refractory anaphylaxis, fluids, airway steps and observation duration were not read and are not written; the RCUK guideline is copyright and is paraphrased only.",
+    "Repeat IM treatment principle and specialist escalation are mapped to RCUK 2021 guidance and current FAQ; refractory IV infusion management, fluid orders, airway procedures and observation duration are not reproduced.",
     "Doses and routes other than the label's injection-site statement are deliberately absent.",
     "The Resuscitation Council UK healthcare-provider anaphylaxis guidance remains May 2021; 2025 first-aid / ERC special-circumstances statements are contextual and do not alone replace the in-hospital authorised emergency protocol. Full refractory management remains specialist-led."
   ],
@@ -155,7 +155,7 @@
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**.",
+          "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**. Persistent airway, breathing or circulatory problems after first-line IM adrenaline require rapid reassessment and timely further IM treatment under the emergency protocol. RCUK advises repeating IM adrenaline after five minutes when those problems persist. Seek expert help for refractory anaphylaxis; intravenous adrenaline for a patient with spontaneous circulation is a specialist intervention, not a routine substitute for IM therapy.",
           "consequence": "The injection is given at the correct site and the team continues treatment.",
           "support": "sourced",
           "sources": [
@@ -215,7 +215,7 @@
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "Initial improvement does not eliminate the risk of recurrence or continued deterioration. The emergency team determines observation duration and discharge planning; documenting and flagging the suspect antibiotic helps prevent future inadvertent exposure.",
+          "feedback": "Initial improvement does not eliminate the risk of recurrence or continued deterioration. The emergency team determines observation duration and discharge planning; documenting and flagging the suspect antibiotic helps prevent future inadvertent exposure. If airway, breathing or circulation problems recur, reactivate emergency help and the authorised anaphylaxis pathway promptly. Antihistamines do not treat those life-threatening features, and corticosteroids are not routine emergency first-line treatment.",
           "consequence": "The reaction is recorded as an allergy, the team plans the next steps and the referral is made.",
           "support": "partial",
           "sources": [
@@ -257,7 +257,8 @@
       "The epinephrine label names the anterolateral thigh for injection in anaphylaxis.",
       "Medicine choices and restarting a drug are prescriber decisions.",
       "Monitor, document and report the reaction.",
-      "Do not delay anaphylaxis first-line emergency treatment to answer an injection-site knowledge question or wait for a non-urgent prescription workflow."
+      "Do not delay anaphylaxis first-line emergency treatment to answer an injection-site knowledge question or wait for a non-urgent prescription workflow.",
+      "Reassess response to IM adrenaline promptly; persistent compromise requires timely protocol-directed repeat treatment and expert escalation, not substitution with antihistamines or routine steroids."
     ],
     "links": [
       {

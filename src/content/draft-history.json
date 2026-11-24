@@ -9785,6 +9785,24 @@
     "gaps": 6,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "f23f8ab3d2337444",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-17": [
@@ -9817,6 +9835,20 @@
    {
     "hash": "1b63dbc9cb0e2d1a",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "01fa3a4186091811",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-HALOPERIDOL",
@@ -9865,6 +9897,21 @@
     "sources": [
      "S-AHRQ-TS",
      "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "3d8468ad4aa50a6b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
      "S-NICE-CG32",
      "S-SHEA-VAP-2022"
     ],
@@ -9929,6 +9976,20 @@
     "gaps": 5,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "778b8c0fadb3ccd0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-20": [
@@ -9947,6 +10008,19 @@
    },
    {
     "hash": "fb5c5705f56d33d5",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "c4dd6e90f0ae926b",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

@@ -100,7 +100,7 @@
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "A new mental-status or behaviour change is not automatically delirium. The nursing response first assesses acute threats and potentially reversible contributors, protects lines and the patient, and escalates promptly when deterioration is possible. Trained staff use the unit-approved CAM-ICU or ICDSC protocol at an assessable level of arousal; the responsible clinician evaluates the diagnosis.",
+          "feedback": "A new mental-status or behaviour change is not automatically delirium. The nursing response first assesses acute threats and potentially reversible contributors, protects lines and the patient, and escalates promptly when deterioration is possible. Trained staff use the unit-approved CAM-ICU or ICDSC protocol at an assessable level of arousal; the responsible clinician evaluates the diagnosis. Arousal influences delirium screening. If deep sedation or another limitation prevents a valid screen, record that it is not assessable and why, rather than recording a negative result; reassess eligibility according to the tool and clinical plan.",
           "consequence": "The patient is protected and the team evaluates causes while appropriately trained staff perform a suitable delirium screen.",
           "support": "partial",
           "sources": [
@@ -226,7 +226,7 @@
           "points": 2,
           "next": null,
           "scope": "independent_nursing",
-          "feedback": "Non-drug care and reassessment continue even after visible agitation settles; a calm or withdrawn patient can still have delirium or another acute problem. The SCCM 2025 update conditionally favors enhanced rehabilitation over usual care but does not specify a bedside dose or universal schedule, so mobility requires individualized team safety checks.",
+          "feedback": "Non-drug care and reassessment continue even after visible agitation settles; a calm or withdrawn patient can still have delirium or another acute problem. The SCCM 2025 update conditionally favors enhanced rehabilitation over usual care but does not specify a bedside dose or universal schedule, so mobility requires individualized team safety checks. Document the actual screen result, arousal level and any reason the tool could not be used. Reassess when the patient becomes assessable.",
           "consequence": "The patient is better orientated and the record is complete for the next shift.",
           "support": "partial",
           "sources": [
@@ -266,7 +266,8 @@
       "New agitation or withdrawal can reflect delirium, pain, oxygenation problems, medication effects or other acute deterioration: assess and urgently escalate possible threats first.",
       "Use an authorised ICU delirium screen only when appropriate and by trained staff; final clinical diagnosis and sedative decisions are not made by an unvalidated case score.",
       "Reorientation, sleep protection, sensory support, family participation and individualized safe mobility are non-drug measures that require ongoing reassessment.",
-      "SCCM's 2025 focused update could not recommend for or against antipsychotics over usual care in adult ICU delirium; no routine haloperidol instruction follows from a positive screen."
+      "SCCM's 2025 focused update could not recommend for or against antipsychotics over usual care in adult ICU delirium; no routine haloperidol instruction follows from a positive screen.",
+      "A patient who cannot undergo a valid delirium assessment must not be recorded as screen-negative. Record the reason and reassess eligibility."
     ],
     "links": [
       {
