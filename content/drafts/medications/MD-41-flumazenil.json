@@ -88,6 +88,13 @@
           "sources": [
             "L-FLUMAZENIL"
           ]
+        },
+        {
+          "text": "Before use, check whether benzodiazepines are controlling a life-threatening condition such as status epilepticus or raised intracranial pressure. Flag suspected serious cyclic antidepressant poisoning or known hypersensitivity to flumazenil or benzodiazepines; seek urgent clinician clarification before administration.",
+          "support": "partial",
+          "sources": [
+            "L-FLUMAZENIL"
+          ]
         }
       ]
     },
@@ -236,6 +243,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Before use, check whether benzodiazepines are controlling a life-threatening condition such as status epilepticus or raised intracranial pressure. Flag suspected serious cyclic antidepressant poisoning or known hypersensitivity to flumazenil or benzodiazepines; seek urgent clinician clarification before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-FLUMAZENIL"
+      ]
     }
   ],
   "gaps": [

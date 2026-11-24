@@ -88,6 +88,13 @@
           "sources": [
             "L-LEVETIRACETAM"
           ]
+        },
+        {
+          "text": "New marked weakness, fever, recurrent infection or coagulation problems warrant clinical review and a complete blood count. Escalate unexpected cytopenias. Withdrawal generally requires clinician-directed gradual reduction; serious adverse reactions may warrant rapid discontinuation by the treating team.",
+          "support": "partial",
+          "sources": [
+            "L-LEVETIRACETAM"
+          ]
         }
       ]
     },
@@ -238,6 +245,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "New marked weakness, fever, recurrent infection or coagulation problems warrant clinical review and a complete blood count. Escalate unexpected cytopenias. Withdrawal generally requires clinician-directed gradual reduction; serious adverse reactions may warrant rapid discontinuation by the treating team.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LEVETIRACETAM"
+      ]
     }
   ],
   "gaps": [

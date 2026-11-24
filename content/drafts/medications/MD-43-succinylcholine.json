@@ -88,6 +88,13 @@
           "sources": [
             "L-SUCCINYLCHOLINE"
           ]
+        },
+        {
+          "text": "Flag a history of major burns or trauma beyond the acute injury phase, extensive denervation, upper motor neuron injury, skeletal muscle myopathy, suspected malignant hyperthermia susceptibility or known hypersensitivity. The period of hyperkalaemia risk varies; obtain urgent clinician clarification before use. Reduced plasma cholinesterase activity can prolong paralysis; maintain ventilatory support and urgently escalate delayed recovery.",
+          "support": "partial",
+          "sources": [
+            "L-SUCCINYLCHOLINE"
+          ]
         }
       ]
     },
@@ -245,6 +252,33 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag a history of major burns or trauma beyond the acute injury phase, extensive denervation, upper motor neuron injury, skeletal muscle myopathy, suspected malignant hyperthermia susceptibility or known hypersensitivity.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-SUCCINYLCHOLINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "The period of hyperkalaemia risk varies; obtain urgent clinician clarification before use.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-SUCCINYLCHOLINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Reduced plasma cholinesterase activity can prolong paralysis; maintain ventilatory support and urgently escalate delayed recovery.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-SUCCINYLCHOLINE"
+      ]
     }
   ],
   "gaps": [

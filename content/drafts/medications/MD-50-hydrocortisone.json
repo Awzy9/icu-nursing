@@ -81,6 +81,13 @@
           "sources": [
             "L-HYDROCORTISONE"
           ]
+        },
+        {
+          "text": "Corticosteroids may suppress usual signs of infection. Assess clinical trends and new unexplained organ dysfunction rather than relying on fever alone; promptly escalate suspected infection. The clinical team directs any steroid withdrawal or reduction.",
+          "support": "partial",
+          "sources": [
+            "L-HYDROCORTISONE"
+          ]
         }
       ]
     },
@@ -226,6 +233,15 @@
     {
       "kind": "laboratory",
       "text": "Review glucose, potassium, sodium, fluid balance and infection indicators as ordered. Escalate unexpected changes and clarify the ongoing steroid plan with the clinical team rather than independently interrupting prolonged therapy.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HYDROCORTISONE"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Corticosteroids may suppress usual signs of infection. Assess clinical trends and new unexplained organ dysfunction rather than relying on fever alone; promptly escalate suspected infection. The clinical team directs any steroid withdrawal or reduction.",
       "critical": true,
       "support": "partial",
       "sources": [

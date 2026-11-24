@@ -81,6 +81,13 @@
           "sources": [
             "L-PANTOPRAZOLE"
           ]
+        },
+        {
+          "text": "Urgently report blistering, mucosal lesions, skin detachment or other signs of serious hypersensitivity. Suspected severe cutaneous reactions require discontinuation and urgent clinical assessment under the authorised pathway; activate emergency help if unstable.",
+          "support": "partial",
+          "sources": [
+            "L-PANTOPRAZOLE"
+          ]
         }
       ]
     },
@@ -233,6 +240,15 @@
     {
       "kind": "laboratory",
       "text": "Review ordered magnesium and calcium results when clinically indicated, particularly with prolonged therapy or an existing electrolyte risk. Seek prescriber review of abnormalities.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PANTOPRAZOLE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Urgently report blistering, mucosal lesions, skin detachment or other signs of serious hypersensitivity. Suspected severe cutaneous reactions require discontinuation and urgent clinical assessment under the authorised pathway; activate emergency help if unstable.",
       "critical": true,
       "support": "partial",
       "sources": [

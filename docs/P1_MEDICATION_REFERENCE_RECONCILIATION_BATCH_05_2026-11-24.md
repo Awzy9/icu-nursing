@@ -20,3 +20,7 @@
 - Targeted product-reference comparison now covers 50/50 registered US label records across five batches. The ten records in this batch were compared, nine have proposed additions and one has a terminology/metadata clarification.
 - Canonical amendments, exact-source assertions, hash/index/history synchronization and regression tests for batch 5 are not yet implemented. Do not mark these findings as implemented or change review dates, currency metadata or approval flags.
 - Next: implement each supported correction with partial-support nursing inferences, retain previous safeguards and run full CI. Verify local practice, non-US product differences, independent clinical/pharmacist review and source rights before publication. PR #115 remains draft; no production changes.
+
+## Implementation update
+
+24 November 2026: exact registered DailyMed pages opened and selected passages verified. All ten drafts now contain targeted monitoring text and checklist updates. Atropine contraindication distinction is product-specific; enoxaparin generic label attribution corrected. No dosing or preparation details added; original label currency metadata retained. Ten regression cases added and old hashes verified before updating index and history. Full CI still required; independent review, rights clearance and publication remain blocked.

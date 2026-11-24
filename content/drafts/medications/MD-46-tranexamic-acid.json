@@ -81,6 +81,13 @@
           "sources": [
             "L-TXA"
           ]
+        },
+        {
+          "text": "Review renal function and seizure history. Escalate new twitching or myoclonus promptly; activate emergency help for seizures and discontinue treatment under the authorised emergency pathway. For serious hypersensitivity, stop administration, activate emergency help and do not restart treatment.",
+          "support": "partial",
+          "sources": [
+            "L-TXA"
+          ]
         }
       ]
     },
@@ -240,6 +247,15 @@
     {
       "kind": "assess",
       "text": "Verify the intravenous route against the order and product at each handoff. Clearly identify the medicine and intended route, keep it separated from neuraxial medicines according to local policy, and escalate any uncertainty before use.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-TXA"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Review renal function and seizure history. Escalate new twitching or myoclonus promptly; activate emergency help for seizures and discontinue treatment under the authorised emergency pathway. For serious hypersensitivity, stop administration, activate emergency help and do not restart treatment.",
       "critical": true,
       "support": "partial",
       "sources": [

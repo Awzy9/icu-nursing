@@ -88,6 +88,13 @@
           "sources": [
             "L-MANNITOL"
           ]
+        },
+        {
+          "text": "Inspect the infusion site and assess the limb for swelling, pain or impaired perfusion. Suspected extravasation or compartment syndrome requires immediate escalation and the local extravasation pathway. An unexpectedly low phosphorus result may reflect assay interference; discuss with the laboratory and clinical team before acting on it.",
+          "support": "partial",
+          "sources": [
+            "L-MANNITOL"
+          ]
         }
       ]
     },
@@ -238,6 +245,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "escalate",
+      "text": "Inspect the infusion site and assess the limb for swelling, pain or impaired perfusion. Suspected extravasation or compartment syndrome requires immediate escalation and the local extravasation pathway. An unexpectedly low phosphorus result may reflect assay interference; discuss with the laboratory and clinical team before acting on it.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MANNITOL"
+      ]
     }
   ],
   "gaps": [

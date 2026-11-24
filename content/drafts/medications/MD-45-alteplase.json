@@ -81,6 +81,13 @@
           "sources": [
             "L-ALTEPLASE"
           ]
+        },
+        {
+          "text": "Urgently report new unexplained digital or skin ischaemia or acute renal deterioration; cholesterol embolism is a rare reported complication. Coagulation results can be distorted by continued fibrinolytic activity in the sample during treatment; flag unexpected results to the laboratory and clinical team.",
+          "support": "partial",
+          "sources": [
+            "L-ALTEPLASE"
+          ]
         }
       ]
     },
@@ -247,6 +254,15 @@
     {
       "kind": "assess",
       "text": "Assess for new lip, tongue or airway swelling during and after treatment; immediately activate the emergency airway and medication-safety pathway if a serious reaction is suspected.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ALTEPLASE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Urgently report new unexplained digital or skin ischaemia or acute renal deterioration; cholesterol embolism is a rare reported complication. Coagulation results can be distorted by continued fibrinolytic activity in the sample during treatment; flag unexpected results to the laboratory and clinical team.",
       "critical": true,
       "support": "partial",
       "sources": [
