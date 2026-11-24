@@ -464,12 +464,17 @@
      "id": "S-RRT-MULTIDISC-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-UKKA-AKI-DETECTION",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "d2156951cedb8fd0"
+   "hash": "98742e518dacf3f6"
   },
   {
    "key": "D06-T07",
@@ -659,7 +664,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "85c54105fd56f76a"
+   "hash": "121dc753e9fbab9f"
   },
   {
    "key": "D01-T19",
@@ -1229,7 +1234,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "5523a74ed4bfc850"
+   "hash": "df89db546ece2457"
   },
   {
    "key": "D04-T08",
@@ -1269,7 +1274,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "c554534fed270da5"
+   "hash": "6f341efed0905fd5"
   },
   {
    "key": "D04-T09",
@@ -1309,7 +1314,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "8ef062cfbab4f315"
+   "hash": "2793d938bb6c9c78"
   },
   {
    "key": "D05-T01",
