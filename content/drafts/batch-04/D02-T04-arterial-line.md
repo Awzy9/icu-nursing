@@ -50,6 +50,8 @@ Cuff pressure estimates become inaccurate in shock; an arterial catheter measure
 - Respond to bleeding: apply pressure, call for help, and stay with the patient.
 - Report abnormal pressures, damped or lost waveform, changes in limb perfusion, bleeding, infection signs or equipment faults promptly.
 
+**Reliable arterial pressure in persistent shock (ESICM 2025).** An arterial catheter is recommended as a good-practice measure when shock persists despite initial treatment or vasopressor support is required. An invasive pressure trace is not inherently accurate: compare the reading with the patient's perfusion, waveform quality, recent positioning and an independent pressure assessment where appropriate. Report a discrepancy and the current vasoactive support. Seek immediate assistance for true or suspected instability while trained staff verify the measuring system; do not automatically titrate to a questionable number or repeatedly flush a damped line.
+
 ## 8. Monitoring parameters
 Arterial pressure (systolic, diastolic, mean) and waveform; heart rate; limb colour, temperature, capillary refill and sensation; insertion site; flush system function; alarms; line days; transducer and set changeover dates; sampling losses where relevant.
 
