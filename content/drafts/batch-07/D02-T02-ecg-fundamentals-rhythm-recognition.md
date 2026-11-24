@@ -170,16 +170,16 @@ D. The pattern shows that the patient has developed first-degree AV block, which
 **Why not C:** Artifact or lead problems may mimic ectopy, but new suspected ventricular ectopy with prolonged QT requires clinical assessment and timely escalation.
 **Why not D:** First-degree block is a long PR interval.
 
-**Q6 (scope).** Which task belongs to the prescriber rather than the nurse?
-A. Applying the electrodes to clean, dry skin with good contact and attaching the lead wires as per policy.
-B. Printing a 6-second strip and recording the rhythm and the patient's status.
-C. Deciding on the treatment for a newly identified dysrhythmia, such as the drug, cardioversion or pacing.
-D. Calling for help when the patient is pulseless.
+**Q6 (prioritization).** A patient develops a new rapid wide-complex rhythm, has a palpable pulse, and is becoming hypotensive and confused. A colleague wants to spend several minutes determining the exact rhythm from the monitor. What should the nurse prioritize?
+A. Record a diagnostic tracing and wait for a definitive rhythm interpretation before calling for help.
+B. Obtain repeat routine observations and compare them with the previous shift before escalating.
+C. Activate urgent help, assess circulation and prepare for the trained unstable-rhythm pathway.
+D. Start chest compressions based on the wide-complex rhythm despite the confirmed pulse.
 **Answer: C.**
-**Why correct:** Deciding which drug, cardioversion or pacing to use for a new dysrhythmia is a treatment decision for the prescriber or team. Applying electrodes, documenting and calling for help are nursing actions.
-**Why not A:** Electrode application is a nursing skill.
-**Why not B:** Documentation is a nursing task.
-**Why not D:** Calling for help is a nursing responsibility.
+**Why correct:** A new tachyarrhythmia with hypotension and altered mentation may be haemodynamically unstable. Summon the emergency team and assess ABC and circulation immediately, maintaining monitoring and preparing for authorized treatment. Obtain a diagnostic tracing if feasible without delaying urgent care. ERC 2025 distinguishes unstable tachyarrhythmia with a pulse from cardiac arrest; if circulation is lost, follow the resuscitation pathway.
+**Why not A:** A diagnostic tracing is useful, but delaying escalation for exact rhythm classification may expose an unstable patient to harm.
+**Why not B:** Routine observation comparison cannot substitute for prompt assessment and emergency escalation in new instability.
+**Why not D:** A confirmed pulse distinguishes this presentation from pulseless arrest; initiate CPR if circulation becomes absent or uncertain under the trained algorithm.
 
 ## 18. References
 - Ernstmeyer K, Christman E (eds). Nursing Advanced Skills. Open RN / WisTech Open, 2023. Chapter 7: sections 7.2 Basic Concepts, 7.3 A Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Checklist: Initiating Telemetry. https://wtcs.pressbooks.pub/nursingadvancedskills/ (CC BY 4.0 "except where otherwise noted"; accessed 2026-11-14)

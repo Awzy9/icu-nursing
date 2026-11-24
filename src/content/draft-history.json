@@ -547,6 +547,23 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "3baec09836a0df8f",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-ATS-NIRS-2026",
+     "S-ERC-ALS-2025",
+     "S-FDA-OXIMETER-BASICS",
+     "S-NICE-CG103",
+     "S-RCP-NEWS2",
+     "S-UKROX-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T07": [
@@ -859,6 +876,24 @@
    },
    {
     "hash": "a3784b36482073a8",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESC-AHF-EMERGENCY-2026",
+     "S-ESC-CS-2026",
+     "S-ESC-HF-2026",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SCAI-SHOCK-2026",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "27a6854eef4c4d1d",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2824,6 +2859,22 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "567104cfaf0e96ee",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-ERC-ALS-2025",
+     "S-ERC-BLS-2025",
+     "S-OPENRN-ADV-C7",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D04-T06": [
@@ -3508,6 +3559,20 @@
    },
    {
     "hash": "8f4f17a345fcbe65",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "5ff6fdd6ecad20d9",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

@@ -141,27 +141,27 @@ D. The alarm limits are reset to the factory defaults on all ventilators, so ear
 **Why not C:** Silence affects only the sound.
 **Why not D:** Silence does not change the limits.
 
-**Q3 (application).** Several alarms sound at once on a ventilator. According to the manual's note, what should the nurse remember?
-A. Every alarm shows a separate problem, so each must be dealt with one at a time in the order in which they appear.
-B. One condition can trigger several alarms and one or two usually show the root cause, so check the patient and circuit.
-C. Multiple alarms mean that the machine is broken and must be switched off immediately by the nurse.
-D. Only the first message in the buffer is ever important, and the others can be safely ignored by staff.
+**Q3 (application).** A ventilated patient suddenly has low exhaled tidal volume and low airway pressure alarms after repositioning. Oxygen saturation is falling. Which interpretation and response is most appropriate?
+A. Review the volume setting and raise the target before investigating the pressure alarm.
+B. Assess ventilation immediately, call for help and investigate a possible circuit or airway leak.
+C. Treat the pressure alarm first by increasing the alarm limit and then assess the volume.
+D. Mute the alarms while checking the previous ventilator chart for baseline values.
 **Answer: B.**
-**Why correct:** One fault can produce several alarms. Assess the patient, support ventilation and identify the cause using the device display and trained troubleshooting pathway; no alarm should be ignored merely because another appears first.
-**Why not A:** The alarms are often consequences of one cause.
-**Why not C:** Switching off may remove ventilation.
-**Why not D:** The cause may not be the first message.
+**Why correct:** One condition can trigger multiple alarms; low pressure with low exhaled volume may indicate a leak or disconnection, among other causes. The falling saturation makes this urgent. Assess the patient and effective ventilation, call for help and support ventilation under the trained emergency pathway while checking the circuit and airway. Do not assume the alarm pattern proves a single cause.
+**Why not A:** Changing the volume target does not resolve a disconnected or leaking system and may delay effective ventilation.
+**Why not C:** Changing alarm limits does not correct the underlying failure or establish adequate ventilation.
+**Why not D:** Previous settings may assist troubleshooting, but obtaining them must not delay assessment and rescue.
 
-**Q4 (safety).** A colleague suggests widening all alarm limits to the extremes because the ventilator keeps alarming. What is the best response?
-A. Agree with the colleague, since having fewer alarms is safer and quieter for the patient and the unit.
-B. Agree with the colleague, but at night when the unit is busy and there are fewer staff available.
-C. Widen the volume alarm and leave all the others where they are, since that reduces the noise and the repeated alarms.
-D. Disagree: extreme limits can make alarms useless, so find the cause and ask for a review of the limits.
+**Q4 (judgment).** Over the last hour, a patient has recurrent high-pressure alarms. The patient now has increasing breathing effort and the alarm limit is unchanged. A colleague proposes increasing the alarm limit to reduce repeated noise. What should the nurse do?
+A. Increase the limit after confirming that the current pressure is below the new proposed value.
+B. Temporarily increase the limit and ask the next shift to reassess the patient's mechanics.
+C. Keep the existing limit but wait for the next scheduled ventilator assessment.
+D. Assess ventilation and the cause, escalate deterioration and request individualized alarm review.
 **Answer: D.**
-**Why correct:** Extreme limits can conceal dangerous changes. Investigate recurrent alarms and request that an authorized clinician reassess the patient-specific limits according to the unit and device protocol.
-**Why not A:** Fewer alarms are not safer if dangerous events are not signalled.
-**Why not B:** Workload is not a safe reason.
-**Why not C:** Partial widening does not address the cause.
+**Why correct:** Recurrent high-pressure alarms with new distress require bedside assessment and appropriate escalation. Possible contributors include airway resistance, changes in compliance or patient–ventilator interaction; the pattern alone is not diagnostic. AARC supports direct assessment of ventilator mechanics, including plateau pressure where appropriate. An authorized clinician should reassess patient-specific limits using the device and unit protocol; do not widen them simply to suppress noise.
+**Why not A:** A higher limit may conceal clinically important pressure changes; a numerical comparison alone does not establish safety.
+**Why not B:** Changing limits without investigating distress transfers an unresolved hazard to the next shift.
+**Why not C:** Retaining limits is appropriate, but deferring assessment of worsening breathing effort risks delayed intervention.
 
 **Q5 (application).** Before suctioning, a nurse uses the ventilator's oxygen enrichment function on the HAMILTON-C1. Which statement matches the manual?
 A. Oxygen alarms stay fully active throughout the function, so there is no need to watch the patient closely.

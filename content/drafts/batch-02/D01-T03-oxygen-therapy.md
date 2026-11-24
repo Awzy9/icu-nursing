@@ -135,16 +135,16 @@ D. The patient may be deteriorating; check the probe and perfusion, assess breat
 **Why not B:** Attributing signs to anxiety risks missing deterioration.
 **Why not C:** Reducing oxygen is not the priority when the patient is unwell.
 
-**Q4 (understanding).** Which statement about high-flow nasal cannula (HFNC) matches the AARC 2022 guideline?
-A. HFNC shortens hospital stay compared with conventional oxygen therapy in adults with acute hypoxaemic failure.
-B. The cited guideline supports HFNC to reduce escalation; a shorter stay was not established.
-C. HFNC is recommended after intubation has failed, in preference to any other form of respiratory support.
-D. HFNC has proven better outcomes than other support in all immunocompromised patients, whatever the cause of failure.
+**Q4 (judgment).** A patient receiving HFNC for acute hypoxaemic respiratory failure has an SpO₂ within the prescribed range, but breathing effort is increasing and the patient is becoming less alert. What should the nurse do?
+A. Continue the planned HFNC trial because saturation has reached the prescribed range.
+B. Assess ventilation and airway protection, summon urgent help and prepare for escalation.
+C. Increase oxygen under the existing target plan and reassess after the next routine blood gas.
+D. Request a change of interface and defer clinical reassessment until comfort improves.
 **Answer: B.**
-**Why correct:** The guideline supports early HFNC in appropriate patients and reports potential avoidance of more invasive respiratory support, but did not establish reduced length of stay. Worsening work of breathing or gas exchange still requires urgent reassessment for escalation.
-**Why not A:** The guideline states no length-of-stay reduction.
-**Why not C:** The guideline supports early initiation in suitable patients.
-**Why not D:** The cited evidence does not establish superior outcomes in all immunocompromised populations.
+**Why correct:** HFNC may reduce escalation in selected patients, but saturation alone does not establish adequate ventilation or airway protection. Increased effort and reduced alertness suggest possible support failure. Assess ABC, maintain necessary oxygen and urgently obtain experienced clinical assessment for further respiratory support; do not delay emergency help for a score or blood gas.
+**Why not A:** Acceptable saturation can coexist with deteriorating ventilation or exhaustion; continuing without reassessment risks delayed rescue.
+**Why not C:** Oxygen may be indicated, but increasing it alone cannot correct all causes of declining ventilation or alertness.
+**Why not D:** Interface discomfort warrants attention, but new altered alertness and respiratory effort require immediate patient assessment.
 
 **Q5 (safety).** A patient is about to be defibrillated while on a mask with oxygen. Which action fits the ERC 2025 oxygen safety advice?
 A. Leave the mask on to maintain oxygenation until after the shock, since the patient may become hypoxic if it is removed.

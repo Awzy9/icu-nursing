@@ -123,16 +123,16 @@ D. Only the doctor can judge perfusion, so record the findings and wait for the 
 **Why not B:** Pain may contribute, but analgesia alone would delay recognition of shock.
 **Why not D:** Perfusion assessment and escalation are nursing responsibilities.
 
-**Q2 (understanding).** Which three body "windows" does the consensus identify as readily accessible for assessing tissue perfusion?
-A. The skin, the kidneys (urine output) and the brain (mental state).
-B. The lungs, the liver and the gut, because these organs show the earliest and most reliable changes at the bedside.
-C. The heart, the eyes and the bones, because these structures can be examined without any equipment.
-D. The blood pressure cuff, the pulse oximeter and the ECG, because monitors give the most objective information.
+**Q2 (application).** During treatment for suspected shock, a patient's blood pressure reaches the ordered target. The nurse wants to assess whether tissue perfusion has also improved. Which bedside findings are most useful to trend together?
+A. Capillary refill and skin findings, urine output and mental state relative to baseline.
+B. Blood pressure, arterial waveform amplitude and the current vasopressor infusion rate.
+C. Oxygen saturation, respiratory rate and the oxygen delivery device currently in use.
+D. Temperature, white-cell count and the interval since the last antimicrobial dose.
 **Answer: A.**
-**Why correct:** The consensus names the skin, kidneys and brain as windows because perfusion can be judged at the bedside from skin findings, urine output and mental state without special equipment; other organs are less accessible.
-**Why not B:** These organs are less accessible at the bedside.
-**Why not C:** Not part of the consensus statement.
-**Why not D:** These are devices, not organ windows.
+**Why correct:** The historical consensus identifies skin, kidneys and brain as accessible perfusion windows. ESICM 2025 supports serial capillary refill assessment supplemented by skin temperature and mottling. Integrate urine output and cognition with baseline and other clinical findings; renal disease, sedation and other factors can confound individual signs. Achieving a pressure target does not prove restoration of tissue perfusion.
+**Why not B:** These data help assess circulation and treatment, but pressure and drug requirements alone do not establish tissue perfusion.
+**Why not C:** Respiratory observations remain important, but do not directly establish whether renal, skin and cerebral perfusion have improved.
+**Why not D:** These findings may inform infection assessment, but are not sufficient to evaluate the response of tissue perfusion.
 
 **Q3 (prioritization).** During an ICU round, four patients have different trends in pressure and tissue perfusion. Which patient needs immediate escalation?
 A. A patient with a MAP just above the ordered target, warm skin, normal urine output and a clear mind.
@@ -156,16 +156,16 @@ D. Delay giving the treatments until the lactate result is known, so that the te
 **Why not C:** Reassessment is shared and needed after each intervention.
 **Why not D:** Delay may harm; early treatment is recommended.
 
-**Q5 (understanding).** Which statement best describes using lactate when assessing suspected circulatory shock?
-A. A single normal lactate rules out shock, so further clinical assessment is unnecessary.
-B. Obtain lactate when ordered, follow serial values and interpret them with capillary refill, urine output, mental state and the overall clinical picture; a single value does not rule shock in or out.
-C. Lactate is relevant only in sepsis, so there is no reason to check it when bleeding or another cause of shock is suspected.
-D. Lactate should be measured only once, because trends cannot contribute to ongoing assessment.
+**Q5 (judgment).** During shock resuscitation, a patient's lactate falls but remains elevated. Capillary refill is improving, urine output remains low and the vasopressor requirement is unchanged. What is the safest interpretation?
+A. Give another fluid bolus to normalize lactate before reviewing other findings.
+B. Assess the discordant trends together and request individualized reassessment of perfusion.
+C. Reduce vasopressors because a falling lactate demonstrates adequate circulation.
+D. Attribute the remaining elevation to tissue hypoxia and request treatment based on lactate alone.
 **Answer: B.**
-**Why correct:** The historical ESICM consensus describes lactate as one element of perfusion assessment and emphasizes serial measurements, not a diagnostic cutoff. No single lactate result confirms or excludes shock. This question is a general assessment principle; the full graded 2025 ESICM guideline remains to be reconciled.
-**Why not A:** Normal lactate does not rule out shock; evaluate the patient and perfusion signs.
-**Why not C:** Lactate may be relevant to several forms of shock, not only sepsis.
-**Why not D:** Trends are useful alongside repeated bedside assessment.
+**Why correct:** Lactate trends provide useful context but have multiple determinants, including production and clearance. No single lactate result confirms or excludes shock. Integrate perfusion, organ function, haemodynamics and treatment response; consider confounding causes with the team. Do not administer additional fluid merely to normalize lactate; assess fluid responsiveness and congestion where appropriate and follow the authorized plan.
+**Why not A:** An elevated lactate does not establish fluid responsiveness or a net benefit from another bolus; excess fluid can cause harm.
+**Why not C:** A falling lactate does not establish that the patient can tolerate reduced circulatory support; changes require the prescribed titration plan.
+**Why not D:** Lactate can remain elevated for reasons other than ongoing tissue hypoxia; a single mechanism should not be assumed.
 
 **Q6 (safety).** The patient's MAP drops below the ordered target but the monitor alarm was silenced earlier. What should the nurse do?
 A. Check the patient, confirm the reading (transducer or cuff), call for review with SBAR, and keep monitoring.
