@@ -61,6 +61,11 @@
       "id": "S-ENLS-SE-V6",
       "read": "partial",
       "use": "Selected hospital arrival text and initial assessment; printed page 6 visually inspected; checked 2026-11-24; specialist protocol, not a nursing operating procedure"
+    },
+    {
+      "id": "S-ICS-SE-2025",
+      "read": "partial",
+      "use": "2025 multidisciplinary consensus, selected HTML continuous EEG and treatment-failure sections; UK context, not local nursing protocol."
     }
   ],
   "required_sources": [
@@ -308,7 +313,8 @@
       "Check for treatable causes such as hypoglycaemia during the initial response without delaying emergency treatment. If the seizure continues, seek expert guidance and confirm the results.",
       "Document the first treatment's agent, time and response; persistent convulsions require time-sensitive authorised escalation and continued respiratory monitoring.",
       "Persistent unexplained impaired consciousness after convulsions, or paralysis masking motor signs in a high-risk patient, warrants urgent specialist assessment for EEG monitoring.",
-      "The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped."
+      "The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped.",
+      "The 2025 Intensive Care Society consensus supports continuous EEG when consciousness remains depressed after a seizure or when status epilepticus is refractory. A processed sedation-depth index (such as BIS) is not a substitute for diagnostic EEG. If continuous EEG is unavailable, urgently coordinate specialist advice and the monitoring or transfer plan; no absence of movement establishes seizure control."
     ],
     "links": [
       {
