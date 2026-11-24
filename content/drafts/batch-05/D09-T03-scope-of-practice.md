@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Fundamentals 2e, Chapter 1 sections 1.3 (Licensure, Regulations & Standards), 1.4 (Health Care Settings & Team) and 1.6 (Legal & Ethical Considerations) – United States-specific; read 2026-11-14", "International Council of Nurses – Nursing definitions (page text read 2026-11-14)", "Phase 3 additions: NMC (UK) The Code, sections 11 (delegation), 13 (recognise and work within the limits of your competence) and 16 (raise concerns), current PDF read 2026-11-15; NCSBN and ANA National Guidelines for Nursing Delegation (effective 2019-04-29; US), read in full"]
-sources: [S-OPENRN-FUND-CH1, S-ICN-DEF, S-NMC-CODE, S-NCSBN-DELEG-2019, S-SCCM-EOL-2025, S-ESICM-EOL-2024, S-AACN-STAFFING-2024, S-DOUBLE-CHECK-REVIEW-2026]
-sources_not_read: [S-OPENRN-FUND]
+sources: [S-OPENRN-FUND-CH1, S-ICN-DEF, S-NMC-CODE, S-NCSBN-DELEG-2019, S-SCCM-EOL-2025, S-ESICM-EOL-2024, S-AACN-STAFFING-2024, S-DOUBLE-CHECK-REVIEW-2026, S-OPENRN-FUND]
+sources_not_read: []
 independently_written_note: "Original wording. Three Open RN chapter pages (CC BY 4.0; attribution required if adapted) and the ICN definition page were read. The chapters describe the United States (state Nurse Practice Acts, American Nurses Association, The Joint Commission, Wisconsin examples); the ICN page gives a global definition but no scope detail. In Phase 3 the UK NMC Code and the US NCSBN/ANA delegation guidelines were added, so the UK and the US now have regulator-level sources; no regulator document for any other country (for example SCFHS Saudi Arabia, national boards elsewhere) was read, so country-specific scope rules are NOT covered and must come from the learner's own regulator and employer. Nothing here is legal advice."
 ---
 # Nursing scope of practice – working within your legal and professional boundaries
@@ -70,6 +70,8 @@ Safe assignments reflect the patient's current needs, the required nursing work 
 If competing demands make essential care unsafe, inform the charge nurse promptly, identify the immediate risks and request a competent redistribution of work or additional support. Continue urgent care within competence and arrange explicit responsibility for any delegated task. Do not silently omit required observations or invent a completed check. Use the local chain of escalation if unresolved, and record the facts and response. A 2026 review of independent double-checking identifies system constraints, including staff availability and interruptions; individual vigilance cannot substitute for a usable safety system.
 
 Fictional example: two patients require simultaneous time-critical care while a high-risk medication verification is due. Escalate the competing needs immediately, ask a qualified colleague to assume an identified task, and confirm who is responsible. Reassess both patients' needs and follow the local staffing and emergency policy; do not leave an unstable patient without appropriate coverage.
+
+**Clinical judgment and accountability (Open RN Nursing Fundamentals, chapter 4).** Before carrying out a planned intervention, assess whether the patient's condition has changed and whether the intervention remains appropriate. Clarify an unsafe or unclear order with the responsible clinician, document the findings and agreed plan, and reassess the response. In an emergency, activate the authorized escalation pathway without waiting for routine clarification. The textbook describes US nursing practice; authority to delegate, modify or withhold an intervention depends on local law, competence and institutional policy. No additional legal authority is conferred by this lesson.
 
 ## 8. Monitoring
 Review your competencies and recertifications regularly; check policy updates; reflect after incidents and near misses; ask for supervision when new tasks are introduced.
@@ -190,6 +192,8 @@ D. Nurses may change any order if they feel the dose is too high, and tell the p
 
 - Nurses' Adherence to Double-Checking: A Systematic Review of Influencing Factors, Improvement Strategies, and Their Effectiveness (2026). https://pubmed.ncbi.nlm.nih.gov/41987356/ (abstract checked 2026-11-24; full appraisal outstanding).
 - AACN. Standards for Appropriate Staffing in Adult Critical Care (2024). https://www.aacn.org/newsroom/standards-published-for-critical-care-nurse-staffing (official standards summary checked 2026-11-24; full 42-page document requires sign-in and was not read).
+
+- S-OPENRN-FUND. https://www.ncbi.nlm.nih.gov/sites/books/NBK610818/ (selected official or publisher HTML passages checked 2026-11-24; full appraisal and independent review outstanding).
 
 ## 19. Local protocol note
 Your regulator's standards, your employer's policies and your unit's competency framework define what you may do. If they conflict, ask for clarification through the chain of command.
