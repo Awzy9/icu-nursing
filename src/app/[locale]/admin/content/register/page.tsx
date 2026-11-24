@@ -32,7 +32,7 @@ export default async function DraftList({ params, searchParams }: { params: Prom
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">Draft register</h1>
-      <p className="text-muted-foreground">Metadata about unpublished clinical drafts. The review queue is a workflow suggestion, not a medical risk assessment or clinical approval. Notes you add are workflow notes only: never paste clinical content, doses or rates.</p>
+      <p className="text-muted-foreground">Metadata about unpublished clinical drafts. None is clinically approved or published. The review queue is a workflow suggestion, not a medical risk assessment or clinical approval. Notes you add are workflow notes only: never paste clinical content, doses or rates.</p>
       <form method="get" role="search" className="grid gap-3 rounded-lg border border-border bg-card p-4 md:grid-cols-4">
         <Field label="Search key or title" htmlFor="q"><Input id="q" name="q" type="search" maxLength={80} defaultValue={f.q ?? ""} /></Field>
         <Field label="Type" htmlFor="type"><Select id="type" name="type" defaultValue={f.type ?? ""} className={sel}><option value="">All</option>{DRAFT_TYPES.map((t) => <option key={t.type} value={t.type}>{t.label}</option>)}</Select></Field>
