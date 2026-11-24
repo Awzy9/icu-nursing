@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Pharmacology 2e, section 8.5 CNS depressants (barbiturates and benzodiazepines) and 10.10 Anesthetics – US entry-level textbook, CC BY 4.0; the text reproduces parts of US drug labelling", "SCCM PADIS 2018 and 2025 focused update – official recommendation pages, recommendation-level statements only; full guidelines NOT read", "ISMP High-Alert Medication List 2024 (classification only); FDA infusion pump page (2018)", "Phase 3 additions: US FDA prescribing information (one manufacturer label per drug retrieved 2026-11-15 via openFDA: midazolam, lorazepam, propofol, dexmedetomidine) – US labelling, not guidelines"]
-sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SCCM-PADIS, S-ISMP-HA, S-FDA-PUMP, L-LORAZEPAM, L-DEXMEDETOMIDINE]
-sources_not_read: [S-OPENRN-PHARM]
+sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SCCM-PADIS, S-ISMP-HA, S-FDA-PUMP, L-LORAZEPAM, L-DEXMEDETOMIDINE, S-OPENRN-PHARM]
+sources_not_read: []
 independently_written_note: "Original wording. The Open RN sections on benzodiazepines, barbiturates and anaesthetics were read in full; they give lorazepam and phenobarbital in detail and propofol and midazolam only in one-line examples, so in Phase 3 the boxed warning, indication and warnings sections of one US FDA label each for midazolam, lorazepam, propofol and dexmedetomidine were read, which now supports key safety statements for these four drugs at the level of US labelling; ICU infusion practice, sedation depth targets, withdrawal syndromes and nursing titration protocols still have NO source here. Sedation monitoring and scales are covered in D03-T09 (scale definitions are not taught). No doses, concentrations, infusion rates or titration ranges are given: the textbook quotes US labelling doses, which are deliberately omitted. This draft is partial and not a complete sedative resource."
 ---
 # Sedatives in the ICU – classes, key risks and nursing safety (partial evidence)
@@ -56,6 +56,8 @@ Sedatives can cause respiratory depression, hypotension and prolonged sedation, 
 - **Know the label cautions:** watch for hypotension and bradycardia with dexmedetomidine, and for hypotension after propofol rate changes; for propofol also watch for new unexplained metabolic acidosis, high potassium, raised triglycerides or muscle injury and report them (propofol infusion syndrome); keep strict aseptic technique and follow the single-patient, time-limited use stated on the label; avoid abrupt large changes in pressure in patients with raised intracranial pressure unless ordered.
 - Report adverse effects, paradoxical reactions and signs of withdrawal (the textbook says barbiturates should be tapered; the lorazepam label lists dependence and withdrawal reactions; ICU withdrawal syndromes are not described in the sources read).
 - Document drug, rate, targets, sedation scores, respiratory status, interventions and escalations.
+
+**Assess the patient before and after sedative administration (Open RN, chapter 2).** Verify the current indication and prescribed sedation goal, then document the clinical response and adverse effects. A change in arousal after administration requires assessment in context of ventilation, circulation and other sedating drugs. Seek prompt review for unexpected deterioration; an apparent response does not automatically establish that further sedation is safe. This general nursing textbook framework complements rather than replaces the label and ICU sedation guidance.
 
 ## 8. Monitoring parameters
 Sedation depth by unit scale; respiratory rate, pattern and effort; SpO₂ and end-tidal CO₂ if available; airway patency; blood pressure and heart rate; delirium screen; pain score; pump settings and alarms; daily sedation interruption or wake-up trial results as protocolised; review ordered triglycerides during prolonged propofol exposure or lipid-clearance concerns, along with relevant metabolic, renal and muscle-injury results when toxicity is suspected. Glucose monitoring follows the patient's indications and local policy; no universal interval is specified here.
@@ -174,6 +176,8 @@ D. Choosing the sedative agent, dose and sedation target for the patient.
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians (content current as of 2018-02-02). https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
 
 - SCCM 2025 focused PADIS update. https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (selected recommendation or label text; accessed 2026-11-24)
+
+- S-OPENRN-PHARM. https://www.ncbi.nlm.nih.gov/sites/books/NBK597872/ (selected passages checked 2026-11-24; full appraisal and applicable rights review outstanding).
 
 ## 19. Local protocol note
 Sedation protocols, agents available, concentrations, titration authority, sedation targets, interruption procedures, monitoring intervals and reversal policies follow the unit's policies and pharmacy.
