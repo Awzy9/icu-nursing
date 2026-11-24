@@ -58,6 +58,8 @@ Describe what is known and unknown without speculating about blame. Report contr
 
 WHO's 2020 reporting guidance emphasizes caution when interpreting report-derived data; the 2026–2027 ISMP recommendations likewise warn against treating reporting frequency as proof of safety. A low report count may reflect under-reporting. Teams should use reports to identify hazards, investigate system contributors and provide feedback rather than assume that fewer reports mean fewer errors.
 
+**Distinguish measurements, actions and unresolved risk (NMC Code section 10).** Record when the event occurred separately from when a delayed entry was written. Include the observed finding, who was notified and when, the response received, what was actually done, the reassessment and what remains outstanding. Verify imported or copied-forward observations before relying on them; never mark a pending task or unconfirmed response as completed. If a result is disputed or entered incorrectly, use the authorized audit-preserving correction process. NMC is a UK professional standard; local recordkeeping and privacy rules govern implementation.
+
 ## 8. Monitoring parameters
 Check at each shift: are observations, intake/output, infusions, lines and devices, skin and mobility documented; are pending orders or results noted; is the plan of care current; are late entries clearly labelled.
 
