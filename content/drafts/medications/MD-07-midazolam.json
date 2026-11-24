@@ -97,6 +97,13 @@
           "sources": [
             "L-MIDAZOLAM"
           ]
+        },
+        {
+          "text": "CYP3A inhibitors, including certain azole antifungals, erythromycin, verapamil and diltiazem, can prolong sedation. Reduced hepatic function or low cardiac output may also delay recovery. Review the medicines and organ-function trends with pharmacy and the treating team; reassess ventilation and unexplained delayed awakening.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
         }
       ]
     },
@@ -133,6 +140,13 @@
         },
         {
           "text": "After prolonged exposure, abrupt discontinuation can cause withdrawal, including seizures. Drug interactions may also prolong sedation; review delayed awakening and cessation with the clinical team.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "The registered preserved injection is contraindicated with known midazolam hypersensitivity, acute narrow-angle glaucoma and use in premature infants. It is unsuitable for intrathecal or epidural administration because of its benzyl alcohol content; verify the actual formulation and route.",
           "support": "partial",
           "sources": [
             "L-MIDAZOLAM"
@@ -265,6 +279,15 @@
     {
       "kind": "assess",
       "text": "Assess unexpected prolonged sedation and new agitation, tremor or seizures during or after therapy reduction; escalate and clarify the authorised cessation plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check the formulation, documented allergies, acute narrow-angle glaucoma and interacting medicines; report unexpectedly prolonged sedation or respiratory deterioration.",
       "critical": true,
       "support": "partial",
       "sources": [

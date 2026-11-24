@@ -81,6 +81,13 @@
           "sources": [
             "L-FENTANYL"
           ]
+        },
+        {
+          "text": "Starting a CYP3A4 inhibitor or stopping an inducer can increase fentanyl exposure and prolong respiratory depression. Conversely, adding an inducer or stopping an inhibitor can reduce analgesia or precipitate withdrawal in a dependent patient. Review medication changes with pharmacy and assess ventilation, arousability, pain and withdrawal signs; adjustments are clinician-directed.",
+          "support": "partial",
+          "sources": [
+            "L-FENTANYL"
+          ]
         }
       ]
     },
@@ -231,6 +238,15 @@
     {
       "kind": "assess",
       "text": "Review serotonergic medicines with pharmacy and escalate new agitation with fever, autonomic instability or neuromuscular abnormalities; consider other urgent causes of deterioration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-FENTANYL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag newly started or stopped CYP3A4 interacting medicines and reassess ventilation, sedation, pain and possible withdrawal promptly.",
       "critical": true,
       "support": "partial",
       "sources": [

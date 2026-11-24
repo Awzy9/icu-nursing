@@ -102,11 +102,18 @@
           "sources": [
             "L-KETAMINE"
           ]
+        },
+        {
+          "text": "The label describes reported intracranial pressure increases; patients with elevated intracranial pressure require monitored specialist care and frequent neurological reassessment. Concomitant theophylline or aminophylline may increase seizure risk, while sympathomimetics or vasopressin may amplify cardiovascular effects. Flag these exposures to the team; maintain neurological and haemodynamic surveillance.",
+          "support": "partial",
+          "sources": [
+            "L-KETAMINE"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Transient rises in blood pressure, heart rate and cardiac index are frequent, but falls in blood pressure and heart rate, arrhythmias and cardiac decompensation have also been observed.",
@@ -132,6 +139,13 @@
         {
           "text": "Emergence delirium (confusional states or agitation) can occur after the procedure.",
           "support": "sourced",
+          "sources": [
+            "L-KETAMINE"
+          ]
+        },
+        {
+          "text": "The registered product is contraindicated when a substantial blood-pressure increase would present a serious hazard, and with known allergy to ketamine or its ingredients. Clarify patient-specific cardiovascular risk and the planned indication with the treating clinician.",
+          "support": "partial",
           "sources": [
             "L-KETAMINE"
           ]
@@ -261,6 +275,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Check for major blood-pressure-related risk, product allergy, known raised intracranial pressure and interacting medicines; escalate concerning neurological or cardiovascular changes.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-KETAMINE"
+      ]
     }
   ],
   "gaps": [

@@ -100,6 +100,13 @@
           "sources": [
             "L-PROPOFOL"
           ]
+        },
+        {
+          "text": "The registered label also identifies impaired tissue oxygen delivery, severe neurological injury or sepsis, and concurrent substantial exposure to vasoconstrictors, inotropes or steroids as risk factors for propofol infusion syndrome. Escalate unexplained metabolic or organ deterioration immediately rather than relying on exposure duration alone.",
+          "support": "partial",
+          "sources": [
+            "L-PROPOFOL"
+          ]
         }
       ]
     },
@@ -129,6 +136,13 @@
         },
         {
           "text": "Extended exposure to the lipid emulsion may raise triglycerides; other lipid sources and impaired lipid clearance require coordinated review. New metabolic acidosis or signs of propofol infusion syndrome require immediate clinician assessment and the label-directed discontinuation pathway.",
+          "support": "partial",
+          "sources": [
+            "L-PROPOFOL"
+          ]
+        },
+        {
+          "text": "For this registered emulsion, verify any known allergy to propofol or its ingredients and prior anaphylaxis to egg or soy products. Clarify the allergy history and exact formulation with the treating team; the registered product is not indicated for paediatric ICU sedation.",
           "support": "partial",
           "sources": [
             "L-PROPOFOL"
@@ -257,12 +271,21 @@
       "sources": [
         "L-PROPOFOL"
       ]
+    },
+    {
+      "kind": "assess",
+      "text": "Verify formulation and allergy history; review tissue perfusion, concurrent vasoactive medicines and steroids, and ordered metabolic and organ-function trends.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PROPOFOL"
+      ]
     }
   ],
   "gaps": [
     "Lipid monitoring and selected infusion-syndrome warning signs added; exact surveillance intervals and preparation remain local and pharmacist-led.",
     "PADIS and other sedation guideline text was not read for this entry.",
-    "Paediatric limitations were not summarised."
+    "Registered product restriction for paediatric ICU sedation noted; detailed paediatric anaesthesia and sedation evidence remains outside scope."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",

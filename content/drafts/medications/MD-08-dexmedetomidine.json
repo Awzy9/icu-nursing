@@ -76,6 +76,13 @@
           "sources": [
             "L-DEXMEDETOMIDINE"
           ]
+        },
+        {
+          "text": "The registered label describes reported diabetes insipidus during sedation. Monitor urine output, fluid balance and ordered laboratory findings during and after treatment; urgently report unexpected polyuria with dilute urine and rising sodium. The team evaluates alternative causes, fluid management and whether stopping the drug is appropriate.",
+          "support": "partial",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
         }
       ]
     },
@@ -98,6 +105,13 @@
         },
         {
           "text": "A patient awakening to stimulation does not necessarily indicate inadequate sedation. Suspected drug-related hyperthermia requires urgent assessment and the label-directed discontinuation response.",
+          "support": "partial",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        },
+        {
+          "text": "Other medicines that slow heart rate or cause vasodilation merit caution because of potential combined haemodynamic effects. Sedatives and opioids can also enhance drug effects. Reduced hepatic clearance warrants prescriber or pharmacist reassessment; do not assume arousability excludes excessive combined sedation.",
           "support": "partial",
           "sources": [
             "L-DEXMEDETOMIDINE"
@@ -214,6 +228,15 @@
     {
       "kind": "assess",
       "text": "Monitor temperature and investigate new unexplained fever urgently; consider a drug reaction alongside infection and other causes, and obtain an immediate authorised medication plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-DEXMEDETOMIDINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Monitor urine output and ordered sodium trends during and after therapy; report unexpected polyuria, rising sodium or haemodynamic instability and review concurrent sedatives and rate-slowing medicines.",
       "critical": true,
       "support": "partial",
       "sources": [

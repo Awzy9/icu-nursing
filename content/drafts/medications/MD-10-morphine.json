@@ -90,11 +90,18 @@
           "sources": [
             "L-MORPHINE"
           ]
+        },
+        {
+          "text": "Report worsening abdominal distension, vomiting or absent bowel function for assessment of possible obstruction or ileus; monitor for urinary retention and constipation. New or worsening pain may reflect opioid-induced hyperalgesia rather than insufficient analgesia, requiring clinical reassessment.",
+          "support": "partial",
+          "sources": [
+            "L-MORPHINE"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Boxed warning: serious, life-threatening or fatal respiratory depression may occur, especially during initiation or after a dose increase; proper dosing and adjustment are essential.",
@@ -120,6 +127,13 @@
         {
           "text": "The label also warns of neonatal opioid withdrawal syndrome, cardiovascular instability, opioid-induced hyperalgesia and allodynia, adrenal insufficiency and severe hypotension.",
           "support": "sourced",
+          "sources": [
+            "L-MORPHINE"
+          ]
+        },
+        {
+          "text": "The registered injection lists significant respiratory depression, acute or severe asthma without monitoring or rescue equipment, suspected or confirmed gastrointestinal obstruction including paralytic ileus, morphine hypersensitivity, and current or recent monoamine oxidase inhibitor treatment as contraindications. Verify the medication history and clinical context with the responsible clinician before administration.",
+          "support": "partial",
           "sources": [
             "L-MORPHINE"
           ]
@@ -247,6 +261,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Review respiratory status, bowel function, allergy and current or recent monoamine oxidase inhibitor exposure; clarify suspected obstruction or unexplained worsening pain.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MORPHINE"
+      ]
     }
   ],
   "gaps": [
