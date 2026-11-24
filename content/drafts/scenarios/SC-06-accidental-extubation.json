@@ -261,7 +261,7 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Sustained exhaled carbon dioxide on waveform capnography is central to excluding oesophageal intubation. Reassess if the trace changes, the tube moves, or oxygenation deteriorates. An absent or lost reliable trace requires immediate airway-team assessment and emergency support; a depth mark or satisfactory saturation alone cannot confirm placement. Review contributing factors without blame. After stabilization, review documented tube position, securement and factors such as agitation or movement; prevention and monitoring are multidisciplinary.",
+          "feedback": "Sustained exhaled carbon dioxide on waveform capnography is central to excluding oesophageal intubation. Reassess if the trace changes, the tube moves, or oxygenation deteriorates. An absent or lost reliable trace requires immediate airway-team assessment and emergency support; a depth mark or satisfactory saturation alone cannot confirm placement. Review contributing factors without blame. After stabilization, review documented tube position, securement and factors such as agitation or movement; prevention and monitoring are multidisciplinary. The PUMA planned high-risk extubation guidance also supports written and verbal transfer of airway concerns, warning signs, review triggers, rescue equipment and responsible airway contact. Apply that handover principle after an unplanned event without treating the planned-extubation algorithm as an emergency procedure.",
           "consequence": "Verification and a factual incident review may identify residual airway concerns and modifiable contributors to recurrence.",
           "support": "partial",
           "sources": [
@@ -304,7 +304,8 @@
       "Assess effective breathing as well as oxygenation; provide trained emergency ventilation support if indicated under the local pathway while the airway team responds.",
       "Report the event and review agitation, sedation and securement.",
       "After reintubation, confirm the team's placement assessment and sustained waveform capnography; escalate loss of a reliable trace or renewed deterioration promptly.",
-      "Do not delay airway-team review for obstruction, exhaustion, secretion burden or reduced consciousness after unplanned extubation."
+      "Do not delay airway-team review for obstruction, exhaustion, secretion burden or reduced consciousness after unplanned extubation.",
+      "After stabilization, hand over any known difficult-airway history, warning signs, individualized rescue plan and airway-team contact; ensure the receiving clinician understands the plan."
     ],
     "links": [
       {
