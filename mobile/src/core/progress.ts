@@ -25,6 +25,8 @@ const sessionRecordSchema = z.object({
   // Local-only history for comparison panels when resuming a branching case.
   // Optional so previously saved v2 sessions and remote RPC rows still parse.
   visited: z.array(z.number().int().min(0)).max(100).optional(),
+  // Optional local decision history; old sessions and remote rows remain readable.
+  decisions: z.array(z.object({ position: z.number().int().min(0), choice: z.number().int().min(0).max(3) })).max(100).optional().catch(undefined),
 });
 export type SessionRecord = z.infer<typeof sessionRecordSchema>;
 

@@ -94,6 +94,31 @@ describe("scenario save and resume (guest)",()=>{
 });
 
 describe("scenario personalized debrief",()=>{
+ it("retains an incorrect earlier choice across a guest refresh",()=>{
+  const scenario={setting:"Fictional",objectives:[],takeaways:["Reflect"],steps:[
+   {position:1,info:"First stage",prompt:"First decision",options:[
+    {text:"Preferred first action",points:2,next:2,feedback:"Preferred first guidance"},
+    {text:"Incorrect first action",points:0,next:2,feedback:"Review first guidance"}
+   ]},
+   {position:2,info:"Second stage",prompt:"Second decision",options:[
+    {text:"Finish action",points:2,next:null,feedback:"Finish guidance"}
+   ]}
+  ]};
+  render(<ScenarioPlayer scenario={scenario} locale="en" moduleKey="SC-EXAMPLE" title="Example scenario"/>);
+  fireEvent.click(screen.getByRole("radio",{name:"Incorrect first action"}));
+  fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+  fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+  cleanup();
+  render(<ScenarioPlayer scenario={scenario} locale="en" moduleKey="SC-EXAMPLE" title="Example scenario"/>);
+  fireEvent.click(screen.getByRole("button",{name:"Resume"}));
+  fireEvent.click(screen.getByRole("radio",{name:"Finish action"}));
+  fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+  fireEvent.click(screen.getByRole("button",{name:"Finish and reflect"}));
+  expect(screen.getByText("Incorrect first action",{exact:false})).toBeVisible();
+  expect(screen.getByText("Review first guidance")).toBeVisible();
+  expect(screen.queryByText(/Some earlier answer details are unavailable/)).not.toBeInTheDocument();
+ });
+
  it("shows selected and preferred responses for missed decisions",()=>{
   const scenario={setting:"Fictional",objectives:[],takeaways:["Reflect"],steps:[
    {position:1,info:"First stage",prompt:"Choose a response",options:[

@@ -2,6 +2,7 @@
 // Non-cryptographic fingerprint, for revision detection only (not authentication).
 import type { z } from "zod";
 import type { learningScenarioSchema } from "./working-content";
+import type { ScenarioDecision } from "./scenario-debrief";
 type Scenario = z.infer<typeof learningScenarioSchema>;
 export function scenarioVersion(s: Scenario): string {
   const data = JSON.stringify([s.setting, s.objectives, s.takeaways, s.steps.map(step => [
@@ -47,4 +48,28 @@ export function sequentialHistory(s: Scenario, position: number): number[] | und
     if (!options.length || options.some(o => o.next !== next)) return undefined;
   }
   return s.steps.slice(0, index).map(step => step.position);
+}
+
+// Recover only a coherent recorded suffix of the attempt. Earlier choices may be
+// unavailable in legacy or cross-device sessions; never infer them from the score.
+export function restoreScenarioDecisions(s: Scenario, saved: { kind: string; version: string; position: number; score: number; finished: boolean; decisions?: unknown }): { decisions: ScenarioDecision[]; incomplete: boolean } {
+  const fallback = { decisions: [], incomplete: saved.position !== s.steps[0]?.position };
+  if (!canResumeScenario(s, saved) || !Array.isArray(saved.decisions) || !saved.decisions.length || saved.decisions.length > s.steps.length) return fallback;
+  const decisions: ScenarioDecision[] = [];
+  let points = 0;
+  let expected: number | undefined;
+  for (const item of saved.decisions) {
+    if (!item || typeof item !== "object" || !Number.isInteger(item.position) || !Number.isInteger(item.choice) || item.choice < 0) return fallback;
+    if (expected !== undefined && item.position !== expected) return fallback;
+    const step = s.steps.find(step => step.position === item.position);
+    const option = step?.options[item.choice];
+    if (!step || !option || option.next === null || option.next <= step.position || !Number.isInteger(option.points) || option.points < 0) return fallback;
+    decisions.push({ position: item.position, choice: item.choice });
+    points += option.points;
+    expected = option.next;
+  }
+  const first = decisions[0]!.position;
+  const prefixScore = saved.score - points;
+  if (expected !== saved.position || !canResumeScenario(s, {...saved, position: first, score: prefixScore})) return fallback;
+  return { decisions, incomplete: first !== s.steps[0]?.position };
 }

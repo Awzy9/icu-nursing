@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { scenarioVersion, canResumeScenario, sequentialHistory } from "@icu/schemas/scenario-session";
+import { scenarioVersion, canResumeScenario, sequentialHistory, restoreScenarioDecisions } from "@icu/schemas/scenario-session";
 import { scenarioDebrief, type ScenarioDecision } from "@icu/schemas/scenario-debrief";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
@@ -75,7 +75,7 @@ export default function CaseScreen() {
                 <H2>{t("cases.resume")}</H2>
                 <P muted>{t("cases.resumeBody")}</P>
                 <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
-                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); setResumedWithoutDecisions(existingSession.position !== scenario.steps[0]!.position); const prior = sequentialHistory(scenario, existingSession.position) ?? existingSession.visited; setVisited(prior ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !prior?.length); }} />
+                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); const restored = restoreScenarioDecisions(scenario, existingSession); setDecisions(restored.decisions); setResumedWithoutDecisions(restored.incomplete); const prior = sequentialHistory(scenario, existingSession.position) ?? existingSession.visited; setVisited(prior ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !prior?.length); }} />
                 <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
               </Card>
             );
@@ -96,7 +96,7 @@ export default function CaseScreen() {
                 <H2>{t("cases.summary")}</H2>
                 <P>{locale === "ar" ? "مجموع النقاط" : "Total learning points"}: {points}</P>
                 <P>{locale === "ar" ? "نقاط القرارات المسجلة" : "Recorded decisions"}: {debrief.observedPoints} / {debrief.observedMaximum}</P>
-                {resumedWithoutDecisions ? <P small muted>{locale === "ar" ? "لا تتوفر تفاصيل القرارات السابقة للاستئناف. تعرض المراجعة القرارات المسجلة هنا فقط." : "Earlier answer details are unavailable after resuming. This review covers only decisions recorded here."}</P> : null}
+                {resumedWithoutDecisions ? <P small muted>{locale === "ar" ? "لا تتوفر تفاصيل القرارات السابقة للاستئناف. تعرض المراجعة القرارات المسجلة هنا فقط." : "Some earlier answer details are unavailable. This review covers only retained decisions."}</P> : null}
                 <P small muted>{locale === "ar" ? "للتعلم فقط، وليس تقييماً للكفاءة السريرية." : "Educational feedback only; not a clinical competency assessment."}</P>
                 {debrief.priorities.length ? <H2>{locale === "ar" ? "أولويات المراجعة" : "Review priorities"}</H2> : <P>{locale === "ar" ? "لا توجد قرارات مسجلة تحتاج إلى مراجعة." : "No recorded decisions require review."}</P>}
                 {debrief.priorities.map(item => <Card key={item.position}><P>Step {item.position}: {item.points} / {item.maximum} points</P><P>{item.prompt}</P><P>Your choice: {item.selected}</P><P>{item.feedback}</P><P>Preferred response: {item.preferred}</P><P>{item.preferredFeedback}</P></Card>)}
@@ -110,17 +110,18 @@ export default function CaseScreen() {
           const decide = () => { if (choice !== null) setRevealed(true); };
           const advance = () => {
             if (!option || choice === null) return;
-            setDecisions(previous => [...previous, { position: pos, choice }]);
+            const recorded = [...decisions, { position: pos, choice }];
+            setDecisions(recorded);
             const newPoints = points + option.points;
             setPoints(newPoints);
             if (option.next == null) {
               const tenths = scoreTenths(newPoints, scenario.steps.length * 2);
               const at = new Date().toISOString();
               update((p) => recordCase(p, code!, tenths, at));
-              saveSession(code!, { kind: "scenario", version, position: pos, score: newPoints, finished: true, at }); // local auto-discards a finished session; the remote row is kept, matching the website
+              saveSession(code!, { kind: "scenario", version, position: pos, score: newPoints, finished: true, at, decisions: recorded }); // local auto-discards a finished session; the remote row is kept, matching the website
               setDone(true);
             } else {
-              saveSession(code!, { kind: "scenario", version, position: option.next, score: newPoints, finished: false, at: new Date().toISOString(), visited: [...visited, pos].slice(-100) });
+              saveSession(code!, { kind: "scenario", version, position: option.next, score: newPoints, finished: false, at: new Date().toISOString(), visited: [...visited, pos].slice(-100), decisions: recorded });
               setVisited((old) => [...old, pos]);
               setPosition(option.next);
             }
