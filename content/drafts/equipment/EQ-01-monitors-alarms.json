@@ -48,10 +48,12 @@
     },
     {
       "name": "Oxygen saturation",
-      "explanation": "Pulse oximeters can underestimate or overestimate saturation, especially when the reading is borderline; overestimation has been reported in people with dark skin, and probe placement matters (NICE CG103, citing an NHS England patient safety alert).",
+      "explanation": "Pulse oximetry estimates arterial oxygen saturation. Accuracy can be affected by low peripheral perfusion, probe placement and skin pigmentation; readings may overestimate oxygenation in people with darker skin. Assess the patient and signal quality rather than relying on a reassuring number alone. If the reading conflicts with clinical findings, promptly escalate for an appropriate confirmatory assessment, including arterial blood gas when clinically indicated.",
       "support": "partial",
       "sources": [
-        "N-NICE-CG103"
+        "N-NICE-CG103",
+        "S-FDA-OXIMETER-BASICS",
+        "S-SSC-2026"
       ]
     },
     {
@@ -135,6 +137,11 @@
       "id": "S-FDA-OXIMETER-BASICS",
       "read": "partial",
       "use": "FDA public HTML on pulse oximetry accuracy; not a clinical sampling protocol."
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "2026 adult sepsis guideline oxygenation monitoring statement and remarks: clinical examination, arterial blood gas and SpO2 limitations in shock; recommendation-level review only."
     }
   ],
   "required_sources": [
