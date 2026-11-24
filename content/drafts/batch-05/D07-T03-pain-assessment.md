@@ -98,10 +98,10 @@ A 57-year-old man on a ventilator is restless with a heart rate of 112. The nurs
 **Q1 (judgment).** A ventilated patient is restless and has a heart rate of 112. What is the best first step?
 A. Request extra sedation straight away, because restlessness suggests that the sedative dose is currently too low.
 B. Assume the rapid heart rate means pain and give the next analgesic dose early without waiting for an order.
-C. Use the unit's validated behavioural tool, look for other causes, and report before more sedation is requested.
+C. Assess for deterioration and pain using self-report if possible or a validated behavioral tool.
 D. Do nothing until the heart rate settles, because vital signs are the only reliable guide to pain in this patient.
 **Answer: C.**
-**Why correct:** SCCM states vital signs are not valid indicators of pain and pain should be assessed with a validated tool and treated before a sedative is considered.
+**Why correct:** Restlessness and tachycardia may reflect pain, hypoxia, ventilator problems, delirium or other causes. Assess immediate threats first. Seek reliable self-report even in an intubated patient who can communicate; use a behavioral tool when self-report is not feasible and behaviors are observable. Vital signs are prompts for assessment, not pain scores.
 **Why not A:** Sedation should not be increased before pain is assessed.
 **Why not B:** Giving drugs without assessment and an order is unsafe.
 **Why not D:** Vital signs are cues only; waiting leaves possible pain untreated.
@@ -112,7 +112,7 @@ B. The trend in heart rate and blood pressure recorded on the monitor over the p
 C. A numeric 0–10 rating card held in front of the patient, which the sedated patient points to unaided, as in any other adult.
 D. The bispectral index, which measures the depth of sedation and can indicate whether pain is present in a deeply sedated patient.
 **Answer: A.**
-**Why correct:** SCCM identifies the BPS, BPS-NI and CPOT as the behavioural tools with the best validity and reliability in patients who cannot self-report but show observable behaviours. Vital signs are not valid indicators of pain, and the numeric rating scale needs self-report.
+**Why correct:** SCCM identifies BPS, BPS-NI and CPOT as supported behavioral approaches when self-report is unavailable and behavior is observable. Select the tool appropriate to intubation status and local training. Paralysis or profound sedation may make behavior unobservable; absence of observable pain behavior does not establish absence of pain.
 **Why not B:** Vital signs are not valid indicators of pain.
 **Why not C:** The numeric rating scale is for patients who can self-report.
 **Why not D:** BIS is described for sedation monitoring, not pain.
@@ -123,7 +123,7 @@ B. Record "tolerable" and take no further action, because the patient has said t
 C. Ask follow-up questions (PQRSTU) and clarify the comfort goal before deciding on the plan with the prescriber.
 D. Repeat the question until the patient gives a lower number, so that the chart shows a score below the action level.
 **Answer: C.**
-**Why correct:** Open RN advises follow-up when answers do not align and assessing the comfort-function goal.
+**Why correct:** Respect the patient's reported score and clarify location, quality, timing, movement-related symptoms and comfort/function goals. Review new or concerning causes promptly and reassess after authorized intervention. Do not replace the patient's score with your own impression of tolerability.
 **Why not A:** Analgesics need an order and a full assessment.
 **Why not B:** The 7 may reflect movement-related pain needing action.
 **Why not D:** Leading the patient to a lower number distorts the assessment.
@@ -145,7 +145,7 @@ B. Give a stimulant to wake the patient, so that the sedation score and respirat
 C. Ask a colleague to check the patient's pain score at the next round and then decide what to do.
 D. Assess airway, breathing and sedation, stay with the patient, and call the prescriber urgently.
 **Answer: D.**
-**Why correct:** Adverse effects of analgesia need immediate assessment and escalation.
+**Why correct:** New reduced arousal and respiratory depression after analgesia require immediate assessment and emergency escalation. Stay with the patient, activate urgent help and provide oxygenation or ventilation support within competency; follow the authorized opioid toxicity and reversal pathway when appropriate. Supplemental oxygen may mask hypoventilation. Continue monitoring after any reversal because respiratory depression can recur.
 **Why not A:** Ignoring a changing respiratory status is unsafe.
 **Why not B:** Reversal or stimulants need an order and a clinical decision.
 **Why not C:** A delayed check is too late.

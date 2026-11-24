@@ -103,7 +103,7 @@ B. Do it but chart that the colleague instructed you to, so that the record is c
 C. Explain it is outside your competence, ask for supervision or a qualified colleague, and escalate if needed.
 D. Refuse without any explanation and leave the task for the next shift, since it is not on your list.
 **Answer: C.**
-**Why correct:** Nurses are accountable for acting within their competence; they seek help and escalate when a task exceeds it.
+**Why correct:** Work within demonstrated competence and seek qualified assistance. The NMC Code also requires prompt action when safety is threatened. In an emergency summon help and provide the immediate measures for which you are trained; a senior colleague accepting responsibility does not extend your legal authority.
 **Why not A:** Accountability cannot be transferred to a colleague.
 **Why not B:** Documentation does not make an unsafe act safe.
 **Why not D:** Refusing without escalation leaves the patient's need unmet.
@@ -125,7 +125,7 @@ B. Reporting a medication error through the incident system so that the agency c
 C. Asking a more experienced nurse for supervision before performing a procedure for the first time.
 D. Failing to tell the provider about a significant change in the patient's condition, and not documenting it.
 **Answer: D.**
-**Why correct:** The chapter lists failure to communicate (including provider notification and documentation) among breaches of duty.
+**Why correct:** The chapter identifies failure to report important changes or document care as an example of a breach of professional duty. Whether conduct constitutes legal negligence depends on the facts and applicable law; a teaching example is not a court finding.
 **Why not A:** Taking vital signs as ordered is expected practice, not a breach.
 **Why not B:** Reporting errors supports safety culture and is not a breach.
 **Why not C:** Seeking supervision for a first-time procedure is appropriate practice.
@@ -136,18 +136,18 @@ B. Accept tasks only with orders or protocols and competence, consult if harm is
 C. Delegate all complex tasks to the least experienced staff so that registered nurses can focus on paperwork.
 D. Accept the task whenever the unit manager is present, whatever your own competence or training may be.
 **Answer: B.**
-**Why correct:** The Wisconsin example requires protocols or orders, competence, consultation if harm is possible, and supervision.
+**Why correct:** The Wisconsin example is jurisdiction-specific. NCSBN/ANA guidance applies subject to the nurse practice act; check the task, circumstances, competence, instructions and appropriate supervision. The delegator remains accountable for the delegation decision and follow-up, while the recipient is responsible for accepting and carrying out the task safely.
 **Why not A:** Staffing pressure does not change scope.
 **Why not C:** Delegation must match training and demonstrated ability.
 **Why not D:** A manager's presence does not replace competence.
 
 **Q5 (safety).** A student nurse asks why legal reviews of negligence place so much weight on documentation. Which explanation is correct?
 A. Documentation is needed for billing and has no bearing on how care is judged when a case is reviewed in law.
-B. An undocumented assessment or action is considered not done in US courts, so records must be accurate.
+B. Missing records can undermine evidence of care; accurate and timely documentation supports accountability.
 C. Charts must be as long as possible to show effort, because courts count the number of words that were recorded.
 D. Physicians' notes count as evidence, so nursing documentation is optional once the orders have been entered.
 **Answer: B.**
-**Why correct:** The chapter gives the rule of thumb that an undocumented assessment or action is treated as not done, which is why accurate records matter in a legal review. Length is not required, and nursing notes form part of the record.
+**Why correct:** The chapter's teaching maxim is a reminder to document care, not a universal legal presumption. Missing documentation is not automatic proof of negligence or proof that care was omitted. Record actual findings, actions, times and escalation accurately using the authorized correction and late-entry procedure. The UK NMC Code section 10 emphasizes clear and accurate records.
 **Why not A:** The purpose is accurate clinical and legal records.
 **Why not C:** Length is not required; accuracy is.
 **Why not D:** Nursing documentation counts as part of the record.
@@ -155,13 +155,13 @@ D. Physicians' notes count as evidence, so nursing documentation is optional onc
 **Q6 (scope).** Which statement best distinguishes nursing scope from prescriber decisions?
 A. Nurses may prescribe any treatment they think necessary if the patient becomes unstable and no prescriber is near.
 B. Nurses decide diagnoses and treatments, and doctors only supervise the nurses' decisions on the unit.
-C. Nurses assess, monitor, report and act on orders within competence; diagnosing and prescribing belong to prescribers.
+C. Assess and act within competence; diagnosis and prescribing require the applicable professional authority.
 D. Nurses may change any order if they feel the dose is too high, and tell the prescriber later if time allows.
 **Answer: C.**
-**Why correct:** The sources distinguish RN roles from APRN roles who can diagnose and prescribe under law.
+**Why correct:** Scope depends on local law, regulation, credentialing and competence. Nurses make nursing assessments and judgments; appropriately authorized advanced-practice nurses or nurse prescribers may also diagnose and prescribe within their legal scope. Ordinary bedside nurses may implement valid protocols but must clarify unsafe orders and escalate urgent concerns.
 **Why not A:** Instability does not extend legal scope.
 **Why not B:** The reverse of the described division.
-**Why not D:** Concerns about an order should be raised and resolved, not overridden.
+**Why not D:** Question unsafe orders promptly and follow the authorized withholding or emergency protocol. Do not independently rewrite prescriptions without authority.
 
 ## 18. References
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN / Chippewa Valley Technical College. Sections 1.3, 1.4 and 1.6. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/1-3-regulations-and-standards/ ; .../1-4-health-care-settings-and-team/ ; .../1-6-legal-considerations-and-ethics/ (CC BY 4.0; accessed 2026-11-14)

@@ -659,7 +659,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "aeafc395d0708804"
+   "hash": "8cb11deae5954d0d"
   },
   {
    "key": "D07-T01",
@@ -670,6 +670,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-AHA-INHOSP-STROKE-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
@@ -689,7 +694,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "335cfa3b2a5e6506"
+   "hash": "a755a59c3e561ccb"
   },
   {
    "key": "D07-T03",
@@ -719,7 +724,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "50b5c070f97e5032"
+   "hash": "4bda721b2718b3b5"
   },
   {
    "key": "D09-T03",
@@ -754,7 +759,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "9a76bd7128f07231"
+   "hash": "02b27708b0ecef4f"
   },
   {
    "key": "D02-T09",

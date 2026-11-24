@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Skills 2e, Appendix C – Head-to-Toe Assessment Checklist (entry-level general inpatient checklist; read in full 2026-11-14)", "International pressure-injury guide 4th ed. Quick Reference Guide 2026 – skin assessment timing (see D07-T04)", "SCCM PADIS 2018 official recommendation page – pain assessment statements (see D07-T03)"]
-sources: [S-OPENRN-NSK-APPC, S-INTL-PI-2026, S-SCCM-PADIS]
+sources: [S-OPENRN-NSK-APPC, S-INTL-PI-2026, S-SCCM-PADIS, S-AHA-INHOSP-STROKE-2022]
 independently_written_note: "Original wording based on the Open RN checklist (CC BY 4.0; attribution and change notice required if adapted). The checklist is written for entry-level nurses on general inpatient units; it is NOT an ICU assessment standard. ICU-specific elements (devices, ventilator, infusion pumps, haemodynamic and neurological monitoring) are covered elsewhere in this curriculum and are cross-referenced, not invented here. No ICU head-to-toe guideline was found or read."
 ---
 # Systematic head-to-toe assessment and documentation
@@ -96,7 +96,7 @@ B. Auscultating bowel sounds in all four quadrants for a full minute before anyt
 C. Measuring the weight trend and the 24-hour intake and output totals before approaching the patient.
 D. Staging any pressure injury found on the sacrum or heels, because skin findings are the most urgent.
 **Answer: A.**
-**Why correct:** The checklist begins with safety steps and a primary survey to ensure medical stability.
+**Why correct:** The general inpatient checklist begins with safety and a primary survey. In critical care, interrupt the routine assessment when an immediate threat emerges; assess airway, breathing and circulation and summon help in parallel. A checklist does not replace emergency response or ongoing ICU device checks.
 **Why not B:** Abdominal assessment belongs to the later system-by-system stage.
 **Why not C:** Weight and balance review come after the primary survey.
 **Why not D:** Skin staging is part of the integumentary assessment, later in the sequence.
@@ -118,7 +118,7 @@ B. Obtain emergency assistance and report the finding immediately according to t
 C. Wait for the patient's family to confirm that this is unusual before telling anyone else on the team.
 D. Complete the rest of the assessment first and then mention the finding at the end-of-shift handover.
 **Answer: B.**
-**Why correct:** The checklist directs the nurse to note unanticipated neurological findings and obtain emergency assistance as needed.
+**Why correct:** New unilateral facial and arm weakness may indicate acute stroke. Activate the in-hospital stroke response without waiting to finish the routine assessment. Remain with the patient, assess airway, breathing and circulation, record when the patient was last known well and when symptoms were discovered, and obtain glucose under the emergency protocol without delaying escalation. AHA in-hospital stroke guidance emphasizes rapid recognition and alert activation; treatment selection follows the specialist pathway.
 **Why not A:** Delay risks harm to the patient.
 **Why not C:** Family confirmation is not required before reporting.
 **Why not D:** Handover is too late for a possible acute neurological event.
@@ -140,7 +140,7 @@ B. "Oxygen on, patient comfortable", because a short note is quicker and the sat
 C. The device name and the flow rate or FiO₂, with the condition of the skin under the device.
 D. Only the saturation reading, since the device and the flow can be seen on the equipment.
 **Answer: C.**
-**Why correct:** The checklist directs documentation of the device and flow or FiO₂ and a check for skin breakdown.
+**Why correct:** Record the device and actual flow or set FiO₂, along with measured saturation, prescribed target, work of breathing and skin condition. Flow and FiO₂ are not interchangeable across devices. Document new support requirements and escalate unexpected deterioration.
 **Why not A:** Too vague to reproduce the treatment.
 **Why not B:** Gives no device or rate and no objective data.
 **Why not D:** The device and rate are needed to interpret the saturation.
@@ -151,7 +151,7 @@ B. Call light in reach, bed low and locked, rails per policy, risk-free room, PP
 C. Document the findings later at the end of the shift, whatever the time, and leave the room as it is.
 D. Move the patient's belongings away from the bedside to clear space, including the call light and drink.
 **Answer: B.**
-**Why correct:** These safety measures are listed at the end of the checklist.
+**Why correct:** These are routine general-inpatient safety measures. In ICU, also ensure life-sustaining devices remain secure, relevant alarms are active and an unstable patient is not left alone. Bed position and rails follow the individualized safety plan and local policy.
 **Why not A:** A raised bed and unreachable call light are unsafe.
 **Why not C:** Documentation should follow the assessment and abnormal findings be reported per policy.
 **Why not D:** Needed items such as the call light should remain within reach.
@@ -162,6 +162,8 @@ D. Move the patient's belongings away from the bedside to clear space, including
 - SCCM. PADIS 2018 recommendations page (pain assessment). https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa (recommendation-level text; accessed 2026-11-14)
 
 - NICE NG128: Stroke and transient ischaemic attack in over 16s, recommendation 1.1.2 (https://www.nice.org.uk/guidance/NG128/chapter/recommendations); Canadian Stroke Best Practices, emergency department assessment (https://www.strokebestpractices.ca/recommendations/acute-stroke-management/emergency-department-evaluation-and-management). Selected statements checked 2026-11-24; formal registration and full evidence/rights review pending.
+
+- AHA in-hospital stroke scientific statement summary (2022). https://professional.heart.org/en/science-news/identifying-best-practices-to-improve-evaluation-and-management-of-in-hospital-stroke/top-things-to-know (selected public recommendations, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Order, frequency, techniques, device checks, fall-risk tools and escalation triggers follow the unit's policies and specialty guidance.

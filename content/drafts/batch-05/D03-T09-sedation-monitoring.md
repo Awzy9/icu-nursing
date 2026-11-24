@@ -102,7 +102,7 @@ B. Increase the infusion further, since quiet and deeply sedated patients are ea
 C. Ignore the score until the scheduled ward round, because the doctors will review the sedation plan at that time.
 D. Stop all sedatives and analgesics yourself at once, without an order, so that the patient wakes as quickly as possible.
 **Answer: A.**
-**Why correct:** Over-sedation should be assessed and reported, with changes made only within the protocol or order.
+**Why correct:** Unexpected unresponsiveness warrants immediate airway, ventilation, circulation and neurological assessment, with urgent help if unstable. Compare the documented sedation target with the observed depth, review recent drug changes and other reversible causes, and use the authorized titration pathway. Do not assume sedation is the only cause.
 **Why not B:** Deeper sedation is contrary to the target and has risks.
 **Why not C:** Delay prolongs over-sedation.
 **Why not D:** Stopping analgesia without an order may cause pain and agitation.
@@ -113,7 +113,7 @@ B. They can achieve and maintain a light level of sedation in intubated adults, 
 C. They remove the need for the nurse to assess sedation with a validated scale, since the protocol decides the dose.
 D. They are legally required in every hospital in every country that cares for mechanically ventilated patients.
 **Answer: B.**
-**Why correct:** SCCM states that daily sedation interruption and nurse-protocolised targeted sedation can achieve and maintain light sedation in intubated adults. They do not guarantee shorter stays, replace validated scales or amount to a legal requirement.
+**Why correct:** SCCM describes interruption trials and nurse-protocolised titration as approaches to achieving light sedation. Screen for contraindications and use the individualized target; a trial is not mandatory during every episode of instability or when deeper sedation is clinically indicated. The ICU Liberation bundle incorporates a safety screen and failure criteria.
 **Why not A:** No such guarantee is stated.
 **Why not C:** Scales remain necessary because they give a structured, repeatable measure of sedation depth.
 **Why not D:** The statement is not a legal requirement.
@@ -133,9 +133,9 @@ D. Leave the patient alone until the agitation settles by itself, and check agai
 A. Continue the interruption until the planned time to complete the trial, since distress is usual on waking.
 B. Hold the patient down firmly to prevent any movement, so that the tube and the lines are not disturbed.
 C. Widen the oxygen alarm limits so that the alarm stops sounding and the trial can be completed as planned.
-D. Stop the trial per protocol, restore sedation and oxygenation as ordered, assess, and report to the team.
+D. Stop the trial under protocol, assess ventilation and summon help; follow the authorized rescue plan.
 **Answer: D.**
-**Why correct:** Safety criteria to stop the trial are part of the protocol; the nurse restores safety and reports.
+**Why correct:** Desaturation and distress are signs of trial intolerance. Stop the awakening trial according to the protocol and immediately assess airway, ventilation and circulation. Activate urgent help if unstable; restore oxygenation and address the cause. Resume or adjust sedation only as authorized after reassessment, not automatically as a substitute for airway rescue.
 **Why not A:** Continuing despite distress and desaturation is unsafe.
 **Why not B:** Physical force is inappropriate and unsafe.
 **Why not C:** Changing alarm limits hides the problem.
@@ -157,7 +157,7 @@ B. Performing the ordered sedation scale assessment at the interval that is set 
 C. Reporting over-sedation or agitation that is not responding to the measures in the protocol.
 D. Documenting restraint checks and the reasons for the use of the restraints on the chart.
 **Answer: A.**
-**Why correct:** Drug choice and targets are prescriber decisions (with protocol-based titration by the nurse).
+**Why correct:** Agent selection and target depth require the authorized prescribing plan, with nurse-protocolised titration where permitted. The 2025 SCCM focused update conditionally favors dexmedetomidine over propofol when lighter sedation or delirium reduction is a major priority in ventilated adults; this is not a universal drug choice, and hemodynamic risk matters.
 **Why not B:** A nursing assessment task.
 **Why not C:** A nursing responsibility.
 **Why not D:** A nursing documentation task.
@@ -165,6 +165,8 @@ D. Documenting restraint checks and the reasons for the use of the restraints on
 ## 18. References
 - SCCM. PADIS 2018 recommendations page (recommendation-level; accessed 2026-11-14): https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa . Full publication: Devlin JW et al. Crit Care Med 2018;46:e825-e873 (not read).
 - SCCM. Focused update to PADIS (2025) recommendations page (recommendation-level; accessed 2026-11-14): https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline . Crit Care Med 2025;53:e711-e727 (not read).
+
+- SCCM ICU Liberation Bundle. https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles (selected public recommendations, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Sedation scale, targets, titration authority, interruption criteria, restraint policy and monitoring frequency follow the institution's protocols and competencies.

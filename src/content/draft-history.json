@@ -1429,6 +1429,17 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "8cb11deae5954d0d",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D07-T01": [
@@ -1476,6 +1487,20 @@
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
+     "S-INTL-PI-2026",
+     "S-OPENRN-NSK-APPC",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a755a59c3e561ccb",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-INHOSP-STROKE-2022",
      "S-INTL-PI-2026",
      "S-OPENRN-NSK-APPC",
      "S-SCCM-PADIS"
@@ -1550,6 +1575,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4bda721b2718b3b5",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D09-T03": [
@@ -1583,6 +1621,20 @@
    },
    {
     "hash": "9a76bd7128f07231",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ICN-DEF",
+     "S-NCSBN-DELEG-2019",
+     "S-NMC-CODE",
+     "S-OPENRN-FUND-CH1"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "02b27708b0ecef4f",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
