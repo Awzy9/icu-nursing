@@ -10699,6 +10699,22 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "046dcd7152c3698b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-NICE-NG217",
+     "S-ACNS-CCEEG-2015",
+     "S-AHRQ-TS",
+     "S-CDC-SEIZURE-2024",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-09": [
@@ -11401,6 +11417,21 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "56a0b7080b55c6fb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-16": [
@@ -11580,6 +11611,22 @@
    },
    {
     "hash": "c3d5447f0e0f55bb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS",
+     "S-CIBS-CAMICU-TERMS",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "0c2fee6290749d29",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -11815,6 +11862,20 @@
    },
    {
     "hash": "e59a4e526cbfa236",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-ACS-TBI-2024",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "04a9170e22ca0141",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

@@ -128,7 +128,7 @@
         {
           "text": "Wait to see whether the seizure stops by itself.",
           "points": 0,
-          "next": 3,
+          "next": 2,
           "scope": "independent_nursing",
           "feedback": "A prolonged convulsive seizure is an emergency that needs immediate treatment.",
           "consequence": "Treatment is delayed and the seizure continues.",
@@ -141,7 +141,7 @@
     },
     {
       "position": 2,
-      "info": "The doctor arrives, confirms there is no individual emergency plan, and intravenous access and resuscitation equipment are ready.",
+      "info": "At the next teaching checkpoint, the emergency team is present. The doctor confirms there is no individual emergency plan, and intravenous access and resuscitation equipment are ready.",
       "prompt": "What is the nurse's role regarding the medicine?",
       "observations": [
         {
@@ -202,7 +202,7 @@
     },
     {
       "position": 3,
-      "info": "The seizure has not stopped after the first treatment.",
+      "info": "Following team-directed initial treatment at this teaching checkpoint, the seizure has not stopped.",
       "prompt": "What do you do now?",
       "observations": [
         {

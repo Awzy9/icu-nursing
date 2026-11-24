@@ -110,7 +110,7 @@
         {
           "text": "Record only the total score and check again at the usual time.",
           "points": 0,
-          "next": 3,
+          "next": 2,
           "scope": "independent_nursing",
           "feedback": "NICE says the components must always accompany the total, and a deterioration should be reported without waiting.",
           "consequence": "The change in the motor response is lost in the total and the report is delayed.",
@@ -122,7 +122,7 @@
         {
           "text": "Assume the patient is tired and let them sleep without further checks.",
           "points": 0,
-          "next": 3,
+          "next": 2,
           "scope": "independent_nursing",
           "feedback": "A fall in responsiveness is a deterioration to report, not to assume away.",
           "consequence": "The deterioration goes unreported.",
@@ -135,7 +135,7 @@
     },
     {
       "position": 2,
-      "info": "The clinician has been told and is on the way. Observations were due at a longer interval.",
+      "info": "At the next teaching checkpoint, the clinician is aware of the deterioration and is on the way. Observations were due at a longer interval.",
       "prompt": "How should you observe the patient now?",
       "observations": [
         {

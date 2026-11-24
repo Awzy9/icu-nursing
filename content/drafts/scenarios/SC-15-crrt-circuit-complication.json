@@ -101,7 +101,7 @@
           "next": 2,
           "scope": "assessment",
           "feedback": "The Alberta Health Services 2025 alarm pathway is specific to its CRRT machine and clinical setting. Patient assessment and prompt operator escalation come first; catheter manipulation, line checks and alarm clearance are not generic instructions for an untrained learner.",
-          "consequence": "You find a kinked line under the patient and the alarm clears once it is freed.",
+          "consequence": "A trained operator identifies tubing tension from the recent movement and checks the circuit under the approved procedure; the patient and alarm trend are reassessed.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
@@ -161,7 +161,7 @@
           "next": 3,
           "scope": "escalation",
           "feedback": "The AHS pathway is specific to its machine and clinical setting. Blood return is not automatic: if clotting or another circuit safety hazard is suspected, do not attempt return before an authorised trained operator establishes the safe pathway. Do not override safety alarms.",
-          "consequence": "Blood is returned, the reason is recorded and the physician plans the next step for the line.",
+          "consequence": "The trained operator determines whether blood return is safe under the device procedure. Any blood loss and interruption are documented, and the responsible team reviews the access and treatment plan.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
