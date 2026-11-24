@@ -2884,6 +2884,25 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "433d95cbe1b5dfdd",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-STAFFING-2024",
+     "S-DOUBLE-CHECK-REVIEW-2026",
+     "S-ESICM-EOL-2024",
+     "S-ICN-DEF",
+     "S-NCSBN-DELEG-2019",
+     "S-NMC-CODE",
+     "S-OPENRN-FUND",
+     "S-OPENRN-FUND-CH1",
+     "S-SCCM-EOL-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D02-T09": [
@@ -3690,6 +3709,23 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "5e6ecb84f9e6078b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-AHA-ALS-2025",
+     "S-ERC-ALS-2025",
+     "S-ERC-BLS-2025",
+     "S-OPENRN-ADV-C7",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T06": [
@@ -3869,6 +3905,21 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "8d56612d25815a3d",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NHS-SPS-HYPO-2024",
+     "S-NICE-NG148",
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D04-T08": [
@@ -3969,6 +4020,22 @@
     ],
     "gaps": 0,
     "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "fcb10ba9fe2ab577",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AAFP-ACID2025",
+     "S-AARC-BGA-2013",
+     "S-ATS-ABG",
+     "S-MERCK-ACIDBASE",
+     "S-NICE-NG148",
+     "S-OPENRN-FUND-CH15"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
     "issues": 0
    }
   ],
@@ -4699,6 +4766,20 @@
     ],
     "gaps": 0,
     "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "4b54ee4a627c3b70",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-BTF-DC-2020",
+     "S-BTF-PTBI-2026",
+     "S-BTF-TBI-4TH",
+     "S-NCS-ICP"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
     "issues": 0
    }
   ],
