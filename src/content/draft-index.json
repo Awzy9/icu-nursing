@@ -476,6 +476,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-PUMA-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SHEA-VAP-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -484,7 +489,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "3d9615ffba24a06c"
+   "hash": "f3cd3bdafafc41d2"
   },
   {
    "key": "D03-T01",
@@ -499,12 +504,17 @@
      "id": "S-GCS-OFFICIAL",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NICE-NG232",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "a3729e9eeb1a13f4"
+   "hash": "559d55fd4792d966"
   },
   {
    "key": "D04-T03",
@@ -515,6 +525,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
     {
      "id": "S-NICE-CG174",
      "licence_class": "RED",
@@ -529,7 +544,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "5972a672a72937ba"
+   "hash": "0fc1b5d53e02a507"
   },
   {
    "key": "D01-T19",

@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE CG174 Intravenous fluid therapy in adults in hospital (published 10 Dec 2013; last updated 5 May 2017) – recommendations chapter", "NICE NG148 Acute kidney injury (published 18 Dec 2019; updated 16 Oct 2024) – urine output and monitoring statements"]
-sources: [S-NICE-CG174, S-NICE-NG148]
+sources: [S-NICE-CG174, S-NICE-NG148, S-ESICM-SHOCK-2025]
 independently_written_note: "Original wording. NICE content is cite-only (commercial-gain restriction). Both guidelines are UK, adult, general-hospital documents; CG174 is dated 2013/2017 and its scope exclusions (for example specialist or paediatric populations) were not read, so applicability to every ICU population is not established. KDIGO 2012 and the 2026 KDIGO draft were not used. Fluid volumes, rates and fluid types are prescriber decisions and are deliberately not given."
 ---
 # Urine output monitoring and fluid balance
@@ -97,7 +97,7 @@ B. Increase the infusion rate to push the output up, since low output after surg
 C. Check the catheter and balance, repeat observations, and report the low output and the trend promptly.
 D. Remove the catheter to see whether the patient can pass urine independently before telling anyone else.
 **Answer: C.**
-**Why correct:** Urine output is below 0.5 mL/kg/h (35 mL/h); checking the catheter and reporting is the nurse's role.
+**Why correct:** Urine output is below 0.5 mL/kg/h (35 mL/h); checking the catheter and reporting is the nurse's role. Three hours of oliguria is a warning but does not yet meet NICE NG148's adult duration criterion of more than six hours. Assess perfusion, measurement quality and cumulative balance and escalate without waiting for the threshold. Oliguria alone is not proof of hypovolaemia.
 **Why not A:** Waiting delays detection of AKI or hypoperfusion.
 **Why not B:** Changing infusions needs an order, and the cause may not be hypovolaemia.
 **Why not D:** Removing a catheter needs an order and does not address the cause.
@@ -108,10 +108,10 @@ B. A heart rate of 110 with cold peripheries, slow capillary refill and a low ur
 C. A low blood pressure that improves immediately with a passive leg raise or a small fluid bolus.
 D. Dry mucous membranes and a falling weight over three days.
 **Answer: A.**
-**Why correct:** Breathlessness, oedema and positive balance suggest overload; NICE notes breathlessness on leg raising as a sign.
+**Why correct:** Breathlessness, oedema and positive balance suggest overload; NICE notes breathlessness on leg raising as a sign. New respiratory symptoms need immediate clinical assessment, not an automatic diagnosis based on balance alone.
 **Why not B:** Suggests hypoperfusion or hypovolaemia.
-**Why not C:** Improvement suggests fluid responsiveness.
-**Why not D:** A pale, concentrated or scant output would suggest dehydration, not a normal urine output.
+**Why not C:** A change in flow or stroke volume during a properly assessed passive leg raise may suggest fluid responsiveness. A blood-pressure change alone is less reliable; responsiveness does not necessarily mean fluid is needed or safe. ESICM 2025 favors dynamic assessment when applicable.
+**Why not D:** Dry mucosa and falling weight suggest possible fluid deficit rather than the stated pattern of overload.
 
 **Q3 (judgment).** A patient on IV fluids is now drinking and tolerating enteral feeds. What is the best nursing action?
 A. Continue the IV fluids unchanged, as the prescriber has not stopped them and the plan is reviewed daily anyway.
@@ -119,9 +119,9 @@ B. Stop the infusion yourself to avoid overload, because the patient is now drin
 C. Ask a colleague to chart the oral and enteral intake later in the day, once the day's tasks are finished.
 D. Ask whether IV fluids are still needed and how oral and enteral intake should be counted in the plan.
 **Answer: D.**
-**Why correct:** NICE advises IV fluids only when needs cannot be met orally or enterally and that all intake sources be counted; the prescriber decides.
+**Why correct:** NICE advises IV fluids only when needs cannot be met orally or enterally and that all intake sources be counted; the prescriber decides. Include medicines, flushes, nutrition and other fluid sources in the total, and communicate whether ongoing IV therapy has a separate indication.
 **Why not A:** Silence risks unnecessary fluid.
-**Why not B:** Stopping an infusion needs an order.
+**Why not B:** Review the indication and follow the authorized adjustment or cessation plan; do not independently stop an essential infusion.
 **Why not C:** Delayed charting reduces accuracy.
 
 **Q4 (safety).** A nurse notices that a drain output was not recorded for six hours. What is the best response?
@@ -130,10 +130,10 @@ B. Record the volume measured now with the correct time, note the gap, correct t
 C. Leave the gap unexplained since the cumulative balance can no longer be corrected after so many hours.
 D. Ask the next shift to deal with the discrepancy once the patient has been handed over to them tomorrow.
 **Answer: B.**
-**Why correct:** Accurate, honest documentation and reporting protect the patient; NICE advises reporting mismanagement incidents.
+**Why correct:** Accurate, honest documentation and reporting protect the patient; NICE advises reporting mismanagement incidents. Reassess the patient and the drain now, record the actual measured volume and the interval if known, distinguish measured from estimated data, and document any uncertainty rather than inventing hourly values.
 **Why not A:** Estimating and recording as measured is falsification.
 **Why not C:** The balance can be corrected with a transparent note.
-**Why not D:** Delay reduces safety because a falling urine output is a warning sign that needs action.
+**Why not D:** The missing drainage data may conceal bleeding or another complication; assess and report the gap rather than deferring it.
 
 **Q5 (prioritization).** Which patient needs the nurse first?
 A. A stable balance, normal output, normal observations and no symptoms during this shift.
@@ -141,7 +141,7 @@ B. Output below the threshold, heart rate rising, cool peripheries and new confu
 C. A patient who is waiting for a scheduled weight that is part of the usual ward routine.
 D. A patient with a dry mouth who is asking for a drink but has normal observations and output.
 **Answer: B.**
-**Why correct:** Low urine output, a rising heart rate, cool peripheries and new confusion together point to poor perfusion, which needs urgent escalation. The other patients have normal findings or tasks that can wait.
+**Why correct:** Low urine output, a rising heart rate, cool peripheries and new confusion together point to poor perfusion, which needs urgent escalation. Assess airway, breathing and circulation and activate help while checking the measurements. ESICM 2025 supports capillary refill with complementary skin findings and assessment of fluid responsiveness before continuing fluids in persistent shock after initial resuscitation.
 **Why not A:** This patient is stable with no abnormal findings.
 **Why not C:** A routine scheduled task that can wait.
 **Why not D:** Comfort care is needed but the observations are normal, so it is not urgent.
@@ -160,6 +160,8 @@ D. Reporting a rising positive balance and new oedema to the prescriber promptly
 ## 18. References
 - NICE. Intravenous fluid therapy in adults in hospital (CG174). Published 10 December 2013; last updated 5 May 2017. https://www.nice.org.uk/guidance/cg174 (Recommendations chapter; accessed 2026-11-14)
 - NICE. Acute kidney injury: prevention, detection and management (NG148). Published 18 December 2019; last updated 16 October 2024. https://www.nice.org.uk/guidance/ng148 (accessed 2026-11-14)
+
+- ESICM 2025 circulatory shock and hemodynamic monitoring guideline abstract. https://pubmed.ncbi.nlm.nih.gov/41236566/ (selected recommendations or abstract, accessed 2026-11-24; full text not appraised in this pass)
 
 ## 19. Local protocol note
 Frequency of urine output and balance totals, charting systems, weight schedules, fluid prescription policies and catheter protocols follow local policy.

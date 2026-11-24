@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Glasgow Coma Scale – the Glasgow Structured Approach to Assessment (glasgowcomascale.org, Royal College of Physicians and Surgeons of Glasgow): GCS Assessment Aid (English, © Sir Graham Teasdale 2015; Institute of Neurological Sciences, NHS Greater Glasgow and Clyde) and the 'What is GCS' and 'What is GCS-P' pages; accessed 2026-11-14"]
-sources: [S-GCS-OFFICIAL]
+sources: [S-GCS-OFFICIAL, S-NICE-NG232]
 independently_written_note: "Original wording. Sources actually read: the official GCS Assessment Aid PDF and three pages of the official GCS website. The original Lancet papers (1974, 2014), national head-injury or neurocritical-care guidelines, and the register's Open RN source were NOT read. The aid is copyrighted (Sir Graham Teasdale 2015) and the site has a 'Permissions' page: the chart is not reproduced; ask for permission before reproducing the scale wording, chart or images. This is not a guideline; there are no graded recommendations, no severity bands and no thresholds in the sources read."
 ---
 # Glasgow Coma Scale – structured neurological assessment at the bedside
@@ -98,7 +98,7 @@ B. None, scoring 1, because no sound can be heard from the patient at any time d
 C. Orientated, because the patient nods or shakes the head in sensible answer to questions put to him.
 D. Sounds, scoring 2, because the patient attempts to mouth words and appears to be trying to communicate.
 **Answer: A.**
-**Why correct:** The aid uses "non testable" where a factor interferes with communication; it should not be recorded as no response.
+**Why correct:** The aid uses "non testable" where a factor interferes with communication; it should not be recorded as no response. Document the reason and other assessable components. The official GCS FAQ advises against reporting a total score when any component is not testable.
 **Why not C:** Nodding does not meet the orientation criterion.
 **Why not B:** Score 1 means no audible response without an interfering factor.
 **Why not D:** Mouthing is not an audible moan or groan.
@@ -109,7 +109,7 @@ B. Use supraorbital pressure first because it gives the clearest response, then 
 C. Use physical pressure only if there is no response to a spoken or shouted request, starting with the fingertip.
 D. Avoid verbal requests because patients rarely respond to them, and go straight to physical stimuli.
 **Answer: C.**
-**Why correct:** The aid steps from sound to physical pressure (fingertip, trapezius, supraorbital).
+**Why correct:** The aid steps from sound to physical pressure (fingertip, trapezius, supraorbital). Physical stimulation is only for trained assessors when clinically indicated; check interfering factors and injury-site restrictions, avoid unnecessary repeated stimulation and follow the local neurological assessment procedure.
 **Why not A:** Painful stimuli should not come first.
 **Why not B:** Supraorbital pressure is a later step.
 **Why not D:** Verbal request is the first stimulus.
@@ -120,7 +120,7 @@ B. The components are needed for medico-legal reasons and have no value for clin
 C. The total score is more sensitive than the individual components, so nothing is gained by recording them.
 D. The components show which function has changed and allow trends to be compared between staff.
 **Answer: D.**
-**Why correct:** Recording components allows accurate trend communication and avoids hiding changes inside an unchanged total.
+**Why correct:** Recording components allows accurate trend communication and avoids hiding changes inside an unchanged total. A total must not be constructed if one component cannot be tested; pupil findings and limb asymmetry should be documented separately. NICE NG232 also supports recording individual components in head injury.
 **Why not A:** Nurses can record valid scores.
 **Why not B:** The purpose is clinical communication.
 **Why not C:** The sources do not claim this.
@@ -131,7 +131,7 @@ B. Repeat the assessment to confirm, check pupils and vital signs, and report th
 C. Reduce the sedation to see if the response improves, without informing the team, to avoid an unnecessary escalation.
 D. Ask the relatives whether the patient seems different before deciding what to do about the change in response.
 **Answer: B.**
-**Why correct:** A fall in motor response can signal deterioration; the sources emphasise trends signalling the need for action.
+**Why correct:** A fall in motor response can signal deterioration; the sources emphasise trends signalling the need for action. Escalate urgently while confirming the finding and checking pupils, vital signs and reversible contributors. NICE NG232 identifies deterioration in motor response, new pupil inequality or asymmetric movement as concerning in head injury. Do not wait for a second score or a particular total to request help.
 **Why not A:** Delaying the report risks harm because the change in consciousness may be progressing.
 **Why not C:** Sedation changes need an order or protocol and the team should be told.
 **Why not D:** Relatives' views are helpful but do not replace prompt reporting.
@@ -142,10 +142,10 @@ B. Assume the low score is due to the sedation and make no report, because it is
 C. Record the components, note the sedation and dose timing, and report so the team can interpret the finding.
 D. Stop the infusion yourself to obtain a true score, then restart it once the assessment has been recorded.
 **Answer: C.**
-**Why correct:** Sedation interferes with assessment and must be recorded with the findings.
+**Why correct:** Sedation interferes with assessment and must be recorded with the findings. Record relevant sedative, opioid and neuromuscular-blocking exposure and timing; document any non-testable component rather than assigning a false low value. New deterioration still requires assessment and escalation.
 **Why not A:** Omitting sedation hides an interfering factor.
 **Why not B:** A new fall may have another cause.
-**Why not D:** Stopping sedation requires an order.
+**Why not D:** Sedation interruption must follow the authorized plan; it may be unsafe in some neurological or respiratory conditions.
 
 **Q6 (scope).** Which task belongs to the medical team rather than the nurse?
 A. Recording the stimulus used and the rating for each component.
@@ -162,6 +162,8 @@ D. Deciding on imaging, intubation or treatment of raised intracranial pressure.
 - Glasgow Coma Scale – Assessment Aid (English): "Glasgow Coma Scale: Do it this way". Institute of Neurological Sciences, NHS Greater Glasgow and Clyde; © Sir Graham Teasdale 2015. https://glasgowcomascale.org/downloads/GCS-Assessment-Aid-English.pdf (accessed 2026-11-14)
 - Glasgow Coma Scale – the Glasgow Structured Approach to Assessment (website pages "Home", "What is GCS", "What is GCS-P"). https://www.glasgowcomascale.org/ (accessed 2026-11-14)
 - Teasdale G, Jennett B. Assessment of coma and impaired consciousness: a practical scale. Lancet 1974;2:81-84 (cited by the website; not read).
+
+- NICE NG232 head injury recommendations. https://www.nice.org.uk/guidance/ng232/chapter/recommendations (selected recommendations or abstract, accessed 2026-11-24; full text not appraised in this pass)
 
 ## 19. Local protocol note
 Frequency of neurological observations, pupil assessment method, escalation triggers and documentation formats follow local policy and neurosurgical/neurocritical-care teams.

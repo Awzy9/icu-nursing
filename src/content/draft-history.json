@@ -1107,6 +1107,21 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f3cd3bdafafc41d2",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ERC-ALS-2025",
+     "S-INTL-PI-2026",
+     "S-PUMA-2022",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D03-T01": [
@@ -1138,6 +1153,18 @@
     "evidence_status": "stated_in_text",
     "sources": [
      "S-GCS-OFFICIAL"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "559d55fd4792d966",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-GCS-OFFICIAL",
+     "S-NICE-NG232"
     ],
     "gaps": 0,
     "required_sources": 0,
@@ -1174,6 +1201,19 @@
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
+     "S-NICE-CG174",
+     "S-NICE-NG148"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "0fc1b5d53e02a507",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2025",
      "S-NICE-CG174",
      "S-NICE-NG148"
     ],
