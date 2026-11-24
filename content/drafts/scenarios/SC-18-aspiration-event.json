@@ -266,7 +266,7 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Precise documentation enables the clinical team to assess the event and determine whether it meets the local incident-reporting criteria. A possible aspiration is not automatically proof the tube was misplaced. Aspiration pneumonitis is not automatically bacterial pneumonia. Antibiotic need depends on clinician assessment for infection and the overall clinical picture; do not assume prophylactic antibiotics are required after every aspiration event.",
+          "feedback": "Precise documentation enables the clinical team to assess the event and determine whether it meets the local incident-reporting criteria. A possible aspiration is not automatically proof the tube was misplaced. Aspiration pneumonitis is not automatically bacterial pneumonia. Antibiotic need depends on clinician assessment for infection and the overall clinical picture; do not assume prophylactic antibiotics are required after every aspiration event. After stabilization, identify swallowing impairment or reduced alertness that may increase aspiration risk, including aspiration without obvious coughing. Arrange specialist swallowing assessment when indicated and coordinate a safe nutrition and oral-care plan. Do not infer that safe tube placement establishes safe oral intake.",
           "consequence": "A factual timeline and documentation of checks and response may help the team distinguish possible causes and identify prevention measures.",
           "support": "partial",
           "sources": [
@@ -308,7 +308,8 @@
       "Withhold all tube use, including flushes, water and medicines, while position is uncertain. Confirm with the approved method and documented interpretation before restarting; never use the whoosh test.",
       "Record and report the event.",
       "A respiratory event during feeding may have several causes; tube position and aspiration require qualified assessment, not an automatic diagnosis from coughing or a single saturation reading.",
-      "Distinguish suspected chemical pneumonitis from infection; do not infer antibiotic need from the aspiration event alone."
+      "Distinguish suspected chemical pneumonitis from infection; do not infer antibiotic need from the aspiration event alone.",
+      "Aspiration prevention after the event includes safe oral care, individualized swallowing assessment and a documented plan for nutrition and reassessment."
     ],
     "links": [
       {
