@@ -88,6 +88,13 @@
           "sources": [
             "L-NITROGLYCERIN"
           ]
+        },
+        {
+          "text": "Methemoglobinaemia is a rare reported hazard of nitrate exposure. Unexplained signs of impaired oxygen delivery despite adequate arterial oxygen tension or circulation require urgent assessment. Communicate nitrate exposure and coordinate appropriate laboratory testing and clinician-directed cessation if diagnosed.",
+          "support": "partial",
+          "sources": [
+            "L-NITROGLYCERIN"
+          ]
         }
       ]
     },
@@ -226,6 +233,15 @@
     {
       "kind": "assess",
       "text": "Verify recent PDE5 inhibitor or riociguat exposure and other product-specific contraindications with pharmacy and the prescriber before administration; escalate an uncertain or conflicting order.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NITROGLYCERIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Escalate unexplained cyanosis or impaired oxygen delivery despite adequate arterial oxygen tension; report nitrate exposure.",
       "critical": true,
       "support": "partial",
       "sources": [

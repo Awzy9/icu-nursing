@@ -95,6 +95,13 @@
           "sources": [
             "L-NICARDIPINE"
           ]
+        },
+        {
+          "text": "Nicardipine may increase circulating cyclosporine or tacrolimus concentrations. Notify the transplant team or pharmacist when both are prescribed and coordinate ordered drug-level surveillance; document specimen timing and report unexpected results.",
+          "support": "partial",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
         }
       ]
     },
@@ -245,6 +252,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Review concurrent cyclosporine or tacrolimus and confirm the ordered drug-level surveillance plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NICARDIPINE"
+      ]
     }
   ],
   "gaps": [

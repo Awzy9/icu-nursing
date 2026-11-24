@@ -98,7 +98,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Tissue ischaemia: severe peripheral and visceral vasoconstriction can occur; the label advises addressing hypovolaemia before use, monitoring the extremities and infusing into a large vein.",
@@ -124,6 +124,13 @@
         {
           "text": "Severe hypersensitivity due to a sodium metabisulfite excipient may cause anaphylaxis or asthmatic episodes in susceptible people.",
           "support": "sourced",
+          "sources": [
+            "L-DOPAMINE"
+          ]
+        },
+        {
+          "text": "The registered product is contraindicated in phaeochromocytoma. Monoamine oxidase inhibitors, tricyclic antidepressants and other vasopressors may amplify hypertension; some inhaled anaesthetics increase ventricular arrhythmia risk. Clarify these exposures with the responsible team before use and monitor pressure and rhythm.",
+          "support": "partial",
           "sources": [
             "L-DOPAMINE"
           ]
@@ -259,6 +266,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Check for documented phaeochromocytoma and interacting medicines; report unexpected hypertension or rhythm changes.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-DOPAMINE"
+      ]
     }
   ],
   "gaps": [

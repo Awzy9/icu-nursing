@@ -106,7 +106,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Hypotension can occur and is dose-related; patients with haemodynamic compromise or on interacting medicines are at particular risk, and severe reactions may include loss of consciousness.",
@@ -146,6 +146,13 @@
         {
           "text": "Beta blockers, including esmolol, have been associated with raised serum potassium and hyperkalaemia; the risk is higher in renal impairment, and intravenous beta blockers have caused life-threatening hyperkalaemia in patients on haemodialysis.",
           "support": "sourced",
+          "sources": [
+            "L-ESMOLOL"
+          ]
+        },
+        {
+          "text": "The registered injection is contraindicated in severe sinus bradycardia, advanced AV block, sick sinus syndrome, decompensated heart failure, cardiogenic shock, pulmonary hypertension and known product hypersensitivity. IV cardiodepressant calcium channel antagonists such as verapamil must not be given in close proximity while their cardiac effects overlap; fatal arrests have been reported. Clarify the actual medicine history with the treating team.",
+          "support": "partial",
           "sources": [
             "L-ESMOLOL"
           ]
@@ -275,6 +282,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Verify relevant conduction disease, ventricular function and recent IV verapamil exposure before use; urgently clarify contraindications.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ESMOLOL"
+      ]
     }
   ],
   "gaps": [

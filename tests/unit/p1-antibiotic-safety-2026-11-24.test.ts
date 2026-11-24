@@ -6,49 +6,49 @@ const cases = [
     "MD-22-piperacillin-tazobactam",
     "L-PIPTAZO",
     "monitoring",
-    null
+    "methotrexate elimination"
   ],
   [
     "MD-23-meropenem",
     "L-MEROPENEM",
     "monitoring",
-    null
+    "Probenecid"
   ],
   [
     "MD-24-vancomycin",
     "L-VANCOMYCIN",
     "monitoring",
-    null
+    "Concurrent anaesthetic agents"
   ],
   [
     "MD-25-ceftriaxone",
     "L-CEFTRIAXONE",
     "safety_alerts",
-    null
+    "41 weeks postmenstrual age"
   ],
   [
     "MD-26-cefazolin",
     "L-CEFAZOLIN",
     "monitoring",
-    null
+    "Probenecid"
   ],
   [
     "MD-27-azithromycin",
     "L-AZITHROMYCIN",
     "safety_alerts",
-    null
+    "cholestatic jaundice"
   ],
   [
     "MD-28-linezolid",
     "L-LINEZOLID",
     "safety_alerts",
-    null
+    "mortality imbalance"
   ],
   [
     "MD-29-gentamicin",
     "L-GENTAMICIN",
     "monitoring",
-    null
+    "Dehydration"
   ]
 ] as const;
 describe("antibiotic registered-label safety additions", () => {

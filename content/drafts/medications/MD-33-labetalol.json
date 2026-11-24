@@ -95,6 +95,13 @@
           "sources": [
             "L-LABETALOL"
           ]
+        },
+        {
+          "text": "Concurrent nitroglycerin may amplify hypotension while labetalol blunts compensatory tachycardia. Verapamil-type calcium channel blockers also warrant caution. Review concomitant medicines and monitor pressure, rhythm and perfusion; absence of tachycardia does not establish haemodynamic stability.",
+          "support": "partial",
+          "sources": [
+            "L-LABETALOL"
+          ]
         }
       ]
     },
@@ -238,6 +245,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent nitroglycerin or verapamil-type medicines; assess pressure, heart rate and perfusion together.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LABETALOL"
+      ]
     }
   ],
   "gaps": [

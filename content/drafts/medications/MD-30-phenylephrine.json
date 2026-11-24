@@ -114,6 +114,13 @@
           "sources": [
             "L-PHENYLEPHRINE"
           ]
+        },
+        {
+          "text": "Oxytocic medicines, monoamine oxidase inhibitors and tricyclic antidepressants may amplify the pressor response. Autonomic dysfunction may also increase sensitivity. Review these exposures with pharmacy and the treating team; report unexpectedly severe hypertension or new neurological symptoms immediately.",
+          "support": "partial",
+          "sources": [
+            "L-PHENYLEPHRINE"
+          ]
         }
       ]
     },
@@ -279,6 +286,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag oxytocic medicines, interacting antidepressants and autonomic dysfunction; monitor pressure and perfusion.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PHENYLEPHRINE"
+      ]
     }
   ],
   "gaps": [
