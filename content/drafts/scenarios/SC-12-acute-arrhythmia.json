@@ -1,299 +1,299 @@
 {
- "scenario_id": "SC-12",
- "number": 12,
- "title": "Acute arrhythmia",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "cardiovascular",
- "difficulty": 3,
- "learning_objectives": [
-  "Go to the patient when the monitor shows a new abnormal rhythm and assess for signs of reduced cardiac output.",
-  "Know that fast wide rhythms and certain other rhythms need emergency help, and call for it.",
-  "Prepare equipment and support the team; leave rhythm treatment (medicines, cardioversion, defibrillation) to trained staff acting under protocol.",
-  "Look for reversible causes, and document and hand over the rhythm."
- ],
- "related": {
-  "skills": [
-   "SK-18",
-   "SK-19"
+  "scenario_id": "SC-12",
+  "number": 12,
+  "title": "Acute arrhythmia",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "cardiovascular",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Go to the patient when the monitor shows a new abnormal rhythm and assess for signs of reduced cardiac output.",
+    "Know that fast wide rhythms and certain other rhythms need emergency help, and call for it.",
+    "Prepare equipment and support the team; leave rhythm treatment (medicines, cardioversion, defibrillation) to trained staff acting under protocol.",
+    "Look for reversible causes, and document and hand over the rhythm."
   ],
-  "medications": [
-   "MD-16",
-   "MD-17"
+  "related": {
+    "skills": [
+      "SK-18",
+      "SK-19"
+    ],
+    "medications": [
+      "MD-16",
+      "MD-17"
+    ],
+    "topic_drafts": [
+      "D02-T02"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S-OPENRN-ADV-C74",
+      "read": "full",
+      "use": "Open RN Nursing Advanced Skills 7.4: dysrhythmias, assessing for decreased cardiac output, emergency rhythms, treatment categories"
+    },
+    {
+      "id": "S-ERC-ALS-2025",
+      "read": "full",
+      "use": "ERC 2025 advanced life support (paraphrase only): reversible causes, team roles"
+    },
+    {
+      "id": "L-AMIODARONE",
+      "read": "full",
+      "use": "FDA label: hypotension, bradycardia and heart block"
+    },
+    {
+      "id": "L-ADENOSINE",
+      "read": "full",
+      "use": "FDA label: heart block and asystole; resuscitation equipment"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
+    }
   ],
-  "topic_drafts": [
-   "D02-T02"
-  ]
- },
- "sources": [
-  {
-   "id": "S-OPENRN-ADV-C74",
-   "read": "full",
-   "use": "Open RN Nursing Advanced Skills 7.4: dysrhythmias, assessing for decreased cardiac output, emergency rhythms, treatment categories"
-  },
-  {
-   "id": "S-ERC-ALS-2025",
-   "read": "full",
-   "use": "ERC 2025 advanced life support (paraphrase only): reversible causes, team roles"
-  },
-  {
-   "id": "L-AMIODARONE",
-   "read": "full",
-   "use": "FDA label: hypotension, bradycardia and heart block"
-  },
-  {
-   "id": "L-ADENOSINE",
-   "read": "full",
-   "use": "FDA label: heart block and asystole; resuscitation equipment"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
+  "required_sources": [
+    "A national resuscitation or arrhythmia guideline (ERC or AHA peri-arrest) read in full under a licence that allows paraphrase for a commercial platform",
+    "The unit's arrhythmia, cardioversion and defibrillator protocols and competencies"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "Rhythm-specific treatment pathways, energies and drugs are deliberately not written; the Open RN text only says which categories of treatment exist.",
+    "The cardioversion and defibrillation section of the Open RN book could not be read and is not used.",
+    "Rate and QRS criteria in the source are generic and are not turned into thresholds."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  ],
+  "setting": "A fictional adult on telemetry in a fictional intensive care unit.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "The monitor alarms and shows a new fast rhythm with wide complexes. The patient says they feel dizzy and have some chest discomfort. They are awake.",
+      "prompt": "What do you do first?",
+      "observations": [
+        {
+          "key": "rhythm",
+          "label": "Monitor rhythm",
+          "value": "New fast, wide-complex rhythm"
+        },
+        {
+          "key": "symptoms",
+          "label": "Patient",
+          "value": "Dizzy, some chest discomfort"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Lower than before"
+        },
+        {
+          "key": "loc",
+          "label": "Consciousness",
+          "value": "Awake"
+        }
+      ],
+      "options": [
+        {
+          "text": "Go to the patient at once, assess for signs of reduced cardiac output (pulse, pressure, skin, consciousness, chest pain, breathing), check the electrodes are on without delay and call for emergency help according to the unit's policy.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "When the ECG shows a new abnormal finding the nurse immediately assesses the client for signs of decreased cardiac output, and the nurse must know which rhythms need emergency assistance, including ventricular tachycardia.",
+          "consequence": "Help is on its way and you know how well the patient is tolerating the rhythm.",
+          "support": "sourced",
+          "sources": [
+            "S-OPENRN-ADV-C74"
+          ]
+        },
+        {
+          "text": "Print a rhythm strip, put it in the notes and recheck in a few minutes.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "A rhythm strip is useful, but delaying patient assessment and urgent help in a symptomatic wide-complex tachyarrhythmia is unsafe.",
+          "consequence": "Valuable minutes pass while the patient remains symptomatic.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C74"
+          ]
+        },
+        {
+          "text": "Silence the alarm because the patient is awake and talking.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "Some rhythms are tolerated only briefly before the patient loses consciousness; an awake patient does not make the rhythm safe.",
+          "consequence": "The patient's condition worsens while no one is aware.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C74"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "The patient becomes more unwell, with a falling pressure and increasing confusion. A pulse can still be felt. The emergency team arrives.",
+      "prompt": "What is your role now?",
+      "observations": [
+        {
+          "key": "rhythm",
+          "label": "Monitor rhythm",
+          "value": "Still fast and wide"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Falling"
+        },
+        {
+          "key": "mental",
+          "label": "Mental state",
+          "value": "More confused"
+        },
+        {
+          "key": "pulse",
+          "label": "Pulse",
+          "value": "Present"
+        }
+      ],
+      "options": [
+        {
+          "text": "Support the team: bring the defibrillator and emergency equipment, secure intravenous access, keep monitoring and recording, and be ready to start CPR if the pulse is lost, leaving treatment decisions and delivery to the clinicians trained to give them under protocol.",
+          "points": 2,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "An unstable tachyarrhythmia with a pulse needs urgent rhythm-specific treatment by authorised trained staff; synchronised cardioversion is preferred for many unstable tachyarrhythmias, but rhythm and synchronisation feasibility matter. If cardiac arrest occurs, start CPR and follow the shockable versus non-shockable arrest pathway. Not every pulseless rhythm requires a shock.",
+          "consequence": "The team works efficiently and the nurse is ready if the situation worsens.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C74",
+            "S-ERC-ALS-2025",
+            "L-ADENOSINE"
+          ]
+        },
+        {
+          "text": "Deliver a shock from the defibrillator yourself to save time.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Do not deliver an unassessed or unauthorised shock. The team must determine the rhythm, pulse and appropriate synchronisation or defibrillation pathway; not all rhythms with a pulse have the same treatment.",
+          "consequence": "The shock is delivered without authority or the correct mode and the patient is harmed.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C74"
+          ]
+        },
+        {
+          "text": "Stay at the monitor and watch the rhythm while the team treats the patient.",
+          "points": 1,
+          "next": 3,
+          "scope": "monitoring",
+          "feedback": "Monitoring is part of the role, but the nurse is also needed to prepare equipment and support the team.",
+          "consequence": "The team asks you for equipment that you could have prepared.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C74"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "The rhythm has been treated and the patient is more stable on the monitor. The team asks about the patient's recent blood results.",
+      "prompt": "What should you do now?",
+      "observations": [
+        {
+          "key": "rhythm",
+          "label": "Monitor rhythm",
+          "value": "Back to a slower rhythm"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Improving"
+        },
+        {
+          "key": "labs",
+          "label": "Blood results",
+          "value": "Potassium result recently reported"
+        },
+        {
+          "key": "patient",
+          "label": "Patient",
+          "value": "Tired but comfortable"
+        }
+      ],
+      "options": [
+        {
+          "text": "Report the recent electrolyte results and any other possible causes you know of, keep continuous monitoring and watch blood pressure and rhythm after treatment, document the rhythm strips with times, and give an SBAR handover.",
+          "points": 2,
+          "next": null,
+          "scope": "monitoring",
+          "feedback": "Reversible causes of dangerous rhythms include low or high potassium, hypoxia and low blood volume; antidysrhythmic medicines such as amiodarone can cause hypotension, a slow heart rate and heart block, so these are monitored after treatment.",
+          "consequence": "Possible causes are considered and the next team has the rhythm record and the sequence of events.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C74",
+            "S-ERC-ALS-2025",
+            "L-AMIODARONE"
+          ]
+        },
+        {
+          "text": "Switch the alarm limits wide so the monitor does not alarm for this patient again tonight.",
+          "points": 0,
+          "next": null,
+          "scope": "order_or_protocol_required",
+          "feedback": "Limits and alarms are set by order or protocol; widening them removes the warning the patient needs.",
+          "consequence": "A recurrence of the rhythm does not trigger an alarm.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C74"
+          ]
+        },
+        {
+          "text": "Remove the electrodes and rest the patient; no further monitoring is needed now it is better.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "Monitoring continues after a dangerous rhythm because it can recur.",
+          "consequence": "A recurrence is not seen.",
+          "support": "partial",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "A new abnormal rhythm needs immediate assessment of the patient for signs of reduced cardiac output, and a call for help when the rhythm or the patient's condition is dangerous.",
+      "Fast wide rhythms and several other rhythms can lead quickly to loss of consciousness or cardiac arrest.",
+      "Support urgent rhythm-specific care by trained and authorised staff. If cardiac arrest occurs, begin CPR and follow the appropriate shockable or non-shockable rhythm pathway.",
+      "Think about reversible causes such as electrolytes and oxygenation, keep monitoring after treatment and hand over with SBAR."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-18"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-19"
+      },
+      {
+        "kind": "medication",
+        "code": "MD-16"
+      }
+    ]
   }
- ],
- "required_sources": [
-  "A national resuscitation or arrhythmia guideline (ERC or AHA peri-arrest) read in full under a licence that allows paraphrase for a commercial platform",
-  "The unit's arrhythmia, cardioversion and defibrillator protocols and competencies"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Rhythm-specific treatment pathways, energies and drugs are deliberately not written; the Open RN text only says which categories of treatment exist.",
-  "The cardioversion and defibrillation section of the Open RN book could not be read and is not used.",
-  "Rate and QRS criteria in the source are generic and are not turned into thresholds."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "setting": "A fictional adult on telemetry in a fictional intensive care unit.",
- "steps": [
-  {
-   "position": 1,
-   "info": "The monitor alarms and shows a new fast rhythm with wide complexes. The patient says they feel dizzy and have some chest discomfort. They are awake.",
-   "prompt": "What do you do first?",
-   "observations": [
-    {
-     "key": "rhythm",
-     "label": "Monitor rhythm",
-     "value": "New fast, wide-complex rhythm"
-    },
-    {
-     "key": "symptoms",
-     "label": "Patient",
-     "value": "Dizzy, some chest discomfort"
-    },
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Lower than before"
-    },
-    {
-     "key": "loc",
-     "label": "Consciousness",
-     "value": "Awake"
-    }
-   ],
-   "options": [
-    {
-     "text": "Go to the patient at once, assess for signs of reduced cardiac output (pulse, pressure, skin, consciousness, chest pain, breathing), check the electrodes are on without delay and call for emergency help according to the unit's policy.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "When the ECG shows a new abnormal finding the nurse immediately assesses the client for signs of decreased cardiac output, and the nurse must know which rhythms need emergency assistance, including ventricular tachycardia.",
-     "consequence": "Help is on its way and you know how well the patient is tolerating the rhythm.",
-     "support": "sourced",
-     "sources": [
-      "S-OPENRN-ADV-C74"
-     ]
-    },
-    {
-     "text": "Print a rhythm strip, put it in the notes and recheck in a few minutes.",
-     "points": 1,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "A strip is useful for the team, but a symptomatic patient with a fast wide rhythm needs immediate assessment and help.",
-     "consequence": "Valuable minutes pass while the patient remains symptomatic.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C74"
-     ]
-    },
-    {
-     "text": "Silence the alarm because the patient is awake and talking.",
-     "points": 0,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "Some rhythms are tolerated only briefly before the patient loses consciousness; an awake patient does not make the rhythm safe.",
-     "consequence": "The patient's condition worsens while no one is aware.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C74"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The patient becomes more unwell, with a falling pressure and increasing confusion. A pulse can still be felt. The emergency team arrives.",
-   "prompt": "What is your role now?",
-   "observations": [
-    {
-     "key": "rhythm",
-     "label": "Monitor rhythm",
-     "value": "Still fast and wide"
-    },
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Falling"
-    },
-    {
-     "key": "mental",
-     "label": "Mental state",
-     "value": "More confused"
-    },
-    {
-     "key": "pulse",
-     "label": "Pulse",
-     "value": "Present"
-    }
-   ],
-   "options": [
-    {
-     "text": "Support the team: bring the defibrillator and emergency equipment, secure intravenous access, keep monitoring and recording, and be ready to start CPR if the pulse is lost, leaving treatment decisions and delivery to the clinicians trained to give them under protocol.",
-     "points": 2,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "Treatments for symptomatic dysrhythmias include medicines, cardioversion and defibrillation; with a pulse, cardioversion or antidysrhythmic medicines are used, and without a pulse defibrillation and CPR; these are given by trained staff under protocol.",
-     "consequence": "The team works efficiently and the nurse is ready if the situation worsens.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C74",
-      "S-ERC-ALS-2025",
-      "L-ADENOSINE"
-     ]
-    },
-    {
-     "text": "Deliver a shock from the defibrillator yourself to save time.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Cardioversion and defibrillation are delivered by trained staff under the unit's protocol and competencies; an unsynchronised shock on a patient with a pulse is dangerous.",
-     "consequence": "The shock is delivered without authority or the correct mode and the patient is harmed.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C74"
-     ]
-    },
-    {
-     "text": "Stay at the monitor and watch the rhythm while the team treats the patient.",
-     "points": 1,
-     "next": 3,
-     "scope": "monitoring",
-     "feedback": "Monitoring is part of the role, but the nurse is also needed to prepare equipment and support the team.",
-     "consequence": "The team asks you for equipment that you could have prepared.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C74"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The rhythm has been treated and the patient is more stable on the monitor. The team asks about the patient's recent blood results.",
-   "prompt": "What should you do now?",
-   "observations": [
-    {
-     "key": "rhythm",
-     "label": "Monitor rhythm",
-     "value": "Back to a slower rhythm"
-    },
-    {
-     "key": "bp",
-     "label": "Blood pressure",
-     "value": "Improving"
-    },
-    {
-     "key": "labs",
-     "label": "Blood results",
-     "value": "Potassium result recently reported"
-    },
-    {
-     "key": "patient",
-     "label": "Patient",
-     "value": "Tired but comfortable"
-    }
-   ],
-   "options": [
-    {
-     "text": "Report the recent electrolyte results and any other possible causes you know of, keep continuous monitoring and watch blood pressure and rhythm after treatment, document the rhythm strips with times, and give an SBAR handover.",
-     "points": 2,
-     "next": null,
-     "scope": "monitoring",
-     "feedback": "Reversible causes of dangerous rhythms include low or high potassium, hypoxia and low blood volume; antidysrhythmic medicines such as amiodarone can cause hypotension, a slow heart rate and heart block, so these are monitored after treatment.",
-     "consequence": "Possible causes are considered and the next team has the rhythm record and the sequence of events.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C74",
-      "S-ERC-ALS-2025",
-      "L-AMIODARONE"
-     ]
-    },
-    {
-     "text": "Switch the alarm limits wide so the monitor does not alarm for this patient again tonight.",
-     "points": 0,
-     "next": null,
-     "scope": "order_or_protocol_required",
-     "feedback": "Limits and alarms are set by order or protocol; widening them removes the warning the patient needs.",
-     "consequence": "A recurrence of the rhythm does not trigger an alarm.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C74"
-     ]
-    },
-    {
-     "text": "Remove the electrodes and rest the patient; no further monitoring is needed now it is better.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "Monitoring continues after a dangerous rhythm because it can recur.",
-     "consequence": "A recurrence is not seen.",
-     "support": "partial",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "A new abnormal rhythm needs immediate assessment of the patient for signs of reduced cardiac output, and a call for help when the rhythm or the patient's condition is dangerous.",
-   "Fast wide rhythms and several other rhythms can lead quickly to loss of consciousness or cardiac arrest.",
-   "Prepare equipment and support the team; leave medicines, cardioversion and defibrillation to staff trained and authorised under protocol.",
-   "Think about reversible causes such as electrolytes and oxygenation, keep monitoring after treatment and hand over with SBAR."
-  ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-18"
-   },
-   {
-    "kind": "skill",
-    "code": "SK-19"
-   },
-   {
-    "kind": "medication",
-    "code": "MD-16"
-   }
-  ]
- }
 }

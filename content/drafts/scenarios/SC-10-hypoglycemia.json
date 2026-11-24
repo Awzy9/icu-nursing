@@ -97,11 +97,11 @@
       ],
       "options": [
         {
-          "text": "Check that the patient is alert enough to swallow safely; activate the local hypoglycaemia pathway promptly, provide the approved oral treatment only if safe, and repeat glucose assessment according to protocol.",
+          "text": "Check that the patient is alert enough to swallow safely and permitted oral intake; activate the local hypoglycaemia pathway promptly, provide approved rapid-acting oral treatment only when safe and appropriate, and repeat glucose assessment according to protocol.",
           "points": 2,
           "next": 2,
           "scope": "order_or_protocol_required",
-          "feedback": "Drowsiness requires careful assessment of safe swallowing. Oral treatment is inappropriate if airway protection is impaired. Follow the unit's urgent hypoglycaemia pathway, including timely reassessment.",
+          "feedback": "Oral treatment requires safe swallowing and permission for oral intake. Use the authorised non-oral pathway when oral intake is unsafe or not permitted, and reassess promptly.",
           "consequence": "The patient takes the carbohydrate and you recheck the glucose.",
           "support": "partial",
           "sources": [
@@ -123,10 +123,10 @@
         },
         {
           "text": "Offer the patient's next meal tray and leave the recheck until after the meal.",
-          "points": 1,
+          "points": 0,
           "next": 2,
           "scope": "independent_nursing",
-          "feedback": "A meal is part of follow-up, but quick-acting treatment and a prompt recheck come first.",
+          "feedback": "A meal alone is not a substitute for immediate protocol-directed hypoglycaemia treatment and timely repeat glucose assessment. Waiting for the meal delays care.",
           "consequence": "The patient eats slowly and the glucose is still low when it is checked later.",
           "support": "partial",
           "sources": [
@@ -274,7 +274,7 @@
   "debrief": {
     "learning_points": [
       "A low glucose in a patient with diabetes is an emergency whatever the level of consciousness.",
-      "A conscious patient who can swallow is treated by mouth per protocol and rechecked; an unconscious patient needs ABC, a call for urgent help and prescribed or locally agreed treatment.",
+      "Use approved oral treatment only when the patient can swallow safely and oral intake is permitted. Otherwise assess airway and breathing, summon urgent help and follow the authorised non-oral pathway.",
       "Do not withhold or change insulin on your own: ask for a review, keep monitoring and refer.",
       "Interrupted tube feeding and changes in insulin exposure or renal function should prompt a multidisciplinary review of recurrent hypoglycaemia risk."
     ],

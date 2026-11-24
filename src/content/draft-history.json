@@ -6260,6 +6260,21 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "4108e51627710b13",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AARC-SUCT",
+     "S-AHRQ-TS",
+     "S-BTF-TBI-4TH",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-08": [
@@ -6292,6 +6307,20 @@
    {
     "hash": "bca8e0af95b534a3",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-JBDS-HYPO-2020",
+     "N-NICE-NG217",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "961cc56e23de4adb",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-LORAZEPAM",
@@ -6432,6 +6461,20 @@
     "gaps": 5,
     "required_sources": 4,
     "issues": 0
+   },
+   {
+    "hash": "a6dbb73ef54cda1e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "S-ADA-HOSP-2026",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 4,
+    "issues": 0
    }
   ],
   "SC-11": [
@@ -6505,6 +6548,21 @@
    {
     "hash": "0256affa6d3c1480",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "L-AMIODARONE",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-OPENRN-ADV-C74"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "02bf541d321904be",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-ADENOSINE",
