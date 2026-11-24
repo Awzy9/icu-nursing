@@ -95,11 +95,18 @@
           "sources": [
             "L-FLUMAZENIL"
           ]
+        },
+        {
+          "text": "Hepatic impairment reduces flumazenil clearance and can prolong its effect. The responsible clinician determines observation and any further treatment; continue assessment for recurrent sedation, respiratory compromise and seizures rather than relying on a fixed observation interval.",
+          "support": "partial",
+          "sources": [
+            "L-FLUMAZENIL"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Boxed warning: use of flumazenil has been associated with seizures, most frequent in patients on benzodiazepines for long-term sedation or in overdose with signs of serious cyclic antidepressant overdose; practitioners should be prepared to manage seizures.",
@@ -111,6 +118,13 @@
         {
           "text": "Reversal of benzodiazepine effects may be associated with seizures in high-risk groups, including concurrent withdrawal from sedative-hypnotics, recent repeated parenteral benzodiazepines, and myoclonic jerking or seizure activity before administration in overdose.",
           "support": "sourced",
+          "sources": [
+            "L-FLUMAZENIL"
+          ]
+        },
+        {
+          "text": "The label cautions that flumazenil can precipitate seizures or alter cerebral blood flow in patients with head injury. Seek specialist assessment. Do not administer flumazenil while residual neuromuscular blockade remains; the treating team must confirm recovery from paralysis first.",
+          "support": "partial",
           "sources": [
             "L-FLUMAZENIL"
           ]
@@ -247,6 +261,15 @@
     {
       "kind": "assess",
       "text": "Before use, check whether benzodiazepines are controlling a life-threatening condition such as status epilepticus or raised intracranial pressure. Flag suspected serious cyclic antidepressant poisoning or known hypersensitivity to flumazenil or benzodiazepines; seek urgent clinician clarification before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-FLUMAZENIL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag head injury, hepatic impairment and possible residual neuromuscular blockade before administration; continue prescribed respiratory and seizure surveillance.",
       "critical": true,
       "support": "partial",
       "sources": [

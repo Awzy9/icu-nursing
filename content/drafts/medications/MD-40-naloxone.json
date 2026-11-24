@@ -114,6 +114,13 @@
           "sources": [
             "L-NALOXONE"
           ]
+        },
+        {
+          "text": "Known hypersensitivity to naloxone or the ingredients of this registered injection is a contraindication. Verify known allergy information when available and alert the emergency team; airway and ventilation support must not be delayed while the team determines the appropriate treatment.",
+          "support": "partial",
+          "sources": [
+            "L-NALOXONE"
+          ]
         }
       ]
     },
@@ -256,6 +263,15 @@
     {
       "kind": "assess",
       "text": "Continue close observation of breathing, circulation and responsiveness after reversal; seek urgent help for recurrent depression and follow the authorised repeat-treatment and observation plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NALOXONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Communicate known naloxone or formulation allergy when available, without delaying emergency assessment and ventilatory support.",
       "critical": true,
       "support": "partial",
       "sources": [

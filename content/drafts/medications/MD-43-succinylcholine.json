@@ -95,11 +95,18 @@
           "sources": [
             "L-SUCCINYLCHOLINE"
           ]
+        },
+        {
+          "text": "Flag penetrating eye injury or narrow-angle glaucoma for specialist assessment because succinylcholine can raise intraocular pressure. Review magnesium and other medicines that may enhance blockade with pharmacy; maintain ventilatory support and report unexpected prolonged paralysis.",
+          "support": "partial",
+          "sources": [
+            "L-SUCCINYLCHOLINE"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Boxed warning: acute rhabdomyolysis with hyperkalaemia followed by ventricular dysrhythmias, cardiac arrest and death has occurred after administration to apparently healthy paediatric patients.",
@@ -125,6 +132,13 @@
         {
           "text": "It may induce serious arrhythmias or cardiac arrest due to hyperkalaemia, and malignant hyperthermia is also listed among the warnings.",
           "support": "sourced",
+          "sources": [
+            "L-SUCCINYLCHOLINE"
+          ]
+        },
+        {
+          "text": "The registered label warns that bradycardia can progress to asystole, particularly with repeated exposure; children are more susceptible. Maintain ECG surveillance and escalate immediately for circulatory instability.",
+          "support": "partial",
           "sources": [
             "L-SUCCINYLCHOLINE"
           ]
@@ -274,6 +288,15 @@
     {
       "kind": "assess",
       "text": "Reduced plasma cholinesterase activity can prolong paralysis; maintain ventilatory support and urgently escalate delayed recovery.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-SUCCINYLCHOLINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review eye injury, glaucoma, concurrent medicines and prior exposure; observe rhythm and ventilatory recovery, escalating bradycardia or delayed recovery.",
       "critical": true,
       "support": "partial",
       "sources": [

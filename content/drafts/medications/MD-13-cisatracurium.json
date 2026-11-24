@@ -95,11 +95,18 @@
           "sources": [
             "L-CISATRACURIUM"
           ]
+        },
+        {
+          "text": "Magnesium salts, some antibiotics and acid-base or electrolyte disturbances may prolong blockade. Chronic phenytoin or carbamazepine treatment can shorten the effect. Report unexpected responses and use prescribed neuromuscular monitoring; in patients with unilateral or lower-limb paresis, the label directs monitoring on a non-paretic limb.",
+          "support": "partial",
+          "sources": [
+            "L-CISATRACURIUM"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Patients with neuromuscular diseases are at higher risk of residual paralysis, and a reversal agent may be considered by the prescriber.",
@@ -118,6 +125,13 @@
         {
           "text": "Risk of death due to medication errors: accidental administration can cause death.",
           "support": "sourced",
+          "sources": [
+            "L-CISATRACURIUM"
+          ]
+        },
+        {
+          "text": "The registered multidose formulation contains benzyl alcohol and is contraindicated in infants younger than one month and in low birth-weight infants; the single-dose formulations do not contain that preservative. Confirm the exact product with pharmacy, rather than generalising the restriction to every formulation.",
+          "support": "partial",
           "sources": [
             "L-CISATRACURIUM"
           ]
@@ -247,11 +261,20 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Review formulation, interacting medicines, electrolyte and acid-base results; report unexpected blockade or recovery and verify the appropriate monitoring limb.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CISATRACURIUM"
+      ]
     }
   ],
   "gaps": [
     "Dosing, infusion management and preparation: deliberately not included.",
-    "Benzyl alcohol and paediatric considerations were not summarised.",
+    "Product-specific benzyl alcohol restriction noted; full paediatric practice appraisal remains outstanding.",
     "Guideline text on neuromuscular blockade in ARDS was not read for this entry."
   ],
   "permissions": [

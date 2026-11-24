@@ -95,6 +95,13 @@
           "sources": [
             "L-ROCURONIUM"
           ]
+        },
+        {
+          "text": "Review magnesium salts, relevant antibiotics, lithium and other interacting medicines with pharmacy; these can enhance or prolong blockade. Myasthenia gravis or Lambert-Eaton syndrome can substantially increase sensitivity. Hepatic impairment may prolong recovery; continue prescribed sedation, analgesia and ventilation until the responsible team confirms recovery.",
+          "support": "partial",
+          "sources": [
+            "L-ROCURONIUM"
+          ]
         }
       ]
     },
@@ -158,6 +165,13 @@
           "support": "sourced",
           "sources": [
             "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "If extravasation is suspected, stop delivery through the affected access, assess and urgently notify the responsible team. Coordinate authorised alternative access while maintaining ventilation and sedation; do not independently repeat a potentially incompletely delivered dose.",
+          "support": "partial",
+          "sources": [
+            "L-ROCURONIUM"
           ]
         }
       ]
@@ -245,6 +259,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag neuromuscular disease, hepatic impairment and medicines that may prolong blockade; assess access and report unexpected blockade or delayed recovery.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ROCURONIUM"
+      ]
     }
   ],
   "gaps": [
