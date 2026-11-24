@@ -34,8 +34,9 @@ describe("high-risk fictional scenario safety — 2026-11-21", () => {
     expect(validateScenarioDraft(sc, sources)).toEqual([]);
     expect(sc.clinically_reviewed).toBe(false);
     expect(sc.fictional_patient).toBe(true);
-    expect(sc.steps[0].options[0].consequence).toContain("ventilation is not yet established as adequate");
-    expect(sc.steps[1].info).toContain("an immediately correctable cause has not been established");
+    expect(sc.steps[0].info).toContain("current effective ventilation has not been established");
+    expect(sc.steps[0].options[0].consequence).toContain("whether emergency ventilation support is needed");
+    expect(sc.steps[1].info).toMatch(/an immediately correctable cause has not been established/i);
     expect(sc.steps[1].options[0].text).toContain("Call for skilled help");
     expect(sc.steps[1].options[0].feedback).toContain("provide alternative ventilation");
     expect(sc.steps[1].options[0].points).toBe(2);

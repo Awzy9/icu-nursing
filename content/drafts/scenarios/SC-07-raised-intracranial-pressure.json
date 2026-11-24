@@ -93,8 +93,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "Over the last hour the patient has become more drowsy and restless, complains of a headache and has vomited once. The monitor shows a higher blood pressure and a slower pulse than before.",
-      "prompt": "What is your first response?",
+      "info": "Over the last hour a patient with a neurological condition has become drowsier and restless, with headache and one episode of vomiting. Blood pressure is higher and pulse slower than before. Pupil responses have not yet been reassessed. The findings are concerning but do not establish an ICP diagnosis.",
+      "prompt": "Which assessment and escalation are appropriate for this new neurological deterioration?",
       "observations": [
         {
           "key": "loc",
@@ -115,6 +115,16 @@
           "key": "hr",
           "label": "Heart rate",
           "value": "Slower than before"
+        },
+        {
+          "key": "pupils",
+          "label": "Pupil responses",
+          "value": "Focused reassessment required"
+        },
+        {
+          "key": "breathing",
+          "label": "Airway and breathing",
+          "value": "Immediate reassessment required"
         }
       ],
       "options": [
@@ -124,7 +134,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "A new reduction in consciousness with headache, vomiting and changing cardiovascular findings is a warning of possible acute neurological deterioration. These findings do not diagnose raised intracranial pressure or reliably occur in a fixed sequence. Urgent patient assessment and escalation take priority. Clinical concern for herniation is an emergency even before invasive monitoring is available. A complete Cushing triad is neither required nor an early screening rule. During the urgent response, communicate pupil and consciousness changes, airway and circulatory status, and any interventions already given. Maintain prescribed oxygenation, temperature and positioning measures as tolerated, and report abnormal sodium results to the treating team; do not independently administer hyperosmolar therapy or manipulate a drain.",
-          "consequence": "The team receives a clear change from baseline and can act quickly.",
+          "consequence": "Immediate assessment and communication of neurological changes may allow early specialist intervention if an intracranial emergency is developing.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-CVA",
@@ -138,7 +148,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Rechecking blood pressure alone and leaving the patient delays emergency assessment of new neurological deterioration.",
-          "consequence": "The patient continues to deteriorate while only the pressure is followed.",
+          "consequence": "Following pressure alone could delay recognition of a worsening neurological or airway problem.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-CVA"
@@ -150,7 +160,7 @@
           "next": 2,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Sedatives given in this situation can mask neurological symptoms; restlessness and drowsiness need assessment and reporting, not settling.",
-          "consequence": "The change in the patient's neurological state is hidden at the moment it matters most.",
+          "consequence": "Sedation before assessment could obscure the changing neurological examination and delay escalation.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-CVA"
@@ -160,8 +170,8 @@
     },
     {
       "position": 2,
-      "info": "The team confirms concern about rising pressure inside the skull and asks you to continue nursing care with that in mind. The patient needs a bed bath and may need airway suction after assessment.",
-      "prompt": "Which approach to care is best?",
+      "info": "At the next shared checkpoint, the treating team is concerned about elevated ICP. The prescribed head position is in place. Routine hygiene and repositioning are due, and retained airway secretions may require assessment. The patient is still drowsy.",
+      "prompt": "How can the nurse individualize routine care while avoiding delays to essential airway or emergency care?",
       "observations": [
         {
           "key": "loc",
@@ -182,6 +192,16 @@
           "key": "env",
           "label": "Environment",
           "value": "Bright and noisy"
+        },
+        {
+          "key": "airway",
+          "label": "Airway secretions",
+          "value": "Clinical indication for suction requires assessment"
+        },
+        {
+          "key": "pupils",
+          "label": "Pupil responses",
+          "value": "Continue focused monitoring"
         }
       ],
       "options": [
@@ -191,7 +211,7 @@
           "next": 3,
           "scope": "monitoring",
           "feedback": "Interventions for managing ICP include raising the head of the bed as provider and policy direct, keeping the neck midline, avoiding sudden neck or hip flexion, avoiding clustering care, a low-stimulus environment, oxygen to prevent hypoxia and close monitoring. Suctioning an artificial airway should be clinically indicated; avoid unnecessary stimulation, but airway rescue must not be postponed. NCS 2020 supports head elevation as an adjunct with very low-certainty evidence; the team individualizes positioning according to perfusion, spinal precautions and hemodynamic tolerance. Avoid treating every pressure rise by independently increasing ventilation or adjusting an intracranial drain. Any temporary hyperventilation or CSF diversion is specialist-directed. Assess pain and essential care needs individually rather than deferring necessary care solely to reduce stimulation.",
-          "consequence": "Measures that raise the pressure are avoided, and the patient's condition is more stable.",
+          "consequence": "Individualized care and observation may reduce avoidable stimulation while preserving oxygenation and essential treatment.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-CVA",
@@ -206,7 +226,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Combining multiple stimulating activities may raise ICP in some patients. Individualize care spacing, assess response and do not postpone necessary airway or other urgent treatment.",
-          "consequence": "The pressure rises during the cluster of care and the patient's condition worsens.",
+          "consequence": "Clustering stimulating procedures could provoke deterioration in a vulnerable patient.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-CVA",
@@ -219,7 +239,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "The head-of-bed position is set by the provider and policy to help drainage from the head; lying flat is not within the nurse's own discretion.",
-          "consequence": "The pressure rises and the patient becomes drowsier.",
+          "consequence": "Unplanned position changes could compromise the prescribed positioning or cerebral perfusion plan.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-CVA"
@@ -229,8 +249,8 @@
     },
     {
       "position": 3,
-      "info": "The team prescribes mannitol to manage concern about elevated intracranial pressure. The patient is agitated again and a colleague suggests an extra sedative.",
-      "prompt": "What is your role now?",
+      "info": "At the final shared checkpoint, the team prescribes mannitol. The patient remains drowsy with intermittent agitation, urine output is being measured and renal and electrolyte monitoring is planned. A colleague suggests extra sedation to simplify care.",
+      "prompt": "Which monitoring and escalation plan best supports prescribed therapy without masking neurological changes?",
       "observations": [
         {
           "key": "order",
@@ -251,6 +271,16 @@
           "key": "agitation",
           "label": "Agitation",
           "value": "Present"
+        },
+        {
+          "key": "renal",
+          "label": "Renal function and electrolytes",
+          "value": "Ordered monitoring"
+        },
+        {
+          "key": "osmolar",
+          "label": "Osmolar gap",
+          "value": "Follow prescribed monitoring plan"
         }
       ],
       "options": [
@@ -260,7 +290,7 @@
           "next": null,
           "scope": "order_or_protocol_required",
           "feedback": "The mannitol label warns of fluid and electrolyte disturbance, kidney effects and nervous-system effects, so these are monitored; sedatives must be used cautiously because they can mask neurological signs, so the team decides. The NCS 2020 guideline favors osmolar gap over a fixed serum osmolarity threshold for toxicity monitoring during mannitol therapy, with limited evidence and no established universal cutoff. Closely follow renal function and the prescribed monitoring plan. Escalate suspected serious adverse effects promptly rather than waiting for a routine review.",
-          "consequence": "The effect of the treatment is followed and the team keeps a reliable neurological picture.",
+          "consequence": "Serial neurological, renal and fluid assessments may identify treatment response or emerging toxicity before the next planned review.",
           "support": "partial",
           "sources": [
             "L-MANNITOL",
@@ -274,7 +304,7 @@
           "next": null,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Sedation can mask neurological symptoms and must be given cautiously; the decision belongs with the prescriber after discussion.",
-          "consequence": "The neurological examination becomes unreliable and a worsening could be missed.",
+          "consequence": "Unreviewed extra sedation could obscure a clinically important change in consciousness.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-CVA"
@@ -286,7 +316,7 @@
           "next": null,
           "scope": "prescriber_or_other_discipline",
           "feedback": "A rise in urine output alone does not justify stopping mannitol. Assess fluid balance and renal function, urgently escalate suspected toxicity or instability, and follow the authorised emergency or medication-management pathway.",
-          "consequence": "Therapy is interrupted without direction and the pressure may rise again.",
+          "consequence": "Interrupting therapy on the basis of urine output alone could leave the underlying problem inadequately treated.",
           "support": "partial",
           "sources": [
             "L-MANNITOL"

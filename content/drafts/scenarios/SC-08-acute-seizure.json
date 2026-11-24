@@ -84,8 +84,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "A patient is having a convulsive seizure that has been going on for several minutes and shows no sign of stopping.",
-      "prompt": "What do you do first?",
+      "info": "During routine ICU care an adult develops continuing convulsive movements. A colleague has noted the onset; several minutes have elapsed and there is no individual emergency plan immediately available. Glucose is not yet known.",
+      "prompt": "What should the nurse prioritize during the ongoing convulsion while organizing emergency treatment?",
       "observations": [
         {
           "key": "seizure",
@@ -101,6 +101,16 @@
           "key": "plan",
           "label": "Individual emergency plan",
           "value": "None available"
+        },
+        {
+          "key": "glucose",
+          "label": "Blood glucose",
+          "value": "Not yet available"
+        },
+        {
+          "key": "breathing",
+          "label": "Airway and breathing",
+          "value": "Immediate assessment required"
         }
       ],
       "options": [
@@ -110,7 +120,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure. General seizure first-aid precautions supplement, not replace, the ICU airway and emergency protocol. Never force positioning during active convulsions.",
-          "consequence": "Help arrives while you stay with the patient and the time of onset is clear.",
+          "consequence": "Rapid emergency activation, timing and parallel glucose assessment may reduce treatment delay and identify a reversible contributor.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
@@ -125,7 +135,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Getting help is right, but leaving the patient removes emergency care at the worst moment.",
-          "consequence": "The patient is alone during the seizure until you return.",
+          "consequence": "Leaving the bedside could interrupt observation and injury prevention during the convulsion.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217"
@@ -137,7 +147,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A prolonged convulsive seizure is an emergency that needs immediate treatment.",
-          "consequence": "Treatment is delayed and the seizure continues.",
+          "consequence": "Waiting for spontaneous cessation could delay time-sensitive treatment of prolonged seizures.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217"
@@ -147,8 +157,8 @@
     },
     {
       "position": 2,
-      "info": "At the next teaching checkpoint, the emergency team is present. The doctor confirms there is no individual emergency plan, and intravenous access and resuscitation equipment are ready.",
-      "prompt": "What is the nurse's role regarding the medicine?",
+      "info": "At the next shared checkpoint the emergency team is present, the convulsion continues and IV access and resuscitation equipment are ready. The treating clinician confirms there is no individual plan available. Medication identity, administration time and ventilation surveillance need coordination.",
+      "prompt": "How should the nurse support authorized emergency medication delivery and respiratory safety?",
       "observations": [
         {
           "key": "seizure",
@@ -164,6 +174,16 @@
           "key": "equipment",
           "label": "Resuscitation equipment",
           "value": "At the bedside"
+        },
+        {
+          "key": "breathing",
+          "label": "Airway and breathing",
+          "value": "Continuous assessment required"
+        },
+        {
+          "key": "medication",
+          "label": "Emergency medication",
+          "value": "Verify authorized drug and timing"
         }
       ],
       "options": [
@@ -173,7 +193,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "NICE sets out the first-line treatment when no plan is available; which medicine and how much is for the prescriber or protocol, and the lorazepam label warns of respiratory depression, especially with opioids.",
-          "consequence": "The medicine is given safely and breathing is monitored.",
+          "consequence": "Coordinated authorized treatment and respiratory monitoring may reduce delays and help identify medication-related respiratory depression.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
@@ -186,7 +206,7 @@
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "The choice of medicine is a prescriber or protocol decision.",
-          "consequence": "An unsuitable medicine is given and the team has to correct it.",
+          "consequence": "Selecting medication independently could introduce a treatment error and delay appropriate seizure control.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217"
@@ -198,7 +218,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Refusing to prepare authorised emergency care delays treatment of a continuing seizure. Work within competency and protocol, and summon appropriate assistance immediately.",
-          "consequence": "The treatment is slowed down.",
+          "consequence": "Failing to prepare authorized treatment could prolong seizure activity before rescue medication is available.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217"
@@ -208,8 +228,8 @@
     },
     {
       "position": 3,
-      "info": "Following team-directed initial treatment at this teaching checkpoint, the seizure has not stopped.",
-      "prompt": "What do you do now?",
+      "info": "At the final shared checkpoint, initial team-directed treatment has been given but convulsive activity continues. Respiratory surveillance is ongoing, and the initial glucose result must be confirmed. The exact treatment and administration time must be communicated before further medication.",
+      "prompt": "What is the priority when the initial emergency treatment has not stopped the seizure?",
       "observations": [
         {
           "key": "seizure",
@@ -225,6 +245,16 @@
           "key": "glucose",
           "label": "Blood glucose",
           "value": "Initial check requested; confirm result or obtain urgently if still unavailable"
+        },
+        {
+          "key": "medication",
+          "label": "Initial emergency medication",
+          "value": "Confirm drug, administration time and response"
+        },
+        {
+          "key": "alertness",
+          "label": "Level of consciousness",
+          "value": "Continue assessment; report failure to recover"
         }
       ],
       "options": [
@@ -234,7 +264,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment. NICE NG217 specifies a time-sensitive repeat benzodiazepine pathway when a convulsive seizure persists after first-line treatment, with expert guidance for subsequent treatment failure. Verify the exact drug, time and response of the first dose, maintain respiratory monitoring, and prepare the next authorised treatment without delay; the individual plan and emergency protocol determine administration. If movements stop but consciousness does not recover as expected, or neuromuscular blockade obscures motor signs, escalate possible ongoing electrographic seizures and discuss urgent EEG or continuous EEG with the neurocritical-care team. Do not assume persistent unresponsiveness is solely postictal or sedative-related. The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped.",
-          "consequence": "Expert help is on its way and a treatable cause is not missed.",
+          "consequence": "Urgent specialist reassessment and verification of treatment and reversible causes may support timely escalation while protecting ventilation.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
@@ -250,7 +280,7 @@
           "next": null,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Do not give an unverified repeat dose. Further treatment may be urgently indicated, but confirm the initial medication and timing and follow the authorised emergency plan with respiratory monitoring.",
-          "consequence": "Unverified repeat medication creates avoidable risk of respiratory depression and treatment error.",
+          "consequence": "An unverified repeat dose could cause a medication error or respiratory depression.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217"
@@ -262,7 +292,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "The patient needs continuous observation and escalation when treatment is not working.",
-          "consequence": "Deterioration is missed.",
+          "consequence": "Stopping observation could delay recognition of ongoing seizure activity or respiratory compromise.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217"

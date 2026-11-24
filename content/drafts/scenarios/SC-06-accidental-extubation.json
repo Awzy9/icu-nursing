@@ -78,8 +78,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "You find the endotracheal tube has moved out and there is an audible leak. The patient is agitated.",
-      "prompt": "What is the first action?",
+      "info": "During bedside care, an intubated adult becomes agitated. The tube marking has shifted outward from the documented depth, an audible leak develops and saturation begins to fall. Effective ventilation and tube position are uncertain.",
+      "prompt": "What is the immediate priority when displacement of an endotracheal tube is suspected?",
       "observations": [
         {
           "key": "spo2",
@@ -96,6 +96,16 @@
           "key": "tube",
           "label": "Tube position",
           "value": "Out from the recorded depth"
+        },
+        {
+          "key": "chest",
+          "label": "Chest movement",
+          "value": "Effective ventilation uncertain"
+        },
+        {
+          "key": "trace",
+          "label": "Waveform capnography",
+          "value": "Requires immediate reassessment"
         }
       ],
       "options": [
@@ -105,7 +115,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Suspected displacement and accidental extubation call for immediate escalation, and the nurse stays with the patient. A displaced tube may no longer provide effective ventilation. Assess the patient's breathing and oxygenation, summon the airway team immediately and follow the emergency pathway; do not blindly advance the tube.",
-          "consequence": "Help arrives while you support the airway and the oxygen supply.",
+          "consequence": "Immediate airway-team assistance and authorized support may limit the duration of inadequate ventilation.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA",
@@ -119,7 +129,7 @@
           "next": 2,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Repositioning an airway device is not a safe nursing improvisation and may cause harm.",
-          "consequence": "The tube is now in an unknown position and the patient is worse.",
+          "consequence": "Blind advancement could worsen displacement or airway injury and delay effective rescue.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA"
@@ -131,7 +141,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Calling for help is right, but leaving the patient removes airway support at the worst moment.",
-          "consequence": "Help is found but the patient has had no support for several minutes.",
+          "consequence": "Leaving the patient could delay airway support while oxygenation and ventilation deteriorate.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"
@@ -141,8 +151,8 @@
     },
     {
       "position": 2,
-      "info": "The tube is now out. The patient is breathing but struggling, and the team is on its way.",
-      "prompt": "What should you do while waiting?",
+      "info": "At the next shared checkpoint the tube is out. The patient makes spontaneous respiratory efforts but is struggling, saturation is falling and chest movement is inadequate. The trained airway team is on its way.",
+      "prompt": "What must happen while the airway team is responding if spontaneous breathing is ineffective?",
       "observations": [
         {
           "key": "spo2",
@@ -159,6 +169,16 @@
           "key": "help",
           "label": "Team",
           "value": "On the way"
+        },
+        {
+          "key": "chest",
+          "label": "Chest movement",
+          "value": "Poor despite respiratory effort"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Agitated, tiring"
         }
       ],
       "options": [
@@ -168,7 +188,7 @@
           "next": 3,
           "scope": "monitoring",
           "feedback": "Oxygen delivery alone may not correct inadequate ventilation after accidental extubation. Prompt assessment and appropriate ventilation support within training and the local emergency pathway take priority while the responsible airway clinicians arrive. Report airway obstruction, inability to manage secretions, respiratory exhaustion, reduced consciousness or arrest immediately; these are indications for urgent trained-team assessment for reintubation in the ISCCM statement. An apparently acceptable saturation must not delay assessment or rescue if ventilation is failing.",
-          "consequence": "The team arrives to a patient who is being supported and to equipment that is ready.",
+          "consequence": "Early trained ventilation support and ongoing monitoring may reduce the time without adequate ventilation.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA",
@@ -183,7 +203,7 @@
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Reintubation is a skilled airway procedure for the responsible clinicians.",
-          "consequence": "The attempt delays the team and risks airway injury.",
+          "consequence": "An untrained reintubation attempt could cause airway injury and delay effective support.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"
@@ -195,7 +215,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Monitoring must continue during an airway emergency.",
-          "consequence": "The team arrives without current readings and loses time.",
+          "consequence": "Switching off monitoring could conceal worsening oxygenation or circulation and impede the team's assessment.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA"
@@ -205,8 +225,8 @@
     },
     {
       "position": 3,
-      "info": "The patient has been reintubated and is stable. The charge nurse asks what happened.",
-      "prompt": "What is the best contribution now?",
+      "info": "At the final shared checkpoint the airway team has reintubated the patient. Saturation has improved and waveform capnography is connected. The team needs to confirm sustained exhaled carbon dioxide, ongoing ventilation and securement; the incident still needs factual review.",
+      "prompt": "Which verification and follow-up best address immediate airway safety and recurrence risk?",
       "observations": [
         {
           "key": "spo2",
@@ -223,6 +243,16 @@
           "key": "sedation",
           "label": "Agitation overnight",
           "value": "Reported"
+        },
+        {
+          "key": "trace",
+          "label": "Waveform capnography",
+          "value": "Connected; sustained exhaled carbon dioxide to be confirmed with team"
+        },
+        {
+          "key": "securement",
+          "label": "Tube securement",
+          "value": "Reassessment required"
         }
       ],
       "options": [
@@ -232,7 +262,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Sustained exhaled carbon dioxide on waveform capnography is central to excluding oesophageal intubation. Reassess if the trace changes, the tube moves, or oxygenation deteriorates. An absent or lost reliable trace requires immediate airway-team assessment and emergency support; a depth mark or satisfactory saturation alone cannot confirm placement. Review contributing factors without blame. After stabilization, review documented tube position, securement and factors such as agitation or movement; prevention and monitoring are multidisciplinary.",
-          "consequence": "The team reviews the sedation plan and the securement and the risk of a repeat falls.",
+          "consequence": "Verification and a factual incident review may identify residual airway concerns and modifiable contributors to recurrence.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
@@ -247,7 +277,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Incidents are recorded and reported so they can be learned from.",
-          "consequence": "The contributing factors are never reviewed.",
+          "consequence": "Failure to document could leave displacement risks and the sequence of rescue actions unrecognized.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA"
@@ -259,7 +289,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "A report states facts and actions, not blame.",
-          "consequence": "The team becomes defensive and the review is less open.",
+          "consequence": "Blame-focused reporting could discourage accurate reporting of contributing factors and prevent learning.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS"
