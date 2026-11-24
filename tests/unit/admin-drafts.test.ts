@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { buildDraftIndex, licenceBand, parseCsv, updateHistory, type DraftHistory, type DraftIndex, type IndexEntry } from "../../scripts/build-draft-index";
-import { compareLatest, coverage, draftFreshness, filterDrafts, sourceFreshness, worstLicence, STALE_DAYS } from "@/lib/admin/drafts-core";
+import { compareLatest, coverage, draftFreshness, filterDrafts, orderReviewQueue, reviewLane, sourceFreshness, worstLicence, STALE_DAYS } from "@/lib/admin/drafts-core";
 
 const onDisk = JSON.parse(readFileSync("src/content/draft-index.json", "utf8")) as DraftIndex;
 const hist = JSON.parse(readFileSync("src/content/draft-history.json", "utf8")) as DraftHistory;
@@ -55,6 +55,32 @@ describe("filters, freshness, comparison and coverage", () => {
     expect(filterDrafts(list, { q: "arter" }, today).map((x) => x.key)).toEqual(["SK-01"]);
     expect(filterDrafts(list, { q: "%" }, today)).toEqual([]);
     expect(filterDrafts(list, {}, today)).toHaveLength(2);
+  });
+  it("keeps staff clinical-review suggestions separate from actual approval", () => {
+    const urgent = e({ key: "SC-11", type: "cases", gaps: 8, sources: [{ id: "S-UKKA-HK-2026", licence_class: "RED", verified: "2026-11-14" }] });
+    const urgent2 = e({ key: "MD-20", type: "medications", gaps: 7 });
+    const sourceGap = e({ key: "PX-12", type: "practice", gaps: 0, sources: [] });
+    const unverified = e({ key: "SK-08", gaps: 4, sources: [{ id: "X", licence_class: "UNVERIFIED", verified: null }] });
+    const rights = e({ key: "EQ-03", type: "equipment", gaps: 6, sources: [{ id: "R", licence_class: "RED", verified: "2026-11-14" }] });
+    const general = e({ key: "PX-01", type: "practice", gaps: 9 });
+    expect(reviewLane(urgent)).toBe("patient-safety");
+    expect(reviewLane(urgent2)).toBe("patient-safety");
+    expect(reviewLane(sourceGap)).toBe("source-verification");
+    expect(reviewLane(unverified)).toBe("source-verification");
+    expect(reviewLane(rights)).toBe("rights-review");
+    expect(reviewLane(general)).toBe("general");
+    const entries = [general, urgent2, rights, sourceGap, unverified, urgent];
+    expect(orderReviewQueue(entries).map((x) => x.key)).toEqual(["SC-11", "MD-20", "SK-08", "PX-12", "EQ-03", "PX-01"]);
+    expect(entries[0]).toBe(general); // stable original data, ordering is non-mutating
+    expect(filterDrafts(entries, { review: "patient-safety" }, today).map(x => x.key)).toEqual(["MD-20", "SC-11"]);
+    expect(filterDrafts(entries, { review: "source-verification" }, today).map(x => x.key)).toEqual(["PX-12", "SK-08"]);
+    expect(entries.every(x => x.clinically_reviewed === false)).toBe(true);
+  });
+  it("flags the known high-priority working draft without displaying its content body", () => {
+    const indexCase = onDisk.entries.find((x) => x.key === "SC-11")!;
+    expect(reviewLane(indexCase)).toBe("patient-safety");
+    expect(orderReviewQueue(onDisk.entries).at(0)?.key).toBe("SC-11");
+    expect(onDisk.entries.filter(x => x.clinically_reviewed)).toHaveLength(0);
   });
   it("compares the last two snapshots", () => {
     const h: DraftHistory = { note: "", entries: { A: [{ hash: "1", recorded: "d1", evidence_status: "unsupported", sources: ["S-1"], gaps: 3, required_sources: 2, issues: 1 }, { hash: "2", recorded: "d2", evidence_status: "partial", sources: ["S-1", "S-2"], gaps: 2, required_sources: 2, issues: 0 }], B: [{ hash: "1", recorded: "d1", evidence_status: "partial", sources: [], gaps: 0, required_sources: 0, issues: 0 }] } };
