@@ -99,7 +99,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Boxed warning: concomitant use of benzodiazepines and opioids may result in profound sedation, respiratory depression, coma and death; patients should be monitored closely for respiratory depression and sedation if used together.",
@@ -118,6 +118,13 @@
         {
           "text": "The boxed warning also covers dependence and withdrawal reactions.",
           "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "The registered injection is contraindicated with benzodiazepine or vehicle allergy, acute narrow-angle glaucoma, sleep apnoea, and severe respiratory insufficiency except for the label's specified mechanically ventilated context. The preserved product is contraindicated in premature infants. Intra-arterial administration can cause severe vascular injury and must not be used. Confirm formulation, indication and route with the responsible clinician.",
+          "support": "partial",
           "sources": [
             "L-LORAZEPAM"
           ]
@@ -252,6 +259,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Check documented allergy, sleep apnoea, respiratory status, glaucoma and intended route before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
     }
   ],
   "gaps": [

@@ -99,7 +99,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Hypersensitivity reactions, including anaphylaxis, can occur; the label says to stop the infusion immediately if they develop.",
@@ -125,6 +125,13 @@
         {
           "text": "Fluid and electrolyte imbalance is also listed among the warnings.",
           "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        },
+        {
+          "text": "The registered mannitol injection also lists known hypersensitivity and active intracranial bleeding except during craniotomy as contraindications. Confirm the imaging and specialist indication where relevant; do not interpret a raised intracranial pressure alone as authorisation to administer mannitol.",
+          "support": "partial",
           "sources": [
             "L-MANNITOL"
           ]
@@ -249,6 +256,15 @@
     {
       "kind": "escalate",
       "text": "Inspect the infusion site and assess the limb for swelling, pain or impaired perfusion. Suspected extravasation or compartment syndrome requires immediate escalation and the local extravasation pathway. An unexpectedly low phosphorus result may reflect assay interference; discuss with the laboratory and clinical team before acting on it.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MANNITOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag known mannitol allergy or active intracranial bleeding and clarify the specialist indication and product-specific restrictions.",
       "critical": true,
       "support": "partial",
       "sources": [

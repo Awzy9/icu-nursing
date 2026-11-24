@@ -92,7 +92,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Boxed warning: exposure to risks of addiction, abuse and misuse, with life-threatening respiratory depression and profound sedation when combined with benzodiazepines or other CNS depressants.",
@@ -118,6 +118,13 @@
         {
           "text": "Opioid-induced hyperalgesia and allodynia and adrenal insufficiency are also described.",
           "support": "sourced",
+          "sources": [
+            "L-HYDROMORPHONE"
+          ]
+        },
+        {
+          "text": "The registered injection is contraindicated in significant respiratory depression, acute or severe asthma without appropriate monitoring or rescue equipment, suspected or confirmed gastrointestinal obstruction including paralytic ileus, and relevant product or sulfite hypersensitivity. Concomitant anticholinergic medicines may worsen constipation and urinary retention. Clarify concerns before administration.",
+          "support": "partial",
           "sources": [
             "L-HYDROMORPHONE"
           ]
@@ -249,6 +256,15 @@
     {
       "kind": "assess",
       "text": "Assess ventilation and responsiveness as well as oxygenation, especially after initiation or therapy changes. Escalate suspected opioid respiratory depression immediately, even if supplemental oxygen preserves saturation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HYDROMORPHONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess respiratory status, allergy, bowel function and urine retention; flag concurrent anticholinergic medicines and suspected obstruction.",
       "critical": true,
       "support": "partial",
       "sources": [

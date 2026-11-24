@@ -147,6 +147,13 @@
           "sources": [
             "L-ATROPINE"
           ]
+        },
+        {
+          "text": "Excessive atropine exposure may cause palpitations, enlarged pupils, hot dry skin, swallowing difficulty, agitation, hallucinations or delirium. Severe toxicity may cause coma, respiratory failure or circulatory collapse. Assess new symptoms and activate emergency help for severe deterioration; seek specialist toxicology advice rather than assuming a universal antidote regimen.",
+          "support": "partial",
+          "sources": [
+            "L-ATROPINE"
+          ]
         }
       ]
     },
@@ -256,6 +263,15 @@
     {
       "kind": "assess",
       "text": "The registered Accord injection label lists no formal contraindications in section 4. Its cardiac, ocular, urinary, gastric and respiratory warnings still require assessment; do not treat these precautions as blanket exclusions from emergency treatment.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ATROPINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Escalate suspected anticholinergic toxicity, particularly new delirium, hot dry skin, impaired swallowing or physiological instability.",
       "critical": true,
       "support": "partial",
       "sources": [

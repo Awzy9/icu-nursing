@@ -88,6 +88,13 @@
           "sources": [
             "L-HALOPERIDOL"
           ]
+        },
+        {
+          "text": "Serious neurological injury has been reported in patients receiving lithium and haloperidol together, although causality is unproven. Review concurrent lithium and urgently report unexplained fever, tremor, weakness, confusion or new abnormal movements; seek immediate clinical assessment and the authorised medication cessation plan.",
+          "support": "partial",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
         }
       ]
     },
@@ -242,6 +249,15 @@
     {
       "kind": "assess",
       "text": "Confirm indication, formulation, route and neurological contraindications with pharmacy. Escalate new rigidity, fever, altered consciousness or autonomic instability urgently; assess other causes as well.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent lithium; assess changes in consciousness, temperature and movement and escalate suspected neurological toxicity.",
       "critical": true,
       "support": "partial",
       "sources": [

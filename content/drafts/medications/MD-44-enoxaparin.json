@@ -102,6 +102,13 @@
           "sources": [
             "L-ENOXAPARIN"
           ]
+        },
+        {
+          "text": "After neuraxial procedures, new central back pain, leg weakness or sensory changes, or loss of bowel or bladder control may indicate a spinal haematoma. Activate urgent clinical assessment immediately; do not wait for the next scheduled neurological observation. The treating team determines investigation and intervention.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
         }
       ]
     },
@@ -291,6 +298,15 @@
     {
       "kind": "assess",
       "text": "Review ordered potassium results in patients with renal impairment or other hyperkalaemia risk factors. Flag concomitant medicines that increase bleeding risk to the prescriber or pharmacist; when coadministration is essential, follow the agreed clinical and laboratory monitoring plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Following neuraxial procedures, urgently escalate new back pain, lower-limb neurological changes or bowel/bladder dysfunction.",
       "critical": true,
       "support": "partial",
       "sources": [

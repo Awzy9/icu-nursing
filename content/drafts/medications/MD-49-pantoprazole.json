@@ -128,6 +128,13 @@
           "sources": [
             "L-PANTOPRAZOLE"
           ]
+        },
+        {
+          "text": "This registered injectable product is contraindicated with relevant benzimidazole or formulation hypersensitivity and concurrent rilpivirine-containing treatment. Suppression of gastric acid can alter exposure to some antiretroviral medicines. Review the medication list with pharmacy and seek a clinician-approved alternative if necessary.",
+          "support": "partial",
+          "sources": [
+            "L-PANTOPRAZOLE"
+          ]
         }
       ]
     },
@@ -249,6 +256,15 @@
     {
       "kind": "escalate",
       "text": "Urgently report blistering, mucosal lesions, skin detachment or other signs of serious hypersensitivity. Suspected severe cutaneous reactions require discontinuation and urgent clinical assessment under the authorised pathway; activate emergency help if unstable.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PANTOPRAZOLE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check proton pump inhibitor allergy and rilpivirine-containing therapy; clarify any interacting antiretroviral treatment with pharmacy.",
       "critical": true,
       "support": "partial",
       "sources": [

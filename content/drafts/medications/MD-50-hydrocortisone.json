@@ -121,6 +121,13 @@
           "sources": [
             "L-HYDROCORTISONE"
           ]
+        },
+        {
+          "text": "The registered hydrocortisone sodium succinate injection lists systemic fungal infection and product hypersensitivity as contraindications, and prohibits intrathecal administration. Intramuscular corticosteroids are contraindicated in idiopathic thrombocytopenic purpura. Clarify these circumstances with the treating team; do not independently interrupt essential replacement therapy.",
+          "support": "partial",
+          "sources": [
+            "L-HYDROCORTISONE"
+          ]
         }
       ]
     },
@@ -242,6 +249,15 @@
     {
       "kind": "observe",
       "text": "Corticosteroids may suppress usual signs of infection. Assess clinical trends and new unexplained organ dysfunction rather than relying on fever alone; promptly escalate suspected infection. The clinical team directs any steroid withdrawal or reduction.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HYDROCORTISONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Verify intended route and flag systemic fungal infection, product allergy or planned intramuscular administration in idiopathic thrombocytopenic purpura.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -128,6 +128,13 @@
           "sources": [
             "L-TXA"
           ]
+        },
+        {
+          "text": "The registered intravenous product lists subarachnoid haemorrhage, active intravascular clotting and product hypersensitivity as contraindications. Neuraxial administration is prohibited. Clarify the actual indication and any contraindication with the responsible clinician; this product-specific warning is not a general bleeding-treatment algorithm.",
+          "support": "partial",
+          "sources": [
+            "L-TXA"
+          ]
         }
       ]
     },
@@ -256,6 +263,15 @@
     {
       "kind": "escalate",
       "text": "Review renal function and seizure history. Escalate new twitching or myoclonus promptly; activate emergency help for seizures and discontinue treatment under the authorised emergency pathway. For serious hypersensitivity, stop administration, activate emergency help and do not restart treatment.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-TXA"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Verify intended intravenous route and report known subarachnoid haemorrhage, active intravascular clotting or relevant allergy before use.",
       "critical": true,
       "support": "partial",
       "sources": [
