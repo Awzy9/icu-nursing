@@ -108,16 +108,16 @@ D. Leave it unrecorded, because the pharmacy record already shows that the dose 
 **Why not B:** A colleague may document their own direct observations or an authorized witness role, but must not impersonate the administering nurse or attest to unverified administration.
 **Why not D:** Dispensing is not administration, and the record must show what was given.
 
-**Q2 (judgment).** A nurse is recording an overnight event after a patient complained of chest pain. Which entry is most appropriate in the record?
-A. "Patient was agitated and difficult overnight, and the family were demanding and kept pressing the call bell."
-B. "03:10 grimaced and said 'my chest hurts', pain 7/10, HR 112; doctor called 03:12."
-C. "Patient is probably just anxious; no action needed at this time, so nothing further has been recorded."
-D. "Patient was fine all night according to the other nurse who looked after him, so no observations were repeated."
+**Q2 (judgment).** During shift handover, a nurse discovers a medication was given at a higher rate than prescribed. The patient has already been assessed, the infusion discrepancy addressed with the team, and urgent care provided. Which entry is most appropriate next?
+A. Record the corrected rate and omit the earlier rate to avoid confusing the next shift.
+B. Record the actual exposure, patient findings, actions, notifications and reassessment.
+C. Complete the incident report and refer the next nurse to it instead of charting the event.
+D. Record that the pump was responsible and defer details until the investigation concludes.
 **Answer: B.**
-**Why correct:** The entry is objective and time-stamped, with a quotation, measurements and the action taken, so another clinician can rely on it. The others use subjective labels, opinion or someone else's report presented as the writer's own.
-**Why not A:** It uses subjective labels with no observable detail.
-**Why not C:** It is an opinion without any recorded assessment findings.
-**Why not D:** It reports another person's observation as if it were the writer's own, without attribution.
+**Why correct:** The clinical record should describe verified exposure, objective findings, treatment, communication and response so the receiving team can continue care. Submit a separate incident report under the approved pathway. Distinguish established facts from unknown contributing factors.
+**Why not A:** The previous exposure remains clinically relevant even after the rate is corrected; omitting it may compromise surveillance.
+**Why not C:** An incident report does not replace clinical documentation and may not be available to the receiving team.
+**Why not D:** The cause is not yet established; document observed facts rather than attributing fault before investigation.
 
 **Q3 (application).** A nurse notices she wrote an incorrect value on a paper chart. What should she do?
 A. Cover the value with correction fluid and write the right figure over it so that the page stays neat and readable.
@@ -130,16 +130,16 @@ D. Keep the original legible, identify and authenticate the correction, then ent
 **Why not B:** The original entry must remain readable.
 **Why not C:** Discarding part of the record is inappropriate; entries must be preserved.
 
-**Q4 (prioritization).** At the end of a busy shift the nurse has time to complete only one of these. Which is most important?
-A. Completing the record of a new oxygen requirement and the call to the doctor for a patient who worsened.
-B. Updating the care plan for a stable patient who is waiting for discharge, so that it is up to date for the receiving ward.
-C. Rewriting the handwriting in an earlier entry so that it is neater and easier for colleagues to read.
-D. Completing an education note for a patient who is already well informed and has no outstanding questions.
+**Q4 (prioritization).** At handover a patient has a new oxygen requirement and falling saturation despite the current plan. Several routine documentation tasks remain unfinished. What is the priority?
+A. Reassess, summon appropriate help, then chart the changes and response when safe.
+B. Complete the oxygen chart first so the receiving nurse can interpret the deterioration.
+C. Ask the receiving nurse to finish the assessment after the routine handover is complete.
+D. Record the earlier stable observations while asking the team to review the patient later.
 **Answer: A.**
-**Why correct:** Safety-critical changes and escalation must be recorded promptly for the next team.
-**Why not B:** Valuable, but not time-critical for patient safety.
-**Why not C:** A cosmetic change that adds nothing to safety.
-**Why not D:** Not safety-critical and not urgent.
+**Why correct:** Immediate patient assessment and escalation take priority over nonessential charting. Provide authorized supportive care, communicate responsibility explicitly and record the event and actions as soon as practicable. Routine documentation must not delay an urgent clinical response.
+**Why not B:** An accurate chart is important, but completing it before assessing ongoing deterioration risks a preventable delay.
+**Why not C:** Handover does not transfer an unresolved emergency without immediate action and clear agreement on responsibility.
+**Why not D:** Earlier stability does not establish current safety; escalation must reflect the patient's present condition.
 
 **Q5 (monitoring).** While reviewing a patient's chart at the end of a shift, which finding should prompt follow-up?
 A. A signed and dated correction of a mistaken entry, made with a single line so that the original is still visible.

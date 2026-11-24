@@ -101,16 +101,16 @@ A new bag of a high-risk infusion is hung at 02:00. The nurse reads the order, c
 At change of shift, the oncoming nurse sees that the rate on a pump differs from the chart. Instead of correcting it silently, she checks the order, confirms with the outgoing nurse, finds that the order was changed an hour earlier but the pump was not updated, corrects the pump with a second check, reports the near miss, and reassesses the patient.
 
 ## 17. MCQs
-**Q1 (understanding).** What does the term "high-alert medication" mean in the ISMP list?
-A. A drug that is involved in more medication errors than any other drug used in the unit.
-B. A drug that may only be given when a doctor is physically present at the patient's bedside throughout the dose.
-C. A drug with a heightened risk of significant harm when used in error, whatever the frequency of errors.
-D. A drug that requires a pump with a built-in drug library for every single administration.
+**Q1 (application).** A unit is reviewing two near misses: a low-risk medicine was frequently given late, while a rare programming error almost delivered a dangerous insulin dose. Which principle should guide high-alert classification?
+A. Classify medicines primarily by the frequency of reported errors.
+B. Use the number of staff involved in preparation to define the category.
+C. Consider the potential severity of harm if the medicine is used in error.
+D. Prioritize medicines based on whether they require electronic programming.
 **Answer: C.**
-**Why correct:** ISMP defines high-alert drugs by the severity of harm when an error occurs and says errors may or may not be more common.
-**Why not A:** ISMP says mistakes may or may not be more common with these drugs.
-**Why not B:** The list is about safeguards, not a rule about doctors being present.
-**Why not D:** A drug library is one possible safeguard, not part of the definition.
+**Why correct:** ISMP defines high-alert medicines by the potential severity of harm if an error occurs, not the frequency of errors. Both incidents deserve review, but the insulin near miss illustrates why system safeguards are important even when errors are uncommon.
+**Why not A:** Frequency helps prioritize system improvements but is not the definition of a high-alert medicine.
+**Why not B:** Preparation complexity may introduce risk, but the number of staff does not define potential harm.
+**Why not D:** Pump programming is a separate risk mechanism; high-alert medicines can be administered in several ways.
 
 **Q2 (application).** A new bag of a high-risk infusion is hung on a pump that is already running. According to the FDA page, what should the nurse do?
 A. Verify that the pump is programmed for the right dosage, rate and volume, because a new bag is one of the moments the page names.
@@ -145,16 +145,16 @@ D. Switch the pump off and on again until the alarm no longer appears, then carr
 **Why not C:** Delaying the report leaves a possibly faulty pump on a high-risk infusion.
 **Why not D:** Repeated restarts hide the fault and may repeat the error.
 
-**Q5 (understanding).** Why does ISMP caution against relying on manual independent double checks for every high-alert medication?
-A. Double checks have been proven to cause more medication errors than they prevent in intensive care units.
-B. The list only applies to oral medications, which are never suitable for a second person to check.
-C. Pump libraries make all checks by a second clinician legally unnecessary in every hospital and country.
-D. They are not always the optimal strategy and may not be practical for all drugs on the list.
+**Q5 (judgment).** A nurse is preparing a scheduled IV medication when barcode verification fails. The patient is stable, and the prescribed dose can wait briefly while the issue is clarified. A colleague offers a previously scanned wrapper from the same stock. What should the nurse do?
+A. Use the old wrapper and compare the product names before administration.
+B. Ask a colleague to confirm the order, then record that scanning succeeded.
+C. Administer after a visual label check and investigate the scanner after the round.
+D. Use the approved downtime procedure and verify the actual patient and product.
 **Answer: D.**
-**Why correct:** The ISMP list introduction says independent double checks are not always the best safeguard and may be impractical for every high-alert medicine, so organisations should consider other safeguards, such as standardisation and limiting access, chosen by local policy.
-**Why not A:** ISMP does not say that double checks cause errors.
-**Why not B:** The list includes intravenous and other routes.
-**Why not C:** Neither source says that checks become unnecessary; policy decides.
+**Why correct:** A barcode failure requires the documented downtime or escalation pathway, not a false scan. Verify the actual patient, medication and order using the authorized alternate process and document what occurred. ISMP 2026–2027 emphasizes barcode workflows and avoiding workarounds. Seek urgent clinical assistance if a delay becomes unsafe.
+**Why not A:** A saved wrapper may not identify the actual product in hand, undermining the safety check.
+**Why not B:** An independent check may be part of the downtime process, but recording a scan that did not occur creates a false record.
+**Why not C:** A visual check is not necessarily the authorized alternative; resolve the discrepancy under local policy before proceeding.
 
 **Q6 (scope).** Which decision belongs to the prescriber, with pharmacist review, rather than to the bedside nurse?
 A. Choosing the drug, concentration and dose range for a new vasoactive infusion.

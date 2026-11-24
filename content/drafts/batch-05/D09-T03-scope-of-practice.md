@@ -126,16 +126,16 @@ D. Refuse without any explanation and leave the task for the next shift, since i
 **Why not B:** Documentation does not make an unsafe act safe.
 **Why not D:** Refusing without escalation leaves the patient's need unmet.
 
-**Q2 (understanding).** Which statement about scope of practice matches the Open RN chapters and the ICN definition?
-A. Scope is set by law, regulators and professional standards, so it varies by place and you must check your own rules.
-B. Scope is identical in every country and is set by the hospital alone, so local rules are the source to check.
-C. Scope is whatever a doctor asks a nurse to do, provided that the doctor takes responsibility for the request.
-D. Scope is determined by how long a nurse has worked in the unit, regardless of education or regulation.
+**Q2 (judgment).** A family asks the bedside nurse to stop an ongoing prescribed therapy because a resuscitation-limitation order has just been entered. The order addresses CPR but does not mention the therapy. What is the appropriate response?
+A. Continue indicated care while urgently clarifying the scope of the order with the team.
+B. Pause the therapy while the family and prescriber discuss whether it is still needed.
+C. Continue the therapy until the next routine round without communicating the family's concern.
+D. Ask the family to sign an instruction authorizing the nurse to stop the therapy.
 **Answer: A.**
-**Why correct:** The sources describe law, regulator, professional standards and employer policy; the US chapters are state-specific.
-**Why not B:** Rules differ between states and countries.
-**Why not C:** Orders do not override legal scope or competence.
-**Why not D:** Experience contributes to competence but does not define legal scope.
+**Why correct:** A resuscitation limitation does not by itself authorize withdrawal of other treatment. Verify the current orders and clarify the patient's goals and concerns with the responsible team. Applicable law, authorized decisions and local policy govern treatment limitations; continue symptom assessment and support.
+**Why not B:** Pausing a prescribed therapy without an authorized plan may cause harm and exceeds what the documented CPR limitation establishes.
+**Why not C:** Continuing care is appropriate while clarification is sought, but delaying communication ignores the family's concern.
+**Why not D:** A signature alone does not establish lawful surrogate authority or an authorized clinical order.
 
 **Q3 (understanding).** Which duty is listed in the Open RN legal chapter as an example of negligent practice?
 A. Taking the patient's vital signs at the interval ordered by the plan of care and recording them on the chart.
@@ -148,16 +148,16 @@ D. Failing to tell the provider about a significant change in the patient's cond
 **Why not B:** Reporting errors supports safety culture and is not a breach.
 **Why not C:** Seeking supervision for a first-time procedure is appropriate practice.
 
-**Q4 (monitoring).** A nurse is asked to accept delegated tasks during a busy shift. Which approach fits the delegation principles quoted in the chapter?
-A. Accept any task that is offered, since the team is short-staffed and the patients still need the work to be done today.
-B. Accept tasks only with orders or protocols and competence, consult if harm is possible, and supervise delegation.
-C. Delegate all complex tasks to the least experienced staff so that registered nurses can focus on paperwork.
-D. Accept the task whenever the unit manager is present, whatever your own competence or training may be.
+**Q4 (prioritization).** Two unstable ICU patients require simultaneous time-critical care. A third patient is due a high-risk infusion check that requires a second competent nurse. The assigned nurse cannot safely complete all three tasks at once. What is the best approach?
+A. Complete the infusion check without a second nurse to avoid a delay, then report the staffing issue.
+B. Escalate competing needs, obtain competent help and explicitly confirm task responsibility.
+C. Ask an available staff member to assume the infusion check without checking their competence.
+D. Finish the most familiar task first and hand over the remaining work at the next round.
 **Answer: B.**
-**Why correct:** The Wisconsin example is jurisdiction-specific. NCSBN/ANA guidance applies subject to the nurse practice act; check the task, circumstances, competence, instructions and appropriate supervision. The delegator remains accountable for the delegation decision and follow-up, while the recipient is responsible for accepting and carrying out the task safely.
-**Why not A:** Staffing pressure does not change scope.
-**Why not C:** Delegation must match training and demonstrated ability.
-**Why not D:** A manager's presence does not replace competence.
+**Why correct:** Escalate immediately to the charge nurse or emergency team as appropriate. Match delegated tasks to demonstrated competence, specify responsibility and supervision, and ensure unstable patients are not left without appropriate coverage. Required verification and emergency care follow the authorized local pathway.
+**Why not A:** Workload does not authorize bypassing required independent verification or create evidence that a check occurred.
+**Why not C:** Availability does not establish competence; delegation requires appropriate authorization and supervision.
+**Why not D:** Personal familiarity is not a reliable measure of clinical urgency; waiting may leave deterioration or safety-critical tasks unaddressed.
 
 **Q5 (safety).** A student nurse asks why legal reviews of negligence place so much weight on documentation. Which explanation is correct?
 A. Documentation is needed for billing and has no bearing on how care is judged when a case is reviewed in law.
