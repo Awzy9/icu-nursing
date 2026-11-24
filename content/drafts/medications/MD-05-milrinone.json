@@ -106,6 +106,13 @@
           "sources": [
             "L-MILRINONE"
           ]
+        },
+        {
+          "text": "Milrinone can increase ventricular response in patients with inadequately controlled atrial flutter or fibrillation. Report new rapid ventricular rates and worsening perfusion. In excessive hypotension, urgently follow the authorised response and clinician-directed therapy changes.",
+          "support": "partial",
+          "sources": [
+            "L-MILRINONE"
+          ]
         }
       ]
     },
@@ -139,6 +146,13 @@
           "sources": [
             "L-MILRINONE",
             "S-DOREMI-2021"
+          ]
+        },
+        {
+          "text": "Severe obstructive aortic or pulmonary valve disease requires specialist assessment; milrinone is not a substitute for relief of mechanical obstruction. It may aggravate hypertrophic subaortic outflow obstruction.",
+          "support": "partial",
+          "sources": [
+            "L-MILRINONE"
           ]
         }
       ]
@@ -259,6 +273,15 @@
     {
       "kind": "assess",
       "text": "Report suspected low filling pressure, worsening hypotension or renal deterioration promptly; reassess perfusion and ECG with the team.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MILRINONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag known outflow obstruction or uncontrolled atrial flutter/fibrillation; assess rhythm, blood pressure and perfusion and escalate concerning changes.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -140,6 +140,20 @@
           "sources": [
             "S-SSC-2026"
           ]
+        },
+        {
+          "text": "Review recent or concurrent monoamine oxidase inhibitors (including linezolid) and tricyclic antidepressants with the pharmacist or prescriber: the registered label warns of severe and prolonged hypertension. Monitor pressure closely when such coadministration is necessary.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Review glucose trends because norepinephrine can reduce insulin sensitivity. Concurrent halogenated anaesthetics may increase the risk of dangerous ventricular rhythms; communicate exposure and maintain rhythm surveillance with the treating team.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
         }
       ]
     },
@@ -311,6 +325,15 @@
     {
       "kind": "assess",
       "text": "Assess perfusion trends, including urine output, skin findings and ordered lactate results; escalate persistent hypoperfusion even if the measured pressure has improved.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NOREPINEPHRINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag recent linezolid, other monoamine oxidase inhibitors, tricyclic antidepressants or halogenated anaesthetic exposure; review blood pressure, rhythm and ordered glucose trends.",
       "critical": true,
       "support": "partial",
       "sources": [

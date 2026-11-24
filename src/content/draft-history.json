@@ -6682,6 +6682,22 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1ecb4c1bc878d824",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-02": [
@@ -6800,6 +6816,24 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0204f2c5b6a07e81",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "S-ADRENALIN-IM-2025",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-RCUK-SPECIAL-2025",
+     "S-SSC-2026",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-03": [
@@ -6872,6 +6906,21 @@
    },
    {
     "hash": "e86552c4f7723451",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VASOPRESSIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a62fe68794e3b800",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -6970,6 +7019,22 @@
    },
    {
     "hash": "da3950d675852c80",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "S-AHRQ-TS",
+     "S-DOREMI-2021",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d2bb24c64a689945",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -7083,6 +7148,22 @@
    },
    {
     "hash": "91f34e137a58aca4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MILRINONE",
+     "S-AHRQ-TS",
+     "S-DOREMI-2021",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a850ac9b86a97979",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

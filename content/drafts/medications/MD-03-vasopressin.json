@@ -94,6 +94,13 @@
           "sources": [
             "L-VASOPRESSIN"
           ]
+        },
+        {
+          "text": "Catecholamines can have additive pressor effects with vasopressin. Indomethacin may prolong its effect, and medicines that disturb water balance may change the pressor response. Review the medication history and communicate unexpected pressure or fluid-balance changes.",
+          "support": "partial",
+          "sources": [
+            "L-VASOPRESSIN"
+          ]
         }
       ]
     },
@@ -116,6 +123,13 @@
         },
         {
           "text": "The registered product lists ischaemic complications affecting the heart, bowel, skin and extremities, as well as low serum sodium and rhythm disturbances.",
+          "support": "partial",
+          "sources": [
+            "L-VASOPRESSIN"
+          ]
+        },
+        {
+          "text": "Vasostrict formulations differ in excipients. Known vasopressin hypersensitivity precludes use; the multidose product also carries a chlorobutanol hypersensitivity contraindication. Verify the exact presentation and allergy history with pharmacy.",
           "support": "partial",
           "sources": [
             "L-VASOPRESSIN"
@@ -246,6 +260,15 @@
     {
       "kind": "assess",
       "text": "After discontinuation, urgently report abrupt excessive watery urine, rising sodium or worsening fluid balance; monitor under the prescribed plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-VASOPRESSIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm product presentation, excipient allergy and concurrent vasoactive medicines; escalate unexpected pressure, perfusion or fluid-balance changes.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -145,6 +145,13 @@
           "sources": [
             "S-DOREMI-2021"
           ]
+        },
+        {
+          "text": "The registered product is contraindicated in idiopathic hypertrophic subaortic stenosis and known hypersensitivity to the solution. Flag documented dynamic outflow obstruction or suspected allergy for specialist review before administration; do not use a generic shock indication to override this product warning.",
+          "support": "partial",
+          "sources": [
+            "L-DOBUTAMINE"
+          ]
         }
       ]
     },
@@ -260,6 +267,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Check for documented hypertrophic subaortic stenosis or product hypersensitivity and clarify concerns with the treating team before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-DOBUTAMINE"
+      ]
     }
   ],
   "gaps": [

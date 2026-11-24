@@ -171,6 +171,13 @@
             "S-RCUK-SPECIAL-2025",
             "S-ADRENALIN-IM-2025"
           ]
+        },
+        {
+          "text": "The registered label lists no contraindications. Its interaction warnings include altered pressor responses with other cardiovascular medicines and increased arrhythmia risk with agents such as beta blockers, cardiac glycosides and some anaesthetics. Review these with the team without delaying time-critical authorised anaphylaxis treatment.",
+          "support": "partial",
+          "sources": [
+            "L-EPINEPHRINE"
+          ]
         }
       ]
     },
@@ -209,6 +216,13 @@
           "support": "sourced",
           "sources": [
             "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "Rare serious soft-tissue infection has been reported after thigh injection. New progressive pain, swelling, redness or systemic deterioration after injection needs urgent clinical assessment; this warning does not justify delaying emergency anaphylaxis treatment.",
+          "support": "partial",
+          "sources": [
+            "L-EPINEPHRINE"
           ]
         }
       ]
@@ -294,6 +308,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "During ongoing IV therapy review medicines that may alter pressor response or rhythm risk; escalate new arrhythmia or unexpectedly severe hypertension.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-EPINEPHRINE"
+      ]
     }
   ],
   "gaps": [
