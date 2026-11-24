@@ -189,6 +189,19 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "93d75a7833721dde",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CDC-IC",
+     "S-CDC-ISOLATION-2007",
+     "S-WHO-HH-SUMMARY-2013"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D06-T05": [
@@ -718,6 +731,24 @@
     ],
     "gaps": 0,
     "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "1c9b556006ba4c2b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-ATS-NIRS-2026",
+     "S-BTS-OXYGEN-2017",
+     "S-ERC-ALS-2025",
+     "S-FDA-OXIMETER-BASICS",
+     "S-NICE-CG103",
+     "S-RCP-NEWS2",
+     "S-UKROX-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
     "issues": 0
    }
   ],
@@ -2176,6 +2207,22 @@
     ],
     "gaps": 0,
     "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "6cb07233a05e5055",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-BTS-OXYGEN-2017",
+     "S-ERC-ALS-2025",
+     "S-NICE-NG253",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
     "issues": 0
    }
   ],
