@@ -69,6 +69,11 @@
       "id": "S-ACC-CS-JACC-2025",
       "read": "partial",
       "use": "Indexed original JACC 2025 consensus passages: serial reassessment, congestion, end-organ injury and interdisciplinary escalation"
+    },
+    {
+      "id": "S-SCAI-SHOCK-2026",
+      "read": "partial",
+      "use": "SCAI official 6 November 2026 consensus summary checked 24 November; preserved-pressure hypoperfusion, multi-domain reassessment, stage trajectory and treatment intensity distinction. Primary publisher HTML blocked; full classification not reviewed."
     }
   ],
   "required_sources": [
@@ -80,12 +85,14 @@
     "Original ACC 2025 JACC consensus selected passages checked alongside society summary and ESICM abstract; full evidence grading and patient selection criteria remain unverified.",
     "The patient's prescribed inotrope is intentionally unspecified. Dobutamine and milrinone labels cannot be treated as interchangeable, and the milrinone label does not recommend use during acute myocardial infarction.",
     "Arrhythmia response, inotrope changes and MCS nursing monitoring require local emergency policy and qualified cardiology/critical-care staff validation.",
-    "The 2014 ESICM consensus is retained as historical context, not current definitive shock guidance."
+    "The 2014 ESICM consensus is retained as historical context, not current definitive shock guidance.",
+    "SCAI November 2026 official summary reviewed; primary article and formal staging criteria, rights and local implementation remain unverified. No formal scoring or stage thresholds taught."
   ],
   "permissions": [
     "Original authored scenario language; current ACC and ESICM citations are paraphrased from public summaries only. Do not reproduce copyrighted figures or guideline tables.",
     "No OpenStax excerpt or licensed derivative material is used in the revised scenario. The previous non-commercial OpenStax cross-check has been removed from this case's supporting citations.",
-    "US manufacturer labels are cited for monitoring warnings, not generalized as clinical treatment instructions."
+    "US manufacturer labels are cited for monitoring warnings, not generalized as clinical treatment instructions.",
+    "SCAI 2026 summary cited only; no stage tables, checklist or figures reproduced."
   ],
   "setting": "A fictional adult in a cardiac intensive care unit one day after a myocardial infarction. A specialist has prescribed an inotrope; the drug is not specified here and this scenario does not teach agent selection.",
   "steps": [
@@ -257,13 +264,14 @@
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "A better pressure reading alone does not prove perfusion has recovered. The ACC shock summary emphasizes repeated assessment and specialist-team decisions for escalation. Bedside nurses monitor for renewed hypoperfusion and any access/device complications under unit policy, without undertaking device operation outside training. The 2025 ACC guidance also identifies laboratory markers of metabolic acidosis and organ injury as complementary assessment findings. Review ordered results and communicate trends; do not independently select an inotrope or circulatory-support device. Report renewed pulmonary edema, escalating oxygen requirements, persistent congestion or worsening organ perfusion promptly. These may prompt specialist discussion about escalation or reconfiguration of mechanical support, not an automatic device change. For patients already on support, report access-site bleeding, new distal perfusion changes and device alarms to the trained team.",
+          "feedback": "A better pressure reading alone does not prove perfusion has recovered. The ACC shock summary emphasizes repeated assessment and specialist-team decisions for escalation. Bedside nurses monitor for renewed hypoperfusion and any access/device complications under unit policy, without undertaking device operation outside training. The 2025 ACC guidance also identifies laboratory markers of metabolic acidosis and organ injury as complementary assessment findings. Review ordered results and communicate trends; do not independently select an inotrope or circulatory-support device. Report renewed pulmonary edema, escalating oxygen requirements, persistent congestion or worsening organ perfusion promptly. These may prompt specialist discussion about escalation or reconfiguration of mechanical support, not an automatic device change. For patients already on support, report access-site bleeding, new distal perfusion changes and device alarms to the trained team. In cardiogenic shock, the November 2026 SCAI consensus summary stresses that a preserved pressure does not exclude inadequate tissue perfusion. Report changes in bedside perfusion, ordered biochemical markers, haemodynamic measurements and support requirements together. A device or vasopressor requirement alone does not determine shock stage. Communicate the current stage if assigned by the treating team and whether the patient is improving, unchanged or deteriorating; seek urgent specialist reassessment for renewed hypoperfusion. Formal staging and treatment decisions remain clinician-led.",
           "consequence": "Persistent organ-perfusion concerns are made explicit and the specialist team can reassess the need for additional support.",
           "support": "partial",
           "sources": [
             "S-ACC-CS-2025",
             "S-ESICM-SHOCK-2025",
-            "S-ACC-CS-JACC-2025"
+            "S-ACC-CS-JACC-2025",
+            "S-SCAI-SHOCK-2026"
           ]
         },
         {
@@ -299,7 +307,8 @@
       "Cardiogenic shock requires attention to organ perfusion and congestion, not a blood-pressure reading in isolation; activate the specialist emergency team without delay.",
       "New ventricular rhythm changes with worsening mentation or hypotension demand pulse/airway/perfusion assessment and trained emergency support, not merely silencing the monitor.",
       "The medication administered is prescribed by the team: labeling precautions for dobutamine or milrinone are not general drug-selection recommendations, especially after acute myocardial infarction.",
-      "After apparent stabilization, monitor perfusion, congestion, urine output and ordered markers of organ injury; report the trajectory and coordinate support-device care with trained staff."
+      "After apparent stabilization, monitor perfusion, congestion, urine output and ordered markers of organ injury; report the trajectory and coordinate support-device care with trained staff.",
+      "In cardiogenic shock, the November 2026 SCAI consensus summary stresses that a preserved pressure does not exclude inadequate tissue perfusion. Report changes in bedside perfusion, ordered biochemical markers, haemodynamic measurements and support requirements together. A device or vasopressor requirement alone does not determine shock stage. Communicate the current stage if assigned by the treating team and whether the patient is improving, unchanged or deteriorating; seek urgent specialist reassessment for renewed hypoperfusion. Formal staging and treatment decisions remain clinician-led."
     ],
     "links": [
       {

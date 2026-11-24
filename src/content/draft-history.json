@@ -711,6 +711,21 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "c8b4204d7f9e8f4e",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SCAI-SHOCK-2026",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D02-T14": [
@@ -10256,6 +10271,24 @@
      "S-ESICM-SHOCK-2025"
     ],
     "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "038785eebc3039fd",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-ACC-CS-2025",
+     "S-ACC-CS-JACC-2025",
+     "S-AHRQ-TS",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SCAI-SHOCK-2026"
+    ],
+    "gaps": 6,
     "required_sources": 2,
     "issues": 0
    }

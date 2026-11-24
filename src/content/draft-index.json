@@ -266,6 +266,11 @@
      "verified": "2026-11-16"
     },
     {
+     "id": "S-SCAI-SHOCK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SSC-2021",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -279,7 +284,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "0983697c33a8ec74"
+   "hash": "c8b4204d7f9e8f4e"
   },
   {
    "key": "D02-T14",
@@ -4609,12 +4614,17 @@
      "id": "S-ESICM-SHOCK-2025",
      "licence_class": "RED",
      "verified": "2026-11-16"
+    },
+    {
+     "id": "S-SCAI-SHOCK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 6,
    "required_sources": 2,
-   "hash": "ba90483096a3b32a"
+   "hash": "038785eebc3039fd"
   },
   {
    "key": "SC-03",
