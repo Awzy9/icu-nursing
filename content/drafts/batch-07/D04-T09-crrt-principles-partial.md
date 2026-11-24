@@ -84,7 +84,7 @@ Bleeding or oozing at the catheter site or elsewhere; a fall in platelet count (
 | Decide on RRT, modality, timing, dose, anticoagulation, fluids, buffer, catheter insertion and stopping; manage HIT | Prescriber decision (nephrologist or intensivist; pharmacist for drugs) |
 
 ## 12. Escalation criteria
-Escalate for bleeding, haemodynamic instability, suspected HIT, arrhythmia, abnormal electrolytes, catheter problems, repeated downtime, or any discrepancy between the prescription and the delivered treatment.
+Activate emergency help for major bleeding, haemodynamic instability, dangerous arrhythmia or suspected unsafe circuit failure. Assess the patient before investigating the equipment. Do not bypass protective alarms or assume blood must always be returned; only return circuit blood when safe and authorised by the device-specific and local pathway. Escalate suspected HIT, electrolyte abnormalities, access problems, repeated downtime and discrepancies between prescribed and delivered treatment. For citrate anticoagulation, report concerning calcium and acid-base trends promptly under the prescribed monitoring protocol. Changes to prescribed targets require authorisation; protocol-permitted adjustments are distinct from rewriting the prescription.
 SBAR — **S:** bed X, CRRT stopped three times in the last four hours and the net fluid balance is behind the prescription. **B:** acute kidney injury in septic shock; prescription written this morning. **A:** under-delivery of the prescribed therapy. **R:** please review the prescription and the access and tell me whether to change the plan; the delivered dose needs to be reassessed.
 
 ## 13. Potential complications

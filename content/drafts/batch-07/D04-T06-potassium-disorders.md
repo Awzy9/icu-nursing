@@ -107,7 +107,7 @@ Potassium of 6.5 mmol/L or more; any ECG change of hyperkalaemia (widened QRS, b
 | Diagnose the cause; choose treatments and doses; decide on dialysis; stop or change potassium-raising drugs; decide on referral | Prescriber decision (pharmacist for drug review) |
 
 ## 12. Escalation criteria
-Escalate immediately for severe hyperkalaemia, ECG changes, arrhythmia, bradycardia, deterioration, failure to respond to treatment, or a need for dialysis.
+Escalate immediately for severe hyperkalaemia, ECG changes, arrhythmia, bradycardia, deterioration, failure to respond to treatment or urgent dialysis assessment. Activate emergency response for instability without waiting for a repeat potassium or a numeric threshold. Obtain a diagnostic ECG and continuous monitoring as indicated by the local pathway; the two are different assessments. The July 2026 UKKA detailed and summary ECG threshold discrepancy remains unresolved here; follow the authorised local pathway and do not use it to delay escalation. After prescribed insulin-glucose treatment, monitor glucose and potassium for delayed hypoglycaemia and rebound under the protocol (see MD-15).
 SBAR — **S:** bed X, potassium 6.8 mmol/L with a widening QRS and a heart rate of 44. **B:** acute kidney injury, on an ACE inhibitor, oliguric; sample was not haemolysed. **A:** severe hyperkalaemia with ECG changes and bradycardia. **R:** please attend now; I have connected the monitor, obtained a 12-lead ECG and prepared for calcium and insulin and glucose per your orders; please decide on dialysis.
 
 ## 13. Potential complications

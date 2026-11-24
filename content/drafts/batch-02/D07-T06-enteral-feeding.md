@@ -82,7 +82,7 @@ Vomiting; new abdominal distension or pain; rigid abdomen; large or bile-stained
 | Starting or changing the feed, rate, route, targets, post-pyloric access, parenteral nutrition | Prescriber / dietitian decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: suspected aspiration; sudden abdominal distension, rigidity or pain; haemodynamic deterioration while feeding; persistent high aspirates or vomiting; tube displacement or blockage not resolved by policy; severe diarrhoea.
+Escalate immediately for suspected aspiration, sudden abdominal distension, rigidity or pain, haemodynamic deterioration while feeding, persistent high aspirates or vomiting, tube displacement or unresolved blockage, or severe diarrhoea. Pause delivery and activate emergency help if breathing or circulation is compromised. Withhold feed, medicines and flushes when tube position is not confirmed; follow the authorised confirmation pathway. If feeding is interrupted in a patient receiving insulin, check glucose and urgently coordinate an indication-specific insulin and nutrition plan. Do not use the unconfirmed tube merely to maintain carbohydrate delivery.
 SBAR — **S:** bed X, vomited twice and abdomen is distended while on feeds. **B:** day 3, ventilated, vasopressor dose rising, aspirates 400 mL over 4 hours. **A:** feeding intolerance, possible gut hypoperfusion. **R:** I have paused the feed; please review now and advise on feeding, tests and treatment.
 
 ## 13. Potential complications

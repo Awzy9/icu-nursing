@@ -81,7 +81,7 @@ Blood visible at a connection or on the bed; line disconnected or tubing separat
 | Deciding to insert, replace, move or remove the catheter; choosing the site; setting pressure targets; treating limb ischaemia | Prescriber / medical decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: bleeding or disconnection (and call for help while applying pressure), cold or ischaemic limb, loss or implausible waveform that cannot be corrected, signs of infection, suspected injection into the arterial line, or a pressure change with clinical deterioration.
+Escalate immediately for bleeding or disconnection (apply pressure and call for help), a cold or ischaemic limb, suspected injection into the arterial line, or pressure or waveform changes accompanied by clinical deterioration. Assess the patient and perfusion first. If the reading is implausible, arrange a trained check of transducer level, zero reference and waveform quality under the device instructions and unit policy; correlate with an alternative pressure measurement when feasible. Do not delay emergency help for an unstable patient while troubleshooting and do not independently inject medicines through the pressure-monitoring circuit. Report persistent waveform problems and signs of infection.
 SBAR — **S:** bed X, left radial arterial line, hand is cold and pale with delayed capillary refill. **B:** line day 4, on vasopressors, flush system working, waveform present. **A:** possible limb ischaemia from the catheter. **R:** please review now; I am keeping the arm visible and not flushing the line; do you want it removed?
 
 ## 13. Potential complications

@@ -97,7 +97,7 @@ New oozing from lines, wounds or mucosa; unexplained bruising; blood in urine, s
 | Validate results, set reference intervals and critical limits, run quality control | Laboratory |
 
 ## 12. Escalation criteria
-Escalate immediately for active bleeding, haemodynamic change suggesting bleeding, critical results as defined locally, a rapid worsening trend, suspected HIT, or any problem with the specimen that could delay care.
+Escalate immediately for active bleeding, haemodynamic change suggesting bleeding, critical results as defined locally, a rapid worsening trend or suspected HIT. If a specimen may be contaminated or underfilled, inform the laboratory and arrange repeat sampling under policy, without delaying help for active bleeding. Do not diagnose or exclude disseminated intravascular coagulation using a single result. The ISTH SSC 2025 communication proposes updated scoring and disease-specific early criteria; do not use the historical overt-DIC score as a universal current rule. Anticoagulant adjustments require authorised orders or protocol.
 SBAR — **S:** bed X, oozing from the central line site and a new bruise; the morning aPTT is much longer than the previous value. **B:** on an unfractionated heparin infusion since yesterday; platelets were normal. **A:** possible over-anticoagulation or another cause of bleeding. **R:** please review now; please advise on the infusion and further tests; the sample was taken correctly and within the time limit.
 
 ## 13. Potential complications

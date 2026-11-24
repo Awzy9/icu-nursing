@@ -79,7 +79,7 @@ During an SBT: increasing respiratory rate or laboured breathing, falling SpO₂
 | Decide to liberate or extubate; choose strategy, tube removal and post-extubation support; order sedation changes | Prescriber decision (physician or credentialed provider) |
 
 ## 12. Escalation criteria
-Escalate immediately if the patient shows signs of intolerance, distress, desaturation, haemodynamic change or an arrhythmia during the SBT, or if the trial cannot be done as planned.
+Escalate immediately for intolerance, distress, desaturation, haemodynamic change or arrhythmia during the SBT. End an intolerable trial and restore prescribed support under the authorised protocol; provide emergency oxygenation and ventilation as needed. The AARC 2024 conditional suggestion against raising inspired oxygen during the trial is intended to avoid masking intolerance, not to withhold rescue oxygen. Passing an SBT does not alone establish readiness for extubation: the team also evaluates airway protection, secretion clearance and the post-extubation support plan.
 SBAR — **S:** bed X, ventilated patient 15 minutes into a spontaneous breathing trial with a rising respiratory rate and falling SpO₂. **B:** passed the morning screen; sedation interruption completed an hour ago. **A:** possible SBT intolerance. **R:** please come to the bedside now; I am staying with the patient and the respiratory therapist is ready to return to support; I need a decision about ending the trial.
 
 ## 13. Potential complications

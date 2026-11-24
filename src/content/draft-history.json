@@ -726,6 +726,21 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "60f26b3a55fc6ee8",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ADA-HOSP-2026",
+     "S-ESICM-EEN-2017",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T12": [
@@ -886,6 +901,22 @@
    {
     "hash": "0924f85aa1aec696",
     "recorded": "2026-11-16",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-ERC-PRC-2025",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "1bde61acaf44b809",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-CDC-BSI-2011",
@@ -1285,6 +1316,20 @@
     "gaps": 0,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "1df67261167b816e",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-FDA-COI-2024",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "D01-T17": [
@@ -1317,6 +1362,21 @@
    {
     "hash": "0416333470df778a",
     "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-SBT",
+     "S-ATS-CHEST-2017",
+     "S-ATS-NIRS-2026",
+     "S-PERIEXT-2026",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "4b7029aed308d0a5",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AARC-SBT",
@@ -1453,6 +1513,20 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "2b5967f620eeba20",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NHS-SPS-HYPO-2024",
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T08": [
@@ -1483,6 +1557,21 @@
    {
     "hash": "7ebc115f22524890",
     "recorded": "2026-11-21",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AAFP-ACID2025",
+     "S-AARC-BGA-2013",
+     "S-ATS-ABG",
+     "S-MERCK-ACIDBASE",
+     "S-OPENRN-FUND-CH15"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "4d49d7a820f0faaf",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AAFP-ACID2025",
@@ -1555,6 +1644,18 @@
    {
     "hash": "02924562438aceb6",
     "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "7304861d1fe0747c",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "N-LHSC-CRRT-PRINCIPLES",
@@ -1810,6 +1911,19 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "9a0fe61be63264f9",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-BTF-DC-2020",
+     "S-BTF-PTBI-2026",
+     "S-BTF-TBI-4TH"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D08-T02": [
@@ -1846,6 +1960,22 @@
    {
     "hash": "2b19668df19f3299",
     "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ARUP-ANTICOAG",
+     "S-ARUP-DIC",
+     "S-BSH-HIT-2023",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-PHARM-CH",
+     "S-UHS-COAG"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "9ffea32b7f2a6470",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-ARUP-ANTICOAG",

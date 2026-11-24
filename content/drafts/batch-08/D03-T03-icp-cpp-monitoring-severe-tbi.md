@@ -89,7 +89,7 @@ Falling GCS or a change in pupils or limb movement (unit-defined); sustained ris
 | Decide on ICP monitor placement; set ICP, CPP and blood pressure targets; order hyperosmolar therapy, drainage, sedation, ventilation changes or surgery; interpret imaging | Prescriber decision (neurosurgery, neurocritical care and intensive care teams) |
 
 ## 12. Escalation criteria
-Escalate immediately for neurological deterioration, a sustained ICP above the ordered limit, CPP outside the ordered range, hypotension, loss of monitoring, seizures, or any drain problem.
+Escalate immediately for neurological deterioration, a sustained ICP above the ordered limit, CPP outside the ordered range, hypotension, loss of monitoring, seizures or any drain problem. Do not wait for an ICP threshold or a repeat observation when the patient deteriorates. The Brain Trauma Foundation fourth-edition thresholds in this topic concern adult severe traumatic brain injury; they are not universal targets for every neurological condition. Verify the ordered target, patient position and monitor or drain reference level with trained staff; do not independently alter drain height or drainage settings.
 SBAR — **S:** bed X, severe TBI patient with ICP rising over the last 20 minutes and GCS falling. **B:** day 2 after injury; ICP monitor in place; ordered CPP range 60 to 70. **A:** deteriorating neurology with rising ICP and falling CPP. **R:** please come now; I am checking the airway, ventilation, blood pressure and monitor trace and need orders.
 
 ## 13. Potential complications

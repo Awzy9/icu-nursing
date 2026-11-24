@@ -89,8 +89,8 @@ Critical values per the laboratory; **normal pH accompanied by markedly abnormal
 | Diagnose the disorder; order treatment; adjust ventilator settings; give buffering or other drugs; decide on dialysis | Prescriber decision (respiratory therapist for ventilator operation) |
 
 ## 12. Escalation criteria
-Escalate immediately for critical ABG values, a worsening trend, a change in consciousness, respiratory distress, haemodynamic instability, or a result that does not match the patient.
-SBAR — **S:** bed X, ABG shows pH 7.21, PaCO₂ 62, HCO₃ 24; patient drowsy, respiratory rate 8. **B:** on opioid infusion, post-operative day 1. **A:** acute respiratory acidosis (hypoventilation). **R:** please attend now; I am maintaining airway and breathing support and need an order to review the sedation or opioid and the ventilation plan.
+Escalate immediately for critical ABG values, worsening trends, altered consciousness, respiratory distress or haemodynamic instability. Assess and support airway and ventilation in parallel with summoning emergency help for inadequate breathing; do not wait for a repeat gas. If a result is unexpected, check the specimen and measurement context and arrange confirmation without delaying care. Compare the bicarbonate and carbon dioxide with the expected compensation; a near-normal pH does not exclude a mixed disorder.
+SBAR — **S:** bed X, ABG shows pH 7.26, PaCO₂ 62, HCO₃ 27; patient drowsy, respiratory rate 8. **B:** on opioid infusion, post-operative day 1. **A:** acute respiratory acidosis (hypoventilation). **R:** please attend now; I am maintaining airway and breathing support and need an order to review the sedation or opioid and the ventilation plan.
 
 ## 13. Potential complications
 Respiratory failure, arrhythmia, depressed consciousness, hypotension and circulatory collapse (as described for the disorders in the textbook); inappropriate treatment from an unacceptable specimen or incorrect reporting (AARC); infection risk to the sample handler (AARC).
