@@ -49,17 +49,26 @@
       "id": "S-PUMA-2022",
       "read": "partial",
       "use": "Indexed primary consensus recommendations on sustained exhaled CO2 and reconfirmation."
+    },
+    {
+      "id": "S-ISCCM-WEAN-2024",
+      "read": "partial",
+      "use": "ISCCM 2024 weaning position statement: unplanned extubation and reintubation indications, selected recommendation text"
+    },
+    {
+      "id": "S-PUMA-EXTUBATION-2026",
+      "read": "partial",
+      "use": "PUMA 2026 tracheal extubation guidance: unplanned extubation and observation for deterioration, selected indexed text"
     }
   ],
   "required_sources": [
-    "A national guideline or professional standard on unplanned extubation and its prevention",
-    "Unit procedure for emergency airway support"
+    "Unit procedure for emergency airway support, unplanned-extubation prevention and competency; full independent appraisal of the cited statements"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "The first-line airway manoeuvres are not described by any source read; the scenario relies on 'call for help and provide oxygen and airway support per unit protocol'.",
-    "Reintubation criteria and technique are medical decisions and are not written."
+    "Selected ISCCM 2024 and PUMA 2026 recommendations now supplement recognition, deterioration and escalation; device-specific rescue maneuvers still require local instruction.",
+    "Reintubation warning signs are described at teaching level; indications in an individual patient, technique and rescue procedures remain clinician decisions."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -95,12 +104,13 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "Suspected displacement and accidental extubation call for immediate escalation, and the nurse stays with the patient.",
+          "feedback": "Suspected displacement and accidental extubation call for immediate escalation, and the nurse stays with the patient. A displaced tube may no longer provide effective ventilation. Assess the patient's breathing and oxygenation, summon the airway team immediately and follow the emergency pathway; do not blindly advance the tube.",
           "consequence": "Help arrives while you support the airway and the oxygen supply.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA",
-            "S-ERC-ALS-2025"
+            "S-ERC-ALS-2025",
+            "S-PUMA-EXTUBATION-2026"
           ]
         },
         {
@@ -157,12 +167,14 @@
           "points": 2,
           "next": 3,
           "scope": "monitoring",
-          "feedback": "Oxygen delivery alone may not correct inadequate ventilation after accidental extubation. Prompt assessment and appropriate ventilation support within training and the local emergency pathway take priority while the responsible airway clinicians arrive.",
+          "feedback": "Oxygen delivery alone may not correct inadequate ventilation after accidental extubation. Prompt assessment and appropriate ventilation support within training and the local emergency pathway take priority while the responsible airway clinicians arrive. Report airway obstruction, inability to manage secretions, respiratory exhaustion, reduced consciousness or arrest immediately; these are indications for urgent trained-team assessment for reintubation in the ISCCM statement. An apparently acceptable saturation must not delay assessment or rescue if ventilation is failing.",
           "consequence": "The team arrives to a patient who is being supported and to equipment that is ready.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA",
-            "S-ERC-ALS-2025"
+            "S-ERC-ALS-2025",
+            "S-ISCCM-WEAN-2024",
+            "S-PUMA-EXTUBATION-2026"
           ]
         },
         {
@@ -219,13 +231,14 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Sustained exhaled carbon dioxide on waveform capnography is central to excluding oesophageal intubation. Reassess if the trace changes, the tube moves, or oxygenation deteriorates. An absent or lost reliable trace requires immediate airway-team assessment and emergency support; a depth mark or satisfactory saturation alone cannot confirm placement. Review contributing factors without blame.",
+          "feedback": "Sustained exhaled carbon dioxide on waveform capnography is central to excluding oesophageal intubation. Reassess if the trace changes, the tube moves, or oxygenation deteriorates. An absent or lost reliable trace requires immediate airway-team assessment and emergency support; a depth mark or satisfactory saturation alone cannot confirm placement. Review contributing factors without blame. After stabilization, review documented tube position, securement and factors such as agitation or movement; prevention and monitoring are multidisciplinary.",
           "consequence": "The team reviews the sedation plan and the securement and the risk of a repeat falls.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
             "S-AARC-PVA",
-            "S-PUMA-2022"
+            "S-PUMA-2022",
+            "S-PUMA-EXTUBATION-2026"
           ]
         },
         {
@@ -260,7 +273,8 @@
       "Suspected displacement is an emergency: call for help and stay with the patient.",
       "Assess effective breathing as well as oxygenation; provide trained emergency ventilation support if indicated under the local pathway while the airway team responds.",
       "Report the event and review agitation, sedation and securement.",
-      "After reintubation, confirm the team's placement assessment and sustained waveform capnography; escalate loss of a reliable trace or renewed deterioration promptly."
+      "After reintubation, confirm the team's placement assessment and sustained waveform capnography; escalate loss of a reliable trace or renewed deterioration promptly.",
+      "Do not delay airway-team review for obstruction, exhaustion, secretion burden or reduced consciousness after unplanned extubation."
     ],
     "links": [
       {

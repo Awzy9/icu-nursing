@@ -54,16 +54,21 @@
       "id": "S-NHSE-NGT-ENDURING",
       "read": "partial",
       "use": "Indexed NHS enduring standards and previously mapped SK-11 safety principles; direct current page retrieval limited."
+    },
+    {
+      "id": "S-BTS-ASPIRATION-2023",
+      "read": "partial",
+      "use": "BTS 2023 aspiration pneumonia clinical statement: distinction from chemical pneumonitis and clinical assessment; indexed excerpts only"
     }
   ],
   "required_sources": [
-    "Aspiration management guideline (airway clearing, suction, radiology) read in full",
+    "Full aspiration guideline and local airway-clearance, suction and imaging pathway appraisal (BTS 2023 distinction between pneumonitis and pneumonia now linked)",
     "Unit enteral feeding and tube-position policy"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "First-line airway management after aspiration is not drawn from a source read and is not written.",
+    "BTS 2023 selected aspiration statement supports distinguishing chemical injury from infection; first-line device-specific airway clearance and rescue techniques still need local guidance.",
     "The approved position check differs by country and product; the scenario names no pH threshold.",
     "Case does not teach suctioning, positive-pressure rescue, intubation, bronchoscopy, antibiotic decisions or a validated diagnostic pathway for aspiration; obtain current locally approved airway response and enteral-feeding incident policy."
   ],
@@ -100,12 +105,13 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "Acute coughing, increased work of breathing and a falling saturation during feeding require prompt airway/respiratory assessment and urgent help while the feed is stopped. Misplaced-tube guidance supports withholding use until reassessment, but it does not by itself establish an aspiration diagnosis or prescribe rescue ventilation, suction or positioning for every patient.",
+          "feedback": "Acute coughing, increased work of breathing and a falling saturation during feeding require prompt airway/respiratory assessment and urgent help while the feed is stopped. Misplaced-tube guidance supports withholding use until reassessment, but it does not by itself establish an aspiration diagnosis or prescribe rescue ventilation, suction or positioning for every patient. A witnessed aspiration can cause chemical lung injury, infection or airway obstruction. Assess and support breathing urgently; report visible airway contamination and involve appropriately trained staff for clearance according to the emergency airway pathway.",
           "consequence": "The feed stops and urgent respiratory help is requested while the patient is assessed and supported under local protocol.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016",
-            "S-SHEA-VAP-2022"
+            "S-SHEA-VAP-2022",
+            "S-BTS-ASPIRATION-2023"
           ]
         },
         {
@@ -225,12 +231,13 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Precise documentation enables the clinical team to assess the event and determine whether it meets the local incident-reporting criteria. A possible aspiration is not automatically proof the tube was misplaced.",
+          "feedback": "Precise documentation enables the clinical team to assess the event and determine whether it meets the local incident-reporting criteria. A possible aspiration is not automatically proof the tube was misplaced. Aspiration pneumonitis is not automatically bacterial pneumonia. Antibiotic need depends on clinician assessment for infection and the overall clinical picture; do not assume prophylactic antibiotics are required after every aspiration event.",
           "consequence": "The review includes how the position was checked.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-BTS-ASPIRATION-2023"
           ]
         },
         {
@@ -265,7 +272,8 @@
       "New respiratory distress during feeding requires stopping the feed, immediate patient-first airway and oxygenation assessment and urgent emergency-team escalation.",
       "Withhold all tube use, including flushes, water and medicines, while position is uncertain. Confirm with the approved method and documented interpretation before restarting; never use the whoosh test.",
       "Record and report the event.",
-      "A respiratory event during feeding may have several causes; tube position and aspiration require qualified assessment, not an automatic diagnosis from coughing or a single saturation reading."
+      "A respiratory event during feeding may have several causes; tube position and aspiration require qualified assessment, not an automatic diagnosis from coughing or a single saturation reading.",
+      "Distinguish suspected chemical pneumonitis from infection; do not infer antibiotic need from the aspiration event alone."
     ],
     "links": [
       {

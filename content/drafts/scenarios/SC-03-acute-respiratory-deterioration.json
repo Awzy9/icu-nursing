@@ -48,17 +48,26 @@
       "id": "S-FDA-OXIMETER-BASICS",
       "read": "partial",
       "use": "FDA public indexed limitations of pulse oximetry, including perfusion and skin pigmentation."
+    },
+    {
+      "id": "S-BTS-O2-2017",
+      "read": "partial",
+      "use": "BTS 2017 selected emergency oxygen recommendations and 2019 target-range decision; not full appraisal"
+    },
+    {
+      "id": "S-ATS-NIRS-2026",
+      "read": "partial",
+      "use": "ATS 2026 adult noninvasive respiratory support recommendations, indexed primary text"
     }
   ],
   "required_sources": [
-    "A respiratory deterioration guideline read in full (for example a national acute respiratory care guideline)",
-    "Unit escalation policy and critical care outreach criteria",
-    "BTS oxygen guideline (not read: publisher blocked automated access)"
+    "Full appraisal of respiratory deterioration and BTS oxygen guideline recommendations, including disease-specific pathways",
+    "Unit escalation policy and critical care outreach criteria"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Causes and treatment of respiratory deterioration are not drawn from a source read and are not written.",
+    "Selected BTS oxygen and ATS 2026 respiratory support recommendations now supplement escalation teaching; diagnosis-specific treatment and complete appraisal remain outstanding.",
     "No saturation target is stated; the target is the prescribed one."
   ],
   "permissions": [
@@ -99,13 +108,14 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "A falling saturation and increasing breathing effort require immediate patient assessment. Use the early warning score and oxygen targets to inform the response, not as a reason to postpone emergency oxygen or ventilation support when indicated. Pulse oximetry estimates oxygenation, not ventilation; perfusion and skin pigmentation can affect accuracy. If the clinical picture and reading disagree, request further assessment and an appropriate alternative measurement without postponing emergency care.",
+          "feedback": "A falling saturation and increasing breathing effort require immediate patient assessment. Use the early warning score and oxygen targets to inform the response, not as a reason to postpone emergency oxygen or ventilation support when indicated. Pulse oximetry estimates oxygenation, not ventilation; perfusion and skin pigmentation can affect accuracy. If the clinical picture and reading disagree, request further assessment and an appropriate alternative measurement without postponing emergency care. Request urgent blood gas assessment when hypercapnia is suspected, especially with new drowsiness or rising work of breathing. Emergency support for critical illness should not be withheld because of possible carbon dioxide retention; the team then individualizes oxygen and ventilation using blood gases and clinical response.",
           "consequence": "You find the device correctly placed and the patient is working harder, so you call the responsible clinician.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
             "S-AARC-O2",
-            "S-FDA-OXIMETER-BASICS"
+            "S-FDA-OXIMETER-BASICS",
+            "S-BTS-O2-2017"
           ]
         },
         {
@@ -162,12 +172,13 @@
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "Clinical severity can require a higher response than the aggregate early warning score indicates. Do not wait for another score or routine review if the patient is unstable.",
+          "feedback": "Clinical severity can require a higher response than the aggregate early warning score indicates. Do not wait for another score or routine review if the patient is unstable. ATS 2026 distinguishes acute hypoxemic failure, where high-flow nasal oxygen is recommended, from acute hypercapnic failure, where noninvasive ventilation is recommended. Suitability depends on the individual and the cause. If noninvasive support is being used, report worsening effort, consciousness, gas exchange or circulation promptly; do not allow a trial of support to delay indicated intubation.",
           "consequence": "The clinician attends and decides whether critical care outreach is needed.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-ATS-NIRS-2026"
           ]
         },
         {
@@ -263,7 +274,8 @@
       "Assess the patient and provide authorised emergency support first; verify oxygen delivery and the prescribed target in parallel.",
       "The early warning score triggers a response; escalate with an SBAR per local policy.",
       "Record the response, monitor as directed, and call again whenever you remain concerned.",
-      "An acceptable oxygen saturation does not exclude inadequate ventilation; interpret oximetry in clinical context and escalate discordant findings."
+      "An acceptable oxygen saturation does not exclude inadequate ventilation; interpret oximetry in clinical context and escalate discordant findings.",
+      "Recognize deterioration despite oxygen or noninvasive support and escalate promptly for blood gases and respiratory-team assessment."
     ],
     "links": [
       {

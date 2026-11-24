@@ -4511,6 +4511,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-NIRS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
+     "id": "S-BTS-O2-2017",
+     "licence_class": "UNVERIFIED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-FDA-OXIMETER-BASICS",
      "licence_class": "YELLOW",
      "verified": "2026-11-24"
@@ -4523,8 +4533,8 @@
    ],
    "issues": [],
    "gaps": 4,
-   "required_sources": 3,
-   "hash": "c1f71b7df1cb19db"
+   "required_sources": 2,
+   "hash": "c3810104b5990023"
   },
   {
    "key": "SC-04",
@@ -4535,6 +4545,11 @@
    "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-AARC-MV-SAFETY",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-AARC-PVA",
      "licence_class": "RED",
@@ -4558,8 +4573,8 @@
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 2,
-   "hash": "e8eed5db77614a3e"
+   "required_sources": 1,
+   "hash": "8fdf8e6f99ec3e5c"
   },
   {
    "key": "SC-05",
@@ -4631,15 +4646,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISCCM-WEAN-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-PUMA-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-PUMA-EXTUBATION-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
-   "required_sources": 2,
-   "hash": "6089deaddd45d74b"
+   "required_sources": 1,
+   "hash": "ef18da5ae9854ef7"
   },
   {
    "key": "SC-07",
@@ -5126,6 +5151,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BTS-ASPIRATION-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NHSE-NGT-2016",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -5149,7 +5179,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "b3eec1cecee25475"
+   "hash": "484e2feb7babc5e4"
   },
   {
    "key": "SC-19",

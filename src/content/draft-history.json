@@ -9625,6 +9625,22 @@
     "gaps": 4,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c3810104b5990023",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-ATS-NIRS-2026",
+     "S-BTS-O2-2017",
+     "S-FDA-OXIMETER-BASICS",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-04": [
@@ -9682,6 +9698,21 @@
     ],
     "gaps": 5,
     "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "8fdf8e6f99ec3e5c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-MV-SAFETY",
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 5,
+    "required_sources": 1,
     "issues": 0
    }
   ],
@@ -9814,6 +9845,22 @@
     ],
     "gaps": 4,
     "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "ef18da5ae9854ef7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-ISCCM-WEAN-2024",
+     "S-PUMA-2022",
+     "S-PUMA-EXTUBATION-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
     "issues": 0
    }
   ],
@@ -10774,6 +10821,22 @@
     "evidence_status": "partial",
     "sources": [
      "S-AHRQ-TS",
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "484e2feb7babc5e4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-BTS-ASPIRATION-2023",
      "S-NHSE-NGT-2016",
      "S-NHSE-NGT-ENDURING",
      "S-NICE-CG32",

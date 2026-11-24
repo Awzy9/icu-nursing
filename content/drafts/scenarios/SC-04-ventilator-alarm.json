@@ -49,17 +49,21 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-AARC-MV-SAFETY",
+      "read": "partial",
+      "use": "AARC issue paper, alarm management and backup ventilation sections: individualized settings, manufacturer-specific competence, communication"
     }
   ],
   "required_sources": [
-    "Cross-manufacturer alarm-management guidance and the unit's alarm policy",
-    "AACN alarm practice alert (full text)"
+    "Unit ventilator alarm policy, current manufacturer instructions and device-specific emergency competency verification"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "Device-specific alarm behaviour differs by manufacturer and software; the scenario uses generic wording.",
-    "Alarm causes and lists are deliberately not reproduced.",
+    "Cross-manufacturer principles are supported by the AARC safety issue paper; alarm causes and model-specific operating procedures still require trained local assessment. AACN's 2018 alert concerns ECG and pulse oximetry, not a ventilator operating standard.",
     "Generic ventilator alarm wording and alternative ventilation steps require local respiratory therapist/manufacturer sign-off; this fictional exercise does not prescribe alarm limits or device operation."
   ],
   "permissions": [
@@ -95,13 +99,14 @@
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "Going to the patient is the expected response to every alarm, and the machine's message guides but does not replace looking at the patient.",
+          "feedback": "Going to the patient is the expected response to every alarm, and the machine's message guides but does not replace looking at the patient. High pressure may reflect airway resistance, coughing, dyssynchrony or reduced respiratory-system compliance; the alarm alone does not diagnose the cause. Avoid empirical sedation or setting changes before appropriate assessment.",
           "consequence": "You assess the patient and find circuit tension near the airway, but ventilation is not yet established as adequate and the patient remains distressed.",
           "support": "partial",
           "sources": [
             "S-HAMILTON-C1",
             "S-DRAEGER-V500-IFU",
-            "S-AARC-PVA"
+            "S-AARC-PVA",
+            "S-AARC-MV-SAFETY"
           ]
         },
         {
@@ -109,11 +114,12 @@
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
-          "feedback": "Silencing is not a response; the problem persists and the alarm will return.",
+          "feedback": "A temporary audible pause does not correct the underlying problem; remain with the patient and resolve or escalate the alarm. Muting behavior varies by device and alarm priority.",
           "consequence": "The alarm sounds again and the patient's saturation has fallen.",
           "support": "partial",
           "sources": [
-            "S-HAMILTON-C1"
+            "S-HAMILTON-C1",
+            "S-AARC-MV-SAFETY"
           ]
         },
         {
@@ -125,7 +131,8 @@
           "consequence": "The alarm stops but the cause remains, and the patient's saturation falls unnoticed.",
           "support": "partial",
           "sources": [
-            "S-HAMILTON-C1"
+            "S-HAMILTON-C1",
+            "S-AARC-MV-SAFETY"
           ]
         }
       ]
@@ -158,12 +165,13 @@
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "Inadequate ventilation or rapidly worsening oxygenation calls for immediate rescue with a trained team. Assess the airway and patient, call for help, and provide alternative ventilation by the unit's protocol if required rather than leaving the patient unsupported while troubleshooting. AARC endorses direct patient–ventilator assessment; specific emergency-device steps come from the unit and manufacturer.",
+          "feedback": "Inadequate ventilation or rapidly worsening oxygenation calls for immediate rescue with a trained team. Assess the airway and patient, call for help, and provide alternative ventilation by the unit's protocol if required rather than leaving the patient unsupported while troubleshooting. AARC endorses direct patient–ventilator assessment; specific emergency-device steps come from the unit and manufacturer. Facilities should have a backup ventilation plan and staff trained on the installed model. Activate the emergency pathway promptly; no particular circuit-disconnection or device maneuver is implied.",
           "consequence": "A trained team promptly establishes effective ventilation by the local emergency pathway and addresses the airway/circuit problem.",
           "support": "partial",
           "sources": [
             "S-HAMILTON-C1",
-            "S-DRAEGER-V500-IFU"
+            "S-DRAEGER-V500-IFU",
+            "S-AARC-MV-SAFETY"
           ]
         },
         {
@@ -220,12 +228,13 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "AARC 2024 supports direct bedside assessment and review of delivered tidal volume, plateau pressure and PEEP, including intrinsic PEEP when relevant. Check recovery with the trained team rather than treating the absence of an alarm as proof of adequate ventilation. Document and hand over the event.",
+          "feedback": "AARC 2024 supports direct bedside assessment and review of delivered tidal volume, plateau pressure and PEEP, including intrinsic PEEP when relevant. Check recovery with the trained team rather than treating the absence of an alarm as proof of adequate ventilation. Document and hand over the event. Confirm that alarm limits remain appropriate for the patient's prescribed support, and record changes and response with the team.",
           "consequence": "The team confirms the recovery assessment and hands over the cause, response and ongoing safety checks.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
-            "S-AARC-PVA"
+            "S-AARC-PVA",
+            "S-AARC-MV-SAFETY"
           ]
         },
         {
