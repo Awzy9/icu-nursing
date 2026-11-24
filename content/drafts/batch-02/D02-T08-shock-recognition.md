@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM Guidelines on circulatory shock and hemodynamic monitoring 2025 (Intensive Care Med 2025;51:1971-2012; abstract and 2014/2025 comparison table read, NOT full guideline)", "ESICM 2014 shock consensus (historical, superseded by ESICM 2025)"]
-sources: [S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-SSC-2021, S-SSC-2026, S-SCAI-SHOCK-2026, S-ESC-HF-2026, S-ESC-CS-2026, S-ESC-AHF-EMERGENCY-2026]
-sources_not_read: [S-OPENRN-HA]
-independently_written_note: "Original wording. The 2014 ESICM consensus was read in full by an earlier author but is superseded for diagnosis/monitoring by ESICM 2025. AI-assisted follow-up on 2026-11-16 checked the 2025 guideline abstract and original 2014-versus-2025 comparison table through a university repository; 2025 full publication and supplements were NOT read. 2025 statements below are limited to this comparison. Text is paraphrased and cite-only (copyright restrictions). Open RN Health Alterations was not read. SSC 2021 was superseded by SSC 2026, for which only official recommendation-level text was read; fluid and vasopressor dosing are deliberately excluded."
+sources: [S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-SSC-2021, S-SSC-2026, S-SCAI-SHOCK-2026, S-ESC-HF-2026, S-ESC-CS-2026, S-ESC-AHF-EMERGENCY-2026, S-OPENRN-HA]
+sources_not_read: []
+independently_written_note: "Original wording. The 2014 ESICM consensus was read in full by an earlier author but is superseded for diagnosis/monitoring by ESICM 2025. AI-assisted follow-up on 2026-11-16 checked the 2025 guideline abstract and original 2014-versus-2025 comparison table through a university repository; 2025 full publication and supplements were NOT read. 2025 statements below are limited to this comparison. Text is paraphrased and cite-only (copyright restrictions). Selected acute decompensated heart failure nursing assessment passages from Open RN Health Alterations were checked 2026-11-24; this is a general nursing textbook, not a shock guideline. SSC 2021 was superseded by SSC 2026, for which only official recommendation-level text was read; fluid and vasopressor dosing are deliberately excluded."
 ---
 # Recognising circulatory shock and the nurse's response
 > DRAFT – NOT clinically reviewed. AI-generated. ESICM 2025 shock guidance is partially checked (abstract and comparison table only); not for clinical use.
@@ -52,6 +52,8 @@ The consensus describes four patterns: three low-flow (hypovolaemic from lost vo
 - Prepare for likely orders: IV access, blood tests including lactate, monitoring, fluid or blood products, vasopressor setup, ECG, imaging, arterial or central line insertion (the consensus recommends arterial and central venous catheters when shock does not respond to initial therapy or needs vasopressor infusion).
 - Support the team in treating the cause (for example, controlling bleeding with direct pressure when appropriate and per policy).
 - Record observations, times, interventions and responses.
+
+**Recognizing worsening cardiac perfusion (Open RN Health Alterations, cardiovascular chapter).** Worsening breathlessness, lung findings, oedema, mental status and urine output in acute heart failure warrant prompt clinical review. When shock is suspected, report these findings alongside perfusion and blood pressure, and do not assume that fluid loading is appropriate just because pressure is low. This textbook supports nursing assessment in acute heart failure; the general shock framework and treatment decisions remain grounded in the specialist guidelines and clinical team.
 
 ## 8. Monitoring parameters
 Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially targeting MAP of at least 65 mmHg and individualising the target; the target is set by the prescriber), skin findings, capillary refill, urine output, mental state, temperature, SpO₂, lactate trend where ordered, drain and wound losses, intake and output.
@@ -189,6 +191,8 @@ D. Document the reading carefully and review it after the shift, when the day ha
 - ESC ACVC, HFA and EAPCI. Criteria for the diagnosis of cardiogenic shock—European perspective. 2026-06-08. https://doi.org/10.1093/ehjacc/zuag100 (selected indexed primary text checked; accessed 2026-11-24; full appraisal pending).
 - ESC ACVC, HFA and EUSEM. Acute heart failure in emergency settings: clinical consensus statement. 2026-10-22. https://doi.org/10.1093/eurheartj/ehag744 (selected indexed primary text checked; accessed 2026-11-24; full appraisal pending).
 - ESICM 2025 shock guideline, selected recommendation text and supporting rationale on dynamic assessment (pp. 1985–1986), https://pure.eur.nl/ws/files/215348682/ESICM_guidelines_on_circulatory_shock_and_hemodynamic_monitoring_2025.pdf (accessed 2026-11-24 through extracted text; PDF screenshot unavailable). No table reproduced.
+
+- S-OPENRN-HA. https://www.ncbi.nlm.nih.gov/sites/books/NBK613064/ (selected recommendation or teaching passages checked 2026-11-24; no full appraisal or rights clearance claimed).
 
 ## 19. Local protocol note
 Escalation triggers, MAP targets, monitoring intensity and treatment protocols follow local policy and the treating team.
