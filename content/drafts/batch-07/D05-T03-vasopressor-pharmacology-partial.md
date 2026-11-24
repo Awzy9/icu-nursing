@@ -138,16 +138,16 @@ D. Confirm the urine-output trend, assess perfusion and possible catheter obstru
 **Why not B:** Abruptly discontinuing vasoactive support without an authorized order/protocol can cause hemodynamic deterioration.
 **Why not C:** Oliguria can signal inadequate perfusion or renal injury even when arterial pressure appears stable and warrants timely evaluation.
 
-**Q4 (safety).** Which monitoring approach is supported by the dobutamine injection label and appropriate ICU assessment?
-A. Weekly blood tests, because effects appear after several days of therapy.
-B. Continuous ECG and blood pressure; assess urine output and cardiac output when available.
-C. Body temperature checks every few hours, since fever is the commonest reaction.
-D. No special monitoring beyond routine observations, since the infusion is short-term.
+**Q4 (judgment).** During a dobutamine infusion for low cardiac output, a patient's blood pressure falls while the heart rate rises and ventricular ectopy increases. A colleague suggests that the faster heart rate proves cardiac output has improved. What is the best response?
+A. Accept the faster rate as evidence of improved perfusion and continue the existing assessment schedule.
+B. Assess perfusion and ECG, escalate deterioration and review the infusion with the team.
+C. Increase dobutamine to achieve a higher heart rate before reassessing the blood pressure.
+D. Use the blood pressure alone to judge cardiac output and defer review of the new ventricular ectopy.
 **Answer: B.**
-**Why correct:** The Hospira dobutamine label requires continuous ECG and arterial pressure monitoring and advises cardiac output and pulmonary wedge pressure monitoring whenever possible. Follow the ordered perfusion and urine output surveillance plan. Continuous cardiac output measurement is not required in every patient; assess tachycardia, arrhythmia, hypotension and clinical response.
-**Why not A:** Weekly tests are not adequate for an acute infusion.
-**Why not C:** Temperature is not the key parameter.
-**Why not D:** Dobutamine can cause significant rhythm and pressure changes that require continuous cardiovascular monitoring.
+**Why correct:** The dobutamine label calls for continuous ECG and blood pressure surveillance, with cardiac output and filling-pressure measurements when feasible. Tachycardia, arrhythmia or hypotension can indicate an adverse response or worsening illness. Continuous cardiac output measurement is not required in every patient; integrate available haemodynamic data, urine output and other perfusion findings. Escalate promptly and follow the authorized titration or emergency pathway.
+**Why not A:** A faster heart rate does not establish an increase in stroke volume, cardiac output or tissue perfusion.
+**Why not C:** Increasing an inotrope in a patient with new instability and ectopy without assessment may worsen the adverse response.
+**Why not D:** Blood pressure is important but cannot independently establish cardiac output or exclude a clinically significant rhythm disturbance.
 
 **Q5 (application).** A nurse is preparing an intravenous epinephrine infusion. Which nursing check does the epinephrine grid specifically name?
 A. Checking the patient's weight every hour so that the infusion can be adjusted to it.

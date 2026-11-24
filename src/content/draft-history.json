@@ -3531,6 +3531,23 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "6b995321d369b6eb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "L-LORAZEPAM",
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-OPENRN-PHARM-CH",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D05-T03": [
@@ -3636,6 +3653,24 @@
    },
    {
     "hash": "14aef038ebe119a3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-NICE-NG148-DOPAMINE",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "87bbda10de56d8c3",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -4658,6 +4693,24 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "cac3da69c2f43c53",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-EPINEPHRINE",
+     "L-MILRINONE",
+     "L-NOREPINEPHRINE",
+     "L-VASOPRESSIN",
+     "N-RCUK-ANAPH-2021",
+     "S-ADRENALIN-IM-2025",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-09": [
@@ -4723,6 +4776,22 @@
    },
    {
     "hash": "364aab37acfa4680",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "L-FENTANYL",
+     "L-MIDAZOLAM",
+     "L-MORPHINE",
+     "L-PROPOFOL",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "8e16dd954709eb9e",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

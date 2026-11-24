@@ -37,17 +37,17 @@ D. Give a fluid bolus yourself as soon as the alarm sounds and then deal with th
 **Why not D:** Fluid is a prescriber or protocol decision; the interruption needs urgent action and escalation.
 **Trace:** L-NOREPINEPHRINE — Label: hypotension after abrupt discontinuation.
 
-**Q3 (monitoring).** Twelve hours after vasopressin is stopped, a patient's urine output rises sharply and the urine looks pale and watery, and the sodium is climbing. What should you suspect and do?
-A. Reassure the team that this is the diuretic phase of recovery and record the output.
-B. Restart the vasopressin yourself to see whether the urine output settles.
-C. Restrict all fluids until the morning blood tests, to protect the sodium level.
-D. Report possible reversible diabetes insipidus and monitor urine output, fluid status and electrolytes as the label advises.
+**Q3 (judgment).** After vasopressin is discontinued, a recovering shock patient develops a marked rise in dilute urine output, increasing sodium and a falling fluid balance. The nurse considers whether this is simply recovery from earlier fluid accumulation. What is the best action?
+A. Document recovery diuresis and continue the routine fluid assessment without discussing the change.
+B. Restart the previous vasopressin infusion and use the urine response to establish the diagnosis.
+C. Restrict fluid intake until the next sodium result confirms that the change is persistent.
+D. Escalate possible transient diabetes insipidus and assess fluid and electrolyte trends.
 **Answer: D.**
-**Why correct:** The label describes reversible diabetes insipidus (polyuria, dilute urine, hypernatraemia) after stopping vasopressin and advises monitoring serum electrolytes, fluid status and urine output.
-**Why not A:** The label names a specific cause that needs reporting.
-**Why not B:** Restarting is a prescriber decision.
-**Why not C:** Fluid management is a prescriber decision.
-**Trace:** L-VASOPRESSIN — Label: reversible diabetes insipidus after cessation; monitor electrolytes, fluid status, urine output.
+**Why correct:** Vasopressin prescribing information describes reversible diabetes insipidus after cessation, with polyuria, dilute urine and hypernatraemia. The pattern warrants prompt assessment of circulation, intake, output, sodium and other relevant findings, with clinician-directed investigation and fluid management. Other causes of polyuria remain possible; the temporal association does not establish a diagnosis or authorize restarting the infusion.
+**Why not A:** Recovery diuresis is one possibility, but rising sodium and negative balance warrant prompt reassessment rather than reassurance.
+**Why not B:** A trial restart could cause harm and is not an independent diagnostic or nursing treatment decision.
+**Why not C:** Fluid restriction may worsen water deficit; the appropriate fluid plan requires individualized clinical assessment.
+**Trace:** L-VASOPRESSIN — Reversible diabetes insipidus following cessation; monitor serum electrolytes, fluid status and urine output.
 
 **Q4 (monitoring).** A patient with atrial fibrillation on dobutamine has a sudden rise in heart rate to a rapid, irregular rhythm. What does the label's warning suggest?
 A. Treat it as a normal effect of the drug and record the rate at the next hourly check.
@@ -61,17 +61,17 @@ D. Give extra fluid yourself, because a fast heart rate always means the patient
 **Why not D:** Fluid is a prescriber decision and the cause here may be the drug.
 **Trace:** L-DOBUTAMINE — Label: AF patients at risk of rapid ventricular response.
 
-**Q5 (monitoring).** A patient on milrinone has more ventricular ectopic beats appearing on the monitor over an hour. What does the label support?
-A. Silence the alarm limits so the ectopics stop triggering the monitor and wait for the ward round.
-B. Report promptly, because the label links milrinone with more ventricular arrhythmias and calls for continuous ECG monitoring.
-C. Do nothing because ectopic beats are harmless in patients with heart failure.
-D. Stop the continuous ECG because it is causing the alarms, and take a pulse each hour instead.
+**Q5 (judgment).** A patient receiving milrinone develops worsening kidney function, falling blood pressure and new ventricular ectopy. The infusion has not changed since the previous day. What should the nurse prioritize?
+A. Wait for the next routine renal result because the unchanged infusion makes an adverse drug effect unlikely.
+B. Assess perfusion and rhythm, escalate urgently and request review of the renal dosing plan.
+C. Increase milrinone to improve renal blood flow while the patient is still producing urine.
+D. Give extra fluid for the falling pressure before reporting the new rhythm and renal changes.
 **Answer: B.**
-**Why correct:** The milrinone label reports ventricular arrhythmias including nonsustained ventricular tachycardia and calls for close observation with continuous ECG monitoring. The new ectopy also requires patient assessment and urgent escalation; it should not be assumed to be caused solely by the drug.
-**Why not A:** Widening alarm limits hides the problem.
-**Why not C:** The label treats ventricular arrhythmia as an important risk.
-**Why not D:** Continuous ECG monitoring is the label's expectation.
-**Trace:** L-MILRINONE — Label: ventricular arrhythmias; continuous ECG monitoring.
+**Why correct:** Milrinone can cause ventricular arrhythmias and hypotension; renal impairment prolongs its elimination and may require an adjusted infusion plan. Assess the patient, maintain continuous ECG and blood pressure surveillance, review renal and electrolyte trends and escalate urgently. A constant infusion rate does not establish constant exposure when clearance changes. The prescribing team determines dose adjustment; other causes of deterioration must also be evaluated.
+**Why not A:** Worsening kidney function can change drug exposure even when the pump setting is unchanged.
+**Why not C:** Increasing the infusion without review may worsen hypotension or arrhythmia and ignores the change in renal clearance.
+**Why not D:** Additional fluid is not automatically indicated by hypotension; assess the patient and follow the authorized haemodynamic plan.
+**Trace:** L-MILRINONE — Ventricular arrhythmias, continuous ECG surveillance, hypotension and prolonged elimination with renal impairment.
 
 **Q6 (application).** A patient has anaphylaxis and the team authorizes an *intramuscular* epinephrine injection using an appropriate product. Which site does the cited intramuscular product label identify?
 A. The anterolateral thigh, avoiding the buttocks, digits, hands and feet.

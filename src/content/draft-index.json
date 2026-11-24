@@ -1354,7 +1354,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "721262d896dd9629"
+   "hash": "6b995321d369b6eb"
   },
   {
    "key": "D05-T03",
@@ -1409,7 +1409,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "14aef038ebe119a3"
+   "hash": "87bbda10de56d8c3"
   },
   {
    "key": "D01-T06",
@@ -1789,7 +1789,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "6d445c2bb5cd4d64"
+   "hash": "cac3da69c2f43c53"
   },
   {
    "key": "XQ-09",
@@ -1834,7 +1834,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "364aab37acfa4680"
+   "hash": "8e16dd954709eb9e"
   },
   {
    "key": "XQ-10",

@@ -145,16 +145,16 @@ D. Give a reversal agent that is kept on the unit without waiting for an order, 
 **Why not B:** Increasing sedation would worsen the problem.
 **Why not D:** Antagonist use has indication-specific risks and may require a prescriber decision or an authorized emergency protocol; it should not be given simply because it is stocked on the unit.
 
-**Q5 (understanding).** Which statement matches the PADIS 2025 focused-update recommendation on drug choice?
-A. Suggest propofol over dexmedetomidine in all patients because it is thought to work faster at the start and to be easier to titrate.
-B. Suggest dexmedetomidine over propofol where light sedation and/or reducing delirium are the highest priorities (conditional; moderate certainty).
-C. Suggest using benzodiazepines to treat anxiety in all adults in the ICU, whatever the clinical picture, because they are thought to give the most reliable relief.
-D. Make no statement at all about the choice of sedative agent for mechanically ventilated adults, leaving the choice to each unit.
+**Q5 (judgment).** A ventilated adult receiving dexmedetomidine for light sedation develops new bradycardia and hypotension. The team had selected the drug partly to reduce delirium risk. What should the nurse prioritize?
+A. Maintain the current infusion because the delirium-prevention goal takes priority over the observed changes.
+B. Assess perfusion, escalate promptly and follow the authorized infusion response.
+C. Change to a benzodiazepine without review because it is less likely to slow the heart rate.
+D. Deepen sedation with the same drug while awaiting the next planned haemodynamic assessment.
 **Answer: B.**
-**Why correct:** The 2025 PADIS update conditionally favors dexmedetomidine over propofol when light sedation or reduced delirium is a major priority. This is not a universal preference. Dexmedetomidine may cause clinically important bradycardia and hypotension; monitor the individual response and follow the prescribed target.
-**Why not A:** The 2025 statement favours dexmedetomidine in that situation.
-**Why not C:** The page says there is insufficient evidence for benzodiazepines in anxiety.
-**Why not D:** A drug-choice statement does appear on the SCCM 2025 page.
+**Why correct:** The PADIS 2025 update conditionally favors dexmedetomidine when light sedation or reduced delirium is a major priority, but this does not override patient-specific adverse effects. Dexmedetomidine may cause clinically important bradycardia and hypotension. Assess circulation and arousal, check infusion delivery, obtain urgent help if unstable and implement the authorized response; do not attribute the changes solely to the drug without considering other causes.
+**Why not A:** A conditional drug preference does not justify continuing unchanged therapy despite haemodynamic deterioration.
+**Why not C:** Substituting a sedative requires an authorized decision and a plan to maintain adequate analgesia and sedation.
+**Why not D:** Increasing the infusion could aggravate the adverse effects and delay assessment of the underlying cause.
 
 **Q6 (scope).** Which task belongs to the prescriber with pharmacist input, rather than the bedside nurse?
 A. Recording the sedation score and breathing pattern at the intervals set by the unit protocol.

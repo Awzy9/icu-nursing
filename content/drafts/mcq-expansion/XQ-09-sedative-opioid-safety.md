@@ -25,17 +25,17 @@ D. The patient's family at the bedside to watch for changes in alertness while t
 **Why not D:** Family cannot replace trained monitoring.
 **Trace:** L-MIDAZOLAM — Boxed warning: respiratory depression; continuous monitoring; resuscitation equipment; skilled personnel.
 
-**Q2 (judgment).** A patient already receiving an opioid infusion is prescribed a benzodiazepine as well. What should the nurse understand about this combination?
-A. It is a routine combination with no added risk, so standard observations are enough.
-B. It is safe if the two drugs are given at least ten minutes apart in the same patient.
-C. It matters only in patients who have never had an opioid before this admission.
-D. It can cause profound sedation, respiratory depression, coma and death.
+**Q2 (judgment).** A patient receiving an opioid infusion is due a prescribed benzodiazepine for a procedure. The patient is now difficult to rouse and breathing more slowly, although oxygen saturation remains within target on supplemental oxygen. What should the nurse do?
+A. Administer the prescribed benzodiazepine because oxygen saturation remains within target.
+B. Separate administration of the two drugs and proceed if the saturation is still satisfactory.
+C. Give the benzodiazepine before assessing breathing so the procedure can begin without delay.
+D. Defer the pending dose under the safety pathway, assess ventilation and obtain urgent help.
 **Answer: D.**
-**Why correct:** Concurrent opioid and benzodiazepine exposure increases the risk of severe CNS and respiratory depression. Review the authorized indication and monitoring plan, assess ventilation and arousability, and escalate unexpected deterioration urgently. A normal saturation on supplemental oxygen does not rule out hypoventilation.
-**Why not A:** The labels warn of a specific added risk.
-**Why not B:** The risk concerns concomitant use, not the gap between doses.
-**Why not C:** The warning applies broadly.
-**Trace:** L-FENTANYL, L-MORPHINE, L-MIDAZOLAM — Boxed warnings: concomitant opioids/benzodiazepines/CNS depressants.
+**Why correct:** Concurrent opioid and benzodiazepine exposure can intensify CNS and respiratory depression. Unexpected reduced arousal and slower breathing require immediate assessment of airway, breathing and circulation and urgent escalation; satisfactory saturation on supplemental oxygen does not establish adequate ventilation. Clarify the pending dose through the authorized medication-safety pathway and provide emergency support within competency.
+**Why not A:** Oxygen saturation does not measure carbon dioxide clearance or establish adequate ventilation.
+**Why not B:** Separating doses does not eliminate overlapping drug effects or resolve existing clinical deterioration.
+**Why not C:** An additional CNS depressant could worsen the respiratory compromise; the patient's safety takes priority over the procedure.
+**Trace:** L-FENTANYL, L-MORPHINE, L-MIDAZOLAM — Additive CNS and respiratory depression with concomitant exposure.
 
 **Q3 (safety).** A nurse is about to draw a second dose from a propofol vial that was opened for a previous patient 'because there is plenty left'. What is the correct response?
 A. It is acceptable if the vial has been kept in the fridge and the stopper wiped with alcohol.
@@ -61,17 +61,17 @@ D. Stop monitoring the heart rhythm to avoid false alarms while the patient is s
 **Why not D:** Continuous monitoring is required.
 **Trace:** L-DEXMEDETOMIDINE, S-SCCM-PADIS — Hemodynamic precautions and conditional sedation choice.
 
-**Q5 (application).** An elderly, frail patient with chronic lung disease has just received a morphine dose. Which preparation does the label support?
-A. Close monitoring of ventilation, arousability and circulation, with naloxone and resuscitation equipment immediately available.
-B. Routine observations once a shift, because morphine is a very familiar drug on the unit.
-C. Keep the patient flat and covered so they sleep more soundly after the dose.
-D. Give a second sedative with it to prevent any restlessness after the pain has gone.
+**Q5 (judgment).** An older patient with chronic lung disease required naloxone and airway support for respiratory depression after morphine. The patient's breathing and alertness have improved. What is the safest ongoing nursing plan?
+A. Continue close respiratory and arousal monitoring with an authorized rescue plan for recurrence.
+B. Return to routine observations once the patient is awake and oxygen saturation has normalized.
+C. Resume the previous opioid regimen immediately because reversal has removed the toxicity risk.
+D. Discontinue respiratory surveillance when the initial naloxone response has been documented.
 **Answer: A.**
-**Why correct:** The label warns of life-threatening respiratory depression in patients with chronic pulmonary disease or the elderly, cachectic or debilitated and advises close monitoring. Assess ventilation, arousability and circulation; oxygen saturation alone does not establish adequate ventilation. Ensure access to naloxone and resuscitation equipment according to the emergency protocol.
-**Why not B:** Familiarity does not lower the risk in this patient.
-**Why not C:** Unexpected deep sedation or difficulty rousing the patient may signal opioid toxicity and requires assessment.
-**Why not D:** Adding a CNS depressant raises the risk.
-**Trace:** L-MORPHINE — Label: close monitoring in chronic pulmonary disease/elderly/debilitated; naloxone and resuscitative equipment available.
+**Why correct:** The morphine label warns that the effect of opioid reversal may end before the effect of morphine. Continue close monitoring of spontaneous ventilation, arousal and circulation, with access to trained emergency support and additional authorized treatment if respiratory depression recurs. Older adults and people with chronic lung disease are particularly vulnerable. Reassess analgesia with the team; do not regard a transient improvement as complete recovery.
+**Why not B:** A satisfactory initial response does not exclude recurrence as the reversal agent wears off.
+**Why not C:** Resumption of analgesia requires clinical reassessment and an individualized plan after an overdose or adverse reaction.
+**Why not D:** Documenting reversal is important but does not replace continued monitoring until recovery is reliably established.
+**Trace:** L-MORPHINE — Respiratory depression risk in vulnerable patients; continued observation after opioid reversal because its action may be shorter than morphine's.
 
 **Q6 (judgment).** Shortly after a rapid fentanyl dose, a patient's chest becomes stiff and ventilation is difficult. What is the correct first response?
 A. Reassure the patient and wait for the stiffness to wear off before doing anything further.
