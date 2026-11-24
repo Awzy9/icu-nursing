@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AHRQ TeamSTEPPS 3.0, Tool: SBAR (page accessed 2026-11-14)"]
-sources: [S-AHRQ-TS]
+sources: [S-AHRQ-TS, S-AHRQ-HANDOFF]
 independently_written_note: "Original wording and fictional examples. The AHRQ page was read through a browser; its reuse terms were not captured, so nothing is copied. I-PASS, check-back and closed-loop tool pages were not read."
 ---
 # SBAR, clinical handover and escalation of deterioration
@@ -39,6 +39,8 @@ Have ready: patient identity and location; the vital signs and early-warning sco
 - Make a specific **recommendation or request** with a time frame matched to acuity. For an unstable patient, request immediate bedside help and activate the emergency pathway; use SBAR alongside, not instead of, urgent assessment and care. Confirm the agreed plan by check-back.
 - If the response is not enough for the risk, escalate through the chain of command per policy.
 - Document the call.
+
+**Transfer accountability and unfinished tasks (AHRQ TeamSTEPPS).** For shift change or transfer, identify time-sensitive medicines, pending results, required reassessments, contingency plans and the clinician or team responsible for each. Invite the receiving clinician to clarify and confirm the plan; do not assume that a message sent electronically has been read or accepted. Maintain responsibility within the approved handover process until the receiving clinician acknowledges the transfer. Escalate an unresolved handover or urgent concern rather than leaving an essential task unassigned. This is a practical nursing application of TeamSTEPPS, not a new handover trainer.
 
 ## 8. Monitoring
 After escalation, reassess at the frequency the risk requires, and report changes using the same structure ("update since my call").
@@ -149,6 +151,8 @@ D. Give last week's early-warning scores to show how the patient has changed ove
 - AHRQ. TeamSTEPPS 3.0 Curriculum, Module 1: Communication, Tool: SBAR. https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html (accessed 2026-11-14)
 
 - AHRQ TeamSTEPPS Check-Back. https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/checkback.html (selected recommendation excerpts, accessed 2026-11-24)
+
+- TeamSTEPPS: Handoff. https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/handoff.html (selected HTML statements checked 2026-11-24; cite only; rights and independent clinical review pending).
 
 ## 19. Local protocol note
 Use the institution's handover format and escalation policy (such as response times and chain of command).
