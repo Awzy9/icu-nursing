@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["UK Kidney Association Clinical Practice Guideline: Treatment of Acute Hyperkalaemia in Adults (guideline website, updated July 2026, review date October 2026) – UK; adults; hospital section III used most; graded 1A–2C as printed", "Open RN Nursing Fundamentals 2e, chapter 15 (electrolytes) – US entry-level textbook, CC BY 4.0, used only for general hypokalaemia background", "Phase 3 addition: Kurttila M, Saano S, Laaksonen R. Evaluating the severity of reported potassium-related errors and developing safeguards to improve potassium safety in critical care – a modified expert panel study. J Patient Saf 2026 (CC BY 4.0) – Finnish incident data and an expert-panel consensus, NOT a clinical guideline"]
-sources: [S-UKKA-HK-2026, S-OPENRN-FUND-CH15, S-PK-SAFEGUARDS-2026, S-NHS-SPS-HYPO-2024]
-sources_not_read: [S-KDIGO-AKI, S-NICE-AKI]
+sources: [S-UKKA-HK-2026, S-OPENRN-FUND-CH15, S-PK-SAFEGUARDS-2026, S-NHS-SPS-HYPO-2024, S-NICE-NG148]
+sources_not_read: [S-KDIGO-AKI]
 independently_written_note: "Original wording. The UKKA hyperkalaemia guideline website (all 60 pages: summary, hospital, resuscitation, community, rationale, tables and appendix headings) was downloaded and read; its drug-dose tables in the appendices did not come through in the text extraction and were not read. UKKA supplies the hyperkalaemia practice guideline; the NHS SPS 2024 acute hypokalaemia clinical-pharmacy article was consulted on 2026-11-23 for categories, causes, monitoring and concentrate safeguards. Neither is a local potassium replacement order set and no administration rate, dose or compounding instructions are taught. No doses, concentrations or infusion rates are given: the UKKA recommendations name specific drug doses, which are deliberately omitted under the platform's no-dosing rule and belong to prescriber and pharmacist. UKKA figures are reproduced from other journals with permission and are not copied here. One internal inconsistency on the guideline website is flagged in section 9."
 ---
 # Potassium disorders – hyperkalaemia and introductory hypokalaemia safety
@@ -74,6 +74,8 @@ These **two separate questions** must not be collapsed into one bedside trigger.
 - **For low potassium results (NHS SPS):** report symptomatic or severe hypokalaemia promptly, review ECG and magnesium, renal function, trends and sources of potassium loss as directed by the clinical team; verify that any IV replacement is an authorised, correctly prepared high-alert infusion, not a ward-made shortcut.
 
 **Handover when emergency treatment crosses shifts or is repeated (UKKA, guideline 17.2).** Record the actual time of each insulin-glucose administration, subsequent potassium and glucose results, pending checks and the responsible clinician's plan. UKKA notes that repeated insulin-glucose administration can increase the risk of hypoglycaemia occurring beyond the usual six-hour surveillance period; ask the team to confirm extended monitoring in high-risk patients. Do not stop glucose surveillance simply because potassium or ECG findings have improved. Treat documented hypoglycaemia urgently under the authorized pathway and report rebound potassium or deteriorating rhythm independently of glucose results.
+
+**Hyperkalaemia in acute kidney injury (NICE NG148, recommendation 1.5.8).** Persistent hyperkalaemia despite medical treatment in AKI is a reason for immediate specialist referral for consideration of renal replacement therapy. Communicate trends, response to prescribed treatment, ECG findings and current clinical condition. This recommendation is not a standalone dialysis threshold; activate emergency assessment for severe deterioration while arranging review. Do not wait for a routine repeat result when the patient is unstable.
 
 ## 8. Monitoring parameters
 Continuous ECG and rhythm; 12-lead ECG as ordered; heart rate and blood pressure; serum potassium at the intervals ordered (guideline suggestion above); blood glucose at the intervals above after insulin and glucose; urine output and renal function; arterial or venous blood gas if ordered; line and site checks during calcium infusion; pacemaker capture if the patient has one; mental state and signs of hypoglycaemia.
@@ -196,6 +198,8 @@ D. Connecting the cardiac monitor and recording a 12-lead ECG as ordered.
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN, chapter 15.4 Electrolytes. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/15-4-electrolytes/ (CC BY 4.0; accessed 2026-11-14)
 
 - NHS Specialist Pharmacy Service. *Treating acute hypokalaemia in adults*. Published 14 August 2024. Safety, causes, classification and monitoring reviewed without adopting dose tables. https://sps.nhs.uk/articles/hypokalaemia/ (accessed 2026-11-23). UK-specific specialist advice; cite only pending reuse clearance.
+
+- S-NICE-NG148. https://www.nice.org.uk/guidance/ng148/chapter/recommendations (selected indexed recommendation; direct NICE page blocked checked 2026-11-24; full appraisal and independent review outstanding).
 
 ## 19. Local protocol note
 Local protocols govern potassium thresholds, monitoring levels, who may give which treatments, drug libraries and concentrations, glucose monitoring intervals, dialysis referral and the laboratory's sample-handling instructions.
