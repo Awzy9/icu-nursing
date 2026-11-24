@@ -89,6 +89,14 @@
         "S-ERC-ALS-2025"
       ],
       "section": "safety"
+    },
+    {
+      "text": "During preparation for adult cardiac-arrest defibrillation, check pad position with the resuscitation team. Incorrect lateral pad placement can reduce effectiveness; an implanted pacemaker or defibrillator also requires attention to pad clearance under the applicable resuscitation protocol. Maintain compressions during preparation when feasible and do not delay an indicated shock for nonessential adjustments.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
     }
   ],
   "monitoring_concepts": [
