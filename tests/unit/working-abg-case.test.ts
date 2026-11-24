@@ -32,15 +32,23 @@ describe("ABG case data", () => {
     }
   });
 
-  it("marks the correct option as exactly what interpretAbg computes for that case's gas panel - the content was never hand-typed independently of the algorithm", () => {
-    for (const c of cases) {
-      const r = interpretAbg(c.gases);
-      const correctOption = c.question.options[c.question.answer]!.toLowerCase();
-      if (r.primaryDisorder === "normal") { expect(correctOption).toContain("normal"); continue; }
-      if (r.primaryDisorder === "inconsistent") { expect(correctOption).toContain("inconsistent"); continue; }
-      const disorderWord = r.primaryDisorder.split("_")[1]; // acidosis / alkalosis
-      expect(correctOption).toContain(disorderWord);
-      if (r.compensation !== "not_applicable") expect(correctOption).toContain(r.compensation.replace("_", " "));
+  it("checks independently specified answer keys and same-sample gas consistency", () => {
+    const expected = [
+      ["ABG-01", "respiratory_acidosis", "Respiratory acidosis with an acute-compatible bicarbonate response"],
+      ["ABG-02", "metabolic_acidosis", "Metabolic acidosis with respiratory compensation within the expected range"],
+      ["ABG-03", "respiratory_alkalosis", "Respiratory alkalosis with an acute-compatible bicarbonate response"],
+      ["ABG-04", "metabolic_alkalosis", "Metabolic alkalosis with respiratory compensation within the expected range"],
+      ["ABG-05", "respiratory_acidosis", "Respiratory acidosis with elevated bicarbonate compatible with chronic compensation"],
+      ["ABG-06", "mixed_acidosis", "Mixed respiratory and metabolic acidosis"],
+      ["ABG-07", "normal", "No apparent acid-base disturbance in the displayed values"],
+      ["ABG-08", "mixed_opposing", "Possible mixed metabolic acidosis and respiratory alkalosis"],
+    ] as const;
+    expect(cases.map(c => c.key)).toEqual(expected.map(e => e[0]));
+    for (const [key, disorder, answer] of expected) {
+      const c = cases.find(c => c.key === key)!;
+      expect(interpretAbg(c.gases).primaryDisorder, key).toBe(disorder);
+      expect(c.question.options[c.question.answer], key).toBe(answer);
+      expect(Math.abs(c.gases.pH - (6.1 + Math.log10(c.gases.hco3 / (0.03 * c.gases.paco2)))), key).toBeLessThan(0.015);
     }
   });
 
