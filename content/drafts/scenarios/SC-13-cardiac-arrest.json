@@ -246,7 +246,7 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Use a visual and verbal safety check and distinguish free-flow oxygen from an attached ventilation circuit. After shock delivery, immediately resume chest compressions; do not routinely pause for a pulse check. The team may assess return of spontaneous circulation if clinical and physiological signs suggest it. Do not stop compressions solely because an isolated capnography value rises.",
+          "feedback": "Use a visual and verbal safety check and distinguish free-flow oxygen from an attached ventilation circuit. After shock delivery, immediately resume chest compressions; do not routinely pause for a pulse check. The team may assess return of spontaneous circulation if clinical and physiological signs suggest it. Do not stop compressions solely because an isolated capnography value rises. A low end-tidal carbon dioxide value alone also cannot determine whether resuscitation should end; communicate physiological trends to the trained team leader.",
           "consequence": "A visual safety check and prompt resumption of CPR may protect rescuers and limit interruption to resuscitation.",
           "support": "partial",
           "sources": [
@@ -287,7 +287,8 @@
       "Confirm that a shock is indicated via the rhythm-specific or AED pathway, maintain CPR during preparation and minimise pauses.",
       "Perform and call the safety check; never shock during manual compressions.",
       "Defibrillator operation follows authorised-role rules.",
-      "Resume CPR immediately after the indicated shock unless the trained team identifies clinical and physiological signs warranting assessment of return of circulation."
+      "Resume CPR immediately after the indicated shock unless the trained team identifies clinical and physiological signs warranting assessment of return of circulation.",
+      "Neither an isolated increase nor a low capnography value establishes the need to pause or terminate resuscitation."
     ],
     "links": [
       {
