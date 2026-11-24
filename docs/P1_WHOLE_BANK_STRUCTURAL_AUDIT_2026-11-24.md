@@ -18,3 +18,7 @@ Content snapshot `e949bcc5126ca77d1fa8026b3f27f8cd4a47a802`; identical question 
 Five stems flagged: D01-T12 Q5, D04-T03 Q5, D01-T19 Q4, D07-T01 Q4, D01-T06 Q5. Shortness is a heuristic, not proof of a bad item. The full duplicate audit, current evidence review and learner difficulty/discrimination remain unresolved. The older 15 November report had 74 uniquely longest correct answers (24.2%). Two new regression tests had loaded only the main source CSV and falsely rejected valid skills and medication source IDs. Fixed them to use `loadKnown()` from the production expansion validator. Full CI remains necessary.
 
 Index source metadata spot-check over all 51 topic/question entries: 139 unique listed IDs; 0 absent from the combined registry; 2 metadata field discrepancies detected by the replicated CSV check. Source presence is not evidence currency or reuse permission. Clinical and rights gates remain unchanged; no production publication.
+
+## Registry formatting correction
+
+The two discrepancies (D06-T05 and XQ-03) both refer to S-WHO-CVC-2026. The registry row contained two unquoted commas in its verification description, shifting later columns. Quoted that cell and confirmed 17 fields, matching the header; the intended RED (cite-only) metadata is unchanged. No rights clearance is implied. Other source row length anomalies, if any, require separate review.
