@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Royal College of Physicians. National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS. Updated report of a working party, December 2017 (full text read)", "NICE NG253 Suspected sepsis in people aged 16 or over (chapters read: could this be sepsis; evaluating risk)", "AARC CPG Management of Adult Patients With Oxygen in the Acute Care Setting 2022", "ERC Guidelines 2025 Adult ALS – prevention of in-hospital cardiac arrest"]
-sources: [S-RCP-NEWS2, S-NICE-NG253, S-AARC-O2, S-ERC-ALS-2025, S-RCUK-ABCDE-ADULT]
-sources_not_read: [S-BTS-OXYGEN-2017, S-SSC-2026]
+sources: [S-RCP-NEWS2, S-NICE-NG253, S-AARC-O2, S-ERC-ALS-2025, S-RCUK-ABCDE-ADULT, S-BTS-OXYGEN-2017]
+sources_not_read: [S-SSC-2026]
 independently_written_note: "Original wording. The RCP NEWS2 report (77 pages) was downloaded and read in full text. RCP states there is no copyright restriction but the RCP must be acknowledged, and the charts must be reproduced in colour and not modified: this draft therefore does not reproduce or alter the chart or scoring table and tells the learner to use the official chart. NEWS2 is a UK (NHS) tool for adults aged 16 or over who are not pregnant. ERC statements are paraphrased only (commercial use needs an ERC agreement)."
 ---
 # Recognising and responding to respiratory deterioration (early-warning scores)
@@ -47,6 +47,8 @@ Patients arrive in or leave the unit with early-warning scores, and step-down pa
 - Record observations and actions; consider the "ceiling of care", including suitability for CPR and invasive ventilation, at any score and especially at 7 or above (RCP).
 
 **Oxygen requirements and clinical deterioration beyond NEWS2 (RCP).** NEWS2 includes whether supplemental oxygen is being used but does not quantify increasing flow or inspired oxygen fraction in that component. RCP specifically highlights this limitation in its COVID-19 guidance. More generally, an increasing requirement to maintain the prescribed saturation, new drowsiness or worsening effort needs prompt clinical assessment even if the score is unchanged. Report the actual device, previous and current oxygen delivery, saturation, breathing pattern and mental state. A satisfactory saturation on oxygen cannot exclude hypercapnia. Do not delay emergency assistance to complete observations, calculate a score or obtain a blood gas.
+
+**Oxygen target versus NEWS2 scoring:** BTS 2017 guidance, as reaffirmed by BTS in 2019, suggests controlled oxygen at 88–92% pending blood gases for adults at risk of hypercapnic respiratory failure. This oxygen target does not itself authorize use of NEWS2 Scale 2; the RCP scale requires an appropriate clinician decision and documentation. An oxygen target, oxygen device and early-warning score serve different purposes. Escalate worsening ventilation even if the measured saturation is within the target.
 
 ## 8. Monitoring parameters
 Minimum monitoring frequency by score (RCP, adults): score 0 – at least 12-hourly; 1–4 – 4–6-hourly; 5–6 or any single parameter scoring 3 – at least hourly until reviewed and a plan documented; 7 or more – continuous monitoring and recording of vital signs. When a patient moves to continuous monitoring, a full dataset should still be charted at a minimum interval (for example hourly after a score of 5 or more). In ICU these minimums are usually exceeded.
@@ -164,6 +166,8 @@ D. Charting the oxygen device and flow rate beside each set of observations.
 - Soar J, et al. ERC Guidelines 2025 Adult Advanced Life Support. Resuscitation. 2025;215:110769 (prevention of in-hospital cardiac arrest). https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf (accessed 2026-11-14)
 
 - Resuscitation Council UK. The ABCDE Approach. https://www.resus.org.uk/library/abcde-approach (selected HTML statements checked 2026-11-24; cite only; rights and independent clinical review pending).
+
+- BTS. Emergency oxygen guideline (2017), society update December 2019. https://www.brit-thoracic.org.uk/clinical-resources/guidelines/emergency-oxygen/ (official target-range summary and indexed recommendation A3 checked 2026-11-24; full guideline text blocked). New target-saturation guideline in development: https://www.brit-thoracic.org.uk/clinical-resources/guidelines/emergency-oxygen-target-oxygen-saturation.
 
 ## 19. Local protocol note
 Early-warning score used, frequency of observations in ICU, response teams, escalation timings and ceilings of care follow the institution's policy.
