@@ -130,6 +130,18 @@
           "sources": [
             "L-CALCIUM"
           ]
+        },
+        {
+          "text": "The registered product label describes serious tissue injury from calcinosis with or without obvious extravasation and directs immediate cessation at the affected site.",
+          "support": "partial",
+          "sources": [
+            "L-CALCIUM"
+          ]
+        },
+        {
+          "text": "Confirm the prescribed calcium salt and exact product with pharmacy under local medication policy; do not independently substitute calcium chloride for calcium gluconate.",
+          "support": "local_protocol",
+          "sources": []
         }
       ]
     },
@@ -224,7 +236,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Immediately escalate suspected IV site tissue injury, new bradycardia/hypotension or arrhythmia, unexpected high serum calcium, a neonate receiving ceftriaxone, or any plan to administer ceftriaxone and calcium simultaneously through common access. For severe circulatory compromise activate the local emergency response. All treatment and access-management decisions require qualified clinician/pharmacy oversight.",
+          "text": "Stop administration at the affected site immediately for suspected extravasation or calcinosis and seek urgent clinical assessment. Escalate new bradycardia, hypotension, arrhythmia, unexpectedly high calcium or ceftriaxone exposure in a neonate. Escalate an unsafe shared-line plan before use; activate emergency help for severe instability.",
           "support": "partial",
           "sources": [
             "L-CALCIUM"
@@ -315,6 +327,15 @@
       ]
     },
     {
+      "kind": "assess",
+      "text": "Check the IV site for swelling, redness, induration or nodules; stop administration at an affected site immediately if extravasation or calcinosis is suspected, and summon help under the unit protocol.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CALCIUM"
+      ]
+    },
+    {
       "kind": "document",
       "text": "Record site checks and monitoring.",
       "critical": false,
@@ -356,6 +377,13 @@
       "sources": [
         "L-CALCIUM"
       ]
+    },
+    {
+      "kind": "assess",
+      "text": "Verify the prescribed calcium salt and supplied formulation under local medication policy; refer any proposed substitution to pharmacy.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
     }
   ],
   "gaps": [

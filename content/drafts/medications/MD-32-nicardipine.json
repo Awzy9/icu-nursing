@@ -1,235 +1,251 @@
 {
- "med_id": "MD-32",
- "number": 32,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Nicardipine",
- "drug_class": "Dihydropyridine calcium channel blocker",
- "category": "antiarrhythmics-cardiac",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Intravenous calcium channel blocker for short-term treatment of hypertension when oral therapy is not feasible. Nursing focus: vein choice and site care, extravasation, hypotension and tachycardia and patients with cardiac, hepatic or renal disease.",
- "batch": 4,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-NICARDIPINE",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-NICARDIPINE",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-32",
+  "number": 32,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Nicardipine",
+  "drug_class": "Dihydropyridine calcium channel blocker",
+  "category": "antiarrhythmics-cardiac",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Intravenous calcium channel blocker for short-term treatment of hypertension when oral therapy is not feasible. Nursing focus: vein choice and site care, extravasation, hypotension and tachycardia and patients with cardiac, hepatic or renal disease.",
+  "batch": 4,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-NICARDIPINE",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-NICARDIPINE",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label describes nicardipine hydrochloride injection as a calcium channel blocker indicated for short-term treatment of hypertension when oral therapy is not feasible.",
+          "support": "sourced",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Choose and check the vein carefully: avoid small veins such as the back of the hand or wrist, and rotate the infusion site as the unit's protocol directs.",
+          "support": "partial",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for closely monitoring the response in patients with angina, heart failure, impaired hepatic function, portal hypertension, renal impairment or phaeochromocytoma, and avoiding small veins (such as those on the back of the hand or wrist) and extravasation to reduce the risk of venous thrombosis, phlebitis and vascular impairment; it also notes nicardipine gives no protection against the dangers of abrupt beta-blocker withdrawal, so a beta-blocker should be withdrawn gradually.",
+          "support": "sourced",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        },
+        {
+          "text": "The label requires close blood pressure and heart rate surveillance during treatment and after cessation, to avoid excessive or rapid reductions in pressure. Advanced aortic stenosis is a contraindication for the registered product. Verify the prescribed pressure goal and monitoring plan; report an unexpected fall promptly.",
+          "support": "partial",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "full",
+      "items": [
+        {
+          "text": "To reduce the risk of venous thrombosis, phlebitis and vascular impairment, small veins should not be used; intra-arterial administration and extravasation should be avoided, and the infusion site should be changed periodically to limit venous irritation.",
+          "support": "sourced",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        },
+        {
+          "text": "Nicardipine is not a beta-blocker and gives no protection against abrupt beta-blocker withdrawal; beta-blockers should be withdrawn gradually.",
+          "support": "sourced",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        },
+        {
+          "text": "The label advises closely monitoring response in patients with angina, heart failure, impaired hepatic function, portal hypertension, renal impairment and phaeochromocytoma.",
+          "support": "sourced",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The most common adverse reactions listed are headache, hypotension, tachycardia and nausea or vomiting.",
+          "support": "sourced",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Urgently report excessive pressure reduction, symptomatic hypotension, tachycardia, chest pain or new site damage. Activate emergency help for circulatory or neurological deterioration; follow authorised drug-cessation and reassessment procedures.",
+          "support": "partial",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "observe",
+      "text": "Closely monitor blood pressure and heart rate both during and after treatment.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Inspect the infusion site and vein for phlebitis or extravasation.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-NICARDIPINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Ask about headache and nausea.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "L-NICARDIPINE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report hypotension, chest pain or site damage promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NICARDIPINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Closely monitor blood pressure and heart rate during and after infusion; review the prescribed target and check for hypotension, tachycardia and access-site injury.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NICARDIPINE"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record observations and site checks.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    }
+  ],
+  "gaps": [
+    "Blood-pressure targets and transition to oral therapy: not included.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "433dbca3-0a86-44c2-835d-1051c1c93878",
+    "label_version": "6",
+    "effective_time": "20261109",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label describes nicardipine hydrochloride injection as a calcium channel blocker indicated for short-term treatment of hypertension when oral therapy is not feasible.",
-     "support": "sourced",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Choose and check the vein carefully: avoid small veins such as the back of the hand or wrist, and rotate the infusion site as the unit's protocol directs.",
-     "support": "partial",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label calls for closely monitoring the response in patients with angina, heart failure, impaired hepatic function, portal hypertension, renal impairment or phaeochromocytoma, and avoiding small veins (such as those on the back of the hand or wrist) and extravasation to reduce the risk of venous thrombosis, phlebitis and vascular impairment; it also notes nicardipine gives no protection against the dangers of abrupt beta-blocker withdrawal, so a beta-blocker should be withdrawn gradually.",
-     "support": "sourced",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "To reduce the risk of venous thrombosis, phlebitis and vascular impairment, small veins should not be used; intra-arterial administration and extravasation should be avoided, and the infusion site should be changed periodically to limit venous irritation.",
-     "support": "sourced",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    },
-    {
-     "text": "Nicardipine is not a beta-blocker and gives no protection against abrupt beta-blocker withdrawal; beta-blockers should be withdrawn gradually.",
-     "support": "sourced",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    },
-    {
-     "text": "The label advises closely monitoring response in patients with angina, heart failure, impaired hepatic function, portal hypertension, renal impairment and phaeochromocytoma.",
-     "support": "sourced",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The most common adverse reactions listed are headache, hypotension, tachycardia and nausea or vomiting.",
-     "support": "sourced",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate for marked hypotension, chest pain, tachycardia or a painful, red or swollen infusion site.",
-     "support": "partial",
-     "sources": [
-      "L-NICARDIPINE"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Monitor blood pressure and heart rate at the unit's frequency.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "assess",
-   "text": "Inspect the infusion site and vein for phlebitis or extravasation.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-NICARDIPINE"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Ask about headache and nausea.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "L-NICARDIPINE"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report hypotension, chest pain or site damage promptly.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-NICARDIPINE"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record observations and site checks.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Blood-pressure targets and transition to oral therapy: not included.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "433dbca3-0a86-44c2-835d-1051c1c93878",
-  "label_version": "6",
-  "effective_time": "20261109",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

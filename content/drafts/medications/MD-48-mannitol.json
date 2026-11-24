@@ -1,244 +1,260 @@
 {
- "med_id": "MD-48",
- "number": 48,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Mannitol",
- "drug_class": "Osmotic diuretic",
- "category": "neuro-seizure-icp",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Osmotic diuretic indicated for reduction of intracranial pressure and treatment of cerebral oedema, and of elevated intraocular pressure. Nursing focus: hypersensitivity, renal complications, central nervous system toxicity and fluid and electrolyte imbalance.",
- "batch": 5,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-MANNITOL",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-MANNITOL",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-48",
+  "number": 48,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Mannitol",
+  "drug_class": "Osmotic diuretic",
+  "category": "neuro-seizure-icp",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Osmotic diuretic indicated for reduction of intracranial pressure and treatment of cerebral oedema, and of elevated intraocular pressure. Nursing focus: hypersensitivity, renal complications, central nervous system toxicity and fluid and electrolyte imbalance.",
+  "batch": 5,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-MANNITOL",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-MANNITOL",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label describes mannitol injection as an osmotic diuretic indicated for reduction of intracranial pressure and treatment of cerebral oedema, and of elevated intraocular pressure.",
+          "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitor urine output, neurological status and fluid and electrolyte results, and report changes.",
+          "support": "partial",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for monitoring of fluid and electrolytes, serum osmolarity and renal, cardiac and pulmonary function, including urine output.",
+          "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        },
+        {
+          "text": "Assess renal, cardiac and pulmonary status before and during treatment. The registered label lists anuria, severe hypovolaemia and pre-existing severe pulmonary vascular congestion or pulmonary oedema as contraindications. Monitor for fluid shifts and toxicity, including worsening oxygenation; review ordered osmolality and osmol gap without assuming a universal threshold.",
+          "support": "partial",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Hypersensitivity reactions, including anaphylaxis, can occur; the label says to stop the infusion immediately if they develop.",
+          "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        },
+        {
+          "text": "Renal complications including renal failure: risk factors include pre-existing renal disease, nephrotoxic medicines and other diuretics; the label advises avoiding nephrotoxic drugs and discontinuing mannitol if renal function worsens.",
+          "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        },
+        {
+          "text": "Central nervous system toxicity (confusion, lethargy and coma) may occur during or after infusion, and concomitant neurotoxic drugs may potentiate it.",
+          "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        },
+        {
+          "text": "Fluid and electrolyte imbalance is also listed among the warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label notes that adverse reactions were identified in clinical studies or postmarketing reports, some reported voluntarily, so frequency cannot be estimated reliably.",
+          "support": "sourced",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Activate emergency help for severe hypersensitivity, acute breathing deterioration or circulatory compromise. Urgently report new pulmonary congestion, falling urine output, neurological changes or fluid and electrolyte derangements; follow authorised drug-cessation procedures.",
+          "support": "partial",
+          "sources": [
+            "L-MANNITOL"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Monitor urine output and renal function.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-MANNITOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check neurological status during and after the infusion.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-MANNITOL"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review electrolytes and osmolality results as ordered.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-MANNITOL"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Stop and report allergic signs, oliguria or new confusion.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MANNITOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess oxygenation, respiratory effort, cardiac status, urine output and ordered osmolality and osmol gap; urgently flag new pulmonary congestion or declining renal function.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MANNITOL"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record observations and results.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    }
+  ],
+  "gaps": [
+    "Intracranial pressure targets and neurocritical care guideline text were not read; this entry covers label content only.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-15",
+    "set_id": "8ad3145e-00e7-4412-b9a5-06f00f264f30",
+    "label_version": "23",
+    "effective_time": "20260421",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label describes mannitol injection as an osmotic diuretic indicated for reduction of intracranial pressure and treatment of cerebral oedema, and of elevated intraocular pressure.",
-     "support": "sourced",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitor urine output, neurological status and fluid and electrolyte results, and report changes.",
-     "support": "partial",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label calls for monitoring of fluid and electrolytes, serum osmolarity and renal, cardiac and pulmonary function, including urine output.",
-     "support": "sourced",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Hypersensitivity reactions, including anaphylaxis, can occur; the label says to stop the infusion immediately if they develop.",
-     "support": "sourced",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    },
-    {
-     "text": "Renal complications including renal failure: risk factors include pre-existing renal disease, nephrotoxic medicines and other diuretics; the label advises avoiding nephrotoxic drugs and discontinuing mannitol if renal function worsens.",
-     "support": "sourced",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    },
-    {
-     "text": "Central nervous system toxicity (confusion, lethargy and coma) may occur during or after infusion, and concomitant neurotoxic drugs may potentiate it.",
-     "support": "sourced",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    },
-    {
-     "text": "Fluid and electrolyte imbalance is also listed among the warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label notes that adverse reactions were identified in clinical studies or postmarketing reports, some reported voluntarily, so frequency cannot be estimated reliably.",
-     "support": "sourced",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Stop and call for help for allergic signs; report falling urine output, new confusion or drowsiness, or abnormal electrolyte results.",
-     "support": "partial",
-     "sources": [
-      "L-MANNITOL"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Monitor urine output and renal function.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-MANNITOL"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Check neurological status during and after the infusion.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-MANNITOL"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Review electrolytes and osmolality results as ordered.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "L-MANNITOL"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Stop and report allergic signs, oliguria or new confusion.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-MANNITOL"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record observations and results.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Intracranial pressure targets and neurocritical care guideline text were not read; this entry covers label content only.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-15",
-  "set_id": "8ad3145e-00e7-4412-b9a5-06f00f264f30",
-  "label_version": "23",
-  "effective_time": "20260421",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

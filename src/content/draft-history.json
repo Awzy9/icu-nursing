@@ -3443,6 +3443,20 @@
     "gaps": 2,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2cccc52a4df74f00",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-05": [
@@ -4526,6 +4540,20 @@
     "gaps": 6,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "51bd33c4c2d8fd51",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MAGNESIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-19": [
@@ -4722,6 +4750,20 @@
    {
     "hash": "38104944d9005b92",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 7,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5f61c981f2ef5abe",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-CALCIUM",
@@ -5119,6 +5161,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "37fb359adf8a091c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFAZOLIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-27": [
@@ -5164,6 +5220,20 @@
    {
     "hash": "c3d6a8506ed5f558",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-AZITHROMYCIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "b1489b163b3fe2eb",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-AZITHROMYCIN",
@@ -5511,6 +5581,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "e865f53d9141ddb3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NICARDIPINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-33": [
@@ -5580,6 +5664,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "52523a98e3ef3f6a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LABETALOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-34": [
@@ -5639,6 +5737,20 @@
    {
     "hash": "dd12905bf67a848d",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ESMOLOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "b32b1979712b80e0",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-ESMOLOL",
@@ -5764,6 +5876,20 @@
    {
     "hash": "13f7263cb14b8b09",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FUROSEMIDE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e604ce5a7b6fa4f1",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-FUROSEMIDE",
@@ -6654,6 +6780,20 @@
    {
     "hash": "069356f2262fceca",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "654b9cdc497fc5d1",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-MANNITOL",
