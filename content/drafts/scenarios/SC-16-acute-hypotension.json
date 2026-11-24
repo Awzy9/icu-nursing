@@ -319,7 +319,7 @@
           ]
         },
         {
-          "text": "Continue repeating blood-pressure readings and recording the results for a few more minutes, delaying a further emergency call until the trend is clearer despite the new confusion and cold skin.",
+          "text": "Repeat blood-pressure readings and record the trend for a few more minutes before calling again, despite the patient's new confusion and cold skin.",
           "points": 0,
           "next": null,
           "scope": "monitoring",
@@ -331,7 +331,7 @@
           ]
         },
         {
-          "text": "Sit the patient upright to improve breathing, leave the bedside to find a doctor and report the earlier pressure readings when you locate the team, then return to reassess the patient.",
+          "text": "Sit the patient upright to improve breathing and leave the bedside to find a doctor; return once the team has been located to reassess the patient.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

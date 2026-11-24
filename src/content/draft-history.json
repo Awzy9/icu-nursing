@@ -13325,6 +13325,22 @@
     "gaps": 6,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "74ead18b78783348",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -13441,6 +13457,21 @@
    },
    {
     "hash": "e7cf8cb380e465cb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "724dd90d56513b82",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13639,6 +13670,27 @@
    },
    {
     "hash": "53b6525374fa1a48",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-BP-DISCORDANCE-2025",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-EVERDAC-2025",
+     "S-NIBP-META-2023",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "60326d72ff1bb8ff",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13931,6 +13983,22 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "75b6a589e367af06",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-BTS-ASPIRATION-2023",
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-19": [
@@ -14054,6 +14122,22 @@
    },
    {
     "hash": "fe855a4d65ee849d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-ADRENALIN-IM-2025",
+     "S-AHRQ-TS",
+     "S-NICE-NG258-2026",
+     "S-RCUK-SPECIAL-2025"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "6a14f228aa7211dc",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

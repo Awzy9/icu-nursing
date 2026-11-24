@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Give an antihistamine from ward stock and continue the antibiotic, documenting the response before calling for help.",
+          "text": "Give an antihistamine from ward stock to address the allergic symptoms and continue the antibiotic infusion, documenting the response and observing for further deterioration before deciding whether to activate emergency treatment.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "text": "Restart the suspected antibiotic at a reduced rate once symptoms settle rather than obtaining a specialist-led plan.",
+          "text": "Restart the suspected antibiotic at a reduced rate once symptoms settle; monitor for recurrence instead of flagging the allergy or seeking specialist advice.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

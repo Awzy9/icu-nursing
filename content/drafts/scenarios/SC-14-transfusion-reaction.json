@@ -137,7 +137,7 @@
           ]
         },
         {
-          "text": "Give a fever-reducing medicine independently and continue transfusion while observing the response.",
+          "text": "Treat the fever with a medicine selected independently from ward stock, continue the transfusion and monitor the temperature and symptoms; notify the clinical team only if the fever persists after medication and further observations.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -221,7 +221,7 @@
           ]
         },
         {
-          "text": "Decide the reaction type and recommend treatment before escalating the circulatory deterioration.",
+          "text": "Use the symptoms and falling pressure to decide the reaction type, recommend treatment to the doctor and defer emergency escalation until the cause has been established.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

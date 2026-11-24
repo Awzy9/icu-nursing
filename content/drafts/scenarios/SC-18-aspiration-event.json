@@ -137,7 +137,7 @@
           ]
         },
         {
-          "text": "Flush the tube and continue the feed, then reassess cough and oxygenation.",
+          "text": "Flush the tube to clear the suspected obstruction and resume feeding, then reassess coughing and oxygenation before seeking review of the tube position or new respiratory deterioration.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "text": "Inject air and listen over the stomach to establish position, then resume use based on the sound.",
+          "text": "Inject air and listen over the stomach to determine tube position, document the sound as confirmation and resume feed and medicines without obtaining the locally approved verification or authorisation to use the tube.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -276,7 +276,7 @@
           ]
         },
         {
-          "text": "Record that the patient coughed during feeding and that symptoms subsequently improved, without documenting the timing, verification method, interventions or the team's assessment and response; pass on only that brief account at handover.",
+          "text": "Record that the patient coughed during feeding and symptoms improved; omit the timing, verification method, interventions and team response from the record and handover.",
           "points": 1,
           "next": null,
           "scope": "independent_nursing",
@@ -288,7 +288,7 @@
           ]
         },
         {
-          "text": "Omit the event from handover and safety reporting because the patient's condition has improved.",
+          "text": "Omit the event from handover and safety reporting because the patient's condition has improved, leaving the next shift unaware of the respiratory deterioration and uncertainty over tube position.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
