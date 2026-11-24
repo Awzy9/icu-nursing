@@ -66,6 +66,11 @@
       "id": "S-ICS-SE-2025",
       "read": "partial",
       "use": "2025 multidisciplinary consensus, selected HTML continuous EEG and treatment-failure sections; UK context, not local nursing protocol."
+    },
+    {
+      "id": "S-AHA-FA-SEIZURE-2024",
+      "read": "partial",
+      "use": "2024 AHA/Red Cross first-aid section 6.6, selected recommendation and rationale text. Community setting; ICU positioning competency remains outstanding."
     }
   ],
   "required_sources": [
@@ -124,14 +129,15 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure. General seizure first-aid precautions supplement, not replace, the ICU airway and emergency protocol. Never force positioning during active convulsions.",
+          "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure. General seizure first-aid precautions supplement, not replace, the ICU airway and emergency protocol. Never force positioning during active convulsions. During convulsions or impaired alertness, avoid oral medicines, food and drink. The first-aid guidance supports injury prevention and aspiration precautions; in ICU, coordinate positioning with the airway team to protect invasive devices and ventilation.",
           "consequence": "Rapid emergency activation, timing and parallel glucose assessment may reduce treatment delay and identify a reversible contributor.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
             "S-AHRQ-TS",
             "S-JBDS-HYPO-2023",
-            "S-CDC-SEIZURE-2024"
+            "S-CDC-SEIZURE-2024",
+            "S-AHA-FA-SEIZURE-2024"
           ]
         },
         {
@@ -314,7 +320,8 @@
       "Document the first treatment's agent, time and response; persistent convulsions require time-sensitive authorised escalation and continued respiratory monitoring.",
       "Persistent unexplained impaired consciousness after convulsions, or paralysis masking motor signs in a high-risk patient, warrants urgent specialist assessment for EEG monitoring.",
       "The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped.",
-      "The 2025 Intensive Care Society consensus supports continuous EEG when consciousness remains depressed after a seizure or when status epilepticus is refractory. A processed sedation-depth index (such as BIS) is not a substitute for diagnostic EEG. If continuous EEG is unavailable, urgently coordinate specialist advice and the monitoring or transfer plan; no absence of movement establishes seizure control."
+      "The 2025 Intensive Care Society consensus supports continuous EEG when consciousness remains depressed after a seizure or when status epilepticus is refractory. A processed sedation-depth index (such as BIS) is not a substitute for diagnostic EEG. If continuous EEG is unavailable, urgently coordinate specialist advice and the monitoring or transfer plan; no absence of movement establishes seizure control.",
+      "After convulsions, reassess alertness and swallowing safety before oral intake or oral medication; coordinate airway-safe positioning with the team rather than forcing a turn."
     ],
     "links": [
       {
