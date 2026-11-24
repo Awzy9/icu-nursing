@@ -30,7 +30,7 @@
  "required_sources": [
   "An employer-approved competency framework (the AACN framework could not be read)"
  ],
- "setup": "A personal map of the 25 skills (SK-01 to SK-25) with four self-rating levels.",
+ "setup": "A personal map of the 25 skills (SK-01 to SK-25) with four self-rating levels. These ratings describe personal confidence and learning needs only. Selecting independent does not establish observed proficiency, credentialing, permission to perform a procedure, or freedom from local supervision requirements.",
  "skills": [
   "SK-01",
   "SK-02",
