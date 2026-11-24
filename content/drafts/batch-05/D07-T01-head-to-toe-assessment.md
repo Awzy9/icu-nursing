@@ -131,16 +131,16 @@ D. Complete the rest of the assessment first and then mention the finding at the
 **Why not C:** Family confirmation is not required before reporting.
 **Why not D:** Handover is too late for a possible acute neurological event.
 
-**Q4 (scope).** Which statement about the Open RN checklist is accurate?
-A. It is a validated ICU assessment standard for critical care and defines the frequency of ICU assessments for each patient.
-B. It sets numeric thresholds for escalation in every body system and for every group of patients, including children and pregnant patients.
-C. It guides a routine, general, daily assessment by an entry-level nurse; focused and specialty assessments follow unit guidelines.
-D. It replaces the unit's monitoring and early-warning policies when a patient is in a critical care area or an isolation room.
+**Q4 (judgment).** During admission to ICU, a nurse completes the general head-to-toe checklist for a ventilated patient. The checklist does not include the patient's arterial waveform, ventilator trends or continuous infusion checks. What should the nurse do?
+A. Treat the completed checklist as sufficient unless the patient develops a new symptom during the shift.
+B. Use the general checklist to choose monitoring intervals for the ventilator and arterial line.
+C. Add the unit's focused device assessments and individualized critical-care monitoring plan.
+D. Replace the structured physical assessment with monitor observations because the patient is ventilated.
 **Answer: C.**
-**Why correct:** The checklist presents itself as a routine, general, daily assessment for an entry-level nurse. It does not replace focused or specialty assessments, which follow unit guidelines, and it is not an ICU-specific standard.
-**Why not A:** The checklist is a general inpatient tool, not an ICU-specific standard, so this does not follow.
-**Why not B:** It does not give numeric thresholds.
-**Why not D:** It supplements, not replaces, local policies.
+**Why correct:** The Open RN checklist is a routine general inpatient assessment aid for entry-level nursing, not a validated ICU-specific monitoring standard. It provides a systematic physical assessment but does not define ventilation, haemodynamic or infusion surveillance. Combine it with the unit's focused assessments and patient-specific monitoring plan; prioritize new abnormalities and urgent threats over completion of a routine checklist.
+**Why not A:** Completing a general checklist does not establish that essential critical-care devices and treatment trends have been assessed.
+**Why not B:** Specialty monitoring intervals require an authorized unit policy and clinical assessment, not inference from a general checklist.
+**Why not D:** Electronic monitoring complements rather than replaces patient examination and focused bedside assessment.
 
 **Q5 (documentation).** A nurse is documenting the respiratory assessment of a patient on oxygen. Which entry best documents the oxygen device?
 A. "Patient on oxygen", because the equipment itself is visible to the next nurse who enters the room.

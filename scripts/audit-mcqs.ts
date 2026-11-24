@@ -79,7 +79,7 @@ const byDomain: Record<string, number> = {}; for (const r of rows) { const d = /
 const stemCount: Record<string, number> = {}; for (const a of all) { const k = a.stem.toLowerCase().replace(/[^a-z ]/g, "").split(/\s+/).slice(0, 8).join(" "); stemCount[k] = (stemCount[k] ?? 0) + 1; }
 const repeatedStems = Object.entries(stemCount).filter(([, n]) => n >= 4).sort((a, b) => b[1] - a[1]);
 const out = [
-  "# MCQ audit (automated; 2026-11-15)",
+  `# MCQ audit (automated; ${new Date().toISOString().slice(0, 10)})`,
   `Questions audited: **${total}** across ${files.length} drafts. Answer positions A/B/C/D: ${pos.A}/${pos.B}/${pos.C}/${pos.D}.`,
   `Correct option is the unique longest: **${longest}** (${((100 * longest) / total).toFixed(1)} %). Keys with absolute wording: ${correctAbsolute}; distractors with absolute wording: ${distractorAbsolute}.`,
   `Correct option is the unique shortest: **${shortest}** (${((100 * shortest) / total).toFixed(1)} %); a random key would be the unique longest or shortest in roughly 20-25 % of questions each.`,
@@ -91,5 +91,6 @@ const out = [
   "", "## Flags", ...flagged.map((r) => `- ${r.topic} ${r.q} (key ${r.answer}): ${r.issues.join("; ")}`),
   "", `Question-type tags: ${Object.entries(tags).map(([k, v]) => `${k} ${v}`).join(", ")}.`, "", "## Per topic (positions A/B/C/D; unique-longest keys)", "| Topic | MCQs | A/B/C/D | Longest-key | Mean key/distractor length |", "|---|---|---|---|---|", ...perTopic,
 ].join("\n");
-writeFileSync(join(root, "MCQ_AUDIT.md"), out + "\n");
+if (!process.argv.includes("--check")) writeFileSync(join(root, "MCQ_AUDIT.md"), out + "\n");
 console.log(out.split("\n").slice(0, 6).join("\n"));
+if (process.argv.includes("--check") && (dupOptions.length || dupStems.length)) process.exitCode = 1;

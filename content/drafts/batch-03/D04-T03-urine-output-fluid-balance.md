@@ -135,16 +135,16 @@ D. Ask the next shift to deal with the discrepancy once the patient has been han
 **Why not C:** A transparent correction can improve the cumulative balance, but the time distribution may remain unknown. Do not allocate the total to individual hours unless supported by actual measurements.
 **Why not D:** The missing drainage data may conceal bleeding or another complication; assess and report the gap rather than deferring it.
 
-**Q5 (prioritization).** Which patient needs the nurse first?
-A. A stable balance, normal output, normal observations and no symptoms during this shift.
-B. Output below the threshold, heart rate rising, cool peripheries and new confusion.
-C. A patient who is waiting for a scheduled weight that is part of the usual ward routine.
-D. A patient with a dry mouth who is asking for a drink but has normal observations and output.
+**Q5 (prioritization).** Four ICU patients are due fluid-balance reassessment. Each has a different change from the previous shift. Which patient requires immediate assessment for possible circulatory deterioration?
+A. A patient with a mildly positive balance, unchanged observations and adequate urine output.
+B. A patient with falling urine output, rising heart rate, cool peripheries and new confusion.
+C. A patient with an overdue routine weight, stable perfusion and unchanged oxygen requirements.
+D. A patient reporting thirst, with stable observations and no recent change in urine output.
 **Answer: B.**
 **Why correct:** Low urine output, a rising heart rate, cool peripheries and new confusion together point to poor perfusion, which needs urgent escalation. Assess airway, breathing and circulation and activate help while checking the measurements. ESICM 2025 supports capillary refill with complementary skin findings and assessment of fluid responsiveness before continuing fluids in persistent shock after initial resuscitation.
-**Why not A:** This patient is stable with no abnormal findings.
-**Why not C:** A routine scheduled task that can wait.
-**Why not D:** Comfort care is needed but the observations are normal, so it is not urgent.
+**Why not A:** Positive balance requires interpretation alongside the clinical state; the observations do not indicate the same immediate circulatory danger.
+**Why not C:** Obtain the scheduled weight when safe, but this routine measurement does not outweigh new signs of impaired perfusion.
+**Why not D:** Thirst merits assessment and appropriate comfort or hydration planning, but the stable observations make this lower priority than acute deterioration.
 
 **Q6 (scope).** Which action belongs to the prescriber rather than the nurse?
 A. Recording hourly urine volumes on the fluid balance chart as they are measured.

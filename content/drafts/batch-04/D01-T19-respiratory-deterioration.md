@@ -122,16 +122,16 @@ D. Cross out both scales so that staff must rely on their own judgement about th
 **Why not C:** Smoking or a COPD diagnosis alone does not establish confirmed hypercapnic respiratory failure or authorize Scale 2.
 **Why not D:** The unused scale should be crossed out, not both.
 
-**Q4 (understanding).** For which group does RCP say NEWS2 should not be used?
-A. Adults aged over 65 years, because the oxygen saturation bands were not developed for older patients.
-B. Patients receiving supplemental oxygen, because oxygen use makes the saturation reading unreliable for scoring.
-C. Children under 16 and women who are pregnant, because their responses to acute illness differ.
-D. Patients who have been on the intensive care unit for more than a week, because their baseline values have changed.
+**Q4 (judgment).** A hospital has adult, paediatric and maternity wards. A new nurse proposes using the adult NEWS2 chart for a 14-year-old and a pregnant adult with new breathlessness. What is the safest approach?
+A. Use adult NEWS2 for both, adding a note that their physiology may differ from the general adult population.
+B. Use adult NEWS2 for the pregnant patient and the paediatric tool only when a child needs oxygen.
+C. Use the appropriate paediatric or obstetric pathway and escalate clinical concern promptly.
+D. Apply adult NEWS2 initially and change the chart only if the calculated score exceeds the escalation threshold.
 **Answer: C.**
-**Why correct:** RCP states NEWS should not be used in children under 16 or in pregnancy.
-**Why not A:** It is intended for adults.
-**Why not B:** Oxygen use is part of the score.
-**Why not D:** Length of stay is not a criterion.
+**Why correct:** The RCP NEWS2 framework is not intended for children under 16 or pregnant patients. Use the locally authorized age- or pregnancy-specific monitoring and escalation system. New breathlessness requires clinical assessment and urgent escalation if indicated, regardless of whether a score is available. Do not transfer adult NEWS2 thresholds to a different population or delay care to calculate a score.
+**Why not A:** Documenting a population difference does not validate the adult scoring system for groups it excludes.
+**Why not B:** Pregnancy also requires its applicable monitoring pathway; oxygen use does not determine whether a child needs an age-specific tool.
+**Why not D:** Waiting for an invalid score to cross a threshold can delay recognition and treatment of deterioration.
 
 **Q5 (understanding).** Why does RCP recommend recording the oxygen device and flow rate as well as the saturation?
 A. A flow rate alone does not define how much oxygen the patient receives, so the device is needed too.

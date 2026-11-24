@@ -145,16 +145,16 @@ D. The tidal volume must be too low, so the nurse should increase it on the vent
 **Why not B:** Mode changes are not nursing decisions.
 **Why not D:** Setting changes are prescriber decisions.
 
-**Q5 (understanding).** Which statement about the educational review is correct?
-A. It is a clinical practice guideline that nurses should follow without any modification at the bedside in every unit.
-B. It is a trade-name operating manual written for a single ventilator model used in one hospital.
-C. It is an educational review with a selective overview and the authors' own interpretation, not a clinical guideline.
-D. It prescribes the ventilator settings that should be used for every patient who needs mechanical ventilation.
+**Q5 (judgment).** A nurse reads an educational review describing a ventilator mode under a trade name. The local ventilator has a similarly named mode, but the available device documentation describes a different targeting scheme. How should the nurse use the review?
+A. Assume the similarly named modes work identically and use the review's description as the bedside operating instruction.
+B. Apply the review's example settings to the local ventilator whenever the patient's oxygen requirement increases.
+C. Use it to understand general principles; verify local mode behavior with the device manual and trained team.
+D. Treat the review as a clinical guideline and request a mode change based solely on its published examples.
 **Answer: C.**
-**Why correct:** The review itself says it is a selective overview and states the author's interpretation.
-**Why not A:** It is not a guideline: the authors describe it as a selective overview with their interpretation.
-**Why not B:** It is brand-neutral and gives trade names only as examples.
-**Why not D:** It says optimal settings are patient-specific.
+**Why correct:** The cited JICS educational review provides a selective overview of physiological principles and the authors' interpretation, not a clinical practice guideline or device-specific operating manual. Similar trade names do not guarantee equivalent mode behavior. Verify how the actual ventilator implements the mode using its instructions and the trained team, assess the patient and report discrepancies. Mode and setting choices follow the authorized clinical plan.
+**Why not A:** Trade names may differ in implementation across manufacturers; the review is not a substitute for model-specific instructions.
+**Why not B:** Example settings are not an individualized prescription, and oxygen deterioration requires clinical assessment rather than automatic changes.
+**Why not D:** An educational overview supports understanding but does not establish a treatment order or universal mode recommendation.
 
 **Q6 (scope).** Which decision requires specific authorization or a credentialed protocol rather than routine bedside nursing assessment?
 A. Recording the exhaled tidal volume and pressures at the interval the unit sets.

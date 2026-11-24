@@ -135,16 +135,16 @@ D. Apply moisturiser under the securement before each tape change, so that the s
 **Why not C:** Long periods without skin checks risk unnoticed injury.
 **Why not D:** Added moisture under a device can worsen skin damage.
 
-**Q5 (prioritization).** Which finding needs the nurse's attention first?
-A. A mild redness at the corner of the mouth where the tape sits, with intact skin.
-B. A cuff pressure measurement that is due at the next scheduled check.
-C. The head of the bed at 30° with the oral care completed.
-D. A flat capnography trace with falling SpO₂ and no chest movement.
+**Q5 (prioritization).** During the airway safety round, a nurse receives four updates about intubated patients. Which finding requires an immediate emergency response rather than a routine airway-care intervention?
+A. A loose corner of tube fixation in a stable patient whose tube marking and ventilation are unchanged.
+B. A cuff pressure check due shortly in a patient with unchanged oxygenation and delivered volumes.
+C. New lip redness beneath the fixation device, with intact skin and stable respiratory observations.
+D. Sudden loss of capnography, falling oxygen saturation and absent chest movement.
 **Answer: D.**
 **Why correct:** Loss of capnography with desaturation and absent chest movement is a ventilation emergency. Call urgently and assess airway, breathing and circulation immediately; support oxygenation and ventilation under the local emergency pathway. The trained airway team must evaluate displacement, obstruction, circuit failure and other causes in parallel; do not delay rescue while troubleshooting the monitor. Assess for cardiac arrest if circulation is absent.
-**Why not A:** Mild redness with intact skin needs care but is not an immediate threat.
-**Why not B:** A scheduled routine check can wait for its time.
-**Why not C:** This describes correct care, not a problem.
+**Why not A:** Loose fixation needs prompt assessment and competent securement without displacing the airway, but the described patient has no current ventilation failure.
+**Why not B:** A planned cuff pressure assessment is important but does not take precedence over active loss of ventilation.
+**Why not C:** Device-related pressure damage needs assessment and relief with safe airway securement, but there is no immediate respiratory compromise in this option.
 
 **Q6 (scope).** Which action requires an authorized airway clinician or team under the local airway protocol, rather than independent action by an untrained staff member?
 A. Measuring cuff pressure with a manometer at the policy interval.
