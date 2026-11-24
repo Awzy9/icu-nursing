@@ -25,7 +25,7 @@ D. Hung from the drip stand above the chair, which makes the readings easier to 
 **Why not D:** Raising the bottle above the insertion site is unsafe.
 **Trace:** N-BTS-PCS-2023 — Bottle below insertion site; keep drain upright.
 
-**Q2 (judgment).** A patient who had a drain placed for a large effusion develops repetitive coughing and chest pain as the fluid drains. What is the most appropriate response?
+**Q2 (judgment).** During controlled drainage of a large pleural effusion, a patient develops repetitive coughing and new chest pain. The drain is being used for fluid removal, not treatment of a bubbling pneumothorax. What is the most appropriate response?
 A. Encourage the patient to keep coughing to clear the lungs and recheck the drainage in an hour.
 B. Increase the drainage by lowering the bottle, so the effusion clears faster and the symptoms settle.
 C. Give the next analgesia and observe, since coughing is common while a lung re-expands.
@@ -34,7 +34,7 @@ D. Stop effusion drainage per plan, assess and urgently alert the pleural team.
 **Why correct:** Repetitive cough or chest pain during drainage of a large effusion can warn of a serious complication including re-expansion pulmonary oedema. BTS advises prompt clamping of the effusion drain in this setting. Follow the written fluid-drainage instructions and assess the patient immediately; do not apply this response to a bubbling pneumothorax drain.
 **Why not A:** The symptoms may signal re-expansion pulmonary oedema.
 **Why not B:** Faster drainage is the opposite of what the symptoms call for.
-**Why not C:** Treating the symptom and waiting delays recognition of a dangerous complication.
+**Why not C:** Analgesia alone does not address the possibility of a drainage-related complication. Assess breathing and circulation and escalate promptly while following the written effusion-drainage plan.
 **Trace:** N-BTS-PCS-2023 — Clamp promptly with repetitive coughing/chest pain (RPO); controlled drainage of large effusions.
 
 **Q3 (safety).** The drain bottle is bubbling and a colleague wants to clamp the tubing before taking the patient for transport. What is the best response?

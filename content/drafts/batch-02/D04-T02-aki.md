@@ -98,14 +98,14 @@ A 68-year-old woman with septic shock is on vasopressors and has received an ami
 **Why potassium changes the urgency.** In this case, low urine output has been present for five hours, but the new high potassium result already needs urgent review. Give the potassium value and time, ECG findings if available, creatinine trend, recent medication and contrast exposure, and urine output with its duration. This helps the team assess immediate risk and possible contributors while deciding the next steps.
 
 ## 17. MCQs
-**Q1 (monitoring).** An 80 kg patient on day 2 of septic shock has produced 20 mL of urine per hour for the last 5 hours. The catheter is draining freely. What is the best nursing action?
+**Q1 (monitoring).** An 80 kg patient on day 2 of septic shock has produced 20 mL of urine per hour for the last 5 hours. The catheter is draining freely. A colleague suggests waiting until the urine-output diagnostic duration is met. What is the best nursing action?
 A. Continue hourly checks and report the total at the end of the shift, because the output is only slightly low and the catheter is working.
 B. Give a fluid bolus from the ward stock to improve the output, since low output after surgery usually means dehydration.
 C. Increase the observation interval to every four hours, so that the patient is not disturbed so often during the night.
 D. Report to the prescriber now as possible AKI, giving the output trend and risk factors, and prepare for tests.
 **Answer: D.**
 **Why correct:** The patient has sustained urine output below 0.5 mL/kg/h (40 mL/h here), but has not yet met the NICE adult duration criterion of more than 6 hours. Escalate now, assess perfusion and fluid balance, verify measurement and catheter patency, and prepare ordered investigations; do not wait for a formal criterion or assume a fluid bolus is indicated.
-**Why not A:** Delaying to the end of the shift ignores a developing criterion.
+**Why not A:** The observed output is 0.25 mL/kg/h. A developing warning sign warrants assessment now; a diagnostic duration criterion is not a waiting period before escalation.
 **Why not B:** Fluids need an order, and the cause may not be hypovolaemia.
 **Why not C:** Less frequent monitoring is inappropriate when output is falling.
 

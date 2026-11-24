@@ -124,7 +124,7 @@ D. Ask whether IV fluids are still needed and how oral and enteral intake should
 **Why not B:** Review the indication and follow the authorized adjustment or cessation plan; do not independently stop an essential infusion.
 **Why not C:** Delayed charting reduces accuracy.
 
-**Q4 (safety).** A nurse notices that a drain output was not recorded for six hours. What is the best response?
+**Q4 (safety).** During fluid-balance reconciliation, a nurse notices a six-hour gap in drain-output documentation. The collection container has measurable fluid but there is no reliable record of when it accumulated. What is the best response?
 A. Estimate the volume from the previous hours and record it as if it had been measured at the correct time.
 B. Record the volume measured now with the correct time, note the gap, correct the balance per policy and report.
 C. Leave the gap unexplained since the cumulative balance can no longer be corrected after so many hours.
@@ -132,7 +132,7 @@ D. Ask the next shift to deal with the discrepancy once the patient has been han
 **Answer: B.**
 **Why correct:** Accurate, honest documentation and reporting protect the patient; NICE advises reporting mismanagement incidents. Reassess the patient and the drain now, record the actual measured volume and the interval if known, distinguish measured from estimated data, and document any uncertainty rather than inventing hourly values.
 **Why not A:** Estimating and recording as measured is falsification.
-**Why not C:** The balance can be corrected with a transparent note.
+**Why not C:** A transparent correction can improve the cumulative balance, but the time distribution may remain unknown. Do not allocate the total to individual hours unless supported by actual measurements.
 **Why not D:** The missing drainage data may conceal bleeding or another complication; assess and report the gap rather than deferring it.
 
 **Q5 (prioritization).** Which patient needs the nurse first?

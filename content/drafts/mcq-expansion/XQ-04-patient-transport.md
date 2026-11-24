@@ -37,14 +37,14 @@ D. Disconnect the syringe drivers and carry them in the bag to keep the trolley 
 **Why not D:** Interrupting infusions without a plan is unsafe.
 **Trace:** N-ICS-TRANSFER-2026 — Chapter 19, sections 19.1–19.8 and recommendations 74–75; monitoring and safe equipment arrangement.
 
-**Q3 (monitoring).** A patient is going for a scan and return that will take about forty minutes, and the vasoactive syringe is nearly empty. What does the transfer guidance support?
+**Q3 (monitoring).** Before a non-emergency scan, the transport team estimates a forty-minute round trip. The vasoactive syringe is nearly empty and unexpected delays are possible. What preparation does the cited UK transfer guidance support?
 A. Starting the transfer and replacing the syringe at the scanner, because a change takes a moment.
 B. Asking the transport assistant to fetch another syringe if the infusion runs out while the patient is in the scanner.
 C. Stopping the infusion for the scan, since the patient will be lying still and should not need it.
 D. Making sure there is enough medication for at least twice the planned duration of the transfer.
 **Answer: D.**
 **Why correct:** The UK ICS 2026 medication contingency recommendation specifies supplies for at least twice the planned journey. Before departure, also calculate oxygen needs for the intended support modality, possible delays and changes in demand; verify power and backup resources under local policy.
-**Why not A:** Changes during transfer are riskier than planning ahead.
+**Why not A:** Planning a syringe change in an unfamiliar environment adds avoidable risk. Confirm adequate medication supply and a safe changeover plan with the trained team before departure, without interrupting critical therapy.
 **Why not B:** A transport assistant cannot prepare or give critical infusions.
 **Why not C:** Stopping a critical infusion without a plan risks deterioration.
 **Trace:** N-ICS-TRANSFER-2026 — Recommendation 65 and section 17.11: sufficient medication and oxygen reserves.
