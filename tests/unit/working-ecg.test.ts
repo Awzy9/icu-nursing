@@ -36,6 +36,14 @@ describe("ECG rhythm exercise data", () => {
     }
   });
 
+  it("orders every schematic trace strictly forward in time with no conflicting timestamps", () => {
+    for (const e of exercises) {
+      for (let i = 1; i < e.trace.points.length; i++) {
+        expect(e.trace.points[i]![0], e.key).toBeGreaterThan(e.trace.points[i - 1]![0]);
+      }
+    }
+  });
+
   it("gives every exercise a unique key", () => {
     const keys = exercises.map((e) => e.key);
     expect(new Set(keys).size).toBe(keys.length);

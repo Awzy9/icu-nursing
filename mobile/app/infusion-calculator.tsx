@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Linking, Pressable, Text, TextInput, View } from "react-native";
 import { Stack } from "expo-router";
-import { doseToPumpRate, infusionDuration, parsePositiveDecimal, volumetricRate, type ConcentrationUnit, type DoseUnit, type DurationUnit } from "../src/core/infusion-calculator";
+import { doseToPumpRate, equationSign, infusionDuration, parsePositiveDecimal, volumetricRate, type ConcentrationUnit, type DoseUnit, type DurationUnit } from "../src/core/infusion-calculator";
 import { useApp } from "../src/state/app";
 import { Callout, Card, Chip, H1, H2, NavCard, P, Screen } from "../src/ui/components";
 import { radii, space, type } from "../src/ui/theme";
@@ -62,10 +62,10 @@ export default function InfusionCalculatorScreen() {
   const doseMgHour = totalDose * (doseUnit === "mcg/min" ? 60 / 1000 : 1);
   const concentrationMgMl = concentrationNumber * (concentrationUnit === "mcg/mL" ? 1 / 1000 : 1);
   const formula = result === null ? null : mode === "volumetric"
-    ? `${fmt(volumeNumber)} mL ÷ ${fmt(hours)} h = ${fmt(result)} mL/h`
+    ? `${fmt(volumeNumber)} mL ÷ ${fmt(hours)} h ${equationSign(volumeNumber, hours, result)} ${fmt(result)} mL/h`
     : mode === "duration"
-      ? `${fmt(volumeNumber)} mL ÷ ${fmt(quantityNumber)} mL/h = ${fmt(result)} h`
-      : `${fmt(doseMgHour)} mg/h ÷ ${fmt(concentrationMgMl)} mg/mL = ${fmt(result)} mL/h` ;
+      ? `${fmt(volumeNumber)} mL ÷ ${fmt(quantityNumber)} mL/h ${equationSign(volumeNumber, quantityNumber, result)} ${fmt(result)} h`
+      : `${fmt(doseMgHour)} mg/h ÷ ${fmt(concentrationMgMl)} mg/mL ${equationSign(doseMgHour, concentrationMgMl, result)} ${fmt(result)} mL/h` ;
 
   return (
     <Screen>
@@ -81,6 +81,7 @@ export default function InfusionCalculatorScreen() {
         "Changing a calculation mode or unit clears the affected input, so you must re-enter its value for the selected unit.",
         "يؤدي تغيير طريقة الحساب أو وحدة القياس إلى مسح القيمة المتأثرة لتعيد إدخالها بوحدتها الصحيحة."
       )}</P>
+      <P muted small>{label("Use a decimal point for values with three decimal places; do not enter thousands separators.", "استخدم النقطة العشرية للقيم ذات ثلاث خانات عشرية، ولا تستخدم فواصل الآلاف.")}</P>
       <H2>{label("What would you like to calculate?", "ماذا تريد أن تحسب؟")}</H2>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
         <Chip label={label("Rate (mL/h)", "المعدل")} selected={mode === "volumetric"} onPress={() => { if (mode !== "volumetric") { setMode("volumetric"); setQuantity(""); } }} />

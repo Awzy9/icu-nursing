@@ -17,6 +17,28 @@ describe("infusion calculator", () => {
     expect(screen.getByText("100 mL/h")).toBeTruthy();
   });
 
+  it("rejects ambiguous or nondecimal entry instead of silently converting it", () => {
+    render(<InfusionCalculator locale="en" />);
+    enter("Duration", "2");
+    for (const value of ["1,000", "1e3", "0x10", "Infinity"]) {
+      enter("Volume (mL)", value);
+      expect(screen.queryByText(/^[\\d,.]+ mL\\/h$/)).toBeNull();
+    }
+    enter("Volume (mL)", "1,5");
+    expect(screen.getByText("0.75 mL/h")).toBeTruthy();
+  });
+
+  it("rejects ambiguous dose and concentration inputs", () => {
+    render(<InfusionCalculator locale="en" />);
+    enter("Dose rate", "6");
+    enter("Solution concentration", "1,000");
+    expect(screen.queryByText("6 mL/h")).toBeNull();
+    enter("Solution concentration", "2");
+    expect(screen.getByText("3 mL/h")).toBeTruthy();
+    enter("Dose rate", "1e3");
+    expect(screen.queryByText("3 mL/h")).toBeNull();
+  });
+
   it("calculates a fixed dose rate from concentration", () => {
     render(<InfusionCalculator locale="en" />);
     enter("Dose rate", "6");
