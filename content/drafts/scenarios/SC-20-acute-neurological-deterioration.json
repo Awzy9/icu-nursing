@@ -42,10 +42,14 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-ACS-TBI-2024",
+      "read": "partial",
+      "use": "ACS 2024 TBI Table 10, printed page 87, serial components/pupil monitoring and urgent repeat imaging after neurological decline"
     }
   ],
   "required_sources": [
-    "Neurological observation and deterioration guidance for critical care and neurosurgical units",
     "Unit observation chart, frequency and escalation policy",
     "Licence for reproducing GCS wording (not requested)"
   ],
@@ -54,7 +58,7 @@
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "NICE NG232 covers people with a head injury, mainly in emergency departments and early hospital care; the scenario is framed as a fictional head-injured patient and is not evidence for other causes of neurological deterioration.",
     "Numerical triggers, observation intervals and imaging criteria in NG232 are deliberately not used.",
-    "Causes of deterioration and their treatment are not drawn from a source read."
+    "ACS 2024 TBI-specific serial assessment and urgent repeat imaging recommendations now linked. Causes and treatment of nontraumatic deterioration remain outside this case."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -94,12 +98,13 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "NICE NG232 prioritises urgent reassessment for deteriorating neurological signs. Do not wait for repeated scoring before escalating an unstable patient; record the assessable GCS components and explain factors limiting assessment. For head injury observations include pupil size and reactivity, limb movement and vital signs. New pupil inequality or asymmetric movement merits urgent reassessment. Check and document factors such as intubation, sedation or paralysis; if any GCS component is non-testable, do not invent a score or calculate a misleading total.",
+          "feedback": "NICE NG232 prioritises urgent reassessment for deteriorating neurological signs. Do not wait for repeated scoring before escalating an unstable patient; record the assessable GCS components and explain factors limiting assessment. For head injury observations include pupil size and reactivity, limb movement and vital signs. New pupil inequality or asymmetric movement merits urgent reassessment. Check and document factors such as intubation, sedation or paralysis; if any GCS component is non-testable, do not invent a score or calculate a misleading total. ACS 2024 supports repeated standardized examinations and documentation, including individual responses and pupils, while protecting hemodynamics and gas exchange.",
           "consequence": "The clinician is told promptly and the full component record is available.",
           "support": "partial",
           "sources": [
             "N-NICE-NG232",
-            "S-GCS-OFFICIAL"
+            "S-GCS-OFFICIAL",
+            "S-ACS-TBI-2024"
           ]
         },
         {
@@ -159,7 +164,8 @@
           "consequence": "The observations show the trend and the clinician arrives to a complete record.",
           "support": "partial",
           "sources": [
-            "N-NICE-NG232"
+            "N-NICE-NG232",
+            "S-ACS-TBI-2024"
           ]
         },
         {
@@ -215,12 +221,13 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Discussing care with a neurosurgeon and deciding on imaging are medical decisions; the nurse's role is to observe, record, communicate the trend and support the team.",
+          "feedback": "Discussing care with a neurosurgeon and deciding on imaging are medical decisions; the nurse's role is to observe, record, communicate the trend and support the team. In a patient with traumatic brain injury and a worsening examination, ACS 2024 supports urgent repeat head CT. Prepare transport and ongoing monitoring with the clinical team rather than delaying escalation for a routine scan slot.",
           "consequence": "The team has the information it needs and the family has been kept informed within agreed limits.",
           "support": "partial",
           "sources": [
             "N-NICE-NG232",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-ACS-TBI-2024"
           ]
         },
         {
@@ -254,7 +261,8 @@
     "learning_points": [
       "Record individual assessable eye, verbal and motor responses, pupil findings and limb movements; compare with baseline. If a GCS component is non-testable, document why and omit a misleading total.",
       "Escalate new neurological deterioration urgently, including pupil inequality, new focal asymmetry or a fall in motor response. Continue the diagnosis-specific intensified observation plan without waiting for repeat scoring.",
-      "Neurosurgical discussion and imaging are medical decisions; observe, record, hand over and support."
+      "Neurosurgical discussion and imaging are medical decisions; observe, record, hand over and support.",
+      "For traumatic brain injury with worsening examination, communicate urgency of clinician-directed repeat imaging and maintain appropriate monitoring during transport."
     ],
     "links": [
       {

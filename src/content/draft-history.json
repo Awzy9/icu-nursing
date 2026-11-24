@@ -9823,6 +9823,23 @@
     "gaps": 7,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "099fc00fa24c8437",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-FDA-OXIMETER-BASICS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 7,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-06": [
@@ -9947,6 +9964,23 @@
     "sources": [
      "L-MANNITOL",
      "S-AARC-SUCT",
+     "S-AHRQ-TS",
+     "S-BTF-TBI-4TH",
+     "S-NCS-EDEMA-2020",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "b000d377bcd5faef",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AARC-SUCT",
+     "S-ACS-TBI-2024",
      "S-AHRQ-TS",
      "S-BTF-TBI-4TH",
      "S-NCS-EDEMA-2020",
@@ -10610,6 +10644,22 @@
     "gaps": 6,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "883e9d9a88fff219",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -10869,6 +10919,22 @@
     "gaps": 6,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c3d5447f0e0f55bb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS",
+     "S-CIBS-CAMICU-TERMS",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-18": [
@@ -11087,6 +11153,20 @@
     ],
     "gaps": 5,
     "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "e59a4e526cbfa236",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-ACS-TBI-2024",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
     "issues": 0
    }
   ],

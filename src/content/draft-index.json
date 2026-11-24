@@ -2093,7 +2093,7 @@
     {
      "id": "S-BSH-ATR",
      "licence_class": "RED",
-     "verified": "2026-11-15"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-FDA-COI-2024",
@@ -4624,12 +4624,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 7,
-   "required_sources": 3,
-   "hash": "0df0ac660e2348b9"
+   "required_sources": 2,
+   "hash": "099fc00fa24c8437"
   },
   {
    "key": "SC-06",
@@ -4696,6 +4701,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ACS-TBI-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4719,7 +4729,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "d44b7b67d59ce61b"
+   "hash": "b000d377bcd5faef"
   },
   {
    "key": "SC-08",
@@ -4998,7 +5008,7 @@
     {
      "id": "S-BSH-ATR",
      "licence_class": "RED",
-     "verified": "2026-11-15"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ISBT-ATR-EDU",
@@ -5018,8 +5028,8 @@
    ],
    "issues": [],
    "gaps": 6,
-   "required_sources": 2,
-   "hash": "bd1f1dec467d6fca"
+   "required_sources": 1,
+   "hash": "883e9d9a88fff219"
   },
   {
    "key": "SC-15",
@@ -5156,15 +5166,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-CIBS-CAMICU-TERMS",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "01fa3a4186091811"
+   "hash": "c3d5447f0e0f55bb"
   },
   {
    "key": "SC-18",
@@ -5271,6 +5291,11 @@
      "verified": null
     },
     {
+     "id": "S-ACS-TBI-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -5283,8 +5308,8 @@
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 3,
-   "hash": "c4dd6e90f0ae926b"
+   "required_sources": 2,
+   "hash": "e59a4e526cbfa236"
   },
   {
    "key": "EQ-01",

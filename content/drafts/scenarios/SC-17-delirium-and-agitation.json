@@ -51,17 +51,27 @@
       "id": "S-SCCM-PADIS",
       "read": "partial",
       "use": "SCCM 2018 PADIS and 2025 focused update official recommendation webpages read (not full publications); ICU delirium drug uncertainty and rehabilitation statements only; source reuse permission restricted."
+    },
+    {
+      "id": "S-SCCM-PADIS-FOCUSED-2025",
+      "read": "partial",
+      "use": "SCCM 2025 official focused recommendation page: conditional sedation preference, uncertain antipsychotic treatment evidence, rehabilitation"
+    },
+    {
+      "id": "S-CIBS-CAMICU-TERMS",
+      "read": "partial",
+      "use": "Vanderbilt CIBS official clinical-use and permission statement, accessed 24 November 2026; not commercial redistribution permission"
     }
   ],
   "required_sources": [
     "Full critical-care delirium evidence review (SCCM 2018/2025 PADIS full publications and 2026 national updates) and unit's validated delirium tool protocol",
-    "Licence terms and training requirements for CAM-ICU and ICDSC (not read)",
+    "Verify ICDSC rights and tool-specific training; Vanderbilt CAM-ICU clinical implementation terms checked, but confirm permission for any paid-platform redistribution or adaptation",
     "Unit delirium and agitation protocol and medicine policy"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "The tools are named only; their items and scoring are not reproduced and were not read.",
+    "Vanderbilt CAM-ICU clinical-use terms and training resources identified; exact tool items and scoring not reproduced. Other uses require contacting CIBS; ICDSC terms remain unresolved.",
     "Doses, routes and durations of any medicine are deliberately absent; NICE places medicine use after failed de-escalation and with prescriber and MHRA safety considerations.",
     "NICE CG103 covers hospital and long-term care in the UK; critical-care-specific sedation and pain management were not read.",
     "2025 SCCM PADIS focused update recommendation webpages have been reviewed but not full evidence tables or validated CAM-ICU/ICDSC tool instructions; antipsychotic evidence is inconclusive and clinician-specific decisions remain necessary."
@@ -106,7 +116,8 @@
           "sources": [
             "N-NICE-CG103",
             "S-SCCM-PADIS",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-CIBS-CAMICU-TERMS"
           ]
         },
         {
@@ -162,13 +173,14 @@
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "NICE advocates reorientation and de-escalation, but the SCCM 2025 ICU focused update could not recommend for or against antipsychotics over usual care for established ICU delirium. This is uncertainty, not a routine instruction to use or avoid a specific agent. Harmful behaviour, pain or medical instability require urgent assessment; drug selection and ECG/QT risk are clinician/pharmacy decisions.",
+          "feedback": "NICE advocates reorientation and de-escalation, but the SCCM 2025 ICU focused update could not recommend for or against antipsychotics over usual care for established ICU delirium. This is uncertainty, not a routine instruction to use or avoid a specific agent. Harmful behaviour, pain or medical instability require urgent assessment; drug selection and ECG/QT risk are clinician/pharmacy decisions. SCCM 2025 conditionally favors dexmedetomidine over propofol in mechanically ventilated adults when light sedation or reducing delirium is a leading goal. This is not a recommendation to administer dexmedetomidine to every agitated patient or to treat delirium routinely with a sedative; individual sedation goals and hemodynamics matter.",
           "consequence": "The patient calms a little and the team reviews the underlying causes.",
           "support": "partial",
           "sources": [
             "N-NICE-CG103",
             "S-SCCM-PADIS",
-            "L-HALOPERIDOL"
+            "L-HALOPERIDOL",
+            "S-SCCM-PADIS-FOCUSED-2025"
           ]
         },
         {
@@ -231,7 +243,8 @@
           "support": "partial",
           "sources": [
             "N-NICE-CG103",
-            "S-SCCM-PADIS"
+            "S-SCCM-PADIS",
+            "S-SCCM-PADIS-FOCUSED-2025"
           ]
         },
         {

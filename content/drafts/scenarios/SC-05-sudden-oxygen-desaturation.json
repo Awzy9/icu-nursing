@@ -59,17 +59,21 @@
       "id": "S-FDA-OXIMETER-BASICS",
       "read": "partial",
       "use": "FDA public indexed device accuracy limitations; no procedure or numeric threshold inferred."
+    },
+    {
+      "id": "S-RCUK-ABCDE-ADULT",
+      "read": "partial",
+      "use": "RCUK ABCDE adult approach: initial assessment, immediate life-threatening breathing problems, oxygenation and ventilation, reassessment"
     }
   ],
   "required_sources": [
-    "A national guideline or professional standard on responding to acute desaturation in an adult in a critical-care unit",
     "Unit airway-emergency, oxygen and suctioning protocols",
     "Unit's pneumothorax, chest-drain malfunction, and tension-physiology emergency escalation protocol for patients on respiratory support."
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "No source read gives a stepwise sequence for sudden desaturation; the steps are assembled from assessment, monitoring and escalation statements and have not been tested against a protocol.",
+    "RCUK adult ABCDE guidance now supports immediate assessment, threat recognition and reassessment. The fictional sequence is not a validated ICU-specific protocol.",
     "Oxygen flow, targets and device choice are deliberately not written; they come from the order and policy.",
     "Escalation score thresholds are local and are not written.",
     "The pleural emergency differential was strengthened without adding an independently validated tension pneumothorax diagnosis or invasive procedure: specific thoracic emergencies require local ICU/pleural-team protocols and specialist sign-off.",
@@ -110,17 +114,18 @@
       ],
       "options": [
         {
-          "text": "Go to the patient, remain at the bedside and assess airway, breathing effort, chest expansion symmetry, colour, lung sounds and circulation. Compare the oximeter alarm with the patient rather than relying on the probe alone, and call for urgent help if deterioration is significant.",
+          "text": "Go to the patient, remain at the bedside and assess airway, breathing effort, chest expansion symmetry, colour, lung sounds and circulation. Compare the oximeter alarm with the patient rather than relying on the probe alone, and activate urgent help now for this symptomatic rapid deterioration.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings. Poor peripheral circulation and skin pigmentation may affect oximetry accuracy. Assess signal reliability in parallel and seek further measurement if the clinical picture is discordant; do not delay care.",
+          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings. Poor peripheral circulation and skin pigmentation may affect oximetry accuracy. Assess signal reliability in parallel and seek further measurement if the clinical picture is discordant; do not delay care. The RCUK adult ABCDE approach emphasizes early emergency assistance and addressing immediate threats during breathing assessment. Do not await chest imaging before escalating possible tension physiology; definitive intervention belongs to the trained team.",
           "consequence": "You identify increased breathing effort and a wet cough. Secretions are one possibility, but the team must remain alert to other causes of deterioration.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8",
             "N-NCBI-OPENRN-CHEST",
-            "S-FDA-OXIMETER-BASICS"
+            "S-FDA-OXIMETER-BASICS",
+            "S-RCUK-ABCDE-ADULT"
           ]
         },
         {
@@ -188,7 +193,8 @@
           "sources": [
             "S-OPENRN-FUND-CH8",
             "S-AARC-O2",
-            "S-RCP-NEWS2"
+            "S-RCP-NEWS2",
+            "S-RCUK-ABCDE-ADULT"
           ]
         },
         {
@@ -251,12 +257,13 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Reassessment after an intervention includes heart rate, breathing rate, oximetry and lung sounds and asking the patient to rate breathlessness; the effect of interventions is documented.",
+          "feedback": "Reassessment after an intervention includes heart rate, breathing rate, oximetry and lung sounds and asking the patient to rate breathlessness; the effect of interventions is documented. Document oxygen device and delivered oxygen concentration where known, and communicate respiratory effort as well as saturation. Pulse oximetry does not measure carbon dioxide; persistent respiratory distress despite improved saturation needs urgent reassessment, with blood gas assessment as indicated.",
           "consequence": "The team has a clear picture, and the record shows the sequence of events.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-FUND-CH8",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-RCUK-ABCDE-ADULT"
           ]
         },
         {

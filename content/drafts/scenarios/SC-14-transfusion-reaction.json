@@ -40,8 +40,8 @@
     },
     {
       "id": "S-BSH-ATR",
-      "read": "not_read",
-      "use": "BSH acute transfusion reactions guideline: not accessed"
+      "read": "partial",
+      "use": "BSH 2023 original HTML initial and severe reaction management sections checked 24 November 2026; full appraisal and rights clearance pending"
     },
     {
       "id": "S-AHRQ-TS",
@@ -60,7 +60,6 @@
     }
   ],
   "required_sources": [
-    "BSH (or equivalent national) acute transfusion reaction guideline",
     "The transfusion service's reaction procedure"
   ],
   "gaps": [
@@ -68,7 +67,7 @@
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "Selected Lifeblood severe-reaction differential and investigation principles are mapped; treatment selection, specific tests and component handling follow local transfusion-service policy.",
     "Observation timings follow local policy.",
-    "AI evidence update 2026-11-16: initial reaction management was cross-checked at public guidance level against Australian Red Cross Lifeblood. Mild isolated reactions differ from severe/life-threatening reactions; restarting is not a unilateral bedside action. BSH 2023 full text and local reaction policies are still not comprehensively checked.",
+    "Original BSH 2023 HTML initial/severe reaction recommendations now accessed and mapped; full evidence and local policy review remain outstanding.",
     "ISBT initial-response educational content added; degree of reaction severity, work-up, restarting and specific treatment remain specialist decisions, not case-scoring instructions."
   ],
   "permissions": [
@@ -105,13 +104,14 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment. For suspected serious reactions do not restart the implicated component. For other reactions any resumption requires a satisfactory specialist/team assessment and local protocol; never restart independently. Activate emergency response immediately for compromised airway, breathing or circulation. Fever with rigors can represent a serious reaction, including bacterial contamination or acute haemolysis. Do not presume a benign febrile reaction or restart the component; obtain urgent clinical and transfusion-service assessment.",
+          "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment. For suspected serious reactions do not restart the implicated component. For other reactions any resumption requires a satisfactory specialist/team assessment and local protocol; never restart independently. Activate emergency response immediately for compromised airway, breathing or circulation. Fever with rigors can represent a serious reaction, including bacterial contamination or acute haemolysis. Do not presume a benign febrile reaction or restart the component; obtain urgent clinical and transfusion-service assessment. BSH 2023 severe-reaction guidance supports disconnecting and retaining the implicated set and component while maintaining venous access with suitable separate saline equipment according to the local transfusion pathway. This case concerns suspected serious reaction, not hemorrhage-associated hypotension in which interruption decisions require immediate expert assessment.",
           "consequence": "Transfusion is stopped; the patient and IV access are assessed, the team is notified, and the blood product and set are retained according to the reaction protocol.",
           "support": "partial",
           "sources": [
             "S-ISBT-ATR-EDU",
             "S-AABB-COI-2024",
-            "S-LIFEBLOOD-ATR"
+            "S-LIFEBLOOD-ATR",
+            "S-BSH-ATR"
           ]
         },
         {
@@ -173,13 +173,14 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Fever, rigors and circulatory deterioration can indicate a severe acute transfusion reaction, including bacterial contamination or acute haemolysis. Do not restart. Activate emergency support and coordinate the clinician-directed work-up, including cultures or haemolysis investigations if ordered. Do not delay resuscitation to complete paperwork.",
+          "feedback": "Fever, rigors and circulatory deterioration can indicate a severe acute transfusion reaction, including bacterial contamination or acute haemolysis. Do not restart. Activate emergency support and coordinate the clinician-directed work-up, including cultures or haemolysis investigations if ordered. Do not delay resuscitation to complete paperwork. BSH emphasizes that emergency management is guided by clinical severity and must not wait for laboratory results. For severe dyspnea, the team assesses potential anaphylaxis, pulmonary edema and transfusion-associated lung injury; respiratory symptoms alone do not establish TACO or TRALI.",
           "consequence": "Emergency support and the blood-bank investigation proceed with a clear clinical timeline and the implicated component available as directed.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
             "S-NICE-NG24",
-            "S-LIFEBLOOD-ATR"
+            "S-LIFEBLOOD-ATR",
+            "S-BSH-ATR"
           ]
         },
         {
@@ -215,7 +216,8 @@
       "Keep intravenous access; further treatment is a prescriber decision.",
       "Give and record a factual timeline: component and estimated volume infused, transfusion start and stop times, symptom onset, changes from baseline vital signs, and the response to initial actions.",
       "Do not independently restart a transfusion following a suspected reaction; activate emergency response for compromised airway, breathing or circulation.",
-      "Fever with rigors or hypotension requires urgent evaluation for serious causes such as bacterial contamination or acute haemolysis; do not restart the implicated component."
+      "Fever with rigors or hypotension requires urgent evaluation for serious causes such as bacterial contamination or acute haemolysis; do not restart the implicated component.",
+      "Clinical severity determines urgency; coordinate investigations in parallel with emergency treatment, and preserve the implicated component and giving set according to the transfusion service."
     ],
     "links": [
       {
