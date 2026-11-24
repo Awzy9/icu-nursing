@@ -28,6 +28,16 @@ describe("infusion calculator", () => {
     expect(screen.getByText("0.75 mL/h")).toBeTruthy();
   });
 
+  it("accepts Arabic decimal input without accepting grouping", () => {
+    render(<InfusionCalculator locale="en" />);
+    enter("Volume (mL)", "١٥٠");
+    enter("Duration", "٢");
+    expect(screen.getByText("75 mL/h")).toBeTruthy();
+    enter("Volume (mL)", "١٬٠٠٠");
+    expect(screen.queryByText("75 mL/h")).toBeNull();
+    expect(screen.getByText("Enter two positive values to see the result.")).toBeTruthy();
+  });
+
   it("rejects ambiguous dose and concentration inputs", () => {
     render(<InfusionCalculator locale="en" />);
     enter("Dose rate", "6");

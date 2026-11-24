@@ -81,7 +81,7 @@ export default function InfusionCalculatorScreen() {
         "Changing a calculation mode or unit clears the affected input, so you must re-enter its value for the selected unit.",
         "يؤدي تغيير طريقة الحساب أو وحدة القياس إلى مسح القيمة المتأثرة لتعيد إدخالها بوحدتها الصحيحة."
       )}</P>
-      <P muted small>{label("Use a decimal point for values with three decimal places; do not enter thousands separators.", "استخدم النقطة العشرية للقيم ذات ثلاث خانات عشرية، ولا تستخدم فواصل الآلاف.")}</P>
+      <P muted small>{label("Use a decimal point (or Arabic decimal separator ٫) for three decimal places. Do not enter thousands separators. Arabic and Western digits are accepted.", "يمكن إدخال الأرقام العربية أو الغربية. استخدم النقطة أو الفاصلة العشرية العربية (٫) للقيم ذات ثلاث خانات عشرية، ولا تستخدم فواصل الآلاف.")}</P>
       <H2>{label("What would you like to calculate?", "ماذا تريد أن تحسب؟")}</H2>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>
         <Chip label={label("Rate (mL/h)", "المعدل")} selected={mode === "volumetric"} onPress={() => { if (mode !== "volumetric") { setMode("volumetric"); setQuantity(""); } }} />

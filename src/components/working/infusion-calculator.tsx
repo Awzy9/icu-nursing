@@ -32,7 +32,7 @@ export function InfusionCalculator({ locale }: { locale: string }) {
           ? "هذه أداة تدريب بقيم افتراضية فقط، وليست لتحديد إعدادات مضخة مريض. تحقق من أمر الطبيب والتركيز ووسائل الحماية المعتمدة بمؤسستك. عند تغيير وحدة القياس ستُمسح القيمة التي قد تحمل معنى مختلفًا."
           : "Fictional calculation practice only—not for setting a patient's infusion pump. Follow approved orders, concentrations, drug-library safeguards and independent-check policies. Changing a unit clears the corresponding number to prevent misinterpretation."}
       </p>
-      <p className="text-sm text-muted-foreground">{ar ? "استخدم النقطة العشرية للقيم ذات ثلاث خانات عشرية، ولا تستخدم فواصل الآلاف." : "Use a decimal point for values with three decimal places; do not enter thousands separators."}</p>
+      <p className="text-sm text-muted-foreground">{ar ? "يمكن إدخال الأرقام العربية أو الغربية. استخدم النقطة أو الفاصلة العشرية العربية (٫) للقيم ذات ثلاث خانات عشرية، ولا تستخدم فواصل الآلاف." : "Use a decimal point (or Arabic decimal separator ٫) for three decimal places. Do not enter thousands separators. Arabic and Western digits are accepted."}</p>
       <label className="block space-y-1 text-sm font-semibold">
         <span>{ar ? "احسب" : "Calculate"}</span>
         <select className={field} value={mode} onChange={(event) => {

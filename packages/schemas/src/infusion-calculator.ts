@@ -7,7 +7,12 @@ export type ConcentrationUnit = "mg/mL" | "mcg/mL";
 
 /** Parse educational decimal entry without silently accepting hex, exponent or Infinity. */
 export function parsePositiveDecimal(raw: string): number | null {
-  const trimmed = raw.trim();
+  // Normalize only decimal digit scripts and the explicit Arabic decimal separator.
+  // Never strip grouping separators, internal spaces or directional control characters.
+  const trimmed = raw.trim().replace(/[\u0660-\u0669\u06F0-\u06F9]/g, digit => {
+    const code = digit.charCodeAt(0);
+    return String(code - (code >= 0x06F0 ? 0x06F0 : 0x0660));
+  }).replace(/\u066B/g, ".");
   // A single comma followed by three digits can look like a thousands separator.
   // Require an explicit decimal point in that case rather than silently changing magnitude.
   if (/^\d+,\d{3}$/.test(trimmed)) return null;

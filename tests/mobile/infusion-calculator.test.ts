@@ -28,6 +28,17 @@ describe("native infusion calculator practice", () => {
     }
   });
 
+  it("normalizes Arabic-Indic and Eastern Arabic digits without guessing grouping", () => {
+    for (const [raw, expected] of [["١٢٫٥", 12.5], ["۱۲٫۵", 12.5], ["٠٫١٢٥", 0.125], ["١.٥", 1.5], ["١,٥", 1.5]] as const) {
+      expect(parsePositiveDecimal(raw)).toBe(expected);
+    }
+    for (const raw of ["١٬٠٠٠", "۱٬۰۰۰", "١,٠٠٠", "٠,١٢٥", "١٫٢٫٣", "١٫٢,٣", "١ ٢", "١e٣", "−١", "١\u200f٢", "٠"]) {
+      expect(parsePositiveDecimal(raw)).toBeNull();
+    }
+    expect(volumetricRate(parsePositiveDecimal("١٥٠")!, parsePositiveDecimal("١٢٠")!, "minutes")).toBe(75);
+    expect(doseToPumpRate({dose:parsePositiveDecimal("٠٫٢")!, weightKg:parsePositiveDecimal("٥٠")!, weightBased:true, doseUnit:"mcg/min", concentration:parsePositiveDecimal("١٠٠")!, concentrationUnit:"mcg/mL"})).toBeCloseTo(6,10);
+  });
+
   it("marks rounded displayed arithmetic as approximate", () => {
     expect(equationSign(2, 3, 2 / 3)).toBe("≈");
     expect(equationSign(6, 2, 3)).toBe("=");
