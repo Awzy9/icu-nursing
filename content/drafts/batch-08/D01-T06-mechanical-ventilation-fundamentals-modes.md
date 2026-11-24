@@ -59,6 +59,8 @@ The review notes that about a third of adult general critical care admissions in
 - **Never change modes, targets or alarm limits unless a written protocol or order permits and you are trained**; ventilator-setting decisions are prescriber and respiratory-therapist decisions.
 - **Escalate** early; see section 12. **Document** the assessment, trends, interventions and communications.
 
+**Practical interpretation of volume and pressure trends (AARC 2024).** The monitored values are meaningful only in the context of the mode, patient effort and measurement conditions. In a pressure-targeted breath the same prescribed pressure may accompany a smaller exhaled volume as resistance or respiratory mechanics change. In a volume-targeted breath the observed pressure may increase even when the intended volume has not changed; leaks or pressure limits can alter actual delivery. Compare the settings and measured values with the patient's clinical condition and recent trends. Check for a discrepancy and report it; do not infer a single diagnosis or independently change ventilation from a waveform or pressure number.
+
 ## 8. Monitoring parameters
 Patient: respiratory rate and effort, SpO₂, end-tidal CO₂ if used, heart rate, blood pressure, perfusion, consciousness, sedation and comfort, secretions, chest wall movement, skin under devices. Ventilator: mode and settings, exhaled tidal volume, minute ventilation, peak and plateau pressures, PEEP and auto-PEEP, FiO₂, driving pressure where displayed, waveforms where the unit teaches them, alarms. Airway: tube position and securement, cuff pressure, humidification. Frequency is set by unit policy.
 
