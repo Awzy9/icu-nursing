@@ -50,6 +50,8 @@ Septic shock is generally described (Sepsis-3 consensus definition, cited by the
 - Reassess regularly; escalate again if there is no improvement or deterioration.
 - Document times (recognition, call, review, first antimicrobial, response).
 
+**Source-control coordination (SSC 2026).** In a patient receiving treatment for sepsis, communicate a suspected anatomical source that may need a procedure (for example, an obstructed infected urinary tract or a drainable collection). Record when the concern was raised, the responsible team, planned assessment or intervention, and any unresolved delay; re-escalate worsening physiology or an unaddressed urgent plan. SSC conditionally favors early source control, ideally within six hours of the relevant diagnosis, with very low certainty. This does not mean that all sepsis requires a procedure or that a nurse independently removes an essential line or arranges an invasive intervention. Antimicrobial treatment and resuscitation proceed in parallel.
+
 ## 8. Monitoring parameters
 Frequency is set by risk and local policy. NICE links NEWS2-based risk to re-calculation intervals: about every 30 minutes (high risk), hourly (medium), every 4–6 hours (low), and routine observations (very low). Recalculate whenever the person deteriorates or something unexpected changes. In ICU, continuous monitoring is usual; the principle is that higher risk means more frequent, documented reassessment.
 
