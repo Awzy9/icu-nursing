@@ -1936,9 +1936,9 @@
      "verified": "2026-11-24"
     },
     {
-     "id": "N-NHSGGC-TRACH-2022",
+     "id": "N-NHSGGC-TRACH-2025",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AARC-TRACH",
@@ -1954,7 +1954,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "bd3de1153806ad16"
+   "hash": "6276f388e3ea8ed8"
   },
   {
    "key": "SK-06",
@@ -1966,9 +1966,9 @@
    "clinically_reviewed": false,
    "sources": [
     {
-     "id": "N-NHSGGC-TRACH-2022",
+     "id": "N-NHSGGC-TRACH-2025",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AARC-SUCT",
@@ -1984,7 +1984,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ddfea4d5a65a0ac1"
+   "hash": "e9f716999b8dfb8a"
   },
   {
    "key": "SK-07",

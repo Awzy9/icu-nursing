@@ -25,9 +25,9 @@
       "use": "closed systems: no VAP recommendation"
     },
     {
-      "id": "N-NHSGGC-TRACH-2022",
+      "id": "N-NHSGGC-TRACH-2025",
       "read": "full",
-      "use": "tracheostomy suctioning section (local NHS board guideline, past its review date)"
+      "use": "NHSGGC adult acute services v4 (2025): relevant transfer, emergency recognition, routine care, suction and cuff sections read in full text; linked algorithms and appendices not independently appraised."
     }
   ],
   "objectives": [
@@ -114,7 +114,7 @@
           "text": "For a patient with a tracheostomy, suction only when needed after encouraging deep breaths and coughing, change a fenestrated inner cannula to a non-fenestrated one first, and treat difficulty passing the catheter as a possible blocked, misplaced or badly orientated tube, which is an emergency (NHS board guideline; see SK-05).",
           "support": "partial",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -286,7 +286,7 @@
       "support": "partial",
       "sources": [
         "S-AARC-SUCT",
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -305,7 +305,8 @@
     "Suctioning in raised ICP: not covered. Tracheostomy suctioning rests on one local NHS board guideline (see SK-05)."
   ],
   "permissions": [
-    "AARC CPG: cite only; reproduction needs permission."
+    "AARC CPG: cite only; reproduction needs permission.",
+    "NHSGGC v4: local guideline, reuse permission unverified; no third-party algorithms reproduced."
   ],
   "references": [
     {
@@ -331,14 +332,14 @@
       "permission_required": "No"
     },
     {
-      "id": "N-NHSGGC-TRACH-2022",
-      "title": "Clinical guideline: Care of Patients with a Tracheostomy or Laryngectomy (version 3, 52 pages)",
+      "id": "N-NHSGGC-TRACH-2025",
+      "title": "Adult Acute Services care of patients with a Tracheostomy or Laryngectomy (version 4)",
       "publisher": "NHS Greater Glasgow and Clyde",
-      "version": "Approved 5 November 2022; review date 5 November 2024 (passed); based on National Tracheostomy Safety Project resources used with the project's acknowledged permission",
-      "url": "https://rightdecisions.scot.nhs.uk/media/2668/668-care-of-patients-with-a-tracheostomy.pdf",
-      "accessed": "2026-11-15",
+      "version": "4 August 2025; next review 31 August 2027; cover states no change to clinical advice",
+      "url": "https://www.rightdecisions.scot.nhs.uk/media/b5wntvcq/668-adult-acute-care-of-patients-tracheostomy-v4.pdf",
+      "accessed": "2026-11-24",
       "read": "full",
-      "licence_class": "YELLOW (NHS board guideline; the file says the intranet version is the only maintained one and carries no reuse statement; NTSP material reproduced with permission, which does not pass to others)",
+      "licence_class": "YELLOW (local NHS guideline; rights not cleared; third-party material excluded)",
       "permission_required": "Verify (NHSGGC and NTSP)"
     }
   ]

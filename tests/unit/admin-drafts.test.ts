@@ -43,8 +43,10 @@ describe("draft index (metadata only)", () => {
       }
     }
     const airway = onDisk.entries.find(x => x.key === "SK-05")!;
-    expect(airway.sources.find(s => s.id === "N-NHSGGC-TRACH-2022")?.verified).toBeNull();
-    expect(hasSourceGap(airway)).toBe(true);
+    expect(airway.sources.some(s => s.id === "N-NHSGGC-TRACH-2022")).toBe(false);
+    expect(airway.sources.find(s => s.id === "N-NHSGGC-TRACH-2025")?.verified).toBe("2026-11-24");
+    expect(hasSourceGap(airway)).toBe(false);
+    expect(needsRightsCheck(airway)).toBe(true);
   });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);

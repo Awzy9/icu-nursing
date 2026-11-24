@@ -3885,6 +3885,22 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "6276f388e3ea8ed8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ACI-TRACH",
+     "N-ICS-TRANSFER-2026",
+     "N-NCBI-OPENRN-TRACH",
+     "N-NHSGGC-TRACH-2025",
+     "S-AARC-TRACH",
+     "S-NTSP-STOMA"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-06": [
@@ -3920,6 +3936,19 @@
     "evidence_status": "partial",
     "sources": [
      "N-NHSGGC-TRACH-2022",
+     "S-AARC-SUCT",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e9f716999b8dfb8a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NHSGGC-TRACH-2025",
      "S-AARC-SUCT",
      "S-SHEA-VAP-2022"
     ],

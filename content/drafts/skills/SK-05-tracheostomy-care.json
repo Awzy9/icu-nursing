@@ -13,9 +13,9 @@
   "license_status": "permission_required",
   "sources": [
     {
-      "id": "N-NHSGGC-TRACH-2022",
+      "id": "N-NHSGGC-TRACH-2025",
       "read": "full",
-      "use": "NHS Greater Glasgow and Clyde guideline v3 (2022; past its review date); sections read in full text; NTSP resources used there with permission"
+      "use": "NHSGGC adult acute services v4 (2025): relevant transfer, emergency recognition, routine care, suction and cuff sections read in full text; linked algorithms and appendices not independently appraised."
     },
     {
       "id": "S-AARC-TRACH",
@@ -24,13 +24,13 @@
     },
     {
       "id": "N-NCBI-OPENRN-TRACH",
-      "read": "not_read",
-      "use": "Open RN via NCBI Bookshelf NBK596713: browser-verification page; not read"
+      "read": "partial",
+      "use": "Selected HTML care and emergency equipment passages inspected; full chapter not appraised."
     },
     {
       "id": "N-ACI-TRACH",
-      "read": "not_read",
-      "use": "NSW ACI guide: HTTP 403; not read"
+      "read": "partial",
+      "use": "Official HTML overview and emergency equipment/transfer resource descriptions inspected; full guide not appraised."
     },
     {
       "id": "N-ICS-TRANSFER-2026",
@@ -61,7 +61,7 @@
           "text": "Patients with a tracheostomy often need suctioning to keep the airway open, and each patient needs individual assessment and constant reassessment of how often.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -73,28 +73,35 @@
           "text": "An inadequately secured tube may become partly or completely displaced and obstruct the airway; consider partial displacement whenever the patient deteriorates or becomes distressed, because it may not be obvious.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
           "text": "Tracheostomy and laryngectomy patients have different airflow routes and are managed differently in an emergency: a patient with a laryngectomy cannot be ventilated through the nose and mouth and must be ventilated through the stoma.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
           "text": "Any difficulty passing a suction catheter should raise the possibility of a partly blocked, badly orientated or misplaced tube and needs immediate attention as an emergency.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
           "text": "Transfers between areas of patients with tracheostomies must be planned between the nursing and medical staff of both areas because unfamiliarity is a clinical risk.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
+          ]
+        },
+        {
+          "text": "Never attach a conventional one-way speaking valve or occlusion cap to a tracheostomy with an inflated cuff. Confirm an adequate route for exhalation and obtain specialist assessment before use; stop and escalate respiratory distress.",
+          "support": "partial",
+          "sources": [
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -108,17 +115,17 @@
           "sources": []
         },
         {
-          "text": "Check securement against the specific holder or tube instructions and local policy, assess for pressure injury and obtain trained assistance for holder adjustments where dislodgement is a risk. The one-finger tape check in the older NHS board guidance is not a universal rule.",
+          "text": "Check securement against the specific holder or tube instructions and local policy, assess for pressure injury and obtain trained assistance for holder adjustments where dislodgement is a risk. The one-finger tape check in the local NHS board guidance is not a universal rule.",
           "support": "partial",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
           "text": "Keep a spare inner cannula in a clean container at the bedside; some tube makers require the inner cannula in place before connecting oxygen, a circuit or a bag-valve device.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
@@ -147,7 +154,7 @@
           "text": "An emergency box stays with the patient, including during transfers, with a spare tube and inner cannula (same size and a smaller size), dilators, a means of securing the tube, suction catheters, a syringe for cuffed tubes and oxygen masks; a cuff manometer, humidification spares and the correct bedhead sign with the emergency algorithm belong at the bedside.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
@@ -166,14 +173,14 @@
           "text": "Humidification must match the patient's condition and secretions, using a ladder of devices, and saline nebulisers or mucolytics and hydration are considered if secretions are not improving.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
           "text": "Inspect the stoma daily for signs of infection; keep it clean and dry; routine dressings are not recommended, and any dressing must be pre-cut and made for tracheostomy use so fibres do not enter the airway.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -185,21 +192,21 @@
           "text": "Suction when necessary, encouraging deep breaths and coughing first; the guideline gives example indications (noisy breathing, ineffective cough, visible or audible secretions, increased work of breathing, falling saturations) and lists the risks (hypoxia, mucosal trauma, arrhythmia, atelectasis, bronchospasm, infection, bleeding, raised intracranial pressure, interruption of ventilation).",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
           "text": "If a fenestrated tube is in place, change to a non-fenestrated inner cannula before suctioning; this guideline states a catheter no wider than half the inner lumen, suction not longer than about ten seconds and a stated vacuum range (local guideline values; the unit's protocol governs).",
           "support": "partial",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
-          "text": "Cuff pressure is checked with a manometer; this guideline cites a recommended range and twice-daily checks unless more are indicated (local guideline values), and warns that too low a pressure causes a leak and micro-aspiration while over-inflation impairs tracheal blood flow.",
+          "text": "Use a cuff manometer and the prescribed device-specific range and monitoring interval. Too little pressure can impair ventilation and increase aspiration risk; excessive pressure can injure the trachea. Investigate recurrent leaks rather than repeatedly adding air without assessing the cause.",
           "support": "partial",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -211,7 +218,7 @@
           "text": "Red flags: an unexpected oral air leak when the cuff is intended to be inflated may indicate a cuff or tube-position problem; account for the planned cuff and speaking-valve status; apnoea on capnography, difficulty breathing, higher airway pressures, lower tidal volumes, hypoxia and noisy breathing; a visibly displaced tube, blood around the tube, new pain, or needing a lot of air to keep the cuff inflated; and any change in respiratory rate, heart rate, blood pressure or consciousness, including anxiety, restlessness or confusion.",
           "support": "sourced",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -223,7 +230,7 @@
           "text": "Suspected obstruction or displacement, including inability to pass a suction catheter, requires immediate airway-emergency escalation; do not wait until peri-arrest. Use the patient-specific tracheostomy or laryngectomy emergency pathway and obtain trained assistance. Avoid forcing a catheter or ventilation through a potentially displaced tube; follow the trained team's airway assessment and capnography pathway.",
           "support": "partial",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         },
         {
@@ -231,7 +238,7 @@
           "support": "partial",
           "sources": [
             "S-NTSP-STOMA",
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -243,7 +250,7 @@
           "text": "Risks include displacement and obstruction, bleeding, stoma skin irritation or infection, cuff-related tracheal injury and, with a low cuff pressure, aspiration and pneumonia.",
           "support": "partial",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -265,7 +272,7 @@
           "text": "Plan transfers with the receiving team, and keep the bedhead sign and emergency algorithm with the patient.",
           "support": "partial",
           "sources": [
-            "N-NHSGGC-TRACH-2022"
+            "N-NHSGGC-TRACH-2025"
           ]
         }
       ]
@@ -278,7 +285,7 @@
       "critical": true,
       "support": "sourced",
       "sources": [
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -287,7 +294,7 @@
       "critical": true,
       "support": "partial",
       "sources": [
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -296,7 +303,7 @@
       "critical": true,
       "support": "sourced",
       "sources": [
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -312,7 +319,7 @@
       "critical": true,
       "support": "sourced",
       "sources": [
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -321,7 +328,7 @@
       "critical": false,
       "support": "partial",
       "sources": [
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -330,7 +337,7 @@
       "critical": false,
       "support": "sourced",
       "sources": [
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -339,7 +346,7 @@
       "critical": true,
       "support": "partial",
       "sources": [
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
       ]
     },
     {
@@ -356,31 +363,40 @@
       "support": "partial",
       "sources": [
         "S-NTSP-STOMA",
-        "N-NHSGGC-TRACH-2022"
+        "N-NHSGGC-TRACH-2025"
+      ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Never attach a conventional one-way speaking valve or occlusion cap to a tracheostomy with an inflated cuff. Confirm an adequate route for exhalation and obtain specialist assessment before use; stop and escalate respiratory distress.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "N-NHSGGC-TRACH-2025"
       ]
     }
   ],
   "gaps": [
-    "The guideline is one NHS board's document, past its review date (November 2024); numerical values (cleaning interval, cuff range, suction duration and vacuum) are marked partial and unit policy governs.",
-    "The NTSP algorithms themselves, which the guideline reproduces with permission, were not read from the NTSP; the AARC 2021 CPG's three system-level recommendations were read, but its full literature-review tables and individual cited studies were not; the NSW ACI guide and the Open RN chapters remain genuinely inaccessible (HTTP 403 and a reCAPTCHA bot-check page respectively, confirmed again on retry) and were not read.",
-    "Decannulation procedure, speaking valves, cuff deflation and tube-change technique, and paediatric care: not drafted (step-by-step procedure sections not read; the AARC CPG recommends protocol-directed weaning/decannulation exists but does not itself give the steps).",
-    "Open RN via NCBI and the eCampusOntario open textbook returned browser-verification or HTTP 403 and were not read; a workaround (direct retrieval) was attempted and still failed."
+    "NHSGGC v4 is a local NHS guideline; its numerical thresholds and intervals are not universal. Cuff-pressure targets and tube-change schedules differ from the 2026 SKR/SRLF consensus; full comparative review remains open.",
+    "NTSP algorithms and AARC evidence tables remain incompletely appraised. NSW ACI and Open RN HTML excerpts are now accessible; full guides and third-party figures remain unchecked.",
+    "Decannulation, speaking-valve fitting, cuff deflation and tube-change technique, and paediatric care are not drafted; only the essential speaking-valve safety warning is included.",
+    "Full Open RN chapter, linked procedural resources and exact device instructions remain unverified."
   ],
   "permissions": [
     "NHSGGC guideline: no reuse statement on the file; NTSP resources are reproduced there with permission that does not extend to others; paraphrase only.",
     "AARC CPG and NSW ACI guide: permission or licence verification needed.",
-    "Open RN (CC BY): reuse with attribution once a person can retrieve the text."
+    "Open RN: attribution required; verify individual third-party materials before reuse."
   ],
   "references": [
     {
-      "id": "N-NHSGGC-TRACH-2022",
-      "title": "Clinical guideline: Care of Patients with a Tracheostomy or Laryngectomy (version 3, 52 pages)",
+      "id": "N-NHSGGC-TRACH-2025",
+      "title": "Adult Acute Services care of patients with a Tracheostomy or Laryngectomy (version 4)",
       "publisher": "NHS Greater Glasgow and Clyde",
-      "version": "Approved 5 November 2022; review date 5 November 2024 (passed); based on National Tracheostomy Safety Project resources used with the project's acknowledged permission",
-      "url": "https://rightdecisions.scot.nhs.uk/media/2668/668-care-of-patients-with-a-tracheostomy.pdf",
-      "accessed": "2026-11-15",
+      "version": "4 August 2025; next review 31 August 2027; cover states no change to clinical advice",
+      "url": "https://www.rightdecisions.scot.nhs.uk/media/b5wntvcq/668-adult-acute-care-of-patients-tracheostomy-v4.pdf",
+      "accessed": "2026-11-24",
       "read": "full",
-      "licence_class": "YELLOW (NHS board guideline; the file says the intranet version is the only maintained one and carries no reuse statement; NTSP material reproduced with permission, which does not pass to others)",
+      "licence_class": "YELLOW (local NHS guideline; rights not cleared; third-party material excluded)",
       "permission_required": "Verify (NHSGGC and NTSP)"
     },
     {
@@ -398,10 +414,10 @@
       "id": "N-NCBI-OPENRN-TRACH",
       "title": "NBK596713 (tracheostomy content)",
       "publisher": "Open RN via NCBI Bookshelf",
-      "version": "Not read",
+      "version": "2023 chapter; selected HTML checked 2026-11-24",
       "url": "https://www.ncbi.nlm.nih.gov/books/NBK596713/",
-      "accessed": "2026-11-15",
-      "read": "not_read",
+      "accessed": "2026-11-24",
+      "read": "partial",
       "licence_class": "GREEN (conditional; CC BY 4.0 per collection)",
       "permission_required": "No (attribution)"
     },
@@ -409,10 +425,10 @@
       "id": "N-ACI-TRACH",
       "title": "Acute tracheostomy clinical practice guide and emergency plan",
       "publisher": "NSW Agency for Clinical Innovation",
-      "version": "Not read",
+      "version": "2021; selected HTML checked 2026-11-24",
       "url": "https://aci.health.nsw.gov.au/networks/icnsw/clinicians/acute-tracheostomy",
-      "accessed": "2026-11-15",
-      "read": "not_read",
+      "accessed": "2026-11-24",
+      "read": "partial",
       "licence_class": "YELLOW (NSW Government; verify)",
       "permission_required": "Verify"
     },
