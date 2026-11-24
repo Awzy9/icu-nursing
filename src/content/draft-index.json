@@ -5236,6 +5236,11 @@
      "verified": "2026-11-24"
     },
     {
+     "id": "S-AHA-FA-SEIZURE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -5264,7 +5269,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "c8e06d608645c5aa"
+   "hash": "00e797d5b3a7e503"
   },
   {
    "key": "SC-09",
@@ -5449,7 +5454,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "24311a90c1850cb3"
+   "hash": "ec1a7194f4b6ab15"
   },
   {
    "key": "SC-13",
@@ -5484,7 +5489,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "31b5fb5a9d97388d"
+   "hash": "0377f4174b35868e"
   },
   {
    "key": "SC-14",
@@ -5761,6 +5766,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ANZCOR-SPECIAL-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-NG258-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -5774,7 +5784,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "6a14f228aa7211dc"
+   "hash": "6af8a5f730d4b5c0"
   },
   {
    "key": "SC-20",
