@@ -154,16 +154,16 @@ D. A patient whose unit has been running for 3 hours and is nearly finished.
 **Why not B:** Even an apparently mild fever developing during transfusion warrants stopping the transfusion for prompt assessment and notification under the reaction protocol; FNHTR is not confirmed by fever alone. Only after clinical evaluation may authorized staff decide whether restarting is appropriate. Severe airway and circulatory compromise in option C remains the highest immediate priority.
 **Why not D:** Check the permitted administration time and local handling requirements, but an approaching time limit without new symptoms is not equivalent to acute airway or circulatory compromise. The cited Circular describes a four-hour limit after entry into the container.
 
-**Q5 (understanding).** Which patient is at particular risk of transfusion-associated circulatory overload (TACO) according to the Circular?
-A. A young adult with normal heart, lung and kidney function and a negative fluid balance.
-B. An older adult with heart or kidney disease who already has a positive fluid balance.
-C. A patient whose temperature fell during the transfusion because the unit was cold.
-D. A patient who is anaesthetised and has no signs of volume overload or respiratory symptoms.
+**Q5 (judgment).** An older patient with heart and kidney disease and a positive fluid balance develops acute breathlessness, rising blood pressure and crackles during a red-cell transfusion. Which nursing action is most appropriate?
+A. Slow the transfusion and complete the unit while arranging a routine review of fluid balance.
+B. Stop the transfusion, assess ABC and obtain urgent help for a possible serious reaction.
+C. Diagnose TRALI from the respiratory symptoms and restart the transfusion once oxygen improves.
+D. Administer a diuretic independently and continue the transfusion if the blood pressure falls.
 **Answer: B.**
-**Why correct:** The Circular identifies underlying cardiopulmonary or renal disease, extremes of age and positive fluid balance as risk factors; even a small transfused volume may precipitate TACO in a vulnerable patient. Review baseline risk and monitor for new respiratory distress or overload; suspected TACO requires stopping the transfusion and urgent clinical evaluation, not an independent diagnosis based on risk alone.
-**Why not A:** This patient has none of the listed risk factors.
-**Why not C:** Cold units are a hypothermia risk, not a TACO risk.
-**Why not D:** Anaesthesia is not on the list of TACO risk factors.
+**Why correct:** The history and findings raise concern for transfusion-associated circulatory overload (TACO), but other serious reactions, including TRALI, can overlap. Stop the transfusion immediately, assess airway, breathing and circulation, summon urgent help, maintain IV access without flushing the suspect line and notify the transfusion service. Document timing, vital signs, fluid balance and response. Follow the authorized assessment and treatment pathway; suspected TACO or TRALI is not a reason to restart the implicated unit.
+**Why not A:** Slowing does not remove exposure during a potentially serious reaction, and respiratory deterioration requires immediate assessment.
+**Why not C:** The clinical findings do not establish TRALI; improvement alone does not authorize restarting an implicated unit after a serious reaction.
+**Why not D:** Diuretics may be ordered when overload is suspected, but they require clinical assessment and do not replace stopping the transfusion.
 
 **Q6 (scope).** After a possible transfusion reaction, which decision requires authorized clinical and transfusion-service assessment rather than unilateral action by an untrained team member?
 A. Stopping the transfusion when a reaction is suspected.

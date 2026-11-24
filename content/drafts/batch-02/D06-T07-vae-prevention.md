@@ -106,16 +106,16 @@ D. Wait for the daily ward round to decide what to change, because ventilator se
 **Why not C:** Chlorhexidine oral care is generally not recommended for VAP prevention in the 2022 update, and reporting later delays assessment.
 **Why not D:** Waiting for the round delays assessment of a possible deterioration; bundle tasks are nursing responsibilities.
 
-**Q2 (understanding).** Which statement about VAE and VAP is correct?
-A. VAE is a bedside diagnosis made by the nurse when a patient has a fever and increased secretions.
-B. VAP and VAE are the same thing, so every VAE means the patient has pneumonia.
-C. VAE is a surveillance category triggered only when pneumonia has been confirmed by a positive culture result.
-D. VAE is a surveillance definition: it flags sustained worsening oxygenation, whatever the cause.
+**Q2 (judgment).** After several stable ventilator days, an adult has sustained increases in oxygen and PEEP requirements. The infection-prevention team is evaluating a possible VAE. The patient has a positive fluid balance and no confirmed pneumonia. Which interpretation is most appropriate?
+A. Treat a positive VAE classification as confirmation of VAP and request antibiotics on that basis.
+B. Exclude VAE because no respiratory organism has been identified on culture.
+C. Wait for the surveillance team to complete classification before escalating the oxygenation change.
+D. Assess clinical deterioration now; VAE surveillance does not itself establish pneumonia.
 **Answer: D.**
-**Why correct:** VAE is defined by sustained rises in PEEP or FiO₂ after a period of stability and covers pneumonia and non-infectious causes.
-**Why not A:** The VAE definition rests on ventilator settings, not on a nurse's assessment of fever and secretions.
-**Why not B:** VAE includes non-infectious causes such as fluid overload and atelectasis.
-**Why not C:** VAE is triggered by ventilator-setting changes, not by culture confirmation, and it covers non-infectious causes too.
+**Why correct:** VAE surveillance identifies defined worsening oxygenation after a period of stability or improvement; it is not equivalent to a clinical diagnosis of VAP. Pulmonary oedema, atelectasis and infection can contribute. Assess ventilation, oxygenation and circulation promptly and communicate the fluid and respiratory trends. The surveillance team applies the specified criteria separately; do not delay clinical evaluation until a surveillance definition is met.
+**Why not A:** A surveillance event may be noninfectious and cannot independently justify a pneumonia diagnosis or antimicrobial order.
+**Why not B:** Microbiological confirmation is not required for all VAE surveillance categories.
+**Why not C:** Surveillance classification may require observation over time, but current respiratory deterioration requires immediate assessment.
 
 **Q3 (application).** A colleague proposes adding chlorhexidine to routine mouth care "to lower VAP". What is the best response?
 A. Say the 2022 update classes chlorhexidine oral care as generally not recommended and advises toothbrushing.

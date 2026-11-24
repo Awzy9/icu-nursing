@@ -93,6 +93,20 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f24204b3b5d3c8c7",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-IDSA-AMR-2026",
+     "S-NICE-NG253",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D06-T04": [
@@ -204,6 +218,19 @@
    },
    {
     "hash": "f346a72d2069c5c4",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022",
+     "S-WHO-CVC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ddc9fdee8accf314",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -1362,6 +1389,21 @@
    },
    {
     "hash": "9754b132a56b69d7",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AARC-SUCT",
+     "S-SAUDI-MV-2026",
+     "S-SHEA-VAP-2022",
+     "S-SIAARTI-VAP-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5cae42b14df889bb",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2762,6 +2804,24 @@
     "gaps": 0,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "642ce200f8e0e75b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AABB-HBV-LABEL-2026",
+     "S-BSH-ATR",
+     "S-CBS-ATR-2022",
+     "S-FDA-COI-2024",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "D01-T17": [
@@ -3868,6 +3928,23 @@
    },
    {
     "hash": "e39cfb675eba34aa",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ACC-OAC-BLEED-2020",
+     "S-ARUP-ANTICOAG",
+     "S-ARUP-DIC",
+     "S-BSH-HIT-2023",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-PHARM-CH",
+     "S-UHS-COAG"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "17c6fec1d471a0ca",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

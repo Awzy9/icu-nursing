@@ -138,16 +138,16 @@ D. A family request to change the dressing early because they think it looks unt
 **Why not B:** It is a routine task that can wait until tomorrow.
 **Why not D:** It is a non-clinical request that can be addressed after safety priorities.
 
-**Q5 (judgment).** On the round the team plans to keep a central line "just in case", although it has not been used for three days. What is the best nursing contribution?
-A. Remove the line after the round, because preventing infection is a nursing responsibility.
-B. Ask whether each lumen is still indicated and whether the line can come out, leaving the decision to the prescriber.
-C. Say nothing about it, since questioning the medical plan during the round is outside the nurse's role and could disrupt the team.
-D. Suggest replacing it with a new line at another site to lower the infection risk.
+**Q5 (judgment).** A patient has recovered from shock and no longer receives vasoactive infusions. The central venous catheter remains in place for possible future treatment; peripheral access is available. The insertion site looks normal. What should the nurse prioritize on the round?
+A. Ask for routine line exchange because the insertion site appears free from infection.
+B. Review ongoing necessity with the team and arrange authorized removal if no longer indicated.
+C. Retain the line until discharge because a normal site excludes catheter-associated infection.
+D. Remove the catheter before discussing whether any current treatment requires central access.
 **Answer: B.**
-**Why correct:** Review ongoing necessity with the team. WHO 2026 recommends at least daily insertion-site assessment and does not support routine replacement without clinical indication. Check whether the line is still needed for infusions or monitoring; remove through the authorized local pathway when no longer needed.
-**Why not A:** Removing a line needs a prescriber's decision or a protocol that allows it.
-**Why not C:** Daily review of whether the line is needed is a shared nursing and medical responsibility.
-**Why not D:** Routine replacement is not recommended and adds the risks of a new insertion.
+**Why correct:** WHO 2026 recommends at least daily insertion-site assessment and does not support routine replacement without clinical indication. A normal site does not establish that continued catheter use is risk-free. Review current infusion, monitoring and access requirements with the team; when the catheter is no longer needed, arrange removal through the authorized local pathway and ensure appropriate alternative access.
+**Why not A:** Routine replacement introduces insertion-related risks and does not resolve the question of ongoing necessity.
+**Why not C:** A normal insertion site cannot exclude bloodstream infection, and an unnecessary catheter exposes the patient to preventable risk.
+**Why not D:** Removal should follow confirmation that the catheter is no longer required and the authorized local procedure.
 
 **Q6 (safety).** A colleague says the 2011 CDC guideline still means chlorhexidine dressings are not needed. What is the best response?
 A. Agree, as the 2011 guideline is the authoritative reference and has not been changed.

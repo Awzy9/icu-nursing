@@ -138,27 +138,27 @@ D. Ask the pharmacist to decide the drug and the timing, because nurses cannot t
 **Why not B:** Waiting for a result delays time-critical treatment.
 **Why not D:** The prescriber chooses the drug; the nurse administers it safely and promptly.
 
-**Q4 (understanding).** According to the current 2026 Surviving Sepsis Campaign guideline, how should qSOFA be used to screen acutely ill hospital patients for possible sepsis?
-A. Use it as the preferred single screening tool for all hospital wards.
-B. Prefer NEWS, NEWS2, MEWS or SIRS over qSOFA as a single screening tool.
-C. Use it in place of clinical assessment when the ward is short of staff and observations are delayed.
-D. Use it only for pregnant patients and children.
+**Q4 (judgment).** An acutely ill ward patient with suspected infection has a qSOFA score of 1, a rising respiratory rate, new confusion and a worsening early-warning score. A colleague suggests waiting until qSOFA reaches 2. What is the best response?
+A. Repeat qSOFA at the next observation round and escalate once it reaches 2.
+B. Use the approved early-warning pathway and clinical findings to escalate now.
+C. Use the qSOFA score to decide whether to request blood cultures before any assessment.
+D. Replace the local early-warning score with qSOFA because infection is suspected.
 **Answer: B.**
-**Why correct:** SSC 2026 strongly recommends NEWS, NEWS2, MEWS or SIRS rather than qSOFA as a single sepsis screening tool for acutely ill hospital patients (moderate certainty). No screening score alone confirms or excludes sepsis.
-**Why not A:** SSC 2026 prefers other screening tools over qSOFA alone.
-**Why not C:** No score replaces clinical assessment.
-**Why not D:** The guideline does not limit its statement to those groups.
+**Why correct:** SSC 2026 strongly recommends NEWS, NEWS2, MEWS or SIRS rather than qSOFA as a single sepsis screening tool for acutely ill hospital patients (moderate certainty). A low qSOFA does not exclude serious illness. Assess ABC and perfusion, activate the local escalation pathway and communicate the changing findings without waiting for a threshold.
+**Why not A:** Waiting for qSOFA to reach a particular value risks delaying assessment of already evident deterioration.
+**Why not C:** Cultures may be indicated, but a screening score does not determine a diagnosis or replace clinical assessment.
+**Why not D:** Use the locally approved screening and escalation pathway, rather than replacing it with a less suitable single tool.
 
-**Q5 (scope).** Which task belongs to the prescriber rather than the nurse?
-A. Taking a full set of observations and calculating the early-warning score.
-B. Phoning for urgent review when the score is in the high-risk band.
-C. Recording the times of the call, the review and the first antimicrobial dose.
-D. Choosing the antimicrobial and deciding the first fluid prescription.
+**Q5 (judgment).** An adult treated for septic shock is improving. Final cultures identify an organism with a susceptibility profile, but the original broad-spectrum antimicrobial prescription remains active. What should the nurse do?
+A. Omit the next scheduled antimicrobial because the culture result is now available.
+B. Continue the original regimen until discharge without raising the result with the team.
+C. Select the narrowest active agent from the susceptibility report and request it from pharmacy.
+D. Communicate the results and clinical response; request a timely authorized antimicrobial review.
 **Answer: D.**
-**Why correct:** Antimicrobial selection and the initial fluid prescription belong to the authorized prescriber or approved protocol. Nurses contribute allergy and perfusion findings, implement authorized urgent care and reassess response; scope varies by jurisdiction.
-**Why not A:** Observations and scoring are independent nursing tasks.
-**Why not B:** Escalation is a nursing responsibility.
-**Why not C:** Documentation is a nursing responsibility.
+**Why correct:** SSC 2026 recommends antimicrobial de-escalation when microbiological confirmation and susceptibility results are available (strong recommendation, very low certainty). Narrowing or discontinuing unnecessary coverage requires clinical assessment, source evaluation and an authorized prescribing decision. Report the culture result, response, allergies and renal function; verify the updated order before changing administration. Do not independently select or omit an agent.
+**Why not A:** Culture results alone do not authorize omission of a prescribed dose; clarify the plan promptly and avoid an unintended treatment gap.
+**Why not B:** Continuing broad coverage without reassessment misses an important stewardship opportunity and can expose the patient to avoidable harms.
+**Why not C:** Susceptibility information is one part of selection; infection site, clinical response and patient-specific factors also matter.
 
 **Q6 (safety).** A hospital outside the UK uses a locally approved early-warning system. A new nurse says NICE NEWS2 thresholds apply unchanged to all patients. What is the best reply?
 A. NICE thresholds are an international standard, so they must be applied in every hospital, whatever early-warning score the unit has adopted for its own wards and patients.

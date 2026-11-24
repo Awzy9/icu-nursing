@@ -157,16 +157,16 @@ D. Consider the old threshold a treatment order and start a reversal or blood-pr
 **Why not C:** Fibrinogen can remain normal as an acute-phase reactant in developing DIC.
 **Why not D:** A teaching score is not an independent prescribing, reversal or transfusion order.
 
-**Q5 (application).** A patient is on warfarin. Which statement matches the Open RN anticoagulant text?
-A. Warfarin does not need any laboratory monitoring, because its effect is predictable and does not change between patients.
-B. Warfarin is monitored by the PTT and its effect is reversed with protamine, which is given by slow infusion.
-C. Warfarin needs close monitoring with PT or INR, and vitamin K is the reversal agent (a prescriber decision).
-D. Warfarin is monitored by the platelet count alone, which is checked once a week in every patient who takes it.
+**Q5 (judgment).** A patient taking warfarin develops major bleeding with circulatory deterioration and an elevated INR. A colleague suggests waiting for vitamin K alone to normalize the result. What is the most appropriate nursing response?
+A. Wait for a repeat INR before activating the bleeding pathway, because the laboratory value determines urgency.
+B. Prepare protamine as the routine reversal for warfarin and reassess after administration.
+C. Activate urgent bleeding care and prepare for clinician-directed rapid warfarin reversal.
+D. Continue warfarin until the laboratory confirms the precise cause of the prolonged clotting time.
 **Answer: C.**
-**Why correct:** Warfarin monitoring uses INR. Vitamin K helps restore clotting-factor production but does not provide immediate reversal. Major bleeding requiring rapid reversal typically calls for four-factor PCC plus vitamin K under an urgent clinician-led pathway; alternatives depend on availability and clinical circumstances.
-**Why not A:** It requires monitoring with PT or INR, because the dose effect varies between patients.
-**Why not B:** Protamine is used for unfractionated heparin reversal; UFH monitoring may use aPTT or anti-Xa under the local protocol. Neither is routine warfarin monitoring.
-**Why not D:** Platelets do not monitor warfarin.
+**Why correct:** Major bleeding with instability requires immediate assessment, emergency escalation and authorized resuscitation. INR is used to monitor warfarin, but treatment urgency depends on the bleeding and clinical state as well. Vitamin K supports restoration of clotting-factor production but is not immediate; major bleeding requiring rapid reversal typically calls for four-factor PCC plus vitamin K under the clinician-led pathway. Verify the anticoagulant, last dose and relevant orders; alternatives depend on local availability and patient factors.
+**Why not A:** Active major bleeding and circulatory deterioration require urgent action; repeat testing must not delay the emergency response.
+**Why not B:** Protamine is used for unfractionated heparin reversal, not routine reversal of vitamin K antagonists.
+**Why not D:** Continuing anticoagulation in major bleeding may worsen harm; promptly follow the authorized withholding and reversal pathway.
 
 **Q6 (scope).** Which task belongs to the prescriber, pharmacist and laboratory rather than the bedside nurse?
 A. Filling the citrate tube to the line and labelling it correctly with the patient's identifiers and the time.
