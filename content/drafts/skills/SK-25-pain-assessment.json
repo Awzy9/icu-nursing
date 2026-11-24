@@ -124,6 +124,13 @@
             "S-SCCM-PADIS",
             "S-CPOT-REVIEW-2024"
           ]
+        },
+        {
+          "text": "Where possible, enable reliable patient self-report using an appropriate communication aid or visual scale. When reliable self-report is not possible, family observations may help identify usual expressions of discomfort, but do not replace a validated behavioral assessment when applicable. Changes in vital signs should trigger further assessment rather than be converted into a pain score.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
         }
       ]
     },
@@ -263,6 +270,15 @@
       "sources": [
         "S-SCCM-PADIS",
         "S-CPOT-REVIEW-2024"
+      ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Where possible, enable reliable patient self-report using an appropriate communication aid or visual scale. When reliable self-report is not possible, family observations may help identify usual expressions of discomfort, but do not replace a validated behavioral assessment when applicable. Changes in vital signs should trigger further assessment rather than be converted into a pain score.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
       ]
     }
   ],
