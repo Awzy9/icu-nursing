@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['SK-12']
-sources: ['N-CDC-CAUTI-2009']
+sources: ['N-CDC-CAUTI-2009', 'S-SHEA-CAUTI-2022']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # Urinary catheter care (CAUTI prevention)
@@ -19,11 +19,11 @@ B. Leave the catheter in until discharge from the unit, because removing it woul
 C. Remove the catheter solely because the patient is mobilising, without checking indications or an authorised pathway.
 D. Change the catheter and drainage bag for a new set to reduce the infection risk on day three.
 **Answer: A.**
-**Why correct:** The CDC guideline advises inserting catheters only for appropriate indications and leaving them only as long as needed; the nurse reviews necessity and removes the catheter if authorised by an approved nurse-led protocol, or seeks an order when required.
+**Why correct:** Review the continuing indication and remove the catheter through the authorised pathway when it is no longer needed. SHEA's 2022 update distinguishes hourly output measurement that guides frequent treatment changes from ICU admission alone, which does not justify catheterisation.
 **Why not B:** Convenience is not an indication, and prolonged catheter days raise infection risk.
 **Why not C:** Removal requires assessment of ongoing indications and an order or approved nurse-led protocol; mobility alone is insufficient.
 **Why not D:** Routine fixed-interval changes are not recommended; changes follow clinical indications.
-**Trace:** N-CDC-CAUTI-2009 — Appropriate indications, leave only as long as needed (IB); no routine fixed-interval changes (II).
+**Trace:** N-CDC-CAUTI-2009, S-SHEA-CAUTI-2022 — Daily indication review; hourly output only when it informs clinical management; no routine fixed-interval changes.
 
 **Q2 (application).** You help a catheterised patient from bed to a chair. The drainage bag is hanging on the arm of the chair, level with his abdomen. What should you do?
 A. Leave the bag on the chair arm so urine can drain by gravity into the bag while he is seated.
@@ -40,10 +40,10 @@ D. Hang the bag below bladder level, off the floor, with the tubing free of kink
 **Q3 (safety).** During a turn, the junction between a catheter and its drainage tube separates and the tube end touches the bed sheet. What is the best action?
 A. Wipe the tube end with an alcohol swab, reconnect it and carry on, because the interruption was only brief.
 B. Flush the tube end with antiseptic solution and reconnect, which should make the system safe again.
-C. Replace the catheter and collecting system aseptically, using sterile equipment, and report the breach.
+C. Arrange aseptic replacement of the catheter and drainage system by authorised staff, and report the breach.
 D. Leave the junction open to drain into a clean container until the doctor arrives to review it.
 **Answer: C.**
-**Why correct:** The guideline says that if aseptic technique breaks or the system disconnects or leaks, the catheter and collecting system should be replaced using aseptic technique and sterile equipment.
+**Why correct:** A disconnected or leaking system requires aseptic replacement of both catheter and collection system under the local procedure by trained, authorised staff. Reconnection alone does not restore the closed system.
 **Why not A:** Reconnecting a contaminated closed system breaks the closed-drainage principle.
 **Why not B:** Antiseptic instillation is not a recommended way to restore a broken closed system.
 **Why not D:** An open system increases infection risk and does not fix the breach.
@@ -87,3 +87,4 @@ D. Each bag should be emptied into a separate, clean container, avoiding splashi
 
 ## 18. References
 - CDC/HICPAC Guideline for Prevention of Catheter-Associated Urinary Tract Infections (2009). https://www.cdc.gov/infection-control/media/pdfs/Guideline-CAUTI-H.pdf (accessed 2026-11-15)
+- SHEA/IDSA/APIC. CAUTI prevention: 2022 update (published 2023). https://doi.org/10.1017/ice.2023.137 (accessed 2026-11-24; selected recommendations only)

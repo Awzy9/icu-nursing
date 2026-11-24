@@ -1259,12 +1259,17 @@
      "id": "N-CDC-CAUTI-2009",
      "licence_class": "UNVERIFIED",
      "verified": null
+    },
+    {
+     "id": "S-SHEA-CAUTI-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "071f489c864a5466"
+   "hash": "a4f98b2ec72c2adb"
   },
   {
    "key": "XQ-02",
@@ -1279,12 +1284,17 @@
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-PIVC-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "26feee447b689694"
+   "hash": "15e84d7479155bb9"
   },
   {
    "key": "XQ-03",
@@ -1304,12 +1314,17 @@
      "id": "S-SHEA-CLABSI-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-CVC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "38ac98f519c438af"
+   "hash": "2a85dd8855595e62"
   },
   {
    "key": "XQ-04",

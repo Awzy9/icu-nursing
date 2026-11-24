@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['SK-02']
-sources: ['S-CDC-BSI-2011', 'S-SHEA-CLABSI-2022']
+sources: ['S-CDC-BSI-2011', 'S-SHEA-CLABSI-2022', 'S-WHO-CVC-2026']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # Central venous catheter care (CDC 2011)
@@ -61,13 +61,13 @@ D. Showering can be allowed if the catheter and connecting device are protected 
 **Why not C:** Submerging the catheter or site is not advised.
 **Trace:** S-CDC-BSI-2011 — Do not submerge catheter/site; showering permitted with protection (IB).
 
-**Q5 (monitoring).** A patient has a short-term central line with a transparent dressing labelled eight days ago that still looks intact. How should the nurse act?
+**Q5 (monitoring).** An adult patient has a short-term central line with a transparent dressing labelled eight days ago that still looks intact. How should the nurse act?
 A. Leave it, because an intact dressing does not need changing until it becomes damp or soiled.
 B. Change it if the patient develops a fever, because fever is the signal to look at the site.
-C. Recognise that the usual interval for transparent dressings on short-term lines is at least weekly and follow your unit's interval.
+C. Arrange the due dressing change under the unit's approved short-term CVC dressing procedure.
 D. Replace the label and the tape so the dressing stays in place and the date looks current.
 **Answer: C.**
-**Why correct:** CDC advises replacing transparent dressings on short-term CVC sites at least every 7 days (Category IB), with exceptions in children; local policy sets the exact interval.
+**Why correct:** The CDC recommendation is to change transparent dressings on short-term CVC sites at least every seven days, with a specific paediatric exception. For this adult, the labelled eight-day interval is overdue; follow the approved dressing procedure and replace earlier when the dressing is compromised.
 **Why not A:** An interval applies even when the dressing looks intact.
 **Why not B:** Waiting for fever delays a scheduled change.
 **Why not D:** Relabelling does not renew a dressing that has passed its interval.
@@ -79,12 +79,13 @@ B. Ask the team whether the line is still needed.
 C. Remove it yourself immediately, since you are the person who looks after the line every day.
 D. Change the dressing and flush the line, because this shows the line is working and may stay.
 **Answer: B.**
-**Why correct:** CDC and SHEA both emphasise reviewing line necessity and removing lines that are no longer needed; removal is performed by a credentialed clinician following the required order or approved local protocol.
+**Why correct:** Review ongoing need and arrange removal when the line is no longer essential. WHO 2026 recommends daily assessment of the site and suggests against routine central catheter replacement without a clinical indication. Removal follows the authorised local pathway.
 **Why not A:** Every line day carries infection risk.
 **Why not C:** Removal needs an order or an approved protocol.
 **Why not D:** Maintenance does not answer whether the line is needed.
-**Trace:** S-CDC-BSI-2011, S-SHEA-CLABSI-2022 — Remove nonessential lines; review daily necessity.
+**Trace:** S-CDC-BSI-2011, S-SHEA-CLABSI-2022, S-WHO-CVC-2026 — Review necessity, daily site assessment and no routine CVC replacement without clinical indication.
 
 ## 18. References
 - CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections (2011; last update October 2017). https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-15)
 - SHEA/IDSA/APIC Strategies to Prevent CLABSI (2022 update). https://pmc.ncbi.nlm.nih.gov/articles/PMC9096710/ (accessed 2026-11-15)
+- WHO. Intravascular catheter infection prevention, part 2: central venous catheters (2026). https://www.who.int/publications/i/item/9789240121805 (accessed 2026-11-24; selected recommendations only)

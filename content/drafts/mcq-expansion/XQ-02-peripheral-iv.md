@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['SK-03']
-sources: ['S-CDC-BSI-2011']
+sources: ['S-CDC-BSI-2011', 'S-WHO-PIVC-2024']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # Peripheral IV care (CDC 2011)
@@ -19,11 +19,11 @@ B. Skip the check until the patient complains of pain, because tenderness is the
 C. Inspect the edge of the gauze and the tubing, since the skin under it is hidden from view.
 D. Palpate through the dressing for tenderness and leave the gauze in place unless there are signs of infection.
 **Answer: D.**
-**Why correct:** CDC advises daily evaluation by palpation through the dressing, and says gauze and opaque dressings should not be removed if there are no clinical signs of infection.
+**Why correct:** Assess the site through the dressing, using inspection when visible and palpation for tenderness. WHO 2024 recommends at least daily site and vein assessment irrespective of the replacement schedule. An intact opaque dressing need not be removed just to inspect an asymptomatic site; new tenderness or other concerning findings require reassessment.
 **Why not A:** Needless removal is not advised when there are no signs of infection.
 **Why not B:** The guideline asks for a daily evaluation, not waiting for symptoms.
 **Why not C:** Palpation through the dressing is the recommended way to assess tenderness.
-**Trace:** S-CDC-BSI-2011 — Evaluate site daily by palpation through dressing; do not remove gauze/opaque dressing without signs of infection (II).
+**Trace:** S-CDC-BSI-2011, S-WHO-PIVC-2024 — Daily assessment, opaque dressing precautions and site inspection regardless of replacement schedule.
 
 **Q2 (judgment).** The skin over a peripheral catheter is red and warm, with a tender venous cord. The assessment suggests phlebitis, not suspected vesicant extravasation. What is the right response?
 A. Flush the catheter gently and continue the infusion, then recheck the site at the next routine round.
@@ -52,12 +52,12 @@ D. Cover it with a bandage and elevate the leg so the site is protected from mov
 **Q4 (application).** After applying skin antiseptic to a patient's forearm, you want to feel for the vein once more before inserting a peripheral cannula. What should you do?
 A. Not palpate the site again unless aseptic technique is maintained, for example by using a sterile glove.
 B. Palpate with a clean bare finger, because the antiseptic has already killed the organisms on the skin.
-C. Palpate with a gloved hand once the antiseptic is fully dry, then insert straight away.
+C. Palpate with a clean nonsterile glove once the antiseptic dries, then insert straight away.
 D. Apply more antiseptic after palpating and insert before it dries to save time on the procedure.
 **Answer: A.**
 **Why correct:** CDC says palpation of the insertion site should not be performed after the application of antiseptic unless aseptic technique is maintained.
 **Why not B:** Touching the prepared site contaminates it, which is why the guideline restricts re-palpation.
-**Why not C:** Dryness does not change the rule; aseptic technique has to be maintained.
+**Why not C:** A nonsterile glove does not maintain asepsis when touching the prepared insertion site. Dryness alone does not make that contact safe.
 **Why not D:** Re-applying antiseptic does not make unprotected palpation acceptable.
 **Trace:** S-CDC-BSI-2011 — Palpation after antiseptic only if aseptic technique maintained (IB hand hygiene and aseptic technique).
 
@@ -69,9 +69,9 @@ D. Whether a midline catheter or a PICC would suit better than repeated short pe
 **Answer: D.**
 **Why correct:** CDC's 2011 recommendation supports considering a midline or PICC for longer IV treatment. Select access with the vascular-access team according to the infusate, vessel health, patient risks and intended duration, rather than duration alone.
 **Why not A:** Frequent resiting is not what the guideline recommends for longer therapy.
-**Why not B:** An intact dressing alone does not establish ongoing suitability; reassess necessity and site condition under the local policy.
+**Why not B:** A dry dressing is not proof of suitability. WHO 2024 conditionally permits scheduled or clinically indicated removal; neither strategy removes the need for daily assessment and timely removal for complications or lack of need.
 **Why not C:** Steel needles are not recommended where tissue necrosis could follow extravasation.
-**Trace:** S-CDC-BSI-2011 — Midline or PICC instead of short peripheral catheter when IV therapy likely to exceed six days (II).
+**Trace:** S-CDC-BSI-2011, S-WHO-PIVC-2024 — CDC longer-therapy access recommendation; WHO removal strategy and reassessment principles, not a universal device selection rule.
 
 **Q6 (scope).** A colleague proposes a steel winged needle for a drug that can cause tissue necrosis if it leaks out of the vein. What is the best response?
 A. Accept it, because a steel needle is easier to remove if the drug starts to leak into the tissue.
@@ -87,3 +87,4 @@ D. Accept it for one dose only, since a single short use should carry little ris
 
 ## 18. References
 - CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections (2011; last update October 2017). https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-15)
+- WHO. Intravascular catheter infection prevention, part I: peripheral catheters (2024). https://www.who.int/publications/i/item/9789240093829 (accessed 2026-11-24; selected recommendations only)

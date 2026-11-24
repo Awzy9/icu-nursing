@@ -2327,6 +2327,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "a4f98b2ec72c2adb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-CDC-CAUTI-2009",
+     "S-SHEA-CAUTI-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-02": [
@@ -2347,6 +2359,18 @@
     "evidence_status": "partial",
     "sources": [
      "S-CDC-BSI-2011"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "15e84d7479155bb9",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-WHO-PIVC-2024"
     ],
     "gaps": 0,
     "required_sources": 0,
@@ -2396,6 +2420,19 @@
     "sources": [
      "S-CDC-BSI-2011",
      "S-SHEA-CLABSI-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "2a85dd8855595e62",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022",
+     "S-WHO-CVC-2026"
     ],
     "gaps": 0,
     "required_sources": 0,
