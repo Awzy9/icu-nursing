@@ -14,7 +14,7 @@
   "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
   "summary": "Intravenous alkalinising agent for metabolic acidosis in conditions such as severe renal disease, uncontrolled diabetes, circulatory insufficiency due to shock and severe dehydration. Nursing focus: sodium and fluid overload, alkalosis and extravasation.",
   "batch": 3,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Selected clinical evidence supplements the regulator label; full guideline and independent clinical appraisal remain outstanding.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -40,6 +40,31 @@
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "SSC 2026 bicarbonate recommendations, official HTML"
+    },
+    {
+      "id": "S-AHA-ALS-2025",
+      "read": "partial",
+      "use": "AHA 2025 adult ALS routine arrest bicarbonate recommendation"
+    },
+    {
+      "id": "S-UKKA-HK-2026",
+      "read": "partial",
+      "use": "UKKA July 2026 hospital summary recommendation 16.5"
+    },
+    {
+      "id": "S-BICARICU2-2025",
+      "read": "partial",
+      "use": "BICARICU-2 2025 randomized trial: 90-day mortality and kidney replacement outcome, abstract and indexed article"
+    },
+    {
+      "id": "S-BICAR-IPD-2026",
+      "read": "partial",
+      "use": "2026 pooled individual-patient analysis of BICAR-ICU trials, indexed abstract"
     }
   ],
   "sections": {
@@ -51,6 +76,21 @@
           "support": "sourced",
           "sources": [
             "L-BICARBONATE"
+          ]
+        },
+        {
+          "text": "SSC 2026 advises against bicarbonate solely to improve circulation or reduce vasopressor needs in hypoperfusion-related lactic acidemia. Selected adults with septic shock, severe metabolic acidemia and moderate or severe AKI have a separate conditional recommendation with very low certainty.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026"
+          ]
+        },
+        {
+          "text": "BICARICU-2 found no significant improvement in mortality at 90 days, although kidney replacement therapy occurred less often. A 2026 pooled analysis likewise found no overall survival benefit; a signal in profound acidemia needs cautious interpretation. Do not equate correction of laboratory pH with improved survival.",
+          "support": "partial",
+          "sources": [
+            "S-BICARICU2-2025",
+            "S-BICAR-IPD-2026"
           ]
         }
       ]
@@ -99,7 +139,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Solutions containing sodium should be used with great care, if at all, in congestive heart failure, severe renal insufficiency and oedematous states with sodium retention.",
@@ -120,6 +160,14 @@
           "support": "sourced",
           "sources": [
             "L-BICARBONATE"
+          ]
+        },
+        {
+          "text": "Routine bicarbonate is not recommended in adult cardiac arrest by AHA 2025 or as routine acute hyperkalaemia treatment by UKKA 2026. Special-circumstance treatment is a separate clinician-directed decision.",
+          "support": "partial",
+          "sources": [
+            "S-AHA-ALS-2025",
+            "S-UKKA-HK-2026"
           ]
         }
       ]
@@ -247,16 +295,27 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Assess ordered blood gas and electrolyte trends, ventilation, sodium and fluid balance; escalate worsening acidemia, respiratory compromise, suspected alkalosis or tissue injury.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-BICARBONATE",
+        "S-SSC-2026"
+      ]
     }
   ],
   "gaps": [
-    "Cardiac arrest and acidosis guideline text (ERC/AHA) was not used; the role of bicarbonate in arrest is a prescriber decision.",
+    "Selected SSC 2026, AHA 2025 and UKKA 2026 recommendations now linked; specialty indications and emergency protocols still require full review.",
     "Dosing, preparation and administration details: deliberately not included.",
-    "No clinical practice guideline or nursing source was read for this entry."
+    "BICARICU-2 and 2026 pooled analysis checked at abstract/indexed article level; full appraisal and local treatment policy remain outstanding."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-    "FDA infusion pump page: verify reuse terms."
+    "FDA infusion pump page: verify reuse terms.",
+    "Additional guideline and journal sources are cited for independent original paraphrase only; commercial reproduction rights not assessed."
   ],
   "label_currency_check": {
     "checked": "2026-11-16",

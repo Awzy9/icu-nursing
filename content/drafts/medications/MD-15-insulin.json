@@ -12,9 +12,9 @@
   "category": "insulin-electrolytes-fluids",
   "high_alert": true,
   "high_alert_note": "Named among the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
-  "summary": "Short-acting human insulin product for intravenous use to improve glycaemic control in adults and children with diabetes. The label read is a specific premixed intravenous product; other insulin products differ. Nursing focus: hypoglycaemia, hypokalaemia and glucose monitoring.",
+  "summary": "Short-acting human insulin product for intravenous use to improve glycaemic control in adults and children with diabetes. The label read is a specific ready-to-use intravenous human insulin solution (MYXREDLIN); other insulin products differ. Nursing focus: hypoglycaemia, hypokalaemia and glucose monitoring.",
   "batch": 2,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Guideline-based monitoring statements added in Phase 9 come from UK national guidelines (UKKA July 2026 and JBDS January 2020), read in part only, for adults in UK hospitals; they are marked partial and do not replace the unit's protocol.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Guideline-based monitoring statements added in Phase 9 come from UK national guidelines (UKKA July 2026 and JBDS January 2020), read in part only, for adults in UK hospitals; they are marked partial and do not replace the unit's protocol. Selected clinical evidence supplements the regulator label; full guideline and independent clinical appraisal remain outstanding.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -37,19 +37,24 @@
       "use": "AHRQ TeamSTEPPS SBAR page"
     },
     {
-      "id": "N-UKKA-HK-2026-07",
-      "read": "partial",
-      "use": "UKKA acute hyperkalaemia guideline (July 2026): glucose and potassium monitoring after insulin-glucose"
-    },
-    {
-      "id": "N-JBDS-HYPO-2020",
-      "read": "partial",
-      "use": "JBDS inpatient hypoglycaemia guideline (January 2020): treat as an emergency, do not omit later insulin without review"
-    },
-    {
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-ADA-HOSP-2026",
+      "read": "partial",
+      "use": "ADA 2026 hospital standards indexed primary recommendation excerpts on basal insulin and nutrition"
+    },
+    {
+      "id": "S-JBDS-HYPO-2023",
+      "read": "partial",
+      "use": "Current JBDS 2023 inpatient hypoglycaemia guidance, prior targeted reconciliation"
+    },
+    {
+      "id": "S-UKKA-HK-2026",
+      "read": "partial",
+      "use": "UKKA July 2026 hospital recommendations on insulin-glucose and post-treatment checks"
     }
   ],
   "sections": {
@@ -100,11 +105,18 @@
           "sources": [
             "L-INSULIN"
           ]
+        },
+        {
+          "text": "If feeding stops, promptly coordinate the nutrition and insulin plan. Essential basal insulin for type 1 diabetes must not be inadvertently omitted, including during care transitions; a clinician determines the appropriate ongoing regimen.",
+          "support": "partial",
+          "sources": [
+            "S-ADA-HOSP-2026"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Hypoglycaemia may be life-threatening; risk is increased by changes in nutrition, co-administered medicines and renal or hepatic impairment.",
@@ -132,6 +144,14 @@
           "support": "sourced",
           "sources": [
             "L-INSULIN"
+          ]
+        },
+        {
+          "text": "MYXREDLIN is a specific IV human insulin solution, not a mixed basal and prandial insulin product. Verify the actual insulin, route and indication; glucose-lowering treatment and emergency potassium shifting are distinct pathways.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN",
+            "S-UKKA-HK-2026"
           ]
         }
       ]
@@ -264,7 +284,7 @@
       "critical": true,
       "support": "partial",
       "sources": [
-        "N-UKKA-HK-2026-07"
+        "S-UKKA-HK-2026"
       ]
     },
     {
@@ -273,28 +293,39 @@
       "critical": true,
       "support": "partial",
       "sources": [
-        "N-UKKA-HK-2026-07"
+        "S-UKKA-HK-2026"
       ]
     },
     {
       "kind": "escalate",
-      "text": "Treat a low blood glucose as an emergency whatever the level of consciousness; ask the prescriber to review insulin doses instead of omitting later doses on your own (JBDS 2020, UK adults with diabetes).",
+      "text": "Treat a low blood glucose as an emergency whatever the level of consciousness; ask the prescriber to review insulin doses instead of omitting later doses on your own (JBDS 2023, UK adults with diabetes).",
       "critical": true,
       "support": "partial",
       "sources": [
-        "N-JBDS-HYPO-2020"
+        "S-JBDS-HYPO-2023"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm the insulin indication, baseline and follow-up glucose, potassium and nutrition status. During emergency potassium shifting, monitor for delayed hypoglycaemia and rebound hyperkalaemia according to the authorized pathway.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-UKKA-HK-2026",
+        "S-ADA-HOSP-2026"
       ]
     }
   ],
   "gaps": [
     "Dosing, glycaemic targets, premixed bag strength and preparation: deliberately not included.",
     "Other insulin products (subcutaneous, long-acting, concentrated) were not covered.",
-    "Hyperglycaemia and DKA protocols were not read for this entry."
+    "ADA 2026 hospital recommendations and UKKA July 2026 hospital summary checked; JBDS 2023 reference replaces 2020. Full DKA and hyperglycaemia protocol appraisal remains outstanding."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
     "FDA infusion pump page: verify reuse terms.",
-    "UKKA and JBDS guidelines: no reuse statement found in the text read; paraphrase only and verify."
+    "UKKA and JBDS guidelines: no reuse statement found in the text read; paraphrase only and verify.",
+    "Additional guideline and journal sources are cited for independent original paraphrase only; commercial reproduction rights not assessed."
   ],
   "label_currency_check": {
     "checked": "2026-11-16",

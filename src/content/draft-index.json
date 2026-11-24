@@ -3181,14 +3181,9 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-JBDS-HYPO-2020",
-     "licence_class": "YELLOW",
-     "verified": null
-    },
-    {
-     "id": "N-UKKA-HK-2026-07",
-     "licence_class": "YELLOW",
-     "verified": null
+     "id": "S-ADA-HOSP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
     },
     {
      "id": "S-AHRQ-TS",
@@ -3201,15 +3196,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-JBDS-HYPO-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "50506bd3aa1155bf"
+   "hash": "81b48532b810d165"
   },
   {
    "key": "MD-16",
@@ -3296,6 +3301,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3306,6 +3316,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NHS-SPS-MG",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3314,7 +3329,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 0,
-   "hash": "0478eff526c94e1f"
+   "hash": "f95a0bae0da5946d"
   },
   {
    "key": "MD-19",
@@ -3351,6 +3366,11 @@
      "verified": "2026-11-23"
     },
     {
+     "id": "S-NHS-SPS-MG",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3359,7 +3379,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "116d2dd91e2dd98f"
+   "hash": "96ce1314c2a58da6"
   },
   {
    "key": "MD-20",
@@ -3389,12 +3409,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 7,
    "required_sources": 0,
-   "hash": "f1e0f923abeaf59f"
+   "hash": "2e16938e08997c4a"
   },
   {
    "key": "MD-21",
@@ -3411,9 +3436,24 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-BICAR-IPD-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-BICARICU2-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-FDA-PUMP",
@@ -3424,12 +3464,22 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c3b23c45026fc43b"
+   "hash": "41f9dab3982a8f8b"
   },
   {
    "key": "MD-22",

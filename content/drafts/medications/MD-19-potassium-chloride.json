@@ -14,7 +14,7 @@
   "high_alert_note": "Intravenous potassium is high-risk under the NSW Clinical Excellence Commission safety standard; ISMP's 2024 high-alert list specifically names potassium chloride for injection CONCENTRATE. This entry's original US label concerns a concentrated ready-to-use premixed product, not an undiluted concentrate vial. Product-specific safeguards differ. External ISMP/NSW classification references are documented in the separate evidence report; medication instructions cite only appropriate US label sources.",
   "summary": "Parenteral potassium for potassium deficiency when oral replacement is not feasible. The label read is a highly concentrated ready-to-use product intended for fluid-restricted patients. Nursing focus: preventing potassium intoxication, cardiac and potassium monitoring and patients predisposed to hyperkalaemia.",
   "batch": 2,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Selected clinical evidence supplements the regulator label; full guideline and independent clinical appraisal remain outstanding.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -50,6 +50,11 @@
       "id": "S-NHS-SPS-HYPO-2024",
       "read": "partial",
       "use": "UK NHS SPS clinical pharmacy article (2024), hypokalaemia and potassium-safety sections reviewed; no replacement regimens/doses."
+    },
+    {
+      "id": "S-NHS-SPS-MG",
+      "read": "partial",
+      "use": "NHS SPS hypomagnesaemia monitoring and associated potassium abnormalities"
     }
   ],
   "sections": {
@@ -118,6 +123,15 @@
           "sources": [
             "L-POTASSIUM"
           ]
+        },
+        {
+          "text": "Reassess ordered potassium during and after replacement, including renal function and magnesium where indicated. Persistent low potassium can accompany magnesium deficiency; the clinical team investigates and treats both rather than repeating replacement automatically.",
+          "support": "partial",
+          "sources": [
+            "S-NHS-SPS-HYPO-2024",
+            "L-POTASSIUM",
+            "S-NHS-SPS-MG"
+          ]
         }
       ]
     },
@@ -167,6 +181,14 @@
           "sources": [
             "S-DAILYMED-KCL-CONC-2026",
             "S-NHS-SPS-HYPO-2024"
+          ]
+        },
+        {
+          "text": "Escalate any mismatch between the order, the actual bag or vial, and the intended route before administration. A ready-to-use high-strength infusion still requires its own product-specific access and monitoring safeguards; it is not an IV push product.",
+          "support": "partial",
+          "sources": [
+            "L-POTASSIUM",
+            "S-DAILYMED-KCL-CONC-2026"
           ]
         }
       ]
@@ -290,12 +312,13 @@
   "gaps": [
     "Dosing, concentrations, maximum rates and preparation: deliberately not included.",
     "Other potassium chloride presentations remain out of scope for dosing/preparation; concentrate-vial hazards and formulation differences are now covered as a safety warning, not a preparation guide.",
-    "UK SPS hypokalaemia-monitoring and potassium-safety guidance is now incorporated qualitatively; no specific replacement doses, rates, concentrations, intervals or local preparation/compounding protocol is provided."
+    "NHS SPS potassium and magnesium monitoring guidance used qualitatively; exact product and local replacement procedures remain outstanding."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
     "FDA infusion pump page: verify reuse terms.",
-    "NHS SPS 2024 hypokalaemia advice paraphrased only; reuse and jurisdictional relevance must be assessed before clinical publication."
+    "NHS SPS 2024 hypokalaemia advice paraphrased only; reuse and jurisdictional relevance must be assessed before clinical publication.",
+    "Additional guideline and journal sources are cited for independent original paraphrase only; commercial reproduction rights not assessed."
   ],
   "label_currency_check": {
     "checked": "2026-11-15",

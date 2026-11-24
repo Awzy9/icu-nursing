@@ -14,7 +14,7 @@
   "high_alert_note": "ISMP's 2024 acute-care list explicitly identifies injectable magnesium sulfate as a high-alert medication. This is a medication-safety classification, not a product-specific dosage or administration protocol; local policy controls safeguards. Source classification independently checked; ISMP copyrighted material is cited in the separate evidence audit, not incorporated as a source of medication instructions.",
   "summary": "Parenteral magnesium for indicated magnesium deficiency and other formulation-specific indications. Nursing focus: monitor for respiratory and neuromuscular depression, low blood pressure, impaired renal clearance, interaction-related weakness, cardiac-conduction concerns and formulation errors.",
   "batch": 2,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Targeted 2026-11-21 re-read of the already-registered US Hospira DailyMed label focused on contraindications, drug interactions, adverse effects and symptoms of overdose. This is not a replacement for site-specific bedside procedures.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Targeted 2026-11-21 re-read of the already-registered US Hospira DailyMed label focused on contraindications, drug interactions, adverse effects and symptoms of overdose. This is not a replacement for site-specific bedside procedures. Selected clinical evidence supplements the regulator label; full guideline and independent clinical appraisal remain outstanding.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -40,6 +40,16 @@
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-NHS-SPS-MG",
+      "read": "partial",
+      "use": "NHS SPS adult hypomagnesaemia monitoring section, selected HTML text"
+    },
+    {
+      "id": "S-AHA-ALS-2025",
+      "read": "partial",
+      "use": "AHA 2025 adult ALS recommendations for recurrent polymorphic VT associated with prolonged QT"
     }
   ],
   "sections": {
@@ -58,6 +68,13 @@
           "support": "sourced",
           "sources": [
             "L-MAGNESIUM"
+          ]
+        },
+        {
+          "text": "AHA 2025 considers magnesium for recurrent polymorphic ventricular tachycardia associated with prolonged QT (torsades de pointes); this is distinct from routine magnesium replacement or indiscriminate treatment of ventricular arrhythmias.",
+          "support": "partial",
+          "sources": [
+            "S-AHA-ALS-2025"
           ]
         }
       ]
@@ -121,6 +138,14 @@
           "text": "Magnesium elimination depends on renal function. Trend urine output and renal results and assess respiratory effort and reflexes. For eclampsia, the registered label calls for injectable calcium rescue treatment to be immediately available; follow the indication-specific toxicity pathway and local emergency preparation policy.",
           "support": "partial",
           "sources": [
+            "L-MAGNESIUM"
+          ]
+        },
+        {
+          "text": "During magnesium replacement, review ordered magnesium, calcium and potassium, renal function, and blood pressure. Severe symptoms such as tetany, seizures or arrhythmias warrant appropriate ECG surveillance and urgent clinician assessment.",
+          "support": "partial",
+          "sources": [
+            "S-NHS-SPS-MG",
             "L-MAGNESIUM"
           ]
         }
@@ -203,7 +228,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Immediately report depressed or absent reflexes, decreasing respiratory effort, new oliguria, hypotension, conduction abnormalities or a product error. activate the local emergency response for severe respiratory or circulatory compromise and follow the magnesium-toxicity protocol.",
+          "text": "Immediately report depressed or absent reflexes, decreasing respiratory effort, new oliguria, hypotension, conduction abnormalities or a product error. Activate the local emergency response for severe respiratory or circulatory compromise and follow the magnesium-toxicity protocol.",
           "support": "partial",
           "sources": [
             "L-MAGNESIUM"
@@ -341,7 +366,7 @@
   ],
   "gaps": [
     "Exact dosing, concentration, dilution, infusion rates, drug compatibility and obstetric regimens are deliberately excluded; only validated hospital/pharmacy procedures and the dispensed product's current labeling govern.",
-    "Neonatal and obstetric use, and magnesium treatment for rhythm disorders, require specialist protocols not reviewed here.",
+    "Selected AHA 2025 torsades recommendation and NHS SPS magnesium monitoring guidance linked. Neonatal, obstetric and emergency rhythm protocols still require specialist appraisal.",
     "Different magnesium sulfate formulations, excipients and manufacturers may differ; this record cites one US Hospira product only.",
     "Therapy in severe kidney dysfunction and extracorporeal therapies (CRRT) requires individual renal/pharmacy review; no dose adjustment is taught.",
     "Prescriber-specific toxicity-management decisions (including respiratory support, intravenous calcium rescue and treatment interruption) are not a nursing standing order in this draft.",
@@ -349,7 +374,8 @@
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-    "FDA infusion pump page: verify reuse terms."
+    "FDA infusion pump page: verify reuse terms.",
+    "Additional guideline and journal sources are cited for independent original paraphrase only; commercial reproduction rights not assessed."
   ],
   "label_currency_check": {
     "checked": "2026-11-15",
