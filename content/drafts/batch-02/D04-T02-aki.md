@@ -14,7 +14,7 @@ sources_not_read: [S-KDIGO-AKI]
 independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO update is mentioned only as a draft. Selected SSC 2026 renal replacement therapy recommendations were checked on 2026-11-24."
 ---
 # Acute kidney injury – nursing recognition, monitoring and escalation
-> DRAFT – NOT clinically reviewed. AI-generated. The KDIGO 2026 guideline is a draft and must not be cited as final.
+> DRAFT – NOT clinically reviewed. AI-generated. The KDIGO AKI/AKD update remains a public-review draft; KDIGO lists a 2027 draft summary dated 19 November 2026. It must not be cited as final.
 
 ## 1. Overview
 Acute kidney injury (AKI) is a sudden fall in kidney function, shown by a rise in blood creatinine or a fall in urine output. It is common in critical illness (sepsis, shock, surgery, nephrotoxic medicines, contrast agents) and often preventable or reversible if recognised early. The nurse measures urine output and fluid balance accurately, notices risk factors and early warning signs, flags medicines and contrast exposure to the team, and escalates promptly. Diagnosis, fluid and drug decisions, and renal replacement therapy decisions belong to the team.
@@ -184,7 +184,7 @@ D. Deciding to stop a nephrotoxic drug.
 Urine-output targets, balance charting, call-back limits for potassium and renal replacement therapy criteria follow local protocols.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: NICE NG148 is a national guideline; most recommendations date from 2013 and align with KDIGO definitions. The 2026 KDIGO update, which revises definitions and adds biomarkers, is a draft and not yet final.
+- Source quality: NICE NG148 is a national guideline; most recommendations date from 2013 and align with KDIGO definitions. KDIGO lists a 2027 public-review draft summary dated 19 November 2026. The proposed update has not been established as final; do not use draft definitions or biomarker recommendations to override established local practice. Status checked 25 November 2026: https://kdigo.org/guidelines/acute-kidney-injury/
 - International applicability: detection criteria are shared internationally; NICE service pathways and drug advice are UK-oriented.
 - Not covered: CRRT nursing care (separate topic), electrolyte management, contrast prophylaxis details, paediatric AKI.
 - Open questions for reviewers (NEPH, CCP, PH, NE, BN): confirm urine-output frequency and thresholds for ICU; nurse role in dipstick; await the final KDIGO AKI/AKD guideline.
