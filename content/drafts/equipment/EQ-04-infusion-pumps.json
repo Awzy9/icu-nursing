@@ -42,8 +42,12 @@
     },
     {
       "name": "Occlusion and air alarms",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "Some infusion pumps detect flow obstruction or air in tubing. An alert is not a definitive diagnosis, and absence of an alert does not ensure safe delivery. Assess the patient and seek trained assistance using the model-specific procedure; do not force-flush or override protective alarms.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP-OVERVIEW",
+        "S-FDA-PUMP"
+      ]
     }
   ],
   "safety_concepts": [
@@ -102,6 +106,11 @@
       "id": "S-FDA-PUMP",
       "read": "full",
       "use": "FDA infusion pump risk-reduction page"
+    },
+    {
+      "id": "S-FDA-PUMP-OVERVIEW",
+      "read": "partial",
+      "use": "FDA public HTML, pump alarm functions and failure risks."
     }
   ],
   "required_sources": [

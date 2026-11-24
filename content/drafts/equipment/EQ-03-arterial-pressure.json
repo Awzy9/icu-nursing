@@ -26,18 +26,27 @@
   "parameters": [
     {
       "name": "Arterial pressure value",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "An invasive measurement depends on a correctly referenced and functioning pressure system. Assess the patient and correlate an implausible value with an alternative measurement when feasible.",
+      "support": "partial",
+      "sources": [
+        "S-ARTERIAL-MEASUREMENT-2020"
+      ]
     },
     {
       "name": "Arterial waveform",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The trace represents pulsatile arterial pressure. Excessive damping may flatten the trace and underestimate systolic pressure; resonance can exaggerate the systolic peak. These distortions require trained assessment, not independent treatment changes.",
+      "support": "partial",
+      "sources": [
+        "S-ARTERIAL-MEASUREMENT-2020"
+      ]
     },
     {
       "name": "Zero and levelling",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "Levelling relates the transducer to the intended anatomical reference; zeroing establishes the measurement baseline. A height or reference error may distort the pressure. Follow the specific system instructions and reassess after position changes.",
+      "support": "partial",
+      "sources": [
+        "S-ARTERIAL-MEASUREMENT-2020"
+      ]
     }
   ],
   "safety_concepts": [
@@ -116,6 +125,11 @@
       "id": "S-SSC-2021",
       "read": "full",
       "use": "complication rates (superseded edition)"
+    },
+    {
+      "id": "S-ARTERIAL-MEASUREMENT-2020",
+      "read": "partial",
+      "use": "Corrected publisher HTML, sections on reference level, zeroing and waveform quality; technical procedure not reproduced."
     }
   ],
   "required_sources": [

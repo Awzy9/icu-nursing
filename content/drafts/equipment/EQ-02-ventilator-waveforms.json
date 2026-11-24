@@ -46,7 +46,8 @@
       "explanation": "The flow trace shows the direction and speed of gas movement during breathing. Failure of expiratory flow to reach baseline before the next inspiration may suggest incomplete exhalation; review with the respiratory team rather than diagnosing from a single trace.",
       "support": "partial",
       "sources": [
-        "S-AARC-PVA"
+        "S-AARC-PVA",
+        "S-VENT-MECHANICS-2024"
       ]
     },
     {
@@ -59,8 +60,11 @@
     },
     {
       "name": "Respiratory rate",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "Breath frequency observed during ventilation. Compare the displayed total rate with the prescribed mandatory rate where applicable and the patient's respiratory effort; the relationship varies with mode and triggering.",
+      "support": "partial",
+      "sources": [
+        "S-VENT-MECHANICS-2024"
+      ]
     },
     {
       "name": "Alarm limits",
@@ -130,6 +134,11 @@
       "id": "S-DRAEGER-V500-IFU",
       "read": "partial",
       "use": "manufacturer manual: applies to this device only"
+    },
+    {
+      "id": "S-VENT-MECHANICS-2024",
+      "read": "partial",
+      "use": "Indexed review passages: mode-dependent rate and expiratory flow; no full review."
     }
   ],
   "required_sources": [

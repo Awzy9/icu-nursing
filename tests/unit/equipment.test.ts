@@ -37,7 +37,7 @@ describe("the eight DRAFT equipment specifications", () => {
     expect(validateEquipmentSet(drafts)).toEqual([]);
     for (const d of drafts) expect(validateEquipmentDraft(d, known), d.equipment_id).toEqual([]);
     drafts.forEach((d, i) => expect(d.category).toBe(EQUIPMENT_CATEGORIES[i]));
-    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(11);
+    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(20);
     const crrt = drafts.find((d) => d.equipment_id === "EQ-06")!;
     expect(crrt.parameters.filter((p) => p.explanation !== null).map((p) => p.name)).toEqual(["Delivered dose against prescription", "Alarm state"]);
     expect(crrt.parameters.slice(0, 2).every((p) => p.explanation === null)).toBe(true);

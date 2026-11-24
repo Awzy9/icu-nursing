@@ -31,8 +31,12 @@
     },
     {
       "name": "Volume delivered",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "Track the feed actually delivered against the nutrition plan, recording interruptions and discrepancies. A pump display alone does not establish tube position or prove that the prescribed nutrition reached the patient.",
+      "support": "partial",
+      "sources": [
+        "S-NICE-CG32",
+        "S-NHSE-NGT-2016"
+      ]
     },
     {
       "name": "Occlusion alarm",

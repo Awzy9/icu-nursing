@@ -4939,12 +4939,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-VENT-MECHANICS-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "b4e87bec973cc3f5"
+   "hash": "957eeaa3b48202e9"
   },
   {
    "key": "EQ-03",
@@ -4955,6 +4960,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
@@ -4974,7 +4984,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "8e2038ac0c109e15"
+   "hash": "38e447cd1a54b6b0"
   },
   {
    "key": "EQ-04",
@@ -4991,6 +5001,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-FDA-PUMP-OVERVIEW",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ISMP-HA",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -4999,7 +5014,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "2d3e2a03e287ab32"
+   "hash": "c161541630c1dab0"
   },
   {
    "key": "EQ-05",
@@ -5019,7 +5034,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "57ace47009ec0a52"
+   "hash": "42c550571fce38a4"
   },
   {
    "key": "EQ-06",
@@ -5074,7 +5089,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "478d9e8c9de9ed77"
+   "hash": "4ca428707c2968a6"
   },
   {
    "key": "EQ-08",
@@ -5089,12 +5104,17 @@
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-INTL-PI-SURFACES-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "2d8c92d4bf6ce100"
+   "hash": "b008990f3cf5e2d8"
   },
   {
    "key": "PX-01",

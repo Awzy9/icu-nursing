@@ -26,8 +26,11 @@
   "parameters": [
     {
       "name": "Mode",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "An active surface can vary its redistribution characteristics without a change in applied load; alternating pressure is one example. Reactive surfaces respond to applied load. Device modes and suitability depend on the manufacturer's specifications and individual assessment.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-SURFACES-2026"
+      ]
     },
     {
       "name": "Air level or pressure state",
@@ -97,6 +100,11 @@
       "id": "S-INTL-PI-2026",
       "read": "partial",
       "use": "International Guideline 4th ed.: abridged Quick Reference Guide only"
+    },
+    {
+      "id": "S-INTL-PI-SURFACES-2026",
+      "read": "partial",
+      "use": "Public HTML definitions of active/reactive support surfaces and selection considerations; full evidence tables not reviewed."
     }
   ],
   "required_sources": [

@@ -8958,6 +8958,20 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "957eeaa3b48202e9",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-VENT-MECHANICS-2024"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-03": [
@@ -8992,6 +9006,20 @@
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-SSC-2021"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "38e447cd1a54b6b0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ARTERIAL-MEASUREMENT-2020",
      "S-CDC-BSI-2011",
      "S-ESICM-SHOCK-2014",
      "S-SSC-2021"
@@ -9037,6 +9065,19 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c161541630c1dab0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-FDA-PUMP-OVERVIEW",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-05": [
@@ -9064,6 +9105,17 @@
    },
    {
     "hash": "57ace47009ec0a52",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "42c550571fce38a4",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -9163,6 +9215,19 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "4ca428707c2968a6",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-08": [
@@ -9194,6 +9259,18 @@
     "evidence_status": "partial",
     "sources": [
      "S-INTL-PI-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "b008990f3cf5e2d8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-SURFACES-2026"
     ],
     "gaps": 3,
     "required_sources": 3,

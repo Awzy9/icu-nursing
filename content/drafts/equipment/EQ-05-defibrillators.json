@@ -34,13 +34,19 @@
     },
     {
       "name": "Energy setting",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The energy selected for a shock is distinct from rhythm assessment and charge status. The appropriate selection depends on the defibrillator waveform and resuscitation protocol; only authorised trained staff make that selection.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
     },
     {
       "name": "Charge state",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "Indicates the device's preparation for shock delivery, not a clinical instruction to deliver a shock. During manual CPR the trained team minimizes interruptions, continues compressions while charging where appropriate, clears contact before shock and follows device-specific safety procedures.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
     }
   ],
   "safety_concepts": [
