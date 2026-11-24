@@ -36,7 +36,7 @@ const PATIENT_SAFETY_KEYS = new Set([
   "D02-T08", "D02-T09", "D02-T12", "D02-T14",
   "D04-T06", "D04-T08", "D04-T09", "D08-T02", "D08-T03",
   "SK-06", "SK-07", "SK-09", "SK-13", "SK-17", "SK-22", "SK-23",
-  "MD-01", "MD-02", "MD-18", "MD-19", "MD-20", "MD-30", "MD-31", "MD-44",
+  "MD-01", "MD-02", "MD-15", "MD-18", "MD-19", "MD-20", "MD-30", "MD-31", "MD-44",
 ]);
 export const REVIEW_LANES: { key: ReviewLane; label: string }[] = [
   { key: "patient-safety", label: "Clinical priority (suggested)" },
