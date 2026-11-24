@@ -69,8 +69,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "A routine bedside glucose check is low in a patient who is sweating and a little drowsy but answers questions and can swallow.",
-      "prompt": "What should you do?",
+      "info": "During a bedside glucose check, an adult is sweaty and mildly drowsy but responds to questions. The fictional glucose is 3.2 mmol/L. Swallowing appears possible but safe oral intake and its authorization must be confirmed before treatment.",
+      "prompt": "Which response addresses the low glucose promptly while verifying that oral treatment is safe?",
       "observations": [
         {
           "key": "glucose",
@@ -92,6 +92,11 @@
           "key": "swallow",
           "label": "Swallow",
           "value": "Able"
+        },
+        {
+          "key": "intake",
+          "label": "Oral intake",
+          "value": "Confirm permission and safe swallowing"
         }
       ],
       "options": [
@@ -101,7 +106,7 @@
           "next": 2,
           "scope": "order_or_protocol_required",
           "feedback": "Oral treatment requires safe swallowing and permission for oral intake. Use the authorised non-oral pathway when oral intake is unsafe or not permitted, and reassess promptly. JBDS 2023 recommends reassessing glucose within 10–15 minutes after initial oral rescue. New impaired consciousness changes the rescue pathway immediately; do not wait for the next planned measurement.",
-          "consequence": "The patient takes the carbohydrate and you recheck the glucose.",
+          "consequence": "Appropriate protocol-directed rescue and timely reassessment may correct hypoglycaemia and identify a worsening level of consciousness early.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023",
@@ -114,7 +119,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Hypoglycaemia is an emergency; waiting leaves the patient at risk of deterioration.",
-          "consequence": "The patient becomes harder to rouse and the glucose is lower at the next check.",
+          "consequence": "Waiting could allow further glucose decline or impaired consciousness.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023"
@@ -126,7 +131,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A meal alone is not a substitute for immediate protocol-directed hypoglycaemia treatment and timely repeat glucose assessment. Waiting for the meal delays care.",
-          "consequence": "The patient eats slowly and the glucose is still low when it is checked later.",
+          "consequence": "Relying on the next meal could delay immediate rescue and recognition of persistent hypoglycaemia.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023"
@@ -136,8 +141,8 @@
     },
     {
       "position": 2,
-      "info": "Fifteen minutes later the patient cannot be roused properly and the glucose is still low.",
-      "prompt": "What is the right next step?",
+      "info": "At the next shared checkpoint, the patient is barely rousable and the fictional glucose has fallen to 2.4 mmol/L. Swallowing is now unsafe. Intravenous insulin is not running; recent insulin exposure and nutritional intake still require review.",
+      "prompt": "Which response is required now that oral rescue is unsafe and consciousness has deteriorated?",
       "observations": [
         {
           "key": "glucose",
@@ -159,6 +164,16 @@
           "key": "insulin",
           "label": "Intravenous insulin",
           "value": "Not running"
+        },
+        {
+          "key": "airway",
+          "label": "Airway and breathing",
+          "value": "Immediate assessment required"
+        },
+        {
+          "key": "exposure",
+          "label": "Recent glucose-lowering treatment",
+          "value": "Verify actual exposure"
         }
       ],
       "options": [
@@ -168,7 +183,7 @@
           "next": 3,
           "scope": "escalation",
           "feedback": "A patient who cannot safely swallow must not receive oral treatment. The case states IV insulin is not running; do not issue a contradictory order to stop an imaginary infusion. Review actual insulin exposure and nutritional interruption while activating the approved emergency pathway. For severe hypoglycemia, obtain urgent help and prepare the locally authorized non-oral treatment. JBDS 2023 cautions that glucagon can be less effective in malnutrition, liver dysfunction and recurrent hypoglycemia. If actual intravenous insulin is running, manage it under the emergency protocol with a safe restart plan; this case explicitly states none is running.",
-          "consequence": "The team arrives while the patient is supported and treatment is ready for them.",
+          "consequence": "Urgent assessment and authorized non-oral rescue may limit further neurological deterioration while protecting the airway.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023",
@@ -181,7 +196,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Oral treatment is for a conscious patient who can swallow; it is unsafe in a patient who cannot be roused.",
-          "consequence": "The patient chokes on the drink and the situation is worse.",
+          "consequence": "Giving oral food or fluid could cause aspiration when swallowing is unsafe.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023"
@@ -193,7 +208,7 @@
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Treatments are given as prescribed, or under a local agreement or directive; the nurse's own choice is not enough.",
-          "consequence": "The action breaches policy and the team must now sort out what was given.",
+          "consequence": "Unverified intravenous treatment could introduce a medication error or access-related complication.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023"
@@ -203,8 +218,8 @@
     },
     {
       "position": 3,
-      "info": "The patient has recovered and the glucose is back in range.",
-      "prompt": "What should happen next?",
+      "info": "At the final shared checkpoint, the patient is alert and the fictional glucose is 5.6 mmol/L after team-directed rescue. Feeding was interrupted earlier and the next medication and nutrition decisions are pending. The cause and recurrence risk still need review.",
+      "prompt": "What should the nurse arrange before considering the episode resolved?",
       "observations": [
         {
           "key": "glucose",
@@ -226,6 +241,16 @@
           "key": "feed_history",
           "label": "Nutrition history",
           "value": "Feeding interrupted earlier"
+        },
+        {
+          "key": "monitor",
+          "label": "Next glucose check",
+          "value": "Confirm timing under protocol"
+        },
+        {
+          "key": "medication",
+          "label": "Insulin plan",
+          "value": "Clinician review required"
         }
       ],
       "options": [
@@ -235,7 +260,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Recovery does not eliminate risk of another episode. Assess what caused the event, and coordinate medication and nutrition changes through the prescribing/diabetes team; particularly avoid unintended gaps in essential basal insulin for patients with type 1 diabetes. The ADA 2026 hospital standards identify feed interruption, changes in glucose-lowering treatment, and delayed glucose checks among preventable causes. If CGM is in use, obtain confirmatory point-of-care blood glucose for hypoglycemia assessment and insulin decisions according to the hospital protocol. Review nutrition interruptions, including enteral or parenteral feeding, with the nutrition and diabetes teams. Do not administer enteral rescue through a parenteral nutrition line, or use a displaced or unconfirmed feeding tube. After rescue, ensure an authorized continuing carbohydrate/nutrition and glucose-monitoring plan matched to actual insulin exposure. At handover, explicitly identify the next glucose check, outstanding medication review and the agreed nutrition plan; distinguish confirmed intake from planned or interrupted intake. If symptoms recur or glucose falls again, activate the approved rescue pathway promptly rather than waiting for the scheduled check.",
-          "consequence": "The insulin review takes place and the monitoring plan is clear for the next shift.",
+          "consequence": "An explicit glucose, nutrition and medication review plan may detect recurrence and reduce avoidable treatment gaps.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023",
@@ -249,7 +274,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Glucose can fall again, and the guideline advises continued regular monitoring.",
-          "consequence": "The next low reading is found late.",
+          "consequence": "Ending surveillance could delay detection of recurrent hypoglycaemia.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023"
@@ -261,7 +286,7 @@
           "next": null,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Insulin changes need individualised prescribing or an authorised protocol. Do not independently omit basal insulin in type 1 diabetes; promptly coordinate the plan when nutrition or glucose changes.",
-          "consequence": "The patient's glucose rises and the team has to rebalance the plan.",
+          "consequence": "Independently withholding insulin could create an unsafe treatment gap, particularly when basal insulin is essential.",
           "support": "partial",
           "sources": [
             "S-JBDS-HYPO-2023"

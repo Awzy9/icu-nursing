@@ -129,7 +129,7 @@
           "next": 2,
           "scope": "assessment",
           "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings. Poor peripheral circulation and skin pigmentation may affect oximetry accuracy. Assess signal reliability in parallel and seek further measurement if the clinical picture is discordant; do not delay care. The RCUK adult ABCDE approach emphasizes early emergency assistance and addressing immediate threats during breathing assessment. Do not await chest imaging before escalating possible tension physiology; definitive intervention belongs to the trained team.",
-          "consequence": "Direct patient assessment and urgent help may reveal a respiratory emergency even if the oximeter signal is unreliable.",
+          "consequence": "Direct patient assessment and urgent help may reveal a respiratory emergency even if the oximeter signal is unreliable; secretions are only one possibility, and the team must consider other causes of deterioration.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8",

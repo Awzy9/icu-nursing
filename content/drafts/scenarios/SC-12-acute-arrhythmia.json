@@ -86,8 +86,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "The monitor alarms and shows a new fast rhythm with wide complexes. The patient says they feel dizzy and have some chest discomfort. They are awake.",
-      "prompt": "What do you do first?",
+      "info": "During cardiac monitoring, a new fast, wide-complex rhythm appears. The awake patient reports dizziness and chest discomfort, and pressure is lower than before. The displayed rhythm alone does not establish perfusion or the required treatment.",
+      "prompt": "What takes priority when a new wide-complex rhythm is accompanied by symptoms?",
       "observations": [
         {
           "key": "rhythm",
@@ -108,6 +108,16 @@
           "key": "loc",
           "label": "Consciousness",
           "value": "Awake"
+        },
+        {
+          "key": "pulse",
+          "label": "Pulse",
+          "value": "Assess immediately"
+        },
+        {
+          "key": "perfusion",
+          "label": "Perfusion",
+          "value": "Clinical assessment required"
         }
       ],
       "options": [
@@ -117,7 +127,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "When the ECG shows a new abnormal finding the nurse immediately assesses the client for signs of decreased cardiac output, and the nurse must know which rhythms need emergency assistance, including ventricular tachycardia.",
-          "consequence": "Help is on its way and you know how well the patient is tolerating the rhythm.",
+          "consequence": "Immediate patient and pulse assessment may identify haemodynamic instability and support timely emergency rhythm evaluation.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-ADV-C74"
@@ -129,7 +139,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A rhythm strip is useful, but delaying patient assessment and urgent help in a symptomatic wide-complex tachyarrhythmia is unsafe.",
-          "consequence": "Valuable minutes pass while the patient remains symptomatic.",
+          "consequence": "Printing a strip before assessing the patient could delay recognition of circulatory compromise.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74"
@@ -141,7 +151,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Some rhythms are tolerated only briefly before the patient loses consciousness; an awake patient does not make the rhythm safe.",
-          "consequence": "The patient's condition worsens while no one is aware.",
+          "consequence": "Being awake could falsely reassure staff while the rhythm and perfusion worsen.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74"
@@ -151,8 +161,8 @@
     },
     {
       "position": 2,
-      "info": "The patient becomes more unwell, with a falling pressure and increasing confusion. A pulse can still be felt. The emergency team arrives.",
-      "prompt": "What is your role now?",
+      "info": "At the next shared checkpoint, the wide-complex rhythm continues, pressure is falling and confusion is increasing. A pulse is still present. The emergency team has arrived and must determine the rhythm-specific treatment.",
+      "prompt": "How should the nurse support treatment of this unstable rhythm while remaining prepared for loss of pulse?",
       "observations": [
         {
           "key": "rhythm",
@@ -173,6 +183,16 @@
           "key": "pulse",
           "label": "Pulse",
           "value": "Present"
+        },
+        {
+          "key": "equipment",
+          "label": "Emergency equipment",
+          "value": "Prepare with trained team"
+        },
+        {
+          "key": "respiratory",
+          "label": "Airway and breathing",
+          "value": "Reassess continuously"
         }
       ],
       "options": [
@@ -182,7 +202,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "An unstable tachyarrhythmia with a pulse needs urgent rhythm-specific treatment by authorised trained staff; synchronised cardioversion is preferred for many unstable tachyarrhythmias, but rhythm and synchronisation feasibility matter. If cardiac arrest occurs, start CPR and follow the shockable versus non-shockable arrest pathway. Not every pulseless rhythm requires a shock. The 2025 RCUK adult ALS guidance favors electrical cardioversion for unstable tachyarrhythmia with life-threatening features. When a synchronized shock is indicated, the trained operator verifies synchronization; preparation for sedation or anesthesia in a conscious patient must not create avoidable delay in emergency care. Do not apply this to physiological sinus tachycardia. In particular, AHA 2025 recommends synchronized cardioversion for unstable wide-complex tachycardia when appropriate to the rhythm and advises against adenosine in unstable, irregular or polymorphic wide-complex rhythms. Polymorphic VT requires a different shock strategy; confirm the rhythm with the trained team.",
-          "consequence": "The team works efficiently and the nurse is ready if the situation worsens.",
+          "consequence": "Coordinated emergency preparation and continuous reassessment may support timely authorized treatment and recognition of cardiac arrest if it occurs.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74",
@@ -198,7 +218,7 @@
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Do not deliver an unassessed or unauthorised shock. The team must determine the rhythm, pulse and appropriate synchronisation or defibrillation pathway; not all rhythms with a pulse have the same treatment.",
-          "consequence": "The shock is delivered without authority or the correct mode and the patient is harmed.",
+          "consequence": "An unassessed or unauthorized shock could use an inappropriate mode or cause avoidable harm.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74"
@@ -210,7 +230,7 @@
           "next": 3,
           "scope": "monitoring",
           "feedback": "Watching the monitor alone is insufficient during deteriorating perfusion. Remain with the patient, assist the emergency team and prepare time-critical care.",
-          "consequence": "The team asks you for equipment that you could have prepared.",
+          "consequence": "Monitor-only observation could delay equipment preparation and recognition of changing patient perfusion.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74"
@@ -220,8 +240,8 @@
     },
     {
       "position": 3,
-      "info": "The rhythm has been treated and the patient is more stable on the monitor. The team asks about the patient's recent blood results.",
-      "prompt": "What should you do now?",
+      "info": "At the final shared checkpoint, the rhythm has slowed and pressure is improving after team-directed treatment. The patient is tired but comfortable. A recent potassium result is available and further cause assessment and post-treatment monitoring are needed.",
+      "prompt": "Which follow-up best identifies reversible contributors and early recurrence after rhythm treatment?",
       "observations": [
         {
           "key": "rhythm",
@@ -242,6 +262,16 @@
           "key": "patient",
           "label": "Patient",
           "value": "Tired but comfortable"
+        },
+        {
+          "key": "pulse",
+          "label": "Pulse",
+          "value": "Continue perfusion assessment"
+        },
+        {
+          "key": "plan",
+          "label": "Follow-up",
+          "value": "Review reversible contributors and treatment response"
         }
       ],
       "options": [
@@ -251,7 +281,7 @@
           "next": null,
           "scope": "monitoring",
           "feedback": "Reversible causes of dangerous rhythms include low or high potassium, hypoxia and low blood volume; antidysrhythmic medicines such as amiodarone can cause hypotension, a slow heart rate and heart block, so these are monitored after treatment.",
-          "consequence": "Possible causes are considered and the next team has the rhythm record and the sequence of events.",
+          "consequence": "Continued monitoring and communication of electrolyte and rhythm trends may reveal recurrence or treatment-related adverse effects.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74",
@@ -265,7 +295,7 @@
           "next": null,
           "scope": "order_or_protocol_required",
           "feedback": "Limits and alarms are set by order or protocol; widening them removes the warning the patient needs.",
-          "consequence": "A recurrence of the rhythm does not trigger an alarm.",
+          "consequence": "Widening alarm limits could conceal another clinically important rhythm change.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74"
@@ -277,7 +307,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Monitoring continues after a dangerous rhythm because it can recur.",
-          "consequence": "A recurrence is not seen.",
+          "consequence": "Removing monitoring could delay recognition of recurrent arrhythmia or post-treatment instability.",
           "support": "partial",
           "sources": [
             "L-AMIODARONE"
