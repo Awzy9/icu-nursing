@@ -110,6 +110,16 @@ describe("filters, freshness, comparison and coverage", () => {
     expect(expectedRightsKeys).toContain("SC-11");
     expect(list.every(x => !x.clinically_reviewed)).toBe(true);
   });
+  it("retains insulin rights and clinical review requirements after dated sources resolve its source-gap signal", () => {
+    const insulin = onDisk.entries.find(x => x.key === "MD-15")!;
+    expect(insulin.sources.map(s => s.id)).toContain("S-ADA-HOSP-2026");
+    expect(insulin.sources.map(s => s.id)).toContain("S-JBDS-HYPO-2023");
+    expect(hasSourceGap(insulin)).toBe(false);
+    expect(needsRightsCheck(insulin)).toBe(true);
+    expect(reviewLane(insulin)).toBe("patient-safety");
+    expect(insulin.gaps).toBeGreaterThan(0);
+    expect(insulin.clinically_reviewed).toBe(false);
+  });
   it("flags the known high-priority working draft without displaying its content body", () => {
     const indexCase = onDisk.entries.find((x) => x.key === "SC-11")!;
     expect(reviewLane(indexCase)).toBe("patient-safety");
