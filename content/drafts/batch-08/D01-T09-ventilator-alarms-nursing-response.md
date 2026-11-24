@@ -125,7 +125,7 @@ B. Silence the alarm so that you can concentrate on the medicines, and then carr
 C. Go to the patient at once, check that ventilation is adequate, then look for the cause.
 D. Phone the respiratory therapist to ask what the alarm means before deciding whether to leave the task.
 **Answer: C.**
-**Why correct:** Both the AARC guideline and the manual put the patient first and call for immediate approach and effective ventilation.
+**Why correct:** The cited manufacturer guidance prioritizes effective ventilation. Assess the patient immediately; if ventilation is inadequate or the patient is unstable, call for urgent help and use the trained emergency ventilation pathway. Investigate the alarm without delaying support.
 **Why not A:** Delaying the response risks harm.
 **Why not B:** Silencing without assessing the patient hides the problem.
 **Why not D:** Phoning does not secure the patient's ventilation.
@@ -136,7 +136,7 @@ B. The alarm is cancelled permanently and the cause no longer needs any attentio
 C. The ventilator stops delivering breaths on every manufacturer's device until the key is pressed again.
 D. The alarm limits are reset to the factory defaults on all ventilators, so earlier settings are lost.
 **Answer: A.**
-**Why correct:** The manual describes a timed mute with a countdown and a return of the alarm; behaviour differs between devices.
+**Why correct:** The cited software version describes a temporary audible mute; this does not resolve the alarm. Continue bedside monitoring and follow the installed device's instructions, since alarm behavior differs by model, software and alarm priority.
 **Why not B:** Silencing does not remove the cause.
 **Why not C:** Silence affects only the sound.
 **Why not D:** Silence does not change the limits.
@@ -147,7 +147,7 @@ B. One condition can trigger several alarms and one or two usually show the root
 C. Multiple alarms mean that the machine is broken and must be switched off immediately by the nurse.
 D. Only the first message in the buffer is ever important, and the others can be safely ignored by staff.
 **Answer: B.**
-**Why correct:** The manual states one alarm condition can induce multiple alarms and normally only one or two indicate the root cause.
+**Why correct:** One fault can produce several alarms. Assess the patient, support ventilation and identify the cause using the device display and trained troubleshooting pathway; no alarm should be ignored merely because another appears first.
 **Why not A:** The alarms are often consequences of one cause.
 **Why not C:** Switching off may remove ventilation.
 **Why not D:** The cause may not be the first message.
@@ -158,7 +158,7 @@ B. Agree with the colleague, but at night when the unit is busy and there are fe
 C. Widen the volume alarm and leave all the others where they are, since that reduces the noise and the repeated alarms.
 D. Disagree: extreme limits can make alarms useless, so find the cause and ask for a review of the limits.
 **Answer: D.**
-**Why correct:** The manual cautions that extreme limits render the alarm system useless and that limits should be readjusted only when inappropriately set.
+**Why correct:** Extreme limits can conceal dangerous changes. Investigate recurrent alarms and have patient-specific limits reviewed by an authorized clinician according to the unit and device protocol.
 **Why not A:** Fewer alarms are not safer if dangerous events are not signalled.
 **Why not B:** Workload is not a safe reason.
 **Why not C:** Partial widening does not address the cause.
@@ -169,7 +169,7 @@ B. Oxygen alarms are suppressed while it is active, so watch the SpO₂ and rest
 C. The function permanently switches off the oxygen alarms until the ventilator is next serviced by engineers.
 D. The function changes the tidal volume alarm limit automatically, so the volume alarm limit must be checked and reset.
 **Answer: B.**
-**Why correct:** The manual states that oxygen alarms are suppressed while O₂ enrichment is active.
+**Why correct:** The cited HAMILTON-C1 software 2.2.x manual describes temporary oxygen-alarm suppression during enrichment. This is not universal: verify the installed software and monitor the patient's oxygenation and ventilation directly, then confirm that prescribed support and alarm monitoring have resumed.
 **Why not A:** They are suppressed during enrichment.
 **Why not C:** The suppression is only while the function is active.
 **Why not D:** The note concerns oxygen alarms, not tidal volume limits.

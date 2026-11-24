@@ -111,7 +111,7 @@ B. Agree, if the patient is older than 40 years, because age is the criterion fo
 C. Start a hyperosmolar drug at once, because the guideline recommends it for every pressure above the threshold.
 D. Explain that the BTF threshold is for severe TBI, and report the value so the team can apply the ordered target.
 **Answer: D.**
-**Why correct:** The guideline population is severe TBI; thresholds are not generalised to other neurological conditions and treatment is a clinician decision.
+**Why correct:** The Brain Trauma Foundation threshold applies to severe TBI, not automatically to subarachnoid hemorrhage. The abnormal value still warrants prompt patient assessment and escalation using the condition-specific target; new neurological deterioration requires emergency action without waiting for a numerical threshold.
 **Why not A:** The statement is specific to severe TBI.
 **Why not B:** Age is not the criterion for the threshold.
 **Why not C:** Starting drugs needs an order, and the guideline gives no specific agent recommendation.
@@ -122,7 +122,7 @@ B. The difference between mean arterial blood pressure and intracranial pressure
 C. The systolic blood pressure alone, because the systolic value drives blood flow to the brain tissue.
 D. The intracranial pressure divided by the heart rate, which is displayed continuously on the monitor screen.
 **Answer: B.**
-**Why correct:** The guideline states CPP is the difference between MAP and ICP and can only be calculated when ICP is known.
+**Why correct:** CPP is estimated by subtracting ICP from MAP when both measurements are reliable and referenced consistently under the unit's monitoring protocol. Confirm unexpected values and report trends; measurement checks must not delay response to clinical deterioration.
 **Why not A:** It is a difference, not a sum.
 **Why not C:** Systolic pressure alone is not CPP.
 **Why not D:** No such ratio is defined.
@@ -133,7 +133,7 @@ B. Increase the vasopressor rate on your own judgment of the pressure, since a h
 C. Wait ten minutes to see whether the pressure recovers before telling anyone about the fall in the value.
 D. Lower the head of the bed to raise the blood pressure, without an order, since position changes are harmless.
 **Answer: A.**
-**Why correct:** A fall in CPP and MAP needs prompt reporting; targets and treatment are the team's decisions.
+**Why correct:** Falling MAP and CPP may threaten cerebral perfusion. Assess airway, ventilation, circulation and neurological change; escalate urgently while checking the pressure measurement and applying authorized measures. Do not delay treatment of clinical instability for troubleshooting.
 **Why not B:** Titration outside an order or protocol is unsafe.
 **Why not C:** Delay risks secondary injury.
 **Why not D:** Positioning changes for pressure management need a policy or order, and head position is not addressed by the guideline.
@@ -144,7 +144,7 @@ B. It is a recommendation for all brain-injured patients regardless of the cause
 C. It is a Level IIB recommendation, and the best minimum may depend on the patient's autoregulatory status.
 D. It was withdrawn in the 4th edition, so the guideline no longer gives any target range for the pressure.
 **Answer: C.**
-**Why correct:** The guideline gives a Level IIB recommendation for 60–70 and notes autoregulatory status.
+**Why correct:** The adult severe TBI guideline gives a Level IIB CPP target range, with uncertainty about the optimal lower boundary depending on autoregulation. Apply the prescribed individual target and report deterioration; do not extrapolate this range to all neurological diagnoses.
 **Why not A:** The guideline states there was insufficient evidence for Level I.
 **Why not B:** The population is severe TBI.
 **Why not D:** The recommendation is present.
@@ -155,7 +155,7 @@ B. High CPP is thought to be more dangerous in older patients, and carries no ri
 C. Aggressive efforts to push CPP above 70 with fluids and pressors may risk adult respiratory failure.
 D. High CPP is harmful if the patient has no ICP monitor in place, because it cannot then be measured.
 **Answer: C.**
-**Why correct:** The guideline's Level III statement cautions that aggressive attempts to push CPP above 70 with fluids and pressors may risk adult respiratory failure. It is a caution about harm at higher values, not about age or monitor presence.
+**Why correct:** The guideline's Level III statement cautions that aggressive attempts to push CPP above 70 with fluids and pressors may risk adult respiratory failure. This concerns harm from aggressive pressure augmentation, not an automatic instruction to lower a spontaneously higher CPP.
 **Why not A:** The guideline cites harm at higher values.
 **Why not B:** Age is not the stated basis.
 **Why not D:** The caution does not depend on monitor presence.

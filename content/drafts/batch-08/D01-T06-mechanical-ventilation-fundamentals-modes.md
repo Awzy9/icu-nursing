@@ -107,10 +107,10 @@ B. Tidal volume is not guaranteed in pressure control, so a fall may mean worse 
 C. The set pressure has automatically been raised by the ventilator to compensate, which explains why the tidal volume has become lower.
 D. The patient has switched to a different breath sequence without any change having been made to the ventilator settings.
 **Answer: B.**
-**Why correct:** In pressure control, tidal volume depends on compliance, resistance and effort, so a falling volume is a signal to assess and report.
+**Why correct:** With a fixed pressure-controlled breath, delivered volume varies with respiratory mechanics, inspiratory time and patient effort. A leak can also reduce measured exhaled volume. Assess ventilation and oxygenation, check the circuit and escalate an unexplained fall promptly; pressure-targeted volume-adaptive modes are a separate case.
 **Why not A:** Volume is not what the ventilator guarantees in pressure control.
 **Why not C:** The set pressure does not rise on its own in a simple pressure-controlled breath.
-**Why not D:** A change of breath sequence needs a change in settings.
+**Why not D:** The observed fall does not establish a change in breath sequence; some modes have backup or adaptive behavior, so confirm the mode and settings.
 
 **Q2 (judgment).** On a volume-controlled mode the peak airway pressure has risen over an hour. The patient is coughing and the tube sounds secretion-laden. What is the best nursing response?
 A. Reduce the set tidal volume so that the displayed pressure comes down, and then see whether the alarms stop sounding.
@@ -118,7 +118,7 @@ B. Switch the mode to pressure control to avoid the high pressures, since that m
 C. Silence the alarm and review the pressure again at the next hourly check, since a single rise in pressure is common.
 D. Assess the patient and airway, manage secretions per policy, and report the pressure trend for team review.
 **Answer: D.**
-**Why correct:** The review links raised resistance (secretions, tube obstruction) to higher peak pressure; the nurse assesses, treats within scope and reports.
+**Why correct:** Increased resistance can raise peak pressure; reduced compliance is another possible cause. Assess the patient and airway promptly, summon help for ineffective ventilation and involve trained staff. Compare peak and plateau pressures only when measurement conditions are appropriate.
 **Why not A:** Changing set tidal volume is a prescriber and respiratory-therapist decision.
 **Why not B:** Changing the mode is outside nursing scope.
 **Why not C:** Waiting delays recognition of a blocked airway.
@@ -156,13 +156,13 @@ D. It prescribes the ventilator settings that should be used for every patient w
 **Why not B:** It is brand-neutral and gives trade names only as examples.
 **Why not D:** It says optimal settings are patient-specific.
 
-**Q6 (scope).** Which decision belongs to the prescriber and respiratory therapist rather than the bedside nurse?
+**Q6 (scope).** Which decision requires specific authorization or a credentialed protocol rather than routine bedside nursing assessment?
 A. Recording the exhaled tidal volume and pressures at the interval the unit sets.
 B. Checking that the tube is secure and the circuit connections are tight.
 C. Reporting a patient who appears out of sync with the ventilator.
 D. Choosing to change from a pressure-controlled to a volume-controlled mode.
 **Answer: D.**
-**Why correct:** Mode and settings are prescriber and respiratory-therapist decisions.
+**Why correct:** A mode change requires an authorized clinician or a credentialed practitioner acting under a valid protocol. Responsibilities differ internationally; routine bedside surveillance is not authority to independently change settings.
 **Why not A:** Recording is a nursing task.
 **Why not B:** Checking is a nursing task.
 **Why not C:** Reporting is a nursing responsibility.

@@ -1,0 +1,7 @@
+# Core question reconciliation — final batch 08
+
+24 November 2026. Targeted assessment of the final 24 original questions in four sets. Answer keys preserved. Updated rationales for ventilation mechanics, device-version boundaries and emergency response, severe TBI monitoring and coagulopathy. No doses or device operating instructions added. Sources checked at recommendation/excerpt level: [AARC 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11298231/), [BTF severe TBI fourth edition](https://braintrauma.org/coma/guidelines/severe-tbi), existing HAMILTON-C1 software 2.2.x source (device-specific prior registered excerpts), [ARUP DIC](https://arupconsult.com/content/disseminated-intravascular-coagulation), [ISTH 2025](https://pubmed.ncbi.nlm.nih.gov/40216223/) and [ACC 2020 bleeding consensus](https://doi.org/10.1016/j.jacc.2020.04.053). The ACC source is recorded as partial, not a full-text appraisal.
+
+CI correction: prior topic source-integrity tests failed because L-LORAZEPAM, L-DOBUTAMINE and L-DEXMEDETOMIDINE were referenced in topics but only present in the product-label register. Added explicit matching entries to the main register using the existing label registry metadata; no validator bypass. New CI and human clinical/pharmacy review remain pending.
+
+Progress: 66 expansion + 240 original = 306/306 targeted MCQ checks. This is not comprehensive clinical approval, rights clearance or production publication. Draft gates preserved.

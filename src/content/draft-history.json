@@ -2623,6 +2623,18 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "d4585b534703ba86",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-JICS-VENT-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T09": [
@@ -2695,6 +2707,20 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "59de944cbc1e396f",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D03-T03": [
@@ -2735,6 +2761,19 @@
    },
    {
     "hash": "9a0fe61be63264f9",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-BTF-DC-2020",
+     "S-BTF-PTBI-2026",
+     "S-BTF-TBI-4TH"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "69b02c7cdc3234cd",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2799,6 +2838,23 @@
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
+     "S-ARUP-ANTICOAG",
+     "S-ARUP-DIC",
+     "S-BSH-HIT-2023",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-PHARM-CH",
+     "S-UHS-COAG"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "4833dfe7a4bdfe68",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ACC-OAC-BLEED-2020",
      "S-ARUP-ANTICOAG",
      "S-ARUP-DIC",
      "S-BSH-HIT-2023",

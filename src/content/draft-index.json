@@ -1239,7 +1239,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "a1e1c582a30096a6"
+   "hash": "d4585b534703ba86"
   },
   {
    "key": "D01-T09",
@@ -1274,7 +1274,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "e9506f0c6a470fdf"
+   "hash": "59de944cbc1e396f"
   },
   {
    "key": "D03-T03",
@@ -1304,7 +1304,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "9a0fe61be63264f9"
+   "hash": "69b02c7cdc3234cd"
   },
   {
    "key": "D08-T02",
@@ -1315,6 +1315,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ACC-OAC-BLEED-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-ARUP-ANTICOAG",
      "licence_class": "RED",
@@ -1349,7 +1354,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "9ffea32b7f2a6470"
+   "hash": "4833dfe7a4bdfe68"
   },
   {
    "key": "XQ-01",
