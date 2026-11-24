@@ -1331,6 +1331,22 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1a2752e223759afe",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "S-NICE-CG103",
+     "S-SCCM-FAMILY-2024",
+     "S-SCCM-OLDER-2026",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T02": [
@@ -1876,6 +1892,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "786113dbc54a452b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-AIS-2026",
+     "S-GCS-OFFICIAL",
+     "S-NICE-NG232"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T03": [
@@ -2289,6 +2318,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "931b026ff71c98e2",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-SCCM-NMBA-2026",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D07-T01": [
@@ -2497,6 +2539,20 @@
    },
    {
     "hash": "a113f4fc4804afdd",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e77302a88f20ba88",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -4270,6 +4326,19 @@
    },
    {
     "hash": "328717f1343609a3",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-BTF-DC-2020",
+     "S-BTF-PTBI-2026",
+     "S-BTF-TBI-4TH"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "b9d1d268e865a951",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
