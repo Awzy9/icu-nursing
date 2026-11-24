@@ -356,6 +356,11 @@
      "verified": "2026-11-16"
     },
     {
+     "id": "S-OPENRN-HA",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCAI-SHOCK-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -373,8 +378,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "27a6854eef4c4d1d"
+   "required_sources": 0,
+   "hash": "e348d6f4877dec21"
   },
   {
    "key": "D02-T14",
@@ -491,6 +496,11 @@
      "verified": "2026-11-24"
     },
     {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-UKKA-AKI-DETECTION",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -498,8 +508,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "98742e518dacf3f6"
+   "required_sources": 1,
+   "hash": "1044b14bb9d0c831"
   },
   {
    "key": "D06-T07",
@@ -556,6 +566,11 @@
      "verified": "2026-11-23"
     },
     {
+     "id": "S-ASPEN",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-EEN-2017",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -583,8 +598,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "c6df4cd570fa58d5"
+   "required_sources": 0,
+   "hash": "6052574dc7d148da"
   },
   {
    "key": "D01-T12",
@@ -1576,6 +1591,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BSH-COAG",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-BSH-HIT-2023",
      "licence_class": "RED",
      "verified": "2026-11-21"
@@ -1598,8 +1618,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "17c6fec1d471a0ca"
+   "required_sources": 0,
+   "hash": "3733f0786a2a3136"
   },
   {
    "key": "XQ-01",
