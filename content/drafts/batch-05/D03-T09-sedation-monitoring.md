@@ -148,16 +148,16 @@ D. Stop the trial under protocol, assess ventilation and summon help; follow the
 **Why not B:** Resuming sedation is not a substitute for immediate assessment and rescue of an airway or ventilation problem.
 **Why not C:** Clarifying orders must not delay assessment, escalation or emergency support under the unit protocol.
 
-**Q5 (application).** A nurse is reviewing how sedation is assessed on a ventilated unit. Which statement about monitoring tools is accurate according to SCCM?
-A. Vital signs are the best way to monitor sedation, because they change before the patient moves or speaks.
-B. Bispectral index suits sedative titration in deep sedation or neuromuscular blockade, and may help when no scale can be used.
-C. Bispectral index replaces sedation scales in all patients, so scales need no longer be recorded in the chart.
-D. Sedation scales are unnecessary in ventilated patients because the ventilator reports the depth of sedation directly.
+**Q5 (judgment).** A patient with ARDS is receiving prescribed neuromuscular blockade. A nurse finds that the sedative infusion has unexpectedly stopped, but the patient remains motionless and the peripheral nerve stimulator shows blockade. What is the safest response?
+A. Use the peripheral nerve stimulator result to determine whether the patient remains adequately sedated.
+B. Urgently verify analgesia and sedation delivery, assess the patient and activate the authorized response.
+C. Wait until spontaneous movement returns before assessing whether the sedative interruption is clinically important.
+D. Rely on stable haemodynamic observations to determine that analgesia and sedation remain adequate.
 **Answer: B.**
-**Why correct:** SCCM's 2018 PADIS recommendations describe processed EEG monitoring (including BIS) as an *adjunct*, especially for deep sedation or neuromuscular blockade when behavioral assessment cannot be performed. It does not replace validated bedside sedation assessment when patients can be assessed; device choice and target interpretation follow local specialist policy.
-**Why not A:** Changes in vital signs can signal distress or deterioration but are not a validated substitute for structured assessment of sedation depth.
-**Why not C:** BIS is not a general replacement.
-**Why not D:** Scales are central to targeted sedation.
+**Why correct:** Neuromuscular blockade prevents movement but provides neither sedation nor analgesia. A peripheral nerve stimulator assesses blockade, not consciousness. Unexpected interruption of sedation during paralysis requires immediate escalation, verification of the prescribed analgesia and sedation delivery and implementation of the authorized rescue plan. SCCM 2026 found uncertainty about the comparative benefits of depth-monitoring strategies in ARDS; this does not justify omitting sedation or analgesia. Processed EEG may be an adjunct under specialist policy, not a stand-alone measure of comfort.
+**Why not A:** Evidence of neuromuscular blockade does not establish unconsciousness or pain relief.
+**Why not C:** Waiting for movement can leave a paralyzed patient without adequate sedation or analgesia.
+**Why not D:** Stable vital signs cannot reliably demonstrate comfort or unconsciousness during paralysis.
 
 **Q6 (scope).** Which decision belongs to the prescriber rather than the nurse?
 A. Choosing the sedative agent and setting the target level of sedation for the patient.

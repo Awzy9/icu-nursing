@@ -116,16 +116,16 @@ D. Avoid verbal requests because patients rarely respond to them, and go straigh
 **Why not B:** Supraorbital pressure is a later step.
 **Why not D:** Verbal request is the first stimulus.
 
-**Q3 (monitoring).** Why should nurses record the three components rather than only a total score?
-A. A total score is invalid unless it is recorded by a doctor, so the nurse's entries are supplementary.
-B. The components are needed for medico-legal reasons and have no value for clinical communication.
-C. The total score is more sensitive than the individual components, so nothing is gained by recording them.
-D. The components show which function has changed and allow trends to be compared between staff.
+**Q3 (judgment).** During neurological observations after head injury, eye opening improves from E3 to E4 while motor response falls from M6 to M5. Verbal response stays V4. The total GCS remains 13. What should the nurse do?
+A. Record the unchanged total and continue the planned observation interval.
+B. Repeat the total score after routine care and report if it falls below 13.
+C. Record the best eye and motor responses from either assessment to represent recovery.
+D. Document the component changes, assess the patient and escalate the motor decline.
 **Answer: D.**
-**Why correct:** Recording components allows accurate trend communication and avoids hiding changes inside an unchanged total. A total must not be constructed if one component cannot be tested; pupil findings and limb asymmetry should be documented separately. NICE NG232 also supports recording individual components in head injury.
-**Why not A:** Nurses can record valid scores.
-**Why not B:** The purpose is clinical communication.
-**Why not C:** The sources do not claim this.
+**Why correct:** An unchanged total can conceal a clinically important motor deterioration. Record all three components from the current assessment, compare each with the previous assessment and check for interfering factors, pupil changes and asymmetry. In head injury a new motor decline warrants prompt escalation alongside reassessment. The official GCS guidance advises against reporting a total score when any component is not testable.
+**Why not A:** The unchanged total masks the decline in motor response and cannot establish neurological stability.
+**Why not B:** A fall in the total is not necessary for concern; waiting for a numerical threshold may delay assessment.
+**Why not C:** Combining the best responses from different time points creates a misleading account of the current neurological state.
 
 **Q4 (prioritization).** At the hourly check, a patient's motor response has changed from obeying commands to localising, with no change in sedation. What should the nurse do?
 A. Record it and continue routine care until the next scheduled review, since the sedation has not changed.
@@ -138,16 +138,16 @@ D. Ask the relatives whether the patient seems different before deciding what to
 **Why not C:** Sedation changes need an order or protocol and the team should be told.
 **Why not D:** Relatives' views are helpful but do not replace prompt reporting.
 
-**Q5 (safety).** A patient on a continuous sedative infusion has a low GCS. What is the best way to interpret and communicate the finding?
-A. Record the score without mentioning the sedation so that the chart stays simple and easy to compare over time.
-B. Assume the low score is due to the sedation and make no report, because it is the expected explanation.
-C. Record the components, note the sedation and dose timing, and report so the team can interpret the finding.
-D. Stop the infusion yourself to obtain a true score, then restart it once the assessment has been recorded.
+**Q5 (judgment).** An intubated patient with severe brain injury is receiving prescribed sedation and neuromuscular blockade. The previous neurological assessment was obtained before blockade. A colleague proposes scoring the absent motor response as M1 and using the resulting total to judge deterioration. What should the nurse do?
+A. Enter M1 and compare the new total directly with the pre-blockade total.
+B. Record the pre-blockade motor response as the current score until the infusion is stopped.
+C. Mark components that cannot be tested, document confounders and escalate new concerns.
+D. Interrupt the prescribed blockade and sedation to obtain a complete score for the chart.
 **Answer: C.**
-**Why correct:** Sedation interferes with assessment and must be recorded with the findings. Record relevant sedative, opioid and neuromuscular-blocking exposure and timing; document any non-testable component rather than assigning a false low value. New deterioration still requires assessment and escalation.
-**Why not A:** Omitting sedation hides an interfering factor.
-**Why not B:** A new fall may have another cause.
-**Why not D:** Sedation interruption must follow the authorized plan; it may be unsafe in some neurological or respiratory conditions.
+**Why correct:** Pharmacological paralysis interferes with observable motor responses, and intubation may make the verbal component untestable. Document each assessable component, the reason others are not testable, medication exposure and timing. Do not assign a false low score or total. Continue the prescribed neurological monitoring plan, assess available findings and escalate suspected deterioration; any awakening or interruption of blockade requires an authorized assessment of safety.
+**Why not A:** Absent observable movement during paralysis does not establish an absent neurological motor response.
+**Why not B:** A historical response can inform the baseline but must not be presented as a current observation.
+**Why not D:** An independent interruption can compromise the prescribed respiratory or neurological treatment plan; coordinate assessment with the responsible team.
 
 **Q6 (scope).** Which task belongs to the medical team rather than the nurse?
 A. Recording the stimulus used and the rating for each component.

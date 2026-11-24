@@ -191,16 +191,16 @@ D. Reviewing and changing the patient's medicines to reduce delirium risk.
 **Why not B:** Independent nursing measure.
 **Why not C:** Independent nursing measure.
 
-**Q5 (understanding).** A nurse is teaching a student about hypoactive delirium in a quiet, withdrawn patient. Which statement is correct?
-A. It is harmless because the patient is calm and quiet, so no further assessment or action is needed from staff.
-B. It is often missed, so look for withdrawal, slow responses, reduced movement, poor concentration and reduced appetite.
-C. It affects people who already have dementia, so it can be ruled out in anyone without that diagnosis.
-D. It needs sedation to prevent harm, because untreated delirium becomes dangerous within a few hours.
+**Q5 (judgment).** An older ICU patient with dementia becomes newly withdrawn after an infection. Attention fluctuates, and the family says the patient normally participates in conversation. The nurse has already initiated assessment for immediate threats. What should happen next?
+A. Attribute the withdrawal to dementia and use the previous cognitive assessment as the current baseline.
+B. Assess for delirium using an ICU-appropriate tool when arousal permits, and report the new change.
+C. Request preventive antipsychotic medication based on age and dementia before completing the assessment.
+D. Wait for obvious agitation before screening, because a quiet presentation is less informative.
 **Answer: B.**
-**Why correct:** NICE advises particular vigilance because hypoactive delirium, in which the patient is quiet and withdrawn, is often missed. It is not harmless, is not limited to dementia and does not call for automatic sedation.
-**Why not A:** It carries the same risks of poor outcomes.
-**Why not C:** Delirium can occur in anyone who is severely ill.
-**Why not D:** Sedation is not an automatic response; causes are managed first.
+**Why correct:** A new fluctuating change from the person's baseline raises concern for delirium superimposed on dementia. Hypoactive presentations can be missed. Use CAM-ICU or ICDSC when the patient is assessable, document findings and baseline information, and seek clinical assessment for reversible causes. Continue individualized nonpharmacological support. A positive screen does not itself establish a diagnosis or a drug indication.
+**Why not A:** Pre-existing cognitive impairment does not exclude an acute change; family observations can clarify the baseline.
+**Why not C:** The new change requires assessment rather than preventive medication; the older-adult SCCM guideline conditionally advises against routine antipsychotic prevention.
+**Why not D:** Hypoactive delirium can present with reduced activity and attention without agitation; delaying assessment may miss a treatable cause.
 
 **Q6 (monitoring).** A ventilated patient is agitated and the nurse suspects pain. What is the best step?
 A. Assess non-verbal pain signs with the unit tool, use the comfort measures in policy, and report so analgesia is reviewed.

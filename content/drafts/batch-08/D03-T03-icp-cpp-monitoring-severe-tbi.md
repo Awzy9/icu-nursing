@@ -116,16 +116,16 @@ D. Explain that the BTF threshold is for severe TBI, and report the value so the
 **Why not B:** Age is not the criterion for the threshold.
 **Why not C:** Starting drugs needs an order, and the guideline gives no specific agent recommendation.
 
-**Q2 (understanding).** How does the BTF guideline define cerebral perfusion pressure?
-A. The sum of the intracranial pressure and the mean arterial pressure, measured at the same moment.
-B. The difference between mean arterial blood pressure and intracranial pressure, which needs the ICP to be known.
-C. The systolic blood pressure alone, because the systolic value drives blood flow to the brain tissue.
-D. The intracranial pressure divided by the heart rate, which is displayed continuously on the monitor screen.
+**Q2 (application).** A patient with severe TBI has a mean arterial pressure of 82 mm Hg and an ICP of 24 mm Hg. Both measurements are reliable and referenced consistently. The prescribed CPP target is 60–70 mm Hg. What is the appropriate interpretation?
+A. CPP is 106 mm Hg; report possible excessive perfusion and reassess the pressure sources.
+B. CPP is 58 mm Hg; assess the patient and escalate the below-target value promptly.
+C. CPP is 82 mm Hg; the MAP indicates that the cerebral perfusion target is being met.
+D. CPP is 24 mm Hg; the ICP alone establishes that cerebral blood flow is inadequate.
 **Answer: B.**
-**Why correct:** CPP is estimated by subtracting ICP from MAP when both measurements are reliable and referenced consistently under the unit's monitoring protocol. Confirm unexpected values and report trends; measurement checks must not delay response to clinical deterioration.
-**Why not A:** It is a difference, not a sum.
-**Why not C:** Systolic pressure alone is not CPP.
-**Why not D:** No such ratio is defined.
+**Why correct:** CPP is estimated as MAP minus ICP; 82 minus 24 gives 58 mm Hg, below this patient's prescribed range. Assess airway, circulation and neurological status, verify the monitoring conditions and escalate promptly without delaying urgent care. A CPP estimate does not directly measure cerebral blood flow. The BTF adult severe TBI recommendations are not universal targets for other neurological conditions.
+**Why not A:** Adding the two pressures does not calculate the perfusion pressure gradient.
+**Why not C:** MAP alone ignores the opposing intracranial pressure and can conceal reduced CPP.
+**Why not D:** ICP is one contributor to the pressure gradient; it is not identical to CPP or a direct measure of blood flow.
 
 **Q3 (judgment).** During a bedside check of an adult with severe TBI, CPP falls below the ordered range at the same time that MAP decreases. Which response best addresses the risk of secondary brain injury while checking measurement reliability?
 A. Report at once, check the airway, blood pressure source and monitor connections, and keep the team informed.
@@ -149,16 +149,16 @@ D. It was withdrawn in the 4th edition, so the guideline no longer gives any tar
 **Why not B:** The population is severe TBI.
 **Why not D:** The recommendation is present.
 
-**Q5 (safety).** A nurse on a neurocritical care unit reads that the guideline advises caution about CPP above 70 mm Hg. Why?
-A. High CPP improves outcomes, so no caution is needed when a clinician pushes the pressure up with fluids or drugs.
-B. High CPP is thought to be more dangerous in older patients, and carries no risk in younger adults.
-C. Aggressive efforts to push CPP above 70 with fluids and pressors may risk adult respiratory failure.
-D. High CPP is harmful if the patient has no ICP monitor in place, because it cannot then be measured.
+**Q5 (judgment).** An adult with severe TBI has a CPP within the prescribed 60–70 mm Hg range. Oxygen requirements are increasing after fluid resuscitation. A colleague suggests requesting further fluids and vasopressors solely to maintain CPP above 70 mm Hg. What should the nurse communicate?
+A. A higher CPP reliably improves outcomes, so the additional pressure augmentation should take priority.
+B. The current oxygen requirement is unrelated to fluid treatment as long as the CPP remains measurable.
+C. Report respiratory deterioration and avoid aggressive augmentation solely to exceed the ordered range.
+D. Request an immediate reduction of cerebral perfusion pressure whenever it rises above 70 mm Hg.
 **Answer: C.**
-**Why correct:** The guideline's Level III statement cautions that aggressive attempts to push CPP above 70 with fluids and pressors may risk adult respiratory failure. This concerns harm from aggressive pressure augmentation, not an automatic instruction to lower a spontaneously higher CPP.
-**Why not A:** The guideline cites harm at higher values.
-**Why not B:** Age is not the stated basis.
-**Why not D:** The caution does not depend on monitor presence.
+**Why correct:** The BTF Level III statement warns that aggressive attempts to maintain CPP above 70 mm Hg with fluids and vasopressors may increase the risk of adult respiratory failure. Assess the new respiratory deterioration and communicate the perfusion and fluid trends to the team. Follow the prescribed individual target; this is not an instruction to lower a spontaneously higher CPP.
+**Why not A:** The guideline does not establish that routinely pursuing higher CPP improves outcomes, and aggressive augmentation can cause harm.
+**Why not B:** New oxygen requirements after fluid treatment warrant assessment for pulmonary complications and other causes.
+**Why not D:** The caution concerns the harm of aggressive augmentation, not automatic treatment of every CPP above 70 mm Hg.
 
 **Q6 (scope).** Which of these belongs to the clinical team rather than the bedside nurse?
 A. Deciding to start hyperosmolar therapy or drainage in response to a raised intracranial pressure.

@@ -1188,6 +1188,22 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "da2c28f836dbde23",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "S-NICE-CG103",
+     "S-SCCM-FAMILY-2024",
+     "S-SCCM-OLDER-2026",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T02": [
@@ -1644,6 +1660,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "377da100e3431980",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-AIS-2026",
+     "S-GCS-OFFICIAL",
+     "S-NICE-NG232"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T03": [
@@ -1975,6 +2004,19 @@
    },
    {
     "hash": "c9344d8af1617bc8",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-SCCM-NMBA-2026",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "7da8deddebf7161a",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -3719,6 +3761,19 @@
    },
    {
     "hash": "b6e2db82580dd3ea",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-BTF-DC-2020",
+     "S-BTF-PTBI-2026",
+     "S-BTF-TBI-4TH"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "328717f1343609a3",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
