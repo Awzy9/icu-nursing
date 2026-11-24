@@ -93,13 +93,13 @@ D. Start the interim contact-precaution measures in policy now and tell the char
 **Why not B:** Precautions are based on the presentation and risk, not on a confirmed laboratory result.
 **Why not C:** Protecting only one task leaves the room, equipment and later care unprotected, and nobody with infection-prevention expertise is told.
 
-**Q2 (judgment).** A nurse is about to care for a patient on a busy unit. Which approach to choosing PPE for a task is most consistent with standard precautions?
+**Q2 (judgment).** A nurse is preparing to provide oral care and then handle respiratory secretions for a patient in the ICU. The patient has no confirmed infectious diagnosis. Which approach to PPE selection is safest?
 A. Base it on the expected exposure for the task, such as splashes or secretion contact, and the precaution level.
 B. Use the same set of PPE for every task on a patient, chosen from the diagnosis written on the isolation sign.
 C. Use whatever is nearest at the time, because any barrier is better than none and speed is important in the ICU.
 D. Follow the preference of the most senior nurse on duty, since PPE choices are a matter of individual experience.
 **Answer: A.**
-**Why correct:** Standard precautions rely on a risk assessment of the task as well as the isolation category.
+**Why correct:** Standard precautions apply even without a confirmed infection. Assess the likelihood of contact with secretions and splashes for each planned task and add the precautions indicated by the patient's presentation and facility policy. PPE appropriate for one task may not provide sufficient protection during the next.
 **Why not B:** A fixed set can over- or under-protect, because exposure differs from task to task.
 **Why not C:** Convenience does not equal protection; the wrong PPE can give false reassurance.
 **Why not D:** PPE selection is defined by policy and risk assessment, not by personal preference.

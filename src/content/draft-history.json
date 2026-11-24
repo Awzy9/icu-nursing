@@ -125,6 +125,17 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "503b6bf12dfce39c",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CDC-IC"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D06-T05": [
@@ -1084,6 +1095,22 @@
    },
    {
     "hash": "0df2b2499780aa35",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ADA-HOSP-2026",
+     "S-ESICM-EEN-2017",
+     "S-ESPEN-ICU-2023",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "5173d2794f148cce",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2060,6 +2087,21 @@
     "gaps": 0,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "176f0fceb1204db6",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-FDA-COI-2024",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "D01-T17": [
@@ -2926,6 +2968,19 @@
    },
    {
     "hash": "69b02c7cdc3234cd",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-BTF-DC-2020",
+     "S-BTF-PTBI-2026",
+     "S-BTF-TBI-4TH"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "b6e2db82580dd3ea",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

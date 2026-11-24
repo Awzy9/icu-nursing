@@ -139,7 +139,7 @@ D. Wait for the end of the unit, so that the full volume is given, and then repo
 **Why not C:** Fever can signal haemolytic or septic reaction; antipyretics treat symptoms only and need an order.
 **Why not D:** Completing the unit delays recognition and treatment.
 
-**Q4 (prioritization).** Two patients are receiving transfusions. Which finding needs the most urgent response?
+**Q4 (prioritization).** Four patients are receiving transfusions in the unit. Several observations require follow-up. Which finding indicates the most immediate threat to airway or circulation?
 A. A patient with a mild itchy rash on the forearm and normal vital signs.
 B. A patient with a temperature rise of 1 °C who feels well and has stable vital signs.
 C. A patient with new severe breathlessness, hypotension and swelling of the lips.
@@ -148,7 +148,7 @@ D. A patient whose unit has been running for 3 hours and is nearly finished.
 **Why correct:** Severe respiratory compromise, hypotension and lip swelling suggest possible anaphylaxis. Stop the transfusion, activate emergency assistance and use the authorized anaphylaxis pathway without delaying urgent treatment; maintain oxygenation and circulatory support. Other severe reactions may overlap, so obtain specialist transfusion assessment rather than diagnosing from symptoms alone.
 **Why not A:** An isolated mild urticarial reaction still requires assessment, monitoring and action according to local transfusion policy, but lacks the immediate airway/circulatory danger of option C. Do not assume all mild reactions require identical treatment or that restarting is always prohibited.
 **Why not B:** Even an apparently mild fever developing during transfusion warrants stopping the transfusion for prompt assessment and notification under the reaction protocol; FNHTR is not confirmed by fever alone. Only after clinical evaluation may authorized staff decide whether restarting is appropriate. Severe airway and circulatory compromise in option C remains the highest immediate priority.
-**Why not D:** The Circular allows up to 4 hours after the container is entered.
+**Why not D:** Check the permitted administration time and local handling requirements, but an approaching time limit without new symptoms is not equivalent to acute airway or circulatory compromise. The cited Circular describes a four-hour limit after entry into the container.
 
 **Q5 (understanding).** Which patient is at particular risk of transfusion-associated circulatory overload (TACO) according to the Circular?
 A. A young adult with normal heart, lung and kidney function and a negative fluid balance.

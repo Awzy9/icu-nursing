@@ -120,16 +120,16 @@ D. Early enteral nutrition is suggested rather than early parenteral nutrition i
 **Why not B:** The guideline states a preference rather than equivalence.
 **Why not C:** It suggests feeding regardless of bowel sounds unless ischaemia or obstruction is suspected.
 
-**Q3 (judgment).** A patient is turned prone and a colleague says the feed must always be stopped for proning. What is the best response?
+**Q3 (judgment).** The team plans a prolonged prone session for a ventilated patient receiving gastric feeds. A colleague proposes withholding nutrition throughout the session solely because of positioning. What is the best nursing response?
 A. Agree and stop all feeds for the whole prone period without telling the team, because proning always makes feeding unsafe.
 B. Say ESICM suggests not delaying feeding solely because of proning, then ask the team for the plan and follow it.
 C. Increase the feed rate during proning to make up for the time lost during the turn and the preparation for it.
 D. Remove the feeding tube before every turn to avoid displacement, and re-insert it once the patient is supine again.
 **Answer: B.**
 **Why correct:** Proning alone is not a reason to withhold enteral nutrition throughout a session. Follow the coordinated turn and feeding plan; assess hemodynamic stability, tube security and placement before use, positioning and intolerance. Do not restart automatically if aspiration or displacement is suspected.
-**Why not A:** Stopping without the team's plan is not guideline-based.
-**Why not C:** Increasing rates is a prescriber decision and may worsen intolerance.
-**Why not D:** Removing the tube is unnecessary and unsafe.
+**Why not A:** A temporary pause during the turn may be part of the unit procedure, but withholding nutrition throughout the session solely because of prone positioning is not supported by the cited guidance.
+**Why not C:** Compensating for missed feed volume by independently increasing the rate may worsen intolerance; coordinate any change with the authorized nutrition plan.
+**Why not D:** Routine removal before every turn is not indicated. Protect tube securement during repositioning and follow the approved position-verification pathway before use.
 
 **Q4 (application).** Which measure best reduces aspiration risk in a ventilated patient who is being fed?
 A. Keeping the head of the bed raised (SHEA: 30–45°, unless contraindicated) and giving regular mouth care.

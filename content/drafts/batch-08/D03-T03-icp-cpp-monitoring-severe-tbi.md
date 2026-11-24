@@ -127,15 +127,15 @@ D. The intracranial pressure divided by the heart rate, which is displayed conti
 **Why not C:** Systolic pressure alone is not CPP.
 **Why not D:** No such ratio is defined.
 
-**Q3 (judgment).** A severe TBI patient's displayed CPP has fallen below the range ordered by the team and MAP has dropped. What is the most appropriate nursing action?
+**Q3 (judgment).** During a bedside check of an adult with severe TBI, CPP falls below the ordered range at the same time that MAP decreases. Which response best addresses the risk of secondary brain injury while checking measurement reliability?
 A. Report at once, check the airway, blood pressure source and monitor connections, and keep the team informed.
 B. Increase the vasopressor rate on your own judgment of the pressure, since a higher pressure is always better.
 C. Wait ten minutes to see whether the pressure recovers before telling anyone about the fall in the value.
 D. Lower the head of the bed to raise the blood pressure, without an order, since position changes are harmless.
 **Answer: A.**
 **Why correct:** Falling MAP and CPP may threaten cerebral perfusion. Assess airway, ventilation, circulation and neurological change; escalate urgently while checking the pressure measurement and applying authorized measures. Do not delay treatment of clinical instability for troubleshooting.
-**Why not B:** Titration outside an order or protocol is unsafe.
-**Why not C:** Delay risks secondary injury.
+**Why not B:** Titration outside an order or protocol may cause harm. Assess the source of hypotension and communicate the trend rather than pursuing a higher CPP regardless of the individual target.
+**Why not C:** Waiting to see whether the value recovers can prolong inadequate cerebral perfusion; urgent assessment and escalation should occur alongside measurement checks.
 **Why not D:** Positioning changes for pressure management need a policy or order, and head position is not addressed by the guideline.
 
 **Q4 (understanding).** What does the guideline say about the evidence for the CPP target of 60 to 70 mm Hg?
