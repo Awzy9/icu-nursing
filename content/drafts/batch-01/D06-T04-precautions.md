@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["CDC Standard Precautions page (dated 2024-04-03)", "CDC Transmission-Based Precautions page (dated 2024-04-03)"]
-sources: [S-CDC-IC]
-sources_not_read: [S-WHO-HH-2009, S-CDC-ISOLATION-2007]
-independently_written_note: "Original wording and structure. CDC pages were read for facts only; no reuse terms were found, so nothing is copied (cite-only). WHO and ECDC isolation guidance were not read; reviewers should check international equivalents."
+sources: [S-CDC-IC, S-CDC-ISOLATION-2007, S-WHO-HH-SUMMARY-2013]
+sources_not_read: [S-WHO-HH-2009]
+independently_written_note: "Original wording and structure. CDC pages were read for facts only; no reuse terms were found, so nothing is copied (cite-only). CDC 2007 selected official recommendations and WHO 2013 hand-hygiene summary were checked on 2026-11-24. The complete WHO 2009 guideline and ECDC isolation guidance were not read; rights review remains pending."
 ---
 # Standard and transmission-based precautions in the ICU
 > DRAFT – NOT clinically reviewed. AI-generated. Not for learners until qualified reviewers approve.
@@ -35,7 +35,7 @@ ICU patients have devices (lines, tubes, catheters), impaired defences and long 
 - **Environment:** is the correct sign visible, and are PPE, hand-hygiene products and cleaning supplies available at the room entrance?
 
 ## 7. Nursing responsibilities
-- Hand hygiene at the moments defined by local policy and national or WHO guidance (the specific moments are not stated on the CDC pages read and the WHO guidance could not be accessed, so they are not listed here).
+- Clean hands before patient contact and before an aseptic task; repeat after possible body-fluid contamination, patient contact, or contact with the immediate patient environment. These five categories are supported by the WHO public summary. CDC additionally specifies cleaning hands when moving from a contaminated body site to a clean site and after removing gloves. Follow approved products and local instructions; visibly soiled hands require washing with soap and water.
 - PPE chosen from the task risk; put on before the task and remove in the order and place set by policy, then perform hand hygiene.
 - Respiratory hygiene and cough etiquette; safe injection and sharps practice; cleaning and disinfection of shared equipment; safe handling of linen and waste.
 - Apply and keep visible the precaution level in force; brief visitors and colleagues.
@@ -157,10 +157,12 @@ D. Complete the suctioning and rinse the area at the end of the shift when the w
 - CDC isolation recommendations. https://www.cdc.gov/infection-control/hcp/isolation-precautions/recommendations.html (selected recommendation excerpts, accessed 2026-11-24)
 - CDC core practices. https://www.cdc.gov/infection-control/hcp/core-practices/ (selected recommendation excerpts, accessed 2026-11-24)
 
+- WHO. Hand-hygiene strategy (23 August 2013), public summary. https://www.who.int/news-room/detail/23-08-2013-who-hand-hygiene-strategy-feasible-and-sustainable-for-health-care-settings-around-the-world (selected hand-hygiene statements checked 2026-11-24; full 2009 guideline remains unread).
+
 ## 19. Local protocol note
 Follow your institution's isolation policy and national rules. Hand-hygiene moments, PPE type and duration of isolation differ by organism and jurisdiction.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: CDC is an authoritative public-health agency; the pages are summaries, not the full 2007 isolation guideline. No licence for reuse was found (cite-only).
-- International applicability: principles are widely shared; WHO and European (ECDC) guidance were not read. Respirator standards (N95, FFP2) differ by region.
+- International applicability: CDC 2007 recommendations IV.A and V.A–B and the WHO 2013 public summary were examined; the full WHO 2009 guidance remains outstanding. Use pathogen-specific isolation duration and local respirator standards; do not use a general precaution category to decide when to discontinue isolation.
 - Open questions for reviewers (IPC, NE, BN): confirm duration criteria to include; whether to add eye protection rules; Arabic-language terminology.
