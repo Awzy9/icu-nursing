@@ -176,6 +176,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG103",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -184,12 +189,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKROX-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "7f151bbb96c4a1d5"
+   "hash": "aa3e0cfaf2a4e3de"
   },
   {
    "key": "D01-T07",
@@ -214,7 +224,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "eb272e7f8df131e4"
+   "hash": "f43436f5a894faf0"
   },
   {
    "key": "D01-T11",
@@ -234,7 +244,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "dc536134dedb4845"
+   "hash": "a7c0a2a95254287a"
   },
   {
    "key": "D02-T08",
@@ -269,7 +279,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "f199cbdad8242cda"
+   "hash": "412390541b10c829"
   },
   {
    "key": "D02-T14",
@@ -299,7 +309,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "a0d80cda0e89fc36"
+   "hash": "0b5927f8af316375"
   },
   {
    "key": "D02-T15",

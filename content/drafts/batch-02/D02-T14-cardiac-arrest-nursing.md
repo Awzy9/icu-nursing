@@ -114,7 +114,7 @@ B. Move the patient to the floor first so that the compressions will be effectiv
 C. Check the chart for the diagnosis and for any limitation-of-treatment decision before taking any action.
 D. Prepare and give the first drug before starting compressions, to save time while the team is assembling.
 **Answer: A.**
-**Why correct:** Early call and compressions come first; ERC advises starting CPR on the bed.
+**Why correct:** Early call and compressions come first; ERC advises starting CPR on the bed. For an unresponsive adult with abnormal breathing, activate the arrest response; a trained provider may rapidly assess circulation with available pulse and monitoring data in parallel. If there is no evidence of circulation or doubt remains, start CPR without delaying for equipment. Follow any known valid treatment limitation.
 **Why not B:** Moving the patient delays compressions and risks injury.
 **Why not C:** Where a documented decision exists, it should be known in advance; delay in the arrest itself is harmful.
 **Why not D:** Drug administration belongs to the team and follows compressions.
@@ -148,7 +148,7 @@ C. A temperature of 36.8 °C measured with the bladder probe, unchanged from the
 D. A capillary glucose that is within the range set by the unit protocol and has been stable since ROSC.
 **Answer: B.**
 **Why correct:** ERC–ESICM 2025 advises avoiding hypotension after ROSC and targeting MAP above approximately 60–65 mmHg, while applying the individual target prescribed by the resuscitation team. The falling MAP of 52 mmHg here requires urgent assessment and escalation.
-**Why not A:** 97% lies within the advised range of 94–98% with a reliable trace.
+**Why not A:** 97% lies within the advised range of 94–98% with a reliable trace after oxygenation can be measured accurately; low-flow states and skin pigmentation can affect reliability. The falling arterial pressure is the immediate concern.
 **Why not C:** Fever avoidance targets 37.5 °C or less; 36.8 °C is acceptable.
 **Why not D:** A glucose within the protocol range, stable since ROSC, needs routine monitoring only.
 
@@ -158,7 +158,7 @@ B. Deciding on neuroprognostication and discussing the likely outlook with the f
 C. Activating the CPR mode on the mattress before starting compressions on a patient in the bed.
 D. Reporting a rise in the temperature of a comatose post-arrest patient to the team promptly.
 **Answer: B.**
-**Why correct:** Prognostication is multimodal and a medical team decision; no single predictor is fully accurate.
+**Why correct:** Prognostication is multimodal and a medical team decision; no single predictor is fully accurate. ERC–ESICM 2025 emphasizes avoiding confounders, allowing appropriate time after ROSC and using convergent evidence; bedside nurses contribute serial findings and drug timing, not an independent outcome prediction.
 **Why not A:** A documentation task for the nurse or scribe.
 **Why not C:** Activating an available CPR mattress mode is a trained team task under local policy; do not delay the start of chest compressions to configure the bed.
 **Why not D:** A nursing monitoring task.
@@ -179,6 +179,9 @@ D. Sedatives, opioids and muscle relaxants can confound the neurological examina
 - Soar J, Böttiger BW, Carli P, et al. European Resuscitation Council Guidelines 2025 Adult Advanced Life Support. Resuscitation. 2025;215:110769. https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf (accessed 2026-11-14)
 - Nolan JP, Sandroni C, Cariou A, et al. European Resuscitation Council and European Society of Intensive Care Medicine Guidelines 2025 Post-Resuscitation Care. Resuscitation. 2025;215:110809. https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf (accessed 2026-11-14)
 - ERC Download Centre notice (accessed 2026-11-14): assets may be used for educational purposes free of cost; commercial use needs an agreement with the ERC.
+
+- Resuscitation Council UK 2025 adult advanced life support. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines (selected recommendation or abstract text, accessed 2026-11-24)
+- Resuscitation Council UK 2025 post-resuscitation care. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/post-resuscitation-care-guidelines (selected recommendation or abstract text, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Response team activation, DNACPR/limitation-of-treatment decisions, who may defibrillate or give drugs, post-arrest care bundles and family communication follow the institution's policies and national law.

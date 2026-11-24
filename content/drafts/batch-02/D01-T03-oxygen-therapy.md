@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Management of Adult Patients With Oxygen in the Acute Care Setting (Respir Care 2022;67(1):115-128) – full text read; modified RAND/UCLA method", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – NIV-interface skin assessment only", "NICE CG103 Delirium (updated 2023) – pulse oximeter accuracy statement only", "ERC Guidelines 2025 Adult ALS – oxygen and defibrillation safety (see D02-T15)"]
-sources: [S-AARC-O2, S-RCP-NEWS2, S-NICE-CG103, S-ERC-ALS-2025]
+sources: [S-AARC-O2, S-RCP-NEWS2, S-NICE-CG103, S-ERC-ALS-2025, S-FDA-OXIMETER-BASICS, S-UKROX-2025]
 sources_not_read: [S-BTS-OXYGEN-2017]
 independently_written_note: "Original wording. The AARC oxygen CPG PDF (copyright Daedalus Enterprises, cite-only) was read: abstract, Table of recommendations, and the sections on targets, high-flow nasal cannula and humidification. BTS 2017 oxygen guideline and national oxygen-prescribing standards could NOT be accessed, so jurisdiction differences are described only as a limitation. ERC material is paraphrased only; ERC commercial use needs an agreement."
 ---
@@ -103,10 +103,10 @@ A 72-year-old man with COPD is admitted with breathlessness; his written target 
 **Q1 (judgment).** A patient with COPD has a written SpO₂ target of 88–92%. After oxygen is turned up by a colleague, the reading is 98% and the patient is becoming drowsy. What is the best nursing action?
 A. Leave the oxygen as it is, because a higher SpO₂ is safer for a patient who is short of breath and already unwell.
 B. Turn the oxygen off and recheck the reading in thirty minutes, to see whether the patient wakes up.
-C. Reduce within the order or protocol if allowed, check the patient, and report the drowsiness and reading now.
+C. Assess ABC and escalate urgently; titrate toward the prescribed target within protocol.
 D. Wait for the next scheduled blood gas before taking any action, since drowsiness could simply reflect tiredness at night.
 **Answer: C.**
-**Why correct:** The patient may be retaining carbon dioxide; the nurse acts within the target, assesses and escalates.
+**Why correct:** New drowsiness is an emergency warning even with high SpO₂. Assess airway, ventilation and circulation and call urgently; request blood-gas assessment and titrate oxygen under the authorized target plan. Hypercapnia is possible, not established by oximetry; do not withdraw necessary oxygen abruptly.
 **Why not A:** AARC supports a lower range for COPD; higher is not automatically safer.
 **Why not B:** Stopping oxygen is not within the order and may cause hypoxaemia.
 **Why not D:** Drowsiness with a high reading needs prompt assessment.
@@ -117,7 +117,7 @@ B. 100%, because maximum saturation avoids hypoxia and is recommended.
 C. 88–92% in the general critically ill population, because lower saturations are considered safer.
 D. 90–94% for critically ill patients, supported by strong high-certainty evidence.
 **Answer: A.**
-**Why correct:** The guideline gives 94–98% for most patients (evidence level C).
+**Why correct:** AARC 2022 gives 94–98% for most patients (evidence level C); this question asks about that specific guideline, not a universal ICU prescription. UK-ROX 2025 randomized 16,500 ventilated adults and found no significant 90-day survival benefit from a conservative 88–92% target versus usual care. The trial does not establish one target for every patient; use the prescribed indication-specific range.
 **Why not B:** The guideline raises concern about excessive FiO₂.
 **Why not C:** 88–92% applies to patients with COPD.
 **Why not D:** The critically ill range is also 94–98%, and certainty is low.
@@ -128,21 +128,21 @@ B. The patient is anxious and probably only needs reassurance and a calmer room 
 C. The oxygen should be reduced immediately because 99% is above the ordered range, whatever the patient looks like.
 D. The patient may be deteriorating; check the probe and perfusion, assess breathing effort and escalate.
 **Answer: D.**
-**Why correct:** SpO₂ can be unreliable or reassuring while the patient worsens; assess the whole patient.
+**Why correct:** Assess the patient first and escalate in parallel with checking the signal. FDA identifies poor perfusion, skin pigmentation and temperature among factors affecting accuracy. A saturation estimate does not establish adequate ventilation, oxygen delivery or tissue perfusion; request appropriate additional assessment when the reading conflicts with clinical signs.
 **Why not A:** Routine monitoring would ignore danger signs.
 **Why not B:** Attributing signs to anxiety risks missing deterioration.
 **Why not C:** Reducing oxygen is not the priority when the patient is unwell.
 
 **Q4 (understanding).** Which statement about high-flow nasal cannula (HFNC) matches the AARC 2022 guideline?
 A. HFNC shortens hospital stay compared with conventional oxygen therapy in adults with acute hypoxaemic failure.
-B. HFNC may help avoid escalation to non-invasive or invasive ventilation, but it does not reduce length of stay.
+B. The cited guideline supports HFNC to reduce escalation; a shorter stay was not established.
 C. HFNC is recommended after intubation has failed, in preference to any other form of respiratory support.
 D. HFNC has proven better outcomes than other support in all immunocompromised patients, whatever the cause of failure.
 **Answer: B.**
-**Why correct:** The guideline says HFNC may avoid escalation but does not reduce length of stay (level B).
+**Why correct:** The guideline supports early HFNC in appropriate patients and reports potential avoidance of more invasive respiratory support, but did not establish reduced length of stay. Worsening work of breathing or gas exchange still requires urgent reassessment for escalation.
 **Why not A:** The guideline states no length-of-stay reduction.
 **Why not C:** The guideline supports early initiation in suitable patients.
-**Why not D:** No benefit was found in immunocompromised patients.
+**Why not D:** The cited evidence does not establish superior outcomes in all immunocompromised populations.
 
 **Q5 (safety).** A patient is about to be defibrillated while on a mask with oxygen. Which action fits the ERC 2025 oxygen safety advice?
 A. Leave the mask on to maintain oxygenation until after the shock, since the patient may become hypoxic if it is removed.
@@ -171,6 +171,9 @@ D. A patient on room air with an SpO₂ of 97% awaiting a scan.
 - Goodfellow LT, et al. AARC CPG: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054 (NIV interface skin assessment). https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)
 - NICE. Delirium CG103, recommendation 1.4.6 (pulse oximeter accuracy). https://www.nice.org.uk/guidance/cg103 (accessed 2026-11-14)
 - Soar J, et al. European Resuscitation Council Guidelines 2025 Adult Advanced Life Support. Resuscitation 2025;215:110769 (safe use of oxygen during defibrillation). https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf (accessed 2026-11-14)
+
+- FDA Pulse Oximeter Basics. https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics (selected recommendation or abstract text, accessed 2026-11-24)
+- UK-ROX randomized trial (2025). https://pubmed.ncbi.nlm.nih.gov/40501321/ (selected recommendation or abstract text, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Target ranges, who may titrate, device choice and monitoring frequency follow the institution's oxygen policy and the prescriber's order.

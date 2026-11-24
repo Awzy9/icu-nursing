@@ -105,9 +105,9 @@ A 59-year-old ventilated man with brain injury is suctioned for thick secretions
 A. Take a second pass quickly to clear the airway and fix the cause of the fall, then check the monitor again afterwards.
 B. Instil saline to loosen secretions and continue suction on the same pass, because the secretions are probably the cause.
 C. Wait a minute to see whether the readings improve by themselves before changing anything or calling anyone for help.
-D. Stop suctioning, restore oxygenation per protocol, assess the patient and call for help if recovery is slow.
+D. Stop suctioning, restore oxygenation and ventilation under protocol, and call for urgent help now.
 **Answer: D.**
-**Why correct:** Stopping and restoring oxygenation is the priority; escalation follows if unstable.
+**Why correct:** Severe desaturation with bradycardia and failure to recover requires immediate cessation of suction, airway and circulation reassessment, restoration of oxygenation/ventilation under the emergency protocol and urgent help in parallel. Assess for arrest if circulation is lost; do not wait for another suction pass or for spontaneous recovery.
 **Why not A:** More suction would worsen hypoxaemia.
 **Why not B:** Saline is not recommended and can worsen oxygenation.
 **Why not C:** Waiting prolongs hypoxaemia.
@@ -119,7 +119,7 @@ C. The patient is awake and tolerating the tube without coughing or any visible 
 D. The family asks that the tube be cleaned so the patient looks tidier.
 **Answer: A.**
 **Why correct:** AARC lists breath sounds, visible secretions and sawtooth waveform as indicators.
-**Why not B:** The guideline does not recommend scheduled suctioning for adults on the basis of time alone.
+**Why not B:** Elapsed time alone does not establish an indication in an adult; AARC lists clinical indicators. The explicit as-needed versus scheduled recommendation in the abstract is for neonatal and pediatric patients.
 **Why not C:** Absence of cough does not signal need.
 **Why not D:** A request is not a clinical indication.
 
@@ -151,7 +151,7 @@ B. The nurse should choose the thickest catheter that will fit in the tube, to c
 C. The AARC text gives conflicting figures and says the optimum is not known, so follow unit policy and ask the respiratory team.
 D. Catheter size does not affect oxygenation or airway pressure, so any size on the shelf is equally acceptable.
 **Answer: C.**
-**Why correct:** The abstract, Table 1 and text differ, and the text states the optimum is not known.
+**Why correct:** The AARC abstract gives an adult and pediatric catheter-to-lumen occlusion recommendation below 50%, but the detailed text and table have inconsistent figures and do not establish an optimal ratio. Follow the device-specific sizing convention and local respiratory-team guidance; do not equate cross-sectional area with diameter.
 **Why not A:** The optimum is not established.
 **Why not B:** A catheter that is too large can occlude the tube and cause negative pressure effects.
 **Why not D:** Larger catheters can cause physiologic changes.

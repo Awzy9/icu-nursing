@@ -104,10 +104,10 @@ A 52-year-old woman with severe pneumonia is intubated with moderate ARDS. After
 **Q1 (judgment).** A patient with ARDS has a set tidal volume unchanged, but the exhaled tidal volume has fallen over two hours and peak pressure has risen. What is the best first nursing action?
 A. Increase the set tidal volume at the ventilator so the delivered volume matches the target, then recheck the pressures after a few minutes.
 B. Wait for the next blood gas result before asking for assistance with the ventilator.
-C. Check the patient and circuit for secretions, kinks and leaks, suction per policy, and escalate if values stay abnormal.
+C. Assess the patient, call for help if unstable, and check the airway and circuit within competency.
 D. Mute the alarm to reduce noise and reassess at the next scheduled check.
 **Answer: C.**
-**Why correct:** A combination of falling delivered volume and rising pressure suggests obstruction or compliance change; the nurse checks causes within scope and escalates.
+**Why correct:** A combination of falling delivered volume and rising pressure suggests obstruction or compliance change, but does not establish a diagnosis. Assess breathing, oxygenation and circulation first; summon immediate help for instability. Check for kinks, secretions, displacement and circuit faults with trained staff. Suction only when indicated; follow the emergency ventilation plan if ventilation is ineffective.
 **Why not A:** Changing tidal volume is a prescriber or respiratory-therapy decision and could raise lung stress.
 **Why not B:** Waiting delays assessment of a possible emergency.
 **Why not D:** Muting alarms without addressing the cause risks missing deterioration.
@@ -129,7 +129,7 @@ B. Perform a brief recruitment manoeuvre to open the lungs and then document it 
 C. Reduce the set tidal volume so that the plateau falls, since smaller volumes are protective.
 D. Check the patient and circuit, report the value and trend with SBAR, and request urgent review.
 **Answer: D.**
-**Why correct:** Reporting the change and checking for causes are nursing tasks; settings changes are not.
+**Why correct:** Reporting the change and checking for causes are nursing tasks. AARC 2024 supports plateau pressure, delivered volume, PEEP and intrinsic PEEP assessment. Verify measurement conditions with the trained team; spontaneous effort may confound plateau pressure. Settings changes require the applicable order or protocol; never delay emergency escalation.
 **Why not A:** Lowering PEEP is a ventilator setting change that needs an order or protocol.
 **Why not B:** Recruitment manoeuvres are not routinely recommended and need a prescriber or therapist.
 **Why not C:** Tidal volume changes need an order or protocol, whatever the intent.
@@ -154,7 +154,7 @@ D. Increase FiO₂ at the ventilator and wait to see whether the saturation reco
 **Why correct:** Possible tube displacement is an airway emergency needing team help and the emergency procedure.
 **Why not A:** Waiting risks hypoxia while the cause of the problem is not looked for or treated.
 **Why not C:** Turning alone is unsafe and may dislodge the tube further.
-**Why not D:** Changing FiO₂ is a setting decision and does not fix a displaced tube.
+**Why not D:** Emergency oxygen or ventilation support may be appropriate under protocol, but waiting for a saturation response before calling for airway help is unsafe; increased oxygen does not correct tube displacement.
 
 **Q6 (monitoring).** Which finding on the ventilator display most clearly requires urgent escalation?
 A. A respiratory rate that is within the set range and a stable SpO₂ with matching exhaled volumes, unchanged since the last check.

@@ -112,7 +112,7 @@ B. The restlessness is probably pain, so give analgesia and review again once th
 C. These are possible signs of shock despite a normal-range pressure; repeat observations, look for bleeding and escalate urgently.
 D. Only the doctor can judge perfusion, so record the findings and wait for the next scheduled round.
 **Answer: C.**
-**Why correct:** The consensus says low blood pressure is not required to define shock; skin, kidney and brain signs indicate poor perfusion.
+**Why correct:** The historical consensus says hypotension is not required for shock. The ESICM 2025 update emphasizes serial skin perfusion assessment, including capillary refill with temperature and mottling as complements. Falling urine output and altered mentation add concern. Escalate urgently and look for bleeding while assessing ABC; one pressure value cannot exclude shock.
 **Why not A:** Waiting an hour ignores clear perfusion signs.
 **Why not B:** Pain may contribute, but analgesia alone would delay recognition of shock.
 **Why not D:** Perfusion assessment and escalation are nursing responsibilities.
@@ -145,7 +145,7 @@ B. Prepare, give and monitor the ordered treatments, repeat observations and rep
 C. Give the bolus but skip the reassessment afterwards, because the doctor will do it at the next review.
 D. Delay giving the treatments until the lactate result is known, so that the team can see the trend first.
 **Answer: B.**
-**Why correct:** The nurse administers and monitors ordered therapy and reports response; the consensus recommends frequent reassessment.
+**Why correct:** Administer and monitor authorized treatment, then report the response. ESICM 2025 prefers dynamic predictors to static preload measures when assessing fluid responsiveness where applicable. Review perfusion, congestion and ordered monitoring results; do not repeat fluid solely because pressure remains low.
 **Why not A:** Selecting vasopressors and rates is a prescriber decision.
 **Why not C:** Reassessment is shared and needed after each intervention.
 **Why not D:** Delay may harm; early treatment is recommended.
@@ -167,7 +167,7 @@ B. Increase the vasopressor rate to bring the MAP up at once, because a prompt r
 C. Re-silence the alarm until the next routine check, since the monitor had already alarmed once.
 D. Document the reading carefully and review it after the shift, when the day has become less busy.
 **Answer: A.**
-**Why correct:** The nurse verifies, escalates and monitors; titration follows orders.
+**Why correct:** Assess the patient and escalate urgently while another trained staff member verifies measurement quality. ESICM 2025 supports arterial catheter monitoring when shock requires vasopressors or persists despite initial treatment. Check waveform and reference level per local procedure; titrate only under the authorized plan and do not let measurement troubleshooting delay emergency care.
 **Why not B:** Changing rates without an order or titration protocol is outside scope.
 **Why not C:** Silencing the alarm without action risks harm.
 **Why not D:** Delay may allow deterioration.
