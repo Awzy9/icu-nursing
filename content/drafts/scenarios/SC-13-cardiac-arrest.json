@@ -67,8 +67,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "A patient is unresponsive and not breathing normally.",
-      "prompt": "What do you do first?",
+      "info": "During an ICU observation round, an adult suddenly becomes unresponsive. Breathing is abnormal with occasional gasps. The arrest team has not yet been called and a definite pulse has not been established. A colleague is nearby.",
+      "prompt": "Which response minimizes delay to cardiac arrest recognition, emergency activation and CPR?",
       "observations": [
         {
           "key": "response",
@@ -84,6 +84,16 @@
           "key": "team",
           "label": "Team",
           "value": "Not yet called"
+        },
+        {
+          "key": "pulse",
+          "label": "Pulse",
+          "value": "No definite pulse established"
+        },
+        {
+          "key": "equipment",
+          "label": "Emergency equipment",
+          "value": "Request through colleague"
         }
       ],
       "options": [
@@ -93,7 +103,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Unresponsiveness with absent or abnormal breathing requires rapid arrest recognition, emergency activation and CPR without avoidable delay. If a trained pulse check is part of the local pathway, it must not delay CPR. Gasping is not normal breathing. Follow the trained healthcare-professional pulse assessment pathway; if no definite pulse is found promptly, begin CPR.",
-          "consequence": "Compressions are under way and the team and defibrillator are coming.",
+          "consequence": "Immediate activation and CPR when indicated may minimize time without effective circulation while colleagues bring equipment.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025",
@@ -107,7 +117,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Equipment is needed, but compressions should not wait for it.",
-          "consequence": "The patient has no circulation while you fetch the machine.",
+          "consequence": "Leaving to fetch equipment could delay chest compressions and emergency support.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"
@@ -119,7 +129,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Waiting delays treatment; call for help and start compressions.",
-          "consequence": "Several minutes pass without compressions.",
+          "consequence": "Waiting for a senior could prolong the interruption to circulation.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"
@@ -129,8 +139,8 @@
     },
     {
       "position": 2,
-      "info": "The defibrillator arrives while compressions continue.",
-      "prompt": "How should the pads and the pause be handled?",
+      "info": "At the next shared checkpoint, CPR is in progress and the defibrillator has arrived. Pads have not yet been applied. The trained operator has not yet determined whether the rhythm is shockable.",
+      "prompt": "How should the team prepare for rhythm assessment while minimizing interruptions to compressions?",
       "observations": [
         {
           "key": "compressions",
@@ -146,6 +156,16 @@
           "key": "pads",
           "label": "Pads",
           "value": "Not yet applied"
+        },
+        {
+          "key": "rhythm",
+          "label": "Arrest rhythm",
+          "value": "Requires trained assessment"
+        },
+        {
+          "key": "operator",
+          "label": "Defibrillator operator",
+          "value": "Trained team member present"
         }
       ],
       "options": [
@@ -155,7 +175,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "Not every arrest rhythm is shockable. Maintain CPR and use the trained rhythm-specific or AED pathway; avoid unnecessary pauses for an indicated shock.",
-          "consequence": "The defibrillator is ready with minimal interruption to compressions.",
+          "consequence": "Early pad placement and coordinated rhythm assessment may reduce avoidable interruptions to CPR.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025",
@@ -169,7 +189,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Stopping while charging lengthens the pre-shock pause.",
-          "consequence": "The pause is long and the chance of success falls.",
+          "consequence": "Stopping compressions before necessary rhythm analysis or shock delivery could prolong the pause.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"
@@ -181,7 +201,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "Pads are preferred; if paddles are used, firm force and good contact are needed.",
-          "consequence": "Poor contact risks arcing and an ineffective shock.",
+          "consequence": "Poor electrode contact could compromise safe and effective shock delivery.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"
@@ -191,8 +211,8 @@
     },
     {
       "position": 3,
-      "info": "The authorised operator has confirmed a shockable rhythm and is ready to deliver an indicated shock.",
-      "prompt": "What must happen before the shock?",
+      "info": "At the final shared checkpoint, the authorized operator has identified a shockable rhythm and an indicated shock is ready. Contact with the patient and bed has not yet been checked, and oxygen delivery equipment is nearby. There is no confirmed return of circulation.",
+      "prompt": "Which safety checks and immediate post-shock actions are required?",
       "observations": [
         {
           "key": "defib",
@@ -208,6 +228,16 @@
           "key": "oxygen",
           "label": "Oxygen source",
           "value": "Not yet checked"
+        },
+        {
+          "key": "circulation",
+          "label": "Return of circulation",
+          "value": "Not established"
+        },
+        {
+          "key": "cpr_plan",
+          "label": "Post-shock plan",
+          "value": "Resume CPR immediately unless team identifies reason to assess circulation"
         }
       ],
       "options": [
@@ -217,7 +247,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Use a visual and verbal safety check and distinguish free-flow oxygen from an attached ventilation circuit. After shock delivery, immediately resume chest compressions; do not routinely pause for a pulse check. The team may assess return of spontaneous circulation if clinical and physiological signs suggest it. Do not stop compressions solely because an isolated capnography value rises.",
-          "consequence": "The shock is delivered safely and compressions restart at once.",
+          "consequence": "A visual safety check and prompt resumption of CPR may protect rescuers and limit interruption to resuscitation.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025",
@@ -230,7 +260,7 @@
           "next": null,
           "scope": "order_or_protocol_required",
           "feedback": "A shock must not be given during manual compressions, even with gloves.",
-          "consequence": "A colleague is put at risk of injury.",
+          "consequence": "Shock delivery during manual compressions could expose a rescuer to injury.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"
@@ -242,7 +272,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "A verbal warning alone does not establish that rescuers are clear. The operator must visually verify safety before delivering an indicated shock.",
-          "consequence": "An incomplete safety check creates a risk of injury to a rescuer; the operator must resolve it before shock delivery.",
+          "consequence": "A verbal warning without visual confirmation could leave someone in contact with the patient or bed.",
           "support": "partial",
           "sources": [
             "S-ERC-ALS-2025"

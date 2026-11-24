@@ -111,8 +111,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "The monitor alarms for a low blood pressure. The patient is drowsy and does not answer as quickly as an hour ago.",
-      "prompt": "What do you do first?",
+      "info": "A low-pressure alarm sounds during ICU monitoring. The adult is slower to respond than an hour earlier and the heart rate is faster. The pressure signal has not yet been verified, but the change in alertness is clinically apparent.",
+      "prompt": "How should the nurse assess new hypotension while checking whether the measurement is reliable?",
       "observations": [
         {
           "key": "bp",
@@ -133,6 +133,16 @@
           "key": "alarm",
           "label": "Alarm",
           "value": "Low pressure"
+        },
+        {
+          "key": "signal",
+          "label": "Pressure signal",
+          "value": "Verify in parallel with clinical assessment"
+        },
+        {
+          "key": "perfusion",
+          "label": "Clinical perfusion",
+          "value": "Immediate assessment required"
         }
       ],
       "options": [
@@ -142,7 +152,7 @@
           "next": 2,
           "scope": "assessment",
           "feedback": "Altered responsiveness plus hypotension is a potentially unstable presentation. Patient-first ABC/perfusion assessment and immediate clinical escalation must happen together with checking a measurement for error, not after repeated observation. The ESICM 2025 summary emphasizes serial clinical perfusion assessment; diagnosis and treatment remain team-led. The 2025 ESICM guideline supports arterial catheter monitoring for shock unresponsive to initial treatment or requiring vasopressors. If an arterial reading is implausible, check the patient and waveform, transducer reference level and equipment with a trained colleague; compare with another appropriate measurement in parallel, not as a condition for escalation. The 2025 EVERDAC trial found a monitored cuff-first strategy with predefined rescue criteria noninferior for 28-day mortality in its selected shock population. This does not establish that cuff and arterial readings are interchangeable or justify removal of a functioning line. For discrepant readings, check cuff fit and position, arterial waveform and reference level, and report perfusion findings to the responsible team. Do not average the two readings or choose whichever looks more reassuring.",
-          "consequence": "Emergency help is summoned immediately while bedside reassessment and signal checks continue in parallel.",
+          "consequence": "Urgent clinical assessment with parallel signal verification may identify circulatory deterioration without delaying emergency help.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6",
@@ -160,7 +170,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A fall in pressure with a faster pulse and altered mental state must be assessed at the bedside and cannot be dismissed as artefact.",
-          "consequence": "The patient worsens while the alarm is silenced.",
+          "consequence": "Dismissing the reading as artefact could delay recognition of genuine shock.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6"
@@ -172,7 +182,7 @@
           "next": 2,
           "scope": "order_or_protocol_required",
           "feedback": "Do not give an unauthorised bolus. Assess the patient and summon urgent clinical help; administer fluids only under an appropriate order or authorised protocol.",
-          "consequence": "An unprescribed treatment is given before the cause is known.",
+          "consequence": "An unauthorized fluid bolus before assessment could worsen an unrecognized cause of hypotension.",
           "support": "partial",
           "sources": [
             "S-ESICM-SHOCK-2014"
@@ -182,8 +192,8 @@
     },
     {
       "position": 2,
-      "info": "The patient's pulse is fast and weak, the skin is cool and the urine output has been low. There has been a large amount of fluid lost in the drain and in diarrhoea during the shift. A vasopressor infusion is running.",
-      "prompt": "What is the best action now?",
+      "info": "At the next shared checkpoint, pulse is fast and weak, skin is cool and urine output remains low. Drain and stool losses have been substantial during the shift. A prescribed vasopressor is running; the cause of poor perfusion and response to further fluid remain uncertain.",
+      "prompt": "Which reassessment and communication would help the team distinguish possible causes and direct resuscitation?",
       "observations": [
         {
           "key": "pulse",
@@ -204,6 +214,16 @@
           "key": "loss",
           "label": "Fluid losses",
           "value": "Large this shift"
+        },
+        {
+          "key": "infusion",
+          "label": "Vasopressor infusion",
+          "value": "Running; verify delivery and access"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Remains low"
         }
       ],
       "options": [
@@ -213,7 +233,7 @@
           "next": 3,
           "scope": "escalation",
           "feedback": "Rapid trending and communication of tissue perfusion, losses and drug-delivery concerns help the responsible team determine the cause and safely direct resuscitation. Blood loss and diarrhoea are possible contributors, not sufficient evidence to diagnose only hypovolaemia. The ESICM update favors dynamic assessment of fluid responsiveness over static preload markers when applicable. A low pressure or a single filling-pressure value does not independently justify further fluid administration. For persistent shock after initial resuscitation, the team should assess likely fluid responsiveness before giving more fluid. Passive leg raising with measurement of the change in cardiac output or stroke volume can be useful even during spontaneous breathing. Pulse-pressure or stroke-volume variation is less reliable outside suitable controlled ventilation conditions; respiratory variation of inferior vena cava size alone is insufficient. Fluid responsiveness is not itself an indication for fluid: consider ongoing perfusion deficit and congestion with the treating team. Do not alter ventilator settings or perform a haemodynamic manoeuvre outside the authorised protocol.",
-          "consequence": "The clinician has what is needed to decide on fluids, the vasopressor and investigation of the cause.",
+          "consequence": "Reporting losses, perfusion, medication delivery and access findings may support individualized assessment of shock and fluid needs.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6",
@@ -228,7 +248,7 @@
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Vasopressor changes are made as prescribed or per the unit's titration protocol; the label notes risks including slowed heart rate and infusion-site injury.",
-          "consequence": "The change is made without authority and the cause remains untreated.",
+          "consequence": "An unauthorized infusion increase could worsen adverse effects while the underlying cause remains unresolved.",
           "support": "sourced",
           "sources": [
             "L-PHENYLEPHRINE"
@@ -240,7 +260,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "These findings suggest possible shock and need urgent reporting, not reassurance.",
-          "consequence": "The deterioration is not escalated.",
+          "consequence": "Routine reassurance could delay urgent review of deteriorating perfusion.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6"
@@ -250,8 +270,8 @@
     },
     {
       "position": 3,
-      "info": "Urgent help was called at the start, but the team has not yet arrived. The pressure is still low and the patient is now confused with cold, clammy skin.",
-      "prompt": "What should you do now?",
+      "info": "At the final shared checkpoint, the urgent response has been activated but the team is not yet at the bedside. Pressure remains low, skin is cold and clammy and the patient is newly confused. The previous call has not resolved the emergency.",
+      "prompt": "What should the bedside nurse do when severe perfusion concerns persist while awaiting help?",
       "observations": [
         {
           "key": "mental",
@@ -272,6 +292,16 @@
           "key": "team",
           "label": "Team",
           "value": "Not yet at the bedside"
+        },
+        {
+          "key": "urine",
+          "label": "Urine output",
+          "value": "Low at previous assessment"
+        },
+        {
+          "key": "response",
+          "label": "Emergency response",
+          "value": "Re-escalate through local chain"
         }
       ],
       "options": [
@@ -281,7 +311,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Ongoing confusion, poor perfusion and hypotension after a previous urgent call need repeated escalation and continuous reassessment, not silence or waiting for a routine review.",
-          "consequence": "The urgency is re-communicated and the responsible team attends to determine the cause and next intervention.",
+          "consequence": "Repeated escalation through the emergency chain and ongoing reassessment may shorten delay to appropriate treatment.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6",
@@ -294,7 +324,7 @@
           "next": null,
           "scope": "monitoring",
           "feedback": "Monitoring continues, but waiting to escalate a patient with signs of impending shock delays emergency care.",
-          "consequence": "The delay in treatment worsens the patient's condition.",
+          "consequence": "Repeated pressure checks alone could delay escalation while organ perfusion worsens.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6"
@@ -306,7 +336,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "The patient should not be left alone, and positioning should follow the clinical situation and policy; escalate while staying with the patient.",
-          "consequence": "The patient is unobserved and becomes worse.",
+          "consequence": "Leaving the patient could interrupt observation and immediate support during deterioration.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6"

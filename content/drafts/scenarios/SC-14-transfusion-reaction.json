@@ -78,8 +78,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "Twenty minutes into a transfusion the patient develops a fever and shivering.",
-      "prompt": "What is the right first response?",
+      "info": "Twenty minutes into a transfusion, an adult develops fever and shivering. The component is still infusing. The patient was not shivering at the previous check; the cause of the new symptoms and the current circulatory status are not yet established.",
+      "prompt": "Which immediate response best addresses a suspected serious transfusion reaction while preserving the component for investigation?",
       "observations": [
         {
           "key": "temperature",
@@ -96,6 +96,16 @@
           "key": "transfusion",
           "label": "Transfusion",
           "value": "Running"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Urgent reassessment required"
+        },
+        {
+          "key": "identity",
+          "label": "Patient and component identity",
+          "value": "Recheck under reaction pathway"
         }
       ],
       "options": [
@@ -105,7 +115,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment. For suspected serious reactions do not restart the implicated component. For other reactions any resumption requires a satisfactory specialist/team assessment and local protocol; never restart independently. Activate emergency response immediately for compromised airway, breathing or circulation. Fever with rigors can represent a serious reaction, including bacterial contamination or acute haemolysis. Do not presume a benign febrile reaction or restart the component; obtain urgent clinical and transfusion-service assessment. BSH 2023 severe-reaction guidance supports disconnecting and retaining the implicated set and component while maintaining venous access with suitable separate saline equipment according to the local transfusion pathway. This case concerns suspected serious reaction, not hemorrhage-associated hypotension in which interruption decisions require immediate expert assessment.",
-          "consequence": "Transfusion is stopped; the patient and IV access are assessed, the team is notified, and the blood product and set are retained according to the reaction protocol.",
+          "consequence": "Stopping the implicated component, assessing the patient and notifying the team may limit further exposure and support urgent investigation.",
           "support": "partial",
           "sources": [
             "S-ISBT-ATR-EDU",
@@ -120,7 +130,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Slowing the transfusion is unsafe when a reaction may be developing; stop it while the patient is assessed and the clinical/transfusion team is notified.",
-          "consequence": "The patient's condition worsens while the transfusion continues.",
+          "consequence": "Slowing instead of stopping could prolong exposure during a serious reaction.",
           "support": "partial",
           "sources": [
             "S-AABB-COI-2024"
@@ -132,7 +142,7 @@
           "next": 2,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Medicines need an order, and the transfusion should be stopped first.",
-          "consequence": "The reaction is masked and the transfusion service is not told.",
+          "consequence": "Treating fever while continuing the component could delay recognition of a serious reaction.",
           "support": "partial",
           "sources": [
             "S-AABB-COI-2024"
@@ -142,8 +152,8 @@
     },
     {
       "position": 2,
-      "info": "The doctor arrives. The transfusion is stopped, but the patient has ongoing rigors and the blood pressure is falling.",
-      "prompt": "What do you say and record?",
+      "info": "At the final shared checkpoint, the implicated transfusion is stopped and the clinician is present. Rigors continue, temperature has risen from the earlier reading and blood pressure is falling. Laboratory investigation is not yet complete; venous access has been maintained.",
+      "prompt": "What is the priority when circulation worsens after the component has been stopped?",
       "observations": [
         {
           "key": "temperature",
@@ -165,6 +175,21 @@
           "key": "bp",
           "label": "Blood pressure",
           "value": "Falling from baseline"
+        },
+        {
+          "key": "rigors",
+          "label": "Patient",
+          "value": "Rigors persist"
+        },
+        {
+          "key": "investigation",
+          "label": "Transfusion-service investigation",
+          "value": "Coordinate ordered tests; do not wait for results"
+        },
+        {
+          "key": "component",
+          "label": "Implicated component and set",
+          "value": "Retain as directed; do not restart"
         }
       ],
       "options": [
@@ -174,7 +199,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Fever, rigors and circulatory deterioration can indicate a severe acute transfusion reaction, including bacterial contamination or acute haemolysis. Do not restart. Activate emergency support and coordinate the clinician-directed work-up, including cultures or haemolysis investigations if ordered. Do not delay resuscitation to complete paperwork. BSH emphasizes that emergency management is guided by clinical severity and must not wait for laboratory results. For severe dyspnea, the team assesses potential anaphylaxis, pulmonary edema and transfusion-associated lung injury; respiratory symptoms alone do not establish TACO or TRALI. TACO may become apparent during transfusion or up to 12 hours afterwards; TRALI typically develops during transfusion or within six hours of completion. These are recognition windows, not a reason to dismiss later deterioration. Do not assume fluid overload or give a diuretic reflexively. Suspected anaphylaxis requires emergency help and prompt intramuscular adrenaline (epinephrine) through the authorised anaphylaxis pathway; do not delay urgent treatment for investigations.",
-          "consequence": "Emergency support and the blood-bank investigation proceed with a clear clinical timeline and the implicated component available as directed.",
+          "consequence": "Emergency support and a clear clinical timeline may allow investigation of serious causes without delaying resuscitation.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
@@ -189,7 +214,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "An incomplete account loses the timeline of the reaction.",
-          "consequence": "The timeline is unclear and the investigation is harder.",
+          "consequence": "An incomplete report could obscure the sequence and severity of the reaction.",
           "support": "partial",
           "sources": [
             "S-NICE-NG24"
@@ -201,7 +226,7 @@
           "next": null,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Recognize and report possible serious causes, but diagnosis and treatment selection require the responsible team; do not delay emergency support.",
-          "consequence": "The conversation turns to disagreement and the timeline is not recorded.",
+          "consequence": "Prematurely assigning a reaction type could delay urgent assessment and appropriate treatment.",
           "support": "partial",
           "sources": [
             "S-LIFEBLOOD-ATR"

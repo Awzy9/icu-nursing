@@ -12600,6 +12600,20 @@
     "gaps": 4,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "730039eb50ae37a3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-ALS-2025",
+     "S-AHA-BLS-2025",
+     "S-ERC-ALS-2025",
+     "S-RCUK-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-14": [
@@ -12751,6 +12765,22 @@
     "gaps": 6,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "00c9685937386293",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -12837,6 +12867,21 @@
    },
    {
     "hash": "56a0b7080b55c6fb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "9932e897726c6bfc",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -12972,6 +13017,27 @@
    },
    {
     "hash": "c7df29af5cf2bdad",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-BP-DISCORDANCE-2025",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-EVERDAC-2025",
+     "S-NIBP-META-2023",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "10cdf4870fe87db9",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
