@@ -10285,6 +10285,22 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "c52b09d61304e3c6",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-NICE-NG217",
+     "S-ACNS-CCEEG-2015",
+     "S-AHRQ-TS",
+     "S-CDC-SEIZURE-2024",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-09": [

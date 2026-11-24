@@ -1517,8 +1517,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-BSH-HIT-2023",
@@ -1682,8 +1682,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "N-BTS-PCS-2023",
@@ -2047,8 +2047,8 @@
     },
     {
      "id": "S-BTS-O2-2017",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-16"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ERC-ALS-2025",
@@ -2362,8 +2362,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "N-BAXTER-PRISMAFLEX",
@@ -4627,8 +4627,8 @@
     },
     {
      "id": "S-BTS-O2-2017",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-16"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-FDA-OXIMETER-BASICS",
@@ -4846,11 +4846,6 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-JBDS-HYPO-2020",
-     "licence_class": "YELLOW",
-     "verified": null
-    },
-    {
      "id": "N-NICE-NG217",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -4869,12 +4864,17 @@
      "id": "S-CDC-SEIZURE-2024",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-JBDS-HYPO-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "b5ca8172046b6c26"
+   "hash": "c52b09d61304e3c6"
   },
   {
    "key": "SC-09",
@@ -5142,8 +5142,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AHRQ-TS",
@@ -5587,8 +5587,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-KDIGO-AKI-2012",

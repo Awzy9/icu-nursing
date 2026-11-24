@@ -82,6 +82,23 @@ describe("draft index (metadata only)", () => {
       expect(hasSourceGap(e)).toBe(true);
     }
   });
+  it("tracks oxygen and CRRT source restrictions and the revised seizure reference", () => {
+    for (const id of ["N-AHS-CRRT-ALARM-2025", "S-BTS-O2-2017"]) {
+      const entries = onDisk.entries.filter(e => e.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const e of entries) {
+        expect(e.sources.find(s => s.id === id)).toEqual({ id, licence_class: "RED", verified: "2026-11-24" });
+        expect(needsRightsCheck(e)).toBe(true);
+        expect(e.clinically_reviewed).toBe(false);
+      }
+    }
+    const seizure = onDisk.entries.find(e => e.key === "SC-08")!;
+    expect(seizure.sources.map(s => s.id)).toContain("S-JBDS-HYPO-2023");
+    expect(seizure.sources.map(s => s.id)).not.toContain("N-JBDS-HYPO-2020");
+    expect(seizure.required_sources).toBe(2);
+    expect(hasSourceGap(seizure)).toBe(true);
+    expect(seizure.clinically_reviewed).toBe(false);
+  });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);
   });

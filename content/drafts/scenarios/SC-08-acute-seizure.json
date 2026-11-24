@@ -38,9 +38,9 @@
       "use": "FDA lorazepam label: respiratory depression, concomitant opioids"
     },
     {
-      "id": "N-JBDS-HYPO-2020",
+      "id": "S-JBDS-HYPO-2023",
       "read": "partial",
-      "use": "JBDS: hypoglycaemia is an emergency and must be excluded in anyone with seizures"
+      "use": "JBDS 01 January 2023, management introduction and selected severe hypoglycaemia algorithm: adults with diabetes in hospital; assess glucose promptly when safe, do not delay emergency care. Cite only; not an ICU seizure guideline."
     },
     {
       "id": "S-AHRQ-TS",
@@ -71,7 +71,8 @@
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-    "NICE: Notice of rights not read; paraphrase only."
+    "NICE: Notice of rights not read; paraphrase only.",
+    "JBDS 2023: CC BY-NC 4.0; commercial reuse not authorised; no algorithm reproduced."
   ],
   "setting": "A fictional adult on a fictional ward whose convulsive seizure has not stopped.",
   "steps": [
@@ -108,7 +109,7 @@
           "sources": [
             "N-NICE-NG217",
             "S-AHRQ-TS",
-            "N-JBDS-HYPO-2020",
+            "S-JBDS-HYPO-2023",
             "S-CDC-SEIZURE-2024"
           ]
         },
@@ -231,7 +232,7 @@
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
-            "N-JBDS-HYPO-2020",
+            "S-JBDS-HYPO-2023",
             "L-LORAZEPAM",
             "S-ACNS-CCEEG-2015"
           ]
