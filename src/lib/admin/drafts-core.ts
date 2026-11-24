@@ -29,7 +29,40 @@ export function worstLicence(e: IndexEntry): string {
   return "NONE";
 }
 
-export interface Filter { type?: string; evidence?: string; validation?: string; licence?: string; freshness?: string; notes?: string; q?: string }
+/** A staff workflow *triage aid*, not an automated clinical risk score or approval. */
+export type ReviewLane = "patient-safety" | "source-verification" | "rights-review" | "general";
+const PATIENT_SAFETY_KEYS = new Set([
+  "D01-T06", "D01-T07", "D01-T09", "D01-T11", "D01-T17",
+  "D02-T08", "D02-T09", "D02-T12", "D02-T14",
+  "D04-T06", "D04-T08", "D04-T09", "D08-T02", "D08-T03",
+  "SK-06", "SK-07", "SK-09", "SK-13", "SK-17", "SK-22", "SK-23",
+  "MD-01", "MD-02", "MD-18", "MD-19", "MD-20", "MD-30", "MD-31", "MD-44",
+]);
+export const REVIEW_LANES: { key: ReviewLane; label: string }[] = [
+  { key: "patient-safety", label: "Clinical priority (suggested)" },
+  { key: "source-verification", label: "Missing or unverified sources" },
+  { key: "rights-review", label: "Restricted source reuse" },
+  { key: "general", label: "Other outstanding reviews" },
+];
+export function reviewLane(e: IndexEntry): ReviewLane {
+  // Decision-graph answers affect clinical teaching, so every scenario is prioritised
+  // along with explicitly named airway, shock, high-alert and rescue modules.
+  if (e.type === "cases" || PATIENT_SAFETY_KEYS.has(e.key)) return "patient-safety";
+  if (!e.sources.length || e.sources.some((s) => ["UNVERIFIED", "UNREGISTERED"].includes(s.licence_class))) return "source-verification";
+  if (e.sources.some((s) => s.licence_class === "RED")) return "rights-review";
+  return "general";
+}
+const LANE_ORDER: ReviewLane[] = ["patient-safety", "source-verification", "rights-review", "general"];
+export function orderReviewQueue(entries: IndexEntry[]): IndexEntry[] {
+  // Highest declared gap count first *within* each staff workflow lane.
+  // Validation success and this sorting never imply clinical or licensing approval.
+  return [...entries].sort((a, b) =>
+    LANE_ORDER.indexOf(reviewLane(a)) - LANE_ORDER.indexOf(reviewLane(b)) ||
+    b.gaps - a.gaps ||
+    a.key.localeCompare(b.key));
+}
+
+export interface Filter { type?: string; evidence?: string; validation?: string; licence?: string; freshness?: string; notes?: string; review?: string; q?: string }
 export function filterDrafts(entries: IndexEntry[], f: Filter, today: Date, withNotes: Set<string> = new Set()): IndexEntry[] {
   const q = (f.q ?? "").trim().toLowerCase().slice(0, 80);
   return entries.filter((e) =>
@@ -39,6 +72,7 @@ export function filterDrafts(entries: IndexEntry[], f: Filter, today: Date, with
     (!f.licence || worstLicence(e) === f.licence) &&
     (!f.freshness || draftFreshness(e, today) === f.freshness) &&
     (!f.notes || (f.notes === "with" ? withNotes.has(e.key) : !withNotes.has(e.key))) &&
+    (!f.review || reviewLane(e) === f.review) &&
     (!q || e.key.toLowerCase().includes(q) || e.title.toLowerCase().includes(q)));
 }
 
