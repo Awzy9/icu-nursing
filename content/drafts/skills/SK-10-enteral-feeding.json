@@ -137,6 +137,13 @@
           "sources": [
             "S-NICE-CG32"
           ]
+        },
+        {
+          "text": "Early enteral feeding is not appropriate in uncontrolled shock or suspected bowel ischaemia or obstruction. Escalate worsening perfusion, new abdominal distension or pain, or gastrointestinal bleeding; seek urgent review and withhold feeding under the applicable safety protocol when a serious contraindication is suspected.",
+          "support": "partial",
+          "sources": [
+            "S-ESICM-EEN-2017"
+          ]
         }
       ]
     },
@@ -237,6 +244,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "assessment",
+      "text": "Early enteral feeding is not appropriate in uncontrolled shock or suspected bowel ischaemia or obstruction. Escalate worsening perfusion, new abdominal distension or pain, or gastrointestinal bleeding; seek urgent review and withhold feeding under the applicable safety protocol when a serious contraindication is suspected.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ESICM-EEN-2017"
+      ]
     }
   ],
   "gaps": [

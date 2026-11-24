@@ -90,6 +90,13 @@
           "sources": [
             "S-AARC-SUCT"
           ]
+        },
+        {
+          "text": "For adults, the AARC 2022 recommendation specifies a suction catheter occupying less than half the endotracheal tube lumen and limiting negative pressure. Verify sizing and pressure against the actual tube, equipment and local protocol; a maximum permitted suction pressure is not a routine target.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-SUCT"
+          ]
         }
       ]
     },
@@ -126,7 +133,7 @@
       "support": "local_protocol",
       "items": [
         {
-          "text": "Suction system, catheter size and suction pressure follow the unit's policy; the catheter-size ratio is inconsistent within the guideline.",
+          "text": "Choose catheter size and suction pressure using the unit's procedure and device specifications. The adult AARC recommendation is summarized under safety; do not generalize it to neonatal or paediatric airways.",
           "support": "local_protocol",
           "sources": []
         }
@@ -281,11 +288,20 @@
         "S-AARC-SUCT",
         "N-NHSGGC-TRACH-2022"
       ]
+    },
+    {
+      "phase": "preparation",
+      "text": "For adults, the AARC 2022 recommendation specifies a suction catheter occupying less than half the endotracheal tube lumen and limiting negative pressure. Verify sizing and pressure against the actual tube, equipment and local protocol; a maximum permitted suction pressure is not a routine target.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AARC-SUCT"
+      ]
     }
   ],
   "gaps": [
     "Adult as-needed frequency: no adult study found.",
-    "Catheter-size ratio and suction pressure: inconsistent or unspecified.",
+    "Adult catheter sizing recommendation inspected again; full-text differences in reported sizing and pressure need reconciliation before teaching exact equipment settings. Device-specific selection remains local.",
     "Suctioning in raised ICP: not covered. Tracheostomy suctioning rests on one local NHS board guideline (see SK-05)."
   ],
   "permissions": [

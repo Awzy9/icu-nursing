@@ -43,6 +43,11 @@
       "id": "S-BTS-O2-2017",
       "read": "partial",
       "use": "BTS/ICS 2017 emergency oxygen guideline: only the December 2019 update-decision page read (target saturation ranges, reaffirmed after the 2018 IOTA meta-analysis); the full 2017 Thorax supplement itself is paywalled and was not read"
+    },
+    {
+      "id": "S-FDA-OXIMETER-BASICS",
+      "read": "partial",
+      "use": "Selected public HTML accuracy and pigmentation limitations"
     }
   ],
   "objectives": [
@@ -142,6 +147,13 @@
           "support": "sourced",
           "sources": [
             "S-OPENRN-FUND-CH8"
+          ]
+        },
+        {
+          "text": "Pulse oximetry can be inaccurate with poor peripheral perfusion, skin pigmentation differences, cold skin or nail coatings. Assess the patient and signal quality; seek an alternative measurement or clinician-directed blood gas when results conflict with the clinical picture. Do not delay emergency care for suspected hypoxaemia.",
+          "support": "partial",
+          "sources": [
+            "S-FDA-OXIMETER-BASICS"
           ]
         }
       ]
@@ -265,6 +277,15 @@
       "sources": [
         "S-ERC-ALS-2025"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Pulse oximetry can be inaccurate with poor peripheral perfusion, skin pigmentation differences, cold skin or nail coatings. Assess the patient and signal quality; seek an alternative measurement or clinician-directed blood gas when results conflict with the clinical picture. Do not delay emergency care for suspected hypoxaemia.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-OXIMETER-BASICS"
+      ]
     }
   ],
   "gaps": [
@@ -342,6 +363,17 @@
       "accessed": "2026-11-16",
       "read": "partial",
       "licence_class": "YELLOW (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-FDA-OXIMETER-BASICS",
+      "title": "Pulse Oximeter Basics",
+      "publisher": "US Food and Drug Administration",
+      "version": "Public consumer update; January 2025 draft guidance noted",
+      "url": "https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "YELLOW",
       "permission_required": "Verify"
     }
   ]

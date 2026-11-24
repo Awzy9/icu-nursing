@@ -3130,6 +3130,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "ddfea4d5a65a0ac1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NHSGGC-TRACH-2022",
+     "S-AARC-SUCT",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-07": [
@@ -3150,6 +3163,21 @@
    },
    {
     "hash": "b8c652b2750880b9",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-ESICM-ARDS-2023",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ec1f7cd3c699e485",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -3225,6 +3253,23 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "02fe1ac8ac61fe8a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AARC-PVA",
+     "S-BTS-O2-2017",
+     "S-ERC-ALS-2025",
+     "S-FDA-OXIMETER-BASICS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-09": [
@@ -3274,6 +3319,23 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "46b319ba16cb2d64",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-BSH-ATR",
+     "S-FDA-COI-2024",
+     "S-ISBT-ATR-EDU",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-10": [
@@ -3309,6 +3371,21 @@
    },
    {
     "hash": "de64efbaabb29256",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ASPEN",
+     "S-ESICM-EEN-2017",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "6abafdee8d0b6ac5",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

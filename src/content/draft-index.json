@@ -1804,7 +1804,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "99f0c09c57a24698"
+   "hash": "ddfea4d5a65a0ac1"
   },
   {
    "key": "SK-07",
@@ -1844,7 +1844,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "b8c652b2750880b9"
+   "hash": "ec1f7cd3c699e485"
   },
   {
    "key": "SK-08",
@@ -1876,6 +1876,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND-CH8",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -1889,7 +1894,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e77042dc98b62a8c"
+   "hash": "02fe1ac8ac61fe8a"
   },
   {
    "key": "SK-09",
@@ -1921,6 +1926,11 @@
      "verified": null
     },
     {
+     "id": "S-LIFEBLOOD-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-NG24",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -1934,7 +1944,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "8b0f6a1bdc0b489c"
+   "hash": "46b319ba16cb2d64"
   },
   {
    "key": "SK-10",
@@ -1974,7 +1984,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "de64efbaabb29256"
+   "hash": "6abafdee8d0b6ac5"
   },
   {
    "key": "SK-11",

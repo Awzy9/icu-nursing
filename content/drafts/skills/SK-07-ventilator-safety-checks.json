@@ -99,6 +99,13 @@
           "sources": [
             "S-AARC-PVA"
           ]
+        },
+        {
+          "text": "Record tidal volume in relation to predicted body weight with the responsible respiratory team; assess plateau pressure, total and intrinsic PEEP as appropriate, and review driving pressure when clinically relevant. Direct bedside assessment remains preferred when resources allow; remote data alone do not establish adequate ventilation.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
         }
       ]
     },
@@ -234,6 +241,15 @@
     {
       "phase": "assessment",
       "text": "Review actual delivered tidal volume, pressure and PEEP trends, oxygenation, humidification and patient synchrony with the respiratory team; do not independently change settings outside the authorised plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Record tidal volume in relation to predicted body weight with the responsible respiratory team; assess plateau pressure, total and intrinsic PEEP as appropriate, and review driving pressure when clinically relevant. Direct bedside assessment remains preferred when resources allow; remote data alone do not establish adequate ventilation.",
       "critical": true,
       "support": "partial",
       "sources": [

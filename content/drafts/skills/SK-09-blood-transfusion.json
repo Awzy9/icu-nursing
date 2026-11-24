@@ -43,6 +43,11 @@
       "id": "S-ISBT-ATR-EDU",
       "read": "partial",
       "use": "ISBT educational module: first-response and documentation text read 2026-11-23 (not the figures or a formal guideline); independently paraphrased, local policy controls"
+    },
+    {
+      "id": "S-LIFEBLOOD-ATR",
+      "read": "partial",
+      "use": "Public HTML sections on acute dyspnoea, TACO, TRALI and severe reactions"
     }
   ],
   "objectives": [
@@ -190,6 +195,13 @@
           "sources": [
             "S-ISBT-ATR-EDU"
           ]
+        },
+        {
+          "text": "New breathlessness during or after transfusion requires urgent assessment for several possible causes, including TACO, TRALI, anaphylaxis, haemolysis and bacterial contamination. If still running, stop the transfusion; activate emergency help for severe features. Do not give a diuretic reflexively or restart a seriously implicated component.",
+          "support": "partial",
+          "sources": [
+            "S-LIFEBLOOD-ATR"
+          ]
         }
       ]
     },
@@ -297,12 +309,21 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "escalation",
+      "text": "New breathlessness during or after transfusion requires urgent assessment for several possible causes, including TACO, TRALI, anaphylaxis, haemolysis and bacterial contamination. If still running, stop the transfusion; activate emergency help for severe features. Do not give a diuretic reflexively or restart a seriously implicated component.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-LIFEBLOOD-ATR"
+      ]
     }
   ],
   "gaps": [
     "First-line actions after a reaction: BSH guideline not accessed.",
     "Component-specific details: only general sections read.",
-    "Non-US jurisdictions: UK, European and other national guidance not read."
+    "Australian Lifeblood selected reaction guidance now inspected; jurisdiction-specific transfusion policies, complete component guidance and UK BSH source still require review."
   ],
   "permissions": [
     "AABB Circular: reproduction permission required.",
@@ -375,6 +396,17 @@
       "read": "partial",
       "licence_class": "YELLOW (reuse not verified)",
       "permission_required": "Verify before reproduction"
+    },
+    {
+      "id": "S-LIFEBLOOD-ATR",
+      "title": "Management of suspected reactions",
+      "publisher": "Australian Red Cross Lifeblood",
+      "version": "Current public guide; exact revision not established",
+      "url": "https://www.lifeblood.com.au/health-professionals/clinical-practice/adverse-events/management-of-suspected-reactions",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }
