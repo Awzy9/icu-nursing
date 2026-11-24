@@ -54,6 +54,11 @@
       "id": "S-AARC-MV-SAFETY",
       "read": "partial",
       "use": "AARC issue paper, alarm management and backup ventilation sections: individualized settings, manufacturer-specific competence, communication"
+    },
+    {
+      "id": "S-JC-ALARM",
+      "read": "partial",
+      "use": "Joint Commission 2026 hospital National Performance Goal NPG.01.05.01 EP 2, printed page 3 visually checked: settings, operation, detectability and authority. US institutional standard, not an operating manual."
     }
   ],
   "required_sources": [
@@ -248,13 +253,14 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "AARC 2024 supports direct bedside assessment and review of delivered tidal volume, plateau pressure and PEEP, including intrinsic PEEP when relevant. Check recovery with the trained team rather than treating the absence of an alarm as proof of adequate ventilation. Document and hand over the event. Confirm that alarm limits remain appropriate for the patient's prescribed support, and record changes and response with the team.",
+          "feedback": "AARC 2024 supports direct bedside assessment and review of delivered tidal volume, plateau pressure and PEEP, including intrinsic PEEP when relevant. Check recovery with the trained team rather than treating the absence of an alarm as proof of adequate ventilation. Document and hand over the event. Confirm that alarm limits remain appropriate for the patient's prescribed support, and record changes and response with the team. Once effective ventilation is restored, confirm that required alarms are active, detectable and functioning as intended under the approved local policy. Document any temporary alarm changes and reconcile them with the authorized operator. Recurrent unexplained alarms or suspected malfunction require review by the respiratory and equipment teams.",
           "consequence": "A documented recovery assessment and monitoring plan may help the next team recognize recurrence and verify prescribed support.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
             "S-AARC-PVA",
-            "S-AARC-MV-SAFETY"
+            "S-AARC-MV-SAFETY",
+            "S-JC-ALARM"
           ]
         },
         {
@@ -289,7 +295,8 @@
       "Every alarm is answered at the patient first.",
       "If ventilation is inadequate and not rapidly correctable, call for skilled help and secure effective alternative ventilation as trained and directed by the local emergency pathway.",
       "Do not silence alarms as a response or change limits and modes without authority.",
-      "After rescue, verify effective ventilation and review delivered volumes, airway pressures and PEEP with the respiratory team; document and hand over the event."
+      "After rescue, verify effective ventilation and review delivered volumes, airway pressures and PEEP with the respiratory team; document and hand over the event.",
+      "Recovery requires both adequate patient ventilation and functioning alarm protection; hand over unresolved equipment concerns and the person responsible for follow-up."
     ],
     "links": [
       {
