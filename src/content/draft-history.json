@@ -1404,6 +1404,25 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "41d3de385a742819",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D05-T16": [
@@ -1910,6 +1929,21 @@
    {
     "hash": "345d53b1c877576b",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-OPENRN-PHARM-CH",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "3deb4ce4626ea0a8",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-FDA-LABELS-2026",

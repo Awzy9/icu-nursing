@@ -1,0 +1,7 @@
+# P1 correction implementation — batch eleven
+
+24 November 2026. Last two core topics in the targeted correction queue amended (D02-T12 and D05-T01). Twelve answer keys preserved, two regression cases added, original hashes verified, index and history synchronized. Corrected contradictory source-limit wording and aligned emergency response with previous medication and equipment drafts.
+
+Selected public source statements checked: https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 (perfusion and peripheral access limits); https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (pump safety); https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76ae0147-53ad-4192-a400-c5d1760123d0 (propofol infusion syndrome and lipid monitoring); https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a3e2fbad-d850-4bac-9a45-dc1e75e37cab (lorazepam vehicle toxicity). These comparator label checks do not replace exact registered formulation review; no new source IDs or clinical approval claimed.
+
+All 40 core drafts have now had targeted corrections during the implementation phase. The 166-draft audit is not comprehensive clinical validation. Remaining work: reconcile individual findings, verify outstanding evidence and rights, complete CI and independent clinical/pharmacist review; no production deployment.

@@ -58,7 +58,7 @@ Sedatives can cause respiratory depression, hypotension and prolonged sedation, 
 - Document drug, rate, targets, sedation scores, respiratory status, interventions and escalations.
 
 ## 8. Monitoring parameters
-Sedation depth by unit scale; respiratory rate, pattern and effort; SpO₂ and end-tidal CO₂ if available; airway patency; blood pressure and heart rate; delirium screen; pain score; pump settings and alarms; daily sedation interruption or wake-up trial results as protocolised; blood glucose and triglycerides are not covered by the sources read.
+Sedation depth by unit scale; respiratory rate, pattern and effort; SpO₂ and end-tidal CO₂ if available; airway patency; blood pressure and heart rate; delirium screen; pain score; pump settings and alarms; daily sedation interruption or wake-up trial results as protocolised; review ordered triglycerides during prolonged propofol exposure or lipid-clearance concerns, along with relevant metabolic, renal and muscle-injury results when toxicity is suspected. Glucose monitoring follows the patient's indications and local policy; no universal interval is specified here.
 
 ## 9. Important findings – what the sources state
 | Item | Statement (paraphrased) | Source | Strength; certainty |
@@ -85,7 +85,7 @@ Slow or shallow breathing, falling oxygen saturation or rising CO₂; unrousable
 | Choose the sedative, dose and target; decide to use a reversal agent; change the strategy | Prescriber decision (pharmacist for drug and concentration review) |
 
 ## 12. Escalation criteria
-Escalate for inadequate breathing, oversedation, haemodynamic instability, agitation that the protocol does not control, pump or infusion problems, or any suspected error.
+Activate emergency response for inadequate ventilation, unexpected unresponsiveness with physiological compromise, severe hypotension or dangerous arrhythmia. Support the airway and ventilation within the authorised emergency pathway; do not rely on oxygen saturation alone to exclude hypoventilation. Report unexpected sedation, persistent agitation, withdrawal concerns, pump faults or suspected errors promptly. With propofol, urgently escalate unexplained metabolic acidosis, rising potassium, muscle injury or cardiovascular deterioration as possible infusion syndrome; the team must assess and act promptly rather than wait for every feature. With lorazepam injection, unexplained lactic acidosis, hyperosmolality, hypotension or renal deterioration may suggest vehicle toxicity, particularly with prolonged or excessive exposure and renal impairment; seek urgent medical and pharmacy review (see MD-37). Verify analgesia and sedation when paralysis makes behavioural scores unassessable. Drug interruption, reversal and replacement decisions follow the emergency protocol and qualified clinical assessment.
 SBAR — **S:** bed X, ventilated patient oversedated compared with the target, with a falling blood pressure. **B:** on a sedative infusion and an opioid for 12 hours. **A:** oversedation with hypotension. **R:** please review now; I need an order to reduce or pause the sedation and assess the cause.
 
 ## 13. Potential complications
