@@ -54,7 +54,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "503b6bf12dfce39c"
+   "hash": "1647b6979a098472"
   },
   {
    "key": "D06-T05",
@@ -84,7 +84,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "ddc9fdee8accf314"
+   "hash": "6b3825d9b1d740ef"
   },
   {
    "key": "D07-T04",
@@ -514,7 +514,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "5cae42b14df889bb"
+   "hash": "854723a39b4e0523"
   },
   {
    "key": "D07-T06",
@@ -5126,6 +5126,11 @@
      "verified": "2026-11-24"
     },
     {
+     "id": "S-ICS-SE-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-JBDS-HYPO-2023",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -5134,7 +5139,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "5484fc6a15f32f27"
+   "hash": "c8e06d608645c5aa"
   },
   {
    "key": "SC-09",
