@@ -59,6 +59,13 @@ describe("draft index (metadata only)", () => {
     const infection = onDisk.entries.find(e => e.key === "SK-21")!;
     expect(infection.sources.find(s => s.id === "S-CDC-ISOLATION-2007")?.verified).toBe("2026-11-24");
     expect(hasSourceGap(infection)).toBe(true); // WHO healthcare guideline remains unread
+    expect(infection.sources.find(s => s.id === "S-WHO-HH-2009")).toEqual({id:"S-WHO-HH-2009",licence_class:"RED",verified:null});
+    for (const key of ["D04-T06","MD-19"]) {
+      const record = onDisk.entries.find(e => e.key === key)!;
+      expect(record.sources.find(s => s.id === "S-NHS-SPS-HYPO-2024")).toEqual({id:"S-NHS-SPS-HYPO-2024",licence_class:"RED",verified:"2026-11-24"});
+      expect(needsRightsCheck(record)).toBe(true);
+      expect(record.clinically_reviewed).toBe(false);
+    }
     expect(needsRightsCheck(infection)).toBe(true);
     for (const key of ["SK-02", "SK-03"]) {
       const x = onDisk.entries.find(e => e.key === key)!;

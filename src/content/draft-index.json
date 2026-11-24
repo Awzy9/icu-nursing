@@ -1202,8 +1202,8 @@
    "sources": [
     {
      "id": "S-NHS-SPS-HYPO-2024",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-OPENRN-FUND-CH15",
@@ -2712,8 +2712,8 @@
     },
     {
      "id": "S-WHO-HH-2009",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-14"
+     "licence_class": "RED",
+     "verified": null
     }
    ],
    "issues": [],
@@ -3572,8 +3572,8 @@
     },
     {
      "id": "S-NHS-SPS-HYPO-2024",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NHS-SPS-MG",
