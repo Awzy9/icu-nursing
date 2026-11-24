@@ -2,7 +2,7 @@
 // on sign-in (so progress made on another device appears here too). Kept separate from the React
 // hook (hooks/useProgressSync.ts) so it is unit-testable without React or a Supabase client.
 import type { BookmarkKind, Progress, SessionRecord } from "./progress";
-import type { AttemptRow, BookmarkRow, LessonRow, SessionRow } from "@icu/schemas/working-progress";
+import { scenarioDecisionHistorySchema, type AttemptRow, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
 
 /** Resolves each remote bookmark row's module_key to a local "kind:key" string via a key->kind lookup (built from the catalog). Rows for an unknown key are dropped rather than guessed. */
 export function mergeRemoteBookmarks(local: Progress, remote: BookmarkRow[], kindOf: Map<string, BookmarkKind>): Progress {
@@ -34,6 +34,12 @@ export function mergeRemoteSessions(local: Progress, remote: SessionRow[]): Prog
       continue;
     }
     const record: SessionRecord = { kind: row.kind, version: row.version, position: row.position, score: row.score, finished: row.finished, at: row.updated_at };
+    // The winning row owns its history. Never combine choices from different attempts,
+    // even if their positions and cumulative scores happen to match.
+    if (row.kind === "scenario") {
+      const parsed = scenarioDecisionHistorySchema.safeParse(row.decisions);
+      if (parsed.success) record.decisions = parsed.data;
+    }
     sessions = { ...sessions, [row.module_key]: record };
     changed = true;
   }

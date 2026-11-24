@@ -33,6 +33,15 @@ describe("mergeRemoteSessions", () => {
     const newer = mergeRemoteSessions(local, [{ module_key: "SC-10", kind: "scenario", version: "v1", position: 3, score: 4, finished: false, updated_at: "2026-01-01T00:00:10.000Z" }]);
     expect(newer.sessions["SC-10"]!.position).toBe(3); // remote, newer, wins
   });
+  it("keeps only the winning scenario row's individual choices", () => {
+    const local = { ...emptyProgress(), sessions: { "SC-10": { kind: "scenario" as const, version: "sc2-example", position: 2, score: 2, finished: false, at: "2026-01-01T00:00:05.000Z", decisions: [{position:1,choice:0}] } } };
+    const remote = { module_key: "SC-10", kind: "scenario" as const, version: "sc2-example", position: 2, score: 2, finished: false, updated_at: "2026-01-01T00:00:10.000Z", decisions: [{position:1,choice:1}] };
+    expect(mergeRemoteSessions(local,[remote]).sessions["SC-10"]?.decisions).toEqual(remote.decisions);
+    expect(mergeRemoteSessions(local,[{...remote,updated_at:"2026-01-01T00:00:01.000Z"}])).toBe(local);
+    expect(mergeRemoteSessions(local,[{...remote,decisions:null}]).sessions["SC-10"]?.decisions).toBeUndefined();
+    expect(mergeRemoteSessions(local,[{...remote,decisions:[{position:1,choice:4}]}]).sessions["SC-10"]?.decisions).toBeUndefined();
+    expect(mergeRemoteSessions(local,[{...remote,kind:"quiz"}]).sessions["SC-10"]?.decisions).toBeUndefined();
+  });
   it("never adopts a finished remote session - nothing to resume", () => {
     const merged = mergeRemoteSessions(emptyProgress(), [{ module_key: "SC-10", kind: "scenario", version: "v1", position: 3, score: 6, finished: true, updated_at: "2026-01-01T00:00:01.000Z" }]);
     expect(merged.sessions["SC-10"]).toBeUndefined();

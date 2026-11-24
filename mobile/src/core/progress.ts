@@ -4,6 +4,7 @@
 // additionally sent to the account-sync RPCs in ../api/rpc.ts, mirroring the web app's own
 // dual guest/account model (src/components/working/progress.tsx).
 import { z } from "zod";
+import { scenarioDecisionHistorySchema } from "@icu/schemas/working-progress";
 import { nextBox } from "./leitner";
 
 // Real catalog keys: topics D01-T19, skills SK-18, medications MD-15, cases SC-10,
@@ -26,7 +27,7 @@ const sessionRecordSchema = z.object({
   // Optional so previously saved v2 sessions and remote RPC rows still parse.
   visited: z.array(z.number().int().min(0)).max(100).optional(),
   // Optional local decision history; old sessions and remote rows remain readable.
-  decisions: z.array(z.object({ position: z.number().int().min(0), choice: z.number().int().min(0).max(3) })).max(100).optional().catch(undefined),
+  decisions: scenarioDecisionHistorySchema.optional().catch(undefined),
 });
 export type SessionRecord = z.infer<typeof sessionRecordSchema>;
 
