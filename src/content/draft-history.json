@@ -10459,6 +10459,26 @@
     "gaps": 8,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "676fd339ac321567",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-AOA-BLOOD-2025",
+     "S-ARUP-DIC",
+     "S-ISTH-DIC-2025",
+     "S-NBA-CRITICAL-BLEED-2025",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-10": [

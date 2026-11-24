@@ -842,8 +842,8 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
@@ -2657,8 +2657,8 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
@@ -2712,8 +2712,8 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
@@ -3797,8 +3797,8 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
@@ -3837,8 +3837,8 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
@@ -4916,6 +4916,11 @@
      "verified": "2026-11-21"
     },
     {
+     "id": "S-NBA-CRITICAL-BLEED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-ADV-CH3",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -4934,7 +4939,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "41042b12f2e81635"
+   "hash": "676fd339ac321567"
   },
   {
    "key": "SC-10",

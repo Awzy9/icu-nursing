@@ -77,6 +77,11 @@
       "id": "S-AOA-BLOOD-2025",
       "read": "partial",
       "use": "Indexed 2025 guidance excerpts on electrolyte abnormalities in major haemorrhage."
+    },
+    {
+      "id": "S-NBA-CRITICAL-BLEED-2025",
+      "read": "partial",
+      "use": "Australian National Blood Authority adult critical bleeding guideline v2.0 (4 September 2025), PDF p22 R2 and p2 licence inspected; monitoring domains during major haemorrhage, very low certainty evidence. Not a local blood-bank protocol."
     }
   ],
   "required_sources": [
@@ -90,14 +95,15 @@
     "No source read gives numeric thresholds for blood loss or urine output in this context; none are written.",
     "Fluids, blood products and reversal of anticoagulation are prescribed; the scenario does not say what to give.",
     "The tranexamic acid label read does not cover surgical bleeding and is not used.",
-    "Selected 2025 Association of Anaesthetists major-haemorrhage protocol and haemostatic resuscitation sections checked; this remains a recognition and escalation exercise, not a transfusion or surgical algorithm.",
+    "Selected 2025 Association of Anaesthetists major-haemorrhage protocol and haemostatic resuscitation sections checked; this remains a recognition and escalation exercise, not a transfusion or surgical algorithm. NBA v2.0 recommendation R2 inspected for monitoring domains; full evidence review and local sampling intervals remain outstanding.",
     "A 2025 ISTH updated DIC framework and 2026 follow-up review are checked at abstract level only; this surgical case does not teach formal scoring, DIC therapy, emergency transfusion component selection, massive-haemorrhage protocols or viscoelastic interpretation.",
     "2026-11-24 AI scoring check: removed partial credit for leaving an actively deteriorating postoperative bleeding patient unattended. This is an unvalidated educational scoring correction, not a clinical approval."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
     "OpenStax Medical-Surgical Nursing is non-commercial (CC BY-NC-SA); it is used only to cross-check and must be replaced or permitted before any release.",
-    "ISTH 2025 and ARUP reference-laboratory educational material are citation-only on a commercial platform; no diagrams or diagnostic scoring tables reproduced."
+    "ISTH 2025 and ARUP reference-laboratory educational material are citation-only on a commercial platform; no diagrams or diagnostic scoring tables reproduced.",
+    "NBA critical bleeding guideline v2.0: CC BY-NC-SA 4.0; commercial adaptation not authorised; no guideline tables or protocol template reproduced."
   ],
   "setting": "A fictional adult in a fictional intensive care unit six hours after abdominal surgery, receiving an anticoagulant for clot prevention.",
   "steps": [
@@ -271,7 +277,7 @@
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
-          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC. During major haemorrhage and transfusion, electrolyte abnormalities including hypocalcaemia and hyperkalaemia can require prompt clinician-directed treatment. Monitor ordered results and temperature, escalate abnormalities, and use the approved warming and major-haemorrhage pathway. Do not independently choose components or electrolyte replacement. Communicate whether bleeding is ongoing and whether resuscitation is effective. The responsible team coordinates definitive haemostasis and deactivates the major-haemorrhage pathway when appropriate, with the blood bank informed.",
+          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC. During major haemorrhage and transfusion, electrolyte abnormalities including hypocalcaemia and hyperkalaemia can require prompt clinician-directed treatment. Alongside bedside observations, trend ordered blood counts, clotting tests, acid–base status, ionized calcium and temperature during active major haemorrhage. Escalate worsening results and coordinate the approved warming and haemorrhage pathway; sampling intervals depend on the clinical situation and institutional protocol. Do not independently choose components or electrolyte replacement. Communicate whether bleeding is ongoing and whether resuscitation is effective. The responsible team coordinates definitive haemostasis and deactivates the major-haemorrhage pathway when appropriate, with the blood bank informed.",
           "consequence": "Emergency treatment and transfusion safety checks proceed under the team's direction while bleeding, perfusion and serial laboratory trends are handed over.",
           "support": "partial",
           "sources": [
@@ -280,7 +286,8 @@
             "S-AHRQ-TS",
             "S-ARUP-DIC",
             "S-ISTH-DIC-2025",
-            "S-AOA-BLOOD-2025"
+            "S-AOA-BLOOD-2025",
+            "S-NBA-CRITICAL-BLEED-2025"
           ]
         },
         {

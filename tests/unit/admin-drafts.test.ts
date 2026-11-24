@@ -99,6 +99,20 @@ describe("draft index (metadata only)", () => {
     expect(hasSourceGap(seizure)).toBe(true);
     expect(seizure.clinically_reviewed).toBe(false);
   });
+  it("keeps vasopressor and bleeding reference rights restricted after targeted review", () => {
+    for (const key of ["MD-01", "MD-02", "MD-30", "MD-31"]) {
+      const e = onDisk.entries.find(x => x.key === key)!;
+      expect(e.sources.find(s => s.id === "S-UIC-EXTRA-2026")).toEqual({ id: "S-UIC-EXTRA-2026", licence_class: "RED", verified: "2026-11-24" });
+      expect(hasSourceGap(e)).toBe(false);
+      expect(needsRightsCheck(e)).toBe(true);
+      expect(e.clinically_reviewed).toBe(false);
+    }
+    const bleed = onDisk.entries.find(x => x.key === "SC-09")!;
+    expect(bleed.sources.find(s => s.id === "S-NBA-CRITICAL-BLEED-2025")?.licence_class).toBe("RED");
+    expect(bleed.required_sources).toBe(3);
+    expect(hasSourceGap(bleed)).toBe(true);
+    expect(bleed.clinically_reviewed).toBe(false);
+  });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);
   });
