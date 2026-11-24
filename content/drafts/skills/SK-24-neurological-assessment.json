@@ -120,6 +120,13 @@
           "sources": [
             "S-OPENRN-HA-CVA"
           ]
+        },
+        {
+          "text": "For head-injury observation, include temperature, respiratory rate, heart rate, blood pressure and oxygen saturation in addition to the structured neurological observations. New or worsening neurological findings require urgent clinical reassessment; do not use a normal earlier assessment to dismiss subsequent change. Observation frequency and imaging decisions follow the diagnosis-specific plan.",
+          "support": "partial",
+          "sources": [
+            "S-NICE-NG232"
+          ]
         }
       ]
     },
@@ -223,6 +230,15 @@
     {
       "phase": "assessment",
       "text": "In patients being observed after head injury, record pupil size and response to light, limb movement and asymmetry, consciousness components and vital signs. A new unequal pupil, new focal weakness or worsening consciousness requires urgent clinical reassessment. Apply the observation schedule and escalation thresholds appropriate to the diagnosis and local plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NICE-NG232"
+      ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "For head-injury observation, include temperature, respiratory rate, heart rate, blood pressure and oxygen saturation in addition to the structured neurological observations. New or worsening neurological findings require urgent clinical reassessment; do not use a normal earlier assessment to dismiss subsequent change. Observation frequency and imaging decisions follow the diagnosis-specific plan.",
       "critical": true,
       "support": "partial",
       "sources": [
