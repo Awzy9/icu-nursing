@@ -111,6 +111,13 @@
             "S-NHS-SPS-HYPO-2024",
             "L-POTASSIUM"
           ]
+        },
+        {
+          "text": "Renal impairment, tissue injury and potassium-raising medicines increase hyperkalaemia risk. Assess recent potassium, renal function, urine output and the prescribed product before starting, and obtain pharmacy or prescriber clarification if findings raise concern. Monitor the access site and clinical response.",
+          "support": "partial",
+          "sources": [
+            "L-POTASSIUM"
+          ]
         }
       ]
     },
@@ -180,7 +187,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Escalate immediately for rhythm changes, muscle weakness, a rising potassium result or any infusion-site problem.",
+          "text": "Escalate immediately for new rhythm changes, muscle weakness, rising potassium, reduced urine output or infusion-site injury. Activate emergency help for instability and follow the high-alert medication protocol.",
           "support": "partial",
           "sources": [
             "L-POTASSIUM"
@@ -257,6 +264,15 @@
     {
       "kind": "escalate",
       "text": "Report rhythm changes or a rising potassium immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-POTASSIUM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review potassium, renal function and urine output; verify product, pump settings against the order and access-site condition under local policy.",
       "critical": true,
       "support": "partial",
       "sources": [

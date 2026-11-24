@@ -4272,6 +4272,22 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "50506bd3aa1155bf",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "N-JBDS-HYPO-2020",
+     "N-UKKA-HK-2026-07",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-16": [
@@ -4617,6 +4633,22 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "116d2dd91e2dd98f",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-POTASSIUM",
+     "S-AHRQ-TS",
+     "S-DAILYMED-KCL-CONC-2026",
+     "S-FDA-PUMP",
+     "S-NHS-SPS-HYPO-2024",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-20": [
@@ -4755,6 +4787,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2ec48219884eeccd",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-BICARBONATE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-22": [
@@ -4856,6 +4902,20 @@
    {
     "hash": "0b89d8ff86627997",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MEROPENEM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a6dea362ce33ab85",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-MEROPENEM",
@@ -4980,6 +5040,20 @@
    {
     "hash": "b8716e85b8f7212a",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFTRIAXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f014aa9364829485",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-CEFTRIAXONE",
@@ -5770,6 +5844,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "b19d6be62c18d20f",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-38": [
@@ -6074,6 +6162,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4d445db04a204532",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FLUMAZENIL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-42": [
@@ -6189,6 +6291,20 @@
    {
     "hash": "dce655a8c40ba2db",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-SUCCINYLCHOLINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "99deed16fa6a59c6",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-SUCCINYLCHOLINE",
