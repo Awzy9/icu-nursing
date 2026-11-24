@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE NG148 Acute kidney injury: prevention, detection and management (published 18 Dec 2019; last updated 16 Oct 2024) – UK guidance; most recommendations date from 2013", "KDIGO AKI/AKD update: official site now lists a 2027 public-review draft summary (19 Nov 2026); final publication pending, NOT used as final"]
-sources: [S-NICE-NG148, S-RRT-MULTIDISC-2026]
+sources: [S-NICE-NG148, S-RRT-MULTIDISC-2026, S-UKKA-AKI-DETECTION]
 sources_not_read: [S-KDIGO-AKI, S-SSC-2026]
 independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO 2026 draft is mentioned only as a draft."
 ---
@@ -37,7 +37,7 @@ Causes include reduced kidney perfusion (shock, hypovolaemia, sepsis), direct in
 - **Urine output:** hourly in the ICU (policy); catheter patency; colour and clarity; the NICE oliguria threshold of urine output below 0.5 mL/kg/h.
 - **Fluid status:** balance chart, weight trend (where measured), oedema, lung sounds, haemodynamics, jugular venous pressure, thirst and mucous membranes.
 - **Perfusion and sepsis signs:** see the shock and sepsis topics.
-- **Tests (as ordered):** creatinine and eGFR trend, urea, electrolytes (especially potassium), acid–base, urine dipstick for blood, protein, leucocytes, nitrites and glucose.
+- **Tests (as ordered):** creatinine trend (eGFR is unreliable during acute change), urea, electrolytes (especially potassium), acid–base, urine dipstick for blood, protein, leucocytes, nitrites and glucose.
 - **Medicines and contrast:** recent nephrotoxic exposure noted from the chart.
 
 ## 7. Nursing responsibilities
@@ -49,6 +49,8 @@ Causes include reduced kidney perfusion (shock, hypovolaemia, sepsis), direct in
 - Support hydration plans as prescribed; take care with fluid overload.
 - Support blood sampling at the frequency ordered (NICE: daily creatinine is typical while in hospital).
 - Watch for complications (high potassium, acidosis, fluid overload, uraemic signs) and escalate promptly.
+
+**Interpreting kidney function during acute change (UK Kidney Association).** Creatinine-based eGFR estimates assume relatively stable creatinine and are unreliable during rapidly changing kidney function. Do not use the automatically reported eGFR alone to exclude, stage or declare recovery from adult AKI. Report measured creatinine values and their times relative to baseline, urine-output trends and relevant exposures. The prescribing team and pharmacist assess drug clearance using the clinical trajectory and appropriate methods; a calculated eGFR during AKI is not a bedside authorization to change medication.
 
 ## 8. Monitoring parameters
 Hourly urine output; balance (hourly or per policy); haemodynamics and MAP; weight if measured; potassium and acid–base results; creatinine trend; signs of fluid overload (breathlessness, oedema, rising CVP where measured); ECG changes if hyperkalaemia is suspected.
@@ -171,6 +173,8 @@ D. Deciding to stop a nephrotoxic drug.
 - KDIGO. Acute Kidney Injury (AKI) and Acute Kidney Disease (AKD) guideline page: update in preparation following public review; 2027 draft summary listed, not final. https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-24)
 
 - Multidisciplinary guidelines on renal replacement therapy in intensive care medicine. Critical Care. 2026;30:46. https://doi.org/10.1186/s13054-025-05817-6 (selected recommendations 3.7, 6.4, 6.8 and 7.1–7.8 and accompanying rationale accessed 2026-11-24; full appraisal and rights pending).
+
+- UK Kidney Association. AKI Detection and Alerting. https://www.ukkidney.org/clinical-resources/aki-guide-resources/secondary-care/aki-detection-and-alerting/ (indexed recommendation on invalidity of eGFR during AKI; accessed 2026-11-24).
 
 ## 19. Local protocol note
 Urine-output targets, balance charting, call-back limits for potassium and renal replacement therapy criteria follow local protocols.
