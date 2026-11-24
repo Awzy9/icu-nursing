@@ -79,7 +79,7 @@ describe("filters, freshness, comparison and coverage", () => {
   it("flags the known high-priority working draft without displaying its content body", () => {
     const indexCase = onDisk.entries.find((x) => x.key === "SC-11")!;
     expect(reviewLane(indexCase)).toBe("patient-safety");
-    expect(orderReviewQueue(onDisk.entries).at(0)?.key).toBe("SC-11");
+    expect(orderReviewQueue(onDisk.entries).slice(0, 2).map(x => x.key)).toEqual(["SC-09", "SC-11"]);
     expect(onDisk.entries.filter(x => x.clinically_reviewed)).toHaveLength(0);
   });
   it("compares the last two snapshots", () => {
