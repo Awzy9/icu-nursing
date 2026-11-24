@@ -35,19 +35,28 @@
       "use": "ERC ALS 2025 (paraphrase only; commercial use needs an agreement)"
     },
     {
-      "id": "S-AHA-2025",
-      "read": "not_read",
-      "use": "AHA 2025 guidelines: not read"
+      "id": "S-AHA-ALS-2025",
+      "read": "partial",
+      "use": "AHA adult ALS 2025: selected CPR and rhythm-specific defibrillation recommendations"
+    },
+    {
+      "id": "S-AHA-BLS-2025",
+      "read": "partial",
+      "use": "AHA adult BLS 2025: recognition and early CPR"
+    },
+    {
+      "id": "S-RCUK-ALS-2025",
+      "read": "partial",
+      "use": "RCUK 2025 adult ALS selected recommendations for in-hospital resuscitation and shock safety"
     }
   ],
   "required_sources": [
-    "AHA 2025 guideline text",
     "Unit resuscitation policy and the authorised-role requirements"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Rhythm analysis, energy selection, drugs and post-arrest care are deliberately outside this scenario.",
+    "Rhythm analysis, energy selection, drugs and post-arrest care remain outside this scenario. AHA 2025 BLS and ALS selected recommendations are linked; full appraisal and update/errata reconciliation remain outstanding.",
     "Authorised-role requirements for defibrillation are local."
   ],
   "permissions": [
@@ -83,11 +92,13 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "Unresponsiveness with absent or abnormal breathing requires rapid arrest recognition, emergency activation and CPR without avoidable delay. If a trained pulse check is part of the local pathway, it must not delay CPR.",
+          "feedback": "Unresponsiveness with absent or abnormal breathing requires rapid arrest recognition, emergency activation and CPR without avoidable delay. If a trained pulse check is part of the local pathway, it must not delay CPR. Gasping is not normal breathing. Follow the trained healthcare-professional pulse assessment pathway; if no definite pulse is found promptly, begin CPR.",
           "consequence": "Compressions are under way and the team and defibrillator are coming.",
           "support": "partial",
           "sources": [
-            "S-ERC-ALS-2025"
+            "S-ERC-ALS-2025",
+            "S-AHA-BLS-2025",
+            "S-RCUK-ALS-2025"
           ]
         },
         {
@@ -147,7 +158,9 @@
           "consequence": "The defibrillator is ready with minimal interruption to compressions.",
           "support": "partial",
           "sources": [
-            "S-ERC-ALS-2025"
+            "S-ERC-ALS-2025",
+            "S-AHA-ALS-2025",
+            "S-RCUK-ALS-2025"
           ]
         },
         {
@@ -207,7 +220,8 @@
           "consequence": "The shock is delivered safely and compressions restart at once.",
           "support": "partial",
           "sources": [
-            "S-ERC-ALS-2025"
+            "S-ERC-ALS-2025",
+            "S-RCUK-ALS-2025"
           ]
         },
         {

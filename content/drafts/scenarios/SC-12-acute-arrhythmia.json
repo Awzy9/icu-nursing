@@ -56,6 +56,16 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-AHA-ALS-2025",
+      "read": "partial",
+      "use": "AHA 2025 ALS section 15: unstable wide-complex tachycardia and adenosine restrictions"
+    },
+    {
+      "id": "S-RCUK-ALS-2025",
+      "read": "partial",
+      "use": "RCUK 2025 adult ALS: unstable tachyarrhythmia and synchronized cardioversion"
     }
   ],
   "required_sources": [
@@ -65,7 +75,7 @@
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Rhythm-specific treatment pathways, energies and drugs are deliberately not written; the Open RN text only says which categories of treatment exist.",
+    "Detailed rhythm algorithms, energies and drugs remain outside this scenario; AHA 2025 ALS and RCUK 2025 selected recommendations now supplement the Open RN overview.",
     "The cardioversion and defibrillation section of the Open RN book could not be read and is not used.",
     "Rate and QRS criteria in the source are generic and are not turned into thresholds."
   ],
@@ -171,13 +181,15 @@
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "An unstable tachyarrhythmia with a pulse needs urgent rhythm-specific treatment by authorised trained staff; synchronised cardioversion is preferred for many unstable tachyarrhythmias, but rhythm and synchronisation feasibility matter. If cardiac arrest occurs, start CPR and follow the shockable versus non-shockable arrest pathway. Not every pulseless rhythm requires a shock. The 2025 RCUK adult ALS guidance favors electrical cardioversion for unstable tachyarrhythmia with life-threatening features. When a synchronized shock is indicated, the trained operator verifies synchronization; preparation for sedation or anesthesia in a conscious patient must not create avoidable delay in emergency care. Do not apply this to physiological sinus tachycardia.",
+          "feedback": "An unstable tachyarrhythmia with a pulse needs urgent rhythm-specific treatment by authorised trained staff; synchronised cardioversion is preferred for many unstable tachyarrhythmias, but rhythm and synchronisation feasibility matter. If cardiac arrest occurs, start CPR and follow the shockable versus non-shockable arrest pathway. Not every pulseless rhythm requires a shock. The 2025 RCUK adult ALS guidance favors electrical cardioversion for unstable tachyarrhythmia with life-threatening features. When a synchronized shock is indicated, the trained operator verifies synchronization; preparation for sedation or anesthesia in a conscious patient must not create avoidable delay in emergency care. Do not apply this to physiological sinus tachycardia. In particular, AHA 2025 recommends synchronized cardioversion for unstable wide-complex tachycardia when appropriate to the rhythm and advises against adenosine in unstable, irregular or polymorphic wide-complex rhythms. Polymorphic VT requires a different shock strategy; confirm the rhythm with the trained team.",
           "consequence": "The team works efficiently and the nurse is ready if the situation worsens.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C74",
             "S-ERC-ALS-2025",
-            "L-ADENOSINE"
+            "L-ADENOSINE",
+            "S-AHA-ALS-2025",
+            "S-RCUK-ALS-2025"
           ]
         },
         {
@@ -194,10 +206,10 @@
         },
         {
           "text": "Stay at the monitor and watch the rhythm while the team treats the patient.",
-          "points": 1,
+          "points": 0,
           "next": 3,
           "scope": "monitoring",
-          "feedback": "Monitoring is part of the role, but the nurse is also needed to prepare equipment and support the team.",
+          "feedback": "Watching the monitor alone is insufficient during deteriorating perfusion. Remain with the patient, assist the emergency team and prepare time-critical care.",
           "consequence": "The team asks you for equipment that you could have prepared.",
           "support": "partial",
           "sources": [

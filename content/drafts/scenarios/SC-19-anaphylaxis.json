@@ -28,11 +28,6 @@
   },
   "sources": [
     {
-      "id": "L-EPINEPHRINE",
-      "read": "full",
-      "use": "FDA epinephrine label: injection site and extravasation statements"
-    },
-    {
       "id": "L-PIPTAZO",
       "read": "full",
       "use": "FDA piperacillin-tazobactam label: hypersensitivity warning"
@@ -46,17 +41,32 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-ADRENALIN-IM-2025",
+      "read": "full",
+      "use": "DailyMed route-specific IM anaphylaxis label, sections 2.2 and 5.1"
+    },
+    {
+      "id": "S-RCUK-SPECIAL-2025",
+      "read": "partial",
+      "use": "RCUK 2025 special circumstances: anaphylaxis recognition, early IM treatment and crystalloid response"
+    },
+    {
+      "id": "S-NICE-NG258-2026",
+      "read": "partial",
+      "use": "NICE NG258 May 2026: post-treatment observation and allergy referral, selected recommendations"
     }
   ],
   "required_sources": [
-    "Anaphylaxis guideline text sections not read (refractory anaphylaxis, observation after treatment, fluids)",
+    "Full refractory-anaphylaxis specialist management and fluid protocol appraisal (selected 2025 resuscitation and 2026 observation recommendations now linked)",
     "Unit anaphylaxis protocol and the adverse reaction reporting route",
     "Local 2025 ERC/RCUK crosswalk and anaphylaxis monitoring/observation protocol, including refractory escalation scope for ICU staff"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Repeat IM treatment principle and specialist escalation are mapped to RCUK 2021 guidance and current FAQ; refractory IV infusion management, fluid orders, airway procedures and observation duration are not reproduced.",
+    "Repeat IM treatment, early fluid resuscitation, specialist escalation and risk-based observation principles are mapped to selected RCUK 2021/2025 and NICE NG258 2026 recommendations; refractory IV infusion management and detailed protocols remain outside scope.",
     "Doses and routes other than the label's injection-site statement are deliberately absent.",
     "The Resuscitation Council UK healthcare-provider anaphylaxis guidance remains May 2021; 2025 first-aid / ERC special-circumstances statements are contextual and do not alone replace the in-hospital authorised emergency protocol. Full refractory management remains specialist-led."
   ],
@@ -93,13 +103,14 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "Suspected anaphylaxis with airway, breathing or circulatory involvement is time-critical; prompt IM adrenaline and clinical resuscitation are prioritized in RCUK healthcare-provider guidance. The drug and administration are governed by a trained clinician and institution's authorised emergency pathway; never treat an antihistamine as the first-line substitute.",
+          "feedback": "Suspected anaphylaxis with airway, breathing or circulatory involvement is time-critical; prompt IM adrenaline and clinical resuscitation are prioritized in RCUK healthcare-provider guidance. The drug and administration are governed by a trained clinician and institution's authorised emergency pathway; never treat an antihistamine as the first-line substitute. Support early clinician-directed crystalloid resuscitation when circulation is compromised and reassess the response. Do not delay adrenaline to establish access.",
           "consequence": "Emergency assistance is activated and protocol-authorised first-line treatment is promptly arranged while the suspected trigger is stopped.",
           "support": "partial",
           "sources": [
             "N-RCUK-ANAPH-2021",
             "L-PIPTAZO",
-            "L-EPINEPHRINE"
+            "S-ADRENALIN-IM-2025",
+            "S-RCUK-SPECIAL-2025"
           ]
         },
         {
@@ -155,11 +166,13 @@
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**. Persistent airway, breathing or circulatory problems after first-line IM adrenaline require rapid reassessment and timely further IM treatment under the emergency protocol. RCUK advises repeating IM adrenaline after five minutes when those problems persist. Seek expert help for refractory anaphylaxis; intravenous adrenaline for a patient with spontaneous circulation is a specialist intervention, not a routine substitute for IM therapy.",
+          "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**. Persistent airway, breathing or circulatory problems after first-line IM adrenaline require rapid reassessment and timely further IM treatment under the emergency protocol. RCUK advises repeating IM adrenaline after five minutes when those problems persist. Seek expert help for refractory anaphylaxis; intravenous adrenaline for a patient with spontaneous circulation is a specialist intervention, not a routine substitute for IM therapy. Persistent respiratory or circulatory compromise despite two appropriate IM administrations requires immediate specialist refractory-anaphylaxis escalation; continue authorized emergency care.",
           "consequence": "The injection is given at the correct site and the team continues treatment.",
           "support": "sourced",
           "sources": [
-            "L-EPINEPHRINE"
+            "S-ADRENALIN-IM-2025",
+            "N-RCUK-ANAPH-2021",
+            "S-RCUK-SPECIAL-2025"
           ]
         },
         {
@@ -171,7 +184,7 @@
           "consequence": "The injection is given but at a less suitable site.",
           "support": "sourced",
           "sources": [
-            "L-EPINEPHRINE"
+            "S-ADRENALIN-IM-2025"
           ]
         },
         {
@@ -183,7 +196,7 @@
           "consequence": "The injection is given at a site the label advises against.",
           "support": "sourced",
           "sources": [
-            "L-EPINEPHRINE"
+            "S-ADRENALIN-IM-2025"
           ]
         }
       ]
@@ -215,13 +228,14 @@
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "Initial improvement does not eliminate the risk of recurrence or continued deterioration. The emergency team determines observation duration and discharge planning; documenting and flagging the suspect antibiotic helps prevent future inadvertent exposure. If airway, breathing or circulation problems recur, reactivate emergency help and the authorised anaphylaxis pathway promptly. Antihistamines do not treat those life-threatening features, and corticosteroids are not routine emergency first-line treatment.",
+          "feedback": "Initial improvement does not eliminate the risk of recurrence or continued deterioration. The emergency team determines observation duration and discharge planning; documenting and flagging the suspect antibiotic helps prevent future inadvertent exposure. If airway, breathing or circulation problems recur, reactivate emergency help and the authorised anaphylaxis pathway promptly. Antihistamines do not treat those life-threatening features, and corticosteroids are not routine emergency first-line treatment. NICE NG258 (May 2026) replaces CG134 and uses response and recurrence-risk factors to determine observation after complete resolution, rather than a single universal time. ICU monitoring and transfer decisions remain individualized. Arrange specialist allergy referral and document onset, suspected exposure, treatments and response.",
           "consequence": "The reaction is recorded as an allergy, the team plans the next steps and the referral is made.",
           "support": "partial",
           "sources": [
             "N-RCUK-ANAPH-2021",
             "L-PIPTAZO",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-NICE-NG258-2026"
           ]
         },
         {
@@ -254,11 +268,12 @@
   "debrief": {
     "learning_points": [
       "New breathing/airway compromise after an antibiotic may be anaphylaxis: stop the suspected trigger, activate emergency help and ensure timely protocol-authorised IM adrenaline.",
-      "The epinephrine label names the anterolateral thigh for injection in anaphylaxis.",
+      "The route-specific IM product label identifies the anterolateral thigh; intravenous shock labeling is not injection-site evidence.",
       "Medicine choices and restarting a drug are prescriber decisions.",
       "Monitor, document and report the reaction.",
       "Do not delay anaphylaxis first-line emergency treatment to answer an injection-site knowledge question or wait for a non-urgent prescription workflow.",
-      "Reassess response to IM adrenaline promptly; persistent compromise requires timely protocol-directed repeat treatment and expert escalation, not substitution with antihistamines or routine steroids."
+      "Reassess response to IM adrenaline promptly; persistent compromise requires timely protocol-directed repeat treatment and expert escalation, not substitution with antihistamines or routine steroids.",
+      "Risk-based observation after resolution and allergy follow-up are supported by NICE NG258 (2026); initial improvement alone is not sufficient for transfer."
     ],
     "links": [
       {

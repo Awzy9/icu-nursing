@@ -4711,15 +4711,25 @@
      "verified": null
     },
     {
+     "id": "S-ACNS-CCEEG-2015",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-CDC-SEIZURE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 3,
-   "hash": "45b4b501a4919c6a"
+   "required_sources": 2,
+   "hash": "b5ca8172046b6c26"
   },
   {
    "key": "SC-09",
@@ -4866,6 +4876,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4879,12 +4894,17 @@
      "id": "S-OPENRN-ADV-C74",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-RCUK-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "378accc0f6d22e3c"
+   "hash": "deb42427de33cf17"
   },
   {
    "key": "SC-13",
@@ -4896,20 +4916,30 @@
    "clinically_reviewed": false,
    "sources": [
     {
-     "id": "S-AHA-2025",
+     "id": "S-AHA-ALS-2025",
      "licence_class": "RED",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-AHA-BLS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
-   "required_sources": 2,
-   "hash": "40915adbb94ad7c9"
+   "required_sources": 1,
+   "hash": "8998d128f3787ca8"
   },
   {
    "key": "SC-14",
@@ -5131,11 +5161,6 @@
    "clinically_reviewed": false,
    "sources": [
     {
-     "id": "L-EPINEPHRINE",
-     "licence_class": "YELLOW",
-     "verified": "2026-11-15"
-    },
-    {
      "id": "L-PIPTAZO",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -5146,15 +5171,30 @@
      "verified": null
     },
     {
+     "id": "S-ADRENALIN-IM-2025",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NICE-NG258-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RCUK-SPECIAL-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "778b8c0fadb3ccd0"
+   "hash": "4a72177e69889a3a"
   },
   {
    "key": "SC-20",

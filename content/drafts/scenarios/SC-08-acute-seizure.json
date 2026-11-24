@@ -46,18 +46,27 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-CDC-SEIZURE-2024",
+      "read": "partial",
+      "use": "CDC seizure first aid: protection from injury, staying with patient, no restraint or objects in mouth; community context, not ICU protocol"
+    },
+    {
+      "id": "S-ACNS-CCEEG-2015",
+      "read": "partial",
+      "use": "ACNS 2015 consensus section III.A: persistent altered consciousness and pharmacologic paralysis in high-risk patients"
     }
   ],
   "required_sources": [
     "First-aid and positioning guidance for an in-hospital seizure from a source read in full (not in NG217 chapter 7)",
-    "Critical-care guidance on seizures in sedated or ventilated patients and on electroencephalography",
     "Unit status-epilepticus protocol and the individual patient's emergency plan"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "Medicine names, doses, routes and timings in NG217 are deliberately not used; they come from the plan, the order and the unit protocol.",
-    "Positioning, protection from injury and observation during the seizure are not in the chapter read and are not written.",
+    "General seizure injury-prevention and ICU EEG indications now have selected source support. In-hospital positioning with devices, local EEG access and specialist interpretation still require local review.",
     "NG217 is a UK guideline for children, young people and adults; refractory status epilepticus (third-line treatment and general anaesthesia) is outside this scenario."
   ],
   "permissions": [
@@ -89,17 +98,18 @@
       ],
       "options": [
         {
-          "text": "Call for urgent help, note the time the seizure began, stay with the patient and start emergency care per the unit's protocol, asking for the emergency equipment and prescribed emergency medicine to be brought. Ask a colleague to check bedside glucose in parallel with emergency care, without delaying authorised seizure treatment.",
+          "text": "Call for urgent help, note the time the seizure began, stay with the patient and start emergency care per the unit's protocol, asking for the emergency equipment and prescribed emergency medicine to be brought. Ask a colleague to check bedside glucose in parallel with emergency care, without delaying authorised seizure treatment. Protect the patient from injury without restraining them or placing objects in the mouth. Position safely as airway, lines and injury precautions permit.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure.",
+          "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure. General seizure first-aid precautions supplement, not replace, the ICU airway and emergency protocol. Never force positioning during active convulsions.",
           "consequence": "Help arrives while you stay with the patient and the time of onset is clear.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
             "S-AHRQ-TS",
-            "N-JBDS-HYPO-2020"
+            "N-JBDS-HYPO-2020",
+            "S-CDC-SEIZURE-2024"
           ]
         },
         {
@@ -216,13 +226,14 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment. NICE NG217 specifies a time-sensitive repeat benzodiazepine pathway when a convulsive seizure persists after first-line treatment, with expert guidance for subsequent treatment failure. Verify the exact drug, time and response of the first dose, maintain respiratory monitoring, and prepare the next authorised treatment without delay; the individual plan and emergency protocol determine administration.",
+          "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment. NICE NG217 specifies a time-sensitive repeat benzodiazepine pathway when a convulsive seizure persists after first-line treatment, with expert guidance for subsequent treatment failure. Verify the exact drug, time and response of the first dose, maintain respiratory monitoring, and prepare the next authorised treatment without delay; the individual plan and emergency protocol determine administration. If movements stop but consciousness does not recover as expected, or neuromuscular blockade obscures motor signs, escalate possible ongoing electrographic seizures and discuss urgent EEG or continuous EEG with the neurocritical-care team. Do not assume persistent unresponsiveness is solely postictal or sedative-related.",
           "consequence": "Expert help is on its way and a treatable cause is not missed.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
             "N-JBDS-HYPO-2020",
-            "L-LORAZEPAM"
+            "L-LORAZEPAM",
+            "S-ACNS-CCEEG-2015"
           ]
         },
         {
@@ -257,7 +268,8 @@
       "A convulsive seizure lasting 5 minutes or more is an emergency: call for help, note the time and start emergency care.",
       "Anticonvulsant medicines are given only as prescribed or per the plan or protocol; the nurse prepares, gives per order and monitors breathing.",
       "Check for treatable causes such as hypoglycaemia during the initial response without delaying emergency treatment. If the seizure continues, seek expert guidance and confirm the results.",
-      "Document the first treatment's agent, time and response; persistent convulsions require time-sensitive authorised escalation and continued respiratory monitoring."
+      "Document the first treatment's agent, time and response; persistent convulsions require time-sensitive authorised escalation and continued respiratory monitoring.",
+      "Persistent unexplained impaired consciousness after convulsions, or paralysis masking motor signs in a high-risk patient, warrants urgent specialist assessment for EEG monitoring."
     ],
     "links": [
       {
