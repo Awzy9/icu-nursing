@@ -328,6 +328,21 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "6f3674de04e6ce7b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-ASSESSMENT-2026",
+     "S-INTL-PI-CLASSIFICATION-2026",
+     "S-INTL-PI-HEELS-2025",
+     "S-INTL-PI-REPOS-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D09-T01": [
@@ -1553,6 +1568,22 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "279c920da3518835",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ADA-HOSP-2026",
+     "S-ESICM-EEN-2017",
+     "S-ESPEN-ICU-2023",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T12": [
@@ -2248,6 +2279,20 @@
    },
    {
     "hash": "e523fb3c810bc9ce",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a113f4fc4804afdd",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

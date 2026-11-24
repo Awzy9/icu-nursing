@@ -115,16 +115,16 @@ D. Flush the tube and increase the feed rate to move the contents along.
 **Why not C:** Laxatives and restarting need an order and could harm if there is obstruction.
 **Why not D:** Increasing the rate would worsen intolerance.
 
-**Q2 (understanding).** What does the ESICM 2017 guideline suggest about early enteral nutrition compared with early parenteral nutrition in critically ill adults?
-A. Early parenteral nutrition is preferred in this situation because it is delivered more reliably.
-B. Early enteral nutrition and parenteral nutrition are equal and the choice is for convenience.
-C. Feeding should be delayed until bowel sounds have returned and the first stool has been passed by the patient.
-D. Early enteral nutrition is suggested rather than early parenteral nutrition in most patients, with defined delays.
+**Q2 (judgment).** A severely malnourished adult starts enteral nutrition. Over the next day phosphate falls substantially and potassium and magnesium are also declining. The planned feeding rate is due to increase. What should the nurse do?
+A. Advance feeds as planned while awaiting the next routine electrolyte results.
+B. Request a higher calorie target because the patient is severely malnourished.
+C. Replace phosphate under the current order and advance feeding without reassessment.
+D. Defer the planned increase, assess the patient and urgently coordinate a revised feeding plan.
 **Answer: D.**
-**Why correct:** The guideline suggests early enteral nutrition (conditional, low-quality evidence) with defined delay situations.
-**Why not A:** The guideline does not prefer early parenteral nutrition.
-**Why not B:** The guideline states a preference rather than equivalence.
-**Why not C:** It suggests feeding regardless of bowel sounds unless ischaemia or obstruction is suspected.
+**Why correct:** The electrolyte changes after restarting nutrition raise concern for refeeding complications. Assess the patient and escalate the findings, including rhythm, respiratory status and electrolyte trends. ESPEN 2023 recommends closer electrolyte surveillance and temporary energy restriction in refeeding hypophosphataemia, followed by gradual advancement. Coordinate prescribed replacement and nutrition adjustment rather than automatically advancing feeds; the findings require clinical interpretation, not a diagnosis from one result.
+**Why not A:** Advancing nutrition before review may aggravate metabolic disturbances; routine sampling is insufficient when electrolyte values are deteriorating.
+**Why not B:** Malnutrition increases refeeding risk and does not justify rapid escalation to full nutritional requirements.
+**Why not C:** Electrolyte replacement is important but does not independently establish that advancing energy delivery is safe.
 
 **Q3 (judgment).** The team plans a prolonged prone session for a ventilated patient receiving gastric feeds. A colleague proposes withholding nutrition throughout the session solely because of positioning. What is the best nursing response?
 A. Agree and stop all feeds for the whole prone period without telling the team, because proning always makes feeding unsafe.
@@ -137,27 +137,27 @@ D. Remove the feeding tube before every turn to avoid displacement, and re-inser
 **Why not C:** Compensating for missed feed volume by independently increasing the rate may worsen intolerance; coordinate any change with the authorized nutrition plan.
 **Why not D:** Routine removal before every turn is not indicated. Protect tube securement during repositioning and follow the approved position-verification pathway before use.
 
-**Q4 (application).** Which measure best reduces aspiration risk in a ventilated patient who is being fed?
-A. Keeping the head of the bed raised (SHEA: 30–45°, unless contraindicated) and giving regular mouth care.
-B. Lying the patient flat during feeds to make the stomach empty into the bowel.
-C. Giving large boluses quickly to finish the feed sooner, so that the stomach is empty for the next medicines.
-D. Switching off the monitors during the feed so that the patient is not disturbed and can rest more easily.
+**Q4 (judgment).** After repositioning, the external length of a patient's nasogastric tube has changed and its fixation is loose. A scheduled medication and feed are due. What should the nurse do?
+A. Withhold tube use and arrange position confirmation under the authorized pathway.
+B. Re-secure the tube at its new position and resume feeding at the previous prescribed rate.
+C. Give the medication with a small water flush while waiting for the position to be checked.
+D. Listen over the stomach during air insufflation and resume feeding if a sound is heard.
 **Answer: A.**
-**Why correct:** Head elevation when safe is a prevention measure. Regular oral care reduces oral microbial burden and contributes to VAP prevention; it does not by itself prevent aspiration. Confirm tube position by the authorized pathway and assess feeding tolerance. Adapt positioning to the patient's clinical needs.
-**Why not B:** A flat position increases aspiration risk.
-**Why not C:** Rapid large volumes increase vomiting risk.
-**Why not D:** Monitoring is needed during feeding.
+**Why correct:** A changed external marking or loose fixation raises concern for displacement. Withhold feed, water and medications through the uncertain tube, assess for respiratory symptoms and obtain the authorized placement check before use. NICE CG32 and NHS England safety guidance support approved aspirate pH testing or radiography when required; auscultation is not a reliable confirmation method. Arrange authorized alternative routes for time-critical medications and coordinate glucose monitoring when feeding stops.
+**Why not B:** Re-securing a tube does not establish where its tip is located.
+**Why not C:** Even a small flush or medication can cause harm if the tube has migrated into the respiratory tract.
+**Why not D:** The whoosh test cannot distinguish safe gastric placement from an incorrectly positioned tube.
 
-**Q5 (scope).** Which task belongs to the prescriber or dietitian rather than the nurse?
-A. Checking and recording tube position and securement at each feed and after any movement.
-B. Reporting vomiting and a rise in gastric aspirates to the prescriber.
-C. Deciding to change from gastric to post-pyloric feeding or to parenteral nutrition.
-D. Raising the head of the bed and giving mouth care at regular intervals.
+**Q5 (judgment).** Continuous enteral feeding is unexpectedly interrupted for an urgent procedure. The patient has active scheduled insulin and the last bedside glucose was within target. What is the safest action?
+A. Wait for the next routine glucose check because the previous measurement was satisfactory.
+B. Withhold every insulin dose, including basal insulin, until nutrition resumes.
+C. Check glucose promptly and coordinate the authorized insulin and carbohydrate plan.
+D. Restart the interrupted feed at a faster rate after the procedure to replace the missed nutrition.
 **Answer: C.**
-**Why correct:** Choosing the route and type of nutrition, for example gastric, post-pyloric or parenteral, is a decision for the prescriber or dietitian with the team. The nurse carries it out, monitors and reports within that plan, as the other options show.
-**Why not A:** Independent nursing task.
-**Why not B:** Reporting is a nursing responsibility.
-**Why not D:** Independent nursing tasks.
+**Why correct:** ADA 2026 identifies unexpected feed interruption as a risk for hypoglycaemia when insulin remains active. Check glucose promptly, communicate feed interruption and insulin timing, and use the prescribed monitoring, insulin and carbohydrate replacement pathway. Basal insulin must not be indiscriminately stopped, particularly in type 1 diabetes. Reassess and document the restart plan; do not independently compensate by increasing the feed rate.
+**Why not A:** An earlier normal glucose does not exclude subsequent hypoglycaemia while insulin remains active.
+**Why not B:** Stopping all insulin can cause serious harm, especially in type 1 diabetes; adjustments require an individualized authorized plan.
+**Why not D:** Catch-up feeding does not address current glucose risk and may cause intolerance or inappropriate energy delivery.
 
 **Q6 (monitoring).** The unit policy requires gastric aspirate checks, and the SHEA update says monitoring gastric residual volumes has no impact on VAP rates. How should the nurse proceed?
 A. Stop checking aspirates at once because one document says they do not reduce VAP, and tell the next shift to do the same.

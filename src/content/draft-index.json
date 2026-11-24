@@ -124,7 +124,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "d01372bf90d4ed17"
+   "hash": "6f3674de04e6ce7b"
   },
   {
    "key": "D09-T01",
@@ -554,7 +554,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "46458c8dd7dea889"
+   "hash": "279c920da3518835"
   },
   {
    "key": "D01-T12",
@@ -859,7 +859,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "e523fb3c810bc9ce"
+   "hash": "a113f4fc4804afdd"
   },
   {
    "key": "D09-T03",

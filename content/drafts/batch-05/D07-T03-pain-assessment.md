@@ -112,16 +112,16 @@ D. Do nothing until the heart rate settles, because vital signs are the only rel
 **Why not B:** Giving drugs without assessment and an order is unsafe.
 **Why not D:** Vital signs are cues only; waiting leaves possible pain untreated.
 
-**Q2 (understanding).** Which tools does SCCM identify as having the greatest validity and reliability for monitoring pain in patients unable to self-report whose behaviours are observable?
-A. The Behavioral Pain Scale (BPS), BPS for non-intubated patients (BPS-NI) and the Critical-Care Pain Observation Tool (CPOT).
-B. The trend in heart rate and blood pressure recorded on the monitor over the preceding hour, taken as a reliable pain score.
-C. A numeric 0–10 rating card held in front of the patient, which the sedated patient points to unaided, as in any other adult.
-D. The bispectral index, which measures the depth of sedation and can indicate whether pain is present in a deeply sedated patient.
+**Q2 (judgment).** An intubated patient is alert and consistently uses a communication board to indicate pain intensity. A colleague prefers a behavioural pain score because the patient cannot speak. Which assessment is most appropriate?
+A. Use the patient's reliable self-report and assess pain location and functional comfort goals.
+B. Use the behavioural score instead because intubation makes a patient-reported score invalid.
+C. Average the patient's report with the observed behavioural score to obtain a single intensity.
+D. Use heart rate and blood pressure to confirm the score before documenting the pain intensity.
 **Answer: A.**
-**Why correct:** SCCM identifies BPS, BPS-NI and CPOT as supported behavioral approaches when self-report is unavailable and behavior is observable. Select the tool appropriate to intubation status and local training. Paralysis or profound sedation may make behavior unobservable; absence of observable pain behavior does not establish absence of pain.
-**Why not B:** Vital signs are not valid indicators of pain.
-**Why not C:** The numeric rating scale is for patients who can self-report.
-**Why not D:** BIS is described for sedation monitoring, not pain.
+**Why correct:** SCCM PADIS supports reliable patient self-report whenever feasible, including accessible communication when speech is unavailable. Behavioral tools such as BPS, BPS-NI and CPOT are useful when reliable self-report is unavailable and relevant behaviours are observable. During paralysis or profound sedation, absence of observable pain behavior does not establish absence of pain. Record the assessment method and reassess after authorized intervention.
+**Why not B:** Inability to speak does not establish inability to communicate a reliable report.
+**Why not C:** Behavioral observation and self-reported intensity are distinct measures and should not be averaged into an unvalidated score.
+**Why not D:** Vital signs may prompt further assessment, but they cannot validate or quantify the patient's pain intensity.
 
 **Q3 (application).** A patient who is awake and able to respond is asked to rate pain from 0 to 10 and says "7, but I can tolerate it lying still". What should the nurse do next?
 A. Record a score of 7 and ask for the strongest analgesic on the unit, since the patient reports a high number.

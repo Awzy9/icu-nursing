@@ -108,16 +108,16 @@ D. Apply a firm bandage to protect the heel and review it again tomorrow.
 **Why not C:** Delay allows the damage to progress.
 **Why not D:** A firm bandage may add pressure and hide changes, and a day's wait is too long.
 
-**Q2 (judgment).** How should the nurse decide the repositioning schedule for a critically ill patient?
-A. Reposition on a fixed two-hourly schedule regardless of the mattress used or the patient's skin and condition.
-B. Reposition when the family asks, since they know the patient's comfort best.
-C. Stop repositioning once an air mattress is in use, because the surface redistributes the pressure.
-D. Individualise it using mobility, skin tolerance, stability, comfort, goals of care and the support surface.
+**Q2 (judgment).** A patient in shock on vasopressors develops marked haemodynamic instability during a planned full-body turn. The patient is at high risk of pressure injury. What is the appropriate nursing response?
+A. Continue full turns on the same schedule even if the patient remains unstable.
+B. Stop all pressure relief until the vasopressors have been discontinued.
+C. Use a pressure-redistributing mattress instead of reassessing repositioning needs.
+D. Reassess stability, coordinate tolerated small weight shifts and review full turns when safe.
 **Answer: D.**
-**Why correct:** The international repositioning chapter supports individualized schedules. If shock or severe instability prevents full turns, use tolerated small weight shifts under the team plan and reassess regularly for resumption of full-body repositioning. A support surface does not replace repositioning; the evidence for incremental movements in critically ill patients is limited.
-**Why not A:** A fixed interval ignores individual need and clinical instability.
-**Why not B:** Responsibility for repositioning lies with the care team.
-**Why not C:** No support surface can entirely replace repositioning.
+**Why correct:** The 2026 international repositioning chapter supports individualization according to tissue response, clinical stability and support surface. If shock or severe instability prevents full turns, use tolerated small weight shifts under the team plan and reassess regularly for resumption of full-body repositioning. Treat haemodynamic deterioration as a priority, document tolerance and assess pressure points; the evidence for incremental repositioning in critically ill patients is limited.
+**Why not A:** A fixed schedule does not override immediate physiological instability; the clinical team must adapt the plan.
+**Why not B:** Omitting all pressure relief can worsen tissue loading; consider safe incremental measures and frequent reassessment.
+**Why not C:** A support surface assists pressure redistribution but does not replace individualized repositioning.
 
 **Q3 (application).** A ventilated patient has an endotracheal tube, a nasogastric tube and an oximeter probe. Which check best reduces device-related injury?
 A. Examine only the sacrum and heels at turns, since medical devices rarely cause pressure injuries in ventilated patients.
@@ -130,16 +130,16 @@ D. Apply moisturiser under each device to keep the skin soft and prevent crackin
 **Why not B:** Tighter securements increase pressure and shear.
 **Why not D:** Extra moisture under a device can worsen skin damage.
 
-**Q4 (understanding).** Which statement about a pressure-redistributing mattress is correct?
-A. It supports prevention, but repositioning is still needed.
-B. It makes repositioning unnecessary for patients who are sedated.
-C. It is useful for patients who are awake and able to move, but not for sedated patients.
-D. It protects the heels so well that heel checks can be dropped from the care plan.
+**Q4 (application).** A ventilated patient has a pressure-related lesion on the moist inner lip next to an endotracheal tube. A colleague proposes assigning a skin pressure-injury stage based on its visible depth. What should the nurse do?
+A. Describe the suspected mucosal injury without a skin stage and coordinate safe device assessment.
+B. Assign a skin stage based on the visible depth and document the stage as confirmed.
+C. Remove the airway fixation independently to determine whether deeper tissue is involved.
+D. Record the finding as a skin tear because the usual skin staging categories are unsuitable.
 **Answer: A.**
-**Why correct:** The guide states that no support surface can entirely replace repositioning.
-**Why not B:** This contradicts the guide, and sedated patients are at higher risk.
-**Why not C:** Immobile and sedated patients benefit most from these surfaces.
-**Why not D:** Heels still need offloading and regular checks, especially with poor perfusion.
+**Why correct:** The 2026 International Guideline differentiates pressure injuries of mucous membranes from device-related injuries on skin. Skin staging systems are not appropriate for mucosal pressure injuries. Describe the site and observed findings, protect airway function, seek wound and airway team assessment and document the agreed pressure-relief measures. Do not infer a stage or disrupt essential airway securement.
+**Why not B:** Mucosal anatomy differs from skin; visible depth does not reliably map to a skin stage.
+**Why not C:** Independent manipulation of a life-sustaining airway risks displacement; coordinate with the authorized airway team.
+**Why not D:** Inability to apply a skin stage does not make a pressure-related mucosal lesion a skin tear.
 
 **Q5 (assessment).** During a skin check of an immobile patient with darker skin, the nurse notices a change in firmness near a device but finds colour changes difficult to distinguish. Which assessment approach is most appropriate?
 A. Rely on colour change alone because it is the earliest sign of injury and is equally easy to see on every skin tone and in any light.
