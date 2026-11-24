@@ -63,6 +63,8 @@ ICU patients commonly have disturbed ventilation, perfusion, kidney function and
 - Document the time, the values, the patient's condition, actions and who was informed.
 - Knowledge limits: this draft provides **one mixed-disorder safety example**, not systematic anion-gap/delta-gap assessment, all expected-compensation formulae, lactate interpretation or oxygenation indices. Complex interpretation remains for appropriately trained clinicians.
 
+**Assess the trend rather than the pH alone (Merck Manual; AARC specimen guidance).** When reviewing serial blood gases, record sample type, timing, oxygen delivery and ventilator support at each sampling point. A change in support or specimen source can make direct comparison misleading. A near-normal pH with substantially abnormal PaCO₂ or bicarbonate requires further assessment for mixed disturbances; compare with the expected physiological response rather than assuming complete recovery. If a critical result conflicts with the bedside picture, urgently notify the team and check sample integrity or arrange repeat testing as authorized while assessing and supporting the patient; do not defer emergency care for repeat sampling.
+
 ## 8. Monitoring parameters
 pH, PaCO₂, HCO₃, PaO₂, SaO₂ and the trend; respiratory rate and pattern; work of breathing; SpO₂ and end-tidal CO₂ if available; ventilator settings; perfusion, lactate if measured; mental state; urine output; electrolytes (especially potassium); glucose and ketones when relevant.
 
