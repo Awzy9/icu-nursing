@@ -49,6 +49,8 @@ Organisms from the mouth, throat and stomach reach the lower airway around the t
 - Measure endotracheal or tracheostomy cuff pressure with a manometer at the interval set by unit policy; do not rely on feeling the pilot balloon (AARC 2024; see section 9). Cuff checks are for leak and tracheal-injury safety as well as aspiration; the exact interval and target range come from local policy.
 - Report oxygenation changes and signs of infection promptly.
 
+**Prioritize the patient over bundle completion (SHEA 2022).** Review the documented prevention measures at handover, including positioning, oral hygiene, sedation and liberation readiness. Record clinical contraindications rather than automatically marking a missed intervention as a breach. An increase in oxygen or ventilator requirements requires prompt assessment and escalation for possible respiratory deterioration, not merely completion of the prevention bundle or an automatic diagnosis of VAP. Routine circuit replacement solely by elapsed time is not supported by SHEA for adults; follow the manufacturer's instructions for the actual circuit, and address visible contamination or malfunction with trained staff. Do not delay urgent ventilation support to complete preventive care.
+
 ## 8. Monitoring parameters
 Each shift: FiO₂, PEEP, SpO₂ and trend; secretions; temperature; head-of-bed angle at each check; mouth-care times; sedation score; daily readiness findings; mobility achieved; feed tolerance.
 
@@ -92,7 +94,7 @@ Head-of-bed angle checks, mouth-care times and findings, sedation and readiness 
 At the start of the shift: check the head of the bed angle on the bedside indicator, confirm the tube depth and securement, review overnight FiO₂ and PEEP trend, brush the patient's teeth and gums per protocol and suction the mouth with the unit's method, review sedation targets with the team for a daily awakening and breathing readiness check, plan mobilisation, and document each item.
 
 ## 16. Clinical case (fictional)
-A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse raises the bed, performs mouth care, reports the trend with SBAR, asks about sedation lightening and readiness testing, and documents. The team decides on imaging and further treatment.
+A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse assesses breathing and ventilation immediately and promptly escalates the increasing oxygen requirement. Once safe and clinically appropriate, she restores the prescribed bed position and oral-care plan, documents the findings, and reviews readiness testing with the team. The team decides on imaging and further treatment.
 
 ## 17. MCQs
 **Q1 (prioritization).** On the morning round a ventilated patient on day 4 has rising oxygen needs, increased secretions, a flat bed after a procedure, and no mouth care documented for 12 hours. What should the nurse do first?
