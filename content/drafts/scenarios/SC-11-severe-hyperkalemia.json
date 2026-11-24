@@ -60,7 +60,7 @@
     "UK adult guideline with a review date of October 2026; critical-care alternatives (for example dialysis or bicarbonate) are medical decisions and not written.",
     "The potassium and ECG thresholds are not used in the scenario's observations as bands.",
     "AI source comparison 2026-11-16: UKKA 2026 detailed Guideline 14.1 (urgent 12-lead ECG at ≥6.0) and 14.2 (continuous monitoring at ≥6.5 or ECG changes) were checked. Delaying escalation to repeat a potassium of 6.8 with ECG changes was corrected from partial credit to zero. Full simulation branch and local protocol remain unreviewed by a credentialed clinician.",
-    "July 2026 UKKA website retains conflicting 12-lead ECG thresholds in detailed 14.1 (>=6.0 mmol/L) versus hospital summary 14.1 (>=6.5 mmol/L) as checked 2026-11-23. Guideline 14.2 is a separate continuous-monitoring decision. Clinician validation and/or author clarification remain necessary.",
+    "July 2026 UKKA website retains conflicting 12-lead ECG thresholds in detailed 14.1 (>=6.0 mmol/L) versus hospital summary 14.1 (>=6.5 mmol/L) as checked 2026-11-23. Guideline 14.2 is a separate continuous-monitoring decision. Clinician validation and/or author clarification remain necessary. Rechecked both live UKKA pages on 24 November 2026: discrepancy remains.",
     "The high-alert drug cross-reference previously incorrectly included MD-19 potassium chloride and MD-14 heparin. Replaced with MD-15 insulin and MD-20 calcium gluconate; this is not a prescription and does not imply a hypocalcaemia product label independently authorises emergency hyperkalaemia treatment."
   ],
   "permissions": [
@@ -98,7 +98,7 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "The UKKA July 2026 **detailed** Guideline 14.1 advises urgent 12-lead ECG for hospital potassium at or above 6.0 mmol/L; its hospital **summary** instead prints 6.5 for that same 12-lead decision, an unresolved document discrepancy. **Separate** Guideline 14.2 recommends continuous rhythm monitoring at or above 6.5, with concerning ECG signs, or for an unwell patient at 6.0–6.4 or likely rapid rise. This fictional patient has 6.8 with ECG changes; escalation and both ECG actions must not be delayed for repeat sampling.",
+          "feedback": "The UKKA July 2026 **detailed** Guideline 14.1 advises urgent 12-lead ECG for hospital potassium at or above 6.0 mmol/L; its hospital **summary** instead prints 6.5 for that same 12-lead decision, an unresolved document discrepancy. **Separate** Guideline 14.2 recommends continuous rhythm monitoring at or above 6.5, with concerning ECG signs, or for an unwell patient at 6.0–6.4 or likely rapid rise. This fictional patient has 6.8 with ECG changes; escalation and both ECG actions must not be delayed for repeat sampling. A normal ECG does not exclude severe hyperkalemia. UKKA notes that ECG changes need not progress in a fixed sequence; assess and escalate according to potassium severity, trajectory and clinical condition.",
           "consequence": "Urgent help is called and the patient is assessed and continuously monitored while a 12-lead ECG and confirmatory sampling are arranged in parallel.",
           "support": "partial",
           "sources": [
@@ -224,7 +224,7 @@
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "Transient improvement on the monitor does not ensure that potassium has been removed from the body. UKKA recommends frequent glucose checks after insulin-glucose (including through six hours) and repeat potassium assessment because hypoglycaemia and rebound can follow; the approved unit pathway sets exact frequency and further treatment decisions.",
+          "feedback": "Transient improvement on the monitor does not ensure that potassium has been removed from the body. UKKA recommends frequent glucose checks after insulin-glucose (including through six hours) and repeat potassium assessment because hypoglycaemia and rebound can follow; the approved unit pathway sets exact frequency and further treatment decisions. Recheck response to cardiac-protective treatment and continue the clinician-directed elimination plan, particularly with impaired renal function. Recurrent ECG abnormalities or worsening perfusion are reasons to escalate immediately, not wait for the next routine blood sample.",
           "consequence": "A low glucose is caught early and a rebound is picked up.",
           "support": "partial",
           "sources": [
@@ -265,7 +265,8 @@
       "UKKA July 2026 detailed hospital Guideline 14.1 advises an urgent 12-lead ECG at potassium >=6.0 mmol/L, but its summary says >=6.5; Guideline 14.2 separately defines who needs continuous monitoring. Treat the discrepancy as a source-verification item, not a reason to postpone ECG.",
       "Emergency potassium treatment, including the exact calcium formulation and insulin-glucose, is authorised by the clinical team and local protocol; monitor cardiac rhythm, IV access and hypoglycaemia risk without independent dosing.",
       "Early ECG improvement can coexist with recurrent hyperkalaemia or delayed hypoglycaemia; maintain the prescribed post-treatment glucose, potassium and clinical observations.",
-      "Calcium is cardiac protection, not potassium removal; shifting therapies are temporary, and definitive elimination and reassessment remain clinician-directed."
+      "Calcium is cardiac protection, not potassium removal; shifting therapies are temporary, and definitive elimination and reassessment remain clinician-directed.",
+      "Severe hyperkalemia can occur without typical ECG findings; normal morphology is not proof of safety."
     ],
     "links": [
       {

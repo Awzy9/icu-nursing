@@ -49,6 +49,11 @@
       "id": "S-RCA-DELPHI-2026",
       "read": "partial",
       "use": "Targeted 2026 consensus statement 10 on possible citrate accumulation; not a randomized trial or full guideline review."
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "read": "partial",
+      "use": "2026 multidisciplinary ICU RRT guideline: anticoagulation recommendations 4.4–4.6 and dose-in-CRRT discussion; selected HTML sections, not full appraisal"
     }
   ],
   "required_sources": [
@@ -59,7 +64,7 @@
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "The pathway is specific to one machine family and says actions follow local practice guidelines.",
-    "Priming, citrate and calcium adjustment, drug dosing and weaning are not taught. Selected 2026 consensus monitoring concepts are mapped; exact lab schedules, thresholds and treatments require specialist and local review.",
+    "Selected January 2026 RRT guideline and May 2026 citrate Delphi monitoring statements are mapped. Exact schedules, thresholds, citrate/calcium adjustments, drug dosing and weaning remain specialist and local decisions. KDIGO 2026 remains a public-review draft, not a final replacement.",
     "Scenario has been limited to patient-first assessment, competent CRRT-operator escalation, interruption documentation, and approved procedure boundaries; it does not teach independent troubleshooting or blood return."
   ],
   "permissions": [
@@ -119,7 +124,7 @@
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
-          "feedback": "The pathway suggests adjusting the blood flow, not pushing it to the maximum.",
+          "feedback": "Do not independently increase blood flow to suppress an alarm. Check the patient and escalate to the trained operator who follows the device-specific procedure.",
           "consequence": "The alarms continue and the treatment time is lost.",
           "support": "partial",
           "sources": [
@@ -221,29 +226,31 @@
       ],
       "options": [
         {
-          "text": "Document alarms, downtime, delivered treatment and fluid balance. Promptly report falling systemic ionized calcium and the rising calcium ratio, review ordered acid-base results and supplementation needs, and coordinate the trained team's prescribed response.",
+          "text": "Document alarms, downtime, delivered treatment and net fluid balance. If regional citrate anticoagulation is in use, report falling systemic ionized calcium, a rising total-to-ionized calcium ratio, increasing calcium requirements or worsening acid-base findings, and coordinate the prescribed response.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "KDIGO supports assessment of delivered treatment. The 2026 Delphi consensus identifies falling systemic ionized calcium, increasing calcium needs, a raised total-to-ionized calcium ratio and metabolic acidosis as findings that may suggest citrate accumulation in context. No single finding establishes the diagnosis. Escalate the trend and follow the prescribed specialist response; do not independently adjust citrate, calcium or fluid removal.",
+          "feedback": "KDIGO supports assessment of delivered treatment. The 2026 Delphi consensus identifies falling systemic ionized calcium, increasing calcium needs, a raised total-to-ionized calcium ratio and metabolic acidosis as findings that may suggest citrate accumulation in context. No single finding establishes the diagnosis. Escalate the trend and follow the prescribed specialist response; do not independently adjust citrate, calcium or fluid removal. The January 2026 multidisciplinary RRT guideline distinguishes prescribed from delivered clearance because interruptions reduce effective therapy. Net fluid removal and solute-clearance dose are separate prescription components; do not increase fluid removal simply to compensate for downtime. The guideline also calls for reassessment of anticoagulation if citrate accumulation occurs; the May 2026 Delphi consensus discusses individualized specialist adjustments and alternatives when abnormalities persist. These are not instructions to alter device settings independently.",
           "consequence": "The team can adjust the plan, and the next shift knows what happened.",
           "support": "partial",
           "sources": [
             "S-KDIGO-AKI-2012",
             "N-AHS-CRRT-ALARM-2025",
-            "S-RCA-DELPHI-2026"
+            "S-RCA-DELPHI-2026",
+            "S-RRT-MULTIDISC-2026"
           ]
         },
         {
           "text": "Record only that the machine alarmed.",
-          "points": 1,
+          "points": 0,
           "next": null,
           "scope": "independent_nursing",
-          "feedback": "An incomplete record loses the reason for stopping and the shortfall.",
+          "feedback": "Recording only the alarm omits the treatment interruption, delivered therapy and fluid balance, and misses the concerning biochemical trend that needs urgent escalation.",
           "consequence": "The next shift cannot see how much treatment was missed.",
           "support": "partial",
           "sources": [
-            "S-KDIGO-AKI-2012"
+            "S-KDIGO-AKI-2012",
+            "S-RRT-MULTIDISC-2026"
           ]
         },
         {
@@ -251,11 +258,12 @@
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
-          "feedback": "Changing the prescription is a prescriber decision.",
+          "feedback": "Net fluid removal is not interchangeable with the delivered solute-clearance dose. Report both and ask the responsible team to reassess the prescription.",
           "consequence": "An unauthorised change creates a safety incident.",
           "support": "partial",
           "sources": [
-            "S-KDIGO-AKI-2012"
+            "S-KDIGO-AKI-2012",
+            "S-RRT-MULTIDISC-2026"
           ]
         }
       ]
@@ -266,7 +274,7 @@
       "Assess the patient first and request the trained operator; device-specific line checks and alarm handling follow the approved procedure.",
       "Do not use override or disable functions to clear an unresolved problem.",
       "For persistent alarms, escalate and follow the authorized termination pathway; blood return is not automatic and must not be attempted when circuit safety is uncertain.",
-      "Report under-delivery of the prescribed dose.",
+      "Report downtime, delivered solute-clearance therapy and net fluid balance separately; do not independently compensate by increasing ultrafiltration.",
       "With regional citrate anticoagulation, escalate concerning calcium, supplementation and acid-base trends; the specialist team determines the response."
     ],
     "links": [

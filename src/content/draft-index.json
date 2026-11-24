@@ -4841,11 +4841,6 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-JBDS-HYPO-2020",
-     "licence_class": "YELLOW",
-     "verified": null
-    },
-    {
      "id": "S-ADA-HOSP-2026",
      "licence_class": "RED",
      "verified": "2026-11-23"
@@ -4854,12 +4849,17 @@
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-JBDS-HYPO-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 4,
-   "hash": "18ba48caa7d143cd"
+   "required_sources": 3,
+   "hash": "3df724aeb53ffc9a"
   },
   {
    "key": "SC-11",
@@ -4889,7 +4889,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "a9008233035c857e"
+   "hash": "53bffa548ccb463a"
   },
   {
    "key": "SC-12",
@@ -5049,12 +5049,17 @@
      "id": "S-RCA-DELPHI-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "e96ed4d67c09ec37"
+   "hash": "9deaa0a17eefad07"
   },
   {
    "key": "SC-16",

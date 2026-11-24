@@ -10256,6 +10256,20 @@
     "gaps": 5,
     "required_sources": 4,
     "issues": 0
+   },
+   {
+    "hash": "3df724aeb53ffc9a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-ADA-HOSP-2026",
+     "S-AHRQ-TS",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-11": [
@@ -10313,6 +10327,19 @@
    },
    {
     "hash": "a9008233035c857e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-AHRQ-TS",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "53bffa548ccb463a",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -10647,6 +10674,21 @@
      "S-AHRQ-TS",
      "S-KDIGO-AKI-2012",
      "S-RCA-DELPHI-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "9deaa0a17eefad07",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
     ],
     "gaps": 5,
     "required_sources": 2,
