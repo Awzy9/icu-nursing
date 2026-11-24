@@ -1021,6 +1021,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AHA-POSTARREST-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -1068,8 +1073,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "5450ee8079c920e2"
+   "required_sources": 0,
+   "hash": "016a5587ef317d36"
   },
   {
    "key": "D05-T16",
@@ -1099,12 +1104,17 @@
      "id": "S-ISMP-HA",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-PHARM",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "c574bfb8d5b22831"
+   "required_sources": 0,
+   "hash": "a543f2f0c810ac0e"
   },
   {
    "key": "D08-T03",
@@ -1117,6 +1127,11 @@
    "sources": [
     {
      "id": "S-AABB-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-AABB-AMI-2025",
      "licence_class": "RED",
      "verified": "2026-11-24"
     },
@@ -1159,12 +1174,17 @@
      "id": "S-OPENRN-ADV-CH3",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-HA",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 3,
-   "hash": "fa928785a841ee7d"
+   "required_sources": 2,
+   "hash": "25f82abf1842eaac"
   },
   {
    "key": "D01-T17",
@@ -1406,6 +1426,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-OPENRN-PHARM",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-PHARM-CH",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -1418,8 +1443,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "6b995321d369b6eb"
+   "required_sources": 0,
+   "hash": "65bb4bbed402e40c"
   },
   {
    "key": "D05-T03",
@@ -1456,6 +1481,11 @@
      "verified": "2026-11-21"
     },
     {
+     "id": "S-OPENRN-PHARM",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-PHARM-CH",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -1473,8 +1503,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "87bbda10de56d8c3"
+   "required_sources": 0,
+   "hash": "9b5f6e4ed480b37f"
   },
   {
    "key": "D01-T06",
@@ -1529,12 +1559,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-JC-ALARM",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "5ff6fdd6ecad20d9"
+   "required_sources": 0,
+   "hash": "38be0ee258ff3858"
   },
   {
    "key": "D03-T03",
