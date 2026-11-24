@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read; septic shock only", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract/comparison table examined; full text not read)", "ESICM 2014 consensus (historical)", "ISMP List of High-Alert Medications in Acute Care Settings, 2024 (classification only)", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US"]
-sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026, S-UIC-EXTRA-2026]
-sources_not_read: [S-AHA-2025]
+sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026, S-UIC-EXTRA-2026, S-AHA-POSTARREST-2025]
+sources_not_read: []
 independently_written_note: "Original wording. SSC 2026 statements come from the official SCCM recommendation page (strength and certainty as printed there); the full publication, evidence tables and the context of each remark were NOT read, and SSC 2026 addresses adults with sepsis and septic shock, not other causes of shock. The 2014 ESICM consensus was read in full text and is dated. ISMP and FDA pages cover medication and pump safety, not vasoactive monitoring. No dose, concentration, titration range or rate is given: these are prescriber and pharmacist decisions. Batch 7 added Open RN pharmacology grids (US textbook), which do not supply a complete administration protocol. The UIC September 2026 clinical-pharmacy review was consulted on 2026-11-23 for initial recognition and response to suspected peripheral extravasation, not for dose or antidote preparation. Drug/site eligibility, monitoring frequency and treatment orders remain local-protocol matters. SSC applies to sepsis/septic shock, not all shock causes."
 ---
 # Vasopressor and inotrope monitoring
@@ -61,6 +61,8 @@ This paragraph is independently paraphrased from the UIC 2026 educational pharma
 - **Still unresolved:** site-check frequency, line compatibility, dedicated-lumen practice, detailed extravasation orders, drug-specific antidotes and ongoing tissue-injury monitoring. Section 6b adds recognition and initial safety response only; follow local protocol and request pharmacist/vascular-access review.
 
 **High-risk infusion handover and replacement (FDA clinician safety guidance).** Confirm the ordered drug, concentration, programmed delivery, identified route and current haemodynamic target when handing over or replacing an infusion. Use an independent check where required by the facility. Document any interruption, concentration change or delivery discrepancy and the patient's response. Have a working-pump contingency plan; if an essential infusion fails, stay with the patient and arrange trained assistance immediately. Never improvise a bolus or use a compromised access site to compensate for interruption. The local drug-specific procedure determines safe changeover and alternative delivery.
+
+**Vasoactive support after return of circulation (AHA 2025, Part 11).** The adult post-arrest guideline recommends preventing hypotension, but the evidence does not establish a preferred vasopressor for treating post-arrest hypotension. Do not extrapolate the septic-shock first-line drug recommendation to every post-arrest patient. Confirm the individualized haemodynamic goal, assess perfusion and rhythm with each change, and communicate the response to the team. Agent choice and dose remain clinician-directed.
 
 ## 8. Monitoring parameters
 Blood pressure and MAP against target; heart rate and rhythm; skin perfusion and capillary refill; urine output; lactate trend where ordered; mental state; oxygen saturation; pump alarms and settings; infusion site and line patency; fluid balance; peripheral perfusion of limbs (fingers and toes); frequency set by unit policy.
@@ -182,6 +184,8 @@ D. Reporting a sudden fall in pressure after a bag change to the prescriber with
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians (content current as of 2018-02-02). https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
 
 - University of Illinois Chicago College of Pharmacy. *What are current recommendations for treatment of drug extravasation?* September 2026. Clinical pharmacy review, first-response section inspected, without reproducing drug-specific antidote doses or algorithms. https://dig.pharmacy.uic.edu/faqs/2026-2/september-2026-faqs/what-are-current-recommendations-for-treatment-of-drug-extravasation/ (accessed 2026-11-23).
+
+- S-AHA-POSTARREST-2025. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/post-cardiac-arrest-care (selected passages checked 2026-11-24; full appraisal and applicable rights review outstanding).
 
 ## 19. Local protocol note
 MAP targets, titration protocols, who may titrate, line and site selection, maximum peripheral duration, extravasation management, double-check policy, monitoring intervals and escalation thresholds follow your hospital's policies.
