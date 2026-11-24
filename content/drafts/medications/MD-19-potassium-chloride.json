@@ -190,6 +190,13 @@
             "L-POTASSIUM",
             "S-DAILYMED-KCL-CONC-2026"
           ]
+        },
+        {
+          "text": "The registered highly concentrated ready-to-use product is contraindicated with hyperkalaemia or known allergy to the product. Clarify unexpected potassium results or allergy before administration; do not infer suitability from a previous prescription.",
+          "support": "partial",
+          "sources": [
+            "L-POTASSIUM"
+          ]
         }
       ]
     },
@@ -199,6 +206,13 @@
         {
           "text": "The label lists adverse reactions from postmarketing reports; their frequency cannot be estimated reliably.",
           "support": "sourced",
+          "sources": [
+            "L-POTASSIUM"
+          ]
+        },
+        {
+          "text": "Postmarketing reports include conduction disturbances, severe arrhythmia or cardiac arrest, electrolyte disturbances, allergic swelling, and painful or inflamed infusion sites. Extravasation has been associated with serious local tissue, nerve and vascular damage. Frequency and causality cannot be established reliably from spontaneous reports.",
+          "support": "partial",
           "sources": [
             "L-POTASSIUM"
           ]
@@ -220,6 +234,13 @@
           "support": "sourced",
           "sources": [
             "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "New burning, swelling or pain at the infusion site requires prompt patient and access assessment and escalation for possible extravasation under the local protocol. Seek emergency help for instability or suspected serious allergic reaction.",
+          "support": "partial",
+          "sources": [
+            "L-POTASSIUM"
           ]
         }
       ]
@@ -307,6 +328,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Check for new pain, burning, swelling, redness or other access changes and urgently escalate suspected extravasation; reassess rhythm and potassium as ordered.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-POTASSIUM"
+      ]
     }
   ],
   "gaps": [

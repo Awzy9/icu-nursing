@@ -112,6 +112,13 @@
           "sources": [
             "S-ADA-HOSP-2026"
           ]
+        },
+        {
+          "text": "Concurrent thiazolidinediones can contribute to fluid retention or worsening heart failure. Review the medication list with the team and report new oedema, breathlessness or increasing oxygen needs; medicine changes remain clinician-directed.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN"
+          ]
         }
       ]
     },
@@ -133,8 +140,8 @@
           ]
         },
         {
-          "text": "Severe, life-threatening hypersensitivity, including anaphylaxis, can occur; discontinue, monitor and treat if indicated (a prescriber decision).",
-          "support": "sourced",
+          "text": "Severe systemic allergy, including anaphylaxis, can occur. Activate emergency help and stop the implicated IV insulin product under the emergency pathway; treat and monitor until the reaction resolves.",
+          "support": "partial",
           "sources": [
             "L-INSULIN"
           ]
@@ -152,6 +159,13 @@
           "sources": [
             "L-INSULIN",
             "S-UKKA-HK-2026"
+          ]
+        },
+        {
+          "text": "This registered IV insulin product is contraindicated during hypoglycaemia and with known allergy to human insulin or its ingredients. Suspected serious allergy requires immediate cessation of the implicated product and emergency care under the authorised pathway, with continued surveillance and a clinician-directed alternative insulin plan where essential.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN"
           ]
         }
       ]
@@ -313,6 +327,15 @@
       "sources": [
         "S-UKKA-HK-2026",
         "S-ADA-HOSP-2026"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm glucose and allergy status before starting; urgently escalate suspected hypersensitivity or new evidence of fluid retention, especially with concomitant thiazolidinediones.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-INSULIN"
       ]
     }
   ],

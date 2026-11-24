@@ -7835,6 +7835,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2a768ca33dacfff7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-15": [
@@ -7917,6 +7931,23 @@
    },
    {
     "hash": "81b48532b810d165",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-ADA-HOSP-2026",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-JBDS-HYPO-2023",
+     "S-RCP-NEWS2",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ae5b6fc044c868fe",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -8353,6 +8384,23 @@
    },
    {
     "hash": "96ce1314c2a58da6",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-POTASSIUM",
+     "S-AHRQ-TS",
+     "S-DAILYMED-KCL-CONC-2026",
+     "S-FDA-PUMP",
+     "S-NHS-SPS-HYPO-2024",
+     "S-NHS-SPS-MG",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "726af59019d8ea24",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

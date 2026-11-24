@@ -97,11 +97,18 @@
           "sources": [
             "L-HEPARIN"
           ]
+        },
+        {
+          "text": "Review concurrent antiplatelet medicines and NSAIDs with pharmacy or the prescriber because of additional bleeding risk. The registered label also describes changes in anticoagulant response when IV nitroglycerin is started or stopped; coordinate ordered coagulation monitoring and clinician-directed adjustments.",
+          "support": "partial",
+          "sources": [
+            "L-HEPARIN"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Fatal medication errors: heparin must not be used as a catheter lock flush product, and fatal haemorrhages have occurred when heparin vials were confused with catheter lock flush vials.",
@@ -127,6 +134,13 @@
         {
           "text": "Benzyl-alcohol-preserved products must not be used in neonates and infants.",
           "support": "sourced",
+          "sources": [
+            "L-HEPARIN"
+          ]
+        },
+        {
+          "text": "Before administration, clarify a history of HIT or heparin-associated thrombosis, allergy to heparin or porcine products, uncontrolled active bleeding, or inability to obtain the required coagulation tests for therapeutic anticoagulation. The registered product has a specific DIC-related bleeding exception; this is a specialist decision, not permission for bedside initiation.",
+          "support": "partial",
           "sources": [
             "L-HEPARIN"
           ]
@@ -254,6 +268,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Before administration, verify previous HIT, allergy, bleeding status, required coagulation monitoring and concurrent medicines; escalate any contraindication or unexpected result.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HEPARIN"
+      ]
     }
   ],
   "gaps": [
