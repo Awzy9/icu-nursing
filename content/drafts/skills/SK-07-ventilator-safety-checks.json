@@ -1,295 +1,311 @@
 {
- "skill_id": "SK-07",
- "number": 7,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Ventilator safety checks",
- "category": "airway-ventilation",
- "topic_drafts": [
-  "D01-T07",
-  "D01-T09"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-AARC-PVA",
-   "read": "full",
-   "use": "2024 AARC patient-ventilator assessment CPG"
-  },
-  {
-   "id": "S-ESICM-ARDS-2023",
-   "read": "full",
-   "use": "ARDS-specific only"
-  },
-  {
-   "id": "S-HAMILTON-C1",
-   "read": "partial",
-   "use": "manufacturer manual: applies to this device only"
-  },
-  {
-   "id": "S-DRAEGER-V500-IFU",
-   "read": "partial",
-   "use": "manufacturer manual: applies to this device only"
-  },
-  {
-   "id": "S-AACN-ALARM-2018",
-   "read": "not_read",
-   "use": "AACN alarm practice alert: summary only"
-  }
- ],
- "objectives": [
-  "Check and record ventilator values at the frequency set by policy and whenever the patient changes.",
-  "Respond to every alarm by going to the patient and securing ventilation first.",
-  "Know that settings and alarm limits are changed only with authority."
- ],
- "prerequisites": [
-  "Endotracheal tube care (SK-04)",
-  "Oxygen delivery devices (SK-08)"
- ],
- "sections": {
-  "indications": {
-   "support": "partial",
-   "items": [
+  "skill_id": "SK-07",
+  "number": 7,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Ventilator safety checks",
+  "category": "airway-ventilation",
+  "topic_drafts": [
+    "D01-T07",
+    "D01-T09"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Applies to every ventilated patient at every shift check and after any change in the patient.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA"
-     ]
-    }
-   ]
-  },
-  "safety": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Respond to every alarm by going to the patient; do not rely on silencing. If ventilation is inadequate and the cause is not immediately correctable, use the unit's emergency ventilation method and call for help.",
-     "support": "partial",
-     "sources": [
-      "S-HAMILTON-C1",
-      "S-DRAEGER-V500-IFU"
-     ]
+      "id": "S-AARC-PVA",
+      "read": "full",
+      "use": "2024 AARC patient-ventilator assessment CPG"
     },
     {
-     "text": "Do not change alarm limits or modes unless authorised by order, protocol and training; extreme limits make alarms useless.",
-     "support": "partial",
-     "sources": [
-      "S-HAMILTON-C1"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
+      "id": "S-ESICM-ARDS-2023",
+      "read": "full",
+      "use": "ARDS-specific only"
+    },
     {
-     "text": "Compare set and delivered tidal volume and note leaks; check circuit and cuff problems per policy; report asynchrony; do not change tidal volume, PEEP or other settings unless a local protocol and your competence allow it.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA"
-     ]
-    }
-   ]
-  },
-  "scope": {
-   "support": "local_protocol",
-   "items": [
+      "id": "S-HAMILTON-C1",
+      "read": "partial",
+      "use": "manufacturer manual: applies to this device only"
+    },
     {
-     "text": "Who may change settings and alarm limits is set by protocol and competence; the AARC guideline does not say who performs assessments.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "equipment": {
-   "support": "local_protocol",
-   "items": [
+      "id": "S-DRAEGER-V500-IFU",
+      "read": "partial",
+      "use": "manufacturer manual: applies to this device only"
+    },
     {
-     "text": "Device-specific alarm behaviour (reset, silence, priority) differs between manufacturers: use the manual for your device and software version only per your unit's documentation standard.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "S-AACN-ALARM-2018",
+      "read": "not_read",
+      "use": "AACN alarm practice alert: summary only"
     }
-   ]
+  ],
+  "objectives": [
+    "Check and record ventilator values at the frequency set by policy and whenever the patient changes.",
+    "Respond to every alarm by going to the patient and securing ventilation first.",
+    "Know that settings and alarm limits are changed only with authority."
+  ],
+  "prerequisites": [
+    "Endotracheal tube care (SK-04)",
+    "Oxygen delivery devices (SK-08)"
+  ],
+  "sections": {
+    "indications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Applies to every ventilated patient at every shift check and after any change in the patient.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Respond to an alarm by assessing the patient and the adequacy of ventilation immediately. Summon help early. If ventilation is ineffective and the problem is not quickly correctable, provide the trained local emergency ventilation response without waiting for a monitor or ventilator reset.",
+          "support": "partial",
+          "sources": [
+            "S-HAMILTON-C1",
+            "S-DRAEGER-V500-IFU"
+          ]
+        },
+        {
+          "text": "Do not change alarm limits or modes unless authorised by order, protocol and training; extreme limits make alarms useless.",
+          "support": "partial",
+          "sources": [
+            "S-HAMILTON-C1"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Compare set and delivered tidal volume and note leaks; check circuit and cuff problems per policy; report asynchrony; do not change tidal volume, PEEP or other settings unless a local protocol and your competence allow it.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        },
+        {
+          "text": "With the responsible respiratory/ICU team, assess measured tidal volume in relation to predicted body weight, plateau pressure, PEEP including intrinsic PEEP when relevant, oxygenation and humidification. Interpretation and changes to support require the patient's diagnosis, authorised role and local procedure; this is not a universal setting prescription.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Who may change settings and alarm limits is set by protocol and competence; the AARC guideline does not say who performs assessments.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "equipment": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Device-specific alarm behaviour (reset, silence, priority) differs between manufacturers: use the manual for your device and software version only per your unit's documentation standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "assessment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "ESICM 2023 recommendations apply to ARDS only; do not generalise ARDS-specific measures (such as prone positioning or neuromuscular blockade) to all ventilated patients.",
+          "support": "sourced",
+          "sources": [
+            "S-ESICM-ARDS-2023"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Routine check sequence (settings, circuit, humidification, alarms) follows the unit's checklist; no cross-manufacturer source was read.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Record set and delivered values, airway pressures, SpO2, end-tidal CO2 and waveforms at the policy frequency, and trends.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Call for help early for rising pressures, falling volumes, desaturation or distress.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record values, checks, alarms and responses per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "assessment": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "ESICM 2023 recommendations apply to ARDS only; do not generalise ARDS-specific measures (such as prone positioning or neuromuscular blockade) to all ventilated patients.",
-     "support": "sourced",
-     "sources": [
-      "S-ESICM-ARDS-2023"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "assessment",
+      "text": "Look at the patient first: work of breathing, chest movement, colour, SpO2.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
+    },
     {
-     "text": "Routine check sequence (settings, circuit, humidification, alarms) follows the unit's checklist; no cross-manufacturer source was read.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
+      "phase": "assessment",
+      "text": "Compare set and delivered tidal volume and look for leaks.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
+    },
     {
-     "text": "Record set and delivered values, airway pressures, SpO2, end-tidal CO2 and waveforms at the policy frequency, and trends.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Confirm alarms are on and limits are as ordered or per protocol; do not alter limits without authority.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-HAMILTON-C1"
+      ]
+    },
     {
-     "text": "Call for help early for rising pressures, falling volumes, desaturation or distress.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Check circuit connections and the cuff per the unit's checklist.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Record values, checks, alarms and responses per unit standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "escalation",
+      "text": "Activate urgent help and assess effective ventilation; provide the authorised emergency ventilation response if support is inadequate and the cause cannot promptly be corrected.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-HAMILTON-C1",
+        "S-DRAEGER-V500-IFU"
+      ]
+    },
+    {
+      "phase": "documentation",
+      "text": "Record settings, delivered values and any alarm and response.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "phase": "assessment",
+      "text": "Review actual delivered tidal volume, pressure and PEEP trends, oxygenation, humidification and patient synchrony with the respiratory team; do not independently change settings outside the authorised plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "assessment",
-   "text": "Look at the patient first: work of breathing, chest movement, colour, SpO2.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-AARC-PVA"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Compare set and delivered tidal volume and look for leaks.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-AARC-PVA"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Confirm alarms are on and limits are as ordered or per protocol; do not alter limits without authority.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-HAMILTON-C1"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Check circuit connections and the cuff per the unit's checklist.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "phase": "escalation",
-   "text": "If ventilation is inadequate and not quickly correctable, use the unit's emergency ventilation method and call for help.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-HAMILTON-C1",
-    "S-DRAEGER-V500-IFU"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record settings, delivered values and any alarm and response.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Alarm lists and causes, modes and weaning: out of this skill's sourced scope.",
-  "Cross-manufacturer alarm-management guidance and hospital alarm policy: not read.",
-  "AACN alarm alert full text: not accessible."
- ],
- "permissions": [
-  "Manufacturer manuals: reproduction permission required.",
-  "AARC CPGs: cite only.",
-  "AACN alerts: permission required."
- ],
- "references": [
-  {
-   "id": "S-AARC-PVA",
-   "title": "AARC Clinical Practice Guideline: Patient-Ventilator Assessment",
-   "publisher": "AARC",
-   "version": "2024; Respir Care 2024;69(8):1042-1054 (search)",
-   "url": "https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "RED (cite-only)",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-ESICM-ARDS-2023",
-   "title": "ESICM guidelines on acute respiratory distress syndrome (Intensive Care Med 2023;49:727-759)",
-   "publisher": "ESICM",
-   "version": "2023",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "YELLOW (cite-only for commercial platform)",
-   "permission_required": "Yes for commercial reuse"
-  },
-  {
-   "id": "S-HAMILTON-C1",
-   "title": "HAMILTON-C1 Operator's Manual, software 2.2.x, 624326/05, 2020-04-20",
-   "publisher": "Hamilton Medical AG",
-   "version": "Software 2.2.x; document 624326/05; 2020-04-20",
-   "url": "https://www.hamilton-medical.com/dam/jcr%3Ae8fbf16e-0e4b-47b1-a093-d896a1fbb14a/HAMILTON-C1_v2.2.x_ops-manual_en_624326.05.pdf",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "RED",
-   "permission_required": "Yes (reproduction)"
-  },
-  {
-   "id": "S-DRAEGER-V500-IFU",
-   "title": "Instructions for use, Infinity Acute Care System, Evita Infinity V500 ventilation unit, SW 2.n (document header dated 2012-07-11)",
-   "publisher": "Drager Medical",
-   "version": "Software 2.n; 2012; product listed End of Sales by the manufacturer",
-   "url": "https://usme.com/wp-content/uploads/2022/06/draeger-Medcial-evita-infinity-V500_enUS.pdf",
-   "accessed": "2026-11-15",
-   "read": "partial",
-   "licence_class": "RED",
-   "permission_required": "Yes (reproduction)"
-  },
-  {
-   "id": "S-AACN-ALARM-2018",
-   "title": "Practice Alert: Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry (published 2018-04-03; last reviewed 2026-09-16)",
-   "publisher": "American Association of Critical-Care Nurses",
-   "version": "2018; reviewed 2026",
-   "url": "https://www.aacn.org/clinical-resources/practice-alerts/alarm-management",
-   "accessed": "2026-11-15",
-   "read": "not_read",
-   "licence_class": "RED",
-   "permission_required": "Yes"
-  }
- ]
+  ],
+  "gaps": [
+    "Alarm lists and causes, modes and weaning: out of this skill's sourced scope.",
+    "Cross-manufacturer alarm-management guidance and hospital alarm policy: not read.",
+    "AACN alarm alert full text: not accessible."
+  ],
+  "permissions": [
+    "Manufacturer manuals: reproduction permission required.",
+    "AARC CPGs: cite only.",
+    "AACN alerts: permission required."
+  ],
+  "references": [
+    {
+      "id": "S-AARC-PVA",
+      "title": "AARC Clinical Practice Guideline: Patient-Ventilator Assessment",
+      "publisher": "AARC",
+      "version": "2024; Respir Care 2024;69(8):1042-1054 (search)",
+      "url": "https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-ESICM-ARDS-2023",
+      "title": "ESICM guidelines on acute respiratory distress syndrome (Intensive Care Med 2023;49:727-759)",
+      "publisher": "ESICM",
+      "version": "2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "YELLOW (cite-only for commercial platform)",
+      "permission_required": "Yes for commercial reuse"
+    },
+    {
+      "id": "S-HAMILTON-C1",
+      "title": "HAMILTON-C1 Operator's Manual, software 2.2.x, 624326/05, 2020-04-20",
+      "publisher": "Hamilton Medical AG",
+      "version": "Software 2.2.x; document 624326/05; 2020-04-20",
+      "url": "https://www.hamilton-medical.com/dam/jcr%3Ae8fbf16e-0e4b-47b1-a093-d896a1fbb14a/HAMILTON-C1_v2.2.x_ops-manual_en_624326.05.pdf",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "RED",
+      "permission_required": "Yes (reproduction)"
+    },
+    {
+      "id": "S-DRAEGER-V500-IFU",
+      "title": "Instructions for use, Infinity Acute Care System, Evita Infinity V500 ventilation unit, SW 2.n (document header dated 2012-07-11)",
+      "publisher": "Drager Medical",
+      "version": "Software 2.n; 2012; product listed End of Sales by the manufacturer",
+      "url": "https://usme.com/wp-content/uploads/2022/06/draeger-Medcial-evita-infinity-V500_enUS.pdf",
+      "accessed": "2026-11-15",
+      "read": "partial",
+      "licence_class": "RED",
+      "permission_required": "Yes (reproduction)"
+    },
+    {
+      "id": "S-AACN-ALARM-2018",
+      "title": "Practice Alert: Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry (published 2018-04-03; last reviewed 2026-09-16)",
+      "publisher": "American Association of Critical-Care Nurses",
+      "version": "2018; reviewed 2026",
+      "url": "https://www.aacn.org/clinical-resources/practice-alerts/alarm-management",
+      "accessed": "2026-11-15",
+      "read": "not_read",
+      "licence_class": "RED",
+      "permission_required": "Yes"
+    }
+  ]
 }

@@ -2157,6 +2157,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "8632574209962053",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-INS-STANDARDS",
+     "S-CDC-BSI-2011",
+     "S-PVP-META-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-04": [
@@ -2178,6 +2191,21 @@
    {
     "hash": "3d1492ea429880f2",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-INTL-PI-2026",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e9ed1fc6803befc7",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AARC-PVA",
@@ -2251,12 +2279,40 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "99f0c09c57a24698",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NHSGGC-TRACH-2022",
+     "S-AARC-SUCT",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-07": [
    {
     "hash": "579ef0d4e726c15e",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-ESICM-ARDS-2023",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "b8c652b2750880b9",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AACN-ALARM-2018",
@@ -2303,6 +2359,22 @@
    {
     "hash": "31015d36c5825084",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AARC-PVA",
+     "S-BTS-O2-2017",
+     "S-ERC-ALS-2025",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e77042dc98b62a8c",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AARC-O2",
