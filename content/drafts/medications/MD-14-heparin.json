@@ -40,6 +40,11 @@
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-ASH-HIT-2018",
+      "read": "partial",
+      "use": "ASH 2018 indexed recommendation statements on risk-based platelet monitoring and low-probability 4Ts assessment; full text not reappraised."
     }
   ],
   "sections": {
@@ -102,6 +107,14 @@
           "text": "Review concurrent antiplatelet medicines and NSAIDs with pharmacy or the prescriber because of additional bleeding risk. The registered label also describes changes in anticoagulant response when IV nitroglycerin is started or stopped; coordinate ordered coagulation monitoring and clinician-directed adjustments.",
           "support": "partial",
           "sources": [
+            "L-HEPARIN"
+          ]
+        },
+        {
+          "text": "For possible HIT, report the baseline and serial platelet counts, timing of heparin exposure, new thrombosis and alternative causes of thrombocytopenia. ASH recommends risk-based surveillance and a clinical probability assessment, rather than treating every platelet fall as HIT. Its guidance advises against empiric HIT treatment in low-probability cases. Urgently escalate concerning findings and identify all heparin exposures (including flushes and circuit anticoagulation) for the treating team's authorized management plan.",
+          "support": "partial",
+          "sources": [
+            "S-ASH-HIT-2018",
             "L-HEPARIN"
           ]
         }
@@ -282,7 +295,7 @@
   "gaps": [
     "Dosing, concentration, flushes and compatibility: deliberately not included.",
     "Low-molecular-weight heparins and reversal (protamine) were not covered.",
-    "Anticoagulation guideline text was not read for this entry."
+    "Selected indexed ASH HIT recommendations examined; full guideline appraisal, anticoagulation targets and local management pathways outstanding."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
