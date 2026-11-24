@@ -17013,6 +17013,17 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "084acb1c7eb82776",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "PX-06": [
@@ -17178,6 +17189,15 @@
    {
     "hash": "1a82dbf98b6ac0f8",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [],
+    "gaps": 5,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "bc59d8c999e1260c",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [],
     "gaps": 5,
