@@ -37,9 +37,12 @@ describe("the eight DRAFT equipment specifications", () => {
     expect(validateEquipmentSet(drafts)).toEqual([]);
     for (const d of drafts) expect(validateEquipmentDraft(d, known), d.equipment_id).toEqual([]);
     drafts.forEach((d, i) => expect(d.category).toBe(EQUIPMENT_CATEGORIES[i]));
-    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(2);
+    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(4);
+    const crrt = drafts.find((d) => d.equipment_id === "EQ-06")!;
+    expect(crrt.parameters.filter((p) => p.explanation !== null).map((p) => p.name)).toEqual(["Delivered dose against prescription", "Alarm state"]);
+    expect(crrt.parameters.slice(0, 2).every((p) => p.explanation === null)).toBe(true);
   });
-  it("are unreviewed, name manufacturer documents explicitly and never explain a parameter without a source (only EQ-01 has explained parameters)", () => {
+  it("are unreviewed, name manufacturer documents explicitly and never explain a parameter without a source", () => {
     for (const d of drafts) {
       expect(d.clinically_reviewed).toBe(false);
       for (const p of d.parameters) {

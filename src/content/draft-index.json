@@ -5224,7 +5224,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "d566a51f4d63363e"
+   "hash": "4961619d40ca5dc0"
   },
   {
    "key": "PX-07",
@@ -5244,7 +5244,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "d89d8005aace2a16"
+   "hash": "a57a512580c0f52e"
   },
   {
    "key": "PX-08",
@@ -5264,7 +5264,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "7cd64e96ca11a6a4"
+   "hash": "f34b0a4e74dbaf39"
   },
   {
    "key": "PX-09",
@@ -5309,7 +5309,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "cbd62ddea6e701a1"
+   "hash": "438a3165e976a351"
   },
   {
    "key": "PX-11",
@@ -5329,7 +5329,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "4e3807e31a4dff4d"
+   "hash": "cd551be53f36447f"
   },
   {
    "key": "PX-12",

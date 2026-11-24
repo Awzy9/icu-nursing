@@ -7720,6 +7720,18 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "4961619d40ca5dc0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-ADV-C74",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "PX-07": [
@@ -7733,12 +7745,34 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "a57a512580c0f52e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "PX-08": [
    {
     "hash": "7cd64e96ca11a6a4",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "f34b0a4e74dbaf39",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-CDC-HANDHYG-2024"
@@ -7785,6 +7819,17 @@
     "gaps": 4,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "438a3165e976a351",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-ADV-C74"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "PX-11": [
@@ -7802,6 +7847,17 @@
    {
     "hash": "4e3807e31a4dff4d",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "cd551be53f36447f",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-OPENRN-FUND-DOC"

@@ -1,71 +1,71 @@
 {
- "practice_id": "PX-10",
- "number": 10,
- "title": "A monitor alarm sounds: patient first",
- "area": "equipment-practice",
- "kind": "choice",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
- "fictional": true,
- "evidence_status": "partial",
- "arabic_status": "not_written",
- "gaps": [
-  "No published exercise may exist until the review phase: this is a specification only.",
-  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
-  "The exercise has not been tested with learners, and its Arabic version has not been written.",
-  "Only the patient-first principle is written."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "objectives": [
-  "Put the patient before the machine when an alarm sounds."
- ],
- "sources": [
-  {
-   "id": "S-OPENRN-ADV-C74",
-   "read": "full",
-   "use": "Open RN Advanced Skills 7.4: assess the patient first when the ECG changes"
-  }
- ],
- "required_sources": [
-  "Unit alarm policy"
- ],
- "setup": "A fictional monitored adult on a fictional unit; the monitor shows a new abnormal rhythm.",
- "stem": "What do you do first?",
- "options": [
-  {
-   "id": "a",
-   "text": "Go to the patient, assess for signs of reduced cardiac output and call for help if needed.",
-   "support": "sourced",
-   "sources": [
-    "S-OPENRN-ADV-C74"
-   ],
-   "correct": true,
-   "feedback": "When the ECG shows a new abnormal finding, assess the patient immediately."
-  },
-  {
-   "id": "b",
-   "text": "Silence the alarm and look at the printout later.",
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-ADV-C74"
-   ],
-   "correct": false,
-   "feedback": "Silencing is not a response."
-  },
-  {
-   "id": "c",
-   "text": "Change the monitor settings to stop the alarm.",
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-ADV-C74"
-   ],
-   "correct": false,
-   "feedback": "Alarm settings follow order or policy."
-  }
- ]
+  "practice_id": "PX-10",
+  "number": 10,
+  "title": "A monitor alarm sounds: patient first",
+  "area": "equipment-practice",
+  "kind": "choice",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+  "fictional": true,
+  "evidence_status": "partial",
+  "arabic_status": "not_written",
+  "gaps": [
+    "No published exercise may exist until the review phase: this is a specification only.",
+    "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+    "The exercise has not been tested with learners, and its Arabic version has not been written.",
+    "Only the patient-first principle is written."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  ],
+  "objectives": [
+    "Put the patient before the machine when an alarm sounds."
+  ],
+  "sources": [
+    {
+      "id": "S-OPENRN-ADV-C74",
+      "read": "full",
+      "use": "Open RN Advanced Skills 7.4: assess the patient first when the ECG changes"
+    }
+  ],
+  "required_sources": [
+    "Unit alarm policy"
+  ],
+  "setup": "A fictional monitored adult on a fictional unit; the monitor shows a new abnormal rhythm.",
+  "stem": "What do you do first?",
+  "options": [
+    {
+      "id": "a",
+      "text": "Go to the patient immediately, assess responsiveness, breathing, pulse and perfusion, and activate the appropriate urgent or arrest response if indicated.",
+      "support": "sourced",
+      "sources": [
+        "S-OPENRN-ADV-C74"
+      ],
+      "correct": true,
+      "feedback": "Assess the patient rather than treating the monitor tracing alone. Do not delay emergency help or CPR when arrest is suspected while checking the equipment."
+    },
+    {
+      "id": "b",
+      "text": "Silence the alarm and look at the printout later.",
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C74"
+      ],
+      "correct": false,
+      "feedback": "Silencing is not a response."
+    },
+    {
+      "id": "c",
+      "text": "Change the monitor settings to stop the alarm.",
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C74"
+      ],
+      "correct": false,
+      "feedback": "Alarm settings follow order or policy."
+    }
+  ]
 }
