@@ -113,6 +113,13 @@
           "sources": [
             "L-EPINEPHRINE"
           ]
+        },
+        {
+          "text": "The registered Gland Pharma label warns of pulmonary oedema, renal vasoconstriction with oliguria, and greater hypokalaemic effects with potassium-depleting medicines. Review ordered electrolyte and glucose results and respiratory and renal findings as part of patient-specific monitoring.",
+          "support": "partial",
+          "sources": [
+            "L-EPINEPHRINE"
+          ]
         }
       ]
     },
@@ -234,6 +241,15 @@
     {
       "kind": "escalate",
       "text": "Report new arrhythmia, chest pain or extravasation immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-EPINEPHRINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review ordered potassium and glucose trends during IV therapy, especially in patients receiving medicines that lower potassium. Escalate new arrhythmias, worsening oxygenation, suspected pulmonary oedema or declining urine output.",
       "critical": true,
       "support": "partial",
       "sources": [

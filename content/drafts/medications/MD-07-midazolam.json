@@ -90,6 +90,13 @@
           "sources": [
             "L-MIDAZOLAM"
           ]
+        },
+        {
+          "text": "The registered Civica label notes that impaired renal function can prolong elimination of midazolam and its metabolites, delaying recovery. Review renal trends and seek clinical reassessment of unexpected prolonged sedation; assess other possible causes in parallel.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
         }
       ]
     },
@@ -156,7 +163,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Escalate at once for hypoventilation, airway obstruction, apnoea, falling oxygen saturation or unexpected agitation.",
+          "text": "Activate emergency help for inadequate ventilation, airway obstruction, apnoea or severe physiological deterioration; assess and support ventilation under the authorised pathway. Escalate unexpected prolonged sedation, falling oxygen saturation or new agitation promptly; do not assume delayed awakening is solely medication-related.",
           "support": "partial",
           "sources": [
             "L-MIDAZOLAM"
@@ -233,6 +240,15 @@
     {
       "kind": "escalate",
       "text": "Call for help immediately for hypoventilation or apnoea.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review renal function and assess for delayed awakening after reduction or cessation. Escalate unexpected unresponsiveness and assess breathing and circulation before attributing it to residual sedation.",
       "critical": true,
       "support": "partial",
       "sources": [

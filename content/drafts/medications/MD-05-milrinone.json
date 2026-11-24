@@ -81,6 +81,13 @@
           "sources": [
             "L-MILRINONE"
           ]
+        },
+        {
+          "text": "The registered Mullan label describes prolonged elimination in renal impairment. Review renal function and request prescriber or pharmacist reassessment when it deteriorates; do not independently alter the prescription.",
+          "support": "partial",
+          "sources": [
+            "L-MILRINONE"
+          ]
         }
       ]
     },
@@ -126,7 +133,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Escalate immediately for ventricular ectopy that is increasing, sustained tachycardia, or any life-threatening rhythm.",
+          "text": "Activate emergency help for circulatory deterioration, symptomatic severe hypotension, sustained dangerous arrhythmia or collapse. Assess perfusion and rhythm while qualified help is summoned; urgently report increasing ventricular ectopy, worsening renal function or an unexpected haemodynamic response.",
           "support": "partial",
           "sources": [
             "L-MILRINONE"
