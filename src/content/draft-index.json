@@ -4316,11 +4316,6 @@
      "verified": "2026-11-14"
     },
     {
-     "id": "S-AARC-SUCT",
-     "licence_class": "RED",
-     "verified": "2026-11-14"
-    },
-    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4337,9 +4332,9 @@
     }
    ],
    "issues": [],
-   "gaps": 6,
+   "gaps": 7,
    "required_sources": 3,
-   "hash": "44a34277c93954e3"
+   "hash": "8fdc9c744b2c6dbe"
   },
   {
    "key": "SC-06",
@@ -4497,9 +4492,9 @@
     }
    ],
    "issues": [],
-   "gaps": 7,
+   "gaps": 8,
    "required_sources": 3,
-   "hash": "4f6da27df4a269c0"
+   "hash": "e7ad55638839be2b"
   },
   {
    "key": "SC-10",

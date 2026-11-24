@@ -20,7 +20,6 @@
   "related": {
     "skills": [
       "SK-08",
-      "SK-06",
       "SK-04",
       "SK-13"
     ],
@@ -40,11 +39,6 @@
       "id": "S-AARC-O2",
       "read": "full",
       "use": "AARC oxygen CPG: oxygen use, monitoring"
-    },
-    {
-      "id": "S-AARC-SUCT",
-      "read": "full",
-      "use": "AARC suctioning CPG: suction only when indicated, hyperoxygenation, stopping for complications"
     },
     {
       "id": "S-RCP-NEWS2",
@@ -73,7 +67,8 @@
     "No source read gives a stepwise sequence for sudden desaturation; the steps are assembled from assessment, monitoring and escalation statements and have not been tested against a protocol.",
     "Oxygen flow, targets and device choice are deliberately not written; they come from the order and policy.",
     "Escalation score thresholds are local and are not written.",
-    "The pleural emergency differential was strengthened without adding an independently validated tension pneumothorax diagnosis or invasive procedure: specific thoracic emergencies require local ICU/pleural-team protocols and specialist sign-off."
+    "The pleural emergency differential was strengthened without adding an independently validated tension pneumothorax diagnosis or invasive procedure: specific thoracic emergencies require local ICU/pleural-team protocols and specialist sign-off.",
+    "2026-11-24 AI source-scope check: the case has no artificial airway; removed AARC artificial-airway suction citation and skill link, used the registered Open RN oxygenation source for oral secretion assessment, and removed partial credit for leaving the deteriorating patient. Independent assessment of all scenario choices remains required."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -124,10 +119,10 @@
         },
         {
           "text": "Reposition the probe and leave to see whether the number improves.",
-          "points": 1,
+          "points": 0,
           "next": 2,
           "scope": "independent_nursing",
-          "feedback": "Checking the probe is sensible, but a falling reading in a patient who is breathing faster must not be treated as a probe problem without looking at the patient.",
+          "feedback": "Checking the probe can help establish signal reliability, but leaving a visibly deteriorating patient without assessing breathing is unsafe. Remain with the patient, reassess promptly and summon help.",
           "consequence": "A minute passes before you see that the patient really is struggling.",
           "support": "partial",
           "sources": [
@@ -177,17 +172,17 @@
       ],
       "options": [
         {
-          "text": "Call for help according to the unit's process, keep the patient on oxygen as prescribed and policy allows, and clear the secretions with suction only because the need has been assessed, following the unit's suctioning method.",
+          "text": "Activate urgent help according to the unit pathway, continue prescribed or protocol-authorised oxygen and reassessment, and assess whether the patient cannot clear oral secretions. Only a trained nurse should use the appropriate non-invasive oral suction method under local policy when indicated; do not delay emergency assessment or assume secretions are the sole cause.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "Respiratory monitoring includes noting the need for suctioning; the AARC suctioning guideline supports suctioning when indicated and not routinely, and the nurse should stop and escalate if the patient deteriorates.",
-          "consequence": "The airway is cleared and the saturation begins to rise while help is on the way.",
+          "feedback": "This fictional patient is breathing without an artificial airway. Open RN Nursing Fundamentals describes oral suction for retained mouth or pharyngeal secretions. The AARC artificial-airway guideline does not establish suction technique for this patient. Escalate ongoing respiratory compromise and reassess the response.",
+          "consequence": "The responding team assesses the patient and the appropriate secretion-clearance measures; breathing effort and oxygenation are reassessed rather than assuming the problem is resolved.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8",
-            "S-AARC-SUCT",
-            "S-AARC-O2"
+            "S-AARC-O2",
+            "S-RCP-NEWS2"
           ]
         },
         {
@@ -195,11 +190,12 @@
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
-          "feedback": "Suctioning is done when indicated and carries its own risks; repeated suctioning without reassessment can worsen the patient's oxygenation.",
+          "feedback": "Repeating suction without reassessing indication, patient tolerance and the cause of deterioration is unsafe. Suction is not a substitute for urgent clinical assessment.",
           "consequence": "The patient becomes more distressed and the saturation falls further during suctioning.",
           "support": "partial",
           "sources": [
-            "S-AARC-SUCT"
+            "S-OPENRN-FUND-CH8",
+            "S-RCP-NEWS2"
           ]
         },
         {
@@ -287,7 +283,7 @@
   "debrief": {
     "learning_points": [
       "Go to the patient first: assess the airway, breathing effort, colour, lung sounds and heart rate, and use the oximeter reading as one finding among others.",
-      "Stay with the patient, give oxygen as prescribed and policy allows, and clear secretions by suction only when there is a need.",
+      "Stay with the patient, support oxygenation within authorised policy and consider oral secretion clearance only when indicated and within trained scope. Artificial-airway suction techniques do not apply to this case.",
       "Escalate early when the saturation does not recover, and reassess the same parameters after every intervention.",
       "Do not silence alarms or change limits and devices without authority; hand over with SBAR and document the response.",
       "A wet cough does not exclude pneumothorax, an obstructed drain, or other causes of deterioration. New asymmetric chest movement, hypotension or severe respiratory compromise requires urgent skilled response; do not delay for device adjustments or chest radiography."
@@ -296,10 +292,6 @@
       {
         "kind": "skill",
         "code": "SK-08"
-      },
-      {
-        "kind": "skill",
-        "code": "SK-06"
       },
       {
         "kind": "skill",

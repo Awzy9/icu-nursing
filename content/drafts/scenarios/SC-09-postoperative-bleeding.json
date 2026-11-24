@@ -86,7 +86,8 @@
     "Fluids, blood products and reversal of anticoagulation are prescribed; the scenario does not say what to give.",
     "The tranexamic acid label read does not cover surgical bleeding and is not used.",
     "This case is a nursing recognition and escalation exercise, not a major-haemorrhage algorithm. Exact emergency call thresholds, component availability, coagulation correction and return-to-theatre decisions remain local clinician decisions.",
-    "A 2025 ISTH updated DIC framework and 2026 follow-up review are checked at abstract level only; this surgical case does not teach formal scoring, DIC therapy, emergency transfusion component selection, massive-haemorrhage protocols or viscoelastic interpretation."
+    "A 2025 ISTH updated DIC framework and 2026 follow-up review are checked at abstract level only; this surgical case does not teach formal scoring, DIC therapy, emergency transfusion component selection, massive-haemorrhage protocols or viscoelastic interpretation.",
+    "2026-11-24 AI scoring check: removed partial credit for leaving an actively deteriorating postoperative bleeding patient unattended. This is an unvalidated educational scoring correction, not a clinical approval."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -218,14 +219,15 @@
         },
         {
           "text": "Leave the room to collect blood products you think will be needed.",
-          "points": 1,
+          "points": 0,
           "next": 3,
           "scope": "independent_nursing",
-          "feedback": "Preparing for blood products is sensible, but not at the cost of leaving a deteriorating patient alone; ask a colleague to help.",
+          "feedback": "Leaving an actively deteriorating patient unobserved to collect blood products is unsafe. Stay with the patient and coordinate the urgent team's authorised blood-product preparation through another staff member.",
           "consequence": "The patient is unobserved for several minutes while deteriorating.",
           "support": "partial",
           "sources": [
-            "S-OPENSTAX-MS-27-3"
+            "S-OPENRN-HA-POSTOP",
+            "S-AHRQ-TS"
           ]
         }
       ]

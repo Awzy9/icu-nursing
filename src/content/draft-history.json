@@ -6187,6 +6187,21 @@
     "gaps": 6,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "8fdc9c744b2c6dbe",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 7,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-06": [
@@ -6368,6 +6383,24 @@
      "S-OPENSTAX-MS-27-3"
     ],
     "gaps": 7,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "e7ad55638839be2b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-ARUP-DIC",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 8,
     "required_sources": 3,
     "issues": 0
    }
