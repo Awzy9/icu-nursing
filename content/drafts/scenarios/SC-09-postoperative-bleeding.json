@@ -314,7 +314,7 @@
       ],
       "options": [
         {
-          "text": "Give ordered resuscitation with emergency transfusion identity and reaction checks. Reassess perfusion, urine and temperature; report loss, coagulation, ionized calcium and potassium trends without diagnosing DIC. Hand over to theatre.",
+          "text": "Give ordered resuscitation using emergency transfusion identification and reaction-monitoring procedures. Reassess perfusion, urine and temperature; report loss, coagulation, ionized calcium and potassium without assigning a DIC diagnosis. Hand over.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
@@ -333,7 +333,7 @@
           ]
         },
         {
-          "text": "Start ordered blood without completing the hospital's emergency identification and patient-monitoring safeguards, reasoning that the urgency of bleeding makes the checks unnecessary until transfer; document administration and notify the receiving team later.",
+          "text": "Start the blood without completing the hospital's emergency identification and patient-monitoring safeguards, reasoning that the urgency of bleeding makes the checks unnecessary until transfer; document administration and notify the receiving team later.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",

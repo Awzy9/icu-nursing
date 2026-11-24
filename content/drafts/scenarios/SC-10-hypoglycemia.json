@@ -101,7 +101,7 @@
       ],
       "options": [
         {
-          "text": "Check alertness, ability to swallow safely and permission for oral intake. Activate the hypoglycaemia pathway, give approved rapid oral rescue only if safe and repeat glucose per protocol.",
+          "text": "Check alertness, ability to swallow safely and permitted oral intake. Activate the hypoglycaemia pathway, give approved rapid oral rescue only if safe and repeat glucose per protocol.",
           "points": 2,
           "next": 2,
           "scope": "order_or_protocol_required",

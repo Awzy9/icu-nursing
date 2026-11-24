@@ -12649,6 +12649,27 @@
     "gaps": 8,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "fc18adaa907d78d0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-AOA-BLOOD-2025",
+     "S-ARUP-DIC",
+     "S-BSH-ATR",
+     "S-ISTH-DIC-2025",
+     "S-NBA-CRITICAL-BLEED-2025",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-10": [
@@ -12765,6 +12786,20 @@
    },
    {
     "hash": "4e0aa58d13786c5e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-ADA-HOSP-2026",
+     "S-AHRQ-TS",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "e3f28c34f4670e59",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13341,6 +13376,22 @@
     "gaps": 6,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "43f66d9b2301b96e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -13472,6 +13523,21 @@
    },
    {
     "hash": "724dd90d56513b82",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "4d833de13a9e0af8",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

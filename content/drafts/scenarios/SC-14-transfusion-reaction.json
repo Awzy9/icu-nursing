@@ -110,7 +110,7 @@
       ],
       "options": [
         {
-          "text": "Stop the transfusion immediately; assess patient/vitals, notify team and blood bank, verify identity. Maintain IV access without flushing implicated blood; preserve product/set per policy. Do not independently restart.",
+          "text": "Stop the transfusion immediately; assess patient/vitals, notify team and blood bank, recheck patient/component identity. Maintain IV access without pushing blood remaining in implicated tubing into patient; preserve product/set per policy. Do not independently restart.",
           "points": 2,
           "next": 2,
           "scope": "escalation",

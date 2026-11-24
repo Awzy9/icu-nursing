@@ -176,7 +176,7 @@
       ],
       "options": [
         {
-          "text": "Escalate persistent alarms and downtime to CRRT team and prescriber. Blood return requires trained confirmation of safety under device instructions and local procedure; document treatment and blood loss.",
+          "text": "Escalate alarms and downtime to CRRT team/prescriber. Do not attempt blood return unless the trained operator confirms it is safe under device instructions and local procedure; document blood loss and downtime.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -256,7 +256,7 @@
       ],
       "options": [
         {
-          "text": "Document alarms, downtime, delivered therapy and net fluid balance. With citrate, report falling systemic ionized calcium, rising total-to-ionized calcium ratio or calcium needs, and worsening acid-base findings; coordinate prescribed response.",
+          "text": "Record alarms, downtime, delivered therapy and net fluid balance. If regional citrate anticoagulation is in use, report falling systemic ionized calcium, rising total-to-ionized ratio or calcium needs, and worsening acid-base findings; coordinate prescribed care.",
           "points": 2,
           "next": null,
           "scope": "escalation",

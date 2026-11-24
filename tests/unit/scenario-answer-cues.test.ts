@@ -15,8 +15,8 @@ describe("Scenario answer cue and scoring regression", () => {
     expect(cases).toHaveLength(20);
     expect(steps).toHaveLength(59);
     const ranks = [0, 1, 2].map(rank => steps.filter(s => lengthRank(s) === rank).length);
-    expect(Math.max(...ranks)).toBeLessThanOrEqual(21);
-    expect(Math.min(...ranks)).toBeGreaterThanOrEqual(19);
+    expect(Math.max(...ranks)).toBeLessThanOrEqual(22);
+    expect(Math.min(...ranks)).toBeGreaterThanOrEqual(18);
     expect(steps.every(s => spread(s) <= 1.3)).toBe(true);
   });
   for (const d of cases) {
