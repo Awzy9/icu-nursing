@@ -444,7 +444,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "da2c28f836dbde23"
+   "hash": "1a2752e223759afe"
   },
   {
    "key": "D04-T02",
@@ -634,7 +634,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "377da100e3431980"
+   "hash": "786113dbc54a452b"
   },
   {
    "key": "D04-T03",
@@ -789,7 +789,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "7da8deddebf7161a"
+   "hash": "931b026ff71c98e2"
   },
   {
    "key": "D07-T01",
@@ -864,7 +864,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "a113f4fc4804afdd"
+   "hash": "e77302a88f20ba88"
   },
   {
    "key": "D09-T03",
@@ -1509,7 +1509,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "328717f1343609a3"
+   "hash": "b9d1d268e865a951"
   },
   {
    "key": "D08-T02",
