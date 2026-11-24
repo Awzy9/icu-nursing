@@ -11,7 +11,9 @@ describe("ICU nutrition evidence reconciliation", () => {
   });
   it("does not confer approval or remove source limitations", () => {
     expect(s).toContain("clinically_reviewed: false");
-    expect(s).toContain("sources_not_read: [S-ASPEN]");
+    expect(s).toMatch(/^sources: \[.*S-ASPEN.*\]/m);
+    expect(s).toContain("complete ASPEN/SCCM appraisal remains outstanding");
+    expect(s).toContain("Trials did not include malnourished patients");
     expect(s).toContain("full appraisal outstanding");
     expect(s).toContain("Withhold feed, medicines and flushes when tube position is not confirmed");
   });
