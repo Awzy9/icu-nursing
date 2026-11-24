@@ -280,7 +280,7 @@
     },
     {
       "phase": "assessment",
-      "text": "Check the drain system is below the insertion site, upright, sealed and has adequate water.",
+      "text": "For a conventional underwater-seal system, check upright position below the insertion site, secure connections and the device-specific seal water level; follow the manufacturer's instructions for other systems.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -307,7 +307,7 @@
     },
     {
       "phase": "procedure",
-      "text": "Do not clamp a bubbling drain and do not start or change suction without instruction.",
+      "text": "Avoid clamping a bubbling pneumothorax drain except under specialist supervision. Follow the documented fluid-drainage plan for an effusion and do not independently change suction.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -359,6 +359,15 @@
       "sources": [
         "N-BTS-PCS-2023",
         "N-NCBI-OPENRN-CHEST"
+      ]
+    },
+    {
+      "phase": "escalation",
+      "text": "If repetitive coughing or chest pain occurs during pleural effusion drainage, assess immediately, promptly pause or clamp the fluid drain in accordance with the documented pleural-team instruction, and obtain urgent clinical help. Do not apply this instruction to a bubbling pneumothorax drain.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "N-BTS-PCS-2023"
       ]
     }
   ],

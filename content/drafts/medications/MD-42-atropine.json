@@ -1,251 +1,267 @@
 {
- "med_id": "MD-42",
- "number": 42,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Atropine",
- "drug_class": "Anticholinergic (muscarinic antagonist)",
- "category": "reversal-emergency",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Anticholinergic for temporary blockade of severe or life-threatening muscarinic effects, for example as an antisialagogue, an antivagal agent and an antidote for organophosphorus or muscarinic mushroom poisoning. Nursing focus: tachycardia, glaucoma, obstruction and urinary retention.",
- "batch": 5,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-ATROPINE",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-ATROPINE",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-42",
+  "number": 42,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Atropine",
+  "drug_class": "Anticholinergic (muscarinic antagonist)",
+  "category": "reversal-emergency",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Anticholinergic for temporary blockade of severe or life-threatening muscarinic effects, for example as an antisialagogue, an antivagal agent and an antidote for organophosphorus or muscarinic mushroom poisoning. Nursing focus: tachycardia, glaucoma, obstruction and urinary retention.",
+  "batch": 5,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-ATROPINE",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-ATROPINE",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates atropine sulfate injection for temporary blockade of severe or life-threatening muscarinic effects, for example as an antisialagogue, an antivagal agent and as an antidote for certain poisonings.",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitor heart rate and rhythm, and report a fast heart rate or any new symptom.",
+          "support": "partial",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label warns atropine-induced tachycardia can increase myocardial oxygen demand in coronary artery disease, may precipitate acute glaucoma, may convert partial pyloric stenosis into complete obstruction, may lead to complete urinary retention in prostatic hypertrophy, and may thicken bronchial secretions into plugs in patients with chronic lung disease.",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        },
+        {
+          "text": "Atropine can thicken bronchial secretions and contribute to mucus plugging in people with chronic lung disease. Assess respiratory effort, secretion clearance and oxygenation; report new signs of airway obstruction rather than relying on the oxygen saturation alone.",
+          "support": "partial",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Tachycardia: in patients with coronary artery disease the label advises restricting total use, because atropine-induced tachycardia raises myocardial oxygen demand (limits are a prescriber decision).",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        },
+        {
+          "text": "Atropine may precipitate acute glaucoma.",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        },
+        {
+          "text": "Atropine may convert partial organic pyloric stenosis into complete obstruction.",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        },
+        {
+          "text": "Atropine may lead to complete urinary retention in patients with prostatic hypertrophy.",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        },
+        {
+          "text": "Viscid bronchial plugs are also listed among the warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists adverse reactions identified during post-approval use, reported voluntarily, so their frequency cannot be estimated reliably.",
+          "support": "sourced",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Activate emergency response for serious airway compromise or circulatory instability. Urgently report new tachyarrhythmia, chest pain, eye pain, urinary retention or suspected mucus plugging.",
+          "support": "partial",
+          "sources": [
+            "L-ATROPINE"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "observe",
+      "text": "Monitor heart rate and rhythm.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ATROPINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check for glaucoma, prostatic enlargement or pyloric obstruction history.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "L-ATROPINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Monitor urine output and bladder.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-ATROPINE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report tachycardia, chest pain or eye pain promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ATROPINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess secretion clearance, work of breathing and oxygenation in patients with chronic lung disease; report suspected mucus plugging and airway obstruction.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ATROPINE"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record observations.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    }
+  ],
+  "gaps": [
+    "Use in bradycardia and cardiac arrest (guideline-based) was not read; this entry covers label content only.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "d5e07279-48ca-4f83-9633-299e65a7f821",
+    "label_version": "8",
+    "effective_time": "20261020",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label indicates atropine sulfate injection for temporary blockade of severe or life-threatening muscarinic effects, for example as an antisialagogue, an antivagal agent and as an antidote for certain poisonings.",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitor heart rate and rhythm, and report a fast heart rate or any new symptom.",
-     "support": "partial",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label warns atropine-induced tachycardia can increase myocardial oxygen demand in coronary artery disease, may precipitate acute glaucoma, may convert partial pyloric stenosis into complete obstruction, may lead to complete urinary retention in prostatic hypertrophy, and may thicken bronchial secretions into plugs in patients with chronic lung disease.",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Tachycardia: in patients with coronary artery disease the label advises restricting total use, because atropine-induced tachycardia raises myocardial oxygen demand (limits are a prescriber decision).",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    },
-    {
-     "text": "Atropine may precipitate acute glaucoma.",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    },
-    {
-     "text": "Atropine may convert partial organic pyloric stenosis into complete obstruction.",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    },
-    {
-     "text": "Atropine may lead to complete urinary retention in patients with prostatic hypertrophy.",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    },
-    {
-     "text": "Viscid bronchial plugs are also listed among the warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists adverse reactions identified during post-approval use, reported voluntarily, so their frequency cannot be estimated reliably.",
-     "support": "sourced",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate for a fast heart rate, chest pain, eye pain, urinary retention or new breathing difficulty.",
-     "support": "partial",
-     "sources": [
-      "L-ATROPINE"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Monitor heart rate and rhythm.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-ATROPINE"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Check for glaucoma, prostatic enlargement or pyloric obstruction history.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "L-ATROPINE"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Monitor urine output and bladder.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "L-ATROPINE"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report tachycardia, chest pain or eye pain promptly.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-ATROPINE"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record observations.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Use in bradycardia and cardiac arrest (guideline-based) was not read; this entry covers label content only.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "d5e07279-48ca-4f83-9633-299e65a7f821",
-  "label_version": "8",
-  "effective_time": "20261020",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

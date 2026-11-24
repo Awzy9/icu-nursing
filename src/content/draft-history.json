@@ -2587,6 +2587,19 @@
     "gaps": 5,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f183e95adf397499",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-BTS-PCS-2023",
+     "N-NCBI-OPENRN-CHEST",
+     "N-OPENRN-ADV-PDF"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-14": [
@@ -2655,6 +2668,18 @@
    {
     "hash": "eafa9011c79b1df1",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-INTL-PI-2026"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "86b244359fb77c46",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AARC-PVA",
@@ -2784,6 +2809,19 @@
    {
     "hash": "fa201a69a332958c",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-OPENRN-ADV-C7"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "98f4a2a8515dca47",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AACN-ALARM-2018",
@@ -3126,6 +3164,19 @@
    {
     "hash": "51e10109ed6ebd51",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "53d68c4cae779aee",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-CPOT-REVIEW-2024",
@@ -4554,6 +4605,20 @@
     "gaps": 6,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0478eff526c94e1f",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MAGNESIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-19": [
@@ -4763,6 +4828,20 @@
    },
    {
     "hash": "5f61c981f2ef5abe",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 7,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "4a9cbafb5d2a770d",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -6357,6 +6436,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "4e46c9502cb8392d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ATROPINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-43": [
@@ -6738,6 +6831,20 @@
    {
     "hash": "fa3a74678d759ccb",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LEVETIRACETAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "99ac9f68a2c2f617",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-LEVETIRACETAM",
