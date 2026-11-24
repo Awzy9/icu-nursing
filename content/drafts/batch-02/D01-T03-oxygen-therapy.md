@@ -46,6 +46,8 @@ Oxygen delivery is adjusted many times a shift. Nurses are usually first to noti
 - Protect skin under masks, cannulae and straps; AARC 2024 strongly recommends assessing the skin around artificial airways and NIV interfaces and suggests assessing dressings.
 - Keep oxygen equipment away from ignition sources; for defibrillation, follow the oxygen safety steps in D02-T15.
 
+**Review the response to noninvasive support (ATS 2026).** At initiation and after a prescribed change, record the device, delivered oxygen setting, breathing effort, respiratory rate, saturation relative to the ordered target, consciousness, circulation and relevant blood gas trends. For example, a patient receiving HFNC whose saturation improves but whose effort increases and alertness falls may still be deteriorating. Escalate immediately for impaired airway protection or acute instability; do not wait for the next scheduled blood gas or a respiratory score. The team determines the cause, modality and need for invasive support. This is a nursing application of the guideline's emphasis on close monitoring and timely escalation, not a validated failure score.
+
 ## 8. Monitoring parameters
 SpO₂ with trend and probe check; respiratory rate and effort; mental state; heart rate and blood pressure; FiO₂ or flow and device; ABG results where taken; skin condition at contact points; patient comfort (dry mouth, nasal dryness); alarms set per policy.
 
