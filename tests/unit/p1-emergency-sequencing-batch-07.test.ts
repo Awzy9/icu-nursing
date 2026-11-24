@@ -13,10 +13,12 @@ const correct = (s: {options:{points:number;text:string;feedback:string;conseque
 describe("P1 batch 07 emergency response sequencing safeguards", () => {
   it("calls for urgent help at the first hypotension step, not after serial monitoring", () => {
     const a = correct(hypotension.steps[0]);
-    expect(hypotension.steps[0].info).toMatch(/drowsy/);
+    expect(hypotension.steps[0].info).toMatch(/slower to respond than an hour earlier/);
+    expect(hypotension.steps[0].observations).toContainEqual(expect.objectContaining({ key: "mental", value: "Slower to respond" }));
     expect(a.text).toMatch(/activate urgent clinical help now/);
     expect(a.text).toMatch(/while you remain with the patient/);
-    expect(a.consequence).toMatch(/summoned immediately/);
+    expect(a.consequence).toMatch(/without delaying emergency help/);
+    expect(a.feedback).toMatch(/immediate clinical escalation must happen together with checking a measurement/);
     expect(a.sources).toContain("S-ESICM-SHOCK-2025");
     expect(hypotension.sources.find((x:{id:string}) => x.id === "S-ESICM-SHOCK-2025")?.read).toBe("partial");
     expect(correct(hypotension.steps[2]).text).toMatch(/Escalate again/);
@@ -47,7 +49,9 @@ describe("P1 batch 07 emergency response sequencing safeguards", () => {
     expect(a.text).toMatch(/prompt IM adrenaline/);
     expect(a.text).toMatch(/without awaiting routine ward-round orders/);
     expect(a.feedback).toMatch(/never treat an antihistamine as the first-line substitute/);
-    expect(anaphylaxis.steps[1].info).toMatch(/emergency anaphylaxis pathway has been activated/);
+    expect(anaphylaxis.steps[1].info).toMatch(/emergency pathway is active/);
+    expect(anaphylaxis.steps[1].info).toMatch(/preparing or administering authorized first-line IM adrenaline/);
+    expect(anaphylaxis.steps[1].info).toMatch(/must not interrupt urgent treatment/);
     expect(b.feedback).toMatch(/not a reason to delay a time-critical/);
     expect(anaphylaxis.gaps.join(" ")).toMatch(/May 2021/);
   });
