@@ -105,16 +105,16 @@ A nurse takes a sample from an arterial line, notes the FiO₂ and ventilator se
 A 54-year-old with vomiting has pH 7.52, PaCO₂ 42 mm Hg and HCO₃ 33 mEq/L. This pattern suggests **metabolic alkalosis**, but PaCO₂ being within a laboratory reference interval **does not establish the absence of compensation**. The nurse reports the result with the history of vomiting and nasogastric suction, checks mental state and breathing, and documents the values; the prescriber reviews compensation and possible concurrent disorders and decides on treatment.
 
 ## 17. MCQs
-**Q1 (application).** A nurse reviews a patient's arterial blood gas: pH 7.28, PaCO₂ 58 mm Hg and HCO₃ 25 mEq/L. What does the textbook's method identify?
+**Q1 (application).** A nurse reviews an arterial blood gas: pH 7.26, PaCO₂ 58 mm Hg and HCO₃ 25 mEq/L. What is the predominant acid–base disturbance?
 A. Metabolic acidosis, because the pH is below 7.35 and the bicarbonate level is within its normal range.
 B. Respiratory alkalosis, because a raised PaCO₂ always makes the blood more alkaline and raises the pH.
 C. Metabolic alkalosis, because the PaCO₂ is higher than the normal range and the bicarbonate is unchanged.
 D. Respiratory acidosis, because the pH is low and the PaCO₂ is high, moving in opposite directions.
 **Answer: D.**
-**Why correct:** The low pH (acidemia), increased PaCO₂ and HCO₃ within the laboratory reference interval are consistent with a predominantly respiratory-acidosis pattern. An expected-compensation calculation and clinical context are required before excluding a coexisting disturbance; this introductory question does not establish the complete diagnosis.
-**Why not A:** In metabolic acidosis HCO₃ is below 22.
+**Why correct:** Acidemia with elevated PaCO₂ supports a predominant respiratory-acidosis pattern. The bicarbonate is near the usual reference interval; evaluate expected acute or chronic compensation and clinical context before concluding that the disturbance is isolated. A single blood gas does not establish the cause.
+**Why not A:** A primary metabolic acidosis would lower bicarbonate relative to the patient's expected value; the predominant pattern here is respiratory. A concurrent metabolic process cannot be excluded just by a reference interval.
 **Why not B:** A high PaCO₂ makes the blood more acidic.
-**Why not C:** The pH is low, not high, so metabolic alkalosis does not fit this blood gas.
+**Why not C:** A primary metabolic alkalosis raises bicarbonate; it is not the predominant disturbance in this sample.
 
 **Q2 (judgment).** A patient has a rising PaCO₂ and is increasingly drowsy, but SpO₂ is 96 % on oxygen. What is the best interpretation?
 A. The patient is fine, because the oxygen saturation is within the target range, so the rest can wait.
@@ -122,7 +122,7 @@ B. Oxygen saturation can be normal in hypercapnia, so the nurse should assess ai
 C. The patient is only sleepy because of the time of day, so the nurse should leave the patient to rest quietly for now and look again later.
 D. The ABG result must be wrong, so the nurse should repeat it after a few hours before telling anyone.
 **Answer: B.**
-**Why correct:** The textbook states SaO₂ may be normal with hypercapnia and should not be the determining factor.
+**Why correct:** Oximetry estimates oxygen saturation, not ventilation or CO₂ clearance. New drowsiness with rising PaCO₂ requires immediate assessment and urgent help, even with satisfactory SpO₂ on oxygen. Assess airway protection, work of breathing and ventilation; prepare authorized ventilatory support and repeat gas assessment without delaying urgent care.
 **Why not A:** A normal SpO₂ does not exclude hypoventilation.
 **Why not C:** Drowsiness with rising CO₂ is a warning sign.
 **Why not D:** Delaying the response risks deterioration.
@@ -133,7 +133,7 @@ B. Warm the syringe in the hand for several minutes and then send it, so that th
 C. Treat the sample as unacceptable, because a specimen with visible air bubbles is a contraindication, and obtain a new one.
 D. Add some saline to the syringe to replace the lost volume and then send the sample to the analyser.
 **Answer: C.**
-**Why correct:** The guideline lists a specimen containing visible air bubbles as a contraindication to analysis, and air as a source of erroneous results.
+**Why correct:** AARC 2013 lists visible air bubbles as a reason not to analyze a specimen as received. Air contamination can distort gas measurements. Follow laboratory and sampling policy for an unacceptable specimen and arrange recollection when indicated; do not attempt to correct a compromised result by warming or adding fluid. Do not delay emergency clinical assessment for a new sample.
 **Why not A:** The result could lead to inappropriate treatment.
 **Why not B:** Warming does not correct air contamination.
 **Why not D:** Saline contamination is itself a cause of error.
@@ -155,7 +155,7 @@ B. It is not recommended as a substitute for an arterial PaO₂ (grade 1A).
 C. It is acceptable in children, in whom venous samples are considered equivalent to arterial ones.
 D. It is the preferred sample for ventilated patients because it avoids the risks of arterial puncture.
 **Answer: B.**
-**Why correct:** The AARC 2013 guideline recommends against using a peripheral venous PO2 as a substitute for arterial PaO2 (grade 1A, recommendation 14.7). The recommendation is not limited to children, and the arterial sample remains the reference.
+**Why correct:** AARC 2013 advises against substituting peripheral venous PO₂ for arterial PaO₂ when assessing oxygenation. Venous pH and CO₂ may be useful in selected clinical contexts, but venous oxygen tension is not interchangeable with arterial oxygen tension. Record the specimen source and oxygen or ventilatory support at sampling.
 **Why not A:** The guideline recommends against it.
 **Why not C:** The recommendation is not limited to children.
 **Why not D:** An arterial sample is the reference.

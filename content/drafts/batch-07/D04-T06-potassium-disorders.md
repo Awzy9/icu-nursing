@@ -135,12 +135,12 @@ D. Normal, because the guideline's threshold for calling a serum potassium level
 **Why not D:** The threshold for hyperkalaemia is 5.5, not 6.5.
 
 **Q2 (judgment).** A potassium of 7.1 mmol/L is reported on a sample that took four hours to reach the laboratory, in a patient who looks well with a normal ECG. What is the best nursing action?
-A. Report it, explain the sample delay and ECG, and help repeat the potassium (for example by point-of-care analysis), while keeping the patient monitored.
+A. Escalate the critical result now, maintain ECG monitoring and arrange an urgent repeat sample.
 B. Ignore the result, because a delayed sample is wrong and the patient looks well and has a normal ECG, so nothing needs to be done.
 C. Start treatment without telling anyone, because a potassium above 7.0 mmol/L is an emergency whatever the sample looks like or how the patient is.
 D. Delay the report until the next scheduled blood test, to avoid disturbing the team about a result that may be spurious and could cause unnecessary alarm.
 **Answer: A.**
-**Why correct:** Prolonged transit is a recognised cause of pseudohyperkalaemia, but a normal ECG does not exclude real hyperkalaemia, so the nurse reports, rechecks and monitors.
+**Why correct:** Delayed sample transit can cause pseudohyperkalemia, but a normal ECG cannot exclude dangerous true hyperkalemia. Escalate immediately, obtain a fresh sample using the approved pathway and maintain continuous monitoring. UKKA recommends ECG surveillance for severe elevations. The responsible clinician decides urgent treatment while the result is clarified; do not allow repeat sampling to delay necessary emergency treatment.
 **Why not B:** The result cannot be dismissed without checking.
 **Why not C:** Treatment decisions belong to the prescriber and need an order.
 **Why not D:** A critical result must be reported promptly.
@@ -151,7 +151,7 @@ B. Blood glucose once, at the end of the infusion, and then if the patient repor
 C. No further blood tests, because the potassium has already been shifted into cells and rebound does not occur.
 D. Regular blood glucose measurements at set intervals after the infusion, and repeat potassium at set times.
 **Answer: D.**
-**Why correct:** UKKA recommends glucose at regular intervals (0 to 360 minutes) in all patients and repeat potassium (1, 2, 4, 6, 24 hours) because of hypoglycaemia and rebound risk.
+**Why correct:** UKKA specifies glucose checks through six hours in all patients receiving insulin-glucose, with closer surveillance early and longer monitoring for patients at risk of late hypoglycemia, such as those receiving repeated treatment. Repeat potassium to assess response and rebound; document timing and hand over outstanding checks.
 **Why not A:** The guideline notes adverse outcomes of hypoglycaemia regardless of diabetic status.
 **Why not B:** A single check misses later hypoglycaemia, up to six hours after treatment.
 **Why not C:** The guideline specifically warns of rebound hyperkalaemia.
@@ -162,7 +162,7 @@ B. Call for urgent help and report the rhythm and potassium, as ECG changes mean
 C. Ask the family to come in so that they can be told that the monitor is faulty and that the numbers can be disregarded.
 D. Silence the alarm, since bradycardia is common in hospital patients and usually does not need any immediate action.
 **Answer: B.**
-**Why correct:** Bradycardia and QRS widening are the ECG signs most associated with adverse events; severe hyperkalaemia with ECG change needs urgent treatment.
+**Why correct:** Severe hyperkalemia with bradycardia and widening QRS is a life-threatening emergency. Assess circulation, activate immediate help and prepare authorized emergency treatment while monitoring. IV calcium, when indicated, stabilizes the cardiac membrane but does not lower potassium; shifting and removing potassium require separate measures. If arrest occurs, follow the resuscitation protocol.
 **Why not A:** Waiting could allow progression to arrest.
 **Why not C:** Nothing suggests a fault and it delays care.
 **Why not D:** Silencing it ignores a high-risk rhythm.
@@ -173,9 +173,9 @@ B. Peaked T waves alone are a reliable sign of life-threatening hyperkalaemia in
 C. The ECG can help rule hyperkalaemia in but cannot rule it out, and can be normal in severe cases.
 D. The ECG always shows changes in a fixed sequence as the potassium rises.
 **Answer: C.**
-**Why correct:** The rationale says the ECG changes can be absent or atypical, and that its sensitivity is low while specificity is high.
+**Why correct:** ECG findings may support concern for hyperkalemia but have limited sensitivity and are not uniquely diagnostic. A normal or atypical trace cannot exclude severe hyperkalemia; interpret it with the potassium measurement and clinical state and escalate dangerous results promptly.
 **Why not A:** The ECG may be normal even in severe hyperkalaemia.
-**Why not B:** Peaked T waves alone are rarely a sign of life-threatening hyperkalaemia.
+**Why not B:** Peaked T waves alone do not reliably predict imminent arrest or establish the severity of hyperkalemia.
 **Why not D:** The changes do not always occur in sequence.
 
 **Q6 (scope).** Which task belongs to the prescriber with pharmacist input rather than the bedside nurse?

@@ -101,18 +101,18 @@ B. Liberation is discontinuing invasive ventilation, while extubation is removin
 C. Extubation is done before liberation, and a tracheostomy is not used as a route to liberation from the ventilator.
 D. Liberation refers to weaning by gradually reducing the pressure support level over several days of ventilation.
 **Answer: B.**
-**Why correct:** The guideline says it is important that liberation and extubation are not conflated, and gives abundant secretions and a weak cough as a reason for not extubating after a passed SBT.
+**Why correct:** Passing an SBT demonstrates tolerance of the trial, not all requirements for extubation. The team must additionally assess airway protection, cough, secretion burden and other risks. Liberation from invasive ventilatory support can also occur with a tracheostomy still in place.
 **Why not A:** Passing an SBT does not necessarily lead to extubation.
 **Why not C:** Patients may be liberated via tracheostomy.
 **Why not D:** Gradual reduction of support is weaning, a different concept.
 
-**Q2 (application).** A ventilated patient who is already on 0.60 FiO₂ is about to start an SBT. A colleague suggests increasing the FiO₂ for the trial to be safe. What does the AARC guideline suggest?
+**Q2 (application).** A patient has met the unit's SBT readiness criteria on the prescribed FiO₂. A colleague suggests increasing FiO₂ solely for the trial to improve the chance of passing. What does AARC 2024 suggest?
 A. Increase the FiO₂ by a fixed step for each trial, because this improves the chance of success.
 B. Increase the FiO₂ if the nurse thinks the patient looks anxious before the trial begins.
 C. Alternate between a higher and a lower FiO₂ every few minutes to see which one the patient seems to prefer.
 D. Do not increase the FiO₂ during the SBT, because raising it can mask hypoxaemia and cause a false pass.
 **Answer: D.**
-**Why correct:** The recommendation is that FiO₂ should not be increased during an SBT (conditional; very low certainty), with the false-positive reasoning.
+**Why correct:** AARC conditionally suggests not raising FiO₂ solely for the SBT (very low certainty), because this can conceal impaired oxygenation. Verify readiness under the unit protocol; the guideline does not establish a universal starting FiO₂ threshold. If hypoxemia occurs, assess and stop an intolerable trial and provide needed rescue oxygenation. The recommendation is not a reason to withhold emergency oxygen.
 **Why not A:** No evidence shows that raising FiO₂ improves success.
 **Why not B:** Anxiety is not a reason in the guideline.
 **Why not C:** Alternating FiO₂ is not described.
@@ -131,12 +131,12 @@ D. Avoid performing an SBT on the same day as a sedation interruption, so that t
 **Q4 (safety).** During an SBT, a patient's respiratory rate rises steadily, SpO₂ falls and the patient looks distressed. What is the best action?
 A. Wait until the full 120 minutes are over to see whether the patient adapts to breathing without ventilator support.
 B. Increase the FiO₂ on the ventilator and carry on with the trial, so that the SpO₂ stays above the usual target.
-C. Stay with the patient, report the changes immediately and be ready for the return to ventilator support.
+C. Stop the poorly tolerated trial under protocol, restore ventilatory support and summon help promptly.
 D. Record the observations carefully and review them with the team at the end of the shift or at the next handover.
 **Answer: C.**
-**Why correct:** The guideline lists respiratory pattern, haemodynamics, gas exchange and comfort as the basis for judging tolerance, and notes that return to support can be re-established quickly.
+**Why correct:** Rising respiratory rate, falling oxygen saturation and distress indicate possible SBT intolerance. Remain with the patient and promptly stop the trial under the authorized pathway, restore appropriate ventilatory and oxygen support, assess airway, breathing and circulation, and call for urgent assistance. Do not wait for the planned duration or raise oxygen merely to make the trial appear successful.
 **Why not A:** Waiting risks harm to an intolerant patient.
-**Why not B:** Raising the FiO₂ masks the problem.
+**Why not B:** Increasing oxygen to force a pass conceals intolerance; rescue oxygen for hypoxemia is appropriate as part of stopping the trial and treating deterioration.
 **Why not D:** The report must be immediate.
 
 **Q5 (understanding).** Why does the AARC guideline suggest the RSBI is not needed to decide readiness for an SBT?
@@ -145,7 +145,7 @@ B. Because the RSBI has moderate sensitivity but poor specificity for extubation
 C. Because the RSBI can only be measured by physicians and cannot be measured by nurses or respiratory therapists in any unit.
 D. Because modern ventilators can no longer display the breathing rate and tidal volume that are needed to calculate it reliably at the bedside.
 **Answer: B.**
-**Why correct:** The guideline's evidence summary found the RSBI had moderate sensitivity but poor specificity for extubation success, and that requiring it delayed liberation in a trial, so it suggests the RSBI is not needed to decide readiness for an SBT.
+**Why correct:** The AARC recommendation is conditional, with moderate certainty: RSBI calculation need not be a prerequisite to an SBT. Requiring it can delay liberation and it has limited specificity. Readiness still requires clinical improvement, adequate oxygenation, hemodynamic stability and ability to initiate an inspiratory effort. The index alone does not determine extubation readiness.
 **Why not A:** No harm from measurement is claimed.
 **Why not C:** Who measures it is not the reason.
 **Why not D:** The reason is not technical.

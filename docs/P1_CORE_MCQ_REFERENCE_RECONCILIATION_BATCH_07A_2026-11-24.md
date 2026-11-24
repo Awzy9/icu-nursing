@@ -1,0 +1,7 @@
+# Core question reconciliation — batch 07a
+
+24 November 2026. Reviewed 24 questions in four sets; 17 question blocks revised; keys retained. Static option length and dose pattern checks passed. Four regression cases added, not yet run. Prior head's checks in progress on inspection.
+
+Selected published recommendation/abstract passages consulted: [AARC SBT 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11285503/), [RCUK BLS 2025](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines), [RCUK ALS 2025](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines), [UKKA hospital monitoring](https://guidelines.ukkidney.org/hyperkalaemia/11-1-ii-hyperkalaemia-in-hospital/11-1-5-ii-hyperkalaemia-in-hospital-17-1-17-2/), [UKKA ECG](https://guidelines.ukkidney.org/hyperkalaemia/11-1-ii-hyperkalaemia-in-hospital/11-1-2-ii-hyperkalaemia-in-hospital-14-1-14-2/), [AARC blood gas 2013](https://journals.sagepub.com/doi/full/10.4187/respcare.02786), [Merck acid-base](https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders). Existing ERC IDs reused. ABG synthetic values corrected for consistency; no clinical threshold changes. Full guideline appraisal and independent clinical signoff not performed. All drafts remain gated; no publication.
+
+Progress: 66 expansion + 198 original = 264/306. Remaining: three sets of batch 07 and four of batch 08 (42 questions).

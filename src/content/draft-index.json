@@ -954,7 +954,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "4b7029aed308d0a5"
+   "hash": "4674875efd2e010e"
   },
   {
    "key": "D02-T02",
@@ -976,6 +976,16 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-ERC-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ERC-BLS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -989,7 +999,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "d2e11e04c7fc0e66"
+   "hash": "cd1f6e40bcfdd728"
   },
   {
    "key": "D04-T06",
@@ -1024,7 +1034,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "d0bf1e7d82dcf711"
+   "hash": "65911cb00aa22d77"
   },
   {
    "key": "D04-T08",
@@ -1064,7 +1074,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "4d49d7a820f0faaf"
+   "hash": "c220f4eed6f1f639"
   },
   {
    "key": "D04-T09",

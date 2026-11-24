@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Advanced Skills, chapter 7 (ECG) – sections 7.2 Basic Concepts, 7.3 Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Initiating Telemetry; WisTech Open 2023, CC BY 4.0; a US entry-level nursing textbook adapted partly from StatPearls", "UK Kidney Association hyperkalaemia guideline (July 2026) – ECG rationale pages, used only for hyperkalaemia ECG statements", "Phase 3 additions: AACN Practice Alerts 'Accurate Dysrhythmia Monitoring in Adults' (2016; update 2018) and 'Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry' (2018) – PUBLIC SUMMARIES ONLY (full texts need a free AACN login and were not accessed)"]
-sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026, S-AACN-DYSRHYTHMIA-2016, S-AACN-ALARM-2018]
+sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026, S-AACN-DYSRHYTHMIA-2016, S-AACN-ALARM-2018, S-ERC-BLS-2025, S-ERC-ALS-2025]
 sources_not_read: [S-AHA-2025]
 independently_written_note: "Original wording and structure. Four sections of the Open RN ECG chapter were read in full (basic concepts, systematic interpretation, patterns and dysrhythmias, the telemetry checklist); the chapter's cardioversion and defibrillation section, pacemaker content, rhythm-strip appendix, tables and figures were NOT read or reproduced. No ECG images or rhythm strips are included: the chapter's own images are credited to several licences, and ERC algorithms are not reproduced. The source is an introductory US nursing text, not an ICU monitoring standard: the AHA practice standards for ECG monitoring in hospital settings were not accessible and were not read, so alarm limits, lead choice for ST monitoring, monitoring indications and frequencies are not taught. Resuscitation algorithms, drug choices, doses and energy settings are deliberately absent; use the unit's resuscitation procedure and the cardiac arrest draft (D02-T14)."
 ---
@@ -121,7 +121,7 @@ B. Begin chest compressions at once, because the monitor label has identified a 
 C. Silence the alarm and wait to see whether it repeats before taking any action, since the patient looks well.
 D. Call the family to the bedside, because a ventricular fibrillation alarm means that the patient is dying.
 **Answer: A.**
-**Why correct:** The textbook says the monitor's rhythm name is not always correct because of artifact; the patient's clinical state decides the response.
+**Why correct:** A talking patient with a strong pulse is not in cardiac arrest. Assess the patient and verify the trace using other available leads, pulse and monitoring data; check electrode contact and obtain a diagnostic tracing when needed. Correct the monitoring fault rather than leaving the alarm disabled. A genuine unstable rhythm or loss of circulation requires immediate emergency response.
 **Why not B:** A talking patient with a pulse does not need compressions.
 **Why not C:** Waiting without looking at the patient is unsafe.
 **Why not D:** It causes distress and is not a clinical response.
@@ -132,10 +132,10 @@ B. Sinus bradycardia, because a slow sinus rhythm shows a wavy baseline and no d
 C. Atrial fibrillation, because this is the pattern the textbook names as the hallmark of that rhythm.
 D. Asystole, because the absence of P waves with an irregular baseline is the pattern of a flat line.
 **Answer: C.**
-**Why correct:** Irregularly irregular narrow QRS complexes with no distinct P waves or a wavy baseline are the hallmark of atrial fibrillation in the textbook.
-**Why not A:** Normal sinus rhythm is regular with normal P waves.
+**Why correct:** An irregular ventricular rhythm without discrete P waves is a typical atrial fibrillation pattern. The QRS can be narrow or wide depending on conduction or other factors; the bedside pattern is not definitive when artifact or other rhythms are possible. Obtain a suitable tracing and clinical review.
+**Why not A:** Sinus rhythm normally has identifiable P waves before QRS complexes; some physiologic beat-to-beat variation can occur.
 **Why not B:** Sinus bradycardia is a regular slow rhythm.
-**Why not D:** Asystole is a flat line, with no atrial or ventricular activity, so it does not fit this pattern.
+**Why not D:** Asystole means absence of ventricular electrical activity; residual atrial activity may occasionally be visible. Verify the tracing and patient clinically.
 
 **Q3 (judgment).** A patient on the monitor is unresponsive and the rhythm shows no organised complexes. What is the correct priority?
 A. Print a strip and ask the doctor to confirm the rhythm first, before anyone starts any resuscitation measures.
@@ -143,7 +143,7 @@ B. Check for responsiveness and a pulse, call for help and start resuscitation a
 C. Check the electrode contact for two minutes before doing anything else, in case the trace is wrong.
 D. Take a full set of observations and then decide what to do about the rhythm that the monitor displays.
 **Answer: B.**
-**Why correct:** Ventricular fibrillation is described as requiring immediate CPR and emergency response; unresponsiveness with an abnormal rhythm is treated as cardiac arrest.
+**Why correct:** Activate the emergency response immediately, assess responsiveness, breathing and circulation rapidly, and initiate CPR if circulation is absent or uncertain in an unresponsive patient who is not breathing normally. ERC 2025 emphasizes early recognition and immediate CPR. Attach a defibrillator promptly and follow the trained team algorithm; never wait for a printed strip.
 **Why not A:** Confirmation must not delay CPR.
 **Why not C:** Electrode checks are for a conscious patient with a doubtful trace.
 **Why not D:** Observations delay emergency action.
@@ -154,8 +154,8 @@ B. Count the large boxes and multiply by 20.
 C. Measure the PR interval and divide by the QRS.
 D. Count the R waves and multiply by 10.
 **Answer: D.**
-**Why correct:** The simplest method is to count R waves in a 6-second strip and multiply by 10.
-**Why not A:** The atrial rate also uses ×10, not division by six.
+**Why correct:** Count ventricular QRS complexes in a verified six-second interval and multiply by ten to estimate beats per minute. This gives an approximate rate; longer recordings are more informative for highly irregular rhythms. Confirm the actual strip duration and calibration.
+**Why not A:** Counting atrial P waves in a six-second interval and multiplying by ten estimates atrial rate when identifiable, not ventricular rate.
 **Why not B:** The textbook method is based on R waves in a 6-second strip.
 **Why not C:** Intervals are not used to calculate the rate.
 
@@ -165,9 +165,9 @@ B. PVCs falling on the T wave are harmless and are expected with a long QT, so n
 C. The pattern means the electrodes have been placed incorrectly, so the leads should be moved before anything is reported.
 D. The pattern shows that the patient has developed first-degree AV block, which needs no further assessment tonight.
 **Answer: A.**
-**Why correct:** The textbook states that R on T can trigger ventricular tachycardia and that conditions causing a prolonged QT make it more likely.
+**Why correct:** Premature ventricular beats occurring during repolarization can precipitate dangerous ventricular rhythms, particularly in a patient with prolonged QT. Assess the patient, escalate promptly and review reversible risks such as QT-prolonging medications and electrolyte abnormalities with the team; unstable or pulseless rhythms require the emergency response.
 **Why not B:** The textbook says it can trigger a dangerous rhythm.
-**Why not C:** Ectopic beats come from the heart, not from electrode placement.
+**Why not C:** Artifact or lead problems may mimic ectopy, but new suspected ventricular ectopy with prolonged QT requires clinical assessment and timely escalation.
 **Why not D:** First-degree block is a long PR interval.
 
 **Q6 (scope).** Which task belongs to the prescriber rather than the nurse?
@@ -186,6 +186,9 @@ D. Calling for help when the patient is pulseless.
 - UK Kidney Association. Clinical Practice Guideline: Treatment of Acute Hyperkalaemia in Adults (July 2026), rationale for guidelines 14.1–14.2. https://guidelines.ukkidney.org/hyperkalaemia/ (accessed 2026-11-14)
 
 - Fifth Universal Definition of Myocardial Infarction (2026). https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025 (accessed 2026-11-24; selected ECG criteria checked, full guideline and rights review pending).
+
+- Resuscitation Council UK 2025 adult BLS. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines (selected recommendations, accessed 2026-11-24)
+- Resuscitation Council UK 2025 adult ALS. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines (selected recommendations, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Monitor alarm limits, lead choice, monitoring indications, who may interpret and respond, resuscitation procedure, and documentation of strips follow the unit's policies and training.
