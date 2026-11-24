@@ -51,6 +51,8 @@ When a patient appears anxious, establish whether they can communicate and ask w
 
 The 2025 PADIS focused update found insufficient evidence to recommend benzodiazepines specifically for anxiety in adult ICU patients. This does not establish either routine use or a universal prohibition: other indications such as withdrawal or seizure treatment require their own clinical pathway. Discuss the indication, sedation target, haemodynamic and respiratory risks and reassessment plan with the prescriber; do not escalate sedation solely because anxiety is suspected.
 
+**Changing sedation goals and awakening readiness (SCCM PADIS 2018 and 2025).** Check the current prescribed sedation target and its clinical indication at handover. A light target is not appropriate for every patient at every time; some patients need a different target as part of a specialist plan, for example during neuromuscular blockade or management of unstable intracranial pressure. Do not interrupt prescribed sedation solely because a daily awakening trial is due. Confirm eligibility and the safety plan with the team, document why a trial was deferred or stopped, and arrange reassessment as clinical conditions change. In a paralysed patient, absence of movement cannot establish comfort or adequate sedation; verify ongoing analgesia and sedation delivery and request the appropriate monitoring plan.
+
 ## 8. Monitoring parameters
 Sedation scale score and target; pain score; delirium screen; respiratory rate, SpO₂, ETCO₂ and ventilator synchrony; heart rate, blood pressure; temperature; urine output; infusion type and rate as ordered; time and result of daily interruptions; skin under devices and restraints; hours awake.
 
