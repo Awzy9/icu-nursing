@@ -5064,7 +5064,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "757863873c4f0e90"
+   "hash": "c774fea4b7e66095"
   },
   {
    "key": "SC-08",
@@ -5114,7 +5114,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "cc7f51bbcd3a27eb"
+   "hash": "eefef2ace9e736e6"
   },
   {
    "key": "SC-09",
@@ -5534,7 +5534,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "1f790033857c9d6c"
+   "hash": "c4206770352eff79"
   },
   {
    "key": "SC-18",
@@ -5659,7 +5659,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "9aa25c6131ce2f89"
+   "hash": "f68e7420510ce931"
   },
   {
    "key": "EQ-01",

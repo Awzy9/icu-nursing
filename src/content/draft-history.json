@@ -12032,6 +12032,24 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "c774fea4b7e66095",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AARC-SUCT",
+     "S-ACS-TBI-2024",
+     "S-AHRQ-TS",
+     "S-BTF-TBI-4TH",
+     "S-ENLS-ICP-V6",
+     "S-NCS-EDEMA-2020",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-08": [
@@ -12170,6 +12188,23 @@
    },
    {
     "hash": "cc7f51bbcd3a27eb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-NICE-NG217",
+     "S-ACNS-CCEEG-2015",
+     "S-AHRQ-TS",
+     "S-CDC-SEIZURE-2024",
+     "S-ENLS-SE-V6",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "eefef2ace9e736e6",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13413,6 +13448,22 @@
     "gaps": 6,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c4206770352eff79",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS",
+     "S-CIBS-CAMICU-TERMS",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-18": [
@@ -13711,6 +13762,20 @@
    },
    {
     "hash": "9aa25c6131ce2f89",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-ACS-TBI-2024",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "f68e7420510ce931",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

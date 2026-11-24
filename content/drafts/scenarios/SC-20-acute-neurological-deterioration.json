@@ -109,7 +109,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess airway, breathing and circulation, and activate urgent clinical reassessment for new neurological deterioration. In parallel, record eye, verbal and motor responses separately with the total where assessable, compare with baseline, and communicate the changes.",
+          "text": "Stay, assess airway, breathing and circulation and activate urgent clinical reassessment. In parallel, record separate eye, verbal and motor responses and total where assessable; compare with baseline and report.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -123,7 +123,7 @@
           ]
         },
         {
-          "text": "Record only the total score and check again at the usual time.",
+          "text": "Record only the total GCS in the observation chart and compare it with the admission total, then wait until the usual observation time to reassess the individual components and decide whether the change warrants escalation.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -135,7 +135,7 @@
           ]
         },
         {
-          "text": "Assume the patient is tired and let them sleep without further checks.",
+          "text": "Attribute reduced responsiveness to fatigue, document that the patient appears to be sleeping and allow rest until the next routine observation rather than checking neurological responses or escalating the new change.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -186,7 +186,7 @@
       ],
       "options": [
         {
-          "text": "Maintain bedside assessment and the emergency team's observation plan. Return to the intensified observation schedule for deterioration, record changes, and escalate again if airway, breathing, circulation or neurological status worsens.",
+          "text": "Maintain bedside assessment; return to the intensified observation schedule for deterioration, record changes and escalate again for worsening airway, breathing, circulation or neurological status.",
           "points": 2,
           "next": 3,
           "scope": "monitoring",
@@ -199,7 +199,7 @@
           ]
         },
         {
-          "text": "Keep the longer interval because the clinician is already coming.",
+          "text": "Keep the previous, longer observation interval because the clinician is already on the way, and record a further neurological assessment only when the next routine observation becomes due or the clinician arrives.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -211,7 +211,7 @@
           ]
         },
         {
-          "text": "Stop GCS checks and watch the monitor numbers instead.",
+          "text": "Discontinue the GCS assessments while awaiting the clinician and focus on continuous vital-sign monitoring, using changes in the monitor readings rather than serial neurological findings to decide when to call again.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -257,7 +257,7 @@
       ],
       "options": [
         {
-          "text": "Keep observing and recording, give a clear handover of the trend, support the team with preparation, and tell the family what the team has agreed to share without giving a diagnosis yourself.",
+          "text": "Continue observations and documentation, hand over the trend, assist the team with preparation and share agreed information with the family without assigning a diagnosis.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "text": "Contact the scanner and arrange the scan yourself without waiting for the clinician.",
+          "text": "Contact the scanner independently and arrange imaging before the responsible clinician has determined the investigation plan, then prepare the patient for transfer without waiting for the team's assessment.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -283,7 +283,7 @@
           ]
         },
         {
-          "text": "Tell the family what you think is wrong with the patient.",
+          "text": "Offer the family your own explanation of the likely diagnosis based on the observed neurological changes, before the treating team has confirmed the cause or agreed what information should be shared.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

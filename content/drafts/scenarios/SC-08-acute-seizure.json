@@ -115,7 +115,7 @@
       ],
       "options": [
         {
-          "text": "Call for urgent help, note the time the seizure began, stay with the patient and start emergency care per the unit's protocol, asking for the emergency equipment and prescribed emergency medicine to be brought. Ask a colleague to check bedside glucose in parallel with emergency care, without delaying authorised seizure treatment. Protect the patient from injury without restraining them or placing objects in the mouth. Position safely as airway, lines and injury precautions permit.",
+          "text": "Call for urgent help, note onset, stay and start protocol emergency care. Request equipment and prescribed medicine; check glucose in parallel without delay. Protect from injury without restraint or objects in the mouth; position safely.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "text": "Leave the bedside to look for a doctor.",
+          "text": "Ask a colleague to keep observing the convulsion while you leave the bedside to find a doctor and collect the emergency medicine, planning to start the emergency response and glucose assessment once you return with the necessary equipment.",
           "points": 0,
           "next": 2,
           "scope": "escalation",
@@ -142,7 +142,7 @@
           ]
         },
         {
-          "text": "Wait to see whether the seizure stops by itself.",
+          "text": "Record the onset and observe the movements, keeping the environment quiet and waiting for spontaneous resolution before activating the emergency pathway, checking glucose or arranging the prescribed emergency treatment.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -188,7 +188,7 @@
       ],
       "options": [
         {
-          "text": "Prepare and give the first-line emergency medicine only as prescribed or as the unit's protocol directs, with resuscitation equipment ready and the patient's breathing watched closely afterwards.",
+          "text": "Give first-line emergency medicine only as prescribed or protocol-directed; have resuscitation equipment ready and closely monitor breathing afterwards.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "text": "Choose and give an anticonvulsant of your own choice from the ward stock.",
+          "text": "Select an anticonvulsant from ward stock based on previous experience, prepare and administer it without verifying the prescribed or protocol-directed choice, and inform the clinician of the administration afterwards.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -213,7 +213,7 @@
           ]
         },
         {
-          "text": "Refuse to prepare anything and wait for the doctor to do everything.",
+          "text": "Keep observing the seizure but defer all medication preparation and emergency equipment checks until the doctor can personally complete them, even though the approved pathway and trained team are available.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -259,7 +259,7 @@
       ],
       "options": [
         {
-          "text": "Seek expert guidance urgently, confirm the initial glucose result or obtain it if still unavailable, reassess breathing and give further emergency treatment only under the authorised pathway.",
+          "text": "Seek expert guidance urgently; confirm or obtain glucose, reassess breathing, verify prior treatment and timing, and give further treatment only under the authorised pathway.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -275,7 +275,7 @@
           ]
         },
         {
-          "text": "Give an extra dose from stock immediately without checking what was already given or following the emergency plan.",
+          "text": "Give a further dose from ward stock immediately because the convulsion persists, without checking which medicine was previously administered, the time it was given or the authorised repeat-treatment plan.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -287,7 +287,7 @@
           ]
         },
         {
-          "text": "Assume the seizure will stop soon and stop observing the patient.",
+          "text": "Document the initial medication and assume the remaining movements will resolve shortly, returning to routine duties rather than maintaining continuous observation and seeking urgent expert guidance.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

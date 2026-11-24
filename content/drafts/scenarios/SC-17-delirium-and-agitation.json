@@ -121,7 +121,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient and protect immediate safety, assess airway, breathing, oxygenation, pain and new physiological or neurological changes, seek urgent review for possible deterioration, and arrange a trained ICU delirium screen when the patient's arousal permits.",
+          "text": "Stay, protect safety, assess airway, breathing, oxygenation, pain and new physiological or neurological changes; seek urgent review and arrange trained delirium screening when arousal permits.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Treat it as a personality issue and settle the patient with a sedative from the ward stock.",
+          "text": "Attribute the change to the patient's personality, settle the patient with a sedative from ward stock and plan a screening assessment once the patient is calmer, without first assessing possible acute deterioration.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -148,7 +148,7 @@
           ]
         },
         {
-          "text": "Wait until the next shift to see whether the patient settles.",
+          "text": "Document the pulling at tubing and fluctuating attention in the handover notes, maintain routine observations and wait for the next shift to reassess rather than reviewing the new change now.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -194,7 +194,7 @@
       ],
       "options": [
         {
-          "text": "Remain with the frightened patient, use calm reorientation and non-drug de-escalation, review pain and physical needs with the team, involve family or sensory aids when helpful, and urgently escalate persistent danger. Any sedation or antipsychotic decision follows an authorised assessment and order.",
+          "text": "Stay, reorient calmly, de-escalate, review pain and needs, involve family or sensory aids as appropriate and urgently escalate persistent danger. Sedation requires authorised assessment and orders.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -209,7 +209,7 @@
           ]
         },
         {
-          "text": "Give haloperidol from stock as soon as the patient becomes distressed.",
+          "text": "Give haloperidol from ward stock when the patient becomes distressed, expecting the medication to settle the behaviour before reviewing pain, sensory needs or the need for a clinician-directed treatment plan.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "text": "Leave the patient alone so that nothing provokes them.",
+          "text": "Reduce stimulation by leaving the frightened patient alone, ask family to wait until the agitation settles and return to reassess later rather than providing reassurance or urgently escalating persistent danger.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -269,7 +269,7 @@
       ],
       "options": [
         {
-          "text": "Continue a team-led multicomponent care plan: reorientation, sleep protection, pain review, sensory aids, mobility when safe, and family engagement. Monitor for quieter hypoactive delirium, document changes in arousal and screening eligibility, and report new physiological or neurological deterioration promptly.",
+          "text": "Continue team-led reorientation, sleep protection, pain review, sensory aids, safe mobility and family involvement. Monitor hypoactive delirium, document arousal and screen eligibility; report deterioration.",
           "points": 2,
           "next": null,
           "scope": "independent_nursing",
@@ -283,7 +283,7 @@
           ]
         },
         {
-          "text": "Stop reorientation because it is not a treatment.",
+          "text": "Stop reorientation and other non-drug measures now that the visible agitation has settled, record the patient as recovered and return to routine observation without reassessing attention, arousal or screening eligibility.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -295,7 +295,7 @@
           ]
         },
         {
-          "text": "Move the patient to a quieter room away from the familiar team.",
+          "text": "Move the patient to a quieter unfamiliar room and change the care team to minimise disturbance, without establishing a clinical need for transfer or maintaining the existing reorientation and reassessment plan.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

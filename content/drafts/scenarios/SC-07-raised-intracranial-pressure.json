@@ -129,7 +129,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess airway, breathing and circulation, activate urgent clinical help, and perform a focused neurological assessment including consciousness and pupils while emergency care is organised.",
+          "text": "Stay with the patient; assess airway, breathing and circulation, activate urgent clinical help and assess consciousness and pupils in parallel.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "text": "Check the blood pressure again and leave the patient to rest.",
+          "text": "Repeat blood pressure and pulse, document the changes and leave the patient in a quiet room to rest before returning for the scheduled neurological assessment.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -155,7 +155,7 @@
           ]
         },
         {
-          "text": "Give a prescribed as-needed sedative so the patient can settle, and plan to review later.",
+          "text": "Give the prescribed as-needed sedative to settle the restlessness, record its administration and reassess consciousness and pupils after the patient has rested.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -206,7 +206,7 @@
       ],
       "options": [
         {
-          "text": "Keep the head of the bed at the angle the provider and policy set with the neck in a neutral position, avoid sudden neck or hip bending, space the care out, keep the room quiet, and give oxygen as prescribed while monitoring pressure, rhythm, oxygenation, glucose and temperature. Assess secretion-clearance need rather than suctioning on a routine schedule, and do not delay essential airway care.",
+          "text": "Maintain prescribed head elevation, neutral neck, spaced care and a quiet environment; monitor physiology and give prescribed oxygen. Assess suction need without delaying essential airway care.",
           "points": 2,
           "next": 3,
           "scope": "monitoring",
@@ -221,7 +221,7 @@
           ]
         },
         {
-          "text": "Do the bed bath, turning and suctioning together so that the patient is disturbed only once.",
+          "text": "Complete hygiene, turning and suction together to minimise the number of care episodes; record the physiological observations after the combined interventions rather than spacing care according to response.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -234,7 +234,7 @@
           ]
         },
         {
-          "text": "Lay the patient flat for easier turning and washing.",
+          "text": "Lower the head of the bed to a flat position for turning and washing, then restore the prescribed position after routine care, without discussing the change with the treating team.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -285,7 +285,7 @@
       ],
       "options": [
         {
-          "text": "Give mannitol only as prescribed; monitor fluid balance, urine output, renal function, electrolytes, neurological status and ordered osmolar gap measurements. Escalate new adverse findings and discuss sedation with the team.",
+          "text": "Give mannitol only as prescribed; monitor fluid balance, urine, renal function, electrolytes, neurological status and ordered osmolar gap. Escalate adverse findings; discuss sedation.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
@@ -299,7 +299,7 @@
           ]
         },
         {
-          "text": "Give the extra sedative to keep the patient quiet and note that you did so.",
+          "text": "Administer additional sedation to reduce agitation during the infusion, record the administration and defer neurological reassessment until the patient has settled, rather than discussing sedation with the team.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -311,7 +311,7 @@
           ]
         },
         {
-          "text": "Stop the osmotic medicine if the urine output rises, to protect the kidneys.",
+          "text": "Stop the prescribed osmotic treatment when urine output increases, document the fluid balance and notify the team afterwards, treating the increased output alone as evidence of renal injury.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
