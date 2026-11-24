@@ -82,7 +82,7 @@ Rising vasopressor requirement; MAP persistently below target; rising or non-cle
 | Choosing antimicrobials, fluids, vasoactive drugs, steroids, bicarbonate; deciding targets and source control; ICU admission | Prescriber decision (with pharmacist, microbiology and surgical teams) |
 
 ## 12. Escalation criteria
-Escalate immediately for suspected sepsis with organ dysfunction, hypotension, a rising lactate, a vasopressor requirement or deterioration. For persistent shock, escalate early rather than waiting for the next review.
+Escalate immediately for suspected sepsis with organ dysfunction, hypotension, a rising lactate, a vasopressor requirement or deterioration. For persistent shock, assess perfusion and respiratory status and summon help rather than waiting for the next review. Reassess the response to prescribed resuscitation, including new signs of fluid intolerance; do not independently give repeated fluid boluses solely to normalize lactate. If vasoactive access fails or extravasation is suspected, stop delivery through the affected site and obtain urgent clinician-directed alternative support under the local pathway (see D02-T12 and MD-01).
 SBAR — **S:** bed X, septic shock, MAP below target and rising vasopressor requirement 3 hours after the first fluid bolus. **B:** cultures taken, antimicrobials given at the recorded time, fluids as ordered; lactate not falling. **A:** worsening perfusion despite resuscitation; source not yet identified. **R:** please review now; I need a decision about further fluid versus more support, a source search and further monitoring.
 
 ## 13. Potential complications

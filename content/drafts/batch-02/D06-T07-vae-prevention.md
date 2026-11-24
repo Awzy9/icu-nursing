@@ -77,7 +77,7 @@ Rising FiO₂ or PEEP needs; new purulent or increased secretions; fever or hypo
 | Choice of sedative or antimicrobial, stress-ulcer prophylaxis, tracheostomy timing, feeding route changes | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate promptly for: sustained increase in oxygen or PEEP needs; new purulent secretions with fever or instability; accidental extubation or tube displacement; persistent barriers to the bundle (for example, head of bed cannot be elevated); suspected aspiration.
+Activate emergency response for accidental extubation, suspected tube displacement with loss of ventilation, severe respiratory deterioration or aspiration with airway or circulatory compromise. Escalate sustained increases in oxygen or PEEP needs, new purulent secretions with fever, or barriers to preventive care. A ventilator-associated event surveillance definition is not a bedside diagnosis of pneumonia; do not delay assessment or treatment-team review while awaiting surveillance criteria.
 SBAR — **S:** ventilated patient, bed X, FiO₂ up from 0.40 to 0.60 over 6 hours. **B:** day 5 of ventilation, more secretions, temperature 38.4. **A:** worsening oxygenation, possible pneumonia or other cause. **R:** please review now; consider chest imaging and cultures; I will repeat observations every [interval].
 
 ## 13. Potential complications

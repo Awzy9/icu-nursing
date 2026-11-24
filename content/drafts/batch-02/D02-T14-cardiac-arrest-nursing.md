@@ -92,7 +92,7 @@ Before arrest: deteriorating early-warning score, new arrhythmia, hypotension, h
 | Choosing drugs, doses, energy, intubation and sedation drugs, arrhythmia treatment, coronary angiography, temperature targets, anti-seizure drugs, stopping resuscitation, prognostication | Team leader / prescriber decision |
 
 ## 12. Escalation criteria
-Call immediately for suspected arrest. After ROSC escalate any re-arrest, hypotension below the ordered MAP, new arrhythmia, desaturation, rising temperature, seizure or myoclonus, change in pupils or consciousness, unexpected sedation or equipment problems.
+Call immediately for suspected arrest. After ROSC escalate any re-arrest, hypotension below the ordered MAP, new arrhythmia, desaturation, rising temperature, seizure or myoclonus, change in pupils or consciousness, unexpected sedation or equipment problems. Record serial neurological findings and possible confounders such as sedation or neuromuscular blockade. Do not infer a poor neurological prognosis from a single early finding; ERC/ESICM 2025 uses specialist multimodal assessment in patients who remain unconscious at 72 hours or later, after confounders are addressed.
 SBAR — **S:** bed X, cardiac arrest at [time], ROSC at [time]. **B:** [cause if known], rhythm, shocks and drugs as recorded, airway [type], current oxygen and ventilator settings. **A:** post-arrest patient, comatose, MAP [value], temperature [value]. **R:** please review the haemodynamic and temperature targets; I will continue observations every [interval] and report any seizure or change.
 
 ## 13. Potential complications

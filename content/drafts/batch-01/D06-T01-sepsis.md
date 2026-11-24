@@ -81,7 +81,7 @@ New confusion or drowsiness; respiratory rate rising; new oxygen requirement; sy
 | Administering ordered antimicrobials promptly and checking allergies | Independent nursing (administration) after prescriber order |
 
 ## 12. Escalation criteria
-Escalate immediately for: score in a high-risk band for your tool; a single parameter at the maximum weight; two or more red flags; nurse concern even if the score is low; deterioration despite treatment; no review within the time set by policy (use the chain of command).
+Activate the unit's emergency response for threatened airway, breathing or circulation or rapidly worsening consciousness. Begin immediate bedside assessment and supportive care within scope while summoning help. Escalate urgently for a high-risk score, a single parameter at maximum weight, red flags, nurse concern even with a low score, or deterioration despite treatment. Never wait for a score, a repeat observation or a scheduled review when the patient is clinically unstable; use the chain of command if help is delayed.
 SBAR — **S:** "I'm the nurse for bed 6. His early-warning score is [x], he is newly confused and urine output is low." **B:** "Day 2 after bowel surgery, on [current treatment], temperature [x], lactate [if available]." **A:** "I think he may be septic and getting worse." **R:** "Please review within [time]; do you want cultures and lactate before antimicrobials? I will repeat observations every [interval]."
 
 ## 13. Potential complications

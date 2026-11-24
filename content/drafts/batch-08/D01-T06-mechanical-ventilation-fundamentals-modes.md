@@ -23,7 +23,7 @@ Mechanical ventilation supports gas exchange while the underlying illness is tre
 
 ## 2. Learning objectives
 1. Describe the four phases of a ventilator breath in brand-neutral terms.
-2. Contrast pressure-controlled and volume-controlled breaths, and say which variable the ventilator guarantees and which varies.
+2. Contrast pressure-controlled and volume-controlled breaths, and identify the controlled variable and which other variables may vary.
 3. Explain PEEP, auto-PEEP, peak pressure, plateau pressure, resistance and compliance at the level the review gives.
 4. Describe spontaneous, assisted, intermittent mandatory and mandatory breath sequences.
 5. List what the AARC guideline says should be assessed at the bedside, and what each finding may suggest.
@@ -35,7 +35,7 @@ The review notes that about a third of adult general critical care admissions in
 ## 6. Clinical assessment
 **The breath cycle (review):**
 - **Initiation:** ventilator-triggered (time) or patient-triggered by a change in pressure or flow, or by a diaphragm electrical signal in neurally adjusted modes. The trigger must be sensitive enough to detect effort but not so sensitive that leaks, cardiac oscillations or circuit artefact cause false (auto) triggering; an insensitive trigger increases work of breathing and may worsen patient–ventilator asynchrony.
-- **Delivery:** in *volume control* the ventilator delivers a set tidal volume with a chosen flow pattern, so tidal volume is guaranteed and **airway pressure varies** with the patient's mechanics; in *pressure control* the ventilator delivers a set inspiratory pressure for a set time, so **tidal volume varies** with compliance, resistance and effort and is not guaranteed.
+- **Delivery:** in *volume control* the ventilator targets a set tidal volume with a chosen flow pattern while **airway pressure varies** with the patient's mechanics. The measured volume reaching or leaving the patient may differ if a pressure limit interrupts inspiration or if there is a leak; in *pressure control* the ventilator delivers a set inspiratory pressure for a set time, so **tidal volume varies** with compliance, resistance and effort and is not guaranteed.
 - **Cycling:** ends inspiration by time, by delivered volume, or when inspiratory flow falls to a set fraction of its peak (usually 25 % in pressure support).
 - **Expiration:** usually passive; short expiratory time in airflow limitation can trap gas and cause intrinsic PEEP.
 
@@ -66,7 +66,7 @@ Patient: respiratory rate and effort, SpO₂, end-tidal CO₂ if used, heart rat
 | Topic | Statement (paraphrased) | Source and type | Limits |
 |---|---|---|---|
 | Pressure control | Pressure fixed; tidal volume varies and is not guaranteed | JICS 2026 review | Educational; UK |
-| Volume control | Tidal volume guaranteed; airway pressure varies | JICS 2026 review | Educational |
+| Volume control | Targets a set tidal volume; airway pressure varies; check measured exhaled volume | JICS 2026 review and AARC 2024 assessment | Educational; delivery can be affected by leaks or safety limits |
 | Trigger sensitivity | Too insensitive increases work of breathing; too sensitive causes auto-triggering | JICS 2026 review | Educational |
 | PEEP | No single optimal value; patient-specific | JICS 2026 review | Author's interpretation |
 | Mandatory ventilation | Often needs substantial sedation; neuromuscular blockade not routine | JICS 2026 review | Educational |
@@ -85,7 +85,7 @@ Increasing respiratory effort or distress; falling SpO₂ or rising CO₂; patie
 | Select the mode and settings; change tidal volume, PEEP, FiO₂, rate or alarm limits; start or stop neuromuscular blockade; decide on weaning or extubation | Prescriber decision, with the respiratory therapist operating or adjusting the ventilator |
 
 ## 12. Escalation criteria
-Escalate immediately for distress, desaturation, loss of ventilation, a displaced airway, haemodynamic collapse, or a pattern the team has asked to be told about; escalate promptly for rising pressures, falling volumes, persistent mismatch, or concern without a clear cause.
+Escalate immediately for distress, desaturation, loss of ventilation, a displaced airway or haemodynamic collapse; summon help and support effective ventilation under emergency protocol without delaying for alarm investigation. Escalate promptly for rising pressures, falling measured volumes, persistent mismatch or concern without a clear cause. Compare actual delivery with prescribed settings and refer unexpected discrepancies to the respiratory team.
 SBAR — **S:** bed X, ventilated patient with increasing effort; exhaled tidal volume has fallen and the peak pressure has risen over the last 15 minutes. **B:** day 2 on mechanical ventilation, thick secretions at the last suction. **A:** possible airway or circuit problem or worsening mechanics; patient looks distressed and SpO₂ is falling. **R:** please come now; I am checking the tube, circuit and secretions and need help to assess and decide on any change to the ventilation.
 
 ## 13. Potential complications

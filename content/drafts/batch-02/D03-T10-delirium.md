@@ -109,7 +109,7 @@ Sudden confusion, drowsiness or agitation; fluctuating attention; hallucinations
 | Diagnosis of delirium, finding causes, medication review, sedative or antipsychotic use, antimicrobials | Prescriber decision (nurse reports and administers) |
 
 ## 12. Escalation criteria
-Escalate promptly for: a positive screen; agitation endangering lines, tubes or staff; sudden change with possible hypoxia, sepsis or stroke; suspected withdrawal; refusal of life-sustaining care.
+Escalate promptly for a positive screen, agitation endangering the patient or staff, suspected withdrawal or refusal of life-sustaining care. Activate emergency assessment for an acute change with suspected hypoxia, shock, stroke or other immediate threat; evaluate physiological causes before or alongside delirium screening. Quiet withdrawal and reduced activity may indicate hypoactive delirium or another acute problem. If the patient's arousal prevents valid testing, document the screen as not assessable rather than negative.
 SBAR — **S:** bed X, newly confused and pulling at his lines. **B:** day 4, post-laparotomy, positive delirium screen this morning, last analgesia [time], no sleep overnight. **A:** probable delirium; pain, infection and hypoxia not excluded. **R:** please review for causes and medicines; I am using reorientation and de-escalation and will repeat the screen.
 
 ## 13. Potential complications

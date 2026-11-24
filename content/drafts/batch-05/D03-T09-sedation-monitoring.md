@@ -74,7 +74,7 @@ Over-sedation (cannot be roused, no response to voice, respiratory depression, l
 | Choosing sedatives, doses and targets; starting neuromuscular blockade; antipsychotics or other drugs for agitation | Prescriber / pharmacist decision |
 
 ## 12. Escalation criteria
-Escalate for: unarousable patient or respiratory depression; agitation not controlled after treating causes; failure of the awakening trial; sedation target repeatedly missed; need for increasing doses; suspected withdrawal or delirium; restraint-related injury.
+Activate emergency response for unexpected inability to rouse the patient with respiratory or circulatory compromise; support airway and ventilation under local protocol. Urgently escalate unexplained sedation, uncontrolled agitation, failed awakening trials, withdrawal, delirium or restraint injury. Before an awakening trial, verify eligibility and exclusions with the team, particularly when paralysis or a prescribed deep-sedation indication is present. Neuromuscular blockade makes behavioural sedation and pain scores unreliable; immobility is not evidence of comfort or unconsciousness. Verify prescribed sedation and analgesia and seek clinical review.
 SBAR — **S:** bed X, target is light sedation but the patient is deeply sedated and unresponsive to voice. **B:** day 3 ventilated, infusion running at [rate], pain score [x], no recent boluses. **A:** over-sedation; neurological change cannot be assessed. **R:** please review the sedation plan now; do you want a trial of interruption?
 
 ## 13. Potential complications

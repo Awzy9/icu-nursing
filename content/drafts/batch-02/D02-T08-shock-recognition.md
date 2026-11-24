@@ -84,7 +84,7 @@ Cold, mottled or blue skin; capillary refill prolonged; new confusion or drowsin
 | Diagnosing the type of shock, choosing therapy, BP targets, inserting lines | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: any suspected shock; MAP below the ordered target; new mottling or confusion; urine output falling; lactate rising; no improvement after treatment; any arrhythmia with instability.
+Escalate immediately for suspected shock, falling pressure below the ordered target, new mottling or confusion, falling urine output, rising lactate, failure to respond or an unstable arrhythmia. Shock can occur despite a preserved blood pressure. Assess airway, breathing and perfusion, summon help and initiate authorised supportive care in parallel. Do not wait for hypotension or a lactate result before responding to clinical deterioration.
 SBAR — **S:** bed X, systolic 82, heart rate 124, cold mottled legs, confused. **B:** day 1 after emergency laparotomy, drain output high, urine output 15 mL over the last hour. **A:** I think he is in shock, possibly bleeding or sepsis. **R:** please come now; I am preparing IV access, bloods including lactate and blood products if you order them.
 
 ## 13. Potential complications

@@ -76,7 +76,7 @@ Urine output below 0.5 mL/kg/h for 6 hours or more; no urine in the catheter bag
 | Diagnosis of AKI cause, stopping nephrotoxic drugs, imaging, referral for renal replacement therapy | Prescriber / nephrology decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: low urine output with a patent catheter; any red flag above; potassium or acid–base results outside the unit's call-back limits; signs of fluid overload; suspected obstruction.
+Escalate immediately for low urine output with a patent catheter, other red flags, critical potassium or acid–base results, fluid overload or suspected obstruction. Check catheter patency and review the trend and perfusion without delaying help. The duration of oliguria used to diagnose AKI is not a waiting period before assessment or escalation. Low output does not by itself establish a need for IV fluid; the clinician assesses perfusion, congestion and other possible causes.
 SBAR — **S:** bed X, urine output under 0.5 mL/kg/h for 6 hours, catheter patent. **B:** day 2 septic shock, on vasopressors, gentamicin started yesterday, creatinine rising. **A:** possible AKI, perfusion or drug related. **R:** please review now; do you want repeat bloods, a fluid plan or drug review? I will keep hourly output and report any change.
 
 ## 13. Potential complications

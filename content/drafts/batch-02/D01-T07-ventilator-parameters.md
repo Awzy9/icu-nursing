@@ -79,7 +79,7 @@ Falling delivered tidal volume or rising airway pressures; sudden desaturation; 
 | Recruitment manoeuvres, neuromuscular blockade, ECMO decisions, prone-positioning indication | Prescriber decision |
 
 ## 12. Escalation criteria
-Immediate escalation for: sudden desaturation or loss of ventilation; pressures or alarms not resolved by checking the patient and circuit; inability to deliver the set volume; suspected pneumothorax; accidental extubation; instability during proning.
+Activate emergency help immediately for sudden desaturation with distress, loss of ventilation, suspected pneumothorax, accidental extubation or haemodynamic collapse. Assess the patient and provide effective ventilation under the emergency protocol in parallel with summoning help; do not delay rescue to troubleshoot the circuit. Escalate unexplained rising pressures, falling measured exhaled volumes or persistent alarms even if the patient appears stable. AARC 2024 assessment recommendations support checking plateau pressure, measured tidal volume and PEEP including auto-PEEP; monitoring findings do not independently authorize setting changes.
 SBAR — **S:** ventilated ARDS patient, bed X, peak pressure rising from 28 to 38 and exhaled tidal volume falling. **B:** day 3 of ventilation, more secretions, sedation score [x]. **A:** possible obstruction, secretions or pneumothorax. **R:** please come to the bedside now; I have suctioned per policy and checked the circuit.
 
 ## 13. Potential complications
