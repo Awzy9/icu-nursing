@@ -104,6 +104,22 @@
         "S-INTL-PI-SURFACES-2026"
       ],
       "section": "monitoring"
+    },
+    {
+      "text": "For critically ill adults who cannot tolerate regular full-body turns, agree a modified repositioning plan with the team, considering small weight shifts that the patient can safely tolerate. Monitor oxygenation, circulation and skin response; reassess whether usual repositioning can resume as stability improves. This is a good-practice approach supported by indirect evidence rather than a proven fixed turning regimen.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-REPOS-2026"
+      ],
+      "section": "monitoring"
+    },
+    {
+      "text": "For patients at heel pressure-injury risk, assess whether the heel is genuinely offloaded, not merely covered by a device. Check fit, skin, swelling and perfusion; adapt equipment to mobility and tolerance, with particular attention to patients who cannot report discomfort. Evidence for choosing a heel offloading device is of very low certainty.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-HEELS-2025"
+      ],
+      "section": "monitoring"
     }
   ],
   "escalation_concepts": [
@@ -131,6 +147,16 @@
       "id": "S-ARJO-ALPHA-ACTIVE4",
       "read": "partial",
       "use": "Manufacturer features page; pressure selection and alarm categories; not efficacy evidence or IFU"
+    },
+    {
+      "id": "S-INTL-PI-REPOS-2026",
+      "read": "partial",
+      "use": "International Guideline repositioning chapter R9 and adult critical care implementation considerations; indirect evidence, no comparative ICU trial identified."
+    },
+    {
+      "id": "S-INTL-PI-HEELS-2025",
+      "read": "partial",
+      "use": "International Guideline heel chapter H2/H3 and fit, assessment and offloading considerations; H2 conditional, very low certainty."
     }
   ],
   "required_sources": [
