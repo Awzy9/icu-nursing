@@ -119,6 +119,13 @@
           "sources": [
             "L-INSULIN"
           ]
+        },
+        {
+          "text": "ADA 2026 recommendation 16.6 supports continuation of a personal CGM in hospital only when clinically appropriate and under an institutional protocol with confirmatory point-of-care glucose measurements for insulin dosing and hypoglycaemia assessment. A sensor reading alone does not authorize IV insulin adjustment. Coordinate appropriate confirmation of unexpected or discordant readings, promptly assess the patient, and do not delay emergency hypoglycaemia care while resolving a measurement discrepancy.",
+          "support": "partial",
+          "sources": [
+            "S-ADA-HOSP-2026"
+          ]
         }
       ]
     },
@@ -215,6 +222,14 @@
           "text": "Record glucose and potassium results, pump checks, second-person checks and escalation per unit standard.",
           "support": "local_protocol",
           "sources": []
+        },
+        {
+          "text": "At transfer or shift change, communicate the insulin indication, authorized monitoring plan, last glucose and potassium values, relevant nutrition changes and pending checks. Reconcile the actual infusion and route with the current order.",
+          "support": "partial",
+          "sources": [
+            "S-ADA-HOSP-2026",
+            "S-FDA-PUMP"
+          ]
         }
       ]
     },
