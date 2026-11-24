@@ -156,8 +156,8 @@ SK-15,Patient repositioning,procedure,local_protocol,1,0,0,1,
 SK-15,Patient repositioning,monitoring,partial,2,1,1,0,S-AARC-PVA;S-INTL-PI-2026;S-INTL-PI-REPOS-2026
 SK-15,Patient repositioning,escalation,partial,1,0,1,0,S-INTL-PI-2026
 SK-15,Patient repositioning,documentation,local_protocol,1,0,0,1,
-SK-16,Safe patient mobilization,indications,partial,1,1,0,0,N-HODGSON-2014
-SK-16,Safe patient mobilization,safety,partial,3,3,0,0,N-HODGSON-2014
+SK-16,Safe patient mobilization,indications,partial,2,1,1,0,N-HODGSON-2014;S-SCCM-PADIS
+SK-16,Safe patient mobilization,safety,partial,5,2,2,1,N-HODGSON-2014;S-SCCM-PADIS;S-TEAM-RCT-2022
 SK-16,Safe patient mobilization,responsibilities,partial,1,1,0,0,N-HODGSON-2014
 SK-16,Safe patient mobilization,scope,partial,1,1,0,0,N-HODGSON-2014
 SK-16,Safe patient mobilization,assessment,partial,1,0,1,0,N-HODGSON-2014
@@ -166,39 +166,41 @@ SK-16,Safe patient mobilization,monitoring,partial,1,0,1,0,N-HODGSON-2014
 SK-16,Safe patient mobilization,escalation,partial,1,0,1,0,N-HODGSON-2014
 SK-16,Safe patient mobilization,documentation,local_protocol,1,0,0,1,
 SK-17,CRRT circuit monitoring,responsibilities,partial,2,0,2,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
-SK-17,CRRT circuit monitoring,safety,partial,4,0,4,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
+SK-17,CRRT circuit monitoring,safety,partial,4,2,2,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
 SK-17,CRRT circuit monitoring,scope,local_protocol,1,0,0,1,
 SK-17,CRRT circuit monitoring,equipment,local_protocol,1,0,0,1,
-SK-17,CRRT circuit monitoring,assessment,partial,1,0,1,0,N-AHS-CRRT-ALARM-2025
+SK-17,CRRT circuit monitoring,assessment,partial,2,1,1,0,N-AHS-CRRT-ALARM-2025;N-LHSC-CRRT-PRINCIPLES
 SK-17,CRRT circuit monitoring,procedure,local_protocol,1,0,0,1,
-SK-17,CRRT circuit monitoring,monitoring,partial,1,0,1,0,S-KDIGO-AKI-2012
-SK-17,CRRT circuit monitoring,escalation,partial,2,0,2,0,N-AHS-CRRT-ALARM-2025;S-KDIGO-AKI-2012
+SK-17,CRRT circuit monitoring,monitoring,partial,3,0,3,0,N-LHSC-CRRT-PRINCIPLES;S-KDIGO-AKI-2012;S-RCA-DELPHI-2026
+SK-17,CRRT circuit monitoring,escalation,partial,2,0,1,1,S-KDIGO-AKI-2012
 SK-17,CRRT circuit monitoring,documentation,local_protocol,1,0,0,1,
-SK-18,ECG monitoring,safety,partial,1,0,1,0,S-OPENRN-ADV-C7
+SK-18,ECG monitoring,safety,partial,2,0,2,0,S-OPENRN-ADV-C7
 SK-18,ECG monitoring,responsibilities,partial,1,0,1,0,S-OPENRN-ADV-C7
 SK-18,ECG monitoring,equipment,partial,1,0,1,0,S-OPENRN-ADV-C7
 SK-18,ECG monitoring,procedure,local_protocol,1,0,0,1,
-SK-18,ECG monitoring,monitoring,partial,1,0,1,0,S-OPENRN-ADV-C7
+SK-18,ECG monitoring,monitoring,partial,2,0,2,0,S-AHA-ECG-SUMMARY-2017;S-OPENRN-ADV-C7
 SK-18,ECG monitoring,escalation,local_protocol,1,0,0,1,
 SK-18,ECG monitoring,documentation,local_protocol,1,0,0,1,
 SK-19,Defibrillator safety,indications,local_protocol,1,0,0,1,
-SK-19,Defibrillator safety,safety,partial,3,0,3,0,S-ERC-ALS-2025
+SK-19,Defibrillator safety,safety,partial,4,0,4,0,S-ERC-ALS-2025
 SK-19,Defibrillator safety,responsibilities,partial,1,0,1,0,S-ERC-ALS-2025
 SK-19,Defibrillator safety,scope,local_protocol,1,0,0,1,
+SK-19,Defibrillator safety,assessment,full,1,1,0,0,S-ERC-ALS-2025
 SK-19,Defibrillator safety,equipment,local_protocol,1,0,0,1,
 SK-19,Defibrillator safety,procedure,local_protocol,1,0,0,1,
 SK-19,Defibrillator safety,escalation,partial,1,0,1,0,S-ERC-ALS-2025
+SK-19,Defibrillator safety,monitoring,full,1,1,0,0,S-ERC-ALS-2025
 SK-19,Defibrillator safety,documentation,local_protocol,1,0,0,1,
 SK-20,Intrahospital patient transport,indications,partial,1,1,0,0,N-ICS-TRANSFER-2026
-SK-20,Intrahospital patient transport,safety,partial,4,4,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,safety,partial,4,3,1,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,responsibilities,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,scope,local_protocol,1,0,0,1,
-SK-20,Intrahospital patient transport,equipment,partial,1,1,0,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,equipment,partial,2,1,1,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,preparation,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,assessment,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,procedure,local_protocol,1,0,0,1,
-SK-20,Intrahospital patient transport,monitoring,partial,1,1,0,0,N-ICS-TRANSFER-2026
-SK-20,Intrahospital patient transport,escalation,local_protocol,1,0,0,1,
+SK-20,Intrahospital patient transport,monitoring,partial,2,0,2,0,N-ICS-TRANSFER-2026
+SK-20,Intrahospital patient transport,escalation,partial,2,1,0,1,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,documentation,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,communication,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-21,Infection prevention (standard precautions),indications,partial,1,0,1,0,S-CDC-IC

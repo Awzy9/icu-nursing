@@ -26,6 +26,11 @@
       "id": "S-SCCM-PADIS",
       "read": "partial",
       "use": "PADIS: summary only"
+    },
+    {
+      "id": "S-TEAM-RCT-2022",
+      "read": "partial",
+      "use": "Indexed primary trial results and adverse events; full publisher page inaccessible"
     }
   ],
   "objectives": [
@@ -85,6 +90,14 @@
           "text": "Do not intensify activity solely to meet a target. Reassess tolerance, haemodynamics, respiratory support, neurological condition, lines and tubes, and coordinate progression with the ICU rehabilitation team. Follow the unit's approved mobilization protocol.",
           "support": "local_protocol",
           "sources": []
+        },
+        {
+          "text": "In the TEAM trial, increased early active mobilization during invasive ventilation did not improve days alive outside hospital and was associated with more mobilization-related adverse events. Individualize progression; do not increase activity intensity merely to meet a target. Stop and reassess if arrhythmia, desaturation or haemodynamic deterioration develops.",
+          "support": "partial",
+          "sources": [
+            "S-TEAM-RCT-2022",
+            "S-SCCM-PADIS"
+          ]
         }
       ]
     },
@@ -237,6 +250,16 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "assessment",
+      "text": "In the TEAM trial, increased early active mobilization during invasive ventilation did not improve days alive outside hospital and was associated with more mobilization-related adverse events. Individualize progression; do not increase activity intensity merely to meet a target. Stop and reassess if arrhythmia, desaturation or haemodynamic deterioration develops.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-TEAM-RCT-2022",
+        "S-SCCM-PADIS"
+      ]
     }
   ],
   "gaps": [
@@ -281,6 +304,17 @@
       "accessed": "2026-11-14",
       "read": "partial",
       "licence_class": "RED (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-TEAM-RCT-2022",
+      "title": "Early Active Mobilization during Mechanical Ventilation in the ICU",
+      "publisher": "TEAM investigators / NEJM",
+      "version": "2022; doi:10.1056/NEJMoa2209083",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2209083",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
       "permission_required": "Verify"
     }
   ]

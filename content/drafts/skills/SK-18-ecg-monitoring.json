@@ -28,6 +28,11 @@
       "id": "S-AACN-ALARM-2018",
       "read": "not_read",
       "use": "AACN alarm alert summary"
+    },
+    {
+      "id": "S-AHA-ECG-SUMMARY-2017",
+      "read": "partial",
+      "use": "Public summary on rhythm, ischemia and QT monitoring purposes and duration"
     }
   ],
   "objectives": [
@@ -101,6 +106,13 @@
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-C7"
+          ]
+        },
+        {
+          "text": "Clarify the indication for continuous ECG monitoring and whether arrhythmia, ST-segment or QT assessment is ordered. Reassess continued need with the treating team; document relevant changes and obtain diagnostic ECG assessment when indicated. Monitor-derived QT or ST changes are not a diagnosis by themselves.",
+          "support": "partial",
+          "sources": [
+            "S-AHA-ECG-SUMMARY-2017"
           ]
         }
       ]
@@ -194,10 +206,19 @@
       "sources": [
         "S-OPENRN-ADV-C7"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Clarify the indication for continuous ECG monitoring and whether arrhythmia, ST-segment or QT assessment is ordered. Reassess continued need with the treating team; document relevant changes and obtain diagnostic ECG assessment when indicated. Monitor-derived QT or ST changes are not a diagnosis by themselves.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AHA-ECG-SUMMARY-2017"
+      ]
     }
   ],
   "gaps": [
-    "Rhythm interpretation, 12-lead ischaemia interpretation, paced rhythms and alarm management: not covered here.",
+    "Full rhythm interpretation, 12-lead ischaemia interpretation, paced rhythms, QT measurement technique, indication-specific duration and alarm settings are not covered here; selected AHA 2017 summary principles are mapped, not the full scientific statement.",
     "AACN practice alerts: full text not accessible."
   ],
   "permissions": [
@@ -237,6 +258,17 @@
       "read": "not_read",
       "licence_class": "RED",
       "permission_required": "Yes"
+    },
+    {
+      "id": "S-AHA-ECG-SUMMARY-2017",
+      "title": "Update to Practice Standards for Electrocardiographic Monitoring in Hospital Settings: Top Things to Know",
+      "publisher": "American Heart Association",
+      "version": "3 October 2017",
+      "url": "https://professional.heart.org/en/science-news/update-to-practice-standards-for-electrocardiographic-monitoring-in-hospital-settings/top-things-to-know",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

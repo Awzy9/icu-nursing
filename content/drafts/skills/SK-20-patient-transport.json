@@ -153,8 +153,15 @@
       "support": "partial",
       "items": [
         {
-          "text": "Apply minimum standards of continuous monitoring in every intra- and inter-hospital transfer (recommendation 73); the example checklist lists ECG, SpO2 and non-invasive blood pressure for all patients and capnography, with or without invasive arterial pressure, for intubated patients (Appendix 7).",
-          "support": "sourced",
+          "text": "ICS 2026 chapter 19 specifies monitoring matched to the patient's critical care level. ECG, blood pressure, oxygen saturation and temperature are included; waveform capnography is required for Level 3 patients in the UK guidance. In patients receiving either invasive or non-invasive ventilation, monitor settings, airway pressures and waveform capnography. Maintain continuous clinical observation and record findings according to patient acuity and local transfer policy.",
+          "support": "partial",
+          "sources": [
+            "N-ICS-TRANSFER-2026"
+          ]
+        },
+        {
+          "text": "For invasive or non-invasive ventilation during transfer, confirm the monitoring plan includes waveform capnography, airway pressures and ventilator settings. Continue clinical observation and reassess an implausible pressure reading against the patient; motion can affect non-invasive blood-pressure measurement.",
+          "support": "partial",
           "sources": [
             "N-ICS-TRANSFER-2026"
           ]
@@ -286,6 +293,15 @@
     {
       "phase": "preparation",
       "text": "Verify oxygen requirement and reserve for the planned journey, delays and changing needs; confirm battery power, backup supplies and trained support.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "N-ICS-TRANSFER-2026"
+      ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "For invasive or non-invasive ventilation during transfer, confirm the monitoring plan includes waveform capnography, airway pressures and ventilator settings. Continue clinical observation and reassess an implausible pressure reading against the patient; motion can affect non-invasive blood-pressure measurement.",
       "critical": true,
       "support": "partial",
       "sources": [

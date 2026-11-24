@@ -3722,6 +3722,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "ae8a787df07013a8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014",
+     "S-SCCM-ABCDEF",
+     "S-SCCM-PADIS",
+     "S-TEAM-RCT-2022"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-17": [
@@ -3796,6 +3810,22 @@
     "gaps": 5,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "666a89a628136a99",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-18": [
@@ -3819,6 +3849,20 @@
     "sources": [
      "S-AACN-ALARM-2018",
      "S-AACN-DYSRHYTHMIA-2016",
+     "S-OPENRN-ADV-C7"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "8248cd8d6797add4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-AHA-ECG-SUMMARY-2017",
      "S-OPENRN-ADV-C7"
     ],
     "gaps": 2,
@@ -3862,6 +3906,18 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "9065f085bcb838c2",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-2025",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-20": [
@@ -3889,6 +3945,17 @@
    },
    {
     "hash": "5ff9abf3daac962e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ICS-TRANSFER-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "569c7f698c9592db",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

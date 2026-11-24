@@ -38,6 +38,11 @@
       "id": "N-LHSC-CRRT-PRINCIPLES",
       "read": "partial",
       "use": "London Health Sciences Centre: clotting surveillance, TMP and filter pressure-drop concepts; relevant paragraphs read 2026-11-23. Centre-specific values and procedures excluded."
+    },
+    {
+      "id": "S-RCA-DELPHI-2026",
+      "read": "partial",
+      "use": "Selected consensus statements 8–10 and remarks on citrate accumulation"
     }
   ],
   "objectives": [
@@ -169,6 +174,13 @@
             "N-LHSC-CRRT-PRINCIPLES",
             "S-KDIGO-AKI-2012"
           ]
+        },
+        {
+          "text": "During regional citrate anticoagulation, review systemic ionized calcium, the total-to-ionized calcium ratio, calcium supplementation requirements and acid-base trends under the prescribed protocol. Escalate a rising ratio with falling systemic ionized calcium, increasing calcium needs or worsening metabolic acidosis; no single result establishes citrate accumulation.",
+          "support": "partial",
+          "sources": [
+            "S-RCA-DELPHI-2026"
+          ]
         }
       ]
     },
@@ -266,12 +278,21 @@
       "sources": [
         "N-LHSC-CRRT-PRINCIPLES"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "During regional citrate anticoagulation, review systemic ionized calcium, the total-to-ionized calcium ratio, calcium supplementation requirements and acid-base trends under the prescribed protocol. Escalate a rising ratio with falling systemic ionized calcium, increasing calcium needs or worsening metabolic acidosis; no single result establishes citrate accumulation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-RCA-DELPHI-2026"
+      ]
     }
   ],
   "gaps": [
     "The alarm pathway is specific to one device family (PrisMax) and one health service; it is not a cross-manufacturer standard.",
     "The manufacturer's operator's manuals were located but not read: Baxter's Prismaflex 7.xx manual URL now redirects to the Vantive site, and software versions differ by unit.",
-    "Priming, citrate monitoring, drug dosing, weaning and device-specific filter-change thresholds are not covered; only pressure-trend concepts are introduced.",
+    "Priming, citrate and calcium adjustment procedures, numerical thresholds, drug dosing, weaning and device-specific filter-change thresholds are not covered. Selected 2026 Delphi monitoring statements are now mapped; local protocols, lab schedules and independent specialist review are required.",
     "KDIGO 2026 update is a draft; the 2012 guideline is over ten years old.",
     "Full ASH HIT probability-assessment algorithm and locally approved anticoagulant alternatives require clinician and pharmacist review; no stand-alone nursing stop/titrate protocol is taught."
   ],
@@ -336,6 +357,17 @@
       "read": "partial",
       "licence_class": "YELLOW (verify)",
       "permission_required": "Verify before reproduction"
+    },
+    {
+      "id": "S-RCA-DELPHI-2026",
+      "title": "Metabolic complications of citrate anticoagulation in continuous renal replacement therapy (CRRT): a Delphi consensus on indications, monitoring and management",
+      "publisher": "Critical Care / Delphi consensus panel",
+      "version": "2026; doi:10.1186/s13054-026-06066-x",
+      "url": "https://link.springer.com/article/10.1186/s13054-026-06066-x",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

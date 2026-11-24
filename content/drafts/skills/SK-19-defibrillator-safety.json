@@ -68,6 +68,13 @@
           "sources": [
             "S-ERC-ALS-2025"
           ]
+        },
+        {
+          "text": "For oxygen-fire safety, keep free-flow oxygen sources away from the chest and direct ventilator exhaust away from the shock area. Maintain an attached ventilation circuit or bag connected to an advanced airway as appropriate; do not routinely disconnect it solely for defibrillation. Follow the trained resuscitation team's device-specific procedure.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
         }
       ]
     },
@@ -214,6 +221,15 @@
     {
       "phase": "procedure",
       "text": "Resume CPR immediately after an indicated shock unless the authorised resuscitation team identifies a reason to assess return of circulation; do not stop solely because an isolated capnography value rises.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    },
+    {
+      "phase": "procedure",
+      "text": "For oxygen-fire safety, keep free-flow oxygen sources away from the chest and direct ventilator exhaust away from the shock area. Maintain an attached ventilation circuit or bag connected to an advanced airway as appropriate; do not routinely disconnect it solely for defibrillation. Follow the trained resuscitation team's device-specific procedure.",
       "critical": true,
       "support": "partial",
       "sources": [

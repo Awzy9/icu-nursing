@@ -2159,12 +2159,17 @@
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-TEAM-RCT-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "2834ee63f5338578"
+   "hash": "ae8a787df07013a8"
   },
   {
    "key": "SK-17",
@@ -2199,12 +2204,17 @@
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCA-DELPHI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "413b19e77702f3ac"
+   "hash": "666a89a628136a99"
   },
   {
    "key": "SK-18",
@@ -2226,6 +2236,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ECG-SUMMARY-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -2234,7 +2249,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "98f4a2a8515dca47"
+   "hash": "8248cd8d6797add4"
   },
   {
    "key": "SK-19",
@@ -2259,7 +2274,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "22ed7ce72a9fd023"
+   "hash": "9065f085bcb838c2"
   },
   {
    "key": "SK-20",
@@ -2279,7 +2294,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "5ff9abf3daac962e"
+   "hash": "569c7f698c9592db"
   },
   {
    "key": "SK-21",
