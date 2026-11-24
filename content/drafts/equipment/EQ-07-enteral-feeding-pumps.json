@@ -8,8 +8,17 @@
   "clinically_reviewed": false,
   "clinical_reviewers": [],
   "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
-  "device_neutral": true,
-  "manufacturer_documents": [],
+  "device_neutral": false,
+  "manufacturer_documents": [
+    {
+      "source_id": "S-CARDINAL-OMNI-RATE",
+      "device": "Kangaroo OMNI enteral pump device only; software revision not specified; verify IFU"
+    },
+    {
+      "source_id": "S-CARDINAL-OMNI-ALARMS",
+      "device": "Kangaroo OMNI enteral pump device only; software revision not specified; verify IFU"
+    }
+  ],
   "related_skill": "SK-10",
   "evidence_status": "partial",
   "diagram": {
@@ -26,8 +35,13 @@
   "parameters": [
     {
       "name": "Programmed rate",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The Kangaroo OMNI enteral pump has a feed delivery setting; intermittent feeding additionally uses a defined feed volume and schedule. Verify the intended regimen against the authorised nutrition plan. A programmed setting neither confirms tube placement nor proves actual delivery.",
+      "support": "partial",
+      "sources": [
+        "S-CARDINAL-OMNI-RATE",
+        "S-NICE-CG32",
+        "S-NHSE-NGT-2016"
+      ]
     },
     {
       "name": "Volume delivered",
@@ -40,8 +54,12 @@
     },
     {
       "name": "Occlusion alarm",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The Kangaroo OMNI distinguishes interrupted feed supply from obstruction in the patient-side tubing and possible sensor faults. Assess the patient and check the authorised feeding pathway; do not force-flush a blocked tube or resume use when position is unconfirmed. Use trained assistance and the exact device instructions.",
+      "support": "partial",
+      "sources": [
+        "S-CARDINAL-OMNI-ALARMS",
+        "S-NHSE-NGT-2016"
+      ]
     }
   ],
   "safety_concepts": [
@@ -116,6 +134,16 @@
       "id": "S-NHSE-NGT-2016",
       "read": "partial",
       "use": "NHS patient safety alert on nasogastric tube misplacement"
+    },
+    {
+      "id": "S-CARDINAL-OMNI-RATE",
+      "read": "partial",
+      "use": "Manufacturer educational transcript; continuous/intermittent rate and volume distinction"
+    },
+    {
+      "id": "S-CARDINAL-OMNI-ALARMS",
+      "read": "partial",
+      "use": "Manufacturer educational transcript; feed-line and patient-line blockage and sensor error"
     }
   ],
   "required_sources": [

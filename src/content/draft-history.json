@@ -8917,6 +8917,21 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "39f7213fcfe0061c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-CG103",
+     "N-RCUK-ANAPH-2021",
+     "N-UKKA-HK-2026-07",
+     "S-OPENRN-ADV-C7",
+     "S-PHILIPS-INTELLIVUE-R0"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-02": [
@@ -8967,6 +8982,21 @@
      "S-AARC-PVA",
      "S-DRAEGER-V500-IFU",
      "S-HAMILTON-C1",
+     "S-VENT-MECHANICS-2024"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "3842fe37c4fff856",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-HAMILTON-VOLUME-MODES",
      "S-VENT-MECHANICS-2024"
     ],
     "gaps": 3,
@@ -9174,6 +9204,20 @@
     "gaps": 4,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "9ce7c0c92ba0729b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012",
+     "S-VANTIVE-PRISMAX-ACCESS",
+     "S-VANTIVE-PRISMAX-PRESSURES"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-07": [
@@ -9228,6 +9272,21 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "7de76b9c0c4448eb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CARDINAL-OMNI-ALARMS",
+     "S-CARDINAL-OMNI-RATE",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-08": [
@@ -9269,6 +9328,19 @@
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-SURFACES-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "8b6d65f652e1117a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ARJO-ALPHA-ACTIVE4",
      "S-INTL-PI-2026",
      "S-INTL-PI-SURFACES-2026"
     ],

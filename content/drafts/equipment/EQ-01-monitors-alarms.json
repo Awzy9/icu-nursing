@@ -8,8 +8,13 @@
   "clinically_reviewed": false,
   "clinical_reviewers": [],
   "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
-  "device_neutral": true,
-  "manufacturer_documents": [],
+  "device_neutral": false,
+  "manufacturer_documents": [
+    {
+      "source_id": "S-PHILIPS-INTELLIVUE-R0",
+      "device": "Philips IntelliVue 6100/6300/6500 model family, release R.0 onwards only"
+    }
+  ],
   "related_skill": "SK-18",
   "evidence_status": "partial",
   "diagram": {
@@ -51,8 +56,11 @@
     },
     {
       "name": "Alarm priority",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The Philips IntelliVue 6100/6300/6500 quick guide for release R.0 onward describes three urgency levels, using different visual and audible indicators. Priority signals urgency, not a confirmed diagnosis. Assess the patient immediately if unstable; acknowledge only as authorised and resolve the cause. Other models and configurations may differ.",
+      "support": "partial",
+      "sources": [
+        "S-PHILIPS-INTELLIVUE-R0"
+      ]
     }
   ],
   "safety_concepts": [
@@ -109,6 +117,11 @@
       "id": "N-NICE-CG103",
       "read": "partial",
       "use": "NICE CG103: pulse oximeter accuracy caution"
+    },
+    {
+      "id": "S-PHILIPS-INTELLIVUE-R0",
+      "read": "partial",
+      "use": "Both pages rendered; alarm priority and reset caveats inspected; not full IFU"
     }
   ],
   "required_sources": [

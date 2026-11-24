@@ -37,10 +37,10 @@ describe("the eight DRAFT equipment specifications", () => {
     expect(validateEquipmentSet(drafts)).toEqual([]);
     for (const d of drafts) expect(validateEquipmentDraft(d, known), d.equipment_id).toEqual([]);
     drafts.forEach((d, i) => expect(d.category).toBe(EQUIPMENT_CATEGORIES[i]));
-    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(20);
+    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(28);
     const crrt = drafts.find((d) => d.equipment_id === "EQ-06")!;
-    expect(crrt.parameters.filter((p) => p.explanation !== null).map((p) => p.name)).toEqual(["Delivered dose against prescription", "Alarm state"]);
-    expect(crrt.parameters.slice(0, 2).every((p) => p.explanation === null)).toBe(true);
+    expect(crrt.parameters.filter((p) => p.explanation !== null).map((p) => p.name)).toEqual(["Access and return pressures", "Blood flow", "Delivered dose against prescription", "Alarm state"]);
+    expect(crrt.parameters.slice(0, 2).every((p) => p.support === "partial" && (p.sources ?? []).some((s) => s.startsWith("S-VANTIVE-PRISMAX-")))).toBe(true);
   });
   it("are unreviewed, name manufacturer documents explicitly and never explain a parameter without a source", () => {
     for (const d of drafts) {

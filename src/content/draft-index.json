@@ -4909,12 +4909,17 @@
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-PHILIPS-INTELLIVUE-R0",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "fba8cc0b71e57b5d"
+   "hash": "39f7213fcfe0061c"
   },
   {
    "key": "EQ-02",
@@ -4941,6 +4946,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-HAMILTON-VOLUME-MODES",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-VENT-MECHANICS-2024",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -4949,7 +4959,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "957eeaa3b48202e9"
+   "hash": "3842fe37c4fff856"
   },
   {
    "key": "EQ-03",
@@ -5054,12 +5064,22 @@
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-VANTIVE-PRISMAX-ACCESS",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-VANTIVE-PRISMAX-PRESSURES",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 3,
-   "hash": "8477bfc6df0df0e4"
+   "hash": "9ce7c0c92ba0729b"
   },
   {
    "key": "EQ-07",
@@ -5070,6 +5090,16 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-CARDINAL-OMNI-ALARMS",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-CARDINAL-OMNI-RATE",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-NHSE-NGT-2016",
      "licence_class": "YELLOW",
@@ -5089,7 +5119,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "4ca428707c2968a6"
+   "hash": "7de76b9c0c4448eb"
   },
   {
    "key": "EQ-08",
@@ -5100,6 +5130,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ARJO-ALPHA-ACTIVE4",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
@@ -5114,7 +5149,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "b008990f3cf5e2d8"
+   "hash": "8b6d65f652e1117a"
   },
   {
    "key": "PX-01",

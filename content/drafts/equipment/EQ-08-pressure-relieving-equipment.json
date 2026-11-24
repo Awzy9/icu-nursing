@@ -8,8 +8,13 @@
   "clinically_reviewed": false,
   "clinical_reviewers": [],
   "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
-  "device_neutral": true,
-  "manufacturer_documents": [],
+  "device_neutral": false,
+  "manufacturer_documents": [
+    {
+      "source_id": "S-ARJO-ALPHA-ACTIVE4",
+      "device": "Arjo Alpha Active 4 model only; revision not specified; verify IFU"
+    }
+  ],
   "related_skill": "SK-14",
   "evidence_status": "partial",
   "diagram": {
@@ -34,13 +39,21 @@
     },
     {
       "name": "Air level or pressure state",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The Arjo Alpha Active 4 has adjustable support pressure associated with patient weight ranges. The setting is not a direct measurement of tissue perfusion or interface pressure. Check individual suitability, support and skin tolerance with trained staff; use the prescribed plan and exact device instructions.",
+      "support": "partial",
+      "sources": [
+        "S-ARJO-ALPHA-ACTIVE4",
+        "S-INTL-PI-SURFACES-2026"
+      ]
     },
     {
       "name": "Alarm state",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The Alpha Active 4 signals conditions including inadequate system pressure, loss of electrical supply and pump malfunction. Assess the patient and continuing support, obtain trained assistance and follow the model-specific contingency plan. Do not assume an alarm-free system eliminates pressure injury risk.",
+      "support": "partial",
+      "sources": [
+        "S-ARJO-ALPHA-ACTIVE4",
+        "S-INTL-PI-SURFACES-2026"
+      ]
     }
   ],
   "safety_concepts": [
@@ -105,6 +118,11 @@
       "id": "S-INTL-PI-SURFACES-2026",
       "read": "partial",
       "use": "Public HTML definitions of active/reactive support surfaces and selection considerations; full evidence tables not reviewed."
+    },
+    {
+      "id": "S-ARJO-ALPHA-ACTIVE4",
+      "read": "partial",
+      "use": "Manufacturer features page; pressure selection and alarm categories; not efficacy evidence or IFU"
     }
   ],
   "required_sources": [
