@@ -57,6 +57,8 @@ Evidence limits: AARC 2024 article reviewed for SBT distinctions; ATS/CHEST 2017
 
 **Saudi national guideline (2026, Q5–6 and Q10).** Conditional, low-certainty guidance supports daily sedation interruption when appropriate, lighter sedation and protocol-based breathing trials. Screen for exceptions before a sedation pause: selected patients requiring deep sedation for severe ARDS, raised intracranial pressure or uncontrolled seizures may not be eligible. Confirm the current prescribed sedation goal, safety screen and coordinated trial plan; do not interrupt necessary sedation merely to meet a daily checklist. Escalate uncertainty to the ICU team.
 
+**Handover after an interrupted breathing trial (AARC 2024 and ATS 2026).** Document the trial technique, duration, oxygen/support settings, baseline and subsequent clinical observations, reason for interruption, and response after prescribed support was restored. Distinguish a trial that was deferred for safety from a completed trial and one stopped for intolerance. Ask the team to identify reversible barriers and agree when reassessment is appropriate. Do not repeat an intolerable trial on a fixed timetable irrespective of the patient's condition. For a successful trial, record the separate airway-protection assessment and risk-based post-extubation support plan; preventive NIV or HFNC does not remove the need to recognize and escalate new post-extubation failure.
+
 ## 8. Monitoring parameters
 Respiratory rate and pattern; tidal volume and minute ventilation if displayed; SpO₂ (and gas exchange if measured); heart rate, rhythm, blood pressure; sedation and agitation level; patient comfort and distress; secretions and cough; ventilator alarms; time on the trial.
 
