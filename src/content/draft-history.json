@@ -1105,6 +1105,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "91f01a9f14838c69",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ERC-ALS-2025",
+     "S-ERC-BLS-2025",
+     "S-ERC-PRC-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D02-T15": [
@@ -1154,6 +1167,17 @@
    },
    {
     "hash": "baae2a27a328f45b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "642fcb96fe217c73",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2129,6 +2153,25 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "b7cc056044d5acbc",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-CDC-BSI-2011",
+     "S-ERC-PRC-2025",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-MHRA-ARTERIAL-GLUCOSE",
+     "S-NSW-ALI",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D03-T09": [
@@ -2802,6 +2845,25 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "5450ee8079c920e2",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D05-T16": [
@@ -3244,6 +3306,22 @@
    },
    {
     "hash": "567104cfaf0e96ee",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-ERC-ALS-2025",
+     "S-ERC-BLS-2025",
+     "S-OPENRN-ADV-C7",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "43d5638deb14de3a",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
