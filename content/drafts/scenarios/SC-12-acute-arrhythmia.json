@@ -126,11 +126,12 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "When the ECG shows a new abnormal finding the nurse immediately assesses the client for signs of decreased cardiac output, and the nurse must know which rhythms need emergency assistance, including ventricular tachycardia.",
+          "feedback": "When the ECG shows a new abnormal finding the nurse immediately assesses the client for signs of decreased cardiac output, and the nurse must know which rhythms need emergency assistance, including ventricular tachycardia. AHA 2025 distinguishes a rhythm causing instability from one reflecting another acute problem. Escalate immediately and communicate the concurrent clinical findings rather than treating a displayed rate alone as proof of the cause.",
           "consequence": "Immediate patient and pulse assessment may identify haemodynamic instability and support timely emergency rhythm evaluation.",
-          "support": "sourced",
+          "support": "partial",
           "sources": [
-            "S-OPENRN-ADV-C74"
+            "S-OPENRN-ADV-C74",
+            "S-AHA-ALS-2025"
           ]
         },
         {
@@ -322,7 +323,8 @@
       "Fast wide rhythms and several other rhythms can lead quickly to loss of consciousness or cardiac arrest.",
       "Support urgent rhythm-specific care by trained and authorised staff. If cardiac arrest occurs, begin CPR and follow the appropriate shockable or non-shockable rhythm pathway.",
       "Think about reversible causes such as electrolytes and oxygenation, keep monitoring after treatment and hand over with SBAR.",
-      "For an unstable abnormal tachyarrhythmia with a pulse, prepare the trained-team cardioversion pathway, including synchronization and appropriate sedation assessment; if the pulse is lost, switch to the arrest pathway."
+      "For an unstable abnormal tachyarrhythmia with a pulse, prepare the trained-team cardioversion pathway, including synchronization and appropriate sedation assessment; if the pulse is lost, switch to the arrest pathway.",
+      "An arrhythmia can reflect another acute illness; communicate symptoms, perfusion and possible underlying causes to guide trained-team assessment."
     ],
     "links": [
       {
