@@ -71,6 +71,8 @@ The public summary of the AACN dysrhythmia-monitoring alert states that the accu
 - **Document** rhythm, rate, intervals, time, patient status, actions and who was informed; attach strips as local policy requires.
 - **Not covered:** alarm limits, lead choice for ST monitoring, 12-lead acquisition detail, paced rhythms, indications and duration of monitoring (no source read).
 
+**Assess the patient with an arrhythmia, not only the ECG rate (2025 ALS).** In a patient with a pulse, report clinical evidence of circulatory compromise, loss of consciousness, acute heart failure or suspected myocardial ischaemia in addition to the rhythm and rate. A patient with a new rhythm and serious symptoms requires immediate expert review even if a monitor label appears reassuring. Obtain a suitable diagnostic tracing when feasible without delaying emergency care, preserve the rhythm strip for review, and communicate relevant medication and electrolyte changes. If arrest is suspected, activate the resuscitation pathway rather than waiting for a 12-lead ECG.
+
 ## 8. Monitoring parameters
 Heart rate and rhythm; regularity; PR, QRS and QT intervals as available; ST segments; pulse, blood pressure, capillary refill, mental state, oxygen saturation, chest pain, dyspnoea; electrode contact and artifact; electrolytes and medicines relevant to the rhythm; alarms and their response.
 
