@@ -89,8 +89,25 @@ describe("filters, freshness, comparison and coverage", () => {
     expect(filterDrafts(list, { review: "patient-safety", sourceGap: "yes", rights: "yes" }, today)).toEqual([urgent]);
     expect(filterDrafts(list, { sourceGap: "no", rights: "no" }, today)).toEqual([clean]);
     expect(worstLicence(e({ sources: [...clean.sources, { id: "U", licence_class: "UNREGISTERED", verified: null }] }))).toBe("UNREGISTERED");
-    expect(onDisk.entries.filter(hasSourceGap)).toHaveLength(88);
-    expect(onDisk.entries.filter(needsRightsCheck)).toHaveLength(161);
+    // Check exact membership against independent metadata criteria, not mutable
+    // catalogue counts. A newly resolved source must not break this regression.
+    const expectedGapKeys = onDisk.entries.filter(x =>
+      x.required_sources !== 0 || x.sources.length === 0 ||
+      x.sources.some(s => s.verified === null || s.verified === "" ||
+        s.licence_class === "UNVERIFIED" || s.licence_class === "UNREGISTERED")
+    ).map(x => x.key);
+    const expectedRightsKeys = onDisk.entries.filter(x =>
+      x.sources.some(s => s.licence_class === "RED" || s.licence_class === "YELLOW" ||
+        s.licence_class === "UNVERIFIED" || s.licence_class === "UNREGISTERED")
+    ).map(x => x.key);
+    expect(filterDrafts(onDisk.entries, { sourceGap: "yes" }, today).map(x => x.key)).toEqual(expectedGapKeys);
+    expect(filterDrafts(onDisk.entries, { rights: "yes" }, today).map(x => x.key)).toEqual(expectedRightsKeys);
+    expect(filterDrafts(onDisk.entries, { sourceGap: "no" }, today).map(x => x.key))
+      .toEqual(onDisk.entries.map(x => x.key).filter(key => !expectedGapKeys.includes(key)));
+    expect(filterDrafts(onDisk.entries, { rights: "no" }, today).map(x => x.key))
+      .toEqual(onDisk.entries.map(x => x.key).filter(key => !expectedRightsKeys.includes(key)));
+    expect(expectedGapKeys).toContain("SC-11");
+    expect(expectedRightsKeys).toContain("SC-11");
     expect(list.every(x => !x.clinically_reviewed)).toBe(true);
   });
   it("flags the known high-priority working draft without displaying its content body", () => {
