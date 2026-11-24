@@ -23,6 +23,16 @@
       "id": "S-SHEA-CAUTI-2022",
       "read": "partial",
       "use": "Indexed guidance on hourly urine output and indications"
+    },
+    {
+      "id": "S-CDC-URINE-STEWARDSHIP-2026",
+      "read": "partial",
+      "use": "Official HTML colonization, asymptomatic bacteriuria, symptomatic infection and exceptions sections checked"
+    },
+    {
+      "id": "S-IDSA-CUTI-2025",
+      "read": "partial",
+      "use": "Official HTML IV-to-oral and duration recommendations and trial population exclusions checked"
     }
   ],
   "objectives": [
@@ -186,6 +196,20 @@
           "sources": [
             "N-CDC-CAUTI-2009"
           ]
+        },
+        {
+          "text": "A positive urine culture without compatible symptoms or other evidence of infection commonly represents colonization in a catheterized patient. Do not request routine cultures or assume a positive result requires antibiotics. Pregnancy and certain invasive urological procedures are recognized exceptions requiring clinician assessment. If systemic deterioration raises concern for sepsis, assess promptly and activate the emergency pathway; stewardship is not a reason to delay indicated cultures or urgent treatment.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-URINE-STEWARDSHIP-2026"
+          ]
+        },
+        {
+          "text": "The 2025 IDSA complicated UTI guideline supports shorter treatment and oral conversion in suitable improving patients, but trials often excluded people with indwelling catheters, severe sepsis or major renal impairment. Do not apply a standard antibiotic duration or oral-switch schedule to an unstable ICU patient. Communicate ongoing obstruction, clinical response, renal function and the catheter indication to the treating team.",
+          "support": "partial",
+          "sources": [
+            "S-IDSA-CUTI-2025"
+          ]
         }
       ]
     },
@@ -310,6 +334,15 @@
         "S-SHEA-CAUTI-2022",
         "N-CDC-CAUTI-2009"
       ]
+    },
+    {
+      "phase": "escalation",
+      "text": "Do not treat a positive urine culture as proof of infection; assess for clinical deterioration and escalate suspected sepsis immediately.",
+      "support": "partial",
+      "sources": [
+        "S-CDC-URINE-STEWARDSHIP-2026"
+      ],
+      "critical": true
     }
   ],
   "gaps": [
@@ -318,7 +351,8 @@
     "Critical-care-specific urine-output monitoring detail: see topic D04-T03."
   ],
   "permissions": [
-    "CDC PDF: no reuse statement on the file; verify before reproducing."
+    "CDC PDF: no reuse statement on the file; verify before reproducing.",
+    "CDC 2026 educational page and IDSA 2025 guideline cited only pending item-specific rights verification."
   ],
   "references": [
     {
@@ -342,6 +376,28 @@
       "read": "partial",
       "licence_class": "RED (cite-only)",
       "permission_required": "Verify"
+    },
+    {
+      "id": "S-CDC-URINE-STEWARDSHIP-2026",
+      "title": "Indwelling Urinary Catheter Culture Stewardship: Overview",
+      "publisher": "CDC",
+      "version": "2026-07-28",
+      "url": "https://www.cdc.gov/uti/hcp/clinical-guidance/",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify before reuse"
+    },
+    {
+      "id": "S-IDSA-CUTI-2025",
+      "title": "2025 Guideline Update on Complicated Urinary Tract Infections",
+      "publisher": "IDSA",
+      "version": "2025-07-17",
+      "url": "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED",
+      "permission_required": "Verify before reuse"
     }
   ]
 }

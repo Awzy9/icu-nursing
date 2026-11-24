@@ -63,6 +63,8 @@ Temperature and haemodynamic trend; dressing/site check each shift (more often i
 | Routine replacement of CVCs | Do not routinely replace to prevent infection | Same (do not routinely replace) | Consistent |
 | Antimicrobial prophylaxis | Do not give systemic prophylaxis routinely before insertion or during use | Not recommended for short-term or tunneled catheters | Prescriber decision |
 
+**WHO 2026 reconciliation (selected executive-summary recommendations).** WHO conditionally supports antiseptic dressings in adults and a planned dressing-change schedule; its suggested routine interval differs from the older gauze-specific SHEA interval. Follow the locally approved product-specific schedule, and replace compromised dressings promptly. WHO conditionally favors saline rather than heparin for routine lock-off flushing, with very uncertain evidence; this is not a universal substitution order, particularly for specialist dialysis catheters. Verify the prescribed compatible lock and catheter instructions. Routine antimicrobial locks for short-term CVC infection prevention and routine prophylactic IV antibiotics at line insertion are not supported. Discuss exceptional indications with infection prevention and the treating team. These recommendations do not replace aseptic access or daily necessity review.
+
 ## 10. Warning signs and red flags
 Fever or rigors, hypothermia, new tachycardia or hypotension, new confusion; redness, swelling, tenderness or discharge at the site; blood in the dressing; line malfunction or leakage; wet or lifting dressing; missing caps; disconnected tubing; rigors during flush or infusion.
 
@@ -164,6 +166,8 @@ D. Suggest changing every dressing daily to be safe, because more changes mean f
 - CDC. Updated Recommendations on the Use of Chlorhexidine-Impregnated Dressings (2017). https://www.cdc.gov/infection-control/hcp/c-i-dressings/index.html (landing page only, accessed 2026-11-14)
 
 - WHO central venous catheter infection prevention, 2026. https://www.who.int/publications/i/item/9789240121805 (selected recommendation excerpts, accessed 2026-11-24)
+
+- WHO. Guidelines for prevention of bloodstream infections associated with intravascular catheters, part 2: central venous catheters. 28 May 2026. https://www.ncbi.nlm.nih.gov/sites/books/NBK622840/table/fm-ch1.tab1/?report=objectonly (selected recommendations 6–8, lock-off flushing, 22 and 24; accessed 2026-11-24; CC BY-NC-SA 3.0 IGO; citation only).
 
 ## 19. Local protocol note
 Dressing type and interval, antiseptic product, connector-scrub time and tubing-change interval follow the institution's policy.

@@ -50,7 +50,7 @@
     {
       "id": "S-SSC-2026",
       "read": "partial",
-      "use": "Official 2026 SSC recommendation-level page: conditional, very-low-certainty preference for protocolized peripheral vasopressor initiation when central access would delay support; complete evidence tables not reviewed."
+      "use": "Official 2026 SSC recommendation-level page: conditional, very-low-certainty preference for protocolized peripheral vasopressor initiation when central access would delay support; complete evidence tables not reviewed. Official 2026 page antimicrobial delivery and reassessment recommendations rechecked 2026-11-24; full appraisal outstanding."
     },
     {
       "id": "S-SSC-EXEC-2026",
@@ -110,7 +110,7 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "A new change in alertness with suspected infection warrants immediate assessment and urgent escalation. Sepsis and septic shock are emergencies; the SSC 2026 guidance calls for treatment and resuscitation without delay. NEWS2 supports recognition, but a score must not delay emergency help when clinical deterioration is apparent. Document the response after immediate safety needs are addressed. The SSC 2026 recommendation-level guidance suggests lactate measurement and capillary refill assessment alongside other measures of tissue perfusion. Neither replaces clinical assessment nor should sampling delay treatment. SSC 2026 prioritizes immediate antimicrobial treatment for suspected septic shock and for probable or definite sepsis, aiming for administration within one hour of recognition. For possible sepsis without shock, the guideline permits rapid time-limited investigation. Obtain cultures promptly, preferably before antibiotics, without delaying urgent treatment; drug selection follows the authorized plan.",
+          "feedback": "A new change in alertness with suspected infection warrants immediate assessment and urgent escalation. Sepsis and septic shock are emergencies; the SSC 2026 guidance calls for treatment and resuscitation without delay. NEWS2 supports recognition, but a score must not delay emergency help when clinical deterioration is apparent. Document the response after immediate safety needs are addressed. The SSC 2026 recommendation-level guidance suggests lactate measurement and capillary refill assessment alongside other measures of tissue perfusion. Neither replaces clinical assessment nor should sampling delay treatment. SSC 2026 prioritizes immediate antimicrobial treatment for suspected septic shock and for probable or definite sepsis, aiming for administration within one hour of recognition. For possible sepsis without shock, the guideline permits rapid time-limited investigation. Obtain cultures promptly, preferably before antibiotics, without delaying urgent treatment; drug selection follows the authorized plan. Record actual administration and sampling times, and alert the team to any delay or missed dose; arrange subsequent culture review and antibiotic reassessment after stabilization.",
           "consequence": "The team attends promptly and the patient is reassessed.",
           "support": "partial",
           "sources": [
@@ -274,7 +274,8 @@
       "Monitor peripheral vasopressor access during treatment. Suspected extravasation requires immediate cessation through the affected cannula, urgent escalation, and a plan for alternative vascular access and haemodynamic support.",
       "Do not flush or massage suspected extravasation; manage the cannula and any antidote only under the appropriate trained-team/local protocol.",
       "Evaluate perfusion using clinical trends, including capillary refill and ordered lactate measurements; no single value establishes adequate resuscitation.",
-      "Record recognition, sampling and administration times and promptly escalate delays to prescribed antimicrobials; possible sepsis without shock is a distinct assessment pathway."
+      "Record recognition, sampling and administration times and promptly escalate delays to prescribed antimicrobials; possible sepsis without shock is a distinct assessment pathway.",
+      "Handover includes antimicrobial delivery, culture status, source-control plan, and the need for clinician-led reassessment; do not delay the emergency first dose or independently stop treatment."
     ],
     "links": [
       {

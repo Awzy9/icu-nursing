@@ -79,6 +79,20 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "83125dc9a5074c93",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-IDSA-AMR-2026",
+     "S-NICE-NG253",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D06-T04": [
@@ -177,6 +191,19 @@
    },
    {
     "hash": "f291d1fee7b59579",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022",
+     "S-WHO-CVC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f346a72d2069c5c4",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2081,6 +2108,19 @@
    },
    {
     "hash": "8fa16802c55961c5",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "f708cbb330230085",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -4917,6 +4957,20 @@
     "evidence_status": "partial",
     "sources": [
      "N-CDC-CAUTI-2009",
+     "S-SHEA-CAUTI-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "4aa3c389fac24266",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-CDC-CAUTI-2009",
+     "S-CDC-URINE-STEWARDSHIP-2026",
+     "S-IDSA-CUTI-2025",
      "S-SHEA-CAUTI-2022"
     ],
     "gaps": 3,
@@ -10361,6 +10415,21 @@
    },
    {
     "hash": "0ccc3a279277a960",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026",
+     "S-SSC-EXEC-2026"
+    ],
+    "gaps": 6,
+    "required_sources": 4,
+    "issues": 0
+   },
+   {
+    "hash": "5b2fe1219918b6f5",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

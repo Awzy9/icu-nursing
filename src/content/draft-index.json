@@ -11,6 +11,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-IDSA-AMR-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-NG253",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -29,7 +34,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c621437ad3797b62"
+   "hash": "83125dc9a5074c93"
   },
   {
    "key": "D06-T04",
@@ -79,7 +84,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "f291d1fee7b59579"
+   "hash": "f346a72d2069c5c4"
   },
   {
    "key": "D07-T04",
@@ -859,7 +864,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "8fa16802c55961c5"
+   "hash": "f708cbb330230085"
   },
   {
    "key": "D02-T12",
@@ -2311,6 +2316,16 @@
      "verified": "2026-11-24"
     },
     {
+     "id": "S-CDC-URINE-STEWARDSHIP-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-IDSA-CUTI-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SHEA-CAUTI-2022",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -2319,7 +2334,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9f30ed08ee408084"
+   "hash": "4aa3c389fac24266"
   },
   {
    "key": "SK-13",
@@ -4649,7 +4664,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 4,
-   "hash": "0ccc3a279277a960"
+   "hash": "5b2fe1219918b6f5"
   },
   {
    "key": "SC-02",

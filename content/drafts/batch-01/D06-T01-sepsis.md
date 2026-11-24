@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE NG253 Suspected sepsis in people aged 16 or over (published 19 Nov 2025; page last updated 23 Sep 2026) – UK-specific", "Surviving Sepsis Campaign adult guidelines 2021 (Intensive Care Med 2021;47:1181-1247) – full text read; SUPERSEDED by the 2026 edition", "Surviving Sepsis Campaign 2026 (Crit Care Med 2026; official SCCM recommendation page, recommendation-level text read; the full publication was NOT read)"]
-sources: [S-NICE-NG253, S-SSC-2021, S-SSC-2026]
+sources: [S-NICE-NG253, S-SSC-2021, S-SSC-2026, S-IDSA-AMR-2026]
 independently_written_note: "Original wording. NICE chapters 'Could this be sepsis?' and 'Evaluating risk' and the SSC 2021 full text (PMC open-access copy) were read; no text copied. NICE restricts commercial reuse; the PMC copy of SSC 2021 is distributed under temporary pandemic-era terms, so treat both as cite-only. SSC 2026: the official SCCM recommendations page (statements, strength, certainty and remarks) was read and compared with each SSC 2021 statement used here; this is recommendation-level text, NOT the full publication, so rationales and evidence tables were not reviewed."
 ---
 # Recognising possible sepsis in adults and escalating
@@ -67,6 +67,8 @@ Frequency is set by risk and local policy. NICE links NEWS2-based risk to re-cal
 | Fluids and vasopressors | SSC 2026 (conditional): initial crystalloid resuscitation for hypoperfusion or septic shock with frequent reassessment; vasopressors if hypotension persists; start vasopressors peripherally rather than delay; norepinephrine first line; MAP target 65 mmHg (strong, moderate certainty), and for adults aged 65 or older a MAP range of 60–65 mmHg is suggested (conditional, low) | Volumes, doses and drugs are prescriber decisions |
 | Special groups | Pregnancy, children, neutropenia need separate pathways | NICE refers to separate guidance for pregnancy and neutropenic sepsis |
 | Recalculation intervals | Reassess at intervals matched to risk | Intervals above are from NICE (citing a UK academy statement) |
+
+**Antimicrobial stewardship after emergency treatment (SSC 2026 and IDSA 2026 AMR guidance).** During subsequent rounds, report new microbiology and susceptibility findings, possible alternative diagnoses, adverse effects, renal function and whether the source has been controlled. The SSC supports narrowing or discontinuing unnecessary antimicrobial treatment after clinical reassessment, including selected culture-negative cases. A negative culture alone does not authorize stopping therapy. Procalcitonin may support stopping decisions in selected patients with source control when duration is uncertain; do not wait for it before time-critical initial treatment. The treating team decides. If a susceptibility report suggests the current treatment is inactive, urgently communicate it to the prescriber and pharmacy rather than waiting for the next scheduled review. IDSA emphasizes the difference between infection and colonization; previous organisms, recent antibiotics and local resistance patterns help guide team decisions.
 
 ## 10. Warning signs and red flags
 New confusion or drowsiness; respiratory rate rising; new oxygen requirement; systolic pressure falling or much lower than usual; heart rate rising or new arrhythmia; low or absent urine output; temperature high or low; mottled/ashen skin, blue lips, non-blanching rash; severe pain at an infected site; "feels very unwell", family says "not himself".
@@ -173,6 +175,8 @@ D. NEWS2 bands can be applied without any change to pregnant patients and to chi
 - NICE. Suspected sepsis in people aged 16 or over (NG253). Published 19 Nov 2025; page updated 23 Sep 2026. https://www.nice.org.uk/guidance/ng253 (chapters "Could this be sepsis?" and "Evaluating risk"; accessed 2026-11-14)
 - Society of Critical Care Medicine / European Society of Intensive Care Medicine. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock **2026** (published 23 Mar 2026). Official recommendation statements including strength, certainty and clinical remarks, NOT the full publication or evidence tables. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 (recommendation page checked 2026-11-21; cited, not reproduced).
 - Evans L, Rhodes A, Alhazzani W, et al. **Historical/superseded 2021 edition:** Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med. 2021;47:1181-1247. doi:10.1007/s00134-021-06506-y. https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
+
+- IDSA. 2026 Guidance on the Treatment of Antimicrobial Resistant Gram-Negative Infections. https://www.idsociety.org/practice-guideline/amr-guidance/ (selected general-management text accessed 2026-11-24; no organism-specific regimen or dosing table reproduced).
 
 ## 19. Local protocol note
 Use your institution's early-warning score and sepsis pathway; pregnancy, children and neutropenia follow separate pathways.

@@ -71,6 +71,8 @@ Blood pressure and MAP; heart rate and rhythm; respiratory rate and oxygen satur
 
 **Updated ESICM 2025 general-shock monitoring (only abstract and comparison table examined):** Monitor capillary refill serially, supplemented by skin temperature and mottling. In persistent shock, assess fluid responsiveness before further fluids and use dynamic rather than static indicators where applicable. Keep these general-shock monitoring statements distinct from the SSC 2026 septic-shock treatment recommendations. Full ESICM 2025 text was not read.
 
+**Antibiotic delivery and reassessment.** The SSC 2026 preference for extended beta-lactam maintenance infusions follows an initial loading dose (strong recommendation, moderate certainty). Check the ordered infusion duration, compatibility, stability, access and pharmacy-approved preparation; avoid delays to the initial dose. Report interrupted or incomplete infusions and coordinate individualized drug-level sampling when ordered. Do not independently convert an intermittent prescription to a prolonged one.
+
 ## 10. Warning signs and red flags
 Rising vasopressor requirement; MAP persistently below target; rising or non-clearing lactate; cold, mottled skin or prolonged capillary refill; falling urine output; new confusion; worsening oxygenation; new arrhythmia; signs of fluid overload after boluses; a source that has not been addressed; a delay in antimicrobials or cultures; a patient with sepsis awaiting an ICU bed.
 
