@@ -374,7 +374,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "9d8e5adc9c10f185"
+   "hash": "320492a5b1bd1d7f"
   },
   {
    "key": "D06-T07",
@@ -579,7 +579,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "f2fce8d8268d21ce"
+   "hash": "d57be489f8e8c750"
   },
   {
    "key": "D02-T04",
@@ -590,6 +590,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
@@ -611,6 +616,16 @@
      "verified": "2026-11-16"
     },
     {
+     "id": "S-MHRA-ARTERIAL-GLUCOSE",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NSW-ALI",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SSC-2021",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -624,7 +639,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "1bde61acaf44b809"
+   "hash": "44fab30e12d11efc"
   },
   {
    "key": "D03-T09",

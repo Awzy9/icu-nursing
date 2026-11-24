@@ -903,6 +903,17 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "320492a5b1bd1d7f",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG148"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D06-T07": [
@@ -1264,6 +1275,20 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "d57be489f8e8c750",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-ERC-ALS-2025",
+     "S-NICE-NG253",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D02-T04": [
@@ -1322,6 +1347,25 @@
      "S-ERC-PRC-2025",
      "S-ESICM-SHOCK-2014",
      "S-ESICM-SHOCK-2025",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "44fab30e12d11efc",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-CDC-BSI-2011",
+     "S-ERC-PRC-2025",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-MHRA-ARTERIAL-GLUCOSE",
+     "S-NSW-ALI",
      "S-SSC-2021",
      "S-SSC-2026"
     ],

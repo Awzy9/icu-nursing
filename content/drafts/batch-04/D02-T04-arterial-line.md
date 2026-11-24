@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – section 17 'Peripheral arterial catheters and pressure monitoring devices' (dated; partly superseded for other catheter topics)", "Surviving Sepsis Campaign 2021 (Intensive Care Med 2021;47:1181-1247) – arterial catheter rationale; SUPERSEDED by SSC 2026", "Surviving Sepsis Campaign 2026 – official SCCM recommendation page, recommendation-level text read (full publication not read)", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract and 2014/2025 comparison table examined only; not full text)", "ESICM 2014 consensus (historical)", "ERC/ESICM Guidelines 2025 Post-Resuscitation Care – arterial line for all post-arrest patients"]
-sources: [S-CDC-BSI-2011, S-SSC-2021, S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ERC-PRC-2025]
+sources: [S-CDC-BSI-2011, S-SSC-2021, S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ERC-PRC-2025, S-ARTERIAL-MEASUREMENT-2020, S-NSW-ALI, S-MHRA-ARTERIAL-GLUCOSE]
 independently_written_note: "Original wording. The CDC 2011 PDF, the SSC 2021 full text, the ESICM 2014 consensus and the ERC–ESICM 2025 post-resuscitation guideline were read in full text. None of them teaches transducer zeroing, levelling, dynamic response (square-wave) testing, waveform damping or blood-sampling technique: those technical steps follow the manufacturer's instructions and local policy and are flagged below as not evidence-based in the sources read. Commercial use of ERC text needs an ERC agreement; paraphrase only."
 ---
 # Arterial line monitoring and maintenance
@@ -101,9 +101,9 @@ A 62-year-old woman on noradrenaline has a radial arterial line. At 03:00 the wa
 A. Increase the vasopressor rate to bring the pressure up, since the display shows hypotension and the patient may be unwell.
 B. Flush the line repeatedly with the pressure bag until a waveform returns, without checking the patient or the connections.
 C. Ignore the reading because arterial lines often give unreliable values and the patient appears to be unchanged.
-D. Assess the patient and take a cuff reading, check the line and connections, and report if it cannot be corrected.
+D. Assess the patient, verify the pressure independently, and escalate promptly while checking the system.
 **Answer: D.**
-**Why correct:** Treat the patient, not the number; check clinically, compare with a cuff reading, check the system, escalate if unresolved.
+**Why correct:** Treat the patient, not the number. Assess perfusion and obtain urgent help if unstable; verify the arterial reading with an appropriate independent measurement while a trained colleague assesses the transducer reference level, zero and waveform quality under the device procedure. Level errors and damping can distort measurements. Do not delay emergency care while checking the equipment or treat a suspected artifact as confirmed hypotension.
 **Why not A:** Changing infusions on an unverified reading is unsafe, and needs an order.
 **Why not C:** Ignoring a monitoring problem risks missing true hypotension.
 **Why not B:** Repeated flushing can cause harm and does not address the cause.
@@ -114,7 +114,7 @@ B. A small amount of dried blood at the edge of the dressing, with a warm, pink 
 C. The flush bag and tubing are labelled with the correct date and the connections are tight.
 D. An arterial trace that shows normal variation with the patient's breathing and a sharp upstroke.
 **Answer: A.**
-**Why correct:** Signs of limb ischaemia need immediate escalation (limb ischaemia is a recognised, uncommon complication).
+**Why correct:** A new pale, cold, painful hand with impaired capillary refill suggests threatened limb perfusion. Assess colour, temperature, pulse, sensation and movement within competency and obtain urgent clinical review; do not wait for routine observations. Follow the authorized vascular-access pathway rather than repeatedly flushing or independently manipulating the catheter.
 **Why not B:** A small amount of dried blood needs a dressing review but is not an emergency when the hand is warm and well perfused.
 **Why not C:** This is the correct practice for the situation described, so it is not an unsafe distractor.
 **Why not D:** An expected feature of the waveform.
@@ -125,7 +125,7 @@ B. A closed continuous-flush system that reduces the number of entries into the 
 C. Dextrose-containing solutions or parenteral nutrition fluids infused as a continuous or intermittent infusion.
 D. Scrubbing the diaphragm with an appropriate antiseptic before the system is accessed for a blood sample.
 **Answer: C.**
-**Why correct:** CDC 2011 advises against giving dextrose-containing solutions or parenteral nutrition fluids through the pressure-monitoring circuit (Category IA). The continuous flush, a closed system and scrubbing the diaphragm are part of recommended practice.
+**Why correct:** CDC 2011 advises against giving dextrose-containing solutions or parenteral nutrition fluids through the pressure-monitoring circuit (Category IA). MHRA additionally warns that glucose-containing flush fluid can contaminate arterial samples and trigger inappropriate insulin treatment. Use only the specified authorized flush solution and check the label and line identity.
 **Why not A:** The continuous flush is part of the system.
 **Why not B:** Closed systems are recommended over open ones.
 **Why not D:** Scrubbing the diaphragm is recommended.
@@ -136,7 +136,7 @@ B. Remove the line yourself without an order, since it has not been used for sam
 C. Replace the line with a new one at a different site to keep the infection risk low for the rest of the admission.
 D. Leave it in place until it stops working or the patient leaves the unit, because removal is a medical task only.
 **Answer: A.**
-**Why correct:** CDC advises removing arterial catheters as soon as they are no longer needed; the prescriber decides.
+**Why correct:** CDC advises removing arterial catheters as soon as they are no longer needed. Review ongoing pressure-monitoring needs as well as sampling; ESICM 2025 supports arterial monitoring for shock requiring vasopressors or persisting after initial treatment. Removal follows the authorized clinician or nurse-led pathway where applicable.
 **Why not B:** Removal needs an order or protocol.
 **Why not C:** Routine replacement is not advised.
 **Why not D:** Unnecessary line days increase risk.
@@ -147,7 +147,7 @@ B. Say it is not appropriate, as CDC advises against dextrose through the circui
 C. Suggest adding a stopcock to the line to make it safer, so that the infusion can be started and stopped.
 D. Agree because the patient is in shock and every available access route may be needed for treatment.
 **Answer: B.**
-**Why correct:** Category IA recommendation; the arterial line is not an infusion route.
+**Why correct:** Category IA recommendation; the arterial line is not an infusion route. MHRA warns that even small amounts of glucose contamination can falsely elevate measured glucose. If the wrong solution has been connected, urgently escalate, identify affected samples and arrange glucose confirmation from an uncontaminated source under local policy before relying on suspect results. Do not attempt to clear the contamination by repeated flushing.
 **Why not A:** A slow rate does not remove the risk.
 **Why not C:** A stopcock adds manipulation and infection risk.
 **Why not D:** Shock does not change this safety rule.
@@ -169,6 +169,10 @@ D. Reporting a damped or lost waveform and an implausible reading.
 - Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971–2012. doi:10.1007/s00134-025-08137-z. https://pubmed.ncbi.nlm.nih.gov/41236566/ (abstract and 2014/2025 comparison inspected 2026-11-16; full text NOT read; cite-only).
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
 - Nolan JP, Sandroni C, Cariou A, et al. ERC and ESICM Guidelines 2025 Post-Resuscitation Care. Resuscitation. 2025;215:110809. https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf (accessed 2026-11-14)
+
+- Saugel et al. Arterial blood pressure measurement (2020). https://doi.org/10.1186/s13054-020-02859-w (selected guidance, accessed 2026-11-24)
+- NSW Emergency Care Institute acute limb ischaemia tool. https://aci.health.nsw.gov.au/networks/eci/clinical/tools/acute-limb-ischaemia (selected guidance, accessed 2026-11-24)
+- MHRA arterial flush safety update. https://www.gov.uk/drug-safety-update/glucose-solutions-recommendations-to-minimise-the-risks-associated-with-the-accidental-use-of-glucose-solutions-instead-of-saline-solutions-in-arterial-lines (selected guidance, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Frequency of checks, transducer set-up and levelling, flush solution and pressure, sampling technique, alarm limits and line-removal rules follow manufacturer instructions and local policy.

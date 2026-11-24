@@ -104,7 +104,7 @@ B. Give a fluid bolus from the ward stock to improve the output, since low outpu
 C. Increase the observation interval to every four hours, so that the patient is not disturbed so often during the night.
 D. Report to the prescriber now as possible AKI, giving the output trend and risk factors, and prepare for tests.
 **Answer: D.**
-**Why correct:** The patient has sustained output below 0.5 mL/kg/h (40 mL/h here), but has not yet met the NICE adult duration criterion of more than 6 hours. Escalate now, assess perfusion and fluid balance, verify measurement and catheter patency, and prepare ordered investigations; do not wait for a formal criterion or assume a fluid bolus is indicated.
+**Why correct:** The patient has sustained urine output below 0.5 mL/kg/h (40 mL/h here), but has not yet met the NICE adult duration criterion of more than 6 hours. Escalate now, assess perfusion and fluid balance, verify measurement and catheter patency, and prepare ordered investigations; do not wait for a formal criterion or assume a fluid bolus is indicated.
 **Why not A:** Delaying to the end of the shift ignores a developing criterion.
 **Why not B:** Fluids need an order, and the cause may not be hypovolaemia.
 **Why not C:** Less frequent monitoring is inappropriate when output is falling.

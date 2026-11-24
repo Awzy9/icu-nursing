@@ -95,7 +95,7 @@ B. Record the score and ask the family to stay with the patient overnight so tha
 C. Increase the oxygen until the saturation reads 100% and then re-score, because the score should fall once saturation rises.
 D. Inform the medical team immediately, ask for an emergency assessment by a critical-care team, and start continuous monitoring.
 **Answer: D.**
-**Why correct:** Seven or more is the emergency response threshold: immediate call, critical-care assessment, continuous monitoring.
+**Why correct:** Seven or more is the emergency response threshold in the RCP NEWS2 pathway. Assess airway, breathing and circulation and activate emergency help immediately, with continuous monitoring and urgent assessment in parallel. Do not delay the response to repeat the score or finish routine observations.
 **Why not A:** A four-hour interval is far too long at this score.
 **Why not C:** Over-oxygenation is not the aim and the score reflects physiology, not just saturation.
 **Why not B:** Family presence does not replace an emergency response.
@@ -106,7 +106,7 @@ B. Reassess at the standard interval and take no further action, since the score
 C. Ask a colleague whether the patient's appearance matches the chart before deciding whether any call is justified.
 D. Escalate on concern: any concern about a patient's condition should prompt urgent review whatever the score.
 **Answer: D.**
-**Why correct:** RCP states the score is not a substitute for clinical judgement.
+**Why correct:** RCP states the score is not a substitute for clinical judgement. Assess work of breathing, mental status, oxygenation and change from baseline; rising oxygen requirements can signal worsening respiratory function even if the score does not rise because supplemental oxygen is a binary scoring item. Escalate based on deterioration and concern, not just the threshold.
 **Why not A:** The score is not the only trigger.
 **Why not B:** Ignores the clinician's concern.
 **Why not C:** Delay for agreement is not required.
@@ -117,9 +117,9 @@ B. Use the dedicated SpO₂ Scale 2 only when a competent clinical decision-make
 C. Choose Scale 2 for any patient with a smoking history or lung disease, to be on the safe side with the oxygen.
 D. Cross out both scales so that staff must rely on their own judgement about the oxygen saturation instead.
 **Answer: B.**
-**Why correct:** RCP recommends Scale 2 only on the decision of a competent clinical decision-maker, recorded in the notes; otherwise Scale 1.
+**Why correct:** RCP recommends Scale 2 for patients with hypercapnic respiratory failure confirmed on blood gas analysis during a current or previous admission, with an appropriate prescribed target and a documented decision by a competent clinician. Otherwise use Scale 1. COPD or a smoking history alone is not sufficient; the oxygen prescription and scoring-scale choice are separate clinical decisions.
 **Why not A:** RCP warns against overuse of oxygen in hypercapnic patients to lower the score.
-**Why not C:** The scale depends on a prescribed target, not smoking history.
+**Why not C:** Smoking or a COPD diagnosis alone does not establish confirmed hypercapnic respiratory failure or authorize Scale 2.
 **Why not D:** The unused scale should be crossed out, not both.
 
 **Q4 (understanding).** For which group does RCP say NEWS2 should not be used?
@@ -139,7 +139,7 @@ B. The device is needed for equipment audit and has no bearing on how the observ
 C. Saturation is not important once oxygen is being given, so the device and flow need to be recorded.
 D. The device determines the legal responsibility of the nurse for any change in the patient's oxygen need.
 **Answer: A.**
-**Why correct:** RCP states recording flow without the delivery device does not define the oxygen received.
+**Why correct:** RCP states recording flow without the delivery device does not define the oxygen received. Record device, oxygen flow or set FiO₂ as appropriate, saturation and target, plus changes in support. Oxygen flow is not interchangeable with FiO₂.
 **Why not B:** The purpose is clinical interpretation.
 **Why not C:** Saturation remains a key parameter.
 **Why not D:** This is not the reason the guidance gives for recording the oxygen device.
