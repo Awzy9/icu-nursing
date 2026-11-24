@@ -13247,6 +13247,23 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "fb5ebe5ab58991af",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-ATS-NIRS-2026",
+     "S-BTS-O2-2017",
+     "S-FDA-OXIMETER-BASICS",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-04": [
@@ -13376,6 +13393,22 @@
      "S-AHRQ-TS",
      "S-DRAEGER-V500-IFU",
      "S-HAMILTON-C1"
+    ],
+    "gaps": 5,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "df4dfe140210f75b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-MV-SAFETY",
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-JC-ALARM"
     ],
     "gaps": 5,
     "required_sources": 1,
@@ -13559,6 +13592,23 @@
     "gaps": 7,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "d96d3b79006eac4a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-FDA-OXIMETER-BASICS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 7,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-06": [
@@ -13697,6 +13747,22 @@
    },
    {
     "hash": "322440477160a357",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-ISCCM-WEAN-2024",
+     "S-PUMA-2022",
+     "S-PUMA-EXTUBATION-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "7639ed1db93e0065",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -15800,6 +15866,22 @@
    },
    {
     "hash": "75b6a589e367af06",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-BTS-ASPIRATION-2023",
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "ebd53efb67a1bbea",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
