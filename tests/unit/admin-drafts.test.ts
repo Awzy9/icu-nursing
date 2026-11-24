@@ -32,6 +32,20 @@ describe("draft index (metadata only)", () => {
     }
     expect(onDisk.entries.find(x => x.key === "SK-17")?.sources.find(s => s.id === "N-BAXTER-PRISMAFLEX")?.verified).toBeNull();
   });
+  it("records partial airway and transport source checks while preserving unresolved older guidance", () => {
+    for (const id of ["N-ICS-TRANSFER-2026", "N-ACI-TRACH", "N-NCBI-OPENRN-TRACH", "N-NCBI-OPENRN-CHEST"]) {
+      const entries = onDisk.entries.filter(x => x.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const x of entries) {
+        expect(x.sources.find(s => s.id === id)?.verified).toBe("2026-11-24");
+        expect(x.clinically_reviewed).toBe(false);
+        expect(needsRightsCheck(x)).toBe(true);
+      }
+    }
+    const airway = onDisk.entries.find(x => x.key === "SK-05")!;
+    expect(airway.sources.find(s => s.id === "N-NHSGGC-TRACH-2022")?.verified).toBeNull();
+    expect(hasSourceGap(airway)).toBe(true);
+  });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);
   });

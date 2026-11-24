@@ -1448,7 +1448,7 @@
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
@@ -1698,7 +1698,7 @@
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-CDC-BSI-2011",
@@ -1923,17 +1923,17 @@
     {
      "id": "N-ACI-TRACH",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-NCBI-OPENRN-TRACH",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-NHSGGC-TRACH-2022",
@@ -2243,7 +2243,7 @@
     {
      "id": "N-NCBI-OPENRN-CHEST",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-OPENRN-ADV-PDF",
@@ -2468,7 +2468,7 @@
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
@@ -4698,7 +4698,7 @@
     {
      "id": "N-NCBI-OPENRN-CHEST",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AARC-O2",

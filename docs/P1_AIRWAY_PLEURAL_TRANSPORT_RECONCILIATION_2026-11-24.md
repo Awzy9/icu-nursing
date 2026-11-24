@@ -1,0 +1,16 @@
+# Airway, pleural drainage and transport reference reconciliation — 24 November 2026
+
+Staff-only targeted source-access review. No claim-level clinical approval or reuse permission.
+
+- ICS fifth edition, [registered document](https://ics.ac.uk/asset/75861CB3%2DB6B4%2D4E78%2D80F22B290BC05015/): PDF version page and printed page 12 inspected visually. Version 3 is dated 30 June 2026. Recommendations 53–68 confirm risk-based escort competencies, preparation/stabilization and tracheostomy emergency supplies. UK guidance, not a universal transport protocol; do not copy the checklist.
+- [NSW ACI tracheostomy guide landing page](https://aci.health.nsw.gov.au/networks/icnsw/clinicians/acute-tracheostomy): official HTML published October 2021, next review 2026. Inspected bedside equipment, transfer and emergency resource descriptions. Full guide and algorithms not appraised; no algorithm copied. The HTML description of the laryngectomy flowchart appears inconsistent with laryngectomy anatomy; use the correct anatomy and specialist emergency pathway, not that description. Flag for source-owner clarification.
+- [Open RN Nursing Skills chapter 22](https://www.ncbi.nlm.nih.gov/sites/books/NBK596713/): HTML passages on inner-cannula obstruction and emergency equipment now accessible. Not full chapter or procedure verification.
+- [Open RN Nursing Advanced Skills chapter 6](https://www.ncbi.nlm.nih.gov/sites/books/NBK594490/): HTML assessment and drainage-system position sections checked. No universal suction settings or clamping instructions adopted; manufacturer and unit procedure govern.
+
+## Newly identified version gaps — keep open
+
+- The [NHSGGC version 4 guideline](https://www.rightdecisions.scot.nhs.uk/media/b5wntvcq/668-adult-acute-care-of-patients-tracheostomy-v4.pdf) was approved 4 August 2025, next review 31 August 2027; cover states no changes to clinical advice. PDF cover visually inspected, selected text on emergency equipment, competence and distinct airway anatomy checked. Existing N-NHSGGC-TRACH-2022 is historical and remains undated. Next compare every cited claim in SK-05 and SK-06 to v4, register new ID and update all canonical references and hashes; NTSP figure permission is not transferable.
+- BTS 2023 statement is listed as valid on the [BTS resource page](https://www.brit-thoracic.org.uk/clinical-resources/clinical-statements/pleural-procedures/). [June 2026 correction](https://doi.org/10.1136/thorax-2022-219371corr1) concerns drain size per indexed publisher text; full correction inaccessible (403). Do not mark the existing statement fully reconciled or change tube-size recommendations. Obtain correction and compare SK-13 and other citations before updating dates.
+- Vascular access INS standard remains inaccessible/unverified, as do the full Open RN PDF and exact installed CRRT model IFU.
+
+Four registered references now have explicit verification dates reflecting this partial access, affecting eight source occurrences across six drafts. XQ-04 and SK-20 no longer have source-metadata gaps, reducing the indicator from 84 to 82. Required-source counts, rights bands, clinical review flags, hashes, and history unchanged. Fresh CI required; no production release.
