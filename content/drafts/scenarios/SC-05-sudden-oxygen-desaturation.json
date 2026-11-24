@@ -128,7 +128,7 @@
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings. Poor peripheral circulation and skin pigmentation may affect oximetry accuracy. Assess signal reliability in parallel and seek further measurement if the clinical picture is discordant; do not delay care. The RCUK adult ABCDE approach emphasizes early emergency assistance and addressing immediate threats during breathing assessment. Do not await chest imaging before escalating possible tension physiology; definitive intervention belongs to the trained team.",
+          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings. Poor peripheral circulation and skin pigmentation may affect oximetry accuracy. Assess signal reliability in parallel and seek further measurement if the clinical picture is discordant; do not delay care. The RCUK adult ABCDE approach emphasizes early emergency assistance and addressing immediate threats during breathing assessment. Do not await chest imaging before escalating possible tension physiology; definitive intervention belongs to the trained team. Report whether respiratory distress is accompanied by new asymmetric chest movement, an unexpected change in chest-drain function or circulatory deterioration. Observe accessible drain and tubing findings without independently manipulating the drain. The emergency team determines the cause and intervention.",
           "consequence": "Direct patient assessment and urgent help may reveal a respiratory emergency even if the oximeter signal is unreliable; secretions are only one possibility, and the team must consider other causes of deterioration.",
           "support": "partial",
           "sources": [
@@ -325,7 +325,8 @@
       "Escalate early when the saturation does not recover, and reassess the same parameters after every intervention.",
       "Do not silence alarms or change limits and devices without authority; hand over with SBAR and document the response.",
       "A wet cough does not exclude pneumothorax, an obstructed drain, or other causes of deterioration. New asymmetric chest movement, hypotension or severe respiratory compromise requires urgent skilled response; do not delay for device adjustments or chest radiography.",
-      "Poor perfusion or pigmentation-related measurement limitations may affect oximetry; evaluate the patient and signal together, and obtain further assessment when findings disagree."
+      "Poor perfusion or pigmentation-related measurement limitations may affect oximetry; evaluate the patient and signal together, and obtain further assessment when findings disagree.",
+      "Chest-drain observations are part of the breathing assessment; a concerning change must not delay emergency assessment or prompt unapproved drain manipulation."
     ],
     "links": [
       {
