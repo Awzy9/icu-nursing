@@ -3061,6 +3061,20 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "c574bfb8d5b22831",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-DOUBLE-CHECK-REVIEW-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-BEST-PRACTICES-2026",
+     "S-ISMP-HA"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D08-T03": [
@@ -3202,6 +3216,25 @@
    },
    {
     "hash": "c756dbf80c27eb35",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-2023",
+     "S-AABB-COI-2024",
+     "S-AABB-HBV-LABEL-2026",
+     "S-BSH-ATR",
+     "S-CBS-ATR-2022",
+     "S-FDA-COI-2024",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "fa928785a841ee7d",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -8501,6 +8534,21 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "edc0f4d1f3d96b56",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-ASH-HIT-2018",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-15": [
@@ -8600,6 +8648,23 @@
    },
    {
     "hash": "ae5b6fc044c868fe",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-ADA-HOSP-2026",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-JBDS-HYPO-2023",
+     "S-RCP-NEWS2",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "3892fce6d4780c09",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
