@@ -2420,6 +2420,22 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "8b0f6a1bdc0b489c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-BSH-ATR",
+     "S-FDA-COI-2024",
+     "S-ISBT-ATR-EDU",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-10": [
@@ -2495,6 +2511,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "14d54125bc04a271",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-OPENRN-SKILLS"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-12": [
@@ -2512,6 +2541,17 @@
    {
     "hash": "a9dffd613bd0c5f4",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-CDC-CAUTI-2009"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "1ca4a870d5b04685",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-CDC-CAUTI-2009"
@@ -2565,6 +2605,18 @@
    {
     "hash": "55754ba9240ce567",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-NPIAP-2019"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f556d3f9ef78081b",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-INTL-PI-2026",
@@ -2759,6 +2811,18 @@
    {
     "hash": "9fd819daa370326c",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-2025",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "22ed7ce72a9fd023",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AHA-2025",

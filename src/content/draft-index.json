@@ -1909,7 +1909,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "78af25c7efb5013a"
+   "hash": "8b0f6a1bdc0b489c"
   },
   {
    "key": "SK-10",
@@ -1979,7 +1979,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e4d095ccb1835a3d"
+   "hash": "14d54125bc04a271"
   },
   {
    "key": "SK-12",
@@ -1999,7 +1999,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a9dffd613bd0c5f4"
+   "hash": "1ca4a870d5b04685"
   },
   {
    "key": "SK-13",
@@ -2054,7 +2054,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "55754ba9240ce567"
+   "hash": "f556d3f9ef78081b"
   },
   {
    "key": "SK-15",
@@ -2204,7 +2204,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9fd819daa370326c"
+   "hash": "22ed7ce72a9fd023"
   },
   {
    "key": "SK-20",

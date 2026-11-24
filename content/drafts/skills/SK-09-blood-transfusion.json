@@ -84,7 +84,7 @@
           ]
         },
         {
-          "text": "Entering the container breaks the system: complete the transfusion within 4 hours of entry (Circular).",
+          "text": "The US Circular gives a four-hour limit after entry into a container; verify the applicable component-specific time limit, storage and expiry with the local transfusion service. Do not interpret this as permission to use a product past its authorised limit.",
           "support": "partial",
           "sources": [
             "S-AABB-COI-2024"
@@ -177,7 +177,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "For a suspected acute transfusion reaction, stop the transfusion promptly, assess the patient and vital-sign trend, request urgent clinical review, re-check patient/product identification, and contact the transfusion service. Preserve the implicated component and set for investigation as directed by the blood bank; do not restart it on the nurse's own authority.",
+          "text": "For a suspected acute transfusion reaction, stop the transfusion promptly, assess the patient and vital-sign trend, request urgent clinical review, re-check patient/product identification, and contact the transfusion service. Preserve the implicated component and set for investigation as directed by the blood bank; do not restart it on the nurse's own authority. For respiratory distress, shock or other severe features, activate emergency care immediately; do not assume all breathlessness represents fluid overload. Do not restart a component implicated in a serious reaction.",
           "support": "partial",
           "sources": [
             "S-ISBT-ATR-EDU",
@@ -256,7 +256,7 @@
     },
     {
       "phase": "monitoring",
-      "text": "Complete the transfusion within 4 hours of entering the container.",
+      "text": "Confirm the component-specific time limit and expiry with the transfusion service and follow local administration policy.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -274,7 +274,7 @@
     },
     {
       "phase": "escalation",
-      "text": "On a suspected reaction, stop the transfusion, promptly assess the patient and notify the responsible clinician and transfusion service.",
+      "text": "Stop a suspected reaction, assess airway, breathing and circulation, activate emergency help for severe features, and notify the clinician and transfusion service. Never independently restart the implicated component.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -1,218 +1,225 @@
 {
- "skill_id": "SK-11",
- "number": 11,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Nasogastric tube care",
- "category": "transfusion-nutrition",
- "topic_drafts": [
-  "D07-T06"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-NICE-CG32",
-   "read": "partial",
-   "use": "position confirmation and daily checks"
-  },
-  {
-   "id": "S-NHSE-NGT-2016",
-   "read": "partial",
-   "use": "patient safety alert"
-  },
-  {
-   "id": "S-OPENRN-SKILLS",
-   "read": "not_read",
-   "use": "Open RN Nursing Skills (CC BY): page returned 403"
-  }
- ],
- "objectives": [
-  "Explain why position is confirmed before each use.",
-  "Perform and record the daily tube checks.",
-  "Escalate if position cannot be confirmed."
- ],
- "prerequisites": [
-  "Hand hygiene (SK-21)"
- ],
- "sections": {
-  "indications": {
-   "support": "local_protocol",
-   "items": [
+  "skill_id": "SK-11",
+  "number": 11,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Nasogastric tube care",
+  "category": "transfusion-nutrition",
+  "topic_drafts": [
+    "D07-T06"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Indications for passing a nasogastric tube are clinical decisions; follow local policy.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "safety": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "NICE CG32 calls for nasogastric tube placement checks after insertion and before each use, using gastric aspirate with appropriate pH paper and X-ray when required. Visible external tube markers are used to monitor migration after initial confirmation; unchanged markings cannot independently rule out internal displacement. Check the tube according to the local approved pathway, including after symptoms or events that raise suspicion of movement. Do not put feed, fluids, medicines or flushes through a tube with uncertain position.",
-     "support": "partial",
-     "sources": [
-      "S-NICE-CG32"
-     ]
+      "id": "S-NICE-CG32",
+      "read": "partial",
+      "use": "position confirmation and daily checks"
     },
     {
-     "text": "Fluid or medicine through a misplaced tube into the respiratory tract or pleura is a Never Event in England (NHS 2016).",
-     "support": "partial",
-     "sources": [
-      "S-NHSE-NGT-2016"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
+      "id": "S-NHSE-NGT-2016",
+      "read": "partial",
+      "use": "patient safety alert"
+    },
     {
-     "text": "Tubes are inserted by staff with the relevant skills and training (NICE CG32).",
-     "support": "partial",
-     "sources": [
-      "S-NICE-CG32"
-     ]
+      "id": "S-OPENRN-SKILLS",
+      "read": "not_read",
+      "use": "Open RN Nursing Skills (CC BY): page returned 403"
     }
-   ]
+  ],
+  "objectives": [
+    "Explain why position is confirmed before each use.",
+    "Perform and record the daily tube checks.",
+    "Escalate if position cannot be confirmed."
+  ],
+  "prerequisites": [
+    "Hand hygiene (SK-21)"
+  ],
+  "sections": {
+    "indications": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Indications for passing a nasogastric tube are clinical decisions; follow local policy.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "NICE CG32 calls for nasogastric tube placement checks after insertion and before each use, using gastric aspirate with appropriate pH paper and X-ray when required. Visible external tube markers are used to monitor migration after initial confirmation; unchanged markings cannot independently rule out internal displacement. Check the tube according to the local approved pathway, including after symptoms or events that raise suspicion of movement. Do not put feed, fluids, medicines or flushes through a tube with uncertain position.",
+          "support": "partial",
+          "sources": [
+            "S-NICE-CG32"
+          ]
+        },
+        {
+          "text": "Fluid or medicine through a misplaced tube into the respiratory tract or pleura is a Never Event in England (NHS 2016).",
+          "support": "partial",
+          "sources": [
+            "S-NHSE-NGT-2016"
+          ]
+        },
+        {
+          "text": "The NHS initial-placement safety standard rejects air insufflation with auscultation, bubbling tests and aspirate appearance alone as confirmation. Use only the institution's approved position-verification pathway and documented interpretation by competent staff.",
+          "support": "partial",
+          "sources": [
+            "S-NHSE-NGT-2016"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Tubes are inserted by staff with the relevant skills and training (NICE CG32).",
+          "support": "partial",
+          "sources": [
+            "S-NICE-CG32"
+          ]
+        }
+      ]
+    },
+    "assessment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Check fixation, nasal skin, tube integrity and recorded external length/markers; compare with previously documented measurements. A changed external length, vomiting, coughing, respiratory distress or concern for displacement triggers reassessment before further use. An unchanged length is only an adjunct, not proof of correct location (NHS safety investigation of 2016 alert).",
+          "support": "partial",
+          "sources": [
+            "S-NICE-CG32"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Insertion, securement, flushing and unblocking steps are not covered by the sources read; follow the unit's approved procedure.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Withhold feed, medications, water and flushing if position is uncertain, the tube may have migrated, or gastric aspirate/pH is inconclusive. Escalate to competent staff for the approved position-confirmation pathway (for example, correctly interpreted X-ray when necessary); do not use auscultation or unchanged external markings as stand-alone confirmation.",
+          "support": "partial",
+          "sources": [
+            "S-NICE-CG32",
+            "S-NHSE-NGT-2016"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record tube type, length at the nostril, position check method and result, and daily checks per your unit's documentation standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "assessment": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "Check fixation, nasal skin, tube integrity and recorded external length/markers; compare with previously documented measurements. A changed external length, vomiting, coughing, respiratory distress or concern for displacement triggers reassessment before further use. An unchanged length is only an adjunct, not proof of correct location (NHS safety investigation of 2016 alert).",
-     "support": "partial",
-     "sources": [
-      "S-NICE-CG32"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "preparation",
+      "text": "Confirm tube position by the approved method before each use.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NICE-CG32",
+        "S-NHSE-NGT-2016"
+      ]
+    },
     {
-     "text": "Insertion, securement, flushing and unblocking steps are not covered by the sources read; follow the unit's approved procedure.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "assessment",
+      "text": "Check fixation, nasal skin, tube integrity and external markings; treat any suspected migration or respiratory distress as a reason to reassess position before use.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-NICE-CG32"
+      ]
+    },
     {
-     "text": "Withhold feed, medications, water and flushing if position is uncertain, the tube may have migrated, or gastric aspirate/pH is inconclusive. Escalate to competent staff for the approved position-confirmation pathway (for example, correctly interpreted X-ray when necessary); do not use auscultation or unchanged external markings as stand-alone confirmation.",
-     "support": "partial",
-     "sources": [
-      "S-NICE-CG32",
-      "S-NHSE-NGT-2016"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "If position is uncertain, withhold feed, water, flushes and medicines. Do not use the whoosh or bubble test, or rely on unchanged external markings; arrange approved confirmation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NHSE-NGT-2016"
+      ]
+    },
     {
-     "text": "Record tube type, length at the nostril, position check method and result, and daily checks per your unit's documentation standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "escalation",
+      "text": "Escalate unconfirmed position or suspected misplacement.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NHSE-NGT-2016"
+      ]
+    },
+    {
+      "phase": "documentation",
+      "text": "Record the check and its result.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Confirm tube position by the approved method before each use.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-NICE-CG32",
-    "S-NHSE-NGT-2016"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Check fixation, nasal skin, tube integrity and external markings; treat any suspected migration or respiratory distress as a reason to reassess position before use.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-NICE-CG32"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Do not use the tube if position cannot be confirmed; follow the local protocol.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-NHSE-NGT-2016"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Escalate unconfirmed position or suspected misplacement.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-NHSE-NGT-2016"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record the check and its result.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Insertion, securement, flushing and unblocking: no accessible source.",
-  "Open RN Nursing Skills (CC BY) would be a permissive candidate source once readable.",
-  "The 2026 adult guideline systematic review identifies varying national initial-confirmation and pH thresholds; do not universalize the UK pH cutoff, and do not use external marks or auscultation alone to prove internal position. A qualified local clinical reviewer must specify the approved pathway."
- ],
- "permissions": [
-  "Open RN: CC BY with attribution; check image licences."
- ],
- "references": [
-  {
-   "id": "S-NICE-CG32",
-   "title": "Nutrition support for adults: oral nutrition support, enteral tube feeding and parenteral nutrition (CG32), recommendations 1.7.16-1.7.18 and the monitoring table",
-   "publisher": "NICE",
-   "version": "Published 2006-02-22; last updated 2017-08-04",
-   "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
-   "accessed": "2026-11-15",
-   "read": "partial",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-NHSE-NGT-2016",
-   "title": "Patient Safety Alert: Nasogastric tube misplacement: continuing risk of death and severe harm (NHS/PSA/RE/2016/006, 22 July 2016; Stage 2 resource set PDF)",
-   "publisher": "NHS Improvement / NHS England",
-   "version": "2016-07-22",
-   "url": "https://www.england.nhs.uk/wp-content/uploads/2019/12/Patient_Safety_Alert_Stage_2_-_NG_tube_resource_set.pdf",
-   "accessed": "2026-11-15",
-   "read": "partial",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-OPENRN-SKILLS",
-   "title": "Nursing Skills 2e",
-   "publisher": "Open RN",
-   "version": "Published 2023-08-28; ISBN 978-1-957068-10-7 (ebook)",
-   "url": "https://wtcs.pressbooks.pub/nursingskills/",
-   "accessed": "2026-11-14",
-   "read": "not_read",
-   "licence_class": "GREEN (conditional)",
-   "permission_required": "No"
-  }
- ]
+  ],
+  "gaps": [
+    "Insertion, securement, flushing and unblocking: no accessible source.",
+    "Open RN Nursing Skills (CC BY) would be a permissive candidate source once readable.",
+    "The 2026 adult guideline systematic review identifies varying national initial-confirmation and pH thresholds; do not universalize the UK pH cutoff, and do not use external marks or auscultation alone to prove internal position. A qualified local clinical reviewer must specify the approved pathway."
+  ],
+  "permissions": [
+    "Open RN: CC BY with attribution; check image licences."
+  ],
+  "references": [
+    {
+      "id": "S-NICE-CG32",
+      "title": "Nutrition support for adults: oral nutrition support, enteral tube feeding and parenteral nutrition (CG32), recommendations 1.7.16-1.7.18 and the monitoring table",
+      "publisher": "NICE",
+      "version": "Published 2006-02-22; last updated 2017-08-04",
+      "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+      "accessed": "2026-11-15",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-NHSE-NGT-2016",
+      "title": "Patient Safety Alert: Nasogastric tube misplacement: continuing risk of death and severe harm (NHS/PSA/RE/2016/006, 22 July 2016; Stage 2 resource set PDF)",
+      "publisher": "NHS Improvement / NHS England",
+      "version": "2016-07-22",
+      "url": "https://www.england.nhs.uk/wp-content/uploads/2019/12/Patient_Safety_Alert_Stage_2_-_NG_tube_resource_set.pdf",
+      "accessed": "2026-11-15",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-OPENRN-SKILLS",
+      "title": "Nursing Skills 2e",
+      "publisher": "Open RN",
+      "version": "Published 2023-08-28; ISBN 978-1-957068-10-7 (ebook)",
+      "url": "https://wtcs.pressbooks.pub/nursingskills/",
+      "accessed": "2026-11-14",
+      "read": "not_read",
+      "licence_class": "GREEN (conditional)",
+      "permission_required": "No"
+    }
+  ]
 }
