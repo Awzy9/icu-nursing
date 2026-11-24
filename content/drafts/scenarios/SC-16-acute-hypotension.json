@@ -67,7 +67,7 @@
     {
       "id": "S-ESICM-SHOCK-2025",
       "read": "partial",
-      "use": "ESICM updated 2025 adult shock guideline: society publication notice and PubMed abstract/key summary reviewed 2026-11-23, not its full recommendation tables. Cite-only, publisher reuse restricted."
+      "use": "ESICM updated 2025 adult shock guideline: society publication notice and PubMed abstract/key summary reviewed 2026-11-23, not its full recommendation tables. Cite-only, publisher reuse restricted. Selected recommendations 16–26 and rationale checked via PDF text extraction 2026-11-24; PDF visual inspection unavailable; full appraisal pending."
     },
     {
       "id": "S-ARTERIAL-MEASUREMENT-2020",
@@ -101,7 +101,7 @@
     "Causes and treatment of hypotension are not drawn from a full guideline; the scenario keeps to assessment, review of infusions, escalation and monitoring.",
     "Measurement-quality principles are mapped to SK-01, a 2025 discordance review abstract and a 2023 meta-analysis abstract; the 2025 EVERDAC trial is contextual evidence on a selective monitoring strategy, not individual measurement accuracy.",
     "Numeric reporting thresholds in the Open RN text are generic and are not written.",
-    "The 2025 ESICM guideline was checked at society summary/abstract level only, and the publisher restricts commercial reproduction; all scenario-level nurse actions and scoring still need independent clinical validation."
+    "Selected ESICM 2025 fluid-responsiveness recommendations checked in extracted PDF text; visual inspection unavailable and complete guideline remains unappraised. Publisher reuse restricted and independent clinical validation remains required."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -212,7 +212,7 @@
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "Rapid trending and communication of tissue perfusion, losses and drug-delivery concerns help the responsible team determine the cause and safely direct resuscitation. Blood loss and diarrhoea are possible contributors, not sufficient evidence to diagnose only hypovolaemia. The ESICM update favors dynamic assessment of fluid responsiveness over static preload markers when applicable. A low pressure or a single filling-pressure value does not independently justify further fluid administration.",
+          "feedback": "Rapid trending and communication of tissue perfusion, losses and drug-delivery concerns help the responsible team determine the cause and safely direct resuscitation. Blood loss and diarrhoea are possible contributors, not sufficient evidence to diagnose only hypovolaemia. The ESICM update favors dynamic assessment of fluid responsiveness over static preload markers when applicable. A low pressure or a single filling-pressure value does not independently justify further fluid administration. For persistent shock after initial resuscitation, the team should assess likely fluid responsiveness before giving more fluid. Passive leg raising with measurement of the change in cardiac output or stroke volume can be useful even during spontaneous breathing. Pulse-pressure or stroke-volume variation is less reliable outside suitable controlled ventilation conditions; respiratory variation of inferior vena cava size alone is insufficient. Fluid responsiveness is not itself an indication for fluid: consider ongoing perfusion deficit and congestion with the treating team. Do not alter ventilator settings or perform a haemodynamic manoeuvre outside the authorised protocol.",
           "consequence": "The clinician has what is needed to decide on fluids, the vasopressor and investigation of the cause.",
           "support": "partial",
           "sources": [
@@ -322,7 +322,8 @@
       "Review infusions and recent medicines, including infusion sites, and tell the prescriber.",
       "Do not change vasopressors or give fluids on your own; report with SBAR and escalate early.",
       "Use the clinician-directed monitoring plan and check arterial measurement quality when readings are implausible; fluid responsiveness assessment and resuscitation decisions require clinical context.",
-      "A selective cuff-first strategy is not equivalent to assuming all invasive and noninvasive readings agree; escalate discordance using clinical perfusion and technical checks."
+      "A selective cuff-first strategy is not equivalent to assuming all invasive and noninvasive readings agree; escalate discordance using clinical perfusion and technical checks.",
+      "Fluid responsiveness testing has method-specific limitations; a positive response alone is not an instruction to administer fluid. Report congestion and the clinical perfusion trajectory."
     ],
     "links": [
       {

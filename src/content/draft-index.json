@@ -256,6 +256,21 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ESC-AHF-EMERGENCY-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-CS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-HF-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -284,7 +299,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "c8b4204d7f9e8f4e"
+   "hash": "a3784b36482073a8"
   },
   {
    "key": "D02-T14",
@@ -4606,6 +4621,21 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESC-AHF-EMERGENCY-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-CS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-HF-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4622,9 +4652,9 @@
     }
    ],
    "issues": [],
-   "gaps": 6,
+   "gaps": 7,
    "required_sources": 2,
-   "hash": "038785eebc3039fd"
+   "hash": "5c4dee6cec5a57b1"
   },
   {
    "key": "SC-03",
@@ -5274,7 +5304,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "f2182e13217796b8"
+   "hash": "c7df29af5cf2bdad"
   },
   {
    "key": "SC-17",
