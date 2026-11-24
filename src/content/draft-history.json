@@ -14064,6 +14064,25 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "00e797d5b3a7e503",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-NICE-NG217",
+     "S-ACNS-CCEEG-2015",
+     "S-AHA-FA-SEIZURE-2024",
+     "S-AHRQ-TS",
+     "S-CDC-SEIZURE-2024",
+     "S-ENLS-SE-V6",
+     "S-ICS-SE-2025",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-09": [
@@ -14769,6 +14788,23 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "ec1a7194f4b6ab15",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "L-AMIODARONE",
+     "S-AHA-ALS-2025",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-OPENRN-ADV-C74",
+     "S-RCUK-ALS-2025"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-13": [
@@ -14864,6 +14900,20 @@
    },
    {
     "hash": "31b5fb5a9d97388d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-ALS-2025",
+     "S-AHA-BLS-2025",
+     "S-ERC-ALS-2025",
+     "S-RCUK-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "0377f4174b35868e",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -15909,6 +15959,23 @@
      "N-RCUK-ANAPH-2021",
      "S-ADRENALIN-IM-2025",
      "S-AHRQ-TS",
+     "S-NICE-NG258-2026",
+     "S-RCUK-SPECIAL-2025"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "6af8a5f730d4b5c0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-ADRENALIN-IM-2025",
+     "S-AHRQ-TS",
+     "S-ANZCOR-SPECIAL-2026",
      "S-NICE-NG258-2026",
      "S-RCUK-SPECIAL-2025"
     ],
