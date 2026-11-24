@@ -99,10 +99,12 @@
   ],
   "monitoring_concepts": [
     {
-      "text": "Arterial pressure and waveform, heart rate, limb perfusion, insertion site, flush system, alarms and line days.",
+      "text": "Trend arterial pressure and waveform with the patient's perfusion; also monitor heart rate, limb perfusion, insertion site, flush system, alarms and ongoing line necessity according to local policy. ESICM 2025 supports arterial catheter monitoring for adult shock persisting despite initial therapy or requiring vasopressors. SSC 2026 conditionally allows invasive or noninvasive blood pressure monitoring in adult septic shock (very low certainty), with arterial monitoring particularly advised for substantial or escalating vasopressor support, multiple agents, frequent arterial sampling or repeatedly inconsistent cuff readings. The responsible team chooses the method; never delay urgent care solely to place a line.",
       "support": "partial",
       "sources": [
-        "S-ESICM-SHOCK-2014"
+        "S-ESICM-SHOCK-2014",
+        "S-ESICM-SHOCK-2025",
+        "S-SSC-2026"
       ],
       "section": "monitoring"
     }
@@ -143,6 +145,16 @@
       "id": "S-MHRA-ARTERIAL-GLUCOSE",
       "read": "partial",
       "use": "MHRA 2023 safety update: glucose-containing arterial flush fluid can contaminate samples."
+    },
+    {
+      "id": "S-ESICM-SHOCK-2025",
+      "read": "partial",
+      "use": "2025 adult circulatory shock guidance: indexed primary abstract and ESICM society announcement; arterial catheter monitoring good-practice statement."
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "2026 adult septic shock blood pressure monitoring recommendation and remarks on the official SCCM page; very low certainty; full evidence appraisal pending."
     }
   ],
   "required_sources": [
