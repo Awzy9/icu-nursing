@@ -5816,6 +5816,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-FDA-MISCONNECTIONS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -5839,7 +5844,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "f2f0f5e5e94b4c83"
+   "hash": "1efee35eb7579281"
   },
   {
    "key": "EQ-05",
@@ -5859,7 +5864,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "2ab473f23b99409d"
+   "hash": "1aa610dbdf52f53c"
   },
   {
    "key": "EQ-06",
@@ -5899,7 +5904,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 3,
-   "hash": "5282080f294f041d"
+   "hash": "d0b8a1843c1c4d7f"
   },
   {
    "key": "EQ-07",
@@ -5918,6 +5923,11 @@
     {
      "id": "S-CARDINAL-OMNI-RATE",
      "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-FDA-MISCONNECTIONS",
+     "licence_class": "YELLOW",
      "verified": "2026-11-24"
     },
     {
@@ -5944,7 +5954,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "7d459ec3f64007d2"
+   "hash": "bad18d8a21c797b0"
   },
   {
    "key": "EQ-08",
@@ -5966,6 +5976,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-INTL-PI-HEELS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-REPOS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-INTL-PI-SURFACES-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -5974,7 +5994,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "8a163fe911c4496d"
+   "hash": "f9c82fb8167118a3"
   },
   {
    "key": "PX-01",
