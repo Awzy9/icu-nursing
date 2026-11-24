@@ -15453,6 +15453,21 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "1efee35eb7579281",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-MISCONNECTIONS",
+     "S-FDA-PUMP",
+     "S-FDA-PUMP-FAILURE-EXAMPLES",
+     "S-FDA-PUMP-OVERVIEW",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-05": [
@@ -15502,6 +15517,17 @@
    },
    {
     "hash": "2ab473f23b99409d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "1aa610dbdf52f53c",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -15577,6 +15603,21 @@
    },
    {
     "hash": "5282080f294f041d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012",
+     "S-RRT-MULTIDISC-2026",
+     "S-VANTIVE-PRISMAX-ACCESS",
+     "S-VANTIVE-PRISMAX-PRESSURES"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "d0b8a1843c1c4d7f",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -15674,6 +15715,23 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "bad18d8a21c797b0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CARDINAL-OMNI-ALARMS",
+     "S-CARDINAL-OMNI-RATE",
+     "S-FDA-MISCONNECTIONS",
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-08": [
@@ -15742,6 +15800,21 @@
     "sources": [
      "S-ARJO-ALPHA-ACTIVE4",
      "S-INTL-PI-2026",
+     "S-INTL-PI-SURFACES-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "f9c82fb8167118a3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ARJO-ALPHA-ACTIVE4",
+     "S-INTL-PI-2026",
+     "S-INTL-PI-HEELS-2025",
+     "S-INTL-PI-REPOS-2026",
      "S-INTL-PI-SURFACES-2026"
     ],
     "gaps": 3,
