@@ -124,7 +124,7 @@
           ]
         },
         {
-          "text": "Push the tube back in to where it was.",
+          "text": "Push the tube back in to where it was using the previously recorded depth, then reassess the leak and oxygen saturation.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Leave the bedside to find a doctor.",
+          "text": "Leave the bedside to find a doctor and return with the airway team, rather than asking a colleague to activate emergency help.",
           "points": 0,
           "next": 2,
           "scope": "escalation",

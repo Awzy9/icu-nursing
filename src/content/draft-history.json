@@ -11536,6 +11536,21 @@
     "gaps": 5,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "ae31843c4ae76f28",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-MV-SAFETY",
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 5,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-05": [
@@ -11738,6 +11753,22 @@
    },
    {
     "hash": "1d651f6c9df0e895",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-ISCCM-WEAN-2024",
+     "S-PUMA-2022",
+     "S-PUMA-EXTUBATION-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "d1503d2691f9bc25",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13357,6 +13388,22 @@
    },
    {
     "hash": "f0aecf12714fe51d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-ADRENALIN-IM-2025",
+     "S-AHRQ-TS",
+     "S-NICE-NG258-2026",
+     "S-RCUK-SPECIAL-2025"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "2d507d250c8c670b",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
