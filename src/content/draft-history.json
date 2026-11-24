@@ -2112,6 +2112,21 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3a0919bf4d223efb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-INS-STANDARDS",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-NCSBN-DELEG-2019",
+     "S-SHEA-CLABSI-2022"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-03": [
@@ -6924,6 +6939,20 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "f2489d203397cafa",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-19": [
@@ -6958,6 +6987,20 @@
    {
     "hash": "cba979db80c0317c",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-AHRQ-TS"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "c1264e9f76ad05f8",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-EPINEPHRINE",
@@ -7269,6 +7312,18 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "e689e03e5ee5322f",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-ISMP-HA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "PX-03": [
@@ -7286,6 +7341,17 @@
    {
     "hash": "d5b70022ac8d0064",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "bc9c22eba16a3819",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-OPENRN-FUND-DOC"

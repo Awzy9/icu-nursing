@@ -241,7 +241,7 @@
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
-          "feedback": "Restarting a suspected trigger is a prescriber decision.",
+          "feedback": "Do not re-expose the patient to the suspected anaphylaxis trigger because symptoms have settled. Flag the suspected allergy and seek a specialist-led medication plan; this exercise does not teach re-challenge.",
           "consequence": "The reaction recurs.",
           "support": "partial",
           "sources": [

@@ -1,141 +1,141 @@
 {
- "practice_id": "PX-02",
- "number": 2,
- "title": "SBAR call to raise a concern about a prescribed medicine",
- "area": "sbar",
- "kind": "classify",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
- "fictional": true,
- "evidence_status": "partial",
- "arabic_status": "not_written",
- "gaps": [
-  "No published exercise may exist until the review phase: this is a specification only.",
-  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
-  "The exercise has not been tested with learners, and its Arabic version has not been written.",
-  "The ISMP list is used only to justify choosing a high-alert medicine as the example; no medicine guidance is given.",
-  "The example names no medicine, dose or route."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "objectives": [
-  "Raise a medicine concern clearly without blame.",
-  "Name the specific concern and ask for a decision."
- ],
- "sources": [
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "TeamSTEPPS SBAR page: structure only"
-  },
-  {
-   "id": "S-ISMP-HA",
-   "read": "full",
-   "use": "ISMP high-alert list: used only to say that some medicines need extra care"
-  }
- ],
- "required_sources": [
-  "Unit medicine-query procedure",
-  "A professional standard on questioning a prescription"
- ],
- "setup": "A fictional adult in a fictional ICU bed on a continuous infusion; a prescribed medicine order looks different from what the nurse expected. The nurse calls the prescriber before giving it.",
- "categories": [
-  {
-   "id": "s",
-   "label": "S: Situation"
-  },
-  {
-   "id": "b",
-   "label": "B: Background"
-  },
-  {
-   "id": "a",
-   "label": "A: Assessment"
-  },
-  {
-   "id": "r",
-   "label": "R: Request"
-  },
-  {
-   "id": "out",
-   "label": "Leave out"
-  }
- ],
- "items": [
-  {
-   "id": "i1",
-   "text": "I am calling about Ms B in bed 7. I have an order I would like to check before I give it.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "s",
-   "why": "It says why you are calling."
-  },
-  {
-   "id": "i2",
-   "text": "She had a procedure this morning, and her previous order was different.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "b",
-   "why": "It gives relevant context for the query."
-  },
-  {
-   "id": "i3",
-   "text": "The new order does not match what I expected, and I am not confident it is intended.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "a",
-   "why": "It states your concern and its basis without blame."
-  },
-  {
-   "id": "i4",
-   "text": "Please confirm or change the order, and I will hold it until I hear from you.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS",
-    "S-ISMP-HA"
-   ],
-   "category": "r",
-   "why": "A specific request, plus a safe interim action."
-  },
-  {
-   "id": "i5",
-   "text": "The last doctor never writes clearly.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "out",
-   "why": "Blame does not help the decision."
-  },
-  {
-   "id": "i6",
-   "text": "She has no known drug allergies on her chart, and this is the same class of medicine she was on before the procedure.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "b",
-   "why": "It is relevant background the prescriber needs to judge the query, without naming a medicine or a dose."
-  },
-  {
-   "id": "i7",
-   "text": "The infusion pump is already programmed for the previous order and has not been changed yet.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "a",
-   "why": "It tells the prescriber the current safe state of the equipment, which affects how urgent the decision is."
-  }
- ]
+  "practice_id": "PX-02",
+  "number": 2,
+  "title": "SBAR call to raise a concern about a prescribed medicine",
+  "area": "sbar",
+  "kind": "classify",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+  "fictional": true,
+  "evidence_status": "partial",
+  "arabic_status": "not_written",
+  "gaps": [
+    "No published exercise may exist until the review phase: this is a specification only.",
+    "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+    "The exercise has not been tested with learners, and its Arabic version has not been written.",
+    "The ISMP list is used only to justify choosing a high-alert medicine as the example; no medicine guidance is given.",
+    "The example names no medicine, dose or route."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  ],
+  "objectives": [
+    "Raise a medicine concern clearly without blame.",
+    "Name the specific concern and ask for a decision."
+  ],
+  "sources": [
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "TeamSTEPPS SBAR page: structure only"
+    },
+    {
+      "id": "S-ISMP-HA",
+      "read": "full",
+      "use": "ISMP high-alert list: used only to say that some medicines need extra care"
+    }
+  ],
+  "required_sources": [
+    "Unit medicine-query procedure",
+    "A professional standard on questioning a prescription"
+  ],
+  "setup": "A fictional adult in a fictional ICU bed on a continuous infusion; a proposed new medicine order differs from the expected plan. The nurse seeks immediate clarification before implementing the change, while ensuring existing essential therapy is not abruptly interrupted.",
+  "categories": [
+    {
+      "id": "s",
+      "label": "S: Situation"
+    },
+    {
+      "id": "b",
+      "label": "B: Background"
+    },
+    {
+      "id": "a",
+      "label": "A: Assessment"
+    },
+    {
+      "id": "r",
+      "label": "R: Request"
+    },
+    {
+      "id": "out",
+      "label": "Leave out"
+    }
+  ],
+  "items": [
+    {
+      "id": "i1",
+      "text": "I am calling about Ms B in bed 7. I have an order I would like to check before I give it.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "s",
+      "why": "It says why you are calling."
+    },
+    {
+      "id": "i2",
+      "text": "She had a procedure this morning, and her previous order was different.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "b",
+      "why": "It gives relevant context for the query."
+    },
+    {
+      "id": "i3",
+      "text": "The new order does not match what I expected, and I am not confident it is intended.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "a",
+      "why": "It states your concern and its basis without blame."
+    },
+    {
+      "id": "i4",
+      "text": "Please clarify the new order urgently. I will not implement the unconfirmed change; we need a safe interim plan for the currently running infusion.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS",
+        "S-ISMP-HA"
+      ],
+      "category": "r",
+      "why": "A specific request for clarification and a clinician-directed interim plan; avoid abruptly stopping essential ongoing support."
+    },
+    {
+      "id": "i5",
+      "text": "The last doctor never writes clearly.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "out",
+      "why": "Blame does not help the decision."
+    },
+    {
+      "id": "i6",
+      "text": "She has no known drug allergies on her chart, and this is the same class of medicine she was on before the procedure.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "b",
+      "why": "It is relevant background the prescriber needs to judge the query, without naming a medicine or a dose."
+    },
+    {
+      "id": "i7",
+      "text": "The infusion pump is already programmed for the previous order and has not been changed yet.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "a",
+      "why": "It communicates the current equipment state. The team must assess whether the existing therapy remains safe; the previous pump setting is not automatically safe."
+    }
+  ]
 }

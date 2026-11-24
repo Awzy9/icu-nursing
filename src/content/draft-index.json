@@ -1639,7 +1639,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "321f0f5a82cf63d6"
+   "hash": "3a0919bf4d223efb"
   },
   {
    "key": "SK-03",
@@ -4814,7 +4814,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "2d349e31d2f7797a"
+   "hash": "f2489d203397cafa"
   },
   {
    "key": "SC-19",
@@ -4849,7 +4849,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "cba979db80c0317c"
+   "hash": "c1264e9f76ad05f8"
   },
   {
    "key": "SC-20",
@@ -5139,7 +5139,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "b794c2f2d7751fc1"
+   "hash": "e689e03e5ee5322f"
   },
   {
    "key": "PX-03",
@@ -5159,7 +5159,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "d5b70022ac8d0064"
+   "hash": "bc9c22eba16a3819"
   },
   {
    "key": "PX-04",
