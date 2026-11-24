@@ -396,6 +396,22 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "cfb77dc9b1b340d5",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-ASSESSMENT-2026",
+     "S-INTL-PI-CLASSIFICATION-2026",
+     "S-INTL-PI-DRPI-2025",
+     "S-INTL-PI-HEELS-2025",
+     "S-INTL-PI-REPOS-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D09-T01": [
@@ -437,6 +453,18 @@
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
+     "S-AHRQ-TS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "8d792b9efddbb196",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHRQ-HANDOFF",
      "S-AHRQ-TS"
     ],
     "gaps": 0,
@@ -523,6 +551,21 @@
    },
    {
     "hash": "8d6b78778742ca77",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ISMP-BEST-PRACTICES-2026",
+     "S-NMC-CODE",
+     "S-OPENRN-FUND",
+     "S-SCCM-EOL-2025",
+     "S-WHO-INCIDENT-2020"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "bac3da3d4fecea28",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2119,6 +2162,21 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "cb0ffc09242a40c6",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-ERC-ALS-2025",
+     "S-NICE-NG253",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D02-T04": [
@@ -2462,6 +2520,22 @@
      "S-AHA-INHOSP-STROKE-2022",
      "S-INTL-PI-2026",
      "S-OPENRN-NSK-APPC",
+     "S-SCCM-OLDER-2026",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ff219a48b7a9363e",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-INHOSP-STROKE-2022",
+     "S-INTL-PI-2026",
+     "S-OPENRN-NSK-APPC",
+     "S-RCUK-ABCDE-ADULT",
      "S-SCCM-OLDER-2026",
      "S-SCCM-PADIS"
     ],
