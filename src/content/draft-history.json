@@ -1290,6 +1290,18 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "d2156951cedb8fd0",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG148",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D06-T07": [
@@ -1686,6 +1698,19 @@
    },
    {
     "hash": "c0458d2d1109e544",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2025",
+     "S-NICE-CG174",
+     "S-NICE-NG148"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "b3d67362793987d6",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -3026,6 +3051,20 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "5523a74ed4bfc850",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NHS-SPS-HYPO-2024",
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D04-T08": [
@@ -3085,6 +3124,21 @@
    },
    {
     "hash": "c220f4eed6f1f639",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AAFP-ACID2025",
+     "S-AARC-BGA-2013",
+     "S-ATS-ABG",
+     "S-MERCK-ACIDBASE",
+     "S-OPENRN-FUND-CH15"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "c554534fed270da5",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -3209,6 +3263,21 @@
    },
    {
     "hash": "994bbfb278a4539d",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-ASH-HIT-2018",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "8ef062cfbab4f315",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

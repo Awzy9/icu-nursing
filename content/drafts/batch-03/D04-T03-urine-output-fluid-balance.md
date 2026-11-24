@@ -102,16 +102,16 @@ D. Remove the catheter to see whether the patient can pass urine independently b
 **Why not B:** Changing infusions needs an order, and the cause may not be hypovolaemia.
 **Why not D:** Removing a catheter needs an order and does not address the cause.
 
-**Q2 (application).** Which finding most suggests fluid overload in a patient receiving IV fluids?
-A. New breathlessness with crackles, peripheral oedema and a strongly positive balance.
-B. A heart rate of 110 with cold peripheries, slow capillary refill and a low urine output.
-C. A low blood pressure that improves immediately with a passive leg raise or a small fluid bolus.
-D. Dry mucous membranes and a falling weight over three days.
+**Q2 (judgment).** After initial shock resuscitation, a patient has a positive fluid balance, new crackles and increasing oxygen requirements. Urine output remains low. A previous assessment suggested fluid responsiveness. What is the safest interpretation?
+A. Suspect congestion, assess breathing and perfusion, and request urgent reassessment.
+B. Give more fluid because the earlier response establishes that further fluid will be beneficial.
+C. Treat low urine output as evidence of persistent intravascular depletion and repeat the bolus.
+D. Wait for the next daily weight to establish whether the fluid balance is clinically important.
 **Answer: A.**
-**Why correct:** Breathlessness, oedema and positive balance suggest overload; NICE notes breathlessness on leg raising as a sign. New respiratory symptoms need immediate clinical assessment, not an automatic diagnosis based on balance alone.
-**Why not B:** Suggests hypoperfusion or hypovolaemia.
-**Why not C:** A change in flow or stroke volume during a properly assessed passive leg raise may suggest fluid responsiveness. A blood-pressure change alone is less reliable; responsiveness does not necessarily mean fluid is needed or safe. ESICM 2025 favors dynamic assessment when applicable.
-**Why not D:** Dry mucosa and falling weight suggest possible fluid deficit rather than the stated pattern of overload.
+**Why correct:** New respiratory deterioration with a positive balance and crackles raises concern for fluid overload but is not diagnostic by itself. Assess airway, breathing and circulation and escalate promptly. Reassess the current perfusion, congestion and fluid responsiveness with the clinical team; fluid responsiveness does not necessarily establish that additional fluid is needed or safe. Do not delay urgent care to reconcile the balance chart.
+**Why not B:** Fluid responsiveness can change over time and is not the same as fluid tolerance; an earlier response does not establish a current indication.
+**Why not C:** Oliguria has multiple causes, including impaired perfusion, intrinsic kidney injury and obstruction; it is not sufficient justification for another bolus.
+**Why not D:** Daily weight can help assess cumulative balance, but new respiratory compromise requires immediate assessment.
 
 **Q3 (judgment).** A patient on IV fluids is now drinking and tolerating enteral feeds. What is the best nursing action?
 A. Continue the IV fluids unchanged, as the prescriber has not stopped them and the plan is reviewed daily anyway.

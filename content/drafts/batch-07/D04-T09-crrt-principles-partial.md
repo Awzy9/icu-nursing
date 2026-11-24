@@ -161,16 +161,16 @@ D. A prophylactic course of systemic antibiotics should be given for the whole d
 **Why not B:** The suggestion is against antibiotic locks.
 **Why not D:** The guideline makes no such statement in the sections read.
 
-**Q6 (scope).** Which decision belongs to the prescriber (nephrologist or intensivist) rather than the bedside nurse?
-A. Reporting that the delivered dose is lower than the prescription to the nurse in charge.
-B. Deciding the anticoagulation strategy, such as regional citrate or heparin.
-C. Documenting downtime and the net fluid balance.
-D. Checking that the catheter site is clean and dry.
+**Q6 (judgment).** A patient on CRRT with regional citrate anticoagulation has falling systemic ionized calcium, increasing calcium replacement requirements and worsening metabolic acidosis. The total-to-ionized calcium ratio is also rising. What is the safest nursing response?
+A. Increase calcium replacement outside the prescribed protocol to normalize the systemic result.
+B. Assess the patient and escalate possible citrate accumulation to the CRRT-trained team.
+C. Increase net fluid removal to correct the acidosis while continuing the anticoagulation unchanged.
+D. Use the rising calcium ratio alone to diagnose citrate accumulation and independently change anticoagulation.
 **Answer: B.**
-**Why correct:** Anticoagulation selection is a prescribing decision. For regional citrate, the 2026 Delphi consensus identifies falling systemic ionized calcium, rising calcium replacement needs, an increased total-to-ionized calcium ratio or worsening metabolic acidosis as concerning in combination. Monitor ordered trends and escalate promptly; no single finding establishes accumulation. Circuit anticoagulation and systemic anticoagulation have different purposes.
-**Why not A:** Reporting is a nursing responsibility.
-**Why not C:** Documentation is a nursing responsibility.
-**Why not D:** Site checks are a nursing responsibility.
+**Why correct:** The 2026 Delphi consensus identifies a combination of falling systemic ionized calcium, rising calcium requirements, an elevated total-to-ionized calcium ratio and metabolic acidosis as concerning for citrate accumulation. Assess the patient, confirm sample sites and ordered trends, monitor rhythm and haemodynamics, and urgently escalate to the CRRT-trained team. No single finding establishes accumulation. Anticoagulation and prescription changes require the authorized protocol and specialist plan.
+**Why not A:** Extra calcium alone does not address a possible citrate metabolism problem; replacement must follow the authorized plan and urgent reassessment.
+**Why not C:** Net fluid removal is not a treatment for suspected citrate accumulation and can worsen instability if altered inappropriately.
+**Why not D:** A calcium ratio is interpreted with clinical and biochemical findings; it does not authorize an independent change in anticoagulation.
 
 ## 18. References
 - American Society of Hematology. Guidelines for management of heparin-induced thrombocytopenia, 2018 (clinical pretest probability with 4Ts; recommendations on low versus intermediate/high probability; with a 2022 ASH expert work-group status check). https://www.hematology.org/resources/clinical-practice-guidelines/venous-thromboembolism-guidelines/heparin-induced-thrombocytopenia ; evidence summary https://pubmed.ncbi.nlm.nih.gov/30482768/ (clinical recommendation and abstract checked 2026-11-21; full evidence tables not reviewed).

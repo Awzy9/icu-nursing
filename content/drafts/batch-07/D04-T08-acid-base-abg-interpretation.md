@@ -160,16 +160,16 @@ D. It is the preferred sample for ventilated patients because it avoids the risk
 **Why not C:** The recommendation is not limited to children.
 **Why not D:** An arterial sample is the reference.
 
-**Q6 (scope).** Which task belongs to the prescriber (and respiratory therapist for the ventilator) rather than the bedside nurse?
-A. Labelling the sample with two patient identifiers and recording the sample source on the request form.
-B. Reporting a critical pH to the responsible clinician immediately, with the patient's clinical state.
-C. Documenting the FiO₂ and the ventilator settings on the request as the guideline lists them.
-D. Deciding to change ventilator settings or give a buffering drug in response to the result.
+**Q6 (application).** A deteriorating patient has pH 7.10, PaCO₂ 40 mm Hg and HCO₃ 12 mEq/L. The nurse notes that PaCO₂ is within the usual reference interval. Which interpretation is most appropriate?
+A. Isolated metabolic acidosis with appropriate respiratory compensation because PaCO₂ is normal.
+B. Isolated respiratory acidosis because the bicarbonate is reduced in a patient who is deteriorating.
+C. Metabolic acidosis with additional respiratory alkalosis because compensation lowers PaCO₂.
+D. Metabolic acidosis with additional respiratory acidosis; assess ventilation and escalate urgently.
 **Answer: D.**
-**Why correct:** Treatment and ventilator changes are prescriber decisions, with the respiratory therapist operating the ventilator.
-**Why not A:** Labelling is a nursing responsibility.
-**Why not B:** Reporting is a nursing responsibility.
-**Why not C:** Recording is a nursing responsibility.
+**Why correct:** For a bicarbonate of 12 mEq/L, Winter's formula estimates a compensatory PaCO₂ of approximately 26 ± 2 mm Hg. The measured PaCO₂ of 40 is higher than expected, supporting an additional respiratory acidosis. A reference-range PaCO₂ is therefore not reassuring in this context. Assess ventilation, airway protection and circulation, and summon urgent clinical help. Interpret the gas alongside the clinical condition and specimen quality; treatment decisions require the authorized team.
+**Why not A:** A PaCO₂ within the usual reference range can be inappropriately high for the degree of metabolic acidosis.
+**Why not B:** The low bicarbonate and compensation mismatch support a metabolic component as well as a respiratory component.
+**Why not C:** Additional respiratory alkalosis would cause PaCO₂ to be lower than expected, rather than higher.
 
 ## 18. References
 - Kaufman DA. *Interpretation of Arterial Blood Gases.* American Thoracic Society, Critical Care Clinical Education, https://site.thoracic.org/assemblies/cc/clinical-education/interpretation-of-abgs (accessed 2026-11-21; steps 2–5 read, including expected-compensation discussion and mixed-disorder warning; educational society page, not a validated local protocol; paraphrase only).

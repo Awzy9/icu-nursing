@@ -144,16 +144,16 @@ D. Start the unit potassium-lowering protocol and carry on with other tasks with
 **Why not C:** Oral fluids will not treat this and delay care.
 **Why not D:** Using a protocol is appropriate if present, but not informing the team is unsafe.
 
-**Q5 (understanding).** Which statement about loop diuretics in AKI matches NICE NG148?
-A. They should be given routinely to patients with AKI to restore urine output and prevent progression of the injury.
-B. They are not allowed in patients with kidney problems, because they make kidney damage worse.
-C. Routine use to treat AKI is not recommended, but they may be considered for fluid overload or oedema.
-D. They are the first-line treatment for a urinary obstruction, because they flush the blockage out of the kidney.
+**Q5 (judgment).** A patient with AKI remains oliguric and develops increasing oxygen requirements, oedema and a positive fluid balance. A colleague suggests giving a loop diuretic to reverse the kidney injury. What is the most appropriate response?
+A. Request a diuretic to restore kidney function and use urine output as proof of recovery.
+B. Delay reassessment until creatinine rises further, because diuretics are unsuitable in AKI.
+C. Assess respiratory status and congestion; escalate for individualized fluid management.
+D. Request a further fluid challenge to improve urine output before evaluating the respiratory symptoms.
 **Answer: C.**
-**Why correct:** NICE recommends against routine use but allows consideration for fluid overload or oedema.
-**Why not A:** Routine use is not recommended.
-**Why not B:** Consideration is allowed in specific circumstances.
-**Why not D:** Obstruction needs urgent imaging and referral.
+**Why correct:** NICE NG148 does not recommend routine loop diuretics to treat AKI, but allows consideration for overload or oedema in specified circumstances. New oxygen requirements warrant urgent clinical assessment. Diuresis is not proof of renal recovery. If fluid overload or pulmonary oedema fails to respond to medical management, immediate specialist assessment for kidney replacement therapy is indicated. Follow the authorized plan.
+**Why not A:** An increase in urine volume after a diuretic does not establish recovery of kidney filtration or justify routine diuretic treatment of AKI.
+**Why not B:** Avoiding routine diuretics does not justify delaying assessment of respiratory deterioration or withholding an indicated clinician-directed treatment.
+**Why not D:** Oliguria alone does not establish fluid responsiveness; additional fluid may worsen respiratory compromise in a congested patient.
 
 **Q6 (scope).** Which task is the nurse's responsibility rather than the prescriber's?
 A. Deciding whether to start renal replacement therapy for a patient with acute kidney injury.

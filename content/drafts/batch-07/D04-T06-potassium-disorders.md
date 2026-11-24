@@ -123,16 +123,16 @@ A laboratory calls a potassium of 6.7 mmol/L in a patient with acute kidney inju
 A 59-year-old woman with acute kidney injury has a potassium of 6.9 mmol/L and a new wide-complex bradycardia. The nurse calls for help, the team treats her per the algorithm, and the nurse monitors the rhythm, checks glucose at the listed times, finds a glucose of 3.4 mmol/L at 90 minutes, reports it at once and the doctor orders a rescue, then documents all values.
 
 ## 17. MCQs
-**Q1 (understanding).** How does the UKKA guideline classify a serum potassium of 6.2 mmol/L?
-A. Mild hyperkalaemia, because the guideline regards only values above 7.0 mmol/L as moderate or severe in practice.
-B. Severe hyperkalaemia, because every value above 6.0 mmol/L is classed in the guideline's severe band without exception.
-C. Moderate hyperkalaemia, because the 6.0–6.4 band is the guideline's moderate category.
-D. Normal, because the guideline's threshold for calling a serum potassium level hyperkalaemia is a value above 6.5 mmol/L.
+**Q1 (judgment).** A patient with AKI has a potassium of 6.2 mmol/L, rising from 5.3 mmol/L over two hours, and is newly unwell. Which interpretation and response best fits UKKA guidance?
+A. The value is moderate, so defer ECG surveillance until it reaches the severe category.
+B. The rapid rise makes the numerical classification severe and confirms an unstable rhythm.
+C. The value is moderate, but the rapid rise and illness warrant urgent assessment and ECG surveillance.
+D. The value is mild if the ECG has not yet shown changes, so repeat at the routine interval.
 **Answer: C.**
-**Why correct:** The UKKA defines hyperkalaemia starting at 5.5 mmol/L (inclusive) and classifies 6.0–6.4 mmol/L as moderate.
-**Why not A:** The mild band is 5.5–5.9.
-**Why not B:** Severe starts at 6.5 mmol/L or more.
-**Why not D:** The threshold for hyperkalaemia is 5.5, not 6.5.
+**Why correct:** UKKA classifies 6.0–6.4 mmol/L as moderate hyperkalaemia. The clinical urgency is not determined by the category alone: UKKA recommends continuous ECG monitoring for clinically unwell patients in this range or when a rapid rise is anticipated. Obtain urgent clinical assessment and authorized treatment as indicated.
+**Why not A:** Clinical illness and a rapidly rising result can warrant continuous surveillance below the numerical severe threshold.
+**Why not B:** A rapid rise increases concern but does not change the numerical severity category or establish a rhythm diagnosis.
+**Why not D:** The numerical category does not depend on ECG findings, and a normal ECG cannot exclude dangerous hyperkalaemia.
 
 **Q2 (judgment).** A potassium of 7.1 mmol/L is reported on a sample that took four hours to reach the laboratory, in a patient who looks well with a normal ECG. What is the best nursing action?
 A. Escalate the critical result now, maintain ECG monitoring and arrange an urgent repeat sample.
@@ -167,16 +167,16 @@ D. Focus on checking electrode contact and monitor settings before assessing cir
 **Why not C:** A diagnostic ECG supports assessment but formal interpretation must not delay immediate escalation.
 **Why not D:** Verify the trace while assessing circulation and mobilising help; equipment checks are not the first priority.
 
-**Q5 (understanding).** Which statement about the ECG in hyperkalaemia matches the UKKA rationale?
-A. A normal ECG proves that the potassium is safe, so no treatment is ever needed.
-B. Peaked T waves alone are a reliable sign of life-threatening hyperkalaemia in every patient.
-C. The ECG can help rule hyperkalaemia in but cannot rule it out, and can be normal in severe cases.
-D. The ECG always shows changes in a fixed sequence as the potassium rises.
+**Q5 (judgment).** Four hours after insulin-glucose treatment for hyperkalaemia, a patient becomes sweaty and less responsive. The repeat potassium has improved and an earlier glucose measurement was satisfactory. What should the nurse prioritize?
+A. Arrange the next scheduled potassium check before assessing the patient's new symptoms.
+B. Treat the improvement in potassium as evidence that post-treatment surveillance can end.
+C. Assess urgently, check glucose promptly and follow the authorized hypoglycaemia pathway.
+D. Request a repeat insulin-glucose treatment because new symptoms suggest potassium rebound.
 **Answer: C.**
-**Why correct:** ECG findings may support concern for hyperkalemia but have limited sensitivity and are not uniquely diagnostic. A normal or atypical trace cannot exclude severe hyperkalemia; interpret it with the potassium measurement and clinical state and escalate dangerous results promptly.
-**Why not A:** The ECG may be normal even in severe hyperkalaemia.
-**Why not B:** Peaked T waves alone do not reliably predict imminent arrest or establish the severity of hyperkalemia.
-**Why not D:** The changes do not always occur in sequence.
+**Why correct:** Hypoglycaemia can occur after insulin-glucose treatment despite an earlier satisfactory glucose measurement. Assess ABC, obtain a prompt bedside glucose measurement and activate the appropriate emergency or hypoglycaemia pathway if indicated. Continue the prescribed glucose and potassium surveillance, including checks for late hypoglycaemia and potassium rebound. A normal or atypical ECG cannot exclude severe hyperkalemia; potassium monitoring remains separate from glucose assessment.
+**Why not A:** New altered responsiveness warrants immediate assessment, rather than waiting for a scheduled electrolyte sample.
+**Why not B:** An improved potassium does not establish that insulin-related hypoglycaemia risk has ended.
+**Why not D:** Symptoms do not diagnose potassium rebound; repeating insulin without an authorized decision could worsen hypoglycaemia.
 
 **Q6 (scope).** Which task belongs to the prescriber with pharmacist input rather than the bedside nurse?
 A. Choosing the calcium salt, the dose of insulin and glucose, and whether to add a binder.
