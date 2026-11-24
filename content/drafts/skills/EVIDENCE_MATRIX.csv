@@ -204,7 +204,7 @@ SK-20,Intrahospital patient transport,escalation,partial,2,1,0,1,N-ICS-TRANSFER-
 SK-20,Intrahospital patient transport,documentation,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-20,Intrahospital patient transport,communication,partial,1,1,0,0,N-ICS-TRANSFER-2026
 SK-21,Infection prevention (standard precautions),indications,partial,1,0,1,0,S-CDC-IC
-SK-21,Infection prevention (standard precautions),safety,partial,5,0,5,0,S-CDC-HANDHYG-2024;S-CDC-IC;S-CDC-ISOLATION-2007
+SK-21,Infection prevention (standard precautions),safety,partial,6,0,6,0,S-CDC-HANDHYG-2024;S-CDC-IC;S-CDC-ISOLATION-2007
 SK-21,Infection prevention (standard precautions),responsibilities,partial,2,1,1,0,S-CDC-HANDHYG-2024;S-CDC-IC
 SK-21,Infection prevention (standard precautions),scope,partial,2,1,0,1,S-CDC-ISOLATION-2007
 SK-21,Infection prevention (standard precautions),assessment,full,1,1,0,0,S-CDC-IC
@@ -215,16 +215,16 @@ SK-21,Infection prevention (standard precautions),documentation,local_protocol,1
 SK-22,Medication infusion pump safety,safety,partial,4,3,1,0,S-FDA-MISCONNECTIONS;S-FDA-PUMP
 SK-22,Medication infusion pump safety,responsibilities,partial,1,1,0,0,S-FDA-PUMP
 SK-22,Medication infusion pump safety,scope,local_protocol,1,0,0,1,
-SK-22,Medication infusion pump safety,assessment,partial,2,1,1,0,S-FDA-PUMP
+SK-22,Medication infusion pump safety,assessment,partial,3,1,2,0,S-FDA-PUMP;S-FDA-PUMP-FAILURE-EXAMPLES
 SK-22,Medication infusion pump safety,monitoring,full,1,1,0,0,S-FDA-PUMP
 SK-22,Medication infusion pump safety,equipment,local_protocol,1,0,0,1,
 SK-22,Medication infusion pump safety,procedure,local_protocol,1,0,0,1,
 SK-22,Medication infusion pump safety,escalation,partial,4,1,3,0,S-FDA-PUMP;S-ISMP-HA
 SK-22,Medication infusion pump safety,documentation,local_protocol,1,0,0,1,
-SK-23,Sedation assessment,safety,partial,2,0,2,0,S-SCCM-PADIS
+SK-23,Sedation assessment,safety,partial,2,0,2,0,S-SCCM-PADIS;S-SCCM-PADIS-FOCUSED-2025
 SK-23,Sedation assessment,responsibilities,partial,2,0,2,0,S-SCCM-PADIS
 SK-23,Sedation assessment,scope,local_protocol,1,0,0,1,
-SK-23,Sedation assessment,assessment,partial,3,0,2,1,S-SCCM-PADIS
+SK-23,Sedation assessment,assessment,partial,4,0,3,1,S-SCCM-PADIS;S-SCCM-PADIS-FOCUSED-2025
 SK-23,Sedation assessment,monitoring,partial,2,0,2,0,S-SCCM-PADIS
 SK-23,Sedation assessment,escalation,partial,2,0,2,0,S-SCCM-PADIS
 SK-23,Sedation assessment,documentation,local_protocol,1,0,0,1,
@@ -232,7 +232,7 @@ SK-24,Neurological assessment,safety,partial,1,0,1,0,S-GCS-OFFICIAL
 SK-24,Neurological assessment,responsibilities,partial,2,0,2,0,S-GCS-OFFICIAL
 SK-24,Neurological assessment,scope,local_protocol,1,0,0,1,
 SK-24,Neurological assessment,assessment,partial,3,1,1,1,S-NICE-NG232;S-OPENRN-HA-CVA
-SK-24,Neurological assessment,monitoring,partial,2,0,2,0,S-GCS-OFFICIAL;S-OPENRN-HA-CVA
+SK-24,Neurological assessment,monitoring,partial,3,0,3,0,S-GCS-OFFICIAL;S-NICE-NG232;S-OPENRN-HA-CVA
 SK-24,Neurological assessment,escalation,partial,2,0,2,0,S-GCS-OFFICIAL;S-OPENRN-HA-CVA
 SK-24,Neurological assessment,communication,partial,1,0,1,0,S-GCS-OFFICIAL
 SK-24,Neurological assessment,documentation,local_protocol,1,0,0,1,
@@ -240,7 +240,7 @@ SK-25,Pain assessment,indications,partial,1,0,1,0,S-SCCM-PADIS
 SK-25,Pain assessment,safety,partial,2,0,2,0,S-CPOT-REVIEW-2024;S-SCCM-PADIS
 SK-25,Pain assessment,responsibilities,partial,2,1,1,0,S-CPOT-REVIEW-2024;S-SCCM-PADIS
 SK-25,Pain assessment,scope,local_protocol,1,0,0,1,
-SK-25,Pain assessment,assessment,partial,3,1,2,0,S-CPOT-REVIEW-2024;S-SCCM-PADIS
+SK-25,Pain assessment,assessment,partial,4,1,3,0,S-CPOT-REVIEW-2024;S-SCCM-PADIS
 SK-25,Pain assessment,procedure,partial,1,0,1,0,S-SCCM-PADIS
 SK-25,Pain assessment,monitoring,partial,1,0,1,0,S-SCCM-PADIS
 SK-25,Pain assessment,escalation,partial,2,0,2,0,S-CPOT-REVIEW-2024;S-SCCM-PADIS
