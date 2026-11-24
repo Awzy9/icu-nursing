@@ -188,7 +188,7 @@
     {
      "id": "S-OPENRN-FUND",
      "licence_class": "GREEN",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SCCM-EOL-2025",
@@ -908,7 +908,7 @@
     {
      "id": "S-OPENRN-FUND",
      "licence_class": "GREEN",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SCCM-PADIS",
@@ -961,6 +961,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-OPENRN-FUND",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND-CH1",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -973,8 +978,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "f2a33d7a442bd97a"
+   "required_sources": 0,
+   "hash": "433d95cbe1b5dfdd"
   },
   {
    "key": "D02-T09",
@@ -1251,6 +1256,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -1273,8 +1283,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "43d5638deb14de3a"
+   "required_sources": 0,
+   "hash": "5e6ecb84f9e6078b"
   },
   {
    "key": "D04-T06",
@@ -1289,6 +1299,11 @@
      "id": "S-NHS-SPS-HYPO-2024",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NICE-NG148",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     },
     {
      "id": "S-OPENRN-FUND-CH15",
@@ -1308,8 +1323,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "df89db546ece2457"
+   "required_sources": 1,
+   "hash": "8d56612d25815a3d"
   },
   {
    "key": "D04-T08",
@@ -1341,6 +1356,11 @@
      "verified": "2026-11-21"
     },
     {
+     "id": "S-NICE-NG148",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -1348,8 +1368,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "6f341efed0905fd5"
+   "required_sources": 1,
+   "hash": "fcb10ba9fe2ab577"
   },
   {
    "key": "D04-T09",
@@ -1594,12 +1614,17 @@
      "id": "S-BTF-TBI-4TH",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NCS-ICP",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "b9d1d268e865a951"
+   "required_sources": 0,
+   "hash": "4b54ee4a627c3b70"
   },
   {
    "key": "D08-T02",
@@ -2933,7 +2958,7 @@
     {
      "id": "S-OPENRN-FUND",
      "licence_class": "GREEN",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SCCM-PADIS",
