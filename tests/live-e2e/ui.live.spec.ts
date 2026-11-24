@@ -216,6 +216,8 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await page.goto("/en/admin/content/register/SC-11");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("SC-11");
   await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Independent review handoff" })).toBeVisible();
+  await expect(page.getByText("Publication remains blocked until the clinical, rights and publisher approvals", { exact: false })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Validation feedback" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Sources, licensing and freshness" })).toBeVisible();
   const note = `Check the UKKA review date ${RUN_TEXT}`;
