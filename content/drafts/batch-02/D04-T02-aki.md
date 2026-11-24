@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE NG148 Acute kidney injury: prevention, detection and management (published 18 Dec 2019; last updated 16 Oct 2024) – UK guidance; most recommendations date from 2013", "KDIGO AKI/AKD update: official site now lists a 2027 public-review draft summary (19 Nov 2026); final publication pending, NOT used as final"]
-sources: [S-NICE-NG148, S-RRT-MULTIDISC-2026, S-UKKA-AKI-DETECTION]
-sources_not_read: [S-KDIGO-AKI, S-SSC-2026]
-independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO 2026 draft is mentioned only as a draft."
+sources: [S-NICE-NG148, S-RRT-MULTIDISC-2026, S-UKKA-AKI-DETECTION, S-SSC-2026]
+sources_not_read: [S-KDIGO-AKI]
+independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO update is mentioned only as a draft. Selected SSC 2026 renal replacement therapy recommendations were checked on 2026-11-24."
 ---
 # Acute kidney injury – nursing recognition, monitoring and escalation
 > DRAFT – NOT clinically reviewed. AI-generated. The KDIGO 2026 guideline is a draft and must not be cited as final.
@@ -51,6 +51,8 @@ Causes include reduced kidney perfusion (shock, hypovolaemia, sepsis), direct in
 - Watch for complications (high potassium, acidosis, fluid overload, uraemic signs) and escalate promptly.
 
 **Interpreting kidney function during acute change (UK Kidney Association).** Creatinine-based eGFR estimates assume relatively stable creatinine and are unreliable during rapidly changing kidney function. Do not use the automatically reported eGFR alone to exclude, stage or declare recovery from adult AKI. Report measured creatinine values and their times relative to baseline, urine-output trends and relevant exposures. The prescribing team and pharmacist assess drug clearance using the clinical trajectory and appropriate methods; a calculated eGFR during AKI is not a bedside authorization to change medication.
+
+**Sepsis-associated AKI and renal replacement therapy (SSC 2026).** For adults with sepsis or septic shock and AKI without a definite indication for renal replacement therapy, the guideline conditionally advises against starting it (moderate certainty). When renal replacement therapy is warranted, either continuous or intermittent treatment is a conditional option (low certainty). Report urine output, creatinine, potassium, acid–base status, fluid balance and clinical deterioration promptly. Do not delay emergency assessment of life-threatening abnormalities or infer a dialysis decision from an isolated creatinine value. The treating team determines the indication and modality.
 
 ## 8. Monitoring parameters
 Hourly urine output; balance (hourly or per policy); haemodynamics and MAP; weight if measured; potassium and acid–base results; creatinine trend; signs of fluid overload (breathlessness, oedema, rising CVP where measured); ECG changes if hyperkalaemia is suspected.
@@ -175,6 +177,8 @@ D. Deciding to stop a nephrotoxic drug.
 - Multidisciplinary guidelines on renal replacement therapy in intensive care medicine. Critical Care. 2026;30:46. https://doi.org/10.1186/s13054-025-05817-6 (selected recommendations 3.7, 6.4, 6.8 and 7.1–7.8 and accompanying rationale accessed 2026-11-24; full appraisal and rights pending).
 
 - UK Kidney Association. AKI Detection and Alerting. https://www.ukkidney.org/clinical-resources/aki-guide-resources/secondary-care/aki-detection-and-alerting/ (indexed recommendation on invalidity of eGFR during AKI; accessed 2026-11-24).
+
+- S-SSC-2026. https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 (selected recommendation or teaching passages checked 2026-11-24; no full appraisal or rights clearance claimed).
 
 ## 19. Local protocol note
 Urine-output targets, balance charting, call-back limits for potassium and renal replacement therapy criteria follow local protocols.
