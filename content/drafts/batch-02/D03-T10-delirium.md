@@ -72,6 +72,8 @@ Record usual cognition and function when known; dementia does not exclude superi
 
 The 2026 SCCM older-adult guideline conditionally advises against preventive antipsychotics in older ICU patients (very low certainty). It could not recommend for or against antipsychotics for treatment of established delirium (low certainty). Keep prevention and treatment decisions distinct. Monitor symptoms and medication-related adverse effects under the authorized plan; escalate distress or danger despite supportive measures. Neither age nor a positive screening score automatically establishes a drug indication.
 
+**Fluctuation and handover (NICE CG103).** Compare attention, alertness, interaction and activity with the patient's usual function and the previous shift. Document the timing of fluctuations, observations from people familiar with the patient, the screening method and whether the patient was assessable. A temporarily reassuring screen does not exclude a fluctuating illness. Newly reduced responsiveness or another acute change requires immediate clinical assessment and escalation according to severity, rather than waiting for the next planned screen. Delirium is one possible explanation; do not label focal neurological signs or unexplained impaired consciousness as delirium without assessment. Continue individualized prevention measures and reassessment.
+
 ## 8. Monitoring parameters
 Delirium screen results and trend; sedation and analgesia scores; pain; oxygen saturation; haemodynamics; temperature; hydration, bowel and bladder function; sleep; mobility; sensory aids in use; medicine changes; family presence.
 
@@ -135,7 +137,7 @@ Self-removal of tubes and lines, falls, aspiration, pressure injury, prolonged v
 Screen tool, result, time; behaviours observed; contributing factors found; interventions and response; escalation and orders; family information given; restraint or safety measures with reasons.
 
 ## 15. Practical bedside example
-At 06:00 a patient who was talking yesterday is quiet, not following requests and not eating. You screen with the unit tool (positive), check pain with a behavioural tool, oxygen saturation, temperature and bladder, move the clock and calendar into view, put hearing aids and glasses back on, introduce yourself and explain the situation calmly, then report with SBAR.
+At 06:00 a patient who was talking yesterday is quiet, not following requests and not eating. Assess the new change in responsiveness and physiological stability immediately, obtain urgent clinical help if indicated, and use the unit's delirium tool when the patient is assessable. Check pain using a suitable method, breathing, oxygenation, temperature and possible contributors. When safe, offer hearing aids, glasses, orientation and reassurance. Report the findings and change from baseline promptly.
 
 
 **Why the quiet presentation matters.** The change from yesterday is the clue. Withdrawal, slower responses and reduced eating can accompany hypoactive delirium. Ask staff or family what is usual for the patient and whether alertness has changed during the shift. Record when the change began, the name and result of the ICU screening tool, and possible contributors you found.
