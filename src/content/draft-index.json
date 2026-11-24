@@ -5274,12 +5274,17 @@
      "id": "S-JBDS-HYPO-2023",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NSW-ECAT-SEIZURES",
+     "licence_class": "RED",
+     "verified": "2026-11-25"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "00e797d5b3a7e503"
+   "hash": "45e238f9ef314126"
   },
   {
    "key": "SC-09",
