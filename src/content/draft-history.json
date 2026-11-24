@@ -1605,6 +1605,20 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "51ef379a9689f958",
+    "recorded": "2026-11-25",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG148",
+     "S-RRT-MULTIDISC-2026",
+     "S-SSC-2026",
+     "S-UKKA-AKI-DETECTION"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D06-T07": [
@@ -4180,6 +4194,21 @@
    {
     "hash": "2793d938bb6c9c78",
     "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-ASH-HIT-2018",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "34a7b9a5cdb3f984",
+    "recorded": "2026-11-25",
     "evidence_status": "stated_in_text",
     "sources": [
      "N-LHSC-CRRT-PRINCIPLES",
