@@ -48,6 +48,24 @@ describe("draft index (metadata only)", () => {
     expect(hasSourceGap(airway)).toBe(false);
     expect(needsRightsCheck(airway)).toBe(true);
   });
+  it("tracks verified CDC catheter and isolation sources while keeping rights and unread references open", () => {
+    for (const key of ["SK-12", "XQ-01"]) {
+      const x = onDisk.entries.find(e => e.key === key)!;
+      expect(x.sources.find(s => s.id === "N-CDC-CAUTI-2009")).toEqual({ id: "N-CDC-CAUTI-2009", licence_class: "YELLOW", verified: "2026-11-24" });
+      expect(hasSourceGap(x)).toBe(false);
+      expect(needsRightsCheck(x)).toBe(true);
+      expect(x.clinically_reviewed).toBe(false);
+    }
+    const infection = onDisk.entries.find(e => e.key === "SK-21")!;
+    expect(infection.sources.find(s => s.id === "S-CDC-ISOLATION-2007")?.verified).toBe("2026-11-24");
+    expect(hasSourceGap(infection)).toBe(true); // WHO healthcare guideline remains unread
+    expect(needsRightsCheck(infection)).toBe(true);
+    for (const key of ["SK-02", "SK-03"]) {
+      const x = onDisk.entries.find(e => e.key === key)!;
+      expect(x.sources.find(s => s.id === "N-INS-STANDARDS")?.verified).toBeNull();
+      expect(hasSourceGap(x)).toBe(true);
+    }
+  });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);
   });

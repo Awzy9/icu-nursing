@@ -1367,8 +1367,8 @@
    "sources": [
     {
      "id": "N-CDC-CAUTI-2009",
-     "licence_class": "UNVERIFIED",
-     "verified": null
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SHEA-CAUTI-2022",
@@ -2212,8 +2212,8 @@
    "sources": [
     {
      "id": "N-CDC-CAUTI-2009",
-     "licence_class": "UNVERIFIED",
-     "verified": null
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SHEA-CAUTI-2022",
@@ -2497,8 +2497,8 @@
     },
     {
      "id": "S-CDC-ISOLATION-2007",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-14"
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-WHO-HH-2009",
