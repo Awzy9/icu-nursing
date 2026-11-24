@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Fundamentals 2e, section 15.5 Acid–Base Balance (US entry-level textbook; CC BY 4.0)", "AARC Clinical Practice Guideline: Blood Gas Analysis and Hemoximetry 2013 (Respir Care 2013;58(10):1694-1703) – a 2013 US guideline, an update of the 2001 CPG; GRADE grades 1A–2B printed; older than ten years, no newer edition read"]
-sources: [S-OPENRN-FUND-CH15, S-AARC-BGA-2013, S-ATS-ABG, S-MERCK-ACIDBASE, S-AAFP-ACID2025]
-sources_not_read: [S-KDIGO-AKI, S-NICE-AKI]
+sources: [S-OPENRN-FUND-CH15, S-AARC-BGA-2013, S-ATS-ABG, S-MERCK-ACIDBASE, S-AAFP-ACID2025, S-NICE-NG148]
+sources_not_read: [S-KDIGO-AKI]
 independently_written_note: "Original wording. The Open RN acid–base section (ABG components, normal and critical values, the four primary disorders, the stepwise analysis and compensation) was read in full; the AARC 2013 guideline text (description, indications, contraindications, hazards, limitations, recommendations) was read. The 2013 AARC guideline is dated and no newer ABG guideline was found; anion gap and mixed-disorder assessment are not covered by the two original sources. A targeted cross-check against the American Thoracic Society's arterial-blood-gas interpretation guidance and Merck Manual Professional acid–base discussion now adds a brief warning that normal pH cannot exclude a dangerous mixed disorder and a single illustrative compensation check; full diagnostic algorithms, base excess, lactate and strong-ion approaches are not taught. Normal ranges and critical values are those printed in the US textbook; laboratories and analysers publish their own reference ranges. Treatment decisions, buffering drugs, ventilator changes and doses are prescriber decisions and are not given. The textbook mentions a benzodiazepine dose for hyperventilation: it is deliberately not reproduced."
 ---
 # Acid–base disturbances and arterial blood gas interpretation – a stepwise nursing approach
@@ -64,6 +64,8 @@ ICU patients commonly have disturbed ventilation, perfusion, kidney function and
 - Knowledge limits: this draft provides **one mixed-disorder safety example**, not systematic anion-gap/delta-gap assessment, all expected-compensation formulae, lactate interpretation or oxygenation indices. Complex interpretation remains for appropriately trained clinicians.
 
 **Assess the trend rather than the pH alone (Merck Manual; AARC specimen guidance).** When reviewing serial blood gases, record sample type, timing, oxygen delivery and ventilator support at each sampling point. A change in support or specimen source can make direct comparison misleading. A near-normal pH with substantially abnormal PaCO₂ or bicarbonate requires further assessment for mixed disturbances; compare with the expected physiological response rather than assuming complete recovery. If a critical result conflicts with the bedside picture, urgently notify the team and check sample integrity or arrange repeat testing as authorized while assessing and supporting the patient; do not defer emergency care for repeat sampling.
+
+**Metabolic acidosis in acute kidney injury (NICE NG148, recommendation 1.5.8).** Metabolic acidosis that persists despite medical management in AKI warrants immediate specialist referral for consideration of renal replacement therapy. Report serial blood gas findings, renal function, circulation, ventilation and the response to treatment. The clinical team decides the indication in context; an isolated pH does not authorize dialysis or bicarbonate administration. Escalate severe deterioration without waiting for a complete acid–base calculation.
 
 ## 8. Monitoring parameters
 pH, PaCO₂, HCO₃, PaO₂, SaO₂ and the trend; respiratory rate and pattern; work of breathing; SpO₂ and end-tidal CO₂ if available; ventilator settings; perfusion, lactate if measured; mental state; urine output; electrolytes (especially potassium); glucose and ketones when relevant.
@@ -179,6 +181,8 @@ D. Metabolic acidosis with additional respiratory acidosis; assess ventilation a
 - Morikawa MJ, Ganesh PR. *Acid-Base Interpretation: A Practical Approach.* Am Fam Physician. 2025. https://www.aafp.org/afp/2025/0200/acid-base-interpretation (accessed 2026-11-21; summary/approach only; full paywalled article not read). Used only to contextualise selected venous-sampling clinical practice and arterial oxygenation preference; avoid treating this as a replacement society guideline.
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN, section 15.5 Acid–Base Balance. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/15-5-acid-base-balance/ (CC BY 4.0; accessed 2026-11-14)
 - Davis MD, Walsh BK, Sittig SE, Restrepo RD. AARC Clinical Practice Guideline: Blood Gas Analysis and Hemoximetry: 2013. Respir Care. 2013;58(10):1694-1703. doi:10.4187/respcare.02786. https://www.aarc.org/wp-content/uploads/2025/03/davis-et-al-2013-aarc-clinical-practice-guideline-blood-gas-analysis-and-hemoximetry-2013.pdf (accessed 2026-11-14). © Daedalus Enterprises; paraphrased only.
+
+- S-NICE-NG148. https://www.nice.org.uk/guidance/ng148/chapter/recommendations (selected indexed recommendation; direct NICE page blocked checked 2026-11-24; full appraisal and independent review outstanding).
 
 ## 19. Local protocol note
 Reference ranges, critical-value limits, sampling technique and sites, line sampling, transport, laboratory acceptance criteria and who may interpret or act follow local policy and the laboratory.
