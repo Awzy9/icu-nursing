@@ -396,20 +396,35 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG103",
      "licence_class": "RED",
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SCCM-FAMILY-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "bffb15fae3ee55ef"
+   "hash": "eedc4a4364b40763"
   },
   {
    "key": "D04-T02",
@@ -739,12 +754,17 @@
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "5c4d7a999d0d5633"
+   "hash": "c9344d8af1617bc8"
   },
   {
    "key": "D07-T01",
@@ -796,6 +816,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -809,7 +834,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "91321c7c3f0e40a2"
+   "hash": "e523fb3c810bc9ce"
   },
   {
    "key": "D09-T03",

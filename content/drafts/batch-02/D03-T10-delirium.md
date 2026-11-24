@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 and the 2025 focused update – official SCCM recommendation pages, recommendation-level statements read; the full publications were NOT read", "NICE CG103 Delirium: prevention, diagnosis and management in hospital and long-term care (published 28 Jul 2010; last updated 18 Jan 2023) – general hospital guidance that names ICU tools"]
-sources: [S-NICE-CG103, S-SCCM-PADIS]
+sources: [S-NICE-CG103, S-SCCM-PADIS, S-SCCM-PADIS-FOCUSED-2025, S-ESICM-HUMAN-PARTNERSHIP-2026, S-SCCM-FAMILY-2024]
 independently_written_note: "Original wording. NICE CG103 recommendations chapter read. SCCM PADIS 2018 and the 2025 focused update: only the official SCCM recommendation pages were read (statements, strength, certainty, remarks) – the full publications on journals.lww.com were blocked and NOT read, so evidence summaries, tool psychometrics and rationales are not covered and this is not a full-text review. NICE reserves commercial reuse (cite-only). CAM-ICU/ICDSC tool wording is not reproduced."
 ---
 # Delirium – nursing screening, prevention and response in the ICU
@@ -55,6 +55,16 @@ A newly agitated, withdrawn or less responsive patient needs assessment for acut
 Sedation/arousal scoring and a delirium assessment answer **different questions**. If deep sedation, coma or the tool's eligibility conditions prevent assessment, record that the screen was not possible and why, rather than marking the patient delirium-negative. Use the local tool manual and competence requirements; no copyrighted CAM-ICU/ICDSC items or scoring cutoffs are reproduced here.
 
 **2025 SCCM PADIS focused update:** the expert panel could not make a recommendation for or against antipsychotics versus usual care to treat delirium in adults in ICU. This is not approval for routine haloperidol and not a universal prohibition of clinician-directed treatment when safety is at risk. Individualized de-escalation, pain review, non-drug care, medication safety checks, and urgent review when danger persists remain essential. The same update conditionally supports more intensive mobility/rehabilitation than usual care, but does not establish a universal schedule or safety clearance for every ICU patient. The unit's competent team decides.
+
+## 7c. Protect sleep while maintaining critical care safety
+
+Ask assessable patients how they slept and what disturbed them. Plan daytime orientation, appropriate daylight and activity, and a quieter night with reduced unnecessary interruptions. Coordinate nonurgent care when feasible; never defer time-critical observations, medicines, neurological assessments or emergency intervention merely to protect sleep. Check pain, positioning, respiratory discomfort and device issues before assuming insomnia. Review alarm causes and settings with the competent team; never silence or disable essential alarms for sleep.
+
+The October 2026 ESICM consensus discusses optional earplugs and eye masks, with more consistent evidence for subjective sleep than for major clinical outcomes. Offer only if appropriate to the patient's preferences, communication and safety; remove when they impede assessment or cause distress. Evidence for specialized circadian lighting and clinical outcomes remains very uncertain. The 2025 PADIS update conditionally supports melatonin with low certainty; this is a prescribing decision, not a routine nurse-initiated medication or a proven delirium cure. Sedation is not equivalent to restorative sleep.
+
+## 7d. Partner with families without compromising patient preferences
+
+The SCCM family-centred guideline (2024 edition, published 2025) supports flexible family presence as the default, with conditional support for optional participation in rounds and bedside care. The October 2026 ESICM consensus reinforces clear roles and communication. Confirm whom the patient wants involved and respect privacy, consent, infection precautions and clinical safety. Invite familiar orientation, conversation or reassurance where desired; agree safe tasks and make participation voluntary. Offer interpreters and accessible information when needed. Family observations of cognition supplement clinical assessment rather than establish a diagnosis. Do not promise that visitation alone will prevent delirium; evidence for patient-specific outcomes is limited.
 
 ## 8. Monitoring parameters
 Delirium screen results and trend; sedation and analgesia scores; pain; oxygen saturation; haemodynamics; temperature; hydration, bowel and bladder function; sleep; mobility; sensory aids in use; medicine changes; family presence.
@@ -199,6 +209,9 @@ D. Wait until the patient can tell you whether he has pain, because behaviour al
 
 ## 18. References
 - NICE. Delirium: prevention, diagnosis and management in hospital and long-term care (CG103). Published 28 July 2010; last updated 18 January 2023. https://www.nice.org.uk/guidance/cg103 (Recommendations chapter; accessed 2026-11-14)
+
+- SCCM. Guidelines on family-centered care for adult ICUs: 2024 (published 2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-on-family-centered-care-for-adult-icus-2024 (selected official recommendations checked 2026-11-24; full publication not appraised; cite-only).
+- Latour JM et al. ESICM consensus on human-centred partnership in the ICU (26 October 2026). https://doi.org/10.1007/s00134-026-08626-9 (selected sections 1.2, 1.3 and 5.2 checked 2026-11-24; CC BY-NC 4.0; commercial reuse not cleared).
 
 ## 19. Local protocol note
 Screening tool, frequency, restraint policy, sedation and antipsychotic protocols follow the institution's policies.

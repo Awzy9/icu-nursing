@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 – official SCCM recommendation page (recommendation-level statements; the full guideline was NOT read)", "SCCM PADIS 2025 focused update – official SCCM recommendation page (five statements; full text NOT read)", "Open RN Nursing Fundamentals 2e, section 11.3 Pain Assessment Methods (read 2026-11-14)"]
-sources: [S-SCCM-PADIS, S-OPENRN-FUND, S-CPOT-REVIEW-2024]
+sources: [S-SCCM-PADIS, S-OPENRN-FUND, S-CPOT-REVIEW-2024, S-ESICM-HUMAN-PARTNERSHIP-2026]
 independently_written_note: "Original wording. Statements from the SCCM pages are attributed at recommendation level only. Only the CPOT's overall structure (four indicators, each scored 0 to 2, total 0 to 8) is described, taken from a CC BY 2024 narrative review (a secondary source); the CPOT's own scoring descriptors, the tool's original publications and terms of use, and all BPS and BPS-NI details were NOT read and are not taught: use the validated tools under their licences and local training. Drug choices and doses (opioids, adjuncts) are prescriber decisions and are not given. Open RN is CC BY 4.0 (attribution and change notice if adapted)."
 ---
 # Pain assessment in critically ill adults (self-report and behavioural tools)
@@ -44,6 +44,12 @@ Untreated pain increases distress and is a recognised trigger of agitation, and 
 - Offer non-drug measures within policy: SCCM suggests massage and music therapy may be offered (conditional, low certainty) and suggests not offering cybertherapy (virtual reality) or hypnosis (conditional, very low).
 - Report uncontrolled pain, sedation concerns or adverse effects promptly.
 - Involve patient and family in setting comfort goals when possible.
+
+## 7b. Communication and comfort during pain assessment
+
+An endotracheal tube does not automatically prevent reliable self-report. Establish a yes/no signal, writing board or other accessible communication method suited to the patient's abilities; check that the response is reproducible before interpreting it. Ask about pain at rest and during planned care, the patient's functional comfort goal and what previously helped.
+
+With the patient's consent where feasible, invite family to describe usual expressions of discomfort, communication needs and reassuring approaches. Their observations supplement, rather than replace, the patient's reliable report or validated assessment. Agree which simple comfort activities are safe and voluntary; relatives should not manipulate infusions or critical devices. The October 2026 ESICM human-centred partnership consensus supports structured family participation while noting limited direct evidence for patient clinical outcomes. It does not validate a new pain scale.
 
 ## 8. Monitoring parameters
 Pain score and tool at intervals set by the unit and after interventions; behaviours (facial expression, movement, muscle tension, ventilator compliance, vocalisation – as defined by the tool); sedation level; respiratory status and haemodynamics after analgesia; bowel function; delirium screen.
@@ -166,6 +172,8 @@ D. Documenting the behavioural pain score and the stimulus that preceded it.
 - SCCM. Focused update to PADIS guidelines for adult patients (2025). Official recommendations page. https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (accessed 2026-11-14). Crit Care Med 2025;53:e711-e727 (not read).
 - Evaluating pain in non-verbal critical care patients: a narrative review of the Critical Care Pain Observation Tool and its clinical applications. Front Pain Res. 2024;5. doi:10.3389/fpain.2024.1481085. https://pmc.ncbi.nlm.nih.gov/articles/PMC11518793/ (CC BY 4.0; section 'Components of CPOT'; accessed 2026-11-14)
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN, section 11.3 Pain Assessment Methods. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/11-3-pain-assessment-methods/ (CC BY 4.0; accessed 2026-11-14)
+
+- Latour JM et al. ESICM consensus on human-centred partnership in the ICU (26 October 2026). https://doi.org/10.1007/s00134-026-08626-9 (selected family participation statements and limitations checked 2026-11-24; CC BY-NC 4.0, cite-only pending commercial rights review).
 
 ## 19. Local protocol note
 Pain tools, scoring thresholds for action, assessment frequency, analgesic protocols and non-drug options follow the institution's policies and trained competencies.

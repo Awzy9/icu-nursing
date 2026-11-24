@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 – official SCCM recommendation page (recommendation-level statements; full guideline NOT read)", "SCCM PADIS 2025 focused update – official SCCM recommendation page (five statements; full text NOT read)"]
-sources: [S-SCCM-PADIS, S-SCCM-NMBA-2026]
+sources: [S-SCCM-PADIS, S-SCCM-NMBA-2026, S-SCCM-PADIS-FOCUSED-2025]
 independently_written_note: "Original wording. Only the official SCCM recommendation pages were read. The Richmond Agitation-Sedation Scale (RASS) definitions, the Sedation-Agitation Scale and their validation data were NOT read, so the scales' level-by-level descriptions are deliberately not reproduced or taught here: use the validated scale as licensed and trained in your unit. Sedative drug choices and doses are prescriber decisions and are not given. Restraint law and policy vary by country."
 ---
 # Sedation monitoring and targeted light sedation in ventilated adults
@@ -44,6 +44,12 @@ Excess sedation prolongs ventilation, hides neurological change and increases de
 - Keep safety first when the patient is agitated: look for and treat causes, protect lines and tubes, call for help; use physical restraints only under policy, as a last resort, with regular checks (SCCM notes restraints are frequently used despite no studies showing efficacy and with safety concerns such as unplanned extubation and greater agitation).
 - Avoid disturbing sleep unnecessarily: use noise and light reduction strategies (SCCM suggestion).
 - Support mobilisation when stable (SCCM: vasoactive infusions or mechanical ventilation are not barriers if the patient is otherwise stable).
+
+## 7b. Anxiety, distress and sedation are not interchangeable
+
+When a patient appears anxious, establish whether they can communicate and ask what is frightening or uncomfortable. Assess new respiratory distress, pain, delirium, withdrawal and device-related discomfort before assuming primary anxiety; urgent physiological deterioration takes priority. Explain procedures, use communication aids and offer supportive presence, with an interpreter when required. Quietness after a sedative does not prove that anxiety or pain has resolved.
+
+The 2025 PADIS focused update found insufficient evidence to recommend benzodiazepines specifically for anxiety in adult ICU patients. This does not establish either routine use or a universal prohibition: other indications such as withdrawal or seizure treatment require their own clinical pathway. Discuss the indication, sedation target, haemodynamic and respiratory risks and reassessment plan with the prescriber; do not escalate sedation solely because anxiety is suspected.
 
 ## 8. Monitoring parameters
 Sedation scale score and target; pain score; delirium screen; respiratory rate, SpO₂, ETCO₂ and ventilator synchrony; heart rate, blood pressure; temperature; urine output; infusion type and rate as ordered; time and result of daily interruptions; skin under devices and restraints; hours awake.
@@ -171,6 +177,8 @@ D. Documenting restraint checks and the reasons for the use of the restraints on
 - SCCM ICU Liberation Bundle. https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles (selected public recommendations, accessed 2026-11-24)
 
 - Society of Critical Care Medicine. Guidelines for the Administration of Neuromuscular Blockade in Adults With ARDS. 2026-03-03; doi:10.1097/ccm.0000000000007002. https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-administration-of-neuromuscular-blockade (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+
+- SCCM focused PADIS update (2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (official recommendation-level anxiety and sedation statements rechecked 2026-11-24; full publication and commercial reuse rights outstanding).
 
 ## 19. Local protocol note
 Sedation scale, targets, titration authority, interruption criteria, restraint policy and monitoring frequency follow the institution's protocols and competencies.
