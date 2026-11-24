@@ -54,6 +54,11 @@
       "id": "N-NCBI-OPENRN-CHEST",
       "read": "partial",
       "use": "Open RN Advanced Skills chapter 6: pleural deterioration and chest drain nursing surveillance paragraphs inspected 2026-11-23. Only differential awareness; no chest tube procedures or decompression algorithm."
+    },
+    {
+      "id": "S-FDA-OXIMETER-BASICS",
+      "read": "partial",
+      "use": "FDA public indexed device accuracy limitations; no procedure or numeric threshold inferred."
     }
   ],
   "required_sources": [
@@ -109,12 +114,13 @@
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings.",
+          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings. Poor peripheral circulation and skin pigmentation may affect oximetry accuracy. Assess signal reliability in parallel and seek further measurement if the clinical picture is discordant; do not delay care.",
           "consequence": "You identify increased breathing effort and a wet cough. Secretions are one possibility, but the team must remain alert to other causes of deterioration.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8",
-            "N-NCBI-OPENRN-CHEST"
+            "N-NCBI-OPENRN-CHEST",
+            "S-FDA-OXIMETER-BASICS"
           ]
         },
         {
@@ -199,12 +205,12 @@
           ]
         },
         {
-          "text": "Change the oxygen device or increase the oxygen yourself, as the patient needs more.",
+          "text": "Increase oxygen or change devices solely to normalize the monitor without reassessing the patient or following the emergency pathway.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "Oxygen is given according to the prescription, order or protocol, with the target set by the team.",
-          "consequence": "The change is not authorised and the target is unclear.",
+          "feedback": "Emergency oxygen and breathing support must not be withheld when indicated. Use the authorized emergency pathway, assess the cause and reassess the patient; do not chase a displayed saturation alone.",
+          "consequence": "The underlying respiratory deterioration is not assessed despite changing oxygen delivery.",
           "support": "partial",
           "sources": [
             "S-AARC-O2"
@@ -255,11 +261,11 @@
         },
         {
           "text": "Step back and let the team work; write the notes later.",
-          "points": 1,
+          "points": 0,
           "next": null,
           "scope": "independent_nursing",
-          "feedback": "The nurse's observations and the timeline are valuable to the team at the bedside; delayed notes lose detail.",
-          "consequence": "Details of the timing are uncertain by the time the record is written.",
+          "feedback": "With continued increased breathing effort, stepping away without a structured transfer of responsibility risks missed deterioration. Provide the responding team with the timeline and ensure ongoing assessment.",
+          "consequence": "The team lacks essential observations and the ongoing monitoring responsibility is unclear.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS"
@@ -286,7 +292,8 @@
       "Stay with the patient, support oxygenation within authorised policy and consider oral secretion clearance only when indicated and within trained scope. Artificial-airway suction techniques do not apply to this case.",
       "Escalate early when the saturation does not recover, and reassess the same parameters after every intervention.",
       "Do not silence alarms or change limits and devices without authority; hand over with SBAR and document the response.",
-      "A wet cough does not exclude pneumothorax, an obstructed drain, or other causes of deterioration. New asymmetric chest movement, hypotension or severe respiratory compromise requires urgent skilled response; do not delay for device adjustments or chest radiography."
+      "A wet cough does not exclude pneumothorax, an obstructed drain, or other causes of deterioration. New asymmetric chest movement, hypotension or severe respiratory compromise requires urgent skilled response; do not delay for device adjustments or chest radiography.",
+      "Poor perfusion or pigmentation-related measurement limitations may affect oximetry; evaluate the patient and signal together, and obtain further assessment when findings disagree."
     ],
     "links": [
       {

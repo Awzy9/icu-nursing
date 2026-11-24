@@ -8724,6 +8724,20 @@
     "gaps": 6,
     "required_sources": 4,
     "issues": 0
+   },
+   {
+    "hash": "8af2fccfd134e61f",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 6,
+    "required_sources": 4,
+    "issues": 0
    }
   ],
   "SC-02": [
@@ -8770,6 +8784,22 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "0ed65e7f65058e75",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-ACC-CS-2025",
+     "S-AHRQ-TS",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-03": [
@@ -8793,6 +8823,20 @@
     "sources": [
      "S-AARC-O2",
      "S-AHRQ-TS",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "c1f71b7df1cb19db",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-FDA-OXIMETER-BASICS",
      "S-RCP-NEWS2"
     ],
     "gaps": 4,
@@ -8832,6 +8876,20 @@
    {
     "hash": "b9f670b434b8780a",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "e8eed5db77614a3e",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AARC-PVA",
@@ -8897,6 +8955,22 @@
      "N-NCBI-OPENRN-CHEST",
      "S-AARC-O2",
      "S-AHRQ-TS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 7,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "0df0ac660e2348b9",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-FDA-OXIMETER-BASICS",
      "S-OPENRN-FUND-CH8",
      "S-RCP-NEWS2"
     ],

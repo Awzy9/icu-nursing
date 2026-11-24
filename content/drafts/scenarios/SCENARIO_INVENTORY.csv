@@ -1,9 +1,9 @@
 id,title,spec_level,evidence_status,steps,expected_actions,sources,required_sources_outstanding
-SC-01,Septic shock,decision_graph,partial,3,0,S-RCP-NEWS2;L-NOREPINEPHRINE;S-AHRQ-TS,3
-SC-02,Cardiogenic shock,decision_graph,partial,3,0,S-ESICM-SHOCK-2014;L-DOBUTAMINE;L-MILRINONE;S-OPENSTAX-MS-35-2;S-AHRQ-TS,2
-SC-03,Acute respiratory deterioration,decision_graph,partial,3,0,S-RCP-NEWS2;S-AARC-O2;S-AHRQ-TS,3
+SC-01,Septic shock,decision_graph,partial,3,0,S-RCP-NEWS2;L-NOREPINEPHRINE;S-AHRQ-TS;S-SSC-2026,4
+SC-02,Cardiogenic shock,decision_graph,partial,3,0,S-ESICM-SHOCK-2014;L-DOBUTAMINE;L-MILRINONE;S-AHRQ-TS;S-ACC-CS-2025;S-ESICM-SHOCK-2025,2
+SC-03,Acute respiratory deterioration,decision_graph,partial,3,0,S-RCP-NEWS2;S-AARC-O2;S-AHRQ-TS;S-FDA-OXIMETER-BASICS,3
 SC-04,Ventilator alarm,decision_graph,partial,3,0,S-AARC-PVA;S-HAMILTON-C1;S-DRAEGER-V500-IFU;S-AHRQ-TS,2
-SC-05,Sudden oxygen desaturation,decision_graph,partial,3,0,S-OPENRN-FUND-CH8;S-AARC-O2;S-AARC-SUCT;S-RCP-NEWS2;S-AHRQ-TS,2
+SC-05,Sudden oxygen desaturation,decision_graph,partial,3,0,S-OPENRN-FUND-CH8;S-AARC-O2;S-RCP-NEWS2;S-AHRQ-TS;N-NCBI-OPENRN-CHEST;S-FDA-OXIMETER-BASICS,3
 SC-06,Accidental extubation,decision_graph,partial,3,0,S-AARC-PVA;S-ERC-ALS-2025;S-AHRQ-TS,2
 SC-07,Raised intracranial pressure,decision_graph,partial,3,0,S-OPENRN-HA-CVA;S-AARC-SUCT;L-MANNITOL;S-BTF-TBI-4TH;S-AHRQ-TS,2
 SC-08,Acute seizure,decision_graph,partial,3,0,N-NICE-NG217;L-LORAZEPAM;N-JBDS-HYPO-2020;S-AHRQ-TS,3

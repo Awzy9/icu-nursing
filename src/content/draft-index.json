@@ -4264,7 +4264,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 4,
-   "hash": "ead8167fecb72010"
+   "hash": "8af2fccfd134e61f"
   },
   {
    "key": "SC-02",
@@ -4309,7 +4309,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "e1223851852fa6ec"
+   "hash": "0ed65e7f65058e75"
   },
   {
    "key": "SC-03",
@@ -4331,6 +4331,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4339,7 +4344,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 3,
-   "hash": "7151e2c7be1717a3"
+   "hash": "c1f71b7df1cb19db"
   },
   {
    "key": "SC-04",
@@ -4374,7 +4379,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "b9f670b434b8780a"
+   "hash": "e8eed5db77614a3e"
   },
   {
    "key": "SC-05",
@@ -4401,6 +4406,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND-CH8",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -4414,7 +4424,7 @@
    "issues": [],
    "gaps": 7,
    "required_sources": 3,
-   "hash": "8fdc9c744b2c6dbe"
+   "hash": "0df0ac660e2348b9"
   },
   {
    "key": "SC-06",

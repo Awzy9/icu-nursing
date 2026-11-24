@@ -43,6 +43,11 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-FDA-OXIMETER-BASICS",
+      "read": "partial",
+      "use": "FDA public indexed limitations of pulse oximetry, including perfusion and skin pigmentation."
     }
   ],
   "required_sources": [
@@ -94,21 +99,22 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "A falling saturation and increasing breathing effort require immediate patient assessment. Use the early warning score and oxygen targets to inform the response, not as a reason to postpone emergency oxygen or ventilation support when indicated.",
+          "feedback": "A falling saturation and increasing breathing effort require immediate patient assessment. Use the early warning score and oxygen targets to inform the response, not as a reason to postpone emergency oxygen or ventilation support when indicated. Pulse oximetry estimates oxygenation, not ventilation; perfusion and skin pigmentation can affect accuracy. If the clinical picture and reading disagree, request further assessment and an appropriate alternative measurement without postponing emergency care.",
           "consequence": "You find the device correctly placed and the patient is working harder, so you call the responsible clinician.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
-            "S-AARC-O2"
+            "S-AARC-O2",
+            "S-FDA-OXIMETER-BASICS"
           ]
         },
         {
-          "text": "Turn the oxygen up to the maximum without an order.",
+          "text": "Set the oxygen to maximum solely to improve the displayed number, without assessing breathing or using an authorized emergency pathway.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
-          "feedback": "Oxygen is titrated within the order or protocol, and overuse can harm some patients.",
-          "consequence": "The saturation rises briefly but the cause is not addressed and the order has been breached.",
+          "feedback": "Do not treat the display alone. Provide emergency oxygen or respiratory support promptly under the authorized pathway; after immediate stabilization, titrate according to the patient-specific plan.",
+          "consequence": "The displayed value improves, but ventilation and the cause of deterioration remain unassessed.",
           "support": "partial",
           "sources": [
             "S-AARC-O2"
@@ -256,7 +262,8 @@
     "learning_points": [
       "Assess the patient and provide authorised emergency support first; verify oxygen delivery and the prescribed target in parallel.",
       "The early warning score triggers a response; escalate with an SBAR per local policy.",
-      "Record the response, monitor as directed, and call again whenever you remain concerned."
+      "Record the response, monitor as directed, and call again whenever you remain concerned.",
+      "An acceptable oxygen saturation does not exclude inadequate ventilation; interpret oximetry in clinical context and escalate discordant findings."
     ],
     "links": [
       {

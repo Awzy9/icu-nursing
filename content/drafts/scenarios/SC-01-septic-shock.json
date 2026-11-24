@@ -20,7 +20,9 @@
   ],
   "related": {
     "skills": [
-      "SK-01"
+      "SK-01",
+      "SK-03",
+      "SK-22"
     ],
     "medications": [
       "MD-01"
@@ -60,7 +62,7 @@
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Fluid choices, antimicrobial timing, lactate targets and blood-pressure targets are not drawn from a source read in full and are not written.",
+    "Fluid choices, antimicrobial timing, lactate targets and blood-pressure targets are not written; selected SSC 2026 recommendation-level statements on lactate measurement, capillary refill and peripheral vasopressors are mapped, not the full guideline.",
     "The NEWS2 statements are UK and 2017; the scenario names no score thresholds.",
     "The steps are not a model-specific norepinephrine administration protocol. Local rules for catheter retention/aspiration, alternative venous access and antidote require critical care and pharmacy review.",
     "Simulation option wording is synchronized with MD-01 and the vasopressor monitoring topic; do not treat synthetic debrief scoring as evidence of independent bedside competence. Clinician and pharmacist sign-off remain outstanding."
@@ -99,11 +101,11 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess airway, breathing and circulation, summon urgent clinical help for suspected sepsis, and use SBAR to convey findings and trends.",
+          "text": "Stay with the patient, assess airway, breathing and circulation, summon urgent clinical help for suspected sepsis, and communicate perfusion findings and trends. Prepare ordered lactate sampling without delaying emergency treatment.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "A new change in alertness with suspected infection warrants immediate assessment and urgent escalation. Sepsis and septic shock are emergencies; the SSC 2026 guidance calls for treatment and resuscitation without delay. NEWS2 supports recognition, but a score must not delay emergency help when clinical deterioration is apparent. Document the response after immediate safety needs are addressed.",
+          "feedback": "A new change in alertness with suspected infection warrants immediate assessment and urgent escalation. Sepsis and septic shock are emergencies; the SSC 2026 guidance calls for treatment and resuscitation without delay. NEWS2 supports recognition, but a score must not delay emergency help when clinical deterioration is apparent. Document the response after immediate safety needs are addressed. The SSC 2026 recommendation-level guidance suggests lactate measurement and capillary refill assessment alongside other measures of tissue perfusion. Neither replaces clinical assessment nor should sampling delay treatment.",
           "consequence": "The team attends promptly and the patient is reassessed.",
           "support": "partial",
           "sources": [
@@ -165,7 +167,7 @@
           "points": 2,
           "next": 3,
           "scope": "monitoring",
-          "feedback": "The SSC 2026 recommendation allows peripheral vasopressor initiation for adult septic shock rather than delaying appropriate treatment for central access, with careful access surveillance and an extravasation response plan. Do not unnecessarily interrupt a working essential infusion. If the site becomes compromised, stop delivery at that cannula immediately while securing urgent alternative support through the local protocol.",
+          "feedback": "The SSC 2026 recommendation allows peripheral vasopressor initiation for adult septic shock rather than delaying appropriate treatment for central access, with careful access surveillance and an extravasation response plan. Do not unnecessarily interrupt a working essential infusion. If the site becomes compromised, stop delivery at that cannula immediately while securing urgent alternative support through the local protocol. The SSC does not specify a universal peripheral infusion duration, dose or catheter location/size; the local monitored-access protocol and prescriber determine these.",
           "consequence": "The vascular access is monitored repeatedly, and the team has a plan for urgent alternative access if the site fails.",
           "support": "partial",
           "sources": [
@@ -264,7 +266,8 @@
     "learning_points": [
       "Assess airway, breathing and circulation and summon urgent help for suspected sepsis with deterioration; do not wait for a score. Communicate findings with structured handover.",
       "Monitor peripheral vasopressor access during treatment. Suspected extravasation requires immediate cessation through the affected cannula, urgent escalation, and a plan for alternative vascular access and haemodynamic support.",
-      "Do not flush or massage suspected extravasation; manage the cannula and any antidote only under the appropriate trained-team/local protocol."
+      "Do not flush or massage suspected extravasation; manage the cannula and any antidote only under the appropriate trained-team/local protocol.",
+      "Evaluate perfusion using clinical trends, including capillary refill and ordered lactate measurements; no single value establishes adequate resuscitation."
     ],
     "links": [
       {
@@ -274,6 +277,14 @@
       {
         "kind": "medication",
         "code": "MD-01"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-03"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-22"
       }
     ]
   }

@@ -216,12 +216,12 @@
       ],
       "options": [
         {
-          "text": "Give a clear SBAR handover of what happened and document the event and your actions.",
+          "text": "Confirm effective ventilation and reassess delivered volumes, pressures, oxygenation, airway and circuit with the trained respiratory team; document the event, response and ongoing monitoring plan in handover.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "A structured handover and a record of events and responses keep the team informed and support learning.",
-          "consequence": "The next shift knows what happened and checks the circuit position at each round.",
+          "feedback": "AARC 2024 supports direct bedside assessment and review of delivered tidal volume, plateau pressure and PEEP, including intrinsic PEEP when relevant. Check recovery with the trained team rather than treating the absence of an alarm as proof of adequate ventilation. Document and hand over the event.",
+          "consequence": "The team confirms the recovery assessment and hands over the cause, response and ongoing safety checks.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
@@ -260,12 +260,16 @@
       "Every alarm is answered at the patient first.",
       "If ventilation is inadequate and not rapidly correctable, call for skilled help and secure effective alternative ventilation as trained and directed by the local emergency pathway.",
       "Do not silence alarms as a response or change limits and modes without authority.",
-      "Record and hand over what happened."
+      "After rescue, verify effective ventilation and review delivered volumes, airway pressures and PEEP with the respiratory team; document and hand over the event."
     ],
     "links": [
       {
         "kind": "skill",
         "code": "SK-07"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-04"
       }
     ]
   }
