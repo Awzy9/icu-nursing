@@ -80,7 +80,7 @@
     }
   ],
   "required_sources": [
-    "A national or professional guideline on recognising and managing post-operative bleeding and haemorrhagic shock at nursing level, usable under a commercial licence",
+    "Independent review of the 2025 Association of Anaesthetists major-haemorrhage guideline and nursing applicability; confirm commercial rights before any reproduction",
     "The hospital's major-haemorrhage and transfusion protocols",
     "Local protocol for emergency-release blood product identification, massive haemorrhage activation, monitoring and postoperative coagulopathy investigations"
   ],
@@ -90,7 +90,7 @@
     "No source read gives numeric thresholds for blood loss or urine output in this context; none are written.",
     "Fluids, blood products and reversal of anticoagulation are prescribed; the scenario does not say what to give.",
     "The tranexamic acid label read does not cover surgical bleeding and is not used.",
-    "This case is a nursing recognition and escalation exercise, not a major-haemorrhage algorithm. Exact emergency call thresholds, component availability, coagulation correction and return-to-theatre decisions remain local clinician decisions.",
+    "Selected 2025 Association of Anaesthetists major-haemorrhage protocol and haemostatic resuscitation sections checked; this remains a recognition and escalation exercise, not a transfusion or surgical algorithm.",
     "A 2025 ISTH updated DIC framework and 2026 follow-up review are checked at abstract level only; this surgical case does not teach formal scoring, DIC therapy, emergency transfusion component selection, massive-haemorrhage protocols or viscoelastic interpretation.",
     "2026-11-24 AI scoring check: removed partial credit for leaving an actively deteriorating postoperative bleeding patient unattended. This is an unvalidated educational scoring correction, not a clinical approval."
   ],
@@ -133,12 +133,13 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "Blood loss with reduced blood pressure, tachycardia and cool skin may indicate serious postoperative bleeding and shock. The urgent response and bedside assessment take priority over dressing documentation; communicate the wound, drain and physiological trend as the team arrives.",
+          "feedback": "Blood loss with reduced blood pressure, tachycardia and cool skin may indicate serious postoperative bleeding and shock. The urgent response and bedside assessment take priority over dressing documentation; communicate the wound, drain and physiological trend as the team arrives. The 2025 Association of Anaesthetists guidance emphasizes early recognition, coordinated blood-bank communication and definitive bleeding control. Suspected life-threatening haemorrhage warrants the local emergency pathway; do not wait for a particular haemoglobin or coagulation result before escalating.",
           "consequence": "The surgeon is told early, with measurable information, and the team can respond.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-POSTOP",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-AOA-BLOOD-2025"
           ]
         },
         {
@@ -200,13 +201,14 @@
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "Suspected postoperative haemorrhage needs urgent clinician review of anticoagulation as well as bleeding control and resuscitation. A due medication is not an instruction to ignore active deterioration; dose omission, reversal, component selection and resuscitation orders follow an authorised pathway.",
+          "feedback": "Suspected postoperative haemorrhage needs urgent clinician review of anticoagulation as well as bleeding control and resuscitation. A due medication is not an instruction to ignore active deterioration; dose omission, reversal, component selection and resuscitation orders follow an authorised pathway. Coordinate activation of the local major-haemorrhage pathway and correctly identified samples with colleagues as directed; avoid delaying urgent clinical assessment while waiting for routine laboratory turnaround.",
           "consequence": "The prescriber decides about the anticoagulant with full information, and the team is ready for the next step.",
           "support": "partial",
           "sources": [
             "L-HEPARIN",
             "L-ENOXAPARIN",
-            "S-OPENRN-HA-POSTOP"
+            "S-OPENRN-HA-POSTOP",
+            "S-AOA-BLOOD-2025"
           ]
         },
         {
@@ -269,7 +271,7 @@
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
-          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC. During major haemorrhage and transfusion, electrolyte abnormalities including hypocalcaemia and hyperkalaemia can require prompt clinician-directed treatment. Monitor ordered results and temperature, escalate abnormalities, and use the approved warming and major-haemorrhage pathway. Do not independently choose components or electrolyte replacement.",
+          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC. During major haemorrhage and transfusion, electrolyte abnormalities including hypocalcaemia and hyperkalaemia can require prompt clinician-directed treatment. Monitor ordered results and temperature, escalate abnormalities, and use the approved warming and major-haemorrhage pathway. Do not independently choose components or electrolyte replacement. Communicate whether bleeding is ongoing and whether resuscitation is effective. The responsible team coordinates definitive haemostasis and deactivates the major-haemorrhage pathway when appropriate, with the blood bank informed.",
           "consequence": "Emergency treatment and transfusion safety checks proceed under the team's direction while bleeding, perfusion and serial laboratory trends are handed over.",
           "support": "partial",
           "sources": [
@@ -315,7 +317,8 @@
       "Raise any due anticoagulant dose with the prescriber when bleeding is suspected.",
       "Resuscitation, transfusion and possible return to theatre remain clinician-directed; use the authorised emergency blood-identification pathway, track perfusion/urine output and give timely blood-loss and laboratory-trend handover.",
       "Falling platelets, abnormal clotting tests or a normal fibrinogen cannot independently determine DIC or blood-product selection; communicate clinical and laboratory trends while the team investigates.",
-      "Monitor temperature and ordered ionized calcium and potassium during major haemorrhage resuscitation; communicate abnormalities promptly and follow the authorised treatment pathway."
+      "Monitor temperature and ordered ionized calcium and potassium during major haemorrhage resuscitation; communicate abnormalities promptly and follow the authorised treatment pathway.",
+      "Escalate suspected life-threatening bleeding without waiting for a single laboratory threshold; coordinate communication with the clinical team and blood bank, and definitive haemorrhage control."
     ],
     "links": [
       {

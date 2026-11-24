@@ -4439,12 +4439,17 @@
      "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-EXEC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 6,
    "required_sources": 4,
-   "hash": "8af2fccfd134e61f"
+   "hash": "0ccc3a279277a960"
   },
   {
    "key": "SC-02",
@@ -4471,6 +4476,11 @@
      "verified": "2026-11-21"
     },
     {
+     "id": "S-ACC-CS-JACC-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4489,7 +4499,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "0ed65e7f65058e75"
+   "hash": "ba90483096a3b32a"
   },
   {
    "key": "SC-03",
@@ -4814,7 +4824,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "c2e97902f498890a"
+   "hash": "41042b12f2e81635"
   },
   {
    "key": "SC-10",
@@ -5071,6 +5081,11 @@
      "verified": "2026-11-24"
     },
     {
+     "id": "S-BP-DISCORDANCE-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -5086,6 +5101,16 @@
      "verified": "2026-11-16"
     },
     {
+     "id": "S-EVERDAC-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NIBP-META-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15-6",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -5099,7 +5124,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "f23f8ab3d2337444"
+   "hash": "f2182e13217796b8"
   },
   {
    "key": "SC-17",

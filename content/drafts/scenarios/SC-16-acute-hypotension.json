@@ -73,18 +73,33 @@
       "id": "S-ARTERIAL-MEASUREMENT-2020",
       "read": "partial",
       "use": "Existing targeted measurement-quality source from SK-01; reference level and waveform artifacts, not a device-specific procedure."
+    },
+    {
+      "id": "S-BP-DISCORDANCE-2025",
+      "read": "partial",
+      "use": "2025 clinical review abstract: integrated assessment of discordant invasive and cuff pressures; full text unavailable in this session"
+    },
+    {
+      "id": "S-NIBP-META-2023",
+      "read": "partial",
+      "use": "2023 meta-analysis abstract: heterogeneous oscillometric accuracy in critically ill adults"
+    },
+    {
+      "id": "S-EVERDAC-2025",
+      "read": "partial",
+      "use": "2025 EVERDAC randomized noninferiority trial abstract: selective deferred insertion with predefined safety criteria"
     }
   ],
   "required_sources": [
     "Independent nursing/medical review of full ESICM 2025 shock evidence and local emergency response policy; publisher commercial reuse clearance if needed",
     "Unit protocols for escalation, fluids and vasopressors",
-    "A source read in full on comparing an arterial reading with a cuff reading"
+    "Full-text appraisal of 2025 arterial-versus-cuff discordance review, oscillometry meta-analysis and EVERDAC eligibility/safety criteria; selected abstracts are now linked"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "Causes and treatment of hypotension are not drawn from a full guideline; the scenario keeps to assessment, review of infusions, escalation and monitoring.",
-    "Measurement-quality principles are mapped to SK-01 and the registered arterial pressure review; no device-specific test sequence or universal cuff-versus-arterial rule.",
+    "Measurement-quality principles are mapped to SK-01, a 2025 discordance review abstract and a 2023 meta-analysis abstract; the 2025 EVERDAC trial is contextual evidence on a selective monitoring strategy, not individual measurement accuracy.",
     "Numeric reporting thresholds in the Open RN text are generic and are not written.",
     "The 2025 ESICM guideline was checked at society summary/abstract level only, and the publisher restricts commercial reproduction; all scenario-level nurse actions and scoring still need independent clinical validation."
   ],
@@ -126,14 +141,17 @@
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "Altered responsiveness plus hypotension is a potentially unstable presentation. Patient-first ABC/perfusion assessment and immediate clinical escalation must happen together with checking a measurement for error, not after repeated observation. The ESICM 2025 summary emphasizes serial clinical perfusion assessment; diagnosis and treatment remain team-led. The 2025 ESICM guideline supports arterial catheter monitoring for shock unresponsive to initial treatment or requiring vasopressors. If an arterial reading is implausible, check the patient and waveform, transducer reference level and equipment with a trained colleague; compare with another appropriate measurement in parallel, not as a condition for escalation.",
+          "feedback": "Altered responsiveness plus hypotension is a potentially unstable presentation. Patient-first ABC/perfusion assessment and immediate clinical escalation must happen together with checking a measurement for error, not after repeated observation. The ESICM 2025 summary emphasizes serial clinical perfusion assessment; diagnosis and treatment remain team-led. The 2025 ESICM guideline supports arterial catheter monitoring for shock unresponsive to initial treatment or requiring vasopressors. If an arterial reading is implausible, check the patient and waveform, transducer reference level and equipment with a trained colleague; compare with another appropriate measurement in parallel, not as a condition for escalation. The 2025 EVERDAC trial found a monitored cuff-first strategy with predefined rescue criteria noninferior for 28-day mortality in its selected shock population. This does not establish that cuff and arterial readings are interchangeable or justify removal of a functioning line. For discrepant readings, check cuff fit and position, arterial waveform and reference level, and report perfusion findings to the responsible team. Do not average the two readings or choose whichever looks more reassuring.",
           "consequence": "Emergency help is summoned immediately while bedside reassessment and signal checks continue in parallel.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH15-6",
             "S-ESICM-SHOCK-2025",
             "S-RCP-NEWS2",
-            "S-ARTERIAL-MEASUREMENT-2020"
+            "S-ARTERIAL-MEASUREMENT-2020",
+            "S-BP-DISCORDANCE-2025",
+            "S-NIBP-META-2023",
+            "S-EVERDAC-2025"
           ]
         },
         {
@@ -303,7 +321,8 @@
       "Use changing perfusion signs (mental status, skin and capillary refill, pulse, urine output) and source losses in a structured handover; do not infer a shock subtype solely from a fast pulse or one pressure value.",
       "Review infusions and recent medicines, including infusion sites, and tell the prescriber.",
       "Do not change vasopressors or give fluids on your own; report with SBAR and escalate early.",
-      "Use the clinician-directed monitoring plan and check arterial measurement quality when readings are implausible; fluid responsiveness assessment and resuscitation decisions require clinical context."
+      "Use the clinician-directed monitoring plan and check arterial measurement quality when readings are implausible; fluid responsiveness assessment and resuscitation decisions require clinical context.",
+      "A selective cuff-first strategy is not equivalent to assuming all invasive and noninvasive readings agree; escalate discordance using clinical perfusion and technical checks."
     ],
     "links": [
       {

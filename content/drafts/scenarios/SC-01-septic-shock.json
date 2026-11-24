@@ -51,6 +51,11 @@
       "id": "S-SSC-2026",
       "read": "partial",
       "use": "Official 2026 SSC recommendation-level page: conditional, very-low-certainty preference for protocolized peripheral vasopressor initiation when central access would delay support; complete evidence tables not reviewed."
+    },
+    {
+      "id": "S-SSC-EXEC-2026",
+      "read": "partial",
+      "use": "SSC 2026 executive summary: antimicrobial timing and contextualization of arterial monitoring evidence"
     }
   ],
   "required_sources": [
@@ -62,7 +67,7 @@
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Fluid choices, antimicrobial timing, lactate targets and blood-pressure targets are not written; selected SSC 2026 recommendation-level statements on lactate measurement, capillary refill and peripheral vasopressors are mapped, not the full guideline.",
+    "Selected SSC 2026 statements on antimicrobial timing, cultures, lactate, capillary refill and peripheral vasopressors are mapped; full evidence appraisal, fluid selection and individual blood-pressure targets remain outside this scenario.",
     "The NEWS2 statements are UK and 2017; the scenario names no score thresholds.",
     "The steps are not a model-specific norepinephrine administration protocol. Local rules for catheter retention/aspiration, alternative venous access and antidote require critical care and pharmacy review.",
     "Simulation option wording is synchronized with MD-01 and the vasopressor monitoring topic; do not treat synthetic debrief scoring as evidence of independent bedside competence. Clinician and pharmacist sign-off remain outstanding."
@@ -101,17 +106,18 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess airway, breathing and circulation, summon urgent clinical help for suspected sepsis, and communicate perfusion findings and trends. Prepare ordered lactate sampling without delaying emergency treatment.",
+          "text": "Stay with the patient, assess airway, breathing and circulation, summon urgent clinical help for suspected sepsis, and communicate perfusion findings and trends. Prepare ordered lactate sampling without delaying emergency treatment. Coordinate blood cultures and prompt prescribed antimicrobials in parallel with emergency assessment; communicate any delay.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "A new change in alertness with suspected infection warrants immediate assessment and urgent escalation. Sepsis and septic shock are emergencies; the SSC 2026 guidance calls for treatment and resuscitation without delay. NEWS2 supports recognition, but a score must not delay emergency help when clinical deterioration is apparent. Document the response after immediate safety needs are addressed. The SSC 2026 recommendation-level guidance suggests lactate measurement and capillary refill assessment alongside other measures of tissue perfusion. Neither replaces clinical assessment nor should sampling delay treatment.",
+          "feedback": "A new change in alertness with suspected infection warrants immediate assessment and urgent escalation. Sepsis and septic shock are emergencies; the SSC 2026 guidance calls for treatment and resuscitation without delay. NEWS2 supports recognition, but a score must not delay emergency help when clinical deterioration is apparent. Document the response after immediate safety needs are addressed. The SSC 2026 recommendation-level guidance suggests lactate measurement and capillary refill assessment alongside other measures of tissue perfusion. Neither replaces clinical assessment nor should sampling delay treatment. SSC 2026 prioritizes immediate antimicrobial treatment for suspected septic shock and for probable or definite sepsis, aiming for administration within one hour of recognition. For possible sepsis without shock, the guideline permits rapid time-limited investigation. Obtain cultures promptly, preferably before antibiotics, without delaying urgent treatment; drug selection follows the authorized plan.",
           "consequence": "The team attends promptly and the patient is reassessed.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
             "S-AHRQ-TS",
-            "S-SSC-2026"
+            "S-SSC-2026",
+            "S-SSC-EXEC-2026"
           ]
         },
         {
@@ -267,7 +273,8 @@
       "Assess airway, breathing and circulation and summon urgent help for suspected sepsis with deterioration; do not wait for a score. Communicate findings with structured handover.",
       "Monitor peripheral vasopressor access during treatment. Suspected extravasation requires immediate cessation through the affected cannula, urgent escalation, and a plan for alternative vascular access and haemodynamic support.",
       "Do not flush or massage suspected extravasation; manage the cannula and any antidote only under the appropriate trained-team/local protocol.",
-      "Evaluate perfusion using clinical trends, including capillary refill and ordered lactate measurements; no single value establishes adequate resuscitation."
+      "Evaluate perfusion using clinical trends, including capillary refill and ordered lactate measurements; no single value establishes adequate resuscitation.",
+      "Record recognition, sampling and administration times and promptly escalate delays to prescribed antimicrobials; possible sepsis without shock is a distinct assessment pathway."
     ],
     "links": [
       {
