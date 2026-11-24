@@ -60,6 +60,8 @@ Secondary injury after TBI is driven by raised ICP, low perfusion and low blood 
 - **Support lung and haemodynamic safety:** the guideline cautions against prolonged hyperventilation and against aggressive efforts to push CPP above 70; report ventilation or blood gas concerns promptly.
 - **Document** values, times, neurological observations, interventions and communications.
 
+**Interpret ICP and CPP together with the clinical trajectory (BTF severe TBI guideline).** If the displayed CPP falls, review the concurrent MAP, ICP, measurement reliability and neurological observations with the trained team. A lower MAP, a higher ICP or both may contribute; a position or reference-level change can also affect the measured values. A single value cannot identify the cause or exclude evolving brain injury. BTF supports integrating pressure readings with clinical findings and brain imaging, and notes uncertainty about the optimum lower CPP threshold in individual patients. Report new deterioration or a sustained deviation from the patient's ordered limits promptly, and avoid independent changes to drain height, ventilation or vasoactive support. Device-specific measurement and drainage procedures require local training.
+
 ## 8. Monitoring parameters
 ICP value and waveform where monitored; MAP and calculated CPP (MAP minus ICP); systolic blood pressure; neurological status (GCS, pupils and limb movement as per unit policy – not itemised in the guideline); oxygenation and ventilation (SpO₂, PaCO₂ or end-tidal CO₂); temperature; sodium and osmolality if hyperosmolar therapy is used; drain output if an external ventricular drain is in use; sedation; seizure activity. Frequency by unit policy and orders.
 
