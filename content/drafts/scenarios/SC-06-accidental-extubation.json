@@ -1,263 +1,263 @@
 {
- "scenario_id": "SC-06",
- "number": 6,
- "title": "Accidental extubation",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "respiratory",
- "difficulty": 3,
- "learning_objectives": [
-  "Recognise suspected displacement or accidental extubation and call for help immediately.",
-  "Stay with the patient and support the airway until help arrives.",
-  "Leave reintubation and airway decisions to the clinicians responsible.",
-  "Report the event and review the contributing factors."
- ],
- "related": {
-  "skills": [
-   "SK-04"
+  "scenario_id": "SC-06",
+  "number": 6,
+  "title": "Accidental extubation",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "respiratory",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Recognise suspected displacement or accidental extubation and call for help immediately.",
+    "Stay with the patient and support the airway until help arrives.",
+    "Leave reintubation and airway decisions to the clinicians responsible.",
+    "Report the event and review the contributing factors."
   ],
-  "medications": [],
-  "topic_drafts": [
-   "D01-T12"
-  ]
- },
- "sources": [
-  {
-   "id": "S-AARC-PVA",
-   "read": "full",
-   "use": "patient-ventilator assessment CPG: securement, cuff and assessment statements"
+  "related": {
+    "skills": [
+      "SK-04"
+    ],
+    "medications": [],
+    "topic_drafts": [
+      "D01-T12"
+    ]
   },
-  {
-   "id": "S-ERC-ALS-2025",
-   "read": "full",
-   "use": "airway management in resuscitation (paraphrase only)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
-  }
- ],
- "required_sources": [
-  "A national guideline or professional standard on unplanned extubation and its prevention",
-  "Unit procedure for emergency airway support"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "The first-line airway manoeuvres are not described by any source read; the scenario relies on 'call for help and provide oxygen and airway support per unit protocol'.",
-  "Reintubation criteria and technique are medical decisions and are not written."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "ERC text: commercial agreement required."
- ],
- "setting": "A fictional ventilated adult who was agitated overnight.",
- "steps": [
-  {
-   "position": 1,
-   "info": "You find the endotracheal tube has moved out and there is an audible leak. The patient is agitated.",
-   "prompt": "What is the first action?",
-   "observations": [
+  "sources": [
     {
-     "key": "spo2",
-     "label": "Oxygen saturation (fictional)",
-     "value": 90,
-     "unit": "%"
+      "id": "S-AARC-PVA",
+      "read": "full",
+      "use": "patient-ventilator assessment CPG: securement, cuff and assessment statements"
     },
     {
-     "key": "leak",
-     "label": "Cuff and circuit",
-     "value": "Audible leak"
+      "id": "S-ERC-ALS-2025",
+      "read": "full",
+      "use": "airway management in resuscitation (paraphrase only)"
     },
     {
-     "key": "tube",
-     "label": "Tube position",
-     "value": "Out from the recorded depth"
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
     }
-   ],
-   "options": [
-    {
-     "text": "Stay with the patient, call for help immediately and give oxygen and airway support per the unit's protocol.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "Suspected displacement and accidental extubation call for immediate escalation, and the nurse stays with the patient.",
-     "consequence": "Help arrives while you support the airway and the oxygen supply.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA",
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Push the tube back in to where it was.",
-     "points": 0,
-     "next": 2,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Repositioning an airway device is not a safe nursing improvisation and may cause harm.",
-     "consequence": "The tube is now in an unknown position and the patient is worse.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA"
-     ]
-    },
-    {
-     "text": "Leave the bedside to find a doctor.",
-     "points": 0,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "Calling for help is right, but leaving the patient removes airway support at the worst moment.",
-     "consequence": "Help is found but the patient has had no support for several minutes.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The tube is now out. The patient is breathing but struggling, and the team is on its way.",
-   "prompt": "What should you do while waiting?",
-   "observations": [
-    {
-     "key": "spo2",
-     "label": "Oxygen saturation (fictional)",
-     "value": 88,
-     "unit": "%"
-    },
-    {
-     "key": "breathing",
-     "label": "Breathing",
-     "value": "Struggling"
-    },
-    {
-     "key": "help",
-     "label": "Team",
-     "value": "On the way"
-    }
-   ],
-   "options": [
-    {
-     "text": "Keep giving oxygen, monitor the patient and prepare the airway equipment the team will ask for.",
-     "points": 2,
-     "next": 3,
-     "scope": "monitoring",
-     "feedback": "Maintaining oxygenation, monitoring and preparing equipment support the team without taking over medical decisions.",
-     "consequence": "The team arrives to a patient who is being supported and to equipment that is ready.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA",
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Try to reintubate the patient yourself.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Reintubation is a skilled airway procedure for the responsible clinicians.",
-     "consequence": "The attempt delays the team and risks airway injury.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Switch off the monitor to reduce the alarms and concentrate.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "Monitoring must continue during an airway emergency.",
-     "consequence": "The team arrives without current readings and loses time.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The patient has been reintubated and is stable. The charge nurse asks what happened.",
-   "prompt": "What is the best contribution now?",
-   "observations": [
-    {
-     "key": "spo2",
-     "label": "Oxygen saturation (fictional)",
-     "value": 97,
-     "unit": "%"
-    },
-    {
-     "key": "tube",
-     "label": "Tube position",
-     "value": "Confirmed by the team"
-    },
-    {
-     "key": "sedation",
-     "label": "Agitation overnight",
-     "value": "Reported"
-    }
-   ],
-   "options": [
-    {
-     "text": "Give a factual SBAR account, record the event, report it through the incident system and raise the agitation, sedation and analgesia plan with the team.",
-     "points": 2,
-     "next": null,
-     "scope": "escalation",
-     "feedback": "Reporting the event and reviewing contributing factors such as agitation and sedation supports prevention.",
-     "consequence": "The team reviews the sedation plan and the securement and the risk of a repeat falls.",
-     "support": "partial",
-     "sources": [
-      "S-AHRQ-TS",
-      "S-AARC-PVA"
-     ]
-    },
-    {
-     "text": "Say it was bound to happen and record nothing.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "Incidents are recorded and reported so they can be learned from.",
-     "consequence": "The contributing factors are never reviewed.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-PVA"
-     ]
-    },
-    {
-     "text": "Blame the night staff in the report.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "A report states facts and actions, not blame.",
-     "consequence": "The team becomes defensive and the review is less open.",
-     "support": "partial",
-     "sources": [
-      "S-AHRQ-TS"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "Suspected displacement is an emergency: call for help and stay with the patient.",
-   "Support oxygenation and monitoring; leave airway decisions to the responsible clinicians.",
-   "Report the event and review agitation, sedation and securement."
   ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-04"
-   }
-  ]
- }
+  "required_sources": [
+    "A national guideline or professional standard on unplanned extubation and its prevention",
+    "Unit procedure for emergency airway support"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "The first-line airway manoeuvres are not described by any source read; the scenario relies on 'call for help and provide oxygen and airway support per unit protocol'.",
+    "Reintubation criteria and technique are medical decisions and are not written."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "ERC text: commercial agreement required."
+  ],
+  "setting": "A fictional ventilated adult who was agitated overnight.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "You find the endotracheal tube has moved out and there is an audible leak. The patient is agitated.",
+      "prompt": "What is the first action?",
+      "observations": [
+        {
+          "key": "spo2",
+          "label": "Oxygen saturation (fictional)",
+          "value": 90,
+          "unit": "%"
+        },
+        {
+          "key": "leak",
+          "label": "Cuff and circuit",
+          "value": "Audible leak"
+        },
+        {
+          "key": "tube",
+          "label": "Tube position",
+          "value": "Out from the recorded depth"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the patient, call for help immediately and give oxygen and airway support per the unit's protocol.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Suspected displacement and accidental extubation call for immediate escalation, and the nurse stays with the patient.",
+          "consequence": "Help arrives while you support the airway and the oxygen supply.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA",
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Push the tube back in to where it was.",
+          "points": 0,
+          "next": 2,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Repositioning an airway device is not a safe nursing improvisation and may cause harm.",
+          "consequence": "The tube is now in an unknown position and the patient is worse.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        },
+        {
+          "text": "Leave the bedside to find a doctor.",
+          "points": 0,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Calling for help is right, but leaving the patient removes airway support at the worst moment.",
+          "consequence": "Help is found but the patient has had no support for several minutes.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "The tube is now out. The patient is breathing but struggling, and the team is on its way.",
+      "prompt": "What should you do while waiting?",
+      "observations": [
+        {
+          "key": "spo2",
+          "label": "Oxygen saturation (fictional)",
+          "value": 88,
+          "unit": "%"
+        },
+        {
+          "key": "breathing",
+          "label": "Breathing",
+          "value": "Struggling"
+        },
+        {
+          "key": "help",
+          "label": "Team",
+          "value": "On the way"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the patient, assess whether breathing is effective and activate the emergency airway response. Provide oxygen and trained ventilation assistance when indicated under the approved emergency pathway while colleagues prepare equipment. Do not wait for the airway team if ventilation is inadequate.",
+          "points": 2,
+          "next": 3,
+          "scope": "monitoring",
+          "feedback": "Oxygen delivery alone may not correct inadequate ventilation after accidental extubation. Prompt assessment and appropriate ventilation support within training and the local emergency pathway take priority while the responsible airway clinicians arrive.",
+          "consequence": "The team arrives to a patient who is being supported and to equipment that is ready.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA",
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Try to reintubate the patient yourself.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Reintubation is a skilled airway procedure for the responsible clinicians.",
+          "consequence": "The attempt delays the team and risks airway injury.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Switch off the monitor to reduce the alarms and concentrate.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "Monitoring must continue during an airway emergency.",
+          "consequence": "The team arrives without current readings and loses time.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "The patient has been reintubated and is stable. The charge nurse asks what happened.",
+      "prompt": "What is the best contribution now?",
+      "observations": [
+        {
+          "key": "spo2",
+          "label": "Oxygen saturation (fictional)",
+          "value": 97,
+          "unit": "%"
+        },
+        {
+          "key": "tube",
+          "label": "Tube position",
+          "value": "Confirmed by the team"
+        },
+        {
+          "key": "sedation",
+          "label": "Agitation overnight",
+          "value": "Reported"
+        }
+      ],
+      "options": [
+        {
+          "text": "Give a factual SBAR account, record the event, report it through the incident system and raise the agitation, sedation and analgesia plan with the team.",
+          "points": 2,
+          "next": null,
+          "scope": "escalation",
+          "feedback": "Reporting the event and reviewing contributing factors such as agitation and sedation supports prevention.",
+          "consequence": "The team reviews the sedation plan and the securement and the risk of a repeat falls.",
+          "support": "partial",
+          "sources": [
+            "S-AHRQ-TS",
+            "S-AARC-PVA"
+          ]
+        },
+        {
+          "text": "Say it was bound to happen and record nothing.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "Incidents are recorded and reported so they can be learned from.",
+          "consequence": "The contributing factors are never reviewed.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
+        },
+        {
+          "text": "Blame the night staff in the report.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "A report states facts and actions, not blame.",
+          "consequence": "The team becomes defensive and the review is less open.",
+          "support": "partial",
+          "sources": [
+            "S-AHRQ-TS"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "Suspected displacement is an emergency: call for help and stay with the patient.",
+      "Assess effective breathing as well as oxygenation; provide trained emergency ventilation support if indicated under the local pathway while the airway team responds.",
+      "Report the event and review agitation, sedation and securement."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-04"
+      }
+    ]
+  }
 }

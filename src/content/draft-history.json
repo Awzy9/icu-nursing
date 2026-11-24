@@ -5997,6 +5997,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0580189610d620a1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ALTEPLASE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-46": [
@@ -6056,6 +6070,20 @@
    {
     "hash": "4165b90d2d5a3ad4",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-TXA",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "c6ca26eee0823c72",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-TXA",
@@ -6205,6 +6233,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "724cfd5c16f10685",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PANTOPRAZOLE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-50": [
@@ -6237,6 +6279,20 @@
    {
     "hash": "3eec1ecc5af20e9e",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HYDROCORTISONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "593d51a68ca329ad",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-HYDROCORTISONE",
@@ -6342,6 +6398,19 @@
    {
     "hash": "0df80cfa0a77bf8f",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "7151e2c7be1717a3",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AARC-O2",
@@ -6475,6 +6544,19 @@
    {
     "hash": "b23284e6dc31e50f",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "5e08c5fd4776a4e0",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AARC-PVA",
