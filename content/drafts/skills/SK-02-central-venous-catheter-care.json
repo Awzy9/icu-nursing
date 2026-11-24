@@ -64,7 +64,7 @@
       ]
     },
     "safety": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Perform hand hygiene before and after palpating the site and before and after inserting, replacing, accessing, repairing or dressing a catheter (CDC IB).",

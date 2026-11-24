@@ -208,7 +208,7 @@
     },
     {
       "phase": "procedure",
-      "text": "Obtain an independent double check when policy requires it.",
+      "text": "When policy requires an independent double check, each clinician checks the order and programmed settings separately before comparing findings; do not substitute a shared glance.",
       "critical": true,
       "support": "sourced",
       "sources": [
@@ -243,6 +243,15 @@
     {
       "phase": "escalation",
       "text": "For a suspected access-site injury, stop drug delivery at the compromised site, assess and promptly escalate, while arranging clinician-directed continuation of essential therapy through approved alternative access.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Inspect the pump for damage before use; remove a suspect device from service per facility policy and arrange a functional replacement without interrupting essential support unsafely.",
       "critical": true,
       "support": "partial",
       "sources": [

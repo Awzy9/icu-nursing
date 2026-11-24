@@ -2127,6 +2127,21 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "afae0ba3145d87d8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-INS-STANDARDS",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-NCSBN-DELEG-2019",
+     "S-SHEA-CLABSI-2022"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-03": [
@@ -2195,6 +2210,21 @@
    {
     "hash": "47f19c3d3c22703d",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ACI-TRACH",
+     "N-ICS-TRANSFER-2026",
+     "N-NCBI-OPENRN-TRACH",
+     "N-NHSGGC-TRACH-2022",
+     "S-AARC-TRACH"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "00c0eea7730f396a",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-ACI-TRACH",
@@ -2339,6 +2369,21 @@
    {
     "hash": "a70be00db081bdff",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ASPEN",
+     "S-ESICM-EEN-2017",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "de64efbaabb29256",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-ASPEN",
@@ -2509,6 +2554,19 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "675aea02313ff46e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014",
+     "S-SCCM-ABCDEF",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-17": [
@@ -2641,6 +2699,17 @@
    {
     "hash": "50c16e8e0b1cae78",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ICS-TRANSFER-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5ff9abf3daac962e",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-ICS-TRANSFER-2026"
@@ -2783,6 +2852,18 @@
    {
     "hash": "2839ef80ee4aec7b",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "50a90bb6f7da97a0",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-FDA-PUMP",
