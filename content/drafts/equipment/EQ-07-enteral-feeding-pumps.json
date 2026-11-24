@@ -104,6 +104,15 @@
         "S-NHSE-NGT-ENDURING"
       ],
       "section": "safety"
+    },
+    {
+      "text": "Check the full enteral tubing pathway and intended enteral connector before attaching or replacing equipment. Do not attach enteral feeding tubing to vascular access or improvise an adapter to make incompatible connectors fit. If the intended route or tube position is uncertain, withhold use and obtain trained assistance.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-MISCONNECTIONS",
+        "S-NHSE-NGT-ENDURING"
+      ],
+      "section": "safety"
     }
   ],
   "monitoring_concepts": [
@@ -157,6 +166,11 @@
       "id": "S-NHSE-NGT-ENDURING",
       "read": "partial",
       "use": "NHS England indexed enduring nasogastric placement standards; direct page did not return usable full text."
+    },
+    {
+      "id": "S-FDA-MISCONNECTIONS",
+      "read": "partial",
+      "use": "FDA clinician guidance on checking the intended tubing pathway and connectors before connection or replacement; selected HTML recommendations checked."
     }
   ],
   "required_sources": [
