@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE NG148 Acute kidney injury: prevention, detection and management (published 18 Dec 2019; last updated 16 Oct 2024) – UK guidance; most recommendations date from 2013", "KDIGO AKI/AKD update: official site now lists a 2027 public-review draft summary (19 Nov 2026); final publication pending, NOT used as final"]
-sources: [S-NICE-NG148]
+sources: [S-NICE-NG148, S-RRT-MULTIDISC-2026]
 sources_not_read: [S-KDIGO-AKI, S-SSC-2026]
 independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO 2026 draft is mentioned only as a draft."
 ---
@@ -63,6 +63,8 @@ Hourly urine output; balance (hourly or per policy); haemodynamics and MAP; weig
 | Obstruction | Suspected infected obstructed kidney needs urgent ultrasound and urology referral | Report flank pain, fever, low output |
 | Medicines | Do not routinely use loop diuretics to treat AKI; do not offer low-dose dopamine | Prescriber decisions |
 | Renal replacement therapy | Discuss potential indications immediately with a nephrologist or critical care specialist; refer immediately if hyperkalaemia, metabolic acidosis, uraemic complications, fluid overload or pulmonary oedema do not respond to medical treatment | Know the warning signs and escalate fast |
+
+**Renal recovery and RRT reassessment (January 2026 multidisciplinary ICU guideline).** When kidney recovery is being assessed, record spontaneous urine output separately from diuretic-associated output and communicate trends in fluid status, potassium and acid–base results. Increased urine output after a diuretic is not proof of recovery or readiness to stop RRT. There is no single validated urine-output cutoff for stopping therapy; persistent hyperkalaemia, acidosis or fluid overload warrant specialist reassessment. The decision and monitoring plan are clinician-led.
 
 ## 10. Warning signs and red flags
 Urine output below 0.5 mL/kg/h for 6 hours or more; no urine in the catheter bag after the catheter is checked; rising creatinine or potassium; ECG changes; breathlessness or new crackles with weight gain; drowsiness, confusion or twitching; pericardial rub or chest pain; flank pain with fever; new nephrotoxic drugs or contrast in a patient at risk.
@@ -167,6 +169,8 @@ D. Deciding to stop a nephrotoxic drug.
 ## 18. References
 - NICE. Acute kidney injury: prevention, detection and management (NG148). Published 18 December 2019; last updated 16 October 2024. https://www.nice.org.uk/guidance/ng148 (Recommendations chapter; accessed 2026-11-14)
 - KDIGO. Acute Kidney Injury (AKI) and Acute Kidney Disease (AKD) guideline page: update in preparation following public review; 2027 draft summary listed, not final. https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-24)
+
+- Multidisciplinary guidelines on renal replacement therapy in intensive care medicine. Critical Care. 2026;30:46. https://doi.org/10.1186/s13054-025-05817-6 (selected recommendations 3.7, 6.4, 6.8 and 7.1–7.8 and accompanying rationale accessed 2026-11-24; full appraisal and rights pending).
 
 ## 19. Local protocol note
 Urine-output targets, balance charting, call-back limits for potassium and renal replacement therapy criteria follow local protocols.

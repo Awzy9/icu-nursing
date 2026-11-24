@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["KDIGO Clinical Practice Guideline for Acute Kidney Injury, 2012 (Kidney Int Suppl 2012;2:1-138), Section 5 Dialysis Interventions for Treatment of AKI – an international guideline, now more than ten years old; a 2026 update exists only as a public-review DRAFT and is not used"]
-sources: [S-KDIGO-AKI-2012, N-LHSC-CRRT-PRINCIPLES, S-RCA-DELPHI-2026, S-ASH-HIT-2018]
+sources: [S-KDIGO-AKI-2012, N-LHSC-CRRT-PRINCIPLES, S-RCA-DELPHI-2026, S-ASH-HIT-2018, S-RRT-MULTIDISC-2026]
 sources_not_read: [S-KDIGO-AKI]
 independently_written_note: "Original wording. The KDIGO 2012 guideline PDF was downloaded and its Section 5 recommendation statements (5.1 timing, 5.2 stopping, 5.3 anticoagulation, 5.4 vascular access, 5.5 membranes, 5.6 modality, 5.7 buffer and fluids, 5.8 dose) were read in the summary of recommendations; the supporting rationale text, other chapters, and the figures were not read. KDIGO addresses prescribing and system decisions, not CRRT machine operation. The independent LHSC hospital teaching page was consulted on 2026-11-23 for limited qualitative concepts about transmembrane pressure and pressure-drop trends (a local educational resource, not a cross-manufacturer standard). This draft does not teach machine set-up, priming, alarm settings, treatment adjustments, citrate management or medication doses. The guideline's numeric dose targets (effluent volume, Kt/V) are deliberately not quoted under the platform's no-dosing rule. KDIGO copyright and reuse terms were not checked; paraphrase only."
 ---
@@ -72,6 +72,12 @@ Haemodynamics; temperature; urine output (if any) and net fluid balance against 
 | Catheter infection prevention | No topical antibiotics at insertion site; no antibiotic locks | 2C; 2C | Non-tunnelled catheters in ICU |
 | Buffer | Bicarbonate rather than lactate (recommended in shock) | 2C; 1B | – |
 | Dose | Prescribe before each session; assess delivered dose frequently | Not graded; 1B | Numbers not quoted |
+
+**2026 multidisciplinary ICU RRT guideline — monitoring and handover update.** Antibiotic exposure can change when RRT starts, stops or is interrupted. Report the modality, interruptions, residual urine output and sampling times to the pharmacist and treating team; coordinate prescribed therapeutic drug monitoring where available, particularly for vancomycin, aminoglycosides and selected beta-lactams. Do not independently change doses or delay urgent ordered antibiotics while waiting for levels.
+
+CRRT alone is not an automatic contraindication to early mobilization. Assess patient stability and secure access and circuit with the trained multidisciplinary team; follow the local mobility and device-safety criteria. Do not disconnect, reposition a dialysis catheter or interrupt treatment independently for mobility.
+
+When kidney recovery is being assessed, record spontaneous urine output separately from diuretic-associated output and communicate trends in fluid status, potassium and acid–base results. Increased urine output after a diuretic is not proof of recovery or readiness to stop RRT. There is no single validated urine-output cutoff for stopping therapy; persistent hyperkalaemia, acidosis or fluid overload warrant specialist reassessment. The decision and monitoring plan are clinician-led. These newer selected recommendations supplement the historical KDIGO 2012 statements; the KDIGO AKI/AKD revision is not final.
 
 ## 10. Warning signs and red flags
 Bleeding or oozing at the catheter site or elsewhere; a fall in platelet count (HIT concern); haemodynamic instability on starting or during therapy; arrhythmia or electrolyte abnormality; new confusion; catheter site redness, discharge or fever; frequent or prolonged interruptions to the therapy; fluid balance that does not match the prescription; line disconnection or air (device-specific emergency steps are not covered).
@@ -177,6 +183,8 @@ D. Checking that the catheter site is clean and dry.
 - ASH HIT guideline, 2018. https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/ (selected recommendation or label text; accessed 2026-11-24)
 - 2026 citrate Delphi consensus. https://doi.org/10.1186/s13054-026-06066-x (selected recommendation or label text; accessed 2026-11-24)
 - KDIGO AKI/AKD update status. https://kdigo.org/guidelines/acute-kidney-injury/ (selected recommendation or label text; accessed 2026-11-24)
+
+- Multidisciplinary guidelines on renal replacement therapy in intensive care medicine. Critical Care. 2026;30:46. https://doi.org/10.1186/s13054-025-05817-6 (selected recommendations 3.7, 6.4, 6.8 and 7.1–7.8 and accompanying rationale accessed 2026-11-24; full appraisal and rights pending).
 
 ## 19. Local protocol note
 CRRT prescription, machine and circuit procedures, anticoagulation protocol, citrate and calcium monitoring, catheter care, alarm response, who may operate the machine and training requirements follow the hospital's policies and the manufacturer's instructions.

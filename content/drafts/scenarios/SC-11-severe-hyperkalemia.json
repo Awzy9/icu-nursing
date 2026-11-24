@@ -35,7 +35,7 @@
     {
       "id": "S-UKKA-HK-2026",
       "read": "partial",
-      "use": "UKKA adult hyperkalaemia July 2026: detailed hospital Guideline 14.1 (urgent 12-lead ECG at K >=6.0) and Guideline 14.2 (separate continuous monitoring indications) compared with conflicting summary 14.1 (K >=6.5) on 2026-11-23; selected monitoring sections only, not drug tables. RED citation-only."
+      "use": "UKKA adult hyperkalaemia July 2026: detailed hospital Guideline 14.1 (urgent 12-lead ECG at K >=6.0) and Guideline 14.2 (separate continuous monitoring indications) compared with conflicting summary 14.1 (K >=6.5) on 2026-11-23; selected monitoring sections only, not drug tables. RED citation-only. Hospital recommendations 19.6 and 21.1, 21.3–21.4 rechecked 2026-11-24; dialysis-specific section 18 checked. Threshold discrepancy and local protocol remain unresolved."
     },
     {
       "id": "L-INSULIN",
@@ -224,7 +224,7 @@
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "Transient improvement on the monitor does not ensure that potassium has been removed from the body. UKKA recommends frequent glucose checks after insulin-glucose (including through six hours) and repeat potassium assessment because hypoglycaemia and rebound can follow; the approved unit pathway sets exact frequency and further treatment decisions. Recheck response to cardiac-protective treatment and continue the clinician-directed elimination plan, particularly with impaired renal function. Recurrent ECG abnormalities or worsening perfusion are reasons to escalate immediately, not wait for the next routine blood sample.",
+          "feedback": "Transient improvement on the monitor does not ensure that potassium has been removed from the body. UKKA recommends frequent glucose checks after insulin-glucose (including through six hours) and repeat potassium assessment because hypoglycaemia and rebound can follow; the approved unit pathway sets exact frequency and further treatment decisions. Recheck response to cardiac-protective treatment and continue the clinician-directed elimination plan, particularly with impaired renal function. Recurrent ECG abnormalities or worsening perfusion are reasons to escalate immediately, not wait for the next routine blood sample. For life-threatening hyperkalaemia that persists despite initial therapy, obtain urgent renal or critical-care review for the definitive removal plan; do not wait for the next scheduled sample if the patient deteriorates. For patients receiving maintenance haemodialysis, urgent dialysis assessment and emergency cardiac protection when indicated are parallel priorities. Once stable, communicate suspected contributing medicines and the need for repeat potassium monitoring and a documented follow-up plan; restarting potentially contributory medicines requires clinician assessment.",
           "consequence": "A low glucose is caught early and a rebound is picked up.",
           "support": "partial",
           "sources": [
@@ -266,7 +266,8 @@
       "Emergency potassium treatment, including the exact calcium formulation and insulin-glucose, is authorised by the clinical team and local protocol; monitor cardiac rhythm, IV access and hypoglycaemia risk without independent dosing.",
       "Early ECG improvement can coexist with recurrent hyperkalaemia or delayed hypoglycaemia; maintain the prescribed post-treatment glucose, potassium and clinical observations.",
       "Calcium is cardiac protection, not potassium removal; shifting therapies are temporary, and definitive elimination and reassessment remain clinician-directed.",
-      "Severe hyperkalemia can occur without typical ECG findings; normal morphology is not proof of safety."
+      "Severe hyperkalemia can occur without typical ECG findings; normal morphology is not proof of safety.",
+      "Communicate the definitive potassium-removal plan, relevant medicines and follow-up monitoring when handing over a stabilized patient; recurrent instability requires immediate escalation."
     ],
     "links": [
       {

@@ -409,12 +409,17 @@
      "id": "S-NICE-NG148",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "b05a61f7bef68008"
+   "hash": "02993b8ecdc0aa8b"
   },
   {
    "key": "D06-T07",
@@ -1184,12 +1189,17 @@
      "id": "S-RCA-DELPHI-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "7927c8f43fcc90d0"
+   "hash": "994bbfb278a4539d"
   },
   {
    "key": "D05-T01",
@@ -2469,12 +2479,17 @@
      "id": "S-RCA-DELPHI-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "666a89a628136a99"
+   "hash": "1e733d97c7e7cc83"
   },
   {
    "key": "SK-18",
@@ -5109,7 +5124,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "53bffa548ccb463a"
+   "hash": "dd696ff11a85a1e4"
   },
   {
    "key": "SC-12",

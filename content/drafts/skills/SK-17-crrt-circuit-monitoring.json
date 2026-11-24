@@ -43,6 +43,11 @@
       "id": "S-RCA-DELPHI-2026",
       "read": "partial",
       "use": "Selected consensus statements 8–10 and remarks on citrate accumulation"
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "read": "partial",
+      "use": "Selected January 2026 multidisciplinary ICU RRT guidance on mobilization, drug monitoring and assessment for stopping RRT; publisher HTML accessed 2026-11-24; full appraisal pending."
     }
   ],
   "objectives": [
@@ -71,6 +76,13 @@
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
+          ]
+        },
+        {
+          "text": "CRRT alone is not an automatic contraindication to early mobilization. Assess patient stability and secure access and circuit with the trained multidisciplinary team; follow the local mobility and device-safety criteria. Do not disconnect, reposition a dialysis catheter or interrupt treatment independently for mobility.",
+          "support": "partial",
+          "sources": [
+            "S-RRT-MULTIDISC-2026"
           ]
         }
       ]
@@ -181,6 +193,20 @@
           "sources": [
             "S-RCA-DELPHI-2026"
           ]
+        },
+        {
+          "text": "Antibiotic exposure can change when RRT starts, stops or is interrupted. Report the modality, interruptions, residual urine output and sampling times to the pharmacist and treating team; coordinate prescribed therapeutic drug monitoring where available, particularly for vancomycin, aminoglycosides and selected beta-lactams. Do not independently change doses or delay urgent ordered antibiotics while waiting for levels.",
+          "support": "partial",
+          "sources": [
+            "S-RRT-MULTIDISC-2026"
+          ]
+        },
+        {
+          "text": "When kidney recovery is being assessed, record spontaneous urine output separately from diuretic-associated output and communicate trends in fluid status, potassium and acid–base results. Increased urine output after a diuretic is not proof of recovery or readiness to stop RRT. There is no single validated urine-output cutoff for stopping therapy; persistent hyperkalaemia, acidosis or fluid overload warrant specialist reassessment. The decision and monitoring plan are clinician-led.",
+          "support": "partial",
+          "sources": [
+            "S-RRT-MULTIDISC-2026"
+          ]
         }
       ]
     },
@@ -287,6 +313,15 @@
       "sources": [
         "S-RCA-DELPHI-2026"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "Communicate RRT interruptions and timed antibiotic levels to the pharmacist and clinical team; do not independently change drug doses.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-RRT-MULTIDISC-2026"
+      ]
     }
   ],
   "gaps": [
@@ -300,7 +335,8 @@
     "AHS pathway: licence not stated on the file; verify before reproducing.",
     "Manufacturer documentation: reproduction permission required.",
     "KDIGO: verify reuse terms.",
-    "LHSC clinical teaching page: no figures, local thresholds or operator sequences reproduced; verify commercial reuse rights."
+    "LHSC clinical teaching page: no figures, local thresholds or operator sequences reproduced; verify commercial reuse rights.",
+    "January 2026 multidisciplinary guideline selected recommendations cited only pending commercial rights review."
   ],
   "references": [
     {
@@ -364,6 +400,17 @@
       "publisher": "Critical Care / Delphi consensus panel",
       "version": "2026; doi:10.1186/s13054-026-06066-x",
       "url": "https://link.springer.com/article/10.1186/s13054-026-06066-x",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "title": "Multidisciplinary guidelines on renal replacement therapy in intensive care medicine",
+      "publisher": "Critical Care / German and Austrian multidisciplinary societies",
+      "version": "2026-01-14",
+      "url": "https://doi.org/10.1186/s13054-025-05817-6",
       "accessed": "2026-11-24",
       "read": "partial",
       "licence_class": "RED (cite-only)",

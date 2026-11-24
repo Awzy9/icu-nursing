@@ -1127,6 +1127,18 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "02993b8ecdc0aa8b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG148",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "D06-T07": [
@@ -2845,6 +2857,21 @@
      "S-ASH-HIT-2018",
      "S-KDIGO-AKI-2012",
      "S-RCA-DELPHI-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "994bbfb278a4539d",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-ASH-HIT-2018",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
     ],
     "gaps": 0,
     "required_sources": 1,
@@ -5204,6 +5231,23 @@
      "S-CHS-CRRT",
      "S-KDIGO-AKI-2012",
      "S-RCA-DELPHI-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "1e733d97c7e7cc83",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
     ],
     "gaps": 5,
     "required_sources": 0,
@@ -11280,6 +11324,19 @@
    },
    {
     "hash": "53bffa548ccb463a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-AHRQ-TS",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "dd696ff11a85a1e4",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
