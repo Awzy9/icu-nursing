@@ -1,10 +1,10 @@
--- REVIEW CANDIDATE ONLY. Not in migrations; do not apply to production.
--- Generate a real migration using the Supabase CLI after isolated verification.
+-- Account-owned scenario decision history. The validation helper stays outside the public API.
+-- No new grants on learner tables; existing ownership RLS remains authoritative.
 begin;
 -- Decisions belong to the same owner-protected row as the position and score.
 alter table public.working_sessions add column decisions jsonb;
 -- Keep null distinct from []: null means history not supplied by the client.
-create function public.working_decision_history_valid(history jsonb)
+create function private.working_decision_history_valid(history jsonb)
 returns boolean language plpgsql immutable security invoker set search_path='' as $$
 declare item jsonb; pos integer; previous integer := 0;
 begin
@@ -23,10 +23,10 @@ begin
   return true;
 end;
 $$;
-revoke all on function public.working_decision_history_valid(jsonb) from public,anon;
-grant execute on function public.working_decision_history_valid(jsonb) to authenticated;
+revoke all on function private.working_decision_history_valid(jsonb) from public,anon;
+grant execute on function private.working_decision_history_valid(jsonb) to authenticated;
 alter table public.working_sessions add constraint working_sessions_decision_history_valid
-  check ((kind='scenario' or decisions is null) and public.working_decision_history_valid(decisions));
+  check ((kind='scenario' or decisions is null) and private.working_decision_history_valid(decisions));
 
 -- New RPC, not an ambiguous overload. Legacy app versions retain the existing signature.
 create function public.working_save_session_v2(p_module_key text,p_kind text,p_version text,p_position integer,p_score integer,p_finished boolean,p_updated_at timestamptz,p_decisions jsonb)

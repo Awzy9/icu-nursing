@@ -31,6 +31,8 @@ describe.skipIf(!ISOLATED)("Decision history through authenticated PostgREST",()
     const other=await signIn(second.email);
     const denied=await rawClient().rpc("working_save_session_v2",args(new Date().toISOString()));
     expect(denied.error).not.toBeNull();
+    const internal=await other.rpc("working_decision_history_valid",{history:[]});
+    expect(internal.error).not.toBeNull();
     const hidden=await other.from("working_sessions").select("decisions").eq("user_id",first.id);
     expect(hidden.error).toBeNull();
     expect(hidden.data).toEqual([]);

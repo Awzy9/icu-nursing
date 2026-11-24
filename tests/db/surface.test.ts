@@ -19,7 +19,7 @@ describe("API exposure allowlist", () => {
       "record_topic_view", "restore_topic", "rollback_topic", "set_required_roles", "set_topic_completion", "sk_complete_session", "sk_discard_session", "sk_get", "sk_get_session", "sk_list", "sk_mark", "sk_progress", "sk_set_bookmark", "sk_start_session", "st_history", "st_overview", "st_start_revision", "start_revision",
       "sub_cancel", "sub_get_my", "sub_mock_advance", "sub_mock_subscribe", "sub_resume", "submit_for_review",
       "tutor_record_query", "tutor_usage_remaining",
-      "validate_topic_for_review", "withdraw_submission", "working_exam_answer", "working_exam_start", "working_exam_submit", "working_record_attempt", "working_save_session",
+      "validate_topic_for_review", "withdraw_submission", "working_exam_answer", "working_exam_start", "working_exam_submit", "working_record_attempt", "working_save_session", "working_save_session_v2",
     ]);
   });
 
@@ -35,6 +35,11 @@ describe("API exposure allowlist", () => {
     expect(r.rows.map((x) => x.proname)).toEqual(expect.arrayContaining(["has_role", "has_staff_role", "is_aal2", "can_read_topic", "can_edit_topic", "write_audit", "audit_row", "_evaluate_version", "_topic_snapshot"]));
     expect((await owner.query("select has_schema_privilege('authenticated','private','usage') u")).rows[0].u).toBe(true);
     expect((await owner.query(`select count(*)::int n from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='private' and p.proname in ('write_audit','audit_row','_evaluate_version','_topic_snapshot','_require_role','handle_new_user') and has_function_privilege('authenticated', p.oid, 'execute')`)).rows[0].n).toBe(0);
+  });
+
+  it("keeps the decision-history constraint helper private and invoker-only", async () => {
+    const r = await owner.query("select n.nspname, p.prosecdef, has_function_privilege('anon',p.oid,'execute') anon_exec, has_function_privilege('authenticated',p.oid,'execute') auth_exec from pg_proc p join pg_namespace n on n.oid=p.pronamespace where p.proname='working_decision_history_valid'");
+    expect(r.rows).toEqual([{nspname:"private",prosecdef:false,anon_exec:false,auth_exec:true}]);
   });
 
   it("never lets a function fall back to PUBLIC execute", async () => {
