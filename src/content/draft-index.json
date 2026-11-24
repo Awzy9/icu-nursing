@@ -5704,12 +5704,17 @@
      "id": "S-PHILIPS-INTELLIVUE-R0",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "2cdac18bb9b3f58e"
+   "hash": "f62661cc43500f5c"
   },
   {
    "key": "EQ-02",
@@ -5776,6 +5781,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-MHRA-ARTERIAL-GLUCOSE",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -5784,12 +5794,17 @@
      "id": "S-SSC-2021",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "62cee64d3a90405f"
+   "hash": "ad7b454a4b7be6f7"
   },
   {
    "key": "EQ-04",
