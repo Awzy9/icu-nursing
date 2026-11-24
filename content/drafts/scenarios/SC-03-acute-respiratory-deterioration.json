@@ -58,6 +58,11 @@
       "id": "S-ATS-NIRS-2026",
       "read": "partial",
       "use": "ATS 2026 adult noninvasive respiratory support recommendations, indexed primary text"
+    },
+    {
+      "id": "S-RCUK-ABCDE-ADULT",
+      "read": "partial",
+      "use": "RCUK ABCDE, sections Breathing and Disability, official HTML checked 2026-11-24: clinical ventilation and alternative causes of depressed consciousness."
     }
   ],
   "required_sources": [
@@ -260,14 +265,15 @@
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "NEWS2 asks for the response to be recorded and says any concern about the patient should prompt an urgent review whatever the score. Improved oxygenation does not establish adequate ventilation or explain ongoing drowsiness. Reassess airway, breathing and circulation, communicate the persistent change and request urgent further review; coordinate blood gas assessment as indicated without delaying emergency support.",
+          "feedback": "NEWS2 asks for the response to be recorded and says any concern about the patient should prompt an urgent review whatever the score. Improved oxygenation does not establish adequate ventilation or explain ongoing drowsiness. Reassess airway, breathing and circulation, communicate the persistent change and request urgent further review; coordinate blood gas assessment as indicated without delaying emergency support. Compare the current respiratory pattern and depth with baseline; a falling respiratory rate accompanied by worsening alertness may reflect exhaustion rather than recovery. Report recent sedating medication and other possible causes of impaired consciousness while urgently reassessing ventilation and perfusion.",
           "consequence": "Reassessment and handover may identify unresolved ventilatory failure or another cause of drowsiness despite improved saturation.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
             "S-AARC-O2",
             "S-BTS-O2-2017",
-            "S-ATS-NIRS-2026"
+            "S-ATS-NIRS-2026",
+            "S-RCUK-ABCDE-ADULT"
           ]
         },
         {
@@ -303,7 +309,8 @@
       "The early warning score triggers a response; escalate with an SBAR per local policy.",
       "Record the response, monitor as directed, and call again whenever you remain concerned.",
       "An acceptable oxygen saturation does not exclude inadequate ventilation; interpret oximetry in clinical context and escalate discordant findings.",
-      "Recognize deterioration despite oxygen or noninvasive support and escalate promptly for blood gases and respiratory-team assessment."
+      "Recognize deterioration despite oxygen or noninvasive support and escalate promptly for blood gases and respiratory-team assessment.",
+      "An apparently improved respiratory rate or oxygen saturation with declining consciousness is not reassuring; assess breathing depth, effort and physiological status together."
     ],
     "links": [
       {
