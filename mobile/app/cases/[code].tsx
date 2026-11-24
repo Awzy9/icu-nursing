@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { scenarioVersion, canResumeScenario, restoreScenarioHistory, restoreScenarioDecisions } from "@icu/schemas/scenario-session";
+import { scenarioChoiceOrder } from "@icu/schemas/scenario-choice-order";
 import { scenarioDebrief, type ScenarioDecision } from "@icu/schemas/scenario-debrief";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
@@ -148,8 +149,8 @@ export default function CaseScreen() {
                 {supplemental.map((o, i) => <P key={`${o.label}-${i}`}>{o.label}: {String(o.value)}{o.unit ? ` ${o.unit}` : ""}</P>)}
               </Card> : null}
               <H2>{step.prompt}</H2>
-              {step.options.map((o, i) => (
-                <Button key={i} label={o.text} variant={choice === i ? "primary" : "outline"} disabled={revealed} onPress={() => setChoice(i)} />
+              {scenarioChoiceOrder(code ?? "", pos, step.options.length).map(i => (
+                <Button key={i} label={step.options[i]!.text} variant={choice === i ? "primary" : "outline"} disabled={revealed} onPress={() => setChoice(i)} />
               ))}
               {revealed && option ? (
                 <Card>
