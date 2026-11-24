@@ -58,6 +58,8 @@ Before and during any high-risk infusion:
 
 These are selected safety principles, not a complete infusion or IV push protocol. ISMP guidance is directed to hospital systems; implementation and exceptions require local pharmacy, device and clinical governance.
 
+**Discrepancies in a high-alert infusion (FDA).** At shift change or after a prescription change, reconcile the actual drug and concentration, prescribed dose and units, programmed delivery, line identity and patient response. A pump rate can appear plausible yet deliver an incorrect dose if the concentration is wrong. Where verification is required, check independently against the current order. If a discrepancy is discovered, assess the patient promptly, establish the possible exposure and obtain clinical/pharmacy clarification; do not silently correct the pump or improvise a catch-up dose. Protect essential continuous support under the authorized contingency plan and escalate instability immediately.
+
 ## 8. Monitoring parameters
 Pump settings against the order at the four verification moments above; alerts and alarms; the patient's haemodynamics, rhythm, oxygen saturation, end-tidal CO₂ and blood glucose where relevant to the drug; infusion site; volume infused against expected; the interval for rechecks set by unit policy.
 
@@ -98,7 +100,7 @@ Drug, concentration and rate as ordered and as programmed; time of each verifica
 A new bag of a high-risk infusion is hung at 02:00. The nurse reads the order, checks the label on the bag and on the tubing at the port of entry, programmes the pump from the drug library, and asks a second nurse to check the pump separately against the order before starting. After starting, she watches the patient's monitored values and records the check.
 
 ## 16. Clinical case (fictional)
-At change of shift, the oncoming nurse sees that the rate on a pump differs from the chart. Instead of correcting it silently, she checks the order, confirms with the outgoing nurse, finds that the order was changed an hour earlier but the pump was not updated, corrects the pump with a second check, reports the near miss, and reassesses the patient.
+At change of shift, the oncoming nurse sees that the rate on a pump differs from the chart. Instead of correcting it silently, she checks the order, confirms with the outgoing nurse, finds that the order was changed an hour earlier but the pump was not updated, assesses the patient and reports the possible medication exposure promptly, verifies the current order and authorized correction with the team and a second checker as required, then documents the event and reassesses the response. The team evaluates whether actual harm or under-treatment occurred rather than assuming this was only a near miss.
 
 ## 17. MCQs
 **Q1 (application).** A unit is reviewing two near misses: a low-risk medicine was frequently given late, while a rare programming error almost delivered a dangerous insulin dose. Which principle should guide high-alert classification?
