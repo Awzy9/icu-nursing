@@ -16,7 +16,8 @@ const bookmarkKeyPattern = new RegExp(`^(${BOOKMARK_KIND.join("|")}):[A-Z0-9-]{1
 
 const sessionRecordSchema = z.object({
   kind: z.enum(["quiz", "scenario"]),
-  version: z.string().max(40),
+  // Match the account database limit; accept older long revision strings so unrelated progress survives hydration.
+  version: z.string().max(2000),
   position: z.number().int().min(0),
   score: z.number(),
   finished: z.boolean(),

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import type { LearningScenario } from "@/lib/working/model";
+import { scenarioVersion, canResumeScenario, sequentialHistory } from "@icu/schemas/scenario-session";
 import { useLearning } from "./progress";
 import { EquipmentVisual } from "./equipment-visual";
 import caseVisuals from "../../../content/working-case-visuals.json";
@@ -14,13 +15,13 @@ const wideComplexTrace = ecgExercise(caseVisuals.rhythm.exerciseKey)?.trace;
 const equipmentByCase: Readonly<Record<string, string>> = caseVisuals.equipment;
 
 export function ScenarioPlayer({scenario,locale,moduleKey,title}:{scenario:LearningScenario;locale:string;moduleKey:string;title:string}) {
- const version=JSON.stringify(scenario.steps.map(s=>({p:s.position,n:s.options.length})));
+ const version=scenarioVersion(scenario);
  const href=`/working/${moduleKey}`;
  const {saveSession,discardSession,sessions}=useLearning();
  const saved=sessions.find(s=>s.key===moduleKey&&s.kind==="scenario"&&!s.finished);
  const staleRef=useRef(false);
- const validSaved=saved&&saved.version===version?saved:undefined;
- useEffect(()=>{if(saved&&saved.version!==version&&!staleRef.current){staleRef.current=true;discardSession(moduleKey);}},[saved,version,moduleKey,discardSession]);
+ const validSaved=saved&&canResumeScenario(scenario,saved)?saved:undefined;
+ useEffect(()=>{if(saved&&!validSaved&&!staleRef.current){staleRef.current=true;discardSession(moduleKey);}},[saved,validSaved,moduleKey,discardSession]);
  // `validSaved` is reactive (it has to be, to pick up the guest value once useSyncExternalStore settles
  // past its hydration-safe default). But this scenario's own saves also flow back into it mid-play, so
  // the resume prompt must only show before the learner has done anything *in this mount* - tracked by
@@ -43,7 +44,7 @@ export function ScenarioPlayer({scenario,locale,moduleKey,title}:{scenario:Learn
    <h2 className="text-lg font-bold">{ar?"لديك سيناريو غير مكتمل":"You have an unfinished scenario"}</h2>
    <p className="text-muted-foreground">{ar?`توقفت عند الخطوة ${scenario.steps.findIndex(s=>s.position===validSaved.position)+1} من ${scenario.steps.length}.`:`You stopped at step ${scenario.steps.findIndex(s=>s.position===validSaved.position)+1} of ${scenario.steps.length}.`}</p>
    <div className="flex flex-wrap gap-3">
-    <button onClick={()=>{interacted.current=true;setPosition(validSaved.position);setPoints(validSaved.score);}} className="min-h-11 rounded-xl bg-primary px-5 font-semibold text-primary-foreground">{ar?"استمر":"Resume"}</button>
+    <button onClick={()=>{interacted.current=true;setPosition(validSaved.position);setPoints(validSaved.score);setVisited(sequentialHistory(scenario,validSaved.position)??[]);}} className="min-h-11 rounded-xl bg-primary px-5 font-semibold text-primary-foreground">{ar?"استمر":"Resume"}</button>
     <button onClick={()=>{if(confirm(ar?"سيتم حذف تقدمك غير المكتمل في هذا السيناريو. متابعة؟":"This will discard your unfinished progress in this scenario. Continue?")){interacted.current=true;discardSession(moduleKey);}}} className="min-h-11 rounded-xl border border-border px-5">{ar?"البدء من جديد":"Start over"}</button>
    </div>
   </section>;

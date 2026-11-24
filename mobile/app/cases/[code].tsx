@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { scenarioVersion, canResumeScenario, sequentialHistory } from "@icu/schemas/scenario-session";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 import { scoreTenths } from "../../src/core/engines";
@@ -62,19 +63,27 @@ export default function CaseScreen() {
           const option = choice === null ? undefined : step.options[choice];
           const supplemental = remainingObservations(step.observations, { numeric: showNumericMonitor, neuro: showNeuro, perfusion: showPerfusion });
           const sharedCheckpoint = option?.next != null && step.options.every(o => o.next === option.next);
-          const version = JSON.stringify(scenario.steps.map((s) => ({ p: s.position, n: s.options.length })));
+          const version = scenarioVersion(scenario);
 
-          if (existingSession && !resumed && !done && position === undefined && existingSession.version === version && !existingSession.finished) {
+          if (existingSession && !resumed && !done && position === undefined && canResumeScenario(scenario, existingSession)) {
             const stepIndex = scenario.steps.findIndex((s) => s.position === existingSession.position);
             return (
               <Card>
                 <H2>{t("cases.resume")}</H2>
                 <P muted>{t("cases.resumeBody")}</P>
                 <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
-                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); setVisited(existingSession.visited ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !existingSession.visited?.length); }} />
+                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); const prior = sequentialHistory(scenario, existingSession.position) ?? existingSession.visited; setVisited(prior ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !prior?.length); }} />
                 <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
               </Card>
             );
+          }
+
+          if (existingSession && !resumed && !done && position === undefined && !existingSession.finished && !canResumeScenario(scenario, existingSession)) {
+            return <Card>
+              <H2>{locale === "ar" ? "تغير محتوى الحالة" : "Saved scenario cannot be resumed"}</H2>
+              <P>{locale === "ar" ? "تغير المحتوى أو أن التقدم المحفوظ غير صالح. ابدأ الحالة من جديد." : "The scenario has changed or the saved progress is invalid. Start again to use the current content."}</P>
+              <Button label={t("cases.restart")} onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
+            </Card>;
           }
 
           if (done) {

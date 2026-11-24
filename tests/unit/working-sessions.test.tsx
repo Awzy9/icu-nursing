@@ -73,6 +73,15 @@ describe("scenario save and resume (guest)",()=>{
   fireEvent.click(screen.getByRole("button",{name:"Resume"}));
   expect(screen.getByText("Situation two")).toBeVisible();
  });
+ it("does not resume an old score after the options change but their count stays the same",()=>{
+  render(<ScenarioPlayer scenario={scenario} locale="en" moduleKey="SC-EXAMPLE" title="Example scenario"/>);
+  fireEvent.click(screen.getByRole("radio",{name:"Go to two"}));fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));fireEvent.click(screen.getByRole("button",{name:"Continue"}));
+  cleanup();
+  const updated={...scenario,steps:scenario.steps.map(s=>({...s,options:s.options.map(o=>({...o,feedback:"Revised guidance"}))}))};
+  render(<ScenarioPlayer scenario={updated} locale="en" moduleKey="SC-EXAMPLE" title="Example scenario"/>);
+  expect(screen.queryByText("You have an unfinished scenario")).not.toBeInTheDocument();
+  expect(screen.getByText("Situation one")).toBeVisible();
+ });
  it("has nothing to resume once the scenario finishes",()=>{
   render(<ScenarioPlayer scenario={scenario} locale="en" moduleKey="SC-EXAMPLE" title="Example scenario"/>);
   fireEvent.click(screen.getByRole("radio",{name:"Go to two"}));fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));fireEvent.click(screen.getByRole("button",{name:"Continue"}));
