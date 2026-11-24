@@ -1110,6 +1110,25 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "e348d6f4877dec21",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESC-AHF-EMERGENCY-2026",
+     "S-ESC-CS-2026",
+     "S-ESC-HF-2026",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-OPENRN-HA",
+     "S-SCAI-SHOCK-2026",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D02-T14": [
@@ -1572,6 +1591,20 @@
     "gaps": 0,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "1044b14bb9d0c831",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG148",
+     "S-RRT-MULTIDISC-2026",
+     "S-SSC-2026",
+     "S-UKKA-AKI-DETECTION"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D06-T07": [
@@ -1826,6 +1859,23 @@
     ],
     "gaps": 0,
     "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "6052574dc7d148da",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ADA-HOSP-2026",
+     "S-ASPEN",
+     "S-ESICM-EEN-2017",
+     "S-ESPEN-ICU-2023",
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
     "issues": 0
    }
   ],
@@ -4656,6 +4706,24 @@
     ],
     "gaps": 0,
     "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "3733f0786a2a3136",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ACC-OAC-BLEED-2020",
+     "S-ARUP-ANTICOAG",
+     "S-ARUP-DIC",
+     "S-BSH-COAG",
+     "S-BSH-HIT-2023",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-PHARM-CH",
+     "S-UHS-COAG"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
     "issues": 0
    }
   ],
