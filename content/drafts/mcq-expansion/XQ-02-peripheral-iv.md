@@ -25,13 +25,13 @@ D. Palpate through the dressing for tenderness and leave the gauze in place unle
 **Why not C:** Palpation through the dressing is the recommended way to assess tenderness.
 **Trace:** S-CDC-BSI-2011, S-WHO-PIVC-2024 — Daily assessment, opaque dressing precautions and site inspection regardless of replacement schedule.
 
-**Q2 (judgment).** The skin over a peripheral catheter is red and warm, with a tender venous cord. The assessment suggests phlebitis, not suspected vesicant extravasation. What is the right response?
+**Q2 (judgment).** During a peripheral infusion assessment, the nurse finds warmth, erythema and a tender venous cord. The assessment suggests phlebitis rather than suspected vesicant extravasation. Which response addresses the complication while preserving access for necessary therapy?
 A. Flush the catheter gently and continue the infusion, then recheck the site at the next routine round.
 B. Apply a warm compress over the dressing and keep the catheter, because the symptoms may settle.
 C. Stop the infusion, remove or arrange removal of the catheter per policy, and report the findings.
 D. Cover the area with a second dressing to protect the vein and record the finding in the notes.
 **Answer: C.**
-**Why correct:** CDC advises removing a peripheral catheter if the patient develops phlebitis (warmth, tenderness, erythema or a palpable venous cord), infection or a malfunctioning catheter. If extravasation is suspected instead, stop delivery and follow the product-specific injury pathway before removing access, since it may be needed for trained assessment or treatment.
+**Why correct:** CDC advises removing a peripheral catheter if the patient develops phlebitis (warmth, tenderness, erythema or a palpable venous cord), infection or a malfunctioning catheter. If extravasation is suspected instead, stop delivery and follow the product-specific injury pathway before removing access, since it may be needed for trained assessment or treatment. Coordinate suitable alternative access for essential therapy; do not continue delivery through the affected catheter.
 **Why not A:** Continuing to use a catheter with signs of phlebitis risks harm and infection.
 **Why not B:** Comfort measures do not replace removal when phlebitis is present.
 **Why not D:** Covering the site does not address the problem and delays removal.

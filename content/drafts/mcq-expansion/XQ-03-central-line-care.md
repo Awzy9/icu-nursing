@@ -73,7 +73,7 @@ D. Replace the label and the tape so the dressing stays in place and the date lo
 **Why not D:** Relabelling does not renew a dressing that has passed its interval.
 **Trace:** S-CDC-BSI-2011 — Transparent dressings on short-term CVC sites replaced at least every 7 days (IB); follow unit interval.
 
-**Q6 (scope).** On the ward round it looks as if a patient's central line has not been used for two days and he is well. What is the best nursing contribution?
+**Q6 (scope).** During a multidisciplinary round, a clinically stable patient has a central catheter that has not been used for two days. The nurse is reviewing whether there is still a clinical indication for the line. What is the best contribution to the decision?
 A. Leave it in place as a precaution, because a line that is already in carries no extra risk.
 B. Ask the team whether the line is still needed.
 C. Remove it yourself immediately, since you are the person who looks after the line every day.
@@ -82,7 +82,7 @@ D. Change the dressing and flush the line, because this shows the line is workin
 **Why correct:** Review ongoing need and arrange removal when the line is no longer essential. WHO 2026 recommends daily assessment of the site and suggests against routine central catheter replacement without a clinical indication. Removal is performed by a credentialed clinician under the authorised local pathway.
 **Why not A:** Every line day carries infection risk.
 **Why not C:** Removal needs an order or an approved protocol.
-**Why not D:** Maintenance does not answer whether the line is needed.
+**Why not D:** A patent catheter and an intact dressing do not establish an ongoing indication. Maintenance is required while the catheter remains necessary, but the team should separately assess whether removal is appropriate.
 **Trace:** S-CDC-BSI-2011, S-SHEA-CLABSI-2022, S-WHO-CVC-2026 — Review necessity, daily site assessment and no routine CVC replacement without clinical indication.
 
 ## 18. References

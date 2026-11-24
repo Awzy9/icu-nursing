@@ -112,13 +112,13 @@ D. Stop suctioning, restore oxygenation and ventilation under protocol, and call
 **Why not B:** Saline is not recommended and can worsen oxygenation.
 **Why not C:** Waiting prolongs hypoxaemia.
 
-**Q2 (application).** A nurse is caring for an intubated adult patient. Which finding best indicates a need for suctioning?
+**Q2 (application).** An intubated adult is due for routine airway assessment. The nurse must decide whether suctioning is indicated rather than performing another pass based on the clock. Which finding best supports the need for suctioning?
 A. Audible secretions in the airway and a sawtooth flow waveform on the ventilator.
 B. The clock shows that it is two hours since the last suction was done.
 C. The patient is awake and tolerating the tube without coughing or any visible secretions.
 D. The family asks that the tube be cleaned so the patient looks tidier.
 **Answer: A.**
-**Why correct:** AARC lists breath sounds, visible secretions and sawtooth waveform as indicators.
+**Why correct:** AARC lists breath sounds, visible secretions and a sawtooth waveform as indicators. Interpret the waveform with the bedside assessment, including airway patency and the patient's tolerance. Perform suctioning only within competency and the approved procedure; assess the response and escalate if ventilation does not improve.
 **Why not B:** Elapsed time alone does not establish an indication in an adult; AARC lists clinical indicators. The explicit as-needed versus scheduled recommendation in the abstract is for neonatal and pediatric patients.
 **Why not C:** Absence of cough does not signal need.
 **Why not D:** A request is not a clinical indication.

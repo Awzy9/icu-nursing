@@ -141,13 +141,13 @@ D. Call for help on the basis of clinical concern using structured communication
 **Why not B:** A four-hour delay risks deterioration.
 **Why not C:** Staff should be able to call without requiring agreement.
 
-**Q4 (monitoring).** A comatose patient has just regained circulation after a cardiac arrest. Which finding should the nurse report to the team first?
+**Q4 (monitoring).** A comatose adult is being monitored in the ICU two hours after return of spontaneous circulation (ROSC). Which new finding requires the most urgent assessment and escalation?
 A. An SpO₂ of 97% on the ordered oxygen, with a good pleth trace and no change in the last hour.
 B. A MAP of 52 mmHg falling over ten minutes, when the team has ordered a target above 60–65 mmHg.
 C. A temperature of 36.8 °C measured with the bladder probe, unchanged from the previous hour.
 D. A capillary glucose that is within the range set by the unit protocol and has been stable since ROSC.
 **Answer: B.**
-**Why correct:** ERC–ESICM 2025 advises avoiding hypotension after ROSC and targeting MAP above approximately 60–65 mmHg, while applying the individual target prescribed by the resuscitation team. The falling MAP of 52 mmHg here requires urgent assessment and escalation.
+**Why correct:** ERC–ESICM 2025 advises avoiding hypotension after ROSC and targeting MAP above approximately 60–65 mmHg, while applying the individual target prescribed by the resuscitation team. The falling MAP of 52 mmHg here requires urgent assessment and escalation. Assess circulation and perfusion, verify the pressure measurement in parallel and review the prescribed haemodynamic support with the team; do not wait for the next routine observation.
 **Why not A:** 97% lies within the advised range of 94–98% with a reliable trace after oxygenation can be measured accurately; low-flow states and skin pigmentation can affect reliability. The falling arterial pressure is the immediate concern.
 **Why not C:** Fever avoidance targets 37.5 °C or less; 36.8 °C is acceptable.
 **Why not D:** A glucose within the protocol range, stable since ROSC, needs routine monitoring only.

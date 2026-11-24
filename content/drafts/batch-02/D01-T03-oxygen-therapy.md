@@ -155,15 +155,15 @@ D. Remove the mask, keep it and the oxygen at least 1 m from the chest, and leav
 **Why not B:** Oxygen should be directed away from the chest.
 **Why not C:** Switching off monitoring is not advised and is not a fire precaution.
 
-**Q6 (prioritization).** Which patient should the nurse see first?
+**Q6 (prioritization).** At the start of an ICU shift, four patients receiving or recently weaned from respiratory support need assessment. Which patient requires immediate evaluation for possible respiratory failure?
 A. A patient on a stable HFNC with an SpO₂ of 96% who is comfortable and eating.
 B. A patient with a mask-skin mark who is otherwise stable and asks for a softer strap or a different mask size.
 C. A patient just extubated, now on HFNC, with a respiratory rate rising to 32 and SpO₂ falling.
 D. A patient on room air with an SpO₂ of 97% awaiting a scan.
 **Answer: C.**
-**Why correct:** Early deterioration after extubation needs immediate assessment and escalation.
+**Why correct:** A rising respiratory rate with falling oxygen saturation after extubation suggests possible failure of respiratory support. Assess airway patency, breathing effort and circulation immediately, call for urgent help and follow the emergency support pathway. HFNC use does not exclude the need for escalation or further ventilatory support.
 **Why not A:** This patient is stable and comfortable on HFNC.
-**Why not B:** A skin mark needs attention but is not time-critical.
+**Why not B:** A device-related skin mark needs prompt skin assessment and safe pressure relief; the vignette does not describe the acute respiratory deterioration seen in option C.
 **Why not D:** This patient is stable on room air.
 
 ## 18. References
