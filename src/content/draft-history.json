@@ -14149,6 +14149,26 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "45e238f9ef314126",
+    "recorded": "2026-11-25",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-NICE-NG217",
+     "S-ACNS-CCEEG-2015",
+     "S-AHA-FA-SEIZURE-2024",
+     "S-AHRQ-TS",
+     "S-CDC-SEIZURE-2024",
+     "S-ENLS-SE-V6",
+     "S-ICS-SE-2025",
+     "S-JBDS-HYPO-2023",
+     "S-NSW-ECAT-SEIZURES"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-09": [
