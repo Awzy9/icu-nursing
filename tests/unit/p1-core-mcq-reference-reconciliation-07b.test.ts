@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { validateDraft } from "@/lib/draft-validator";
-const cases = [{"path":"content/drafts/batch-07/D04-T09-crrt-principles-partial.md","needle":"regional citrate alone is not adequate","keys":"BDACCB"},{"path":"content/drafts/batch-07/D05-T01-sedatives-partial.md","needle":"Dexmedetomidine may cause clinically important bradycardia","keys":"ADACBD"},{"path":"content/drafts/batch-07/D05-T03-vasopressor-pharmacology-partial.md","needle":"Continuous cardiac output measurement is not required in every patient","keys":"ACDBCA"}];
+const cases = [{"path":"content/drafts/batch-07/D04-T09-crrt-principles-partial.md","needle":"does not substitute for systemic treatment of acute HIT","keys":"BDACCB"},{"path":"content/drafts/batch-07/D05-T01-sedatives-partial.md","needle":"Dexmedetomidine may cause clinically important bradycardia","keys":"ADACBD"},{"path":"content/drafts/batch-07/D05-T03-vasopressor-pharmacology-partial.md","needle":"Continuous cardiac output measurement is not required in every patient","keys":"ACDBCA"}];
 describe("core topic MCQ reconciliation batch 07b", () => {
   for (const c of cases) it(c.path, () => {
     const d = readFileSync(c.path, "utf8");
