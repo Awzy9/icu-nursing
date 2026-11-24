@@ -25,13 +25,13 @@ D. Palpate through the dressing for tenderness and leave the gauze in place unle
 **Why not C:** Palpation through the dressing is the recommended way to assess tenderness.
 **Trace:** S-CDC-BSI-2011 — Evaluate site daily by palpation through dressing; do not remove gauze/opaque dressing without signs of infection (II).
 
-**Q2 (judgment).** The skin over a patient's peripheral catheter is red and warm, and a tender cord can be felt along the vein. What is the right response?
+**Q2 (judgment).** The skin over a peripheral catheter is red and warm, with a tender venous cord. The assessment suggests phlebitis, not suspected vesicant extravasation. What is the right response?
 A. Flush the catheter gently and continue the infusion, then recheck the site at the next routine round.
 B. Apply a warm compress over the dressing and keep the catheter, because the symptoms may settle.
 C. Stop the infusion, remove or arrange removal of the catheter per policy, and report the findings.
 D. Cover the area with a second dressing to protect the vein and record the finding in the notes.
 **Answer: C.**
-**Why correct:** CDC advises removing a peripheral catheter if the patient develops phlebitis (warmth, tenderness, erythema or a palpable venous cord), infection or a malfunctioning catheter.
+**Why correct:** CDC advises removing a peripheral catheter if the patient develops phlebitis (warmth, tenderness, erythema or a palpable venous cord), infection or a malfunctioning catheter. If extravasation is suspected instead, stop delivery and follow the product-specific injury pathway before removing access, since it may be needed for trained assessment or treatment.
 **Why not A:** Continuing to use a catheter with signs of phlebitis risks harm and infection.
 **Why not B:** Comfort measures do not replace removal when phlebitis is present.
 **Why not D:** Covering the site does not address the problem and delays removal.
@@ -67,9 +67,9 @@ B. Whether the same peripheral cannula can stay for the full ten days if the dre
 C. Whether a steel needle can be used, because it is quick to place and easy to remove.
 D. Whether a midline catheter or a PICC would suit better than repeated short peripheral catheters.
 **Answer: D.**
-**Why correct:** CDC advises a midline catheter or PICC instead of a short peripheral catheter when therapy will likely exceed six days.
+**Why correct:** CDC's 2011 recommendation supports considering a midline or PICC for longer IV treatment. Select access with the vascular-access team according to the infusate, vessel health, patient risks and intended duration, rather than duration alone.
 **Why not A:** Frequent resiting is not what the guideline recommends for longer therapy.
-**Why not B:** The guideline suggests peripheral catheters need not stay beyond the usual replacement interval.
+**Why not B:** An intact dressing alone does not establish ongoing suitability; reassess necessity and site condition under the local policy.
 **Why not C:** Steel needles are not recommended where tissue necrosis could follow extravasation.
 **Trace:** S-CDC-BSI-2011 — Midline or PICC instead of short peripheral catheter when IV therapy likely to exceed six days (II).
 

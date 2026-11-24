@@ -14,14 +14,14 @@ independently_written_note: "Original wording written for this platform; stems, 
 
 ## 17. MCQs
 **Q1 (judgment).** A ventilated patient has had an indwelling urinary catheter for three days to measure hourly output. He is now off sedation, stable and mobilising with physiotherapy, with no retention. What is the best nursing contribution on the morning round?
-A. Ask the prescriber whether the catheter is still needed.
+A. Review whether the catheter is still indicated and follow the authorised removal pathway.
 B. Leave the catheter in until discharge from the unit, because removing it would increase the nursing workload on the ward.
-C. Remove the catheter yourself without an order, because the patient is now mobilising and looks well.
+C. Remove the catheter solely because the patient is mobilising, without checking indications or an authorised pathway.
 D. Change the catheter and drainage bag for a new set to reduce the infection risk on day three.
 **Answer: A.**
-**Why correct:** The CDC guideline advises inserting catheters only for appropriate indications and leaving them only as long as needed; the nurse prompts the daily review and the prescriber decides.
+**Why correct:** The CDC guideline advises inserting catheters only for appropriate indications and leaving them only as long as needed; the nurse reviews necessity and removes the catheter if authorised by an approved nurse-led protocol, or seeks an order when required.
 **Why not B:** Convenience is not an indication, and prolonged catheter days raise infection risk.
-**Why not C:** Removal needs an order or an approved nurse-led protocol; the nurse's role is to raise the question.
+**Why not C:** Removal requires assessment of ongoing indications and an order or approved nurse-led protocol; mobility alone is insufficient.
 **Why not D:** Routine fixed-interval changes are not recommended; changes follow clinical indications.
 **Trace:** N-CDC-CAUTI-2009 — Appropriate indications, leave only as long as needed (IB); no routine fixed-interval changes (II).
 

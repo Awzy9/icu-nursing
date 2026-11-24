@@ -73,13 +73,13 @@ D. Connect it for patients who are breathless, to make drainage quicker and reli
 **Why not D:** Breathlessness does not remove the need for a prescription.
 **Trace:** N-BTS-PCS-2023 — Suction avoided soon after insertion; pressures prescribed/documented first.
 
-**Q6 (monitoring).** At the start of the shift the nurse finds that the patient's drain bottle has very little water in it. What is the correct nursing action?
+**Q6 (monitoring).** At the start of the shift the nurse finds that the patient's conventional underwater-seal drain bottle has a water level below the device's specified minimum. What is the correct nursing action?
 A. Ignore it, because the water level matters mainly while the patient is breathing out strongly.
 B. Top it up with any available sterile water without checking the system, as the level looks low.
 C. Raise the bottle above the patient so the little water left covers the tube end.
-D. Treat it as a system fault: the system needs enough water to cover the end of the tube.
+D. Assess the patient and system, report the fault and restore the specified seal level only under the device instructions and local protocol.
 **Answer: D.**
-**Why correct:** The BTS statement says the drain must have adequate water in the system to cover the end of the tube.
+**Why correct:** The BTS statement describes the need for adequate water to maintain the seal in a conventional underwater-seal system. The exact level and handling depend on the device; this does not apply to dry-seal or digital systems.
 **Why not A:** The water seal matters whenever the drain is in use.
 **Why not B:** Handling the system follows an aseptic procedure and local instruction.
 **Why not C:** Raising the bottle is unsafe; the bottle stays below the insertion site.

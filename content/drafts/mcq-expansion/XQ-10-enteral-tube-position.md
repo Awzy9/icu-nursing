@@ -28,7 +28,7 @@ D. Confirm the tube position before the feed, using aspiration and pH-graded pap
 **Q2 (judgment).** You cannot aspirate any fluid from a patient's nasogastric tube before the scheduled feed. What is the safest approach?
 A. Start the feed slowly and watch the patient closely for coughing, since the tube position was confirmed earlier in the admission.
 B. Flush a large volume of water to check that it goes in easily and then start the feed if there is no resistance.
-C. Do not feed; follow the failed-aspiration protocol and escalate until position is confirmed.
+C. Withhold feed, medicines and flushes; follow the failed-aspiration protocol and escalate until position is confirmed.
 D. Reposition the tube a few centimetres and begin feeding without any further check.
 **Answer: C.**
 **Why correct:** NICE says local protocols should address how to proceed when aspiration is not possible; the NHS alert stresses that using a misplaced tube can cause severe harm.
@@ -46,7 +46,7 @@ D. Repeat the test on every shift until a low pH is obtained, and feed in the me
 **Why correct:** NICE says local protocols should address how to proceed when the pH check is invalid because of gastric acid suppression.
 **Why not A:** A high pH may be due to acid suppression, not lung placement; the protocol guides the next step.
 **Why not C:** A high pH is not confirmation.
-**Why not D:** Feeding must wait for a valid confirmation.
+**Why not D:** Feed, medicines and flushes must wait until position is confirmed under the approved pathway.
 **Trace:** S-NICE-CG32 — Protocol for invalid pH due to gastric acid suppression.
 
 **Q4 (assessment).** During the daily care of a patient with a nasogastric tube, which checks of the tube does NICE list?
@@ -76,10 +76,10 @@ D. It is a Never Event in England, which is why checking placement before use is
 **Q6 (scope).** Who should insert and confirm the position of nasogastric tubes, according to NICE?
 A. Any staff member on the shift, because tube passing is a basic nursing task everyone has done.
 B. Only the on-call doctor, because nurses are not permitted to pass tubes under any circumstances.
-C. Staff with the relevant skills and training.
+C. Staff trained and authorised for the specific task, including separate competency for interpreting radiographic confirmation when required.
 D. The patient's relatives, after being shown once how to pass the tube.
 **Answer: C.**
-**Why correct:** NICE CG32 says nasogastric tubes should be inserted by staff with the relevant skills and training.
+**Why correct:** NICE CG32 requires relevant training for insertion. Insertion competence does not automatically establish competence to interpret a radiograph; use the authorised confirmation pathway and document the result.
 **Why not A:** NICE requires relevant skills and training.
 **Why not B:** NICE does not limit it to doctors; it requires trained staff.
 **Why not D:** Insertion is for trained staff.

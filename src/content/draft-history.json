@@ -1747,12 +1747,34 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "071f489c864a5466",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-CDC-CAUTI-2009"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-02": [
    {
     "hash": "dbd2c737eca6d180",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "26feee447b689694",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-CDC-BSI-2011"
@@ -1785,12 +1807,35 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "95b3960c90b713db",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-04": [
    {
     "hash": "cc6bd8766ab2ab52",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ICS-TRANSFER-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "c4dd7240c8228845",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-ICS-TRANSFER-2026"
@@ -1822,12 +1867,34 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "13526d8f17e0223a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-BTS-PCS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-06": [
    {
     "hash": "431736982b75764f",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ef37ae2bd906b368",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-HODGSON-2014"
@@ -1877,6 +1944,18 @@
    {
     "hash": "77f553e2d89b550b",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "281626938a7d7af5",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-AHS-CRRT-ALARM-2025",
@@ -1948,6 +2027,22 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "05d45c59d4b8c7e6",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-EPINEPHRINE",
+     "L-MILRINONE",
+     "L-NOREPINEPHRINE",
+     "L-VASOPRESSIN",
+     "S-ADRENALIN-IM-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-09": [
@@ -1995,12 +2090,39 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "1d17c8f4caba357b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "L-FENTANYL",
+     "L-MIDAZOLAM",
+     "L-MORPHINE",
+     "L-PROPOFOL"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-10": [
    {
     "hash": "544bd0d6baeb8da9",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "6d28b39cc31b58f2",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-NHSE-NGT-2016",
@@ -2047,6 +2169,22 @@
    {
     "hash": "4897e1068def0a3f",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BTS-PCS-2023",
+     "N-HODGSON-2014",
+     "N-ICS-TRANSFER-2026",
+     "S-CDC-BSI-2011",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "c6be808a47ec8036",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-AHS-CRRT-ALARM-2025",

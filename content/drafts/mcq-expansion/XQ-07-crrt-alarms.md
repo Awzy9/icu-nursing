@@ -21,8 +21,8 @@ D. Increase the blood flow rate as far as the machine allows to overcome the ala
 **Answer: C.**
 **Why correct:** The pathway says to check the patient, review and address the alarm on the screen before clearing it, and for access and return alarms to check the patient, clamps or kinks, and the dialysis catheter.
 **Why not A:** Override and disable buttons decrease alarm sensitivity and are not a fix.
-**Why not B:** Return and disconnection follow if the alarm cannot be managed, not as a first step.
-**Why not D:** The pathway says to adjust the blood flow rate, not to push it to the maximum.
+**Why not B:** For a stable patient, immediate disconnection without assessment is not the routine first step. If the circuit is unsafe or treatment cannot continue, follow the device and local emergency pathway; return blood only when safe.
+**Why not D:** Do not independently change the prescribed blood flow or override a safety limit. Any adjustment must follow an authorised prescription or protocol and the device-specific pathway.
 **Trace:** N-AHS-CRRT-ALARM-2025 — Check patient first; review alarm before clearing; access/return alarm checks.
 
 **Q2 (safety).** A colleague silences a recurring CRRT alarm using the disable function to 'keep the room quiet'. What is the concern?

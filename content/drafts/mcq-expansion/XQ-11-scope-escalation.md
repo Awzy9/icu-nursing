@@ -38,13 +38,13 @@ D. The pharmacist, who reviews the daily infusion chart.
 **Trace:** S-CDC-BSI-2011 — CDC: remove arterial catheters as soon as no longer required. Who removes the line is governed by local credentialling and protocol, not the CDC infection-prevention guideline.
 
 **Q3 (scope).** A CRRT prescription says one fluid-balance goal, but the patient seems wetter than planned. Who changes the prescription?
-A. The prescriber; the nurse reports the discrepancy and the delivered dose or balance.
+A. The authorised prescribing team reviews the goal; the nurse reports the discrepancy and follows any approved adjustment protocol.
 B. The nurse, who adjusts the goal on the screen to match what the machine is actually delivering.
 C. The machine, which adjusts itself automatically to correct any imbalance.
 D. The next shift, who will notice any change when they take over.
 **Answer: A.**
-**Why correct:** KDIGO recommends frequent assessment of delivered dose, and prescription decisions rest with the prescribing team; the nurse reports.
-**Why not B:** Changing the prescription is not a nursing decision.
+**Why correct:** KDIGO recommends frequent assessment of delivered dose, and prescription decisions rest with the authorised prescribing team. Nurses may implement adjustments explicitly permitted by local orders or approved protocols; they must not independently rewrite the treatment goal.
+**Why not B:** Changing the prescribed goal without authority is unsafe; authorised protocol-directed adjustments are distinct from rewriting the prescription.
 **Why not C:** The machine does not change the prescription.
 **Why not D:** Delaying the report delays correction.
 **Trace:** S-KDIGO-AKI-2012 — Frequent assessment of delivered dose; prescription by prescriber.

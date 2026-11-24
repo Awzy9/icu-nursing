@@ -43,7 +43,7 @@ B. It is acceptable for the same ward and the same day, because the emulsion sta
 C. Do not use it: the label says vials are not accessed more than once or used on more than one person, and unused product is discarded.
 D. It is acceptable if a new needle is used, since the needle is the main source of contamination.
 **Answer: C.**
-**Why correct:** The label states strict aseptic technique must be maintained, vials are never to be accessed more than once or used on more than one person, and unused drug product should be discarded.
+**Why correct:** The registered propofol product label requires single-patient use, strict asepsis and disposal of unused product. Follow the exact supplied formulation's instructions for handling and discard times; never reuse it for another patient.
 **Why not A:** The label does not allow reuse for another patient under any storage.
 **Why not B:** The label sets time limits and forbids use on more than one person.
 **Why not D:** A new needle does not remove the contamination risk of a reused vial.
@@ -62,14 +62,14 @@ D. Stop monitoring the heart rhythm to avoid false alarms while the patient is s
 **Trace:** L-DEXMEDETOMIDINE — Label: continuous monitoring; hypotension, bradycardia and sinus arrest.
 
 **Q5 (application).** An elderly, frail patient with chronic lung disease has just received a morphine dose. Which preparation does the label support?
-A. Close respiratory monitoring, and naloxone and resuscitation equipment immediately available.
+A. Close monitoring of ventilation, arousability and circulation, with naloxone and resuscitation equipment immediately available.
 B. Routine observations once a shift, because morphine is a very familiar drug on the unit.
 C. Keep the patient flat and covered so they sleep more soundly after the dose.
 D. Give a second sedative with it to prevent any restlessness after the pain has gone.
 **Answer: A.**
-**Why correct:** The label warns of life-threatening respiratory depression in patients with chronic pulmonary disease or the elderly, cachectic or debilitated and advises close monitoring, and has naloxone and resuscitative equipment immediately available where cardiovascular instability is a risk.
+**Why correct:** The label warns of life-threatening respiratory depression in patients with chronic pulmonary disease or the elderly, cachectic or debilitated and advises close monitoring. Assess ventilation, arousability and circulation; oxygen saturation alone does not establish adequate ventilation. Ensure access to naloxone and resuscitation equipment according to the emergency protocol.
 **Why not B:** Familiarity does not lower the risk in this patient.
-**Why not C:** Sleeping soundly is a warning sign, not a goal.
+**Why not C:** Unexpected deep sedation or difficulty rousing the patient may signal opioid toxicity and requires assessment.
 **Why not D:** Adding a CNS depressant raises the risk.
 **Trace:** L-MORPHINE — Label: close monitoring in chronic pulmonary disease/elderly/debilitated; naloxone and resuscitative equipment available.
 

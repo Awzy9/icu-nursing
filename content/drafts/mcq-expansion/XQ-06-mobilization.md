@@ -65,9 +65,9 @@ D. Rising doses are irrelevant as long as the blood pressure reading on the moni
 A. They do not meet the criteria, because the FiO2 must be at room air before any mobilization.
 B. They meet the criteria only for in-bed exercises, never for sitting out of bed.
 C. They are irrelevant, as the consensus gives no respiratory values for safe mobilization.
-D. They meet the criteria described as safe for in- and out-of-bed mobilization.
+D. They meet the respiratory screening criteria for considering in- or out-of-bed mobilization.
 **Answer: D.**
-**Why correct:** The consensus considered FiO2 below 0.6, saturation above 90% and respiratory rate below 30 breaths per minute safe criteria for in- and out-of-bed mobilization if there are no other contraindications.
+**Why correct:** The consensus considered FiO2 below 0.6, saturation above 90% and respiratory rate below 30 breaths per minute respiratory screening criteria for considering mobilization. These values are from the 2014 consensus and do not establish safety on their own; the team must assess cardiovascular, neurological and other risks and clinical stability.
 **Why not A:** The criterion is FiO2 below 0.6, not room air.
 **Why not B:** The criteria apply to in- and out-of-bed mobilization.
 **Why not C:** The consensus gives those values.

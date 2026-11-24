@@ -27,11 +27,11 @@ D. Tape the lifted edge with clean tape so the original dressing stays in place 
 
 **Q2 (safety).** A colleague is about to give an intermittent injection through the needleless connector of a central line. What must happen first?
 A. Nothing extra is needed because the connector was disinfected at the start of the shift.
-B. The connector should be disinfected with an appropriate antiseptic before the access.
+B. Disinfect the connector using the approved antiseptic technique and product contact and drying instructions before access.
 C. Wipe the connector only if it looks visibly dirty, since clean connectors carry little risk.
 D. Flush the connector with sterile water first, which removes any organisms from the outside.
 **Answer: B.**
-**Why correct:** CDC (Category IA) and the SHEA 2022 essential practices call for disinfecting hubs, needleless connectors and ports before every access.
+**Why correct:** CDC (Category IA) and the SHEA 2022 essential practices call for disinfecting hubs, needleless connectors and ports before every access. Follow the antiseptic manufacturer's contact and drying instructions and local policy.
 **Why not A:** Disinfection is required before every access.
 **Why not C:** The practice applies every time, not only when the connector looks dirty.
 **Why not D:** Flushing does not disinfect the outside surface of the connector.
@@ -79,7 +79,7 @@ B. Ask the team whether the line is still needed.
 C. Remove it yourself immediately, since you are the person who looks after the line every day.
 D. Change the dressing and flush the line, because this shows the line is working and may stay.
 **Answer: B.**
-**Why correct:** CDC and SHEA both emphasise reviewing line necessity and removing lines that are no longer needed; removal itself is a prescriber decision.
+**Why correct:** CDC and SHEA both emphasise reviewing line necessity and removing lines that are no longer needed; removal is performed by a credentialed clinician following the required order or approved local protocol.
 **Why not A:** Every line day carries infection risk.
 **Why not C:** Removal needs an order or an approved protocol.
 **Why not D:** Maintenance does not answer whether the line is needed.

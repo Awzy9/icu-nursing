@@ -13,13 +13,13 @@ independently_written_note: "Original wording written for this platform; stems, 
 > DRAFT – NOT clinically reviewed. AI-generated. Unpublished; never imported into the question bank.
 
 ## 17. MCQs
-**Q1 (judgment).** A patient with low blood pressure and rising oxygen needs is booked for a CT scan and the transport assistant has arrived. What does the transfer guidance support?
+**Q1 (judgment).** A patient with low blood pressure and rising oxygen needs is booked for a CT scan that is not immediately life-saving, and the transport assistant has arrived. What does the transfer guidance support?
 A. Leave immediately, since the scan will give the team the diagnosis that guides all further treatment.
-B. Resuscitate and stabilise the patient first.
+B. Request immediate clinical review and appropriate resuscitation and stabilisation before transfer.
 C. Send the patient with the transport assistant and ask the radiographer to watch the monitor in the scanner room.
 D. Wait until the patient's blood pressure is back in the normal range, even if that delays an urgent life-saving scan.
 **Answer: B.**
-**Why correct:** ICS recommendation 58 says patients should be appropriately resuscitated and stabilised before transfer to reduce the physiological disturbance of movement.
+**Why correct:** ICS recommendation 58 says patients should be appropriately resuscitated and stabilised before transfer to reduce the physiological disturbance of movement. When a transfer is time-critical, the responsible senior team must balance delay against risk and plan ongoing resuscitation, monitoring and appropriate escorts.
 **Why not A:** Time-critical transfers exist, but stabilisation is the default expectation.
 **Why not C:** Transfers need trained escorts and continuous monitoring.
 **Why not D:** The guidance does not ask for normal values; it asks for appropriate stabilisation and warns against delaying time-critical transfers.
@@ -43,7 +43,7 @@ B. Asking the transport assistant to fetch another syringe if the infusion runs 
 C. Stopping the infusion for the scan, since the patient will be lying still and should not need it.
 D. Making sure there is enough medication for at least twice the planned duration of the transfer.
 **Answer: D.**
-**Why correct:** ICS recommendation 65 says sufficient bolus and infusion medications should be available for at least twice the duration of the planned transfer.
+**Why correct:** ICS recommendation 65 says sufficient bolus and infusion medications should be available for at least twice the duration of the planned transfer. This is the cited UK ICS 2026 recommendation; the team also follows its local risk assessment and contingency plan.
 **Why not A:** Changes during transfer are riskier than planning ahead.
 **Why not B:** A transport assistant cannot prepare or give critical infusions.
 **Why not C:** Stopping a critical infusion without a plan risks deterioration.
