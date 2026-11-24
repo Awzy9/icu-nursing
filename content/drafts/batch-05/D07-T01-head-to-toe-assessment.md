@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Skills 2e, Appendix C – Head-to-Toe Assessment Checklist (entry-level general inpatient checklist; read in full 2026-11-14)", "International pressure-injury guide 4th ed. Quick Reference Guide 2026 – skin assessment timing (see D07-T04)", "SCCM PADIS 2018 official recommendation page – pain assessment statements (see D07-T03)"]
-sources: [S-OPENRN-NSK-APPC, S-INTL-PI-2026, S-SCCM-PADIS, S-AHA-INHOSP-STROKE-2022, S-SCCM-OLDER-2026]
+sources: [S-OPENRN-NSK-APPC, S-INTL-PI-2026, S-SCCM-PADIS, S-AHA-INHOSP-STROKE-2022, S-SCCM-OLDER-2026, S-RCUK-ABCDE-ADULT]
 independently_written_note: "Original wording based on the Open RN checklist (CC BY 4.0; attribution and change notice required if adapted). The checklist is written for entry-level nurses on general inpatient units; it is NOT an ICU assessment standard. ICU-specific elements (devices, ventilator, infusion pumps, haemodynamic and neurological monitoring) are covered elsewhere in this curriculum and are cross-referenced, not invented here. No ICU head-to-toe guideline was found or read."
 ---
 # Systematic head-to-toe assessment and documentation
@@ -55,6 +55,8 @@ The 2026 SCCM guideline covers adults aged 65 years and older and conditionally 
 Document baseline, current findings, the information source and uncertainty separately. Communicate new functional or cognitive decline, swallowing or nutrition concerns, medication-related symptoms and rehabilitation needs to the interdisciplinary team. Use accessible communication and involve the patient in goal-setting. Do not infer a treatment limitation from age or a frailty score.
 
 In older adults with vasodilatory shock, the 2026 geriatric SCCM panel did not endorse one of the compared lower or usual MAP strategies because evidence was very uncertain. This is not a blanket blood-pressure target or an instruction to override a sepsis-specific recommendation. Follow the individualized prescribed target and escalate evidence of impaired perfusion. The panel also did not establish whether specialized post-ICU follow-up improves outcomes; arrange follow-up according to individual needs and local services.
+
+**Primary assessment and reassessment before completing a routine checklist (Resuscitation Council UK ABCDE).** Establish the patient's current airway, breathing, circulation and responsiveness first. If a life-threatening problem is identified, activate urgent help and address it within the authorized emergency pathway before proceeding with routine examination. Reassess after interventions and report whether the patient improved, remained unchanged or deteriorated. Resume the remaining head-to-toe examination when appropriate, documenting any deferred elements and the plan to complete them. A routine assessment schedule must not delay response to an acute change.
 
 ## 8. Monitoring parameters
 Frequency of full and focused assessments follows unit policy and patient condition (the checklist is for a routine daily assessment). The pressure-injury guide advises a comprehensive head-to-toe skin and tissue assessment soon after admission or transfer, as part of every risk assessment, periodically, when the condition worsens, at care transitions and before discharge, and inspection of visible bony areas at each repositioning.
@@ -174,6 +176,8 @@ D. Move the patient's belongings away from the bedside to clear space, including
 - AHA in-hospital stroke scientific statement summary (2022). https://professional.heart.org/en/science-news/identifying-best-practices-to-improve-evaluation-and-management-of-in-hospital-stroke/top-things-to-know (selected public recommendations, accessed 2026-11-24)
 
 - Ferrante LE et al. SCCM Guidelines on Caring for Older Adults in the ICU (2026). https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-guidelines-on-caring-for-older-adults-in-the-icu (official recommendation page and published article introduction checked 2026-11-24; complete evidence appraisal and commercial rights outstanding).
+
+- Resuscitation Council UK. The ABCDE Approach. https://www.resus.org.uk/library/abcde-approach (selected HTML statements checked 2026-11-24; cite only; rights and independent clinical review pending).
 
 ## 19. Local protocol note
 Order, frequency, techniques, device checks, fall-risk tools and escalation triggers follow the unit's policies and specialty guidance.
