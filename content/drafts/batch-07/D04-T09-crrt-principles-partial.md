@@ -111,16 +111,16 @@ D. Paediatric patients, because CRRT is not used in adults who have acute kidney
 **Why not C:** Urine output alone is not the criterion.
 **Why not D:** The guideline addresses adults with acute kidney injury.
 
-**Q2 (safety).** A patient receiving heparin during CRRT develops a rapid platelet-count fall, and the treating team considers heparin-induced thrombocytopenia (HIT) likely. What does KDIGO 2012 recommend?
-A. Continue heparin at a higher rate to keep the circuit open while the cause of the fall is investigated.
-B. Heparin may continue in the circuit itself but must be stopped in the flushes and locks.
-C. No change is needed because HIT does not occur during renal replacement therapy in an ICU patient.
-D. All heparin must be stopped, and a direct thrombin or Factor Xa inhibitor is recommended instead.
+**Q2 (safety).** A patient receiving CRRT has a falling platelet count. The treating team assesses acute heparin-induced thrombocytopenia (HIT) as likely. The circuit and catheter locks contain heparin. Which plan should the nurse urgently coordinate with the team?
+A. Continue circuit heparin until laboratory confirmation, but omit the next heparin-containing catheter lock.
+B. Replace the circuit anticoagulant while retaining heparin-containing locks and flushes to maintain vascular access.
+C. Ask for regional citrate alone as treatment for acute HIT because it can reduce clotting within the dialysis circuit.
+D. Escalate cessation of all heparin exposures and coordinate specialist-directed alternative anticoagulation.
 **Answer: D.**
-**Why correct:** KDIGO 2012 recommendation 5.3.4 (1A) advises stopping all heparin in HIT and using alternative anticoagulation for renal replacement therapy. ASH 2018 specifically favors argatroban, danaparoid or bivalirudin for acute HIT requiring dialysis circuit anticoagulation (conditional, very low certainty); selection depends on organ function, availability and specialist review. Acute HIT requires systemic anticoagulation: regional citrate alone is not adequate. Escalate likely HIT urgently and review all heparin exposures, including flushes and locks; a platelet fall alone is not diagnostic.
-**Why not A:** Heparin worsens HIT, so continuing or increasing it would harm the patient.
-**Why not B:** The statement is that all heparin must be stopped, not part of it.
-**Why not C:** HIT can occur with heparin exposure in RRT.
+**Why correct:** KDIGO 2012 recommends stopping heparin in HIT. ASH 2018 distinguishes systemic anticoagulation for acute HIT from regional circuit anticoagulation; its dialysis-specific recommendation favors selected non-heparin agents, with very low certainty. The specialist team selects treatment based on organ function and availability. A platelet fall alone is not diagnostic.
+**Why not A:** When the team considers acute HIT likely, awaiting laboratory confirmation while continuing heparin can expose the patient to further thrombotic risk.
+**Why not B:** Locks and flushes can also expose the patient to heparin; the team must address all sources.
+**Why not C:** Regional citrate acts within the circuit and does not substitute for systemic treatment of acute HIT.
 
 **Q3 (application).** A new right internal jugular dialysis catheter has been inserted and the team plans CRRT. According to KDIGO **2012** recommendation 5.4.4 (rather than a universal protocol for every modern placement technique), what imaging does that guideline recommend before first use?
 A. A chest radiograph promptly after placement and before first use.

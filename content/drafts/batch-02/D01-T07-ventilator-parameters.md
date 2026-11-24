@@ -156,16 +156,16 @@ D. Increase FiO₂ at the ventilator and wait to see whether the saturation reco
 **Why not C:** Turning alone is unsafe and may dislodge the tube further.
 **Why not D:** Emergency oxygen or ventilation support may be appropriate under protocol, but waiting for a saturation response before calling for airway help is unsafe; increased oxygen does not correct tube displacement.
 
-**Q6 (monitoring).** Which finding on the ventilator display most clearly requires urgent escalation?
-A. A respiratory rate that is within the set range and a stable SpO₂ with matching exhaled volumes, unchanged since the last check.
-B. A plateau pressure that is stable and unchanged from yesterday.
-C. A rise in peak pressure with falling exhaled volume and desaturation in a patient who was stable an hour ago.
-D. A FiO₂ that has been gradually lowered by the team during the day as the patient improved.
+**Q6 (monitoring).** During a ventilator check, a nurse reviews serial pressure, exhaled volume and oxygenation measurements. Which pattern requires the most urgent assessment and escalation?
+A. Unchanged peak pressure and exhaled volume with oxygen saturation remaining within the prescribed range.
+B. A transient pressure reading returning to baseline without a change in clinical assessment.
+C. Rising peak pressure, falling exhaled volume and new desaturation since the last assessment.
+D. A gradual reduction in oxygen support by the team with stable ventilation and oxygenation measurements.
 **Answer: C.**
-**Why correct:** The combination suggests obstruction, a new complication or deterioration needing assessment.
-**Why not A:** These values are stable and consistent.
-**Why not B:** A stable value is not alarming.
-**Why not D:** A gradual weaning of FiO₂ by the team is expected as the patient improves.
+**Why correct:** Deteriorating pressure, delivered ventilation and oxygenation raise concern for an airway, circuit or patient problem. Assess the patient immediately and summon help if unstable. Compare the pressure trend with plateau pressure and patient effort when appropriately assessed by trained staff; a single peak pressure does not establish the cause.
+**Why not A:** Stable measurements do not show the same new deterioration, although routine assessment remains necessary.
+**Why not B:** A transient reading warrants assessment but lacks the sustained multi-parameter decline in option C.
+**Why not D:** Stable findings during authorised reduction in support are not the same as unexpected deterioration.
 
 ## 18. References
 - Goodfellow LT, Miller AG, Varekojis SM, et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054. https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)

@@ -479,6 +479,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "5ec1acd5cd4822de",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ESICM-ARDS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T11": [
@@ -1906,6 +1918,18 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "c81dc905952ff66d",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D08-T03": [
@@ -2418,6 +2442,20 @@
    },
    {
     "hash": "a72ebb55f1e85107",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-ASH-HIT-2018",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "7927c8f43fcc90d0",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

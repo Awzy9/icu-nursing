@@ -114,16 +114,16 @@ D. Ask the patient whether the new bag looks like the earlier one, and continue 
 **Why not C:** Waiting until the next shift leaves the new infusion unchecked.
 **Why not D:** Patient recognition is not a verification method and is not valid for sedated patients.
 
-**Q3 (judgment).** Two nurses are doing an independent double check of a vasoactive infusion. Which method matches the FDA page's description?
-A. The first nurse reads out the settings and the second nurse says whether they agree.
-B. Both nurses stand together at the pump and read the settings aloud in turn.
-C. The second nurse signs the chart after the first nurse tells her that the settings are right.
-D. Each nurse checks the settings alone against the order, and then they compare results.
+**Q3 (judgment).** Two nurses independently calculate the pump rate for a vasoactive infusion with a new concentration under an updated order. Their results differ. What is the safest approach?
+A. Use the first calculation if the nurse who prepared the infusion has more experience, then document the second result.
+B. Enter the rate calculated by the first nurse and ask the second nurse to verify that same number on the pump display.
+C. Choose the rate accepted by the drug library and complete the second check after the change.
+D. Independently recheck the order, concentration and units; reconcile both calculations before changing settings.
 **Answer: D.**
-**Why correct:** The FDA describes separate checks followed by comparison with the order, when required by facility policy. Verify independently before hearing the other person's result. Resolve disagreements before starting or changing the infusion. ISMP does not treat manual double checks as the best safeguard for every high-alert medicine.
-**Why not A:** The second nurse would be influenced by what the first one reads out.
-**Why not B:** Checking together is not independent.
-**Why not C:** Signing on someone's word is not a check at all.
+**Why correct:** FDA describes independent checks against the order according to facility policy. Resolve discrepancies before implementing the new settings; obtain urgent help to maintain essential treatment safely while the discrepancy is clarified. Drug-library acceptance does not establish that the selected concentration or rate matches the order.
+**Why not A:** Experience does not resolve a mathematical discrepancy; both results must be reconciled.
+**Why not B:** Rechecking a number supplied by another clinician is vulnerable to confirmation bias and is not independent.
+**Why not C:** A library may accept a value within its limits even when it does not match the patient's order.
 
 **Q4 (safety).** A pump alarms for no apparent reason during a high-risk infusion and then seems to behave normally. What is the safest action?
 A. Silence it, document that the alarm cleared, and keep using the pump as it appears normal again.
