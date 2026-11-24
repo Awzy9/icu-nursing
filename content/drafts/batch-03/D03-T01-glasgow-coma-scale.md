@@ -48,6 +48,8 @@ Consciousness can change quickly in brain injury, sedation, metabolic disturbanc
 - Escalate promptly and document the escalation.
 - Communicate with relatives honestly and avoid predictions.
 
+**Neurological trends beyond the composite score (NICE NG232; official GCS resource).** In head injury observation, record pupil size and light response, limb movement and relevant physiological observations alongside the individual assessable consciousness components. Compare with the patient's known baseline, including pre-existing deficits. New asymmetry, deteriorating motor response or unexplained reduced consciousness warrants urgent reassessment, even if the total score is unchanged or cannot be calculated. Document the observed change and its timing, confounders and urgent escalation; do not wait for a repeat scheduled score or repeatedly stimulate a deteriorating patient before calling for help.
+
 ## 8. Monitoring parameters
 GCS components and trend at the frequency in the plan (policy and clinical condition); pupils and limb movement per policy; oxygen saturation, blood pressure, temperature, glucose, sedation level, ventilation values; ICP/CPP where monitored; seizures.
 
@@ -91,7 +93,7 @@ Date and time; each component's rating and the stimulus used; non-testable facto
 At the start of the hour you check for interfering factors (sedation running, eyelid swelling), observe the patient, speak the patient's name loudly, ask a two-part request ("lift your right hand and then show me two fingers"), and apply fingertip pressure only if there is no response. You record the ratings and the stimuli used, compare with the last assessment, and tell the doctor immediately about any change.
 
 ## 16. Clinical case (fictional)
-A 48-year-old woman after traumatic brain injury opens her eyes to sound, says single words and localises to pressure. At the next hourly check she opens her eyes only to pressure and her motor response is abnormal flexion. The nurse repeats the check, notes that sedation has not changed, examines the pupils, calls the doctor with SBAR and records the full component ratings.
+A 48-year-old woman after traumatic brain injury opens her eyes to sound, says single words and localises to pressure. At the next hourly check she opens her eyes only to pressure and her motor response is abnormal flexion. The nurse immediately activates urgent clinical reassessment, assesses airway, breathing and circulation, and reports the motor and eye response changes. While help is arranged, she checks pupil findings and relevant sedation history without delaying care, then records the assessable components and times.
 
 ## 17. MCQs
 **Q1 (application).** A patient is intubated, so the verbal component cannot be assessed. What should the nurse record for the verbal response?
