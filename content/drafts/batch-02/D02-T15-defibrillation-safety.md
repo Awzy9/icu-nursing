@@ -44,6 +44,8 @@ ICU patients are on oxygen, ventilators and monitors, and may have implanted dev
 - Resume compressions immediately after the shock.
 - Document times, rhythm, shocks and actions as scribe or team member.
 
+**Distinguish preparation for synchronized cardioversion from defibrillation (2025 ALS).** A tachyarrhythmia with a pulse and signs of instability requires an urgent expert assessment. The team selects the appropriate electrical treatment for the rhythm and clinical situation; do not assume the synchronization setting or shock selection is the same for every rhythm. For indicated synchronized cardioversion, trained operators verify synchronization markers and coordinate airway support and any required sedation, recognizing that sedation can worsen circulation. Pulseless shockable arrest follows the arrest pathway. This is a conceptual distinction, not an operating sequence or device-specific instruction.
+
 ## 8. Monitoring parameters
 Rhythm on the monitor; pad and cable integrity; defibrillator status (charged, ready, battery or power supply); quality of compressions (rate, depth, recoil) as measured by the team; end-tidal CO₂ and arterial pressure where monitored, which may indicate return of circulation; pause times.
 
