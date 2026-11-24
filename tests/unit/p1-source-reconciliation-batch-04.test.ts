@@ -4,7 +4,7 @@ import { createHash } from "node:crypto";
 
 const read = (path: string) => JSON.parse(readFileSync(path, "utf8"));
 const equipment = (name: string) => read("content/drafts/equipment/" + name + ".json");
-const names = ["EQ-04-infusion-pumps","EQ-05-defibrillators","EQ-06-crrt-systems","EQ-07-enteral-feeding-pumps","EQ-08-pressure-relieving-equipment"];
+const names = ["EQ-04-infusion-pumps","EQ-05-defibrillators","EQ-06-crrt-systems","EQ-07-enteral-feeding-pumps","EQ-08-pressure-relieving-equipment"] as const;
 
 describe("equipment evidence reconciliation batch 4", () => {
   it("retains physical line tracing and enteral route safeguards", () => {
