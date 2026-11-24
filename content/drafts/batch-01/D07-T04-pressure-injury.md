@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NPIAP/EPUAP/PPPIA International Guideline, 4th edition, Quick Reference Guide, version date 1 Sep 2026 (abridged; full chapters not read)"]
-sources: [S-INTL-PI-2026, S-INTL-PI-HEELS-2025, S-INTL-PI-REPOS-2026, S-INTL-PI-ASSESSMENT-2026, S-INTL-PI-CLASSIFICATION-2026]
+sources: [S-INTL-PI-2026, S-INTL-PI-HEELS-2025, S-INTL-PI-REPOS-2026, S-INTL-PI-ASSESSMENT-2026, S-INTL-PI-CLASSIFICATION-2026, S-INTL-PI-DRPI-2025]
 sources_not_read: [S-NPIAP-2019]
 independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Selected assessment and classification chapter statements were checked directly on 2026-11-24; comprehensive staging definitions and wound treatment are not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
 ---
@@ -54,6 +54,8 @@ Sustained pressure and shear reduce blood flow to skin and soft tissue; tissue t
 - Establish the likely mechanism before assigning a category. Moisture-associated dermatitis, skin tears and impaired arterial perfusion can mimic pressure injury, and mixed mechanisms are possible. Describe objective findings and escalate uncertainty rather than guessing a stage.
 - For pressure damage caused by a device on skin, the authorized clinician applies the institution's recognized classification system. **Do not assign a skin pressure injury stage to a mucosal injury.** Document the affected site, device, tissue appearance and actions, while preserving essential device function.
 - Record healing against the original known classification rather than assigning progressively lower stages. Suspected heel injury with poor perfusion needs vascular and wound assessment; do not initiate debridement independently. This is not a staging or wound-treatment competency module.
+
+**Device-related pressure injury during routine care (International Guideline, fourth edition).** During repositioning and handover, inspect accessible tissue under and around devices and securements. Identify tubing trapped beneath the patient or pulling on skin; support the device, relieve avoidable pressure and consider a different sensor site when safe. Use only enough securement tension to maintain the intended function. Do not loosen a critical airway, vascular catheter or other life-supporting device independently; coordinate inspection and repositioning with trained staff. If direct inspection is unsafe, document the limitation and arrange a safe review. Preventive padding does not replace assessment or correct device fit.
 
 ## 8. Monitoring parameters
 Skin and device sites at every position change and every shift; risk re-assessment on admission, at intervals set by policy and with any clinical change; repositioning times; pressure-redistributing surface function; nutrition and hydration; haemodynamic trend (low perfusion raises risk).
@@ -171,6 +173,8 @@ D. Requesting a dietitian review under unit policy.
 
 - International Guideline: Skin and Tissue Assessment (May 2026). https://www.internationalguideline.com/assessment (selected assessment guidance checked 2026-11-24)
 - International Guideline: Classification (September 2026). https://www.internationalguideline.com/classification (selected CL1/CL2 and healing documentation guidance checked 2026-11-24; cite-only pending rights assessment)
+
+- International Guideline: Device Related Pressure Injuries. https://www.internationalguideline.com/drpi (selected HTML statements checked 2026-11-24; cite only; rights and independent clinical review pending).
 
 ## 19. Local protocol note
 Risk tools, staging system, support surfaces, dressings and repositioning schedules follow the institution's policy. Prone-positioning protocols have their own rules.
