@@ -6339,6 +6339,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "db3623d820438776",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024",
+     "S-CDC-IC",
+     "S-CDC-ISOLATION-2007",
+     "S-WHO-HH-2009"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-22": [
@@ -6450,6 +6464,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "836c9a544892b3d6",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-MISCONNECTIONS",
+     "S-FDA-PUMP",
+     "S-FDA-PUMP-FAILURE-EXAMPLES",
+     "S-ISMP-HA"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-23": [
@@ -6492,6 +6520,18 @@
     "evidence_status": "partial",
     "sources": [
      "S-SCCM-PADIS"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "7263416e8491ae7c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
     ],
     "gaps": 3,
     "required_sources": 0,
@@ -6546,6 +6586,19 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0aeb7e4f6017d148",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-GCS-OFFICIAL",
+     "S-NICE-NG232",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-25": [
@@ -6590,6 +6643,19 @@
    },
    {
     "hash": "ccdbe0e19343d238",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "6d307f673bf584c0",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
