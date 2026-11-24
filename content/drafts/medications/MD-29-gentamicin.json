@@ -88,6 +88,13 @@
           "sources": [
             "L-GENTAMICIN"
           ]
+        },
+        {
+          "text": "Dehydration, advanced age and recent or concurrent exposure to other potentially nephrotoxic or neurotoxic medicines increase toxicity risk. Assess fluid balance and renal trends and communicate prior exposure to pharmacy; coordinate ordered serum drug-level sampling and document actual collection and administration times.",
+          "support": "partial",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
         }
       ]
     },
@@ -263,6 +270,15 @@
     {
       "kind": "assess",
       "text": "Assess for unexpected muscle weakness or impaired breathing, particularly with neuromuscular disease or concurrent neuromuscular blocking medicines. Activate urgent assessment and airway support under local protocol for respiratory compromise.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-GENTAMICIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review hydration, renal function, prior toxic exposures and the ordered drug-level sampling schedule; document actual specimen timing.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -95,6 +95,13 @@
           "sources": [
             "L-MEROPENEM"
           ]
+        },
+        {
+          "text": "Probenecid can reduce renal elimination of meropenem and increase exposure; the registered label advises against concurrent use. Flag this combination for pharmacist or prescriber review before administration. Drug-induced liver injury is also reported; escalate new jaundice or unexpected liver-test deterioration.",
+          "support": "partial",
+          "sources": [
+            "L-MEROPENEM"
+          ]
         }
       ]
     },
@@ -261,6 +268,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Review concurrent probenecid and ordered hepatic and renal findings; clarify concerns before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MEROPENEM"
+      ]
     }
   ],
   "gaps": [

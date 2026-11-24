@@ -99,7 +99,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Serious, including fatal, allergic and skin reactions have been reported; the label advises discontinuing if a reaction occurs.",
@@ -125,6 +125,13 @@
         {
           "text": "In neonates treated, infantile hypertrophic pyloric stenosis has been reported.",
           "support": "sourced",
+          "sources": [
+            "L-AZITHROMYCIN"
+          ]
+        },
+        {
+          "text": "The registered injection is contraindicated in patients with known macrolide or ketolide hypersensitivity and in those with prior azithromycin-associated cholestatic jaundice or hepatic dysfunction. Serious allergic symptoms can recur after initial improvement without additional exposure; continue clinician-directed observation and escalate recurrence.",
+          "support": "partial",
           "sources": [
             "L-AZITHROMYCIN"
           ]
@@ -254,6 +261,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Review prior macrolide or ketolide allergy and azithromycin-associated liver injury; maintain the authorised observation plan after a serious allergic reaction.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-AZITHROMYCIN"
+      ]
     }
   ],
   "gaps": [

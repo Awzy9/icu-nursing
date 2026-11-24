@@ -1,331 +1,347 @@
 {
- "med_id": "MD-24",
- "number": 24,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Vancomycin",
- "drug_class": "Glycopeptide antibacterial",
- "category": "anti-infectives",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Antibacterial used for serious infections caused by susceptible organisms such as methicillin-resistant staphylococci. Nursing priorities include serious infusion reactions versus anaphylaxis, renal injury, hearing symptoms, blood-count concerns and clinician/pharmacy-led exposure monitoring.",
- "batch": 3,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A separate evidence-review report documents the 2020 vancomycin monitoring consensus for clinician/pharmacist follow-up; its citation-only licence was not cleared for this medication draft, so no guideline-specific exposure target or method is imported into the medication text.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-VANCOMYCIN",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-VANCOMYCIN",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-24",
+  "number": 24,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Vancomycin",
+  "drug_class": "Glycopeptide antibacterial",
+  "category": "anti-infectives",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Antibacterial used for serious infections caused by susceptible organisms such as methicillin-resistant staphylococci. Nursing priorities include serious infusion reactions versus anaphylaxis, renal injury, hearing symptoms, blood-count concerns and clinician/pharmacy-led exposure monitoring.",
+  "batch": 3,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A separate evidence-review report documents the 2020 vancomycin monitoring consensus for clinician/pharmacist follow-up; its citation-only licence was not cleared for this medication draft, so no guideline-specific exposure target or method is imported into the medication text.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-VANCOMYCIN",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-VANCOMYCIN",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates vancomycin for treatment of serious or severe infections caused by susceptible strains of methicillin-resistant staphylococci and other listed organisms.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Give only as the pharmacy's preparation and the order direct, and stop the infusion and report any infusion reaction.",
+          "support": "partial",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Verify the infusion-product form, secure IV access, prescribed pharmacy preparation, local infusion process and the requested blood-sampling timing. In patients with changing renal function or co-administered nephrotoxic drugs, prompt pharmacy/prescriber reassessment rather than adjusting the regimen independently.",
+          "support": "partial",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label warns rapid administration may cause exaggerated hypotension, including shock and rarely cardiac arrest, so the infusion should run slowly rather than as a rapid bolus; it also calls for monitoring renal function in all patients, especially those with renal impairment or who are also receiving a nephrotoxic drug, since systemic exposure increases the risk of acute kidney injury. The label describes ototoxicity (which may be transient or permanent) as more common with excessive doses, pre-existing hearing loss, or a concomitant ototoxic drug, and lists severe skin reactions and Clostridium difficile-associated diarrhoea among its warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Confirm the ordered timing of vancomycin serum-concentration specimens and accurately document collection times for the pharmacy/prescriber to interpret. The manufacturer's US product label recommends serum concentration monitoring in clinically complex cases, especially unstable renal function; this draft gives no method, exposure target or dosing recommendation.",
+          "support": "partial",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "In addition to renal function, monitor and report new hearing changes or tinnitus, and review blood-count results when treatment is prolonged or the patient also receives drugs associated with neutropenia (specific manufacturer's October 2026 US label).",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Concurrent anaesthetic agents have been associated with more infusion-related reactions. Communicate vancomycin exposure to the anaesthesia team and assess new flushing, hypotension or respiratory symptoms promptly. Review recent or concurrent potentially nephrotoxic medicines, including aminoglycosides, with pharmacy.",
+          "support": "partial",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Rapid bolus administration may be associated with exaggerated hypotension, including shock and rarely cardiac arrest; the label says infusion reactions usually stop promptly when the infusion is stopped.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Systemic vancomycin exposure may result in acute kidney injury, and the risk increases as serum levels rise; the label advises monitoring renal function in all patients, especially those with renal impairment.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Infusion-related events can occur during or soon after rapid infusion.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Rapid-infusion flushing, pruritus and hypotension may reflect a vancomycin infusion reaction, but severe airway symptoms, wheeze, breathlessness, hypotension or generalized urticaria may indicate anaphylaxis or another life-threatening emergency. Stop or pause the infusion according to emergency policy, immediately assess airway/breathing/circulation and activate emergency response when indicated; do not assume that a serious reaction will resolve simply because the infusion has stopped.",
+          "support": "partial",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "The October 2026 US label reports potentially permanent hearing toxicity, especially with pre-existing hearing loss, reduced renal clearance or other ototoxic drugs; severe skin reactions, extravasation/tissue injury, antibiotic-associated diarrhoea and reduced neutrophil counts are further hazards to recognise and escalate.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Infusion reactions include pruritus, erythema/flushing, urticaria, chest or back discomfort, and hypotension; the label also reports anaphylaxis. Respiratory symptoms or circulatory instability require emergency assessment rather than assuming a transient infusion response.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Serious renal toxicity, sometimes interstitial nephritis, can occur; risk increases with higher exposure, pre-existing renal dysfunction and other nephrotoxic medications. Hearing loss, tinnitus and vertigo have also been reported, with important long-term risks in susceptible patients.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "The label describes reversible neutropenia and less common platelet or other blood-count changes, particularly relevant during prolonged courses; severe skin reactions, phlebitis and tissue injury after extravasation are additional recognized hazards.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Antibiotic-associated diarrhoea, including C. difficile-related disease, can occur during or after treatment. Clinical assessment and tests are directed by the treating team rather than automatically attributing all diarrhoea to the infusion.",
+          "support": "sourced",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "At the first sign of a suspected serious infusion reaction, follow local emergency instructions for stopping/pausing the infusion, promptly assess airway, breathing, circulation and vital signs and notify the treating team. Activate emergency response for airway compromise, wheezing/dyspnoea, shock or suspected anaphylaxis; do not wait for symptoms to disappear. Also escalate reduced urine output/rising creatinine, new hearing symptoms, mucosal blistering, severe diarrhoea, or unexpected falling white-cell counts.",
+          "support": "partial",
+          "sources": [
+            "L-VANCOMYCIN"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "observe",
+      "text": "Watch for flushing, rash and hypotension during the infusion.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review renal function and drug levels as ordered.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Monitor urine output.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Stop the infusion and report an infusion reaction at once.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record reactions and results.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Assess for wheeze, breathlessness, generalized urticaria and hypotension as possible anaphylaxis, not merely a routine rate-related infusion reaction; activate emergency response per local pathway.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Confirm that ordered vancomycin levels are collected at the requested times and that collection details reach pharmacy for clinician-directed interpretation. Do not independently alter timing, exposure targets or the drug regimen.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Ask about hearing change or tinnitus and inspect the IV site for phlebitis or extravasation injury.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review ordered complete blood count/white-cell trends during extended therapy or when combined with other marrow-suppressing medicines.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "At perioperative handover, flag concurrent anaesthetic agents and other medicines that can injure the kidneys; report new infusion reactions urgently.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-VANCOMYCIN"
+      ]
+    }
+  ],
+  "gaps": [
+    "Vancomycin pharmacokinetic exposure/target selection, dose changes and exact level-sampling schedules remain the prescriber/pharmacist's responsibility; no dose or infusion-rate instructions are provided.",
+    "The 2020 AUC-guided monitoring consensus for serious invasive MRSA was reviewed and traced in the separate evidence report, but is not imported as a medication-draft source because reuse permissions remain unverified; clinician/pharmacy review of this approach is outstanding.",
+    "Renal replacement therapy, CRRT, obesity, pediatrics and unstable renal function require tailored local pharmacy/infectious-disease protocols not summarized here.",
+    "Specific infusion preparation, device instructions, secure IV access procedure and formal anaphylaxis protocol remain local.",
+    "Only the cited US Glenmark October 2026 vancomycin product and 2020 US-led consensus were verified; other manufacturers and EMA/MHRA/SFDA labels and any newer regional guidance remain unreviewed."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "b79d9671-02dd-40e2-97fb-a6c7be85cda1",
+    "label_version": "1",
+    "effective_time": "20261008",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label indicates vancomycin for treatment of serious or severe infections caused by susceptible strains of methicillin-resistant staphylococci and other listed organisms.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Give only as the pharmacy's preparation and the order direct, and stop the infusion and report any infusion reaction.",
-     "support": "partial",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Verify the infusion-product form, secure IV access, prescribed pharmacy preparation, local infusion process and the requested blood-sampling timing. In patients with changing renal function or co-administered nephrotoxic drugs, prompt pharmacy/prescriber reassessment rather than adjusting the regimen independently.",
-     "support": "partial",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label warns rapid administration may cause exaggerated hypotension, including shock and rarely cardiac arrest, so the infusion should run slowly rather than as a rapid bolus; it also calls for monitoring renal function in all patients, especially those with renal impairment or who are also receiving a nephrotoxic drug, since systemic exposure increases the risk of acute kidney injury. The label describes ototoxicity (which may be transient or permanent) as more common with excessive doses, pre-existing hearing loss, or a concomitant ototoxic drug, and lists severe skin reactions and Clostridium difficile-associated diarrhoea among its warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Confirm the ordered timing of vancomycin serum-concentration specimens and accurately document collection times for the pharmacy/prescriber to interpret. The manufacturer's US product label recommends serum concentration monitoring in clinically complex cases, especially unstable renal function; this draft gives no method, exposure target or dosing recommendation.",
-     "support": "partial",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "In addition to renal function, monitor and report new hearing changes or tinnitus, and review blood-count results when treatment is prolonged or the patient also receives drugs associated with neutropenia (specific manufacturer's October 2026 US label).",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Rapid bolus administration may be associated with exaggerated hypotension, including shock and rarely cardiac arrest; the label says infusion reactions usually stop promptly when the infusion is stopped.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Systemic vancomycin exposure may result in acute kidney injury, and the risk increases as serum levels rise; the label advises monitoring renal function in all patients, especially those with renal impairment.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Infusion-related events can occur during or soon after rapid infusion.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Rapid-infusion flushing, pruritus and hypotension may reflect a vancomycin infusion reaction, but severe airway symptoms, wheeze, breathlessness, hypotension or generalized urticaria may indicate anaphylaxis or another life-threatening emergency. Stop or pause the infusion according to emergency policy, immediately assess airway/breathing/circulation and activate emergency response when indicated; do not assume that a serious reaction will resolve simply because the infusion has stopped.",
-     "support": "partial",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "The October 2026 US label reports potentially permanent hearing toxicity, especially with pre-existing hearing loss, reduced renal clearance or other ototoxic drugs; severe skin reactions, extravasation/tissue injury, antibiotic-associated diarrhoea and reduced neutrophil counts are further hazards to recognise and escalate.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Infusion reactions include pruritus, erythema/flushing, urticaria, chest or back discomfort, and hypotension; the label also reports anaphylaxis. Respiratory symptoms or circulatory instability require emergency assessment rather than assuming a transient infusion response.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Serious renal toxicity, sometimes interstitial nephritis, can occur; risk increases with higher exposure, pre-existing renal dysfunction and other nephrotoxic medications. Hearing loss, tinnitus and vertigo have also been reported, with important long-term risks in susceptible patients.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "The label describes reversible neutropenia and less common platelet or other blood-count changes, particularly relevant during prolonged courses; severe skin reactions, phlebitis and tissue injury after extravasation are additional recognized hazards.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Antibiotic-associated diarrhoea, including C. difficile-related disease, can occur during or after treatment. Clinical assessment and tests are directed by the treating team rather than automatically attributing all diarrhoea to the infusion.",
-     "support": "sourced",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "At the first sign of a suspected serious infusion reaction, follow local emergency instructions for stopping/pausing the infusion, promptly assess airway, breathing, circulation and vital signs and notify the treating team. Activate emergency response for airway compromise, wheezing/dyspnoea, shock or suspected anaphylaxis; do not wait for symptoms to disappear. Also escalate reduced urine output/rising creatinine, new hearing symptoms, mucosal blistering, severe diarrhoea, or unexpected falling white-cell counts.",
-     "support": "partial",
-     "sources": [
-      "L-VANCOMYCIN"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Watch for flushing, rash and hypotension during the infusion.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Review renal function and drug levels as ordered.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Monitor urine output.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Stop the infusion and report an infusion reaction at once.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record reactions and results.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "assess",
-   "text": "Assess for wheeze, breathlessness, generalized urticaria and hypotension as possible anaphylaxis, not merely a routine rate-related infusion reaction; activate emergency response per local pathway.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Confirm that ordered vancomycin levels are collected at the requested times and that collection details reach pharmacy for clinician-directed interpretation. Do not independently alter timing, exposure targets or the drug regimen.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Ask about hearing change or tinnitus and inspect the IV site for phlebitis or extravasation injury.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Review ordered complete blood count/white-cell trends during extended therapy or when combined with other marrow-suppressing medicines.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-VANCOMYCIN"
-   ]
-  }
- ],
- "gaps": [
-  "Vancomycin pharmacokinetic exposure/target selection, dose changes and exact level-sampling schedules remain the prescriber/pharmacist's responsibility; no dose or infusion-rate instructions are provided.",
-  "The 2020 AUC-guided monitoring consensus for serious invasive MRSA was reviewed and traced in the separate evidence report, but is not imported as a medication-draft source because reuse permissions remain unverified; clinician/pharmacy review of this approach is outstanding.",
-  "Renal replacement therapy, CRRT, obesity, pediatrics and unstable renal function require tailored local pharmacy/infectious-disease protocols not summarized here.",
-  "Specific infusion preparation, device instructions, secure IV access procedure and formal anaphylaxis protocol remain local.",
-  "Only the cited US Glenmark October 2026 vancomycin product and 2020 US-led consensus were verified; other manufacturers and EMA/MHRA/SFDA labels and any newer regional guidance remain unreviewed."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "b79d9671-02dd-40e2-97fb-a6c7be85cda1",
-  "label_version": "1",
-  "effective_time": "20261008",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

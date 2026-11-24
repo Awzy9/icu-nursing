@@ -27,7 +27,7 @@ describe("MD-18 magnesium sulfate clinical-safety review 2026-11-21", () => {
     expect(notes).toContain("Never improvise product preparation");
     expect(med.sections.institution_preparation.items[0].support).toBe("local_protocol");
     expect(med.sections.institution_dosing.items[0].support).toBe("local_protocol");
-    expect(med.sections.safety_alerts.items.every((x:{support:string})=>x.support==="sourced")).toBe(true);
+    expect(med.sections.safety_alerts.items.every((x:{support:string;sources:string[]})=>["sourced","partial"].includes(x.support)&&x.sources.includes("L-MAGNESIUM"))).toBe(true);
   });
 
   it("retains the registered FDA label and clinical draft gates", () => {

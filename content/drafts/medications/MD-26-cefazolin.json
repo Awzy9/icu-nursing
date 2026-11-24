@@ -95,6 +95,13 @@
           "sources": [
             "L-CEFAZOLIN"
           ]
+        },
+        {
+          "text": "Probenecid can inhibit renal elimination of cefazolin; the registered premixed dextrose product advises against concurrent use. Review the actual product and medication list with pharmacy or the responsible clinician.",
+          "support": "partial",
+          "sources": [
+            "L-CEFAZOLIN"
+          ]
         }
       ]
     },
@@ -254,6 +261,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent probenecid and worsening renal function; clarify the prescription with pharmacy.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CEFAZOLIN"
+      ]
     }
   ],
   "gaps": [

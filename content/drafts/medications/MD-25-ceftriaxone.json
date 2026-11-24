@@ -99,7 +99,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Before therapy, careful inquiry should establish whether the patient has had hypersensitivity reactions to cephalosporins, penicillins and other beta-lactams, and the product should be given cautiously to beta-lactam-sensitive patients.",
@@ -118,6 +118,13 @@
         {
           "text": "Ceftriaxone must never be given through the same line at the same time as calcium-containing IV solutions, in any age group, because of reports of fatal intravascular ceftriaxone-calcium precipitates, with neonates at the greatest risk.",
           "support": "sourced",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        },
+        {
+          "text": "The registered label contraindicates ceftriaxone in premature neonates up to 41 weeks postmenstrual age and in neonates with hyperbilirubinaemia, because bilirubin displacement may cause encephalopathy. These restrictions are separate from the neonatal IV calcium restriction; verify age and clinical context with the neonatal team.",
+          "support": "partial",
           "sources": [
             "L-CEFTRIAXONE"
           ]
@@ -256,6 +263,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag prematurity, neonatal hyperbilirubinaemia or anticipated IV calcium treatment for specialist review before use.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
     }
   ],
   "gaps": [

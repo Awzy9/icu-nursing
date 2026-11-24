@@ -20,6 +20,6 @@ describe("Insulin and electrolyte medication evidence reconciliation", () => {
   });
   it("keeps bicarbonate evidence and restrictions explicit", () => {
     expect(get("MD-21").sources.map(s=>s.id)).toContain("S-BICARICU2-2025");
-    expect(get("MD-21").sections.safety_alerts!.items.at(-1)!.text).toContain("Routine bicarbonate is not recommended");
+    expect(get("MD-21").sections.safety_alerts!.items.some(i=>i.text.includes("Routine bicarbonate is not recommended"))).toBe(true);
   });
 });

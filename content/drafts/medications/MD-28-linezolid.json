@@ -127,7 +127,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Myelosuppression: the label advises monitoring complete blood counts weekly, and thrombocytopenia is more frequent in severe renal impairment and in moderate to severe hepatic impairment.",
@@ -160,6 +160,13 @@
         {
           "text": "Lactic acidosis, symptomatic hypoglycemia (reported especially with insulin or other glucose-lowering medicines), hyponatremia/SIADH and rhabdomyolysis are additional clinically relevant risks; prompt evaluation is needed for unexplained acidosis, recurrent vomiting, low glucose or sodium, new muscle pain/weakness or dark urine.",
           "support": "sourced",
+          "sources": [
+            "L-LINEZOLID"
+          ]
+        },
+        {
+          "text": "The registered US label describes a mortality imbalance in a study of catheter-related bloodstream infections; causality was not established. It excludes this indication and catheter-site infections. Linezolid does not provide clinical Gram-negative coverage. Escalate a suspected coverage gap or unclear indication promptly to the infectious-disease or prescribing team without independently changing antibiotics.",
+          "support": "partial",
           "sources": [
             "L-LINEZOLID"
           ]
@@ -332,6 +339,15 @@
     {
       "kind": "escalate",
       "text": "Report new unexplained muscle pain, weakness, dark urine or an unexpected rise in creatine kinase promptly. Suspected rhabdomyolysis requires urgent medical assessment and the label-directed discontinuation pathway; do not simply continue treatment pending a routine review.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LINEZOLID"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Clarify a catheter-related bloodstream infection indication or suspected Gram-negative infection with the treating team promptly.",
       "critical": true,
       "support": "partial",
       "sources": [
