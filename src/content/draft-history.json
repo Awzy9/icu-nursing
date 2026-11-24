@@ -6936,6 +6936,18 @@
     "gaps": 4,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "cd276ee9042dd3d4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-2025",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-14": [
@@ -7485,6 +7497,18 @@
     "gaps": 4,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "8477bfc6df0df0e4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 4,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-07": [
@@ -7554,6 +7578,17 @@
    {
     "hash": "1deefa186f2589bd",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "e52d049c3b9ae2c7",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AHRQ-TS"
@@ -7647,6 +7682,17 @@
     "gaps": 4,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "dc383b30839a52d0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-OPENRN-FUND-DOC"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "PX-05": [
@@ -7706,6 +7752,18 @@
    {
     "hash": "00c99cbaa7253f71",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "c2958eefb7e4a8ee",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-FDA-PUMP",

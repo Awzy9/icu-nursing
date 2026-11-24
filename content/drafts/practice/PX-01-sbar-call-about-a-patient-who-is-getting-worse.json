@@ -1,135 +1,135 @@
 {
- "practice_id": "PX-01",
- "number": 1,
- "title": "SBAR call about a patient who is getting worse",
- "area": "sbar",
- "kind": "classify",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
- "fictional": true,
- "evidence_status": "partial",
- "arabic_status": "not_written",
- "gaps": [
-  "No published exercise may exist until the review phase: this is a specification only.",
-  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
-  "The exercise has not been tested with learners, and its Arabic version has not been written.",
-  "The AHRQ page was only partly read: it is used for the four-part structure and nothing else."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "objectives": [
-  "Give a structured call about a deteriorating patient.",
-  "Keep the background to what the listener needs.",
-  "End with a specific request."
- ],
- "sources": [
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "TeamSTEPPS SBAR page: structure only"
-  }
- ],
- "required_sources": [
-  "Unit or national guidance on calling for review and the local escalation route",
-  "A source on SBAR use at nursing level in critical care"
- ],
- "setup": "A fictional adult, Mr A, two days after abdominal surgery, now in a fictional ICU bed; the bedside nurse phones the on-call doctor because the patient's condition is changing.",
- "categories": [
-  {
-   "id": "s",
-   "label": "S: Situation"
-  },
-  {
-   "id": "b",
-   "label": "B: Background"
-  },
-  {
-   "id": "a",
-   "label": "A: Assessment"
-  },
-  {
-   "id": "r",
-   "label": "R: Request"
-  },
-  {
-   "id": "out",
-   "label": "Leave out"
-  }
- ],
- "items": [
-  {
-   "id": "i1",
-   "text": "I am calling about Mr A in bed 4. Over the last hour his breathing has become faster and he is more drowsy.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "s",
-   "why": "It states what is happening now."
-  },
-  {
-   "id": "i2",
-   "text": "He is two days after abdominal surgery and was started on treatment for a chest infection yesterday.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "b",
-   "why": "It is the history the doctor needs to interpret the change."
-  },
-  {
-   "id": "i3",
-   "text": "I think he is getting worse, and I am worried about his breathing.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "a",
-   "why": "It is the nurse's own assessment and level of concern."
-  },
-  {
-   "id": "i4",
-   "text": "Please come and see him now. Is there anything you want me to do while I wait?",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "r",
-   "why": "It states what is needed and when, and asks for interim instructions."
-  },
-  {
-   "id": "i5",
-   "text": "The ward was short-staffed last night.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "out",
-   "why": "It does not help the doctor decide what to do now."
-  },
-  {
-   "id": "i6",
-   "text": "His oxygen saturation has been trending down over the last hour despite his usual oxygen therapy, and he looks more work-of-breathing to me.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "a",
-   "why": "It is the nurse's own clinical impression of a trend, not just a single reading, which is the kind of assessment detail a doctor needs to judge urgency."
-  },
-  {
-   "id": "i7",
-   "text": "His family visited this morning and asked when he might go home.",
-   "support": "partial",
-   "sources": [
-    "S-AHRQ-TS"
-   ],
-   "category": "out",
-   "why": "It is true but does not help the doctor decide what to do about the current deterioration."
-  }
- ]
+  "practice_id": "PX-01",
+  "number": 1,
+  "title": "SBAR call about a patient who is getting worse",
+  "area": "sbar",
+  "kind": "classify",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+  "fictional": true,
+  "evidence_status": "partial",
+  "arabic_status": "not_written",
+  "gaps": [
+    "No published exercise may exist until the review phase: this is a specification only.",
+    "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+    "The exercise has not been tested with learners, and its Arabic version has not been written.",
+    "The AHRQ page was only partly read: it is used for the four-part structure and nothing else."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  ],
+  "objectives": [
+    "Give a structured call about a deteriorating patient.",
+    "Keep the background to what the listener needs.",
+    "End with a specific request."
+  ],
+  "sources": [
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "TeamSTEPPS SBAR page: structure only"
+    }
+  ],
+  "required_sources": [
+    "Unit or national guidance on calling for review and the local escalation route",
+    "A source on SBAR use at nursing level in critical care"
+  ],
+  "setup": "A fictional adult, Mr A, two days after abdominal surgery, now in a fictional ICU bed; the bedside nurse phones the on-call doctor because the patient's condition is changing. This communication exercise assumes immediate bedside assessment and emergency escalation are already being arranged; it is not a reason to wait for a routine callback.",
+  "categories": [
+    {
+      "id": "s",
+      "label": "S: Situation"
+    },
+    {
+      "id": "b",
+      "label": "B: Background"
+    },
+    {
+      "id": "a",
+      "label": "A: Assessment"
+    },
+    {
+      "id": "r",
+      "label": "R: Request"
+    },
+    {
+      "id": "out",
+      "label": "Leave out"
+    }
+  ],
+  "items": [
+    {
+      "id": "i1",
+      "text": "I am calling about Mr A in bed 4. Over the last hour his breathing has become faster and he is more drowsy.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "s",
+      "why": "It states what is happening now."
+    },
+    {
+      "id": "i2",
+      "text": "He is two days after abdominal surgery and was started on treatment for a chest infection yesterday.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "b",
+      "why": "It is the history the doctor needs to interpret the change."
+    },
+    {
+      "id": "i3",
+      "text": "I think he is getting worse, and I am worried about his breathing.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "a",
+      "why": "It is the nurse's own assessment and level of concern."
+    },
+    {
+      "id": "i4",
+      "text": "I need urgent bedside assessment now. We are activating the emergency response and continuing authorised supportive care; please confirm your response and any further instructions.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "r",
+      "why": "The request makes urgency and the response explicit; the nurse does not wait passively when the patient is unstable."
+    },
+    {
+      "id": "i5",
+      "text": "The ward was short-staffed last night.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "out",
+      "why": "Staffing concerns may need separate safety reporting; unless directly relevant to the immediate response, focus this urgent communication on the patient's current needs."
+    },
+    {
+      "id": "i6",
+      "text": "His oxygen saturation has been trending down over the last hour despite his usual oxygen therapy, and he looks more work-of-breathing to me.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "a",
+      "why": "It is the nurse's own clinical impression of a trend, not just a single reading, which is the kind of assessment detail a doctor needs to judge urgency."
+    },
+    {
+      "id": "i7",
+      "text": "His family visited this morning and asked when he might go home.",
+      "support": "partial",
+      "sources": [
+        "S-AHRQ-TS"
+      ],
+      "category": "out",
+      "why": "It is true but does not help the doctor decide what to do about the current deterioration."
+    }
+  ]
 }

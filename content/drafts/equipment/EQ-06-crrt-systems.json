@@ -41,13 +41,19 @@
     },
     {
       "name": "Delivered dose against prescription",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The prescribed treatment and actual delivered treatment are not necessarily equal. Interruptions or reduced filter performance may reduce delivery; record downtime and report shortfalls for clinician assessment.",
+      "support": "partial",
+      "sources": [
+        "S-KDIGO-AKI-2012"
+      ]
     },
     {
       "name": "Alarm state",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "An alarm signals a condition requiring assessment; its priority and machine response depend on the model. Assess the patient and summon a trained operator, rather than assuming the alarm identifies the cause or clearing it without assessment.",
+      "support": "partial",
+      "sources": [
+        "N-AHS-CRRT-ALARM-2025"
+      ]
     }
   ],
   "safety_concepts": [
@@ -96,11 +102,9 @@
   ],
   "escalation_concepts": [
     {
-      "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
-      "support": "partial",
-      "sources": [
-        "N-AHS-CRRT-ALARM-2025"
-      ],
+      "text": "For persistent alarms, urgently involve the trained CRRT operator and prescriber. Blood return or circuit termination must follow the specific device and local procedure. Do not attempt blood return when circuit safety is uncertain, including suspected clotting. Document interruptions and any circuit blood loss.",
+      "support": "local_protocol",
+      "sources": [],
       "section": "escalation"
     },
     {

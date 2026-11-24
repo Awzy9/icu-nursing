@@ -1,81 +1,81 @@
 {
- "practice_id": "PX-04",
- "number": 4,
- "title": "Correcting a charting error",
- "area": "documentation",
- "kind": "choice",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
- "fictional": true,
- "evidence_status": "partial",
- "arabic_status": "not_written",
- "gaps": [
-  "No published exercise may exist until the review phase: this is a specification only.",
-  "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
-  "The exercise has not been tested with learners, and its Arabic version has not been written.",
-  "Electronic correction methods differ by system; only the principle is stated."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "objectives": [
-  "Correct a paper charting error without hiding it."
- ],
- "sources": [
-  {
-   "id": "S-OPENRN-FUND-DOC",
-   "read": "full",
-   "use": "Open RN Nursing Fundamentals 2.5: documentation principles and error correction"
-  }
- ],
- "required_sources": [
-  "The employer's policy on corrections, including electronic records"
- ],
- "setup": "A fictional nurse notices a mistaken entry on a paper chart.",
- "stem": "What is the correct way to deal with the mistaken entry?",
- "options": [
-  {
-   "id": "a",
-   "text": "Draw a single line through it, write 'mistaken entry' above with your initials, and then write the correct entry.",
-   "support": "sourced",
-   "sources": [
-    "S-OPENRN-FUND-DOC"
-   ],
-   "correct": true,
-   "feedback": "Errors are corrected with a single line, the words 'mistaken entry' and initials; they are not erased."
-  },
-  {
-   "id": "b",
-   "text": "Cover it with correction fluid and write over it.",
-   "support": "sourced",
-   "sources": [
-    "S-OPENRN-FUND-DOC"
-   ],
-   "correct": false,
-   "feedback": "Errors should never be erased, scribbled out or covered with white-out."
-  },
-  {
-   "id": "c",
-   "text": "Scribble it out so it cannot be read.",
-   "support": "sourced",
-   "sources": [
-    "S-OPENRN-FUND-DOC"
-   ],
-   "correct": false,
-   "feedback": "The original entry must remain readable so the record can be reviewed."
-  },
-  {
-   "id": "d",
-   "text": "Leave it and hope no one notices.",
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-FUND-DOC"
-   ],
-   "correct": false,
-   "feedback": "A known error is corrected so later readers are not misled."
-  }
- ]
+  "practice_id": "PX-04",
+  "number": 4,
+  "title": "Correcting a charting error",
+  "area": "documentation",
+  "kind": "choice",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Original practical exercise with fictional people; never imported, published or shown to learners.",
+  "fictional": true,
+  "evidence_status": "partial",
+  "arabic_status": "not_written",
+  "gaps": [
+    "No published exercise may exist until the review phase: this is a specification only.",
+    "The wording, answers and explanations are the author's reading of the cited sources and have had no clinical or educational review.",
+    "The exercise has not been tested with learners, and its Arabic version has not been written.",
+    "Electronic correction methods differ by system; only the principle is stated."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  ],
+  "objectives": [
+    "Correct a paper charting error without hiding it."
+  ],
+  "sources": [
+    {
+      "id": "S-OPENRN-FUND-DOC",
+      "read": "full",
+      "use": "Open RN Nursing Fundamentals 2.5: documentation principles and error correction"
+    }
+  ],
+  "required_sources": [
+    "The employer's policy on corrections, including electronic records"
+  ],
+  "setup": "A fictional nurse notices a mistaken entry on a paper chart.",
+  "stem": "What is the correct way to deal with the mistaken entry?",
+  "options": [
+    {
+      "id": "a",
+      "text": "Keep the original entry legible, identify it as an error, date, time and authenticate the correction, then record the accurate entry using the employer's paper-chart correction procedure.",
+      "support": "sourced",
+      "sources": [
+        "S-OPENRN-FUND-DOC"
+      ],
+      "correct": true,
+      "feedback": "Preserve the original record and make the correction traceable. Follow the local procedure for dates, times, authentication and amendments; never erase or backdate it."
+    },
+    {
+      "id": "b",
+      "text": "Cover it with correction fluid and write over it.",
+      "support": "sourced",
+      "sources": [
+        "S-OPENRN-FUND-DOC"
+      ],
+      "correct": false,
+      "feedback": "Errors should never be erased, scribbled out or covered with white-out."
+    },
+    {
+      "id": "c",
+      "text": "Scribble it out so it cannot be read.",
+      "support": "sourced",
+      "sources": [
+        "S-OPENRN-FUND-DOC"
+      ],
+      "correct": false,
+      "feedback": "The original entry must remain readable so the record can be reviewed."
+    },
+    {
+      "id": "d",
+      "text": "Leave it and hope no one notices.",
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-FUND-DOC"
+      ],
+      "correct": false,
+      "feedback": "A known error is corrected so later readers are not misled."
+    }
+  ]
 }
