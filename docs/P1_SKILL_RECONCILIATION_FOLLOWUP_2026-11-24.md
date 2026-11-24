@@ -1,0 +1,9 @@
+# Skills reconciliation — follow-up on the final five
+24 November 2026. Targeted follow-up to the already completed 25-skill first pass; not independent clinical validation.
+- SK-21: CDC core practices, environmental cleaning and disinfection: compatibility and required contact time, including shared equipment before another patient.
+- SK-22: FDA examples of reported infusion pump problems and clinician risk-reduction guidance: missed alarms and battery failure; reports do not establish incidence. Patient assessment and backup planning.
+- SK-23: SCCM 2025 PADIS official statements: conditional dexmedetomidine preference in the stated population (moderate certainty); no recommendation on benzodiazepines for ICU anxiety due to insufficient evidence.
+- SK-24: NICE NG232 indexed head-injury observation recommendations: physiological observations alongside neurological components and urgent reassessment of deterioration. No universal observation interval or imaging rule.
+- SK-25: SCCM 2018 PADIS recommendation page: reliable self-report, appropriate family input, behavioral tools and physiological cues. No copyrighted scoring reproduced.
+Sources: https://www.cdc.gov/infection-control/hcp/core-practices/ ; https://www.fda.gov/medical-devices/infusion-pumps/examples-reported-infusion-pump-problems ; https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians ; https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline ; https://www.nice.org.uk/guidance/ng232/chapter/recommendations ; https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa .
+Five skill drafts revised, matching checklist entries added, source IDs and references aligned, evidence matrix and hash history synchronized. Source limitations and clinical approval requirements preserved. Full CI pending; no publication or commercial rights grant.
