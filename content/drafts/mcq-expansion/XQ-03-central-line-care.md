@@ -79,7 +79,7 @@ B. Ask the team whether the line is still needed.
 C. Remove it yourself immediately, since you are the person who looks after the line every day.
 D. Change the dressing and flush the line, because this shows the line is working and may stay.
 **Answer: B.**
-**Why correct:** Review ongoing need and arrange removal when the line is no longer essential. WHO 2026 recommends daily assessment of the site and suggests against routine central catheter replacement without a clinical indication. Removal follows the authorised local pathway.
+**Why correct:** Review ongoing need and arrange removal when the line is no longer essential. WHO 2026 recommends daily assessment of the site and suggests against routine central catheter replacement without a clinical indication. Removal is performed by a credentialed clinician under the authorised local pathway.
 **Why not A:** Every line day carries infection risk.
 **Why not C:** Removal needs an order or an approved protocol.
 **Why not D:** Maintenance does not answer whether the line is needed.

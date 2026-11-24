@@ -65,9 +65,9 @@ D. Rising doses are irrelevant as long as the blood pressure reading on the moni
 A. They do not meet the criteria, because the FiO2 must be at room air before any mobilization.
 B. They meet the criteria only for in-bed exercises, never for sitting out of bed.
 C. They are irrelevant, as the consensus gives no respiratory values for safe mobilization.
-D. They fit the historical respiratory screen, but the team must assess overall readiness before mobilization.
+D. They meet the historical screen; assess overall readiness.
 **Answer: D.**
-**Why correct:** These observations meet the respiratory examples in the 2014 consensus; they are not stand-alone clearance. Check cardiovascular, neurological and other risks and current stability with the team. Use local criteria, not these historical thresholds as universal rules.
+**Why correct:** These observations meet respiratory examples in the 2014 consensus but do not establish safety on their own. Check cardiovascular, neurological and other risks and current stability with the team. Use local criteria, not these historical thresholds as universal rules.
 **Why not A:** The criterion is FiO2 below 0.6, not room air.
 **Why not B:** The criteria apply to in- and out-of-bed mobilization.
 **Why not C:** The consensus gives those values.
@@ -76,7 +76,7 @@ D. They fit the historical respiratory screen, but the team must assess overall 
 **Q6 (scope).** A nurse asks whether the consensus criteria mean she can mobilize ventilated patients without the team's judgement. What is the best answer?
 A. Yes, once the numbers are met she may mobilize alone without any team agreement.
 B. Yes, because the criteria were issued by a regulator and replace local policy.
-C. No: the criteria are a guide to be used with clinical judgement, and each unit should consider them against its own staffing and expertise.
+C. No; use the criteria with clinical judgement and local policy.
 D. No, because the criteria apply to patients who are not receiving any oxygen.
 **Answer: C.**
 **Why correct:** The 2014 criteria guide experienced clinicians rather than replace judgment. In the 2022 TEAM trial, a higher level of early active mobilization did not improve days alive outside hospital and produced more potentially related adverse events. The 2025 PADIS conditional recommendation does not mandate a universal activity intensity. Individualize progression and stop for deterioration.

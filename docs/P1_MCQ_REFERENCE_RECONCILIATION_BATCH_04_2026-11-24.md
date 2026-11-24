@@ -1,0 +1,5 @@
+# Question bank evidence reconciliation — batch 4
+
+24 November 2026. Twelve questions in XQ-10–11 reviewed, eight question blocks updated; keys unchanged. All 66 expansion questions now have a targeted reconciliation pass (66/306 bank). NHS England enduring placement standards and April–July 2026 reporting checked, NSW acute limb ischemia tool inspected at indexed excerpt level; new source mapped for general emergency recognition, not arterial catheter removal. Existing ESICM and TEAM evidence reused.
+
+CI job 138309707368 at previous head: 1365 passed, seven failed. Restored explicit safety statements to XQ-03/05/06/08 and SC-09/18 instead of relaxing tests; shortened options to address length bias. Static answer/distractor length checks performed on all six modified sets; full CI rerun not yet verified. Separate isolated-live job 138309837789 failed on port 54322 already in use; no clinical or production approval. All remain DRAFT. Independent review and source rights assessment outstanding.

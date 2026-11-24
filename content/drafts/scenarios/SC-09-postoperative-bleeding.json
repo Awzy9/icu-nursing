@@ -265,7 +265,7 @@
       ],
       "options": [
         {
-          "text": "Provide ordered resuscitation and blood products with emergency identification checks; reassess perfusion, urine output and temperature. Communicate evolving blood loss, coagulation, ionized calcium and potassium trends to the clinical team and hand over to theatre.",
+          "text": "Provide ordered resuscitation and blood products under emergency transfusion identification and reaction-monitoring procedures; reassess perfusion, urine output and temperature. Communicate blood loss, coagulation, ionized calcium and potassium trends without assigning a DIC diagnosis, and hand over to theatre.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",

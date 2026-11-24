@@ -19,7 +19,7 @@ B. Stop delivery through that cannula now, summon help, and activate the unit's 
 C. Massage the area to disperse the drug, since this spreads it over a wider area and reduces harm.
 D. Apply a cold pack for comfort and continue the infusion until the next scheduled site check.
 **Answer: B.**
-**Why correct:** Suspected norepinephrine extravasation threatens tissue perfusion. Stop delivery at the affected site, obtain urgent help and arrange safe alternative access to maintain necessary circulatory support. Preserve the catheter for the trained team's extravasation assessment and do not force-flush. SSC 2026 conditionally favors peripheral initiation in adult septic shock when waiting for central access would delay vasopressor support, but does not establish a universal dose, duration or cannula size/site.
+**Why correct:** Suspected norepinephrine extravasation threatens tissue perfusion. Stop delivery at the affected site, obtain urgent help and arrange safe alternative access to maintain necessary circulatory support. Preserve the catheter for the trained team's extravasation assessment and do not force-flush a suspected extravasation. SSC 2026 conditionally favors peripheral initiation in adult septic shock when waiting for central access would delay vasopressor support, but does not establish a universal dose, duration or cannula size/site.
 **Why not A:** Delay risks tissue necrosis.
 **Why not C:** Massage is not advised and may worsen tissue injury.
 **Why not D:** Continuing an infusion through a suspected extravasation worsens the injury.
@@ -83,7 +83,7 @@ D. The fingertip, which gives the fastest absorption into the bloodstream in an 
 **Why not B:** The intramuscular anaphylaxis label discourages injection into smaller muscles such as the deltoid.
 **Why not C:** The label says not to inject into the buttocks.
 **Why not D:** The label says not to inject into digits.
-**Trace:** S-ADRENALIN-IM-2025, N-RCUK-ANAPH-2021 — Route-specific injection site and time-critical emergency treatment; IV septic-shock labeling is not IM-site evidence.
+**Trace:** S-ADRENALIN-IM-2025, N-RCUK-ANAPH-2021 — Route-specific injection site and time-critical emergency treatment; IV septic-shock labeling must not be substituted as evidence for an IM injection site.
 
 ## 18. References
 - DailyMed product-specific US labels as listed in content/drafts/medications/LABEL_SOURCES.csv (accessed 2026-11-15); these support the intravenous and critical-care questions above, not every anaphylaxis product.

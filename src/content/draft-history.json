@@ -2437,6 +2437,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f807a1efceb5f71e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022",
+     "S-WHO-CVC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-04": [
@@ -2529,6 +2542,17 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0c95892de66136b6",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-BTS-PCS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-06": [
@@ -2556,6 +2580,19 @@
    },
    {
     "hash": "904329a673e9c6a1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014",
+     "S-SCCM-PADIS",
+     "S-TEAM-RCT-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "568b60bb30c24ed3",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -2755,6 +2792,24 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "6d445c2bb5cd4d64",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-EPINEPHRINE",
+     "L-MILRINONE",
+     "L-NOREPINEPHRINE",
+     "L-VASOPRESSIN",
+     "N-RCUK-ANAPH-2021",
+     "S-ADRENALIN-IM-2025",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-09": [
@@ -2871,6 +2926,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2c29989d119e1dd8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
+     "S-NICE-CG32"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-11": [
@@ -2933,6 +3001,25 @@
      "N-ICS-TRANSFER-2026",
      "S-CDC-BSI-2011",
      "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "80a3f0f403cb91ee",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BTS-PCS-2023",
+     "N-HODGSON-2014",
+     "N-ICS-TRANSFER-2026",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2025",
+     "S-KDIGO-AKI-2012",
+     "S-NSW-ALI",
+     "S-TEAM-RCT-2022"
     ],
     "gaps": 0,
     "required_sources": 0,
@@ -9403,6 +9490,25 @@
     "gaps": 8,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c2e97902f498890a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-AOA-BLOOD-2025",
+     "S-ARUP-DIC",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-10": [
@@ -10026,6 +10132,21 @@
    },
    {
     "hash": "3d8468ad4aa50a6b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "b3eec1cecee25475",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

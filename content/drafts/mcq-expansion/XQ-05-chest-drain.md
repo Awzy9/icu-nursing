@@ -29,7 +29,7 @@ D. Hung from the drip stand above the chair, which makes the readings easier to 
 A. Encourage the patient to keep coughing to clear the lungs and recheck the drainage in an hour.
 B. Increase the drainage by lowering the bottle, so the effusion clears faster and the symptoms settle.
 C. Give the next analgesia and observe, since coughing is common while a lung re-expands.
-D. Promptly stop or clamp fluid drainage under the documented plan, assess the patient and urgently alert the pleural team.
+D. Stop effusion drainage per plan, assess and urgently alert the pleural team.
 **Answer: D.**
 **Why correct:** Repetitive cough or chest pain during drainage of a large effusion can warn of a serious complication including re-expansion pulmonary oedema. BTS advises prompt clamping of the effusion drain in this setting. Follow the written fluid-drainage instructions and assess the patient immediately; do not apply this response to a bubbling pneumothorax drain.
 **Why not A:** The symptoms may signal re-expansion pulmonary oedema.
@@ -77,9 +77,9 @@ D. Connect it for patients who are breathless, to make drainage quicker and reli
 A. Ignore it, because the water level matters mainly while the patient is breathing out strongly.
 B. Top it up with any available sterile water without checking the system, as the level looks low.
 C. Raise the bottle above the patient so the little water left covers the tube end.
-D. Assess the patient and report the fault promptly; restore the device-specific seal only under the trained local procedure.
+D. Assess, escalate and restore the specified seal under the trained procedure.
 **Answer: D.**
-**Why correct:** A conventional water seal must function at the specified level. Assess breathing and circulation first and arrange urgent trained assistance if the patient deteriorates. Follow the device manual and aseptic local procedure to restore the seal; do not generalize this to digital or dry-seal systems.
+**Why correct:** A conventional water seal must function at the specified level. Assess breathing and circulation first and arrange urgent trained assistance if the patient deteriorates. Follow the device manual and aseptic local procedure to restore the seal; these instructions do not apply to dry-seal or digital systems.
 **Why not A:** The water seal matters whenever the drain is in use.
 **Why not B:** Handling the system follows an aseptic procedure and local instruction.
 **Why not C:** Raising the bottle is unsafe; the bottle stays below the insertion site.

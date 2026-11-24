@@ -1324,7 +1324,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "2a85dd8855595e62"
+   "hash": "f807a1efceb5f71e"
   },
   {
    "key": "XQ-04",
@@ -1364,7 +1364,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "92b9cb98e16d4da1"
+   "hash": "0c95892de66136b6"
   },
   {
    "key": "XQ-06",
@@ -1394,7 +1394,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "904329a673e9c6a1"
+   "hash": "568b60bb30c24ed3"
   },
   {
    "key": "XQ-07",
@@ -1484,7 +1484,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "355ff1e21261a35d"
+   "hash": "6d445c2bb5cd4d64"
   },
   {
    "key": "XQ-09",
@@ -1546,6 +1546,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG32",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -1554,7 +1559,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "582da82b104e159f"
+   "hash": "2c29989d119e1dd8"
   },
   {
    "key": "XQ-11",
@@ -1591,15 +1596,30 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NSW-ALI",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-TEAM-RCT-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c6be808a47ec8036"
+   "hash": "80a3f0f403cb91ee"
   },
   {
    "key": "SK-01",
@@ -4649,7 +4669,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "b8a1171cb6ed4438"
+   "hash": "c2e97902f498890a"
   },
   {
    "key": "SC-10",
@@ -4989,7 +5009,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "3d8468ad4aa50a6b"
+   "hash": "b3eec1cecee25475"
   },
   {
    "key": "SC-19",

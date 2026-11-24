@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['SK-10', 'SK-11']
-sources: ['S-NICE-CG32', 'S-NHSE-NGT-2016']
+sources: ['S-NICE-CG32', 'S-NHSE-NGT-2016', 'S-NHSE-NGT-ENDURING']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # Nasogastric tube position and feeding safety (NICE CG32, NHS alert)
@@ -19,11 +19,11 @@ B. Listen over the stomach while injecting air, since the sound shows the tube i
 C. Check that the mark at the nostril has not moved, then start the feed without testing aspirate.
 D. Confirm the tube position before the feed, using aspiration and pH-graded paper, with X-ray if necessary.
 **Answer: D.**
-**Why correct:** NICE CG32 says the position of nasogastric tubes should be confirmed after placement and before each use by aspiration and pH-graded paper, with X-ray if necessary.
+**Why correct:** Use the locally authorised confirmation procedure before feeding. NHS England's enduring initial-placement standards accept aspirate pH within the approved range or an appropriately interpreted radiograph; a marker, auscultation or placement aid alone cannot establish safe initial position. NICE also requires checks after placement and before use.
 **Why not A:** Position is checked before each use.
 **Why not B:** This is not an accepted way to confirm position.
 **Why not C:** A marker check supplements but does not replace confirmation as the protocol requires.
-**Trace:** S-NICE-CG32 — Confirm position before each use by aspiration and pH-graded paper (X-ray if necessary).
+**Trace:** S-NICE-CG32, S-NHSE-NGT-ENDURING — Initial placement and checks before use; approved pH or radiographic pathway.
 
 **Q2 (judgment).** You cannot aspirate any fluid from a patient's nasogastric tube before the scheduled feed. What is the safest approach?
 A. Start the feed slowly and watch the patient closely for coughing, since the tube position was confirmed earlier in the admission.
@@ -31,11 +31,11 @@ B. Flush a large volume of water to check that it goes in easily and then start 
 C. Withhold feed, medicines and flushes; follow the failed-aspiration protocol and escalate until position is confirmed.
 D. Reposition the tube a few centimetres and begin feeding without any further check.
 **Answer: C.**
-**Why correct:** NICE says local protocols should address how to proceed when aspiration is not possible; the NHS alert stresses that using a misplaced tube can cause severe harm.
+**Why correct:** Keep all tube use withheld while placement is uncertain. Do not introduce water as a trial flush: it may harm the patient and affect aspirate testing. Follow the local failed-aspiration pathway, including radiographic confirmation when required; arrange alternate authorised routes for essential medicines.
 **Why not A:** A previous check does not make this use safe.
 **Why not B:** Flushing an unconfirmed tube is unsafe.
 **Why not D:** Moving the tube without confirming position adds risk.
-**Trace:** S-NICE-CG32, S-NHSE-NGT-2016 — Local protocol for failed aspiration; position must be confirmed before use.
+**Trace:** S-NICE-CG32, S-NHSE-NGT-2016, S-NHSE-NGT-ENDURING — Failed aspiration and no use until placement confirmed.
 
 **Q3 (monitoring).** A patient on a proton pump inhibitor has aspirate with a pH above the usual cut-off. How should the nurse interpret this?
 A. Accept the result as proof that the tube is in the lung and remove it at once.
@@ -43,7 +43,7 @@ B. Recognise that acid suppression can invalidate the pH check and escalate befo
 C. Accept the result as confirming stomach placement because higher values are safer.
 D. Repeat the test on every shift until a low pH is obtained, and feed in the meantime.
 **Answer: B.**
-**Why correct:** NICE says local protocols should address how to proceed when the pH check is invalid because of gastric acid suppression.
+**Why correct:** Acid suppression can raise gastric aspirate pH; a result outside the approved range cannot establish placement or diagnose lung placement. Withhold use, document the finding and use the locally approved alternative confirmation pathway.
 **Why not A:** A high pH may be due to acid suppression, not lung placement; the protocol guides the next step.
 **Why not C:** A high pH is not confirmation.
 **Why not D:** Feed, medicines and flushes must wait until position is confirmed under the approved pathway.
@@ -67,7 +67,7 @@ B. It is rare enough that an annual audit is the safeguard required.
 C. It matters for children, because adult tubes rarely enter the airway.
 D. It is a Never Event in England, which is why checking placement before use is essential.
 **Answer: D.**
-**Why correct:** The 2016 NHS alert states that introducing fluids or medication into the respiratory tract or pleura through a misplaced nasogastric tube is a Never Event and that checks before use are essential.
+**Why correct:** The 2016 England alert classified introduction of fluid or medication via a misplaced NG tube into the respiratory tract or pleura as a Never Event. NHS England's 2026 provisional reporting continues to list misplaced naso- or oro-gastric tubes. The classification is England-specific and does not replace local incident reporting.
 **Why not A:** The alert treats it as a preventable Never Event.
 **Why not B:** The alert requires checking before each use.
 **Why not C:** The alert concerns misplaced tubes in general.
@@ -88,3 +88,5 @@ D. The patient's relatives, after being shown once how to pass the tube.
 ## 18. References
 - NICE CG32 Nutrition support for adults. https://www.nice.org.uk/guidance/cg32 (accessed 2026-11-15)
 - NHS Improvement Patient Safety Alert: Nasogastric tube misplacement (2016). https://www.england.nhs.uk/ (accessed 2026-11-15)
+- NHS England enduring medical device standards. https://www.england.nhs.uk/patient-safety/patient-safety-insight/patient-safety-alerts/enduring-standards/standards-that-remain-valid/medical-device-safety/ (selected excerpts, accessed 2026-11-24)
+- NHS England provisional Never Events report April–July 2026. https://www.england.nhs.uk/long-read/provisional-publication-of-never-events-2/ (selected excerpts, accessed 2026-11-24)

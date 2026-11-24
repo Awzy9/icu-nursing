@@ -158,7 +158,7 @@
       ],
       "options": [
         {
-          "text": "Keep feed, water, medicines and flushes through the suspect tube withheld until position is confirmed by the approved method and documented by trained staff, and the team authorises use. Arrange essential medicines by an authorised alternative route if needed.",
+          "text": "Keep feed, water, medicines and flushes through the suspect tube withheld until position is confirmed by the locally approved method and documented by trained staff, and the team authorises use. Escalate persisting respiratory distress and arrange essential medicines by an authorised alternative route if needed.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
