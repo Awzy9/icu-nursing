@@ -5441,6 +5441,11 @@
      "verified": null
     },
     {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -5454,7 +5459,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "39f7213fcfe0061c"
+   "hash": "2cdac18bb9b3f58e"
   },
   {
    "key": "EQ-02",
@@ -5521,6 +5526,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-MHRA-ARTERIAL-GLUCOSE",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SSC-2021",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -5529,7 +5539,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "38e447cd1a54b6b0"
+   "hash": "62cee64d3a90405f"
   },
   {
    "key": "EQ-04",
@@ -5606,6 +5616,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-VANTIVE-PRISMAX-ACCESS",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -5619,7 +5634,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 3,
-   "hash": "9ce7c0c92ba0729b"
+   "hash": "5282080f294f041d"
   },
   {
    "key": "EQ-07",
@@ -5646,6 +5661,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG32",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -5659,7 +5679,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "7de76b9c0c4448eb"
+   "hash": "7d459ec3f64007d2"
   },
   {
    "key": "EQ-08",
@@ -5689,7 +5709,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "8b6d65f652e1117a"
+   "hash": "8a163fe911c4496d"
   },
   {
    "key": "PX-01",

@@ -115,6 +115,14 @@
         "S-KDIGO-AKI-2012"
       ],
       "section": "monitoring"
+    },
+    {
+      "text": "If regional citrate anticoagulation is used, track ordered systemic ionized and total calcium, acid-base status and lactate under the local protocol. Escalate increasing calcium replacement needs or worsening metabolic abnormalities as possible citrate-related complications; they are not diagnostic alone. Changes to anticoagulation or calcium delivery require the authorised team.",
+      "support": "partial",
+      "sources": [
+        "S-RRT-MULTIDISC-2026"
+      ],
+      "section": "monitoring"
     }
   ],
   "escalation_concepts": [
@@ -153,15 +161,20 @@
       "id": "S-VANTIVE-PRISMAX-ACCESS",
       "read": "partial",
       "use": "Manufacturer HTML causes and relationship to prescribed flow; procedure not adopted"
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "read": "partial",
+      "use": "2026 multidisciplinary ICU RRT guideline; selected citrate monitoring and accumulation discussion inspected."
     }
   ],
   "required_sources": [
-    "Source explaining each listed monitored parameter in device-neutral terms",
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
     "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
     "Unit policy for this equipment"
   ],
   "gaps": [
-    "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+    "All listed parameters have preliminary cited explanations; individual claims, evidence strength and model applicability still require independent appraisal.",
     "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
     "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available.",
     "HIT clinical-probability assessment and alternative-anticoagulant orders require a local multidisciplinary protocol; no machine setting or dose advice is supplied."

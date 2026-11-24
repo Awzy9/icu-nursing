@@ -87,6 +87,14 @@
       "support": "local_protocol",
       "sources": [],
       "section": "monitoring"
+    },
+    {
+      "text": "Consider poor perfusion, skin temperature and pigmentation when assessing the reliability of an oxygen saturation reading. If the reading conflicts with the patient's condition, reassess promptly and arrange confirmatory assessment with the clinical team; do not delay emergency help.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-OXIMETER-BASICS"
+      ],
+      "section": "monitoring"
     }
   ],
   "escalation_concepts": [
@@ -122,15 +130,20 @@
       "id": "S-PHILIPS-INTELLIVUE-R0",
       "read": "partial",
       "use": "Both pages rendered; alarm priority and reset caveats inspected; not full IFU"
+    },
+    {
+      "id": "S-FDA-OXIMETER-BASICS",
+      "read": "partial",
+      "use": "FDA public HTML on pulse oximetry accuracy; not a clinical sampling protocol."
     }
   ],
   "required_sources": [
-    "Source explaining each listed monitored parameter in device-neutral terms",
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
     "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
     "Unit policy for this equipment"
   ],
   "gaps": [
-    "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+    "All listed parameters have preliminary cited explanations; individual claims, evidence strength and model applicability still require independent appraisal.",
     "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
     "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
   ],
