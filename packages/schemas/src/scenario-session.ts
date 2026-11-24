@@ -92,3 +92,16 @@ export function validScenarioSave(s: Scenario, saved: { kind: string; version: s
   if (!canResumeScenario(s,before)) return false;
   return !before.decisions.length || restoreScenarioDecisions(s,before).decisions.length === before.decisions.length;
 }
+
+// Only use history proved by the recorded decisions or an unambiguous sequence.
+// Legacy native "visited" arrays are not proof of the path taken.
+export function restoreScenarioHistory(s: Scenario, saved: Parameters<typeof restoreScenarioDecisions>[1]): { positions: number[]; incomplete: boolean } {
+  if (!canResumeScenario(s, saved)) return { positions: [], incomplete: true };
+  const sequential = sequentialHistory(s, saved.position);
+  if (sequential !== undefined) return { positions: sequential, incomplete: false };
+  const restored = restoreScenarioDecisions(s, saved);
+  const first = restored.decisions[0]?.position;
+  if (first === undefined) return { positions: [], incomplete: saved.position !== s.steps[0]?.position };
+  const prefix = sequentialHistory(s, first);
+  return { positions: [...(prefix ?? []), ...restored.decisions.map(d => d.position)], incomplete: prefix === undefined };
+}

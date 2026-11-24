@@ -12,12 +12,19 @@ describe("Shared educational scenario debrief",()=>{
   expect(summary.observedPoints).toBe(3);
   expect(summary.observedMaximum).toBe(6);
   expect(summary.fullCredit).toBe(1);
+  expect(summary.strengths.map(e=>e.position)).toEqual([3]);
  });
  it("never invents prior answers on resume",()=>{
   const summary=scenarioDebrief(scenario,[{position:3,choice:2}]);
   expect(summary.entries.map(e=>e.position)).toEqual([3]);
   expect(summary.observedMaximum).toBe(2);
   expect(summary.priorities).toEqual([]);
+ });
+ it("retains only the selected option consequence",()=>{
+  const withConsequences={...scenario,steps:scenario.steps.map(step=>({...step,options:step.options.map(o=>({...o,consequence:"Possible consequence "+o.points}))}))};
+  const summary=scenarioDebrief(withConsequences,[{position:1,choice:0}]);
+  expect(summary.entries[0]?.consequence).toBe("Possible consequence 0");
+  expect(summary.priorities[0]?.consequence).toBe("Possible consequence 0");
  });
  it("ignores invalid and duplicate decisions",()=>{
   const summary=scenarioDebrief(scenario,[{position:99,choice:0},{position:1,choice:99},{position:1,choice:1},{position:1,choice:2}]);

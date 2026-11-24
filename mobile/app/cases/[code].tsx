@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { scenarioVersion, canResumeScenario, sequentialHistory, restoreScenarioDecisions } from "@icu/schemas/scenario-session";
+import { scenarioVersion, canResumeScenario, restoreScenarioHistory, restoreScenarioDecisions } from "@icu/schemas/scenario-session";
 import { scenarioDebrief, type ScenarioDecision } from "@icu/schemas/scenario-debrief";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
@@ -75,7 +75,7 @@ export default function CaseScreen() {
                 <H2>{t("cases.resume")}</H2>
                 <P muted>{t("cases.resumeBody")}</P>
                 <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
-                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); const restored = restoreScenarioDecisions(scenario, existingSession); setDecisions(restored.decisions); setResumedWithoutDecisions(restored.incomplete); const prior = sequentialHistory(scenario, existingSession.position) ?? existingSession.visited; setVisited(prior ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !prior?.length); }} />
+                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); const restored = restoreScenarioDecisions(scenario, existingSession); setDecisions(restored.decisions); setResumedWithoutDecisions(restored.incomplete); const history = restoreScenarioHistory(scenario, existingSession); setVisited(history.positions); setHistoryIncomplete(history.incomplete); }} />
                 <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
               </Card>
             );
@@ -99,7 +99,8 @@ export default function CaseScreen() {
                 {resumedWithoutDecisions ? <P small muted>{locale === "ar" ? "لا تتوفر تفاصيل القرارات السابقة للاستئناف. تعرض المراجعة القرارات المسجلة هنا فقط." : "Some earlier answer details are unavailable. This review covers only retained decisions."}</P> : null}
                 <P small muted>{locale === "ar" ? "للتعلم فقط، وليس تقييماً للكفاءة السريرية." : "Educational feedback only; not a clinical competency assessment."}</P>
                 {debrief.priorities.length ? <H2>{locale === "ar" ? "أولويات المراجعة" : "Review priorities"}</H2> : <P>{locale === "ar" ? "لا توجد قرارات مسجلة تحتاج إلى مراجعة." : "No recorded decisions require review."}</P>}
-                {debrief.priorities.map(item => <Card key={item.position}><P>Step {item.position}: {item.points} / {item.maximum} points</P><P>{item.prompt}</P><P>Your choice: {item.selected}</P><P>{item.feedback}</P><P>Preferred response: {item.preferred}</P><P>{item.preferredFeedback}</P></Card>)}
+                {debrief.priorities.map(item => <Card key={item.position}><P>Step {item.position}: {item.points} / {item.maximum} points</P><P>{item.prompt}</P><P>Your choice: {item.selected}</P><P>{item.feedback}</P>{item.consequence ? <P>Possible consequence: {item.consequence}</P> : null}<P>Preferred response: {item.preferred}</P><P>{item.preferredFeedback}</P></Card>)}
+                {debrief.strengths.length ? <><H2>{locale === "ar" ? "القرارات التي حصلت على كامل النقاط" : "Full-credit decisions"} ({debrief.fullCredit})</H2>{debrief.strengths.map(item => <Card key={item.position}><P>Step {item.position}: {item.prompt}</P><P>{item.selected}</P><P>{item.feedback}</P>{item.consequence ? <P>Possible consequence: {item.consequence}</P> : null}</Card>)}</> : null}
                 <H2>{locale === "ar" ? "ما تعلمته" : "Your takeaways"}</H2>
                 {scenario.takeaways.map((item, i) => <P key={i}>{`• ${item}`}</P>)}
                 <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); setDecisions([]); setResumedWithoutDecisions(false); setHistoryIncomplete(false); }} />
@@ -141,7 +142,7 @@ export default function CaseScreen() {
               {showNeuro ? <CaseComparison kind="neuro" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
               {showPerfusion ? <CaseComparison kind="perfusion" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
               <P small muted>{t("cases.step", { n: scenario.steps.findIndex((s) => s.position === pos) + 1, total: scenario.steps.length })}</P>
-              <Card><P>{step.info}</P></Card>
+              <Card><P>{step.info}</P>{historyIncomplete ? <P small muted>{locale === "ar" ? "سجل الملاحظات السابقة غير مكتمل. تُعرض فقط الخطوات التي يمكن التحقق منها." : "Earlier observation history is incomplete. Only verified prior checkpoints are shown."}</P> : null}</Card>
               {supplemental.length > 0 ? <Card>
                 <H2>{locale === "ar" ? "ملاحظات الحالة" : "Case observations"}</H2>
                 {supplemental.map((o, i) => <P key={`${o.label}-${i}`}>{o.label}: {String(o.value)}{o.unit ? ` ${o.unit}` : ""}</P>)}
@@ -153,6 +154,7 @@ export default function CaseScreen() {
               {revealed && option ? (
                 <Card>
                   <P>{t("cases.feedback")}</P>
+                  <P small>{locale === "ar" ? "نقاط التعلم لهذا القرار" : "Learning points for this decision"}: {option.points} / {Math.max(...step.options.map(o=>o.points))}</P>
                   <P>{option.feedback}</P>
                   {option.consequence ? <P small muted>{locale === "ar" ? "النتيجة المحتملة: " : "Possible consequence: "}{option.consequence}</P> : null}
                   {sharedCheckpoint ? <P small muted>{locale === "ar" ? "الخطوة التالية نقطة تعليمية مشتركة وليست نتيجة فردية لاختيارك." : "The next step is a shared teaching checkpoint, not an individualized outcome of your choice."}</P> : null}

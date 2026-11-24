@@ -16,12 +16,13 @@ export function scenarioDebrief(scenario: Scenario, decisions: readonly Scenario
     const preferred = step.options.reduce((best, o) => o.points > best.points ? o : best, selected);
     return [{ position: step.position, prompt: step.prompt, selected: selected.text, feedback: selected.feedback,
       points: selected.points, maximum: preferred.points, preferred: preferred.text,
-      preferredFeedback: preferred.feedback }];
+      preferredFeedback: preferred.feedback, consequence: selected.consequence ?? null }];
   });
   return {
     entries,
     priorities: entries.filter(e => e.points < e.maximum).sort((a,b) => a.points - b.points || a.position - b.position),
     fullCredit: entries.filter(e => e.points === e.maximum).length,
+    strengths: entries.filter(e => e.points === e.maximum),
     observedPoints: entries.reduce((sum,e) => sum + e.points, 0),
     observedMaximum: entries.reduce((sum,e) => sum + e.maximum, 0),
   };
