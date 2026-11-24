@@ -6264,7 +6264,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "c83f53d39e2e2b08"
+   "hash": "084acb1c7eb82776"
   },
   {
    "key": "PX-06",
@@ -6408,7 +6408,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 1,
-   "hash": "1a82dbf98b6ac0f8"
+   "hash": "bc59d8c999e1260c"
   }
  ]
 }
