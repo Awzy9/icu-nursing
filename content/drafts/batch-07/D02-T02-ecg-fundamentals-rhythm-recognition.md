@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Advanced Skills, chapter 7 (ECG) – sections 7.2 Basic Concepts, 7.3 Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Initiating Telemetry; WisTech Open 2023, CC BY 4.0; a US entry-level nursing textbook adapted partly from StatPearls", "UK Kidney Association hyperkalaemia guideline (July 2026) – ECG rationale pages, used only for hyperkalaemia ECG statements", "Phase 3 additions: AACN Practice Alerts 'Accurate Dysrhythmia Monitoring in Adults' (2016; update 2018) and 'Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry' (2018) – PUBLIC SUMMARIES ONLY (full texts need a free AACN login and were not accessed)"]
-sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026, S-AACN-DYSRHYTHMIA-2016, S-AACN-ALARM-2018, S-ERC-BLS-2025, S-ERC-ALS-2025]
-sources_not_read: [S-AHA-2025]
+sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026, S-AACN-DYSRHYTHMIA-2016, S-AACN-ALARM-2018, S-ERC-BLS-2025, S-ERC-ALS-2025, S-AHA-ALS-2025]
+sources_not_read: []
 independently_written_note: "Original wording and structure. Four sections of the Open RN ECG chapter were read in full (basic concepts, systematic interpretation, patterns and dysrhythmias, the telemetry checklist); the chapter's cardioversion and defibrillation section, pacemaker content, rhythm-strip appendix, tables and figures were NOT read or reproduced. No ECG images or rhythm strips are included: the chapter's own images are credited to several licences, and ERC algorithms are not reproduced. The source is an introductory US nursing text, not an ICU monitoring standard: the AHA practice standards for ECG monitoring in hospital settings were not accessible and were not read, so alarm limits, lead choice for ST monitoring, monitoring indications and frequencies are not taught. Resuscitation algorithms, drug choices, doses and energy settings are deliberately absent; use the unit's resuscitation procedure and the cardiac arrest draft (D02-T14)."
 ---
 # ECG fundamentals and recognising important rhythms
@@ -72,6 +72,8 @@ The public summary of the AACN dysrhythmia-monitoring alert states that the accu
 - **Not covered:** alarm limits, lead choice for ST monitoring, 12-lead acquisition detail, paced rhythms, indications and duration of monitoring (no source read).
 
 **Assess the patient with an arrhythmia, not only the ECG rate (2025 ALS).** In a patient with a pulse, report clinical evidence of circulatory compromise, loss of consciousness, acute heart failure or suspected myocardial ischaemia in addition to the rhythm and rate. A patient with a new rhythm and serious symptoms requires immediate expert review even if a monitor label appears reassuring. Obtain a suitable diagnostic tracing when feasible without delaying emergency care, preserve the rhythm strip for review, and communicate relevant medication and electrolyte changes. If arrest is suspected, activate the resuscitation pathway rather than waiting for a 12-lead ECG.
+
+**Tachycardia as a cause or a consequence of deterioration (AHA 2025 adult ALS).** A rapid rhythm may cause circulatory compromise, or may be a response to another condition such as sepsis. Report the rhythm, onset, blood pressure, perfusion, symptoms and concurrent illness, and request urgent expert assessment when the patient is unstable. Do not assume a monitor label or heart rate establishes that the rhythm itself is the cause. The responding team determines treatment; this lesson does not teach cardioversion, drug selection or device operation.
 
 ## 8. Monitoring parameters
 Heart rate and rhythm; regularity; PR, QRS and QT intervals as available; ST segments; pulse, blood pressure, capillary refill, mental state, oxygen saturation, chest pain, dyspnoea; electrode contact and artifact; electrolytes and medicines relevant to the rhythm; alarms and their response.
@@ -192,11 +194,13 @@ D. Start chest compressions based on the wide-complex rhythm despite the confirm
 - Resuscitation Council UK 2025 adult BLS. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines (selected recommendations, accessed 2026-11-24)
 - Resuscitation Council UK 2025 adult ALS. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines (selected recommendations, accessed 2026-11-24)
 
+- S-AHA-ALS-2025. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support (selected official or publisher HTML passages checked 2026-11-24; full appraisal and independent review outstanding).
+
 ## 19. Local protocol note
 Monitor alarm limits, lead choice, monitoring indications, who may interpret and respond, resuscitation procedure, and documentation of strips follow the unit's policies and training.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: an introductory US nursing textbook (CC BY, adapted partly from StatPearls) plus public summaries of two AACN practice alerts. It is educational, not a guideline; the AACN recommendations were not accessible. ICU monitoring standards (AHA), the ERC/AHA resuscitation guidelines and ECG teaching atlases were not read.
+- Source quality: an introductory US nursing textbook (CC BY, adapted partly from StatPearls) plus public summaries of two AACN practice alerts. It is educational, not a guideline; the AACN recommendations were not accessible. AHA 2025 adult ALS selected tachycardia discussion checked directly 2026-11-24; full AHA hospital ECG monitoring standards and ECG teaching atlases remain unappraised.
 - Applicability: adults; entry-level; general inpatient.
 - Not covered: strip images, 12-lead ischaemia interpretation, paced rhythms, drug choices and doses, cardioversion and defibrillation energy and technique, alarm management, monitoring indications.
 - Open questions for reviewers (CARD, CCP, NE, BN): which rhythms to teach at which level; strip library with a licence; alarm management; threshold wording for ST changes.
