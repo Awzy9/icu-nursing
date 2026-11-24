@@ -46,6 +46,8 @@ Skin organisms migrate along the outside of a short-term catheter; contaminated 
 - Report and ask about lines that look unnecessary.
 - Report any breach of technique so it can be corrected.
 
+**Daily necessity and product-specific maintenance (WHO 2026).** At handover, check the site and dressing, current purpose of the catheter and which therapies still require central access. WHO supports inspection at least daily and prompt removal of catheters no longer necessary, without routine replacement solely by calendar date. Escalate suspected inflammation, infection or an unnecessary line; arrange clinician-authorized removal or alternative access so essential therapy is not interrupted. A dry intact dressing does not exclude bloodstream infection. The 2026 WHO schedule for sets carrying routine IV fluids alone must not be extrapolated to tubing carrying parenteral nutrition or lipid products; those require their own approved schedule. Aseptically access the catheter and verify the appropriate compatible sterile flush under the device and local procedure.
+
 ## 8. Monitoring parameters
 Temperature and haemodynamic trend; dressing/site check each shift (more often if the dressing is a concern); line days; tubing/dressing due dates; local CLABSI surveillance feedback.
 
