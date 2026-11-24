@@ -46,6 +46,8 @@ ICU patients lose and gain fluid through many routes (drains, losses from the gu
 - Report incidents of fluid mismanagement through the incident system, as NICE advises.
 - Reassess fluid status on arrival after transfer (NICE).
 
+**Reconciling fluid balance when the chart and patient disagree (NICE CG174).** Compare the recorded cumulative balance with serial weights where feasible, physical findings, laboratory trends and the current prescription. A recorded positive balance does not prove intravascular filling is adequate, and a discrepancy with measured weight does not justify inventing an output or deleting an intake. Check timing, measurement units, omissions (including infusions, flushes and drains), and documented losses; report unresolved discrepancies and new respiratory or perfusion deterioration. Reassessment may be required more frequently in unstable patients than the general ward minimum. Decisions about additional fluid or removal require the authorized clinical plan.
+
 ## 8. Monitoring parameters
 Hourly urine output and balance (policy); blood pressure, heart rate, perfusion, respiratory rate and effort, SpO₂, temperature; weight trend; drain and stoma losses; electrolytes, creatinine, chloride and lactate as ordered; signs of oedema; infusion rates and volumes delivered; blood product volumes.
 
@@ -85,7 +87,7 @@ Hypovolaemia and hypoperfusion, AKI, fluid overload and pulmonary oedema, electr
 Time-stamped volumes in and out, cumulative balance, source of each item, weights, catheter checks, abnormal findings and who was told, orders received, incidents.
 
 ## 15. Practical bedside example
-At the end of each hour you empty the catheter bag, record the volume against the time, add the hourly infusion and drain volumes, check the cumulative balance, compare with the plan, and tell the doctor when two consecutive hours are below the threshold or the trend is changing.
+At the end of each hour you measure urine with the approved drainage system without breaking the closed system, record the volume and time, reconcile infusion and drain volumes, and compare the cumulative balance with the plan. Escalate unexpected oliguria or deterioration promptly under the unit pathway rather than waiting for a fixed number of hours.
 
 ## 16. Clinical case (fictional)
 A 70-year-old woman after emergency surgery is receiving maintenance fluids. Over six hours her urine output falls below the threshold, her heart rate rises and her peripheries are cool. The nurse checks the catheter, records the balance, repeats observations, calls with SBAR and prepares for blood tests. The doctor reviews the fluid plan; the nurse continues hourly monitoring.
