@@ -66,6 +66,22 @@ describe("draft index (metadata only)", () => {
       expect(hasSourceGap(x)).toBe(true);
     }
   });
+  it("tracks neurological and anaphylaxis source checks without lifting international rights restrictions", () => {
+    for (const id of ["N-RCUK-ANAPH-2021", "N-NICE-CG103", "N-NICE-NG232", "N-NICE-NG217"]) {
+      const entries = onDisk.entries.filter(e => e.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const e of entries) {
+        expect(e.sources.find(s => s.id === id)).toEqual({ id, licence_class: "RED", verified: "2026-11-24" });
+        expect(needsRightsCheck(e)).toBe(true);
+        expect(e.clinically_reviewed).toBe(false);
+      }
+    }
+    for (const key of ["SC-08", "SC-17", "SC-19", "SC-20"]) {
+      const e = onDisk.entries.find(x => x.key === key)!;
+      expect(e.required_sources).toBeGreaterThan(0);
+      expect(hasSourceGap(e)).toBe(true);
+    }
+  });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);
   });

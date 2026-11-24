@@ -1578,7 +1578,7 @@
     {
      "id": "N-RCUK-ANAPH-2021",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ADRENALIN-IM-2025",
@@ -4852,8 +4852,8 @@
     },
     {
      "id": "N-NICE-NG217",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ACNS-CCEEG-2015",
@@ -5257,8 +5257,8 @@
     },
     {
      "id": "N-NICE-CG103",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AHRQ-TS",
@@ -5348,7 +5348,7 @@
     {
      "id": "N-RCUK-ANAPH-2021",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ADRENALIN-IM-2025",
@@ -5387,8 +5387,8 @@
    "sources": [
     {
      "id": "N-NICE-NG232",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ACS-TBI-2024",
@@ -5422,13 +5422,13 @@
    "sources": [
     {
      "id": "N-NICE-CG103",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "N-RCUK-ANAPH-2021",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-UKKA-HK-2026-07",
