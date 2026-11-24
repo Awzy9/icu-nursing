@@ -56,6 +56,11 @@
       "id": "S-NICE-NG258-2026",
       "read": "partial",
       "use": "NICE NG258 May 2026: post-treatment observation and allergy referral, selected recommendations"
+    },
+    {
+      "id": "S-ANZCOR-SPECIAL-2026",
+      "read": "partial",
+      "use": "ANZCOR guideline 11.10 selected official anaphylaxis and refractory escalation passages; Australian/New Zealand context, not local protocol."
     }
   ],
   "required_sources": [
@@ -186,13 +191,14 @@
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**. Persistent airway, breathing or circulatory problems after first-line IM adrenaline require rapid reassessment and timely further IM treatment under the emergency protocol. RCUK advises repeating IM adrenaline after five minutes when those problems persist. Seek expert help for refractory anaphylaxis; intravenous adrenaline for a patient with spontaneous circulation is a specialist intervention, not a routine substitute for IM therapy. Persistent respiratory or circulatory compromise despite two appropriate IM administrations requires immediate specialist refractory-anaphylaxis escalation; continue authorized emergency care.",
+          "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**. Persistent airway, breathing or circulatory problems after first-line IM adrenaline require rapid reassessment and timely further IM treatment under the emergency protocol. RCUK advises repeating IM adrenaline after five minutes when those problems persist. Seek expert help for refractory anaphylaxis; intravenous adrenaline for a patient with spontaneous circulation is a specialist intervention, not a routine substitute for IM therapy. Persistent respiratory or circulatory compromise despite two appropriate IM administrations requires immediate specialist refractory-anaphylaxis escalation; continue authorized emergency care. ANZCOR also highlights rapidly progressing airway obstruction in refractory anaphylaxis. Alert airway experts early and communicate changes in voice, respiratory effort, oxygenation and perfusion. Support the specialist-directed plan rather than independently starting intravenous adrenaline.",
           "consequence": "Using the recommended site may support appropriate delivery while the emergency team reassesses and treats persistent compromise.",
-          "support": "sourced",
+          "support": "partial",
           "sources": [
             "S-ADRENALIN-IM-2025",
             "N-RCUK-ANAPH-2021",
-            "S-RCUK-SPECIAL-2025"
+            "S-RCUK-SPECIAL-2025",
+            "S-ANZCOR-SPECIAL-2026"
           ]
         },
         {
@@ -303,7 +309,8 @@
       "Monitor, document and report the reaction.",
       "Do not delay anaphylaxis first-line emergency treatment to answer an injection-site knowledge question or wait for a non-urgent prescription workflow.",
       "Reassess response to IM adrenaline promptly; persistent compromise requires timely protocol-directed repeat treatment and expert escalation, not substitution with antihistamines or routine steroids.",
-      "Risk-based observation after resolution and allergy follow-up are supported by NICE NG258 (2026); initial improvement alone is not sufficient for transfer."
+      "Risk-based observation after resolution and allergy follow-up are supported by NICE NG258 (2026); initial improvement alone is not sufficient for transfer.",
+      "Progressive airway compromise during refractory anaphylaxis needs early expert airway support and continuous reassessment."
     ],
     "links": [
       {
