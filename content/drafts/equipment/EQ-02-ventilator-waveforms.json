@@ -1,131 +1,148 @@
 {
- "equipment_id": "EQ-02",
- "number": 2,
- "title": "Ventilator controls and waveforms",
- "category": "ventilator-waveforms",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": false,
- "manufacturer_documents": [
-  {
-   "source_id": "S-DRAEGER-V500-IFU",
-   "device": "Draeger Evita Infinity V500, instructions for use (version as held in the source register); statements apply to that device only"
-  },
-  {
-   "source_id": "S-HAMILTON-C1",
-   "device": "Hamilton Medical HAMILTON-C1, operator's manual for software 2.2.x (2020); statements apply to that device and version only"
-  }
- ],
- "related_skill": "SK-07",
- "evidence_status": "partial",
- "diagram": {
-  "kind": "signal",
-  "original_graphic": true,
-  "parts": [
-   "Rising part",
-   "Peak",
-   "Falling part",
-   "Baseline"
+  "equipment_id": "EQ-02",
+  "number": 2,
+  "title": "Ventilator controls and waveforms",
+  "category": "ventilator-waveforms",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+  "device_neutral": false,
+  "manufacturer_documents": [
+    {
+      "source_id": "S-DRAEGER-V500-IFU",
+      "device": "Draeger Evita Infinity V500, instructions for use (version as held in the source register); statements apply to that device only"
+    },
+    {
+      "source_id": "S-HAMILTON-C1",
+      "device": "Hamilton Medical HAMILTON-C1, operator's manual for software 2.2.x (2020); statements apply to that device and version only"
+    }
   ],
-  "alt_text_needed": true
- },
- "parameters": [
-  {
-   "name": "Pressure waveform",
-   "explanation": null,
-   "support": "needs_source"
+  "related_skill": "SK-07",
+  "evidence_status": "partial",
+  "diagram": {
+    "kind": "signal",
+    "original_graphic": true,
+    "parts": [
+      "Rising part",
+      "Peak",
+      "Falling part",
+      "Baseline"
+    ],
+    "alt_text_needed": true
   },
-  {
-   "name": "Flow waveform",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Volume",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Respiratory rate",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Alarm limits",
-   "explanation": null,
-   "support": "needs_source"
-  }
- ],
- "safety_concepts": [
-  {
-   "text": "Respond to every alarm by going to the patient; do not rely on silencing. If ventilation is inadequate and the cause is not immediately correctable, use the unit's emergency ventilation method and call for help.",
-   "support": "partial",
-   "sources": [
-    "S-HAMILTON-C1",
-    "S-DRAEGER-V500-IFU"
-   ],
-   "section": "safety"
-  },
-  {
-   "text": "Do not change alarm limits or modes unless authorised by order, protocol and training; extreme limits make alarms useless.",
-   "support": "partial",
-   "sources": [
-    "S-HAMILTON-C1"
-   ],
-   "section": "safety"
-  }
- ],
- "monitoring_concepts": [
-  {
-   "text": "Record set and delivered values, airway pressures, SpO2, end-tidal CO2 and waveforms at the policy frequency, and trends.",
-   "support": "partial",
-   "sources": [
-    "S-AARC-PVA"
-   ],
-   "section": "monitoring"
-  }
- ],
- "escalation_concepts": [
-  {
-   "text": "Call for help early for rising pressures, falling volumes, desaturation or distress.",
-   "support": "partial",
-   "sources": [
-    "S-AARC-PVA"
-   ],
-   "section": "escalation"
-  }
- ],
- "sources": [
-  {
-   "id": "S-AARC-PVA",
-   "read": "full",
-   "use": "2024 AARC patient-ventilator assessment CPG"
-  },
-  {
-   "id": "S-HAMILTON-C1",
-   "read": "partial",
-   "use": "manufacturer manual: applies to this device only"
-  },
-  {
-   "id": "S-DRAEGER-V500-IFU",
-   "read": "partial",
-   "use": "manufacturer manual: applies to this device only"
-  }
- ],
- "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
-  "Unit policy for this equipment"
- ],
- "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
- ]
+  "parameters": [
+    {
+      "name": "Pressure waveform",
+      "explanation": "The pressure trace displays airway pressure over time. Assess the measured pressures, including plateau pressure when appropriately obtained, and PEEP including intrinsic PEEP; interpret changes alongside patient effort and mechanics.",
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
+    },
+    {
+      "name": "Flow waveform",
+      "explanation": "The flow trace shows the direction and speed of gas movement during breathing. Failure of expiratory flow to reach baseline before the next inspiration may suggest incomplete exhalation; review with the respiratory team rather than diagnosing from a single trace.",
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
+    },
+    {
+      "name": "Volume",
+      "explanation": "Tidal volume is the volume associated with a breath. Compare set and measured exhaled values and document tidal volume relative to predicted body weight; leaks and pressure limits may affect delivery.",
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
+    },
+    {
+      "name": "Respiratory rate",
+      "explanation": null,
+      "support": "needs_source"
+    },
+    {
+      "name": "Alarm limits",
+      "explanation": null,
+      "support": "needs_source"
+    }
+  ],
+  "safety_concepts": [
+    {
+      "text": "Go to the patient immediately when an alarm occurs. If ventilation is inadequate, summon emergency help and support effective ventilation according to the unit emergency protocol in parallel; do not delay rescue while identifying the alarm cause.",
+      "support": "partial",
+      "sources": [
+        "S-HAMILTON-C1",
+        "S-DRAEGER-V500-IFU"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Do not change alarm limits or modes unless authorised by order, protocol and training; extreme limits make alarms useless.",
+      "support": "partial",
+      "sources": [
+        "S-HAMILTON-C1"
+      ],
+      "section": "safety"
+    }
+  ],
+  "monitoring_concepts": [
+    {
+      "text": "Record set and delivered values, airway pressures, SpO2, end-tidal CO2 and waveforms at the policy frequency, and trends.",
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ],
+      "section": "monitoring"
+    },
+    {
+      "text": "Assess plateau pressure, measured tidal volume relative to predicted body weight, PEEP and auto-PEEP as appropriate with the respiratory team; this is monitoring guidance, not a universal prescription.",
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ],
+      "section": "monitoring"
+    }
+  ],
+  "escalation_concepts": [
+    {
+      "text": "Call for help early for rising pressures, falling volumes, desaturation or distress.",
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ],
+      "section": "escalation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-AARC-PVA",
+      "read": "full",
+      "use": "2024 AARC patient-ventilator assessment CPG"
+    },
+    {
+      "id": "S-HAMILTON-C1",
+      "read": "partial",
+      "use": "manufacturer manual: applies to this device only"
+    },
+    {
+      "id": "S-DRAEGER-V500-IFU",
+      "read": "partial",
+      "use": "manufacturer manual: applies to this device only"
+    }
+  ],
+  "required_sources": [
+    "Source explaining each listed monitored parameter in device-neutral terms",
+    "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+    "Unit policy for this equipment"
+  ],
+  "gaps": [
+    "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+    "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+    "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+  ]
 }

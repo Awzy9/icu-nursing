@@ -7079,6 +7079,20 @@
     "gaps": 6,
     "required_sources": 4,
     "issues": 0
+   },
+   {
+    "hash": "ead8167fecb72010",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
+    ],
+    "gaps": 6,
+    "required_sources": 4,
+    "issues": 0
    }
   ],
   "SC-02": [
@@ -7769,6 +7783,21 @@
     "gaps": 6,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "5421ee0741b3fa21",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -8103,6 +8132,20 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "fba8cc0b71e57b5d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-CG103",
+     "N-RCUK-ANAPH-2021",
+     "N-UKKA-HK-2026-07",
+     "S-OPENRN-ADV-C7"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-02": [
@@ -8122,6 +8165,19 @@
    {
     "hash": "78faf82d9fc0b17b",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "b4e87bec973cc3f5",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-AARC-PVA",
@@ -8159,6 +8215,19 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "8e2038ac0c109e15",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-SSC-2021"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-04": [
@@ -8185,6 +8254,18 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "2d3e2a03e287ab32",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-05": [
@@ -8202,6 +8283,17 @@
    {
     "hash": "24646b37b9208135",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "57ace47009ec0a52",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-ERC-ALS-2025"
@@ -8287,6 +8379,19 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "478d9e8c9de9ed77",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-08": [
@@ -8304,6 +8409,17 @@
    {
     "hash": "8068b4a036f9ba96",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-INTL-PI-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "2d8c92d4bf6ce100",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-INTL-PI-2026"

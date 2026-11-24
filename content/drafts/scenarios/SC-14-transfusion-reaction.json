@@ -96,11 +96,11 @@
       ],
       "options": [
         {
-          "text": "Stop the transfusion immediately if a reaction is suspected, urgently assess the patient and vital signs, notify the clinical team and blood bank, recheck patient/component identity, and maintain IV access without pushing blood remaining in the implicated tubing into the patient. Preserve the product and set as directed by local policy.",
+          "text": "Stop the transfusion immediately if a reaction is suspected, urgently assess the patient and vital signs, notify the clinical team and blood bank, recheck patient/component identity, and maintain IV access without pushing blood remaining in the implicated tubing into the patient. Preserve the product and set as directed by local policy. Do not independently restart the transfusion.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment.",
+          "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment. For suspected serious reactions do not restart the implicated component. For other reactions any resumption requires a satisfactory specialist/team assessment and local protocol; never restart independently. Activate emergency response immediately for compromised airway, breathing or circulation.",
           "consequence": "Transfusion is stopped; the patient and IV access are assessed, the team is notified, and the blood product and set are retained according to the reaction protocol.",
           "support": "partial",
           "sources": [
@@ -201,7 +201,8 @@
     "learning_points": [
       "Stop the transfusion and inform the team and transfusion service at the first sign of a reaction.",
       "Keep intravenous access; further treatment is a prescriber decision.",
-      "Give and record a factual timeline: component and estimated volume infused, transfusion start and stop times, symptom onset, changes from baseline vital signs, and the response to initial actions."
+      "Give and record a factual timeline: component and estimated volume infused, transfusion start and stop times, symptom onset, changes from baseline vital signs, and the response to initial actions.",
+      "Do not independently restart a transfusion following a suspected reaction; activate emergency response for compromised airway, breathing or circulation."
     ],
     "links": [
       {
