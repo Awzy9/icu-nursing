@@ -86,6 +86,14 @@
           "sources": [
             "S-CDC-HANDHYG-2024"
           ]
+        },
+        {
+          "text": "Use new sterile injection equipment for each injection and never re-enter a medication container with a used syringe or needle. Single-use medication containers and infusion bags are for one patient only. Follow the facility's aseptic preparation and multidose-vial policy.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-IC",
+            "S-CDC-ISOLATION-2007"
+          ]
         }
       ]
     },
@@ -237,6 +245,16 @@
       "sources": [
         "S-CDC-IC",
         "S-CDC-HANDHYG-2024"
+      ]
+    },
+    {
+      "phase": "procedure",
+      "text": "Use new sterile injection equipment for each injection and never re-enter a medication container with a used syringe or needle. Single-use medication containers and infusion bags are for one patient only. Follow the facility's aseptic preparation and multidose-vial policy.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC",
+        "S-CDC-ISOLATION-2007"
       ]
     }
   ],

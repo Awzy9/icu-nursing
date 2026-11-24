@@ -78,7 +78,7 @@
       ]
     },
     "assessment": {
-      "support": "local_protocol",
+      "support": "partial",
       "items": [
         {
           "text": "Scale level definitions (RASS, SAS) are not reproduced; use the unit-approved tool and its training.",
@@ -87,6 +87,13 @@
         },
         {
           "text": "A sedation score describes observable arousal or agitation but does not by itself diagnose delirium. When altered behaviour is new, also assess oxygenation, pain, neurological change and other plausible causes, and escalate any acute deterioration rather than automatically adjusting the sedative.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "During neuromuscular blockade, movement-based sedation scales cannot establish consciousness or comfort. Verify the prescribed analgesia and sedation plan and seek team-directed monitoring of sedation depth; processed EEG may assist in selected deeply sedated or paralysed patients. Absence of movement alone does not establish adequate sedation.",
           "support": "partial",
           "sources": [
             "S-SCCM-PADIS"
@@ -204,10 +211,19 @@
       "sources": [
         "S-SCCM-PADIS"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "During neuromuscular blockade, movement-based sedation scales cannot establish consciousness or comfort. Verify the prescribed analgesia and sedation plan and seek team-directed monitoring of sedation depth; processed EEG may assist in selected deeply sedated or paralysed patients. Absence of movement alone does not establish adequate sedation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
     }
   ],
   "gaps": [
-    "RASS/SAS definitions, dosing, neuromuscular blockade: not covered.",
+    "RASS/SAS definitions, dosing and neuromuscular blockade procedures are not covered. Selected PADIS guidance on depth monitoring during paralysis is mapped; device-specific interpretation and specialist oversight remain necessary.",
     "PADIS full text: recommendation statements only.",
     "SCCM 2025 recommendation-level statements support an ICU-wide multifactorial response, but this lesson does not contain licensed CAM-ICU or ICDSC scoring instructions or independent patient-specific sedation orders."
   ],

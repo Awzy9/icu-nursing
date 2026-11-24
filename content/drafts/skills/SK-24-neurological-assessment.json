@@ -23,6 +23,11 @@
       "id": "S-OPENRN-HA-CVA",
       "read": "full",
       "use": "Open RN Health Alterations 9.9: neurological assessment and increased-ICP manifestations (stroke text; entry-level)"
+    },
+    {
+      "id": "S-NICE-NG232",
+      "read": "partial",
+      "use": "Indexed head injury observation and deterioration recommendations"
     }
   ],
   "objectives": [
@@ -88,6 +93,13 @@
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-CVA"
+          ]
+        },
+        {
+          "text": "In patients being observed after head injury, record pupil size and response to light, limb movement and asymmetry, consciousness components and vital signs. A new unequal pupil, new focal weakness or worsening consciousness requires urgent clinical reassessment. Apply the observation schedule and escalation thresholds appropriate to the diagnosis and local plan.",
+          "support": "partial",
+          "sources": [
+            "S-NICE-NG232"
           ]
         }
       ]
@@ -207,10 +219,19 @@
       "sources": [
         "S-GCS-OFFICIAL"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "In patients being observed after head injury, record pupil size and response to light, limb movement and asymmetry, consciousness components and vital signs. A new unequal pupil, new focal weakness or worsening consciousness requires urgent clinical reassessment. Apply the observation schedule and escalation thresholds appropriate to the diagnosis and local plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NICE-NG232"
+      ]
     }
   ],
   "gaps": [
-    "Interpretation bands, ICP/CPP management and brain-injury guidelines: not covered.",
+    "Interpretation bands, ICP/CPP management and comprehensive brain-injury protocols are not covered. Selected NICE head injury observation recommendations are mapped; no universal neurological observation interval is inferred.",
     "GCS component wording: copyright; permission required to reproduce.",
     "Phase 14: the added statements come from an entry-level stroke text; ICP and cerebral perfusion values and monitoring-device care remain unsourced."
   ],
@@ -239,6 +260,17 @@
       "read": "full",
       "licence_class": "GREEN",
       "permission_required": "No"
+    },
+    {
+      "id": "S-NICE-NG232",
+      "title": "Head injury: assessment and early management (NG232)",
+      "publisher": "NICE",
+      "version": "2023 guideline",
+      "url": "https://www.nice.org.uk/guidance/ng232/chapter/recommendations",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

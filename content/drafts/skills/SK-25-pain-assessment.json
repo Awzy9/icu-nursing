@@ -116,6 +116,14 @@
           "sources": [
             "S-CPOT-REVIEW-2024"
           ]
+        },
+        {
+          "text": "When the patient cannot self-report but observable behaviour is present, the SCCM PADIS statements support BPS, BPS-NI or CPOT for the appropriate ICU population. Use the unit's validated version and staff training; these are not interchangeable numeric scales. If behaviour is unobservable, record the limitation and seek a clinical pain-management plan.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS",
+            "S-CPOT-REVIEW-2024"
+          ]
         }
       ]
     },
@@ -240,6 +248,16 @@
     {
       "phase": "assessment",
       "text": "If paralysis or another condition makes behaviour unobservable, record the assessment limitation; immobility does not establish comfort. Vital-sign changes are prompts for assessment, not a substitute pain score.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS",
+        "S-CPOT-REVIEW-2024"
+      ]
+    },
+    {
+      "phase": "assessment",
+      "text": "When the patient cannot self-report but observable behaviour is present, the SCCM PADIS statements support BPS, BPS-NI or CPOT for the appropriate ICU population. Use the unit's validated version and staff training; these are not interchangeable numeric scales. If behaviour is unobservable, record the limitation and seek a clinical pain-management plan.",
       "critical": true,
       "support": "partial",
       "sources": [

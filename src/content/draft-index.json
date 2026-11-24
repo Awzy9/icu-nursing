@@ -2329,7 +2329,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "13fd126fa1bd60c9"
+   "hash": "1448b961a539caf5"
   },
   {
    "key": "SK-22",
@@ -2340,6 +2340,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-FDA-MISCONNECTIONS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
@@ -2354,7 +2359,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "50a90bb6f7da97a0"
+   "hash": "98ed692ef0d0a726"
   },
   {
    "key": "SK-23",
@@ -2374,7 +2379,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "3aab19b2b900b8fe"
+   "hash": "98c35225c2869eda"
   },
   {
    "key": "SK-24",
@@ -2391,6 +2396,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NICE-NG232",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-HA-CVA",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -2399,7 +2409,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "b0b7417998a4799e"
+   "hash": "bd659e0507068297"
   },
   {
    "key": "SK-25",
@@ -2429,7 +2439,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "53d68c4cae779aee"
+   "hash": "ccdbe0e19343d238"
   },
   {
    "key": "MD-01",
