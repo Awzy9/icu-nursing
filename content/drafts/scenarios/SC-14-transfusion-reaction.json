@@ -173,7 +173,7 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Fever, rigors and circulatory deterioration can indicate a severe acute transfusion reaction, including bacterial contamination or acute haemolysis. Do not restart. Activate emergency support and coordinate the clinician-directed work-up, including cultures or haemolysis investigations if ordered. Do not delay resuscitation to complete paperwork. BSH emphasizes that emergency management is guided by clinical severity and must not wait for laboratory results. For severe dyspnea, the team assesses potential anaphylaxis, pulmonary edema and transfusion-associated lung injury; respiratory symptoms alone do not establish TACO or TRALI.",
+          "feedback": "Fever, rigors and circulatory deterioration can indicate a severe acute transfusion reaction, including bacterial contamination or acute haemolysis. Do not restart. Activate emergency support and coordinate the clinician-directed work-up, including cultures or haemolysis investigations if ordered. Do not delay resuscitation to complete paperwork. BSH emphasizes that emergency management is guided by clinical severity and must not wait for laboratory results. For severe dyspnea, the team assesses potential anaphylaxis, pulmonary edema and transfusion-associated lung injury; respiratory symptoms alone do not establish TACO or TRALI. TACO may become apparent during transfusion or up to 12 hours afterwards; TRALI typically develops during transfusion or within six hours of completion. These are recognition windows, not a reason to dismiss later deterioration. Do not assume fluid overload or give a diuretic reflexively. Suspected anaphylaxis requires emergency help and prompt intramuscular adrenaline (epinephrine) through the authorised anaphylaxis pathway; do not delay urgent treatment for investigations.",
           "consequence": "Emergency support and the blood-bank investigation proceed with a clear clinical timeline and the implicated component available as directed.",
           "support": "partial",
           "sources": [
@@ -217,7 +217,9 @@
       "Give and record a factual timeline: component and estimated volume infused, transfusion start and stop times, symptom onset, changes from baseline vital signs, and the response to initial actions.",
       "Do not independently restart a transfusion following a suspected reaction; activate emergency response for compromised airway, breathing or circulation.",
       "Fever with rigors or hypotension requires urgent evaluation for serious causes such as bacterial contamination or acute haemolysis; do not restart the implicated component.",
-      "Clinical severity determines urgency; coordinate investigations in parallel with emergency treatment, and preserve the implicated component and giving set according to the transfusion service."
+      "Clinical severity determines urgency; coordinate investigations in parallel with emergency treatment, and preserve the implicated component and giving set according to the transfusion service.",
+      "TACO may become apparent during transfusion or up to 12 hours afterwards; TRALI typically develops during transfusion or within six hours of completion. These are recognition windows, not a reason to dismiss later deterioration. Do not assume fluid overload or give a diuretic reflexively.",
+      "Suspected anaphylaxis requires emergency help and prompt intramuscular adrenaline (epinephrine) through the authorised anaphylaxis pathway; do not delay urgent treatment for investigations."
     ],
     "links": [
       {

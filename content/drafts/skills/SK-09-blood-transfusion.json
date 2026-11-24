@@ -36,8 +36,8 @@
     },
     {
       "id": "S-BSH-ATR",
-      "read": "not_read",
-      "use": "BSH acute transfusion reactions guideline: not accessed"
+      "read": "partial",
+      "use": "BSH 2023 selected initial management, anaphylaxis and haemorrhage-associated hypotension recommendations accessed 2026-11-24; full appraisal pending"
     },
     {
       "id": "S-ISBT-ATR-EDU",
@@ -175,6 +175,13 @@
           "sources": [
             "S-AABB-COI-2024"
           ]
+        },
+        {
+          "text": "TACO may become apparent during transfusion or up to 12 hours afterwards; TRALI typically develops during transfusion or within six hours of completion. These are recognition windows, not a reason to dismiss later deterioration. Do not assume fluid overload or give a diuretic reflexively.",
+          "support": "partial",
+          "sources": [
+            "S-LIFEBLOOD-ATR"
+          ]
         }
       ]
     },
@@ -201,6 +208,20 @@
           "support": "partial",
           "sources": [
             "S-LIFEBLOOD-ATR"
+          ]
+        },
+        {
+          "text": "During active major haemorrhage, new hypotension needs immediate senior assessment of ongoing blood loss versus a possible component reaction. Coordinate lifesaving resuscitation without waiting for laboratory results; the responsible team determines whether transfusion can continue or a different component is needed. Do not independently continue or restart a suspect component.",
+          "support": "partial",
+          "sources": [
+            "S-BSH-ATR"
+          ]
+        },
+        {
+          "text": "Suspected anaphylaxis requires emergency help and prompt intramuscular adrenaline (epinephrine) through the authorised anaphylaxis pathway; do not delay urgent treatment for investigations.",
+          "support": "partial",
+          "sources": [
+            "S-BSH-ATR"
           ]
         }
       ]
@@ -318,17 +339,36 @@
       "sources": [
         "S-LIFEBLOOD-ATR"
       ]
+    },
+    {
+      "phase": "escalation",
+      "text": "During active major haemorrhage, new hypotension needs immediate senior assessment of ongoing blood loss versus a possible component reaction. Coordinate lifesaving resuscitation without waiting for laboratory results; the responsible team determines whether transfusion can continue or a different component is needed. Do not independently continue or restart a suspect component.",
+      "support": "partial",
+      "sources": [
+        "S-BSH-ATR"
+      ],
+      "critical": true
+    },
+    {
+      "phase": "escalation",
+      "text": "Suspected anaphylaxis requires emergency help and prompt intramuscular adrenaline (epinephrine) through the authorised anaphylaxis pathway; do not delay urgent treatment for investigations.",
+      "support": "partial",
+      "sources": [
+        "S-BSH-ATR"
+      ],
+      "critical": true
     }
   ],
   "gaps": [
-    "First-line actions after a reaction: BSH guideline not accessed.",
+    "BSH 2023 selected first-response recommendations checked; full guideline appraisal and local protocol validation pending.",
     "Component-specific details: only general sections read.",
     "Australian Lifeblood selected reaction guidance now inspected; jurisdiction-specific transfusion policies, complete component guidance and UK BSH source still require review."
   ],
   "permissions": [
     "AABB Circular: reproduction permission required.",
     "Open RN: CC BY with attribution; check image licences.",
-    "ISBT educational-module text is cite/paraphrase only until reuse terms have been verified; figures and algorithms are not reproduced."
+    "ISBT educational-module text is cite/paraphrase only until reuse terms have been verified; figures and algorithms are not reproduced.",
+    "BSH 2023 selected recommendations cited only; commercial reuse not cleared."
   ],
   "references": [
     {
@@ -377,13 +417,13 @@
     },
     {
       "id": "S-BSH-ATR",
-      "title": "Guideline on the investigation and management of acute transfusion reactions (Br J Haematol 2023; earlier BCSH 2012)",
+      "title": "Guideline on the investigation and management of acute transfusion reactions",
       "publisher": "British Society for Haematology",
       "version": "2023",
-      "url": "https://b-s-h.org.uk/guidelines",
-      "accessed": "2026-11-15",
-      "read": "not_read",
-      "licence_class": "RED (unverified)",
+      "url": "https://doi.org/10.1111/bjh.18789",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
       "permission_required": "Verify"
     },
     {

@@ -1,0 +1,3 @@
+# Transfusion reconciliation implementation — 24 November 2026
+
+Four canonical drafts amended: D08-T03 (including embedded MCQ Q4), SK-09, SC-09 and SC-14. Selected BSH 2023, Lifeblood, Canadian Blood Services and AABB 18 November 2026 notice checked. Added source records for Canadian guidance and the AABB notice; cite-only pending rights review. Existing required-source entries preserved, including BSH full-appraisal requirement. Verified old content hashes before computing replacement hashes and updating history. Added targeted regression assertions. No independent clinical review, permissions, publication flags or production deployment changed. Full CI required.

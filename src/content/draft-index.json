@@ -891,6 +891,21 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-AABB-HBV-LABEL-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-BSH-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-CBS-ATR-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-COI-2024",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -914,7 +929,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 3,
-   "hash": "176f0fceb1204db6"
+   "hash": "75a931ba9bc3eb03"
   },
   {
    "key": "D01-T17",
@@ -2124,7 +2139,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "46b319ba16cb2d64"
+   "hash": "53e2a9daac0a8c08"
   },
   {
    "key": "SK-10",
@@ -4911,6 +4926,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BSH-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ISTH-DIC-2025",
      "licence_class": "RED",
      "verified": "2026-11-21"
@@ -4939,7 +4959,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "676fd339ac321567"
+   "hash": "1d2c2cf57d8ea743"
   },
   {
    "key": "SC-10",
@@ -5134,7 +5154,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 1,
-   "hash": "883e9d9a88fff219"
+   "hash": "0d139dcf01476bba"
   },
   {
    "key": "SC-15",
