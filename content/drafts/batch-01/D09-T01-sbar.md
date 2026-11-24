@@ -93,10 +93,10 @@ D. "I have already written the latest observations on the chart and flagged them
 **Q2 (prioritization).** A patient's blood pressure has fallen and he is newly confused, while a colleague asks for help with a routine task. What should the nurse do first?
 A. Finish the routine task first, then collect all the observations and make the call afterwards so that it is complete.
 B. Send a text message saying "please review bed 4" and carry on with the routine task.
-C. Assess the patient quickly, gather the key data and call with SBAR, giving a request and a time frame.
+C. Assess the patient and activate urgent help; communicate key findings and a specific request.
 D. Ask the family to find a doctor while the nurse helps the colleague.
 **Answer: C.**
-**Why correct:** Deterioration is time-critical, and a structured call with a request speeds up action.
+**Why correct:** New hypotension with confusion requires urgent bedside assessment and emergency escalation. Call while assessment continues; SBAR structures the essential information but gathering a complete history must not delay the emergency response.
 **Why not A:** Delaying the call delays treatment.
 **Why not B:** A vague message lacks data and a time frame, and may not be read promptly.
 **Why not D:** Escalation is the nurse's responsibility, and relatives should not be relied on for it.
@@ -107,7 +107,7 @@ B. Repeat the specific concern with new data, ask for bedside review within a st
 C. Wait until the next scheduled round to raise the concern again, to avoid seeming to challenge the doctor in front of the team.
 D. Reduce the observation frequency so that the team is not disturbed by further alarms.
 **Answer: B.**
-**Why correct:** A persisting concern should be voiced clearly with data and a request, and escalation policy supports going further.
+**Why correct:** Re-state the unresolved concern and request urgent bedside review; if instability persists or the response is insufficient, activate the escalation chain immediately. Continue patient assessment and obtain explicit confirmation of the agreed plan and who will act.
 **Why not A:** Documenting alone does not resolve the risk to the patient.
 **Why not C:** Waiting wastes time while the patient may be deteriorating.
 **Why not D:** More frequent observation, not less, is appropriate when the nurse is worried.
@@ -118,7 +118,7 @@ B. It is meant for physicians and is not designed for nurses.
 C. It replaces the written record once a call has been made.
 D. It is adaptable: the parts used can fit the situation, and a repeat-back confirms the response agreed.
 **Answer: D.**
-**Why correct:** The page describes SBAR as adaptable, like a menu, and describes repeat-back for the request.
+**Why correct:** SBAR is adaptable to the urgency. AHRQ check-back is a separate closed-loop technique: the receiver confirms the message and the sender verifies it. Use it for critical requests and agreed actions; it does not replace documentation.
 **Why not A:** The page stresses flexibility.
 **Why not B:** It is for any team member and can even be adapted for patients and families.
 **Why not C:** The written record remains a separate requirement.
@@ -147,6 +147,8 @@ D. Give last week's early-warning scores to show how the patient has changed ove
 
 ## 18. References
 - AHRQ. TeamSTEPPS 3.0 Curriculum, Module 1: Communication, Tool: SBAR. https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html (accessed 2026-11-14)
+
+- AHRQ TeamSTEPPS Check-Back. https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/checkback.html (selected recommendation excerpts, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Use the institution's handover format and escalation policy (such as response times and chain of command).

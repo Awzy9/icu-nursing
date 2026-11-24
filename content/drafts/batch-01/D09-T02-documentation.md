@@ -89,9 +89,9 @@ B. Ask the colleague who saw her give the dose to record it for her, so that it 
 C. Record it as soon as possible with the actual time of administration, marked as a late entry if the system requires.
 D. Leave it unrecorded, because the pharmacy record already shows that the dose was dispensed.
 **Answer: C.**
-**Why correct:** Timely, accurate recording by the person who did the task, with the real time.
+**Why correct:** Record promptly using your own authenticated entry, with the actual administration time and the late-entry time or marker required by the local system. NMC Code section 10 distinguishes recording at the time of care from a later entry; do not backdate or imply a dose was given when it was not.
 **Why not A:** Batching entries and backdating them blur the true time and risk repeat doses.
-**Why not B:** Only the person who did the task should document it; others cannot attest to her actions.
+**Why not B:** A colleague may document their own direct observations or an authorized witness role, but must not impersonate the administering nurse or attest to unverified administration.
 **Why not D:** Dispensing is not administration, and the record must show what was given.
 
 **Q2 (judgment).** A nurse is recording an overnight event after a patient complained of chest pain. Which entry is most appropriate in the record?
@@ -109,9 +109,9 @@ D. "Patient was fine all night according to the other nurse who looked after him
 A. Cover the value with correction fluid and write the right figure over it so that the page stays neat and readable.
 B. Cross it out repeatedly so that nobody can read the original value.
 C. Replace the whole sheet with a neat rewritten copy and discard the original page so that the chart is easy to read.
-D. Draw one line through it, write "mistaken entry" with her initials, and add the correct entry.
+D. Keep the original legible, identify and authenticate the correction, then enter the correct value.
 **Answer: D.**
-**Why correct:** A single line, the words 'mistaken entry' and the writer's initials keep the original readable and show who corrected it, which supports an honest, auditable record. Obscuring or removing entries suggests concealment.
+**Why correct:** Follow the approved paper-record correction procedure: preserve the original entry, identify the correction and authenticate and date/time it as required. A single line may be used under local policy; the exact notation is not universal. Never obscure or discard the original to conceal an error.
 **Why not A:** Obscuring the original suggests concealment and is not allowed.
 **Why not B:** The original entry must remain readable.
 **Why not C:** Discarding part of the record is inappropriate; entries must be preserved.
@@ -133,7 +133,7 @@ B. A progress note that includes the time, measurements and a quotation of what 
 C. Hourly observations with a five-hour gap during a period of falling blood pressure.
 D. A medication record that gives the reason a prescribed dose was withheld and who was told.
 **Answer: C.**
-**Why correct:** A five-hour gap in observations while the blood pressure is falling suggests missed monitoring or recording and needs follow-up. Correcting an error, a detailed note and a recorded reason for a withheld dose are good practice.
+**Why correct:** A five-hour gap during falling blood pressure needs immediate patient reassessment, escalation if deterioration persists, and reconciliation of the record. Distinguish missing documentation from missed care; report the gap under local safety policy and never invent observations.
 **Why not A:** This is appropriate correction practice.
 **Why not B:** This is good documentation practice.
 **Why not D:** Recording the reason for a withheld dose is expected practice.

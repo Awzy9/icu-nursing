@@ -109,7 +109,7 @@ B. Encourage oral fluids and ask the family to stay and watch her through the ni
 C. Document the daughter's concern and hand over to the morning team, since she has no fever.
 D. Escalate now as possible sepsis, citing the fall from her usual pressure and the new confusion.
 **Answer: D.**
-**Why correct:** NICE NG253 requires clinical judgement alongside NEWS2, including changed behaviour reported by family or carers; new confusion and a substantial blood-pressure fall warrant prompt assessment despite a NEWS2 score of 4. The score does not exclude severe illness.
+**Why correct:** NICE NG253 requires clinical judgement alongside NEWS2, including changed behaviour reported by family or carers; new confusion and a substantial blood-pressure fall warrant prompt assessment despite a NEWS2 score of 4. The score does not exclude severe illness. Assess ABC and perfusion, activate urgent help and obtain repeat observations in parallel; do not wait for a higher score.
 **Why not A:** The low band is a prompt, not a reason to delay when other danger signs are present.
 **Why not B:** Oral fluids do not address possible sepsis and cannot replace clinical review; fluids are prescribed.
 **Why not C:** Fever is not required for sepsis, and waiting for the morning delays treatment.
@@ -131,8 +131,8 @@ B. Hold both until the lactate result is back so that treatment can be targeted 
 C. Prepare and collect the cultures without delaying the antimicrobial, check allergies, and give the first dose promptly.
 D. Ask the pharmacist to decide the drug and the timing, because nurses cannot take part in antimicrobial treatment or sepsis care.
 **Answer: C.**
-**Why correct:** SSC 2026 recommends collecting blood cultures as soon as possible and ideally before antimicrobials (strong), and timely antimicrobials; the nurse prepares, collects, checks allergies and gives the ordered dose promptly.
-**Why not A:** Taking cultures first is preferable when it causes no delay, and later sampling lowers their yield.
+**Why correct:** SSC 2026 recommends collecting blood cultures as soon as possible and ideally before antimicrobials (strong), and timely antimicrobials; the nurse prepares, collects, checks allergies and gives the ordered dose promptly. Obtain ordered lactate in parallel; sampling or waiting for lactate must not cause avoidable delay to urgent treatment. Timing depends on the clinical likelihood of sepsis and shock.
+**Why not A:** Obtain cultures first when feasible without delaying urgent therapy; if that is not feasible, give the ordered antimicrobial and collect cultures promptly afterwards.
 **Why not B:** Waiting for a result delays time-critical treatment.
 **Why not D:** The prescriber chooses the drug; the nurse administers it safely and promptly.
 
@@ -153,7 +153,7 @@ B. Phoning for urgent review when the score is in the high-risk band.
 C. Recording the times of the call, the review and the first antimicrobial dose.
 D. Choosing the antimicrobial and deciding the first fluid prescription.
 **Answer: D.**
-**Why correct:** Choice of antimicrobial and fluid prescription are prescribing decisions.
+**Why correct:** Antimicrobial selection and the initial fluid prescription belong to the authorized prescriber or approved protocol. Nurses contribute allergy and perfusion findings, implement authorized urgent care and reassess response; scope varies by jurisdiction.
 **Why not A:** Observations and scoring are independent nursing tasks.
 **Why not B:** Escalation is a nursing responsibility.
 **Why not C:** Documentation is a nursing responsibility.

@@ -88,7 +88,7 @@ B. Wait for a stool sample result before applying extra precautions, because the
 C. Put on gown and gloves for the turn only, and review the need for precautions once the stool result is back.
 D. Start the interim contact-precaution measures in policy now and tell the charge nurse and infection prevention.
 **Answer: D.**
-**Why correct:** Interim measures start at the trigger and escalation runs in parallel; waiting leaves other patients exposed.
+**Why correct:** CDC core practices support starting transmission-based measures according to presentation before a confirmed microbiological diagnosis. Apply the local interim pathway and notify infection prevention; assess the diarrhoea and whether a pathogen-specific hand hygiene or cleaning procedure is required.
 **Why not A:** Delaying until handover extends the period in which organisms can spread to other patients and staff.
 **Why not B:** Precautions are based on the presentation and risk, not on a confirmed laboratory result.
 **Why not C:** Protecting only one task leaves the room, equipment and later care unprotected, and nobody with infection-prevention expertise is told.
@@ -110,9 +110,9 @@ B. Transfer with the nurse in a surgical mask and the patient unmasked, so as no
 C. Postpone the scan until the isolation order is lifted, whatever the clinical urgency, to remove all risk to others.
 D. Keep the transfer to what is essential, inform imaging beforehand and follow the local respirator and patient-mask policy.
 **Answer: D.**
-**Why correct:** Transport is limited and planned, and receiving staff must know which precautions apply.
+**Why correct:** Limit movement to clinically necessary transport and alert the destination. Apply patient source control if tolerated and cover infectious lesions as appropriate. Staff respirator requirements during transport depend on the pathogen, source control, planned care and local policy; emergency airway support must not be delayed.
 **Why not A:** Standard precautions alone do not control airborne spread.
-**Why not B:** A surgical mask does not meet airborne respirator requirements, and the patient may need a mask during transport.
+**Why not B:** Leaving the patient without indicated source control and assuming a surgical mask is sufficient for the escort ignores pathogen-specific and clinical risks.
 **Why not C:** A blanket delay can harm the patient; the decision should balance clinical need with infection controls.
 
 **Q4 (application).** The nurse has just cared for a patient on contact precautions and removed the gown and gloves at the room exit. What is the best next action?
@@ -121,10 +121,10 @@ B. Perform hand hygiene per policy, then clean any shared equipment taken into t
 C. Keep the gloves on for the next task to save supplies, since they appear clean after the gown is removed.
 D. Wipe the monitor and the bed rails with the same cloth, then go to the desk to chart.
 **Answer: B.**
-**Why correct:** Hand hygiene after PPE removal and cleaning shared equipment stop transfer on hands and devices.
+**Why correct:** Perform hand hygiene immediately after removing PPE at the designated location and reprocess shared equipment before another patient uses it. Follow the disinfectant contact time and local isolation-specific hand hygiene requirements.
 **Why not A:** Contamination can be spread while walking before hand hygiene is done.
 **Why not C:** Gloves must be removed and replaced between patients; reuse is a breach.
-**Why not D:** One cloth used across surfaces spreads contamination from dirtier to cleaner areas.
+**Why not D:** This omits immediate hand hygiene and appropriate equipment reprocessing; cleaning cloth use must follow the product and facility procedure.
 
 **Q5 (monitoring).** At handover on a mixed medical unit, which patient most needs follow-up about precautions?
 A. A patient with new cough and fever, admitted from another facility, nursed in an open bay without any precautions.
@@ -151,6 +151,9 @@ D. Complete the suctioning and rinse the area at the end of the shift when the w
 ## 18. References
 - CDC. Standard Precautions for All Patient Care. Page dated 3 April 2024. https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html (accessed 2026-11-14)
 - CDC. Transmission-Based Precautions. Page dated 3 April 2024. https://www.cdc.gov/infection-control/hcp/basics/transmission-based-precautions.html (accessed 2026-11-14)
+
+- CDC isolation recommendations. https://www.cdc.gov/infection-control/hcp/isolation-precautions/recommendations.html (selected recommendation excerpts, accessed 2026-11-24)
+- CDC core practices. https://www.cdc.gov/infection-control/hcp/core-practices/ (selected recommendation excerpts, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Follow your institution's isolation policy and national rules. Hand-hygiene moments, PPE type and duration of isolation differ by organism and jurisdiction.

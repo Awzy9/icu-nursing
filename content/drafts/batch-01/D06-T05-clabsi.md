@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SHEA/IDSA/APIC Strategies to prevent CLABSI in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022; CC BY)", "CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – partly superseded", "CDC Updated Recommendations on Chlorhexidine-Impregnated Dressings (2017) – supersedes two 2011 statements"]
-sources: [S-CDC-BSI-2011, S-SHEA-CLABSI-2022]
+sources: [S-CDC-BSI-2011, S-SHEA-CLABSI-2022, S-WHO-CVC-2026]
 independently_written_note: "Original wording. SHEA 2022 (open access, CC BY) and the CDC 2011 PDF were read in full text for the recommendations listed; the CDC 2017 CHG-dressing update was confirmed from its landing page only (its detailed text was not read). No text copied. INS and national standards were not accessible."
 ---
 # Preventing CLABSI
@@ -109,9 +109,9 @@ B. Take the dressing off, pull the line yourself and send the tip for culture to
 C. Record the fever and wait for the next scheduled medical round, because the site looks clean and dry.
 D. Reassess the observations, escalate with SBAR mentioning the line, and prepare for cultures if ordered.
 **Answer: D.**
-**Why correct:** Systemic signs with a line in place need prompt assessment and escalation even when the site looks clean.
+**Why correct:** Fever and rigors with a line in place need urgent clinical assessment even if the site looks clean; a normal insertion site does not exclude a bloodstream infection. Assess perfusion, activate the sepsis pathway if indicated, and prepare ordered cultures without delaying urgent therapy. Do not assume the line is the confirmed source.
 **Why not A:** Treating only the fever delays recognition of possible sepsis.
-**Why not B:** Removing a line is a prescriber decision and may harm the patient.
+**Why not B:** Unplanned removal may interrupt essential treatment. The authorized team determines removal and sampling under local policy.
 **Why not C:** Waiting for a routine round delays potentially life-threatening care.
 
 **Q3 (application).** A nurse is about to give an intermittent injection through a needleless connector on a patient's central line. Which sequence best reduces contamination?
@@ -120,10 +120,10 @@ B. Wipe the connector once with dry gauze, access it with a sterile syringe, and
 C. Put on gloves, flush through the connector to clear it, and disinfect the connector afterwards to remove anything left on the surface.
 D. Disinfect the connector, access it with a clean but non-sterile syringe kept in the bedside drawer, and flush the line later in the shift.
 **Answer: A.**
-**Why correct:** Hand hygiene, then scrubbing the connector with the approved antiseptic and letting it dry before every access with a sterile device, is the recommended sequence. Dry gauze is not disinfection, disinfecting after access is too late, and non-sterile devices must not enter the system.
+**Why correct:** Use hand hygiene, disinfect the connector before each access with the approved antiseptic, allow the required drying time and use sterile equipment. WHO 2026 reinforces aseptic CVC access and trained staff; follow the specific antiseptic and connector instructions.
 **Why not B:** Dry gauze is not disinfection, and reusing caps contaminates the connector.
 **Why not C:** Disinfection has to come before access, not after.
-**Why not D:** Only sterile devices should enter the system, and delayed flushing adds a further risk.
+**Why not D:** Nonsterile access contaminates the system; flushing does not correct that breach.
 
 **Q4 (prioritization).** At the start of the shift four patients with central lines each have an issue. Which should the nurse address first?
 A. A tubing label with no date on it, in a patient who is stable and comfortable.
@@ -142,7 +142,7 @@ B. Ask whether each lumen is still indicated and whether the line can come out, 
 C. Say nothing about it, since questioning the medical plan during the round is outside the nurse's role and could disrupt the team.
 D. Suggest replacing it with a new line at another site to lower the infection risk.
 **Answer: B.**
-**Why correct:** Both guidelines favour removing nonessential lines; the nurse raises the question and the prescriber decides.
+**Why correct:** Review ongoing necessity with the team. WHO 2026 recommends at least daily insertion-site assessment and does not support routine replacement without clinical indication. Check whether the line is still needed for infusions or monitoring; remove through the authorized local pathway when no longer needed.
 **Why not A:** Removing a line needs a prescriber's decision or a protocol that allows it.
 **Why not C:** Daily review of whether the line is needed is a shared nursing and medical responsibility.
 **Why not D:** Routine replacement is not recommended and adds the risks of a new insertion.
@@ -162,6 +162,8 @@ D. Suggest changing every dressing daily to be safe, because more changes mean f
 - Buetti N, Marschall J, Drees M, et al. Strategies to prevent central line-associated bloodstream infections in acute-care hospitals: 2022 Update. Infect Control Hosp Epidemiol. 2022;43:553-569. doi:10.1017/ice.2022.87. https://pmc.ncbi.nlm.nih.gov/articles/PMC9096710/ (accessed 2026-11-14)
 - CDC/HICPAC. Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (last update October 2017). https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-14)
 - CDC. Updated Recommendations on the Use of Chlorhexidine-Impregnated Dressings (2017). https://www.cdc.gov/infection-control/hcp/c-i-dressings/index.html (landing page only, accessed 2026-11-14)
+
+- WHO central venous catheter infection prevention, 2026. https://www.who.int/publications/i/item/9789240121805 (selected recommendation excerpts, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Dressing type and interval, antiseptic product, connector-scrub time and tubing-change interval follow the institution's policy.

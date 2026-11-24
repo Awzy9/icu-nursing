@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NPIAP/EPUAP/PPPIA International Guideline, 4th edition, Quick Reference Guide, version date 1 Sep 2026 (abridged; full chapters not read)"]
-sources: [S-INTL-PI-2026]
+sources: [S-INTL-PI-2026, S-INTL-PI-HEELS-2025, S-INTL-PI-REPOS-2026]
 sources_not_read: [S-NPIAP-2019]
 independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Stage definitions were not read, so staging is not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
 ---
@@ -96,7 +96,7 @@ B. Offload the heel now, assess perfusion and skin, tell the team and ask for ti
 C. Record the finding and wait for the next full skin assessment before reporting it to anyone in the team.
 D. Apply a firm bandage to protect the heel and review it again tomorrow.
 **Answer: B.**
-**Why correct:** Early tissue injury in a high-risk patient needs prompt offloading and escalation.
+**Why correct:** Offload the heel immediately and assess skin and limb perfusion. The international heel chapter recommends complete heel elevation where appropriate, with pressure redistributed along the calf and fit and skin checked regularly. Dusky skin in a vasopressor-treated patient also warrants urgent evaluation for impaired circulation; do not assign a pressure-injury stage from colour alone.
 **Why not A:** The mattress check can follow; the heel injury is time-sensitive.
 **Why not C:** Delay allows the damage to progress.
 **Why not D:** A firm bandage may add pressure and hide changes, and a day's wait is too long.
@@ -107,7 +107,7 @@ B. Reposition when the family asks, since they know the patient's comfort best.
 C. Stop repositioning once an air mattress is in use, because the surface redistributes the pressure.
 D. Individualise it using mobility, skin tolerance, stability, comfort, goals of care and the support surface.
 **Answer: D.**
-**Why correct:** The guide advises individualised regimens and says no surface replaces repositioning.
+**Why correct:** The international repositioning chapter supports individualized schedules. If shock or severe instability prevents full turns, use tolerated small weight shifts under the team plan and reassess regularly for resumption of full-body repositioning. A support surface does not replace repositioning; the evidence for incremental movements in critically ill patients is limited.
 **Why not A:** A fixed interval ignores individual need and clinical instability.
 **Why not B:** Responsibility for repositioning lies with the care team.
 **Why not C:** No support surface can entirely replace repositioning.
@@ -118,7 +118,7 @@ B. Tighten the securements slightly so that nothing can move and rub the skin.
 C. Inspect the skin and mucosa under and around each device at repositioning, and move or support devices where possible.
 D. Apply moisturiser under each device to keep the skin soft and prevent cracking.
 **Answer: C.**
-**Why correct:** Regular checks under devices and redistributing pressure at the interface are recommended.
+**Why correct:** Inspect the skin and mucosa at device interfaces and redistribute pressure where safe. Do not loosen or relocate a life-sustaining airway or other critical device without competent assistance and a plan to maintain its function.
 **Why not A:** Medical devices are a recognised cause of pressure injury.
 **Why not B:** Tighter securements increase pressure and shear.
 **Why not D:** Extra moisture under a device can worsen skin damage.
@@ -158,6 +158,9 @@ D. Requesting a dietitian review under unit policy.
 
 ## 18. References
 - National Pressure Injury Advisory Panel, European Pressure Ulcer Advisory Panel, Pan Pacific Pressure Injury Alliance. Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide. The International Guideline, Fourth Edition. Haesler E (ed). 2026 (version date 1 Sep 2026). https://internationalguideline.com (QRG PDF via https://epuap.org/pu-guidelines/; accessed 2026-11-14)
+
+- International Guideline: Heels. https://www.internationalguideline.com/heels (selected recommendation excerpts, accessed 2026-11-24)
+- International Guideline: Repositioning. https://www.internationalguideline.com/repositioning (selected recommendation excerpts, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Risk tools, staging system, support surfaces, dressings and repositioning schedules follow the institution's policy. Prone-positioning protocols have their own rules.

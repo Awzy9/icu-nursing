@@ -29,7 +29,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "26a0b3c0495f79fb"
+   "hash": "c621437ad3797b62"
   },
   {
    "key": "D06-T04",
@@ -49,7 +49,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "372a28e977c736e7"
+   "hash": "3685e8a40ff904c3"
   },
   {
    "key": "D06-T05",
@@ -69,12 +69,17 @@
      "id": "S-SHEA-CLABSI-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-CVC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "5cead9dd5fca2c27"
+   "hash": "f291d1fee7b59579"
   },
   {
    "key": "D07-T04",
@@ -89,12 +94,22 @@
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-INTL-PI-HEELS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-REPOS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "ab59cd4fc71b6f76"
+   "hash": "ece22e9f9c2d5e36"
   },
   {
    "key": "D09-T01",
@@ -114,7 +129,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "f7f56d5148ede4b9"
+   "hash": "9c312444a8e4c56e"
   },
   {
    "key": "D09-T02",
@@ -139,7 +154,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "933ed62994c47c6a"
+   "hash": "7f401734aa8d5930"
   },
   {
    "key": "D01-T03",

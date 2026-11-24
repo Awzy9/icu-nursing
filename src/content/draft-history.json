@@ -66,6 +66,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "c621437ad3797b62",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-NG253",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D06-T04": [
@@ -93,6 +106,17 @@
    },
    {
     "hash": "372a28e977c736e7",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CDC-IC"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "3685e8a40ff904c3",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -135,6 +159,19 @@
     "sources": [
      "S-CDC-BSI-2011",
      "S-SHEA-CLABSI-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f291d1fee7b59579",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022",
+     "S-WHO-CVC-2026"
     ],
     "gaps": 0,
     "required_sources": 0,
@@ -185,6 +222,19 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "ece22e9f9c2d5e36",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-HEELS-2025",
+     "S-INTL-PI-REPOS-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D09-T01": [
@@ -212,6 +262,17 @@
    },
    {
     "hash": "f7f56d5148ede4b9",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHRQ-TS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "9c312444a8e4c56e",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -249,6 +310,18 @@
    },
    {
     "hash": "933ed62994c47c6a",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NMC-CODE",
+     "S-OPENRN-FUND"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "7f401734aa8d5930",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
