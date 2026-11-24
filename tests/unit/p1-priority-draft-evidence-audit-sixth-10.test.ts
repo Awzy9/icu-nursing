@@ -11,8 +11,14 @@ describe("Priority audit 51–60 — consistent emergency and practice teaching"
   it("aligns CRRT equipment with trained blood-return boundaries", () => {
     const d = draft("equipment/EQ-06-crrt-systems.json");
     expect(d.escalation_concepts[0].text).toContain("Do not attempt blood return when circuit safety is uncertain");
-    expect(d.parameters[0].explanation).toBeNull();
-    expect(d.parameters[1].explanation).toBeNull();
+    expect(d.parameters[0].explanation).toContain("On PrisMax");
+    expect(d.parameters[0].support).toBe("partial");
+    expect(d.parameters[0].sources).toContain("S-VANTIVE-PRISMAX-PRESSURES");
+    expect(d.parameters[1].explanation).toContain("authorised prescription");
+    expect(d.parameters[1].support).toBe("partial");
+    expect(d.parameters[1].sources).toContain("S-VANTIVE-PRISMAX-ACCESS");
+    expect(d.device_neutral).toBe(false);
+    expect(d.clinically_reviewed).toBe(false);
     expect(d.parameters[2].sources).toContain("S-KDIGO-AKI-2012");
   });
   it("does not automatically interrupt an essential infusion", () => {
