@@ -1,0 +1,6 @@
+# ICU nutrition evidence reconciliation — 24 November 2026
+
+Updated D07-T06 after direct inspection of the ESPEN-hosted 2023 practical guideline (pp. 1675–1677 and 1686–1687; recommendations 11, 13–16 and 57–59). The official journal HTML returned 403; the society PDF was accessible. Added refeeding risk recognition, electrolyte trend monitoring, urgent interdisciplinary reassessment and the distinction between uncontrolled and stabilized shock. Existing insulin interruption, tube position and emergency escalation safeguards retained. No dosing, nutritional targets, universal stop threshold or independent treatment instructions introduced. Source registry access and copyright notes updated; prior canonical hash verified and new index/history hash synchronized. Selected sections only; full appraisal, Spanish 2026 edition comparison, ASPEN review, independent dietitian/clinical approval and commercial rights remain outstanding. Clinical flags and release guards unchanged. CI not run locally; no production deployment.
+
+- https://www.espen.org/files/ESPEN-Guidelines/ESPEN_practical_and_partially_revised_guideline_Clinical_nutrition_in_the_intensive_care_unit.pdf
+- https://doi.org/10.1016/j.clnu.2023.07.011
