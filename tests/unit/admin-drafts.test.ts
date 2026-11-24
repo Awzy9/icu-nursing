@@ -20,6 +20,18 @@ describe("draft index (metadata only)", () => {
     expect(new Set(onDisk.entries.map((x) => `${x.type}:${x.key}`)).size).toBe(166);
     for (const x of onDisk.entries) { expect(x.clinically_reviewed, x.key).toBe(false); for (const s of x.sources) expect(s.licence_class, `${x.key} ${s.id}`).not.toBe("UNREGISTERED"); }
   });
+  it("keeps explicit supplementary source verification dates without implying clinical or rights clearance", () => {
+    for (const id of ["N-HODGSON-2014", "S-ISBT-ATR-EDU", "N-LHSC-CRRT-PRINCIPLES"]) {
+      const entries = onDisk.entries.filter(x => x.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const x of entries) {
+        expect(x.sources.find(s => s.id === id)?.verified).toBe("2026-11-24");
+        expect(x.clinically_reviewed).toBe(false);
+        expect(needsRightsCheck(x)).toBe(true);
+      }
+    }
+    expect(onDisk.entries.find(x => x.key === "SK-17")?.sources.find(s => s.id === "N-BAXTER-PRISMAFLEX")?.verified).toBeNull();
+  });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);
   });
