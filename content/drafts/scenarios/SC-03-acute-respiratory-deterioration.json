@@ -77,8 +77,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "A patient receiving oxygen is breathing faster and the saturation is drifting down. The early warning score is rising.",
-      "prompt": "What should you do?",
+      "info": "An adult receiving oxygen through a prescribed mask becomes visibly more breathless during observations. Saturation is drifting down, respiratory effort is increasing and the early-warning score is rising. The cause is not yet known.",
+      "prompt": "Which action addresses respiratory deterioration without treating the saturation display alone?",
       "observations": [
         {
           "key": "spo2",
@@ -100,6 +100,11 @@
           "key": "score",
           "label": "Early warning score",
           "value": "Rising"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Alert but anxious"
         }
       ],
       "options": [
@@ -109,7 +114,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "A falling saturation and increasing breathing effort require immediate patient assessment. Use the early warning score and oxygen targets to inform the response, not as a reason to postpone emergency oxygen or ventilation support when indicated. Pulse oximetry estimates oxygenation, not ventilation; perfusion and skin pigmentation can affect accuracy. If the clinical picture and reading disagree, request further assessment and an appropriate alternative measurement without postponing emergency care. Request urgent blood gas assessment when hypercapnia is suspected, especially with new drowsiness or rising work of breathing. Emergency support for critical illness should not be withheld because of possible carbon dioxide retention; the team then individualizes oxygen and ventilation using blood gases and clinical response.",
-          "consequence": "You find the device correctly placed and the patient is working harder, so you call the responsible clinician.",
+          "consequence": "Patient-first assessment may identify a delivery problem or worsening respiratory failure while urgent clinical support is arranged.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
@@ -124,7 +129,7 @@
           "next": 2,
           "scope": "order_or_protocol_required",
           "feedback": "Do not treat the display alone. Provide emergency oxygen or respiratory support promptly under the authorized pathway; after immediate stabilization, titrate according to the patient-specific plan.",
-          "consequence": "The displayed value improves, but ventilation and the cause of deterioration remain unassessed.",
+          "consequence": "A better displayed saturation could mask inadequate ventilation or persistent respiratory distress.",
           "support": "partial",
           "sources": [
             "S-AARC-O2"
@@ -136,7 +141,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Leaving deterioration unaddressed is unsafe even when saturation is near its target. Worsening effort or clinical concern warrants assessment and escalation.",
-          "consequence": "The patient's condition continues to decline.",
+          "consequence": "Waiting for a clearer numerical change could allow respiratory failure to progress.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"
@@ -146,8 +151,8 @@
     },
     {
       "position": 2,
-      "info": "The score has risen into the range that triggers an urgent review.",
-      "prompt": "How should you escalate?",
+      "info": "At the next shared checkpoint, saturation has fallen further despite oxygen, breathing is laboured and the patient is slower to respond. The score is in the urgent-review range; clinical severity may require an emergency response.",
+      "prompt": "Which response is appropriate when effort and alertness worsen despite oxygen support?",
       "observations": [
         {
           "key": "spo2",
@@ -164,6 +169,16 @@
           "key": "rate",
           "label": "Breathing",
           "value": "Fast and laboured"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Slower to respond"
+        },
+        {
+          "key": "oxygen",
+          "label": "Oxygen",
+          "value": "Support under urgent review"
         }
       ],
       "options": [
@@ -173,7 +188,7 @@
           "next": 3,
           "scope": "escalation",
           "feedback": "Clinical severity can require a higher response than the aggregate early warning score indicates. Do not wait for another score or routine review if the patient is unstable. ATS 2026 distinguishes acute hypoxemic failure, where high-flow nasal oxygen is recommended, from acute hypercapnic failure, where noninvasive ventilation is recommended. Suitability depends on the individual and the cause. If noninvasive support is being used, report worsening effort, consciousness, gas exchange or circulation promptly; do not allow a trial of support to delay indicated intubation.",
-          "consequence": "The clinician attends and decides whether critical care outreach is needed.",
+          "consequence": "Escalation and repeat assessment may identify a need for additional respiratory support before exhaustion progresses.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
@@ -187,7 +202,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "The trigger for urgent review has already been reached.",
-          "consequence": "The review is delayed while the patient worsens.",
+          "consequence": "Waiting for another observation set could delay assessment of respiratory failure.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"
@@ -199,7 +214,7 @@
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "The reviewing clinician decides on escalation of care and transfer.",
-          "consequence": "Bed moves are arranged without a clinical decision and the team has to unpick them.",
+          "consequence": "An uncoordinated transfer could interrupt monitoring or respiratory support and delay stabilization.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"
@@ -209,8 +224,8 @@
     },
     {
       "position": 3,
-      "info": "The clinician has reviewed the patient and changed the plan.",
-      "prompt": "What do you do afterwards?",
+      "info": "At the final shared checkpoint, the clinician has changed the support plan. Saturation has improved and the score is lower, but the patient remains drowsier than baseline. Ventilation and clinical response need reassessment.",
+      "prompt": "How should the nurse respond to improved saturation with persistent altered alertness?",
       "observations": [
         {
           "key": "spo2",
@@ -227,6 +242,16 @@
           "key": "plan",
           "label": "Plan",
           "value": "Updated by the clinician"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Still drowsier than baseline"
+        },
+        {
+          "key": "rate",
+          "label": "Breathing",
+          "value": "Effort still above baseline"
         }
       ],
       "options": [
@@ -235,11 +260,14 @@
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "NEWS2 asks for the response to be recorded and says any concern about the patient should prompt an urgent review whatever the score.",
-          "consequence": "The record is clear and the next shift knows when to call.",
+          "feedback": "NEWS2 asks for the response to be recorded and says any concern about the patient should prompt an urgent review whatever the score. Improved oxygenation does not establish adequate ventilation or explain ongoing drowsiness. Reassess airway, breathing and circulation, communicate the persistent change and request urgent further review; coordinate blood gas assessment as indicated without delaying emergency support.",
+          "consequence": "Reassessment and handover may identify unresolved ventilatory failure or another cause of drowsiness despite improved saturation.",
           "support": "partial",
           "sources": [
-            "S-RCP-NEWS2"
+            "S-RCP-NEWS2",
+            "S-AARC-O2",
+            "S-BTS-O2-2017",
+            "S-ATS-NIRS-2026"
           ]
         },
         {
@@ -248,7 +276,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "The score is an aid to judgement; concern or a worsening trend justifies a further call.",
-          "consequence": "The patient deteriorates again before anyone reviews.",
+          "consequence": "Stopping escalation based on a better score could delay recognition of ongoing respiratory compromise.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"
@@ -260,7 +288,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "The response is recorded so that the next shift can see what was done.",
-          "consequence": "The next shift is unaware of the plan.",
+          "consequence": "Routine checks without documenting the plan could leave deterioration or treatment changes unrecognized.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"

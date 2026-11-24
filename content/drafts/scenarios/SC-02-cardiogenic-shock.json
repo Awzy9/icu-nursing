@@ -115,8 +115,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "The patient looks worse than at the last check: restless, breathless, cool and sweaty, with a fast pulse. The monitor shows blood pressure drifting down, and the urine bag has little in it.",
-      "prompt": "What do you do first?",
+      "info": "One day after myocardial infarction, the patient is newly restless and breathless. Over the last hour pressure and urine output have fallen, and new crackles are present. Prescribed inotropic support is running.",
+      "prompt": "Which response addresses both impaired perfusion and possible congestion?",
       "observations": [
         {
           "key": "bp",
@@ -137,6 +137,16 @@
           "key": "urine",
           "label": "Urine output",
           "value": "Falling"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "More restless than before"
+        },
+        {
+          "key": "pulse",
+          "label": "Pulse",
+          "value": "Fast and weak"
         }
       ],
       "options": [
@@ -146,7 +156,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Cool, clammy skin, worsening mentation, breathlessness, falling urine output and declining blood pressure are concerning for inadequate organ perfusion. Do not wait for a single numerical cutoff or a routine reassessment; call the trained shock team promptly.",
-          "consequence": "The trained team is contacted immediately and receives the trajectory of perfusion, breathing, rhythm and vital signs.",
+          "consequence": "Early shock-team review may clarify the cause and allow timely individualized treatment.",
           "support": "partial",
           "sources": [
             "S-ACC-CS-2025",
@@ -160,7 +170,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Documenting measurements alone delays assessment of possible life-threatening shock; request urgent clinical help now rather than wait for a scheduled review.",
-          "consequence": "The deterioration continues for longer before anyone who can act knows about it.",
+          "consequence": "A routine recheck could delay recognition of worsening organ hypoperfusion.",
           "support": "partial",
           "sources": [
             "S-ACC-CS-2025"
@@ -172,7 +182,7 @@
           "next": 2,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Changing the rate without an authorized order or titration protocol may cause tachyarrhythmia, ischemia or hypotension. A patient with possible cardiogenic shock needs rapid trained-team assessment.",
-          "consequence": "The heart rate rises and the rhythm becomes irritable, and the team now has to deal with an unprescribed change as well.",
+          "consequence": "An unauthorized rate change could worsen tachyarrhythmia or hypotension and obscure the original problem.",
           "support": "partial",
           "sources": [
             "L-DOBUTAMINE",
@@ -183,8 +193,8 @@
     },
     {
       "position": 2,
-      "info": "Despite the initial escalation, the patient is now more drowsy with falling pressure. Runs of ventricular ectopy appear on ECG; it is not yet known whether these are a sustained rhythm or whether the patient still has an adequate pulse.",
-      "prompt": "What should the nurse do immediately?",
+      "info": "At the next shared checkpoint, blood pressure is lower and the patient is drowsier. The monitor shows runs of ventricular ectopic beats. The displayed rhythm does not establish whether the patient has an adequate pulse or circulation.",
+      "prompt": "What takes priority when the rhythm changes and the patient becomes less responsive?",
       "observations": [
         {
           "key": "rhythm",
@@ -205,6 +215,11 @@
           "key": "patient",
           "label": "Patient",
           "value": "Drowsier"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "More drowsy than before"
         }
       ],
       "options": [
@@ -214,7 +229,7 @@
           "next": 3,
           "scope": "escalation",
           "feedback": "Deteriorating consciousness and perfusion with new ventricular rhythm changes require an immediate patient and pulse assessment and urgent trained-team response. Dobutamine and milrinone labels warn about ventricular arrhythmias, but neither label specifies treatment for this patient. Follow the monitored emergency pathway rather than relying only on alarms.",
-          "consequence": "The emergency team receives a rapid assessment of rhythm, pulse, ventilation and perfusion and can direct appropriate treatment.",
+          "consequence": "Prompt patient and pulse assessment may help the team distinguish an unstable perfusing rhythm from cardiac arrest and direct treatment.",
           "support": "partial",
           "sources": [
             "L-DOBUTAMINE",
@@ -228,7 +243,7 @@
           "next": 3,
           "scope": "monitoring",
           "feedback": "Checking lead quality can help identify artefact but should not delay assessment and emergency escalation in a drowsier hypotensive patient; determine pulse and perfusion now.",
-          "consequence": "Time is lost while the patient's blood pressure keeps falling.",
+          "consequence": "An electrode-only check could delay recognition of inadequate circulation.",
           "support": "partial",
           "sources": [
             "L-DOBUTAMINE",
@@ -241,7 +256,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Assuming monitor artefact or silencing alarms without examining the unstable patient risks missing a life-threatening rhythm. Assess the patient and activate the emergency response.",
-          "consequence": "A dangerous rhythm may go unreported until the patient collapses.",
+          "consequence": "Assuming artefact could leave a dangerous rhythm and worsening perfusion unrecognized.",
           "support": "partial",
           "sources": [
             "L-DOBUTAMINE"
@@ -251,8 +266,8 @@
     },
     {
       "position": 3,
-      "info": "After emergency assessment and prescribed treatment by the team, heart rhythm and blood pressure have improved. Urine output is still low, and the specialist team is discussing whether more circulatory support is required.",
-      "prompt": "What should the bedside nurse do now?",
+      "info": "At the final shared checkpoint, the team has delivered prescribed treatment. Fewer ectopic beats are visible and pressure is steadier, but oliguria and pulmonary crackles persist. Further circulatory support is under specialist discussion.",
+      "prompt": "Which ongoing assessment and handover best identify unresolved shock despite improved monitor readings?",
       "observations": [
         {
           "key": "rhythm",
@@ -273,6 +288,11 @@
           "key": "plan",
           "label": "Team plan",
           "value": "Further support under discussion"
+        },
+        {
+          "key": "lungs",
+          "label": "Breath sounds",
+          "value": "Crackles persist"
         }
       ],
       "options": [
@@ -282,7 +302,7 @@
           "next": null,
           "scope": "monitoring",
           "feedback": "A better pressure reading alone does not prove perfusion has recovered. The ACC shock summary emphasizes repeated assessment and specialist-team decisions for escalation. Bedside nurses monitor for renewed hypoperfusion and any access/device complications under unit policy, without undertaking device operation outside training. The 2025 ACC guidance also identifies laboratory markers of metabolic acidosis and organ injury as complementary assessment findings. Review ordered results and communicate trends; do not independently select an inotrope or circulatory-support device. Report renewed pulmonary edema, escalating oxygen requirements, persistent congestion or worsening organ perfusion promptly. These may prompt specialist discussion about escalation or reconfiguration of mechanical support, not an automatic device change. For patients already on support, report access-site bleeding, new distal perfusion changes and device alarms to the trained team. In cardiogenic shock, the November 2026 SCAI consensus summary stresses that a preserved pressure does not exclude inadequate tissue perfusion. Report changes in bedside perfusion, ordered biochemical markers, haemodynamic measurements and support requirements together. A device or vasopressor requirement alone does not determine shock stage. Communicate the current stage if assigned by the treating team and whether the patient is improving, unchanged or deteriorating; seek urgent specialist reassessment for renewed hypoperfusion. Formal staging and treatment decisions remain clinician-led. The 2026 ESC documents distinguish left- and right-sided decompensation, acute pulmonary oedema and cardiogenic shock; presentations can overlap. Escalate new respiratory distress or hypoperfusion promptly, and hand over oxygen needs, work of breathing, evidence of congestion, mentation, urine output and ordered markers of renal or hepatic injury. The European cardiogenic shock consensus links end-organ hypoperfusion to circulatory abnormalities and underlying cardiac dysfunction. A nurse should not assign a cause using a single pressure, lactate or symptom; the team integrates examination, investigations and haemodynamics. Suspected shock or pulmonary oedema warrants urgent assessment, without waiting for a complete diagnostic classification.",
-          "consequence": "Persistent organ-perfusion concerns are made explicit and the specialist team can reassess the need for additional support.",
+          "consequence": "Reporting discordant pressure, rhythm and organ-perfusion trends may help the specialist team identify the need for reassessment.",
           "support": "partial",
           "sources": [
             "S-ACC-CS-2025",
@@ -300,7 +320,7 @@
           "next": null,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Device selection and operation require an authorized expert team, training and manufacturer-specific procedures; the ACC summary is not a device operator manual.",
-          "consequence": "The offer is declined and time is lost, or a trained person has to correct an unsafe action.",
+          "consequence": "Untrained device operation could introduce harm and distract from specialist assessment.",
           "support": "partial",
           "sources": [
             "S-ACC-CS-2025"
@@ -312,7 +332,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "The patient remains at risk while urine output is low. Maintain serial perfusion assessment and communicate any ongoing concern even when pressure briefly improves.",
-          "consequence": "A second deterioration is noticed late.",
+          "consequence": "Reducing surveillance could delay recognition of persistent or recurrent hypoperfusion.",
           "support": "partial",
           "sources": [
             "S-ACC-CS-2025",
