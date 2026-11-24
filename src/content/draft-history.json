@@ -2567,6 +2567,19 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2834ee63f5338578",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014",
+     "S-SCCM-ABCDEF",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-17": [
@@ -5234,6 +5247,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "d5b0b16aa6a15514",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NITROGLYCERIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-36": [
@@ -5428,6 +5455,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "927905011ec1dd88",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-39": [
@@ -5497,6 +5538,20 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "e8b9f0dae0bac8c1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HYDROMORPHONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-40": [
@@ -5556,6 +5611,20 @@
    {
     "hash": "4d392801923ed321",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NALOXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "0d0e3752cfaa16da",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-NALOXONE",
