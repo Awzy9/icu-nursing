@@ -126,7 +126,7 @@
           ]
         },
         {
-          "text": "Offer the next meal tray and postpone repeat glucose measurement until the meal is completed.",
+          "text": "Offer the next meal tray as the initial response, document what the patient eats and postpone repeat glucose measurement until the meal is complete, rather than activating the local hypoglycaemia treatment pathway.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -203,7 +203,7 @@
           ]
         },
         {
-          "text": "Give intravenous glucose from ward stock without an order or approved local pathway.",
+          "text": "Give intravenous glucose from ward stock based on the low result, without checking for an order or approved local emergency pathway; inform the clinician afterwards.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -269,7 +269,7 @@
           ]
         },
         {
-          "text": "Document the normal glucose result and return to routine observation, discontinuing additional glucose checks because the initial treatment has corrected the measured low value and the patient appears recovered.",
+          "text": "Document the normal glucose result and return to routine observation, discontinuing additional glucose checks because the initial treatment has corrected the measured low value.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "text": "Withhold the next insulin dose independently without reviewing the insulin type or nutrition plan with the team.",
+          "text": "Withhold the next insulin dose independently because of the earlier episode, without reviewing the insulin type, nutritional changes or medication plan with the team.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

@@ -134,7 +134,7 @@
           ]
         },
         {
-          "text": "Print the rhythm strip and place it with the observations in the notes, then repeat the rhythm and pressure readings in a few minutes before deciding whether to call for urgent help.",
+          "text": "Print the rhythm strip, record it with the observations and repeat rhythm and pressure readings before deciding whether to request urgent help.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -213,7 +213,7 @@
           ]
         },
         {
-          "text": "Prepare the defibrillator and deliver a shock independently before the trained team has assessed the rhythm and selected the appropriate electrical treatment, to avoid further delay.",
+          "text": "Prepare the defibrillator and deliver a shock independently before the trained team assesses the rhythm and chooses the appropriate electrical treatment.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -225,7 +225,7 @@
           ]
         },
         {
-          "text": "Remain beside the monitor, record the rhythm and pressure for the emergency team, and leave all bedside assessment, access preparation and resuscitation readiness to the responding clinicians.",
+          "text": "Remain at the monitor recording rhythm and pressure, leaving bedside assessment, IV preparation and resuscitation readiness to the responding clinicians.",
           "points": 0,
           "next": 3,
           "scope": "monitoring",

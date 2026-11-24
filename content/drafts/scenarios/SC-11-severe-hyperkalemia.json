@@ -117,7 +117,7 @@
           ]
         },
         {
-          "text": "Arrange a repeat sample and check the original collection for possible artefact. Keep the existing observations available, and contact the doctor only after the second potassium result confirms the first.",
+          "text": "Arrange a repeat sample and check collection for possible artefact; maintain observations and contact the doctor only after the second potassium result confirms the first.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -129,7 +129,7 @@
           ]
         },
         {
-          "text": "Document the potassium result and monitor findings in the notes, collect the recent renal results and medication list, and present them together to the medical team at the next scheduled round.",
+          "text": "Document potassium and rhythm findings, collect renal results and the medication list, and present these together to the medical team at the next scheduled round.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -189,7 +189,7 @@
           ]
         },
         {
-          "text": "Use the available prescriptions as a starting point, then independently choose the calcium and potassium-shifting medicines and calculate the amounts to avoid waiting for the treating team.",
+          "text": "Independently select the calcium and potassium-shifting medicines and calculate their amounts using the available prescriptions, rather than waiting for the team.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",

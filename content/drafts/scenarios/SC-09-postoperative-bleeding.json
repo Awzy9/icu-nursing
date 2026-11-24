@@ -177,7 +177,7 @@
           ]
         },
         {
-          "text": "Compare the wound and drain findings with previous readings, document the pressure change and wait for the surgeon's scheduled round before requesting assessment.",
+          "text": "Compare the wound and drain findings with previous readings, document the pressure change and wait for the surgeon's scheduled round before requesting a clinical assessment.",
           "points": 0,
           "next": 2,
           "scope": "escalation",
@@ -244,7 +244,7 @@
           ]
         },
         {
-          "text": "Administer the scheduled anticoagulant because the existing prescription remains on the chart, document the administration and then report the bleeding trend to the surgeon afterwards.",
+          "text": "Administer the scheduled anticoagulant because the prescription remains on the chart; document administration and report the bleeding to the surgeon afterwards.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -345,7 +345,7 @@
           ]
         },
         {
-          "text": "Focus on the prescribed resuscitation and stop urine-output recording and serial observations until transfer is complete.",
+          "text": "Focus on delivering prescribed resuscitation and blood products, and suspend urine-output recording and serial observations until transfer is complete, leaving the receiving team to establish the response to treatment.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

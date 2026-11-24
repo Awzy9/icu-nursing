@@ -16,8 +16,8 @@ describe("Scenario answer cue and scoring regression", () => {
   it("tracks both ends of the length spectrum rather than requiring one fixed rank", () => {
     expect(steps).toHaveLength(59);
     const ranks = [0, 1, 2].map(rank => steps.filter(s => lengthRank(s) === rank).length);
-    expect(Math.max(...ranks)).toBeLessThanOrEqual(26);
-    expect(ranks[2]).toBeGreaterThanOrEqual(14);
+    expect(Math.max(...ranks)).toBeLessThanOrEqual(24);
+    expect(ranks[2]).toBeGreaterThanOrEqual(19);
     expect(steps.filter(s => spread(s) > 2).length).toBeLessThanOrEqual(11);
   });
   for (const d of cases) for (const step of d.steps ?? []) {
@@ -27,7 +27,7 @@ describe("Scenario answer cue and scoring regression", () => {
       expect(step.options.every(o => o.sources.length > 0)).toBe(true);
     });
   }
-  for (const id of ["SC-01", "SC-02", "SC-03", "SC-04", "SC-05", "SC-06", "SC-07", "SC-08", "SC-17", "SC-20"]) {
+  for (const id of ["SC-01", "SC-02", "SC-03", "SC-04", "SC-05", "SC-06", "SC-07", "SC-08", "SC-17", "SC-20", "SC-09", "SC-10", "SC-11", "SC-12", "SC-13"]) {
     it(id + " offers similar-length options", () => {
       const revised = cases.find(d => d.scenario_id === id)!.steps!;
       expect(revised.every(s => spread(s) <= 1.3)).toBe(true);
