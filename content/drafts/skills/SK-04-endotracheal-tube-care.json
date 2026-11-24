@@ -169,6 +169,13 @@
             "S-AARC-PVA",
             "S-ERC-ALS-2025"
           ]
+        },
+        {
+          "text": "Assess adequacy of airway humidification and whether the current humidification device suits the patient's clinical condition. Inspect the airway and circuit with the respiratory care team and escalate suspected obstruction or inadequate ventilation immediately.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-PVA"
+          ]
         }
       ]
     },
@@ -284,6 +291,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "monitoring",
+      "text": "Assess adequacy of airway humidification and whether the current humidification device suits the patient's clinical condition. Inspect the airway and circuit with the respiratory care team and escalate suspected obstruction or inadequate ventilation immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ]
     }
   ],
   "gaps": [

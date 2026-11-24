@@ -36,6 +36,11 @@
       "id": "N-ICS-TRANSFER-2026",
       "read": "full",
       "use": "rec 60: tracheostomy spares for transfer"
+    },
+    {
+      "id": "S-NTSP-STOMA",
+      "read": "partial",
+      "use": "Indexed emergency care page on airway routes; full algorithms not inspected"
     }
   ],
   "objectives": [
@@ -203,7 +208,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Red flags: for a correctly sited cuffed tube no air should escape through the mouth (talking, audible leaks or bubbling saliva suggest a cuff or placement problem); apnoea on capnography, difficulty breathing, higher airway pressures, lower tidal volumes, hypoxia and noisy breathing; a visibly displaced tube, blood around the tube, new pain, or needing a lot of air to keep the cuff inflated; and any change in respiratory rate, heart rate, blood pressure or consciousness, including anxiety, restlessness or confusion.",
+          "text": "Red flags: an unexpected oral air leak when the cuff is intended to be inflated may indicate a cuff or tube-position problem; account for the planned cuff and speaking-valve status; apnoea on capnography, difficulty breathing, higher airway pressures, lower tidal volumes, hypoxia and noisy breathing; a visibly displaced tube, blood around the tube, new pain, or needing a lot of air to keep the cuff inflated; and any change in respiratory rate, heart rate, blood pressure or consciousness, including anxiety, restlessness or confusion.",
           "support": "sourced",
           "sources": [
             "N-NHSGGC-TRACH-2022"
@@ -218,6 +223,14 @@
           "text": "Suspected obstruction or displacement, including inability to pass a suction catheter, requires immediate airway-emergency escalation; do not wait until peri-arrest. Use the patient-specific tracheostomy or laryngectomy emergency pathway and obtain trained assistance. Avoid forcing a catheter or ventilation through a potentially displaced tube; follow the trained team's airway assessment and capnography pathway.",
           "support": "partial",
           "sources": [
+            "N-NHSGGC-TRACH-2022"
+          ]
+        },
+        {
+          "text": "Confirm the airway anatomy from the bedhead sign and clinical team without delaying emergency help. A person with a total laryngectomy breathes through the neck stoma only; a tracheostomy may retain an upper airway. Follow the patient-specific oxygenation and airway emergency pathway.",
+          "support": "partial",
+          "sources": [
+            "S-NTSP-STOMA",
             "N-NHSGGC-TRACH-2022"
           ]
         }
@@ -335,6 +348,16 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "escalation",
+      "text": "Confirm the airway anatomy from the bedhead sign and clinical team without delaying emergency help. A person with a total laryngectomy breathes through the neck stoma only; a tracheostomy may retain an upper airway. Follow the patient-specific oxygenation and airway emergency pathway.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NTSP-STOMA",
+        "N-NHSGGC-TRACH-2022"
+      ]
     }
   ],
   "gaps": [
@@ -403,6 +426,17 @@
       "read": "full",
       "licence_class": "RED (copyright Intensive Care Society; no reuse statement)",
       "permission_required": "Yes (reproduction)"
+    },
+    {
+      "id": "S-NTSP-STOMA",
+      "title": "Emergency care: ventilation via the stoma",
+      "publisher": "National Tracheostomy Safety Project",
+      "version": "Undated public page",
+      "url": "https://tracheostomy.org.uk/healthcare-staff/emergency-care/ventilation-via-the-stoma",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

@@ -1,24 +1,24 @@
 skill_id,title,section,section_support,items,sourced,partial,local_protocol,source_ids
-SK-01,Arterial line care,indications,partial,3,1,2,0,S-ERC-PRC-2025;S-ESICM-SHOCK-2014;S-SSC-2021;S-SSC-2026
+SK-01,Arterial line care,indications,partial,3,1,2,0,S-ERC-PRC-2025;S-ESICM-SHOCK-2014;S-ESICM-SHOCK-2025;S-SSC-2021;S-SSC-2026
 SK-01,Arterial line care,safety,full,5,5,0,0,S-CDC-BSI-2011
-SK-01,Arterial line care,responsibilities,partial,2,0,2,0,S-CDC-BSI-2011
+SK-01,Arterial line care,responsibilities,partial,2,0,1,1,S-CDC-BSI-2011
 SK-01,Arterial line care,scope,partial,1,0,1,0,S-NCSBN-DELEG-2019
 SK-01,Arterial line care,equipment,local_protocol,2,1,0,1,S-CDC-BSI-2011
 SK-01,Arterial line care,assessment,partial,1,0,1,0,S-CDC-BSI-2011;S-SSC-2021
 SK-01,Arterial line care,procedure,local_protocol,1,0,0,1,
-SK-01,Arterial line care,monitoring,partial,1,0,1,0,S-ESICM-SHOCK-2014
+SK-01,Arterial line care,monitoring,partial,2,0,2,0,S-ARTERIAL-MEASUREMENT-2020;S-ESICM-SHOCK-2014
 SK-01,Arterial line care,escalation,partial,1,0,1,0,S-CDC-BSI-2011;S-SSC-2021
 SK-01,Arterial line care,complications,partial,1,0,1,0,S-SSC-2021
 SK-01,Arterial line care,documentation,local_protocol,1,0,0,1,
 SK-01,Arterial line care,communication,partial,1,0,1,0,S-AHRQ-TS
 SK-02,Central venous catheter care,indications,partial,1,1,0,0,S-CDC-BSI-2011
-SK-02,Central venous catheter care,safety,full,5,5,0,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
+SK-02,Central venous catheter care,safety,partial,7,5,2,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
 SK-02,Central venous catheter care,responsibilities,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
 SK-02,Central venous catheter care,scope,partial,1,0,1,0,S-NCSBN-DELEG-2019
 SK-02,Central venous catheter care,equipment,local_protocol,1,0,0,1,
 SK-02,Central venous catheter care,assessment,partial,1,0,1,0,S-CDC-BSI-2011
 SK-02,Central venous catheter care,procedure,local_protocol,2,0,1,1,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
-SK-02,Central venous catheter care,monitoring,partial,1,0,1,0,S-CDC-BSI-2011
+SK-02,Central venous catheter care,monitoring,partial,2,0,2,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022;S-WHO-CVC-2026
 SK-02,Central venous catheter care,escalation,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
 SK-02,Central venous catheter care,complications,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
 SK-02,Central venous catheter care,errors,partial,1,0,1,0,S-CDC-BSI-2011;S-SHEA-CLABSI-2022
@@ -29,33 +29,33 @@ SK-03,Peripheral IV care,safety,full,3,3,0,0,S-CDC-BSI-2011
 SK-03,Peripheral IV care,responsibilities,partial,1,1,0,0,S-CDC-BSI-2011
 SK-03,Peripheral IV care,scope,local_protocol,1,0,0,1,
 SK-03,Peripheral IV care,equipment,local_protocol,1,0,0,1,
-SK-03,Peripheral IV care,assessment,partial,1,1,0,0,S-CDC-BSI-2011
+SK-03,Peripheral IV care,assessment,partial,2,1,1,0,S-CDC-BSI-2011;S-WHO-PIVC-2024
 SK-03,Peripheral IV care,procedure,local_protocol,1,0,0,1,
-SK-03,Peripheral IV care,monitoring,partial,1,0,1,0,S-CDC-BSI-2011
-SK-03,Peripheral IV care,escalation,partial,1,0,1,0,S-CDC-BSI-2011;S-PVP-META-2026
+SK-03,Peripheral IV care,monitoring,partial,1,0,1,0,S-CDC-BSI-2011;S-WHO-PIVC-2024
+SK-03,Peripheral IV care,escalation,partial,1,0,0,1,
 SK-03,Peripheral IV care,complications,partial,1,0,1,0,S-CDC-BSI-2011
 SK-03,Peripheral IV care,documentation,local_protocol,1,0,0,1,
 SK-04,Endotracheal tube care,indications,partial,1,0,1,0,S-AARC-PVA
 SK-04,Endotracheal tube care,safety,full,3,3,0,0,S-AARC-PVA;S-SHEA-VAP-2022
-SK-04,Endotracheal tube care,responsibilities,partial,2,0,2,0,S-AARC-PVA;S-INTL-PI-2026
+SK-04,Endotracheal tube care,responsibilities,partial,3,2,1,0,S-AARC-PVA;S-INTL-PI-2026
 SK-04,Endotracheal tube care,scope,local_protocol,1,0,0,1,
 SK-04,Endotracheal tube care,equipment,local_protocol,1,0,0,1,
 SK-04,Endotracheal tube care,assessment,partial,1,0,1,0,S-AARC-PVA
 SK-04,Endotracheal tube care,procedure,local_protocol,1,0,0,1,
-SK-04,Endotracheal tube care,monitoring,partial,1,0,1,0,S-AARC-PVA;S-ERC-ALS-2025
+SK-04,Endotracheal tube care,monitoring,partial,2,0,2,0,S-AARC-PVA;S-ERC-ALS-2025
 SK-04,Endotracheal tube care,escalation,partial,1,0,1,0,S-AARC-PVA;S-ERC-ALS-2025
 SK-04,Endotracheal tube care,complications,partial,1,0,1,0,S-AARC-PVA;S-SHEA-VAP-2022
 SK-04,Endotracheal tube care,documentation,local_protocol,1,0,0,1,
 SK-04,Endotracheal tube care,communication,partial,1,0,1,0,S-AHRQ-TS
 SK-05,Tracheostomy care,indications,partial,1,1,0,0,N-NHSGGC-TRACH-2022
 SK-05,Tracheostomy care,safety,partial,4,4,0,0,N-NHSGGC-TRACH-2022
-SK-05,Tracheostomy care,responsibilities,partial,3,2,1,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,responsibilities,partial,4,2,1,1,N-NHSGGC-TRACH-2022;S-AARC-TRACH
 SK-05,Tracheostomy care,scope,local_protocol,1,0,0,1,
 SK-05,Tracheostomy care,equipment,partial,2,1,1,0,N-ICS-TRANSFER-2026;N-NHSGGC-TRACH-2022
 SK-05,Tracheostomy care,assessment,partial,2,2,0,0,N-NHSGGC-TRACH-2022
 SK-05,Tracheostomy care,procedure,partial,3,1,2,0,N-NHSGGC-TRACH-2022
 SK-05,Tracheostomy care,monitoring,partial,1,1,0,0,N-NHSGGC-TRACH-2022
-SK-05,Tracheostomy care,escalation,partial,1,1,0,0,N-NHSGGC-TRACH-2022
+SK-05,Tracheostomy care,escalation,partial,2,0,2,0,N-NHSGGC-TRACH-2022;S-NTSP-STOMA
 SK-05,Tracheostomy care,complications,partial,1,0,1,0,N-NHSGGC-TRACH-2022
 SK-05,Tracheostomy care,documentation,local_protocol,1,0,0,1,
 SK-05,Tracheostomy care,communication,partial,1,0,1,0,N-NHSGGC-TRACH-2022

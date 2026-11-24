@@ -48,6 +48,16 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-ESICM-SHOCK-2025",
+      "read": "partial",
+      "use": "Indexed abstract; arterial monitoring recommendation"
+    },
+    {
+      "id": "S-ARTERIAL-MEASUREMENT-2020",
+      "read": "partial",
+      "use": "Selected publisher text on transducer reference and waveform quality"
     }
   ],
   "objectives": [
@@ -66,9 +76,10 @@
       "support": "partial",
       "items": [
         {
-          "text": "ESICM 2014: arterial and central venous catheters in shock not responsive to initial therapy and/or needing a vasopressor infusion (ungraded best practice).",
+          "text": "The ESICM 2025 update supports arterial pressure monitoring through an arterial catheter when shock persists despite initial treatment or vasopressor support is needed (ungraded good practice). The 2014 statement is historical; the SSC 2026 recommendation below is sepsis-specific.",
           "support": "partial",
           "sources": [
+            "S-ESICM-SHOCK-2025",
             "S-ESICM-SHOCK-2014"
           ]
         },
@@ -192,7 +203,7 @@
       "support": "local_protocol",
       "items": [
         {
-          "text": "Zeroing, levelling, waveform (damping) checks and blood sampling are not described by any source read; follow the manufacturer's instructions and your unit's competency-approved procedure.",
+          "text": "Follow the manufacturer's instructions and competency-approved unit procedure for transducer setup, dynamic-response testing and blood sampling; no device-specific sequence is supplied.",
           "support": "local_protocol",
           "sources": []
         }
@@ -206,6 +217,13 @@
           "support": "partial",
           "sources": [
             "S-ESICM-SHOCK-2014"
+          ]
+        },
+        {
+          "text": "After a position change or unexpected pressure reading, assess the patient, verify the transducer reference level and waveform quality, and seek trained assistance for suspected damping or resonance. Do not change treatment solely on an implausible signal.",
+          "support": "partial",
+          "sources": [
+            "S-ARTERIAL-MEASUREMENT-2020"
           ]
         }
       ]
@@ -331,10 +349,19 @@
       "sources": [
         "S-CDC-BSI-2011"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "After a position change or unexpected pressure reading, assess the patient, verify the transducer reference level and waveform quality, and seek trained assistance for suspected damping or resonance. Do not change treatment solely on an implausible signal.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ARTERIAL-MEASUREMENT-2020"
+      ]
     }
   ],
   "gaps": [
-    "Zeroing, levelling, dynamic-response testing and damping: no source read; needs manufacturer IFU and a licensed procedural source.",
+    "Technical principles of zeroing, levelling and waveform assessment are supported in part by the 2020 review; exact device instructions, dynamic-response procedure and local competency still require review.",
     "Blood-sampling technique, flush pressure and rate, alarm limits: unsourced.",
     "Current transducer-change interval: CDC 2011 states 96 hours; the unit's current policy governs and the guideline is dated.",
     "SSC 2026 full publication not read."
@@ -420,6 +447,28 @@
       "accessed": "2026-11-14",
       "read": "partial",
       "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-ESICM-SHOCK-2025",
+      "title": "ESICM guidelines on circulatory shock and hemodynamic monitoring 2025",
+      "publisher": "ESICM",
+      "version": "2025;51:1971-2012; doi 10.1007/s00134-025-08137-z",
+      "url": "https://pure.eur.nl/ws/portalfiles/portal/215348682/ESICM_guidelines_on_circulatory_shock_and_hemodynamic_monitoring_2025.pdf",
+      "accessed": "2026-11-16",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Permission required to reproduce protected material"
+    },
+    {
+      "id": "S-ARTERIAL-MEASUREMENT-2020",
+      "title": "How to measure blood pressure using an arterial catheter: a systematic 5-step approach",
+      "publisher": "Saugel et al. / Critical Care",
+      "version": "2020; corrected publisher HTML",
+      "url": "https://link.springer.com/article/10.1186/s13054-020-02859-w",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED",
       "permission_required": "Verify"
     }
   ]

@@ -26,6 +26,11 @@
       "id": "S-PVP-META-2026",
       "read": "partial",
       "use": "vasopressor via peripheral line adverse events, summary only"
+    },
+    {
+      "id": "S-WHO-PIVC-2024",
+      "read": "partial",
+      "use": "Selected recommendation table on site inspection and removal strategies"
     }
   ],
   "objectives": [
@@ -130,6 +135,13 @@
           "sources": [
             "S-CDC-BSI-2011"
           ]
+        },
+        {
+          "text": "Assess the site and vein at least daily, including patient-reported tenderness, and reassess when new symptoms or infusion problems arise. A clinically indicated replacement policy does not mean leaving a symptomatic catheter in use.",
+          "support": "partial",
+          "sources": [
+            "S-WHO-PIVC-2024"
+          ]
         }
       ]
     },
@@ -147,9 +159,10 @@
       "support": "partial",
       "items": [
         {
-          "text": "The older CDC recommendations do not settle whether adult peripheral catheters should be replaced only when clinically indicated. Follow the institution's current evidence-based replacement policy, assess ongoing need and site condition, and remove an unnecessary catheter; do not leave a symptomatic or malfunctioning catheter in use until a routine date.",
+          "text": "WHO 2024 allows either scheduled or clinically indicated removal of peripheral IV catheters as a conditional recommendation. Inspect the site and vein at least daily, follow the local replacement policy and arrange timely removal when no longer needed or complications arise. Preserve the separate extravasation pathway below.",
           "support": "partial",
           "sources": [
+            "S-WHO-PIVC-2024",
             "S-CDC-BSI-2011"
           ]
         }
@@ -236,6 +249,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "assessment",
+      "text": "Assess the site and vein at least daily, including patient-reported tenderness, and reassess when new symptoms or infusion problems arise. A clinically indicated replacement policy does not mean leaving a symptomatic catheter in use.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-WHO-PIVC-2024"
+      ]
     }
   ],
   "gaps": [
@@ -280,6 +302,17 @@
       "read": "partial",
       "licence_class": "GREEN",
       "permission_required": "No"
+    },
+    {
+      "id": "S-WHO-PIVC-2024",
+      "title": "Guidelines for prevention of bloodstream infections associated with intravascular catheters: Part 1 peripheral catheters",
+      "publisher": "WHO",
+      "version": "2024",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK604065/table/fm-ch3.tab1/",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

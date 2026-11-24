@@ -1566,6 +1566,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -1579,6 +1584,11 @@
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
     },
     {
      "id": "S-NCSBN-DELEG-2019",
@@ -1599,7 +1609,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "05456d1f950e9611"
+   "hash": "82224278aa0ed6f8"
   },
   {
    "key": "SK-02",
@@ -1634,12 +1644,17 @@
      "id": "S-SHEA-CLABSI-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-CVC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "afae0ba3145d87d8"
+   "hash": "16f5433d6d7be7e8"
   },
   {
    "key": "SK-03",
@@ -1664,12 +1679,17 @@
      "id": "S-PVP-META-2026",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-WHO-PIVC-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "8632574209962053"
+   "hash": "ac8c34519872ec20"
   },
   {
    "key": "SK-04",
@@ -1709,7 +1729,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e9ed1fc6803befc7"
+   "hash": "20cc7d626ae9d24e"
   },
   {
    "key": "SK-05",
@@ -1744,12 +1764,17 @@
      "id": "S-AARC-TRACH",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NTSP-STOMA",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "00c0eea7730f396a"
+   "hash": "bd3de1153806ad16"
   },
   {
    "key": "SK-06",

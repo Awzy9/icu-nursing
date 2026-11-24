@@ -2853,6 +2853,25 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "82224278aa0ed6f8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-CDC-BSI-2011",
+     "S-ERC-PRC-2025",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-NCSBN-DELEG-2019",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-02": [
@@ -2900,6 +2919,22 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "16f5433d6d7be7e8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-INS-STANDARDS",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-NCSBN-DELEG-2019",
+     "S-SHEA-CLABSI-2022",
+     "S-WHO-CVC-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-03": [
@@ -2924,6 +2959,20 @@
      "N-INS-STANDARDS",
      "S-CDC-BSI-2011",
      "S-PVP-META-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ac8c34519872ec20",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-INS-STANDARDS",
+     "S-CDC-BSI-2011",
+     "S-PVP-META-2026",
+     "S-WHO-PIVC-2024"
     ],
     "gaps": 3,
     "required_sources": 0,
@@ -2963,6 +3012,21 @@
    },
    {
     "hash": "e9ed1fc6803befc7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-INTL-PI-2026",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "20cc7d626ae9d24e",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -3018,6 +3082,22 @@
      "N-NCBI-OPENRN-TRACH",
      "N-NHSGGC-TRACH-2022",
      "S-AARC-TRACH"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "bd3de1153806ad16",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ACI-TRACH",
+     "N-ICS-TRANSFER-2026",
+     "N-NCBI-OPENRN-TRACH",
+     "N-NHSGGC-TRACH-2022",
+     "S-AARC-TRACH",
+     "S-NTSP-STOMA"
     ],
     "gaps": 4,
     "required_sources": 0,

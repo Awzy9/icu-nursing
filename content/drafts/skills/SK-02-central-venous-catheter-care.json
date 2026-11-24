@@ -38,6 +38,11 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-WHO-CVC-2026",
+      "read": "partial",
+      "use": "Selected recommendation table on site inspection and avoiding routine catheter replacement"
     }
   ],
   "objectives": [
@@ -108,6 +113,13 @@
           "sources": [
             "S-SHEA-CLABSI-2022",
             "S-CDC-BSI-2011"
+          ]
+        },
+        {
+          "text": "Use the approved connector antiseptic, friction and drying procedure before access. Connector-specific contact time and the use of protective caps follow the unit's validated product procedure; do not assume every connector has the same requirements.",
+          "support": "partial",
+          "sources": [
+            "S-SHEA-CLABSI-2022"
           ]
         }
       ]
@@ -185,6 +197,14 @@
           "support": "partial",
           "sources": [
             "S-CDC-BSI-2011"
+          ]
+        },
+        {
+          "text": "Review the site for inflammation or infection at least daily and assess continued catheter need. Do not arrange routine replacement solely to prevent infection; suspected complications require clinical assessment and the local line-management pathway.",
+          "support": "partial",
+          "sources": [
+            "S-WHO-CVC-2026",
+            "S-SHEA-CLABSI-2022"
           ]
         }
       ]
@@ -323,6 +343,25 @@
       "sources": [
         "S-SHEA-CLABSI-2022"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "Review the site for inflammation or infection at least daily and assess continued catheter need. Do not arrange routine replacement solely to prevent infection; suspected complications require clinical assessment and the local line-management pathway.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-WHO-CVC-2026",
+        "S-SHEA-CLABSI-2022"
+      ]
+    },
+    {
+      "phase": "procedure",
+      "text": "Use the approved connector antiseptic, friction and drying procedure before access. Connector-specific contact time and the use of protective caps follow the unit's validated product procedure; do not assume every connector has the same requirements.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SHEA-CLABSI-2022"
+      ]
     }
   ],
   "gaps": [
@@ -389,6 +428,17 @@
       "accessed": "2026-11-14",
       "read": "partial",
       "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-WHO-CVC-2026",
+      "title": "Guidelines for prevention of bloodstream infections associated with intravascular catheters: Part 2 central venous catheters",
+      "publisher": "WHO",
+      "version": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK622840/table/fm-ch1.tab1/?report=objectonly",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
       "permission_required": "Verify"
     }
   ]
