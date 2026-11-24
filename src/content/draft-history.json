@@ -7050,6 +7050,18 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "23711105eada7151",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-24": [
