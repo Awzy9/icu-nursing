@@ -29,7 +29,7 @@ export function useProgressSync() {
 
   const saveSession = useCallback((moduleKey: string, session: SessionRecord) => {
     update((p: Progress) => localSaveSession(p, moduleKey, session));
-    if (signedIn) void rpc!.saveWorkingSession(moduleKey, session.kind, session.version, session.position, session.score, session.finished, Date.parse(session.at)).catch(() => undefined);
+    if (signedIn) void rpc!.saveWorkingSession(moduleKey, session.kind, session.version, session.position, session.score, session.finished, Date.parse(session.at), session.decisions).catch(() => undefined);
   }, [update, rpc, signedIn]);
 
   const discardSession = useCallback((moduleKey: string) => {

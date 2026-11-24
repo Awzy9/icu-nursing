@@ -73,3 +73,22 @@ export function restoreScenarioDecisions(s: Scenario, saved: { kind: string; ver
   if (expected !== saved.position || !canResumeScenario(s, {...saved, position: first, score: prefixScore})) return fallback;
   return { decisions, incomplete: first !== s.steps[0]?.position };
 }
+
+// Validate a recorded suffix for an in-progress or completed educational case.
+// This is not an authorization or competency boundary; native/direct RPC writes
+// are still user-owned data and must be validated again before display.
+export function validScenarioSave(s: Scenario, saved: { kind: string; version: string; position: number; score: number; finished: boolean; decisions: ScenarioDecision[] }): boolean {
+  if (saved.kind !== "scenario" || saved.version !== scenarioVersion(s) || !Number.isInteger(saved.score) || saved.score < 0 || saved.decisions.length > s.steps.length) return false;
+  if (!saved.finished) {
+    if (!canResumeScenario(s, saved)) return false;
+    if (!saved.decisions.length) return true;
+    return restoreScenarioDecisions(s,saved).decisions.length === saved.decisions.length;
+  }
+  const last = saved.decisions.at(-1);
+  if (!last || last.position !== saved.position) return false;
+  const option = s.steps.find(step => step.position === last.position)?.options[last.choice];
+  if (!option || option.next !== null || !Number.isInteger(option.points) || option.points < 0) return false;
+  const before = {...saved, finished: false, score: saved.score - option.points, decisions: saved.decisions.slice(0,-1)};
+  if (!canResumeScenario(s,before)) return false;
+  return !before.decisions.length || restoreScenarioDecisions(s,before).decisions.length === before.decisions.length;
+}

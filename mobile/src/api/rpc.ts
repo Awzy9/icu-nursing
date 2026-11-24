@@ -5,6 +5,7 @@ import { z } from "zod";
 import { caseListSchema, caseProgressSchema } from "@icu/schemas/cases";
 import { equipmentStateSchema, type EquipmentState } from "@icu/schemas/equipment-state";
 import { skillListSchema, skillProgressSchema } from "@icu/schemas/skills";
+import type { ScenarioDecision } from "@icu/schemas/scenario-debrief";
 import { attemptRowSchema, bookmarkRowSchema, lessonRowSchema, sessionRowSchema, type AttemptRow, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
 import { examRowSchema, type ExamRow } from "@icu/schemas/working-exam";
 
@@ -73,15 +74,19 @@ export function createRpc(client: SupabaseClient) {
       const { error } = await client.from("working_lessons").upsert({ user_id, module_key: moduleKey, completed, updated_at: new Date().toISOString() }, { onConflict: "user_id,module_key" });
       if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
     },
-    saveWorkingSession: (moduleKey: string, kind: "quiz" | "scenario", version: string, position: number, score: number, finished: boolean, updatedAt: number) =>
-      run("working_save_session", { p_module_key: moduleKey, p_kind: kind, p_version: version, p_position: position, p_score: score, p_finished: finished, p_updated_at: new Date(updatedAt).toISOString() }),
+    saveWorkingSession: (moduleKey: string, kind: "quiz" | "scenario", version: string, position: number, score: number, finished: boolean, updatedAt: number, decisions?: ScenarioDecision[]) => {
+      const args = { p_module_key: moduleKey, p_kind: kind, p_version: version, p_position: position, p_score: score, p_finished: finished, p_updated_at: new Date(updatedAt).toISOString() };
+      return kind === "scenario" && decisions !== undefined
+        ? run("working_save_session_v2", { ...args, p_decisions: decisions })
+        : run("working_save_session", args);
+    },
     discardWorkingSession: async (moduleKey: string): Promise<void> => {
       const { error } = await client.from("working_sessions").delete().eq("module_key", moduleKey);
       if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
     },
     listWorkingBookmarks: (): Promise<BookmarkRow[]> => selectRows("working_bookmarks", "module_key", bookmarkRowSchema),
     listWorkingLessons: (): Promise<LessonRow[]> => selectRows("working_lessons", "module_key,completed", lessonRowSchema),
-    listWorkingSessions: (): Promise<SessionRow[]> => selectRows("working_sessions", "module_key,kind,version,position,score,finished,updated_at", sessionRowSchema),
+    listWorkingSessions: (): Promise<SessionRow[]> => selectRows("working_sessions", "module_key,kind,version,position,score,finished,updated_at,decisions", sessionRowSchema),
     listWorkingAttempts: (): Promise<AttemptRow[]> => selectRows("working_attempts", "question_id,correct,answered_at,box", attemptRowSchema),
 
     // Timed exam mode (supabase/migrations/20261117201500_working_exams.sql), mirroring

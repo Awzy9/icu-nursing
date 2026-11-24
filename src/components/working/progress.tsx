@@ -49,7 +49,7 @@ export function LearningProvider({accountId,initial=emptyLearning,loadError,chil
    const at=Date.now();
    if(!accountId){recordGuestSession({...module,kind,version,position,score,finished,at,decisions});return;}
    try{
-    const result=await saveLearningSession({moduleKey:module.key,kind,version,position,score,finished,at});
+    const result=await saveLearningSession({moduleKey:module.key,kind,version,position,score,finished,at,decisions});
     if(!result.ok){setError(result.error);return;}
     setState(s=>{const existing=s.sessions.find(x=>x.key===module.key);if(existing&&existing.at>at)return s;return {...s,sessions:[...s.sessions.filter(x=>x.key!==module.key),{...module,kind,version,position,score,finished,at,decisions}]};});
     setError(null);
