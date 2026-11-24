@@ -36,7 +36,7 @@ Have ready: patient identity and location; the vital signs and early-warning sco
 - Give the **situation** first: who the patient is and the problem in one or two sentences.
 - Add only the **background** needed to understand it.
 - State your **assessment** in your own words, including how worried you are and what you think the problem is; mention uncertainty honestly.
-- Make a specific **recommendation or request** and a time frame ("please come to the bedside within 10 minutes"); then repeat back the answer.
+- Make a specific **recommendation or request** with a time frame matched to acuity. For an unstable patient, request immediate bedside help and activate the emergency pathway; use SBAR alongside, not instead of, urgent assessment and care. Confirm the agreed plan by check-back.
 - If the response is not enough for the risk, escalate through the chain of command per policy.
 - Document the call.
 
@@ -49,7 +49,7 @@ After escalation, reassess at the frequency the risk requires, and report change
 | Situation | Who you are, patient identifiers, current problem | "This is the nurse in ICU bay 4 about Mr A, 68 years old; his blood pressure has dropped." |
 | Background | Relevant history, symptoms, test results, treatments | "Day 2 after surgery; on [treatment]; urine output low for 3 hours." |
 | Assessment | What you think is happening, objective data, trend | "Heart rate 118, systolic 84, new confusion. I am worried he is getting septic." |
-| Recommendation / Request | What you need, by when; repeat-back | "Please review within 10 minutes. Do you want cultures started? I will repeat observations every 15 minutes." |
+| Recommendation / Request | What you need, by when; repeat-back | "I need immediate bedside help. I am assessing ABC and activating the emergency response." |
 
 SBAR can also be modified for patients and families to share concerns; for handover, order can follow unit policy.
 
@@ -64,7 +64,7 @@ No answer to a page or call; request for review not acknowledged; unclear plan a
 | Orders, diagnosis, treatment changes | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate when the early-warning score or any single parameter reaches the policy trigger, when the nurse is worried, or when a requested review does not occur or does not address the problem. Use the next level of the chain of command rather than waiting.
+Escalate when the score or any parameter reaches the local trigger, when the nurse is concerned, or when a requested review is delayed or inadequate. Activate emergency response immediately for clinical instability, regardless of the score. Continue bedside assessment and authorised supportive care while help is summoned. Use the chain of command without waiting if the response is inadequate.
 
 ## 13. Potential complications of poor communication
 Delayed treatment, duplicated or missed tasks, wrong-patient errors, medication errors, loss of trust within the team.
@@ -73,7 +73,7 @@ Delayed treatment, duplicated or missed tasks, wrong-patient errors, medication 
 Time of call and who was contacted; the information given (summarised in SBAR form); the advice or order and time; actions taken; further escalation and outcome.
 
 ## 15. Practical bedside example (fictional)
-**S:** "This is the ICU nurse for bed 4, a 68-year-old man; his blood pressure has dropped to 84 systolic and he is newly confused." **B:** "He is on day 2 after bowel surgery; urine output has been under 20 mL an hour for three hours; antibiotics were started yesterday." **A:** "His heart rate is 118 and his breathing is faster. I think he is deteriorating and may be septic." **R:** "Please come to the bedside within 10 minutes. Do you want a bolus or cultures started before you arrive? I will repeat the observations every 15 minutes." After the answer: "So you will come in 10 minutes and want cultures and a lactate; I will prepare them."
+**S:** "This is the ICU nurse for bed 4, a 68-year-old man; his blood pressure has dropped to 84 systolic and he is newly confused." **B:** "He is on day 2 after bowel surgery; urine output has been under 20 mL an hour for three hours; antibiotics were started yesterday." **A:** "His heart rate is 118 and his breathing is faster. I think he is deteriorating and may be septic." **R:** "I need immediate bedside help. I have activated the emergency response and am assessing airway, breathing and circulation. Please confirm the resuscitation plan." After the answer: "Understood; the team is coming now. I will continue assessment and prepare the requested tests without delaying emergency care."
 
 ## 16. Clinical case (fictional)
 At handover, the outgoing nurse reports "stable overnight". The incoming nurse asks for allergies, code status, lines, pending results and the plan for the next four hours, then checks the patient with the outgoing nurse at the bedside and notices a new rash. The nurse raises it immediately with an SBAR call rather than leaving it for later.

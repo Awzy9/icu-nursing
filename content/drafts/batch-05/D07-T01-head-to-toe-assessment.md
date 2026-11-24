@@ -74,8 +74,8 @@ Any abnormality in the primary survey; sudden change from the previous assessmen
 | Diagnosing causes, ordering tests and treatments | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate immediately for primary-survey abnormalities and any unanticipated findings per policy.
-SBAR — **S:** bed X, new weakness in the left arm and facial droop found during the neurological assessment. **B:** day 3 after surgery, assessed at 08:00 with normal findings at 04:00. **A:** possible acute neurological event. **R:** please review urgently; I will repeat the neurological checks every [interval].
+Interrupt the routine head-to-toe examination for any immediate threat identified during the primary survey. Assess and address life-threatening abnormalities within scope while summoning emergency help; reassess the response before resuming the routine examination. New focal neurological signs require immediate stroke or neurological emergency pathway activation, documentation of last known well, and urgent assessment rather than waiting for the next scheduled neurological check.
+SBAR — **S:** bed X, new weakness in the left arm and facial droop found during the neurological assessment. **B:** day 3 after surgery, assessed at 08:00 with normal findings at 04:00. **A:** possible acute neurological event. **R:** activate the stroke pathway now; last known well was 04:00, and symptoms were first identified at 08:00. I will continue emergency assessment and monitoring.
 
 ## 13. Potential complications of omission
 Missed deterioration, unrecognised pressure injuries and device problems, poor handover, duplicated or missed care.

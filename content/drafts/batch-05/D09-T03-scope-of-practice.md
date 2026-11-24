@@ -81,7 +81,7 @@ Being asked to perform a task you have not been trained for; an unclear or verba
 | Diagnosing and prescribing | Prescriber (or advanced practice) decision; depends on jurisdiction |
 
 ## 12. Escalation criteria
-Escalate when a task exceeds your competence, a protocol is unclear or conflicts with patient safety, an order seems unsafe, you suspect an error, or you cannot get appropriate supervision. Use the chain of command and document.
+Escalate tasks exceeding competence or authorisation, unclear or conflicting protocols, unsafe orders, suspected errors or inadequate supervision. Verify applicable national regulation, professional registration, employer credentialing and local protocols; this educational draft does not grant authority. A protocol-directed adjustment or nurse-led action is distinct from independent prescribing and is permitted only where authorised. During deterioration, summon qualified help immediately and provide emergency measures within your competence; do not abandon the patient. Document concerns and responses.
 SBAR — **S:** I have been asked to [task] and I am not competent or authorised to do this. **B:** my training/competency record shows [x]; the patient is [state]. **A:** it may cause harm or fall outside my scope. **R:** please arrange someone qualified or supervision and confirm the order and policy.
 
 ## 13. Potential complications

@@ -74,8 +74,8 @@ Non-blanching redness; skin warmer, cooler, firmer or softer than surroundings; 
 | Device removal or change, treatment of established wounds beyond protocol | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate to the wound or tissue-viability team and the prescriber when: a new or worsening injury is found; skin changes appear under a device that cannot be moved; the patient cannot be repositioned safely; injury appears with signs of infection (warmth, spreading redness, pus, fever, rising white count); pain increases.
-SBAR — **S:** new non-blanching, dusky area on the left heel of a patient on vasopressors. **B:** day 4, norepinephrine ongoing, diabetic, limited mobility. **A:** early pressure injury likely; offloading measures started. **R:** please review today; advise on dressing/device options and nutrition referral.
+Escalate new or worsening tissue injury, suspected device-related injury, inability to reposition safely, signs of infection or increasing pain. A cool, discoloured limb or heel with new weak or absent pulses requires urgent assessment for impaired arterial perfusion, not simply routine wound referral. Offload pressure while maintaining safe positioning. In shock or systemic hypoperfusion, individualise repositioning to tolerance; use small assisted weight shifts and frequent reassessment when full turns are unsafe. A support surface is an adjunct, not a substitute for reassessment.
+SBAR — **S:** new non-blanching, dusky area on the left heel of a patient on vasopressors. **B:** day 4, norepinephrine ongoing, diabetic, limited mobility. **A:** early pressure injury likely; offloading measures started. **R:** please assess perfusion now and advise on safe offloading; arrange tissue-viability review and nutrition assessment.
 
 ## 13. Potential complications
 Infection (including bone), sepsis, pain, delayed recovery, longer ICU/hospital stay, readmission, distress for the patient and family.
@@ -87,7 +87,7 @@ Risk assessment and tool; full skin and tissue findings with location and descri
 Turning a sedated, ventilated patient: two nurses with a slide sheet reduce shear; one checks the sacrum, hips and heels; the other checks under the endotracheal tube fixation, nasogastric tube and oxygen saturation probe; the heels are floated with a pillow under the calves; the nurse records findings, position and time.
 
 ## 16. Clinical case (fictional)
-A 64-year-old man with septic shock is on vasopressors and diabetic. On day 3, the nurse notes a dusky area on his right heel that does not blanch, with cool skin and weak pedal pulses. She offloads the heel, applies a preventive dressing per policy, increases skin checks, informs the intensivist and tissue-viability nurse, requests a dietitian review and documents the findings and times.
+A 64-year-old man with septic shock is on vasopressors and diabetic. On day 3, the nurse notes a dusky area on his right heel that does not blanch, with cool skin and weak pedal pulses. She offloads the heel, urgently requests clinical assessment of impaired limb perfusion, informs the tissue-viability team and maintains close skin and circulation surveillance. Dressing and nutrition decisions follow the assessment and local pathway; she documents the findings and actions.
 
 ## 17. MCQs
 **Q1 (prioritization).** A diabetic patient on vasopressors has a dusky, non-blanching area on the heel, and another patient is due a routine mattress check. What should the nurse do first?

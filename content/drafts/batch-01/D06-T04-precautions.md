@@ -66,7 +66,7 @@ New diarrhoea or productive cough in a patient not on precautions; clusters of s
 | Treatment of any infection | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate to the charge nurse and infection-prevention team when: a patient meets a trigger and no precautions are in place; a breach or exposure occurs; the required room or supplies are unavailable; two or more patients develop similar symptoms.
+Start indicated interim transmission-based precautions under the approved pathway when a transmissible infection is suspected; do not wait for laboratory confirmation or a routine review. Escalate missing precautions, breaches, exposures, unavailable isolation facilities or supplies, and suspected clusters to the charge nurse and infection-prevention team. Use the facility's contingency pathway if the required isolation room is unavailable. Maintain standard precautions for every patient and select additional protection according to suspected transmission route and task. If the patient is unstable, activate the emergency response with appropriate protective measures rather than deferring urgent care.
 SBAR prompt — **S:** bed X, [symptom], no precautions in place. **B:** [admission source, devices, recent exposures]. **A:** possible [contact/droplet/airborne] pathogen. **R:** please advise precaution level and testing; I have started [interim measures per policy].
 
 ## 13. Potential complications

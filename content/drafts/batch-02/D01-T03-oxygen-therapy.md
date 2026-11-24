@@ -78,7 +78,7 @@ SpO₂ below the ordered range despite increased oxygen; rising respiratory rate
 | Arterial blood gas sampling | Needs order or protocol (competence required) |
 
 ## 12. Escalation criteria
-Escalate immediately for: SpO₂ below the ordered range with rising oxygen need; distress, exhaustion or new confusion; unstable observations; patient on HFNC or after extubation who worsens; oxygen supply or equipment failure.
+Activate emergency response for threatened airway, inadequate ventilation, severe hypoxaemia, exhaustion, new reduced consciousness or circulatory compromise. Provide emergency oxygenation and ventilatory support within the authorised pathway; a lower prescribed saturation target for hypercapnia risk must not delay rescue from life-threatening hypoxaemia. Escalate increasing oxygen requirements, deterioration on high-flow support or after extubation, or equipment failure. Interpret the oximeter reading alongside signal quality, perfusion, work of breathing and consciousness; a satisfactory saturation does not exclude hypoventilation or hypercapnia. Obtain blood gas assessment as indicated by the treating team.
 SBAR — **S:** bed X, SpO₂ 89% on [device/flow], target 94–98%. **B:** day 2 pneumonia, respiratory rate rising to 28, increasing oxygen over 3 hours. **A:** worsening hypoxaemia and work of breathing; I am worried about fatigue. **R:** please review now; consider escalation of support; I am staying with the patient and will repeat observations every [interval].
 
 ## 13. Potential complications

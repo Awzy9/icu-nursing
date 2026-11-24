@@ -79,7 +79,7 @@ Desaturation not recovering within a short time; bradycardia, tachycardia or arr
 | Ventilator setting changes after suctioning problems | Respiratory therapist / prescriber decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: persistent desaturation, instability or arrhythmia; bleeding; suspected tube obstruction or displacement; bronchospasm; ICP rises; secretions that cannot be cleared.
+Stop suction promptly if significant desaturation, arrhythmia, haemodynamic deterioration or other intolerance occurs; assess and restore effective oxygenation and ventilation under the authorised emergency pathway and summon help for persistent or severe deterioration. Do not continue suction merely to complete a timed pass. Escalate suspected airway obstruction or displacement, significant bleeding, bronchospasm, intracranial pressure deterioration or secretions that cannot be cleared. The AARC maximum suction duration is an upper limit, not a target; assess recovery before any further attempt.
 SBAR — **S:** bed X, SpO₂ fell to 82% during suctioning and is slow to recover. **B:** day 4 ventilation, thick secretions, preoxygenated, two passes. **A:** possible obstruction or plug; unstable. **R:** please come now; I have stopped suctioning, increased oxygen per protocol and am bagging/assisting per policy.
 
 ## 13. Potential complications

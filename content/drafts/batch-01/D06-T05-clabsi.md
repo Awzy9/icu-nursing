@@ -76,7 +76,7 @@ Fever or rigors, hypothermia, new tachycardia or hypotension, new confusion; red
 | Decision to remove, exchange or insert a line; antimicrobials; lock therapy | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate promptly for: fever/rigors with a line in place; site changes with systemic signs; instability; suspected disconnection or air entry; line occlusion not resolved by routine checks. Escalate organisational problems (staffing, lack of supplies) to the charge nurse.
+Activate emergency help for instability, suspected sepsis with organ dysfunction, or suspected air entry with respiratory or circulatory deterioration. Address immediate hazards within training and protocol while summoning help. Promptly report fever or rigors, site changes, disconnection, or unresolved line occlusion; never force-flush an obstructed catheter. Review ongoing line necessity daily and arrange removal of a nonessential line through an authorised order or nurse-led pathway where applicable. Disinfect the access port before each access using the approved antiseptic technique and required drying time. Escalate staffing or supply barriers to the charge nurse.
 SBAR — **S:** CVC patient, bed X, new fever 38.9, rigors, tachycardia. **B:** line day 6, site slightly red, last dressing change [time]. **A:** possible line infection or sepsis. **R:** please review now; consider cultures and the plan for the line; I will repeat observations every [interval].
 
 ## 13. Potential complications

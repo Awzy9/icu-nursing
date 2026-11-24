@@ -68,19 +68,19 @@ Gaps in observations during deterioration; copied entries that do not match the 
 | Changing or deleting another person's entries | Not permitted; use the correction process |
 
 ## 12. Escalation criteria
-Escalate to the charge nurse or manager when: documentation is missing for a safety-critical task; you discover an entry in the wrong record; another person asks you to alter documentation inappropriately; you suspect inappropriate access to records.
+Prioritise immediate patient safety and escalation of clinical deterioration before nonessential charting. Document observations, actions, notifications and responses as soon as practicable, identifying late entries accurately. Escalate missing safety-critical documentation, wrong-record entries, inappropriate requests to alter records and suspected unauthorised access. Use the approved correction process, preserving the audit trail; do not erase or conceal the original entry.
 
 ## 13. Potential complications of poor documentation
 Missed or delayed treatment, duplication of care (for example repeated medication), inability to defend care decisions, regulatory action, privacy breaches.
 
 ## 14. Documentation (for this topic: what a good escalation entry contains)
-"14:20 BP 84/50, HR 118, new confusion. Called Dr [name] at 14:22 via SBAR, requested bedside review. Dr arrived 14:30, ordered [order]. Repeat observations 14:45: BP 92/55. Family informed 14:50." (fictional; no clinical names or real data)
+"14:20 BP 84/50, HR 118, new confusion. Emergency response activated immediately; ABC assessment and authorised supportive care initiated. 14:22 team at bedside, SBAR given. [Orders and actions recorded]. Repeat observations recorded during resuscitation. Family update documented when appropriate." (fictional; no clinical names or real data)
 
 ## 15. Practical bedside example
 You are interrupted while giving a prescribed treatment and cannot chart it immediately. Make brief notes if needed, finish the task, then chart with the real time the task was done, noting that the entry is made later if the system requires it. Never copy a colleague's time or chart ahead to "save time".
 
 ## 16. Clinical case (fictional)
-A nurse realises she charted a patient's weight in the wrong record. She tells the charge nurse, uses the correction process to mark the entry as made in error with a note, enters the right weight in the correct record and reports the event through the incident system.
+A nurse realises she charted a patient's weight in the wrong record. She assesses any immediate risk to both patients, alerts the responsible team and charge nurse, verifies patient identity and the measurement, uses the authorised correction process to preserve the audit trail, and documents the verified weight in the correct record. Any treatment consequences, incident reporting and privacy notification follow local policy.
 
 ## 17. MCQs
 **Q1 (safety).** A nurse is interrupted before recording a dose that she has just given. What is the correct action?
