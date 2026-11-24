@@ -111,6 +111,11 @@
      "verified": "2026-11-24"
     },
     {
+     "id": "S-INTL-PI-DRPI-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-INTL-PI-HEELS-2025",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -124,7 +129,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "486c04fea95c7b9a"
+   "hash": "cfb77dc9b1b340d5"
   },
   {
    "key": "D09-T01",
@@ -136,6 +141,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AHRQ-HANDOFF",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -144,7 +154,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "9c312444a8e4c56e"
+   "hash": "8d792b9efddbb196"
   },
   {
    "key": "D09-T02",
@@ -184,7 +194,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "8d6b78778742ca77"
+   "hash": "bac3da3d4fecea28"
   },
   {
    "key": "D01-T03",
@@ -694,12 +704,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "36dcd012ba083bfd"
+   "hash": "cb0ffc09242a40c6"
   },
   {
    "key": "D02-T04",
@@ -816,6 +831,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-OLDER-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -829,7 +849,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "4776aa1be0056513"
+   "hash": "ff219a48b7a9363e"
   },
   {
    "key": "D07-T03",
