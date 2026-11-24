@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { scenarioVersion, canResumeScenario, sequentialHistory, restoreScenarioDecisions } from "@icu/schemas/scenario-session";
 import { scenarioDebrief, type ScenarioDecision } from "@icu/schemas/scenario-debrief";
+import { scenarioSafetyCategory } from "@icu/schemas/scenario-safety";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 import { scoreTenths } from "../../src/core/engines";
@@ -64,6 +65,7 @@ export default function CaseScreen() {
           const step = scenario.steps.find((s) => s.position === pos)!;
           const previousSteps = visited.flatMap((n) => scenario.steps.filter((item) => item.position === n));
           const option = choice === null ? undefined : step.options[choice];
+          const safetyCategory = scenarioSafetyCategory(code ?? "", pos, option);
           const supplemental = remainingObservations(step.observations, { numeric: showNumericMonitor, neuro: showNeuro, perfusion: showPerfusion });
           const sharedCheckpoint = option?.next != null && step.options.every(o => o.next === option.next);
           const version = scenarioVersion(scenario);
@@ -90,7 +92,7 @@ export default function CaseScreen() {
           }
 
           if (done) {
-            const debrief = scenarioDebrief(scenario, decisions);
+            const debrief = scenarioDebrief(scenario, decisions, code ?? "");
             return (
               <Card>
                 <H2>{t("cases.summary")}</H2>
@@ -98,8 +100,9 @@ export default function CaseScreen() {
                 <P>{locale === "ar" ? "نقاط القرارات المسجلة" : "Recorded decisions"}: {debrief.observedPoints} / {debrief.observedMaximum}</P>
                 {resumedWithoutDecisions ? <P small muted>{locale === "ar" ? "لا تتوفر تفاصيل القرارات السابقة للاستئناف. تعرض المراجعة القرارات المسجلة هنا فقط." : "Some earlier answer details are unavailable. This review covers only retained decisions."}</P> : null}
                 <P small muted>{locale === "ar" ? "للتعلم فقط، وليس تقييماً للكفاءة السريرية." : "Educational feedback only; not a clinical competency assessment."}</P>
+                {debrief.safetyReviewCount > 0 ? <P>{locale === "ar" ? "قرارات ذات أولوية لمراجعة السلامة" : "Priority safety-review decisions"}: {debrief.safetyReviewCount} ({locale === "ar" ? "تصنيف تعليمي أولي" : "Draft educational rubric"})</P> : null}
                 {debrief.priorities.length ? <H2>{locale === "ar" ? "أولويات المراجعة" : "Review priorities"}</H2> : <P>{locale === "ar" ? "لا توجد قرارات مسجلة تحتاج إلى مراجعة." : "No recorded decisions require review."}</P>}
-                {debrief.priorities.map(item => <Card key={item.position}><P>Step {item.position}: {item.points} / {item.maximum} points</P><P>{item.prompt}</P><P>Your choice: {item.selected}</P><P>{item.feedback}</P><P>Preferred response: {item.preferred}</P><P>{item.preferredFeedback}</P></Card>)}
+                {debrief.priorities.map(item => <Card key={item.position}><P>Step {item.position}: {item.points} / {item.maximum} points</P>{item.safetyCategory ? <P>Priority safety review: {item.safetyCategory}</P> : null}<P>{item.prompt}</P><P>Your choice: {item.selected}</P><P>{item.feedback}</P><P>Preferred response: {item.preferred}</P><P>{item.preferredFeedback}</P></Card>)}
                 <H2>{locale === "ar" ? "ما تعلمته" : "Your takeaways"}</H2>
                 {scenario.takeaways.map((item, i) => <P key={i}>{`• ${item}`}</P>)}
                 <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); setDecisions([]); setResumedWithoutDecisions(false); setHistoryIncomplete(false); }} />
@@ -153,6 +156,7 @@ export default function CaseScreen() {
               {revealed && option ? (
                 <Card>
                   <P>{t("cases.feedback")}</P>
+                  {safetyCategory ? <P>Priority safety review: {safetyCategory} (draft educational rubric)</P> : null}
                   <P>{option.feedback}</P>
                   {option.consequence ? <P small muted>{locale === "ar" ? "النتيجة المحتملة: " : "Possible consequence: "}{option.consequence}</P> : null}
                   {sharedCheckpoint ? <P small muted>{locale === "ar" ? "الخطوة التالية نقطة تعليمية مشتركة وليست نتيجة فردية لاختيارك." : "The next step is a shared teaching checkpoint, not an individualized outcome of your choice."}</P> : null}
