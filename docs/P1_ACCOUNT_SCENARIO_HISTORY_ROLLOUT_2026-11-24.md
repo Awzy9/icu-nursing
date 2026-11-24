@@ -1,0 +1,7 @@
+# Account scenario history rollout preparation — 24 November 2026
+
+Implemented mobile merge correction: newer completed remote rows remove older unfinished local sessions, while older completion rows cannot replace newer attempts. Invalid remote timestamps are ignored. Added two regression tests. This does not yet provide durable deletion tombstones or synchronization retry guarantees.
+
+Prepared `docs/sql/working_session_decision_history_candidate.sql`, not an active migration. It adds bounded structured history to the existing RLS-protected session row and a distinct invoker RPC to atomically save score, position and history. Legacy writes intentionally clear unknown history instead of attaching stale choices to a different attempt. No new permissions beyond authenticated execution; existing ownership policy retained. Database shape checks are not a clinical competency assessment; client graph validation remains necessary.
+
+Blocker: Supabase CLI, psql and Docker unavailable in local environment; npm registry DNS unavailable. No live database was changed and no SQL execution or migration verification is claimed. Next: generate migration using CLI in isolated environment, run authenticated round-trip and cross-user denial tests, check stale writes and legacy behavior, run advisors, then wire shared schemas, server actions, readers, native RPC and merge. Keep history absent explicit when old clients write. Roll out database before dependent clients. Latest CI was in progress at inspection. No production release.

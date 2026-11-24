@@ -37,6 +37,17 @@ describe("mergeRemoteSessions", () => {
     const merged = mergeRemoteSessions(emptyProgress(), [{ module_key: "SC-10", kind: "scenario", version: "v1", position: 3, score: 6, finished: true, updated_at: "2026-01-01T00:00:01.000Z" }]);
     expect(merged.sessions["SC-10"]).toBeUndefined();
   });
+  it("clears older local progress when another device has finished the case", () => {
+    const local = { ...emptyProgress(), sessions: { "SC-10": { kind: "scenario" as const, version: "v1", position: 2, score: 2, finished: false, at: "2026-01-01T00:00:05.000Z" } } };
+    const remote = { module_key: "SC-10", kind: "scenario" as const, version: "v1", position: 3, score: 6, finished: true, updated_at: "2026-01-01T00:00:10.000Z" };
+    expect(mergeRemoteSessions(local, [remote]).sessions["SC-10"]).toBeUndefined();
+    expect(local.sessions["SC-10"].position).toBe(2);
+    expect(mergeRemoteSessions(local, [{...remote, updated_at: "2026-01-01T00:00:01.000Z"}])).toBe(local);
+  });
+  it("ignores remote session rows with invalid timestamps", () => {
+    const local = emptyProgress();
+    expect(mergeRemoteSessions(local, [{ module_key: "SC-10", kind: "scenario", version: "v1", position: 2, score: 2, finished: false, updated_at: "invalid" }])).toBe(local);
+  });
   it("returns the same object reference when nothing changes", () => {
     const local = emptyProgress();
     expect(mergeRemoteSessions(local, [])).toBe(local);

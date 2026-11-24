@@ -19,10 +19,20 @@ export function mergeRemoteSessions(local: Progress, remote: SessionRow[]): Prog
   let sessions = local.sessions;
   let changed = false;
   for (const row of remote) {
-    if (row.finished) continue; // a finished remote session has nothing to resume locally either
     const existing = sessions[row.module_key];
     const remoteAt = Date.parse(row.updated_at);
+    if (!Number.isFinite(remoteAt)) continue;
     if (existing && Date.parse(existing.at) >= remoteAt) continue;
+    if (row.finished) {
+      // A newer completed attempt supersedes an older unfinished local attempt.
+      // Do not store a resumable record for a finished remote row.
+      if (existing) {
+        sessions = { ...sessions };
+        delete sessions[row.module_key];
+        changed = true;
+      }
+      continue;
+    }
     const record: SessionRecord = { kind: row.kind, version: row.version, position: row.position, score: row.score, finished: row.finished, at: row.updated_at };
     sessions = { ...sessions, [row.module_key]: record };
     changed = true;
