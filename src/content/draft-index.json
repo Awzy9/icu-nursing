@@ -329,7 +329,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "e33acac7086f2855"
+   "hash": "b50bce33b38a8e54"
   },
   {
    "key": "D03-T10",
@@ -354,7 +354,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "e040938ab00906b2"
+   "hash": "f15464c67548f5fc"
   },
   {
    "key": "D04-T02",
@@ -374,7 +374,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "59c6e67843f9299f"
+   "hash": "9d8e5adc9c10f185"
   },
   {
    "key": "D06-T07",
@@ -404,7 +404,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "933fd05437aa4e5b"
+   "hash": "586560a69dfa2a0a"
   },
   {
    "key": "D07-T06",
@@ -426,6 +426,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESPEN-ICU-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NHSE-NGT-2016",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -444,7 +449,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "60f26b3a55fc6ee8"
+   "hash": "0df2b2499780aa35"
   },
   {
    "key": "D01-T12",

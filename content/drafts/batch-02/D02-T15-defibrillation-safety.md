@@ -96,7 +96,7 @@ B. Remove the mask, keep it at least 1 m from the chest, and leave any ventilato
 C. Turn off the monitor to avoid interference and leave the mask where it is, since the patient needs the oxygen.
 D. Keep the mask on but loosen the strap so that the oxygen escapes more easily from around the face during the shock.
 **Answer: B.**
-**Why correct:** ERC advises removing masks and cannulae at least 1 m from the chest, keeping circuits connected with exhaust directed away.
+**Why correct:** For defibrillation during arrest, ERC 2025 advises moving free-flow oxygen masks or cannulae at least 1 m from the chest. A ventilation circuit attached to an advanced airway is different: leave it connected and direct exhaust away from the chest. Coordinate this with the resuscitation team without unnecessary interruption to CPR.
 **Why not A:** More oxygen raises the fire risk.
 **Why not C:** Leaving the mask in place is hazardous.
 **Why not D:** A loosened mask still floods the area with oxygen.
@@ -107,7 +107,7 @@ B. Stop compressions for ten seconds to allow the defibrillator to charge fully 
 C. Ask the compressor to hold the chest only lightly with the fingertips so that the shock risk to them is reduced.
 D. Keep compressing while the defibrillator charges, then pause briefly, call a safety check, and shock with no one touching.
 **Answer: D.**
-**Why correct:** Charging during compressions shortens the pre-shock pause, and the shock must not be delivered while someone is touching the patient.
+**Why correct:** Charging during compressions shortens the pre-shock pause; the trained operator visually checks that everyone is clear before delivery. Resume chest compressions immediately after the shock unless there are clinical and physiological signs of return of circulation that justify a brief assessment. Do not rely on gloves for electrical protection.
 **Why not A:** ERC states shocks during manual compressions are not safe even with gloves.
 **Why not B:** Unnecessary pauses reduce shock success.
 **Why not C:** Any contact at the moment of shock is unsafe.
@@ -118,7 +118,7 @@ B. Avoid using pads on this patient altogether, because defibrillation may damag
 C. Place the pad more than 8 cm from the device, or use an alternative position, as the leader directs.
 D. Use the usual position regardless of the device, since implanted devices cannot be affected by defibrillator pads.
 **Answer: C.**
-**Why correct:** ERC advises pads more than 8 cm from the device or an alternative position.
+**Why correct:** ERC advises keeping pads more than 8 cm from an implanted device or using an alternative position. Do not delay an indicated shock solely because the patient has an implanted device; use the trained operator and the local resuscitation algorithm.
 **Why not A:** Pads should not be directly over the device.
 **Why not B:** Defibrillation should not be withheld because of a device.
 **Why not D:** The position should avoid the device.

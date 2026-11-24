@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM clinical practice guidelines: Early enteral nutrition in critically ill patients (Intensive Care Med 2017;43:380-398; CC BY-NC)", "SHEA/IDSA/APIC 2022 update on VAP prevention (feeding statements only)", "Phase 3 additions: NICE CG32 Nutrition support for adults (published 2006, updated 2017; recommendations 1.7.16–1.7.18 and monitoring table) – UK guideline; NHS Improvement Patient Safety Alert NHS/PSA/RE/2016/006 on nasogastric tube misplacement (22 July 2016; summary read) – England"]
-sources: [S-ESICM-EEN-2017, S-SHEA-VAP-2022, S-NICE-CG32, S-NHSE-NGT-2016, S-ADA-HOSP-2026]
+sources: [S-ESICM-EEN-2017, S-SHEA-VAP-2022, S-NICE-CG32, S-NHSE-NGT-2016, S-ADA-HOSP-2026, S-ESPEN-ICU-2023]
 sources_not_read: [S-ASPEN]
 independently_written_note: "Original wording. The ESICM 2017 early enteral nutrition guideline and the VAP/VAE 2022 update were read in full text. ASPEN/SCCM full guideline not accessible. The ESPEN 2023 English practical guideline was located bibliographically on 2026-11-23 (with a 2026 Spanish-language edition) but its clinical content and permissions were not fully reviewed. Energy and protein targets, feed products and rates are NOT covered. In Phase 3, tube-placement verification was added from NICE CG32 (UK, updated 2017) and the 2016 NHS Improvement alert summary (England); the alert's supporting resource set, the earlier NPSA alerts (2011–2013), and ASPEN/ESPEN guidance were not read, and the verification methods are UK-specific."
 ---
@@ -99,12 +99,12 @@ A 66-year-old ventilated man on vasopressors has a distended abdomen, a large as
 
 ## 17. MCQs
 **Q1 (prioritization).** A ventilated patient on rising vasopressor doses has a newly distended abdomen, vomited once and has a large gastric aspirate. What is the best nursing action?
-A. Pause the feed per policy, protect the airway, keep the bed head raised and report urgently with SBAR.
+A. Pause feeding, assess and protect the airway, and activate urgent clinical help.
 B. Continue the feed at the same rate and re-check the abdomen at the next routine round, as one vomit is common.
 C. Give a laxative from the ward stock and restart the feed at a lower rate once the patient has settled.
 D. Flush the tube and increase the feed rate to move the contents along.
 **Answer: A.**
-**Why correct:** New distension with instability may indicate intolerance or gut hypoperfusion; pausing and escalating protects the patient.
+**Why correct:** New distension and vomiting during escalating vasopressor support warrant immediate assessment for aspiration, intolerance or bowel hypoperfusion. ESPEN 2023 advises delaying enteral nutrition during uncontrolled shock until perfusion goals are reached, then cautious clinician-directed initiation while monitoring for bowel ischemia. If insulin is active when feeds stop, coordinate the glucose-monitoring and replacement plan promptly; ADA 2026 identifies unexpected feed interruption as a hypoglycemia risk.
 **Why not B:** Continuing risks aspiration and worsening distension.
 **Why not C:** Laxatives and restarting need an order and could harm if there is obstruction.
 **Why not D:** Increasing the rate would worsen intolerance.
@@ -126,7 +126,7 @@ B. Say ESICM suggests not delaying feeding solely because of proning, then ask t
 C. Increase the feed rate during proning to make up for the time lost during the turn and the preparation for it.
 D. Remove the feeding tube before every turn to avoid displacement, and re-insert it once the patient is supine again.
 **Answer: B.**
-**Why correct:** The guideline suggests not delaying enteral feeding solely because of prone positioning; the team sets the plan.
+**Why correct:** Proning alone is not a reason to withhold enteral nutrition throughout a session. Follow the coordinated turn and feeding plan; assess hemodynamic stability, tube security and placement before use, positioning and intolerance. Do not restart automatically if aspiration or displacement is suspected.
 **Why not A:** Stopping without the team's plan is not guideline-based.
 **Why not C:** Increasing rates is a prescriber decision and may worsen intolerance.
 **Why not D:** Removing the tube is unnecessary and unsafe.
@@ -137,7 +137,7 @@ B. Lying the patient flat during feeds to make the stomach empty into the bowel.
 C. Giving large boluses quickly to finish the feed sooner, so that the stomach is empty for the next medicines.
 D. Switching off the monitors during the feed so that the patient is not disturbed and can rest more easily.
 **Answer: A.**
-**Why correct:** Head elevation and oral care are essential practices in the VAP update.
+**Why correct:** Head elevation when safe is a prevention measure. Regular oral care reduces oral microbial burden and contributes to VAP prevention; it does not by itself prevent aspiration. Confirm tube position by the authorized pathway and assess feeding tolerance. Adapt positioning to the patient's clinical needs.
 **Why not B:** A flat position increases aspiration risk.
 **Why not C:** Rapid large volumes increase vomiting risk.
 **Why not D:** Monitoring is needed during feeding.
@@ -159,7 +159,7 @@ B. Follow unit policy, because the statements concern VAP rates, and raise the d
 C. Change the policy yourself on your shift to match the SHEA update, since it is the most recent of the two documents.
 D. Check aspirates only once a week to compromise between the two documents and reduce the workload for the team.
 **Answer: B.**
-**Why correct:** Policies change through governance; the discrepancy should be flagged, not resolved by individual nurses.
+**Why correct:** Do not use gastric residual volume alone as a diagnosis of aspiration or feeding intolerance. Follow the approved policy, assess vomiting, distension and clinical instability, and escalate concerning findings. VAP surveillance outcomes and nutritional tolerance are different questions; raise policy discrepancies through governance.
 **Why not A:** Local policy and other guidelines still use aspirates.
 **Why not C:** Individual nurses do not rewrite policies.
 **Why not D:** An arbitrary compromise has no basis in either document.
@@ -172,6 +172,8 @@ D. Check aspirates only once a week to compromise between the two documents and 
 - Klompas M, et al. SHEA/IDSA/APIC VAP/VAE/NV-HAP prevention 2022 Update. Infect Control Hosp Epidemiol. 2022;43:687-713. https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/ (accessed 2026-11-14)
 
 - American Diabetes Association Professional Practice Committee for Diabetes. *Diabetes Care in the Hospital: Standards of Care in Diabetes—2026*. Diabetes Care. 2026;49(Suppl 1):S339–S355. https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/ (hypoglycaemia and feed-interruption sections inspected 2026-11-23; **publisher reproduction and commercial adaptation rights restricted; cite-only**).
+
+- ESPEN practical ICU nutrition guideline 2023. https://doi.org/10.1016/j.clnu.2023.07.011 (indexed recommendation excerpt, accessed 2026-11-24; full text not reviewed)
 
 ## 19. Local protocol note
 Tube placement checks, aspirate thresholds, flushing, medicine administration, feed rates and glucose management follow the unit's policy and dietitian.

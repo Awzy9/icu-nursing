@@ -95,12 +95,12 @@ A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.5
 ## 17. MCQs
 **Q1 (prioritization).** On the morning round a ventilated patient on day 4 has rising oxygen needs, increased secretions, a flat bed after a procedure, and no mouth care documented for 12 hours. What should the nurse do first?
 A. Raise the head of the bed to 30–45° unless contraindicated, and mention the oxygen trend and secretions at the next routine handover.
-B. Raise the bed, do mouth care, then report the rising FiO₂ and secretions to the team with SBAR.
+B. Assess respiratory deterioration and escalate now; correct positioning and mouth-care gaps when safe.
 C. Start a chlorhexidine mouth rinse as an extra measure, then hand over the oxygen trend at the next routine round.
 D. Wait for the daily ward round to decide what to change, because ventilator settings and secretions are medical matters.
 **Answer: B.**
-**Why correct:** Both the bundle gaps and the oxygenation change need action now; positioning and mouth care are nursing tasks, and the trend must be escalated promptly.
-**Why not A:** Raising the bed is right, but it omits mouth care and leaves the rising oxygen need unreported until the routine handover.
+**Why correct:** A rising oxygen requirement and new secretions may indicate acute deterioration, not necessarily VAP. Assess ventilation, oxygenation and circulation, escalate promptly and correct the head-of-bed position if safe. Oral care follows when clinically stable; do not delay assessment to complete the prevention bundle.
+**Why not A:** Positioning can help prevention but does not replace immediate clinical review of increasing oxygen needs.
 **Why not C:** Chlorhexidine oral care is generally not recommended for VAP prevention in the 2022 update, and reporting later delays assessment.
 **Why not D:** Waiting for the round delays assessment of a possible deterioration; bundle tasks are nursing responsibilities.
 
@@ -121,7 +121,7 @@ B. Agree, because older protocols used chlorhexidine and nothing has changed sin
 C. Suggest stopping mouth care to avoid disturbing the patient and the endotracheal tube.
 D. Suggest using chlorhexidine on the night shift when staffing is lower.
 **Answer: A.**
-**Why correct:** The 2022 update moved chlorhexidine oral care to "generally not recommended" and added toothbrushing as essential.
+**Why correct:** The 2022 update favors regular oral hygiene including toothbrushing without routine chlorhexidine for VAP prevention. Use gauze or another approved approach for edentulous patients; adapt care to bleeding risk, airway stability and local policy. This is not a prohibition on chlorhexidine for unrelated indications.
 **Why not B:** Recommendations changed between editions.
 **Why not C:** Mouth care is part of prevention.
 **Why not D:** Dosing by shift is not evidence-based and does not address the recommendation.
@@ -149,12 +149,12 @@ D. Leave it: the 2022 update advises changing circuits only if visibly soiled, m
 **Why not C:** More disconnections can increase risk and secretion exposure.
 
 **Q6 (judgment).** A trainee says the SHEA 2022 update means cuff pressure no longer needs to be checked in ventilated patients. What is the most accurate reply?
-A. It covers VAP prevention only; AARC 2024 still recommends manometer checks at the unit's interval, but not continuous monitoring.
+A. Manometer assessment remains recommended; continuous monitoring solely to prevent VAP is not recommended.
 B. That is correct: because frequent cuff monitoring does not prevent pneumonia, cuff pressure should never be checked again.
 C. The update says cuff pressure must be checked every 15 minutes for every ventilated patient, whatever the indication.
 D. The update has no view on cuff pressures, so each unit can simply judge the pressure by feeling the pilot balloon.
 **Answer: A.**
-**Why correct:** The statement concerns VAP prevention only; AARC 2024 recommends manometer assessment, recommends against continuous assessment for VAP prevention, and finds palpation inaccurate.
+**Why correct:** AARC 2024 strongly recommends using a manometer for cuff pressure assessment. Its recommendation against continuous cuff pressure assessment is specifically for reducing VAP risk, not a ban on continuous monitoring for another justified clinical purpose. Use the patient-specific target and local device instructions; pilot-balloon palpation is unreliable.
 **Why not B:** This over-generalises a statement limited to VAP prevention and ignores leak and tracheal-injury safety.
 **Why not C:** Neither document sets a 15-minute interval.
 **Why not D:** Both documents take a position, and palpation of the pilot balloon is inaccurate compared with a manometer.

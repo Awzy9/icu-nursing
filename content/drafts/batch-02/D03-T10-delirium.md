@@ -135,9 +135,9 @@ A 71-year-old man, day 3 after bowel surgery, is restless, tries to pull out his
 A. Record that the patient is "resting well" because he is not agitated and is not disturbing the other patients or staff.
 B. Wait to see whether the patient is back to normal after lunch before mentioning it to anyone on the team.
 C. Ask the family to stop visiting for the day so that he can sleep and recover without further stimulation.
-D. Screen with the unit delirium tool, look for causes (pain, hypoxia, infection, retention) and report the findings.
+D. Assess for acute deterioration, screen when assessable, investigate causes and report promptly.
 **Answer: D.**
-**Why correct:** Hypoactive delirium is often missed; recent change reported by family should prompt screening and a search for causes.
+**Why correct:** Hypoactive delirium is easily missed. Assess airway, breathing, circulation and urgent reversible causes before screening, particularly for sudden altered responsiveness; new neurological or physiological abnormalities require urgent escalation. NICE supports attention to recent changes reported by family.
 **Why not A:** Quietness can be a sign of hypoactive delirium, not rest.
 **Why not B:** Waiting delays recognition of a possibly treatable cause.
 **Why not C:** Family presence is a recommended prevention measure.
@@ -148,7 +148,7 @@ B. CAM-ICU or the Intensive Care Delirium Screening Checklist.
 C. A clinical impression, because validated tools are not helpful in ventilated patients.
 D. A mini-mental state score done once at admission.
 **Answer: B.**
-**Why correct:** NICE CG103 recommendation 1.6.1 advises CAM-ICU or ICDSC instead of 4AT in critical care or post-anaesthesia recovery. These are assessment tools; the final delirium diagnosis is made by an appropriately qualified healthcare professional (1.6.2).
+**Why correct:** NICE CG103 recommends CAM-ICU or ICDSC in critical care and postoperative recovery rather than 4AT; a qualified clinician confirms the diagnosis. PADIS notes that arousal can influence assessment. Record an unassessable screen as such with the reason, not as a negative result, and reassess when appropriate.
 **Why not A:** The 4AT is advised outside critical care or the recovery room.
 **Why not C:** Validated ICU tools exist and are recommended.
 **Why not D:** A single cognitive score at admission does not detect fluctuating change.
@@ -159,7 +159,7 @@ B. Apply wrist restraints at once to prevent line removal, then decide on the ne
 C. Give a sedative from the ward stock to settle the patient first, then inform the medical team afterwards.
 D. Leave the patient alone so that he can calm down by himself, and check on him again in an hour.
 **Answer: A.**
-**Why correct:** NICE advises de-escalation first; safety of devices is protected while the team seeks causes and decides on any drugs or restraint under policy.
+**Why correct:** Stay with the patient, protect essential devices, assess for acute physiological causes and obtain help. Use calm verbal and nonverbal de-escalation if safe. Restraint or urgent drug treatment, if required to prevent immediate harm, follows the authorized policy and monitoring plan; a positive screen does not itself justify either. The 2025 PADIS update does not establish routine antipsychotic treatment for ICU delirium.
 **Why not B:** Restraints are a last resort under policy and can worsen distress.
 **Why not C:** Giving a drug without an authorized order or emergency protocol is unsafe and may obscure a reversible cause; urgent clinical review is required.
 **Why not D:** Leaving a patient who is pulling lines unattended is unsafe.
@@ -192,7 +192,7 @@ B. Assume the agitation is delirium and ask for an antipsychotic straight away, 
 C. Increase the sedation yourself to reduce the agitation quickly, since the patient cannot report pain in words.
 D. Wait until the patient can tell you whether he has pain, because behaviour alone is not a reliable guide.
 **Answer: A.**
-**Why correct:** NICE advises assessing non-verbal signs of pain, including in ventilated patients, and treating it.
+**Why correct:** Ask for self-report when the patient can communicate, including nonverbal communication. If reliable self-report is not possible, use a validated behavioral pain tool under unit policy, assess other causes and report the findings for analgesia review; vital signs alone do not quantify pain.
 **Why not B:** Untreated pain is a common trigger and must be assessed first.
 **Why not C:** Sedation changes need an order or protocol.
 **Why not D:** A ventilated patient may be unable to speak; waiting leaves pain untreated.
