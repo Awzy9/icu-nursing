@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Fundamentals 2e, Chapter 1 sections 1.3 (Licensure, Regulations & Standards), 1.4 (Health Care Settings & Team) and 1.6 (Legal & Ethical Considerations) – United States-specific; read 2026-11-14", "International Council of Nurses – Nursing definitions (page text read 2026-11-14)", "Phase 3 additions: NMC (UK) The Code, sections 11 (delegation), 13 (recognise and work within the limits of your competence) and 16 (raise concerns), current PDF read 2026-11-15; NCSBN and ANA National Guidelines for Nursing Delegation (effective 2019-04-29; US), read in full"]
-sources: [S-OPENRN-FUND-CH1, S-ICN-DEF, S-NMC-CODE, S-NCSBN-DELEG-2019]
+sources: [S-OPENRN-FUND-CH1, S-ICN-DEF, S-NMC-CODE, S-NCSBN-DELEG-2019, S-SCCM-EOL-2025, S-ESICM-EOL-2024]
 sources_not_read: [S-OPENRN-FUND]
 independently_written_note: "Original wording. Three Open RN chapter pages (CC BY 4.0; attribution required if adapted) and the ICN definition page were read. The chapters describe the United States (state Nurse Practice Acts, American Nurses Association, The Joint Commission, Wisconsin examples); the ICN page gives a global definition but no scope detail. In Phase 3 the UK NMC Code and the US NCSBN/ANA delegation guidelines were added, so the UK and the US now have regulator-level sources; no regulator document for any other country (for example SCFHS Saudi Arabia, national boards elsewhere) was read, so country-specific scope rules are NOT covered and must come from the learner's own regulator and employer. Nothing here is legal advice."
 ---
@@ -52,6 +52,16 @@ Before an unfamiliar or high-risk task ask:
 - Recognise duties that can create liability: failure to assess, insufficient monitoring, failure to communicate or document ("if an assessment or action was not documented, it is considered not done" in US courts), failure to notify the provider of a change in condition, failure to follow protocols.
 - Report errors and near misses and support a safety culture.
 - Protect confidentiality.
+
+## 7b. Nursing role in palliative and end-of-life ICU care
+
+Palliative care addresses symptoms, communication and patient goals and may accompany active organ support; it is not synonymous with withdrawal of treatment. A resuscitation limitation does not, by itself, authorize withholding other indicated care. Verify the current documented orders and their exact scope under local law and policy. If uncertain or orders conflict, clarify urgently with the responsible team rather than independently changing treatment.
+
+Support the patient in expressing preferences, and facilitate a trained interpreter, family meeting or spiritual support when wanted. For a patient unable to decide, follow the institutional process for establishing the lawful surrogate; a relative's presence alone does not establish legal authority. Escalate disagreement, uncertainty or unmet symptom needs to senior clinicians and available palliative or ethics specialists.
+
+Where the authorized team agrees on a time-limited trial of organ support, document the agreed purpose, reassessment date, patient-centered outcomes and responsible clinician. Report changes promptly; the end of a trial does not automatically authorize stopping treatment. ESICM 2024 discusses this approach but outcome evidence is limited.
+
+When an authorized end-of-life plan is in place, assess distress, pain, dyspnea, agitation and comfort; deliver prescribed symptom relief, dignity, mouth care and family support and reassess response. SCCM 2025 supports protocol-guided symptom management around withdrawal of life support. This is not a withdrawal or medication-dosing protocol: do not independently stop life-sustaining therapies. National law, local policy and trained clinicians govern these actions.
 
 ## 8. Monitoring
 Review your competencies and recertifications regularly; check policy updates; reflect after incidents and near misses; ask for supervision when new tasks are introduced.
@@ -166,6 +176,9 @@ D. Nurses may change any order if they feel the dose is too high, and tell the p
 ## 18. References
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN / Chippewa Valley Technical College. Sections 1.3, 1.4 and 1.6. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/1-3-regulations-and-standards/ ; .../1-4-health-care-settings-and-team/ ; .../1-6-legal-considerations-and-ethics/ (CC BY 4.0; accessed 2026-11-14)
 - International Council of Nurses. Nursing definitions. https://www.icn.ch/resources/nursing-definitions (accessed 2026-11-14)
+
+- Marshall MF et al. SCCM clinical practice guidelines on adult end-of-life care in the ICU (2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/clinical-practice-guidelines-on-adult-end-of-life-care-in-the-icu (selected official recommendations checked 2026-11-24; full appraisal and commercial rights outstanding).
+- ESICM guidelines on end of life and palliative care in the ICU (2024). https://doi.org/10.1007/s00134-024-07579-1 (selected time-limited trial and decision-making discussion checked 2026-11-24; cite-only pending rights assessment).
 
 ## 19. Local protocol note
 Your regulator's standards, your employer's policies and your unit's competency framework define what you may do. If they conflict, ask for clarification through the chain of command.

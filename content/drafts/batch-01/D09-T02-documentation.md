@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Fundamentals 2e, section 2.5 Documentation (accessed 2026-11-14; US-oriented)", "Phase 3 addition: Nursing and Midwifery Council (UK). The Code: Professional standards of practice and behaviour for nurses, midwives and nursing associates – section 10 (keep clear and accurate records); current Code PDF read 2026-11-15 – a UK regulator standard that applies to NMC registrants"]
-sources: [S-OPENRN-FUND, S-NMC-CODE]
+sources: [S-OPENRN-FUND, S-NMC-CODE, S-SCCM-EOL-2025]
 independently_written_note: "Original wording; the section was read for principles only. Open RN text is CC BY 4.0 (attribution and change notice needed if text is adapted); nothing is copied. In Phase 3 the UK NMC Code section 10 was added as a regulator standard; other regulators' documentation standards (for example NCSBN-member boards, SCFHS), the NMC's separate record-keeping guidance, and local ICU charting rules were not read, so legal requirements outside the UK and US remain unverified."
 ---
 # Nursing documentation
@@ -43,6 +43,12 @@ Assessment findings and trends; interventions; the patient's response; orders re
 - Correct errors transparently: paper – a single line through the error, "mistaken entry" and initials, never erase or obscure; electronic – use the system's correction method so the original and the correction remain visible in the audit trail.
 - Avoid blank lines on paper records so entries cannot be added later.
 - Protect confidentiality: access only records you need to care for the patient; log out; never share credentials.
+
+## 7b. Goals-of-care and comfort documentation
+
+Distinguish an expressed patient preference, a family report, a proposed plan and an authorized treatment order. Record the date, participants, communication needs and interpreter involvement where relevant, the patient's stated values, unresolved questions, who will follow up and when. Record the verified surrogate status using the institutional process; do not assume legal decision-making authority based on relationship alone.
+
+Document the exact scope of active resuscitation or treatment-limitation orders and the responsible authorizing clinician. If orders are unclear, escalate promptly and record the clarification; never infer an instruction to stop unrelated treatment. For an agreed comfort plan, chart symptoms, prescribed interventions, response, further assessment and communication. Preserve dignity, confidentiality and the patient's preferences regarding family updates. These are documentation principles, not a legal determination or a universal form.
 
 ## 8. Monitoring parameters
 Check at each shift: are observations, intake/output, infusions, lines and devices, skin and mobility documented; are pending orders or results noted; is the plan of care current; are late entries clearly labelled.
@@ -151,6 +157,8 @@ D. Advise her to use the correction or late-entry process so the original stays 
 
 ## 18. References
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN / Chippewa Valley Technical College, section 2.5 Documentation. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-5-documentation/ (CC BY 4.0; accessed 2026-11-14)
+
+- Marshall MF et al. SCCM clinical practice guidelines on adult end-of-life care in the ICU (2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/clinical-practice-guidelines-on-adult-end-of-life-care-in-the-icu (selected official recommendations checked 2026-11-24; full appraisal and commercial rights outstanding).
 
 ## 19. Local protocol note
 Follow local policy on abbreviations, late entries, electronic corrections, verbal orders and record access. Retention periods and legal requirements follow national law.

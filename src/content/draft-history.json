@@ -397,6 +397,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "b0805d02ea883c13",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NMC-CODE",
+     "S-OPENRN-FUND",
+     "S-SCCM-EOL-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T03": [
@@ -1088,6 +1101,22 @@
      "S-ESICM-HUMAN-PARTNERSHIP-2026",
      "S-NICE-CG103",
      "S-SCCM-FAMILY-2024",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "68a9c3a45859884d",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "S-NICE-CG103",
+     "S-SCCM-FAMILY-2024",
+     "S-SCCM-OLDER-2026",
      "S-SCCM-PADIS",
      "S-SCCM-PADIS-FOCUSED-2025"
     ],
@@ -1934,6 +1963,21 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "34997f8ade46ded9",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-INHOSP-STROKE-2022",
+     "S-INTL-PI-2026",
+     "S-OPENRN-NSK-APPC",
+     "S-SCCM-OLDER-2026",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D07-T03": [
@@ -2095,6 +2139,22 @@
      "S-NCSBN-DELEG-2019",
      "S-NMC-CODE",
      "S-OPENRN-FUND-CH1"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "69f8e82b6f1bc7aa",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-EOL-2024",
+     "S-ICN-DEF",
+     "S-NCSBN-DELEG-2019",
+     "S-NMC-CODE",
+     "S-OPENRN-FUND-CH1",
+     "S-SCCM-EOL-2025"
     ],
     "gaps": 0,
     "required_sources": 1,

@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 and the 2025 focused update – official SCCM recommendation pages, recommendation-level statements read; the full publications were NOT read", "NICE CG103 Delirium: prevention, diagnosis and management in hospital and long-term care (published 28 Jul 2010; last updated 18 Jan 2023) – general hospital guidance that names ICU tools"]
-sources: [S-NICE-CG103, S-SCCM-PADIS, S-SCCM-PADIS-FOCUSED-2025, S-ESICM-HUMAN-PARTNERSHIP-2026, S-SCCM-FAMILY-2024]
+sources: [S-NICE-CG103, S-SCCM-PADIS, S-SCCM-PADIS-FOCUSED-2025, S-ESICM-HUMAN-PARTNERSHIP-2026, S-SCCM-FAMILY-2024, S-SCCM-OLDER-2026]
 independently_written_note: "Original wording. NICE CG103 recommendations chapter read. SCCM PADIS 2018 and the 2025 focused update: only the official SCCM recommendation pages were read (statements, strength, certainty, remarks) – the full publications on journals.lww.com were blocked and NOT read, so evidence summaries, tool psychometrics and rationales are not covered and this is not a full-text review. NICE reserves commercial reuse (cite-only). CAM-ICU/ICDSC tool wording is not reproduced."
 ---
 # Delirium – nursing screening, prevention and response in the ICU
@@ -65,6 +65,12 @@ The October 2026 ESICM consensus discusses optional earplugs and eye masks, with
 ## 7d. Partner with families without compromising patient preferences
 
 The SCCM family-centred guideline (2024 edition, published 2025) supports flexible family presence as the default, with conditional support for optional participation in rounds and bedside care. The October 2026 ESICM consensus reinforces clear roles and communication. Confirm whom the patient wants involved and respect privacy, consent, infection precautions and clinical safety. Invite familiar orientation, conversation or reassurance where desired; agree safe tasks and make participation voluntary. Offer interpreters and accessible information when needed. Family observations of cognition supplement clinical assessment rather than establish a diagnosis. Do not promise that visitation alone will prevent delirium; evidence for patient-specific outcomes is limited.
+
+## 7e. Delirium in older critically ill adults (2026 update)
+
+Record usual cognition and function when known; dementia does not exclude superimposed delirium. Correct barriers to communication, including missing hearing aids or glasses, and ask about changes from baseline. Assess new reduced alertness or confusion for urgent physiological or neurological causes before attributing it to age or dementia.
+
+The 2026 SCCM older-adult guideline conditionally advises against preventive antipsychotics in older ICU patients (very low certainty). It could not recommend for or against antipsychotics for treatment of established delirium (low certainty). Keep prevention and treatment decisions distinct. Monitor symptoms and medication-related adverse effects under the authorized plan; escalate distress or danger despite supportive measures. Neither age nor a positive screening score automatically establishes a drug indication.
 
 ## 8. Monitoring parameters
 Delirium screen results and trend; sedation and analgesia scores; pain; oxygen saturation; haemodynamics; temperature; hydration, bowel and bladder function; sleep; mobility; sensory aids in use; medicine changes; family presence.
@@ -212,6 +218,8 @@ D. Wait until the patient can tell you whether he has pain, because behaviour al
 
 - SCCM. Guidelines on family-centered care for adult ICUs: 2024 (published 2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-on-family-centered-care-for-adult-icus-2024 (selected official recommendations checked 2026-11-24; full publication not appraised; cite-only).
 - Latour JM et al. ESICM consensus on human-centred partnership in the ICU (26 October 2026). https://doi.org/10.1007/s00134-026-08626-9 (selected sections 1.2, 1.3 and 5.2 checked 2026-11-24; CC BY-NC 4.0; commercial reuse not cleared).
+
+- Ferrante LE et al. SCCM Guidelines on Caring for Older Adults in the ICU (2026). https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-guidelines-on-caring-for-older-adults-in-the-icu (official recommendation page and published article introduction checked 2026-11-24; complete evidence appraisal and commercial rights outstanding).
 
 ## 19. Local protocol note
 Screening tool, frequency, restraint policy, sedation and antipsychotic protocols follow the institution's policies.
