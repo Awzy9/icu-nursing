@@ -74,8 +74,8 @@ Any abnormality in the primary survey; sudden change from the previous assessmen
 | Diagnosing causes, ordering tests and treatments | Prescriber decision |
 
 ## 12. Escalation criteria
-Interrupt the routine head-to-toe examination for any immediate threat identified during the primary survey. Assess and address life-threatening abnormalities within scope while summoning emergency help; reassess the response before resuming the routine examination. New focal neurological signs require immediate stroke or neurological emergency pathway activation, documentation of last known well, and urgent assessment rather than waiting for the next scheduled neurological check.
-SBAR — **S:** bed X, new weakness in the left arm and facial droop found during the neurological assessment. **B:** day 3 after surgery, assessed at 08:00 with normal findings at 04:00. **A:** possible acute neurological event. **R:** activate the stroke pathway now; last known well was 04:00, and symptoms were first identified at 08:00. I will continue emergency assessment and monitoring.
+Interrupt the routine head-to-toe examination for any immediate threat identified during the primary survey. Assess and address life-threatening abnormalities within scope while summoning emergency help; reassess the response before resuming the routine examination. New focal neurological signs require immediate stroke or neurological emergency pathway activation, documentation of last known well, and urgent assessment rather than waiting for the next scheduled neurological check. Check point-of-care blood glucose promptly and follow the authorised hypoglycaemia pathway if needed, in parallel with stroke escalation; neither glucose testing nor improvement in one finding should independently cancel specialist assessment. NICE NG128 and the Canadian Stroke Best Practices emergency assessment recommendations support excluding hypoglycaemia as a stroke mimic (targeted recommendation checks, not a complete stroke protocol).
+SBAR — **S:** bed X, new weakness in the left arm and facial droop found during the neurological assessment. **B:** day 3 after surgery, assessed at 08:00 with normal findings at 04:00. **A:** possible acute neurological event. **R:** activate the stroke pathway now; last known well was 04:00, and symptoms were first identified at 08:00. I will continue emergency assessment and monitoring, including prompt point-of-care glucose measurement without delaying the stroke response.
 
 ## 13. Potential complications of omission
 Missed deterioration, unrecognised pressure injuries and device problems, poor handover, duplicated or missed care.
@@ -160,6 +160,8 @@ D. Move the patient's belongings away from the bedside to clear space, including
 - Open RN. Nursing Skills, 2nd ed. Appendix C – Head-to-Toe Assessment Checklist. https://wtcs.pressbooks.pub/nursingskills/back-matter/appendix-c/ (CC BY 4.0; accessed 2026-11-14)
 - NPIAP/EPUAP/PPPIA. Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide, 4th ed., 2026 (skin assessment timing). https://epuap.org/download/13743/ (accessed 2026-11-14)
 - SCCM. PADIS 2018 recommendations page (pain assessment). https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa (recommendation-level text; accessed 2026-11-14)
+
+- NICE NG128: Stroke and transient ischaemic attack in over 16s, recommendation 1.1.2 (https://www.nice.org.uk/guidance/NG128/chapter/recommendations); Canadian Stroke Best Practices, emergency department assessment (https://www.strokebestpractices.ca/recommendations/acute-stroke-management/emergency-department-evaluation-and-management). Selected statements checked 2026-11-24; formal registration and full evidence/rights review pending.
 
 ## 19. Local protocol note
 Order, frequency, techniques, device checks, fall-risk tools and escalation triggers follow the unit's policies and specialty guidance.
