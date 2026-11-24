@@ -133,8 +133,8 @@ describe("MCQ quality checks (self-tests)", () => {
     expect(issues.some(i => i.message.includes("repeated answer option text"))).toBe(true);
   });
   it("rejects duplicate keys and option labels before parsing can hide them", () => {
-    const malformed = good.replace(/^\*\*Answer: ([A-D])\.\*\*$/m, "  it("flags answer-position imbalance",\n**Answer: D.**")
-      .replace(/^A\. .+$/m, "  it("flags answer-position imbalance",\nA. An additional contradictory option.");
+    const malformed = good.replace(/^\*\*Answer: ([A-D])\.\*\*$/m, match => match + "\n**Answer: D.**")
+      .replace(/^A\. .+$/m, match => match + "\nA. An additional contradictory option.");
     const issues = validateDraft(malformed);
     expect(issues.some(i => i.message.includes("multiple answer-key lines"))).toBe(true);
     expect(issues.some(i => i.message.includes("repeated option A"))).toBe(true);

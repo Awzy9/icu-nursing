@@ -35,9 +35,9 @@ describe("the expansion validator rejects", () => {
     expect(rules(ok.replace(/(\*\*Trace:\*\* )[A-Za-z0-9-]+/, "$1S-NOT-REAL"))).toContain("trace");
   });
   it("rejects duplicated options and conflicting answer-key lines in expansions", () => {
-    const duplicate = ok.replace(/^A\. (.+)$/m, "A. $1").replace(/(^A\. (.+)\r?\n)B\. .+$/m, "$1B. $2");
+    const duplicate = ok.replace(/(^A\. (.+)\r?\n)B\. .+$/m, (_match, first: string, option: string) => first + "B. " + option);
     expect(validateMcqSet(duplicate, known).some(i => i.message.includes("repeated answer option text"))).toBe(true);
-    const conflicting = ok.replace(/^\*\*Answer: [A-D]\.\*\*$/m, "  it("dose content, weak distractors and an unbalanced answer key",\n**Answer: C.**");
+    const conflicting = ok.replace(/^\*\*Answer: [A-D]\.\*\*$/m, match => match + "\n**Answer: C.**");
     expect(validateMcqSet(conflicting, known).some(i => i.message.includes("multiple answer-key lines"))).toBe(true);
   });
   it("dose content, weak distractors and an unbalanced answer key", () => {
