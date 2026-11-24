@@ -37,17 +37,17 @@ D. Cover the area with a second dressing to protect the vein and record the find
 **Why not D:** Covering the site does not address the problem and delays removal.
 **Trace:** S-CDC-BSI-2011 — Remove peripheral venous catheters if phlebitis, infection or malfunction (IB).
 
-**Q3 (safety).** An adult's peripheral cannula was placed in a foot vein during an emergency. What should the nurse do once the emergency has settled?
-A. Leave it until the routine replacement time, since the foot site works and the patient has no pain.
-B. Ask for it to be replaced with an upper-extremity site as soon as possible.
-C. Keep it because lower-limb veins are larger and carry a lower risk of infection in adults.
-D. Cover it with a bandage and elevate the leg so the site is protected from movement.
+**Q3 (judgment).** A peripheral cannula was placed in an adult's foot during resuscitation. The patient still needs a continuous prescribed infusion, and upper-limb access has not yet been obtained. The emergency has settled. What should the nurse arrange?
+A. Keep the foot cannula until the infusion ends, provided the dressing stays dry and intact.
+B. Coordinate suitable upper-limb access promptly and a safe transition of essential therapy.
+C. Remove the foot cannula now and wait for the next available vascular-access clinician.
+D. Move the infusion to a newly inserted catheter before checking its suitability and patency.
 **Answer: B.**
-**Why correct:** CDC advises using an upper-extremity site in adults and replacing a catheter placed in a lower extremity as soon as possible.
-**Why not A:** The guideline says to replace it as soon as possible, not at the routine time.
-**Why not C:** This reverses the guideline's advice for adults.
-**Why not D:** Protection does not address the preferred site recommendation.
-**Trace:** S-CDC-BSI-2011 — In adults use upper-extremity site; replace lower-extremity catheter as soon as possible (II).
+**Why correct:** CDC recommends replacing an adult lower-extremity peripheral catheter with upper-extremity access as soon as possible. Assess the current site, coordinate competent placement and verification of suitable alternative access, and avoid an unnecessary interruption of essential prescribed therapy. The access team considers the infusate, vein health and patient-specific needs.
+**Why not A:** A dry dressing does not remove the reason to seek a more appropriate adult insertion site.
+**Why not C:** Removing the functioning access without an agreed continuity plan may interrupt essential treatment.
+**Why not D:** An alternative catheter needs assessment for suitability and safe use before connecting a critical infusion.
+**Trace:** S-CDC-BSI-2011 — Upper-extremity access preferred in adults; replace lower-extremity access as soon as possible; coordinate continuity of treatment.
 
 **Q4 (application).** After applying skin antiseptic to a patient's forearm, you want to feel for the vein once more before inserting a peripheral cannula. What should you do?
 A. Not palpate the site again unless aseptic technique is maintained, for example by using a sterile glove.

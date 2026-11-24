@@ -61,17 +61,17 @@ D. Insert it after asking the family for consent, since consent makes the use ap
 **Why not D:** Consent does not create an indication; the use still has to meet the guideline's appropriate indications.
 **Trace:** N-CDC-CAUTI-2009 — Avoid urinary catheters for management of incontinence (IB); consider external catheters in cooperative male patients (II).
 
-**Q5 (judgment).** A nurse plans to clean around the urethral meatus of a catheterised patient with an antiseptic solution every shift to prevent infection. What should you advise?
-A. Routine hygiene such as cleansing the meatal surface during daily bathing is appropriate.
-B. Continue each shift, because antiseptic cleaning around the meatus is the main way to prevent infection.
-C. Increase to every few hours, because more frequent antiseptic cleaning should lower the infection risk further.
-D. Stop all cleaning of the area so the catheter site is never disturbed during the admission.
+**Q5 (judgment).** A clinician requests a fresh urine culture from a catheterised ICU patient. The collection bag contains urine from the last several hours. The closed system has a needleless sampling port. Which collection method best protects specimen quality and the closed system?
+A. Disinfect the sampling port and collect fresh urine aseptically with the approved sterile device.
+B. Collect urine from the drainage spigot after cleaning it and label it as a fresh culture.
+C. Disconnect the catheter and tubing briefly to collect urine directly from the catheter outlet.
+D. Replace the drainage bag and use the first urine collected in it as the culture specimen.
 **Answer: A.**
-**Why correct:** The guideline says not to clean the periurethral area with antiseptics to prevent CAUTI while the catheter is in place, and that routine hygiene is appropriate.
-**Why not B:** This is the practice the guideline advises against.
-**Why not C:** More frequent antiseptic cleaning is not recommended either.
-**Why not D:** Routine hygiene during daily bathing is still appropriate.
-**Trace:** N-CDC-CAUTI-2009 — Do not clean periurethral area with antiseptics to prevent CAUTI while catheter in place; routine hygiene appropriate (IB).
+**Why correct:** For a small fresh urine specimen for culture, CDC recommends aseptic aspiration from the designated needleless port after disinfection. Use the appropriate sterile collection device and local sampling procedure; preserve the closed drainage system and label the specimen accurately. This does not determine whether catheter replacement is indicated in a particular suspected infection.
+**Why not B:** Urine that has accumulated in the bag is not the fresh specimen intended for culture and may give misleading results.
+**Why not C:** Disconnection breaches the closed drainage system and is not needed when a suitable sampling port is available.
+**Why not D:** Bag replacement does not establish an appropriate culture sampling method or justify disrupting the closed system.
+**Trace:** N-CDC-CAUTI-2009 — Fresh urine culture from disinfected sampling port using aseptic technique; maintain a closed system.
 
 **Q6 (application).** On a busy shift a nurse empties four patients' catheter bags into one measuring jug, rinsing it only at the end. What is the issue?
 A. There is no issue, because the jug is rinsed afterwards and all four patients are on the same unit.

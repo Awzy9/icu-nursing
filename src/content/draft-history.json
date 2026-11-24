@@ -343,6 +343,21 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "486c04fea95c7b9a",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-ASSESSMENT-2026",
+     "S-INTL-PI-CLASSIFICATION-2026",
+     "S-INTL-PI-HEELS-2025",
+     "S-INTL-PI-REPOS-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D09-T01": [
@@ -4040,6 +4055,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "55d1dbb2cdf050c3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-CDC-CAUTI-2009",
+     "S-SHEA-CAUTI-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-02": [
@@ -4079,6 +4106,18 @@
    },
    {
     "hash": "5a5a1aa004f9e847",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-WHO-PIVC-2024"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "1be1ef8aa3ce9480",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -4176,6 +4215,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "fc95bd0e80605611",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022",
+     "S-WHO-CVC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-04": [
@@ -4214,6 +4266,17 @@
    },
    {
     "hash": "fa616c072dd42cb3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ICS-TRANSFER-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "601879b7b93c8df6",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -4293,6 +4356,17 @@
    },
    {
     "hash": "d10359c2d2d5f00a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-BTS-PCS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "23125313a3964f5a",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

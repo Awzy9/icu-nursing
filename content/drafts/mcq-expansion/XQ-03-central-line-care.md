@@ -37,17 +37,17 @@ D. Flush the connector with sterile water first, which removes any organisms fro
 **Why not D:** Flushing does not disinfect the outside surface of the connector.
 **Trace:** S-CDC-BSI-2011, S-SHEA-CLABSI-2022 — Disinfect hubs, connectors and ports before every access (IA).
 
-**Q3 (judgment).** A nurse wants to put antibiotic ointment on a central line insertion site 'to be extra safe' for a patient who is not on dialysis. What should you tell them?
-A. CDC advises against topical antibiotic ointments or creams at insertion sites, except for dialysis catheters.
-B. It is a good idea, because ointment adds a barrier that lowers the chance of bacteria reaching the skin.
-C. It is acceptable if a thin film is used and the site is cleaned at every dressing change.
-D. It is acceptable for patients with fever, because fever suggests the site may be colonised.
+**Q3 (judgment).** A central venous catheter was inserted during emergency resuscitation, and the insertion record states that full aseptic precautions could not be assured. The patient still needs vasoactive support. What should the nurse raise with the responsible team?
+A. Arrange prompt replacement with verified access and a safe transition of essential infusions.
+B. Keep the existing line for the usual duration because there is no redness or discharge.
+C. Apply antibiotic ointment to the insertion site and retain the catheter if the dressing remains intact.
+D. Remove the existing line before obtaining alternative access, then ask the team to replace it.
 **Answer: A.**
-**Why correct:** CDC says not to use topical antibiotic ointment or creams on insertion sites except for dialysis catheters, because they may promote fungal infections and resistance.
-**Why not B:** This is the practice the guideline advises against.
-**Why not C:** The thickness of the film does not change the recommendation.
-**Why not D:** Fever calls for assessment and escalation, not ointment.
-**Trace:** S-CDC-BSI-2011 — Do not use topical antibiotic ointment on insertion sites except dialysis catheters (IB).
+**Why correct:** CDC 2011 recommends replacing a catheter as soon as possible, within 48 hours, when aseptic technique at insertion could not be assured. Clarify the insertion circumstances and coordinate a trained clinician, suitable alternative access and continuity of essential therapy. This is a specific contamination-risk indication, not a recommendation for routine central catheter replacement.
+**Why not B:** A normal-looking site does not eliminate the risk associated with insertion without assured asepsis.
+**Why not C:** Topical ointment cannot correct uncertain insertion asepsis and is not a routine central line prevention measure.
+**Why not D:** Removing access before establishing a safe alternative may interrupt life-sustaining therapy.
+**Trace:** S-CDC-BSI-2011 — Replacement within 48 hours where asepsis at insertion could not be assured; clinical assessment and safe access planning.
 
 **Q4 (application).** A patient with a central line asks to shower. Which advice fits the CDC guideline?
 A. Water contact is not allowed for as long as the line is in place, so offer a bed bath.

@@ -112,7 +112,7 @@ D. Apply a firm bandage to protect the heel and review it again tomorrow.
 A. Continue full turns on the same schedule even if the patient remains unstable.
 B. Stop all pressure relief until the vasopressors have been discontinued.
 C. Use a pressure-redistributing mattress instead of reassessing repositioning needs.
-D. Reassess stability, coordinate tolerated small weight shifts and review full turns when safe.
+D. Reassess stability, plan tolerated small shifts and review full turns.
 **Answer: D.**
 **Why correct:** The 2026 international repositioning chapter supports individualization according to tissue response, clinical stability and support surface. If shock or severe instability prevents full turns, use tolerated small weight shifts under the team plan and reassess regularly for resumption of full-body repositioning. Treat haemodynamic deterioration as a priority, document tolerance and assess pressure points; the evidence for incremental repositioning in critically ill patients is limited.
 **Why not A:** A fixed schedule does not override immediate physiological instability; the clinical team must adapt the plan.
@@ -131,7 +131,7 @@ D. Apply moisturiser under each device to keep the skin soft and prevent crackin
 **Why not D:** Extra moisture under a device can worsen skin damage.
 
 **Q4 (application).** A ventilated patient has a pressure-related lesion on the moist inner lip next to an endotracheal tube. A colleague proposes assigning a skin pressure-injury stage based on its visible depth. What should the nurse do?
-A. Describe the suspected mucosal injury without a skin stage and coordinate safe device assessment.
+A. Describe the mucosal injury without staging and coordinate safe device assessment.
 B. Assign a skin stage based on the visible depth and document the stage as confirmed.
 C. Remove the airway fixation independently to determine whether deeper tissue is involved.
 D. Record the finding as a skin tear because the usual skin staging categories are unsuitable.

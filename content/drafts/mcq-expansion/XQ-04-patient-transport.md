@@ -25,17 +25,17 @@ D. Wait until the patient's blood pressure is back in the normal range, even if 
 **Why not D:** The guidance does not ask for normal values; it asks for appropriate stabilisation and warns against delaying time-critical transfers.
 **Trace:** N-ICS-TRANSFER-2026 — Rec 58: resuscitate and stabilise before transfer.
 
-**Q2 (application).** As you prepare the patient for transfer, the monitor leads and syringe-driver cables are tangled across the trolley and the screens face away from you. What should you do?
-A. Tie the monitoring cables together and position the monitors, ventilator display and syringe drivers where the escorts can see them.
-B. Leave the cables loose so they can move freely when the trolley goes over bumps in the corridor.
-C. Turn the monitor away and rely on the alarms, because alarms alert staff to any change.
-D. Disconnect the syringe drivers and carry them in the bag to keep the trolley uncluttered.
+**Q2 (judgment).** A mechanically ventilated patient is ready for a nonurgent CT transfer. The transport ventilator and infusion displays face away from the escorts, and waveform capnography is not yet connected. What should the team do before departure?
+A. Correct the equipment layout and connect acuity-appropriate monitoring before departure.
+B. Rely on the ventilator alarms and pulse oximetry, then connect capnography on arrival.
+C. Ask a second escort to watch the rear-facing displays intermittently during the journey.
+D. Disconnect the infusion pumps briefly to simplify the equipment arrangement on the trolley.
 **Answer: A.**
-**Why correct:** Secure monitoring cables without tension on the patient's devices and keep displays in view. ICS 2026 chapter 19 additionally calls for ongoing clinical observation and acuity-appropriate monitoring, including waveform capnography and airway-pressure surveillance for both invasive and non-invasive ventilation.
-**Why not B:** Loose cables are a safety risk and are not advised.
-**Why not C:** Staff are expected to see the displays during transfer.
-**Why not D:** Interrupting infusions without a plan is unsafe.
-**Trace:** N-ICS-TRANSFER-2026 — Chapter 19, sections 19.1–19.8 and recommendations 74–75; monitoring and safe equipment arrangement.
+**Why correct:** ICS 2026 calls for equipment displays to remain visible and for ongoing clinical observation and monitoring during transfer, including waveform capnography and airway-pressure surveillance for both invasive and non-invasive ventilation. Secure cables and devices without tension, verify equipment function and establish backup plans before this nonurgent transfer. Do not interrupt prescribed critical therapy to simplify transport.
+**Why not B:** Pulse oximetry does not substitute for monitoring ventilation or detecting airway disconnection during transfer.
+**Why not C:** Intermittent viewing does not provide the reliable visibility and surveillance needed throughout a high-risk journey.
+**Why not D:** Interrupting prescribed infusions may cause rapid deterioration; arrange the equipment safely while maintaining delivery.
+**Trace:** N-ICS-TRANSFER-2026 — Chapter 19 and recommendations 74–75: monitoring, equipment visibility and safe arrangement.
 
 **Q3 (monitoring).** Before a non-emergency scan, the transport team estimates a forty-minute round trip. The vasoactive syringe is nearly empty and unexpected delays are possible. What preparation does the cited UK transfer guidance support?
 A. Starting the transfer and replacing the syringe at the scanner, because a change takes a moment.

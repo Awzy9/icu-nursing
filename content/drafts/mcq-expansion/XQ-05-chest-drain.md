@@ -49,29 +49,29 @@ D. Clamp it while the lift is moving, because the motion is the main risk to the
 **Why not D:** Clamping a bubbling drain is not made safe by the length of time.
 **Trace:** N-BTS-PCS-2023 — Clamping a bubbling chest tube should be avoided unless under specialist pleural supervision.
 
-**Q4 (documentation).** A patient has a chest drain in place. What should the nurse record on the dedicated chest drain observation chart?
-A. The colour of the fluid, because volumes and swinging are checked by the medical team.
-B. Daily wound checks, drainage volumes, and the presence of respiratory swinging and bubbling.
-C. The time of each bottle change, as the record of when the system was last handled.
-D. A single daily total for the whole day, entered at the end of the shift without observations.
+**Q4 (judgment).** A patient with a conventional underwater-seal drain for pneumothorax develops sudden breathlessness and falling oxygen saturation. Previously visible respiratory swinging has stopped. What is the priority?
+A. Record that the lung has re-expanded and request routine confirmation at the next review.
+B. Assess breathing, summon urgent help and check for visible kinks or drainage-system problems.
+C. Clamp the drain temporarily to see whether the patient's respiratory symptoms improve.
+D. Flush the drain against resistance before calling the team to confirm that it is blocked.
 **Answer: B.**
-**Why correct:** Document wound findings, amount and trend of output and water-seal activity where relevant. Assess the patient's respiratory status as well; neither absent swinging nor bubbling alone proves a specific diagnosis. Use the device-specific observation chart and promptly report unexplained changes.
-**Why not A:** The statement names volumes and swinging or bubbling as documentation items.
-**Why not C:** Bottle changes alone do not show drain function.
-**Why not D:** Drainage should be observed and recorded over time, as instructed.
-**Trace:** N-BTS-PCS-2023 — Daily check; document volumes, swinging, bubbling on dedicated chart.
+**Why correct:** An unexpected loss of swinging may reflect obstruction, kinking, displacement or lung re-expansion; it does not prove any one cause. New hypoxaemia and breathlessness require immediate clinical assessment and emergency escalation. Inspect the accessible tubing and system without delaying support; a trained team determines further investigation and any authorized intervention. Do not force-flush or routinely clamp a pneumothorax drain.
+**Why not A:** Absent swinging alone cannot confirm re-expansion, and the new clinical deterioration takes priority over routine documentation.
+**Why not C:** Clamping a pneumothorax drain can impede air escape and worsen pressure accumulation.
+**Why not D:** Flushing against resistance is unsafe; investigation and any flushing require a trained operator and the applicable procedure.
+**Trace:** N-BTS-PCS-2023 — Non-functioning drain assessment, observation of respiratory swinging and urgent review of clinical deterioration.
 
-**Q5 (scope).** Shortly after a drain is inserted, a colleague asks you to connect suction 'to speed things up', but no suction has been prescribed. What should you do?
-A. Not connect it, as suction should be avoided soon after insertion and its pressure should be prescribed or documented first.
-B. Connect it at a low setting, because gentle suction is unlikely to cause any harm to the lung.
-C. Connect it and document the setting afterwards, since the medical team can review it later.
-D. Connect it for patients who are breathless, to make drainage quicker and relieve symptoms.
+**Q5 (judgment).** A patient with a newly inserted pleural-fluid drain becomes more breathless. Drainage is proceeding according to the written plan, but no suction is prescribed. A colleague suggests connecting suction to improve symptoms. What should the nurse do?
+A. Assess the deterioration and seek urgent pleural review rather than initiating unprescribed suction.
+B. Connect low suction while assessing the patient, then confirm the pressure with the team.
+C. Increase drainage by adding suction and ask the team to review the response at the next round.
+D. Wait until the patient is comfortable before reporting the new symptoms or changing the drainage plan.
 **Answer: A.**
-**Why correct:** The BTS statement says suction should be avoided soon after insertion to minimise the risk of re-expansion pulmonary oedema, and pressures should be prescribed or documented by the medical team before starting.
-**Why not B:** Even low suction soon after insertion carries the re-expansion risk, and it needs a prescribed pressure.
-**Why not C:** Pressures should be prescribed before suction starts.
-**Why not D:** Breathlessness does not remove the need for a prescription.
-**Trace:** N-BTS-PCS-2023 — Suction avoided soon after insertion; pressures prescribed/documented first.
+**Why correct:** New breathlessness requires immediate assessment and escalation, including consideration of drainage-related complications. BTS advises avoiding suction shortly after insertion to reduce re-expansion pulmonary oedema risk and requires suction pressure to be specified if suction is indicated. Follow the written drainage instructions and authorized emergency pathway; the presence of symptoms is not an indication to improvise suction.
+**Why not B:** Even low suction is not an authorized treatment and can add risk shortly after drain insertion.
+**Why not C:** Increasing drainage without assessing deterioration may aggravate a drainage-related complication.
+**Why not D:** Deferring assessment of new breathlessness can delay necessary emergency treatment.
+**Trace:** N-BTS-PCS-2023 — Early suction avoidance, prescribed pressure and assessment of new respiratory symptoms.
 
 **Q6 (monitoring).** At the start of the shift the nurse finds that the patient's conventional underwater-seal drain bottle has a water level below the device's specified minimum. What is the correct nursing action?
 A. Ignore it, because the water level matters mainly while the patient is breathing out strongly.
