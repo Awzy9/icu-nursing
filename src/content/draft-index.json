@@ -49,12 +49,22 @@
      "id": "S-CDC-IC",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-CDC-ISOLATION-2007",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-WHO-HH-SUMMARY-2013",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "1647b6979a098472"
+   "required_sources": 1,
+   "hash": "93d75a7833721dde"
   },
   {
    "key": "D06-T05",
@@ -216,6 +226,11 @@
      "verified": "2026-11-23"
     },
     {
+     "id": "S-BTS-OXYGEN-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -243,8 +258,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "bae1592b10873c3e"
+   "required_sources": 0,
+   "hash": "1c9b556006ba4c2b"
   },
   {
    "key": "D01-T07",
@@ -691,6 +706,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BTS-OXYGEN-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -713,8 +733,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "cb0ffc09242a40c6"
+   "required_sources": 1,
+   "hash": "6cb07233a05e5055"
   },
   {
    "key": "D02-T04",
