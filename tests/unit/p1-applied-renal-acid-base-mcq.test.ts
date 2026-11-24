@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
-import { validateDraft } from "@/lib/draft-validator";
+import { parseMcqs, validateDraft } from "@/lib/draft-validator";
 describe("Applied renal and acid-base reasoning", () => {
   const paths = ["content/drafts/batch-02/D04-T02-aki.md","content/drafts/batch-03/D04-T03-urine-output-fluid-balance.md","content/drafts/batch-07/D04-T06-potassium-disorders.md","content/drafts/batch-07/D04-T08-acid-base-abg-interpretation.md","content/drafts/batch-07/D04-T09-crrt-principles-partial.md"];
   const keys = ["DADBCC","CADBBC","CADBCA","DBCABD","BDACCB"];
@@ -10,7 +10,7 @@ describe("Applied renal and acid-base reasoning", () => {
     expect(validateDraft(text)).toEqual([]);
     expect(text).toContain("clinically_reviewed: false");
     const questions = text.split("## 17. MCQs")[1]!.split("## 18.")[0]!;
-    expect([...questions.matchAll(/^\\*\\*Answer: ([A-D])\\.\\*\\*/gm)].map(m => m[1]).join("")).toBe(keys[i]);
+    expect(parseMcqs(text).map(q => q.answer).join("")).toBe(keys[i]);
     for (const needle of needles[i]!) expect(questions).toContain(needle);
   }));
 });

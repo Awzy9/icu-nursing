@@ -51,7 +51,8 @@ describe("P1 implementation: question bank safety", () => {
   });
   it("XQ-09-sedative-opioid-safety keeps six answers and the safety guard", () => {
     const text = readFileSync("content/drafts/mcq-expansion/XQ-09-sedative-opioid-safety.md", "utf8");
-    expect(text).toContain("oxygen saturation alone");
+    expect(text).toContain("satisfactory saturation on supplemental oxygen does not establish adequate ventilation");
+    expect(text).toContain("Concurrent opioid and benzodiazepine exposure can intensify CNS and respiratory depression");
     expect(text.match(/^\*\*Answer: [A-D]\.\*\*$/gm)).toHaveLength(6);
     expect(text).toContain("clinically_reviewed: false");
   });
