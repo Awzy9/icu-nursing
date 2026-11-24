@@ -52,6 +52,11 @@
       "id": "S-ISBT-ATR-EDU",
       "read": "partial",
       "use": "ISBT educational module: initial suspected transfusion reaction assessment, notification and documentation paragraphs read on 2026-11-23; other treatments and figures not used."
+    },
+    {
+      "id": "S-LIFEBLOOD-ATR",
+      "read": "partial",
+      "use": "Targeted public guidance on fever with rigors, potentially severe reactions, investigation and no restart."
     }
   ],
   "required_sources": [
@@ -61,7 +66,7 @@
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "First-line management of specific reaction types after the transfusion is stopped is not drawn from a source read and is not written.",
+    "Selected Lifeblood severe-reaction differential and investigation principles are mapped; treatment selection, specific tests and component handling follow local transfusion-service policy.",
     "Observation timings follow local policy.",
     "AI evidence update 2026-11-16: initial reaction management was cross-checked at public guidance level against Australian Red Cross Lifeblood. Mild isolated reactions differ from severe/life-threatening reactions; restarting is not a unilateral bedside action. BSH 2023 full text and local reaction policies are still not comprehensively checked.",
     "ISBT initial-response educational content added; degree of reaction severity, work-up, restarting and specific treatment remain specialist decisions, not case-scoring instructions."
@@ -100,12 +105,13 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment. For suspected serious reactions do not restart the implicated component. For other reactions any resumption requires a satisfactory specialist/team assessment and local protocol; never restart independently. Activate emergency response immediately for compromised airway, breathing or circulation.",
+          "feedback": "An ISBT educational module supports stopping the transfusion when a reaction is suspected, urgent clinical reassessment, patient/component identity checks and immediate blood-bank notification. Maintaining venous access must not mean flushing blood remaining in the implicated transfusion tubing into the patient. The product and set should be retained for investigation as instructed; further treatment and any decision about restarting require specialist/team assessment. For suspected serious reactions do not restart the implicated component. For other reactions any resumption requires a satisfactory specialist/team assessment and local protocol; never restart independently. Activate emergency response immediately for compromised airway, breathing or circulation. Fever with rigors can represent a serious reaction, including bacterial contamination or acute haemolysis. Do not presume a benign febrile reaction or restart the component; obtain urgent clinical and transfusion-service assessment.",
           "consequence": "Transfusion is stopped; the patient and IV access are assessed, the team is notified, and the blood product and set are retained according to the reaction protocol.",
           "support": "partial",
           "sources": [
             "S-ISBT-ATR-EDU",
-            "S-AABB-COI-2024"
+            "S-AABB-COI-2024",
+            "S-LIFEBLOOD-ATR"
           ]
         },
         {
@@ -136,7 +142,7 @@
     },
     {
       "position": 2,
-      "info": "The doctor arrives and asks you what happened and when.",
+      "info": "The doctor arrives. The transfusion is stopped, but the patient has ongoing rigors and the blood pressure is falling.",
       "prompt": "What do you say and record?",
       "observations": [
         {
@@ -154,20 +160,26 @@
           "key": "access",
           "label": "Intravenous access",
           "value": "Kept"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Falling from baseline"
         }
       ],
       "options": [
         {
-          "text": "Give a short SBAR with the times, the observations and the actions taken, and record them.",
+          "text": "Escalate the falling pressure immediately, reassess airway, breathing and circulation, and give the team the transfusion timeline and patient/component details. Preserve the implicated product and set, and coordinate ordered investigations with the transfusion service.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "A factual structured account with times and actions supports the reaction investigation.",
-          "consequence": "The doctor and the transfusion service have a clear timeline.",
+          "feedback": "Fever, rigors and circulatory deterioration can indicate a severe acute transfusion reaction, including bacterial contamination or acute haemolysis. Do not restart. Activate emergency support and coordinate the clinician-directed work-up, including cultures or haemolysis investigations if ordered. Do not delay resuscitation to complete paperwork.",
+          "consequence": "Emergency support and the blood-bank investigation proceed with a clear clinical timeline and the implicated component available as directed.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
-            "S-NICE-NG24"
+            "S-NICE-NG24",
+            "S-LIFEBLOOD-ATR"
           ]
         },
         {
@@ -187,11 +199,11 @@
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
-          "feedback": "Diagnosing the reaction type and choosing treatment are prescriber decisions.",
+          "feedback": "Recognize and report possible serious causes, but diagnosis and treatment selection require the responsible team; do not delay emergency support.",
           "consequence": "The conversation turns to disagreement and the timeline is not recorded.",
           "support": "partial",
           "sources": [
-            "S-BSH-ATR"
+            "S-LIFEBLOOD-ATR"
           ]
         }
       ]
@@ -202,7 +214,8 @@
       "Stop the transfusion and inform the team and transfusion service at the first sign of a reaction.",
       "Keep intravenous access; further treatment is a prescriber decision.",
       "Give and record a factual timeline: component and estimated volume infused, transfusion start and stop times, symptom onset, changes from baseline vital signs, and the response to initial actions.",
-      "Do not independently restart a transfusion following a suspected reaction; activate emergency response for compromised airway, breathing or circulation."
+      "Do not independently restart a transfusion following a suspected reaction; activate emergency response for compromised airway, breathing or circulation.",
+      "Fever with rigors or hypotension requires urgent evaluation for serious causes such as bacterial contamination or acute haemolysis; do not restart the implicated component."
     ],
     "links": [
       {

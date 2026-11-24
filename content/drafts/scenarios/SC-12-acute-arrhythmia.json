@@ -171,7 +171,7 @@
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "An unstable tachyarrhythmia with a pulse needs urgent rhythm-specific treatment by authorised trained staff; synchronised cardioversion is preferred for many unstable tachyarrhythmias, but rhythm and synchronisation feasibility matter. If cardiac arrest occurs, start CPR and follow the shockable versus non-shockable arrest pathway. Not every pulseless rhythm requires a shock.",
+          "feedback": "An unstable tachyarrhythmia with a pulse needs urgent rhythm-specific treatment by authorised trained staff; synchronised cardioversion is preferred for many unstable tachyarrhythmias, but rhythm and synchronisation feasibility matter. If cardiac arrest occurs, start CPR and follow the shockable versus non-shockable arrest pathway. Not every pulseless rhythm requires a shock. The 2025 RCUK adult ALS guidance favors electrical cardioversion for unstable tachyarrhythmia with life-threatening features. When a synchronized shock is indicated, the trained operator verifies synchronization; preparation for sedation or anesthesia in a conscious patient must not create avoidable delay in emergency care. Do not apply this to physiological sinus tachycardia.",
           "consequence": "The team works efficiently and the nurse is ready if the situation worsens.",
           "support": "partial",
           "sources": [
@@ -279,7 +279,8 @@
       "A new abnormal rhythm needs immediate assessment of the patient for signs of reduced cardiac output, and a call for help when the rhythm or the patient's condition is dangerous.",
       "Fast wide rhythms and several other rhythms can lead quickly to loss of consciousness or cardiac arrest.",
       "Support urgent rhythm-specific care by trained and authorised staff. If cardiac arrest occurs, begin CPR and follow the appropriate shockable or non-shockable rhythm pathway.",
-      "Think about reversible causes such as electrolytes and oxygenation, keep monitoring after treatment and hand over with SBAR."
+      "Think about reversible causes such as electrolytes and oxygenation, keep monitoring after treatment and hand over with SBAR.",
+      "For an unstable abnormal tachyarrhythmia with a pulse, prepare the trained-team cardioversion pathway, including synchronization and appropriate sedation assessment; if the pulse is lost, switch to the arrest pathway."
     ],
     "links": [
       {

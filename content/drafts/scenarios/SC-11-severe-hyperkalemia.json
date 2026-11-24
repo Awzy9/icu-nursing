@@ -160,7 +160,7 @@
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "Emergency calcium and insulin-glucose are different high-alert treatments with product- and route-specific safeguards. The UKKA guideline addresses hyperkalaemia, while the registered MD-20 calcium-gluconate product label describes hypocalcaemia; the label alone is not an emergency hyperkalaemia order. The treating team directs drug/salt selection and dose, and trained nurses monitor ECG, line safety and hypoglycaemia risk.",
+          "feedback": "Emergency calcium and insulin-glucose are different high-alert treatments with product- and route-specific safeguards. The UKKA guideline addresses hyperkalaemia, while the registered MD-20 calcium-gluconate product label describes hypocalcaemia; the label alone is not an emergency hyperkalaemia order. The treating team directs drug/salt selection and dose, and trained nurses monitor ECG, line safety and hypoglycaemia risk. Calcium protects the myocardium but does not lower potassium concentration; distinguish temporary intracellular shifting from actual potassium removal and maintain the clinician-directed elimination plan.",
           "consequence": "The authorised team-directed treatment proceeds with product, IV access, rhythm and pre-treatment glucose checks documented.",
           "support": "partial",
           "sources": [
@@ -264,7 +264,8 @@
       "At a markedly elevated potassium with ECG concerns, summon urgent help and assess the patient immediately; repeat sampling for pseudohyperkalaemia must run in parallel rather than delay care.",
       "UKKA July 2026 detailed hospital Guideline 14.1 advises an urgent 12-lead ECG at potassium >=6.0 mmol/L, but its summary says >=6.5; Guideline 14.2 separately defines who needs continuous monitoring. Treat the discrepancy as a source-verification item, not a reason to postpone ECG.",
       "Emergency potassium treatment, including the exact calcium formulation and insulin-glucose, is authorised by the clinical team and local protocol; monitor cardiac rhythm, IV access and hypoglycaemia risk without independent dosing.",
-      "Early ECG improvement can coexist with recurrent hyperkalaemia or delayed hypoglycaemia; maintain the prescribed post-treatment glucose, potassium and clinical observations."
+      "Early ECG improvement can coexist with recurrent hyperkalaemia or delayed hypoglycaemia; maintain the prescribed post-treatment glucose, potassium and clinical observations.",
+      "Calcium is cardiac protection, not potassium removal; shifting therapies are temporary, and definitive elimination and reassessment remain clinician-directed."
     ],
     "links": [
       {

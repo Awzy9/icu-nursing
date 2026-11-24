@@ -44,6 +44,11 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-RCA-DELPHI-2026",
+      "read": "partial",
+      "use": "Targeted 2026 consensus statement 10 on possible citrate accumulation; not a randomized trial or full guideline review."
     }
   ],
   "required_sources": [
@@ -54,7 +59,7 @@
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "The pathway is specific to one machine family and says actions follow local practice guidelines.",
-    "Priming, citrate, drug dosing and weaning are not covered.",
+    "Priming, citrate and calcium adjustment, drug dosing and weaning are not taught. Selected 2026 consensus monitoring concepts are mapped; exact lab schedules, thresholds and treatments require specialist and local review.",
     "Scenario has been limited to patient-first assessment, competent CRRT-operator escalation, interruption documentation, and approved procedure boundaries; it does not teach independent troubleshooting or blood return."
   ],
   "permissions": [
@@ -202,20 +207,31 @@
           "key": "physician",
           "label": "Physician",
           "value": "Informed"
+        },
+        {
+          "key": "anticoagulation",
+          "label": "Anticoagulation",
+          "value": "Regional citrate used during interrupted treatment"
+        },
+        {
+          "key": "calcium",
+          "label": "Systemic ionized calcium",
+          "value": "Falling; total-to-ionized calcium ratio rising"
         }
       ],
       "options": [
         {
-          "text": "Record the alarms, actions, the reason for stopping and the shortfall, and report the under-delivery.",
+          "text": "Document alarms, downtime, delivered treatment and fluid balance. Promptly report falling systemic ionized calcium and the rising calcium ratio, review ordered acid-base results and supplementation needs, and coordinate the trained team's prescribed response.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "KDIGO recommends frequent assessment of the delivered dose, so shortfalls are reported and recorded.",
+          "feedback": "KDIGO supports assessment of delivered treatment. The 2026 Delphi consensus identifies falling systemic ionized calcium, increasing calcium needs, a raised total-to-ionized calcium ratio and metabolic acidosis as findings that may suggest citrate accumulation in context. No single finding establishes the diagnosis. Escalate the trend and follow the prescribed specialist response; do not independently adjust citrate, calcium or fluid removal.",
           "consequence": "The team can adjust the plan, and the next shift knows what happened.",
           "support": "partial",
           "sources": [
             "S-KDIGO-AKI-2012",
-            "N-AHS-CRRT-ALARM-2025"
+            "N-AHS-CRRT-ALARM-2025",
+            "S-RCA-DELPHI-2026"
           ]
         },
         {
@@ -247,10 +263,11 @@
   ],
   "debrief": {
     "learning_points": [
-      "Check the patient first, then the lines, before clearing a circuit alarm.",
+      "Assess the patient first and request the trained operator; device-specific line checks and alarm handling follow the approved procedure.",
       "Do not use override or disable functions to clear an unresolved problem.",
-      "If alarms cannot be managed: support, return blood, document, notify the physician.",
-      "Report under-delivery of the prescribed dose."
+      "For persistent alarms, escalate and follow the authorized termination pathway; blood return is not automatic and must not be attempted when circuit safety is uncertain.",
+      "Report under-delivery of the prescribed dose.",
+      "With regional citrate anticoagulation, escalate concerning calcium, supplementation and acid-base trends; the specialist team determines the response."
     ],
     "links": [
       {

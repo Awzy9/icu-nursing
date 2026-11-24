@@ -9394,6 +9394,19 @@
     "gaps": 8,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "a9008233035c857e",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-AHRQ-TS",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-12": [
@@ -9439,6 +9452,21 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "378accc0f6d22e3c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "L-AMIODARONE",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-OPENRN-ADV-C74"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-13": [
@@ -9468,6 +9496,18 @@
    },
    {
     "hash": "cd276ee9042dd3d4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHA-2025",
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "40915adbb94ad7c9",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -9580,6 +9620,22 @@
     "gaps": 6,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "bd1f1dec467d6fca",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -9630,6 +9686,20 @@
      "N-AHS-CRRT-ALARM-2025",
      "S-AHRQ-TS",
      "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "e96ed4d67c09ec37",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026"
     ],
     "gaps": 5,
     "required_sources": 2,
