@@ -143,11 +143,11 @@
           ]
         },
         {
-          "text": "Give a prescribed fluid bolus from the ward stock straight away.",
+          "text": "Give an unprescribed fluid bolus from the ward stock before assessment or calling for help.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
-          "feedback": "Fluids are given according to an order or protocol after assessment; the nurse assesses and reports.",
+          "feedback": "Do not give an unauthorised bolus. Assess the patient and summon urgent clinical help; administer fluids only under an appropriate order or authorised protocol.",
           "consequence": "An unprescribed treatment is given before the cause is known.",
           "support": "partial",
           "sources": [

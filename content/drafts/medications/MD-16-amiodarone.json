@@ -1,235 +1,251 @@
 {
- "med_id": "MD-16",
- "number": 16,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Amiodarone",
- "drug_class": "Antiarrhythmic",
- "category": "antiarrhythmics-cardiac",
- "high_alert": true,
- "high_alert_note": "ISMP's 2024 acute-care high-alert list includes intravenous antiarrhythmics such as amiodarone. Classification covers the IV formulation here; local protocols define safe administration and monitoring. ISMP source classification is independently cited in the review report; medication content retains its original FDA/manufacturer sources only.",
- "summary": "Intravenous antiarrhythmic for initiation of treatment and prophylaxis of frequently recurring ventricular fibrillation and haemodynamically unstable ventricular tachycardia in patients refractory to other therapy. Nursing focus: hypotension, bradycardia and AV block and continuous monitoring.",
- "batch": 2,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-AMIODARONE",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-AMIODARONE",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-16",
+  "number": 16,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Amiodarone",
+  "drug_class": "Antiarrhythmic",
+  "category": "antiarrhythmics-cardiac",
+  "high_alert": true,
+  "high_alert_note": "ISMP's 2024 acute-care high-alert list includes intravenous antiarrhythmics such as amiodarone. Classification covers the IV formulation here; local protocols define safe administration and monitoring. ISMP source classification is independently cited in the review report; medication content retains its original FDA/manufacturer sources only.",
+  "summary": "Intravenous antiarrhythmic for initiation of treatment and prophylaxis of frequently recurring ventricular fibrillation and haemodynamically unstable ventricular tachycardia in patients refractory to other therapy. Nursing focus: hypotension, bradycardia and AV block and continuous monitoring.",
+  "batch": 2,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-AMIODARONE",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-AMIODARONE",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates amiodarone injection for initiation of treatment and prophylaxis of frequently recurring ventricular fibrillation and haemodynamically unstable ventricular tachycardia in patients refractory to other therapy.",
+          "support": "sourced",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label states amiodarone should be given only by physicians experienced in treating life-threatening arrhythmias and with facilities to monitor effectiveness and side effects.",
+          "support": "sourced",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Continuous rhythm and blood pressure monitoring and alarm limits follow the unit's protocol.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for monitoring for QTc prolongation during amiodarone infusion and for close observation during the infusion; a new visual symptom needs an eye examination.",
+          "support": "sourced",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        },
+        {
+          "text": "The IV label warns of progressive hepatic injury and new or worsening arrhythmias, including torsades associated with QTc prolongation. Review ordered electrolytes and liver results; low potassium, magnesium or calcium increases proarrhythmic risk. Baseline liver enzyme abnormalities alone are not a label contraindication.",
+          "support": "partial",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Hypotension is the most common adverse reaction with intravenous amiodarone; the label describes treating it initially by slowing the infusion, with further treatment a prescriber decision.",
+          "support": "sourced",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        },
+        {
+          "text": "Bradycardia and AV block can occur and are managed by the prescriber.",
+          "support": "sourced",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        },
+        {
+          "text": "Because of the long half-life of amiodarone, adverse reactions and interactions can persist after it is stopped.",
+          "support": "sourced",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The most common adverse reactions leading to discontinuation include hypotension, asystole, cardiac arrest or pulseless electrical activity, ventricular tachycardia and cardiogenic shock.",
+          "support": "sourced",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Escalate immediately for hypotension, bradycardia, heart block, new dangerous rhythm or circulatory deterioration. Urgently report progressive hepatic injury and significant QTc or electrolyte changes for clinician-directed management.",
+          "support": "partial",
+          "sources": [
+            "L-AMIODARONE"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record rhythm, blood pressure, pump checks and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "observe",
+      "text": "Monitor rhythm and blood pressure continuously.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Watch for hypotension, slowing heart rate and AV block.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-AMIODARONE"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Remember effects can persist after the drug is stopped.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "L-AMIODARONE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report hypotension, bradycardia or heart block immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-AMIODARONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review QTc, ordered potassium, magnesium, calcium and liver results; report new abnormalities and progressive hepatic injury to the treating team.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-AMIODARONE"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record rhythm and blood pressure.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    }
+  ],
+  "gaps": [
+    "Dosing, preparation, filter and line requirements: deliberately not included.",
+    "Long-term toxicities (thyroid, lung, liver) were not summarised.",
+    "Cardiac arrest and arrhythmia guideline text (ERC/AHA) was not used for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-15",
+    "set_id": "0a28ae25-7cc4-4ac0-a2ba-7820fb93e25c",
+    "label_version": "6",
+    "effective_time": "20260116",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label indicates amiodarone injection for initiation of treatment and prophylaxis of frequently recurring ventricular fibrillation and haemodynamically unstable ventricular tachycardia in patients refractory to other therapy.",
-     "support": "sourced",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label states amiodarone should be given only by physicians experienced in treating life-threatening arrhythmias and with facilities to monitor effectiveness and side effects.",
-     "support": "sourced",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Continuous rhythm and blood pressure monitoring and alarm limits follow the unit's protocol.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label calls for monitoring for QTc prolongation during amiodarone infusion and for close observation during the infusion; a new visual symptom needs an eye examination.",
-     "support": "sourced",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Hypotension is the most common adverse reaction with intravenous amiodarone; the label describes treating it initially by slowing the infusion, with further treatment a prescriber decision.",
-     "support": "sourced",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    },
-    {
-     "text": "Bradycardia and AV block can occur and are managed by the prescriber.",
-     "support": "sourced",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    },
-    {
-     "text": "Because of the long half-life of amiodarone, adverse reactions and interactions can persist after it is stopped.",
-     "support": "sourced",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The most common adverse reactions leading to discontinuation include hypotension, asystole, cardiac arrest or pulseless electrical activity, ventricular tachycardia and cardiogenic shock.",
-     "support": "sourced",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate immediately for hypotension, slowing heart rate, heart block or deterioration of the rhythm.",
-     "support": "partial",
-     "sources": [
-      "L-AMIODARONE"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record rhythm, blood pressure, pump checks and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Monitor rhythm and blood pressure continuously.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "assess",
-   "text": "Watch for hypotension, slowing heart rate and AV block.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-AMIODARONE"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Remember effects can persist after the drug is stopped.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "L-AMIODARONE"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report hypotension, bradycardia or heart block immediately.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-AMIODARONE"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record rhythm and blood pressure.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Dosing, preparation, filter and line requirements: deliberately not included.",
-  "Long-term toxicities (thyroid, lung, liver) were not summarised.",
-  "Cardiac arrest and arrhythmia guideline text (ERC/AHA) was not used for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-15",
-  "set_id": "0a28ae25-7cc4-4ac0-a2ba-7820fb93e25c",
-  "label_version": "6",
-  "effective_time": "20260116",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

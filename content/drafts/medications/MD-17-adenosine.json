@@ -1,244 +1,260 @@
 {
- "med_id": "MD-17",
- "number": 17,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Adenosine",
- "drug_class": "Antiarrhythmic (AV nodal blocking agent)",
- "category": "antiarrhythmics-cardiac",
- "high_alert": true,
- "high_alert_note": "ISMP's 2024 acute-care high-alert list includes intravenous antiarrhythmics; adenosine is an IV antiarrhythmic. The class-level designation is not an instruction to apply a universal rate, indication or procedural algorithm. ISMP source classification is independently cited in the review report; medication content retains its original FDA/manufacturer sources only.",
- "summary": "Intravenous antiarrhythmic used to convert paroxysmal supraventricular tachycardia to sinus rhythm. Nursing focus: heart block and asystole, resuscitative readiness and the very short action of the drug.",
- "batch": 2,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-ADENOSINE",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-ADENOSINE",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-17",
+  "number": 17,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Adenosine",
+  "drug_class": "Antiarrhythmic (AV nodal blocking agent)",
+  "category": "antiarrhythmics-cardiac",
+  "high_alert": true,
+  "high_alert_note": "ISMP's 2024 acute-care high-alert list includes intravenous antiarrhythmics; adenosine is an IV antiarrhythmic. The class-level designation is not an instruction to apply a universal rate, indication or procedural algorithm. ISMP source classification is independently cited in the review report; medication content retains its original FDA/manufacturer sources only.",
+  "summary": "Intravenous antiarrhythmic used to convert paroxysmal supraventricular tachycardia to sinus rhythm. Nursing focus: heart block and asystole, resuscitative readiness and the very short action of the drug.",
+  "batch": 2,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-ADENOSINE",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-ADENOSINE",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates intravenous adenosine for conversion to sinus rhythm of paroxysmal supraventricular tachycardia, including that associated with accessory bypass tracts, when appropriate vagal manoeuvres have not been effective.",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Appropriate resuscitative measures should be available when the drug is given.",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Continuous ECG monitoring and recording during administration follow the unit's protocol.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for caution and watching for respiratory compromise in patients with obstructive lung disease, since bronchoconstriction has been reported, and advises caution if the patient is also receiving digoxin, or digoxin with verapamil together, because of reports of ventricular fibrillation in that setting.",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        },
+        {
+          "text": "The registered rapid-bolus product label advises avoiding adenosine in patients with bronchospasm or bronchoconstriction, including asthma, and exercising caution with non-bronchoconstrictive obstructive lung disease. Severe respiratory difficulty requires stopping further administration and urgent assessment.",
+          "support": "partial",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Adenosine decreases conduction through the AV node and may produce short-lasting first-, second- or third-degree heart block.",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        },
+        {
+          "text": "Patients who develop high-level block on one dose should not be given additional doses (a prescriber decision).",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        },
+        {
+          "text": "Transient or prolonged episodes of asystole have been reported, some fatal, and ventricular fibrillation has rarely been reported.",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        },
+        {
+          "text": "Because of the very short half-life, effects are generally self-limiting.",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Facial flushing was the most frequently reported reaction in the controlled trials the label summarises, with headache and sweating also reported.",
+          "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Call for emergency help for severe respiratory difficulty, prolonged asystole, high-grade heart block or a dangerous rhythm with clinical deterioration. Do not give further adenosine after a serious reaction without clinician reassessment.",
+          "support": "partial",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the rhythm strip, the response and any adverse event per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Keep resuscitation equipment and trained staff immediately available.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-ADENOSINE"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Watch the ECG continuously for heart block or asystole.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-ADENOSINE"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Note flushing, headache or chest discomfort.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-ADENOSINE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Call for help immediately for prolonged asystole or a dangerous rhythm.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ADENOSINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Screen for asthma, bronchospasm and obstructive lung disease before administration; clarify suitability with the treating clinician and watch breathing alongside continuous ECG.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ADENOSINE"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record the rhythm strip and response.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    }
+  ],
+  "gaps": [
+    "Dosing, rapid-push technique and preparation: deliberately not included.",
+    "Diagnostic (stress-test) uses and other labelled products were not summarised.",
+    "Arrhythmia guideline text (ERC/AHA) was not used for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "546642f2-662f-46cf-9d82-5bb3bdcc7677",
+    "label_version": "2",
+    "effective_time": "20260727",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label indicates intravenous adenosine for conversion to sinus rhythm of paroxysmal supraventricular tachycardia, including that associated with accessory bypass tracts, when appropriate vagal manoeuvres have not been effective.",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Appropriate resuscitative measures should be available when the drug is given.",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Continuous ECG monitoring and recording during administration follow the unit's protocol.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label calls for caution and watching for respiratory compromise in patients with obstructive lung disease, since bronchoconstriction has been reported, and advises caution if the patient is also receiving digoxin, or digoxin with verapamil together, because of reports of ventricular fibrillation in that setting.",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Adenosine decreases conduction through the AV node and may produce short-lasting first-, second- or third-degree heart block.",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    },
-    {
-     "text": "Patients who develop high-level block on one dose should not be given additional doses (a prescriber decision).",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    },
-    {
-     "text": "Transient or prolonged episodes of asystole have been reported, some fatal, and ventricular fibrillation has rarely been reported.",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    },
-    {
-     "text": "Because of the very short half-life, effects are generally self-limiting.",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Facial flushing was the most frequently reported reaction in the controlled trials the label summarises, with headache and sweating also reported.",
-     "support": "sourced",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Call for help immediately for prolonged asystole, high-level heart block or ventricular fibrillation.",
-     "support": "partial",
-     "sources": [
-      "L-ADENOSINE"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the rhythm strip, the response and any adverse event per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Keep resuscitation equipment and trained staff immediately available.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-ADENOSINE"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Watch the ECG continuously for heart block or asystole.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-ADENOSINE"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Note flushing, headache or chest discomfort.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "L-ADENOSINE"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Call for help immediately for prolonged asystole or a dangerous rhythm.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-ADENOSINE"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record the rhythm strip and response.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Dosing, rapid-push technique and preparation: deliberately not included.",
-  "Diagnostic (stress-test) uses and other labelled products were not summarised.",
-  "Arrhythmia guideline text (ERC/AHA) was not used for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "546642f2-662f-46cf-9d82-5bb3bdcc7677",
-  "label_version": "2",
-  "effective_time": "20260727",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

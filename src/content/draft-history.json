@@ -3902,6 +3902,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "5b34e6c8740e9b34",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MORPHINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-11": [
@@ -3948,6 +3962,20 @@
    {
     "hash": "d47d20caed2bbee0",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-KETAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "665618f83e64b1dd",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-KETAMINE",
@@ -4027,6 +4055,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0f8306a9f1bbdbc7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ROCURONIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-13": [
@@ -4083,6 +4125,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "bdc7dd0e5183ce3a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CISATRACURIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-14": [
@@ -4129,6 +4185,20 @@
    {
     "hash": "be82b78f2038c61e",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "1e49ba21340f766a",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-HEPARIN",
@@ -4258,6 +4328,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "0a51e0986a5ba641",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-AMIODARONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-17": [
@@ -4317,6 +4401,20 @@
    {
     "hash": "017e1ae74e50c7e4",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "8dbab55f42723277",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-ADENOSINE",
@@ -7413,6 +7511,23 @@
    {
     "hash": "9fcb8ababe19861b",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "9efb80457270d48e",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-PHENYLEPHRINE",
