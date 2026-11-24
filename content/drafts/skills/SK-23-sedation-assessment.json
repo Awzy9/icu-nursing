@@ -18,6 +18,11 @@
       "id": "S-SCCM-PADIS",
       "read": "partial",
       "use": "PADIS 2018 and 2025 focused update: recommendation statements; licence RED/unverified"
+    },
+    {
+      "id": "S-SCCM-PADIS-FOCUSED-2025",
+      "read": "partial",
+      "use": "Official 2025 recommendation statements on sedation and anxiety; full paper not appraised."
     }
   ],
   "objectives": [
@@ -43,7 +48,8 @@
           "text": "The SCCM 2025 focused update conditionally favours dexmedetomidine rather than propofol in mechanically ventilated adults when lighter sedation or delirium reduction is a leading priority. This is not a universal sedative preference; patient-specific goals, contraindications and the prescriber's plan govern.",
           "support": "partial",
           "sources": [
-            "S-SCCM-PADIS"
+            "S-SCCM-PADIS",
+            "S-SCCM-PADIS-FOCUSED-2025"
           ]
         }
       ]
@@ -96,6 +102,14 @@
           "text": "During neuromuscular blockade, movement-based sedation scales cannot establish consciousness or comfort. Verify the prescribed analgesia and sedation plan and seek team-directed monitoring of sedation depth; processed EEG may assist in selected deeply sedated or paralysed patients. Absence of movement alone does not establish adequate sedation.",
           "support": "partial",
           "sources": [
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "When a patient appears anxious, assess distress, communication needs, pain, breathing and possible acute deterioration before attributing the presentation to anxiety. The 2025 SCCM update found inadequate evidence to make a recommendation on benzodiazepines specifically for anxiety in adult ICU patients. Do not treat anxiety as an automatic indication for a sedative; discuss individualized management with the responsible team.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS-FOCUSED-2025",
             "S-SCCM-PADIS"
           ]
         }
@@ -220,6 +234,16 @@
       "sources": [
         "S-SCCM-PADIS"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "When a patient appears anxious, assess distress, communication needs, pain, breathing and possible acute deterioration before attributing the presentation to anxiety. The 2025 SCCM update found inadequate evidence to make a recommendation on benzodiazepines specifically for anxiety in adult ICU patients. Do not treat anxiety as an automatic indication for a sedative; discuss individualized management with the responsible team.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS-FOCUSED-2025",
+        "S-SCCM-PADIS"
+      ]
     }
   ],
   "gaps": [
@@ -240,6 +264,17 @@
       "accessed": "2026-11-14",
       "read": "partial",
       "licence_class": "RED (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-SCCM-PADIS-FOCUSED-2025",
+      "title": "2025 focused update to PADIS guidelines for adult ICU patients",
+      "publisher": "SCCM",
+      "version": "2025",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED",
       "permission_required": "Verify"
     }
   ]
