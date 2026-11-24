@@ -410,6 +410,21 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3e652ff529bc4ca2",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ISMP-BEST-PRACTICES-2026",
+     "S-NMC-CODE",
+     "S-OPENRN-FUND",
+     "S-SCCM-EOL-2025",
+     "S-WHO-INCIDENT-2020"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T03": [
@@ -2159,6 +2174,24 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "d0b8da43b267e257",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-STAFFING-2024",
+     "S-DOUBLE-CHECK-REVIEW-2026",
+     "S-ESICM-EOL-2024",
+     "S-ICN-DEF",
+     "S-NCSBN-DELEG-2019",
+     "S-NMC-CODE",
+     "S-OPENRN-FUND-CH1",
+     "S-SCCM-EOL-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D02-T09": [
@@ -2441,6 +2474,20 @@
     "evidence_status": "stated_in_text",
     "sources": [
      "S-FDA-PUMP",
+     "S-ISMP-HA"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "90a286b5feb4b7f7",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-DOUBLE-CHECK-REVIEW-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-BEST-PRACTICES-2026",
      "S-ISMP-HA"
     ],
     "gaps": 0,

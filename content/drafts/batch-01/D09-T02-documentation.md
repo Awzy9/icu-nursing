@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Fundamentals 2e, section 2.5 Documentation (accessed 2026-11-14; US-oriented)", "Phase 3 addition: Nursing and Midwifery Council (UK). The Code: Professional standards of practice and behaviour for nurses, midwives and nursing associates – section 10 (keep clear and accurate records); current Code PDF read 2026-11-15 – a UK regulator standard that applies to NMC registrants"]
-sources: [S-OPENRN-FUND, S-NMC-CODE, S-SCCM-EOL-2025]
+sources: [S-OPENRN-FUND, S-NMC-CODE, S-SCCM-EOL-2025, S-ISMP-BEST-PRACTICES-2026, S-WHO-INCIDENT-2020]
 independently_written_note: "Original wording; the section was read for principles only. Open RN text is CC BY 4.0 (attribution and change notice needed if text is adapted); nothing is copied. In Phase 3 the UK NMC Code section 10 was added as a regulator standard; other regulators' documentation standards (for example NCSBN-member boards, SCFHS), the NMC's separate record-keeping guidance, and local ICU charting rules were not read, so legal requirements outside the UK and US remain unverified."
 ---
 # Nursing documentation
@@ -49,6 +49,14 @@ Assessment findings and trends; interventions; the patient's response; orders re
 Distinguish an expressed patient preference, a family report, a proposed plan and an authorized treatment order. Record the date, participants, communication needs and interpreter involvement where relevant, the patient's stated values, unresolved questions, who will follow up and when. Record the verified surrogate status using the institutional process; do not assume legal decision-making authority based on relationship alone.
 
 Document the exact scope of active resuscitation or treatment-limitation orders and the responsible authorizing clinician. If orders are unclear, escalate promptly and record the clarification; never infer an instruction to stop unrelated treatment. For an agreed comfort plan, chart symptoms, prescribed interventions, response, further assessment and communication. Preserve dignity, confidentiality and the patient's preferences regarding family updates. These are documentation principles, not a legal determination or a universal form.
+
+## 7c. Incident reporting and learning from near misses
+
+If a medication or equipment error is suspected, first assess and protect the patient, activate urgent clinical help when needed, and clarify the safe treatment plan. Document actual exposure, observed effects, actions, notifications and reassessment in the clinical record. Submit the separate incident report through the approved system, including near misses even if no patient harm is apparent. Preserve relevant packaging, device identifiers and records according to local policy without delaying treatment.
+
+Describe what is known and unknown without speculating about blame. Report contributing circumstances such as confusing labels, interruptions, workload or unavailable equipment. Patient and family disclosure follows the authorized organizational process and applicable law. An incident report does not replace clinical documentation.
+
+WHO's 2020 reporting guidance emphasizes caution when interpreting report-derived data; the 2026–2027 ISMP recommendations likewise warn against treating reporting frequency as proof of safety. A low report count may reflect under-reporting. Teams should use reports to identify hazards, investigate system contributors and provide feedback rather than assume that fewer reports mean fewer errors.
 
 ## 8. Monitoring parameters
 Check at each shift: are observations, intake/output, infusions, lines and devices, skin and mobility documented; are pending orders or results noted; is the plan of care current; are late entries clearly labelled.
@@ -159,6 +167,9 @@ D. Advise her to use the correction or late-entry process so the original stays 
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN / Chippewa Valley Technical College, section 2.5 Documentation. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-5-documentation/ (CC BY 4.0; accessed 2026-11-14)
 
 - Marshall MF et al. SCCM clinical practice guidelines on adult end-of-life care in the ICU (2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/clinical-practice-guidelines-on-adult-end-of-life-care-in-the-icu (selected official recommendations checked 2026-11-24; full appraisal and commercial rights outstanding).
+
+- ISMP. Targeted Medication Safety Best Practices for Hospitals 2026–2027. https://online.ecri.org/hubfs/ISMP/Resources/ISMP_TargetedMedicationSafetyBestPractices_Hospitals.pdf (selected practices 8, 23, 24 and 25, pages 8, 22, 23 and 25 checked visually 2026-11-24; not reproduced; commercial rights not cleared).
+- WHO. Patient safety incident reporting and learning systems: technical report and guidance (2020). https://www.who.int/publications-detail-redirect/9789240010338 (official publication overview checked 2026-11-24; full report not reviewed; commercial rights outstanding).
 
 ## 19. Local protocol note
 Follow local policy on abbreviations, late entries, electronic corrections, verbal orders and record access. Retention periods and legal requirements follow national law.

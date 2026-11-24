@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ISMP List of High-Alert Medications in Acute Care Settings (2024 list; one-page PDF dated 2024-01-09) – US organisation; a risk classification, not a practice guideline", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US regulator; strategies are stated not to apply to all pumps, settings or populations"]
-sources: [S-ISMP-HA, S-FDA-PUMP]
+sources: [S-ISMP-HA, S-FDA-PUMP, S-ISMP-BEST-PRACTICES-2026, S-DOUBLE-CHECK-REVIEW-2026]
 sources_not_read: [S-OPENRN-PHARM]
-independently_written_note: "Original wording. The ISMP list PDF and the FDA clinician page were each read in full; the ISMP list is NOT reproduced (ISMP permits only internal non-commercial reproduction with attribution; other use needs written permission), so only the concept and a few example categories are named. ISMP strategy documents, drug-specific safety guidance, pump-manufacturer manuals and any national regulator or non-US guidance were NOT read. No doses, concentrations or infusion rates are given. Local policy decides which drugs are treated as high-alert, who may double-check, and how pumps are programmed."
+independently_written_note: "Original wording. The ISMP list PDF and the FDA clinician page were each read in full; the ISMP list is NOT reproduced (ISMP permits only internal non-commercial reproduction with attribution; other use needs written permission), so only the concept and a few example categories are named. Selected 2026–2027 ISMP hospital best practices and a 2026 review abstract were checked; other strategy documents, drug-specific guidance, pump-manufacturer manuals and non-US regulator guidance were NOT read. No doses, concentrations or infusion rates are given. Local policy decides which drugs are treated as high-alert, who may double-check, and how pumps are programmed."
 ---
 # High-alert medications and infusion pump safety
 > DRAFT – NOT clinically reviewed. AI-generated. This draft explains the safety concept and the checks both sources describe; it contains no drug doses, concentrations or rates, and it is not a substitute for your unit's high-alert policy.
@@ -48,6 +48,15 @@ Before and during any high-risk infusion:
 - **Take a faulty pump out of service:** the FDA page says to remove it from use, tag it with the specific problem and your contact information, and sequester it if it shows breakage or damage (including small chips or cracks), an unexplained alarm, or does not function as expected.
 - **Report:** follow the facility's protocol for events where a pump may have caused or contributed to a death or serious injury, and report other concerns through the facility's system. The FDA encourages voluntary reports of pump problems.
 - **Report medication errors and near misses** through your organisation's system; ISMP points readers to its national error-reporting programme.
+
+## 7b. Human factors and medication safeguards (2026–2027 update)
+
+- Use the approved smart-pump drug library and dose-error-reduction system for eligible infusions. Compare the prescription with the actual product, channel and units even when data transfer is automated. If the device, library or order does not match, obtain pharmacy or clinical clarification; do not bypass an alert to force a match.
+- For IV push medicines, prefer an approved ready-to-administer preparation where available. Never use a prefilled saline flush syringe as a medication dilution container. Confirm product-specific preparation, route and administration duration with pharmacy or the approved reference; stay with the patient during manual administration. Where the prescribed delivery method is impractical, obtain an authorized alternative rather than improvising.
+- Where barcode administration is available, verify the actual patient and actual medication using the approved workflow. Do not scan a saved wrapper or spare wristband as a substitute. If scanning fails, use the documented downtime/escalation procedure; technology problems do not authorize bypassing patient identification.
+- Interruptions and competing demands can compromise independent verification. When interrupted, establish which steps remain unverified and restart the relevant checks before proceeding. Ask for qualified assistance when a required second checker is unavailable; do not record a check that did not occur. Urgent treatment follows the authorized emergency pathway. A 2026 systematic review identified workload, interruption and access to a second checker as barriers; evidence evaluating improvement interventions remains inconsistent.
+
+These are selected safety principles, not a complete infusion or IV push protocol. ISMP guidance is directed to hospital systems; implementation and exceptions require local pharmacy, device and clinical governance.
 
 ## 8. Monitoring parameters
 Pump settings against the order at the four verification moments above; alerts and alarms; the patient's haemodynamics, rhythm, oxygen saturation, end-tidal CO₂ and blood glucose where relevant to the drug; infusion site; volume infused against expected; the interval for rechecks set by unit policy.
@@ -161,6 +170,9 @@ D. Removing a damaged pump from use and recording the problem.
 ## 18. References
 - ISMP. ISMP List of High-Alert Medications in Acute Care Settings. 2024 (PDF dated 2024-01-09; MS5760). https://www.ismp.org/system/files/resources/2024-01/ISMP_HighAlert_AcuteCare_List_010924_MS5760.pdf (accessed 2026-11-14). © ISMP 2024; internal non-commercial reproduction only.
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians. Content current as of 2018-02-02. https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
+
+- ISMP. Targeted Medication Safety Best Practices for Hospitals 2026–2027. https://online.ecri.org/hubfs/ISMP/Resources/ISMP_TargetedMedicationSafetyBestPractices_Hospitals.pdf (selected practices 8, 23, 24 and 25, pages 8, 22, 23 and 25 checked visually 2026-11-24; not reproduced; commercial rights not cleared).
+- Nurses' Adherence to Double-Checking: A Systematic Review of Influencing Factors, Improvement Strategies, and Their Effectiveness (2026). https://pubmed.ncbi.nlm.nih.gov/41987356/ (abstract checked 2026-11-24; full appraisal outstanding).
 
 ## 19. Local protocol note
 Which drugs are treated as high-alert, who may perform double checks, which pump and drug library are used, concentration standards, alarm limits, and the incident-reporting route are set by your organisation, pharmacy and biomedical engineering.
