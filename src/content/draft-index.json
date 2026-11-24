@@ -1056,6 +1056,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AABB-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AABB-COI-2024",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -1099,7 +1104,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 3,
-   "hash": "642ce200f8e0e75b"
+   "hash": "c756dbf80c27eb35"
   },
   {
    "key": "D01-T17",
@@ -5184,7 +5189,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "fc18adaa907d78d0"
+   "hash": "dc1ff82ec339c2b5"
   },
   {
    "key": "SC-10",

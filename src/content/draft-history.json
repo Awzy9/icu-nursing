@@ -2940,6 +2940,25 @@
     "gaps": 0,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c756dbf80c27eb35",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AABB-2023",
+     "S-AABB-COI-2024",
+     "S-AABB-HBV-LABEL-2026",
+     "S-BSH-ATR",
+     "S-CBS-ATR-2022",
+     "S-FDA-COI-2024",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24",
+     "S-OPENRN-ADV-CH3"
+    ],
+    "gaps": 0,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "D01-T17": [
@@ -13411,6 +13430,27 @@
    },
    {
     "hash": "fc18adaa907d78d0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-AOA-BLOOD-2025",
+     "S-ARUP-DIC",
+     "S-BSH-ATR",
+     "S-ISTH-DIC-2025",
+     "S-NBA-CRITICAL-BLEED-2025",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "dc1ff82ec339c2b5",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

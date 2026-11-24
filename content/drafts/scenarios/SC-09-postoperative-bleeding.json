@@ -76,7 +76,7 @@
     {
       "id": "S-AOA-BLOOD-2025",
       "read": "partial",
-      "use": "Indexed 2025 guidance excerpts on electrolyte abnormalities in major haemorrhage."
+      "use": "Indexed 2025 guidance excerpts on electrolyte abnormalities in major haemorrhage. Published 28 September 2025 correction (doi 10.1111/anae.70020) checked 2026-11-24; correction concerns fibrinogen wording in Table 2. No product selection, fibrinogen indication or table taught."
     },
     {
       "id": "S-NBA-CRITICAL-BLEED-2025",
@@ -90,7 +90,7 @@
     }
   ],
   "required_sources": [
-    "Independent review of the 2025 Association of Anaesthetists major-haemorrhage guideline and nursing applicability; confirm commercial rights before any reproduction",
+    "Independent review of the 2025 Association of Anaesthetists major-haemorrhage guideline and nursing applicability; confirm commercial rights before any reproduction Include the published 2025 correction (doi 10.1111/anae.70020).",
     "The hospital's major-haemorrhage and transfusion protocols",
     "Local protocol for emergency-release blood product identification, massive haemorrhage activation, monitoring and postoperative coagulopathy investigations"
   ],
