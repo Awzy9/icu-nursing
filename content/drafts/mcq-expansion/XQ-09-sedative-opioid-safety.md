@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['MD-06', 'MD-07', 'MD-08', 'MD-09', 'MD-10']
-sources: ['L-PROPOFOL', 'L-MIDAZOLAM', 'L-DEXMEDETOMIDINE', 'L-FENTANYL', 'L-MORPHINE']
+sources: ['L-PROPOFOL', 'L-MIDAZOLAM', 'L-DEXMEDETOMIDINE', 'L-FENTANYL', 'L-MORPHINE', 'S-SCCM-PADIS']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # Sedative and opioid medication safety (FDA labels)
@@ -31,7 +31,7 @@ B. It is safe if the two drugs are given at least ten minutes apart in the same 
 C. It matters only in patients who have never had an opioid before this admission.
 D. It can cause profound sedation, respiratory depression, coma and death.
 **Answer: D.**
-**Why correct:** The opioid boxed warnings say concomitant use with benzodiazepines or other CNS depressants may cause profound sedation, respiratory depression, coma and death.
+**Why correct:** Concurrent opioid and benzodiazepine exposure increases the risk of severe CNS and respiratory depression. Review the authorized indication and monitoring plan, assess ventilation and arousability, and escalate unexpected deterioration urgently. A normal saturation on supplemental oxygen does not rule out hypoventilation.
 **Why not A:** The labels warn of a specific added risk.
 **Why not B:** The risk concerns concomitant use, not the gap between doses.
 **Why not C:** The warning applies broadly.
@@ -51,15 +51,15 @@ D. It is acceptable if a new needle is used, since the needle is the main source
 
 **Q4 (monitoring).** A patient sedated with dexmedetomidine has a heart rate that falls and a blood pressure that drops over twenty minutes. What does the label support?
 A. Treat it as the intended sedative effect and record the readings at the next routine check.
-B. Report promptly, since bradycardia and hypotension may need medical intervention.
+B. Assess perfusion and report promptly; bradycardia and hypotension may require intervention.
 C. Increase the drug to deepen sedation so the patient settles and the readings steady.
 D. Stop monitoring the heart rhythm to avoid false alarms while the patient is sleeping.
 **Answer: B.**
-**Why correct:** The label warns of hypotension, bradycardia and sinus arrest, which may need medical intervention, and says patients should be continuously monitored.
+**Why correct:** Dexmedetomidine can cause clinically important bradycardia and hypotension. Assess the patient, escalate instability and follow the authorized response. SCCM's 2025 conditional preference over propofol in ventilated adults prioritizing light sedation or delirium reduction does not make dexmedetomidine suitable for every patient.
 **Why not A:** The label asks for reporting, not acceptance of falling vital signs.
 **Why not C:** Dose changes are a prescriber or protocol decision, and the readings suggest a problem.
 **Why not D:** Continuous monitoring is required.
-**Trace:** L-DEXMEDETOMIDINE — Label: continuous monitoring; hypotension, bradycardia and sinus arrest.
+**Trace:** L-DEXMEDETOMIDINE, S-SCCM-PADIS — Hemodynamic precautions and conditional sedation choice.
 
 **Q5 (application).** An elderly, frail patient with chronic lung disease has just received a morphine dose. Which preparation does the label support?
 A. Close monitoring of ventilation, arousability and circulation, with naloxone and resuscitation equipment immediately available.
@@ -79,11 +79,12 @@ B. Give a second opioid dose to relieve the discomfort and relax the chest muscl
 C. Remove the pulse oximeter so the alarm stops while the team is called.
 D. Call the emergency airway team and support ventilation under the unit's airway protocol.
 **Answer: D.**
-**Why correct:** Fentanyl labeling describes chest-wall and respiratory-muscle rigidity, particularly after rapid administration, which can impair ventilation. This is an airway emergency: call skilled help and support ventilation promptly under protocol. Neuromuscular blockade and other medicines are clinician-directed decisions, not the bedside question's first independent action.
+**Why correct:** Fentanyl-associated respiratory muscle rigidity can impair ventilation. Summon skilled airway support and provide emergency ventilation assistance within competency. The team determines the need for neuromuscular blockade or opioid reversal. Continue observation after recovery; if an opioid antagonist is used, respiratory depression may recur as its effect wears off.
 **Why not A:** Rigidity that limits ventilation is an emergency.
 **Why not B:** Another opioid dose does not treat rigidity and may worsen it.
 **Why not C:** Monitoring is essential during the event.
-**Trace:** L-FENTANYL — Label: skeletal muscle rigidity; managed with neuromuscular blocking agent.
+**Trace:** L-FENTANYL — Respiratory muscle rigidity, airway/ventilation support and continued monitoring after opioid reversal.
 
 ## 18. References
 - DailyMed labels as listed in content/drafts/medications/LABEL_SOURCES.csv. https://dailymed.nlm.nih.gov/ (accessed 2026-11-15)
+- SCCM 2025 focused PADIS update. https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (selected recommendation excerpts, accessed 2026-11-24)

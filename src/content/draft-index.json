@@ -1411,15 +1411,25 @@
      "verified": null
     },
     {
+     "id": "S-BSH-HIT-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
+    },
+    {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCA-DELPHI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "281626938a7d7af5"
+   "hash": "a439a07c8043cf74"
   },
   {
    "key": "XQ-08",
@@ -1456,15 +1466,25 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "N-RCUK-ANAPH-2021",
+     "licence_class": "RED",
+     "verified": null
+    },
+    {
      "id": "S-ADRENALIN-IM-2025",
      "licence_class": "YELLOW",
      "verified": "2026-11-21"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "82f3dcad44cef6ac"
+   "hash": "355ff1e21261a35d"
   },
   {
    "key": "XQ-09",
@@ -1499,12 +1519,17 @@
      "id": "L-PROPOFOL",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-SCCM-PADIS",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "1d17c8f4caba357b"
+   "hash": "364aab37acfa4680"
   },
   {
    "key": "XQ-10",
