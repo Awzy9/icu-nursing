@@ -18,6 +18,11 @@
       "id": "N-CDC-CAUTI-2009",
       "read": "full",
       "use": "Recommendation sections I-III read in full text in Phase 7 (2009; PDF footer last update June 2019); other sections not read"
+    },
+    {
+      "id": "S-SHEA-CAUTI-2022",
+      "read": "partial",
+      "use": "Indexed guidance on hourly urine output and indications"
     }
   ],
   "objectives": [
@@ -31,7 +36,7 @@
   ],
   "sections": {
     "indications": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Insert catheters only for appropriate indications and leave them only as long as needed (Category IB). Examples include acute retention or outlet obstruction, accurate urine-output measurement in critically ill patients, and prolonged immobilisation; the indications are expert consensus.",
@@ -45,6 +50,13 @@
           "support": "sourced",
           "sources": [
             "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "ICU admission alone is not an indication for an indwelling urinary catheter. Hourly output measurement may be appropriate when it directly guides frequent changes to treatment; reassess this need daily and consider alternatives when precise hourly measurement is no longer necessary.",
+          "support": "partial",
+          "sources": [
+            "S-SHEA-CAUTI-2022"
           ]
         }
       ]
@@ -152,6 +164,14 @@
           "text": "When a small fresh urine sample is clinically indicated, obtain it aseptically from the disinfected needleless sampling port under the local procedure; do not use the drainage bag for urine culture.",
           "support": "partial",
           "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "Do not perform routine antimicrobial bladder irrigation to prevent infection. Suspected obstruction requires assessment and the authorised catheter-management pathway, not an unplanned irrigation.",
+          "support": "partial",
+          "sources": [
+            "S-SHEA-CAUTI-2022",
             "N-CDC-CAUTI-2009"
           ]
         }
@@ -271,6 +291,25 @@
       "sources": [
         "N-CDC-CAUTI-2009"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "ICU admission alone is not an indication for an indwelling urinary catheter. Hourly output measurement may be appropriate when it directly guides frequent changes to treatment; reassess this need daily and consider alternatives when precise hourly measurement is no longer necessary.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SHEA-CAUTI-2022"
+      ]
+    },
+    {
+      "phase": "procedure",
+      "text": "Do not perform routine antimicrobial bladder irrigation to prevent infection. Suspected obstruction requires assessment and the authorised catheter-management pathway, not an unplanned irrigation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SHEA-CAUTI-2022",
+        "N-CDC-CAUTI-2009"
+      ]
     }
   ],
   "gaps": [
@@ -292,6 +331,17 @@
       "read": "full",
       "licence_class": "Recommendation sections I-III read in full text (PDF downloaded and text-extracted); remaining sections not read",
       "permission_required": "YELLOW (US federal publication; the PDF carries no reuse statement - verify before reproducing)"
+    },
+    {
+      "id": "S-SHEA-CAUTI-2022",
+      "title": "Strategies to prevent catheter-associated urinary tract infections in acute-care hospitals: 2022 Update",
+      "publisher": "SHEA/IDSA/APIC and partners",
+      "version": "2023 publication, 2022 update",
+      "url": "https://doi.org/10.1017/ice.2023.137",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

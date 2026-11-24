@@ -2001,6 +2001,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG32",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -2014,7 +2019,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "14d54125bc04a271"
+   "hash": "344c8ac29d698892"
   },
   {
    "key": "SK-12",
@@ -2029,12 +2034,17 @@
      "id": "N-CDC-CAUTI-2009",
      "licence_class": "UNVERIFIED",
      "verified": null
+    },
+    {
+     "id": "S-SHEA-CAUTI-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "1ca4a870d5b04685"
+   "hash": "9f30ed08ee408084"
   },
   {
    "key": "SK-13",
@@ -2064,7 +2074,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "34f4d27defd4d000"
+   "hash": "b95f234a2ff0f2e8"
   },
   {
    "key": "SK-14",
@@ -2081,6 +2091,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-INTL-PI-HEELS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NPIAP-2019",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -2089,7 +2104,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "f556d3f9ef78081b"
+   "hash": "a037e05bd1c735fc"
   },
   {
    "key": "SK-15",
@@ -2109,12 +2124,17 @@
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-INTL-PI-REPOS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
-   "gaps": 2,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "86b244359fb77c46"
+   "hash": "cedd83be6277ea46"
   },
   {
    "key": "SK-16",

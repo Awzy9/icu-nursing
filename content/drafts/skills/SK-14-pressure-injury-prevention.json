@@ -23,6 +23,11 @@
       "id": "S-NPIAP-2019",
       "read": "partial",
       "use": "2019 edition: superseded by the 2026 4th edition"
+    },
+    {
+      "id": "S-INTL-PI-HEELS-2025",
+      "read": "partial",
+      "use": "HTML heel offloading and fit/inspection considerations"
     }
   ],
   "objectives": [
@@ -73,13 +78,20 @@
       ]
     },
     "responsibilities": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Offload heels; manage moisture; request nutrition screening and dietitian review.",
           "support": "sourced",
           "sources": [
             "S-INTL-PI-2026"
+          ]
+        },
+        {
+          "text": "Confirm that the heel is clear of the mattress when offloading is indicated, with load distributed along the calf. Recheck device fit, skin, perfusion and swelling regularly, especially with oedema, vascular disease or reduced sensation; seek wound-care review for early damage.",
+          "support": "partial",
+          "sources": [
+            "S-INTL-PI-HEELS-2025"
           ]
         }
       ]
@@ -228,6 +240,15 @@
       "sources": [
         "S-INTL-PI-2026"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "Confirm that the heel is clear of the mattress when offloading is indicated, with load distributed along the calf. Recheck device fit, skin, perfusion and swelling regularly, especially with oedema, vascular disease or reduced sensation; seek wound-care review for early damage.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-HEELS-2025"
+      ]
     }
   ],
   "gaps": [
@@ -260,6 +281,17 @@
       "read": "partial",
       "licence_class": "RED",
       "permission_required": "Yes"
+    },
+    {
+      "id": "S-INTL-PI-HEELS-2025",
+      "title": "International Guideline fourth edition: Heels",
+      "publisher": "NPIAP/EPUAP/PPPIA",
+      "version": "16 September 2025",
+      "url": "https://www.internationalguideline.com/heels",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

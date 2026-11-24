@@ -194,6 +194,13 @@
             "N-NCBI-OPENRN-CHEST",
             "N-BTS-PCS-2023"
           ]
+        },
+        {
+          "text": "After removal by a suitably trained practitioner under the pleural team's plan, assess oxygenation, breathing, circulation, pain and wound integrity. Escalate new respiratory or circulatory deterioration immediately. The clinician considers post-removal imaging for recurrent pneumothorax or fluid; do not wait for imaging to summon emergency help.",
+          "support": "partial",
+          "sources": [
+            "N-BTS-PCS-2023"
+          ]
         }
       ]
     },
@@ -369,11 +376,20 @@
       "sources": [
         "N-BTS-PCS-2023"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "After removal by a suitably trained practitioner under the pleural team's plan, assess oxygenation, breathing, circulation, pain and wound integrity. Escalate new respiratory or circulatory deterioration immediately. The clinician considers post-removal imaging for recurrent pneumothorax or fluid; do not wait for imaging to summon emergency help.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "N-BTS-PCS-2023"
+      ]
     }
   ],
   "gaps": [
     "Initial qualitative interpretation of bubbling, swinging and clinical warning signs is now supported by targeted Open RN nursing-chapter sections and BTS statements; no validated diagnostic algorithm, independent clamp troubleshooting, insertion or removal procedure is taught.",
-    "ICU post-surgical and trauma drains, digital devices and ambulatory systems: not covered here.",
+    "ICU post-surgical and trauma drains, digital devices and ambulatory systems: not covered here. BTS removal observations are general; removal timing during mechanical ventilation and procedure-specific techniques need separate evidence and local review.",
     "Supplemental appendices of the BTS statement (set-up and suction detail): not read.",
     "The Open RN chapter (NBK594490) was accessible as HTML for targeted nursing assessment and troubleshooting sections on 2026-11-23; its full textbook and third-party images were not comprehensively reviewed.",
     "Evidence from 2023 UK pleural practice statements and a 2023 US entry-level nursing chapter does not establish a universal protocol for traumatic haemothorax, ventilated-patient pneumothorax, postoperative mediastinal drainage, suction or digital devices; review these separately."

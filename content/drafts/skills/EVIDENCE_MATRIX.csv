@@ -112,46 +112,48 @@ SK-10,Enteral feeding,monitoring,partial,1,0,1,0,S-NICE-CG32;S-SHEA-VAP-2022
 SK-10,Enteral feeding,escalation,partial,1,0,1,0,S-NHSE-NGT-2016
 SK-10,Enteral feeding,documentation,local_protocol,1,0,0,1,
 SK-11,Nasogastric tube care,indications,local_protocol,1,0,0,1,
-SK-11,Nasogastric tube care,safety,partial,2,0,2,0,S-NHSE-NGT-2016;S-NICE-CG32
+SK-11,Nasogastric tube care,safety,partial,4,0,4,0,S-NHSE-NGT-2016;S-NHSE-NGT-ENDURING;S-NICE-CG32
 SK-11,Nasogastric tube care,responsibilities,partial,1,0,1,0,S-NICE-CG32
 SK-11,Nasogastric tube care,assessment,partial,1,0,1,0,S-NICE-CG32
 SK-11,Nasogastric tube care,procedure,local_protocol,1,0,0,1,
 SK-11,Nasogastric tube care,escalation,partial,1,0,1,0,S-NHSE-NGT-2016;S-NICE-CG32
 SK-11,Nasogastric tube care,documentation,local_protocol,1,0,0,1,
-SK-12,Urinary catheter care,indications,full,2,2,0,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,indications,partial,3,2,1,0,N-CDC-CAUTI-2009;S-SHEA-CAUTI-2022
 SK-12,Urinary catheter care,safety,full,4,4,0,0,N-CDC-CAUTI-2009
 SK-12,Urinary catheter care,responsibilities,full,1,1,0,0,N-CDC-CAUTI-2009
 SK-12,Urinary catheter care,scope,local_protocol,1,0,0,1,
+SK-12,Urinary catheter care,assessment,full,1,1,0,0,N-CDC-CAUTI-2009
 SK-12,Urinary catheter care,equipment,partial,1,1,0,0,N-CDC-CAUTI-2009
 SK-12,Urinary catheter care,procedure,local_protocol,1,0,0,1,
-SK-12,Urinary catheter care,monitoring,partial,1,1,0,0,N-CDC-CAUTI-2009
+SK-12,Urinary catheter care,monitoring,partial,3,1,2,0,N-CDC-CAUTI-2009;S-SHEA-CAUTI-2022
 SK-12,Urinary catheter care,escalation,partial,1,0,1,0,N-CDC-CAUTI-2009
 SK-12,Urinary catheter care,complications,partial,1,0,1,0,N-CDC-CAUTI-2009
 SK-12,Urinary catheter care,documentation,local_protocol,1,0,0,1,
 SK-13,Chest drain monitoring,indications,local_protocol,1,0,0,1,
-SK-13,Chest drain monitoring,safety,partial,6,0,6,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,safety,partial,6,0,6,0,N-BTS-PCS-2023;N-NCBI-OPENRN-CHEST
 SK-13,Chest drain monitoring,responsibilities,partial,1,0,1,0,N-BTS-PCS-2023
-SK-13,Chest drain monitoring,scope,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,scope,partial,2,0,2,0,N-BTS-PCS-2023;N-NCBI-OPENRN-CHEST
 SK-13,Chest drain monitoring,equipment,local_protocol,1,0,0,1,
-SK-13,Chest drain monitoring,assessment,partial,2,0,2,0,N-BTS-PCS-2023
-SK-13,Chest drain monitoring,monitoring,partial,1,0,1,0,N-BTS-PCS-2023
-SK-13,Chest drain monitoring,escalation,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,assessment,partial,3,0,3,0,N-BTS-PCS-2023;N-NCBI-OPENRN-CHEST
+SK-13,Chest drain monitoring,monitoring,partial,4,0,4,0,N-BTS-PCS-2023;N-NCBI-OPENRN-CHEST
+SK-13,Chest drain monitoring,escalation,partial,3,0,3,0,N-BTS-PCS-2023;N-NCBI-OPENRN-CHEST
 SK-13,Chest drain monitoring,complications,partial,1,0,1,0,N-BTS-PCS-2023
-SK-13,Chest drain monitoring,documentation,partial,1,0,1,0,N-BTS-PCS-2023
+SK-13,Chest drain monitoring,documentation,partial,2,0,2,0,N-BTS-PCS-2023;N-NCBI-OPENRN-CHEST
 SK-13,Chest drain monitoring,procedure,local_protocol,1,0,0,1,
-SK-14,Pressure injury prevention,indications,partial,1,0,1,0,S-INTL-PI-2026
-SK-14,Pressure injury prevention,safety,partial,2,0,2,0,S-INTL-PI-2026
-SK-14,Pressure injury prevention,responsibilities,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,indications,full,2,2,0,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,safety,full,2,2,0,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,responsibilities,partial,2,1,1,0,S-INTL-PI-2026;S-INTL-PI-HEELS-2025
 SK-14,Pressure injury prevention,scope,local_protocol,1,0,0,1,
-SK-14,Pressure injury prevention,assessment,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,assessment,partial,2,1,1,0,S-INTL-PI-2026
 SK-14,Pressure injury prevention,procedure,local_protocol,1,0,0,1,
-SK-14,Pressure injury prevention,monitoring,partial,1,0,1,0,S-INTL-PI-2026
+SK-14,Pressure injury prevention,monitoring,full,3,3,0,0,S-INTL-PI-2026
 SK-14,Pressure injury prevention,escalation,partial,1,0,1,0,S-INTL-PI-2026
 SK-14,Pressure injury prevention,documentation,partial,1,0,1,0,S-INTL-PI-2026
-SK-15,Patient repositioning,safety,partial,2,0,2,0,S-INTL-PI-2026
-SK-15,Patient repositioning,responsibilities,partial,1,0,1,0,S-INTL-PI-2026
+SK-15,Patient repositioning,safety,partial,3,2,1,0,S-INTL-PI-2026
+SK-15,Patient repositioning,responsibilities,full,1,1,0,0,S-INTL-PI-2026
+SK-15,Patient repositioning,assessment,full,1,1,0,0,S-INTL-PI-2026
 SK-15,Patient repositioning,procedure,local_protocol,1,0,0,1,
-SK-15,Patient repositioning,monitoring,partial,1,0,1,0,S-AARC-PVA;S-INTL-PI-2026
+SK-15,Patient repositioning,monitoring,partial,2,1,1,0,S-AARC-PVA;S-INTL-PI-2026;S-INTL-PI-REPOS-2026
 SK-15,Patient repositioning,escalation,partial,1,0,1,0,S-INTL-PI-2026
 SK-15,Patient repositioning,documentation,local_protocol,1,0,0,1,
 SK-16,Safe patient mobilization,indications,partial,1,1,0,0,N-HODGSON-2014

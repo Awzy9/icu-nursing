@@ -23,6 +23,11 @@
       "id": "S-AARC-PVA",
       "read": "full",
       "use": "tube position after moves"
+    },
+    {
+      "id": "S-INTL-PI-REPOS-2026",
+      "read": "partial",
+      "use": "HTML R9, ICU implementation considerations and indirect evidence limitations"
     }
   ],
   "objectives": [
@@ -103,6 +108,13 @@
           "sources": [
             "S-INTL-PI-2026",
             "S-AARC-PVA"
+          ]
+        },
+        {
+          "text": "For patients unable to tolerate full turns, assess oxygenation and perfusion with each smaller position change. Review whether full-body repositioning can be safely resumed as stability improves; micromovements are not a permanent replacement for regular turns or a suitable support surface.",
+          "support": "partial",
+          "sources": [
+            "S-INTL-PI-REPOS-2026"
           ]
         }
       ]
@@ -190,11 +202,21 @@
       "sources": [
         "S-INTL-PI-2026"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "For patients unable to tolerate full turns, assess oxygenation and perfusion with each smaller position change. Review whether full-body repositioning can be safely resumed as stability improves; micromovements are not a permanent replacement for regular turns or a suitable support surface.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-REPOS-2026"
+      ]
     }
   ],
   "gaps": [
     "Prone positioning procedure: not covered by the sources read.",
-    "Manual-handling standards: not read."
+    "Manual-handling standards: not read.",
+    "The 2026 repositioning chapter reports no comparative ICU studies of micromovements versus usual care for pressure injury outcomes; the good practice statement uses indirect evidence. Timing of reassessment and contraindications require a local clinical plan."
   ],
   "permissions": [
     "NPIAP/EPUAP/PPPIA guideline: permission required."
@@ -219,6 +241,17 @@
       "url": "https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf",
       "accessed": "2026-11-14",
       "read": "full",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-INTL-PI-REPOS-2026",
+      "title": "International Guideline fourth edition: Repositioning",
+      "publisher": "NPIAP/EPUAP/PPPIA",
+      "version": "24 August 2026",
+      "url": "https://www.internationalguideline.com/repositioning",
+      "accessed": "2026-11-24",
+      "read": "partial",
       "licence_class": "RED (cite-only)",
       "permission_required": "Verify"
     }

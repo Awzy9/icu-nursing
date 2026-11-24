@@ -28,6 +28,11 @@
       "id": "S-OPENRN-SKILLS",
       "read": "not_read",
       "use": "Open RN Nursing Skills (CC BY): page returned 403"
+    },
+    {
+      "id": "S-NHSE-NGT-ENDURING",
+      "read": "partial",
+      "use": "Indexed enduring standard: initial confirmation with pH within approved range or X-ray"
     }
   ],
   "objectives": [
@@ -70,6 +75,14 @@
           "text": "The NHS initial-placement safety standard rejects air insufflation with auscultation, bubbling tests and aspirate appearance alone as confirmation. Use only the institution's approved position-verification pathway and documented interpretation by competent staff.",
           "support": "partial",
           "sources": [
+            "S-NHSE-NGT-2016"
+          ]
+        },
+        {
+          "text": "The NHS England enduring standard accepts appropriately obtained aspirate pH within its approved range or X-ray for initial position confirmation. Never use a placement aid or external marking alone to establish safe initial placement. Inconclusive pH or absent aspirate requires the approved alternative pathway, not a trial flush.",
+          "support": "partial",
+          "sources": [
+            "S-NHSE-NGT-ENDURING",
             "S-NHSE-NGT-2016"
           ]
         }
@@ -177,6 +190,16 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "preparation",
+      "text": "The NHS England enduring standard accepts appropriately obtained aspirate pH within its approved range or X-ray for initial position confirmation. Never use a placement aid or external marking alone to establish safe initial placement. Inconclusive pH or absent aspirate requires the approved alternative pathway, not a trial flush.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-NHSE-NGT-ENDURING",
+        "S-NHSE-NGT-2016"
+      ]
     }
   ],
   "gaps": [
@@ -220,6 +243,17 @@
       "read": "not_read",
       "licence_class": "GREEN (conditional)",
       "permission_required": "No"
+    },
+    {
+      "id": "S-NHSE-NGT-ENDURING",
+      "title": "Medical device safety: enduring standards for nasogastric placement",
+      "publisher": "NHS England",
+      "version": "Current enduring standards page",
+      "url": "https://www.england.nhs.uk/patient-safety/patient-safety-insight/patient-safety-alerts/enduring-standards/standards-that-remain-valid/medical-device-safety/",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }
