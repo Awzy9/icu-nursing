@@ -15199,6 +15199,23 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "f62661cc43500f5c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-CG103",
+     "N-RCUK-ANAPH-2021",
+     "N-UKKA-HK-2026-07",
+     "S-FDA-OXIMETER-BASICS",
+     "S-OPENRN-ADV-C7",
+     "S-PHILIPS-INTELLIVUE-R0",
+     "S-SSC-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-02": [
@@ -15350,6 +15367,23 @@
      "S-ESICM-SHOCK-2014",
      "S-MHRA-ARTERIAL-GLUCOSE",
      "S-SSC-2021"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "ad7b454a4b7be6f7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-MHRA-ARTERIAL-GLUCOSE",
+     "S-SSC-2021",
+     "S-SSC-2026"
     ],
     "gaps": 3,
     "required_sources": 3,
