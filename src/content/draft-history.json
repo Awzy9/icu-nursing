@@ -2923,6 +2923,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "13fd126fa1bd60c9",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-HANDHYG-2024",
+     "S-CDC-IC",
+     "S-CDC-ISOLATION-2007",
+     "S-WHO-HH-2009"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-22": [
@@ -3045,6 +3059,17 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3aab19b2b900b8fe",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-24": [
@@ -3062,6 +3087,18 @@
    {
     "hash": "483937a069b59b9a",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "S-GCS-OFFICIAL",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "b0b7417998a4799e",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "S-GCS-OFFICIAL",
@@ -3157,6 +3194,21 @@
    {
     "hash": "9047d3b42304d859",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "c587c32c06a934f4",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-NOREPINEPHRINE",
@@ -3308,6 +3360,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f66781ef7447fe48",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VASOPRESSIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-04": [
@@ -3446,6 +3512,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "58d58214d38f31a2",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MILRINONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-06": [
@@ -3505,6 +3585,20 @@
    {
     "hash": "49e720bb68a52f70",
     "recorded": "2026-11-16",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PROPOFOL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "0b367e1d13cbaa01",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-PROPOFOL",
@@ -3585,6 +3679,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "54cf8a52452d8e7a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MIDAZOLAM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-08": [
@@ -3631,6 +3739,20 @@
    {
     "hash": "e0493fb20f7e4a8a",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5c22cc53d739d98d",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-DEXMEDETOMIDINE",
@@ -3701,6 +3823,20 @@
    {
     "hash": "99c02058d9407780",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-FENTANYL",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f20324244633ccab",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-FENTANYL",

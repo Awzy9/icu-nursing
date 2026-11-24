@@ -38,6 +38,13 @@
           "sources": [
             "S-SCCM-PADIS"
           ]
+        },
+        {
+          "text": "The SCCM 2025 focused update conditionally favours dexmedetomidine rather than propofol in mechanically ventilated adults when lighter sedation or delirium reduction is a leading priority. This is not a universal sedative preference; patient-specific goals, contraindications and the prescriber's plan govern.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
         }
       ]
     },
@@ -175,7 +182,7 @@
     },
     {
       "phase": "escalation",
-      "text": "Report persistent deviation, agitation or over-sedation.",
+      "text": "Assess new reduced responsiveness or unsafe agitation immediately, including airway, breathing and circulation; escalate urgently rather than waiting for persistent deviation.",
       "critical": true,
       "support": "partial",
       "sources": [

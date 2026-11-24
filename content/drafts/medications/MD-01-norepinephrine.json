@@ -125,7 +125,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Tissue ischaemia: avoid extravasation into the tissues because local necrosis can follow; management of an extravasation, including any infiltration treatment, is a prescriber or protocol decision.",
@@ -144,6 +144,13 @@
         {
           "text": "Cardiac arrhythmias and allergic reactions are listed among the label's warnings and precautions.",
           "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "A restored blood pressure does not exclude poor organ perfusion, especially when circulating volume is inadequate. Escalate suspected hypovolaemia and ongoing perfusion deficits for clinician assessment.",
+          "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE"
           ]
@@ -258,11 +265,12 @@
     },
     {
       "kind": "observe",
-      "text": "Keep the infusion running; do not interrupt it without an instruction.",
+      "text": "Avoid unintended interruption of essential support. If extravasation is suspected, stop delivery through the affected catheter and urgently coordinate safe alternative access under the local procedure.",
       "critical": true,
-      "support": "sourced",
+      "support": "partial",
       "sources": [
-        "L-NOREPINEPHRINE"
+        "L-NOREPINEPHRINE",
+        "S-UIC-EXTRA-2026"
       ]
     },
     {
@@ -280,6 +288,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Assess perfusion trends, including urine output, skin findings and ordered lactate results; escalate persistent hypoperfusion even if the measured pressure has improved.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NOREPINEPHRINE"
+      ]
     }
   ],
   "gaps": [

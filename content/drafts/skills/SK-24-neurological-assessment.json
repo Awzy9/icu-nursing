@@ -1,244 +1,244 @@
 {
- "skill_id": "SK-24",
- "number": 24,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Neurological assessment",
- "category": "assessment",
- "topic_drafts": [
-  "D03-T01"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-GCS-OFFICIAL",
-   "read": "partial",
-   "use": "Glasgow Coma Scale structured-approach website and assessment aid (copyright (c) Teasdale and Jennett, RED)"
-  },
-  {
-   "id": "S-OPENRN-HA-CVA",
-   "read": "full",
-   "use": "Open RN Health Alterations 9.9: neurological assessment and increased-ICP manifestations (stroke text; entry-level)"
-  }
- ],
- "objectives": [
-  "Use the same structured approach and stimuli each time.",
-  "Record components and rating terms, not just a number.",
-  "Account for sedation, intubation and injury, and escalate change immediately."
- ],
- "prerequisites": [
-  "Sedation assessment (SK-23)"
- ],
- "sections": {
-  "safety": {
-   "support": "partial",
-   "items": [
+  "skill_id": "SK-24",
+  "number": 24,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Neurological assessment",
+  "category": "assessment",
+  "topic_drafts": [
+    "D03-T01"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Stimulate in a stepped way and only as much as needed; use finger-tip pressure before trapezius or supraorbital pressure; avoid repeated painful stimulation beyond what is needed.",
-     "support": "partial",
-     "sources": [
-      "S-GCS-OFFICIAL"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Record the components and rating terms, not just a number; record non-testable with the reason; compare with previous assessments; report change immediately.",
-     "support": "partial",
-     "sources": [
-      "S-GCS-OFFICIAL"
-     ]
+      "id": "S-GCS-OFFICIAL",
+      "read": "partial",
+      "use": "Glasgow Coma Scale structured-approach website and assessment aid (copyright (c) Teasdale and Jennett, RED)"
     },
     {
-     "text": "Account for sedation, analgesia, paralytics, intubation and injuries and record doses and timing so the team can interpret findings.",
-     "support": "partial",
-     "sources": [
-      "S-GCS-OFFICIAL"
-     ]
+      "id": "S-OPENRN-HA-CVA",
+      "read": "full",
+      "use": "Open RN Health Alterations 9.9: neurological assessment and increased-ICP manifestations (stroke text; entry-level)"
     }
-   ]
-  },
-  "scope": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Interpretation bands and management decisions belong to the medical team; follow unit policy.",
-     "support": "local_protocol",
-     "sources": []
+  ],
+  "objectives": [
+    "Use the same structured approach and stimuli each time.",
+    "Record components and rating terms, not just a number.",
+    "Account for sedation, intubation and injury, and escalate change immediately."
+  ],
+  "prerequisites": [
+    "Sedation assessment (SK-23)"
+  ],
+  "sections": {
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Use the trained, unit-approved structured assessment and only the stimulus necessary to assess a response; consider injuries and contraindications. Do not repeatedly apply painful stimuli or delay urgent care.",
+          "support": "partial",
+          "sources": [
+            "S-GCS-OFFICIAL"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Record each assessable component and its response; document a non-testable component and the reason. Do not calculate a misleading total when a component is not testable. Compare with baseline and report deterioration immediately.",
+          "support": "partial",
+          "sources": [
+            "S-GCS-OFFICIAL"
+          ]
+        },
+        {
+          "text": "Account for sedation, analgesia, paralytics, intubation and injuries and record doses and timing so the team can interpret findings.",
+          "support": "partial",
+          "sources": [
+            "S-GCS-OFFICIAL"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Interpretation bands and management decisions belong to the medical team; follow unit policy.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "assessment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Component definitions and scoring are not reproduced (copyright); use the unit-approved scale and training.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "A focused neurological assessment includes the level of consciousness, the Glasgow Coma Scale and a pupil evaluation, as well as speech and cognition.",
+          "support": "sourced",
+          "sources": [
+            "S-OPENRN-HA-CVA"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Use the same structured approach and stimuli each time to allow comparison.",
+          "support": "partial",
+          "sources": [
+            "S-GCS-OFFICIAL"
+          ]
+        },
+        {
+          "text": "A new fall in consciousness, pupil changes, headache, vomiting or cardiovascular changes can signal acute neurological deterioration. These signs neither establish raised intracranial pressure nor occur in a dependable sequence; assess and escalate urgently.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-HA-CVA"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Report change promptly and document the escalation.",
+          "support": "partial",
+          "sources": [
+            "S-GCS-OFFICIAL"
+          ]
+        },
+        {
+          "text": "Report a fall in the level of consciousness, new restlessness or confusion, or pupil change urgently with the previous assessment for comparison; sedatives can mask neurological symptoms, so discuss them with the team before giving them.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-HA-CVA"
+          ]
+        }
+      ]
+    },
+    "communication": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Communicate with relatives honestly and avoid predictions.",
+          "support": "partial",
+          "sources": [
+            "S-GCS-OFFICIAL"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record components, stimuli used, confounders and escalation per your unit's documentation standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
     }
-   ]
   },
-  "assessment": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "Component definitions and scoring are not reproduced (copyright); use the unit-approved scale and training.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "preparation",
+      "text": "Note sedation, analgesia, paralytics, intubation and injuries that affect testing.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-GCS-OFFICIAL"
+      ]
     },
     {
-     "text": "A focused neurological assessment includes the level of consciousness, the Glasgow Coma Scale and a pupil evaluation, as well as speech and cognition.",
-     "support": "sourced",
-     "sources": [
-      "S-OPENRN-HA-CVA"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Use the same structured approach and stimuli each time to allow comparison.",
-     "support": "partial",
-     "sources": [
-      "S-GCS-OFFICIAL"
-     ]
+      "phase": "assessment",
+      "text": "Use the same structured stepped approach and stimuli each time.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-GCS-OFFICIAL"
+      ]
     },
     {
-     "text": "A decreased level of consciousness is the earliest sign of raised intracranial pressure; restlessness, headache, vomiting, high blood pressure and a slow heart rate can follow, so a downward change from the last assessment is significant.",
-     "support": "sourced",
-     "sources": [
-      "S-OPENRN-HA-CVA"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Report change promptly and document the escalation.",
-     "support": "partial",
-     "sources": [
-      "S-GCS-OFFICIAL"
-     ]
+      "phase": "assessment",
+      "text": "Record the individual assessable components; omit the total if any component is non-testable and document why.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-GCS-OFFICIAL"
+      ]
     },
     {
-     "text": "Report a fall in the level of consciousness, new restlessness or confusion, or pupil change urgently with the previous assessment for comparison; sedatives can mask neurological symptoms, so discuss them with the team before giving them.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-HA-CVA"
-     ]
-    }
-   ]
-  },
-  "communication": {
-   "support": "partial",
-   "items": [
+      "phase": "monitoring",
+      "text": "Compare with the previous assessment.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-GCS-OFFICIAL"
+      ]
+    },
     {
-     "text": "Communicate with relatives honestly and avoid predictions.",
-     "support": "partial",
-     "sources": [
-      "S-GCS-OFFICIAL"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "escalation",
+      "text": "Assess airway, breathing and circulation and urgently escalate new neurological deterioration without waiting for repeated scoring; document the response.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-GCS-OFFICIAL"
+      ]
+    },
     {
-     "text": "Record components, stimuli used, confounders and escalation per your unit's documentation standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "documentation",
+      "text": "Record non-testable items with the reason.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-GCS-OFFICIAL"
+      ]
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Note sedation, analgesia, paralytics, intubation and injuries that affect testing.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-GCS-OFFICIAL"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Use the same structured stepped approach and stimuli each time.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-GCS-OFFICIAL"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Record each component and its rating term, not just a total.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-GCS-OFFICIAL"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Compare with the previous assessment.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-GCS-OFFICIAL"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Report change immediately and document who was told.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-GCS-OFFICIAL"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record non-testable items with the reason.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-GCS-OFFICIAL"
-   ]
-  }
- ],
- "gaps": [
-  "Interpretation bands, ICP/CPP management and brain-injury guidelines: not covered.",
-  "GCS component wording: copyright; permission required to reproduce.",
-  "Phase 14: the added statements come from an entry-level stroke text; ICP and cerebral perfusion values and monitoring-device care remain unsourced."
- ],
- "permissions": [
-  "GCS aid copyright (Teasdale and Jennett): permission required."
- ],
- "references": [
-  {
-   "id": "S-GCS-OFFICIAL",
-   "title": "Glasgow Coma Scale: structured approach website and GCS Assessment Aid (English)",
-   "publisher": "Royal College of Physicians and Surgeons of Glasgow / NHS Greater Glasgow and Clyde (Institute of Neurological Sciences)",
-   "version": "Aid (c) Sir Graham Teasdale 2015",
-   "url": "https://www.glasgowcomascale.org/",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "RED",
-   "permission_required": "Yes"
-  },
-  {
-   "id": "S-OPENRN-HA-CVA",
-   "title": "Health Alterations, section 9.9 Cerebrovascular Accident (increased intracranial pressure boxes)",
-   "publisher": "Open RN",
-   "version": "2025 (WisTech Open)",
-   "url": "https://wtcs.pressbooks.pub/healthalts/chapter/9-9-cerebrovascular-accident/",
-   "accessed": "2026-11-15",
-   "read": "full",
-   "licence_class": "GREEN",
-   "permission_required": "No"
-  }
- ]
+  ],
+  "gaps": [
+    "Interpretation bands, ICP/CPP management and brain-injury guidelines: not covered.",
+    "GCS component wording: copyright; permission required to reproduce.",
+    "Phase 14: the added statements come from an entry-level stroke text; ICP and cerebral perfusion values and monitoring-device care remain unsourced."
+  ],
+  "permissions": [
+    "GCS aid copyright (Teasdale and Jennett): permission required."
+  ],
+  "references": [
+    {
+      "id": "S-GCS-OFFICIAL",
+      "title": "Glasgow Coma Scale: structured approach website and GCS Assessment Aid (English)",
+      "publisher": "Royal College of Physicians and Surgeons of Glasgow / NHS Greater Glasgow and Clyde (Institute of Neurological Sciences)",
+      "version": "Aid (c) Sir Graham Teasdale 2015",
+      "url": "https://www.glasgowcomascale.org/",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "RED",
+      "permission_required": "Yes"
+    },
+    {
+      "id": "S-OPENRN-HA-CVA",
+      "title": "Health Alterations, section 9.9 Cerebrovascular Accident (increased intracranial pressure boxes)",
+      "publisher": "Open RN",
+      "version": "2025 (WisTech Open)",
+      "url": "https://wtcs.pressbooks.pub/healthalts/chapter/9-9-cerebrovascular-accident/",
+      "accessed": "2026-11-15",
+      "read": "full",
+      "licence_class": "GREEN",
+      "permission_required": "No"
+    }
+  ]
 }

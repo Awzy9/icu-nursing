@@ -1,280 +1,298 @@
 {
- "skill_id": "SK-21",
- "number": 21,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Infection prevention (standard precautions)",
- "category": "safety-infection-devices",
- "topic_drafts": [
-  "D06-T04"
- ],
- "evidence_status": "partial",
- "license_status": "unassessed",
- "sources": [
-  {
-   "id": "S-CDC-IC",
-   "read": "full",
-   "use": "CDC infection-control index and Core Practices page (hand-hygiene moments, PPE indications, performance monitoring and feedback) read in full; transmission-based precautions and isolation category detail pages not read"
-  },
-  {
-   "id": "S-WHO-HH-2009",
-   "read": "not_read",
-   "use": "WHO hand hygiene guideline: not accessed"
-  },
-  {
-   "id": "S-CDC-ISOLATION-2007",
-   "read": "full",
-   "use": "CDC/HICPAC Guideline for Isolation Precautions (2007, last updated September 2024): section III.B (Contact, Droplet and Airborne Precautions) read in full text 2026-11-16; full document not read beyond that section"
-  },
-  {
-   "id": "S-CDC-HANDHYG-2024",
-   "read": "partial",
-   "use": "CDC hand hygiene page (landing page only): definition and alcohol-based hand rub fire safety"
-  }
- ],
- "objectives": [
-  "Apply standard precautions using task-risk-based PPE.",
-  "Apply and keep visible the precaution level in force.",
-  "Report exposures and breaches promptly."
- ],
- "prerequisites": [
-  "None"
- ],
- "sections": {
-  "indications": {
-   "support": "partial",
-   "items": [
+  "skill_id": "SK-21",
+  "number": 21,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Infection prevention (standard precautions)",
+  "category": "safety-infection-devices",
+  "topic_drafts": [
+    "D06-T04"
+  ],
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "sources": [
     {
-     "text": "Standard precautions apply to all patients; transmission-based precautions are added as the unit's policy directs.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-IC"
-     ]
-    }
-   ]
-  },
-  "safety": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Choose PPE from the task risk; put it on before the task and remove it in the order and place set by policy, then perform hand hygiene.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-IC"
-     ]
+      "id": "S-CDC-IC",
+      "read": "full",
+      "use": "CDC infection-control index and Core Practices page (hand-hygiene moments, PPE indications, performance monitoring and feedback) read in full; transmission-based precautions and isolation category detail pages not read"
     },
     {
-     "text": "Respiratory hygiene and cough etiquette; safe injection and sharps practice; cleaning and disinfection of shared equipment; safe handling of linen and waste.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-IC"
-     ]
+      "id": "S-WHO-HH-2009",
+      "read": "not_read",
+      "use": "WHO hand hygiene guideline: not accessed"
     },
     {
-     "text": "Hand hygiene means cleaning the hands with soap and water, with an alcohol-based hand rub, or (for surgery) with surgical hand antisepsis.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-HANDHYG-2024"
-     ]
+      "id": "S-CDC-ISOLATION-2007",
+      "read": "full",
+      "use": "CDC/HICPAC Guideline for Isolation Precautions (2007, last updated September 2024): section III.B (Contact, Droplet and Airborne Precautions) read in full text 2026-11-16; full document not read beyond that section"
     },
     {
-     "text": "Alcohol-based hand rub contains ethyl alcohol, is a flammable liquid and must be stored and dispensed in line with local fire-safety rules.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-HANDHYG-2024"
-     ]
+      "id": "S-CDC-HANDHYG-2024",
+      "read": "partial",
+      "use": "CDC hand hygiene page (landing page only): definition and alcohol-based hand rub fire safety"
     }
-   ]
-  },
-  "responsibilities": {
-   "support": "full",
-   "items": [
-    {
-     "text": "CDC's core practices page gives six hand-hygiene moments: immediately before touching a patient; before an aseptic task or handling an invasive device; before moving from a soiled body site to a clean one on the same patient; after touching a patient or their immediate environment; after contact with blood, body fluids or contaminated surfaces; and immediately after glove removal. Soap and water are called for when hands are visibly soiled; an alcohol-based hand rub is otherwise generally preferred, and supplies should be readily accessible wherever care is delivered.",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-IC"
-     ]
+  ],
+  "objectives": [
+    "Apply standard precautions using task-risk-based PPE.",
+    "Apply and keep visible the precaution level in force.",
+    "Report exposures and breaches promptly."
+  ],
+  "prerequisites": [
+    "None"
+  ],
+  "sections": {
+    "indications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Standard precautions apply to all patients; transmission-based precautions are added as the unit's policy directs.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-IC"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Choose PPE from the task risk; put it on before the task and remove it in the order and place set by policy, then perform hand hygiene.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-IC"
+          ]
+        },
+        {
+          "text": "Respiratory hygiene and cough etiquette; safe injection and sharps practice; cleaning and disinfection of shared equipment; safe handling of linen and waste.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-IC"
+          ]
+        },
+        {
+          "text": "Hand hygiene means cleaning the hands with soap and water, with an alcohol-based hand rub, or (for surgery) with surgical hand antisepsis.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-HANDHYG-2024"
+          ]
+        },
+        {
+          "text": "Alcohol-based hand rub is flammable; follow local storage and dispenser fire-safety requirements, and allow hands to dry before proceeding.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-HANDHYG-2024"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "CDC's core practices page gives six hand-hygiene moments: immediately before touching a patient; before an aseptic task or handling an invasive device; before moving from a soiled body site to a clean one on the same patient; after touching a patient or their immediate environment; after contact with blood, body fluids or contaminated surfaces; and immediately after glove removal. Soap and water are called for when hands are visibly soiled; an alcohol-based hand rub is otherwise generally preferred, and supplies should be readily accessible wherever care is delivered.",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-IC"
+          ]
+        },
+        {
+          "text": "Gloves are not a substitute for hand hygiene. Use a fresh pair for each patient; change gloves when moving from contaminated to clean tasks on the same patient, and perform hand hygiene as indicated.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-IC",
+            "S-CDC-HANDHYG-2024"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The precaution level for each patient is set by infection-prevention policy.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The CDC/HICPAC guideline describes three transmission-based precaution categories, used in addition to standard precautions: Contact Precautions (gown and gloves for interactions that may touch the patient or their environment; a single room is preferred) for organisms spread by direct or indirect contact; Droplet Precautions (a mask for close contact, generally donned on room entry; no special air handling needed) for pathogens spread through close respiratory or mucous-membrane contact; and Airborne Precautions (a mask or respirator per the disease-specific recommendation, donned before room entry; an airborne infection isolation room is preferred) for pathogens that remain infectious over long distances in the air. Which organisms require which category, and the exact signage and placement, follow the unit's infection-prevention policy.",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-ISOLATION-2007"
+          ]
+        }
+      ]
+    },
+    "assessment": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Before a task, assess the exposure risk to choose PPE: wear gloves whenever contact with blood, body fluids, mucous membranes, non-intact skin or contaminated equipment can reasonably be anticipated; wear a task-appropriate gown if soiling from fluids is possible; add eye protection with a mask or face shield if splashes or sprays are possible. PPE is secondary to administrative and engineering controls, not a substitute for them.",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-IC"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "full",
+      "items": [
+        {
+          "text": "CDC's core practices call for identifying and monitoring adherence to infection-prevention practices, giving prompt and regular feedback to staff and facility leadership, training the staff who monitor to use standardised tools and definitions, and monitoring facility infections using surveillance data to detect transmission; monitoring measures should be tailored to the care provided and the population served.",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-IC"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Donning and doffing sequences follow the unit's approved procedure.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Report exposures and breaches promptly.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-IC"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record precaution level and exposures per policy.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
     }
-   ]
   },
-  "scope": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "The precaution level for each patient is set by infection-prevention policy.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "preparation",
+      "text": "Choose PPE for the task risk before starting.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC"
+      ]
     },
     {
-     "text": "The CDC/HICPAC guideline describes three transmission-based precaution categories, used in addition to standard precautions: Contact Precautions (gown and gloves for interactions that may touch the patient or their environment; a single room is preferred) for organisms spread by direct or indirect contact; Droplet Precautions (a mask for close contact, generally donned on room entry; no special air handling needed) for pathogens spread through close respiratory or mucous-membrane contact; and Airborne Precautions (a mask or respirator per the disease-specific recommendation, donned before room entry; an airborne infection isolation room is preferred) for pathogens that remain infectious over long distances in the air. Which organisms require which category, and the exact signage and placement, follow the unit's infection-prevention policy.",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-ISOLATION-2007"
-     ]
-    }
-   ]
-  },
-  "assessment": {
-   "support": "full",
-   "items": [
+      "phase": "procedure",
+      "text": "Put PPE on before the task and remove it in the order and place your policy sets.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC"
+      ]
+    },
     {
-     "text": "Before a task, assess the exposure risk to choose PPE: wear gloves whenever contact with blood, body fluids, mucous membranes, non-intact skin or contaminated equipment can reasonably be anticipated; wear a task-appropriate gown if soiling from fluids is possible; add eye protection with a mask or face shield if splashes or sprays are possible. PPE is secondary to administrative and engineering controls, not a substitute for them.",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-IC"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "full",
-   "items": [
+      "phase": "procedure",
+      "text": "Perform hand hygiene at the moments your policy defines.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC"
+      ]
+    },
     {
-     "text": "CDC's core practices call for identifying and monitoring adherence to infection-prevention practices, giving prompt and regular feedback to staff and facility leadership, training the staff who monitor to use standardised tools and definitions, and monitoring facility infections using surveillance data to detect transmission; monitoring measures should be tailored to the care provided and the population served.",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-IC"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Clean and disinfect shared equipment between patients.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC"
+      ]
+    },
     {
-     "text": "Donning and doffing sequences follow the unit's approved procedure.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "escalation",
+      "text": "Report exposures and breaches promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC"
+      ]
+    },
     {
-     "text": "Report exposures and breaches promptly.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-IC"
-     ]
+      "phase": "procedure",
+      "text": "Change gloves between patients and between contaminated and clean tasks; perform hand hygiene at the indicated moments, including after removal.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC",
+        "S-CDC-HANDHYG-2024"
+      ]
     }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+  ],
+  "gaps": [
+    "The CDC/HICPAC isolation guideline's disease-specific precaution list (Appendix A - which organism needs which category) and its MDRO-specific chapter were not read; only section III.B's general category descriptions were.",
+    "The WHO 2009 hand hygiene guideline was not accessed; the hand-hygiene moments used here are CDC's own six moments, not WHO's five moments, which may differ slightly in wording and grouping.",
+    "Exact PPE donning/doffing sequence and hand hygiene technique steps (soap-and-water vs rub technique) are not written; the CDC core practices page states the principles but not a step-by-step sequence."
+  ],
+  "permissions": [
+    "CDC pages: no licence statement; verify before reproducing.",
+    "WHO: permission required for commercial adaptation."
+  ],
+  "references": [
     {
-     "text": "Record precaution level and exposures per policy.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "S-CDC-IC",
+      "title": "Infection Control (index) and Core IPC Practices",
+      "publisher": "CDC",
+      "version": "Core Practices page dated Apr 12 2024 (page header); index page shows 'June 12, 2025'",
+      "url": "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
+      "accessed": "2026-11-16",
+      "read": "full",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-WHO-HH-2009",
+      "title": "WHO Guidelines on Hand Hygiene in Health Care (2009)",
+      "publisher": "WHO",
+      "version": "2009",
+      "url": "https://iris.who.int/",
+      "accessed": "2026-11-14",
+      "read": "not_read",
+      "licence_class": "YELLOW (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-CDC-ISOLATION-2007",
+      "title": "Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings (2007)",
+      "publisher": "CDC / HICPAC",
+      "version": "2007; PDF footer \"Last update: September 2024\"",
+      "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-Isolation-H.pdf",
+      "accessed": "2026-11-16",
+      "read": "full",
+      "licence_class": "YELLOW (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-CDC-HANDHYG-2024",
+      "title": "Clinical Safety: Hand Hygiene for Healthcare Workers",
+      "publisher": "CDC",
+      "version": "Page dated 2024-02-27",
+      "url": "https://www.cdc.gov/clean-hands/hcp/clinical-safety/index.html",
+      "accessed": "2026-11-15",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "No"
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Choose PPE for the task risk before starting.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-CDC-IC"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Put PPE on before the task and remove it in the order and place your policy sets.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-CDC-IC"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Perform hand hygiene at the moments your policy defines.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-CDC-IC"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Clean and disinfect shared equipment between patients.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-CDC-IC"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Report exposures and breaches promptly.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-CDC-IC"
-   ]
-  }
- ],
- "gaps": [
-  "The CDC/HICPAC isolation guideline's disease-specific precaution list (Appendix A - which organism needs which category) and its MDRO-specific chapter were not read; only section III.B's general category descriptions were.",
-  "The WHO 2009 hand hygiene guideline was not accessed; the hand-hygiene moments used here are CDC's own six moments, not WHO's five moments, which may differ slightly in wording and grouping.",
-  "Exact PPE donning/doffing sequence and hand hygiene technique steps (soap-and-water vs rub technique) are not written; the CDC core practices page states the principles but not a step-by-step sequence."
- ],
- "permissions": [
-  "CDC pages: no licence statement; verify before reproducing.",
-  "WHO: permission required for commercial adaptation."
- ],
- "references": [
-  {
-   "id": "S-CDC-IC",
-   "title": "Infection Control (index) and Core IPC Practices",
-   "publisher": "CDC",
-   "version": "Core Practices page dated Apr 12 2024 (page header); index page shows 'June 12, 2025'",
-   "url": "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
-   "accessed": "2026-11-16",
-   "read": "full",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-WHO-HH-2009",
-   "title": "WHO Guidelines on Hand Hygiene in Health Care (2009)",
-   "publisher": "WHO",
-   "version": "2009",
-   "url": "https://iris.who.int/",
-   "accessed": "2026-11-14",
-   "read": "not_read",
-   "licence_class": "YELLOW (unverified)",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-CDC-ISOLATION-2007",
-   "title": "Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings (2007)",
-   "publisher": "CDC / HICPAC",
-   "version": "2007; PDF footer \"Last update: September 2024\"",
-   "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-Isolation-H.pdf",
-   "accessed": "2026-11-16",
-   "read": "full",
-   "licence_class": "YELLOW (unverified)",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-CDC-HANDHYG-2024",
-   "title": "Clinical Safety: Hand Hygiene for Healthcare Workers",
-   "publisher": "CDC",
-   "version": "Page dated 2024-02-27",
-   "url": "https://www.cdc.gov/clean-hands/hcp/clinical-safety/index.html",
-   "accessed": "2026-11-15",
-   "read": "partial",
-   "licence_class": "YELLOW",
-   "permission_required": "No"
-  }
- ]
+  ]
 }
