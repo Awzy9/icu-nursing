@@ -27,7 +27,7 @@ D. Tape the lifted edge with clean tape so the original dressing stays in place 
 
 **Q2 (safety).** A colleague is about to give an intermittent injection through the needleless connector of a central line. What must happen first?
 A. Nothing extra is needed because the connector was disinfected at the start of the shift.
-B. Disinfect the connector using the approved antiseptic technique and product contact and drying instructions before access.
+B. Disinfect the connector before access, following the approved antiseptic procedure.
 C. Wipe the connector only if it looks visibly dirty, since clean connectors carry little risk.
 D. Flush the connector with sterile water first, which removes any organisms from the outside.
 **Answer: B.**

@@ -52,7 +52,7 @@ D. Report possible reversible diabetes insipidus and monitor urine output, fluid
 **Q4 (monitoring).** A patient with atrial fibrillation on dobutamine has a sudden rise in heart rate to a rapid, irregular rhythm. What does the label's warning suggest?
 A. Treat it as a normal effect of the drug and record the rate at the next hourly check.
 B. Stop the infusion permanently and record that the patient is intolerant of the drug.
-C. Assess the patient and perfusion immediately, report possible rapid ventricular response and summon emergency help if unstable.
+C. Assess perfusion and escalate the possible rapid ventricular response now.
 D. Give extra fluid yourself, because a fast heart rate always means the patient is dry.
 **Answer: C.**
 **Why correct:** The label warns that because dobutamine facilitates atrioventricular conduction, patients with atrial fibrillation are at risk of a rapid ventricular response. Assess blood pressure, perfusion and symptoms alongside the ECG; activate the emergency pathway for clinical instability.

@@ -1943,6 +1943,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "38ac98f519c438af",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-CDC-BSI-2011",
+     "S-SHEA-CLABSI-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-04": [
@@ -1994,6 +2006,17 @@
    },
    {
     "hash": "13526d8f17e0223a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-BTS-PCS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "db3816c2795d0c34",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -2167,6 +2190,22 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "82f3dcad44cef6ac",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-EPINEPHRINE",
+     "L-MILRINONE",
+     "L-NOREPINEPHRINE",
+     "L-VASOPRESSIN",
+     "S-ADRENALIN-IM-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-09": [
@@ -2246,6 +2285,18 @@
    },
    {
     "hash": "6d28b39cc31b58f2",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-NHSE-NGT-2016",
+     "S-NICE-CG32"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "582da82b104e159f",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

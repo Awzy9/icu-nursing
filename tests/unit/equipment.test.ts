@@ -37,7 +37,7 @@ describe("the eight DRAFT equipment specifications", () => {
     expect(validateEquipmentSet(drafts)).toEqual([]);
     for (const d of drafts) expect(validateEquipmentDraft(d, known), d.equipment_id).toEqual([]);
     drafts.forEach((d, i) => expect(d.category).toBe(EQUIPMENT_CATEGORIES[i]));
-    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(4);
+    expect(drafts.flatMap((d) => d.parameters).filter((p) => p.explanation !== null)).toHaveLength(11);
     const crrt = drafts.find((d) => d.equipment_id === "EQ-06")!;
     expect(crrt.parameters.filter((p) => p.explanation !== null).map((p) => p.name)).toEqual(["Delivered dose against prescription", "Alarm state"]);
     expect(crrt.parameters.slice(0, 2).every((p) => p.explanation === null)).toBe(true);
@@ -56,7 +56,7 @@ describe("the eight DRAFT equipment specifications", () => {
     const d = drafts[0]!;
     const a = clone(d); a.clinically_reviewed = true; expect(rules(a)).toContain("review");
     const b = clone(d); b.sources.push({ id: "S-NOPE", read: "full", use: "x" }); expect(rules(b)).toContain("source");
-    const c = clone(drafts[1]!); c.parameters[0]!.explanation = "Made-up explanation"; expect(rules(c)).toContain("parameter");
+    const c = clone(drafts[1]!); c.parameters[0]!.explanation = "Made-up explanation"; c.parameters[0]!.support = "needs_source"; c.parameters[0]!.sources = []; expect(rules(c)).toContain("parameter");
     const c2 = clone(d); c2.parameters[0]!.sources = ["S-NOPE"]; expect(rules(c2)).toContain("parameter");
     const c3 = clone(d); c3.parameters[0]!.support = "partial"; c3.parameters[0]!.sources = []; expect(rules(c3)).toContain("parameter");
     const e = clone(d); e.safety_concepts[0]!.text = "Run it at 5 mg per hour"; expect(rules(e)).toContain("dosing");

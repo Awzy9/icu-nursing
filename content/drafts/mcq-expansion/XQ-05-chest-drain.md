@@ -77,7 +77,7 @@ D. Connect it for patients who are breathless, to make drainage quicker and reli
 A. Ignore it, because the water level matters mainly while the patient is breathing out strongly.
 B. Top it up with any available sterile water without checking the system, as the level looks low.
 C. Raise the bottle above the patient so the little water left covers the tube end.
-D. Assess the patient and system, report the fault and restore the specified seal level only under the device instructions and local protocol.
+D. Assess and report the fault; restore the specified seal level under protocol.
 **Answer: D.**
 **Why correct:** The BTS statement describes the need for adequate water to maintain the seal in a conventional underwater-seal system. The exact level and handling depend on the device; this does not apply to dry-seal or digital systems.
 **Why not A:** The water seal matters whenever the drain is in use.

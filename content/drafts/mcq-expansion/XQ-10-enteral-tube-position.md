@@ -76,7 +76,7 @@ D. It is a Never Event in England, which is why checking placement before use is
 **Q6 (scope).** Who should insert and confirm the position of nasogastric tubes, according to NICE?
 A. Any staff member on the shift, because tube passing is a basic nursing task everyone has done.
 B. Only the on-call doctor, because nurses are not permitted to pass tubes under any circumstances.
-C. Staff trained and authorised for the specific task, including separate competency for interpreting radiographic confirmation when required.
+C. Staff trained and authorised for insertion and the required confirmation method.
 D. The patient's relatives, after being shown once how to pass the tube.
 **Answer: C.**
 **Why correct:** NICE CG32 requires relevant training for insertion. Insertion competence does not automatically establish competence to interpret a radiograph; use the authorised confirmation pathway and document the result.
