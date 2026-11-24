@@ -121,7 +121,7 @@
       ],
       "options": [
         {
-          "text": "Stay, protect safety, assess airway, breathing, oxygenation, pain and new physiological or neurological changes; seek urgent review and arrange trained delirium screening when arousal permits.",
+          "text": "Stay, protect safety, assess airway, breathing, oxygenation, pain and new physiological or neurological changes; seek urgent review and arrange trained delirium screening when the patient's arousal permits.",
           "points": 2,
           "next": 2,
           "scope": "assessment",

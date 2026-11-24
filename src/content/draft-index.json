@@ -4964,7 +4964,7 @@
    "issues": [],
    "gaps": 7,
    "required_sources": 2,
-   "hash": "40a57344dd6147c0"
+   "hash": "e6f70eea6ae215a9"
   },
   {
    "key": "SC-06",
@@ -5009,7 +5009,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "9d8273df5b3a01ec"
+   "hash": "a303cb348e2a7159"
   },
   {
    "key": "SC-07",
@@ -5534,7 +5534,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "c4206770352eff79"
+   "hash": "2cae73e4a80fe95c"
   },
   {
    "key": "SC-18",

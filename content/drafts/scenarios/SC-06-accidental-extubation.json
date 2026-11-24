@@ -183,7 +183,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient; assess breathing, activate the emergency airway response and provide indicated oxygen and trained ventilation assistance under protocol without waiting for the airway team.",
+          "text": "Stay with the patient; assess breathing and activate the emergency airway response. Provide indicated oxygen and trained protocol ventilation assistance without waiting if ventilation is inadequate.",
           "points": 2,
           "next": 3,
           "scope": "monitoring",

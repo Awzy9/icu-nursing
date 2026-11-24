@@ -11799,6 +11799,23 @@
     "gaps": 7,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "e6f70eea6ae215a9",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-FDA-OXIMETER-BASICS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 7,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-06": [
@@ -11905,6 +11922,22 @@
    },
    {
     "hash": "9d8273df5b3a01ec",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-ISCCM-WEAN-2024",
+     "S-PUMA-2022",
+     "S-PUMA-EXTUBATION-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "a303cb348e2a7159",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13517,6 +13550,22 @@
    },
    {
     "hash": "c4206770352eff79",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HALOPERIDOL",
+     "N-NICE-CG103",
+     "S-AHRQ-TS",
+     "S-CIBS-CAMICU-TERMS",
+     "S-SCCM-PADIS",
+     "S-SCCM-PADIS-FOCUSED-2025"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "2cae73e4a80fe95c",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

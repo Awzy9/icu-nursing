@@ -124,7 +124,7 @@
       ],
       "options": [
         {
-          "text": "Stay at the bedside; assess airway, breathing effort, chest symmetry, colour, lung sounds and circulation. Activate urgent help now; check oximeter reliability in parallel.",
+          "text": "Stay at the bedside; assess airway, breathing effort, chest expansion symmetry, colour, lung sounds and circulation. Activate urgent help now; check oximeter reliability in parallel.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
