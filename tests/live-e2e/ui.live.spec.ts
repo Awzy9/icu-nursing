@@ -205,6 +205,10 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await expect(page.getByRole("heading", { level: 1, name: "Draft register" })).toBeVisible();
   const { total, casesPartial } = draftIndexCounts();
   await expect(page.getByText(`${total} of ${total} drafts`)).toBeVisible();
+  await page.goto("/en/admin/content/register?review=patient-safety&sort=review");
+  await expect(page.getByLabel("Suggested review lane")).toHaveValue("patient-safety");
+  await expect(page.locator("tbody tr").first()).toContainText("SC-11");
+  await expect(page.getByText("The review queue is a workflow suggestion", { exact: false })).toBeVisible();
   await page.goto("/en/admin/content/register?type=cases&evidence=partial");
   await expect(page.getByText(`${casesPartial} of ${total} drafts`)).toBeVisible();
   await page.goto("/en/admin/content/register?q=zzzz-nothing");
