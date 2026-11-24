@@ -79,8 +79,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "Soon after a feed starts the patient coughs, becomes breathless and the saturation falls.",
-      "prompt": "What do you do first?",
+      "info": "Shortly after enteral feeding begins, an adult develops a new cough and respiratory distress with falling oxygen saturation. Feeding is still running. Aspiration is possible, but the tube position and the cause of deterioration have not been established.",
+      "prompt": "What is the immediate priority while the cause of respiratory deterioration is being assessed?",
       "observations": [
         {
           "key": "spo2",
@@ -97,6 +97,16 @@
           "key": "feed",
           "label": "Feed",
           "value": "Running"
+        },
+        {
+          "key": "tube",
+          "label": "Tube position",
+          "value": "Not yet confirmed after symptoms"
+        },
+        {
+          "key": "effort",
+          "label": "Breathing effort",
+          "value": "Increased"
         }
       ],
       "options": [
@@ -106,7 +116,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Acute coughing, increased work of breathing and a falling saturation during feeding require prompt airway/respiratory assessment and urgent help while the feed is stopped. Misplaced-tube guidance supports withholding use until reassessment, but it does not by itself establish an aspiration diagnosis or prescribe rescue ventilation, suction or positioning for every patient. A witnessed aspiration can cause chemical lung injury, infection or airway obstruction. Assess and support breathing urgently; report visible airway contamination and involve appropriately trained staff for clearance according to the emergency airway pathway.",
-          "consequence": "The feed stops and urgent respiratory help is requested while the patient is assessed and supported under local protocol.",
+          "consequence": "Stopping feeding and activating urgent respiratory assessment may limit further exposure and allow timely support.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016",
@@ -120,7 +130,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Continuing the feed after respiratory distress risks more harm.",
-          "consequence": "The patient's breathing worsens as feed continues.",
+          "consequence": "Continuing a reduced feed rate could worsen exposure or delay urgent assessment.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016"
@@ -132,7 +142,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Introducing fluid into a tube of uncertain position risks harm.",
-          "consequence": "More fluid reaches the airway.",
+          "consequence": "Flushing a suspect tube could introduce additional fluid into an unsafe location.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016"
@@ -142,8 +152,8 @@
     },
     {
       "position": 2,
-      "info": "The team is at the bedside and asks whether the tube can be used.",
-      "prompt": "What is the right answer?",
+      "info": "At the next shared checkpoint, feeding has stopped and the team is at the bedside. Saturation has improved from the earlier reading, but respiratory assessment continues and the tube position has not been confirmed. A scheduled medicine is due.",
+      "prompt": "What conditions must be met before any feed, water, medicine or flush is given through the suspect tube?",
       "observations": [
         {
           "key": "spo2",
@@ -160,6 +170,21 @@
           "key": "team",
           "label": "Team",
           "value": "At the bedside"
+        },
+        {
+          "key": "tube",
+          "label": "Tube position",
+          "value": "Unconfirmed after event"
+        },
+        {
+          "key": "medication",
+          "label": "Scheduled medicine",
+          "value": "Arrange authorized alternative if essential"
+        },
+        {
+          "key": "effort",
+          "label": "Breathing effort",
+          "value": "Reassessment required"
         }
       ],
       "options": [
@@ -169,7 +194,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "Prior checks or unchanged external markers do not guarantee current safe tube position. Approved tests and documented interpretation are required; resolution of respiratory symptoms alone is not permission to restart the feed. Do not use a trial flush or the appearance of aspirate alone to resolve uncertainty. If aspiration or pH assessment is inconclusive, seek the approved alternative confirmation pathway. The team must also reassess aspiration risk and ongoing respiratory status before feeding resumes.",
-          "consequence": "The tube position is checked properly and the plan is agreed.",
+          "consequence": "Approved position confirmation and reassessment may identify an unsafe tube or ongoing aspiration risk before use resumes.",
           "support": "partial",
           "sources": [
             "S-NICE-CG32",
@@ -183,7 +208,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Position is confirmed before each use according to the policy, not carried over from an earlier check.",
-          "consequence": "The feed restarts through a tube that may be misplaced.",
+          "consequence": "Relying on yesterday's position check could miss subsequent displacement.",
           "support": "partial",
           "sources": [
             "S-NICE-CG32"
@@ -195,7 +220,7 @@
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "NHS England's enduring standards reject auscultation as a position-confirmation method; an unchanged external mark or aspirate appearance alone is also insufficient.",
-          "consequence": "A misplaced tube is wrongly accepted.",
+          "consequence": "Auscultation alone could falsely reassure staff about unsafe tube position.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016"
@@ -205,8 +230,8 @@
     },
     {
       "position": 3,
-      "info": "The patient is stable and the charge nurse asks for a report.",
-      "prompt": "What do you contribute?",
+      "info": "At the final shared checkpoint, respiratory observations have improved and the tube remains out of use. The safety review is under way. The event timeline, verification method and response to treatment still need to be recorded; aspiration and tube misplacement are not yet established diagnoses.",
+      "prompt": "Which report provides the information needed for clinical follow-up and safety learning?",
       "observations": [
         {
           "key": "spo2",
@@ -223,6 +248,16 @@
           "key": "review",
           "label": "Review",
           "value": "Under way"
+        },
+        {
+          "key": "effort",
+          "label": "Breathing effort",
+          "value": "Improved; continue team-directed assessment"
+        },
+        {
+          "key": "cause",
+          "label": "Cause of event",
+          "value": "Not yet established"
         }
       ],
       "options": [
@@ -232,7 +267,7 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Precise documentation enables the clinical team to assess the event and determine whether it meets the local incident-reporting criteria. A possible aspiration is not automatically proof the tube was misplaced. Aspiration pneumonitis is not automatically bacterial pneumonia. Antibiotic need depends on clinician assessment for infection and the overall clinical picture; do not assume prophylactic antibiotics are required after every aspiration event.",
-          "consequence": "The review includes how the position was checked.",
+          "consequence": "A factual timeline and documentation of checks and response may help the team distinguish possible causes and identify prevention measures.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016",
@@ -246,7 +281,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "An incomplete record loses the timing and the checks.",
-          "consequence": "The review cannot reconstruct what happened.",
+          "consequence": "A cough-only entry could omit the timing, tube checks and respiratory changes.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS"
@@ -258,7 +293,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Events are reported so that they can be learned from.",
-          "consequence": "The cause is never reviewed.",
+          "consequence": "Failure to report could leave a possible safety event and its contributing factors unexamined.",
           "support": "partial",
           "sources": [
             "S-NHSE-NGT-2016"

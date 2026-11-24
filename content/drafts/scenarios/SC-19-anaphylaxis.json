@@ -78,8 +78,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "Ten minutes after an antibiotic infusion starts, the patient reports itching and feels short of breath and the face looks swollen.",
-      "prompt": "What is the first action?",
+      "info": "Ten minutes after a prescribed antibiotic infusion begins, an adult develops itching, hives, facial swelling and new wheeze with breathlessness. The infusion is still running and blood pressure requires immediate reassessment.",
+      "prompt": "Which response addresses a suspected anaphylactic emergency without delaying first-line treatment?",
       "observations": [
         {
           "key": "breathing",
@@ -95,6 +95,16 @@
           "key": "infusion",
           "label": "Infusion",
           "value": "Running"
+        },
+        {
+          "key": "face",
+          "label": "Facial swelling",
+          "value": "New"
+        },
+        {
+          "key": "pressure",
+          "label": "Blood pressure",
+          "value": "Urgent assessment required"
         }
       ],
       "options": [
@@ -104,7 +114,7 @@
           "next": 2,
           "scope": "escalation",
           "feedback": "Suspected anaphylaxis with airway, breathing or circulatory involvement is time-critical; prompt IM adrenaline and clinical resuscitation are prioritized in RCUK healthcare-provider guidance. The drug and administration are governed by a trained clinician and institution's authorised emergency pathway; never treat an antihistamine as the first-line substitute. Support early clinician-directed crystalloid resuscitation when circulation is compromised and reassess the response. Do not delay adrenaline to establish access.",
-          "consequence": "Emergency assistance is activated and protocol-authorised first-line treatment is promptly arranged while the suspected trigger is stopped.",
+          "consequence": "Stopping the suspected trigger and activating authorized emergency treatment may limit further exposure and shorten the delay to life-saving support.",
           "support": "partial",
           "sources": [
             "N-RCUK-ANAPH-2021",
@@ -119,7 +129,7 @@
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Continuing a drug during a suspected serious reaction is unsafe.",
-          "consequence": "The swelling and breathing difficulty worsen.",
+          "consequence": "Slowing the infusion could prolong exposure while respiratory or circulatory compromise progresses.",
           "support": "partial",
           "sources": [
             "L-PIPTAZO"
@@ -131,7 +141,7 @@
           "next": 2,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Medicines need an order, and the infusion should be stopped first.",
-          "consequence": "The reaction progresses while time is lost.",
+          "consequence": "Using an antihistamine instead of emergency treatment could delay effective management of life-threatening features.",
           "support": "partial",
           "sources": [
             "L-PIPTAZO"
@@ -141,8 +151,8 @@
     },
     {
       "position": 2,
-      "info": "The emergency anaphylaxis pathway has been activated and trained staff are preparing or administering the authorised first-line IM adrenaline. The team asks you to confirm the labelled injection-site principle.",
-      "prompt": "Where does the label say it should be injected?",
+      "info": "At the next shared teaching checkpoint, the emergency pathway is active and trained staff are preparing or administering authorized first-line IM adrenaline. Breathing is worsening and pressure is falling. This injection-site knowledge check must not interrupt urgent treatment.",
+      "prompt": "Which injection site is specified by the label for this IM anaphylaxis treatment?",
       "observations": [
         {
           "key": "breathing",
@@ -158,6 +168,16 @@
           "key": "order",
           "label": "Order",
           "value": "Intramuscular epinephrine"
+        },
+        {
+          "key": "trigger",
+          "label": "Suspected antibiotic",
+          "value": "Stopped under emergency pathway"
+        },
+        {
+          "key": "response",
+          "label": "Response to treatment",
+          "value": "Rapid reassessment and repeat treatment pathway if indicated"
         }
       ],
       "options": [
@@ -167,7 +187,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "For the labelled IM anaphylaxis use, the anterolateral thigh is the specified site. This is a knowledge check for the team, **not a reason to delay a time-critical prescribed or protocol-authorised first dose**. Persistent airway, breathing or circulatory problems after first-line IM adrenaline require rapid reassessment and timely further IM treatment under the emergency protocol. RCUK advises repeating IM adrenaline after five minutes when those problems persist. Seek expert help for refractory anaphylaxis; intravenous adrenaline for a patient with spontaneous circulation is a specialist intervention, not a routine substitute for IM therapy. Persistent respiratory or circulatory compromise despite two appropriate IM administrations requires immediate specialist refractory-anaphylaxis escalation; continue authorized emergency care.",
-          "consequence": "The injection is given at the correct site and the team continues treatment.",
+          "consequence": "Using the recommended site may support appropriate delivery while the emergency team reassesses and treats persistent compromise.",
           "support": "sourced",
           "sources": [
             "S-ADRENALIN-IM-2025",
@@ -181,7 +201,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "The label says injection into smaller muscles such as the deltoid is not recommended.",
-          "consequence": "The injection is given but at a less suitable site.",
+          "consequence": "A less suitable site could compromise reliable medication delivery.",
           "support": "sourced",
           "sources": [
             "S-ADRENALIN-IM-2025"
@@ -193,7 +213,7 @@
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "The label says not to inject into the buttocks.",
-          "consequence": "The injection is given at a site the label advises against.",
+          "consequence": "A site excluded by the label could introduce avoidable administration risk.",
           "support": "sourced",
           "sources": [
             "S-ADRENALIN-IM-2025"
@@ -203,8 +223,8 @@
     },
     {
       "position": 3,
-      "info": "The patient is improving and the team is deciding what happens next.",
-      "prompt": "What do you do now?",
+      "info": "At the final shared checkpoint, breathing and pressure are improving after team-directed emergency treatment. The team is deciding the observation plan. The suspected antibiotic exposure must be documented and recurrence remains possible.",
+      "prompt": "What follow-up protects the patient after initial improvement and reduces future inadvertent exposure?",
       "observations": [
         {
           "key": "breathing",
@@ -220,6 +240,16 @@
           "key": "team",
           "label": "Team",
           "value": "Reviewing"
+        },
+        {
+          "key": "trigger",
+          "label": "Suspected antibiotic",
+          "value": "Do not restart independently"
+        },
+        {
+          "key": "observation",
+          "label": "Observation plan",
+          "value": "Individualized by emergency team"
         }
       ],
       "options": [
@@ -229,7 +259,7 @@
           "next": null,
           "scope": "monitoring",
           "feedback": "Initial improvement does not eliminate the risk of recurrence or continued deterioration. The emergency team determines observation duration and discharge planning; documenting and flagging the suspect antibiotic helps prevent future inadvertent exposure. If airway, breathing or circulation problems recur, reactivate emergency help and the authorised anaphylaxis pathway promptly. Antihistamines do not treat those life-threatening features, and corticosteroids are not routine emergency first-line treatment. NICE NG258 (May 2026) replaces CG134 and uses response and recurrence-risk factors to determine observation after complete resolution, rather than a single universal time. ICU monitoring and transfer decisions remain individualized. Arrange specialist allergy referral and document onset, suspected exposure, treatments and response.",
-          "consequence": "The reaction is recorded as an allergy, the team plans the next steps and the referral is made.",
+          "consequence": "Continued observation and clear suspected-trigger documentation may support early recognition of recurrence and appropriate allergy follow-up.",
           "support": "partial",
           "sources": [
             "N-RCUK-ANAPH-2021",
@@ -244,7 +274,7 @@
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Symptoms can return and monitoring must continue as the team directs.",
-          "consequence": "The patient deteriorates again on the ward without monitoring.",
+          "consequence": "Unmonitored transfer could delay recognition of recurrent airway or circulatory compromise.",
           "support": "partial",
           "sources": [
             "L-PIPTAZO"
@@ -256,7 +286,7 @@
           "next": null,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Do not re-expose the patient to the suspected anaphylaxis trigger because symptoms have settled. Flag the suspected allergy and seek a specialist-led medication plan; this exercise does not teach re-challenge.",
-          "consequence": "The reaction recurs.",
+          "consequence": "Re-exposure to the suspected trigger could cause another serious reaction.",
           "support": "partial",
           "sources": [
             "L-PIPTAZO"
