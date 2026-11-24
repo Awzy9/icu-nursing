@@ -71,6 +71,11 @@
       "id": "S-AHA-FA-SEIZURE-2024",
       "read": "partial",
       "use": "2024 AHA/Red Cross first-aid section 6.6, selected recommendation and rationale text. Community setting; ICU positioning competency remains outstanding."
+    },
+    {
+      "id": "S-NSW-ECAT-SEIZURES",
+      "read": "partial",
+      "use": "NSW Agency for Clinical Innovation adult ECAT seizure protocol, position, airway and breathing assessment and documentation sections; Australian emergency-department nursing context, not an ICU protocol."
     }
   ],
   "required_sources": [
@@ -129,7 +134,7 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure. General seizure first-aid precautions supplement, not replace, the ICU airway and emergency protocol. Never force positioning during active convulsions. During convulsions or impaired alertness, avoid oral medicines, food and drink. The first-aid guidance supports injury prevention and aspiration precautions; in ICU, coordinate positioning with the airway team to protect invasive devices and ventilation.",
+          "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure. General seizure first-aid precautions supplement, not replace, the ICU airway and emergency protocol. Never force positioning during active convulsions. During convulsions or impaired alertness, avoid oral medicines, food and drink. The first-aid guidance supports injury prevention and aspiration precautions; in ICU, coordinate positioning with the airway team to protect invasive devices and ventilation. Document the observed seizure features and duration. If convulsions cease, reassess airway patency and breathing promptly; coordinate an airway-safe recovery position with the team where appropriate, considering trauma, invasive devices and ventilation needs. Do not use positioning in place of indicated resuscitation.",
           "consequence": "Rapid emergency activation, timing and parallel glucose assessment may reduce treatment delay and identify a reversible contributor.",
           "support": "partial",
           "sources": [
@@ -137,7 +142,8 @@
             "S-AHRQ-TS",
             "S-JBDS-HYPO-2023",
             "S-CDC-SEIZURE-2024",
-            "S-AHA-FA-SEIZURE-2024"
+            "S-AHA-FA-SEIZURE-2024",
+            "S-NSW-ECAT-SEIZURES"
           ]
         },
         {
