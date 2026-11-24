@@ -95,14 +95,14 @@ At 07:30 the respiratory therapist screens a patient and finds the patient suita
 A 64-year-old man has been ventilated for four days with pneumonia. He is stable and passes the morning screen. During the SBT his respiratory rate climbs and his SpO₂ falls to 88 %. The nurse stays with him, the respiratory therapist returns him to ventilator support, the nurse reports to the doctor, and the failed SBT with its time and findings is recorded.
 
 ## 17. MCQs
-**Q1 (understanding).** Which statement correctly distinguishes liberation from extubation, as the AARC guideline describes them?
+**Q1 (understanding).** During a multidisciplinary round, an intubated patient completes an SBT successfully but has a weak cough and substantial secretions. Which statement best explains why the team still needs to assess extubation readiness?
 A. They are the same thing, so a patient who passes a spontaneous breathing trial is automatically extubated on the same day without further review.
 B. Liberation is discontinuing invasive ventilation, while extubation is removing the tube; a patient may pass an SBT and still not be extubated.
 C. Extubation is done before liberation, and a tracheostomy is not used as a route to liberation from the ventilator.
 D. Liberation refers to weaning by gradually reducing the pressure support level over several days of ventilation.
 **Answer: B.**
 **Why correct:** Passing an SBT demonstrates tolerance of the trial, not all requirements for extubation. The team must additionally assess airway protection, cough, secretion burden and other risks. Liberation from invasive ventilatory support can also occur with a tracheostomy still in place.
-**Why not A:** Passing an SBT does not necessarily lead to extubation.
+**Why not A:** Tolerance of spontaneous breathing does not establish that the patient can protect the airway or clear secretions after tube removal.
 **Why not C:** Patients may be liberated via tracheostomy.
 **Why not D:** Gradual reduction of support is weaning, a different concept.
 

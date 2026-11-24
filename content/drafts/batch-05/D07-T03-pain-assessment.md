@@ -128,13 +128,13 @@ D. Repeat the question until the patient gives a lower number, so that the chart
 **Why not B:** The 7 may reflect movement-related pain needing action.
 **Why not D:** Leading the patient to a lower number distorts the assessment.
 
-**Q4 (prioritization).** A patient in obvious pain is also agitated. Which order of action best follows the SCCM statements?
+**Q4 (prioritization).** After repositioning, a ventilated patient who can communicate reports pain and appears agitated. Immediate airway, ventilation and circulation threats have been assessed. Which sequence best follows the SCCM pain-first approach?
 A. Add a sedative first to settle the patient, and assess for pain once the patient is calmer.
 B. Reassess pain with a validated tool, treat it as ordered or per protocol, then reassess the need for sedation.
 C. Start physical restraints to keep the patient safe, and then assess whether pain is present once the patient is secure.
 D. Wait for the next medical round to decide whether the cause of the agitation is pain or delirium.
 **Answer: B.**
-**Why correct:** Pain assessment and treatment come before a sedative is considered.
+**Why correct:** Establish the patient's pain and comfort goals using reliable self-report if possible, or an appropriate validated tool when self-report is not feasible. Treat pain within the authorized plan and reassess response, arousal and ventilation before deciding whether additional sedation is indicated. Persistent agitation warrants assessment for other causes rather than automatic sedative escalation.
 **Why not A:** Sedating first can mask pain.
 **Why not C:** Restraints are a last resort and not a treatment.
 **Why not D:** Delay leaves pain untreated.

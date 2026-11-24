@@ -134,13 +134,13 @@ D. It protects the heels so well that heel checks can be dropped from the care p
 **Why not C:** Immobile and sedated patients benefit most from these surfaces.
 **Why not D:** Heels still need offloading and regular checks, especially with poor perfusion.
 
-**Q5 (assessment).** A nurse is assessing a patient with darker skin for pressure injury. Which approach is most appropriate?
+**Q5 (assessment).** During a skin check of an immobile patient with darker skin, the nurse notices a change in firmness near a device but finds colour changes difficult to distinguish. Which assessment approach is most appropriate?
 A. Rely on colour change alone because it is the earliest sign of injury and is equally easy to see on every skin tone and in any light.
 B. Use only a blanching test, because it works equally well on every skin tone.
 C. Delay assessment until the skin is broken, because earlier changes are not reliable.
 D. Combine colour, temperature, firmness, swelling and pain over bony areas and devices, using techniques suited to the skin tone.
 **Answer: D.**
-**Why correct:** The guide recommends a range of techniques appropriate to skin characteristics and tone.
+**Why correct:** Compare the area with the surrounding skin and assess changes in temperature, firmness, swelling, colour and discomfort where assessable. The international guideline supports assessment methods appropriate to the patient's skin characteristics. Escalate suspected injury and relieve device-related pressure safely without compromising essential device function; lack of obvious redness does not establish intact tissue.
 **Why not A:** Colour alone can miss early injury; the guide recommends a range of techniques suited to the person's skin characteristics and tone.
 **Why not B:** A single method may miss early injury.
 **Why not C:** Prevention depends on finding early changes before the skin breaks.

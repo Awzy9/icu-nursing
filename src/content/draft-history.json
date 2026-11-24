@@ -246,6 +246,19 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "479bb21cb5766b0c",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-INTL-PI-2026",
+     "S-INTL-PI-HEELS-2025",
+     "S-INTL-PI-REPOS-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D09-T01": [
@@ -885,6 +898,18 @@
    },
    {
     "hash": "f15464c67548f5fc",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-CG103",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "bffb15fae3ee55ef",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -1682,6 +1707,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "91321c7c3f0e40a2",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D09-T03": [
@@ -2163,6 +2201,21 @@
    },
    {
     "hash": "4674875efd2e010e",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-SBT",
+     "S-ATS-CHEST-2017",
+     "S-ATS-NIRS-2026",
+     "S-PERIEXT-2026",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "f0950834ca69b699",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -3379,6 +3432,19 @@
    },
    {
     "hash": "568b60bb30c24ed3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014",
+     "S-SCCM-PADIS",
+     "S-TEAM-RCT-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "9276425f9532ccc1",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

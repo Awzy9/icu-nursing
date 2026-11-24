@@ -37,15 +37,15 @@ D. That the sedation has been stopped for at least a full day beforehand.
 **Why not D:** This is not a criterion the consensus describes.
 **Trace:** N-HODGSON-2014 — Check airway position/security and oxygen reserve before each episode.
 
-**Q3 (judgment).** A patient's oxygen saturation, FiO2 and PEEP are all at the edge of the unit's safety limits at once, and the team wants to sit him out. What does the consensus advise?
+**Q3 (judgment).** During the pre-mobilization assessment of a ventilated patient, oxygen saturation, FiO2 and PEEP are simultaneously near the unit's safety limits. Each value alone appears acceptable. The team is considering sitting the patient out of bed. What does the historical consensus advise?
 A. Go ahead, because each value is still within its own limit when looked at one by one.
 B. Consult an experienced medical team before mobilizing.
 C. Go ahead and mobilize more slowly than usual so the patient has time to adapt to the change.
 D. Cancel all mobilization for the rest of the admission, since the limits were reached once.
 **Answer: B.**
 **Why correct:** The consensus says that if the patient is at the safety limits for several categories (for example low saturation, high FiO2 and high PEEP), an experienced medical team should be consulted before mobilization.
-**Why not A:** The consensus asks for a senior discussion when several limits are reached together.
-**Why not C:** Slowing down is not the advice given.
+**Why not A:** Several borderline respiratory observations together may indicate limited reserve even when each individual value appears acceptable; the consensus calls for experienced clinical assessment before mobilization.
+**Why not C:** Reducing activity speed does not resolve uncertainty about respiratory reserve; agree on readiness and the safest activity level with the experienced team.
 **Why not D:** The advice is to consult, not to cancel permanently.
 **Trace:** N-HODGSON-2014 — At limits in several categories: consult experienced medical team.
 

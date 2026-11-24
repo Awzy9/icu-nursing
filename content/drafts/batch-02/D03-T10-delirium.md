@@ -142,7 +142,7 @@ D. Assess for acute deterioration, screen when assessable, investigate causes an
 **Why not B:** Waiting delays recognition of a possibly treatable cause.
 **Why not C:** Family presence is a recommended prevention measure.
 
-**Q2 (application).** Which tools does NICE CG103 recommend for the *assessment of possible delirium* in a critical care unit, before an appropriately qualified clinician confirms the diagnosis?
+**Q2 (application).** An intubated ICU patient has fluctuating attention and can now respond to simple requests following a reduction in sedation. After assessment of immediate clinical threats, which tools does NICE CG103 recommend for assessing possible delirium in critical care before diagnostic confirmation?
 A. The 4AT tool alone, because it is quick, validated and used in all other hospital areas.
 B. CAM-ICU or the Intensive Care Delirium Screening Checklist.
 C. A clinical impression, because validated tools are not helpful in ventilated patients.
@@ -151,7 +151,7 @@ D. A mini-mental state score done once at admission.
 **Why correct:** NICE CG103 recommends CAM-ICU or ICDSC in critical care and postoperative recovery rather than 4AT; a qualified clinician confirms the diagnosis. PADIS notes that arousal can influence assessment. Record an unassessable screen as such with the reason, not as a negative result, and reassess when appropriate.
 **Why not A:** The 4AT is advised outside critical care or the recovery room.
 **Why not C:** Validated ICU tools exist and are recommended.
-**Why not D:** A single cognitive score at admission does not detect fluctuating change.
+**Why not D:** A single admission cognitive score cannot track fluctuating attention or distinguish a newly unassessable patient from a negative delirium screen; repeat assessment when clinically appropriate.
 
 **Q3 (prioritization).** A patient with a positive delirium screen is pulling at a central line and an arterial line. Which action should come first?
 A. Make the lines safe, use calm de-escalation, call for help and report so that causes are reviewed.
