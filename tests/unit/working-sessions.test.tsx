@@ -93,6 +93,24 @@ describe("scenario save and resume (guest)",()=>{
  });
 });
 
+describe("scenario personalized debrief",()=>{
+ it("shows selected and preferred responses for missed decisions",()=>{
+  const scenario={setting:"Fictional",objectives:[],takeaways:["Reflect"],steps:[
+   {position:1,info:"First stage",prompt:"Choose a response",options:[
+    {text:"Preferred action",points:2,next:null,feedback:"Preferred guidance"},
+    {text:"Other action",points:0,next:null,feedback:"Review guidance"}
+   ]}
+  ]};
+  render(<ScenarioPlayer scenario={scenario} locale="en" moduleKey="SC-EXAMPLE" title="Example scenario"/>);
+  fireEvent.click(screen.getByRole("radio",{name:"Other action"}));
+  fireEvent.click(screen.getByRole("button",{name:"Confirm decision"}));
+  fireEvent.click(screen.getByRole("button",{name:"Finish and reflect"}));
+  expect(screen.getByText("Review priorities")).toBeVisible();
+  expect(screen.getByText("Other action",{exact:false})).toBeVisible();
+  expect(screen.getByText("Preferred action",{exact:false})).toBeVisible();
+  expect(screen.getByText("Educational feedback only; not a clinical competency assessment.")).toBeVisible();
+ });
+});
 describe("ContinueLearning",()=>{
  it("lists an unfinished session with a resume link, and lets the learner discard it",()=>{
   localStorage.setItem("icu-nursing-sessions-v1",JSON.stringify({EXAMPLE:{key:"EXAMPLE",title:"Example module",href:"/working/EXAMPLE",type:"questions",kind:"quiz",version:"Q1,Q2,Q3",position:1,score:1,finished:false,at:Date.now()}}));

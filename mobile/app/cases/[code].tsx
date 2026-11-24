@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { scenarioVersion, canResumeScenario, sequentialHistory } from "@icu/schemas/scenario-session";
+import { scenarioDebrief, type ScenarioDecision } from "@icu/schemas/scenario-debrief";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 import { scoreTenths } from "../../src/core/engines";
@@ -37,6 +38,8 @@ export default function CaseScreen() {
   const [done, setDone] = useState(false);
   const [resumed, setResumed] = useState(false);
   const [visited, setVisited] = useState<number[]>([]);
+  const [decisions, setDecisions] = useState<ScenarioDecision[]>([]);
+  const [resumedWithoutDecisions, setResumedWithoutDecisions] = useState(false);
   const [historyIncomplete, setHistoryIncomplete] = useState(false);
 
   const existingSession = code ? getSession(progress, code) : undefined;
@@ -72,7 +75,7 @@ export default function CaseScreen() {
                 <H2>{t("cases.resume")}</H2>
                 <P muted>{t("cases.resumeBody")}</P>
                 <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
-                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); const prior = sequentialHistory(scenario, existingSession.position) ?? existingSession.visited; setVisited(prior ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !prior?.length); }} />
+                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); setResumedWithoutDecisions(existingSession.position !== scenario.steps[0]!.position); const prior = sequentialHistory(scenario, existingSession.position) ?? existingSession.visited; setVisited(prior ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !prior?.length); }} />
                 <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
               </Card>
             );
@@ -87,18 +90,27 @@ export default function CaseScreen() {
           }
 
           if (done) {
+            const debrief = scenarioDebrief(scenario, decisions);
             return (
               <Card>
                 <H2>{t("cases.summary")}</H2>
+                <P>{locale === "ar" ? "مجموع النقاط" : "Total learning points"}: {points}</P>
+                <P>{locale === "ar" ? "نقاط القرارات المسجلة" : "Recorded decisions"}: {debrief.observedPoints} / {debrief.observedMaximum}</P>
+                {resumedWithoutDecisions ? <P small muted>{locale === "ar" ? "لا تتوفر تفاصيل القرارات السابقة للاستئناف. تعرض المراجعة القرارات المسجلة هنا فقط." : "Earlier answer details are unavailable after resuming. This review covers only decisions recorded here."}</P> : null}
+                <P small muted>{locale === "ar" ? "للتعلم فقط، وليس تقييماً للكفاءة السريرية." : "Educational feedback only; not a clinical competency assessment."}</P>
+                {debrief.priorities.length ? <H2>{locale === "ar" ? "أولويات المراجعة" : "Review priorities"}</H2> : <P>{locale === "ar" ? "لا توجد قرارات مسجلة تحتاج إلى مراجعة." : "No recorded decisions require review."}</P>}
+                {debrief.priorities.map(item => <Card key={item.position}><P>Step {item.position}: {item.points} / {item.maximum} points</P><P>{item.prompt}</P><P>Your choice: {item.selected}</P><P>{item.feedback}</P><P>Preferred response: {item.preferred}</P><P>{item.preferredFeedback}</P></Card>)}
+                <H2>{locale === "ar" ? "ما تعلمته" : "Your takeaways"}</H2>
                 {scenario.takeaways.map((item, i) => <P key={i}>{`• ${item}`}</P>)}
-                <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); setHistoryIncomplete(false); }} />
+                <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); setDecisions([]); setResumedWithoutDecisions(false); setHistoryIncomplete(false); }} />
               </Card>
             );
           }
 
           const decide = () => { if (choice !== null) setRevealed(true); };
           const advance = () => {
-            if (!option) return;
+            if (!option || choice === null) return;
+            setDecisions(previous => [...previous, { position: pos, choice }]);
             const newPoints = points + option.points;
             setPoints(newPoints);
             if (option.next == null) {
