@@ -82,6 +82,15 @@
         "S-FDA-PUMP"
       ],
       "section": "safety"
+    },
+    {
+      "text": "Before connecting or replacing tubing, follow its physical pathway from the patient back to its source and verify the intended access, compatible connector and medication or fluid. Repeat connection checks before use and during handover; a correctly programmed pump cannot detect every wrong-route connection.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-MISCONNECTIONS",
+        "S-FDA-PUMP"
+      ],
+      "section": "safety"
     }
   ],
   "monitoring_concepts": [
@@ -134,6 +143,11 @@
       "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
       "read": "partial",
       "use": "FDA reported failure examples: alarm detection failures, damaged components and battery depletion during care or transport; examples are not event-frequency estimates."
+    },
+    {
+      "id": "S-FDA-MISCONNECTIONS",
+      "read": "partial",
+      "use": "FDA clinician guidance on checking the intended tubing pathway and connectors before connection or replacement; selected HTML recommendations checked."
     }
   ],
   "required_sources": [
