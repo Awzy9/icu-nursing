@@ -789,7 +789,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "a026150b645083ae"
+   "hash": "bc76d5af66431fc3"
   },
   {
    "key": "D02-T12",
@@ -849,7 +849,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "41d3de385a742819"
+   "hash": "5a772ce792473386"
   },
   {
    "key": "D05-T16",
@@ -874,7 +874,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "fe5dad8fd9685287"
+   "hash": "13c227341c86b31e"
   },
   {
    "key": "D08-T03",
@@ -896,6 +896,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-LIFEBLOOD-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-NG24",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -909,7 +914,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 3,
-   "hash": "1df67261167b816e"
+   "hash": "4dcd1e1abbcfb159"
   },
   {
    "key": "D01-T17",

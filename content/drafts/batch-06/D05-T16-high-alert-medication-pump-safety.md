@@ -109,7 +109,7 @@ B. Check only the label on the bag, because the programming was verified at the 
 C. Leave the settings as they are and recheck them at the next change of shift, to avoid interrupting the infusion that is running.
 D. Ask the patient whether the new bag looks like the earlier one, and continue if the patient agrees.
 **Answer: A.**
-**Why correct:** The FDA highlights a new bag, pump-setting change, new primed tubing, and change of shift as points to verify drug, prescribed dosage, rate, and volume. The device instructions and local pump/drug-library policy govern how those checks are performed.
+**Why correct:** FDA identifies new containers, new tubing, setting changes and handover as important verification points. Compare the medication, concentration, patient, route, dose units, rate and intended volume with the current order; trace tubing to its actual connection and confirm the correct channel and drug-library entry when applicable. Apply independent checks as required by local policy.
 **Why not B:** A bag label does not confirm what is programmed on the pump.
 **Why not C:** Waiting until the next shift leaves the new infusion unchecked.
 **Why not D:** Patient recognition is not a verification method and is not valid for sedated patients.
@@ -120,7 +120,7 @@ B. Both nurses stand together at the pump and read the settings aloud in turn.
 C. The second nurse signs the chart after the first nurse tells her that the settings are right.
 D. Each nurse checks the settings alone against the order, and then they compare results.
 **Answer: D.**
-**Why correct:** The FDA describes independently checking (alone and apart, then comparing against the order) for high-risk infusions *when required by facility policy*. ISMP warns manual double-checks are not always the optimal safeguard for every high-alert medication. This question tests the **method**, not a universal requirement to double-check every infusion.
+**Why correct:** The FDA describes separate checks followed by comparison with the order, when required by facility policy. Verify independently before hearing the other person's result. Resolve disagreements before starting or changing the infusion. ISMP does not treat manual double checks as the best safeguard for every high-alert medicine.
 **Why not A:** The second nurse would be influenced by what the first one reads out.
 **Why not B:** Checking together is not independent.
 **Why not C:** Signing on someone's word is not a check at all.
@@ -131,7 +131,7 @@ B. Stay with the patient, get a working pump, and remove the pump from use and t
 C. Continue the infusion and report the alarm at the end of the shift so that the pump can be checked.
 D. Switch the pump off and on again until the alarm no longer appears, then carry on with the infusion.
 **Answer: B.**
-**Why correct:** The FDA page says to remove a pump with an unexplained alarm from use, tag it with the problem and contact information, and to stay with a high-risk patient while a working pump is obtained.
+**Why correct:** An unexplained alarm warrants withdrawal of the suspect pump and reporting. Assess the patient and obtain a verified replacement without avoidable interruption to critical therapy under the backup plan; summon urgent help if instability develops. Identify and isolate the faulty device with the details required by local biomedical and incident-reporting policy.
 **Why not A:** An unexplained alarm is a reason to remove the pump, whatever it does next.
 **Why not C:** Delaying the report leaves a possibly faulty pump on a high-risk infusion.
 **Why not D:** Repeated restarts hide the fault and may repeat the error.

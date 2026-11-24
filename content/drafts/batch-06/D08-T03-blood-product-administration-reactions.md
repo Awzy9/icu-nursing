@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AABB, American Red Cross, America's Blood Centers and Armed Services Blood Program: Circular of Information for the Use of Human Blood and Blood Components, June 2024 – United States; a labelling extension for blood suppliers and transfusion services, recognised by the FDA in Sept 2024", "FDA guidance for industry: An Acceptable Circular of Information for the Use of Human Blood and Blood Components, Sept 2024 (page only; regulatory recognition)", "Open RN Nursing Advanced Skills 2023, section 3.4 Checklist: Administer Blood Products (US entry-level textbook, CC BY 4.0) – added in Batch 7 for bedside steps the Circular does not give", "Phase 3 addition: NICE Blood transfusion guideline NG24 (published 2015-11-18; last updated 2026-02-26), recommendations 1.13–1.14 – UK guideline"]
-sources: [S-AABB-COI-2024, S-FDA-COI-2024, S-OPENRN-ADV-CH3, S-NICE-NG24]
+sources: [S-AABB-COI-2024, S-FDA-COI-2024, S-OPENRN-ADV-CH3, S-NICE-NG24, S-LIFEBLOOD-ATR]
 sources_not_read: [S-AABB-2023, S-OPENRN-HA, S-BSH-ATR]
 independently_written_note: "Original wording and structure. The Circular's general instructions for use, its section on side effects and hazards of all components, and its acute and delayed haemolytic reaction text were read in a watermarked 'do not copy' review PDF hosted by AABB; nothing is reproduced, and AABB permission would be needed to reuse its text. Bedside steps the Circular does not give (identity check method, start and observation timing, post-transfusion monitoring) were added in Batch 7 from the Open RN administration checklist, a US entry-level textbook read in full (section 3.4); its rate figures are deliberately omitted. Component-specific monographs (red cells, platelets, plasma, cryoprecipitate), special processing, AABB Standards, the AABB Technical Manual, national transfusion guidelines (for example BSH or NICE) and the AABB 2023 red-cell threshold guideline were NOT read. The Circular addresses suppliers and transfusion services; bedside procedures are set by local transfusion policy; where the Open RN checklist gives a typical step it is attributed to that textbook and is US-specific. No volumes, rates or doses are given."
 ---
@@ -129,12 +129,12 @@ D. Only 0.9% sodium chloride may run with blood in the same tubing, unless FDA a
 **Why not C:** Verbal approval is not the documentation or FDA approval the Circular requires.
 
 **Q3 (judgment).** A ventilated, sedated patient develops a rise in temperature, tachycardia and oozing at the line site during a red-cell transfusion. What should the nurse do first?
-A. Stop the transfusion, keep the unit and set, and call the doctor and transfusion service immediately.
+A. Stop transfusion, assess ABC and summon urgent help; retain the unit and notify the transfusion service.
 B. Slow the transfusion and recheck the temperature in 15 minutes, to see if it settles.
 C. Give an antipyretic and continue the transfusion, since fever is the most common reaction.
 D. Wait for the end of the unit, so that the full volume is given, and then report the reaction.
 **Answer: A.**
-**Why correct:** The Circular states the transfusion must be stopped immediately if a reaction occurs; haemolysis may present with fever, tachycardia and abnormal bleeding.
+**Why correct:** Fever, tachycardia and bleeding may signal a serious hemolytic or septic reaction. Stop transfusion immediately, assess airway, breathing and circulation and activate urgent help. Lifeblood advises maintaining IV access without flushing the suspect line, using another access if needed. Recheck identity and component details, preserve the bag and set for investigation, notify the clinical team and transfusion service, and follow their sampling and reporting instructions. Do not restart this unit.
 **Why not B:** Slowing leaves the patient exposed to a possibly life-threatening reaction.
 **Why not C:** Fever can signal haemolytic or septic reaction; antipyretics treat symptoms only and need an order.
 **Why not D:** Completing the unit delays recognition and treatment.
@@ -145,7 +145,7 @@ B. A patient with a temperature rise of 1 °C who feels well and has stable vita
 C. A patient with new severe breathlessness, hypotension and swelling of the lips.
 D. A patient whose unit has been running for 3 hours and is nearly finished.
 **Answer: C.**
-**Why correct:** These are features of anaphylaxis (the Circular lists hypotension, severe dyspnoea and laryngeal oedema), which needs immediate treatment.
+**Why correct:** Severe respiratory compromise, hypotension and lip swelling suggest possible anaphylaxis. Stop the transfusion, activate emergency assistance and use the authorized anaphylaxis pathway without delaying urgent treatment; maintain oxygenation and circulatory support. Other severe reactions may overlap, so obtain specialist transfusion assessment rather than diagnosing from symptoms alone.
 **Why not A:** An isolated mild urticarial reaction still requires assessment, monitoring and action according to local transfusion policy, but lacks the immediate airway/circulatory danger of option C. Do not assume all mild reactions require identical treatment or that restarting is always prohibited.
 **Why not B:** Even an apparently mild fever developing during transfusion warrants stopping the transfusion for prompt assessment and notification under the reaction protocol; FNHTR is not confirmed by fever alone. Only after clinical evaluation may authorized staff decide whether restarting is appropriate. Severe airway and circulatory compromise in option C remains the highest immediate priority.
 **Why not D:** The Circular allows up to 4 hours after the container is entered.
@@ -156,7 +156,7 @@ B. An older adult with heart or kidney disease who already has a positive fluid 
 C. A patient whose temperature fell during the transfusion because the unit was cold.
 D. A patient who is anaesthetised and has no signs of volume overload or respiratory symptoms.
 **Answer: B.**
-**Why correct:** The Circular lists underlying cardiopulmonary or renal disease, the very young and elderly and positive fluid balance as particular risks, and says small volumes can precipitate symptoms.
+**Why correct:** The Circular identifies underlying cardiopulmonary or renal disease, extremes of age and positive fluid balance as risk factors; even a small transfused volume may precipitate TACO in a vulnerable patient. Review baseline risk and monitor for new respiratory distress or overload; suspected TACO requires stopping the transfusion and urgent clinical evaluation, not an independent diagnosis based on risk alone.
 **Why not A:** This patient has none of the listed risk factors.
 **Why not C:** Cold units are a hypothermia risk, not a TACO risk.
 **Why not D:** Anaesthesia is not on the list of TACO risk factors.
@@ -167,7 +167,7 @@ B. Keeping the bag and administration set for return to the transfusion service.
 C. Deciding whether the transfusion can be restarted after a reaction.
 D. Sending a post-reaction blood sample from a site other than the transfusion access.
 **Answer: C.**
-**Why correct:** Whether a transfusion can be continued or restarted depends on reaction severity, clinical assessment, and applicable transfusion-service protocol. Severe or life-threatening reactions require emergency treatment and should not be restarted as though they were mild. The bedside nurse must not independently resume a stopped transfusion without the required authorization.
+**Why correct:** Whether a transfusion can be continued or restarted depends on reaction severity, clinical assessment, and applicable transfusion-service protocol. Severe or life-threatening reactions require emergency treatment and the implicated unit must not be restarted. The bedside nurse must not independently resume a stopped transfusion without the required authorization; mild reactions may have a different authorized pathway after serious causes have been excluded.
 **Why not A:** Stopping at once is a nursing action the Circular requires.
 **Why not B:** Returning the unit and set is part of the nursing response.
 **Why not D:** Collecting the post-reaction sample is part of the response the Circular describes.
@@ -179,6 +179,8 @@ D. Sending a post-reaction blood sample from a site other than the transfusion a
 - Ernstmeyer K, Christman E (eds). Nursing Advanced Skills. Open RN / WisTech Open, 2023. Section 3.4 Checklist: Administer Blood Products. https://wtcs.pressbooks.pub/nursingadvancedskills/chapter/3-4-checklist-administration-of-blood-products/ (CC BY 4.0; accessed 2026-11-14)
 - AABB, American Red Cross, America's Blood Centers, Armed Services Blood Program. Circular of Information for the Use of Human Blood and Blood Components. June 2024. Sections: Instructions for Use (items 1–14); Side Effects and Hazards for Whole Blood and All Blood Components (immediate and delayed immunologic; nonimmunologic); acute and delayed haemolytic reaction text. https://www.aabb.org/news-resources/resources/circular-of-information (accessed 2026-11-14). Copyright held by the issuing bodies; paraphrased only.
 - US Food and Drug Administration. An Acceptable Circular of Information for the Use of Human Blood and Blood Components. Guidance for industry, September 2024 (recognises the June 2024 Circular). https://www.fda.gov/regulatory-information/search-fda-guidance-documents/acceptable-circular-information-use-human-blood-and-blood-components (accessed 2026-11-14)
+
+- Australian Red Cross Lifeblood. Management of suspected transfusion reactions. https://www.lifeblood.com.au/health-professionals/clinical-practice/adverse-events/management-of-suspected-reactions (selected clinical guidance, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Identity checking, consent, order sets, bedside rates, observation frequency, line and filter choice, warmers, additional reaction management after the immediate stop/assessment response, and reporting routes follow the hospital transfusion policy and the transfusion service.

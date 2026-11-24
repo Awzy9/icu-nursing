@@ -108,9 +108,9 @@ A 66-year-old woman with a urinary source is on a vasoactive infusion after flui
 A. Wait until the culture results return before giving any antimicrobial, so that the choice of drug is exactly right for the organism.
 B. Give antimicrobials first and take blood cultures only if the patient does not improve afterwards on the chosen treatment.
 C. Take the cultures after the antimicrobials have run in, because the first dose is the priority and cultures can wait until later.
-D. Collect blood cultures as soon as possible and ideally before antimicrobials, while giving antimicrobials within an hour.
+D. Obtain cultures promptly, ideally before antimicrobials; give emergency antimicrobials without avoidable delay.
 **Answer: D.**
-**Why correct:** SSC 2026 recommends taking blood cultures as soon as possible and ideally before antimicrobials (strong, low certainty); in possible, probable or definite septic shock, antimicrobial therapy should be given immediately, ideally within 1 hour of recognition (strong, very low certainty). Cultures must not become a reason to delay emergency treatment.
+**Why correct:** SSC 2026 recommends taking blood cultures as soon as possible and ideally before antimicrobials (strong, low certainty); in possible, probable or definite septic shock, antimicrobial therapy should be given immediately, ideally within 1 hour of recognition (strong, very low certainty). Cultures must not become a reason to delay emergency treatment. Coordinate investigation and urgent source-control assessment in parallel.
 **Why not A:** Waiting for culture results would greatly delay treatment.
 **Why not B:** Cultures should be obtained, not skipped, and not only if the patient fails to improve.
 **Why not C:** Cultures are ideally taken before antimicrobials, without unnecessary delay.
@@ -121,7 +121,7 @@ B. Use dynamic measures (such as response to a passive leg raise or a bolus) in 
 C. Give a fixed volume to every patient with septic shock and stop reassessing afterwards, because the volume was decided at the outset.
 D. Continue fluid until the lactate has returned to normal, whatever the patient's response to each bolus.
 **Answer: B.**
-**Why correct:** SSC 2026 conditionally suggests dynamic fluid-responsiveness assessment rather than static measures or examination alone (low certainty). Examples are haemodynamic responses to passive leg raising or a fluid bolus assessed using stroke volume, its variation, pulse pressure or its variation—not a simple blood-pressure reading alone.
+**Why correct:** SSC 2026 conditionally favors dynamic assessment rather than static measures or examination alone (low certainty). Depending on the method and measurement conditions, assess the hemodynamic response to passive leg raising or an authorized fluid challenge using flow or suitable pressure-derived indices. Fluid responsiveness does not establish a need for fluid; assess congestion, perfusion and risk of harm.
 **Why not A:** Blood pressure alone does not show tissue perfusion or fluid responsiveness.
 **Why not C:** The page stresses frequent reassessment to avoid under- or over-resuscitation.
 **Why not D:** The remark advises against continuing fluid simply until lactate normalises.
@@ -132,9 +132,9 @@ B. A patient with a mild fever, normal vital signs, a normal lactate and no orga
 C. A patient whose vasopressor requirement is rising with mottled skin and a lactate that is not falling.
 D. A patient who is well three days after starting antimicrobials, eating and drinking, and about to move to the ward.
 **Answer: C.**
-**Why correct:** Rising support, poor perfusion and a lactate that is not falling suggest persistent shock.
+**Why correct:** Increasing vasoactive support, mottling and a persistent lactate abnormality suggest ongoing shock. Activate urgent review, assess perfusion and treatment delivery, and report trends. Lactate has non-hypoperfusion causes, so do not escalate fluids merely to normalize it.
 **Why not A:** These are signs of response.
-**Why not B:** Needs monitoring but is not in shock.
+**Why not B:** This patient still needs clinical monitoring, but the information given does not suggest the same immediate instability as option C. A normal lactate alone cannot exclude shock.
 **Why not D:** A recovering patient does not need urgent review.
 
 **Q4 (safety).** A patient with septic shock has a temperature of 38.8 °C and is comfortable. What does SSC 2026 say about antipyretic therapy?
@@ -154,7 +154,7 @@ B. Further large fluid boluses to treat the oedema, which indicates that the cir
 C. Stopping all monitoring now that the blood pressure is stable, to allow the patient to rest.
 D. Switching to an albumin-only fluid policy for all patients, whatever their condition.
 **Answer: A.**
-**Why correct:** SSC 2026 conditionally suggests considering active fluid removal only after the acute resuscitation phase (very low certainty); the team assesses cardiorespiratory function, vasopressor requirement, clinical course, oedema, weight and fluid balance. Oedema by itself does not mandate fluid removal.
+**Why correct:** SSC 2026 conditionally suggests considering active fluid removal after initial resuscitation (very low certainty). The team reviews cardiorespiratory function, vasoactive support, fluid balance and trajectory. Monitor for hypotension or poor perfusion during authorized removal; peripheral oedema does not prove adequate intravascular volume.
 **Why not B:** Oedema and weight gain suggest overload, not a dry circulation.
 **Why not C:** Monitoring continues after the pressure is stable because the patient's condition can change.
 **Why not D:** The page suggests crystalloids alone over supplemental albumin in general, with exceptions.

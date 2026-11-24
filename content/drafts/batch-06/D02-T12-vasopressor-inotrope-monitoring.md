@@ -106,13 +106,13 @@ At the start of the shift the nurse reads the MAP target range in the order, che
 A 72-year-old man with septic shock is on a vasoactive infusion. His MAP has been at 62 for 30 minutes, his fingers are cool, and his urine output has fallen. The nurse checks the pump and line, confirms the arterial trace is accurate, reports to the doctor that the target is not met despite escalating support and that perfusion is worsening, and asks for a decision about the next step. The doctor also asks for a repeat lactate; the nurse records the result and the response.
 
 ## 17. MCQs
-**Q1 (understanding).** What does SSC 2026 recommend as the initial MAP target in adults with septic shock?
+**Q1 (understanding).** What is the general initial MAP target recommended by SSC 2026 for adult septic shock, before individualization and consideration of the separate recommendation for older adults?
 A. An initial MAP target of 65 mm Hg over higher targets, with vasopressors titrated to keep MAP within a reasonable range of it.
 B. An initial MAP target of 85 mm Hg, because higher targets have been shown to improve organ perfusion in these patients.
 C. A systolic pressure above 120 mm Hg, since the systolic pressure is the better guide to perfusion than the mean pressure.
 D. No specific target, because the page says that the target should always be chosen at the bedside by the nurse alone.
 **Answer: A.**
-**Why correct:** The page gives a strong recommendation (moderate certainty) for an initial MAP of 65 over higher targets, with a remark about using a range.
+**Why correct:** The general recommendation is an initial MAP of 65 mm Hg rather than higher targets (strong, moderate certainty). For adults aged 65 or older with septic shock, the same guideline separately suggests an initial range of 60–65 mm Hg rather than higher ranges (conditional, low certainty). Follow the prescribed individualized range and monitor tissue perfusion, not just pressure.
 **Why not B:** The page recommends 65 over higher targets.
 **Why not C:** The statement concerns mean arterial pressure, not systolic pressure.
 **Why not D:** The page gives a target; the order for the individual patient comes from the prescriber.
@@ -120,10 +120,10 @@ D. No specific target, because the page says that the target should always be ch
 **Q2 (judgment).** A patient on a vasoactive infusion has an MAP below the ordered range for 20 minutes. What is the best first nursing action?
 A. Increase the infusion rate at once, without checking the trace, the line or the pump, to bring the pressure up quickly.
 B. Document the value and recheck at the next scheduled observation, because a single low value is expected on vasopressors.
-C. Check the patient, the arterial trace, the line and the pump, and report to the prescriber if the target is still not met.
+C. Assess the patient and summon urgent help while verifying the pressure and infusion; follow authorized titration.
 D. Stop the infusion immediately, since the drug is clearly not working in this patient and a different agent will be needed.
 **Answer: C.**
-**Why correct:** The FDA page recommends monitoring and checking the pump; the nurse confirms the reading and the infusion before escalating, and titrates only within an order or protocol.
+**Why correct:** Sustained hypotension despite support requires immediate assessment and escalation in parallel with checking waveform quality, access, drug identity and pump function. Do not wait until troubleshooting is complete to summon help if unstable. Follow the authorized titration and backup-infusion plan; reassess perfusion.
 **Why not A:** Titration needs an order or protocol and a check of the reading and equipment first.
 **Why not B:** A sustained low pressure in a patient on support needs action, not delay.
 **Why not D:** Stopping a vasoactive infusion abruptly without an order is unsafe.
@@ -145,7 +145,7 @@ B. Both say vasopressors may be given through an arterial line, because it gives
 C. Both say the site does not matter and may be chosen by the bedside nurse without any local policy.
 D. SSC 2026 suggests starting peripherally rather than delaying, while ESICM 2014 said central access may be preferred; local policy decides.
 **Answer: D.**
-**Why correct:** The two sources differ, and SSC 2026's own remark says data are insufficient on duration, dose and site.
+**Why correct:** SSC 2026 conditionally favors peripheral initiation in adult septic shock rather than delaying for central access. Evidence does not specify a universal duration, dose, cannula size or anatomical site, and the recommendation did not evaluate midlines. Use the authorized access protocol, assess the site and escalate suspected extravasation immediately; do not force-flush an affected cannula.
 **Why not A:** SSC 2026 suggests not delaying for central access.
 **Why not B:** Arterial lines are for monitoring, not for vasopressor administration.
 **Why not C:** Local policy and the order define the access and site.
@@ -156,7 +156,7 @@ B. Switching to a rapid bolus of the same drug by hand to cover the interruption
 C. Staying with and closely monitoring the patient while a colleague obtains a working pump.
 D. Waiting until the end of the shift to report the failure and keeping the pump in use until then, to avoid a gap.
 **Answer: C.**
-**Why correct:** The FDA page describes staying with and closely monitoring the patient while another staff member obtains a working pump.
+**Why correct:** FDA advises a planned backup response for high-risk infusion failure, including remaining with the patient while another clinician obtains replacement equipment. Activate urgent help when unstable, maintain prescribed circulatory support through a verified backup route and pump under the local plan, and avoid unintended boluses from residual drug in tubing.
 **Why not A:** The page says the nurse should stay with the patient.
 **Why not B:** A manual bolus of a vasoactive drug is not described and is unsafe without an order.
 **Why not D:** Faulty pumps are to be removed from use and reported.
