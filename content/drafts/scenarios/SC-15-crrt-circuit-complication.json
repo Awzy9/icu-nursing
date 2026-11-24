@@ -146,11 +146,11 @@
       ],
       "options": [
         {
-          "text": "Escalate persistent alarms and treatment interruption to the responsible CRRT-trained team and prescriber, document the lost treatment, and follow the institution's device-specific blood-return or treatment-termination protocol. Do not attempt an unsupervised blood return.",
+          "text": "Escalate persistent alarms and interruption to the responsible CRRT-trained team and prescriber. Do not attempt blood return unless the trained operator confirms it is safe under the current device instructions and local procedure. Document lost treatment and any blood loss.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "The AHS 2025 regional pathway describes support, blood return when feasible and treatment termination under local procedures. It is not permission for a learner to handle the circuit, return blood, change settings or disconnect a catheter without training and authorisation.",
+          "feedback": "The AHS pathway is specific to its machine and clinical setting. Blood return is not automatic: if clotting or another circuit safety hazard is suspected, do not attempt return before an authorised trained operator establishes the safe pathway. Do not override safety alarms.",
           "consequence": "Blood is returned, the reason is recorded and the physician plans the next step for the line.",
           "support": "partial",
           "sources": [
@@ -174,7 +174,7 @@
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
-          "feedback": "Blood should be returned when possible, not left in a stopped circuit.",
+          "feedback": "Leaving a stopped circuit without trained assessment and escalation is unsafe. Blood return may itself be contraindicated; the trained team determines safe termination and records any blood loss.",
           "consequence": "The circuit clots and the patient loses the blood in it.",
           "support": "partial",
           "sources": [

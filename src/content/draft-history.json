@@ -2078,6 +2078,23 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "05456d1f950e9611",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-CDC-BSI-2011",
+     "S-ERC-PRC-2025",
+     "S-ESICM-SHOCK-2014",
+     "S-NCSBN-DELEG-2019",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "SK-02": [
@@ -2525,6 +2542,21 @@
    {
     "hash": "6cf5423be5681f6d",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "N-BAXTER-PRISMAFLEX",
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-CHS-CRRT",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "413b19e77702f3ac",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-AHS-CRRT-ALARM-2025",
@@ -4606,6 +4638,20 @@
    {
     "hash": "1a0add9b9c2b5888",
     "recorded": "2026-11-21",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LINEZOLID",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5d699a34e5abd750",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-LINEZOLID",
@@ -6729,6 +6775,19 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "ccb6b080e4ef6eb7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-16": [
@@ -6915,6 +6974,19 @@
    {
     "hash": "ad2b95e6f76dd62c",
     "recorded": "2026-11-15",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NICE-NG232",
+     "S-AHRQ-TS",
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "fb5c5705f56d33d5",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "N-NICE-NG232",
