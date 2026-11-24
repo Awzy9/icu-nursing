@@ -1,12 +1,9 @@
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { asUser, closePool, createUser, expectDenied, owner, setupDb, uniqueEmail } from "./helpers";
 
-// Exercise the exact review candidate in a disposable database cloned from the
-// migrated test template. It is NOT applied to the shared template or hosted DB.
+// Exercise the committed migration in a disposable database cloned from the
+// migrated test template. The normal migration runner applies the SQL once.
 let a = "", b = "";
-const candidate = resolve(process.cwd(), "docs/sql/working_session_decision_history_candidate.sql");
 const history = [{ position: 1, choice: 0 }, { position: 2, choice: 1 }];
 const write = (id: string, module: string, decisions: unknown, age = "1 hour", kind = "scenario") =>
   asUser({ id }, "select public.working_save_session_v2($1,$2,'sc2-test',3,2,false,now()-$3::interval,$4::jsonb)", [module, kind, age, JSON.stringify(decisions)]);
@@ -15,13 +12,12 @@ const read = async (id: string, module: string) =>
 
 beforeAll(async () => {
   await setupDb();
-  await owner.query(readFileSync(candidate, "utf8"));
   a = await createUser(uniqueEmail("history-a"));
   b = await createUser(uniqueEmail("history-b"));
 });
 afterAll(closePool);
 
-describe("Candidate account scenario decision history (isolated database)", () => {
+describe("Account scenario decision history (isolated database)", () => {
   it("round-trips decisions with the cumulative score and position", async () => {
     await write(a, "SC-01", history);
     expect(await read(a, "SC-01")).toEqual({ position: 3, score: 2, finished: false, decisions: history });
