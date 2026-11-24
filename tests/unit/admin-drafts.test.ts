@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { buildDraftIndex, licenceBand, parseCsv, updateHistory, type DraftHistory, type DraftIndex, type IndexEntry } from "../../scripts/build-draft-index";
-import { compareLatest, coverage, draftFreshness, filterDrafts, orderReviewQueue, reviewLane, sourceFreshness, worstLicence, STALE_DAYS } from "@/lib/admin/drafts-core";
+import { compareLatest, coverage, draftFreshness, filterDrafts, hasSourceGap, needsRightsCheck, orderReviewQueue, reviewLane, sourceFreshness, worstLicence, STALE_DAYS } from "@/lib/admin/drafts-core";
 
 const onDisk = JSON.parse(readFileSync("src/content/draft-index.json", "utf8")) as DraftIndex;
 const hist = JSON.parse(readFileSync("src/content/draft-history.json", "utf8")) as DraftHistory;
@@ -75,6 +75,23 @@ describe("filters, freshness, comparison and coverage", () => {
     expect(filterDrafts(entries, { review: "patient-safety" }, today).map(x => x.key)).toEqual(["MD-20", "SC-11"]);
     expect(filterDrafts(entries, { review: "source-verification" }, today).map(x => x.key)).toEqual(["PX-12", "SK-08"]);
     expect(entries.every(x => x.clinically_reviewed === false)).toBe(true);
+  });
+  it("finds overlapping source and rights signals across review lanes without implying clearance", () => {
+    const urgent = e({ key: "SC-11", type: "cases", required_sources: 2, sources: [{ id: "R", licence_class: "RED", verified: "2026-11-14" }] });
+    const undated = e({ sources: [{ id: "Y", licence_class: "YELLOW", verified: null }] });
+    const missing = e({ key: "PX-12", sources: [] });
+    const clean = e({ key: "SK-98" });
+    const list = [urgent, undated, missing, clean];
+    expect(hasSourceGap(urgent)).toBe(true);
+    expect(needsRightsCheck(undated)).toBe(true);
+    expect(filterDrafts(list, { sourceGap: "yes" }, today)).toEqual([urgent, undated, missing]);
+    expect(filterDrafts(list, { rights: "yes" }, today)).toEqual([urgent, undated]);
+    expect(filterDrafts(list, { review: "patient-safety", sourceGap: "yes", rights: "yes" }, today)).toEqual([urgent]);
+    expect(filterDrafts(list, { sourceGap: "no", rights: "no" }, today)).toEqual([clean]);
+    expect(worstLicence(e({ sources: [...clean.sources, { id: "U", licence_class: "UNREGISTERED", verified: null }] }))).toBe("UNREGISTERED");
+    expect(onDisk.entries.filter(hasSourceGap)).toHaveLength(88);
+    expect(onDisk.entries.filter(needsRightsCheck)).toHaveLength(161);
+    expect(list.every(x => !x.clinically_reviewed)).toBe(true);
   });
   it("flags the known high-priority working draft without displaying its content body", () => {
     const indexCase = onDisk.entries.find((x) => x.key === "SC-11")!;

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Field, Input, Select } from "@/components/ui/form";
 import { Link } from "@/i18n/navigation";
 import { requireStaff } from "@/lib/auth";
-import { DRAFTS, DRAFT_TYPES, REVIEW_LANES, draftFreshness, filterDrafts, orderReviewQueue, reviewLane, worstLicence } from "@/lib/admin/drafts";
+import { DRAFTS, DRAFT_TYPES, REVIEW_LANES, draftFreshness, filterDrafts, hasSourceGap, needsRightsCheck, orderReviewQueue, reviewLane, worstLicence } from "@/lib/admin/drafts";
 import { notesSummary } from "@/lib/admin/draft-notes";
 import { aiEvidenceSummary } from "@/lib/admin/ai-evidence";
 import { createClient } from "@/lib/supabase/server";
@@ -23,7 +23,7 @@ export default async function DraftList({ params, searchParams }: { params: Prom
   const db = (await createClient())!;
   const notes = await notesSummary(db);
   const aiSummary = await aiEvidenceSummary(db);
-  const f = { type: one(sp.type), evidence: one(sp.evidence), validation: one(sp.validation), licence: one(sp.licence), freshness: one(sp.freshness), notes: one(sp.notes), review: one(sp.review), sort: one(sp.sort), q: one(sp.q) };
+  const f = { type: one(sp.type), evidence: one(sp.evidence), validation: one(sp.validation), licence: one(sp.licence), freshness: one(sp.freshness), notes: one(sp.notes), review: one(sp.review), sourceGap: one(sp.sourceGap), rights: one(sp.rights), sort: one(sp.sort), q: one(sp.q) };
   const today = new Date();
   const selected = filterDrafts(DRAFTS.entries, f, today, new Set(Object.keys(notes)));
   const rows = f.sort === "review" ? orderReviewQueue(selected) : selected;
@@ -38,13 +38,16 @@ export default async function DraftList({ params, searchParams }: { params: Prom
         <Field label="Type" htmlFor="type"><Select id="type" name="type" defaultValue={f.type ?? ""} className={sel}><option value="">All</option>{DRAFT_TYPES.map((t) => <option key={t.type} value={t.type}>{t.label}</option>)}</Select></Field>
         <Field label="Evidence status" htmlFor="evidence"><Select id="evidence" name="evidence" defaultValue={f.evidence ?? ""}><option value="">All</option>{evidenceValues.map((v) => <option key={v} value={v}>{v.replace(/_/g, " ")}</option>)}</Select></Field>
         <Field label="Validation" htmlFor="validation"><Select id="validation" name="validation" defaultValue={f.validation ?? ""}><option value="">All</option><option value="ok">No issues</option><option value="issues">Has issues</option></Select></Field>
-        <Field label="Worst licence class of its sources" htmlFor="licence"><Select id="licence" name="licence" defaultValue={f.licence ?? ""}><option value="">All</option>{["RED", "UNVERIFIED", "YELLOW", "GREEN", "NONE"].map((v) => <option key={v}>{v}</option>)}</Select></Field>
+        <Field label="Worst licence class of its sources" htmlFor="licence"><Select id="licence" name="licence" defaultValue={f.licence ?? ""}><option value="">All</option>{["RED", "UNREGISTERED", "UNVERIFIED", "YELLOW", "GREEN", "N/A", "NONE"].map((v) => <option key={v}>{v}</option>)}</Select></Field>
         <Field label="Source freshness" htmlFor="freshness"><Select id="freshness" name="freshness" defaultValue={f.freshness ?? ""}><option value="">All</option><option value="fresh">All sources verified within 180 days</option><option value="stale">Some source older than 180 days</option><option value="unknown">Some source has no verification date</option></Select></Field>
         <Field label="Staff notes" htmlFor="notes"><Select id="notes" name="notes" defaultValue={f.notes ?? ""}><option value="">All</option><option value="with">With notes</option><option value="without">Without notes</option></Select></Field>
         <Field label="Suggested review lane" htmlFor="review"><Select id="review" name="review" defaultValue={f.review ?? ""}><option value="">All drafts</option>{REVIEW_LANES.map((l) => <option key={l.key} value={l.key}>{l.label}</option>)}</Select></Field>
+        <Field label="Outstanding source signals" htmlFor="sourceGap"><Select id="sourceGap" name="sourceGap" defaultValue={f.sourceGap ?? ""}><option value="">All drafts</option><option value="yes">Missing, undated or unverified sources</option><option value="no">No listed source gap</option></Select></Field>
+        <Field label="Source rights signals" htmlFor="rights"><Select id="rights" name="rights" defaultValue={f.rights ?? ""}><option value="">All drafts</option><option value="yes">RED, YELLOW, unverified or unregistered</option><option value="no">No listed restricted source</option></Select></Field>
         <Field label="Sort" htmlFor="sort"><Select id="sort" name="sort" defaultValue={f.sort ?? ""}><option value="">Original order</option><option value="review">Review lane, then declared gaps</option></Select></Field>
         <div className="flex items-end gap-2"><Button type="submit">Apply</Button><Button asChild variant="outline"><Link href="/admin/content/register">Clear</Link></Button></div>
       </form>
+      <p className="text-sm text-muted-foreground">{DRAFTS.entries.filter(hasSourceGap).length} drafts have outstanding source signals; {DRAFTS.entries.filter(needsRightsCheck).length} cite sources requiring rights checks. These counts can overlap and do not establish clearance.</p>
       <p role="status" className="text-sm text-muted-foreground">{rows.length} of {DRAFTS.entries.length} drafts</p>
       <p className="text-sm text-muted-foreground">All clinical-priority items still require specialist review. A low queue position does not establish safety or permission. <Link href={{ pathname: "/admin/content/register", query: { sort: "review" } }} className="underline">View suggested review order</Link></p>
       <div className="overflow-x-auto">
@@ -62,7 +65,7 @@ export default async function DraftList({ params, searchParams }: { params: Prom
                   <td className="py-2 pe-3">{REVIEW_LANES.find((l) => l.key === reviewLane(e))?.label ?? "Review pending"}</td>
                   <td className="py-2 pe-3">{e.evidence_status.replace(/_/g, " ")}</td>
                   <td className="py-2 pe-3"><Badge tone={tone(lic)}>{lic}</Badge></td>
-                  <td className="py-2 pe-3">{e.sources.length}{fr !== "fresh" ? <> <Badge tone="warning">{fr === "stale" ? "stale" : "no date"}</Badge></> : null}</td>
+                  <td className="py-2 pe-3">{e.sources.length}{e.required_sources > 0 ? <> <Badge tone="warning">{e.required_sources} needed</Badge></> : null}{fr !== "fresh" ? <> <Badge tone="warning">{fr === "stale" ? "stale" : "no date"}</Badge></> : null}</td>
                   <td className="py-2 pe-3">{e.issues.length === 0 ? <Badge tone="success">OK</Badge> : <Badge tone="danger">{e.issues.length} issue{e.issues.length > 1 ? "s" : ""}</Badge>}</td>
                   <td className="py-2 pe-3">{notes[e.key] ? notes[e.key]!.fields : "—"}</td>
                   <td className="py-2">{aiSummary[e.key] ? <Badge tone={aiSummary[e.key]!.ever_flagged ? "danger" : "success"}>{aiSummary[e.key]!.count} check{aiSummary[e.key]!.count > 1 ? "s" : ""}{aiSummary[e.key]!.ever_flagged ? ", gap flagged" : ""}</Badge> : "—"}</td>

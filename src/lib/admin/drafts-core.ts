@@ -23,7 +23,7 @@ export function draftFreshness(e: IndexEntry, today: Date): Freshness {
   const f = e.sources.map((s) => sourceFreshness(s, today));
   return f.includes("stale") ? "stale" : f.includes("unknown") ? "unknown" : "fresh";
 }
-export const LICENCE_ORDER = ["RED", "UNVERIFIED", "YELLOW", "GREEN", "N/A", "UNREGISTERED"] as const;
+export const LICENCE_ORDER = ["RED", "UNREGISTERED", "UNVERIFIED", "YELLOW", "GREEN", "N/A"] as const;
 export function worstLicence(e: IndexEntry): string {
   for (const l of LICENCE_ORDER) if (e.sources.some((s) => s.licence_class === l)) return l;
   return "NONE";
@@ -62,7 +62,14 @@ export function orderReviewQueue(entries: IndexEntry[]): IndexEntry[] {
     a.key.localeCompare(b.key));
 }
 
-export interface Filter { type?: string; evidence?: string; validation?: string; licence?: string; freshness?: string; notes?: string; review?: string; q?: string }
+/** Independent evidence and rights signals, not clearance or a clinical verdict. */
+export function hasSourceGap(e: IndexEntry): boolean {
+  return e.required_sources > 0 || !e.sources.length || e.sources.some(s => !s.verified || ["UNVERIFIED", "UNREGISTERED"].includes(s.licence_class));
+}
+export function needsRightsCheck(e: IndexEntry): boolean {
+  return e.sources.some(s => ["RED", "YELLOW", "UNVERIFIED", "UNREGISTERED"].includes(s.licence_class));
+}
+export interface Filter { sourceGap?: string; rights?: string; type?: string; evidence?: string; validation?: string; licence?: string; freshness?: string; notes?: string; review?: string; q?: string }
 export function filterDrafts(entries: IndexEntry[], f: Filter, today: Date, withNotes: Set<string> = new Set()): IndexEntry[] {
   const q = (f.q ?? "").trim().toLowerCase().slice(0, 80);
   return entries.filter((e) =>
@@ -73,6 +80,8 @@ export function filterDrafts(entries: IndexEntry[], f: Filter, today: Date, with
     (!f.freshness || draftFreshness(e, today) === f.freshness) &&
     (!f.notes || (f.notes === "with" ? withNotes.has(e.key) : !withNotes.has(e.key))) &&
     (!f.review || reviewLane(e) === f.review) &&
+    (!f.sourceGap || (f.sourceGap === "yes" ? hasSourceGap(e) : !hasSourceGap(e))) &&
+    (!f.rights || (f.rights === "yes" ? needsRightsCheck(e) : !needsRightsCheck(e))) &&
     (!q || e.key.toLowerCase().includes(q) || e.title.toLowerCase().includes(q)));
 }
 
