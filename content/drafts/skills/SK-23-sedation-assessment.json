@@ -237,7 +237,7 @@
     },
     {
       "phase": "assessment",
-      "text": "When a patient appears anxious, assess distress, communication needs, pain, breathing and possible acute deterioration before attributing the presentation to anxiety. The 2025 SCCM update found inadequate evidence to make a recommendation on benzodiazepines specifically for anxiety in adult ICU patients. Do not treat anxiety as an automatic indication for a sedative; discuss individualized management with the responsible team.",
+      "text": "Assess distress, communication needs, pain, breathing and acute deterioration before attributing symptoms to anxiety. The 2025 SCCM update found inadequate evidence to recommend for or against benzodiazepines specifically for anxiety in adult ICU patients. Anxiety alone is not an automatic indication for sedation; agree individual management with the team.",
       "critical": true,
       "support": "partial",
       "sources": [
