@@ -109,7 +109,7 @@
       ],
       "options": [
         {
-          "text": "Remain with the patient, assess airway, breathing and circulation, call for timely clinical help, and provide oxygen and other support under the emergency protocol. Check the device, prescribed target and observations in parallel without delaying urgent assessment.",
+          "text": "Stay with the patient, assess airway, breathing and circulation; call for help and provide authorised emergency support. Check device, target and observations in parallel.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "text": "Set the oxygen to maximum solely to improve the displayed number, without assessing breathing or using an authorized emergency pathway.",
+          "text": "Adjust the oxygen to maximum to restore the displayed saturation, record the new flow and repeat the oximeter measurement before assessing breathing or activating the emergency pathway.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Leave things as they are because the saturation is near the target.",
+          "text": "Maintain the current oxygen prescription because the saturation is still close to target, record the rising early-warning score and reassess the patient at the next scheduled observation.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -183,7 +183,7 @@
       ],
       "options": [
         {
-          "text": "Activate urgent clinical review and the local emergency response if breathing is inadequate or instability is present. Stay with the patient, reassess and communicate the trend while authorised respiratory support is arranged.",
+          "text": "Stay with the patient; urgently reassess and escalate, activating the emergency response if breathing is inadequate or instability is present. Arrange authorised respiratory support.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "text": "Wait for one more set of observations first.",
+          "text": "Obtain another complete set of observations and calculate the new score, documenting any change in alertness before requesting urgent review or starting additional respiratory support.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -209,7 +209,7 @@
           ]
         },
         {
-          "text": "Decide yourself to transfer the patient to a higher-dependency bed.",
+          "text": "Review the available higher-dependency beds and independently arrange a transfer, postponing bedside emergency assessment until the receiving team can reassess the patient's breathing.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -256,7 +256,7 @@
       ],
       "options": [
         {
-          "text": "Record the actions and the response, monitor at the frequency the clinician sets, and call again if you remain concerned even if the score is lower.",
+          "text": "Record the response, reassess breathing and alertness, follow the monitoring plan and seek urgent further review despite the lower score.",
           "points": 2,
           "next": null,
           "scope": "monitoring",
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "text": "Stop escalating because the score has fallen a little.",
+          "text": "Document the new saturation and lower score and discontinue escalation, treating the improved oxygenation as sufficient evidence that the patient's persistent drowsiness has resolved.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -283,7 +283,7 @@
           ]
         },
         {
-          "text": "Go back to routine observations and make no record of the review.",
+          "text": "Return to routine observation intervals and leave the previous clinical review undocumented, since the support has been changed and the score has fallen.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

@@ -183,7 +183,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess whether breathing is effective and activate the emergency airway response. Provide oxygen and trained ventilation assistance when indicated under the approved emergency pathway while colleagues prepare equipment. Do not wait for the airway team if ventilation is inadequate.",
+          "text": "Stay with the patient; assess breathing, activate the emergency airway response and provide indicated oxygen and trained ventilation assistance under protocol without waiting for the airway team.",
           "points": 2,
           "next": 3,
           "scope": "monitoring",
@@ -198,7 +198,7 @@
           ]
         },
         {
-          "text": "Try to reintubate the patient yourself.",
+          "text": "Attempt reintubation independently while the airway team is travelling to the bedside, using the available equipment rather than providing trained emergency ventilation support while awaiting the responsible clinicians.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -210,7 +210,7 @@
           ]
         },
         {
-          "text": "Switch off the monitor to reduce the alarms and concentrate.",
+          "text": "Switch off monitoring to reduce alarm distractions and concentrate on preparing equipment, delaying reassessment of oxygenation and ventilation until the trained airway team reaches the bedside.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -257,7 +257,7 @@
       ],
       "options": [
         {
-          "text": "Confirm with the airway team that placement and ongoing ventilation have been assessed, including sustained exhaled carbon dioxide on waveform capnography. Continue monitoring, give factual handover, report the incident and review agitation and securement.",
+          "text": "Verify placement and ventilation with the airway team, including sustained exhaled carbon dioxide on waveform capnography. Monitor, hand over, report and review securement and agitation.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "text": "Say it was bound to happen and record nothing.",
+          "text": "Record the current observations and treat the event as unavoidable, leaving out the incident report and the timeline of the tube displacement because the patient has already been reintubated.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -284,7 +284,7 @@
           ]
         },
         {
-          "text": "Blame the night staff in the report.",
+          "text": "Attribute the displacement to the previous shift in the incident report, without reviewing securement, agitation or the factual sequence of events with the multidisciplinary team after stabilisation.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

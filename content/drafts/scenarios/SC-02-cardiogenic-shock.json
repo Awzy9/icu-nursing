@@ -224,7 +224,7 @@
       ],
       "options": [
         {
-          "text": "Assess responsiveness, breathing and pulse/perfusion now, activate emergency cardiac help, maintain ECG and prepare for the approved deterioration or resuscitation pathway.",
+          "text": "Assess responsiveness, breathing and pulse/perfusion immediately, activate emergency cardiac help, maintain ECG and prepare for the approved deterioration or resuscitation pathway.",
           "points": 2,
           "next": 3,
           "scope": "escalation",

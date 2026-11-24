@@ -121,7 +121,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient; assess ABC, summon urgent clinical help for suspected sepsis and report perfusion. Coordinate ordered lactate, cultures and prompt prescribed antimicrobials in parallel; report delays.",
+          "text": "Stay with the patient; assess airway, breathing and circulation, summon urgent help for suspected sepsis. Report perfusion; coordinate ordered lactate, cultures and prompt prescribed antimicrobials in parallel.",
           "points": 2,
           "next": 2,
           "scope": "escalation",

@@ -4759,7 +4759,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 4,
-   "hash": "472808ed28eee990"
+   "hash": "a4d82f23b945d4b7"
   },
   {
    "key": "SC-02",
@@ -4829,7 +4829,7 @@
    "issues": [],
    "gaps": 7,
    "required_sources": 2,
-   "hash": "27e57b064d43fa8e"
+   "hash": "c1a6130e15dcb550"
   },
   {
    "key": "SC-03",
@@ -4874,7 +4874,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "ff3e7630a98f543c"
+   "hash": "6a6db03c569d4b93"
   },
   {
    "key": "SC-04",
@@ -4914,7 +4914,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 1,
-   "hash": "ae31843c4ae76f28"
+   "hash": "1690370bf92d8d5b"
   },
   {
    "key": "SC-05",
@@ -4964,7 +4964,7 @@
    "issues": [],
    "gaps": 7,
    "required_sources": 2,
-   "hash": "a3d0e40d42b6a3e8"
+   "hash": "40a57344dd6147c0"
   },
   {
    "key": "SC-06",
@@ -5009,7 +5009,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "d1503d2691f9bc25"
+   "hash": "9d8273df5b3a01ec"
   },
   {
    "key": "SC-07",
@@ -5489,7 +5489,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "92815b03ece4bea8"
+   "hash": "53b6525374fa1a48"
   },
   {
    "key": "SC-17",

@@ -124,7 +124,7 @@
       ],
       "options": [
         {
-          "text": "Go to the patient, remain at the bedside and assess airway, breathing effort, chest expansion symmetry, colour, lung sounds and circulation. Compare the oximeter alarm with the patient rather than relying on the probe alone, and activate urgent help now for this symptomatic rapid deterioration.",
+          "text": "Stay at the bedside; assess airway, breathing effort, chest symmetry, colour, lung sounds and circulation. Activate urgent help now; check oximeter reliability in parallel.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
@@ -139,7 +139,7 @@
           ]
         },
         {
-          "text": "Reposition the probe and leave to see whether the number improves.",
+          "text": "Reposition the oximeter probe and record the new signal quality, then leave the bedside while waiting for the displayed saturation to recover before reassessing breathing and requesting help.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -151,7 +151,7 @@
           ]
         },
         {
-          "text": "Silence the alarm because the patient is talking and probably fine.",
+          "text": "Pause the audible alarm because the patient can still talk, record the earlier saturation and continue the scheduled observations without assessing the new distress or calling for urgent help.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -203,7 +203,7 @@
       ],
       "options": [
         {
-          "text": "Activate urgent help according to the unit pathway, continue prescribed or protocol-authorised oxygen and reassessment, and assess whether the patient cannot clear oral secretions. Only a trained nurse should use the appropriate non-invasive oral suction method under local policy when indicated; do not delay emergency assessment or assume secretions are the sole cause.",
+          "text": "Activate urgent help; continue authorised oxygen and reassessment. Assess retained oral secretions; trained staff use indicated non-invasive oral suction per policy without delaying emergency assessment.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -218,7 +218,7 @@
           ]
         },
         {
-          "text": "Suction repeatedly until the saturation reaches its usual level.",
+          "text": "Repeat suction whenever the displayed saturation remains below baseline, without reassessing secretion clearance, tolerance or other causes, and defer emergency assessment until the saturation has returned to its earlier level.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -231,7 +231,7 @@
           ]
         },
         {
-          "text": "Increase oxygen or change devices solely to normalize the monitor without reassessing the patient or following the emergency pathway.",
+          "text": "Increase oxygen or change devices solely to restore the previous monitor reading, recording the response without reassessing breathing or using the authorised emergency escalation pathway.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -278,7 +278,7 @@
       ],
       "options": [
         {
-          "text": "Give an SBAR handover (what you found, what you did and how the saturation responded), keep monitoring, reassess heart rate, breathing rate, saturation, lung sounds and the patient's own rating of breathlessness, and document what was done and whether it worked.",
+          "text": "Give SBAR on findings, actions and response; continue monitoring heart rate, breathing, saturation, lung sounds and breathlessness. Document interventions and effects.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -292,7 +292,7 @@
           ]
         },
         {
-          "text": "Step back and let the team work; write the notes later.",
+          "text": "Step back and let the team work without giving a structured handover of the recent changes or confirming ongoing reassessment, and plan to reconstruct the event in the notes later.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -304,7 +304,7 @@
           ]
         },
         {
-          "text": "Reset the alarm limits so the alarm stops sounding while the team treats the patient.",
+          "text": "Reset the alarm limits to stop audible alerts during the team's treatment, then document the improved saturation without reporting the persistent increased breathing effort or agreeing ongoing monitoring.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",

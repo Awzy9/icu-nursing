@@ -171,7 +171,7 @@
       ],
       "options": [
         {
-          "text": "Call for skilled help and use the unit's approved emergency ventilation approach to ensure effective ventilation while the cause is addressed.",
+          "text": "Call for skilled help and use the approved emergency ventilation pathway to ensure effective ventilation while the cause is addressed.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -185,7 +185,7 @@
           ]
         },
         {
-          "text": "Keep troubleshooting the machine on your own.",
+          "text": "Continue checking the ventilator independently until the high-pressure alarm clears, postponing requests for skilled help or emergency ventilation while you investigate the cause.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "text": "Change the ventilator mode yourself to see if the patient improves.",
+          "text": "Change the ventilator mode independently to see whether chest movement and saturation improve, and request skilled review only if the alarm continues.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -244,7 +244,7 @@
       ],
       "options": [
         {
-          "text": "Confirm effective ventilation and reassess delivered volumes, pressures, oxygenation, airway and circuit with the trained respiratory team; document the event, response and ongoing monitoring plan in handover.",
+          "text": "Confirm effective ventilation, volumes, pressures, oxygenation, airway and circuit with the respiratory team; document response and monitoring in handover.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -258,7 +258,7 @@
           ]
         },
         {
-          "text": "Document only that the alarm sounded.",
+          "text": "Document that the high-pressure alarm sounded and has now stopped, without recording the cause, actions, reassessment findings or the agreed plan for continued monitoring.",
           "points": 1,
           "next": null,
           "scope": "independent_nursing",
@@ -270,7 +270,7 @@
           ]
         },
         {
-          "text": "Reset the alarm limits to the narrowest settings so any change will alarm.",
+          "text": "Reset alarm limits to the narrowest available settings to detect changes, without first agreeing appropriate patient-specific limits with the trained respiratory team.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",

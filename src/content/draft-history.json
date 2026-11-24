@@ -11250,6 +11250,21 @@
     "gaps": 6,
     "required_sources": 4,
     "issues": 0
+   },
+   {
+    "hash": "a4d82f23b945d4b7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026",
+     "S-SSC-EXEC-2026"
+    ],
+    "gaps": 6,
+    "required_sources": 4,
+    "issues": 0
    }
   ],
   "SC-02": [
@@ -11410,6 +11425,27 @@
     "gaps": 7,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "c1a6130e15dcb550",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-ACC-CS-2025",
+     "S-ACC-CS-JACC-2025",
+     "S-AHRQ-TS",
+     "S-ESC-AHF-EMERGENCY-2026",
+     "S-ESC-CS-2026",
+     "S-ESC-HF-2026",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SCAI-SHOCK-2026"
+    ],
+    "gaps": 7,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-03": [
@@ -11471,6 +11507,22 @@
    },
    {
     "hash": "ff3e7630a98f543c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-ATS-NIRS-2026",
+     "S-BTS-O2-2017",
+     "S-FDA-OXIMETER-BASICS",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "6a6db03c569d4b93",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -11575,6 +11627,21 @@
    },
    {
     "hash": "ae31843c4ae76f28",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-MV-SAFETY",
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 5,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "1690370bf92d8d5b",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -11715,6 +11782,23 @@
     "gaps": 7,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "40a57344dd6147c0",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-NCBI-OPENRN-CHEST",
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-FDA-OXIMETER-BASICS",
+     "S-OPENRN-FUND-CH8",
+     "S-RCP-NEWS2",
+     "S-RCUK-ABCDE-ADULT"
+    ],
+    "gaps": 7,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-06": [
@@ -11805,6 +11889,22 @@
    },
    {
     "hash": "d1503d2691f9bc25",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AHRQ-TS",
+     "S-ERC-ALS-2025",
+     "S-ISCCM-WEAN-2024",
+     "S-PUMA-2022",
+     "S-PUMA-EXTUBATION-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "9d8273df5b3a01ec",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13170,6 +13270,27 @@
    },
    {
     "hash": "92815b03ece4bea8",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-BP-DISCORDANCE-2025",
+     "S-CDC-BSI-2011",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-EVERDAC-2025",
+     "S-NIBP-META-2023",
+     "S-OPENRN-FUND-CH15-6",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 6,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "53b6525374fa1a48",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

@@ -177,7 +177,7 @@
           ]
         },
         {
-          "text": "Assume the falling pressure reflects a fluid deficit and give a bolus from ward stock without an order or authorised pathway; obtain repeat readings and call for assessment only after the bolus.",
+          "text": "Assume a fluid deficit and give an unprescribed fluid bolus from ward stock before obtaining repeat readings or calling for clinical assessment; request help only after the bolus.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
