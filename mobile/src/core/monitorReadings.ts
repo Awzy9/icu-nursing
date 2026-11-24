@@ -21,3 +21,15 @@ export function monitorReadings(observations: Observation[] | undefined): Readin
     return metric && typeof o.value === "number" && Number.isFinite(o.value) ? [{ metric, value: o.value }] : [];
   });
 }
+
+// Preserve findings not rendered by the specialised monitor or comparison panels.
+const neuroLabels = new Set(["Eye opening", "Verbal response", "Motor response"]);
+const perfusionLabels = new Set(["Blood pressure", "Heart rate", "Pulse", "Skin", "Urine output", "Alertness", "Mental state", "Monitor rhythm", "Infusion site"]);
+export function remainingObservations(observations: Observation[] | undefined, panels: { numeric: boolean; neuro: boolean; perfusion: boolean }): Observation[] {
+  return (observations ?? []).filter(o => {
+    if (panels.numeric && monitorReadings([o]).length > 0) return false;
+    if (panels.neuro && neuroLabels.has(o.label)) return false;
+    if (panels.perfusion && perfusionLabels.has(o.label)) return false;
+    return true;
+  });
+}

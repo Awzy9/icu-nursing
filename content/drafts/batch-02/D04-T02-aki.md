@@ -105,7 +105,7 @@ C. Increase the observation interval to every four hours, so that the patient is
 D. Report to the prescriber now as possible AKI, giving the output trend and risk factors, and prepare for tests.
 **Answer: D.**
 **Why correct:** The patient has sustained urine output below 0.5 mL/kg/h (40 mL/h here), but has not yet met the NICE adult duration criterion of more than 6 hours. Escalate now, assess perfusion and fluid balance, verify measurement and catheter patency, and prepare ordered investigations; do not wait for a formal criterion or assume a fluid bolus is indicated.
-**Why not A:** The observed output is 0.25 mL/kg/h. A developing warning sign warrants assessment now; a diagnostic duration criterion is not a waiting period before escalation.
+**Why not A:** The observed urine output is 0.25 mL/kg/h. A developing warning sign warrants assessment now; a diagnostic duration criterion is not a waiting period before escalation.
 **Why not B:** Fluids need an order, and the cause may not be hypovolaemia.
 **Why not C:** Less frequent monitoring is inappropriate when output is falling.
 

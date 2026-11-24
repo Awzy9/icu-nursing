@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 import { scoreTenths } from "../../src/core/engines";
-import { monitorReadings } from "../../src/core/monitorReadings";
+import { monitorReadings, remainingObservations } from "../../src/core/monitorReadings";
 import { getSession, recordCase } from "../../src/core/progress";
 import { BookmarkButton, Button, Card, H2, P, RemoteGate, Screen } from "../../src/ui/components";
 import { ModuleVisuals } from "../../src/ui/module-visuals";
@@ -60,6 +60,8 @@ export default function CaseScreen() {
           const step = scenario.steps.find((s) => s.position === pos)!;
           const previousSteps = visited.flatMap((n) => scenario.steps.filter((item) => item.position === n));
           const option = choice === null ? undefined : step.options[choice];
+          const supplemental = remainingObservations(step.observations, { numeric: showNumericMonitor, neuro: showNeuro, perfusion: showPerfusion });
+          const sharedCheckpoint = option?.next != null && step.options.every(o => o.next === option.next);
           const version = JSON.stringify(scenario.steps.map((s) => ({ p: s.position, n: s.options.length })));
 
           if (existingSession && !resumed && !done && position === undefined && existingSession.version === version && !existingSession.finished) {
@@ -118,6 +120,10 @@ export default function CaseScreen() {
               {showPerfusion ? <CaseComparison kind="perfusion" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
               <P small muted>{t("cases.step", { n: scenario.steps.findIndex((s) => s.position === pos) + 1, total: scenario.steps.length })}</P>
               <Card><P>{step.info}</P></Card>
+              {supplemental.length > 0 ? <Card>
+                <H2>{locale === "ar" ? "ملاحظات الحالة" : "Case observations"}</H2>
+                {supplemental.map((o, i) => <P key={`${o.label}-${i}`}>{o.label}: {String(o.value)}{o.unit ? ` ${o.unit}` : ""}</P>)}
+              </Card> : null}
               <H2>{step.prompt}</H2>
               {step.options.map((o, i) => (
                 <Button key={i} label={o.text} variant={choice === i ? "primary" : "outline"} disabled={revealed} onPress={() => setChoice(i)} />
@@ -126,7 +132,8 @@ export default function CaseScreen() {
                 <Card>
                   <P>{t("cases.feedback")}</P>
                   <P>{option.feedback}</P>
-                  {option.consequence ? <P small muted>{option.consequence}</P> : null}
+                  {option.consequence ? <P small muted>{locale === "ar" ? "النتيجة المحتملة: " : "Possible consequence: "}{option.consequence}</P> : null}
+                  {sharedCheckpoint ? <P small muted>{locale === "ar" ? "الخطوة التالية نقطة تعليمية مشتركة وليست نتيجة فردية لاختيارك." : "The next step is a shared teaching checkpoint, not an individualized outcome of your choice."}</P> : null}
                 </Card>
               ) : null}
               <Button label={revealed ? (option?.next == null ? t("cases.summary") : t("cases.continue")) : t("cases.choose")} disabled={choice === null && !revealed} onPress={revealed ? advance : decide} />

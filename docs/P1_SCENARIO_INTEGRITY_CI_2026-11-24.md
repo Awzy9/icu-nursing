@@ -1,0 +1,5 @@
+# Scenario integrity and CI follow-up — 24 November 2026
+
+At aef2da8, CI passed 1455/1459 tests; four failures originated from the AKI urine-output sentence matching the medication dose guard. Explicitly label it urine output and synchronize hash/history; guard unchanged. Mobile acceptance, learning experience and isolated Supabase tests passed for that commit.
+
+Native case screen previously omitted observations not rendered by specialised monitor/perfusion/neuro panels. Added a remaining-observations display and pure regression tests, retaining nonnumeric findings such as swallowing safety and insulin status. Web and native now label consequences as possible and explicitly explain shared checkpoints whenever all choices lead to the same next step. Existing authored graphs are not individualized patient physiology simulations. No scores or transitions changed. Audited SC-01 and SC-06 example progression; a full audit of the twenty cases and actual branching redesign remains open. Clinical and release gates unchanged; new CI pending.
