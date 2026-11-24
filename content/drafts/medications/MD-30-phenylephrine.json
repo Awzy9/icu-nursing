@@ -14,7 +14,7 @@
   "high_alert_note": "Falls within the vasopressors named in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
   "summary": "Vasopressor for clinically important hypotension resulting primarily from vasodilation in the setting of anaesthesia. Nursing focus: angina and heart failure, ischaemia, extravasation necrosis and bradycardia.",
   "batch": 3,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Selected clinical guideline or trial evidence supplements the label; no full evidence appraisal or patient-specific prescribing guidance is supplied.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -45,6 +45,11 @@
       "id": "S-UIC-EXTRA-2026",
       "read": "partial",
       "use": "UIC 2026 pharmacy educational review: extravasation first-response precautions only; clinician/vascular-access protocol, no antidote doses."
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "SSC 2026 first-line vasopressor recommendations; phenylephrine is not named in that first-line recommendation"
     }
   ],
   "sections": {
@@ -55,6 +60,14 @@
           "text": "The label indicates phenylephrine hydrochloride injection for the treatment of clinically important hypotension resulting primarily from vasodilation in the setting of anaesthesia.",
           "support": "sourced",
           "sources": [
+            "L-PHENYLEPHRINE"
+          ]
+        },
+        {
+          "text": "The registered anaesthesia product indication does not establish a first-line role in septic shock. SSC 2026 names norepinephrine for usual initial support. Any phenylephrine use in another setting requires product-specific indication and clinician assessment.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026",
             "L-PHENYLEPHRINE"
           ]
         }
@@ -90,6 +103,13 @@
         },
         {
           "text": "The registered label warns of severe bradycardia, reduced cardiac output, peripheral and visceral ischaemia and renal toxicity; this formulation contains a sulfite. Escalate signs of reduced organ perfusion promptly and review formulation-specific allergy risk.",
+          "support": "partial",
+          "sources": [
+            "L-PHENYLEPHRINE"
+          ]
+        },
+        {
+          "text": "New bradycardia or declining tissue perfusion after a pressure rise warrants prompt team review; pressure alone is not evidence of restored flow.",
           "support": "partial",
           "sources": [
             "L-PHENYLEPHRINE"
@@ -262,15 +282,16 @@
     }
   ],
   "gaps": [
-    "The label read covers hypotension during anaesthesia; critical-care vasopressor use and guidelines were not read.",
+    "Registered anaesthesia indication retained; SSC 2026 first-line recommendation checked for context. Other formulations and specific critical-care uses still require independent appraisal.",
     "Dosing, preparation and administration details: deliberately not included.",
-    "No clinical practice guideline or nursing source was read for this entry.",
+    "Full clinical guideline appraisal and institution-specific phenylephrine use remain outstanding.",
     "The new site-injury response is a general first-response description, not drug-specific treatment or a validated peripheral phenylephrine administration protocol."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
     "FDA infusion pump page: verify reuse terms.",
-    "UIC Sept 2026 extravasation review: independent paraphrase only; commercial reuse rights and pharmacy escalation protocol still require verification."
+    "UIC Sept 2026 extravasation review: independent paraphrase only; commercial reuse rights and pharmacy escalation protocol still require verification.",
+    "Clinical guideline and journal sources: independent paraphrase and citation only; commercial reuse not cleared."
   ],
   "label_currency_check": {
     "checked": "2026-11-15",

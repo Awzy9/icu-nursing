@@ -2651,6 +2651,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-UIC-EXTRA-2026",
      "licence_class": "UNVERIFIED",
      "verified": "2026-11-23"
@@ -2659,7 +2664,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c587c32c06a934f4"
+   "hash": "f22517b3ff7d7b46"
   },
   {
    "key": "MD-02",
@@ -2674,6 +2679,11 @@
      "id": "L-EPINEPHRINE",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-ADRENALIN-IM-2025",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-21"
     },
     {
      "id": "S-AHRQ-TS",
@@ -2691,6 +2701,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-RCUK-SPECIAL-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-UIC-EXTRA-2026",
      "licence_class": "UNVERIFIED",
      "verified": "2026-11-23"
@@ -2699,7 +2719,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "10d87d2b01225b3b"
+   "hash": "b9e2026054eec3e4"
   },
   {
    "key": "MD-03",
@@ -2729,12 +2749,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "f66781ef7447fe48"
+   "hash": "e86552c4f7723451"
   },
   {
    "key": "MD-04",
@@ -2756,6 +2781,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-DOREMI-2021",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2764,12 +2794,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "2cccc52a4df74f00"
+   "hash": "da3950d675852c80"
   },
   {
    "key": "MD-05",
@@ -2791,6 +2826,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-DOREMI-2021",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2799,12 +2839,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "533fdcd1614d84fc"
+   "hash": "91f34e137a58aca4"
   },
   {
    "key": "MD-06",
@@ -3696,6 +3741,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-UIC-EXTRA-2026",
      "licence_class": "UNVERIFIED",
      "verified": "2026-11-23"
@@ -3704,7 +3754,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "0611c9dc2d45f53b"
+   "hash": "10eb287d822e7070"
   },
   {
    "key": "MD-31",

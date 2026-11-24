@@ -5178,6 +5178,22 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f22517b3ff7d7b46",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-02": [
@@ -5278,6 +5294,24 @@
     "gaps": 4,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "b9e2026054eec3e4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-EPINEPHRINE",
+     "S-ADRENALIN-IM-2025",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-RCUK-SPECIAL-2025",
+     "S-SSC-2026",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-03": [
@@ -5343,6 +5377,21 @@
      "S-AHRQ-TS",
      "S-FDA-PUMP",
      "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "e86552c4f7723451",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-VASOPRESSIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
     ],
     "gaps": 3,
     "required_sources": 0,
@@ -5426,6 +5475,22 @@
      "S-AHRQ-TS",
      "S-FDA-PUMP",
      "S-RCP-NEWS2"
+    ],
+    "gaps": 2,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "da3950d675852c80",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "S-AHRQ-TS",
+     "S-DOREMI-2021",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
     ],
     "gaps": 2,
     "required_sources": 0,
@@ -5523,6 +5588,22 @@
      "S-AHRQ-TS",
      "S-FDA-PUMP",
      "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "91f34e137a58aca4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MILRINONE",
+     "S-AHRQ-TS",
+     "S-DOREMI-2021",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026"
     ],
     "gaps": 3,
     "required_sources": 0,
@@ -7676,6 +7757,22 @@
      "S-AHRQ-TS",
      "S-FDA-PUMP",
      "S-RCP-NEWS2",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "10eb287d822e7070",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-SSC-2026",
      "S-UIC-EXTRA-2026"
     ],
     "gaps": 4,

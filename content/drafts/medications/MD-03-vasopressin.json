@@ -14,7 +14,7 @@
   "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
   "summary": "Vasopressor indicated to increase blood pressure in adults with vasodilatory shock who remain hypotensive despite fluids and catecholamines. Nursing focus: cardiac function and fluid/electrolyte monitoring, including after the drug is stopped.",
   "batch": 1,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Selected clinical guideline or trial evidence supplements the label; no full evidence appraisal or patient-specific prescribing guidance is supplied.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -40,6 +40,11 @@
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "SSC 2026 conditional recommendation for vasopressin as an adjunct when norepinephrine requirements rise"
     }
   ],
   "sections": {
@@ -50,6 +55,14 @@
           "text": "The label (Vasostrict) indicates vasopressin to increase blood pressure in adults with vasodilatory shock who remain hypotensive despite fluids and catecholamines.",
           "support": "sourced",
           "sources": [
+            "L-VASOPRESSIN"
+          ]
+        },
+        {
+          "text": "Vasopressin is an adjunct rather than the usual initial agent in adult septic shock; SSC 2026 conditionally favors adding it when norepinephrine requirements rise. A better arterial pressure does not rule out reduced cardiac output or regional ischemia.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026",
             "L-VASOPRESSIN"
           ]
         }
@@ -229,16 +242,26 @@
       "sources": [
         "L-VASOPRESSIN"
       ]
+    },
+    {
+      "kind": "assess",
+      "text": "After discontinuation, urgently report abrupt excessive watery urine, rising sodium or worsening fluid balance; monitor under the prescribed plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-VASOPRESSIN"
+      ]
     }
   ],
   "gaps": [
     "Dosing, rate and preparation: deliberately not included.",
-    "Surviving Sepsis and other guideline text was not read for this entry.",
+    "SSC 2026 selected vasopressor recommendations checked; full appraisal and local monitoring and withdrawal procedures remain outstanding.",
     "Other labels (different manufacturers or countries) may differ."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-    "FDA infusion pump page: verify reuse terms."
+    "FDA infusion pump page: verify reuse terms.",
+    "Clinical guideline and journal sources: independent paraphrase and citation only; commercial reuse not cleared."
   ],
   "label_currency_check": {
     "checked": "2026-11-16",

@@ -14,7 +14,7 @@
   "high_alert_note": "ISMP's 2024 high-alert acute-care classification includes intravenous inotropic medications; dobutamine is an IV inotrope. Risk classification does not define a specific monitoring or titration procedure; local formulary and policies control. Original FDA/manufacturer label sources remain the only medication instructions; ISMP copyrighted classification is independently traced in a separate audit report.",
   "summary": "Inotrope used for short-term inotropic support in adults with cardiac decompensation due to depressed contractility. Nursing focus: heart rate, blood pressure and rhythm effects, atrial fibrillation, hypersensitivity and sulfite reactions.",
   "batch": 1,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Selected clinical guideline or trial evidence supplements the label; no full evidence appraisal or patient-specific prescribing guidance is supplied.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -40,6 +40,16 @@
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "SSC 2026 inotrope recommendation for septic shock with cardiac dysfunction and persistent hypoperfusion"
+    },
+    {
+      "id": "S-DOREMI-2021",
+      "read": "partial",
+      "use": "DOREMI 2021 randomized comparison in cardiogenic shock; PubMed abstract only"
     }
   ],
   "sections": {
@@ -51,6 +61,13 @@
           "support": "sourced",
           "sources": [
             "L-DOBUTAMINE"
+          ]
+        },
+        {
+          "text": "In selected septic-shock patients with cardiac dysfunction and persistent hypoperfusion despite adequate fluid status and pressure, SSC 2026 conditionally supports dobutamine added to norepinephrine or epinephrine alone; certainty is very low. Inotropy is not a substitute for essential vasopressor support.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026"
           ]
         }
       ]
@@ -92,7 +109,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "It may cause a marked increase in heart rate or blood pressure, especially systolic pressure; the label says these effects usually reverse promptly when the dose is reduced by the prescriber.",
@@ -120,6 +137,13 @@
           "support": "sourced",
           "sources": [
             "L-DOBUTAMINE"
+          ]
+        },
+        {
+          "text": "DOREMI did not detect a significant difference in the composite clinical outcome between dobutamine and milrinone in cardiogenic shock. This does not prove equivalence; individual hemodynamics, rhythm and kidney function inform specialist selection.",
+          "support": "partial",
+          "sources": [
+            "S-DOREMI-2021"
           ]
         }
       ]
@@ -240,11 +264,12 @@
   ],
   "gaps": [
     "Dosing, correction of hypovolaemia and preparation: deliberately not included.",
-    "Clinical guideline text was not read for this entry."
+    "SSC 2026 selected inotrope recommendations and DOREMI 2021 abstract checked; full evidence and local cardiogenic-shock protocol appraisal outstanding."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-    "FDA infusion pump page: verify reuse terms."
+    "FDA infusion pump page: verify reuse terms.",
+    "Clinical guideline and journal sources: independent paraphrase and citation only; commercial reuse not cleared."
   ],
   "label_currency_check": {
     "checked": "2026-11-16",
