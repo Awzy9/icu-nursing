@@ -81,6 +81,13 @@
           "sources": [
             "L-HALOPERIDOL"
           ]
+        },
+        {
+          "text": "The registered label describes potentially fatal neuroleptic malignant syndrome with possible rhabdomyolysis and renal injury. Seek urgent assessment and the authorised cessation pathway; consider other causes of deterioration in parallel.",
+          "support": "partial",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
         }
       ]
     },
@@ -133,7 +140,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Escalate for palpitations, fainting, a new arrhythmia, a rising QTc or new rigidity, high temperature or marked confusion.",
+          "text": "Escalate for palpitations, fainting, a new arrhythmia, a rising QTc or new rigidity, high temperature or marked confusion. Activate emergency help for suspected neuroleptic malignant syndrome with physiological compromise; seek urgent clinician-directed cessation and supportive care.",
           "support": "partial",
           "sources": [
             "L-HALOPERIDOL"
@@ -210,6 +217,15 @@
     {
       "kind": "escalate",
       "text": "Report arrhythmia, syncope or QTc prolongation promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Escalate new rigidity with altered consciousness, fever or autonomic instability urgently; review ordered renal and muscle-injury results when neuroleptic malignant syndrome is suspected.",
       "critical": true,
       "support": "partial",
       "sources": [

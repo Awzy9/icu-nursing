@@ -81,6 +81,13 @@
           "sources": [
             "L-HYDROMORPHONE"
           ]
+        },
+        {
+          "text": "The registered label identifies altered drug exposure in renal and hepatic impairment and calls for close clinical monitoring. Worsening organ function warrants review of the prescribed regimen.",
+          "support": "partial",
+          "sources": [
+            "L-HYDROMORPHONE"
+          ]
         }
       ]
     },
@@ -217,6 +224,15 @@
     {
       "kind": "escalate",
       "text": "Call for help for respiratory depression or severe hypotension.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HYDROMORPHONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review renal and hepatic function and assess sedation, ventilation and perfusion closely when organ function is impaired. Request clinician or pharmacy review for unexpected prolonged opioid effects.",
       "critical": true,
       "support": "partial",
       "sources": [

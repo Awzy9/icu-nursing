@@ -88,6 +88,13 @@
           "sources": [
             "L-LABETALOL"
           ]
+        },
+        {
+          "text": "Beta blockade may obscure adrenergic warning signs of hypoglycaemia. Review glucose surveillance in at-risk patients and seek review of unexpected glucose changes.",
+          "support": "partial",
+          "sources": [
+            "L-LABETALOL"
+          ]
         }
       ]
     },
@@ -210,6 +217,15 @@
     {
       "kind": "assess",
       "text": "Review asthma, conduction disease and heart failure history; assess breathing, heart rate, blood pressure and postural tolerance before mobilisation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LABETALOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check ordered glucose results in patients at hypoglycaemia risk; do not rely on tachycardia as a warning sign. Assess new altered consciousness or sweating and follow the authorised hypoglycaemia pathway.",
       "critical": true,
       "support": "partial",
       "sources": [

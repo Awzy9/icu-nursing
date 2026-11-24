@@ -81,6 +81,13 @@
           "sources": [
             "L-NITROGLYCERIN"
           ]
+        },
+        {
+          "text": "The registered IV nitroglycerin label describes possible attenuation of heparin's anticoagulant effect. Notify the treating team of concomitant use and therapy changes so that surveillance and treatment can be reviewed.",
+          "support": "partial",
+          "sources": [
+            "L-NITROGLYCERIN"
+          ]
         }
       ]
     },
@@ -194,6 +201,15 @@
     {
       "kind": "escalate",
       "text": "Report hypotension, fainting or worsening chest pain.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NITROGLYCERIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent heparin therapy and review ordered anticoagulation results with the clinical team, particularly when nitrate therapy changes. Do not independently change either prescription.",
       "critical": true,
       "support": "partial",
       "sources": [

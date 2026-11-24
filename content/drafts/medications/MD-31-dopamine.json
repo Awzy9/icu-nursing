@@ -87,6 +87,13 @@
           "sources": [
             "L-DOPAMINE"
           ]
+        },
+        {
+          "text": "The registered label warns that sudden cessation may cause marked hypotension. Coordinate planned withdrawal with the responsible clinician and avoid accidental interruption of essential support; assess volume status and perfusion under the prescribed plan.",
+          "support": "partial",
+          "sources": [
+            "L-DOPAMINE"
+          ]
         }
       ]
     },
@@ -146,7 +153,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Suspected dopamine extravasation requires stopping administration through the affected IV site, alerting the responsible clinician and pharmacy team, and arranging continuity of essential haemodynamic support through approved alternative access. Do not force-flush the cannula or remove it before the trained team reviews the local aspiration/antidote procedure.",
+          "text": "Suspected dopamine extravasation requires stopping administration through the affected IV site, alerting the responsible clinician and pharmacy team, and arranging continuity of essential haemodynamic support through approved alternative access. Do not force-flush the cannula or remove it before the trained team reviews the local aspiration/antidote procedure. Activate emergency help for interruption with severe instability, dangerous arrhythmia or suspected organ ischaemia.",
           "support": "partial",
           "sources": [
             "L-DOPAMINE",
@@ -231,6 +238,15 @@
     {
       "kind": "escalate",
       "text": "Report ischaemia signs, arrhythmia or an interrupted infusion immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-DOPAMINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Monitor perfusion and blood pressure closely during any interruption or planned cessation; report abrupt loss of support immediately. Review concurrent interacting medicines with pharmacy.",
       "critical": true,
       "support": "partial",
       "sources": [

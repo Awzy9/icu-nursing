@@ -88,6 +88,13 @@
           "sources": [
             "L-LORAZEPAM"
           ]
+        },
+        {
+          "text": "The registered intermittent-use injection label warns that repeated exposure can produce dependence and abrupt reduction can trigger severe withdrawal, including seizures. A patient-specific withdrawal plan is a clinician decision, not an instruction to maintain unsafe sedation.",
+          "support": "partial",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
         }
       ]
     },
@@ -224,6 +231,15 @@
     {
       "kind": "assess",
       "text": "Review renal function and ordered acid-base or osmolality results when toxicity is suspected; report unexplained lactic acidosis or hypotension. Assess ventilation and arousability, not oxygen saturation alone.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess possible withdrawal after therapy reduction, especially after repeated exposure. Report new tremor, agitation, autonomic changes or seizure activity urgently; clarify the authorised cessation plan.",
       "critical": true,
       "support": "partial",
       "sources": [

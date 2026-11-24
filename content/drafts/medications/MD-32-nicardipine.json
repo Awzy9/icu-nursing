@@ -88,6 +88,13 @@
           "sources": [
             "L-NICARDIPINE"
           ]
+        },
+        {
+          "text": "The registered label describes possible negative inotropic effects in some patients with heart failure. Closely assess the response when a beta-blocker is also prescribed.",
+          "support": "partial",
+          "sources": [
+            "L-NICARDIPINE"
+          ]
         }
       ]
     },
@@ -217,6 +224,15 @@
     {
       "kind": "assess",
       "text": "Closely monitor blood pressure and heart rate during and after infusion; review the prescribed target and check for hypotension, tachycardia and access-site injury.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NICARDIPINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess for worsening heart failure or reduced perfusion, particularly with significant ventricular dysfunction or concurrent beta-blocker therapy; report new breathlessness or circulatory deterioration.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -95,6 +95,13 @@
           "sources": [
             "L-ESMOLOL"
           ]
+        },
+        {
+          "text": "The registered label describes severe local tissue reactions, especially following extravasation. Assess site changes promptly, stop delivery through an injured site under local policy and obtain clinical assistance.",
+          "support": "partial",
+          "sources": [
+            "L-ESMOLOL"
+          ]
         }
       ]
     },
@@ -247,6 +254,15 @@
     {
       "kind": "assess",
       "text": "Review ordered serum electrolytes, particularly potassium in renal impairment or haemodialysis; assess ECG, heart rate, perfusion and breathing.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ESMOLOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Inspect the IV site for pain, swelling, inflammation, blistering or skin damage. Escalate suspected tissue injury and arrange an approved alternative site if needed.",
       "critical": true,
       "support": "partial",
       "sources": [

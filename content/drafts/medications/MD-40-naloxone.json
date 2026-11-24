@@ -81,6 +81,13 @@
           "sources": [
             "L-NALOXONE"
           ]
+        },
+        {
+          "text": "The registered label reports serious cardiovascular and pulmonary events after opioid reversal, particularly in postoperative patients with cardiac risk factors; causality is not established for every event. Continued surveillance and immediate assessment of deterioration remain essential.",
+          "support": "partial",
+          "sources": [
+            "L-NALOXONE"
+          ]
         }
       ]
     },
@@ -147,7 +154,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Call for help for recurring sedation or slow breathing, a new arrhythmia, marked blood pressure changes or withdrawal signs.",
+          "text": "Call for help for recurring sedation or slow breathing, a new arrhythmia, marked blood pressure changes or withdrawal signs. Activate emergency response for inadequate breathing, suspected pulmonary oedema, seizure or circulatory compromise; support ventilation and circulation under the local emergency pathway.",
           "support": "partial",
           "sources": [
             "L-NALOXONE"
@@ -224,6 +231,15 @@
     {
       "kind": "escalate",
       "text": "Call for help if sedation or slow breathing returns.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NALOXONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "After reversal, monitor breathing, responsiveness and circulation for recurrent depression, acute withdrawal, arrhythmia or new respiratory distress. Activate emergency help for suspected pulmonary oedema or circulatory collapse.",
       "critical": true,
       "support": "partial",
       "sources": [
