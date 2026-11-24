@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Management of Adult Patients With Oxygen in the Acute Care Setting (Respir Care 2022;67(1):115-128) – full text read; modified RAND/UCLA method", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – NIV-interface skin assessment only", "NICE CG103 Delirium (updated 2023) – pulse oximeter accuracy statement only", "ERC Guidelines 2025 Adult ALS – oxygen and defibrillation safety (see D02-T15)"]
-sources: [S-AARC-O2, S-RCP-NEWS2, S-NICE-CG103, S-ERC-ALS-2025, S-FDA-OXIMETER-BASICS, S-UKROX-2025]
+sources: [S-AARC-O2, S-RCP-NEWS2, S-NICE-CG103, S-ERC-ALS-2025, S-FDA-OXIMETER-BASICS, S-UKROX-2025, S-ATS-NIRS-2026]
 sources_not_read: [S-BTS-OXYGEN-2017]
 independently_written_note: "Original wording. The AARC oxygen CPG PDF (copyright Daedalus Enterprises, cite-only) was read: abstract, Table of recommendations, and the sections on targets, high-flow nasal cannula and humidification. BTS 2017 oxygen guideline and national oxygen-prescribing standards could NOT be accessed, so jurisdiction differences are described only as a limitation. ERC material is paraphrased only; ERC commercial use needs an agreement."
 ---
@@ -64,6 +64,8 @@ SpO₂ with trend and probe check; respiratory rate and effort; mental state; he
 | Humidification | Consider for flows above 4 L/min to improve comfort (level C) | Humidification is for comfort; evidence for outcomes is lacking |
 
 Evidence limitations stated in the guideline: low-certainty evidence, a modified RAND/UCLA appropriateness method (expert panel ratings, not GRADE), and heterogeneous studies.
+
+**ATS 2026 update — distinguish oxygenation from ventilation.** For adults with acute hypoxaemic failure, ATS strongly supports HFNC; NIV or CPAP is a conditional option. In acute hypercapnic failure, NIV has stronger support; HFNC is a conditional alternative only for selected less severe cases with mild acidaemia and immediate NIV escalation available. A satisfactory SpO₂ does not exclude inadequate ventilation. Report increasing respiratory effort, fatigue, altered consciousness or worsening ordered blood gas results promptly; do not let a reassuring saturation delay urgent assessment. Modality selection and intubation decisions remain with the trained team. This is an abstract-level update, not an independent device prescription.
 
 ## 10. Warning signs and red flags
 SpO₂ below the ordered range despite increased oxygen; rising respiratory rate or accessory-muscle use; new confusion, drowsiness or agitation; exhaustion; chest pain; low blood pressure or poor perfusion; falling SpO₂ after extubation or when turned; oxygen supply failure; device dislodged; very high SpO₂ in a patient with COPD or at risk of retaining carbon dioxide; smell of burning or sparking near oxygen.
@@ -175,10 +177,13 @@ D. A patient on room air with an SpO₂ of 97% awaiting a scan.
 - FDA Pulse Oximeter Basics. https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics (selected recommendation or abstract text, accessed 2026-11-24)
 - UK-ROX randomized trial (2025). https://pubmed.ncbi.nlm.nih.gov/40501321/ (selected recommendation or abstract text, accessed 2026-11-24)
 
+- Goel NN et al. ATS clinical practice guideline on noninvasive respiratory support for adults with acute respiratory failure. Am J Respir Crit Care Med. 2026;212:2135–2158. https://pubmed.ncbi.nlm.nih.gov/42371750/ (abstract checked 2026-11-24; full text not appraised).
+
 ## 19. Local protocol note
 Target ranges, who may titrate, device choice and monitoring frequency follow the institution's oxygen policy and the prescriber's order.
 
 ## 20. Evidence, applicability and open questions
+- ATS 2026 abstract checked on 2026-11-24 for support selection and escalation principles only; publisher article retrieval failed. Exact patient selection, contraindications, device settings, certainty tables, local protocols and reuse rights require review. This does not close the outstanding BTS source requirement.
 - Statements not drawn from AARC text, and their status: oxygen as a prescribed medicine and who sets targets (the RCP NEWS2 report states that the decision to use the 88–92% scale should be made by a competent clinical decision-maker and recorded; this is UK practice, other jurisdictions vary); the carbon-dioxide-retention rationale is now supported by the NEWS2 full text; probe and perfusion checks (NICE CG103 only covers oximeter accuracy).
 - Source quality: AARC 2022 uses a modified RAND/UCLA method with mostly level C (low) evidence; the ranges are committee support rather than graded strong recommendations. It covers adults in acute care; it does not address prehospital care, children, or hypercapnic respiratory failure management.
 - Jurisdiction: the BTS 2017 guideline and other national standards (for example on prescribing oxygen and target ranges for patients at risk of hypercapnic failure) were not accessible, so differences from AARC could not be described. Pulse oximeter accuracy and oxygen prescribing practice vary by country.

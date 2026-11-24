@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – monitoring of lung-protective ventilation, adults and children", "ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies (Intensive Care Med 2023;49:727-759; CC BY-NC) – ARDS only"]
-sources: [S-AARC-PVA, S-ESICM-ARDS-2023]
+sources: [S-AARC-PVA, S-ESICM-ARDS-2023, S-SAUDI-MV-2026]
 independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (the register source; full-text PDF; cite-only) and the ESICM 2023 ARDS guideline (open access, CC BY-NC – non-commercial) were both read in full text. Content is limited to what the ESICM text supports; ventilator mode details are not covered."
 ---
 # Ventilator parameters and lung-protective ventilation – what the nurse monitors
@@ -66,6 +66,8 @@ Per policy, at least hourly in unstable patients and with every reassessment: Fi
 | Driving pressure, plateau limits | ESICM lists limiting driving or plateau pressure as a research gap and makes no recommendation on a driving-pressure target | See AARC rows below: the two documents differ in scope, not in direction |
 | **AARC 2024 – monitoring (all ventilated patients; population "all" in its table)** | Assess plateau pressure (strong, high certainty; limit ≤ 30 cmH₂O adults, ≤ 28 paediatric in its table); assess expired tidal volume against 4–8 mL/kg PBW and document it per kg PBW (strong, high); assess PEEP and auto-PEEP (strong, high); suggest assessing driving pressure (conditional, low certainty; defined as valid plateau pressure minus **total** PEEP, with table target ≤ 15 cmH₂O); suggest assessing FiO₂ to avoid both hypoxaemia and hyperoxaemia (conditional, very low) | Document tidal volume per kg PBW as well as the absolute volume; report values outside the unit's limits |
 | Who adjusts settings | AARC states hospitals should empower bedside clinicians to adjust ventilator settings using non-physician-directed protocols | Whether a nurse may adjust anything is local protocol and role definition; default is **no** |
+
+**Saudi national adult ventilation guidance (February 2026, executive summary Q1–3).** For ARDS, the Saudi panel strongly supports lung-protective low tidal volume and higher PEEP strategies, both with moderate certainty. Higher PEEP is not automatically appropriate for each patient: report haemodynamic intolerance, possible right ventricular compromise or overdistension to the team. The panel did not endorse routine recruitment manoeuvres as standard care. These are ARDS-specific strategy recommendations; settings remain clinician-led and bedside monitoring must continue.
 
 ## 10. Warning signs and red flags
 Falling delivered tidal volume or rising airway pressures; sudden desaturation; high-pressure or low-volume alarms; new asynchrony or "fighting the ventilator"; chest not moving equally; loss of end-tidal CO₂ trace; subcutaneous emphysema; hypotension with rising pressures; accidental disconnection or extubation; during proning: tube displacement, line dislodgement, facial or eye injury, new pressure injury, haemodynamic instability.
@@ -171,10 +173,13 @@ D. A gradual reduction in oxygen support by the team with stable ventilation and
 - Goodfellow LT, Miller AG, Varekojis SM, et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054. https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)
 - Grasselli G, Calfee CS, Camporota L, et al. ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies. Intensive Care Med. 2023;49:727-759. doi:10.1007/s00134-023-07050-7. https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/ (accessed 2026-11-14)
 
+- Saudi Health Council national guideline task force. Saudi Guideline for Mechanical Ventilation in Adults – Executive Summary. Saudi J Med Med Sci. 2026;14(Suppl 1):S1–S6. https://pmc.ncbi.nlm.nih.gov/articles/PMC12987643/ (selected recommendation text accessed 2026-11-24; CC BY-NC-ND 4.0, citation only; complete guideline and evidence profiles not appraised).
+
 ## 19. Local protocol note
 Ventilator targets, alarm limits, weaning, proning and recruitment protocols follow the institution's policies and the respiratory therapy team.
 
 ## 20. Evidence, applicability and open questions
+- Saudi 2026 national executive summary Q1–3 checked for ARDS ventilation strategy and safety boundaries. No local ventilator titration protocol or recruitment procedure is implied. Complete evidence profiles, institution-specific practice and independent review remain outstanding.
 - Source quality: two graded guidelines with different scope. **ESICM 2023** is a European society guideline for ARDS only (CC BY-NC). **AARC 2024** is a respiratory-therapy guideline on monitoring (strong recommendations, mostly high certainty for assessment; conditional for driving pressure and FiO₂); it applies to adults and children and does not say who performs the assessment. Population-specific: the ESICM recommendations apply to patients with ARDS; do not generalise them (for example prone positioning or neuromuscular blockade) to all ventilated patients.
 - International applicability: broadly applicable; ECMO and some practices depend on resources.
 - Not covered: modes, alarms, weaning (see other topics), and hypercapnia targets.

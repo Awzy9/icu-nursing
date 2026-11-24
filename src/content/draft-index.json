@@ -171,6 +171,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-NIRS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -199,7 +204,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "6774a33c3a98c952"
+   "hash": "fd943b04c1fa0349"
   },
   {
    "key": "D01-T07",
@@ -219,12 +224,17 @@
      "id": "S-ESICM-ARDS-2023",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SAUDI-MV-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "5ec1acd5cd4822de"
+   "hash": "5961aa08df38fc8a"
   },
   {
    "key": "D01-T11",
@@ -981,6 +991,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-SAUDI-MV-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -989,7 +1004,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "f0950834ca69b699"
+   "hash": "e98143464d53780b"
   },
   {
    "key": "D02-T02",

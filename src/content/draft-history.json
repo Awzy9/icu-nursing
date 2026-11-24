@@ -445,6 +445,23 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "fd943b04c1fa0349",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-ATS-NIRS-2026",
+     "S-ERC-ALS-2025",
+     "S-FDA-OXIMETER-BASICS",
+     "S-NICE-CG103",
+     "S-RCP-NEWS2",
+     "S-UKROX-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T07": [
@@ -527,6 +544,19 @@
     "sources": [
      "S-AARC-PVA",
      "S-ESICM-ARDS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5961aa08df38fc8a",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ESICM-ARDS-2023",
+     "S-SAUDI-MV-2026"
     ],
     "gaps": 0,
     "required_sources": 0,
@@ -2349,6 +2379,22 @@
      "S-ATS-CHEST-2017",
      "S-ATS-NIRS-2026",
      "S-PERIEXT-2026",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "e98143464d53780b",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-SBT",
+     "S-ATS-CHEST-2017",
+     "S-ATS-NIRS-2026",
+     "S-PERIEXT-2026",
+     "S-SAUDI-MV-2026",
      "S-SCCM-PADIS"
     ],
     "gaps": 0,
