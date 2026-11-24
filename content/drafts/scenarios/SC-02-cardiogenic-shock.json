@@ -151,7 +151,7 @@
       ],
       "options": [
         {
-          "text": "Assess airway, breathing and perfusion immediately, maintain ECG and pressure monitoring, and activate the urgent cardiac-shock response while handing over the deteriorating trend.",
+          "text": "Assess airway, breathing and perfusion now; maintain ECG and pressure monitoring, activate the urgent cardiac-shock response and report the deteriorating trend.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "text": "Write the readings in the chart and recheck at the usual time.",
+          "text": "Record the pressure, urine output and respiratory findings in the chart, compare them with the earlier readings, and defer further assessment and escalation until the next scheduled observation round.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -177,7 +177,7 @@
           ]
         },
         {
-          "text": "Turn up the inotrope infusion yourself to bring the pressure back.",
+          "text": "Review the running inotrope and increase its rate independently to restore the previous blood pressure, then monitor the response and notify the treating team after the adjustment.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -224,7 +224,7 @@
       ],
       "options": [
         {
-          "text": "Assess responsiveness, breathing and pulse/perfusion immediately, activate emergency cardiac help, maintain ECG and prepare to follow the approved deterioration or resuscitation pathway.",
+          "text": "Assess responsiveness, breathing and pulse/perfusion now, activate emergency cardiac help, maintain ECG and prepare for the approved deterioration or resuscitation pathway.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -238,7 +238,7 @@
           ]
         },
         {
-          "text": "Check the electrodes first and report only if the beats continue for a long time.",
+          "text": "Check electrode adhesion and lead quality first, observe the ventricular beats and document their frequency, then report the findings only if the ectopy continues for a prolonged period.",
           "points": 0,
           "next": 3,
           "scope": "monitoring",
@@ -251,7 +251,7 @@
           ]
         },
         {
-          "text": "Silence the alarm because the beats are probably movement artefact.",
+          "text": "Pause the audible alarm and review the trace for movement artefact, assuming the ectopy is caused by poor signal quality; continue monitoring without immediate patient assessment or emergency escalation.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -297,7 +297,7 @@
       ],
       "options": [
         {
-          "text": "Continue reassessing perfusion, congestion, rhythm, urine output and access sites. Communicate persistent oliguria, ordered lactate and organ-function trends, and new bleeding or limb changes to the trained team.",
+          "text": "Reassess perfusion, congestion, rhythm, urine output and access sites; report persistent oliguria, ordered lactate and organ-function trends, bleeding or limb changes.",
           "points": 2,
           "next": null,
           "scope": "monitoring",
@@ -315,7 +315,7 @@
           ]
         },
         {
-          "text": "Offer to operate the support device because it looks simple.",
+          "text": "Review the available support device and volunteer to operate it without device-specific training, so that the specialist team can concentrate on reviewing the ongoing shock and the patient's other treatment needs.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -327,7 +327,7 @@
           ]
         },
         {
-          "text": "Stop frequent checks now that the readings look better.",
+          "text": "Document the improved pressure and reduced ectopy, return to routine observation intervals and postpone further assessment of urine output and pulmonary congestion until the next scheduled review.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

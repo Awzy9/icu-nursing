@@ -147,7 +147,7 @@
       ],
       "options": [
         {
-          "text": "Assess the patient immediately for airway, breathing and perfusion, and activate urgent clinical help now for new hypotension with reduced responsiveness. Ask a colleague to verify the blood-pressure signal, obtain repeat readings and review current infusions while you remain with the patient.",
+          "text": "Assess airway, breathing and perfusion immediately; activate urgent clinical help now. Ask a colleague to verify pressure, repeat readings and review infusions while you remain with the patient.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "text": "Assume the reading is wrong, silence the alarm and check again at the next routine round.",
+          "text": "Treat the low-pressure alarm as a likely measurement error, silence it and document the earlier readings and current heart rate; defer the next blood-pressure check and bedside assessment to the routine round.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -177,7 +177,7 @@
           ]
         },
         {
-          "text": "Give an unprescribed fluid bolus from the ward stock before assessment or calling for help.",
+          "text": "Assume the falling pressure reflects a fluid deficit and give a bolus from ward stock without an order or authorised pathway; obtain repeat readings and call for assessment only after the bolus.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
@@ -228,7 +228,7 @@
       ],
       "options": [
         {
-          "text": "Update the responding team urgently with SBAR: blood-pressure and pulse trends, mental state, capillary refill and skin findings, low urine output, drain and stool losses, active vasopressors and access-site findings. Continue patient assessment and execute only ordered or protocol-authorised care.",
+          "text": "Update the responding team urgently: BP, pulse, mental state, capillary refill, skin, urine, losses, vasopressors and access. Continue assessment and ordered or protocol-authorised care.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -243,7 +243,7 @@
           ]
         },
         {
-          "text": "Increase the vasopressor infusion yourself until the pressure rises.",
+          "text": "Review the current vasopressor rate and raise it independently until pressure improves, then communicate the new reading to the team without first reporting the ongoing perfusion findings or access concerns.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -255,7 +255,7 @@
           ]
         },
         {
-          "text": "Tell the family the patient is just tired and carry on with the routine care.",
+          "text": "Reassure the family that the change in alertness reflects tiredness, record the losses and urine output for the next handover, and continue routine care without reporting the new perfusion concerns urgently.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -306,7 +306,7 @@
       ],
       "options": [
         {
-          "text": "Escalate again using the unit's emergency chain because the patient's confusion and poor perfusion persist, stay with the patient, reassess ABC and trend findings, and coordinate the urgent team's authorised investigation and treatment.",
+          "text": "Escalate again through the emergency chain, stay with the patient, reassess ABC and perfusion trends, and coordinate the urgent team's authorised care.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -319,7 +319,7 @@
           ]
         },
         {
-          "text": "Keep rechecking the pressure alone for a few more minutes before calling anyone.",
+          "text": "Continue repeating blood-pressure readings and recording the results for a few more minutes, delaying a further emergency call until the trend is clearer despite the new confusion and cold skin.",
           "points": 0,
           "next": null,
           "scope": "monitoring",
@@ -331,7 +331,7 @@
           ]
         },
         {
-          "text": "Set the patient upright to improve breathing and leave to find a doctor.",
+          "text": "Sit the patient upright to improve breathing, leave the bedside to find a doctor and report the earlier pressure readings when you locate the team, then return to reassess the patient.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

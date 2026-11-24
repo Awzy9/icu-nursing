@@ -121,7 +121,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess airway, breathing and circulation, summon urgent clinical help for suspected sepsis, and communicate perfusion findings and trends. Prepare ordered lactate sampling without delaying emergency treatment. Coordinate blood cultures and prompt prescribed antimicrobials in parallel with emergency assessment; communicate any delay.",
+          "text": "Stay with the patient; assess ABC, summon urgent clinical help for suspected sepsis and report perfusion. Coordinate ordered lactate, cultures and prompt prescribed antimicrobials in parallel; report delays.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Repeat the observations in an hour and see whether the score changes.",
+          "text": "Record the altered alertness, urine output and early-warning score, and schedule repeat observations in an hour. Use the repeat score to decide whether urgent clinical assessment and infection treatment are necessary.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -148,7 +148,7 @@
           ]
         },
         {
-          "text": "Give a regular antipyretic and see whether the score settles.",
+          "text": "Give the prescribed routine antipyretic, document the temperature and other observations, and wait to see whether the early-warning score settles before requesting urgent assessment for the suspected infection.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -207,7 +207,7 @@
           ]
         },
         {
-          "text": "Check the site when the infusion is set up and not again.",
+          "text": "Check the cannula at infusion setup, document its appearance and focus subsequent checks on blood pressure and urine output, without repeating the site assessment while the infusion runs.",
           "points": 0,
           "next": 3,
           "scope": "monitoring",
@@ -219,7 +219,7 @@
           ]
         },
         {
-          "text": "Disconnect the infusion briefly to flush the line when it seems slow.",
+          "text": "Review the pump when the infusion seems slow, briefly disconnect the vasopressor to flush the line, then reconnect and reassess the pressure rather than using the authorised access pathway.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "text": "Slow the infusion and recheck in an hour.",
+          "text": "Document the new swelling and pallor, reduce the rate through the affected cannula to maintain some circulatory support, and reassess the site in an hour before escalating.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -284,7 +284,7 @@
           ]
         },
         {
-          "text": "Massage the area to disperse the drug.",
+          "text": "Massage the swollen area to disperse the drug, continue observing the site and the blood pressure, and request the team's review if the local changes persist.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
