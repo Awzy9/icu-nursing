@@ -58,10 +58,11 @@
     },
     {
       "name": "Delivered dose against prescription",
-      "explanation": "The prescribed treatment and actual delivered treatment are not necessarily equal. Interruptions or reduced filter performance may reduce delivery; record downtime and report shortfalls for clinician assessment.",
+      "explanation": "The prescribed treatment and actual delivered treatment are not necessarily equal. Time off therapy during transport, circuit clotting and equipment preparation can reduce delivered treatment. Document the duration and reason for interruptions and report discrepancies between prescribed and delivered dose; the authorised team evaluates the need for prescription changes. Delivered solute clearance is not the same as net patient fluid removal.",
       "support": "partial",
       "sources": [
-        "S-KDIGO-AKI-2012"
+        "S-KDIGO-AKI-2012",
+        "S-RRT-MULTIDISC-2026"
       ]
     },
     {
