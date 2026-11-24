@@ -94,6 +94,13 @@
             "S-CDC-IC",
             "S-CDC-ISOLATION-2007"
           ]
+        },
+        {
+          "text": "Clean and disinfect reusable shared equipment before it passes to another patient, using a product compatible with the equipment and the required wet contact time. Follow product instructions and the facility's organism-specific cleaning policy; a quick wipe is not necessarily adequate disinfection.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-IC"
+          ]
         }
       ]
     },
@@ -255,6 +262,15 @@
       "sources": [
         "S-CDC-IC",
         "S-CDC-ISOLATION-2007"
+      ]
+    },
+    {
+      "phase": "procedure",
+      "text": "Clean and disinfect reusable shared equipment before it passes to another patient, using a product compatible with the equipment and the required wet contact time. Follow product instructions and the facility's organism-specific cleaning policy; a quick wipe is not necessarily adequate disinfection.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-IC"
       ]
     }
   ],
