@@ -97,7 +97,7 @@ A patient who looks distressed, cyanosed or is not moving the chest; loss of ven
 | Decide ventilator mode and settings, alarm philosophy and limits; troubleshoot and service the machine; remove it from use and repair | Prescriber and respiratory therapist (settings); biomedical engineering (device) |
 
 ## 12. Escalation criteria
-Call for help immediately when the patient is not adequately ventilated or the cause is not found at once; escalate for technical faults, repeated unexplained alarms, or limits that appear unsafe.
+Assess the patient first and call for emergency help immediately if ventilation is inadequate or the patient is unstable. Support effective oxygenation and ventilation using the unit's authorised rescue procedure while help is summoned; do not delay rescue while troubleshooting an alarm. Alarm names, priorities, silence functions and permitted checks differ by device and software version. Escalate technical faults, repeated unexplained alarms or unsafe limits without overriding protective settings; trained staff follow the exact manufacturer instructions and local protocol.
 SBAR — **S:** bed X, ventilator high-priority alarm; patient desaturating and distressed. **B:** day 3 on mechanical ventilation, thick secretions earlier. **A:** possible blocked or displaced airway or circuit problem; I am ventilating with the emergency bag. **R:** please come now to assess the airway; please also check the ventilator and settings.
 
 ## 13. Potential complications

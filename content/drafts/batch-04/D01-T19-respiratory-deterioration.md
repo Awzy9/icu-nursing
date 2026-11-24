@@ -73,7 +73,7 @@ Rising respiratory rate; rising oxygen requirement; falling SpO₂ despite oxyge
 | Choosing Scale 2 or the oxygen target for hypercapnic patients; diagnosing the cause; starting HFNC, NIV or ventilation; antibiotics, bronchodilators, diuretics; ceiling-of-care decisions | Prescriber / responding clinician decision |
 
 ## 12. Escalation criteria
-Escalate according to the bands above and **whenever the nurse is concerned**. In ICU, escalate any sustained rise in oxygen requirement, increasing work of breathing or new confusion.
+Escalate according to the applicable track-and-trigger policy and whenever the nurse is concerned. Activate emergency response for threatened airway, inadequate ventilation, severe hypoxaemia, exhaustion, rapidly worsening consciousness or circulatory instability, regardless of the score. NEWS2 ward observation intervals are not an ICU monitoring schedule; critical care requires a patient-specific monitoring and escalation plan. Do not wait for the next observation or score before responding to deterioration.
 SBAR — **S:** bed X, NEWS2 is [score] with respiratory rate [x] and SpO₂ [x] on [device/flow]. **B:** day 2 after surgery/pneumonia, target [range], trend over 6 hours. **A:** worsening respiratory failure; I am concerned about exhaustion. **R:** please review now; consider a blood gas and escalation of support; I will repeat observations every [interval].
 
 ## 13. Potential complications

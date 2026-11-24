@@ -73,7 +73,7 @@ Loss of capnography trace; sudden desaturation; loss of chest movement or breath
 | Sedation, analgesia and restraint orders | Prescriber decision (nurse titrates per protocol) |
 
 ## 12. Escalation criteria
-Immediate escalation for: suspected displacement or obstruction, loss of capnography trace, severe desaturation, cuff failure that cannot be corrected, accidental extubation, or new bleeding from the airway.
+Activate emergency help immediately for suspected displacement, obstruction, loss of capnography with inadequate ventilation, severe desaturation, accidental extubation or significant airway bleeding. Assess oxygenation and ventilation and support the airway under the emergency protocol with trained staff. Do not blindly advance or reinsert a displaced tube, or add cuff air merely to overcome a leak; maintain securement as appropriate while awaiting skilled assessment. AARC 2024 supports checking placement, securement and cuff pressure with a manometer.
 SBAR — **S:** bed X, tube has moved out by 3 cm from the recorded depth and there is an audible leak. **B:** day 5 ventilation, agitated overnight, last cuff check [time]. **A:** possible partial displacement. **R:** please come now; I am holding the tube secure, giving oxygen and monitoring; I have not re-inflated beyond policy.
 
 ## 13. Potential complications

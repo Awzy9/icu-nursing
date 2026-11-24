@@ -73,7 +73,7 @@ Behavioural signs of pain on the unit tool; agitation or ventilator asynchrony t
 | Choosing the analgesic, route, dose or adjunct; changing the plan | Prescriber / pharmacist decision |
 
 ## 12. Escalation criteria
-Escalate when pain remains uncontrolled after protocol steps, when the pattern is new or suggests a complication, when adverse effects occur, or when the patient cannot be assessed.
+Escalate uncontrolled or new severe pain, suspected complications, adverse effects or inability to assess pain. Activate emergency help for suspected analgesic-related respiratory or circulatory compromise; assess ventilation and arousability. When pain behaviour cannot be observed, including during neuromuscular blockade, document the limitation rather than recording an assumed zero score. Vital signs are cues for further assessment, not a validated pain score. Verify the prescribed analgesia plan and seek clinical review.
 SBAR — **S:** bed X, ventilated patient with a rising behavioural pain score after turning. **B:** day 2 after laparotomy, current analgesia per chart, sedation score [x]. **A:** inadequate pain control; no sign of other cause so far. **R:** please review analgesia; I will reassess after the dressing change and in 30 minutes.
 
 ## 13. Potential complications

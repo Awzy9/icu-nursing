@@ -74,7 +74,7 @@ Oxygen mask or cannula still near the chest; hissing or sparking; poor pad conta
 | Changing pad position to a vector-change position or double defibrillation | Team-leader decision |
 
 ## 12. Escalation criteria
-Call the arrest team immediately for any suspected arrest. Escalate equipment problems (defibrillator not charging, pad failure) at once and call for a second device. After the event, report incidents (oxygen fire risk, shock exposure, delay) through the incident system.
+Call the arrest team immediately for suspected arrest and begin resuscitation according to training. Continue manual compressions during charging, clear all contact with the patient during shock delivery, and resume manual compressions immediately afterward. ERC 2025 distinguishes mechanical compression devices: a manual shock can be delivered without interrupting mechanical chest compression when used within the device and team safety procedure. Synchronized cardioversion for an indicated rhythm with a pulse is a distinct procedure. Escalate equipment faults immediately and obtain a replacement device; report safety incidents after the event.
 SBAR for the arrival of the team — **S:** bed X, cardiac arrest, compressions started at [time]. **B:** known [cause if known], on [oxygen/ventilator], pads applied, monitor shows [rhythm]. **A:** shockable rhythm confirmed by the leader. **R:** please take over leadership; I will keep compressions, oxygen safety and the log going.
 
 ## 13. Potential complications

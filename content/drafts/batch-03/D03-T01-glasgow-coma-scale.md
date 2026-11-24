@@ -41,7 +41,7 @@ Consciousness can change quickly in brain injury, sedation, metabolic disturbanc
 
 ## 7. Nursing responsibilities
 - Use the same structured approach each time and the same stimuli; stimulate in a stepped way and only as much as needed.
-- Record the components and rating terms, not just a number; record "non testable" with the reason.
+- Record the components and rating terms, not just a number; record "non testable" with the reason. If any component is non testable, omit the composite total rather than assigning a score of 1 or a fabricated value. Continue documenting the assessable components and trends.
 - Compare with previous assessments; report change immediately rather than waiting for the next scheduled round.
 - Account for sedation, analgesia, paralytics, intubation and injuries; record doses and timing so the team can interpret findings.
 - Maintain safety and dignity during stimulation; avoid repeated painful stimulation beyond what is needed; use finger-tip pressure before trapezius or supraorbital pressure.
@@ -76,7 +76,7 @@ A fall in any component, especially in the motor response, or a falling total ov
 | Discussing prognosis with relatives | Medical team decision |
 
 ## 12. Escalation criteria
-Escalate immediately for any fall in GCS (especially a one-point or greater fall in motor response, or a fall in total), new pupil changes, new focal signs, seizure, or inability to complete assessment because of a new factor.
+Escalate immediately for a fall in assessable GCS components, new pupil changes, focal signs, seizures or an unexplained new assessment limitation. Assess airway, breathing and circulation, summon urgent help for acute deterioration and record possible confounders. Do not wait for a composite score when a component is non testable. Sedation interruption is a clinician-directed safety decision, not a prerequisite for escalation.
 SBAR — **S:** bed X, motor response has changed from localising to abnormal flexion in the last hour. **B:** day 2 after subarachnoid haemorrhage, sedation off since 06:00, pupils equal and reactive earlier, sodium and glucose normal. **A:** possible neurological deterioration. **R:** please review now; I will repeat the assessment every [interval] and check pupils and vital signs.
 
 ## 13. Potential complications

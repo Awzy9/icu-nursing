@@ -504,6 +504,17 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "e33acac7086f2855",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D03-T10": [
@@ -785,6 +796,20 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "3d9615ffba24a06c",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ERC-ALS-2025",
+     "S-INTL-PI-2026",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D03-T01": [
@@ -802,6 +827,17 @@
    {
     "hash": "7e2184fe49ab3bd5",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-GCS-OFFICIAL"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a3729e9eeb1a13f4",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-GCS-OFFICIAL"
@@ -835,6 +871,18 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "5972a672a72937ba",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NICE-CG174",
+     "S-NICE-NG148"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T19": [
@@ -855,6 +903,20 @@
    {
     "hash": "556414f2c2d43919",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-O2",
+     "S-ERC-ALS-2025",
+     "S-NICE-NG253",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "f2fce8d8268d21ce",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AARC-O2",
@@ -1059,6 +1121,19 @@
    {
     "hash": "b8b1236227523b62",
     "recorded": "2026-11-20",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-CPOT-REVIEW-2024",
+     "S-OPENRN-FUND",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "50b5c070f97e5032",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-CPOT-REVIEW-2024",
@@ -1408,6 +1483,20 @@
    {
     "hash": "61beb6842992c99e",
     "recorded": "2026-11-15",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AACN-DYSRHYTHMIA-2016",
+     "S-OPENRN-ADV-C7",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "d2e11e04c7fc0e66",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AACN-ALARM-2018",
@@ -1778,6 +1867,23 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "c2eac26f14680645",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-NICE-NG148-DOPAMINE",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T06": [
@@ -1864,6 +1970,20 @@
    {
     "hash": "1c86af5c443095be",
     "recorded": "2026-11-23",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AACN-ALARM-2018",
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "e9506f0c6a470fdf",
+    "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
      "S-AACN-ALARM-2018",

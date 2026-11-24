@@ -89,7 +89,7 @@ Sustained hypotension despite infusion; sudden severe hypertension; new arrhythm
 | Choose the agent, concentration, dose range and target; direct subsequent treatment of extravasation or severe hypertension and provide alternative pressor access plans | Prescriber/authorised team decision (pharmacist for drug and concentration review) |
 
 ## 12. Escalation criteria
-Escalate for failure to reach the target, rising requirements, new arrhythmia, chest pain, a marked rise in pressure, falling urine output, limb ischaemia signs, site concerns or infusion interruption.
+Activate emergency help for unstable arrhythmia, severe circulatory compromise or a critical infusion failure. Report rising support requirements, new ischaemia, chest pain, abnormal pressure or falling urine output. If extravasation is suspected, stop delivery through the affected catheter immediately, avoid force-flushing and summon trained help under the injury pathway; urgently arrange safe alternative access and clinician-directed circulatory support. Avoid unnecessary interruption of a functioning essential infusion; never continue delivery through an injured site.
 SBAR — **S:** bed X, MAP 55 against an ordered 65 and rising infusion requirement; fingers cool. **B:** septic shock on a vasopressor for 5 hours. **A:** inadequate response with worsening perfusion. **R:** please review now; I am checking the line, pump and site and need a decision about further support.
 
 ## 13. Potential complications

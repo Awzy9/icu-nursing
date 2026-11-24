@@ -40,7 +40,7 @@ ICU patients are on continuous monitoring because dysrhythmias can develop sudde
 4. **PR interval:** normal 0.12–0.20 seconds (3–5 small boxes); prolonged suggests delay in conduction (heart block).
 5. **QRS duration:** normal 0.04–0.12 seconds; a wide QRS means the beat did not originate in the atria; a prolonged QRS may reflect hyperkalaemia or bundle branch block.
 6. **T waves:** upright and rounded; abnormalities (inverted, flat, biphasic, tall or peaked) have many causes, including electrolyte and acid-base disorders, drugs, ischaemia and others.
-7. **ST segment:** should lie on the baseline; elevation or depression of 1 mm or more measured at the J point is abnormal; ST elevation in two or more contiguous leads in the right setting is highly specific for acute myocardial infarction (the textbook's criteria are given in millimetres for limb versus precordial leads); non-ischaemic causes of ST depression include digoxin toxicity, hypokalaemia, hypothermia and tachycardia.
+7. **ST segment:** should lie on the baseline; new ST changes warrant clinical assessment and a diagnostic 12-lead ECG; a single 1 mm rule is not sufficient for all leads or for diagnosis of myocardial infarction. The 2026 Fifth Universal Definition retains different ST-elevation thresholds for V2–V3 according to age and sex and requires interpretation in the clinical context; non-ischaemic causes of ST depression include digoxin toxicity, hypokalaemia, hypothermia and tachycardia.
 8. **QT interval:** the corrected QT (QTc) is monitored; a prolonged QTc carries a risk of torsades de pointes, ventricular tachycardia and ventricular fibrillation; common causes include medicines and electrolyte abnormalities such as low calcium and low magnesium.
 9. **Other components:** U wave (often linked to hypokalaemia) and J wave (typically hypothermia).
 10. **Observe the patient.** The more abnormal the rhythm, the less blood the heart pumps; look for dizziness, confusion, low blood pressure, chest pain, shortness of breath, loss of consciousness, and check pulse, perfusion and blood pressure.
@@ -80,7 +80,7 @@ Heart rate and rhythm; regularity; PR, QRS and QT intervals as available; ST seg
 | Rate calculation | Count R waves in a 6-second strip × 10 | 7.3 |
 | Regularity categories | Regular; irregularly irregular; regularly irregular; occasionally irregular | 7.3 |
 | Normal PR and QRS | PR 0.12–0.20 s; QRS 0.04–0.12 s | 7.3 |
-| ST abnormality | Elevation or depression ≥ 1 mm at J point is abnormal | 7.3 |
+| ST abnormality | New ST changes require urgent assessment in context; criteria depend on lead and patient characteristics | 7.3; 2026 Universal Definition (targeted check) |
 | QTc | Prolonged QTc risks torsades, VT and VF | 7.3 |
 | Hyperkalaemia and QRS | Prolonged QRS may indicate hyperkalaemia or bundle branch block | 7.3 |
 | Artifact | Poor contact or movement can produce wrong rhythm labels | 7.2 |
@@ -99,7 +99,7 @@ Wide-complex rhythm; chaotic or absent rhythm; asystole; unresponsive patient wi
 | Diagnose the rhythm formally, choose drug, cardioversion, pacing or other treatment, set targets | Prescriber decision |
 
 ## 12. Escalation criteria
-Call for help immediately for pulseless rhythms or collapse, and urgently for any symptomatic dysrhythmia, a life-threatening rhythm with a pulse, new heart block, or deterioration.
+Assess the patient immediately for a new or concerning rhythm. Activate emergency response for collapse, suspected arrest or a rhythm accompanied by haemodynamic instability; do not delay for a diagnostic ECG. For suspected acute coronary syndrome, obtain an urgent diagnostic 12-lead ECG and escalate promptly; a normal or nondiagnostic initial tracing does not exclude an acute coronary event. The 2026 Fifth Universal Definition of MI is a diagnostic framework, not a nursing standing order.
 SBAR — **S:** bed X, monitor shows a wide-complex tachycardia at about 150, patient confused and pale. **B:** day 3 after admission with sepsis; potassium and magnesium results pending. **A:** possible ventricular tachycardia with a pulse and low cardiac output. **R:** please come now; I have the arrest trolley and defibrillator pads ready and am checking the pulse and blood pressure.
 
 ## 13. Potential complications
@@ -184,6 +184,8 @@ D. Calling for help when the patient is pulseless.
 ## 18. References
 - Ernstmeyer K, Christman E (eds). Nursing Advanced Skills. Open RN / WisTech Open, 2023. Chapter 7: sections 7.2 Basic Concepts, 7.3 A Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Checklist: Initiating Telemetry. https://wtcs.pressbooks.pub/nursingadvancedskills/ (CC BY 4.0 "except where otherwise noted"; accessed 2026-11-14)
 - UK Kidney Association. Clinical Practice Guideline: Treatment of Acute Hyperkalaemia in Adults (July 2026), rationale for guidelines 14.1–14.2. https://guidelines.ukkidney.org/hyperkalaemia/ (accessed 2026-11-14)
+
+- Fifth Universal Definition of Myocardial Infarction (2026). https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025 (accessed 2026-11-24; selected ECG criteria checked, full guideline and rights review pending).
 
 ## 19. Local protocol note
 Monitor alarm limits, lead choice, monitoring indications, who may interpret and respond, resuscitation procedure, and documentation of strips follow the unit's policies and training.

@@ -75,7 +75,7 @@ Urine output below the threshold with a patent catheter; sudden anuria; rising h
 | Fluid management plan, expert review | Prescriber / specialist decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: oliguria with signs of hypoperfusion; breathlessness or oedema with positive balance; marked hypotension or tachycardia; rapidly changing balance; infusion errors; patients with complex fluid problems.
+Escalate immediately for oliguria with signs of hypoperfusion, worsening breathlessness or oedema, hypotension, marked tachycardia, rapidly changing balance or infusion errors. Review measured output, catheter patency, ongoing losses, fluid intake and signs of both congestion and hypoperfusion. Do not independently give fluid solely because urine output is low; a positive balance does not establish adequate circulating volume either. Reassess the patient after prescribed therapy and report new intolerance immediately.
 SBAR — **S:** bed X, urine output 15 mL/h for 4 hours, catheter patent. **B:** day 2 after laparotomy, drain output high, balance positive overall, on IV fluids. **A:** possible hypovolaemia or early AKI. **R:** please review now; I will keep hourly output and balance and report any change.
 
 ## 13. Potential complications
