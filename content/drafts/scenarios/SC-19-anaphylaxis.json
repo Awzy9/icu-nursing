@@ -109,7 +109,7 @@
       ],
       "options": [
         {
-          "text": "Immediately stop the suspected antibiotic trigger, call for emergency help, assess ABCDE and give or request prompt IM adrenaline under the authorised anaphylaxis emergency protocol without awaiting routine ward-round orders. Position safely for the patient's airway and circulation; avoid standing or sudden walking.",
+          "text": "Stop suspected antibiotic, call emergency help, assess ABCDE and give or request prompt IM adrenaline under authorised protocol without awaiting routine ward-round orders. Position safely; avoid standing or sudden walking.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "text": "Slow the infusion and see whether the symptoms settle.",
+          "text": "Reduce the rate of the suspected antibiotic and closely observe respiratory and circulatory symptoms, continuing the infusion until reassessment establishes whether the reaction is severe enough to require activation of the emergency pathway and first-line treatment.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Give an antihistamine from the ward stock and continue the infusion.",
+          "text": "Give an antihistamine from ward stock and continue the antibiotic, documenting the response before calling for help.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -254,7 +254,7 @@
       ],
       "options": [
         {
-          "text": "Continue trained close monitoring for recurrent airway, breathing or circulatory problems, ensure observation and positioning follow the emergency team's plan, document the suspected trigger and treatments, and support handover and allergy follow-up.",
+          "text": "Continue close airway, breathing and circulatory monitoring and positioning per team plan; document trigger and treatment, hand over and support allergy follow-up.",
           "points": 2,
           "next": null,
           "scope": "monitoring",
@@ -269,7 +269,7 @@
           ]
         },
         {
-          "text": "Transfer the patient to the ward without monitoring because the symptoms have settled.",
+          "text": "Arrange transfer to the ward without further monitoring because acute symptoms have resolved, documenting initial treatment and leaving the receiving team to review recurrence if symptoms return.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "text": "Restart the antibiotic at a slower speed once the symptoms have gone.",
+          "text": "Restart the suspected antibiotic at a reduced rate once symptoms settle rather than obtaining a specialist-led plan.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

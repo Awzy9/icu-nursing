@@ -106,7 +106,7 @@
       ],
       "options": [
         {
-          "text": "Assess the patient and circuit display, request a trained CRRT operator, and report the alarm and recent bed movement. Only a competent operator should check access/return tubing and catheter issues under this device's approved local alarm procedure; do not reflexively clear alarms.",
+          "text": "Assess patient and circuit, call a trained CRRT operator and report alarm and bed movement. Competent staff check tubing and catheter under the device-specific pathway; do not reflexively clear alarms.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
@@ -118,7 +118,7 @@
           ]
         },
         {
-          "text": "Press override and restart because the alarm is probably a false alarm.",
+          "text": "Treat the alarm as a probable false alarm related to bed movement, override it and restart treatment before a trained operator assesses the patient and circuit, then record whether the alarm recurs and report the issue at routine handover.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "text": "Turn the blood flow to the maximum the machine allows.",
+          "text": "Increase blood flow to the machine's maximum without confirming the prescription or line safety.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
@@ -176,7 +176,7 @@
       ],
       "options": [
         {
-          "text": "Escalate persistent alarms and interruption to the responsible CRRT-trained team and prescriber. Do not attempt blood return unless the trained operator confirms it is safe under the current device instructions and local procedure. Document lost treatment and any blood loss.",
+          "text": "Escalate persistent alarms and downtime to CRRT team and prescriber. Blood return requires trained confirmation of safety under device instructions and local procedure; document treatment and blood loss.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -188,7 +188,7 @@
           ]
         },
         {
-          "text": "Keep restarting the treatment until it runs and tell the doctor at the end of the shift.",
+          "text": "Continue attempting to restart treatment whenever the alarm clears, recording interruptions but delaying notification of the trained CRRT team and prescriber until the end of the shift if therapy remains unreliable.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -200,7 +200,7 @@
           ]
         },
         {
-          "text": "Clamp the lines and leave the circuit until the next shift.",
+          "text": "Clamp lines and leave the stopped circuit for the next shift without trained assessment of safe termination.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -256,7 +256,7 @@
       ],
       "options": [
         {
-          "text": "Document alarms, downtime, delivered treatment and net fluid balance. If regional citrate anticoagulation is in use, report falling systemic ionized calcium, a rising total-to-ionized calcium ratio, increasing calcium requirements or worsening acid-base findings, and coordinate the prescribed response.",
+          "text": "Document alarms, downtime, delivered therapy and net fluid balance. With citrate, report falling systemic ionized calcium, rising total-to-ionized calcium ratio or calcium needs, and worsening acid-base findings; coordinate prescribed response.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "text": "Record only that the machine alarmed.",
+          "text": "Record the alarm in the chart but omit downtime, delivered treatment and biochemical changes, leaving the next shift to reconcile the prescription and decide whether the ongoing calcium and acid-base trends require escalation or specialist review.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -284,7 +284,7 @@
           ]
         },
         {
-          "text": "Increase the prescribed fluid-removal goal to make up the difference.",
+          "text": "Increase prescribed net fluid removal independently to compensate for interrupted solute clearance.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

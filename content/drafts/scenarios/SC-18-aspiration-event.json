@@ -111,7 +111,7 @@
       ],
       "options": [
         {
-          "text": "Stop the feed immediately, remain with the patient, assess airway, breathing and oxygenation, and urgently call the responsible emergency/critical-care team for new respiratory distress. Follow the approved airway/oxygen escalation plan with a competent clinician while the tube remains out of use.",
+          "text": "Stop the feed immediately, stay, assess airway, breathing and oxygenation, and urgently call the emergency team. Follow authorised airway/oxygen support with the tube out of use.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -125,7 +125,7 @@
           ]
         },
         {
-          "text": "Slow the feed and watch for a while.",
+          "text": "Reduce the feed rate, observe respiratory effort and saturation for a period and document whether symptoms improve, continuing delivery while waiting to decide whether urgent assessment is needed.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "text": "Flush the tube to clear it and carry on.",
+          "text": "Flush the tube and continue the feed, then reassess cough and oxygenation.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -189,7 +189,7 @@
       ],
       "options": [
         {
-          "text": "Keep feed, water, medicines and flushes through the suspect tube withheld until position is confirmed by the locally approved method and documented by trained staff, and the team authorises use. Escalate persisting respiratory distress and arrange essential medicines by an authorised alternative route if needed.",
+          "text": "Withhold feed, water, medicines and flushes until position is confirmed by the locally approved method, documented and use authorised. Escalate persisting respiratory distress; arrange authorised alternative medicines if needed.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -203,7 +203,7 @@
           ]
         },
         {
-          "text": "Restart the feed because the position was checked yesterday.",
+          "text": "Restart the feed using yesterday's documented position check, record the current external tube marking and resume planned medications without obtaining the locally required confirmation of position after the new respiratory event or authorisation to use the tube.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "text": "Confirm the position by listening over the stomach while air is injected.",
+          "text": "Inject air and listen over the stomach to establish position, then resume use based on the sound.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -262,7 +262,7 @@
       ],
       "options": [
         {
-          "text": "Document the timeline of feed delivery, respiratory symptoms, observations, verification method, actions and team response. Give a structured handover and report suspected tube misplacement or aspiration through the hospital safety pathway.",
+          "text": "Document feed timing, symptoms, observations, verification, interventions and response. Give structured handover and report suspected aspiration or tube misplacement through the safety pathway.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -276,7 +276,7 @@
           ]
         },
         {
-          "text": "Record only that the patient coughed.",
+          "text": "Record that the patient coughed during feeding and that symptoms subsequently improved, without documenting the timing, verification method, interventions or the team's assessment and response; pass on only that brief account at handover.",
           "points": 1,
           "next": null,
           "scope": "independent_nursing",
@@ -288,7 +288,7 @@
           ]
         },
         {
-          "text": "Say nothing, as the patient recovered.",
+          "text": "Omit the event from handover and safety reporting because the patient's condition has improved.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

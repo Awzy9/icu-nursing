@@ -110,7 +110,7 @@
       ],
       "options": [
         {
-          "text": "Stop the transfusion immediately if a reaction is suspected, urgently assess the patient and vital signs, notify the clinical team and blood bank, recheck patient/component identity, and maintain IV access without pushing blood remaining in the implicated tubing into the patient. Preserve the product and set as directed by local policy. Do not independently restart the transfusion.",
+          "text": "Stop the transfusion immediately; assess patient/vitals, notify team and blood bank, verify identity. Maintain IV access without flushing implicated blood; preserve product/set per policy. Do not independently restart.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -125,7 +125,7 @@
           ]
         },
         {
-          "text": "Slow the transfusion and recheck in an hour.",
+          "text": "Reduce the transfusion rate, record the temperature and symptoms, repeat observations in an hour and keep the component running while waiting to determine whether the findings settle or require notification of the blood bank.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "text": "Give a medicine for the fever yourself and continue the transfusion.",
+          "text": "Give a fever-reducing medicine independently and continue transfusion while observing the response.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -194,7 +194,7 @@
       ],
       "options": [
         {
-          "text": "Escalate the falling pressure immediately, reassess airway, breathing and circulation, and give the team the transfusion timeline and patient/component details. Preserve the implicated product and set, and coordinate ordered investigations with the transfusion service.",
+          "text": "Escalate falling pressure immediately; reassess ABC, report transfusion timeline and identity, preserve product/set and coordinate ordered investigations with the transfusion service.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -209,7 +209,7 @@
           ]
         },
         {
-          "text": "Say the patient seemed fine earlier and leave it there.",
+          "text": "Report only that the patient seemed well earlier, without reconstructing the transfusion timeline or providing component details, and leave the remaining assessment and investigation coordination to the next clinician.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -221,7 +221,7 @@
           ]
         },
         {
-          "text": "Decide which type of reaction it is and tell the doctor what to give.",
+          "text": "Decide the reaction type and recommend treatment before escalating the circulatory deterioration.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

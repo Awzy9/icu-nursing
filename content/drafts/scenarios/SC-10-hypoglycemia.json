@@ -101,7 +101,7 @@
       ],
       "options": [
         {
-          "text": "Check that the patient is alert enough to swallow safely and permitted oral intake; activate the local hypoglycaemia pathway promptly, provide approved rapid-acting oral treatment only when safe and appropriate, and repeat glucose assessment according to protocol.",
+          "text": "Check alertness, ability to swallow safely and permission for oral intake. Activate the hypoglycaemia pathway, give approved rapid oral rescue only if safe and repeat glucose per protocol.",
           "points": 2,
           "next": 2,
           "scope": "order_or_protocol_required",
@@ -114,7 +114,7 @@
           ]
         },
         {
-          "text": "Wait and recheck the glucose at the next routine time.",
+          "text": "Wait and recheck the glucose at the next routine time. Record the current result and symptoms, but defer protocol treatment and escalation until the next measurement confirms that glucose remains low.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -126,7 +126,7 @@
           ]
         },
         {
-          "text": "Offer the patient's next meal tray and leave the recheck until after the meal.",
+          "text": "Offer the next meal tray and postpone repeat glucose measurement until the meal is completed.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -178,7 +178,7 @@
       ],
       "options": [
         {
-          "text": "Assess airway, breathing and circulation, call for urgent help, check which glucose-lowering treatments are actually running or were given, and use an authorised non-oral hypoglycaemia pathway as prescribed or permitted by local policy.",
+          "text": "Assess airway, breathing and circulation, call for urgent help, verify actual glucose-lowering treatment and use the authorised non-oral hypoglycaemia pathway.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
@@ -191,7 +191,7 @@
           ]
         },
         {
-          "text": "Give food and drink by mouth to bring the patient round.",
+          "text": "Offer food and drink by mouth to bring the patient round, staying at the bedside and attempting to encourage swallowing despite the reduced consciousness and unsafe swallow.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -203,7 +203,7 @@
           ]
         },
         {
-          "text": "Give intravenous glucose from ward stock without an order or any local agreement.",
+          "text": "Give intravenous glucose from ward stock without an order or approved local pathway.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -255,7 +255,7 @@
       ],
       "options": [
         {
-          "text": "Continue ordered glucose checks, document and hand over the event, and request clinician review of recent insulin exposure, kidney function and any feed interruption before subsequent medication decisions. Do not independently omit basal insulin in type 1 diabetes.",
+          "text": "Continue ordered glucose checks, document and hand over the event; request review of insulin, renal function and feed interruption. Do not independently omit basal insulin in type 1 diabetes.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -269,7 +269,7 @@
           ]
         },
         {
-          "text": "Stop the glucose checks because the value is now normal.",
+          "text": "Document the normal glucose result and return to routine observation, discontinuing additional glucose checks because the initial treatment has corrected the measured low value and the patient appears recovered.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "text": "Withhold the next insulin dose on your own to be safe.",
+          "text": "Withhold the next insulin dose independently without reviewing the insulin type or nutrition plan with the team.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",

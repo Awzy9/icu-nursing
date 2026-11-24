@@ -10,12 +10,12 @@ describe("Scenario answer-length clue regression", () => {
       return correct !== undefined && correct.text.length >= Math.max(...s.options.filter(o=>o.points!==2).map(o=>o.text.length));
     });
     expect(steps).toHaveLength(59);
-    expect(longest.length).toBeLessThanOrEqual(16);
+    expect(longest.length).toBe(0);
   });
-  for (const [id,position] of [["SC-04",1],["SC-06",1],["SC-19",2],["SC-11",1],["SC-11",2],["SC-11",3],["SC-12",1],["SC-12",2],["SC-12",3],["SC-13",1],["SC-13",2],["SC-13",3],["SC-01",1],["SC-01",2],["SC-01",3],["SC-02",1],["SC-02",2],["SC-02",3],["SC-16",1],["SC-16",2],["SC-16",3],["SC-03",1],["SC-03",2],["SC-03",3],["SC-04",2],["SC-04",3],["SC-05",1],["SC-05",2],["SC-05",3],["SC-06",2],["SC-06",3],["SC-07",1],["SC-07",2],["SC-07",3],["SC-08",1],["SC-08",2],["SC-08",3],["SC-17",1],["SC-17",2],["SC-17",3],["SC-20",1],["SC-20",2],["SC-20",3]] as const) {
+  for (const [id,position] of [["SC-04",1],["SC-06",1],["SC-19",2],["SC-11",1],["SC-11",2],["SC-11",3],["SC-12",1],["SC-12",2],["SC-12",3],["SC-13",1],["SC-13",2],["SC-13",3],["SC-01",1],["SC-01",2],["SC-01",3],["SC-02",1],["SC-02",2],["SC-02",3],["SC-16",1],["SC-16",2],["SC-16",3],["SC-03",1],["SC-03",2],["SC-03",3],["SC-04",2],["SC-04",3],["SC-05",1],["SC-05",2],["SC-05",3],["SC-06",2],["SC-06",3],["SC-07",1],["SC-07",2],["SC-07",3],["SC-08",1],["SC-08",2],["SC-08",3],["SC-17",1],["SC-17",2],["SC-17",3],["SC-20",1],["SC-20",2],["SC-20",3],["SC-09",1],["SC-09",2],["SC-09",3],["SC-10",1],["SC-10",2],["SC-10",3],["SC-14",1],["SC-14",2],["SC-15",1],["SC-15",2],["SC-15",3],["SC-18",1],["SC-18",2],["SC-18",3],["SC-19",1],["SC-19",3]] as const) {
     it(id+" checkpoint "+position+" retains scoring and reduces the length clue",()=>{
       const step=cases.find(d=>d.scenario_id===id)!.steps!.find(s=>s.position===position)!;
-      expect(step.options.map(o=>o.points)).toEqual(id==="SC-04" && position===3 ? [2,1,0] : [2,0,0]);
+      expect(step.options.map(o=>o.points)).toEqual((id==="SC-04" || id==="SC-18") && position===3 ? [2,1,0] : [2,0,0]);
       expect(step.options[0]!.text.length).toBeLessThan(Math.max(...step.options.slice(1).map(o=>o.text.length)));
       expect(step.options.every(o=>o.sources.length>0)).toBe(true);
     });

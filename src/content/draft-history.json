@@ -12439,6 +12439,27 @@
     "gaps": 8,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "3a8f9363a38855b7",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ENOXAPARIN",
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-AOA-BLOOD-2025",
+     "S-ARUP-DIC",
+     "S-BSH-ATR",
+     "S-ISTH-DIC-2025",
+     "S-NBA-CRITICAL-BLEED-2025",
+     "S-OPENRN-ADV-CH3",
+     "S-OPENRN-HA-POSTOP",
+     "S-OPENSTAX-MS-27-3"
+    ],
+    "gaps": 8,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "SC-10": [
@@ -12527,6 +12548,20 @@
    },
    {
     "hash": "464b354a6c924b6d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-INSULIN",
+     "S-ADA-HOSP-2026",
+     "S-AHRQ-TS",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "842434cd779f6936",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13027,6 +13062,22 @@
     "gaps": 6,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "0c55d6d1c5b623ce",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AABB-COI-2024",
+     "S-AHRQ-TS",
+     "S-BSH-ATR",
+     "S-ISBT-ATR-EDU",
+     "S-LIFEBLOOD-ATR",
+     "S-NICE-NG24"
+    ],
+    "gaps": 6,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "SC-15": [
@@ -13128,6 +13179,21 @@
    },
    {
     "hash": "9932e897726c6bfc",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-AHS-CRRT-ALARM-2025",
+     "S-AHRQ-TS",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026",
+     "S-RRT-MULTIDISC-2026"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "e7cf8cb380e465cb",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -13570,6 +13636,22 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "58124b91232b421a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AHRQ-TS",
+     "S-BTS-ASPIRATION-2023",
+     "S-NHSE-NGT-2016",
+     "S-NHSE-NGT-ENDURING",
+     "S-NICE-CG32",
+     "S-SHEA-VAP-2022"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-19": [
@@ -13677,6 +13759,22 @@
    },
    {
     "hash": "2d507d250c8c670b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PIPTAZO",
+     "N-RCUK-ANAPH-2021",
+     "S-ADRENALIN-IM-2025",
+     "S-AHRQ-TS",
+     "S-NICE-NG258-2026",
+     "S-RCUK-SPECIAL-2025"
+    ],
+    "gaps": 5,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "fe855a4d65ee849d",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

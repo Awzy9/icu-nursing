@@ -151,7 +151,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess breathing and circulation, call the unit's urgent clinical response for suspected haemorrhagic shock and alert the surgeon promptly. Ask a colleague to quantify wound/drain blood loss and reinforce or mark the dressing without delaying resuscitation assessment.",
+          "text": "Assess breathing and circulation at bedside; call the urgent clinical response for suspected haemorrhagic shock and alert the surgeon. Ask a colleague to quantify blood loss without delaying assessment.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "text": "Remove the dressing to look at the wound and put on a clean one without telling anyone.",
+          "text": "Remove the dressing to inspect the wound, apply a clean dressing and record the appearance for later documentation without informing the surgeon or requesting urgent assessment of the patient's changing observations.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
@@ -177,7 +177,7 @@
           ]
         },
         {
-          "text": "Wait for the surgeon's ward round later in the morning and recheck the dressing then.",
+          "text": "Compare the wound and drain findings with previous readings, document the pressure change and wait for the surgeon's scheduled round before requesting assessment.",
           "points": 0,
           "next": 2,
           "scope": "escalation",
@@ -229,7 +229,7 @@
       ],
       "options": [
         {
-          "text": "Stay with the deteriorating patient, continue haemodynamic assessment, promptly ask the prescriber to reassess the scheduled anticoagulant before it is given, and coordinate the clinical team's ordered investigations, blood products, fluids or theatre transfer with colleagues.",
+          "text": "Stay, assess haemodynamics and ask the prescriber to reassess the due anticoagulant before giving it. Coordinate ordered tests, products, fluids or theatre transfer.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -244,7 +244,7 @@
           ]
         },
         {
-          "text": "Give the anticoagulant on time because it is on the chart, and tell the surgeon afterwards.",
+          "text": "Administer the scheduled anticoagulant because the existing prescription remains on the chart, document the administration and then report the bleeding trend to the surgeon afterwards.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -257,7 +257,7 @@
           ]
         },
         {
-          "text": "Leave the room to collect blood products you think will be needed.",
+          "text": "Leave the bedside to collect anticipated blood products without first coordinating the team's orders or arranging continued observation.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -314,7 +314,7 @@
       ],
       "options": [
         {
-          "text": "Provide ordered resuscitation and blood products under emergency transfusion identification and reaction-monitoring procedures; reassess perfusion, urine output and temperature. Communicate blood loss, coagulation, ionized calcium and potassium trends without assigning a DIC diagnosis, and hand over to theatre.",
+          "text": "Give ordered resuscitation with emergency transfusion identity and reaction checks. Reassess perfusion, urine and temperature; report loss, coagulation, ionized calcium and potassium trends without diagnosing DIC. Hand over to theatre.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
@@ -333,7 +333,7 @@
           ]
         },
         {
-          "text": "Start the blood immediately without the unit's emergency blood identification and patient-monitoring safeguards because the patient is deteriorating.",
+          "text": "Start ordered blood without completing the hospital's emergency identification and patient-monitoring safeguards, reasoning that the urgency of bleeding makes the checks unnecessary until transfer; document administration and notify the receiving team later.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",
@@ -345,7 +345,7 @@
           ]
         },
         {
-          "text": "Stop recording urine output and observations to save time.",
+          "text": "Focus on the prescribed resuscitation and stop urine-output recording and serial observations until transfer is complete.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

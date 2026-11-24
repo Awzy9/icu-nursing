@@ -40,7 +40,7 @@ test("scenario decisions and missed-answer debrief follow the signed-in learner 
  try{
   const a=await first.newPage();await login(a,learner.email);
   await a.goto("/en/working/SC-10");
-  await a.getByRole("radio",{name:"Wait and recheck the glucose at the next routine time."}).check();
+  await a.getByRole("radio",{name:/^Wait and recheck the glucose at the next routine time\./}).check();
   await a.getByRole("button",{name:"Confirm decision",exact:true}).click();
   await a.getByRole("button",{name:"Continue",exact:true}).click();
   // Await the actual signed-in server write, not a timer or local optimistic state.
