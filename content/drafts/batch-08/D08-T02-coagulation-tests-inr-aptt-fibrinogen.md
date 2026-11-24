@@ -113,16 +113,16 @@ Before a morning coagulation screen the nurse checks the tube, fills it to the l
 A 58-year-old with sepsis has oozing at venepuncture sites. The platelet count has fallen over two days, the INR and aPTT are longer than the laboratory's ranges, and the fibrinogen is still within range. The nurse reports the bleeding and the trend; the team recognises that normal fibrinogen does not exclude DIC, sends repeat tests and decides on management.
 
 ## 17. MCQs
-**Q1 (application).** A nurse draws a citrate tube for a coagulation screen but fills it only halfway because the vein was difficult. According to the handbook she should know that:
+**Q1 (application).** A nurse draws a citrate tube for a coagulation screen but fills it only halfway after a difficult venepuncture. What is the safest next action before relying on the coagulation result?
 A. The handbook says that half-filled tubes are acceptable, so the sample can be sent as it is without comment.
 B. The handbook says to fill to the line, so an under-filled tube is a specimen problem to report or repeat.
 C. The result will be the same whatever the volume, so nobody needs to be told that the tube was half full.
 D. The sample should be topped up from a different tube that was taken earlier from the same patient for another test.
 **Answer: B.**
 **Why correct:** Follow the laboratory's specified citrate fill volume. Underfilling changes the blood-to-anticoagulant ratio and can make clotting results unreliable. Notify the laboratory and recollect as directed; never top up a tube or delay urgent care while repeating a sample.
-**Why not A:** The handbook does not say this.
-**Why not C:** Unknown effects mean the result may be unreliable.
-**Why not D:** Mixing tubes is not described and could cause error.
+**Why not A:** A half-filled citrate tube may have excess anticoagulant relative to the blood volume, making the result unreliable.
+**Why not C:** The fill volume affects the blood-to-citrate ratio, so the laboratory must know about the specimen problem.
+**Why not D:** Transferring blood between tubes can introduce additives and alter specimen integrity; obtain a new sample under the laboratory procedure instead.
 
 **Q2 (judgment).** A patient with sepsis has a prolonged INR and aPTT but the fibrinogen is within the laboratory's range, and platelets are falling. Which interpretation is consistent with the ARUP resource?
 A. Normal fibrinogen proves that the patient does not have DIC, so the other abnormal results can be ignored by the team.

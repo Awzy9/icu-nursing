@@ -1,0 +1,5 @@
+# Clinical reasoning question quality and test syntax follow-up — 24 November 2026
+
+CI on 0be701c was still in progress when inspected. Static inspection caught three test lines corrupted by JavaScript replacement-string interpolation in the previous patch. Commit 5602071 replaced them with explicit callback substitutions; no assertions removed. Also simplified a redundant replacement in the expansion test.
+
+Four existing questions improved using their already registered evidence and rationales, not a new clinical literature appraisal: shock recognition (D02-T08 Q3), manual defibrillation equipment choice (D02-T15 Q4), norepinephrine pharmacology (D05-T03 Q1), and citrate specimen reliability (D08-T02 Q1). Clinical context and explanatory feedback improved; no answer keys changed. D02-T15 changed from source recall to application. All four canonical content hashes and revision histories synchronized. Added validation and answer-key regressions. No clinical approvals or publication changes. Fresh CI required.

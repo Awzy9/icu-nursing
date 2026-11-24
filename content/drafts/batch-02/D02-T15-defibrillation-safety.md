@@ -123,13 +123,13 @@ D. Use the usual position regardless of the device, since implanted devices cann
 **Why not B:** Defibrillation should not be withheld because of a device.
 **Why not D:** The position should avoid the device.
 
-**Q4 (understanding).** Which statement about pads and paddles matches ERC 2025?
+**Q4 (application).** During preparation for adult manual defibrillation, a nurse finds both adhesive pads and hand-held paddles available. Which explanation best supports the team's equipment choice under its resuscitation protocol?
 A. Pads are preferred when available: the operator can stand clear, pauses are shorter and contact is better.
 B. Paddles are preferred because they allow the operator to continue compressions at the same time as the shock is delivered.
 C. Pads should only be used in children, whereas adults should always be defibrillated with hand-held paddles.
 D. The choice makes no difference to safety or efficiency, so the unit can use whichever device is nearest at the time.
 **Answer: A.**
-**Why correct:** ERC states pads are preferable for practical benefits, hands-free operation and better contact.
+**Why correct:** Adhesive pads permit a hands-free shock and reduce interruptions and direct contact during shock delivery. The team still needs effective pad contact, the required safety check and the applicable device instructions.
 **Why not B:** Defibrillating during manual compressions is not safe.
 **Why not C:** The statement applies to adults.
 **Why not D:** ERC lists safety and efficiency benefits for pads.

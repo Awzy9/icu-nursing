@@ -634,6 +634,20 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "0983697c33a8ec74",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D02-T14": [
@@ -752,6 +766,17 @@
    },
    {
     "hash": "b50bce33b38a8e54",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "baae2a27a328f45b",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2585,6 +2610,24 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "14aef038ebe119a3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-NICE-NG148-DOPAMINE",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D01-T06": [
@@ -2865,6 +2908,23 @@
    },
    {
     "hash": "4833dfe7a4bdfe68",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ACC-OAC-BLEED-2020",
+     "S-ARUP-ANTICOAG",
+     "S-ARUP-DIC",
+     "S-BSH-HIT-2023",
+     "S-ISTH-DIC-2025",
+     "S-OPENRN-PHARM-CH",
+     "S-UHS-COAG"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "e39cfb675eba34aa",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

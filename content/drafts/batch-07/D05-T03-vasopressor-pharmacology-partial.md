@@ -105,7 +105,7 @@ At the start of the shift the nurse verifies the infusion against the order and 
 A patient on a dopamine infusion has a falling urine output although blood pressure is stable. The nurse reports this to the prescriber, as the textbook advises that the dose may need review, documents the trend, continues the monitoring and does not change the rate herself.
 
 ## 17. MCQs
-**Q1 (understanding).** How does the Open RN textbook describe norepinephrine?
+**Q1 (understanding).** An ICU nurse is reviewing a prescribed norepinephrine infusion for a patient with circulatory shock. Which description best explains the drug's principal cardiovascular actions?
 A. A peripheral vasoconstrictor and inotropic stimulator of the heart used in patients with critically low blood pressure.
 B. A vasodilator that lowers blood pressure by relaxing the smooth muscle of the blood vessels in patients with severe hypertension.
 C. A bronchodilator that acts mainly on the airways and is used in patients with asthma.

@@ -128,16 +128,16 @@ D. The blood pressure cuff, the pulse oximeter and the ECG, because monitors giv
 **Why not C:** Not part of the consensus statement.
 **Why not D:** These are devices, not organ windows.
 
-**Q3 (prioritization).** Which patient needs immediate escalation?
+**Q3 (prioritization).** During an ICU round, four patients have different trends in pressure and tissue perfusion. Which patient needs immediate escalation?
 A. A patient with a MAP just above the ordered target, warm skin, normal urine output and a clear mind.
 B. A patient with a stable low-normal pressure who has had these values for two days and is improving.
 C. A patient who is awaiting discharge with normal observations and a stable lactate.
 D. A patient with cool mottled skin, new confusion and urine output that has fallen over two hours.
 **Answer: D.**
 **Why correct:** Cool mottled skin, new confusion and falling urine output show poor perfusion in all three bedside windows at once, which suggests shock and needs urgent escalation. The other patients are stable.
-**Why not A:** Stable with good perfusion.
+**Why not A:** The ordered pressure target and preserved bedside perfusion findings do not suggest the same urgent deterioration.
 **Why not B:** A stable and improving patient does not need the most urgent response of the group.
-**Why not C:** Stable with normal findings.
+**Why not C:** Stable observations and lactate do not suggest the new perfusion decline described in the priority patient.
 
 **Q4 (scope).** The doctor orders a fluid bolus and then a vasopressor for suspected shock. What is the nurse's role?
 A. Choose the vasopressor and rate according to the nurse's judgment of the patient's condition.
