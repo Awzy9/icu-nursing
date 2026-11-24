@@ -1049,7 +1049,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "92ced959373e05a7"
+   "hash": "c574bfb8d5b22831"
   },
   {
    "key": "D08-T03",
@@ -1109,7 +1109,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 3,
-   "hash": "c756dbf80c27eb35"
+   "hash": "fa928785a841ee7d"
   },
   {
    "key": "D01-T17",
@@ -3381,6 +3381,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ASH-HIT-2018",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3394,7 +3399,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "2a768ca33dacfff7"
+   "hash": "edc0f4d1f3d96b56"
   },
   {
    "key": "MD-15",
@@ -3444,7 +3449,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "ae5b6fc044c868fe"
+   "hash": "3892fce6d4780c09"
   },
   {
    "key": "MD-16",
