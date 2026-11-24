@@ -11540,6 +11540,21 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "c9defc6cf2729d6a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-PVA",
+     "S-DRAEGER-V500-IFU",
+     "S-HAMILTON-C1",
+     "S-HAMILTON-VOLUME-MODES",
+     "S-VENT-MECHANICS-2024"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-03": [
@@ -11646,6 +11661,20 @@
     "gaps": 3,
     "required_sources": 3,
     "issues": 0
+   },
+   {
+    "hash": "f2f0f5e5e94b4c83",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-FDA-PUMP",
+     "S-FDA-PUMP-FAILURE-EXAMPLES",
+     "S-FDA-PUMP-OVERVIEW",
+     "S-ISMP-HA"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
    }
   ],
   "EQ-05": [
@@ -11684,6 +11713,17 @@
    },
    {
     "hash": "42c550571fce38a4",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-ERC-ALS-2025"
+    ],
+    "gaps": 3,
+    "required_sources": 3,
+    "issues": 0
+   },
+   {
+    "hash": "2ab473f23b99409d",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

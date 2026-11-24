@@ -1,0 +1,9 @@
+# Equipment safety reconciliation — 24 November 2026
+
+Three staff-only draft specifications updated. No new procedure settings, imported screens or clinical approval.
+
+- EQ-02: [AARC 2024 patient-ventilator assessment](https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf), printed page 1042 visually inspected. Added bedside airway, humidification and skin assessment alongside screen data. Driving pressure assessment is conditional with low certainty; not an independent prescription.
+- EQ-04: [FDA clinician risk reduction](https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians) HTML plan/check/use/report sections and [FDA failure examples](https://www.fda.gov/medical-devices/infusion-pumps/examples-reported-infusion-pump-problems) alarm and power sections inspected. Added transport power contingency, independent patient assessment and removal/reporting of suspected faulty devices after safe treatment transfer. New source is conditional/cite-only; examples are not risk estimates; no manufacturer procedure reproduced.
+- EQ-05: [ERC 2025 ALS](https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf), printed page 7 visually inspected. Added oxygen-fire precautions with distinction between free-flow oxygen and a secured airway circuit; prompt resumption of compressions after shock subject to signs of ROSC. No energy selection instructions added. Rights restrictions retained.
+
+Reworded the first evidence requirement in these three specifications to reflect that preliminary parameter explanations already exist; independent appraisal, installed model/version IFU and institutional policy still required. No requirements removed. All 3 content hashes checked against old index and synchronized with history; a dedicated regression suite added. CI must run. No production release.

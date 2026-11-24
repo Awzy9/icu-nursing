@@ -5494,7 +5494,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "3842fe37c4fff856"
+   "hash": "c9defc6cf2729d6a"
   },
   {
    "key": "EQ-03",
@@ -5546,6 +5546,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP-OVERVIEW",
      "licence_class": "YELLOW",
      "verified": "2026-11-24"
@@ -5559,7 +5564,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "c161541630c1dab0"
+   "hash": "f2f0f5e5e94b4c83"
   },
   {
    "key": "EQ-05",
@@ -5579,7 +5584,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "42c550571fce38a4"
+   "hash": "2ab473f23b99409d"
   },
   {
    "key": "EQ-06",

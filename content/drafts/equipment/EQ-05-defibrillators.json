@@ -81,9 +81,26 @@
         "S-ERC-ALS-2025"
       ],
       "section": "safety"
+    },
+    {
+      "text": "Coordinate fire precautions with the airway team: keep free-flowing oxygen away from the chest and direct ventilator exhaust away from the shock area. Do not routinely disconnect a secured tracheal or supraglottic airway circuit for defibrillation. Maintain ventilation and follow the resuscitation team's device-specific safety procedure.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
     }
   ],
-  "monitoring_concepts": [],
+  "monitoring_concepts": [
+    {
+      "text": "After an indicated shock during adult cardiac arrest, resume compressions promptly unless signs of restored circulation justify assessment under the resuscitation protocol. A charged device or a monitor rhythm label alone does not establish that a shock is indicated.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "monitoring"
+    }
+  ],
   "escalation_concepts": [
     {
       "text": "Call for help early; follow the oxygen-safety steps in unit policy during defibrillation.",
@@ -102,12 +119,12 @@
     }
   ],
   "required_sources": [
-    "Source explaining each listed monitored parameter in device-neutral terms",
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
     "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
     "Unit policy for this equipment"
   ],
   "gaps": [
-    "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+    "All listed parameters have preliminary cited explanations; the individual claims, evidence strength and model applicability still require independent appraisal.",
     "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
     "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
   ],

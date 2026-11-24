@@ -115,6 +115,14 @@
         "S-AARC-PVA"
       ],
       "section": "monitoring"
+    },
+    {
+      "text": "Bedside assessment includes the patient's breathing, airway position and securement, humidification and skin around the airway or mask. Consider driving pressure and oxygen requirements with the respiratory team; screen data alone cannot establish adequate ventilation.",
+      "support": "partial",
+      "sources": [
+        "S-AARC-PVA"
+      ],
+      "section": "monitoring"
     }
   ],
   "escalation_concepts": [
@@ -155,12 +163,12 @@
     }
   ],
   "required_sources": [
-    "Source explaining each listed monitored parameter in device-neutral terms",
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
     "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
     "Unit policy for this equipment"
   ],
   "gaps": [
-    "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+    "All listed parameters have preliminary cited explanations; the individual claims, evidence strength and model applicability still require independent appraisal.",
     "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
     "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
   ],

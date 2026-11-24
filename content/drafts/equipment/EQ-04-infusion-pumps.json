@@ -84,7 +84,17 @@
       "section": "safety"
     }
   ],
-  "monitoring_concepts": [],
+  "monitoring_concepts": [
+    {
+      "text": "Before transport, verify the available power reserve and contingency plan with the trained transport team. Assess the patient and expected delivery independently of the pump display, especially for high-risk infusions; an alarm may be absent despite a delivery problem.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP",
+        "S-FDA-PUMP-FAILURE-EXAMPLES"
+      ],
+      "section": "monitoring"
+    }
+  ],
   "escalation_concepts": [
     {
       "text": "Assess the patient and urgently escalate unexplained alarms, a programming discrepancy or suspected over- or under-infusion. For an essential high-risk infusion, stay with and closely monitor the patient while trained help obtains safe alternative equipment; avoid unplanned treatment interruption or an unintended bolus.",
@@ -92,6 +102,14 @@
       "sources": [
         "S-FDA-PUMP",
         "S-ISMP-HA"
+      ],
+      "section": "escalation"
+    },
+    {
+      "text": "Once essential treatment has been safely transferred under the unit procedure, remove a suspected faulty pump from service, identify the fault for biomedical engineering and report the event under local policy. Do not return malfunctioning equipment to routine use without the facility's required assessment.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
       ],
       "section": "escalation"
     }
@@ -111,15 +129,20 @@
       "id": "S-FDA-PUMP-OVERVIEW",
       "read": "partial",
       "use": "FDA public HTML, pump alarm functions and failure risks."
+    },
+    {
+      "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+      "read": "partial",
+      "use": "FDA reported failure examples: alarm detection failures, damaged components and battery depletion during care or transport; examples are not event-frequency estimates."
     }
   ],
   "required_sources": [
-    "Source explaining each listed monitored parameter in device-neutral terms",
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
     "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
     "Unit policy for this equipment"
   ],
   "gaps": [
-    "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+    "All listed parameters have preliminary cited explanations; the individual claims, evidence strength and model applicability still require independent appraisal.",
     "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
     "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
   ],
