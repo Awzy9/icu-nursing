@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Pharmacology 2e, sections 4.4 ANS medication classes, 4.8 Alpha-1 agonists, 4.11 Beta-1 agonist, 4.15 Alpha- and beta-receptor agonists (catecholamines) – US entry-level textbook, CC BY 4.0", "Surviving Sepsis Campaign 2026 official SCCM recommendation page – recommendation-level statements for adults with septic shock only; full publication NOT read", "ISMP High-Alert Medication List 2024 (classification only); FDA infusion pump page (2018)", "Phase 3 additions: US FDA prescribing information (one manufacturer label per drug, retrieved 2026-11-15 through openFDA: norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine) – US labelling, not a guideline; JAMA Netw Open 2026 meta-analysis of peripheral vasopressor adverse events (CC BY)", "NICE NG148 recommendation 1.5.5 (official recommendation page checked 2026-11-21, not full evidence review): do not use low-dose dopamine to treat AKI"]
-sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SSC-2026, S-ISMP-HA, S-FDA-PUMP, S-PVP-META-2026, S-NICE-NG148-DOPAMINE]
+sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SSC-2026, S-ISMP-HA, S-FDA-PUMP, S-PVP-META-2026, S-NICE-NG148-DOPAMINE, L-DOBUTAMINE]
 sources_not_read: [S-OPENRN-PHARM]
 independently_written_note: "Original wording. Five short Open RN pharmacology sections were read in full (textbook level; phenylephrine there is the oral decongestant). In Phase 3 the indications, warnings and adverse-reaction sections of one US FDA label each for norepinephrine, vasopressin, epinephrine, dopamine, dobutamine and phenylephrine were read, which now supports intravenous phenylephrine and vasopressin at the level of US labelling; angiotensin II, milrinone and other agents still have NO pharmacology source here and are mentioned only where the SSC 2026 page names them. Labels differ between manufacturers and revisions, are US-specific and are not clinical guidelines. No doses, concentrations, dilutions, infusion rates, titration ranges or compatibility information are given (platform no-dosing rule); the labels' dosage and extravasation-treatment doses were retrieved but deliberately not used. The ICU nursing monitoring statements come from short textbook medication grids, not from an ICU guideline; extravasation management is not covered; NICE NG148 specifies that low-dose dopamine is not an AKI treatment (the recommendation was checked, not its full evidence review). This draft is partial and must not be read as a complete vasopressor pharmacology resource."
 ---
@@ -111,7 +111,7 @@ B. A vasodilator that lowers blood pressure by relaxing the smooth muscle of the
 C. A bronchodilator that acts mainly on the airways and is used in patients with asthma.
 D. A diuretic that removes excess fluid and is used in patients with heart failure or kidney disease.
 **Answer: A.**
-**Why correct:** The textbook gives alpha-mediated vasoconstriction and beta-mediated inotropic action.
+**Why correct:** Norepinephrine predominantly increases vascular tone through alpha-adrenergic activity and has beta-mediated cardiac effects. Its effect on tissue perfusion and cardiac output varies with physiology; assess the prescribed pressure target together with perfusion, rhythm and signs of ischemia.
 **Why not B:** Norepinephrine raises blood pressure.
 **Why not C:** It acts on vessels and the heart.
 **Why not D:** It is a vasopressor, not a diuretic.
@@ -122,7 +122,7 @@ B. Vasopressin as the first agent, with epinephrine added if the pressure stays 
 C. Norepinephrine, with a strong recommendation over dopamine, epinephrine and selepressin.
 D. Terlipressin, which acts for longer and needs fewer adjustments.
 **Answer: C.**
-**Why correct:** SSC 2026 recommends norepinephrine as the first-line vasopressor rather than dopamine (high certainty), epinephrine (low certainty) or selepressin (low certainty). A separate conditional recommendation suggests norepinephrine over vasopressin or angiotensin II initially; escalation choices depend on the patient's physiology and response.
+**Why correct:** SSC 2026 favors norepinephrine as initial vasopressor for septic shock, with recommendation strength varying by comparator. The guideline suggests vasopressin when norepinephrine requirements escalate and epinephrine if pressure remains inadequate despite both. Those decisions follow the authorized prescribing plan and do not apply automatically to every shock type.
 **Why not A:** The SSC 2026 page recommends norepinephrine over dopamine for septic shock; the distractor also incorrectly equates renal receptor effects with kidney protection. NICE NG148 advises against low-dose dopamine for treating acute kidney injury.
 **Why not B:** Vasopressin is suggested as an addition, not first line.
 **Why not D:** The page suggests against terlipressin.
@@ -138,16 +138,16 @@ D. Confirm the urine-output trend, assess perfusion and possible catheter obstru
 **Why not B:** Abruptly discontinuing vasoactive support without an authorized order/protocol can cause hemodynamic deterioration.
 **Why not C:** Oliguria can signal inadequate perfusion or renal injury even when arterial pressure appears stable and warrants timely evaluation.
 
-**Q4 (safety).** Which monitoring does the textbook describe for a patient receiving dobutamine?
+**Q4 (safety).** Which monitoring approach is supported by the dobutamine injection label and appropriate ICU assessment?
 A. Weekly blood tests, because effects appear after several days of therapy.
-B. Continuous monitoring of the ECG, blood pressure, cardiac output and urine output during the whole therapy.
+B. Continuous ECG and blood pressure; assess urine output and cardiac output when available.
 C. Body temperature checks every few hours, since fever is the commonest reaction.
 D. No special monitoring beyond routine observations, since the infusion is short-term.
 **Answer: B.**
-**Why correct:** For dobutamine the textbook grid calls for continuous monitoring of ECG, blood pressure, cardiac output and urine output through the therapy, because the drug can cause marked rises in heart rate and pressure. Weekly tests or temperature alone would miss an acute change.
+**Why correct:** The Hospira dobutamine label requires continuous ECG and arterial pressure monitoring and advises cardiac output and pulmonary wedge pressure monitoring whenever possible. Follow the ordered perfusion and urine output surveillance plan. Continuous cardiac output measurement is not required in every patient; assess tachycardia, arrhythmia, hypotension and clinical response.
 **Why not A:** Weekly tests are not adequate for an acute infusion.
 **Why not C:** Temperature is not the key parameter.
-**Why not D:** The drug can cause marked heart rate and pressure rises.
+**Why not D:** Dobutamine can cause significant rhythm and pressure changes that require continuous cardiovascular monitoring.
 
 **Q5 (application).** A nurse is preparing an intravenous epinephrine infusion. Which nursing check does the epinephrine grid specifically name?
 A. Checking the patient's weight every hour so that the infusion can be adjusted to it.
@@ -155,7 +155,7 @@ B. Weighing the syringe before each use to confirm that the concentration is cor
 C. Monitoring the IV site for extravasation while the drug is given by the intravenous route.
 D. Measuring the room temperature while the drug is infusing, because heat alters the drug.
 **Answer: C.**
-**Why correct:** The textbook's epinephrine grid names monitoring the IV site for extravasation when the drug is given intravenously. Hourly weights, weighing the syringe and room temperature are not monitoring items in the grid.
+**Why correct:** Inspect the IV access and adjacent tissue for extravasation. If suspected, stop delivery through the affected site and obtain urgent help to maintain circulatory support by an authorized alternative route. Do not force-flush the affected cannula; follow the local extravasation pathway. This is not a substitute for checking the drug, concentration, pump and authorized order.
 **Why not A:** Hourly weights are not part of the epinephrine grid.
 **Why not B:** The textbook does not describe weighing the syringe as a check on the drug.
 **Why not D:** Room temperature is not a monitoring item in the grid.
@@ -178,6 +178,8 @@ D. Reporting a sudden fall in blood pressure to the prescriber with the pump and
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians (content current as of 2018-02-02). https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
 
 - NICE. *Acute kidney injury: prevention, detection and management*, NG148, recommendation 1.5.5 (official recommendations page accessed 2026-11-21; complete evidence review not read). https://www.nice.org.uk/guidance/ng148/chapter/Recommendations . Cited and paraphrased only; reuse rights not inferred.
+
+- Hospira dobutamine label. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89becb0c-da60-4f43-0a98-29ff7a9eca58 (selected recommendation or label text; accessed 2026-11-24)
 
 ## 19. Local protocol note
 Drug selection, concentrations, titration protocols, who may titrate, peripheral use, site care, extravasation management, double-check policy and monitoring intervals follow the unit's policies and the pharmacy.

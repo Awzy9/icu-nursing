@@ -2390,6 +2390,20 @@
     "gaps": 0,
     "required_sources": 1,
     "issues": 0
+   },
+   {
+    "hash": "a72ebb55f1e85107",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "N-LHSC-CRRT-PRINCIPLES",
+     "S-ASH-HIT-2018",
+     "S-KDIGO-AKI-2012",
+     "S-RCA-DELPHI-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
    }
   ],
   "D05-T01": [
@@ -2443,6 +2457,23 @@
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-OPENRN-PHARM-CH",
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "721262d896dd9629",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DEXMEDETOMIDINE",
+     "L-LORAZEPAM",
      "S-FDA-LABELS-2026",
      "S-FDA-PUMP",
      "S-ISMP-HA",
@@ -2525,6 +2556,24 @@
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
+     "S-FDA-LABELS-2026",
+     "S-FDA-PUMP",
+     "S-ISMP-HA",
+     "S-NICE-NG148-DOPAMINE",
+     "S-OPENRN-PHARM-CH",
+     "S-PVP-META-2026",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 1,
+    "issues": 0
+   },
+   {
+    "hash": "0d254f62d0193e1a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
      "S-FDA-LABELS-2026",
      "S-FDA-PUMP",
      "S-ISMP-HA",

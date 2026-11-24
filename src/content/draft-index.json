@@ -1091,15 +1091,25 @@
      "verified": null
     },
     {
+     "id": "S-ASH-HIT-2018",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCA-DELPHI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "7304861d1fe0747c"
+   "hash": "a72ebb55f1e85107"
   },
   {
    "key": "D05-T01",
@@ -1110,6 +1120,16 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "L-DEXMEDETOMIDINE",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    },
+    {
+     "id": "L-LORAZEPAM",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    },
     {
      "id": "S-FDA-LABELS-2026",
      "licence_class": "YELLOW",
@@ -1139,7 +1159,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "3deb4ce4626ea0a8"
+   "hash": "721262d896dd9629"
   },
   {
    "key": "D05-T03",
@@ -1150,6 +1170,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "L-DOBUTAMINE",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    },
     {
      "id": "S-FDA-LABELS-2026",
      "licence_class": "YELLOW",
@@ -1189,7 +1214,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "c2eac26f14680645"
+   "hash": "0d254f62d0193e1a"
   },
   {
    "key": "D01-T06",

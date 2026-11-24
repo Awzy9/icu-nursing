@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Pharmacology 2e, section 8.5 CNS depressants (barbiturates and benzodiazepines) and 10.10 Anesthetics – US entry-level textbook, CC BY 4.0; the text reproduces parts of US drug labelling", "SCCM PADIS 2018 and 2025 focused update – official recommendation pages, recommendation-level statements only; full guidelines NOT read", "ISMP High-Alert Medication List 2024 (classification only); FDA infusion pump page (2018)", "Phase 3 additions: US FDA prescribing information (one manufacturer label per drug retrieved 2026-11-15 via openFDA: midazolam, lorazepam, propofol, dexmedetomidine) – US labelling, not guidelines"]
-sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SCCM-PADIS, S-ISMP-HA, S-FDA-PUMP]
+sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SCCM-PADIS, S-ISMP-HA, S-FDA-PUMP, L-LORAZEPAM, L-DEXMEDETOMIDINE]
 sources_not_read: [S-OPENRN-PHARM]
 independently_written_note: "Original wording. The Open RN sections on benzodiazepines, barbiturates and anaesthetics were read in full; they give lorazepam and phenobarbital in detail and propofol and midazolam only in one-line examples, so in Phase 3 the boxed warning, indication and warnings sections of one US FDA label each for midazolam, lorazepam, propofol and dexmedetomidine were read, which now supports key safety statements for these four drugs at the level of US labelling; ICU infusion practice, sedation depth targets, withdrawal syndromes and nursing titration protocols still have NO source here. Sedation monitoring and scales are covered in D03-T09 (scale definitions are not taught). No doses, concentrations, infusion rates or titration ranges are given: the textbook quotes US labelling doses, which are deliberately omitted. This draft is partial and not a complete sedative resource."
 ---
@@ -107,7 +107,7 @@ B. Excessive urine output, so that the fluid balance must be recorded every hour
 C. A rise in blood sugar, so that blood glucose must be checked before each dose is given to the patient.
 D. Permanent hearing loss, so that the patient's hearing must be assessed before each dose is given.
 **Answer: A.**
-**Why correct:** The textbook says respiratory depression is the most important risk of intravenous use and that airway and respiration must be monitored.
+**Why correct:** Respiratory depression is a major intravenous lorazepam hazard. Assess and monitor airway patency, ventilation, consciousness and circulation, with emergency airway support available. Supplemental oxygen may maintain saturation despite hypoventilation; use the authorized sedation and ventilation monitoring plan.
 **Why not B:** The textbook does not describe urine output as the main risk of lorazepam.
 **Why not C:** A rise in blood sugar is not described as a lorazepam risk in the section.
 **Why not D:** Hearing loss is not described as a lorazepam risk in the section.
@@ -129,7 +129,7 @@ B. Recommend benzodiazepines as the preferred first-line drug in all ventilated 
 C. Recommend deep sedation for all ventilated patients in order to prevent anxiety during the first days.
 D. Recommend that sedation should never be reduced or interrupted during the first week of mechanical ventilation.
 **Answer: A.**
-**Why correct:** The PADIS 2018 pages suggest propofol or dexmedetomidine rather than benzodiazepines for sedating mechanically ventilated adults (conditional recommendation, low certainty), in line with a general preference for light sedation.
+**Why correct:** PADIS 2018 conditionally favors propofol or dexmedetomidine over benzodiazepines for routine ventilated-adult ICU sedation. The 2025 update adds a conditional preference for dexmedetomidine when light sedation or delirium reduction is especially important. These recommendations do not override separate indications for benzodiazepines, such as seizure treatment or withdrawal management.
 **Why not B:** The pages suggest avoiding benzodiazepines in favour of other agents.
 **Why not C:** Light sedation is generally favoured.
 **Why not D:** No such recommendation exists on the pages read.
@@ -140,7 +140,7 @@ B. Increase the infusion rate to stabilise the patient, because a lower pressure
 C. Immediately assess airway, ventilation and circulation, call for urgent help, and manage the infusions within the authorized local protocol.
 D. Give a reversal agent that is kept on the unit without waiting for an order, in order to save time.
 **Answer: C.**
-**Why correct:** Unexpected reduced responsiveness with hypotension may reflect sedative effects or another acute deterioration. The nurse promptly assesses airway, ventilation and circulation, summons clinical help and follows local orders/protocols for infusion management; a sedation pause is not automatically appropriate in every patient.
+**Why correct:** Unexpected reduced responsiveness and hypotension may reflect drug effects or another emergency. Assess airway, breathing and circulation, call urgently, and review infusion delivery and recent medications in parallel. Provide authorized rescue support; do not assume a sedative pause is safe or administer an antagonist solely because it is available.
 **Why not A:** Waiting could allow deterioration.
 **Why not B:** Increasing sedation would worsen the problem.
 **Why not D:** Antagonist use has indication-specific risks and may require a prescriber decision or an authorized emergency protocol; it should not be given simply because it is stocked on the unit.
@@ -151,7 +151,7 @@ B. Suggest dexmedetomidine over propofol where light sedation and/or reducing de
 C. Suggest using benzodiazepines to treat anxiety in all adults in the ICU, whatever the clinical picture, because they are thought to give the most reliable relief.
 D. Make no statement at all about the choice of sedative agent for mechanically ventilated adults, leaving the choice to each unit.
 **Answer: B.**
-**Why correct:** The 2025 focused update suggests dexmedetomidine over propofol when light sedation or reducing delirium is the priority (conditional, moderate certainty). The other options describe statements that do not appear on the page.
+**Why correct:** The 2025 PADIS update conditionally favors dexmedetomidine over propofol when light sedation or reduced delirium is a major priority. This is not a universal preference. Dexmedetomidine may cause clinically important bradycardia and hypotension; monitor the individual response and follow the prescribed target.
 **Why not A:** The 2025 statement favours dexmedetomidine in that situation.
 **Why not C:** The page says there is insufficient evidence for benzodiazepines in anxiety.
 **Why not D:** A drug-choice statement does appear on the SCCM 2025 page.
@@ -172,6 +172,8 @@ D. Choosing the sedative agent, dose and sedation target for the patient.
 - SCCM. PADIS 2018 official recommendations page and the 2025 focused update page (recommendation-level text). https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa ; https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (accessed 2026-11-14). Full publications not read.
 - ISMP. List of High-Alert Medications in Acute Care Settings (2024). https://www.ismp.org/system/files/resources/2024-01/ISMP_HighAlert_AcuteCare_List_010924_MS5760.pdf (accessed 2026-11-14)
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians (content current as of 2018-02-02). https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
+
+- SCCM 2025 focused PADIS update. https://sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (selected recommendation or label text; accessed 2026-11-24)
 
 ## 19. Local protocol note
 Sedation protocols, agents available, concentrations, titration authority, sedation targets, interruption procedures, monitoring intervals and reversal policies follow the unit's policies and pharmacy.

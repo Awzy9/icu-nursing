@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["KDIGO Clinical Practice Guideline for Acute Kidney Injury, 2012 (Kidney Int Suppl 2012;2:1-138), Section 5 Dialysis Interventions for Treatment of AKI – an international guideline, now more than ten years old; a 2026 update exists only as a public-review DRAFT and is not used"]
-sources: [S-KDIGO-AKI-2012, N-LHSC-CRRT-PRINCIPLES]
+sources: [S-KDIGO-AKI-2012, N-LHSC-CRRT-PRINCIPLES, S-RCA-DELPHI-2026, S-ASH-HIT-2018]
 sources_not_read: [S-KDIGO-AKI]
 independently_written_note: "Original wording. The KDIGO 2012 guideline PDF was downloaded and its Section 5 recommendation statements (5.1 timing, 5.2 stopping, 5.3 anticoagulation, 5.4 vascular access, 5.5 membranes, 5.6 modality, 5.7 buffer and fluids, 5.8 dose) were read in the summary of recommendations; the supporting rationale text, other chapters, and the figures were not read. KDIGO addresses prescribing and system decisions, not CRRT machine operation. The independent LHSC hospital teaching page was consulted on 2026-11-23 for limited qualitative concepts about transmembrane pressure and pressure-drop trends (a local educational resource, not a cross-manufacturer standard). This draft does not teach machine set-up, priming, alarm settings, treatment adjustments, citrate management or medication doses. The guideline's numeric dose targets (effluent volume, Kt/V) are deliberately not quoted under the platform's no-dosing rule. KDIGO copyright and reuse terms were not checked; paraphrase only."
 ---
@@ -106,7 +106,7 @@ B. Haemodynamically unstable patients, and patients with acute brain injury or r
 C. Patients who have no urine output and no sign of any other organ dysfunction in the ICU.
 D. Paediatric patients, because CRRT is not used in adults who have acute kidney injury.
 **Answer: B.**
-**Why correct:** KDIGO suggests CRRT for haemodynamically unstable patients (2B) and for brain injury or raised intracranial pressure (2B).
+**Why correct:** KDIGO 2012 conditionally favors continuous therapy in circulatory instability and in acute brain injury with raised intracranial pressure or generalized brain edema. Modality choice also depends on the patient's overall condition and available expertise; this does not establish a universal survival advantage. The KDIGO update released for consultation in 2026, now labeled the 2027 public-review draft, is not a final guideline.
 **Why not A:** Stable, well patients are not a group the guideline singles out for CRRT.
 **Why not C:** Urine output alone is not the criterion.
 **Why not D:** The guideline addresses adults with acute kidney injury.
@@ -117,7 +117,7 @@ B. Heparin may continue in the circuit itself but must be stopped in the flushes
 C. No change is needed because HIT does not occur during renal replacement therapy in an ICU patient.
 D. All heparin must be stopped, and a direct thrombin or Factor Xa inhibitor is recommended instead.
 **Answer: D.**
-**Why correct:** KDIGO 2012 recommendation 5.3.4 (1A) states that all heparin must be stopped in HIT and that a non-heparin direct thrombin or Factor Xa inhibitor should be used for RRT anticoagulation. Its rationale adds that when HIT is considered *likely*, all heparin exposures, including catheter locks, need urgent review and discontinuation. Drug selection and treatment decisions require the responsible clinical team and local HIT pathway; a falling platelet count alone does not establish HIT.
+**Why correct:** KDIGO 2012 recommendation 5.3.4 (1A) advises stopping all heparin in HIT and using alternative anticoagulation for renal replacement therapy. ASH 2018 specifically favors argatroban, danaparoid or bivalirudin for acute HIT requiring dialysis circuit anticoagulation (conditional, very low certainty); selection depends on organ function, availability and specialist review. Acute HIT requires systemic anticoagulation: regional citrate alone is not adequate. Escalate likely HIT urgently and review all heparin exposures, including flushes and locks; a platelet fall alone is not diagnostic.
 **Why not A:** Heparin worsens HIT, so continuing or increasing it would harm the patient.
 **Why not B:** The statement is that all heparin must be stopped, not part of it.
 **Why not C:** HIT can occur with heparin exposure in RRT.
@@ -139,10 +139,10 @@ B. Increase the machine settings yourself to make up the lost time, without wait
 C. Document and report the interruptions and the amount delivered so that the prescription can be reviewed.
 D. Stop the therapy for the rest of the shift to avoid more interruptions to the treatment.
 **Answer: C.**
-**Why correct:** KDIGO recommends frequent assessment of the actual delivered dose in order to adjust the prescription (1B).
+**Why correct:** KDIGO recommends evaluating delivered clearance against the prescription frequently. Record downtime, delivered treatment and net fluid removal separately; assess the patient, circuit status, fluid balance and laboratory trends and promptly report discrepancies. Do not independently increase clearance or fluid removal to compensate for downtime.
 **Why not A:** Under-delivery affects the patient's treatment.
 **Why not B:** Changes to the prescription require an order.
-**Why not D:** Stopping the therapy without an order is unsafe.
+**Why not D:** Stopping for the remainder of the shift without assessment or an authorized plan is unsafe. An immediate interruption may be needed for a safety hazard under the device and local emergency procedure.
 
 **Q5 (understanding).** Which statement matches KDIGO 2012 on antibiotic use for non-tunnelled dialysis catheters in ICU patients?
 A. Topical antibiotics should be applied to every catheter insertion site routinely to prevent infection of the site.
@@ -161,7 +161,7 @@ B. Deciding the anticoagulation strategy, such as regional citrate or heparin.
 C. Documenting downtime and the net fluid balance.
 D. Checking that the catheter site is clean and dry.
 **Answer: B.**
-**Why correct:** Choosing the anticoagulation strategy for CRRT, such as regional citrate or heparin, is a prescribing decision. Reporting, documenting and checking the site are nursing responsibilities.
+**Why correct:** Anticoagulation selection is a prescribing decision. For regional citrate, the 2026 Delphi consensus identifies falling systemic ionized calcium, rising calcium replacement needs, an increased total-to-ionized calcium ratio or worsening metabolic acidosis as concerning in combination. Monitor ordered trends and escalate promptly; no single finding establishes accumulation. Circuit anticoagulation and systemic anticoagulation have different purposes.
 **Why not A:** Reporting is a nursing responsibility.
 **Why not C:** Documentation is a nursing responsibility.
 **Why not D:** Site checks are a nursing responsibility.
@@ -173,6 +173,10 @@ D. Checking that the catheter site is clean and dry.
 - KDIGO Acute Kidney Injury Work Group. KDIGO Clinical Practice Guideline for Acute Kidney Injury. Kidney Int Suppl. 2012;2(1):1-138. Section 5 (recommendations 5.1.1–5.8.4), summary of recommendation statements. https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf (accessed 2026-11-14). Copyright held by KDIGO and the publisher; paraphrased only.
 
 - London Health Sciences Centre Critical Care Trauma Centre. *Principles of CRRT*, monitor-for-clotting section (specific centre; relevant text inspected 2026-11-23; not a clinical practice guideline). https://www.lhsc.on.ca/critical-care-trauma-centre/principles-of-crrt (accessed 2026-11-23). Centre-specific figures, settings, thresholds and operating instructions are not reproduced.
+
+- ASH HIT guideline, 2018. https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/ (selected recommendation or label text; accessed 2026-11-24)
+- 2026 citrate Delphi consensus. https://doi.org/10.1186/s13054-026-06066-x (selected recommendation or label text; accessed 2026-11-24)
+- KDIGO AKI/AKD update status. https://kdigo.org/guidelines/acute-kidney-injury/ (selected recommendation or label text; accessed 2026-11-24)
 
 ## 19. Local protocol note
 CRRT prescription, machine and circuit procedures, anticoagulation protocol, citrate and calcium monitoring, catheter care, alarm response, who may operate the machine and training requirements follow the hospital's policies and the manufacturer's instructions.
