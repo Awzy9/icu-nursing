@@ -29,9 +29,9 @@ D. Hung from the drip stand above the chair, which makes the readings easier to 
 A. Encourage the patient to keep coughing to clear the lungs and recheck the drainage in an hour.
 B. Increase the drainage by lowering the bottle, so the effusion clears faster and the symptoms settle.
 C. Give the next analgesia and observe, since coughing is common while a lung re-expands.
-D. Promptly clamp the effusion drain under its documented drainage instructions, assess the patient and alert the pleural team urgently.
+D. Promptly stop or clamp fluid drainage under the documented plan, assess the patient and urgently alert the pleural team.
 **Answer: D.**
-**Why correct:** The BTS 2023 statement advises promptly clamping an effusion drain when repetitive coughing or chest pain develops, to reduce the risk of re-expansion pulmonary oedema, and seeking urgent clinical assessment. Follow the documented clamping instruction; a bubbling pneumothorax drain is a different situation.
+**Why correct:** Repetitive cough or chest pain during drainage of a large effusion can warn of a serious complication including re-expansion pulmonary oedema. BTS advises prompt clamping of the effusion drain in this setting. Follow the written fluid-drainage instructions and assess the patient immediately; do not apply this response to a bubbling pneumothorax drain.
 **Why not A:** The symptoms may signal re-expansion pulmonary oedema.
 **Why not B:** Faster drainage is the opposite of what the symptoms call for.
 **Why not C:** Treating the symptom and waiting delays recognition of a dangerous complication.
@@ -43,7 +43,7 @@ B. Clamp it and remove the bottle from the circuit so the patient can be moved o
 C. Do not clamp it; clamping a bubbling drain should be avoided unless under specialist pleural supervision, so seek instruction.
 D. Clamp it while the lift is moving, because the motion is the main risk to the seal.
 **Answer: C.**
-**Why correct:** The BTS statement says clamping a bubbling chest tube should be avoided unless under specialist pleural supervision and in specific circumstances only.
+**Why correct:** Clamping an actively bubbling pneumothorax drain can cause dangerous pressure accumulation. Avoid routine transport clamping; seek specialist guidance for exceptional circumstances and follow the prescribed drainage and transport plan.
 **Why not A:** A clamped bubbling drain can allow air to build up in the pleural space.
 **Why not B:** Disconnecting an unsupervised, clamped drain adds risk.
 **Why not D:** Clamping a bubbling drain is not made safe by the length of time.
@@ -55,7 +55,7 @@ B. Daily wound checks, drainage volumes, and the presence of respiratory swingin
 C. The time of each bottle change, as the record of when the system was last handled.
 D. A single daily total for the whole day, entered at the end of the shift without observations.
 **Answer: B.**
-**Why correct:** The BTS statement says drains should be checked daily for wound infection, and fluid drainage volumes and the presence of respiratory swinging and/or bubbling should be documented on a dedicated chest drain observation chart.
+**Why correct:** Document wound findings, amount and trend of output and water-seal activity where relevant. Assess the patient's respiratory status as well; neither absent swinging nor bubbling alone proves a specific diagnosis. Use the device-specific observation chart and promptly report unexplained changes.
 **Why not A:** The statement names volumes and swinging or bubbling as documentation items.
 **Why not C:** Bottle changes alone do not show drain function.
 **Why not D:** Drainage should be observed and recorded over time, as instructed.
@@ -77,9 +77,9 @@ D. Connect it for patients who are breathless, to make drainage quicker and reli
 A. Ignore it, because the water level matters mainly while the patient is breathing out strongly.
 B. Top it up with any available sterile water without checking the system, as the level looks low.
 C. Raise the bottle above the patient so the little water left covers the tube end.
-D. Assess and report the fault; restore the specified seal level under protocol.
+D. Assess the patient and report the fault promptly; restore the device-specific seal only under the trained local procedure.
 **Answer: D.**
-**Why correct:** The BTS statement describes the need for adequate water to maintain the seal in a conventional underwater-seal system. The exact level and handling depend on the device; this does not apply to dry-seal or digital systems.
+**Why correct:** A conventional water seal must function at the specified level. Assess breathing and circulation first and arrange urgent trained assistance if the patient deteriorates. Follow the device manual and aseptic local procedure to restore the seal; do not generalize this to digital or dry-seal systems.
 **Why not A:** The water seal matters whenever the drain is in use.
 **Why not B:** Handling the system follows an aseptic procedure and local instruction.
 **Why not C:** Raising the bottle is unsafe; the bottle stays below the insertion site.

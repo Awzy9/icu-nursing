@@ -2461,6 +2461,17 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "c70619cd0df95762",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-ICS-TRANSFER-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-05": [
@@ -2507,6 +2518,17 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "92b9cb98e16d4da1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-BTS-PCS-2023"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "XQ-06": [
@@ -2527,6 +2549,19 @@
     "evidence_status": "partial",
     "sources": [
      "N-HODGSON-2014"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "904329a673e9c6a1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "N-HODGSON-2014",
+     "S-SCCM-PADIS",
+     "S-TEAM-RCT-2022"
     ],
     "gaps": 0,
     "required_sources": 0,

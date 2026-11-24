@@ -31,11 +31,11 @@ B. Leave the cables loose so they can move freely when the trolley goes over bum
 C. Turn the monitor away and rely on the alarms, because alarms alert staff to any change.
 D. Disconnect the syringe drivers and carry them in the bag to keep the trolley uncluttered.
 **Answer: A.**
-**Why correct:** ICS recommendations 74-75 say monitors, ventilator displays and syringe drivers should be visible to accompanying staff and monitoring cables tied together to form an umbilicus.
+**Why correct:** Secure monitoring cables without tension on the patient's devices and keep displays in view. ICS 2026 chapter 19 additionally calls for ongoing clinical observation and acuity-appropriate monitoring, including waveform capnography and airway-pressure surveillance for both invasive and non-invasive ventilation.
 **Why not B:** Loose cables are a safety risk and are not advised.
 **Why not C:** Staff are expected to see the displays during transfer.
 **Why not D:** Interrupting infusions without a plan is unsafe.
-**Trace:** N-ICS-TRANSFER-2026 — Rec 74-75: displays visible; cables tied together (umbilicus).
+**Trace:** N-ICS-TRANSFER-2026 — Chapter 19, sections 19.1–19.8 and recommendations 74–75; monitoring and safe equipment arrangement.
 
 **Q3 (monitoring).** A patient is going for a scan and return that will take about forty minutes, and the vasoactive syringe is nearly empty. What does the transfer guidance support?
 A. Starting the transfer and replacing the syringe at the scanner, because a change takes a moment.
@@ -43,11 +43,11 @@ B. Asking the transport assistant to fetch another syringe if the infusion runs 
 C. Stopping the infusion for the scan, since the patient will be lying still and should not need it.
 D. Making sure there is enough medication for at least twice the planned duration of the transfer.
 **Answer: D.**
-**Why correct:** ICS recommendation 65 says sufficient bolus and infusion medications should be available for at least twice the duration of the planned transfer. This is the cited UK ICS 2026 recommendation; the team also follows its local risk assessment and contingency plan.
+**Why correct:** The UK ICS 2026 medication contingency recommendation specifies supplies for at least twice the planned journey. Before departure, also calculate oxygen needs for the intended support modality, possible delays and changes in demand; verify power and backup resources under local policy.
 **Why not A:** Changes during transfer are riskier than planning ahead.
 **Why not B:** A transport assistant cannot prepare or give critical infusions.
 **Why not C:** Stopping a critical infusion without a plan risks deterioration.
-**Trace:** N-ICS-TRANSFER-2026 — Rec 65: infusions for at least twice the planned duration.
+**Trace:** N-ICS-TRANSFER-2026 — Recommendation 65 and section 17.11: sufficient medication and oxygen reserves.
 
 **Q4 (scope).** The team plans to move a critically unwell, ventilated patient with one nurse as the only escort. What should you raise?
 A. Nothing, because a single nurse can cope as long as a transport assistant helps with the trolley and the doors.
@@ -57,7 +57,7 @@ D. That the doctor can follow the trolley a few minutes later in case a problem 
 **Answer: C.**
 **Why correct:** ICS recommendation 55 says higher-risk patients must have two appropriately trained, competent and experienced clinical escorts, informed by the risk assessment.
 **Why not A:** A transport assistant is not a clinical escort.
-**Why not B:** The guidance says NHS ambulance crew must not be used as the second clinical escort.
+**Why not B:** For UK NHS transfers, the ambulance crew must not substitute for the second competent critical-care escort required for a higher-risk patient; the local service determines staffing.
 **Why not D:** An escort has to be with the patient throughout.
 **Trace:** N-ICS-TRANSFER-2026 — Rec 53-57: risk assessment; two clinical escorts for higher risk.
 

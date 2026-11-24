@@ -1344,7 +1344,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c4dd7240c8228845"
+   "hash": "c70619cd0df95762"
   },
   {
    "key": "XQ-05",
@@ -1364,7 +1364,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "db3816c2795d0c34"
+   "hash": "92b9cb98e16d4da1"
   },
   {
    "key": "XQ-06",
@@ -1379,12 +1379,22 @@
      "id": "N-HODGSON-2014",
      "licence_class": "GREEN",
      "verified": null
+    },
+    {
+     "id": "S-SCCM-PADIS",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-TEAM-RCT-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "ef37ae2bd906b368"
+   "hash": "904329a673e9c6a1"
   },
   {
    "key": "XQ-07",

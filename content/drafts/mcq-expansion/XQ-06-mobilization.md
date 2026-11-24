@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['SK-16']
-sources: ['N-HODGSON-2014']
+sources: ['N-HODGSON-2014', 'S-SCCM-PADIS', 'S-TEAM-RCT-2022']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # Safe mobilization of ventilated patients (Hodgson 2014)
@@ -19,11 +19,11 @@ B. Mobilization is allowed after tracheostomy, because the tube is then more sec
 C. Mobilization is allowed in bed but not out of bed while a tube is in place.
 D. An endotracheal tube is not in itself a contraindication to early mobilization.
 **Answer: D.**
-**Why correct:** The 2014 consensus states that intubation via an endotracheal tube was not a contraindication to early mobilization.
+**Why correct:** An endotracheal tube alone does not exclude active mobilization. The 2025 PADIS focused update conditionally favors enhanced rehabilitation compared with usual care, but a multidisciplinary safety and tolerance assessment remains necessary.
 **Why not A:** The consensus says the opposite.
 **Why not B:** The consensus does not require a tracheostomy.
 **Why not C:** The respiratory criteria apply to in- and out-of-bed mobilization.
-**Trace:** N-HODGSON-2014 — Intubation via ETT not a contraindication to early mobilization.
+**Trace:** N-HODGSON-2014, S-SCCM-PADIS — Intubation alone is not a contraindication; conditional enhanced rehabilitation recommendation.
 
 **Q2 (safety).** Before each mobilization session for a ventilated patient, which checks does the consensus describe?
 A. That the patient has had a full meal, so they have the energy for the activity.
@@ -65,9 +65,9 @@ D. Rising doses are irrelevant as long as the blood pressure reading on the moni
 A. They do not meet the criteria, because the FiO2 must be at room air before any mobilization.
 B. They meet the criteria only for in-bed exercises, never for sitting out of bed.
 C. They are irrelevant, as the consensus gives no respiratory values for safe mobilization.
-D. They meet the respiratory screening criteria for considering in- or out-of-bed mobilization.
+D. They fit the historical respiratory screen, but the team must assess overall readiness before mobilization.
 **Answer: D.**
-**Why correct:** The consensus considered FiO2 below 0.6, saturation above 90% and respiratory rate below 30 breaths per minute respiratory screening criteria for considering mobilization. These values are from the 2014 consensus and do not establish safety on their own; the team must assess cardiovascular, neurological and other risks and clinical stability.
+**Why correct:** These observations meet the respiratory examples in the 2014 consensus; they are not stand-alone clearance. Check cardiovascular, neurological and other risks and current stability with the team. Use local criteria, not these historical thresholds as universal rules.
 **Why not A:** The criterion is FiO2 below 0.6, not room air.
 **Why not B:** The criteria apply to in- and out-of-bed mobilization.
 **Why not C:** The consensus gives those values.
@@ -79,11 +79,13 @@ B. Yes, because the criteria were issued by a regulator and replace local policy
 C. No: the criteria are a guide to be used with clinical judgement, and each unit should consider them against its own staffing and expertise.
 D. No, because the criteria apply to patients who are not receiving any oxygen.
 **Answer: C.**
-**Why correct:** The authors state the criteria should be regarded as a guide and used with clinical judgement, are appropriate for experienced ICU clinicians, and each ICU should consider them in light of its own staffing levels and expertise.
+**Why correct:** The 2014 criteria guide experienced clinicians rather than replace judgment. In the 2022 TEAM trial, a higher level of early active mobilization did not improve days alive outside hospital and produced more potentially related adverse events. The 2025 PADIS conditional recommendation does not mandate a universal activity intensity. Individualize progression and stop for deterioration.
 **Why not A:** The consensus does not remove the need for judgement and team input.
 **Why not B:** They are expert consensus, not a regulatory standard.
 **Why not D:** The criteria were written for ventilated patients.
-**Trace:** N-HODGSON-2014 — Criteria a guide; use with clinical judgement; consider local staffing and expertise.
+**Trace:** N-HODGSON-2014, S-TEAM-RCT-2022, S-SCCM-PADIS — Historical screening consensus, TEAM trial results and conditional enhanced rehabilitation guidance.
 
 ## 18. References
 - Hodgson CL et al. Expert consensus and recommendations on safety criteria for active mobilization of mechanically ventilated critically ill adults. Crit Care 2014;18:658. https://doi.org/10.1186/s13054-014-0658-y (accessed 2026-11-15)
+- SCCM. 2025 focused PADIS update. https://doi.org/10.1097/CCM.0000000000006574 (selected recommendation-level text, accessed 2026-11-24)
+- TEAM investigators. Early Active Mobilization during Mechanical Ventilation in the ICU. NEJM 2022. https://pubmed.ncbi.nlm.nih.gov/36286256/ (abstract, accessed 2026-11-24)
