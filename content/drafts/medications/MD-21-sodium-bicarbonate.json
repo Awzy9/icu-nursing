@@ -88,6 +88,13 @@
           "sources": [
             "L-BICARBONATE"
           ]
+        },
+        {
+          "text": "The registered label describes worsening alkalosis with potassium depletion and spasm associated with low calcium as pH rises. Reassess clinical findings and ordered laboratory results; seek clinician review for suspected overcorrection.",
+          "support": "partial",
+          "sources": [
+            "L-BICARBONATE"
+          ]
         }
       ]
     },
@@ -219,6 +226,15 @@
     {
       "kind": "assess",
       "text": "Review other IV medicines and the planned access with pharmacy, particularly norepinephrine, dobutamine and calcium-containing products; report visible precipitate or cloudiness.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-BICARBONATE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review ordered acid-base and electrolyte results, including calcium when indicated; report new alkalosis, muscle twitching or tetany. Check sodium, urine output and fluid balance in patients at risk of sodium retention.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -88,6 +88,13 @@
           "sources": [
             "L-CEFAZOLIN"
           ]
+        },
+        {
+          "text": "The Baxter label identifies renal or hepatic impairment, poor nutrition, prolonged antimicrobial use and previous anticoagulant therapy as risk factors for reduced prothrombin activity. Review ordered coagulation testing in at-risk patients.",
+          "support": "partial",
+          "sources": [
+            "L-CEFAZOLIN"
+          ]
         }
       ]
     },
@@ -226,6 +233,15 @@
     {
       "kind": "assess",
       "text": "Review renal function, prior allergy reaction details and new seizure activity; report worsening renal function for prescription review before further administration where clinically appropriate.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CEFAZOLIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check for renal or hepatic impairment, poor nutritional status, prolonged therapy or anticoagulant use; review ordered prothrombin time and report new bleeding.",
       "critical": true,
       "support": "partial",
       "sources": [

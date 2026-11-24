@@ -5806,6 +5806,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "c3b23c45026fc43b",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-BICARBONATE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-22": [
@@ -5851,6 +5865,20 @@
    },
    {
     "hash": "dd53c256b91eb44c",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PIPTAZO",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d20ce15257061316",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -5920,6 +5948,20 @@
    },
    {
     "hash": "a6dea362ce33ab85",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MEROPENEM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "d89367ec6df74391",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -6069,6 +6111,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "2616ba8831c092ca",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFTRIAXONE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-26": [
@@ -6138,6 +6194,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "648391cfe2e9bcb5",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CEFAZOLIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-27": [
@@ -6196,6 +6266,20 @@
    },
    {
     "hash": "b1489b163b3fe2eb",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-AZITHROMYCIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "ce6958efc9146a5e",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -6277,6 +6361,20 @@
     "gaps": 5,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "f25cdf782594e498",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LINEZOLID",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 5,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-29": [
@@ -6336,6 +6434,20 @@
    },
    {
     "hash": "4bb86313e43f4c35",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-GENTAMICIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "a749807373ceb4b7",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -6407,6 +6519,21 @@
    {
     "hash": "b8c4b2536436fc0e",
     "recorded": "2026-11-23",
+    "evidence_status": "partial",
+    "sources": [
+     "L-PHENYLEPHRINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2",
+     "S-UIC-EXTRA-2026"
+    ],
+    "gaps": 4,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "0611c9dc2d45f53b",
+    "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
      "L-PHENYLEPHRINE",

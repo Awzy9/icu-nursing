@@ -88,6 +88,13 @@
           "sources": [
             "L-MEROPENEM"
           ]
+        },
+        {
+          "text": "The registered label reports thrombocytopenia in renal impairment, without clinical bleeding reported in the cited observation; do not infer that all platelet falls are caused by meropenem. Seek clinical assessment.",
+          "support": "partial",
+          "sources": [
+            "L-MEROPENEM"
+          ]
         }
       ]
     },
@@ -233,6 +240,15 @@
     {
       "kind": "assess",
       "text": "Check for muscle pain, weakness, dark urine and ordered creatine kinase results; urgently flag concurrent valproate or divalproex before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MEROPENEM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review renal function and ordered platelet counts; report unexplained platelet falls and new bleeding. Check for recurrent infection symptoms or new neurological deterioration.",
       "critical": true,
       "support": "partial",
       "sources": [

@@ -81,6 +81,13 @@
           "sources": [
             "L-GENTAMICIN"
           ]
+        },
+        {
+          "text": "The registered label warns that auditory or vestibular injury may be irreversible and renal or hearing changes can appear after therapy. Review concurrent ototoxic drugs, including loop diuretics, with the clinical team and facilitate ordered hearing assessment when feasible.",
+          "support": "partial",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
         }
       ]
     },
@@ -154,7 +161,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Report falling urine output, rising creatinine, tinnitus, hearing loss, dizziness or muscle weakness at once.",
+          "text": "Report falling urine output, rising creatinine, tinnitus, hearing loss, dizziness or muscle weakness at once. Activate emergency help for respiratory compromise or severe weakness with impaired ventilation.",
           "support": "partial",
           "sources": [
             "L-GENTAMICIN"
@@ -231,6 +238,15 @@
     {
       "kind": "escalate",
       "text": "Report nephrotoxicity or ototoxicity signs promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-GENTAMICIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review prescribed drug-level sampling times, renal trends, concurrent nephrotoxic or ototoxic medicines and hearing or balance symptoms. Toxicity can become apparent after treatment ends; communicate new symptoms and follow-up needs.",
       "critical": true,
       "support": "partial",
       "sources": [

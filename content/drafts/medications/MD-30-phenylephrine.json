@@ -87,6 +87,13 @@
           "sources": [
             "L-PHENYLEPHRINE"
           ]
+        },
+        {
+          "text": "The registered label warns of severe bradycardia, reduced cardiac output, peripheral and visceral ischaemia and renal toxicity; this formulation contains a sulfite. Escalate signs of reduced organ perfusion promptly and review formulation-specific allergy risk.",
+          "support": "partial",
+          "sources": [
+            "L-PHENYLEPHRINE"
+          ]
         }
       ]
     },
@@ -146,7 +153,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "For suspected extravasation, promptly stop phenylephrine at the compromised IV site, assess skin and perfusion, notify the clinical/pharmacy team, avoid force-flushing, and follow institutional rules on leaving the catheter available for evaluation and obtaining alternative access. Do not generalize this medication's anaesthesia label to a universal ICU prescription.",
+          "text": "For suspected extravasation, promptly stop phenylephrine at the compromised IV site, assess skin and perfusion, notify the clinical/pharmacy team, avoid force-flushing, and follow institutional rules on leaving the catheter available for evaluation and obtaining alternative access. Do not generalize this medication's anaesthesia label to a universal ICU prescription. Activate emergency help for severe bradycardia with instability, suspected organ ischaemia or anaphylaxis. Coordinate safe continuity of essential circulatory support through authorised alternative access when an injured site is involved.",
           "support": "partial",
           "sources": [
             "S-UIC-EXTRA-2026",
@@ -231,6 +238,15 @@
     {
       "kind": "escalate",
       "text": "Report chest pain, bradycardia or extravasation immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PHENYLEPHRINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess heart rate, blood pressure and signs of tissue perfusion together; report new bradycardia, worsening perfusion, abdominal pain or renal deterioration even when pressure improves. Verify relevant sulfite allergy history.",
       "critical": true,
       "support": "partial",
       "sources": [

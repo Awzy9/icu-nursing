@@ -81,6 +81,13 @@
           "sources": [
             "L-PIPTAZO"
           ]
+        },
+        {
+          "text": "The registered label warns of hemophagocytic lymphohistiocytosis (HLH) and rhabdomyolysis. Recognize concerning symptom clusters and promptly activate the medication-safety pathway; the label calls for immediate discontinuation when HLH is suspected and discontinuation when rhabdomyolysis manifestations occur.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
         }
       ]
     },
@@ -140,7 +147,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Stop the infusion and call for help for breathing difficulty, swelling, hypotension or a spreading rash; report new fever with rash or muscle pain.",
+          "text": "Stop the infusion and call for help for breathing difficulty, swelling, hypotension or a spreading rash; report new fever with rash or muscle pain. Urgently escalate suspected HLH, rhabdomyolysis, new neurological symptoms or significant bleeding. Follow the label-directed cessation pathway and emergency response for severe deterioration.",
           "support": "partial",
           "sources": [
             "L-PIPTAZO"
@@ -217,6 +224,15 @@
     {
       "kind": "escalate",
       "text": "Stop and report suspected allergy immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Report new fever with cytopenias, rash or enlarged lymph nodes, and new muscle pain, weakness or dark urine. Suspected HLH or rhabdomyolysis needs urgent assessment and the label-directed cessation pathway.",
       "critical": true,
       "support": "partial",
       "sources": [

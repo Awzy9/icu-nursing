@@ -116,6 +116,13 @@
           "sources": [
             "L-LINEZOLID"
           ]
+        },
+        {
+          "text": "The registered ZYVOX label recommends weekly complete blood counts; thrombocytopenia is reported more frequently in severe renal impairment and moderate to severe hepatic impairment. Seek clinician review of new or worsening myelosuppression.",
+          "support": "partial",
+          "sources": [
+            "L-LINEZOLID"
+          ]
         }
       ]
     },
@@ -273,6 +280,15 @@
     {
       "kind": "escalate",
       "text": "Report visual change, neuropathy or serotonin syndrome signs.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LINEZOLID"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm the ordered blood-count surveillance plan; the registered label recommends weekly counts, particularly with prolonged therapy, renal or hepatic impairment, or concomitant marrow-suppressing medicines. Report falling counts promptly.",
       "critical": true,
       "support": "partial",
       "sources": [

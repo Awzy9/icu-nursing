@@ -88,6 +88,13 @@
           "sources": [
             "L-AZITHROMYCIN"
           ]
+        },
+        {
+          "text": "The label reports exacerbation of myasthenia gravis and new myasthenic syndromes, as well as local IV reactions. Assess respiratory and bulbar function urgently when new weakness develops.",
+          "support": "partial",
+          "sources": [
+            "L-AZITHROMYCIN"
+          ]
         }
       ]
     },
@@ -226,6 +233,15 @@
     {
       "kind": "assess",
       "text": "Review ordered QTc, potassium and magnesium results in patients at arrhythmia risk; assess for new rash, jaundice, palpitations or syncope.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-AZITHROMYCIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Ask about myasthenia gravis and assess new muscle weakness, swallowing difficulty or respiratory deterioration. Activate emergency help for impaired ventilation; report IV site pain or inflammation.",
       "critical": true,
       "support": "partial",
       "sources": [

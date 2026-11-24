@@ -88,6 +88,13 @@
           "sources": [
             "L-CEFTRIAXONE"
           ]
+        },
+        {
+          "text": "The registered label describes biliary and urinary precipitation, sometimes associated with obstruction or renal failure, and recommends prothrombin-time surveillance in patients with low vitamin K stores. Assess new symptoms urgently and follow clinician-directed cessation procedures if toxicity is suspected.",
+          "support": "partial",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
         }
       ]
     },
@@ -228,6 +235,15 @@
     {
       "kind": "assess",
       "text": "Assess for new confusion, myoclonus, seizures or unexpected haemoglobin fall; review renal function and report suspected drug-related changes promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review ordered coagulation results in patients with poor nutrition, liver disease or vitamin K antagonist therapy. Promptly report new abdominal pain, jaundice, oliguria or flank pain for assessment.",
       "critical": true,
       "support": "partial",
       "sources": [
