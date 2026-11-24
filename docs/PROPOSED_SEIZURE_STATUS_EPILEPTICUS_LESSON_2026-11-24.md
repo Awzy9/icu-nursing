@@ -23,7 +23,7 @@ An adult ICU patient has generalized convulsions. Emergency help is summoned, th
 ## Knowledge checks
 1. A convulsive seizure is still occurring and its onset was four minutes ago. Should the nurse wait one minute before calling for help? **No.** Activate assistance and immediate assessment now; the diagnostic time threshold does not justify delaying the response.
 2. After emergency treatment, convulsions stop but consciousness remains unexpectedly depressed. Is a reassuring processed sedation index enough? **No.** Urgently escalate and arrange specialist EEG assessment; the index does not exclude ongoing seizures.
-3. A sedated patient receives a rescue antiseizure medicine. What must be handed over? **The exact administration time, observed response, airway and circulatory status, any recurrence, and the authorized monitoring and treatment plan.
+3. A sedated patient receives a rescue antiseizure medicine. What must be handed over? **Answer:** The exact administration time, observed response, airway and circulatory status, any recurrence, and the authorized monitoring and treatment plan.
 
 ## Evidence and limits
 - NICE NG217, chapter 7: https://www.nice.org.uk/guidance/ng217/chapter/treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures — indexed recommendation excerpts checked; direct page returned 403.
