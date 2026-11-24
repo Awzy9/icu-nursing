@@ -50,6 +50,8 @@ In ARDS inflamed, fluid-filled lung leaves a small aerated "baby lung". Overstre
 - For prone positioning: take part in the team turn using the unit's procedure, protect the airway, lines and eyes, offload pressure points and document.
 - Communicate trends with SBAR.
 
+**Bedside assessment and measurement quality (AARC 2024).** Compare the current measured exhaled tidal volume with the previous values and the documented predicted body weight. Record whether the patient was passive or actively breathing when pressure measurements were obtained; an unreliable plateau or total PEEP measurement should be identified as such rather than used to calculate a misleading driving pressure. Review the patient, airway position, circuit, humidification and skin around the interface with trained staff. A remote display or a normal alarm status is not a substitute for direct clinical assessment. New instability requires immediate help, not completion of a routine ventilator check first.
+
 ## 8. Monitoring parameters
 Per policy, at least hourly in unstable patients and with every reassessment: FiO₂, PEEP, delivered tidal volume, pressures, respiratory rate, SpO₂, haemodynamics, sedation score, synchrony, secretions; pressure-area checks each turn; documentation of prone start/stop times.
 
@@ -93,7 +95,7 @@ Ventilator-induced lung injury, barotrauma, hypotension from high intrathoracic 
 Mode and settings as ordered; delivered tidal volume and pressures; trends; alarms and actions; patient response; sedation and synchrony; communication and escalation; prone start/stop times, team members, skin and device checks.
 
 ## 15. Practical bedside example
-At the hourly check you note exhaled tidal volume has fallen from the usual delivered value while peak pressure rose. You check the patient (chest movement, secretions, cough), look for tube kinks or biting, suction per policy, check the circuit for leaks or water, and check synchrony. If values do not return to the usual range, you call the respiratory therapist or doctor with SBAR and stay at the bedside.
+At the hourly check you note exhaled tidal volume has fallen from the usual delivered value while peak pressure rose. You check the patient (chest movement, secretions, cough), look for tube kinks or biting, suction per policy, check the circuit for leaks or water, and check synchrony. If the patient is unstable or ventilation is ineffective, summon immediate help and follow the emergency ventilation plan while the trained team assesses the cause. For persistent abnormalities in a stable patient, promptly contact the respiratory therapist or doctor and remain at the bedside as indicated.
 
 
 **How to read the change.** Compare the measured exhaled volume with the patient’s baseline on the same mode and settings. Read airway pressures alongside the volume and inspect the tube and circuit. When a valid plateau pressure is already available, a rise in peak pressure with a stable plateau points toward increased resistance. A rise in both can suggest reduced compliance or an increase in end-expiratory pressure. Report the mode, set and measured values, and how quickly they changed. Escalate immediately if the patient is deteriorating.
