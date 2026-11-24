@@ -78,8 +78,8 @@
       "support": "partial",
       "items": [
         {
-          "text": "Measure blood potassium in patients at risk of hyperkalaemia before starting heparin and periodically in all patients.",
-          "support": "sourced",
+          "text": "The registered label calls for potassium measurement before treatment in patients at risk of hyperkalaemia, and periodic measurement for all patients treated beyond five days, or sooner according to clinical judgement. Review renal function, baseline potassium and other potassium-raising medicines with the team.",
+          "support": "partial",
           "sources": [
             "L-HEPARIN"
           ]

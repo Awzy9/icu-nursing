@@ -142,6 +142,13 @@
           "text": "Confirm the prescribed calcium salt and exact product with pharmacy under local medication policy; do not independently substitute calcium chloride for calcium gluconate.",
           "support": "local_protocol",
           "sources": []
+        },
+        {
+          "text": "The registered label advises avoiding this calcium product in patients receiving cardiac glycosides unless the treating clinician determines concurrent therapy is necessary. Obtain clinician or pharmacist review before administration and closely monitor ECG if concurrent treatment is authorised.",
+          "support": "partial",
+          "sources": [
+            "L-CALCIUM"
+          ]
         }
       ]
     },
@@ -301,7 +308,7 @@
     },
     {
       "kind": "observe",
-      "text": "Monitor the ECG, especially with cardiac glycosides.",
+      "text": "Clarify cardiac glycoside exposure with the clinician before use; the registered label advises avoidance unless concurrent therapy is necessary. Closely monitor ECG when authorised.",
       "critical": true,
       "support": "sourced",
       "sources": [

@@ -88,6 +88,13 @@
           "sources": [
             "L-CISATRACURIUM"
           ]
+        },
+        {
+          "text": "The registered label warns that renal or hepatic impairment may increase exposure to metabolites during extended administration, with a possible increased seizure risk. Review organ function and prescribed neuromuscular monitoring; absence of visible movement does not exclude a neurological event.",
+          "support": "partial",
+          "sources": [
+            "L-CISATRACURIUM"
+          ]
         }
       ]
     },
@@ -219,6 +226,15 @@
     {
       "kind": "assess",
       "text": "Confirm prescribed sedation and analgesia before and throughout blockade, uninterrupted delivery and effective ventilation; do not infer comfort from immobility.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CISATRACURIUM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review renal and hepatic function during extended administration and promptly report suspected seizures or delayed recovery. Maintain prescribed sedation, analgesia and ventilation while seeking clinical assessment.",
       "critical": true,
       "support": "partial",
       "sources": [

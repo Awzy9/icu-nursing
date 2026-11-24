@@ -88,6 +88,13 @@
           "sources": [
             "L-ADENOSINE"
           ]
+        },
+        {
+          "text": "The registered label reports seizures and loss of consciousness after administration and describes interactions that may alter response or conduction. Review concurrent medicines before use and seek urgent clinical assessment for new neurological findings.",
+          "support": "partial",
+          "sources": [
+            "L-ADENOSINE"
+          ]
         }
       ]
     },
@@ -140,7 +147,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Call for emergency help for severe respiratory difficulty, prolonged asystole, high-grade heart block or a dangerous rhythm with clinical deterioration. Do not give further adenosine after a serious reaction without clinician reassessment.",
+          "text": "Call for emergency help for severe respiratory difficulty, prolonged asystole, high-grade heart block or a dangerous rhythm with clinical deterioration. Do not give further adenosine after a serious reaction without clinician reassessment. Activate emergency assessment for seizure, unexpected loss of consciousness or significant circulatory compromise; do not give further treatment without reassessment.",
           "support": "partial",
           "sources": [
             "L-ADENOSINE"
@@ -226,6 +233,15 @@
     {
       "kind": "assess",
       "text": "Screen for asthma, bronchospasm and obstructive lung disease before administration; clarify suitability with the treating clinician and watch breathing alongside continuous ECG.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ADENOSINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review current medicines with the team for altered adenosine response, including dipyridamole, methylxanthines and carbamazepine. Report loss of consciousness, seizure or unexpected conduction disturbance immediately.",
       "critical": true,
       "support": "partial",
       "sources": [

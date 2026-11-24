@@ -4865,6 +4865,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "add7d8c325ce7de1",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-KETAMINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-12": [
@@ -5018,6 +5032,20 @@
     "gaps": 3,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "671ea2d0ec811cc3",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CISATRACURIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "MD-14": [
@@ -5077,6 +5105,20 @@
    },
    {
     "hash": "1e49ba21340f766a",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-HEPARIN",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "675922b382274cb1",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -5309,6 +5351,20 @@
    },
    {
     "hash": "8dbab55f42723277",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-ADENOSINE",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 3,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "8e6446381d138fc1",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
@@ -5656,6 +5712,20 @@
    },
    {
     "hash": "4a9cbafb5d2a770d",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-CALCIUM",
+     "S-AHRQ-TS",
+     "S-FDA-PUMP",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 7,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f1e0f923abeaf59f",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [

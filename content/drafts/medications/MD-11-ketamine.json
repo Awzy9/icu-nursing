@@ -95,6 +95,13 @@
           "sources": [
             "L-KETAMINE"
           ]
+        },
+        {
+          "text": "The registered label describes hepatobiliary injury with recurrent exposure, including medically supervised unapproved uses. Review baseline and periodic liver tests in this context; this does not establish a licensed indication for prolonged ICU sedation.",
+          "support": "partial",
+          "sources": [
+            "L-KETAMINE"
+          ]
         }
       ]
     },
@@ -233,6 +240,15 @@
     {
       "kind": "assess",
       "text": "Assess ventilation, airway patency and oxygenation continuously during administration; check concurrent CNS depressants and watch for vomiting, laryngospasm or apnoea.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-KETAMINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "For recurrent ketamine exposure, review baseline and ordered follow-up liver tests, including cholestatic markers; report new jaundice or unexplained liver-test changes for clinical review.",
       "critical": true,
       "support": "partial",
       "sources": [
