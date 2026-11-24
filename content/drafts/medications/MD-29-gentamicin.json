@@ -1,259 +1,275 @@
 {
- "med_id": "MD-29",
- "number": 29,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Gentamicin",
- "drug_class": "Aminoglycoside antibacterial",
- "category": "anti-infectives",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Aminoglycoside antibacterial used to treat or prevent proven or strongly suspected infections. The label carries a boxed warning on nephrotoxicity, ototoxicity and neurotoxicity. Nursing focus: renal function, hearing and balance, and drug-level monitoring.",
- "batch": 3,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-GENTAMICIN",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-GENTAMICIN",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-29",
+  "number": 29,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Gentamicin",
+  "drug_class": "Aminoglycoside antibacterial",
+  "category": "anti-infectives",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Aminoglycoside antibacterial used to treat or prevent proven or strongly suspected infections. The label carries a boxed warning on nephrotoxicity, ototoxicity and neurotoxicity. Nursing focus: renal function, hearing and balance, and drug-level monitoring.",
+  "batch": 3,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-GENTAMICIN",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-GENTAMICIN",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label states gentamicin should be used only to treat or prevent infections that are proven or strongly suspected to be caused by susceptible bacteria.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Keep the patient under close clinical observation, and report any change in urine output, hearing, balance or muscle strength.",
+          "support": "partial",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for monitoring of kidney function during treatment.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Boxed warning: patients treated with aminoglycosides should be under close clinical observation because of potential toxicity; gentamicin is potentially nephrotoxic, and the risk is greater in patients with impaired renal function.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        },
+        {
+          "text": "Aminoglycosides can cause fetal harm when given to pregnant women.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        },
+        {
+          "text": "The label describes nephrotoxicity (casts, cells or protein in urine, rising urea or creatinine, oliguria) among the adverse effects.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        },
+        {
+          "text": "The registered gentamicin label warns about possible neuromuscular blockade and respiratory paralysis, including heightened concern with anaesthesia, neuromuscular blocking agents and neuromuscular disorders. Request a clinical and pharmacy assessment of these risks before administration; do not infer an independent treatment or reversal plan.",
+          "support": "partial",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists nephrotoxicity first among the adverse effects, with neurotoxicity and ototoxicity described in the boxed warning.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        },
+        {
+          "text": "The adverse-reaction section describes renal toxicity with rising BUN or creatinine, oliguria, or abnormal urinary sediment; it is reported more often with pre-existing renal impairment or prolonged or excessive exposure.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        },
+        {
+          "text": "Auditory and vestibular toxicity may present with tinnitus, vertigo, dizziness or hearing loss, which may be irreversible. Peripheral neuropathy, convulsions and a myasthenia-like syndrome are also reported.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        },
+        {
+          "text": "Other reactions possibly related to gentamicin include respiratory depression and anaphylactoid reactions. Reported laboratory abnormalities include reduced magnesium, calcium and potassium, sometimes associated with tetany or muscle weakness.",
+          "support": "sourced",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Report falling urine output, rising creatinine, tinnitus, hearing loss, dizziness or muscle weakness at once.",
+          "support": "partial",
+          "sources": [
+            "L-GENTAMICIN"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "laboratory",
+      "text": "Review renal function and drug levels as ordered.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-GENTAMICIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Monitor urine output.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-GENTAMICIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Ask about hearing change, tinnitus and dizziness.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-GENTAMICIN"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report nephrotoxicity or ototoxicity signs promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-GENTAMICIN"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record results and observations.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Assess for unexpected muscle weakness or impaired breathing, particularly with neuromuscular disease or concurrent neuromuscular blocking medicines. Activate urgent assessment and airway support under local protocol for respiratory compromise.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-GENTAMICIN"
+      ]
+    }
+  ],
+  "gaps": [
+    "Level targets, regimen selection and detailed neuromuscular-blockade interaction management remain outside this draft; warning signs and urgent escalation are included.",
+    "The label read is the vial presentation (intramuscular and intravenous).",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "977180b3-a222-4282-d485-4a3217674305",
+    "label_version": "22",
+    "effective_time": "20260520",
+    "matches_register": true,
+    "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Adverse-reaction field read in full for this targeted expansion. This verifies this US manufacturer label only; no non-US regulator or nursing protocol review is implied."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label states gentamicin should be used only to treat or prevent infections that are proven or strongly suspected to be caused by susceptible bacteria.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Keep the patient under close clinical observation, and report any change in urine output, hearing, balance or muscle strength.",
-     "support": "partial",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label calls for monitoring of kidney function during treatment.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Boxed warning: patients treated with aminoglycosides should be under close clinical observation because of potential toxicity; gentamicin is potentially nephrotoxic, and the risk is greater in patients with impaired renal function.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    },
-    {
-     "text": "Aminoglycosides can cause fetal harm when given to pregnant women.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    },
-    {
-     "text": "The label describes nephrotoxicity (casts, cells or protein in urine, rising urea or creatinine, oliguria) among the adverse effects.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists nephrotoxicity first among the adverse effects, with neurotoxicity and ototoxicity described in the boxed warning.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    },
-    {
-     "text": "The adverse-reaction section describes renal toxicity with rising BUN or creatinine, oliguria, or abnormal urinary sediment; it is reported more often with pre-existing renal impairment or prolonged or excessive exposure.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    },
-    {
-     "text": "Auditory and vestibular toxicity may present with tinnitus, vertigo, dizziness or hearing loss, which may be irreversible. Peripheral neuropathy, convulsions and a myasthenia-like syndrome are also reported.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    },
-    {
-     "text": "Other reactions possibly related to gentamicin include respiratory depression and anaphylactoid reactions. Reported laboratory abnormalities include reduced magnesium, calcium and potassium, sometimes associated with tetany or muscle weakness.",
-     "support": "sourced",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Report falling urine output, rising creatinine, tinnitus, hearing loss, dizziness or muscle weakness at once.",
-     "support": "partial",
-     "sources": [
-      "L-GENTAMICIN"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "laboratory",
-   "text": "Review renal function and drug levels as ordered.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-GENTAMICIN"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Monitor urine output.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-GENTAMICIN"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Ask about hearing change, tinnitus and dizziness.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-GENTAMICIN"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report nephrotoxicity or ototoxicity signs promptly.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-GENTAMICIN"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record results and observations.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Level targets, dosing interval and neuromuscular-blockade interactions: not included.",
-  "The label read is the vial presentation (intramuscular and intravenous).",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "977180b3-a222-4282-d485-4a3217674305",
-  "label_version": "22",
-  "effective_time": "20260520",
-  "matches_register": true,
-  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Adverse-reaction field read in full for this targeted expansion. This verifies this US manufacturer label only; no non-US regulator or nursing protocol review is implied."
- }
 }

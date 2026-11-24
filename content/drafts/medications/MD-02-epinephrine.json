@@ -158,7 +158,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "For IV epinephrine, urgently escalate suspected extravasation, rhythm disturbance, chest pain or deteriorating perfusion. When the infusion site appears compromised, stop administration through that catheter immediately and activate the local extravasation and alternative-access plan; this is distinct from the intramuscular anaphylaxis administration route.",
+          "text": "For IV epinephrine, urgently escalate suspected extravasation, rhythm disturbance, chest pain or deteriorating perfusion. When the infusion site appears compromised, stop administration through that catheter immediately and activate the local extravasation and alternative-access plan; this is distinct from the intramuscular anaphylaxis administration route. Arrange authorised alternate access and continuity of essential haemodynamic support urgently; do not equate stopping delivery at an injured site with abandoning the patient's circulatory support. Follow local pharmacy and extravasation procedures.",
           "support": "partial",
           "sources": [
             "L-EPINEPHRINE",
@@ -208,7 +208,7 @@
   "monitoring": [
     {
       "kind": "assess",
-      "text": "Check the injection or infusion site for tissue damage.",
+      "text": "Check IV site and distal perfusion for signs of tissue injury; urgently escalate suspected extravasation and arrange the local alternative-access plan for essential therapy.",
       "critical": true,
       "support": "partial",
       "sources": [
