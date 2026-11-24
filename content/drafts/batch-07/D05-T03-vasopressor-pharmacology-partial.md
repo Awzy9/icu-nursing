@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Pharmacology 2e, sections 4.4 ANS medication classes, 4.8 Alpha-1 agonists, 4.11 Beta-1 agonist, 4.15 Alpha- and beta-receptor agonists (catecholamines) – US entry-level textbook, CC BY 4.0", "Surviving Sepsis Campaign 2026 official SCCM recommendation page – recommendation-level statements for adults with septic shock only; full publication NOT read", "ISMP High-Alert Medication List 2024 (classification only); FDA infusion pump page (2018)", "Phase 3 additions: US FDA prescribing information (one manufacturer label per drug, retrieved 2026-11-15 through openFDA: norepinephrine, vasopressin, epinephrine, dopamine, dobutamine, phenylephrine) – US labelling, not a guideline; JAMA Netw Open 2026 meta-analysis of peripheral vasopressor adverse events (CC BY)", "NICE NG148 recommendation 1.5.5 (official recommendation page checked 2026-11-21, not full evidence review): do not use low-dose dopamine to treat AKI"]
-sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SSC-2026, S-ISMP-HA, S-FDA-PUMP, S-PVP-META-2026, S-NICE-NG148-DOPAMINE, L-DOBUTAMINE]
-sources_not_read: [S-OPENRN-PHARM]
+sources: [S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-SSC-2026, S-ISMP-HA, S-FDA-PUMP, S-PVP-META-2026, S-NICE-NG148-DOPAMINE, L-DOBUTAMINE, S-OPENRN-PHARM]
+sources_not_read: []
 independently_written_note: "Original wording. Five short Open RN pharmacology sections were read in full (textbook level; phenylephrine there is the oral decongestant). In Phase 3 the indications, warnings and adverse-reaction sections of one US FDA label each for norepinephrine, vasopressin, epinephrine, dopamine, dobutamine and phenylephrine were read, which now supports intravenous phenylephrine and vasopressin at the level of US labelling; angiotensin II, milrinone and other agents still have NO pharmacology source here and are mentioned only where the SSC 2026 page names them. Labels differ between manufacturers and revisions, are US-specific and are not clinical guidelines. No doses, concentrations, dilutions, infusion rates, titration ranges or compatibility information are given (platform no-dosing rule); the labels' dosage and extravasation-treatment doses were retrieved but deliberately not used. The ICU nursing monitoring statements come from short textbook medication grids, not from an ICU guideline; extravasation management is not covered; NICE NG148 specifies that low-dose dopamine is not an AKI treatment (the recommendation was checked, not its full evidence review). This draft is partial and must not be read as a complete vasopressor pharmacology resource."
 ---
 # Vasopressors and inotropes – classes, mechanisms and nursing monitoring (partial evidence)
@@ -58,6 +58,8 @@ These drugs act within minutes, are given by continuous infusion to the sickest 
 - Report adverse effects (arrhythmia, chest pain, marked blood pressure rise, falling urine output, cold or discoloured limbs, breathlessness) promptly.
 - Keep high-alert medication safeguards (labelling, double check, smart-pump library) as in D05-T16.
 - Document drug, rate, targets, observations, titrations and who authorised them, site checks and escalations.
+
+**Reassess intended and adverse responses (Open RN, chapter 2).** Identify the clinical goal and prescribed monitoring plan before administering a vasoactive medicine. At handover report the actual agent, observed perfusion and rhythm, adverse findings and unresolved concerns. When findings conflict with the intended response, seek prompt clinical assessment rather than treating a drug-class description as a titration rule. Do not interrupt essential circulatory support without an authorized alternative plan. The textbook is not a critical-care dosing reference.
 
 ## 8. Monitoring parameters
 Blood pressure and MAP against the ordered target; heart rate and rhythm (continuous ECG); perfusion (capillary refill, skin temperature and colour, limb colour and temperature); urine output; respiratory rate and oxygenation; mental state; lactate if ordered; cardiac output if measured; infusion site and line; pump settings and alarms.
@@ -180,6 +182,8 @@ D. Reporting a sudden fall in blood pressure to the prescriber with the pump and
 - NICE. *Acute kidney injury: prevention, detection and management*, NG148, recommendation 1.5.5 (official recommendations page accessed 2026-11-21; complete evidence review not read). https://www.nice.org.uk/guidance/ng148/chapter/Recommendations . Cited and paraphrased only; reuse rights not inferred.
 
 - Hospira dobutamine label. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89becb0c-da60-4f43-0a98-29ff7a9eca58 (selected recommendation or label text; accessed 2026-11-24)
+
+- S-OPENRN-PHARM. https://www.ncbi.nlm.nih.gov/sites/books/NBK597872/ (selected passages checked 2026-11-24; full appraisal and applicable rights review outstanding).
 
 ## 19. Local protocol note
 Drug selection, concentrations, titration protocols, who may titrate, peripheral use, site care, extravasation management, double-check policy and monitoring intervals follow the unit's policies and the pharmacy.
