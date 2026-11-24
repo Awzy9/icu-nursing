@@ -561,6 +561,21 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "a4dbe32ef576d802",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ATS-ARDS-2024",
+     "S-ESICM-ARDS-2023",
+     "S-SAUDI-MV-2026",
+     "S-SCCM-NMBA-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D01-T11": [
@@ -1153,6 +1168,21 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "9754b132a56b69d7",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-AARC-SUCT",
+     "S-SAUDI-MV-2026",
+     "S-SHEA-VAP-2022",
+     "S-SIAARTI-VAP-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D07-T06": [
@@ -1343,6 +1373,22 @@
      "S-INTL-PI-2026",
      "S-PUMA-2022",
      "S-SHEA-VAP-2022"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "962b4bd771202d12",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AARC-PVA",
+     "S-ERC-ALS-2025",
+     "S-INTL-PI-2026",
+     "S-PUMA-2022",
+     "S-SHEA-VAP-2022",
+     "S-SIAARTI-VAP-2026"
     ],
     "gaps": 0,
     "required_sources": 0,
@@ -1692,6 +1738,18 @@
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "5c4d7a999d0d5633",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-SCCM-NMBA-2026",
      "S-SCCM-PADIS"
     ],
     "gaps": 0,

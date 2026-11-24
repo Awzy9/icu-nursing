@@ -221,6 +221,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-ARDS-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-ARDS-2023",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -229,12 +234,17 @@
      "id": "S-SAUDI-MV-2026",
      "licence_class": "RED",
      "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SCCM-NMBA-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "5961aa08df38fc8a"
+   "hash": "a4dbe32ef576d802"
   },
   {
    "key": "D01-T11",
@@ -426,15 +436,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SAUDI-MV-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SHEA-VAP-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SIAARTI-VAP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "586560a69dfa2a0a"
+   "hash": "9754b132a56b69d7"
   },
   {
    "key": "D07-T06",
@@ -514,12 +534,17 @@
      "id": "S-SHEA-VAP-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SIAARTI-VAP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "f3cd3bdafafc41d2"
+   "hash": "962b4bd771202d12"
   },
   {
    "key": "D03-T01",
@@ -681,6 +706,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-SCCM-NMBA-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -689,7 +719,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "f0ca92eae6a9aa27"
+   "hash": "5c4d7a999d0d5633"
   },
   {
    "key": "D07-T01",

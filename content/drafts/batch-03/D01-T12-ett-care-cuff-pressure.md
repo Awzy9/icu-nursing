@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – recommendations 11–15 and cuff section", "SHEA/IDSA/APIC VAP/VAE 2022 update – cuff, sedation and circuit statements", "ERC Guidelines 2025 Adult ALS – waveform capnography to confirm tracheal tube placement", "EPUAP/NPIAP/PPPIA International Guideline 4th ed. Quick Reference Guide 2026 – device-related pressure injury statements"]
-sources: [S-AARC-PVA, S-SHEA-VAP-2022, S-ERC-ALS-2025, S-INTL-PI-2026, S-PUMA-2022]
+sources: [S-AARC-PVA, S-SHEA-VAP-2022, S-ERC-ALS-2025, S-INTL-PI-2026, S-PUMA-2022, S-SIAARTI-VAP-2026]
 independently_written_note: "Original wording; paraphrase only. AARC PVA (© Daedalus Enterprises) and the ERC 2025 ALS guideline (commercial use needs an ERC agreement) are cite-only. No guideline read gives a tube depth, securement method, cuff interval or measurement technique beyond what is stated below. Tracheostomy care is a separate topic and not covered."
 ---
 # Endotracheal tube care – securement, position and cuff pressure
@@ -60,6 +60,8 @@ Tube depth and securement each shift and with moves; cuff pressure at policy int
 | Tube fixation devices (pressure injury) | Suggest an ETT fixation device (conditional); not in the prone position | EPUAP/NPIAP/PPPIA 2026 QRG | Per unit equipment; prone-specific caution |
 | Preventive dressing under devices | Recommended when it does not interfere with the device | QRG: strong, very low certainty | Per policy |
 | Circuit changes | Only if soiled or malfunctioning | SHEA, high | Do not change routinely |
+
+**SIAARTI 2026 cross-check.** Use a manometer and the ordered cuff target. The consensus favours 20–30 cmH₂O and does not establish a universal check interval or preference for automatic systems. An abnormal pressure with a leak or falling delivered ventilation warrants prompt airway assessment, rather than repeatedly adding air. Subglottic drainage may be appropriate with a dedicated tube in selected patients; follow its device instructions and local protocol. Evidence does not identify one preferred suction method. These are prevention considerations, not a reason to delay airway rescue.
 
 ## 10. Warning signs and red flags
 Loss of capnography trace; sudden desaturation; loss of chest movement or breath sounds on one side; audible leak or falling expired volume; rising airway pressures or inability to pass a suction catheter; patient biting or pulling at the tube; tube moved from the recorded depth; visible tube in the mouth; swelling, bleeding or blistering of lip, mouth or skin; secretions around the cuff; cuff pressure repeatedly low or very high.
@@ -163,10 +165,13 @@ D. Reporting redness under the securement.
 
 - PUMA consensus guideline, 2022. https://doi.org/10.1111/anae.15817 (selected recommendations or abstract, accessed 2026-11-24; full text not appraised in this pass)
 
+- SIAARTI. Strategies to prevent ventilator-associated pneumonia in critically ill mechanically ventilated patients: a SIAARTI consensus statement. 2026-07-08. https://doi.org/10.1186/s44158-026-00432-5 (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+
 ## 19. Local protocol note
 Tube depth checks, securement method, cuff-pressure interval and target range, tube-holder choice and restraint policy follow the institution's protocols and the respiratory therapy team.
 
 ## 20. Evidence, applicability and open questions
+- SIAARTI 2026 statements 1–2 and rationale checked; no new device-specific suction settings or universal monitoring interval inferred.
 - Source quality: AARC 2024 strong recommendations on manometer use and skin assessment are high certainty; placement and securement assessment is conditional with very low certainty. Cuff range, securement methods and depth are not graded. The pressure-injury guide was read in its abridged form.
 - Applicability: AARC is US respiratory-therapy guidance; nurses' responsibilities for cuff pressure vary by country. ERC is European.
 - Not covered: tracheostomy care, in-line suction details, extubation criteria, cuff-leak tests.

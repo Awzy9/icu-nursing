@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 – official SCCM recommendation page (recommendation-level statements; full guideline NOT read)", "SCCM PADIS 2025 focused update – official SCCM recommendation page (five statements; full text NOT read)"]
-sources: [S-SCCM-PADIS]
+sources: [S-SCCM-PADIS, S-SCCM-NMBA-2026]
 independently_written_note: "Original wording. Only the official SCCM recommendation pages were read. The Richmond Agitation-Sedation Scale (RASS) definitions, the Sedation-Agitation Scale and their validation data were NOT read, so the scales' level-by-level descriptions are deliberately not reproduced or taught here: use the validated scale as licensed and trained in your unit. Sedative drug choices and doses are prescriber decisions and are not given. Restraint law and policy vary by country."
 ---
 # Sedation monitoring and targeted light sedation in ventilated adults
@@ -62,6 +62,8 @@ Sedation scale score and target; pain score; delirium screen; respiratory rate, 
 | Restraints | Frequently used; no studies show efficacy; safety concerns | Ungraded statement | Last resort, per policy |
 | Mobilisation | Suggest rehabilitation/mobilisation; enhanced over usual (2025) | Conditional, low / moderate | Mobilise when stable |
 Adult ICU statements, mostly conditional with low-to-moderate certainty; the scale-level descriptions are not part of the SCCM statements read.
+
+**Neuromuscular blockade safety (SCCM 2026).** Paralysis suppresses movement but does not provide sedation or analgesia. Behavioural assessments cannot establish comfort during paralysis. Before starting prescribed blockade, confirm analgesia, sedation and the monitoring plan with the team; during blockade verify ongoing delivery and promptly escalate unexpected interruption. The 2026 guideline found very-low-certainty evidence when comparing formal scale-based versus other pre-blockade assessment approaches, and dedicated depth-monitoring versus no such monitoring during blockade. This uncertainty is about measurement strategy, not permission to omit analgesia or sedation. Processed EEG, if used, is an adjunct under specialist protocol; peripheral nerve stimulation assesses blockade rather than consciousness. Do not undertake a routine awakening trial during active paralysis.
 
 ## 10. Warning signs and red flags
 Over-sedation (cannot be roused, no response to voice, respiratory depression, loss of cough); sudden agitation with desaturation or rising pressures; ventilator asynchrony; sedation target not met for hours; rapid dose escalation; new neurological signs hidden by sedation; pressure injury; restraint injury; withdrawal signs.
@@ -168,11 +170,13 @@ D. Documenting restraint checks and the reasons for the use of the restraints on
 
 - SCCM ICU Liberation Bundle. https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles (selected public recommendations, accessed 2026-11-24)
 
+- Society of Critical Care Medicine. Guidelines for the Administration of Neuromuscular Blockade in Adults With ARDS. 2026-03-03; doi:10.1097/ccm.0000000000007002. https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-administration-of-neuromuscular-blockade (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+
 ## 19. Local protocol note
 Sedation scale, targets, titration authority, interruption criteria, restraint policy and monitoring frequency follow the institution's protocols and competencies.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: recommendation-level statements from official SCCM pages, mostly conditional with low or moderate certainty; evidence, scale psychometrics and rationales not read.
 - Applicability: adult ICU, ventilated patients; practices vary internationally (restraints, drug availability).
-- Not covered: RASS/SAS level definitions, dosing, neuromuscular blockade, paediatric sedation, palliative sedation.
+- Not covered: RASS/SAS level definitions, dosing, neuromuscular-blocker selection and administration, paediatric sedation, palliative sedation. SCCM 2026 recommendation-level monitoring context added; complete evidence appraisal and local policy remain required.
 - Open questions for reviewers (PH, CCP, NEURO, NE, BN): which scale and licence; nurse titration authority; awakening trial criteria; restraint policy.

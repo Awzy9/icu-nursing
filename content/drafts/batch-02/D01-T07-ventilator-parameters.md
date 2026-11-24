@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – monitoring of lung-protective ventilation, adults and children", "ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies (Intensive Care Med 2023;49:727-759; CC BY-NC) – ARDS only"]
-sources: [S-AARC-PVA, S-ESICM-ARDS-2023, S-SAUDI-MV-2026]
+sources: [S-AARC-PVA, S-ESICM-ARDS-2023, S-SAUDI-MV-2026, S-SCCM-NMBA-2026, S-ATS-ARDS-2024]
 independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (the register source; full-text PDF; cite-only) and the ESICM 2023 ARDS guideline (open access, CC BY-NC – non-commercial) were both read in full text. Content is limited to what the ESICM text supports; ventilator mode details are not covered."
 ---
 # Ventilator parameters and lung-protective ventilation – what the nurse monitors
@@ -68,6 +68,8 @@ Per policy, at least hourly in unstable patients and with every reassessment: Fi
 | Who adjusts settings | AARC states hospitals should empower bedside clinicians to adjust ventilator settings using non-physician-directed protocols | Whether a nurse may adjust anything is local protocol and role definition; default is **no** |
 
 **Saudi national adult ventilation guidance (February 2026, executive summary Q1–3).** For ARDS, the Saudi panel strongly supports lung-protective low tidal volume and higher PEEP strategies, both with moderate certainty. Higher PEEP is not automatically appropriate for each patient: report haemodynamic intolerance, possible right ventricular compromise or overdistension to the team. The panel did not endorse routine recruitment manoeuvres as standard care. These are ARDS-specific strategy recommendations; settings remain clinician-led and bedside monitoring must continue.
+
+**Prone ventilation and paralysis: reconciling recommendations.** ESICM 2023 supports prolonged prone sessions after optimisation in appropriate moderate-to-severe ARDS; ATS retains its severe-ARDS prone recommendation and the 2026 Saudi guideline conditionally supports proning. The March 2026 SCCM guideline conditionally favours neuromuscular blockade in adults with ARDS whose PaO₂/FiO₂ is below 150 and who remain hypoxaemic or cannot meet ventilation targets despite sedation (low certainty). Prone positioning alone does not require paralysis; SCCM found very uncertain evidence for choosing either approach. This is a selection recommendation, not an order to initiate paralysis. Before and during prescribed blockade, confirm analgesia and sedation, ventilatory support and emergency readiness. Observe the airway and vascular access, pressure areas, eyes and haemodynamics throughout prone care; new loss of ventilation, tube movement or instability demands immediate team response. No turn or paralysis procedure is authorised by this lesson.
 
 ## 10. Warning signs and red flags
 Falling delivered tidal volume or rising airway pressures; sudden desaturation; high-pressure or low-volume alarms; new asynchrony or "fighting the ventilator"; chest not moving equally; loss of end-tidal CO₂ trace; subcutaneous emphysema; hypotension with rising pressures; accidental disconnection or extubation; during proning: tube displacement, line dislodgement, facial or eye injury, new pressure injury, haemodynamic instability.
@@ -145,7 +147,7 @@ D. It should be used only after continuous neuromuscular blockade has been start
 **Why correct:** The guideline strongly recommends prone positioning for moderate–severe ARDS (PaO₂/FiO₂ below 150 mmHg with PEEP ≥ 5 cmH₂O) and describes early start after stabilisation with prolonged sessions.
 **Why not B:** The recommendation is specific to moderate–severe ARDS.
 **Why not C:** The guideline strongly recommends it for moderate to severe ARDS; its risks are managed through the team's procedure.
-**Why not D:** The guideline recommends against routine continuous neuromuscular blockade infusions.
+**Why not D:** ESICM recommends against routine continuous blockade. SCCM 2026 does not require blockade for every proned patient; selected patients may benefit under clinician direction.
 
 **Q5 (safety).** During a prone session, the nurse notes that the tube appears to have moved and the patient's SpO₂ is falling. What should the nurse do?
 A. Continue the session and recheck in ten minutes, because proning is expected to improve oxygenation.
@@ -175,10 +177,14 @@ D. A gradual reduction in oxygen support by the team with stable ventilation and
 
 - Saudi Health Council national guideline task force. Saudi Guideline for Mechanical Ventilation in Adults – Executive Summary. Saudi J Med Med Sci. 2026;14(Suppl 1):S1–S6. https://pmc.ncbi.nlm.nih.gov/articles/PMC12987643/ (selected recommendation text accessed 2026-11-24; CC BY-NC-ND 4.0, citation only; complete guideline and evidence profiles not appraised).
 
+- Society of Critical Care Medicine. Guidelines for the Administration of Neuromuscular Blockade in Adults With ARDS. 2026-03-03; doi:10.1097/ccm.0000000000007002. https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-administration-of-neuromuscular-blockade (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+- American Thoracic Society. An Update on Management of Adult Patients with Acute Respiratory Distress Syndrome: An Official American Thoracic Society Clinical Practice Guideline. 2024; doi:10.1164/rccm.202311-2011ST. https://pubmed.ncbi.nlm.nih.gov/38032683/ (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+
 ## 19. Local protocol note
 Ventilator targets, alarm limits, weaning, proning and recruitment protocols follow the institution's policies and the respiratory therapy team.
 
 ## 20. Evidence, applicability and open questions
+- SCCM 2026 official recommendations and ATS 2024 abstract/selected indexed passages checked. Saudi 2026 indexed prone recommendation checked; full comparative appraisal, local prone-care procedures and rights remain open.
 - Saudi 2026 national executive summary Q1–3 checked for ARDS ventilation strategy and safety boundaries. No local ventilator titration protocol or recruitment procedure is implied. Complete evidence profiles, institution-specific practice and independent review remain outstanding.
 - Source quality: two graded guidelines with different scope. **ESICM 2023** is a European society guideline for ARDS only (CC BY-NC). **AARC 2024** is a respiratory-therapy guideline on monitoring (strong recommendations, mostly high certainty for assessment; conditional for driving pressure and FiO₂); it applies to adults and children and does not say who performs the assessment. Population-specific: the ESICM recommendations apply to patients with ARDS; do not generalise them (for example prone positioning or neuromuscular blockade) to all ventilated patients.
 - International applicability: broadly applicable; ECMO and some practices depend on resources.
