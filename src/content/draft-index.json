@@ -5249,7 +5249,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "4aadb7bd76f77428"
+   "hash": "ef8e183e6f4a7f10"
   },
   {
    "key": "SC-12",
@@ -5299,7 +5299,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "5345d48c41ef602d"
+   "hash": "270872c9f998266f"
   },
   {
    "key": "SC-13",
@@ -5334,7 +5334,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "730039eb50ae37a3"
+   "hash": "1ba9faaca01166fd"
   },
   {
    "key": "SC-14",

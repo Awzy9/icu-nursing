@@ -98,7 +98,7 @@
       ],
       "options": [
         {
-          "text": "Activate the cardiac arrest response and start CPR without delay when arrest is confirmed or cannot promptly be excluded, following the local resuscitation pathway. Ask another team member to bring the defibrillator and provide trained ventilation support.",
+          "text": "Activate the cardiac arrest response; start CPR without delay if arrest is confirmed or not promptly excluded. Ask a colleague for the defibrillator and trained ventilation support.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "text": "Fetch the defibrillator first and start compressions when you return.",
+          "text": "Ask the colleague to remain with the patient while you collect the defibrillator and resuscitation equipment. Start compressions after you return to the bedside with the equipment ready for use.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "text": "Wait for a senior to arrive before doing anything.",
+          "text": "Keep the patient under observation and ask the senior clinician to attend for confirmation of arrest. Defer compressions and activation of the full cardiac arrest response until that clinician arrives.",
           "points": 0,
           "next": 2,
           "scope": "escalation",
@@ -170,7 +170,7 @@
       ],
       "options": [
         {
-          "text": "Apply pads promptly and continue CPR. The authorised manual-defibrillator operator or AED pathway determines whether a shock is indicated. If charging for an indicated shock, continue compressions where safe and minimise interruptions.",
+          "text": "Apply pads promptly and continue CPR. Let the authorised operator or AED determine shock indication; continue compressions during indicated charging where safe.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -184,7 +184,7 @@
           ]
         },
         {
-          "text": "Stop compressions until the defibrillator has charged.",
+          "text": "Pause compressions as soon as the defibrillator arrives and keep the patient still until charging is complete, then allow the trained operator to assess and deliver the indicated treatment.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -196,7 +196,7 @@
           ]
         },
         {
-          "text": "Use the paddles without checking contact because they are quicker.",
+          "text": "Choose paddles for speed and prepare the rhythm assessment without checking their contact, so that the operator can proceed as soon as the defibrillator is available.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -242,7 +242,7 @@
       ],
       "options": [
         {
-          "text": "Visually confirm nobody is touching the patient or bed, manage oxygen safety according to the airway circuit and local protocol, and support delivery by the authorized operator. Resume CPR immediately after the indicated shock unless the team identifies a reason to assess return of circulation.",
+          "text": "Visually confirm nobody touches patient or bed; manage oxygen per circuit and protocol. Support authorised shock; resume CPR immediately unless the team identifies signs of circulation.",
           "points": 2,
           "next": null,
           "scope": "escalation",
@@ -255,7 +255,7 @@
           ]
         },
         {
-          "text": "Deliver the shock while a colleague continues manual compressions, wearing gloves.",
+          "text": "Allow a colleague wearing gloves to continue manual compressions throughout delivery of the indicated shock, using the verbal warning to signal when the authorised operator is ready to proceed.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",
@@ -267,7 +267,7 @@
           ]
         },
         {
-          "text": "Shout 'clear' once without looking around the bed.",
+          "text": "Give a single verbal clear warning before the indicated shock and assume that all rescuers have heard it and moved away, without visually checking contact with the patient or the bed.",
           "points": 0,
           "next": null,
           "scope": "escalation",

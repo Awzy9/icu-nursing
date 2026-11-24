@@ -104,7 +104,7 @@
       ],
       "options": [
         {
-          "text": "Immediately assess the patient and rhythm, activate urgent medical/critical-care help, arrange the urgent 12-lead ECG, and maintain continuous cardiac monitoring under the unit's emergency pathway. Ask a colleague to check sampling artefact in parallel, never before escalation.",
+          "text": "Assess patient and rhythm; activate urgent medical/critical-care help, obtain urgent 12-lead ECG and continuous cardiac monitoring. Check artefact in parallel, never before escalation.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
@@ -117,7 +117,7 @@
           ]
         },
         {
-          "text": "Repeat the sample and tell the doctor only if the second result is also high.",
+          "text": "Arrange a repeat sample and check the original collection for possible artefact. Keep the existing observations available, and contact the doctor only after the second potassium result confirms the first.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -129,7 +129,7 @@
           ]
         },
         {
-          "text": "Record the result and review it at the next round.",
+          "text": "Document the potassium result and monitor findings in the notes, collect the recent renal results and medication list, and present them together to the medical team at the next scheduled round.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -176,7 +176,7 @@
       ],
       "options": [
         {
-          "text": "Provide the prescribed emergency therapies using the approved local medication pathway, confirming the exact calcium product and intravenous access with the clinician/pharmacist, continuously monitoring the rhythm and IV site, and checking glucose before ordered insulin-glucose treatment.",
+          "text": "Follow the prescribed emergency pathway: verify calcium product and IV access with clinician/pharmacist, monitor ECG and IV site, and check glucose before insulin-glucose.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -189,7 +189,7 @@
           ]
         },
         {
-          "text": "Choose which treatments to give and work out the amounts yourself to save the doctor's time.",
+          "text": "Use the available prescriptions as a starting point, then independently choose the calcium and potassium-shifting medicines and calculate the amounts to avoid waiting for the treating team.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "text": "Skip the pre-treatment glucose check to start the insulin sooner.",
+          "text": "Prepare the ordered insulin-glucose and calcium under the emergency pathway, prioritising administration before measuring bedside glucose so that the glucose result can be obtained after treatment.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -250,7 +250,7 @@
       ],
       "options": [
         {
-          "text": "Continue ordered glucose surveillance after insulin-glucose treatment and repeat potassium tests for rebound, reassess rhythm, perfusion and IV-site complications, and escalate recurrent hyperkalaemia or a falling glucose even if the ECG initially improves.",
+          "text": "Continue ordered glucose checks and potassium tests for rebound; reassess rhythm, perfusion and IV-site complications. Escalate recurrent hyperkalaemia or falling glucose.",
           "points": 2,
           "next": null,
           "scope": "monitoring",
@@ -263,7 +263,7 @@
           ]
         },
         {
-          "text": "Check the glucose once at the end of the shift.",
+          "text": "Record the improved potassium and rhythm, maintain routine observation and reserve the next glucose check for the end of the shift because the current bedside glucose is within range.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -275,7 +275,7 @@
           ]
         },
         {
-          "text": "Stop the extra monitoring once the potassium has fallen.",
+          "text": "Document the response and return to routine monitoring once potassium has fallen; reserve further potassium and glucose checks for the next scheduled blood draw if symptoms do not recur.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

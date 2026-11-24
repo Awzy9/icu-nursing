@@ -53,8 +53,8 @@ test("scenario decisions and missed-answer debrief follow the signed-in learner 
   await b.goto("/en/working/SC-10");
   await expect(b.getByText("You have an unfinished scenario")).toBeVisible();
   await b.getByRole("button",{name:"Resume",exact:true}).click();
-  await b.getByRole("radio").first().check();await b.getByRole("button",{name:"Confirm decision",exact:true}).click();await b.getByRole("button",{name:"Continue",exact:true}).click();
-  await b.getByRole("radio").first().check();await b.getByRole("button",{name:"Confirm decision",exact:true}).click();await b.getByRole("button",{name:"Finish and reflect",exact:true}).click();
+  await b.getByRole("radio",{name:/^Assess airway, breathing and circulation, call for urgent help/}).check();await b.getByRole("button",{name:"Confirm decision",exact:true}).click();await b.getByRole("button",{name:"Continue",exact:true}).click();
+  await b.getByRole("radio",{name:/^Continue ordered glucose checks, document and hand over the event/}).check();await b.getByRole("button",{name:"Confirm decision",exact:true}).click();await b.getByRole("button",{name:"Finish and reflect",exact:true}).click();
   await expect(b.getByText("Review priorities")).toBeVisible();
   await expect(b.getByText("Wait and recheck the glucose at the next routine time.",{exact:false})).toBeVisible();
   await expect(b.getByText(/Some earlier answer details are unavailable/)).toHaveCount(0);
