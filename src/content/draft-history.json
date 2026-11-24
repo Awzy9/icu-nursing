@@ -1452,6 +1452,19 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "9f1eacfb429f85c0",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-AIS-2026",
+     "S-GCS-OFFICIAL",
+     "S-NICE-NG232"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D04-T03": [
@@ -10852,6 +10865,24 @@
     "gaps": 5,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "37e2d04b368ab1ab",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-MANNITOL",
+     "S-AARC-SUCT",
+     "S-ACS-TBI-2024",
+     "S-AHRQ-TS",
+     "S-BTF-TBI-4TH",
+     "S-ENLS-ICP-V6",
+     "S-NCS-EDEMA-2020",
+     "S-OPENRN-HA-CVA"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-08": [
@@ -10965,6 +10996,23 @@
      "S-ACNS-CCEEG-2015",
      "S-AHRQ-TS",
      "S-CDC-SEIZURE-2024",
+     "S-JBDS-HYPO-2023"
+    ],
+    "gaps": 5,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "da99aa888dbdd185",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-LORAZEPAM",
+     "N-NICE-NG217",
+     "S-ACNS-CCEEG-2015",
+     "S-AHRQ-TS",
+     "S-CDC-SEIZURE-2024",
+     "S-ENLS-SE-V6",
      "S-JBDS-HYPO-2023"
     ],
     "gaps": 5,

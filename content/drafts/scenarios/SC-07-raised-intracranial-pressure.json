@@ -67,6 +67,11 @@
       "id": "S-ACS-TBI-2024",
       "read": "partial",
       "use": "ACS 2024 traumatic brain injury guideline, Table 10: serial neurological, pupil, hemodynamic and ICP/CPP monitoring; TBI-specific context"
+    },
+    {
+      "id": "S-ENLS-ICP-V6",
+      "read": "partial",
+      "use": "Selected clinical recognition and Tier Zero text; printed page 5 visually inspected; checked 2026-11-24; specialist protocol, not a nursing operating procedure"
     }
   ],
   "required_sources": [
@@ -81,7 +86,8 @@
     "Mannitol is the prescribed fictional treatment, not a general first-line choice for every cerebral edema cause. Selected NCS 2020 monitoring statements mapped; no dose, rate, threshold or independent stop/titrate procedure."
   ],
   "permissions": [
-    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "ENLS Version 6.0 selected text cited only; no protocol flowchart, drug instructions or proprietary checklist reproduced; rights pending."
   ],
   "setting": "A fictional adult in a fictional intensive care unit two days after a bleed in the brain.",
   "steps": [
@@ -117,12 +123,13 @@
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "A new reduction in consciousness with headache, vomiting and changing cardiovascular findings is a warning of possible acute neurological deterioration. These findings do not diagnose raised intracranial pressure or reliably occur in a fixed sequence. Urgent patient assessment and escalation take priority.",
+          "feedback": "A new reduction in consciousness with headache, vomiting and changing cardiovascular findings is a warning of possible acute neurological deterioration. These findings do not diagnose raised intracranial pressure or reliably occur in a fixed sequence. Urgent patient assessment and escalation take priority. Clinical concern for herniation is an emergency even before invasive monitoring is available. A complete Cushing triad is neither required nor an early screening rule. During the urgent response, communicate pupil and consciousness changes, airway and circulatory status, and any interventions already given. Maintain prescribed oxygenation, temperature and positioning measures as tolerated, and report abnormal sodium results to the treating team; do not independently administer hyperosmolar therapy or manipulate a drain.",
           "consequence": "The team receives a clear change from baseline and can act quickly.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-CVA",
-            "S-ACS-TBI-2024"
+            "S-ACS-TBI-2024",
+            "S-ENLS-ICP-V6"
           ]
         },
         {
@@ -293,7 +300,8 @@
       "A new reduction in consciousness, headache, vomiting or changing cardiovascular observations can indicate serious neurological deterioration. Assess and escalate urgently; do not rely on a fixed sequence or a single sign to diagnose raised intracranial pressure.",
       "Position (as the provider and policy set), neutral neck, no sudden neck or hip bending, spaced-out care, a quiet room and good oxygenation help avoid pushing the pressure up.",
       "Prescribed mannitol requires fluid balance, renal function, electrolyte and neurological monitoring; review ordered osmolar gap trends without assuming a universal toxicity cutoff.",
-      "Sedatives can hide neurological signs: discuss them with the team before giving them."
+      "Sedatives can hide neurological signs: discuss them with the team before giving them.",
+      "Clinical concern for herniation is an emergency even before invasive monitoring is available. A complete Cushing triad is neither required nor an early screening rule. During the urgent response, communicate pupil and consciousness changes, airway and circulatory status, and any interventions already given. Maintain prescribed oxygenation, temperature and positioning measures as tolerated, and report abnormal sodium results to the treating team; do not independently administer hyperosmolar therapy or manipulate a drain."
     ],
     "links": [
       {

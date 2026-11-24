@@ -56,6 +56,11 @@
       "id": "S-ACNS-CCEEG-2015",
       "read": "partial",
       "use": "ACNS 2015 consensus section III.A: persistent altered consciousness and pharmacologic paralysis in high-risk patients"
+    },
+    {
+      "id": "S-ENLS-SE-V6",
+      "read": "partial",
+      "use": "Selected hospital arrival text and initial assessment; printed page 6 visually inspected; checked 2026-11-24; specialist protocol, not a nursing operating procedure"
     }
   ],
   "required_sources": [
@@ -72,7 +77,8 @@
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
     "NICE: Notice of rights not read; paraphrase only.",
-    "JBDS 2023: CC BY-NC 4.0; commercial reuse not authorised; no algorithm reproduced."
+    "JBDS 2023: CC BY-NC 4.0; commercial reuse not authorised; no algorithm reproduced.",
+    "ENLS Version 6.0 selected text cited only; no protocol flowchart, drug instructions or proprietary checklist reproduced; rights pending."
   ],
   "setting": "A fictional adult on a fictional ward whose convulsive seizure has not stopped.",
   "steps": [
@@ -227,14 +233,15 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment. NICE NG217 specifies a time-sensitive repeat benzodiazepine pathway when a convulsive seizure persists after first-line treatment, with expert guidance for subsequent treatment failure. Verify the exact drug, time and response of the first dose, maintain respiratory monitoring, and prepare the next authorised treatment without delay; the individual plan and emergency protocol determine administration. If movements stop but consciousness does not recover as expected, or neuromuscular blockade obscures motor signs, escalate possible ongoing electrographic seizures and discuss urgent EEG or continuous EEG with the neurocritical-care team. Do not assume persistent unresponsiveness is solely postictal or sedative-related.",
+          "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment. NICE NG217 specifies a time-sensitive repeat benzodiazepine pathway when a convulsive seizure persists after first-line treatment, with expert guidance for subsequent treatment failure. Verify the exact drug, time and response of the first dose, maintain respiratory monitoring, and prepare the next authorised treatment without delay; the individual plan and emergency protocol determine administration. If movements stop but consciousness does not recover as expected, or neuromuscular blockade obscures motor signs, escalate possible ongoing electrographic seizures and discuss urgent EEG or continuous EEG with the neurocritical-care team. Do not assume persistent unresponsiveness is solely postictal or sedative-related. The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped.",
           "consequence": "Expert help is on its way and a treatable cause is not missed.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
             "S-JBDS-HYPO-2023",
             "L-LORAZEPAM",
-            "S-ACNS-CCEEG-2015"
+            "S-ACNS-CCEEG-2015",
+            "S-ENLS-SE-V6"
           ]
         },
         {
@@ -270,7 +277,8 @@
       "Anticonvulsant medicines are given only as prescribed or per the plan or protocol; the nurse prepares, gives per order and monitors breathing.",
       "Check for treatable causes such as hypoglycaemia during the initial response without delaying emergency treatment. If the seizure continues, seek expert guidance and confirm the results.",
       "Document the first treatment's agent, time and response; persistent convulsions require time-sensitive authorised escalation and continued respiratory monitoring.",
-      "Persistent unexplained impaired consciousness after convulsions, or paralysis masking motor signs in a high-risk patient, warrants urgent specialist assessment for EEG monitoring."
+      "Persistent unexplained impaired consciousness after convulsions, or paralysis masking motor signs in a high-risk patient, warrants urgent specialist assessment for EEG monitoring.",
+      "The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped."
     ],
     "links": [
       {

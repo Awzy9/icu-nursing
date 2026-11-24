@@ -561,6 +561,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AHA-AIS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-GCS-OFFICIAL",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -574,7 +579,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "559d55fd4792d966"
+   "hash": "9f1eacfb429f85c0"
   },
   {
    "key": "D04-T03",
@@ -4931,6 +4936,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ENLS-ICP-V6",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NCS-EDEMA-2020",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -4944,7 +4954,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "b000d377bcd5faef"
+   "hash": "37e2d04b368ab1ab"
   },
   {
    "key": "SC-08",
@@ -4981,6 +4991,11 @@
      "verified": "2026-11-24"
     },
     {
+     "id": "S-ENLS-SE-V6",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-JBDS-HYPO-2023",
      "licence_class": "RED",
      "verified": "2026-11-24"
@@ -4989,7 +5004,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "046dcd7152c3698b"
+   "hash": "da99aa888dbdd185"
   },
   {
    "key": "SC-09",

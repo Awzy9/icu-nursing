@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Glasgow Coma Scale – the Glasgow Structured Approach to Assessment (glasgowcomascale.org, Royal College of Physicians and Surgeons of Glasgow): GCS Assessment Aid (English, © Sir Graham Teasdale 2015; Institute of Neurological Sciences, NHS Greater Glasgow and Clyde) and the 'What is GCS' and 'What is GCS-P' pages; accessed 2026-11-14"]
-sources: [S-GCS-OFFICIAL, S-NICE-NG232]
+sources: [S-GCS-OFFICIAL, S-NICE-NG232, S-AHA-AIS-2026]
 independently_written_note: "Original wording. Sources actually read: the official GCS Assessment Aid PDF and three pages of the official GCS website. The original Lancet papers (1974, 2014), national head-injury or neurocritical-care guidelines, and the register's Open RN source were NOT read. The aid is copyrighted (Sir Graham Teasdale 2015) and the site has a 'Permissions' page: the chart is not reproduced; ask for permission before reproducing the scale wording, chart or images. This is not a guideline; there are no graded recommendations, no severity bands and no thresholds in the sources read."
 ---
 # Glasgow Coma Scale – structured neurological assessment at the bedside
@@ -66,6 +66,8 @@ Not covered by the sources read: severity bands (mild, moderate, severe), progno
 
 ## 10. Warning signs and red flags
 A fall in any component, especially in the motor response, or a falling total over consecutive assessments (the GCS site states that findings signal the need for new actions); new difficulty or inability to assess because of a new interfering factor. Other neurological observations (pupils, limb movement, vital signs) and their warning patterns follow local neurological observation policy and medical guidance; the sources read do not list further red flags.
+
+**Suspected acute stroke is a separate emergency pathway (AHA/ASA 2026).** An apparently preserved level of consciousness does not exclude a disabling focal deficit. Escalate sudden new speech difficulty, asymmetric limb movement or other focal neurological change through the stroke response pathway without waiting for a lower GCS score. Report the last-known-well time, changes from baseline, and glucose if obtained without delaying the response. After clinician-confirmed acute ischemic stroke, the 2026 guideline advises against intensive glucose lowering to 80–130 mg/dL for improved outcomes and against routine intensive systolic pressure lowering below 140 mmHg after reperfusion treatment. These findings are not universal blood-pressure or glucose prescriptions; follow the diagnosis-specific orders and report departures or deterioration. GCS is not a substitute for a trained stroke assessment.
 
 ## 11. Nursing interventions within scope
 | Action | Scope label |
@@ -165,12 +167,14 @@ D. Deciding on imaging, intubation or treatment of raised intracranial pressure.
 
 - NICE NG232 head injury recommendations. https://www.nice.org.uk/guidance/ng232/chapter/recommendations (selected recommendations or abstract, accessed 2026-11-24; full text not appraised in this pass)
 
+- AHA/ASA. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke. Published online January 26, 2026. https://doi.org/10.1161/STR.0000000000000513; official summary https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know (accessed 2026-11-24; selected summary points and indexed text only). An August 2026 correction is listed; full corrected text was inaccessible, so no changed dysphagia therapy recommendation is taught.
+
 ## 19. Local protocol note
 Frequency of neurological observations, pupil assessment method, escalation triggers and documentation formats follow local policy and neurosurgical/neurocritical-care teams.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: an official, internationally used scale and structured-approach aid. These are teaching/practice documents, not graded guidelines; evidence on reliability and prognosis was not read.
 - Applicability: widely used worldwide; adult version only; paediatric versions and the full GCS-P/charts were not covered. Copyright and permission requirements apply.
-- Red flags: the draft now lists only a fall in GCS components or total, taken from the GCS website's statement that findings signal the need for new actions. Pupil, limb and vital-sign warning patterns are left to local neurological observation policy because no source read states them (the earlier broader list was removed).
+- Red flags: use serial assessable GCS components with the diagnosis-specific observation pathway. The 2026 AHA/ASA summary adds a limited stroke-specific escalation and monitoring update, not a generic neurocritical-care threshold. Full guideline/correction appraisal, rights and local protocol remain outstanding.
 - Not covered: GCS interpretation bands, ICP/CPP management, brain injury guidelines, sedation scales, CAM-ICU.
 - Open questions for reviewers (NEURO, CCP, NE, BN): permission to reproduce scale wording; frequency; whether to include GCS-P; communication of prognosis.
