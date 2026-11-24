@@ -169,6 +169,13 @@
             "S-AHA-ALS-2025",
             "S-UKKA-HK-2026"
           ]
+        },
+        {
+          "text": "This registered injection is contraindicated in chloride loss from vomiting or continuous gastrointestinal suction, and in patients receiving diuretics known to cause hypochloraemic alkalosis. Clarify the indication, acid-base findings and chloride losses with the treating clinician.",
+          "support": "partial",
+          "sources": [
+            "L-BICARBONATE"
+          ]
         }
       ]
     },
@@ -304,6 +311,15 @@
       "sources": [
         "L-BICARBONATE",
         "S-SSC-2026"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review chloride losses, gastrointestinal suction, relevant diuretics and ordered acid-base results before use; clarify suspected hypochloraemic alkalosis.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-BICARBONATE"
       ]
     }
   ],

@@ -99,7 +99,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Adenosine decreases conduction through the AV node and may produce short-lasting first-, second- or third-degree heart block.",
@@ -125,6 +125,13 @@
         {
           "text": "Because of the very short half-life, effects are generally self-limiting.",
           "support": "sourced",
+          "sources": [
+            "L-ADENOSINE"
+          ]
+        },
+        {
+          "text": "The registered rapid-bolus product is contraindicated in second- or third-degree AV block or sinus node dysfunction (unless a functioning artificial pacemaker is present), and with known adenosine hypersensitivity. Clarify rhythm and relevant history with the treating clinician before administration; the product does not convert atrial fibrillation, flutter or ventricular tachycardia to sinus rhythm.",
+          "support": "partial",
           "sources": [
             "L-ADENOSINE"
           ]
@@ -254,6 +261,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Verify the assessed rhythm, history of conduction disease, pacemaker status and allergy with the treating team before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ADENOSINE"
+      ]
     }
   ],
   "gaps": [

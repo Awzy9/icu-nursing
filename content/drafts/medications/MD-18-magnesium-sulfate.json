@@ -152,7 +152,7 @@
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Parenteral use in the presence of renal insufficiency may lead to magnesium intoxication.",
@@ -185,6 +185,13 @@
         {
           "text": "The registered source is a concentrated Hospira syringe, not a ready-to-use premixed infusion. Its package labeling requires a pharmacy-controlled preparation step before IV administration; this draft does not give preparation or administration instructions. Confirm product and pharmacy directions to prevent a dangerous formulation mix-up.",
           "support": "sourced",
+          "sources": [
+            "L-MAGNESIUM"
+          ]
+        },
+        {
+          "text": "The registered product is not approved for continuous treatment of preterm labour. Maternal exposure near delivery may cause neonatal neuromuscular or respiratory depression; communicate exposure to the obstetric and neonatal teams for specialist-directed surveillance.",
+          "support": "partial",
           "sources": [
             "L-MAGNESIUM"
           ]
@@ -357,6 +364,15 @@
     {
       "kind": "escalate",
       "text": "Activate local emergency response for severely depressed breathing or circulation in suspected magnesium toxicity; immediately inform the clinician of the drug, product, clinical changes and available serum/renal results.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MAGNESIUM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "In obstetric care, communicate maternal magnesium exposure and any suspected toxicity at handover to the obstetric and neonatal teams.",
       "critical": true,
       "support": "partial",
       "sources": [

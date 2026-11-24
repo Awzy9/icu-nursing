@@ -169,6 +169,13 @@
           "sources": [
             "S-UKKA-HK-2026"
           ]
+        },
+        {
+          "text": "Calcium administration may reduce the response to calcium channel blockers. Review concurrent medicines with the treating team and assess blood pressure and rhythm; do not independently change either treatment.",
+          "support": "partial",
+          "sources": [
+            "L-CALCIUM"
+          ]
         }
       ]
     },
@@ -411,6 +418,15 @@
       "critical": true,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent calcium channel blockers and report unexpected changes in blood pressure or rhythm.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CALCIUM"
+      ]
     }
   ],
   "gaps": [

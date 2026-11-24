@@ -88,6 +88,13 @@
           "sources": [
             "L-AMIODARONE"
           ]
+        },
+        {
+          "text": "Acute pulmonary injury has been reported during intravenous therapy. Urgently assess new breathlessness, hypoxaemia, cough or infiltrates and communicate amiodarone exposure; investigate other causes in parallel. Review baseline and ordered follow-up thyroid results because thyroid dysfunction may contribute to recurrent arrhythmias.",
+          "support": "partial",
+          "sources": [
+            "L-AMIODARONE"
+          ]
         }
       ]
     },
@@ -229,6 +236,15 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Review respiratory findings, new oxygen requirements and ordered thyroid tests; report unexpected deterioration or new rhythm changes.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-AMIODARONE"
+      ]
     }
   ],
   "gaps": [

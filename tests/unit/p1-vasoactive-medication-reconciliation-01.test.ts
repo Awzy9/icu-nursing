@@ -16,7 +16,7 @@ describe("Vasoactive medication evidence reconciliation", () => {
   });
   it("distinguishes epinephrine emergency pathways", () => {
     expect(get("MD-02").sections.administration_considerations!.items[0]!.sources).toContain("S-ADRENALIN-IM-2025");
-    expect(get("MD-02").sections.safety_alerts!.items.at(-1)!.sources).toContain("S-RCUK-SPECIAL-2025");
+    expect(get("MD-02").sections.safety_alerts!.items.some(i => i.sources.includes("S-RCUK-SPECIAL-2025") && i.text.includes("anaphylaxis"))).toBe(true);
   });
   it("retains uncertainty and acute-MI label caution for inotropes", () => {
     expect(get("MD-04").sources.some(s=>s.id==="S-DOREMI-2021")).toBe(true);
