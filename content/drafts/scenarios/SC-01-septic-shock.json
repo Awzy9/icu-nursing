@@ -136,7 +136,7 @@
           ]
         },
         {
-          "text": "Record the altered alertness, urine output and early-warning score, and schedule repeat observations in an hour. Use the repeat score to decide whether urgent clinical assessment and infection treatment are necessary.",
+          "text": "Document the change in alertness, urine output and early-warning score; schedule repeat observations in an hour and use the repeat score to decide whether urgent infection assessment is needed.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -148,7 +148,7 @@
           ]
         },
         {
-          "text": "Give the prescribed routine antipyretic, document the temperature and other observations, and wait to see whether the early-warning score settles before requesting urgent assessment for the suspected infection.",
+          "text": "Give the prescribed routine antipyretic, document temperature and other observations, and wait for the early-warning score to settle before requesting urgent assessment for suspected infection.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -207,7 +207,7 @@
           ]
         },
         {
-          "text": "Check the cannula at infusion setup, document its appearance and focus subsequent checks on blood pressure and urine output, without repeating the site assessment while the infusion runs.",
+          "text": "Check and document the cannula at setup, then focus subsequent assessments on blood pressure and urine output rather than repeating site checks.",
           "points": 0,
           "next": 3,
           "scope": "monitoring",
@@ -219,7 +219,7 @@
           ]
         },
         {
-          "text": "Review the pump when the infusion seems slow, briefly disconnect the vasopressor to flush the line, then reconnect and reassess the pressure rather than using the authorised access pathway.",
+          "text": "When flow appears slow, briefly disconnect the vasopressor to flush the line, then reconnect and reassess the pressure rather than following the authorised access pathway.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "text": "Document the new swelling and pallor, reduce the rate through the affected cannula to maintain some circulatory support, and reassess the site in an hour before escalating.",
+          "text": "Document swelling and pallor, reduce the rate through the affected cannula to preserve some support and reassess the site in an hour before calling for help.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

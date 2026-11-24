@@ -209,7 +209,7 @@
           ]
         },
         {
-          "text": "Review the available higher-dependency beds and independently arrange a transfer, postponing bedside emergency assessment until the receiving team can reassess the patient's breathing.",
+          "text": "Review higher-dependency bed availability and arrange transfer independently, deferring emergency bedside assessment until the receiving team can reassess breathing.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "text": "Document the new saturation and lower score and discontinue escalation, treating the improved oxygenation as sufficient evidence that the patient's persistent drowsiness has resolved.",
+          "text": "Record improved saturation and the lower score, treating the improvement as sufficient reason to stop escalating despite drowsiness.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
@@ -283,7 +283,7 @@
           ]
         },
         {
-          "text": "Return to routine observation intervals and leave the previous clinical review undocumented, since the support has been changed and the score has fallen.",
+          "text": "Resume routine observations without recording the earlier clinical review because the support has changed and the score is lower.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

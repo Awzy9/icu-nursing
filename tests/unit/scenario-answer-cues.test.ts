@@ -1,23 +1,37 @@
 import { describe, expect, it } from "vitest";
 import { loadScenarioDrafts } from "../../scripts/validate-scenario-drafts";
 
-describe("Scenario answer-length clue regression", () => {
-  const cases = loadScenarioDrafts();
-  it("does not regress the initial answer-length improvements", () => {
-    const steps = cases.flatMap(d=>d.steps ?? []);
-    const longest = steps.filter(s=>{
-      const correct=s.options.find(o=>o.points===2);
-      return correct !== undefined && correct.text.length >= Math.max(...s.options.filter(o=>o.points!==2).map(o=>o.text.length));
-    });
+const cases = loadScenarioDrafts();
+const steps = cases.flatMap(d => d.steps ?? []);
+const lengthRank = (s: (typeof steps)[number]) => {
+  const correct = s.options.find(o => o.points === 2)!;
+  return s.options.filter(o => o.text.length < correct.text.length).length;
+};
+const spread = (s: (typeof steps)[number]) => {
+  const lengths = s.options.map(o => o.text.length);
+  return Math.max(...lengths) / Math.min(...lengths);
+};
+
+describe("Scenario answer cue and scoring regression", () => {
+  it("tracks both ends of the length spectrum rather than requiring one fixed rank", () => {
     expect(steps).toHaveLength(59);
-    expect(longest.length).toBe(0);
+    const ranks = [0, 1, 2].map(rank => steps.filter(s => lengthRank(s) === rank).length);
+    expect(Math.max(...ranks)).toBeLessThanOrEqual(30);
+    expect(ranks[2]).toBeGreaterThanOrEqual(3);
+    expect(steps.filter(s => spread(s) > 2).length).toBeLessThanOrEqual(11);
   });
-  for (const [id,position] of [["SC-04",1],["SC-06",1],["SC-19",2],["SC-11",1],["SC-11",2],["SC-11",3],["SC-12",1],["SC-12",2],["SC-12",3],["SC-13",1],["SC-13",2],["SC-13",3],["SC-01",1],["SC-01",2],["SC-01",3],["SC-02",1],["SC-02",2],["SC-02",3],["SC-16",1],["SC-16",2],["SC-16",3],["SC-03",1],["SC-03",2],["SC-03",3],["SC-04",2],["SC-04",3],["SC-05",1],["SC-05",2],["SC-05",3],["SC-06",2],["SC-06",3],["SC-07",1],["SC-07",2],["SC-07",3],["SC-08",1],["SC-08",2],["SC-08",3],["SC-17",1],["SC-17",2],["SC-17",3],["SC-20",1],["SC-20",2],["SC-20",3],["SC-09",1],["SC-09",2],["SC-09",3],["SC-10",1],["SC-10",2],["SC-10",3],["SC-14",1],["SC-14",2],["SC-15",1],["SC-15",2],["SC-15",3],["SC-18",1],["SC-18",2],["SC-18",3],["SC-19",1],["SC-19",3]] as const) {
-    it(id+" checkpoint "+position+" retains scoring and reduces the length clue",()=>{
-      const step=cases.find(d=>d.scenario_id===id)!.steps!.find(s=>s.position===position)!;
-      expect(step.options.map(o=>o.points)).toEqual((id==="SC-04" || id==="SC-18") && position===3 ? [2,1,0] : [2,0,0]);
-      expect(step.options[0]!.text.length).toBeLessThan(Math.max(...step.options.slice(1).map(o=>o.text.length)));
-      expect(step.options.every(o=>o.sources.length>0)).toBe(true);
+  for (const d of cases) for (const step of d.steps ?? []) {
+    it(d.scenario_id + " checkpoint " + step.position + " retains canonical scoring and source traces", () => {
+      const partial = (d.scenario_id === "SC-04" || d.scenario_id === "SC-18") && step.position === 3;
+      expect(step.options.map(o => o.points)).toEqual(partial ? [2, 1, 0] : [2, 0, 0]);
+      expect(step.options.every(o => o.sources.length > 0)).toBe(true);
+    });
+  }
+  for (const id of ["SC-01", "SC-02", "SC-03"]) {
+    it(id + " offers similar-length options", () => {
+      const revised = cases.find(d => d.scenario_id === id)!.steps!;
+      expect(revised.every(s => spread(s) <= 1.3)).toBe(true);
+      expect(new Set(revised.map(lengthRank)).size).toBeGreaterThanOrEqual(2);
     });
   }
 });

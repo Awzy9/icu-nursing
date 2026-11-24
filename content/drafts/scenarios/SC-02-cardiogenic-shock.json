@@ -165,7 +165,7 @@
           ]
         },
         {
-          "text": "Record the pressure, urine output and respiratory findings in the chart, compare them with the earlier readings, and defer further assessment and escalation until the next scheduled observation round.",
+          "text": "Chart the pressure, urine output and respiratory findings, compare them with earlier values and defer escalation until the next scheduled assessment.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
@@ -238,7 +238,7 @@
           ]
         },
         {
-          "text": "Check electrode adhesion and lead quality first, observe the ventricular beats and document their frequency, then report the findings only if the ectopy continues for a prolonged period.",
+          "text": "Check electrode adhesion and lead quality first, record the frequency of ventricular beats, and report only if the ectopy persists for a prolonged period.",
           "points": 0,
           "next": 3,
           "scope": "monitoring",
@@ -251,7 +251,7 @@
           ]
         },
         {
-          "text": "Pause the audible alarm and review the trace for movement artefact, assuming the ectopy is caused by poor signal quality; continue monitoring without immediate patient assessment or emergency escalation.",
+          "text": "Pause the alarm and review the trace for movement artefact; continue monitoring on the assumption that signal quality explains the change, without urgent bedside assessment.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
@@ -315,7 +315,7 @@
           ]
         },
         {
-          "text": "Review the available support device and volunteer to operate it without device-specific training, so that the specialist team can concentrate on reviewing the ongoing shock and the patient's other treatment needs.",
+          "text": "Review the available support device and offer to operate it without device-specific training so the specialist team can concentrate on assessment and treatment of ongoing shock.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
@@ -327,7 +327,7 @@
           ]
         },
         {
-          "text": "Document the improved pressure and reduced ectopy, return to routine observation intervals and postpone further assessment of urine output and pulmonary congestion until the next scheduled review.",
+          "text": "Document the improved pressure and reduced ectopy, return to routine observation intervals and postpone reassessment of urine output and pulmonary congestion until the next round.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",

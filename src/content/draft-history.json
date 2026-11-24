@@ -11265,6 +11265,21 @@
     "gaps": 6,
     "required_sources": 4,
     "issues": 0
+   },
+   {
+    "hash": "10b3d28e92fe7f00",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-NOREPINEPHRINE",
+     "S-AHRQ-TS",
+     "S-RCP-NEWS2",
+     "S-SSC-2026",
+     "S-SSC-EXEC-2026"
+    ],
+    "gaps": 6,
+    "required_sources": 4,
+    "issues": 0
    }
   ],
   "SC-02": [
@@ -11446,6 +11461,27 @@
     "gaps": 7,
     "required_sources": 2,
     "issues": 0
+   },
+   {
+    "hash": "b4d97580654f56cd",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "L-DOBUTAMINE",
+     "L-MILRINONE",
+     "S-ACC-CS-2025",
+     "S-ACC-CS-JACC-2025",
+     "S-AHRQ-TS",
+     "S-ESC-AHF-EMERGENCY-2026",
+     "S-ESC-CS-2026",
+     "S-ESC-HF-2026",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SCAI-SHOCK-2026"
+    ],
+    "gaps": 7,
+    "required_sources": 2,
+    "issues": 0
    }
   ],
   "SC-03": [
@@ -11523,6 +11559,22 @@
    },
    {
     "hash": "6a6db03c569d4b93",
+    "recorded": "2026-11-24",
+    "evidence_status": "partial",
+    "sources": [
+     "S-AARC-O2",
+     "S-AHRQ-TS",
+     "S-ATS-NIRS-2026",
+     "S-BTS-O2-2017",
+     "S-FDA-OXIMETER-BASICS",
+     "S-RCP-NEWS2"
+    ],
+    "gaps": 4,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "399be3cc3be49fb9",
     "recorded": "2026-11-24",
     "evidence_status": "partial",
     "sources": [
