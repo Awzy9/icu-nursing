@@ -51,6 +51,8 @@ An endotracheal tube does not automatically prevent reliable self-report. Establ
 
 With the patient's consent where feasible, invite family to describe usual expressions of discomfort, communication needs and reassuring approaches. Their observations supplement, rather than replace, the patient's reliable report or validated assessment. Agree which simple comfort activities are safe and voluntary; relatives should not manipulate infusions or critical devices. The October 2026 ESICM human-centred partnership consensus supports structured family participation while noting limited direct evidence for patient clinical outcomes. It does not validate a new pain scale.
 
+**Reassessment after analgesia: comfort and physiological safety (SCCM PADIS 2018).** Document which validated assessment method was usable, whether pain occurred at rest or with care, and the response to an authorized intervention. Reassess arousal, breathing and circulation when clinically indicated, particularly after opioid administration. A quieter or less responsive patient is not necessarily pain-free. If reliable self-report and observable behaviours are both unavailable, document the limitation and seek a clinician-directed pain plan; vital signs are prompts to investigate, not a replacement pain scale. Unexpected respiratory depression or reduced consciousness requires urgent clinical assessment and escalation under the unit's emergency pathway.
+
 ## 8. Monitoring parameters
 Pain score and tool at intervals set by the unit and after interventions; behaviours (facial expression, movement, muscle tension, ventilator compliance, vocalisation – as defined by the tool); sedation level; respiratory status and haemodynamics after analgesia; bowel function; delirium screen.
 
