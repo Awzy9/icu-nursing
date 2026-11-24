@@ -73,6 +73,8 @@ These **two separate questions** must not be collapsed into one bedside trigger.
 
 - **For low potassium results (NHS SPS):** report symptomatic or severe hypokalaemia promptly, review ECG and magnesium, renal function, trends and sources of potassium loss as directed by the clinical team; verify that any IV replacement is an authorised, correctly prepared high-alert infusion, not a ward-made shortcut.
 
+**Handover when emergency treatment crosses shifts or is repeated (UKKA, guideline 17.2).** Record the actual time of each insulin-glucose administration, subsequent potassium and glucose results, pending checks and the responsible clinician's plan. UKKA notes that repeated insulin-glucose administration can increase the risk of hypoglycaemia occurring beyond the usual six-hour surveillance period; ask the team to confirm extended monitoring in high-risk patients. Do not stop glucose surveillance simply because potassium or ECG findings have improved. Treat documented hypoglycaemia urgently under the authorized pathway and report rebound potassium or deteriorating rhythm independently of glucose results.
+
 ## 8. Monitoring parameters
 Continuous ECG and rhythm; 12-lead ECG as ordered; heart rate and blood pressure; serum potassium at the intervals ordered (guideline suggestion above); blood glucose at the intervals above after insulin and glucose; urine output and renal function; arterial or venous blood gas if ordered; line and site checks during calcium infusion; pacemaker capture if the patient has one; mental state and signs of hypoglycaemia.
 
