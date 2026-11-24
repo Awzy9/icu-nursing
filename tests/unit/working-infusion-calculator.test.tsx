@@ -22,7 +22,7 @@ describe("infusion calculator", () => {
     enter("Duration", "2");
     for (const value of ["1,000", "1e3", "0x10", "Infinity"]) {
       enter("Volume (mL)", value);
-      expect(screen.queryByText(/^[\\d,.]+ mL\\/h$/)).toBeNull();
+      expect(screen.getByText("Enter two positive values to see the result.")).toBeTruthy();
     }
     enter("Volume (mL)", "1,5");
     expect(screen.getByText("0.75 mL/h")).toBeTruthy();
