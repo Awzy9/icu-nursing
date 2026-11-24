@@ -72,6 +72,11 @@
       "id": "S-ISTH-DIC-2025",
       "read": "partial",
       "use": "ISTH SSC updated DIC definition and scoring 2025, PubMed abstract and 2026 review abstract checked; no scoring algorithm or full tables imported, publisher rights restricted."
+    },
+    {
+      "id": "S-AOA-BLOOD-2025",
+      "read": "partial",
+      "use": "Indexed 2025 guidance excerpts on electrolyte abnormalities in major haemorrhage."
     }
   ],
   "required_sources": [
@@ -260,11 +265,11 @@
       ],
       "options": [
         {
-          "text": "Provide the clinician-ordered resuscitation and blood products under the hospital's emergency transfusion identification and reaction-monitoring procedures, reassess perfusion and urine output continuously, communicate evolving blood loss and laboratory trends without assigning a DIC diagnosis, and hand over to theatre by SBAR.",
+          "text": "Provide ordered resuscitation and blood products with emergency identification checks; reassess perfusion, urine output and temperature. Communicate evolving blood loss, coagulation, ionized calcium and potassium trends to the clinical team and hand over to theatre.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
-          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC.",
+          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC. During major haemorrhage and transfusion, electrolyte abnormalities including hypocalcaemia and hyperkalaemia can require prompt clinician-directed treatment. Monitor ordered results and temperature, escalate abnormalities, and use the approved warming and major-haemorrhage pathway. Do not independently choose components or electrolyte replacement.",
           "consequence": "Emergency treatment and transfusion safety checks proceed under the team's direction while bleeding, perfusion and serial laboratory trends are handed over.",
           "support": "partial",
           "sources": [
@@ -272,7 +277,8 @@
             "S-OPENRN-ADV-CH3",
             "S-AHRQ-TS",
             "S-ARUP-DIC",
-            "S-ISTH-DIC-2025"
+            "S-ISTH-DIC-2025",
+            "S-AOA-BLOOD-2025"
           ]
         },
         {
@@ -308,7 +314,8 @@
       "Do not take the first dressing off and hide the evidence; the surgeon needs to see it.",
       "Raise any due anticoagulant dose with the prescriber when bleeding is suspected.",
       "Resuscitation, transfusion and possible return to theatre remain clinician-directed; use the authorised emergency blood-identification pathway, track perfusion/urine output and give timely blood-loss and laboratory-trend handover.",
-      "Falling platelets, abnormal clotting tests or a normal fibrinogen cannot independently determine DIC or blood-product selection; communicate clinical and laboratory trends while the team investigates."
+      "Falling platelets, abnormal clotting tests or a normal fibrinogen cannot independently determine DIC or blood-product selection; communicate clinical and laboratory trends while the team investigates.",
+      "Monitor temperature and ordered ionized calcium and potassium during major haemorrhage resuscitation; communicate abnormalities promptly and follow the authorised treatment pathway."
     ],
     "links": [
       {

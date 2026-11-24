@@ -216,21 +216,22 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment.",
+          "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment. NICE NG217 specifies a time-sensitive repeat benzodiazepine pathway when a convulsive seizure persists after first-line treatment, with expert guidance for subsequent treatment failure. Verify the exact drug, time and response of the first dose, maintain respiratory monitoring, and prepare the next authorised treatment without delay; the individual plan and emergency protocol determine administration.",
           "consequence": "Expert help is on its way and a treatable cause is not missed.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217",
-            "N-JBDS-HYPO-2020"
+            "N-JBDS-HYPO-2020",
+            "L-LORAZEPAM"
           ]
         },
         {
-          "text": "Give another dose from stock straight away.",
+          "text": "Give an extra dose from stock immediately without checking what was already given or following the emergency plan.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
-          "feedback": "Further doses and second-line medicines are prescriber decisions in line with the plan or protocol.",
-          "consequence": "A further dose is given without an order.",
+          "feedback": "Do not give an unverified repeat dose. Further treatment may be urgently indicated, but confirm the initial medication and timing and follow the authorised emergency plan with respiratory monitoring.",
+          "consequence": "Unverified repeat medication creates avoidable risk of respiratory depression and treatment error.",
           "support": "partial",
           "sources": [
             "N-NICE-NG217"
@@ -255,7 +256,8 @@
     "learning_points": [
       "A convulsive seizure lasting 5 minutes or more is an emergency: call for help, note the time and start emergency care.",
       "Anticonvulsant medicines are given only as prescribed or per the plan or protocol; the nurse prepares, gives per order and monitors breathing.",
-      "Check for treatable causes such as hypoglycaemia during the initial response without delaying emergency treatment. If the seizure continues, seek expert guidance and confirm the results."
+      "Check for treatable causes such as hypoglycaemia during the initial response without delaying emergency treatment. If the seizure continues, seek expert guidance and confirm the results.",
+      "Document the first treatment's agent, time and response; persistent convulsions require time-sensitive authorised escalation and continued respiratory monitoring."
     ],
     "links": [
       {

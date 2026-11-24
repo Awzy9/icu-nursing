@@ -235,7 +235,7 @@
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Recovery does not eliminate risk of another episode. Assess what caused the event, and coordinate medication and nutrition changes through the prescribing/diabetes team; particularly avoid unintended gaps in essential basal insulin for patients with type 1 diabetes.",
+          "feedback": "Recovery does not eliminate risk of another episode. Assess what caused the event, and coordinate medication and nutrition changes through the prescribing/diabetes team; particularly avoid unintended gaps in essential basal insulin for patients with type 1 diabetes. The ADA 2026 hospital standards identify feed interruption, changes in glucose-lowering treatment, and delayed glucose checks among preventable causes. If CGM is in use, obtain confirmatory point-of-care blood glucose for hypoglycemia assessment and insulin decisions according to the hospital protocol.",
           "consequence": "The insulin review takes place and the monitoring plan is clear for the next shift.",
           "support": "partial",
           "sources": [
@@ -261,7 +261,7 @@
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
-          "feedback": "Insulin changes need an individualised prescription or authorised order. Automatically omitting basal insulin in someone with type 1 diabetes is unsafe and can lead to metabolic deterioration.",
+          "feedback": "Insulin changes need individualised prescribing or an authorised protocol. Do not independently omit basal insulin in type 1 diabetes; promptly coordinate the plan when nutrition or glucose changes.",
           "consequence": "The patient's glucose rises and the team has to rebalance the plan.",
           "support": "partial",
           "sources": [
@@ -276,7 +276,8 @@
       "A low glucose in a patient with diabetes is an emergency whatever the level of consciousness.",
       "Use approved oral treatment only when the patient can swallow safely and oral intake is permitted. Otherwise assess airway and breathing, summon urgent help and follow the authorised non-oral pathway.",
       "Do not withhold or change insulin on your own: ask for a review, keep monitoring and refer.",
-      "Interrupted tube feeding and changes in insulin exposure or renal function should prompt a multidisciplinary review of recurrent hypoglycaemia risk."
+      "Interrupted tube feeding and changes in insulin exposure or renal function should prompt a multidisciplinary review of recurrent hypoglycaemia risk.",
+      "When CGM is used in hospital, confirm suspected hypoglycemia and insulin decisions with point-of-care blood glucose under institutional policy."
     ],
     "links": [
       {

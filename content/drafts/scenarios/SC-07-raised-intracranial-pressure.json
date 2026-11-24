@@ -57,6 +57,11 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-NCS-EDEMA-2020",
+      "read": "partial",
+      "use": "Indexed primary guideline excerpts on osmolar gap and renal monitoring during hyperosmolar treatment."
     }
   ],
   "required_sources": [
@@ -68,7 +73,7 @@
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "The Open RN text is written for stroke on a general ward; ICP and CPP numbers, monitoring-device care, hyperventilation and other treatments are not written because no source read supports them for this scenario.",
     "The head-of-bed angle, blood-pressure targets and medicine choices are set by the provider and policy and are not given.",
-    "Mannitol is only mentioned as prescribed osmotic therapy; no dose or rate is given."
+    "Mannitol is the prescribed fictional treatment, not a general first-line choice for every cerebral edema cause. Selected NCS 2020 monitoring statements mapped; no dose, rate, threshold or independent stop/titrate procedure."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
@@ -207,13 +212,13 @@
     },
     {
       "position": 3,
-      "info": "The team prescribes an osmotic medicine to lower the pressure. The patient is agitated again and a colleague suggests an extra sedative to calm them.",
+      "info": "The team prescribes mannitol to manage concern about elevated intracranial pressure. The patient is agitated again and a colleague suggests an extra sedative.",
       "prompt": "What is your role now?",
       "observations": [
         {
           "key": "order",
           "label": "Prescription",
-          "value": "Osmotic medicine ordered"
+          "value": "Mannitol ordered"
         },
         {
           "key": "urine",
@@ -233,16 +238,17 @@
       ],
       "options": [
         {
-          "text": "Give the osmotic medicine only as prescribed, monitor urine output, fluid status, electrolytes and neurological status, raise the agitation with the team rather than adding a sedative on your own, and document each neurological assessment.",
+          "text": "Give mannitol only as prescribed; monitor fluid balance, urine output, renal function, electrolytes, neurological status and ordered osmolar gap measurements. Escalate new adverse findings and discuss sedation with the team.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
-          "feedback": "The mannitol label warns of fluid and electrolyte disturbance, kidney effects and nervous-system effects, so these are monitored; sedatives must be used cautiously because they can mask neurological signs, so the team decides.",
+          "feedback": "The mannitol label warns of fluid and electrolyte disturbance, kidney effects and nervous-system effects, so these are monitored; sedatives must be used cautiously because they can mask neurological signs, so the team decides. The NCS 2020 guideline favors osmolar gap over a fixed serum osmolarity threshold for toxicity monitoring during mannitol therapy, with limited evidence and no established universal cutoff. Closely follow renal function and the prescribed monitoring plan. Escalate suspected serious adverse effects promptly rather than waiting for a routine review.",
           "consequence": "The effect of the treatment is followed and the team keeps a reliable neurological picture.",
           "support": "partial",
           "sources": [
             "L-MANNITOL",
-            "S-OPENRN-HA-CVA"
+            "S-OPENRN-HA-CVA",
+            "S-NCS-EDEMA-2020"
           ]
         },
         {
@@ -262,7 +268,7 @@
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
-          "feedback": "Whether to change or stop a prescribed osmotic medicine is a prescriber's decision; the nurse's role is to monitor and report.",
+          "feedback": "A rise in urine output alone does not justify stopping mannitol. Assess fluid balance and renal function, urgently escalate suspected toxicity or instability, and follow the authorised emergency or medication-management pathway.",
           "consequence": "Therapy is interrupted without direction and the pressure may rise again.",
           "support": "partial",
           "sources": [
@@ -276,7 +282,7 @@
     "learning_points": [
       "A new reduction in consciousness, headache, vomiting or changing cardiovascular observations can indicate serious neurological deterioration. Assess and escalate urgently; do not rely on a fixed sequence or a single sign to diagnose raised intracranial pressure.",
       "Position (as the provider and policy set), neutral neck, no sudden neck or hip bending, spaced-out care, a quiet room and good oxygenation help avoid pushing the pressure up.",
-      "Osmotic therapy is given as prescribed with monitoring of fluids, electrolytes, urine output and neurological status.",
+      "Prescribed mannitol requires fluid balance, renal function, electrolyte and neurological monitoring; review ordered osmolar gap trends without assuming a universal toxicity cutoff.",
       "Sedatives can hide neurological signs: discuss them with the team before giving them."
     ],
     "links": [

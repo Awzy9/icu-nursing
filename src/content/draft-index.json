@@ -4449,12 +4449,17 @@
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-PUMA-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "5e08c5fd4776a4e0"
+   "hash": "6089deaddd45d74b"
   },
   {
    "key": "SC-07",
@@ -4486,6 +4491,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NCS-EDEMA-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-HA-CVA",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -4494,7 +4504,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "4108e51627710b13"
+   "hash": "d44b7b67d59ce61b"
   },
   {
    "key": "SC-08",
@@ -4529,7 +4539,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "961cc56e23de4adb"
+   "hash": "45b4b501a4919c6a"
   },
   {
    "key": "SC-09",
@@ -4554,6 +4564,11 @@
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-AOA-BLOOD-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ARUP-DIC",
@@ -4584,7 +4599,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "e7ad55638839be2b"
+   "hash": "b8a1171cb6ed4438"
   },
   {
    "key": "SC-10",
@@ -4619,7 +4634,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 4,
-   "hash": "a6dbb73ef54cda1e"
+   "hash": "18ba48caa7d143cd"
   },
   {
    "key": "SC-11",

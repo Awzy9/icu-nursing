@@ -20,7 +20,9 @@
   ],
   "related": {
     "skills": [
-      "SK-04"
+      "SK-04",
+      "SK-07",
+      "SK-23"
     ],
     "medications": [],
     "topic_drafts": [
@@ -42,6 +44,11 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-PUMA-2022",
+      "read": "partial",
+      "use": "Indexed primary consensus recommendations on sustained exhaled CO2 and reconfirmation."
     }
   ],
   "required_sources": [
@@ -198,7 +205,7 @@
         {
           "key": "tube",
           "label": "Tube position",
-          "value": "Confirmed by the team"
+          "value": "Position checked by airway team; waveform capnography connected"
         },
         {
           "key": "sedation",
@@ -208,16 +215,17 @@
       ],
       "options": [
         {
-          "text": "Give a factual SBAR account, record the event, report it through the incident system and raise the agitation, sedation and analgesia plan with the team.",
+          "text": "Confirm with the airway team that placement and ongoing ventilation have been assessed, including sustained exhaled carbon dioxide on waveform capnography. Continue monitoring, give factual handover, report the incident and review agitation and securement.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Reporting the event and reviewing contributing factors such as agitation and sedation supports prevention.",
+          "feedback": "Sustained exhaled carbon dioxide on waveform capnography is central to excluding oesophageal intubation. Reassess if the trace changes, the tube moves, or oxygenation deteriorates. An absent or lost reliable trace requires immediate airway-team assessment and emergency support; a depth mark or satisfactory saturation alone cannot confirm placement. Review contributing factors without blame.",
           "consequence": "The team reviews the sedation plan and the securement and the risk of a repeat falls.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
-            "S-AARC-PVA"
+            "S-AARC-PVA",
+            "S-PUMA-2022"
           ]
         },
         {
@@ -251,12 +259,21 @@
     "learning_points": [
       "Suspected displacement is an emergency: call for help and stay with the patient.",
       "Assess effective breathing as well as oxygenation; provide trained emergency ventilation support if indicated under the local pathway while the airway team responds.",
-      "Report the event and review agitation, sedation and securement."
+      "Report the event and review agitation, sedation and securement.",
+      "After reintubation, confirm the team's placement assessment and sustained waveform capnography; escalate loss of a reliable trace or renewed deterioration promptly."
     ],
     "links": [
       {
         "kind": "skill",
         "code": "SK-04"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-07"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-23"
       }
     ]
   }
