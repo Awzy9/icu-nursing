@@ -2724,7 +2724,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "1448b961a539caf5"
+   "hash": "db3623d820438776"
   },
   {
    "key": "SK-22",
@@ -2746,6 +2746,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ISMP-HA",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -2754,7 +2759,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "98ed692ef0d0a726"
+   "hash": "836c9a544892b3d6"
   },
   {
    "key": "SK-23",
@@ -2769,12 +2774,17 @@
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "98c35225c2869eda"
+   "hash": "7263416e8491ae7c"
   },
   {
    "key": "SK-24",
@@ -2804,7 +2814,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "bd659e0507068297"
+   "hash": "0aeb7e4f6017d148"
   },
   {
    "key": "SK-25",
@@ -2834,7 +2844,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "ccdbe0e19343d238"
+   "hash": "6d307f673bf584c0"
   },
   {
    "key": "MD-01",
