@@ -115,14 +115,14 @@ D. Obtain cultures promptly, ideally before antimicrobials; give emergency antim
 **Why not B:** Cultures should be obtained, not skipped, and not only if the patient fails to improve.
 **Why not C:** Cultures are ideally taken before antimicrobials, without unnecessary delay.
 
-**Q2 (understanding).** Which approach to judging the response to fluids does SSC 2026 suggest?
-A. Rely on the blood pressure reading alone, because it reflects the whole circulation and is available at every bedside.
+**Q2 (application).** A patient with septic shock remains poorly perfused after initial fluid treatment. The team is considering another bolus. Which assessment approach best informs the next decision?
+A. Use the current blood pressure and a single central venous pressure measurement to decide whether further fluid is needed.
 B. Use dynamic measures (such as response to a passive leg raise or a bolus) in preference to examination or static measures alone.
-C. Give a fixed volume to every patient with septic shock and stop reassessing afterwards, because the volume was decided at the outset.
-D. Continue fluid until the lactate has returned to normal, whatever the patient's response to each bolus.
+C. Repeat the initial volume based on the patient's weight, then assess the cumulative response once all fluid has been administered.
+D. Base the next bolus on the lactate trend without evaluating the response to the previous fluid.
 **Answer: B.**
 **Why correct:** SSC 2026 conditionally favors dynamic assessment rather than static measures or examination alone (low certainty). Depending on the method and measurement conditions, assess the hemodynamic response to passive leg raising or an authorized fluid challenge using flow or suitable pressure-derived indices. Fluid responsiveness does not establish a need for fluid; assess congestion, perfusion and risk of harm.
-**Why not A:** Blood pressure alone does not show tissue perfusion or fluid responsiveness.
+**Why not A:** Static pressure measurements alone do not establish fluid responsiveness or the benefit of another bolus.
 **Why not C:** The page stresses frequent reassessment to avoid under- or over-resuscitation.
 **Why not D:** The remark advises against continuing fluid simply until lactate normalises.
 

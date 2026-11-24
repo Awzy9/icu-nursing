@@ -1409,6 +1409,25 @@
     "gaps": 0,
     "required_sources": 0,
     "issues": 0
+   },
+   {
+    "hash": "c415fa3452f73659",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ARTERIAL-MEASUREMENT-2020",
+     "S-CDC-BSI-2011",
+     "S-ERC-PRC-2025",
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-MHRA-ARTERIAL-GLUCOSE",
+     "S-NSW-ALI",
+     "S-SSC-2021",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
    }
   ],
   "D03-T09": [
@@ -1469,6 +1488,17 @@
    },
    {
     "hash": "8cb11deae5954d0d",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-SCCM-PADIS"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   },
+   {
+    "hash": "f0ca92eae6a9aa27",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -1752,6 +1782,19 @@
    },
    {
     "hash": "bc76d5af66431fc3",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-ESICM-SHOCK-2014",
+     "S-ESICM-SHOCK-2025",
+     "S-SSC-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "8fa16802c55961c5",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [
@@ -2276,6 +2319,20 @@
    },
    {
     "hash": "65911cb00aa22d77",
+    "recorded": "2026-11-24",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-NHS-SPS-HYPO-2024",
+     "S-OPENRN-FUND-CH15",
+     "S-PK-SAFEGUARDS-2026",
+     "S-UKKA-HK-2026"
+    ],
+    "gaps": 0,
+    "required_sources": 2,
+    "issues": 0
+   },
+   {
+    "hash": "048a022fe848523f",
     "recorded": "2026-11-24",
     "evidence_status": "stated_in_text",
     "sources": [

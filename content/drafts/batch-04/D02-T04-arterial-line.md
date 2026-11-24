@@ -97,15 +97,15 @@ At the start of the shift you check the radial site and dressing, look at the ha
 A 62-year-old woman on noradrenaline has a radial arterial line. At 03:00 the waveform becomes flat and the mean pressure reads very low although she looks the same. The nurse checks her, finds no bleeding, checks the tubing and connections, repeats a cuff reading that is normal, and calls the doctor with SBAR because the trace cannot be restored; the team decides on reassessment and, if needed, replacement. The nurse documents.
 
 ## 17. MCQs
-**Q1 (judgment).** The arterial waveform suddenly becomes flat and the mean pressure reads very low, but the patient looks unchanged. What should the nurse do first?
-A. Increase the vasopressor rate to bring the pressure up, since the display shows hypotension and the patient may be unwell.
-B. Flush the line repeatedly with the pressure bag until a waveform returns, without checking the patient or the connections.
-C. Ignore the reading because arterial lines often give unreliable values and the patient appears to be unchanged.
+**Q1 (judgment).** Following a bed-position change, an arterial waveform suddenly becomes flat and the displayed mean pressure falls. The patient appears unchanged. What is the safest immediate nursing action?
+A. Titrate the vasopressor based on the new arterial pressure before obtaining another measurement or assessing perfusion.
+B. Focus on restoring the arterial waveform by repeated flushing before assessing the patient or checking the system.
+C. Attribute the low pressure to the position change and defer assessment until the next scheduled observation.
 D. Assess the patient, verify the pressure independently, and escalate promptly while checking the system.
 **Answer: D.**
 **Why correct:** Treat the patient, not the number. Assess perfusion and obtain urgent help if unstable; verify the arterial reading with an appropriate independent measurement while a trained colleague assesses the transducer reference level, zero and waveform quality under the device procedure. Level errors and damping can distort measurements. Do not delay emergency care while checking the equipment or treat a suspected artifact as confirmed hypotension.
 **Why not A:** Changing infusions on an unverified reading is unsafe, and needs an order.
-**Why not C:** Ignoring a monitoring problem risks missing true hypotension.
+**Why not C:** A position change can affect the reading but does not establish artifact; deferring assessment risks missing true hypotension.
 **Why not B:** Repeated flushing can cause harm and does not address the cause.
 
 **Q2 (monitoring).** A nurse is monitoring a patient with a radial arterial line. Which finding is the most urgent concern?

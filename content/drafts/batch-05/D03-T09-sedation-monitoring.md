@@ -129,16 +129,16 @@ D. Leave the patient alone until the agitation settles by itself, and check agai
 **Why not B:** Benzodiazepines are associated with delirium, and a cause should be sought first.
 **Why not D:** An agitated patient with a tube is at risk and needs attention.
 
-**Q4 (safety).** During a daily sedation interruption the patient becomes distressed and desaturates. What is the correct response?
-A. Continue the interruption until the planned time to complete the trial, since distress is usual on waking.
-B. Hold the patient down firmly to prevent any movement, so that the tube and the lines are not disturbed.
-C. Widen the oxygen alarm limits so that the alarm stops sounding and the trial can be completed as planned.
+**Q4 (safety).** During a planned awakening trial, a ventilated patient becomes distressed, desaturates and develops increased work of breathing. Which action prioritizes immediate safety?
+A. Continue the trial while documenting the observations and reassess at its planned end point if the patient remains distressed.
+B. Resume sedation immediately at the previous setting before assessing whether an airway or ventilation problem is present.
+C. Request a new sedation order and wait for it before assessing the cause of the falling oxygen saturation.
 D. Stop the trial under protocol, assess ventilation and summon help; follow the authorized rescue plan.
 **Answer: D.**
 **Why correct:** Desaturation and distress are signs of trial intolerance. Stop the awakening trial according to the protocol and immediately assess airway, ventilation and circulation. Activate urgent help if unstable; restore oxygenation and address the cause. Resume or adjust sedation only as authorized after reassessment, not automatically as a substitute for airway rescue.
 **Why not A:** Continuing despite distress and desaturation is unsafe.
-**Why not B:** Physical force is inappropriate and unsafe.
-**Why not C:** Changing alarm limits hides the problem.
+**Why not B:** Resuming sedation is not a substitute for immediate assessment and rescue of an airway or ventilation problem.
+**Why not C:** Clarifying orders must not delay assessment, escalation or emergency support under the unit protocol.
 
 **Q5 (application).** A nurse is reviewing how sedation is assessed on a ventilated unit. Which statement about monitoring tools is accurate according to SCCM?
 A. Vital signs are the best way to monitor sedation, because they change before the patient moves or speaks.

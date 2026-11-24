@@ -156,16 +156,16 @@ D. Regular blood glucose measurements at set intervals after the infusion, and r
 **Why not B:** A single check misses later hypoglycaemia, up to six hours after treatment.
 **Why not C:** The guideline specifically warns of rebound hyperkalaemia.
 
-**Q4 (application).** On the monitor a patient with a potassium of 7.4 mmol/L has a heart rate falling to 40 and a widening QRS. What is the most appropriate immediate nursing response?
-A. Note it on the chart and recheck the rhythm at the next routine observation, since the patient has no symptoms yet.
+**Q4 (application).** A patient with potassium 7.4 mmol/L develops a falling heart rate of 40 and widening QRS complexes during bedside monitoring. The patient is still responsive. Which action takes priority?
+A. Obtain a repeat potassium sample and await the result before activating the emergency response for the rhythm change.
 B. Call for urgent help and report the rhythm and potassium, as ECG changes mean treatment is needed.
-C. Ask the family to come in so that they can be told that the monitor is faulty and that the numbers can be disregarded.
-D. Silence the alarm, since bradycardia is common in hospital patients and usually does not need any immediate action.
+C. Obtain a diagnostic ECG and wait for formal rhythm interpretation before notifying the critical-care team.
+D. Focus on checking electrode contact and monitor settings before assessing circulation or requesting emergency assistance.
 **Answer: B.**
 **Why correct:** Severe hyperkalemia with bradycardia and widening QRS is a life-threatening emergency. Assess circulation, activate immediate help and prepare authorized emergency treatment while monitoring. IV calcium, when indicated, stabilizes the cardiac membrane but does not lower potassium; shifting and removing potassium require separate measures. If arrest occurs, follow the resuscitation protocol.
-**Why not A:** Waiting could allow progression to arrest.
-**Why not C:** Nothing suggests a fault and it delays care.
-**Why not D:** Silencing it ignores a high-risk rhythm.
+**Why not A:** Repeat sampling may be useful in parallel but must not delay help for severe hyperkalaemia with new conduction changes.
+**Why not C:** A diagnostic ECG supports assessment but formal interpretation must not delay immediate escalation.
+**Why not D:** Verify the trace while assessing circulation and mobilising help; equipment checks are not the first priority.
 
 **Q5 (understanding).** Which statement about the ECG in hyperkalaemia matches the UKKA rationale?
 A. A normal ECG proves that the potassium is safe, so no treatment is ever needed.
