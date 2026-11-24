@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ISMP List of High-Alert Medications in Acute Care Settings (2024 list; one-page PDF dated 2024-01-09) – US organisation; a risk classification, not a practice guideline", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US regulator; strategies are stated not to apply to all pumps, settings or populations"]
-sources: [S-ISMP-HA, S-FDA-PUMP, S-ISMP-BEST-PRACTICES-2026, S-DOUBLE-CHECK-REVIEW-2026]
-sources_not_read: [S-OPENRN-PHARM]
+sources: [S-ISMP-HA, S-FDA-PUMP, S-ISMP-BEST-PRACTICES-2026, S-DOUBLE-CHECK-REVIEW-2026, S-OPENRN-PHARM]
+sources_not_read: []
 independently_written_note: "Original wording. The ISMP list PDF and the FDA clinician page were each read in full; the ISMP list is NOT reproduced (ISMP permits only internal non-commercial reproduction with attribution; other use needs written permission), so only the concept and a few example categories are named. Selected 2026–2027 ISMP hospital best practices and a 2026 review abstract were checked; other strategy documents, drug-specific guidance, pump-manufacturer manuals and non-US regulator guidance were NOT read. No doses, concentrations or infusion rates are given. Local policy decides which drugs are treated as high-alert, who may double-check, and how pumps are programmed."
 ---
 # High-alert medications and infusion pump safety
@@ -59,6 +59,8 @@ Before and during any high-risk infusion:
 These are selected safety principles, not a complete infusion or IV push protocol. ISMP guidance is directed to hospital systems; implementation and exceptions require local pharmacy, device and clinical governance.
 
 **Discrepancies in a high-alert infusion (FDA).** At shift change or after a prescription change, reconcile the actual drug and concentration, prescribed dose and units, programmed delivery, line identity and patient response. A pump rate can appear plausible yet deliver an incorrect dose if the concentration is wrong. Where verification is required, check independently against the current order. If a discrepancy is discovered, assess the patient promptly, establish the possible exposure and obtain clinical/pharmacy clarification; do not silently correct the pump or improvise a catch-up dose. Protect essential continuous support under the authorized contingency plan and escalate instability immediately.
+
+**Evaluate the response as part of medication administration (Open RN, chapter 2).** Before a new administration, assess whether the order fits the current clinical condition and resolve concerns with the prescriber. Afterwards, observe intended benefit and possible harm and hand over pending assessments. If a discrepancy involves an essential ongoing infusion, obtain urgent clinical guidance rather than abruptly stopping support without an authorized contingency plan. This is a general nursing framework, not a drug-specific protocol.
 
 ## 8. Monitoring parameters
 Pump settings against the order at the four verification moments above; alerts and alarms; the patient's haemodynamics, rhythm, oxygen saturation, end-tidal CO₂ and blood glucose where relevant to the drug; infusion site; volume infused against expected; the interval for rechecks set by unit policy.
@@ -175,6 +177,8 @@ D. Removing a damaged pump from use and recording the problem.
 
 - ISMP. Targeted Medication Safety Best Practices for Hospitals 2026–2027. https://online.ecri.org/hubfs/ISMP/Resources/ISMP_TargetedMedicationSafetyBestPractices_Hospitals.pdf (selected practices 8, 23, 24 and 25, pages 8, 22, 23 and 25 checked visually 2026-11-24; not reproduced; commercial rights not cleared).
 - Nurses' Adherence to Double-Checking: A Systematic Review of Influencing Factors, Improvement Strategies, and Their Effectiveness (2026). https://pubmed.ncbi.nlm.nih.gov/41987356/ (abstract checked 2026-11-24; full appraisal outstanding).
+
+- S-OPENRN-PHARM. https://www.ncbi.nlm.nih.gov/sites/books/NBK597872/ (selected passages checked 2026-11-24; full appraisal and applicable rights review outstanding).
 
 ## 19. Local protocol note
 Which drugs are treated as high-alert, who may perform double checks, which pump and drug library are used, concentration standards, alarm limits, and the incident-reporting route are set by your organisation, pharmacy and biomedical engineering.
