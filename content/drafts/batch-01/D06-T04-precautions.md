@@ -41,6 +41,8 @@ ICU patients have devices (lines, tubes, catheters), impaired defences and long 
 - Apply and keep visible the precaution level in force; brief visitors and colleagues.
 - Report exposures and breaches promptly.
 
+**Clean-to-dirty workflow and injection safety (CDC core practices).** In addition to wearing task-appropriate PPE, clean hands before an aseptic task and when moving from a contaminated site to a clean site; change contaminated gloves and clean hands after glove removal. Prepare injectable medicines in a designated clean area away from contamination, using new sterile equipment; never share a syringe, single-use medication container or administration set between patients. When cleaning reusable equipment, select the approved compatible product and allow its specified contact time rather than assuming a quick wipe is adequate. For suspected transmissible infection, initiate the relevant interim precautions under local policy and reassess them with the team when clinical information changes. These are general infection-prevention principles, not a universal organism-specific isolation schedule.
+
 ## 8. Monitoring
 Each shift: is the isolation order still current and visible? Is the PPE supply adequate? Are shared devices (stethoscope, thermometer, pumps) cleaned or dedicated? Are transfers and procedures planned with the receiving team informed?
 
