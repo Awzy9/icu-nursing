@@ -158,7 +158,7 @@ B. Agree with the colleague, but at night when the unit is busy and there are fe
 C. Widen the volume alarm and leave all the others where they are, since that reduces the noise and the repeated alarms.
 D. Disagree: extreme limits can make alarms useless, so find the cause and ask for a review of the limits.
 **Answer: D.**
-**Why correct:** Extreme limits can conceal dangerous changes. Investigate recurrent alarms and have patient-specific limits reviewed by an authorized clinician according to the unit and device protocol.
+**Why correct:** Extreme limits can conceal dangerous changes. Investigate recurrent alarms and request that an authorized clinician reassess the patient-specific limits according to the unit and device protocol.
 **Why not A:** Fewer alarms are not safer if dangerous events are not signalled.
 **Why not B:** Workload is not a safe reason.
 **Why not C:** Partial widening does not address the cause.
