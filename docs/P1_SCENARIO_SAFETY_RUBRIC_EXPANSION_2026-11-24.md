@@ -1,0 +1,5 @@
+# Safety-review rubric expansion — 24 November 2026
+
+Added 24 explicit priority-review flags across seven existing fictional cases (SC-01–SC-07), using the already authored option feedback, not a new independent clinical appraisal. All new rules were checked against exact canonical option text, step, case and zero-point scoring before commit. Cumulative pilot: 36 flags across 11 of 20 cases. Categories include delayed escalation, unsafe drug delivery, ventilation rescue, alarm safety and neurological deterioration. Ordinary zero-point choices remain unclassified; absence of a flag is not evidence of safety. The existing exact-match regression now checks all 36 entries. Numerical points, clinical content, and source metadata unchanged.
+
+Review branch advanced concurrently to 69b106d, which contains the private history validator and invoker RPC allowlist fixes for the three failed database security assertions on 7c72992. Verified those changes in source; CI for the correction is pending. Safety rubric remains separately staged so ongoing integration runs are not cancelled. No clinical approval, production migration, deployment or merge claimed.

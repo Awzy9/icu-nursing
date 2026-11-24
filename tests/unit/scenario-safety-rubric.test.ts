@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { scenarioSafetyRules, scenarioSafetyCategory } from "@icu/schemas/scenario-safety";
 import { scenarioDebrief } from "@icu/schemas/scenario-debrief";
+import case1 from "../../content/drafts/scenarios/SC-01-septic-shock.json";
+import case2 from "../../content/drafts/scenarios/SC-02-cardiogenic-shock.json";
+import case3 from "../../content/drafts/scenarios/SC-03-acute-respiratory-deterioration.json";
+import case4 from "../../content/drafts/scenarios/SC-04-ventilator-alarm.json";
+import case5 from "../../content/drafts/scenarios/SC-05-sudden-oxygen-desaturation.json";
+import case6 from "../../content/drafts/scenarios/SC-06-accidental-extubation.json";
+import case7 from "../../content/drafts/scenarios/SC-07-raised-intracranial-pressure.json";
 import glucose from "../../content/drafts/scenarios/SC-10-hypoglycemia.json";
 import arrest from "../../content/drafts/scenarios/SC-13-cardiac-arrest.json";
 import transfusion from "../../content/drafts/scenarios/SC-14-transfusion-reaction.json";
@@ -8,8 +15,8 @@ import anaphylaxis from "../../content/drafts/scenarios/SC-19-anaphylaxis.json";
 
 describe("Pilot safety-review rubric",()=>{
  it("every explicit rule matches one zero-point option in the canonical draft",()=>{
-  const cases={"SC-10":glucose,"SC-13":arrest,"SC-14":transfusion,"SC-19":anaphylaxis};
-  expect(scenarioSafetyRules).toHaveLength(12);
+  const cases={"SC-01":case1,"SC-02":case2,"SC-03":case3,"SC-04":case4,"SC-05":case5,"SC-06":case6,"SC-07":case7,"SC-10":glucose,"SC-13":arrest,"SC-14":transfusion,"SC-19":anaphylaxis};
+  expect(scenarioSafetyRules).toHaveLength(36);
   for(const rule of scenarioSafetyRules){
    const step=cases[rule.caseKey].steps.find(s=>s.position===rule.position)!;
    const matches=step.options.filter(o=>o.text===rule.text);
