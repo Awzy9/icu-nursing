@@ -5014,12 +5014,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "399be3cc3be49fb9"
+   "hash": "fb5ebe5ab58991af"
   },
   {
    "key": "SC-04",
@@ -5054,12 +5059,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-JC-ALARM",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 1,
-   "hash": "f6dc8f1815036e79"
+   "hash": "df4dfe140210f75b"
   },
   {
    "key": "SC-05",
@@ -5109,7 +5119,7 @@
    "issues": [],
    "gaps": 7,
    "required_sources": 2,
-   "hash": "d2620183d5b8ccdb"
+   "hash": "d96d3b79006eac4a"
   },
   {
    "key": "SC-06",
@@ -5154,7 +5164,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "322440477160a357"
+   "hash": "7639ed1db93e0065"
   },
   {
    "key": "SC-07",
@@ -5734,7 +5744,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "75b6a589e367af06"
+   "hash": "ebd53efb67a1bbea"
   },
   {
    "key": "SC-19",
