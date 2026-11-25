@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions, reconcileAccountFlags } from "../../mobile/src/core/syncMerge";
+import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions, reconcileAccountFlags, reconcileAccountSnapshot } from "../../mobile/src/core/syncMerge";
 import { discardSession, emptyProgress, progressSchema, saveSession } from "../../mobile/src/core/progress";
 import { queueFlag } from "../../mobile/src/core/pendingFlags";
 
@@ -157,5 +157,38 @@ describe("successful signed-in account snapshot", () => {
     expect(merged.bookmarks).toEqual(["skills:SK-02"]);
     expect(merged.completed).toEqual(["D01-T19"]);
     expect(merged.pendingFlags).toEqual(local.pendingFlags);
+  });
+});
+
+
+describe("independent account streams", () => {
+  const at = "2026-01-01T00:00:01.000Z";
+  it("adopts the authoritative server box after equal-time acknowledgement", () => {
+    const local = { ...emptyProgress(), attempts: { Q1: { at, correct: true, box: 2 } } };
+    const row = { question_id: "Q1", answered_at: at, correct: true, box: 4 };
+    const merged = reconcileAccountSnapshot(local, [], [], [], [row], new Map());
+    expect(merged.attempts.Q1?.box).toBe(4);
+    expect(reconcileAccountSnapshot(merged, [], [], [], [row], new Map())).toBe(merged);
+  });
+  it("protects pending answers and checkpoints while importing unrelated account updates", () => {
+    const local = progressSchema.parse({
+      ...emptyProgress(),
+      attempts: { Q1: { at, correct: true, box: 2 } },
+      sessions: { "SC-01": { kind: "scenario", version: "v1", position: 2, score: 1, finished: false, at } },
+      pendingReplay: [
+        { kind: "answer", questionId: "Q1", moduleKey: "QB-01", choice: 1, correct: true, at: Date.parse(at) },
+        { kind: "checkpoint", moduleKey: "SC-01", sessionKind: "scenario", version: "v1", position: 2, score: 1, finished: false, at: Date.parse(at) },
+      ],
+    });
+    const later = "2026-01-01T00:00:10.000Z";
+    const remoteSession = { module_key: "SC-01", kind: "scenario" as const, version: "v1", position: 3, score: 2, finished: true, updated_at: later };
+    const merged = reconcileAccountSnapshot(local, [{module_key:"SK-02"}], [{module_key:"SK-02",completed:true}], [remoteSession, {...remoteSession,module_key:"SC-02",finished:false}], [{question_id:"Q1",answered_at:later,correct:false,box:1},{question_id:"Q2",answered_at:later,correct:true,box:3}], new Map([["SK-02","skills"]]));
+    expect(merged.attempts.Q1).toEqual(local.attempts.Q1);
+    expect(merged.sessions["SC-01"]).toEqual(local.sessions["SC-01"]);
+    expect(merged.pendingReplay).toEqual(local.pendingReplay);
+    expect(merged.attempts.Q2?.box).toBe(3);
+    expect(merged.sessions["SC-02"]?.position).toBe(3);
+    expect(merged.bookmarks).toEqual(["skills:SK-02"]);
+    expect(merged.completed).toEqual(["SK-02"]);
   });
 });
