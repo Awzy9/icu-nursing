@@ -11,5 +11,16 @@ if [ "$VERCEL_GIT_COMMIT_REF" = "main" ] &&
   echo "Building: main in the authorized ICU Nursing production project"
   exit 1
 fi
+# Isolated technical preview: no learner drafts, production credentials, or production alias.
+if [ "$VERCEL_GIT_COMMIT_REF" = "release/technical-preview-20261125" ] &&
+   [ "$VERCEL_PROJECT_ID" = "prj_J2rv5kVPQxEmFqpahGJWHs5O0HUZ" ] &&
+   [ "$VERCEL_ENV" = "preview" ] &&
+   [ "$CONTENT_EDITION" = "published" ] &&
+   [ "$NEXT_PUBLIC_APP_ENV" = "staging" ] &&
+   [ -z "$NEXT_PUBLIC_SUPABASE_URL" ] &&
+   [ -z "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
+  echo "Building: isolated technical preview (synthetic demo data only)"
+  exit 1
+fi
 echo "Skipping build: branch/project/environment is not authorized"
 exit 0
