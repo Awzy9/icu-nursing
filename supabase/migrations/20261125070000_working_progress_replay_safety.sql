@@ -27,4 +27,65 @@ returns void language sql security invoker set search_path='' as $$
 $$;
 
 -- Existing grants, owner RLS, and the legacy wrapper are unchanged.
+-- Account-bound replay endpoint. A change of authenticated user between the
+-- device's queue read and the RPC call must fail on the database itself.
+-- Returns false only for future events; they remain queued without clamping.
+create function public.working_replay_event(p_expected_user uuid,p_event jsonb)
+returns boolean language plpgsql security invoker set search_path='' as $$
+declare
+  event_at timestamptz;
+  event_kind text;
+  module_key text;
+begin
+  if auth.uid() is null or p_expected_user is distinct from auth.uid() then
+    raise exception 'Account mismatch' using errcode='42501';
+  end if;
+  if jsonb_typeof(p_event) is distinct from 'object' then
+    raise exception 'Invalid event' using errcode='22023';
+  end if;
+  event_kind := p_event->>'kind';
+  module_key := p_event->>'moduleKey';
+  if module_key is null or module_key !~ '^[A-Z0-9-]{1,40}$'
+     or jsonb_typeof(p_event->'at') is distinct from 'number'
+     or (p_event->>'at') !~ '^[0-9]{1,16}$'
+     or (p_event->>'at')::numeric > 8640000000000000 then
+    raise exception 'Invalid replay event' using errcode='22023';
+  end if;
+  event_at := to_timestamp((p_event->>'at')::double precision / 1000);
+  if event_at > now() then return false; end if;
+
+  if event_kind = 'answer' then
+    if coalesce(p_event->>'questionId','') !~ '^[A-Z0-9-]{1,60}$'
+       or jsonb_typeof(p_event->'choice') is distinct from 'number'
+       or coalesce(p_event->>'choice','') !~ '^[0-3]$'
+       or jsonb_typeof(p_event->'correct') is distinct from 'boolean' then
+      raise exception 'Invalid answer event' using errcode='22023';
+    end if;
+    perform public.working_record_attempt(p_event->>'questionId',module_key,(p_event->>'choice')::smallint,(p_event->>'correct')::boolean,event_at);
+  elsif event_kind = 'checkpoint' then
+    if coalesce(p_event->>'sessionKind','') not in ('quiz','scenario')
+       or char_length(coalesce(p_event->>'version','')) not between 1 and 2000
+       or jsonb_typeof(p_event->'position') is distinct from 'number'
+       or coalesce(p_event->>'position','') !~ '^[0-9]{1,10}$'
+       or jsonb_typeof(p_event->'score') is distinct from 'number'
+       or coalesce(p_event->>'score','') !~ '^[0-9]{1,10}$'
+       or jsonb_typeof(p_event->'finished') is distinct from 'boolean'
+       or (p_event ? 'decisions' and (p_event->>'sessionKind' <> 'scenario' or jsonb_typeof(p_event->'decisions') <> 'array')) then
+      raise exception 'Invalid checkpoint event' using errcode='22023';
+    end if;
+    perform public.working_save_session_v2(module_key,p_event->>'sessionKind',p_event->>'version',(p_event->>'position')::integer,(p_event->>'score')::integer,(p_event->>'finished')::boolean,event_at,p_event->'decisions');
+  elsif event_kind = 'dismiss' then
+    -- A finished marker preserves the timestamp even if there was no row yet.
+    -- The existing learners' resume code ignores finished rows. No choices
+    -- or previous score are retained in the dismissal marker.
+    perform public.working_save_session_v2(module_key,'quiz','dismissed-v1',0,0,true,event_at,null::jsonb);
+  else
+    raise exception 'Invalid event kind' using errcode='22023';
+  end if;
+  return true;
+end;
+$$;
+revoke all on function public.working_replay_event(uuid,jsonb) from public,anon;
+grant execute on function public.working_replay_event(uuid,jsonb) to authenticated;
+
 commit;
