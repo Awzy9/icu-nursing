@@ -11,7 +11,7 @@ const session = async (id:string) => (await asUser({id},"select version,position
 
 describe("account-bound learning replay", () => {
   it("rejects mismatched accounts and anonymous calls", async () => {
-    await expectDenied(replay(b,a,answer));
+    await expect(replay(b,a,answer)).rejects.toMatchObject({ code: "42501", message: "Account mismatch" });
     await expectDenied(asUser(null,"select public.working_replay_event($1::uuid,$2::jsonb)",[a,JSON.stringify(answer)]));
     expect((await asUser({id:b},"select * from public.working_attempts")).rows).toHaveLength(0);
   });
