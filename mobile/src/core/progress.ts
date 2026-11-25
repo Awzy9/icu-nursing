@@ -80,11 +80,11 @@ export const viewedCount = (p: Progress): number => p.viewed.length;
 
 // Records a question attempt and advances its Leitner box from whatever box it was last in
 // (missed -> box 1, due immediately; correct -> one box up, capped at 5), exactly mirroring the
-// website's recordAttempt. `at` already wins ties the same way elsewhere in this module (no
-// going backwards from a more recent attempt).
+// An equal timestamp is a duplicate event; never advance the local box twice.
 export const recordAttempt = (p: Progress, questionId: string, correct: boolean, at: string): Progress => {
   const existing = p.attempts[questionId];
-  if (existing && existing.at > at) return p;
+  const timestamp = Date.parse(at);
+  if (!Number.isFinite(timestamp) || (existing && Date.parse(existing.at) >= timestamp)) return p;
   return { ...p, attempts: { ...p.attempts, [questionId]: { correct, at, box: nextBox(existing?.box ?? 1, correct) } } };
 };
 
