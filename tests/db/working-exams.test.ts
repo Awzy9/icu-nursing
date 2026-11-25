@@ -43,4 +43,24 @@ describe("working exam ownership and timing",()=>{
   await owner.query("delete from auth.users where id=$1",[u]);
   expect((await owner.query("select * from public.working_exams where id=$1",[r.rows[0].id])).rows).toHaveLength(0);
  });
+ it("rejects direct answer updates outside the exam or with an invalid choice",async()=>{
+  const id=(await asUser({id:a},"select public.working_exam_start(array['Q1'],600) as id")).rows[0].id;
+  for(const invalid of [{OTHER:1},{Q1:4},{Q1:"1"},[1]]){
+   await expect(asUser({id:a},"update public.working_exams set answers=$2::jsonb where id=$1",[id,JSON.stringify(invalid)])).rejects.toThrow(/invalid exam answer/);
+  }
+  await asUser({id:a},"update public.working_exams set answers=$2::jsonb where id=$1",[id,JSON.stringify({Q1:2})]);
+  expect((await asUser({id:a},"select answers from public.working_exams where id=$1",[id])).rows[0].answers).toEqual({Q1:2});
+ });
+ it("prevents direct writes after expiry and stamps submission using the server clock",async()=>{
+  const id=(await asUser({id:a},"select public.working_exam_start(array['Q1'],60) as id")).rows[0].id;
+  await owner.query("update public.working_exams set started_at=now()-interval '20 minutes' where id=$1",[id]);
+  await expect(asUser({id:a},"update public.working_exams set answers=$2::jsonb where id=$1",[id,JSON.stringify({Q1:1})])).rejects.toThrow("time is up");
+  await asUser({id:a},"update public.working_exams set submitted_at=now()+interval '1 day' where id=$1",[id]);
+  const row=(await owner.query("select submitted_at, submitted_at <= clock_timestamp() as server_time from public.working_exams where id=$1",[id])).rows[0];
+  expect(row.server_time).toBe(true);
+  expect(row.submitted_at).not.toBeNull();
+  await expect(asUser({id:a},"update public.working_exams set submitted_at=null where id=$1",[id])).rejects.toThrow("exam already submitted");
+  await expect(asUser({id:a},"update public.working_exams set answers=$2::jsonb where id=$1",[id,JSON.stringify({Q1:1})])).rejects.toThrow("exam already submitted");
+ });
+
 });
