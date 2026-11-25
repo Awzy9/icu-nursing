@@ -33,7 +33,8 @@ export function useProgressSync() {
   }, [update, rpc, signedIn]);
 
   const discardSession = useCallback((moduleKey: string) => {
-    update((p: Progress) => localDiscardSession(p, moduleKey));
+    const at = new Date().toISOString();
+    update((p: Progress) => localDiscardSession(p, moduleKey, at));
     if (signedIn) void rpc!.discardWorkingSession(moduleKey).catch(() => undefined);
   }, [update, rpc, signedIn]);
 
