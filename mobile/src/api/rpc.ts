@@ -6,6 +6,7 @@ import { caseListSchema, caseProgressSchema } from "@icu/schemas/cases";
 import { equipmentStateSchema, type EquipmentState } from "@icu/schemas/equipment-state";
 import { skillListSchema, skillProgressSchema } from "@icu/schemas/skills";
 import type { ScenarioDecision } from "@icu/schemas/scenario-debrief";
+import { replayEventSchema, type ReplayEvent } from "../core/progressReplay";
 import { attemptRowSchema, bookmarkRowSchema, lessonRowSchema, sessionRowSchema, type AttemptRow, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
 import { examRowSchema, type ExamRow } from "@icu/schemas/working-exam";
 
@@ -57,6 +58,10 @@ export function createRpc(client: SupabaseClient) {
     skillList: () => call("sk_list", skillListSchema, { p_query: null, p_category: null, p_bookmarked: false }),
     skillProgress: () => call("sk_progress", skillProgressSchema),
 
+    // Only the account-bound endpoint is suitable for persistent offline replay.
+    // False means the server clock has not reached the original event timestamp.
+    replayWorkingEvent: (expectedUserId: string, event: ReplayEvent): Promise<boolean> =>
+      call("working_replay_event", z.boolean(), { p_expected_user: expectedUserId, p_event: replayEventSchema.parse(event) }),
     recordWorkingAttempt: (questionId: string, moduleKey: string, choice: number, correct: boolean, answeredAt: number) =>
       run("working_record_attempt", { p_question_id: questionId, p_module_key: moduleKey, p_choice: choice, p_correct: correct, p_answered_at: new Date(answeredAt).toISOString() }),
     setWorkingBookmark: async (moduleKey: string, saved: boolean, expectedUserId?: string): Promise<void> => {
