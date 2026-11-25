@@ -34,7 +34,7 @@ describe("all functions exposed to signed-in users", () => {
     expect(fns.length).toBeGreaterThanOrEqual(48);
     for (const f of fns) {
       // These learner-owned helpers must never acquire owner privileges; their table RLS is tested separately.
-      expect(f.prosecdef, f.proname).toBe(!["working_record_attempt", "working_save_session", "working_save_session_v2", "working_exam_answer", "working_exam_submit", "working_exam_start"].includes(f.proname));
+      expect(f.prosecdef, f.proname).toBe(!["working_record_attempt", "working_replay_event", "working_save_session", "working_save_session_v2", "working_exam_answer", "working_exam_submit", "working_exam_start"].includes(f.proname));
       expect((f.proconfig ?? []).some((c) => c.startsWith("search_path=")), `${f.proname} search_path`).toBe(true);
     }
   });
