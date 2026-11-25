@@ -30,6 +30,28 @@ describe("working learning ownership",()=>{
   await asUser({id:u},"select public.working_record_attempt('QB-D01-T03-1','QB-D01-T03',0::smallint,false,now()+interval '2 seconds')");
   expect(await box()).toBe(1);
  });
+ it("does not advance a revision box on equal-timestamp retries, including concurrent submissions",async()=>{
+  const u=await createUser(uniqueEmail("working-replay"));
+  const eventAt="2026-01-01T00:00:00.000Z";
+  const write=(choice:number,correct:boolean,at:string)=>asUser({id:u},"select public.working_record_attempt('QB-D01-T03-1','QB-D01-T03',$1::smallint,$2,$3::timestamptz)",[choice,correct,at]);
+  await Promise.all([write(1,true,eventAt),write(1,true,eventAt)]);
+  const read=async()=>(await asUser({id:u},"select box,choice,correct from public.working_attempts where question_id='QB-D01-T03-1'")).rows[0];
+  expect(await read()).toEqual({box:2,choice:1,correct:true});
+  await write(0,false,eventAt);
+  expect(await read()).toEqual({box:2,choice:1,correct:true});
+  await write(2,true,"2026-01-01T00:00:01.000Z");
+  expect(await read()).toEqual({box:3,choice:2,correct:true});
+ });
+ it("keeps the first accepted session at equal timestamps and accepts a newer save",async()=>{
+  const u=await createUser(uniqueEmail("working-session-replay"));
+  const at="2026-01-01T00:00:00.000Z";
+  await asUser({id:u},"select public.working_save_session_v2('SC-01','scenario','sc2-test',2,2,false,$1::timestamptz,'[{\"position\":1,\"choice\":0}]'::jsonb)",[at]);
+  await asUser({id:u},"select public.working_save_session('SC-01','scenario','legacy',1,0,false,$1::timestamptz)",[at]);
+  const read=async()=>(await asUser({id:u},"select version,position,score,finished,decisions from public.working_sessions where module_key='SC-01'")).rows[0];
+  expect(await read()).toEqual({version:"sc2-test",position:2,score:2,finished:false,decisions:[{position:1,choice:0}]});
+  await asUser({id:u},"select public.working_save_session('SC-01','scenario','legacy',3,4,true,$1::timestamptz)",["2026-01-01T00:00:01.000Z"]);
+  expect(await read()).toEqual({version:"legacy",position:3,score:4,finished:true,decisions:null});
+ });
  it("owns completion status and cascades deletion",async()=>{
   const u=await createUser(uniqueEmail("working-delete"));
   await asUser({id:u},"insert into public.working_lessons(user_id,module_key,completed) values($1,'SK-01',true)",[u]);
