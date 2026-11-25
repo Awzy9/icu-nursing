@@ -39,31 +39,31 @@ export function useProgressSync() {
   }, [update, signedIn]);
 
   const saveSession = useCallback((moduleKey: string, session: SessionRecord) => {
-    update((p: Progress) => {
+    const changed = update((p: Progress) => {
       const next = localSaveSession(p, moduleKey, session);
       return signedIn && REPLAY_ENABLED && next !== p ? appendReplay(next, { kind: "checkpoint", moduleKey, sessionKind: session.kind, version: session.version, position: session.position, score: session.score, finished: session.finished, at: Date.parse(session.at), decisions: session.decisions }) : next;
     });
-    if (signedIn && !REPLAY_ENABLED) void rpc!.saveWorkingSession(moduleKey, session.kind, session.version, session.position, session.score, session.finished, Date.parse(session.at), session.decisions).catch(() => undefined);
+    if (changed && signedIn && !REPLAY_ENABLED) void rpc!.saveWorkingSession(moduleKey, session.kind, session.version, session.position, session.score, session.finished, Date.parse(session.at), session.decisions).catch(() => undefined);
   }, [update, rpc, signedIn]);
 
   const discardSession = useCallback((moduleKey: string) => {
     const at = new Date().toISOString();
-    update((p: Progress) => {
+    const changed = update((p: Progress) => {
       const next = localDiscardSession(p, moduleKey, at);
       return signedIn && REPLAY_ENABLED && next !== p ? appendReplay(next, { kind: "dismiss", moduleKey, at: Date.parse(at) }) : next;
     });
-    if (rpc && userId && !REPLAY_ENABLED) void rpc.discardWorkingSession(moduleKey, userId, Date.parse(at)).catch(() => undefined);
+    if (changed && rpc && userId && !REPLAY_ENABLED) void rpc.discardWorkingSession(moduleKey, userId, Date.parse(at)).catch(() => undefined);
   }, [update, rpc, signedIn, userId]);
 
   const recordAnswer = useCallback((questionId: string, moduleKey: string, choice: number, correct: boolean, at: number) => {
     // Always recorded locally (guest and signed-in alike) so the spaced-revision queue
     // (core/revision.ts) reflects it immediately, mirroring the website's own recordAttempt.
     if (!Number.isFinite(at) || Math.abs(at) > 8_640_000_000_000_000) return;
-    update((p: Progress) => {
+    const changed = update((p: Progress) => {
       const next = localRecordAttempt(p, questionId, correct, new Date(at).toISOString());
       return signedIn && REPLAY_ENABLED && next !== p ? appendReplay(next, { kind: "answer", questionId, moduleKey, choice, correct, at }) : next;
     });
-    if (signedIn && !REPLAY_ENABLED) void rpc!.recordWorkingAttempt(questionId, moduleKey, choice, correct, at).catch(() => undefined);
+    if (changed && signedIn && !REPLAY_ENABLED) void rpc!.recordWorkingAttempt(questionId, moduleKey, choice, correct, at).catch(() => undefined);
   }, [update, rpc, signedIn]);
 
   const setComplete = useCallback((moduleKey: string, done: boolean) => {
@@ -83,7 +83,7 @@ export function useProgressSync() {
  * their own catalog fetch just to render a bookmark button.
  */
 export function useProgressPullOnSignIn() {
-  const { update, ready, progress } = useApp();
+  const { update, ready, progress, ensureProgressDurable } = useApp();
   const { rpc, userId } = useAuth();
   const catalog = useCatalogList();
   const catalogEntries = catalog.status === "ready" ? catalog.data : null;
@@ -103,7 +103,9 @@ export function useProgressPullOnSignIn() {
       if (!active() || busy.current) return;
       busy.current = true;
       try {
-        const pending = Object.values(latest.current.pendingFlags ?? {});
+        const snapshot = latest.current;
+        if (!await ensureProgressDurable(snapshot) || !active()) return;
+        const pending = Object.values(snapshot.pendingFlags ?? {});
         for (const flag of pending) {
           if (!active()) return;
           try {
@@ -117,7 +119,7 @@ export function useProgressPullOnSignIn() {
             if (active()) update(p => acknowledgeFlag(p, flag));
           } catch { /* retain intent for the next foreground or scheduled retry */ }
         }
-        const replay = REPLAY_ENABLED ? latest.current.pendingReplay ?? [] : [];
+        const replay = REPLAY_ENABLED ? snapshot.pendingReplay ?? [] : [];
         if (replay.length && active()) {
           const accepted = await flushReplayBatch(replay, {
             userId,
@@ -147,6 +149,6 @@ export function useProgressPullOnSignIn() {
       if (state === "active") { lastPull = 0; kick(); }
     });
     return () => { cancelled = true; trigger.current = null; clearInterval(timer); app.remove(); };
-  }, [ready, rpc, userId, catalogEntries, update]);
+  }, [ready, rpc, userId, catalogEntries, update, ensureProgressDurable]);
   useEffect(() => { trigger.current?.(); }, [progress.pendingFlags, progress.pendingReplay]);
 }
