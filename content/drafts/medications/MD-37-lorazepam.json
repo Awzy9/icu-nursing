@@ -1,242 +1,290 @@
 {
- "med_id": "MD-37",
- "number": 37,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Lorazepam",
- "drug_class": "Benzodiazepine",
- "category": "sedatives-analgesics",
- "high_alert": true,
- "high_alert_note": "The ISMP 2024 acute-care high-alert list includes intravenous moderate-sedation drugs, explicitly lorazepam. The risk flag applies to IV lorazepam; the drug's licensed status epilepticus use and all formulation-specific monitoring remain governed by the product label and clinical protocols. Copyrighted ISMP classification is independently cited in the separate evidence report, not inserted as an unrestricted medication source.",
- "summary": "Benzodiazepine injection indicated for status epilepticus and for preanaesthetic medication producing sedation. The boxed warning covers concomitant opioids, abuse, misuse and addiction, and dependence and withdrawal. Nursing focus: respiratory depression and sedation.",
- "batch": 4,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-LORAZEPAM",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-LORAZEPAM",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-37",
+  "number": 37,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Lorazepam",
+  "drug_class": "Benzodiazepine",
+  "category": "sedatives-analgesics",
+  "high_alert": true,
+  "high_alert_note": "The ISMP 2024 acute-care high-alert list includes intravenous moderate-sedation drugs, explicitly lorazepam. The risk flag applies to IV lorazepam; the drug's licensed status epilepticus use and all formulation-specific monitoring remain governed by the product label and clinical protocols. Copyrighted ISMP classification is independently cited in the separate evidence report, not inserted as an unrestricted medication source.",
+  "summary": "Benzodiazepine injection indicated for status epilepticus and for preanaesthetic medication producing sedation. The boxed warning covers concomitant opioids, abuse, misuse and addiction, and dependence and withdrawal. Nursing focus: respiratory depression and sedation.",
+  "batch": 4,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-LORAZEPAM",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-LORAZEPAM",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates lorazepam injection for the treatment of status epilepticus and for preanaesthetic medication in adults, producing sedation.",
+          "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Have airway and resuscitation equipment available, and monitor breathing and sedation closely, especially if opioids are also being given.",
+          "support": "partial",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label directs close monitoring for respiratory depression and sedation.",
+          "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "The registered injection contains propylene glycol and polyethylene glycol. Vehicle toxicity has been reported with exposure exceeding label recommendations, particularly in renal impairment. Unexplained lactic acidosis, hyperosmolality, hypotension or worsening renal function requires urgent clinical and pharmacy review.",
+          "support": "partial",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "The registered intermittent-use injection label warns that repeated exposure can produce dependence and abrupt reduction can trigger severe withdrawal, including seizures. A patient-specific withdrawal plan is a clinician decision, not an instruction to maintain unsafe sedation.",
+          "support": "partial",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Boxed warning: concomitant use of benzodiazepines and opioids may result in profound sedation, respiratory depression, coma and death; patients should be monitored closely for respiratory depression and sedation if used together.",
+          "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "Benzodiazepines expose users to risks of abuse, misuse and addiction, which can lead to overdose or death.",
+          "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "The boxed warning also covers dependence and withdrawal reactions.",
+          "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "The registered injection is contraindicated with benzodiazepine or vehicle allergy, acute narrow-angle glaucoma, sleep apnoea, and severe respiratory insufficiency except for the label's specified mechanically ventilated context. The preserved product is contraindicated in premature infants. Intra-arterial administration can cause severe vascular injury and must not be used. Confirm formulation, indication and route with the responsible clinician.",
+          "support": "partial",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "In status epilepticus the most important adverse clinical event is respiratory depression.",
+          "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "The adverse clinical events most commonly observed in clinical trials of lorazepam injection for status epilepticus were hypotension, somnolence and respiratory failure.",
+          "support": "sourced",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Activate immediate help for hypoventilation, unrousable sedation or circulatory compromise; support airway and ventilation under protocol. Urgently report suspected propylene glycol or polyethylene glycol toxicity to the clinician and pharmacist.",
+          "support": "partial",
+          "sources": [
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "observe",
+      "text": "Monitor respiratory rate and oxygen saturation.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess sedation level with the unit's tool.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Check for concurrent opioids or other sedatives.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Call for help for respiratory depression.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review renal function and ordered acid-base or osmolality results when toxicity is suspected; report unexplained lactic acidosis or hypotension. Assess ventilation and arousability, not oxygen saturation alone.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess possible withdrawal after therapy reduction, especially after repeated exposure. Report new tremor, agitation, autonomic changes or seizure activity urgently; clarify the authorised cessation plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record sedation and respiratory findings.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Check documented allergy, sleep apnoea, respiratory status, glaucoma and intended route before administration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LORAZEPAM"
+      ]
+    }
+  ],
+  "gaps": [
+    "Dosing, benzyl alcohol and propylene glycol content, and paediatric detail: not included.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-15",
+    "set_id": "5140798d-8571-41fb-84a4-e182aac3f64c",
+    "label_version": "4",
+    "effective_time": "20261109",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label indicates lorazepam injection for the treatment of status epilepticus and for preanaesthetic medication in adults, producing sedation.",
-     "support": "sourced",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Have airway and resuscitation equipment available, and monitor breathing and sedation closely, especially if opioids are also being given.",
-     "support": "partial",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label directs close monitoring for respiratory depression and sedation.",
-     "support": "sourced",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Boxed warning: concomitant use of benzodiazepines and opioids may result in profound sedation, respiratory depression, coma and death; patients should be monitored closely for respiratory depression and sedation if used together.",
-     "support": "sourced",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    },
-    {
-     "text": "Benzodiazepines expose users to risks of abuse, misuse and addiction, which can lead to overdose or death.",
-     "support": "sourced",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    },
-    {
-     "text": "The boxed warning also covers dependence and withdrawal reactions.",
-     "support": "sourced",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "In status epilepticus the most important adverse clinical event is respiratory depression.",
-     "support": "sourced",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    },
-    {
-     "text": "The adverse clinical events most commonly observed in clinical trials of lorazepam injection for status epilepticus were hypotension, somnolence and respiratory failure.",
-     "support": "sourced",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Call for help immediately for slow or shallow breathing, unrousable sedation or falling oxygen saturation.",
-     "support": "partial",
-     "sources": [
-      "L-LORAZEPAM"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Monitor respiratory rate and oxygen saturation.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-LORAZEPAM"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Assess sedation level with the unit's tool.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "assess",
-   "text": "Check for concurrent opioids or other sedatives.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-LORAZEPAM"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Call for help for respiratory depression.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-LORAZEPAM"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record sedation and respiratory findings.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Dosing, benzyl alcohol and propylene glycol content, and paediatric detail: not included.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-15",
-  "set_id": "5140798d-8571-41fb-84a4-e182aac3f64c",
-  "label_version": "4",
-  "effective_time": "20261109",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

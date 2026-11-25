@@ -5,6 +5,8 @@ import { z } from "zod";
 import { caseListSchema, caseProgressSchema } from "@icu/schemas/cases";
 import { equipmentStateSchema, type EquipmentState } from "@icu/schemas/equipment-state";
 import { skillListSchema, skillProgressSchema } from "@icu/schemas/skills";
+import type { ScenarioDecision } from "@icu/schemas/scenario-debrief";
+import { replayEventSchema, type ReplayEvent } from "../core/progressReplay";
 import { attemptRowSchema, bookmarkRowSchema, lessonRowSchema, sessionRowSchema, type AttemptRow, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
 import { examRowSchema, type ExamRow } from "@icu/schemas/working-exam";
 
@@ -56,32 +58,48 @@ export function createRpc(client: SupabaseClient) {
     skillList: () => call("sk_list", skillListSchema, { p_query: null, p_category: null, p_bookmarked: false }),
     skillProgress: () => call("sk_progress", skillProgressSchema),
 
+    // Only the account-bound endpoint is suitable for persistent offline replay.
+    // False means the server clock has not reached the original event timestamp.
+    replayWorkingEvent: (expectedUserId: string, event: ReplayEvent): Promise<boolean> =>
+      call("working_replay_event", z.boolean(), { p_expected_user: expectedUserId, p_event: replayEventSchema.parse(event) }),
     recordWorkingAttempt: (questionId: string, moduleKey: string, choice: number, correct: boolean, answeredAt: number) =>
       run("working_record_attempt", { p_question_id: questionId, p_module_key: moduleKey, p_choice: choice, p_correct: correct, p_answered_at: new Date(answeredAt).toISOString() }),
-    setWorkingBookmark: async (moduleKey: string, saved: boolean): Promise<void> => {
+    setWorkingBookmark: async (moduleKey: string, saved: boolean, expectedUserId?: string): Promise<void> => {
       if (saved) {
         const user_id = await currentUserId();
+        if (expectedUserId && user_id !== expectedUserId) throw new RpcError("auth", "account changed");
         const { error } = await client.from("working_bookmarks").upsert({ user_id, module_key: moduleKey }, { onConflict: "user_id,module_key" });
         if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
       } else {
-        const { error } = await client.from("working_bookmarks").delete().eq("module_key", moduleKey);
+        let query = client.from("working_bookmarks").delete().eq("module_key", moduleKey);
+        if (expectedUserId) {
+          if (await currentUserId() !== expectedUserId) throw new RpcError("auth", "account changed");
+          query = query.eq("user_id", expectedUserId);
+        }
+        const { error } = await query;
         if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
       }
     },
-    setWorkingLessonComplete: async (moduleKey: string, completed: boolean): Promise<void> => {
+    setWorkingLessonComplete: async (moduleKey: string, completed: boolean, expectedUserId?: string): Promise<void> => {
       const user_id = await currentUserId();
+      if (expectedUserId && user_id !== expectedUserId) throw new RpcError("auth", "account changed");
       const { error } = await client.from("working_lessons").upsert({ user_id, module_key: moduleKey, completed, updated_at: new Date().toISOString() }, { onConflict: "user_id,module_key" });
       if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
     },
-    saveWorkingSession: (moduleKey: string, kind: "quiz" | "scenario", version: string, position: number, score: number, finished: boolean, updatedAt: number) =>
-      run("working_save_session", { p_module_key: moduleKey, p_kind: kind, p_version: version, p_position: position, p_score: score, p_finished: finished, p_updated_at: new Date(updatedAt).toISOString() }),
-    discardWorkingSession: async (moduleKey: string): Promise<void> => {
-      const { error } = await client.from("working_sessions").delete().eq("module_key", moduleKey);
-      if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
+    saveWorkingSession: (moduleKey: string, kind: "quiz" | "scenario", version: string, position: number, score: number, finished: boolean, updatedAt: number, decisions?: ScenarioDecision[]) => {
+      const args = { p_module_key: moduleKey, p_kind: kind, p_version: version, p_position: position, p_score: score, p_finished: finished, p_updated_at: new Date(updatedAt).toISOString() };
+      return kind === "scenario" && decisions !== undefined
+        ? run("working_save_session_v2", { ...args, p_decisions: decisions })
+        : run("working_save_session", args);
+    },
+    discardWorkingSession: async (moduleKey: string, expectedUserId: string, at: number): Promise<void> => {
+      const event = replayEventSchema.parse({ kind: "dismiss", moduleKey, at });
+      const accepted = await call("working_replay_event", z.boolean(), { p_expected_user: expectedUserId, p_event: event });
+      if (!accepted) throw new RpcError("invalid", "Session dismissal timestamp is ahead of server time");
     },
     listWorkingBookmarks: (): Promise<BookmarkRow[]> => selectRows("working_bookmarks", "module_key", bookmarkRowSchema),
     listWorkingLessons: (): Promise<LessonRow[]> => selectRows("working_lessons", "module_key,completed", lessonRowSchema),
-    listWorkingSessions: (): Promise<SessionRow[]> => selectRows("working_sessions", "module_key,kind,version,position,score,finished,updated_at", sessionRowSchema),
+    listWorkingSessions: (): Promise<SessionRow[]> => selectRows("working_sessions", "module_key,kind,version,position,score,finished,updated_at,decisions", sessionRowSchema),
     listWorkingAttempts: (): Promise<AttemptRow[]> => selectRows("working_attempts", "question_id,correct,answered_at,box", attemptRowSchema),
 
     // Timed exam mode (supabase/migrations/20261117201500_working_exams.sql), mirroring

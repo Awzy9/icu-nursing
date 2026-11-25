@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE CG174 Intravenous fluid therapy in adults in hospital (published 10 Dec 2013; last updated 5 May 2017) – recommendations chapter", "NICE NG148 Acute kidney injury (published 18 Dec 2019; updated 16 Oct 2024) – urine output and monitoring statements"]
-sources: [S-NICE-CG174, S-NICE-NG148]
+sources: [S-NICE-CG174, S-NICE-NG148, S-ESICM-SHOCK-2025]
 independently_written_note: "Original wording. NICE content is cite-only (commercial-gain restriction). Both guidelines are UK, adult, general-hospital documents; CG174 is dated 2013/2017 and its scope exclusions (for example specialist or paediatric populations) were not read, so applicability to every ICU population is not established. KDIGO 2012 and the 2026 KDIGO draft were not used. Fluid volumes, rates and fluid types are prescriber decisions and are deliberately not given."
 ---
 # Urine output monitoring and fluid balance
@@ -46,6 +46,8 @@ ICU patients lose and gain fluid through many routes (drains, losses from the gu
 - Report incidents of fluid mismanagement through the incident system, as NICE advises.
 - Reassess fluid status on arrival after transfer (NICE).
 
+**Reconciling fluid balance when the chart and patient disagree (NICE CG174).** Compare the recorded cumulative balance with serial weights where feasible, physical findings, laboratory trends and the current prescription. A recorded positive balance does not prove intravascular filling is adequate, and a discrepancy with measured weight does not justify inventing an output or deleting an intake. Check timing, measurement units, omissions (including infusions, flushes and drains), and documented losses; report unresolved discrepancies and new respiratory or perfusion deterioration. Reassessment may be required more frequently in unstable patients than the general ward minimum. Decisions about additional fluid or removal require the authorized clinical plan.
+
 ## 8. Monitoring parameters
 Hourly urine output and balance (policy); blood pressure, heart rate, perfusion, respiratory rate and effort, SpO₂, temperature; weight trend; drain and stoma losses; electrolytes, creatinine, chloride and lactate as ordered; signs of oedema; infusion rates and volumes delivered; blood product volumes.
 
@@ -75,7 +77,7 @@ Urine output below the threshold with a patent catheter; sudden anuria; rising h
 | Fluid management plan, expert review | Prescriber / specialist decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: oliguria with signs of hypoperfusion; breathlessness or oedema with positive balance; marked hypotension or tachycardia; rapidly changing balance; infusion errors; patients with complex fluid problems.
+Escalate immediately for oliguria with signs of hypoperfusion, worsening breathlessness or oedema, hypotension, marked tachycardia, rapidly changing balance or infusion errors. Review measured output, catheter patency, ongoing losses, fluid intake and signs of both congestion and hypoperfusion. Do not independently give fluid solely because urine output is low; a positive balance does not establish adequate circulating volume either. Reassess the patient after prescribed therapy and report new intolerance immediately.
 SBAR — **S:** bed X, urine output 15 mL/h for 4 hours, catheter patent. **B:** day 2 after laparotomy, drain output high, balance positive overall, on IV fluids. **A:** possible hypovolaemia or early AKI. **R:** please review now; I will keep hourly output and balance and report any change.
 
 ## 13. Potential complications
@@ -85,7 +87,7 @@ Hypovolaemia and hypoperfusion, AKI, fluid overload and pulmonary oedema, electr
 Time-stamped volumes in and out, cumulative balance, source of each item, weights, catheter checks, abnormal findings and who was told, orders received, incidents.
 
 ## 15. Practical bedside example
-At the end of each hour you empty the catheter bag, record the volume against the time, add the hourly infusion and drain volumes, check the cumulative balance, compare with the plan, and tell the doctor when two consecutive hours are below the threshold or the trend is changing.
+At the end of each hour you measure urine with the approved drainage system without breaking the closed system, record the volume and time, reconcile infusion and drain volumes, and compare the cumulative balance with the plan. Escalate unexpected oliguria or deterioration promptly under the unit pathway rather than waiting for a fixed number of hours.
 
 ## 16. Clinical case (fictional)
 A 70-year-old woman after emergency surgery is receiving maintenance fluids. Over six hours her urine output falls below the threshold, her heart rate rises and her peripheries are cool. The nurse checks the catheter, records the balance, repeats observations, calls with SBAR and prepares for blood tests. The doctor reviews the fluid plan; the nurse continues hourly monitoring.
@@ -97,21 +99,21 @@ B. Increase the infusion rate to push the output up, since low output after surg
 C. Check the catheter and balance, repeat observations, and report the low output and the trend promptly.
 D. Remove the catheter to see whether the patient can pass urine independently before telling anyone else.
 **Answer: C.**
-**Why correct:** Urine output is below 0.5 mL/kg/h (35 mL/h); checking the catheter and reporting is the nurse's role.
+**Why correct:** Urine output is below 0.5 mL/kg/h (35 mL/h); checking the catheter and reporting is the nurse's role. Three hours of oliguria is a warning but does not yet meet NICE NG148's adult duration criterion of more than six hours. Assess perfusion, measurement quality and cumulative balance and escalate without waiting for the threshold. Oliguria alone is not proof of hypovolaemia.
 **Why not A:** Waiting delays detection of AKI or hypoperfusion.
 **Why not B:** Changing infusions needs an order, and the cause may not be hypovolaemia.
 **Why not D:** Removing a catheter needs an order and does not address the cause.
 
-**Q2 (application).** Which finding most suggests fluid overload in a patient receiving IV fluids?
-A. New breathlessness with crackles, peripheral oedema and a strongly positive balance.
-B. A heart rate of 110 with cold peripheries, slow capillary refill and a low urine output.
-C. A low blood pressure that improves immediately with a passive leg raise or a small fluid bolus.
-D. Dry mucous membranes and a falling weight over three days.
+**Q2 (judgment).** After initial shock resuscitation, a patient has a positive fluid balance, new crackles and increasing oxygen requirements. Urine output remains low. A previous assessment suggested fluid responsiveness. What is the safest interpretation?
+A. Suspect congestion, assess breathing and perfusion, and request urgent reassessment.
+B. Give more fluid because the earlier response establishes that further fluid will be beneficial.
+C. Treat low urine output as evidence of persistent intravascular depletion and repeat the bolus.
+D. Wait for the next daily weight to establish whether the fluid balance is clinically important.
 **Answer: A.**
-**Why correct:** Breathlessness, oedema and positive balance suggest overload; NICE notes breathlessness on leg raising as a sign.
-**Why not B:** Suggests hypoperfusion or hypovolaemia.
-**Why not C:** Improvement suggests fluid responsiveness.
-**Why not D:** A pale, concentrated or scant output would suggest dehydration, not a normal urine output.
+**Why correct:** New respiratory deterioration with a positive balance and crackles raises concern for fluid overload but is not diagnostic by itself. Assess airway, breathing and circulation and escalate promptly. Reassess the current perfusion, congestion and fluid responsiveness with the clinical team; fluid responsiveness does not necessarily establish that additional fluid is needed or safe. Do not delay urgent care to reconcile the balance chart.
+**Why not B:** Fluid responsiveness can change over time and is not the same as fluid tolerance; an earlier response does not establish a current indication.
+**Why not C:** Oliguria has multiple causes, including impaired perfusion, intrinsic kidney injury and obstruction; it is not sufficient justification for another bolus.
+**Why not D:** Daily weight can help assess cumulative balance, but new respiratory compromise requires immediate assessment.
 
 **Q3 (judgment).** A patient on IV fluids is now drinking and tolerating enteral feeds. What is the best nursing action?
 A. Continue the IV fluids unchanged, as the prescriber has not stopped them and the plan is reviewed daily anyway.
@@ -119,32 +121,32 @@ B. Stop the infusion yourself to avoid overload, because the patient is now drin
 C. Ask a colleague to chart the oral and enteral intake later in the day, once the day's tasks are finished.
 D. Ask whether IV fluids are still needed and how oral and enteral intake should be counted in the plan.
 **Answer: D.**
-**Why correct:** NICE advises IV fluids only when needs cannot be met orally or enterally and that all intake sources be counted; the prescriber decides.
+**Why correct:** NICE advises IV fluids only when needs cannot be met orally or enterally and that all intake sources be counted; the prescriber decides. Include medicines, flushes, nutrition and other fluid sources in the total, and communicate whether ongoing IV therapy has a separate indication.
 **Why not A:** Silence risks unnecessary fluid.
-**Why not B:** Stopping an infusion needs an order.
+**Why not B:** Review the indication and follow the authorized adjustment or cessation plan; do not independently stop an essential infusion.
 **Why not C:** Delayed charting reduces accuracy.
 
-**Q4 (safety).** A nurse notices that a drain output was not recorded for six hours. What is the best response?
+**Q4 (safety).** During fluid-balance reconciliation, a nurse notices a six-hour gap in drain-output documentation. The collection container has measurable fluid but there is no reliable record of when it accumulated. What is the best response?
 A. Estimate the volume from the previous hours and record it as if it had been measured at the correct time.
 B. Record the volume measured now with the correct time, note the gap, correct the balance per policy and report.
 C. Leave the gap unexplained since the cumulative balance can no longer be corrected after so many hours.
 D. Ask the next shift to deal with the discrepancy once the patient has been handed over to them tomorrow.
 **Answer: B.**
-**Why correct:** Accurate, honest documentation and reporting protect the patient; NICE advises reporting mismanagement incidents.
+**Why correct:** Accurate, honest documentation and reporting protect the patient; NICE advises reporting mismanagement incidents. Reassess the patient and the drain now, record the actual measured volume and the interval if known, distinguish measured from estimated data, and document any uncertainty rather than inventing hourly values.
 **Why not A:** Estimating and recording as measured is falsification.
-**Why not C:** The balance can be corrected with a transparent note.
-**Why not D:** Delay reduces safety because a falling urine output is a warning sign that needs action.
+**Why not C:** A transparent correction can improve the cumulative balance, but the time distribution may remain unknown. Do not allocate the total to individual hours unless supported by actual measurements.
+**Why not D:** The missing drainage data may conceal bleeding or another complication; assess and report the gap rather than deferring it.
 
-**Q5 (prioritization).** Which patient needs the nurse first?
-A. A stable balance, normal output, normal observations and no symptoms during this shift.
-B. Output below the threshold, heart rate rising, cool peripheries and new confusion.
-C. A patient who is waiting for a scheduled weight that is part of the usual ward routine.
-D. A patient with a dry mouth who is asking for a drink but has normal observations and output.
+**Q5 (prioritization).** Four ICU patients are due fluid-balance reassessment. Each has a different change from the previous shift. Which patient requires immediate assessment for possible circulatory deterioration?
+A. A patient with a mildly positive balance, unchanged observations and adequate urine output.
+B. A patient with falling urine output, rising heart rate, cool peripheries and new confusion.
+C. A patient with an overdue routine weight, stable perfusion and unchanged oxygen requirements.
+D. A patient reporting thirst, with stable observations and no recent change in urine output.
 **Answer: B.**
-**Why correct:** Low urine output, a rising heart rate, cool peripheries and new confusion together point to poor perfusion, which needs urgent escalation. The other patients have normal findings or tasks that can wait.
-**Why not A:** This patient is stable with no abnormal findings.
-**Why not C:** A routine scheduled task that can wait.
-**Why not D:** Comfort care is needed but the observations are normal, so it is not urgent.
+**Why correct:** Low urine output, a rising heart rate, cool peripheries and new confusion together point to poor perfusion, which needs urgent escalation. Assess airway, breathing and circulation and activate help while checking the measurements. ESICM 2025 supports capillary refill with complementary skin findings and assessment of fluid responsiveness before continuing fluids in persistent shock after initial resuscitation.
+**Why not A:** Positive balance requires interpretation alongside the clinical state; the observations do not indicate the same immediate circulatory danger.
+**Why not C:** Obtain the scheduled weight when safe, but this routine measurement does not outweigh new signs of impaired perfusion.
+**Why not D:** Thirst merits assessment and appropriate comfort or hydration planning, but the stable observations make this lower priority than acute deterioration.
 
 **Q6 (scope).** Which action belongs to the prescriber rather than the nurse?
 A. Recording hourly urine volumes on the fluid balance chart as they are measured.
@@ -160,6 +162,8 @@ D. Reporting a rising positive balance and new oedema to the prescriber promptly
 ## 18. References
 - NICE. Intravenous fluid therapy in adults in hospital (CG174). Published 10 December 2013; last updated 5 May 2017. https://www.nice.org.uk/guidance/cg174 (Recommendations chapter; accessed 2026-11-14)
 - NICE. Acute kidney injury: prevention, detection and management (NG148). Published 18 December 2019; last updated 16 October 2024. https://www.nice.org.uk/guidance/ng148 (accessed 2026-11-14)
+
+- ESICM 2025 circulatory shock and hemodynamic monitoring guideline abstract. https://pubmed.ncbi.nlm.nih.gov/41236566/ (selected recommendations or abstract, accessed 2026-11-24; full text not appraised in this pass)
 
 ## 19. Local protocol note
 Frequency of urine output and balance totals, charting systems, weight schedules, fluid prescription policies and catheter protocols follow local policy.

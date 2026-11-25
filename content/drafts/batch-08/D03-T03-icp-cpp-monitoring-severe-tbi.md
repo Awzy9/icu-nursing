@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Hawryluk GWJ et al. Brain Trauma Foundation 2020 update to decompressive craniectomy (Neurosurgery 2020;87:427–434), incorporating RESCUEicp and 12-month DECRA outcomes; update specifically covers decompressive surgery, not ICP/CPP treatment thresholds", "Brain Trauma Foundation penetrating TBI second edition (2026), a separate population and document; abstract/index checked, not substituted for the fourth edition adult severe-TBI monitoring recommendations", "Carney N, Totten AM, O'Reilly C, et al. Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition. Brain Trauma Foundation, September 2016 (published Neurosurgery 2017;80:6-15) – a US evidence-based guideline for adults with SEVERE TBI; recommendation levels I, IIA, IIB, III as printed; the full text of the guideline PDF and the web recommendation index were read; the 2020 Brain Trauma Foundation addendum already incorporated RESCUEicp and updated decompressive-craniectomy recommendations; ICP and CPP threshold recommendations remain from the 4th edition", "Brain Trauma Foundation web index of the 4th edition recommendations (accessed 2026-11-14)"]
-sources: [S-BTF-TBI-4TH, S-BTF-DC-2020, S-BTF-PTBI-2026]
-sources_not_read: [S-NCS-ICP]
+sources: [S-BTF-TBI-4TH, S-BTF-DC-2020, S-BTF-PTBI-2026, S-NCS-ICP]
+sources_not_read: []
 independently_written_note: "Original wording. The Brain Trauma Foundation 4th edition was downloaded in full (about 500,000 characters of text); the web index of all 18 topics, the introduction and recommendation sections of Part II (monitoring) and Part III (thresholds), and the CPP and blood pressure threshold evidence were read; the 12 remaining evidence tables and detailed study descriptions were not studied. THE GUIDELINE POPULATION IS ADULTS WITH SEVERE TRAUMATIC BRAIN INJURY (GCS 3-8 after resuscitation in the monitoring statement). Its thresholds must NOT be applied to other neurological conditions (stroke, intracranial haemorrhage, hydrocephalus, tumour, post-operative patients, infection) or to children, and are not taught as universal. The guideline addresses clinicians' monitoring and treatment decisions: it contains no nursing-specific recommendations, so nursing sections are the author's translation into observation, recognition, documentation and escalation and are flagged for clinician review. Treatments (hyperosmolar agents, drainage, sedation, ventilation targets, surgery) are named only to show what the clinician-directed pathway contains; doses and thresholds for treatment are not given. The 2017 fourth edition remains the cited source for the ICP/CPP thresholds. A separate 2020 BTF decompressive-craniectomy update and the 2026 penetrating-TBI second edition have now been checked; neither is a blanket replacement of these adult severe-TBI monitoring recommendations."
 ---
 # ICP and cerebral perfusion pressure monitoring – severe traumatic brain injury (guideline population only)
@@ -60,6 +60,10 @@ Secondary injury after TBI is driven by raised ICP, low perfusion and low blood 
 - **Support lung and haemodynamic safety:** the guideline cautions against prolonged hyperventilation and against aggressive efforts to push CPP above 70; report ventilation or blood gas concerns promptly.
 - **Document** values, times, neurological observations, interventions and communications.
 
+**Interpret ICP and CPP together with the clinical trajectory (BTF severe TBI guideline).** If the displayed CPP falls, review the concurrent MAP, ICP, measurement reliability and neurological observations with the trained team. A lower MAP, a higher ICP or both may contribute; a position or reference-level change can also affect the measured values. A single value cannot identify the cause or exclude evolving brain injury. BTF supports integrating pressure readings with clinical findings and brain imaging, and notes uncertainty about the optimum lower CPP threshold in individual patients. Report new deterioration or a sustained deviation from the patient's ordered limits promptly, and avoid independent changes to drain height, ventilation or vasoactive support. Device-specific measurement and drainage procedures require local training.
+
+**Hyperosmolar therapy surveillance (Neurocritical Care Society 2020).** For patients receiving prescribed hypertonic sodium therapy for cerebral oedema, the guideline identifies renal function and serum sodium and chloride surveillance as good practice; acid–base status and the rate of change also matter. With mannitol, clinicians monitor renal function, volume status and an appropriate measure of osmolality. Report unexpected changes and confirm the individualized monitoring plan with the treating team. This broader neurocritical guidance supports safety surveillance, not a general ICP or CPP target, and does not extend severe-TBI thresholds to other diagnoses. No therapy doses or biochemical targets are taught.
+
 ## 8. Monitoring parameters
 ICP value and waveform where monitored; MAP and calculated CPP (MAP minus ICP); systolic blood pressure; neurological status (GCS, pupils and limb movement as per unit policy – not itemised in the guideline); oxygenation and ventilation (SpO₂, PaCO₂ or end-tidal CO₂); temperature; sodium and osmolality if hyperosmolar therapy is used; drain output if an external ventricular drain is in use; sedation; seizure activity. Frequency by unit policy and orders.
 
@@ -89,7 +93,7 @@ Falling GCS or a change in pupils or limb movement (unit-defined); sustained ris
 | Decide on ICP monitor placement; set ICP, CPP and blood pressure targets; order hyperosmolar therapy, drainage, sedation, ventilation changes or surgery; interpret imaging | Prescriber decision (neurosurgery, neurocritical care and intensive care teams) |
 
 ## 12. Escalation criteria
-Escalate immediately for neurological deterioration, a sustained ICP above the ordered limit, CPP outside the ordered range, hypotension, loss of monitoring, seizures, or any drain problem.
+Escalate immediately for neurological deterioration, a sustained ICP above the ordered limit, CPP outside the ordered range, hypotension, loss of monitoring, seizures or any drain problem. Do not wait for an ICP threshold or a repeat observation when the patient deteriorates. The Brain Trauma Foundation fourth-edition thresholds in this topic concern adult severe traumatic brain injury; they are not universal targets for every neurological condition. Verify the ordered target, patient position and monitor or drain reference level with trained staff; do not independently alter drain height or drainage settings.
 SBAR — **S:** bed X, severe TBI patient with ICP rising over the last 20 minutes and GCS falling. **B:** day 2 after injury; ICP monitor in place; ordered CPP range 60 to 70. **A:** deteriorating neurology with rising ICP and falling CPP. **R:** please come now; I am checking the airway, ventilation, blood pressure and monitor trace and need orders.
 
 ## 13. Potential complications
@@ -111,31 +115,31 @@ B. Agree, if the patient is older than 40 years, because age is the criterion fo
 C. Start a hyperosmolar drug at once, because the guideline recommends it for every pressure above the threshold.
 D. Explain that the BTF threshold is for severe TBI, and report the value so the team can apply the ordered target.
 **Answer: D.**
-**Why correct:** The guideline population is severe TBI; thresholds are not generalised to other neurological conditions and treatment is a clinician decision.
+**Why correct:** The Brain Trauma Foundation threshold applies to severe TBI, not automatically to subarachnoid hemorrhage. The abnormal value still warrants prompt patient assessment and escalation using the condition-specific target; new neurological deterioration requires emergency action without waiting for a numerical threshold.
 **Why not A:** The statement is specific to severe TBI.
 **Why not B:** Age is not the criterion for the threshold.
 **Why not C:** Starting drugs needs an order, and the guideline gives no specific agent recommendation.
 
-**Q2 (understanding).** How does the BTF guideline define cerebral perfusion pressure?
-A. The sum of the intracranial pressure and the mean arterial pressure, measured at the same moment.
-B. The difference between mean arterial blood pressure and intracranial pressure, which needs the ICP to be known.
-C. The systolic blood pressure alone, because the systolic value drives blood flow to the brain tissue.
-D. The intracranial pressure divided by the heart rate, which is displayed continuously on the monitor screen.
+**Q2 (application).** A patient with severe TBI has a mean arterial pressure of 82 mm Hg and an ICP of 24 mm Hg. Both measurements are reliable and referenced consistently. The prescribed CPP target is 60–70 mm Hg. What is the appropriate interpretation?
+A. CPP is 106 mm Hg; report possible excessive perfusion and reassess the pressure sources.
+B. CPP is 58 mm Hg; assess the patient and escalate the below-target value promptly.
+C. CPP is 82 mm Hg; the MAP indicates that the cerebral perfusion target is being met.
+D. CPP is 24 mm Hg; the ICP alone establishes that cerebral blood flow is inadequate.
 **Answer: B.**
-**Why correct:** The guideline states CPP is the difference between MAP and ICP and can only be calculated when ICP is known.
-**Why not A:** It is a difference, not a sum.
-**Why not C:** Systolic pressure alone is not CPP.
-**Why not D:** No such ratio is defined.
+**Why correct:** CPP is estimated as MAP minus ICP; 82 minus 24 gives 58 mm Hg, below this patient's prescribed range. Assess airway, circulation and neurological status, verify the monitoring conditions and escalate promptly without delaying urgent care. A CPP estimate does not directly measure cerebral blood flow. The BTF adult severe TBI recommendations are not universal targets for other neurological conditions.
+**Why not A:** Adding the two pressures does not calculate the perfusion pressure gradient.
+**Why not C:** MAP alone ignores the opposing intracranial pressure and can conceal reduced CPP.
+**Why not D:** ICP is one contributor to the pressure gradient; it is not identical to CPP or a direct measure of blood flow.
 
-**Q3 (judgment).** A severe TBI patient's displayed CPP has fallen below the range ordered by the team and MAP has dropped. What is the most appropriate nursing action?
+**Q3 (judgment).** During a bedside check of an adult with severe TBI, CPP falls below the ordered range at the same time that MAP decreases. Which response best addresses the risk of secondary brain injury while checking measurement reliability?
 A. Report at once, check the airway, blood pressure source and monitor connections, and keep the team informed.
 B. Increase the vasopressor rate on your own judgment of the pressure, since a higher pressure is always better.
 C. Wait ten minutes to see whether the pressure recovers before telling anyone about the fall in the value.
 D. Lower the head of the bed to raise the blood pressure, without an order, since position changes are harmless.
 **Answer: A.**
-**Why correct:** A fall in CPP and MAP needs prompt reporting; targets and treatment are the team's decisions.
-**Why not B:** Titration outside an order or protocol is unsafe.
-**Why not C:** Delay risks secondary injury.
+**Why correct:** Falling MAP and CPP may threaten cerebral perfusion. Assess airway, ventilation, circulation and neurological change; escalate urgently while checking the pressure measurement and applying authorized measures. Do not delay treatment of clinical instability for troubleshooting.
+**Why not B:** Titration outside an order or protocol may cause harm. Assess the source of hypotension and communicate the trend rather than pursuing a higher CPP regardless of the individual target.
+**Why not C:** Waiting to see whether the value recovers can prolong inadequate cerebral perfusion; urgent assessment and escalation should occur alongside measurement checks.
 **Why not D:** Positioning changes for pressure management need a policy or order, and head position is not addressed by the guideline.
 
 **Q4 (understanding).** What does the guideline say about the evidence for the CPP target of 60 to 70 mm Hg?
@@ -144,21 +148,21 @@ B. It is a recommendation for all brain-injured patients regardless of the cause
 C. It is a Level IIB recommendation, and the best minimum may depend on the patient's autoregulatory status.
 D. It was withdrawn in the 4th edition, so the guideline no longer gives any target range for the pressure.
 **Answer: C.**
-**Why correct:** The guideline gives a Level IIB recommendation for 60–70 and notes autoregulatory status.
+**Why correct:** The adult severe TBI guideline gives a Level IIB CPP target range, with uncertainty about the optimal lower boundary depending on autoregulation. Apply the prescribed individual target and report deterioration; do not extrapolate this range to all neurological diagnoses.
 **Why not A:** The guideline states there was insufficient evidence for Level I.
 **Why not B:** The population is severe TBI.
 **Why not D:** The recommendation is present.
 
-**Q5 (safety).** A nurse on a neurocritical care unit reads that the guideline advises caution about CPP above 70 mm Hg. Why?
-A. High CPP improves outcomes, so no caution is needed when a clinician pushes the pressure up with fluids or drugs.
-B. High CPP is thought to be more dangerous in older patients, and carries no risk in younger adults.
-C. Aggressive efforts to push CPP above 70 with fluids and pressors may risk adult respiratory failure.
-D. High CPP is harmful if the patient has no ICP monitor in place, because it cannot then be measured.
+**Q5 (judgment).** An adult with severe TBI has a CPP within the prescribed 60–70 mm Hg range. Oxygen requirements are increasing after fluid resuscitation. A colleague suggests requesting further fluids and vasopressors solely to maintain CPP above 70 mm Hg. What should the nurse communicate?
+A. A higher CPP reliably improves outcomes, so the additional pressure augmentation should take priority.
+B. The current oxygen requirement is unrelated to fluid treatment as long as the CPP remains measurable.
+C. Report respiratory deterioration and avoid aggressive augmentation solely to exceed the ordered range.
+D. Request an immediate reduction of cerebral perfusion pressure whenever it rises above 70 mm Hg.
 **Answer: C.**
-**Why correct:** The guideline's Level III statement cautions that aggressive attempts to push CPP above 70 with fluids and pressors may risk adult respiratory failure. It is a caution about harm at higher values, not about age or monitor presence.
-**Why not A:** The guideline cites harm at higher values.
-**Why not B:** Age is not the stated basis.
-**Why not D:** The caution does not depend on monitor presence.
+**Why correct:** The BTF Level III statement warns that aggressive attempts to maintain CPP above 70 mm Hg with fluids and vasopressors may increase the risk of adult respiratory failure. Assess the new respiratory deterioration and communicate the perfusion and fluid trends to the team. Follow the prescribed individual target; this is not an instruction to lower a spontaneously higher CPP.
+**Why not A:** The guideline does not establish that routinely pursuing higher CPP improves outcomes, and aggressive augmentation can cause harm.
+**Why not B:** New oxygen requirements after fluid treatment warrant assessment for pulmonary complications and other causes.
+**Why not D:** The caution concerns the harm of aggressive augmentation, not automatic treatment of every CPP above 70 mm Hg.
 
 **Q6 (scope).** Which of these belongs to the clinical team rather than the bedside nurse?
 A. Deciding to start hyperosmolar therapy or drainage in response to a raised intracranial pressure.
@@ -176,11 +180,13 @@ D. Checking that the monitor connections are intact and the trace is present on 
 - Bell RS, et al. *Brain Trauma Foundation Guidelines for the Management of Penetrating Traumatic Brain Injury, Second Edition.* Neurosurgery. 2026;98(3S):S6–S164. https://pubmed.ncbi.nlm.nih.gov/41697053/ ; official BTF index https://braintrauma.org/coma/guidelines/penetrating-tbi (2026; abstract/index only, not full algorithm). Distinct injury population; **not** used to supersede 2017 adult severe-TBI ICP/CPP recommendations.
 - Carney N, Totten AM, O'Reilly C, Ullman JS, Hawryluk GWJ, Bell MJ, et al. Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition. Brain Trauma Foundation; September 2016 (Neurosurgery 2017;80:6-15). Index and full guideline: https://braintrauma.org/coma/guidelines/severe-tbi ; https://braintrauma.org/s/Management_of_Severe_TBI_4th_Edition.pdf (accessed 2026-11-14). Sections read: 12 Intracranial Pressure Monitoring; 13 Cerebral Perfusion Pressure Monitoring; 14 Advanced Cerebral Monitoring; 15 Blood Pressure Thresholds; 16 ICP Thresholds; 17 CPP Thresholds; 18 Advanced Cerebral Monitoring Thresholds; and the recommendation index of topics 1–11. Copyright terms not located; paraphrased only.
 
+- S-NCS-ICP. https://doi.org/10.1007/s12028-020-00959-7 (selected official or publisher HTML passages checked 2026-11-24; full appraisal and independent review outstanding).
+
 ## 19. Local protocol note
 ICP and CPP targets, monitor type, transducer set-up and levelling, neurological observation intervals, head position, escalation limits, drain management and sedation, ventilation and osmotic therapy protocols follow the neurosurgical and intensive care teams and local policy.
 
 ## 20. Evidence, applicability and open questions
 - **Source quality:** a US evidence-based guideline using a class-of-evidence system; most statements are Level IIB or III, several earlier recommendations were restated without current-standard evidence, and the fourth-edition ICP/CPP thresholds remain the original cited recommendations. **The RESCUEicp/DECRA findings were incorporated in the 2020 BTF decompressive-craniectomy update; they are not awaiting publication.** The underlying ICP and CPP recommendations here have not been replaced by that surgery-specific addendum.
 - **Population limits:** adults with severe TBI. The 2026 second-edition Brain Trauma Foundation *penetrating* TBI guidance is a distinct population-specific update, not a fifth edition that supersedes all fourth-edition severe-TBI thresholds. Its full content was not reviewed in this targeted pass. Not applicable without separate evidence to stroke, intracerebral or subarachnoid haemorrhage, hydrocephalus, tumours, post-neurosurgical patients, CNS infection, hepatic encephalopathy, children or moderate TBI.
-- **Not covered and unresolved:** nursing practice (levelling, zeroing, waveform interpretation, pupil and neurological observations, positioning, drain care), brain death testing, paediatric guidelines, non-traumatic neurocritical care guidelines (not read), full penetrating-TBI 2026 algorithms, other possible updates and local neurosurgical procedures.
+- **Not covered and unresolved:** nursing practice (levelling, zeroing, waveform interpretation, pupil and neurological observations, positioning, drain care), brain death testing, paediatric guidelines, non-traumatic neurocritical care management beyond the selected NCS 2020 hyperosmolar safety-monitoring passages, full penetrating-TBI 2026 algorithms, other possible updates and local neurosurgical procedures.
 - **Open questions for reviewers (NSURG, NCC, CCP, NE, BN):** nursing neuro-monitoring procedures; local ICP and CPP alarm limits; non-TBI neurological content; reconcile the 2020 decompressive-craniectomy pathway with current unit policy and competence; independently verify whether other relevant BTF updates have appeared.

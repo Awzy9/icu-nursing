@@ -1,226 +1,274 @@
 {
- "skill_id": "SK-18",
- "number": 18,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "ECG monitoring",
- "category": "cardiac-resuscitation",
- "topic_drafts": [
-  "D02-T02"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-OPENRN-ADV-C7",
-   "read": "partial",
-   "use": "Open RN Advanced Skills ch. 7 telemetry checklist (CC BY text; check image licences)"
-  },
-  {
-   "id": "S-AACN-DYSRHYTHMIA-2016",
-   "read": "not_read",
-   "use": "AACN practice alert summary"
-  },
-  {
-   "id": "S-AACN-ALARM-2018",
-   "read": "not_read",
-   "use": "AACN alarm alert summary"
-  }
- ],
- "objectives": [
-  "Apply electrodes with good skin contact and the lead placement your unit uses.",
-  "Interpret systematically and verify alarms at the bedside before acting.",
-  "Escalate emergency rhythms immediately."
- ],
- "prerequisites": [
-  "Cardiac physiology",
-  "Alarm safety (SK-07)"
- ],
- "sections": {
-  "safety": {
-   "support": "partial",
-   "items": [
+  "skill_id": "SK-18",
+  "number": 18,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "ECG monitoring",
+  "category": "cardiac-resuscitation",
+  "topic_drafts": [
+    "D02-T02"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Verify an alarm or unusual rhythm at the bedside before acting; check the patient first.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C7"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
+      "id": "S-OPENRN-ADV-C7",
+      "read": "partial",
+      "use": "Open RN Advanced Skills ch. 7 telemetry checklist (CC BY text; check image licences)"
+    },
     {
-     "text": "Verify the order, identify the patient with two identifiers, explain the procedure, prepare the skin (clean, dry, free of excess hair and sweat), apply electrodes with good contact, observe the rhythm and print a 6-second strip.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C7"
-     ]
-    }
-   ]
-  },
-  "equipment": {
-   "support": "partial",
-   "items": [
+      "id": "S-AACN-DYSRHYTHMIA-2016",
+      "read": "not_read",
+      "use": "AACN practice alert summary"
+    },
     {
-     "text": "Colour-coded five-lead placement as the chapter shows: arm electrodes in the infraclavicular fossae near the shoulders, leg electrodes below the rib cage on the right and left upper abdomen, V1 at the fourth intercostal space on the right sternal border. Follow agency policy and the manufacturer's instructions.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C7"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "id": "S-AACN-ALARM-2018",
+      "read": "not_read",
+      "use": "AACN alarm alert summary"
+    },
     {
-     "text": "Rhythm interpretation and alarm-limit setting follow unit competency and orders; interpretation content belongs to the ECG topic and was not re-sourced here.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "S-AHA-ECG-SUMMARY-2017",
+      "read": "partial",
+      "use": "Public summary on rhythm, ischemia and QT monitoring purposes and duration"
     }
-   ]
+  ],
+  "objectives": [
+    "Apply electrodes with good skin contact and the lead placement your unit uses.",
+    "Interpret systematically and verify alarms at the bedside before acting.",
+    "Escalate emergency rhythms immediately."
+  ],
+  "prerequisites": [
+    "Cardiac physiology",
+    "Alarm safety (SK-07)"
+  ],
+  "sections": {
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Verify an alarm or unusual rhythm at the bedside before acting; check the patient first.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C7"
+          ]
+        },
+        {
+          "text": "Telemetry is for ongoing monitoring and does not replace a diagnostic 12-lead ECG when indicated. Evaluate the patient before troubleshooting a tracing; do not delay emergency help for instability.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C7"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Verify the order, identify the patient with two identifiers, explain the procedure, prepare the skin (clean, dry, free of excess hair and sweat), apply electrodes with good contact, observe the rhythm and print a 6-second strip.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C7"
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Colour-coded five-lead placement as the chapter shows: arm electrodes in the infraclavicular fossae near the shoulders, leg electrodes below the rib cage on the right and left upper abdomen, V1 at the fourth intercostal space on the right sternal border. Follow agency policy and the manufacturer's instructions.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C7"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Rhythm interpretation and alarm-limit setting follow unit competency and orders; interpretation content belongs to the ECG topic and was not re-sourced here.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Observe the rhythm and print a 6-second strip as the checklist describes; compare with the patient.",
+          "support": "partial",
+          "sources": [
+            "S-OPENRN-ADV-C7"
+          ]
+        },
+        {
+          "text": "Clarify the indication for continuous ECG monitoring and whether arrhythmia, ST-segment or QT assessment is ordered. Reassess continued need with the treating team; document relevant changes and obtain diagnostic ECG assessment when indicated. Monitor-derived QT or ST changes are not a diagnosis by themselves.",
+          "support": "partial",
+          "sources": [
+            "S-AHA-ECG-SUMMARY-2017"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Know the emergency rhythms and call for help per unit protocol; thresholds follow the resuscitation policy.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record rhythm, strip, rate and any change per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "monitoring": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "Observe the rhythm and print a 6-second strip as the checklist describes; compare with the patient.",
-     "support": "partial",
-     "sources": [
-      "S-OPENRN-ADV-C7"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "preparation",
+      "text": "Verify the order and identify the patient with two identifiers.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C7"
+      ]
+    },
     {
-     "text": "Know the emergency rhythms and call for help per unit protocol; thresholds follow the resuscitation policy.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "preparation",
+      "text": "Prepare the skin so it is clean, dry and free of excess hair and sweat.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C7"
+      ]
+    },
     {
-     "text": "Record rhythm, strip, rate and any change per unit standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "procedure",
+      "text": "Apply electrodes with good contact at the placement your unit uses.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C7"
+      ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "Observe the rhythm and print a 6-second strip.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C7"
+      ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "Assess the patient's responsiveness, breathing and perfusion first when an unusual rhythm or alarm occurs; activate emergency help for instability without waiting for artifact checks.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C7"
+      ]
+    },
+    {
+      "phase": "escalation",
+      "text": "Call for help immediately for an emergency rhythm per unit protocol.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "phase": "documentation",
+      "text": "Record rhythm and any change.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "phase": "monitoring",
+      "text": "When the patient is stable, inspect electrode contact and labelled lead placement; follow the device and unit convention rather than relying on wire colours alone. Obtain a diagnostic 12-lead ECG when indicated under protocol.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-OPENRN-ADV-C7"
+      ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Clarify the indication for continuous ECG monitoring and whether arrhythmia, ST-segment or QT assessment is ordered. Reassess continued need with the treating team; document relevant changes and obtain diagnostic ECG assessment when indicated. Monitor-derived QT or ST changes are not a diagnosis by themselves.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-AHA-ECG-SUMMARY-2017"
+      ]
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Verify the order and identify the patient with two identifiers.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-ADV-C7"
-   ]
-  },
-  {
-   "phase": "preparation",
-   "text": "Prepare the skin so it is clean, dry and free of excess hair and sweat.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-ADV-C7"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Apply electrodes with good contact at the placement your unit uses.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-ADV-C7"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Observe the rhythm and print a 6-second strip.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-ADV-C7"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Verify an alarm at the bedside and check the patient before acting.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-OPENRN-ADV-C7"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Call for help immediately for an emergency rhythm per unit protocol.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "phase": "documentation",
-   "text": "Record rhythm and any change.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Rhythm interpretation, 12-lead ischaemia interpretation, paced rhythms and alarm management: not covered here.",
-  "AACN practice alerts: full text not accessible."
- ],
- "permissions": [
-  "Open RN: CC BY with attribution; check image licences.",
-  "AACN alerts: permission required."
- ],
- "references": [
-  {
-   "id": "S-OPENRN-ADV-C7",
-   "title": "Nursing Advanced Skills, chapter 7 (ECG): 7.2 Basic Concepts, 7.3 Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Checklist: Initiating Telemetry, 7.7 Checklist: Interpret an ECG",
-   "publisher": "Open RN",
-   "version": "2023 (WisTech Open)",
-   "url": "https://wtcs.pressbooks.pub/nursingadvancedskills/",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "GREEN (text; images conditional)",
-   "permission_required": "No (text); check each image"
-  },
-  {
-   "id": "S-AACN-DYSRHYTHMIA-2016",
-   "title": "Practice Alert: Accurate Dysrhythmia Monitoring in Adults (published 2016-12-01; evidence update 2018; last reviewed 2026-09-16)",
-   "publisher": "American Association of Critical-Care Nurses",
-   "version": "2016; update 2018; reviewed 2026",
-   "url": "https://www.aacn.org/clinical-resources/practice-alerts/dysrhythmia-monitoring",
-   "accessed": "2026-11-15",
-   "read": "not_read",
-   "licence_class": "RED",
-   "permission_required": "Yes"
-  },
-  {
-   "id": "S-AACN-ALARM-2018",
-   "title": "Practice Alert: Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry (published 2018-04-03; last reviewed 2026-09-16)",
-   "publisher": "American Association of Critical-Care Nurses",
-   "version": "2018; reviewed 2026",
-   "url": "https://www.aacn.org/clinical-resources/practice-alerts/alarm-management",
-   "accessed": "2026-11-15",
-   "read": "not_read",
-   "licence_class": "RED",
-   "permission_required": "Yes"
-  }
- ]
+  ],
+  "gaps": [
+    "Full rhythm interpretation, 12-lead ischaemia interpretation, paced rhythms, QT measurement technique, indication-specific duration and alarm settings are not covered here; selected AHA 2017 summary principles are mapped, not the full scientific statement.",
+    "AACN practice alerts: full text not accessible."
+  ],
+  "permissions": [
+    "Open RN: CC BY with attribution; check image licences.",
+    "AACN alerts: permission required."
+  ],
+  "references": [
+    {
+      "id": "S-OPENRN-ADV-C7",
+      "title": "Nursing Advanced Skills, chapter 7 (ECG): 7.2 Basic Concepts, 7.3 Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Checklist: Initiating Telemetry, 7.7 Checklist: Interpret an ECG",
+      "publisher": "Open RN",
+      "version": "2023 (WisTech Open)",
+      "url": "https://wtcs.pressbooks.pub/nursingadvancedskills/",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "GREEN (text; images conditional)",
+      "permission_required": "No (text); check each image"
+    },
+    {
+      "id": "S-AACN-DYSRHYTHMIA-2016",
+      "title": "Practice Alert: Accurate Dysrhythmia Monitoring in Adults (published 2016-12-01; evidence update 2018; last reviewed 2026-09-16)",
+      "publisher": "American Association of Critical-Care Nurses",
+      "version": "2016; update 2018; reviewed 2026",
+      "url": "https://www.aacn.org/clinical-resources/practice-alerts/dysrhythmia-monitoring",
+      "accessed": "2026-11-15",
+      "read": "not_read",
+      "licence_class": "RED",
+      "permission_required": "Yes"
+    },
+    {
+      "id": "S-AACN-ALARM-2018",
+      "title": "Practice Alert: Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry (published 2018-04-03; last reviewed 2026-09-16)",
+      "publisher": "American Association of Critical-Care Nurses",
+      "version": "2018; reviewed 2026",
+      "url": "https://www.aacn.org/clinical-resources/practice-alerts/alarm-management",
+      "accessed": "2026-11-15",
+      "read": "not_read",
+      "licence_class": "RED",
+      "permission_required": "Yes"
+    },
+    {
+      "id": "S-AHA-ECG-SUMMARY-2017",
+      "title": "Update to Practice Standards for Electrocardiographic Monitoring in Hospital Settings: Top Things to Know",
+      "publisher": "American Heart Association",
+      "version": "3 October 2017",
+      "url": "https://professional.heart.org/en/science-news/update-to-practice-standards-for-electrocardiographic-monitoring-in-hospital-settings/top-things-to-know",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    }
+  ]
 }

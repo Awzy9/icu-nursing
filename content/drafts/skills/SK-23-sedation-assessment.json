@@ -18,6 +18,11 @@
       "id": "S-SCCM-PADIS",
       "read": "partial",
       "use": "PADIS 2018 and 2025 focused update: recommendation statements; licence RED/unverified"
+    },
+    {
+      "id": "S-SCCM-PADIS-FOCUSED-2025",
+      "read": "partial",
+      "use": "Official 2025 recommendation statements on sedation and anxiety; full paper not appraised."
     }
   ],
   "objectives": [
@@ -37,6 +42,14 @@
           "support": "partial",
           "sources": [
             "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "The SCCM 2025 focused update conditionally favours dexmedetomidine rather than propofol in mechanically ventilated adults when lighter sedation or delirium reduction is a leading priority. This is not a universal sedative preference; patient-specific goals, contraindications and the prescriber's plan govern.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS",
+            "S-SCCM-PADIS-FOCUSED-2025"
           ]
         }
       ]
@@ -71,7 +84,7 @@
       ]
     },
     "assessment": {
-      "support": "local_protocol",
+      "support": "partial",
       "items": [
         {
           "text": "Scale level definitions (RASS, SAS) are not reproduced; use the unit-approved tool and its training.",
@@ -82,6 +95,21 @@
           "text": "A sedation score describes observable arousal or agitation but does not by itself diagnose delirium. When altered behaviour is new, also assess oxygenation, pain, neurological change and other plausible causes, and escalate any acute deterioration rather than automatically adjusting the sedative.",
           "support": "partial",
           "sources": [
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "During neuromuscular blockade, movement-based sedation scales cannot establish consciousness or comfort. Verify the prescribed analgesia and sedation plan and seek team-directed monitoring of sedation depth; processed EEG may assist in selected deeply sedated or paralysed patients. Absence of movement alone does not establish adequate sedation.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        },
+        {
+          "text": "When a patient appears anxious, assess distress, communication needs, pain, breathing and possible acute deterioration before attributing the presentation to anxiety. The 2025 SCCM update found inadequate evidence to make a recommendation on benzodiazepines specifically for anxiety in adult ICU patients. Do not treat anxiety as an automatic indication for a sedative; discuss individualized management with the responsible team.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS-FOCUSED-2025",
             "S-SCCM-PADIS"
           ]
         }
@@ -175,7 +203,7 @@
     },
     {
       "phase": "escalation",
-      "text": "Report persistent deviation, agitation or over-sedation.",
+      "text": "Assess new reduced responsiveness or unsafe agitation immediately, including airway, breathing and circulation; escalate urgently rather than waiting for persistent deviation.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -197,10 +225,29 @@
       "sources": [
         "S-SCCM-PADIS"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "During neuromuscular blockade, movement-based sedation scales cannot establish consciousness or comfort. Verify the prescribed analgesia and sedation plan and seek team-directed monitoring of sedation depth; processed EEG may assist in selected deeply sedated or paralysed patients. Absence of movement alone does not establish adequate sedation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS"
+      ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Assess distress, communication needs, pain, breathing and acute deterioration before attributing symptoms to anxiety. The 2025 SCCM update found inadequate evidence to recommend for or against benzodiazepines specifically for anxiety in adult ICU patients. Anxiety alone is not an automatic indication for sedation; agree individual management with the team.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SCCM-PADIS-FOCUSED-2025",
+        "S-SCCM-PADIS"
+      ]
     }
   ],
   "gaps": [
-    "RASS/SAS definitions, dosing, neuromuscular blockade: not covered.",
+    "RASS/SAS definitions, dosing and neuromuscular blockade procedures are not covered. Selected PADIS guidance on depth monitoring during paralysis is mapped; device-specific interpretation and specialist oversight remain necessary.",
     "PADIS full text: recommendation statements only.",
     "SCCM 2025 recommendation-level statements support an ICU-wide multifactorial response, but this lesson does not contain licensed CAM-ICU or ICDSC scoring instructions or independent patient-specific sedation orders."
   ],
@@ -217,6 +264,17 @@
       "accessed": "2026-11-14",
       "read": "partial",
       "licence_class": "RED (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-SCCM-PADIS-FOCUSED-2025",
+      "title": "2025 focused update to PADIS guidelines for adult ICU patients",
+      "publisher": "SCCM",
+      "version": "2025",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED",
       "permission_required": "Verify"
     }
   ]

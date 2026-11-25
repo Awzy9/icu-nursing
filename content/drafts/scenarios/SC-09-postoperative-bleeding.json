@@ -72,10 +72,25 @@
       "id": "S-ISTH-DIC-2025",
       "read": "partial",
       "use": "ISTH SSC updated DIC definition and scoring 2025, PubMed abstract and 2026 review abstract checked; no scoring algorithm or full tables imported, publisher rights restricted."
+    },
+    {
+      "id": "S-AOA-BLOOD-2025",
+      "read": "partial",
+      "use": "Indexed 2025 guidance excerpts on electrolyte abnormalities in major haemorrhage. Published 28 September 2025 correction (doi 10.1111/anae.70020) checked 2026-11-24; correction concerns fibrinogen wording in Table 2. No product selection, fibrinogen indication or table taught."
+    },
+    {
+      "id": "S-NBA-CRITICAL-BLEED-2025",
+      "read": "partial",
+      "use": "Australian National Blood Authority adult critical bleeding guideline v2.0 (4 September 2025), PDF p22 R2 and p2 licence inspected; monitoring domains during major haemorrhage, very low certainty evidence. Not a local blood-bank protocol."
+    },
+    {
+      "id": "S-BSH-ATR",
+      "read": "partial",
+      "use": "BSH 2023 immediate management recommendation for hypotension in patients transfused for haemorrhage, checked 2026-11-24; full appraisal pending"
     }
   ],
   "required_sources": [
-    "A national or professional guideline on recognising and managing post-operative bleeding and haemorrhagic shock at nursing level, usable under a commercial licence",
+    "Independent review of the 2025 Association of Anaesthetists major-haemorrhage guideline and nursing applicability; confirm commercial rights before any reproduction Include the published 2025 correction (doi 10.1111/anae.70020).",
     "The hospital's major-haemorrhage and transfusion protocols",
     "Local protocol for emergency-release blood product identification, massive haemorrhage activation, monitoring and postoperative coagulopathy investigations"
   ],
@@ -85,20 +100,23 @@
     "No source read gives numeric thresholds for blood loss or urine output in this context; none are written.",
     "Fluids, blood products and reversal of anticoagulation are prescribed; the scenario does not say what to give.",
     "The tranexamic acid label read does not cover surgical bleeding and is not used.",
-    "This case is a nursing recognition and escalation exercise, not a major-haemorrhage algorithm. Exact emergency call thresholds, component availability, coagulation correction and return-to-theatre decisions remain local clinician decisions.",
-    "A 2025 ISTH updated DIC framework and 2026 follow-up review are checked at abstract level only; this surgical case does not teach formal scoring, DIC therapy, emergency transfusion component selection, massive-haemorrhage protocols or viscoelastic interpretation."
+    "Selected 2025 Association of Anaesthetists major-haemorrhage protocol and haemostatic resuscitation sections checked; this remains a recognition and escalation exercise, not a transfusion or surgical algorithm. NBA v2.0 recommendation R2 inspected for monitoring domains; full evidence review and local sampling intervals remain outstanding.",
+    "A 2025 ISTH updated DIC framework and 2026 follow-up review are checked at abstract level only; this surgical case does not teach formal scoring, DIC therapy, emergency transfusion component selection, massive-haemorrhage protocols or viscoelastic interpretation.",
+    "2026-11-24 AI scoring check: removed partial credit for leaving an actively deteriorating postoperative bleeding patient unattended. This is an unvalidated educational scoring correction, not a clinical approval."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
     "OpenStax Medical-Surgical Nursing is non-commercial (CC BY-NC-SA); it is used only to cross-check and must be replaced or permitted before any release.",
-    "ISTH 2025 and ARUP reference-laboratory educational material are citation-only on a commercial platform; no diagrams or diagnostic scoring tables reproduced."
+    "ISTH 2025 and ARUP reference-laboratory educational material are citation-only on a commercial platform; no diagrams or diagnostic scoring tables reproduced.",
+    "NBA critical bleeding guideline v2.0: CC BY-NC-SA 4.0; commercial adaptation not authorised; no guideline tables or protocol template reproduced.",
+    "BSH 2023 selected recommendation cited only; commercial reuse not cleared."
   ],
   "setting": "A fictional adult in a fictional intensive care unit six hours after abdominal surgery, receiving an anticoagulant for clot prevention.",
   "steps": [
     {
       "position": 1,
-      "info": "The dressing over the wound is wetter with blood than at the last check. The patient is pale and cold to touch, and the monitor shows a faster pulse and a lower pressure than before.",
-      "prompt": "What do you do first?",
+      "info": "During postoperative observations, the wound dressing contains more blood than at the previous check. The patient is pale, cold and clammy, with a faster pulse and falling pressure. The extent of blood loss is not yet known.",
+      "prompt": "Which immediate response addresses possible haemorrhagic shock without delaying assessment to quantify visible bleeding?",
       "observations": [
         {
           "key": "dressing",
@@ -119,41 +137,52 @@
           "key": "skin",
           "label": "Skin",
           "value": "Cold and clammy"
+        },
+        {
+          "key": "loss",
+          "label": "Blood loss",
+          "value": "Wound and drain loss require quantification"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Reassess during urgent response"
         }
       ],
       "options": [
         {
-          "text": "Stay with the patient, assess breathing and circulation, call the unit's urgent clinical response for suspected haemorrhagic shock and alert the surgeon promptly. Ask a colleague to quantify wound/drain blood loss and reinforce or mark the dressing without delaying resuscitation assessment.",
+          "text": "Assess breathing and circulation at bedside; call the urgent clinical response for suspected haemorrhagic shock and alert the surgeon. Ask a colleague to quantify blood loss without delaying assessment.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "Blood loss with reduced blood pressure, tachycardia and cool skin may indicate serious postoperative bleeding and shock. The urgent response and bedside assessment take priority over dressing documentation; communicate the wound, drain and physiological trend as the team arrives.",
-          "consequence": "The surgeon is told early, with measurable information, and the team can respond.",
+          "feedback": "Blood loss with reduced blood pressure, tachycardia and cool skin may indicate serious postoperative bleeding and shock. The urgent response and bedside assessment take priority over dressing documentation; communicate the wound, drain and physiological trend as the team arrives. The 2025 Association of Anaesthetists guidance emphasizes early recognition, coordinated blood-bank communication and definitive bleeding control. Suspected life-threatening haemorrhage warrants the local emergency pathway; do not wait for a particular haemoglobin or coagulation result before escalating.",
+          "consequence": "Early assessment and surgical escalation may accelerate resuscitation and identification of ongoing bleeding.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-POSTOP",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-AOA-BLOOD-2025"
           ]
         },
         {
-          "text": "Remove the dressing to look at the wound and put on a clean one without telling anyone.",
+          "text": "Remove the dressing to inspect the wound, apply a clean dressing and record the appearance for later documentation without informing the surgeon or requesting urgent assessment of the patient's changing observations.",
           "points": 0,
           "next": 2,
           "scope": "prescriber_or_other_discipline",
           "feedback": "The first dressing is normally managed by the surgeon; the nurse reinforces it and reports excessive bleeding rather than hiding it under a clean dressing.",
-          "consequence": "The amount of bleeding is no longer visible to the surgeon and the delay costs time.",
+          "consequence": "An unreported dressing change could obscure the trend in blood loss and delay recognition of deterioration.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-HA-POSTOP"
           ]
         },
         {
-          "text": "Wait for the surgeon's ward round later in the morning and recheck the dressing then.",
+          "text": "Compare the wound and drain findings with previous readings, document the pressure change and wait for the surgeon's scheduled round before requesting a clinical assessment.",
           "points": 0,
           "next": 2,
           "scope": "escalation",
           "feedback": "Excessive bleeding with changes in the vital signs should prompt medical evaluation at once.",
-          "consequence": "The patient continues to lose blood and becomes more unwell.",
+          "consequence": "Waiting for the ward round could allow further blood loss and worsening perfusion.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-POSTOP",
@@ -164,8 +193,8 @@
     },
     {
       "position": 2,
-      "info": "The surgeon has been told and is coming. The patient is now more anxious, and the next dose of the anticoagulant is due.",
-      "prompt": "What is the best action now?",
+      "info": "At the next shared checkpoint, the patient is increasingly anxious and pressure has fallen further. The surgical team has been alerted. IV access is working and a scheduled anticoagulant dose is due; the active bleeding concern has not resolved.",
+      "prompt": "How should the nurse address the due anticoagulant and prepare for urgent haemorrhage management?",
       "observations": [
         {
           "key": "bp",
@@ -186,30 +215,41 @@
           "key": "due",
           "label": "Medicines due",
           "value": "Anticoagulant dose due"
+        },
+        {
+          "key": "hr",
+          "label": "Heart rate",
+          "value": "Still faster than baseline"
+        },
+        {
+          "key": "dressing",
+          "label": "Dressing",
+          "value": "Ongoing bleeding concern"
         }
       ],
       "options": [
         {
-          "text": "Stay with the deteriorating patient, continue haemodynamic assessment, promptly ask the prescriber to reassess the scheduled anticoagulant before it is given, and coordinate the clinical team's ordered investigations, blood products, fluids or theatre transfer with colleagues.",
+          "text": "Stay, assess haemodynamics and ask the prescriber to reassess the due anticoagulant before giving it. Coordinate ordered tests, products, fluids or theatre transfer.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "Suspected postoperative haemorrhage needs urgent clinician review of anticoagulation as well as bleeding control and resuscitation. A due medication is not an instruction to ignore active deterioration; dose omission, reversal, component selection and resuscitation orders follow an authorised pathway.",
-          "consequence": "The prescriber decides about the anticoagulant with full information, and the team is ready for the next step.",
+          "feedback": "Suspected postoperative haemorrhage needs urgent clinician review of anticoagulation as well as bleeding control and resuscitation. A due medication is not an instruction to ignore active deterioration; dose omission, reversal, component selection and resuscitation orders follow an authorised pathway. Coordinate activation of the local major-haemorrhage pathway and correctly identified samples with colleagues as directed; avoid delaying urgent clinical assessment while waiting for routine laboratory turnaround.",
+          "consequence": "Prompt medication review and coordinated preparation may prevent additional bleeding risk without delaying urgent resuscitation.",
           "support": "partial",
           "sources": [
             "L-HEPARIN",
             "L-ENOXAPARIN",
-            "S-OPENRN-HA-POSTOP"
+            "S-OPENRN-HA-POSTOP",
+            "S-AOA-BLOOD-2025"
           ]
         },
         {
-          "text": "Give the anticoagulant on time because it is on the chart, and tell the surgeon afterwards.",
+          "text": "Administer the scheduled anticoagulant because the prescription remains on the chart; document administration and report the bleeding to the surgeon afterwards.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "An anticoagulant given to a patient who may be bleeding can worsen the haemorrhage; the prescriber must be asked first.",
-          "consequence": "The patient receives a drug that increases the bleeding risk, and the team has to manage the consequence.",
+          "consequence": "Giving anticoagulation before reassessment could aggravate bleeding.",
           "support": "sourced",
           "sources": [
             "L-HEPARIN",
@@ -217,23 +257,24 @@
           ]
         },
         {
-          "text": "Leave the room to collect blood products you think will be needed.",
-          "points": 1,
+          "text": "Leave the bedside to collect anticipated blood products without first coordinating the team's orders or arranging continued observation.",
+          "points": 0,
           "next": 3,
           "scope": "independent_nursing",
-          "feedback": "Preparing for blood products is sensible, but not at the cost of leaving a deteriorating patient alone; ask a colleague to help.",
-          "consequence": "The patient is unobserved for several minutes while deteriorating.",
+          "feedback": "Leaving an actively deteriorating patient unobserved to collect blood products is unsafe. Stay with the patient and coordinate the urgent team's authorised blood-product preparation through another staff member.",
+          "consequence": "Leaving the bedside could interrupt surveillance during ongoing haemodynamic deterioration.",
           "support": "partial",
           "sources": [
-            "S-OPENSTAX-MS-27-3"
+            "S-OPENRN-HA-POSTOP",
+            "S-AHRQ-TS"
           ]
         }
       ]
     },
     {
       "position": 3,
-      "info": "The urgent clinical team has assessed the patient and prescribed fluids and blood products, with a possible return to theatre. Urine output is falling, and repeat platelet and coagulation results are pending.",
-      "prompt": "What should you do now?",
+      "info": "At the final shared checkpoint, the team has prescribed fluids and blood products and is considering return to theatre. Pressure is responding slowly, urine output is falling, and repeat coagulation and platelet results are pending. Effective haemostasis has not been established.",
+      "prompt": "What must the nurse continue to verify, monitor and communicate during emergency resuscitation?",
       "observations": [
         {
           "key": "order",
@@ -254,44 +295,62 @@
           "key": "bp",
           "label": "Blood pressure",
           "value": "Responding slowly"
+        },
+        {
+          "key": "coag",
+          "label": "Coagulation and platelet tests",
+          "value": "Repeat results pending"
+        },
+        {
+          "key": "temperature",
+          "label": "Temperature",
+          "value": "Monitor during resuscitation"
+        },
+        {
+          "key": "electrolytes",
+          "label": "Ionized calcium and potassium",
+          "value": "Ordered trend monitoring"
         }
       ],
       "options": [
         {
-          "text": "Provide the clinician-ordered resuscitation and blood products under the hospital's emergency transfusion identification and reaction-monitoring procedures, reassess perfusion and urine output continuously, communicate evolving blood loss and laboratory trends without assigning a DIC diagnosis, and hand over to theatre by SBAR.",
+          "text": "Give ordered resuscitation using emergency transfusion identification and reaction-monitoring procedures. Reassess perfusion, urine and temperature; report loss, coagulation, ionized calcium and potassium without assigning a DIC diagnosis. Hand over.",
           "points": 2,
           "next": null,
           "scope": "order_or_protocol_required",
-          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC.",
-          "consequence": "Emergency treatment and transfusion safety checks proceed under the team's direction while bleeding, perfusion and serial laboratory trends are handed over.",
+          "feedback": "Blood-product selection, emergency issue procedures, haemostatic treatments and return-to-theatre decisions belong to the responsible team. Rapid nursing reassessment and appropriately authorised transfusion safety checks continue while haemorrhage is treated; platelet, PT/INR, aPTT, fibrinogen and D-dimer trends are context for the team and do not by themselves diagnose DIC. During major haemorrhage and transfusion, electrolyte abnormalities including hypocalcaemia and hyperkalaemia can require prompt clinician-directed treatment. Alongside bedside observations, trend ordered blood counts, clotting tests, acid–base status, ionized calcium and temperature during active major haemorrhage. Escalate worsening results and coordinate the approved warming and haemorrhage pathway; sampling intervals depend on the clinical situation and institutional protocol. Do not independently choose components or electrolyte replacement. Communicate whether bleeding is ongoing and whether resuscitation is effective. The responsible team coordinates definitive haemostasis and deactivates the major-haemorrhage pathway when appropriate, with the blood bank informed. During active major haemorrhage, new hypotension needs immediate senior assessment of ongoing blood loss versus a possible component reaction. Coordinate lifesaving resuscitation without waiting for laboratory results; the responsible team determines whether transfusion can continue or a different component is needed. Do not independently continue or restart a suspect component.",
+          "consequence": "Coordinated transfusion safeguards and serial perfusion, blood loss and laboratory assessment may help the team identify ongoing haemorrhage or treatment complications.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-POSTOP",
             "S-OPENRN-ADV-CH3",
             "S-AHRQ-TS",
             "S-ARUP-DIC",
-            "S-ISTH-DIC-2025"
+            "S-ISTH-DIC-2025",
+            "S-AOA-BLOOD-2025",
+            "S-NBA-CRITICAL-BLEED-2025",
+            "S-BSH-ATR"
           ]
         },
         {
-          "text": "Start the blood immediately without the unit's emergency blood identification and patient-monitoring safeguards because the patient is deteriorating.",
+          "text": "Start the blood without completing the hospital's emergency identification and patient-monitoring safeguards, reasoning that the urgency of bleeding makes the checks unnecessary until transfer; document administration and notify the receiving team later.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",
           "feedback": "Even during major haemorrhage, transfusion follows the hospital's emergency issue and patient-identification pathway, with appropriate safety and reaction monitoring; staff must use its specified emergency checks rather than inventing an exception.",
-          "consequence": "A patient-identification error could cause a serious reaction.",
+          "consequence": "Bypassing emergency identification safeguards could expose the patient to an incompatible component or delay recognition of a reaction.",
           "support": "partial",
           "sources": [
             "S-OPENRN-ADV-CH3"
           ]
         },
         {
-          "text": "Stop recording urine output and observations to save time.",
+          "text": "Focus on delivering prescribed resuscitation and blood products, and suspend urine-output recording and serial observations until transfer is complete, leaving the receiving team to establish the response to treatment.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Fluid status and urine output are monitored closely in a patient who is bleeding.",
-          "consequence": "The team loses an important measure of how well the patient is being resuscitated.",
+          "consequence": "Stopping observations could conceal persistent hypoperfusion despite ongoing resuscitation.",
           "support": "partial",
           "sources": [
             "S-OPENRN-HA-POSTOP"
@@ -306,7 +365,10 @@
       "Do not take the first dressing off and hide the evidence; the surgeon needs to see it.",
       "Raise any due anticoagulant dose with the prescriber when bleeding is suspected.",
       "Resuscitation, transfusion and possible return to theatre remain clinician-directed; use the authorised emergency blood-identification pathway, track perfusion/urine output and give timely blood-loss and laboratory-trend handover.",
-      "Falling platelets, abnormal clotting tests or a normal fibrinogen cannot independently determine DIC or blood-product selection; communicate clinical and laboratory trends while the team investigates."
+      "Falling platelets, abnormal clotting tests or a normal fibrinogen cannot independently determine DIC or blood-product selection; communicate clinical and laboratory trends while the team investigates.",
+      "Monitor temperature and ordered ionized calcium and potassium during major haemorrhage resuscitation; communicate abnormalities promptly and follow the authorised treatment pathway.",
+      "Escalate suspected life-threatening bleeding without waiting for a single laboratory threshold; coordinate communication with the clinical team and blood bank, and definitive haemorrhage control.",
+      "During active major haemorrhage, new hypotension needs immediate senior assessment of ongoing blood loss versus a possible component reaction. Coordinate lifesaving resuscitation without waiting for laboratory results; the responsible team determines whether transfusion can continue or a different component is needed. Do not independently continue or restart a suspect component."
     ],
     "links": [
       {

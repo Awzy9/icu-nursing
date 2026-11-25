@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read; septic shock only", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract/comparison table examined; full text not read)", "ESICM 2014 consensus (historical)", "ISMP List of High-Alert Medications in Acute Care Settings, 2024 (classification only)", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US"]
-sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026, S-UIC-EXTRA-2026]
-sources_not_read: [S-AHA-2025]
+sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ISMP-HA, S-FDA-PUMP, S-OPENRN-PHARM-CH, S-FDA-LABELS-2026, S-PVP-META-2026, S-UIC-EXTRA-2026, S-AHA-POSTARREST-2025]
+sources_not_read: []
 independently_written_note: "Original wording. SSC 2026 statements come from the official SCCM recommendation page (strength and certainty as printed there); the full publication, evidence tables and the context of each remark were NOT read, and SSC 2026 addresses adults with sepsis and septic shock, not other causes of shock. The 2014 ESICM consensus was read in full text and is dated. ISMP and FDA pages cover medication and pump safety, not vasoactive monitoring. No dose, concentration, titration range or rate is given: these are prescriber and pharmacist decisions. Batch 7 added Open RN pharmacology grids (US textbook), which do not supply a complete administration protocol. The UIC September 2026 clinical-pharmacy review was consulted on 2026-11-23 for initial recognition and response to suspected peripheral extravasation, not for dose or antidote preparation. Drug/site eligibility, monitoring frequency and treatment orders remain local-protocol matters. SSC applies to sepsis/septic shock, not all shock causes."
 ---
 # Vasopressor and inotrope monitoring
@@ -57,8 +57,12 @@ This paragraph is independently paraphrased from the UIC 2026 educational pharma
 - Plan replacement of bags or syringes so that the infusion is not interrupted; the FDA page notes that pump problems can cause under-infusion or delay in therapy. The method of changeover is local policy and is not sourced here.
 - Report drug-related or pump-related incidents and near misses.
 - **Better supported (Phase 3):** US FDA labels for norepinephrine, dopamine, epinephrine and phenylephrine each say to avoid extravasation, to check the infusion site for free flow (frequently), and to monitor for signs of it; the norepinephrine and dopamine labels say to infuse into a large vein and to monitor the extremities for skin changes in susceptible patients; the epinephrine label says blanching along the vein may precede obvious extravasation and suggests considering a change of infusion site. The labels also describe a clinician-directed emergency treatment by infiltration with an adrenergic blocking agent (not taught; no doses). The Open RN grids add limb colour and temperature monitoring with dopamine and ECG, blood pressure, cardiac output and urine output monitoring with dopamine and dobutamine (see D05-T03).
-- **Peripheral administration evidence (Phase 3):** a 2026 JAMA Netw Open meta-analysis (CC BY) found a pooled minor adverse event incidence of about 2.3 % for peripheral vasopressors, with major events rare through short peripheral catheters and venous thromboembolism seen only with midline catheters in its data; most studies were retrospective with unclear or high risk of bias. A 2026 Critical Care Explorations study notes that peripheral vasopressor protocols vary widely in drugs, doses, duration and monitoring requirements. **No standard monitoring frequency, recognition sign list or nursing management procedure was found.**
+- **Peripheral administration evidence (Phase 3):** a 2026 JAMA Netw Open meta-analysis (CC BY) found a pooled minor adverse event incidence of about 2.3 % for peripheral vasopressors, with major events rare through short peripheral catheters and venous thromboembolism seen only with midline catheters in its data; most studies were retrospective with unclear or high risk of bias. A 2026 Critical Care Explorations study notes that peripheral vasopressor protocols vary widely in drugs, doses, duration and monitoring requirements. **No universal monitoring frequency or administration protocol is established by these studies.** The separate clinical-pharmacy review in section 6b supports recognition and initial escalation, not a universal procedure.
 - **Still unresolved:** site-check frequency, line compatibility, dedicated-lumen practice, detailed extravasation orders, drug-specific antidotes and ongoing tissue-injury monitoring. Section 6b adds recognition and initial safety response only; follow local protocol and request pharmacist/vascular-access review.
+
+**High-risk infusion handover and replacement (FDA clinician safety guidance).** Confirm the ordered drug, concentration, programmed delivery, identified route and current haemodynamic target when handing over or replacing an infusion. Use an independent check where required by the facility. Document any interruption, concentration change or delivery discrepancy and the patient's response. Have a working-pump contingency plan; if an essential infusion fails, stay with the patient and arrange trained assistance immediately. Never improvise a bolus or use a compromised access site to compensate for interruption. The local drug-specific procedure determines safe changeover and alternative delivery.
+
+**Vasoactive support after return of circulation (AHA 2025, Part 11).** The adult post-arrest guideline recommends preventing hypotension, but the evidence does not establish a preferred vasopressor for treating post-arrest hypotension. Do not extrapolate the septic-shock first-line drug recommendation to every post-arrest patient. Confirm the individualized haemodynamic goal, assess perfusion and rhythm with each change, and communicate the response to the team. Agent choice and dose remain clinician-directed.
 
 ## 8. Monitoring parameters
 Blood pressure and MAP against target; heart rate and rhythm; skin perfusion and capillary refill; urine output; lactate trend where ordered; mental state; oxygen saturation; pump alarms and settings; infusion site and line patency; fluid balance; peripheral perfusion of limbs (fingers and toes); frequency set by unit policy.
@@ -90,7 +94,7 @@ MAP below the ordered target despite increasing doses; rising dose requirement o
 | Insert arterial or central lines; interpret echocardiography | Prescriber or credentialed clinician |
 
 ## 12. Escalation criteria
-Escalate immediately if the target is not reached, the dose requirement is rising, a new arrhythmia or chest pain develops, perfusion worsens, the infusion is interrupted, a pump fails, or the site looks abnormal. For the failing pump, stay with the patient while a working pump is obtained.
+Activate emergency help for severe circulatory deterioration, unstable arrhythmia or interruption of essential support with instability. Assess the patient, verify the prescribed target and check pressure-measurement reliability while help is summoned; do not delay emergency care for monitor or pump troubleshooting. Report increasing support needs, chest pain, worsening perfusion or access concerns. If extravasation is suspected, stop delivery through the affected catheter, do not force-flush, retain access initially for trained assessment under local policy, and urgently coordinate alternative access and clinician-directed haemodynamic support. Avoid interrupting a functioning essential infusion unnecessarily. Stay with and closely monitor the patient when a pump fails while qualified help obtains replacement equipment. Follow the authorised changeover procedure and reassess immediately after any interruption or replacement.
 SBAR — **S:** bed X, septic shock, MAP 58 against an ordered target of 65 and falling over the last 20 minutes. **B:** on the first vasoactive infusion for 6 hours; at the last titration the pressure responded briefly; urine output has fallen. **A:** inadequate response and worsening perfusion. **R:** please review now; I need a decision on increasing support or adding a second agent, and I am checking the line, pump and lactate.
 
 ## 13. Potential complications
@@ -100,19 +104,19 @@ Persistent hypotension; loss of blood-pressure support if an infusion is interru
 Order, drug and rate as programmed, double-check record, MAP target and the values at each assessment, titration steps and who authorised them, perfusion findings, rhythm, urine output, lactate results, line and site checks, pump alarms and actions, escalations and responses.
 
 ## 15. Practical bedside example
-At the start of the shift the nurse reads the MAP target range in the order, checks that the pump settings match the order and the label on the line, checks the arterial waveform and site, confirms that a replacement syringe is ready, and records a baseline set of perfusion observations. When MAP drifts below range, she checks the line and pump before changing anything, and calls the doctor if the protocol does not cover the next step.
+At the start of the shift the nurse reads the MAP target range in the order, checks that the pump settings match the order and the label on the line, checks the arterial waveform and site, confirms that a replacement syringe is ready, and records a baseline set of perfusion observations. When MAP falls below the prescribed range, she assesses perfusion and the patient immediately, checks delivery and measurement reliability with trained help, and escalates according to the clinical state and protocol. With acute instability, she activates emergency assistance without waiting for equipment troubleshooting.
 
 ## 16. Clinical case (fictional)
 A 72-year-old man with septic shock is on a vasoactive infusion. His MAP has been at 62 for 30 minutes, his fingers are cool, and his urine output has fallen. The nurse checks the pump and line, confirms the arterial trace is accurate, reports to the doctor that the target is not met despite escalating support and that perfusion is worsening, and asks for a decision about the next step. The doctor also asks for a repeat lactate; the nurse records the result and the response.
 
 ## 17. MCQs
-**Q1 (understanding).** What does SSC 2026 recommend as the initial MAP target in adults with septic shock?
+**Q1 (understanding).** What is the general initial MAP target recommended by SSC 2026 for adult septic shock, before individualization and consideration of the separate recommendation for older adults?
 A. An initial MAP target of 65 mm Hg over higher targets, with vasopressors titrated to keep MAP within a reasonable range of it.
 B. An initial MAP target of 85 mm Hg, because higher targets have been shown to improve organ perfusion in these patients.
 C. A systolic pressure above 120 mm Hg, since the systolic pressure is the better guide to perfusion than the mean pressure.
 D. No specific target, because the page says that the target should always be chosen at the bedside by the nurse alone.
 **Answer: A.**
-**Why correct:** The page gives a strong recommendation (moderate certainty) for an initial MAP of 65 over higher targets, with a remark about using a range.
+**Why correct:** The general recommendation is an initial MAP of 65 mm Hg rather than higher targets (strong, moderate certainty). For adults aged 65 or older with septic shock, the same guideline separately suggests an initial range of 60–65 mm Hg rather than higher ranges (conditional, low certainty). Follow the prescribed individualized range and monitor tissue perfusion, not just pressure.
 **Why not B:** The page recommends 65 over higher targets.
 **Why not C:** The statement concerns mean arterial pressure, not systolic pressure.
 **Why not D:** The page gives a target; the order for the individual patient comes from the prescriber.
@@ -120,10 +124,10 @@ D. No specific target, because the page says that the target should always be ch
 **Q2 (judgment).** A patient on a vasoactive infusion has an MAP below the ordered range for 20 minutes. What is the best first nursing action?
 A. Increase the infusion rate at once, without checking the trace, the line or the pump, to bring the pressure up quickly.
 B. Document the value and recheck at the next scheduled observation, because a single low value is expected on vasopressors.
-C. Check the patient, the arterial trace, the line and the pump, and report to the prescriber if the target is still not met.
+C. Assess the patient and summon urgent help while verifying the pressure and infusion; follow authorized titration.
 D. Stop the infusion immediately, since the drug is clearly not working in this patient and a different agent will be needed.
 **Answer: C.**
-**Why correct:** The FDA page recommends monitoring and checking the pump; the nurse confirms the reading and the infusion before escalating, and titrates only within an order or protocol.
+**Why correct:** Sustained hypotension despite support requires immediate assessment and escalation in parallel with checking waveform quality, access, drug identity and pump function. Do not wait until troubleshooting is complete to summon help if unstable. Follow the authorized titration and backup-infusion plan; reassess perfusion.
 **Why not A:** Titration needs an order or protocol and a check of the reading and equipment first.
 **Why not B:** A sustained low pressure in a patient on support needs action, not delay.
 **Why not D:** Stopping a vasoactive infusion abruptly without an order is unsafe.
@@ -145,7 +149,7 @@ B. Both say vasopressors may be given through an arterial line, because it gives
 C. Both say the site does not matter and may be chosen by the bedside nurse without any local policy.
 D. SSC 2026 suggests starting peripherally rather than delaying, while ESICM 2014 said central access may be preferred; local policy decides.
 **Answer: D.**
-**Why correct:** The two sources differ, and SSC 2026's own remark says data are insufficient on duration, dose and site.
+**Why correct:** SSC 2026 conditionally favors peripheral initiation in adult septic shock rather than delaying for central access. Evidence does not specify a universal duration, dose, cannula size or anatomical site, and the recommendation did not evaluate midlines. Use the authorized access protocol, assess the site and escalate suspected extravasation immediately; do not force-flush an affected cannula.
 **Why not A:** SSC 2026 suggests not delaying for central access.
 **Why not B:** Arterial lines are for monitoring, not for vasopressor administration.
 **Why not C:** Local policy and the order define the access and site.
@@ -156,7 +160,7 @@ B. Switching to a rapid bolus of the same drug by hand to cover the interruption
 C. Staying with and closely monitoring the patient while a colleague obtains a working pump.
 D. Waiting until the end of the shift to report the failure and keeping the pump in use until then, to avoid a gap.
 **Answer: C.**
-**Why correct:** The FDA page describes staying with and closely monitoring the patient while another staff member obtains a working pump.
+**Why correct:** FDA advises a planned backup response for high-risk infusion failure, including remaining with the patient while another clinician obtains replacement equipment. Activate urgent help when unstable, maintain prescribed circulatory support through a verified backup route and pump under the local plan, and avoid unintended boluses from residual drug in tubing.
 **Why not A:** The page says the nurse should stay with the patient.
 **Why not B:** A manual bolus of a vasoactive drug is not described and is unsafe without an order.
 **Why not D:** Faulty pumps are to be removed from use and reported.
@@ -180,6 +184,8 @@ D. Reporting a sudden fall in pressure after a bag change to the prescriber with
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians (content current as of 2018-02-02). https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
 
 - University of Illinois Chicago College of Pharmacy. *What are current recommendations for treatment of drug extravasation?* September 2026. Clinical pharmacy review, first-response section inspected, without reproducing drug-specific antidote doses or algorithms. https://dig.pharmacy.uic.edu/faqs/2026-2/september-2026-faqs/what-are-current-recommendations-for-treatment-of-drug-extravasation/ (accessed 2026-11-23).
+
+- S-AHA-POSTARREST-2025. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/post-cardiac-arrest-care (selected passages checked 2026-11-24; full appraisal and applicable rights review outstanding).
 
 ## 19. Local protocol note
 MAP targets, titration protocols, who may titrate, line and site selection, maximum peripheral duration, extravasation management, double-check policy, monitoring intervals and escalation thresholds follow your hospital's policies.

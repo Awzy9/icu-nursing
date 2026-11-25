@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Surviving Sepsis Campaign international guidelines 2026 (adults) – official SCCM recommendation page, recommendation-level statements only; the full publication was NOT read", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract/comparison table examined; full text not read)", "ESICM 2014 consensus (historical)"]
-sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014]
+sources: [S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-SWEDEN-PICS-2026]
 sources_not_read: [S-AHA-2025, S-OPENRN-ADV]
 independently_written_note: "Original wording. Statements from SSC 2026 come from the official SCCM recommendation page with the strength and certainty printed there; the full publication, evidence tables and any remarks not on the page were NOT read, and SSC 2026 is written for adults in the health system generally, not specifically for nurses. The 2014 ESICM consensus was read in full text and is dated. This draft complements, and does not repeat, the sepsis (D06-T01), shock recognition (D02-T08) and vasopressor monitoring (D02-T12) drafts. Fluid volumes, drug choices, doses and titration targets are prescriber decisions: the SSC page's weight-based volume figure is deliberately not quoted here because the platform bars unreviewed dosing figures. The local sepsis pathway, time targets and roles are set by the organisation."
 ---
@@ -50,6 +50,16 @@ The SSC 2026 statements below set time expectations for antimicrobials (ideally 
 - **Communicate:** use a structured handover, keep the family informed according to policy, and document times.
 - **Not covered here and flagged:** nursing details of line care, extravasation, haemodynamic troubleshooting, nursing titration protocols and local sepsis-bundle documentation are not supported by sources read.
 
+## 7b. Recovery after septic shock — rehabilitation and transition of care
+
+Survival is not the only recovery outcome. Ask about pre-illness function and document new limitations in strength, walking, self-care, attention, memory and emotional well-being. Include the patient's priorities and family observations where appropriate. Agree safe activity progression with rehabilitation professionals; active shock and worsening perfusion take priority over mobilization targets.
+
+Before ICU transfer, communicate residual organ support, recent delirium, mobility and swallowing concerns, current medicines and rehabilitation referrals to the receiving team. The 2026 SSC recommends medication reconciliation and coordinated education and follow-up for sepsis survivors. It conditionally supports post-hospital physical rehabilitation for survivors ventilated invasively for longer than 48 hours; this is not a universal exercise prescription or a reason to exclude other patients from individualized assessment.
+
+Post-intensive care syndrome (PICS) can involve physical, cognitive and psychological difficulties after critical illness. A 2026 Swedish consensus proposes early ward contact and later multidisciplinary reassessment, commonly at two to three months. These are context-specific consensus recommendations rather than a universally validated schedule. SSC 2026 found insufficient evidence to favor early over routine post-hospital follow-up. Arrange local referral pathways and teach patients how to seek help; new acute breathlessness, confusion or other deterioration needs prompt clinical evaluation rather than attribution to PICS.
+
+**Persistent shock despite a pressure at target (SSC 2026 / ESICM 2025).** A patient can reach the prescribed MAP while tissue perfusion remains inadequate. If capillary refill, mentation, urine output or lactate trajectory is concerning, report the pressure together with the support needed to maintain it, the clinical trends and response to previous therapy. ESICM advises assessing flow (cardiac output and/or stroke volume) in shock that does not respond to initial treatment and checking fluid responsiveness before further fluid. This is distinct from SSC 2026's insufficient evidence for adding minimally invasive or noninvasive cardiac output devices to usual septic-shock care; no single device is mandated. The treating team selects the monitoring method and reassesses causes, including cardiac dysfunction and unresolved infection. Do not administer additional fluid solely because a lactate value remains elevated.
+
 ## 8. Monitoring parameters
 Blood pressure and MAP; heart rate and rhythm; respiratory rate and oxygen saturation; temperature; capillary refill, skin colour, temperature and mottling; mental state; urine output and fluid balance; lactate trend; vasopressor requirements; oxygenation and ventilator needs; blood glucose; time stamps for cultures, antimicrobials, fluids, ICU admission and source-control steps.
 
@@ -71,6 +81,8 @@ Blood pressure and MAP; heart rate and rhythm; respiratory rate and oxygen satur
 
 **Updated ESICM 2025 general-shock monitoring (only abstract and comparison table examined):** Monitor capillary refill serially, supplemented by skin temperature and mottling. In persistent shock, assess fluid responsiveness before further fluids and use dynamic rather than static indicators where applicable. Keep these general-shock monitoring statements distinct from the SSC 2026 septic-shock treatment recommendations. Full ESICM 2025 text was not read.
 
+**Antibiotic delivery and reassessment.** The SSC 2026 preference for extended beta-lactam maintenance infusions follows an initial loading dose (strong recommendation, moderate certainty). Check the ordered infusion duration, compatibility, stability, access and pharmacy-approved preparation; avoid delays to the initial dose. Report interrupted or incomplete infusions and coordinate individualized drug-level sampling when ordered. Do not independently convert an intermittent prescription to a prolonged one.
+
 ## 10. Warning signs and red flags
 Rising vasopressor requirement; MAP persistently below target; rising or non-clearing lactate; cold, mottled skin or prolonged capillary refill; falling urine output; new confusion; worsening oxygenation; new arrhythmia; signs of fluid overload after boluses; a source that has not been addressed; a delay in antimicrobials or cultures; a patient with sepsis awaiting an ICU bed.
 
@@ -82,7 +94,7 @@ Rising vasopressor requirement; MAP persistently below target; rising or non-cle
 | Choosing antimicrobials, fluids, vasoactive drugs, steroids, bicarbonate; deciding targets and source control; ICU admission | Prescriber decision (with pharmacist, microbiology and surgical teams) |
 
 ## 12. Escalation criteria
-Escalate immediately for suspected sepsis with organ dysfunction, hypotension, a rising lactate, a vasopressor requirement or deterioration. For persistent shock, escalate early rather than waiting for the next review.
+Escalate immediately for suspected sepsis with organ dysfunction, hypotension, a rising lactate, a vasopressor requirement or deterioration. For persistent shock, assess perfusion and respiratory status and summon help rather than waiting for the next review. Reassess the response to prescribed resuscitation, including new signs of fluid intolerance; do not independently give repeated fluid boluses solely to normalize lactate. If vasoactive access fails or extravasation is suspected, stop delivery through the affected site and obtain urgent clinician-directed alternative support under the local pathway (see D02-T12 and MD-01).
 SBAR — **S:** bed X, septic shock, MAP below target and rising vasopressor requirement 3 hours after the first fluid bolus. **B:** cultures taken, antimicrobials given at the recorded time, fluids as ordered; lactate not falling. **A:** worsening perfusion despite resuscitation; source not yet identified. **R:** please review now; I need a decision about further fluid versus more support, a source search and further monitoring.
 
 ## 13. Potential complications
@@ -108,21 +120,21 @@ A 66-year-old woman with a urinary source is on a vasoactive infusion after flui
 A. Wait until the culture results return before giving any antimicrobial, so that the choice of drug is exactly right for the organism.
 B. Give antimicrobials first and take blood cultures only if the patient does not improve afterwards on the chosen treatment.
 C. Take the cultures after the antimicrobials have run in, because the first dose is the priority and cultures can wait until later.
-D. Collect blood cultures as soon as possible and ideally before antimicrobials, while giving antimicrobials within an hour.
+D. Obtain cultures promptly, ideally before antimicrobials; give emergency antimicrobials without avoidable delay.
 **Answer: D.**
-**Why correct:** SSC 2026 recommends taking blood cultures as soon as possible and ideally before antimicrobials (strong, low certainty); in possible, probable or definite septic shock, antimicrobial therapy should be given immediately, ideally within 1 hour of recognition (strong, very low certainty). Cultures must not become a reason to delay emergency treatment.
+**Why correct:** SSC 2026 recommends taking blood cultures as soon as possible and ideally before antimicrobials (strong, low certainty); in possible, probable or definite septic shock, antimicrobial therapy should be given immediately, ideally within 1 hour of recognition (strong, very low certainty). Cultures must not become a reason to delay emergency treatment. Coordinate investigation and urgent source-control assessment in parallel.
 **Why not A:** Waiting for culture results would greatly delay treatment.
 **Why not B:** Cultures should be obtained, not skipped, and not only if the patient fails to improve.
 **Why not C:** Cultures are ideally taken before antimicrobials, without unnecessary delay.
 
-**Q2 (understanding).** Which approach to judging the response to fluids does SSC 2026 suggest?
-A. Rely on the blood pressure reading alone, because it reflects the whole circulation and is available at every bedside.
+**Q2 (application).** A patient with septic shock remains poorly perfused after initial fluid treatment. The team is considering another bolus. Which assessment approach best informs the next decision?
+A. Use the current blood pressure and a single central venous pressure measurement to decide whether further fluid is needed.
 B. Use dynamic measures (such as response to a passive leg raise or a bolus) in preference to examination or static measures alone.
-C. Give a fixed volume to every patient with septic shock and stop reassessing afterwards, because the volume was decided at the outset.
-D. Continue fluid until the lactate has returned to normal, whatever the patient's response to each bolus.
+C. Repeat the initial volume based on the patient's weight, then assess the cumulative response once all fluid has been administered.
+D. Base the next bolus on the lactate trend without evaluating the response to the previous fluid.
 **Answer: B.**
-**Why correct:** SSC 2026 conditionally suggests dynamic fluid-responsiveness assessment rather than static measures or examination alone (low certainty). Examples are haemodynamic responses to passive leg raising or a fluid bolus assessed using stroke volume, its variation, pulse pressure or its variation—not a simple blood-pressure reading alone.
-**Why not A:** Blood pressure alone does not show tissue perfusion or fluid responsiveness.
+**Why correct:** SSC 2026 conditionally favors dynamic assessment rather than static measures or examination alone (low certainty). Depending on the method and measurement conditions, assess the hemodynamic response to passive leg raising or an authorized fluid challenge using flow or suitable pressure-derived indices. Fluid responsiveness does not establish a need for fluid; assess congestion, perfusion and risk of harm.
+**Why not A:** Static pressure measurements alone do not establish fluid responsiveness or the benefit of another bolus.
 **Why not C:** The page stresses frequent reassessment to avoid under- or over-resuscitation.
 **Why not D:** The remark advises against continuing fluid simply until lactate normalises.
 
@@ -132,9 +144,9 @@ B. A patient with a mild fever, normal vital signs, a normal lactate and no orga
 C. A patient whose vasopressor requirement is rising with mottled skin and a lactate that is not falling.
 D. A patient who is well three days after starting antimicrobials, eating and drinking, and about to move to the ward.
 **Answer: C.**
-**Why correct:** Rising support, poor perfusion and a lactate that is not falling suggest persistent shock.
+**Why correct:** Increasing vasoactive support, mottling and a persistent lactate abnormality suggest ongoing shock. Activate urgent review, assess perfusion and treatment delivery, and report trends. Lactate has non-hypoperfusion causes, so do not escalate fluids merely to normalize it.
 **Why not A:** These are signs of response.
-**Why not B:** Needs monitoring but is not in shock.
+**Why not B:** This patient still needs clinical monitoring, but the information given does not suggest the same immediate instability as option C. A normal lactate alone cannot exclude shock.
 **Why not D:** A recovering patient does not need urgent review.
 
 **Q4 (safety).** A patient with septic shock has a temperature of 38.8 °C and is comfortable. What does SSC 2026 say about antipyretic therapy?
@@ -154,7 +166,7 @@ B. Further large fluid boluses to treat the oedema, which indicates that the cir
 C. Stopping all monitoring now that the blood pressure is stable, to allow the patient to rest.
 D. Switching to an albumin-only fluid policy for all patients, whatever their condition.
 **Answer: A.**
-**Why correct:** SSC 2026 conditionally suggests considering active fluid removal only after the acute resuscitation phase (very low certainty); the team assesses cardiorespiratory function, vasopressor requirement, clinical course, oedema, weight and fluid balance. Oedema by itself does not mandate fluid removal.
+**Why correct:** SSC 2026 conditionally suggests considering active fluid removal after initial resuscitation (very low certainty). The team reviews cardiorespiratory function, vasoactive support, fluid balance and trajectory. Monitor for hypotension or poor perfusion during authorized removal; peripheral oedema does not prove adequate intravascular volume.
 **Why not B:** Oedema and weight gain suggest overload, not a dry circulation.
 **Why not C:** Monitoring continues after the pressure is stable because the patient's condition can change.
 **Why not D:** The page suggests crystalloids alone over supplemental albumin in general, with exceptions.
@@ -174,6 +186,8 @@ D. Choosing the antimicrobial agent and deciding whether to add corticosteroids.
 - Prescott H, Antonelli M, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Official SCCM recommendations page, recommendation-level statements (accessed 2026-11-14). https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 . Full publication: Crit Care Med 2026 (not read).
 - Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971–2012. doi:10.1007/s00134-025-08137-z. https://pubmed.ncbi.nlm.nih.gov/41236566/ (abstract and 2014/2025 comparison inspected 2026-11-16; full text NOT read; cite-only).
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (CC BY-NC; accessed 2026-11-14)
+
+- Swedish Consensus Recommendation for Follow-Up After ICU Stay (2026). https://pmc.ncbi.nlm.nih.gov/articles/PMC13696153/ (selected follow-up and discussion sections checked 2026-11-24; consensus with heterogeneous evidence; rights not cleared).
 
 ## 19. Local protocol note
 The local sepsis pathway, time targets, roles, documentation, line and fluid policies, vasopressor protocols and escalation criteria follow your organisation's policies.

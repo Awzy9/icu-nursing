@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { doseToPumpRate, equationSign, infusionDuration, parsePositiveDecimal, volumetricRate, type DoseUnit, type ConcentrationUnit } from "@icu/schemas/infusion-calculator";
+
+const parsePositive = (raw: string) => parsePositiveDecimal(raw) ?? Number.NaN;
 
 const significantDigits = 6;
-
-function equationSign(...values: number[]) {
-  return values.some((value) => Number(value.toPrecision(significantDigits)) !== value) ? "≈" : "=";
-}
 
 export function InfusionCalculator({ locale }: { locale: string }) {
   const ar = locale === "ar";
@@ -15,10 +14,10 @@ export function InfusionCalculator({ locale }: { locale: string }) {
   const [quantity, setQuantity] = useState("");
   const [minutes, setMinutes] = useState(false);
   const isRate = mode === "rate";
-  const input = Number(quantity);
-  const volumeMl = Number(volume);
-  const rawResult = volumeMl / (isRate && minutes ? input / 60 : input);
-  const valid = volumeMl > 0 && input > 0 && Number.isFinite(rawResult) && rawResult > 0;
+  const input = parsePositive(quantity);
+  const volumeMl = parsePositive(volume);
+  const rawResult = (isRate ? volumetricRate(volumeMl, input, minutes ? "minutes" : "hours") : infusionDuration(volumeMl, input)) ?? Number.NaN;
+  const valid = Number.isFinite(rawResult);
   const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: significantDigits });
   const hours = isRate ? (minutes ? input / 60 : input) : rawResult;
   const rate = isRate ? rawResult : input;
@@ -33,6 +32,7 @@ export function InfusionCalculator({ locale }: { locale: string }) {
           ? "هذه أداة تدريب بقيم افتراضية فقط، وليست لتحديد إعدادات مضخة مريض. تحقق من أمر الطبيب والتركيز ووسائل الحماية المعتمدة بمؤسستك. عند تغيير وحدة القياس ستُمسح القيمة التي قد تحمل معنى مختلفًا."
           : "Fictional calculation practice only—not for setting a patient's infusion pump. Follow approved orders, concentrations, drug-library safeguards and independent-check policies. Changing a unit clears the corresponding number to prevent misinterpretation."}
       </p>
+      <p className="text-sm text-muted-foreground">{ar ? "يمكن إدخال الأرقام العربية أو الغربية. استخدم النقطة أو الفاصلة العشرية العربية (٫) للقيم ذات ثلاث خانات عشرية، ولا تستخدم فواصل الآلاف." : "Use a decimal point (or Arabic decimal separator ٫) for three decimal places. Do not enter thousands separators. Arabic and Western digits are accepted."}</p>
       <label className="block space-y-1 text-sm font-semibold">
         <span>{ar ? "احسب" : "Calculate"}</span>
         <select className={field} value={mode} onChange={(event) => {
@@ -46,11 +46,11 @@ export function InfusionCalculator({ locale }: { locale: string }) {
       <div className="grid gap-3 sm:grid-cols-2">
         <label className="space-y-1 text-sm font-semibold">
           <span>{ar ? "الحجم (مل)" : "Volume (mL)"}</span>
-          <input className={field} type="number" min="0" step="any" inputMode="decimal" value={volume} onChange={(event) => setVolume(event.target.value)} />
+          <input className={field} type="text" inputMode="decimal" autoComplete="off" value={volume} onChange={(event) => setVolume(event.target.value)} />
         </label>
         <label className="space-y-1 text-sm font-semibold">
           <span>{isRate ? (ar ? "المدة" : "Duration") : (ar ? "المعدل (مل/ساعة)" : "Rate (mL/h)")}</span>
-          <input className={field} type="number" min="0" step="any" inputMode="decimal" value={quantity} onChange={(event) => setQuantity(event.target.value)} />
+          <input className={field} type="text" inputMode="decimal" autoComplete="off" value={quantity} onChange={(event) => setQuantity(event.target.value)} />
         </label>
       </div>
       {isRate && (
@@ -86,18 +86,18 @@ function DoseRatePractice({ locale, fieldClassName }: { locale: string; fieldCla
   const [dose, setDose] = useState("");
   const [weight, setWeight] = useState("");
   const [concentration, setConcentration] = useState("");
-  const [doseUnit, setDoseUnit] = useState("mg/h");
-  const [concentrationUnit, setConcentrationUnit] = useState("mg/mL");
+  const [doseUnit, setDoseUnit] = useState<DoseUnit>("mg/h");
+  const [concentrationUnit, setConcentrationUnit] = useState<ConcentrationUnit>("mg/mL");
   const weightBased = basis === "weight";
   const perMinute = doseUnit === "mcg/min";
-  const massFactor = perMinute ? 0.001 : 1;
-  const minutesPerHour = perMinute ? 60 : 1;
-  const totalDose = Number(dose) * (weightBased ? Number(weight) : 1);
-  const doseMgPerHour = totalDose * minutesPerHour * massFactor;
-  const mgPerMl = Number(concentration) * (concentrationUnit === "mcg/mL" ? 0.001 : 1);
-  const rate = doseMgPerHour / mgPerMl;
-  const valid = Number(dose) > 0 && Number(concentration) > 0 && (!weightBased || Number(weight) > 0) &&
-    Number.isFinite(rate) && rate > 0;
+  const doseNumber = parsePositive(dose);
+  const weightNumber = parsePositive(weight);
+  const concentrationNumber = parsePositive(concentration);
+  const totalDose = doseNumber * (weightBased ? weightNumber : 1);
+  const doseMgPerHour = totalDose * (perMinute ? 60 / 1000 : 1);
+  const mgPerMl = concentrationNumber * (concentrationUnit === "mcg/mL" ? 1 / 1000 : 1);
+  const rate = doseToPumpRate({ dose: doseNumber, weightKg: weightNumber, weightBased, doseUnit, concentration: concentrationNumber, concentrationUnit }) ?? Number.NaN;
+  const valid = Number.isFinite(rate);
   const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: significantDigits });
   const currentDoseUnit = perMinute ? "mcg/min" : "mg/h";
   const weightDoseUnit = perMinute ? "mcg/kg/min" : "mg/kg/h";
@@ -126,11 +126,11 @@ function DoseRatePractice({ locale, fieldClassName }: { locale: string; fieldCla
         <div className="grid gap-3 sm:grid-cols-2">
           <label className={labelClass}>
             <span>{ar ? "معدل الجرعة" : "Dose rate"}</span>
-            <input className={fieldClassName} type="number" min="0" step="any" inputMode="decimal" value={dose} onChange={(event) => setDose(event.target.value)} />
+            <input className={fieldClassName} type="text" inputMode="decimal" autoComplete="off" value={dose} onChange={(event) => setDose(event.target.value)} />
           </label>
           <label className={labelClass}>
             <span>{ar ? "وحدة الجرعة" : "Dose unit"}</span>
-            <select className={fieldClassName} value={doseUnit} onChange={(event) => { setDoseUnit(event.target.value); setDose(""); }}>
+            <select className={fieldClassName} value={doseUnit} onChange={(event) => { setDoseUnit(event.target.value === "mcg/min" ? "mcg/min" : "mg/h"); setDose(""); }}>
               <option value="mg/h">{weightBased ? "mg/kg/h" : "mg/h"}</option>
               <option value="mcg/min">{weightBased ? "mcg/kg/min" : "mcg/min"}</option>
             </select>
@@ -138,16 +138,16 @@ function DoseRatePractice({ locale, fieldClassName }: { locale: string; fieldCla
           {weightBased && (
             <label className={labelClass}>
               <span>{ar ? "الوزن الافتراضي (كغ)" : "Example weight (kg)"}</span>
-              <input className={fieldClassName} type="number" min="0" step="any" inputMode="decimal" value={weight} onChange={(event) => setWeight(event.target.value)} />
+              <input className={fieldClassName} type="text" inputMode="decimal" autoComplete="off" value={weight} onChange={(event) => setWeight(event.target.value)} />
             </label>
           )}
           <label className={labelClass}>
             <span>{ar ? "تركيز المحلول" : "Solution concentration"}</span>
-            <input className={fieldClassName} type="number" min="0" step="any" inputMode="decimal" value={concentration} onChange={(event) => setConcentration(event.target.value)} />
+            <input className={fieldClassName} type="text" inputMode="decimal" autoComplete="off" value={concentration} onChange={(event) => setConcentration(event.target.value)} />
           </label>
           <label className={labelClass}>
             <span>{ar ? "وحدة التركيز" : "Concentration unit"}</span>
-            <select className={fieldClassName} value={concentrationUnit} onChange={(event) => { setConcentrationUnit(event.target.value); setConcentration(""); }}>
+            <select className={fieldClassName} value={concentrationUnit} onChange={(event) => { setConcentrationUnit(event.target.value === "mcg/mL" ? "mcg/mL" : "mg/mL"); setConcentration(""); }}>
               <option value="mg/mL">mg/mL</option>
               <option value="mcg/mL">mcg/mL</option>
             </select>
@@ -157,9 +157,9 @@ function DoseRatePractice({ locale, fieldClassName }: { locale: string; fieldCla
           {valid ? (
             <>
               <strong className="block text-lg" dir="ltr">{format.format(rate)} mL/h</strong>
-              {weightBased && <span className="block" dir="ltr">{format.format(Number(dose))} {weightDoseUnit} × {format.format(Number(weight))} kg {equationSign(Number(dose), Number(weight), totalDose)} {format.format(totalDose)} {currentDoseUnit}</span>}
+              {weightBased && <span className="block" dir="ltr">{format.format(doseNumber)} {weightDoseUnit} × {format.format(weightNumber)} kg {equationSign(doseNumber, weightNumber, totalDose)} {format.format(totalDose)} {currentDoseUnit}</span>}
               {perMinute && <span className="block" dir="ltr">{format.format(totalDose)} mcg/min × 60 min/h ÷ 1,000 mcg/mg {equationSign(totalDose, doseMgPerHour)} {format.format(doseMgPerHour)} mg/h</span>}
-              {concentrationUnit === "mcg/mL" && <span className="block" dir="ltr">{format.format(Number(concentration))} mcg/mL ÷ 1,000 mcg/mg {equationSign(Number(concentration), mgPerMl)} {format.format(mgPerMl)} mg/mL</span>}
+              {concentrationUnit === "mcg/mL" && <span className="block" dir="ltr">{format.format(concentrationNumber)} mcg/mL ÷ 1,000 mcg/mg {equationSign(concentrationNumber, mgPerMl)} {format.format(mgPerMl)} mg/mL</span>}
               <span className="block" dir="ltr">{format.format(doseMgPerHour)} mg/h ÷ {format.format(mgPerMl)} mg/mL {equationSign(doseMgPerHour, mgPerMl, rate)} {format.format(rate)} mL/h</span>
             </>
           ) : <span>{ar ? "أدخل قيمًا موجبة للحصول على الناتج." : "Enter positive values in all fields to see the result."}</span>}

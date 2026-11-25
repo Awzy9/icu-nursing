@@ -126,6 +126,19 @@ describe("MCQ quality checks (self-tests)", () => {
     const qs = ["A", "C", "B", "D", "C", "A"].map((a, i) => q(`Q${i + 1}`, a, ok));
     expect(mcqQuality(qs)).toEqual([]);
   });
+  it("rejects duplicate question IDs and repeated options", () => {
+    const qs = [q("Q1", "A", ok), q("Q1", "B", [ok[0]!, ok[0]!.toUpperCase(), ok[2]!, ok[3]!])];
+    const issues = mcqQuality(qs);
+    expect(issues.some(i => i.message.includes("duplicate question ID"))).toBe(true);
+    expect(issues.some(i => i.message.includes("repeated answer option text"))).toBe(true);
+  });
+  it("rejects duplicate keys and option labels before parsing can hide them", () => {
+    const malformed = good.replace(/^\*\*Answer: ([A-D])\.\*\*$/m, match => match + "\n**Answer: D.**")
+      .replace(/^A\. .+$/m, match => match + "\nA. An additional contradictory option.");
+    const issues = validateDraft(malformed);
+    expect(issues.some(i => i.message.includes("multiple answer-key lines"))).toBe(true);
+    expect(issues.some(i => i.message.includes("repeated option A"))).toBe(true);
+  });
   it("flags answer-position imbalance", () => {
     const qs = Array.from({ length: 6 }, (_, i) => q(`Q${i + 1}`, "B", ok));
     expect(mcqQuality(qs).some((i) => i.rule === "mcq-position")).toBe(true);

@@ -36,13 +36,18 @@
     },
     {
       "id": "S-BSH-ATR",
-      "read": "not_read",
-      "use": "BSH acute transfusion reactions guideline: not accessed"
+      "read": "partial",
+      "use": "BSH 2023 selected initial management, anaphylaxis and haemorrhage-associated hypotension recommendations accessed 2026-11-24; full appraisal pending"
     },
     {
       "id": "S-ISBT-ATR-EDU",
       "read": "partial",
       "use": "ISBT educational module: first-response and documentation text read 2026-11-23 (not the figures or a formal guideline); independently paraphrased, local policy controls"
+    },
+    {
+      "id": "S-LIFEBLOOD-ATR",
+      "read": "partial",
+      "use": "Public HTML sections on acute dyspnoea, TACO, TRALI and severe reactions"
     }
   ],
   "objectives": [
@@ -84,7 +89,7 @@
           ]
         },
         {
-          "text": "Entering the container breaks the system: complete the transfusion within 4 hours of entry (Circular).",
+          "text": "The US Circular gives a four-hour limit after entry into a container; verify the applicable component-specific time limit, storage and expiry with the local transfusion service. Do not interpret this as permission to use a product past its authorised limit.",
           "support": "partial",
           "sources": [
             "S-AABB-COI-2024"
@@ -170,6 +175,13 @@
           "sources": [
             "S-AABB-COI-2024"
           ]
+        },
+        {
+          "text": "TACO may become apparent during transfusion or up to 12 hours afterwards; TRALI typically develops during transfusion or within six hours of completion. These are recognition windows, not a reason to dismiss later deterioration. Do not assume fluid overload or give a diuretic reflexively.",
+          "support": "partial",
+          "sources": [
+            "S-LIFEBLOOD-ATR"
+          ]
         }
       ]
     },
@@ -177,7 +189,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "For a suspected acute transfusion reaction, stop the transfusion promptly, assess the patient and vital-sign trend, request urgent clinical review, re-check patient/product identification, and contact the transfusion service. Preserve the implicated component and set for investigation as directed by the blood bank; do not restart it on the nurse's own authority.",
+          "text": "For a suspected acute transfusion reaction, stop the transfusion promptly, assess the patient and vital-sign trend, request urgent clinical review, re-check patient/product identification, and contact the transfusion service. Preserve the implicated component and set for investigation as directed by the blood bank; do not restart it on the nurse's own authority. For respiratory distress, shock or other severe features, activate emergency care immediately; do not assume all breathlessness represents fluid overload. Do not restart a component implicated in a serious reaction.",
           "support": "partial",
           "sources": [
             "S-ISBT-ATR-EDU",
@@ -189,6 +201,27 @@
           "support": "partial",
           "sources": [
             "S-ISBT-ATR-EDU"
+          ]
+        },
+        {
+          "text": "New breathlessness during or after transfusion requires urgent assessment for several possible causes, including TACO, TRALI, anaphylaxis, haemolysis and bacterial contamination. If still running, stop the transfusion; activate emergency help for severe features. Do not give a diuretic reflexively or restart a seriously implicated component.",
+          "support": "partial",
+          "sources": [
+            "S-LIFEBLOOD-ATR"
+          ]
+        },
+        {
+          "text": "During active major haemorrhage, new hypotension needs immediate senior assessment of ongoing blood loss versus a possible component reaction. Coordinate lifesaving resuscitation without waiting for laboratory results; the responsible team determines whether transfusion can continue or a different component is needed. Do not independently continue or restart a suspect component.",
+          "support": "partial",
+          "sources": [
+            "S-BSH-ATR"
+          ]
+        },
+        {
+          "text": "Suspected anaphylaxis requires emergency help and prompt intramuscular adrenaline (epinephrine) through the authorised anaphylaxis pathway; do not delay urgent treatment for investigations.",
+          "support": "partial",
+          "sources": [
+            "S-BSH-ATR"
           ]
         }
       ]
@@ -256,7 +289,7 @@
     },
     {
       "phase": "monitoring",
-      "text": "Complete the transfusion within 4 hours of entering the container.",
+      "text": "Confirm the component-specific time limit and expiry with the transfusion service and follow local administration policy.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -274,7 +307,7 @@
     },
     {
       "phase": "escalation",
-      "text": "On a suspected reaction, stop the transfusion, promptly assess the patient and notify the responsible clinician and transfusion service.",
+      "text": "Stop a suspected reaction, assess airway, breathing and circulation, activate emergency help for severe features, and notify the clinician and transfusion service. Never independently restart the implicated component.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -297,17 +330,45 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "phase": "escalation",
+      "text": "New breathlessness during or after transfusion requires urgent assessment for several possible causes, including TACO, TRALI, anaphylaxis, haemolysis and bacterial contamination. If still running, stop the transfusion; activate emergency help for severe features. Do not give a diuretic reflexively or restart a seriously implicated component.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-LIFEBLOOD-ATR"
+      ]
+    },
+    {
+      "phase": "escalation",
+      "text": "During active major haemorrhage, new hypotension needs immediate senior assessment of ongoing blood loss versus a possible component reaction. Coordinate lifesaving resuscitation without waiting for laboratory results; the responsible team determines whether transfusion can continue or a different component is needed. Do not independently continue or restart a suspect component.",
+      "support": "partial",
+      "sources": [
+        "S-BSH-ATR"
+      ],
+      "critical": true
+    },
+    {
+      "phase": "escalation",
+      "text": "Suspected anaphylaxis requires emergency help and prompt intramuscular adrenaline (epinephrine) through the authorised anaphylaxis pathway; do not delay urgent treatment for investigations.",
+      "support": "partial",
+      "sources": [
+        "S-BSH-ATR"
+      ],
+      "critical": true
     }
   ],
   "gaps": [
-    "First-line actions after a reaction: BSH guideline not accessed.",
+    "BSH 2023 selected first-response recommendations checked; full guideline appraisal and local protocol validation pending.",
     "Component-specific details: only general sections read.",
-    "Non-US jurisdictions: UK, European and other national guidance not read."
+    "Australian Lifeblood selected reaction guidance now inspected; jurisdiction-specific transfusion policies, complete component guidance and UK BSH source still require review."
   ],
   "permissions": [
     "AABB Circular: reproduction permission required.",
     "Open RN: CC BY with attribution; check image licences.",
-    "ISBT educational-module text is cite/paraphrase only until reuse terms have been verified; figures and algorithms are not reproduced."
+    "ISBT educational-module text is cite/paraphrase only until reuse terms have been verified; figures and algorithms are not reproduced.",
+    "BSH 2023 selected recommendations cited only; commercial reuse not cleared."
   ],
   "references": [
     {
@@ -356,13 +417,13 @@
     },
     {
       "id": "S-BSH-ATR",
-      "title": "Guideline on the investigation and management of acute transfusion reactions (Br J Haematol 2023; earlier BCSH 2012)",
+      "title": "Guideline on the investigation and management of acute transfusion reactions",
       "publisher": "British Society for Haematology",
       "version": "2023",
-      "url": "https://b-s-h.org.uk/guidelines",
-      "accessed": "2026-11-15",
-      "read": "not_read",
-      "licence_class": "RED (unverified)",
+      "url": "https://doi.org/10.1111/bjh.18789",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
       "permission_required": "Verify"
     },
     {
@@ -375,6 +436,17 @@
       "read": "partial",
       "licence_class": "YELLOW (reuse not verified)",
       "permission_required": "Verify before reproduction"
+    },
+    {
+      "id": "S-LIFEBLOOD-ATR",
+      "title": "Management of suspected reactions",
+      "publisher": "Australian Red Cross Lifeblood",
+      "version": "Current public guide; exact revision not established",
+      "url": "https://www.lifeblood.com.au/health-professionals/clinical-practice/adverse-events/management-of-suspected-reactions",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

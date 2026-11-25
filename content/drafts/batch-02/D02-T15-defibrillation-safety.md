@@ -44,6 +44,8 @@ ICU patients are on oxygen, ventilators and monitors, and may have implanted dev
 - Resume compressions immediately after the shock.
 - Document times, rhythm, shocks and actions as scribe or team member.
 
+**Distinguish preparation for synchronized cardioversion from defibrillation (2025 ALS).** A tachyarrhythmia with a pulse and signs of instability requires an urgent expert assessment. The team selects the appropriate electrical treatment for the rhythm and clinical situation; do not assume the synchronization setting or shock selection is the same for every rhythm. For indicated synchronized cardioversion, trained operators verify synchronization markers and coordinate airway support and any required sedation, recognizing that sedation can worsen circulation. Pulseless shockable arrest follows the arrest pathway. This is a conceptual distinction, not an operating sequence or device-specific instruction.
+
 ## 8. Monitoring parameters
 Rhythm on the monitor; pad and cable integrity; defibrillator status (charged, ready, battery or power supply); quality of compressions (rate, depth, recoil) as measured by the team; end-tidal CO₂ and arterial pressure where monitored, which may indicate return of circulation; pause times.
 
@@ -74,7 +76,7 @@ Oxygen mask or cannula still near the chest; hissing or sparking; poor pad conta
 | Changing pad position to a vector-change position or double defibrillation | Team-leader decision |
 
 ## 12. Escalation criteria
-Call the arrest team immediately for any suspected arrest. Escalate equipment problems (defibrillator not charging, pad failure) at once and call for a second device. After the event, report incidents (oxygen fire risk, shock exposure, delay) through the incident system.
+Call the arrest team immediately for suspected arrest and begin resuscitation according to training. Continue manual compressions during charging, clear all contact with the patient during shock delivery, and resume manual compressions immediately afterward. ERC 2025 distinguishes mechanical compression devices: a manual shock can be delivered without interrupting mechanical chest compression when used within the device and team safety procedure. Synchronized cardioversion for an indicated rhythm with a pulse is a distinct procedure. Escalate equipment faults immediately and obtain a replacement device; report safety incidents after the event.
 SBAR for the arrival of the team — **S:** bed X, cardiac arrest, compressions started at [time]. **B:** known [cause if known], on [oxygen/ventilator], pads applied, monitor shows [rhythm]. **A:** shockable rhythm confirmed by the leader. **R:** please take over leadership; I will keep compressions, oxygen safety and the log going.
 
 ## 13. Potential complications
@@ -96,7 +98,7 @@ B. Remove the mask, keep it at least 1 m from the chest, and leave any ventilato
 C. Turn off the monitor to avoid interference and leave the mask where it is, since the patient needs the oxygen.
 D. Keep the mask on but loosen the strap so that the oxygen escapes more easily from around the face during the shock.
 **Answer: B.**
-**Why correct:** ERC advises removing masks and cannulae at least 1 m from the chest, keeping circuits connected with exhaust directed away.
+**Why correct:** For defibrillation during arrest, ERC 2025 advises moving free-flow oxygen masks or cannulae at least 1 m from the chest. A ventilation circuit attached to an advanced airway is different: leave it connected and direct exhaust away from the chest. Coordinate this with the resuscitation team without unnecessary interruption to CPR.
 **Why not A:** More oxygen raises the fire risk.
 **Why not C:** Leaving the mask in place is hazardous.
 **Why not D:** A loosened mask still floods the area with oxygen.
@@ -107,7 +109,7 @@ B. Stop compressions for ten seconds to allow the defibrillator to charge fully 
 C. Ask the compressor to hold the chest only lightly with the fingertips so that the shock risk to them is reduced.
 D. Keep compressing while the defibrillator charges, then pause briefly, call a safety check, and shock with no one touching.
 **Answer: D.**
-**Why correct:** Charging during compressions shortens the pre-shock pause, and the shock must not be delivered while someone is touching the patient.
+**Why correct:** Charging during compressions shortens the pre-shock pause; the trained operator visually checks that everyone is clear before delivery. Resume chest compressions immediately after the shock unless there are clinical and physiological signs of return of circulation that justify a brief assessment. Do not rely on gloves for electrical protection.
 **Why not A:** ERC states shocks during manual compressions are not safe even with gloves.
 **Why not B:** Unnecessary pauses reduce shock success.
 **Why not C:** Any contact at the moment of shock is unsafe.
@@ -118,18 +120,18 @@ B. Avoid using pads on this patient altogether, because defibrillation may damag
 C. Place the pad more than 8 cm from the device, or use an alternative position, as the leader directs.
 D. Use the usual position regardless of the device, since implanted devices cannot be affected by defibrillator pads.
 **Answer: C.**
-**Why correct:** ERC advises pads more than 8 cm from the device or an alternative position.
+**Why correct:** ERC advises keeping pads more than 8 cm from an implanted device or using an alternative position. Do not delay an indicated shock solely because the patient has an implanted device; use the trained operator and the local resuscitation algorithm.
 **Why not A:** Pads should not be directly over the device.
 **Why not B:** Defibrillation should not be withheld because of a device.
 **Why not D:** The position should avoid the device.
 
-**Q4 (understanding).** Which statement about pads and paddles matches ERC 2025?
+**Q4 (application).** During preparation for adult manual defibrillation, a nurse finds both adhesive pads and hand-held paddles available. Which explanation best supports the team's equipment choice under its resuscitation protocol?
 A. Pads are preferred when available: the operator can stand clear, pauses are shorter and contact is better.
 B. Paddles are preferred because they allow the operator to continue compressions at the same time as the shock is delivered.
 C. Pads should only be used in children, whereas adults should always be defibrillated with hand-held paddles.
 D. The choice makes no difference to safety or efficiency, so the unit can use whichever device is nearest at the time.
 **Answer: A.**
-**Why correct:** ERC states pads are preferable for practical benefits, hands-free operation and better contact.
+**Why correct:** Adhesive pads permit a hands-free shock and reduce interruptions and direct contact during shock delivery. The team still needs effective pad contact, the required safety check and the applicable device instructions.
 **Why not B:** Defibrillating during manual compressions is not safe.
 **Why not C:** The statement applies to adults.
 **Why not D:** ERC lists safety and efficiency benefits for pads.

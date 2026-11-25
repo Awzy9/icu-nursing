@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NPIAP/EPUAP/PPPIA International Guideline, 4th edition, Quick Reference Guide, version date 1 Sep 2026 (abridged; full chapters not read)"]
-sources: [S-INTL-PI-2026]
+sources: [S-INTL-PI-2026, S-INTL-PI-HEELS-2025, S-INTL-PI-REPOS-2026, S-INTL-PI-ASSESSMENT-2026, S-INTL-PI-CLASSIFICATION-2026, S-INTL-PI-DRPI-2025]
 sources_not_read: [S-NPIAP-2019]
-independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Stage definitions were not read, so staging is not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
+independently_written_note: "Original wording. The 4th-edition Quick Reference Guide (free PDF from EPUAP) was read; the full guideline chapters and evidence summaries were NOT read, and the guide itself says its recommendations should not be used without them. Selected assessment and classification chapter statements were checked directly on 2026-11-24; comprehensive staging definitions and wound treatment are not taught here. The guide is copyrighted (© 2026 NPIAP/EPUAP/PPPIA); nothing is copied (cite-only unless permission is obtained). The register still lists the 2019 edition and must be updated."
 ---
 # Skin assessment and pressure injury prevention in the ICU
 > DRAFT – NOT clinically reviewed. AI-generated. The 2026 Quick Reference Guide is the main recorded source; selected full online chapters on repositioning, device-related injury and skin assessment were cross-checked on 2026-11-16. Not all chapters, references or evidence tables have been comprehensively reviewed.
@@ -34,7 +34,7 @@ Sustained pressure and shear reduce blood flow to skin and soft tissue; tissue t
 
 ## 6. Clinical assessment
 - **Screening and risk:** at least check mobility/activity, devices and existing pressure injuries at admission; follow with a full structured risk assessment for those at risk, repeated periodically and after any worsening in condition. Scales can help but should be supplemented with other risk factors and clinical judgment.
-- **Skin and tissue assessment:** visual inspection of bony prominences and under devices; blanching check (finger or transparent disc); touch for temperature (warmer may indicate inflammation, cooler ischaemia), firmness and swelling; pain at pressure points and under devices; colour change compared with surroundings. Techniques should suit the person's skin characteristics and tone (the guide gives this principle without describing how colour change appears on different skin tones; reviewers should add a source before any statement about visibility on darker skin).
+- **Skin and tissue assessment:** visual inspection of bony prominences and under devices; blanching check (finger or transparent disc); touch for temperature (warmer may indicate inflammation, cooler ischaemia), firmness and swelling; pain at pressure points and under devices; colour change compared with surroundings. Techniques should suit the person's skin characteristics and tone (the 2026 assessment chapter notes that redness may not be apparent on darker skin; compare baseline appearance, texture and local temperature rather than relying on redness).
 - **Perfusion of lower limbs and heels:** pulses, temperature, capillary refill, colour, sensation.
 - **Timing of head-to-toe skin assessment:** as soon as possible after admission or transfer, as part of every risk assessment, periodically as the clinical status changes, whenever the condition worsens, at transitions of care (including after procedures), and before discharge; inspect visible bony areas at every repositioning.
 - **Moisture and nutrition:** incontinence or sweat; intake and nutrition screening.
@@ -47,6 +47,15 @@ Sustained pressure and shear reduce blood flow to skin and soft tissue; tissue t
 - Manage moisture; keep skin clean and protected.
 - Request nutrition screening and dietitian review.
 - Document assessments, interventions and refusals or reasons for deviation.
+
+## 7b. Recognition and documentation of suspected pressure damage (2026 chapter update)
+
+- When a previously intact area changes in texture, temperature or colour, assess it against nearby unaffected tissue and the patient's baseline. Relieve loading where feasible and request wound-specialist assessment; absence of redness does not exclude tissue damage.
+- Establish the likely mechanism before assigning a category. Moisture-associated dermatitis, skin tears and impaired arterial perfusion can mimic pressure injury, and mixed mechanisms are possible. Describe objective findings and escalate uncertainty rather than guessing a stage.
+- For pressure damage caused by a device on skin, the authorized clinician applies the institution's recognized classification system. **Do not assign a skin pressure injury stage to a mucosal injury.** Document the affected site, device, tissue appearance and actions, while preserving essential device function.
+- Record healing against the original known classification rather than assigning progressively lower stages. Suspected heel injury with poor perfusion needs vascular and wound assessment; do not initiate debridement independently. This is not a staging or wound-treatment competency module.
+
+**Device-related pressure injury during routine care (International Guideline, fourth edition).** During repositioning and handover, inspect accessible tissue under and around devices and securements. Identify tubing trapped beneath the patient or pulling on skin; support the device, relieve avoidable pressure and consider a different sensor site when safe. Use only enough securement tension to maintain the intended function. Do not loosen a critical airway, vascular catheter or other life-supporting device independently; coordinate inspection and repositioning with trained staff. If direct inspection is unsafe, document the limitation and arrange a safe review. Preventive padding does not replace assessment or correct device fit.
 
 ## 8. Monitoring parameters
 Skin and device sites at every position change and every shift; risk re-assessment on admission, at intervals set by policy and with any clinical change; repositioning times; pressure-redistributing surface function; nutrition and hydration; haemodynamic trend (low perfusion raises risk).
@@ -74,8 +83,8 @@ Non-blanching redness; skin warmer, cooler, firmer or softer than surroundings; 
 | Device removal or change, treatment of established wounds beyond protocol | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate to the wound or tissue-viability team and the prescriber when: a new or worsening injury is found; skin changes appear under a device that cannot be moved; the patient cannot be repositioned safely; injury appears with signs of infection (warmth, spreading redness, pus, fever, rising white count); pain increases.
-SBAR — **S:** new non-blanching, dusky area on the left heel of a patient on vasopressors. **B:** day 4, norepinephrine ongoing, diabetic, limited mobility. **A:** early pressure injury likely; offloading measures started. **R:** please review today; advise on dressing/device options and nutrition referral.
+Escalate new or worsening tissue injury, suspected device-related injury, inability to reposition safely, signs of infection or increasing pain. A cool, discoloured limb or heel with new weak or absent pulses requires urgent assessment for impaired arterial perfusion, not simply routine wound referral. Offload pressure while maintaining safe positioning. In shock or systemic hypoperfusion, individualise repositioning to tolerance; use small assisted weight shifts and frequent reassessment when full turns are unsafe. A support surface is an adjunct, not a substitute for reassessment.
+SBAR — **S:** new non-blanching, dusky area on the left heel of a patient on vasopressors. **B:** day 4, norepinephrine ongoing, diabetic, limited mobility. **A:** early pressure injury likely; offloading measures started. **R:** please assess perfusion now and advise on safe offloading; arrange tissue-viability review and nutrition assessment.
 
 ## 13. Potential complications
 Infection (including bone), sepsis, pain, delayed recovery, longer ICU/hospital stay, readmission, distress for the patient and family.
@@ -87,7 +96,7 @@ Risk assessment and tool; full skin and tissue findings with location and descri
 Turning a sedated, ventilated patient: two nurses with a slide sheet reduce shear; one checks the sacrum, hips and heels; the other checks under the endotracheal tube fixation, nasogastric tube and oxygen saturation probe; the heels are floated with a pillow under the calves; the nurse records findings, position and time.
 
 ## 16. Clinical case (fictional)
-A 64-year-old man with septic shock is on vasopressors and diabetic. On day 3, the nurse notes a dusky area on his right heel that does not blanch, with cool skin and weak pedal pulses. She offloads the heel, applies a preventive dressing per policy, increases skin checks, informs the intensivist and tissue-viability nurse, requests a dietitian review and documents the findings and times.
+A 64-year-old man with septic shock is on vasopressors and diabetic. On day 3, the nurse notes a dusky area on his right heel that does not blanch, with cool skin and weak pedal pulses. She offloads the heel, urgently requests clinical assessment of impaired limb perfusion, informs the tissue-viability team and maintains close skin and circulation surveillance. Dressing and nutrition decisions follow the assessment and local pathway; she documents the findings and actions.
 
 ## 17. MCQs
 **Q1 (prioritization).** A diabetic patient on vasopressors has a dusky, non-blanching area on the heel, and another patient is due a routine mattress check. What should the nurse do first?
@@ -96,21 +105,21 @@ B. Offload the heel now, assess perfusion and skin, tell the team and ask for ti
 C. Record the finding and wait for the next full skin assessment before reporting it to anyone in the team.
 D. Apply a firm bandage to protect the heel and review it again tomorrow.
 **Answer: B.**
-**Why correct:** Early tissue injury in a high-risk patient needs prompt offloading and escalation.
+**Why correct:** Offload the heel immediately and assess skin and limb perfusion. The international heel chapter recommends complete heel elevation where appropriate, with pressure redistributed along the calf and fit and skin checked regularly. Dusky skin in a vasopressor-treated patient also warrants urgent evaluation for impaired circulation; do not assign a pressure-injury stage from colour alone.
 **Why not A:** The mattress check can follow; the heel injury is time-sensitive.
 **Why not C:** Delay allows the damage to progress.
 **Why not D:** A firm bandage may add pressure and hide changes, and a day's wait is too long.
 
-**Q2 (judgment).** How should the nurse decide the repositioning schedule for a critically ill patient?
-A. Reposition on a fixed two-hourly schedule regardless of the mattress used or the patient's skin and condition.
-B. Reposition when the family asks, since they know the patient's comfort best.
-C. Stop repositioning once an air mattress is in use, because the surface redistributes the pressure.
-D. Individualise it using mobility, skin tolerance, stability, comfort, goals of care and the support surface.
+**Q2 (judgment).** A patient in shock on vasopressors develops marked haemodynamic instability during a planned full-body turn. The patient is at high risk of pressure injury. What is the appropriate nursing response?
+A. Continue full turns on the same schedule even if the patient remains unstable.
+B. Stop all pressure relief until the vasopressors have been discontinued.
+C. Use a pressure-redistributing mattress instead of reassessing repositioning needs.
+D. Reassess stability, plan tolerated small shifts and review full turns.
 **Answer: D.**
-**Why correct:** The guide advises individualised regimens and says no surface replaces repositioning.
-**Why not A:** A fixed interval ignores individual need and clinical instability.
-**Why not B:** Responsibility for repositioning lies with the care team.
-**Why not C:** No support surface can entirely replace repositioning.
+**Why correct:** The 2026 international repositioning chapter supports individualization according to tissue response, clinical stability and support surface. If shock or severe instability prevents full turns, use tolerated small weight shifts under the team plan and reassess regularly for resumption of full-body repositioning. Treat haemodynamic deterioration as a priority, document tolerance and assess pressure points; the evidence for incremental repositioning in critically ill patients is limited.
+**Why not A:** A fixed schedule does not override immediate physiological instability; the clinical team must adapt the plan.
+**Why not B:** Omitting all pressure relief can worsen tissue loading; consider safe incremental measures and frequent reassessment.
+**Why not C:** A support surface assists pressure redistribution but does not replace individualized repositioning.
 
 **Q3 (application).** A ventilated patient has an endotracheal tube, a nasogastric tube and an oximeter probe. Which check best reduces device-related injury?
 A. Examine only the sacrum and heels at turns, since medical devices rarely cause pressure injuries in ventilated patients.
@@ -118,29 +127,29 @@ B. Tighten the securements slightly so that nothing can move and rub the skin.
 C. Inspect the skin and mucosa under and around each device at repositioning, and move or support devices where possible.
 D. Apply moisturiser under each device to keep the skin soft and prevent cracking.
 **Answer: C.**
-**Why correct:** Regular checks under devices and redistributing pressure at the interface are recommended.
+**Why correct:** Inspect the skin and mucosa at device interfaces and redistribute pressure where safe. Do not loosen or relocate a life-sustaining airway or other critical device without competent assistance and a plan to maintain its function.
 **Why not A:** Medical devices are a recognised cause of pressure injury.
 **Why not B:** Tighter securements increase pressure and shear.
 **Why not D:** Extra moisture under a device can worsen skin damage.
 
-**Q4 (understanding).** Which statement about a pressure-redistributing mattress is correct?
-A. It supports prevention, but repositioning is still needed.
-B. It makes repositioning unnecessary for patients who are sedated.
-C. It is useful for patients who are awake and able to move, but not for sedated patients.
-D. It protects the heels so well that heel checks can be dropped from the care plan.
+**Q4 (application).** A ventilated patient has a pressure-related lesion on the moist inner lip next to an endotracheal tube. A colleague proposes assigning a skin pressure-injury stage based on its visible depth. What should the nurse do?
+A. Describe the mucosal injury without staging and coordinate safe device assessment.
+B. Assign a skin stage based on the visible depth and document the stage as confirmed.
+C. Remove the airway fixation independently to determine whether deeper tissue is involved.
+D. Record the finding as a skin tear because the usual skin staging categories are unsuitable.
 **Answer: A.**
-**Why correct:** The guide states that no support surface can entirely replace repositioning.
-**Why not B:** This contradicts the guide, and sedated patients are at higher risk.
-**Why not C:** Immobile and sedated patients benefit most from these surfaces.
-**Why not D:** Heels still need offloading and regular checks, especially with poor perfusion.
+**Why correct:** The 2026 International Guideline differentiates pressure injuries of mucous membranes from device-related injuries on skin. Skin staging systems are not appropriate for mucosal pressure injuries. Describe the site and observed findings, protect airway function, seek wound and airway team assessment and document the agreed pressure-relief measures. Do not infer a stage or disrupt essential airway securement.
+**Why not B:** Mucosal anatomy differs from skin; visible depth does not reliably map to a skin stage.
+**Why not C:** Independent manipulation of a life-sustaining airway risks displacement; coordinate with the authorized airway team.
+**Why not D:** Inability to apply a skin stage does not make a pressure-related mucosal lesion a skin tear.
 
-**Q5 (assessment).** A nurse is assessing a patient with darker skin for pressure injury. Which approach is most appropriate?
+**Q5 (assessment).** During a skin check of an immobile patient with darker skin, the nurse notices a change in firmness near a device but finds colour changes difficult to distinguish. Which assessment approach is most appropriate?
 A. Rely on colour change alone because it is the earliest sign of injury and is equally easy to see on every skin tone and in any light.
 B. Use only a blanching test, because it works equally well on every skin tone.
 C. Delay assessment until the skin is broken, because earlier changes are not reliable.
 D. Combine colour, temperature, firmness, swelling and pain over bony areas and devices, using techniques suited to the skin tone.
 **Answer: D.**
-**Why correct:** The guide recommends a range of techniques appropriate to skin characteristics and tone.
+**Why correct:** Compare the area with the surrounding skin and assess changes in temperature, firmness, swelling, colour and discomfort where assessable. The international guideline supports assessment methods appropriate to the patient's skin characteristics. Escalate suspected injury and relieve device-related pressure safely without compromising essential device function; lack of obvious redness does not establish intact tissue.
 **Why not A:** Colour alone can miss early injury; the guide recommends a range of techniques suited to the person's skin characteristics and tone.
 **Why not B:** A single method may miss early injury.
 **Why not C:** Prevention depends on finding early changes before the skin breaks.
@@ -159,11 +168,19 @@ D. Requesting a dietitian review under unit policy.
 ## 18. References
 - National Pressure Injury Advisory Panel, European Pressure Ulcer Advisory Panel, Pan Pacific Pressure Injury Alliance. Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide. The International Guideline, Fourth Edition. Haesler E (ed). 2026 (version date 1 Sep 2026). https://internationalguideline.com (QRG PDF via https://epuap.org/pu-guidelines/; accessed 2026-11-14)
 
+- International Guideline: Heels. https://www.internationalguideline.com/heels (selected recommendation excerpts, accessed 2026-11-24)
+- International Guideline: Repositioning. https://www.internationalguideline.com/repositioning (selected recommendation excerpts, accessed 2026-11-24)
+
+- International Guideline: Skin and Tissue Assessment (May 2026). https://www.internationalguideline.com/assessment (selected assessment guidance checked 2026-11-24)
+- International Guideline: Classification (September 2026). https://www.internationalguideline.com/classification (selected CL1/CL2 and healing documentation guidance checked 2026-11-24; cite-only pending rights assessment)
+
+- International Guideline: Device Related Pressure Injuries. https://www.internationalguideline.com/drpi (selected HTML statements checked 2026-11-24; cite only; rights and independent clinical review pending).
+
 ## 19. Local protocol note
 Risk tools, staging system, support surfaces, dressings and repositioning schedules follow the institution's policy. Prone-positioning protocols have their own rules.
 
 ## 20. Evidence, applicability and open questions
 - Source quality and 2026-11-16 update: the international Quick Reference Guide was read previously; selected full online chapters (Repositioning and Mobilization; Device-Related Pressure Injuries; Skin and Tissue Assessment) were checked for recommendations and relevant implementation considerations. **Not all full chapter text, study references, and evidence frameworks were re-read**, and this is not a comprehensive guideline review. R7 (2–3-hour options) is conditional/very-low certainty and requires clinical individualization; pressure-injury prevention must not override airway or hemodynamic safety. See https://internationalguideline.com/repositioning ; https://internationalguideline.com/drpi ; https://internationalguideline.com/assessment .
 - International applicability: developed with international organisations; resource-dependent items (silicone foam dressings, specialised surfaces) are conditional.
-- Not covered: staging definitions and wound treatment (not read).
+- Not covered: comprehensive stage definitions, image-based competency and wound treatment; selected classification and documentation guidance is checked, not a full appraisal.
 - Open questions for reviewers (NE, BN): preferred risk scale; ICU-specific repositioning during haemodynamic instability; Arabic terminology; whether to adopt the 4th-edition recommendations before full-text review.

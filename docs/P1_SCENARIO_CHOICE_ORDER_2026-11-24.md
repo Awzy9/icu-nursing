@@ -1,0 +1,3 @@
+# Scenario choice display order — 24 November 2026
+
+The web and native players previously rendered canonical option order directly. Both now use a shared deterministic display permutation keyed by scenario identifier and checkpoint, with canonical indices retained for choice, scoring, transitions, persistence and debrief. No authored option ordering, content fingerprints, data migration or review status changes. Display order is stable across restarts and devices for the same case and checkpoint; it is not per-attempt randomization or a secure examination mechanism. Regression coverage checks permutations, stability and all 59 checkpoints; CI required. Existing answer-length cues are not addressed by this change. No production deployment or clinical approval.

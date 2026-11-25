@@ -1,268 +1,322 @@
 {
- "scenario_id": "SC-03",
- "number": 3,
- "title": "Acute respiratory deterioration",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "respiratory",
- "difficulty": 2,
- "learning_objectives": [
-  "Check the prescribed target and the delivery device when a patient's breathing worsens.",
-  "Escalate according to the early warning score and local policy.",
-  "Record the response and keep monitoring.",
-  "Recognise that concern justifies review whatever the score."
- ],
- "related": {
-  "skills": [
-   "SK-08"
+  "scenario_id": "SC-03",
+  "number": 3,
+  "title": "Acute respiratory deterioration",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "respiratory",
+  "difficulty": 2,
+  "learning_objectives": [
+    "Check the prescribed target and the delivery device when a patient's breathing worsens.",
+    "Escalate according to the early warning score and local policy.",
+    "Record the response and keep monitoring.",
+    "Recognise that concern justifies review whatever the score."
   ],
-  "medications": [],
-  "topic_drafts": [
-   "D01-T19",
-   "D01-T03"
-  ]
- },
- "sources": [
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "NEWS2 report: oxygen documentation, response tiers, record the response, concern overrides score"
+  "related": {
+    "skills": [
+      "SK-08"
+    ],
+    "medications": [],
+    "topic_drafts": [
+      "D01-T19",
+      "D01-T03"
+    ]
   },
-  {
-   "id": "S-AARC-O2",
-   "read": "full",
-   "use": "AARC oxygen therapy CPG: titrate within order"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
-  }
- ],
- "required_sources": [
-  "A respiratory deterioration guideline read in full (for example a national acute respiratory care guideline)",
-  "Unit escalation policy and critical care outreach criteria",
-  "BTS oxygen guideline (not read: publisher blocked automated access)"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Causes and treatment of respiratory deterioration are not drawn from a source read and are not written.",
-  "No saturation target is stated; the target is the prescribed one."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
- ],
- "setting": "A fictional adult receiving oxygen on a fictional unit.",
- "steps": [
-  {
-   "position": 1,
-   "info": "A patient receiving oxygen is breathing faster and the saturation is drifting down. The early warning score is rising.",
-   "prompt": "What should you do?",
-   "observations": [
+  "sources": [
     {
-     "key": "spo2",
-     "label": "Oxygen saturation (fictional)",
-     "value": 90,
-     "unit": "%"
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "NEWS2 report: oxygen documentation, response tiers, record the response, concern overrides score"
     },
     {
-     "key": "rate",
-     "label": "Breathing",
-     "value": "Faster than before"
+      "id": "S-AARC-O2",
+      "read": "full",
+      "use": "AARC oxygen therapy CPG: titrate within order"
     },
     {
-     "key": "oxygen",
-     "label": "Oxygen",
-     "value": "Mask, flow as ordered"
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
     },
     {
-     "key": "score",
-     "label": "Early warning score",
-     "value": "Rising"
+      "id": "S-FDA-OXIMETER-BASICS",
+      "read": "partial",
+      "use": "FDA public indexed limitations of pulse oximetry, including perfusion and skin pigmentation."
+    },
+    {
+      "id": "S-BTS-O2-2017",
+      "read": "partial",
+      "use": "BTS 2017 selected emergency oxygen recommendations and 2019 target-range decision; not full appraisal"
+    },
+    {
+      "id": "S-ATS-NIRS-2026",
+      "read": "partial",
+      "use": "ATS 2026 adult noninvasive respiratory support recommendations, indexed primary text"
+    },
+    {
+      "id": "S-RCUK-ABCDE-ADULT",
+      "read": "partial",
+      "use": "RCUK ABCDE, sections Breathing and Disability, official HTML checked 2026-11-24: clinical ventilation and alternative causes of depressed consciousness."
     }
-   ],
-   "options": [
-    {
-     "text": "Assess the patient, check the prescribed saturation target and the delivery device, record the flow and device, and escalate early rather than only turning the oxygen up.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "NEWS2 asks for the oxygen delivery device and flow to be recorded and the score is a trigger for response; oxygen is titrated within the order.",
-     "consequence": "You find the device correctly placed and the patient is working harder, so you call the responsible clinician.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2",
-      "S-AARC-O2"
-     ]
-    },
-    {
-     "text": "Turn the oxygen up to the maximum without an order.",
-     "points": 0,
-     "next": 2,
-     "scope": "order_or_protocol_required",
-     "feedback": "Oxygen is titrated within the order or protocol, and overuse can harm some patients.",
-     "consequence": "The saturation rises briefly but the cause is not addressed and the order has been breached.",
-     "support": "partial",
-     "sources": [
-      "S-AARC-O2"
-     ]
-    },
-    {
-     "text": "Leave things as they are because the saturation is near the target.",
-     "points": 1,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "A rising score and a falling trend need action even when a single value looks acceptable.",
-     "consequence": "The patient's condition continues to decline.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The score has risen into the range that triggers an urgent review.",
-   "prompt": "How should you escalate?",
-   "observations": [
-    {
-     "key": "spo2",
-     "label": "Oxygen saturation (fictional)",
-     "value": 88,
-     "unit": "%"
-    },
-    {
-     "key": "score",
-     "label": "Early warning score",
-     "value": "Medium range"
-    },
-    {
-     "key": "rate",
-     "label": "Breathing",
-     "value": "Fast and laboured"
-    }
-   ],
-   "options": [
-    {
-     "text": "Escalate urgently to the responsible clinician with an SBAR, following the unit's escalation policy.",
-     "points": 2,
-     "next": 3,
-     "scope": "escalation",
-     "feedback": "NEWS2 says a medium score should prompt an urgent review by a clinician with acute-illness competencies, who decides on further escalation.",
-     "consequence": "The clinician attends and decides whether critical care outreach is needed.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Wait for one more set of observations first.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "The trigger for urgent review has already been reached.",
-     "consequence": "The review is delayed while the patient worsens.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    },
-    {
-     "text": "Decide yourself to transfer the patient to a higher-dependency bed.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "The reviewing clinician decides on escalation of care and transfer.",
-     "consequence": "Bed moves are arranged without a clinical decision and the team has to unpick them.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The clinician has reviewed the patient and changed the plan.",
-   "prompt": "What do you do afterwards?",
-   "observations": [
-    {
-     "key": "spo2",
-     "label": "Oxygen saturation (fictional)",
-     "value": 93,
-     "unit": "%"
-    },
-    {
-     "key": "score",
-     "label": "Early warning score",
-     "value": "Lower"
-    },
-    {
-     "key": "plan",
-     "label": "Plan",
-     "value": "Updated by the clinician"
-    }
-   ],
-   "options": [
-    {
-     "text": "Record the actions and the response, monitor at the frequency the clinician sets, and call again if you remain concerned even if the score is lower.",
-     "points": 2,
-     "next": null,
-     "scope": "monitoring",
-     "feedback": "NEWS2 asks for the response to be recorded and says any concern about the patient should prompt an urgent review whatever the score.",
-     "consequence": "The record is clear and the next shift knows when to call.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    },
-    {
-     "text": "Stop escalating because the score has fallen a little.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "The score is an aid to judgement; concern or a worsening trend justifies a further call.",
-     "consequence": "The patient deteriorates again before anyone reviews.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    },
-    {
-     "text": "Go back to routine observations and make no record of the review.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "The response is recorded so that the next shift can see what was done.",
-     "consequence": "The next shift is unaware of the plan.",
-     "support": "partial",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "Check the prescribed target, the device and the patient; escalate early rather than only increasing oxygen.",
-   "The early warning score triggers a response; escalate with an SBAR per local policy.",
-   "Record the response, monitor as directed, and call again whenever you remain concerned."
   ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-08"
-   }
-  ]
- }
+  "required_sources": [
+    "Full appraisal of respiratory deterioration and BTS oxygen guideline recommendations, including disease-specific pathways",
+    "Unit escalation policy and critical care outreach criteria"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "Selected BTS oxygen and ATS 2026 respiratory support recommendations now supplement escalation teaching; diagnosis-specific treatment and complete appraisal remain outstanding.",
+    "No saturation target is stated; the target is the prescribed one."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status."
+  ],
+  "setting": "A fictional adult receiving oxygen on a fictional unit.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "An adult receiving oxygen through a prescribed mask becomes visibly more breathless during observations. Saturation is drifting down, respiratory effort is increasing and the early-warning score is rising. The cause is not yet known.",
+      "prompt": "Which action addresses respiratory deterioration without treating the saturation display alone?",
+      "observations": [
+        {
+          "key": "spo2",
+          "label": "Oxygen saturation (fictional)",
+          "value": 90,
+          "unit": "%"
+        },
+        {
+          "key": "rate",
+          "label": "Breathing",
+          "value": "Faster than before"
+        },
+        {
+          "key": "oxygen",
+          "label": "Oxygen",
+          "value": "Mask, flow as ordered"
+        },
+        {
+          "key": "score",
+          "label": "Early warning score",
+          "value": "Rising"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Alert but anxious"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the patient, assess airway, breathing and circulation; call for help and provide authorised emergency support. Check device, target and observations in parallel.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "A falling saturation and increasing breathing effort require immediate patient assessment. Use the early warning score and oxygen targets to inform the response, not as a reason to postpone emergency oxygen or ventilation support when indicated. Pulse oximetry estimates oxygenation, not ventilation; perfusion and skin pigmentation can affect accuracy. If the clinical picture and reading disagree, request further assessment and an appropriate alternative measurement without postponing emergency care. Request urgent blood gas assessment when hypercapnia is suspected, especially with new drowsiness or rising work of breathing. Emergency support for critical illness should not be withheld because of possible carbon dioxide retention; the team then individualizes oxygen and ventilation using blood gases and clinical response.",
+          "consequence": "Patient-first assessment may identify a delivery problem or worsening respiratory failure while urgent clinical support is arranged.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2",
+            "S-AARC-O2",
+            "S-FDA-OXIMETER-BASICS",
+            "S-BTS-O2-2017"
+          ]
+        },
+        {
+          "text": "Adjust the oxygen to maximum to restore the displayed saturation, record the new flow and repeat the oximeter measurement before assessing breathing or activating the emergency pathway.",
+          "points": 0,
+          "next": 2,
+          "scope": "order_or_protocol_required",
+          "feedback": "Do not treat the display alone. Provide emergency oxygen or respiratory support promptly under the authorized pathway; after immediate stabilization, titrate according to the patient-specific plan.",
+          "consequence": "A better displayed saturation could mask inadequate ventilation or persistent respiratory distress.",
+          "support": "partial",
+          "sources": [
+            "S-AARC-O2"
+          ]
+        },
+        {
+          "text": "Maintain the current oxygen prescription because the saturation is still close to target, record the rising early-warning score and reassess the patient at the next scheduled observation.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "Leaving deterioration unaddressed is unsafe even when saturation is near its target. Worsening effort or clinical concern warrants assessment and escalation.",
+          "consequence": "Waiting for a clearer numerical change could allow respiratory failure to progress.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "At the next shared checkpoint, saturation has fallen further despite oxygen, breathing is laboured and the patient is slower to respond. The score is in the urgent-review range; clinical severity may require an emergency response.",
+      "prompt": "Which response is appropriate when effort and alertness worsen despite oxygen support?",
+      "observations": [
+        {
+          "key": "spo2",
+          "label": "Oxygen saturation (fictional)",
+          "value": 88,
+          "unit": "%"
+        },
+        {
+          "key": "score",
+          "label": "Early warning score",
+          "value": "Medium range"
+        },
+        {
+          "key": "rate",
+          "label": "Breathing",
+          "value": "Fast and laboured"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Slower to respond"
+        },
+        {
+          "key": "oxygen",
+          "label": "Oxygen",
+          "value": "Support under urgent review"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay with the patient; urgently reassess and escalate, activating the emergency response if breathing is inadequate or instability is present. Arrange authorised respiratory support.",
+          "points": 2,
+          "next": 3,
+          "scope": "escalation",
+          "feedback": "Clinical severity can require a higher response than the aggregate early warning score indicates. Do not wait for another score or routine review if the patient is unstable. ATS 2026 distinguishes acute hypoxemic failure, where high-flow nasal oxygen is recommended, from acute hypercapnic failure, where noninvasive ventilation is recommended. Suitability depends on the individual and the cause. If noninvasive support is being used, report worsening effort, consciousness, gas exchange or circulation promptly; do not allow a trial of support to delay indicated intubation.",
+          "consequence": "Escalation and repeat assessment may identify a need for additional respiratory support before exhaustion progresses.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2",
+            "S-AHRQ-TS",
+            "S-ATS-NIRS-2026"
+          ]
+        },
+        {
+          "text": "Obtain another complete set of observations and calculate the new score, documenting any change in alertness before requesting urgent review or starting additional respiratory support.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "The trigger for urgent review has already been reached.",
+          "consequence": "Waiting for another observation set could delay assessment of respiratory failure.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "Review higher-dependency bed availability and arrange transfer independently, deferring emergency bedside assessment until the receiving team can reassess breathing.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "The reviewing clinician decides on escalation of care and transfer.",
+          "consequence": "An uncoordinated transfer could interrupt monitoring or respiratory support and delay stabilization.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "At the final shared checkpoint, the clinician has changed the support plan. Saturation has improved and the score is lower, but the patient remains drowsier than baseline. Ventilation and clinical response need reassessment.",
+      "prompt": "How should the nurse respond to improved saturation with persistent altered alertness?",
+      "observations": [
+        {
+          "key": "spo2",
+          "label": "Oxygen saturation (fictional)",
+          "value": 93,
+          "unit": "%"
+        },
+        {
+          "key": "score",
+          "label": "Early warning score",
+          "value": "Lower"
+        },
+        {
+          "key": "plan",
+          "label": "Plan",
+          "value": "Updated by the clinician"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Still drowsier than baseline"
+        },
+        {
+          "key": "rate",
+          "label": "Breathing",
+          "value": "Effort still above baseline"
+        }
+      ],
+      "options": [
+        {
+          "text": "Record the response, reassess breathing and alertness, follow the monitoring plan and seek urgent further review despite the lower score.",
+          "points": 2,
+          "next": null,
+          "scope": "monitoring",
+          "feedback": "NEWS2 asks for the response to be recorded and says any concern about the patient should prompt an urgent review whatever the score. Improved oxygenation does not establish adequate ventilation or explain ongoing drowsiness. Reassess airway, breathing and circulation, communicate the persistent change and request urgent further review; coordinate blood gas assessment as indicated without delaying emergency support. Compare the current respiratory pattern and depth with baseline; a falling respiratory rate accompanied by worsening alertness may reflect exhaustion rather than recovery. Report recent sedating medication and other possible causes of impaired consciousness while urgently reassessing ventilation and perfusion.",
+          "consequence": "Reassessment and handover may identify unresolved ventilatory failure or another cause of drowsiness despite improved saturation.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2",
+            "S-AARC-O2",
+            "S-BTS-O2-2017",
+            "S-ATS-NIRS-2026",
+            "S-RCUK-ABCDE-ADULT"
+          ]
+        },
+        {
+          "text": "Record improved saturation and the lower score, treating the improvement as sufficient reason to stop escalating despite drowsiness.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "The score is an aid to judgement; concern or a worsening trend justifies a further call.",
+          "consequence": "Stopping escalation based on a better score could delay recognition of ongoing respiratory compromise.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "Resume routine observations without recording the earlier clinical review because the support has changed and the score is lower.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "The response is recorded so that the next shift can see what was done.",
+          "consequence": "Routine checks without documenting the plan could leave deterioration or treatment changes unrecognized.",
+          "support": "partial",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "Assess the patient and provide authorised emergency support first; verify oxygen delivery and the prescribed target in parallel.",
+      "The early warning score triggers a response; escalate with an SBAR per local policy.",
+      "Record the response, monitor as directed, and call again whenever you remain concerned.",
+      "An acceptable oxygen saturation does not exclude inadequate ventilation; interpret oximetry in clinical context and escalate discordant findings.",
+      "Recognize deterioration despite oxygen or noninvasive support and escalate promptly for blood gases and respiratory-team assessment.",
+      "An apparently improved respiratory rate or oxygen saturation with declining consciousness is not reassuring; assess breathing depth, effort and physiological status together."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-08"
+      }
+    ]
+  }
 }

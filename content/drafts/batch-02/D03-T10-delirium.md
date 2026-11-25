@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 and the 2025 focused update – official SCCM recommendation pages, recommendation-level statements read; the full publications were NOT read", "NICE CG103 Delirium: prevention, diagnosis and management in hospital and long-term care (published 28 Jul 2010; last updated 18 Jan 2023) – general hospital guidance that names ICU tools"]
-sources: [S-NICE-CG103, S-SCCM-PADIS]
+sources: [S-NICE-CG103, S-SCCM-PADIS, S-SCCM-PADIS-FOCUSED-2025, S-ESICM-HUMAN-PARTNERSHIP-2026, S-SCCM-FAMILY-2024, S-SCCM-OLDER-2026]
 independently_written_note: "Original wording. NICE CG103 recommendations chapter read. SCCM PADIS 2018 and the 2025 focused update: only the official SCCM recommendation pages were read (statements, strength, certainty, remarks) – the full publications on journals.lww.com were blocked and NOT read, so evidence summaries, tool psychometrics and rationales are not covered and this is not a full-text review. NICE reserves commercial reuse (cite-only). CAM-ICU/ICDSC tool wording is not reproduced."
 ---
 # Delirium – nursing screening, prevention and response in the ICU
@@ -55,6 +55,24 @@ A newly agitated, withdrawn or less responsive patient needs assessment for acut
 Sedation/arousal scoring and a delirium assessment answer **different questions**. If deep sedation, coma or the tool's eligibility conditions prevent assessment, record that the screen was not possible and why, rather than marking the patient delirium-negative. Use the local tool manual and competence requirements; no copyrighted CAM-ICU/ICDSC items or scoring cutoffs are reproduced here.
 
 **2025 SCCM PADIS focused update:** the expert panel could not make a recommendation for or against antipsychotics versus usual care to treat delirium in adults in ICU. This is not approval for routine haloperidol and not a universal prohibition of clinician-directed treatment when safety is at risk. Individualized de-escalation, pain review, non-drug care, medication safety checks, and urgent review when danger persists remain essential. The same update conditionally supports more intensive mobility/rehabilitation than usual care, but does not establish a universal schedule or safety clearance for every ICU patient. The unit's competent team decides.
+
+## 7c. Protect sleep while maintaining critical care safety
+
+Ask assessable patients how they slept and what disturbed them. Plan daytime orientation, appropriate daylight and activity, and a quieter night with reduced unnecessary interruptions. Coordinate nonurgent care when feasible; never defer time-critical observations, medicines, neurological assessments or emergency intervention merely to protect sleep. Check pain, positioning, respiratory discomfort and device issues before assuming insomnia. Review alarm causes and settings with the competent team; never silence or disable essential alarms for sleep.
+
+The October 2026 ESICM consensus discusses optional earplugs and eye masks, with more consistent evidence for subjective sleep than for major clinical outcomes. Offer only if appropriate to the patient's preferences, communication and safety; remove when they impede assessment or cause distress. Evidence for specialized circadian lighting and clinical outcomes remains very uncertain. The 2025 PADIS update conditionally supports melatonin with low certainty; this is a prescribing decision, not a routine nurse-initiated medication or a proven delirium cure. Sedation is not equivalent to restorative sleep.
+
+## 7d. Partner with families without compromising patient preferences
+
+The SCCM family-centred guideline (2024 edition, published 2025) supports flexible family presence as the default, with conditional support for optional participation in rounds and bedside care. The October 2026 ESICM consensus reinforces clear roles and communication. Confirm whom the patient wants involved and respect privacy, consent, infection precautions and clinical safety. Invite familiar orientation, conversation or reassurance where desired; agree safe tasks and make participation voluntary. Offer interpreters and accessible information when needed. Family observations of cognition supplement clinical assessment rather than establish a diagnosis. Do not promise that visitation alone will prevent delirium; evidence for patient-specific outcomes is limited.
+
+## 7e. Delirium in older critically ill adults (2026 update)
+
+Record usual cognition and function when known; dementia does not exclude superimposed delirium. Correct barriers to communication, including missing hearing aids or glasses, and ask about changes from baseline. Assess new reduced alertness or confusion for urgent physiological or neurological causes before attributing it to age or dementia.
+
+The 2026 SCCM older-adult guideline conditionally advises against preventive antipsychotics in older ICU patients (very low certainty). It could not recommend for or against antipsychotics for treatment of established delirium (low certainty). Keep prevention and treatment decisions distinct. Monitor symptoms and medication-related adverse effects under the authorized plan; escalate distress or danger despite supportive measures. Neither age nor a positive screening score automatically establishes a drug indication.
+
+**Fluctuation and handover (NICE CG103).** Compare attention, alertness, interaction and activity with the patient's usual function and the previous shift. Document the timing of fluctuations, observations from people familiar with the patient, the screening method and whether the patient was assessable. A temporarily reassuring screen does not exclude a fluctuating illness. Newly reduced responsiveness or another acute change requires immediate clinical assessment and escalation according to severity, rather than waiting for the next planned screen. Delirium is one possible explanation; do not label focal neurological signs or unexplained impaired consciousness as delirium without assessment. Continue individualized prevention measures and reassessment.
 
 ## 8. Monitoring parameters
 Delirium screen results and trend; sedation and analgesia scores; pain; oxygen saturation; haemodynamics; temperature; hydration, bowel and bladder function; sleep; mobility; sensory aids in use; medicine changes; family presence.
@@ -109,7 +127,7 @@ Sudden confusion, drowsiness or agitation; fluctuating attention; hallucinations
 | Diagnosis of delirium, finding causes, medication review, sedative or antipsychotic use, antimicrobials | Prescriber decision (nurse reports and administers) |
 
 ## 12. Escalation criteria
-Escalate promptly for: a positive screen; agitation endangering lines, tubes or staff; sudden change with possible hypoxia, sepsis or stroke; suspected withdrawal; refusal of life-sustaining care.
+Escalate promptly for a positive screen, agitation endangering the patient or staff, suspected withdrawal or refusal of life-sustaining care. Activate emergency assessment for an acute change with suspected hypoxia, shock, stroke or other immediate threat; evaluate physiological causes before or alongside delirium screening. Quiet withdrawal and reduced activity may indicate hypoactive delirium or another acute problem. If the patient's arousal prevents valid testing, document the screen as not assessable rather than negative.
 SBAR — **S:** bed X, newly confused and pulling at his lines. **B:** day 4, post-laparotomy, positive delirium screen this morning, last analgesia [time], no sleep overnight. **A:** probable delirium; pain, infection and hypoxia not excluded. **R:** please review for causes and medicines; I am using reorientation and de-escalation and will repeat the screen.
 
 ## 13. Potential complications
@@ -119,7 +137,7 @@ Self-removal of tubes and lines, falls, aspiration, pressure injury, prolonged v
 Screen tool, result, time; behaviours observed; contributing factors found; interventions and response; escalation and orders; family information given; restraint or safety measures with reasons.
 
 ## 15. Practical bedside example
-At 06:00 a patient who was talking yesterday is quiet, not following requests and not eating. You screen with the unit tool (positive), check pain with a behavioural tool, oxygen saturation, temperature and bladder, move the clock and calendar into view, put hearing aids and glasses back on, introduce yourself and explain the situation calmly, then report with SBAR.
+At 06:00 a patient who was talking yesterday is quiet, not following requests and not eating. Assess the new change in responsiveness and physiological stability immediately, obtain urgent clinical help if indicated, and use the unit's delirium tool when the patient is assessable. Check pain using a suitable method, breathing, oxygenation, temperature and possible contributors. When safe, offer hearing aids, glasses, orientation and reassurance. Report the findings and change from baseline promptly.
 
 
 **Why the quiet presentation matters.** The change from yesterday is the clue. Withdrawal, slower responses and reduced eating can accompany hypoactive delirium. Ask staff or family what is usual for the patient and whether alertness has changed during the shift. Record when the change began, the name and result of the ICU screening tool, and possible contributors you found.
@@ -135,23 +153,23 @@ A 71-year-old man, day 3 after bowel surgery, is restless, tries to pull out his
 A. Record that the patient is "resting well" because he is not agitated and is not disturbing the other patients or staff.
 B. Wait to see whether the patient is back to normal after lunch before mentioning it to anyone on the team.
 C. Ask the family to stop visiting for the day so that he can sleep and recover without further stimulation.
-D. Screen with the unit delirium tool, look for causes (pain, hypoxia, infection, retention) and report the findings.
+D. Assess for acute deterioration, screen when assessable, investigate causes and report promptly.
 **Answer: D.**
-**Why correct:** Hypoactive delirium is often missed; recent change reported by family should prompt screening and a search for causes.
+**Why correct:** Hypoactive delirium is easily missed. Assess airway, breathing, circulation and urgent reversible causes before screening, particularly for sudden altered responsiveness; new neurological or physiological abnormalities require urgent escalation. NICE supports attention to recent changes reported by family.
 **Why not A:** Quietness can be a sign of hypoactive delirium, not rest.
 **Why not B:** Waiting delays recognition of a possibly treatable cause.
 **Why not C:** Family presence is a recommended prevention measure.
 
-**Q2 (application).** Which tools does NICE CG103 recommend for the *assessment of possible delirium* in a critical care unit, before an appropriately qualified clinician confirms the diagnosis?
+**Q2 (application).** An intubated ICU patient has fluctuating attention and can now respond to simple requests following a reduction in sedation. After assessment of immediate clinical threats, which tools does NICE CG103 recommend for assessing possible delirium in critical care before diagnostic confirmation?
 A. The 4AT tool alone, because it is quick, validated and used in all other hospital areas.
 B. CAM-ICU or the Intensive Care Delirium Screening Checklist.
 C. A clinical impression, because validated tools are not helpful in ventilated patients.
 D. A mini-mental state score done once at admission.
 **Answer: B.**
-**Why correct:** NICE CG103 recommendation 1.6.1 advises CAM-ICU or ICDSC instead of 4AT in critical care or post-anaesthesia recovery. These are assessment tools; the final delirium diagnosis is made by an appropriately qualified healthcare professional (1.6.2).
+**Why correct:** NICE CG103 recommends CAM-ICU or ICDSC in critical care and postoperative recovery rather than 4AT; a qualified clinician confirms the diagnosis. PADIS notes that arousal can influence assessment. Record an unassessable screen as such with the reason, not as a negative result, and reassess when appropriate.
 **Why not A:** The 4AT is advised outside critical care or the recovery room.
 **Why not C:** Validated ICU tools exist and are recommended.
-**Why not D:** A single cognitive score at admission does not detect fluctuating change.
+**Why not D:** A single admission cognitive score cannot track fluctuating attention or distinguish a newly unassessable patient from a negative delirium screen; repeat assessment when clinically appropriate.
 
 **Q3 (prioritization).** A patient with a positive delirium screen is pulling at a central line and an arterial line. Which action should come first?
 A. Make the lines safe, use calm de-escalation, call for help and report so that causes are reviewed.
@@ -159,7 +177,7 @@ B. Apply wrist restraints at once to prevent line removal, then decide on the ne
 C. Give a sedative from the ward stock to settle the patient first, then inform the medical team afterwards.
 D. Leave the patient alone so that he can calm down by himself, and check on him again in an hour.
 **Answer: A.**
-**Why correct:** NICE advises de-escalation first; safety of devices is protected while the team seeks causes and decides on any drugs or restraint under policy.
+**Why correct:** Stay with the patient, protect essential devices, assess for acute physiological causes and obtain help. Use calm verbal and nonverbal de-escalation if safe. Restraint or urgent drug treatment, if required to prevent immediate harm, follows the authorized policy and monitoring plan; a positive screen does not itself justify either. The 2025 PADIS update does not establish routine antipsychotic treatment for ICU delirium.
 **Why not B:** Restraints are a last resort under policy and can worsen distress.
 **Why not C:** Giving a drug without an authorized order or emergency protocol is unsafe and may obscure a reversible cause; urgent clinical review is required.
 **Why not D:** Leaving a patient who is pulling lines unattended is unsafe.
@@ -175,16 +193,16 @@ D. Reviewing and changing the patient's medicines to reduce delirium risk.
 **Why not B:** Independent nursing measure.
 **Why not C:** Independent nursing measure.
 
-**Q5 (understanding).** A nurse is teaching a student about hypoactive delirium in a quiet, withdrawn patient. Which statement is correct?
-A. It is harmless because the patient is calm and quiet, so no further assessment or action is needed from staff.
-B. It is often missed, so look for withdrawal, slow responses, reduced movement, poor concentration and reduced appetite.
-C. It affects people who already have dementia, so it can be ruled out in anyone without that diagnosis.
-D. It needs sedation to prevent harm, because untreated delirium becomes dangerous within a few hours.
+**Q5 (judgment).** An older ICU patient with dementia becomes newly withdrawn after an infection. Attention fluctuates, and the family says the patient normally participates in conversation. The nurse has already initiated assessment for immediate threats. What should happen next?
+A. Attribute the withdrawal to dementia and use the previous cognitive assessment as the current baseline.
+B. Assess for delirium using an ICU-appropriate tool when arousal permits, and report the new change.
+C. Request preventive antipsychotic medication based on age and dementia before completing the assessment.
+D. Wait for obvious agitation before screening, because a quiet presentation is less informative.
 **Answer: B.**
-**Why correct:** NICE advises particular vigilance because hypoactive delirium, in which the patient is quiet and withdrawn, is often missed. It is not harmless, is not limited to dementia and does not call for automatic sedation.
-**Why not A:** It carries the same risks of poor outcomes.
-**Why not C:** Delirium can occur in anyone who is severely ill.
-**Why not D:** Sedation is not an automatic response; causes are managed first.
+**Why correct:** A new fluctuating change from the person's baseline raises concern for delirium superimposed on dementia. Hypoactive presentations can be missed. Use CAM-ICU or ICDSC when the patient is assessable, document findings and baseline information, and seek clinical assessment for reversible causes. Continue individualized nonpharmacological support. A positive screen does not itself establish a diagnosis or a drug indication.
+**Why not A:** Pre-existing cognitive impairment does not exclude an acute change; family observations can clarify the baseline.
+**Why not C:** The new change requires assessment rather than preventive medication; the older-adult SCCM guideline conditionally advises against routine antipsychotic prevention.
+**Why not D:** Hypoactive delirium can present with reduced activity and attention without agitation; delaying assessment may miss a treatable cause.
 
 **Q6 (monitoring).** A ventilated patient is agitated and the nurse suspects pain. What is the best step?
 A. Assess non-verbal pain signs with the unit tool, use the comfort measures in policy, and report so analgesia is reviewed.
@@ -192,13 +210,18 @@ B. Assume the agitation is delirium and ask for an antipsychotic straight away, 
 C. Increase the sedation yourself to reduce the agitation quickly, since the patient cannot report pain in words.
 D. Wait until the patient can tell you whether he has pain, because behaviour alone is not a reliable guide.
 **Answer: A.**
-**Why correct:** NICE advises assessing non-verbal signs of pain, including in ventilated patients, and treating it.
+**Why correct:** Ask for self-report when the patient can communicate, including nonverbal communication. If reliable self-report is not possible, use a validated behavioral pain tool under unit policy, assess other causes and report the findings for analgesia review; vital signs alone do not quantify pain.
 **Why not B:** Untreated pain is a common trigger and must be assessed first.
 **Why not C:** Sedation changes need an order or protocol.
 **Why not D:** A ventilated patient may be unable to speak; waiting leaves pain untreated.
 
 ## 18. References
 - NICE. Delirium: prevention, diagnosis and management in hospital and long-term care (CG103). Published 28 July 2010; last updated 18 January 2023. https://www.nice.org.uk/guidance/cg103 (Recommendations chapter; accessed 2026-11-14)
+
+- SCCM. Guidelines on family-centered care for adult ICUs: 2024 (published 2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-on-family-centered-care-for-adult-icus-2024 (selected official recommendations checked 2026-11-24; full publication not appraised; cite-only).
+- Latour JM et al. ESICM consensus on human-centred partnership in the ICU (26 October 2026). https://doi.org/10.1007/s00134-026-08626-9 (selected sections 1.2, 1.3 and 5.2 checked 2026-11-24; CC BY-NC 4.0; commercial reuse not cleared).
+
+- Ferrante LE et al. SCCM Guidelines on Caring for Older Adults in the ICU (2026). https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-guidelines-on-caring-for-older-adults-in-the-icu (official recommendation page and published article introduction checked 2026-11-24; complete evidence appraisal and commercial rights outstanding).
 
 ## 19. Local protocol note
 Screening tool, frequency, restraint policy, sedation and antipsychotic protocols follow the institution's policies.

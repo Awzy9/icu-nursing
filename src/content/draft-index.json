@@ -11,6 +11,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-IDSA-AMR-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-NG253",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -29,7 +34,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c0a44dc1ea78bc8b"
+   "hash": "443844b6468b546c"
   },
   {
    "key": "D06-T04",
@@ -44,12 +49,22 @@
      "id": "S-CDC-IC",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-CDC-ISOLATION-2007",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-WHO-HH-SUMMARY-2013",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "7d862bbb8048f0c4"
+   "required_sources": 1,
+   "hash": "93d75a7833721dde"
   },
   {
    "key": "D06-T05",
@@ -69,12 +84,17 @@
      "id": "S-SHEA-CLABSI-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-CVC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "8fd8415b9bc24aa0"
+   "hash": "6b3825d9b1d740ef"
   },
   {
    "key": "D07-T04",
@@ -89,12 +109,37 @@
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-INTL-PI-ASSESSMENT-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-CLASSIFICATION-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-DRPI-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-HEELS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-REPOS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "1c85c65abb7bea74"
+   "hash": "cfb77dc9b1b340d5"
   },
   {
    "key": "D09-T01",
@@ -106,6 +151,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AHRQ-HANDOFF",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -114,7 +164,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "93f27d07d6872a0a"
+   "hash": "8d792b9efddbb196"
   },
   {
    "key": "D09-T02",
@@ -126,6 +176,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ISMP-BEST-PRACTICES-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NMC-CODE",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -133,13 +188,23 @@
     {
      "id": "S-OPENRN-FUND",
      "licence_class": "GREEN",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SCCM-EOL-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-WHO-INCIDENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c03d4846a728bf97"
+   "hash": "bac3da3d4fecea28"
   },
   {
    "key": "D01-T03",
@@ -156,9 +221,24 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-NIRS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
+     "id": "S-BTS-OXYGEN-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NICE-CG103",
@@ -169,12 +249,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKROX-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "ac91729e4fbd71e5"
+   "required_sources": 0,
+   "hash": "1c9b556006ba4c2b"
   },
   {
    "key": "D01-T07",
@@ -191,15 +276,30 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-ARDS-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-ARDS-2023",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SAUDI-MV-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SCCM-NMBA-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "e941fc4bea860af2"
+   "hash": "706068ed2dd7f74e"
   },
   {
    "key": "D01-T11",
@@ -219,7 +319,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "6b4463181e484613"
+   "hash": "924edfcb05896146"
   },
   {
    "key": "D02-T08",
@@ -231,6 +331,21 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ESC-AHF-EMERGENCY-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-CS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-HF-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -239,6 +354,16 @@
      "id": "S-ESICM-SHOCK-2025",
      "licence_class": "RED",
      "verified": "2026-11-16"
+    },
+    {
+     "id": "S-OPENRN-HA",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SCAI-SHOCK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SSC-2021",
@@ -253,8 +378,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "07bc5756587b6620"
+   "required_sources": 0,
+   "hash": "e348d6f4877dec21"
   },
   {
    "key": "D02-T14",
@@ -284,7 +409,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "c9c1a6b0db3c8d0d"
+   "hash": "91f01a9f14838c69"
   },
   {
    "key": "D02-T15",
@@ -304,7 +429,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "330d1533b9ae3039"
+   "hash": "642fcb96fe217c73"
   },
   {
    "key": "D03-T10",
@@ -316,20 +441,40 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG103",
      "licence_class": "RED",
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SCCM-FAMILY-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SCCM-OLDER-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "cbd568a021b5bac8"
+   "hash": "1a2752e223759afe"
   },
   {
    "key": "D04-T02",
@@ -344,12 +489,27 @@
      "id": "S-NICE-NG148",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-AKI-DETECTION",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "b6b179412b7e37fc"
+   "required_sources": 1,
+   "hash": "51ef379a9689f958"
   },
   {
    "key": "D06-T07",
@@ -371,15 +531,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SAUDI-MV-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SHEA-VAP-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SIAARTI-VAP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "398de61876c8cabb"
+   "hash": "854723a39b4e0523"
   },
   {
    "key": "D07-T06",
@@ -396,9 +566,19 @@
      "verified": "2026-11-23"
     },
     {
+     "id": "S-ASPEN",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ESICM-EEN-2017",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ESPEN-ICU-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NHSE-NGT-2016",
@@ -418,8 +598,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "dc6490ad9774b457"
+   "required_sources": 0,
+   "hash": "6052574dc7d148da"
   },
   {
    "key": "D01-T12",
@@ -446,15 +626,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-PUMA-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SHEA-VAP-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SIAARTI-VAP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "4c57b233e37e5726"
+   "hash": "54e38fa4266bfe02"
   },
   {
    "key": "D03-T01",
@@ -466,15 +656,25 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AHA-AIS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-GCS-OFFICIAL",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NICE-NG232",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "7e2184fe49ab3bd5"
+   "hash": "786113dbc54a452b"
   },
   {
    "key": "D04-T03",
@@ -485,6 +685,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
     {
      "id": "S-NICE-CG174",
      "licence_class": "RED",
@@ -499,7 +704,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "aa3d84ca66797a06"
+   "hash": "121dc753e9fbab9f"
   },
   {
    "key": "D01-T19",
@@ -516,6 +721,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BTS-OXYGEN-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -529,12 +739,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "556414f2c2d43919"
+   "required_sources": 1,
+   "hash": "6cb07233a05e5055"
   },
   {
    "key": "D02-T04",
@@ -545,6 +760,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
@@ -566,6 +786,16 @@
      "verified": "2026-11-16"
     },
     {
+     "id": "S-MHRA-ARTERIAL-GLUCOSE",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NSW-ALI",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SSC-2021",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -579,7 +809,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "0924f85aa1aec696"
+   "hash": "b7cc056044d5acbc"
   },
   {
    "key": "D03-T09",
@@ -591,15 +821,25 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-SCCM-NMBA-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "240786dbaa1afc60"
+   "hash": "931b026ff71c98e2"
   },
   {
    "key": "D07-T01",
@@ -611,6 +851,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AHA-INHOSP-STROKE-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -621,6 +866,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SCCM-OLDER-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -629,7 +884,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "0c4e6df664199524"
+   "hash": "ff219a48b7a9363e"
   },
   {
    "key": "D07-T03",
@@ -646,9 +901,14 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-HUMAN-PARTNERSHIP-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND",
      "licence_class": "GREEN",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SCCM-PADIS",
@@ -659,7 +919,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "b8b1236227523b62"
+   "hash": "e77302a88f20ba88"
   },
   {
    "key": "D09-T03",
@@ -670,6 +930,21 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-AACN-STAFFING-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-DOUBLE-CHECK-REVIEW-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESICM-EOL-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-ICN-DEF",
      "licence_class": "RED",
@@ -686,15 +961,25 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-OPENRN-FUND",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND-CH1",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-EOL-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "38f3951a25f65fda"
+   "required_sources": 0,
+   "hash": "433d95cbe1b5dfdd"
   },
   {
    "key": "D02-T09",
@@ -719,12 +1004,17 @@
      "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SWEDEN-PICS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 2,
-   "hash": "ef2d70c13a895f54"
+   "hash": "8affae6cf8744d6e"
   },
   {
    "key": "D02-T12",
@@ -735,6 +1025,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-AHA-POSTARREST-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
@@ -777,14 +1072,14 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "e8c6eb36c8997ec1"
+   "required_sources": 0,
+   "hash": "016a5587ef317d36"
   },
   {
    "key": "D05-T16",
@@ -796,20 +1091,35 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-DOUBLE-CHECK-REVIEW-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ISMP-BEST-PRACTICES-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ISMP-HA",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-PHARM",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "ab5b4fe6fea020be"
+   "required_sources": 0,
+   "hash": "a543f2f0c810ac0e"
   },
   {
    "key": "D08-T03",
@@ -821,14 +1131,44 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-AABB-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-AABB-AMI-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AABB-COI-2024",
      "licence_class": "RED",
      "verified": "2026-11-14"
     },
     {
+     "id": "S-AABB-HBV-LABEL-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-BSH-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-CBS-ATR-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-COI-2024",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-LIFEBLOOD-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NICE-NG24",
@@ -839,12 +1179,17 @@
      "id": "S-OPENRN-ADV-CH3",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-OPENRN-HA",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 3,
-   "hash": "4efbf8e0a6b91b08"
+   "required_sources": 2,
+   "hash": "25f82abf1842eaac"
   },
   {
    "key": "D01-T17",
@@ -876,6 +1221,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-SAUDI-MV-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -884,7 +1234,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "0416333470df778a"
+   "hash": "d76e5d8b6e96007d"
   },
   {
    "key": "D02-T02",
@@ -906,6 +1256,21 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ERC-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ERC-BLS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -918,8 +1283,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "61beb6842992c99e"
+   "required_sources": 0,
+   "hash": "5e6ecb84f9e6078b"
   },
   {
    "key": "D04-T06",
@@ -932,8 +1297,13 @@
    "sources": [
     {
      "id": "S-NHS-SPS-HYPO-2024",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NICE-NG148",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     },
     {
      "id": "S-OPENRN-FUND-CH15",
@@ -953,8 +1323,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "3bb722c8fb8daa67"
+   "required_sources": 1,
+   "hash": "8d56612d25815a3d"
   },
   {
    "key": "D04-T08",
@@ -986,6 +1356,11 @@
      "verified": "2026-11-21"
     },
     {
+     "id": "S-NICE-NG148",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -993,8 +1368,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 2,
-   "hash": "7ebc115f22524890"
+   "required_sources": 1,
+   "hash": "fcb10ba9fe2ab577"
   },
   {
    "key": "D04-T09",
@@ -1008,18 +1383,33 @@
     {
      "id": "N-LHSC-CRRT-PRINCIPLES",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ASH-HIT-2018",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCA-DELPHI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "02924562438aceb6"
+   "hash": "34a7b9a5cdb3f984"
   },
   {
    "key": "D05-T01",
@@ -1030,6 +1420,16 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "L-DEXMEDETOMIDINE",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    },
+    {
+     "id": "L-LORAZEPAM",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    },
     {
      "id": "S-FDA-LABELS-2026",
      "licence_class": "YELLOW",
@@ -1046,6 +1446,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-OPENRN-PHARM",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-PHARM-CH",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -1058,8 +1463,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "345d53b1c877576b"
+   "required_sources": 0,
+   "hash": "65bb4bbed402e40c"
   },
   {
    "key": "D05-T03",
@@ -1070,6 +1475,11 @@
    "spec_level": null,
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "L-DOBUTAMINE",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-15"
+    },
     {
      "id": "S-FDA-LABELS-2026",
      "licence_class": "YELLOW",
@@ -1091,6 +1501,11 @@
      "verified": "2026-11-21"
     },
     {
+     "id": "S-OPENRN-PHARM",
+     "licence_class": "GREEN",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-PHARM-CH",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -1108,8 +1523,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "ca155dbdb3002273"
+   "required_sources": 0,
+   "hash": "9b5f6e4ed480b37f"
   },
   {
    "key": "D01-T06",
@@ -1134,7 +1549,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 1,
-   "hash": "579ad3e68e03833d"
+   "hash": "789bc47331dbf90c"
   },
   {
    "key": "D01-T09",
@@ -1164,12 +1579,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-JC-ALARM",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "1c86af5c443095be"
+   "required_sources": 0,
+   "hash": "38be0ee258ff3858"
   },
   {
    "key": "D03-T03",
@@ -1194,12 +1614,17 @@
      "id": "S-BTF-TBI-4TH",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NCS-ICP",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "31491177a655bc8b"
+   "required_sources": 0,
+   "hash": "4b54ee4a627c3b70"
   },
   {
    "key": "D08-T02",
@@ -1211,6 +1636,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ACC-OAC-BLEED-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ARUP-ANTICOAG",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -1219,6 +1649,11 @@
      "id": "S-ARUP-DIC",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-BSH-COAG",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-BSH-HIT-2023",
@@ -1243,8 +1678,8 @@
    ],
    "issues": [],
    "gaps": 0,
-   "required_sources": 1,
-   "hash": "2b19668df19f3299"
+   "required_sources": 0,
+   "hash": "3733f0786a2a3136"
   },
   {
    "key": "XQ-01",
@@ -1257,14 +1692,19 @@
    "sources": [
     {
      "id": "N-CDC-CAUTI-2009",
-     "licence_class": "UNVERIFIED",
-     "verified": null
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SHEA-CAUTI-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "527b1104dc00d2dd"
+   "hash": "55d1dbb2cdf050c3"
   },
   {
    "key": "XQ-02",
@@ -1279,12 +1719,17 @@
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-PIVC-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "dbd2c737eca6d180"
+   "hash": "1be1ef8aa3ce9480"
   },
   {
    "key": "XQ-03",
@@ -1304,12 +1749,17 @@
      "id": "S-SHEA-CLABSI-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-CVC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "f003b7ae617c98ab"
+   "hash": "fc95bd0e80605611"
   },
   {
    "key": "XQ-04",
@@ -1323,13 +1773,13 @@
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "cc6bd8766ab2ab52"
+   "hash": "601879b7b93c8df6"
   },
   {
    "key": "XQ-05",
@@ -1349,7 +1799,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "7b38e305af5c67d6"
+   "hash": "23125313a3964f5a"
   },
   {
    "key": "XQ-06",
@@ -1363,13 +1813,23 @@
     {
      "id": "N-HODGSON-2014",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SCCM-PADIS",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-TEAM-RCT-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "431736982b75764f"
+   "hash": "e68e95f22c5fc2b1"
   },
   {
    "key": "XQ-07",
@@ -1382,19 +1842,29 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-BSH-HIT-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-21"
     },
     {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCA-DELPHI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "77f553e2d89b550b"
+   "hash": "a439a07c8043cf74"
   },
   {
    "key": "XQ-08",
@@ -1431,15 +1901,25 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "N-RCUK-ANAPH-2021",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ADRENALIN-IM-2025",
      "licence_class": "YELLOW",
      "verified": "2026-11-21"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "93037d4066ebf613"
+   "hash": "cac3da69c2f43c53"
   },
   {
    "key": "XQ-09",
@@ -1474,12 +1954,17 @@
      "id": "L-PROPOFOL",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-SCCM-PADIS",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "0eb325af8267f358"
+   "hash": "8e16dd954709eb9e"
   },
   {
    "key": "XQ-10",
@@ -1496,6 +1981,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG32",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -1504,7 +1994,7 @@
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "544bd0d6baeb8da9"
+   "hash": "2c29989d119e1dd8"
   },
   {
    "key": "XQ-11",
@@ -1517,8 +2007,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "N-BTS-PCS-2023",
@@ -1528,12 +2018,12 @@
     {
      "id": "N-HODGSON-2014",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-CDC-BSI-2011",
@@ -1541,15 +2031,30 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NSW-ALI",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-TEAM-RCT-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 0,
    "required_sources": 0,
-   "hash": "4897e1068def0a3f"
+   "hash": "80a3f0f403cb91ee"
   },
   {
    "key": "SK-01",
@@ -1566,6 +2071,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -1579,6 +2089,11 @@
      "id": "S-ESICM-SHOCK-2014",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
     },
     {
      "id": "S-NCSBN-DELEG-2019",
@@ -1599,7 +2114,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "fd437bd0dff13dff"
+   "hash": "82224278aa0ed6f8"
   },
   {
    "key": "SK-02",
@@ -1634,12 +2149,17 @@
      "id": "S-SHEA-CLABSI-2022",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-WHO-CVC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "321f0f5a82cf63d6"
+   "hash": "16f5433d6d7be7e8"
   },
   {
    "key": "SK-03",
@@ -1664,12 +2184,17 @@
      "id": "S-PVP-META-2026",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-WHO-PIVC-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "1deee2408f782e9c"
+   "hash": "ac8c34519872ec20"
   },
   {
    "key": "SK-04",
@@ -1709,7 +2234,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "3d1492ea429880f2"
+   "hash": "20cc7d626ae9d24e"
   },
   {
    "key": "SK-05",
@@ -1723,33 +2248,38 @@
     {
      "id": "N-ACI-TRACH",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-NCBI-OPENRN-TRACH",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
-     "id": "N-NHSGGC-TRACH-2022",
+     "id": "N-NHSGGC-TRACH-2025",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AARC-TRACH",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-NTSP-STOMA",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "47f19c3d3c22703d"
+   "hash": "6276f388e3ea8ed8"
   },
   {
    "key": "SK-06",
@@ -1761,9 +2291,9 @@
    "clinically_reviewed": false,
    "sources": [
     {
-     "id": "N-NHSGGC-TRACH-2022",
+     "id": "N-NHSGGC-TRACH-2025",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AARC-SUCT",
@@ -1779,7 +2309,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "73962534347af5d7"
+   "hash": "e9f716999b8dfb8a"
   },
   {
    "key": "SK-07",
@@ -1819,7 +2349,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "579ef0d4e726c15e"
+   "hash": "ec1f7cd3c699e485"
   },
   {
    "key": "SK-08",
@@ -1842,13 +2372,18 @@
     },
     {
      "id": "S-BTS-O2-2017",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-16"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-OPENRN-FUND-CH8",
@@ -1864,7 +2399,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "31015d36c5825084"
+   "hash": "02fe1ac8ac61fe8a"
   },
   {
    "key": "SK-09",
@@ -1883,7 +2418,7 @@
     {
      "id": "S-BSH-ATR",
      "licence_class": "RED",
-     "verified": "2026-11-15"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-FDA-COI-2024",
@@ -1893,7 +2428,12 @@
     {
      "id": "S-ISBT-ATR-EDU",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-LIFEBLOOD-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NICE-NG24",
@@ -1909,7 +2449,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "78af25c7efb5013a"
+   "hash": "53e2a9daac0a8c08"
   },
   {
    "key": "SK-10",
@@ -1923,7 +2463,7 @@
     {
      "id": "S-ASPEN",
      "licence_class": "RED",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ESICM-EEN-2017",
@@ -1949,7 +2489,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "a70be00db081bdff"
+   "hash": "6abafdee8d0b6ac5"
   },
   {
    "key": "SK-11",
@@ -1966,6 +2506,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NICE-CG32",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -1979,7 +2524,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e4d095ccb1835a3d"
+   "hash": "344c8ac29d698892"
   },
   {
    "key": "SK-12",
@@ -1992,14 +2537,29 @@
    "sources": [
     {
      "id": "N-CDC-CAUTI-2009",
-     "licence_class": "UNVERIFIED",
-     "verified": null
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-CDC-URINE-STEWARDSHIP-2026",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-IDSA-CUTI-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SHEA-CAUTI-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a9dffd613bd0c5f4"
+   "hash": "4aa3c389fac24266"
   },
   {
    "key": "SK-13",
@@ -2018,7 +2578,7 @@
     {
      "id": "N-NCBI-OPENRN-CHEST",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-OPENRN-ADV-PDF",
@@ -2029,7 +2589,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "3172dc65a86599fb"
+   "hash": "b95f234a2ff0f2e8"
   },
   {
    "key": "SK-14",
@@ -2046,6 +2606,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-INTL-PI-HEELS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NPIAP-2019",
      "licence_class": "RED",
      "verified": "2026-11-14"
@@ -2054,7 +2619,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "55754ba9240ce567"
+   "hash": "a037e05bd1c735fc"
   },
   {
    "key": "SK-15",
@@ -2074,12 +2639,17 @@
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-INTL-PI-REPOS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
-   "gaps": 2,
+   "gaps": 3,
    "required_sources": 0,
-   "hash": "eafa9011c79b1df1"
+   "hash": "cedd83be6277ea46"
   },
   {
    "key": "SK-16",
@@ -2093,7 +2663,7 @@
     {
      "id": "N-HODGSON-2014",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SCCM-ABCDEF",
@@ -2104,12 +2674,17 @@
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-TEAM-RCT-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "306d7dd103e24eb0"
+   "hash": "ae8a787df07013a8"
   },
   {
    "key": "SK-17",
@@ -2122,8 +2697,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "N-BAXTER-PRISMAFLEX",
@@ -2133,7 +2708,7 @@
     {
      "id": "N-LHSC-CRRT-PRINCIPLES",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-CHS-CRRT",
@@ -2144,12 +2719,22 @@
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCA-DELPHI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "6cf5423be5681f6d"
+   "hash": "1e733d97c7e7cc83"
   },
   {
    "key": "SK-18",
@@ -2171,6 +2756,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ECG-SUMMARY-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
      "verified": "2026-11-14"
@@ -2179,7 +2769,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "fa201a69a332958c"
+   "hash": "8248cd8d6797add4"
   },
   {
    "key": "SK-19",
@@ -2204,7 +2794,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9fd819daa370326c"
+   "hash": "9065f085bcb838c2"
   },
   {
    "key": "SK-20",
@@ -2218,13 +2808,13 @@
     {
      "id": "N-ICS-TRANSFER-2026",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "50c16e8e0b1cae78"
+   "hash": "569c7f698c9592db"
   },
   {
    "key": "SK-21",
@@ -2247,19 +2837,19 @@
     },
     {
      "id": "S-CDC-ISOLATION-2007",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-14"
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-WHO-HH-2009",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-14"
+     "licence_class": "RED",
+     "verified": null
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "247f97c6977f0b7c"
+   "hash": "db3623d820438776"
   },
   {
    "key": "SK-22",
@@ -2271,9 +2861,19 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-FDA-MISCONNECTIONS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ISMP-HA",
@@ -2284,7 +2884,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "2839ef80ee4aec7b"
+   "hash": "836c9a544892b3d6"
   },
   {
    "key": "SK-23",
@@ -2299,12 +2899,17 @@
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "3e40f1e259fc2bc0"
+   "hash": "23711105eada7151"
   },
   {
    "key": "SK-24",
@@ -2321,6 +2926,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NICE-NG232",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-HA-CVA",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -2329,7 +2939,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "483937a069b59b9a"
+   "hash": "0aeb7e4f6017d148"
   },
   {
    "key": "SK-25",
@@ -2348,7 +2958,7 @@
     {
      "id": "S-OPENRN-FUND",
      "licence_class": "GREEN",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-SCCM-PADIS",
@@ -2359,7 +2969,7 @@
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "51e10109ed6ebd51"
+   "hash": "6d307f673bf584c0"
   },
   {
    "key": "MD-01",
@@ -2391,15 +3001,20 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "9047d3b42304d859"
+   "hash": "1ecb4c1bc878d824"
   },
   {
    "key": "MD-02",
@@ -2414,6 +3029,11 @@
      "id": "L-EPINEPHRINE",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-ADRENALIN-IM-2025",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-21"
     },
     {
      "id": "S-AHRQ-TS",
@@ -2431,15 +3051,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-RCUK-SPECIAL-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "0f5325f961c4b748"
+   "hash": "0204f2c5b6a07e81"
   },
   {
    "key": "MD-03",
@@ -2469,12 +3099,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "334eec5ae4f995e0"
+   "hash": "a62fe68794e3b800"
   },
   {
    "key": "MD-04",
@@ -2496,6 +3131,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-DOREMI-2021",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2504,12 +3144,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 2,
    "required_sources": 0,
-   "hash": "206c60e2427de888"
+   "hash": "d2bb24c64a689945"
   },
   {
    "key": "MD-05",
@@ -2531,6 +3176,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-DOREMI-2021",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2539,12 +3189,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a224306776f33d77"
+   "hash": "a850ac9b86a97979"
   },
   {
    "key": "MD-06",
@@ -2579,7 +3234,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "49e720bb68a52f70"
+   "hash": "7caee18059bcdb61"
   },
   {
    "key": "MD-07",
@@ -2614,7 +3269,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "0a62eacb7cc32821"
+   "hash": "23d0fb5eb316819e"
   },
   {
    "key": "MD-08",
@@ -2649,7 +3304,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e0493fb20f7e4a8a"
+   "hash": "22c577c889aebbb4"
   },
   {
    "key": "MD-09",
@@ -2684,7 +3339,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "99c02058d9407780"
+   "hash": "2e1e83295aa8cf98"
   },
   {
    "key": "MD-10",
@@ -2719,7 +3374,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "bcec4f56f915f50d"
+   "hash": "19d5405bb2a1a92b"
   },
   {
    "key": "MD-11",
@@ -2754,7 +3409,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d47d20caed2bbee0"
+   "hash": "db7c1bf5f4a4e9fc"
   },
   {
    "key": "MD-12",
@@ -2789,7 +3444,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "f1fd1c8d41f43523"
+   "hash": "564b68ff67a26700"
   },
   {
    "key": "MD-13",
@@ -2824,7 +3479,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "55115da32b38d60d"
+   "hash": "f1b0926b1a9042c8"
   },
   {
    "key": "MD-14",
@@ -2846,6 +3501,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ASH-HIT-2018",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -2859,7 +3519,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "be82b78f2038c61e"
+   "hash": "edc0f4d1f3d96b56"
   },
   {
    "key": "MD-15",
@@ -2876,14 +3536,9 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-JBDS-HYPO-2020",
-     "licence_class": "YELLOW",
-     "verified": null
-    },
-    {
-     "id": "N-UKKA-HK-2026-07",
-     "licence_class": "YELLOW",
-     "verified": null
+     "id": "S-ADA-HOSP-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
     },
     {
      "id": "S-AHRQ-TS",
@@ -2896,15 +3551,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-JBDS-HYPO-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "d22fb293309a1a14"
+   "hash": "3892fce6d4780c09"
   },
   {
    "key": "MD-16",
@@ -2939,7 +3604,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c094f9b1c1e91fdf"
+   "hash": "9c3764efe902ed63"
   },
   {
    "key": "MD-17",
@@ -2974,7 +3639,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "017e1ae74e50c7e4"
+   "hash": "bfa2f9379e6251df"
   },
   {
    "key": "MD-18",
@@ -2991,6 +3656,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3001,6 +3671,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-NHS-SPS-MG",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -3009,7 +3684,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 0,
-   "hash": "14f637bbf329ffc0"
+   "hash": "4d82f4179025bd73"
   },
   {
    "key": "MD-19",
@@ -3042,8 +3717,13 @@
     },
     {
      "id": "S-NHS-SPS-HYPO-2024",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NHS-SPS-MG",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-RCP-NEWS2",
@@ -3054,7 +3734,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "2146fe3f171d604f"
+   "hash": "368f059b8f899c82"
   },
   {
    "key": "MD-20",
@@ -3084,12 +3764,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 7,
    "required_sources": 0,
-   "hash": "38104944d9005b92"
+   "hash": "707a20d0e3717d22"
   },
   {
    "key": "MD-21",
@@ -3106,9 +3791,24 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-BICAR-IPD-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-BICARICU2-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-FDA-PUMP",
@@ -3119,12 +3819,22 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-UKKA-HK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "a4ba19a2de337b4b"
+   "hash": "38acc228a680b606"
   },
   {
    "key": "MD-22",
@@ -3159,7 +3869,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "7c31e6611cd2b159"
+   "hash": "e83cfee5d9f132b1"
   },
   {
    "key": "MD-23",
@@ -3194,7 +3904,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "0b89d8ff86627997"
+   "hash": "e4f1646ded8eae10"
   },
   {
    "key": "MD-24",
@@ -3229,7 +3939,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "1480e223b7142242"
+   "hash": "3793cc1ea874be52"
   },
   {
    "key": "MD-25",
@@ -3264,7 +3974,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "b8716e85b8f7212a"
+   "hash": "c18f198bb876b94f"
   },
   {
    "key": "MD-26",
@@ -3299,7 +4009,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "2796361f77407f85"
+   "hash": "774d8c61fde02add"
   },
   {
    "key": "MD-27",
@@ -3334,7 +4044,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "c3d6a8506ed5f558"
+   "hash": "e88faa252ee61cbe"
   },
   {
    "key": "MD-28",
@@ -3369,7 +4079,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "1a0add9b9c2b5888"
+   "hash": "afd14ac4d9bb4f2a"
   },
   {
    "key": "MD-29",
@@ -3404,7 +4114,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "a98d00cf86ee990a"
+   "hash": "a241140698290cf7"
   },
   {
    "key": "MD-30",
@@ -3436,15 +4146,20 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "b8c4b2536436fc0e"
+   "hash": "8be69d0b96bc81d1"
   },
   {
    "key": "MD-31",
@@ -3477,14 +4192,14 @@
     },
     {
      "id": "S-UIC-EXTRA-2026",
-     "licence_class": "UNVERIFIED",
-     "verified": "2026-11-23"
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "6a0328e1f6c7bef2"
+   "hash": "8b9a87656ce18d85"
   },
   {
    "key": "MD-32",
@@ -3519,7 +4234,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "08e43fff08a72f61"
+   "hash": "c6d8279148b12609"
   },
   {
    "key": "MD-33",
@@ -3554,7 +4269,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "644cf89e9f19f7a0"
+   "hash": "b4a88d8b7e2ae2eb"
   },
   {
    "key": "MD-34",
@@ -3589,7 +4304,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "dd12905bf67a848d"
+   "hash": "70107ac68dc0c8cc"
   },
   {
    "key": "MD-35",
@@ -3624,7 +4339,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "65fe7bf21a150ae7"
+   "hash": "824f6a9cb3be6b50"
   },
   {
    "key": "MD-36",
@@ -3659,7 +4374,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "13f7263cb14b8b09"
+   "hash": "1bd04c9e6eba8e4c"
   },
   {
    "key": "MD-37",
@@ -3694,7 +4409,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "8e07b5759626728d"
+   "hash": "606b070618e32029"
   },
   {
    "key": "MD-38",
@@ -3729,7 +4444,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "0cdf088ff840c64c"
+   "hash": "2912899f9d3b1abf"
   },
   {
    "key": "MD-39",
@@ -3764,7 +4479,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "dc61a15a0acc570c"
+   "hash": "f45fe08b8e29db1d"
   },
   {
    "key": "MD-40",
@@ -3799,7 +4514,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "4d392801923ed321"
+   "hash": "8e95453b503ffc48"
   },
   {
    "key": "MD-41",
@@ -3834,7 +4549,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "5427b454eb7400bf"
+   "hash": "bc0a8d06d54504ea"
   },
   {
    "key": "MD-42",
@@ -3869,7 +4584,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "e003607d1405cc46"
+   "hash": "e507ee3904fc62f1"
   },
   {
    "key": "MD-43",
@@ -3904,7 +4619,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "dce655a8c40ba2db"
+   "hash": "6d8476dcf890b330"
   },
   {
    "key": "MD-44",
@@ -3939,7 +4654,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 0,
-   "hash": "ce5701165b4ba323"
+   "hash": "12fde6512d3b819a"
   },
   {
    "key": "MD-45",
@@ -3974,7 +4689,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "4b32cf393470fa41"
+   "hash": "3c8c92494bc0c600"
   },
   {
    "key": "MD-46",
@@ -4009,7 +4724,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "4165b90d2d5a3ad4"
+   "hash": "79f4a4152f157eb2"
   },
   {
    "key": "MD-47",
@@ -4044,7 +4759,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "fa3a74678d759ccb"
+   "hash": "c036281910e6bc4a"
   },
   {
    "key": "MD-48",
@@ -4079,7 +4794,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 0,
-   "hash": "069356f2262fceca"
+   "hash": "5372bc7dffed5167"
   },
   {
    "key": "MD-49",
@@ -4114,7 +4829,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "896daf0d4c9c1b09"
+   "hash": "f18c0f6847af1f12"
   },
   {
    "key": "MD-50",
@@ -4149,7 +4864,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 0,
-   "hash": "3eec1ecc5af20e9e"
+   "hash": "50a0ddae78b8c075"
   },
   {
    "key": "SC-01",
@@ -4179,12 +4894,17 @@
      "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-EXEC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 6,
    "required_sources": 4,
-   "hash": "8414693a706c785e"
+   "hash": "10b3d28e92fe7f00"
   },
   {
    "key": "SC-02",
@@ -4211,9 +4931,29 @@
      "verified": "2026-11-21"
     },
     {
+     "id": "S-ACC-CS-JACC-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ESC-AHF-EMERGENCY-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-CS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ESC-HF-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ESICM-SHOCK-2014",
@@ -4224,12 +4964,17 @@
      "id": "S-ESICM-SHOCK-2025",
      "licence_class": "RED",
      "verified": "2026-11-16"
+    },
+    {
+     "id": "S-SCAI-SHOCK-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
-   "gaps": 5,
+   "gaps": 7,
    "required_sources": 2,
-   "hash": "e1223851852fa6ec"
+   "hash": "b4d97580654f56cd"
   },
   {
    "key": "SC-03",
@@ -4251,15 +4996,35 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ATS-NIRS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-23"
+    },
+    {
+     "id": "S-BTS-O2-2017",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
-   "required_sources": 3,
-   "hash": "0df80cfa0a77bf8f"
+   "required_sources": 2,
+   "hash": "fb5ebe5ab58991af"
   },
   {
    "key": "SC-04",
@@ -4270,6 +5035,11 @@
    "spec_level": "decision_graph",
    "clinically_reviewed": false,
    "sources": [
+    {
+     "id": "S-AARC-MV-SAFETY",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
     {
      "id": "S-AARC-PVA",
      "licence_class": "RED",
@@ -4289,12 +5059,17 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-JC-ALARM",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 2,
-   "hash": "b9f670b434b8780a"
+   "required_sources": 1,
+   "hash": "df4dfe140210f75b"
   },
   {
    "key": "SC-05",
@@ -4308,7 +5083,7 @@
     {
      "id": "N-NCBI-OPENRN-CHEST",
      "licence_class": "GREEN",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AARC-O2",
@@ -4316,14 +5091,14 @@
      "verified": "2026-11-14"
     },
     {
-     "id": "S-AARC-SUCT",
-     "licence_class": "RED",
-     "verified": "2026-11-14"
-    },
-    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-OPENRN-FUND-CH8",
@@ -4334,12 +5109,17 @@
      "id": "S-RCP-NEWS2",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ABCDE-ADULT",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
-   "gaps": 6,
-   "required_sources": 3,
-   "hash": "44a34277c93954e3"
+   "gaps": 7,
+   "required_sources": 2,
+   "hash": "d96d3b79006eac4a"
   },
   {
    "key": "SC-06",
@@ -4364,12 +5144,27 @@
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ISCCM-WEAN-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-PUMA-2022",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-PUMA-EXTUBATION-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
-   "required_sources": 2,
-   "hash": "b23284e6dc31e50f"
+   "required_sources": 1,
+   "hash": "7639ed1db93e0065"
   },
   {
    "key": "SC-07",
@@ -4391,6 +5186,11 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ACS-TBI-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4401,6 +5201,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ENLS-ICP-V6",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NCS-EDEMA-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-HA-CVA",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -4409,7 +5219,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "7e72646030483bda"
+   "hash": "ccf1da505d87c614"
   },
   {
    "key": "SC-08",
@@ -4426,25 +5236,55 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-JBDS-HYPO-2020",
-     "licence_class": "YELLOW",
-     "verified": null
+     "id": "N-NICE-NG217",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
-     "id": "N-NICE-NG217",
-     "licence_class": "YELLOW",
-     "verified": null
+     "id": "S-ACNS-CCEEG-2015",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-AHA-FA-SEIZURE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-CDC-SEIZURE-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ENLS-SE-V6",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ICS-SE-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-JBDS-HYPO-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NSW-ECAT-SEIZURES",
+     "licence_class": "RED",
+     "verified": "2026-11-25"
     }
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 3,
-   "hash": "bca8e0af95b534a3"
+   "required_sources": 2,
+   "hash": "45e238f9ef314126"
   },
   {
    "key": "SC-09",
@@ -4471,14 +5311,29 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-AOA-BLOOD-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ARUP-DIC",
      "licence_class": "RED",
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BSH-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-ISTH-DIC-2025",
      "licence_class": "RED",
      "verified": "2026-11-21"
+    },
+    {
+     "id": "S-NBA-CRITICAL-BLEED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-OPENRN-ADV-CH3",
@@ -4497,9 +5352,9 @@
     }
    ],
    "issues": [],
-   "gaps": 7,
+   "gaps": 8,
    "required_sources": 3,
-   "hash": "4f6da27df4a269c0"
+   "hash": "dc1ff82ec339c2b5"
   },
   {
    "key": "SC-10",
@@ -4516,11 +5371,6 @@
      "verified": "2026-11-15"
     },
     {
-     "id": "N-JBDS-HYPO-2020",
-     "licence_class": "YELLOW",
-     "verified": null
-    },
-    {
      "id": "S-ADA-HOSP-2026",
      "licence_class": "RED",
      "verified": "2026-11-23"
@@ -4529,12 +5379,17 @@
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-JBDS-HYPO-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 4,
-   "hash": "ba42a1a850a6584c"
+   "required_sources": 3,
+   "hash": "e3f28c34f4670e59"
   },
   {
    "key": "SC-11",
@@ -4564,7 +5419,7 @@
    "issues": [],
    "gaps": 8,
    "required_sources": 3,
-   "hash": "62421d199036abb4"
+   "hash": "036a62e9d65b3c10"
   },
   {
    "key": "SC-12",
@@ -4586,6 +5441,11 @@
      "verified": "2026-11-15"
     },
     {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4599,12 +5459,17 @@
      "id": "S-OPENRN-ADV-C74",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-RCUK-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "0256affa6d3c1480"
+   "hash": "ec1a7194f4b6ab15"
   },
   {
    "key": "SC-13",
@@ -4616,20 +5481,30 @@
    "clinically_reviewed": false,
    "sources": [
     {
-     "id": "S-AHA-2025",
+     "id": "S-AHA-ALS-2025",
      "licence_class": "RED",
-     "verified": "2026-11-14"
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-AHA-BLS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ERC-ALS-2025",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCUK-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
-   "required_sources": 2,
-   "hash": "9269e4f6596e5ce5"
+   "required_sources": 1,
+   "hash": "0377f4174b35868e"
   },
   {
    "key": "SC-14",
@@ -4653,12 +5528,17 @@
     {
      "id": "S-BSH-ATR",
      "licence_class": "RED",
-     "verified": "2026-11-15"
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ISBT-ATR-EDU",
      "licence_class": "YELLOW",
-     "verified": null
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-LIFEBLOOD-ATR",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NICE-NG24",
@@ -4668,8 +5548,8 @@
    ],
    "issues": [],
    "gaps": 6,
-   "required_sources": 2,
-   "hash": "03cbfe0c53f96cd9"
+   "required_sources": 1,
+   "hash": "43f66d9b2301b96e"
   },
   {
    "key": "SC-15",
@@ -4682,8 +5562,8 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AHRQ-TS",
@@ -4694,12 +5574,22 @@
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RCA-DELPHI-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "c475e0f4c0f4a92a"
+   "hash": "4d833de13a9e0af8"
   },
   {
    "key": "SC-16",
@@ -4721,6 +5611,16 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-BP-DISCORDANCE-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4736,6 +5636,16 @@
      "verified": "2026-11-16"
     },
     {
+     "id": "S-EVERDAC-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NIBP-META-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-FUND-CH15-6",
      "licence_class": "GREEN",
      "verified": "2026-11-15"
@@ -4749,7 +5659,7 @@
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "9fcb8ababe19861b"
+   "hash": "60326d72ff1bb8ff"
   },
   {
    "key": "SC-17",
@@ -4767,8 +5677,8 @@
     },
     {
      "id": "N-NICE-CG103",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AHRQ-TS",
@@ -4776,15 +5686,25 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-CIBS-CAMICU-TERMS",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SCCM-PADIS",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SCCM-PADIS-FOCUSED-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 6,
    "required_sources": 3,
-   "hash": "1b63dbc9cb0e2d1a"
+   "hash": "3d62ff3c391bc25c"
   },
   {
    "key": "SC-18",
@@ -4801,9 +5721,19 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-BTS-ASPIRATION-2023",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NHSE-NGT-2016",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NICE-CG32",
@@ -4819,7 +5749,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "2d349e31d2f7797a"
+   "hash": "ebd53efb67a1bbea"
   },
   {
    "key": "SC-19",
@@ -4831,11 +5761,6 @@
    "clinically_reviewed": false,
    "sources": [
     {
-     "id": "L-EPINEPHRINE",
-     "licence_class": "YELLOW",
-     "verified": "2026-11-15"
-    },
-    {
      "id": "L-PIPTAZO",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
@@ -4843,18 +5768,38 @@
     {
      "id": "N-RCUK-ANAPH-2021",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ADRENALIN-IM-2025",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-21"
     },
     {
      "id": "S-AHRQ-TS",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-ANZCOR-SPECIAL-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-NICE-NG258-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-RCUK-SPECIAL-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 5,
    "required_sources": 3,
-   "hash": "cba979db80c0317c"
+   "hash": "6af8a5f730d4b5c0"
   },
   {
    "key": "SC-20",
@@ -4867,8 +5812,13 @@
    "sources": [
     {
      "id": "N-NICE-NG232",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-ACS-TBI-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-AHRQ-TS",
@@ -4883,8 +5833,8 @@
    ],
    "issues": [],
    "gaps": 5,
-   "required_sources": 3,
-   "hash": "ad2b95e6f76dd62c"
+   "required_sources": 2,
+   "hash": "8cf22532d1048e38"
   },
   {
    "key": "EQ-01",
@@ -4897,13 +5847,13 @@
    "sources": [
     {
      "id": "N-NICE-CG103",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "N-RCUK-ANAPH-2021",
      "licence_class": "RED",
-     "verified": null
+     "verified": "2026-11-24"
     },
     {
      "id": "N-UKKA-HK-2026-07",
@@ -4911,15 +5861,30 @@
      "verified": null
     },
     {
+     "id": "S-FDA-OXIMETER-BASICS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-OPENRN-ADV-C7",
      "licence_class": "GREEN",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-PHILIPS-INTELLIVUE-R0",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-SSC-2026",
+     "licence_class": "RED",
      "verified": "2026-11-14"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "ba63388b707eb459"
+   "hash": "f62661cc43500f5c"
   },
   {
    "key": "EQ-02",
@@ -4944,12 +5909,22 @@
      "id": "S-HAMILTON-C1",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-HAMILTON-VOLUME-MODES",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-VENT-MECHANICS-2024",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "78faf82d9fc0b17b"
+   "hash": "c9defc6cf2729d6a"
   },
   {
    "key": "EQ-03",
@@ -4961,6 +5936,11 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ARTERIAL-MEASUREMENT-2020",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-CDC-BSI-2011",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
@@ -4971,7 +5951,22 @@
      "verified": "2026-11-14"
     },
     {
+     "id": "S-ESICM-SHOCK-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-16"
+    },
+    {
+     "id": "S-MHRA-ARTERIAL-GLUCOSE",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-SSC-2021",
+     "licence_class": "RED",
+     "verified": "2026-11-14"
+    },
+    {
+     "id": "S-SSC-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
     }
@@ -4979,7 +5974,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "6b3b9615a93ab14a"
+   "hash": "ad7b454a4b7be6f7"
   },
   {
    "key": "EQ-04",
@@ -4991,9 +5986,24 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-FDA-MISCONNECTIONS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-FDA-PUMP",
      "licence_class": "YELLOW",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-FDA-PUMP-OVERVIEW",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-ISMP-HA",
@@ -5004,7 +6014,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "f545c417d273a68e"
+   "hash": "1efee35eb7579281"
   },
   {
    "key": "EQ-05",
@@ -5024,7 +6034,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "24646b37b9208135"
+   "hash": "1aa610dbdf52f53c"
   },
   {
    "key": "EQ-06",
@@ -5037,19 +6047,34 @@
    "sources": [
     {
      "id": "N-AHS-CRRT-ALARM-2025",
-     "licence_class": "YELLOW",
-     "verified": null
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-KDIGO-AKI-2012",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-RRT-MULTIDISC-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-VANTIVE-PRISMAX-ACCESS",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-VANTIVE-PRISMAX-PRESSURES",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 4,
    "required_sources": 3,
-   "hash": "6e352be654246f79"
+   "hash": "d0b8a1843c1c4d7f"
   },
   {
    "key": "EQ-07",
@@ -5061,9 +6086,29 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-CARDINAL-OMNI-ALARMS",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-CARDINAL-OMNI-RATE",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-FDA-MISCONNECTIONS",
+     "licence_class": "YELLOW",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-NHSE-NGT-2016",
      "licence_class": "YELLOW",
      "verified": "2026-11-15"
+    },
+    {
+     "id": "S-NHSE-NGT-ENDURING",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     },
     {
      "id": "S-NICE-CG32",
@@ -5079,7 +6124,7 @@
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "5f30ec691a69ad2b"
+   "hash": "bad18d8a21c797b0"
   },
   {
    "key": "EQ-08",
@@ -5091,15 +6136,35 @@
    "clinically_reviewed": false,
    "sources": [
     {
+     "id": "S-ARJO-ALPHA-ACTIVE4",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
      "id": "S-INTL-PI-2026",
      "licence_class": "RED",
      "verified": "2026-11-14"
+    },
+    {
+     "id": "S-INTL-PI-HEELS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-REPOS-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-INTL-PI-SURFACES-2026",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
     }
    ],
    "issues": [],
    "gaps": 3,
    "required_sources": 3,
-   "hash": "8068b4a036f9ba96"
+   "hash": "f9c82fb8167118a3"
   },
   {
    "key": "PX-01",
@@ -5119,7 +6184,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "1deefa186f2589bd"
+   "hash": "e52d049c3b9ae2c7"
   },
   {
    "key": "PX-02",
@@ -5144,7 +6209,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "b794c2f2d7751fc1"
+   "hash": "e689e03e5ee5322f"
   },
   {
    "key": "PX-03",
@@ -5164,7 +6229,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "d5b70022ac8d0064"
+   "hash": "bc9c22eba16a3819"
   },
   {
    "key": "PX-04",
@@ -5184,7 +6249,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "10ddb239f2a987b7"
+   "hash": "dc383b30839a52d0"
   },
   {
    "key": "PX-05",
@@ -5204,7 +6269,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 2,
-   "hash": "c83f53d39e2e2b08"
+   "hash": "084acb1c7eb82776"
   },
   {
    "key": "PX-06",
@@ -5229,7 +6294,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "d566a51f4d63363e"
+   "hash": "4961619d40ca5dc0"
   },
   {
    "key": "PX-07",
@@ -5249,7 +6314,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "d89d8005aace2a16"
+   "hash": "a57a512580c0f52e"
   },
   {
    "key": "PX-08",
@@ -5269,7 +6334,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "7cd64e96ca11a6a4"
+   "hash": "f34b0a4e74dbaf39"
   },
   {
    "key": "PX-09",
@@ -5294,7 +6359,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 2,
-   "hash": "00c99cbaa7253f71"
+   "hash": "c2958eefb7e4a8ee"
   },
   {
    "key": "PX-10",
@@ -5314,7 +6379,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "cbd62ddea6e701a1"
+   "hash": "438a3165e976a351"
   },
   {
    "key": "PX-11",
@@ -5334,7 +6399,7 @@
    "issues": [],
    "gaps": 4,
    "required_sources": 1,
-   "hash": "4e3807e31a4dff4d"
+   "hash": "cd551be53f36447f"
   },
   {
    "key": "PX-12",
@@ -5348,7 +6413,7 @@
    "issues": [],
    "gaps": 5,
    "required_sources": 1,
-   "hash": "1a82dbf98b6ac0f8"
+   "hash": "bc59d8c999e1260c"
   }
  ]
 }

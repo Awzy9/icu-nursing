@@ -1,248 +1,273 @@
 {
- "skill_id": "SK-19",
- "number": 19,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Defibrillator safety",
- "category": "cardiac-resuscitation",
- "topic_drafts": [
-  "D02-T15"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-ERC-ALS-2025",
-   "read": "full",
-   "use": "ERC ALS 2025 (paraphrase only; commercial use needs ERC agreement)"
-  },
-  {
-   "id": "S-AHA-2025",
-   "read": "not_read",
-   "use": "AHA 2025 guidelines: not read"
-  }
- ],
- "objectives": [
-  "Keep the pre-shock pause as short as possible.",
-  "Perform and call the safety check so nobody touches the patient or bed at the moment of shock.",
-  "Recognise authorised-role requirements and call for help."
- ],
- "prerequisites": [
-  "Cardiac arrest recognition",
-  "Oxygen safety (SK-08)"
- ],
- "sections": {
-  "indications": {
-   "support": "local_protocol",
-   "items": [
+  "skill_id": "SK-19",
+  "number": 19,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Defibrillator safety",
+  "category": "cardiac-resuscitation",
+  "topic_drafts": [
+    "D02-T15"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "Rhythm analysis and the decision to shock follow resuscitation policy and the authorised role; this skill does not teach rhythm interpretation or energy settings.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "safety": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Perform and call a safety check so nobody touches the patient or bed at the moment of shock; do not defibrillate during manual chest compressions, even with gloves.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
+      "id": "S-ERC-ALS-2025",
+      "read": "full",
+      "use": "ERC ALS 2025 (paraphrase only; commercial use needs ERC agreement)"
     },
     {
-     "text": "Pads are preferred over paddles when available; if paddles are used apply firm force and good contact to limit arcing.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
+      "id": "S-AHA-2025",
+      "read": "not_read",
+      "use": "AHA 2025 guidelines: not read"
+    }
+  ],
+  "objectives": [
+    "Keep the pre-shock pause as short as possible.",
+    "Perform and call the safety check so nobody touches the patient or bed at the moment of shock.",
+    "Recognise authorised-role requirements and call for help."
+  ],
+  "prerequisites": [
+    "Cardiac arrest recognition",
+    "Oxygen safety (SK-08)"
+  ],
+  "sections": {
+    "indications": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Rhythm analysis and the decision to shock follow resuscitation policy and the authorised role; this skill does not teach rhythm interpretation or energy settings.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Before an indicated shock, call the safety warning and visually confirm that no person is in contact with the patient or bed. Never deliver a shock during manual compressions, even if gloves are worn. Follow the device and local electrical-safety pathway.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Pads are preferred over paddles when available; if paddles are used apply firm force and good contact to limit arcing.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Do not assume every arrest rhythm requires a shock. For an indicated manual shock, continue compressions during charging where safe, minimise interruptions for analysis and shock, and follow the authorised operator or AED pathway.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "For oxygen-fire safety, keep free-flow oxygen sources away from the chest and direct ventilator exhaust away from the shock area. Maintain an attached ventilation circuit or bag connected to an advanced airway as appropriate; do not routinely disconnect it solely for defibrillation. Follow the trained resuscitation team's device-specific procedure.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Recognise the arrest, call the team and start chest compressions without delay in line with unit procedure; apply pads as soon as the defibrillator arrives.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Authorised-role requirements for operating a defibrillator apply; follow local policy and training.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "assessment": {
+      "support": "full",
+      "items": [
+        {
+          "text": "The antero-lateral position is the pad/paddle position of choice: the apical (lateral) pad goes below the armpit in the mid-axillary line. If the patient has an implantable pacemaker or defibrillator (ICD), place the pad more than 8 cm away from the device, or use an alternative pad position. Consider an alternative pad position if the patient is prone (bi-axillary) or in a refractory shockable rhythm.",
+          "support": "sourced",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Defibrillator model, pad placement and settings follow the manufacturer's instructions and unit training.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Operation steps and energy selection are not drafted; follow resuscitation training and the device manual per your unit's documentation standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Call for help early and follow local oxygen-fire safety rules. Distinguish free-flow oxygen near the chest from an attached closed breathing circuit; trained staff manage the oxygen source and circuit according to the resuscitation and device protocol.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Resume chest compressions immediately after shock delivery. A combination of clinical and physiological signs of return of spontaneous circulation (ROSC) - such as return of consciousness, purposeful movement, an arterial waveform, or a sharp rise in end-tidal CO2 - is a reason to consider stopping compressions for a rhythm check, and a pulse check if the rhythm appears appropriate. On a defibrillator that displays the ECG with chest-compression motion artefact removed, the underlying rhythm may guide whether a rhythm and pulse check is needed roughly every two minutes; no pause is needed if asystole is displayed.",
+          "support": "sourced",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record times, rhythm, shocks and actions on the resuscitation record per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
+  },
+  "checklist": [
+    {
+      "phase": "preparation",
+      "text": "Call the team and start compressions without delay per unit procedure.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
     },
     {
-     "text": "Keep the pre-shock pause as short as possible: compressions continue while the defibrillator charges; a coordinated team can complete manual defibrillation with under 5 seconds of interruption.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Apply pads as soon as the defibrillator arrives.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    },
     {
-     "text": "Recognise the arrest, call the team and start chest compressions without delay in line with unit procedure; apply pads as soon as the defibrillator arrives.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  },
-  "scope": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Confirm the authorised rhythm analysis or AED decision indicates a shock; for an indicated manual shock minimise interruptions during charging and delivery.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    },
     {
-     "text": "Authorised-role requirements for operating a defibrillator apply; follow local policy and training.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "assessment": {
-   "support": "full",
-   "items": [
+      "phase": "procedure",
+      "text": "Call the safety warning and visually confirm everyone is clear of the patient and bed before an indicated shock; never shock during manual compressions.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    },
     {
-     "text": "The antero-lateral position is the pad/paddle position of choice: the apical (lateral) pad goes below the armpit in the mid-axillary line. If the patient has an implantable pacemaker or defibrillator (ICD), place the pad more than 8 cm away from the device, or use an alternative pad position. Consider an alternative pad position if the patient is prone (bi-axillary) or in a refractory shockable rhythm.",
-     "support": "sourced",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  },
-  "equipment": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Check oxygen-fire safety according to the airway circuit and local resuscitation procedure; do not assume all oxygen equipment is handled in the same way.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Defibrillator model, pad placement and settings follow the manufacturer's instructions and unit training.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "documentation",
+      "text": "Record times and actions on the resuscitation record.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Operation steps and energy selection are not drafted; follow resuscitation training and the device manual per your unit's documentation standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Resume CPR immediately after an indicated shock unless the authorised resuscitation team identifies a reason to assess return of circulation; do not stop solely because an isolated capnography value rises.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    },
     {
-     "text": "Call for help early; follow the oxygen-safety steps in unit policy during defibrillation.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
+      "phase": "procedure",
+      "text": "For oxygen-fire safety, keep free-flow oxygen sources away from the chest and direct ventilator exhaust away from the shock area. Maintain an attached ventilation circuit or bag connected to an advanced airway as appropriate; do not routinely disconnect it solely for defibrillation. Follow the trained resuscitation team's device-specific procedure.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
     }
-   ]
-  },
-  "monitoring": {
-   "support": "full",
-   "items": [
+  ],
+  "gaps": [
+    "Energy settings, drug therapy, post-arrest care, cardioversion and children: not covered.",
+    "AHA 2025 guideline: not read.",
+    "Authorised-role requirements: local policy."
+  ],
+  "permissions": [
+    "ERC text: commercial agreement required.",
+    "AHA guidelines: permission required (assumed)."
+  ],
+  "references": [
     {
-     "text": "Resume chest compressions immediately after shock delivery. A combination of clinical and physiological signs of return of spontaneous circulation (ROSC) - such as return of consciousness, purposeful movement, an arterial waveform, or a sharp rise in end-tidal CO2 - is a reason to consider stopping compressions for a rhythm check, and a pulse check if the rhythm appears appropriate. On a defibrillator that displays the ECG with chest-compression motion artefact removed, the underlying rhythm may guide whether a rhythm and pulse check is needed roughly every two minutes; no pause is needed if asystole is displayed.",
-     "support": "sourced",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "id": "S-ERC-ALS-2025",
+      "title": "European Resuscitation Council Guidelines 2025: Adult Advanced Life Support (Resuscitation 2025;215:110769)",
+      "publisher": "European Resuscitation Council",
+      "version": "2025",
+      "url": "https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "RED for commercial use",
+      "permission_required": "Yes (commercial)"
+    },
     {
-     "text": "Record times, rhythm, shocks and actions on the resuscitation record per unit standard.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "S-AHA-2025",
+      "title": "2025 AHA Guidelines for CPR and ECC (Circulation 152, suppl 2)",
+      "publisher": "American Heart Association",
+      "version": "Online 2025-10-22; Part 1 DOI 10.1161/CIR.0000000000001372; AHA change notice updated 2026-02-06 lists algorithm corrections (search snippet)",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+      "accessed": "2026-11-14",
+      "read": "not_read",
+      "licence_class": "RED",
+      "permission_required": "Yes (assume)"
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Call the team and start compressions without delay per unit procedure.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Apply pads as soon as the defibrillator arrives.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Keep compressions going while the defibrillator charges to minimise the pre-shock pause.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Perform and call the safety check: nobody touches the patient or bed at the moment of shock.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Follow the unit's oxygen-safety steps.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "phase": "documentation",
-   "text": "Record times and actions on the resuscitation record.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Energy settings, drug therapy, post-arrest care, cardioversion and children: not covered.",
-  "AHA 2025 guideline: not read.",
-  "Authorised-role requirements: local policy."
- ],
- "permissions": [
-  "ERC text: commercial agreement required.",
-  "AHA guidelines: permission required (assumed)."
- ],
- "references": [
-  {
-   "id": "S-ERC-ALS-2025",
-   "title": "European Resuscitation Council Guidelines 2025: Adult Advanced Life Support (Resuscitation 2025;215:110769)",
-   "publisher": "European Resuscitation Council",
-   "version": "2025",
-   "url": "https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "RED for commercial use",
-   "permission_required": "Yes (commercial)"
-  },
-  {
-   "id": "S-AHA-2025",
-   "title": "2025 AHA Guidelines for CPR and ECC (Circulation 152, suppl 2)",
-   "publisher": "American Heart Association",
-   "version": "Online 2025-10-22; Part 1 DOI 10.1161/CIR.0000000000001372; AHA change notice updated 2026-02-06 lists algorithm corrections (search snippet)",
-   "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
-   "accessed": "2026-11-14",
-   "read": "not_read",
-   "licence_class": "RED",
-   "permission_required": "Yes (assume)"
-  }
- ]
+  ]
 }

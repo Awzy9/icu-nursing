@@ -1,238 +1,286 @@
 {
- "med_id": "MD-38",
- "number": 38,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Haloperidol (injection)",
- "drug_class": "Butyrophenone antipsychotic",
- "category": "sedatives-analgesics",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Antipsychotic injection. The label read is an intramuscular product indicated for schizophrenia; its use for delirium or agitation in intensive care is not a labelled indication in this label, and intravenous use is described only as carrying higher QT risk. Nursing focus: mortality warning in elderly patients with dementia, QTc prolongation and torsades de pointes.",
- "batch": 4,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-HALOPERIDOL",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-HALOPERIDOL",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-38",
+  "number": 38,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Haloperidol (injection)",
+  "drug_class": "Butyrophenone antipsychotic",
+  "category": "sedatives-analgesics",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Antipsychotic injection. The label read is an intramuscular product indicated for schizophrenia; its use for delirium or agitation in intensive care is not a labelled indication in this label, and intravenous use is described only as carrying higher QT risk. Nursing focus: mortality warning in elderly patients with dementia, QTc prolongation and torsades de pointes.",
+  "batch": 4,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-HALOPERIDOL",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-HALOPERIDOL",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label read (an intramuscular product) indicates haloperidol injection for the treatment of patients with schizophrenia; other uses, including ICU delirium, are not labelled indications in this label.",
+          "support": "sourced",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Check the most recent ECG and electrolytes before the first dose if the order allows, and report a long QT interval or a history of arrhythmia.",
+          "support": "partial",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label states haloperidol injection is not approved for intravenous administration, and that if it is given intravenously, the ECG should be monitored for QTc prolongation and arrhythmias; a QTc interval exceeding 500 msec is associated with an increased risk of torsades de pointes.",
+          "support": "sourced",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "The registered label describes potentially fatal neuroleptic malignant syndrome with possible rhabdomyolysis and renal injury. Seek urgent assessment and the authorised cessation pathway; consider other causes of deterioration in parallel.",
+          "support": "partial",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "Serious neurological injury has been reported in patients receiving lithium and haloperidol together, although causality is unproven. Review concurrent lithium and urgently report unexplained fever, tremor, weakness, confusion or new abnormal movements; seek immediate clinical assessment and the authorised medication cessation plan.",
+          "support": "partial",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Boxed warning: elderly patients with dementia-related psychosis treated with antipsychotic drugs are at increased risk of death, and haloperidol injection is not approved for dementia-related psychosis.",
+          "support": "sourced",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "Sudden death, QTc prolongation and torsades de pointes have been reported; higher than recommended doses and intravenous administration appear to be associated with a higher risk.",
+          "support": "sourced",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "The registered US haloperidol lactate injection is intended for intramuscular use, not approved for intravenous use. Parkinson disease and dementia with Lewy bodies are listed contraindications. Neuroleptic malignant syndrome is a potentially fatal adverse reaction.",
+          "support": "partial",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Cardiovascular effects (sudden death, QTc prolongation and torsades de pointes) are described among the adverse reactions in the warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "The label also describes tardive dyskinesia (a syndrome of potentially irreversible, involuntary, dyskinetic movements) as a risk of antipsychotic treatment, and lists tachycardia and hypotension, including orthostatic hypotension, among the reported adverse reactions.",
+          "support": "sourced",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Escalate for palpitations, fainting, a new arrhythmia, a rising QTc or new rigidity, high temperature or marked confusion. Activate emergency help for suspected neuroleptic malignant syndrome with physiological compromise; seek urgent clinician-directed cessation and supportive care.",
+          "support": "partial",
+          "sources": [
+            "L-HALOPERIDOL"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Check ECG, QTc history and electrolytes where ordered.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Watch the rhythm if the patient is at cardiac risk.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Note age and any dementia diagnosis, and report them.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report arrhythmia, syncope or QTc prolongation promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Escalate new rigidity with altered consciousness, fever or autonomic instability urgently; review ordered renal and muscle-injury results when neuroleptic malignant syndrome is suspected.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record checks and observations.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm indication, formulation, route and neurological contraindications with pharmacy. Escalate new rigidity, fever, altered consciousness or autonomic instability urgently; assess other causes as well.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent lithium; assess changes in consciousness, temperature and movement and escalate suspected neurological toxicity.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-HALOPERIDOL"
+      ]
+    }
+  ],
+  "gaps": [
+    "Delirium and agitation use in intensive care is outside the label read; PADIS and delirium guideline text were not read for this entry.",
+    "Neuroleptic malignant syndrome warning included; full extrapyramidal assessment and treatment remain specialist-led.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "b1ad2abd-a9d6-44e3-957b-36a73260f4f5",
+    "label_version": "12",
+    "effective_time": "20260922",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label read (an intramuscular product) indicates haloperidol injection for the treatment of patients with schizophrenia; other uses, including ICU delirium, are not labelled indications in this label.",
-     "support": "sourced",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Check the most recent ECG and electrolytes before the first dose if the order allows, and report a long QT interval or a history of arrhythmia.",
-     "support": "partial",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label states haloperidol injection is not approved for intravenous administration, and that if it is given intravenously, the ECG should be monitored for QTc prolongation and arrhythmias; a QTc interval exceeding 500 msec is associated with an increased risk of torsades de pointes.",
-     "support": "sourced",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Boxed warning: elderly patients with dementia-related psychosis treated with antipsychotic drugs are at increased risk of death, and haloperidol injection is not approved for dementia-related psychosis.",
-     "support": "sourced",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    },
-    {
-     "text": "Sudden death, QTc prolongation and torsades de pointes have been reported; higher than recommended doses and intravenous administration appear to be associated with a higher risk.",
-     "support": "sourced",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Cardiovascular effects (sudden death, QTc prolongation and torsades de pointes) are described among the adverse reactions in the warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    },
-    {
-     "text": "The label also describes tardive dyskinesia (a syndrome of potentially irreversible, involuntary, dyskinetic movements) as a risk of antipsychotic treatment, and lists tachycardia and hypotension, including orthostatic hypotension, among the reported adverse reactions.",
-     "support": "sourced",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate for palpitations, fainting, a new arrhythmia, a rising QTc or new rigidity, high temperature or marked confusion.",
-     "support": "partial",
-     "sources": [
-      "L-HALOPERIDOL"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Check ECG, QTc history and electrolytes where ordered.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-HALOPERIDOL"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Watch the rhythm if the patient is at cardiac risk.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-HALOPERIDOL"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Note age and any dementia diagnosis, and report them.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "L-HALOPERIDOL"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report arrhythmia, syncope or QTc prolongation promptly.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-HALOPERIDOL"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record checks and observations.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Delirium and agitation use in intensive care is outside the label read; PADIS and delirium guideline text were not read for this entry.",
-  "Neuroleptic malignant syndrome and extrapyramidal effects were not summarised from the fields read.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "b1ad2abd-a9d6-44e3-957b-36a73260f4f5",
-  "label_version": "12",
-  "effective_time": "20260922",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

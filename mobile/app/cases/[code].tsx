@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { scenarioVersion, canResumeScenario, restoreScenarioHistory, restoreScenarioDecisions } from "@icu/schemas/scenario-session";
+import { scenarioChoiceOrder } from "@icu/schemas/scenario-choice-order";
+import { scenarioDebrief, type ScenarioDecision } from "@icu/schemas/scenario-debrief";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 import { scoreTenths } from "../../src/core/engines";
-import { monitorReadings } from "../../src/core/monitorReadings";
+import { monitorReadings, remainingObservations } from "../../src/core/monitorReadings";
 import { getSession, recordCase } from "../../src/core/progress";
 import { BookmarkButton, Button, Card, H2, P, RemoteGate, Screen } from "../../src/ui/components";
 import { ModuleVisuals } from "../../src/ui/module-visuals";
@@ -36,6 +39,8 @@ export default function CaseScreen() {
   const [done, setDone] = useState(false);
   const [resumed, setResumed] = useState(false);
   const [visited, setVisited] = useState<number[]>([]);
+  const [decisions, setDecisions] = useState<ScenarioDecision[]>([]);
+  const [resumedWithoutDecisions, setResumedWithoutDecisions] = useState(false);
   const [historyIncomplete, setHistoryIncomplete] = useState(false);
 
   const existingSession = code ? getSession(progress, code) : undefined;
@@ -60,44 +65,65 @@ export default function CaseScreen() {
           const step = scenario.steps.find((s) => s.position === pos)!;
           const previousSteps = visited.flatMap((n) => scenario.steps.filter((item) => item.position === n));
           const option = choice === null ? undefined : step.options[choice];
-          const version = JSON.stringify(scenario.steps.map((s) => ({ p: s.position, n: s.options.length })));
+          const supplemental = remainingObservations(step.observations, { numeric: showNumericMonitor, neuro: showNeuro, perfusion: showPerfusion });
+          const sharedCheckpoint = option?.next != null && step.options.every(o => o.next === option.next);
+          const version = scenarioVersion(scenario);
 
-          if (existingSession && !resumed && !done && position === undefined && existingSession.version === version && !existingSession.finished) {
+          if (existingSession && !resumed && !done && position === undefined && canResumeScenario(scenario, existingSession)) {
             const stepIndex = scenario.steps.findIndex((s) => s.position === existingSession.position);
             return (
               <Card>
                 <H2>{t("cases.resume")}</H2>
                 <P muted>{t("cases.resumeBody")}</P>
                 <P small muted>{t("cases.step", { n: stepIndex + 1, total: scenario.steps.length })}</P>
-                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); setVisited(existingSession.visited ?? []); setHistoryIncomplete(existingSession.position !== scenario.steps[0]!.position && !existingSession.visited?.length); }} />
+                <Button label={t("hub.continue")} onPress={() => { setResumed(true); setPosition(existingSession.position); setPoints(existingSession.score); const restored = restoreScenarioDecisions(scenario, existingSession); setDecisions(restored.decisions); setResumedWithoutDecisions(restored.incomplete); const history = restoreScenarioHistory(scenario, existingSession); setVisited(history.positions); setHistoryIncomplete(history.incomplete); }} />
                 <Button label={t("cases.restart")} variant="outline" onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
               </Card>
             );
           }
 
+          if (existingSession && !resumed && !done && position === undefined && !existingSession.finished && !canResumeScenario(scenario, existingSession)) {
+            return <Card>
+              <H2>{locale === "ar" ? "تغير محتوى الحالة" : "Saved scenario cannot be resumed"}</H2>
+              <P>{locale === "ar" ? "تغير المحتوى أو أن التقدم المحفوظ غير صالح. ابدأ الحالة من جديد." : "The scenario has changed or the saved progress is invalid. Start again to use the current content."}</P>
+              <Button label={t("cases.restart")} onPress={() => { setResumed(true); setVisited([]); setHistoryIncomplete(false); discardSession(code!); }} />
+            </Card>;
+          }
+
           if (done) {
+            const debrief = scenarioDebrief(scenario, decisions);
             return (
               <Card>
                 <H2>{t("cases.summary")}</H2>
+                <P>{locale === "ar" ? "مجموع النقاط" : "Total learning points"}: {points}</P>
+                <P>{locale === "ar" ? "نقاط القرارات المسجلة" : "Recorded decisions"}: {debrief.observedPoints} / {debrief.observedMaximum}</P>
+                {resumedWithoutDecisions ? <P small muted>{locale === "ar" ? "لا تتوفر تفاصيل القرارات السابقة للاستئناف. تعرض المراجعة القرارات المسجلة هنا فقط." : "Some earlier answer details are unavailable. This review covers only retained decisions."}</P> : null}
+                <P small muted>{locale === "ar" ? "للتعلم فقط، وليس تقييماً للكفاءة السريرية." : "Educational feedback only; not a clinical competency assessment."}</P>
+                {debrief.priorities.length ? <H2>{locale === "ar" ? "أولويات المراجعة" : "Review priorities"}</H2> : <P>{locale === "ar" ? "لا توجد قرارات مسجلة تحتاج إلى مراجعة." : "No recorded decisions require review."}</P>}
+                {debrief.priorities.map(item => <Card key={item.position}><P>Step {item.position}: {item.points} / {item.maximum} points</P><P>{item.prompt}</P><P>Your choice: {item.selected}</P><P>{item.feedback}</P>{item.consequence ? <P>Possible consequence: {item.consequence}</P> : null}<P>Preferred response: {item.preferred}</P><P>{item.preferredFeedback}</P></Card>)}
+                {debrief.strengths.length ? <><H2>{locale === "ar" ? "القرارات التي حصلت على كامل النقاط" : "Full-credit decisions"} ({debrief.fullCredit})</H2>{debrief.strengths.map(item => <Card key={item.position}><P>Step {item.position}: {item.prompt}</P><P>{item.selected}</P><P>{item.feedback}</P>{item.consequence ? <P>Possible consequence: {item.consequence}</P> : null}</Card>)}</> : null}
+                <H2>{locale === "ar" ? "ما تعلمته" : "Your takeaways"}</H2>
                 {scenario.takeaways.map((item, i) => <P key={i}>{`• ${item}`}</P>)}
-                <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); setHistoryIncomplete(false); }} />
+                <Button label={t("cases.again")} variant="outline" onPress={() => { discardSession(code!); setPosition(scenario.steps[0]!.position); setPoints(0); setChoice(null); setRevealed(false); setDone(false); setVisited([]); setDecisions([]); setResumedWithoutDecisions(false); setHistoryIncomplete(false); }} />
               </Card>
             );
           }
 
           const decide = () => { if (choice !== null) setRevealed(true); };
           const advance = () => {
-            if (!option) return;
+            if (!option || choice === null) return;
+            const recorded = [...decisions, { position: pos, choice }];
+            setDecisions(recorded);
             const newPoints = points + option.points;
             setPoints(newPoints);
             if (option.next == null) {
               const tenths = scoreTenths(newPoints, scenario.steps.length * 2);
               const at = new Date().toISOString();
               update((p) => recordCase(p, code!, tenths, at));
-              saveSession(code!, { kind: "scenario", version, position: pos, score: newPoints, finished: true, at }); // local auto-discards a finished session; the remote row is kept, matching the website
+              saveSession(code!, { kind: "scenario", version, position: pos, score: newPoints, finished: true, at, decisions: recorded }); // local auto-discards a finished session; the remote row is kept, matching the website
               setDone(true);
             } else {
-              saveSession(code!, { kind: "scenario", version, position: option.next, score: newPoints, finished: false, at: new Date().toISOString(), visited: [...visited, pos].slice(-100) });
+              saveSession(code!, { kind: "scenario", version, position: option.next, score: newPoints, finished: false, at: new Date().toISOString(), visited: [...visited, pos].slice(-100), decisions: recorded });
               setVisited((old) => [...old, pos]);
               setPosition(option.next);
             }
@@ -117,16 +143,22 @@ export default function CaseScreen() {
               {showNeuro ? <CaseComparison kind="neuro" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
               {showPerfusion ? <CaseComparison kind="perfusion" observations={step.observations} earlier={previousSteps} historyIncomplete={historyIncomplete} ar={locale === "ar"} /> : null}
               <P small muted>{t("cases.step", { n: scenario.steps.findIndex((s) => s.position === pos) + 1, total: scenario.steps.length })}</P>
-              <Card><P>{step.info}</P></Card>
+              <Card><P>{step.info}</P>{historyIncomplete ? <P small muted>{locale === "ar" ? "سجل الملاحظات السابقة غير مكتمل. تُعرض فقط الخطوات التي يمكن التحقق منها." : "Earlier observation history is incomplete. Only verified prior checkpoints are shown."}</P> : null}</Card>
+              {supplemental.length > 0 ? <Card>
+                <H2>{locale === "ar" ? "ملاحظات الحالة" : "Case observations"}</H2>
+                {supplemental.map((o, i) => <P key={`${o.label}-${i}`}>{o.label}: {String(o.value)}{o.unit ? ` ${o.unit}` : ""}</P>)}
+              </Card> : null}
               <H2>{step.prompt}</H2>
-              {step.options.map((o, i) => (
-                <Button key={i} label={o.text} variant={choice === i ? "primary" : "outline"} disabled={revealed} onPress={() => setChoice(i)} />
+              {scenarioChoiceOrder(code ?? "", pos, step.options.length).map(i => (
+                <Button key={i} label={step.options[i]!.text} variant={choice === i ? "primary" : "outline"} disabled={revealed} onPress={() => setChoice(i)} />
               ))}
               {revealed && option ? (
                 <Card>
                   <P>{t("cases.feedback")}</P>
+                  <P small>{locale === "ar" ? "نقاط التعلم لهذا القرار" : "Learning points for this decision"}: {option.points} / {Math.max(...step.options.map(o=>o.points))}</P>
                   <P>{option.feedback}</P>
-                  {option.consequence ? <P small muted>{option.consequence}</P> : null}
+                  {option.consequence ? <P small muted>{locale === "ar" ? "النتيجة المحتملة: " : "Possible consequence: "}{option.consequence}</P> : null}
+                  {sharedCheckpoint ? <P small muted>{locale === "ar" ? "الخطوة التالية نقطة تعليمية مشتركة وليست نتيجة فردية لاختيارك." : "The next step is a shared teaching checkpoint, not an individualized outcome of your choice."}</P> : null}
                 </Card>
               ) : null}
               <Button label={revealed ? (option?.next == null ? t("cases.summary") : t("cases.continue")) : t("cases.choose")} disabled={choice === null && !revealed} onPress={revealed ? advance : decide} />

@@ -1,100 +1,142 @@
 {
- "equipment_id": "EQ-05",
- "number": 5,
- "title": "Defibrillators",
- "category": "defibrillators",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": true,
- "manufacturer_documents": [],
- "related_skill": "SK-19",
- "evidence_status": "partial",
- "diagram": {
-  "kind": "loop",
-  "original_graphic": true,
-  "parts": [
-   "Pads or paddles",
-   "Rhythm display",
-   "Charge and shock controls",
-   "Safety check"
+  "equipment_id": "EQ-05",
+  "number": 5,
+  "title": "Defibrillators",
+  "category": "defibrillators",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+  "device_neutral": true,
+  "manufacturer_documents": [],
+  "related_skill": "SK-19",
+  "evidence_status": "partial",
+  "diagram": {
+    "kind": "loop",
+    "original_graphic": true,
+    "parts": [
+      "Pads or paddles",
+      "Rhythm display",
+      "Charge and shock controls",
+      "Safety check"
+    ],
+    "alt_text_needed": true
+  },
+  "parameters": [
+    {
+      "name": "Rhythm display",
+      "explanation": "The rhythm display supports trained rhythm assessment. Check the clinical state, distinguish arrest from a rhythm with a pulse, and do not decide to shock from an isolated monitor label.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    },
+    {
+      "name": "Energy setting",
+      "explanation": "The energy selected for a shock is distinct from rhythm assessment and charge status. The appropriate selection depends on the defibrillator waveform and resuscitation protocol; only authorised trained staff make that selection.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    },
+    {
+      "name": "Charge state",
+      "explanation": "Indicates the device's preparation for shock delivery, not a clinical instruction to deliver a shock. During manual CPR the trained team minimizes interruptions, continues compressions while charging where appropriate, clears contact before shock and follows device-specific safety procedures.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ]
+    }
   ],
-  "alt_text_needed": true
- },
- "parameters": [
-  {
-   "name": "Rhythm display",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Energy setting",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Charge state",
-   "explanation": null,
-   "support": "needs_source"
-  }
- ],
- "safety_concepts": [
-  {
-   "text": "Perform and call a safety check so nobody touches the patient or bed at the moment of shock; do not defibrillate during manual chest compressions, even with gloves.",
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ],
-   "section": "safety"
-  },
-  {
-   "text": "Pads are preferred over paddles when available; if paddles are used apply firm force and good contact to limit arcing.",
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ],
-   "section": "safety"
-  },
-  {
-   "text": "Keep the pre-shock pause as short as possible: compressions continue while the defibrillator charges; a coordinated team can complete manual defibrillation with under 5 seconds of interruption.",
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ],
-   "section": "safety"
-  }
- ],
- "monitoring_concepts": [],
- "escalation_concepts": [
-  {
-   "text": "Call for help early; follow the oxygen-safety steps in unit policy during defibrillation.",
-   "support": "partial",
-   "sources": [
-    "S-ERC-ALS-2025"
-   ],
-   "section": "escalation"
-  }
- ],
- "sources": [
-  {
-   "id": "S-ERC-ALS-2025",
-   "read": "full",
-   "use": "ERC ALS 2025 (paraphrase only; commercial use needs ERC agreement)"
-  }
- ],
- "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
-  "Unit policy for this equipment"
- ],
- "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
- ]
+  "safety_concepts": [
+    {
+      "text": "Perform and call a safety check so nobody touches the patient or bed at the moment of shock; do not defibrillate during manual chest compressions, even with gloves.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Pads are preferred over paddles when available; if paddles are used apply firm force and good contact to limit arcing.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Keep the pre-shock pause as short as possible: compressions continue while the defibrillator charges; a coordinated team can complete manual defibrillation with under 5 seconds of interruption.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "In adult cardiac arrest, unsynchronised defibrillation is used for ventricular fibrillation or pulseless ventricular tachycardia, not asystole or pulseless electrical activity. Synchronized cardioversion for indicated tachyarrhythmias with a pulse is a distinct clinician-led procedure; follow current resuscitation training and the device instructions.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Coordinate fire precautions with the airway team: keep free-flowing oxygen away from the chest and direct ventilator exhaust away from the shock area. Do not routinely disconnect a secured tracheal or supraglottic airway circuit for defibrillation. Maintain ventilation and follow the resuscitation team's device-specific safety procedure.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "During preparation for adult cardiac-arrest defibrillation, check pad position with the resuscitation team. Incorrect lateral pad placement can reduce effectiveness; an implanted pacemaker or defibrillator also requires attention to pad clearance under the applicable resuscitation protocol. Maintain compressions during preparation when feasible and do not delay an indicated shock for nonessential adjustments.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "safety"
+    }
+  ],
+  "monitoring_concepts": [
+    {
+      "text": "After an indicated shock during adult cardiac arrest, resume compressions promptly unless signs of restored circulation justify assessment under the resuscitation protocol. A charged device or a monitor rhythm label alone does not establish that a shock is indicated.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "monitoring"
+    }
+  ],
+  "escalation_concepts": [
+    {
+      "text": "Call for help early; follow the oxygen-safety steps in unit policy during defibrillation.",
+      "support": "partial",
+      "sources": [
+        "S-ERC-ALS-2025"
+      ],
+      "section": "escalation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-ERC-ALS-2025",
+      "read": "full",
+      "use": "ERC ALS 2025 (paraphrase only; commercial use needs ERC agreement)"
+    }
+  ],
+  "required_sources": [
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
+    "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+    "Unit policy for this equipment"
+  ],
+  "gaps": [
+    "All listed parameters have preliminary cited explanations; the individual claims, evidence strength and model applicability still require independent appraisal.",
+    "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+    "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+  ]
 }

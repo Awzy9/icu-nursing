@@ -13,6 +13,14 @@
     {
       "source_id": "N-AHS-CRRT-ALARM-2025",
       "device": "Alberta Health Services CRRT alarm pathway for one machine family (PrisMax); applies to that family only"
+    },
+    {
+      "source_id": "S-VANTIVE-PRISMAX-PRESSURES",
+      "device": "PrisMax device family only; software revision not specified; verify current IFU"
+    },
+    {
+      "source_id": "S-VANTIVE-PRISMAX-ACCESS",
+      "device": "PrisMax device family only; software revision not specified; verify current IFU"
     }
   ],
   "related_skill": "SK-17",
@@ -31,23 +39,39 @@
   "parameters": [
     {
       "name": "Access and return pressures",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "On PrisMax, these values reflect the pressure on the blood-withdrawal and blood-return sides of the circuit. Expected pressure depends on access configuration and flow; the machine uses an established operating point to detect deviations. An abnormal trend may reflect access or circuit problems, not a diagnosis by itself. Assess the patient and obtain trained help under the applicable instructions.",
+      "support": "partial",
+      "sources": [
+        "S-VANTIVE-PRISMAX-PRESSURES",
+        "S-VANTIVE-PRISMAX-ACCESS"
+      ]
     },
     {
       "name": "Blood flow",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "Blood flow describes circulation through the extracorporeal blood pathway and is distinct from net fluid removal and delivered solute clearance. On PrisMax, the flow selected affects access-pressure behavior. Compare with the authorised prescription and report delivery discrepancies; changes require an authorised order or protocol.",
+      "support": "partial",
+      "sources": [
+        "S-VANTIVE-PRISMAX-ACCESS",
+        "S-VANTIVE-PRISMAX-PRESSURES",
+        "S-KDIGO-AKI-2012"
+      ]
     },
     {
       "name": "Delivered dose against prescription",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "The prescribed treatment and actual delivered treatment are not necessarily equal. Time off therapy during transport, circuit clotting and equipment preparation can reduce delivered treatment. Document the duration and reason for interruptions and report discrepancies between prescribed and delivered dose; the authorised team evaluates the need for prescription changes. Delivered solute clearance is not the same as net patient fluid removal.",
+      "support": "partial",
+      "sources": [
+        "S-KDIGO-AKI-2012",
+        "S-RRT-MULTIDISC-2026"
+      ]
     },
     {
       "name": "Alarm state",
-      "explanation": null,
-      "support": "needs_source"
+      "explanation": "An alarm signals a condition requiring assessment; its priority and machine response depend on the model. Assess the patient and summon a trained operator, rather than assuming the alarm identifies the cause or clearing it without assessment.",
+      "support": "partial",
+      "sources": [
+        "N-AHS-CRRT-ALARM-2025"
+      ]
     }
   ],
   "safety_concepts": [
@@ -92,15 +116,21 @@
         "S-KDIGO-AKI-2012"
       ],
       "section": "monitoring"
+    },
+    {
+      "text": "If regional citrate anticoagulation is used, track ordered systemic ionized and total calcium, acid-base status and lactate under the local protocol. Escalate increasing calcium replacement needs or worsening metabolic abnormalities as possible citrate-related complications; they are not diagnostic alone. Changes to anticoagulation or calcium delivery require the authorised team.",
+      "support": "partial",
+      "sources": [
+        "S-RRT-MULTIDISC-2026"
+      ],
+      "section": "monitoring"
     }
   ],
   "escalation_concepts": [
     {
-      "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
-      "support": "partial",
-      "sources": [
-        "N-AHS-CRRT-ALARM-2025"
-      ],
+      "text": "For persistent alarms, urgently involve the trained CRRT operator and prescriber. Blood return or circuit termination must follow the specific device and local procedure. Do not attempt blood return when circuit safety is uncertain, including suspected clotting. Document interruptions and any circuit blood loss.",
+      "support": "local_protocol",
+      "sources": [],
       "section": "escalation"
     },
     {
@@ -122,15 +152,30 @@
       "id": "N-AHS-CRRT-ALARM-2025",
       "read": "full",
       "use": "AHS Dialyzing Wisely CRRT alarm pathway (Jan 2025), device-specific (PrisMax), read in full"
+    },
+    {
+      "id": "S-VANTIVE-PRISMAX-PRESSURES",
+      "read": "partial",
+      "use": "Manufacturer HTML pressure operating point and blood flow relationship; no full IFU"
+    },
+    {
+      "id": "S-VANTIVE-PRISMAX-ACCESS",
+      "read": "partial",
+      "use": "Manufacturer HTML causes and relationship to prescribed flow; procedure not adopted"
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "read": "partial",
+      "use": "2026 multidisciplinary ICU RRT guideline; selected citrate monitoring and accumulation discussion inspected."
     }
   ],
   "required_sources": [
-    "Source explaining each listed monitored parameter in device-neutral terms",
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
     "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
     "Unit policy for this equipment"
   ],
   "gaps": [
-    "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
+    "All listed parameters have preliminary cited explanations; individual claims, evidence strength and model applicability still require independent appraisal.",
     "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
     "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available.",
     "HIT clinical-probability assessment and alternative-anticoagulant orders require a local multidisciplinary protocol; no machine setting or dose advice is supplied."

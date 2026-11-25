@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Glasgow Coma Scale – the Glasgow Structured Approach to Assessment (glasgowcomascale.org, Royal College of Physicians and Surgeons of Glasgow): GCS Assessment Aid (English, © Sir Graham Teasdale 2015; Institute of Neurological Sciences, NHS Greater Glasgow and Clyde) and the 'What is GCS' and 'What is GCS-P' pages; accessed 2026-11-14"]
-sources: [S-GCS-OFFICIAL]
+sources: [S-GCS-OFFICIAL, S-NICE-NG232, S-AHA-AIS-2026]
 independently_written_note: "Original wording. Sources actually read: the official GCS Assessment Aid PDF and three pages of the official GCS website. The original Lancet papers (1974, 2014), national head-injury or neurocritical-care guidelines, and the register's Open RN source were NOT read. The aid is copyrighted (Sir Graham Teasdale 2015) and the site has a 'Permissions' page: the chart is not reproduced; ask for permission before reproducing the scale wording, chart or images. This is not a guideline; there are no graded recommendations, no severity bands and no thresholds in the sources read."
 ---
 # Glasgow Coma Scale – structured neurological assessment at the bedside
@@ -41,12 +41,14 @@ Consciousness can change quickly in brain injury, sedation, metabolic disturbanc
 
 ## 7. Nursing responsibilities
 - Use the same structured approach each time and the same stimuli; stimulate in a stepped way and only as much as needed.
-- Record the components and rating terms, not just a number; record "non testable" with the reason.
+- Record the components and rating terms, not just a number; record "non testable" with the reason. If any component is non testable, omit the composite total rather than assigning a score of 1 or a fabricated value. Continue documenting the assessable components and trends.
 - Compare with previous assessments; report change immediately rather than waiting for the next scheduled round.
 - Account for sedation, analgesia, paralytics, intubation and injuries; record doses and timing so the team can interpret findings.
 - Maintain safety and dignity during stimulation; avoid repeated painful stimulation beyond what is needed; use finger-tip pressure before trapezius or supraorbital pressure.
 - Escalate promptly and document the escalation.
 - Communicate with relatives honestly and avoid predictions.
+
+**Neurological trends beyond the composite score (NICE NG232; official GCS resource).** In head injury observation, record pupil size and light response, limb movement and relevant physiological observations alongside the individual assessable consciousness components. Compare with the patient's known baseline, including pre-existing deficits. New asymmetry, deteriorating motor response or unexplained reduced consciousness warrants urgent reassessment, even if the total score is unchanged or cannot be calculated. Document the observed change and its timing, confounders and urgent escalation; do not wait for a repeat scheduled score or repeatedly stimulate a deteriorating patient before calling for help.
 
 ## 8. Monitoring parameters
 GCS components and trend at the frequency in the plan (policy and clinical condition); pupils and limb movement per policy; oxygen saturation, blood pressure, temperature, glucose, sedation level, ventilation values; ICP/CPP where monitored; seizures.
@@ -67,6 +69,8 @@ Not covered by the sources read: severity bands (mild, moderate, severe), progno
 ## 10. Warning signs and red flags
 A fall in any component, especially in the motor response, or a falling total over consecutive assessments (the GCS site states that findings signal the need for new actions); new difficulty or inability to assess because of a new interfering factor. Other neurological observations (pupils, limb movement, vital signs) and their warning patterns follow local neurological observation policy and medical guidance; the sources read do not list further red flags.
 
+**Suspected acute stroke is a separate emergency pathway (AHA/ASA 2026).** An apparently preserved level of consciousness does not exclude a disabling focal deficit. Escalate sudden new speech difficulty, asymmetric limb movement or other focal neurological change through the stroke response pathway without waiting for a lower GCS score. Report the last-known-well time, changes from baseline, and glucose if obtained without delaying the response. After clinician-confirmed acute ischemic stroke, the 2026 guideline advises against intensive glucose lowering to 80–130 mg/dL for improved outcomes and against routine intensive systolic pressure lowering below 140 mmHg after reperfusion treatment. These findings are not universal blood-pressure or glucose prescriptions; follow the diagnosis-specific orders and report departures or deterioration. GCS is not a substitute for a trained stroke assessment.
+
 ## 11. Nursing interventions within scope
 | Action | Scope label |
 |---|---|
@@ -76,7 +80,7 @@ A fall in any component, especially in the motor response, or a falling total ov
 | Discussing prognosis with relatives | Medical team decision |
 
 ## 12. Escalation criteria
-Escalate immediately for any fall in GCS (especially a one-point or greater fall in motor response, or a fall in total), new pupil changes, new focal signs, seizure, or inability to complete assessment because of a new factor.
+Escalate immediately for a fall in assessable GCS components, new pupil changes, focal signs, seizures or an unexplained new assessment limitation. Assess airway, breathing and circulation, summon urgent help for acute deterioration and record possible confounders. Do not wait for a composite score when a component is non testable. Sedation interruption is a clinician-directed safety decision, not a prerequisite for escalation.
 SBAR — **S:** bed X, motor response has changed from localising to abnormal flexion in the last hour. **B:** day 2 after subarachnoid haemorrhage, sedation off since 06:00, pupils equal and reactive earlier, sodium and glucose normal. **A:** possible neurological deterioration. **R:** please review now; I will repeat the assessment every [interval] and check pupils and vital signs.
 
 ## 13. Potential complications
@@ -89,7 +93,7 @@ Date and time; each component's rating and the stimulus used; non-testable facto
 At the start of the hour you check for interfering factors (sedation running, eyelid swelling), observe the patient, speak the patient's name loudly, ask a two-part request ("lift your right hand and then show me two fingers"), and apply fingertip pressure only if there is no response. You record the ratings and the stimuli used, compare with the last assessment, and tell the doctor immediately about any change.
 
 ## 16. Clinical case (fictional)
-A 48-year-old woman after traumatic brain injury opens her eyes to sound, says single words and localises to pressure. At the next hourly check she opens her eyes only to pressure and her motor response is abnormal flexion. The nurse repeats the check, notes that sedation has not changed, examines the pupils, calls the doctor with SBAR and records the full component ratings.
+A 48-year-old woman after traumatic brain injury opens her eyes to sound, says single words and localises to pressure. At the next hourly check she opens her eyes only to pressure and her motor response is abnormal flexion. The nurse immediately activates urgent clinical reassessment, assesses airway, breathing and circulation, and reports the motor and eye response changes. While help is arranged, she checks pupil findings and relevant sedation history without delaying care, then records the assessable components and times.
 
 ## 17. MCQs
 **Q1 (application).** A patient is intubated, so the verbal component cannot be assessed. What should the nurse record for the verbal response?
@@ -98,7 +102,7 @@ B. None, scoring 1, because no sound can be heard from the patient at any time d
 C. Orientated, because the patient nods or shakes the head in sensible answer to questions put to him.
 D. Sounds, scoring 2, because the patient attempts to mouth words and appears to be trying to communicate.
 **Answer: A.**
-**Why correct:** The aid uses "non testable" where a factor interferes with communication; it should not be recorded as no response.
+**Why correct:** The aid uses "non testable" where a factor interferes with communication; it should not be recorded as no response. Document the reason and other assessable components. The official GCS FAQ advises against reporting a total score when any component is not testable.
 **Why not C:** Nodding does not meet the orientation criterion.
 **Why not B:** Score 1 means no audible response without an interfering factor.
 **Why not D:** Mouthing is not an audible moan or groan.
@@ -109,21 +113,21 @@ B. Use supraorbital pressure first because it gives the clearest response, then 
 C. Use physical pressure only if there is no response to a spoken or shouted request, starting with the fingertip.
 D. Avoid verbal requests because patients rarely respond to them, and go straight to physical stimuli.
 **Answer: C.**
-**Why correct:** The aid steps from sound to physical pressure (fingertip, trapezius, supraorbital).
+**Why correct:** The aid steps from sound to physical pressure (fingertip, trapezius, supraorbital). Physical stimulation is only for trained assessors when clinically indicated; check interfering factors and injury-site restrictions, avoid unnecessary repeated stimulation and follow the local neurological assessment procedure.
 **Why not A:** Painful stimuli should not come first.
 **Why not B:** Supraorbital pressure is a later step.
 **Why not D:** Verbal request is the first stimulus.
 
-**Q3 (monitoring).** Why should nurses record the three components rather than only a total score?
-A. A total score is invalid unless it is recorded by a doctor, so the nurse's entries are supplementary.
-B. The components are needed for medico-legal reasons and have no value for clinical communication.
-C. The total score is more sensitive than the individual components, so nothing is gained by recording them.
-D. The components show which function has changed and allow trends to be compared between staff.
+**Q3 (judgment).** During neurological observations after head injury, eye opening improves from E3 to E4 while motor response falls from M6 to M5. Verbal response stays V4. The total GCS remains 13. What should the nurse do?
+A. Record the unchanged total and continue the planned observation interval.
+B. Repeat the total score after routine care and report if it falls below 13.
+C. Record the best eye and motor responses from either assessment to represent recovery.
+D. Document the component changes, assess the patient and escalate the motor decline.
 **Answer: D.**
-**Why correct:** Recording components allows accurate trend communication and avoids hiding changes inside an unchanged total.
-**Why not A:** Nurses can record valid scores.
-**Why not B:** The purpose is clinical communication.
-**Why not C:** The sources do not claim this.
+**Why correct:** An unchanged total can conceal a clinically important motor deterioration. Record all three components from the current assessment, compare each with the previous assessment and check for interfering factors, pupil changes and asymmetry. In head injury a new motor decline warrants prompt escalation alongside reassessment. The official GCS guidance advises against reporting a total score when any component is not testable.
+**Why not A:** The unchanged total masks the decline in motor response and cannot establish neurological stability.
+**Why not B:** A fall in the total is not necessary for concern; waiting for a numerical threshold may delay assessment.
+**Why not C:** Combining the best responses from different time points creates a misleading account of the current neurological state.
 
 **Q4 (prioritization).** At the hourly check, a patient's motor response has changed from obeying commands to localising, with no change in sedation. What should the nurse do?
 A. Record it and continue routine care until the next scheduled review, since the sedation has not changed.
@@ -131,21 +135,21 @@ B. Repeat the assessment to confirm, check pupils and vital signs, and report th
 C. Reduce the sedation to see if the response improves, without informing the team, to avoid an unnecessary escalation.
 D. Ask the relatives whether the patient seems different before deciding what to do about the change in response.
 **Answer: B.**
-**Why correct:** A fall in motor response can signal deterioration; the sources emphasise trends signalling the need for action.
+**Why correct:** A fall in motor response can signal deterioration; the sources emphasise trends signalling the need for action. Escalate urgently while confirming the finding and checking pupils, vital signs and reversible contributors. NICE NG232 identifies deterioration in motor response, new pupil inequality or asymmetric movement as concerning in head injury. Do not wait for a second score or a particular total to request help.
 **Why not A:** Delaying the report risks harm because the change in consciousness may be progressing.
 **Why not C:** Sedation changes need an order or protocol and the team should be told.
 **Why not D:** Relatives' views are helpful but do not replace prompt reporting.
 
-**Q5 (safety).** A patient on a continuous sedative infusion has a low GCS. What is the best way to interpret and communicate the finding?
-A. Record the score without mentioning the sedation so that the chart stays simple and easy to compare over time.
-B. Assume the low score is due to the sedation and make no report, because it is the expected explanation.
-C. Record the components, note the sedation and dose timing, and report so the team can interpret the finding.
-D. Stop the infusion yourself to obtain a true score, then restart it once the assessment has been recorded.
+**Q5 (judgment).** An intubated patient with severe brain injury is receiving prescribed sedation and neuromuscular blockade. The previous neurological assessment was obtained before blockade. A colleague proposes scoring the absent motor response as M1 and using the resulting total to judge deterioration. What should the nurse do?
+A. Enter M1 and compare the new total directly with the pre-blockade total.
+B. Record the pre-blockade motor response as the current score until the infusion is stopped.
+C. Mark components that cannot be tested, document confounders and escalate new concerns.
+D. Interrupt the prescribed blockade and sedation to obtain a complete score for the chart.
 **Answer: C.**
-**Why correct:** Sedation interferes with assessment and must be recorded with the findings.
-**Why not A:** Omitting sedation hides an interfering factor.
-**Why not B:** A new fall may have another cause.
-**Why not D:** Stopping sedation requires an order.
+**Why correct:** Pharmacological paralysis interferes with observable motor responses, and intubation may make the verbal component untestable. Document each assessable component, the reason others are not testable, medication exposure and timing. Do not assign a false low score or total. Continue the prescribed neurological monitoring plan, assess available findings and escalate suspected deterioration; any awakening or interruption of blockade requires an authorized assessment of safety.
+**Why not A:** Absent observable movement during paralysis does not establish an absent neurological motor response.
+**Why not B:** A historical response can inform the baseline but must not be presented as a current observation.
+**Why not D:** An independent interruption can compromise the prescribed respiratory or neurological treatment plan; coordinate assessment with the responsible team.
 
 **Q6 (scope).** Which task belongs to the medical team rather than the nurse?
 A. Recording the stimulus used and the rating for each component.
@@ -163,12 +167,16 @@ D. Deciding on imaging, intubation or treatment of raised intracranial pressure.
 - Glasgow Coma Scale – the Glasgow Structured Approach to Assessment (website pages "Home", "What is GCS", "What is GCS-P"). https://www.glasgowcomascale.org/ (accessed 2026-11-14)
 - Teasdale G, Jennett B. Assessment of coma and impaired consciousness: a practical scale. Lancet 1974;2:81-84 (cited by the website; not read).
 
+- NICE NG232 head injury recommendations. https://www.nice.org.uk/guidance/ng232/chapter/recommendations (selected recommendations or abstract, accessed 2026-11-24; full text not appraised in this pass)
+
+- AHA/ASA. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke. Published online January 26, 2026. https://doi.org/10.1161/STR.0000000000000513; official summary https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know (accessed 2026-11-24; selected summary points and indexed text only). An August 2026 correction is listed; full corrected text was inaccessible, so no changed dysphagia therapy recommendation is taught.
+
 ## 19. Local protocol note
 Frequency of neurological observations, pupil assessment method, escalation triggers and documentation formats follow local policy and neurosurgical/neurocritical-care teams.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: an official, internationally used scale and structured-approach aid. These are teaching/practice documents, not graded guidelines; evidence on reliability and prognosis was not read.
 - Applicability: widely used worldwide; adult version only; paediatric versions and the full GCS-P/charts were not covered. Copyright and permission requirements apply.
-- Red flags: the draft now lists only a fall in GCS components or total, taken from the GCS website's statement that findings signal the need for new actions. Pupil, limb and vital-sign warning patterns are left to local neurological observation policy because no source read states them (the earlier broader list was removed).
+- Red flags: use serial assessable GCS components with the diagnosis-specific observation pathway. The 2026 AHA/ASA summary adds a limited stroke-specific escalation and monitoring update, not a generic neurocritical-care threshold. Full guideline/correction appraisal, rights and local protocol remain outstanding.
 - Not covered: GCS interpretation bands, ICP/CPP management, brain injury guidelines, sedation scales, CAM-ICU.
 - Open questions for reviewers (NEURO, CCP, NE, BN): permission to reproduce scale wording; frequency; whether to include GCS-P; communication of prognosis.

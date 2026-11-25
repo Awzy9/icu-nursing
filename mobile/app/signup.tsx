@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import { Linking, TextInput, View } from "react-native";
 import { CaptchaView } from "../src/auth/CaptchaView";
-import { CAPTCHA_REQUIRED } from "../src/auth/config";
+import { AUTH_SCHEME, CAPTCHA_REQUIRED } from "../src/auth/config";
 import { useAuth } from "../src/auth/provider";
 import { useApp } from "../src/state/app";
 import { Button, Callout, H1, P, Screen } from "../src/ui/components";
@@ -32,7 +32,7 @@ export default function SignUp() {
     if (password !== confirmPassword) { setError(t("auth.passwordMismatch")); return; }
     setBusy(true);
     try {
-      const response = await manager.signUp({ displayName, email, password, locale, captchaToken: token ?? undefined, redirectTo: "nursingmastery://auth/callback" });
+      const response = await manager.signUp({ displayName, email, password, locale, captchaToken: token ?? undefined, redirectTo: `${AUTH_SCHEME}://auth/callback` });
       if (response.ok) {
         setPassword(""); setConfirmPassword(""); setConfirmationRequired(response.confirmationRequired);
         setCreated(true);

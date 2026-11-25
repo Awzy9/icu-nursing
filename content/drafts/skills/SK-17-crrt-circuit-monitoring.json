@@ -38,6 +38,16 @@
       "id": "N-LHSC-CRRT-PRINCIPLES",
       "read": "partial",
       "use": "London Health Sciences Centre: clotting surveillance, TMP and filter pressure-drop concepts; relevant paragraphs read 2026-11-23. Centre-specific values and procedures excluded."
+    },
+    {
+      "id": "S-RCA-DELPHI-2026",
+      "read": "partial",
+      "use": "Selected consensus statements 8–10 and remarks on citrate accumulation"
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "read": "partial",
+      "use": "Selected January 2026 multidisciplinary ICU RRT guidance on mobilization, drug monitoring and assessment for stopping RRT; publisher HTML accessed 2026-11-24; full appraisal pending."
     }
   ],
   "objectives": [
@@ -66,6 +76,13 @@
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
+          ]
+        },
+        {
+          "text": "CRRT alone is not an automatic contraindication to early mobilization. Assess patient stability and secure access and circuit with the trained multidisciplinary team; follow the local mobility and device-safety criteria. Do not disconnect, reposition a dialysis catheter or interrupt treatment independently for mobility.",
+          "support": "partial",
+          "sources": [
+            "S-RRT-MULTIDISC-2026"
           ]
         }
       ]
@@ -127,7 +144,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "For access and return alarms, check the patient (coughing, suctioning, moving), whether a line is clamped or kinked, the dialysis catheter (reposition, flush and aspirate, according to local practice) and the blood-flow rate; for flow alarms check clamps and kinks and whether bags touch other objects, leak or sit on the wrong scale.",
+          "text": "Assess the patient first. Report access, return or flow alarms and recent patient or circuit changes to the trained operator. Device-specific tubing, catheter and bag checks must follow the approved local procedure; this lesson does not teach catheter manipulation or alarm clearance.",
           "support": "sourced",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
@@ -169,6 +186,27 @@
             "N-LHSC-CRRT-PRINCIPLES",
             "S-KDIGO-AKI-2012"
           ]
+        },
+        {
+          "text": "During regional citrate anticoagulation, review systemic ionized calcium, the total-to-ionized calcium ratio, calcium supplementation requirements and acid-base trends under the prescribed protocol. Escalate a rising ratio with falling systemic ionized calcium, increasing calcium needs or worsening metabolic acidosis; no single result establishes citrate accumulation.",
+          "support": "partial",
+          "sources": [
+            "S-RCA-DELPHI-2026"
+          ]
+        },
+        {
+          "text": "Antibiotic exposure can change when RRT starts, stops or is interrupted. Report the modality, interruptions, residual urine output and sampling times to the pharmacist and treating team; coordinate prescribed therapeutic drug monitoring where available, particularly for vancomycin, aminoglycosides and selected beta-lactams. Do not independently change doses or delay urgent ordered antibiotics while waiting for levels.",
+          "support": "partial",
+          "sources": [
+            "S-RRT-MULTIDISC-2026"
+          ]
+        },
+        {
+          "text": "When kidney recovery is being assessed, record spontaneous urine output separately from diuretic-associated output and communicate trends in fluid status, potassium and acid–base results. Increased urine output after a diuretic is not proof of recovery or readiness to stop RRT. There is no single validated urine-output cutoff for stopping therapy; persistent hyperkalaemia, acidosis or fluid overload warrant specialist reassessment. The decision and monitoring plan are clinician-led.",
+          "support": "partial",
+          "sources": [
+            "S-RRT-MULTIDISC-2026"
+          ]
         }
       ]
     },
@@ -176,11 +214,9 @@
       "support": "partial",
       "items": [
         {
-          "text": "If alarms cannot be managed: contact the manufacturer's support line, return blood when possible and end treatment (according to local practice), document the reason for stopping, and notify the physician, who may need to rewire or insert a new line.",
-          "support": "sourced",
-          "sources": [
-            "N-AHS-CRRT-ALARM-2025"
-          ]
+          "text": "Escalate persistent alarms to the responsible trained team and prescriber. Blood return or circuit termination must follow the current device instructions and approved local procedure. Do not attempt blood return when circuit safety is uncertain, including suspected clotting, until the trained team has determined the safe response. Record interruptions and any circuit blood loss.",
+          "support": "local_protocol",
+          "sources": []
         },
         {
           "text": "Report bleeding, suspected HIT, access problems, haemodynamic instability and interruptions.",
@@ -248,12 +284,10 @@
     },
     {
       "phase": "escalation",
-      "text": "If alarms cannot be managed, return blood when possible per local practice, document the reason and notify the prescriber.",
+      "text": "For persistent alarms, summon a trained CRRT operator and prescriber. Do not attempt blood return if circuit safety is uncertain, including suspected clotting. Follow the authorised device-specific termination pathway and record any blood loss.",
       "critical": true,
-      "support": "sourced",
-      "sources": [
-        "N-AHS-CRRT-ALARM-2025"
-      ]
+      "support": "local_protocol",
+      "sources": []
     },
     {
       "phase": "documentation",
@@ -270,12 +304,30 @@
       "sources": [
         "N-LHSC-CRRT-PRINCIPLES"
       ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "During regional citrate anticoagulation, review systemic ionized calcium, the total-to-ionized calcium ratio, calcium supplementation requirements and acid-base trends under the prescribed protocol. Escalate a rising ratio with falling systemic ionized calcium, increasing calcium needs or worsening metabolic acidosis; no single result establishes citrate accumulation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-RCA-DELPHI-2026"
+      ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "Communicate RRT interruptions and timed antibiotic levels to the pharmacist and clinical team; do not independently change drug doses.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-RRT-MULTIDISC-2026"
+      ]
     }
   ],
   "gaps": [
     "The alarm pathway is specific to one device family (PrisMax) and one health service; it is not a cross-manufacturer standard.",
     "The manufacturer's operator's manuals were located but not read: Baxter's Prismaflex 7.xx manual URL now redirects to the Vantive site, and software versions differ by unit.",
-    "Priming, citrate monitoring, drug dosing, weaning and device-specific filter-change thresholds are not covered; only pressure-trend concepts are introduced.",
+    "Priming, citrate and calcium adjustment procedures, numerical thresholds, drug dosing, weaning and device-specific filter-change thresholds are not covered. Selected 2026 Delphi monitoring statements are now mapped; local protocols, lab schedules and independent specialist review are required.",
     "KDIGO 2026 update is a draft; the 2012 guideline is over ten years old.",
     "Full ASH HIT probability-assessment algorithm and locally approved anticoagulant alternatives require clinician and pharmacist review; no stand-alone nursing stop/titrate protocol is taught."
   ],
@@ -283,7 +335,8 @@
     "AHS pathway: licence not stated on the file; verify before reproducing.",
     "Manufacturer documentation: reproduction permission required.",
     "KDIGO: verify reuse terms.",
-    "LHSC clinical teaching page: no figures, local thresholds or operator sequences reproduced; verify commercial reuse rights."
+    "LHSC clinical teaching page: no figures, local thresholds or operator sequences reproduced; verify commercial reuse rights.",
+    "January 2026 multidisciplinary guideline selected recommendations cited only pending commercial rights review."
   ],
   "references": [
     {
@@ -340,6 +393,28 @@
       "read": "partial",
       "licence_class": "YELLOW (verify)",
       "permission_required": "Verify before reproduction"
+    },
+    {
+      "id": "S-RCA-DELPHI-2026",
+      "title": "Metabolic complications of citrate anticoagulation in continuous renal replacement therapy (CRRT): a Delphi consensus on indications, monitoring and management",
+      "publisher": "Critical Care / Delphi consensus panel",
+      "version": "2026; doi:10.1186/s13054-026-06066-x",
+      "url": "https://link.springer.com/article/10.1186/s13054-026-06066-x",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "title": "Multidisciplinary guidelines on renal replacement therapy in intensive care medicine",
+      "publisher": "Critical Care / German and Austrian multidisciplinary societies",
+      "version": "2026-01-14",
+      "url": "https://doi.org/10.1186/s13054-025-05817-6",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
     }
   ]
 }

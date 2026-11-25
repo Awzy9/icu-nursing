@@ -47,7 +47,7 @@
     "S-RCP-NEWS2"
    ],
    "correct": true,
-   "feedback": "Early-warning scores aid, and do not replace, clinical assessment; a worsening trend deserves escalation."
+   "feedback": "Early-warning scores aid, and do not replace, clinical assessment; a worsening trend deserves escalation. If severe deterioration or immediate danger is apparent, activate the local emergency response without waiting for a score threshold or scheduled repeat observations."
   },
   {
    "id": "b",

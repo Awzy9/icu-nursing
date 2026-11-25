@@ -1,281 +1,403 @@
 {
- "skill_id": "SK-12",
- "number": 12,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Urinary catheter care",
- "category": "elimination-drains",
- "topic_drafts": [
-  "D04-T03"
- ],
- "evidence_status": "partial",
- "license_status": "unassessed",
- "sources": [
-  {
-   "id": "N-CDC-CAUTI-2009",
-   "read": "full",
-   "use": "Recommendation sections I-III read in full text in Phase 7 (2009; PDF footer last update June 2019); other sections not read"
-  }
- ],
- "objectives": [
-  "Describe appropriate indications and the aim of minimising catheter days.",
-  "Maintain a closed drainage system and unobstructed flow.",
-  "Escalate suspected infection or obstruction."
- ],
- "prerequisites": [
-  "Infection prevention (SK-21)",
-  "Urine output monitoring"
- ],
- "sections": {
-  "indications": {
-   "support": "full",
-   "items": [
+  "skill_id": "SK-12",
+  "number": 12,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Urinary catheter care",
+  "category": "elimination-drains",
+  "topic_drafts": [
+    "D04-T03"
+  ],
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "sources": [
     {
-     "text": "Insert catheters only for appropriate indications and leave them only as long as needed (Category IB). Examples include acute retention or outlet obstruction, accurate urine-output measurement in critically ill patients, and prolonged immobilisation; the indications are expert consensus.",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
+      "id": "N-CDC-CAUTI-2009",
+      "read": "full",
+      "use": "Recommendation sections I-III read in full text in Phase 7 (2009; PDF footer last update June 2019); other sections not read"
     },
     {
-     "text": "Avoid catheters for managing incontinence (IB); consider external catheters in cooperative men without retention (Category II).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "safety": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Hand hygiene immediately before and after insertion or any manipulation of the catheter or site (IB).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
+      "id": "S-SHEA-CAUTI-2022",
+      "read": "partial",
+      "use": "Indexed guidance on hourly urine output and indications"
     },
     {
-     "text": "Only trained persons who know aseptic insertion and maintenance do this (IB); in acute care use aseptic technique and sterile equipment (IB).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
+      "id": "S-CDC-URINE-STEWARDSHIP-2026",
+      "read": "partial",
+      "use": "Official HTML colonization, asymptomatic bacteriuria, symptomatic infection and exceptions sections checked"
     },
     {
-     "text": "Maintain a closed drainage system; if aseptic technique breaks, or the system disconnects or leaks, replace the catheter and collecting system aseptically (IB).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
+      "id": "S-IDSA-CUTI-2025",
+      "read": "partial",
+      "use": "Official HTML IV-to-oral and duration recommendations and trial population exclusions checked"
+    }
+  ],
+  "objectives": [
+    "Describe appropriate indications and the aim of minimising catheter days.",
+    "Maintain a closed drainage system and unobstructed flow.",
+    "Escalate suspected infection or obstruction."
+  ],
+  "prerequisites": [
+    "Infection prevention (SK-21)",
+    "Urine output monitoring"
+  ],
+  "sections": {
+    "indications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Insert catheters only for appropriate indications and leave them only as long as needed (Category IB). Examples include acute retention or outlet obstruction, accurate urine-output measurement in critically ill patients, and prolonged immobilisation; the indications are expert consensus.",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "Avoid catheters for managing incontinence (IB); consider external catheters in cooperative men without retention (Category II).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "ICU admission alone is not an indication for an indwelling urinary catheter. Hourly output measurement may be appropriate when it directly guides frequent changes to treatment; reassess this need daily and consider alternatives when precise hourly measurement is no longer necessary.",
+          "support": "partial",
+          "sources": [
+            "S-SHEA-CAUTI-2022"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Hand hygiene immediately before and after insertion or any manipulation of the catheter or site (IB).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "Only trained persons who know aseptic insertion and maintenance do this (IB); in acute care use aseptic technique and sterile equipment (IB).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "Maintain a closed drainage system; if aseptic technique breaks, or the system disconnects or leaks, replace the catheter and collecting system aseptically (IB).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "Use Standard Precautions, including gloves and gown as appropriate, during any manipulation (IB).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Secure the catheter to prevent movement and urethral traction (IB); keep the catheter and tubing free from kinking, the bag below bladder level at all times and off the floor (IB); empty the bag regularly with a separate clean container per patient, avoiding splashing and spigot contact (IB).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Who inserts, changes and removes catheters, and nurse-led removal protocols, follow local policy.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "assessment": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Assess and document the ongoing need for the catheter daily, as part of the unit's review process, and remove it as soon as it is no longer indicated (Category IB) rather than leaving it until a routine fixed interval.",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Sterile gloves, drape, sponges, an appropriate antiseptic or sterile solution for periurethral cleaning and a single-use lubricant packet for insertion; use the smallest bore catheter consistent with good drainage unless otherwise indicated (IB; II).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "The step-by-step insertion sequence is not in the recommendation sections read; follow the competency-approved unit procedure.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Do not change catheters or bags at routine fixed intervals; change for infection, obstruction or a compromised closed system (Category II). Do not clean the periurethral area with antiseptics while the catheter is in place; routine hygiene is appropriate (IB).",
+          "support": "sourced",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "When a small fresh urine sample is clinically indicated, obtain it aseptically from the disinfected needleless sampling port under the local procedure; do not use the drainage bag for urine culture.",
+          "support": "partial",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "Do not perform routine antimicrobial bladder irrigation to prevent infection. Suspected obstruction requires assessment and the authorised catheter-management pathway, not an unplanned irrigation.",
+          "support": "partial",
+          "sources": [
+            "S-SHEA-CAUTI-2022",
+            "N-CDC-CAUTI-2009"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Report fever, new pain, haematuria, obstruction or a compromised drainage system and assess the patient for other causes of deterioration. Cloudiness or odour alone does not establish infection or justify routine cultures or antibiotics; follow the local culture-stewardship and clinical-assessment pathway.",
+          "support": "partial",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        },
+        {
+          "text": "A positive urine culture without compatible symptoms or other evidence of infection commonly represents colonization in a catheterized patient. Do not request routine cultures or assume a positive result requires antibiotics. Pregnancy and certain invasive urological procedures are recognized exceptions requiring clinician assessment. If systemic deterioration raises concern for sepsis, assess promptly and activate the emergency pathway; stewardship is not a reason to delay indicated cultures or urgent treatment.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-URINE-STEWARDSHIP-2026"
+          ]
+        },
+        {
+          "text": "The 2025 IDSA complicated UTI guideline supports shorter treatment and oral conversion in suitable improving patients, but trials often excluded people with indwelling catheters, severe sepsis or major renal impairment. Do not apply a standard antibiotic duration or oral-switch schedule to an unstable ICU patient. Communicate ongoing obstruction, clinical response, renal function and the catheter indication to the treating team.",
+          "support": "partial",
+          "sources": [
+            "S-IDSA-CUTI-2025"
+          ]
+        }
+      ]
+    },
+    "complications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Catheter-associated urinary tract infection, urethral trauma and obstruction.",
+          "support": "partial",
+          "sources": [
+            "N-CDC-CAUTI-2009"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record indication, insertion details, daily review of need and removal date per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
+  },
+  "checklist": [
+    {
+      "phase": "preparation",
+      "text": "Confirm an appropriate indication exists and ask each day whether the catheter is still needed.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
     },
     {
-     "text": "Use Standard Precautions, including gloves and gown as appropriate, during any manipulation (IB).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "full",
-   "items": [
+      "phase": "preparation",
+      "text": "Perform hand hygiene before and after any manipulation.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
+    },
     {
-     "text": "Secure the catheter to prevent movement and urethral traction (IB); keep the catheter and tubing free from kinking, the bag below bladder level at all times and off the floor (IB); empty the bag regularly with a separate clean container per patient, avoiding splashing and spigot contact (IB).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "scope": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Keep the system closed; replace the catheter and system aseptically after a break, disconnection or leak.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
+    },
     {
-     "text": "Who inserts, changes and removes catheters, and nurse-led removal protocols, follow local policy.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "assessment": {
-   "support": "full",
-   "items": [
+      "phase": "procedure",
+      "text": "Keep tubing free from kinks and the bag below bladder level and off the floor.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
+    },
     {
-     "text": "Assess and document the ongoing need for the catheter daily, as part of the unit's review process, and remove it as soon as it is no longer indicated (Category IB) rather than leaving it until a routine fixed interval.",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "equipment": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Secure the catheter to prevent traction.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
+    },
     {
-     "text": "Sterile gloves, drape, sponges, an appropriate antiseptic or sterile solution for periurethral cleaning and a single-use lubricant packet for insertion; use the smallest bore catheter consistent with good drainage unless otherwise indicated (IB; II).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Empty the bag with a separate clean container per patient without touching the spigot.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
+    },
     {
-     "text": "The step-by-step insertion sequence is not in the recommendation sections read; follow the competency-approved unit procedure.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
+      "phase": "escalation",
+      "text": "Report obstruction, new pain, fever, haematuria or systemic deterioration. Cloudy or malodorous urine alone is not a diagnosis; seek clinical assessment rather than automatically requesting a culture.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
+    },
     {
-     "text": "Do not change catheters or bags at routine fixed intervals; change for infection, obstruction or a compromised closed system (Category II). Do not clean the periurethral area with antiseptics while the catheter is in place; routine hygiene is appropriate (IB).",
-     "support": "sourced",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "documentation",
+      "text": "Record indication, daily review and removal date.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Report fever, new pain, cloudy or blood-stained urine, obstruction or a compromised system; do not give systemic antimicrobials routinely to prevent CAUTI (IB; prescriber decisions).",
-     "support": "partial",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "complications": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "For a clinically indicated urine culture, use the disinfected sampling port and aseptic local procedure, not the drainage bag.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "N-CDC-CAUTI-2009"
+      ]
+    },
     {
-     "text": "Catheter-associated urinary tract infection, urethral trauma and obstruction.",
-     "support": "partial",
-     "sources": [
-      "N-CDC-CAUTI-2009"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "assessment",
+      "text": "ICU admission alone is not an indication for an indwelling urinary catheter. Hourly output measurement may be appropriate when it directly guides frequent changes to treatment; reassess this need daily and consider alternatives when precise hourly measurement is no longer necessary.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SHEA-CAUTI-2022"
+      ]
+    },
     {
-     "text": "Record indication, insertion details, daily review of need and removal date per unit standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "procedure",
+      "text": "Do not perform routine antimicrobial bladder irrigation to prevent infection. Suspected obstruction requires assessment and the authorised catheter-management pathway, not an unplanned irrigation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-SHEA-CAUTI-2022",
+        "N-CDC-CAUTI-2009"
+      ]
+    },
+    {
+      "phase": "escalation",
+      "text": "Do not treat a positive urine culture as proof of infection; assess for clinical deterioration and escalate suspected sepsis immediately.",
+      "support": "partial",
+      "sources": [
+        "S-CDC-URINE-STEWARDSHIP-2026"
+      ],
+      "critical": true
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Confirm an appropriate indication exists and ask each day whether the catheter is still needed.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-CDC-CAUTI-2009"
-   ]
-  },
-  {
-   "phase": "preparation",
-   "text": "Perform hand hygiene before and after any manipulation.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-CDC-CAUTI-2009"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Keep the system closed; replace the catheter and system aseptically after a break, disconnection or leak.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-CDC-CAUTI-2009"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Keep tubing free from kinks and the bag below bladder level and off the floor.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-CDC-CAUTI-2009"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Secure the catheter to prevent traction.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "N-CDC-CAUTI-2009"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Empty the bag with a separate clean container per patient without touching the spigot.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "N-CDC-CAUTI-2009"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Report fever, obstruction, cloudy or blood-stained urine.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "N-CDC-CAUTI-2009"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record indication, daily review and removal date.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Insertion step sequence: not in the sections read.",
-  "Specimen collection and removal technique sections: not read in Phase 7.",
-  "Critical-care-specific urine-output monitoring detail: see topic D04-T03."
- ],
- "permissions": [
-  "CDC PDF: no reuse statement on the file; verify before reproducing."
- ],
- "references": [
-  {
-   "id": "N-CDC-CAUTI-2009",
-   "title": "Guideline for Prevention of Catheter-Associated Urinary Tract Infections (2009)",
-   "publisher": "CDC / HICPAC",
-   "version": "2009; PDF footer \"Last update: June 6",
-   "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-CAUTI-H.pdf",
-   "accessed": "2026-11-15",
-   "read": "full",
-   "licence_class": "Recommendation sections I-III read in full text (PDF downloaded and text-extracted); remaining sections not read",
-   "permission_required": "YELLOW (US federal publication; the PDF carries no reuse statement - verify before reproducing)"
-  }
- ]
+  ],
+  "gaps": [
+    "Insertion step sequence: not in the sections read.",
+    "Targeted CDC specimen-collection recommendation checked; exact local sampling technique and removal procedure still require competency review.",
+    "Critical-care-specific urine-output monitoring detail: see topic D04-T03."
+  ],
+  "permissions": [
+    "CDC PDF: no reuse statement on the file; verify before reproducing.",
+    "CDC 2026 educational page and IDSA 2025 guideline cited only pending item-specific rights verification."
+  ],
+  "references": [
+    {
+      "id": "N-CDC-CAUTI-2009",
+      "title": "Guideline for Prevention of Catheter-Associated Urinary Tract Infections (2009)",
+      "publisher": "CDC / HICPAC",
+      "version": "2009; PDF footer \"Last update: June 6",
+      "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-CAUTI-H.pdf",
+      "accessed": "2026-11-15",
+      "read": "full",
+      "licence_class": "Recommendation sections I-III read in full text (PDF downloaded and text-extracted); remaining sections not read",
+      "permission_required": "YELLOW (US federal publication; the PDF carries no reuse statement - verify before reproducing)"
+    },
+    {
+      "id": "S-SHEA-CAUTI-2022",
+      "title": "Strategies to prevent catheter-associated urinary tract infections in acute-care hospitals: 2022 Update",
+      "publisher": "SHEA/IDSA/APIC and partners",
+      "version": "2023 publication, 2022 update",
+      "url": "https://doi.org/10.1017/ice.2023.137",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-CDC-URINE-STEWARDSHIP-2026",
+      "title": "Indwelling Urinary Catheter Culture Stewardship: Overview",
+      "publisher": "CDC",
+      "version": "2026-07-28",
+      "url": "https://www.cdc.gov/uti/hcp/clinical-guidance/",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify before reuse"
+    },
+    {
+      "id": "S-IDSA-CUTI-2025",
+      "title": "2025 Guideline Update on Complicated Urinary Tract Infections",
+      "publisher": "IDSA",
+      "version": "2025-07-17",
+      "url": "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED",
+      "permission_required": "Verify before reuse"
+    }
+  ]
 }

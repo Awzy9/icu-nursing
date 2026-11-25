@@ -9,9 +9,10 @@ import { siteBaseUrl } from "../../src/core/remoteContent";
 import { NavCard } from "../../src/ui/components";
 
 export default function Account() {
-  const { t, locale, setLocale, themeMode, setThemeMode, palette, rtl, progress } = useApp();
+  const { t, locale, setLocale, themeMode, setThemeMode, palette, rtl, progress, storageWarning, retryStorage, ready } = useApp();
   const { config, manager, email, notice, clearNotice } = useAuth();
-  const base = siteBaseUrl(process.env as Record<string, string | undefined>);
+  const pendingCount = Object.keys(progress.pendingFlags ?? {}).length + (progress.pendingReplay?.length ?? 0);
+  const base = siteBaseUrl({ EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL });
   return (
     <Screen>
       <H1>{t("account.title")}</H1>
@@ -27,6 +28,9 @@ export default function Account() {
           </View>
           <P muted>{t("auth.accountIntro")}</P>
           <P>{rtl ? "الدروس المكتملة" : "Completed lessons"}: {progress.completed.length} · {rtl ? "المحفوظات" : "Bookmarks"}: {progress.bookmarks.length}</P>
+          {ready && pendingCount > 0 ? (
+            <Callout tone="warn">{t("account.syncPending", { count: pendingCount })}</Callout>
+          ) : null}
           <NavCard href="/study" title={t("study.title")} body={rtl ? "تابع المراجعة وتقدمك" : "Review your learning progress"} icon="repeat" accent="study" />
           <Button label={t("auth.signOut")} variant="outline" onPress={() => { clearNotice(); void manager?.signOut(); }} />
         </Card>
@@ -48,6 +52,7 @@ export default function Account() {
         </Card>
       )}
 
+      {storageWarning ? <Card><Callout tone="warn">{t("account.storageWarning")}</Callout><Button label={t("account.retryStorage")} variant="outline" onPress={retryStorage} /></Card> : null}
       <SectionLabel>{rtl ? "المساعدة والبدء" : "Help & getting started"}</SectionLabel>
       <NavCard href="/onboarding" title={rtl ? "إعادة جولة التعريف بالتطبيق" : "Replay the app tutorial"}
         body={rtl ? "شرح مبسط للأقسام الرئيسية والأدوات وكيفية بدء التعلم" : "Quickly revisit Learn, Practice, Clinical Tools and Visuals"}

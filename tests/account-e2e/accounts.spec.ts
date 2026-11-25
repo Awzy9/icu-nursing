@@ -1,5 +1,5 @@
 import { expect,test,type Page } from "@playwright/test";
-import { makeUser,cleanup,PASSWORD } from "../live/helpers";
+import { makeUser,cleanup,PASSWORD,signIn } from "../live/helpers";
 import { requireIsolated } from "../../scripts/live/target";
 requireIsolated("test account learning sync");
 const ids:string[]=[];let learner={email:"",id:""},other={email:"",id:""};
@@ -33,4 +33,35 @@ test("answers, bookmarks and completion follow the account across browsers and s
   await a.goto("/en/study");await expect(a).toHaveURL(/\/en\/login/);
   await a.goto("/en/working/QB-D06-T01");await expect(a.getByText("Guest practice:",{exact:false})).toBeVisible();
  } finally{await first.close();await second.close();await third.close();}
+});
+
+test("scenario decisions and missed-answer debrief follow the signed-in learner across browsers",async({browser})=>{
+ const first=await browser.newContext(),second=await browser.newContext(),third=await browser.newContext();
+ try{
+  const a=await first.newPage();await login(a,learner.email);
+  await a.goto("/en/working/SC-10");
+  await a.getByRole("radio",{name:/^Wait and recheck the glucose at the next routine time\./}).check();
+  await a.getByRole("button",{name:"Confirm decision",exact:true}).click();
+  await a.getByRole("button",{name:"Continue",exact:true}).click();
+  // Await the actual signed-in server write, not a timer or local optimistic state.
+  const client=await signIn(learner.email);
+  await expect.poll(async()=>{
+   const result=await client.from("working_sessions").select("position,score,decisions").eq("module_key","SC-10").maybeSingle();
+   return result.data;
+  },{timeout:15000}).toEqual({position:2,score:0,decisions:[{position:1,choice:1}]});
+  const b=await second.newPage();await login(b,learner.email);
+  await b.goto("/en/working/SC-10");
+  await expect(b.getByText("You have an unfinished scenario")).toBeVisible();
+  await b.getByRole("button",{name:"Resume",exact:true}).click();
+  await b.getByRole("radio",{name:/^Assess airway, breathing and circulation, call for urgent help/}).check();await b.getByRole("button",{name:"Confirm decision",exact:true}).click();await b.getByRole("button",{name:"Continue",exact:true}).click();
+  await b.getByRole("radio",{name:/^Continue ordered glucose checks, document and hand over the event/}).check();await b.getByRole("button",{name:"Confirm decision",exact:true}).click();await b.getByRole("button",{name:"Finish and reflect",exact:true}).click();
+  await expect(b.getByText("Review priorities")).toBeVisible();
+  await expect(b.getByText("Wait and recheck the glucose at the next routine time.",{exact:false})).toBeVisible();
+  await expect(b.getByText(/Some earlier answer details are unavailable/)).toHaveCount(0);
+  await expect.poll(async()=>{
+   const result=await client.from("working_sessions").select("finished,decisions").eq("module_key","SC-10").maybeSingle();return result.data;
+  },{timeout:15000}).toEqual({finished:true,decisions:[{position:1,choice:1},{position:2,choice:0},{position:3,choice:0}]});
+  const c=await third.newPage();await login(c,other.email);await c.goto("/en/working/SC-10");
+  await expect(c.getByText("You have an unfinished scenario")).toHaveCount(0);
+ }finally{await first.close();await second.close();await third.close();}
 });

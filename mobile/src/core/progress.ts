@@ -4,7 +4,9 @@
 // additionally sent to the account-sync RPCs in ../api/rpc.ts, mirroring the web app's own
 // dual guest/account model (src/components/working/progress.tsx).
 import { z } from "zod";
+import { scenarioDecisionHistorySchema } from "@icu/schemas/working-progress";
 import { nextBox } from "./leitner";
+import { replayQueueSchema } from "./progressReplay";
 
 // Real catalog keys: topics D01-T19, skills SK-18, medications MD-15, cases SC-10,
 // equipment EQ-01, practice PX-01 (see src/lib/working/index.ts's workingTypes and
@@ -16,7 +18,8 @@ const bookmarkKeyPattern = new RegExp(`^(${BOOKMARK_KIND.join("|")}):[A-Z0-9-]{1
 
 const sessionRecordSchema = z.object({
   kind: z.enum(["quiz", "scenario"]),
-  version: z.string().max(40),
+  // Match the account database limit; accept older long revision strings so unrelated progress survives hydration.
+  version: z.string().max(2000),
   position: z.number().int().min(0),
   score: z.number(),
   finished: z.boolean(),
@@ -24,6 +27,8 @@ const sessionRecordSchema = z.object({
   // Local-only history for comparison panels when resuming a branching case.
   // Optional so previously saved v2 sessions and remote RPC rows still parse.
   visited: z.array(z.number().int().min(0)).max(100).optional(),
+  // Optional local decision history; old sessions and remote rows remain readable.
+  decisions: scenarioDecisionHistorySchema.optional().catch(undefined),
 });
 export type SessionRecord = z.infer<typeof sessionRecordSchema>;
 
@@ -34,6 +39,14 @@ export type SessionRecord = z.infer<typeof sessionRecordSchema>;
 // box always agrees with what the server would compute from the same answer.
 const attemptEntrySchema = z.object({ correct: z.boolean(), at: z.string(), box: z.number().int().min(1).max(5) });
 export type AttemptEntry = z.infer<typeof attemptEntrySchema>;
+
+const pendingFlagSchema = z.object({
+  kind: z.enum(["bookmark", "complete"]),
+  key: z.string().regex(/^[a-zA-Z0-9:-]{1,60}$/),
+  value: z.boolean(),
+  revision: z.number().int().nonnegative(),
+});
+export type PendingFlag = z.infer<typeof pendingFlagSchema>;
 
 export const progressSchema = z.object({
   v: z.literal(2),
@@ -46,6 +59,12 @@ export const progressSchema = z.object({
   cases: z.record(z.string(), z.object({ scoreTenths: z.number().int().min(0).max(1000), at: z.string() })),
   practice: z.array(z.object({ right: z.number().int().min(0), total: z.number().int().min(1), at: z.string() })).max(100),
   sessions: z.record(z.string(), sessionRecordSchema),
+  // Optional for legacy v2 storage. Keep only timestamps, never discarded answers.
+  sessionDismissals: z.record(z.string(), z.string()).optional(),
+  // Account-scoped desired state; legacy progress without an outbox remains readable.
+  pendingFlags: z.record(z.string(), pendingFlagSchema).optional(),
+  // Reserved for account-bound replay. Older v2 snapshots remain compatible.
+  pendingReplay: replayQueueSchema.optional(),
   // .default({}) for the same reason as `completed` above: existing on-device v2 data saved
   // before this field existed must still parse.
   attempts: z.record(z.string().regex(/^[A-Z0-9-]{1,60}$/), attemptEntrySchema).default({}),
@@ -64,24 +83,40 @@ export const viewedCount = (p: Progress): number => p.viewed.length;
 
 // Records a question attempt and advances its Leitner box from whatever box it was last in
 // (missed -> box 1, due immediately; correct -> one box up, capped at 5), exactly mirroring the
-// website's recordAttempt. `at` already wins ties the same way elsewhere in this module (no
-// going backwards from a more recent attempt).
+// An equal timestamp is a duplicate event; never advance the local box twice.
 export const recordAttempt = (p: Progress, questionId: string, correct: boolean, at: string): Progress => {
   const existing = p.attempts[questionId];
-  if (existing && existing.at > at) return p;
+  const timestamp = Date.parse(at);
+  if (!Number.isFinite(timestamp) || (existing && Date.parse(existing.at) >= timestamp)) return p;
   return { ...p, attempts: { ...p.attempts, [questionId]: { correct, at, box: nextBox(existing?.box ?? 1, correct) } } };
 };
 
 // Resumable session state (an in-progress quiz or branching case). A case or quiz in progress
 // is saved here; finishing it clears the entry (recordCase/recordPractice already captured the
 // result) so the learner is not offered to "resume" something already complete.
-export const saveSession = (p: Progress, moduleKey: string, session: SessionRecord): Progress => (session.finished ? discardSession(p, moduleKey) : { ...p, sessions: { ...p.sessions, [moduleKey]: session } });
-export const discardSession = (p: Progress, moduleKey: string): Progress => { if (!(moduleKey in p.sessions)) return p; const sessions = { ...p.sessions }; delete sessions[moduleKey]; return { ...p, sessions }; };
+export const saveSession = (p: Progress, moduleKey: string, session: SessionRecord): Progress => {
+  const at = Date.parse(session.at);
+  if (!Number.isFinite(at)) return p;
+  const existingAt = Date.parse(p.sessions[moduleKey]?.at ?? "");
+  const dismissedAt = Date.parse(p.sessionDismissals?.[moduleKey] ?? "");
+  if (existingAt > at || dismissedAt >= at) return p;
+  if (session.finished) return discardSession(p, moduleKey, session.at);
+  return { ...p, sessions: { ...p.sessions, [moduleKey]: session } };
+};
+export const discardSession = (p: Progress, moduleKey: string, at = new Date().toISOString()): Progress => {
+  const timestamp = Date.parse(at);
+  if (!Number.isFinite(timestamp)) return p;
+  const existingAt = Date.parse(p.sessions[moduleKey]?.at ?? "");
+  const dismissedAt = Date.parse(p.sessionDismissals?.[moduleKey] ?? "");
+  if (existingAt > timestamp || dismissedAt >= timestamp) return p;
+  const sessions = { ...p.sessions };
+  delete sessions[moduleKey];
+  return { ...p, sessions, sessionDismissals: { ...p.sessionDismissals, [moduleKey]: at } };
+};
 export const getSession = (p: Progress, moduleKey: string): SessionRecord | undefined => p.sessions[moduleKey];
 
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void>; remove(key: string): Promise<void> }
 const KEY = "icu.progress.v2";
-const LEGACY_KEY = "icu.progress.v1";
 /** Guest history keeps its existing key; account history is isolated per authenticated user.
  * Never use email as a storage prefix (it is changeable and exposes personally identifying text).
  */
@@ -95,17 +130,26 @@ export function scopedProgressStore(base: KeyValueStore, userId: string | null):
   };
 }
 
-/** A corrupt, foreign or old-schema value never crashes the app: it is ignored and the learner starts empty rather than seeing a broken screen. */
+/** A missing snapshot means a new learner. A failed read or invalid existing
+ * snapshot is NOT a new learner: refuse to hydrate writable empty progress.
+ * Preserve the original bytes for retry/recovery, including future schema versions. */
+export async function loadProgressStrict(store: KeyValueStore): Promise<Progress> {
+  const raw = await store.get(KEY);
+  if (raw !== null) {
+    const result = progressSchema.safeParse(JSON.parse(raw));
+    if (!result.success) throw new Error("Saved learning progress could not be read");
+    return result.data;
+  }
+  // Legacy v1 synthetic content cannot be migrated to current catalog keys.
+  // Do not mutate storage during hydration, even if the old snapshot is present.
+  return emptyProgress();
+}
+
+/** Tolerant read for legacy callers that explicitly accept an empty fallback.
+ * The writable application provider must use loadProgressStrict instead. */
 export async function loadProgress(store: KeyValueStore): Promise<Progress> {
-  try {
-    const raw = await store.get(KEY);
-    if (raw) { const r = progressSchema.safeParse(JSON.parse(raw)); if (r.success) return r.data; }
-    // The v1 schema (SYN-only bookmarks, equipment-part "viewed" map) cannot be meaningfully
-    // migrated to real content keys; a learner moving from an old build starts fresh rather
-    // than carrying over bookmarks that no longer resolve to anything.
-    await store.remove(LEGACY_KEY).catch(() => undefined);
-    return emptyProgress();
-  } catch { return emptyProgress(); }
+  try { return await loadProgressStrict(store); }
+  catch { return emptyProgress(); }
 }
 export const saveProgress = (store: KeyValueStore, p: Progress): Promise<void> => store.set(KEY, JSON.stringify(p));
 export const clearProgress = (store: KeyValueStore): Promise<void> => store.remove(KEY);

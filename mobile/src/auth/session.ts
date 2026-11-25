@@ -28,10 +28,12 @@ export interface SessionManager {
   deleteAccount(email: string): Promise<{ ok: true } | { ok: false; error: DeletionError }>;
 }
 
-export function createSessionManager(client: SupabaseClient, opts: { now?: () => number; refreshMarginSeconds?: number; captchaRequired?: boolean } = {}): SessionManager {
+export function createSessionManager(client: SupabaseClient, opts: { now?: () => number; refreshMarginSeconds?: number; captchaRequired?: boolean; callbackScheme?: string } = {}): SessionManager {
   const now = opts.now ?? (() => Math.floor(Date.now() / 1000));
   const margin = opts.refreshMarginSeconds ?? 120;
   const captchaRequired = opts.captchaRequired ?? true;
+  const callbackScheme = opts.callbackScheme ?? "nursingmastery";
+  const validRedirect = (value: string) => { try { const u = new URL(value); return u.protocol === `${callbackScheme}:` && u.hostname === "auth" && u.pathname === "/callback" && !u.username && !u.password && !u.port && !u.hash; } catch { return false; } };
   const claimsOf = (s: Session | null): { amr?: unknown } | null => { if (!s) return null; try { const b = s.access_token.split(".")[1]!.replace(/-/g, "+").replace(/_/g, "/"); return JSON.parse(globalThis.atob(b)) as { amr?: unknown }; } catch { return null; } };
   async function wipeLocal() { await client.auth.signOut({ scope: "local" }).catch(() => undefined); }
   return {
@@ -42,7 +44,7 @@ export function createSessionManager(client: SupabaseClient, opts: { now?: () =>
     },
     async signUp(input) {
       const { email, password, displayName, locale, captchaToken, redirectTo } = input;
-      if (!EMAIL.test(email.trim()) || password.length < 12 || password.length > 128 || !displayName.trim() || displayName.trim().length > 80 || (captchaRequired && !captchaToken) || !redirectTo.startsWith("nursingmastery://auth/callback")) return { ok: false, error: "input" };
+      if (!EMAIL.test(email.trim()) || password.length < 12 || password.length > 128 || !displayName.trim() || displayName.trim().length > 80 || (captchaRequired && !captchaToken) || !validRedirect(redirectTo)) return { ok: false, error: "input" };
       const { data, error } = await client.auth.signUp({
         email: email.trim(),
         password,
@@ -61,7 +63,7 @@ export function createSessionManager(client: SupabaseClient, opts: { now?: () =>
       return error ? { ok: false, error: mapSignInError(error) } : { ok: true };
     },
     async requestPasswordReset(email, captchaToken, redirectTo) {
-      if (!EMAIL.test(email.trim()) || (captchaRequired && !captchaToken)) return { ok: false };
+      if (!EMAIL.test(email.trim()) || (captchaRequired && !captchaToken) || !validRedirect(redirectTo)) return { ok: false };
       const { error } = await client.auth.resetPasswordForEmail(email.trim(), { ...(captchaToken ? { captchaToken } : {}), redirectTo });
       return { ok: !error }; // the result never reveals whether the address exists
     },

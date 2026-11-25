@@ -1,0 +1,8 @@
+# Respiratory bedside reasoning follow-up
+24 November 2026. Four existing clinical drafts expanded; this is targeted evidence reconciliation, not independent clinical validation.
+- D01-T03: ATS 2026 noninvasive respiratory support abstract and indexed recommendation excerpts emphasize monitoring for escalation. Added a practical response-assessment handover and warning against reassuring saturation alone.
+- D01-T07: AARC 2024 patient–ventilator assessment abstract supports PBW-indexed volume, pressure/PEEP assessment and direct bedside review. Added measurement validity, interface assessment and immediate escalation; corrected a bedside example that might imply waiting for troubleshooting to finish.
+- D01-T17: AARC 2024 SBT and ATS 2026 abstracts support standardized trials and risk-stratified preventive support. Added trial interruption handover and separate airway readiness documentation. No new trial thresholds or rescue algorithm.
+- D01-T06: AARC 2024 assessment and existing registered ventilation physiology educational review inform a practical nursing interpretation of volume/pressure trends; not a diagnostic rule or settings prescription.
+
+Evidence accessed in this pass: https://pubmed.ncbi.nlm.nih.gov/39048148/ ; https://pubmed.ncbi.nlm.nih.gov/38443142/ ; https://pubmed.ncbi.nlm.nih.gov/42371750/ ; https://academic.oup.com/ajrccm/article/212/9/2135/8721554 (indexed excerpts; direct access failed); PMC direct access returned a browser challenge. Existing source IDs and rights classes retained. Prior hashes checked, updated index/history synchronized. All remain drafts. Full guideline appraisal, local protocols and independent clinical approval remain open. No production changes.

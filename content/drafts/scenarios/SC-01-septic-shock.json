@@ -20,7 +20,9 @@
   ],
   "related": {
     "skills": [
-      "SK-01"
+      "SK-01",
+      "SK-03",
+      "SK-22"
     ],
     "medications": [
       "MD-01"
@@ -48,7 +50,12 @@
     {
       "id": "S-SSC-2026",
       "read": "partial",
-      "use": "Official 2026 SSC recommendation-level page: conditional, very-low-certainty preference for protocolized peripheral vasopressor initiation when central access would delay support; complete evidence tables not reviewed."
+      "use": "Official 2026 SSC recommendation-level page: conditional, very-low-certainty preference for protocolized peripheral vasopressor initiation when central access would delay support; complete evidence tables not reviewed. Official 2026 page antimicrobial delivery and reassessment recommendations rechecked 2026-11-24; full appraisal outstanding."
+    },
+    {
+      "id": "S-SSC-EXEC-2026",
+      "read": "partial",
+      "use": "SSC 2026 executive summary: antimicrobial timing and contextualization of arterial monitoring evidence"
     }
   ],
   "required_sources": [
@@ -60,7 +67,7 @@
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "Fluid choices, antimicrobial timing, lactate targets and blood-pressure targets are not drawn from a source read in full and are not written.",
+    "Selected SSC 2026 statements on antimicrobial timing, cultures, lactate, capillary refill and peripheral vasopressors are mapped; full evidence appraisal, fluid selection and individual blood-pressure targets remain outside this scenario.",
     "The NEWS2 statements are UK and 2017; the scenario names no score thresholds.",
     "The steps are not a model-specific norepinephrine administration protocol. Local rules for catheter retention/aspiration, alternative venous access and antidote require critical care and pharmacy review.",
     "Simulation option wording is synchronized with MD-01 and the vasopressor monitoring topic; do not treat synthetic debrief scoring as evidence of independent bedside competence. Clinician and pharmacist sign-off remain outstanding."
@@ -72,8 +79,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "A patient with suspected pneumonia is more drowsy, feels hot and has a high early warning score on this set of observations.",
-      "prompt": "What should you do?",
+      "info": "During repeat observations, an adult with suspected pneumonia becomes harder to rouse. Previously alert, the patient now has a high early-warning score, cool skin and falling urine output. The cause of deterioration is not yet established.",
+      "prompt": "Which action addresses immediate deterioration while organizing time-sensitive infection treatment?",
       "observations": [
         {
           "key": "score",
@@ -95,41 +102,58 @@
           "key": "infection",
           "label": "Suspected infection",
           "value": "Chest"
+        },
+        {
+          "key": "skin",
+          "label": "Skin",
+          "value": "Cool"
+        },
+        {
+          "key": "urine",
+          "label": "Urine output",
+          "value": "Falling"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Lower than usual"
         }
       ],
       "options": [
         {
-          "text": "Think sepsis: escalate urgently to the responsible clinical team with an SBAR, and record the response on the chart.",
+          "text": "Stay with the patient; assess airway, breathing and circulation, summon urgent help for suspected sepsis. Report perfusion; coordinate ordered lactate, cultures and prompt prescribed antimicrobials in parallel.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "NEWS2 recommends considering sepsis when infection is suspected and the score is high, with urgent assessment by a clinical team competent in sepsis; the response is recorded.",
-          "consequence": "The team attends promptly and the patient is reassessed.",
+          "feedback": "A new change in alertness with suspected infection warrants immediate assessment and urgent escalation. Sepsis and septic shock are emergencies; the SSC 2026 guidance calls for treatment and resuscitation without delay. NEWS2 supports recognition, but a score must not delay emergency help when clinical deterioration is apparent. Document the response after immediate safety needs are addressed. The SSC 2026 recommendation-level guidance suggests lactate measurement and capillary refill assessment alongside other measures of tissue perfusion. Neither replaces clinical assessment nor should sampling delay treatment. SSC 2026 prioritizes immediate antimicrobial treatment for suspected septic shock and for probable or definite sepsis, aiming for administration within one hour of recognition. For possible sepsis without shock, the guideline permits rapid time-limited investigation. Obtain cultures promptly, preferably before antibiotics, without delaying urgent treatment; drug selection follows the authorized plan. Record actual administration and sampling times, and alert the team to any delay or missed dose; arrange subsequent culture review and antibiotic reassessment after stabilization.",
+          "consequence": "Urgent assessment may identify impaired perfusion and allow the team to coordinate cultures and prescribed antimicrobials without unnecessary delay.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-SSC-2026",
+            "S-SSC-EXEC-2026"
           ]
         },
         {
-          "text": "Repeat the observations in an hour and see whether the score changes.",
+          "text": "Document the change in alertness, urine output and early-warning score; schedule repeat observations in an hour and use the repeat score to decide whether urgent infection assessment is needed.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A high score is a trigger for an urgent response, not for waiting.",
-          "consequence": "The patient deteriorates before the repeat is due.",
+          "consequence": "Waiting could delay recognition of worsening hypoperfusion and time-sensitive treatment.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"
           ]
         },
         {
-          "text": "Give a regular antipyretic and see whether the score settles.",
+          "text": "Give the prescribed routine antipyretic, document temperature and other observations, and wait for the early-warning score to settle before requesting urgent assessment for suspected infection.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Treating one sign does not address the cause and delays escalation.",
-          "consequence": "The temperature falls but the underlying problem is unaddressed.",
+          "consequence": "A lower temperature could falsely reassure the team while the underlying deterioration remains unassessed.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"
@@ -139,8 +163,8 @@
     },
     {
       "position": 2,
-      "info": "The team starts a vasopressor infusion through a peripheral cannula as prescribed.",
-      "prompt": "What do you do while it runs?",
+      "info": "At the next shared checkpoint, peripheral vasopressor support has been prescribed. Pressure is steadier but urine output remains low. The cannula looks normal; access surveillance and perfusion assessment are both needed.",
+      "prompt": "How should the nurse monitor the essential infusion without overlooking persistent hypoperfusion?",
       "observations": [
         {
           "key": "score",
@@ -156,6 +180,16 @@
           "key": "site",
           "label": "Infusion site",
           "value": "Looks normal"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Steadier"
+        },
+        {
+          "key": "urine",
+          "label": "Urine output",
+          "value": "Still low"
         }
       ],
       "options": [
@@ -164,8 +198,8 @@
           "points": 2,
           "next": 3,
           "scope": "monitoring",
-          "feedback": "The SSC 2026 recommendation allows peripheral vasopressor initiation for adult septic shock rather than delaying appropriate treatment for central access, with careful access surveillance and an extravasation response plan. Do not unnecessarily interrupt a working essential infusion. If the site becomes compromised, stop delivery at that cannula immediately while securing urgent alternative support through the local protocol.",
-          "consequence": "The vascular access is monitored repeatedly, and the team has a plan for urgent alternative access if the site fails.",
+          "feedback": "The SSC 2026 recommendation allows peripheral vasopressor initiation for adult septic shock rather than delaying appropriate treatment for central access, with careful access surveillance and an extravasation response plan. Do not unnecessarily interrupt a working essential infusion. If the site becomes compromised, stop delivery at that cannula immediately while securing urgent alternative support through the local protocol. The SSC does not specify a universal peripheral infusion duration, dose or catheter location/size; the local monitored-access protocol and prescriber determine these. A steadier pressure does not establish that organ perfusion has recovered. Communicate persistent oliguria and other perfusion trends alongside the access findings.",
+          "consequence": "Repeated checks may identify access failure and perfusion concerns before an interruption or injury worsens.",
           "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE",
@@ -173,24 +207,24 @@
           ]
         },
         {
-          "text": "Check the site when the infusion is set up and not again.",
+          "text": "Check and document the cannula at setup, then focus subsequent assessments on blood pressure and urine output rather than repeating site checks.",
           "points": 0,
           "next": 3,
           "scope": "monitoring",
           "feedback": "Extravasation can happen at any time, so the site is monitored throughout.",
-          "consequence": "A change at the site goes unnoticed.",
+          "consequence": "An early change at the cannula might be missed and recognition of tissue injury delayed.",
           "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE"
           ]
         },
         {
-          "text": "Disconnect the infusion briefly to flush the line when it seems slow.",
+          "text": "When flow appears slow, briefly disconnect the vasopressor to flush the line, then reconnect and reassess the pressure rather than following the authorised access pathway.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "Interrupting a vasopressor can drop the pressure, and flushing changes drug delivery; this follows the protocol and the prescriber.",
-          "consequence": "The pressure falls during the interruption.",
+          "consequence": "An interruption or unintended bolus could destabilize circulation and complicate assessment.",
           "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE"
@@ -200,8 +234,8 @@
     },
     {
       "position": 3,
-      "info": "Later the skin over the cannula becomes pale, cool and swollen.",
-      "prompt": "What is the right response?",
+      "info": "At a later shared checkpoint, the previously normal cannula site is pale, cool and swollen. The patient continues to require prescribed haemodynamic support and the treating team is nearby.",
+      "prompt": "How can you limit suspected local drug injury while protecting ongoing circulatory support?",
       "observations": [
         {
           "key": "site",
@@ -217,6 +251,11 @@
           "key": "team",
           "label": "Team",
           "value": "Nearby"
+        },
+        {
+          "key": "bp",
+          "label": "Blood pressure",
+          "value": "Requires ongoing support"
         }
       ],
       "options": [
@@ -226,31 +265,31 @@
           "next": null,
           "scope": "escalation",
           "feedback": "Pallor, coolness or swelling at a norepinephrine catheter may indicate extravasation. Stop delivery through the affected cannula immediately; do not force-flush. Preserve the site/catheter for trained assessment under the local extravasation pathway, and urgently maintain patient perfusion via clinician-directed alternative access. Do not imply that all vasopressor treatment should be stopped.",
-          "consequence": "The affected line is no longer infusing; trained staff assess the injury and organize alternative vasopressor access under the emergency protocol.",
+          "consequence": "Stopping delivery through the affected site and activating the protocol may limit further exposure while the team arranges alternative support.",
           "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE"
           ]
         },
         {
-          "text": "Slow the infusion and recheck in an hour.",
+          "text": "Document swelling and pallor, reduce the rate through the affected cannula to preserve some support and reassess the site in an hour before calling for help.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Continuing possible vasopressor extravasation for another hour can worsen local tissue ischemia; stop delivery through the affected site and escalate without delay.",
-          "consequence": "The tissue injury becomes worse.",
+          "consequence": "Continued delivery through a compromised cannula could increase local ischemic injury.",
           "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE"
           ]
         },
         {
-          "text": "Massage the area to disperse the drug.",
+          "text": "Massage the swollen area to disperse the drug, continue observing the site and the blood pressure, and request the team's review if the local changes persist.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Do not massage or flush suspected vasopressor extravasation. Seek the trained team and follow the facility antidote/aspiration pathway.",
-          "consequence": "The injured area becomes larger.",
+          "consequence": "Manipulation could worsen local injury or delay the trained team's assessment.",
           "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE"
@@ -261,9 +300,12 @@
   ],
   "debrief": {
     "learning_points": [
-      "With suspected infection and a high score, think sepsis and escalate urgently with a structured handover.",
+      "Assess airway, breathing and circulation and summon urgent help for suspected sepsis with deterioration; do not wait for a score. Communicate findings with structured handover.",
       "Monitor peripheral vasopressor access during treatment. Suspected extravasation requires immediate cessation through the affected cannula, urgent escalation, and a plan for alternative vascular access and haemodynamic support.",
-      "Do not flush or massage suspected extravasation; manage the cannula and any antidote only under the appropriate trained-team/local protocol."
+      "Do not flush or massage suspected extravasation; manage the cannula and any antidote only under the appropriate trained-team/local protocol.",
+      "Evaluate perfusion using clinical trends, including capillary refill and ordered lactate measurements; no single value establishes adequate resuscitation.",
+      "Record recognition, sampling and administration times and promptly escalate delays to prescribed antimicrobials; possible sepsis without shock is a distinct assessment pathway.",
+      "Handover includes antimicrobial delivery, culture status, source-control plan, and the need for clinician-led reassessment; do not delay the emergency first dose or independently stop treatment."
     ],
     "links": [
       {
@@ -273,6 +315,14 @@
       {
         "kind": "medication",
         "code": "MD-01"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-03"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-22"
       }
     ]
   }

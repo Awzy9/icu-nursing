@@ -1,228 +1,276 @@
 {
- "med_id": "MD-33",
- "number": 33,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Labetalol",
- "drug_class": "Combined alpha- and beta-adrenergic blocker",
- "category": "antiarrhythmics-cardiac",
- "high_alert": true,
- "high_alert_note": "The ISMP 2024 acute-care high-alert class includes intravenous adrenergic antagonists, explicitly labetalol. This record's listed IV formulation is therefore high-alert; classification does not set a blood pressure goal or administration protocol. Copyrighted ISMP classification is independently cited in the separate evidence report, not inserted as an unrestricted medication source.",
- "summary": "Intravenous agent for control of blood pressure in severe hypertension. Nursing focus: hypotension on standing, hepatic injury and monitoring of heart rate and blood pressure.",
- "batch": 4,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-LABETALOL",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-LABETALOL",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
-  },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
-  }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
+  "med_id": "MD-33",
+  "number": 33,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Labetalol",
+  "drug_class": "Combined alpha- and beta-adrenergic blocker",
+  "category": "antiarrhythmics-cardiac",
+  "high_alert": true,
+  "high_alert_note": "The ISMP 2024 acute-care high-alert class includes intravenous adrenergic antagonists, explicitly labetalol. This record's listed IV formulation is therefore high-alert; classification does not set a blood pressure goal or administration protocol. Copyrighted ISMP classification is independently cited in the separate evidence report, not inserted as an unrestricted medication source.",
+  "summary": "Intravenous agent for control of blood pressure in severe hypertension. Nursing focus: hypotension on standing, hepatic injury and monitoring of heart rate and blood pressure.",
+  "batch": 4,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-LABETALOL",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
     {
-     "text": "The label indicates labetalol hydrochloride injection for control of blood pressure in severe hypertension.",
-     "support": "sourced",
-     "sources": [
-      "L-LABETALOL"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Report dizziness or faintness on sitting or standing, and jaundice.",
-     "support": "partial",
-     "sources": [
-      "L-LABETALOL"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "L-LABETALOL",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
     },
     {
-     "text": "The label calls for laboratory testing at the first sign of liver dysfunction (itching, dark urine, persistent loss of appetite, jaundice, right-upper-quadrant tenderness or unexplained flu-like symptoms), since severe hepatocellular injury occurs rarely but is a recognised risk; it also calls for observing the response closely at the first sign of impending cardiac failure.",
-     "support": "sourced",
-     "sources": [
-      "L-LABETALOL"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Severe hepatocellular injury occurs rarely with labetalol, is usually reversible but hepatic necrosis and death have been reported; periodic hepatic laboratory tests are appropriate and testing should be done at the first sign of liver dysfunction such as pruritus or dark urine.",
-     "support": "sourced",
-     "sources": [
-      "L-LABETALOL"
-     ]
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
     },
     {
-     "text": "The label describes injection as usually well tolerated, with symptomatic postural hypotension among the effects observed.",
-     "support": "sourced",
-     "sources": [
-      "L-LABETALOL"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Symptomatic postural hypotension is among the adverse effects the label describes; most effects were mild and transient.",
-     "support": "sourced",
-     "sources": [
-      "L-LABETALOL"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate for marked hypotension, slow heart rate, fainting or signs of liver dysfunction.",
-     "support": "partial",
-     "sources": [
-      "L-LABETALOL"
-     ]
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
     },
     {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
     }
-   ]
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates labetalol hydrochloride injection for control of blood pressure in severe hypertension.",
+          "support": "sourced",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Report dizziness or faintness on sitting or standing, and jaundice.",
+          "support": "partial",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for laboratory testing at the first sign of liver dysfunction (itching, dark urine, persistent loss of appetite, jaundice, right-upper-quadrant tenderness or unexplained flu-like symptoms), since severe hepatocellular injury occurs rarely but is a recognised risk; it also calls for observing the response closely at the first sign of impending cardiac failure.",
+          "support": "sourced",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        },
+        {
+          "text": "The registered injection is contraindicated in bronchial asthma, overt cardiac failure, advanced heart block, cardiogenic shock and severe bradycardia, among other conditions. Check the relevant history and current findings with the treating team before administration. Assess postural tolerance before mobilising a patient at risk of hypotension.",
+          "support": "partial",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        },
+        {
+          "text": "Beta blockade may obscure adrenergic warning signs of hypoglycaemia. Review glucose surveillance in at-risk patients and seek review of unexpected glucose changes.",
+          "support": "partial",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        },
+        {
+          "text": "Concurrent nitroglycerin may amplify hypotension while labetalol blunts compensatory tachycardia. Verapamil-type calcium channel blockers also warrant caution. Review concomitant medicines and monitor pressure, rhythm and perfusion; absence of tachycardia does not establish haemodynamic stability.",
+          "support": "partial",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Severe hepatocellular injury occurs rarely with labetalol, is usually reversible but hepatic necrosis and death have been reported; periodic hepatic laboratory tests are appropriate and testing should be done at the first sign of liver dysfunction such as pruritus or dark urine.",
+          "support": "sourced",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        },
+        {
+          "text": "The label describes injection as usually well tolerated, with symptomatic postural hypotension among the effects observed.",
+          "support": "sourced",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Symptomatic postural hypotension is among the adverse effects the label describes; most effects were mild and transient.",
+          "support": "sourced",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Activate immediate help for severe bronchospasm, symptomatic bradycardia, heart block or circulatory collapse. Urgently report new heart failure symptoms, fainting, marked hypotension or signs of hepatic injury.",
+          "support": "partial",
+          "sources": [
+            "L-LABETALOL"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+  "monitoring": [
     {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
+      "kind": "observe",
+      "text": "Monitor blood pressure and heart rate at the unit's frequency.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
+      "kind": "assess",
+      "text": "Check for dizziness on sitting or standing.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-LABETALOL"
+      ]
+    },
     {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
+      "kind": "laboratory",
+      "text": "Review liver tests as ordered and report jaundice, itching or dark urine.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "L-LABETALOL"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report hypotension, bradycardia or liver symptoms promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LABETALOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review asthma, conduction disease and heart failure history; assess breathing, heart rate, blood pressure and postural tolerance before mobilisation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LABETALOL"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check ordered glucose results in patients at hypoglycaemia risk; do not rely on tachycardia as a warning sign. Assess new altered consciousness or sweating and follow the authorised hypoglycaemia pathway.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LABETALOL"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record readings and checks.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent nitroglycerin or verapamil-type medicines; assess pressure, heart rate and perfusion together.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-LABETALOL"
+      ]
     }
-   ]
+  ],
+  "gaps": [
+    "Contraindications (for example heart block, asthma) were not summarised from the fields read.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "abfc6b75-1ed5-41f1-0484-4597488237bc",
+    "label_version": "30",
+    "effective_time": "20260914",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Monitor blood pressure and heart rate at the unit's frequency.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "assess",
-   "text": "Check for dizziness on sitting or standing.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-LABETALOL"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Review liver tests as ordered and report jaundice, itching or dark urine.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "L-LABETALOL"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report hypotension, bradycardia or liver symptoms promptly.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-LABETALOL"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record readings and checks.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Contraindications (for example heart block, asthma) were not summarised from the fields read.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "abfc6b75-1ed5-41f1-0484-4597488237bc",
-  "label_version": "30",
-  "effective_time": "20260914",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

@@ -5,7 +5,7 @@ import { Badge, Callout } from "@/components/ui/feedback";
 import { Field, Select, Textarea } from "@/components/ui/form";
 import { Link } from "@/i18n/navigation";
 import { requireStaff } from "@/lib/auth";
-import { DRAFTS, HISTORY, ageDays, compareLatest, draftFreshness, sourceFreshness, worstLicence } from "@/lib/admin/drafts";
+import { DRAFTS, HISTORY, REVIEW_LANES, ageDays, compareLatest, draftFreshness, reviewLane, sourceFreshness, worstLicence } from "@/lib/admin/drafts";
 import { NOTE_FIELDS, notesFor } from "@/lib/admin/draft-notes";
 import { aiEvidenceFor } from "@/lib/admin/ai-evidence";
 import { createClient } from "@/lib/supabase/server";
@@ -45,6 +45,18 @@ export default async function DraftDetail({ params }: { params: Promise<{ locale
         </div>
       </header>
       <Callout tone="warning" role="note">This page shows metadata and workflow notes. The draft itself is a file outside the database; nothing here imports, reviews, approves or publishes it.</Callout>
+
+      <section aria-labelledby="handoff" className="space-y-2 rounded-lg border border-border p-4">
+        <h2 id="handoff" className="text-xl font-semibold">Independent review handoff</h2>
+        <p className="text-sm text-muted-foreground">Suggested queue: <strong>{REVIEW_LANES.find((l) => l.key === reviewLane(e))?.label ?? "Review pending"}</strong>. This is a metadata-based ordering aid, not a judgment that content is safe, accurate, licensed or approved.</p>
+        <ul className="list-disc space-y-1 ps-6 text-sm">
+          <li>Assign a qualified clinical reviewer and relevant specialist(s). Have every question, decision branch and feedback statement checked against current primary evidence and applicable local protocols.</li>
+          <li>Resolve {e.gaps} declared content gaps and {e.required_sources} missing-source requirements. The automated validator does not establish clinical safety.</li>
+          <li>Clear commercial source and image permissions independently. Current source labels include {worstLicence(e)}; they are not proof of legal permission.</li>
+          <li>Document real human clinical and publisher decisions for the exact source revision <code>{e.hash}</code>; any subsequent change requires a new review.</li>
+        </ul>
+        <p className="text-sm font-medium">Publication remains blocked until the clinical, rights and publisher approvals are independently verified.</p>
+      </section>
 
       <section aria-labelledby="val" className="space-y-2">
         <h2 id="val" className="text-xl font-semibold">Validation feedback</h2>

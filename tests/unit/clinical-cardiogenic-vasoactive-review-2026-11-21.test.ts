@@ -46,8 +46,10 @@ describe("2026-11-21 cardiogenic shock and vasoactive draft safety", () => {
     const q1 = q.split("**Q1 (safety).**")[1]?.split("**Q2 (judgment).**")[0] ?? "";
     expect(q1).toContain("Stop delivery through that cannula now");
     expect(q1).toContain("do not force-flush a suspected extravasation");
-    const q5 = q.split("**Q5 (monitoring).**")[1]?.split("**Q6 (application).**")[0] ?? "";
-    expect(q5).toContain("should not be assumed to be caused solely by the drug");
+    const q5 = q.split(/^\*\*Q5 \(/m)[1]?.split(/^\*\*Q6 \(/m)[0] ?? "";
+    expect(q5).toContain("other causes of deterioration must also be evaluated");
+    expect(q5).toContain("renal impairment prolongs its elimination");
+    expect(q5).toContain("maintain continuous ECG and blood pressure surveillance");
     const q6 = q.split("**Q6 (application).**")[1]?.split("## 18. References")[0] ?? "";
     expect(q6).toContain("*intramuscular* epinephrine injection");
     expect(q6).toContain("S-ADRENALIN-IM-2025");

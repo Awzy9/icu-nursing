@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SHEA/IDSA/APIC Strategies to prevent CLABSI in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022; CC BY)", "CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – partly superseded", "CDC Updated Recommendations on Chlorhexidine-Impregnated Dressings (2017) – supersedes two 2011 statements"]
-sources: [S-CDC-BSI-2011, S-SHEA-CLABSI-2022]
+sources: [S-CDC-BSI-2011, S-SHEA-CLABSI-2022, S-WHO-CVC-2026]
 independently_written_note: "Original wording. SHEA 2022 (open access, CC BY) and the CDC 2011 PDF were read in full text for the recommendations listed; the CDC 2017 CHG-dressing update was confirmed from its landing page only (its detailed text was not read). No text copied. INS and national standards were not accessible."
 ---
 # Preventing CLABSI
@@ -46,6 +46,8 @@ Skin organisms migrate along the outside of a short-term catheter; contaminated 
 - Report and ask about lines that look unnecessary.
 - Report any breach of technique so it can be corrected.
 
+**Daily necessity and product-specific maintenance (WHO 2026).** At handover, check the site and dressing, current purpose of the catheter and which therapies still require central access. WHO supports inspection at least daily and prompt removal of catheters no longer necessary, without routine replacement solely by calendar date. Escalate suspected inflammation, infection or an unnecessary line; arrange clinician-authorized removal or alternative access so essential therapy is not interrupted. A dry intact dressing does not exclude bloodstream infection. The 2026 WHO schedule for sets carrying routine IV fluids alone must not be extrapolated to tubing carrying parenteral nutrition or lipid products; those require their own approved schedule. Aseptically access the catheter and verify the appropriate compatible sterile flush under the device and local procedure.
+
 ## 8. Monitoring parameters
 Temperature and haemodynamic trend; dressing/site check each shift (more often if the dressing is a concern); line days; tubing/dressing due dates; local CLABSI surveillance feedback.
 
@@ -63,6 +65,8 @@ Temperature and haemodynamic trend; dressing/site check each shift (more often i
 | Routine replacement of CVCs | Do not routinely replace to prevent infection | Same (do not routinely replace) | Consistent |
 | Antimicrobial prophylaxis | Do not give systemic prophylaxis routinely before insertion or during use | Not recommended for short-term or tunneled catheters | Prescriber decision |
 
+**WHO 2026 reconciliation (selected executive-summary recommendations).** WHO conditionally supports antiseptic dressings in adults and a planned dressing-change schedule; its suggested routine interval differs from the older gauze-specific SHEA interval. Follow the locally approved product-specific schedule, and replace compromised dressings promptly. WHO conditionally favors saline rather than heparin for routine lock-off flushing, with very uncertain evidence; this is not a universal substitution order, particularly for specialist dialysis catheters. Verify the prescribed compatible lock and catheter instructions. Routine antimicrobial locks for short-term CVC infection prevention and routine prophylactic IV antibiotics at line insertion are not supported. Discuss exceptional indications with infection prevention and the treating team. These recommendations do not replace aseptic access or daily necessity review.
+
 ## 10. Warning signs and red flags
 Fever or rigors, hypothermia, new tachycardia or hypotension, new confusion; redness, swelling, tenderness or discharge at the site; blood in the dressing; line malfunction or leakage; wet or lifting dressing; missing caps; disconnected tubing; rigors during flush or infusion.
 
@@ -76,7 +80,7 @@ Fever or rigors, hypothermia, new tachycardia or hypotension, new confusion; red
 | Decision to remove, exchange or insert a line; antimicrobials; lock therapy | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate promptly for: fever/rigors with a line in place; site changes with systemic signs; instability; suspected disconnection or air entry; line occlusion not resolved by routine checks. Escalate organisational problems (staffing, lack of supplies) to the charge nurse.
+Activate emergency help for instability, suspected sepsis with organ dysfunction, or suspected air entry with respiratory or circulatory deterioration. Address immediate hazards within training and protocol while summoning help. Promptly report fever or rigors, site changes, disconnection, or unresolved line occlusion; never force-flush an obstructed catheter. Review ongoing line necessity daily and arrange removal of a nonessential line through an authorised order or nurse-led pathway where applicable. Disinfect the access port before each access using the approved antiseptic technique and required drying time. Escalate staffing or supply barriers to the charge nurse.
 SBAR — **S:** CVC patient, bed X, new fever 38.9, rigors, tachycardia. **B:** line day 6, site slightly red, last dressing change [time]. **A:** possible line infection or sepsis. **R:** please review now; consider cultures and the plan for the line; I will repeat observations every [interval].
 
 ## 13. Potential complications
@@ -109,9 +113,9 @@ B. Take the dressing off, pull the line yourself and send the tip for culture to
 C. Record the fever and wait for the next scheduled medical round, because the site looks clean and dry.
 D. Reassess the observations, escalate with SBAR mentioning the line, and prepare for cultures if ordered.
 **Answer: D.**
-**Why correct:** Systemic signs with a line in place need prompt assessment and escalation even when the site looks clean.
+**Why correct:** Fever and rigors with a line in place need urgent clinical assessment even if the site looks clean; a normal insertion site does not exclude a bloodstream infection. Assess perfusion, activate the sepsis pathway if indicated, and prepare ordered cultures without delaying urgent therapy. Do not assume the line is the confirmed source.
 **Why not A:** Treating only the fever delays recognition of possible sepsis.
-**Why not B:** Removing a line is a prescriber decision and may harm the patient.
+**Why not B:** Unplanned removal may interrupt essential treatment. The authorized team determines removal and sampling under local policy.
 **Why not C:** Waiting for a routine round delays potentially life-threatening care.
 
 **Q3 (application).** A nurse is about to give an intermittent injection through a needleless connector on a patient's central line. Which sequence best reduces contamination?
@@ -120,10 +124,10 @@ B. Wipe the connector once with dry gauze, access it with a sterile syringe, and
 C. Put on gloves, flush through the connector to clear it, and disinfect the connector afterwards to remove anything left on the surface.
 D. Disinfect the connector, access it with a clean but non-sterile syringe kept in the bedside drawer, and flush the line later in the shift.
 **Answer: A.**
-**Why correct:** Hand hygiene, then scrubbing the connector with the approved antiseptic and letting it dry before every access with a sterile device, is the recommended sequence. Dry gauze is not disinfection, disinfecting after access is too late, and non-sterile devices must not enter the system.
+**Why correct:** Use hand hygiene, disinfect the connector before each access with the approved antiseptic, allow the required drying time and use sterile equipment. WHO 2026 reinforces aseptic CVC access and trained staff; follow the specific antiseptic and connector instructions.
 **Why not B:** Dry gauze is not disinfection, and reusing caps contaminates the connector.
 **Why not C:** Disinfection has to come before access, not after.
-**Why not D:** Only sterile devices should enter the system, and delayed flushing adds a further risk.
+**Why not D:** Nonsterile access contaminates the system; flushing does not correct that breach.
 
 **Q4 (prioritization).** At the start of the shift four patients with central lines each have an issue. Which should the nurse address first?
 A. A tubing label with no date on it, in a patient who is stable and comfortable.
@@ -136,16 +140,16 @@ D. A family request to change the dressing early because they think it looks unt
 **Why not B:** It is a routine task that can wait until tomorrow.
 **Why not D:** It is a non-clinical request that can be addressed after safety priorities.
 
-**Q5 (judgment).** On the round the team plans to keep a central line "just in case", although it has not been used for three days. What is the best nursing contribution?
-A. Remove the line after the round, because preventing infection is a nursing responsibility.
-B. Ask whether each lumen is still indicated and whether the line can come out, leaving the decision to the prescriber.
-C. Say nothing about it, since questioning the medical plan during the round is outside the nurse's role and could disrupt the team.
-D. Suggest replacing it with a new line at another site to lower the infection risk.
+**Q5 (judgment).** A patient has recovered from shock and no longer receives vasoactive infusions. The central venous catheter remains in place for possible future treatment; peripheral access is available. The insertion site looks normal. What should the nurse prioritize on the round?
+A. Ask for routine line exchange because the insertion site appears free from infection.
+B. Review ongoing necessity with the team and arrange authorized removal if no longer indicated.
+C. Retain the line until discharge because a normal site excludes catheter-associated infection.
+D. Remove the catheter before discussing whether any current treatment requires central access.
 **Answer: B.**
-**Why correct:** Both guidelines favour removing nonessential lines; the nurse raises the question and the prescriber decides.
-**Why not A:** Removing a line needs a prescriber's decision or a protocol that allows it.
-**Why not C:** Daily review of whether the line is needed is a shared nursing and medical responsibility.
-**Why not D:** Routine replacement is not recommended and adds the risks of a new insertion.
+**Why correct:** WHO 2026 recommends at least daily insertion-site assessment and does not support routine replacement without clinical indication. A normal site does not establish that continued catheter use is risk-free. Review current infusion, monitoring and access requirements with the team; when the catheter is no longer needed, arrange removal through the authorized local pathway and ensure appropriate alternative access.
+**Why not A:** Routine replacement introduces insertion-related risks and does not resolve the question of ongoing necessity.
+**Why not C:** A normal insertion site cannot exclude bloodstream infection, and an unnecessary catheter exposes the patient to preventable risk.
+**Why not D:** Removal should follow confirmation that the catheter is no longer required and the authorized local procedure.
 
 **Q6 (safety).** A colleague says the 2011 CDC guideline still means chlorhexidine dressings are not needed. What is the best response?
 A. Agree, as the 2011 guideline is the authoritative reference and has not been changed.
@@ -162,6 +166,10 @@ D. Suggest changing every dressing daily to be safe, because more changes mean f
 - Buetti N, Marschall J, Drees M, et al. Strategies to prevent central line-associated bloodstream infections in acute-care hospitals: 2022 Update. Infect Control Hosp Epidemiol. 2022;43:553-569. doi:10.1017/ice.2022.87. https://pmc.ncbi.nlm.nih.gov/articles/PMC9096710/ (accessed 2026-11-14)
 - CDC/HICPAC. Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (last update October 2017). https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf (accessed 2026-11-14)
 - CDC. Updated Recommendations on the Use of Chlorhexidine-Impregnated Dressings (2017). https://www.cdc.gov/infection-control/hcp/c-i-dressings/index.html (landing page only, accessed 2026-11-14)
+
+- WHO central venous catheter infection prevention, 2026. https://www.who.int/publications/i/item/9789240121805 (selected recommendation excerpts, accessed 2026-11-24)
+
+- WHO. Guidelines for prevention of bloodstream infections associated with intravascular catheters, part 2: central venous catheters. 28 May 2026. https://www.ncbi.nlm.nih.gov/sites/books/NBK622840/table/fm-ch1.tab1/?report=objectonly (selected recommendations 6–8, lock-off flushing, 22 and 24; accessed 2026-11-24; CC BY-NC-SA 3.0 IGO; citation only).
 
 ## 19. Local protocol note
 Dressing type and interval, antiseptic product, connector-scrub time and tubing-change interval follow the institution's policy.

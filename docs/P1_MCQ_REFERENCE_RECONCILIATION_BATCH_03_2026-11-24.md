@@ -1,0 +1,9 @@
+# Question bank evidence reconciliation — batch 3
+
+24 November 2026. Targeted assessment of 18 expansion questions XQ-07–09 using existing device/label source traces and indexed primary guideline excerpts. Eleven question blocks revised; all answer keys preserved. Three regression cases added; CI pending.
+
+- XQ-07: existing AHS 2025 device-specific pathway; [KDIGO update status](https://kdigo.org/guidelines/acute-kidney-injury/) confirms 2026 public-review draft, not final. [2026 citrate consensus](https://doi.org/10.1186/s13054-026-06066-x), statement 10; [BSH 2023 HIT](https://doi.org/10.1111/bjh.19180) and [ASH 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/) indexed probability and heparin exposure recommendations. Correct conditional blood return and clarify trained-operator limits. No dosing or machine instructions.
+- XQ-08: [SSC 2026](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026) peripheral initiation and uncertainty; [RCUK anaphylaxis FAQ](https://www.resus.org.uk/professional-library/faqs/faqs-anaphylaxis), emergency IM treatment; existing route-specific product references retained.
+- XQ-09: [SCCM PADIS 2025](https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline) conditional recommendation; [FDA fentanyl labeling](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38d0c14a-a0c1-44cc-a939-0304eb8037d6) indexed overdose and monitoring language; existing product-specific registered labels remain the question source. No dosage changes.
+
+54/66 expansion questions, 54/306 bank questions checked in this targeted pass. Five registered source IDs reused. Full evidence appraisal, independent clinical and pharmacy signoff and rights clearance remain outstanding. No production changes. Markdown drafts remain canonical.

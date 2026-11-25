@@ -1,0 +1,11 @@
+# P1 medication reconciliation — vasoactive batch 01
+24 November 2026. Six medication drafts updated; one newly registered trial and previously registered recommendations reused. No clinical or pharmacy approval inferred. The outstanding required-source counter does not include medication gaps, so it remains unchanged.
+
+Evidence directly checked in this session:
+- [SSC 2026 official recommendations](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026): pressure monitoring, vasopressors, inotropes, certainty and remarks. Norepinephrine usual initial choice; vasopressin adjunct; epinephrine conditional alternatives; inotrope use conditional. Full guideline not appraised.
+- [RCUK 2025 special circumstances](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/special-circumstances-guidelines) and [RCUK anaphylaxis FAQ](https://www.resus.org.uk/library/additional-guidance/guidance-anaphylaxis): IM first-line and specialist IV distinction. [Gland epinephrine](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=577f987e-d3af-4f49-ab44-5db9cbf46601) and [ADRENALIN](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3eef2920-0129-6dc2-e063-6294a90ac22a) indexed label sections support distinct indications/routes; both may include more than one route. Do not mischaracterize either as IV-only.
+- [DOREMI](https://pubmed.ncbi.nlm.nih.gov/34347952/) abstract checked: no significant difference, not equivalence. [Registered Mullan milrinone](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=07dddead-22ed-004c-e063-6294a90a76fc) acute-MI warning and laboratory section directly inspected.
+- Registered Vasostrict, Hospira dobutamine and Caplin phenylephrine pages reachable; selected label safety themes retained. Northstar norepinephrine exact page inaccessible in this session; previous label assessment retained, no new version-check date asserted.
+- No full product-label reappraisal, non-US regulator verification, commercial rights clearance or independent specialist review claimed. No numeric drug quantities, preparation, titration or compatibility instructions added.
+
+Three regression tests added; CI pending. No deployment.

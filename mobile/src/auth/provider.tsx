@@ -6,7 +6,7 @@ import { AppState } from "react-native";
 import { createRpc, type Rpc } from "../api/rpc";
 import { createAppClient } from "./client";
 import { createChunkedStorage } from "./chunkedStorage";
-import { CAPTCHA_REQUIRED, readAuthConfig, type AuthConfig } from "./config";
+import { AUTH_SCHEME, CAPTCHA_REQUIRED, readAuthConfig, type AuthConfig } from "./config";
 import { parseAuthCallback } from "./deepLinks";
 import { createSessionManager, type SessionManager } from "./session";
 
@@ -28,7 +28,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const built = useMemo(() => {
     if (!config) return null;
     const client = createAppClient(config, createChunkedStorage(secure));
-    return { client, manager: createSessionManager(client, { captchaRequired: CAPTCHA_REQUIRED }), rpc: createRpc(client) };
+    return { client, manager: createSessionManager(client, { captchaRequired: CAPTCHA_REQUIRED, callbackScheme: AUTH_SCHEME }), rpc: createRpc(client) };
   }, [config]);
   const [email, setEmail] = useState<string | null>(null);
   const [userId, setUserId] = useState<string | null>(null);
@@ -48,7 +48,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const handled = new Set<string>();
     const handle = async (url: string | null) => {
       if (!url || handled.has(url)) return;
-      const r = parseAuthCallback(url, config!.siteOrigin);
+      const r = parseAuthCallback(url, config!.siteOrigin, AUTH_SCHEME);
       if (!r.ok) return; // anything that is not an exact callback shape is ignored
       handled.add(url); // initial URL and Linking event may contain the same single-use PKCE code
       setNotice(null); setCallbackPending(true);

@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Fundamentals 2e, section 15.5 Acid–Base Balance (US entry-level textbook; CC BY 4.0)", "AARC Clinical Practice Guideline: Blood Gas Analysis and Hemoximetry 2013 (Respir Care 2013;58(10):1694-1703) – a 2013 US guideline, an update of the 2001 CPG; GRADE grades 1A–2B printed; older than ten years, no newer edition read"]
-sources: [S-OPENRN-FUND-CH15, S-AARC-BGA-2013, S-ATS-ABG, S-MERCK-ACIDBASE, S-AAFP-ACID2025]
-sources_not_read: [S-KDIGO-AKI, S-NICE-AKI]
+sources: [S-OPENRN-FUND-CH15, S-AARC-BGA-2013, S-ATS-ABG, S-MERCK-ACIDBASE, S-AAFP-ACID2025, S-NICE-NG148]
+sources_not_read: [S-KDIGO-AKI]
 independently_written_note: "Original wording. The Open RN acid–base section (ABG components, normal and critical values, the four primary disorders, the stepwise analysis and compensation) was read in full; the AARC 2013 guideline text (description, indications, contraindications, hazards, limitations, recommendations) was read. The 2013 AARC guideline is dated and no newer ABG guideline was found; anion gap and mixed-disorder assessment are not covered by the two original sources. A targeted cross-check against the American Thoracic Society's arterial-blood-gas interpretation guidance and Merck Manual Professional acid–base discussion now adds a brief warning that normal pH cannot exclude a dangerous mixed disorder and a single illustrative compensation check; full diagnostic algorithms, base excess, lactate and strong-ion approaches are not taught. Normal ranges and critical values are those printed in the US textbook; laboratories and analysers publish their own reference ranges. Treatment decisions, buffering drugs, ventilator changes and doses are prescriber decisions and are not given. The textbook mentions a benzodiazepine dose for hyperventilation: it is deliberately not reproduced."
 ---
 # Acid–base disturbances and arterial blood gas interpretation – a stepwise nursing approach
@@ -63,6 +63,10 @@ ICU patients commonly have disturbed ventilation, perfusion, kidney function and
 - Document the time, the values, the patient's condition, actions and who was informed.
 - Knowledge limits: this draft provides **one mixed-disorder safety example**, not systematic anion-gap/delta-gap assessment, all expected-compensation formulae, lactate interpretation or oxygenation indices. Complex interpretation remains for appropriately trained clinicians.
 
+**Assess the trend rather than the pH alone (Merck Manual; AARC specimen guidance).** When reviewing serial blood gases, record sample type, timing, oxygen delivery and ventilator support at each sampling point. A change in support or specimen source can make direct comparison misleading. A near-normal pH with substantially abnormal PaCO₂ or bicarbonate requires further assessment for mixed disturbances; compare with the expected physiological response rather than assuming complete recovery. If a critical result conflicts with the bedside picture, urgently notify the team and check sample integrity or arrange repeat testing as authorized while assessing and supporting the patient; do not defer emergency care for repeat sampling.
+
+**Metabolic acidosis in acute kidney injury (NICE NG148, recommendation 1.5.8).** Metabolic acidosis that persists despite medical management in AKI warrants immediate specialist referral for consideration of renal replacement therapy. Report serial blood gas findings, renal function, circulation, ventilation and the response to treatment. The clinical team decides the indication in context; an isolated pH does not authorize dialysis or bicarbonate administration. Escalate severe deterioration without waiting for a complete acid–base calculation.
+
 ## 8. Monitoring parameters
 pH, PaCO₂, HCO₃, PaO₂, SaO₂ and the trend; respiratory rate and pattern; work of breathing; SpO₂ and end-tidal CO₂ if available; ventilator settings; perfusion, lactate if measured; mental state; urine output; electrolytes (especially potassium); glucose and ketones when relevant.
 
@@ -89,8 +93,8 @@ Critical values per the laboratory; **normal pH accompanied by markedly abnormal
 | Diagnose the disorder; order treatment; adjust ventilator settings; give buffering or other drugs; decide on dialysis | Prescriber decision (respiratory therapist for ventilator operation) |
 
 ## 12. Escalation criteria
-Escalate immediately for critical ABG values, a worsening trend, a change in consciousness, respiratory distress, haemodynamic instability, or a result that does not match the patient.
-SBAR — **S:** bed X, ABG shows pH 7.21, PaCO₂ 62, HCO₃ 24; patient drowsy, respiratory rate 8. **B:** on opioid infusion, post-operative day 1. **A:** acute respiratory acidosis (hypoventilation). **R:** please attend now; I am maintaining airway and breathing support and need an order to review the sedation or opioid and the ventilation plan.
+Escalate immediately for critical ABG values, worsening trends, altered consciousness, respiratory distress or haemodynamic instability. Assess and support airway and ventilation in parallel with summoning emergency help for inadequate breathing; do not wait for a repeat gas. If a result is unexpected, check the specimen and measurement context and arrange confirmation without delaying care. Compare the bicarbonate and carbon dioxide with the expected compensation; a near-normal pH does not exclude a mixed disorder.
+SBAR — **S:** bed X, ABG shows pH 7.26, PaCO₂ 62, HCO₃ 27; patient drowsy, respiratory rate 8. **B:** on opioid infusion, post-operative day 1. **A:** acute respiratory acidosis (hypoventilation). **R:** please attend now; I am maintaining airway and breathing support and need an order to review the sedation or opioid and the ventilation plan.
 
 ## 13. Potential complications
 Respiratory failure, arrhythmia, depressed consciousness, hypotension and circulatory collapse (as described for the disorders in the textbook); inappropriate treatment from an unacceptable specimen or incorrect reporting (AARC); infection risk to the sample handler (AARC).
@@ -105,16 +109,16 @@ A nurse takes a sample from an arterial line, notes the FiO₂ and ventilator se
 A 54-year-old with vomiting has pH 7.52, PaCO₂ 42 mm Hg and HCO₃ 33 mEq/L. This pattern suggests **metabolic alkalosis**, but PaCO₂ being within a laboratory reference interval **does not establish the absence of compensation**. The nurse reports the result with the history of vomiting and nasogastric suction, checks mental state and breathing, and documents the values; the prescriber reviews compensation and possible concurrent disorders and decides on treatment.
 
 ## 17. MCQs
-**Q1 (application).** A nurse reviews a patient's arterial blood gas: pH 7.28, PaCO₂ 58 mm Hg and HCO₃ 25 mEq/L. What does the textbook's method identify?
+**Q1 (application).** A nurse reviews an arterial blood gas: pH 7.26, PaCO₂ 58 mm Hg and HCO₃ 25 mEq/L. What is the predominant acid–base disturbance?
 A. Metabolic acidosis, because the pH is below 7.35 and the bicarbonate level is within its normal range.
 B. Respiratory alkalosis, because a raised PaCO₂ always makes the blood more alkaline and raises the pH.
 C. Metabolic alkalosis, because the PaCO₂ is higher than the normal range and the bicarbonate is unchanged.
 D. Respiratory acidosis, because the pH is low and the PaCO₂ is high, moving in opposite directions.
 **Answer: D.**
-**Why correct:** The low pH (acidemia), increased PaCO₂ and HCO₃ within the laboratory reference interval are consistent with a predominantly respiratory-acidosis pattern. An expected-compensation calculation and clinical context are required before excluding a coexisting disturbance; this introductory question does not establish the complete diagnosis.
-**Why not A:** In metabolic acidosis HCO₃ is below 22.
+**Why correct:** Acidemia with elevated PaCO₂ supports a predominant respiratory-acidosis pattern. The bicarbonate is near the usual reference interval; evaluate expected acute or chronic compensation and clinical context before concluding that the disturbance is isolated. A single blood gas does not establish the cause.
+**Why not A:** A primary metabolic acidosis would lower bicarbonate relative to the patient's expected value; the predominant pattern here is respiratory. A concurrent metabolic process cannot be excluded just by a reference interval.
 **Why not B:** A high PaCO₂ makes the blood more acidic.
-**Why not C:** The pH is low, not high, so metabolic alkalosis does not fit this blood gas.
+**Why not C:** A primary metabolic alkalosis raises bicarbonate; it is not the predominant disturbance in this sample.
 
 **Q2 (judgment).** A patient has a rising PaCO₂ and is increasingly drowsy, but SpO₂ is 96 % on oxygen. What is the best interpretation?
 A. The patient is fine, because the oxygen saturation is within the target range, so the rest can wait.
@@ -122,7 +126,7 @@ B. Oxygen saturation can be normal in hypercapnia, so the nurse should assess ai
 C. The patient is only sleepy because of the time of day, so the nurse should leave the patient to rest quietly for now and look again later.
 D. The ABG result must be wrong, so the nurse should repeat it after a few hours before telling anyone.
 **Answer: B.**
-**Why correct:** The textbook states SaO₂ may be normal with hypercapnia and should not be the determining factor.
+**Why correct:** Oximetry estimates oxygen saturation, not ventilation or CO₂ clearance. New drowsiness with rising PaCO₂ requires immediate assessment and urgent help, even with satisfactory SpO₂ on oxygen. Assess airway protection, work of breathing and ventilation; prepare authorized ventilatory support and repeat gas assessment without delaying urgent care.
 **Why not A:** A normal SpO₂ does not exclude hypoventilation.
 **Why not C:** Drowsiness with rising CO₂ is a warning sign.
 **Why not D:** Delaying the response risks deterioration.
@@ -133,7 +137,7 @@ B. Warm the syringe in the hand for several minutes and then send it, so that th
 C. Treat the sample as unacceptable, because a specimen with visible air bubbles is a contraindication, and obtain a new one.
 D. Add some saline to the syringe to replace the lost volume and then send the sample to the analyser.
 **Answer: C.**
-**Why correct:** The guideline lists a specimen containing visible air bubbles as a contraindication to analysis, and air as a source of erroneous results.
+**Why correct:** AARC 2013 lists visible air bubbles as a reason not to analyze a specimen as received. Air contamination can distort gas measurements. Follow laboratory and sampling policy for an unacceptable specimen and arrange recollection when indicated; do not attempt to correct a compromised result by warming or adding fluid. Do not delay emergency clinical assessment for a new sample.
 **Why not A:** The result could lead to inappropriate treatment.
 **Why not B:** Warming does not correct air contamination.
 **Why not D:** Saline contamination is itself a cause of error.
@@ -155,21 +159,21 @@ B. It is not recommended as a substitute for an arterial PaO₂ (grade 1A).
 C. It is acceptable in children, in whom venous samples are considered equivalent to arterial ones.
 D. It is the preferred sample for ventilated patients because it avoids the risks of arterial puncture.
 **Answer: B.**
-**Why correct:** The AARC 2013 guideline recommends against using a peripheral venous PO2 as a substitute for arterial PaO2 (grade 1A, recommendation 14.7). The recommendation is not limited to children, and the arterial sample remains the reference.
+**Why correct:** AARC 2013 advises against substituting peripheral venous PO₂ for arterial PaO₂ when assessing oxygenation. Venous pH and CO₂ may be useful in selected clinical contexts, but venous oxygen tension is not interchangeable with arterial oxygen tension. Record the specimen source and oxygen or ventilatory support at sampling.
 **Why not A:** The guideline recommends against it.
 **Why not C:** The recommendation is not limited to children.
 **Why not D:** An arterial sample is the reference.
 
-**Q6 (scope).** Which task belongs to the prescriber (and respiratory therapist for the ventilator) rather than the bedside nurse?
-A. Labelling the sample with two patient identifiers and recording the sample source on the request form.
-B. Reporting a critical pH to the responsible clinician immediately, with the patient's clinical state.
-C. Documenting the FiO₂ and the ventilator settings on the request as the guideline lists them.
-D. Deciding to change ventilator settings or give a buffering drug in response to the result.
+**Q6 (application).** A deteriorating patient has pH 7.10, PaCO₂ 40 mm Hg and HCO₃ 12 mEq/L. The nurse notes that PaCO₂ is within the usual reference interval. Which interpretation is most appropriate?
+A. Isolated metabolic acidosis with appropriate respiratory compensation because PaCO₂ is normal.
+B. Isolated respiratory acidosis because the bicarbonate is reduced in a patient who is deteriorating.
+C. Metabolic acidosis with additional respiratory alkalosis because compensation lowers PaCO₂.
+D. Metabolic acidosis with additional respiratory acidosis; assess ventilation and escalate urgently.
 **Answer: D.**
-**Why correct:** Treatment and ventilator changes are prescriber decisions, with the respiratory therapist operating the ventilator.
-**Why not A:** Labelling is a nursing responsibility.
-**Why not B:** Reporting is a nursing responsibility.
-**Why not C:** Recording is a nursing responsibility.
+**Why correct:** For a bicarbonate of 12 mEq/L, Winter's formula estimates a compensatory PaCO₂ of approximately 26 ± 2 mm Hg. The measured PaCO₂ of 40 is higher than expected, supporting an additional respiratory acidosis. A reference-range PaCO₂ is therefore not reassuring in this context. Assess ventilation, airway protection and circulation, and summon urgent clinical help. Interpret the gas alongside the clinical condition and specimen quality; treatment decisions require the authorized team.
+**Why not A:** A PaCO₂ within the usual reference range can be inappropriately high for the degree of metabolic acidosis.
+**Why not B:** The low bicarbonate and compensation mismatch support a metabolic component as well as a respiratory component.
+**Why not C:** Additional respiratory alkalosis would cause PaCO₂ to be lower than expected, rather than higher.
 
 ## 18. References
 - Kaufman DA. *Interpretation of Arterial Blood Gases.* American Thoracic Society, Critical Care Clinical Education, https://site.thoracic.org/assemblies/cc/clinical-education/interpretation-of-abgs (accessed 2026-11-21; steps 2–5 read, including expected-compensation discussion and mixed-disorder warning; educational society page, not a validated local protocol; paraphrase only).
@@ -177,6 +181,8 @@ D. Deciding to change ventilator settings or give a buffering drug in response t
 - Morikawa MJ, Ganesh PR. *Acid-Base Interpretation: A Practical Approach.* Am Fam Physician. 2025. https://www.aafp.org/afp/2025/0200/acid-base-interpretation (accessed 2026-11-21; summary/approach only; full paywalled article not read). Used only to contextualise selected venous-sampling clinical practice and arterial oxygenation preference; avoid treating this as a replacement society guideline.
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN, section 15.5 Acid–Base Balance. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/15-5-acid-base-balance/ (CC BY 4.0; accessed 2026-11-14)
 - Davis MD, Walsh BK, Sittig SE, Restrepo RD. AARC Clinical Practice Guideline: Blood Gas Analysis and Hemoximetry: 2013. Respir Care. 2013;58(10):1694-1703. doi:10.4187/respcare.02786. https://www.aarc.org/wp-content/uploads/2025/03/davis-et-al-2013-aarc-clinical-practice-guideline-blood-gas-analysis-and-hemoximetry-2013.pdf (accessed 2026-11-14). © Daedalus Enterprises; paraphrased only.
+
+- S-NICE-NG148. https://www.nice.org.uk/guidance/ng148/chapter/recommendations (selected indexed recommendation; direct NICE page blocked checked 2026-11-24; full appraisal and independent review outstanding).
 
 ## 19. Local protocol note
 Reference ranges, critical-value limits, sampling technique and sites, line sampling, transport, laboratory acceptance criteria and who may interpret or act follow local policy and the laboratory.

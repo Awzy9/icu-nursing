@@ -1,0 +1,5 @@
+# Candidate account decision-history isolated verification — 24 November 2026
+
+All four GitHub workflows were confirmed successful at parent 4baea3eb: CI 45395149462, mobile acceptance 45395149440, learning experience 45395149509, isolated Supabase 45395149494.
+
+Added six database integration tests that apply the exact review candidate SQL in a disposable clone made by the existing PostgreSQL test harness. Coverage: round-trip, anonymous and cross-account denial, stale v2/legacy updates, newer legacy clearing, malformed JSON and quiz-history rejection, and account deletion cascade. The existing CI already runs the entire database test suite; no hosted secrets or project connections are required. The candidate is intentionally outside active migrations and the application is not yet wired to its RPC. SQL null (legacy unknown history) is distinguished from JSON null (invalid history). The tests have not yet run on the new commit. Only after the candidate passes should a real migration and client integration be prepared. Full PostgREST authenticated API testing and advisor review remain outstanding. No production or hosted database changes.

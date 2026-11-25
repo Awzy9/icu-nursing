@@ -31,6 +31,21 @@
         "EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_TymaR91woXzxTYb89xaIug_7k-_sMj4",
         "EXPO_PUBLIC_SITE_URL": "https://icu-nursing.vercel.app"
       }
+    },
+    "isolated-replay": {
+      "distribution": "internal",
+      "environment": "preview",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": false
+      },
+      "channel": "isolated-replay",
+      "env": {
+        "APP_VARIANT": "isolated-replay",
+        "EXPO_PUBLIC_PROGRESS_REPLAY": "true"
+      }
     }
   },
   "submit": {

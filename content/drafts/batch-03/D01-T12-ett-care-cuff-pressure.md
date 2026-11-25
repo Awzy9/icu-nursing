@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – recommendations 11–15 and cuff section", "SHEA/IDSA/APIC VAP/VAE 2022 update – cuff, sedation and circuit statements", "ERC Guidelines 2025 Adult ALS – waveform capnography to confirm tracheal tube placement", "EPUAP/NPIAP/PPPIA International Guideline 4th ed. Quick Reference Guide 2026 – device-related pressure injury statements"]
-sources: [S-AARC-PVA, S-SHEA-VAP-2022, S-ERC-ALS-2025, S-INTL-PI-2026]
+sources: [S-AARC-PVA, S-SHEA-VAP-2022, S-ERC-ALS-2025, S-INTL-PI-2026, S-PUMA-2022, S-SIAARTI-VAP-2026]
 independently_written_note: "Original wording; paraphrase only. AARC PVA (© Daedalus Enterprises) and the ERC 2025 ALS guideline (commercial use needs an ERC agreement) are cite-only. No guideline read gives a tube depth, securement method, cuff interval or measurement technique beyond what is stated below. Tracheostomy care is a separate topic and not covered."
 ---
 # Endotracheal tube care – securement, position and cuff pressure
@@ -61,6 +61,8 @@ Tube depth and securement each shift and with moves; cuff pressure at policy int
 | Preventive dressing under devices | Recommended when it does not interfere with the device | QRG: strong, very low certainty | Per policy |
 | Circuit changes | Only if soiled or malfunctioning | SHEA, high | Do not change routinely |
 
+**SIAARTI 2026 cross-check.** Use a manometer and the ordered cuff target. The consensus favours 20–30 cmH₂O and does not establish a universal check interval or preference for automatic systems. An abnormal pressure with a leak or falling delivered ventilation warrants prompt airway assessment, rather than repeatedly adding air. Subglottic drainage may be appropriate with a dedicated tube in selected patients; follow its device instructions and local protocol. Evidence does not identify one preferred suction method. These are prevention considerations, not a reason to delay airway rescue.
+
 ## 10. Warning signs and red flags
 Loss of capnography trace; sudden desaturation; loss of chest movement or breath sounds on one side; audible leak or falling expired volume; rising airway pressures or inability to pass a suction catheter; patient biting or pulling at the tube; tube moved from the recorded depth; visible tube in the mouth; swelling, bleeding or blistering of lip, mouth or skin; secretions around the cuff; cuff pressure repeatedly low or very high.
 
@@ -73,7 +75,7 @@ Loss of capnography trace; sudden desaturation; loss of chest movement or breath
 | Sedation, analgesia and restraint orders | Prescriber decision (nurse titrates per protocol) |
 
 ## 12. Escalation criteria
-Immediate escalation for: suspected displacement or obstruction, loss of capnography trace, severe desaturation, cuff failure that cannot be corrected, accidental extubation, or new bleeding from the airway.
+Activate emergency help immediately for suspected displacement, obstruction, loss of capnography with inadequate ventilation, severe desaturation, accidental extubation or significant airway bleeding. Assess oxygenation and ventilation and support the airway under the emergency protocol with trained staff. Do not blindly advance or reinsert a displaced tube, or add cuff air merely to overcome a leak; maintain securement as appropriate while awaiting skilled assessment. AARC 2024 supports checking placement, securement and cuff pressure with a manometer.
 SBAR — **S:** bed X, tube has moved out by 3 cm from the recorded depth and there is an audible leak. **B:** day 5 ventilation, agitated overnight, last cuff check [time]. **A:** possible partial displacement. **R:** please come now; I am holding the tube secure, giving oxygen and monitoring; I have not re-inflated beyond policy.
 
 ## 13. Potential complications
@@ -95,7 +97,7 @@ B. Measuring with a manometer at the interval set by the unit's policy.
 C. Continuous automatic monitoring for every ventilated patient to prevent pneumonia.
 D. Checking only when the alarm sounds for a leak or a low volume.
 **Answer: B.**
-**Why correct:** AARC strongly recommends manometer assessment; no interval is specified, so policy decides.
+**Why correct:** AARC strongly recommends manometer assessment; no interval is specified, so policy decides. AARC's recommendation against continuous assessment is specifically for preventing VAP, not a prohibition for other justified indications.
 **Why not A:** Palpation is inaccurate compared with a manometer.
 **Why not C:** AARC strongly recommends against continuous monitoring to reduce VAP risk.
 **Why not D:** Waiting for an alarm leaves over- or under-inflation unmeasured.
@@ -106,8 +108,8 @@ B. Continue the hourly observations because the SpO₂ is still above 94% and th
 C. Remove the securement to allow the tube to find its natural position, then re-tape it once it has settled.
 D. Support the tube, call urgently for the doctor or respiratory therapist, monitor SpO₂ and capnography, and prepare to assist.
 **Answer: D.**
-**Why correct:** A sudden tube-depth change with falling exhaled tidal volume may indicate displacement and requires urgent airway-team assessment. Support the airway, call for immediate help, and avoid advancing or withdrawing the tube without appropriate training, orders and local authorization.
-**Why not A:** Advancing or withdrawing the tube is not a nursing decision, and the position may be wrong.
+**Why correct:** A sudden tube-depth change with falling exhaled tidal volume may indicate displacement and requires urgent airway-team assessment. Support the airway, call for immediate help, and avoid advancing or withdrawing the tube without appropriate training, orders and local authorization. The PUMA consensus supports rechecking sustained exhaled CO₂ when a tube moves or ventilation is in doubt; capnography does not establish correct insertion depth or exclude endobronchial placement.
+**Why not A:** A previous depth mark is not proof of correct position; unplanned manipulation risks airway loss. Follow the authorized airway team's assessment and plan.
 **Why not B:** Delay risks accidental extubation.
 **Why not C:** Removing the securement increases the risk of extubation.
 
@@ -128,21 +130,21 @@ B. Tighten the tapes so that no movement can occur at the lips, because friction
 C. Leave the securement unchanged for the whole admission unless it comes loose, to avoid disturbing the tube.
 D. Apply moisturiser under the securement before each tape change, so that the skin stays soft and does not crack.
 **Answer: A.**
-**Why correct:** The pressure-injury guide advises regular checks under devices, redistributing pressure, and preventive dressings.
+**Why correct:** The pressure-injury guide advises regular checks under devices, redistributing pressure, and preventive dressings. AARC 2024 also supports assessment of skin, placement and securement. Inspect accessible areas without compromising the airway; any securement change that risks displacement requires trained assistance and a stabilization plan.
 **Why not B:** Tight securement increases pressure.
 **Why not C:** Long periods without skin checks risk unnoticed injury.
 **Why not D:** Added moisture under a device can worsen skin damage.
 
-**Q5 (prioritization).** Which finding needs the nurse's attention first?
-A. A mild redness at the corner of the mouth where the tape sits, with intact skin.
-B. A cuff pressure measurement that is due at the next scheduled check.
-C. The head of the bed at 30° with the oral care completed.
-D. A flat capnography trace with falling SpO₂ and no chest movement.
+**Q5 (prioritization).** During the airway safety round, a nurse receives four updates about intubated patients. Which finding requires an immediate emergency response rather than a routine airway-care intervention?
+A. A loose corner of tube fixation in a stable patient whose tube marking and ventilation are unchanged.
+B. A cuff pressure check due shortly in a patient with unchanged oxygenation and delivered volumes.
+C. New lip redness beneath the fixation device, with intact skin and stable respiratory observations.
+D. Sudden loss of capnography, falling oxygen saturation and absent chest movement.
 **Answer: D.**
-**Why correct:** Loss of capnography with desaturation suggests displacement or obstruction.
-**Why not A:** Mild redness with intact skin needs care but is not an immediate threat.
-**Why not B:** A scheduled routine check can wait for its time.
-**Why not C:** This describes correct care, not a problem.
+**Why correct:** Loss of capnography with desaturation and absent chest movement is a ventilation emergency. Call urgently and assess airway, breathing and circulation immediately; support oxygenation and ventilation under the local emergency pathway. The trained airway team must evaluate displacement, obstruction, circuit failure and other causes in parallel; do not delay rescue while troubleshooting the monitor. Assess for cardiac arrest if circulation is absent.
+**Why not A:** Loose fixation needs prompt assessment and competent securement without displacing the airway, but the described patient has no current ventilation failure.
+**Why not B:** A planned cuff pressure assessment is important but does not take precedence over active loss of ventilation.
+**Why not C:** Device-related pressure damage needs assessment and relief with safe airway securement, but there is no immediate respiratory compromise in this option.
 
 **Q6 (scope).** Which action requires an authorized airway clinician or team under the local airway protocol, rather than independent action by an untrained staff member?
 A. Measuring cuff pressure with a manometer at the policy interval.
@@ -161,10 +163,15 @@ D. Reporting redness under the securement.
 - Soar J, et al. ERC Guidelines 2025 Adult ALS. Resuscitation. 2025;215:110769. https://www.erc.edu/media/vedoa2ga/gl2025-05-als-e.pdf (accessed 2026-11-14)
 - NPIAP/EPUAP/PPPIA. Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide, 4th ed., 2026. https://epuap.org/download/13743/ (accessed 2026-11-14)
 
+- PUMA consensus guideline, 2022. https://doi.org/10.1111/anae.15817 (selected recommendations or abstract, accessed 2026-11-24; full text not appraised in this pass)
+
+- SIAARTI. Strategies to prevent ventilator-associated pneumonia in critically ill mechanically ventilated patients: a SIAARTI consensus statement. 2026-07-08. https://doi.org/10.1186/s44158-026-00432-5 (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+
 ## 19. Local protocol note
 Tube depth checks, securement method, cuff-pressure interval and target range, tube-holder choice and restraint policy follow the institution's protocols and the respiratory therapy team.
 
 ## 20. Evidence, applicability and open questions
+- SIAARTI 2026 statements 1–2 and rationale checked; no new device-specific suction settings or universal monitoring interval inferred.
 - Source quality: AARC 2024 strong recommendations on manometer use and skin assessment are high certainty; placement and securement assessment is conditional with very low certainty. Cuff range, securement methods and depth are not graded. The pressure-injury guide was read in its abridged form.
 - Applicability: AARC is US respiratory-therapy guidance; nurses' responsibilities for cuff pressure vary by country. ERC is European.
 - Not covered: tracheostomy care, in-line suction details, extubation criteria, cuff-leak tests.

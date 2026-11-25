@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["CDC Standard Precautions page (dated 2024-04-03)", "CDC Transmission-Based Precautions page (dated 2024-04-03)"]
-sources: [S-CDC-IC]
-sources_not_read: [S-WHO-HH-2009, S-CDC-ISOLATION-2007]
-independently_written_note: "Original wording and structure. CDC pages were read for facts only; no reuse terms were found, so nothing is copied (cite-only). WHO and ECDC isolation guidance were not read; reviewers should check international equivalents."
+sources: [S-CDC-IC, S-CDC-ISOLATION-2007, S-WHO-HH-SUMMARY-2013]
+sources_not_read: [S-WHO-HH-2009]
+independently_written_note: "Original wording and structure. CDC pages were read for facts only; no reuse terms were found, so nothing is copied (cite-only). CDC 2007 selected official recommendations and WHO 2013 hand-hygiene summary were checked on 2026-11-24. The complete WHO 2009 guideline and ECDC isolation guidance were not read; rights review remains pending."
 ---
 # Standard and transmission-based precautions in the ICU
 > DRAFT – NOT clinically reviewed. AI-generated. Not for learners until qualified reviewers approve.
@@ -35,11 +35,13 @@ ICU patients have devices (lines, tubes, catheters), impaired defences and long 
 - **Environment:** is the correct sign visible, and are PPE, hand-hygiene products and cleaning supplies available at the room entrance?
 
 ## 7. Nursing responsibilities
-- Hand hygiene at the moments defined by local policy and national or WHO guidance (the specific moments are not stated on the CDC pages read and the WHO guidance could not be accessed, so they are not listed here).
+- Clean hands before patient contact and before an aseptic task; repeat after possible body-fluid contamination, patient contact, or contact with the immediate patient environment. These five categories are supported by the WHO public summary. CDC additionally specifies cleaning hands when moving from a contaminated body site to a clean site and after removing gloves. Follow approved products and local instructions; visibly soiled hands require washing with soap and water.
 - PPE chosen from the task risk; put on before the task and remove in the order and place set by policy, then perform hand hygiene.
 - Respiratory hygiene and cough etiquette; safe injection and sharps practice; cleaning and disinfection of shared equipment; safe handling of linen and waste.
 - Apply and keep visible the precaution level in force; brief visitors and colleagues.
 - Report exposures and breaches promptly.
+
+**Clean-to-dirty workflow and injection safety (CDC core practices).** In addition to wearing task-appropriate PPE, clean hands before an aseptic task and when moving from a contaminated site to a clean site; change contaminated gloves and clean hands after glove removal. Prepare injectable medicines in a designated clean area away from contamination, using new sterile equipment; never share a syringe, single-use medication container or administration set between patients. When cleaning reusable equipment, select the approved compatible product and allow its specified contact time rather than assuming a quick wipe is adequate. For suspected transmissible infection, initiate the relevant interim precautions under local policy and reassess them with the team when clinical information changes. These are general infection-prevention principles, not a universal organism-specific isolation schedule.
 
 ## 8. Monitoring
 Each shift: is the isolation order still current and visible? Is the PPE supply adequate? Are shared devices (stethoscope, thermometer, pumps) cleaned or dedicated? Are transfers and procedures planned with the receiving team informed?
@@ -66,7 +68,7 @@ New diarrhoea or productive cough in a patient not on precautions; clusters of s
 | Treatment of any infection | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate to the charge nurse and infection-prevention team when: a patient meets a trigger and no precautions are in place; a breach or exposure occurs; the required room or supplies are unavailable; two or more patients develop similar symptoms.
+Start indicated interim transmission-based precautions under the approved pathway when a transmissible infection is suspected; do not wait for laboratory confirmation or a routine review. Escalate missing precautions, breaches, exposures, unavailable isolation facilities or supplies, and suspected clusters to the charge nurse and infection-prevention team. Use the facility's contingency pathway if the required isolation room is unavailable. Maintain standard precautions for every patient and select additional protection according to suspected transmission route and task. If the patient is unstable, activate the emergency response with appropriate protective measures rather than deferring urgent care.
 SBAR prompt — **S:** bed X, [symptom], no precautions in place. **B:** [admission source, devices, recent exposures]. **A:** possible [contact/droplet/airborne] pathogen. **R:** please advise precaution level and testing; I have started [interim measures per policy].
 
 ## 13. Potential complications
@@ -88,18 +90,18 @@ B. Wait for a stool sample result before applying extra precautions, because the
 C. Put on gown and gloves for the turn only, and review the need for precautions once the stool result is back.
 D. Start the interim contact-precaution measures in policy now and tell the charge nurse and infection prevention.
 **Answer: D.**
-**Why correct:** Interim measures start at the trigger and escalation runs in parallel; waiting leaves other patients exposed.
+**Why correct:** CDC core practices support starting transmission-based measures according to presentation before a confirmed microbiological diagnosis. Apply the local interim pathway and notify infection prevention; assess the diarrhoea and whether a pathogen-specific hand hygiene or cleaning procedure is required.
 **Why not A:** Delaying until handover extends the period in which organisms can spread to other patients and staff.
 **Why not B:** Precautions are based on the presentation and risk, not on a confirmed laboratory result.
 **Why not C:** Protecting only one task leaves the room, equipment and later care unprotected, and nobody with infection-prevention expertise is told.
 
-**Q2 (judgment).** A nurse is about to care for a patient on a busy unit. Which approach to choosing PPE for a task is most consistent with standard precautions?
+**Q2 (judgment).** A nurse is preparing to provide oral care and then handle respiratory secretions for a patient in the ICU. The patient has no confirmed infectious diagnosis. Which approach to PPE selection is safest?
 A. Base it on the expected exposure for the task, such as splashes or secretion contact, and the precaution level.
 B. Use the same set of PPE for every task on a patient, chosen from the diagnosis written on the isolation sign.
 C. Use whatever is nearest at the time, because any barrier is better than none and speed is important in the ICU.
 D. Follow the preference of the most senior nurse on duty, since PPE choices are a matter of individual experience.
 **Answer: A.**
-**Why correct:** Standard precautions rely on a risk assessment of the task as well as the isolation category.
+**Why correct:** Standard precautions apply even without a confirmed infection. Assess the likelihood of contact with secretions and splashes for each planned task and add the precautions indicated by the patient's presentation and facility policy. PPE appropriate for one task may not provide sufficient protection during the next.
 **Why not B:** A fixed set can over- or under-protect, because exposure differs from task to task.
 **Why not C:** Convenience does not equal protection; the wrong PPE can give false reassurance.
 **Why not D:** PPE selection is defined by policy and risk assessment, not by personal preference.
@@ -110,9 +112,9 @@ B. Transfer with the nurse in a surgical mask and the patient unmasked, so as no
 C. Postpone the scan until the isolation order is lifted, whatever the clinical urgency, to remove all risk to others.
 D. Keep the transfer to what is essential, inform imaging beforehand and follow the local respirator and patient-mask policy.
 **Answer: D.**
-**Why correct:** Transport is limited and planned, and receiving staff must know which precautions apply.
+**Why correct:** Limit movement to clinically necessary transport and alert the destination. Apply patient source control if tolerated and cover infectious lesions as appropriate. Staff respirator requirements during transport depend on the pathogen, source control, planned care and local policy; emergency airway support must not be delayed.
 **Why not A:** Standard precautions alone do not control airborne spread.
-**Why not B:** A surgical mask does not meet airborne respirator requirements, and the patient may need a mask during transport.
+**Why not B:** Leaving the patient without indicated source control and assuming a surgical mask is sufficient for the escort ignores pathogen-specific and clinical risks.
 **Why not C:** A blanket delay can harm the patient; the decision should balance clinical need with infection controls.
 
 **Q4 (application).** The nurse has just cared for a patient on contact precautions and removed the gown and gloves at the room exit. What is the best next action?
@@ -121,10 +123,10 @@ B. Perform hand hygiene per policy, then clean any shared equipment taken into t
 C. Keep the gloves on for the next task to save supplies, since they appear clean after the gown is removed.
 D. Wipe the monitor and the bed rails with the same cloth, then go to the desk to chart.
 **Answer: B.**
-**Why correct:** Hand hygiene after PPE removal and cleaning shared equipment stop transfer on hands and devices.
+**Why correct:** Perform hand hygiene immediately after removing PPE at the designated location and reprocess shared equipment before another patient uses it. Follow the disinfectant contact time and local isolation-specific hand hygiene requirements.
 **Why not A:** Contamination can be spread while walking before hand hygiene is done.
 **Why not C:** Gloves must be removed and replaced between patients; reuse is a breach.
-**Why not D:** One cloth used across surfaces spreads contamination from dirtier to cleaner areas.
+**Why not D:** This omits immediate hand hygiene and appropriate equipment reprocessing; cleaning cloth use must follow the product and facility procedure.
 
 **Q5 (monitoring).** At handover on a mixed medical unit, which patient most needs follow-up about precautions?
 A. A patient with new cough and fever, admitted from another facility, nursed in an open bay without any precautions.
@@ -152,10 +154,15 @@ D. Complete the suctioning and rinse the area at the end of the shift when the w
 - CDC. Standard Precautions for All Patient Care. Page dated 3 April 2024. https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html (accessed 2026-11-14)
 - CDC. Transmission-Based Precautions. Page dated 3 April 2024. https://www.cdc.gov/infection-control/hcp/basics/transmission-based-precautions.html (accessed 2026-11-14)
 
+- CDC isolation recommendations. https://www.cdc.gov/infection-control/hcp/isolation-precautions/recommendations.html (selected recommendation excerpts, accessed 2026-11-24)
+- CDC core practices. https://www.cdc.gov/infection-control/hcp/core-practices/ (selected recommendation excerpts, accessed 2026-11-24)
+
+- WHO. Hand-hygiene strategy (23 August 2013), public summary. https://www.who.int/news-room/detail/23-08-2013-who-hand-hygiene-strategy-feasible-and-sustainable-for-health-care-settings-around-the-world (selected hand-hygiene statements checked 2026-11-24; full 2009 guideline remains unread).
+
 ## 19. Local protocol note
 Follow your institution's isolation policy and national rules. Hand-hygiene moments, PPE type and duration of isolation differ by organism and jurisdiction.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: CDC is an authoritative public-health agency; the pages are summaries, not the full 2007 isolation guideline. No licence for reuse was found (cite-only).
-- International applicability: principles are widely shared; WHO and European (ECDC) guidance were not read. Respirator standards (N95, FFP2) differ by region.
+- International applicability: CDC 2007 recommendations IV.A and V.A–B and the WHO 2013 public summary were examined; the full WHO 2009 guidance remains outstanding. Use pathogen-specific isolation duration and local respirator standards; do not use a general precaution category to decide when to discontinue isolation.
 - Open questions for reviewers (IPC, NE, BN): confirm duration criteria to include; whether to add eye protection rules; Arabic-language terminology.

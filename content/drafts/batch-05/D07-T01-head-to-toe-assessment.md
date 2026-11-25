@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Skills 2e, Appendix C – Head-to-Toe Assessment Checklist (entry-level general inpatient checklist; read in full 2026-11-14)", "International pressure-injury guide 4th ed. Quick Reference Guide 2026 – skin assessment timing (see D07-T04)", "SCCM PADIS 2018 official recommendation page – pain assessment statements (see D07-T03)"]
-sources: [S-OPENRN-NSK-APPC, S-INTL-PI-2026, S-SCCM-PADIS]
+sources: [S-OPENRN-NSK-APPC, S-INTL-PI-2026, S-SCCM-PADIS, S-AHA-INHOSP-STROKE-2022, S-SCCM-OLDER-2026, S-RCUK-ABCDE-ADULT]
 independently_written_note: "Original wording based on the Open RN checklist (CC BY 4.0; attribution and change notice required if adapted). The checklist is written for entry-level nurses on general inpatient units; it is NOT an ICU assessment standard. ICU-specific elements (devices, ventilator, infusion pumps, haemodynamic and neurological monitoring) are covered elsewhere in this curriculum and are cross-referenced, not invented here. No ICU head-to-toe guideline was found or read."
 ---
 # Systematic head-to-toe assessment and documentation
@@ -48,6 +48,16 @@ Critical illness changes quickly and many devices and treatments hide or cause p
 - Document objectively and report unanticipated findings per policy.
 - In ICU, add the unit's monitoring, device and infusion checks; see the related topics (ventilator values, arterial line, ETT, urine output and fluid balance, GCS, pain, skin, delirium).
 
+## 7b. Older adults: baseline function, frailty and individualized care
+
+The 2026 SCCM guideline covers adults aged 65 years and older and conditionally supports a geriatric-focused model of care; certainty is very low. Age alone does not establish frailty, prognosis, or treatment eligibility. When possible, ask the patient or someone familiar with them about pre-illness mobility, independence with daily activities, cognition, falls, hearing and vision, nutrition, medicines and available support. Distinguish baseline disability or frailty from new weakness or dependence during critical illness. If the unit uses a validated frailty instrument, use its approved version and training; this lesson does not reproduce a scale or scoring rule.
+
+Document baseline, current findings, the information source and uncertainty separately. Communicate new functional or cognitive decline, swallowing or nutrition concerns, medication-related symptoms and rehabilitation needs to the interdisciplinary team. Use accessible communication and involve the patient in goal-setting. Do not infer a treatment limitation from age or a frailty score.
+
+In older adults with vasodilatory shock, the 2026 geriatric SCCM panel did not endorse one of the compared lower or usual MAP strategies because evidence was very uncertain. This is not a blanket blood-pressure target or an instruction to override a sepsis-specific recommendation. Follow the individualized prescribed target and escalate evidence of impaired perfusion. The panel also did not establish whether specialized post-ICU follow-up improves outcomes; arrange follow-up according to individual needs and local services.
+
+**Primary assessment and reassessment before completing a routine checklist (Resuscitation Council UK ABCDE).** Establish the patient's current airway, breathing, circulation and responsiveness first. If a life-threatening problem is identified, activate urgent help and address it within the authorized emergency pathway before proceeding with routine examination. Reassess after interventions and report whether the patient improved, remained unchanged or deteriorated. Resume the remaining head-to-toe examination when appropriate, documenting any deferred elements and the plan to complete them. A routine assessment schedule must not delay response to an acute change.
+
 ## 8. Monitoring parameters
 Frequency of full and focused assessments follows unit policy and patient condition (the checklist is for a routine daily assessment). The pressure-injury guide advises a comprehensive head-to-toe skin and tissue assessment soon after admission or transfer, as part of every risk assessment, periodically, when the condition worsens, at care transitions and before discharge, and inspection of visible bony areas at each repositioning.
 
@@ -74,8 +84,8 @@ Any abnormality in the primary survey; sudden change from the previous assessmen
 | Diagnosing causes, ordering tests and treatments | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate immediately for primary-survey abnormalities and any unanticipated findings per policy.
-SBAR — **S:** bed X, new weakness in the left arm and facial droop found during the neurological assessment. **B:** day 3 after surgery, assessed at 08:00 with normal findings at 04:00. **A:** possible acute neurological event. **R:** please review urgently; I will repeat the neurological checks every [interval].
+Interrupt the routine head-to-toe examination for any immediate threat identified during the primary survey. Assess and address life-threatening abnormalities within scope while summoning emergency help; reassess the response before resuming the routine examination. New focal neurological signs require immediate stroke or neurological emergency pathway activation, documentation of last known well, and urgent assessment rather than waiting for the next scheduled neurological check. Check point-of-care blood glucose promptly and follow the authorised hypoglycaemia pathway if needed, in parallel with stroke escalation; neither glucose testing nor improvement in one finding should independently cancel specialist assessment. NICE NG128 and the Canadian Stroke Best Practices emergency assessment recommendations support excluding hypoglycaemia as a stroke mimic (targeted recommendation checks, not a complete stroke protocol).
+SBAR — **S:** bed X, new weakness in the left arm and facial droop found during the neurological assessment. **B:** day 3 after surgery, assessed at 08:00 with normal findings at 04:00. **A:** possible acute neurological event. **R:** activate the stroke pathway now; last known well was 04:00, and symptoms were first identified at 08:00. I will continue emergency assessment and monitoring, including prompt point-of-care glucose measurement without delaying the stroke response.
 
 ## 13. Potential complications of omission
 Missed deterioration, unrecognised pressure injuries and device problems, poor handover, duplicated or missed care.
@@ -96,7 +106,7 @@ B. Auscultating bowel sounds in all four quadrants for a full minute before anyt
 C. Measuring the weight trend and the 24-hour intake and output totals before approaching the patient.
 D. Staging any pressure injury found on the sacrum or heels, because skin findings are the most urgent.
 **Answer: A.**
-**Why correct:** The checklist begins with safety steps and a primary survey to ensure medical stability.
+**Why correct:** The general inpatient checklist begins with safety and a primary survey. In critical care, interrupt the routine assessment when an immediate threat emerges; assess airway, breathing and circulation and summon help in parallel. A checklist does not replace emergency response or ongoing ICU device checks.
 **Why not B:** Abdominal assessment belongs to the later system-by-system stage.
 **Why not C:** Weight and balance review come after the primary survey.
 **Why not D:** Skin staging is part of the integumentary assessment, later in the sequence.
@@ -118,21 +128,21 @@ B. Obtain emergency assistance and report the finding immediately according to t
 C. Wait for the patient's family to confirm that this is unusual before telling anyone else on the team.
 D. Complete the rest of the assessment first and then mention the finding at the end-of-shift handover.
 **Answer: B.**
-**Why correct:** The checklist directs the nurse to note unanticipated neurological findings and obtain emergency assistance as needed.
+**Why correct:** New unilateral facial and arm weakness may indicate acute stroke. Activate the in-hospital stroke response without waiting to finish the routine assessment. Remain with the patient, assess airway, breathing and circulation, record when the patient was last known well and when symptoms were discovered, and obtain glucose under the emergency protocol without delaying escalation. AHA in-hospital stroke guidance emphasizes rapid recognition and alert activation; treatment selection follows the specialist pathway.
 **Why not A:** Delay risks harm to the patient.
 **Why not C:** Family confirmation is not required before reporting.
 **Why not D:** Handover is too late for a possible acute neurological event.
 
-**Q4 (scope).** Which statement about the Open RN checklist is accurate?
-A. It is a validated ICU assessment standard for critical care and defines the frequency of ICU assessments for each patient.
-B. It sets numeric thresholds for escalation in every body system and for every group of patients, including children and pregnant patients.
-C. It guides a routine, general, daily assessment by an entry-level nurse; focused and specialty assessments follow unit guidelines.
-D. It replaces the unit's monitoring and early-warning policies when a patient is in a critical care area or an isolation room.
+**Q4 (judgment).** During admission to ICU, a nurse completes the general head-to-toe checklist for a ventilated patient. The checklist does not include the patient's arterial waveform, ventilator trends or continuous infusion checks. What should the nurse do?
+A. Treat the completed checklist as sufficient unless the patient develops a new symptom during the shift.
+B. Use the general checklist to choose monitoring intervals for the ventilator and arterial line.
+C. Add the unit's focused device assessments and individualized critical-care monitoring plan.
+D. Replace the structured physical assessment with monitor observations because the patient is ventilated.
 **Answer: C.**
-**Why correct:** The checklist presents itself as a routine, general, daily assessment for an entry-level nurse. It does not replace focused or specialty assessments, which follow unit guidelines, and it is not an ICU-specific standard.
-**Why not A:** The checklist is a general inpatient tool, not an ICU-specific standard, so this does not follow.
-**Why not B:** It does not give numeric thresholds.
-**Why not D:** It supplements, not replaces, local policies.
+**Why correct:** The Open RN checklist is a routine general inpatient assessment aid for entry-level nursing, not a validated ICU-specific monitoring standard. It provides a systematic physical assessment but does not define ventilation, haemodynamic or infusion surveillance. Combine it with the unit's focused assessments and patient-specific monitoring plan; prioritize new abnormalities and urgent threats over completion of a routine checklist.
+**Why not A:** Completing a general checklist does not establish that essential critical-care devices and treatment trends have been assessed.
+**Why not B:** Specialty monitoring intervals require an authorized unit policy and clinical assessment, not inference from a general checklist.
+**Why not D:** Electronic monitoring complements rather than replaces patient examination and focused bedside assessment.
 
 **Q5 (documentation).** A nurse is documenting the respiratory assessment of a patient on oxygen. Which entry best documents the oxygen device?
 A. "Patient on oxygen", because the equipment itself is visible to the next nurse who enters the room.
@@ -140,7 +150,7 @@ B. "Oxygen on, patient comfortable", because a short note is quicker and the sat
 C. The device name and the flow rate or FiO₂, with the condition of the skin under the device.
 D. Only the saturation reading, since the device and the flow can be seen on the equipment.
 **Answer: C.**
-**Why correct:** The checklist directs documentation of the device and flow or FiO₂ and a check for skin breakdown.
+**Why correct:** Record the device and actual flow or set FiO₂, along with measured saturation, prescribed target, work of breathing and skin condition. Flow and FiO₂ are not interchangeable across devices. Document new support requirements and escalate unexpected deterioration.
 **Why not A:** Too vague to reproduce the treatment.
 **Why not B:** Gives no device or rate and no objective data.
 **Why not D:** The device and rate are needed to interpret the saturation.
@@ -151,7 +161,7 @@ B. Call light in reach, bed low and locked, rails per policy, risk-free room, PP
 C. Document the findings later at the end of the shift, whatever the time, and leave the room as it is.
 D. Move the patient's belongings away from the bedside to clear space, including the call light and drink.
 **Answer: B.**
-**Why correct:** These safety measures are listed at the end of the checklist.
+**Why correct:** These are routine general-inpatient safety measures. In ICU, also ensure life-sustaining devices remain secure, relevant alarms are active and an unstable patient is not left alone. Bed position and rails follow the individualized safety plan and local policy.
 **Why not A:** A raised bed and unreachable call light are unsafe.
 **Why not C:** Documentation should follow the assessment and abnormal findings be reported per policy.
 **Why not D:** Needed items such as the call light should remain within reach.
@@ -160,6 +170,14 @@ D. Move the patient's belongings away from the bedside to clear space, including
 - Open RN. Nursing Skills, 2nd ed. Appendix C – Head-to-Toe Assessment Checklist. https://wtcs.pressbooks.pub/nursingskills/back-matter/appendix-c/ (CC BY 4.0; accessed 2026-11-14)
 - NPIAP/EPUAP/PPPIA. Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide, 4th ed., 2026 (skin assessment timing). https://epuap.org/download/13743/ (accessed 2026-11-14)
 - SCCM. PADIS 2018 recommendations page (pain assessment). https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa (recommendation-level text; accessed 2026-11-14)
+
+- NICE NG128: Stroke and transient ischaemic attack in over 16s, recommendation 1.1.2 (https://www.nice.org.uk/guidance/NG128/chapter/recommendations); Canadian Stroke Best Practices, emergency department assessment (https://www.strokebestpractices.ca/recommendations/acute-stroke-management/emergency-department-evaluation-and-management). Selected statements checked 2026-11-24; formal registration and full evidence/rights review pending.
+
+- AHA in-hospital stroke scientific statement summary (2022). https://professional.heart.org/en/science-news/identifying-best-practices-to-improve-evaluation-and-management-of-in-hospital-stroke/top-things-to-know (selected public recommendations, accessed 2026-11-24)
+
+- Ferrante LE et al. SCCM Guidelines on Caring for Older Adults in the ICU (2026). https://www.sccm.org/clinical-resources/guidelines/guidelines/sccm-guidelines-on-caring-for-older-adults-in-the-icu (official recommendation page and published article introduction checked 2026-11-24; complete evidence appraisal and commercial rights outstanding).
+
+- Resuscitation Council UK. The ABCDE Approach. https://www.resus.org.uk/library/abcde-approach (selected HTML statements checked 2026-11-24; cite only; rights and independent clinical review pending).
 
 ## 19. Local protocol note
 Order, frequency, techniques, device checks, fall-risk tools and escalation triggers follow the unit's policies and specialty guidance.

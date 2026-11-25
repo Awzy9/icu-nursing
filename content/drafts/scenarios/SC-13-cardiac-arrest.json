@@ -1,254 +1,300 @@
 {
- "scenario_id": "SC-13",
- "number": 13,
- "title": "Cardiac arrest",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "cardiovascular",
- "difficulty": 3,
- "learning_objectives": [
-  "Recognise cardiac arrest and call the team and start compressions without delay.",
-  "Keep the pre-shock pause as short as possible.",
-  "Perform and call the safety check before a shock.",
-  "Know that defibrillator operation is limited to authorised roles."
- ],
- "related": {
-  "skills": [
-   "SK-19"
+  "scenario_id": "SC-13",
+  "number": 13,
+  "title": "Cardiac arrest",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "cardiovascular",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Recognise cardiac arrest and call the team and start compressions without delay.",
+    "Keep the pre-shock pause as short as possible.",
+    "Perform and call the safety check before a shock.",
+    "Know that defibrillator operation is limited to authorised roles."
   ],
-  "medications": [],
-  "topic_drafts": [
-   "D02-T15",
-   "D02-T14"
-  ]
- },
- "sources": [
-  {
-   "id": "S-ERC-ALS-2025",
-   "read": "full",
-   "use": "ERC ALS 2025 (paraphrase only; commercial use needs an agreement)"
+  "related": {
+    "skills": [
+      "SK-19"
+    ],
+    "medications": [],
+    "topic_drafts": [
+      "D02-T15",
+      "D02-T14"
+    ]
   },
-  {
-   "id": "S-AHA-2025",
-   "read": "not_read",
-   "use": "AHA 2025 guidelines: not read"
-  }
- ],
- "required_sources": [
-  "AHA 2025 guideline text",
-  "Unit resuscitation policy and the authorised-role requirements"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Rhythm analysis, energy selection, drugs and post-arrest care are deliberately outside this scenario.",
-  "Authorised-role requirements for defibrillation are local."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "ERC text: commercial agreement required; AHA: permission required."
- ],
- "setting": "A fictional adult found unresponsive on a fictional unit with a monitor and defibrillator.",
- "steps": [
-  {
-   "position": 1,
-   "info": "A patient is unresponsive and not breathing normally.",
-   "prompt": "What do you do first?",
-   "observations": [
+  "sources": [
     {
-     "key": "response",
-     "label": "Response",
-     "value": "None"
+      "id": "S-ERC-ALS-2025",
+      "read": "full",
+      "use": "ERC ALS 2025 (paraphrase only; commercial use needs an agreement)"
     },
     {
-     "key": "breathing",
-     "label": "Breathing",
-     "value": "Not normal"
+      "id": "S-AHA-ALS-2025",
+      "read": "partial",
+      "use": "AHA adult ALS 2025: selected CPR and rhythm-specific defibrillation recommendations"
     },
     {
-     "key": "team",
-     "label": "Team",
-     "value": "Not yet called"
+      "id": "S-AHA-BLS-2025",
+      "read": "partial",
+      "use": "AHA adult BLS 2025: recognition and early CPR"
+    },
+    {
+      "id": "S-RCUK-ALS-2025",
+      "read": "partial",
+      "use": "RCUK 2025 adult ALS selected recommendations for in-hospital resuscitation and shock safety"
     }
-   ],
-   "options": [
-    {
-     "text": "Call the team and start chest compressions without delay in line with the unit's procedure.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "Recognising the arrest, calling the team and starting compressions without delay is the expected response.",
-     "consequence": "Compressions are under way and the team and defibrillator are coming.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Fetch the defibrillator first and start compressions when you return.",
-     "points": 0,
-     "next": 2,
-     "scope": "independent_nursing",
-     "feedback": "Equipment is needed, but compressions should not wait for it.",
-     "consequence": "The patient has no circulation while you fetch the machine.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Wait for a senior to arrive before doing anything.",
-     "points": 0,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "Waiting delays treatment; call for help and start compressions.",
-     "consequence": "Several minutes pass without compressions.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The defibrillator arrives while compressions continue.",
-   "prompt": "How should the pads and the pause be handled?",
-   "observations": [
-    {
-     "key": "compressions",
-     "label": "Compressions",
-     "value": "In progress"
-    },
-    {
-     "key": "defib",
-     "label": "Defibrillator",
-     "value": "Arrived"
-    },
-    {
-     "key": "pads",
-     "label": "Pads",
-     "value": "Not yet applied"
-    }
-   ],
-   "options": [
-    {
-     "text": "Apply the pads as soon as the defibrillator arrives and keep compressions going while it charges, keeping the pre-shock pause as short as possible.",
-     "points": 2,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "Pads are preferred, compressions continue while charging, and even a short extra delay reduces the chance of shock success; operation is for authorised roles.",
-     "consequence": "The defibrillator is ready with minimal interruption to compressions.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Stop compressions until the defibrillator has charged.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "Stopping while charging lengthens the pre-shock pause.",
-     "consequence": "The pause is long and the chance of success falls.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Use the paddles without checking contact because they are quicker.",
-     "points": 0,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "Pads are preferred; if paddles are used, firm force and good contact are needed.",
-     "consequence": "Poor contact risks arcing and an ineffective shock.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The authorised operator is ready to deliver a shock.",
-   "prompt": "What must happen before the shock?",
-   "observations": [
-    {
-     "key": "defib",
-     "label": "Defibrillator",
-     "value": "Charged"
-    },
-    {
-     "key": "people",
-     "label": "People touching patient or bed",
-     "value": "Not yet checked"
-    },
-    {
-     "key": "oxygen",
-     "label": "Oxygen source",
-     "value": "Not yet checked"
-    }
-   ],
-   "options": [
-    {
-     "text": "Perform and call the safety check so nobody touches the patient or bed, and follow the unit's oxygen safety steps.",
-     "points": 2,
-     "next": null,
-     "scope": "escalation",
-     "feedback": "A safety check protects everyone at the moment of the shock; oxygen safety steps are part of unit policy.",
-     "consequence": "The shock is delivered safely and compressions restart at once.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Deliver the shock while a colleague continues manual compressions, wearing gloves.",
-     "points": 0,
-     "next": null,
-     "scope": "order_or_protocol_required",
-     "feedback": "A shock must not be given during manual compressions, even with gloves.",
-     "consequence": "A colleague is put at risk of injury.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    },
-    {
-     "text": "Shout 'clear' once without looking around the bed.",
-     "points": 1,
-     "next": null,
-     "scope": "escalation",
-     "feedback": "A call is part of the check, but the check must include looking so that nobody is touching the patient or bed.",
-     "consequence": "The shock is delivered but a colleague's hand was still on the bed rail.",
-     "support": "partial",
-     "sources": [
-      "S-ERC-ALS-2025"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "Call the team and start compressions without delay.",
-   "Keep compressions going while the defibrillator charges and keep the pre-shock pause short.",
-   "Perform and call the safety check; never shock during manual compressions.",
-   "Defibrillator operation follows authorised-role rules."
   ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-19"
-   }
-  ]
- }
+  "required_sources": [
+    "Unit resuscitation policy and the authorised-role requirements"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "Rhythm analysis, energy selection, drugs and post-arrest care remain outside this scenario. AHA 2025 BLS and ALS selected recommendations are linked; full appraisal and update/errata reconciliation remain outstanding.",
+    "Authorised-role requirements for defibrillation are local."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "ERC text: commercial agreement required; AHA: permission required."
+  ],
+  "setting": "A fictional adult found unresponsive on a fictional unit with a monitor and defibrillator.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "During an ICU observation round, an adult suddenly becomes unresponsive. Breathing is abnormal with occasional gasps. The arrest team has not yet been called and a definite pulse has not been established. A colleague is nearby.",
+      "prompt": "Which response minimizes delay to cardiac arrest recognition, emergency activation and CPR?",
+      "observations": [
+        {
+          "key": "response",
+          "label": "Response",
+          "value": "None"
+        },
+        {
+          "key": "breathing",
+          "label": "Breathing",
+          "value": "Not normal"
+        },
+        {
+          "key": "team",
+          "label": "Team",
+          "value": "Not yet called"
+        },
+        {
+          "key": "pulse",
+          "label": "Pulse",
+          "value": "No definite pulse established"
+        },
+        {
+          "key": "equipment",
+          "label": "Emergency equipment",
+          "value": "Request through colleague"
+        }
+      ],
+      "options": [
+        {
+          "text": "Activate the cardiac arrest response; start CPR without delay if arrest is confirmed or not promptly excluded. Ask a colleague for the defibrillator and trained ventilation support.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Unresponsiveness with absent or abnormal breathing requires rapid arrest recognition, emergency activation and CPR without avoidable delay. If a trained pulse check is part of the local pathway, it must not delay CPR. Gasping is not normal breathing. Follow the trained healthcare-professional pulse assessment pathway; if no definite pulse is found promptly, begin CPR.",
+          "consequence": "Immediate activation and CPR when indicated may minimize time without effective circulation while colleagues bring equipment.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025",
+            "S-AHA-BLS-2025",
+            "S-RCUK-ALS-2025"
+          ]
+        },
+        {
+          "text": "Ask the colleague to remain with the patient while you collect the defibrillator and resuscitation equipment. Start compressions after you return to the bedside with the equipment ready for use.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "Equipment is needed, but compressions should not wait for it.",
+          "consequence": "Leaving to fetch equipment could delay chest compressions and emergency support.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Keep the patient under observation and ask the senior clinician to attend for confirmation of arrest. Defer compressions and activation of the full cardiac arrest response until that clinician arrives.",
+          "points": 0,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Waiting delays treatment; call for help and start compressions.",
+          "consequence": "Waiting for a senior could prolong the interruption to circulation.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "At the next shared checkpoint, CPR is in progress and the defibrillator has arrived. Pads have not yet been applied. The trained operator has not yet determined whether the rhythm is shockable.",
+      "prompt": "How should the team prepare for rhythm assessment while minimizing interruptions to compressions?",
+      "observations": [
+        {
+          "key": "compressions",
+          "label": "Compressions",
+          "value": "In progress"
+        },
+        {
+          "key": "defib",
+          "label": "Defibrillator",
+          "value": "Arrived"
+        },
+        {
+          "key": "pads",
+          "label": "Pads",
+          "value": "Not yet applied"
+        },
+        {
+          "key": "rhythm",
+          "label": "Arrest rhythm",
+          "value": "Requires trained assessment"
+        },
+        {
+          "key": "operator",
+          "label": "Defibrillator operator",
+          "value": "Trained team member present"
+        }
+      ],
+      "options": [
+        {
+          "text": "Apply pads promptly and continue CPR. Let the authorised operator or AED determine shock indication; continue compressions during indicated charging where safe.",
+          "points": 2,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "Not every arrest rhythm is shockable. Maintain CPR and use the trained rhythm-specific or AED pathway; avoid unnecessary pauses for an indicated shock.",
+          "consequence": "Early pad placement and coordinated rhythm assessment may reduce avoidable interruptions to CPR.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025",
+            "S-AHA-ALS-2025",
+            "S-RCUK-ALS-2025"
+          ]
+        },
+        {
+          "text": "Pause compressions when the defibrillator arrives, keeping the patient still until charging is complete and the operator can deliver treatment.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "Stopping while charging lengthens the pre-shock pause.",
+          "consequence": "Stopping compressions before necessary rhythm analysis or shock delivery could prolong the pause.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Choose paddles for speed and prepare the rhythm assessment without checking their contact, so that the operator can proceed as soon as the defibrillator is available.",
+          "points": 0,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "Pads are preferred; if paddles are used, firm force and good contact are needed.",
+          "consequence": "Poor electrode contact could compromise safe and effective shock delivery.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "At the final shared checkpoint, the authorized operator has identified a shockable rhythm and an indicated shock is ready. Contact with the patient and bed has not yet been checked, and oxygen delivery equipment is nearby. There is no confirmed return of circulation.",
+      "prompt": "Which safety checks and immediate post-shock actions are required?",
+      "observations": [
+        {
+          "key": "defib",
+          "label": "Defibrillator",
+          "value": "Charged"
+        },
+        {
+          "key": "people",
+          "label": "People touching patient or bed",
+          "value": "Not yet checked"
+        },
+        {
+          "key": "oxygen",
+          "label": "Oxygen source",
+          "value": "Not yet checked"
+        },
+        {
+          "key": "circulation",
+          "label": "Return of circulation",
+          "value": "Not established"
+        },
+        {
+          "key": "cpr_plan",
+          "label": "Post-shock plan",
+          "value": "Resume CPR immediately unless team identifies reason to assess circulation"
+        }
+      ],
+      "options": [
+        {
+          "text": "Visually confirm nobody touches patient or bed; manage oxygen per circuit and protocol. Support authorised shock; resume CPR immediately unless the team identifies signs of circulation.",
+          "points": 2,
+          "next": null,
+          "scope": "escalation",
+          "feedback": "Use a visual and verbal safety check and distinguish free-flow oxygen from an attached ventilation circuit. After shock delivery, immediately resume chest compressions; do not routinely pause for a pulse check. The team may assess return of spontaneous circulation if clinical and physiological signs suggest it. Do not stop compressions solely because an isolated capnography value rises. A low end-tidal carbon dioxide value alone also cannot determine whether resuscitation should end; communicate physiological trends to the trained team leader.",
+          "consequence": "A visual safety check and prompt resumption of CPR may protect rescuers and limit interruption to resuscitation.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025",
+            "S-RCUK-ALS-2025"
+          ]
+        },
+        {
+          "text": "Allow a colleague wearing gloves to continue manual compressions during delivery of the indicated shock, relying on the verbal warning from the authorised operator.",
+          "points": 0,
+          "next": null,
+          "scope": "order_or_protocol_required",
+          "feedback": "A shock must not be given during manual compressions, even with gloves.",
+          "consequence": "Shock delivery during manual compressions could expose a rescuer to injury.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        },
+        {
+          "text": "Give a single verbal clear warning before shock delivery and assume all rescuers have heard it and moved away, without visually checking contact with the patient or bed.",
+          "points": 0,
+          "next": null,
+          "scope": "escalation",
+          "feedback": "A verbal warning alone does not establish that rescuers are clear. The operator must visually verify safety before delivering an indicated shock.",
+          "consequence": "A verbal warning without visual confirmation could leave someone in contact with the patient or bed.",
+          "support": "partial",
+          "sources": [
+            "S-ERC-ALS-2025"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "Call the team and start compressions without delay.",
+      "Confirm that a shock is indicated via the rhythm-specific or AED pathway, maintain CPR during preparation and minimise pauses.",
+      "Perform and call the safety check; never shock during manual compressions.",
+      "Defibrillator operation follows authorised-role rules.",
+      "Resume CPR immediately after the indicated shock unless the trained team identifies clinical and physiological signs warranting assessment of return of circulation.",
+      "Neither an isolated increase nor a low capnography value establishes the need to pause or terminate resuscitation."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-19"
+      }
+    ]
+  }
 }

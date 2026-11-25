@@ -23,7 +23,7 @@ Mechanical ventilation supports gas exchange while the underlying illness is tre
 
 ## 2. Learning objectives
 1. Describe the four phases of a ventilator breath in brand-neutral terms.
-2. Contrast pressure-controlled and volume-controlled breaths, and say which variable the ventilator guarantees and which varies.
+2. Contrast pressure-controlled and volume-controlled breaths, and identify the controlled variable and which other variables may vary.
 3. Explain PEEP, auto-PEEP, peak pressure, plateau pressure, resistance and compliance at the level the review gives.
 4. Describe spontaneous, assisted, intermittent mandatory and mandatory breath sequences.
 5. List what the AARC guideline says should be assessed at the bedside, and what each finding may suggest.
@@ -35,7 +35,7 @@ The review notes that about a third of adult general critical care admissions in
 ## 6. Clinical assessment
 **The breath cycle (review):**
 - **Initiation:** ventilator-triggered (time) or patient-triggered by a change in pressure or flow, or by a diaphragm electrical signal in neurally adjusted modes. The trigger must be sensitive enough to detect effort but not so sensitive that leaks, cardiac oscillations or circuit artefact cause false (auto) triggering; an insensitive trigger increases work of breathing and may worsen patient–ventilator asynchrony.
-- **Delivery:** in *volume control* the ventilator delivers a set tidal volume with a chosen flow pattern, so tidal volume is guaranteed and **airway pressure varies** with the patient's mechanics; in *pressure control* the ventilator delivers a set inspiratory pressure for a set time, so **tidal volume varies** with compliance, resistance and effort and is not guaranteed.
+- **Delivery:** in *volume control* the ventilator targets a set tidal volume with a chosen flow pattern while **airway pressure varies** with the patient's mechanics. The measured volume reaching or leaving the patient may differ if a pressure limit interrupts inspiration or if there is a leak; in *pressure control* the ventilator delivers a set inspiratory pressure for a set time, so **tidal volume varies** with compliance, resistance and effort and is not guaranteed.
 - **Cycling:** ends inspiration by time, by delivered volume, or when inspiratory flow falls to a set fraction of its peak (usually 25 % in pressure support).
 - **Expiration:** usually passive; short expiratory time in airflow limitation can trap gas and cause intrinsic PEEP.
 
@@ -59,6 +59,8 @@ The review notes that about a third of adult general critical care admissions in
 - **Never change modes, targets or alarm limits unless a written protocol or order permits and you are trained**; ventilator-setting decisions are prescriber and respiratory-therapist decisions.
 - **Escalate** early; see section 12. **Document** the assessment, trends, interventions and communications.
 
+**Practical interpretation of volume and pressure trends (AARC 2024).** The monitored values are meaningful only in the context of the mode, patient effort and measurement conditions. In a pressure-targeted breath the same prescribed pressure may accompany a smaller exhaled volume as resistance or respiratory mechanics change. In a volume-targeted breath the observed pressure may increase even when the intended volume has not changed; leaks or pressure limits can alter actual delivery. Compare the settings and measured values with the patient's clinical condition and recent trends. Check for a discrepancy and report it; do not infer a single diagnosis or independently change ventilation from a waveform or pressure number.
+
 ## 8. Monitoring parameters
 Patient: respiratory rate and effort, SpO₂, end-tidal CO₂ if used, heart rate, blood pressure, perfusion, consciousness, sedation and comfort, secretions, chest wall movement, skin under devices. Ventilator: mode and settings, exhaled tidal volume, minute ventilation, peak and plateau pressures, PEEP and auto-PEEP, FiO₂, driving pressure where displayed, waveforms where the unit teaches them, alarms. Airway: tube position and securement, cuff pressure, humidification. Frequency is set by unit policy.
 
@@ -66,7 +68,7 @@ Patient: respiratory rate and effort, SpO₂, end-tidal CO₂ if used, heart rat
 | Topic | Statement (paraphrased) | Source and type | Limits |
 |---|---|---|---|
 | Pressure control | Pressure fixed; tidal volume varies and is not guaranteed | JICS 2026 review | Educational; UK |
-| Volume control | Tidal volume guaranteed; airway pressure varies | JICS 2026 review | Educational |
+| Volume control | Targets a set tidal volume; airway pressure varies; check measured exhaled volume | JICS 2026 review and AARC 2024 assessment | Educational; delivery can be affected by leaks or safety limits |
 | Trigger sensitivity | Too insensitive increases work of breathing; too sensitive causes auto-triggering | JICS 2026 review | Educational |
 | PEEP | No single optimal value; patient-specific | JICS 2026 review | Author's interpretation |
 | Mandatory ventilation | Often needs substantial sedation; neuromuscular blockade not routine | JICS 2026 review | Educational |
@@ -85,7 +87,7 @@ Increasing respiratory effort or distress; falling SpO₂ or rising CO₂; patie
 | Select the mode and settings; change tidal volume, PEEP, FiO₂, rate or alarm limits; start or stop neuromuscular blockade; decide on weaning or extubation | Prescriber decision, with the respiratory therapist operating or adjusting the ventilator |
 
 ## 12. Escalation criteria
-Escalate immediately for distress, desaturation, loss of ventilation, a displaced airway, haemodynamic collapse, or a pattern the team has asked to be told about; escalate promptly for rising pressures, falling volumes, persistent mismatch, or concern without a clear cause.
+Escalate immediately for distress, desaturation, loss of ventilation, a displaced airway or haemodynamic collapse; summon help and support effective ventilation under emergency protocol without delaying for alarm investigation. Escalate promptly for rising pressures, falling measured volumes, persistent mismatch or concern without a clear cause. Compare actual delivery with prescribed settings and refer unexpected discrepancies to the respiratory team.
 SBAR — **S:** bed X, ventilated patient with increasing effort; exhaled tidal volume has fallen and the peak pressure has risen over the last 15 minutes. **B:** day 2 on mechanical ventilation, thick secretions at the last suction. **A:** possible airway or circuit problem or worsening mechanics; patient looks distressed and SpO₂ is falling. **R:** please come now; I am checking the tube, circuit and secretions and need help to assess and decide on any change to the ventilation.
 
 ## 13. Potential complications
@@ -107,10 +109,10 @@ B. Tidal volume is not guaranteed in pressure control, so a fall may mean worse 
 C. The set pressure has automatically been raised by the ventilator to compensate, which explains why the tidal volume has become lower.
 D. The patient has switched to a different breath sequence without any change having been made to the ventilator settings.
 **Answer: B.**
-**Why correct:** In pressure control, tidal volume depends on compliance, resistance and effort, so a falling volume is a signal to assess and report.
+**Why correct:** With a fixed pressure-controlled breath, delivered volume varies with respiratory mechanics, inspiratory time and patient effort. A leak can also reduce measured exhaled volume. Assess ventilation and oxygenation, check the circuit and escalate an unexplained fall promptly; pressure-targeted volume-adaptive modes are a separate case.
 **Why not A:** Volume is not what the ventilator guarantees in pressure control.
 **Why not C:** The set pressure does not rise on its own in a simple pressure-controlled breath.
-**Why not D:** A change of breath sequence needs a change in settings.
+**Why not D:** The observed fall does not establish a change in breath sequence; some modes have backup or adaptive behavior, so confirm the mode and settings.
 
 **Q2 (judgment).** On a volume-controlled mode the peak airway pressure has risen over an hour. The patient is coughing and the tube sounds secretion-laden. What is the best nursing response?
 A. Reduce the set tidal volume so that the displayed pressure comes down, and then see whether the alarms stop sounding.
@@ -118,7 +120,7 @@ B. Switch the mode to pressure control to avoid the high pressures, since that m
 C. Silence the alarm and review the pressure again at the next hourly check, since a single rise in pressure is common.
 D. Assess the patient and airway, manage secretions per policy, and report the pressure trend for team review.
 **Answer: D.**
-**Why correct:** The review links raised resistance (secretions, tube obstruction) to higher peak pressure; the nurse assesses, treats within scope and reports.
+**Why correct:** Increased resistance can raise peak pressure; reduced compliance is another possible cause. Assess the patient and airway promptly, summon help for ineffective ventilation and involve trained staff. Compare peak and plateau pressures only when measurement conditions are appropriate.
 **Why not A:** Changing set tidal volume is a prescriber and respiratory-therapist decision.
 **Why not B:** Changing the mode is outside nursing scope.
 **Why not C:** Waiting delays recognition of a blocked airway.
@@ -145,24 +147,24 @@ D. The tidal volume must be too low, so the nurse should increase it on the vent
 **Why not B:** Mode changes are not nursing decisions.
 **Why not D:** Setting changes are prescriber decisions.
 
-**Q5 (understanding).** Which statement about the educational review is correct?
-A. It is a clinical practice guideline that nurses should follow without any modification at the bedside in every unit.
-B. It is a trade-name operating manual written for a single ventilator model used in one hospital.
-C. It is an educational review with a selective overview and the authors' own interpretation, not a clinical guideline.
-D. It prescribes the ventilator settings that should be used for every patient who needs mechanical ventilation.
+**Q5 (judgment).** A nurse reads an educational review describing a ventilator mode under a trade name. The local ventilator has a similarly named mode, but the available device documentation describes a different targeting scheme. How should the nurse use the review?
+A. Assume the similarly named modes work identically and use the review's description as the bedside operating instruction.
+B. Apply the review's example settings to the local ventilator whenever the patient's oxygen requirement increases.
+C. Use it to understand general principles; verify local mode behavior with the device manual and trained team.
+D. Treat the review as a clinical guideline and request a mode change based solely on its published examples.
 **Answer: C.**
-**Why correct:** The review itself says it is a selective overview and states the author's interpretation.
-**Why not A:** It is not a guideline: the authors describe it as a selective overview with their interpretation.
-**Why not B:** It is brand-neutral and gives trade names only as examples.
-**Why not D:** It says optimal settings are patient-specific.
+**Why correct:** The cited JICS educational review provides a selective overview of physiological principles and the authors' interpretation, not a clinical practice guideline or device-specific operating manual. Similar trade names do not guarantee equivalent mode behavior. Verify how the actual ventilator implements the mode using its instructions and the trained team, assess the patient and report discrepancies. Mode and setting choices follow the authorized clinical plan.
+**Why not A:** Trade names may differ in implementation across manufacturers; the review is not a substitute for model-specific instructions.
+**Why not B:** Example settings are not an individualized prescription, and oxygen deterioration requires clinical assessment rather than automatic changes.
+**Why not D:** An educational overview supports understanding but does not establish a treatment order or universal mode recommendation.
 
-**Q6 (scope).** Which decision belongs to the prescriber and respiratory therapist rather than the bedside nurse?
+**Q6 (scope).** Which decision requires specific authorization or a credentialed protocol rather than routine bedside nursing assessment?
 A. Recording the exhaled tidal volume and pressures at the interval the unit sets.
 B. Checking that the tube is secure and the circuit connections are tight.
 C. Reporting a patient who appears out of sync with the ventilator.
 D. Choosing to change from a pressure-controlled to a volume-controlled mode.
 **Answer: D.**
-**Why correct:** Mode and settings are prescriber and respiratory-therapist decisions.
+**Why correct:** A mode change requires an authorized clinician or a credentialed practitioner acting under a valid protocol. Responsibilities differ internationally; routine bedside surveillance is not authority to independently change settings.
 **Why not A:** Recording is a nursing task.
 **Why not B:** Checking is a nursing task.
 **Why not C:** Reporting is a nursing responsibility.

@@ -1,275 +1,321 @@
 {
- "skill_id": "SK-16",
- "number": 16,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Safe patient mobilization",
- "category": "skin-mobility-transport",
- "topic_drafts": [],
- "evidence_status": "partial",
- "license_status": "unassessed",
- "sources": [
-  {
-   "id": "N-HODGSON-2014",
-   "read": "full",
-   "use": "Hodgson 2014 consensus on safety criteria for active mobilization of mechanically ventilated adults (CC BY 4.0); Figures 2-5 not read"
-  },
-  {
-   "id": "S-SCCM-ABCDEF",
-   "read": "partial",
-   "use": "ICU Liberation (A-F) bundle page: RED licence; permission required"
-  },
-  {
-   "id": "S-SCCM-PADIS",
-   "read": "partial",
-   "use": "PADIS: summary only"
-  }
- ],
- "objectives": [
-  "Check airway position and oxygen supply before each mobilization episode.",
-  "Know the consensus safety considerations and that they are a guide, not a rule.",
-  "Consult the experienced team when several limits are reached."
- ],
- "prerequisites": [
-  "Pressure injury prevention (SK-14)",
-  "Endotracheal tube care (SK-04)"
- ],
- "sections": {
-  "indications": {
-   "support": "partial",
-   "items": [
+  "skill_id": "SK-16",
+  "number": 16,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Safe patient mobilization",
+  "category": "skin-mobility-transport",
+  "topic_drafts": [],
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "sources": [
     {
-     "text": "The consensus covers active mobilization of adult mechanically ventilated ICU patients; no guidance was developed for passive mobilization. Intubation via an endotracheal tube is not in itself a contraindication to early mobilization.",
-     "support": "sourced",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
-    }
-   ]
-  },
-  "safety": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Respiratory criteria the group agreed were safe for in- and out-of-bed mobilization when no other contraindication exists: FiO2 below 0.6, SpO2 above 90% and respiratory rate below 30 breaths per minute (2014 expert consensus).",
-     "support": "sourced",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
+      "id": "N-HODGSON-2014",
+      "read": "full",
+      "use": "Hodgson 2014 consensus on safety criteria for active mobilization of mechanically ventilated adults (CC BY 4.0); Figures 2-5 not read"
     },
     {
-     "text": "If the patient is at the safety limits for several categories at once (for example low SpO2, high FiO2 and high PEEP), consult an experienced medical team before mobilizing.",
-     "support": "sourced",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
+      "id": "S-SCCM-ABCDEF",
+      "read": "partial",
+      "use": "ICU Liberation (A-F) bundle page: RED licence; permission required"
     },
     {
-     "text": "Vasoactive drugs are not an absolute contraindication; appropriateness depends on the dose, on the change in dose (rising doses call for caution or contraindicate mobilization) and on whether the patient is clinically well perfused. The panel could not agree a threshold dose, so each unit decides case by case with the ICU team.",
-     "support": "sourced",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
+      "id": "S-SCCM-PADIS",
+      "read": "partial",
+      "use": "PADIS: summary only"
+    },
     {
-     "text": "Before each mobilization episode an appropriate healthcare professional, according to the unit's procedures, checks that any artificial airway (orotracheal, nasotracheal or tracheostomy tube) is correctly positioned and secure, and that supplemental oxygen is available with a reserve exceeding the expected duration of the activity.",
-     "support": "sourced",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
+      "id": "S-TEAM-RCT-2022",
+      "read": "partial",
+      "use": "Indexed primary trial results and adverse events; full publisher page inaccessible"
     }
-   ]
+  ],
+  "objectives": [
+    "Check airway position and oxygen supply before each mobilization episode.",
+    "Know the consensus safety considerations and that they are a guide, not a rule.",
+    "Consult the experienced team when several limits are reached."
+  ],
+  "prerequisites": [
+    "Pressure injury prevention (SK-14)",
+    "Endotracheal tube care (SK-04)"
+  ],
+  "sections": {
+    "indications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The consensus covers active mobilization of adult mechanically ventilated ICU patients; no guidance was developed for passive mobilization. Intubation via an endotracheal tube is not in itself a contraindication to early mobilization.",
+          "support": "sourced",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        },
+        {
+          "text": "The 2025 SCCM PADIS focused update conditionally favors enhanced rehabilitation or mobilization compared with usual care. It does not establish one universal intensity, frequency or duration. Select activity through a multidisciplinary assessment of individual readiness and tolerance.",
+          "support": "partial",
+          "sources": [
+            "S-SCCM-PADIS"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The respiratory numbers in the 2014 expert consensus are historical safety-screening examples for selected mechanically ventilated adults, not stand-alone clearance to mobilize. Use a current multidisciplinary assessment and local criteria; no numeric screen alone establishes readiness.",
+          "support": "partial",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        },
+        {
+          "text": "If the patient is at the safety limits for several categories at once (for example low SpO2, high FiO2 and high PEEP), consult an experienced medical team before mobilizing.",
+          "support": "sourced",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        },
+        {
+          "text": "Vasoactive drugs are not an absolute contraindication; appropriateness depends on the dose, on the change in dose (rising doses call for caution or contraindicate mobilization) and on whether the patient is clinically well perfused. The panel could not agree a threshold dose, so each unit decides case by case with the ICU team.",
+          "support": "sourced",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        },
+        {
+          "text": "Do not intensify activity solely to meet a target. Reassess tolerance, haemodynamics, respiratory support, neurological condition, lines and tubes, and coordinate progression with the ICU rehabilitation team. Follow the unit's approved mobilization protocol.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "In the TEAM trial, increased early active mobilization during invasive ventilation did not improve days alive outside hospital and was associated with more mobilization-related adverse events. Individualize progression; do not increase activity intensity merely to meet a target. Stop and reassess if arrhythmia, desaturation or haemodynamic deterioration develops.",
+          "support": "partial",
+          "sources": [
+            "S-TEAM-RCT-2022",
+            "S-SCCM-PADIS"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Before each mobilization episode an appropriate healthcare professional, according to the unit's procedures, checks that any artificial airway (orotracheal, nasotracheal or tracheostomy tube) is correctly positioned and secure, and that supplemental oxygen is available with a reserve exceeding the expected duration of the activity.",
+          "support": "sourced",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The criteria are a guide, are appropriate for experienced ICU clinicians, must be used with clinical judgement, and each ICU should consider them against its own staffing and expertise.",
+          "support": "sourced",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        }
+      ]
+    },
+    "assessment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The consensus groups safety considerations into respiratory, cardiovascular, neurological (level of consciousness, delirium, intracranial pressure) and other (lines, surgical or medical conditions) categories; the detailed neurological, cardiovascular and other thresholds are in figures that were not read.",
+          "support": "partial",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Mobilization technique, equipment, staff numbers and progression follow the physiotherapy plan, the unit's approved procedure and manual-handling policy; the consensus does not give steps.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitor SpO2, respiratory rate, haemodynamics, level of consciousness and symptoms during and after activity against the unit's criteria.",
+          "support": "partial",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Stop and call for help if the patient becomes unstable or reaches the unit's safety limits.",
+          "support": "partial",
+          "sources": [
+            "N-HODGSON-2014"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the activity, criteria checked, tolerance and any adverse event per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "scope": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "The criteria are a guide, are appropriate for experienced ICU clinicians, must be used with clinical judgement, and each ICU should consider them against its own staffing and expertise.",
-     "support": "sourced",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
-    }
-   ]
-  },
-  "assessment": {
-   "support": "partial",
-   "items": [
+      "phase": "preparation",
+      "text": "Agree an individualized mobilization plan and safety assessment with the ICU team and physiotherapist; do not progress simply to meet an activity target.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "The consensus groups safety considerations into respiratory, cardiovascular, neurological (level of consciousness, delirium, intracranial pressure) and other (lines, surgical or medical conditions) categories; the detailed neurological, cardiovascular and other thresholds are in figures that were not read.",
-     "support": "partial",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "preparation",
+      "text": "Check that any artificial airway is correctly positioned and secure.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-HODGSON-2014"
+      ]
+    },
     {
-     "text": "Mobilization technique, equipment, staff numbers and progression follow the physiotherapy plan, the unit's approved procedure and manual-handling policy; the consensus does not give steps.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
+      "phase": "preparation",
+      "text": "Confirm oxygen is available with a reserve longer than the planned activity.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-HODGSON-2014"
+      ]
+    },
     {
-     "text": "Monitor SpO2, respiratory rate, haemodynamics, level of consciousness and symptoms during and after activity against the unit's criteria.",
-     "support": "partial",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "assessment",
+      "text": "Check respiratory, cardiovascular and neurological status against the unit's criteria; at the limits in several categories, consult the experienced medical team first.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-HODGSON-2014"
+      ]
+    },
     {
-     "text": "Stop and call for help if the patient becomes unstable or reaches the unit's safety limits.",
-     "support": "partial",
-     "sources": [
-      "N-HODGSON-2014"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "assessment",
+      "text": "Consider the vasoactive dose, any recent change in dose and whether the patient is well perfused.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "N-HODGSON-2014"
+      ]
+    },
     {
-     "text": "Record the activity, criteria checked, tolerance and any adverse event per unit standard.",
-     "support": "local_protocol",
-     "sources": []
+      "phase": "monitoring",
+      "text": "Monitor SpO2, respiratory rate, haemodynamics and symptoms during and after.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "N-HODGSON-2014"
+      ]
+    },
+    {
+      "phase": "escalation",
+      "text": "Stop and call for help if the patient becomes unstable.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "N-HODGSON-2014"
+      ]
+    },
+    {
+      "phase": "documentation",
+      "text": "Record activity, criteria checked and tolerance.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "phase": "assessment",
+      "text": "In the TEAM trial, increased early active mobilization during invasive ventilation did not improve days alive outside hospital and was associated with more mobilization-related adverse events. Individualize progression; do not increase activity intensity merely to meet a target. Stop and reassess if arrhythmia, desaturation or haemodynamic deterioration develops.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-TEAM-RCT-2022",
+        "S-SCCM-PADIS"
+      ]
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Confirm the mobilization plan and the unit's safety criteria with the team and physiotherapist.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "phase": "preparation",
-   "text": "Check that any artificial airway is correctly positioned and secure.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-HODGSON-2014"
-   ]
-  },
-  {
-   "phase": "preparation",
-   "text": "Confirm oxygen is available with a reserve longer than the planned activity.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-HODGSON-2014"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Check respiratory, cardiovascular and neurological status against the unit's criteria; at the limits in several categories, consult the experienced medical team first.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-HODGSON-2014"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Consider the vasoactive dose, any recent change in dose and whether the patient is well perfused.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "N-HODGSON-2014"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Monitor SpO2, respiratory rate, haemodynamics and symptoms during and after.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "N-HODGSON-2014"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Stop and call for help if the patient becomes unstable.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "N-HODGSON-2014"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Record activity, criteria checked and tolerance.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "The detailed criteria tables (Figures 2-5) are images and were not read; the cardiovascular, neurological and other thresholds are therefore not drafted.",
-  "The 2014 consensus is dated and states no agreed vasoactive dose threshold; unit policy governs.",
-  "Passive mobilization, rehabilitation progression and manual-handling standards: not covered.",
-  "ICU Liberation bundle material: permission required and not used."
- ],
- "permissions": [
-  "Hodgson 2014: CC BY 4.0, attribution required (GREEN).",
-  "SCCM ICU Liberation / PADIS: permission required."
- ],
- "references": [
-  {
-   "id": "N-HODGSON-2014",
-   "title": "Expert consensus and recommendations on safety criteria for active mobilization of mechanically ventilated critically ill adults (Crit Care 2014;18:658)",
-   "publisher": "Hodgson CL et al.",
-   "version": "2014",
-   "url": "https://doi.org/10.1186/s13054-014-0658-y",
-   "accessed": "2026-11-15",
-   "read": "full",
-   "licence_class": "GREEN (CC BY 4.0 per the article's licence line)",
-   "permission_required": "No (attribution required)"
-  },
-  {
-   "id": "S-SCCM-ABCDEF",
-   "title": "ICU Liberation Bundle (A-F)",
-   "publisher": "SCCM",
-   "version": "Bundle implements 2018 PADIS guidelines (page text); page undated",
-   "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "RED for commercial use",
-   "permission_required": "YES (iculiberation@sccm.org)"
-  },
-  {
-   "id": "S-SCCM-PADIS",
-   "title": "PADIS guidelines (2018) and 2025 focused update (Anxiety, Agitation/Sedation, Delirium, Immobility, Sleep disruption)",
-   "publisher": "SCCM",
-   "version": "2018 guideline; 2025 focused update published Crit Care Med 2025;53(3):e711-e727 (search results; pain recommendations unchanged)",
-   "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "RED (unverified)",
-   "permission_required": "Verify"
-  }
- ]
+  ],
+  "gaps": [
+    "The detailed criteria tables (Figures 2-5) are images and were not read; the cardiovascular, neurological and other thresholds are therefore not drafted.",
+    "The 2014 consensus is dated and states no agreed vasoactive dose threshold; unit policy governs.",
+    "Passive mobilization, rehabilitation progression and manual-handling standards: not covered.",
+    "ICU Liberation bundle material: permission required and not used."
+  ],
+  "permissions": [
+    "Hodgson 2014: CC BY 4.0, attribution required (GREEN).",
+    "SCCM ICU Liberation / PADIS: permission required."
+  ],
+  "references": [
+    {
+      "id": "N-HODGSON-2014",
+      "title": "Expert consensus and recommendations on safety criteria for active mobilization of mechanically ventilated critically ill adults (Crit Care 2014;18:658)",
+      "publisher": "Hodgson CL et al.",
+      "version": "2014",
+      "url": "https://doi.org/10.1186/s13054-014-0658-y",
+      "accessed": "2026-11-15",
+      "read": "full",
+      "licence_class": "GREEN (CC BY 4.0 per the article's licence line)",
+      "permission_required": "No (attribution required)"
+    },
+    {
+      "id": "S-SCCM-ABCDEF",
+      "title": "ICU Liberation Bundle (A-F)",
+      "publisher": "SCCM",
+      "version": "Bundle implements 2018 PADIS guidelines (page text); page undated",
+      "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "RED for commercial use",
+      "permission_required": "YES (iculiberation@sccm.org)"
+    },
+    {
+      "id": "S-SCCM-PADIS",
+      "title": "PADIS guidelines (2018) and 2025 focused update (Anxiety, Agitation/Sedation, Delirium, Immobility, Sleep disruption)",
+      "publisher": "SCCM",
+      "version": "2018 guideline; 2025 focused update published Crit Care Med 2025;53(3):e711-e727 (search results; pain recommendations unchanged)",
+      "url": "https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "RED (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-TEAM-RCT-2022",
+      "title": "Early Active Mobilization during Mechanical Ventilation in the ICU",
+      "publisher": "TEAM investigators / NEJM",
+      "version": "2022; doi:10.1056/NEJMoa2209083",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2209083",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    }
+  ]
 }

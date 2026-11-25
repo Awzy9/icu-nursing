@@ -57,11 +57,16 @@ describe("Rpc: working_* account sync (recordWorkingAttempt, bookmarks, lessons,
     await createRpc(mockClient({ rpc })).saveWorkingSession("SC-10", "scenario", "v1", 2, 2, false, 5000);
   });
 
-  it("discardWorkingSession deletes the row scoped to module_key", async () => {
-    const del = { eq: vi.fn(async () => ({ error: null })) };
-    const rpc = createRpc(mockClient({ from: () => ({ delete: () => del }) as never }));
-    await rpc.discardWorkingSession("SC-10");
-    expect(del.eq).toHaveBeenCalledWith("module_key", "SC-10");
+  it("discardWorkingSession preserves a timestamped account-bound dismissal", async () => {
+    const rpc = vi.fn(async () => ({ data: true, error: null }));
+    const client = createRpc(mockClient({ rpc }));
+    await client.discardWorkingSession("SC-10", "u-42", 5000);
+    expect(rpc).toHaveBeenCalledWith("working_replay_event", { p_expected_user: "u-42", p_event: { kind: "dismiss", moduleKey: "SC-10", at: 5000 } });
+  });
+
+  it("does not treat an unaccepted dismissal as successful", async () => {
+    const rpc = vi.fn(async () => ({ data: false, error: null }));
+    await expect(createRpc(mockClient({ rpc })).discardWorkingSession("SC-10", "u-42", 5000)).rejects.toMatchObject({ code: "invalid" });
   });
 
   it("listWorkingBookmarks/Lessons/Sessions validate the returned rows and reject a malformed row rather than rendering wrong data", async () => {

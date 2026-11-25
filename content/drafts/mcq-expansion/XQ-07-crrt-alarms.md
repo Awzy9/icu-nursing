@@ -6,7 +6,7 @@ origin: ai_generated
 clinically_reviewed: false
 clinical_reviewers: []
 skill_refs: ['SK-17']
-sources: ['N-AHS-CRRT-ALARM-2025', 'S-KDIGO-AKI-2012']
+sources: ['N-AHS-CRRT-ALARM-2025', 'S-KDIGO-AKI-2012', 'S-RCA-DELPHI-2026', 'S-BSH-HIT-2023']
 independently_written_note: "Original wording written for this platform; stems, options and explanations are paraphrased from the cited sources and never copied. Not derived from any exam material."
 ---
 # CRRT alarm response and prescription checks
@@ -16,13 +16,13 @@ independently_written_note: "Original wording written for this platform; stems, 
 **Q1 (judgment).** An access-pressure alarm sounds repeatedly on a patient's CRRT machine. Which first step fits the care pathway?
 A. Press the override button and carry on, because repeated alarms are usually false alarms.
 B. Stop the blood pump and disconnect the patient straight away, without looking for a cause.
-C. Check the patient, then the lines, clamps and catheter position, before clearing the alarm.
+C. Assess the patient first and involve the trained operator for device-specific checks before clearing the alarm.
 D. Increase the blood flow rate as far as the machine allows to overcome the alarm.
 **Answer: C.**
-**Why correct:** The pathway says to check the patient, review and address the alarm on the screen before clearing it, and for access and return alarms to check the patient, clamps or kinks, and the dialysis catheter.
+**Why correct:** The AHS 2025 pathway concerns a particular machine family and local practice. Assess the patient first, then have a competent operator evaluate the display, tubing and access as permitted by the device and unit protocol. Do not manipulate the catheter or clear an unresolved alarm outside training.
 **Why not A:** Override and disable buttons decrease alarm sensitivity and are not a fix.
-**Why not B:** Return and disconnection follow if the alarm cannot be managed, not as a first step.
-**Why not D:** The pathway says to adjust the blood flow rate, not to push it to the maximum.
+**Why not B:** For a stable patient, immediate disconnection without assessment is not the routine first step. If the circuit is unsafe or treatment cannot continue, follow the device and local emergency pathway; return blood only when safe.
+**Why not D:** Do not independently change the prescribed blood flow or override a safety limit. Any adjustment must follow an authorised prescription or protocol and the device-specific pathway.
 **Trace:** N-AHS-CRRT-ALARM-2025 — Check patient first; review alarm before clearing; access/return alarm checks.
 
 **Q2 (safety).** A colleague silences a recurring CRRT alarm using the disable function to 'keep the room quiet'. What is the concern?
@@ -43,11 +43,11 @@ B. Keep restarting the treatment until it runs, and tell the doctor at the end o
 C. Leave the blood in the circuit and clamp the lines until the next shift can look at it.
 D. Disconnect the patient and discard the circuit without recording why treatment was stopped.
 **Answer: A.**
-**Why correct:** The cited regional pathway advises support and clinical escalation, documentation, and blood return when feasible. Whether blood can safely be returned depends on the circuit condition, device instructions and unit policy; this multiple-choice question is not permission to return blood from an unsafe circuit.
+**Why correct:** Escalate persistent alarms to the responsible CRRT-trained team, assess the patient and document treatment loss. Blood return is not automatic: do not attempt it when circuit safety is uncertain, including suspected clotting, until the trained team establishes the safe termination pathway.
 **Why not B:** Repeated restarts waste treatment time and delay escalation.
 **Why not C:** Leaving an interrupted circuit unattended without evaluating the patient, device, circuit condition or escalation pathway is unsafe; blood return is not always appropriate.
 **Why not D:** The reason for stopping must be documented.
-**Trace:** N-AHS-CRRT-ALARM-2025 — If alarms cannot be managed: support, return blood, document, notify MD.
+**Trace:** N-AHS-CRRT-ALARM-2025 — Device-specific termination, conditional blood return, documentation and notification.
 
 **Q4 (application).** A nurse is caring for a patient on CRRT when a bag-weight alarm sounds. According to the pathway, which check is appropriate?
 A. Replace every bag on the machine at the same time to reset all of the scales together.
@@ -55,7 +55,7 @@ B. Remove the patient from the machine and reconnect once all bags have been wei
 C. Restart the machine in a different mode so the weight reading no longer matters.
 D. Look for bags touching other objects, leaking or sitting on the wrong scale, and check connections.
 **Answer: D.**
-**Why correct:** The pathway lists, for flow alarms, checking whether the line is clamped or kinked and whether bags are touching other objects altering weights, leaking, or on the wrong scale.
+**Why correct:** The AHS pathway describes scale and bag checks for its device. Assess the patient and ask a trained operator to check for external contact, leakage, incorrect scale placement and connections under current device instructions. Do not bypass a scale alarm or apply these instructions to unrelated machines.
 **Why not A:** The pathway advises changing one bag at a time and closing each scale.
 **Why not B:** Disconnecting is not the first step for a weight alarm.
 **Why not C:** Changing modes without a cause is not advised.
@@ -67,11 +67,11 @@ B. Increasing the dose yourself to make up the difference without an order.
 C. Reporting the under-delivery, because frequent assessment of the delivered dose is recommended.
 D. Recording it in the nursing notes so that the next shift can decide what to do.
 **Answer: C.**
-**Why correct:** The KDIGO AKI guideline recommends frequent assessment of the delivered dose of renal replacement therapy to ensure the prescribed dose is delivered.
+**Why correct:** KDIGO 2012 supports checking delivered treatment and reporting shortfalls. The 2026 AKI/AKD update remains a public-review draft as of this check. If regional citrate is being used, also communicate falling systemic ionized calcium, rising total-to-ionized calcium ratio, increasing calcium requirements or worsening metabolic acidosis. The 2026 Delphi consensus supports interpreting these findings together, not diagnosing citrate accumulation from one result. Do not independently change clearance, fluid removal or anticoagulation.
 **Why not A:** Delivered dose is exactly what the guideline asks to be assessed.
 **Why not B:** Changing the prescription is a prescriber decision.
 **Why not D:** Under-delivery should be reported so the team can respond.
-**Trace:** S-KDIGO-AKI-2012 — Frequent assessment of delivered RRT dose.
+**Trace:** S-KDIGO-AKI-2012, S-RCA-DELPHI-2026 — Delivered treatment assessment and context-dependent citrate safety surveillance.
 
 **Q6 (safety).** A CRRT patient receiving heparin flushes has a sudden platelet fall and the treating team considers heparin-induced thrombocytopenia likely. What is the safest nursing response?
 A. Continue the heparin flushes because they contain only a small amount of the drug.
@@ -79,13 +79,15 @@ B. Alert the team now and follow the HIT pathway to stop all heparin exposure.
 C. Switch to a different heparin brand and monitor, since the brand may be the cause.
 D. Wait for the platelet count to fall further before telling anyone, to be sure of the diagnosis.
 **Answer: B.**
-**Why correct:** KDIGO 2012 recommendation 5.3.4 requires discontinuation of all heparin when HIT is present; clinically likely HIT needs urgent assessment and a heparin-free treatment plan, including flushes and locks. The nurse escalates and follows authorized orders/local protocol; an isolated platelet fall is not diagnostic.
+**Why correct:** For likely or confirmed HIT, the responsible team urgently implements a heparin-free plan covering all exposures, including flushes and locks. BSH 2023 and ASH 2018 distinguish intermediate/high clinical probability from low probability; a platelet decline alone does not diagnose HIT. Alternative anticoagulation and testing require specialist direction.
 **Why not A:** Heparin flushes and catheter locks count as heparin exposure. When HIT is clinically likely or confirmed, the responsible team must address **all** heparin sources; local policy guides how a heparin-free plan is implemented, not which sources count.
 **Why not C:** All heparin must stop, not just one brand.
 **Why not D:** Suspected HIT is reported immediately.
-**Trace:** S-KDIGO-AKI-2012 — KDIGO 2012 recommendation 5.3.4 (HIT): stop all heparin; clinically likely HIT requires urgent heparin-exposure review and local specialist pathway.
+**Trace:** S-KDIGO-AKI-2012, S-BSH-HIT-2023 — Discontinuation of heparin in HIT; pretest probability and all exposures including flushes.
 
 ## 18. References
 - Alberta Health Services. CRRT Alarm Management Care Pathway Resource (January 2025). https://www.albertahealthservices.ca/assets/about/scn/ahs-scn-cc-dialyzingwisely-crrt-alarm-management-care-pathway-resource.pdf (accessed 2026-11-15)
 - KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012). https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-15)
 - American Society of Hematology. Clinical Practice Guidelines for Heparin-Induced Thrombocytopenia (2018; pretest-probability approach and recommendations for likely HIT). https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/ (recommendations verified 2026-11-21; cited for explanation, not reproduced).
+- 2026 regional citrate anticoagulation Delphi consensus. https://doi.org/10.1186/s13054-026-06066-x (selected recommendation excerpts, accessed 2026-11-24)
+- BSH HIT third edition. https://doi.org/10.1111/bjh.19180 (selected recommendation excerpts, accessed 2026-11-24)

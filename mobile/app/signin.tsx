@@ -2,7 +2,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import React, { useState } from "react";
 import { TextInput, View } from "react-native";
 import { CaptchaView } from "../src/auth/CaptchaView";
-import { CAPTCHA_REQUIRED } from "../src/auth/config";
+import { AUTH_SCHEME, CAPTCHA_REQUIRED } from "../src/auth/config";
 import { useAuth } from "../src/auth/provider";
 import { safeNext } from "../src/core/access";
 import { useApp } from "../src/state/app";
@@ -36,7 +36,7 @@ export default function SignIn() {
     if (waitingForCaptcha || busy) { if (!busy) setMsg(t("auth.err.input")); return; }
     setBusy(true); setMsg(null);
     try {
-      const result = await manager!.requestPasswordReset(email, token ?? undefined, "nursingmastery://auth/callback?type=recovery");
+      const result = await manager!.requestPasswordReset(email, token ?? undefined, `${AUTH_SCHEME}://auth/callback?type=recovery`);
       setMsg(t(result.ok ? "auth.resetSent" : "auth.err.generic"));
     } catch { setMsg(t("auth.err.network")); }
     finally { setBusy(false); freshCaptcha(); }

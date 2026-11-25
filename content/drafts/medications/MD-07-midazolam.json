@@ -1,260 +1,315 @@
 {
- "med_id": "MD-07",
- "number": 7,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Midazolam",
- "drug_class": "Benzodiazepine sedative",
- "category": "sedatives-analgesics",
- "high_alert": true,
- "high_alert_note": "ISMP's 2024 acute-care high-alert list includes INTRAVENOUS moderate-sedation agents, including this drug. The classification is route-specific and does not automatically classify every oral use; follow local patient monitoring and rescue-capability policy. High-alert class is independently traced to ISMP in the separate evidence report; the draft itself continues to rely only on the registered FDA/manufacturer label and non-RED references.",
- "summary": "Benzodiazepine used for sedation, anxiolysis and amnesia. The boxed warning stresses respiratory depression and arrest, continuous monitoring, immediate availability of resuscitation equipment and skilled airway personnel, and the risks of combining it with opioids.",
- "batch": 1,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-MIDAZOLAM",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-MIDAZOLAM",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-07",
+  "number": 7,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Midazolam",
+  "drug_class": "Benzodiazepine sedative",
+  "category": "sedatives-analgesics",
+  "high_alert": true,
+  "high_alert_note": "ISMP's 2024 acute-care high-alert list includes INTRAVENOUS moderate-sedation agents, including this drug. The classification is route-specific and does not automatically classify every oral use; follow local patient monitoring and rescue-capability policy. High-alert class is independently traced to ISMP in the separate evidence report; the draft itself continues to rely only on the registered FDA/manufacturer label and non-RED references.",
+  "summary": "Benzodiazepine used for sedation, anxiolysis and amnesia. The boxed warning stresses respiratory depression and arrest, continuous monitoring, immediate availability of resuscitation equipment and skilled airway personnel, and the risks of combining it with opioids.",
+  "batch": 1,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-MIDAZOLAM",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-MIDAZOLAM",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label indicates midazolam for sedation, anxiolysis and amnesia, including before and during procedures and, intravenously, as other labelled uses.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Before intravenous use, make sure oxygen, resuscitative drugs, bag-valve-mask equipment and personnel skilled in airway management are immediately available; the label also highly recommends immediate availability of the reversal agent flumazenil.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "Monitor vital signs throughout recovery.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Patients should be continuously monitored for early signs of hypoventilation, airway obstruction or apnoea, with means such as pulse oximetry readily available.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "The label directs close monitoring for respiratory depression and sedation.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "The registered Civica label notes that impaired renal function can prolong elimination of midazolam and its metabolites, delaying recovery. Review renal trends and seek clinical reassessment of unexpected prolonged sedation; assess other possible causes in parallel.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "CYP3A inhibitors, including certain azole antifungals, erythromycin, verapamil and diltiazem, can prolong sedation. Reduced hepatic function or low cardiac output may also delay recovery. Review the medicines and organ-function trends with pharmacy and the treating team; reassess ventilation and unexplained delayed awakening.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Boxed warning: intravenous midazolam has been associated with respiratory depression and respiratory arrest; where this was not recognised and treated promptly, death or hypoxic encephalopathy has resulted.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "Use only where continuous monitoring of respiratory and cardiac function (for example pulse oximetry) is provided, with immediately available resuscitation drugs, equipment and personnel skilled in airway management.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "Combining benzodiazepines and opioids can cause profound sedation, respiratory depression and death.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "Rapid intravenous administration should be avoided; dose changes are made slowly under the prescriber's order or protocol.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "After prolonged exposure, abrupt discontinuation can cause withdrawal, including seizures. Drug interactions may also prolong sedation; review delayed awakening and cessation with the clinical team.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "The registered preserved injection is contraindicated with known midazolam hypersensitivity, acute narrow-angle glaucoma and use in premature infants. It is unsuitable for intrathecal or epidural administration because of its benzyl alcohol content; verify the actual formulation and route.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The most frequent findings are fluctuations in vital signs, including decreased tidal volume or respiratory rate; serious cardiorespiratory events and paradoxical reactions are described in the warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "Local effects at the injection site are also reported: at the IV site, pain, redness, swelling and inflammation of a vein; at the IM site, pain, firmness, redness and muscle stiffness. In elderly or higher-risk surgical patients given midazolam by intramuscular injection, rare deaths consistent with cardiorespiratory depression have been reported, most often when another central-nervous-system depressant, especially an opioid, was also given. Pediatric patients have additionally shown low oxygen saturation, apnea, low blood pressure, paradoxical reactions, hiccoughs, seizure-like activity and abnormal eye movements, most often when another CNS-depressing medicine was also given.",
+          "support": "sourced",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Activate emergency help for inadequate ventilation, airway obstruction, apnoea or severe physiological deterioration; assess and support ventilation under the authorised pathway. Escalate unexpected prolonged sedation, falling oxygen saturation or new agitation promptly; do not assume delayed awakening is solely medication-related.",
+          "support": "partial",
+          "sources": [
+            "L-MIDAZOLAM"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record sedation level, respiratory findings, concomitant opioids and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "observe",
+      "text": "Continuously monitor breathing and oxygen saturation.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm oxygen, airway equipment and trained staff are immediately available.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check for concomitant opioids or other sedatives.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Call for help immediately for hypoventilation or apnoea.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review renal function and assess for delayed awakening after reduction or cessation. Escalate unexpected unresponsiveness and assess breathing and circulation before attributing it to residual sedation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record sedation level and respiratory observations.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Assess unexpected prolonged sedation and new agitation, tremor or seizures during or after therapy reduction; escalate and clarify the authorised cessation plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check the formulation, documented allergies, acute narrow-angle glaucoma and interacting medicines; report unexpectedly prolonged sedation or respiratory deterioration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-MIDAZOLAM"
+      ]
+    }
+  ],
+  "gaps": [
+    "Dosing, rate, neonatal and paediatric specifics and preparation: deliberately not included.",
+    "Reversal agent use is a prescriber decision and was not summarised.",
+    "PADIS and other guideline text was not read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-15",
+    "set_id": "f0c8b6cd-9efc-4344-9212-fbdd3b8e2f9b",
+    "label_version": "5",
+    "effective_time": "20260619",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label indicates midazolam for sedation, anxiolysis and amnesia, including before and during procedures and, intravenously, as other labelled uses.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Before intravenous use, make sure oxygen, resuscitative drugs, bag-valve-mask equipment and personnel skilled in airway management are immediately available; the label also highly recommends immediate availability of the reversal agent flumazenil.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    },
-    {
-     "text": "Monitor vital signs throughout recovery.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Patients should be continuously monitored for early signs of hypoventilation, airway obstruction or apnoea, with means such as pulse oximetry readily available.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    },
-    {
-     "text": "The label directs close monitoring for respiratory depression and sedation.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Boxed warning: intravenous midazolam has been associated with respiratory depression and respiratory arrest; where this was not recognised and treated promptly, death or hypoxic encephalopathy has resulted.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    },
-    {
-     "text": "Use only where continuous monitoring of respiratory and cardiac function (for example pulse oximetry) is provided, with immediately available resuscitation drugs, equipment and personnel skilled in airway management.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    },
-    {
-     "text": "Combining benzodiazepines and opioids can cause profound sedation, respiratory depression and death.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    },
-    {
-     "text": "Rapid intravenous administration should be avoided; dose changes are made slowly under the prescriber's order or protocol.",
-     "support": "partial",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The most frequent findings are fluctuations in vital signs, including decreased tidal volume or respiratory rate; serious cardiorespiratory events and paradoxical reactions are described in the warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    },
-    {
-     "text": "Local effects at the injection site are also reported: at the IV site, pain, redness, swelling and inflammation of a vein; at the IM site, pain, firmness, redness and muscle stiffness. In elderly or higher-risk surgical patients given midazolam by intramuscular injection, rare deaths consistent with cardiorespiratory depression have been reported, most often when another central-nervous-system depressant, especially an opioid, was also given. Pediatric patients have additionally shown low oxygen saturation, apnea, low blood pressure, paradoxical reactions, hiccoughs, seizure-like activity and abnormal eye movements, most often when another CNS-depressing medicine was also given.",
-     "support": "sourced",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate at once for hypoventilation, airway obstruction, apnoea, falling oxygen saturation or unexpected agitation.",
-     "support": "partial",
-     "sources": [
-      "L-MIDAZOLAM"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record sedation level, respiratory findings, concomitant opioids and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Continuously monitor breathing and oxygen saturation.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-MIDAZOLAM"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Confirm oxygen, airway equipment and trained staff are immediately available.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-MIDAZOLAM"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Check for concomitant opioids or other sedatives.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-MIDAZOLAM"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Call for help immediately for hypoventilation or apnoea.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-MIDAZOLAM"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record sedation level and respiratory observations.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Dosing, rate, neonatal and paediatric specifics and preparation: deliberately not included.",
-  "Reversal agent use is a prescriber decision and was not summarised.",
-  "PADIS and other guideline text was not read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-15",
-  "set_id": "f0c8b6cd-9efc-4344-9212-fbdd3b8e2f9b",
-  "label_version": "5",
-  "effective_time": "20260619",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

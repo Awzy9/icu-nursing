@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM Guidelines on circulatory shock and hemodynamic monitoring 2025 (Intensive Care Med 2025;51:1971-2012; abstract and 2014/2025 comparison table read, NOT full guideline)", "ESICM 2014 shock consensus (historical, superseded by ESICM 2025)"]
-sources: [S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-SSC-2021, S-SSC-2026]
-sources_not_read: [S-OPENRN-HA]
-independently_written_note: "Original wording. The 2014 ESICM consensus was read in full by an earlier author but is superseded for diagnosis/monitoring by ESICM 2025. AI-assisted follow-up on 2026-11-16 checked the 2025 guideline abstract and original 2014-versus-2025 comparison table through a university repository; 2025 full publication and supplements were NOT read. 2025 statements below are limited to this comparison. Text is paraphrased and cite-only (copyright restrictions). Open RN Health Alterations was not read. SSC 2021 was superseded by SSC 2026, for which only official recommendation-level text was read; fluid and vasopressor dosing are deliberately excluded."
+sources: [S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-SSC-2021, S-SSC-2026, S-SCAI-SHOCK-2026, S-ESC-HF-2026, S-ESC-CS-2026, S-ESC-AHF-EMERGENCY-2026, S-OPENRN-HA]
+sources_not_read: []
+independently_written_note: "Original wording. The 2014 ESICM consensus was read in full by an earlier author but is superseded for diagnosis/monitoring by ESICM 2025. AI-assisted follow-up on 2026-11-16 checked the 2025 guideline abstract and original 2014-versus-2025 comparison table through a university repository; 2025 full publication and supplements were NOT read. 2025 statements below are limited to this comparison. Text is paraphrased and cite-only (copyright restrictions). Selected acute decompensated heart failure nursing assessment passages from Open RN Health Alterations were checked 2026-11-24; this is a general nursing textbook, not a shock guideline. SSC 2021 was superseded by SSC 2026, for which only official recommendation-level text was read; fluid and vasopressor dosing are deliberately excluded."
 ---
 # Recognising circulatory shock and the nurse's response
 > DRAFT – NOT clinically reviewed. AI-generated. ESICM 2025 shock guidance is partially checked (abstract and comparison table only); not for clinical use.
@@ -53,6 +53,8 @@ The consensus describes four patterns: three low-flow (hypovolaemic from lost vo
 - Support the team in treating the cause (for example, controlling bleeding with direct pressure when appropriate and per policy).
 - Record observations, times, interventions and responses.
 
+**Recognizing worsening cardiac perfusion (Open RN Health Alterations, cardiovascular chapter).** Worsening breathlessness, lung findings, oedema, mental status and urine output in acute heart failure warrant prompt clinical review. When shock is suspected, report these findings alongside perfusion and blood pressure, and do not assume that fluid loading is appropriate just because pressure is low. This textbook supports nursing assessment in acute heart failure; the general shock framework and treatment decisions remain grounded in the specialist guidelines and clinical team.
+
 ## 8. Monitoring parameters
 Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially targeting MAP of at least 65 mmHg and individualising the target; the target is set by the prescriber), skin findings, capillary refill, urine output, mental state, temperature, SpO₂, lactate trend where ordered, drain and wound losses, intake and output.
 
@@ -72,6 +74,12 @@ Heart rate and rhythm, blood pressure and MAP (the consensus suggests initially 
 
 **2025 update relevant to shock monitoring (verified against the 2025 guideline abstract and 2014/2025 comparison table; full 2025 text NOT read):** The 2025 ESICM guidance supersedes the older 2014 consensus for current shock diagnosis and monitoring. It emphasizes serial capillary-refill assessment with skin temperature and mottling as complements; assessment of fluid responsiveness before additional fluid in persistent shock, using dynamic rather than static markers where applicable; and echocardiography as first-line imaging to characterize shock type. It distinguishes arterial-pressure targets by shock mechanism and patient factors (including septic shock, traumatic hemorrhage with or without brain injury, and cardiogenic shock). **The 2014 generic initial MAP statement in the historical table is not a universal 2025 target.** The treating team selects the patient-specific target and intervention. Separately, SSC 2026 applies to **sepsis/septic shock only**; its official recommendation page has been read at recommendation level, not its full publication. Review the complete 2025 shock recommendations before clinical approval.
 
+**Cardiogenic shock update (6 November 2026, SCAI official summary).** In cardiogenic shock, the November 2026 SCAI consensus summary stresses that a preserved pressure does not exclude inadequate tissue perfusion. Report changes in bedside perfusion, ordered biochemical markers, haemodynamic measurements and support requirements together. A device or vasopressor requirement alone does not determine shock stage. Communicate the current stage if assigned by the treating team and whether the patient is improving, unchanged or deteriorating; seek urgent specialist reassessment for renewed hypoperfusion. Formal staging and treatment decisions remain clinician-led. This classification update is specific to cardiogenic shock; it does not establish a universal resuscitation target or an independent nursing staging algorithm.
+
+**Fluid assessment in persistent shock (ESICM 2025, selected recommendations 16–26).** For persistent shock after initial resuscitation, the team should assess likely fluid responsiveness before giving more fluid. Passive leg raising with measurement of the change in cardiac output or stroke volume can be useful even during spontaneous breathing. Pulse-pressure or stroke-volume variation is less reliable outside suitable controlled ventilation conditions; respiratory variation of inferior vena cava size alone is insufficient. Fluid responsiveness is not itself an indication for fluid: consider ongoing perfusion deficit and congestion with the treating team. Do not alter ventilator settings or perform a haemodynamic manoeuvre outside the authorised protocol.
+
+**2026 European heart failure and shock evidence (targeted indexed passages).** The 2026 ESC documents distinguish left- and right-sided decompensation, acute pulmonary oedema and cardiogenic shock; presentations can overlap. Escalate new respiratory distress or hypoperfusion promptly, and hand over oxygen needs, work of breathing, evidence of congestion, mentation, urine output and ordered markers of renal or hepatic injury. The European cardiogenic shock consensus links end-organ hypoperfusion to circulatory abnormalities and underlying cardiac dysfunction. A nurse should not assign a cause using a single pressure, lactate or symptom; the team integrates examination, investigations and haemodynamics. Suspected shock or pulmonary oedema warrants urgent assessment, without waiting for a complete diagnostic classification.
+
 ## 10. Warning signs and red flags
 Cold, mottled or blue skin; capillary refill prolonged; new confusion or drowsiness; urine output falling; heart rate rising or new arrhythmia; blood pressure falling or MAP below the ordered target; rising lactate; shortness of breath; chest pain; unexplained bleeding or swelling; no response to first treatments.
 
@@ -84,7 +92,7 @@ Cold, mottled or blue skin; capillary refill prolonged; new confusion or drowsin
 | Diagnosing the type of shock, choosing therapy, BP targets, inserting lines | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: any suspected shock; MAP below the ordered target; new mottling or confusion; urine output falling; lactate rising; no improvement after treatment; any arrhythmia with instability.
+Escalate immediately for suspected shock, falling pressure below the ordered target, new mottling or confusion, falling urine output, rising lactate, failure to respond or an unstable arrhythmia. Shock can occur despite a preserved blood pressure. Assess airway, breathing and perfusion, summon help and initiate authorised supportive care in parallel. Do not wait for hypotension or a lactate result before responding to clinical deterioration.
 SBAR — **S:** bed X, systolic 82, heart rate 124, cold mottled legs, confused. **B:** day 1 after emergency laparotomy, drain output high, urine output 15 mL over the last hour. **A:** I think he is in shock, possibly bleeding or sepsis. **R:** please come now; I am preparing IV access, bloods including lactate and blood products if you order them.
 
 ## 13. Potential complications
@@ -112,32 +120,32 @@ B. The restlessness is probably pain, so give analgesia and review again once th
 C. These are possible signs of shock despite a normal-range pressure; repeat observations, look for bleeding and escalate urgently.
 D. Only the doctor can judge perfusion, so record the findings and wait for the next scheduled round.
 **Answer: C.**
-**Why correct:** The consensus says low blood pressure is not required to define shock; skin, kidney and brain signs indicate poor perfusion.
+**Why correct:** The historical consensus says hypotension is not required for shock. The ESICM 2025 update emphasizes serial skin perfusion assessment, including capillary refill with temperature and mottling as complements. Falling urine output and altered mentation add concern. Escalate urgently and look for bleeding while assessing ABC; one pressure value cannot exclude shock.
 **Why not A:** Waiting an hour ignores clear perfusion signs.
 **Why not B:** Pain may contribute, but analgesia alone would delay recognition of shock.
 **Why not D:** Perfusion assessment and escalation are nursing responsibilities.
 
-**Q2 (understanding).** Which three body "windows" does the consensus identify as readily accessible for assessing tissue perfusion?
-A. The skin, the kidneys (urine output) and the brain (mental state).
-B. The lungs, the liver and the gut, because these organs show the earliest and most reliable changes at the bedside.
-C. The heart, the eyes and the bones, because these structures can be examined without any equipment.
-D. The blood pressure cuff, the pulse oximeter and the ECG, because monitors give the most objective information.
+**Q2 (application).** During treatment for suspected shock, a patient's blood pressure reaches the ordered target. The nurse wants to assess whether tissue perfusion has also improved. Which bedside findings are most useful to trend together?
+A. Capillary refill and skin findings, urine output and mental state relative to baseline.
+B. Blood pressure, arterial waveform amplitude and the current vasopressor infusion rate.
+C. Oxygen saturation, respiratory rate and the oxygen delivery device currently in use.
+D. Temperature, white-cell count and the interval since the last antimicrobial dose.
 **Answer: A.**
-**Why correct:** The consensus names the skin, kidneys and brain as windows because perfusion can be judged at the bedside from skin findings, urine output and mental state without special equipment; other organs are less accessible.
-**Why not B:** These organs are less accessible at the bedside.
-**Why not C:** Not part of the consensus statement.
-**Why not D:** These are devices, not organ windows.
+**Why correct:** The historical consensus identifies skin, kidneys and brain as accessible perfusion windows. ESICM 2025 supports serial capillary refill assessment supplemented by skin temperature and mottling. Integrate urine output and cognition with baseline and other clinical findings; renal disease, sedation and other factors can confound individual signs. Achieving a pressure target does not prove restoration of tissue perfusion.
+**Why not B:** These data help assess circulation and treatment, but pressure and drug requirements alone do not establish tissue perfusion.
+**Why not C:** Respiratory observations remain important, but do not directly establish whether renal, skin and cerebral perfusion have improved.
+**Why not D:** These findings may inform infection assessment, but are not sufficient to evaluate the response of tissue perfusion.
 
-**Q3 (prioritization).** Which patient needs immediate escalation?
+**Q3 (prioritization).** During an ICU round, four patients have different trends in pressure and tissue perfusion. Which patient needs immediate escalation?
 A. A patient with a MAP just above the ordered target, warm skin, normal urine output and a clear mind.
 B. A patient with a stable low-normal pressure who has had these values for two days and is improving.
 C. A patient who is awaiting discharge with normal observations and a stable lactate.
 D. A patient with cool mottled skin, new confusion and urine output that has fallen over two hours.
 **Answer: D.**
 **Why correct:** Cool mottled skin, new confusion and falling urine output show poor perfusion in all three bedside windows at once, which suggests shock and needs urgent escalation. The other patients are stable.
-**Why not A:** Stable with good perfusion.
+**Why not A:** The ordered pressure target and preserved bedside perfusion findings do not suggest the same urgent deterioration.
 **Why not B:** A stable and improving patient does not need the most urgent response of the group.
-**Why not C:** Stable with normal findings.
+**Why not C:** Stable observations and lactate do not suggest the new perfusion decline described in the priority patient.
 
 **Q4 (scope).** The doctor orders a fluid bolus and then a vasopressor for suspected shock. What is the nurse's role?
 A. Choose the vasopressor and rate according to the nurse's judgment of the patient's condition.
@@ -145,21 +153,21 @@ B. Prepare, give and monitor the ordered treatments, repeat observations and rep
 C. Give the bolus but skip the reassessment afterwards, because the doctor will do it at the next review.
 D. Delay giving the treatments until the lactate result is known, so that the team can see the trend first.
 **Answer: B.**
-**Why correct:** The nurse administers and monitors ordered therapy and reports response; the consensus recommends frequent reassessment.
+**Why correct:** Administer and monitor authorized treatment, then report the response. ESICM 2025 prefers dynamic predictors to static preload measures when assessing fluid responsiveness where applicable. Review perfusion, congestion and ordered monitoring results; do not repeat fluid solely because pressure remains low.
 **Why not A:** Selecting vasopressors and rates is a prescriber decision.
 **Why not C:** Reassessment is shared and needed after each intervention.
 **Why not D:** Delay may harm; early treatment is recommended.
 
-**Q5 (understanding).** Which statement best describes using lactate when assessing suspected circulatory shock?
-A. A single normal lactate rules out shock, so further clinical assessment is unnecessary.
-B. Obtain lactate when ordered, follow serial values and interpret them with capillary refill, urine output, mental state and the overall clinical picture; a single value does not rule shock in or out.
-C. Lactate is relevant only in sepsis, so there is no reason to check it when bleeding or another cause of shock is suspected.
-D. Lactate should be measured only once, because trends cannot contribute to ongoing assessment.
+**Q5 (judgment).** During shock resuscitation, a patient's lactate falls but remains elevated. Capillary refill is improving, urine output remains low and the vasopressor requirement is unchanged. What is the safest interpretation?
+A. Give another fluid bolus to normalize lactate before reviewing other findings.
+B. Assess the discordant trends together and request individualized reassessment of perfusion.
+C. Reduce vasopressors because a falling lactate demonstrates adequate circulation.
+D. Attribute the remaining elevation to tissue hypoxia and request treatment based on lactate alone.
 **Answer: B.**
-**Why correct:** The historical ESICM consensus describes lactate as one element of perfusion assessment and emphasizes serial measurements, not a diagnostic cutoff. No single lactate result confirms or excludes shock. This question is a general assessment principle; the full graded 2025 ESICM guideline remains to be reconciled.
-**Why not A:** Normal lactate does not rule out shock; evaluate the patient and perfusion signs.
-**Why not C:** Lactate may be relevant to several forms of shock, not only sepsis.
-**Why not D:** Trends are useful alongside repeated bedside assessment.
+**Why correct:** Lactate trends provide useful context but have multiple determinants, including production and clearance. No single lactate result confirms or excludes shock. Integrate perfusion, organ function, haemodynamics and treatment response; consider confounding causes with the team. Do not administer additional fluid merely to normalize lactate; assess fluid responsiveness and congestion where appropriate and follow the authorized plan.
+**Why not A:** An elevated lactate does not establish fluid responsiveness or a net benefit from another bolus; excess fluid can cause harm.
+**Why not C:** A falling lactate does not establish that the patient can tolerate reduced circulatory support; changes require the prescribed titration plan.
+**Why not D:** Lactate can remain elevated for reasons other than ongoing tissue hypoxia; a single mechanism should not be assumed.
 
 **Q6 (safety).** The patient's MAP drops below the ordered target but the monitor alarm was silenced earlier. What should the nurse do?
 A. Check the patient, confirm the reading (transducer or cuff), call for review with SBAR, and keep monitoring.
@@ -167,7 +175,7 @@ B. Increase the vasopressor rate to bring the MAP up at once, because a prompt r
 C. Re-silence the alarm until the next routine check, since the monitor had already alarmed once.
 D. Document the reading carefully and review it after the shift, when the day has become less busy.
 **Answer: A.**
-**Why correct:** The nurse verifies, escalates and monitors; titration follows orders.
+**Why correct:** Assess the patient and escalate urgently while another trained staff member verifies measurement quality. ESICM 2025 supports arterial catheter monitoring when shock requires vasopressors or persists despite initial treatment. Check waveform and reference level per local procedure; titrate only under the authorized plan and do not let measurement troubleshooting delay emergency care.
 **Why not B:** Changing rates without an order or titration protocol is outside scope.
 **Why not C:** Silencing the alarm without action risks harm.
 **Why not D:** Delay may allow deterioration.
@@ -177,10 +185,21 @@ D. Document the reading carefully and review it after the shift, when the day ha
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Task force of the European Society of Intensive Care Medicine. Intensive Care Med. 2014;40:1795-1815. doi:10.1007/s00134-014-3525-z. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
 - Evans L, et al. Surviving Sepsis Campaign 2021. Intensive Care Med. 2021;47:1181-1247 (capillary refill statement). https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
 
+- SCAI. 2026 SHOCK Classification Expert Consensus Update, 6 November 2026. Official society summary: https://www.scai.org/publications/clinical-documents/2026-scai-shock-classification-expert-consensus-update-refined (accessed 2026-11-24); primary article https://doi.org/10.1016/j.jscai.2026.105736 (publisher access blocked during targeted check). No formal staging table or checklist reproduced.
+
+- European Society of Cardiology. 2026 ESC Guidelines for the management of heart failure. 2026-08-28. https://doi.org/10.1093/eurheartj/ehag100 (selected indexed primary text checked; accessed 2026-11-24; full appraisal pending).
+- ESC ACVC, HFA and EAPCI. Criteria for the diagnosis of cardiogenic shock—European perspective. 2026-06-08. https://doi.org/10.1093/ehjacc/zuag100 (selected indexed primary text checked; accessed 2026-11-24; full appraisal pending).
+- ESC ACVC, HFA and EUSEM. Acute heart failure in emergency settings: clinical consensus statement. 2026-10-22. https://doi.org/10.1093/eurheartj/ehag744 (selected indexed primary text checked; accessed 2026-11-24; full appraisal pending).
+- ESICM 2025 shock guideline, selected recommendation text and supporting rationale on dynamic assessment (pp. 1985–1986), https://pure.eur.nl/ws/files/215348682/ESICM_guidelines_on_circulatory_shock_and_hemodynamic_monitoring_2025.pdf (accessed 2026-11-24 through extracted text; PDF screenshot unavailable). No table reproduced.
+
+- S-OPENRN-HA. https://www.ncbi.nlm.nih.gov/sites/books/NBK613064/ (selected recommendation or teaching passages checked 2026-11-24; no full appraisal or rights clearance claimed).
+
 ## 19. Local protocol note
 Escalation triggers, MAP targets, monitoring intensity and treatment protocols follow local policy and the treating team.
 
 ## 20. Evidence, applicability and open questions
+- ESICM 2025 recommendations 16–26 and selected rationale checked via PDF text extraction; visual inspection failed due to PDF size. Complete guideline and supplementary evidence remain unappraised. ESC August 2026 guideline, June cardiogenic shock consensus and October emergency HF consensus checked at indexed-passage level; direct full-text review and rights verification remain open.
+- SCAI 2026 official summary checked 2026-11-24. Full primary text, stage criteria, evidence appraisal, rights and local implementation remain outstanding.
 - Source quality: the 2014 ESICM document is a superseded consensus; updated ESICM 2025 guidance exists and its abstract/introduction and 2014/2025 comparison table were checked on 2026-11-16. Full 2025 graded recommendations, rationale, bibliography and supplements are NOT verified yet. SSC 2021 is superseded; SSC 2026 was compared at official recommendation-page level for septic shock only (MAP, capillary refill, lactate), not read in full. Do not transfer sepsis-specific BP targets to other shock mechanisms.
 - International applicability: general principles are widely applicable; resource-limited settings may lack lactate or echocardiography.
 - Not covered: shock subtypes in depth, specific therapies, vasopressor dosing.

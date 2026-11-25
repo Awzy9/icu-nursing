@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – monitoring of lung-protective ventilation, adults and children", "ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies (Intensive Care Med 2023;49:727-759; CC BY-NC) – ARDS only"]
-sources: [S-AARC-PVA, S-ESICM-ARDS-2023]
+sources: [S-AARC-PVA, S-ESICM-ARDS-2023, S-SAUDI-MV-2026, S-SCCM-NMBA-2026, S-ATS-ARDS-2024]
 independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (the register source; full-text PDF; cite-only) and the ESICM 2023 ARDS guideline (open access, CC BY-NC – non-commercial) were both read in full text. Content is limited to what the ESICM text supports; ventilator mode details are not covered."
 ---
 # Ventilator parameters and lung-protective ventilation – what the nurse monitors
@@ -50,6 +50,8 @@ In ARDS inflamed, fluid-filled lung leaves a small aerated "baby lung". Overstre
 - For prone positioning: take part in the team turn using the unit's procedure, protect the airway, lines and eyes, offload pressure points and document.
 - Communicate trends with SBAR.
 
+**Bedside assessment and measurement quality (AARC 2024).** Compare the current measured exhaled tidal volume with the previous values and the documented predicted body weight. Record whether the patient was passive or actively breathing when pressure measurements were obtained; an unreliable plateau or total PEEP measurement should be identified as such rather than used to calculate a misleading driving pressure. Review the patient, airway position, circuit, humidification and skin around the interface with trained staff. A remote display or a normal alarm status is not a substitute for direct clinical assessment. New instability requires immediate help, not completion of a routine ventilator check first.
+
 ## 8. Monitoring parameters
 Per policy, at least hourly in unstable patients and with every reassessment: FiO₂, PEEP, delivered tidal volume, pressures, respiratory rate, SpO₂, haemodynamics, sedation score, synchrony, secretions; pressure-area checks each turn; documentation of prone start/stop times.
 
@@ -67,6 +69,10 @@ Per policy, at least hourly in unstable patients and with every reassessment: Fi
 | **AARC 2024 – monitoring (all ventilated patients; population "all" in its table)** | Assess plateau pressure (strong, high certainty; limit ≤ 30 cmH₂O adults, ≤ 28 paediatric in its table); assess expired tidal volume against 4–8 mL/kg PBW and document it per kg PBW (strong, high); assess PEEP and auto-PEEP (strong, high); suggest assessing driving pressure (conditional, low certainty; defined as valid plateau pressure minus **total** PEEP, with table target ≤ 15 cmH₂O); suggest assessing FiO₂ to avoid both hypoxaemia and hyperoxaemia (conditional, very low) | Document tidal volume per kg PBW as well as the absolute volume; report values outside the unit's limits |
 | Who adjusts settings | AARC states hospitals should empower bedside clinicians to adjust ventilator settings using non-physician-directed protocols | Whether a nurse may adjust anything is local protocol and role definition; default is **no** |
 
+**Saudi national adult ventilation guidance (February 2026, executive summary Q1–3).** For ARDS, the Saudi panel strongly supports lung-protective low tidal volume and higher PEEP strategies, both with moderate certainty. Higher PEEP is not automatically appropriate for each patient: report haemodynamic intolerance, possible right ventricular compromise or overdistension to the team. The panel did not endorse routine recruitment manoeuvres as standard care. These are ARDS-specific strategy recommendations; settings remain clinician-led and bedside monitoring must continue.
+
+**Prone ventilation and paralysis: reconciling recommendations.** ESICM 2023 supports prolonged prone sessions after optimisation in appropriate moderate-to-severe ARDS; ATS retains its severe-ARDS prone recommendation and the 2026 Saudi guideline conditionally supports proning. The March 2026 SCCM guideline conditionally favours neuromuscular blockade in adults with ARDS whose PaO₂/FiO₂ is below 150 and who remain hypoxaemic or cannot meet ventilation targets despite sedation (low certainty). Prone positioning alone does not require paralysis; SCCM found very uncertain evidence for choosing either approach. This is a selection recommendation, not an order to initiate paralysis. Before and during prescribed blockade, confirm analgesia and sedation, ventilatory support and emergency readiness. Observe the airway and vascular access, pressure areas, eyes and haemodynamics throughout prone care; new loss of ventilation, tube movement or instability demands immediate team response. No turn or paralysis procedure is authorised by this lesson.
+
 ## 10. Warning signs and red flags
 Falling delivered tidal volume or rising airway pressures; sudden desaturation; high-pressure or low-volume alarms; new asynchrony or "fighting the ventilator"; chest not moving equally; loss of end-tidal CO₂ trace; subcutaneous emphysema; hypotension with rising pressures; accidental disconnection or extubation; during proning: tube displacement, line dislodgement, facial or eye injury, new pressure injury, haemodynamic instability.
 
@@ -79,7 +85,7 @@ Falling delivered tidal volume or rising airway pressures; sudden desaturation; 
 | Recruitment manoeuvres, neuromuscular blockade, ECMO decisions, prone-positioning indication | Prescriber decision |
 
 ## 12. Escalation criteria
-Immediate escalation for: sudden desaturation or loss of ventilation; pressures or alarms not resolved by checking the patient and circuit; inability to deliver the set volume; suspected pneumothorax; accidental extubation; instability during proning.
+Activate emergency help immediately for sudden desaturation with distress, loss of ventilation, suspected pneumothorax, accidental extubation or haemodynamic collapse. Assess the patient and provide effective ventilation under the emergency protocol in parallel with summoning help; do not delay rescue to troubleshoot the circuit. Escalate unexplained rising pressures, falling measured exhaled volumes or persistent alarms even if the patient appears stable. AARC 2024 assessment recommendations support checking plateau pressure, measured tidal volume and PEEP including auto-PEEP; monitoring findings do not independently authorize setting changes.
 SBAR — **S:** ventilated ARDS patient, bed X, peak pressure rising from 28 to 38 and exhaled tidal volume falling. **B:** day 3 of ventilation, more secretions, sedation score [x]. **A:** possible obstruction, secretions or pneumothorax. **R:** please come to the bedside now; I have suctioned per policy and checked the circuit.
 
 ## 13. Potential complications
@@ -89,7 +95,7 @@ Ventilator-induced lung injury, barotrauma, hypotension from high intrathoracic 
 Mode and settings as ordered; delivered tidal volume and pressures; trends; alarms and actions; patient response; sedation and synchrony; communication and escalation; prone start/stop times, team members, skin and device checks.
 
 ## 15. Practical bedside example
-At the hourly check you note exhaled tidal volume has fallen from the usual delivered value while peak pressure rose. You check the patient (chest movement, secretions, cough), look for tube kinks or biting, suction per policy, check the circuit for leaks or water, and check synchrony. If values do not return to the usual range, you call the respiratory therapist or doctor with SBAR and stay at the bedside.
+At the hourly check you note exhaled tidal volume has fallen from the usual delivered value while peak pressure rose. You check the patient (chest movement, secretions, cough), look for tube kinks or biting, suction per policy, check the circuit for leaks or water, and check synchrony. If the patient is unstable or ventilation is ineffective, summon immediate help and follow the emergency ventilation plan while the trained team assesses the cause. For persistent abnormalities in a stable patient, promptly contact the respiratory therapist or doctor and remain at the bedside as indicated.
 
 
 **How to read the change.** Compare the measured exhaled volume with the patient’s baseline on the same mode and settings. Read airway pressures alongside the volume and inspect the tube and circuit. When a valid plateau pressure is already available, a rise in peak pressure with a stable plateau points toward increased resistance. A rise in both can suggest reduced compliance or an increase in end-expiratory pressure. Report the mode, set and measured values, and how quickly they changed. Escalate immediately if the patient is deteriorating.
@@ -104,10 +110,10 @@ A 52-year-old woman with severe pneumonia is intubated with moderate ARDS. After
 **Q1 (judgment).** A patient with ARDS has a set tidal volume unchanged, but the exhaled tidal volume has fallen over two hours and peak pressure has risen. What is the best first nursing action?
 A. Increase the set tidal volume at the ventilator so the delivered volume matches the target, then recheck the pressures after a few minutes.
 B. Wait for the next blood gas result before asking for assistance with the ventilator.
-C. Check the patient and circuit for secretions, kinks and leaks, suction per policy, and escalate if values stay abnormal.
+C. Assess the patient, call for help if unstable, and check the airway and circuit within competency.
 D. Mute the alarm to reduce noise and reassess at the next scheduled check.
 **Answer: C.**
-**Why correct:** A combination of falling delivered volume and rising pressure suggests obstruction or compliance change; the nurse checks causes within scope and escalates.
+**Why correct:** A combination of falling delivered volume and rising pressure suggests obstruction or compliance change, but does not establish a diagnosis. Assess breathing, oxygenation and circulation first; summon immediate help for instability. Check for kinks, secretions, displacement and circuit faults with trained staff. Suction only when indicated; follow the emergency ventilation plan if ventilation is ineffective.
 **Why not A:** Changing tidal volume is a prescriber or respiratory-therapy decision and could raise lung stress.
 **Why not B:** Waiting delays assessment of a possible emergency.
 **Why not D:** Muting alarms without addressing the cause risks missing deterioration.
@@ -129,7 +135,7 @@ B. Perform a brief recruitment manoeuvre to open the lungs and then document it 
 C. Reduce the set tidal volume so that the plateau falls, since smaller volumes are protective.
 D. Check the patient and circuit, report the value and trend with SBAR, and request urgent review.
 **Answer: D.**
-**Why correct:** Reporting the change and checking for causes are nursing tasks; settings changes are not.
+**Why correct:** Reporting the change and checking for causes are nursing tasks. AARC 2024 supports plateau pressure, delivered volume, PEEP and intrinsic PEEP assessment. Verify measurement conditions with the trained team; spontaneous effort may confound plateau pressure. Settings changes require the applicable order or protocol; never delay emergency escalation.
 **Why not A:** Lowering PEEP is a ventilator setting change that needs an order or protocol.
 **Why not B:** Recruitment manoeuvres are not routinely recommended and need a prescriber or therapist.
 **Why not C:** Tidal volume changes need an order or protocol, whatever the intent.
@@ -143,7 +149,7 @@ D. It should be used only after continuous neuromuscular blockade has been start
 **Why correct:** The guideline strongly recommends prone positioning for moderate–severe ARDS (PaO₂/FiO₂ below 150 mmHg with PEEP ≥ 5 cmH₂O) and describes early start after stabilisation with prolonged sessions.
 **Why not B:** The recommendation is specific to moderate–severe ARDS.
 **Why not C:** The guideline strongly recommends it for moderate to severe ARDS; its risks are managed through the team's procedure.
-**Why not D:** The guideline recommends against routine continuous neuromuscular blockade infusions.
+**Why not D:** ESICM recommends against routine continuous blockade. SCCM 2026 does not require blockade for every proned patient; selected patients may benefit under clinician direction.
 
 **Q5 (safety).** During a prone session, the nurse notes that the tube appears to have moved and the patient's SpO₂ is falling. What should the nurse do?
 A. Continue the session and recheck in ten minutes, because proning is expected to improve oxygenation.
@@ -154,27 +160,34 @@ D. Increase FiO₂ at the ventilator and wait to see whether the saturation reco
 **Why correct:** Possible tube displacement is an airway emergency needing team help and the emergency procedure.
 **Why not A:** Waiting risks hypoxia while the cause of the problem is not looked for or treated.
 **Why not C:** Turning alone is unsafe and may dislodge the tube further.
-**Why not D:** Changing FiO₂ is a setting decision and does not fix a displaced tube.
+**Why not D:** Emergency oxygen or ventilation support may be appropriate under protocol, but waiting for a saturation response before calling for airway help is unsafe; increased oxygen does not correct tube displacement.
 
-**Q6 (monitoring).** Which finding on the ventilator display most clearly requires urgent escalation?
-A. A respiratory rate that is within the set range and a stable SpO₂ with matching exhaled volumes, unchanged since the last check.
-B. A plateau pressure that is stable and unchanged from yesterday.
-C. A rise in peak pressure with falling exhaled volume and desaturation in a patient who was stable an hour ago.
-D. A FiO₂ that has been gradually lowered by the team during the day as the patient improved.
+**Q6 (monitoring).** During a ventilator check, a nurse reviews serial pressure, exhaled volume and oxygenation measurements. Which pattern requires the most urgent assessment and escalation?
+A. Unchanged peak pressure and exhaled volume with oxygen saturation remaining within the prescribed range.
+B. A transient pressure reading returning to baseline without a change in clinical assessment.
+C. Rising peak pressure, falling exhaled volume and new desaturation since the last assessment.
+D. A gradual reduction in oxygen support by the team with stable ventilation and oxygenation measurements.
 **Answer: C.**
-**Why correct:** The combination suggests obstruction, a new complication or deterioration needing assessment.
-**Why not A:** These values are stable and consistent.
-**Why not B:** A stable value is not alarming.
-**Why not D:** A gradual weaning of FiO₂ by the team is expected as the patient improves.
+**Why correct:** Deteriorating pressure, delivered ventilation and oxygenation raise concern for an airway, circuit or patient problem. Assess the patient immediately and summon help if unstable. Compare the pressure trend with plateau pressure and patient effort when appropriately assessed by trained staff; a single peak pressure does not establish the cause.
+**Why not A:** Stable measurements do not show the same new deterioration, although routine assessment remains necessary.
+**Why not B:** A transient reading warrants assessment but lacks the sustained multi-parameter decline in option C.
+**Why not D:** Stable findings during authorised reduction in support are not the same as unexpected deterioration.
 
 ## 18. References
 - Goodfellow LT, Miller AG, Varekojis SM, et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054. https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)
 - Grasselli G, Calfee CS, Camporota L, et al. ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies. Intensive Care Med. 2023;49:727-759. doi:10.1007/s00134-023-07050-7. https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/ (accessed 2026-11-14)
 
+- Saudi Health Council national guideline task force. Saudi Guideline for Mechanical Ventilation in Adults – Executive Summary. Saudi J Med Med Sci. 2026;14(Suppl 1):S1–S6. https://pmc.ncbi.nlm.nih.gov/articles/PMC12987643/ (selected recommendation text accessed 2026-11-24; CC BY-NC-ND 4.0, citation only; complete guideline and evidence profiles not appraised).
+
+- Society of Critical Care Medicine. Guidelines for the Administration of Neuromuscular Blockade in Adults With ARDS. 2026-03-03; doi:10.1097/ccm.0000000000007002. https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-administration-of-neuromuscular-blockade (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+- American Thoracic Society. An Update on Management of Adult Patients with Acute Respiratory Distress Syndrome: An Official American Thoracic Society Clinical Practice Guideline. 2024; doi:10.1164/rccm.202311-2011ST. https://pubmed.ncbi.nlm.nih.gov/38032683/ (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+
 ## 19. Local protocol note
 Ventilator targets, alarm limits, weaning, proning and recruitment protocols follow the institution's policies and the respiratory therapy team.
 
 ## 20. Evidence, applicability and open questions
+- SCCM 2026 official recommendations and ATS 2024 abstract/selected indexed passages checked. Saudi 2026 indexed prone recommendation checked; full comparative appraisal, local prone-care procedures and rights remain open.
+- Saudi 2026 national executive summary Q1–3 checked for ARDS ventilation strategy and safety boundaries. No local ventilator titration protocol or recruitment procedure is implied. Complete evidence profiles, institution-specific practice and independent review remain outstanding.
 - Source quality: two graded guidelines with different scope. **ESICM 2023** is a European society guideline for ARDS only (CC BY-NC). **AARC 2024** is a respiratory-therapy guideline on monitoring (strong recommendations, mostly high certainty for assessment; conditional for driving pressure and FiO₂); it applies to adults and children and does not say who performs the assessment. Population-specific: the ESICM recommendations apply to patients with ARDS; do not generalise them (for example prone positioning or neuromuscular blockade) to all ventilated patients.
 - International applicability: broadly applicable; ECMO and some practices depend on resources.
 - Not covered: modes, alarms, weaning (see other topics), and hypercapnia targets.

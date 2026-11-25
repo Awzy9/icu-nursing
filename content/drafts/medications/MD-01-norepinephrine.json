@@ -14,7 +14,7 @@
   "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
   "summary": "Vasopressor used to raise blood pressure in adults with severe, acute hypotension. Nursing focus: infusion-site and tissue protection, avoiding abrupt interruption, and rhythm and pressure monitoring.",
   "batch": 1,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Selected clinical guideline or trial evidence supplements the label; no full evidence appraisal or patient-specific prescribing guidance is supplied.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -45,6 +45,11 @@
       "id": "S-UIC-EXTRA-2026",
       "read": "partial",
       "use": "UIC clinical-pharmacy educational review (Sept 2026), selected extravasation-response discussion; not a dose/antidote protocol; first-response summary only."
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "Official SSC 2026 recommendations on vasopressor selection, peripheral initiation and perfusion monitoring, checked 2026-11-24"
     }
   ],
   "sections": {
@@ -56,6 +61,13 @@
           "support": "sourced",
           "sources": [
             "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "In adult septic shock, SSC 2026 prioritizes norepinephrine as the initial vasopressor in most patients. With concomitant cardiac dysfunction, either norepinephrine or epinephrine is a conditional option with very low certainty; the team considers rhythm and perfusion.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026"
           ]
         }
       ]
@@ -121,11 +133,32 @@
             "L-NOREPINEPHRINE",
             "S-UIC-EXTRA-2026"
           ]
+        },
+        {
+          "text": "Escalating vasopressor requirements, multiple agents or unreliable repeated cuff measurements warrant assessment for invasive arterial pressure monitoring. Assess capillary refill and ordered serial lactate together with other perfusion findings.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026"
+          ]
+        },
+        {
+          "text": "Review recent or concurrent monoamine oxidase inhibitors (including linezolid) and tricyclic antidepressants with the pharmacist or prescriber: the registered label warns of severe and prolonged hypertension. Monitor pressure closely when such coadministration is necessary.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "Review glucose trends because norepinephrine can reduce insulin sensitivity. Concurrent halogenated anaesthetics may increase the risk of dangerous ventricular rhythms; communicate exposure and maintain rhythm surveillance with the treating team.",
+          "support": "partial",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Tissue ischaemia: avoid extravasation into the tissues because local necrosis can follow; management of an extravasation, including any infiltration treatment, is a prescriber or protocol decision.",
@@ -144,6 +177,13 @@
         {
           "text": "Cardiac arrhythmias and allergic reactions are listed among the label's warnings and precautions.",
           "support": "sourced",
+          "sources": [
+            "L-NOREPINEPHRINE"
+          ]
+        },
+        {
+          "text": "A restored blood pressure does not exclude poor organ perfusion, especially when circulating volume is inadequate. Escalate suspected hypovolaemia and ongoing perfusion deficits for clinician assessment.",
+          "support": "partial",
           "sources": [
             "L-NOREPINEPHRINE"
           ]
@@ -258,11 +298,12 @@
     },
     {
       "kind": "observe",
-      "text": "Keep the infusion running; do not interrupt it without an instruction.",
+      "text": "Avoid unintended interruption of essential support. If extravasation is suspected, stop delivery through the affected catheter and urgently coordinate safe alternative access under the local procedure.",
       "critical": true,
-      "support": "sourced",
+      "support": "partial",
       "sources": [
-        "L-NOREPINEPHRINE"
+        "L-NOREPINEPHRINE",
+        "S-UIC-EXTRA-2026"
       ]
     },
     {
@@ -280,17 +321,36 @@
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Assess perfusion trends, including urine output, skin findings and ordered lactate results; escalate persistent hypoperfusion even if the measured pressure has improved.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NOREPINEPHRINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag recent linezolid, other monoamine oxidase inhibitors, tricyclic antidepressants or halogenated anaesthetic exposure; review blood pressure, rhythm and ordered glucose trends.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-NOREPINEPHRINE"
+      ]
     }
   ],
   "gaps": [
     "Dosing, concentration, line and compatibility information are deliberately not included.",
-    "Clinical practice guidelines (for example Surviving Sepsis) were not read for this entry.",
+    "SSC 2026 selected recommendation statements checked. Full evidence appraisal, product-specific label recurrency and local prescribing protocols remain outstanding; the registered Northstar label could not be reopened in this check.",
     "Central versus peripheral administration, site-check frequency, line compatibility and safe duration require institution-specific protocol; initial extravasation response is outlined but no complete drug-specific treatment protocol is given."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
     "FDA infusion pump page: verify reuse terms.",
-    "UIC extravasation education: independent paraphrase only; no tables/antidote administration algorithms reproduced; verify commercial reuse rights."
+    "UIC extravasation education: independent paraphrase only; no tables/antidote administration algorithms reproduced; verify commercial reuse rights.",
+    "Clinical guideline and journal sources: independent paraphrase and citation only; commercial reuse not cleared."
   ],
   "label_currency_check": {
     "checked": "2026-11-16",

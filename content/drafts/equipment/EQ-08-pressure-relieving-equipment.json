@@ -1,101 +1,175 @@
 {
- "equipment_id": "EQ-08",
- "number": 8,
- "title": "Pressure-relieving equipment",
- "category": "pressure-relieving-equipment",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": true,
- "manufacturer_documents": [],
- "related_skill": "SK-14",
- "evidence_status": "partial",
- "diagram": {
-  "kind": "loop",
-  "original_graphic": true,
-  "parts": [
-   "Support surface",
-   "Pump or controller",
-   "Mode selector",
-   "Alarm"
+  "equipment_id": "EQ-08",
+  "number": 8,
+  "title": "Pressure-relieving equipment",
+  "category": "pressure-relieving-equipment",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+  "device_neutral": false,
+  "manufacturer_documents": [
+    {
+      "source_id": "S-ARJO-ALPHA-ACTIVE4",
+      "device": "Arjo Alpha Active 4 model only; revision not specified; verify IFU"
+    }
   ],
-  "alt_text_needed": true
- },
- "parameters": [
-  {
-   "name": "Mode",
-   "explanation": null,
-   "support": "needs_source"
+  "related_skill": "SK-14",
+  "evidence_status": "partial",
+  "diagram": {
+    "kind": "loop",
+    "original_graphic": true,
+    "parts": [
+      "Support surface",
+      "Pump or controller",
+      "Mode selector",
+      "Alarm"
+    ],
+    "alt_text_needed": true
   },
-  {
-   "name": "Air level or pressure state",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Alarm state",
-   "explanation": null,
-   "support": "needs_source"
-  }
- ],
- "safety_concepts": [
-  {
-   "text": "No mattress replaces repositioning.",
-   "support": "partial",
-   "sources": [
-    "S-INTL-PI-2026"
-   ],
-   "section": "safety"
-  },
-  {
-   "text": "Use equipment and low-friction fabrics that reduce friction and shear when moving the patient.",
-   "support": "partial",
-   "sources": [
-    "S-INTL-PI-2026"
-   ],
-   "section": "safety"
-  }
- ],
- "monitoring_concepts": [
-  {
-   "text": "Reposition on a schedule set by mobility, skin and tissue tolerance, clinical condition, comfort and the support surface, not a fixed rule.",
-   "support": "partial",
-   "sources": [
-    "S-INTL-PI-2026"
-   ],
-   "section": "monitoring"
-  }
- ],
- "escalation_concepts": [
-  {
-   "text": "Report new skin changes and device-related damage promptly.",
-   "support": "partial",
-   "sources": [
-    "S-INTL-PI-2026"
-   ],
-   "section": "escalation"
-  }
- ],
- "sources": [
-  {
-   "id": "S-INTL-PI-2026",
-   "read": "partial",
-   "use": "International Guideline 4th ed.: abridged Quick Reference Guide only"
-  }
- ],
- "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
-  "Unit policy for this equipment"
- ],
- "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
- ]
+  "parameters": [
+    {
+      "name": "Mode",
+      "explanation": "An active surface can vary its redistribution characteristics without a change in applied load; alternating pressure is one example. Reactive surfaces respond to applied load. Device modes and suitability depend on the manufacturer's specifications and individual assessment.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-SURFACES-2026"
+      ]
+    },
+    {
+      "name": "Air level or pressure state",
+      "explanation": "The Arjo Alpha Active 4 has adjustable support pressure associated with patient weight ranges. The setting is not a direct measurement of tissue perfusion or interface pressure. Check individual suitability, support and skin tolerance with trained staff; use the prescribed plan and exact device instructions.",
+      "support": "partial",
+      "sources": [
+        "S-ARJO-ALPHA-ACTIVE4",
+        "S-INTL-PI-SURFACES-2026"
+      ]
+    },
+    {
+      "name": "Alarm state",
+      "explanation": "The Alpha Active 4 signals conditions including inadequate system pressure, loss of electrical supply and pump malfunction. Assess the patient and continuing support, obtain trained assistance and follow the model-specific contingency plan. Do not assume an alarm-free system eliminates pressure injury risk.",
+      "support": "partial",
+      "sources": [
+        "S-ARJO-ALPHA-ACTIVE4",
+        "S-INTL-PI-SURFACES-2026"
+      ]
+    }
+  ],
+  "safety_concepts": [
+    {
+      "text": "No mattress replaces repositioning.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-2026"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Use equipment and low-friction fabrics that reduce friction and shear when moving the patient.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-2026"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Select the support surface and repositioning schedule for the individual, taking tissue tolerance, mobility, clinical stability and comfort into account. A powered surface does not replace regular reassessment and repositioning.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-2026"
+      ],
+      "section": "safety"
+    }
+  ],
+  "monitoring_concepts": [
+    {
+      "text": "Reposition on a schedule set by mobility, skin and tissue tolerance, clinical condition, comfort and the support surface, not a fixed rule.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-2026"
+      ],
+      "section": "monitoring"
+    },
+    {
+      "text": "Check that the prescribed surface is functioning and that the patient is correctly supported. Escalate suspected loss of pressure redistribution or equipment failure using the manufacturer's instructions and local policy.",
+      "support": "local_protocol",
+      "sources": [],
+      "section": "monitoring"
+    },
+    {
+      "text": "Check that the mattress fits the bed and patient dimensions, leaves appropriate clearance from rails and the footboard, and is compatible with the bed system. Keep the contact surface smooth and avoid unnecessary layers that interfere with pressure redistribution. Use suitable pressure redistribution during procedures and transport where feasible without delaying emergency care.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-SURFACES-2026"
+      ],
+      "section": "monitoring"
+    },
+    {
+      "text": "For critically ill adults who cannot tolerate regular full-body turns, agree a modified repositioning plan with the team, considering small weight shifts that the patient can safely tolerate. Monitor oxygenation, circulation and skin response; reassess whether usual repositioning can resume as stability improves. This is a good-practice approach supported by indirect evidence rather than a proven fixed turning regimen.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-REPOS-2026"
+      ],
+      "section": "monitoring"
+    },
+    {
+      "text": "For patients at heel pressure-injury risk, assess whether the heel is genuinely offloaded, not merely covered by a device. Check fit, skin, swelling and perfusion; adapt equipment to mobility and tolerance, with particular attention to patients who cannot report discomfort. Evidence for choosing a heel offloading device is of very low certainty.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-HEELS-2025"
+      ],
+      "section": "monitoring"
+    }
+  ],
+  "escalation_concepts": [
+    {
+      "text": "Report new skin changes and device-related damage promptly.",
+      "support": "partial",
+      "sources": [
+        "S-INTL-PI-2026"
+      ],
+      "section": "escalation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-INTL-PI-2026",
+      "read": "partial",
+      "use": "International Guideline 4th ed.: abridged Quick Reference Guide only"
+    },
+    {
+      "id": "S-INTL-PI-SURFACES-2026",
+      "read": "partial",
+      "use": "Public HTML definitions of active/reactive support surfaces and selection considerations; full evidence tables not reviewed."
+    },
+    {
+      "id": "S-ARJO-ALPHA-ACTIVE4",
+      "read": "partial",
+      "use": "Manufacturer features page; pressure selection and alarm categories; not efficacy evidence or IFU"
+    },
+    {
+      "id": "S-INTL-PI-REPOS-2026",
+      "read": "partial",
+      "use": "International Guideline repositioning chapter R9 and adult critical care implementation considerations; indirect evidence, no comparative ICU trial identified."
+    },
+    {
+      "id": "S-INTL-PI-HEELS-2025",
+      "read": "partial",
+      "use": "International Guideline heel chapter H2/H3 and fit, assessment and offloading considerations; H2 conditional, very low certainty."
+    }
+  ],
+  "required_sources": [
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
+    "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+    "Unit policy for this equipment"
+  ],
+  "gaps": [
+    "All listed parameters have preliminary cited explanations; individual claims, evidence strength and model applicability still require independent appraisal.",
+    "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+    "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+  ]
 }

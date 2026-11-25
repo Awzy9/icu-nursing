@@ -23,6 +23,16 @@
       "id": "S-FDA-PUMP",
       "read": "full",
       "use": "FDA infusion pump risk-reduction page"
+    },
+    {
+      "id": "S-FDA-MISCONNECTIONS",
+      "read": "partial",
+      "use": "Indexed recommendation on tracing tubing to origin"
+    },
+    {
+      "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+      "read": "partial",
+      "use": "FDA examples of missing alarms and battery failures; reports are illustrative, not frequency estimates."
     }
   ],
   "objectives": [
@@ -35,7 +45,7 @@
   ],
   "sections": {
     "safety": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Verify programming (dosage, rate, volume) at change of shift, when any change is made to the settings, when a new bag is hung and when new tubing is primed (FDA).",
@@ -55,6 +65,14 @@
           "text": "Use the drug library where one exists and respond carefully to alerts rather than silencing them (FDA).",
           "support": "sourced",
           "sources": [
+            "S-FDA-PUMP"
+          ]
+        },
+        {
+          "text": "Before connecting or replacing tubing, trace the line from the patient back to its source and confirm the intended route, solution and pump channel against the order. Never force connectors or rely solely on colour or physical fit. Resolve uncertain line identity before connecting.",
+          "support": "partial",
+          "sources": [
+            "S-FDA-MISCONNECTIONS",
             "S-FDA-PUMP"
           ]
         }
@@ -97,6 +115,14 @@
           "support": "partial",
           "sources": [
             "S-FDA-PUMP"
+          ]
+        },
+        {
+          "text": "Before transporting a patient on essential continuous infusions, check available pump power and the replacement equipment plan with the transport team. During treatment do not assume that absence of an alarm rules out occlusion, air detection failure or interrupted delivery. Assess the patient and prescribed therapy independently of the pump display.",
+          "support": "partial",
+          "sources": [
+            "S-FDA-PUMP",
+            "S-FDA-PUMP-FAILURE-EXAMPLES"
           ]
         }
       ]
@@ -208,7 +234,7 @@
     },
     {
       "phase": "procedure",
-      "text": "Obtain an independent double check when policy requires it.",
+      "text": "When policy requires an independent double check, each clinician checks the order and programmed settings separately before comparing findings; do not substitute a shared glance.",
       "critical": true,
       "support": "sourced",
       "sources": [
@@ -248,6 +274,35 @@
       "sources": [
         "S-FDA-PUMP"
       ]
+    },
+    {
+      "phase": "assessment",
+      "text": "Inspect the pump for damage before use; remove a suspect device from service per facility policy and arrange a functional replacement without interrupting essential support unsafely.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "phase": "preparation",
+      "text": "Before connecting or replacing tubing, trace the line from the patient back to its source and confirm the intended route, solution and pump channel against the order. Never force connectors or rely solely on colour or physical fit. Resolve uncertain line identity before connecting.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-MISCONNECTIONS",
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "phase": "preparation",
+      "text": "Before transporting a patient on essential continuous infusions, check available pump power and the replacement equipment plan with the transport team. During treatment do not assume that absence of an alarm rules out occlusion, air detection failure or interrupted delivery. Assess the patient and prescribed therapy independently of the pump display.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP",
+        "S-FDA-PUMP-FAILURE-EXAMPLES"
+      ]
     }
   ],
   "gaps": [
@@ -280,6 +335,28 @@
       "url": "https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians",
       "accessed": "2026-11-16",
       "read": "full",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-FDA-MISCONNECTIONS",
+      "title": "Tips for Health Care Providers to Reduce Medical Device Misconnections",
+      "publisher": "FDA",
+      "version": "FDA public guidance page",
+      "url": "https://www.fda.gov/medical-devices/medical-device-connectors/tips-health-care-providers-reduce-medical-device-misconnections",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+      "title": "Examples of Reported Infusion Pump Problems",
+      "publisher": "FDA",
+      "version": "Public safety examples",
+      "url": "https://www.fda.gov/medical-devices/infusion-pumps/examples-reported-infusion-pump-problems",
+      "accessed": "2026-11-24",
+      "read": "partial",
       "licence_class": "YELLOW",
       "permission_required": "Verify"
     }

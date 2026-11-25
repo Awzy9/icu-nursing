@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 – official SCCM recommendation page (recommendation-level statements; the full guideline was NOT read)", "SCCM PADIS 2025 focused update – official SCCM recommendation page (five statements; full text NOT read)", "Open RN Nursing Fundamentals 2e, section 11.3 Pain Assessment Methods (read 2026-11-14)"]
-sources: [S-SCCM-PADIS, S-OPENRN-FUND, S-CPOT-REVIEW-2024]
+sources: [S-SCCM-PADIS, S-OPENRN-FUND, S-CPOT-REVIEW-2024, S-ESICM-HUMAN-PARTNERSHIP-2026]
 independently_written_note: "Original wording. Statements from the SCCM pages are attributed at recommendation level only. Only the CPOT's overall structure (four indicators, each scored 0 to 2, total 0 to 8) is described, taken from a CC BY 2024 narrative review (a secondary source); the CPOT's own scoring descriptors, the tool's original publications and terms of use, and all BPS and BPS-NI details were NOT read and are not taught: use the validated tools under their licences and local training. Drug choices and doses (opioids, adjuncts) are prescriber decisions and are not given. Open RN is CC BY 4.0 (attribution and change notice if adapted)."
 ---
 # Pain assessment in critically ill adults (self-report and behavioural tools)
@@ -45,6 +45,14 @@ Untreated pain increases distress and is a recognised trigger of agitation, and 
 - Report uncontrolled pain, sedation concerns or adverse effects promptly.
 - Involve patient and family in setting comfort goals when possible.
 
+## 7b. Communication and comfort during pain assessment
+
+An endotracheal tube does not automatically prevent reliable self-report. Establish a yes/no signal, writing board or other accessible communication method suited to the patient's abilities; check that the response is reproducible before interpreting it. Ask about pain at rest and during planned care, the patient's functional comfort goal and what previously helped.
+
+With the patient's consent where feasible, invite family to describe usual expressions of discomfort, communication needs and reassuring approaches. Their observations supplement, rather than replace, the patient's reliable report or validated assessment. Agree which simple comfort activities are safe and voluntary; relatives should not manipulate infusions or critical devices. The October 2026 ESICM human-centred partnership consensus supports structured family participation while noting limited direct evidence for patient clinical outcomes. It does not validate a new pain scale.
+
+**Reassessment after analgesia: comfort and physiological safety (SCCM PADIS 2018).** Document which validated assessment method was usable, whether pain occurred at rest or with care, and the response to an authorized intervention. Reassess arousal, breathing and circulation when clinically indicated, particularly after opioid administration. A quieter or less responsive patient is not necessarily pain-free. If reliable self-report and observable behaviours are both unavailable, document the limitation and seek a clinician-directed pain plan; vital signs are prompts to investigate, not a replacement pain scale. Unexpected respiratory depression or reduced consciousness requires urgent clinical assessment and escalation under the unit's emergency pathway.
+
 ## 8. Monitoring parameters
 Pain score and tool at intervals set by the unit and after interventions; behaviours (facial expression, movement, muscle tension, ventilator compliance, vocalisation – as defined by the tool); sedation level; respiratory status and haemodynamics after analgesia; bowel function; delirium screen.
 
@@ -73,7 +81,7 @@ Behavioural signs of pain on the unit tool; agitation or ventilator asynchrony t
 | Choosing the analgesic, route, dose or adjunct; changing the plan | Prescriber / pharmacist decision |
 
 ## 12. Escalation criteria
-Escalate when pain remains uncontrolled after protocol steps, when the pattern is new or suggests a complication, when adverse effects occur, or when the patient cannot be assessed.
+Escalate uncontrolled or new severe pain, suspected complications, adverse effects or inability to assess pain. Activate emergency help for suspected analgesic-related respiratory or circulatory compromise; assess ventilation and arousability. When pain behaviour cannot be observed, including during neuromuscular blockade, document the limitation rather than recording an assumed zero score. Vital signs are cues for further assessment, not a validated pain score. Verify the prescribed analgesia plan and seek clinical review.
 SBAR — **S:** bed X, ventilated patient with a rising behavioural pain score after turning. **B:** day 2 after laparotomy, current analgesia per chart, sedation score [x]. **A:** inadequate pain control; no sign of other cause so far. **R:** please review analgesia; I will reassess after the dressing change and in 30 minutes.
 
 ## 13. Potential complications
@@ -98,24 +106,24 @@ A 57-year-old man on a ventilator is restless with a heart rate of 112. The nurs
 **Q1 (judgment).** A ventilated patient is restless and has a heart rate of 112. What is the best first step?
 A. Request extra sedation straight away, because restlessness suggests that the sedative dose is currently too low.
 B. Assume the rapid heart rate means pain and give the next analgesic dose early without waiting for an order.
-C. Use the unit's validated behavioural tool, look for other causes, and report before more sedation is requested.
+C. Assess for deterioration and pain using self-report if possible or a validated behavioral tool.
 D. Do nothing until the heart rate settles, because vital signs are the only reliable guide to pain in this patient.
 **Answer: C.**
-**Why correct:** SCCM states vital signs are not valid indicators of pain and pain should be assessed with a validated tool and treated before a sedative is considered.
+**Why correct:** Restlessness and tachycardia may reflect pain, hypoxia, ventilator problems, delirium or other causes. Assess immediate threats first. Seek reliable self-report even in an intubated patient who can communicate; use a behavioral tool when self-report is not feasible and behaviors are observable. Vital signs are prompts for assessment, not pain scores.
 **Why not A:** Sedation should not be increased before pain is assessed.
 **Why not B:** Giving drugs without assessment and an order is unsafe.
 **Why not D:** Vital signs are cues only; waiting leaves possible pain untreated.
 
-**Q2 (understanding).** Which tools does SCCM identify as having the greatest validity and reliability for monitoring pain in patients unable to self-report whose behaviours are observable?
-A. The Behavioral Pain Scale (BPS), BPS for non-intubated patients (BPS-NI) and the Critical-Care Pain Observation Tool (CPOT).
-B. The trend in heart rate and blood pressure recorded on the monitor over the preceding hour, taken as a reliable pain score.
-C. A numeric 0–10 rating card held in front of the patient, which the sedated patient points to unaided, as in any other adult.
-D. The bispectral index, which measures the depth of sedation and can indicate whether pain is present in a deeply sedated patient.
+**Q2 (judgment).** An intubated patient is alert and consistently uses a communication board to indicate pain intensity. A colleague prefers a behavioural pain score because the patient cannot speak. Which assessment is most appropriate?
+A. Use the patient's reliable self-report and assess pain location and functional comfort goals.
+B. Use the behavioural score instead because intubation makes a patient-reported score invalid.
+C. Average the patient's report with the observed behavioural score to obtain a single intensity.
+D. Use heart rate and blood pressure to confirm the score before documenting the pain intensity.
 **Answer: A.**
-**Why correct:** SCCM identifies the BPS, BPS-NI and CPOT as the behavioural tools with the best validity and reliability in patients who cannot self-report but show observable behaviours. Vital signs are not valid indicators of pain, and the numeric rating scale needs self-report.
-**Why not B:** Vital signs are not valid indicators of pain.
-**Why not C:** The numeric rating scale is for patients who can self-report.
-**Why not D:** BIS is described for sedation monitoring, not pain.
+**Why correct:** SCCM PADIS supports reliable patient self-report whenever feasible, including accessible communication when speech is unavailable. Behavioral tools such as BPS, BPS-NI and CPOT are useful when reliable self-report is unavailable and relevant behaviours are observable. During paralysis or profound sedation, absence of observable pain behavior does not establish absence of pain. Record the assessment method and reassess after authorized intervention.
+**Why not B:** Inability to speak does not establish inability to communicate a reliable report.
+**Why not C:** Behavioral observation and self-reported intensity are distinct measures and should not be averaged into an unvalidated score.
+**Why not D:** Vital signs may prompt further assessment, but they cannot validate or quantify the patient's pain intensity.
 
 **Q3 (application).** A patient who is awake and able to respond is asked to rate pain from 0 to 10 and says "7, but I can tolerate it lying still". What should the nurse do next?
 A. Record a score of 7 and ask for the strongest analgesic on the unit, since the patient reports a high number.
@@ -123,18 +131,18 @@ B. Record "tolerable" and take no further action, because the patient has said t
 C. Ask follow-up questions (PQRSTU) and clarify the comfort goal before deciding on the plan with the prescriber.
 D. Repeat the question until the patient gives a lower number, so that the chart shows a score below the action level.
 **Answer: C.**
-**Why correct:** Open RN advises follow-up when answers do not align and assessing the comfort-function goal.
+**Why correct:** Respect the patient's reported score and clarify location, quality, timing, movement-related symptoms and comfort/function goals. Review new or concerning causes promptly and reassess after authorized intervention. Do not replace the patient's score with your own impression of tolerability.
 **Why not A:** Analgesics need an order and a full assessment.
 **Why not B:** The 7 may reflect movement-related pain needing action.
 **Why not D:** Leading the patient to a lower number distorts the assessment.
 
-**Q4 (prioritization).** A patient in obvious pain is also agitated. Which order of action best follows the SCCM statements?
+**Q4 (prioritization).** After repositioning, a ventilated patient who can communicate reports pain and appears agitated. Immediate airway, ventilation and circulation threats have been assessed. Which sequence best follows the SCCM pain-first approach?
 A. Add a sedative first to settle the patient, and assess for pain once the patient is calmer.
 B. Reassess pain with a validated tool, treat it as ordered or per protocol, then reassess the need for sedation.
 C. Start physical restraints to keep the patient safe, and then assess whether pain is present once the patient is secure.
 D. Wait for the next medical round to decide whether the cause of the agitation is pain or delirium.
 **Answer: B.**
-**Why correct:** Pain assessment and treatment come before a sedative is considered.
+**Why correct:** Establish the patient's pain and comfort goals using reliable self-report if possible, or an appropriate validated tool when self-report is not feasible. Treat pain within the authorized plan and reassess response, arousal and ventilation before deciding whether additional sedation is indicated. Persistent agitation warrants assessment for other causes rather than automatic sedative escalation.
 **Why not A:** Sedating first can mask pain.
 **Why not C:** Restraints are a last resort and not a treatment.
 **Why not D:** Delay leaves pain untreated.
@@ -145,7 +153,7 @@ B. Give a stimulant to wake the patient, so that the sedation score and respirat
 C. Ask a colleague to check the patient's pain score at the next round and then decide what to do.
 D. Assess airway, breathing and sedation, stay with the patient, and call the prescriber urgently.
 **Answer: D.**
-**Why correct:** Adverse effects of analgesia need immediate assessment and escalation.
+**Why correct:** New reduced arousal and respiratory depression after analgesia require immediate assessment and emergency escalation. Stay with the patient, activate urgent help and provide oxygenation or ventilation support within competency; follow the authorized opioid toxicity and reversal pathway when appropriate. Supplemental oxygen may mask hypoventilation. Continue monitoring after any reversal because respiratory depression can recur.
 **Why not A:** Ignoring a changing respiratory status is unsafe.
 **Why not B:** Reversal or stimulants need an order and a clinical decision.
 **Why not C:** A delayed check is too late.
@@ -166,6 +174,8 @@ D. Documenting the behavioural pain score and the stimulus that preceded it.
 - SCCM. Focused update to PADIS guidelines for adult patients (2025). Official recommendations page. https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (accessed 2026-11-14). Crit Care Med 2025;53:e711-e727 (not read).
 - Evaluating pain in non-verbal critical care patients: a narrative review of the Critical Care Pain Observation Tool and its clinical applications. Front Pain Res. 2024;5. doi:10.3389/fpain.2024.1481085. https://pmc.ncbi.nlm.nih.gov/articles/PMC11518793/ (CC BY 4.0; section 'Components of CPOT'; accessed 2026-11-14)
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN, section 11.3 Pain Assessment Methods. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/11-3-pain-assessment-methods/ (CC BY 4.0; accessed 2026-11-14)
+
+- Latour JM et al. ESICM consensus on human-centred partnership in the ICU (26 October 2026). https://doi.org/10.1007/s00134-026-08626-9 (selected family participation statements and limitations checked 2026-11-24; CC BY-NC 4.0, cite-only pending commercial rights review).
 
 ## 19. Local protocol note
 Pain tools, scoring thresholds for action, assessment frequency, analgesic protocols and non-drug options follow the institution's policies and trained competencies.

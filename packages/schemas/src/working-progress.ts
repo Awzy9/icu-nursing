@@ -21,6 +21,14 @@ export type SavedModuleShared = z.infer<typeof savedModuleSchema>;
 export const lessonProgressSchema = savedModuleSchema.extend({ completed: z.boolean(), at: z.number() });
 export type LessonProgressShared = z.infer<typeof lessonProgressSchema>;
 
+// Mirrors the candidate DB constraint. Unknown history is not an empty history.
+// Shape validation only; scenario-session.ts checks transitions and scores against content.
+export const scenarioDecisionHistorySchema = z.array(z.strictObject({
+  position: z.number().int().min(1).max(999),
+  choice: z.number().int().min(0).max(3),
+})).max(100).refine(items => items.every((item, i) => i === 0 || item.position > items[i - 1]!.position), {
+  message: "Decision positions must strictly increase",
+});
 export const sessionRecordSchema = savedModuleSchema.extend({
   kind: z.enum(["quiz", "scenario"]),
   version: z.string(),
@@ -28,6 +36,7 @@ export const sessionRecordSchema = savedModuleSchema.extend({
   score: z.number(),
   finished: z.boolean(),
   at: z.number(),
+  decisions: scenarioDecisionHistorySchema.optional().catch(undefined),
 });
 export type SessionRecordShared = z.infer<typeof sessionRecordSchema>;
 
@@ -45,6 +54,7 @@ export const sessionRowSchema = z.object({
   score: z.number(),
   finished: z.boolean(),
   updated_at: z.string(),
+  decisions: scenarioDecisionHistorySchema.nullish().catch(undefined),
 });
 // working_attempts (supabase/migrations/20261117161800_working_attempts_leitner_box.sql) - the
 // per-question spaced-revision record: which question, whether it was answered correctly, when,

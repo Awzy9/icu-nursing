@@ -45,8 +45,10 @@ describe("P1 Batch 08 — delirium, sedation and nutrition source version safety
     expect(nutritionText).toContain("ESPEN source-status correction");
     expect(nutritionText).toContain("2023");
     expect(nutritionText).toContain("2026");
-    expect(nutritionText).toContain("Neither full publication nor its tables were read");
-    expect(nutritionText).toContain("bibliographic signposts only");
+    expect(nutritionText).toContain("Selected sections of the English 2023 society-hosted PDF were directly checked on 2026-11-24");
+    expect(nutritionText).toContain("Full appraisal, Spanish-edition comparison and commercial reuse permissions remain review tasks");
+    expect(nutritionText).toContain("the Spanish edition remains a bibliographic signpost only");
+    expect(nutritionText).toContain("Neither is used to prescribe a new bedside regimen");
   });
 
   it("preserves clinical review and original scenario validation gates", () => {

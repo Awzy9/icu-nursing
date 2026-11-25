@@ -14,7 +14,7 @@
   "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
   "summary": "Ready-to-use calcium gluconate in sodium chloride for symptomatic hypocalcemia. Nursing focus: calcium–ceftriaxone precipitation hazards (especially in neonates), concurrent cardiac glycosides, rapid-administration cardiovascular events, skin/tissue injury and calcium monitoring.",
   "batch": 2,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A targeted re-read of the exact existing WG Critical Care US product label on 2026-11-21 supplied additional age-dependent ceftriaxone restrictions, adverse-effect and calcium surveillance cues. No independent clinician review or treatment protocol is implied.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A targeted re-read of the exact existing WG Critical Care US product label on 2026-11-21 supplied additional age-dependent ceftriaxone restrictions, adverse-effect and calcium surveillance cues. No independent clinician review or treatment protocol is implied. Selected clinical evidence supplements the regulator label; full guideline and independent clinical appraisal remain outstanding.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -40,6 +40,11 @@
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-UKKA-HK-2026",
+      "read": "partial",
+      "use": "UKKA July 2026 hospital recommendations 16.2a–b on emergency calcium salt selection, selected HTML"
     }
   ],
   "sections": {
@@ -57,6 +62,14 @@
           "text": "This registered product is a ready-to-use calcium gluconate in sodium chloride preparation. Other calcium salts or calcium gluconate products require their own labeling and pharmacy checks; this record does not establish interchangeable treatment instructions.",
           "support": "sourced",
           "sources": [
+            "L-CALCIUM"
+          ]
+        },
+        {
+          "text": "In adult hyperkalaemia with ECG changes, UKKA distinguishes calcium chloride in resuscitation or peri-arrest from calcium gluconate in other clinical settings. Calcium stabilizes cardiac excitability but does not remove potassium. The registered gluconate bag is labeled for symptomatic hypocalcaemia; emergency use requires the separate authorized treatment pathway.",
+          "support": "partial",
+          "sources": [
+            "S-UKKA-HK-2026",
             "L-CALCIUM"
           ]
         }
@@ -127,6 +140,39 @@
         {
           "text": "Monitor ordered serum calcium, particularly with kidney dysfunction or concurrent calcium-raising medicines such as certain vitamins or thiazide diuretics. The actual sampling schedule and individualized targets remain clinician-directed.",
           "support": "sourced",
+          "sources": [
+            "L-CALCIUM"
+          ]
+        },
+        {
+          "text": "The registered product label describes serious tissue injury from calcinosis with or without obvious extravasation and directs immediate cessation at the affected site.",
+          "support": "partial",
+          "sources": [
+            "L-CALCIUM"
+          ]
+        },
+        {
+          "text": "Confirm the prescribed calcium salt and exact product with pharmacy under local medication policy; do not independently substitute calcium chloride for calcium gluconate.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The registered label advises avoiding this calcium product in patients receiving cardiac glycosides unless the treating clinician determines concurrent therapy is necessary. Obtain clinician or pharmacist review before administration and closely monitor ECG if concurrent treatment is authorised.",
+          "support": "partial",
+          "sources": [
+            "L-CALCIUM"
+          ]
+        },
+        {
+          "text": "For emergency calcium in hyperkalaemia, continue ECG assessment and report persistent or recurrent abnormalities. Coordinate repeat potassium checks and the prescribed potassium-shifting and removal plan; an improved ECG is not proof that potassium is normal.",
+          "support": "partial",
+          "sources": [
+            "S-UKKA-HK-2026"
+          ]
+        },
+        {
+          "text": "Calcium administration may reduce the response to calcium channel blockers. Review concurrent medicines with the treating team and assess blood pressure and rhythm; do not independently change either treatment.",
+          "support": "partial",
           "sources": [
             "L-CALCIUM"
           ]
@@ -224,7 +270,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "Immediately escalate suspected IV site tissue injury, new bradycardia/hypotension or arrhythmia, unexpected high serum calcium, a neonate receiving ceftriaxone, or any plan to administer ceftriaxone and calcium simultaneously through common access. For severe circulatory compromise activate the local emergency response. All treatment and access-management decisions require qualified clinician/pharmacy oversight.",
+          "text": "Stop administration at the affected site immediately for suspected extravasation or calcinosis and seek urgent clinical assessment. Escalate new bradycardia, hypotension, arrhythmia, unexpectedly high calcium or ceftriaxone exposure in a neonate. Escalate an unsafe shared-line plan before use; activate the local emergency response for severe instability.",
           "support": "partial",
           "sources": [
             "L-CALCIUM"
@@ -289,7 +335,7 @@
     },
     {
       "kind": "observe",
-      "text": "Monitor the ECG, especially with cardiac glycosides.",
+      "text": "Clarify cardiac glycoside exposure with the clinician before use; the registered label advises avoidance unless concurrent therapy is necessary. Closely monitor ECG when authorised.",
       "critical": true,
       "support": "sourced",
       "sources": [
@@ -308,6 +354,15 @@
     {
       "kind": "escalate",
       "text": "Report extravasation, arrhythmia or an unreviewed interacting medicine at once.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CALCIUM"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check the IV site for swelling, redness, induration or nodules; stop administration at an affected site immediately if extravasation or calcinosis is suspected, and summon help under the unit protocol.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -356,20 +411,37 @@
       "sources": [
         "L-CALCIUM"
       ]
+    },
+    {
+      "kind": "assess",
+      "text": "Verify the prescribed calcium salt and supplied formulation under local medication policy; refer any proposed substitution to pharmacy.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent calcium channel blockers and report unexpected changes in blood pressure or rhythm.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CALCIUM"
+      ]
     }
   ],
   "gaps": [
     "Exact serum-calcium targets, sampling intervals, infusion timing, drug amounts and treatment protocols deliberately excluded.",
     "Venous access procedures, ceftriaxone sequence management, product mixing and phosphate/bicarbonate compatibility remain under local pharmacy policy; no operational instructions supplied.",
     "The label concerns a WG Critical Care ready-to-use calcium gluconate in sodium chloride product; calcium chloride and other calcium gluconate products were not read.",
-    "Therapeutic calcium in hyperkalemia or other emergencies is outside this label's indicated hypocalcemia scope and requires independent source review.",
+    "UKKA July 2026 hospital calcium recommendations now linked for emergency context, distinct from the product's hypocalcaemia label. Full appraisal, salt selection and local emergency protocols remain outstanding.",
     "Full neonatal, renal replacement therapy and international hospital guidelines, and EMA/MHRA/SFDA labels, were not reviewed.",
     "Independent nurse educator, physician and clinical pharmacist safety review required prior to publication.",
     "Emergency hyperkalaemia calcium selection and sequence are governed by the UKKA topic and approved local treatment order, not by this calcium-gluconate product label's hypocalcaemia indication; independent review of cross-topic consistency remains necessary."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-    "FDA infusion pump page: verify reuse terms."
+    "FDA infusion pump page: verify reuse terms.",
+    "Additional guideline and journal sources are cited for independent original paraphrase only; commercial reproduction rights not assessed."
   ],
   "label_currency_check": {
     "checked": "2026-11-16",

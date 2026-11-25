@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ISMP List of High-Alert Medications in Acute Care Settings (2024 list; one-page PDF dated 2024-01-09) – US organisation; a risk classification, not a practice guideline", "FDA Infusion Pump Risk Reduction Strategies for Clinicians (page content current as of 2018-02-02) – US regulator; strategies are stated not to apply to all pumps, settings or populations"]
-sources: [S-ISMP-HA, S-FDA-PUMP]
-sources_not_read: [S-OPENRN-PHARM]
-independently_written_note: "Original wording. The ISMP list PDF and the FDA clinician page were each read in full; the ISMP list is NOT reproduced (ISMP permits only internal non-commercial reproduction with attribution; other use needs written permission), so only the concept and a few example categories are named. ISMP strategy documents, drug-specific safety guidance, pump-manufacturer manuals and any national regulator or non-US guidance were NOT read. No doses, concentrations or infusion rates are given. Local policy decides which drugs are treated as high-alert, who may double-check, and how pumps are programmed."
+sources: [S-ISMP-HA, S-FDA-PUMP, S-ISMP-BEST-PRACTICES-2026, S-DOUBLE-CHECK-REVIEW-2026, S-OPENRN-PHARM]
+sources_not_read: []
+independently_written_note: "Original wording. The ISMP list PDF and the FDA clinician page were each read in full; the ISMP list is NOT reproduced (ISMP permits only internal non-commercial reproduction with attribution; other use needs written permission), so only the concept and a few example categories are named. Selected 2026–2027 ISMP hospital best practices and a 2026 review abstract were checked; other strategy documents, drug-specific guidance, pump-manufacturer manuals and non-US regulator guidance were NOT read. No doses, concentrations or infusion rates are given. Local policy decides which drugs are treated as high-alert, who may double-check, and how pumps are programmed."
 ---
 # High-alert medications and infusion pump safety
 > DRAFT – NOT clinically reviewed. AI-generated. This draft explains the safety concept and the checks both sources describe; it contains no drug doses, concentrations or rates, and it is not a substitute for your unit's high-alert policy.
@@ -49,6 +49,19 @@ Before and during any high-risk infusion:
 - **Report:** follow the facility's protocol for events where a pump may have caused or contributed to a death or serious injury, and report other concerns through the facility's system. The FDA encourages voluntary reports of pump problems.
 - **Report medication errors and near misses** through your organisation's system; ISMP points readers to its national error-reporting programme.
 
+## 7b. Human factors and medication safeguards (2026–2027 update)
+
+- Use the approved smart-pump drug library and dose-error-reduction system for eligible infusions. Compare the prescription with the actual product, channel and units even when data transfer is automated. If the device, library or order does not match, obtain pharmacy or clinical clarification; do not bypass an alert to force a match.
+- For IV push medicines, prefer an approved ready-to-administer preparation where available. Never use a prefilled saline flush syringe as a medication dilution container. Confirm product-specific preparation, route and administration duration with pharmacy or the approved reference; stay with the patient during manual administration. Where the prescribed delivery method is impractical, obtain an authorized alternative rather than improvising.
+- Where barcode administration is available, verify the actual patient and actual medication using the approved workflow. Do not scan a saved wrapper or spare wristband as a substitute. If scanning fails, use the documented downtime/escalation procedure; technology problems do not authorize bypassing patient identification.
+- Interruptions and competing demands can compromise independent verification. When interrupted, establish which steps remain unverified and restart the relevant checks before proceeding. Ask for qualified assistance when a required second checker is unavailable; do not record a check that did not occur. Urgent treatment follows the authorized emergency pathway. A 2026 systematic review identified workload, interruption and access to a second checker as barriers; evidence evaluating improvement interventions remains inconsistent.
+
+These are selected safety principles, not a complete infusion or IV push protocol. ISMP guidance is directed to hospital systems; implementation and exceptions require local pharmacy, device and clinical governance.
+
+**Discrepancies in a high-alert infusion (FDA).** At shift change or after a prescription change, reconcile the actual drug and concentration, prescribed dose and units, programmed delivery, line identity and patient response. A pump rate can appear plausible yet deliver an incorrect dose if the concentration is wrong. Where verification is required, check independently against the current order. If a discrepancy is discovered, assess the patient promptly, establish the possible exposure and obtain clinical/pharmacy clarification; do not silently correct the pump or improvise a catch-up dose. Protect essential continuous support under the authorized contingency plan and escalate instability immediately.
+
+**Evaluate the response as part of medication administration (Open RN, chapter 2).** Before a new administration, assess whether the order fits the current clinical condition and resolve concerns with the prescriber. Afterwards, observe intended benefit and possible harm and hand over pending assessments. If a discrepancy involves an essential ongoing infusion, obtain urgent clinical guidance rather than abruptly stopping support without an authorized contingency plan. This is a general nursing framework, not a drug-specific protocol.
+
 ## 8. Monitoring parameters
 Pump settings against the order at the four verification moments above; alerts and alarms; the patient's haemodynamics, rhythm, oxygen saturation, end-tidal CO₂ and blood glucose where relevant to the drug; infusion site; volume infused against expected; the interval for rechecks set by unit policy.
 
@@ -76,7 +89,7 @@ An unexplained pump alarm; a pump that does not behave as expected or has visibl
 | Maintain the drug library, repair pumps, advise on device failures | Pharmacist, biomedical engineering and the organisation |
 
 ## 12. Escalation criteria
-Escalate when the pump setting does not match the order and the discrepancy cannot be resolved at the bedside, when the order itself looks unsafe, when a pump fails or alarms without explanation while a high-risk infusion is running, or when the patient's condition suggests a wrong dose or rate. For a failing pump with a high-risk infusion, the FDA page describes staying with and closely monitoring the patient while a colleague obtains a working pump.
+Urgently escalate a suspected programming or medication error, unsafe order, unexplained pump alarm, pump failure or unexpected patient response. Activate emergency help if the patient is unstable; assess the patient and obtain qualified assistance before routine troubleshooting. For a failing pump delivering a high-risk medicine, remain with and closely monitor the patient while a colleague obtains a working pump and the team establishes safe continuity or cessation as clinically appropriate. Follow the facility's independent double-check and replacement pathway. Do not bypass safety alerts, force-flush an occluded medication line or make an unauthorised change to compensate for interrupted delivery. Preserve relevant device and medication information for incident investigation.
 SBAR — **S:** bed X, the pump on the vasoactive infusion has alarmed twice without a clear cause. **B:** infusion running as ordered at the last check; patient's blood pressure currently at target. **A:** possible pump fault; high-risk infusion. **R:** I am staying with the patient; please bring a replacement pump and tubing and inform the pharmacist and the nurse in charge.
 
 ## 13. Potential complications
@@ -89,19 +102,19 @@ Drug, concentration and rate as ordered and as programmed; time of each verifica
 A new bag of a high-risk infusion is hung at 02:00. The nurse reads the order, checks the label on the bag and on the tubing at the port of entry, programmes the pump from the drug library, and asks a second nurse to check the pump separately against the order before starting. After starting, she watches the patient's monitored values and records the check.
 
 ## 16. Clinical case (fictional)
-At change of shift, the oncoming nurse sees that the rate on a pump differs from the chart. Instead of correcting it silently, she checks the order, confirms with the outgoing nurse, finds that the order was changed an hour earlier but the pump was not updated, corrects the pump with a second check, reports the near miss, and reassesses the patient.
+At change of shift, the oncoming nurse sees that the rate on a pump differs from the chart. Instead of correcting it silently, she checks the order, confirms with the outgoing nurse, finds that the order was changed an hour earlier but the pump was not updated, assesses the patient and reports the possible medication exposure promptly, verifies the current order and authorized correction with the team and a second checker as required, then documents the event and reassesses the response. The team evaluates whether actual harm or under-treatment occurred rather than assuming this was only a near miss.
 
 ## 17. MCQs
-**Q1 (understanding).** What does the term "high-alert medication" mean in the ISMP list?
-A. A drug that is involved in more medication errors than any other drug used in the unit.
-B. A drug that may only be given when a doctor is physically present at the patient's bedside throughout the dose.
-C. A drug with a heightened risk of significant harm when used in error, whatever the frequency of errors.
-D. A drug that requires a pump with a built-in drug library for every single administration.
+**Q1 (application).** A unit is reviewing two near misses: a low-risk medicine was frequently given late, while a rare programming error almost delivered a dangerous insulin dose. Which principle should guide high-alert classification?
+A. Classify medicines primarily by the frequency of reported errors.
+B. Use the number of staff involved in preparation to define the category.
+C. Consider the potential severity of harm if the medicine is used in error.
+D. Prioritize medicines based on whether they require electronic programming.
 **Answer: C.**
-**Why correct:** ISMP defines high-alert drugs by the severity of harm when an error occurs and says errors may or may not be more common.
-**Why not A:** ISMP says mistakes may or may not be more common with these drugs.
-**Why not B:** The list is about safeguards, not a rule about doctors being present.
-**Why not D:** A drug library is one possible safeguard, not part of the definition.
+**Why correct:** ISMP defines high-alert medicines by the potential severity of harm if an error occurs, not the frequency of errors. Both incidents deserve review, but the insulin near miss illustrates why system safeguards are important even when errors are uncommon.
+**Why not A:** Frequency helps prioritize system improvements but is not the definition of a high-alert medicine.
+**Why not B:** Preparation complexity may introduce risk, but the number of staff does not define potential harm.
+**Why not D:** Pump programming is a separate risk mechanism; high-alert medicines can be administered in several ways.
 
 **Q2 (application).** A new bag of a high-risk infusion is hung on a pump that is already running. According to the FDA page, what should the nurse do?
 A. Verify that the pump is programmed for the right dosage, rate and volume, because a new bag is one of the moments the page names.
@@ -109,21 +122,21 @@ B. Check only the label on the bag, because the programming was verified at the 
 C. Leave the settings as they are and recheck them at the next change of shift, to avoid interrupting the infusion that is running.
 D. Ask the patient whether the new bag looks like the earlier one, and continue if the patient agrees.
 **Answer: A.**
-**Why correct:** The FDA highlights a new bag, pump-setting change, new primed tubing, and change of shift as points to verify drug, prescribed dosage, rate, and volume. The device instructions and local pump/drug-library policy govern how those checks are performed.
+**Why correct:** FDA identifies new containers, new tubing, setting changes and handover as important verification points. Compare the medication, concentration, patient, route, dose units, rate and intended volume with the current order; trace tubing to its actual connection and confirm the correct channel and drug-library entry when applicable. Apply independent checks as required by local policy.
 **Why not B:** A bag label does not confirm what is programmed on the pump.
 **Why not C:** Waiting until the next shift leaves the new infusion unchecked.
 **Why not D:** Patient recognition is not a verification method and is not valid for sedated patients.
 
-**Q3 (judgment).** Two nurses are doing an independent double check of a vasoactive infusion. Which method matches the FDA page's description?
-A. The first nurse reads out the settings and the second nurse says whether they agree.
-B. Both nurses stand together at the pump and read the settings aloud in turn.
-C. The second nurse signs the chart after the first nurse tells her that the settings are right.
-D. Each nurse checks the settings alone against the order, and then they compare results.
+**Q3 (judgment).** Two nurses independently calculate the pump rate for a vasoactive infusion with a new concentration under an updated order. Their results differ. What is the safest approach?
+A. Use the first calculation if the nurse who prepared the infusion has more experience, then document the second result.
+B. Enter the rate calculated by the first nurse and ask the second nurse to verify that same number on the pump display.
+C. Choose the rate accepted by the drug library and complete the second check after the change.
+D. Independently recheck the order, concentration and units; reconcile both calculations before changing settings.
 **Answer: D.**
-**Why correct:** The FDA describes independently checking (alone and apart, then comparing against the order) for high-risk infusions *when required by facility policy*. ISMP warns manual double-checks are not always the optimal safeguard for every high-alert medication. This question tests the **method**, not a universal requirement to double-check every infusion.
-**Why not A:** The second nurse would be influenced by what the first one reads out.
-**Why not B:** Checking together is not independent.
-**Why not C:** Signing on someone's word is not a check at all.
+**Why correct:** FDA describes independent checks against the order according to facility policy. Resolve discrepancies before implementing the new settings; obtain urgent help to maintain essential treatment safely while the discrepancy is clarified. Drug-library acceptance does not establish that the selected concentration or rate matches the order.
+**Why not A:** Experience does not resolve a mathematical discrepancy; both results must be reconciled.
+**Why not B:** Rechecking a number supplied by another clinician is vulnerable to confirmation bias and is not independent.
+**Why not C:** A library may accept a value within its limits even when it does not match the patient's order.
 
 **Q4 (safety).** A pump alarms for no apparent reason during a high-risk infusion and then seems to behave normally. What is the safest action?
 A. Silence it, document that the alarm cleared, and keep using the pump as it appears normal again.
@@ -131,21 +144,21 @@ B. Stay with the patient, get a working pump, and remove the pump from use and t
 C. Continue the infusion and report the alarm at the end of the shift so that the pump can be checked.
 D. Switch the pump off and on again until the alarm no longer appears, then carry on with the infusion.
 **Answer: B.**
-**Why correct:** The FDA page says to remove a pump with an unexplained alarm from use, tag it with the problem and contact information, and to stay with a high-risk patient while a working pump is obtained.
+**Why correct:** An unexplained alarm warrants withdrawal of the suspect pump and reporting. Assess the patient and obtain a verified replacement without avoidable interruption to critical therapy under the backup plan; summon urgent help if instability develops. Identify and isolate the faulty device with the details required by local biomedical and incident-reporting policy.
 **Why not A:** An unexplained alarm is a reason to remove the pump, whatever it does next.
 **Why not C:** Delaying the report leaves a possibly faulty pump on a high-risk infusion.
 **Why not D:** Repeated restarts hide the fault and may repeat the error.
 
-**Q5 (understanding).** Why does ISMP caution against relying on manual independent double checks for every high-alert medication?
-A. Double checks have been proven to cause more medication errors than they prevent in intensive care units.
-B. The list only applies to oral medications, which are never suitable for a second person to check.
-C. Pump libraries make all checks by a second clinician legally unnecessary in every hospital and country.
-D. They are not always the optimal strategy and may not be practical for all drugs on the list.
+**Q5 (judgment).** A nurse is preparing a scheduled IV medication when barcode verification fails. The patient is stable, and the prescribed dose can wait briefly while the issue is clarified. A colleague offers a previously scanned wrapper from the same stock. What should the nurse do?
+A. Use the old wrapper and compare the product names before administration.
+B. Ask a colleague to confirm the order, then record that scanning succeeded.
+C. Administer after a visual label check and investigate the scanner after the round.
+D. Use the approved downtime procedure and verify the actual patient and product.
 **Answer: D.**
-**Why correct:** The ISMP list introduction says independent double checks are not always the best safeguard and may be impractical for every high-alert medicine, so organisations should consider other safeguards, such as standardisation and limiting access, chosen by local policy.
-**Why not A:** ISMP does not say that double checks cause errors.
-**Why not B:** The list includes intravenous and other routes.
-**Why not C:** Neither source says that checks become unnecessary; policy decides.
+**Why correct:** A barcode failure requires the documented downtime or escalation pathway, not a false scan. Verify the actual patient, medication and order using the authorized alternate process and document what occurred. ISMP 2026–2027 emphasizes barcode workflows and avoiding workarounds. Seek urgent clinical assistance if a delay becomes unsafe.
+**Why not A:** A saved wrapper may not identify the actual product in hand, undermining the safety check.
+**Why not B:** An independent check may be part of the downtime process, but recording a scan that did not occur creates a false record.
+**Why not C:** A visual check is not necessarily the authorized alternative; resolve the discrepancy under local policy before proceeding.
 
 **Q6 (scope).** Which decision belongs to the prescriber, with pharmacist review, rather than to the bedside nurse?
 A. Choosing the drug, concentration and dose range for a new vasoactive infusion.
@@ -161,6 +174,11 @@ D. Removing a damaged pump from use and recording the problem.
 ## 18. References
 - ISMP. ISMP List of High-Alert Medications in Acute Care Settings. 2024 (PDF dated 2024-01-09; MS5760). https://www.ismp.org/system/files/resources/2024-01/ISMP_HighAlert_AcuteCare_List_010924_MS5760.pdf (accessed 2026-11-14). © ISMP 2024; internal non-commercial reproduction only.
 - US Food and Drug Administration. Infusion Pump Risk Reduction Strategies for Clinicians. Content current as of 2018-02-02. https://www.fda.gov/medical-devices/infusion-pumps/infusion-pump-risk-reduction-strategies-clinicians (accessed 2026-11-14)
+
+- ISMP. Targeted Medication Safety Best Practices for Hospitals 2026–2027. https://online.ecri.org/hubfs/ISMP/Resources/ISMP_TargetedMedicationSafetyBestPractices_Hospitals.pdf (selected practices 8, 23, 24 and 25, pages 8, 22, 23 and 25 checked visually 2026-11-24; not reproduced; commercial rights not cleared).
+- Nurses' Adherence to Double-Checking: A Systematic Review of Influencing Factors, Improvement Strategies, and Their Effectiveness (2026). https://pubmed.ncbi.nlm.nih.gov/41987356/ (abstract checked 2026-11-24; full appraisal outstanding).
+
+- S-OPENRN-PHARM. https://www.ncbi.nlm.nih.gov/sites/books/NBK597872/ (selected passages checked 2026-11-24; full appraisal and applicable rights review outstanding).
 
 ## 19. Local protocol note
 Which drugs are treated as high-alert, who may perform double checks, which pump and drug library are used, concentration standards, alarm limits, and the incident-reporting route are set by your organisation, pharmacy and biomedical engineering.

@@ -1,106 +1,166 @@
 {
- "equipment_id": "EQ-04",
- "number": 4,
- "title": "Infusion pumps",
- "category": "infusion-pumps",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
- "device_neutral": true,
- "manufacturer_documents": [],
- "related_skill": "SK-22",
- "evidence_status": "partial",
- "diagram": {
-  "kind": "flow",
-  "original_graphic": true,
-  "parts": [
-   "Container",
-   "Pump",
-   "Occlusion sensor",
-   "Patient connection"
+  "equipment_id": "EQ-04",
+  "number": 4,
+  "title": "Infusion pumps",
+  "category": "infusion-pumps",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Device-neutral educational specification; never imported, published or shown to learners.",
+  "device_neutral": true,
+  "manufacturer_documents": [],
+  "related_skill": "SK-22",
+  "evidence_status": "partial",
+  "diagram": {
+    "kind": "flow",
+    "original_graphic": true,
+    "parts": [
+      "Container",
+      "Pump",
+      "Occlusion sensor",
+      "Patient connection"
+    ],
+    "alt_text_needed": true
+  },
+  "parameters": [
+    {
+      "name": "Programmed rate",
+      "explanation": "The programmed rate represents the intended delivery setting; it must match the authorised order. It is not independent proof that the patient is receiving the intended treatment.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "name": "Volume infused",
+      "explanation": "The pump's displayed infused volume is a device estimate. Check it against the prescribed plan, bag or syringe and documented balance, and assess the patient for unexpected delivery.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ]
+    },
+    {
+      "name": "Occlusion and air alarms",
+      "explanation": "Some infusion pumps detect flow obstruction or air in tubing. An alert is not a definitive diagnosis, and absence of an alert does not ensure safe delivery. Assess the patient and seek trained assistance using the model-specific procedure; do not force-flush or override protective alarms.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP-OVERVIEW",
+        "S-FDA-PUMP"
+      ]
+    }
   ],
-  "alt_text_needed": true
- },
- "parameters": [
-  {
-   "name": "Programmed rate",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Volume infused",
-   "explanation": null,
-   "support": "needs_source"
-  },
-  {
-   "name": "Occlusion and air alarms",
-   "explanation": null,
-   "support": "needs_source"
-  }
- ],
- "safety_concepts": [
-  {
-   "text": "Verify programming (dosage, rate, volume) at change of shift, when any change is made to the settings, when a new bag is hung and when new tubing is primed (FDA).",
-   "support": "sourced",
-   "sources": [
-    "S-FDA-PUMP"
-   ],
-   "section": "safety"
-  },
-  {
-   "text": "Label pump channels and tubing at the port of entry with the drug or fluid name if the pump does not display it (FDA).",
-   "support": "sourced",
-   "sources": [
-    "S-FDA-PUMP"
-   ],
-   "section": "safety"
-  },
-  {
-   "text": "Use the drug library where one exists and respond carefully to alerts rather than silencing them (FDA).",
-   "support": "sourced",
-   "sources": [
-    "S-FDA-PUMP"
-   ],
-   "section": "safety"
-  }
- ],
- "monitoring_concepts": [],
- "escalation_concepts": [
-  {
-   "text": "Stop and report pump alerts you cannot resolve, programming discrepancies against the order and any suspected over- or under-infusion.",
-   "support": "partial",
-   "sources": [
-    "S-FDA-PUMP",
-    "S-ISMP-HA"
-   ],
-   "section": "escalation"
-  }
- ],
- "sources": [
-  {
-   "id": "S-ISMP-HA",
-   "read": "full",
-   "use": "ISMP high-alert medication list (2024): reproduction needs permission"
-  },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump risk-reduction page"
-  }
- ],
- "required_sources": [
-  "Source explaining each listed monitored parameter in device-neutral terms",
-  "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
-  "Unit policy for this equipment"
- ],
- "gaps": [
-  "Parameter explanations are written only where a source read says something about the parameter; the rest stay unexplained (needs_source).",
-  "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
-  "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
- ]
+  "safety_concepts": [
+    {
+      "text": "Verify programming (dosage, rate, volume) at change of shift, when any change is made to the settings, when a new bag is hung and when new tubing is primed (FDA).",
+      "support": "sourced",
+      "sources": [
+        "S-FDA-PUMP"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Label pump channels and tubing at the port of entry with the drug or fluid name if the pump does not display it (FDA).",
+      "support": "sourced",
+      "sources": [
+        "S-FDA-PUMP"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Use the drug library where one exists and respond carefully to alerts rather than silencing them (FDA).",
+      "support": "sourced",
+      "sources": [
+        "S-FDA-PUMP"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Use independent double-checks for high-risk medicines where facility policy requires them, and use appropriate clinical monitoring to identify unexpected drug delivery.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ],
+      "section": "safety"
+    },
+    {
+      "text": "Before connecting or replacing tubing, follow its physical pathway from the patient back to its source and verify the intended access, compatible connector and medication or fluid. Repeat connection checks before use and during handover; a correctly programmed pump cannot detect every wrong-route connection.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-MISCONNECTIONS",
+        "S-FDA-PUMP"
+      ],
+      "section": "safety"
+    }
+  ],
+  "monitoring_concepts": [
+    {
+      "text": "Before transport, verify the available power reserve and contingency plan with the trained transport team. Assess the patient and expected delivery independently of the pump display, especially for high-risk infusions; an alarm may be absent despite a delivery problem.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP",
+        "S-FDA-PUMP-FAILURE-EXAMPLES"
+      ],
+      "section": "monitoring"
+    }
+  ],
+  "escalation_concepts": [
+    {
+      "text": "Assess the patient and urgently escalate unexplained alarms, a programming discrepancy or suspected over- or under-infusion. For an essential high-risk infusion, stay with and closely monitor the patient while trained help obtains safe alternative equipment; avoid unplanned treatment interruption or an unintended bolus.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP",
+        "S-ISMP-HA"
+      ],
+      "section": "escalation"
+    },
+    {
+      "text": "Once essential treatment has been safely transferred under the unit procedure, remove a suspected faulty pump from service, identify the fault for biomedical engineering and report the event under local policy. Do not return malfunctioning equipment to routine use without the facility's required assessment.",
+      "support": "partial",
+      "sources": [
+        "S-FDA-PUMP"
+      ],
+      "section": "escalation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-ISMP-HA",
+      "read": "full",
+      "use": "ISMP high-alert medication list (2024): reproduction needs permission"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump risk-reduction page"
+    },
+    {
+      "id": "S-FDA-PUMP-OVERVIEW",
+      "read": "partial",
+      "use": "FDA public HTML, pump alarm functions and failure risks."
+    },
+    {
+      "id": "S-FDA-PUMP-FAILURE-EXAMPLES",
+      "read": "partial",
+      "use": "FDA reported failure examples: alarm detection failures, damaged components and battery depletion during care or transport; examples are not event-frequency estimates."
+    },
+    {
+      "id": "S-FDA-MISCONNECTIONS",
+      "read": "partial",
+      "use": "FDA clinician guidance on checking the intended tubing pathway and connectors before connection or replacement; selected HTML recommendations checked."
+    }
+  ],
+  "required_sources": [
+    "Independent appraisal of the existing parameter explanations, including their source support and applicability to the installed device; do not assume every display has the same meaning.",
+    "The operator's manual for the specific model and software version the unit uses (identify it by name and version; do not reproduce its screens or alarm tables)",
+    "Unit policy for this equipment"
+  ],
+  "gaps": [
+    "All listed parameters have preliminary cited explanations; the individual claims, evidence strength and model applicability still require independent appraisal.",
+    "Safety, monitoring and escalation statements are reused from the matching skill draft and carry that draft's evidence support, not clinical review.",
+    "Any manufacturer-specific behaviour is excluded until a named model and software version, and permission to use its documentation, are available."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register. No proprietary screens, alarm tables or manuals are reproduced."
+  ]
 }

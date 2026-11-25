@@ -59,8 +59,9 @@ describe("P1 batch 4 high-risk clinical scenario / medication consistency", () =
     const b = crrt.steps[1].options.find((o: {points: number}) => o.points === 2);
     expect(a.text).toMatch(/trained CRRT operator/);
     expect(a.text).toMatch(/do not reflexively clear alarms/);
-    expect(b.text).toMatch(/Do not attempt an unsupervised blood return/);
-    expect(b.feedback).toMatch(/under local procedures/);
+    expect(b.text).toMatch(/Do not attempt blood return unless the trained operator confirms it is safe/);
+    expect(b.text).toMatch(/local procedure/);
+    expect(b.feedback).toMatch(/clotting or another circuit safety hazard/);
     expect(validateScenarioDraft(crrt, loadScenarioKnownSources())).toEqual([]);
   });
 

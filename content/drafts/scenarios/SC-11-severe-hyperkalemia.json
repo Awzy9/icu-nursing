@@ -35,7 +35,7 @@
     {
       "id": "S-UKKA-HK-2026",
       "read": "partial",
-      "use": "UKKA adult hyperkalaemia July 2026: detailed hospital Guideline 14.1 (urgent 12-lead ECG at K >=6.0) and Guideline 14.2 (separate continuous monitoring indications) compared with conflicting summary 14.1 (K >=6.5) on 2026-11-23; selected monitoring sections only, not drug tables. RED citation-only."
+      "use": "UKKA adult hyperkalaemia July 2026: detailed hospital Guideline 14.1 (urgent 12-lead ECG at K >=6.0) and Guideline 14.2 (separate continuous monitoring indications) compared with conflicting summary 14.1 (K >=6.5) on 2026-11-23; selected monitoring sections only, not drug tables. RED citation-only. Hospital recommendations 19.6 and 21.1, 21.3–21.4 rechecked 2026-11-24; dialysis-specific section 18 checked. Threshold discrepancy and local protocol remain unresolved."
     },
     {
       "id": "L-INSULIN",
@@ -60,7 +60,7 @@
     "UK adult guideline with a review date of October 2026; critical-care alternatives (for example dialysis or bicarbonate) are medical decisions and not written.",
     "The potassium and ECG thresholds are not used in the scenario's observations as bands.",
     "AI source comparison 2026-11-16: UKKA 2026 detailed Guideline 14.1 (urgent 12-lead ECG at ≥6.0) and 14.2 (continuous monitoring at ≥6.5 or ECG changes) were checked. Delaying escalation to repeat a potassium of 6.8 with ECG changes was corrected from partial credit to zero. Full simulation branch and local protocol remain unreviewed by a credentialed clinician.",
-    "July 2026 UKKA website retains conflicting 12-lead ECG thresholds in detailed 14.1 (>=6.0 mmol/L) versus hospital summary 14.1 (>=6.5 mmol/L) as checked 2026-11-23. Guideline 14.2 is a separate continuous-monitoring decision. Clinician validation and/or author clarification remain necessary.",
+    "July 2026 UKKA website retains conflicting 12-lead ECG thresholds in detailed 14.1 (>=6.0 mmol/L) versus hospital summary 14.1 (>=6.5 mmol/L) as checked 2026-11-23. Guideline 14.2 is a separate continuous-monitoring decision. Clinician validation and/or author clarification remain necessary. Rechecked both live UKKA pages on 24 November 2026: discrepancy remains.",
     "The high-alert drug cross-reference previously incorrectly included MD-19 potassium chloride and MD-14 heparin. Replaced with MD-15 insulin and MD-20 calcium gluconate; this is not a prescription and does not imply a hypocalcaemia product label independently authorises emergency hyperkalaemia treatment."
   ],
   "permissions": [
@@ -72,8 +72,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "The laboratory reports a markedly raised potassium on a patient with acute kidney injury. The patient is quiet and the monitor shows tall, narrow T waves.",
-      "prompt": "What do you do first?",
+      "info": "An adult with acute kidney injury has a newly reported fictional potassium of 6.8 mmol/L. The patient is quiet, but the bedside monitor shows tall, narrow T waves. Sampling artefact has not been excluded and a diagnostic ECG is not yet available.",
+      "prompt": "What should the nurse do while the result and concerning rhythm findings are evaluated?",
       "observations": [
         {
           "key": "potassium",
@@ -90,16 +90,26 @@
           "key": "score",
           "label": "Early warning score",
           "value": "Raised"
+        },
+        {
+          "key": "sample",
+          "label": "Sampling reliability",
+          "value": "Confirm in parallel without delaying escalation"
+        },
+        {
+          "key": "ecg12",
+          "label": "12-lead ECG",
+          "value": "Urgently required"
         }
       ],
       "options": [
         {
-          "text": "Immediately assess the patient and rhythm, activate urgent medical/critical-care help, arrange the urgent 12-lead ECG, and maintain continuous cardiac monitoring under the unit's emergency pathway. Ask a colleague to check sampling artefact in parallel, never before escalation.",
+          "text": "Assess patient and rhythm; activate urgent medical/critical-care help, obtain urgent 12-lead ECG and continuous cardiac monitoring. Check artefact in parallel, never before escalation.",
           "points": 2,
           "next": 2,
           "scope": "escalation",
-          "feedback": "The UKKA July 2026 **detailed** Guideline 14.1 advises urgent 12-lead ECG for hospital potassium at or above 6.0 mmol/L; its hospital **summary** instead prints 6.5 for that same 12-lead decision, an unresolved document discrepancy. **Separate** Guideline 14.2 recommends continuous rhythm monitoring at or above 6.5, with concerning ECG signs, or for an unwell patient at 6.0–6.4 or likely rapid rise. This fictional patient has 6.8 with ECG changes; escalation and both ECG actions must not be delayed for repeat sampling.",
-          "consequence": "Urgent help is called and the patient is assessed and continuously monitored while a 12-lead ECG and confirmatory sampling are arranged in parallel.",
+          "feedback": "The UKKA July 2026 **detailed** Guideline 14.1 advises urgent 12-lead ECG for hospital potassium at or above 6.0 mmol/L; its hospital **summary** instead prints 6.5 for that same 12-lead decision, an unresolved document discrepancy. **Separate** Guideline 14.2 recommends continuous rhythm monitoring at or above 6.5, with concerning ECG signs, or for an unwell patient at 6.0–6.4 or likely rapid rise. This fictional patient has 6.8 with ECG changes; escalation and both ECG actions must not be delayed for repeat sampling. A normal ECG does not exclude severe hyperkalemia. UKKA notes that ECG changes need not progress in a fixed sequence; assess and escalate according to potassium severity, trajectory and clinical condition.",
+          "consequence": "Urgent clinical assessment, continuous monitoring and a diagnostic ECG may identify instability while confirmatory sampling is arranged in parallel.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026",
@@ -107,24 +117,24 @@
           ]
         },
         {
-          "text": "Repeat the sample and tell the doctor only if the second result is also high.",
+          "text": "Arrange a repeat sample and check collection for possible artefact; maintain observations and contact the doctor only after the second potassium result confirms the first.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A potentially spurious value warrants a parallel repeat or point-of-care check, but a very high potassium with potentially concerning rhythm changes demands emergency assessment and ECG monitoring without delay. The detailed UKKA threshold for obtaining a 12-lead ECG differs from its online summary and must not be used as permission to wait.",
-          "consequence": "The patient is not assessed urgently while waiting for the repeat result; dangerous rhythm changes may progress.",
+          "consequence": "Waiting for a second result before escalating could delay treatment of a dangerous electrolyte or rhythm disturbance.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026"
           ]
         },
         {
-          "text": "Record the result and review it at the next round.",
+          "text": "Document potassium and rhythm findings, collect renal results and the medication list, and present these together to the medical team at the next scheduled round.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A markedly raised potassium needs urgent action, not routine review.",
-          "consequence": "The patient's rhythm deteriorates before anyone acts.",
+          "consequence": "Routine documentation without escalation could allow a serious arrhythmia to develop unnoticed.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026"
@@ -134,8 +144,8 @@
     },
     {
       "position": 2,
-      "info": "The doctor orders a stepwise treatment for the heart and for shifting potassium into cells, and asks you to get ready.",
-      "prompt": "What is the nurse's role?",
+      "info": "At the next shared checkpoint, the treating team orders emergency cardiac protection and potassium-shifting treatment. Continuous rhythm monitoring is active and vascular access is available. Calcium product and access suitability, as well as the pre-treatment glucose, must be verified.",
+      "prompt": "Which checks distinguish the two emergency treatments and support safe administration?",
       "observations": [
         {
           "key": "potassium",
@@ -152,16 +162,26 @@
           "key": "access",
           "label": "Venous access",
           "value": "Secure"
+        },
+        {
+          "key": "glucose_check",
+          "label": "Pre-treatment glucose",
+          "value": "Obtain as required by emergency pathway"
+        },
+        {
+          "key": "product",
+          "label": "Emergency medication",
+          "value": "Verify exact calcium product and authorized orders"
         }
       ],
       "options": [
         {
-          "text": "Provide the prescribed emergency therapies using the approved local medication pathway, confirming the exact calcium product and intravenous access with the clinician/pharmacist, continuously monitoring the rhythm and IV site, and checking glucose before ordered insulin-glucose treatment.",
+          "text": "Follow the prescribed emergency pathway: verify calcium product and IV access with clinician/pharmacist, monitor ECG and IV site, and check glucose before insulin-glucose.",
           "points": 2,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "Emergency calcium and insulin-glucose are different high-alert treatments with product- and route-specific safeguards. The UKKA guideline addresses hyperkalaemia, while the registered MD-20 calcium-gluconate product label describes hypocalcaemia; the label alone is not an emergency hyperkalaemia order. The treating team directs drug/salt selection and dose, and trained nurses monitor ECG, line safety and hypoglycaemia risk.",
-          "consequence": "The authorised team-directed treatment proceeds with product, IV access, rhythm and pre-treatment glucose checks documented.",
+          "feedback": "Emergency calcium and insulin-glucose are different high-alert treatments with product- and route-specific safeguards. The UKKA guideline addresses hyperkalaemia, while the registered MD-20 calcium-gluconate product label describes hypocalcaemia; the label alone is not an emergency hyperkalaemia order. The treating team directs drug/salt selection and dose, and trained nurses monitor ECG, line safety and hypoglycaemia risk. Calcium protects the myocardium but does not lower potassium concentration; distinguish temporary intracellular shifting from actual potassium removal and maintain the clinician-directed elimination plan.",
+          "consequence": "Product and access verification with glucose and rhythm surveillance may reduce medication-related harm while authorized treatment proceeds.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026",
@@ -169,24 +189,24 @@
           ]
         },
         {
-          "text": "Choose which treatments to give and work out the amounts yourself to save the doctor's time.",
+          "text": "Independently select the calcium and potassium-shifting medicines and calculate their amounts using the available prescriptions, rather than waiting for the team.",
           "points": 0,
           "next": 3,
           "scope": "prescriber_or_other_discipline",
           "feedback": "Choosing drugs and amounts is a prescriber and protocol decision.",
-          "consequence": "A dosing error occurs and the incident has to be reported.",
+          "consequence": "Independent drug or dose selection could introduce a high-alert medication error.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026"
           ]
         },
         {
-          "text": "Skip the pre-treatment glucose check to start the insulin sooner.",
+          "text": "Prepare the ordered insulin-glucose and calcium under the emergency pathway, prioritising administration before measuring bedside glucose so that the glucose result can be obtained after treatment.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "The guideline links hypoglycaemia risk to the glucose before and after insulin-glucose, so the check is part of safe treatment.",
-          "consequence": "The patient develops a low glucose that could have been anticipated.",
+          "consequence": "Omitting the baseline glucose check could impair recognition of hypoglycaemia risk and safe follow-up.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026",
@@ -197,8 +217,8 @@
     },
     {
       "position": 3,
-      "info": "Treatment has been given and the monitor shows less ECG change.",
-      "prompt": "What monitoring should follow?",
+      "info": "At the final shared checkpoint, the fictional potassium is lower at 5.9 mmol/L, monitor changes are less prominent and the current glucose is 6.1 mmol/L. The patient still has impaired kidney function and temporary potassium shifting may wear off.",
+      "prompt": "Which ongoing surveillance is needed despite the initial ECG and potassium improvement?",
       "observations": [
         {
           "key": "potassium",
@@ -216,16 +236,26 @@
           "label": "Blood glucose (fictional)",
           "value": 6.1,
           "unit": "mmol/L"
+        },
+        {
+          "key": "renal",
+          "label": "Renal function",
+          "value": "Impaired; definitive removal plan under review"
+        },
+        {
+          "key": "plan",
+          "label": "Follow-up",
+          "value": "Continue ordered potassium and glucose surveillance"
         }
       ],
       "options": [
         {
-          "text": "Continue ordered glucose surveillance after insulin-glucose treatment and repeat potassium tests for rebound, reassess rhythm, perfusion and IV-site complications, and escalate recurrent hyperkalaemia or a falling glucose even if the ECG initially improves.",
+          "text": "Continue ordered glucose checks and potassium tests for rebound; reassess rhythm, perfusion and IV-site complications. Escalate recurrent hyperkalaemia or falling glucose.",
           "points": 2,
           "next": null,
           "scope": "monitoring",
-          "feedback": "Transient improvement on the monitor does not ensure that potassium has been removed from the body. UKKA recommends frequent glucose checks after insulin-glucose (including through six hours) and repeat potassium assessment because hypoglycaemia and rebound can follow; the approved unit pathway sets exact frequency and further treatment decisions.",
-          "consequence": "A low glucose is caught early and a rebound is picked up.",
+          "feedback": "Transient improvement on the monitor does not ensure that potassium has been removed from the body. UKKA recommends frequent glucose checks after insulin-glucose (including through six hours) and repeat potassium assessment because hypoglycaemia and rebound can follow; the approved unit pathway sets exact frequency and further treatment decisions. Recheck response to cardiac-protective treatment and continue the clinician-directed elimination plan, particularly with impaired renal function. Recurrent ECG abnormalities or worsening perfusion are reasons to escalate immediately, not wait for the next routine blood sample. For life-threatening hyperkalaemia that persists despite initial therapy, obtain urgent renal or critical-care review for the definitive removal plan; do not wait for the next scheduled sample if the patient deteriorates. For patients receiving maintenance haemodialysis, urgent dialysis assessment and emergency cardiac protection when indicated are parallel priorities. Once stable, communicate suspected contributing medicines and the need for repeat potassium monitoring and a documented follow-up plan; restarting potentially contributory medicines requires clinician assessment.",
+          "consequence": "Serial potassium and glucose assessment may detect rebound or delayed hypoglycaemia and prompt review of definitive potassium removal.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026",
@@ -233,24 +263,24 @@
           ]
         },
         {
-          "text": "Check the glucose once at the end of the shift.",
+          "text": "Record the improved potassium and rhythm, maintain routine observation and reserve the next glucose check for the end of the shift because the current bedside glucose is within range.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
           "feedback": "Hypoglycaemia is most likely within the first hours after insulin-glucose, so checks must be regular.",
-          "consequence": "A low glucose goes unnoticed for hours.",
+          "consequence": "A single late glucose check could miss an earlier hypoglycaemic episode.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026"
           ]
         },
         {
-          "text": "Stop the extra monitoring once the potassium has fallen.",
+          "text": "Document the response and return to routine monitoring once potassium has fallen; reserve further potassium and glucose checks for the next scheduled blood draw if symptoms do not recur.",
           "points": 0,
           "next": null,
           "scope": "independent_nursing",
           "feedback": "The effect can wear off and rebound hyperkalaemia can follow, so monitoring continues.",
-          "consequence": "The potassium rises again and is found late.",
+          "consequence": "Ending additional monitoring could delay recognition of rebound hyperkalaemia or renewed rhythm deterioration.",
           "support": "partial",
           "sources": [
             "S-UKKA-HK-2026"
@@ -264,7 +294,10 @@
       "At a markedly elevated potassium with ECG concerns, summon urgent help and assess the patient immediately; repeat sampling for pseudohyperkalaemia must run in parallel rather than delay care.",
       "UKKA July 2026 detailed hospital Guideline 14.1 advises an urgent 12-lead ECG at potassium >=6.0 mmol/L, but its summary says >=6.5; Guideline 14.2 separately defines who needs continuous monitoring. Treat the discrepancy as a source-verification item, not a reason to postpone ECG.",
       "Emergency potassium treatment, including the exact calcium formulation and insulin-glucose, is authorised by the clinical team and local protocol; monitor cardiac rhythm, IV access and hypoglycaemia risk without independent dosing.",
-      "Early ECG improvement can coexist with recurrent hyperkalaemia or delayed hypoglycaemia; maintain the prescribed post-treatment glucose, potassium and clinical observations."
+      "Early ECG improvement can coexist with recurrent hyperkalaemia or delayed hypoglycaemia; maintain the prescribed post-treatment glucose, potassium and clinical observations.",
+      "Calcium is cardiac protection, not potassium removal; shifting therapies are temporary, and definitive elimination and reassessment remain clinician-directed.",
+      "Severe hyperkalemia can occur without typical ECG findings; normal morphology is not proof of safety.",
+      "Communicate the definitive potassium-removal plan, relevant medicines and follow-up monitoring when handing over a stabilized patient; recurrent instability requires immediate escalation."
     ],
     "links": [
       {

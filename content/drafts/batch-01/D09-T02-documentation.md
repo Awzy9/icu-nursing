@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Fundamentals 2e, section 2.5 Documentation (accessed 2026-11-14; US-oriented)", "Phase 3 addition: Nursing and Midwifery Council (UK). The Code: Professional standards of practice and behaviour for nurses, midwives and nursing associates – section 10 (keep clear and accurate records); current Code PDF read 2026-11-15 – a UK regulator standard that applies to NMC registrants"]
-sources: [S-OPENRN-FUND, S-NMC-CODE]
+sources: [S-OPENRN-FUND, S-NMC-CODE, S-SCCM-EOL-2025, S-ISMP-BEST-PRACTICES-2026, S-WHO-INCIDENT-2020]
 independently_written_note: "Original wording; the section was read for principles only. Open RN text is CC BY 4.0 (attribution and change notice needed if text is adapted); nothing is copied. In Phase 3 the UK NMC Code section 10 was added as a regulator standard; other regulators' documentation standards (for example NCSBN-member boards, SCFHS), the NMC's separate record-keeping guidance, and local ICU charting rules were not read, so legal requirements outside the UK and US remain unverified."
 ---
 # Nursing documentation
@@ -44,6 +44,22 @@ Assessment findings and trends; interventions; the patient's response; orders re
 - Avoid blank lines on paper records so entries cannot be added later.
 - Protect confidentiality: access only records you need to care for the patient; log out; never share credentials.
 
+## 7b. Goals-of-care and comfort documentation
+
+Distinguish an expressed patient preference, a family report, a proposed plan and an authorized treatment order. Record the date, participants, communication needs and interpreter involvement where relevant, the patient's stated values, unresolved questions, who will follow up and when. Record the verified surrogate status using the institutional process; do not assume legal decision-making authority based on relationship alone.
+
+Document the exact scope of active resuscitation or treatment-limitation orders and the responsible authorizing clinician. If orders are unclear, escalate promptly and record the clarification; never infer an instruction to stop unrelated treatment. For an agreed comfort plan, chart symptoms, prescribed interventions, response, further assessment and communication. Preserve dignity, confidentiality and the patient's preferences regarding family updates. These are documentation principles, not a legal determination or a universal form.
+
+## 7c. Incident reporting and learning from near misses
+
+If a medication or equipment error is suspected, first assess and protect the patient, activate urgent clinical help when needed, and clarify the safe treatment plan. Document actual exposure, observed effects, actions, notifications and reassessment in the clinical record. Submit the separate incident report through the approved system, including near misses even if no patient harm is apparent. Preserve relevant packaging, device identifiers and records according to local policy without delaying treatment.
+
+Describe what is known and unknown without speculating about blame. Report contributing circumstances such as confusing labels, interruptions, workload or unavailable equipment. Patient and family disclosure follows the authorized organizational process and applicable law. An incident report does not replace clinical documentation.
+
+WHO's 2020 reporting guidance emphasizes caution when interpreting report-derived data; the 2026–2027 ISMP recommendations likewise warn against treating reporting frequency as proof of safety. A low report count may reflect under-reporting. Teams should use reports to identify hazards, investigate system contributors and provide feedback rather than assume that fewer reports mean fewer errors.
+
+**Distinguish measurements, actions and unresolved risk (NMC Code section 10).** Record when the event occurred separately from when a delayed entry was written. Include the observed finding, who was notified and when, the response received, what was actually done, the reassessment and what remains outstanding. Verify imported or copied-forward observations before relying on them; never mark a pending task or unconfirmed response as completed. If a result is disputed or entered incorrectly, use the authorized audit-preserving correction process. NMC is a UK professional standard; local recordkeeping and privacy rules govern implementation.
+
 ## 8. Monitoring parameters
 Check at each shift: are observations, intake/output, infusions, lines and devices, skin and mobility documented; are pending orders or results noted; is the plan of care current; are late entries clearly labelled.
 
@@ -68,19 +84,19 @@ Gaps in observations during deterioration; copied entries that do not match the 
 | Changing or deleting another person's entries | Not permitted; use the correction process |
 
 ## 12. Escalation criteria
-Escalate to the charge nurse or manager when: documentation is missing for a safety-critical task; you discover an entry in the wrong record; another person asks you to alter documentation inappropriately; you suspect inappropriate access to records.
+Prioritise immediate patient safety and escalation of clinical deterioration before nonessential charting. Document observations, actions, notifications and responses as soon as practicable, identifying late entries accurately. Escalate missing safety-critical documentation, wrong-record entries, inappropriate requests to alter records and suspected unauthorised access. Use the approved correction process, preserving the audit trail; do not erase or conceal the original entry.
 
 ## 13. Potential complications of poor documentation
 Missed or delayed treatment, duplication of care (for example repeated medication), inability to defend care decisions, regulatory action, privacy breaches.
 
 ## 14. Documentation (for this topic: what a good escalation entry contains)
-"14:20 BP 84/50, HR 118, new confusion. Called Dr [name] at 14:22 via SBAR, requested bedside review. Dr arrived 14:30, ordered [order]. Repeat observations 14:45: BP 92/55. Family informed 14:50." (fictional; no clinical names or real data)
+"14:20 BP 84/50, HR 118, new confusion. Emergency response activated immediately; ABC assessment and authorised supportive care initiated. 14:22 team at bedside, SBAR given. [Orders and actions recorded]. Repeat observations recorded during resuscitation. Family update documented when appropriate." (fictional; no clinical names or real data)
 
 ## 15. Practical bedside example
 You are interrupted while giving a prescribed treatment and cannot chart it immediately. Make brief notes if needed, finish the task, then chart with the real time the task was done, noting that the entry is made later if the system requires it. Never copy a colleague's time or chart ahead to "save time".
 
 ## 16. Clinical case (fictional)
-A nurse realises she charted a patient's weight in the wrong record. She tells the charge nurse, uses the correction process to mark the entry as made in error with a note, enters the right weight in the correct record and reports the event through the incident system.
+A nurse realises she charted a patient's weight in the wrong record. She assesses any immediate risk to both patients, alerts the responsible team and charge nurse, verifies patient identity and the measurement, uses the authorised correction process to preserve the audit trail, and documents the verified weight in the correct record. Any treatment consequences, incident reporting and privacy notification follow local policy.
 
 ## 17. MCQs
 **Q1 (safety).** A nurse is interrupted before recording a dose that she has just given. What is the correct action?
@@ -89,43 +105,43 @@ B. Ask the colleague who saw her give the dose to record it for her, so that it 
 C. Record it as soon as possible with the actual time of administration, marked as a late entry if the system requires.
 D. Leave it unrecorded, because the pharmacy record already shows that the dose was dispensed.
 **Answer: C.**
-**Why correct:** Timely, accurate recording by the person who did the task, with the real time.
+**Why correct:** Record promptly using your own authenticated entry, with the actual administration time and the late-entry time or marker required by the local system. NMC Code section 10 distinguishes recording at the time of care from a later entry; do not backdate or imply a dose was given when it was not.
 **Why not A:** Batching entries and backdating them blur the true time and risk repeat doses.
-**Why not B:** Only the person who did the task should document it; others cannot attest to her actions.
+**Why not B:** A colleague may document their own direct observations or an authorized witness role, but must not impersonate the administering nurse or attest to unverified administration.
 **Why not D:** Dispensing is not administration, and the record must show what was given.
 
-**Q2 (judgment).** A nurse is recording an overnight event after a patient complained of chest pain. Which entry is most appropriate in the record?
-A. "Patient was agitated and difficult overnight, and the family were demanding and kept pressing the call bell."
-B. "03:10 grimaced and said 'my chest hurts', pain 7/10, HR 112; doctor called 03:12."
-C. "Patient is probably just anxious; no action needed at this time, so nothing further has been recorded."
-D. "Patient was fine all night according to the other nurse who looked after him, so no observations were repeated."
+**Q2 (judgment).** During shift handover, a nurse discovers a medication was given at a higher rate than prescribed. The patient has already been assessed, the infusion discrepancy addressed with the team, and urgent care provided. Which entry is most appropriate next?
+A. Record the corrected rate and omit the earlier rate to avoid confusing the next shift.
+B. Record the actual exposure, patient findings, actions, notifications and reassessment.
+C. Complete the incident report and refer the next nurse to it instead of charting the event.
+D. Record that the pump was responsible and defer details until the investigation concludes.
 **Answer: B.**
-**Why correct:** The entry is objective and time-stamped, with a quotation, measurements and the action taken, so another clinician can rely on it. The others use subjective labels, opinion or someone else's report presented as the writer's own.
-**Why not A:** It uses subjective labels with no observable detail.
-**Why not C:** It is an opinion without any recorded assessment findings.
-**Why not D:** It reports another person's observation as if it were the writer's own, without attribution.
+**Why correct:** The clinical record should describe verified exposure, objective findings, treatment, communication and response so the receiving team can continue care. Submit a separate incident report under the approved pathway. Distinguish established facts from unknown contributing factors.
+**Why not A:** The previous exposure remains clinically relevant even after the rate is corrected; omitting it may compromise surveillance.
+**Why not C:** An incident report does not replace clinical documentation and may not be available to the receiving team.
+**Why not D:** The cause is not yet established; document observed facts rather than attributing fault before investigation.
 
 **Q3 (application).** A nurse notices she wrote an incorrect value on a paper chart. What should she do?
 A. Cover the value with correction fluid and write the right figure over it so that the page stays neat and readable.
 B. Cross it out repeatedly so that nobody can read the original value.
 C. Replace the whole sheet with a neat rewritten copy and discard the original page so that the chart is easy to read.
-D. Draw one line through it, write "mistaken entry" with her initials, and add the correct entry.
+D. Keep the original legible, identify and authenticate the correction, then enter the correct value.
 **Answer: D.**
-**Why correct:** A single line, the words 'mistaken entry' and the writer's initials keep the original readable and show who corrected it, which supports an honest, auditable record. Obscuring or removing entries suggests concealment.
+**Why correct:** Follow the approved paper-record correction procedure: preserve the original entry, identify the correction and authenticate and date/time it as required. A single line may be used under local policy; the exact notation is not universal. Never obscure or discard the original to conceal an error.
 **Why not A:** Obscuring the original suggests concealment and is not allowed.
 **Why not B:** The original entry must remain readable.
 **Why not C:** Discarding part of the record is inappropriate; entries must be preserved.
 
-**Q4 (prioritization).** At the end of a busy shift the nurse has time to complete only one of these. Which is most important?
-A. Completing the record of a new oxygen requirement and the call to the doctor for a patient who worsened.
-B. Updating the care plan for a stable patient who is waiting for discharge, so that it is up to date for the receiving ward.
-C. Rewriting the handwriting in an earlier entry so that it is neater and easier for colleagues to read.
-D. Completing an education note for a patient who is already well informed and has no outstanding questions.
+**Q4 (prioritization).** At handover a patient has a new oxygen requirement and falling saturation despite the current plan. Several routine documentation tasks remain unfinished. What is the priority?
+A. Reassess, summon appropriate help, then chart the changes and response when safe.
+B. Complete the oxygen chart first so the receiving nurse can interpret the deterioration.
+C. Ask the receiving nurse to finish the assessment after the routine handover is complete.
+D. Record the earlier stable observations while asking the team to review the patient later.
 **Answer: A.**
-**Why correct:** Safety-critical changes and escalation must be recorded promptly for the next team.
-**Why not B:** Valuable, but not time-critical for patient safety.
-**Why not C:** A cosmetic change that adds nothing to safety.
-**Why not D:** Not safety-critical and not urgent.
+**Why correct:** Immediate patient assessment and escalation take priority over nonessential charting. Provide authorized supportive care, communicate responsibility explicitly and record the event and actions as soon as practicable. Routine documentation must not delay an urgent clinical response.
+**Why not B:** An accurate chart is important, but completing it before assessing ongoing deterioration risks a preventable delay.
+**Why not C:** Handover does not transfer an unresolved emergency without immediate action and clear agreement on responsibility.
+**Why not D:** Earlier stability does not establish current safety; escalation must reflect the patient's present condition.
 
 **Q5 (monitoring).** While reviewing a patient's chart at the end of a shift, which finding should prompt follow-up?
 A. A signed and dated correction of a mistaken entry, made with a single line so that the original is still visible.
@@ -133,7 +149,7 @@ B. A progress note that includes the time, measurements and a quotation of what 
 C. Hourly observations with a five-hour gap during a period of falling blood pressure.
 D. A medication record that gives the reason a prescribed dose was withheld and who was told.
 **Answer: C.**
-**Why correct:** A five-hour gap in observations while the blood pressure is falling suggests missed monitoring or recording and needs follow-up. Correcting an error, a detailed note and a recorded reason for a withheld dose are good practice.
+**Why correct:** A five-hour gap during falling blood pressure needs immediate patient reassessment, escalation if deterioration persists, and reconciliation of the record. Distinguish missing documentation from missed care; report the gap under local safety policy and never invent observations.
 **Why not A:** This is appropriate correction practice.
 **Why not B:** This is good documentation practice.
 **Why not D:** Recording the reason for a withheld dose is expected practice.
@@ -151,6 +167,11 @@ D. Advise her to use the correction or late-entry process so the original stays 
 
 ## 18. References
 - Ernstmeyer K, Christman E (eds). Nursing Fundamentals, 2nd ed. Open RN / Chippewa Valley Technical College, section 2.5 Documentation. https://wtcs.pressbooks.pub/nursingfundamentals/chapter/2-5-documentation/ (CC BY 4.0; accessed 2026-11-14)
+
+- Marshall MF et al. SCCM clinical practice guidelines on adult end-of-life care in the ICU (2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/clinical-practice-guidelines-on-adult-end-of-life-care-in-the-icu (selected official recommendations checked 2026-11-24; full appraisal and commercial rights outstanding).
+
+- ISMP. Targeted Medication Safety Best Practices for Hospitals 2026–2027. https://online.ecri.org/hubfs/ISMP/Resources/ISMP_TargetedMedicationSafetyBestPractices_Hospitals.pdf (selected practices 8, 23, 24 and 25, pages 8, 22, 23 and 25 checked visually 2026-11-24; not reproduced; commercial rights not cleared).
+- WHO. Patient safety incident reporting and learning systems: technical report and guidance (2020). https://www.who.int/publications-detail-redirect/9789240010338 (official publication overview checked 2026-11-24; full report not reviewed; commercial rights outstanding).
 
 ## 19. Local protocol note
 Follow local policy on abbreviations, late entries, electronic corrections, verbal orders and record access. Retention periods and legal requirements follow national law.

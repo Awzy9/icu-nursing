@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["AARC Clinical Practice Guideline: Spontaneous Breathing Trials for Liberation From Adult Mechanical Ventilation (Roberts KJ et al; published online 2024-03-05, DOI 10.4187/respcare.11735; open-access copy PMC11285503) – US respiratory care society, GRADE method, four conditional recommendations, adults", "Phase 3 addition: Best Evidence Summary for Peri-Extubation Management Among Difficult-to-Wean Patients in the ICU (J Multidiscip Healthc 2026; PMC13715538; CC BY-NC) – a SECONDARY JBI-graded summary of 23 publications (8 guidelines including ATS/ACCP 2017 and the Korean SCCM 2024 guideline) from a Chinese hospital setting; the underlying guidelines were not read", "SCCM PADIS 2018 official recommendation page (recommendation-level statements; the full guideline was NOT read) – used only for the daily sedation interruption statement"]
-sources: [S-AARC-SBT, S-SCCM-PADIS, S-PERIEXT-2026, S-ATS-NIRS-2026, S-ATS-CHEST-2017]
+sources: [S-AARC-SBT, S-SCCM-PADIS, S-PERIEXT-2026, S-ATS-NIRS-2026, S-ATS-CHEST-2017, S-SAUDI-MV-2026]
 sources_not_read: [S-AARC-SBT-SUPP]
 independently_written_note: "Original wording. The AARC SBT guideline main text (introduction, methods, four PICO questions with recommendations, justification and discussion) was read in the open PMC copy; the online supplement (evidence tables, glossary) and the ATS/CHEST 2017 liberation recommendation summary was subsequently examined for selective cuff-leak testing and the ATS 2026 NIRS PubMed abstract was examined for risk-stratified post-extubation support (both on 2026-11-23). The AARC guideline itself covers SBTs, not an extubation procedure. No cuff-leak technique, ventilator settings, post-extubation rescue threshold, sedation regimen or tracheostomy weaning procedure is taught here. Nursing roles are described only where the guideline names nurses or the coordination of sedation with SBTs; other nursing actions are marked as local policy. No ventilator settings are prescribed beyond what the guideline states as its own recommendation."
 ---
@@ -55,6 +55,10 @@ Evidence limits: AARC 2024 article reviewed for SBT distinctions; ATS/CHEST 2017
 
 - **After the decision to extubate (summary-level sources):** document the planned post-extubation modality selected by the clinical team, agreed escalation pathway and concern for airway protection; watch for new stridor, increased effort and poor secretion clearance, and arrange urgent review if deterioration develops. No fixed surveillance interval or rescue algorithm is taught here.
 
+**Saudi national guideline (2026, Q5–6 and Q10).** Conditional, low-certainty guidance supports daily sedation interruption when appropriate, lighter sedation and protocol-based breathing trials. Screen for exceptions before a sedation pause: selected patients requiring deep sedation for severe ARDS, raised intracranial pressure or uncontrolled seizures may not be eligible. Confirm the current prescribed sedation goal, safety screen and coordinated trial plan; do not interrupt necessary sedation merely to meet a daily checklist. Escalate uncertainty to the ICU team.
+
+**Handover after an interrupted breathing trial (AARC 2024 and ATS 2026).** Document the trial technique, duration, oxygen/support settings, baseline and subsequent clinical observations, reason for interruption, and response after prescribed support was restored. Distinguish a trial that was deferred for safety from a completed trial and one stopped for intolerance. Ask the team to identify reversible barriers and agree when reassessment is appropriate. Do not repeat an intolerable trial on a fixed timetable irrespective of the patient's condition. For a successful trial, record the separate airway-protection assessment and risk-based post-extubation support plan; preventive NIV or HFNC does not remove the need to recognize and escalate new post-extubation failure.
+
 ## 8. Monitoring parameters
 Respiratory rate and pattern; tidal volume and minute ventilation if displayed; SpO₂ (and gas exchange if measured); heart rate, rhythm, blood pressure; sedation and agitation level; patient comfort and distress; secretions and cough; ventilator alarms; time on the trial.
 
@@ -79,7 +83,7 @@ During an SBT: increasing respiratory rate or laboured breathing, falling SpO₂
 | Decide to liberate or extubate; choose strategy, tube removal and post-extubation support; order sedation changes | Prescriber decision (physician or credentialed provider) |
 
 ## 12. Escalation criteria
-Escalate immediately if the patient shows signs of intolerance, distress, desaturation, haemodynamic change or an arrhythmia during the SBT, or if the trial cannot be done as planned.
+Escalate immediately for intolerance, distress, desaturation, haemodynamic change or arrhythmia during the SBT. End an intolerable trial and restore prescribed support under the authorised protocol; provide emergency oxygenation and ventilation as needed. The AARC 2024 conditional suggestion against raising inspired oxygen during the trial is intended to avoid masking intolerance, not to withhold rescue oxygen. Passing an SBT does not alone establish readiness for extubation: the team also evaluates airway protection, secretion clearance and the post-extubation support plan.
 SBAR — **S:** bed X, ventilated patient 15 minutes into a spontaneous breathing trial with a rising respiratory rate and falling SpO₂. **B:** passed the morning screen; sedation interruption completed an hour ago. **A:** possible SBT intolerance. **R:** please come to the bedside now; I am staying with the patient and the respiratory therapist is ready to return to support; I need a decision about ending the trial.
 
 ## 13. Potential complications
@@ -95,24 +99,24 @@ At 07:30 the respiratory therapist screens a patient and finds the patient suita
 A 64-year-old man has been ventilated for four days with pneumonia. He is stable and passes the morning screen. During the SBT his respiratory rate climbs and his SpO₂ falls to 88 %. The nurse stays with him, the respiratory therapist returns him to ventilator support, the nurse reports to the doctor, and the failed SBT with its time and findings is recorded.
 
 ## 17. MCQs
-**Q1 (understanding).** Which statement correctly distinguishes liberation from extubation, as the AARC guideline describes them?
+**Q1 (understanding).** During a multidisciplinary round, an intubated patient completes an SBT successfully but has a weak cough and substantial secretions. Which statement best explains why the team still needs to assess extubation readiness?
 A. They are the same thing, so a patient who passes a spontaneous breathing trial is automatically extubated on the same day without further review.
 B. Liberation is discontinuing invasive ventilation, while extubation is removing the tube; a patient may pass an SBT and still not be extubated.
 C. Extubation is done before liberation, and a tracheostomy is not used as a route to liberation from the ventilator.
 D. Liberation refers to weaning by gradually reducing the pressure support level over several days of ventilation.
 **Answer: B.**
-**Why correct:** The guideline says it is important that liberation and extubation are not conflated, and gives abundant secretions and a weak cough as a reason for not extubating after a passed SBT.
-**Why not A:** Passing an SBT does not necessarily lead to extubation.
+**Why correct:** Passing an SBT demonstrates tolerance of the trial, not all requirements for extubation. The team must additionally assess airway protection, cough, secretion burden and other risks. Liberation from invasive ventilatory support can also occur with a tracheostomy still in place.
+**Why not A:** Tolerance of spontaneous breathing does not establish that the patient can protect the airway or clear secretions after tube removal.
 **Why not C:** Patients may be liberated via tracheostomy.
 **Why not D:** Gradual reduction of support is weaning, a different concept.
 
-**Q2 (application).** A ventilated patient who is already on 0.60 FiO₂ is about to start an SBT. A colleague suggests increasing the FiO₂ for the trial to be safe. What does the AARC guideline suggest?
+**Q2 (application).** A patient has met the unit's SBT readiness criteria on the prescribed FiO₂. A colleague suggests increasing FiO₂ solely for the trial to improve the chance of passing. What does AARC 2024 suggest?
 A. Increase the FiO₂ by a fixed step for each trial, because this improves the chance of success.
 B. Increase the FiO₂ if the nurse thinks the patient looks anxious before the trial begins.
 C. Alternate between a higher and a lower FiO₂ every few minutes to see which one the patient seems to prefer.
 D. Do not increase the FiO₂ during the SBT, because raising it can mask hypoxaemia and cause a false pass.
 **Answer: D.**
-**Why correct:** The recommendation is that FiO₂ should not be increased during an SBT (conditional; very low certainty), with the false-positive reasoning.
+**Why correct:** AARC conditionally suggests not raising FiO₂ solely for the SBT (very low certainty), because this can conceal impaired oxygenation. Verify readiness under the unit protocol; the guideline does not establish a universal starting FiO₂ threshold. If hypoxemia occurs, assess and stop an intolerable trial and provide needed rescue oxygenation. The recommendation is not a reason to withhold emergency oxygen.
 **Why not A:** No evidence shows that raising FiO₂ improves success.
 **Why not B:** Anxiety is not a reason in the guideline.
 **Why not C:** Alternating FiO₂ is not described.
@@ -131,12 +135,12 @@ D. Avoid performing an SBT on the same day as a sedation interruption, so that t
 **Q4 (safety).** During an SBT, a patient's respiratory rate rises steadily, SpO₂ falls and the patient looks distressed. What is the best action?
 A. Wait until the full 120 minutes are over to see whether the patient adapts to breathing without ventilator support.
 B. Increase the FiO₂ on the ventilator and carry on with the trial, so that the SpO₂ stays above the usual target.
-C. Stay with the patient, report the changes immediately and be ready for the return to ventilator support.
+C. Stop the poorly tolerated trial under protocol, restore ventilatory support and summon help promptly.
 D. Record the observations carefully and review them with the team at the end of the shift or at the next handover.
 **Answer: C.**
-**Why correct:** The guideline lists respiratory pattern, haemodynamics, gas exchange and comfort as the basis for judging tolerance, and notes that return to support can be re-established quickly.
+**Why correct:** Rising respiratory rate, falling oxygen saturation and distress indicate possible SBT intolerance. Remain with the patient and promptly stop the trial under the authorized pathway, restore appropriate ventilatory and oxygen support, assess airway, breathing and circulation, and call for urgent assistance. Do not wait for the planned duration or raise oxygen merely to make the trial appear successful.
 **Why not A:** Waiting risks harm to an intolerant patient.
-**Why not B:** Raising the FiO₂ masks the problem.
+**Why not B:** Increasing oxygen to force a pass conceals intolerance; rescue oxygen for hypoxemia is appropriate as part of stopping the trial and treating deterioration.
 **Why not D:** The report must be immediate.
 
 **Q5 (understanding).** Why does the AARC guideline suggest the RSBI is not needed to decide readiness for an SBT?
@@ -145,7 +149,7 @@ B. Because the RSBI has moderate sensitivity but poor specificity for extubation
 C. Because the RSBI can only be measured by physicians and cannot be measured by nurses or respiratory therapists in any unit.
 D. Because modern ventilators can no longer display the breathing rate and tidal volume that are needed to calculate it reliably at the bedside.
 **Answer: B.**
-**Why correct:** The guideline's evidence summary found the RSBI had moderate sensitivity but poor specificity for extubation success, and that requiring it delayed liberation in a trial, so it suggests the RSBI is not needed to decide readiness for an SBT.
+**Why correct:** The AARC recommendation is conditional, with moderate certainty: RSBI calculation need not be a prerequisite to an SBT. Requiring it can delay liberation and it has limited specificity. Readiness still requires clinical improvement, adequate oxygenation, hemodynamic stability and ability to initiate an inspiratory effort. The index alone does not determine extubation readiness.
 **Why not A:** No harm from measurement is claimed.
 **Why not C:** Who measures it is not the reason.
 **Why not D:** The reason is not technical.
@@ -168,10 +172,13 @@ D. Documenting the start and end times of the trial and the outcome.
 - American Thoracic Society. *Noninvasive respiratory support for adult patients with acute respiratory failure*, official clinical practice guideline. Am J Respir Crit Care Med. 2026 Sep;212(9):2135-2158. Abstract-level risk-stratified post-extubation recommendation only; full text not verified. https://pubmed.ncbi.nlm.nih.gov/42371750/ (accessed 2026-11-23).
 - American Thoracic Society/American College of Chest Physicians. *Liberation from Mechanical Ventilation in Critically Ill Adults: Rehabilitation Protocols, Ventilator Liberation Protocols, and Cuff Leak Tests*. Am J Respir Crit Care Med. 2017;195(1):120-133. Recommendation-level material on selected high-risk stridor assessment. https://academic.oup.com/ajrccm/article/195/1/120/8498933 (accessed 2026-11-23).
 
+- Saudi Health Council national guideline task force. Saudi Guideline for Mechanical Ventilation in Adults – Executive Summary. Saudi J Med Med Sci. 2026;14(Suppl 1):S1–S6. https://pmc.ncbi.nlm.nih.gov/articles/PMC12987643/ (selected recommendation text accessed 2026-11-24; CC BY-NC-ND 4.0, citation only; complete guideline and evidence profiles not appraised).
+
 ## 19. Local protocol note
 Local protocols define who screens and runs SBTs, the screening criteria, the technique used (T-piece, low-level pressure support or on-ventilator), the sedation interruption process, monitoring and termination criteria, extubation criteria and the post-extubation plan.
 
 ## 20. Evidence, applicability and open questions
+- Saudi 2026 executive summary Q5–6 and Q10 checked; full evidence profiles, safety screening criteria and institutional protocols remain unreviewed. This source does not replace the outstanding AARC supplementary evidence requirement.
 - Source quality: an AARC clinical practice guideline using GRADE with a medical librarian and four PICO questions; all four recommendations are conditional and two are very low certainty. The authors note the relative absence of high-level evidence. Authors disclosed relationships with device companies (listed in the paper).
 - Applicability: adult mechanically ventilated patients; written for a North American setting where respiratory therapists drive protocols.
 - Newly added at recommendation/abstract level: selective cuff-leak assessment in patients at high risk of post-extubation stridor (ATS/CHEST 2017) and risk-stratified post-extubation HFNC/NIV support (ATS 2026). Full recommendation evidence and implementation tables were not reviewed.

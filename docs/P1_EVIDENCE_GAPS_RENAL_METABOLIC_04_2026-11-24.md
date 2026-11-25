@@ -1,0 +1,9 @@
+# Evidence requirements — renal and metabolic batch 04
+
+24 November 2026. Three scenario drafts improved, two newly registered sources, one outstanding source-access requirement closed (current JBDS 01 found), remaining entries 121. Clinical approval, full appraisal, local protocols and commercial rights remain outstanding.
+
+- SC-15: [January 2026 multidisciplinary RRT guideline](https://doi.org/10.1186/s13054-025-05817-6), HTML anticoagulation and CRRT-dose sections, plus [May 2026 Delphi consensus](https://doi.org/10.1186/s13054-026-06066-x) statements 8–10, 13–15. Distinguish net fluid removal from delivered solute clearance; citrate monitoring applies when citrate is used. Incomplete report that misses urgent biochemical trend scores zero. [KDIGO update page](https://kdigo.org/guidelines/acute-kidney-injury/) still identifies 2026 as a draft.
+- SC-11: [UKKA detailed 14.1–14.2](https://guidelines.ukkidney.org/hyperkalaemia/11-1-ii-hyperkalaemia-in-hospital/11-1-2-ii-hyperkalaemia-in-hospital-14-1-14-2/) vs [summary](https://guidelines.ukkidney.org/hyperkalaemia/6-summary-of-clinical-practice-guideline-for-hyperkalaemia/6-2-section-ii-hospital/) live HTML rechecked today. Discrepancy remains; absence of ECG signs does not exclude severe hyperkalemia.
+- SC-10: [JBDS 01 January 2023](https://abcd.care/resource/current/jbds-01-hospital-management-hypoglycaemia-adults-diabetes-mellitus) recovered; PDF algorithm page 9 visual check and text sections A–E/follow-up. Updated source traces, repeat glucose, impaired consciousness escalation, feeding/insulin coordination. Copyright page states CC BY-NC 4.0, so commercial adaptation not presumed. Non-diabetic guidance still outstanding.
+
+Four regression cases added. No doses, device instructions, clinical approvals or permissions inferred. No deployment.

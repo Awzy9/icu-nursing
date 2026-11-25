@@ -1,304 +1,336 @@
 {
- "med_id": "MD-44",
- "number": 44,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Enoxaparin",
- "drug_class": "Low molecular weight heparin",
- "category": "anticoagulants-hemostasis",
- "high_alert": true,
- "high_alert_note": "ISMP's 2024 acute-care high-alert list includes antithrombotic agents, explicitly low-molecular-weight heparin anticoagulants such as enoxaparin. This does not authorize unit-for-unit conversion or replace prescribed dosing and local neuraxial/bleeding safeguards. Classification is independently cited in the evidence report; medication content retains its registered FDA/manufacturer sources without the restricted ISMP material.",
- "summary": "Low molecular weight heparin for prophylaxis of deep vein thrombosis in surgical and medical patients and other labelled indications (the label read is a subcutaneous product). The boxed warning covers spinal and epidural haematomas with neuraxial anaesthesia or spinal puncture. Nursing focus: bleeding, platelets, neuraxial procedures and renal function, HIT risk, platelet trends, neuraxial precautions and avoidance of unit-for-unit substitution.",
- "batch": 5,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A targeted 2026-11-21 cross-check used the May 2026 DailyMed Lovenox branded label for unit-for-unit interchangeability, renal considerations, HIT contraindications and monitoring; this does not replace the original label record or pharmacist approval.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-ENOXAPARIN",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-ENOXAPARIN",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-44",
+  "number": 44,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Enoxaparin",
+  "drug_class": "Low molecular weight heparin",
+  "category": "anticoagulants-hemostasis",
+  "high_alert": true,
+  "high_alert_note": "ISMP's 2024 acute-care high-alert list includes antithrombotic agents, explicitly low-molecular-weight heparin anticoagulants such as enoxaparin. This does not authorize unit-for-unit conversion or replace prescribed dosing and local neuraxial/bleeding safeguards. Classification is independently cited in the evidence report; medication content retains its registered FDA/manufacturer sources without the restricted ISMP material.",
+  "summary": "Low molecular weight heparin for prophylaxis of deep vein thrombosis in surgical and medical patients and other labelled indications (the label read is a subcutaneous product). The boxed warning covers spinal and epidural haematomas with neuraxial anaesthesia or spinal puncture. Nursing focus: bleeding, platelets, neuraxial procedures and renal function, HIT risk, platelet trends, neuraxial precautions and avoidance of unit-for-unit substitution.",
+  "batch": 5,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. A targeted 2026-11-21 cross-check used the May 2026 DailyMed Lovenox branded label for unit-for-unit interchangeability, renal considerations, HIT contraindications and monitoring; this does not replace the original label record or pharmacist approval.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-ENOXAPARIN",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-ENOXAPARIN",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label describes enoxaparin as a low molecular weight heparin indicated for prophylaxis of deep vein thrombosis in abdominal, hip and knee replacement surgery and in medical patients, and for other thrombotic indications.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitor for bleeding and platelet changes, and check for any planned or recent spinal or epidural procedure before each dose.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Review recent renal function, weight and clinical indication before administration; when renal clearance is reduced or a neuraxial catheter/procedure is planned, verify the order and timing with the responsible clinician/pharmacist rather than applying an unreviewed generic regimen.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for frequent monitoring for signs of neurological impairment and for signs of bleeding.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "The current US Lovenox label recommends monitoring complete blood count (including platelets), occult blood where ordered and clinical signs of bleeding. Anti-factor Xa testing may be considered by the treating team in renal impairment or selected safety concerns; PT and aPTT are not adequate measures of enoxaparin's anticoagulant effect. The team decides if, when and how these tests guide care.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Review ordered potassium results in patients with renal impairment or other hyperkalaemia risk factors. Flag concomitant medicines that increase bleeding risk to the prescriber or pharmacist; when coadministration is essential, follow the agreed clinical and laboratory monitoring plan.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "After neuraxial procedures, new central back pain, leg weakness or sensory changes, or loss of bowel or bladder control may indicate a spinal haematoma. Activate urgent clinical assessment immediately; do not wait for the next scheduled neurological observation. The treating team determines investigation and intervention.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Boxed warning: epidural or spinal haematomas may occur in patients anticoagulated with low molecular weight heparins who are receiving neuraxial anaesthesia or undergoing spinal puncture.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Monitor for signs of bleeding, and for heparin-induced thrombocytopenia with or without thrombosis; monitor the platelet count closely.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Enoxaparin is not interchangeable unit-for-unit with unfractionated heparin or other low-molecular-weight heparins. They have different prescribing and dosing requirements; any change of anticoagulant requires an authorized new order and the appropriate transition/monitoring protocol, not a direct numerical substitution.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Women with mechanical prosthetic heart valves who are pregnant may be at increased risk of thrombosis.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "In severe renal impairment, the registered US enoxaparin label requires indication-specific prescriber dose adjustment because exposure and bleeding risk can rise. Review renal function and obtain a pharmacy/prescriber check of the existing order; this educational draft does not supply dosing thresholds or regimens.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Active major bleeding and a history of immune-mediated heparin-induced thrombocytopenia within the past 100 days or persistent HIT antibodies are contraindications in the registered US enoxaparin label; check prior HIT and new platelet trends and escalate suspected HIT rather than assuming every fall in platelets confirms it.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists spinal or epidural haematoma and increased risk of haemorrhage among the serious adverse reactions.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "The label also identifies thrombocytopenia as a serious adverse reaction. Common reactions in the label include anaemia, bruising, injection-site pain and increased aminotransferases; occurrence depends on the indication and study population.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Postmarketing reports include thrombocytopenia with thrombosis, skin necrosis and systemic allergic reactions including anaphylactic or anaphylactoid shock. These voluntary reports do not reliably establish frequency or causality.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Hyperkalaemia has been reported after marketing, often with other predisposing factors such as renal dysfunction or potassium-raising medicines.",
+          "support": "sourced",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Report new back pain, leg weakness or numbness, bowel or bladder change, any bleeding or a falling platelet count immediately.",
+          "support": "partial",
+          "sources": [
+            "L-ENOXAPARIN"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Check neuraxial anaesthesia or spinal puncture history around each dose.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Watch for bleeding at any site.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review the platelet count as ordered.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report neurological change in the legs or bleeding at once.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record checks and results.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review ordered CBC/platelet trends, renal function and bleeding assessments; do not treat PT/aPTT as reliable measures of enoxaparin effect. Anti-Xa testing, if indicated, is clinician/pharmacist-directed.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review ordered potassium results in patients with renal impairment or other hyperkalaemia risk factors. Flag concomitant medicines that increase bleeding risk to the prescriber or pharmacist; when coadministration is essential, follow the agreed clinical and laboratory monitoring plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Following neuraxial procedures, urgently escalate new back pain, lower-limb neurological changes or bowel/bladder dysfunction.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-ENOXAPARIN"
+      ]
+    }
+  ],
+  "gaps": [
+    "Renal impairment and selective anti-Xa monitoring are now discussed at safety-awareness level based on current US branded labeling, without dosing or lab targets; local indication-specific prescribing, renal dosing and anti-Xa interpretation still require pharmacist review. Reversal remains outside this draft.",
+    "The label read is the subcutaneous route; intravenous use for other indications is not summarised.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry.",
+    "Independent cross-check: DailyMed branded Lovenox US label (May 2026 revision; viewed 2026-11-21), different from the manufacturer label originally registered. Verify any manufacturer-specific variations before clinical approval."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "9e2875df-0f0c-46ec-990f-69108f383f58",
+    "label_version": "8",
+    "effective_time": "20261012",
+    "matches_register": true,
+    "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Adverse-reaction field read in full for this targeted expansion. This verifies this US manufacturer label only; no non-US regulator or nursing protocol review is implied."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label describes enoxaparin as a low molecular weight heparin indicated for prophylaxis of deep vein thrombosis in abdominal, hip and knee replacement surgery and in medical patients, and for other thrombotic indications.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitor for bleeding and platelet changes, and check for any planned or recent spinal or epidural procedure before each dose.",
-     "support": "partial",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Review recent renal function, weight and clinical indication before administration; when renal clearance is reduced or a neuraxial catheter/procedure is planned, verify the order and timing with the responsible clinician/pharmacist rather than applying an unreviewed generic regimen.",
-     "support": "partial",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label calls for frequent monitoring for signs of neurological impairment and for signs of bleeding.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "The current US Lovenox label recommends monitoring complete blood count (including platelets), occult blood where ordered and clinical signs of bleeding. Anti-factor Xa testing may be considered by the treating team in renal impairment or selected safety concerns; PT and aPTT are not adequate measures of enoxaparin's anticoagulant effect. The team decides if, when and how these tests guide care.",
-     "support": "partial",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Boxed warning: epidural or spinal haematomas may occur in patients anticoagulated with low molecular weight heparins who are receiving neuraxial anaesthesia or undergoing spinal puncture.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Monitor for signs of bleeding, and for heparin-induced thrombocytopenia with or without thrombosis; monitor the platelet count closely.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Enoxaparin is not interchangeable unit-for-unit with unfractionated heparin or other low-molecular-weight heparins. They have different prescribing and dosing requirements; any change of anticoagulant requires an authorized new order and the appropriate transition/monitoring protocol, not a direct numerical substitution.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Women with mechanical prosthetic heart valves who are pregnant may be at increased risk of thrombosis.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "In severe renal impairment, the current US branded enoxaparin label requires indication-specific prescriber dose adjustment because exposure and bleeding risk can rise. Review renal function and obtain a pharmacy/prescriber check of the existing order; this educational draft does not supply dosing thresholds or regimens.",
-     "support": "partial",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Active major bleeding and a history of immune-mediated heparin-induced thrombocytopenia within the past 100 days or persistent HIT antibodies are contraindications in the current US branded label; check prior HIT and new platelet trends and escalate suspected HIT rather than assuming every fall in platelets confirms it.",
-     "support": "partial",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists spinal or epidural haematoma and increased risk of haemorrhage among the serious adverse reactions.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "The label also identifies thrombocytopenia as a serious adverse reaction. Common reactions in the label include anaemia, bruising, injection-site pain and increased aminotransferases; occurrence depends on the indication and study population.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Postmarketing reports include thrombocytopenia with thrombosis, skin necrosis and systemic allergic reactions including anaphylactic or anaphylactoid shock. These voluntary reports do not reliably establish frequency or causality.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Hyperkalaemia has been reported after marketing, often with other predisposing factors such as renal dysfunction or potassium-raising medicines.",
-     "support": "sourced",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Report new back pain, leg weakness or numbness, bowel or bladder change, any bleeding or a falling platelet count immediately.",
-     "support": "partial",
-     "sources": [
-      "L-ENOXAPARIN"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Check neuraxial anaesthesia or spinal puncture history around each dose.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-ENOXAPARIN"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Watch for bleeding at any site.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-ENOXAPARIN"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Review the platelet count as ordered.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-ENOXAPARIN"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report neurological change in the legs or bleeding at once.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-ENOXAPARIN"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record checks and results.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "laboratory",
-   "text": "Review ordered CBC/platelet trends, renal function and bleeding assessments; do not treat PT/aPTT as reliable measures of enoxaparin effect. Anti-Xa testing, if indicated, is clinician/pharmacist-directed.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-ENOXAPARIN"
-   ]
-  }
- ],
- "gaps": [
-  "Renal impairment and selective anti-Xa monitoring are now discussed at safety-awareness level based on current US branded labeling, without dosing or lab targets; local indication-specific prescribing, renal dosing and anti-Xa interpretation still require pharmacist review. Reversal remains outside this draft.",
-  "The label read is the subcutaneous route; intravenous use for other indications is not summarised.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry.",
-  "Independent cross-check: DailyMed branded Lovenox US label (May 2026 revision; viewed 2026-11-21), different from the manufacturer label originally registered. Verify any manufacturer-specific variations before clinical approval."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "9e2875df-0f0c-46ec-990f-69108f383f58",
-  "label_version": "8",
-  "effective_time": "20261012",
-  "matches_register": true,
-  "note": "Exact set ID re-fetched from openFDA on 2026-11-16; version and effective date match the register. Adverse-reaction field read in full for this targeted expansion. This verifies this US manufacturer label only; no non-US regulator or nursing protocol review is implied."
- }
 }

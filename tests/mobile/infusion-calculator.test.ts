@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { doseToPumpRate, infusionDuration, parsePositiveDecimal, volumetricRate } from "../../mobile/src/core/infusion-calculator";
+import { doseToPumpRate, equationSign, infusionDuration, parsePositiveDecimal, volumetricRate } from "../../mobile/src/core/infusion-calculator";
 
 describe("native infusion calculator practice", () => {
   it("calculates volumetric rate in hours and minutes", () => {
@@ -18,11 +18,30 @@ describe("native infusion calculator practice", () => {
   it("accepts only unambiguous positive decimal entry", () => {
     expect(parsePositiveDecimal("1.5")).toBe(1.5);
     expect(parsePositiveDecimal("1,5")).toBe(1.5);
+    expect(parsePositiveDecimal("1.000")).toBe(1);
+    expect(parsePositiveDecimal("0.125")).toBe(0.125);
+    for (const text of ["1,000", "12,345", "0,125"]) expect(parsePositiveDecimal(text)).toBeNull();
     expect(parsePositiveDecimal(".25")).toBe(0.25);
     expect(parsePositiveDecimal("  12.00  ")).toBe(12);
     for (const value of ["", " ", "0", "-1", "+1", "0x10", "1e3", "Infinity", "NaN", "1,2,3", "1.000,5", "1/2", "9".repeat(400)]) {
       expect(parsePositiveDecimal(value)).toBeNull();
     }
+  });
+
+  it("normalizes Arabic-Indic and Eastern Arabic digits without guessing grouping", () => {
+    for (const [raw, expected] of [["١٢٫٥", 12.5], ["۱۲٫۵", 12.5], ["٠٫١٢٥", 0.125], ["١.٥", 1.5], ["١,٥", 1.5]] as const) {
+      expect(parsePositiveDecimal(raw)).toBe(expected);
+    }
+    for (const raw of ["١٬٠٠٠", "۱٬۰۰۰", "١,٠٠٠", "٠,١٢٥", "١٫٢٫٣", "١٫٢,٣", "١ ٢", "١e٣", "−١", "١\u200f٢", "٠"]) {
+      expect(parsePositiveDecimal(raw)).toBeNull();
+    }
+    expect(volumetricRate(parsePositiveDecimal("١٥٠")!, parsePositiveDecimal("١٢٠")!, "minutes")).toBe(75);
+    expect(doseToPumpRate({dose:parsePositiveDecimal("٠٫٢")!, weightKg:parsePositiveDecimal("٥٠")!, weightBased:true, doseUnit:"mcg/min", concentration:parsePositiveDecimal("١٠٠")!, concentrationUnit:"mcg/mL"})).toBeCloseTo(6,10);
+  });
+
+  it("marks rounded displayed arithmetic as approximate", () => {
+    expect(equationSign(2, 3, 2 / 3)).toBe("≈");
+    expect(equationSign(6, 2, 3)).toBe("=");
   });
 
   it("rejects missing, negative and non-finite values", () => {

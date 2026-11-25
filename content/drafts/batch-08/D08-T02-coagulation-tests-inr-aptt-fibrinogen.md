@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ISTH SSC 2025 communication updated the definition and **proposed revised diagnostic criteria and scoring** for DIC; PubMed abstract read, not the scoring table or full validation", "British Society for Haematology 2023 third-edition HIT guideline: 4Ts pretest probability (platelet fall, timing, thrombosis, alternative diagnoses) read directly; 30–50% fall alone does not diagnose HIT", "University Hospitals Sussex NHS Foundation Trust Pathology User Guide: Coagulation screen (page last modified 2025-12-24) – ONE hospital laboratory's handbook page; reference ranges are stated to be locally determined", "ARUP Consult (ARUP Laboratories, Utah): Disseminated Intravascular Coagulation – DIC (last literature review July 2020; last update January 2025) – a reference-laboratory educational resource, not a guideline", "ARUP Consult: Impacts of Common Anticoagulants on Coagulation Testing (last update February 2024)", "Open RN Nursing Pharmacology 2e, section 6.12 Blood coagulation modifiers (US textbook, CC BY 4.0) – anticoagulant monitoring statements only"]
-sources: [S-UHS-COAG, S-ARUP-DIC, S-ARUP-ANTICOAG, S-OPENRN-PHARM-CH, S-ISTH-DIC-2025, S-BSH-HIT-2023]
-sources_not_read: [S-BSH-COAG]
+sources: [S-UHS-COAG, S-ARUP-DIC, S-ARUP-ANTICOAG, S-OPENRN-PHARM-CH, S-ISTH-DIC-2025, S-BSH-HIT-2023, S-ACC-OAC-BLEED-2020, S-BSH-COAG]
+sources_not_read: []
 independently_written_note: "Original wording and scenarios. Laboratory handbooks and reference-laboratory resources are NOT clinical practice guidelines and are not presented as universal guidance: the Sussex page is one trust's specimen and reference information, ARUP is a US reference laboratory's educational text (copyright ARUP; paraphrased, tables not reproduced), and the Open RN text is a US nursing textbook. The Sussex page gives only specimen, reference range and turnaround information, so explanations of what each test measures come from the other sources and are limited; coagulation pathway physiology, viscoelastic testing, anti-Xa assays, platelet function tests, trauma or massive-transfusion coagulopathy, DOAC monitoring and coagulation practice pathways were NOT previously read. A targeted 2026-11-21 cross-check now includes the **abstract** of the 2025 ISTH SSC updated DIC definition/scoring proposal (not the full diagnostic table) and the **HIT pretest-probability** section of the BSH 2023 third-edition guideline. Neither provides nurse-independent diagnoses or treatment authority. Reference intervals, anticoagulant monitoring pathways and action thresholds vary by institution and laboratory: the example ranges quoted are one trust's local ranges and must not be used for patient care elsewhere. No doses, reversal-agent doses or treatment algorithms are given."
 ---
 # Coagulation tests – INR, aPTT and fibrinogen: specimens, pitfalls and what to report
@@ -68,6 +68,8 @@ Alongside emergency assessment, communicate anticoagulant identity and last admi
 
 **DIC scoring and liver disease:** DIC may coexist with sepsis, trauma or liver disease, but abnormal PT/aPTT, D-dimer and platelet count are not specific to DIC. An apparently normal fibrinogen can be misleading during an inflammatory acute-phase response. The 2025 ISTH SSC framework updated disease-aware DIC definitions and overt-score concepts; a 2026 published review reiterates the changes, but neither was used here to reproduce its protected calculation table. **Lab specialists and treating clinicians determine the diagnosis and current score version.** This original nursing response note is a cross-check, not a major-haemorrhage, thromboelastography or anticoagulation protocol.
 
+**Unfractionated heparin monitoring and discordant tests (BSH 2024).** aPTT response varies with laboratory reagents and the patient's coagulation state. Acute-phase elevations of factor VIII or fibrinogen may blunt aPTT prolongation; lupus anticoagulant or factor deficiencies can prolong baseline aPTT independently of heparin. BSH identifies heparin anti-Xa measurement as a better monitoring option when baseline aPTT is abnormal. Report the baseline and current results, infusion details, sampling time and clinical signs of bleeding or thrombosis; obtain clinician and laboratory advice for discordance rather than independently escalating heparin solely because aPTT is shorter than expected. Use the locally authorized assay and adjustment pathway.
+
 ## 8. Monitoring parameters
 INR, aPTT (or ratio) and fibrinogen as ordered; platelet count; D-dimer if ordered; haemoglobin; bleeding at sites, lines, drains, wounds and mucosa; vital signs; urine output; anticoagulant drugs and times; liver function if relevant; the time of each sample and whether it was within the laboratory's time limit.
 
@@ -97,7 +99,7 @@ New oozing from lines, wounds or mucosa; unexplained bruising; blood in urine, s
 | Validate results, set reference intervals and critical limits, run quality control | Laboratory |
 
 ## 12. Escalation criteria
-Escalate immediately for active bleeding, haemodynamic change suggesting bleeding, critical results as defined locally, a rapid worsening trend, suspected HIT, or any problem with the specimen that could delay care.
+Escalate immediately for active bleeding, haemodynamic change suggesting bleeding, critical results as defined locally, a rapid worsening trend or suspected HIT. If a specimen may be contaminated or underfilled, inform the laboratory and arrange repeat sampling under policy, without delaying help for active bleeding. Do not diagnose or exclude disseminated intravascular coagulation using a single result. The ISTH SSC 2025 communication proposes updated scoring and disease-specific early criteria; do not use the historical overt-DIC score as a universal current rule. Anticoagulant adjustments require authorised orders or protocol.
 SBAR — **S:** bed X, oozing from the central line site and a new bruise; the morning aPTT is much longer than the previous value. **B:** on an unfractionated heparin infusion since yesterday; platelets were normal. **A:** possible over-anticoagulation or another cause of bleeding. **R:** please review now; please advise on the infusion and further tests; the sample was taken correctly and within the time limit.
 
 ## 13. Potential complications
@@ -113,16 +115,16 @@ Before a morning coagulation screen the nurse checks the tube, fills it to the l
 A 58-year-old with sepsis has oozing at venepuncture sites. The platelet count has fallen over two days, the INR and aPTT are longer than the laboratory's ranges, and the fibrinogen is still within range. The nurse reports the bleeding and the trend; the team recognises that normal fibrinogen does not exclude DIC, sends repeat tests and decides on management.
 
 ## 17. MCQs
-**Q1 (application).** A nurse draws a citrate tube for a coagulation screen but fills it only halfway because the vein was difficult. According to the handbook she should know that:
+**Q1 (application).** A nurse draws a citrate tube for a coagulation screen but fills it only halfway after a difficult venepuncture. What is the safest next action before relying on the coagulation result?
 A. The handbook says that half-filled tubes are acceptable, so the sample can be sent as it is without comment.
 B. The handbook says to fill to the line, so an under-filled tube is a specimen problem to report or repeat.
 C. The result will be the same whatever the volume, so nobody needs to be told that the tube was half full.
 D. The sample should be topped up from a different tube that was taken earlier from the same patient for another test.
 **Answer: B.**
-**Why correct:** The handbook says the tube must be filled to the line; the page does not state the effect, so the safe action is to follow the instruction and tell the laboratory.
-**Why not A:** The handbook does not say this.
-**Why not C:** Unknown effects mean the result may be unreliable.
-**Why not D:** Mixing tubes is not described and could cause error.
+**Why correct:** Follow the laboratory's specified citrate fill volume. Underfilling changes the blood-to-anticoagulant ratio and can make clotting results unreliable. Notify the laboratory and recollect as directed; never top up a tube or delay urgent care while repeating a sample.
+**Why not A:** A half-filled citrate tube may have excess anticoagulant relative to the blood volume, making the result unreliable.
+**Why not C:** The fill volume affects the blood-to-citrate ratio, so the laboratory must know about the specimen problem.
+**Why not D:** Transferring blood between tubes can introduce additives and alter specimen integrity; obtain a new sample under the laboratory procedure instead.
 
 **Q2 (judgment).** A patient with sepsis has a prolonged INR and aPTT but the fibrinogen is within the laboratory's range, and platelets are falling. Which interpretation is consistent with the ARUP resource?
 A. Normal fibrinogen proves that the patient does not have DIC, so the other abnormal results can be ignored by the team.
@@ -130,7 +132,7 @@ B. Clotting times are shortened in DIC, so the prolonged INR and aPTT must point
 C. A single normal fibrinogen means the other tests should be ignored, because fibrinogen is the reliable marker of DIC.
 D. Fibrinogen can stay normal for a long time after DIC begins, so the whole picture and trend matter, and the team decides.
 **Answer: D.**
-**Why correct:** ARUP says fibrinogen is an acute phase reactant that can remain normal despite consumption and that DIC is judged by combined results and repeat testing.
+**Why correct:** Fibrinogen may remain normal despite consumption because inflammation increases its production. Escalate falling platelets, clinical bleeding or organ dysfunction and serial results. The responsible team interprets the full clinical context using an appropriate DIC pathway.
 **Why not A:** A normal fibrinogen does not exclude DIC.
 **Why not B:** Clotting times are prolonged in most cases but can be normal or shortened early.
 **Why not C:** No single test should be used alone.
@@ -157,16 +159,16 @@ D. Consider the old threshold a treatment order and start a reversal or blood-pr
 **Why not C:** Fibrinogen can remain normal as an acute-phase reactant in developing DIC.
 **Why not D:** A teaching score is not an independent prescribing, reversal or transfusion order.
 
-**Q5 (application).** A patient is on warfarin. Which statement matches the Open RN anticoagulant text?
-A. Warfarin does not need any laboratory monitoring, because its effect is predictable and does not change between patients.
-B. Warfarin is monitored by the PTT and its effect is reversed with protamine, which is given by slow infusion.
-C. Warfarin needs close monitoring with PT or INR, and vitamin K is the reversal agent (a prescriber decision).
-D. Warfarin is monitored by the platelet count alone, which is checked once a week in every patient who takes it.
+**Q5 (judgment).** A patient taking warfarin develops major bleeding with circulatory deterioration and an elevated INR. A colleague suggests waiting for vitamin K alone to normalize the result. What is the most appropriate nursing response?
+A. Wait for a repeat INR before activating the bleeding pathway, because the laboratory value determines urgency.
+B. Prepare protamine as the routine reversal for warfarin and reassess after administration.
+C. Activate urgent bleeding care and prepare for clinician-directed rapid warfarin reversal.
+D. Continue warfarin until the laboratory confirms the precise cause of the prolonged clotting time.
 **Answer: C.**
-**Why correct:** The textbook says warfarin requires close monitoring with PT or INR and names vitamin K as the reversal agent.
-**Why not A:** It requires monitoring with PT or INR, because the dose effect varies between patients.
-**Why not B:** That describes heparin, which is monitored by the PTT and reversed with protamine.
-**Why not D:** Platelets do not monitor warfarin.
+**Why correct:** Major bleeding with instability requires immediate assessment, emergency escalation and authorized resuscitation. INR is used to monitor warfarin, but treatment urgency depends on the bleeding and clinical state as well. Vitamin K supports restoration of clotting-factor production but is not immediate; major bleeding requiring rapid reversal typically calls for four-factor PCC plus vitamin K under the clinician-led pathway. Verify the anticoagulant, last dose and relevant orders; alternatives depend on local availability and patient factors.
+**Why not A:** Active major bleeding and circulatory deterioration require urgent action; repeat testing must not delay the emergency response.
+**Why not B:** Protamine is used for unfractionated heparin reversal, not routine reversal of vitamin K antagonists.
+**Why not D:** Continuing anticoagulation in major bleeding may worsen harm; promptly follow the authorized withholding and reversal pathway.
 
 **Q6 (scope).** Which task belongs to the prescriber, pharmacist and laboratory rather than the bedside nurse?
 A. Filling the citrate tube to the line and labelling it correctly with the patient's identifiers and the time.
@@ -187,6 +189,8 @@ D. Setting the target, interpreting results diagnostically and deciding on rever
 - Moser KA, Smock KJ. Impacts of Common Anticoagulants on Coagulation Testing. ARUP Consult. February 2024. https://arupconsult.com/content/impacts-common-anticoagulants (accessed 2026-11-14). © ARUP Laboratories; paraphrased only.
 - Ernstmeyer K, Christman E (eds). Nursing Pharmacology, 2nd ed. Open RN, 6.12 Blood coagulation modifiers. https://wtcs.pressbooks.pub/pharmacology/ (CC BY 4.0; accessed 2026-11-14)
 
+- S-BSH-COAG. https://doi.org/10.1111/bjh.19729 (selected recommendation or teaching passages checked 2026-11-24; no full appraisal or rights clearance claimed).
+
 ## 19. Local protocol note
 Reference intervals, critical limits, tube type and fill, time limits, anticoagulant monitoring pathways (which test, frequency, dose-adjustment protocol), who adjusts doses, reversal protocols and bleeding escalation follow your hospital, laboratory and haematology service.
 
@@ -197,3 +201,4 @@ Reference intervals, critical limits, tube type and fill, time limits, anticoagu
 - **Coverage limits:** full ISTH 2025 revised DIC criteria/thresholds and their external validation were not read; **do not calculate an updated DIC score from this lesson**. Also unresolved: clotting test biochemistry, under-filled tubes beyond the lab instruction, other pre-analytical errors, viscoelastic tests, anti-Xa monitoring, trauma and massive-transfusion coagulopathy, DOAC monitoring, platelet function tests, HIT functional-test algorithms and nursing bleeding-management standards; fibrinogen beyond DIC.
 - **Applicability:** adult ICU patients; UK and US sources differ in reagents, units and pathways.
 - **Open questions for reviewers (HAEM, CCP, PH, NE, BN):** local reference ranges/critical limits, adoption/validation of **ISTH 2025 DIC revisions**, HIT pretest scoring and testing workflow, anticoagulation pathways, line sampling and bleeding escalation thresholds.
+- ACC 2020 oral anticoagulant bleeding expert consensus pathway, section 5.6.1. https://doi.org/10.1016/j.jacc.2020.04.053 (indexed recommendation excerpt accessed 2026-11-24; no dosing reproduced).

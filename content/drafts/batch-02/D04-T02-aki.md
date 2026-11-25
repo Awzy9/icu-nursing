@@ -8,13 +8,13 @@ origin: ai_generated
 clinically_reviewed: false
 authors: []
 clinical_reviewers: []
-guideline_versions: ["NICE NG148 Acute kidney injury: prevention, detection and management (published 18 Dec 2019; last updated 16 Oct 2024) – UK guidance; most recommendations date from 2013", "KDIGO 2026 AKI/AKD guideline is a DRAFT under public review (kdigo.org) and is NOT used as final"]
-sources: [S-NICE-NG148]
-sources_not_read: [S-KDIGO-AKI, S-SSC-2026]
-independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO 2026 draft is mentioned only as a draft."
+guideline_versions: ["NICE NG148 Acute kidney injury: prevention, detection and management (published 18 Dec 2019; last updated 16 Oct 2024) – UK guidance; most recommendations date from 2013", "KDIGO AKI/AKD update: official site now lists a 2027 public-review draft summary (19 Nov 2026); final publication pending, NOT used as final"]
+sources: [S-NICE-NG148, S-RRT-MULTIDISC-2026, S-UKKA-AKI-DETECTION, S-SSC-2026]
+sources_not_read: [S-KDIGO-AKI]
+independently_written_note: "Original wording. NICE NG148 'Recommendations' were read (sections 1.1–1.5). NICE reserves commercial reuse (cite-only). The KDIGO 2012 final guideline text could not be accessed and was not read; the KDIGO update is mentioned only as a draft. Selected SSC 2026 renal replacement therapy recommendations were checked on 2026-11-24."
 ---
 # Acute kidney injury – nursing recognition, monitoring and escalation
-> DRAFT – NOT clinically reviewed. AI-generated. The KDIGO 2026 guideline is a draft and must not be cited as final.
+> DRAFT – NOT clinically reviewed. AI-generated. The KDIGO AKI/AKD update remains a public-review draft; KDIGO lists a 2027 draft summary dated 19 November 2026. It must not be cited as final.
 
 ## 1. Overview
 Acute kidney injury (AKI) is a sudden fall in kidney function, shown by a rise in blood creatinine or a fall in urine output. It is common in critical illness (sepsis, shock, surgery, nephrotoxic medicines, contrast agents) and often preventable or reversible if recognised early. The nurse measures urine output and fluid balance accurately, notices risk factors and early warning signs, flags medicines and contrast exposure to the team, and escalates promptly. Diagnosis, fluid and drug decisions, and renal replacement therapy decisions belong to the team.
@@ -37,7 +37,7 @@ Causes include reduced kidney perfusion (shock, hypovolaemia, sepsis), direct in
 - **Urine output:** hourly in the ICU (policy); catheter patency; colour and clarity; the NICE oliguria threshold of urine output below 0.5 mL/kg/h.
 - **Fluid status:** balance chart, weight trend (where measured), oedema, lung sounds, haemodynamics, jugular venous pressure, thirst and mucous membranes.
 - **Perfusion and sepsis signs:** see the shock and sepsis topics.
-- **Tests (as ordered):** creatinine and eGFR trend, urea, electrolytes (especially potassium), acid–base, urine dipstick for blood, protein, leucocytes, nitrites and glucose.
+- **Tests (as ordered):** creatinine trend (eGFR is unreliable during acute change), urea, electrolytes (especially potassium), acid–base, urine dipstick for blood, protein, leucocytes, nitrites and glucose.
 - **Medicines and contrast:** recent nephrotoxic exposure noted from the chart.
 
 ## 7. Nursing responsibilities
@@ -49,6 +49,10 @@ Causes include reduced kidney perfusion (shock, hypovolaemia, sepsis), direct in
 - Support hydration plans as prescribed; take care with fluid overload.
 - Support blood sampling at the frequency ordered (NICE: daily creatinine is typical while in hospital).
 - Watch for complications (high potassium, acidosis, fluid overload, uraemic signs) and escalate promptly.
+
+**Interpreting kidney function during acute change (UK Kidney Association).** Creatinine-based eGFR estimates assume relatively stable creatinine and are unreliable during rapidly changing kidney function. Do not use the automatically reported eGFR alone to exclude, stage or declare recovery from adult AKI. Report measured creatinine values and their times relative to baseline, urine-output trends and relevant exposures. The prescribing team and pharmacist assess drug clearance using the clinical trajectory and appropriate methods; a calculated eGFR during AKI is not a bedside authorization to change medication.
+
+**Sepsis-associated AKI and renal replacement therapy (SSC 2026).** For adults with sepsis or septic shock and AKI without a definite indication for renal replacement therapy, the guideline conditionally advises against starting it (moderate certainty). When renal replacement therapy is warranted, either continuous or intermittent treatment is a conditional option (low certainty). Report urine output, creatinine, potassium, acid–base status, fluid balance and clinical deterioration promptly. Do not delay emergency assessment of life-threatening abnormalities or infer a dialysis decision from an isolated creatinine value. The treating team determines the indication and modality.
 
 ## 8. Monitoring parameters
 Hourly urine output; balance (hourly or per policy); haemodynamics and MAP; weight if measured; potassium and acid–base results; creatinine trend; signs of fluid overload (breathlessness, oedema, rising CVP where measured); ECG changes if hyperkalaemia is suspected.
@@ -64,6 +68,8 @@ Hourly urine output; balance (hourly or per policy); haemodynamics and MAP; weig
 | Medicines | Do not routinely use loop diuretics to treat AKI; do not offer low-dose dopamine | Prescriber decisions |
 | Renal replacement therapy | Discuss potential indications immediately with a nephrologist or critical care specialist; refer immediately if hyperkalaemia, metabolic acidosis, uraemic complications, fluid overload or pulmonary oedema do not respond to medical treatment | Know the warning signs and escalate fast |
 
+**Renal recovery and RRT reassessment (January 2026 multidisciplinary ICU guideline).** When kidney recovery is being assessed, record spontaneous urine output separately from diuretic-associated output and communicate trends in fluid status, potassium and acid–base results. Increased urine output after a diuretic is not proof of recovery or readiness to stop RRT. There is no single validated urine-output cutoff for stopping therapy; persistent hyperkalaemia, acidosis or fluid overload warrant specialist reassessment. The decision and monitoring plan are clinician-led.
+
 ## 10. Warning signs and red flags
 Urine output below 0.5 mL/kg/h for 6 hours or more; no urine in the catheter bag after the catheter is checked; rising creatinine or potassium; ECG changes; breathlessness or new crackles with weight gain; drowsiness, confusion or twitching; pericardial rub or chest pain; flank pain with fever; new nephrotoxic drugs or contrast in a patient at risk.
 
@@ -76,7 +82,7 @@ Urine output below 0.5 mL/kg/h for 6 hours or more; no urine in the catheter bag
 | Diagnosis of AKI cause, stopping nephrotoxic drugs, imaging, referral for renal replacement therapy | Prescriber / nephrology decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: low urine output with a patent catheter; any red flag above; potassium or acid–base results outside the unit's call-back limits; signs of fluid overload; suspected obstruction.
+Escalate immediately for low urine output with a patent catheter, other red flags, critical potassium or acid–base results, fluid overload or suspected obstruction. Check catheter patency and review the trend and perfusion without delaying help. The duration of oliguria used to diagnose AKI is not a waiting period before assessment or escalation. Low output does not by itself establish a need for IV fluid; the clinician assesses perfusion, congestion and other possible causes.
 SBAR — **S:** bed X, urine output under 0.5 mL/kg/h for 6 hours, catheter patent. **B:** day 2 septic shock, on vasopressors, gentamicin started yesterday, creatinine rising. **A:** possible AKI, perfusion or drug related. **R:** please review now; do you want repeat bloods, a fluid plan or drug review? I will keep hourly output and report any change.
 
 ## 13. Potential complications
@@ -98,14 +104,14 @@ A 68-year-old woman with septic shock is on vasopressors and has received an ami
 **Why potassium changes the urgency.** In this case, low urine output has been present for five hours, but the new high potassium result already needs urgent review. Give the potassium value and time, ECG findings if available, creatinine trend, recent medication and contrast exposure, and urine output with its duration. This helps the team assess immediate risk and possible contributors while deciding the next steps.
 
 ## 17. MCQs
-**Q1 (monitoring).** An 80 kg patient on day 2 of septic shock has produced 20 mL of urine per hour for the last 5 hours. The catheter is draining freely. What is the best nursing action?
+**Q1 (monitoring).** An 80 kg patient on day 2 of septic shock has produced 20 mL of urine per hour for the last 5 hours. The catheter is draining freely. A colleague suggests waiting until the urine-output diagnostic duration is met. What is the best nursing action?
 A. Continue hourly checks and report the total at the end of the shift, because the output is only slightly low and the catheter is working.
 B. Give a fluid bolus from the ward stock to improve the output, since low output after surgery usually means dehydration.
 C. Increase the observation interval to every four hours, so that the patient is not disturbed so often during the night.
 D. Report to the prescriber now as possible AKI, giving the output trend and risk factors, and prepare for tests.
 **Answer: D.**
-**Why correct:** Urine output below 0.5 mL/kg/h (40 mL/h here) for 6 hours meets a NICE criterion; reporting before the sixth hour allows early action.
-**Why not A:** Delaying to the end of the shift ignores a developing criterion.
+**Why correct:** The patient has sustained urine output below 0.5 mL/kg/h (40 mL/h here), but has not yet met the NICE adult duration criterion of more than 6 hours. Escalate now, assess perfusion and fluid balance, verify measurement and catheter patency, and prepare ordered investigations; do not wait for a formal criterion or assume a fluid bolus is indicated.
+**Why not A:** The observed urine output is 0.25 mL/kg/h. A developing warning sign warrants assessment now; a diagnostic duration criterion is not a waiting period before escalation.
 **Why not B:** Fluids need an order, and the cause may not be hypovolaemia.
 **Why not C:** Less frequent monitoring is inappropriate when output is falling.
 
@@ -126,32 +132,32 @@ B. Withhold it permanently and remove it from the chart yourself, so that no oth
 C. Give half of the prescribed dose to reduce the risk to the kidneys, then monitor the urine output closely.
 D. Query the order against risk factors and kidney results, ask the prescriber or pharmacist to review it, and document.
 **Answer: D.**
-**Why correct:** NSAIDs can cause or worsen AKI, especially with hypovolaemia; the nurse queries and escalates.
+**Why correct:** NSAIDs can worsen kidney injury, especially with impaired perfusion. Review the kidney results and medication risks before administration, seek timely clarification and document the decision. Use the local medication-safety pathway to defer an unsafe dose pending review; do not independently rewrite the prescription.
 **Why not A:** NSAIDs are a recognised risk factor.
 **Why not B:** Nurses do not remove prescriptions; they query them.
 **Why not C:** Changing doses without an order is outside scope.
 
 **Q4 (judgment).** A patient has potassium that has risen, new ECG changes and falling urine output despite treatment. What is the most appropriate action?
 A. Record the values and review them with the next set of routine bloods in the morning, when the team has more time.
-B. Escalate urgently to critical care or nephrology, as these may be indications for renal replacement therapy.
+B. Activate urgent clinical help for hyperkalemia and seek critical care or nephrology review.
 C. Ask the family to encourage more oral fluids and re-check the output in six hours, in case it improves by itself.
 D. Start the unit potassium-lowering protocol and carry on with other tasks without telling the medical team about the results.
 **Answer: B.**
-**Why correct:** NICE says to refer immediately when hyperkalaemia or acidosis does not respond to medical management.
+**Why correct:** New ECG changes with rising potassium are an emergency. Activate urgent help, monitor rhythm and implement authorized emergency treatment without waiting for dialysis assessment. NICE advises immediate referral for kidney replacement therapy when hyperkalemia or other specified complications do not respond to medical management. The decision considers the whole clinical picture, not one lab result.
 **Why not A:** Waiting could allow dangerous arrhythmia.
 **Why not C:** Oral fluids will not treat this and delay care.
 **Why not D:** Using a protocol is appropriate if present, but not informing the team is unsafe.
 
-**Q5 (understanding).** Which statement about loop diuretics in AKI matches NICE NG148?
-A. They should be given routinely to patients with AKI to restore urine output and prevent progression of the injury.
-B. They are not allowed in patients with kidney problems, because they make kidney damage worse.
-C. Routine use to treat AKI is not recommended, but they may be considered for fluid overload or oedema.
-D. They are the first-line treatment for a urinary obstruction, because they flush the blockage out of the kidney.
+**Q5 (judgment).** A patient with AKI remains oliguric and develops increasing oxygen requirements, oedema and a positive fluid balance. A colleague suggests giving a loop diuretic to reverse the kidney injury. What is the most appropriate response?
+A. Request a diuretic to restore kidney function and use urine output as proof of recovery.
+B. Delay reassessment until creatinine rises further, because diuretics are unsuitable in AKI.
+C. Assess respiratory status and congestion; escalate for individualized fluid management.
+D. Request a further fluid challenge to improve urine output before evaluating the respiratory symptoms.
 **Answer: C.**
-**Why correct:** NICE recommends against routine use but allows consideration for fluid overload or oedema.
-**Why not A:** Routine use is not recommended.
-**Why not B:** Consideration is allowed in specific circumstances.
-**Why not D:** Obstruction needs urgent imaging and referral.
+**Why correct:** NICE NG148 does not recommend routine loop diuretics to treat AKI, but allows consideration for overload or oedema in specified circumstances. New oxygen requirements warrant urgent clinical assessment. Diuresis is not proof of renal recovery. If fluid overload or pulmonary oedema fails to respond to medical management, immediate specialist assessment for kidney replacement therapy is indicated. Follow the authorized plan.
+**Why not A:** An increase in urine volume after a diuretic does not establish recovery of kidney filtration or justify routine diuretic treatment of AKI.
+**Why not B:** Avoiding routine diuretics does not justify delaying assessment of respiratory deterioration or withholding an indicated clinician-directed treatment.
+**Why not D:** Oliguria alone does not establish fluid responsiveness; additional fluid may worsen respiratory compromise in a congested patient.
 
 **Q6 (scope).** Which task is the nurse's responsibility rather than the prescriber's?
 A. Deciding whether to start renal replacement therapy for a patient with acute kidney injury.
@@ -162,17 +168,23 @@ D. Deciding to stop a nephrotoxic drug.
 **Why correct:** Measurement, recording, catheter checks and reporting are nursing tasks.
 **Why not A:** Starting renal replacement therapy is a team decision.
 **Why not B:** Drug selection is a prescriber decision.
-**Why not D:** Stopping a drug needs a prescriber's order.
+**Why not D:** A suspected unsafe medication requires immediate clarification and the authorized withholding pathway; independently discontinuing the prescription is different.
 
 ## 18. References
 - NICE. Acute kidney injury: prevention, detection and management (NG148). Published 18 December 2019; last updated 16 October 2024. https://www.nice.org.uk/guidance/ng148 (Recommendations chapter; accessed 2026-11-14)
-- KDIGO. Acute Kidney Injury (AKI) and Acute Kidney Disease (AKD) guideline page: 2026 draft under public review (not final). https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-14)
+- KDIGO. Acute Kidney Injury (AKI) and Acute Kidney Disease (AKD) guideline page: update in preparation following public review; 2027 draft summary listed, not final. https://kdigo.org/guidelines/acute-kidney-injury/ (accessed 2026-11-24)
+
+- Multidisciplinary guidelines on renal replacement therapy in intensive care medicine. Critical Care. 2026;30:46. https://doi.org/10.1186/s13054-025-05817-6 (selected recommendations 3.7, 6.4, 6.8 and 7.1–7.8 and accompanying rationale accessed 2026-11-24; full appraisal and rights pending).
+
+- UK Kidney Association. AKI Detection and Alerting. https://www.ukkidney.org/clinical-resources/aki-guide-resources/secondary-care/aki-detection-and-alerting/ (indexed recommendation on invalidity of eGFR during AKI; accessed 2026-11-24).
+
+- S-SSC-2026. https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 (selected recommendation or teaching passages checked 2026-11-24; no full appraisal or rights clearance claimed).
 
 ## 19. Local protocol note
 Urine-output targets, balance charting, call-back limits for potassium and renal replacement therapy criteria follow local protocols.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: NICE NG148 is a national guideline; most recommendations date from 2013 and align with KDIGO definitions. The 2026 KDIGO update, which revises definitions and adds biomarkers, is a draft and not yet final.
+- Source quality: NICE NG148 is a national guideline; most recommendations date from 2013 and align with KDIGO definitions. KDIGO lists a 2027 public-review draft summary dated 19 November 2026. The proposed update has not been established as final; do not use draft definitions or biomarker recommendations to override established local practice. Status checked 25 November 2026: https://kdigo.org/guidelines/acute-kidney-injury/
 - International applicability: detection criteria are shared internationally; NICE service pathways and drug advice are UK-oriented.
 - Not covered: CRRT nursing care (separate topic), electrolyte management, contrast prophylaxis details, paediatric AKI.
-- Open questions for reviewers (NEPH, CCP, PH, NE, BN): confirm urine-output frequency and thresholds for ICU; nurse role in dipstick; wait for the final KDIGO 2026 guideline.
+- Open questions for reviewers (NEPH, CCP, PH, NE, BN): confirm urine-output frequency and thresholds for ICU; nurse role in dipstick; await the final KDIGO AKI/AKD guideline.

@@ -9,8 +9,8 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["Open RN Nursing Advanced Skills, chapter 7 (ECG) – sections 7.2 Basic Concepts, 7.3 Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Initiating Telemetry; WisTech Open 2023, CC BY 4.0; a US entry-level nursing textbook adapted partly from StatPearls", "UK Kidney Association hyperkalaemia guideline (July 2026) – ECG rationale pages, used only for hyperkalaemia ECG statements", "Phase 3 additions: AACN Practice Alerts 'Accurate Dysrhythmia Monitoring in Adults' (2016; update 2018) and 'Managing Alarms in Acute Care Across the Life Span: Electrocardiography and Pulse Oximetry' (2018) – PUBLIC SUMMARIES ONLY (full texts need a free AACN login and were not accessed)"]
-sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026, S-AACN-DYSRHYTHMIA-2016, S-AACN-ALARM-2018]
-sources_not_read: [S-AHA-2025]
+sources: [S-OPENRN-ADV-C7, S-UKKA-HK-2026, S-AACN-DYSRHYTHMIA-2016, S-AACN-ALARM-2018, S-ERC-BLS-2025, S-ERC-ALS-2025, S-AHA-ALS-2025]
+sources_not_read: []
 independently_written_note: "Original wording and structure. Four sections of the Open RN ECG chapter were read in full (basic concepts, systematic interpretation, patterns and dysrhythmias, the telemetry checklist); the chapter's cardioversion and defibrillation section, pacemaker content, rhythm-strip appendix, tables and figures were NOT read or reproduced. No ECG images or rhythm strips are included: the chapter's own images are credited to several licences, and ERC algorithms are not reproduced. The source is an introductory US nursing text, not an ICU monitoring standard: the AHA practice standards for ECG monitoring in hospital settings were not accessible and were not read, so alarm limits, lead choice for ST monitoring, monitoring indications and frequencies are not taught. Resuscitation algorithms, drug choices, doses and energy settings are deliberately absent; use the unit's resuscitation procedure and the cardiac arrest draft (D02-T14)."
 ---
 # ECG fundamentals and recognising important rhythms
@@ -40,7 +40,7 @@ ICU patients are on continuous monitoring because dysrhythmias can develop sudde
 4. **PR interval:** normal 0.12–0.20 seconds (3–5 small boxes); prolonged suggests delay in conduction (heart block).
 5. **QRS duration:** normal 0.04–0.12 seconds; a wide QRS means the beat did not originate in the atria; a prolonged QRS may reflect hyperkalaemia or bundle branch block.
 6. **T waves:** upright and rounded; abnormalities (inverted, flat, biphasic, tall or peaked) have many causes, including electrolyte and acid-base disorders, drugs, ischaemia and others.
-7. **ST segment:** should lie on the baseline; elevation or depression of 1 mm or more measured at the J point is abnormal; ST elevation in two or more contiguous leads in the right setting is highly specific for acute myocardial infarction (the textbook's criteria are given in millimetres for limb versus precordial leads); non-ischaemic causes of ST depression include digoxin toxicity, hypokalaemia, hypothermia and tachycardia.
+7. **ST segment:** should lie on the baseline; new ST changes warrant clinical assessment and a diagnostic 12-lead ECG; a single 1 mm rule is not sufficient for all leads or for diagnosis of myocardial infarction. The 2026 Fifth Universal Definition retains different ST-elevation thresholds for V2–V3 according to age and sex and requires interpretation in the clinical context; non-ischaemic causes of ST depression include digoxin toxicity, hypokalaemia, hypothermia and tachycardia.
 8. **QT interval:** the corrected QT (QTc) is monitored; a prolonged QTc carries a risk of torsades de pointes, ventricular tachycardia and ventricular fibrillation; common causes include medicines and electrolyte abnormalities such as low calcium and low magnesium.
 9. **Other components:** U wave (often linked to hypokalaemia) and J wave (typically hypothermia).
 10. **Observe the patient.** The more abnormal the rhythm, the less blood the heart pumps; look for dizziness, confusion, low blood pressure, chest pain, shortness of breath, loss of consciousness, and check pulse, perfusion and blood pressure.
@@ -71,6 +71,10 @@ The public summary of the AACN dysrhythmia-monitoring alert states that the accu
 - **Document** rhythm, rate, intervals, time, patient status, actions and who was informed; attach strips as local policy requires.
 - **Not covered:** alarm limits, lead choice for ST monitoring, 12-lead acquisition detail, paced rhythms, indications and duration of monitoring (no source read).
 
+**Assess the patient with an arrhythmia, not only the ECG rate (2025 ALS).** In a patient with a pulse, report clinical evidence of circulatory compromise, loss of consciousness, acute heart failure or suspected myocardial ischaemia in addition to the rhythm and rate. A patient with a new rhythm and serious symptoms requires immediate expert review even if a monitor label appears reassuring. Obtain a suitable diagnostic tracing when feasible without delaying emergency care, preserve the rhythm strip for review, and communicate relevant medication and electrolyte changes. If arrest is suspected, activate the resuscitation pathway rather than waiting for a 12-lead ECG.
+
+**Tachycardia as a cause or a consequence of deterioration (AHA 2025 adult ALS).** A rapid rhythm may cause circulatory compromise, or may be a response to another condition such as sepsis. Report the rhythm, onset, blood pressure, perfusion, symptoms and concurrent illness, and request urgent expert assessment when the patient is unstable. Do not assume a monitor label or heart rate establishes that the rhythm itself is the cause. The responding team determines treatment; this lesson does not teach cardioversion, drug selection or device operation.
+
 ## 8. Monitoring parameters
 Heart rate and rhythm; regularity; PR, QRS and QT intervals as available; ST segments; pulse, blood pressure, capillary refill, mental state, oxygen saturation, chest pain, dyspnoea; electrode contact and artifact; electrolytes and medicines relevant to the rhythm; alarms and their response.
 
@@ -80,7 +84,7 @@ Heart rate and rhythm; regularity; PR, QRS and QT intervals as available; ST seg
 | Rate calculation | Count R waves in a 6-second strip × 10 | 7.3 |
 | Regularity categories | Regular; irregularly irregular; regularly irregular; occasionally irregular | 7.3 |
 | Normal PR and QRS | PR 0.12–0.20 s; QRS 0.04–0.12 s | 7.3 |
-| ST abnormality | Elevation or depression ≥ 1 mm at J point is abnormal | 7.3 |
+| ST abnormality | New ST changes require urgent assessment in context; criteria depend on lead and patient characteristics | 7.3; 2026 Universal Definition (targeted check) |
 | QTc | Prolonged QTc risks torsades, VT and VF | 7.3 |
 | Hyperkalaemia and QRS | Prolonged QRS may indicate hyperkalaemia or bundle branch block | 7.3 |
 | Artifact | Poor contact or movement can produce wrong rhythm labels | 7.2 |
@@ -99,7 +103,7 @@ Wide-complex rhythm; chaotic or absent rhythm; asystole; unresponsive patient wi
 | Diagnose the rhythm formally, choose drug, cardioversion, pacing or other treatment, set targets | Prescriber decision |
 
 ## 12. Escalation criteria
-Call for help immediately for pulseless rhythms or collapse, and urgently for any symptomatic dysrhythmia, a life-threatening rhythm with a pulse, new heart block, or deterioration.
+Assess the patient immediately for a new or concerning rhythm. Activate emergency response for collapse, suspected arrest or a rhythm accompanied by haemodynamic instability; do not delay for a diagnostic ECG. For suspected acute coronary syndrome, obtain an urgent diagnostic 12-lead ECG and escalate promptly; a normal or nondiagnostic initial tracing does not exclude an acute coronary event. The 2026 Fifth Universal Definition of MI is a diagnostic framework, not a nursing standing order.
 SBAR — **S:** bed X, monitor shows a wide-complex tachycardia at about 150, patient confused and pale. **B:** day 3 after admission with sepsis; potassium and magnesium results pending. **A:** possible ventricular tachycardia with a pulse and low cardiac output. **R:** please come now; I have the arrest trolley and defibrillator pads ready and am checking the pulse and blood pressure.
 
 ## 13. Potential complications
@@ -121,7 +125,7 @@ B. Begin chest compressions at once, because the monitor label has identified a 
 C. Silence the alarm and wait to see whether it repeats before taking any action, since the patient looks well.
 D. Call the family to the bedside, because a ventricular fibrillation alarm means that the patient is dying.
 **Answer: A.**
-**Why correct:** The textbook says the monitor's rhythm name is not always correct because of artifact; the patient's clinical state decides the response.
+**Why correct:** A talking patient with a strong pulse is not in cardiac arrest. Assess the patient and verify the trace using other available leads, pulse and monitoring data; check electrode contact and obtain a diagnostic tracing when needed. Correct the monitoring fault rather than leaving the alarm disabled. A genuine unstable rhythm or loss of circulation requires immediate emergency response.
 **Why not B:** A talking patient with a pulse does not need compressions.
 **Why not C:** Waiting without looking at the patient is unsafe.
 **Why not D:** It causes distress and is not a clinical response.
@@ -132,10 +136,10 @@ B. Sinus bradycardia, because a slow sinus rhythm shows a wavy baseline and no d
 C. Atrial fibrillation, because this is the pattern the textbook names as the hallmark of that rhythm.
 D. Asystole, because the absence of P waves with an irregular baseline is the pattern of a flat line.
 **Answer: C.**
-**Why correct:** Irregularly irregular narrow QRS complexes with no distinct P waves or a wavy baseline are the hallmark of atrial fibrillation in the textbook.
-**Why not A:** Normal sinus rhythm is regular with normal P waves.
+**Why correct:** An irregular ventricular rhythm without discrete P waves is a typical atrial fibrillation pattern. The QRS can be narrow or wide depending on conduction or other factors; the bedside pattern is not definitive when artifact or other rhythms are possible. Obtain a suitable tracing and clinical review.
+**Why not A:** Sinus rhythm normally has identifiable P waves before QRS complexes; some physiologic beat-to-beat variation can occur.
 **Why not B:** Sinus bradycardia is a regular slow rhythm.
-**Why not D:** Asystole is a flat line, with no atrial or ventricular activity, so it does not fit this pattern.
+**Why not D:** Asystole means absence of ventricular electrical activity; residual atrial activity may occasionally be visible. Verify the tracing and patient clinically.
 
 **Q3 (judgment).** A patient on the monitor is unresponsive and the rhythm shows no organised complexes. What is the correct priority?
 A. Print a strip and ask the doctor to confirm the rhythm first, before anyone starts any resuscitation measures.
@@ -143,7 +147,7 @@ B. Check for responsiveness and a pulse, call for help and start resuscitation a
 C. Check the electrode contact for two minutes before doing anything else, in case the trace is wrong.
 D. Take a full set of observations and then decide what to do about the rhythm that the monitor displays.
 **Answer: B.**
-**Why correct:** Ventricular fibrillation is described as requiring immediate CPR and emergency response; unresponsiveness with an abnormal rhythm is treated as cardiac arrest.
+**Why correct:** Activate the emergency response immediately, assess responsiveness, breathing and circulation rapidly, and initiate CPR if circulation is absent or uncertain in an unresponsive patient who is not breathing normally. ERC 2025 emphasizes early recognition and immediate CPR. Attach a defibrillator promptly and follow the trained team algorithm; never wait for a printed strip.
 **Why not A:** Confirmation must not delay CPR.
 **Why not C:** Electrode checks are for a conscious patient with a doubtful trace.
 **Why not D:** Observations delay emergency action.
@@ -154,8 +158,8 @@ B. Count the large boxes and multiply by 20.
 C. Measure the PR interval and divide by the QRS.
 D. Count the R waves and multiply by 10.
 **Answer: D.**
-**Why correct:** The simplest method is to count R waves in a 6-second strip and multiply by 10.
-**Why not A:** The atrial rate also uses ×10, not division by six.
+**Why correct:** Count ventricular QRS complexes in a verified six-second interval and multiply by ten to estimate beats per minute. This gives an approximate rate; longer recordings are more informative for highly irregular rhythms. Confirm the actual strip duration and calibration.
+**Why not A:** Counting atrial P waves in a six-second interval and multiplying by ten estimates atrial rate when identifiable, not ventricular rate.
 **Why not B:** The textbook method is based on R waves in a 6-second strip.
 **Why not C:** Intervals are not used to calculate the rate.
 
@@ -165,31 +169,38 @@ B. PVCs falling on the T wave are harmless and are expected with a long QT, so n
 C. The pattern means the electrodes have been placed incorrectly, so the leads should be moved before anything is reported.
 D. The pattern shows that the patient has developed first-degree AV block, which needs no further assessment tonight.
 **Answer: A.**
-**Why correct:** The textbook states that R on T can trigger ventricular tachycardia and that conditions causing a prolonged QT make it more likely.
+**Why correct:** Premature ventricular beats occurring during repolarization can precipitate dangerous ventricular rhythms, particularly in a patient with prolonged QT. Assess the patient, escalate promptly and review reversible risks such as QT-prolonging medications and electrolyte abnormalities with the team; unstable or pulseless rhythms require the emergency response.
 **Why not B:** The textbook says it can trigger a dangerous rhythm.
-**Why not C:** Ectopic beats come from the heart, not from electrode placement.
+**Why not C:** Artifact or lead problems may mimic ectopy, but new suspected ventricular ectopy with prolonged QT requires clinical assessment and timely escalation.
 **Why not D:** First-degree block is a long PR interval.
 
-**Q6 (scope).** Which task belongs to the prescriber rather than the nurse?
-A. Applying the electrodes to clean, dry skin with good contact and attaching the lead wires as per policy.
-B. Printing a 6-second strip and recording the rhythm and the patient's status.
-C. Deciding on the treatment for a newly identified dysrhythmia, such as the drug, cardioversion or pacing.
-D. Calling for help when the patient is pulseless.
+**Q6 (prioritization).** A patient develops a new rapid wide-complex rhythm, has a palpable pulse, and is becoming hypotensive and confused. A colleague wants to spend several minutes determining the exact rhythm from the monitor. What should the nurse prioritize?
+A. Record a diagnostic tracing and wait for a definitive rhythm interpretation before calling for help.
+B. Obtain repeat routine observations and compare them with the previous shift before escalating.
+C. Activate urgent help, assess circulation and prepare for the trained unstable-rhythm pathway.
+D. Start chest compressions based on the wide-complex rhythm despite the confirmed pulse.
 **Answer: C.**
-**Why correct:** Deciding which drug, cardioversion or pacing to use for a new dysrhythmia is a treatment decision for the prescriber or team. Applying electrodes, documenting and calling for help are nursing actions.
-**Why not A:** Electrode application is a nursing skill.
-**Why not B:** Documentation is a nursing task.
-**Why not D:** Calling for help is a nursing responsibility.
+**Why correct:** A new tachyarrhythmia with hypotension and altered mentation may be haemodynamically unstable. Summon the emergency team and assess ABC and circulation immediately, maintaining monitoring and preparing for authorized treatment. Obtain a diagnostic tracing if feasible without delaying urgent care. ERC 2025 distinguishes unstable tachyarrhythmia with a pulse from cardiac arrest; if circulation is lost, follow the resuscitation pathway.
+**Why not A:** A diagnostic tracing is useful, but delaying escalation for exact rhythm classification may expose an unstable patient to harm.
+**Why not B:** Routine observation comparison cannot substitute for prompt assessment and emergency escalation in new instability.
+**Why not D:** A confirmed pulse distinguishes this presentation from pulseless arrest; initiate CPR if circulation becomes absent or uncertain under the trained algorithm.
 
 ## 18. References
 - Ernstmeyer K, Christman E (eds). Nursing Advanced Skills. Open RN / WisTech Open, 2023. Chapter 7: sections 7.2 Basic Concepts, 7.3 A Systematic Approach to Interpreting an ECG, 7.4 ECG Patterns and Dysrhythmias, 7.5 Checklist: Initiating Telemetry. https://wtcs.pressbooks.pub/nursingadvancedskills/ (CC BY 4.0 "except where otherwise noted"; accessed 2026-11-14)
 - UK Kidney Association. Clinical Practice Guideline: Treatment of Acute Hyperkalaemia in Adults (July 2026), rationale for guidelines 14.1–14.2. https://guidelines.ukkidney.org/hyperkalaemia/ (accessed 2026-11-14)
 
+- Fifth Universal Definition of Myocardial Infarction (2026). https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025 (accessed 2026-11-24; selected ECG criteria checked, full guideline and rights review pending).
+
+- Resuscitation Council UK 2025 adult BLS. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines (selected recommendations, accessed 2026-11-24)
+- Resuscitation Council UK 2025 adult ALS. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines (selected recommendations, accessed 2026-11-24)
+
+- S-AHA-ALS-2025. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support (selected official or publisher HTML passages checked 2026-11-24; full appraisal and independent review outstanding).
+
 ## 19. Local protocol note
 Monitor alarm limits, lead choice, monitoring indications, who may interpret and respond, resuscitation procedure, and documentation of strips follow the unit's policies and training.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: an introductory US nursing textbook (CC BY, adapted partly from StatPearls) plus public summaries of two AACN practice alerts. It is educational, not a guideline; the AACN recommendations were not accessible. ICU monitoring standards (AHA), the ERC/AHA resuscitation guidelines and ECG teaching atlases were not read.
+- Source quality: an introductory US nursing textbook (CC BY, adapted partly from StatPearls) plus public summaries of two AACN practice alerts. It is educational, not a guideline; the AACN recommendations were not accessible. AHA 2025 adult ALS selected tachycardia discussion checked directly 2026-11-24; full AHA hospital ECG monitoring standards and ECG teaching atlases remain unappraised.
 - Applicability: adults; entry-level; general inpatient.
 - Not covered: strip images, 12-lead ischaemia interpretation, paced rhythms, drug choices and doses, cardioversion and defibrillation energy and technique, alarm management, monitoring indications.
 - Open questions for reviewers (CARD, CCP, NE, BN): which rhythms to teach at which level; strip library with a licence; alarm management; threshold wording for ST changes.

@@ -13,7 +13,7 @@ describe("AbgExerciseView", () => {
 
   it("shows the gas panel values and requires a choice before feedback appears", () => {
     render(<AbgExerciseView exercise={exercise} locale="en" />);
-    expect(screen.getByText("7.1")).toBeVisible();
+    expect(screen.getByText("7.23")).toBeVisible();
     const check = screen.getByRole("button", { name: "Check answer" });
     expect(check).toBeDisabled();
     expect(screen.queryByText("Correct answer")).not.toBeInTheDocument();

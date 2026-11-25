@@ -205,6 +205,11 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await expect(page.getByRole("heading", { level: 1, name: "Draft register" })).toBeVisible();
   const { total, casesPartial } = draftIndexCounts();
   await expect(page.getByText(`${total} of ${total} drafts`)).toBeVisible();
+  await page.goto("/en/admin/content/register?review=patient-safety&sort=review");
+  await expect(page.getByLabel("Suggested review lane")).toHaveValue("patient-safety");
+  await expect(page.locator("tbody tr").first()).toContainText("SC-09");
+  await expect(page.locator("tbody tr").nth(1)).toContainText("SC-11");
+  await expect(page.getByText("The review queue is a workflow suggestion", { exact: false })).toBeVisible();
   await page.goto("/en/admin/content/register?type=cases&evidence=partial");
   await expect(page.getByText(`${casesPartial} of ${total} drafts`)).toBeVisible();
   await page.goto("/en/admin/content/register?q=zzzz-nothing");
@@ -212,6 +217,8 @@ test("draft register: an administrator filters unpublished drafts, reads validat
   await page.goto("/en/admin/content/register/SC-11");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("SC-11");
   await expect(page.getByText("Not reviewed · not approved · not published")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Independent review handoff" })).toBeVisible();
+  await expect(page.getByText("Publication remains blocked until the clinical, rights and publisher approvals", { exact: false })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Validation feedback" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Sources, licensing and freshness" })).toBeVisible();
   const note = `Check the UKKA review date ${RUN_TEXT}`;

@@ -22,9 +22,10 @@ describe("clinical evidence corrections — November 2026", () => {
 
   it("does not teach a single lactate cutoff to rule shock in or out", () => {
     const s = read(topics["D02-T08"]);
-    const q5 = s.split("**Q5 (understanding).**")[1]?.split("**Q6 (safety).**")[0] ?? "";
+    const q5 = s.split(/^\*\*Q5 \(/m)[1]?.split(/^\*\*Q6 \(/m)[0] ?? "";
     expect(q5).toContain("**Answer: B.**");
-    expect(q5).toContain("a single value does not rule shock in or out");
+    expect(q5).toContain("No single lactate result confirms or excludes shock");
+    expect(q5).toContain("Do not administer additional fluid merely to normalize lactate");
     expect(q5).not.toContain("usually exceeds 2 mmol/L");
     expect(s).toContain("| Lactate (historical 2014 statement) |");
     expect(s).toContain("full 2025 graded recommendation review remains pending");

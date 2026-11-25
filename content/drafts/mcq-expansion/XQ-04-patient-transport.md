@@ -13,41 +13,41 @@ independently_written_note: "Original wording written for this platform; stems, 
 > DRAFT – NOT clinically reviewed. AI-generated. Unpublished; never imported into the question bank.
 
 ## 17. MCQs
-**Q1 (judgment).** A patient with low blood pressure and rising oxygen needs is booked for a CT scan and the transport assistant has arrived. What does the transfer guidance support?
+**Q1 (judgment).** A patient with low blood pressure and rising oxygen needs is booked for a CT scan that is not immediately life-saving, and the transport assistant has arrived. What does the transfer guidance support?
 A. Leave immediately, since the scan will give the team the diagnosis that guides all further treatment.
-B. Resuscitate and stabilise the patient first.
+B. Request immediate clinical review and appropriate resuscitation and stabilisation before transfer.
 C. Send the patient with the transport assistant and ask the radiographer to watch the monitor in the scanner room.
 D. Wait until the patient's blood pressure is back in the normal range, even if that delays an urgent life-saving scan.
 **Answer: B.**
-**Why correct:** ICS recommendation 58 says patients should be appropriately resuscitated and stabilised before transfer to reduce the physiological disturbance of movement.
+**Why correct:** ICS recommendation 58 says patients should be appropriately resuscitated and stabilised before transfer to reduce the physiological disturbance of movement. When a transfer is time-critical, the responsible senior team must balance delay against risk and plan ongoing resuscitation, monitoring and appropriate escorts.
 **Why not A:** Time-critical transfers exist, but stabilisation is the default expectation.
 **Why not C:** Transfers need trained escorts and continuous monitoring.
 **Why not D:** The guidance does not ask for normal values; it asks for appropriate stabilisation and warns against delaying time-critical transfers.
 **Trace:** N-ICS-TRANSFER-2026 — Rec 58: resuscitate and stabilise before transfer.
 
-**Q2 (application).** As you prepare the patient for transfer, the monitor leads and syringe-driver cables are tangled across the trolley and the screens face away from you. What should you do?
-A. Tie the monitoring cables together and position the monitors, ventilator display and syringe drivers where the escorts can see them.
-B. Leave the cables loose so they can move freely when the trolley goes over bumps in the corridor.
-C. Turn the monitor away and rely on the alarms, because alarms alert staff to any change.
-D. Disconnect the syringe drivers and carry them in the bag to keep the trolley uncluttered.
+**Q2 (judgment).** A mechanically ventilated patient is ready for a nonurgent CT transfer. The transport ventilator and infusion displays face away from the escorts, and waveform capnography is not yet connected. What should the team do before departure?
+A. Correct the equipment layout and connect acuity-appropriate monitoring before departure.
+B. Rely on the ventilator alarms and pulse oximetry, then connect capnography on arrival.
+C. Ask a second escort to watch the rear-facing displays intermittently during the journey.
+D. Disconnect the infusion pumps briefly to simplify the equipment arrangement on the trolley.
 **Answer: A.**
-**Why correct:** ICS recommendations 74-75 say monitors, ventilator displays and syringe drivers should be visible to accompanying staff and monitoring cables tied together to form an umbilicus.
-**Why not B:** Loose cables are a safety risk and are not advised.
-**Why not C:** Staff are expected to see the displays during transfer.
-**Why not D:** Interrupting infusions without a plan is unsafe.
-**Trace:** N-ICS-TRANSFER-2026 — Rec 74-75: displays visible; cables tied together (umbilicus).
+**Why correct:** ICS 2026 calls for equipment displays to remain visible and for ongoing clinical observation and monitoring during transfer, including waveform capnography and airway-pressure surveillance for both invasive and non-invasive ventilation. Secure cables and devices without tension, verify equipment function and establish backup plans before this nonurgent transfer. Do not interrupt prescribed critical therapy to simplify transport.
+**Why not B:** Pulse oximetry does not substitute for monitoring ventilation or detecting airway disconnection during transfer.
+**Why not C:** Intermittent viewing does not provide the reliable visibility and surveillance needed throughout a high-risk journey.
+**Why not D:** Interrupting prescribed infusions may cause rapid deterioration; arrange the equipment safely while maintaining delivery.
+**Trace:** N-ICS-TRANSFER-2026 — Chapter 19 and recommendations 74–75: monitoring, equipment visibility and safe arrangement.
 
-**Q3 (monitoring).** A patient is going for a scan and return that will take about forty minutes, and the vasoactive syringe is nearly empty. What does the transfer guidance support?
+**Q3 (monitoring).** Before a non-emergency scan, the transport team estimates a forty-minute round trip. The vasoactive syringe is nearly empty and unexpected delays are possible. What preparation does the cited UK transfer guidance support?
 A. Starting the transfer and replacing the syringe at the scanner, because a change takes a moment.
 B. Asking the transport assistant to fetch another syringe if the infusion runs out while the patient is in the scanner.
 C. Stopping the infusion for the scan, since the patient will be lying still and should not need it.
 D. Making sure there is enough medication for at least twice the planned duration of the transfer.
 **Answer: D.**
-**Why correct:** ICS recommendation 65 says sufficient bolus and infusion medications should be available for at least twice the duration of the planned transfer.
-**Why not A:** Changes during transfer are riskier than planning ahead.
+**Why correct:** The UK ICS 2026 medication contingency recommendation specifies supplies for at least twice the planned journey. Before departure, also calculate oxygen needs for the intended support modality, possible delays and changes in demand; verify power and backup resources under local policy.
+**Why not A:** Planning a syringe change in an unfamiliar environment adds avoidable risk. Confirm adequate medication supply and a safe changeover plan with the trained team before departure, without interrupting critical therapy.
 **Why not B:** A transport assistant cannot prepare or give critical infusions.
 **Why not C:** Stopping a critical infusion without a plan risks deterioration.
-**Trace:** N-ICS-TRANSFER-2026 — Rec 65: infusions for at least twice the planned duration.
+**Trace:** N-ICS-TRANSFER-2026 — Recommendation 65 and section 17.11: sufficient medication and oxygen reserves.
 
 **Q4 (scope).** The team plans to move a critically unwell, ventilated patient with one nurse as the only escort. What should you raise?
 A. Nothing, because a single nurse can cope as long as a transport assistant helps with the trolley and the doors.
@@ -57,7 +57,7 @@ D. That the doctor can follow the trolley a few minutes later in case a problem 
 **Answer: C.**
 **Why correct:** ICS recommendation 55 says higher-risk patients must have two appropriately trained, competent and experienced clinical escorts, informed by the risk assessment.
 **Why not A:** A transport assistant is not a clinical escort.
-**Why not B:** The guidance says NHS ambulance crew must not be used as the second clinical escort.
+**Why not B:** For UK NHS transfers, the ambulance crew must not substitute for the second competent critical-care escort required for a higher-risk patient; the local service determines staffing.
 **Why not D:** An escort has to be with the patient throughout.
 **Trace:** N-ICS-TRANSFER-2026 — Rec 53-57: risk assessment; two clinical escorts for higher risk.
 

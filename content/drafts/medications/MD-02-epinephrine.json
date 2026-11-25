@@ -14,7 +14,7 @@
   "high_alert_note": "Named as a vasopressor in the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
   "summary": "Adrenergic agonist used for emergency treatment of allergic reactions including anaphylaxis and to raise mean arterial pressure in adults with hypotension associated with septic shock. Nursing focus: correct injection site and route for the indication, extravasation, and cardiac effects.",
   "batch": 1,
-  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Selected clinical guideline or trial evidence supplements the label; no full evidence appraisal or patient-specific prescribing guidance is supplied.",
   "evidence_status": "partial",
   "license_status": "unassessed",
   "label_source": "FDA",
@@ -45,6 +45,21 @@
       "id": "S-UIC-EXTRA-2026",
       "read": "partial",
       "use": "UIC Sept 2026 pharmacy review, initial recognition/first response to extravasation; no antidote dose or administration detail."
+    },
+    {
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "SSC 2026 vasopressor and inotrope recommendation statements"
+    },
+    {
+      "id": "S-RCUK-SPECIAL-2025",
+      "read": "partial",
+      "use": "RCUK 2025 special circumstances: immediate IM adrenaline for suspected anaphylaxis; public HTML"
+    },
+    {
+      "id": "S-ADRENALIN-IM-2025",
+      "read": "partial",
+      "use": "Specific ADRENALIN label sections 2.2 and 5.1, anaphylaxis injection site"
     }
   ],
   "sections": {
@@ -57,6 +72,13 @@
           "sources": [
             "L-EPINEPHRINE"
           ]
+        },
+        {
+          "text": "SSC 2026 conditionally considers epinephrine when pressure remains inadequate despite norepinephrine and vasopressin, or alongside norepinephrine when vasopressin is unavailable. Concomitant cardiac dysfunction is a separate conditional pathway. These decisions belong to the responsible clinician.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026"
+          ]
         }
       ]
     },
@@ -64,9 +86,11 @@
       "support": "partial",
       "items": [
         {
-          "text": "For injection in anaphylaxis, the label says do not inject into the buttocks, digits, hands or feet, and states the anterolateral thigh is the most appropriate site; avoid repeated injection at the same site.",
-          "support": "sourced",
+          "text": "For anaphylaxis, the product label identifies the outer anterolateral thigh and warns against injection into the buttocks, digits, hands or feet. RCUK 2025 prioritizes the intramuscular route for suspected anaphylaxis. Confirm the indication and exact product; different emergency presentations are not interchangeable.",
+          "support": "partial",
           "sources": [
+            "S-ADRENALIN-IM-2025",
+            "S-RCUK-SPECIAL-2025",
             "L-EPINEPHRINE"
           ]
         }
@@ -113,11 +137,18 @@
           "sources": [
             "L-EPINEPHRINE"
           ]
+        },
+        {
+          "text": "The registered Gland Pharma label warns of pulmonary oedema, renal vasoconstriction with oliguria, and greater hypokalaemic effects with potassium-depleting medicines. Review ordered electrolyte and glucose results and respiratory and renal findings as part of patient-specific monitoring.",
+          "support": "partial",
+          "sources": [
+            "L-EPINEPHRINE"
+          ]
         }
       ]
     },
     "safety_alerts": {
-      "support": "full",
+      "support": "partial",
       "items": [
         {
           "text": "Avoid extravasation into tissues, which can cause local necrosis (label warning).",
@@ -129,6 +160,21 @@
         {
           "text": "The label warns that epinephrine may aggravate angina pectoris or produce ventricular arrhythmias.",
           "support": "sourced",
+          "sources": [
+            "L-EPINEPHRINE"
+          ]
+        },
+        {
+          "text": "For anaphylaxis with spontaneous circulation, prompt authorized IM treatment is the first-line approach; IV adrenaline for refractory anaphylaxis is specialist-led. Do not substitute a septic-shock infusion or a cardiac-arrest pathway for this treatment.",
+          "support": "partial",
+          "sources": [
+            "S-RCUK-SPECIAL-2025",
+            "S-ADRENALIN-IM-2025"
+          ]
+        },
+        {
+          "text": "The registered label lists no contraindications. Its interaction warnings include altered pressor responses with other cardiovascular medicines and increased arrhythmia risk with agents such as beta blockers, cardiac glycosides and some anaesthetics. Review these with the team without delaying time-critical authorised anaphylaxis treatment.",
+          "support": "partial",
           "sources": [
             "L-EPINEPHRINE"
           ]
@@ -158,7 +204,7 @@
       "support": "partial",
       "items": [
         {
-          "text": "For IV epinephrine, urgently escalate suspected extravasation, rhythm disturbance, chest pain or deteriorating perfusion. When the infusion site appears compromised, stop administration through that catheter immediately and activate the local extravasation and alternative-access plan; this is distinct from the intramuscular anaphylaxis administration route.",
+          "text": "For IV epinephrine, urgently escalate suspected extravasation, rhythm disturbance, chest pain or deteriorating perfusion. When the infusion site appears compromised, stop administration through that catheter immediately and activate the local extravasation and alternative-access plan; this is distinct from the intramuscular anaphylaxis administration route. Arrange authorised alternate access and continuity of essential haemodynamic support urgently; do not equate stopping delivery at an injured site with abandoning the patient's circulatory support. Follow local pharmacy and extravasation procedures.",
           "support": "partial",
           "sources": [
             "L-EPINEPHRINE",
@@ -170,6 +216,13 @@
           "support": "sourced",
           "sources": [
             "S-RCP-NEWS2"
+          ]
+        },
+        {
+          "text": "Rare serious soft-tissue infection has been reported after thigh injection. New progressive pain, swelling, redness or systemic deterioration after injection needs urgent clinical assessment; this warning does not justify delaying emergency anaphylaxis treatment.",
+          "support": "partial",
+          "sources": [
+            "L-EPINEPHRINE"
           ]
         }
       ]
@@ -208,7 +261,7 @@
   "monitoring": [
     {
       "kind": "assess",
-      "text": "Check the injection or infusion site for tissue damage.",
+      "text": "Check IV site and distal perfusion for signs of tissue injury; urgently escalate suspected extravasation and arrange the local alternative-access plan for essential therapy.",
       "critical": true,
       "support": "partial",
       "sources": [
@@ -241,23 +294,42 @@
       ]
     },
     {
+      "kind": "assess",
+      "text": "Review ordered potassium and glucose trends during IV therapy, especially in patients receiving medicines that lower potassium. Escalate new arrhythmias, worsening oxygenation, suspected pulmonary oedema or declining urine output.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-EPINEPHRINE"
+      ]
+    },
+    {
       "kind": "document",
       "text": "Record indication, route and response.",
       "critical": false,
       "support": "local_protocol",
       "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "During ongoing IV therapy review medicines that may alter pressor response or rhythm risk; escalate new arrhythmia or unexpectedly severe hypertension.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-EPINEPHRINE"
+      ]
     }
   ],
   "gaps": [
     "Dosing and preparation for anaphylaxis versus septic shock: deliberately not included.",
-    "Anaphylaxis and resuscitation guidelines were not read for this entry.",
+    "RCUK 2025 anaphylaxis and SSC 2026 selected recommendations now linked; full resuscitation and refractory anaphylaxis appraisal and local emergency authorization remain outstanding.",
     "Other label indications and presentations were not summarised.",
     "Drug-specific antidote selection, extravasation escalation pathway, peripheral IV-site surveillance frequency, concentration and safe duration require local ICU/pharmacy review."
   ],
   "permissions": [
     "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
     "FDA infusion pump page: verify reuse terms.",
-    "UIC extravasation education: cite and paraphrase only; no treatment figures or doses reproduced, reuse not cleared."
+    "UIC extravasation education: cite and paraphrase only; no treatment figures or doses reproduced, reuse not cleared.",
+    "Clinical guideline and journal sources: independent paraphrase and citation only; commercial reuse not cleared."
   ],
   "label_currency_check": {
     "checked": "2026-11-16",

@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["NICE NG253 Suspected sepsis in people aged 16 or over (published 19 Nov 2025; page last updated 23 Sep 2026) – UK-specific", "Surviving Sepsis Campaign adult guidelines 2021 (Intensive Care Med 2021;47:1181-1247) – full text read; SUPERSEDED by the 2026 edition", "Surviving Sepsis Campaign 2026 (Crit Care Med 2026; official SCCM recommendation page, recommendation-level text read; the full publication was NOT read)"]
-sources: [S-NICE-NG253, S-SSC-2021, S-SSC-2026]
+sources: [S-NICE-NG253, S-SSC-2021, S-SSC-2026, S-IDSA-AMR-2026]
 independently_written_note: "Original wording. NICE chapters 'Could this be sepsis?' and 'Evaluating risk' and the SSC 2021 full text (PMC open-access copy) were read; no text copied. NICE restricts commercial reuse; the PMC copy of SSC 2021 is distributed under temporary pandemic-era terms, so treat both as cite-only. SSC 2026: the official SCCM recommendations page (statements, strength, certainty and remarks) was read and compared with each SSC 2021 statement used here; this is recommendation-level text, NOT the full publication, so rationales and evidence tables were not reviewed."
 ---
 # Recognising possible sepsis in adults and escalating
@@ -50,6 +50,8 @@ Septic shock is generally described (Sepsis-3 consensus definition, cited by the
 - Reassess regularly; escalate again if there is no improvement or deterioration.
 - Document times (recognition, call, review, first antimicrobial, response).
 
+**Source-control coordination (SSC 2026).** In a patient receiving treatment for sepsis, communicate a suspected anatomical source that may need a procedure (for example, an obstructed infected urinary tract or a drainable collection). Record when the concern was raised, the responsible team, planned assessment or intervention, and any unresolved delay; re-escalate worsening physiology or an unaddressed urgent plan. SSC conditionally favors early source control, ideally within six hours of the relevant diagnosis, with very low certainty. This does not mean that all sepsis requires a procedure or that a nurse independently removes an essential line or arranges an invasive intervention. Antimicrobial treatment and resuscitation proceed in parallel.
+
 ## 8. Monitoring parameters
 Frequency is set by risk and local policy. NICE links NEWS2-based risk to re-calculation intervals: about every 30 minutes (high risk), hourly (medium), every 4–6 hours (low), and routine observations (very low). Recalculate whenever the person deteriorates or something unexpected changes. In ICU, continuous monitoring is usual; the principle is that higher risk means more frequent, documented reassessment.
 
@@ -68,6 +70,8 @@ Frequency is set by risk and local policy. NICE links NEWS2-based risk to re-cal
 | Special groups | Pregnancy, children, neutropenia need separate pathways | NICE refers to separate guidance for pregnancy and neutropenic sepsis |
 | Recalculation intervals | Reassess at intervals matched to risk | Intervals above are from NICE (citing a UK academy statement) |
 
+**Antimicrobial stewardship after emergency treatment (SSC 2026 and IDSA 2026 AMR guidance).** During subsequent rounds, report new microbiology and susceptibility findings, possible alternative diagnoses, adverse effects, renal function and whether the source has been controlled. The SSC supports narrowing or discontinuing unnecessary antimicrobial treatment after clinical reassessment, including selected culture-negative cases. A negative culture alone does not authorize stopping therapy. Procalcitonin may support stopping decisions in selected patients with source control when duration is uncertain; do not wait for it before time-critical initial treatment. The treating team decides. If a susceptibility report suggests the current treatment is inactive, urgently communicate it to the prescriber and pharmacy rather than waiting for the next scheduled review. IDSA emphasizes the difference between infection and colonization; previous organisms, recent antibiotics and local resistance patterns help guide team decisions.
+
 ## 10. Warning signs and red flags
 New confusion or drowsiness; respiratory rate rising; new oxygen requirement; systolic pressure falling or much lower than usual; heart rate rising or new arrhythmia; low or absent urine output; temperature high or low; mottled/ashen skin, blue lips, non-blanching rash; severe pain at an infected site; "feels very unwell", family says "not himself".
 
@@ -81,7 +85,7 @@ New confusion or drowsiness; respiratory rate rising; new oxygen requirement; sy
 | Administering ordered antimicrobials promptly and checking allergies | Independent nursing (administration) after prescriber order |
 
 ## 12. Escalation criteria
-Escalate immediately for: score in a high-risk band for your tool; a single parameter at the maximum weight; two or more red flags; nurse concern even if the score is low; deterioration despite treatment; no review within the time set by policy (use the chain of command).
+Activate the unit's emergency response for threatened airway, breathing or circulation or rapidly worsening consciousness. Begin immediate bedside assessment and supportive care within scope while summoning help. Escalate urgently for a high-risk score, a single parameter at maximum weight, red flags, nurse concern even with a low score, or deterioration despite treatment. Never wait for a score, a repeat observation or a scheduled review when the patient is clinically unstable; use the chain of command if help is delayed.
 SBAR — **S:** "I'm the nurse for bed 6. His early-warning score is [x], he is newly confused and urine output is low." **B:** "Day 2 after bowel surgery, on [current treatment], temperature [x], lactate [if available]." **A:** "I think he may be septic and getting worse." **R:** "Please review within [time]; do you want cultures and lactate before antimicrobials? I will repeat observations every [interval]."
 
 ## 13. Potential complications
@@ -109,7 +113,7 @@ B. Encourage oral fluids and ask the family to stay and watch her through the ni
 C. Document the daughter's concern and hand over to the morning team, since she has no fever.
 D. Escalate now as possible sepsis, citing the fall from her usual pressure and the new confusion.
 **Answer: D.**
-**Why correct:** NICE NG253 requires clinical judgement alongside NEWS2, including changed behaviour reported by family or carers; new confusion and a substantial blood-pressure fall warrant prompt assessment despite a NEWS2 score of 4. The score does not exclude severe illness.
+**Why correct:** NICE NG253 requires clinical judgement alongside NEWS2, including changed behaviour reported by family or carers; new confusion and a substantial blood-pressure fall warrant prompt assessment despite a NEWS2 score of 4. The score does not exclude severe illness. Assess ABC and perfusion, activate urgent help and obtain repeat observations in parallel; do not wait for a higher score.
 **Why not A:** The low band is a prompt, not a reason to delay when other danger signs are present.
 **Why not B:** Oral fluids do not address possible sepsis and cannot replace clinical review; fluids are prescribed.
 **Why not C:** Fever is not required for sepsis, and waiting for the morning delays treatment.
@@ -131,32 +135,32 @@ B. Hold both until the lactate result is back so that treatment can be targeted 
 C. Prepare and collect the cultures without delaying the antimicrobial, check allergies, and give the first dose promptly.
 D. Ask the pharmacist to decide the drug and the timing, because nurses cannot take part in antimicrobial treatment or sepsis care.
 **Answer: C.**
-**Why correct:** SSC 2026 recommends collecting blood cultures as soon as possible and ideally before antimicrobials (strong), and timely antimicrobials; the nurse prepares, collects, checks allergies and gives the ordered dose promptly.
-**Why not A:** Taking cultures first is preferable when it causes no delay, and later sampling lowers their yield.
+**Why correct:** SSC 2026 recommends collecting blood cultures as soon as possible and ideally before antimicrobials (strong), and timely antimicrobials; the nurse prepares, collects, checks allergies and gives the ordered dose promptly. Obtain ordered lactate in parallel; sampling or waiting for lactate must not cause avoidable delay to urgent treatment. Timing depends on the clinical likelihood of sepsis and shock.
+**Why not A:** Obtain cultures first when feasible without delaying urgent therapy; if that is not feasible, give the ordered antimicrobial and collect cultures promptly afterwards.
 **Why not B:** Waiting for a result delays time-critical treatment.
 **Why not D:** The prescriber chooses the drug; the nurse administers it safely and promptly.
 
-**Q4 (understanding).** According to the current 2026 Surviving Sepsis Campaign guideline, how should qSOFA be used to screen acutely ill hospital patients for possible sepsis?
-A. Use it as the preferred single screening tool for all hospital wards.
-B. Prefer NEWS, NEWS2, MEWS or SIRS over qSOFA as a single screening tool.
-C. Use it in place of clinical assessment when the ward is short of staff and observations are delayed.
-D. Use it only for pregnant patients and children.
+**Q4 (judgment).** An acutely ill ward patient with suspected infection has a qSOFA score of 1, a rising respiratory rate, new confusion and a worsening early-warning score. A colleague suggests waiting until qSOFA reaches 2. What is the best response?
+A. Repeat qSOFA at the next observation round and escalate once it reaches 2.
+B. Use the approved early-warning pathway and clinical findings to escalate now.
+C. Use the qSOFA score to decide whether to request blood cultures before any assessment.
+D. Replace the local early-warning score with qSOFA because infection is suspected.
 **Answer: B.**
-**Why correct:** SSC 2026 strongly recommends NEWS, NEWS2, MEWS or SIRS rather than qSOFA as a single sepsis screening tool for acutely ill hospital patients (moderate certainty). No screening score alone confirms or excludes sepsis.
-**Why not A:** SSC 2026 prefers other screening tools over qSOFA alone.
-**Why not C:** No score replaces clinical assessment.
-**Why not D:** The guideline does not limit its statement to those groups.
+**Why correct:** SSC 2026 strongly recommends NEWS, NEWS2, MEWS or SIRS rather than qSOFA as a single sepsis screening tool for acutely ill hospital patients (moderate certainty). A low qSOFA does not exclude serious illness. Assess ABC and perfusion, activate the local escalation pathway and communicate the changing findings without waiting for a threshold.
+**Why not A:** Waiting for qSOFA to reach a particular value risks delaying assessment of already evident deterioration.
+**Why not C:** Cultures may be indicated, but a screening score does not determine a diagnosis or replace clinical assessment.
+**Why not D:** Use the locally approved screening and escalation pathway, rather than replacing it with a less suitable single tool.
 
-**Q5 (scope).** Which task belongs to the prescriber rather than the nurse?
-A. Taking a full set of observations and calculating the early-warning score.
-B. Phoning for urgent review when the score is in the high-risk band.
-C. Recording the times of the call, the review and the first antimicrobial dose.
-D. Choosing the antimicrobial and deciding the first fluid prescription.
+**Q5 (judgment).** An adult treated for septic shock is improving. Final cultures identify an organism with a susceptibility profile, but the original broad-spectrum antimicrobial prescription remains active. What should the nurse do?
+A. Omit the next scheduled antimicrobial because the culture result is now available.
+B. Continue the original regimen until discharge without raising the result with the team.
+C. Select the narrowest active agent from the susceptibility report and request it from pharmacy.
+D. Communicate the results and clinical response; request a timely authorized antimicrobial review.
 **Answer: D.**
-**Why correct:** Choice of antimicrobial and fluid prescription are prescribing decisions.
-**Why not A:** Observations and scoring are independent nursing tasks.
-**Why not B:** Escalation is a nursing responsibility.
-**Why not C:** Documentation is a nursing responsibility.
+**Why correct:** SSC 2026 recommends antimicrobial de-escalation when microbiological confirmation and susceptibility results are available (strong recommendation, very low certainty). Narrowing or discontinuing unnecessary coverage requires clinical assessment, source evaluation and an authorized prescribing decision. Report the culture result, response, allergies and renal function; verify the updated order before changing administration. Do not independently select or omit an agent.
+**Why not A:** Culture results alone do not authorize omission of a prescribed dose; clarify the plan promptly and avoid an unintended treatment gap.
+**Why not B:** Continuing broad coverage without reassessment misses an important stewardship opportunity and can expose the patient to avoidable harms.
+**Why not C:** Susceptibility information is one part of selection; infection site, clinical response and patient-specific factors also matter.
 
 **Q6 (safety).** A hospital outside the UK uses a locally approved early-warning system. A new nurse says NICE NEWS2 thresholds apply unchanged to all patients. What is the best reply?
 A. NICE thresholds are an international standard, so they must be applied in every hospital, whatever early-warning score the unit has adopted for its own wards and patients.
@@ -173,6 +177,8 @@ D. NEWS2 bands can be applied without any change to pregnant patients and to chi
 - NICE. Suspected sepsis in people aged 16 or over (NG253). Published 19 Nov 2025; page updated 23 Sep 2026. https://www.nice.org.uk/guidance/ng253 (chapters "Could this be sepsis?" and "Evaluating risk"; accessed 2026-11-14)
 - Society of Critical Care Medicine / European Society of Intensive Care Medicine. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock **2026** (published 23 Mar 2026). Official recommendation statements including strength, certainty and clinical remarks, NOT the full publication or evidence tables. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026 (recommendation page checked 2026-11-21; cited, not reproduced).
 - Evans L, Rhodes A, Alhazzani W, et al. **Historical/superseded 2021 edition:** Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med. 2021;47:1181-1247. doi:10.1007/s00134-021-06506-y. https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/ (accessed 2026-11-14)
+
+- IDSA. 2026 Guidance on the Treatment of Antimicrobial Resistant Gram-Negative Infections. https://www.idsociety.org/practice-guideline/amr-guidance/ (selected general-management text accessed 2026-11-24; no organism-specific regimen or dosing table reproduced).
 
 ## 19. Local protocol note
 Use your institution's early-warning score and sepsis pathway; pregnancy, children and neutropenia follow separate pathways.

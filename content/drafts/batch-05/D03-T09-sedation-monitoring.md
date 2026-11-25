@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SCCM PADIS 2018 – official SCCM recommendation page (recommendation-level statements; full guideline NOT read)", "SCCM PADIS 2025 focused update – official SCCM recommendation page (five statements; full text NOT read)"]
-sources: [S-SCCM-PADIS]
+sources: [S-SCCM-PADIS, S-SCCM-NMBA-2026, S-SCCM-PADIS-FOCUSED-2025]
 independently_written_note: "Original wording. Only the official SCCM recommendation pages were read. The Richmond Agitation-Sedation Scale (RASS) definitions, the Sedation-Agitation Scale and their validation data were NOT read, so the scales' level-by-level descriptions are deliberately not reproduced or taught here: use the validated scale as licensed and trained in your unit. Sedative drug choices and doses are prescriber decisions and are not given. Restraint law and policy vary by country."
 ---
 # Sedation monitoring and targeted light sedation in ventilated adults
@@ -45,6 +45,14 @@ Excess sedation prolongs ventilation, hides neurological change and increases de
 - Avoid disturbing sleep unnecessarily: use noise and light reduction strategies (SCCM suggestion).
 - Support mobilisation when stable (SCCM: vasoactive infusions or mechanical ventilation are not barriers if the patient is otherwise stable).
 
+## 7b. Anxiety, distress and sedation are not interchangeable
+
+When a patient appears anxious, establish whether they can communicate and ask what is frightening or uncomfortable. Assess new respiratory distress, pain, delirium, withdrawal and device-related discomfort before assuming primary anxiety; urgent physiological deterioration takes priority. Explain procedures, use communication aids and offer supportive presence, with an interpreter when required. Quietness after a sedative does not prove that anxiety or pain has resolved.
+
+The 2025 PADIS focused update found insufficient evidence to recommend benzodiazepines specifically for anxiety in adult ICU patients. This does not establish either routine use or a universal prohibition: other indications such as withdrawal or seizure treatment require their own clinical pathway. Discuss the indication, sedation target, haemodynamic and respiratory risks and reassessment plan with the prescriber; do not escalate sedation solely because anxiety is suspected.
+
+**Changing sedation goals and awakening readiness (SCCM PADIS 2018 and 2025).** Check the current prescribed sedation target and its clinical indication at handover. A light target is not appropriate for every patient at every time; some patients need a different target as part of a specialist plan, for example during neuromuscular blockade or management of unstable intracranial pressure. Do not interrupt prescribed sedation solely because a daily awakening trial is due. Confirm eligibility and the safety plan with the team, document why a trial was deferred or stopped, and arrange reassessment as clinical conditions change. In a paralysed patient, absence of movement cannot establish comfort or adequate sedation; verify ongoing analgesia and sedation delivery and request the appropriate monitoring plan.
+
 ## 8. Monitoring parameters
 Sedation scale score and target; pain score; delirium screen; respiratory rate, SpO₂, ETCO₂ and ventilator synchrony; heart rate, blood pressure; temperature; urine output; infusion type and rate as ordered; time and result of daily interruptions; skin under devices and restraints; hours awake.
 
@@ -63,6 +71,8 @@ Sedation scale score and target; pain score; delirium screen; respiratory rate, 
 | Mobilisation | Suggest rehabilitation/mobilisation; enhanced over usual (2025) | Conditional, low / moderate | Mobilise when stable |
 Adult ICU statements, mostly conditional with low-to-moderate certainty; the scale-level descriptions are not part of the SCCM statements read.
 
+**Neuromuscular blockade safety (SCCM 2026).** Paralysis suppresses movement but does not provide sedation or analgesia. Behavioural assessments cannot establish comfort during paralysis. Before starting prescribed blockade, confirm analgesia, sedation and the monitoring plan with the team; during blockade verify ongoing delivery and promptly escalate unexpected interruption. The 2026 guideline found very-low-certainty evidence when comparing formal scale-based versus other pre-blockade assessment approaches, and dedicated depth-monitoring versus no such monitoring during blockade. This uncertainty is about measurement strategy, not permission to omit analgesia or sedation. Processed EEG, if used, is an adjunct under specialist protocol; peripheral nerve stimulation assesses blockade rather than consciousness. Do not undertake a routine awakening trial during active paralysis.
+
 ## 10. Warning signs and red flags
 Over-sedation (cannot be roused, no response to voice, respiratory depression, loss of cough); sudden agitation with desaturation or rising pressures; ventilator asynchrony; sedation target not met for hours; rapid dose escalation; new neurological signs hidden by sedation; pressure injury; restraint injury; withdrawal signs.
 
@@ -74,7 +84,7 @@ Over-sedation (cannot be roused, no response to voice, respiratory depression, l
 | Choosing sedatives, doses and targets; starting neuromuscular blockade; antipsychotics or other drugs for agitation | Prescriber / pharmacist decision |
 
 ## 12. Escalation criteria
-Escalate for: unarousable patient or respiratory depression; agitation not controlled after treating causes; failure of the awakening trial; sedation target repeatedly missed; need for increasing doses; suspected withdrawal or delirium; restraint-related injury.
+Activate emergency response for unexpected inability to rouse the patient with respiratory or circulatory compromise; support airway and ventilation under local protocol. Urgently escalate unexplained sedation, uncontrolled agitation, failed awakening trials, withdrawal, delirium or restraint injury. Before an awakening trial, verify eligibility and exclusions with the team, particularly when paralysis or a prescribed deep-sedation indication is present. Neuromuscular blockade makes behavioural sedation and pain scores unreliable; immobility is not evidence of comfort or unconsciousness. Verify prescribed sedation and analgesia and seek clinical review.
 SBAR — **S:** bed X, target is light sedation but the patient is deeply sedated and unresponsive to voice. **B:** day 3 ventilated, infusion running at [rate], pain score [x], no recent boluses. **A:** over-sedation; neurological change cannot be assessed. **R:** please review the sedation plan now; do you want a trial of interruption?
 
 ## 13. Potential complications
@@ -102,7 +112,7 @@ B. Increase the infusion further, since quiet and deeply sedated patients are ea
 C. Ignore the score until the scheduled ward round, because the doctors will review the sedation plan at that time.
 D. Stop all sedatives and analgesics yourself at once, without an order, so that the patient wakes as quickly as possible.
 **Answer: A.**
-**Why correct:** Over-sedation should be assessed and reported, with changes made only within the protocol or order.
+**Why correct:** Unexpected unresponsiveness warrants immediate airway, ventilation, circulation and neurological assessment, with urgent help if unstable. Compare the documented sedation target with the observed depth, review recent drug changes and other reversible causes, and use the authorized titration pathway. Do not assume sedation is the only cause.
 **Why not B:** Deeper sedation is contrary to the target and has risks.
 **Why not C:** Delay prolongs over-sedation.
 **Why not D:** Stopping analgesia without an order may cause pain and agitation.
@@ -113,7 +123,7 @@ B. They can achieve and maintain a light level of sedation in intubated adults, 
 C. They remove the need for the nurse to assess sedation with a validated scale, since the protocol decides the dose.
 D. They are legally required in every hospital in every country that cares for mechanically ventilated patients.
 **Answer: B.**
-**Why correct:** SCCM states that daily sedation interruption and nurse-protocolised targeted sedation can achieve and maintain light sedation in intubated adults. They do not guarantee shorter stays, replace validated scales or amount to a legal requirement.
+**Why correct:** SCCM describes interruption trials and nurse-protocolised titration as approaches to achieving light sedation. Screen for contraindications and use the individualized target; a trial is not mandatory during every episode of instability or when deeper sedation is clinically indicated. The ICU Liberation bundle incorporates a safety screen and failure criteria.
 **Why not A:** No such guarantee is stated.
 **Why not C:** Scales remain necessary because they give a structured, repeatable measure of sedation depth.
 **Why not D:** The statement is not a legal requirement.
@@ -129,27 +139,27 @@ D. Leave the patient alone until the agitation settles by itself, and check agai
 **Why not B:** Benzodiazepines are associated with delirium, and a cause should be sought first.
 **Why not D:** An agitated patient with a tube is at risk and needs attention.
 
-**Q4 (safety).** During a daily sedation interruption the patient becomes distressed and desaturates. What is the correct response?
-A. Continue the interruption until the planned time to complete the trial, since distress is usual on waking.
-B. Hold the patient down firmly to prevent any movement, so that the tube and the lines are not disturbed.
-C. Widen the oxygen alarm limits so that the alarm stops sounding and the trial can be completed as planned.
-D. Stop the trial per protocol, restore sedation and oxygenation as ordered, assess, and report to the team.
+**Q4 (safety).** During a planned awakening trial, a ventilated patient becomes distressed, desaturates and develops increased work of breathing. Which action prioritizes immediate safety?
+A. Continue the trial while documenting the observations and reassess at its planned end point if the patient remains distressed.
+B. Resume sedation immediately at the previous setting before assessing whether an airway or ventilation problem is present.
+C. Request a new sedation order and wait for it before assessing the cause of the falling oxygen saturation.
+D. Stop the trial under protocol, assess ventilation and summon help; follow the authorized rescue plan.
 **Answer: D.**
-**Why correct:** Safety criteria to stop the trial are part of the protocol; the nurse restores safety and reports.
+**Why correct:** Desaturation and distress are signs of trial intolerance. Stop the awakening trial according to the protocol and immediately assess airway, ventilation and circulation. Activate urgent help if unstable; restore oxygenation and address the cause. Resume or adjust sedation only as authorized after reassessment, not automatically as a substitute for airway rescue.
 **Why not A:** Continuing despite distress and desaturation is unsafe.
-**Why not B:** Physical force is inappropriate and unsafe.
-**Why not C:** Changing alarm limits hides the problem.
+**Why not B:** Resuming sedation is not a substitute for immediate assessment and rescue of an airway or ventilation problem.
+**Why not C:** Clarifying orders must not delay assessment, escalation or emergency support under the unit protocol.
 
-**Q5 (application).** A nurse is reviewing how sedation is assessed on a ventilated unit. Which statement about monitoring tools is accurate according to SCCM?
-A. Vital signs are the best way to monitor sedation, because they change before the patient moves or speaks.
-B. Bispectral index suits sedative titration in deep sedation or neuromuscular blockade, and may help when no scale can be used.
-C. Bispectral index replaces sedation scales in all patients, so scales need no longer be recorded in the chart.
-D. Sedation scales are unnecessary in ventilated patients because the ventilator reports the depth of sedation directly.
+**Q5 (judgment).** A patient with ARDS is receiving prescribed neuromuscular blockade. A nurse finds that the sedative infusion has unexpectedly stopped, but the patient remains motionless and the peripheral nerve stimulator shows blockade. What is the safest response?
+A. Use the peripheral nerve stimulator result to determine whether the patient remains adequately sedated.
+B. Urgently verify analgesia and sedation delivery, assess the patient and activate the authorized response.
+C. Wait until spontaneous movement returns before assessing whether the sedative interruption is clinically important.
+D. Rely on stable haemodynamic observations to determine that analgesia and sedation remain adequate.
 **Answer: B.**
-**Why correct:** SCCM's 2018 PADIS recommendations describe processed EEG monitoring (including BIS) as an *adjunct*, especially for deep sedation or neuromuscular blockade when behavioral assessment cannot be performed. It does not replace validated bedside sedation assessment when patients can be assessed; device choice and target interpretation follow local specialist policy.
-**Why not A:** Changes in vital signs can signal distress or deterioration but are not a validated substitute for structured assessment of sedation depth.
-**Why not C:** BIS is not a general replacement.
-**Why not D:** Scales are central to targeted sedation.
+**Why correct:** Neuromuscular blockade prevents movement but provides neither sedation nor analgesia. A peripheral nerve stimulator assesses blockade, not consciousness. Unexpected interruption of sedation during paralysis requires immediate escalation, verification of the prescribed analgesia and sedation delivery and implementation of the authorized rescue plan. SCCM 2026 found uncertainty about the comparative benefits of depth-monitoring strategies in ARDS; this does not justify omitting sedation or analgesia. Processed EEG may be an adjunct under specialist policy, not a stand-alone measure of comfort.
+**Why not A:** Evidence of neuromuscular blockade does not establish unconsciousness or pain relief.
+**Why not C:** Waiting for movement can leave a paralyzed patient without adequate sedation or analgesia.
+**Why not D:** Stable vital signs cannot reliably demonstrate comfort or unconsciousness during paralysis.
 
 **Q6 (scope).** Which decision belongs to the prescriber rather than the nurse?
 A. Choosing the sedative agent and setting the target level of sedation for the patient.
@@ -157,7 +167,7 @@ B. Performing the ordered sedation scale assessment at the interval that is set 
 C. Reporting over-sedation or agitation that is not responding to the measures in the protocol.
 D. Documenting restraint checks and the reasons for the use of the restraints on the chart.
 **Answer: A.**
-**Why correct:** Drug choice and targets are prescriber decisions (with protocol-based titration by the nurse).
+**Why correct:** Agent selection and target depth require the authorized prescribing plan, with nurse-protocolised titration where permitted. The 2025 SCCM focused update conditionally favors dexmedetomidine over propofol when lighter sedation or delirium reduction is a major priority in ventilated adults; this is not a universal drug choice, and hemodynamic risk matters.
 **Why not B:** A nursing assessment task.
 **Why not C:** A nursing responsibility.
 **Why not D:** A nursing documentation task.
@@ -166,11 +176,17 @@ D. Documenting restraint checks and the reasons for the use of the restraints on
 - SCCM. PADIS 2018 recommendations page (recommendation-level; accessed 2026-11-14): https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa . Full publication: Devlin JW et al. Crit Care Med 2018;46:e825-e873 (not read).
 - SCCM. Focused update to PADIS (2025) recommendations page (recommendation-level; accessed 2026-11-14): https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline . Crit Care Med 2025;53:e711-e727 (not read).
 
+- SCCM ICU Liberation Bundle. https://www.sccm.org/clinical-resources/iculiberation-home/abcdef-bundles (selected public recommendations, accessed 2026-11-24)
+
+- Society of Critical Care Medicine. Guidelines for the Administration of Neuromuscular Blockade in Adults With ARDS. 2026-03-03; doi:10.1097/ccm.0000000000007002. https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-administration-of-neuromuscular-blockade (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+
+- SCCM focused PADIS update (2025). https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline (official recommendation-level anxiety and sedation statements rechecked 2026-11-24; full publication and commercial reuse rights outstanding).
+
 ## 19. Local protocol note
 Sedation scale, targets, titration authority, interruption criteria, restraint policy and monitoring frequency follow the institution's protocols and competencies.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: recommendation-level statements from official SCCM pages, mostly conditional with low or moderate certainty; evidence, scale psychometrics and rationales not read.
 - Applicability: adult ICU, ventilated patients; practices vary internationally (restraints, drug availability).
-- Not covered: RASS/SAS level definitions, dosing, neuromuscular blockade, paediatric sedation, palliative sedation.
+- Not covered: RASS/SAS level definitions, dosing, neuromuscular-blocker selection and administration, paediatric sedation, palliative sedation. SCCM 2026 recommendation-level monitoring context added; complete evidence appraisal and local policy remain required.
 - Open questions for reviewers (PH, CCP, NEURO, NE, BN): which scale and licence; nurse titration authority; awakening trial criteria; restraint policy.

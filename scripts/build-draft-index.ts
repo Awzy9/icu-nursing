@@ -59,7 +59,7 @@ export function licenceBand(raw: string): "RED" | "UNVERIFIED" | "YELLOW" | "GRE
 export function loadSourceTable(root = "."): Map<string, { licence_class: string; verified: string | null }> {
   const m = new Map<string, { licence_class: string; verified: string | null }>();
   for (const r of csv(path.join(root, "sources/source_register.csv"))) m.set(r.source_id!, { licence_class: licenceBand(r.licence_class ?? ""), verified: /^\d{4}-\d\d-\d\d$/.test(r.verification_date ?? "") ? r.verification_date! : null });
-  for (const r of csv(path.join(root, "content/drafts/skills/NEW_SOURCES.csv"))) m.set(r.source_id!, { licence_class: licenceBand(r.licence_class ?? ""), verified: null });
+  for (const r of csv(path.join(root, "content/drafts/skills/NEW_SOURCES.csv"))) m.set(r.source_id!, { licence_class: licenceBand(r.licence_class ?? ""), verified: /^\d{4}-\d\d-\d\d$/.test(r.verification_date ?? "") ? r.verification_date! : null });
   for (const r of csv(path.join(root, "content/drafts/medications/LABEL_SOURCES.csv"))) m.set(r.source_id!, { licence_class: licenceBand(r.licence_class ?? ""), verified: /^\d{4}-\d\d-\d\d$/.test(r.accessed ?? "") ? r.accessed! : null });
   return m;
 }

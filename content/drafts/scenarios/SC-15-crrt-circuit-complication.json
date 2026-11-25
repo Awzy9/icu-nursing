@@ -44,6 +44,16 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-RCA-DELPHI-2026",
+      "read": "partial",
+      "use": "Targeted 2026 consensus statement 10 on possible citrate accumulation; not a randomized trial or full guideline review."
+    },
+    {
+      "id": "S-RRT-MULTIDISC-2026",
+      "read": "partial",
+      "use": "2026 multidisciplinary ICU RRT guideline: anticoagulation recommendations 4.4–4.6 and dose-in-CRRT discussion; selected HTML sections, not full appraisal"
     }
   ],
   "required_sources": [
@@ -54,7 +64,7 @@
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "The pathway is specific to one machine family and says actions follow local practice guidelines.",
-    "Priming, citrate, drug dosing and weaning are not covered.",
+    "Selected January 2026 RRT guideline and May 2026 citrate Delphi monitoring statements are mapped. Exact schedules, thresholds, citrate/calcium adjustments, drug dosing and weaning remain specialist and local decisions. KDIGO 2026 remains a public-review draft, not a final replacement.",
     "Scenario has been limited to patient-first assessment, competent CRRT-operator escalation, interruption documentation, and approved procedure boundaries; it does not teach independent troubleshooting or blood return."
   ],
   "permissions": [
@@ -65,8 +75,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "An access-pressure alarm keeps sounding on the machine. The patient has just been moved up the bed.",
-      "prompt": "What do you do first?",
+      "info": "Immediately after repositioning an adult on CRRT, an access-pressure alarm recurs and the blood pump stops. The patient has been coughing. The cause of the alarm and circuit safety have not yet been established.",
+      "prompt": "What should happen before any attempt to restart the circuit?",
       "observations": [
         {
           "key": "alarm",
@@ -82,40 +92,50 @@
           "key": "pump",
           "label": "Blood pump",
           "value": "Stopped"
+        },
+        {
+          "key": "access",
+          "label": "Access and tubing",
+          "value": "Trained assessment required"
+        },
+        {
+          "key": "perfusion",
+          "label": "Patient perfusion",
+          "value": "Reassess promptly"
         }
       ],
       "options": [
         {
-          "text": "Assess the patient and circuit display, request a trained CRRT operator, and report the alarm and recent bed movement. Only a competent operator should check access/return tubing and catheter issues under this device's approved local alarm procedure; do not reflexively clear alarms.",
+          "text": "Assess patient and circuit, call a trained CRRT operator and report alarm and bed movement. Competent staff check tubing and catheter under the device-specific pathway; do not reflexively clear alarms.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
           "feedback": "The Alberta Health Services 2025 alarm pathway is specific to its CRRT machine and clinical setting. Patient assessment and prompt operator escalation come first; catheter manipulation, line checks and alarm clearance are not generic instructions for an untrained learner.",
-          "consequence": "You find a kinked line under the patient and the alarm clears once it is freed.",
+          "consequence": "Patient assessment and trained device review may identify an access or circuit problem without bypassing safety features.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
           ]
         },
         {
-          "text": "Press override and restart because the alarm is probably a false alarm.",
+          "text": "Treat the alarm as a probable false alarm related to bed movement, override it and restart treatment before a trained operator assesses the patient and circuit, then record whether the alarm recurs and report the issue at routine handover.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "Alarm off, disable and override buttons decrease alarm sensitivity and are not a fix.",
-          "consequence": "The alarm returns and the machine stops again.",
+          "consequence": "An override could conceal an unresolved access or circuit problem.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
           ]
         },
         {
-          "text": "Turn the blood flow to the maximum the machine allows.",
+          "text": "Increase the blood flow to the maximum permitted by the machine to overcome the alarm, observe whether the pressure normalises and continue treatment without confirming the prescription or checking line safety with a trained operator.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
-          "feedback": "The pathway suggests adjusting the blood flow, not pushing it to the maximum.",
-          "consequence": "The alarms continue and the treatment time is lost.",
+          "feedback": "Do not independently increase blood flow to suppress an alarm. Check the patient and escalate to the trained operator who follows the device-specific procedure.",
+          "consequence": "Increasing blood flow without assessment could worsen access problems and delay safe treatment.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
@@ -125,8 +145,8 @@
     },
     {
       "position": 2,
-      "info": "Alarms keep recurring after the usual checks and treatment keeps stopping.",
-      "prompt": "What is the next step?",
+      "info": "At the next shared checkpoint, access and return alarms recur despite trained checks. There is no obvious catheter fault and delivered treatment time is falling. Circuit safety and whether blood can safely be returned remain uncertain.",
+      "prompt": "How should the nurse respond to persistent interruption without assuming that blood return is safe?",
       "observations": [
         {
           "key": "alarm",
@@ -142,40 +162,50 @@
           "key": "catheter",
           "label": "Catheter",
           "value": "Checked, no obvious fault"
+        },
+        {
+          "key": "circuit",
+          "label": "Circuit condition",
+          "value": "Safety assessment pending"
+        },
+        {
+          "key": "blood_return",
+          "label": "Blood return",
+          "value": "Not automatic; trained decision required"
         }
       ],
       "options": [
         {
-          "text": "Escalate persistent alarms and treatment interruption to the responsible CRRT-trained team and prescriber, document the lost treatment, and follow the institution's device-specific blood-return or treatment-termination protocol. Do not attempt an unsupervised blood return.",
+          "text": "Escalate alarms and downtime to CRRT team/prescriber. Do not attempt blood return unless the trained operator confirms it is safe under device instructions and local procedure; document blood loss and downtime.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "The AHS 2025 regional pathway describes support, blood return when feasible and treatment termination under local procedures. It is not permission for a learner to handle the circuit, return blood, change settings or disconnect a catheter without training and authorisation.",
-          "consequence": "Blood is returned, the reason is recorded and the physician plans the next step for the line.",
+          "feedback": "The AHS pathway is specific to its machine and clinical setting. Blood return is not automatic: if clotting or another circuit safety hazard is suspected, do not attempt return before an authorised trained operator establishes the safe pathway. Do not override safety alarms.",
+          "consequence": "The trained operator determines whether blood return is safe; timely escalation may limit avoidable downtime or blood loss and support a revised treatment plan.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
           ]
         },
         {
-          "text": "Keep restarting the treatment until it runs and tell the doctor at the end of the shift.",
+          "text": "Continue attempting to restart treatment whenever the alarm clears, recording interruptions but delaying notification of the trained CRRT team and prescriber until the end of the shift if therapy remains unreliable.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Repeated restarts waste treatment time and delay escalation.",
-          "consequence": "Several hours of prescribed treatment are lost.",
+          "consequence": "Repeated restarting could delay specialist review while prescribed therapy is missed.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
           ]
         },
         {
-          "text": "Clamp the lines and leave the circuit until the next shift.",
+          "text": "Clamp the lines and leave the stopped circuit for the next shift, recording the alarm but not arranging trained assessment of safe termination, blood-return suitability or interrupted treatment.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
-          "feedback": "Blood should be returned when possible, not left in a stopped circuit.",
-          "consequence": "The circuit clots and the patient loses the blood in it.",
+          "feedback": "Leaving a stopped circuit without trained assessment and escalation is unsafe. Blood return may itself be contraindicated; the trained team determines safe termination and records any blood loss.",
+          "consequence": "Leaving a stopped circuit could permit clotting or other complications without appropriate assessment.",
           "support": "partial",
           "sources": [
             "N-AHS-CRRT-ALARM-2025"
@@ -185,8 +215,8 @@
     },
     {
       "position": 3,
-      "info": "Treatment has been stopped and the physician has been told. The patient received less treatment than prescribed.",
-      "prompt": "What should you record and report?",
+      "info": "At the final shared checkpoint, treatment is stopped and the physician is informed. Delivered therapy is below prescription. Regional citrate was used; systemic ionized calcium is falling and the total-to-ionized calcium ratio is rising. The cause of these changes requires urgent specialist assessment.",
+      "prompt": "Which treatment-delivery and biochemical trends should be communicated before the prescription is reviewed?",
       "observations": [
         {
           "key": "treatment",
@@ -202,44 +232,68 @@
           "key": "physician",
           "label": "Physician",
           "value": "Informed"
+        },
+        {
+          "key": "anticoagulation",
+          "label": "Anticoagulation",
+          "value": "Regional citrate used during interrupted treatment"
+        },
+        {
+          "key": "calcium",
+          "label": "Systemic ionized calcium",
+          "value": "Falling; total-to-ionized calcium ratio rising"
+        },
+        {
+          "key": "balance",
+          "label": "Net fluid balance",
+          "value": "Reconcile separately from delivered clearance"
+        },
+        {
+          "key": "calcium_need",
+          "label": "Calcium requirements and acid-base status",
+          "value": "Review ordered trends"
         }
       ],
       "options": [
         {
-          "text": "Record the alarms, actions, the reason for stopping and the shortfall, and report the under-delivery.",
+          "text": "Record alarms, downtime, delivered therapy and net fluid balance. If regional citrate anticoagulation is in use, report falling systemic ionized calcium, rising total-to-ionized ratio or calcium needs, and worsening acid-base findings; coordinate prescribed care.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "KDIGO recommends frequent assessment of the delivered dose, so shortfalls are reported and recorded.",
-          "consequence": "The team can adjust the plan, and the next shift knows what happened.",
+          "feedback": "KDIGO supports assessment of delivered treatment. The 2026 Delphi consensus identifies falling systemic ionized calcium, increasing calcium needs, a raised total-to-ionized calcium ratio and metabolic acidosis as findings that may suggest citrate accumulation in context. No single finding establishes the diagnosis. Escalate the trend and follow the prescribed specialist response; do not independently adjust citrate, calcium or fluid removal. The January 2026 multidisciplinary RRT guideline distinguishes prescribed from delivered clearance because interruptions reduce effective therapy. Net fluid removal and solute-clearance dose are separate prescription components; do not increase fluid removal simply to compensate for downtime. The guideline also calls for reassessment of anticoagulation if citrate accumulation occurs; the May 2026 Delphi consensus discusses individualized specialist adjustments and alternatives when abnormalities persist. These are not instructions to alter device settings independently.",
+          "consequence": "Reporting downtime, net balance and biochemical trends may help the team identify inadequate delivery and possible citrate accumulation in context.",
           "support": "partial",
           "sources": [
             "S-KDIGO-AKI-2012",
-            "N-AHS-CRRT-ALARM-2025"
+            "N-AHS-CRRT-ALARM-2025",
+            "S-RCA-DELPHI-2026",
+            "S-RRT-MULTIDISC-2026"
           ]
         },
         {
-          "text": "Record only that the machine alarmed.",
-          "points": 1,
+          "text": "Record the alarm in the chart but omit downtime, delivered therapy and biochemical changes, leaving the next shift to reconcile the prescription and decide whether the calcium and acid-base trends warrant specialist review.",
+          "points": 0,
           "next": null,
           "scope": "independent_nursing",
-          "feedback": "An incomplete record loses the reason for stopping and the shortfall.",
-          "consequence": "The next shift cannot see how much treatment was missed.",
+          "feedback": "Recording only the alarm omits the treatment interruption, delivered therapy and fluid balance, and misses the concerning biochemical trend that needs urgent escalation.",
+          "consequence": "An alarm-only note could conceal missed therapy and concerning biochemical changes.",
           "support": "partial",
           "sources": [
-            "S-KDIGO-AKI-2012"
+            "S-KDIGO-AKI-2012",
+            "S-RRT-MULTIDISC-2026"
           ]
         },
         {
-          "text": "Increase the prescribed fluid-removal goal to make up the difference.",
+          "text": "Increase the prescribed net fluid-removal goal independently to compensate for the interruption, treating fluid removal as a substitute for lost solute clearance without obtaining review of the delivered treatment.",
           "points": 0,
           "next": null,
           "scope": "prescriber_or_other_discipline",
-          "feedback": "Changing the prescription is a prescriber decision.",
-          "consequence": "An unauthorised change creates a safety incident.",
+          "feedback": "Net fluid removal is not interchangeable with the delivered solute-clearance dose. Report both and ask the responsible team to reassess the prescription.",
+          "consequence": "Increasing net fluid removal to compensate for clearance downtime could introduce haemodynamic harm.",
           "support": "partial",
           "sources": [
-            "S-KDIGO-AKI-2012"
+            "S-KDIGO-AKI-2012",
+            "S-RRT-MULTIDISC-2026"
           ]
         }
       ]
@@ -247,10 +301,11 @@
   ],
   "debrief": {
     "learning_points": [
-      "Check the patient first, then the lines, before clearing a circuit alarm.",
+      "Assess the patient first and request the trained operator; device-specific line checks and alarm handling follow the approved procedure.",
       "Do not use override or disable functions to clear an unresolved problem.",
-      "If alarms cannot be managed: support, return blood, document, notify the physician.",
-      "Report under-delivery of the prescribed dose."
+      "For persistent alarms, escalate and follow the authorized termination pathway; blood return is not automatic and must not be attempted when circuit safety is uncertain.",
+      "Report downtime, delivered solute-clearance therapy and net fluid balance separately; do not independently compensate by increasing ultrafiltration.",
+      "With regional citrate anticoagulation, escalate concerning calcium, supplementation and acid-base trends; the specialist team determines the response."
     ],
     "links": [
       {

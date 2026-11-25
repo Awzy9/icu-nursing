@@ -13,7 +13,7 @@ import {
 const store = { get: (k: string) => AsyncStorage.getItem(k), set: (k: string, v: string) => AsyncStorage.setItem(k, v) };
 function deps(): ContentClientDeps {
   const extra = Constants.expoConfig?.extra as { siteUrl?: string } | undefined;
-  return { store, fetcher: fetch, baseUrl: siteBaseUrl(process.env as Record<string, string | undefined>, extra?.siteUrl) };
+  return { store, fetcher: fetch, baseUrl: siteBaseUrl({ EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL }, extra?.siteUrl) };
 }
 // For one-shot calls outside the useFetcher hook pattern below (e.g. drawing a fresh exam, which
 // must not be cached/re-rendered the way a hook's steady "fetch and keep" state would be).
@@ -26,17 +26,19 @@ export type FetchState<T> =
 
 function useFetcher<T>(run: () => Promise<RemoteResult<T>>, depsList: unknown[]): FetchState<T> & { refresh(): void } {
   const [state, setState] = useState<FetchState<T>>({ status: "loading" });
-  const mounted = useRef(true);
-  useEffect(() => () => { mounted.current = false; }, []);
+  const requestId = useRef(0);
   const load = useCallback(() => {
+    const id = ++requestId.current;
     setState({ status: "loading" });
     run().then((r) => {
-      if (!mounted.current) return;
+      if (requestId.current !== id) return;
       setState(r.status === "ok" ? { status: "ready", data: r.data, fromCache: r.fromCache } : { status: "offline" });
-    }).catch(() => mounted.current && setState({ status: "offline" }));
+    }).catch(() => {
+      if (requestId.current === id) setState({ status: "offline" });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, depsList);
-  useEffect(() => { load(); }, [load]);
+  useEffect(() => { load(); return () => { requestId.current++; }; }, [load]);
   return { ...state, refresh: load } as FetchState<T> & { refresh(): void };
 }
 

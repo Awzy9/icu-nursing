@@ -1,225 +1,264 @@
 {
- "med_id": "MD-08",
- "number": 8,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Dexmedetomidine",
- "drug_class": "Alpha-2 adrenergic agonist sedative",
- "category": "sedatives-analgesics",
- "high_alert": true,
- "high_alert_note": "ISMP's 2024 acute-care high-alert list includes INTRAVENOUS moderate-sedation agents, including this drug. The classification is route-specific and does not automatically classify every oral use; follow local patient monitoring and rescue-capability policy. High-alert class is independently traced to ISMP in the separate evidence report; the draft itself continues to rely only on the registered FDA/manufacturer label and non-RED references.",
- "summary": "Alpha-2 agonist used for sedation of initially intubated, mechanically ventilated adults in intensive care and for procedural sedation of non-intubated adults. Nursing focus: continuous monitoring, bradycardia, hypotension and withdrawal.",
- "batch": 1,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-DEXMEDETOMIDINE",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-DEXMEDETOMIDINE",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
-  },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
-  }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
+  "med_id": "MD-08",
+  "number": 8,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Dexmedetomidine",
+  "drug_class": "Alpha-2 adrenergic agonist sedative",
+  "category": "sedatives-analgesics",
+  "high_alert": true,
+  "high_alert_note": "ISMP's 2024 acute-care high-alert list includes INTRAVENOUS moderate-sedation agents, including this drug. The classification is route-specific and does not automatically classify every oral use; follow local patient monitoring and rescue-capability policy. High-alert class is independently traced to ISMP in the separate evidence report; the draft itself continues to rely only on the registered FDA/manufacturer label and non-RED references.",
+  "summary": "Alpha-2 agonist used for sedation of initially intubated, mechanically ventilated adults in intensive care and for procedural sedation of non-intubated adults. Nursing focus: continuous monitoring, bradycardia, hypotension and withdrawal.",
+  "batch": 1,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-DEXMEDETOMIDINE",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
     {
-     "text": "The label describes dexmedetomidine as an alpha-2 adrenergic receptor agonist indicated for sedation of initially intubated and mechanically ventilated adults in an intensive care setting and for sedation of non-intubated adults before or during procedures.",
-     "support": "sourced",
-     "sources": [
-      "L-DEXMEDETOMIDINE"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Continuously monitor patients while they receive dexmedetomidine (label).",
-     "support": "sourced",
-     "sources": [
-      "L-DEXMEDETOMIDINE"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label's warnings include continuous monitoring, bradycardia and sinus arrest, hypotension, transient hypertension, arousability, withdrawal, tolerance, hyperthermia or pyrexia and hepatic impairment.",
-     "support": "sourced",
-     "sources": [
-      "L-DEXMEDETOMIDINE"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Bradycardia and sinus arrest have occurred, including in young healthy volunteers with high vagal tone and with rapid intravenous or bolus administration.",
-     "support": "sourced",
-     "sources": [
-      "L-DEXMEDETOMIDINE"
-     ]
+      "id": "L-DEXMEDETOMIDINE",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
     },
     {
-     "text": "Hypotension and bradycardia may need medical intervention and may be more pronounced in hypovolaemia, diabetes mellitus, chronic hypertension and the elderly; use caution with advanced heart block or severe ventricular dysfunction.",
-     "support": "sourced",
-     "sources": [
-      "L-DEXMEDETOMIDINE"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists hypotension, bradycardia and sinus arrest, and transient hypertension as the clinically significant adverse reactions.",
-     "support": "sourced",
-     "sources": [
-      "L-DEXMEDETOMIDINE"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate for a slow heart rate with symptoms, pauses, hypotension, a hypertensive rise or signs of withdrawal after stopping.",
-     "support": "partial",
-     "sources": [
-      "L-DEXMEDETOMIDINE"
-     ]
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
     },
     {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
     {
-     "text": "Record sedation scores, haemodynamics and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
     }
-   ]
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label describes dexmedetomidine as an alpha-2 adrenergic receptor agonist indicated for sedation of initially intubated and mechanically ventilated adults in an intensive care setting and for sedation of non-intubated adults before or during procedures.",
+          "support": "sourced",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Continuously monitor patients while they receive dexmedetomidine (label).",
+          "support": "sourced",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label's warnings include continuous monitoring, bradycardia and sinus arrest, hypotension, transient hypertension, arousability, withdrawal, tolerance, hyperthermia or pyrexia and hepatic impairment.",
+          "support": "sourced",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        },
+        {
+          "text": "The registered label describes reported diabetes insipidus during sedation. Monitor urine output, fluid balance and ordered laboratory findings during and after treatment; urgently report unexpected polyuria with low urine concentration and rising sodium. The team evaluates alternative causes, fluid management and whether stopping the drug is appropriate.",
+          "support": "partial",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Bradycardia and sinus arrest have occurred, including in young healthy volunteers with high vagal tone and with rapid intravenous or bolus administration.",
+          "support": "sourced",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        },
+        {
+          "text": "Hypotension and bradycardia may need medical intervention and may be more pronounced in hypovolaemia, diabetes mellitus, chronic hypertension and the elderly; use caution with advanced heart block or severe ventricular dysfunction.",
+          "support": "sourced",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        },
+        {
+          "text": "A patient awakening to stimulation does not necessarily indicate inadequate sedation. Suspected drug-related hyperthermia requires urgent assessment and the label-directed discontinuation response.",
+          "support": "partial",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        },
+        {
+          "text": "Other medicines that slow heart rate or cause vasodilation merit caution because of potential combined haemodynamic effects. Sedatives and opioids can also enhance drug effects. Reduced hepatic clearance warrants prescriber or pharmacist reassessment; do not assume arousability excludes excessive combined sedation.",
+          "support": "partial",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists hypotension, bradycardia and sinus arrest, and transient hypertension as the clinically significant adverse reactions.",
+          "support": "sourced",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Escalate for a slow heart rate with symptoms, pauses, hypotension, a hypertensive rise or signs of withdrawal after stopping.",
+          "support": "partial",
+          "sources": [
+            "L-DEXMEDETOMIDINE"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record sedation scores, haemodynamics and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
+  "monitoring": [
     {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
+      "kind": "observe",
+      "text": "Continuously monitor heart rate, rhythm and blood pressure.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-DEXMEDETOMIDINE"
+      ]
+    },
     {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
+      "kind": "assess",
+      "text": "Assess sedation level with the unit's validated tool, remembering patients may stay arousable.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-DEXMEDETOMIDINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "After cessation, assess for new agitation, nausea, vomiting, tachycardia or hypertension and report concerning findings.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-DEXMEDETOMIDINE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report bradycardia, pauses or hypotension immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-DEXMEDETOMIDINE"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record sedation scores and haemodynamics.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Monitor temperature and investigate new unexplained fever urgently; consider a drug reaction alongside infection and other causes, and obtain an immediate authorised medication plan.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-DEXMEDETOMIDINE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Monitor urine output and ordered sodium trends during and after therapy; report unexpected polyuria, rising sodium or haemodynamic instability and review concurrent sedatives and rate-slowing medicines.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-DEXMEDETOMIDINE"
+      ]
     }
-   ]
+  ],
+  "gaps": [
+    "Dosing, rate, maximum duration and preparation: deliberately not included.",
+    "The label's separate sections on arousability, withdrawal and tolerance were not summarised in detail.",
+    "PADIS and other guideline text was not read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-15",
+    "set_id": "1faf1ac8-ff9b-4ed9-b562-06dab971173a",
+    "label_version": "5",
+    "effective_time": "20261012",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- },
- "monitoring": [
-  {
-   "kind": "observe",
-   "text": "Continuously monitor heart rate, rhythm and blood pressure.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-DEXMEDETOMIDINE"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Assess sedation level with the unit's validated tool, remembering patients may stay arousable.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "L-DEXMEDETOMIDINE"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Watch for signs of withdrawal when the drug is stopped.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "L-DEXMEDETOMIDINE"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report bradycardia, pauses or hypotension immediately.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-DEXMEDETOMIDINE"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record sedation scores and haemodynamics.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Dosing, rate, maximum duration and preparation: deliberately not included.",
-  "The label's separate sections on arousability, withdrawal and tolerance were not summarised in detail.",
-  "PADIS and other guideline text was not read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-15",
-  "set_id": "1faf1ac8-ff9b-4ed9-b562-06dab971173a",
-  "label_version": "5",
-  "effective_time": "20261012",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["CDC/HICPAC Guidelines for the Prevention of Intravascular Catheter-Related Infections 2011 (page notes last update Oct 2017) – section 17 'Peripheral arterial catheters and pressure monitoring devices' (dated; partly superseded for other catheter topics)", "Surviving Sepsis Campaign 2021 (Intensive Care Med 2021;47:1181-1247) – arterial catheter rationale; SUPERSEDED by SSC 2026", "Surviving Sepsis Campaign 2026 – official SCCM recommendation page, recommendation-level text read (full publication not read)", "ESICM 2025 shock and hemodynamic monitoring guideline (abstract and 2014/2025 comparison table examined only; not full text)", "ESICM 2014 consensus (historical)", "ERC/ESICM Guidelines 2025 Post-Resuscitation Care – arterial line for all post-arrest patients"]
-sources: [S-CDC-BSI-2011, S-SSC-2021, S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ERC-PRC-2025]
+sources: [S-CDC-BSI-2011, S-SSC-2021, S-SSC-2026, S-ESICM-SHOCK-2025, S-ESICM-SHOCK-2014, S-ERC-PRC-2025, S-ARTERIAL-MEASUREMENT-2020, S-NSW-ALI, S-MHRA-ARTERIAL-GLUCOSE]
 independently_written_note: "Original wording. The CDC 2011 PDF, the SSC 2021 full text, the ESICM 2014 consensus and the ERC–ESICM 2025 post-resuscitation guideline were read in full text. None of them teaches transducer zeroing, levelling, dynamic response (square-wave) testing, waveform damping or blood-sampling technique: those technical steps follow the manufacturer's instructions and local policy and are flagged below as not evidence-based in the sources read. Commercial use of ERC text needs an ERC agreement; paraphrase only."
 ---
 # Arterial line monitoring and maintenance
@@ -50,6 +50,8 @@ Cuff pressure estimates become inaccurate in shock; an arterial catheter measure
 - Respond to bleeding: apply pressure, call for help, and stay with the patient.
 - Report abnormal pressures, damped or lost waveform, changes in limb perfusion, bleeding, infection signs or equipment faults promptly.
 
+**Reliable arterial pressure in persistent shock (ESICM 2025).** An arterial catheter is recommended as a good-practice measure when shock persists despite initial treatment or vasopressor support is required. An invasive pressure trace is not inherently accurate: compare the reading with the patient's perfusion, waveform quality, recent positioning and an independent pressure assessment where appropriate. Report a discrepancy and the current vasoactive support. Seek immediate assistance for true or suspected instability while trained staff verify the measuring system; do not automatically titrate to a questionable number or repeatedly flush a damped line.
+
 ## 8. Monitoring parameters
 Arterial pressure (systolic, diastolic, mean) and waveform; heart rate; limb colour, temperature, capillary refill and sensation; insertion site; flush system function; alarms; line days; transducer and set changeover dates; sampling losses where relevant.
 
@@ -81,7 +83,7 @@ Blood visible at a connection or on the bed; line disconnected or tubing separat
 | Deciding to insert, replace, move or remove the catheter; choosing the site; setting pressure targets; treating limb ischaemia | Prescriber / medical decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: bleeding or disconnection (and call for help while applying pressure), cold or ischaemic limb, loss or implausible waveform that cannot be corrected, signs of infection, suspected injection into the arterial line, or a pressure change with clinical deterioration.
+Escalate immediately for bleeding or disconnection (apply pressure and call for help), a cold or ischaemic limb, suspected injection into the arterial line, or pressure or waveform changes accompanied by clinical deterioration. Assess the patient and perfusion first. If the reading is implausible, arrange a trained check of transducer level, zero reference and waveform quality under the device instructions and unit policy; correlate with an alternative pressure measurement when feasible. Do not delay emergency help for an unstable patient while troubleshooting and do not independently inject medicines through the pressure-monitoring circuit. Report persistent waveform problems and signs of infection.
 SBAR — **S:** bed X, left radial arterial line, hand is cold and pale with delayed capillary refill. **B:** line day 4, on vasopressors, flush system working, waveform present. **A:** possible limb ischaemia from the catheter. **R:** please review now; I am keeping the arm visible and not flushing the line; do you want it removed?
 
 ## 13. Potential complications
@@ -97,15 +99,15 @@ At the start of the shift you check the radial site and dressing, look at the ha
 A 62-year-old woman on noradrenaline has a radial arterial line. At 03:00 the waveform becomes flat and the mean pressure reads very low although she looks the same. The nurse checks her, finds no bleeding, checks the tubing and connections, repeats a cuff reading that is normal, and calls the doctor with SBAR because the trace cannot be restored; the team decides on reassessment and, if needed, replacement. The nurse documents.
 
 ## 17. MCQs
-**Q1 (judgment).** The arterial waveform suddenly becomes flat and the mean pressure reads very low, but the patient looks unchanged. What should the nurse do first?
-A. Increase the vasopressor rate to bring the pressure up, since the display shows hypotension and the patient may be unwell.
-B. Flush the line repeatedly with the pressure bag until a waveform returns, without checking the patient or the connections.
-C. Ignore the reading because arterial lines often give unreliable values and the patient appears to be unchanged.
-D. Assess the patient and take a cuff reading, check the line and connections, and report if it cannot be corrected.
+**Q1 (judgment).** Following a bed-position change, an arterial waveform suddenly becomes flat and the displayed mean pressure falls. The patient appears unchanged. What is the safest immediate nursing action?
+A. Titrate the vasopressor based on the new arterial pressure before obtaining another measurement or assessing perfusion.
+B. Focus on restoring the arterial waveform by repeated flushing before assessing the patient or checking the system.
+C. Attribute the low pressure to the position change and defer assessment until the next scheduled observation.
+D. Assess the patient, verify the pressure independently, and escalate promptly while checking the system.
 **Answer: D.**
-**Why correct:** Treat the patient, not the number; check clinically, compare with a cuff reading, check the system, escalate if unresolved.
+**Why correct:** Treat the patient, not the number. Assess perfusion and obtain urgent help if unstable; verify the arterial reading with an appropriate independent measurement while a trained colleague assesses the transducer reference level, zero and waveform quality under the device procedure. Level errors and damping can distort measurements. Do not delay emergency care while checking the equipment or treat a suspected artifact as confirmed hypotension.
 **Why not A:** Changing infusions on an unverified reading is unsafe, and needs an order.
-**Why not C:** Ignoring a monitoring problem risks missing true hypotension.
+**Why not C:** A position change can affect the reading but does not establish artifact; deferring assessment risks missing true hypotension.
 **Why not B:** Repeated flushing can cause harm and does not address the cause.
 
 **Q2 (monitoring).** A nurse is monitoring a patient with a radial arterial line. Which finding is the most urgent concern?
@@ -114,7 +116,7 @@ B. A small amount of dried blood at the edge of the dressing, with a warm, pink 
 C. The flush bag and tubing are labelled with the correct date and the connections are tight.
 D. An arterial trace that shows normal variation with the patient's breathing and a sharp upstroke.
 **Answer: A.**
-**Why correct:** Signs of limb ischaemia need immediate escalation (limb ischaemia is a recognised, uncommon complication).
+**Why correct:** A new pale, cold, painful hand with impaired capillary refill suggests threatened limb perfusion. Assess colour, temperature, pulse, sensation and movement within competency and obtain urgent clinical review; do not wait for routine observations. Follow the authorized vascular-access pathway rather than repeatedly flushing or independently manipulating the catheter.
 **Why not B:** A small amount of dried blood needs a dressing review but is not an emergency when the hand is warm and well perfused.
 **Why not C:** This is the correct practice for the situation described, so it is not an unsafe distractor.
 **Why not D:** An expected feature of the waveform.
@@ -125,7 +127,7 @@ B. A closed continuous-flush system that reduces the number of entries into the 
 C. Dextrose-containing solutions or parenteral nutrition fluids infused as a continuous or intermittent infusion.
 D. Scrubbing the diaphragm with an appropriate antiseptic before the system is accessed for a blood sample.
 **Answer: C.**
-**Why correct:** CDC 2011 advises against giving dextrose-containing solutions or parenteral nutrition fluids through the pressure-monitoring circuit (Category IA). The continuous flush, a closed system and scrubbing the diaphragm are part of recommended practice.
+**Why correct:** CDC 2011 advises against giving dextrose-containing solutions or parenteral nutrition fluids through the pressure-monitoring circuit (Category IA). MHRA additionally warns that glucose-containing flush fluid can contaminate arterial samples and trigger inappropriate insulin treatment. Use only the specified authorized flush solution and check the label and line identity.
 **Why not A:** The continuous flush is part of the system.
 **Why not B:** Closed systems are recommended over open ones.
 **Why not D:** Scrubbing the diaphragm is recommended.
@@ -136,7 +138,7 @@ B. Remove the line yourself without an order, since it has not been used for sam
 C. Replace the line with a new one at a different site to keep the infection risk low for the rest of the admission.
 D. Leave it in place until it stops working or the patient leaves the unit, because removal is a medical task only.
 **Answer: A.**
-**Why correct:** CDC advises removing arterial catheters as soon as they are no longer needed; the prescriber decides.
+**Why correct:** CDC advises removing arterial catheters as soon as they are no longer needed. Review ongoing pressure-monitoring needs as well as sampling; ESICM 2025 supports arterial monitoring for shock requiring vasopressors or persisting after initial treatment. Removal follows the authorized clinician or nurse-led pathway where applicable.
 **Why not B:** Removal needs an order or protocol.
 **Why not C:** Routine replacement is not advised.
 **Why not D:** Unnecessary line days increase risk.
@@ -147,7 +149,7 @@ B. Say it is not appropriate, as CDC advises against dextrose through the circui
 C. Suggest adding a stopcock to the line to make it safer, so that the infusion can be started and stopped.
 D. Agree because the patient is in shock and every available access route may be needed for treatment.
 **Answer: B.**
-**Why correct:** Category IA recommendation; the arterial line is not an infusion route.
+**Why correct:** Category IA recommendation; the arterial line is not an infusion route. MHRA warns that even small amounts of glucose contamination can falsely elevate measured glucose. If the wrong solution has been connected, urgently escalate, identify affected samples and arrange glucose confirmation from an uncontaminated source under local policy before relying on suspect results. Do not attempt to clear the contamination by repeated flushing.
 **Why not A:** A slow rate does not remove the risk.
 **Why not C:** A stopcock adds manipulation and infection risk.
 **Why not D:** Shock does not change this safety rule.
@@ -169,6 +171,10 @@ D. Reporting a damped or lost waveform and an implausible reading.
 - Monnet X, Messina A, Greco M, et al. ESICM guidelines on circulatory shock and hemodynamic monitoring 2025. Intensive Care Med. 2025;51:1971–2012. doi:10.1007/s00134-025-08137-z. https://pubmed.ncbi.nlm.nih.gov/41236566/ (abstract and 2014/2025 comparison inspected 2026-11-16; full text NOT read; cite-only).
 - Cecconi M, De Backer D, Antonelli M, et al. Consensus on circulatory shock and hemodynamic monitoring. Intensive Care Med. 2014;40:1795-1815. https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/ (accessed 2026-11-14)
 - Nolan JP, Sandroni C, Cariou A, et al. ERC and ESICM Guidelines 2025 Post-Resuscitation Care. Resuscitation. 2025;215:110809. https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf (accessed 2026-11-14)
+
+- Saugel et al. Arterial blood pressure measurement (2020). https://doi.org/10.1186/s13054-020-02859-w (selected guidance, accessed 2026-11-24)
+- NSW Emergency Care Institute acute limb ischaemia tool. https://aci.health.nsw.gov.au/networks/eci/clinical/tools/acute-limb-ischaemia (selected guidance, accessed 2026-11-24)
+- MHRA arterial flush safety update. https://www.gov.uk/drug-safety-update/glucose-solutions-recommendations-to-minimise-the-risks-associated-with-the-accidental-use-of-glucose-solutions-instead-of-saline-solutions-in-arterial-lines (selected guidance, accessed 2026-11-24)
 
 ## 19. Local protocol note
 Frequency of checks, transducer set-up and levelling, flush solution and pressure, sampling technique, alarm limits and line-removal rules follow manufacturer instructions and local policy.

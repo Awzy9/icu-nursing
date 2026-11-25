@@ -49,17 +49,26 @@
       "id": "S-AHRQ-TS",
       "read": "partial",
       "use": "SBAR page"
+    },
+    {
+      "id": "S-AARC-MV-SAFETY",
+      "read": "partial",
+      "use": "AARC issue paper, alarm management and backup ventilation sections: individualized settings, manufacturer-specific competence, communication"
+    },
+    {
+      "id": "S-JC-ALARM",
+      "read": "partial",
+      "use": "Joint Commission 2026 hospital National Performance Goal NPG.01.05.01 EP 2, printed page 3 visually checked: settings, operation, detectability and authority. US institutional standard, not an operating manual."
     }
   ],
   "required_sources": [
-    "Cross-manufacturer alarm-management guidance and the unit's alarm policy",
-    "AACN alarm practice alert (full text)"
+    "Unit ventilator alarm policy, current manufacturer instructions and device-specific emergency competency verification"
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
     "Device-specific alarm behaviour differs by manufacturer and software; the scenario uses generic wording.",
-    "Alarm causes and lists are deliberately not reproduced.",
+    "Cross-manufacturer principles are supported by the AARC safety issue paper; alarm causes and model-specific operating procedures still require trained local assessment. AACN's 2018 alert concerns ECG and pulse oximetry, not a ventilator operating standard.",
     "Generic ventilator alarm wording and alternative ventilation steps require local respiratory therapist/manufacturer sign-off; this fictional exercise does not prescribe alarm limits or device operation."
   ],
   "permissions": [
@@ -69,8 +78,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "A high-pressure alarm sounds on a ventilated patient's machine. The patient is coughing and looks uncomfortable.",
-      "prompt": "What do you do first?",
+      "info": "A ventilated adult develops repeated high-airway-pressure alarms after repositioning. The patient is coughing and distressed. Earlier chest movement and oxygenation were satisfactory, but current effective ventilation has not been established.",
+      "prompt": "What should the nurse do before attempting to change alarm limits or ventilator settings?",
       "observations": [
         {
           "key": "spo2",
@@ -87,53 +96,61 @@
           "key": "cough",
           "label": "Patient",
           "value": "Coughing, distressed"
+        },
+        {
+          "key": "chest",
+          "label": "Chest movement",
+          "value": "Reduced compared with earlier"
         }
       ],
       "options": [
         {
-          "text": "Go to the patient and look at the patient, the airway, the circuit and the machine.",
+          "text": "Go to the patient and assess the patient, the airway, the circuit and the ventilator.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "Going to the patient is the expected response to every alarm, and the machine's message guides but does not replace looking at the patient.",
-          "consequence": "You assess the patient and find circuit tension near the airway, but ventilation is not yet established as adequate and the patient remains distressed.",
+          "feedback": "Going to the patient is the expected response to every alarm, and the machine's message guides but does not replace looking at the patient. High pressure may reflect airway resistance, coughing, dyssynchrony or reduced respiratory-system compliance; the alarm alone does not diagnose the cause. Avoid empirical sedation or setting changes before appropriate assessment.",
+          "consequence": "Direct assessment may identify a correctable airway or circuit issue while clarifying whether emergency ventilation support is needed.",
           "support": "partial",
           "sources": [
             "S-HAMILTON-C1",
             "S-DRAEGER-V500-IFU",
-            "S-AARC-PVA"
+            "S-AARC-PVA",
+            "S-AARC-MV-SAFETY"
           ]
         },
         {
-          "text": "Silence the alarm and finish the task you were doing.",
+          "text": "Pause the alarm and finish the current task before returning to assess the patient.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
-          "feedback": "Silencing is not a response; the problem persists and the alarm will return.",
-          "consequence": "The alarm sounds again and the patient's saturation has fallen.",
+          "feedback": "A temporary audible pause does not correct the underlying problem; remain with the patient and resolve or escalate the alarm. Muting behavior varies by device and alarm priority.",
+          "consequence": "An alarm pause could conceal persistent ventilation difficulty and delay rescue.",
           "support": "partial",
           "sources": [
-            "S-HAMILTON-C1"
+            "S-HAMILTON-C1",
+            "S-AARC-MV-SAFETY"
           ]
         },
         {
-          "text": "Widen the alarm limits so the alarm stops.",
+          "text": "Widen the alarm limits and watch the pressure trend once the alarm stops.",
           "points": 0,
           "next": 2,
           "scope": "order_or_protocol_required",
           "feedback": "Alarm limits and modes are changed only when authorised by order, protocol and training; extreme limits make alarms useless.",
-          "consequence": "The alarm stops but the cause remains, and the patient's saturation falls unnoticed.",
+          "consequence": "Wider limits could suppress an important warning without correcting its cause.",
           "support": "partial",
           "sources": [
-            "S-HAMILTON-C1"
+            "S-HAMILTON-C1",
+            "S-AARC-MV-SAFETY"
           ]
         }
       ]
     },
     {
       "position": 2,
-      "info": "The patient's oxygen saturation falls and chest movement remains poor after your immediate bedside check; an immediately correctable cause has not been established.",
-      "prompt": "What is the right next step?",
+      "info": "At the next shared checkpoint, saturation is lower and chest movement remains poor. The high-pressure alarm persists. An immediately correctable cause has not been established; ventilation may be inadequate.",
+      "prompt": "What is the immediate priority when troubleshooting has not restored effective ventilation?",
       "observations": [
         {
           "key": "spo2",
@@ -150,41 +167,47 @@
           "key": "alarm",
           "label": "Alarm shown",
           "value": "High airway pressure"
+        },
+        {
+          "key": "cough",
+          "label": "Patient",
+          "value": "Increasing distress"
         }
       ],
       "options": [
         {
-          "text": "Call for skilled help and use the unit's approved emergency ventilation approach to ensure effective ventilation while the cause is addressed.",
+          "text": "Call for skilled help and use the approved emergency ventilation pathway to ensure effective ventilation while the cause is addressed.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "Inadequate ventilation or rapidly worsening oxygenation calls for immediate rescue with a trained team. Assess the airway and patient, call for help, and provide alternative ventilation by the unit's protocol if required rather than leaving the patient unsupported while troubleshooting. AARC endorses direct patient–ventilator assessment; specific emergency-device steps come from the unit and manufacturer.",
-          "consequence": "A trained team promptly establishes effective ventilation by the local emergency pathway and addresses the airway/circuit problem.",
+          "feedback": "Inadequate ventilation or rapidly worsening oxygenation calls for immediate rescue with a trained team. Assess the airway and patient, call for help, and provide alternative ventilation by the unit's protocol if required rather than leaving the patient unsupported while troubleshooting. AARC endorses direct patient–ventilator assessment; specific emergency-device steps come from the unit and manufacturer. Facilities should have a backup ventilation plan and staff trained on the installed model. Activate the emergency pathway promptly; no particular circuit-disconnection or device maneuver is implied.",
+          "consequence": "Skilled emergency assistance and the approved backup ventilation approach may restore support while the cause is investigated.",
           "support": "partial",
           "sources": [
             "S-HAMILTON-C1",
-            "S-DRAEGER-V500-IFU"
+            "S-DRAEGER-V500-IFU",
+            "S-AARC-MV-SAFETY"
           ]
         },
         {
-          "text": "Keep troubleshooting the machine on your own.",
+          "text": "Troubleshoot the persistent high-pressure alarm independently before requesting skilled help or arranging emergency ventilation.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
           "feedback": "Continuing to troubleshoot alone while ventilation is inadequate can delay rescue; call for skilled help and follow the emergency ventilation pathway.",
-          "consequence": "The patient's condition worsens before help arrives.",
+          "consequence": "Prolonged troubleshooting without rescue support could worsen hypoxaemia or delay emergency care.",
           "support": "partial",
           "sources": [
             "S-HAMILTON-C1"
           ]
         },
         {
-          "text": "Change the ventilator mode yourself to see if the patient improves.",
+          "text": "Change the ventilator mode independently to see whether chest movement and saturation improve, and request skilled review only if the alarm continues.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
           "feedback": "Unsupervised ventilator changes do not substitute for urgent assessment and effective ventilation; use the unit's authorized emergency process.",
-          "consequence": "The new mode does not help and the team must now also work out what was changed.",
+          "consequence": "An unauthorized mode change could worsen ventilation and complicate assessment.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA"
@@ -194,8 +217,8 @@
     },
     {
       "position": 3,
-      "info": "The team has corrected the problem and the patient is stable on the ventilator again.",
-      "prompt": "What should you do now?",
+      "info": "At the final shared checkpoint, the trained team has addressed an airway or circuit problem. Chest movement is equal, saturation has improved and the alarm is no longer active. Delivered support and alarm settings still need confirmation.",
+      "prompt": "What should the nurse verify and document before considering the episode resolved?",
       "observations": [
         {
           "key": "spo2",
@@ -212,41 +235,53 @@
           "key": "alarm",
           "label": "Alarm shown",
           "value": "None"
+        },
+        {
+          "key": "cough",
+          "label": "Patient",
+          "value": "Less distressed"
+        },
+        {
+          "key": "volumes",
+          "label": "Delivered volumes",
+          "value": "Reassessment required"
         }
       ],
       "options": [
         {
-          "text": "Give a clear SBAR handover of what happened and document the event and your actions.",
+          "text": "Confirm effective ventilation, volumes, pressures, oxygenation, airway and circuit with the respiratory team; document response and monitoring in handover.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "A structured handover and a record of events and responses keep the team informed and support learning.",
-          "consequence": "The next shift knows what happened and checks the circuit position at each round.",
+          "feedback": "AARC 2024 supports direct bedside assessment and review of delivered tidal volume, plateau pressure and PEEP, including intrinsic PEEP when relevant. Check recovery with the trained team rather than treating the absence of an alarm as proof of adequate ventilation. Document and hand over the event. Confirm that alarm limits remain appropriate for the patient's prescribed support, and record changes and response with the team. Once effective ventilation is restored, confirm that required alarms are active, detectable and functioning as intended under the approved local policy. Document any temporary alarm changes and reconcile them with the authorized operator. Recurrent unexplained alarms or suspected malfunction require review by the respiratory and equipment teams.",
+          "consequence": "A documented recovery assessment and monitoring plan may help the next team recognize recurrence and verify prescribed support.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS",
-            "S-AARC-PVA"
+            "S-AARC-PVA",
+            "S-AARC-MV-SAFETY",
+            "S-JC-ALARM"
           ]
         },
         {
-          "text": "Document only that the alarm sounded.",
+          "text": "Document that the high-pressure alarm sounded and has now stopped, without recording the cause, actions, reassessment findings or the agreed plan for continued monitoring.",
           "points": 1,
           "next": null,
           "scope": "independent_nursing",
           "feedback": "An incomplete record loses the cause, the actions and the outcome.",
-          "consequence": "The next shift sees an alarm but no explanation and repeats the troubleshooting.",
+          "consequence": "An alarm-only note could omit the cause, response and remaining concerns.",
           "support": "partial",
           "sources": [
             "S-AARC-PVA"
           ]
         },
         {
-          "text": "Reset the alarm limits to the narrowest settings so any change will alarm.",
+          "text": "Reset alarm limits to the narrowest available settings to detect changes, without first agreeing appropriate patient-specific limits with the trained respiratory team.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",
           "feedback": "Limits are set by order or protocol, not by the nurse's own choice.",
-          "consequence": "The limits cause frequent false alarms and the team asks who changed them.",
+          "consequence": "Unnecessarily narrow limits could generate nuisance alarms and distract from meaningful changes.",
           "support": "partial",
           "sources": [
             "S-HAMILTON-C1"
@@ -260,12 +295,17 @@
       "Every alarm is answered at the patient first.",
       "If ventilation is inadequate and not rapidly correctable, call for skilled help and secure effective alternative ventilation as trained and directed by the local emergency pathway.",
       "Do not silence alarms as a response or change limits and modes without authority.",
-      "Record and hand over what happened."
+      "After rescue, verify effective ventilation and review delivered volumes, airway pressures and PEEP with the respiratory team; document and hand over the event.",
+      "Recovery requires both adequate patient ventilation and functioning alarm protection; hand over unresolved equipment concerns and the person responsible for follow-up."
     ],
     "links": [
       {
         "kind": "skill",
         "code": "SK-07"
+      },
+      {
+        "kind": "skill",
+        "code": "SK-04"
       }
     ]
   }

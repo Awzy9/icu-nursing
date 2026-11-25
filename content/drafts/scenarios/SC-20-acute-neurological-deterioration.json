@@ -1,266 +1,314 @@
 {
- "scenario_id": "SC-20",
- "number": 20,
- "title": "Acute neurological deterioration",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "neurocritical",
- "difficulty": 3,
- "learning_objectives": [
-  "Record the three GCS responses separately with the total, and compare with the baseline.",
-  "Report a deterioration promptly, giving most attention to the motor response.",
-  "Return to the more frequent observation schedule after a deterioration.",
-  "Recognise that neurosurgical discussion and imaging are medical decisions."
- ],
- "related": {
-  "skills": [
-   "SK-24"
+  "scenario_id": "SC-20",
+  "number": 20,
+  "title": "Acute neurological deterioration",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "neurocritical",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Record the three GCS responses separately with the total, and compare with the baseline.",
+    "Report a deterioration promptly, giving most attention to the motor response.",
+    "Return to the more frequent observation schedule after a deterioration.",
+    "Recognise that neurosurgical discussion and imaging are medical decisions."
   ],
-  "medications": [],
-  "topic_drafts": [
-   "D03-T01"
-  ]
- },
- "sources": [
-  {
-   "id": "N-NICE-NG232",
-   "read": "partial",
-   "use": "NICE NG232 (2023): GCS recording, observation, neurosurgical discussion triggers"
+  "related": {
+    "skills": [
+      "SK-24"
+    ],
+    "medications": [],
+    "topic_drafts": [
+      "D03-T01"
+    ]
   },
-  {
-   "id": "S-GCS-OFFICIAL",
-   "read": "partial",
-   "use": "Glasgow Coma Scale structured approach (copyright)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
-  }
- ],
- "required_sources": [
-  "Neurological observation and deterioration guidance for critical care and neurosurgical units",
-  "Unit observation chart, frequency and escalation policy",
-  "Licence for reproducing GCS wording (not requested)"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "NICE NG232 covers people with a head injury, mainly in emergency departments and early hospital care; the scenario is framed as a fictional head-injured patient and is not evidence for other causes of neurological deterioration.",
-  "Numerical triggers, observation intervals and imaging criteria in NG232 are deliberately not used.",
-  "Causes of deterioration and their treatment are not drawn from a source read."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "NICE: Notice of rights not read; GCS wording is copyright; paraphrase only."
- ],
- "setting": "A fictional adult admitted after a head injury, on a fictional unit with a head injury observation chart.",
- "steps": [
-  {
-   "position": 1,
-   "info": "At a routine check the patient responds less than at the last check, and the best motor response is lower than before.",
-   "prompt": "What do you do?",
-   "observations": [
+  "sources": [
     {
-     "key": "eyes",
-     "label": "Eye opening",
-     "value": "Less than last check"
+      "id": "N-NICE-NG232",
+      "read": "partial",
+      "use": "NICE NG232 (2023): GCS recording, observation, neurosurgical discussion triggers"
     },
     {
-     "key": "verbal",
-     "label": "Verbal response",
-     "value": "Less than last check"
+      "id": "S-GCS-OFFICIAL",
+      "read": "partial",
+      "use": "Glasgow Coma Scale structured approach (copyright)"
     },
     {
-     "key": "motor",
-     "label": "Motor response",
-     "value": "Lower than last check"
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
     },
     {
-     "key": "baseline",
-     "label": "Recorded baseline",
-     "value": "Documented on admission"
+      "id": "S-ACS-TBI-2024",
+      "read": "partial",
+      "use": "ACS 2024 TBI Table 10, printed page 87, serial components/pupil monitoring and urgent repeat imaging after neurological decline"
     }
-   ],
-   "options": [
-    {
-     "text": "Record the eye, verbal and motor responses separately with the total, compare them with the previous record and the baseline, repeat the check, and report the deterioration urgently to the responsible clinician.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "NICE says to describe the three GCS responses with the total, to take the baseline into account, and lists deterioration in GCS after admission, with more attention to motor deterioration, as a reason to involve neurosurgery.",
-     "consequence": "The clinician is told promptly and the full component record is available.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232",
-      "S-GCS-OFFICIAL"
-     ]
-    },
-    {
-     "text": "Record only the total score and check again at the usual time.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "NICE says the components must always accompany the total, and a deterioration should be reported without waiting.",
-     "consequence": "The change in the motor response is lost in the total and the report is delayed.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232"
-     ]
-    },
-    {
-     "text": "Assume the patient is tired and let them sleep without further checks.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "A fall in responsiveness is a deterioration to report, not to assume away.",
-     "consequence": "The deterioration goes unreported.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The clinician has been told and is on the way. Observations were due at a longer interval.",
-   "prompt": "How should you observe the patient now?",
-   "observations": [
-    {
-     "key": "eyes",
-     "label": "Eye opening",
-     "value": "Still reduced"
-    },
-    {
-     "key": "motor",
-     "label": "Motor response",
-     "value": "Still lower"
-    },
-    {
-     "key": "clinician",
-     "label": "Clinician",
-     "value": "On the way"
-    }
-   ],
-   "options": [
-    {
-     "text": "Go back to the more frequent observation schedule that applies after a deterioration, keep recording on the unit's standard head injury chart, and stay alert for further change.",
-     "points": 2,
-     "next": 3,
-     "scope": "monitoring",
-     "feedback": "NICE says to revert to the most frequent observation schedule for a person who deteriorates and to document on a standard head injury proforma.",
-     "consequence": "The observations show the trend and the clinician arrives to a complete record.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232"
-     ]
-    },
-    {
-     "text": "Keep the longer interval because the clinician is already coming.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "The schedule is shortened after a deterioration, whoever is on the way.",
-     "consequence": "A further change between checks is missed.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232"
-     ]
-    },
-    {
-     "text": "Stop GCS checks and watch the monitor numbers instead.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "Monitor numbers do not replace the GCS observations.",
-     "consequence": "The neurological trend is no longer recorded.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The team decides to involve the neurosurgical team and arrange imaging. The family asks what is happening.",
-   "prompt": "What is your role?",
-   "observations": [
-    {
-     "key": "clinician",
-     "label": "Clinician",
-     "value": "Reviewing the patient"
-    },
-    {
-     "key": "neurosurgery",
-     "label": "Neurosurgical team",
-     "value": "To be contacted by the clinician"
-    },
-    {
-     "key": "family",
-     "label": "Family",
-     "value": "Waiting"
-    }
-   ],
-   "options": [
-    {
-     "text": "Keep observing and recording, give a clear handover of the trend, support the team with preparation, and tell the family what the team has agreed to share without giving a diagnosis yourself.",
-     "points": 2,
-     "next": null,
-     "scope": "escalation",
-     "feedback": "Discussing care with a neurosurgeon and deciding on imaging are medical decisions; the nurse's role is to observe, record, communicate the trend and support the team.",
-     "consequence": "The team has the information it needs and the family has been kept informed within agreed limits.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Contact the scanner and arrange the scan yourself without waiting for the clinician.",
-     "points": 0,
-     "next": null,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Decisions about imaging and neurosurgical discussion belong to the medical team.",
-     "consequence": "The pathway is confused and the team has to undo the booking.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232"
-     ]
-    },
-    {
-     "text": "Tell the family what you think is wrong with the patient.",
-     "points": 0,
-     "next": null,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Diagnosis is for the responsible clinician; the nurse shares only what the team has agreed.",
-     "consequence": "The family receives an unconfirmed explanation.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG232"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "Record the three GCS responses and the total, and compare with the baseline.",
-   "Report a deterioration promptly, with most attention to the motor response, and return to the more frequent schedule.",
-   "Neurosurgical discussion and imaging are medical decisions; observe, record, hand over and support."
   ],
-  "links": [
-   {
-    "kind": "skill",
-    "code": "SK-24"
-   }
-  ]
- }
+  "required_sources": [
+    "Unit observation chart, frequency and escalation policy",
+    "Licence for reproducing GCS wording (not requested)"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "NICE NG232 covers people with a head injury, mainly in emergency departments and early hospital care; the scenario is framed as a fictional head-injured patient and is not evidence for other causes of neurological deterioration.",
+    "Numerical triggers, observation intervals and imaging criteria in NG232 are deliberately not used.",
+    "ACS 2024 TBI-specific serial assessment and urgent repeat imaging recommendations now linked. Causes and treatment of nontraumatic deterioration remain outside this case."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "NICE: Notice of rights not read; GCS wording is copyright; paraphrase only."
+  ],
+  "setting": "A fictional adult admitted after a head injury, on a fictional unit with a head injury observation chart.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "During a neurological observation round, an adult responds less than at the previous assessment; eye opening, verbal and best motor responses are reduced. Admission baseline is documented, but pupil findings and factors limiting examination require reassessment.",
+      "prompt": "What immediate response captures meaningful neurological change without delaying emergency assessment?",
+      "observations": [
+        {
+          "key": "eyes",
+          "label": "Eye opening",
+          "value": "Less than last check"
+        },
+        {
+          "key": "verbal",
+          "label": "Verbal response",
+          "value": "Less than last check"
+        },
+        {
+          "key": "motor",
+          "label": "Motor response",
+          "value": "Lower than last check"
+        },
+        {
+          "key": "baseline",
+          "label": "Recorded baseline",
+          "value": "Documented on admission"
+        },
+        {
+          "key": "pupils",
+          "label": "Pupil size and reactivity",
+          "value": "Urgent reassessment required"
+        },
+        {
+          "key": "limitations",
+          "label": "Assessment limitations",
+          "value": "Check sedation, intubation and paralysis"
+        },
+        {
+          "key": "vitals",
+          "label": "Airway, breathing and circulation",
+          "value": "Assess immediately"
+        }
+      ],
+      "options": [
+        {
+          "text": "Stay, assess airway, breathing and circulation and activate urgent clinical reassessment. In parallel, record separate eye, verbal and motor responses and total where assessable; compare with baseline and report.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "NICE NG232 prioritises urgent reassessment for deteriorating neurological signs. Do not wait for repeated scoring before escalating an unstable patient; record the assessable GCS components and explain factors limiting assessment. For head injury observations include pupil size and reactivity, limb movement and vital signs. New pupil inequality or asymmetric movement merits urgent reassessment. Check and document factors such as intubation, sedation or paralysis; if any GCS component is non-testable, do not invent a score or calculate a misleading total. ACS 2024 supports repeated standardized examinations and documentation, including individual responses and pupils, while protecting hemodynamics and gas exchange.",
+          "consequence": "Prompt reassessment and separate component documentation may help the team recognize the severity and trajectory of deterioration.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232",
+            "S-GCS-OFFICIAL",
+            "S-ACS-TBI-2024"
+          ]
+        },
+        {
+          "text": "Record only the total GCS, compare it with the admission total, and wait until the usual observation time to reassess the individual components and decide whether to escalate.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "NICE says the components must always accompany the total, and a deterioration should be reported without waiting.",
+          "consequence": "A total alone could obscure a motor change or conceal a non-testable component while escalation is delayed.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232"
+          ]
+        },
+        {
+          "text": "Attribute reduced responsiveness to fatigue, document apparent sleep and allow rest until the next routine observation instead of checking neurological responses or escalating the change.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "A fall in responsiveness is a deterioration to report, not to assume away.",
+          "consequence": "Attributing reduced responsiveness to tiredness could delay recognition of an acute neurological emergency.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "At the next shared checkpoint, the clinician is on the way. Eye opening and motor response remain reduced. The previous routine observation interval is no longer appropriate to the changing clinical picture; examination limitations still need documentation.",
+      "prompt": "How should the bedside nurse adapt observation and escalation while awaiting review?",
+      "observations": [
+        {
+          "key": "eyes",
+          "label": "Eye opening",
+          "value": "Still reduced"
+        },
+        {
+          "key": "motor",
+          "label": "Motor response",
+          "value": "Still lower"
+        },
+        {
+          "key": "clinician",
+          "label": "Clinician",
+          "value": "On the way"
+        },
+        {
+          "key": "verbal",
+          "label": "Verbal response",
+          "value": "Reassess if testable"
+        },
+        {
+          "key": "pupils",
+          "label": "Pupil size and reactivity",
+          "value": "Trend during reassessment"
+        },
+        {
+          "key": "limitations",
+          "label": "Assessment limitations",
+          "value": "Document any non-testable component"
+        }
+      ],
+      "options": [
+        {
+          "text": "Maintain bedside assessment; return to the intensified observation schedule for deterioration, record changes and escalate again for worsening airway, breathing, circulation or neurological status.",
+          "points": 2,
+          "next": 3,
+          "scope": "monitoring",
+          "feedback": "NICE says to revert to the most frequent observation schedule for a person who deteriorates and to document on a standard head injury proforma. Maintain patient-specific observation and escalation; do not generalize the NICE head injury schedule to every cause of ICU neurological deterioration.",
+          "consequence": "Intensified assessment and repeat escalation when needed may reveal further neurological or physiological deterioration early.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232",
+            "S-ACS-TBI-2024"
+          ]
+        },
+        {
+          "text": "Keep the previous, longer observation interval because the clinician is already on the way, and record a further neurological assessment only when the next routine observation becomes due or the clinician arrives.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "The schedule is shortened after a deterioration, whoever is on the way.",
+          "consequence": "Maintaining the old interval could miss a clinically important change.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232"
+          ]
+        },
+        {
+          "text": "Discontinue the GCS assessments while awaiting the clinician and focus on continuous vital-sign monitoring, using changes in the monitor readings rather than serial neurological findings to decide when to call again.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "Monitor numbers do not replace the GCS observations.",
+          "consequence": "Monitor-only surveillance could obscure changes in neurological responses.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "At the final shared checkpoint, the treating team is arranging specialist review and imaging. Ongoing neurological and physiological monitoring will be needed during preparation and any transfer. Family members are waiting for an explanation; the diagnosis has not been confirmed.",
+      "prompt": "How can the nurse support safe investigation, communicate the neurological trend and inform the family appropriately?",
+      "observations": [
+        {
+          "key": "clinician",
+          "label": "Clinician",
+          "value": "Reviewing the patient"
+        },
+        {
+          "key": "neurosurgery",
+          "label": "Neurosurgical team",
+          "value": "To be contacted by the clinician"
+        },
+        {
+          "key": "family",
+          "label": "Family",
+          "value": "Waiting"
+        },
+        {
+          "key": "transport",
+          "label": "Transport readiness",
+          "value": "Coordinate monitoring and trained escort with team"
+        },
+        {
+          "key": "neurology",
+          "label": "Neurological status",
+          "value": "Continue component-level reassessment"
+        }
+      ],
+      "options": [
+        {
+          "text": "Continue observations and documentation, hand over the trend, assist the team with preparation and share agreed information with the family without assigning a diagnosis.",
+          "points": 2,
+          "next": null,
+          "scope": "escalation",
+          "feedback": "Discussing care with a neurosurgeon and deciding on imaging are medical decisions; the nurse's role is to observe, record, communicate the trend and support the team. In a patient with traumatic brain injury and a worsening examination, ACS 2024 supports urgent repeat head CT. Prepare transport and ongoing monitoring with the clinical team rather than delaying escalation for a routine scan slot.",
+          "consequence": "A clear component-level trend, monitored preparation and factual communication may support timely specialist assessment and reduce misunderstanding.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232",
+            "S-AHRQ-TS",
+            "S-ACS-TBI-2024"
+          ]
+        },
+        {
+          "text": "Arrange imaging directly with the scanner before the clinician determines the investigation plan, then prepare the patient for transfer without team assessment.",
+          "points": 0,
+          "next": null,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Decisions about imaging and neurosurgical discussion belong to the medical team.",
+          "consequence": "Arranging imaging independently of the treatment and transport plan could disrupt coordinated assessment.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232"
+          ]
+        },
+        {
+          "text": "Explain your own suspected diagnosis to the family based on neurological changes before the team confirms the cause or agrees what information to share.",
+          "points": 0,
+          "next": null,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Diagnosis is for the responsible clinician; the nurse shares only what the team has agreed.",
+          "consequence": "Offering an unconfirmed diagnosis could misinform the family.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG232"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "Record individual assessable eye, verbal and motor responses, pupil findings and limb movements; compare with baseline. If a GCS component is non-testable, document why and omit a misleading total.",
+      "Escalate new neurological deterioration urgently, including pupil inequality, new focal asymmetry or a fall in motor response. Continue the diagnosis-specific intensified observation plan without waiting for repeat scoring.",
+      "Neurosurgical discussion and imaging are medical decisions; observe, record, hand over and support.",
+      "For traumatic brain injury with worsening examination, communicate urgency of clinician-directed repeat imaging and maintain appropriate monitoring during transport."
+    ],
+    "links": [
+      {
+        "kind": "skill",
+        "code": "SK-24"
+      }
+    ]
+  }
 }

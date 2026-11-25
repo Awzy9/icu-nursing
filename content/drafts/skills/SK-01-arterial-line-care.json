@@ -1,430 +1,475 @@
 {
- "skill_id": "SK-01",
- "number": 1,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
- "title": "Arterial line care",
- "category": "vascular-access",
- "topic_drafts": [
-  "D02-T04"
- ],
- "evidence_status": "partial",
- "license_status": "permission_required",
- "sources": [
-  {
-   "id": "S-CDC-BSI-2011",
-   "read": "full",
-   "use": "infection-prevention recommendations for pressure-monitoring systems (2011, last update 2017)"
-  },
-  {
-   "id": "S-ESICM-SHOCK-2014",
-   "read": "full",
-   "use": "indication in shock (dated)"
-  },
-  {
-   "id": "S-ERC-PRC-2025",
-   "read": "full",
-   "use": "arterial line after cardiac arrest (paraphrase only; commercial use needs ERC agreement)"
-  },
-  {
-   "id": "S-SSC-2026",
-   "read": "partial",
-   "use": "recommendation page only"
-  },
-  {
-   "id": "S-SSC-2021",
-   "read": "full",
-   "use": "complication rates (superseded edition)"
-  },
-  {
-   "id": "S-NCSBN-DELEG-2019",
-   "read": "full",
-   "use": "delegation principles"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
-  }
- ],
- "objectives": [
-  "State when guidelines support an arterial catheter.",
-  "Describe how to protect the patient from infection, bleeding, limb ischaemia and accidental disconnection.",
-  "List the CDC maintenance recommendations for the pressure-monitoring system.",
-  "Recognise warning signs and escalate promptly.",
-  "Identify which technical steps are not covered by any source read and follow local policy."
- ],
- "prerequisites": [
-  "Hand hygiene and aseptic technique (SK-21)",
-  "Arterial blood pressure fundamentals"
- ],
- "sections": {
-  "indications": {
-   "support": "partial",
-   "items": [
+  "skill_id": "SK-01",
+  "number": 1,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Not an approved competency assessment and not a validated clinical standard. Never shown to learners.",
+  "title": "Arterial line care",
+  "category": "vascular-access",
+  "topic_drafts": [
+    "D02-T04"
+  ],
+  "evidence_status": "partial",
+  "license_status": "permission_required",
+  "sources": [
     {
-     "text": "ESICM 2014: arterial and central venous catheters in shock not responsive to initial therapy and/or needing a vasopressor infusion (ungraded best practice).",
-     "support": "partial",
-     "sources": [
-      "S-ESICM-SHOCK-2014"
-     ]
+      "id": "S-CDC-BSI-2011",
+      "read": "full",
+      "use": "infection-prevention recommendations for pressure-monitoring systems (2011, last update 2017)"
     },
     {
-     "text": "SSC 2026 (recommendation page): either invasive or non-invasive blood-pressure monitoring in septic shock; invasive advised for intermediate-to-high-dose, escalating or multiple vasopressors, frequent arterial sampling, or inconsistent non-invasive readings. SSC 2021's invasive-over-non-invasive suggestion is superseded.",
-     "support": "partial",
-     "sources": [
-      "S-SSC-2026",
-      "S-SSC-2021"
-     ]
+      "id": "S-ESICM-SHOCK-2014",
+      "read": "full",
+      "use": "indication in shock (dated)"
     },
     {
-     "text": "ERC-ESICM 2025: all post-cardiac-arrest patients are monitored with an arterial line.",
-     "support": "sourced",
-     "sources": [
-      "S-ERC-PRC-2025"
-     ]
-    }
-   ]
-  },
-  "safety": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Keep all components of the pressure-monitoring system sterile (CDC Category IA).",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
+      "id": "S-ERC-PRC-2025",
+      "read": "full",
+      "use": "arterial line after cardiac arrest (paraphrase only; commercial use needs ERC agreement)"
     },
     {
-     "text": "Do not give dextrose-containing solutions or parenteral nutrition through the pressure-monitoring circuit (CDC IA).",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
+      "id": "S-SSC-2026",
+      "read": "partial",
+      "use": "recommendation page only"
     },
     {
-     "text": "Scrub the diaphragm with an appropriate antiseptic before accessing the system through a diaphragm (CDC IA).",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
+      "id": "S-SSC-2021",
+      "read": "full",
+      "use": "complication rates (superseded edition)"
     },
     {
-     "text": "Prefer a closed continuous-flush system and minimise manipulations and entries (CDC Category II).",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
+      "id": "S-NCSBN-DELEG-2019",
+      "read": "full",
+      "use": "delegation principles"
     },
     {
-     "text": "Do not routinely replace arterial catheters to prevent infection; remove as soon as no longer needed (CDC Category II).",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
-    }
-   ]
-  },
-  "responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The nurse maintains the system, checks the site and limb, reports readings and problems, and raises the daily question whether the line is still needed.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
     },
     {
-     "text": "Do not inject or infuse through the arterial line unless a protocol allows it; keep the line clearly identified.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
-    }
-   ]
-  },
-  "scope": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Site, limb and system checks, securement, labelling, reporting and documenting: independent nursing (competence required). Blood sampling, flush set-up, transducer changes and alarm limits: per order or protocol. Insertion, replacement, removal and pressure targets: prescriber decision.",
-     "support": "partial",
-     "sources": [
-      "S-NCSBN-DELEG-2019"
-     ]
-    }
-   ]
-  },
-  "equipment": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Pressure-monitoring set, transducer, flush solution and pressure bag: use the components and manufacturer instructions approved on your unit.",
-     "support": "local_protocol",
-     "sources": []
+      "id": "S-ESICM-SHOCK-2025",
+      "read": "partial",
+      "use": "Indexed abstract; arterial monitoring recommendation"
     },
     {
-     "text": "Disposable transducers are preferred over reusable ones (CDC IB).",
-     "support": "sourced",
-     "sources": [
-      "S-CDC-BSI-2011"
-     ]
+      "id": "S-ARTERIAL-MEASUREMENT-2020",
+      "read": "partial",
+      "use": "Selected publisher text on transducer reference and waveform quality"
     }
-   ]
+  ],
+  "objectives": [
+    "State when guidelines support an arterial catheter.",
+    "Describe how to protect the patient from infection, bleeding, limb ischaemia and accidental disconnection.",
+    "List the CDC maintenance recommendations for the pressure-monitoring system.",
+    "Recognise warning signs and escalate promptly.",
+    "Identify which technical steps are not covered by any source read and follow local policy."
+  ],
+  "prerequisites": [
+    "Hand hygiene and aseptic technique (SK-21)",
+    "Arterial blood pressure fundamentals"
+  ],
+  "sections": {
+    "indications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The ESICM 2025 update supports arterial pressure monitoring through an arterial catheter when shock persists despite initial treatment or vasopressor support is needed (ungraded good practice). The 2014 statement is historical; the SSC 2026 recommendation below is sepsis-specific.",
+          "support": "partial",
+          "sources": [
+            "S-ESICM-SHOCK-2025",
+            "S-ESICM-SHOCK-2014"
+          ]
+        },
+        {
+          "text": "SSC 2026 (recommendation page): either invasive or non-invasive blood-pressure monitoring in septic shock; invasive advised for intermediate-to-high-dose, escalating or multiple vasopressors, frequent arterial sampling, or inconsistent non-invasive readings. SSC 2021's invasive-over-non-invasive suggestion is superseded.",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2026",
+            "S-SSC-2021"
+          ]
+        },
+        {
+          "text": "ERC-ESICM 2025: all post-cardiac-arrest patients are monitored with an arterial line.",
+          "support": "sourced",
+          "sources": [
+            "S-ERC-PRC-2025"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "support": "full",
+      "items": [
+        {
+          "text": "Keep all components of the pressure-monitoring system sterile (CDC Category IA).",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-BSI-2011"
+          ]
+        },
+        {
+          "text": "Do not give dextrose-containing solutions or parenteral nutrition through the pressure-monitoring circuit (CDC IA).",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-BSI-2011"
+          ]
+        },
+        {
+          "text": "Scrub the diaphragm with an appropriate antiseptic before accessing the system through a diaphragm (CDC IA).",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-BSI-2011"
+          ]
+        },
+        {
+          "text": "Prefer a closed continuous-flush system and minimise manipulations and entries (CDC Category II).",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-BSI-2011"
+          ]
+        },
+        {
+          "text": "Do not routinely replace arterial catheters to prevent infection; remove as soon as no longer needed (CDC Category II).",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-BSI-2011"
+          ]
+        }
+      ]
+    },
+    "responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The nurse maintains the system, checks the site and limb, reports readings and problems, and raises the daily question whether the line is still needed.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-BSI-2011"
+          ]
+        },
+        {
+          "text": "Clearly identify the arterial monitoring line and prevent wrong-route medication administration. Do not use it as venous medication access; only approved arterial monitoring and sampling procedures are in scope.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "scope": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Site, limb and system checks, securement, labelling, reporting and documenting: independent nursing (competence required). Blood sampling, flush set-up, transducer changes and alarm limits: per order or protocol. Insertion, replacement, removal and pressure targets: prescriber decision.",
+          "support": "partial",
+          "sources": [
+            "S-NCSBN-DELEG-2019"
+          ]
+        }
+      ]
+    },
+    "equipment": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Pressure-monitoring set, transducer, flush solution and pressure bag: use the components and manufacturer instructions approved on your unit.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "Disposable transducers are preferred over reusable ones (CDC IB).",
+          "support": "sourced",
+          "sources": [
+            "S-CDC-BSI-2011"
+          ]
+        }
+      ]
+    },
+    "assessment": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Check colour, warmth, capillary refill, pulses distal to the catheter, pain, numbness, bleeding or haematoma at the site, and signs of infection.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-BSI-2011",
+            "S-SSC-2021"
+          ]
+        }
+      ]
+    },
+    "procedure": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Follow the manufacturer's instructions and competency-approved unit procedure for transducer setup, dynamic-response testing and blood sampling; no device-specific sequence is supplied.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Arterial pressure and waveform, heart rate, limb perfusion, insertion site, flush system, alarms and line days.",
+          "support": "partial",
+          "sources": [
+            "S-ESICM-SHOCK-2014"
+          ]
+        },
+        {
+          "text": "After a position change or unexpected pressure reading, assess the patient, verify the transducer reference level and waveform quality, and seek trained assistance for suspected damping or resonance. Do not change treatment solely on an implausible signal.",
+          "support": "partial",
+          "sources": [
+            "S-ARTERIAL-MEASUREMENT-2020"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Escalate immediately for bleeding or disconnection (apply pressure and call for help), a cold, pale or painful limb, a lost or implausible waveform that cannot be corrected, signs of infection or suspected injection into the line.",
+          "support": "partial",
+          "sources": [
+            "S-CDC-BSI-2011",
+            "S-SSC-2021"
+          ]
+        }
+      ]
+    },
+    "complications": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Limb ischaemia and bleeding occurred in under 1% of radial catheters in a systematic review; haematoma was the most common complication; femoral sites carried higher infection risk (SSC 2021 rationale).",
+          "support": "partial",
+          "sources": [
+            "S-SSC-2021"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record site and side, insertion date and line day, limb checks, waveform quality, set changeover dates, events and escalation as your unit's documentation standard requires.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "communication": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Use a structured handover (SBAR) for escalation.",
+          "support": "partial",
+          "sources": [
+            "S-AHRQ-TS"
+          ]
+        }
+      ]
+    }
   },
-  "assessment": {
-   "support": "partial",
-   "items": [
+  "checklist": [
     {
-     "text": "Check colour, warmth, capillary refill, pulses distal to the catheter, pain, numbness, bleeding or haematoma at the site, and signs of infection.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-BSI-2011",
-      "S-SSC-2021"
-     ]
-    }
-   ]
-  },
-  "procedure": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "preparation",
+      "text": "Confirm the order or protocol and identify the patient with two identifiers.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Zeroing, levelling, waveform (damping) checks and blood sampling are not described by any source read; follow the manufacturer's instructions and your unit's competency-approved procedure.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
+      "phase": "assessment",
+      "text": "Inspect the site and dressing, and check limb colour, warmth, capillary refill and sensation.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-BSI-2011"
+      ]
+    },
     {
-     "text": "Arterial pressure and waveform, heart rate, limb perfusion, insertion site, flush system, alarms and line days.",
-     "support": "partial",
-     "sources": [
-      "S-ESICM-SHOCK-2014"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
+      "phase": "assessment",
+      "text": "Trace the tubing from catheter to transducer and confirm every connection and stopcock position.",
+      "critical": true,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Escalate immediately for bleeding or disconnection (apply pressure and call for help), a cold, pale or painful limb, a lost or implausible waveform that cannot be corrected, signs of infection or suspected injection into the line.",
-     "support": "partial",
-     "sources": [
-      "S-CDC-BSI-2011",
-      "S-SSC-2021"
-     ]
-    }
-   ]
-  },
-  "complications": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Confirm a plausible waveform and that alarms are on with limits set per order or protocol.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
     {
-     "text": "Limb ischaemia and bleeding occurred in under 1% of radial catheters in a systematic review; haematoma was the most common complication; femoral sites carried higher infection risk (SSC 2021 rationale).",
-     "support": "partial",
-     "sources": [
-      "S-SSC-2021"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
+      "phase": "procedure",
+      "text": "Access the system only when needed, scrubbing the diaphragm first and keeping all components sterile.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "S-CDC-BSI-2011"
+      ]
+    },
     {
-     "text": "Record site and side, insertion date and line day, limb checks, waveform quality, set changeover dates, events and escalation as your unit's documentation standard requires.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "communication": {
-   "support": "partial",
-   "items": [
+      "phase": "procedure",
+      "text": "Do not use an arterial pressure-monitoring line for routine medication administration. Use only approved monitoring-system fluids and sampling procedures; no dextrose-containing or parenteral nutrition solutions through the pressure-monitoring circuit.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "S-CDC-BSI-2011"
+      ]
+    },
     {
-     "text": "Use a structured handover (SBAR) for escalation.",
-     "support": "partial",
-     "sources": [
-      "S-AHRQ-TS"
-     ]
+      "phase": "monitoring",
+      "text": "Assess the patient immediately when a reading is unexpected. Escalate instability without waiting; verify the signal and compare with non-invasive pressure in parallel where appropriate.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "phase": "escalation",
+      "text": "Apply pressure to bleeding, call for help and report a cold or painful limb or a lost waveform immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-CDC-BSI-2011"
+      ]
+    },
+    {
+      "phase": "documentation",
+      "text": "Ask each day whether the line is still needed and record the answer.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "S-CDC-BSI-2011"
+      ]
+    },
+    {
+      "phase": "monitoring",
+      "text": "After a position change or unexpected pressure reading, assess the patient, verify the transducer reference level and waveform quality, and seek trained assistance for suspected damping or resonance. Do not change treatment solely on an implausible signal.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-ARTERIAL-MEASUREMENT-2020"
+      ]
     }
-   ]
-  }
- },
- "checklist": [
-  {
-   "phase": "preparation",
-   "text": "Confirm the order or protocol and identify the patient with two identifiers.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "phase": "assessment",
-   "text": "Inspect the site and dressing, and check limb colour, warmth, capillary refill and sensation.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-CDC-BSI-2011"
-   ]
-  },
-  {
-   "phase": "assessment",
-   "text": "Trace the tubing from catheter to transducer and confirm every connection and stopcock position.",
-   "critical": true,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "phase": "procedure",
-   "text": "Confirm a plausible waveform and that alarms are on with limits set per order or protocol.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "phase": "procedure",
-   "text": "Access the system only when needed, scrubbing the diaphragm first and keeping all components sterile.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "S-CDC-BSI-2011"
-   ]
-  },
-  {
-   "phase": "procedure",
-   "text": "Give nothing through the arterial line except as an approved protocol allows; never dextrose or parenteral nutrition.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "S-CDC-BSI-2011"
-   ]
-  },
-  {
-   "phase": "monitoring",
-   "text": "Compare unexpected readings with the patient and a non-invasive reading before acting.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "S-SSC-2021"
-   ]
-  },
-  {
-   "phase": "escalation",
-   "text": "Apply pressure to bleeding, call for help and report a cold or painful limb or a lost waveform immediately.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "S-CDC-BSI-2011"
-   ]
-  },
-  {
-   "phase": "documentation",
-   "text": "Ask each day whether the line is still needed and record the answer.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "S-CDC-BSI-2011"
-   ]
-  }
- ],
- "gaps": [
-  "Zeroing, levelling, dynamic-response testing and damping: no source read; needs manufacturer IFU and a licensed procedural source.",
-  "Blood-sampling technique, flush pressure and rate, alarm limits: unsourced.",
-  "Current transducer-change interval: CDC 2011 states 96 hours; the unit's current policy governs and the guideline is dated.",
-  "SSC 2026 full publication not read."
- ],
- "permissions": [
-  "ERC-ESICM 2025 text: commercial use needs an agreement (paraphrase only).",
-  "CDC PDF: no reuse statement on the file; verify before reproducing.",
-  "Manufacturer IFUs: reproduction permission required."
- ],
- "references": [
-  {
-   "id": "S-CDC-BSI-2011",
-   "title": "Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (PDF footer: last update October 2017)",
-   "publisher": "CDC / HICPAC",
-   "version": "2011; updated Oct 2017 (chlorhexidine dressings superseded)",
-   "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-ESICM-SHOCK-2014",
-   "title": "Consensus on circulatory shock and hemodynamic monitoring (Intensive Care Med 2014;40:1795-1815)",
-   "publisher": "ESICM",
-   "version": "2014 (dated)",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "YELLOW (cite-only for commercial platform)",
-   "permission_required": "Yes for commercial reuse"
-  },
-  {
-   "id": "S-ERC-PRC-2025",
-   "title": "ERC and ESICM Guidelines 2025: Post-Resuscitation Care (Resuscitation 2025;215:110809)",
-   "publisher": "European Resuscitation Council / ESICM",
-   "version": "2025",
-   "url": "https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "RED for commercial use",
-   "permission_required": "Yes (commercial)"
-  },
-  {
-   "id": "S-SSC-2026",
-   "title": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (adults)",
-   "publisher": "SCCM / ESICM",
-   "version": "Published Crit Care Med 2026-03-23 (per search); DOI 10.1097/CCM.0000000000007075 (per SCCM listing); updates 2021 guidelines; 129 statements (secondary)",
-   "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "RED (unverified)",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-SSC-2021",
-   "title": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021 (Intensive Care Med 2021;47:1181-1247)",
-   "publisher": "SCCM / ESICM",
-   "version": "2021 (superseded by 2026 edition, which could not be read)",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
-   "accessed": "2026-11-14",
-   "read": "full",
-   "licence_class": "RED (cite-only)",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-NCSBN-DELEG-2019",
-   "title": "National Guidelines for Nursing Delegation (effective 2019-04-29)",
-   "publisher": "NCSBN and ANA",
-   "version": "2019-04-29; replaces the 2010 joint statement",
-   "url": "https://www.ncsbn.org/public-files/NGND-PosPaper_06.pdf",
-   "accessed": "2026-11-15",
-   "read": "full",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "title": "TeamSTEPPS 3.0 (index) and SBAR tool page",
-   "publisher": "AHRQ",
-   "version": "TeamSTEPPS updated 2023 (page text); SBAR page 'last reviewed November 2019'",
-   "url": "https://www.ahrq.gov/teamstepps-program/index.html",
-   "accessed": "2026-11-14",
-   "read": "partial",
-   "licence_class": "YELLOW",
-   "permission_required": "Verify"
-  }
- ]
+  ],
+  "gaps": [
+    "Technical principles of zeroing, levelling and waveform assessment are supported in part by the 2020 review; exact device instructions, dynamic-response procedure and local competency still require review.",
+    "Blood-sampling technique, flush pressure and rate, alarm limits: unsourced.",
+    "Current transducer-change interval: CDC 2011 states 96 hours; the unit's current policy governs and the guideline is dated.",
+    "SSC 2026 full publication not read."
+  ],
+  "permissions": [
+    "ERC-ESICM 2025 text: commercial use needs an agreement (paraphrase only).",
+    "CDC PDF: no reuse statement on the file; verify before reproducing.",
+    "Manufacturer IFUs: reproduction permission required."
+  ],
+  "references": [
+    {
+      "id": "S-CDC-BSI-2011",
+      "title": "Guidelines for the Prevention of Intravascular Catheter-Related Infections, 2011 (PDF footer: last update October 2017)",
+      "publisher": "CDC / HICPAC",
+      "version": "2011; updated Oct 2017 (chlorhexidine dressings superseded)",
+      "url": "https://www.cdc.gov/infection-control/media/pdfs/Guideline-BSI-H.pdf",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-ESICM-SHOCK-2014",
+      "title": "Consensus on circulatory shock and hemodynamic monitoring (Intensive Care Med 2014;40:1795-1815)",
+      "publisher": "ESICM",
+      "version": "2014 (dated)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4239778/",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "YELLOW (cite-only for commercial platform)",
+      "permission_required": "Yes for commercial reuse"
+    },
+    {
+      "id": "S-ERC-PRC-2025",
+      "title": "ERC and ESICM Guidelines 2025: Post-Resuscitation Care (Resuscitation 2025;215:110809)",
+      "publisher": "European Resuscitation Council / ESICM",
+      "version": "2025",
+      "url": "https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "RED for commercial use",
+      "permission_required": "Yes (commercial)"
+    },
+    {
+      "id": "S-SSC-2026",
+      "title": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026 (adults)",
+      "publisher": "SCCM / ESICM",
+      "version": "Published Crit Care Med 2026-03-23 (per search); DOI 10.1097/CCM.0000000000007075 (per SCCM listing); updates 2021 guidelines; 129 statements (secondary)",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "RED (unverified)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-SSC-2021",
+      "title": "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021 (Intensive Care Med 2021;47:1181-1247)",
+      "publisher": "SCCM / ESICM",
+      "version": "2021 (superseded by 2026 edition, which could not be read)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+      "accessed": "2026-11-14",
+      "read": "full",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-NCSBN-DELEG-2019",
+      "title": "National Guidelines for Nursing Delegation (effective 2019-04-29)",
+      "publisher": "NCSBN and ANA",
+      "version": "2019-04-29; replaces the 2010 joint statement",
+      "url": "https://www.ncsbn.org/public-files/NGND-PosPaper_06.pdf",
+      "accessed": "2026-11-15",
+      "read": "full",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "title": "TeamSTEPPS 3.0 (index) and SBAR tool page",
+      "publisher": "AHRQ",
+      "version": "TeamSTEPPS updated 2023 (page text); SBAR page 'last reviewed November 2019'",
+      "url": "https://www.ahrq.gov/teamstepps-program/index.html",
+      "accessed": "2026-11-14",
+      "read": "partial",
+      "licence_class": "YELLOW",
+      "permission_required": "Verify"
+    },
+    {
+      "id": "S-ESICM-SHOCK-2025",
+      "title": "ESICM guidelines on circulatory shock and hemodynamic monitoring 2025",
+      "publisher": "ESICM",
+      "version": "2025;51:1971-2012; doi 10.1007/s00134-025-08137-z",
+      "url": "https://pure.eur.nl/ws/portalfiles/portal/215348682/ESICM_guidelines_on_circulatory_shock_and_hemodynamic_monitoring_2025.pdf",
+      "accessed": "2026-11-16",
+      "read": "partial",
+      "licence_class": "RED (cite-only)",
+      "permission_required": "Permission required to reproduce protected material"
+    },
+    {
+      "id": "S-ARTERIAL-MEASUREMENT-2020",
+      "title": "How to measure blood pressure using an arterial catheter: a systematic 5-step approach",
+      "publisher": "Saugel et al. / Critical Care",
+      "version": "2020; corrected publisher HTML",
+      "url": "https://link.springer.com/article/10.1186/s13054-020-02859-w",
+      "accessed": "2026-11-24",
+      "read": "partial",
+      "licence_class": "RED",
+      "permission_required": "Verify"
+    }
+  ]
 }

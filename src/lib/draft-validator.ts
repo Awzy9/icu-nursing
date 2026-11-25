@@ -45,7 +45,7 @@ export function validateDraft(text: string): DraftIssue[] {
 }
 
 // ---------- MCQ structure and quality ----------
-export type Mcq = { id: string; options: Record<string, string>; answer: string; why: Record<string, string>; hasWhyCorrect: boolean };
+export type Mcq = { id: string; options: Record<string, string>; answer: string; why: Record<string, string>; hasWhyCorrect: boolean; structureIssues?: string[] };
 const LETTERS = ["A", "B", "C", "D"] as const;
 const NONSENSE = /\b(ignore the (patient|problem)|hide (it|the)|no one needs|porter|tear out|lie to|falsify|do nothing at all)\b/i;
 
@@ -55,11 +55,24 @@ export function parseMcqs(text: string): Mcq[] {
   return blocks.map((b) => {
     const id = /^(Q\d+)/.exec(b)?.[1] ?? "Q?";
     const options: Record<string, string> = {};
-    for (const l of LETTERS) { const m = new RegExp(`^${l}\\. (.+)$`, "m").exec(b); if (m?.[1]) options[l] = m[1].trim(); }
-    const answer = /^\*\*Answer: ([A-D])\.\*\*/m.exec(b)?.[1] ?? "";
+    const structureIssues: string[] = [];
+    for (const l of LETTERS) {
+      const matches = [...b.matchAll(new RegExp("^" + l + "\\. (.+)$", "gm"))];
+      if (matches.length > 1) structureIssues.push("repeated option " + l);
+      if (matches[0]?.[1]) options[l] = matches[0][1].trim();
+    }
+    const answers = [...b.matchAll(/^\*\*Answer: ([A-D])\.\*\*/gm)];
+    if (answers.length > 1) structureIssues.push("multiple answer-key lines");
+    const answer = answers[0]?.[1] ?? "";
     const why: Record<string, string> = {};
-    for (const l of LETTERS) { const m = new RegExp(`^\\*\\*Why not ${l}:\\*\\* (.+)$`, "m").exec(b); if (m?.[1]) why[l] = m[1].trim(); }
-    return { id, options, answer, why, hasWhyCorrect: /^\*\*Why correct:\*\* \S/m.test(b) };
+    for (const l of LETTERS) {
+      const matches = [...b.matchAll(new RegExp("^\\*\\*Why not " + l + ":\\*\\* (.+)$", "gm"))];
+      if (matches.length > 1) structureIssues.push("repeated explanation for option " + l);
+      if (matches[0]?.[1]) why[l] = matches[0][1].trim();
+    }
+    const correctReasons = [...b.matchAll(/^\*\*Why correct:\*\* \S.*$/gm)];
+    if (correctReasons.length > 1) structureIssues.push("multiple correct-answer explanations");
+    return { id, options, answer, why, hasWhyCorrect: correctReasons.length > 0, structureIssues };
   });
 }
 
@@ -68,9 +81,15 @@ export function mcqQuality(qs: Mcq[]): DraftIssue[] {
   const add = (rule: string, message: string) => out.push({ rule, message });
   const counts: Record<string, number> = { A: 0, B: 0, C: 0, D: 0 };
   let longest = 0;
+  const seenIds = new Set<string>();
   for (const q of qs) {
+    if (seenIds.has(q.id)) add("mcq", `${q.id}: duplicate question ID`);
+    seenIds.add(q.id);
+    for (const issue of q.structureIssues ?? []) add("mcq", `${q.id}: ${issue}`);
     if (Object.keys(q.options).length !== 4) { add("mcq", `${q.id}: needs exactly four options A–D`); continue; }
-    if (!q.answer) { add("mcq", `${q.id}: missing '**Answer: X.**'`); continue; }
+    const normalizedOptions = Object.values(q.options).map(text => text.normalize("NFKC").toLowerCase().replace(/\s+/g, " ").trim());
+    if (new Set(normalizedOptions).size !== normalizedOptions.length) add("mcq", `${q.id}: repeated answer option text`);
+    if (!LETTERS.some(l => l === q.answer)) { add("mcq", `${q.id}: missing or invalid answer key`); continue; }
     counts[q.answer] = (counts[q.answer] ?? 0) + 1;
     if (!q.hasWhyCorrect) add("mcq", `${q.id}: missing 'Why correct'`);
     const correct = q.options[q.answer] ?? "";

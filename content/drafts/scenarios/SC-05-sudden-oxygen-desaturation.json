@@ -20,7 +20,6 @@
   "related": {
     "skills": [
       "SK-08",
-      "SK-06",
       "SK-04",
       "SK-13"
     ],
@@ -42,11 +41,6 @@
       "use": "AARC oxygen CPG: oxygen use, monitoring"
     },
     {
-      "id": "S-AARC-SUCT",
-      "read": "full",
-      "use": "AARC suctioning CPG: suction only when indicated, hyperoxygenation, stopping for complications"
-    },
-    {
       "id": "S-RCP-NEWS2",
       "read": "full",
       "use": "NEWS2: early warning and escalation of deterioration"
@@ -60,20 +54,30 @@
       "id": "N-NCBI-OPENRN-CHEST",
       "read": "partial",
       "use": "Open RN Advanced Skills chapter 6: pleural deterioration and chest drain nursing surveillance paragraphs inspected 2026-11-23. Only differential awareness; no chest tube procedures or decompression algorithm."
+    },
+    {
+      "id": "S-FDA-OXIMETER-BASICS",
+      "read": "partial",
+      "use": "FDA public indexed device accuracy limitations; no procedure or numeric threshold inferred."
+    },
+    {
+      "id": "S-RCUK-ABCDE-ADULT",
+      "read": "partial",
+      "use": "RCUK ABCDE adult approach: initial assessment, immediate life-threatening breathing problems, oxygenation and ventilation, reassessment"
     }
   ],
   "required_sources": [
-    "A national guideline or professional standard on responding to acute desaturation in an adult in a critical-care unit",
     "Unit airway-emergency, oxygen and suctioning protocols",
     "Unit's pneumothorax, chest-drain malfunction, and tension-physiology emergency escalation protocol for patients on respiratory support."
   ],
   "gaps": [
     "No published clinical scenario may exist until the review phase: this is a specification only.",
     "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-    "No source read gives a stepwise sequence for sudden desaturation; the steps are assembled from assessment, monitoring and escalation statements and have not been tested against a protocol.",
+    "RCUK adult ABCDE guidance now supports immediate assessment, threat recognition and reassessment. The fictional sequence is not a validated ICU-specific protocol.",
     "Oxygen flow, targets and device choice are deliberately not written; they come from the order and policy.",
     "Escalation score thresholds are local and are not written.",
-    "The pleural emergency differential was strengthened without adding an independently validated tension pneumothorax diagnosis or invasive procedure: specific thoracic emergencies require local ICU/pleural-team protocols and specialist sign-off."
+    "The pleural emergency differential was strengthened without adding an independently validated tension pneumothorax diagnosis or invasive procedure: specific thoracic emergencies require local ICU/pleural-team protocols and specialist sign-off.",
+    "2026-11-24 AI source-scope check: the case has no artificial airway; removed AARC artificial-airway suction citation and skill link, used the registered Open RN oxygenation source for oral secretion assessment, and removed partial credit for leaving the deteriorating patient. Independent assessment of all scenario choices remains required."
   ],
   "permissions": [
     "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
@@ -83,8 +87,8 @@
   "steps": [
     {
       "position": 1,
-      "info": "The saturation alarm sounds and the reading is much lower than it was ten minutes ago. The patient is awake and looks worried.",
-      "prompt": "What do you do first?",
+      "info": "An adult without an artificial airway was talking comfortably ten minutes earlier. The saturation alarm now sounds, the patient appears anxious and the respiratory rate and effort have increased. The probe signal has not yet been checked.",
+      "prompt": "What should the nurse prioritize when a low saturation reading accompanies new respiratory distress?",
       "observations": [
         {
           "key": "spo2",
@@ -106,41 +110,53 @@
           "key": "rate",
           "label": "Breathing rate",
           "value": "Faster than before"
+        },
+        {
+          "key": "signal",
+          "label": "Oximeter signal",
+          "value": "Reliability not yet checked"
+        },
+        {
+          "key": "device",
+          "label": "Oxygen device",
+          "value": "Current delivery requires verification"
         }
       ],
       "options": [
         {
-          "text": "Go to the patient, remain at the bedside and assess airway, breathing effort, chest expansion symmetry, colour, lung sounds and circulation. Compare the oximeter alarm with the patient rather than relying on the probe alone, and call for urgent help if deterioration is significant.",
+          "text": "Stay at the bedside; assess airway, breathing effort, chest expansion symmetry, colour, lung sounds and circulation. Activate urgent help now; check oximeter reliability in parallel.",
           "points": 2,
           "next": 2,
           "scope": "assessment",
-          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings.",
-          "consequence": "You identify increased breathing effort and a wet cough. Secretions are one possibility, but the team must remain alert to other causes of deterioration.",
+          "feedback": "A rapid fall in oxygen saturation requires patient-first assessment, not an assumption of probe failure. Chest asymmetry or circulatory instability may indicate a pleural or other emergency needing immediate team assistance; oxygen readings must be interpreted with the clinical findings. Poor peripheral circulation and skin pigmentation may affect oximetry accuracy. Assess signal reliability in parallel and seek further measurement if the clinical picture is discordant; do not delay care. The RCUK adult ABCDE approach emphasizes early emergency assistance and addressing immediate threats during breathing assessment. Do not await chest imaging before escalating possible tension physiology; definitive intervention belongs to the trained team. Report whether respiratory distress is accompanied by new asymmetric chest movement, an unexpected change in chest-drain function or circulatory deterioration. Observe accessible drain and tubing findings without independently manipulating the drain. The emergency team determines the cause and intervention.",
+          "consequence": "Direct patient assessment and urgent help may reveal a respiratory emergency even if the oximeter signal is unreliable; secretions are only one possibility, and the team must consider other causes of deterioration.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8",
-            "N-NCBI-OPENRN-CHEST"
+            "N-NCBI-OPENRN-CHEST",
+            "S-FDA-OXIMETER-BASICS",
+            "S-RCUK-ABCDE-ADULT"
           ]
         },
         {
-          "text": "Reposition the probe and leave to see whether the number improves.",
-          "points": 1,
+          "text": "Reposition the probe, record the new signal quality and leave the bedside while waiting for the saturation reading to recover before reassessing breathing.",
+          "points": 0,
           "next": 2,
           "scope": "independent_nursing",
-          "feedback": "Checking the probe is sensible, but a falling reading in a patient who is breathing faster must not be treated as a probe problem without looking at the patient.",
-          "consequence": "A minute passes before you see that the patient really is struggling.",
+          "feedback": "Checking the probe can help establish signal reliability, but leaving a visibly deteriorating patient without assessing breathing is unsafe. Remain with the patient, reassess promptly and summon help.",
+          "consequence": "Leaving to await a better signal could delay recognition of worsening respiratory failure.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8"
           ]
         },
         {
-          "text": "Silence the alarm because the patient is talking and probably fine.",
+          "text": "Pause the audible alarm because the patient can still talk, record the earlier saturation and continue the scheduled observations without assessing the new distress or calling for urgent help.",
           "points": 0,
           "next": 2,
           "scope": "independent_nursing",
           "feedback": "A patient who can talk can still be hypoxic; early signs of hypoxia include anxiety and restlessness, and the alarm is a call to assess.",
-          "consequence": "The saturation keeps falling and the patient becomes more distressed.",
+          "consequence": "Being able to speak could falsely reassure the nurse while oxygenation or ventilation deteriorates.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8"
@@ -150,8 +166,8 @@
     },
     {
       "position": 2,
-      "info": "The patient has a weak, wet cough, and you can hear secretions. The oxygen device is connected and in place. The saturation is still low.",
-      "prompt": "What is the best next step?",
+      "info": "At the next shared checkpoint, the oxygen device is connected and the patient has a weak, wet cough with audible secretions. Saturation is still below the earlier baseline and respiratory effort remains increased. No single cause has been established.",
+      "prompt": "How should the nurse address possible retained oral secretions while investigating persistent respiratory compromise?",
       "observations": [
         {
           "key": "spo2",
@@ -173,42 +189,54 @@
           "key": "device",
           "label": "Oxygen device",
           "value": "Connected, in place"
+        },
+        {
+          "key": "effort",
+          "label": "Breathing effort",
+          "value": "Still increased"
+        },
+        {
+          "key": "alertness",
+          "label": "Alertness",
+          "value": "Awake, tiring"
         }
       ],
       "options": [
         {
-          "text": "Call for help according to the unit's process, keep the patient on oxygen as prescribed and policy allows, and clear the secretions with suction only because the need has been assessed, following the unit's suctioning method.",
+          "text": "Activate urgent help; continue authorised oxygen and reassessment. Assess retained oral secretions; trained staff use indicated non-invasive oral suction per policy without delaying emergency assessment.",
           "points": 2,
           "next": 3,
           "scope": "escalation",
-          "feedback": "Respiratory monitoring includes noting the need for suctioning; the AARC suctioning guideline supports suctioning when indicated and not routinely, and the nurse should stop and escalate if the patient deteriorates.",
-          "consequence": "The airway is cleared and the saturation begins to rise while help is on the way.",
+          "feedback": "This fictional patient is breathing without an artificial airway. Open RN Nursing Fundamentals describes oral suction for retained mouth or pharyngeal secretions. The AARC artificial-airway guideline does not establish suction technique for this patient. Escalate ongoing respiratory compromise and reassess the response.",
+          "consequence": "Indicated secretion clearance and urgent reassessment may improve airway patency while allowing the team to investigate other causes.",
           "support": "partial",
           "sources": [
             "S-OPENRN-FUND-CH8",
-            "S-AARC-SUCT",
-            "S-AARC-O2"
+            "S-AARC-O2",
+            "S-RCP-NEWS2",
+            "S-RCUK-ABCDE-ADULT"
           ]
         },
         {
-          "text": "Suction repeatedly until the saturation reaches its usual level.",
+          "text": "Repeat suction whenever saturation remains below baseline, without reassessing secretion clearance or tolerance; defer emergency assessment until the reading returns to its earlier level.",
           "points": 0,
           "next": 3,
           "scope": "independent_nursing",
-          "feedback": "Suctioning is done when indicated and carries its own risks; repeated suctioning without reassessment can worsen the patient's oxygenation.",
-          "consequence": "The patient becomes more distressed and the saturation falls further during suctioning.",
+          "feedback": "Repeating suction without reassessing indication, patient tolerance and the cause of deterioration is unsafe. Suction is not a substitute for urgent clinical assessment.",
+          "consequence": "Repeated suction without reassessment could worsen distress or delay treatment of another respiratory emergency.",
           "support": "partial",
           "sources": [
-            "S-AARC-SUCT"
+            "S-OPENRN-FUND-CH8",
+            "S-RCP-NEWS2"
           ]
         },
         {
-          "text": "Change the oxygen device or increase the oxygen yourself, as the patient needs more.",
+          "text": "Increase oxygen or change devices solely to restore the previous monitor reading, recording the response without reassessing breathing or using the authorised emergency escalation pathway.",
           "points": 0,
           "next": 3,
           "scope": "order_or_protocol_required",
-          "feedback": "Oxygen is given according to the prescription, order or protocol, with the target set by the team.",
-          "consequence": "The change is not authorised and the target is unclear.",
+          "feedback": "Emergency oxygen and breathing support must not be withheld when indicated. Use the authorized emergency pathway, assess the cause and reassess the patient; do not chase a displayed saturation alone.",
+          "consequence": "A higher displayed saturation could conceal ongoing respiratory compromise if the patient is not reassessed.",
           "support": "partial",
           "sources": [
             "S-AARC-O2"
@@ -218,8 +246,8 @@
     },
     {
       "position": 3,
-      "info": "The saturation has come up a little but the patient is still breathing hard. The doctor and the outreach nurse have arrived.",
-      "prompt": "What should you do now?",
+      "info": "At the final shared checkpoint, the responding team is at the bedside. Saturation has risen from 86% to 91%, but respiratory effort is still increased and heart rate remains fast. Improvement in one reading has not established recovery.",
+      "prompt": "What handover and reassessment are needed despite the partial improvement in saturation?",
       "observations": [
         {
           "key": "spo2",
@@ -241,41 +269,47 @@
           "key": "heart",
           "label": "Heart rate",
           "value": "Fast"
+        },
+        {
+          "key": "rate",
+          "label": "Breathing rate",
+          "value": "Still faster than baseline"
         }
       ],
       "options": [
         {
-          "text": "Give an SBAR handover (what you found, what you did and how the saturation responded), keep monitoring, reassess heart rate, breathing rate, saturation, lung sounds and the patient's own rating of breathlessness, and document what was done and whether it worked.",
+          "text": "Give SBAR on findings, actions and response; continue monitoring heart rate, breathing, saturation, lung sounds and breathlessness. Document interventions and effects.",
           "points": 2,
           "next": null,
           "scope": "escalation",
-          "feedback": "Reassessment after an intervention includes heart rate, breathing rate, oximetry and lung sounds and asking the patient to rate breathlessness; the effect of interventions is documented.",
-          "consequence": "The team has a clear picture, and the record shows the sequence of events.",
+          "feedback": "Reassessment after an intervention includes heart rate, breathing rate, oximetry and lung sounds and asking the patient to rate breathlessness; the effect of interventions is documented. Document oxygen device and delivered oxygen concentration where known, and communicate respiratory effort as well as saturation. Pulse oximetry does not measure carbon dioxide; persistent respiratory distress despite improved saturation needs urgent reassessment, with blood gas assessment as indicated.",
+          "consequence": "A clear timeline and reassessment may help the team recognize persistent respiratory compromise and evaluate the response to treatment.",
           "support": "sourced",
           "sources": [
             "S-OPENRN-FUND-CH8",
-            "S-AHRQ-TS"
+            "S-AHRQ-TS",
+            "S-RCUK-ABCDE-ADULT"
           ]
         },
         {
-          "text": "Step back and let the team work; write the notes later.",
-          "points": 1,
+          "text": "Step back and let the team work without handing over recent changes or confirming ongoing reassessment; reconstruct the event in the notes later.",
+          "points": 0,
           "next": null,
           "scope": "independent_nursing",
-          "feedback": "The nurse's observations and the timeline are valuable to the team at the bedside; delayed notes lose detail.",
-          "consequence": "Details of the timing are uncertain by the time the record is written.",
+          "feedback": "With continued increased breathing effort, stepping away without a structured transfer of responsibility risks missed deterioration. Provide the responding team with the timeline and ensure ongoing assessment.",
+          "consequence": "Stepping away could leave essential findings uncommunicated and monitoring responsibility unclear.",
           "support": "partial",
           "sources": [
             "S-AHRQ-TS"
           ]
         },
         {
-          "text": "Reset the alarm limits so the alarm stops sounding while the team treats the patient.",
+          "text": "Reset alarm limits to stop alerts during treatment; record improved saturation without reporting persistent breathing effort or agreeing monitoring.",
           "points": 0,
           "next": null,
           "scope": "order_or_protocol_required",
           "feedback": "Alarm limits are set according to the order or protocol; widening limits during an event hides further change.",
-          "consequence": "A further fall in saturation does not trigger an alarm.",
+          "consequence": "Changing limits could hide subsequent deterioration instead of addressing its cause.",
           "support": "partial",
           "sources": [
             "S-RCP-NEWS2"
@@ -287,19 +321,17 @@
   "debrief": {
     "learning_points": [
       "Go to the patient first: assess the airway, breathing effort, colour, lung sounds and heart rate, and use the oximeter reading as one finding among others.",
-      "Stay with the patient, give oxygen as prescribed and policy allows, and clear secretions by suction only when there is a need.",
+      "Stay with the patient, support oxygenation within authorised policy and consider oral secretion clearance only when indicated and within trained scope. Artificial-airway suction techniques do not apply to this case.",
       "Escalate early when the saturation does not recover, and reassess the same parameters after every intervention.",
       "Do not silence alarms or change limits and devices without authority; hand over with SBAR and document the response.",
-      "A wet cough does not exclude pneumothorax, an obstructed drain, or other causes of deterioration. New asymmetric chest movement, hypotension or severe respiratory compromise requires urgent skilled response; do not delay for device adjustments or chest radiography."
+      "A wet cough does not exclude pneumothorax, an obstructed drain, or other causes of deterioration. New asymmetric chest movement, hypotension or severe respiratory compromise requires urgent skilled response; do not delay for device adjustments or chest radiography.",
+      "Poor perfusion or pigmentation-related measurement limitations may affect oximetry; evaluate the patient and signal together, and obtain further assessment when findings disagree.",
+      "Chest-drain observations are part of the breathing assessment; a concerning change must not delay emergency assessment or prompt unapproved drain manipulation."
     ],
     "links": [
       {
         "kind": "skill",
         "code": "SK-08"
-      },
-      {
-        "kind": "skill",
-        "code": "SK-06"
       },
       {
         "kind": "skill",

@@ -1,0 +1,11 @@
+# P1 medication reconciliation — insulin and electrolytes batch 02
+
+24 November 2026. Five medication drafts revised. Three new sources; existing references reused. Previous CI 1437/1438, sole failure outdated fixed source-audit expectation. Updated test checks restricted-source flags against the registry, retains known flag assertions. Previous isolated Supabase and learning experience passed. Fresh CI pending.
+
+Sources accessed this session:
+- [ADA hospital standards 2026](https://diabetesjournals.org/care/article/49/Supplement_1/S339/163925/16-Diabetes-Care-in-the-Hospital-Standards-of-Care): indexed primary excerpts on basal insulin and nutrition (direct HTML blocked). [MYXREDLIN](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=afca6e80-a802-49fb-a978-5fe28a173001) indexed indication and product identity. Prior JBDS 2023 source reused, not reopened.
+- [NHS SPS magnesium](https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/) monitoring section, [NHS SPS potassium](https://sps.nhs.uk/articles/hypokalaemia/) indexed advice, [AHA 2025 ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support) indexed torsades and routine arrest bicarbonate statements.
+- [UKKA July 2026 hospital recommendations](https://guidelines.ukkidney.org/hyperkalaemia/6-summary-of-clinical-practice-guideline-for-hyperkalaemia/6-2-section-ii-hospital/) HTML 16.2–16.5: salt selection, glucose precautions and bicarbonate. [Registered calcium product](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0deed071-d89d-420e-b4b4-797dce0ad8f0) indexed product information.
+- [SSC 2026](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026) HTML bicarbonate statements and certainty. [BICARICU-2](https://doi.org/10.1001/jama.2025.20231) indexed results, [2026 IPD analysis](https://pubmed.ncbi.nlm.nih.gov/42472834/) indexed conclusion. Neither trial nor meta-analysis fully appraised.
+
+No numeric dosing or preparation instructions, no new label-version verification, no clinical/pharmacy review or commercial rights claim. Production unchanged.

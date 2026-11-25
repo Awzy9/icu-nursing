@@ -1,266 +1,339 @@
 {
- "scenario_id": "SC-08",
- "number": 8,
- "title": "Acute seizure",
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
- "fictional_patient": true,
- "spec_level": "decision_graph",
- "evidence_status": "partial",
- "domain": "neurocritical",
- "difficulty": 3,
- "learning_objectives": [
-  "Recognise a prolonged convulsive seizure as an emergency and call for help at once.",
-  "Know that anticonvulsant medicines are given only as prescribed or per the unit's protocol or the person's emergency plan.",
-  "Look for treatable causes such as low glucose and report them.",
-  "Seek expert guidance if the first treatment does not work."
- ],
- "related": {
-  "skills": [],
-  "medications": [
-   "MD-37",
-   "MD-47"
+  "scenario_id": "SC-08",
+  "number": 8,
+  "title": "Acute seizure",
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed. Fictional scenario specification; never imported, published or shown to learners.",
+  "fictional_patient": true,
+  "spec_level": "decision_graph",
+  "evidence_status": "partial",
+  "domain": "neurocritical",
+  "difficulty": 3,
+  "learning_objectives": [
+    "Recognise a prolonged convulsive seizure as an emergency and call for help at once.",
+    "Know that anticonvulsant medicines are given only as prescribed or per the unit's protocol or the person's emergency plan.",
+    "Look for treatable causes such as low glucose and report them.",
+    "Seek expert guidance if the first treatment does not work."
   ],
-  "topic_drafts": []
- },
- "sources": [
-  {
-   "id": "N-NICE-NG217",
-   "read": "partial",
-   "use": "NICE NG217 chapter 7 (updated August 2026): recommendations 7.1.1 to 7.1.9 on convulsive status epilepticus"
+  "related": {
+    "skills": [],
+    "medications": [
+      "MD-37",
+      "MD-47"
+    ],
+    "topic_drafts": []
   },
-  {
-   "id": "L-LORAZEPAM",
-   "read": "full",
-   "use": "FDA lorazepam label: respiratory depression, concomitant opioids"
-  },
-  {
-   "id": "N-JBDS-HYPO-2020",
-   "read": "partial",
-   "use": "JBDS: hypoglycaemia is an emergency and must be excluded in anyone with seizures"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "SBAR page"
-  }
- ],
- "required_sources": [
-  "First-aid and positioning guidance for an in-hospital seizure from a source read in full (not in NG217 chapter 7)",
-  "Critical-care guidance on seizures in sedated or ventilated patients and on electroencephalography",
-  "Unit status-epilepticus protocol and the individual patient's emergency plan"
- ],
- "gaps": [
-  "No published clinical scenario may exist until the review phase: this is a specification only.",
-  "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
-  "Medicine names, doses, routes and timings in NG217 are deliberately not used; they come from the plan, the order and the unit protocol.",
-  "Positioning, protection from injury and observation during the seizure are not in the chapter read and are not written.",
-  "NG217 is a UK guideline for children, young people and adults; refractory status epilepticus (third-line treatment and general anaesthesia) is outside this scenario."
- ],
- "permissions": [
-  "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
-  "NICE: Notice of rights not read; paraphrase only."
- ],
- "setting": "A fictional adult on a fictional ward whose convulsive seizure has not stopped.",
- "steps": [
-  {
-   "position": 1,
-   "info": "A patient is having a convulsive seizure that has been going on for several minutes and shows no sign of stopping.",
-   "prompt": "What do you do first?",
-   "observations": [
+  "sources": [
     {
-     "key": "seizure",
-     "label": "Seizure",
-     "value": "Continuing, convulsive"
+      "id": "N-NICE-NG217",
+      "read": "partial",
+      "use": "NICE NG217 chapter 7 (updated August 2026): recommendations 7.1.1 to 7.1.9 on convulsive status epilepticus"
     },
     {
-     "key": "duration",
-     "label": "Duration",
-     "value": "Several minutes so far"
+      "id": "L-LORAZEPAM",
+      "read": "full",
+      "use": "FDA lorazepam label: respiratory depression, concomitant opioids"
     },
     {
-     "key": "plan",
-     "label": "Individual emergency plan",
-     "value": "None available"
+      "id": "S-JBDS-HYPO-2023",
+      "read": "partial",
+      "use": "JBDS 01 January 2023, management introduction and selected severe hypoglycaemia algorithm: adults with diabetes in hospital; assess glucose promptly when safe, do not delay emergency care. Cite only; not an ICU seizure guideline."
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "SBAR page"
+    },
+    {
+      "id": "S-CDC-SEIZURE-2024",
+      "read": "partial",
+      "use": "CDC seizure first aid: protection from injury, staying with patient, no restraint or objects in mouth; community context, not ICU protocol"
+    },
+    {
+      "id": "S-ACNS-CCEEG-2015",
+      "read": "partial",
+      "use": "ACNS 2015 consensus section III.A: persistent altered consciousness and pharmacologic paralysis in high-risk patients"
+    },
+    {
+      "id": "S-ENLS-SE-V6",
+      "read": "partial",
+      "use": "Selected hospital arrival text and initial assessment; printed page 6 visually inspected; checked 2026-11-24; specialist protocol, not a nursing operating procedure"
+    },
+    {
+      "id": "S-ICS-SE-2025",
+      "read": "partial",
+      "use": "2025 multidisciplinary consensus, selected HTML continuous EEG and treatment-failure sections; UK context, not local nursing protocol."
+    },
+    {
+      "id": "S-AHA-FA-SEIZURE-2024",
+      "read": "partial",
+      "use": "2024 AHA/Red Cross first-aid section 6.6, selected recommendation and rationale text. Community setting; ICU positioning competency remains outstanding."
+    },
+    {
+      "id": "S-NSW-ECAT-SEIZURES",
+      "read": "partial",
+      "use": "NSW Agency for Clinical Innovation adult ECAT seizure protocol, position, airway and breathing assessment and documentation sections; Australian emergency-department nursing context, not an ICU protocol."
     }
-   ],
-   "options": [
-    {
-     "text": "Call for urgent help, note the time the seizure began, stay with the patient and start emergency care per the unit's protocol, asking for the emergency equipment and prescribed emergency medicine to be brought.",
-     "points": 2,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that.",
-     "consequence": "Help arrives while you stay with the patient and the time of onset is clear.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217",
-      "S-AHRQ-TS"
-     ]
-    },
-    {
-     "text": "Leave the bedside to look for a doctor.",
-     "points": 0,
-     "next": 2,
-     "scope": "escalation",
-     "feedback": "Getting help is right, but leaving the patient removes emergency care at the worst moment.",
-     "consequence": "The patient is alone during the seizure until you return.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217"
-     ]
-    },
-    {
-     "text": "Wait to see whether the seizure stops by itself.",
-     "points": 0,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "A prolonged convulsive seizure is an emergency that needs immediate treatment.",
-     "consequence": "Treatment is delayed and the seizure continues.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 2,
-   "info": "The doctor arrives, confirms there is no individual emergency plan, and intravenous access and resuscitation equipment are ready.",
-   "prompt": "What is the nurse's role regarding the medicine?",
-   "observations": [
-    {
-     "key": "seizure",
-     "label": "Seizure",
-     "value": "Continuing"
-    },
-    {
-     "key": "access",
-     "label": "Intravenous access",
-     "value": "In place"
-    },
-    {
-     "key": "equipment",
-     "label": "Resuscitation equipment",
-     "value": "At the bedside"
-    }
-   ],
-   "options": [
-    {
-     "text": "Prepare and give the first-line emergency medicine only as prescribed or as the unit's protocol directs, with resuscitation equipment ready and the patient's breathing watched closely afterwards.",
-     "points": 2,
-     "next": 3,
-     "scope": "order_or_protocol_required",
-     "feedback": "NICE sets out the first-line treatment when no plan is available; which medicine and how much is for the prescriber or protocol, and the lorazepam label warns of respiratory depression, especially with opioids.",
-     "consequence": "The medicine is given safely and breathing is monitored.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217",
-      "L-LORAZEPAM"
-     ]
-    },
-    {
-     "text": "Choose and give an anticonvulsant of your own choice from the ward stock.",
-     "points": 0,
-     "next": 3,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "The choice of medicine is a prescriber or protocol decision.",
-     "consequence": "An unsuitable medicine is given and the team has to correct it.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217"
-     ]
-    },
-    {
-     "text": "Refuse to prepare anything and wait for the doctor to do everything.",
-     "points": 1,
-     "next": 3,
-     "scope": "independent_nursing",
-     "feedback": "Preparing medicines and equipment for the prescriber is part of the nurse's role.",
-     "consequence": "The treatment is slowed down.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217"
-     ]
-    }
-   ]
-  },
-  {
-   "position": 3,
-   "info": "The seizure has not stopped after the first treatment.",
-   "prompt": "What do you do now?",
-   "observations": [
-    {
-     "key": "seizure",
-     "label": "Seizure",
-     "value": "Still continuing"
-    },
-    {
-     "key": "breathing",
-     "label": "Breathing",
-     "value": "Being watched closely"
-    },
-    {
-     "key": "glucose",
-     "label": "Blood glucose",
-     "value": "Not yet checked"
-    }
-   ],
-   "options": [
-    {
-     "text": "Make sure expert guidance is sought urgently, check the blood glucose and report the result because treatable causes such as low glucose matter, keep watching breathing, and give any further medicine only as prescribed.",
-     "points": 2,
-     "next": null,
-     "scope": "escalation",
-     "feedback": "NICE says to seek expert guidance in hospital if the first dose does not work and to be aware of causes such as hypoglycaemia; JBDS says low glucose must be excluded in anyone having seizures.",
-     "consequence": "Expert help is on its way and a treatable cause is not missed.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217",
-      "N-JBDS-HYPO-2020"
-     ]
-    },
-    {
-     "text": "Give another dose from stock straight away.",
-     "points": 0,
-     "next": null,
-     "scope": "prescriber_or_other_discipline",
-     "feedback": "Further doses and second-line medicines are prescriber decisions in line with the plan or protocol.",
-     "consequence": "A further dose is given without an order.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217"
-     ]
-    },
-    {
-     "text": "Assume the seizure will stop soon and stop observing the patient.",
-     "points": 0,
-     "next": null,
-     "scope": "independent_nursing",
-     "feedback": "The patient needs continuous observation and escalation when treatment is not working.",
-     "consequence": "Deterioration is missed.",
-     "support": "partial",
-     "sources": [
-      "N-NICE-NG217"
-     ]
-    }
-   ]
-  }
- ],
- "debrief": {
-  "learning_points": [
-   "A convulsive seizure lasting 5 minutes or more is an emergency: call for help, note the time and start emergency care.",
-   "Anticonvulsant medicines are given only as prescribed or per the plan or protocol; the nurse prepares, gives per order and monitors breathing.",
-   "If the first treatment fails, seek expert guidance and look for treatable causes such as low glucose."
   ],
-  "links": [
-   {
-    "kind": "medication",
-    "code": "MD-37"
-   }
-  ]
- }
+  "required_sources": [
+    "First-aid and positioning guidance for an in-hospital seizure from a source read in full (not in NG217 chapter 7)",
+    "Unit status-epilepticus protocol and the individual patient's emergency plan"
+  ],
+  "gaps": [
+    "No published clinical scenario may exist until the review phase: this is a specification only.",
+    "The branching content, consequences and scoring are the author's reading of the cited sources and have had no clinical review.",
+    "Medicine names, doses, routes and timings in NG217 are deliberately not used; they come from the plan, the order and the unit protocol.",
+    "General seizure injury-prevention and ICU EEG indications now have selected source support. In-hospital positioning with devices, local EEG access and specialist interpretation still require local review.",
+    "NG217 is a UK guideline for children, young people and adults; refractory status epilepticus (third-line treatment and general anaesthesia) is outside this scenario."
+  ],
+  "permissions": [
+    "Cited sources are paraphrased only; see the licensing register for each source's reproduction status.",
+    "NICE: Notice of rights not read; paraphrase only.",
+    "JBDS 2023: CC BY-NC 4.0; commercial reuse not authorised; no algorithm reproduced.",
+    "ENLS Version 6.0 selected text cited only; no protocol flowchart, drug instructions or proprietary checklist reproduced; rights pending."
+  ],
+  "setting": "A fictional adult on a fictional ward whose convulsive seizure has not stopped.",
+  "steps": [
+    {
+      "position": 1,
+      "info": "During routine ICU care an adult develops continuing convulsive movements. A colleague has noted the onset; several minutes have elapsed and there is no individual emergency plan immediately available. Glucose is not yet known.",
+      "prompt": "What should the nurse prioritize during the ongoing convulsion while organizing emergency treatment?",
+      "observations": [
+        {
+          "key": "seizure",
+          "label": "Seizure",
+          "value": "Continuing, convulsive"
+        },
+        {
+          "key": "duration",
+          "label": "Duration",
+          "value": "Several minutes so far"
+        },
+        {
+          "key": "plan",
+          "label": "Individual emergency plan",
+          "value": "None available"
+        },
+        {
+          "key": "glucose",
+          "label": "Blood glucose",
+          "value": "Not yet available"
+        },
+        {
+          "key": "breathing",
+          "label": "Airway and breathing",
+          "value": "Immediate assessment required"
+        }
+      ],
+      "options": [
+        {
+          "text": "Call for urgent help, note onset, stay and start protocol emergency care. Request equipment and prescribed medicine; check glucose in parallel without delay. Protect from injury without restraint or objects in the mouth; position safely.",
+          "points": 2,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "NICE says to provide resuscitation and immediate emergency treatment for a convulsive seizure lasting 5 minutes or more; calling for help and noting the time supports that. Assess potentially reversible causes, including hypoglycaemia, during the initial response rather than waiting for treatment failure. General seizure first-aid precautions supplement, not replace, the ICU airway and emergency protocol. Never force positioning during active convulsions. During convulsions or impaired alertness, avoid oral medicines, food and drink. The first-aid guidance supports injury prevention and aspiration precautions; in ICU, coordinate positioning with the airway team to protect invasive devices and ventilation. Document the observed seizure features and duration. If convulsions cease, reassess airway patency and breathing promptly; coordinate an airway-safe recovery position with the team where appropriate, considering trauma, invasive devices and ventilation needs. Do not use positioning in place of indicated resuscitation.",
+          "consequence": "Rapid emergency activation, timing and parallel glucose assessment may reduce treatment delay and identify a reversible contributor.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217",
+            "S-AHRQ-TS",
+            "S-JBDS-HYPO-2023",
+            "S-CDC-SEIZURE-2024",
+            "S-AHA-FA-SEIZURE-2024",
+            "S-NSW-ECAT-SEIZURES"
+          ]
+        },
+        {
+          "text": "Ask a colleague to keep observing the convulsion while you leave the bedside to find a doctor and collect the emergency medicine, planning to start the emergency response and glucose assessment once you return with the necessary equipment.",
+          "points": 0,
+          "next": 2,
+          "scope": "escalation",
+          "feedback": "Getting help is right, but leaving the patient removes emergency care at the worst moment.",
+          "consequence": "Leaving the bedside could interrupt observation and injury prevention during the convulsion.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217"
+          ]
+        },
+        {
+          "text": "Record the onset and observe the movements, keeping the environment quiet and waiting for spontaneous resolution before activating the emergency pathway, checking glucose or arranging the prescribed emergency treatment.",
+          "points": 0,
+          "next": 2,
+          "scope": "independent_nursing",
+          "feedback": "A prolonged convulsive seizure is an emergency that needs immediate treatment.",
+          "consequence": "Waiting for spontaneous cessation could delay time-sensitive treatment of prolonged seizures.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "info": "At the next shared checkpoint the emergency team is present, the convulsion continues and IV access and resuscitation equipment are ready. The treating clinician confirms there is no individual plan available. Medication identity, administration time and ventilation surveillance need coordination.",
+      "prompt": "How should the nurse support authorized emergency medication delivery and respiratory safety?",
+      "observations": [
+        {
+          "key": "seizure",
+          "label": "Seizure",
+          "value": "Continuing"
+        },
+        {
+          "key": "access",
+          "label": "Intravenous access",
+          "value": "In place"
+        },
+        {
+          "key": "equipment",
+          "label": "Resuscitation equipment",
+          "value": "At the bedside"
+        },
+        {
+          "key": "breathing",
+          "label": "Airway and breathing",
+          "value": "Continuous assessment required"
+        },
+        {
+          "key": "medication",
+          "label": "Emergency medication",
+          "value": "Verify authorized drug and timing"
+        }
+      ],
+      "options": [
+        {
+          "text": "Give first-line emergency medicine only as prescribed or protocol-directed; have resuscitation equipment ready and closely monitor breathing afterwards.",
+          "points": 2,
+          "next": 3,
+          "scope": "order_or_protocol_required",
+          "feedback": "NICE sets out the first-line treatment when no plan is available; which medicine and how much is for the prescriber or protocol, and the lorazepam label warns of respiratory depression, especially with opioids.",
+          "consequence": "Coordinated authorized treatment and respiratory monitoring may reduce delays and help identify medication-related respiratory depression.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217",
+            "L-LORAZEPAM"
+          ]
+        },
+        {
+          "text": "Select an anticonvulsant from ward stock based on experience, administer it without verifying the authorised choice and inform the clinician after administration.",
+          "points": 0,
+          "next": 3,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "The choice of medicine is a prescriber or protocol decision.",
+          "consequence": "Selecting medication independently could introduce a treatment error and delay appropriate seizure control.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217"
+          ]
+        },
+        {
+          "text": "Continue observing the seizure but defer medication preparation and equipment checks until the doctor completes them, despite the available approved emergency pathway.",
+          "points": 0,
+          "next": 3,
+          "scope": "independent_nursing",
+          "feedback": "Refusing to prepare authorised emergency care delays treatment of a continuing seizure. Work within competency and protocol, and summon appropriate assistance immediately.",
+          "consequence": "Failing to prepare authorized treatment could prolong seizure activity before rescue medication is available.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "info": "At the final shared checkpoint, initial team-directed treatment has been given but convulsive activity continues. Respiratory surveillance is ongoing, and the initial glucose result must be confirmed. The exact treatment and administration time must be communicated before further medication.",
+      "prompt": "What is the priority when the initial emergency treatment has not stopped the seizure?",
+      "observations": [
+        {
+          "key": "seizure",
+          "label": "Seizure",
+          "value": "Still continuing"
+        },
+        {
+          "key": "breathing",
+          "label": "Breathing",
+          "value": "Being watched closely"
+        },
+        {
+          "key": "glucose",
+          "label": "Blood glucose",
+          "value": "Initial check requested; confirm result or obtain urgently if still unavailable"
+        },
+        {
+          "key": "medication",
+          "label": "Initial emergency medication",
+          "value": "Confirm drug, administration time and response"
+        },
+        {
+          "key": "alertness",
+          "label": "Level of consciousness",
+          "value": "Continue assessment; report failure to recover"
+        }
+      ],
+      "options": [
+        {
+          "text": "Seek expert guidance urgently; confirm or obtain glucose, reassess breathing, verify prior treatment and timing, and give further treatment only under the authorised pathway.",
+          "points": 2,
+          "next": null,
+          "scope": "escalation",
+          "feedback": "Failure of initial seizure treatment requires urgent expert guidance. Confirm that reversible causes such as hypoglycaemia were assessed early; reassess if needed without delaying emergency treatment. NICE NG217 specifies a time-sensitive repeat benzodiazepine pathway when a convulsive seizure persists after first-line treatment, with expert guidance for subsequent treatment failure. Verify the exact drug, time and response of the first dose, maintain respiratory monitoring, and prepare the next authorised treatment without delay; the individual plan and emergency protocol determine administration. If movements stop but consciousness does not recover as expected, or neuromuscular blockade obscures motor signs, escalate possible ongoing electrographic seizures and discuss urgent EEG or continuous EEG with the neurocritical-care team. Do not assume persistent unresponsiveness is solely postictal or sedative-related. The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped.",
+          "consequence": "Urgent specialist reassessment and verification of treatment and reversible causes may support timely escalation while protecting ventilation.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217",
+            "S-JBDS-HYPO-2023",
+            "L-LORAZEPAM",
+            "S-ACNS-CCEEG-2015",
+            "S-ENLS-SE-V6"
+          ]
+        },
+        {
+          "text": "Give a further dose from ward stock because the seizure persists, without checking the previous medicine, administration time or authorised repeat-treatment plan.",
+          "points": 0,
+          "next": null,
+          "scope": "prescriber_or_other_discipline",
+          "feedback": "Do not give an unverified repeat dose. Further treatment may be urgently indicated, but confirm the initial medication and timing and follow the authorised emergency plan with respiratory monitoring.",
+          "consequence": "An unverified repeat dose could cause a medication error or respiratory depression.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217"
+          ]
+        },
+        {
+          "text": "Document the initial medication and assume movements will resolve soon; return to routine duties rather than continuing observation and seeking urgent expert guidance.",
+          "points": 0,
+          "next": null,
+          "scope": "independent_nursing",
+          "feedback": "The patient needs continuous observation and escalation when treatment is not working.",
+          "consequence": "Stopping observation could delay recognition of ongoing seizure activity or respiratory compromise.",
+          "support": "partial",
+          "sources": [
+            "N-NICE-NG217"
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief": {
+    "learning_points": [
+      "A convulsive seizure lasting 5 minutes or more is an emergency: call for help, note the time and start emergency care.",
+      "Anticonvulsant medicines are given only as prescribed or per the plan or protocol; the nurse prepares, gives per order and monitors breathing.",
+      "Check for treatable causes such as hypoglycaemia during the initial response without delaying emergency treatment. If the seizure continues, seek expert guidance and confirm the results.",
+      "Document the first treatment's agent, time and response; persistent convulsions require time-sensitive authorised escalation and continued respiratory monitoring.",
+      "Persistent unexplained impaired consciousness after convulsions, or paralysis masking motor signs in a high-risk patient, warrants urgent specialist assessment for EEG monitoring.",
+      "The ENLS hospital assessment also supports establishing which emergency medicines were already administered and their timing. Coordinate the ordered focused neurological examination, rhythm and respiratory surveillance, metabolic investigations (including glucose) and EEG access with the responding team. Do not delay authorised seizure treatment while waiting for glucose testing or EEG. Persistent unexplained unresponsiveness requires urgent specialist reassessment even if visible convulsions have stopped.",
+      "The 2025 Intensive Care Society consensus supports continuous EEG when consciousness remains depressed after a seizure or when status epilepticus is refractory. A processed sedation-depth index (such as BIS) is not a substitute for diagnostic EEG. If continuous EEG is unavailable, urgently coordinate specialist advice and the monitoring or transfer plan; no absence of movement establishes seizure control.",
+      "After convulsions, reassess alertness and swallowing safety before oral intake or oral medication; coordinate airway-safe positioning with the team rather than forcing a turn."
+    ],
+    "links": [
+      {
+        "kind": "medication",
+        "code": "MD-37"
+      }
+    ]
+  }
 }

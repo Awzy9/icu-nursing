@@ -1,291 +1,376 @@
 {
- "med_id": "MD-15",
- "number": 15,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Insulin (intravenous)",
- "drug_class": "Short-acting human insulin",
- "category": "insulin-electrolytes-fluids",
- "high_alert": true,
- "high_alert_note": "Named among the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
- "summary": "Short-acting human insulin product for intravenous use to improve glycaemic control in adults and children with diabetes. The label read is a specific premixed intravenous product; other insulin products differ. Nursing focus: hypoglycaemia, hypokalaemia and glucose monitoring.",
- "batch": 2,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Guideline-based monitoring statements added in Phase 9 come from UK national guidelines (UKKA July 2026 and JBDS January 2020), read in part only, for adults in UK hospitals; they are marked partial and do not replace the unit's protocol.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-INSULIN",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-INSULIN",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-15",
+  "number": 15,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Insulin (intravenous)",
+  "drug_class": "Short-acting human insulin",
+  "category": "insulin-electrolytes-fluids",
+  "high_alert": true,
+  "high_alert_note": "Named among the FDA infusion pump page's examples of high-risk infusions; the local high-alert list governs.",
+  "summary": "Short-acting human insulin product for intravenous use to improve glycaemic control in adults and children with diabetes. The label read is a specific ready-to-use intravenous human insulin solution (MYXREDLIN); other insulin products differ. Nursing focus: hypoglycaemia, hypokalaemia and glucose monitoring.",
+  "batch": 2,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice. Guideline-based monitoring statements added in Phase 9 come from UK national guidelines (UKKA July 2026 and JBDS January 2020), read in part only, for adults in UK hospitals; they are marked partial and do not replace the unit's protocol. Selected clinical evidence supplements the regulator label; full guideline and independent clinical appraisal remain outstanding.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-INSULIN",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-INSULIN",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    },
+    {
+      "id": "S-ADA-HOSP-2026",
+      "read": "partial",
+      "use": "ADA 2026 hospital standards indexed primary recommendation excerpts on basal insulin and nutrition"
+    },
+    {
+      "id": "S-JBDS-HYPO-2023",
+      "read": "partial",
+      "use": "Current JBDS 2023 inpatient hypoglycaemia guidance, prior targeted reconciliation"
+    },
+    {
+      "id": "S-UKKA-HK-2026",
+      "read": "partial",
+      "use": "UKKA July 2026 hospital recommendations on insulin-glucose and post-treatment checks"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label read describes a short-acting human insulin indicated to improve glycaemic control in adults and paediatric patients with diabetes mellitus; it is a product-specific intravenous label and other insulin products differ.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Changes in insulin regimen should be made under close medical supervision with more frequent blood glucose monitoring.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitor potassium levels and treat if indicated, and increase the frequency of blood glucose monitoring in patients at higher risk of hypoglycaemia.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "The label calls for monitoring of potassium levels and treating them if indicated.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "Changes in nutrition, renal or hepatic function and acute illness can change insulin requirements. If enteral feeding or parenteral nutrition is unexpectedly interrupted, check glucose promptly and alert the responsible team to apply the indication-specific insulin and nutrition protocol. Some medicines can mask hypoglycaemia symptoms.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "If feeding stops, promptly coordinate the nutrition and insulin plan. Essential basal insulin for type 1 diabetes must not be inadvertently omitted, including during care transitions; a clinician determines the appropriate ongoing regimen.",
+          "support": "partial",
+          "sources": [
+            "S-ADA-HOSP-2026"
+          ]
+        },
+        {
+          "text": "Concurrent thiazolidinediones can contribute to fluid retention or worsening heart failure. Review the medication list with the team and report new oedema, breathlessness or increasing oxygen needs; medicine changes remain clinician-directed.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "ADA 2026 recommendation 16.6 supports continuation of a personal CGM in hospital only when clinically appropriate and under an institutional protocol with confirmatory point-of-care glucose measurements for insulin dosing and hypoglycaemia assessment. A sensor reading alone does not authorize IV insulin adjustment. Coordinate appropriate confirmation of unexpected or discordant readings, promptly assess the patient, and do not delay emergency hypoglycaemia care while resolving a measurement discrepancy.",
+          "support": "partial",
+          "sources": [
+            "S-ADA-HOSP-2026"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Hypoglycaemia may be life-threatening; risk is increased by changes in nutrition, co-administered medicines and renal or hepatic impairment.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "Hypokalaemia may be life-threatening.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "Severe systemic allergy, including anaphylaxis, can occur. Activate emergency help and stop the implicated IV insulin product under the emergency pathway; treat and monitor until the reaction resolves.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "Changes in insulin strength, manufacturer, type or method of administration may affect glycaemic control.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "MYXREDLIN is a specific IV human insulin solution, not a mixed basal and prandial insulin product. Verify the actual insulin, route and indication; glucose-lowering treatment and emergency potassium shifting are distinct pathways.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN",
+            "S-UKKA-HK-2026"
+          ]
+        },
+        {
+          "text": "This registered IV insulin product is contraindicated during hypoglycaemia and with known allergy to human insulin or its ingredients. Suspected serious allergy requires immediate cessation of the implicated product and emergency care under the authorised pathway, with continued surveillance and a clinician-directed alternative insulin plan where essential.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists hypoglycaemia, hypersensitivity reactions and hypokalaemia among the adverse reactions discussed in its warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "The label also describes peripheral oedema and weight gain with insulin therapy (attributed to sodium retention and the anabolic effects of insulin), and notes that rapid glucose-control intensification has been associated with a transient, reversible eye-refraction disorder and acute painful peripheral neuropathy.",
+          "support": "sourced",
+          "sources": [
+            "L-INSULIN"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Escalate immediately for low or rapidly falling glucose, low potassium, allergic signs or a product mix-up. Treat hypoglycaemia under the emergency protocol; seek prompt review of any feed interruption and ongoing insulin requirements, especially when insulin is essential.",
+          "support": "partial",
+          "sources": [
+            "L-INSULIN"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record glucose and potassium results, pump checks, second-person checks and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "At transfer or shift change, communicate the insulin indication, authorized monitoring plan, last glucose and potassium values, relevant nutrition changes and pending checks. Reconcile the actual infusion and route with the current order.",
+          "support": "partial",
+          "sources": [
+            "S-ADA-HOSP-2026",
+            "S-FDA-PUMP"
+          ]
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "N-UKKA-HK-2026-07",
-   "read": "partial",
-   "use": "UKKA acute hyperkalaemia guideline (July 2026): glucose and potassium monitoring after insulin-glucose"
-  },
-  {
-   "id": "N-JBDS-HYPO-2020",
-   "read": "partial",
-   "use": "JBDS inpatient hypoglycaemia guideline (January 2020): treat as an emergency, do not omit later insulin without review"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "laboratory",
+      "text": "Monitor blood glucose at the unit's frequency, more often in higher-risk patients.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-INSULIN"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Monitor potassium levels.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-INSULIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Watch for signs of hypoglycaemia and allergy.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-INSULIN"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Report low glucose, low potassium or allergic signs at once.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-INSULIN"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check glucose promptly after an unexpected feed interruption and notify the team for an authorised insulin and nutrition plan; review potassium and renal function.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-INSULIN"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record glucose, potassium and pump checks.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "laboratory",
+      "text": "After insulin is given with glucose to lower a high potassium, check blood glucose at regular intervals for at least six hours, longer in patients at high risk of late hypoglycaemia (UKKA, UK adults).",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-UKKA-HK-2026"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Follow potassium results closely after treatment for a rebound once the first effect wears off (UKKA, UK adults).",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-UKKA-HK-2026"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Treat a low blood glucose as an emergency whatever the level of consciousness; ask the prescriber to review insulin doses instead of omitting later doses on your own (JBDS 2023, UK adults with diabetes).",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-JBDS-HYPO-2023"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm the insulin indication, baseline and follow-up glucose, potassium and nutrition status. During emergency potassium shifting, monitor for delayed hypoglycaemia and rebound hyperkalaemia according to the authorized pathway.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "S-UKKA-HK-2026",
+        "S-ADA-HOSP-2026"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Confirm glucose and allergy status before starting; urgently escalate suspected hypersensitivity or new evidence of fluid retention, especially with concomitant thiazolidinediones.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-INSULIN"
+      ]
+    }
+  ],
+  "gaps": [
+    "Dosing, glycaemic targets, premixed bag strength and preparation: deliberately not included.",
+    "Other insulin products (subcutaneous, long-acting, concentrated) were not covered.",
+    "ADA 2026 hospital recommendations and UKKA July 2026 hospital summary checked; JBDS 2023 reference replaces 2020. Full DKA and hyperglycaemia protocol appraisal remains outstanding."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms.",
+    "UKKA and JBDS guidelines: no reuse statement found in the text read; paraphrase only and verify.",
+    "Additional guideline and journal sources are cited for independent original paraphrase only; commercial reproduction rights not assessed."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "afca6e80-a802-49fb-a978-5fe28a173001",
+    "label_version": "12",
+    "effective_time": "20250307",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label read describes a short-acting human insulin indicated to improve glycaemic control in adults and paediatric patients with diabetes mellitus; it is a product-specific intravenous label and other insulin products differ.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Changes in insulin regimen should be made under close medical supervision with more frequent blood glucose monitoring.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitor potassium levels and treat if indicated, and increase the frequency of blood glucose monitoring in patients at higher risk of hypoglycaemia.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    },
-    {
-     "text": "The label calls for monitoring of potassium levels and treating them if indicated.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Hypoglycaemia may be life-threatening; risk is increased by changes in nutrition, co-administered medicines and renal or hepatic impairment.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    },
-    {
-     "text": "Hypokalaemia may be life-threatening.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    },
-    {
-     "text": "Severe, life-threatening hypersensitivity, including anaphylaxis, can occur; discontinue, monitor and treat if indicated (a prescriber decision).",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    },
-    {
-     "text": "Changes in insulin strength, manufacturer, type or method of administration may affect glycaemic control.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists hypoglycaemia, hypersensitivity reactions and hypokalaemia among the adverse reactions discussed in its warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    },
-    {
-     "text": "The label also describes peripheral oedema and weight gain with insulin therapy (attributed to sodium retention and the anabolic effects of insulin), and notes that rapid glucose-control intensification has been associated with a transient, reversible eye-refraction disorder and acute painful peripheral neuropathy.",
-     "support": "sourced",
-     "sources": [
-      "L-INSULIN"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Escalate immediately for low or rapidly falling glucose, low potassium, signs of allergy or any product mix-up.",
-     "support": "partial",
-     "sources": [
-      "L-INSULIN"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record glucose and potassium results, pump checks, second-person checks and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "laboratory",
-   "text": "Monitor blood glucose at the unit's frequency, more often in higher-risk patients.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-INSULIN"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Monitor potassium levels.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-INSULIN"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Watch for signs of hypoglycaemia and allergy.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-INSULIN"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Report low glucose, low potassium or allergic signs at once.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-INSULIN"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record glucose, potassium and pump checks.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  },
-  {
-   "kind": "laboratory",
-   "text": "After insulin is given with glucose to lower a high potassium, check blood glucose at regular intervals for at least six hours, longer in patients at high risk of late hypoglycaemia (UKKA, UK adults).",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "N-UKKA-HK-2026-07"
-   ]
-  },
-  {
-   "kind": "laboratory",
-   "text": "Follow potassium results closely after treatment for a rebound once the first effect wears off (UKKA, UK adults).",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "N-UKKA-HK-2026-07"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Treat a low blood glucose as an emergency whatever the level of consciousness; ask the prescriber to review insulin doses instead of omitting later doses on your own (JBDS 2020, UK adults with diabetes).",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "N-JBDS-HYPO-2020"
-   ]
-  }
- ],
- "gaps": [
-  "Dosing, glycaemic targets, premixed bag strength and preparation: deliberately not included.",
-  "Other insulin products (subcutaneous, long-acting, concentrated) were not covered.",
-  "Hyperglycaemia and DKA protocols were not read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms.",
-  "UKKA and JBDS guidelines: no reuse statement found in the text read; paraphrase only and verify."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "afca6e80-a802-49fb-a978-5fe28a173001",
-  "label_version": "12",
-  "effective_time": "20250307",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

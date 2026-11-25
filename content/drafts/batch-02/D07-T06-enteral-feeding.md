@@ -9,9 +9,9 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["ESICM clinical practice guidelines: Early enteral nutrition in critically ill patients (Intensive Care Med 2017;43:380-398; CC BY-NC)", "SHEA/IDSA/APIC 2022 update on VAP prevention (feeding statements only)", "Phase 3 additions: NICE CG32 Nutrition support for adults (published 2006, updated 2017; recommendations 1.7.16–1.7.18 and monitoring table) – UK guideline; NHS Improvement Patient Safety Alert NHS/PSA/RE/2016/006 on nasogastric tube misplacement (22 July 2016; summary read) – England"]
-sources: [S-ESICM-EEN-2017, S-SHEA-VAP-2022, S-NICE-CG32, S-NHSE-NGT-2016, S-ADA-HOSP-2026]
-sources_not_read: [S-ASPEN]
-independently_written_note: "Original wording. The ESICM 2017 early enteral nutrition guideline and the VAP/VAE 2022 update were read in full text. ASPEN/SCCM full guideline not accessible. The ESPEN 2023 English practical guideline was located bibliographically on 2026-11-23 (with a 2026 Spanish-language edition) but its clinical content and permissions were not fully reviewed. Energy and protein targets, feed products and rates are NOT covered. In Phase 3, tube-placement verification was added from NICE CG32 (UK, updated 2017) and the 2016 NHS Improvement alert summary (England); the alert's supporting resource set, the earlier NPSA alerts (2011–2013), and ASPEN/ESPEN guidance were not read, and the verification methods are UK-specific."
+sources: [S-ESICM-EEN-2017, S-SHEA-VAP-2022, S-NICE-CG32, S-NHSE-NGT-2016, S-ADA-HOSP-2026, S-ESPEN-ICU-2023, S-ASPEN]
+sources_not_read: []
+independently_written_note: "Original wording. The ESICM 2017 early enteral nutrition guideline and the VAP/VAE 2022 update were read in full text. Selected ASPEN 2022 question 4 recommendation and clinical-application text checked directly on 2026-11-24; complete 2016 and 2022 appraisals remain outstanding. Selected sections 3.2.2–3.2.3 and 3.4 of the ESPEN 2023 English practical guideline were checked directly in its society-hosted PDF on 2026-11-24; full appraisal and permissions remain outstanding. Energy and protein targets, feed products and rates are NOT covered. In Phase 3, tube-placement verification was added from NICE CG32 (UK, updated 2017) and the 2016 NHS Improvement alert summary (England); the alert's supporting resource set, the earlier NPSA alerts (2011–2013), and full ASPEN guidance were not read, and the verification methods are UK-specific."
 ---
 # Enteral feeding in the ICU – tolerance monitoring and aspiration prevention
 > DRAFT – NOT clinically reviewed. AI-generated. A dietitian reviewer is needed in addition to the standard roles.
@@ -55,8 +55,18 @@ Poor nutrition and feeding complications affect recovery, infection risk and ven
 - Document the interruption time and cause, prescribed feed volume not received, available glucose observations, current insulin exposure, clinician notification and agreed ongoing monitoring. Cross-reference the unreviewed `SC-10` hypoglycaemia scenario for discussion only.
 - This draft records an independent, high-level safety synthesis. The ADA 2026 standards are a **permission-restricted evidence source**, not a licensed reproduction source; no dose, treatment algorithm, text excerpt or published table is incorporated.
 
+## 7c. Refeeding risk and evolving shock — targeted ESPEN evidence check
+
+- Before nutrition begins or resumes, communicate recent poor intake, nutritional risk and baseline electrolyte results. During initiation, monitor trends in phosphate, potassium and magnesium under the agreed plan; a previously normal value or absence of obvious malnutrition does not exclude a subsequent fall.
+- A new phosphate decline after feeding, particularly with weakness, worsening breathing, arrhythmia or fluid retention, warrants prompt clinical assessment and escalation. Ask the team to review the nutrition trajectory, electrolyte replacement and monitoring frequency. Do not independently prescribe supplementation or advance calories. ESPEN recommendations 57–59 support closer biochemical surveillance and team-directed temporary energy restriction if refeeding hypophosphataemia develops; no universal diagnostic threshold or replacement regimen is taught here.
+- When shock remains uncontrolled, do not initiate or advance enteral feeds without urgent team assessment. After perfusion stabilizes, the team may authorize cautious feeding even with ongoing vasoactive support; a drug dose alone does not establish readiness. New abdominal pain, distension or haemodynamic deterioration requires prompt reassessment for possible bowel injury, not just a pump-rate adjustment. ESPEN recommendation 11 supports this distinction.
+
+**Delivery review and hidden energy sources (ESPEN 2023).** At the end of a shift, compare prescribed and actual feed volumes, duration and reason for each interruption, and relevant non-feed energy sources (such as lipid-containing propofol and intravenous glucose) with the nutrition team. Low enteral volume does not necessarily mean the patient has received too little total energy. During refeeding risk, report these additional energy exposures and electrolyte trends before the team changes the nutrition plan; do not independently compensate for missed feeds by increasing the pump rate. This practical reporting approach is a nursing synthesis of the guideline's discussion of inadvertent energy excess, not a calorie prescription.
+
+**Supplemental parenteral nutrition (ASPEN 2022, question 4).** For the studied adults receiving enteral nutrition, ASPEN recommends against routinely adding supplemental parenteral nutrition before ICU day 7 (strong recommendation, high certainty in its recommendation table). Trials did not include malnourished patients; individualized specialist decisions are needed in that group. Report cumulative delivery, persistent intolerance and nutritional-risk findings to the dietitian and clinical team. This does not prohibit necessary primary parenteral nutrition when enteral feeding is unsuitable, and is not an instruction to independently start or withhold nutrition.
+
 ## 8. Monitoring parameters
-Tolerance each shift or more often (vomiting, distension, aspirates, stools); volume delivered vs prescribed; interruptions of feeding while insulin is active; head-of-bed angle; glucose; electrolytes; balance; tube position checks; skin at the tube site; signs of aspiration (cough, wheeze, rising oxygen need).
+Tolerance each shift or more often (vomiting, distension, aspirates, stools); volume delivered vs prescribed; interruptions of feeding while insulin is active; head-of-bed angle; glucose; phosphate, potassium and magnesium trends during initiation or refeeding as ordered; balance; tube position checks; skin at the tube site; signs of aspiration (cough, wheeze, rising oxygen need).
 
 ## 9. Important findings – what the sources say (selected, summarised)
 | Topic | Statement | Nursing relevance |
@@ -82,7 +92,7 @@ Vomiting; new abdominal distension or pain; rigid abdomen; large or bile-stained
 | Starting or changing the feed, rate, route, targets, post-pyloric access, parenteral nutrition | Prescriber / dietitian decision |
 
 ## 12. Escalation criteria
-Escalate immediately for: suspected aspiration; sudden abdominal distension, rigidity or pain; haemodynamic deterioration while feeding; persistent high aspirates or vomiting; tube displacement or blockage not resolved by policy; severe diarrhoea.
+Escalate immediately for suspected aspiration, sudden abdominal distension, rigidity or pain, haemodynamic deterioration while feeding, persistent high aspirates or vomiting, tube displacement or unresolved blockage, or severe diarrhoea. Pause delivery and activate emergency help if breathing or circulation is compromised. Withhold feed, medicines and flushes when tube position is not confirmed; follow the authorised confirmation pathway. If feeding is interrupted in a patient receiving insulin, check glucose and urgently coordinate an indication-specific insulin and nutrition plan. Do not use the unconfirmed tube merely to maintain carbohydrate delivery.
 SBAR — **S:** bed X, vomited twice and abdomen is distended while on feeds. **B:** day 3, ventilated, vasopressor dose rising, aspirates 400 mL over 4 hours. **A:** feeding intolerance, possible gut hypoperfusion. **R:** I have paused the feed; please review now and advise on feeding, tests and treatment.
 
 ## 13. Potential complications
@@ -99,59 +109,59 @@ A 66-year-old ventilated man on vasopressors has a distended abdomen, a large as
 
 ## 17. MCQs
 **Q1 (prioritization).** A ventilated patient on rising vasopressor doses has a newly distended abdomen, vomited once and has a large gastric aspirate. What is the best nursing action?
-A. Pause the feed per policy, protect the airway, keep the bed head raised and report urgently with SBAR.
+A. Pause feeding, assess and protect the airway, and activate urgent clinical help.
 B. Continue the feed at the same rate and re-check the abdomen at the next routine round, as one vomit is common.
 C. Give a laxative from the ward stock and restart the feed at a lower rate once the patient has settled.
 D. Flush the tube and increase the feed rate to move the contents along.
 **Answer: A.**
-**Why correct:** New distension with instability may indicate intolerance or gut hypoperfusion; pausing and escalating protects the patient.
+**Why correct:** New distension and vomiting during escalating vasopressor support warrant immediate assessment for aspiration, intolerance or bowel hypoperfusion. ESPEN 2023 advises delaying enteral nutrition during uncontrolled shock until perfusion goals are reached, then cautious clinician-directed initiation while monitoring for bowel ischemia. If insulin is active when feeds stop, coordinate the glucose-monitoring and replacement plan promptly; ADA 2026 identifies unexpected feed interruption as a hypoglycemia risk.
 **Why not B:** Continuing risks aspiration and worsening distension.
 **Why not C:** Laxatives and restarting need an order and could harm if there is obstruction.
 **Why not D:** Increasing the rate would worsen intolerance.
 
-**Q2 (understanding).** What does the ESICM 2017 guideline suggest about early enteral nutrition compared with early parenteral nutrition in critically ill adults?
-A. Early parenteral nutrition is preferred in this situation because it is delivered more reliably.
-B. Early enteral nutrition and parenteral nutrition are equal and the choice is for convenience.
-C. Feeding should be delayed until bowel sounds have returned and the first stool has been passed by the patient.
-D. Early enteral nutrition is suggested rather than early parenteral nutrition in most patients, with defined delays.
+**Q2 (judgment).** A severely malnourished adult starts enteral nutrition. Over the next day phosphate falls substantially and potassium and magnesium are also declining. The planned feeding rate is due to increase. What should the nurse do?
+A. Advance feeds as planned while awaiting the next routine electrolyte results.
+B. Request a higher calorie target because the patient is severely malnourished.
+C. Replace phosphate under the current order and advance feeding without reassessment.
+D. Defer the planned increase, assess the patient and urgently coordinate a revised feeding plan.
 **Answer: D.**
-**Why correct:** The guideline suggests early enteral nutrition (conditional, low-quality evidence) with defined delay situations.
-**Why not A:** The guideline does not prefer early parenteral nutrition.
-**Why not B:** The guideline states a preference rather than equivalence.
-**Why not C:** It suggests feeding regardless of bowel sounds unless ischaemia or obstruction is suspected.
+**Why correct:** The electrolyte changes after restarting nutrition raise concern for refeeding complications. Assess the patient and escalate the findings, including rhythm, respiratory status and electrolyte trends. ESPEN 2023 recommends closer electrolyte surveillance and temporary energy restriction in refeeding hypophosphataemia, followed by gradual advancement. Coordinate prescribed replacement and nutrition adjustment rather than automatically advancing feeds; the findings require clinical interpretation, not a diagnosis from one result.
+**Why not A:** Advancing nutrition before review may aggravate metabolic disturbances; routine sampling is insufficient when electrolyte values are deteriorating.
+**Why not B:** Malnutrition increases refeeding risk and does not justify rapid escalation to full nutritional requirements.
+**Why not C:** Electrolyte replacement is important but does not independently establish that advancing energy delivery is safe.
 
-**Q3 (judgment).** A patient is turned prone and a colleague says the feed must always be stopped for proning. What is the best response?
+**Q3 (judgment).** The team plans a prolonged prone session for a ventilated patient receiving gastric feeds. A colleague proposes withholding nutrition throughout the session solely because of positioning. What is the best nursing response?
 A. Agree and stop all feeds for the whole prone period without telling the team, because proning always makes feeding unsafe.
 B. Say ESICM suggests not delaying feeding solely because of proning, then ask the team for the plan and follow it.
 C. Increase the feed rate during proning to make up for the time lost during the turn and the preparation for it.
 D. Remove the feeding tube before every turn to avoid displacement, and re-insert it once the patient is supine again.
 **Answer: B.**
-**Why correct:** The guideline suggests not delaying enteral feeding solely because of prone positioning; the team sets the plan.
-**Why not A:** Stopping without the team's plan is not guideline-based.
-**Why not C:** Increasing rates is a prescriber decision and may worsen intolerance.
-**Why not D:** Removing the tube is unnecessary and unsafe.
+**Why correct:** Proning alone is not a reason to withhold enteral nutrition throughout a session. Follow the coordinated turn and feeding plan; assess hemodynamic stability, tube security and placement before use, positioning and intolerance. Do not restart automatically if aspiration or displacement is suspected.
+**Why not A:** A temporary pause during the turn may be part of the unit procedure, but withholding nutrition throughout the session solely because of prone positioning is not supported by the cited guidance.
+**Why not C:** Compensating for missed feed volume by independently increasing the rate may worsen intolerance; coordinate any change with the authorized nutrition plan.
+**Why not D:** Routine removal before every turn is not indicated. Protect tube securement during repositioning and follow the approved position-verification pathway before use.
 
-**Q4 (application).** Which measure best reduces aspiration risk in a ventilated patient who is being fed?
-A. Keeping the head of the bed raised (SHEA: 30–45°, unless contraindicated) and giving regular mouth care.
-B. Lying the patient flat during feeds to make the stomach empty into the bowel.
-C. Giving large boluses quickly to finish the feed sooner, so that the stomach is empty for the next medicines.
-D. Switching off the monitors during the feed so that the patient is not disturbed and can rest more easily.
+**Q4 (judgment).** After repositioning, the external length of a patient's nasogastric tube has changed and its fixation is loose. A scheduled medication and feed are due. What should the nurse do?
+A. Withhold tube use and arrange position confirmation under the authorized pathway.
+B. Re-secure the tube at its new position and resume feeding at the previous prescribed rate.
+C. Give the medication with a small water flush while waiting for the position to be checked.
+D. Listen over the stomach during air insufflation and resume feeding if a sound is heard.
 **Answer: A.**
-**Why correct:** Head elevation and oral care are essential practices in the VAP update.
-**Why not B:** A flat position increases aspiration risk.
-**Why not C:** Rapid large volumes increase vomiting risk.
-**Why not D:** Monitoring is needed during feeding.
+**Why correct:** A changed external marking or loose fixation raises concern for displacement. Withhold feed, water and medications through the uncertain tube, assess for respiratory symptoms and obtain the authorized placement check before use. NICE CG32 and NHS England safety guidance support approved aspirate pH testing or radiography when required; auscultation is not a reliable confirmation method. Arrange authorized alternative routes for time-critical medications and coordinate glucose monitoring when feeding stops.
+**Why not B:** Re-securing a tube does not establish where its tip is located.
+**Why not C:** Even a small flush or medication can cause harm if the tube has migrated into the respiratory tract.
+**Why not D:** The whoosh test cannot distinguish safe gastric placement from an incorrectly positioned tube.
 
-**Q5 (scope).** Which task belongs to the prescriber or dietitian rather than the nurse?
-A. Checking and recording tube position and securement at each feed and after any movement.
-B. Reporting vomiting and a rise in gastric aspirates to the prescriber.
-C. Deciding to change from gastric to post-pyloric feeding or to parenteral nutrition.
-D. Raising the head of the bed and giving mouth care at regular intervals.
+**Q5 (judgment).** Continuous enteral feeding is unexpectedly interrupted for an urgent procedure. The patient has active scheduled insulin and the last bedside glucose was within target. What is the safest action?
+A. Wait for the next routine glucose check because the previous measurement was satisfactory.
+B. Withhold every insulin dose, including basal insulin, until nutrition resumes.
+C. Check glucose promptly and coordinate the authorized insulin and carbohydrate plan.
+D. Restart the interrupted feed at a faster rate after the procedure to replace the missed nutrition.
 **Answer: C.**
-**Why correct:** Choosing the route and type of nutrition, for example gastric, post-pyloric or parenteral, is a decision for the prescriber or dietitian with the team. The nurse carries it out, monitors and reports within that plan, as the other options show.
-**Why not A:** Independent nursing task.
-**Why not B:** Reporting is a nursing responsibility.
-**Why not D:** Independent nursing tasks.
+**Why correct:** ADA 2026 identifies unexpected feed interruption as a risk for hypoglycaemia when insulin remains active. Check glucose promptly, communicate feed interruption and insulin timing, and use the prescribed monitoring, insulin and carbohydrate replacement pathway. Basal insulin must not be indiscriminately stopped, particularly in type 1 diabetes. Reassess and document the restart plan; do not independently compensate by increasing the feed rate.
+**Why not A:** An earlier normal glucose does not exclude subsequent hypoglycaemia while insulin remains active.
+**Why not B:** Stopping all insulin can cause serious harm, especially in type 1 diabetes; adjustments require an individualized authorized plan.
+**Why not D:** Catch-up feeding does not address current glucose risk and may cause intolerance or inappropriate energy delivery.
 
 **Q6 (monitoring).** The unit policy requires gastric aspirate checks, and the SHEA update says monitoring gastric residual volumes has no impact on VAP rates. How should the nurse proceed?
 A. Stop checking aspirates at once because one document says they do not reduce VAP, and tell the next shift to do the same.
@@ -159,7 +169,7 @@ B. Follow unit policy, because the statements concern VAP rates, and raise the d
 C. Change the policy yourself on your shift to match the SHEA update, since it is the most recent of the two documents.
 D. Check aspirates only once a week to compromise between the two documents and reduce the workload for the team.
 **Answer: B.**
-**Why correct:** Policies change through governance; the discrepancy should be flagged, not resolved by individual nurses.
+**Why correct:** Do not use gastric residual volume alone as a diagnosis of aspiration or feeding intolerance. Follow the approved policy, assess vomiting, distension and clinical instability, and escalate concerning findings. VAP surveillance outcomes and nutritional tolerance are different questions; raise policy discrepancies through governance.
 **Why not A:** Local policy and other guidelines still use aspirates.
 **Why not C:** Individual nurses do not rewrite policies.
 **Why not D:** An arbitrary compromise has no basis in either document.
@@ -173,13 +183,17 @@ D. Check aspirates only once a week to compromise between the two documents and 
 
 - American Diabetes Association Professional Practice Committee for Diabetes. *Diabetes Care in the Hospital: Standards of Care in Diabetes—2026*. Diabetes Care. 2026;49(Suppl 1):S339–S355. https://pmc.ncbi.nlm.nih.gov/articles/PMC12690180/ (hypoglycaemia and feed-interruption sections inspected 2026-11-23; **publisher reproduction and commercial adaptation rights restricted; cite-only**).
 
+- ESPEN practical ICU nutrition guideline 2023. https://doi.org/10.1016/j.clnu.2023.07.011 (society-hosted PDF, selected sections 3.2.2–3.2.3 and 3.4 directly checked 2026-11-24; full appraisal outstanding; copyright retained by Elsevier and ESPEN, cite-only)
+
+- S-ASPEN. https://doi.org/10.1002/jpen.2267 (selected recommendation or teaching passages checked 2026-11-24; no full appraisal or rights clearance claimed).
+
 ## 19. Local protocol note
 Tube placement checks, aspirate thresholds, flushing, medicine administration, feed rates and glucose management follow the unit's policy and dietitian.
 
 ## 20. Evidence, applicability and open questions
-- Source quality: a European society guideline (2017; mostly conditional recommendations, many based on expert opinion) and a 2022 prevention update. **ESPEN source-status correction (2026-11-23):** an English 2023 *practical and partially revised guideline* is publicly listed by ESPEN (doi:10.1016/j.clnu.2023.07.011); a September 2026 *Nutrición Hospitalaria* Spanish-language edition (doi:10.20960/nh.06943) is also indexed. The 2026 article's English abstract describes the shortened/practical version rather than establishing an independent new English clinical guideline. **Neither full publication nor its tables were read for this draft**, so no ESPEN treatment, feeding-rate or nutritional-target claim is imported. Full text, edition comparison and commercial reuse permissions remain review tasks. ASPEN/SCCM guidelines were not accessible for full review; the ESICM guideline is dated.
+- Source quality: a European society guideline (2017; mostly conditional recommendations, many based on expert opinion) and a 2022 prevention update. **ESPEN source-status correction (2026-11-23):** an English 2023 *practical and partially revised guideline* is publicly listed by ESPEN (doi:10.1016/j.clnu.2023.07.011); a September 2026 *Nutrición Hospitalaria* Spanish-language edition (doi:10.20960/nh.06943) is also indexed. The 2026 article's English abstract describes the shortened/practical version rather than establishing an independent new English clinical guideline. **Selected sections of the English 2023 society-hosted PDF were directly checked on 2026-11-24** for shock, feeding route, intolerance and refeeding monitoring. Full appraisal, Spanish-edition comparison and commercial reuse permissions remain review tasks. No feeding-rate, drug dose or nutritional target has been added. Selected ASPEN 2022 question 4 was checked; complete ASPEN/SCCM appraisal remains outstanding; the ESICM guideline is dated.
 - International applicability: feeding precautions are transferable, but the tube-placement verification methods, initial imaging choice and pH cutoffs differ by national and local protocols. A 2026 systematic review found several clinical guidelines had low methodological quality.
 - Added only as a safety recognition gap: interrupted nutrition during active insulin treatment needs glucose surveillance and prompt interdisciplinary review; no insulin/feed interruption prescription or bedside treatment algorithm is taught here. ADA copyright and commercial re-use limitations remain unresolved.
-- Not covered: energy and protein targets, parenteral nutrition, non-UK placement verification methods and alternatives (for example ultrasound or electromagnetic guidance), the NHS alert's resource set and earlier NPSA alerts, refeeding, medicine administration via tubes.
-- Evidence/version reconciliation required: https://pubmed.ncbi.nlm.nih.gov/37517372/ (ESPEN English 2023), https://pubmed.ncbi.nlm.nih.gov/42549877/ (ESPEN Spanish 2026). These URLs are **bibliographic signposts only**, not references supporting a new bedside regimen.
+- Not covered: energy and protein targets, parenteral nutrition, non-UK placement verification methods and alternatives (for example ultrasound or electromagnetic guidance), the NHS alert's resource set and earlier NPSA alerts, comprehensive refeeding treatment, medicine administration via tubes.
+- Evidence/version reconciliation required: https://pubmed.ncbi.nlm.nih.gov/37517372/ (ESPEN English 2023), https://pubmed.ncbi.nlm.nih.gov/42549877/ (ESPEN Spanish 2026). The English guideline now supports the limited safety synthesis above; the Spanish edition remains a bibliographic signpost only. Neither is used to prescribe a new bedside regimen.
 - Open questions for reviewers (dietitian, CCP, NE, BN): whether the unit measures gastric aspirates at all, at what interval and which thresholds trigger action (neither source gives a bedside protocol; the 500 mL/6 h figure is a conditional, expert-opinion suggestion for delaying feeding, not a universal stop rule); local approved tube-placement check and who may perform it; post-pyloric access responsibilities.

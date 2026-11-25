@@ -1,0 +1,7 @@
+# Core question reconciliation — batch 02b
+
+24 November 2026. Targeted review of 30 questions in five topic sets; 18 question blocks amended, keys preserved, static option-length checks passed. Five regression cases added, not yet run.
+
+Current sources: [RCUK 2025 ALS](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines); [NICE delirium](https://www.nice.org.uk/guidance/cg103/chapter/Recommendations), [PADIS 2018](https://doi.org/10.1097/ccm.0000000000003299) and [2025 update](https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline) indexed statements; existing NICE NG148 excerpts (live page returned 403), [KDIGO status](https://kdigo.org/guidelines/acute-kidney-injury/) lists 2027 public-review draft summary dated Nov 19 2026 and publication in preparation, not final; [SHEA VAP](https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/), [AARC 2024](https://pubmed.ncbi.nlm.nih.gov/39048148/), [ESPEN 2023](https://doi.org/10.1016/j.clnu.2023.07.011) indexed journal excerpt (direct full text denied), [ADA 2026](https://doi.org/10.2337/dc26-s016). Added ESPEN source as partial/cite-only. No complete systematic review, clinical approval or publication. All drafts retain gates.
+
+Progress: 66 expansion + 96 original = 162/306. CI was running at prior head. Full CI and source rights clearance pending.

@@ -1,245 +1,311 @@
 {
- "med_id": "MD-22",
- "number": 22,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Piperacillin-tazobactam",
- "drug_class": "Penicillin-class antibacterial with a beta-lactamase inhibitor",
- "category": "anti-infectives",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Combination antibacterial for infections including intra-abdominal infection. Nursing focus: hypersensitivity, severe skin reactions, haemophagocytic lymphohistiocytosis, rhabdomyolysis and other label warnings.",
- "batch": 3,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-PIPTAZO",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-PIPTAZO",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-22",
+  "number": 22,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Piperacillin-tazobactam",
+  "drug_class": "Penicillin-class antibacterial with a beta-lactamase inhibitor",
+  "category": "anti-infectives",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Combination antibacterial for infections including intra-abdominal infection. Nursing focus: hypersensitivity, severe skin reactions, haemophagocytic lymphohistiocytosis, rhabdomyolysis and other label warnings.",
+  "batch": 3,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-PIPTAZO",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-PIPTAZO",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label describes piperacillin-tazobactam as a combination of a penicillin-class antibacterial and a beta-lactamase inhibitor indicated for several infections, including intra-abdominal infection.",
+          "support": "sourced",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Ask about previous allergic reactions to penicillins and other beta-lactams before the first dose and report any history.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label calls for haematological tests during prolonged therapy.",
+          "support": "sourced",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "The registered label warns of hemophagocytic lymphohistiocytosis (HLH) and rhabdomyolysis. Recognize concerning symptom clusters and promptly activate the medication-safety pathway; the label calls for immediate discontinuation when HLH is suspected and discontinuation when rhabdomyolysis manifestations occur.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "Piperacillin may slow methotrexate elimination; evidence is limited and the effect of tazobactam is uncertain. If both are prescribed, clarify the plan with pharmacy and coordinate ordered methotrexate surveillance and assessment for toxicity.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Serious hypersensitivity (anaphylactic or anaphylactoid) reactions have been reported; the label says to discontinue if a reaction occurs (a prescriber decision after stopping the infusion and calling for help).",
+          "support": "sourced",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "Severe cutaneous reactions, including Stevens-Johnson syndrome and toxic epidermal necrolysis, may occur; the label advises discontinuing for progressive rashes.",
+          "support": "sourced",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "Haemophagocytic lymphohistiocytosis has been reported; the label advises immediate discontinuation if suspected.",
+          "support": "sourced",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "Rhabdomyolysis is also among the label's warnings.",
+          "support": "sourced",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "The registered US product label warns about renal injury in critically ill patients, possible additional kidney risk with concomitant vancomycin, electrolyte disturbances including low potassium, and neurological toxicity including seizures, particularly in renal impairment. Review the patient-specific risk with pharmacy and the prescriber; this warning is not an independent instruction to change antibiotics.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label lists hypersensitivity reactions and severe cutaneous reactions among the clinically significant adverse reactions.",
+          "support": "sourced",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Stop the infusion and call for help for breathing difficulty, swelling, hypotension or a spreading rash; report new fever with rash or muscle pain. Urgently escalate suspected HLH, rhabdomyolysis, new neurological symptoms or significant bleeding. Follow the label-directed cessation pathway and emergency response for severe deterioration.",
+          "support": "partial",
+          "sources": [
+            "L-PIPTAZO"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Check allergy history before the first dose.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Watch for rash, breathing difficulty or swelling during and after the infusion.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Inspect the skin each shift for a progressive rash.",
+      "critical": false,
+      "support": "sourced",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Stop and report suspected allergy immediately.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Report new fever with cytopenias, rash or enlarged lymph nodes, and new muscle pain, weakness or dark urine. Suspected HLH or rhabdomyolysis needs urgent assessment and the label-directed cessation pathway.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record allergy checks and reactions.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review ordered renal function, urine output and electrolytes, especially potassium; alert the clinical team to deterioration and concurrent nephrotoxic therapy, including vancomycin.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Watch for new unexplained myoclonus, altered responsiveness or seizures, especially in renal impairment; urgently assess and escalate neurological deterioration.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "laboratory",
+      "text": "Review ordered blood counts during prolonged treatment and report new bleeding, cytopenias or suspected serious adverse reactions.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Flag concurrent methotrexate and verify the authorised monitoring plan with pharmacy.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-PIPTAZO"
+      ]
+    }
+  ],
+  "gaps": [
+    "Susceptibility, renal adjustment and treatment duration: not included.",
+    "Renal, electrolyte, neurological and haematological label warnings are included; individual monitoring intervals, regimen selection and interactions require local pharmacy review.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-15",
+    "set_id": "83f4adcd-893c-4e9e-8f2b-e06299dcf34d",
+    "label_version": "14",
+    "effective_time": "20240831",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label describes piperacillin-tazobactam as a combination of a penicillin-class antibacterial and a beta-lactamase inhibitor indicated for several infections, including intra-abdominal infection.",
-     "support": "sourced",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Ask about previous allergic reactions to penicillins and other beta-lactams before the first dose and report any history.",
-     "support": "partial",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label calls for haematological tests during prolonged therapy.",
-     "support": "sourced",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Serious hypersensitivity (anaphylactic or anaphylactoid) reactions have been reported; the label says to discontinue if a reaction occurs (a prescriber decision after stopping the infusion and calling for help).",
-     "support": "sourced",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    },
-    {
-     "text": "Severe cutaneous reactions, including Stevens-Johnson syndrome and toxic epidermal necrolysis, may occur; the label advises discontinuing for progressive rashes.",
-     "support": "sourced",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    },
-    {
-     "text": "Haemophagocytic lymphohistiocytosis has been reported; the label advises immediate discontinuation if suspected.",
-     "support": "sourced",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    },
-    {
-     "text": "Rhabdomyolysis is also among the label's warnings.",
-     "support": "sourced",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label lists hypersensitivity reactions and severe cutaneous reactions among the clinically significant adverse reactions.",
-     "support": "sourced",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Stop the infusion and call for help for breathing difficulty, swelling, hypotension or a spreading rash; report new fever with rash or muscle pain.",
-     "support": "partial",
-     "sources": [
-      "L-PIPTAZO"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Check allergy history before the first dose.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-PIPTAZO"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Watch for rash, breathing difficulty or swelling during and after the infusion.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-PIPTAZO"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Inspect the skin each shift for a progressive rash.",
-   "critical": false,
-   "support": "sourced",
-   "sources": [
-    "L-PIPTAZO"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Stop and report suspected allergy immediately.",
-   "critical": true,
-   "support": "partial",
-   "sources": [
-    "L-PIPTAZO"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record allergy checks and reactions.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "Susceptibility, renal adjustment and treatment duration: not included.",
-  "Other labelled warnings (for example kidney injury and electrolyte effects) were not summarised.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-15",
-  "set_id": "83f4adcd-893c-4e9e-8f2b-e06299dcf34d",
-  "label_version": "14",
-  "effective_time": "20240831",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

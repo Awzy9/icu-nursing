@@ -1,246 +1,294 @@
 {
- "med_id": "MD-25",
- "number": 25,
- "status": "DRAFT",
- "origin": "ai_generated",
- "clinically_reviewed": false,
- "pharmacist_reviewed": false,
- "clinical_reviewers": [],
- "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
- "name": "Ceftriaxone",
- "drug_class": "Cephalosporin antibacterial",
- "category": "anti-infectives",
- "high_alert": false,
- "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
- "summary": "Cephalosporin antibacterial for infections caused by susceptible organisms. Nursing focus: hypersensitivity history, calcium-containing solutions and diarrhoea.",
- "batch": 3,
- "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
- "evidence_status": "partial",
- "license_status": "unassessed",
- "label_source": "FDA",
- "label_ref": "L-CEFTRIAXONE",
- "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
- "sources": [
-  {
-   "id": "L-CEFTRIAXONE",
-   "read": "full",
-   "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+  "med_id": "MD-25",
+  "number": 25,
+  "status": "DRAFT",
+  "origin": "ai_generated",
+  "clinically_reviewed": false,
+  "pharmacist_reviewed": false,
+  "clinical_reviewers": [],
+  "banner": "DRAFT, NOT clinically reviewed and NOT pharmacist reviewed. A nursing reference without dosing; never shown to learners.",
+  "name": "Ceftriaxone",
+  "drug_class": "Cephalosporin antibacterial",
+  "category": "anti-infectives",
+  "high_alert": false,
+  "high_alert_note": "Not confirmed as high-alert on a source read; the institution's list governs.",
+  "summary": "Cephalosporin antibacterial for infections caused by susceptible organisms. Nursing focus: hypersensitivity history, calcium-containing solutions and diarrhoea.",
+  "batch": 3,
+  "evidence_type_note": "The evidence here is a regulator product label (prescribing information written for prescribers and pharmacists). It is not a bedside nursing practice guideline: the nursing actions are inferences from label warnings, marked partial, and the unit's protocol governs practice.",
+  "evidence_status": "partial",
+  "license_status": "unassessed",
+  "label_source": "FDA",
+  "label_ref": "L-CEFTRIAXONE",
+  "jurisdiction_note": "US FDA label only. EMA, MHRA and SFDA labels were not read; indications, warnings and presentations differ by country and by manufacturer.",
+  "sources": [
+    {
+      "id": "L-CEFTRIAXONE",
+      "read": "full",
+      "use": "regulator label sections (boxed warning, indications, warnings, adverse reactions) read in full text"
+    },
+    {
+      "id": "S-FDA-PUMP",
+      "read": "full",
+      "use": "FDA infusion pump page (high-risk infusion examples)"
+    },
+    {
+      "id": "S-AHRQ-TS",
+      "read": "partial",
+      "use": "AHRQ TeamSTEPPS SBAR page"
+    },
+    {
+      "id": "S-RCP-NEWS2",
+      "read": "full",
+      "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+    }
+  ],
+  "sections": {
+    "general_pharmacology": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label advises obtaining specimens to identify the organism and its susceptibility before treatment, and indicates ceftriaxone for infections caused by susceptible organisms.",
+          "support": "sourced",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        }
+      ]
+    },
+    "nursing_responsibilities": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Ask about previous reactions to cephalosporins, penicillins and other beta-lactams before the first dose and report them; check with the pharmacy or prescriber before any calcium-containing solution is given at the same time.",
+          "support": "partial",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
+          "support": "local_protocol",
+          "sources": []
+        },
+        {
+          "text": "The label states ceftriaxone must not be given through the same line at the same time as calcium-containing IV solutions (including continuous calcium-containing infusions such as parenteral nutrition), because a precipitate can form; in patients other than neonates the two may be given one after the other if the line is thoroughly flushed between them, but this is contraindicated outright in neonates aged 28 days or younger because of reports of fatal outcomes. The label also describes serious neurological adverse reactions reported with ceftriaxone, including encephalopathy (reduced consciousness, lethargy, confusion), seizures, myoclonus and non-convulsive status epilepticus; some cases occurred in patients with severe renal impairment who did not receive an appropriate dose adjustment.",
+          "support": "sourced",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        },
+        {
+          "text": "Serious neurological reactions may occur even with appropriately adjusted treatment. Assess new confusion, reduced consciousness, myoclonus or seizure activity, and seek urgent review for possible drug toxicity. An unexplained haemoglobin fall also warrants assessment for immune haemolysis.",
+          "support": "partial",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        },
+        {
+          "text": "The registered label describes biliary and urinary precipitation, sometimes associated with obstruction or renal failure, and recommends prothrombin-time surveillance in patients with low vitamin K stores. Assess new symptoms urgently and follow clinician-directed cessation procedures if toxicity is suspected.",
+          "support": "partial",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        }
+      ]
+    },
+    "safety_alerts": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Before therapy, careful inquiry should establish whether the patient has had hypersensitivity reactions to cephalosporins, penicillins and other beta-lactams, and the product should be given cautiously to beta-lactam-sensitive patients.",
+          "support": "sourced",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        },
+        {
+          "text": "Serious acute hypersensitivity reactions may require emergency measures, and serious and occasionally fatal reactions have been reported with beta-lactams.",
+          "support": "sourced",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        },
+        {
+          "text": "Ceftriaxone must never be given through the same line at the same time as calcium-containing IV solutions, in any age group, because of reports of fatal intravascular ceftriaxone-calcium precipitates, with neonates at the greatest risk.",
+          "support": "sourced",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        },
+        {
+          "text": "The registered label contraindicates ceftriaxone in premature neonates up to 41 weeks postmenstrual age and in neonates with hyperbilirubinaemia, because bilirubin displacement may cause encephalopathy. These restrictions are separate from the neonatal IV calcium restriction; verify age and clinical context with the neonatal team.",
+          "support": "partial",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        }
+      ]
+    },
+    "adverse_effects": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "The label describes ceftriaxone as generally well tolerated and lists local reactions, hypersensitivity and diarrhoea among the effects observed.",
+          "support": "sourced",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        }
+      ]
+    },
+    "escalation": {
+      "support": "partial",
+      "items": [
+        {
+          "text": "Stop and call for help for serious allergic signs. Urgently escalate new encephalopathy, myoclonus, seizure, unexplained anaemia or severe diarrhoea; follow clinician-directed cessation and supportive-care protocols. Activate emergency help for severe deterioration.",
+          "support": "partial",
+          "sources": [
+            "L-CEFTRIAXONE"
+          ]
+        },
+        {
+          "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
+          "support": "sourced",
+          "sources": [
+            "S-RCP-NEWS2"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_preparation": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    },
+    "institution_dosing": {
+      "support": "local_protocol",
+      "items": [
+        {
+          "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
+          "support": "local_protocol",
+          "sources": []
+        }
+      ]
+    }
   },
-  {
-   "id": "S-FDA-PUMP",
-   "read": "full",
-   "use": "FDA infusion pump page (high-risk infusion examples)"
-  },
-  {
-   "id": "S-AHRQ-TS",
-   "read": "partial",
-   "use": "AHRQ TeamSTEPPS SBAR page"
-  },
-  {
-   "id": "S-RCP-NEWS2",
-   "read": "full",
-   "use": "RCP NEWS2 (2017): nursing early-warning-score escalation framework (generic, not drug-specific)"
+  "monitoring": [
+    {
+      "kind": "assess",
+      "text": "Check beta-lactam allergy history before the first dose.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "observe",
+      "text": "Watch for rash, breathing difficulty or swelling.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Check the site for local reactions.",
+      "critical": false,
+      "support": "partial",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "escalate",
+      "text": "Stop and report allergic signs immediately; also report confusion, reduced consciousness, or any seizure-like activity, especially in a patient with renal impairment.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Before giving ceftriaxone, confirm no calcium-containing solution (including parenteral nutrition) is running or about to run through the same line.",
+      "critical": true,
+      "support": "sourced",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Assess for new confusion, myoclonus, seizures or unexpected haemoglobin fall; review renal function and report suspected drug-related changes promptly.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "assess",
+      "text": "Review ordered coagulation results in patients with poor nutrition, liver disease or vitamin K antagonist therapy. Promptly report new abdominal pain, jaundice, oliguria or flank pain for assessment.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    },
+    {
+      "kind": "document",
+      "text": "Record allergy checks and reactions.",
+      "critical": false,
+      "support": "local_protocol",
+      "sources": []
+    },
+    {
+      "kind": "assess",
+      "text": "Flag prematurity, neonatal hyperbilirubinaemia or anticipated IV calcium treatment for specialist review before use.",
+      "critical": true,
+      "support": "partial",
+      "sources": [
+        "L-CEFTRIAXONE"
+      ]
+    }
+  ],
+  "gaps": [
+    "The label read is a distributor-listed ceftriaxone for injection product.",
+    "Dosing, preparation and administration details: deliberately not included.",
+    "No clinical practice guideline or nursing source was read for this entry."
+  ],
+  "permissions": [
+    "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
+    "FDA infusion pump page: verify reuse terms."
+  ],
+  "label_currency_check": {
+    "checked": "2026-11-16",
+    "set_id": "ddbc3bf6-5bab-4851-ae5a-ef263cd8f255",
+    "label_version": "1",
+    "effective_time": "20260723",
+    "matches_register": true,
+    "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
   }
- ],
- "sections": {
-  "general_pharmacology": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label advises obtaining specimens to identify the organism and its susceptibility before treatment, and indicates ceftriaxone for infections caused by susceptible organisms.",
-     "support": "sourced",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    }
-   ]
-  },
-  "nursing_responsibilities": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Ask about previous reactions to cephalosporins, penicillins and other beta-lactams before the first dose and report them; check with the pharmacy or prescriber before any calcium-containing solution is given at the same time.",
-     "support": "partial",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    }
-   ]
-  },
-  "monitoring": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Monitoring frequency and alarm limits follow the unit's protocol for this medicine.",
-     "support": "local_protocol",
-     "sources": []
-    },
-    {
-     "text": "The label states ceftriaxone must not be given through the same line at the same time as calcium-containing IV solutions (including continuous calcium-containing infusions such as parenteral nutrition), because a precipitate can form; in patients other than neonates the two may be given one after the other if the line is thoroughly flushed between them, but this is contraindicated outright in neonates aged 28 days or younger because of reports of fatal outcomes. The label also describes serious neurological adverse reactions reported with ceftriaxone, including encephalopathy (reduced consciousness, lethargy, confusion), seizures, myoclonus and non-convulsive status epilepticus; some cases occurred in patients with severe renal impairment who did not receive an appropriate dose adjustment.",
-     "support": "sourced",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    }
-   ]
-  },
-  "safety_alerts": {
-   "support": "full",
-   "items": [
-    {
-     "text": "Before therapy, careful inquiry should establish whether the patient has had hypersensitivity reactions to cephalosporins, penicillins and other beta-lactams, and the product should be given cautiously to beta-lactam-sensitive patients.",
-     "support": "sourced",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    },
-    {
-     "text": "Serious acute hypersensitivity reactions may require emergency measures, and serious and occasionally fatal reactions have been reported with beta-lactams.",
-     "support": "sourced",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    },
-    {
-     "text": "Ceftriaxone must never be given through the same line at the same time as calcium-containing IV solutions, in any age group, because of reports of fatal intravascular ceftriaxone-calcium precipitates, with neonates at the greatest risk.",
-     "support": "sourced",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    }
-   ]
-  },
-  "adverse_effects": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "The label describes ceftriaxone as generally well tolerated and lists local reactions, hypersensitivity and diarrhoea among the effects observed.",
-     "support": "sourced",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    }
-   ]
-  },
-  "escalation": {
-   "support": "partial",
-   "items": [
-    {
-     "text": "Stop and call for help for allergic signs; report severe or persistent diarrhoea.",
-     "support": "partial",
-     "sources": [
-      "L-CEFTRIAXONE"
-     ]
-    },
-    {
-     "text": "Use the unit's early warning score (for example, the Royal College of Physicians' NEWS2 track-and-trigger system) to standardise recognition of acute deterioration: a medium aggregate score is a key trigger for an urgent clinical review, and a high aggregate score triggers an emergency clinical response. This is a generic nursing escalation framework, not specific to this medicine; it does not replace this medicine's own escalation triggers, which remain local protocol.",
-     "support": "sourced",
-     "sources": [
-      "S-RCP-NEWS2"
-     ]
-    }
-   ]
-  },
-  "documentation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Record the product and order checks, monitoring results, adverse events and escalation per unit standard.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_preparation": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific preparation: follow your pharmacy's preparation standard and the product labelling. This library gives no preparation or concentration instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  },
-  "institution_dosing": {
-   "support": "local_protocol",
-   "items": [
-    {
-     "text": "Institution-specific dosing: follow the prescriber's order and your institution's approved protocol. This library gives no dosing instructions.",
-     "support": "local_protocol",
-     "sources": []
-    }
-   ]
-  }
- },
- "monitoring": [
-  {
-   "kind": "assess",
-   "text": "Check beta-lactam allergy history before the first dose.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-CEFTRIAXONE"
-   ]
-  },
-  {
-   "kind": "observe",
-   "text": "Watch for rash, breathing difficulty or swelling.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-CEFTRIAXONE"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Check the site for local reactions.",
-   "critical": false,
-   "support": "partial",
-   "sources": [
-    "L-CEFTRIAXONE"
-   ]
-  },
-  {
-   "kind": "escalate",
-   "text": "Stop and report allergic signs immediately; also report confusion, reduced consciousness, or any seizure-like activity, especially in a patient with renal impairment.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-CEFTRIAXONE"
-   ]
-  },
-  {
-   "kind": "assess",
-   "text": "Before giving ceftriaxone, confirm no calcium-containing solution (including parenteral nutrition) is running or about to run through the same line.",
-   "critical": true,
-   "support": "sourced",
-   "sources": [
-    "L-CEFTRIAXONE"
-   ]
-  },
-  {
-   "kind": "document",
-   "text": "Record allergy checks and reactions.",
-   "critical": false,
-   "support": "local_protocol",
-   "sources": []
-  }
- ],
- "gaps": [
-  "The label read is a distributor-listed ceftriaxone for injection product.",
-  "Dosing, preparation and administration details: deliberately not included.",
-  "No clinical practice guideline or nursing source was read for this entry."
- ],
- "permissions": [
-  "US label text is the manufacturer's: paraphrase and cite; do not reproduce.",
-  "FDA infusion pump page: verify reuse terms."
- ],
- "label_currency_check": {
-  "checked": "2026-11-16",
-  "set_id": "ddbc3bf6-5bab-4851-ae5a-ef263cd8f255",
-  "label_version": "1",
-  "effective_time": "20260723",
-  "matches_register": true,
-  "note": "Re-fetched from openFDA; version and effective date unchanged since the draft was written. A single manufacturer's US label: other manufacturers' labels and other regulators' texts may differ."
- }
 }

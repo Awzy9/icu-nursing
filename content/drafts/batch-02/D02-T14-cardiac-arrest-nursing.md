@@ -52,7 +52,7 @@ During arrest, circulation stops and organs are deprived of oxygen. Chest compre
 **After ROSC (nursing monitoring within the team plan)**
 - Stay with the patient; continue monitoring and a systematic ABC approach; report changes immediately.
 - Oxygen and ventilation: ERC advises 100% (or maximum available) inspired oxygen immediately, then titration to a saturation of 94–98% or a PaO₂ of 10–13 kPa as soon as it can be measured reliably, avoiding both hypoxaemia and hyperoxaemia; the guideline notes pulse oximetry can overestimate saturation in darker skin tones and is unreliable in low-flow states. Normocapnia (PaCO₂ about 4.7–6.0 kPa / 35–45 mmHg) and lung-protective ventilation are targeted; frequent PaCO₂ checks are advised in hypothermia. These targets are set and changed by the team.
-- Circulation: arterial-line monitoring is advised for all patients; avoid hypotension and aim for a mean arterial pressure above 60–65 mmHg; fluids, noradrenaline and/or dobutamine are given by prescription. Avoid hypo- and hyperkalaemia (arrhythmia risk). Echocardiography early. (RCUK 2025 expresses the same aim as a systolic pressure above 100 mmHg or a MAP above 60–65 mmHg – alternative measures of adequate perfusion, not a different recommendation; see section 20. The treatment goal is individualised and set by the team.)
+- Circulation: arterial-line monitoring is advised for all patients; avoid hypotension and aim for a mean arterial pressure above 60–65 mmHg; fluids, noradrenaline and/or dobutamine are given by prescription. Avoid hypo- and hyperkalaemia (arrhythmia risk). Echocardiography early. (RCUK 2025 expresses the same aim as a systolic pressure above 100 mmHg or a MAP above 60–65 mmHg – alternative blood-pressure goals, not proof of adequate tissue perfusion or a different recommendation; see section 20. The treatment goal is individualised and set by the team.)
 - Temperature: actively prevent fever, targeting a temperature of 37.5 °C or below in patients who remain comatose, and keep this up for 36–72 hours; do not actively rewarm mildly hypothermic comatose patients (32–36 °C) to normothermia; use temperature-control devices with a feedback loop on continuous temperature monitoring when a device is used. Temperature management is prescribed; the nurse monitors, documents and reports.
 - Seizures: report any convulsion or myoclonus; EEG is used by the team to confirm seizures; first-line anti-seizure drug choices (levetiracetam or valproate) and the advice **not** to give seizure prophylaxis are prescriber matters.
 - Glucose: use the unit's standard glucose management protocol (ERC).
@@ -60,6 +60,8 @@ During arrest, circulation stops and organs are deprived of oxygen. Chest compre
 - Prognosis: ERC advises multimodal prognostication (clinical examination, electrophysiology, biomarkers, imaging), with no single predictor 100% accurate. Nurses record observations and support families but must not offer predictions at the bedside.
 - Families: provide honest, consistent information per the team's plan; ERC documents notable emotional burden for survivors and relatives (anxiety, depression, post-traumatic stress) and recommends functional assessment before discharge and follow-up.
 - Rehabilitation: ERC notes early mobilisation, delirium management and ICU diaries are recommended for post-intensive care syndrome in general; no cardiac-arrest-specific ICU rehabilitation trials were found.
+
+**Recognizing return of circulation without unnecessary CPR pauses (2025 ALS).** During CPR, a sudden increase in measured end-tidal CO₂ may indicate return of circulation, but is not sufficient by itself to interrupt compressions. Report the trend to the team leader together with other clinical and physiological findings, such as purposeful movement or a pulsatile arterial waveform. The trained team coordinates rhythm assessment and pulse confirmation as indicated. Conversely, a low end-tidal CO₂ reading alone is not a reason to end resuscitation. After confirmed ROSC, report new convulsive movements promptly; EEG assessment can help distinguish and monitor seizures under the post-arrest plan (ERC/ESICM 2025).
 
 ## 8. Monitoring parameters
 During CPR: compression quality, interruptions, rhythm checks, ETCO₂, arterial waveform if present, time stamps. After ROSC: continuous ECG, arterial pressure and MAP, SpO₂ and blood gases as ordered, ETCO₂, temperature, urine output, lactate and electrolytes as ordered, neurological examination, sedation level, seizure activity, glucose, ventilator values.
@@ -92,7 +94,7 @@ Before arrest: deteriorating early-warning score, new arrhythmia, hypotension, h
 | Choosing drugs, doses, energy, intubation and sedation drugs, arrhythmia treatment, coronary angiography, temperature targets, anti-seizure drugs, stopping resuscitation, prognostication | Team leader / prescriber decision |
 
 ## 12. Escalation criteria
-Call immediately for suspected arrest. After ROSC escalate any re-arrest, hypotension below the ordered MAP, new arrhythmia, desaturation, rising temperature, seizure or myoclonus, change in pupils or consciousness, unexpected sedation or equipment problems.
+Call immediately for suspected arrest. After ROSC escalate any re-arrest, hypotension below the ordered MAP, new arrhythmia, desaturation, rising temperature, seizure or myoclonus, change in pupils or consciousness, unexpected sedation or equipment problems. Record serial neurological findings and possible confounders such as sedation or neuromuscular blockade. Do not infer a poor neurological prognosis from a single early finding; ERC/ESICM 2025 uses specialist multimodal assessment in patients who remain unconscious at 72 hours or later, after confounders are addressed.
 SBAR — **S:** bed X, cardiac arrest at [time], ROSC at [time]. **B:** [cause if known], rhythm, shocks and drugs as recorded, airway [type], current oxygen and ventilator settings. **A:** post-arrest patient, comatose, MAP [value], temperature [value]. **R:** please review the haemodynamic and temperature targets; I will continue observations every [interval] and report any seizure or change.
 
 ## 13. Potential complications
@@ -102,7 +104,7 @@ Re-arrest, rib or sternal injury, aspiration, hypoxic brain injury, myocardial d
 Time of recognition, call and first compression; team arrival; rhythm checks, shocks and drugs as recorded by the scribe; airway and capnography confirmation; time of ROSC; post-ROSC observations including MAP, temperature, neurological findings and sedation; seizures; family communication; equipment problems; incident report where indicated; staff debrief.
 
 ## 15. Practical bedside example
-You find a patient unresponsive on the unit. You call for help and the arrest team, start compressions on the bed with the CPR mode activated, send for the defibrillator, ensure oxygen devices are removed from the chest before a shock, and hand over to the team leader with SBAR. After ROSC you stay, keep the airway secure, check SpO₂, ETCO₂ and blood pressure continuously, record the temperature and sedation, and report any change.
+You find a patient unresponsive with absent or abnormal breathing and recognize suspected cardiac arrest under the local resuscitation pathway. Call for emergency help, start CPR promptly, and send for the defibrillator. Coordinate oxygen fire precautions with the airway team: move free-flowing oxygen away from the shock area, while keeping an attached tracheal or supraglottic airway ventilation circuit connected and directing exhaust away from the chest. Hand over to the team leader. After ROSC you stay, keep the airway secure, check SpO₂, ETCO₂ and blood pressure continuously, record the temperature and sedation, and report any change.
 
 ## 16. Clinical case (fictional)
 A 63-year-old man on the unit after a myocardial infarction develops ventricular fibrillation. The nurse starts compressions, the team defibrillates, and circulation returns. The patient remains comatose. The nurse monitors the arterial line (MAP maintained above the ordered target by the team), records a temperature of 38.1 °C and informs the doctor, who starts temperature control. A relative asks "Will he wake up?" and the nurse explains that the team will assess him over the coming days and arranges for the doctor to speak to the family.
@@ -114,7 +116,7 @@ B. Move the patient to the floor first so that the compressions will be effectiv
 C. Check the chart for the diagnosis and for any limitation-of-treatment decision before taking any action.
 D. Prepare and give the first drug before starting compressions, to save time while the team is assembling.
 **Answer: A.**
-**Why correct:** Early call and compressions come first; ERC advises starting CPR on the bed.
+**Why correct:** Early call and compressions come first; ERC advises starting CPR on the bed. For an unresponsive adult with abnormal breathing, activate the arrest response; a trained provider may rapidly assess circulation with available pulse and monitoring data in parallel. If there is no evidence of circulation or doubt remains, start CPR without delaying for equipment. Follow any known valid treatment limitation.
 **Why not B:** Moving the patient delays compressions and risks injury.
 **Why not C:** Where a documented decision exists, it should be known in advance; delay in the arrest itself is harmful.
 **Why not D:** Drug administration belongs to the team and follows compressions.
@@ -141,14 +143,14 @@ D. Call for help on the basis of clinical concern using structured communication
 **Why not B:** A four-hour delay risks deterioration.
 **Why not C:** Staff should be able to call without requiring agreement.
 
-**Q4 (monitoring).** A comatose patient has just regained circulation after a cardiac arrest. Which finding should the nurse report to the team first?
+**Q4 (monitoring).** A comatose adult is being monitored in the ICU two hours after return of spontaneous circulation (ROSC). Which new finding requires the most urgent assessment and escalation?
 A. An SpO₂ of 97% on the ordered oxygen, with a good pleth trace and no change in the last hour.
 B. A MAP of 52 mmHg falling over ten minutes, when the team has ordered a target above 60–65 mmHg.
 C. A temperature of 36.8 °C measured with the bladder probe, unchanged from the previous hour.
 D. A capillary glucose that is within the range set by the unit protocol and has been stable since ROSC.
 **Answer: B.**
-**Why correct:** ERC–ESICM 2025 advises avoiding hypotension after ROSC and targeting MAP above approximately 60–65 mmHg, while applying the individual target prescribed by the resuscitation team. The falling MAP of 52 mmHg here requires urgent assessment and escalation.
-**Why not A:** 97% lies within the advised range of 94–98% with a reliable trace.
+**Why correct:** ERC–ESICM 2025 advises avoiding hypotension after ROSC and targeting MAP above approximately 60–65 mmHg, while applying the individual target prescribed by the resuscitation team. The falling MAP of 52 mmHg here requires urgent assessment and escalation. Assess circulation and perfusion, verify the pressure measurement in parallel and review the prescribed haemodynamic support with the team; do not wait for the next routine observation.
+**Why not A:** 97% lies within the advised range of 94–98% with a reliable trace after oxygenation can be measured accurately; low-flow states and skin pigmentation can affect reliability. The falling arterial pressure is the immediate concern.
 **Why not C:** Fever avoidance targets 37.5 °C or less; 36.8 °C is acceptable.
 **Why not D:** A glucose within the protocol range, stable since ROSC, needs routine monitoring only.
 
@@ -158,7 +160,7 @@ B. Deciding on neuroprognostication and discussing the likely outlook with the f
 C. Activating the CPR mode on the mattress before starting compressions on a patient in the bed.
 D. Reporting a rise in the temperature of a comatose post-arrest patient to the team promptly.
 **Answer: B.**
-**Why correct:** Prognostication is multimodal and a medical team decision; no single predictor is fully accurate.
+**Why correct:** Prognostication is multimodal and a medical team decision; no single predictor is fully accurate. ERC–ESICM 2025 emphasizes avoiding confounders, allowing appropriate time after ROSC and using convergent evidence; bedside nurses contribute serial findings and drug timing, not an independent outcome prediction.
 **Why not A:** A documentation task for the nurse or scribe.
 **Why not C:** Activating an available CPR mattress mode is a trained team task under local policy; do not delay the start of chest compressions to configure the bed.
 **Why not D:** A nursing monitoring task.
@@ -180,12 +182,15 @@ D. Sedatives, opioids and muscle relaxants can confound the neurological examina
 - Nolan JP, Sandroni C, Cariou A, et al. European Resuscitation Council and European Society of Intensive Care Medicine Guidelines 2025 Post-Resuscitation Care. Resuscitation. 2025;215:110809. https://www.erc.edu/media/atqopqm4/gl2025-07-post-resus-e.pdf (accessed 2026-11-14)
 - ERC Download Centre notice (accessed 2026-11-14): assets may be used for educational purposes free of cost; commercial use needs an agreement with the ERC.
 
+- Resuscitation Council UK 2025 adult advanced life support. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines (selected recommendation or abstract text, accessed 2026-11-24)
+- Resuscitation Council UK 2025 post-resuscitation care. https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/post-resuscitation-care-guidelines (selected recommendation or abstract text, accessed 2026-11-24)
+
 ## 19. Local protocol note
 Response team activation, DNACPR/limitation-of-treatment decisions, who may defibrillate or give drugs, post-arrest care bundles and family communication follow the institution's policies and national law.
 
 ## 20. Evidence, applicability and open questions
 - Source quality: three 2025 European guidelines (ERC; post-resuscitation care jointly with ESICM) built on ILCOR evidence reviews, read in full. Many statements are narrative; certainty is often low.
-- Jurisdiction: European guidance. AHA 2025 could not be read; algorithms, drug and energy details, targets and nursing authority differ by country. Blood pressure expression: the ERC–ESICM 2025 full text recommends avoiding hypotension with a MAP above 60–65 mmHg; Resuscitation Council UK 2025 (key points page, which publishes the ERC–ESICM guideline for UK practice) states the aim as a systolic pressure above 100 mmHg **or** a MAP above 60–65 mmHg. These are alternative ways of expressing adequate perfusion pressure – systolic pressure is what is often seen on a cuff or monitor, MAP is the ERC-preferred measure on an arterial line – not conflicting recommendations. Individual targets (for example higher targets in chronic hypertension or lower in other situations) are set by the treating team; the nurse reports values against the ordered target.
+- Jurisdiction: European guidance. AHA 2025 could not be read; algorithms, drug and energy details, targets and nursing authority differ by country. Blood pressure expression: the ERC–ESICM 2025 full text recommends avoiding hypotension with a MAP above 60–65 mmHg; Resuscitation Council UK 2025 (key points page, which publishes the ERC–ESICM guideline for UK practice) states the aim as a systolic pressure above 100 mmHg **or** a MAP above 60–65 mmHg. These are alternative blood-pressure goals, not interchangeable mathematical values or confirmation that tissue perfusion is adequate. Assess the wider clinical picture and use the prescribed individual target. The RCUK 2025 online key points and haemodynamic section were rechecked on 2026-11-24. Individual targets (for example higher targets in chronic hypertension or lower in other situations) are set by the treating team; the nurse reports values against the ordered target.
 - Population-specific: adults only; paediatric and neonatal arrest, pregnancy and traumatic arrest are not covered.
 - Not covered: drug doses, energy levels, tracheal intubation technique, ECPR, termination of resuscitation, coronary angiography, targeted temperature details, detailed prognostication thresholds.
 - Open questions for reviewers (CCP, NE, BN, resuscitation lead, NEURO): how the platform expresses the blood-pressure aim (MAP, SBP, or both) and how individualised targets are shown; fever-prevention duration; nurse authority for defibrillation and drugs; ICU-specific family communication; local DNACPR processes; how much prognostication content belongs in a nursing topic.

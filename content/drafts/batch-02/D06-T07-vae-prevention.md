@@ -9,7 +9,7 @@ clinically_reviewed: false
 authors: []
 clinical_reviewers: []
 guideline_versions: ["SHEA/IDSA/APIC Strategies to prevent VAP, VAE and non-ventilator hospital-acquired pneumonia in acute-care hospitals: 2022 Update (Infect Control Hosp Epidemiol 2022;43:687-713; CC BY)", "AARC Clinical Practice Guideline: Patient-Ventilator Assessment (Respir Care 2024;69:1042-1054) – cuff-pressure recommendations only"]
-sources: [S-SHEA-VAP-2022, S-AARC-PVA, S-AARC-SUCT]
+sources: [S-SHEA-VAP-2022, S-AARC-PVA, S-AARC-SUCT, S-SIAARTI-VAP-2026, S-SAUDI-MV-2026]
 independently_written_note: "Original wording. The AARC 2024 patient-ventilator assessment guideline (full text PDF, copyright Daedalus Enterprises – cite-only) was read for the cuff-pressure recommendations. The 2022 SHEA/IDSA/APIC update (open access, CC BY) was read in full text for the adult recommendations. The non-ventilator pneumonia, paediatric and neonatal sections and the CDC surveillance manual were not read in detail. The register lists a SHEA/IDSA/APIC compendium as 'to register'; it is registered in batch-02-sources.csv."
 ---
 # Preventing ventilator-associated events and pneumonia in adults
@@ -49,6 +49,8 @@ Organisms from the mouth, throat and stomach reach the lower airway around the t
 - Measure endotracheal or tracheostomy cuff pressure with a manometer at the interval set by unit policy; do not rely on feeling the pilot balloon (AARC 2024; see section 9). Cuff checks are for leak and tracheal-injury safety as well as aspiration; the exact interval and target range come from local policy.
 - Report oxygenation changes and signs of infection promptly.
 
+**Prioritize the patient over bundle completion (SHEA 2022).** Review the documented prevention measures at handover, including positioning, oral hygiene, sedation and liberation readiness. Record clinical contraindications rather than automatically marking a missed intervention as a breach. An increase in oxygen or ventilator requirements requires prompt assessment and escalation for possible respiratory deterioration, not merely completion of the prevention bundle or an automatic diagnosis of VAP. Routine circuit replacement solely by elapsed time is not supported by SHEA for adults; follow the manufacturer's instructions for the actual circuit, and address visible contamination or malfunction with trained staff. Do not delay urgent ventilation support to complete preventive care.
+
 ## 8. Monitoring parameters
 Each shift: FiO₂, PEEP, SpO₂ and trend; secretions; temperature; head-of-bed angle at each check; mouth-care times; sedation score; daily readiness findings; mobility achieved; feed tolerance.
 
@@ -65,6 +67,8 @@ Each shift: FiO₂, PEEP, SpO₂ and trend; secretions; temperature; head-of-bed
 
 General caution: "not recommended for VAP prevention" does **not** mean the practice is unnecessary for other reasons. Prone positioning and chlorhexidine bathing may be indicated for other purposes; unit policy and the respiratory-therapy team decide.
 
+**2026 prevention update.** The Italian SIAARTI consensus supports selective use of subglottic-drainage tubes for anticipated prolonged ventilation, without enough evidence to prefer one drainage method. Do not exchange a functioning tube solely for a prevention feature without a clinician-led risk assessment. Maintain cuff safety with manual manometry and the prescribed range; SIAARTI supports 20–30 cmH₂O, but evidence does not establish a universal interval or routine automated system. It discourages routine oral chlorhexidine for general ventilated patients, while allowing individual consideration after cardiac surgery. Continue oral hygiene and verify any exceptional indication with the team. Selective digestive decontamination is a stewardship decision affected by local antimicrobial resistance, never an independent nursing intervention. The Saudi 2026 guideline supports head elevation and conditionally supports subglottic-drainage tubes. These measures do not replace clinically indicated proning or other urgent respiratory care.
+
 ## 10. Warning signs and red flags
 Rising FiO₂ or PEEP needs; new purulent or increased secretions; fever or hypothermia; new infiltrate reported; falling SpO₂; asynchrony or agitation; tube moved or loose; cuff leak; head of bed repeatedly flat; missed mouth care; sedation deeper than targeted; no daily readiness assessment recorded.
 
@@ -77,7 +81,7 @@ Rising FiO₂ or PEEP needs; new purulent or increased secretions; fever or hypo
 | Choice of sedative or antimicrobial, stress-ulcer prophylaxis, tracheostomy timing, feeding route changes | Prescriber decision |
 
 ## 12. Escalation criteria
-Escalate promptly for: sustained increase in oxygen or PEEP needs; new purulent secretions with fever or instability; accidental extubation or tube displacement; persistent barriers to the bundle (for example, head of bed cannot be elevated); suspected aspiration.
+Activate emergency response for accidental extubation, suspected tube displacement with loss of ventilation, severe respiratory deterioration or aspiration with airway or circulatory compromise. Escalate sustained increases in oxygen or PEEP needs, new purulent secretions with fever, or barriers to preventive care. A ventilator-associated event surveillance definition is not a bedside diagnosis of pneumonia; do not delay assessment or treatment-team review while awaiting surveillance criteria.
 SBAR — **S:** ventilated patient, bed X, FiO₂ up from 0.40 to 0.60 over 6 hours. **B:** day 5 of ventilation, more secretions, temperature 38.4. **A:** worsening oxygenation, possible pneumonia or other cause. **R:** please review now; consider chest imaging and cultures; I will repeat observations every [interval].
 
 ## 13. Potential complications
@@ -90,30 +94,30 @@ Head-of-bed angle checks, mouth-care times and findings, sedation and readiness 
 At the start of the shift: check the head of the bed angle on the bedside indicator, confirm the tube depth and securement, review overnight FiO₂ and PEEP trend, brush the patient's teeth and gums per protocol and suction the mouth with the unit's method, review sedation targets with the team for a daily awakening and breathing readiness check, plan mobilisation, and document each item.
 
 ## 16. Clinical case (fictional)
-A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse raises the bed, performs mouth care, reports the trend with SBAR, asks about sedation lightening and readiness testing, and documents. The team decides on imaging and further treatment.
+A 58-year-old man on day 4 of ventilation has had FiO₂ rising from 0.40 to 0.55 and more secretions. The bed was found flat at 10° after a procedure, and mouth care was last documented 12 hours earlier. The nurse assesses breathing and ventilation immediately and promptly escalates the increasing oxygen requirement. Once safe and clinically appropriate, she restores the prescribed bed position and oral-care plan, documents the findings, and reviews readiness testing with the team. The team decides on imaging and further treatment.
 
 ## 17. MCQs
 **Q1 (prioritization).** On the morning round a ventilated patient on day 4 has rising oxygen needs, increased secretions, a flat bed after a procedure, and no mouth care documented for 12 hours. What should the nurse do first?
 A. Raise the head of the bed to 30–45° unless contraindicated, and mention the oxygen trend and secretions at the next routine handover.
-B. Raise the bed, do mouth care, then report the rising FiO₂ and secretions to the team with SBAR.
+B. Assess respiratory deterioration and escalate now; correct positioning and mouth-care gaps when safe.
 C. Start a chlorhexidine mouth rinse as an extra measure, then hand over the oxygen trend at the next routine round.
 D. Wait for the daily ward round to decide what to change, because ventilator settings and secretions are medical matters.
 **Answer: B.**
-**Why correct:** Both the bundle gaps and the oxygenation change need action now; positioning and mouth care are nursing tasks, and the trend must be escalated promptly.
-**Why not A:** Raising the bed is right, but it omits mouth care and leaves the rising oxygen need unreported until the routine handover.
+**Why correct:** A rising oxygen requirement and new secretions may indicate acute deterioration, not necessarily VAP. Assess ventilation, oxygenation and circulation, escalate promptly and correct the head-of-bed position if safe. Oral care follows when clinically stable; do not delay assessment to complete the prevention bundle.
+**Why not A:** Positioning can help prevention but does not replace immediate clinical review of increasing oxygen needs.
 **Why not C:** Chlorhexidine oral care is generally not recommended for VAP prevention in the 2022 update, and reporting later delays assessment.
 **Why not D:** Waiting for the round delays assessment of a possible deterioration; bundle tasks are nursing responsibilities.
 
-**Q2 (understanding).** Which statement about VAE and VAP is correct?
-A. VAE is a bedside diagnosis made by the nurse when a patient has a fever and increased secretions.
-B. VAP and VAE are the same thing, so every VAE means the patient has pneumonia.
-C. VAE is a surveillance category triggered only when pneumonia has been confirmed by a positive culture result.
-D. VAE is a surveillance definition: it flags sustained worsening oxygenation, whatever the cause.
+**Q2 (judgment).** After several stable ventilator days, an adult has sustained increases in oxygen and PEEP requirements. The infection-prevention team is evaluating a possible VAE. The patient has a positive fluid balance and no confirmed pneumonia. Which interpretation is most appropriate?
+A. Treat a positive VAE classification as confirmation of VAP and request antibiotics on that basis.
+B. Exclude VAE because no respiratory organism has been identified on culture.
+C. Wait for the surveillance team to complete classification before escalating the oxygenation change.
+D. Assess clinical deterioration now; VAE surveillance does not itself establish pneumonia.
 **Answer: D.**
-**Why correct:** VAE is defined by sustained rises in PEEP or FiO₂ after a period of stability and covers pneumonia and non-infectious causes.
-**Why not A:** The VAE definition rests on ventilator settings, not on a nurse's assessment of fever and secretions.
-**Why not B:** VAE includes non-infectious causes such as fluid overload and atelectasis.
-**Why not C:** VAE is triggered by ventilator-setting changes, not by culture confirmation, and it covers non-infectious causes too.
+**Why correct:** VAE surveillance identifies defined worsening oxygenation after a period of stability or improvement; it is not equivalent to a clinical diagnosis of VAP. Pulmonary oedema, atelectasis and infection can contribute. Assess ventilation, oxygenation and circulation promptly and communicate the fluid and respiratory trends. The surveillance team applies the specified criteria separately; do not delay clinical evaluation until a surveillance definition is met.
+**Why not A:** A surveillance event may be noninfectious and cannot independently justify a pneumonia diagnosis or antimicrobial order.
+**Why not B:** Microbiological confirmation is not required for all VAE surveillance categories.
+**Why not C:** Surveillance classification may require observation over time, but current respiratory deterioration requires immediate assessment.
 
 **Q3 (application).** A colleague proposes adding chlorhexidine to routine mouth care "to lower VAP". What is the best response?
 A. Say the 2022 update classes chlorhexidine oral care as generally not recommended and advises toothbrushing.
@@ -121,7 +125,7 @@ B. Agree, because older protocols used chlorhexidine and nothing has changed sin
 C. Suggest stopping mouth care to avoid disturbing the patient and the endotracheal tube.
 D. Suggest using chlorhexidine on the night shift when staffing is lower.
 **Answer: A.**
-**Why correct:** The 2022 update moved chlorhexidine oral care to "generally not recommended" and added toothbrushing as essential.
+**Why correct:** The 2022 update favors regular oral hygiene including toothbrushing without routine chlorhexidine for VAP prevention. Use gauze or another approved approach for edentulous patients; adapt care to bleeding risk, airway stability and local policy. This is not a prohibition on chlorhexidine for unrelated indications.
 **Why not B:** Recommendations changed between editions.
 **Why not C:** Mouth care is part of prevention.
 **Why not D:** Dosing by shift is not evidence-based and does not address the recommendation.
@@ -149,12 +153,12 @@ D. Leave it: the 2022 update advises changing circuits only if visibly soiled, m
 **Why not C:** More disconnections can increase risk and secretion exposure.
 
 **Q6 (judgment).** A trainee says the SHEA 2022 update means cuff pressure no longer needs to be checked in ventilated patients. What is the most accurate reply?
-A. It covers VAP prevention only; AARC 2024 still recommends manometer checks at the unit's interval, but not continuous monitoring.
+A. Manometer assessment remains recommended; continuous monitoring solely to prevent VAP is not recommended.
 B. That is correct: because frequent cuff monitoring does not prevent pneumonia, cuff pressure should never be checked again.
 C. The update says cuff pressure must be checked every 15 minutes for every ventilated patient, whatever the indication.
 D. The update has no view on cuff pressures, so each unit can simply judge the pressure by feeling the pilot balloon.
 **Answer: A.**
-**Why correct:** The statement concerns VAP prevention only; AARC 2024 recommends manometer assessment, recommends against continuous assessment for VAP prevention, and finds palpation inaccurate.
+**Why correct:** AARC 2024 strongly recommends using a manometer for cuff pressure assessment. Its recommendation against continuous cuff pressure assessment is specifically for reducing VAP risk, not a ban on continuous monitoring for another justified clinical purpose. Use the patient-specific target and local device instructions; pilot-balloon palpation is unreliable.
 **Why not B:** This over-generalises a statement limited to VAP prevention and ignores leak and tracheal-injury safety.
 **Why not C:** Neither document sets a 15-minute interval.
 **Why not D:** Both documents take a position, and palpation of the pilot balloon is inaccurate compared with a manometer.
@@ -163,10 +167,14 @@ D. The update has no view on cuff pressures, so each unit can simply judge the p
 - Goodfellow LT, Miller AG, Varekojis SM, et al. AARC Clinical Practice Guideline: Patient-Ventilator Assessment. Respir Care. 2024;69(8):1042-1054. https://www.aarc.org/wp-content/uploads/2024/10/patient-ventilator-assessment-aarc-cpg.pdf (accessed 2026-11-14)
 - Klompas M, Branson R, Cawcutt K, et al. Strategies to prevent ventilator-associated pneumonia, ventilator-associated events, and nonventilator hospital-acquired pneumonia in acute-care hospitals: 2022 Update. Infect Control Hosp Epidemiol. 2022;43:687-713. doi:10.1017/ice.2022.88. https://pmc.ncbi.nlm.nih.gov/articles/PMC10903147/ (accessed 2026-11-14)
 
+- SIAARTI. Strategies to prevent ventilator-associated pneumonia in critically ill mechanically ventilated patients: a SIAARTI consensus statement. 2026-07-08. https://doi.org/10.1186/s44158-026-00432-5 (accessed 2026-11-24; targeted recommendation review only; rights not cleared).
+- Saudi Guideline for Mechanical Ventilation in Adults – Executive Summary. February 2026. https://pubmed.ncbi.nlm.nih.gov/41836607/ (abstract and indexed recommendation passages rechecked 2026-11-24; full evidence profiles not appraised).
+
 ## 19. Local protocol note
 Mouth-care products, positioning angle, sedation and weaning protocols, cuff-pressure policy and circuit-change rules follow the institution's policies and the respiratory team.
 
 ## 20. Evidence, applicability and open questions
+- SIAARTI 2026 is a rapid-review/Delphi expert consensus, with a literature search ending July 2024; it is not a new GRADE systematic guideline or a replacement for SHEA. Selected statements and rationale checked. Saudi 2026 indexed recommendations checked; full appraisal and local implementation remain outstanding.
 - Source quality: graded, multi-society US guideline (2022), open access; several statements are moderate or low certainty; surveillance definitions come from the CDC.
 - International applicability: practices are generally transferable; availability of subglottic tubes, selective decontamination (depends on local resistance) and staffing vary. Oral-care product choices differ by country.
 - Open questions for reviewers (IPC, RT, CCP, NE, BN): local cuff-pressure interval and target range (AARC narrates 20–30 cmH₂O without grading it and states that no consensus exists on frequency); sedation-minimisation roles; whether to teach VAE surveillance definitions at all.

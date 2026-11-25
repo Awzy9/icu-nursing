@@ -62,37 +62,68 @@ export type RemoteResult<T> =
 // reuse them after this upgrade: an offline response must not resurrect old drafts.
 const CACHE_PREFIX = "icu.content.v2:";
 const scope = (baseUrl: string) => `${CACHE_PREFIX}${encodeURIComponent(baseUrl)}:`;
-const disabledThisSession = new Set<string>();
-async function cacheGeneration(deps: ContentClientDeps): Promise<number> {
-  try {
-    const raw = await deps.store.get(scope(deps.baseUrl) + "generation");
-    const n = Number(raw ?? 0);
-    return Number.isSafeInteger(n) && n >= 0 ? n : 0;
-  } catch { return 0; }
+// Coordinate invalidation with in-flight requests and asynchronous storage operations.
+// A response that started before a denial must never populate the new cache generation.
+type OriginState = { epoch: number; blocked: boolean; persistenceFailed: boolean; pending: Promise<void> };
+const origins = new Map<string, OriginState>();
+function originState(baseUrl: string): OriginState {
+  let state = origins.get(baseUrl);
+  if (!state) {
+    state = { epoch: 0, blocked: false, persistenceFailed: false, pending: Promise.resolve() };
+    origins.set(baseUrl, state);
+  }
+  return state;
 }
-async function readCache<T>(deps: ContentClientDeps, key: string): Promise<T | undefined> {
-  if (disabledThisSession.has(deps.baseUrl)) return undefined;
+function queueStorage(state: OriginState, task: () => Promise<void>): Promise<void> {
+  const next = state.pending.then(task);
+  state.pending = next.catch(() => { /* subsequent tasks can still run */ });
+  return next;
+}
+async function cacheGeneration(deps: ContentClientDeps): Promise<number> {
+  const raw = await deps.store.get(scope(deps.baseUrl) + "generation");
+  const n = Number(raw ?? 0);
+  if (!Number.isSafeInteger(n) || n < 0) throw new Error("invalid cache generation");
+  return n;
+}
+async function readCache<T>(deps: ContentClientDeps, key: string, state: OriginState, epoch: number): Promise<T | undefined> {
+  if (state.blocked || state.epoch !== epoch) return undefined;
   try {
+    await state.pending;
+    if (state.blocked || state.epoch !== epoch) return undefined;
     const n = await cacheGeneration(deps);
     const raw = await deps.store.get(`${scope(deps.baseUrl)}${n}:${key}`);
+    if (state.blocked || state.epoch !== epoch) return undefined;
     return raw ? (JSON.parse(raw) as T) : undefined;
   } catch { return undefined; }
 }
-async function writeCache<T>(deps: ContentClientDeps, key: string, value: T): Promise<void> {
-  try {
-    const n = await cacheGeneration(deps);
-    await deps.store.set(`${scope(deps.baseUrl)}${n}:${key}`, JSON.stringify(value));
-    disabledThisSession.delete(deps.baseUrl);
-  } catch { /* cache is best-effort */ }
+async function writeCache<T>(deps: ContentClientDeps, key: string, value: T, state: OriginState, epoch: number): Promise<void> {
+  await queueStorage(state, async () => {
+    if (state.epoch !== epoch || state.persistenceFailed) return;
+    try {
+      const n = await cacheGeneration(deps);
+      if (state.epoch !== epoch) return;
+      await deps.store.set(`${scope(deps.baseUrl)}${n}:${key}`, JSON.stringify(value));
+      if (state.epoch === epoch) state.blocked = false;
+    } catch { /* cache is best-effort; do not clear a withdrawal block */ }
+  });
 }
 async function invalidateOriginCache(deps: ContentClientDeps): Promise<void> {
-  // Invalidate *every* cached catalog, lesson, exam and lab from this origin.
-  // Old-generation keys remain stored but cannot be read by the new generation.
-  disabledThisSession.add(deps.baseUrl);
-  try {
-    const n = await cacheGeneration(deps);
-    await deps.store.set(scope(deps.baseUrl) + "generation", String(n + 1));
-  } catch { /* current-session block remains in force if storage fails */ }
+  // Block immediately, before any await. Serialize the persisted generation change
+  // behind earlier writes, so their data cannot land in a newer generation.
+  const state = originState(deps.baseUrl);
+  state.epoch++;
+  state.blocked = true;
+  await queueStorage(state, async () => {
+    try {
+      const n = await cacheGeneration(deps);
+      await deps.store.set(scope(deps.baseUrl) + "generation", String(n + 1));
+      state.persistenceFailed = false;
+    } catch {
+      // Do not let later successful fetches unblock stale disk data after a failed
+      // invalidation. A subsequent successfully persisted invalidation can recover.
+      state.persistenceFailed = true;
+    }
+  });
 }
 
 class PublicationUnavailable extends Error {}
@@ -124,18 +155,22 @@ async function fetchJson(fetcher: typeof fetch, baseUrl: string, path: string): 
 export interface ContentClientDeps { store: KeyValueStore; fetcher: typeof fetch; baseUrl: string }
 
 async function fetchCached<T>(deps: ContentClientDeps, cacheKey: string, path: string, validate: (raw: unknown) => T): Promise<RemoteResult<T>> {
+  const state = originState(deps.baseUrl);
+  const epoch = state.epoch;
   try {
     const raw = await fetchJson(deps.fetcher, deps.baseUrl, path);
     const data = validate(raw);
-    await writeCache(deps, cacheKey, data);
+    if (state.epoch !== epoch) return { status: "offline" };
+    await writeCache(deps, cacheKey, data, state, epoch);
+    if (state.epoch !== epoch) return { status: "offline" };
     return { status: "ok", data, fromCache: false };
   } catch (err) {
     if (err instanceof PublicationUnavailable) {
       await invalidateOriginCache(deps);
       return { status: "offline" }; // no clinical data returned; UI error label can be refined separately
     }
-    const cached = await readCache<T>(deps, cacheKey);
-    if (cached) return { status: "ok", data: cached, fromCache: true };
+    const cached = await readCache<T>(deps, cacheKey, state, epoch);
+    if (cached && state.epoch === epoch && !state.blocked) return { status: "ok", data: cached, fromCache: true };
     return { status: "offline" };
   }
 }
@@ -222,9 +257,12 @@ export function fetchCrrtData(deps: ContentClientDeps): Promise<RemoteResult<Crr
 // A fresh random draw every call - never cached, since caching would defeat the point of
 // picking a new set of questions each time an exam is started.
 export async function pickExamQuestions(deps: ContentClientDeps, categories: string[], count: number): Promise<RemoteResult<{ questionIds: string[]; timeLimitSeconds: number }>> {
+  const state = originState(deps.baseUrl);
+  const epoch = state.epoch;
   try {
     const path = `/api/content/exam/pick?categories=${categories.map(encodeURIComponent).join(",")}&count=${count}`;
     const raw = await fetchJson(deps.fetcher, deps.baseUrl, path);
+    if (state.epoch !== epoch) return { status: "offline" };
     return { status: "ok", data: examPickResponseSchema.parse(raw), fromCache: false };
   } catch (err) {
     if (err instanceof PublicationUnavailable) await invalidateOriginCache(deps);

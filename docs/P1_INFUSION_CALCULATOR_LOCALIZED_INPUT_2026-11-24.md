@@ -1,0 +1,3 @@
+# Shared infusion calculator localized input audit
+
+The 50 registered medication label drafts already have targeted reconciliation records; this pass addresses calculator input safety, not new clinical evidence review. Arabic-Indic and Eastern Arabic numerals and explicit Arabic decimal separator now normalize in the shared parser. Ambiguous comma groups, Arabic thousands separators, multiple separators, spaces within numbers, direction markers and nondecimal syntax remain rejected. No arithmetic formulas, dosing recommendations, pump-programming authorization or clinical release flags changed. Web/native instructions updated and regression cases added. Full CI and physical-device validation pending.

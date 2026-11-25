@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { buildDraftIndex, licenceBand, parseCsv, updateHistory, type DraftHistory, type DraftIndex, type IndexEntry } from "../../scripts/build-draft-index";
-import { compareLatest, coverage, draftFreshness, filterDrafts, sourceFreshness, worstLicence, STALE_DAYS } from "@/lib/admin/drafts-core";
+import { compareLatest, coverage, draftFreshness, filterDrafts, hasSourceGap, needsRightsCheck, orderReviewQueue, reviewLane, sourceFreshness, worstLicence, STALE_DAYS } from "@/lib/admin/drafts-core";
 
 const onDisk = JSON.parse(readFileSync("src/content/draft-index.json", "utf8")) as DraftIndex;
 const hist = JSON.parse(readFileSync("src/content/draft-history.json", "utf8")) as DraftHistory;
@@ -19,6 +19,106 @@ describe("draft index (metadata only)", () => {
     expect(onDisk.entries).toHaveLength(166);
     expect(new Set(onDisk.entries.map((x) => `${x.type}:${x.key}`)).size).toBe(166);
     for (const x of onDisk.entries) { expect(x.clinically_reviewed, x.key).toBe(false); for (const s of x.sources) expect(s.licence_class, `${x.key} ${s.id}`).not.toBe("UNREGISTERED"); }
+  });
+  it("keeps explicit supplementary source verification dates without implying clinical or rights clearance", () => {
+    for (const id of ["N-HODGSON-2014", "S-ISBT-ATR-EDU", "N-LHSC-CRRT-PRINCIPLES"]) {
+      const entries = onDisk.entries.filter(x => x.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const x of entries) {
+        expect(x.sources.find(s => s.id === id)?.verified).toBe("2026-11-24");
+        expect(x.clinically_reviewed).toBe(false);
+        expect(needsRightsCheck(x)).toBe(true);
+      }
+    }
+    expect(onDisk.entries.find(x => x.key === "SK-17")?.sources.find(s => s.id === "N-BAXTER-PRISMAFLEX")?.verified).toBeNull();
+  });
+  it("records partial airway and transport source checks while preserving unresolved older guidance", () => {
+    for (const id of ["N-ICS-TRANSFER-2026", "N-ACI-TRACH", "N-NCBI-OPENRN-TRACH", "N-NCBI-OPENRN-CHEST"]) {
+      const entries = onDisk.entries.filter(x => x.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const x of entries) {
+        expect(x.sources.find(s => s.id === id)?.verified).toBe("2026-11-24");
+        expect(x.clinically_reviewed).toBe(false);
+        expect(needsRightsCheck(x)).toBe(true);
+      }
+    }
+    const airway = onDisk.entries.find(x => x.key === "SK-05")!;
+    expect(airway.sources.some(s => s.id === "N-NHSGGC-TRACH-2022")).toBe(false);
+    expect(airway.sources.find(s => s.id === "N-NHSGGC-TRACH-2025")?.verified).toBe("2026-11-24");
+    expect(hasSourceGap(airway)).toBe(false);
+    expect(needsRightsCheck(airway)).toBe(true);
+  });
+  it("tracks verified CDC catheter and isolation sources while keeping rights and unread references open", () => {
+    for (const key of ["SK-12", "XQ-01"]) {
+      const x = onDisk.entries.find(e => e.key === key)!;
+      expect(x.sources.find(s => s.id === "N-CDC-CAUTI-2009")).toEqual({ id: "N-CDC-CAUTI-2009", licence_class: "YELLOW", verified: "2026-11-24" });
+      expect(hasSourceGap(x)).toBe(false);
+      expect(needsRightsCheck(x)).toBe(true);
+      expect(x.clinically_reviewed).toBe(false);
+    }
+    const infection = onDisk.entries.find(e => e.key === "SK-21")!;
+    expect(infection.sources.find(s => s.id === "S-CDC-ISOLATION-2007")?.verified).toBe("2026-11-24");
+    expect(hasSourceGap(infection)).toBe(true); // WHO healthcare guideline remains unread
+    expect(infection.sources.find(s => s.id === "S-WHO-HH-2009")).toEqual({id:"S-WHO-HH-2009",licence_class:"RED",verified:null});
+    for (const key of ["D04-T06","MD-19"]) {
+      const record = onDisk.entries.find(e => e.key === key)!;
+      expect(record.sources.find(s => s.id === "S-NHS-SPS-HYPO-2024")).toEqual({id:"S-NHS-SPS-HYPO-2024",licence_class:"RED",verified:"2026-11-24"});
+      expect(needsRightsCheck(record)).toBe(true);
+      expect(record.clinically_reviewed).toBe(false);
+    }
+    expect(needsRightsCheck(infection)).toBe(true);
+    for (const key of ["SK-02", "SK-03"]) {
+      const x = onDisk.entries.find(e => e.key === key)!;
+      expect(x.sources.find(s => s.id === "N-INS-STANDARDS")?.verified).toBeNull();
+      expect(hasSourceGap(x)).toBe(true);
+    }
+  });
+  it("tracks neurological and anaphylaxis source checks without lifting international rights restrictions", () => {
+    for (const id of ["N-RCUK-ANAPH-2021", "N-NICE-CG103", "N-NICE-NG232", "N-NICE-NG217"]) {
+      const entries = onDisk.entries.filter(e => e.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const e of entries) {
+        expect(e.sources.find(s => s.id === id)).toEqual({ id, licence_class: "RED", verified: "2026-11-24" });
+        expect(needsRightsCheck(e)).toBe(true);
+        expect(e.clinically_reviewed).toBe(false);
+      }
+    }
+    for (const key of ["SC-08", "SC-17", "SC-19", "SC-20"]) {
+      const e = onDisk.entries.find(x => x.key === key)!;
+      expect(e.required_sources).toBeGreaterThan(0);
+      expect(hasSourceGap(e)).toBe(true);
+    }
+  });
+  it("tracks oxygen and CRRT source restrictions and the revised seizure reference", () => {
+    for (const id of ["N-AHS-CRRT-ALARM-2025", "S-BTS-O2-2017"]) {
+      const entries = onDisk.entries.filter(e => e.sources.some(s => s.id === id));
+      expect(entries.length).toBeGreaterThan(0);
+      for (const e of entries) {
+        expect(e.sources.find(s => s.id === id)).toEqual({ id, licence_class: "RED", verified: "2026-11-24" });
+        expect(needsRightsCheck(e)).toBe(true);
+        expect(e.clinically_reviewed).toBe(false);
+      }
+    }
+    const seizure = onDisk.entries.find(e => e.key === "SC-08")!;
+    expect(seizure.sources.map(s => s.id)).toContain("S-JBDS-HYPO-2023");
+    expect(seizure.sources.map(s => s.id)).not.toContain("N-JBDS-HYPO-2020");
+    expect(seizure.required_sources).toBe(2);
+    expect(hasSourceGap(seizure)).toBe(true);
+    expect(seizure.clinically_reviewed).toBe(false);
+  });
+  it("keeps vasopressor and bleeding reference rights restricted after targeted review", () => {
+    for (const key of ["MD-01", "MD-02", "MD-30", "MD-31"]) {
+      const e = onDisk.entries.find(x => x.key === key)!;
+      expect(e.sources.find(s => s.id === "S-UIC-EXTRA-2026")).toEqual({ id: "S-UIC-EXTRA-2026", licence_class: "RED", verified: "2026-11-24" });
+      expect(hasSourceGap(e)).toBe(false);
+      expect(needsRightsCheck(e)).toBe(true);
+      expect(e.clinically_reviewed).toBe(false);
+    }
+    const bleed = onDisk.entries.find(x => x.key === "SC-09")!;
+    expect(bleed.sources.find(s => s.id === "S-NBA-CRITICAL-BLEED-2025")?.licence_class).toBe("RED");
+    expect(bleed.required_sources).toBe(3);
+    expect(hasSourceGap(bleed)).toBe(true);
+    expect(bleed.clinically_reviewed).toBe(false);
   });
   it("holds no draft body text: only short metadata fields", () => {
     for (const x of onDisk.entries) expect(JSON.stringify({ ...x, issues: undefined }).length, x.key).toBeLessThan(2500);
@@ -55,6 +155,76 @@ describe("filters, freshness, comparison and coverage", () => {
     expect(filterDrafts(list, { q: "arter" }, today).map((x) => x.key)).toEqual(["SK-01"]);
     expect(filterDrafts(list, { q: "%" }, today)).toEqual([]);
     expect(filterDrafts(list, {}, today)).toHaveLength(2);
+  });
+  it("keeps staff clinical-review suggestions separate from actual approval", () => {
+    const urgent = e({ key: "SC-11", type: "cases", gaps: 8, sources: [{ id: "S-UKKA-HK-2026", licence_class: "RED", verified: "2026-11-14" }] });
+    const urgent2 = e({ key: "MD-20", type: "medications", gaps: 7 });
+    const sourceGap = e({ key: "PX-12", type: "practice", gaps: 0, sources: [] });
+    const unverified = e({ key: "SK-08", gaps: 4, sources: [{ id: "X", licence_class: "UNVERIFIED", verified: null }] });
+    const rights = e({ key: "EQ-03", type: "equipment", gaps: 6, sources: [{ id: "R", licence_class: "RED", verified: "2026-11-14" }] });
+    const general = e({ key: "PX-01", type: "practice", gaps: 9 });
+    expect(reviewLane(urgent)).toBe("patient-safety");
+    expect(reviewLane(urgent2)).toBe("patient-safety");
+    expect(reviewLane(sourceGap)).toBe("source-verification");
+    expect(reviewLane(unverified)).toBe("source-verification");
+    expect(reviewLane(rights)).toBe("rights-review");
+    expect(reviewLane(general)).toBe("general");
+    const entries = [general, urgent2, rights, sourceGap, unverified, urgent];
+    expect(orderReviewQueue(entries).map((x) => x.key)).toEqual(["SC-11", "MD-20", "SK-08", "PX-12", "EQ-03", "PX-01"]);
+    expect(entries[0]).toBe(general); // stable original data, ordering is non-mutating
+    expect(filterDrafts(entries, { review: "patient-safety" }, today).map(x => x.key)).toEqual(["MD-20", "SC-11"]);
+    expect(filterDrafts(entries, { review: "source-verification" }, today).map(x => x.key)).toEqual(["PX-12", "SK-08"]);
+    expect(entries.every(x => x.clinically_reviewed === false)).toBe(true);
+  });
+  it("finds overlapping source and rights signals across review lanes without implying clearance", () => {
+    const urgent = e({ key: "SC-11", type: "cases", required_sources: 2, sources: [{ id: "R", licence_class: "RED", verified: "2026-11-14" }] });
+    const undated = e({ sources: [{ id: "Y", licence_class: "YELLOW", verified: null }] });
+    const missing = e({ key: "PX-12", sources: [] });
+    const clean = e({ key: "SK-98" });
+    const list = [urgent, undated, missing, clean];
+    expect(hasSourceGap(urgent)).toBe(true);
+    expect(needsRightsCheck(undated)).toBe(true);
+    expect(filterDrafts(list, { sourceGap: "yes" }, today)).toEqual([urgent, undated, missing]);
+    expect(filterDrafts(list, { rights: "yes" }, today)).toEqual([urgent, undated]);
+    expect(filterDrafts(list, { review: "patient-safety", sourceGap: "yes", rights: "yes" }, today)).toEqual([urgent]);
+    expect(filterDrafts(list, { sourceGap: "no", rights: "no" }, today)).toEqual([clean]);
+    expect(worstLicence(e({ sources: [...clean.sources, { id: "U", licence_class: "UNREGISTERED", verified: null }] }))).toBe("UNREGISTERED");
+    // Check exact membership against independent metadata criteria, not mutable
+    // catalogue counts. A newly resolved source must not break this regression.
+    const expectedGapKeys = onDisk.entries.filter(x =>
+      x.required_sources !== 0 || x.sources.length === 0 ||
+      x.sources.some(s => s.verified === null || s.verified === "" ||
+        s.licence_class === "UNVERIFIED" || s.licence_class === "UNREGISTERED")
+    ).map(x => x.key);
+    const expectedRightsKeys = onDisk.entries.filter(x =>
+      x.sources.some(s => s.licence_class === "RED" || s.licence_class === "YELLOW" ||
+        s.licence_class === "UNVERIFIED" || s.licence_class === "UNREGISTERED")
+    ).map(x => x.key);
+    expect(filterDrafts(onDisk.entries, { sourceGap: "yes" }, today).map(x => x.key)).toEqual(expectedGapKeys);
+    expect(filterDrafts(onDisk.entries, { rights: "yes" }, today).map(x => x.key)).toEqual(expectedRightsKeys);
+    expect(filterDrafts(onDisk.entries, { sourceGap: "no" }, today).map(x => x.key))
+      .toEqual(onDisk.entries.map(x => x.key).filter(key => !expectedGapKeys.includes(key)));
+    expect(filterDrafts(onDisk.entries, { rights: "no" }, today).map(x => x.key))
+      .toEqual(onDisk.entries.map(x => x.key).filter(key => !expectedRightsKeys.includes(key)));
+    expect(expectedGapKeys).toContain("SC-11");
+    expect(expectedRightsKeys).toContain("SC-11");
+    expect(list.every(x => !x.clinically_reviewed)).toBe(true);
+  });
+  it("retains insulin rights and clinical review requirements after dated sources resolve its source-gap signal", () => {
+    const insulin = onDisk.entries.find(x => x.key === "MD-15")!;
+    expect(insulin.sources.map(s => s.id)).toContain("S-ADA-HOSP-2026");
+    expect(insulin.sources.map(s => s.id)).toContain("S-JBDS-HYPO-2023");
+    expect(hasSourceGap(insulin)).toBe(false);
+    expect(needsRightsCheck(insulin)).toBe(true);
+    expect(reviewLane(insulin)).toBe("patient-safety");
+    expect(insulin.gaps).toBeGreaterThan(0);
+    expect(insulin.clinically_reviewed).toBe(false);
+  });
+  it("flags the known high-priority working draft without displaying its content body", () => {
+    const indexCase = onDisk.entries.find((x) => x.key === "SC-11")!;
+    expect(reviewLane(indexCase)).toBe("patient-safety");
+    expect(orderReviewQueue(onDisk.entries).slice(0, 2).map(x => x.key)).toEqual(["SC-09", "SC-11"]);
+    expect(onDisk.entries.filter(x => x.clinically_reviewed)).toHaveLength(0);
   });
   it("compares the last two snapshots", () => {
     const h: DraftHistory = { note: "", entries: { A: [{ hash: "1", recorded: "d1", evidence_status: "unsupported", sources: ["S-1"], gaps: 3, required_sources: 2, issues: 1 }, { hash: "2", recorded: "d2", evidence_status: "partial", sources: ["S-1", "S-2"], gaps: 2, required_sources: 2, issues: 0 }], B: [{ hash: "1", recorded: "d1", evidence_status: "partial", sources: [], gaps: 0, required_sources: 0, issues: 0 }] } };
