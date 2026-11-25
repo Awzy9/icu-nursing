@@ -3829,7 +3829,7 @@
         "Normal sinus rhythm"
       ],
       "answer": 1,
-      "explanation": "A regular, wide-complex tachycardia with no discernible P waves is ventricular tachycardia until proven otherwise - this is a time-critical, escalate-immediately finding."
+      "explanation": "This teaching strip depicts a regular wide-complex tachycardia consistent with ventricular tachycardia. Other rhythms can also have wide complexes. Assess the patient urgently, including whether a pulse is present, and follow the local response pathway."
     },
     "evidenceSources": [
       "AHA/ACLS rhythm recognition fundamentals",
@@ -4118,7 +4118,7 @@
         "Artifact from a loose lead"
       ],
       "answer": 0,
-      "explanation": "Chaotic, disorganised waveforms with no identifiable complexes and a clinically unresponsive, pulseless patient indicate ventricular fibrillation - a cardiac-arrest rhythm requiring immediate resuscitation per local protocol."
+      "explanation": "In this pulseless patient, the chaotic tracing with no organised complexes represents ventricular fibrillation, a shockable arrest rhythm. Activate the arrest response, start CPR and deliver prompt defibrillation according to local protocol."
     },
     "evidenceSources": [
       "AHA/ACLS rhythm recognition fundamentals",
@@ -4132,13 +4132,13 @@
       "توقف القلب (آسيستول)"
     ],
     "objective": [
-      "Recognise a flat line with no electrical activity, and the need to confirm leads before accepting it.",
-      "التعرف على خط مستوٍ بلا نشاط كهربائي، وضرورة التأكد من الأسلاك قبل قبول ذلك."
+      "Recognise apparent asystole and prioritise the patient assessment and arrest response.",
+      "التعرف على توقف النشاط الكهربائي الظاهر وإعطاء الأولوية لتقييم المريض والاستجابة لتوقف القلب."
     ],
     "lessonHref": "/working/D02-T02",
     "accessibleDescription": [
       "A flat line for the entire strip, with no P waves, QRS complexes, or T waves at any point.",
-      "A flat line on a monitor must always prompt checking the leads and the patient before accepting it as a true cardiac rhythm."
+      "The signal remains nearly flat, with very small deflections and no identifiable complexes. Assess the patient immediately."
     ],
     "trace": {
       "label": "Lead II (schematic)",
@@ -4165,13 +4165,13 @@
     "question": {
       "prompt": "What does this rhythm strip show, and what is the essential first nursing action?",
       "options": [
-        "Asystole - immediately verify leads, patient, and the monitor before treating it as true asystole",
+        "Possible asystole. Assess the patient immediately and start the arrest response if indicated while the team verifies the ECG signal.",
         "Ventricular fibrillation - defibrillate immediately without checking anything else",
         "A technical artifact that can be safely ignored",
         "Normal sinus rhythm with very low amplitude"
       ],
       "answer": 0,
-      "explanation": "A flat line most often shows asystole, but a disconnected lead or power-off monitor looks identical - always confirm the patient and leads before accepting the rhythm, then escalate per local resuscitation protocol."
+      "explanation": "A flat line can represent asystole or loss of ECG signal. Assess responsiveness and breathing immediately and check for a definite pulse per local protocol. If cardiac arrest is suspected, activate the response and start CPR without waiting for a lead check. The team can verify the ECG signal in parallel. Confirmed asystole is non-shockable."
     },
     "evidenceSources": [
       "AHA/ACLS rhythm recognition fundamentals",
