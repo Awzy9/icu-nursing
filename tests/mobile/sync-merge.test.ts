@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../../mobile/src/core/syncMerge";
-import { emptyProgress } from "../../mobile/src/core/progress";
+import { discardSession, emptyProgress, progressSchema, saveSession } from "../../mobile/src/core/progress";
 
 describe("mergeRemoteBookmarks", () => {
   it("resolves each remote module_key to kind:key using the lookup, and unions with local bookmarks", () => {
@@ -95,5 +95,46 @@ describe("mergeRemoteAttempts", () => {
   it("returns the same object reference when nothing changes", () => {
     const local = emptyProgress();
     expect(mergeRemoteAttempts(local, [])).toBe(local);
+  });
+});
+
+
+describe("session dismissal and delayed account reads", () => {
+  const key = "SC-10";
+  const row = { module_key: key, kind: "scenario" as const, version: "v1", position: 2, score: 2, finished: false, updated_at: "2026-01-01T00:00:01.000Z" };
+  const session = { kind: "scenario" as const, version: "v1", position: 2, score: 2, finished: false, at: row.updated_at };
+  const dismissedAt = "2026-01-01T00:00:05.000Z";
+  it("keeps an explicitly restarted case dismissed after storage hydration and a slow account pull", () => {
+    const saved = saveSession(emptyProgress(), key, session);
+    const dismissed = discardSession(saved, key, dismissedAt);
+    const hydrated = progressSchema.parse(JSON.parse(JSON.stringify(dismissed)));
+    expect(hydrated.sessions[key]).toBeUndefined();
+    expect(mergeRemoteSessions(hydrated, [row])).toBe(hydrated);
+    expect(mergeRemoteSessions(hydrated, [{ ...row, updated_at: dismissedAt }])).toBe(hydrated);
+  });
+  it("keeps a completed local attempt dismissed without retaining its decisions", () => {
+    const finished = saveSession(emptyProgress(), key, { ...session, finished: true, at: dismissedAt, decisions: [{ position: 1, choice: 0 }] });
+    expect(finished.sessions[key]).toBeUndefined();
+    expect(finished.sessionDismissals?.[key]).toBe(dismissedAt);
+    expect(mergeRemoteSessions(finished, [row])).toBe(finished);
+  });
+  it("records a remote completion even when no local resumable session exists", () => {
+    const finished = mergeRemoteSessions(emptyProgress(), [{ ...row, finished: true, updated_at: dismissedAt }]);
+    expect(mergeRemoteSessions(finished, [row])).toBe(finished);
+    expect(finished.sessionDismissals?.[key]).toBe(dismissedAt);
+  });
+  it("allows a genuinely newer attempt and rejects an older local save or discard", () => {
+    const dismissed = discardSession(emptyProgress(), key, dismissedAt);
+    expect(saveSession(dismissed, key, session)).toBe(dismissed);
+    const newerAt = "2026-01-01T00:00:10.000Z";
+    const newer = mergeRemoteSessions(dismissed, [{ ...row, updated_at: newerAt }]);
+    expect(newer.sessions[key]?.at).toBe(newerAt);
+    expect(discardSession(newer, key, dismissedAt)).toBe(newer);
+    expect(saveSession(newer, key, session)).toBe(newer);
+  });
+  it("compares attempt times chronologically despite timezone offsets and rejects invalid times", () => {
+    const local = { ...emptyProgress(), attempts: { Q1: { correct: true, box: 2, at: "2026-01-01T03:00:05+03:00" } } };
+    expect(mergeRemoteAttempts(local, [{ question_id: "Q1", correct: false, box: 1, answered_at: "2026-01-01T00:00:10Z" }]).attempts.Q1?.correct).toBe(false);
+    expect(mergeRemoteAttempts(local, [{ question_id: "Q1", correct: false, box: 1, answered_at: "invalid" }])).toBe(local);
   });
 });
