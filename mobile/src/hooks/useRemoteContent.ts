@@ -13,7 +13,7 @@ import {
 const store = { get: (k: string) => AsyncStorage.getItem(k), set: (k: string, v: string) => AsyncStorage.setItem(k, v) };
 function deps(): ContentClientDeps {
   const extra = Constants.expoConfig?.extra as { siteUrl?: string } | undefined;
-  return { store, fetcher: fetch, baseUrl: siteBaseUrl(process.env as Record<string, string | undefined>, extra?.siteUrl) };
+  return { store, fetcher: fetch, baseUrl: siteBaseUrl({ EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL }, extra?.siteUrl) };
 }
 // For one-shot calls outside the useFetcher hook pattern below (e.g. drawing a fresh exam, which
 // must not be cached/re-rendered the way a hook's steady "fetch and keep" state would be).
