@@ -1,7 +1,8 @@
 // Pure merge logic for pulling a signed-in learner's existing account progress into local state
 // on sign-in (so progress made on another device appears here too). Kept separate from the React
 // hook (hooks/useProgressSync.ts) so it is unit-testable without React or a Supabase client.
-import { discardSession, saveSession, type BookmarkKind, type Progress, type SessionRecord } from "./progress";
+import { discardSession, saveSession, setComplete, type BookmarkKind, type Progress, type SessionRecord } from "./progress";
+import { applyPendingFlags } from "./pendingFlags";
 import { scenarioDecisionHistorySchema, type AttemptRow, type BookmarkRow, type LessonRow, type SessionRow } from "@icu/schemas/working-progress";
 
 /** Resolves each remote bookmark row's module_key to a local "kind:key" string via a key->kind lookup (built from the catalog). Rows for an unknown key are dropped rather than guessed. */
@@ -60,4 +61,24 @@ export function mergeRemoteCompleted(local: Progress, remote: LessonRow[]): Prog
   const merged = new Set(local.completed);
   for (const row of remote) if (row.completed) merged.add(row.module_key);
   return merged.size === local.completed.length ? local : { ...local, completed: [...merged] };
+}
+
+
+/** Apply only a successful, complete signed-in account snapshot. Known bookmarks
+ * are server-authoritative; unknown catalog keys are retained until they can be
+ * resolved. Explicit server lesson rows supersede local completion flags.
+ * Unsynced local desired states always take priority over the snapshot.
+ */
+export function reconcileAccountFlags(local: Progress, remoteBookmarks: BookmarkRow[], remoteLessons: LessonRow[], kindOf: Map<string, BookmarkKind>): Progress {
+  const remote = new Set<string>();
+  for (const row of remoteBookmarks) {
+    const kind = kindOf.get(row.module_key);
+    if (kind) remote.add(`${kind}:${row.module_key}`);
+  }
+  const known = new Set([...kindOf].map(([key, kind]) => `${kind}:${key}`));
+  const bookmarks = local.bookmarks.filter(key => !known.has(key) || remote.has(key));
+  for (const key of remote) if (!bookmarks.includes(key) && bookmarks.length < 500) bookmarks.push(key);
+  let next = bookmarks.length === local.bookmarks.length && bookmarks.every((key, i) => key === local.bookmarks[i]) ? local : { ...local, bookmarks };
+  for (const row of remoteLessons) next = setComplete(next, row.module_key, row.completed);
+  return applyPendingFlags(next);
 }
