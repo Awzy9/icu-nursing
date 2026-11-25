@@ -39,6 +39,26 @@ jobs:
         run: |
           npx tsx scripts/check-mobile-bundle.ts mobile/dist-ios
           npx tsx scripts/check-mobile-bundle.ts mobile/dist
+      - name: Export isolated QA variant for both platforms (synthetic endpoints only)
+        working-directory: mobile
+        env:
+          APP_VARIANT: isolated-replay
+          EXPO_PUBLIC_PROGRESS_REPLAY: "true"
+          EXPO_PUBLIC_SUPABASE_URL: https://qa-backend.example.org
+          EXPO_PUBLIC_SITE_URL: https://qa-site.example.org
+          ISOLATED_REPLAY_SUPABASE_URL: https://qa-backend.example.org
+          ISOLATED_REPLAY_SITE_URL: https://qa-site.example.org
+          EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: sb_publishable_synthetic_fixture
+        run: |
+          npx expo config --type public --json > /tmp/nursing-qa-config.json
+          node -e 'const c=require("/tmp/nursing-qa-config.json"); if(c.name!=="Nursing Mastery QA" || c.ios.bundleIdentifier!=="com.nursingmastery.app.qa" || c.android.package!=="com.nursingmastery.app.qa" || c.scheme!=="nursingmasteryqa" || c.updates.enabled!==false || c.extra.siteUrl!==process.env.EXPO_PUBLIC_SITE_URL) throw Error("Isolated QA app configuration mismatch");'
+          npx expo export --platform ios --output-dir dist-qa-ios
+          npx expo export --platform android --output-dir dist-qa-android
+      - name: Verify isolated QA bundles
+        run: |
+          npx tsx scripts/check-mobile-bundle.ts mobile/dist-qa-ios
+          npx tsx scripts/check-mobile-bundle.ts mobile/dist-qa-android
+          node -e 'const fs=require("node:fs"),path=require("node:path");const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]);for(const d of ["mobile/dist-qa-ios","mobile/dist-qa-android"]){const files=walk(d).filter(f=>/\.(hbc|js)$/.test(f));const b=files.map(f=>fs.readFileSync(f,"latin1")).join("");for(const s of ["https://qa-backend.example.org","https://qa-site.example.org","nursingmasteryqa"]){if(!b.includes(s))throw Error("QA bundle missing expected configuration: "+s);}}'
       - name: Report acceptance scope
         run: |
           echo "Native app source checks and iOS/Android JavaScript exports complete."
