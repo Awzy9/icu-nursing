@@ -7,7 +7,7 @@ import { useCallback, useEffect, useRef } from "react";
 import { AppState } from "react-native";
 import { acknowledgeFlag, queueFlag } from "../core/pendingFlags";
 import { acknowledgeReplay, enqueueReplay, type ReplayEvent } from "../core/progressReplay";
-import { flushReplayBatch, replayEnabled } from "../core/replayWorker";
+import { createReplayScheduler, flushReplayBatch, replayEnabled } from "../core/replayWorker";
 import { useAuth } from "../auth/provider";
 import {
   discardSession as localDiscardSession, recordAttempt as localRecordAttempt, saveSession as localSaveSession, setComplete as localSetComplete, toggleBookmark as localToggleBookmark,
@@ -98,6 +98,7 @@ export function useProgressPullOnSignIn() {
     if (!ready || !userId || !rpc) return;
     let cancelled = false;
     let lastPull = 0;
+    const replayScheduler = createReplayScheduler();
     const active = () => !cancelled && activeAccount.current === userId && AppState.currentState !== "background";
     const run = async () => {
       if (!active() || busy.current) return;
@@ -123,6 +124,7 @@ export function useProgressPullOnSignIn() {
         if (replay.length && active()) {
           const accepted = await flushReplayBatch(replay, {
             userId,
+            scheduler: replayScheduler,
             isActive: active,
             send: (id, event) => rpc.replayWorkingEvent(id, event),
             acknowledge: event => update(p => ({ ...p, pendingReplay: acknowledgeReplay(p.pendingReplay ?? [], event) })),
