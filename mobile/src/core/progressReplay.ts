@@ -24,11 +24,11 @@ export type ReplayQueue = z.infer<typeof replayQueueSchema>;
 
 // Timestamp ties are already first-write-wins in the proposed server contract.
 // Dismissals and checkpoints share one session stream, answers one question stream.
-function stream(e: ReplayEvent): string {
+export function replayStream(e: ReplayEvent): string {
   return e.kind === "answer" ? `answer:${e.questionId}` : `session:${e.moduleKey}`;
 }
 function sameEvent(a: ReplayEvent, b: ReplayEvent): boolean {
-  return stream(a) === stream(b) && a.at === b.at;
+  return replayStream(a) === replayStream(b) && a.at === b.at;
 }
 
 export function enqueueReplay(queue: ReplayQueue, input: ReplayEvent): ReplayQueue {
@@ -55,7 +55,7 @@ export function nextReplayBatch(queue: ReplayQueue, serverNow: number, limit = 5
   const seen = new Set<string>();
   const next: ReplayQueue = [];
   for (const event of [...queue].sort((a,b) => a.at - b.at)) {
-    const key = stream(event);
+    const key = replayStream(event);
     if (seen.has(key)) continue;
     seen.add(key);
     if (event.at <= serverNow) next.push(event);
