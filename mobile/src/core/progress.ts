@@ -117,7 +117,6 @@ export const getSession = (p: Progress, moduleKey: string): SessionRecord | unde
 
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void>; remove(key: string): Promise<void> }
 const KEY = "icu.progress.v2";
-const LEGACY_KEY = "icu.progress.v1";
 /** Guest history keeps its existing key; account history is isolated per authenticated user.
  * Never use email as a storage prefix (it is changeable and exposes personally identifying text).
  */
@@ -131,17 +130,26 @@ export function scopedProgressStore(base: KeyValueStore, userId: string | null):
   };
 }
 
-/** A corrupt, foreign or old-schema value never crashes the app: it is ignored and the learner starts empty rather than seeing a broken screen. */
+/** A missing snapshot means a new learner. A failed read or invalid existing
+ * snapshot is NOT a new learner: refuse to hydrate writable empty progress.
+ * Preserve the original bytes for retry/recovery, including future schema versions. */
+export async function loadProgressStrict(store: KeyValueStore): Promise<Progress> {
+  const raw = await store.get(KEY);
+  if (raw !== null) {
+    const result = progressSchema.safeParse(JSON.parse(raw));
+    if (!result.success) throw new Error("Saved learning progress could not be read");
+    return result.data;
+  }
+  // Legacy v1 synthetic content cannot be migrated to current catalog keys.
+  // Do not mutate storage during hydration, even if the old snapshot is present.
+  return emptyProgress();
+}
+
+/** Tolerant read for legacy callers that explicitly accept an empty fallback.
+ * The writable application provider must use loadProgressStrict instead. */
 export async function loadProgress(store: KeyValueStore): Promise<Progress> {
-  try {
-    const raw = await store.get(KEY);
-    if (raw) { const r = progressSchema.safeParse(JSON.parse(raw)); if (r.success) return r.data; }
-    // The v1 schema (SYN-only bookmarks, equipment-part "viewed" map) cannot be meaningfully
-    // migrated to real content keys; a learner moving from an old build starts fresh rather
-    // than carrying over bookmarks that no longer resolve to anything.
-    await store.remove(LEGACY_KEY).catch(() => undefined);
-    return emptyProgress();
-  } catch { return emptyProgress(); }
+  try { return await loadProgressStrict(store); }
+  catch { return emptyProgress(); }
 }
 export const saveProgress = (store: KeyValueStore, p: Progress): Promise<void> => store.set(KEY, JSON.stringify(p));
 export const clearProgress = (store: KeyValueStore): Promise<void> => store.remove(KEY);
