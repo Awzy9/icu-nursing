@@ -4,6 +4,7 @@ on:
     paths:
       - "mobile/**"
       - "tests/mobile/**"
+      - "scripts/qa-local-preflight*.mjs"
       - "content/working-ecg.json"
       - "content/working-waveforms.json"
       - "public/images/equipment/**"
@@ -29,6 +30,8 @@ jobs:
         run: npm run mobile:install
       - name: Mobile unit, source safety, accessibility, image license and waveform tests
         run: npx vitest run tests/mobile --reporter=dot
+      - name: Local QA preflight regression tests
+        run: node --test scripts/qa-local-preflight.test.mjs
       - name: Mobile TypeScript
         run: npm run typecheck:mobile
       - name: Export iOS JavaScript bundle
