@@ -4138,7 +4138,7 @@
     "lessonHref": "/working/D02-T02",
     "accessibleDescription": [
       "A flat line for the entire strip, with no P waves, QRS complexes, or T waves at any point.",
-      "A flat line can represent asystole or loss of ECG signal. Assess the patient immediately."
+      "The signal remains nearly flat, with very small deflections and no identifiable complexes. Assess the patient immediately."
     ],
     "trace": {
       "label": "Lead II (schematic)",
