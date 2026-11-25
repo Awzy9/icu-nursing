@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../../mobile/src/core/syncMerge";
+import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions, reconcileAccountFlags } from "../../mobile/src/core/syncMerge";
 import { discardSession, emptyProgress, progressSchema, saveSession } from "../../mobile/src/core/progress";
+import { queueFlag } from "../../mobile/src/core/pendingFlags";
 
 describe("mergeRemoteBookmarks", () => {
   it("resolves each remote module_key to kind:key using the lookup, and unions with local bookmarks", () => {
@@ -136,5 +137,25 @@ describe("session dismissal and delayed account reads", () => {
     const local = { ...emptyProgress(), attempts: { Q1: { correct: true, box: 2, at: "2026-01-01T03:00:05+03:00" } } };
     expect(mergeRemoteAttempts(local, [{ question_id: "Q1", correct: false, box: 1, answered_at: "2026-01-01T00:00:10Z" }]).attempts.Q1?.correct).toBe(false);
     expect(mergeRemoteAttempts(local, [{ question_id: "Q1", correct: false, box: 1, answered_at: "invalid" }])).toBe(local);
+  });
+});
+
+
+describe("successful signed-in account snapshot", () => {
+  const kindOf = new Map([["D01-T19", "topics" as const], ["SK-02", "skills" as const]]);
+  it("removes a known bookmark deleted on another device while retaining unresolved catalog keys", () => {
+    const local = { ...emptyProgress(), bookmarks: ["topics:D01-T19", "equipment:EQ-99"] };
+    expect(reconcileAccountFlags(local, [{ module_key: "SK-02" }], [], kindOf).bookmarks).toEqual(["equipment:EQ-99", "skills:SK-02"]);
+  });
+  it("honors explicit remote lesson resets without clearing lessons absent from the response", () => {
+    const local = { ...emptyProgress(), completed: ["D01-T19", "SC-10"] };
+    expect(reconcileAccountFlags(local, [], [{module_key:"D01-T19",completed:false},{module_key:"SK-02",completed:true}],kindOf).completed).toEqual(["SC-10","SK-02"]);
+  });
+  it("preserves pending local changes during a conflicting server snapshot", () => {
+    const local = queueFlag(queueFlag(queueFlag(emptyProgress(), "bookmark", "topics:D01-T19", false, 100), "bookmark", "skills:SK-02", true, 101), "complete", "D01-T19", true, 102);
+    const merged = reconcileAccountFlags(local, [{module_key:"D01-T19"}], [{module_key:"D01-T19",completed:false}], kindOf);
+    expect(merged.bookmarks).toEqual(["skills:SK-02"]);
+    expect(merged.completed).toEqual(["D01-T19"]);
+    expect(merged.pendingFlags).toEqual(local.pendingFlags);
   });
 });
