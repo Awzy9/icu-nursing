@@ -112,16 +112,16 @@ describe("local progress", () => {
   it("saves, resumes and discards an in-progress quiz or case session", () => {
     let p = emptyProgress();
     expect(getSession(p, "D01-T19")).toBeUndefined();
-    p = saveSession(p, "D01-T19", { kind: "quiz", version: "v1", position: 2, score: 0, finished: false, at: "t1" });
-    expect(getSession(p, "D01-T19")).toEqual({ kind: "quiz", version: "v1", position: 2, score: 0, finished: false, at: "t1" });
-    p = saveSession(p, "SC-01", { kind: "scenario", version: "v1", position: 1, score: 0, finished: false, at: "t2" });
+    p = saveSession(p, "D01-T19", { kind: "quiz", version: "v1", position: 2, score: 0, finished: false, at: "2026-01-01T00:00:01.000Z" });
+    expect(getSession(p, "D01-T19")).toEqual({ kind: "quiz", version: "v1", position: 2, score: 0, finished: false, at: "2026-01-01T00:00:01.000Z" });
+    p = saveSession(p, "SC-01", { kind: "scenario", version: "v1", position: 1, score: 0, finished: false, at: "2026-01-01T00:00:02.000Z" });
     expect(Object.keys(p.sessions).sort()).toEqual(["D01-T19", "SC-01"]);
     // finishing a session clears it rather than leaving a stale "finished" entry to resume
-    p = saveSession(p, "D01-T19", { kind: "quiz", version: "v1", position: 5, score: 4, finished: true, at: "t3" });
+    p = saveSession(p, "D01-T19", { kind: "quiz", version: "v1", position: 5, score: 4, finished: true, at: "2026-01-01T00:00:03.000Z" });
     expect(getSession(p, "D01-T19")).toBeUndefined();
-    p = discardSession(p, "SC-01");
+    p = discardSession(p, "SC-01", "2026-01-01T00:00:04.000Z");
     expect(p.sessions).toEqual({});
-    expect(discardSession(p, "NOT-THERE")).toBe(p); // no-op returns the same reference
+    expect(discardSession(p, "SC-01", "2026-01-01T00:00:04.000Z")).toBe(p); // duplicate dismissal is a no-op
   });
   it("marks and unmarks a lesson complete idempotently, returning the same reference when nothing changes", () => {
     const p = emptyProgress();
