@@ -12,7 +12,7 @@ export default function Account() {
   const { t, locale, setLocale, themeMode, setThemeMode, palette, rtl, progress, storageWarning, retryStorage, ready } = useApp();
   const { config, manager, email, notice, clearNotice } = useAuth();
   const pendingCount = Object.keys(progress.pendingFlags ?? {}).length + (progress.pendingReplay?.length ?? 0);
-  const base = siteBaseUrl(process.env as Record<string, string | undefined>);
+  const base = siteBaseUrl({ EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL });
   return (
     <Screen>
       <H1>{t("account.title")}</H1>
