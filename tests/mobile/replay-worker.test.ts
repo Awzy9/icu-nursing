@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { flushReplayBatch, replayEnabled } from "../../mobile/src/core/replayWorker";
+import { createReplayScheduler, flushReplayBatch, replayEnabled } from "../../mobile/src/core/replayWorker";
 import { acknowledgeReplay, type ReplayEvent, type ReplayQueue } from "../../mobile/src/core/progressReplay";
 
 const answer = (at: number, questionId = "QB-D01-T03-1"): ReplayEvent => ({
@@ -57,4 +57,25 @@ describe("account-bound replay worker", () => {
     expect(sent).toBe(1);
     expect(acks).toEqual([]);
   });
+  it("rotates beyond 20 blocked streams and retains chronological order in each stream", async () => {
+    const blocked = Array.from({ length: 25 }, (_, i) => answer(100 + i, "QB-D01-T03-" + String(i).padStart(2, "0")));
+    const later = answer(200, "QB-D01-T03-00");
+    const good = answer(300, "QB-D01-T03-99");
+    let queue: ReplayQueue = [...blocked, later, good];
+    const scheduler = createReplayScheduler();
+    const calls: ReplayEvent[] = [];
+    const deps = {
+      userId: "account-a", isActive: () => true, scheduler,
+      send: async (_id: string, e: ReplayEvent) => { calls.push(e); return e === good; },
+      acknowledge: (e: ReplayEvent) => { queue = acknowledgeReplay(queue,e); },
+    };
+    expect(await flushReplayBatch(queue,deps)).toBe(0);
+    expect(calls.length).toBe(20);
+    expect(await flushReplayBatch(queue,deps)).toBe(1);
+    expect(calls).toContain(good);
+    expect(calls).not.toContain(later);
+    expect(queue).toContain(later);
+    expect(queue).not.toContain(good);
+  });
+
 });
