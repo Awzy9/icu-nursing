@@ -39,8 +39,8 @@ export function mergeRemoteSessions(local: Progress, remote: SessionRow[]): Prog
   return merged;
 }
 
-/** A remote attempt row only overwrites a local one when it is strictly newer (by answered_at) -
- * same "newer wins" rule as sessions. The server computes box authoritatively
+/** A remote attempt row overwrites a local one when newer or at the same time -
+ * pending local events are excluded by reconcileAccountSnapshot. The server computes box authoritatively
  * (public.working_record_attempt), so a winning remote row's box is trusted as-is rather than
  * being recomputed locally. */
 export function mergeRemoteAttempts(local: Progress, remote: AttemptRow[]): Progress {
@@ -49,7 +49,8 @@ export function mergeRemoteAttempts(local: Progress, remote: AttemptRow[]): Prog
   for (const row of remote) {
     const existing = attempts[row.question_id];
     const at = Date.parse(row.answered_at);
-    if (!Number.isFinite(at) || (existing && Date.parse(existing.at) >= at)) continue;
+    if (!Number.isFinite(at) || (existing && Date.parse(existing.at) > at)) continue;
+    if (existing && Date.parse(existing.at) === at && existing.correct === row.correct && existing.box === row.box) continue;
     attempts = { ...attempts, [row.question_id]: { correct: row.correct, at: row.answered_at, box: row.box } };
     changed = true;
   }
@@ -81,4 +82,21 @@ export function reconcileAccountFlags(local: Progress, remoteBookmarks: Bookmark
   let next = bookmarks.length === local.bookmarks.length && bookmarks.every((key, i) => key === local.bookmarks[i]) ? local : { ...local, bookmarks };
   for (const row of remoteLessons) next = setComplete(next, row.module_key, row.completed);
   return applyPendingFlags(next);
+}
+
+
+/** Merge independent streams even when an upload elsewhere is blocked. A
+ * pending answer/checkpoint still owns its local stream until acknowledged.
+ * On equal answer timestamps the server box is authoritative once synced. */
+export function reconcileAccountSnapshot(local: Progress, remoteBookmarks: BookmarkRow[], remoteLessons: LessonRow[], remoteSessions: SessionRow[], remoteAttempts: AttemptRow[], kindOf: Map<string, BookmarkKind>): Progress {
+  const pendingQuestions = new Set<string>();
+  const pendingModules = new Set<string>();
+  for (const event of local.pendingReplay ?? []) {
+    if (event.kind === "answer") pendingQuestions.add(event.questionId);
+    else pendingModules.add(event.moduleKey);
+  }
+  return mergeRemoteAttempts(
+    mergeRemoteSessions(reconcileAccountFlags(local, remoteBookmarks, remoteLessons, kindOf),
+      remoteSessions.filter(row => !pendingModules.has(row.module_key))),
+    remoteAttempts.filter(row => !pendingQuestions.has(row.question_id)));
 }
