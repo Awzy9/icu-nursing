@@ -39,6 +39,14 @@ export type SessionRecord = z.infer<typeof sessionRecordSchema>;
 const attemptEntrySchema = z.object({ correct: z.boolean(), at: z.string(), box: z.number().int().min(1).max(5) });
 export type AttemptEntry = z.infer<typeof attemptEntrySchema>;
 
+const pendingFlagSchema = z.object({
+  kind: z.enum(["bookmark", "complete"]),
+  key: z.string().regex(/^[a-zA-Z0-9:-]{1,60}$/),
+  value: z.boolean(),
+  revision: z.number().int().nonnegative(),
+});
+export type PendingFlag = z.infer<typeof pendingFlagSchema>;
+
 export const progressSchema = z.object({
   v: z.literal(2),
   bookmarks: z.array(z.string().regex(bookmarkKeyPattern)).max(500),
@@ -52,6 +60,8 @@ export const progressSchema = z.object({
   sessions: z.record(z.string(), sessionRecordSchema),
   // Optional for legacy v2 storage. Keep only timestamps, never discarded answers.
   sessionDismissals: z.record(z.string(), z.string()).optional(),
+  // Account-scoped desired state; legacy progress without an outbox remains readable.
+  pendingFlags: z.record(z.string(), pendingFlagSchema).optional(),
   // .default({}) for the same reason as `completed` above: existing on-device v2 data saved
   // before this field existed must still parse.
   attempts: z.record(z.string().regex(/^[A-Z0-9-]{1,60}$/), attemptEntrySchema).default({}),
