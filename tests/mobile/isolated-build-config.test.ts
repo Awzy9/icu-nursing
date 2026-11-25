@@ -2,10 +2,12 @@ import { createRequire } from "node:module";
 import { describe, expect, it } from "vitest";
 import app from "../../mobile/app.json";
 import eas from "../../mobile/eas.json";
+import { parseAuthCallback } from "../../mobile/src/auth/deepLinks";
+import { siteBaseUrl } from "../../mobile/src/core/remoteContent";
 
 const requireConfig = createRequire(import.meta.url);
 const { configure } = requireConfig("../../mobile/app.config.js") as {
-  configure(config: typeof app.expo, env: Record<string, string | undefined>): typeof app.expo & { updates: { enabled?: boolean } };
+  configure(config: typeof app.expo, env: Record<string, string | undefined>): typeof app.expo & { updates: { enabled?: boolean }; extra: { siteUrl?: string } };
 };
 const valid = {
   APP_VARIANT: "isolated-replay",
@@ -29,6 +31,8 @@ describe("isolated physical-device build configuration", () => {
     expect(config.android.package).toBe("com.nursingmastery.app.qa");
     expect(config.scheme).toBe("nursingmasteryqa");
     expect(config.updates.enabled).toBe(false);
+    expect(config.extra.siteUrl).toBe(valid.EXPO_PUBLIC_SITE_URL);
+    expect(siteBaseUrl({}, config.extra.siteUrl)).toBe(valid.EXPO_PUBLIC_SITE_URL);
     expect(eas.build["isolated-replay"]).toMatchObject({distribution:"internal",ios:{simulator:false},android:{buildType:"apk"},channel:"isolated-replay"});
   });
   it("rejects missing, mismatched, insecure and known live destinations", () => {
@@ -46,4 +50,13 @@ describe("isolated physical-device build configuration", () => {
       {EXPO_PUBLIC_PROGRESS_REPLAY:"false"},
     ]) expect(() => configure(app.expo, {...valid,...override})).toThrow();
   });
+  it("does not accept a production deep link in the QA app or a QA link in production", () => {
+    const prod = "nursingmastery://auth/callback?code=abcdefgh&type=recovery";
+    const qa = "nursingmasteryqa://auth/callback?code=abcdefgh&type=recovery";
+    expect(parseAuthCallback(qa, valid.EXPO_PUBLIC_SITE_URL, "nursingmasteryqa").ok).toBe(true);
+    expect(parseAuthCallback(prod, valid.EXPO_PUBLIC_SITE_URL, "nursingmasteryqa").ok).toBe(false);
+    expect(parseAuthCallback(qa, "https://icu-nursing.vercel.app").ok).toBe(false);
+    expect(parseAuthCallback("https://icu-nursing.vercel.app/auth/callback?code=abcdefgh", valid.EXPO_PUBLIC_SITE_URL, "nursingmasteryqa").ok).toBe(false);
+  });
+
 });
