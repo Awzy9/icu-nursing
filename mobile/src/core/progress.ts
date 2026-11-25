@@ -50,6 +50,8 @@ export const progressSchema = z.object({
   cases: z.record(z.string(), z.object({ scoreTenths: z.number().int().min(0).max(1000), at: z.string() })),
   practice: z.array(z.object({ right: z.number().int().min(0), total: z.number().int().min(1), at: z.string() })).max(100),
   sessions: z.record(z.string(), sessionRecordSchema),
+  // Optional for legacy v2 storage. Keep only timestamps, never discarded answers.
+  sessionDismissals: z.record(z.string(), z.string()).optional(),
   // .default({}) for the same reason as `completed` above: existing on-device v2 data saved
   // before this field existed must still parse.
   attempts: z.record(z.string().regex(/^[A-Z0-9-]{1,60}$/), attemptEntrySchema).default({}),
@@ -79,8 +81,25 @@ export const recordAttempt = (p: Progress, questionId: string, correct: boolean,
 // Resumable session state (an in-progress quiz or branching case). A case or quiz in progress
 // is saved here; finishing it clears the entry (recordCase/recordPractice already captured the
 // result) so the learner is not offered to "resume" something already complete.
-export const saveSession = (p: Progress, moduleKey: string, session: SessionRecord): Progress => (session.finished ? discardSession(p, moduleKey) : { ...p, sessions: { ...p.sessions, [moduleKey]: session } });
-export const discardSession = (p: Progress, moduleKey: string): Progress => { if (!(moduleKey in p.sessions)) return p; const sessions = { ...p.sessions }; delete sessions[moduleKey]; return { ...p, sessions }; };
+export const saveSession = (p: Progress, moduleKey: string, session: SessionRecord): Progress => {
+  const at = Date.parse(session.at);
+  if (!Number.isFinite(at)) return p;
+  const existingAt = Date.parse(p.sessions[moduleKey]?.at ?? "");
+  const dismissedAt = Date.parse(p.sessionDismissals?.[moduleKey] ?? "");
+  if (existingAt > at || dismissedAt >= at) return p;
+  if (session.finished) return discardSession(p, moduleKey, session.at);
+  return { ...p, sessions: { ...p.sessions, [moduleKey]: session } };
+};
+export const discardSession = (p: Progress, moduleKey: string, at = new Date().toISOString()): Progress => {
+  const timestamp = Date.parse(at);
+  if (!Number.isFinite(timestamp)) return p;
+  const existingAt = Date.parse(p.sessions[moduleKey]?.at ?? "");
+  const dismissedAt = Date.parse(p.sessionDismissals?.[moduleKey] ?? "");
+  if (existingAt > timestamp || dismissedAt >= timestamp) return p;
+  const sessions = { ...p.sessions };
+  delete sessions[moduleKey];
+  return { ...p, sessions, sessionDismissals: { ...p.sessionDismissals, [moduleKey]: at } };
+};
 export const getSession = (p: Progress, moduleKey: string): SessionRecord | undefined => p.sessions[moduleKey];
 
 export interface KeyValueStore { get(key: string): Promise<string | null>; set(key: string, value: string): Promise<void>; remove(key: string): Promise<void> }
