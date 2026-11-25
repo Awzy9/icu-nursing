@@ -77,6 +77,12 @@ describe("working learning ownership",()=>{
   await asUser({id:a},"select public.working_save_session('QB-D06-T01','quiz','v1',1,0,false,now())");
   expect((await asUser({id:b},"delete from public.working_sessions where user_id=$1 returning *",[a])).rows).toHaveLength(0);
   await asUser({id:a},"delete from public.working_sessions where module_key='QB-D06-T01'");
-  expect((await asUser({id:a},"select * from public.working_sessions")).rows).toHaveLength(0);
+  const rows=(await asUser({id:a},"select * from public.working_sessions")).rows;
+  expect(rows).toHaveLength(1);
+  expect(rows[0]).toMatchObject({finished:true,version:"dismissed-v1",position:0,score:0,decisions:null});
+  await asUser({id:a},"select public.working_save_session('QB-D06-T01','quiz','stale',2,1,false,now()-interval '1 hour')");
+  expect((await asUser({id:a},"select * from public.working_sessions")).rows[0]).toMatchObject({finished:true,version:"dismissed-v1"});
+  await asUser({id:a},"select public.working_save_session('QB-D06-T01','quiz','new',1,0,false,now()+interval '1 second')");
+  expect((await asUser({id:a},"select * from public.working_sessions")).rows[0]).toMatchObject({finished:false,version:"new"});
  });
 });
