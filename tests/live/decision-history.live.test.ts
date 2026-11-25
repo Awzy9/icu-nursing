@@ -2,6 +2,9 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { ISOLATED, requireIsolated } from "../../scripts/live/target";
 import { deleteTestUser, makeUser, rawClient, signIn } from "./helpers";
 import { sessionRowSchema } from "@icu/schemas/working-progress";
+import { createRpc } from "../../mobile/src/api/rpc";
+import { flushReplayBatch } from "../../mobile/src/core/replayWorker";
+import { acknowledgeReplay, type ReplayEvent, type ReplayQueue } from "../../mobile/src/core/progressReplay";
 
 const ids: string[] = [];
 const decisions = [{position:1,choice:0},{position:2,choice:1}];
@@ -57,4 +60,42 @@ describe.skipIf(!ISOLATED)("Decision history through authenticated PostgREST",()
     expect(legacy.error).toBeNull();
     expect(legacy.data).toEqual({version:"legacy",decisions:null});
   });
+  it("replays a lost acknowledgement through the actual mobile client and PostgREST without advancing the box twice", async()=>{
+    const device=await signIn(first.email), secondDevice=await signIn(first.email), other=await signIn(second.email);
+    const mobile=createRpc(device);
+    const at=Date.now()-120000;
+    const answer:ReplayEvent={kind:"answer",moduleKey:"QB-D01-T03",questionId:"QB-D01-T03-1",choice:1,correct:true,at};
+    let queue:ReplayQueue=[answer];
+    let lost=true;
+    const deps={userId:first.id,isActive:()=>true,send:async(id:string,e:ReplayEvent)=>{
+      const accepted=await mobile.replayWorkingEvent(id,e);
+      if(lost)throw new Error("simulated lost acknowledgement after server write");
+      return accepted;
+    },acknowledge:(e:ReplayEvent)=>{queue=acknowledgeReplay(queue,e);}};
+    expect(await flushReplayBatch(queue,deps)).toBe(0);
+    expect(queue).toEqual([answer]);
+    lost=false;
+    expect(await flushReplayBatch(queue,deps)).toBe(1);
+    expect(queue).toEqual([]);
+    const rows=await createRpc(secondDevice).listWorkingAttempts();
+    expect(rows.find(row=>row.question_id==="QB-D01-T03-1")).toMatchObject({box:2,correct:true});
+    expect(await createRpc(other).listWorkingAttempts()).toEqual([]);
+    await expect(createRpc(other).replayWorkingEvent(first.id,answer)).rejects.toMatchObject({code:"auth"});
+    expect(await mobile.replayWorkingEvent(first.id,{...answer,at:Date.now()+86400000})).toBe(false);
+  });
+  it("preserves dismissals across two devices and an actual legacy REST delete", async()=>{
+    const a=await signIn(first.email), b=await signIn(first.email);
+    const mobile=createRpc(a);
+    const at=Date.now()-120000;
+    const checkpoint:ReplayEvent={kind:"checkpoint",moduleKey:"SC-01",sessionKind:"scenario",version:"sc2-test",position:3,score:2,finished:false,at,decisions};
+    expect(await mobile.replayWorkingEvent(first.id,checkpoint)).toBe(true);
+    expect(await mobile.replayWorkingEvent(first.id,{kind:"dismiss",moduleKey:"SC-01",at:at+1000})).toBe(true);
+    expect(await mobile.replayWorkingEvent(first.id,checkpoint)).toBe(true);
+    expect((await createRpc(b).listWorkingSessions()).find(row=>row.module_key==="SC-01")).toMatchObject({finished:true,version:"dismissed-v1",decisions:null});
+    expect(await mobile.replayWorkingEvent(first.id,{...checkpoint,at:at+2000})).toBe(true);
+    expect((await b.from("working_sessions").delete().eq("module_key","SC-01")).error).toBeNull();
+    expect(await mobile.replayWorkingEvent(first.id,{...checkpoint,at:at+3000})).toBe(true);
+    expect((await createRpc(b).listWorkingSessions()).find(row=>row.module_key==="SC-01")).toMatchObject({finished:true,version:"dismissed-v1",decisions:null});
+  });
+
 });
