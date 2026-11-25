@@ -52,8 +52,8 @@ export function useProgressSync() {
       const next = localDiscardSession(p, moduleKey, at);
       return signedIn && REPLAY_ENABLED && next !== p ? appendReplay(next, { kind: "dismiss", moduleKey, at: Date.parse(at) }) : next;
     });
-    if (signedIn && !REPLAY_ENABLED) void rpc!.discardWorkingSession(moduleKey).catch(() => undefined);
-  }, [update, rpc, signedIn]);
+    if (rpc && userId && !REPLAY_ENABLED) void rpc.discardWorkingSession(moduleKey, userId, Date.parse(at)).catch(() => undefined);
+  }, [update, rpc, signedIn, userId]);
 
   const recordAnswer = useCallback((questionId: string, moduleKey: string, choice: number, correct: boolean, at: number) => {
     // Always recorded locally (guest and signed-in alike) so the spaced-revision queue
