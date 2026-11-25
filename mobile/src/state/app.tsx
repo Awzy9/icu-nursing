@@ -3,11 +3,12 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useR
 import { useColorScheme } from "react-native";
 import { isRtl, translate, type Locale } from "../core/i18n";
 import { emptyProgress, loadProgress, saveProgress, scopedProgressStore, type KeyValueStore, type Progress } from "../core/progress";
+import { orderedStorage } from "../core/orderedStorage";
 import { ONBOARDING_STORAGE_KEY } from "../core/onboarding";
 import { dark, light, type Palette } from "../ui/theme";
 
 export type ThemeMode = "system" | "light" | "dark";
-const store: KeyValueStore = { get: (k) => AsyncStorage.getItem(k), set: (k, v) => AsyncStorage.setItem(k, v), remove: (k) => AsyncStorage.removeItem(k) };
+const store: KeyValueStore = orderedStorage({ get: (k) => AsyncStorage.getItem(k), set: (k, v) => AsyncStorage.setItem(k, v), remove: (k) => AsyncStorage.removeItem(k) });
 const SETTINGS_KEY = "icu.settings.v1";
 
 interface Ctx {
@@ -15,6 +16,7 @@ interface Ctx {
   t(key: string, vars?: Record<string, string | number>): string;
   progress: Progress; update(fn: (p: Progress) => Progress): void; ready: boolean;
   onboardingSeen: boolean; finishOnboarding(): void;
+  storageWarning: boolean; retryStorage(): void;
 }
 const AppContext = createContext<Ctx | null>(null);
 export const useApp = (): Ctx => { const c = useContext(AppContext); if (!c) throw new Error("useApp outside AppProvider"); return c; };
@@ -28,8 +30,10 @@ export function AppProvider({ children, accountId = null }: { children: React.Re
   const [progress, setProgress] = useState<Progress>(emptyProgress());
   const [ready, setReady] = useState(false);
   const [onboardingSeen, setOnboardingSeen] = useState(false);
+  const [failedScope, setFailedScope] = useState<string | null>(null);
+  const saveSequence = useRef(0);
   const system = useColorScheme();
-  const latest = useRef(progress); latest.current = progress;
+  const latest = useRef(progress);
 
   useEffect(() => {
     let active = true;
@@ -62,16 +66,28 @@ export function AppProvider({ children, accountId = null }: { children: React.Re
   const scopeReady = ready && loadedScope === scopeId;
   const activeScopeRef = useRef(scopeId);
   activeScopeRef.current = scopeId;
+  const persistProgress = useCallback((next: Progress) => {
+    const sequence = ++saveSequence.current;
+    void saveProgress(progressStore, next).then(() => {
+      if (activeScopeRef.current === scopeId && saveSequence.current === sequence) setFailedScope(null);
+    }).catch(() => {
+      if (activeScopeRef.current === scopeId && saveSequence.current === sequence) setFailedScope(scopeId);
+    });
+  }, [progressStore, scopeId]);
   const update = useCallback((fn: (p: Progress) => Progress) => {
     if (!scopeReady || activeScopeRef.current !== scopeId) return;
     const next = fn(latest.current);
+    if (next === latest.current) return;
     latest.current = next; setProgress(next);
-    void saveProgress(progressStore, next).catch(() => undefined);
-  }, [progressStore, scopeReady]);
+    persistProgress(next);
+  }, [scopeId, scopeReady, persistProgress]);
+  const retryStorage = useCallback(() => {
+    if (scopeReady && activeScopeRef.current === scopeId) persistProgress(latest.current);
+  }, [scopeId, scopeReady, persistProgress]);
 
   const value = useMemo<Ctx>(() => ({
     locale, rtl: isRtl(locale), setLocale, themeMode, setThemeMode, palette: (themeMode === "system" ? system : themeMode) === "dark" ? dark : light,
-    t: (k, v) => translate(locale, k, v), progress: scopeReady ? progress : emptyProgress(), update, ready: scopeReady, onboardingSeen, finishOnboarding,
-  }), [locale, setLocale, themeMode, setThemeMode, system, progress, update, scopeReady, onboardingSeen, finishOnboarding]);
+    t: (k, v) => translate(locale, k, v), progress: scopeReady ? progress : emptyProgress(), update, ready: scopeReady, onboardingSeen, finishOnboarding, storageWarning: failedScope === scopeId, retryStorage,
+  }), [locale, setLocale, themeMode, setThemeMode, system, progress, update, scopeReady, onboardingSeen, finishOnboarding, failedScope, scopeId, retryStorage]);
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
