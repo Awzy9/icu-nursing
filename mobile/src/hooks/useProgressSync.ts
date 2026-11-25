@@ -5,13 +5,13 @@
 // and retried; attempts and sessions still use the existing best-effort RPC paths.
 import { useCallback, useEffect, useRef } from "react";
 import { AppState } from "react-native";
-import { acknowledgeFlag, applyPendingFlags, queueFlag } from "../core/pendingFlags";
+import { acknowledgeFlag, queueFlag } from "../core/pendingFlags";
 import { useAuth } from "../auth/provider";
 import {
   discardSession as localDiscardSession, recordAttempt as localRecordAttempt, saveSession as localSaveSession, setComplete as localSetComplete, toggleBookmark as localToggleBookmark,
   type BookmarkKind, type Progress, type SessionRecord,
 } from "../core/progress";
-import { mergeRemoteAttempts, mergeRemoteBookmarks, mergeRemoteCompleted, mergeRemoteSessions } from "../core/syncMerge";
+import { mergeRemoteAttempts, mergeRemoteSessions, reconcileAccountFlags } from "../core/syncMerge";
 import { useApp } from "../state/app";
 import { useCatalogList } from "./useRemoteContent";
 
@@ -102,7 +102,7 @@ export function useProgressPullOnSignIn() {
         ]);
         if (!cancelled) {
           lastPull = Date.now();
-          update(p => applyPendingFlags(mergeRemoteAttempts(mergeRemoteCompleted(mergeRemoteSessions(mergeRemoteBookmarks(p, bookmarks, kindOf), sessions), lessons), attempts)));
+          update(p => mergeRemoteAttempts(mergeRemoteSessions(reconcileAccountFlags(p, bookmarks, lessons, kindOf), sessions), attempts));
         }
       } catch { /* retry the incomplete account pull; do not treat a failed read as an empty account */ }
       finally { busy.current = false; }
