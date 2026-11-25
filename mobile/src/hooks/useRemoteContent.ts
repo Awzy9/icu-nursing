@@ -26,17 +26,19 @@ export type FetchState<T> =
 
 function useFetcher<T>(run: () => Promise<RemoteResult<T>>, depsList: unknown[]): FetchState<T> & { refresh(): void } {
   const [state, setState] = useState<FetchState<T>>({ status: "loading" });
-  const mounted = useRef(true);
-  useEffect(() => () => { mounted.current = false; }, []);
+  const requestId = useRef(0);
   const load = useCallback(() => {
+    const id = ++requestId.current;
     setState({ status: "loading" });
     run().then((r) => {
-      if (!mounted.current) return;
+      if (requestId.current !== id) return;
       setState(r.status === "ok" ? { status: "ready", data: r.data, fromCache: r.fromCache } : { status: "offline" });
-    }).catch(() => mounted.current && setState({ status: "offline" }));
+    }).catch(() => {
+      if (requestId.current === id) setState({ status: "offline" });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, depsList);
-  useEffect(() => { load(); }, [load]);
+  useEffect(() => { load(); return () => { requestId.current++; }; }, [load]);
   return { ...state, refresh: load } as FetchState<T> & { refresh(): void };
 }
 
