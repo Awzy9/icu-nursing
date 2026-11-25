@@ -92,9 +92,10 @@ export function createRpc(client: SupabaseClient) {
         ? run("working_save_session_v2", { ...args, p_decisions: decisions })
         : run("working_save_session", args);
     },
-    discardWorkingSession: async (moduleKey: string): Promise<void> => {
-      const { error } = await client.from("working_sessions").delete().eq("module_key", moduleKey);
-      if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
+    discardWorkingSession: async (moduleKey: string, expectedUserId: string, at: number): Promise<void> => {
+      const event = replayEventSchema.parse({ kind: "dismiss", moduleKey, at });
+      const accepted = await call("working_replay_event", z.boolean(), { p_expected_user: expectedUserId, p_event: event });
+      if (!accepted) throw new RpcError("invalid", "Session dismissal timestamp is ahead of server time");
     },
     listWorkingBookmarks: (): Promise<BookmarkRow[]> => selectRows("working_bookmarks", "module_key", bookmarkRowSchema),
     listWorkingLessons: (): Promise<LessonRow[]> => selectRows("working_lessons", "module_key,completed", lessonRowSchema),
