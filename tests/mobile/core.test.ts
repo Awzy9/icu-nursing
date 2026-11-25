@@ -153,6 +153,13 @@ describe("local progress", () => {
     expect(loaded.completed).toEqual([]);
     expect(loaded.attempts).toEqual({}); // field added after `completed`: same back-compat default
   });
+  it("does not award duplicate answer credit or accept invalid answer timestamps", () => {
+    const p = recordAttempt(emptyProgress(), "Q1", true, "2026-01-01T00:00:00.000Z");
+    expect(recordAttempt(p, "Q1", true, "2026-01-01T00:00:00.000Z")).toBe(p);
+    expect(recordAttempt(p, "Q1", true, "2026-01-01T03:00:00+03:00")).toBe(p);
+    expect(recordAttempt(p, "Q1", false, "invalid")).toBe(p);
+    expect(p.attempts.Q1?.box).toBe(2);
+  });
   it("recordAttempt advances a question's Leitner box exactly like the website's own recordAttempt, and never lets an older attempt overwrite a newer one", () => {
     let p = emptyProgress();
     p = recordAttempt(p, "Q1", true, "2026-01-01T00:00:00.000Z");
