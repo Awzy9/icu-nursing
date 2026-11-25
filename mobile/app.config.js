@@ -32,6 +32,7 @@ function configure(config, env) {
     ...config,
     name: "Nursing Mastery QA",
     scheme: "nursingmasteryqa",
+    extra: { ...config.extra, siteUrl: site },
     ios: { ...config.ios, bundleIdentifier: "com.nursingmastery.app.qa" },
     android: { ...config.android, package: "com.nursingmastery.app.qa" },
     updates: { ...config.updates, enabled: false },
