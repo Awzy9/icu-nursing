@@ -110,4 +110,47 @@ revoke all on function private.working_legacy_session_dismiss() from public,anon
 create trigger working_legacy_session_dismiss before delete on public.working_sessions
 for each row execute function private.working_legacy_session_dismiss();
 
+
+-- Timed practice is account-owned, but direct PostgREST updates must not bypass
+-- the same deadline, answer validation and immutable submission as the RPC.
+-- This migration has not been applied to the hosted nursing backend.
+create function private.working_exam_update_guard()
+returns trigger language plpgsql security invoker set search_path='' as $$
+declare item record;
+begin
+  if current_user <> 'authenticated' then return new; end if;
+  if auth.uid() is distinct from old.user_id then
+    raise exception 'Account mismatch' using errcode='42501';
+  end if;
+  if old.submitted_at is not null then
+    if new is distinct from old then
+      raise exception 'exam already submitted' using errcode='22023';
+    end if;
+    return new;
+  end if;
+  if new.answers is distinct from old.answers then
+    if clock_timestamp() > old.started_at + make_interval(secs => old.time_limit_seconds) then
+      raise exception 'time is up' using errcode='22023';
+    end if;
+    if jsonb_typeof(new.answers) is distinct from 'object' then
+      raise exception 'invalid exam answers' using errcode='22023';
+    end if;
+    for item in select key, value from jsonb_each(new.answers) loop
+      if not (item.key = any(old.question_ids))
+         or jsonb_typeof(item.value) is distinct from 'number'
+         or item.value::text !~ '^[0-3]$' then
+        raise exception 'invalid exam answer' using errcode='22023';
+      end if;
+    end loop;
+  end if;
+  if new.submitted_at is not null then
+    new.submitted_at := clock_timestamp();
+  end if;
+  return new;
+end;
+$$;
+revoke all on function private.working_exam_update_guard() from public,anon,authenticated;
+create trigger working_exam_update_guard before update on public.working_exams
+for each row execute function private.working_exam_update_guard();
+
 commit;
