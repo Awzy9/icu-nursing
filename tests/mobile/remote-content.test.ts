@@ -309,3 +309,76 @@ describe("clinical publication withdrawal and offline cache isolation", () => {
     expect(await fetchCatalogList(depsFor(store, disconnected))).toEqual({ status: "offline" });
   });
 });
+
+
+describe("concurrent clinical content withdrawal", () => {
+  const list = [{ key: "D01-T19", type: "topics", title: "Old revision", category: "ICU", questionCount: 0 }];
+  const denial = { ok: false, status: 403, json: async () => ({ error: "forbidden" }) } as Response;
+  const offline = async () => { throw new Error("network down"); };
+  const deferred = <T>() => {
+    let resolve!: (value: T) => void;
+    const promise = new Promise<T>(r => { resolve = r; });
+    return { promise, resolve };
+  };
+  it("rejects a late successful response that began before publication withdrawal", async () => {
+    const store = mem();
+    const baseUrl = "https://race-late.example";
+    const late = deferred<Response>();
+    const old = fetchCatalogList({ store, baseUrl, fetcher: () => late.promise });
+    expect(await fetchCatalogList({ store, baseUrl, fetcher: async () => denial })).toEqual({ status: "offline" });
+    late.resolve(jsonResponse({ version: "old", items: list }));
+    expect(await old).toEqual({ status: "offline" });
+    expect(await fetchCatalogList({ store, baseUrl, fetcher: offline })).toEqual({ status: "offline" });
+    const fresh = [{ ...list[0]!, title: "New revision" }];
+    expect(await fetchCatalogList({ store, baseUrl, fetcher: async () => jsonResponse({ version: "new", items: fresh }) })).toEqual({ status: "ok", data: fresh, fromCache: false });
+    expect(await fetchCatalogList({ store, baseUrl, fetcher: offline })).toEqual({ status: "ok", data: fresh, fromCache: true });
+  });
+  it("serializes a pending cache write before persisting the withdrawal", async () => {
+    const memory = mem();
+    const started = deferred<void>(), finish = deferred<void>();
+    const baseUrl = "https://race-write.example";
+    const store: KeyValueStore = {
+      get: memory.get,
+      set: async (k, v) => {
+        if (k.endsWith(":catalog:all")) { started.resolve(undefined); await finish.promise; }
+        await memory.set(k, v);
+      },
+    };
+    const old = fetchCatalogList({ store, baseUrl, fetcher: async () => jsonResponse({ version: "old", items: list }) });
+    await started.promise;
+    const revoke = fetchCatalogList({ store, baseUrl, fetcher: async () => denial });
+    // Let the denial be observed while the earlier disk write is still pending.
+    await Promise.resolve();
+    await Promise.resolve();
+    await Promise.resolve();
+    finish.resolve(undefined);
+    expect(await revoke).toEqual({ status: "offline" });
+    expect(await old).toEqual({ status: "offline" });
+    expect(await fetchCatalogList({ store, baseUrl, fetcher: offline })).toEqual({ status: "offline" });
+  });
+  it("keeps disk fallback blocked if persisting the withdrawal fails, even after a fresh response", async () => {
+    const memory = mem();
+    const baseUrl = "https://race-storage.example";
+    const store: KeyValueStore = {
+      get: memory.get,
+      set: async (k, v) => {
+        if (k.endsWith(":generation")) throw new Error("storage unavailable");
+        await memory.set(k, v);
+      },
+    };
+    await fetchCatalogList({ store, baseUrl, fetcher: async () => jsonResponse({ version: "old", items: list }) });
+    await fetchCatalogList({ store, baseUrl, fetcher: async () => denial });
+    const fresh = [{ ...list[0]!, title: "New online revision" }];
+    expect(await fetchCatalogList({ store, baseUrl, fetcher: async () => jsonResponse({ version: "new", items: fresh }) })).toEqual({ status: "ok", data: fresh, fromCache: false });
+    expect(await fetchCatalogList({ store, baseUrl, fetcher: offline })).toEqual({ status: "offline" });
+  });
+  it("rejects an exam draw that arrives after a different endpoint denies publication", async () => {
+    const store = mem();
+    const baseUrl = "https://race-exam.example";
+    const late = deferred<Response>();
+    const old = pickExamQuestions({ store, baseUrl, fetcher: () => late.promise }, ["ICU"], 10);
+    await fetchCatalogList({ store, baseUrl, fetcher: async () => denial });
+    late.resolve(jsonResponse({ questionIds: ["old"], timeLimitSeconds: 60 }));
+    expect(await old).toEqual({ status: "offline" });
+  });
+});
