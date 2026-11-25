@@ -88,4 +88,26 @@ $$;
 revoke all on function public.working_replay_event(uuid,jsonb) from public,anon;
 grant execute on function public.working_replay_event(uuid,jsonb) to authenticated;
 
+-- Compatibility for already-installed clients that DELETE an existing session.
+-- Only owner-authorized API deletes are converted. Administrative deletion and
+-- account FK cascades retain normal hard-delete semantics. This cannot create a
+-- marker for a legacy DELETE matching zero rows; updated clients use the RPC.
+create function private.working_legacy_session_dismiss()
+returns trigger language plpgsql security invoker set search_path='' as $$
+begin
+  if current_user = 'authenticated' and auth.uid() = old.user_id then
+    update public.working_sessions
+       set kind='quiz', version='dismissed-v1', position=0, score=0,
+           finished=true, decisions=null,
+           updated_at=greatest(old.updated_at + interval '1 millisecond', clock_timestamp())
+     where user_id=old.user_id and module_key=old.module_key;
+    return null;
+  end if;
+  return old;
+end;
+$$;
+revoke all on function private.working_legacy_session_dismiss() from public,anon,authenticated;
+create trigger working_legacy_session_dismiss before delete on public.working_sessions
+for each row execute function private.working_legacy_session_dismiss();
+
 commit;
