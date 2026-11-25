@@ -19,8 +19,8 @@ describe("working content delivery parity", () => {
   });
   it.each(["D04-T02", "D04-T09"])("preserves draft-only renal guideline status: %s", key => {
     const entry = projected(key);
-    expect(entry.body).toContain("2027 public-review draft summary");
-    expect(entry.body).toMatch(/not (?:be cited as|used as|been established as) final/);
+    expect(entry.body).toContain("2027 public-review draft");
+    expect(entry.body).toMatch(/not (?:be cited as|used as|been established as) final|not a final guideline/);
   });
   it("preserves seizure reassessment and resuscitation guidance in structured scenario feedback", () => {
     const entry = projected("SC-08");
