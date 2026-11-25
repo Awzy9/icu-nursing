@@ -24,7 +24,10 @@ describe("renal metabolic bedside reasoning",()=>{
  it("registers the UKKA evidence and preserves draft-only KDIGO status",()=>{
   expect(read("sources/source_register.csv")).toContain("S-UKKA-AKI-DETECTION");
   const content=read("content/drafts/batch-02/D04-T02-aki.md");
-  expect(content).toContain("a draft and not yet final");
+  expect(content).toContain("The proposed update has not been established as final");
+  expect(content).toContain("must not be cited as final");
+  expect(content).toContain("do not use draft definitions or biomarker recommendations to override established local practice");
+  expect(content).toContain("2027 public-review draft summary dated 19 November 2026");
   expect(content).toContain("S-UKKA-AKI-DETECTION");
  });
 });
