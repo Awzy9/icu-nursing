@@ -45,7 +45,10 @@ describe("native account discovery, build configuration and privacy", () => {
     expect(source("mobile/app/signup.tsx")).toContain("confirmationRequired");
     expect(source("mobile/app/reset-password.tsx")).toContain("manager.updatePassword");
     expect(source("mobile/app/auth/callback.tsx")).toContain("recoveryReady");
-    expect(source("mobile/app/signin.tsx")).toContain("nursingmastery://auth/callback?type=recovery");
+    expect(source("mobile/app/signin.tsx")).toContain("${AUTH_SCHEME}://auth/callback?type=recovery");
+    expect(source("mobile/app/signup.tsx")).toContain("${AUTH_SCHEME}://auth/callback");
+    expect(source("mobile/src/auth/provider.tsx")).toContain("parseAuthCallback(url, config!.siteOrigin, AUTH_SCHEME)");
+    expect(source("mobile/src/hooks/useRemoteContent.ts")).toContain("EXPO_PUBLIC_SITE_URL: process.env.EXPO_PUBLIC_SITE_URL");
   });
 
   it("does not leak one account's device-side learning history to guests or another account", async () => {
