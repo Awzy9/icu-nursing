@@ -66,7 +66,16 @@ export function buildWorkingContent(root = "."): WorkingEntry[] {
   return out;
 }
 if (process.argv[1]?.endsWith("build-working-content.ts")) {
-  const entries = buildWorkingContent();
+  // The technical preview must not embed the working catalog in its traced server artifact.
+  // Production working-mode eligibility is unchanged, and local content QA still builds all drafts.
+  const technicalPreview = process.env.VERCEL_ENV === "preview" &&
+    process.env.VERCEL_GIT_COMMIT_REF === "release/technical-preview-20261125";
+  if (technicalPreview && (process.env.CONTENT_EDITION !== "published" ||
+      process.env.NEXT_PUBLIC_APP_ENV !== "staging" || process.env.NEXT_PUBLIC_SUPABASE_URL ||
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)) {
+    throw new Error("Technical preview requires published edition, staging mode and no hosted database");
+  }
+  const entries = technicalPreview ? [] : buildWorkingContent();
   if (isProductionWorkingRelease({
     CONTENT_EDITION: process.env.CONTENT_EDITION,
     NEXT_PUBLIC_APP_ENV: process.env.NEXT_PUBLIC_APP_ENV,
