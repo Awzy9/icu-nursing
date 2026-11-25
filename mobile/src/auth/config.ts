@@ -10,7 +10,8 @@ const schema = z.object({
   siteUrl: z.url().refine((u) => /^https:\/\//.test(u) || /^http:\/\/(127\.0\.0\.1|localhost|10\.0\.2\.2)(:\d+)?$/.test(u), "site URL must be https (or local)"),
 });
 /** Whether sign-in, sign-up and password reset ask for a Cloudflare Turnstile token. Must match the Supabase project's Auth > Attack Protection > CAPTCHA setting: with CAPTCHA off there, requests that carry no token are accepted; with it on, they are rejected. */
-export const CAPTCHA_REQUIRED = false;
+export const CAPTCHA_REQUIRED = process.env.EXPO_PUBLIC_PROGRESS_REPLAY === "true";
+export const AUTH_SCHEME = CAPTCHA_REQUIRED ? "nursingmasteryqa" : "nursingmastery";
 export type AuthConfig = z.infer<typeof schema> & { siteOrigin: string };
 
 /** Returns null only when missing public Supabase project configuration. The content catalog remains available separately. */
