@@ -2,10 +2,12 @@
 // the website's own dual guest/signed-in model (src/components/working/progress.tsx): every
 // action updates local state immediately (so the app works fully offline and for guests), and
 // additionally syncs signed-in progress. Bookmark and completion desired states are persisted
-// and retried; attempts and sessions still use the existing best-effort RPC paths.
+// and retried; ordered answer/session replay is enabled only after server rollout.
 import { useCallback, useEffect, useRef } from "react";
 import { AppState } from "react-native";
 import { acknowledgeFlag, queueFlag } from "../core/pendingFlags";
+import { acknowledgeReplay, enqueueReplay, type ReplayEvent } from "../core/progressReplay";
+import { flushReplayBatch, replayEnabled } from "../core/replayWorker";
 import { useAuth } from "../auth/provider";
 import {
   discardSession as localDiscardSession, recordAttempt as localRecordAttempt, saveSession as localSaveSession, setComplete as localSetComplete, toggleBookmark as localToggleBookmark,
@@ -14,6 +16,13 @@ import {
 import { mergeRemoteAttempts, mergeRemoteSessions, reconcileAccountFlags } from "../core/syncMerge";
 import { useApp } from "../state/app";
 import { useCatalogList } from "./useRemoteContent";
+
+const REPLAY_ENABLED = replayEnabled(process.env.EXPO_PUBLIC_PROGRESS_REPLAY);
+function appendReplay(p: Progress, event: ReplayEvent): Progress {
+  const previous = p.pendingReplay ?? [];
+  const pendingReplay = enqueueReplay(previous, event);
+  return pendingReplay === previous ? p : { ...p, pendingReplay };
+}
 
 /** Lightweight: the action functions screens call. Does not itself fetch the catalog - cheap to use in many places (e.g. every BookmarkButton). */
 export function useProgressSync() {
@@ -30,21 +39,31 @@ export function useProgressSync() {
   }, [update, signedIn]);
 
   const saveSession = useCallback((moduleKey: string, session: SessionRecord) => {
-    update((p: Progress) => localSaveSession(p, moduleKey, session));
-    if (signedIn) void rpc!.saveWorkingSession(moduleKey, session.kind, session.version, session.position, session.score, session.finished, Date.parse(session.at), session.decisions).catch(() => undefined);
+    update((p: Progress) => {
+      const next = localSaveSession(p, moduleKey, session);
+      return signedIn && REPLAY_ENABLED && next !== p ? appendReplay(next, { kind: "checkpoint", moduleKey, sessionKind: session.kind, version: session.version, position: session.position, score: session.score, finished: session.finished, at: Date.parse(session.at), decisions: session.decisions }) : next;
+    });
+    if (signedIn && !REPLAY_ENABLED) void rpc!.saveWorkingSession(moduleKey, session.kind, session.version, session.position, session.score, session.finished, Date.parse(session.at), session.decisions).catch(() => undefined);
   }, [update, rpc, signedIn]);
 
   const discardSession = useCallback((moduleKey: string) => {
     const at = new Date().toISOString();
-    update((p: Progress) => localDiscardSession(p, moduleKey, at));
-    if (signedIn) void rpc!.discardWorkingSession(moduleKey).catch(() => undefined);
+    update((p: Progress) => {
+      const next = localDiscardSession(p, moduleKey, at);
+      return signedIn && REPLAY_ENABLED && next !== p ? appendReplay(next, { kind: "dismiss", moduleKey, at: Date.parse(at) }) : next;
+    });
+    if (signedIn && !REPLAY_ENABLED) void rpc!.discardWorkingSession(moduleKey).catch(() => undefined);
   }, [update, rpc, signedIn]);
 
   const recordAnswer = useCallback((questionId: string, moduleKey: string, choice: number, correct: boolean, at: number) => {
     // Always recorded locally (guest and signed-in alike) so the spaced-revision queue
     // (core/revision.ts) reflects it immediately, mirroring the website's own recordAttempt.
-    update((p: Progress) => localRecordAttempt(p, questionId, correct, new Date(at).toISOString()));
-    if (signedIn) void rpc!.recordWorkingAttempt(questionId, moduleKey, choice, correct, at).catch(() => undefined);
+    if (!Number.isFinite(at) || Math.abs(at) > 8_640_000_000_000_000) return;
+    update((p: Progress) => {
+      const next = localRecordAttempt(p, questionId, correct, new Date(at).toISOString());
+      return signedIn && REPLAY_ENABLED && next !== p ? appendReplay(next, { kind: "answer", questionId, moduleKey, choice, correct, at }) : next;
+    });
+    if (signedIn && !REPLAY_ENABLED) void rpc!.recordWorkingAttempt(questionId, moduleKey, choice, correct, at).catch(() => undefined);
   }, [update, rpc, signedIn]);
 
   const setComplete = useCallback((moduleKey: string, done: boolean) => {
@@ -95,7 +114,17 @@ export function useProgressPullOnSignIn() {
             if (!cancelled) update(p => acknowledgeFlag(p, flag));
           } catch { /* retain intent for the next foreground or scheduled retry */ }
         }
-        if (cancelled || pending.length || !catalogEntries || Date.now() - lastPull < 60000) return;
+        const replay = REPLAY_ENABLED ? latest.current.pendingReplay ?? [] : [];
+        if (replay.length && !cancelled) {
+          await flushReplayBatch(replay, {
+            userId,
+            isActive: () => !cancelled && AppState.currentState !== "background",
+            send: (id, event) => rpc.replayWorkingEvent(id, event),
+            acknowledge: event => update(p => ({ ...p, pendingReplay: acknowledgeReplay(p.pendingReplay ?? [], event) })),
+          });
+          lastPull = 0;
+        }
+        if (cancelled || pending.length || replay.length || !catalogEntries || Date.now() - lastPull < 60000) return;
         const kindOf = new Map<string, BookmarkKind>(catalogEntries.map(e => [e.key, e.type as BookmarkKind]));
         const [bookmarks, sessions, lessons, attempts] = await Promise.all([
           rpc.listWorkingBookmarks(), rpc.listWorkingSessions(), rpc.listWorkingLessons(), rpc.listWorkingAttempts(),
@@ -116,5 +145,5 @@ export function useProgressPullOnSignIn() {
     });
     return () => { cancelled = true; trigger.current = null; clearInterval(timer); app.remove(); };
   }, [ready, rpc, userId, catalogEntries, update]);
-  useEffect(() => { trigger.current?.(); }, [progress.pendingFlags]);
+  useEffect(() => { trigger.current?.(); }, [progress.pendingFlags, progress.pendingReplay]);
 }
