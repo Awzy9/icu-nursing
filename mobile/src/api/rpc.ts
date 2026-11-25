@@ -59,18 +59,25 @@ export function createRpc(client: SupabaseClient) {
 
     recordWorkingAttempt: (questionId: string, moduleKey: string, choice: number, correct: boolean, answeredAt: number) =>
       run("working_record_attempt", { p_question_id: questionId, p_module_key: moduleKey, p_choice: choice, p_correct: correct, p_answered_at: new Date(answeredAt).toISOString() }),
-    setWorkingBookmark: async (moduleKey: string, saved: boolean): Promise<void> => {
+    setWorkingBookmark: async (moduleKey: string, saved: boolean, expectedUserId?: string): Promise<void> => {
       if (saved) {
         const user_id = await currentUserId();
+        if (expectedUserId && user_id !== expectedUserId) throw new RpcError("auth", "account changed");
         const { error } = await client.from("working_bookmarks").upsert({ user_id, module_key: moduleKey }, { onConflict: "user_id,module_key" });
         if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
       } else {
-        const { error } = await client.from("working_bookmarks").delete().eq("module_key", moduleKey);
+        let query = client.from("working_bookmarks").delete().eq("module_key", moduleKey);
+        if (expectedUserId) {
+          if (await currentUserId() !== expectedUserId) throw new RpcError("auth", "account changed");
+          query = query.eq("user_id", expectedUserId);
+        }
+        const { error } = await query;
         if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
       }
     },
-    setWorkingLessonComplete: async (moduleKey: string, completed: boolean): Promise<void> => {
+    setWorkingLessonComplete: async (moduleKey: string, completed: boolean, expectedUserId?: string): Promise<void> => {
       const user_id = await currentUserId();
+      if (expectedUserId && user_id !== expectedUserId) throw new RpcError("auth", "account changed");
       const { error } = await client.from("working_lessons").upsert({ user_id, module_key: moduleKey, completed, updated_at: new Date().toISOString() }, { onConflict: "user_id,module_key" });
       if (error) throw new RpcError(MAP[error.code ?? ""] ?? "unavailable", error.message);
     },
