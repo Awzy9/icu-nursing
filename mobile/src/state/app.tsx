@@ -2,7 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { useColorScheme } from "react-native";
 import { isRtl, translate, type Locale } from "../core/i18n";
-import { emptyProgress, loadProgress, saveProgress, scopedProgressStore, type KeyValueStore, type Progress } from "../core/progress";
+import { emptyProgress, loadProgressStrict, saveProgress, scopedProgressStore, type KeyValueStore, type Progress } from "../core/progress";
 import { orderedStorage } from "../core/orderedStorage";
 import { ONBOARDING_STORAGE_KEY } from "../core/onboarding";
 import { dark, light, type Palette } from "../ui/theme";
@@ -31,12 +31,15 @@ export function AppProvider({ children, accountId = null }: { children: React.Re
   const [ready, setReady] = useState(false);
   const [onboardingSeen, setOnboardingSeen] = useState(false);
   const [failedScope, setFailedScope] = useState<string | null>(null);
+  const [hydrationAttempt, setHydrationAttempt] = useState(0);
   const saveSequence = useRef(0);
   const system = useColorScheme();
   const latest = useRef(progress);
 
   useEffect(() => {
     let active = true;
+    setReady(false);
+    setLoadedScope(null);
     (async () => {
       try {
         const raw = await AsyncStorage.getItem(SETTINGS_KEY);
@@ -44,8 +47,14 @@ export function AppProvider({ children, accountId = null }: { children: React.Re
         if (s.locale === "ar" || s.locale === "en") setLocaleState(s.locale);
         if (s.theme === "light" || s.theme === "dark" || s.theme === "system") setThemeModeState(s.theme);
       } catch { /* ignore corrupt settings */ }
-      const loaded = await loadProgress(progressStore);
+      let loaded: Progress;
+      try { loaded = await loadProgressStrict(progressStore); }
+      catch {
+        if (active) setFailedScope(scopeId);
+        return; // no writable empty fallback; keep the original stored bytes
+      }
       if (!active) return; // never show data from an account whose async storage read finished late
+      setFailedScope(null);
       latest.current = loaded;
       setProgress(loaded);
       setLoadedScope(scopeId);
@@ -54,7 +63,7 @@ export function AppProvider({ children, accountId = null }: { children: React.Re
       if (active) setReady(true);
     })();
     return () => { active = false; };
-  }, [progressStore, scopeId]);
+  }, [progressStore, scopeId, hydrationAttempt]);
 
   const persistSettings = (l: Locale, m: ThemeMode) => void AsyncStorage.setItem(SETTINGS_KEY, JSON.stringify({ locale: l, theme: m })).catch(() => undefined);
   const setLocale = useCallback((l: Locale) => { setLocaleState(l); persistSettings(l, themeMode); }, [themeMode]);
@@ -82,7 +91,9 @@ export function AppProvider({ children, accountId = null }: { children: React.Re
     persistProgress(next);
   }, [scopeId, scopeReady, persistProgress]);
   const retryStorage = useCallback(() => {
-    if (scopeReady && activeScopeRef.current === scopeId) persistProgress(latest.current);
+    if (activeScopeRef.current !== scopeId) return;
+    if (scopeReady) persistProgress(latest.current);
+    else setHydrationAttempt(n => n + 1);
   }, [scopeId, scopeReady, persistProgress]);
 
   const value = useMemo<Ctx>(() => ({
