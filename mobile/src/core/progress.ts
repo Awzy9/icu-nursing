@@ -6,6 +6,7 @@
 import { z } from "zod";
 import { scenarioDecisionHistorySchema } from "@icu/schemas/working-progress";
 import { nextBox } from "./leitner";
+import { replayQueueSchema } from "./progressReplay";
 
 // Real catalog keys: topics D01-T19, skills SK-18, medications MD-15, cases SC-10,
 // equipment EQ-01, practice PX-01 (see src/lib/working/index.ts's workingTypes and
@@ -62,6 +63,8 @@ export const progressSchema = z.object({
   sessionDismissals: z.record(z.string(), z.string()).optional(),
   // Account-scoped desired state; legacy progress without an outbox remains readable.
   pendingFlags: z.record(z.string(), pendingFlagSchema).optional(),
+  // Reserved for account-bound replay. Older v2 snapshots remain compatible.
+  pendingReplay: replayQueueSchema.optional(),
   // .default({}) for the same reason as `completed` above: existing on-device v2 data saved
   // before this field existed must still parse.
   attempts: z.record(z.string().regex(/^[A-Z0-9-]{1,60}$/), attemptEntrySchema).default({}),
