@@ -13,7 +13,7 @@ import {
   discardSession as localDiscardSession, recordAttempt as localRecordAttempt, saveSession as localSaveSession, setComplete as localSetComplete, toggleBookmark as localToggleBookmark,
   type BookmarkKind, type Progress, type SessionRecord,
 } from "../core/progress";
-import { mergeRemoteAttempts, mergeRemoteSessions, reconcileAccountFlags } from "../core/syncMerge";
+import { reconcileAccountSnapshot } from "../core/syncMerge";
 import { useApp } from "../state/app";
 import { useCatalogList } from "./useRemoteContent";
 
@@ -90,19 +90,22 @@ export function useProgressPullOnSignIn() {
   const latest = useRef(progress);
   latest.current = progress;
   const busy = useRef(false);
+  const activeAccount = useRef(ready ? userId : null);
+  activeAccount.current = ready ? userId : null;
   const trigger = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     if (!ready || !userId || !rpc) return;
     let cancelled = false;
     let lastPull = 0;
+    const active = () => !cancelled && activeAccount.current === userId && AppState.currentState !== "background";
     const run = async () => {
-      if (cancelled || busy.current || AppState.currentState === "background") return;
+      if (!active() || busy.current) return;
       busy.current = true;
       try {
         const pending = Object.values(latest.current.pendingFlags ?? {});
         for (const flag of pending) {
-          if (cancelled) return;
+          if (!active()) return;
           try {
             if (flag.kind === "bookmark") {
               const moduleKey = flag.key.split(":")[1];
@@ -111,27 +114,27 @@ export function useProgressPullOnSignIn() {
             } else {
               await rpc.setWorkingLessonComplete(flag.key, flag.value, userId);
             }
-            if (!cancelled) update(p => acknowledgeFlag(p, flag));
+            if (active()) update(p => acknowledgeFlag(p, flag));
           } catch { /* retain intent for the next foreground or scheduled retry */ }
         }
         const replay = REPLAY_ENABLED ? latest.current.pendingReplay ?? [] : [];
-        if (replay.length && !cancelled) {
-          await flushReplayBatch(replay, {
+        if (replay.length && active()) {
+          const accepted = await flushReplayBatch(replay, {
             userId,
-            isActive: () => !cancelled && AppState.currentState !== "background",
+            isActive: active,
             send: (id, event) => rpc.replayWorkingEvent(id, event),
             acknowledge: event => update(p => ({ ...p, pendingReplay: acknowledgeReplay(p.pendingReplay ?? [], event) })),
           });
-          lastPull = 0;
+          if (accepted) lastPull = 0;
         }
-        if (cancelled || pending.length || replay.length || !catalogEntries || Date.now() - lastPull < 60000) return;
+        if (!active() || !catalogEntries || Date.now() - lastPull < 60000) return;
         const kindOf = new Map<string, BookmarkKind>(catalogEntries.map(e => [e.key, e.type as BookmarkKind]));
         const [bookmarks, sessions, lessons, attempts] = await Promise.all([
           rpc.listWorkingBookmarks(), rpc.listWorkingSessions(), rpc.listWorkingLessons(), rpc.listWorkingAttempts(),
         ]);
-        if (!cancelled) {
+        if (!cancelled && active()) {
           lastPull = Date.now();
-          update(p => mergeRemoteAttempts(mergeRemoteSessions(reconcileAccountFlags(p, bookmarks, lessons, kindOf), sessions), attempts));
+          update(p => reconcileAccountSnapshot(p, bookmarks, lessons, sessions, attempts, kindOf));
         }
       } catch { /* retry the incomplete account pull; do not treat a failed read as an empty account */ }
       finally { busy.current = false; }
