@@ -11,10 +11,10 @@ const revisionQuestions=[{id:question.id,prompt:question.prompt,options:question
 beforeEach(()=>localStorage.clear());
 afterEach(()=>cleanup());
 describe("interactive learning",()=>{
- it("parses all 306 authored questions without missing choices or keys",()=>{
+ it("parses all 318 authored questions without missing choices or keys",()=>{
    const entries=buildWorkingContent();
    const questions=entries.filter(e=>e.type==="questions").flatMap(e=>e.questions??[]);
-   expect(questions).toHaveLength(306);
+   expect(questions).toHaveLength(318);
    expect(questions.every(q=>q.options.length===4&&q.answer>=0&&q.answer<4&&q.prompt.length>10&&q.explanation.length>10)).toBe(true);
    expect(entries.filter(e=>e.scenario)).toHaveLength(20);
    expect(entries.filter(e=>e.practice)).toHaveLength(12);

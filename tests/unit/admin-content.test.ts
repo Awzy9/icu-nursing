@@ -13,7 +13,7 @@ describe("draft register (counts only, shown on /admin/content)", () => {
     for (const [k, v] of Object.entries(onDisk.types) as [string, { validator_issues: number; clinically_reviewed: number; total: number }][]) {
       expect(v.validator_issues, k).toBe(0); expect(v.clinically_reviewed, k).toBe(0); expect(v.total, k).toBeGreaterThan(0);
     }
-    expect(onDisk.types.scenarios.total).toBe(20); expect(onDisk.types.medications.total).toBe(50); expect(onDisk.types.skills.total).toBe(25); expect(onDisk.types.topics.total).toBe(40); expect(onDisk.types.mcqs.total).toBe(306); expect(onDisk.types.equipment.total).toBe(8);
+    expect(onDisk.types.scenarios.total).toBe(20); expect(onDisk.types.medications.total).toBe(50); expect(onDisk.types.skills.total).toBe(25); expect(onDisk.types.topics.total).toBe(42); expect(onDisk.types.mcqs.total).toBe(318); expect(onDisk.types.equipment.total).toBe(8);
   });
   it("contains counts only: no titles, ids or prose", () => {
     const walk = (x: unknown): void => { if (typeof x === "string") return; if (typeof x === "number") return; if (x && typeof x === "object") for (const v of Object.values(x)) walk(v); };

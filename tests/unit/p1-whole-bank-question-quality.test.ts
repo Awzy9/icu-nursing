@@ -21,7 +21,7 @@ describe("Whole-bank question quality", () => {
     const core = loadExistingViews();
     const expansion = loadExpansion().flatMap(s => parseMcqViews(s.text, s.file.slice(0,5)));
     const all = [...core, ...expansion];
-    expect(core).toHaveLength(240);
+    expect(core).toHaveLength(252);
     expect(expansion).toHaveLength(66);
     expect(new Set(all.map(v => v.key)).size).toBe(all.length);
     const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(w => w.length > 2);

@@ -17,7 +17,7 @@ describe("MCQ expansion drafts (unpublished)", () => {
     for (const s of sets) expect(validateMcqSet(s.text, known), s.file).toEqual([]);
     expect(batchPositionIssues(sets.map((s) => s.text))).toEqual([]);
   });
-  it("have no near-duplicates among themselves or against the 240 existing questions", () => {
+  it("have no near-duplicates among themselves or against the 252 existing questions", () => {
     const views = sets.flatMap((s) => parseMcqViews(s.text, s.file.slice(0, 5)));
     expect(nearDuplicates(views, [...loadExistingViews(), ...views])).toEqual([]);
   });
