@@ -6,8 +6,8 @@ import { WorkingBody } from "@/components/working/body";
 describe("working edition", () => {
   it("includes every prepared module and question set with substantive content", () => {
     const entries = buildWorkingContent();
-    expect(Object.fromEntries(["topics","skills","medications","cases","equipment","practice","questions"].map(t => [t, entries.filter(e => e.type === t).length]))).toEqual({topics:40,skills:25,medications:50,cases:20,equipment:8,practice:12,questions:51});
-    expect(entries.filter(e => e.type === "questions").reduce((n,e)=>n+e.questionCount,0)).toBe(306);
+    expect(Object.fromEntries(["topics","skills","medications","cases","equipment","practice","questions"].map(t => [t, entries.filter(e => e.type === t).length]))).toEqual({topics:42,skills:25,medications:50,cases:20,equipment:8,practice:12,questions:53});
+    expect(entries.filter(e => e.type === "questions").reduce((n,e)=>n+e.questionCount,0)).toBe(318);
     expect(entries.every(e => e.key && e.title && e.body.length > 100)).toBe(true);
     expect(new Set(entries.map(e=>e.key)).size).toBe(entries.length);
   });

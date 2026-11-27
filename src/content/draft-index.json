@@ -1682,6 +1682,51 @@
    "hash": "3733f0786a2a3136"
   },
   {
+   "key": "D02-T18",
+   "type": "topics",
+   "title": "Adult Basic Life Support (BLS) for ICU nurses",
+   "domain": "Cardiovascular and Hemodynamic Care",
+   "evidence_status": "stated_in_text",
+   "spec_level": null,
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-AHA-BLS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    }
+   ],
+   "issues": [],
+   "gaps": 0,
+   "required_sources": 0,
+   "hash": "21c40a83ab2103fe"
+  },
+  {
+   "key": "D02-T19",
+   "type": "topics",
+   "title": "Adult Advanced Cardiovascular Life Support (ACLS) for ICU nurses",
+   "domain": "Cardiovascular and Hemodynamic Care",
+   "evidence_status": "stated_in_text",
+   "spec_level": null,
+   "clinically_reviewed": false,
+   "sources": [
+    {
+     "id": "S-AHA-ALS-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    },
+    {
+     "id": "S-AHA-POSTARREST-2025",
+     "licence_class": "RED",
+     "verified": "2026-11-24"
+    }
+   ],
+   "issues": [],
+   "gaps": 0,
+   "required_sources": 0,
+   "hash": "b161d3d7068fa2a8"
+  },
+  {
    "key": "XQ-01",
    "type": "questions",
    "title": "Urinary catheter care (CAUTI prevention)",

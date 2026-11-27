@@ -28,7 +28,7 @@ describe("Cross-platform draft metadata parsing", () => {
 });
 
 describe("Phase 2 drafts: structure and safety", () => {
-  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(40));
+  it("has the batch files", () => expect(files.length).toBeGreaterThanOrEqual(42));
   files.forEach((f, i) => it(`${f} passes validation`, () => expect(validateDraft(texts[i]!)).toEqual([])));
   batches.forEach((b) => it(`${b}: answer positions are balanced across the batch`, () => expect(batchPositionIssues(perBatch(b))).toEqual([])));
   it("every draft has six or more MCQs with an explanation for each wrong option", () => {
@@ -97,9 +97,9 @@ describe("Source status integrity (no inaccessible source is presented as verifi
 describe("Canonical topic inventory (no double counting)", () => {
   const rows = readFileSync("content/drafts/TOPIC_INVENTORY.csv", "utf8").trim().split(/\r?\n/).slice(1).map((l) => (l.match(/("([^"]|"")*"|[^,]*)(,|$)/g) ?? []).map((c) => c.replace(/,$/, "").replace(/^"|"$/g, "").replace(/""/g, '"')));
   const ids = rows.map((r) => r[0]!);
-  it("lists each of the 40 P1 topics exactly once", () => {
-    expect(rows.length).toBe(40);
-    expect(new Set(ids).size).toBe(40);
+  it("lists each of the 42 P1 topics exactly once", () => {
+    expect(rows.length).toBe(42);
+    expect(new Set(ids).size).toBe(42);
   });
   it("matches the draft files on disk: one canonical ID, one batch", () => {
     const onDisk = files.map((f, i) => ({ f, id: /^topic_id: (\S+)/m.exec(texts[i]!)?.[1] ?? "" }));
@@ -164,15 +164,15 @@ describe("MCQ quality checks (self-tests)", () => {
 });
 
 describe("bank-wide MCQ quality (Phase 4 audit regression guard)", () => {
-  // Reads every draft; all 240 questions stay DRAFT and unpublished. These thresholds lock in the length-bias reduction.
+  // Reads every draft; all 252 questions stay DRAFT and unpublished. These thresholds lock in the length-bias reduction.
   const root = `${__dirname}/../../content/drafts`;
   const texts: string[] = [];
   for (const d of readdirSync(root).filter((x) => /^batch-\d+$/.test(x))) for (const f of readdirSync(`${root}/${d}`).filter((x) => x.endsWith(".md"))) texts.push(readFileSync(`${root}/${d}/${f}`, "utf8"));
   const qs = texts.flatMap((t) => parseMcqs(t));
 
-  it("covers 240 questions across 40 drafts, every draft still marked as AI-generated draft", () => {
-    expect(texts).toHaveLength(40);
-    expect(qs).toHaveLength(240);
+  it("covers 252 questions across 42 drafts, every draft still marked as AI-generated draft", () => {
+    expect(texts).toHaveLength(42);
+    expect(qs).toHaveLength(252);
     for (const t of texts) expect(t).toMatch(/^status: DRAFT/m);
   });
   it("keeps the correct option the unique longest in at most 25% of questions, and the unique shortest in at most 30%", () => {

@@ -17253,6 +17253,33 @@
     "required_sources": 1,
     "issues": 0
    }
+  ],
+  "D02-T18": [
+   {
+    "hash": "21c40a83ab2103fe",
+    "recorded": "2026-11-27",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-BLS-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   }
+  ],
+  "D02-T19": [
+   {
+    "hash": "b161d3d7068fa2a8",
+    "recorded": "2026-11-27",
+    "evidence_status": "stated_in_text",
+    "sources": [
+     "S-AHA-ALS-2025",
+     "S-AHA-POSTARREST-2025"
+    ],
+    "gaps": 0,
+    "required_sources": 0,
+    "issues": 0
+   }
   ]
  }
 }
